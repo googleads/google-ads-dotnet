@@ -39,7 +39,7 @@ namespace Google.Ads.GoogleAds.V4.Resources {
             "NC9lbnVtcy9tb2JpbGVfYXBwX3ZlbmRvci5wcm90bxofZ29vZ2xlL2FwaS9m",
             "aWVsZF9iZWhhdmlvci5wcm90bxoZZ29vZ2xlL2FwaS9yZXNvdXJjZS5wcm90",
             "bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvGhxnb29nbGUvYXBp",
-            "L2Fubm90YXRpb25zLnByb3RvIrgSChBDb252ZXJzaW9uQWN0aW9uEkgKDXJl",
+            "L2Fubm90YXRpb25zLnByb3RvIt4SChBDb252ZXJzaW9uQWN0aW9uEkgKDXJl",
             "c291cmNlX25hbWUYASABKAlCMeBBBfpBKwopZ29vZ2xlYWRzLmdvb2dsZWFw",
             "aXMuY29tL0NvbnZlcnNpb25BY3Rpb24SLAoCaWQYAiABKAsyGy5nb29nbGUu",
             "cHJvdG9idWYuSW50NjRWYWx1ZUID4EEDEioKBG5hbWUYAyABKAsyHC5nb29n",
@@ -50,61 +50,62 @@ namespace Google.Ads.GoogleAds.V4.Resources {
             "dGlvblR5cGVFbnVtLkNvbnZlcnNpb25BY3Rpb25UeXBlQgPgQQUSZgoIY2F0",
             "ZWdvcnkYBiABKA4yVC5nb29nbGUuYWRzLmdvb2dsZWFkcy52NC5lbnVtcy5D",
             "b252ZXJzaW9uQWN0aW9uQ2F0ZWdvcnlFbnVtLkNvbnZlcnNpb25BY3Rpb25D",
-            "YXRlZ29yeRI5Cg5vd25lcl9jdXN0b21lchgHIAEoCzIcLmdvb2dsZS5wcm90",
-            "b2J1Zi5TdHJpbmdWYWx1ZUID4EEDEkEKHWluY2x1ZGVfaW5fY29udmVyc2lv",
-            "bnNfbWV0cmljGAggASgLMhouZ29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRJH",
-            "CiJjbGlja190aHJvdWdoX2xvb2tiYWNrX3dpbmRvd19kYXlzGAkgASgLMhsu",
-            "Z29vZ2xlLnByb3RvYnVmLkludDY0VmFsdWUSRgohdmlld190aHJvdWdoX2xv",
-            "b2tiYWNrX3dpbmRvd19kYXlzGAogASgLMhsuZ29vZ2xlLnByb3RvYnVmLklu",
-            "dDY0VmFsdWUSWQoOdmFsdWVfc2V0dGluZ3MYCyABKAsyQS5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52NC5yZXNvdXJjZXMuQ29udmVyc2lvbkFjdGlvbi5WYWx1",
-            "ZVNldHRpbmdzEnMKDWNvdW50aW5nX3R5cGUYDCABKA4yXC5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52NC5lbnVtcy5Db252ZXJzaW9uQWN0aW9uQ291bnRpbmdU",
-            "eXBlRW51bS5Db252ZXJzaW9uQWN0aW9uQ291bnRpbmdUeXBlEnAKGmF0dHJp",
-            "YnV0aW9uX21vZGVsX3NldHRpbmdzGA0gASgLMkwuZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjQucmVzb3VyY2VzLkNvbnZlcnNpb25BY3Rpb24uQXR0cmlidXRp",
-            "b25Nb2RlbFNldHRpbmdzEkUKDHRhZ19zbmlwcGV0cxgOIAMoCzIqLmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnY0LmNvbW1vbi5UYWdTbmlwcGV0QgPgQQMSQAob",
-            "cGhvbmVfY2FsbF9kdXJhdGlvbl9zZWNvbmRzGA8gASgLMhsuZ29vZ2xlLnBy",
-            "b3RvYnVmLkludDY0VmFsdWUSLAoGYXBwX2lkGBAgASgLMhwuZ29vZ2xlLnBy",
-            "b3RvYnVmLlN0cmluZ1ZhbHVlEmIKEW1vYmlsZV9hcHBfdmVuZG9yGBEgASgO",
-            "MkIuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjQuZW51bXMuTW9iaWxlQXBwVmVu",
-            "ZG9yRW51bS5Nb2JpbGVBcHBWZW5kb3JCA+BBAxJkChFmaXJlYmFzZV9zZXR0",
-            "aW5ncxgSIAEoCzJELmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY0LnJlc291cmNl",
-            "cy5Db252ZXJzaW9uQWN0aW9uLkZpcmViYXNlU2V0dGluZ3NCA+BBAxKDAQoi",
-            "dGhpcmRfcGFydHlfYXBwX2FuYWx5dGljc19zZXR0aW5ncxgTIAEoCzJSLmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnY0LnJlc291cmNlcy5Db252ZXJzaW9uQWN0",
-            "aW9uLlRoaXJkUGFydHlBcHBBbmFseXRpY3NTZXR0aW5nc0ID4EEDGvIBChhB",
-            "dHRyaWJ1dGlvbk1vZGVsU2V0dGluZ3MSXwoRYXR0cmlidXRpb25fbW9kZWwY",
-            "ASABKA4yRC5nb29nbGUuYWRzLmdvb2dsZWFkcy52NC5lbnVtcy5BdHRyaWJ1",
-            "dGlvbk1vZGVsRW51bS5BdHRyaWJ1dGlvbk1vZGVsEnUKGGRhdGFfZHJpdmVu",
-            "X21vZGVsX3N0YXR1cxgCIAEoDjJOLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY0",
-            "LmVudW1zLkRhdGFEcml2ZW5Nb2RlbFN0YXR1c0VudW0uRGF0YURyaXZlbk1v",
-            "ZGVsU3RhdHVzQgPgQQMavwEKDVZhbHVlU2V0dGluZ3MSMwoNZGVmYXVsdF92",
-            "YWx1ZRgBIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5Eb3VibGVWYWx1ZRI7ChVk",
-            "ZWZhdWx0X2N1cnJlbmN5X2NvZGUYAiABKAsyHC5nb29nbGUucHJvdG9idWYu",
-            "U3RyaW5nVmFsdWUSPAoYYWx3YXlzX3VzZV9kZWZhdWx0X3ZhbHVlGAMgASgL",
-            "MhouZ29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRpXCh5UaGlyZFBhcnR5QXBw",
-            "QW5hbHl0aWNzU2V0dGluZ3MSNQoKZXZlbnRfbmFtZRgBIAEoCzIcLmdvb2ds",
-            "ZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZUID4EEDGoABChBGaXJlYmFzZVNldHRp",
-            "bmdzEjUKCmV2ZW50X25hbWUYASABKAsyHC5nb29nbGUucHJvdG9idWYuU3Ry",
-            "aW5nVmFsdWVCA+BBAxI1Cgpwcm9qZWN0X2lkGAIgASgLMhwuZ29vZ2xlLnBy",
-            "b3RvYnVmLlN0cmluZ1ZhbHVlQgPgQQM6aupBZwopZ29vZ2xlYWRzLmdvb2ds",
-            "ZWFwaXMuY29tL0NvbnZlcnNpb25BY3Rpb24SOmN1c3RvbWVycy97Y3VzdG9t",
-            "ZXJ9L2NvbnZlcnNpb25BY3Rpb25zL3tjb252ZXJzaW9uX2FjdGlvbn1CggIK",
-            "JWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52NC5yZXNvdXJjZXNCFUNvbnZl",
-            "cnNpb25BY3Rpb25Qcm90b1ABWkpnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90",
-            "by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjQvcmVzb3VyY2VzO3Jlc291",
-            "cmNlc6ICA0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlY0LlJlc291cmNl",
-            "c8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRzXFY0XFJlc291cmNlc+oCJUdvb2ds",
-            "ZTo6QWRzOjpHb29nbGVBZHM6OlY0OjpSZXNvdXJjZXNiBnByb3RvMw=="));
+            "YXRlZ29yeRJfCg5vd25lcl9jdXN0b21lchgHIAEoCzIcLmdvb2dsZS5wcm90",
+            "b2J1Zi5TdHJpbmdWYWx1ZUIp4EED+kEjCiFnb29nbGVhZHMuZ29vZ2xlYXBp",
+            "cy5jb20vQ3VzdG9tZXISQQodaW5jbHVkZV9pbl9jb252ZXJzaW9uc19tZXRy",
+            "aWMYCCABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlEkcKImNsaWNr",
+            "X3Rocm91Z2hfbG9va2JhY2tfd2luZG93X2RheXMYCSABKAsyGy5nb29nbGUu",
+            "cHJvdG9idWYuSW50NjRWYWx1ZRJGCiF2aWV3X3Rocm91Z2hfbG9va2JhY2tf",
+            "d2luZG93X2RheXMYCiABKAsyGy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1",
+            "ZRJZCg52YWx1ZV9zZXR0aW5ncxgLIAEoCzJBLmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnY0LnJlc291cmNlcy5Db252ZXJzaW9uQWN0aW9uLlZhbHVlU2V0dGlu",
+            "Z3MScwoNY291bnRpbmdfdHlwZRgMIAEoDjJcLmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnY0LmVudW1zLkNvbnZlcnNpb25BY3Rpb25Db3VudGluZ1R5cGVFbnVt",
+            "LkNvbnZlcnNpb25BY3Rpb25Db3VudGluZ1R5cGUScAoaYXR0cmlidXRpb25f",
+            "bW9kZWxfc2V0dGluZ3MYDSABKAsyTC5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "NC5yZXNvdXJjZXMuQ29udmVyc2lvbkFjdGlvbi5BdHRyaWJ1dGlvbk1vZGVs",
+            "U2V0dGluZ3MSRQoMdGFnX3NuaXBwZXRzGA4gAygLMiouZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjQuY29tbW9uLlRhZ1NuaXBwZXRCA+BBAxJAChtwaG9uZV9j",
+            "YWxsX2R1cmF0aW9uX3NlY29uZHMYDyABKAsyGy5nb29nbGUucHJvdG9idWYu",
+            "SW50NjRWYWx1ZRIsCgZhcHBfaWQYECABKAsyHC5nb29nbGUucHJvdG9idWYu",
+            "U3RyaW5nVmFsdWUSYgoRbW9iaWxlX2FwcF92ZW5kb3IYESABKA4yQi5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52NC5lbnVtcy5Nb2JpbGVBcHBWZW5kb3JFbnVt",
+            "Lk1vYmlsZUFwcFZlbmRvckID4EEDEmQKEWZpcmViYXNlX3NldHRpbmdzGBIg",
+            "ASgLMkQuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjQucmVzb3VyY2VzLkNvbnZl",
+            "cnNpb25BY3Rpb24uRmlyZWJhc2VTZXR0aW5nc0ID4EEDEoMBCiJ0aGlyZF9w",
+            "YXJ0eV9hcHBfYW5hbHl0aWNzX3NldHRpbmdzGBMgASgLMlIuZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjQucmVzb3VyY2VzLkNvbnZlcnNpb25BY3Rpb24uVGhp",
+            "cmRQYXJ0eUFwcEFuYWx5dGljc1NldHRpbmdzQgPgQQMa8gEKGEF0dHJpYnV0",
+            "aW9uTW9kZWxTZXR0aW5ncxJfChFhdHRyaWJ1dGlvbl9tb2RlbBgBIAEoDjJE",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY0LmVudW1zLkF0dHJpYnV0aW9uTW9k",
+            "ZWxFbnVtLkF0dHJpYnV0aW9uTW9kZWwSdQoYZGF0YV9kcml2ZW5fbW9kZWxf",
+            "c3RhdHVzGAIgASgOMk4uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjQuZW51bXMu",
+            "RGF0YURyaXZlbk1vZGVsU3RhdHVzRW51bS5EYXRhRHJpdmVuTW9kZWxTdGF0",
+            "dXNCA+BBAxq/AQoNVmFsdWVTZXR0aW5ncxIzCg1kZWZhdWx0X3ZhbHVlGAEg",
+            "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLkRvdWJsZVZhbHVlEjsKFWRlZmF1bHRf",
+            "Y3VycmVuY3lfY29kZRgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdW",
+            "YWx1ZRI8ChhhbHdheXNfdXNlX2RlZmF1bHRfdmFsdWUYAyABKAsyGi5nb29n",
+            "bGUucHJvdG9idWYuQm9vbFZhbHVlGoABChBGaXJlYmFzZVNldHRpbmdzEjUK",
+            "CmV2ZW50X25hbWUYASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFs",
+            "dWVCA+BBAxI1Cgpwcm9qZWN0X2lkGAIgASgLMhwuZ29vZ2xlLnByb3RvYnVm",
+            "LlN0cmluZ1ZhbHVlQgPgQQMaVwoeVGhpcmRQYXJ0eUFwcEFuYWx5dGljc1Nl",
+            "dHRpbmdzEjUKCmV2ZW50X25hbWUYASABKAsyHC5nb29nbGUucHJvdG9idWYu",
+            "U3RyaW5nVmFsdWVCA+BBAzpq6kFnCilnb29nbGVhZHMuZ29vZ2xlYXBpcy5j",
+            "b20vQ29udmVyc2lvbkFjdGlvbhI6Y3VzdG9tZXJzL3tjdXN0b21lcn0vY29u",
+            "dmVyc2lvbkFjdGlvbnMve2NvbnZlcnNpb25fYWN0aW9ufUKCAgolY29tLmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnY0LnJlc291cmNlc0IVQ29udmVyc2lvbkFj",
+            "dGlvblByb3RvUAFaSmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2ds",
+            "ZWFwaXMvYWRzL2dvb2dsZWFkcy92NC9yZXNvdXJjZXM7cmVzb3VyY2VzogID",
+            "R0FBqgIhR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjQuUmVzb3VyY2VzygIhR29v",
+            "Z2xlXEFkc1xHb29nbGVBZHNcVjRcUmVzb3VyY2Vz6gIlR29vZ2xlOjpBZHM6",
+            "Okdvb2dsZUFkczo6VjQ6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V4.Common.TagSnippetReflection.Descriptor, global::Google.Ads.GoogleAds.V4.Enums.AttributionModelReflection.Descriptor, global::Google.Ads.GoogleAds.V4.Enums.ConversionActionCategoryReflection.Descriptor, global::Google.Ads.GoogleAds.V4.Enums.ConversionActionCountingTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V4.Enums.ConversionActionStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V4.Enums.ConversionActionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V4.Enums.DataDrivenModelStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V4.Enums.MobileAppVendorReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Resources.ConversionAction), global::Google.Ads.GoogleAds.V4.Resources.ConversionAction.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "Type", "Category", "OwnerCustomer", "IncludeInConversionsMetric", "ClickThroughLookbackWindowDays", "ViewThroughLookbackWindowDays", "ValueSettings", "CountingType", "AttributionModelSettings", "TagSnippets", "PhoneCallDurationSeconds", "AppId", "MobileAppVendor", "FirebaseSettings", "ThirdPartyAppAnalyticsSettings" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Resources.ConversionAction.Types.AttributionModelSettings), global::Google.Ads.GoogleAds.V4.Resources.ConversionAction.Types.AttributionModelSettings.Parser, new[]{ "AttributionModel", "DataDrivenModelStatus" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Resources.ConversionAction.Types.ValueSettings), global::Google.Ads.GoogleAds.V4.Resources.ConversionAction.Types.ValueSettings.Parser, new[]{ "DefaultValue", "DefaultCurrencyCode", "AlwaysUseDefaultValue" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Resources.ConversionAction.Types.ThirdPartyAppAnalyticsSettings), global::Google.Ads.GoogleAds.V4.Resources.ConversionAction.Types.ThirdPartyAppAnalyticsSettings.Parser, new[]{ "EventName" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Resources.ConversionAction.Types.FirebaseSettings), global::Google.Ads.GoogleAds.V4.Resources.ConversionAction.Types.FirebaseSettings.Parser, new[]{ "EventName", "ProjectId" }, null, null, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Resources.ConversionAction.Types.FirebaseSettings), global::Google.Ads.GoogleAds.V4.Resources.ConversionAction.Types.FirebaseSettings.Parser, new[]{ "EventName", "ProjectId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V4.Resources.ConversionAction.Types.ThirdPartyAppAnalyticsSettings), global::Google.Ads.GoogleAds.V4.Resources.ConversionAction.Types.ThirdPartyAppAnalyticsSettings.Parser, new[]{ "EventName" }, null, null, null, null)})
           }));
     }
     #endregion
@@ -1602,192 +1603,6 @@ namespace Google.Ads.GoogleAds.V4.Resources {
       }
 
       /// <summary>
-      /// Settings related to a third party app analytics conversion action.
-      /// </summary>
-      public sealed partial class ThirdPartyAppAnalyticsSettings : pb::IMessage<ThirdPartyAppAnalyticsSettings>
-      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          , pb::IBufferMessage
-      #endif
-      {
-        private static readonly pb::MessageParser<ThirdPartyAppAnalyticsSettings> _parser = new pb::MessageParser<ThirdPartyAppAnalyticsSettings>(() => new ThirdPartyAppAnalyticsSettings());
-        private pb::UnknownFieldSet _unknownFields;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<ThirdPartyAppAnalyticsSettings> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V4.Resources.ConversionAction.Descriptor.NestedTypes[2]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public ThirdPartyAppAnalyticsSettings() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public ThirdPartyAppAnalyticsSettings(ThirdPartyAppAnalyticsSettings other) : this() {
-          EventName = other.EventName;
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public ThirdPartyAppAnalyticsSettings Clone() {
-          return new ThirdPartyAppAnalyticsSettings(this);
-        }
-
-        /// <summary>Field number for the "event_name" field.</summary>
-        public const int EventNameFieldNumber = 1;
-        private static readonly pb::FieldCodec<string> _single_eventName_codec = pb::FieldCodec.ForClassWrapper<string>(10);
-        private string eventName_;
-        /// <summary>
-        /// Output only. The event name of a third-party app analytics conversion.
-        /// </summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public string EventName {
-          get { return eventName_; }
-          set {
-            eventName_ = value;
-          }
-        }
-
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as ThirdPartyAppAnalyticsSettings);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(ThirdPartyAppAnalyticsSettings other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if (EventName != other.EventName) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          if (eventName_ != null) hash ^= EventName.GetHashCode();
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          output.WriteRawMessage(this);
-        #else
-          if (eventName_ != null) {
-            _single_eventName_codec.WriteTagAndValue(output, EventName);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-          if (eventName_ != null) {
-            _single_eventName_codec.WriteTagAndValue(ref output, EventName);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(ref output);
-          }
-        }
-        #endif
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          if (eventName_ != null) {
-            size += _single_eventName_codec.CalculateSizeWithTag(EventName);
-          }
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(ThirdPartyAppAnalyticsSettings other) {
-          if (other == null) {
-            return;
-          }
-          if (other.eventName_ != null) {
-            if (eventName_ == null || other.EventName != "") {
-              EventName = other.EventName;
-            }
-          }
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          input.ReadRawMessage(this);
-        #else
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 10: {
-                string value = _single_eventName_codec.Read(input);
-                if (eventName_ == null || value != "") {
-                  EventName = value;
-                }
-                break;
-              }
-            }
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-                break;
-              case 10: {
-                string value = _single_eventName_codec.Read(ref input);
-                if (eventName_ == null || value != "") {
-                  EventName = value;
-                }
-                break;
-              }
-            }
-          }
-        }
-        #endif
-
-      }
-
-      /// <summary>
       /// Settings related to a Firebase conversion action.
       /// </summary>
       public sealed partial class FirebaseSettings : pb::IMessage<FirebaseSettings>
@@ -1802,7 +1617,7 @@ namespace Google.Ads.GoogleAds.V4.Resources {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V4.Resources.ConversionAction.Descriptor.NestedTypes[3]; }
+          get { return global::Google.Ads.GoogleAds.V4.Resources.ConversionAction.Descriptor.NestedTypes[2]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2010,6 +1825,192 @@ namespace Google.Ads.GoogleAds.V4.Resources {
                 string value = _single_projectId_codec.Read(ref input);
                 if (projectId_ == null || value != "") {
                   ProjectId = value;
+                }
+                break;
+              }
+            }
+          }
+        }
+        #endif
+
+      }
+
+      /// <summary>
+      /// Settings related to a third party app analytics conversion action.
+      /// </summary>
+      public sealed partial class ThirdPartyAppAnalyticsSettings : pb::IMessage<ThirdPartyAppAnalyticsSettings>
+      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          , pb::IBufferMessage
+      #endif
+      {
+        private static readonly pb::MessageParser<ThirdPartyAppAnalyticsSettings> _parser = new pb::MessageParser<ThirdPartyAppAnalyticsSettings>(() => new ThirdPartyAppAnalyticsSettings());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<ThirdPartyAppAnalyticsSettings> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V4.Resources.ConversionAction.Descriptor.NestedTypes[3]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public ThirdPartyAppAnalyticsSettings() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public ThirdPartyAppAnalyticsSettings(ThirdPartyAppAnalyticsSettings other) : this() {
+          EventName = other.EventName;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public ThirdPartyAppAnalyticsSettings Clone() {
+          return new ThirdPartyAppAnalyticsSettings(this);
+        }
+
+        /// <summary>Field number for the "event_name" field.</summary>
+        public const int EventNameFieldNumber = 1;
+        private static readonly pb::FieldCodec<string> _single_eventName_codec = pb::FieldCodec.ForClassWrapper<string>(10);
+        private string eventName_;
+        /// <summary>
+        /// Output only. The event name of a third-party app analytics conversion.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string EventName {
+          get { return eventName_; }
+          set {
+            eventName_ = value;
+          }
+        }
+
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as ThirdPartyAppAnalyticsSettings);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(ThirdPartyAppAnalyticsSettings other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (EventName != other.EventName) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (eventName_ != null) hash ^= EventName.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          output.WriteRawMessage(this);
+        #else
+          if (eventName_ != null) {
+            _single_eventName_codec.WriteTagAndValue(output, EventName);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+          if (eventName_ != null) {
+            _single_eventName_codec.WriteTagAndValue(ref output, EventName);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(ref output);
+          }
+        }
+        #endif
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (eventName_ != null) {
+            size += _single_eventName_codec.CalculateSizeWithTag(EventName);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(ThirdPartyAppAnalyticsSettings other) {
+          if (other == null) {
+            return;
+          }
+          if (other.eventName_ != null) {
+            if (eventName_ == null || other.EventName != "") {
+              EventName = other.EventName;
+            }
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          input.ReadRawMessage(this);
+        #else
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                string value = _single_eventName_codec.Read(input);
+                if (eventName_ == null || value != "") {
+                  EventName = value;
+                }
+                break;
+              }
+            }
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                break;
+              case 10: {
+                string value = _single_eventName_codec.Read(ref input);
+                if (eventName_ == null || value != "") {
+                  EventName = value;
                 }
                 break;
               }

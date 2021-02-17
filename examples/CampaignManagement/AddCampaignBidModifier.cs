@@ -20,6 +20,7 @@ using Google.Ads.GoogleAds.V6.Services;
 
 using System;
 using static Google.Ads.GoogleAds.V6.Enums.InteractionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V6.Enums.ResponseContentTypeEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V6
 {
@@ -84,23 +85,43 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 },
                 BidModifier = bidModifierValue
             };
-
+            // [START mutable_resource]
             // Construct an operation to create the campaign bid modifier.
             CampaignBidModifierOperation op = new CampaignBidModifierOperation()
             {
                 Create = campaignBidModifier
             };
 
+            // Construct a request, and set the ResponseContentType field to
+            // ResponseContentType.MutableResource, so that the response contains
+            // the mutated object and not just its resource name.
+            MutateCampaignBidModifiersRequest request = new MutateCampaignBidModifiersRequest()
+            {
+                CustomerId = customerId.ToString(),
+                ResponseContentType = ResponseContentType.MutableResource,
+                Operations = { op }
+            };
+
             // Send the operation in a mutate request.
             try
             {
                 MutateCampaignBidModifiersResponse response =
-                    campaignBidModifierService.MutateCampaignBidModifiers(customerId.ToString(),
-                        new CampaignBidModifierOperation[] { op });
+                    campaignBidModifierService.MutateCampaignBidModifiers(request);
                 Console.WriteLine("Added {0} campaign bid modifiers:", response.Results.Count);
+
+                // The resource returned in the response can be accessed directly in the
+                // results list. Its fields can be read directly, and it can also be mutated
+                // further and used in subsequent requests, without needing to make
+                // additional Get or Search requests.
+
                 foreach (MutateCampaignBidModifierResult result in response.Results)
                 {
-                    Console.WriteLine($"\t{result.ResourceName}");
+                    Console.WriteLine($"\tCreated campaign bid modifier with " +
+                        $"resource name '{result.ResourceName}', " +
+                        $"criterion ID '{result.CampaignBidModifier.CriterionId}', " +
+                        $"and bid modifier value {result.CampaignBidModifier.BidModifier}, " +
+                        $"under the campaign with resource_name " +
+                        $"'{result.CampaignBidModifier.Campaign}'");
                 }
             }
             catch (GoogleAdsException e)
@@ -111,6 +132,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 Console.WriteLine($"Request ID: {e.RequestId}");
                 throw;
             }
+            // [END mutable_resource]
         }
     }
 }

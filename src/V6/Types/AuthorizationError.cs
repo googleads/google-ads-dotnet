@@ -26,8 +26,8 @@ namespace Google.Ads.GoogleAds.V6.Errors {
           string.Concat(
             "Cjhnb29nbGUvYWRzL2dvb2dsZWFkcy92Ni9lcnJvcnMvYXV0aG9yaXphdGlv",
             "bl9lcnJvci5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjYuZXJyb3Jz",
-            "Ghxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIrYDChZBdXRob3JpemF0",
-            "aW9uRXJyb3JFbnVtIpsDChJBdXRob3JpemF0aW9uRXJyb3ISDwoLVU5TUEVD",
+            "Ghxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvItoDChZBdXRob3JpemF0",
+            "aW9uRXJyb3JFbnVtIr8DChJBdXRob3JpemF0aW9uRXJyb3ISDwoLVU5TUEVD",
             "SUZJRUQQABILCgdVTktOT1dOEAESGgoWVVNFUl9QRVJNSVNTSU9OX0RFTklF",
             "RBACEiQKIERFVkVMT1BFUl9UT0tFTl9OT1RfT05fQUxMT1dMSVNUEA0SHgoa",
             "REVWRUxPUEVSX1RPS0VOX1BST0hJQklURUQQBBIUChBQUk9KRUNUX0RJU0FC",
@@ -36,13 +36,13 @@ namespace Google.Ads.GoogleAds.V6.Errors {
             "Ul9OT1RfRU5BQkxFRBAYEg8KC01JU1NJTkdfVE9TEAkSIAocREVWRUxPUEVS",
             "X1RPS0VOX05PVF9BUFBST1ZFRBAKEj0KOUlOVkFMSURfTE9HSU5fQ1VTVE9N",
             "RVJfSURfU0VSVklOR19DVVNUT01FUl9JRF9DT01CSU5BVElPThALEhkKFVNF",
-            "UlZJQ0VfQUNDRVNTX0RFTklFRBAMQvIBCiJjb20uZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjYuZXJyb3JzQhdBdXRob3JpemF0aW9uRXJyb3JQcm90b1ABWkRn",
-            "b29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29n",
-            "bGVhZHMvdjYvZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29v",
-            "Z2xlQWRzLlY2LkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFY2XEVy",
-            "cm9yc+oCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlY2OjpFcnJvcnNiBnBy",
-            "b3RvMw=="));
+            "UlZJQ0VfQUNDRVNTX0RFTklFRBAMEiIKHkFDQ0VTU19ERU5JRURfRk9SX0FD",
+            "Q09VTlRfVFlQRRAZQvIBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjYu",
+            "ZXJyb3JzQhdBdXRob3JpemF0aW9uRXJyb3JQcm90b1ABWkRnb29nbGUuZ29s",
+            "YW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjYv",
+            "ZXJyb3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlY2",
+            "LkVycm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFY2XEVycm9yc+oCIkdv",
+            "b2dsZTo6QWRzOjpHb29nbGVBZHM6OlY2OjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -262,6 +262,11 @@ namespace Google.Ads.GoogleAds.V6.Errors {
         /// The developer specified does not have access to the service.
         /// </summary>
         [pbr::OriginalName("SERVICE_ACCESS_DENIED")] ServiceAccessDenied = 12,
+        /// <summary>
+        /// The customer (or login customer) isn't in Google Ads. It belongs to
+        /// another ads system.
+        /// </summary>
+        [pbr::OriginalName("ACCESS_DENIED_FOR_ACCOUNT_TYPE")] AccessDeniedForAccountType = 25,
       }
 
     }

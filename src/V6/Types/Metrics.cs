@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V6.Common {
             "L2dvb2dsZWFkcy92Ni9lbnVtcy9pbnRlcmFjdGlvbl9ldmVudF90eXBlLnBy",
             "b3RvGjhnb29nbGUvYWRzL2dvb2dsZWFkcy92Ni9lbnVtcy9xdWFsaXR5X3Nj",
             "b3JlX2J1Y2tldC5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90",
-            "byL5PwoHTWV0cmljcxIwCiJhYnNvbHV0ZV90b3BfaW1wcmVzc2lvbl9wZXJj",
+            "byKDQwoHTWV0cmljcxIwCiJhYnNvbHV0ZV90b3BfaW1wcmVzc2lvbl9wZXJj",
             "ZW50YWdlGLcBIAEoAUgAiAEBEh0KD2FjdGl2ZV92aWV3X2NwbRi4ASABKAFI",
             "AYgBARIdCg9hY3RpdmVfdmlld19jdHIYuQEgASgBSAKIAQESJQoXYWN0aXZl",
             "X3ZpZXdfaW1wcmVzc2lvbnMYugEgASgDSAOIAQESJwoZYWN0aXZlX3ZpZXdf",
@@ -38,189 +38,198 @@ namespace Google.Ads.GoogleAds.V6.Common {
             "X21lYXN1cmFibGVfaW1wcmVzc2lvbnMYvQEgASgDSAaIAQESJQoXYWN0aXZl",
             "X3ZpZXdfdmlld2FiaWxpdHkYvgEgASgBSAeIAQESNAomYWxsX2NvbnZlcnNp",
             "b25zX2Zyb21faW50ZXJhY3Rpb25zX3JhdGUYvwEgASgBSAiIAQESIwoVYWxs",
-            "X2NvbnZlcnNpb25zX3ZhbHVlGMABIAEoAUgJiAEBEh0KD2FsbF9jb252ZXJz",
-            "aW9ucxjBASABKAFICogBARIsCh5hbGxfY29udmVyc2lvbnNfdmFsdWVfcGVy",
-            "X2Nvc3QYwgEgASgBSAuIAQESMAoiYWxsX2NvbnZlcnNpb25zX2Zyb21fY2xp",
-            "Y2tfdG9fY2FsbBjDASABKAFIDIgBARItCh9hbGxfY29udmVyc2lvbnNfZnJv",
-            "bV9kaXJlY3Rpb25zGMQBIAEoAUgNiAEBEkUKN2FsbF9jb252ZXJzaW9uc19m",
-            "cm9tX2ludGVyYWN0aW9uc192YWx1ZV9wZXJfaW50ZXJhY3Rpb24YxQEgASgB",
-            "SA6IAQESJwoZYWxsX2NvbnZlcnNpb25zX2Zyb21fbWVudRjGASABKAFID4gB",
-            "ARIoChphbGxfY29udmVyc2lvbnNfZnJvbV9vcmRlchjHASABKAFIEIgBARIz",
-            "CiVhbGxfY29udmVyc2lvbnNfZnJvbV9vdGhlcl9lbmdhZ2VtZW50GMgBIAEo",
-            "AUgRiAEBEi4KIGFsbF9jb252ZXJzaW9uc19mcm9tX3N0b3JlX3Zpc2l0GMkB",
-            "IAEoAUgSiAEBEjAKImFsbF9jb252ZXJzaW9uc19mcm9tX3N0b3JlX3dlYnNp",
-            "dGUYygEgASgBSBOIAQESGgoMYXZlcmFnZV9jb3N0GMsBIAEoAUgUiAEBEhkK",
-            "C2F2ZXJhZ2VfY3BjGMwBIAEoAUgViAEBEhkKC2F2ZXJhZ2VfY3BlGM0BIAEo",
-            "AUgWiAEBEhkKC2F2ZXJhZ2VfY3BtGM4BIAEoAUgXiAEBEhkKC2F2ZXJhZ2Vf",
-            "Y3B2GM8BIAEoAUgYiAEBEiAKEmF2ZXJhZ2VfcGFnZV92aWV3cxjQASABKAFI",
-            "GYgBARIiChRhdmVyYWdlX3RpbWVfb25fc2l0ZRjRASABKAFIGogBARInChli",
-            "ZW5jaG1hcmtfYXZlcmFnZV9tYXhfY3BjGNIBIAEoAUgbiAEBEhsKDWJlbmNo",
-            "bWFya19jdHIY0wEgASgBSByIAQESGQoLYm91bmNlX3JhdGUY1AEgASgBSB2I",
-            "AQESFAoGY2xpY2tzGIMBIAEoA0geiAEBEh0KD2NvbWJpbmVkX2NsaWNrcxic",
-            "ASABKANIH4gBARInChljb21iaW5lZF9jbGlja3NfcGVyX3F1ZXJ5GJ0BIAEo",
-            "AUggiAEBEh4KEGNvbWJpbmVkX3F1ZXJpZXMYngEgASgDSCGIAQESMgokY29u",
-            "dGVudF9idWRnZXRfbG9zdF9pbXByZXNzaW9uX3NoYXJlGJ8BIAEoAUgiiAEB",
-            "EiYKGGNvbnRlbnRfaW1wcmVzc2lvbl9zaGFyZRigASABKAFII4gBARI4Cipj",
-            "b252ZXJzaW9uX2xhc3RfcmVjZWl2ZWRfcmVxdWVzdF9kYXRlX3RpbWUYoQEg",
-            "ASgJSCSIAQESLQofY29udmVyc2lvbl9sYXN0X2NvbnZlcnNpb25fZGF0ZRii",
-            "ASABKAlIJYgBARIwCiJjb250ZW50X3JhbmtfbG9zdF9pbXByZXNzaW9uX3No",
-            "YXJlGKMBIAEoAUgmiAEBEjAKImNvbnZlcnNpb25zX2Zyb21faW50ZXJhY3Rp",
-            "b25zX3JhdGUYpAEgASgBSCeIAQESHwoRY29udmVyc2lvbnNfdmFsdWUYpQEg",
-            "ASgBSCiIAQESKAoaY29udmVyc2lvbnNfdmFsdWVfcGVyX2Nvc3QYpgEgASgB",
-            "SCmIAQESQQozY29udmVyc2lvbnNfZnJvbV9pbnRlcmFjdGlvbnNfdmFsdWVf",
-            "cGVyX2ludGVyYWN0aW9uGKcBIAEoAUgqiAEBEhkKC2NvbnZlcnNpb25zGKgB",
-            "IAEoAUgriAEBEhkKC2Nvc3RfbWljcm9zGKkBIAEoA0gsiAEBEiYKGGNvc3Rf",
-            "cGVyX2FsbF9jb252ZXJzaW9ucxiqASABKAFILYgBARIhChNjb3N0X3Blcl9j",
-            "b252ZXJzaW9uGKsBIAEoAUguiAEBEjoKLGNvc3RfcGVyX2N1cnJlbnRfbW9k",
-            "ZWxfYXR0cmlidXRlZF9jb252ZXJzaW9uGKwBIAEoAUgviAEBEiYKGGNyb3Nz",
-            "X2RldmljZV9jb252ZXJzaW9ucxitASABKAFIMIgBARIRCgNjdHIYrgEgASgB",
-            "SDGIAQESMgokY3VycmVudF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNpb25z",
-            "GK8BIAEoAUgyiAEBEkkKO2N1cnJlbnRfbW9kZWxfYXR0cmlidXRlZF9jb252",
-            "ZXJzaW9uc19mcm9tX2ludGVyYWN0aW9uc19yYXRlGLABIAEoAUgziAEBEloK",
-            "TGN1cnJlbnRfbW9kZWxfYXR0cmlidXRlZF9jb252ZXJzaW9uc19mcm9tX2lu",
-            "dGVyYWN0aW9uc192YWx1ZV9wZXJfaW50ZXJhY3Rpb24YsQEgASgBSDSIAQES",
-            "OAoqY3VycmVudF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNpb25zX3ZhbHVl",
-            "GLIBIAEoAUg1iAEBEkEKM2N1cnJlbnRfbW9kZWxfYXR0cmlidXRlZF9jb252",
-            "ZXJzaW9uc192YWx1ZV9wZXJfY29zdBizASABKAFINogBARIdCg9lbmdhZ2Vt",
-            "ZW50X3JhdGUYtAEgASgBSDeIAQESGQoLZW5nYWdlbWVudHMYtQEgASgDSDiI",
-            "AQESLQofaG90ZWxfYXZlcmFnZV9sZWFkX3ZhbHVlX21pY3JvcxjVASABKAFI",
-            "OYgBARIvCiFob3RlbF9wcmljZV9kaWZmZXJlbmNlX3BlcmNlbnRhZ2UY1gEg",
-            "ASgBSDqIAQESKAoaaG90ZWxfZWxpZ2libGVfaW1wcmVzc2lvbnMY1wEgASgD",
-            "SDuIAQEScwohaGlzdG9yaWNhbF9jcmVhdGl2ZV9xdWFsaXR5X3Njb3JlGFAg",
-            "ASgOMkguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjYuZW51bXMuUXVhbGl0eVNj",
-            "b3JlQnVja2V0RW51bS5RdWFsaXR5U2NvcmVCdWNrZXQSdwolaGlzdG9yaWNh",
-            "bF9sYW5kaW5nX3BhZ2VfcXVhbGl0eV9zY29yZRhRIAEoDjJILmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnY2LmVudW1zLlF1YWxpdHlTY29yZUJ1Y2tldEVudW0u",
-            "UXVhbGl0eVNjb3JlQnVja2V0EiYKGGhpc3RvcmljYWxfcXVhbGl0eV9zY29y",
-            "ZRjYASABKANIPIgBARJxCh9oaXN0b3JpY2FsX3NlYXJjaF9wcmVkaWN0ZWRf",
-            "Y3RyGFMgASgOMkguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjYuZW51bXMuUXVh",
-            "bGl0eVNjb3JlQnVja2V0RW51bS5RdWFsaXR5U2NvcmVCdWNrZXQSHAoOZ21h",
-            "aWxfZm9yd2FyZHMY2QEgASgDSD2IAQESGQoLZ21haWxfc2F2ZXMY2gEgASgD",
-            "SD6IAQESJAoWZ21haWxfc2Vjb25kYXJ5X2NsaWNrcxjbASABKANIP4gBARIq",
-            "ChxpbXByZXNzaW9uc19mcm9tX3N0b3JlX3JlYWNoGNwBIAEoA0hAiAEBEhkK",
-            "C2ltcHJlc3Npb25zGN0BIAEoA0hBiAEBEh4KEGludGVyYWN0aW9uX3JhdGUY",
-            "3gEgASgBSEKIAQESGgoMaW50ZXJhY3Rpb25zGN8BIAEoA0hDiAEBEm0KF2lu",
-            "dGVyYWN0aW9uX2V2ZW50X3R5cGVzGGQgAygOMkwuZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjYuZW51bXMuSW50ZXJhY3Rpb25FdmVudFR5cGVFbnVtLkludGVy",
-            "YWN0aW9uRXZlbnRUeXBlEiAKEmludmFsaWRfY2xpY2tfcmF0ZRjgASABKAFI",
-            "RIgBARIcCg5pbnZhbGlkX2NsaWNrcxjhASABKANIRYgBARIbCg1tZXNzYWdl",
-            "X2NoYXRzGOIBIAEoA0hGiAEBEiEKE21lc3NhZ2VfaW1wcmVzc2lvbnMY4wEg",
-            "ASgDSEeIAQESHwoRbWVzc2FnZV9jaGF0X3JhdGUY5AEgASgBSEiIAQESLwoh",
-            "bW9iaWxlX2ZyaWVuZGx5X2NsaWNrc19wZXJjZW50YWdlGOUBIAEoAUhJiAEB",
-            "EhwKDm9yZ2FuaWNfY2xpY2tzGOYBIAEoA0hKiAEBEiYKGG9yZ2FuaWNfY2xp",
-            "Y2tzX3Blcl9xdWVyeRjnASABKAFIS4gBARIhChNvcmdhbmljX2ltcHJlc3Np",
-            "b25zGOgBIAEoA0hMiAEBEisKHW9yZ2FuaWNfaW1wcmVzc2lvbnNfcGVyX3F1",
-            "ZXJ5GOkBIAEoAUhNiAEBEh0KD29yZ2FuaWNfcXVlcmllcxjqASABKANITogB",
-            "ARIiChRwZXJjZW50X25ld192aXNpdG9ycxjrASABKAFIT4gBARIZCgtwaG9u",
-            "ZV9jYWxscxjsASABKANIUIgBARIfChFwaG9uZV9pbXByZXNzaW9ucxjtASAB",
-            "KANIUYgBARIgChJwaG9uZV90aHJvdWdoX3JhdGUY7gEgASgBSFKIAQESGgoM",
-            "cmVsYXRpdmVfY3RyGO8BIAEoAUhTiAEBEjIKJHNlYXJjaF9hYnNvbHV0ZV90",
-            "b3BfaW1wcmVzc2lvbl9zaGFyZRiIASABKAFIVIgBARI+CjBzZWFyY2hfYnVk",
-            "Z2V0X2xvc3RfYWJzb2x1dGVfdG9wX2ltcHJlc3Npb25fc2hhcmUYiQEgASgB",
-            "SFWIAQESMQojc2VhcmNoX2J1ZGdldF9sb3N0X2ltcHJlc3Npb25fc2hhcmUY",
-            "igEgASgBSFaIAQESNQonc2VhcmNoX2J1ZGdldF9sb3N0X3RvcF9pbXByZXNz",
-            "aW9uX3NoYXJlGIsBIAEoAUhXiAEBEiAKEnNlYXJjaF9jbGlja19zaGFyZRiM",
-            "ASABKAFIWIgBARIxCiNzZWFyY2hfZXhhY3RfbWF0Y2hfaW1wcmVzc2lvbl9z",
-            "aGFyZRiNASABKAFIWYgBARIlChdzZWFyY2hfaW1wcmVzc2lvbl9zaGFyZRiO",
-            "ASABKAFIWogBARI8Ci5zZWFyY2hfcmFua19sb3N0X2Fic29sdXRlX3RvcF9p",
-            "bXByZXNzaW9uX3NoYXJlGI8BIAEoAUhbiAEBEi8KIXNlYXJjaF9yYW5rX2xv",
-            "c3RfaW1wcmVzc2lvbl9zaGFyZRiQASABKAFIXIgBARIzCiVzZWFyY2hfcmFu",
-            "a19sb3N0X3RvcF9pbXByZXNzaW9uX3NoYXJlGJEBIAEoAUhdiAEBEikKG3Nl",
-            "YXJjaF90b3BfaW1wcmVzc2lvbl9zaGFyZRiSASABKAFIXogBARIZCgtzcGVl",
-            "ZF9zY29yZRiTASABKANIX4gBARInChl0b3BfaW1wcmVzc2lvbl9wZXJjZW50",
-            "YWdlGJQBIAEoAUhgiAEBEj4KMHZhbGlkX2FjY2VsZXJhdGVkX21vYmlsZV9w",
-            "YWdlc19jbGlja3NfcGVyY2VudGFnZRiVASABKAFIYYgBARInChl2YWx1ZV9w",
-            "ZXJfYWxsX2NvbnZlcnNpb25zGJYBIAEoAUhiiAEBEiIKFHZhbHVlX3Blcl9j",
-            "b252ZXJzaW9uGJcBIAEoAUhjiAEBEjsKLXZhbHVlX3Blcl9jdXJyZW50X21v",
-            "ZGVsX2F0dHJpYnV0ZWRfY29udmVyc2lvbhiYASABKAFIZIgBARImChh2aWRl",
-            "b19xdWFydGlsZV9wMTAwX3JhdGUYhAEgASgBSGWIAQESJQoXdmlkZW9fcXVh",
-            "cnRpbGVfcDI1X3JhdGUYhQEgASgBSGaIAQESJQoXdmlkZW9fcXVhcnRpbGVf",
-            "cDUwX3JhdGUYhgEgASgBSGeIAQESJQoXdmlkZW9fcXVhcnRpbGVfcDc1X3Jh",
-            "dGUYhwEgASgBSGiIAQESHQoPdmlkZW9fdmlld19yYXRlGJkBIAEoAUhpiAEB",
-            "EhkKC3ZpZGVvX3ZpZXdzGJoBIAEoA0hqiAEBEiYKGHZpZXdfdGhyb3VnaF9j",
-            "b252ZXJzaW9ucxibASABKANIa4gBAUIlCiNfYWJzb2x1dGVfdG9wX2ltcHJl",
-            "c3Npb25fcGVyY2VudGFnZUISChBfYWN0aXZlX3ZpZXdfY3BtQhIKEF9hY3Rp",
-            "dmVfdmlld19jdHJCGgoYX2FjdGl2ZV92aWV3X2ltcHJlc3Npb25zQhwKGl9h",
-            "Y3RpdmVfdmlld19tZWFzdXJhYmlsaXR5QiUKI19hY3RpdmVfdmlld19tZWFz",
-            "dXJhYmxlX2Nvc3RfbWljcm9zQiUKI19hY3RpdmVfdmlld19tZWFzdXJhYmxl",
-            "X2ltcHJlc3Npb25zQhoKGF9hY3RpdmVfdmlld192aWV3YWJpbGl0eUIpCidf",
-            "YWxsX2NvbnZlcnNpb25zX2Zyb21faW50ZXJhY3Rpb25zX3JhdGVCGAoWX2Fs",
-            "bF9jb252ZXJzaW9uc192YWx1ZUISChBfYWxsX2NvbnZlcnNpb25zQiEKH19h",
-            "bGxfY29udmVyc2lvbnNfdmFsdWVfcGVyX2Nvc3RCJQojX2FsbF9jb252ZXJz",
-            "aW9uc19mcm9tX2NsaWNrX3RvX2NhbGxCIgogX2FsbF9jb252ZXJzaW9uc19m",
-            "cm9tX2RpcmVjdGlvbnNCOgo4X2FsbF9jb252ZXJzaW9uc19mcm9tX2ludGVy",
-            "YWN0aW9uc192YWx1ZV9wZXJfaW50ZXJhY3Rpb25CHAoaX2FsbF9jb252ZXJz",
-            "aW9uc19mcm9tX21lbnVCHQobX2FsbF9jb252ZXJzaW9uc19mcm9tX29yZGVy",
-            "QigKJl9hbGxfY29udmVyc2lvbnNfZnJvbV9vdGhlcl9lbmdhZ2VtZW50QiMK",
-            "IV9hbGxfY29udmVyc2lvbnNfZnJvbV9zdG9yZV92aXNpdEIlCiNfYWxsX2Nv",
-            "bnZlcnNpb25zX2Zyb21fc3RvcmVfd2Vic2l0ZUIPCg1fYXZlcmFnZV9jb3N0",
-            "Qg4KDF9hdmVyYWdlX2NwY0IOCgxfYXZlcmFnZV9jcGVCDgoMX2F2ZXJhZ2Vf",
-            "Y3BtQg4KDF9hdmVyYWdlX2NwdkIVChNfYXZlcmFnZV9wYWdlX3ZpZXdzQhcK",
-            "FV9hdmVyYWdlX3RpbWVfb25fc2l0ZUIcChpfYmVuY2htYXJrX2F2ZXJhZ2Vf",
-            "bWF4X2NwY0IQCg5fYmVuY2htYXJrX2N0ckIOCgxfYm91bmNlX3JhdGVCCQoH",
-            "X2NsaWNrc0ISChBfY29tYmluZWRfY2xpY2tzQhwKGl9jb21iaW5lZF9jbGlj",
-            "a3NfcGVyX3F1ZXJ5QhMKEV9jb21iaW5lZF9xdWVyaWVzQicKJV9jb250ZW50",
-            "X2J1ZGdldF9sb3N0X2ltcHJlc3Npb25fc2hhcmVCGwoZX2NvbnRlbnRfaW1w",
-            "cmVzc2lvbl9zaGFyZUItCitfY29udmVyc2lvbl9sYXN0X3JlY2VpdmVkX3Jl",
-            "cXVlc3RfZGF0ZV90aW1lQiIKIF9jb252ZXJzaW9uX2xhc3RfY29udmVyc2lv",
-            "bl9kYXRlQiUKI19jb250ZW50X3JhbmtfbG9zdF9pbXByZXNzaW9uX3NoYXJl",
-            "QiUKI19jb252ZXJzaW9uc19mcm9tX2ludGVyYWN0aW9uc19yYXRlQhQKEl9j",
-            "b252ZXJzaW9uc192YWx1ZUIdChtfY29udmVyc2lvbnNfdmFsdWVfcGVyX2Nv",
-            "c3RCNgo0X2NvbnZlcnNpb25zX2Zyb21faW50ZXJhY3Rpb25zX3ZhbHVlX3Bl",
-            "cl9pbnRlcmFjdGlvbkIOCgxfY29udmVyc2lvbnNCDgoMX2Nvc3RfbWljcm9z",
-            "QhsKGV9jb3N0X3Blcl9hbGxfY29udmVyc2lvbnNCFgoUX2Nvc3RfcGVyX2Nv",
-            "bnZlcnNpb25CLwotX2Nvc3RfcGVyX2N1cnJlbnRfbW9kZWxfYXR0cmlidXRl",
-            "ZF9jb252ZXJzaW9uQhsKGV9jcm9zc19kZXZpY2VfY29udmVyc2lvbnNCBgoE",
-            "X2N0ckInCiVfY3VycmVudF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNpb25z",
-            "Qj4KPF9jdXJyZW50X21vZGVsX2F0dHJpYnV0ZWRfY29udmVyc2lvbnNfZnJv",
-            "bV9pbnRlcmFjdGlvbnNfcmF0ZUJPCk1fY3VycmVudF9tb2RlbF9hdHRyaWJ1",
-            "dGVkX2NvbnZlcnNpb25zX2Zyb21faW50ZXJhY3Rpb25zX3ZhbHVlX3Blcl9p",
-            "bnRlcmFjdGlvbkItCitfY3VycmVudF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZl",
-            "cnNpb25zX3ZhbHVlQjYKNF9jdXJyZW50X21vZGVsX2F0dHJpYnV0ZWRfY29u",
-            "dmVyc2lvbnNfdmFsdWVfcGVyX2Nvc3RCEgoQX2VuZ2FnZW1lbnRfcmF0ZUIO",
-            "CgxfZW5nYWdlbWVudHNCIgogX2hvdGVsX2F2ZXJhZ2VfbGVhZF92YWx1ZV9t",
-            "aWNyb3NCJAoiX2hvdGVsX3ByaWNlX2RpZmZlcmVuY2VfcGVyY2VudGFnZUId",
-            "ChtfaG90ZWxfZWxpZ2libGVfaW1wcmVzc2lvbnNCGwoZX2hpc3RvcmljYWxf",
-            "cXVhbGl0eV9zY29yZUIRCg9fZ21haWxfZm9yd2FyZHNCDgoMX2dtYWlsX3Nh",
-            "dmVzQhkKF19nbWFpbF9zZWNvbmRhcnlfY2xpY2tzQh8KHV9pbXByZXNzaW9u",
-            "c19mcm9tX3N0b3JlX3JlYWNoQg4KDF9pbXByZXNzaW9uc0ITChFfaW50ZXJh",
-            "Y3Rpb25fcmF0ZUIPCg1faW50ZXJhY3Rpb25zQhUKE19pbnZhbGlkX2NsaWNr",
-            "X3JhdGVCEQoPX2ludmFsaWRfY2xpY2tzQhAKDl9tZXNzYWdlX2NoYXRzQhYK",
-            "FF9tZXNzYWdlX2ltcHJlc3Npb25zQhQKEl9tZXNzYWdlX2NoYXRfcmF0ZUIk",
-            "CiJfbW9iaWxlX2ZyaWVuZGx5X2NsaWNrc19wZXJjZW50YWdlQhEKD19vcmdh",
-            "bmljX2NsaWNrc0IbChlfb3JnYW5pY19jbGlja3NfcGVyX3F1ZXJ5QhYKFF9v",
-            "cmdhbmljX2ltcHJlc3Npb25zQiAKHl9vcmdhbmljX2ltcHJlc3Npb25zX3Bl",
-            "cl9xdWVyeUISChBfb3JnYW5pY19xdWVyaWVzQhcKFV9wZXJjZW50X25ld192",
-            "aXNpdG9yc0IOCgxfcGhvbmVfY2FsbHNCFAoSX3Bob25lX2ltcHJlc3Npb25z",
-            "QhUKE19waG9uZV90aHJvdWdoX3JhdGVCDwoNX3JlbGF0aXZlX2N0ckInCiVf",
-            "c2VhcmNoX2Fic29sdXRlX3RvcF9pbXByZXNzaW9uX3NoYXJlQjMKMV9zZWFy",
-            "Y2hfYnVkZ2V0X2xvc3RfYWJzb2x1dGVfdG9wX2ltcHJlc3Npb25fc2hhcmVC",
-            "JgokX3NlYXJjaF9idWRnZXRfbG9zdF9pbXByZXNzaW9uX3NoYXJlQioKKF9z",
-            "ZWFyY2hfYnVkZ2V0X2xvc3RfdG9wX2ltcHJlc3Npb25fc2hhcmVCFQoTX3Nl",
-            "YXJjaF9jbGlja19zaGFyZUImCiRfc2VhcmNoX2V4YWN0X21hdGNoX2ltcHJl",
-            "c3Npb25fc2hhcmVCGgoYX3NlYXJjaF9pbXByZXNzaW9uX3NoYXJlQjEKL19z",
-            "ZWFyY2hfcmFua19sb3N0X2Fic29sdXRlX3RvcF9pbXByZXNzaW9uX3NoYXJl",
-            "QiQKIl9zZWFyY2hfcmFua19sb3N0X2ltcHJlc3Npb25fc2hhcmVCKAomX3Nl",
-            "YXJjaF9yYW5rX2xvc3RfdG9wX2ltcHJlc3Npb25fc2hhcmVCHgocX3NlYXJj",
-            "aF90b3BfaW1wcmVzc2lvbl9zaGFyZUIOCgxfc3BlZWRfc2NvcmVCHAoaX3Rv",
-            "cF9pbXByZXNzaW9uX3BlcmNlbnRhZ2VCMwoxX3ZhbGlkX2FjY2VsZXJhdGVk",
-            "X21vYmlsZV9wYWdlc19jbGlja3NfcGVyY2VudGFnZUIcChpfdmFsdWVfcGVy",
-            "X2FsbF9jb252ZXJzaW9uc0IXChVfdmFsdWVfcGVyX2NvbnZlcnNpb25CMAou",
-            "X3ZhbHVlX3Blcl9jdXJyZW50X21vZGVsX2F0dHJpYnV0ZWRfY29udmVyc2lv",
-            "bkIbChlfdmlkZW9fcXVhcnRpbGVfcDEwMF9yYXRlQhoKGF92aWRlb19xdWFy",
-            "dGlsZV9wMjVfcmF0ZUIaChhfdmlkZW9fcXVhcnRpbGVfcDUwX3JhdGVCGgoY",
-            "X3ZpZGVvX3F1YXJ0aWxlX3A3NV9yYXRlQhIKEF92aWRlb192aWV3X3JhdGVC",
-            "DgoMX3ZpZGVvX3ZpZXdzQhsKGV92aWV3X3Rocm91Z2hfY29udmVyc2lvbnNC",
-            "5wEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52Ni5jb21tb25CDE1ldHJp",
-            "Y3NQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVh",
-            "cGlzL2Fkcy9nb29nbGVhZHMvdjYvY29tbW9uO2NvbW1vbqICA0dBQaoCHkdv",
-            "b2dsZS5BZHMuR29vZ2xlQWRzLlY2LkNvbW1vbsoCHkdvb2dsZVxBZHNcR29v",
-            "Z2xlQWRzXFY2XENvbW1vbuoCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlY2",
-            "OjpDb21tb25iBnByb3RvMw=="));
+            "X2NvbnZlcnNpb25zX3ZhbHVlGMABIAEoAUgJiAEBEjEKKGFsbF9jb252ZXJz",
+            "aW9uc192YWx1ZV9ieV9jb252ZXJzaW9uX2RhdGUY8AEgASgBEh0KD2FsbF9j",
+            "b252ZXJzaW9ucxjBASABKAFICogBARIrCiJhbGxfY29udmVyc2lvbnNfYnlf",
+            "Y29udmVyc2lvbl9kYXRlGPEBIAEoARIsCh5hbGxfY29udmVyc2lvbnNfdmFs",
+            "dWVfcGVyX2Nvc3QYwgEgASgBSAuIAQESMAoiYWxsX2NvbnZlcnNpb25zX2Zy",
+            "b21fY2xpY2tfdG9fY2FsbBjDASABKAFIDIgBARItCh9hbGxfY29udmVyc2lv",
+            "bnNfZnJvbV9kaXJlY3Rpb25zGMQBIAEoAUgNiAEBEkUKN2FsbF9jb252ZXJz",
+            "aW9uc19mcm9tX2ludGVyYWN0aW9uc192YWx1ZV9wZXJfaW50ZXJhY3Rpb24Y",
+            "xQEgASgBSA6IAQESJwoZYWxsX2NvbnZlcnNpb25zX2Zyb21fbWVudRjGASAB",
+            "KAFID4gBARIoChphbGxfY29udmVyc2lvbnNfZnJvbV9vcmRlchjHASABKAFI",
+            "EIgBARIzCiVhbGxfY29udmVyc2lvbnNfZnJvbV9vdGhlcl9lbmdhZ2VtZW50",
+            "GMgBIAEoAUgRiAEBEi4KIGFsbF9jb252ZXJzaW9uc19mcm9tX3N0b3JlX3Zp",
+            "c2l0GMkBIAEoAUgSiAEBEjAKImFsbF9jb252ZXJzaW9uc19mcm9tX3N0b3Jl",
+            "X3dlYnNpdGUYygEgASgBSBOIAQESGgoMYXZlcmFnZV9jb3N0GMsBIAEoAUgU",
+            "iAEBEhkKC2F2ZXJhZ2VfY3BjGMwBIAEoAUgViAEBEhkKC2F2ZXJhZ2VfY3Bl",
+            "GM0BIAEoAUgWiAEBEhkKC2F2ZXJhZ2VfY3BtGM4BIAEoAUgXiAEBEhkKC2F2",
+            "ZXJhZ2VfY3B2GM8BIAEoAUgYiAEBEiAKEmF2ZXJhZ2VfcGFnZV92aWV3cxjQ",
+            "ASABKAFIGYgBARIiChRhdmVyYWdlX3RpbWVfb25fc2l0ZRjRASABKAFIGogB",
+            "ARInChliZW5jaG1hcmtfYXZlcmFnZV9tYXhfY3BjGNIBIAEoAUgbiAEBEhsK",
+            "DWJlbmNobWFya19jdHIY0wEgASgBSByIAQESGQoLYm91bmNlX3JhdGUY1AEg",
+            "ASgBSB2IAQESFAoGY2xpY2tzGIMBIAEoA0geiAEBEh0KD2NvbWJpbmVkX2Ns",
+            "aWNrcxicASABKANIH4gBARInChljb21iaW5lZF9jbGlja3NfcGVyX3F1ZXJ5",
+            "GJ0BIAEoAUggiAEBEh4KEGNvbWJpbmVkX3F1ZXJpZXMYngEgASgDSCGIAQES",
+            "MgokY29udGVudF9idWRnZXRfbG9zdF9pbXByZXNzaW9uX3NoYXJlGJ8BIAEo",
+            "AUgiiAEBEiYKGGNvbnRlbnRfaW1wcmVzc2lvbl9zaGFyZRigASABKAFII4gB",
+            "ARI4Cipjb252ZXJzaW9uX2xhc3RfcmVjZWl2ZWRfcmVxdWVzdF9kYXRlX3Rp",
+            "bWUYoQEgASgJSCSIAQESLQofY29udmVyc2lvbl9sYXN0X2NvbnZlcnNpb25f",
+            "ZGF0ZRiiASABKAlIJYgBARIwCiJjb250ZW50X3JhbmtfbG9zdF9pbXByZXNz",
+            "aW9uX3NoYXJlGKMBIAEoAUgmiAEBEjAKImNvbnZlcnNpb25zX2Zyb21faW50",
+            "ZXJhY3Rpb25zX3JhdGUYpAEgASgBSCeIAQESHwoRY29udmVyc2lvbnNfdmFs",
+            "dWUYpQEgASgBSCiIAQESLQokY29udmVyc2lvbnNfdmFsdWVfYnlfY29udmVy",
+            "c2lvbl9kYXRlGPIBIAEoARIoChpjb252ZXJzaW9uc192YWx1ZV9wZXJfY29z",
+            "dBimASABKAFIKYgBARJBCjNjb252ZXJzaW9uc19mcm9tX2ludGVyYWN0aW9u",
+            "c192YWx1ZV9wZXJfaW50ZXJhY3Rpb24YpwEgASgBSCqIAQESGQoLY29udmVy",
+            "c2lvbnMYqAEgASgBSCuIAQESJwoeY29udmVyc2lvbnNfYnlfY29udmVyc2lv",
+            "bl9kYXRlGPMBIAEoARIZCgtjb3N0X21pY3JvcxipASABKANILIgBARImChhj",
+            "b3N0X3Blcl9hbGxfY29udmVyc2lvbnMYqgEgASgBSC2IAQESIQoTY29zdF9w",
+            "ZXJfY29udmVyc2lvbhirASABKAFILogBARI6Cixjb3N0X3Blcl9jdXJyZW50",
+            "X21vZGVsX2F0dHJpYnV0ZWRfY29udmVyc2lvbhisASABKAFIL4gBARImChhj",
+            "cm9zc19kZXZpY2VfY29udmVyc2lvbnMYrQEgASgBSDCIAQESEQoDY3RyGK4B",
+            "IAEoAUgxiAEBEjIKJGN1cnJlbnRfbW9kZWxfYXR0cmlidXRlZF9jb252ZXJz",
+            "aW9ucxivASABKAFIMogBARJJCjtjdXJyZW50X21vZGVsX2F0dHJpYnV0ZWRf",
+            "Y29udmVyc2lvbnNfZnJvbV9pbnRlcmFjdGlvbnNfcmF0ZRiwASABKAFIM4gB",
+            "ARJaCkxjdXJyZW50X21vZGVsX2F0dHJpYnV0ZWRfY29udmVyc2lvbnNfZnJv",
+            "bV9pbnRlcmFjdGlvbnNfdmFsdWVfcGVyX2ludGVyYWN0aW9uGLEBIAEoAUg0",
+            "iAEBEjgKKmN1cnJlbnRfbW9kZWxfYXR0cmlidXRlZF9jb252ZXJzaW9uc192",
+            "YWx1ZRiyASABKAFINYgBARJBCjNjdXJyZW50X21vZGVsX2F0dHJpYnV0ZWRf",
+            "Y29udmVyc2lvbnNfdmFsdWVfcGVyX2Nvc3QYswEgASgBSDaIAQESHQoPZW5n",
+            "YWdlbWVudF9yYXRlGLQBIAEoAUg3iAEBEhkKC2VuZ2FnZW1lbnRzGLUBIAEo",
+            "A0g4iAEBEi0KH2hvdGVsX2F2ZXJhZ2VfbGVhZF92YWx1ZV9taWNyb3MY1QEg",
+            "ASgBSDmIAQESLwohaG90ZWxfcHJpY2VfZGlmZmVyZW5jZV9wZXJjZW50YWdl",
+            "GNYBIAEoAUg6iAEBEigKGmhvdGVsX2VsaWdpYmxlX2ltcHJlc3Npb25zGNcB",
+            "IAEoA0g7iAEBEnMKIWhpc3RvcmljYWxfY3JlYXRpdmVfcXVhbGl0eV9zY29y",
+            "ZRhQIAEoDjJILmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY2LmVudW1zLlF1YWxp",
+            "dHlTY29yZUJ1Y2tldEVudW0uUXVhbGl0eVNjb3JlQnVja2V0EncKJWhpc3Rv",
+            "cmljYWxfbGFuZGluZ19wYWdlX3F1YWxpdHlfc2NvcmUYUSABKA4ySC5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52Ni5lbnVtcy5RdWFsaXR5U2NvcmVCdWNrZXRF",
+            "bnVtLlF1YWxpdHlTY29yZUJ1Y2tldBImChhoaXN0b3JpY2FsX3F1YWxpdHlf",
+            "c2NvcmUY2AEgASgDSDyIAQEScQofaGlzdG9yaWNhbF9zZWFyY2hfcHJlZGlj",
+            "dGVkX2N0chhTIAEoDjJILmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY2LmVudW1z",
+            "LlF1YWxpdHlTY29yZUJ1Y2tldEVudW0uUXVhbGl0eVNjb3JlQnVja2V0EhwK",
+            "DmdtYWlsX2ZvcndhcmRzGNkBIAEoA0g9iAEBEhkKC2dtYWlsX3NhdmVzGNoB",
+            "IAEoA0g+iAEBEiQKFmdtYWlsX3NlY29uZGFyeV9jbGlja3MY2wEgASgDSD+I",
+            "AQESKgocaW1wcmVzc2lvbnNfZnJvbV9zdG9yZV9yZWFjaBjcASABKANIQIgB",
+            "ARIZCgtpbXByZXNzaW9ucxjdASABKANIQYgBARIeChBpbnRlcmFjdGlvbl9y",
+            "YXRlGN4BIAEoAUhCiAEBEhoKDGludGVyYWN0aW9ucxjfASABKANIQ4gBARJt",
+            "ChdpbnRlcmFjdGlvbl9ldmVudF90eXBlcxhkIAMoDjJMLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnY2LmVudW1zLkludGVyYWN0aW9uRXZlbnRUeXBlRW51bS5J",
+            "bnRlcmFjdGlvbkV2ZW50VHlwZRIgChJpbnZhbGlkX2NsaWNrX3JhdGUY4AEg",
+            "ASgBSESIAQESHAoOaW52YWxpZF9jbGlja3MY4QEgASgDSEWIAQESGwoNbWVz",
+            "c2FnZV9jaGF0cxjiASABKANIRogBARIhChNtZXNzYWdlX2ltcHJlc3Npb25z",
+            "GOMBIAEoA0hHiAEBEh8KEW1lc3NhZ2VfY2hhdF9yYXRlGOQBIAEoAUhIiAEB",
+            "Ei8KIW1vYmlsZV9mcmllbmRseV9jbGlja3NfcGVyY2VudGFnZRjlASABKAFI",
+            "SYgBARIcCg5vcmdhbmljX2NsaWNrcxjmASABKANISogBARImChhvcmdhbmlj",
+            "X2NsaWNrc19wZXJfcXVlcnkY5wEgASgBSEuIAQESIQoTb3JnYW5pY19pbXBy",
+            "ZXNzaW9ucxjoASABKANITIgBARIrCh1vcmdhbmljX2ltcHJlc3Npb25zX3Bl",
+            "cl9xdWVyeRjpASABKAFITYgBARIdCg9vcmdhbmljX3F1ZXJpZXMY6gEgASgD",
+            "SE6IAQESIgoUcGVyY2VudF9uZXdfdmlzaXRvcnMY6wEgASgBSE+IAQESGQoL",
+            "cGhvbmVfY2FsbHMY7AEgASgDSFCIAQESHwoRcGhvbmVfaW1wcmVzc2lvbnMY",
+            "7QEgASgDSFGIAQESIAoScGhvbmVfdGhyb3VnaF9yYXRlGO4BIAEoAUhSiAEB",
+            "EhoKDHJlbGF0aXZlX2N0chjvASABKAFIU4gBARIyCiRzZWFyY2hfYWJzb2x1",
+            "dGVfdG9wX2ltcHJlc3Npb25fc2hhcmUYiAEgASgBSFSIAQESPgowc2VhcmNo",
+            "X2J1ZGdldF9sb3N0X2Fic29sdXRlX3RvcF9pbXByZXNzaW9uX3NoYXJlGIkB",
+            "IAEoAUhViAEBEjEKI3NlYXJjaF9idWRnZXRfbG9zdF9pbXByZXNzaW9uX3No",
+            "YXJlGIoBIAEoAUhWiAEBEjUKJ3NlYXJjaF9idWRnZXRfbG9zdF90b3BfaW1w",
+            "cmVzc2lvbl9zaGFyZRiLASABKAFIV4gBARIgChJzZWFyY2hfY2xpY2tfc2hh",
+            "cmUYjAEgASgBSFiIAQESMQojc2VhcmNoX2V4YWN0X21hdGNoX2ltcHJlc3Np",
+            "b25fc2hhcmUYjQEgASgBSFmIAQESJQoXc2VhcmNoX2ltcHJlc3Npb25fc2hh",
+            "cmUYjgEgASgBSFqIAQESPAouc2VhcmNoX3JhbmtfbG9zdF9hYnNvbHV0ZV90",
+            "b3BfaW1wcmVzc2lvbl9zaGFyZRiPASABKAFIW4gBARIvCiFzZWFyY2hfcmFu",
+            "a19sb3N0X2ltcHJlc3Npb25fc2hhcmUYkAEgASgBSFyIAQESMwolc2VhcmNo",
+            "X3JhbmtfbG9zdF90b3BfaW1wcmVzc2lvbl9zaGFyZRiRASABKAFIXYgBARIp",
+            "ChtzZWFyY2hfdG9wX2ltcHJlc3Npb25fc2hhcmUYkgEgASgBSF6IAQESGQoL",
+            "c3BlZWRfc2NvcmUYkwEgASgDSF+IAQESJwoZdG9wX2ltcHJlc3Npb25fcGVy",
+            "Y2VudGFnZRiUASABKAFIYIgBARI+CjB2YWxpZF9hY2NlbGVyYXRlZF9tb2Jp",
+            "bGVfcGFnZXNfY2xpY2tzX3BlcmNlbnRhZ2UYlQEgASgBSGGIAQESJwoZdmFs",
+            "dWVfcGVyX2FsbF9jb252ZXJzaW9ucxiWASABKAFIYogBARI6Cix2YWx1ZV9w",
+            "ZXJfYWxsX2NvbnZlcnNpb25zX2J5X2NvbnZlcnNpb25fZGF0ZRj0ASABKAFI",
+            "Y4gBARIiChR2YWx1ZV9wZXJfY29udmVyc2lvbhiXASABKAFIZIgBARI2Cih2",
+            "YWx1ZV9wZXJfY29udmVyc2lvbnNfYnlfY29udmVyc2lvbl9kYXRlGPUBIAEo",
+            "AUhliAEBEjsKLXZhbHVlX3Blcl9jdXJyZW50X21vZGVsX2F0dHJpYnV0ZWRf",
+            "Y29udmVyc2lvbhiYASABKAFIZogBARImChh2aWRlb19xdWFydGlsZV9wMTAw",
+            "X3JhdGUYhAEgASgBSGeIAQESJQoXdmlkZW9fcXVhcnRpbGVfcDI1X3JhdGUY",
+            "hQEgASgBSGiIAQESJQoXdmlkZW9fcXVhcnRpbGVfcDUwX3JhdGUYhgEgASgB",
+            "SGmIAQESJQoXdmlkZW9fcXVhcnRpbGVfcDc1X3JhdGUYhwEgASgBSGqIAQES",
+            "HQoPdmlkZW9fdmlld19yYXRlGJkBIAEoAUhriAEBEhkKC3ZpZGVvX3ZpZXdz",
+            "GJoBIAEoA0hsiAEBEiYKGHZpZXdfdGhyb3VnaF9jb252ZXJzaW9ucxibASAB",
+            "KANIbYgBAUIlCiNfYWJzb2x1dGVfdG9wX2ltcHJlc3Npb25fcGVyY2VudGFn",
+            "ZUISChBfYWN0aXZlX3ZpZXdfY3BtQhIKEF9hY3RpdmVfdmlld19jdHJCGgoY",
+            "X2FjdGl2ZV92aWV3X2ltcHJlc3Npb25zQhwKGl9hY3RpdmVfdmlld19tZWFz",
+            "dXJhYmlsaXR5QiUKI19hY3RpdmVfdmlld19tZWFzdXJhYmxlX2Nvc3RfbWlj",
+            "cm9zQiUKI19hY3RpdmVfdmlld19tZWFzdXJhYmxlX2ltcHJlc3Npb25zQhoK",
+            "GF9hY3RpdmVfdmlld192aWV3YWJpbGl0eUIpCidfYWxsX2NvbnZlcnNpb25z",
+            "X2Zyb21faW50ZXJhY3Rpb25zX3JhdGVCGAoWX2FsbF9jb252ZXJzaW9uc192",
+            "YWx1ZUISChBfYWxsX2NvbnZlcnNpb25zQiEKH19hbGxfY29udmVyc2lvbnNf",
+            "dmFsdWVfcGVyX2Nvc3RCJQojX2FsbF9jb252ZXJzaW9uc19mcm9tX2NsaWNr",
+            "X3RvX2NhbGxCIgogX2FsbF9jb252ZXJzaW9uc19mcm9tX2RpcmVjdGlvbnNC",
+            "Ogo4X2FsbF9jb252ZXJzaW9uc19mcm9tX2ludGVyYWN0aW9uc192YWx1ZV9w",
+            "ZXJfaW50ZXJhY3Rpb25CHAoaX2FsbF9jb252ZXJzaW9uc19mcm9tX21lbnVC",
+            "HQobX2FsbF9jb252ZXJzaW9uc19mcm9tX29yZGVyQigKJl9hbGxfY29udmVy",
+            "c2lvbnNfZnJvbV9vdGhlcl9lbmdhZ2VtZW50QiMKIV9hbGxfY29udmVyc2lv",
+            "bnNfZnJvbV9zdG9yZV92aXNpdEIlCiNfYWxsX2NvbnZlcnNpb25zX2Zyb21f",
+            "c3RvcmVfd2Vic2l0ZUIPCg1fYXZlcmFnZV9jb3N0Qg4KDF9hdmVyYWdlX2Nw",
+            "Y0IOCgxfYXZlcmFnZV9jcGVCDgoMX2F2ZXJhZ2VfY3BtQg4KDF9hdmVyYWdl",
+            "X2NwdkIVChNfYXZlcmFnZV9wYWdlX3ZpZXdzQhcKFV9hdmVyYWdlX3RpbWVf",
+            "b25fc2l0ZUIcChpfYmVuY2htYXJrX2F2ZXJhZ2VfbWF4X2NwY0IQCg5fYmVu",
+            "Y2htYXJrX2N0ckIOCgxfYm91bmNlX3JhdGVCCQoHX2NsaWNrc0ISChBfY29t",
+            "YmluZWRfY2xpY2tzQhwKGl9jb21iaW5lZF9jbGlja3NfcGVyX3F1ZXJ5QhMK",
+            "EV9jb21iaW5lZF9xdWVyaWVzQicKJV9jb250ZW50X2J1ZGdldF9sb3N0X2lt",
+            "cHJlc3Npb25fc2hhcmVCGwoZX2NvbnRlbnRfaW1wcmVzc2lvbl9zaGFyZUIt",
+            "CitfY29udmVyc2lvbl9sYXN0X3JlY2VpdmVkX3JlcXVlc3RfZGF0ZV90aW1l",
+            "QiIKIF9jb252ZXJzaW9uX2xhc3RfY29udmVyc2lvbl9kYXRlQiUKI19jb250",
+            "ZW50X3JhbmtfbG9zdF9pbXByZXNzaW9uX3NoYXJlQiUKI19jb252ZXJzaW9u",
+            "c19mcm9tX2ludGVyYWN0aW9uc19yYXRlQhQKEl9jb252ZXJzaW9uc192YWx1",
+            "ZUIdChtfY29udmVyc2lvbnNfdmFsdWVfcGVyX2Nvc3RCNgo0X2NvbnZlcnNp",
+            "b25zX2Zyb21faW50ZXJhY3Rpb25zX3ZhbHVlX3Blcl9pbnRlcmFjdGlvbkIO",
+            "CgxfY29udmVyc2lvbnNCDgoMX2Nvc3RfbWljcm9zQhsKGV9jb3N0X3Blcl9h",
+            "bGxfY29udmVyc2lvbnNCFgoUX2Nvc3RfcGVyX2NvbnZlcnNpb25CLwotX2Nv",
+            "c3RfcGVyX2N1cnJlbnRfbW9kZWxfYXR0cmlidXRlZF9jb252ZXJzaW9uQhsK",
+            "GV9jcm9zc19kZXZpY2VfY29udmVyc2lvbnNCBgoEX2N0ckInCiVfY3VycmVu",
+            "dF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNpb25zQj4KPF9jdXJyZW50X21v",
+            "ZGVsX2F0dHJpYnV0ZWRfY29udmVyc2lvbnNfZnJvbV9pbnRlcmFjdGlvbnNf",
+            "cmF0ZUJPCk1fY3VycmVudF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNpb25z",
+            "X2Zyb21faW50ZXJhY3Rpb25zX3ZhbHVlX3Blcl9pbnRlcmFjdGlvbkItCitf",
+            "Y3VycmVudF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNpb25zX3ZhbHVlQjYK",
+            "NF9jdXJyZW50X21vZGVsX2F0dHJpYnV0ZWRfY29udmVyc2lvbnNfdmFsdWVf",
+            "cGVyX2Nvc3RCEgoQX2VuZ2FnZW1lbnRfcmF0ZUIOCgxfZW5nYWdlbWVudHNC",
+            "IgogX2hvdGVsX2F2ZXJhZ2VfbGVhZF92YWx1ZV9taWNyb3NCJAoiX2hvdGVs",
+            "X3ByaWNlX2RpZmZlcmVuY2VfcGVyY2VudGFnZUIdChtfaG90ZWxfZWxpZ2li",
+            "bGVfaW1wcmVzc2lvbnNCGwoZX2hpc3RvcmljYWxfcXVhbGl0eV9zY29yZUIR",
+            "Cg9fZ21haWxfZm9yd2FyZHNCDgoMX2dtYWlsX3NhdmVzQhkKF19nbWFpbF9z",
+            "ZWNvbmRhcnlfY2xpY2tzQh8KHV9pbXByZXNzaW9uc19mcm9tX3N0b3JlX3Jl",
+            "YWNoQg4KDF9pbXByZXNzaW9uc0ITChFfaW50ZXJhY3Rpb25fcmF0ZUIPCg1f",
+            "aW50ZXJhY3Rpb25zQhUKE19pbnZhbGlkX2NsaWNrX3JhdGVCEQoPX2ludmFs",
+            "aWRfY2xpY2tzQhAKDl9tZXNzYWdlX2NoYXRzQhYKFF9tZXNzYWdlX2ltcHJl",
+            "c3Npb25zQhQKEl9tZXNzYWdlX2NoYXRfcmF0ZUIkCiJfbW9iaWxlX2ZyaWVu",
+            "ZGx5X2NsaWNrc19wZXJjZW50YWdlQhEKD19vcmdhbmljX2NsaWNrc0IbChlf",
+            "b3JnYW5pY19jbGlja3NfcGVyX3F1ZXJ5QhYKFF9vcmdhbmljX2ltcHJlc3Np",
+            "b25zQiAKHl9vcmdhbmljX2ltcHJlc3Npb25zX3Blcl9xdWVyeUISChBfb3Jn",
+            "YW5pY19xdWVyaWVzQhcKFV9wZXJjZW50X25ld192aXNpdG9yc0IOCgxfcGhv",
+            "bmVfY2FsbHNCFAoSX3Bob25lX2ltcHJlc3Npb25zQhUKE19waG9uZV90aHJv",
+            "dWdoX3JhdGVCDwoNX3JlbGF0aXZlX2N0ckInCiVfc2VhcmNoX2Fic29sdXRl",
+            "X3RvcF9pbXByZXNzaW9uX3NoYXJlQjMKMV9zZWFyY2hfYnVkZ2V0X2xvc3Rf",
+            "YWJzb2x1dGVfdG9wX2ltcHJlc3Npb25fc2hhcmVCJgokX3NlYXJjaF9idWRn",
+            "ZXRfbG9zdF9pbXByZXNzaW9uX3NoYXJlQioKKF9zZWFyY2hfYnVkZ2V0X2xv",
+            "c3RfdG9wX2ltcHJlc3Npb25fc2hhcmVCFQoTX3NlYXJjaF9jbGlja19zaGFy",
+            "ZUImCiRfc2VhcmNoX2V4YWN0X21hdGNoX2ltcHJlc3Npb25fc2hhcmVCGgoY",
+            "X3NlYXJjaF9pbXByZXNzaW9uX3NoYXJlQjEKL19zZWFyY2hfcmFua19sb3N0",
+            "X2Fic29sdXRlX3RvcF9pbXByZXNzaW9uX3NoYXJlQiQKIl9zZWFyY2hfcmFu",
+            "a19sb3N0X2ltcHJlc3Npb25fc2hhcmVCKAomX3NlYXJjaF9yYW5rX2xvc3Rf",
+            "dG9wX2ltcHJlc3Npb25fc2hhcmVCHgocX3NlYXJjaF90b3BfaW1wcmVzc2lv",
+            "bl9zaGFyZUIOCgxfc3BlZWRfc2NvcmVCHAoaX3RvcF9pbXByZXNzaW9uX3Bl",
+            "cmNlbnRhZ2VCMwoxX3ZhbGlkX2FjY2VsZXJhdGVkX21vYmlsZV9wYWdlc19j",
+            "bGlja3NfcGVyY2VudGFnZUIcChpfdmFsdWVfcGVyX2FsbF9jb252ZXJzaW9u",
+            "c0IvCi1fdmFsdWVfcGVyX2FsbF9jb252ZXJzaW9uc19ieV9jb252ZXJzaW9u",
+            "X2RhdGVCFwoVX3ZhbHVlX3Blcl9jb252ZXJzaW9uQisKKV92YWx1ZV9wZXJf",
+            "Y29udmVyc2lvbnNfYnlfY29udmVyc2lvbl9kYXRlQjAKLl92YWx1ZV9wZXJf",
+            "Y3VycmVudF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNpb25CGwoZX3ZpZGVv",
+            "X3F1YXJ0aWxlX3AxMDBfcmF0ZUIaChhfdmlkZW9fcXVhcnRpbGVfcDI1X3Jh",
+            "dGVCGgoYX3ZpZGVvX3F1YXJ0aWxlX3A1MF9yYXRlQhoKGF92aWRlb19xdWFy",
+            "dGlsZV9wNzVfcmF0ZUISChBfdmlkZW9fdmlld19yYXRlQg4KDF92aWRlb192",
+            "aWV3c0IbChlfdmlld190aHJvdWdoX2NvbnZlcnNpb25zQucBCiJjb20uZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjYuY29tbW9uQgxNZXRyaWNzUHJvdG9QAVpE",
+            "Z29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29v",
+            "Z2xlYWRzL3Y2L2NvbW1vbjtjb21tb26iAgNHQUGqAh5Hb29nbGUuQWRzLkdv",
+            "b2dsZUFkcy5WNi5Db21tb27KAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWNlxD",
+            "b21tb27qAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWNjo6Q29tbW9uYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V6.Enums.InteractionEventTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V6.Enums.QualityScoreBucketReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V6.Common.Metrics), global::Google.Ads.GoogleAds.V6.Common.Metrics.Parser, new[]{ "AbsoluteTopImpressionPercentage", "ActiveViewCpm", "ActiveViewCtr", "ActiveViewImpressions", "ActiveViewMeasurability", "ActiveViewMeasurableCostMicros", "ActiveViewMeasurableImpressions", "ActiveViewViewability", "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversions", "AllConversionsValuePerCost", "AllConversionsFromClickToCall", "AllConversionsFromDirections", "AllConversionsFromInteractionsValuePerInteraction", "AllConversionsFromMenu", "AllConversionsFromOrder", "AllConversionsFromOtherEngagement", "AllConversionsFromStoreVisit", "AllConversionsFromStoreWebsite", "AverageCost", "AverageCpc", "AverageCpe", "AverageCpm", "AverageCpv", "AveragePageViews", "AverageTimeOnSite", "BenchmarkAverageMaxCpc", "BenchmarkCtr", "BounceRate", "Clicks", "CombinedClicks", "CombinedClicksPerQuery", "CombinedQueries", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CostPerCurrentModelAttributedConversion", "CrossDeviceConversions", "Ctr", "CurrentModelAttributedConversions", "CurrentModelAttributedConversionsFromInteractionsRate", "CurrentModelAttributedConversionsFromInteractionsValuePerInteraction", "CurrentModelAttributedConversionsValue", "CurrentModelAttributedConversionsValuePerCost", "EngagementRate", "Engagements", "HotelAverageLeadValueMicros", "HotelPriceDifferencePercentage", "HotelEligibleImpressions", "HistoricalCreativeQualityScore", "HistoricalLandingPageQualityScore", "HistoricalQualityScore", "HistoricalSearchPredictedCtr", "GmailForwards", "GmailSaves", "GmailSecondaryClicks", "ImpressionsFromStoreReach", "Impressions", "InteractionRate", "Interactions", "InteractionEventTypes", "InvalidClickRate", "InvalidClicks", "MessageChats", "MessageImpressions", "MessageChatRate", "MobileFriendlyClicksPercentage", "OrganicClicks", "OrganicClicksPerQuery", "OrganicImpressions", "OrganicImpressionsPerQuery", "OrganicQueries", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchAbsoluteTopImpressionShare", "SearchBudgetLostAbsoluteTopImpressionShare", "SearchBudgetLostImpressionShare", "SearchBudgetLostTopImpressionShare", "SearchClickShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostAbsoluteTopImpressionShare", "SearchRankLostImpressionShare", "SearchRankLostTopImpressionShare", "SearchTopImpressionShare", "SpeedScore", "TopImpressionPercentage", "ValidAcceleratedMobilePagesClicksPercentage", "ValuePerAllConversions", "ValuePerConversion", "ValuePerCurrentModelAttributedConversion", "VideoQuartileP100Rate", "VideoQuartileP25Rate", "VideoQuartileP50Rate", "VideoQuartileP75Rate", "VideoViewRate", "VideoViews", "ViewThroughConversions" }, new[]{ "AbsoluteTopImpressionPercentage", "ActiveViewCpm", "ActiveViewCtr", "ActiveViewImpressions", "ActiveViewMeasurability", "ActiveViewMeasurableCostMicros", "ActiveViewMeasurableImpressions", "ActiveViewViewability", "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversions", "AllConversionsValuePerCost", "AllConversionsFromClickToCall", "AllConversionsFromDirections", "AllConversionsFromInteractionsValuePerInteraction", "AllConversionsFromMenu", "AllConversionsFromOrder", "AllConversionsFromOtherEngagement", "AllConversionsFromStoreVisit", "AllConversionsFromStoreWebsite", "AverageCost", "AverageCpc", "AverageCpe", "AverageCpm", "AverageCpv", "AveragePageViews", "AverageTimeOnSite", "BenchmarkAverageMaxCpc", "BenchmarkCtr", "BounceRate", "Clicks", "CombinedClicks", "CombinedClicksPerQuery", "CombinedQueries", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CostPerCurrentModelAttributedConversion", "CrossDeviceConversions", "Ctr", "CurrentModelAttributedConversions", "CurrentModelAttributedConversionsFromInteractionsRate", "CurrentModelAttributedConversionsFromInteractionsValuePerInteraction", "CurrentModelAttributedConversionsValue", "CurrentModelAttributedConversionsValuePerCost", "EngagementRate", "Engagements", "HotelAverageLeadValueMicros", "HotelPriceDifferencePercentage", "HotelEligibleImpressions", "HistoricalQualityScore", "GmailForwards", "GmailSaves", "GmailSecondaryClicks", "ImpressionsFromStoreReach", "Impressions", "InteractionRate", "Interactions", "InvalidClickRate", "InvalidClicks", "MessageChats", "MessageImpressions", "MessageChatRate", "MobileFriendlyClicksPercentage", "OrganicClicks", "OrganicClicksPerQuery", "OrganicImpressions", "OrganicImpressionsPerQuery", "OrganicQueries", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchAbsoluteTopImpressionShare", "SearchBudgetLostAbsoluteTopImpressionShare", "SearchBudgetLostImpressionShare", "SearchBudgetLostTopImpressionShare", "SearchClickShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostAbsoluteTopImpressionShare", "SearchRankLostImpressionShare", "SearchRankLostTopImpressionShare", "SearchTopImpressionShare", "SpeedScore", "TopImpressionPercentage", "ValidAcceleratedMobilePagesClicksPercentage", "ValuePerAllConversions", "ValuePerConversion", "ValuePerCurrentModelAttributedConversion", "VideoQuartileP100Rate", "VideoQuartileP25Rate", "VideoQuartileP50Rate", "VideoQuartileP75Rate", "VideoViewRate", "VideoViews", "ViewThroughConversions" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V6.Common.Metrics), global::Google.Ads.GoogleAds.V6.Common.Metrics.Parser, new[]{ "AbsoluteTopImpressionPercentage", "ActiveViewCpm", "ActiveViewCtr", "ActiveViewImpressions", "ActiveViewMeasurability", "ActiveViewMeasurableCostMicros", "ActiveViewMeasurableImpressions", "ActiveViewViewability", "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversionsValueByConversionDate", "AllConversions", "AllConversionsByConversionDate", "AllConversionsValuePerCost", "AllConversionsFromClickToCall", "AllConversionsFromDirections", "AllConversionsFromInteractionsValuePerInteraction", "AllConversionsFromMenu", "AllConversionsFromOrder", "AllConversionsFromOtherEngagement", "AllConversionsFromStoreVisit", "AllConversionsFromStoreWebsite", "AverageCost", "AverageCpc", "AverageCpe", "AverageCpm", "AverageCpv", "AveragePageViews", "AverageTimeOnSite", "BenchmarkAverageMaxCpc", "BenchmarkCtr", "BounceRate", "Clicks", "CombinedClicks", "CombinedClicksPerQuery", "CombinedQueries", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValueByConversionDate", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "ConversionsByConversionDate", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CostPerCurrentModelAttributedConversion", "CrossDeviceConversions", "Ctr", "CurrentModelAttributedConversions", "CurrentModelAttributedConversionsFromInteractionsRate", "CurrentModelAttributedConversionsFromInteractionsValuePerInteraction", "CurrentModelAttributedConversionsValue", "CurrentModelAttributedConversionsValuePerCost", "EngagementRate", "Engagements", "HotelAverageLeadValueMicros", "HotelPriceDifferencePercentage", "HotelEligibleImpressions", "HistoricalCreativeQualityScore", "HistoricalLandingPageQualityScore", "HistoricalQualityScore", "HistoricalSearchPredictedCtr", "GmailForwards", "GmailSaves", "GmailSecondaryClicks", "ImpressionsFromStoreReach", "Impressions", "InteractionRate", "Interactions", "InteractionEventTypes", "InvalidClickRate", "InvalidClicks", "MessageChats", "MessageImpressions", "MessageChatRate", "MobileFriendlyClicksPercentage", "OrganicClicks", "OrganicClicksPerQuery", "OrganicImpressions", "OrganicImpressionsPerQuery", "OrganicQueries", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchAbsoluteTopImpressionShare", "SearchBudgetLostAbsoluteTopImpressionShare", "SearchBudgetLostImpressionShare", "SearchBudgetLostTopImpressionShare", "SearchClickShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostAbsoluteTopImpressionShare", "SearchRankLostImpressionShare", "SearchRankLostTopImpressionShare", "SearchTopImpressionShare", "SpeedScore", "TopImpressionPercentage", "ValidAcceleratedMobilePagesClicksPercentage", "ValuePerAllConversions", "ValuePerAllConversionsByConversionDate", "ValuePerConversion", "ValuePerConversionsByConversionDate", "ValuePerCurrentModelAttributedConversion", "VideoQuartileP100Rate", "VideoQuartileP25Rate", "VideoQuartileP50Rate", "VideoQuartileP75Rate", "VideoViewRate", "VideoViews", "ViewThroughConversions" }, new[]{ "AbsoluteTopImpressionPercentage", "ActiveViewCpm", "ActiveViewCtr", "ActiveViewImpressions", "ActiveViewMeasurability", "ActiveViewMeasurableCostMicros", "ActiveViewMeasurableImpressions", "ActiveViewViewability", "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversions", "AllConversionsValuePerCost", "AllConversionsFromClickToCall", "AllConversionsFromDirections", "AllConversionsFromInteractionsValuePerInteraction", "AllConversionsFromMenu", "AllConversionsFromOrder", "AllConversionsFromOtherEngagement", "AllConversionsFromStoreVisit", "AllConversionsFromStoreWebsite", "AverageCost", "AverageCpc", "AverageCpe", "AverageCpm", "AverageCpv", "AveragePageViews", "AverageTimeOnSite", "BenchmarkAverageMaxCpc", "BenchmarkCtr", "BounceRate", "Clicks", "CombinedClicks", "CombinedClicksPerQuery", "CombinedQueries", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CostPerCurrentModelAttributedConversion", "CrossDeviceConversions", "Ctr", "CurrentModelAttributedConversions", "CurrentModelAttributedConversionsFromInteractionsRate", "CurrentModelAttributedConversionsFromInteractionsValuePerInteraction", "CurrentModelAttributedConversionsValue", "CurrentModelAttributedConversionsValuePerCost", "EngagementRate", "Engagements", "HotelAverageLeadValueMicros", "HotelPriceDifferencePercentage", "HotelEligibleImpressions", "HistoricalQualityScore", "GmailForwards", "GmailSaves", "GmailSecondaryClicks", "ImpressionsFromStoreReach", "Impressions", "InteractionRate", "Interactions", "InvalidClickRate", "InvalidClicks", "MessageChats", "MessageImpressions", "MessageChatRate", "MobileFriendlyClicksPercentage", "OrganicClicks", "OrganicClicksPerQuery", "OrganicImpressions", "OrganicImpressionsPerQuery", "OrganicQueries", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchAbsoluteTopImpressionShare", "SearchBudgetLostAbsoluteTopImpressionShare", "SearchBudgetLostImpressionShare", "SearchBudgetLostTopImpressionShare", "SearchClickShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostAbsoluteTopImpressionShare", "SearchRankLostImpressionShare", "SearchRankLostTopImpressionShare", "SearchTopImpressionShare", "SpeedScore", "TopImpressionPercentage", "ValidAcceleratedMobilePagesClicksPercentage", "ValuePerAllConversions", "ValuePerAllConversionsByConversionDate", "ValuePerConversion", "ValuePerConversionsByConversionDate", "ValuePerCurrentModelAttributedConversion", "VideoQuartileP100Rate", "VideoQuartileP25Rate", "VideoQuartileP50Rate", "VideoQuartileP75Rate", "VideoViewRate", "VideoViews", "ViewThroughConversions" }, null, null, null)
           }));
     }
     #endregion
@@ -277,7 +286,9 @@ namespace Google.Ads.GoogleAds.V6.Common {
       activeViewViewability_ = other.activeViewViewability_;
       allConversionsFromInteractionsRate_ = other.allConversionsFromInteractionsRate_;
       allConversionsValue_ = other.allConversionsValue_;
+      allConversionsValueByConversionDate_ = other.allConversionsValueByConversionDate_;
       allConversions_ = other.allConversions_;
+      allConversionsByConversionDate_ = other.allConversionsByConversionDate_;
       allConversionsValuePerCost_ = other.allConversionsValuePerCost_;
       allConversionsFromClickToCall_ = other.allConversionsFromClickToCall_;
       allConversionsFromDirections_ = other.allConversionsFromDirections_;
@@ -308,9 +319,11 @@ namespace Google.Ads.GoogleAds.V6.Common {
       contentRankLostImpressionShare_ = other.contentRankLostImpressionShare_;
       conversionsFromInteractionsRate_ = other.conversionsFromInteractionsRate_;
       conversionsValue_ = other.conversionsValue_;
+      conversionsValueByConversionDate_ = other.conversionsValueByConversionDate_;
       conversionsValuePerCost_ = other.conversionsValuePerCost_;
       conversionsFromInteractionsValuePerInteraction_ = other.conversionsFromInteractionsValuePerInteraction_;
       conversions_ = other.conversions_;
+      conversionsByConversionDate_ = other.conversionsByConversionDate_;
       costMicros_ = other.costMicros_;
       costPerAllConversions_ = other.costPerAllConversions_;
       costPerConversion_ = other.costPerConversion_;
@@ -370,7 +383,9 @@ namespace Google.Ads.GoogleAds.V6.Common {
       topImpressionPercentage_ = other.topImpressionPercentage_;
       validAcceleratedMobilePagesClicksPercentage_ = other.validAcceleratedMobilePagesClicksPercentage_;
       valuePerAllConversions_ = other.valuePerAllConversions_;
+      valuePerAllConversionsByConversionDate_ = other.valuePerAllConversionsByConversionDate_;
       valuePerConversion_ = other.valuePerConversion_;
+      valuePerConversionsByConversionDate_ = other.valuePerConversionsByConversionDate_;
       valuePerCurrentModelAttributedConversion_ = other.valuePerCurrentModelAttributedConversion_;
       videoQuartileP100Rate_ = other.videoQuartileP100Rate_;
       videoQuartileP25Rate_ = other.videoQuartileP25Rate_;
@@ -645,6 +660,23 @@ namespace Google.Ads.GoogleAds.V6.Common {
       _hasBits1 &= ~67108864;
     }
 
+    /// <summary>Field number for the "all_conversions_value_by_conversion_date" field.</summary>
+    public const int AllConversionsValueByConversionDateFieldNumber = 240;
+    private double allConversionsValueByConversionDate_;
+    /// <summary>
+    /// The value of all conversions. When this column is selected with date, the
+    /// values in date column means the conversion date. Details for the
+    /// by_conversion_date columns are available at
+    /// https://support.google.com/google-ads/answer/9549009.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double AllConversionsValueByConversionDate {
+      get { return allConversionsValueByConversionDate_; }
+      set {
+        allConversionsValueByConversionDate_ = value;
+      }
+    }
+
     /// <summary>Field number for the "all_conversions" field.</summary>
     public const int AllConversionsFieldNumber = 193;
     private double allConversions_;
@@ -669,6 +701,24 @@ namespace Google.Ads.GoogleAds.V6.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void ClearAllConversions() {
       _hasBits1 &= ~134217728;
+    }
+
+    /// <summary>Field number for the "all_conversions_by_conversion_date" field.</summary>
+    public const int AllConversionsByConversionDateFieldNumber = 241;
+    private double allConversionsByConversionDate_;
+    /// <summary>
+    /// The total number of conversions. This includes all conversions regardless
+    /// of the value of include_in_conversions_metric. When this column is selected
+    /// with date, the values in date column means the conversion date. Details for
+    /// the by_conversion_date columns are available at
+    /// https://support.google.com/google-ads/answer/9549009.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double AllConversionsByConversionDate {
+      get { return allConversionsByConversionDate_; }
+      set {
+        allConversionsByConversionDate_ = value;
+      }
     }
 
     /// <summary>Field number for the "all_conversions_value_per_cost" field.</summary>
@@ -1471,6 +1521,26 @@ namespace Google.Ads.GoogleAds.V6.Common {
       _hasBits1 &= ~1;
     }
 
+    /// <summary>Field number for the "conversions_value_by_conversion_date" field.</summary>
+    public const int ConversionsValueByConversionDateFieldNumber = 242;
+    private double conversionsValueByConversionDate_;
+    /// <summary>
+    /// The value of conversions. This only includes conversion actions which
+    /// include_in_conversions_metric attribute is set to true. If you use
+    /// conversion-based bidding, your bid strategies will optimize for these
+    /// conversions. When this column is selected with date, the values in date
+    /// column means the conversion date. Details for the by_conversion_date
+    /// columns are available at
+    /// https://support.google.com/google-ads/answer/9549009.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double ConversionsValueByConversionDate {
+      get { return conversionsValueByConversionDate_; }
+      set {
+        conversionsValueByConversionDate_ = value;
+      }
+    }
+
     /// <summary>Field number for the "conversions_value_per_cost" field.</summary>
     public const int ConversionsValuePerCostFieldNumber = 166;
     private double conversionsValuePerCost_;
@@ -1554,6 +1624,26 @@ namespace Google.Ads.GoogleAds.V6.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void ClearConversions() {
       _hasBits1 &= ~8;
+    }
+
+    /// <summary>Field number for the "conversions_by_conversion_date" field.</summary>
+    public const int ConversionsByConversionDateFieldNumber = 243;
+    private double conversionsByConversionDate_;
+    /// <summary>
+    /// The number of conversions. This only includes conversion actions which
+    /// include_in_conversions_metric attribute is set to true. If you use
+    /// conversion-based bidding, your bid strategies will optimize for these
+    /// conversions. When this column is selected with date, the values in date
+    /// column means the conversion date. Details for the by_conversion_date
+    /// columns are available at
+    /// https://support.google.com/google-ads/answer/9549009.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double ConversionsByConversionDate {
+      get { return conversionsByConversionDate_; }
+      set {
+        conversionsByConversionDate_ = value;
+      }
     }
 
     /// <summary>Field number for the "cost_micros" field.</summary>
@@ -3091,6 +3181,34 @@ namespace Google.Ads.GoogleAds.V6.Common {
       _hasBits0 &= ~524288;
     }
 
+    /// <summary>Field number for the "value_per_all_conversions_by_conversion_date" field.</summary>
+    public const int ValuePerAllConversionsByConversionDateFieldNumber = 244;
+    private double valuePerAllConversionsByConversionDate_;
+    /// <summary>
+    /// The value of all conversions divided by the number of all conversions. When
+    /// this column is selected with date, the values in date column means the
+    /// conversion date. Details for the by_conversion_date columns are available
+    /// at https://support.google.com/google-ads/answer/9549009.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double ValuePerAllConversionsByConversionDate {
+      get { if ((_hasBits3 & 1024) != 0) { return valuePerAllConversionsByConversionDate_; } else { return 0D; } }
+      set {
+        _hasBits3 |= 1024;
+        valuePerAllConversionsByConversionDate_ = value;
+      }
+    }
+    /// <summary>Gets whether the "value_per_all_conversions_by_conversion_date" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasValuePerAllConversionsByConversionDate {
+      get { return (_hasBits3 & 1024) != 0; }
+    }
+    /// <summary>Clears the value of the "value_per_all_conversions_by_conversion_date" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearValuePerAllConversionsByConversionDate() {
+      _hasBits3 &= ~1024;
+    }
+
     /// <summary>Field number for the "value_per_conversion" field.</summary>
     public const int ValuePerConversionFieldNumber = 151;
     private double valuePerConversion_;
@@ -3117,6 +3235,37 @@ namespace Google.Ads.GoogleAds.V6.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void ClearValuePerConversion() {
       _hasBits0 &= ~1048576;
+    }
+
+    /// <summary>Field number for the "value_per_conversions_by_conversion_date" field.</summary>
+    public const int ValuePerConversionsByConversionDateFieldNumber = 245;
+    private double valuePerConversionsByConversionDate_;
+    /// <summary>
+    /// The value of conversions divided by the number of conversions. This only
+    /// includes conversion actions which include_in_conversions_metric attribute
+    /// is set to true. If you use conversion-based bidding, your bid strategies
+    /// will optimize for these conversions. When this column is selected with
+    /// date, the values in date column means the conversion date. Details for the
+    /// by_conversion_date columns are available at
+    /// https://support.google.com/google-ads/answer/9549009.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double ValuePerConversionsByConversionDate {
+      get { if ((_hasBits3 & 2048) != 0) { return valuePerConversionsByConversionDate_; } else { return 0D; } }
+      set {
+        _hasBits3 |= 2048;
+        valuePerConversionsByConversionDate_ = value;
+      }
+    }
+    /// <summary>Gets whether the "value_per_conversions_by_conversion_date" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasValuePerConversionsByConversionDate {
+      get { return (_hasBits3 & 2048) != 0; }
+    }
+    /// <summary>Clears the value of the "value_per_conversions_by_conversion_date" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearValuePerConversionsByConversionDate() {
+      _hasBits3 &= ~2048;
     }
 
     /// <summary>Field number for the "value_per_current_model_attributed_conversion" field.</summary>
@@ -3351,7 +3500,9 @@ namespace Google.Ads.GoogleAds.V6.Common {
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ActiveViewViewability, other.ActiveViewViewability)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(AllConversionsFromInteractionsRate, other.AllConversionsFromInteractionsRate)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(AllConversionsValue, other.AllConversionsValue)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(AllConversionsValueByConversionDate, other.AllConversionsValueByConversionDate)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(AllConversions, other.AllConversions)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(AllConversionsByConversionDate, other.AllConversionsByConversionDate)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(AllConversionsValuePerCost, other.AllConversionsValuePerCost)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(AllConversionsFromClickToCall, other.AllConversionsFromClickToCall)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(AllConversionsFromDirections, other.AllConversionsFromDirections)) return false;
@@ -3382,9 +3533,11 @@ namespace Google.Ads.GoogleAds.V6.Common {
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ContentRankLostImpressionShare, other.ContentRankLostImpressionShare)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ConversionsFromInteractionsRate, other.ConversionsFromInteractionsRate)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ConversionsValue, other.ConversionsValue)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ConversionsValueByConversionDate, other.ConversionsValueByConversionDate)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ConversionsValuePerCost, other.ConversionsValuePerCost)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ConversionsFromInteractionsValuePerInteraction, other.ConversionsFromInteractionsValuePerInteraction)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Conversions, other.Conversions)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ConversionsByConversionDate, other.ConversionsByConversionDate)) return false;
       if (CostMicros != other.CostMicros) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(CostPerAllConversions, other.CostPerAllConversions)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(CostPerConversion, other.CostPerConversion)) return false;
@@ -3444,7 +3597,9 @@ namespace Google.Ads.GoogleAds.V6.Common {
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(TopImpressionPercentage, other.TopImpressionPercentage)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ValidAcceleratedMobilePagesClicksPercentage, other.ValidAcceleratedMobilePagesClicksPercentage)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ValuePerAllConversions, other.ValuePerAllConversions)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ValuePerAllConversionsByConversionDate, other.ValuePerAllConversionsByConversionDate)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ValuePerConversion, other.ValuePerConversion)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ValuePerConversionsByConversionDate, other.ValuePerConversionsByConversionDate)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ValuePerCurrentModelAttributedConversion, other.ValuePerCurrentModelAttributedConversion)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(VideoQuartileP100Rate, other.VideoQuartileP100Rate)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(VideoQuartileP25Rate, other.VideoQuartileP25Rate)) return false;
@@ -3469,7 +3624,9 @@ namespace Google.Ads.GoogleAds.V6.Common {
       if (HasActiveViewViewability) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ActiveViewViewability);
       if (HasAllConversionsFromInteractionsRate) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(AllConversionsFromInteractionsRate);
       if (HasAllConversionsValue) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(AllConversionsValue);
+      if (AllConversionsValueByConversionDate != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(AllConversionsValueByConversionDate);
       if (HasAllConversions) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(AllConversions);
+      if (AllConversionsByConversionDate != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(AllConversionsByConversionDate);
       if (HasAllConversionsValuePerCost) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(AllConversionsValuePerCost);
       if (HasAllConversionsFromClickToCall) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(AllConversionsFromClickToCall);
       if (HasAllConversionsFromDirections) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(AllConversionsFromDirections);
@@ -3500,9 +3657,11 @@ namespace Google.Ads.GoogleAds.V6.Common {
       if (HasContentRankLostImpressionShare) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ContentRankLostImpressionShare);
       if (HasConversionsFromInteractionsRate) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ConversionsFromInteractionsRate);
       if (HasConversionsValue) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ConversionsValue);
+      if (ConversionsValueByConversionDate != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ConversionsValueByConversionDate);
       if (HasConversionsValuePerCost) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ConversionsValuePerCost);
       if (HasConversionsFromInteractionsValuePerInteraction) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ConversionsFromInteractionsValuePerInteraction);
       if (HasConversions) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Conversions);
+      if (ConversionsByConversionDate != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ConversionsByConversionDate);
       if (HasCostMicros) hash ^= CostMicros.GetHashCode();
       if (HasCostPerAllConversions) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(CostPerAllConversions);
       if (HasCostPerConversion) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(CostPerConversion);
@@ -3562,7 +3721,9 @@ namespace Google.Ads.GoogleAds.V6.Common {
       if (HasTopImpressionPercentage) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(TopImpressionPercentage);
       if (HasValidAcceleratedMobilePagesClicksPercentage) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ValidAcceleratedMobilePagesClicksPercentage);
       if (HasValuePerAllConversions) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ValuePerAllConversions);
+      if (HasValuePerAllConversionsByConversionDate) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ValuePerAllConversionsByConversionDate);
       if (HasValuePerConversion) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ValuePerConversion);
+      if (HasValuePerConversionsByConversionDate) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ValuePerConversionsByConversionDate);
       if (HasValuePerCurrentModelAttributedConversion) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ValuePerCurrentModelAttributedConversion);
       if (HasVideoQuartileP100Rate) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(VideoQuartileP100Rate);
       if (HasVideoQuartileP25Rate) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(VideoQuartileP25Rate);
@@ -4032,6 +4193,30 @@ namespace Google.Ads.GoogleAds.V6.Common {
         output.WriteRawTag(249, 14);
         output.WriteDouble(RelativeCtr);
       }
+      if (AllConversionsValueByConversionDate != 0D) {
+        output.WriteRawTag(129, 15);
+        output.WriteDouble(AllConversionsValueByConversionDate);
+      }
+      if (AllConversionsByConversionDate != 0D) {
+        output.WriteRawTag(137, 15);
+        output.WriteDouble(AllConversionsByConversionDate);
+      }
+      if (ConversionsValueByConversionDate != 0D) {
+        output.WriteRawTag(145, 15);
+        output.WriteDouble(ConversionsValueByConversionDate);
+      }
+      if (ConversionsByConversionDate != 0D) {
+        output.WriteRawTag(153, 15);
+        output.WriteDouble(ConversionsByConversionDate);
+      }
+      if (HasValuePerAllConversionsByConversionDate) {
+        output.WriteRawTag(161, 15);
+        output.WriteDouble(ValuePerAllConversionsByConversionDate);
+      }
+      if (HasValuePerConversionsByConversionDate) {
+        output.WriteRawTag(169, 15);
+        output.WriteDouble(ValuePerConversionsByConversionDate);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -4486,6 +4671,30 @@ namespace Google.Ads.GoogleAds.V6.Common {
         output.WriteRawTag(249, 14);
         output.WriteDouble(RelativeCtr);
       }
+      if (AllConversionsValueByConversionDate != 0D) {
+        output.WriteRawTag(129, 15);
+        output.WriteDouble(AllConversionsValueByConversionDate);
+      }
+      if (AllConversionsByConversionDate != 0D) {
+        output.WriteRawTag(137, 15);
+        output.WriteDouble(AllConversionsByConversionDate);
+      }
+      if (ConversionsValueByConversionDate != 0D) {
+        output.WriteRawTag(145, 15);
+        output.WriteDouble(ConversionsValueByConversionDate);
+      }
+      if (ConversionsByConversionDate != 0D) {
+        output.WriteRawTag(153, 15);
+        output.WriteDouble(ConversionsByConversionDate);
+      }
+      if (HasValuePerAllConversionsByConversionDate) {
+        output.WriteRawTag(161, 15);
+        output.WriteDouble(ValuePerAllConversionsByConversionDate);
+      }
+      if (HasValuePerConversionsByConversionDate) {
+        output.WriteRawTag(169, 15);
+        output.WriteDouble(ValuePerConversionsByConversionDate);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -4525,7 +4734,13 @@ namespace Google.Ads.GoogleAds.V6.Common {
       if (HasAllConversionsValue) {
         size += 2 + 8;
       }
+      if (AllConversionsValueByConversionDate != 0D) {
+        size += 2 + 8;
+      }
       if (HasAllConversions) {
+        size += 2 + 8;
+      }
+      if (AllConversionsByConversionDate != 0D) {
         size += 2 + 8;
       }
       if (HasAllConversionsValuePerCost) {
@@ -4618,6 +4833,9 @@ namespace Google.Ads.GoogleAds.V6.Common {
       if (HasConversionsValue) {
         size += 2 + 8;
       }
+      if (ConversionsValueByConversionDate != 0D) {
+        size += 2 + 8;
+      }
       if (HasConversionsValuePerCost) {
         size += 2 + 8;
       }
@@ -4625,6 +4843,9 @@ namespace Google.Ads.GoogleAds.V6.Common {
         size += 2 + 8;
       }
       if (HasConversions) {
+        size += 2 + 8;
+      }
+      if (ConversionsByConversionDate != 0D) {
         size += 2 + 8;
       }
       if (HasCostMicros) {
@@ -4802,7 +5023,13 @@ namespace Google.Ads.GoogleAds.V6.Common {
       if (HasValuePerAllConversions) {
         size += 2 + 8;
       }
+      if (HasValuePerAllConversionsByConversionDate) {
+        size += 2 + 8;
+      }
       if (HasValuePerConversion) {
+        size += 2 + 8;
+      }
+      if (HasValuePerConversionsByConversionDate) {
         size += 2 + 8;
       }
       if (HasValuePerCurrentModelAttributedConversion) {
@@ -4870,8 +5097,14 @@ namespace Google.Ads.GoogleAds.V6.Common {
       if (other.HasAllConversionsValue) {
         AllConversionsValue = other.AllConversionsValue;
       }
+      if (other.AllConversionsValueByConversionDate != 0D) {
+        AllConversionsValueByConversionDate = other.AllConversionsValueByConversionDate;
+      }
       if (other.HasAllConversions) {
         AllConversions = other.AllConversions;
+      }
+      if (other.AllConversionsByConversionDate != 0D) {
+        AllConversionsByConversionDate = other.AllConversionsByConversionDate;
       }
       if (other.HasAllConversionsValuePerCost) {
         AllConversionsValuePerCost = other.AllConversionsValuePerCost;
@@ -4963,6 +5196,9 @@ namespace Google.Ads.GoogleAds.V6.Common {
       if (other.HasConversionsValue) {
         ConversionsValue = other.ConversionsValue;
       }
+      if (other.ConversionsValueByConversionDate != 0D) {
+        ConversionsValueByConversionDate = other.ConversionsValueByConversionDate;
+      }
       if (other.HasConversionsValuePerCost) {
         ConversionsValuePerCost = other.ConversionsValuePerCost;
       }
@@ -4971,6 +5207,9 @@ namespace Google.Ads.GoogleAds.V6.Common {
       }
       if (other.HasConversions) {
         Conversions = other.Conversions;
+      }
+      if (other.ConversionsByConversionDate != 0D) {
+        ConversionsByConversionDate = other.ConversionsByConversionDate;
       }
       if (other.HasCostMicros) {
         CostMicros = other.CostMicros;
@@ -5147,8 +5386,14 @@ namespace Google.Ads.GoogleAds.V6.Common {
       if (other.HasValuePerAllConversions) {
         ValuePerAllConversions = other.ValuePerAllConversions;
       }
+      if (other.HasValuePerAllConversionsByConversionDate) {
+        ValuePerAllConversionsByConversionDate = other.ValuePerAllConversionsByConversionDate;
+      }
       if (other.HasValuePerConversion) {
         ValuePerConversion = other.ValuePerConversion;
+      }
+      if (other.HasValuePerConversionsByConversionDate) {
+        ValuePerConversionsByConversionDate = other.ValuePerConversionsByConversionDate;
       }
       if (other.HasValuePerCurrentModelAttributedConversion) {
         ValuePerCurrentModelAttributedConversion = other.ValuePerCurrentModelAttributedConversion;
@@ -5637,6 +5882,30 @@ namespace Google.Ads.GoogleAds.V6.Common {
             RelativeCtr = input.ReadDouble();
             break;
           }
+          case 1921: {
+            AllConversionsValueByConversionDate = input.ReadDouble();
+            break;
+          }
+          case 1929: {
+            AllConversionsByConversionDate = input.ReadDouble();
+            break;
+          }
+          case 1937: {
+            ConversionsValueByConversionDate = input.ReadDouble();
+            break;
+          }
+          case 1945: {
+            ConversionsByConversionDate = input.ReadDouble();
+            break;
+          }
+          case 1953: {
+            ValuePerAllConversionsByConversionDate = input.ReadDouble();
+            break;
+          }
+          case 1961: {
+            ValuePerConversionsByConversionDate = input.ReadDouble();
+            break;
+          }
         }
       }
     #endif
@@ -6098,6 +6367,30 @@ namespace Google.Ads.GoogleAds.V6.Common {
           }
           case 1913: {
             RelativeCtr = input.ReadDouble();
+            break;
+          }
+          case 1921: {
+            AllConversionsValueByConversionDate = input.ReadDouble();
+            break;
+          }
+          case 1929: {
+            AllConversionsByConversionDate = input.ReadDouble();
+            break;
+          }
+          case 1937: {
+            ConversionsValueByConversionDate = input.ReadDouble();
+            break;
+          }
+          case 1945: {
+            ConversionsByConversionDate = input.ReadDouble();
+            break;
+          }
+          case 1953: {
+            ValuePerAllConversionsByConversionDate = input.ReadDouble();
+            break;
+          }
+          case 1961: {
+            ValuePerConversionsByConversionDate = input.ReadDouble();
             break;
           }
         }

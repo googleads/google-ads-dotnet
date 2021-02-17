@@ -1,4 +1,4 @@
-// Copyright 2020 Google LLC
+// Copyright 2021 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -57,7 +57,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
                 ThirdPartyAppAnalyticsSettings = new gagvr::ConversionAction.Types.ThirdPartyAppAnalyticsSettings(),
                 Id = -6774108720365892680L,
                 ConversionActionName = gagvr::ConversionActionName.FromCustomerConversionAction("[CUSTOMER_ID]", "[CONVERSION_ACTION_ID]"),
-                OwnerCustomer = "owner_customer43abc24a",
+                OwnerCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER_ID]"),
                 IncludeInConversionsMetric = false,
                 ClickThroughLookbackWindowDays = -4831593457096707011L,
                 ViewThroughLookbackWindowDays = -8283075401830951626L,
@@ -97,7 +97,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
                 ThirdPartyAppAnalyticsSettings = new gagvr::ConversionAction.Types.ThirdPartyAppAnalyticsSettings(),
                 Id = -6774108720365892680L,
                 ConversionActionName = gagvr::ConversionActionName.FromCustomerConversionAction("[CUSTOMER_ID]", "[CONVERSION_ACTION_ID]"),
-                OwnerCustomer = "owner_customer43abc24a",
+                OwnerCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER_ID]"),
                 IncludeInConversionsMetric = false,
                 ClickThroughLookbackWindowDays = -4831593457096707011L,
                 ViewThroughLookbackWindowDays = -8283075401830951626L,
@@ -139,7 +139,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
                 ThirdPartyAppAnalyticsSettings = new gagvr::ConversionAction.Types.ThirdPartyAppAnalyticsSettings(),
                 Id = -6774108720365892680L,
                 ConversionActionName = gagvr::ConversionActionName.FromCustomerConversionAction("[CUSTOMER_ID]", "[CONVERSION_ACTION_ID]"),
-                OwnerCustomer = "owner_customer43abc24a",
+                OwnerCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER_ID]"),
                 IncludeInConversionsMetric = false,
                 ClickThroughLookbackWindowDays = -4831593457096707011L,
                 ViewThroughLookbackWindowDays = -8283075401830951626L,
@@ -179,7 +179,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
                 ThirdPartyAppAnalyticsSettings = new gagvr::ConversionAction.Types.ThirdPartyAppAnalyticsSettings(),
                 Id = -6774108720365892680L,
                 ConversionActionName = gagvr::ConversionActionName.FromCustomerConversionAction("[CUSTOMER_ID]", "[CONVERSION_ACTION_ID]"),
-                OwnerCustomer = "owner_customer43abc24a",
+                OwnerCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER_ID]"),
                 IncludeInConversionsMetric = false,
                 ClickThroughLookbackWindowDays = -4831593457096707011L,
                 ViewThroughLookbackWindowDays = -8283075401830951626L,
@@ -221,7 +221,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
                 ThirdPartyAppAnalyticsSettings = new gagvr::ConversionAction.Types.ThirdPartyAppAnalyticsSettings(),
                 Id = -6774108720365892680L,
                 ConversionActionName = gagvr::ConversionActionName.FromCustomerConversionAction("[CUSTOMER_ID]", "[CONVERSION_ACTION_ID]"),
-                OwnerCustomer = "owner_customer43abc24a",
+                OwnerCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER_ID]"),
                 IncludeInConversionsMetric = false,
                 ClickThroughLookbackWindowDays = -4831593457096707011L,
                 ViewThroughLookbackWindowDays = -8283075401830951626L,
@@ -261,7 +261,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
                 ThirdPartyAppAnalyticsSettings = new gagvr::ConversionAction.Types.ThirdPartyAppAnalyticsSettings(),
                 Id = -6774108720365892680L,
                 ConversionActionName = gagvr::ConversionActionName.FromCustomerConversionAction("[CUSTOMER_ID]", "[CONVERSION_ACTION_ID]"),
-                OwnerCustomer = "owner_customer43abc24a",
+                OwnerCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER_ID]"),
                 IncludeInConversionsMetric = false,
                 ClickThroughLookbackWindowDays = -4831593457096707011L,
                 ViewThroughLookbackWindowDays = -8283075401830951626L,

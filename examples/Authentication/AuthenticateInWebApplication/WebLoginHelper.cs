@@ -1,4 +1,4 @@
-﻿// Copyright 2019 Google LLC
+﻿// Copyright 2021 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -17,12 +17,16 @@ using Google.Apis.Auth.OAuth2;
 using Google.Apis.Auth.OAuth2.Flows;
 using Google.Apis.Auth.OAuth2.Responses;
 
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.Extensions;
+using Microsoft.AspNetCore.Mvc;
+
+using Newtonsoft.Json;
+
 using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Web;
-using System.Web.UI;
 
 namespace Google.Ads.GoogleAds.Examples
 {
@@ -32,9 +36,9 @@ namespace Google.Ads.GoogleAds.Examples
     public class WebLoginHelper
     {
         /// <summary>
-        /// The parent page.
+        /// The http context.
         /// </summary>
-        private Page page;
+        private HttpContext context;
 
         /// <summary>
         /// The authorization code flow instance.
@@ -60,12 +64,12 @@ namespace Google.Ads.GoogleAds.Examples
         /// <summary>
         /// Initializes a new instance of the <see cref="WebLoginHelper"/> class.
         /// </summary>
-        /// <param name="page">The parent page.</param>
-        public WebLoginHelper(Page page)
+        /// <param name="context">The HTTP context.</param>
+        /// <param name="config">The Google Ads configuration.</param>
+        public WebLoginHelper(HttpContext context, GoogleAdsConfig config)
         {
-            this.page = page;
-
-            config = new GoogleAdsConfig();
+            this.context = context;
+            this.config = config;
             flow = new GoogleAuthorizationCodeFlow(
                 new GoogleAuthorizationCodeFlow.Initializer
                 {
@@ -88,11 +92,11 @@ namespace Google.Ads.GoogleAds.Examples
         /// <summary>
         /// Redirects the user to the OAuth server.
         /// </summary>
-        public void RedirectUsertoOAuthServer()
+        public IActionResult RedirectUsertoOAuthServer()
         {
             Uri authorizationUrl = flow.CreateAuthorizationCodeRequest(
                 GetCurrentPagePath()).Build();
-            page.Response.Redirect(authorizationUrl.AbsoluteUri);
+            return new RedirectResult(authorizationUrl.AbsoluteUri);
         }
 
         /// <summary>
@@ -102,8 +106,7 @@ namespace Google.Ads.GoogleAds.Examples
         /// and refresh tokens.</returns>
         public TokenResponse ExchangeAuthorizationCodeForCredentials()
         {
-            string url = page.Request.Url.OriginalString;
-            string authorizationCode = page.Request.QueryString["code"];
+            string authorizationCode = this.context.Request.Query["code"];
 
             Task<TokenResponse> responseTask = flow.ExchangeCodeForTokenAsync(null,
                 authorizationCode, GetCurrentPagePath(), CancellationToken.None);
@@ -112,7 +115,7 @@ namespace Google.Ads.GoogleAds.Examples
             TokenResponse response = responseTask.Result;
 
             // Save the credentials.
-            this.Credentials = new UserCredential(flow, STATE_PARAMETER, response);
+            this.TokenResponse = response;
             return response;
         }
 
@@ -123,22 +126,32 @@ namespace Google.Ads.GoogleAds.Examples
         {
             get
             {
-                return Credentials != null;
+                return TokenResponse != null;
             }
         }
 
         /// <summary>
-        /// Gets or sets the credentials of the logged in user.
+        /// Gets or sets the token response of the logged in user.
         /// </summary>
-        public UserCredential Credentials
+        public TokenResponse TokenResponse
         {
             get
             {
-                return (UserCredential) page.Session[CREDENTIALS_KEY];
+                string creds = this.context.Session.GetString(CREDENTIALS_KEY);
+                if (creds == null)
+                {
+                    return null;
+                }
+                TokenResponse response = JsonConvert.DeserializeObject<TokenResponse>(creds);
+
+                return string.IsNullOrEmpty(creds) ? null :
+                    JsonConvert.DeserializeObject<TokenResponse>(creds);
             }
             set
             {
-                page.Session[CREDENTIALS_KEY] = value;
+                value.AccessToken = null;
+                string creds = JsonConvert.SerializeObject(value);
+                this.context.Session.SetString(CREDENTIALS_KEY, creds);
             }
         }
 
@@ -147,7 +160,7 @@ namespace Google.Ads.GoogleAds.Examples
         /// </summary>
         public void Logout()
         {
-            page.Session.Remove(CREDENTIALS_KEY);
+            this.context.Session.Remove(CREDENTIALS_KEY);
         }
 
         /// <summary>
@@ -155,7 +168,7 @@ namespace Google.Ads.GoogleAds.Examples
         /// </summary>
         public bool IsCallbackFromOAuthServer()
         {
-            return !string.IsNullOrEmpty(this.page.Request.QueryString["state"]);
+            return !string.IsNullOrEmpty(this.context.Request.Query["state"]);
         }
 
         /// <summary>
@@ -164,7 +177,7 @@ namespace Google.Ads.GoogleAds.Examples
         /// <returns>The path to the current page.</returns>
         private string GetCurrentPagePath()
         {
-            return HttpContext.Current.Request.Url.GetLeftPart(UriPartial.Path);
+            return new Uri(this.context.Request.GetDisplayUrl()).GetLeftPart(UriPartial.Path);
         }
     }
 }

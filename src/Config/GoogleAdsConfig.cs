@@ -24,6 +24,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -350,7 +351,9 @@ namespace Google.Ads.GoogleAds.Config
         }
 
         /// <summary>
-        /// Gets or sets the OAuth2 scope.
+        /// Gets or sets the OAuth2 scope. This is a comma separated string of
+        /// all the scopes you want to use. This property has the default value
+        /// <code>https://www.googleapis.com/auth/adwords</code>
         /// </summary>
         public string OAuth2Scope
         {
@@ -655,6 +658,11 @@ namespace Google.Ads.GoogleAds.Config
         protected virtual ICredential CreateCredentials()
         {
             ICredential retval = null;
+            string[] scopes = OAuth2Scope.Split(new char[] { ',' },
+                StringSplitOptions.RemoveEmptyEntries)
+                .Select(t => t.Trim())
+                .ToArray();
+
             switch (OAuth2Mode)
             {
                 case OAuth2Flow.APPLICATION:
@@ -667,7 +675,7 @@ namespace Google.Ads.GoogleAds.Config
                                 ClientId = OAuth2ClientId,
                                 ClientSecret = OAuth2ClientSecret,
                             },
-                            Scopes = new string[] { OAuth2Scope },
+                            Scopes = scopes,
                             HttpClientFactory = new AdsHttpClientFactory(this)
                         }),
                       DEFAULT_USER_ID,

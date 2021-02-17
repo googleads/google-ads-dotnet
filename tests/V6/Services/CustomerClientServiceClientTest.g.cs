@@ -1,4 +1,4 @@
-// Copyright 2020 Google LLC
+// Copyright 2021 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -39,7 +39,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             gagvr::CustomerClient expectedResponse = new gagvr::CustomerClient
             {
                 ResourceNameAsCustomerClientName = gagvr::CustomerClientName.FromCustomerClientCustomer("[CUSTOMER_ID]", "[CLIENT_CUSTOMER_ID]"),
-                ClientCustomer = "client_customerf58ac5fa",
+                ClientCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER_ID]"),
                 Hidden = true,
                 Level = -1767934904342353463L,
                 TimeZone = "time_zone73f23b20",
@@ -67,7 +67,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             gagvr::CustomerClient expectedResponse = new gagvr::CustomerClient
             {
                 ResourceNameAsCustomerClientName = gagvr::CustomerClientName.FromCustomerClientCustomer("[CUSTOMER_ID]", "[CLIENT_CUSTOMER_ID]"),
-                ClientCustomer = "client_customerf58ac5fa",
+                ClientCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER_ID]"),
                 Hidden = true,
                 Level = -1767934904342353463L,
                 TimeZone = "time_zone73f23b20",
@@ -97,7 +97,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             gagvr::CustomerClient expectedResponse = new gagvr::CustomerClient
             {
                 ResourceNameAsCustomerClientName = gagvr::CustomerClientName.FromCustomerClientCustomer("[CUSTOMER_ID]", "[CLIENT_CUSTOMER_ID]"),
-                ClientCustomer = "client_customerf58ac5fa",
+                ClientCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER_ID]"),
                 Hidden = true,
                 Level = -1767934904342353463L,
                 TimeZone = "time_zone73f23b20",
@@ -125,7 +125,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             gagvr::CustomerClient expectedResponse = new gagvr::CustomerClient
             {
                 ResourceNameAsCustomerClientName = gagvr::CustomerClientName.FromCustomerClientCustomer("[CUSTOMER_ID]", "[CLIENT_CUSTOMER_ID]"),
-                ClientCustomer = "client_customerf58ac5fa",
+                ClientCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER_ID]"),
                 Hidden = true,
                 Level = -1767934904342353463L,
                 TimeZone = "time_zone73f23b20",
@@ -155,7 +155,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             gagvr::CustomerClient expectedResponse = new gagvr::CustomerClient
             {
                 ResourceNameAsCustomerClientName = gagvr::CustomerClientName.FromCustomerClientCustomer("[CUSTOMER_ID]", "[CLIENT_CUSTOMER_ID]"),
-                ClientCustomer = "client_customerf58ac5fa",
+                ClientCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER_ID]"),
                 Hidden = true,
                 Level = -1767934904342353463L,
                 TimeZone = "time_zone73f23b20",
@@ -183,7 +183,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             gagvr::CustomerClient expectedResponse = new gagvr::CustomerClient
             {
                 ResourceNameAsCustomerClientName = gagvr::CustomerClientName.FromCustomerClientCustomer("[CUSTOMER_ID]", "[CLIENT_CUSTOMER_ID]"),
-                ClientCustomer = "client_customerf58ac5fa",
+                ClientCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER_ID]"),
                 Hidden = true,
                 Level = -1767934904342353463L,
                 TimeZone = "time_zone73f23b20",

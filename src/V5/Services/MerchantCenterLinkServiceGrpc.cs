@@ -31,12 +31,42 @@ namespace Google.Ads.GoogleAds.V5.Services {
   {
     static readonly string __ServiceName = "google.ads.googleads.v5.services.MerchantCenterLinkService";
 
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.ListMerchantCenterLinksRequest> __Marshaller_google_ads_googleads_v5_services_ListMerchantCenterLinksRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V5.Services.ListMerchantCenterLinksRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.ListMerchantCenterLinksResponse> __Marshaller_google_ads_googleads_v5_services_ListMerchantCenterLinksResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V5.Services.ListMerchantCenterLinksResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.GetMerchantCenterLinkRequest> __Marshaller_google_ads_googleads_v5_services_GetMerchantCenterLinkRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V5.Services.GetMerchantCenterLinkRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Resources.MerchantCenterLink> __Marshaller_google_ads_googleads_v5_resources_MerchantCenterLink = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V5.Resources.MerchantCenterLink.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.MutateMerchantCenterLinkRequest> __Marshaller_google_ads_googleads_v5_services_MutateMerchantCenterLinkRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V5.Services.MutateMerchantCenterLinkRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.MutateMerchantCenterLinkResponse> __Marshaller_google_ads_googleads_v5_services_MutateMerchantCenterLinkResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V5.Services.MutateMerchantCenterLinkResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.ListMerchantCenterLinksRequest> __Marshaller_google_ads_googleads_v5_services_ListMerchantCenterLinksRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V5.Services.ListMerchantCenterLinksRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.ListMerchantCenterLinksResponse> __Marshaller_google_ads_googleads_v5_services_ListMerchantCenterLinksResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V5.Services.ListMerchantCenterLinksResponse.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.GetMerchantCenterLinkRequest> __Marshaller_google_ads_googleads_v5_services_GetMerchantCenterLinkRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V5.Services.GetMerchantCenterLinkRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Resources.MerchantCenterLink> __Marshaller_google_ads_googleads_v5_resources_MerchantCenterLink = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V5.Resources.MerchantCenterLink.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.MutateMerchantCenterLinkRequest> __Marshaller_google_ads_googleads_v5_services_MutateMerchantCenterLinkRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V5.Services.MutateMerchantCenterLinkRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.MutateMerchantCenterLinkResponse> __Marshaller_google_ads_googleads_v5_services_MutateMerchantCenterLinkResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V5.Services.MutateMerchantCenterLinkResponse.Parser));
 
     static readonly grpc::Method<global::Google.Ads.GoogleAds.V5.Services.ListMerchantCenterLinksRequest, global::Google.Ads.GoogleAds.V5.Services.ListMerchantCenterLinksResponse> __Method_ListMerchantCenterLinks = new grpc::Method<global::Google.Ads.GoogleAds.V5.Services.ListMerchantCenterLinksRequest, global::Google.Ads.GoogleAds.V5.Services.ListMerchantCenterLinksResponse>(
         grpc::MethodType.Unary,

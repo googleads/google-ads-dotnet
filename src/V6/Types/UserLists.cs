@@ -2499,7 +2499,7 @@ namespace Google.Ads.GoogleAds.V6.Common {
     public const int EndDateFieldNumber = 5;
     private string endDate_;
     /// <summary>
-    /// End date of users visit. If set to 2037-12-30, then the list includes all
+    /// Last date of users visit. If set to 2037-12-30, then the list includes all
     /// users after start_date. The date's format should be YYYY-MM-DD.
     ///
     /// Required for creating a data specific rule user list.

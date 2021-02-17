@@ -14,11 +14,10 @@
 
 using Google.Ads.GoogleAds.Interceptors;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.Tests.V3;
+using Google.Ads.GoogleAds.Tests.V6;
 using Grpc.Core;
 using NUnit.Framework;
 using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Google.Ads.GoogleAds.Tests.Interceptors

@@ -137,7 +137,8 @@ namespace Google.Ads.GoogleAds.V6.Resources {
     public const int FeedFieldNumber = 2;
     private string feed_ = "";
     /// <summary>
-    /// Immutable. ID of the feed containing the feed items in the set. Immutable. Required.
+    /// Immutable. The resource name of the feed containing the feed items in the set.
+    /// Immutable. Required.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Feed {

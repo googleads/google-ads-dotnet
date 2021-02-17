@@ -39,8 +39,8 @@ function dotnet_library::install_dotnet() {
   wget -q https://packages.microsoft.com/config/ubuntu/19.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
   sudo dpkg -i packages-microsoft-prod.deb
   sudo add-apt-repository universe
-  sudo apt-get install apt-transport-https -y
   sudo apt-get update
+  sudo apt-get install apt-transport-https -y
   sudo apt-get install dotnet-sdk-3.1 -y
 
   # "Verify dotnet install"
@@ -62,6 +62,16 @@ function dotnet_library::build_library() {
   dotnet build --configuration Release  \
       --source "https://api.nuget.org/v3/index.json;${DOTNET_CLIENT_LIBRARY_CUSTOM_NUGET_PATH}" \
       "${DOTNET_CLIENT_LIBRARY_PATH}/examples/Google.Ads.GoogleAds.Examples.csproj"
+
+  echo "Build the authentication projects."
+  echo "=================================="
+  dotnet build --configuration Release  \
+      --source "https://api.nuget.org/v3/index.json;${DOTNET_CLIENT_LIBRARY_CUSTOM_NUGET_PATH}" \
+      "${DOTNET_CLIENT_LIBRARY_PATH}/examples/Authentication/AuthenticateInDesktopApplication/AuthenticateInDesktopApplication.csproj"
+
+  dotnet build --configuration Release  \
+      --source "https://api.nuget.org/v3/index.json;${DOTNET_CLIENT_LIBRARY_CUSTOM_NUGET_PATH}" \
+      "${DOTNET_CLIENT_LIBRARY_PATH}/examples/Authentication/AuthenticateInWebApplication/AuthenticateInWebApplication.csproj"
 
   echo "Build the tests."
   echo "=============="

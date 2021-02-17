@@ -1,4 +1,4 @@
-// Copyright 2020 Google LLC
+// Copyright 2021 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+using gagve = Google.Ads.GoogleAds.V6.Enums;
 using gagvr = Google.Ads.GoogleAds.V6.Resources;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using gr = Google.Rpc;
@@ -180,6 +181,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
                 },
                 PartialFailure = false,
                 ValidateOnly = true,
+                ResponseContentType = gagve::ResponseContentTypeEnum.Types.ResponseContentType.ResourceNameOnly,
             };
             MutateAdParametersResponse expectedResponse = new MutateAdParametersResponse
             {
@@ -209,6 +211,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
                 },
                 PartialFailure = false,
                 ValidateOnly = true,
+                ResponseContentType = gagve::ResponseContentTypeEnum.Types.ResponseContentType.ResourceNameOnly,
             };
             MutateAdParametersResponse expectedResponse = new MutateAdParametersResponse
             {

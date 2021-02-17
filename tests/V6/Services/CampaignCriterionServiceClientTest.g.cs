@@ -1,4 +1,4 @@
-// Copyright 2020 Google LLC
+// Copyright 2021 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -42,7 +42,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             gagvr::CampaignCriterion expectedResponse = new gagvr::CampaignCriterion
             {
                 ResourceNameAsCampaignCriterionName = gagvr::CampaignCriterionName.FromCustomerCampaignCriterion("[CUSTOMER_ID]", "[CAMPAIGN_ID]", "[CRITERION_ID]"),
-                Type = gagve::CriterionTypeEnum.Types.CriterionType.AdSchedule,
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.MobileApplication,
                 Keyword = new gagvc::KeywordInfo(),
                 Placement = new gagvc::PlacementInfo(),
                 MobileAppCategory = new gagvc::MobileAppCategoryInfo(),
@@ -96,7 +96,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             gagvr::CampaignCriterion expectedResponse = new gagvr::CampaignCriterion
             {
                 ResourceNameAsCampaignCriterionName = gagvr::CampaignCriterionName.FromCustomerCampaignCriterion("[CUSTOMER_ID]", "[CAMPAIGN_ID]", "[CRITERION_ID]"),
-                Type = gagve::CriterionTypeEnum.Types.CriterionType.AdSchedule,
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.MobileApplication,
                 Keyword = new gagvc::KeywordInfo(),
                 Placement = new gagvc::PlacementInfo(),
                 MobileAppCategory = new gagvc::MobileAppCategoryInfo(),
@@ -152,7 +152,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             gagvr::CampaignCriterion expectedResponse = new gagvr::CampaignCriterion
             {
                 ResourceNameAsCampaignCriterionName = gagvr::CampaignCriterionName.FromCustomerCampaignCriterion("[CUSTOMER_ID]", "[CAMPAIGN_ID]", "[CRITERION_ID]"),
-                Type = gagve::CriterionTypeEnum.Types.CriterionType.AdSchedule,
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.MobileApplication,
                 Keyword = new gagvc::KeywordInfo(),
                 Placement = new gagvc::PlacementInfo(),
                 MobileAppCategory = new gagvc::MobileAppCategoryInfo(),
@@ -206,7 +206,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             gagvr::CampaignCriterion expectedResponse = new gagvr::CampaignCriterion
             {
                 ResourceNameAsCampaignCriterionName = gagvr::CampaignCriterionName.FromCustomerCampaignCriterion("[CUSTOMER_ID]", "[CAMPAIGN_ID]", "[CRITERION_ID]"),
-                Type = gagve::CriterionTypeEnum.Types.CriterionType.AdSchedule,
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.MobileApplication,
                 Keyword = new gagvc::KeywordInfo(),
                 Placement = new gagvc::PlacementInfo(),
                 MobileAppCategory = new gagvc::MobileAppCategoryInfo(),
@@ -262,7 +262,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             gagvr::CampaignCriterion expectedResponse = new gagvr::CampaignCriterion
             {
                 ResourceNameAsCampaignCriterionName = gagvr::CampaignCriterionName.FromCustomerCampaignCriterion("[CUSTOMER_ID]", "[CAMPAIGN_ID]", "[CRITERION_ID]"),
-                Type = gagve::CriterionTypeEnum.Types.CriterionType.AdSchedule,
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.MobileApplication,
                 Keyword = new gagvc::KeywordInfo(),
                 Placement = new gagvc::PlacementInfo(),
                 MobileAppCategory = new gagvc::MobileAppCategoryInfo(),
@@ -316,7 +316,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             gagvr::CampaignCriterion expectedResponse = new gagvr::CampaignCriterion
             {
                 ResourceNameAsCampaignCriterionName = gagvr::CampaignCriterionName.FromCustomerCampaignCriterion("[CUSTOMER_ID]", "[CAMPAIGN_ID]", "[CRITERION_ID]"),
-                Type = gagve::CriterionTypeEnum.Types.CriterionType.AdSchedule,
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.MobileApplication,
                 Keyword = new gagvc::KeywordInfo(),
                 Placement = new gagvc::PlacementInfo(),
                 MobileAppCategory = new gagvc::MobileAppCategoryInfo(),

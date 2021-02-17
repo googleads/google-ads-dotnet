@@ -137,7 +137,7 @@ namespace Google.Ads.GoogleAds.V4.Services
     /// Builder class for <see cref="CampaignDraftServiceClient"/> to provide simple configuration of credentials,
     /// endpoint etc.
     /// </summary>
-    public sealed partial class CampaignDraftServiceClientBuilder : gaxgrpc::ClientBuilderBase<CampaignDraftServiceClient>
+    internal sealed partial class CampaignDraftServiceClientBuilder : gaxgrpc::ClientBuilderBase<CampaignDraftServiceClient>
     {
         /// <summary>The settings to use for RPCs, or <c>null</c> for the default settings.</summary>
         public CampaignDraftServiceSettings Settings { get; set; }
@@ -204,8 +204,14 @@ namespace Google.Ads.GoogleAds.V4.Services
         public static string DefaultEndpoint { get; } = "googleads.googleapis.com:443";
 
         /// <summary>The default CampaignDraftService scopes.</summary>
-        /// <remarks>The default CampaignDraftService scopes are:<list type="bullet"></list></remarks>
-        public static scg::IReadOnlyList<string> DefaultScopes { get; } = new sco::ReadOnlyCollection<string>(new string[] { });
+        /// <remarks>
+        /// The default CampaignDraftService scopes are:
+        /// <list type="bullet"><item><description>https://www.googleapis.com/auth/adwords</description></item></list>
+        /// </remarks>
+        public static scg::IReadOnlyList<string> DefaultScopes { get; } = new sco::ReadOnlyCollection<string>(new string[]
+        {
+            "https://www.googleapis.com/auth/adwords",
+        });
 
         internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes);
 
