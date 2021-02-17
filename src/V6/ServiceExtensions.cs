@@ -73,6 +73,7 @@ namespace Google.Ads.GoogleAds.V6.Services
     public abstract partial class CustomerManagerLinkServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class CustomerNegativeCriterionServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class CustomerServiceClient : GoogleAdsServiceClientBase { }
+    public abstract partial class CustomerUserAccessInvitationServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class CustomerUserAccessServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class DetailPlacementViewServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class DisplayKeywordViewServiceClient : GoogleAdsServiceClientBase { }

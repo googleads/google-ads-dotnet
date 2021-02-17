@@ -41,6 +41,7 @@ namespace Google.Ads.GoogleAds.Logging
                 MetadataKeyNames.CustomerUserAccessEmailAddress,
                 MetadataKeyNames.ChangeEventUserEmail,
                 MetadataKeyNames.FeedPlaceholderEmailAddress,
+                MetadataKeyNames.CustomerUserAccessInvitationEmailAddress,
             };
 
         private static readonly Regex GAQL_REDACTION_MATCHER =
@@ -420,6 +421,25 @@ namespace Google.Ads.GoogleAds.Logging
         }
 
         /// <summary>
+        /// Masks the user access invitation fields within a
+        /// <code>MutateCustomerUserAccessInvitationRequest</code> object.
+        /// </summary>
+        /// <param name="body">The request body.</param>
+        private static void MaskMutateCustomerUserAccessInvitation(dynamic body)
+        {
+            try
+            {
+                if (body != null && body.Operation != null && body.Operation.Create != null)
+                {
+                    MaskCustomerUserAccessInvitation(body.Operation.Create);
+                }
+            }
+            catch (RuntimeBinderException)
+            {
+            }
+        }
+
+        /// <summary>
         /// Masks the user access fields within a <code>SearchGoogleAdsResponse</code> or
         /// <code>SearchGoogleAdsStreamResponse</code> object when making
         /// <code>GoogleAdsService::Search</code> or <code>GoogleAdsService::SearchStream</code>
@@ -435,6 +455,7 @@ namespace Google.Ads.GoogleAds.Logging
                     foreach (var row in response.Results)
                     {
                         MaskCustomerUserAccess(row.CustomerUserAccess);
+                        MaskCustomerUserAccessInvitation(row.CustomerUserAccessInvitation);
                         MaskChangeEvent(row.ChangeEvent);
                         MaskFeed(row.Feed);
                     }
@@ -492,6 +513,24 @@ namespace Google.Ads.GoogleAds.Logging
                 if (body != null)
                 {
                     body.InviterUserEmailAddress = MASK_PATTERN;
+                    body.EmailAddress = MASK_PATTERN;
+                }
+            }
+            catch (RuntimeBinderException)
+            {
+            }
+        }
+
+        /// <summary>
+        /// Masks the email field within a <code>CustomerUserAccessInvitation</code> object.
+        /// </summary>
+        /// <param name="body">The <code>CustomerUserAccessInvitation</code> object.</param>
+        private static void MaskCustomerUserAccessInvitation(dynamic body)
+        {
+            try
+            {
+                if (body != null)
+                {
                     body.EmailAddress = MASK_PATTERN;
                 }
             }

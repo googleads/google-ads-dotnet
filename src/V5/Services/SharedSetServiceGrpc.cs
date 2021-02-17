@@ -30,10 +30,40 @@ namespace Google.Ads.GoogleAds.V5.Services {
   {
     static readonly string __ServiceName = "google.ads.googleads.v5.services.SharedSetService";
 
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.GetSharedSetRequest> __Marshaller_google_ads_googleads_v5_services_GetSharedSetRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V5.Services.GetSharedSetRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Resources.SharedSet> __Marshaller_google_ads_googleads_v5_resources_SharedSet = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V5.Resources.SharedSet.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.MutateSharedSetsRequest> __Marshaller_google_ads_googleads_v5_services_MutateSharedSetsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V5.Services.MutateSharedSetsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.MutateSharedSetsResponse> __Marshaller_google_ads_googleads_v5_services_MutateSharedSetsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V5.Services.MutateSharedSetsResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.GetSharedSetRequest> __Marshaller_google_ads_googleads_v5_services_GetSharedSetRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V5.Services.GetSharedSetRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Resources.SharedSet> __Marshaller_google_ads_googleads_v5_resources_SharedSet = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V5.Resources.SharedSet.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.MutateSharedSetsRequest> __Marshaller_google_ads_googleads_v5_services_MutateSharedSetsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V5.Services.MutateSharedSetsRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.MutateSharedSetsResponse> __Marshaller_google_ads_googleads_v5_services_MutateSharedSetsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V5.Services.MutateSharedSetsResponse.Parser));
 
     static readonly grpc::Method<global::Google.Ads.GoogleAds.V5.Services.GetSharedSetRequest, global::Google.Ads.GoogleAds.V5.Resources.SharedSet> __Method_GetSharedSet = new grpc::Method<global::Google.Ads.GoogleAds.V5.Services.GetSharedSetRequest, global::Google.Ads.GoogleAds.V5.Resources.SharedSet>(
         grpc::MethodType.Unary,

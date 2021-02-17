@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V6.Errors {
           string.Concat(
             "CjBnb29nbGUvYWRzL2dvb2dsZWFkcy92Ni9lcnJvcnMvcXVlcnlfZXJyb3Iu",
             "cHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY2LmVycm9ycxocZ29vZ2xl",
-            "L2FwaS9hbm5vdGF0aW9ucy5wcm90byLTDQoOUXVlcnlFcnJvckVudW0iwA0K",
+            "L2FwaS9hbm5vdGF0aW9ucy5wcm90byLzDQoOUXVlcnlFcnJvckVudW0i4A0K",
             "ClF1ZXJ5RXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESDwoL",
             "UVVFUllfRVJST1IQMhIVChFCQURfRU5VTV9DT05TVEFOVBASEhcKE0JBRF9F",
             "U0NBUEVfU0VRVUVOQ0UQBxISCg5CQURfRklFTERfTkFNRRAMEhMKD0JBRF9M",
@@ -65,12 +65,13 @@ namespace Google.Ads.GoogleAds.V6.Errors {
             "QU5ZX1NFR01FTlRTECISGwoXVU5FWFBFQ1RFRF9FTkRfT0ZfUVVFUlkQCRIa",
             "ChZVTkVYUEVDVEVEX0ZST01fQ0xBVVNFEC8SFgoSVU5SRUNPR05JWkVEX0ZJ",
             "RUxEECASFAoQVU5FWFBFQ1RFRF9JTlBVVBALEiEKHVJFUVVFU1RFRF9NRVRS",
-            "SUNTX0ZPUl9NQU5BR0VSEDtC6gEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52Ni5lcnJvcnNCD1F1ZXJ5RXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5n",
-            "Lm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjYvZXJy",
-            "b3JzO2Vycm9yc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlY2LkVy",
-            "cm9yc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFY2XEVycm9yc+oCIkdvb2ds",
-            "ZTo6QWRzOjpHb29nbGVBZHM6OlY2OjpFcnJvcnNiBnByb3RvMw=="));
+            "SUNTX0ZPUl9NQU5BR0VSEDsSHgoaRklMVEVSX0hBU19UT09fTUFOWV9WQUxV",
+            "RVMQP0LqAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY2LmVycm9yc0IP",
+            "UXVlcnlFcnJvclByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3Rv",
+            "L2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92Ni9lcnJvcnM7ZXJyb3JzogID",
+            "R0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjYuRXJyb3JzygIeR29vZ2xl",
+            "XEFkc1xHb29nbGVBZHNcVjZcRXJyb3Jz6gIiR29vZ2xlOjpBZHM6Okdvb2ds",
+            "ZUFkczo6VjY6OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -461,6 +462,11 @@ namespace Google.Ads.GoogleAds.V6.Errors {
         /// account.
         /// </summary>
         [pbr::OriginalName("REQUESTED_METRICS_FOR_MANAGER")] RequestedMetricsForManager = 59,
+        /// <summary>
+        /// The number of values (right-hand-side operands) in a filter exceeds the
+        /// limit.
+        /// </summary>
+        [pbr::OriginalName("FILTER_HAS_TOO_MANY_VALUES")] FilterHasTooManyValues = 63,
       }
 
     }

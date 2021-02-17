@@ -14,8 +14,8 @@
 
 using Google.Ads.GoogleAds.Interceptors;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.Tests.V3;
-using Google.Ads.GoogleAds.V3.Errors;
+using Google.Ads.GoogleAds.Tests.V6;
+using Google.Ads.GoogleAds.V6.Errors;
 using Grpc.Core;
 using NUnit.Framework;
 using System;

@@ -26,56 +26,63 @@ namespace Google.Ads.GoogleAds.V6.Services {
           string.Concat(
             "CkRnb29nbGUvYWRzL2dvb2dsZWFkcy92Ni9zZXJ2aWNlcy9jYW1wYWlnbl9i",
             "aWRfbW9kaWZpZXJfc2VydmljZS5wcm90bxIgZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjYuc2VydmljZXMaPWdvb2dsZS9hZHMvZ29vZ2xlYWRzL3Y2L3Jlc291",
-            "cmNlcy9jYW1wYWlnbl9iaWRfbW9kaWZpZXIucHJvdG8aHGdvb2dsZS9hcGkv",
-            "YW5ub3RhdGlvbnMucHJvdG8aF2dvb2dsZS9hcGkvY2xpZW50LnByb3RvGh9n",
-            "b29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9yLnByb3RvGhlnb29nbGUvYXBpL3Jl",
-            "c291cmNlLnByb3RvGiBnb29nbGUvcHJvdG9idWYvZmllbGRfbWFzay5wcm90",
-            "bxoXZ29vZ2xlL3JwYy9zdGF0dXMucHJvdG8ibAodR2V0Q2FtcGFpZ25CaWRN",
-            "b2RpZmllclJlcXVlc3QSSwoNcmVzb3VyY2VfbmFtZRgBIAEoCUI04EEC+kEu",
-            "Cixnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vQ2FtcGFpZ25CaWRNb2RpZmll",
-            "ciLGAQohTXV0YXRlQ2FtcGFpZ25CaWRNb2RpZmllcnNSZXF1ZXN0EhgKC2N1",
-            "c3RvbWVyX2lkGAEgASgJQgPgQQISVwoKb3BlcmF0aW9ucxgCIAMoCzI+Lmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnY2LnNlcnZpY2VzLkNhbXBhaWduQmlkTW9k",
-            "aWZpZXJPcGVyYXRpb25CA+BBAhIXCg9wYXJ0aWFsX2ZhaWx1cmUYAyABKAgS",
-            "FQoNdmFsaWRhdGVfb25seRgEIAEoCCKCAgocQ2FtcGFpZ25CaWRNb2RpZmll",
-            "ck9wZXJhdGlvbhIvCgt1cGRhdGVfbWFzaxgEIAEoCzIaLmdvb2dsZS5wcm90",
-            "b2J1Zi5GaWVsZE1hc2sSSAoGY3JlYXRlGAEgASgLMjYuZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjYucmVzb3VyY2VzLkNhbXBhaWduQmlkTW9kaWZpZXJIABJI",
-            "CgZ1cGRhdGUYAiABKAsyNi5nb29nbGUuYWRzLmdvb2dsZWFkcy52Ni5yZXNv",
-            "dXJjZXMuQ2FtcGFpZ25CaWRNb2RpZmllckgAEhAKBnJlbW92ZRgDIAEoCUgA",
-            "QgsKCW9wZXJhdGlvbiKrAQoiTXV0YXRlQ2FtcGFpZ25CaWRNb2RpZmllcnNS",
-            "ZXNwb25zZRIxChVwYXJ0aWFsX2ZhaWx1cmVfZXJyb3IYAyABKAsyEi5nb29n",
-            "bGUucnBjLlN0YXR1cxJSCgdyZXN1bHRzGAIgAygLMkEuZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjYuc2VydmljZXMuTXV0YXRlQ2FtcGFpZ25CaWRNb2RpZmll",
-            "clJlc3VsdCI4Ch9NdXRhdGVDYW1wYWlnbkJpZE1vZGlmaWVyUmVzdWx0EhUK",
-            "DXJlc291cmNlX25hbWUYASABKAkypgQKGkNhbXBhaWduQmlkTW9kaWZpZXJT",
-            "ZXJ2aWNlEuEBChZHZXRDYW1wYWlnbkJpZE1vZGlmaWVyEj8uZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjYuc2VydmljZXMuR2V0Q2FtcGFpZ25CaWRNb2RpZmll",
-            "clJlcXVlc3QaNi5nb29nbGUuYWRzLmdvb2dsZWFkcy52Ni5yZXNvdXJjZXMu",
-            "Q2FtcGFpZ25CaWRNb2RpZmllciJOgtPkkwI4EjYvdjYve3Jlc291cmNlX25h",
-            "bWU9Y3VzdG9tZXJzLyovY2FtcGFpZ25CaWRNb2RpZmllcnMvKn3aQQ1yZXNv",
-            "dXJjZV9uYW1lEoYCChpNdXRhdGVDYW1wYWlnbkJpZE1vZGlmaWVycxJDLmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnY2LnNlcnZpY2VzLk11dGF0ZUNhbXBhaWdu",
-            "QmlkTW9kaWZpZXJzUmVxdWVzdBpELmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY2",
-            "LnNlcnZpY2VzLk11dGF0ZUNhbXBhaWduQmlkTW9kaWZpZXJzUmVzcG9uc2Ui",
-            "XYLT5JMCPiI5L3Y2L2N1c3RvbWVycy97Y3VzdG9tZXJfaWQ9Kn0vY2FtcGFp",
-            "Z25CaWRNb2RpZmllcnM6bXV0YXRlOgEq2kEWY3VzdG9tZXJfaWQsb3BlcmF0",
-            "aW9ucxobykEYZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tQoYCCiRjb20uZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjYuc2VydmljZXNCH0NhbXBhaWduQmlkTW9k",
-            "aWZpZXJTZXJ2aWNlUHJvdG9QAVpIZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJv",
-            "dG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Y2L3NlcnZpY2VzO3NlcnZp",
-            "Y2VzogIDR0FBqgIgR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjYuU2VydmljZXPK",
-            "AiBHb29nbGVcQWRzXEdvb2dsZUFkc1xWNlxTZXJ2aWNlc+oCJEdvb2dsZTo6",
-            "QWRzOjpHb29nbGVBZHM6OlY2OjpTZXJ2aWNlc2IGcHJvdG8z"));
+            "ZHMudjYuc2VydmljZXMaOWdvb2dsZS9hZHMvZ29vZ2xlYWRzL3Y2L2VudW1z",
+            "L3Jlc3BvbnNlX2NvbnRlbnRfdHlwZS5wcm90bxo9Z29vZ2xlL2Fkcy9nb29n",
+            "bGVhZHMvdjYvcmVzb3VyY2VzL2NhbXBhaWduX2JpZF9tb2RpZmllci5wcm90",
+            "bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90bxoXZ29vZ2xlL2FwaS9j",
+            "bGllbnQucHJvdG8aH2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8a",
+            "GWdvb2dsZS9hcGkvcmVzb3VyY2UucHJvdG8aIGdvb2dsZS9wcm90b2J1Zi9m",
+            "aWVsZF9tYXNrLnByb3RvGhdnb29nbGUvcnBjL3N0YXR1cy5wcm90byJsCh1H",
+            "ZXRDYW1wYWlnbkJpZE1vZGlmaWVyUmVxdWVzdBJLCg1yZXNvdXJjZV9uYW1l",
+            "GAEgASgJQjTgQQL6QS4KLGdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9DYW1w",
+            "YWlnbkJpZE1vZGlmaWVyIrECCiFNdXRhdGVDYW1wYWlnbkJpZE1vZGlmaWVy",
+            "c1JlcXVlc3QSGAoLY3VzdG9tZXJfaWQYASABKAlCA+BBAhJXCgpvcGVyYXRp",
+            "b25zGAIgAygLMj4uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjYuc2VydmljZXMu",
+            "Q2FtcGFpZ25CaWRNb2RpZmllck9wZXJhdGlvbkID4EECEhcKD3BhcnRpYWxf",
+            "ZmFpbHVyZRgDIAEoCBIVCg12YWxpZGF0ZV9vbmx5GAQgASgIEmkKFXJlc3Bv",
+            "bnNlX2NvbnRlbnRfdHlwZRgFIAEoDjJKLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnY2LmVudW1zLlJlc3BvbnNlQ29udGVudFR5cGVFbnVtLlJlc3BvbnNlQ29u",
+            "dGVudFR5cGUiggIKHENhbXBhaWduQmlkTW9kaWZpZXJPcGVyYXRpb24SLwoL",
+            "dXBkYXRlX21hc2sYBCABKAsyGi5nb29nbGUucHJvdG9idWYuRmllbGRNYXNr",
+            "EkgKBmNyZWF0ZRgBIAEoCzI2Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY2LnJl",
+            "c291cmNlcy5DYW1wYWlnbkJpZE1vZGlmaWVySAASSAoGdXBkYXRlGAIgASgL",
+            "MjYuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjYucmVzb3VyY2VzLkNhbXBhaWdu",
+            "QmlkTW9kaWZpZXJIABIQCgZyZW1vdmUYAyABKAlIAEILCglvcGVyYXRpb24i",
+            "qwEKIk11dGF0ZUNhbXBhaWduQmlkTW9kaWZpZXJzUmVzcG9uc2USMQoVcGFy",
+            "dGlhbF9mYWlsdXJlX2Vycm9yGAMgASgLMhIuZ29vZ2xlLnJwYy5TdGF0dXMS",
+            "UgoHcmVzdWx0cxgCIAMoCzJBLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY2LnNl",
+            "cnZpY2VzLk11dGF0ZUNhbXBhaWduQmlkTW9kaWZpZXJSZXN1bHQijwEKH011",
+            "dGF0ZUNhbXBhaWduQmlkTW9kaWZpZXJSZXN1bHQSFQoNcmVzb3VyY2VfbmFt",
+            "ZRgBIAEoCRJVChVjYW1wYWlnbl9iaWRfbW9kaWZpZXIYAiABKAsyNi5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52Ni5yZXNvdXJjZXMuQ2FtcGFpZ25CaWRNb2Rp",
+            "ZmllcjLQBAoaQ2FtcGFpZ25CaWRNb2RpZmllclNlcnZpY2US4QEKFkdldENh",
+            "bXBhaWduQmlkTW9kaWZpZXISPy5nb29nbGUuYWRzLmdvb2dsZWFkcy52Ni5z",
+            "ZXJ2aWNlcy5HZXRDYW1wYWlnbkJpZE1vZGlmaWVyUmVxdWVzdBo2Lmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnY2LnJlc291cmNlcy5DYW1wYWlnbkJpZE1vZGlm",
+            "aWVyIk6C0+STAjgSNi92Ni97cmVzb3VyY2VfbmFtZT1jdXN0b21lcnMvKi9j",
+            "YW1wYWlnbkJpZE1vZGlmaWVycy8qfdpBDXJlc291cmNlX25hbWUShgIKGk11",
+            "dGF0ZUNhbXBhaWduQmlkTW9kaWZpZXJzEkMuZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjYuc2VydmljZXMuTXV0YXRlQ2FtcGFpZ25CaWRNb2RpZmllcnNSZXF1",
+            "ZXN0GkQuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjYuc2VydmljZXMuTXV0YXRl",
+            "Q2FtcGFpZ25CaWRNb2RpZmllcnNSZXNwb25zZSJdgtPkkwI+IjkvdjYvY3Vz",
+            "dG9tZXJzL3tjdXN0b21lcl9pZD0qfS9jYW1wYWlnbkJpZE1vZGlmaWVyczpt",
+            "dXRhdGU6ASraQRZjdXN0b21lcl9pZCxvcGVyYXRpb25zGkXKQRhnb29nbGVh",
+            "ZHMuZ29vZ2xlYXBpcy5jb23SQSdodHRwczovL3d3dy5nb29nbGVhcGlzLmNv",
+            "bS9hdXRoL2Fkd29yZHNChgIKJGNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "Ni5zZXJ2aWNlc0IfQ2FtcGFpZ25CaWRNb2RpZmllclNlcnZpY2VQcm90b1AB",
+            "Wkhnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9n",
+            "b29nbGVhZHMvdjYvc2VydmljZXM7c2VydmljZXOiAgNHQUGqAiBHb29nbGUu",
+            "QWRzLkdvb2dsZUFkcy5WNi5TZXJ2aWNlc8oCIEdvb2dsZVxBZHNcR29vZ2xl",
+            "QWRzXFY2XFNlcnZpY2Vz6gIkR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjY6",
+            "OlNlcnZpY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V6.Resources.CampaignBidModifierReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V6.Enums.ResponseContentTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V6.Resources.CampaignBidModifierReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V6.Services.GetCampaignBidModifierRequest), global::Google.Ads.GoogleAds.V6.Services.GetCampaignBidModifierRequest.Parser, new[]{ "ResourceName" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V6.Services.MutateCampaignBidModifiersRequest), global::Google.Ads.GoogleAds.V6.Services.MutateCampaignBidModifiersRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure", "ValidateOnly" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V6.Services.MutateCampaignBidModifiersRequest), global::Google.Ads.GoogleAds.V6.Services.MutateCampaignBidModifiersRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure", "ValidateOnly", "ResponseContentType" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V6.Services.CampaignBidModifierOperation), global::Google.Ads.GoogleAds.V6.Services.CampaignBidModifierOperation.Parser, new[]{ "UpdateMask", "Create", "Update", "Remove" }, new[]{ "Operation" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V6.Services.MutateCampaignBidModifiersResponse), global::Google.Ads.GoogleAds.V6.Services.MutateCampaignBidModifiersResponse.Parser, new[]{ "PartialFailureError", "Results" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V6.Services.MutateCampaignBidModifierResult), global::Google.Ads.GoogleAds.V6.Services.MutateCampaignBidModifierResult.Parser, new[]{ "ResourceName" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V6.Services.MutateCampaignBidModifierResult), global::Google.Ads.GoogleAds.V6.Services.MutateCampaignBidModifierResult.Parser, new[]{ "ResourceName", "CampaignBidModifier" }, null, null, null, null)
           }));
     }
     #endregion
@@ -297,6 +304,7 @@ namespace Google.Ads.GoogleAds.V6.Services {
       operations_ = other.operations_.Clone();
       partialFailure_ = other.partialFailure_;
       validateOnly_ = other.validateOnly_;
+      responseContentType_ = other.responseContentType_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -364,6 +372,21 @@ namespace Google.Ads.GoogleAds.V6.Services {
       }
     }
 
+    /// <summary>Field number for the "response_content_type" field.</summary>
+    public const int ResponseContentTypeFieldNumber = 5;
+    private global::Google.Ads.GoogleAds.V6.Enums.ResponseContentTypeEnum.Types.ResponseContentType responseContentType_ = global::Google.Ads.GoogleAds.V6.Enums.ResponseContentTypeEnum.Types.ResponseContentType.Unspecified;
+    /// <summary>
+    /// The response content type setting. Determines whether the mutable resource
+    /// or just the resource name should be returned post mutation.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V6.Enums.ResponseContentTypeEnum.Types.ResponseContentType ResponseContentType {
+      get { return responseContentType_; }
+      set {
+        responseContentType_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as MutateCampaignBidModifiersRequest);
@@ -381,6 +404,7 @@ namespace Google.Ads.GoogleAds.V6.Services {
       if(!operations_.Equals(other.operations_)) return false;
       if (PartialFailure != other.PartialFailure) return false;
       if (ValidateOnly != other.ValidateOnly) return false;
+      if (ResponseContentType != other.ResponseContentType) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -391,6 +415,7 @@ namespace Google.Ads.GoogleAds.V6.Services {
       hash ^= operations_.GetHashCode();
       if (PartialFailure != false) hash ^= PartialFailure.GetHashCode();
       if (ValidateOnly != false) hash ^= ValidateOnly.GetHashCode();
+      if (ResponseContentType != global::Google.Ads.GoogleAds.V6.Enums.ResponseContentTypeEnum.Types.ResponseContentType.Unspecified) hash ^= ResponseContentType.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -420,6 +445,10 @@ namespace Google.Ads.GoogleAds.V6.Services {
         output.WriteRawTag(32);
         output.WriteBool(ValidateOnly);
       }
+      if (ResponseContentType != global::Google.Ads.GoogleAds.V6.Enums.ResponseContentTypeEnum.Types.ResponseContentType.Unspecified) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) ResponseContentType);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -442,6 +471,10 @@ namespace Google.Ads.GoogleAds.V6.Services {
         output.WriteRawTag(32);
         output.WriteBool(ValidateOnly);
       }
+      if (ResponseContentType != global::Google.Ads.GoogleAds.V6.Enums.ResponseContentTypeEnum.Types.ResponseContentType.Unspecified) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) ResponseContentType);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -460,6 +493,9 @@ namespace Google.Ads.GoogleAds.V6.Services {
       }
       if (ValidateOnly != false) {
         size += 1 + 1;
+      }
+      if (ResponseContentType != global::Google.Ads.GoogleAds.V6.Enums.ResponseContentTypeEnum.Types.ResponseContentType.Unspecified) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ResponseContentType);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -481,6 +517,9 @@ namespace Google.Ads.GoogleAds.V6.Services {
       }
       if (other.ValidateOnly != false) {
         ValidateOnly = other.ValidateOnly;
+      }
+      if (other.ResponseContentType != global::Google.Ads.GoogleAds.V6.Enums.ResponseContentTypeEnum.Types.ResponseContentType.Unspecified) {
+        ResponseContentType = other.ResponseContentType;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -512,6 +551,10 @@ namespace Google.Ads.GoogleAds.V6.Services {
             ValidateOnly = input.ReadBool();
             break;
           }
+          case 40: {
+            ResponseContentType = (global::Google.Ads.GoogleAds.V6.Enums.ResponseContentTypeEnum.Types.ResponseContentType) input.ReadEnum();
+            break;
+          }
         }
       }
     #endif
@@ -540,6 +583,10 @@ namespace Google.Ads.GoogleAds.V6.Services {
           }
           case 32: {
             ValidateOnly = input.ReadBool();
+            break;
+          }
+          case 40: {
+            ResponseContentType = (global::Google.Ads.GoogleAds.V6.Enums.ResponseContentTypeEnum.Types.ResponseContentType) input.ReadEnum();
             break;
           }
         }
@@ -1169,6 +1216,7 @@ namespace Google.Ads.GoogleAds.V6.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public MutateCampaignBidModifierResult(MutateCampaignBidModifierResult other) : this() {
       resourceName_ = other.resourceName_;
+      campaignBidModifier_ = other.campaignBidModifier_ != null ? other.campaignBidModifier_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1191,6 +1239,22 @@ namespace Google.Ads.GoogleAds.V6.Services {
       }
     }
 
+    /// <summary>Field number for the "campaign_bid_modifier" field.</summary>
+    public const int CampaignBidModifierFieldNumber = 2;
+    private global::Google.Ads.GoogleAds.V6.Resources.CampaignBidModifier campaignBidModifier_;
+    /// <summary>
+    /// The mutated campaign bid modifier with only mutable fields after mutate.
+    /// The field will only be returned when response_content_type is set to
+    /// "MUTABLE_RESOURCE".
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V6.Resources.CampaignBidModifier CampaignBidModifier {
+      get { return campaignBidModifier_; }
+      set {
+        campaignBidModifier_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as MutateCampaignBidModifierResult);
@@ -1205,6 +1269,7 @@ namespace Google.Ads.GoogleAds.V6.Services {
         return true;
       }
       if (ResourceName != other.ResourceName) return false;
+      if (!object.Equals(CampaignBidModifier, other.CampaignBidModifier)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1212,6 +1277,7 @@ namespace Google.Ads.GoogleAds.V6.Services {
     public override int GetHashCode() {
       int hash = 1;
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
+      if (campaignBidModifier_ != null) hash ^= CampaignBidModifier.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1232,6 +1298,10 @@ namespace Google.Ads.GoogleAds.V6.Services {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
       }
+      if (campaignBidModifier_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(CampaignBidModifier);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1245,6 +1315,10 @@ namespace Google.Ads.GoogleAds.V6.Services {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
       }
+      if (campaignBidModifier_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(CampaignBidModifier);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1256,6 +1330,9 @@ namespace Google.Ads.GoogleAds.V6.Services {
       int size = 0;
       if (ResourceName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ResourceName);
+      }
+      if (campaignBidModifier_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CampaignBidModifier);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1270,6 +1347,12 @@ namespace Google.Ads.GoogleAds.V6.Services {
       }
       if (other.ResourceName.Length != 0) {
         ResourceName = other.ResourceName;
+      }
+      if (other.campaignBidModifier_ != null) {
+        if (campaignBidModifier_ == null) {
+          CampaignBidModifier = new global::Google.Ads.GoogleAds.V6.Resources.CampaignBidModifier();
+        }
+        CampaignBidModifier.MergeFrom(other.CampaignBidModifier);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1289,6 +1372,13 @@ namespace Google.Ads.GoogleAds.V6.Services {
             ResourceName = input.ReadString();
             break;
           }
+          case 18: {
+            if (campaignBidModifier_ == null) {
+              CampaignBidModifier = new global::Google.Ads.GoogleAds.V6.Resources.CampaignBidModifier();
+            }
+            input.ReadMessage(CampaignBidModifier);
+            break;
+          }
         }
       }
     #endif
@@ -1305,6 +1395,13 @@ namespace Google.Ads.GoogleAds.V6.Services {
             break;
           case 10: {
             ResourceName = input.ReadString();
+            break;
+          }
+          case 18: {
+            if (campaignBidModifier_ == null) {
+              CampaignBidModifier = new global::Google.Ads.GoogleAds.V6.Resources.CampaignBidModifier();
+            }
+            input.ReadMessage(CampaignBidModifier);
             break;
           }
         }

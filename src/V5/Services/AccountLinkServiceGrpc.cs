@@ -31,12 +31,42 @@ namespace Google.Ads.GoogleAds.V5.Services {
   {
     static readonly string __ServiceName = "google.ads.googleads.v5.services.AccountLinkService";
 
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.GetAccountLinkRequest> __Marshaller_google_ads_googleads_v5_services_GetAccountLinkRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V5.Services.GetAccountLinkRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Resources.AccountLink> __Marshaller_google_ads_googleads_v5_resources_AccountLink = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V5.Resources.AccountLink.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.CreateAccountLinkRequest> __Marshaller_google_ads_googleads_v5_services_CreateAccountLinkRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V5.Services.CreateAccountLinkRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.CreateAccountLinkResponse> __Marshaller_google_ads_googleads_v5_services_CreateAccountLinkResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V5.Services.CreateAccountLinkResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.MutateAccountLinkRequest> __Marshaller_google_ads_googleads_v5_services_MutateAccountLinkRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V5.Services.MutateAccountLinkRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.MutateAccountLinkResponse> __Marshaller_google_ads_googleads_v5_services_MutateAccountLinkResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V5.Services.MutateAccountLinkResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.GetAccountLinkRequest> __Marshaller_google_ads_googleads_v5_services_GetAccountLinkRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V5.Services.GetAccountLinkRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Resources.AccountLink> __Marshaller_google_ads_googleads_v5_resources_AccountLink = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V5.Resources.AccountLink.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.CreateAccountLinkRequest> __Marshaller_google_ads_googleads_v5_services_CreateAccountLinkRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V5.Services.CreateAccountLinkRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.CreateAccountLinkResponse> __Marshaller_google_ads_googleads_v5_services_CreateAccountLinkResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V5.Services.CreateAccountLinkResponse.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.MutateAccountLinkRequest> __Marshaller_google_ads_googleads_v5_services_MutateAccountLinkRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V5.Services.MutateAccountLinkRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.MutateAccountLinkResponse> __Marshaller_google_ads_googleads_v5_services_MutateAccountLinkResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V5.Services.MutateAccountLinkResponse.Parser));
 
     static readonly grpc::Method<global::Google.Ads.GoogleAds.V5.Services.GetAccountLinkRequest, global::Google.Ads.GoogleAds.V5.Resources.AccountLink> __Method_GetAccountLink = new grpc::Method<global::Google.Ads.GoogleAds.V5.Services.GetAccountLinkRequest, global::Google.Ads.GoogleAds.V5.Resources.AccountLink>(
         grpc::MethodType.Unary,

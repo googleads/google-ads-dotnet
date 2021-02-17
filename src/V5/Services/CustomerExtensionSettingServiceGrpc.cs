@@ -30,10 +30,40 @@ namespace Google.Ads.GoogleAds.V5.Services {
   {
     static readonly string __ServiceName = "google.ads.googleads.v5.services.CustomerExtensionSettingService";
 
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.GetCustomerExtensionSettingRequest> __Marshaller_google_ads_googleads_v5_services_GetCustomerExtensionSettingRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V5.Services.GetCustomerExtensionSettingRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Resources.CustomerExtensionSetting> __Marshaller_google_ads_googleads_v5_resources_CustomerExtensionSetting = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V5.Resources.CustomerExtensionSetting.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.MutateCustomerExtensionSettingsRequest> __Marshaller_google_ads_googleads_v5_services_MutateCustomerExtensionSettingsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V5.Services.MutateCustomerExtensionSettingsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.MutateCustomerExtensionSettingsResponse> __Marshaller_google_ads_googleads_v5_services_MutateCustomerExtensionSettingsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V5.Services.MutateCustomerExtensionSettingsResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.GetCustomerExtensionSettingRequest> __Marshaller_google_ads_googleads_v5_services_GetCustomerExtensionSettingRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V5.Services.GetCustomerExtensionSettingRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Resources.CustomerExtensionSetting> __Marshaller_google_ads_googleads_v5_resources_CustomerExtensionSetting = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V5.Resources.CustomerExtensionSetting.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.MutateCustomerExtensionSettingsRequest> __Marshaller_google_ads_googleads_v5_services_MutateCustomerExtensionSettingsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V5.Services.MutateCustomerExtensionSettingsRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.MutateCustomerExtensionSettingsResponse> __Marshaller_google_ads_googleads_v5_services_MutateCustomerExtensionSettingsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V5.Services.MutateCustomerExtensionSettingsResponse.Parser));
 
     static readonly grpc::Method<global::Google.Ads.GoogleAds.V5.Services.GetCustomerExtensionSettingRequest, global::Google.Ads.GoogleAds.V5.Resources.CustomerExtensionSetting> __Method_GetCustomerExtensionSetting = new grpc::Method<global::Google.Ads.GoogleAds.V5.Services.GetCustomerExtensionSettingRequest, global::Google.Ads.GoogleAds.V5.Resources.CustomerExtensionSetting>(
         grpc::MethodType.Unary,

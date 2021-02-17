@@ -3710,7 +3710,7 @@ namespace Google.Ads.GoogleAds.V6.Common {
     public const int PromotionEndDateFieldNumber = 20;
     private string promotionEndDate_;
     /// <summary>
-    /// End date of when the promotion is eligible to be redeemed.
+    /// Last date when the promotion is eligible to be redeemed.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string PromotionEndDate {

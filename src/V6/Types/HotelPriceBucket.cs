@@ -26,15 +26,16 @@ namespace Google.Ads.GoogleAds.V6.Enums {
           string.Concat(
             "CjZnb29nbGUvYWRzL2dvb2dsZWFkcy92Ni9lbnVtcy9ob3RlbF9wcmljZV9i",
             "dWNrZXQucHJvdG8SHWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY2LmVudW1zGhxn",
-            "b29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvImkKFEhvdGVsUHJpY2VCdWNr",
-            "ZXRFbnVtIlEKEEhvdGVsUHJpY2VCdWNrZXQSDwoLVU5TUEVDSUZJRUQQABIL",
-            "CgdVTktOT1dOEAESDwoLTE9XRVNUX1RJRUQQAxIOCgpOT1RfTE9XRVNUEARC",
-            "6gEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52Ni5lbnVtc0IVSG90ZWxQ",
-            "cmljZUJ1Y2tldFByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3Rv",
-            "L2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92Ni9lbnVtcztlbnVtc6ICA0dB",
-            "QaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlY2LkVudW1zygIdR29vZ2xlXEFk",
-            "c1xHb29nbGVBZHNcVjZcRW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRz",
-            "OjpWNjo6RW51bXNiBnByb3RvMw=="));
+            "b29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIpQBChRIb3RlbFByaWNlQnVj",
+            "a2V0RW51bSJ8ChBIb3RlbFByaWNlQnVja2V0Eg8KC1VOU1BFQ0lGSUVEEAAS",
+            "CwoHVU5LTk9XThABEhEKDUxPV0VTVF9VTklRVUUQAhIPCgtMT1dFU1RfVElF",
+            "RBADEg4KCk5PVF9MT1dFU1QQBBIWChJPTkxZX1BBUlRORVJfU0hPV04QBULq",
+            "AQohY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY2LmVudW1zQhVIb3RlbFBy",
+            "aWNlQnVja2V0UHJvdG9QAVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8v",
+            "Z29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Y2L2VudW1zO2VudW1zogIDR0FB",
+            "qgIdR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjYuRW51bXPKAh1Hb29nbGVcQWRz",
+            "XEdvb2dsZUFkc1xWNlxFbnVtc+oCIUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6",
+            "OlY2OjpFbnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -199,6 +200,11 @@ namespace Google.Ads.GoogleAds.V6.Enums {
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
+        /// Uniquely lowest price. Partner has the lowest price, and no other
+        /// partners are within a small variance of that price.
+        /// </summary>
+        [pbr::OriginalName("LOWEST_UNIQUE")] LowestUnique = 2,
+        /// <summary>
         /// Tied for lowest price. Partner is within a small variance of the lowest
         /// price.
         /// </summary>
@@ -208,6 +214,10 @@ namespace Google.Ads.GoogleAds.V6.Enums {
         /// price.
         /// </summary>
         [pbr::OriginalName("NOT_LOWEST")] NotLowest = 4,
+        /// <summary>
+        /// Partner was the only one shown.
+        /// </summary>
+        [pbr::OriginalName("ONLY_PARTNER_SHOWN")] OnlyPartnerShown = 5,
       }
 
     }

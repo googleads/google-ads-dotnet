@@ -88,7 +88,7 @@ namespace Google.Ads.GoogleAds.V4.Services
     /// Builder class for <see cref="CampaignSharedSetServiceClient"/> to provide simple configuration of credentials,
     /// endpoint etc.
     /// </summary>
-    public sealed partial class CampaignSharedSetServiceClientBuilder : gaxgrpc::ClientBuilderBase<CampaignSharedSetServiceClient>
+    internal sealed partial class CampaignSharedSetServiceClientBuilder : gaxgrpc::ClientBuilderBase<CampaignSharedSetServiceClient>
     {
         /// <summary>The settings to use for RPCs, or <c>null</c> for the default settings.</summary>
         public CampaignSharedSetServiceSettings Settings { get; set; }
@@ -155,8 +155,14 @@ namespace Google.Ads.GoogleAds.V4.Services
         public static string DefaultEndpoint { get; } = "googleads.googleapis.com:443";
 
         /// <summary>The default CampaignSharedSetService scopes.</summary>
-        /// <remarks>The default CampaignSharedSetService scopes are:<list type="bullet"></list></remarks>
-        public static scg::IReadOnlyList<string> DefaultScopes { get; } = new sco::ReadOnlyCollection<string>(new string[] { });
+        /// <remarks>
+        /// The default CampaignSharedSetService scopes are:
+        /// <list type="bullet"><item><description>https://www.googleapis.com/auth/adwords</description></item></list>
+        /// </remarks>
+        public static scg::IReadOnlyList<string> DefaultScopes { get; } = new sco::ReadOnlyCollection<string>(new string[]
+        {
+            "https://www.googleapis.com/auth/adwords",
+        });
 
         internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes);
 

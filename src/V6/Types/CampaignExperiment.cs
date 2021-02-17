@@ -386,7 +386,7 @@ namespace Google.Ads.GoogleAds.V6.Resources {
     public const int EndDateFieldNumber = 21;
     private string endDate_;
     /// <summary>
-    /// Date when the campaign experiment ends. By default, the experiment ends on
+    /// The last day of the campaign experiment. By default, the experiment ends on
     /// the campaign's end date. If this field is set, then the experiment ends at
     /// the end of the specified date in the customer's time zone.
     ///

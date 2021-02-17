@@ -1,4 +1,4 @@
-// Copyright 2020 Google LLC
+// Copyright 2021 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -252,6 +252,15 @@ namespace Google.Ads.GoogleAds.V6.Resources
         {
             get => string.IsNullOrEmpty(ResourceName) ? null : CustomerClientName.Parse(ResourceName, allowUnparsed: true);
             set => ResourceName = value?.ToString() ?? "";
+        }
+
+        /// <summary>
+        /// <see cref="CustomerName"/>-typed view over the <see cref="ClientCustomer"/> resource name property.
+        /// </summary>
+        internal CustomerName ClientCustomerAsCustomerName
+        {
+            get => string.IsNullOrEmpty(ClientCustomer) ? null : CustomerName.Parse(ClientCustomer, allowUnparsed: true);
+            set => ClientCustomer = value?.ToString() ?? "";
         }
     }
 }

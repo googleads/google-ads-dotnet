@@ -30,10 +30,40 @@ namespace Google.Ads.GoogleAds.V4.Services {
   {
     static readonly string __ServiceName = "google.ads.googleads.v4.services.AdGroupLabelService";
 
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.GetAdGroupLabelRequest> __Marshaller_google_ads_googleads_v4_services_GetAdGroupLabelRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.GetAdGroupLabelRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Resources.AdGroupLabel> __Marshaller_google_ads_googleads_v4_resources_AdGroupLabel = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Resources.AdGroupLabel.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.MutateAdGroupLabelsRequest> __Marshaller_google_ads_googleads_v4_services_MutateAdGroupLabelsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.MutateAdGroupLabelsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.MutateAdGroupLabelsResponse> __Marshaller_google_ads_googleads_v4_services_MutateAdGroupLabelsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.MutateAdGroupLabelsResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.GetAdGroupLabelRequest> __Marshaller_google_ads_googleads_v4_services_GetAdGroupLabelRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Services.GetAdGroupLabelRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Resources.AdGroupLabel> __Marshaller_google_ads_googleads_v4_resources_AdGroupLabel = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Resources.AdGroupLabel.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.MutateAdGroupLabelsRequest> __Marshaller_google_ads_googleads_v4_services_MutateAdGroupLabelsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Services.MutateAdGroupLabelsRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.MutateAdGroupLabelsResponse> __Marshaller_google_ads_googleads_v4_services_MutateAdGroupLabelsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Services.MutateAdGroupLabelsResponse.Parser));
 
     static readonly grpc::Method<global::Google.Ads.GoogleAds.V4.Services.GetAdGroupLabelRequest, global::Google.Ads.GoogleAds.V4.Resources.AdGroupLabel> __Method_GetAdGroupLabel = new grpc::Method<global::Google.Ads.GoogleAds.V4.Services.GetAdGroupLabelRequest, global::Google.Ads.GoogleAds.V4.Resources.AdGroupLabel>(
         grpc::MethodType.Unary,

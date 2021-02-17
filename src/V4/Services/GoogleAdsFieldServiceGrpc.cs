@@ -30,10 +30,40 @@ namespace Google.Ads.GoogleAds.V4.Services {
   {
     static readonly string __ServiceName = "google.ads.googleads.v4.services.GoogleAdsFieldService";
 
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.GetGoogleAdsFieldRequest> __Marshaller_google_ads_googleads_v4_services_GetGoogleAdsFieldRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.GetGoogleAdsFieldRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Resources.GoogleAdsField> __Marshaller_google_ads_googleads_v4_resources_GoogleAdsField = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Resources.GoogleAdsField.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.SearchGoogleAdsFieldsRequest> __Marshaller_google_ads_googleads_v4_services_SearchGoogleAdsFieldsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.SearchGoogleAdsFieldsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.SearchGoogleAdsFieldsResponse> __Marshaller_google_ads_googleads_v4_services_SearchGoogleAdsFieldsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.SearchGoogleAdsFieldsResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.GetGoogleAdsFieldRequest> __Marshaller_google_ads_googleads_v4_services_GetGoogleAdsFieldRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Services.GetGoogleAdsFieldRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Resources.GoogleAdsField> __Marshaller_google_ads_googleads_v4_resources_GoogleAdsField = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Resources.GoogleAdsField.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.SearchGoogleAdsFieldsRequest> __Marshaller_google_ads_googleads_v4_services_SearchGoogleAdsFieldsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Services.SearchGoogleAdsFieldsRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.SearchGoogleAdsFieldsResponse> __Marshaller_google_ads_googleads_v4_services_SearchGoogleAdsFieldsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Services.SearchGoogleAdsFieldsResponse.Parser));
 
     static readonly grpc::Method<global::Google.Ads.GoogleAds.V4.Services.GetGoogleAdsFieldRequest, global::Google.Ads.GoogleAds.V4.Resources.GoogleAdsField> __Method_GetGoogleAdsField = new grpc::Method<global::Google.Ads.GoogleAds.V4.Services.GetGoogleAdsFieldRequest, global::Google.Ads.GoogleAds.V4.Resources.GoogleAdsField>(
         grpc::MethodType.Unary,
