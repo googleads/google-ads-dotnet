@@ -85,7 +85,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 },
                 BidModifier = bidModifierValue
             };
-            // [START mutable_resource]
+            // [START MutableResource]
             // Construct an operation to create the campaign bid modifier.
             CampaignBidModifierOperation op = new CampaignBidModifierOperation()
             {
@@ -132,7 +132,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 Console.WriteLine($"Request ID: {e.RequestId}");
                 throw;
             }
-            // [END mutable_resource]
+            // [END MutableResource]
         }
     }
 }
