@@ -1,4 +1,4 @@
-// Copyright 2020 Google LLC
+// Copyright 2021 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -42,7 +42,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             gagvr::CustomerNegativeCriterion expectedResponse = new gagvr::CustomerNegativeCriterion
             {
                 ResourceNameAsCustomerNegativeCriterionName = gagvr::CustomerNegativeCriterionName.FromCustomerCriterion("[CUSTOMER_ID]", "[CRITERION_ID]"),
-                Type = gagve::CriterionTypeEnum.Types.CriterionType.AdSchedule,
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.MobileApplication,
                 ContentLabel = new gagvc::ContentLabelInfo(),
                 MobileApplication = new gagvc::MobileApplicationInfo(),
                 MobileAppCategory = new gagvc::MobileAppCategoryInfo(),
@@ -69,7 +69,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             gagvr::CustomerNegativeCriterion expectedResponse = new gagvr::CustomerNegativeCriterion
             {
                 ResourceNameAsCustomerNegativeCriterionName = gagvr::CustomerNegativeCriterionName.FromCustomerCriterion("[CUSTOMER_ID]", "[CRITERION_ID]"),
-                Type = gagve::CriterionTypeEnum.Types.CriterionType.AdSchedule,
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.MobileApplication,
                 ContentLabel = new gagvc::ContentLabelInfo(),
                 MobileApplication = new gagvc::MobileApplicationInfo(),
                 MobileAppCategory = new gagvc::MobileAppCategoryInfo(),
@@ -98,7 +98,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             gagvr::CustomerNegativeCriterion expectedResponse = new gagvr::CustomerNegativeCriterion
             {
                 ResourceNameAsCustomerNegativeCriterionName = gagvr::CustomerNegativeCriterionName.FromCustomerCriterion("[CUSTOMER_ID]", "[CRITERION_ID]"),
-                Type = gagve::CriterionTypeEnum.Types.CriterionType.AdSchedule,
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.MobileApplication,
                 ContentLabel = new gagvc::ContentLabelInfo(),
                 MobileApplication = new gagvc::MobileApplicationInfo(),
                 MobileAppCategory = new gagvc::MobileAppCategoryInfo(),
@@ -125,7 +125,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             gagvr::CustomerNegativeCriterion expectedResponse = new gagvr::CustomerNegativeCriterion
             {
                 ResourceNameAsCustomerNegativeCriterionName = gagvr::CustomerNegativeCriterionName.FromCustomerCriterion("[CUSTOMER_ID]", "[CRITERION_ID]"),
-                Type = gagve::CriterionTypeEnum.Types.CriterionType.AdSchedule,
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.MobileApplication,
                 ContentLabel = new gagvc::ContentLabelInfo(),
                 MobileApplication = new gagvc::MobileApplicationInfo(),
                 MobileAppCategory = new gagvc::MobileAppCategoryInfo(),
@@ -154,7 +154,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             gagvr::CustomerNegativeCriterion expectedResponse = new gagvr::CustomerNegativeCriterion
             {
                 ResourceNameAsCustomerNegativeCriterionName = gagvr::CustomerNegativeCriterionName.FromCustomerCriterion("[CUSTOMER_ID]", "[CRITERION_ID]"),
-                Type = gagve::CriterionTypeEnum.Types.CriterionType.AdSchedule,
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.MobileApplication,
                 ContentLabel = new gagvc::ContentLabelInfo(),
                 MobileApplication = new gagvc::MobileApplicationInfo(),
                 MobileAppCategory = new gagvc::MobileAppCategoryInfo(),
@@ -181,7 +181,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             gagvr::CustomerNegativeCriterion expectedResponse = new gagvr::CustomerNegativeCriterion
             {
                 ResourceNameAsCustomerNegativeCriterionName = gagvr::CustomerNegativeCriterionName.FromCustomerCriterion("[CUSTOMER_ID]", "[CRITERION_ID]"),
-                Type = gagve::CriterionTypeEnum.Types.CriterionType.AdSchedule,
+                Type = gagve::CriterionTypeEnum.Types.CriterionType.MobileApplication,
                 ContentLabel = new gagvc::ContentLabelInfo(),
                 MobileApplication = new gagvc::MobileApplicationInfo(),
                 MobileAppCategory = new gagvc::MobileAppCategoryInfo(),
@@ -212,6 +212,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
                 },
                 PartialFailure = false,
                 ValidateOnly = true,
+                ResponseContentType = gagve::ResponseContentTypeEnum.Types.ResponseContentType.ResourceNameOnly,
             };
             MutateCustomerNegativeCriteriaResponse expectedResponse = new MutateCustomerNegativeCriteriaResponse
             {
@@ -241,6 +242,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
                 },
                 PartialFailure = false,
                 ValidateOnly = true,
+                ResponseContentType = gagve::ResponseContentTypeEnum.Types.ResponseContentType.ResourceNameOnly,
             };
             MutateCustomerNegativeCriteriaResponse expectedResponse = new MutateCustomerNegativeCriteriaResponse
             {

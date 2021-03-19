@@ -40,7 +40,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             gagvr::CustomerManagerLink expectedResponse = new gagvr::CustomerManagerLink
             {
                 ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerCustomerManagerLink("[CUSTOMER]", "[CUSTOMER_MANAGER_LINK]"),
-                ManagerCustomer = "manager_customer3075601e",
+                ManagerCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
                 ManagerLinkId = 1955158851327798968L,
                 Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
             };
@@ -62,7 +62,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             gagvr::CustomerManagerLink expectedResponse = new gagvr::CustomerManagerLink
             {
                 ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerCustomerManagerLink("[CUSTOMER]", "[CUSTOMER_MANAGER_LINK]"),
-                ManagerCustomer = "manager_customer3075601e",
+                ManagerCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
                 ManagerLinkId = 1955158851327798968L,
                 Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
             };
@@ -86,7 +86,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             gagvr::CustomerManagerLink expectedResponse = new gagvr::CustomerManagerLink
             {
                 ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerCustomerManagerLink("[CUSTOMER]", "[CUSTOMER_MANAGER_LINK]"),
-                ManagerCustomer = "manager_customer3075601e",
+                ManagerCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
                 ManagerLinkId = 1955158851327798968L,
                 Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
             };
@@ -108,7 +108,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             gagvr::CustomerManagerLink expectedResponse = new gagvr::CustomerManagerLink
             {
                 ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerCustomerManagerLink("[CUSTOMER]", "[CUSTOMER_MANAGER_LINK]"),
-                ManagerCustomer = "manager_customer3075601e",
+                ManagerCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
                 ManagerLinkId = 1955158851327798968L,
                 Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
             };
@@ -132,7 +132,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             gagvr::CustomerManagerLink expectedResponse = new gagvr::CustomerManagerLink
             {
                 ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerCustomerManagerLink("[CUSTOMER]", "[CUSTOMER_MANAGER_LINK]"),
-                ManagerCustomer = "manager_customer3075601e",
+                ManagerCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
                 ManagerLinkId = 1955158851327798968L,
                 Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
             };
@@ -154,7 +154,7 @@ namespace Google.Ads.GoogleAds.Tests.V4.Services
             gagvr::CustomerManagerLink expectedResponse = new gagvr::CustomerManagerLink
             {
                 ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerCustomerManagerLink("[CUSTOMER]", "[CUSTOMER_MANAGER_LINK]"),
-                ManagerCustomer = "manager_customer3075601e",
+                ManagerCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
                 ManagerLinkId = 1955158851327798968L,
                 Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
             };

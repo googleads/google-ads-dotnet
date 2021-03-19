@@ -30,10 +30,40 @@ namespace Google.Ads.GoogleAds.V4.Services {
   {
     static readonly string __ServiceName = "google.ads.googleads.v4.services.MediaFileService";
 
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.GetMediaFileRequest> __Marshaller_google_ads_googleads_v4_services_GetMediaFileRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.GetMediaFileRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Resources.MediaFile> __Marshaller_google_ads_googleads_v4_resources_MediaFile = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Resources.MediaFile.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.MutateMediaFilesRequest> __Marshaller_google_ads_googleads_v4_services_MutateMediaFilesRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.MutateMediaFilesRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.MutateMediaFilesResponse> __Marshaller_google_ads_googleads_v4_services_MutateMediaFilesResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.MutateMediaFilesResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.GetMediaFileRequest> __Marshaller_google_ads_googleads_v4_services_GetMediaFileRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Services.GetMediaFileRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Resources.MediaFile> __Marshaller_google_ads_googleads_v4_resources_MediaFile = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Resources.MediaFile.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.MutateMediaFilesRequest> __Marshaller_google_ads_googleads_v4_services_MutateMediaFilesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Services.MutateMediaFilesRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.MutateMediaFilesResponse> __Marshaller_google_ads_googleads_v4_services_MutateMediaFilesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Services.MutateMediaFilesResponse.Parser));
 
     static readonly grpc::Method<global::Google.Ads.GoogleAds.V4.Services.GetMediaFileRequest, global::Google.Ads.GoogleAds.V4.Resources.MediaFile> __Method_GetMediaFile = new grpc::Method<global::Google.Ads.GoogleAds.V4.Services.GetMediaFileRequest, global::Google.Ads.GoogleAds.V4.Resources.MediaFile>(
         grpc::MethodType.Unary,

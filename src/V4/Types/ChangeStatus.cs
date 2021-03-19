@@ -81,7 +81,8 @@ namespace Google.Ads.GoogleAds.V4.Resources {
   }
   #region Messages
   /// <summary>
-  /// Describes the status of returned resource.
+  /// Describes the status of returned resource. ChangeStatus could have up to 3
+  /// minutes delay to reflect a new change.
   /// </summary>
   public sealed partial class ChangeStatus : pb::IMessage<ChangeStatus>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

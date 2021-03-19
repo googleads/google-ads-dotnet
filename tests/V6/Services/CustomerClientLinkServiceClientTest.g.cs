@@ -1,4 +1,4 @@
-// Copyright 2020 Google LLC
+// Copyright 2021 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -41,7 +41,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             {
                 ResourceNameAsCustomerClientLinkName = gagvr::CustomerClientLinkName.FromCustomerClientCustomerManagerLink("[CUSTOMER_ID]", "[CLIENT_CUSTOMER_ID]", "[MANAGER_LINK_ID]"),
                 Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
-                ClientCustomer = "client_customerf58ac5fa",
+                ClientCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER_ID]"),
                 ManagerLinkId = 1955158851327798968L,
                 Hidden = true,
             };
@@ -64,7 +64,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             {
                 ResourceNameAsCustomerClientLinkName = gagvr::CustomerClientLinkName.FromCustomerClientCustomerManagerLink("[CUSTOMER_ID]", "[CLIENT_CUSTOMER_ID]", "[MANAGER_LINK_ID]"),
                 Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
-                ClientCustomer = "client_customerf58ac5fa",
+                ClientCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER_ID]"),
                 ManagerLinkId = 1955158851327798968L,
                 Hidden = true,
             };
@@ -89,7 +89,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             {
                 ResourceNameAsCustomerClientLinkName = gagvr::CustomerClientLinkName.FromCustomerClientCustomerManagerLink("[CUSTOMER_ID]", "[CLIENT_CUSTOMER_ID]", "[MANAGER_LINK_ID]"),
                 Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
-                ClientCustomer = "client_customerf58ac5fa",
+                ClientCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER_ID]"),
                 ManagerLinkId = 1955158851327798968L,
                 Hidden = true,
             };
@@ -112,7 +112,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             {
                 ResourceNameAsCustomerClientLinkName = gagvr::CustomerClientLinkName.FromCustomerClientCustomerManagerLink("[CUSTOMER_ID]", "[CLIENT_CUSTOMER_ID]", "[MANAGER_LINK_ID]"),
                 Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
-                ClientCustomer = "client_customerf58ac5fa",
+                ClientCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER_ID]"),
                 ManagerLinkId = 1955158851327798968L,
                 Hidden = true,
             };
@@ -137,7 +137,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             {
                 ResourceNameAsCustomerClientLinkName = gagvr::CustomerClientLinkName.FromCustomerClientCustomerManagerLink("[CUSTOMER_ID]", "[CLIENT_CUSTOMER_ID]", "[MANAGER_LINK_ID]"),
                 Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
-                ClientCustomer = "client_customerf58ac5fa",
+                ClientCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER_ID]"),
                 ManagerLinkId = 1955158851327798968L,
                 Hidden = true,
             };
@@ -160,7 +160,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             {
                 ResourceNameAsCustomerClientLinkName = gagvr::CustomerClientLinkName.FromCustomerClientCustomerManagerLink("[CUSTOMER_ID]", "[CLIENT_CUSTOMER_ID]", "[MANAGER_LINK_ID]"),
                 Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
-                ClientCustomer = "client_customerf58ac5fa",
+                ClientCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER_ID]"),
                 ManagerLinkId = 1955158851327798968L,
                 Hidden = true,
             };

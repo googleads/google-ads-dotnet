@@ -30,10 +30,40 @@ namespace Google.Ads.GoogleAds.V4.Services {
   {
     static readonly string __ServiceName = "google.ads.googleads.v4.services.CampaignBidModifierService";
 
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.GetCampaignBidModifierRequest> __Marshaller_google_ads_googleads_v4_services_GetCampaignBidModifierRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.GetCampaignBidModifierRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Resources.CampaignBidModifier> __Marshaller_google_ads_googleads_v4_resources_CampaignBidModifier = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Resources.CampaignBidModifier.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.MutateCampaignBidModifiersRequest> __Marshaller_google_ads_googleads_v4_services_MutateCampaignBidModifiersRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.MutateCampaignBidModifiersRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.MutateCampaignBidModifiersResponse> __Marshaller_google_ads_googleads_v4_services_MutateCampaignBidModifiersResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.MutateCampaignBidModifiersResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.GetCampaignBidModifierRequest> __Marshaller_google_ads_googleads_v4_services_GetCampaignBidModifierRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Services.GetCampaignBidModifierRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Resources.CampaignBidModifier> __Marshaller_google_ads_googleads_v4_resources_CampaignBidModifier = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Resources.CampaignBidModifier.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.MutateCampaignBidModifiersRequest> __Marshaller_google_ads_googleads_v4_services_MutateCampaignBidModifiersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Services.MutateCampaignBidModifiersRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.MutateCampaignBidModifiersResponse> __Marshaller_google_ads_googleads_v4_services_MutateCampaignBidModifiersResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Services.MutateCampaignBidModifiersResponse.Parser));
 
     static readonly grpc::Method<global::Google.Ads.GoogleAds.V4.Services.GetCampaignBidModifierRequest, global::Google.Ads.GoogleAds.V4.Resources.CampaignBidModifier> __Method_GetCampaignBidModifier = new grpc::Method<global::Google.Ads.GoogleAds.V4.Services.GetCampaignBidModifierRequest, global::Google.Ads.GoogleAds.V4.Resources.CampaignBidModifier>(
         grpc::MethodType.Unary,

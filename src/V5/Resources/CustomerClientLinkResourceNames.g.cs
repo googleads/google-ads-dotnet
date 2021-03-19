@@ -269,5 +269,14 @@ namespace Google.Ads.GoogleAds.V5.Resources
             get => string.IsNullOrEmpty(ResourceName) ? null : CustomerClientLinkName.Parse(ResourceName, allowUnparsed: true);
             set => ResourceName = value?.ToString() ?? "";
         }
+
+        /// <summary>
+        /// <see cref="CustomerName"/>-typed view over the <see cref="ClientCustomer"/> resource name property.
+        /// </summary>
+        internal CustomerName ClientCustomerAsCustomerName
+        {
+            get => string.IsNullOrEmpty(ClientCustomer) ? null : CustomerName.Parse(ClientCustomer, allowUnparsed: true);
+            set => ClientCustomer = value?.ToString() ?? "";
+        }
     }
 }

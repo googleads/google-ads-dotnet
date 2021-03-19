@@ -1,4 +1,4 @@
-// Copyright 2020 Google LLC
+// Copyright 2021 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -329,6 +329,22 @@ namespace Google.Ads.GoogleAds.V6.Resources
         {
             get => string.IsNullOrEmpty(AdGroup) ? null : AdGroupName.Parse(AdGroup, allowUnparsed: true);
             set => AdGroup = value?.ToString() ?? "";
+        }
+
+        /// <summary><see cref="FeedName"/>-typed view over the <see cref="Feed"/> resource name property.</summary>
+        internal FeedName FeedAsFeedName
+        {
+            get => string.IsNullOrEmpty(Feed) ? null : FeedName.Parse(Feed, allowUnparsed: true);
+            set => Feed = value?.ToString() ?? "";
+        }
+
+        /// <summary>
+        /// <see cref="FeedItemName"/>-typed view over the <see cref="FeedItem"/> resource name property.
+        /// </summary>
+        internal FeedItemName FeedItemAsFeedItemName
+        {
+            get => string.IsNullOrEmpty(FeedItem) ? null : FeedItemName.Parse(FeedItem, allowUnparsed: true);
+            set => FeedItem = value?.ToString() ?? "";
         }
     }
 }

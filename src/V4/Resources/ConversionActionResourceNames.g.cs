@@ -264,5 +264,14 @@ namespace Google.Ads.GoogleAds.V4.Resources
             get => string.IsNullOrEmpty(Name) ? null : gagvr::ConversionActionName.Parse(Name, allowUnparsed: true);
             set => Name = value?.ToString() ?? "";
         }
+
+        /// <summary>
+        /// <see cref="CustomerName"/>-typed view over the <see cref="OwnerCustomer"/> resource name property.
+        /// </summary>
+        internal CustomerName OwnerCustomerAsCustomerName
+        {
+            get => string.IsNullOrEmpty(OwnerCustomer) ? null : CustomerName.Parse(OwnerCustomer, allowUnparsed: true);
+            set => OwnerCustomer = value?.ToString() ?? "";
+        }
     }
 }

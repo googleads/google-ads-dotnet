@@ -1,4 +1,4 @@
-// Copyright 2020 Google LLC
+// Copyright 2021 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -41,7 +41,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             {
                 ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerManagerCustomerManagerLink("[CUSTOMER_ID]", "[MANAGER_CUSTOMER_ID]", "[MANAGER_LINK_ID]"),
                 Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
-                ManagerCustomer = "manager_customer3075601e",
+                ManagerCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER_ID]"),
                 ManagerLinkId = 1955158851327798968L,
             };
             mockGrpcClient.Setup(x => x.GetCustomerManagerLink(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
@@ -63,7 +63,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             {
                 ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerManagerCustomerManagerLink("[CUSTOMER_ID]", "[MANAGER_CUSTOMER_ID]", "[MANAGER_LINK_ID]"),
                 Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
-                ManagerCustomer = "manager_customer3075601e",
+                ManagerCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER_ID]"),
                 ManagerLinkId = 1955158851327798968L,
             };
             mockGrpcClient.Setup(x => x.GetCustomerManagerLinkAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CustomerManagerLink>(stt::Task.FromResult(expectedResponse), null, null, null, null));
@@ -87,7 +87,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             {
                 ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerManagerCustomerManagerLink("[CUSTOMER_ID]", "[MANAGER_CUSTOMER_ID]", "[MANAGER_LINK_ID]"),
                 Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
-                ManagerCustomer = "manager_customer3075601e",
+                ManagerCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER_ID]"),
                 ManagerLinkId = 1955158851327798968L,
             };
             mockGrpcClient.Setup(x => x.GetCustomerManagerLink(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
@@ -109,7 +109,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             {
                 ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerManagerCustomerManagerLink("[CUSTOMER_ID]", "[MANAGER_CUSTOMER_ID]", "[MANAGER_LINK_ID]"),
                 Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
-                ManagerCustomer = "manager_customer3075601e",
+                ManagerCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER_ID]"),
                 ManagerLinkId = 1955158851327798968L,
             };
             mockGrpcClient.Setup(x => x.GetCustomerManagerLinkAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CustomerManagerLink>(stt::Task.FromResult(expectedResponse), null, null, null, null));
@@ -133,7 +133,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             {
                 ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerManagerCustomerManagerLink("[CUSTOMER_ID]", "[MANAGER_CUSTOMER_ID]", "[MANAGER_LINK_ID]"),
                 Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
-                ManagerCustomer = "manager_customer3075601e",
+                ManagerCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER_ID]"),
                 ManagerLinkId = 1955158851327798968L,
             };
             mockGrpcClient.Setup(x => x.GetCustomerManagerLink(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
@@ -155,7 +155,7 @@ namespace Google.Ads.GoogleAds.Tests.V6.Services
             {
                 ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerManagerCustomerManagerLink("[CUSTOMER_ID]", "[MANAGER_CUSTOMER_ID]", "[MANAGER_LINK_ID]"),
                 Status = gagve::ManagerLinkStatusEnum.Types.ManagerLinkStatus.Inactive,
-                ManagerCustomer = "manager_customer3075601e",
+                ManagerCustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER_ID]"),
                 ManagerLinkId = 1955158851327798968L,
             };
             mockGrpcClient.Setup(x => x.GetCustomerManagerLinkAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CustomerManagerLink>(stt::Task.FromResult(expectedResponse), null, null, null, null));

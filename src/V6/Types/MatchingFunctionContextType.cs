@@ -26,16 +26,16 @@ namespace Google.Ads.GoogleAds.V6.Enums {
           string.Concat(
             "CkJnb29nbGUvYWRzL2dvb2dsZWFkcy92Ni9lbnVtcy9tYXRjaGluZ19mdW5j",
             "dGlvbl9jb250ZXh0X3R5cGUucHJvdG8SHWdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnY2LmVudW1zGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIoEBCh9N",
-            "YXRjaGluZ0Z1bmN0aW9uQ29udGV4dFR5cGVFbnVtIl4KG01hdGNoaW5nRnVu",
+            "LnY2LmVudW1zGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIpcBCh9N",
+            "YXRjaGluZ0Z1bmN0aW9uQ29udGV4dFR5cGVFbnVtInQKG01hdGNoaW5nRnVu",
             "Y3Rpb25Db250ZXh0VHlwZRIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04Q",
-            "ARIQCgxGRUVEX0lURU1fSUQQAhIPCgtERVZJQ0VfTkFNRRADQvUBCiFjb20u",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjYuZW51bXNCIE1hdGNoaW5nRnVuY3Rp",
-            "b25Db250ZXh0VHlwZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcub3JnL2dlbnBy",
-            "b3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92Ni9lbnVtcztlbnVtc6IC",
-            "A0dBQaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlY2LkVudW1zygIdR29vZ2xl",
-            "XEFkc1xHb29nbGVBZHNcVjZcRW51bXPqAiFHb29nbGU6OkFkczo6R29vZ2xl",
-            "QWRzOjpWNjo6RW51bXNiBnByb3RvMw=="));
+            "ARIQCgxGRUVEX0lURU1fSUQQAhIPCgtERVZJQ0VfTkFNRRADEhQKEEZFRURf",
+            "SVRFTV9TRVRfSUQQBEL1AQohY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY2",
+            "LmVudW1zQiBNYXRjaGluZ0Z1bmN0aW9uQ29udGV4dFR5cGVQcm90b1ABWkJn",
+            "b29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29n",
+            "bGVhZHMvdjYvZW51bXM7ZW51bXOiAgNHQUGqAh1Hb29nbGUuQWRzLkdvb2ds",
+            "ZUFkcy5WNi5FbnVtc8oCHUdvb2dsZVxBZHNcR29vZ2xlQWRzXFY2XEVudW1z",
+            "6gIhR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjY6OkVudW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -207,6 +207,10 @@ namespace Google.Ads.GoogleAds.V6.Enums {
         /// The device being used (possible values are 'Desktop' or 'Mobile').
         /// </summary>
         [pbr::OriginalName("DEVICE_NAME")] DeviceName = 3,
+        /// <summary>
+        /// Feed item set id in the request context.
+        /// </summary>
+        [pbr::OriginalName("FEED_ITEM_SET_ID")] FeedItemSetId = 4,
       }
 
     }

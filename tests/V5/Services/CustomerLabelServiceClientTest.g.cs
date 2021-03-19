@@ -40,8 +40,8 @@ namespace Google.Ads.GoogleAds.Tests.V5.Services
             gagvr::CustomerLabel expectedResponse = new gagvr::CustomerLabel
             {
                 ResourceNameAsCustomerLabelName = gagvr::CustomerLabelName.FromCustomerCustomerLabel("[CUSTOMER]", "[CUSTOMER_LABEL]"),
-                Customer = "customer931fec91",
-                Label = "label20ba04d3",
+                CustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
+                LabelAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
             };
             mockGrpcClient.Setup(x => x.GetCustomerLabel(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CustomerLabelServiceClient client = new CustomerLabelServiceClientImpl(mockGrpcClient.Object, null);
@@ -61,8 +61,8 @@ namespace Google.Ads.GoogleAds.Tests.V5.Services
             gagvr::CustomerLabel expectedResponse = new gagvr::CustomerLabel
             {
                 ResourceNameAsCustomerLabelName = gagvr::CustomerLabelName.FromCustomerCustomerLabel("[CUSTOMER]", "[CUSTOMER_LABEL]"),
-                Customer = "customer931fec91",
-                Label = "label20ba04d3",
+                CustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
+                LabelAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
             };
             mockGrpcClient.Setup(x => x.GetCustomerLabelAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CustomerLabel>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CustomerLabelServiceClient client = new CustomerLabelServiceClientImpl(mockGrpcClient.Object, null);
@@ -84,8 +84,8 @@ namespace Google.Ads.GoogleAds.Tests.V5.Services
             gagvr::CustomerLabel expectedResponse = new gagvr::CustomerLabel
             {
                 ResourceNameAsCustomerLabelName = gagvr::CustomerLabelName.FromCustomerCustomerLabel("[CUSTOMER]", "[CUSTOMER_LABEL]"),
-                Customer = "customer931fec91",
-                Label = "label20ba04d3",
+                CustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
+                LabelAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
             };
             mockGrpcClient.Setup(x => x.GetCustomerLabel(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CustomerLabelServiceClient client = new CustomerLabelServiceClientImpl(mockGrpcClient.Object, null);
@@ -105,8 +105,8 @@ namespace Google.Ads.GoogleAds.Tests.V5.Services
             gagvr::CustomerLabel expectedResponse = new gagvr::CustomerLabel
             {
                 ResourceNameAsCustomerLabelName = gagvr::CustomerLabelName.FromCustomerCustomerLabel("[CUSTOMER]", "[CUSTOMER_LABEL]"),
-                Customer = "customer931fec91",
-                Label = "label20ba04d3",
+                CustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
+                LabelAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
             };
             mockGrpcClient.Setup(x => x.GetCustomerLabelAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CustomerLabel>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CustomerLabelServiceClient client = new CustomerLabelServiceClientImpl(mockGrpcClient.Object, null);
@@ -128,8 +128,8 @@ namespace Google.Ads.GoogleAds.Tests.V5.Services
             gagvr::CustomerLabel expectedResponse = new gagvr::CustomerLabel
             {
                 ResourceNameAsCustomerLabelName = gagvr::CustomerLabelName.FromCustomerCustomerLabel("[CUSTOMER]", "[CUSTOMER_LABEL]"),
-                Customer = "customer931fec91",
-                Label = "label20ba04d3",
+                CustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
+                LabelAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
             };
             mockGrpcClient.Setup(x => x.GetCustomerLabel(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             CustomerLabelServiceClient client = new CustomerLabelServiceClientImpl(mockGrpcClient.Object, null);
@@ -149,8 +149,8 @@ namespace Google.Ads.GoogleAds.Tests.V5.Services
             gagvr::CustomerLabel expectedResponse = new gagvr::CustomerLabel
             {
                 ResourceNameAsCustomerLabelName = gagvr::CustomerLabelName.FromCustomerCustomerLabel("[CUSTOMER]", "[CUSTOMER_LABEL]"),
-                Customer = "customer931fec91",
-                Label = "label20ba04d3",
+                CustomerAsCustomerName = gagvr::CustomerName.FromCustomer("[CUSTOMER]"),
+                LabelAsLabelName = gagvr::LabelName.FromCustomerLabel("[CUSTOMER]", "[LABEL]"),
             };
             mockGrpcClient.Setup(x => x.GetCustomerLabelAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::CustomerLabel>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             CustomerLabelServiceClient client = new CustomerLabelServiceClientImpl(mockGrpcClient.Object, null);

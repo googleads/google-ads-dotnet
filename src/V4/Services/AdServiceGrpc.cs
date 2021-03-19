@@ -30,10 +30,40 @@ namespace Google.Ads.GoogleAds.V4.Services {
   {
     static readonly string __ServiceName = "google.ads.googleads.v4.services.AdService";
 
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.GetAdRequest> __Marshaller_google_ads_googleads_v4_services_GetAdRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.GetAdRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Resources.Ad> __Marshaller_google_ads_googleads_v4_resources_Ad = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Resources.Ad.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.MutateAdsRequest> __Marshaller_google_ads_googleads_v4_services_MutateAdsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.MutateAdsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.MutateAdsResponse> __Marshaller_google_ads_googleads_v4_services_MutateAdsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V4.Services.MutateAdsResponse.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.GetAdRequest> __Marshaller_google_ads_googleads_v4_services_GetAdRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Services.GetAdRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Resources.Ad> __Marshaller_google_ads_googleads_v4_resources_Ad = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Resources.Ad.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.MutateAdsRequest> __Marshaller_google_ads_googleads_v4_services_MutateAdsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Services.MutateAdsRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V4.Services.MutateAdsResponse> __Marshaller_google_ads_googleads_v4_services_MutateAdsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V4.Services.MutateAdsResponse.Parser));
 
     static readonly grpc::Method<global::Google.Ads.GoogleAds.V4.Services.GetAdRequest, global::Google.Ads.GoogleAds.V4.Resources.Ad> __Method_GetAd = new grpc::Method<global::Google.Ads.GoogleAds.V4.Services.GetAdRequest, global::Google.Ads.GoogleAds.V4.Resources.Ad>(
         grpc::MethodType.Unary,

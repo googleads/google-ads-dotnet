@@ -38,7 +38,7 @@ namespace Google.Ads.GoogleAds.V6.Resources {
             "ZW5fbW9kZWxfc3RhdHVzLnByb3RvGjVnb29nbGUvYWRzL2dvb2dsZWFkcy92",
             "Ni9lbnVtcy9tb2JpbGVfYXBwX3ZlbmRvci5wcm90bxofZ29vZ2xlL2FwaS9m",
             "aWVsZF9iZWhhdmlvci5wcm90bxoZZ29vZ2xlL2FwaS9yZXNvdXJjZS5wcm90",
-            "bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byKaEgoQQ29udmVyc2lv",
+            "bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLcEgoQQ29udmVyc2lv",
             "bkFjdGlvbhJICg1yZXNvdXJjZV9uYW1lGAEgASgJQjHgQQX6QSsKKWdvb2ds",
             "ZWFkcy5nb29nbGVhcGlzLmNvbS9Db252ZXJzaW9uQWN0aW9uEhQKAmlkGBUg",
             "ASgDQgPgQQNIAIgBARIRCgRuYW1lGBYgASgJSAGIAQESYAoGc3RhdHVzGAQg",
@@ -48,62 +48,63 @@ namespace Google.Ads.GoogleAds.V6.Resources {
             "dmVyc2lvbkFjdGlvblR5cGVFbnVtLkNvbnZlcnNpb25BY3Rpb25UeXBlQgPg",
             "QQUSZgoIY2F0ZWdvcnkYBiABKA4yVC5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
             "Ni5lbnVtcy5Db252ZXJzaW9uQWN0aW9uQ2F0ZWdvcnlFbnVtLkNvbnZlcnNp",
-            "b25BY3Rpb25DYXRlZ29yeRIgCg5vd25lcl9jdXN0b21lchgXIAEoCUID4EED",
-            "SAKIAQESKgodaW5jbHVkZV9pbl9jb252ZXJzaW9uc19tZXRyaWMYGCABKAhI",
-            "A4gBARIvCiJjbGlja190aHJvdWdoX2xvb2tiYWNrX3dpbmRvd19kYXlzGBkg",
-            "ASgDSASIAQESLgohdmlld190aHJvdWdoX2xvb2tiYWNrX3dpbmRvd19kYXlz",
-            "GBogASgDSAWIAQESWQoOdmFsdWVfc2V0dGluZ3MYCyABKAsyQS5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52Ni5yZXNvdXJjZXMuQ29udmVyc2lvbkFjdGlvbi5W",
-            "YWx1ZVNldHRpbmdzEnMKDWNvdW50aW5nX3R5cGUYDCABKA4yXC5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52Ni5lbnVtcy5Db252ZXJzaW9uQWN0aW9uQ291bnRp",
-            "bmdUeXBlRW51bS5Db252ZXJzaW9uQWN0aW9uQ291bnRpbmdUeXBlEnAKGmF0",
-            "dHJpYnV0aW9uX21vZGVsX3NldHRpbmdzGA0gASgLMkwuZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjYucmVzb3VyY2VzLkNvbnZlcnNpb25BY3Rpb24uQXR0cmli",
-            "dXRpb25Nb2RlbFNldHRpbmdzEkUKDHRhZ19zbmlwcGV0cxgOIAMoCzIqLmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnY2LmNvbW1vbi5UYWdTbmlwcGV0QgPgQQMS",
-            "KAobcGhvbmVfY2FsbF9kdXJhdGlvbl9zZWNvbmRzGBsgASgDSAaIAQESEwoG",
-            "YXBwX2lkGBwgASgJSAeIAQESYgoRbW9iaWxlX2FwcF92ZW5kb3IYESABKA4y",
-            "Qi5nb29nbGUuYWRzLmdvb2dsZWFkcy52Ni5lbnVtcy5Nb2JpbGVBcHBWZW5k",
-            "b3JFbnVtLk1vYmlsZUFwcFZlbmRvckID4EEDEmQKEWZpcmViYXNlX3NldHRp",
-            "bmdzGBIgASgLMkQuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjYucmVzb3VyY2Vz",
-            "LkNvbnZlcnNpb25BY3Rpb24uRmlyZWJhc2VTZXR0aW5nc0ID4EEDEoMBCiJ0",
-            "aGlyZF9wYXJ0eV9hcHBfYW5hbHl0aWNzX3NldHRpbmdzGBMgASgLMlIuZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjYucmVzb3VyY2VzLkNvbnZlcnNpb25BY3Rp",
-            "b24uVGhpcmRQYXJ0eUFwcEFuYWx5dGljc1NldHRpbmdzQgPgQQMa8gEKGEF0",
-            "dHJpYnV0aW9uTW9kZWxTZXR0aW5ncxJfChFhdHRyaWJ1dGlvbl9tb2RlbBgB",
-            "IAEoDjJELmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY2LmVudW1zLkF0dHJpYnV0",
-            "aW9uTW9kZWxFbnVtLkF0dHJpYnV0aW9uTW9kZWwSdQoYZGF0YV9kcml2ZW5f",
-            "bW9kZWxfc3RhdHVzGAIgASgOMk4uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjYu",
-            "ZW51bXMuRGF0YURyaXZlbk1vZGVsU3RhdHVzRW51bS5EYXRhRHJpdmVuTW9k",
-            "ZWxTdGF0dXNCA+BBAxq/AQoNVmFsdWVTZXR0aW5ncxIaCg1kZWZhdWx0X3Zh",
-            "bHVlGAQgASgBSACIAQESIgoVZGVmYXVsdF9jdXJyZW5jeV9jb2RlGAUgASgJ",
-            "SAGIAQESJQoYYWx3YXlzX3VzZV9kZWZhdWx0X3ZhbHVlGAYgASgISAKIAQFC",
-            "EAoOX2RlZmF1bHRfdmFsdWVCGAoWX2RlZmF1bHRfY3VycmVuY3lfY29kZUIb",
-            "ChlfYWx3YXlzX3VzZV9kZWZhdWx0X3ZhbHVlGk0KHlRoaXJkUGFydHlBcHBB",
-            "bmFseXRpY3NTZXR0aW5ncxIcCgpldmVudF9uYW1lGAIgASgJQgPgQQNIAIgB",
-            "AUINCgtfZXZlbnRfbmFtZRpsChBGaXJlYmFzZVNldHRpbmdzEhwKCmV2ZW50",
-            "X25hbWUYAyABKAlCA+BBA0gAiAEBEhwKCnByb2plY3RfaWQYBCABKAlCA+BB",
-            "A0gBiAEBQg0KC19ldmVudF9uYW1lQg0KC19wcm9qZWN0X2lkOnDqQW0KKWdv",
-            "b2dsZWFkcy5nb29nbGVhcGlzLmNvbS9Db252ZXJzaW9uQWN0aW9uEkBjdXN0",
-            "b21lcnMve2N1c3RvbWVyX2lkfS9jb252ZXJzaW9uQWN0aW9ucy97Y29udmVy",
-            "c2lvbl9hY3Rpb25faWR9QgUKA19pZEIHCgVfbmFtZUIRCg9fb3duZXJfY3Vz",
-            "dG9tZXJCIAoeX2luY2x1ZGVfaW5fY29udmVyc2lvbnNfbWV0cmljQiUKI19j",
-            "bGlja190aHJvdWdoX2xvb2tiYWNrX3dpbmRvd19kYXlzQiQKIl92aWV3X3Ro",
-            "cm91Z2hfbG9va2JhY2tfd2luZG93X2RheXNCHgocX3Bob25lX2NhbGxfZHVy",
-            "YXRpb25fc2Vjb25kc0IJCgdfYXBwX2lkQoICCiVjb20uZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjYucmVzb3VyY2VzQhVDb252ZXJzaW9uQWN0aW9uUHJvdG9Q",
-            "AVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
-            "Z29vZ2xlYWRzL3Y2L3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGqAiFHb29n",
-            "bGUuQWRzLkdvb2dsZUFkcy5WNi5SZXNvdXJjZXPKAiFHb29nbGVcQWRzXEdv",
-            "b2dsZUFkc1xWNlxSZXNvdXJjZXPqAiVHb29nbGU6OkFkczo6R29vZ2xlQWRz",
-            "OjpWNjo6UmVzb3VyY2VzYgZwcm90bzM="));
+            "b25BY3Rpb25DYXRlZ29yeRJGCg5vd25lcl9jdXN0b21lchgXIAEoCUIp4EED",
+            "+kEjCiFnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vQ3VzdG9tZXJIAogBARIq",
+            "Ch1pbmNsdWRlX2luX2NvbnZlcnNpb25zX21ldHJpYxgYIAEoCEgDiAEBEi8K",
+            "ImNsaWNrX3Rocm91Z2hfbG9va2JhY2tfd2luZG93X2RheXMYGSABKANIBIgB",
+            "ARIuCiF2aWV3X3Rocm91Z2hfbG9va2JhY2tfd2luZG93X2RheXMYGiABKANI",
+            "BYgBARJZCg52YWx1ZV9zZXR0aW5ncxgLIAEoCzJBLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnY2LnJlc291cmNlcy5Db252ZXJzaW9uQWN0aW9uLlZhbHVlU2V0",
+            "dGluZ3MScwoNY291bnRpbmdfdHlwZRgMIAEoDjJcLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnY2LmVudW1zLkNvbnZlcnNpb25BY3Rpb25Db3VudGluZ1R5cGVF",
+            "bnVtLkNvbnZlcnNpb25BY3Rpb25Db3VudGluZ1R5cGUScAoaYXR0cmlidXRp",
+            "b25fbW9kZWxfc2V0dGluZ3MYDSABKAsyTC5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52Ni5yZXNvdXJjZXMuQ29udmVyc2lvbkFjdGlvbi5BdHRyaWJ1dGlvbk1v",
+            "ZGVsU2V0dGluZ3MSRQoMdGFnX3NuaXBwZXRzGA4gAygLMiouZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjYuY29tbW9uLlRhZ1NuaXBwZXRCA+BBAxIoChtwaG9u",
+            "ZV9jYWxsX2R1cmF0aW9uX3NlY29uZHMYGyABKANIBogBARITCgZhcHBfaWQY",
+            "HCABKAlIB4gBARJiChFtb2JpbGVfYXBwX3ZlbmRvchgRIAEoDjJCLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnY2LmVudW1zLk1vYmlsZUFwcFZlbmRvckVudW0u",
+            "TW9iaWxlQXBwVmVuZG9yQgPgQQMSZAoRZmlyZWJhc2Vfc2V0dGluZ3MYEiAB",
+            "KAsyRC5nb29nbGUuYWRzLmdvb2dsZWFkcy52Ni5yZXNvdXJjZXMuQ29udmVy",
+            "c2lvbkFjdGlvbi5GaXJlYmFzZVNldHRpbmdzQgPgQQMSgwEKInRoaXJkX3Bh",
+            "cnR5X2FwcF9hbmFseXRpY3Nfc2V0dGluZ3MYEyABKAsyUi5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52Ni5yZXNvdXJjZXMuQ29udmVyc2lvbkFjdGlvbi5UaGly",
+            "ZFBhcnR5QXBwQW5hbHl0aWNzU2V0dGluZ3NCA+BBAxryAQoYQXR0cmlidXRp",
+            "b25Nb2RlbFNldHRpbmdzEl8KEWF0dHJpYnV0aW9uX21vZGVsGAEgASgOMkQu",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjYuZW51bXMuQXR0cmlidXRpb25Nb2Rl",
+            "bEVudW0uQXR0cmlidXRpb25Nb2RlbBJ1ChhkYXRhX2RyaXZlbl9tb2RlbF9z",
+            "dGF0dXMYAiABKA4yTi5nb29nbGUuYWRzLmdvb2dsZWFkcy52Ni5lbnVtcy5E",
+            "YXRhRHJpdmVuTW9kZWxTdGF0dXNFbnVtLkRhdGFEcml2ZW5Nb2RlbFN0YXR1",
+            "c0ID4EEDGr8BCg1WYWx1ZVNldHRpbmdzEhoKDWRlZmF1bHRfdmFsdWUYBCAB",
+            "KAFIAIgBARIiChVkZWZhdWx0X2N1cnJlbmN5X2NvZGUYBSABKAlIAYgBARIl",
+            "ChhhbHdheXNfdXNlX2RlZmF1bHRfdmFsdWUYBiABKAhIAogBAUIQCg5fZGVm",
+            "YXVsdF92YWx1ZUIYChZfZGVmYXVsdF9jdXJyZW5jeV9jb2RlQhsKGV9hbHdh",
+            "eXNfdXNlX2RlZmF1bHRfdmFsdWUabAoQRmlyZWJhc2VTZXR0aW5ncxIcCgpl",
+            "dmVudF9uYW1lGAMgASgJQgPgQQNIAIgBARIcCgpwcm9qZWN0X2lkGAQgASgJ",
+            "QgPgQQNIAYgBAUINCgtfZXZlbnRfbmFtZUINCgtfcHJvamVjdF9pZBppCh5U",
+            "aGlyZFBhcnR5QXBwQW5hbHl0aWNzU2V0dGluZ3MSHAoKZXZlbnRfbmFtZRgC",
+            "IAEoCUID4EEDSACIAQESGgoNcHJvdmlkZXJfbmFtZRgDIAEoCUID4EEDQg0K",
+            "C19ldmVudF9uYW1lOnDqQW0KKWdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9D",
+            "b252ZXJzaW9uQWN0aW9uEkBjdXN0b21lcnMve2N1c3RvbWVyX2lkfS9jb252",
+            "ZXJzaW9uQWN0aW9ucy97Y29udmVyc2lvbl9hY3Rpb25faWR9QgUKA19pZEIH",
+            "CgVfbmFtZUIRCg9fb3duZXJfY3VzdG9tZXJCIAoeX2luY2x1ZGVfaW5fY29u",
+            "dmVyc2lvbnNfbWV0cmljQiUKI19jbGlja190aHJvdWdoX2xvb2tiYWNrX3dp",
+            "bmRvd19kYXlzQiQKIl92aWV3X3Rocm91Z2hfbG9va2JhY2tfd2luZG93X2Rh",
+            "eXNCHgocX3Bob25lX2NhbGxfZHVyYXRpb25fc2Vjb25kc0IJCgdfYXBwX2lk",
+            "QoICCiVjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjYucmVzb3VyY2VzQhVD",
+            "b252ZXJzaW9uQWN0aW9uUHJvdG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2Vu",
+            "cHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Y2L3Jlc291cmNlczty",
+            "ZXNvdXJjZXOiAgNHQUGqAiFHb29nbGUuQWRzLkdvb2dsZUFkcy5WNi5SZXNv",
+            "dXJjZXPKAiFHb29nbGVcQWRzXEdvb2dsZUFkc1xWNlxSZXNvdXJjZXPqAiVH",
+            "b29nbGU6OkFkczo6R29vZ2xlQWRzOjpWNjo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V6.Common.TagSnippetReflection.Descriptor, global::Google.Ads.GoogleAds.V6.Enums.AttributionModelReflection.Descriptor, global::Google.Ads.GoogleAds.V6.Enums.ConversionActionCategoryReflection.Descriptor, global::Google.Ads.GoogleAds.V6.Enums.ConversionActionCountingTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V6.Enums.ConversionActionStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V6.Enums.ConversionActionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V6.Enums.DataDrivenModelStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V6.Enums.MobileAppVendorReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V6.Resources.ConversionAction), global::Google.Ads.GoogleAds.V6.Resources.ConversionAction.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "Type", "Category", "OwnerCustomer", "IncludeInConversionsMetric", "ClickThroughLookbackWindowDays", "ViewThroughLookbackWindowDays", "ValueSettings", "CountingType", "AttributionModelSettings", "TagSnippets", "PhoneCallDurationSeconds", "AppId", "MobileAppVendor", "FirebaseSettings", "ThirdPartyAppAnalyticsSettings" }, new[]{ "Id", "Name", "OwnerCustomer", "IncludeInConversionsMetric", "ClickThroughLookbackWindowDays", "ViewThroughLookbackWindowDays", "PhoneCallDurationSeconds", "AppId" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V6.Resources.ConversionAction.Types.AttributionModelSettings), global::Google.Ads.GoogleAds.V6.Resources.ConversionAction.Types.AttributionModelSettings.Parser, new[]{ "AttributionModel", "DataDrivenModelStatus" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V6.Resources.ConversionAction.Types.ValueSettings), global::Google.Ads.GoogleAds.V6.Resources.ConversionAction.Types.ValueSettings.Parser, new[]{ "DefaultValue", "DefaultCurrencyCode", "AlwaysUseDefaultValue" }, new[]{ "DefaultValue", "DefaultCurrencyCode", "AlwaysUseDefaultValue" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V6.Resources.ConversionAction.Types.ThirdPartyAppAnalyticsSettings), global::Google.Ads.GoogleAds.V6.Resources.ConversionAction.Types.ThirdPartyAppAnalyticsSettings.Parser, new[]{ "EventName" }, new[]{ "EventName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V6.Resources.ConversionAction.Types.FirebaseSettings), global::Google.Ads.GoogleAds.V6.Resources.ConversionAction.Types.FirebaseSettings.Parser, new[]{ "EventName", "ProjectId" }, new[]{ "EventName", "ProjectId" }, null, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V6.Resources.ConversionAction.Types.FirebaseSettings), global::Google.Ads.GoogleAds.V6.Resources.ConversionAction.Types.FirebaseSettings.Parser, new[]{ "EventName", "ProjectId" }, new[]{ "EventName", "ProjectId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V6.Resources.ConversionAction.Types.ThirdPartyAppAnalyticsSettings), global::Google.Ads.GoogleAds.V6.Resources.ConversionAction.Types.ThirdPartyAppAnalyticsSettings.Parser, new[]{ "EventName", "ProviderName" }, new[]{ "EventName" }, null, null, null)})
           }));
     }
     #endregion
@@ -1634,194 +1635,6 @@ namespace Google.Ads.GoogleAds.V6.Resources {
       }
 
       /// <summary>
-      /// Settings related to a third party app analytics conversion action.
-      /// </summary>
-      public sealed partial class ThirdPartyAppAnalyticsSettings : pb::IMessage<ThirdPartyAppAnalyticsSettings>
-      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          , pb::IBufferMessage
-      #endif
-      {
-        private static readonly pb::MessageParser<ThirdPartyAppAnalyticsSettings> _parser = new pb::MessageParser<ThirdPartyAppAnalyticsSettings>(() => new ThirdPartyAppAnalyticsSettings());
-        private pb::UnknownFieldSet _unknownFields;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<ThirdPartyAppAnalyticsSettings> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V6.Resources.ConversionAction.Descriptor.NestedTypes[2]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public ThirdPartyAppAnalyticsSettings() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public ThirdPartyAppAnalyticsSettings(ThirdPartyAppAnalyticsSettings other) : this() {
-          eventName_ = other.eventName_;
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public ThirdPartyAppAnalyticsSettings Clone() {
-          return new ThirdPartyAppAnalyticsSettings(this);
-        }
-
-        /// <summary>Field number for the "event_name" field.</summary>
-        public const int EventNameFieldNumber = 2;
-        private string eventName_;
-        /// <summary>
-        /// Output only. The event name of a third-party app analytics conversion.
-        /// </summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public string EventName {
-          get { return eventName_ ?? ""; }
-          set {
-            eventName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-          }
-        }
-        /// <summary>Gets whether the "event_name" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasEventName {
-          get { return eventName_ != null; }
-        }
-        /// <summary>Clears the value of the "event_name" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearEventName() {
-          eventName_ = null;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as ThirdPartyAppAnalyticsSettings);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(ThirdPartyAppAnalyticsSettings other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if (EventName != other.EventName) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          if (HasEventName) hash ^= EventName.GetHashCode();
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          output.WriteRawMessage(this);
-        #else
-          if (HasEventName) {
-            output.WriteRawTag(18);
-            output.WriteString(EventName);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-          if (HasEventName) {
-            output.WriteRawTag(18);
-            output.WriteString(EventName);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(ref output);
-          }
-        }
-        #endif
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          if (HasEventName) {
-            size += 1 + pb::CodedOutputStream.ComputeStringSize(EventName);
-          }
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(ThirdPartyAppAnalyticsSettings other) {
-          if (other == null) {
-            return;
-          }
-          if (other.HasEventName) {
-            EventName = other.EventName;
-          }
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          input.ReadRawMessage(this);
-        #else
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 18: {
-                EventName = input.ReadString();
-                break;
-              }
-            }
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-                break;
-              case 18: {
-                EventName = input.ReadString();
-                break;
-              }
-            }
-          }
-        }
-        #endif
-
-      }
-
-      /// <summary>
       /// Settings related to a Firebase conversion action.
       /// </summary>
       public sealed partial class FirebaseSettings : pb::IMessage<FirebaseSettings>
@@ -1836,7 +1649,7 @@ namespace Google.Ads.GoogleAds.V6.Resources {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V6.Resources.ConversionAction.Descriptor.NestedTypes[3]; }
+          get { return global::Google.Ads.GoogleAds.V6.Resources.ConversionAction.Descriptor.NestedTypes[2]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2049,6 +1862,233 @@ namespace Google.Ads.GoogleAds.V6.Resources {
               }
               case 34: {
                 ProjectId = input.ReadString();
+                break;
+              }
+            }
+          }
+        }
+        #endif
+
+      }
+
+      /// <summary>
+      /// Settings related to a third party app analytics conversion action.
+      /// </summary>
+      public sealed partial class ThirdPartyAppAnalyticsSettings : pb::IMessage<ThirdPartyAppAnalyticsSettings>
+      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          , pb::IBufferMessage
+      #endif
+      {
+        private static readonly pb::MessageParser<ThirdPartyAppAnalyticsSettings> _parser = new pb::MessageParser<ThirdPartyAppAnalyticsSettings>(() => new ThirdPartyAppAnalyticsSettings());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<ThirdPartyAppAnalyticsSettings> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V6.Resources.ConversionAction.Descriptor.NestedTypes[3]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public ThirdPartyAppAnalyticsSettings() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public ThirdPartyAppAnalyticsSettings(ThirdPartyAppAnalyticsSettings other) : this() {
+          eventName_ = other.eventName_;
+          providerName_ = other.providerName_;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public ThirdPartyAppAnalyticsSettings Clone() {
+          return new ThirdPartyAppAnalyticsSettings(this);
+        }
+
+        /// <summary>Field number for the "event_name" field.</summary>
+        public const int EventNameFieldNumber = 2;
+        private string eventName_;
+        /// <summary>
+        /// Output only. The event name of a third-party app analytics conversion.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string EventName {
+          get { return eventName_ ?? ""; }
+          set {
+            eventName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+        /// <summary>Gets whether the "event_name" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool HasEventName {
+          get { return eventName_ != null; }
+        }
+        /// <summary>Clears the value of the "event_name" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void ClearEventName() {
+          eventName_ = null;
+        }
+
+        /// <summary>Field number for the "provider_name" field.</summary>
+        public const int ProviderNameFieldNumber = 3;
+        private string providerName_ = "";
+        /// <summary>
+        /// Output only. Name of the third-party app analytics provider.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string ProviderName {
+          get { return providerName_; }
+          set {
+            providerName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as ThirdPartyAppAnalyticsSettings);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(ThirdPartyAppAnalyticsSettings other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (EventName != other.EventName) return false;
+          if (ProviderName != other.ProviderName) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (HasEventName) hash ^= EventName.GetHashCode();
+          if (ProviderName.Length != 0) hash ^= ProviderName.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          output.WriteRawMessage(this);
+        #else
+          if (HasEventName) {
+            output.WriteRawTag(18);
+            output.WriteString(EventName);
+          }
+          if (ProviderName.Length != 0) {
+            output.WriteRawTag(26);
+            output.WriteString(ProviderName);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+          if (HasEventName) {
+            output.WriteRawTag(18);
+            output.WriteString(EventName);
+          }
+          if (ProviderName.Length != 0) {
+            output.WriteRawTag(26);
+            output.WriteString(ProviderName);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(ref output);
+          }
+        }
+        #endif
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (HasEventName) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(EventName);
+          }
+          if (ProviderName.Length != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(ProviderName);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(ThirdPartyAppAnalyticsSettings other) {
+          if (other == null) {
+            return;
+          }
+          if (other.HasEventName) {
+            EventName = other.EventName;
+          }
+          if (other.ProviderName.Length != 0) {
+            ProviderName = other.ProviderName;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          input.ReadRawMessage(this);
+        #else
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 18: {
+                EventName = input.ReadString();
+                break;
+              }
+              case 26: {
+                ProviderName = input.ReadString();
+                break;
+              }
+            }
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                break;
+              case 18: {
+                EventName = input.ReadString();
+                break;
+              }
+              case 26: {
+                ProviderName = input.ReadString();
                 break;
               }
             }

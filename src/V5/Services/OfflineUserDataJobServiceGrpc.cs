@@ -30,14 +30,44 @@ namespace Google.Ads.GoogleAds.V5.Services {
   {
     static readonly string __ServiceName = "google.ads.googleads.v5.services.OfflineUserDataJobService";
 
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.CreateOfflineUserDataJobRequest> __Marshaller_google_ads_googleads_v5_services_CreateOfflineUserDataJobRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V5.Services.CreateOfflineUserDataJobRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.CreateOfflineUserDataJobResponse> __Marshaller_google_ads_googleads_v5_services_CreateOfflineUserDataJobResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V5.Services.CreateOfflineUserDataJobResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.GetOfflineUserDataJobRequest> __Marshaller_google_ads_googleads_v5_services_GetOfflineUserDataJobRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V5.Services.GetOfflineUserDataJobRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Resources.OfflineUserDataJob> __Marshaller_google_ads_googleads_v5_resources_OfflineUserDataJob = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V5.Resources.OfflineUserDataJob.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.AddOfflineUserDataJobOperationsRequest> __Marshaller_google_ads_googleads_v5_services_AddOfflineUserDataJobOperationsRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V5.Services.AddOfflineUserDataJobOperationsRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.AddOfflineUserDataJobOperationsResponse> __Marshaller_google_ads_googleads_v5_services_AddOfflineUserDataJobOperationsResponse = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V5.Services.AddOfflineUserDataJobOperationsResponse.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.RunOfflineUserDataJobRequest> __Marshaller_google_ads_googleads_v5_services_RunOfflineUserDataJobRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.Ads.GoogleAds.V5.Services.RunOfflineUserDataJobRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Google.LongRunning.Operation> __Marshaller_google_longrunning_Operation = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Google.LongRunning.Operation.Parser.ParseFrom);
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.CreateOfflineUserDataJobRequest> __Marshaller_google_ads_googleads_v5_services_CreateOfflineUserDataJobRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V5.Services.CreateOfflineUserDataJobRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.CreateOfflineUserDataJobResponse> __Marshaller_google_ads_googleads_v5_services_CreateOfflineUserDataJobResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V5.Services.CreateOfflineUserDataJobResponse.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.GetOfflineUserDataJobRequest> __Marshaller_google_ads_googleads_v5_services_GetOfflineUserDataJobRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V5.Services.GetOfflineUserDataJobRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Resources.OfflineUserDataJob> __Marshaller_google_ads_googleads_v5_resources_OfflineUserDataJob = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V5.Resources.OfflineUserDataJob.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.AddOfflineUserDataJobOperationsRequest> __Marshaller_google_ads_googleads_v5_services_AddOfflineUserDataJobOperationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V5.Services.AddOfflineUserDataJobOperationsRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.AddOfflineUserDataJobOperationsResponse> __Marshaller_google_ads_googleads_v5_services_AddOfflineUserDataJobOperationsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V5.Services.AddOfflineUserDataJobOperationsResponse.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V5.Services.RunOfflineUserDataJobRequest> __Marshaller_google_ads_googleads_v5_services_RunOfflineUserDataJobRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V5.Services.RunOfflineUserDataJobRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.LongRunning.Operation> __Marshaller_google_longrunning_Operation = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.LongRunning.Operation.Parser));
 
     static readonly grpc::Method<global::Google.Ads.GoogleAds.V5.Services.CreateOfflineUserDataJobRequest, global::Google.Ads.GoogleAds.V5.Services.CreateOfflineUserDataJobResponse> __Method_CreateOfflineUserDataJob = new grpc::Method<global::Google.Ads.GoogleAds.V5.Services.CreateOfflineUserDataJobRequest, global::Google.Ads.GoogleAds.V5.Services.CreateOfflineUserDataJobResponse>(
         grpc::MethodType.Unary,

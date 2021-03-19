@@ -294,7 +294,7 @@ namespace Google.Ads.GoogleAds.V5.Errors {
         /// </summary>
         [pbr::OriginalName("DUPLICATE_ORDER_ID")] DuplicateOrderId = 16,
         /// <summary>
-        /// The call occurred too recently. Please try uploading again after 6 hours
+        /// The call occurred too recently. Please try uploading again after 12 hours
         /// have passed since the call occurred.
         /// </summary>
         [pbr::OriginalName("TOO_RECENT_CALL")] TooRecentCall = 17,

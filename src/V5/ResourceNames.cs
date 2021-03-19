@@ -289,6 +289,11 @@ namespace Google.Ads.GoogleAds.V5.Errors
             return $"customers/{customerId}/customerUserAccesses/{userId}";
         }
 
+        public static string CustomerUserAccessInvitation(long customerId, long invitationId)
+        {
+            return $"customers/{customerId}/customerUserAccessInvitations/{invitationId}";
+        }
+
         public static string DetailPlacementView(long customerId, long adGroupId, string placement)
         {
             return $"customers/{customerId}/detailPlacementViews/{adGroupId}~{Base64Encode(placement)}";
