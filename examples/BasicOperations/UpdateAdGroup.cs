@@ -70,7 +70,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="adGroupId">Id of the ad group to be updated.</param>
         /// <param name="cpcBidMicroAmount">The CPC bid amount for the ad group in micros.</param>
-        // [START UpdateAdGroup]
+        // [START update_ad_group]
         public void Run(GoogleAdsClient client, long customerId, long adGroupId,
             long? cpcBidMicroAmount)
         {
@@ -117,6 +117,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 throw;
             }
         }
-        // [END UpdateAdGroup]
+        // [END update_ad_group]
     }
 }

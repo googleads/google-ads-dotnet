@@ -83,7 +83,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="gclid">The Google Click ID for which adjustments are uploaded.</param>
         /// <param name="adjustmentDateTime">The adjustment date and time.</param>
         /// <param name="restatementValue">The restatement value.</param>
-        // [START UploadConversionAdjustment]
+        // [START upload_conversion_adjustment]
         public void Run(GoogleAdsClient client, long customerId, long conversionActionId,
             string gclid, string conversionDateTime, string adjustmentDateTime,
             ConversionAdjustmentType adjustmentType,
@@ -144,6 +144,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 throw;
             }
         }
-        // [END UploadConversionAdjustment]
+        // [END upload_conversion_adjustment]
     }
 }

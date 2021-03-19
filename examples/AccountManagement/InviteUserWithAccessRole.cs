@@ -69,7 +69,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             CustomerUserAccessInvitationServiceClient service = client.GetService(
                 Services.V6.CustomerUserAccessInvitationService);
 
-            // [START InviteUserWithAccessRole]
+            // [START invite_user_with_access_role]
             MutateCustomerUserAccessInvitationRequest invitationRequest =
                 new MutateCustomerUserAccessInvitationRequest()
                 {
@@ -100,7 +100,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 Console.WriteLine($"Request ID: {e.RequestId}");
                 throw;
             }
-            // [END InviteUserWithAccessRole]
+            // [END invite_user_with_access_role]
         }
     }
 }

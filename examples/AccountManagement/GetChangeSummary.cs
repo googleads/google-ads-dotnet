@@ -59,7 +59,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        // [START GetChangeSummary]
+        // [START get_change_summary]
         public void Run(GoogleAdsClient client, long customerId)
         {
             // Get the GoogleAdsService.
@@ -163,6 +163,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
             }
             return resourceName;
         }
-        // [END GetChangeSummary]
+        // [END get_change_summary]
     }
 }
