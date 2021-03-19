@@ -344,7 +344,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="feedResourceName">The DSA feed resource name</param>
         /// <param name="campaignId">ID of the campaign for which DSA settings are updated.</param>
-        // [START AddDynamicPageFeed_1]
+        // [START add_dynamic_page_feed_1]
         private void UpdateCampaignDsaSetting(GoogleAdsClient client, long customerId,
             string feedResourceName, long campaignId)
         {
@@ -379,7 +379,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                     $"'{mutateCampaignResult.ResourceName}'.");
             }
         }
-        // [END AddDynamicPageFeed_1]
+        // [END add_dynamic_page_feed_1]
 
         /// <summary>
         /// Returns the DSA settings for a campaign. Throws an error if the campaign does not
@@ -389,7 +389,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="campaignId">ID of the campaign for which DSA settings are fetched.</param>
         /// <returns>The DSA settings.</returns>
-        // [START AddDynamicPageFeed]
+        // [START add_dynamic_page_feed]
         private DynamicSearchAdsSetting GetDsaSetting(GoogleAdsClient client, long customerId,
             long campaignId)
         {
@@ -434,9 +434,9 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
             return dynamicSearchAdsSetting;
         }
-        // [END AddDynamicPageFeed]
+        // [END add_dynamic_page_feed]
 
-        // [START AddDynamicPageFeed_2]
+        // [START add_dynamic_page_feed_2]
         private void AddDsaTarget(GoogleAdsClient client, long customerId, long adGroupId, string dsaPageUrlLabel)
         {
             // Get the AdGroupCriterionService.
@@ -483,6 +483,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                     $"'{result.ResourceName}'.");
             }
         }
-        // [END AddDynamicPageFeed_2]
+        // [END add_dynamic_page_feed_2]
     }
 }

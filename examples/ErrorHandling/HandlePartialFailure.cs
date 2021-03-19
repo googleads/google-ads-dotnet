@@ -113,7 +113,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// Displays the result from the mutate operation.
         /// </summary>
         /// <param name="response">The mutate response from the Google Ads API server..</param>
-        // [START HandlePartialFailure_2]
+        // [START handle_partial_failure_2]
         private void PrintResults(MutateAdGroupsResponse response)
         {
             // Finds the failed operations by looping through the results.
@@ -139,19 +139,19 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 operationIndex++;
             }
         }
-        // [END HandlePartialFailure_2]
+        // [END handle_partial_failure_2]
 
         /// <summary>
         /// Inspects a response to check for presence of partial failure errors.
         /// </summary>
         /// <param name="response">The response.</param>
         /// <returns>True if there are partial failures, false otherwise.</returns>
-        // [START HandlePartialFailure_1]
+        // [START handle_partial_failure_1]
         private static bool CheckIfPartialFailureErrorExists(MutateAdGroupsResponse response)
         {
             return response.PartialFailureError == null;
         }
-        // [END HandlePartialFailure_1]
+        // [END handle_partial_failure_1]
 
         /// <summary>
         /// Attempts to create 3 ad groups with partial failure enabled. One of the ad groups
@@ -161,7 +161,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="customerId">The customer ID for which the call is made.</param>
         /// <param name="campaignId">ID of the campaign to which ad groups are added.</param>
         /// <returns>The mutate response from the Google Ads server.</returns>
-        // [START HandlePartialFailure]
+        // [START handle_partial_failure]
         private static MutateAdGroupsResponse CreateAdGroups(GoogleAdsClient client,
             long customerId, long campaignId)
         {
@@ -215,6 +215,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 });
             return response;
         }
-        // [END HandlePartialFailure]
+        // [END handle_partial_failure]
     }
 }

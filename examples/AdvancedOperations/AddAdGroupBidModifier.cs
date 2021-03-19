@@ -65,7 +65,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="adGroupId">ID of the ad group where the bid modifier will be added.
         /// </param>
         /// <param name="bidModifierValue">The value of the bid modifier to add.</param>
-        // [START AddAdGroupBidModifier]
+        // [START add_ad_group_bid_modifier]
         public void Run(GoogleAdsClient client, long customerId, long adGroupId,
             double bidModifierValue)
         {
@@ -113,6 +113,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 throw;
             }
         }
-        // [END AddAdGroupBidModifier]
+        // [END add_ad_group_bid_modifier]
     }
 }

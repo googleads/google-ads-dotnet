@@ -48,7 +48,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// Runs the code example.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
-        // [START GetGeoTargetConstantsByNames]
+        // [START get_geo_target_constants_by_names]
         public void Run(GoogleAdsClient client)
         {
             // Get the GeoTargetConstantServiceClient.
@@ -101,6 +101,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 throw;
             }
         }
-        // [END GetGeoTargetConstantsByNames]
+        // [END get_geo_target_constants_by_names]
     }
 }

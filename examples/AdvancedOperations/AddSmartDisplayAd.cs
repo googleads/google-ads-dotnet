@@ -108,7 +108,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <returns>The resource name of the newly created campaign budget.</returns>
-        // [START AddSmartDisplayAd]
+        // [START add_smart_display_ad]
         private static string CreateBudget(GoogleAdsClient client, long customerId)
         {
             // Get the BudgetService.
@@ -140,7 +140,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
             return budgetResourceName;
         }
-        // [END AddSmartDisplayAd]
+        // [END add_smart_display_ad]
 
         /// <summary>
         /// Creates the smart display campaign.
@@ -149,7 +149,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="budgetResourceName">The campaign budget resource name.</param>
         /// <returns>Resource name of the newly created campaign.</returns>
-        // [START AddSmartDisplayAd_1]
+        // [START add_smart_display_ad_1]
         private string CreateSmartDisplayCampaign(GoogleAdsClient client, long customerId,
             string budgetResourceName)
         {
@@ -199,7 +199,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
             return campaignResourceName;
         }
-        // [END AddSmartDisplayAd_1]
+        // [END add_smart_display_ad_1]
 
         /// <summary>
         /// Creates the ad group.
@@ -208,7 +208,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="campaignResourceName">The campaign resource name.</param>
         /// <returns>The resource name of the newly created ad group.</returns>
-        // [START AddSmartDisplayAd_2]
+        // [START add_smart_display_ad_2]
         private string CreateAdGroup(GoogleAdsClient client, long customerId,
             string campaignResourceName)
         {
@@ -240,7 +240,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
             return adGroupResourceName;
         }
-        // [END AddSmartDisplayAd_2]
+        // [END add_smart_display_ad_2]
 
         /// <summary>
         /// Uploads the image asset.
@@ -251,7 +251,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="width">The image width in pixels.</param>
         /// <param name="height">The image height in pixels.</param>
         /// <returns></returns>
-        // [START AddSmartDisplayAd_4]
+        // [START add_smart_display_ad_4]
         private static string UploadImageAsset(GoogleAdsClient client, long customerId,
             string imageUrl, long width, long height)
         {
@@ -305,7 +305,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
             return assetResourceName;
         }
-        // [END AddSmartDisplayAd_4]
+        // [END add_smart_display_ad_4]
 
         /// <summary>
         /// Creates the responsive display ad.
@@ -318,7 +318,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="squareMarketingImageAssetResourceName">The square marketing image asset
         /// resource name.</param>
         /// <returns>Resource name of the newly created ad.</returns>
-        // [START AddSmartDisplayAd_3]
+        // [START add_smart_display_ad_3]
         private static string CreateResponsiveDisplayAd(GoogleAdsClient client, long customerId,
             string adGroupResourceName, string marketingImageAssetResourceName,
             string squareMarketingImageAssetResourceName)
@@ -382,6 +382,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
             return adGroupAdResourceName;
         }
-        // [END AddSmartDisplayAd_3]
+        // [END add_smart_display_ad_3]
     }
 }

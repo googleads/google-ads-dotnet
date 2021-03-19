@@ -58,7 +58,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
-        // [START AddKeywordPlan]
+        // [START add_keyword_plan]
         public void Run(GoogleAdsClient client, long customerId)
         {
             try
@@ -318,5 +318,5 @@ namespace Google.Ads.GoogleAds.Examples.V6
             return;
         }
     }
-    // [END AddKeywordPlan]
+    // [END add_keyword_plan]
 }

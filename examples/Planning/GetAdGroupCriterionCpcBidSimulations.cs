@@ -60,7 +60,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="adGroupId">The ad group ID for which to get ad group criterion CPC bid
         ///     simulations.</param>
-        // [START GetAdGroupCriterionCpcBidSimulations]
+        // [START get_ad_group_criterion_cpc_bid_simulations]
         public void Run(GoogleAdsClient client, long customerId, long adGroupId)
         {
             // Get the GoogleAdsService.
@@ -117,7 +117,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                     }
                 );
             }
-            // [END GetAdGroupCriterionCpcBidSimulations]
+            // [END get_ad_group_criterion_cpc_bid_simulations]
             catch (GoogleAdsException e)
             {
                 Console.WriteLine("Failure:");

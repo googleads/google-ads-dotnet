@@ -65,7 +65,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="campaignIds">IDs of the campaigns where the campaign labels will be added.
         /// </param>
         /// <param name="labelId">The ID of the label to attach to campaigns.</param>
-        // [START AddCampaignLabels]
+        // [START add_campaign_labels]
         public void Run(GoogleAdsClient client, long customerId, long[] campaignIds, long labelId)
         {
             // Get the CampaignLabelServiceClient.
@@ -115,6 +115,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 throw;
             }
         }
-        // [END AddCampaignLabels]
+        // [END add_campaign_labels]
     }
 }

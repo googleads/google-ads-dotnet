@@ -173,7 +173,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// </param>
         /// <returns>a campaign criterion object with the specified locationId and resource name.
         /// </returns>
-        // [START AddCampaignTargetingCriteria]
+        // [START add_campaign_targeting_criteria]
         private CampaignCriterion buildLocationCriterion(long locationId,
             string campaignResourceName)
         {
@@ -187,7 +187,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 }
             };
         }
-        // [END AddCampaignTargetingCriteria]
+        // [END add_campaign_targeting_criteria]
 
         /// <summary>
         /// Creates a proximity Criterion.
@@ -196,7 +196,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// </param>
         /// <returns>a campaign criterion object with the specified locationId and resource name.
         /// </returns>
-        // [START AddCampaignTargetingCriteria_1]
+        // [START add_campaign_targeting_criteria_1]
         private CampaignCriterion buildProximityCriterion(string campaignResourceName)
         {
             ProximityInfo proximity = new ProximityInfo()
@@ -219,6 +219,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 Proximity = proximity
             };
         }
-        // [END AddCampaignTargetingCriteria_1]
+        // [END add_campaign_targeting_criteria_1]
     }
 }

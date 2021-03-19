@@ -121,7 +121,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="customerId">The client customer ID of the Google Ads account that has the
         ///     link request.</param>
         /// <param name="merchantCenterLink">The MerchantCenterLink object to remove.</param>
-        // [START RejectMerchantCenterLink]
+        // [START reject_merchant_center_link]
         private void RemoveMerchantCenterLink(
             MerchantCenterLinkServiceClient merchantCenterLinkServiceClient,
             long customerId, MerchantCenterLink merchantCenterLink)
@@ -139,6 +139,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
             Console.WriteLine("Removed Merchant Center Link with resource name: " +
                               $"{response.Result.ResourceName}");
         }
-        // [END RejectMerchantCenterLink]
+        // [END reject_merchant_center_link]
     }
 }

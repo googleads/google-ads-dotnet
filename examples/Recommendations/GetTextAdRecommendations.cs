@@ -57,7 +57,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
-        // [START GetTextAdRecommendations]
+        // [START get_text_ad_recommendations]
         public void Run(GoogleAdsClient client, long customerId)
         {
             // Get the GoogleAdsServiceClient .
@@ -126,6 +126,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 throw;
             }
         }
-        // [END GetTextAdRecommendations]
+        // [END get_text_ad_recommendations]
     }
 }

@@ -58,7 +58,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for the conversion action is
         /// added.</param>
-        // [START AddRemarketingAction_1]
+        // [START add_remarketing_action_1]
         public void Run(GoogleAdsClient client, long customerId)
         {
             // Get the RemarketingActionService.
@@ -96,11 +96,11 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
                 // Creates a query that retrieves the previously created remarketing action
                 // with its generated tag snippets.
-                // [START AddRemarketingAction]
+                // [START add_remarketing_action]
                 var query = $"SELECT remarketing_action.id, remarketing_action.name, " +
                     $"remarketing_action.tag_snippets FROM remarketing_action " +
                     $"WHERE remarketing_action.resource_name = '{remarketingActionResourceName}'";
-                // [END AddRemarketingAction]
+                // [END add_remarketing_action]
 
                 // Issues a search request and retrieve the results. There is only one row
                 // because we limited the search using the resource name, which is unique.
@@ -130,6 +130,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 throw;
             }
         }
-        // [END AddRemarketingAction_1]
+        // [END add_remarketing_action_1]
     }
 }

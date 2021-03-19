@@ -158,7 +158,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// </summary>
         /// <param name="ex">The Google Ads exception.</param>
         /// <returns>The exemptible policy violation keys.</returns>
-        // [START HandleKeywordPolicyViolations]
+        // [START handle_keyword_policy_violations]
         private static PolicyViolationKey[] FetchExemptPolicyViolationKeys(GoogleAdsException ex)
         {
             bool isFullyExemptable = true;
@@ -208,7 +208,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             }
             return exemptPolicyViolationKeys.ToArray();
         }
-        // [END HandleKeywordPolicyViolations]
+        // [END handle_keyword_policy_violations]
 
         /// <summary>
         /// Sends exemption requests for creating a keyword.
@@ -218,7 +218,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="operation">The ad group criterion operation to request exemption for.
         /// </param>
         /// <param name="exemptPolicyViolationKeys">The exemptable policy violation keys.</param>
-        // [START HandleKeywordPolicyViolations_1]
+        // [START handle_keyword_policy_violations_1]
         private static void RequestExemption(
             long customerId, AdGroupCriterionServiceClient service,
             AdGroupCriterionOperation operation, PolicyViolationKey[] exemptPolicyViolationKeys)
@@ -235,6 +235,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 $"'{response.Results[0].ResourceName}' by requesting for policy violation " +
                 $"exemption.");
         }
-        // [END HandleKeywordPolicyViolations_1]
+        // [END handle_keyword_policy_violations_1]
     }
 }
