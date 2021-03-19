@@ -90,7 +90,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="customerId">The customer ID for which the call is made.</param>
         /// <param name="hotelCenterAccountId">The Hotel Center account ID.</param>
         /// <param name="cpcBidCeilingMicroAmount">The CPC bid ceiling micro amount.</param>
-        // [START AddHotelAd_1]
+        // [START add_hotel_ad_1]
         public void Run(GoogleAdsClient client, long customerId, long hotelCenterAccountId,
             long cpcBidCeilingMicroAmount)
         {
@@ -119,7 +119,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 throw;
             }
         }
-        // [END AddHotelAd_1]
+        // [END add_hotel_ad_1]
 
         /// <summary>
         /// Creates a new campaign budget in the specified client account.
@@ -172,7 +172,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             // Get the CampaignService.
             CampaignServiceClient service = client.GetService(Services.V6.CampaignService);
 
-            // [START AddHotelAd_2]
+            // [START add_hotel_ad_2]
             // Create a campaign.
             Campaign campaign = new Campaign()
             {
@@ -208,7 +208,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                     TargetGoogleSearch = true
                 }
             };
-            // [END AddHotelAd_2]
+            // [END add_hotel_ad_2]
 
             // Create a campaign operation.
             CampaignOperation campaignOperation = new CampaignOperation()
@@ -231,7 +231,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="campaignResourceName">The resource name of campaign that a new ad group
         /// will belong to.</param>
         /// <returns>The resource name of the newly created ad group.</returns>
-        // [START AddHotelAd_3]
+        // [START add_hotel_ad_3]
         private static string AddHotelAdGroup(GoogleAdsClient client, long customerId,
             string campaignResourceName)
         {
@@ -265,7 +265,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 new AdGroupOperation[] { adGroupOperation });
             return response.Results[0].ResourceName;
         }
-        // [END AddHotelAd_3]
+        // [END add_hotel_ad_3]
 
         /// <summary>
         /// Creates a new hotel ad group ad in the specified ad group.
@@ -274,7 +274,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="adGroupResourceName">The resource name of ad group that a new ad group
         /// ad will belong to</param>
-        // [START AddHotelAd]
+        // [START add_hotel_ad]
         private static void AddHotelAdGroupAd(GoogleAdsClient client, long customerId,
             string adGroupResourceName)
         {
@@ -311,6 +311,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
             Console.WriteLine($"Added a hotel ad group ad with resource name " +
                 $"{addedAdGroupAd.ResourceName}.");
         }
-        // [END AddHotelAd]
+        // [END add_hotel_ad]
     }
 }
