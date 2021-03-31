@@ -65,7 +65,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="feedItemId">The feed item ID.</param>
         /// <param name="geoTargetConstantId">Geo target constant ID to add to the extension
         ///     feed item. Reverts to the United States (2840) if no value passed.</param>
-        // [START AddGeoTarget]
+        // [START add_geo_target]
         public void Run(GoogleAdsClient client, long customerId, long feedItemId,
             long? geoTargetConstantId)
         {
@@ -116,6 +116,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 throw;
             }
         }
-        // [END AddGeoTarget]
+        // [END add_geo_target]
     }
 }

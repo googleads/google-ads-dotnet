@@ -58,7 +58,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             GoogleAdsServiceClient googleAdsService = client.GetService(
                 Services.V6.GoogleAdsService);
 
-            // [START GetPendingInvitations]
+            // [START get_pending_invitations]
             // Create the search query.
             string query =
                 @"SELECT
@@ -99,7 +99,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 Console.WriteLine($"Request ID: {e.RequestId}");
                 throw;
             }
-            // [END GetPendingInvitations]
+            // [END get_pending_invitations]
         }
     }
 }

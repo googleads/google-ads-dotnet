@@ -115,7 +115,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="locationId">Location ID to plan for. To find a valid location ID, either
         /// see https://developers.google.com/adwords/api/docs/appendix/geotargeting or call
         /// <see cref="ReachPlanServiceClient.ListPlannableLocations"/>.</param>
-        // [START ForecastReach_2]
+        // [START forecast_reach_2]
         public void ShowPlannableProducts(
             ReachPlanServiceClient reachPlanService, string locationId)
         {
@@ -149,7 +149,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 }
             }
         }
-        // [END ForecastReach_2]
+        // [END forecast_reach_2]
 
         /// <summary>
         /// Create a base request to generate a reach forecast.
@@ -212,7 +212,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// </summary>
         /// <param name="reachPlanService">Instance of Reach Plan Service client.</param>
         /// <param name="request">An already-populated reach curve request.</param>
-        // [START ForecastReach]
+        // [START forecast_reach]
         public void GetReachCurve(ReachPlanServiceClient reachPlanService,
             GenerateReachForecastRequest request)
         {
@@ -241,7 +241,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 Console.WriteLine("]\"");
             }
         }
-        // [END ForecastReach]
+        // [END forecast_reach]
 
         /// <summary>
         /// Gets a forecast for a budget split 15% and 85% between two products.
@@ -253,7 +253,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <see cref="ReachPlanServiceClient.ListPlannableLocations"/>.</param>
         /// <param name="currencyCode">Three-character ISO 4217 currency code.</param>
         /// <param name="budgetMicros">Budget in currency to plan for.</param>
-        // [START ForecastReach_3]
+        // [START forecast_reach_3]
         public void ForecastManualMix(ReachPlanServiceClient reachPlanService, string customerId,
             string locationId, string currencyCode, long budgetMicros)
         {
@@ -282,7 +282,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
             GetReachCurve(reachPlanService, request);
         }
-        // [END ForecastReach_3]
+        // [END forecast_reach_3]
 
         /// <summary>
         /// Gets a forecast for a product mix suggested based on preferences for whether the ad
@@ -296,7 +296,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <see cref="ReachPlanServiceClient.ListPlannableLocations"/>.</param>
         /// <param name="currencyCode">Three-character ISO 4217 currency code.</param>
         /// <param name="budgetMicros">Budget in currency micro-units to plan for.</param>
-        // [START ForecastReach_1]
+        // [START forecast_reach_1]
         public void ForecastSuggestedMix(ReachPlanServiceClient reachPlanService, string customerId,
             string locationId, string currencyCode, long budgetMicros)
         {
@@ -338,6 +338,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
             GetReachCurve(reachPlanService, curveRequest);
         }
-        // [END ForecastReach_1]
+        // [END forecast_reach_1]
     }
 }

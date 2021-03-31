@@ -60,7 +60,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="adId"> ID of the ad to update.</param>
-        // [START UpdateExpandedTextAd]
+        // [START update_expanded_text_ad]
         public void Run(GoogleAdsClient client, long customerId, long adId)
         {
             // Get the AdService.
@@ -108,6 +108,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 throw;
             }
         }
-        // [END UpdateExpandedTextAd]
+        // [END update_expanded_text_ad]
     }
 }

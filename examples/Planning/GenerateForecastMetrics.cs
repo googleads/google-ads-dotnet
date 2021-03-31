@@ -57,7 +57,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
         /// <param name="keywordPlanId">The keyword plan ID.</param>
-        // [START GenerateForecastMetrics]
+        // [START generate_forecast_metrics]
         public void Run(GoogleAdsClient client, long customerId, long keywordPlanId)
         {
             KeywordPlanServiceClient kpServiceClient =
@@ -87,6 +87,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 throw;
             }
         }
-        // [END GenerateForecastMetrics]
+        // [END generate_forecast_metrics]
     }
 }

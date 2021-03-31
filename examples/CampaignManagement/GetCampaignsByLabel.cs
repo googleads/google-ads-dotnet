@@ -55,7 +55,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="labelId">ID of the label for which campaigns are retrieved.</param>
-        // [START GetCampaignsByLabel]
+        // [START get_campaigns_by_label]
         public void Run(GoogleAdsClient client, long customerId, long labelId)
         {
             // Get the GoogleAdsServiceClient.
@@ -96,6 +96,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 throw;
             }
         }
-        // [END GetCampaignsByLabel]
+        // [END get_campaigns_by_label]
     }
 }

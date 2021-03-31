@@ -72,7 +72,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="callStartTime">The call start time.</param>
         /// <param name="conversionTime">The call conversion time.</param>
         /// <param name="conversionValue">The convsersion value.</param>
-        // [START UploadCallConversion]
+        // [START upload_call_conversion]
         public void Run(GoogleAdsClient client, long customerId, string callerId,
             string callStartTime, string conversionTime, double conversionValue)
         {
@@ -121,6 +121,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 throw;
             }
         }
-        // [END UploadCallConversion]
+        // [END upload_call_conversion]
     }
 }
