@@ -112,7 +112,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="name">The bidding strategy name.</param>
         /// <param name="bidCeiling">The bid ceiling amount in micros.</param>
         /// <returns>The bidding strategy resource name.</returns>
-        // [START use_portfolio_bidding_strategy]
+        // [START use_portfolio_bidding_strategy_1]
         private string CreatePortfolioBiddingStrategy(GoogleAdsClient client,
             long customerId, string name, long bidCeiling)
         {
@@ -144,7 +144,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
             return biddingResponse.Results[0].ResourceName;
         }
-        // [END use_portfolio_bidding_strategy]
+        // [END use_portfolio_bidding_strategy_1]
 
         /// <summary>
         /// Creates a shared campaign budget to be used to create the campaign.
@@ -154,7 +154,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="name">The budget name.</param>
         /// <param name="amount">The budget amount in micros.</param>
         /// <returns>The budget resource name.</returns>
-        // [START use_portfolio_bidding_strategy_2]
+        // [START use_portfolio_bidding_strategy]
         private string CreateSharedBudget(GoogleAdsClient client, long customerId, string name,
             long amount)
         {
@@ -182,7 +182,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 customerId.ToString(), new CampaignBudgetOperation[] { campaignBudgetOperation });
             return retVal.Results[0].ResourceName;
         }
-        // [END use_portfolio_bidding_strategy_2]
+        // [END use_portfolio_bidding_strategy]
 
         /// <summary>
         /// Creates the campaign with a portfolio bidding strategy.
@@ -200,7 +200,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             // Get the CampaignService.
             CampaignServiceClient campaignService = client.GetService(Services.V6.CampaignService);
 
-            // [START use_portfolio_bidding_strategy_1]
+            // [START use_portfolio_bidding_strategy_2]
             // Create the campaign.
             Campaign campaign = new Campaign()
             {
@@ -227,7 +227,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                     TargetPartnerSearchNetwork = false
                 }
             };
-            // [END use_portfolio_bidding_strategy_1]
+            // [END use_portfolio_bidding_strategy_2]
 
             // Create the operation.
             CampaignOperation operation = new CampaignOperation()

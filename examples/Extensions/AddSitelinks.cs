@@ -66,7 +66,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
         /// <param name="campaignId">ID of the campaign to which sitelinks are added.</param>
-        // [START add_sitelinks]
+        // [START add_sitelinks_1]
         public void Run(GoogleAdsClient client, long customerId, long campaignId)
         {
             // Get the CampaignExtensionSettingServiceClient.
@@ -112,7 +112,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 throw;
             }
         }
-        // [END add_sitelinks]
+        // [END add_sitelinks_1]
 
         /// <summary>
         /// Creates a list of ExtensionFeedItems.
@@ -120,7 +120,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         ///<param name="client">The Google Ads API client.</param>
         ///<param name="customerId">The client customer ID.</param>
         ///<param name="campaignResourceName">The resource name of the campaign to target.</param>
-        // [START add_sitelinks_1]
+        // [START add_sitelinks]
         private static List<string> CreateExtensionFeedItems(GoogleAdsClient client,
             long customerId, string campaignResourceName)
         {
@@ -239,7 +239,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             }
             return resourceNames;
         }
-        // [END add_sitelinks_1]
+        // [END add_sitelinks]
 
 
         /// <summary>
