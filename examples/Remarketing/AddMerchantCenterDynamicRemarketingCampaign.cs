@@ -81,7 +81,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="campaignBudgetId">ID of the campaign budget to be associated with the new
         /// campaign.</param>
         /// <param name="userListId">ID of the user list to be used for remarketing.</param>
-        // [START add_merchant_center_dynamic_remarketing_campaign]
         public void Run(GoogleAdsClient client, long customerId, long merchantCenterAccountId,
             long campaignBudgetId, long userListId)
         {
@@ -110,7 +109,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 throw;
             }
         }
-        // [END add_merchant_center_dynamic_remarketing_campaign]
 
         /// <summary>
         /// Creates a campaign linked to a Merchant Center product feed.
@@ -210,6 +208,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="client">The Google Ads API client.</param>
         /// <param name="customerId">The client customer ID.</param>
         /// <param name="adGroupResourceName">The ad group resource name to receive the ad.</param>
+        // [START add_merchant_center_dynamic_remarketing_campaign]
         private void CreateAd(GoogleAdsClient client, long customerId, string adGroupResourceName)
         {
             // Creates the ad group ad service client.
@@ -313,6 +312,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             Console.WriteLine("Created ad group ad with resource name " +
                               $"'{response.Results.First().ResourceName}'.");
         }
+        // [END add_merchant_center_dynamic_remarketing_campaign]
 
         /// <summary>
         /// Adds an image to the Google Ads account.
