@@ -117,9 +117,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
                 if (e.Failure != null)
                 {
-                    // Note: Depending on the ad type, you may get back policy violation errors as
-                    // either PolicyFindingError or PolicyViolationError. ExpandedTextAds return
-                    // errors as PolicyFindingError, so only this case is illustrated here. See
+                    // Note: Policy violation errors are returned as PolicyFindingErrors. See
                     // https://developers.google.com/google-ads/api/docs/policy-exemption/overview
                     // for additional details.
                     e.Failure.Errors
