@@ -53,7 +53,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             // The customer ID for which the call is made.
             int customerId = int.Parse("INSERT_CUSTOMER_ID_HERE");
 
-            // The retail chain ID. See https://developers.google.com/adwords/api/docs/appendix/codes-formats#chain-ids
+            // The retail chain ID. See https://developers.google.com/google-ads/api/reference/data/codes-formats#chain-ids
             // for a complete list of valid retail chain IDs.
             int chainId = int.Parse("INSERT_CHAIN_ID_HERE");
 

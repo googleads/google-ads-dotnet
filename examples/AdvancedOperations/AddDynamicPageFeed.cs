@@ -401,17 +401,14 @@ namespace Google.Ads.GoogleAds.Examples.V6
             // You must request all DSA fields in order to update the DSA settings in the
             // following step.
             string query =
-                "SELECT "
-                    + "campaign.id, "
-                    + "campaign.name, "
-                    + "campaign.dynamic_search_ads_setting.domain_name, "
-                    + "campaign.dynamic_search_ads_setting.language_code, "
-                    + "campaign.dynamic_search_ads_setting.use_supplied_urls_only "
-                    + "FROM "
-                    + "campaign "
-                    + "WHERE "
-                    + "campaign.id = "
-                    + campaignId;
+                $@"SELECT 
+                      campaign.id, 
+                      campaign.name,
+                      campaign.dynamic_search_ads_setting.use_supplied_urls_only
+                  FROM
+                      campaign
+                  WHERE
+                      campaign.id = ${campaignId}";
 
             GoogleAdsRow result = googleAdsService.Search(
                 customerId.ToString(), query).FirstOrDefault();
@@ -426,8 +423,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 result.Campaign.DynamicSearchAdsSetting;
 
             // Throws an exception if the campaign is not a DSA campaign.
-            if (dynamicSearchAdsSetting == null || string.IsNullOrEmpty(
-                dynamicSearchAdsSetting.DomainName))
+            if (dynamicSearchAdsSetting == null)
             {
                 throw new Exception($"Campaign with ID {campaignId} is not a DSA campaign.");
             }

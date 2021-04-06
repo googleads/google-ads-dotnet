@@ -266,7 +266,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             List<AdGroupCriterionOperation> operations, long percentCpcBidMicroAmount)
         {
             // Create hotel dimension info for hotels in Japan. The criterion ID for Japan is 2392.
-            // See https://developers.google.com/adwords/api/docs/appendix/geotargeting for criteria
+            // See https://developers.google.com/google-ads/api/reference/data/geotargets for criteria
             // ID of other countries.
             ListingDimensionInfo japanListingDimensionInfo = new ListingDimensionInfo
             {

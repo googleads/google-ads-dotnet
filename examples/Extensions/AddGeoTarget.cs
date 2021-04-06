@@ -45,7 +45,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
             // Geo target constant ID to add to the extension feed item.
             // A list of country codes can be referenced here:
-            // https://developers.google.com/adwords/api/docs/appendix/geotargeting
+            // https://developers.google.com/google-ads/api/reference/data/geotargets
             long? geoTargetConstantId = 2840; // USA
 
             codeExample.Run(new GoogleAdsClient(), customerId, feedItemId, geoTargetConstantId);
