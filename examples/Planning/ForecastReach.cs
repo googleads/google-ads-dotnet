@@ -113,7 +113,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// </summary>
         /// <param name="reachPlanService">Instance of Reach Plan Service client.</param>
         /// <param name="locationId">Location ID to plan for. To find a valid location ID, either
-        /// see https://developers.google.com/adwords/api/docs/appendix/geotargeting or call
+        /// see https://developers.google.com/google-ads/api/reference/data/geotargets or call
         /// <see cref="ReachPlanServiceClient.ListPlannableLocations"/>.</param>
         // [START forecast_reach_2]
         public void ShowPlannableProducts(
@@ -157,7 +157,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="customerId">The customer ID for the reach forecast.</param>
         /// <param name="productMix">The product mix for the reach forecast.</param>
         /// <param name="locationId">Location ID to plan for. To find a valid location ID, either
-        /// see https://developers.google.com/adwords/api/docs/appendix/geotargeting or call
+        /// see https://developers.google.com/google-ads/api/reference/data/geotargets or call
         /// <see cref="ReachPlanServiceClient.ListPlannableLocations"/>.</param>
         /// <param name="currencyCode">Three-character ISO 4217 currency code.</param>
         public GenerateReachForecastRequest BuildReachRequest(
@@ -249,7 +249,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="reachPlanService">Instance of Reach Plan Service client.</param>
         /// <param name="customerId">The customer ID for the reach forecast.</param>
         /// <param name="locationId">Location ID to plan for. To find a valid location ID, either
-        /// see https://developers.google.com/adwords/api/docs/appendix/geotargeting or call
+        /// see https://developers.google.com/google-ads/api/reference/data/geotargets or call
         /// <see cref="ReachPlanServiceClient.ListPlannableLocations"/>.</param>
         /// <param name="currencyCode">Three-character ISO 4217 currency code.</param>
         /// <param name="budgetMicros">Budget in currency to plan for.</param>
@@ -292,7 +292,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="reachPlanService">Instance of Reach Plan Service client.</param>
         /// <param name="customerId">The customer ID for the reach forecast.</param>
         /// <param name="locationId">Location ID to plan for. To find a valid location ID, either
-        /// see https://developers.google.com/adwords/api/docs/appendix/geotargeting or call
+        /// see https://developers.google.com/google-ads/api/reference/data/geotargets or call
         /// <see cref="ReachPlanServiceClient.ListPlannableLocations"/>.</param>
         /// <param name="currencyCode">Three-character ISO 4217 currency code.</param>
         /// <param name="budgetMicros">Budget in currency micro-units to plan for.</param>

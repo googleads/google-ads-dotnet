@@ -1,3 +1,19 @@
+7.1.0
+=====
+- Regenerated all stubs. This adds default timeouts for RPC calls in service stub classes.
+- Limited the scope of channel cache from global to client level. Provided a flag in GoogleAdsConfig class to control the channel cache
+- Added a code example for setting custom timeout.
+- Added a new overloaded signature for SearchStream() method that accepts a CallSettings object.
+- Fixed all outdated documentation links that pointed to AdWords API documenation.
+- Bumped all library dependencies.
+  - Google.Protobuf: 3.15.6
+  - Grpc.Core: 2.36.4
+- Removed the use of HasPartnersBadge property in CreateCustomer.cs.
+- Remove the use for LanguageCode and DomainName properties in AddDynamicPageFeed.cs.
+- Added support for .NET 5.0 and make it the default version for tests.
+- Refine the region tag in various code examples.
+- Fixed a comment in ValidateTextAd code example.
+
 7.0.0
 =====
 
@@ -48,7 +64,7 @@ OAuth2 scopes.
   - Grpc.Core: 2.34.0
   - Microsoft.Extensions.Configuration: 5.0.0.
   - System.Configuration.ConfigurationManager: 5.0.0
-  
+
 6.0.0
 =====
 - Added support for v6 of Google Ads API. See

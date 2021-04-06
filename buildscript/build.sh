@@ -35,13 +35,13 @@ function dotnet_library::install_dotnet() {
 
  # Remove broken apt-get dependency (temporary)
   sudo rm /etc/apt/sources.list.d/cuda.list*
-  # "Install dotnet 3.1"
-  wget -q https://packages.microsoft.com/config/ubuntu/19.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+  # "Install dotnet 5.0"
+  wget -q https://packages.microsoft.com/config/ubuntu/20.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
   sudo dpkg -i packages-microsoft-prod.deb
   sudo add-apt-repository universe
   sudo apt-get update
   sudo apt-get install apt-transport-https -y
-  sudo apt-get install dotnet-sdk-3.1 -y
+  sudo apt-get install dotnet-sdk-5.0 -y
 
   # "Verify dotnet install"
   dotnet --info
@@ -81,7 +81,7 @@ function dotnet_library::build_library() {
 
   echo "Run the smoke tests."
   echo "==================="
-  dotnet test "${DOTNET_CLIENT_LIBRARY_PATH}/tests/bin/Release/netcoreapp3.0/Google.Ads.GoogleAds.Tests.dll" \
+  dotnet test "${DOTNET_CLIENT_LIBRARY_PATH}/tests/bin/Release/net5.0/Google.Ads.GoogleAds.Tests.dll" \
       -v d --filter TestCategory=Smoke
 }
 

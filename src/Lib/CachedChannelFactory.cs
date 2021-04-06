@@ -57,9 +57,14 @@ namespace Google.Ads.GoogleAds.Lib
         /// </summary>
         /// <param name="config">The configuration.</param>
         /// <returns>The channel.</returns>
-        internal static Channel GetChannel(GoogleAdsConfig config)
+        internal Channel GetChannel(GoogleAdsConfig config)
         {
             Channel retval = null;
+
+            if (!config.UseChannelCache)
+            {
+                return CreateChannel(config);
+            }
 
             // Channels with unique (credentials, Url) combination should be unique.
             string key = string.Join("~", new object[] {
@@ -107,9 +112,9 @@ namespace Google.Ads.GoogleAds.Lib
         /// </summary>
         /// <param name="config">The configuration.</param>
         /// <returns>The channel.</returns>
-        private static Channel CreateChannel(GoogleAdsConfig config)
+        private Channel CreateChannel(GoogleAdsConfig config)
         {
-            ChannelCredentials channelCredentials = null;
+            ChannelCredentials channelCredentials;
 
             if (config.AuthorizationMethod == AuthorizationMethod.Insecure)
             {

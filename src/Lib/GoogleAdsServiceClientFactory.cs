@@ -31,6 +31,11 @@ namespace Google.Ads.GoogleAds.Lib
     internal class GoogleAdsServiceClientFactory
     {
         /// <summary>
+        /// The channel factory.
+        /// </summary>
+        private CachedChannelFactory channelFactory = new CachedChannelFactory();
+
+        /// <summary>
         /// Gets an instance of the specified service.
         /// </summary>
         /// <param name="serviceTemplate">The service template.</param>
@@ -194,7 +199,7 @@ namespace Google.Ads.GoogleAds.Lib
             // https://github.com/googleads/google-ads-dotnet/issues/59
             Environment.SetEnvironmentVariable("GRPC_DNS_RESOLVER", "native");
 
-            return CachedChannelFactory.GetChannel(config);
+            return channelFactory.GetChannel(config);
         }
 
         /// <summary>
