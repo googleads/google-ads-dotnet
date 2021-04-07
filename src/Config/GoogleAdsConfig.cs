@@ -168,6 +168,16 @@ namespace Google.Ads.GoogleAds.Config
             new ConfigSetting<bool>("EnableProfiling", false);
 
         /// <summary>
+        /// A flag to determine whether or not to use channel caching.
+        /// </summary>
+        /// <remarks>
+        /// This setting may be used to disable channel caching in advanced use cases
+        /// where the library's default credential management is manually overridden.
+        /// </remarks>
+        private ConfigSetting<bool> useChannelCache =
+            new ConfigSetting<bool>("UseChannelCache", true);
+
+        /// <summary>
         /// Web proxy to be used with the services.
         /// </summary>
         private ConfigSetting<WebProxy> proxy = new ConfigSetting<WebProxy>("Proxy", null);
@@ -426,6 +436,19 @@ namespace Google.Ads.GoogleAds.Config
         {
             get => enableProfiling.Value;
             set => SetPropertyAndNotify(enableProfiling, value);
+        }
+
+        /// <summary>
+        /// A flag to determine whether or not to enable channel cache in the client library.
+        /// </summary>
+        /// <remarks>
+        /// This setting may be used to disable channel caching in advanced use cases
+        /// where the library's default credential management is manually overridden.
+        /// </remarks>
+        public bool UseChannelCache
+        {
+            get => useChannelCache.Value;
+            set => SetPropertyAndNotify(useChannelCache, value);
         }
 
         /// <summary>

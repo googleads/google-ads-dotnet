@@ -1396,7 +1396,9 @@ namespace Google.Ads.GoogleAds.V4.Resources {
     private static readonly pb::FieldCodec<string> _single_youtubeVideoId_codec = pb::FieldCodec.ForClassWrapper<string>(18);
     private string youtubeVideoId_;
     /// <summary>
-    /// Immutable. The YouTube video ID (as seen in YouTube URLs).
+    /// Immutable. The YouTube video ID (as seen in YouTube URLs). Adding prefix
+    /// "https://www.youtube.com/watch?v=" to this ID will get the YouTube
+    /// streaming URL for this video.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string YoutubeVideoId {

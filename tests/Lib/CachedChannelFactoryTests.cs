@@ -27,6 +27,7 @@ namespace Google.Ads.GoogleAds.Tests.Lib
     internal class CachedChannelFactoryTests
     {
         private GoogleAdsConfig config = new GoogleAdsConfig();
+        CachedChannelFactory factory = new CachedChannelFactory();
 
         /// <summary>
         /// Check if the channel factory caches instances on subsequent calls.
@@ -34,10 +35,28 @@ namespace Google.Ads.GoogleAds.Tests.Lib
         [Test]
         public void TestGetChannelIsCached()
         {
-            Channel channel1 = CachedChannelFactory.GetChannel(config);
-            Channel channel2 = CachedChannelFactory.GetChannel(config);
+            Channel channel1 = factory.GetChannel(config);
+            Channel channel2 = factory.GetChannel(config);
 
             Assert.AreEqual(channel1, channel2);
+        }
+
+        /// <summary>
+        /// Check if the channel factory doesn't cache instances on subsequent calls
+        /// when the cache is disabled.
+        /// </summary>
+        [Test]
+        public void TestGetChannelCanBeDisabled()
+        {
+            GoogleAdsConfig configNoCache = new GoogleAdsConfig()
+            {
+                UseChannelCache = false
+            };
+
+            Channel channel1 = factory.GetChannel(configNoCache);
+            Channel channel2 = factory.GetChannel(configNoCache);
+
+            Assert.AreNotEqual(channel1, channel2);
         }
 
         /// <summary>
@@ -46,10 +65,10 @@ namespace Google.Ads.GoogleAds.Tests.Lib
         [Test]
         public void TestGetChannelRemovesClosedChannels()
         {
-            Channel channel1 = CachedChannelFactory.GetChannel(config);
+            Channel channel1 = factory.GetChannel(config);
             channel1.ShutdownAsync().Wait();
 
-            Channel channel2 = CachedChannelFactory.GetChannel(config);
+            Channel channel2 = factory.GetChannel(config);
             Assert.AreNotEqual(channel1, channel2);
         }
     }

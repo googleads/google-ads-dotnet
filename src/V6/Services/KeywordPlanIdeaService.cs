@@ -1833,7 +1833,7 @@ namespace Google.Ads.GoogleAds.V6.Services {
     public const int KeywordIdeaMetricsFieldNumber = 3;
     private global::Google.Ads.GoogleAds.V6.Common.KeywordPlanHistoricalMetrics keywordIdeaMetrics_;
     /// <summary>
-    /// The historical metrics for the keyword
+    /// The historical metrics for the keyword.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V6.Common.KeywordPlanHistoricalMetrics KeywordIdeaMetrics {

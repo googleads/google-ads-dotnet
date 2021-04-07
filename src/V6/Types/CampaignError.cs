@@ -269,7 +269,7 @@ namespace Google.Ads.GoogleAds.V6.Errors {
         /// </summary>
         [pbr::OriginalName("CAMPAIGN_DURATION_MUST_CONTAIN_ALL_RUNNABLE_TRIALS")] CampaignDurationMustContainAllRunnableTrials = 10,
         /// <summary>
-        /// Cannot modify dates, budget or campaign name of a trial campaign.
+        /// Cannot modify dates, budget or status of a trial campaign.
         /// </summary>
         [pbr::OriginalName("CANNOT_MODIFY_FOR_TRIAL_CAMPAIGN")] CannotModifyForTrialCampaign = 11,
         /// <summary>

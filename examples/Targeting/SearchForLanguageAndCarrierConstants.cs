@@ -46,7 +46,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
             // The country code for which the search is performed.
             // A list of country codes can be referenced here:
-            // https://developers.google.com/adwords/api/docs/appendix/geotargeting.
+            // https://developers.google.com/google-ads/api/reference/data/geotargets.
             string carrierCountryCode = "US";
 
             codeExample.Run(new GoogleAdsClient(), customerId, languageName, carrierCountryCode);
