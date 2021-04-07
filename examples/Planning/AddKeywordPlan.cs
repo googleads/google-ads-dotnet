@@ -141,14 +141,14 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 KeywordPlan = keywordPlanResource
             };
 
-            // See https://developers.google.com/adwords/api/docs/appendix/geotargeting
+            // See https://developers.google.com/google-ads/api/reference/data/geotargets
             // for the list of geo target IDs.
             campaign.GeoTargets.Add(new KeywordPlanGeoTarget()
             {
                 GeoTargetConstant = ResourceNames.GeoTargetConstant(2840) /* USA */
             });
 
-            // See https://developers.google.com/adwords/api/docs/appendix/codes-formats#languages
+            // See https://developers.google.com/google-ads/api/reference/data/codes-formats#languages
             // for the list of language criteria IDs.
             campaign.LanguageConstants.Add(ResourceNames.LanguageConstant(1000)); /* English */
 

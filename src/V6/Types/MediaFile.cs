@@ -1577,7 +1577,9 @@ namespace Google.Ads.GoogleAds.V6.Resources {
     public const int YoutubeVideoIdFieldNumber = 6;
     private string youtubeVideoId_;
     /// <summary>
-    /// Immutable. The YouTube video ID (as seen in YouTube URLs).
+    /// Immutable. The YouTube video ID (as seen in YouTube URLs). Adding prefix
+    /// "https://www.youtube.com/watch?v=" to this ID will get the YouTube
+    /// streaming URL for this video.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string YoutubeVideoId {

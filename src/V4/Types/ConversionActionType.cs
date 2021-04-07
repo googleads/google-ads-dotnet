@@ -261,6 +261,7 @@ namespace Google.Ads.GoogleAds.V4.Enums {
         /// data uploads and/or from in-store purchases using cards from payment
         /// networks.
         /// Only customers on the allowlist can use store sales types.
+        /// Read only.
         /// </summary>
         [pbr::OriginalName("STORE_SALES")] StoreSales = 11,
         /// <summary>

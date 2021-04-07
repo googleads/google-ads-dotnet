@@ -60,7 +60,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             string locale = "en";
 
             // A list of country codes can be referenced here:
-            // https://developers.google.com/adwords/api/docs/appendix/geotargeting
+            // https://developers.google.com/google-ads/api/reference/data/geotargets
             string countryCode = "FR";
 
             String[] locations = { "Paris", "Quebec", "Spain", "Deutschland" };

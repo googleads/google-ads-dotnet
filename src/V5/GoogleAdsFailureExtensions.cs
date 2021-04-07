@@ -40,7 +40,7 @@ namespace Google.Ads.GoogleAds.V5.Errors
                 return error.Location.FieldPathElements.Any(fpElement =>
                     fpElement.FieldName == OPERATIONS_FIELDNAME &&
                     fpElement.Index.HasValue &&
-                    fpElement.Index.Value == operationIndex);
+                    fpElement.Index == operationIndex);
             }).ToList();
         }
     }

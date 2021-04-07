@@ -65,6 +65,8 @@ namespace Google.Ads.GoogleAds.V5.Resources {
   /// <summary>
   /// Asset is a part of an ad which can be shared across multiple ads.
   /// It can be an image (ImageAsset), a video (YoutubeVideoAsset), etc.
+  /// Assets are immutable and cannot be removed. To stop an asset from serving,
+  /// remove the asset from the entity that is using it.
   /// </summary>
   public sealed partial class Asset : pb::IMessage<Asset>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
