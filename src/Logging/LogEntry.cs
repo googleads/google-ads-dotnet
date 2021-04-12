@@ -365,15 +365,18 @@ namespace Google.Ads.GoogleAds.Logging
         {
             try
             {
-                if (body.Operation != null)
+                if (body.Operations != null)
                 {
-                    if (body.Operation.Create != null)
+                    foreach (var operation in body.Operations)
                     {
-                        MaskFeed(body.Operation.Create);
-                    }
-                    if (body.Operation.Update != null)
-                    {
-                        MaskFeed(body.Operation.Update);
+                        if (operation.Create != null)
+                        {
+                            MaskFeed(operation.Create);
+                        }
+                        if (operation.Update != null)
+                        {
+                            MaskFeed(operation.Update);
+                        }
                     }
                 }
             }
