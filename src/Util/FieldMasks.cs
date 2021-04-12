@@ -251,13 +251,24 @@ namespace Google.Ads.GoogleAds.Util
             foreach (var field in descriptor.Fields.InFieldNumberOrder())
             {
                 string name = GetFullFieldName(fieldName, field);
-                // For single message fields, recurse if there's a value; otherwise just add the
-                // field name.
                 object value = field.Accessor.GetValue(message);
-                if (!field.IsRepeated && field.FieldType == FieldType.Message && value is IMessage)
+
+                if (field.IsRepeated)
                 {
-                    if (value is IMessage)
+                    if (value is IList && (value as IList).Count > 0)
                     {
+                        // Generate fieldmask for a repeated field only if there's at least one
+                        // element in the list. Also, don't recurse, since fieldmask doesn't
+                        // support index notation.
+                        mask.Paths.Add(name);
+                    }
+                }
+                else
+                {
+                    if (field.FieldType == FieldType.Message)
+                    {
+                        // For single message fields, recurse if there's a value; otherwise just add the
+                        // field name.
                         if (value != null)
                         {
                             AddNewFields(mask, name, (IMessage) value);
@@ -267,33 +278,88 @@ namespace Google.Ads.GoogleAds.Util
                             mask.Paths.Add(name);
                         }
                     }
-                }
-                else if (field.HasPresence)
-                {
-                    // The presence fields should first be checked for HasValue.
-                    if (field.Accessor.HasValue(message))
+                    else if (field.HasPresence)
                     {
-                        mask.Paths.Add(name);
-                    }
-                }
-                else if (value != null)
-                {
-                    if (field.IsRepeated)
-                    {
-                        if (value is IList && (value as IList).Count > 0)
+                        // The presence fields should first be checked for HasValue.
+                        if (field.Accessor.HasValue(message))
                         {
-                            // Generate fieldmask for a repeated field only if there's at least one
-                            // element in the list. Also, don't recurse, since fieldmask doesn't
-                            // support index notation.
                             mask.Paths.Add(name);
                         }
                     }
-                    else
+                    else if (IsBasicType(field.FieldType))
                     {
-                        // The value could be nullable.
-                        mask.Paths.Add(name);
+                        // Add a field mask only if there is a non-default value.
+                        var defaultValue = GetDefaultValue(field.FieldType);
+                        if (defaultValue != value)
+                        {
+                            mask.Paths.Add(name);
+                        }
                     }
                 }
+            }
+        }
+
+        /// <summary>
+        /// Determines whether a field is basic type or not.
+        /// </summary>
+        /// <param name="type">The type.</param>
+        private static bool IsBasicType(FieldType type)
+        {
+            switch (type)
+            {
+                case FieldType.Double:
+                case FieldType.Float:
+                case FieldType.Int64:
+                case FieldType.UInt64:
+                case FieldType.Int32:
+                case FieldType.Fixed64:
+                case FieldType.Fixed32:
+                case FieldType.Bool:
+                case FieldType.String:
+                case FieldType.Bytes:
+                case FieldType.UInt32:
+                case FieldType.SFixed32:
+                case FieldType.SFixed64:
+                case FieldType.SInt32:
+                case FieldType.SInt64:
+                    return true;
+                default:
+                    return false;
+            }
+        }
+
+        /// <summary>
+        /// Gets the default value for a type.
+        /// </summary>
+        /// <param name="type">The type.</param>
+        /// <returns>The default value.</returns>
+        private static object GetDefaultValue(FieldType type)
+        {
+            switch (type)
+            {
+                case FieldType.Double:
+                case FieldType.Float:
+                    return 0D;
+                case FieldType.Int64:
+                case FieldType.UInt64:
+                case FieldType.Fixed64:
+                case FieldType.Fixed32:
+                case FieldType.SFixed32:
+                case FieldType.SFixed64:
+                case FieldType.SInt64:
+                    return 0L;
+                case FieldType.Int32:
+                case FieldType.UInt32:
+                case FieldType.SInt32:
+                    return 0;
+                case FieldType.Bool:
+                    return false;
+                case FieldType.String:
+                    return "";
+                case FieldType.Bytes:
+                    return ByteString.Empty;
+                default:
+                    return null;
             }
         }
 
