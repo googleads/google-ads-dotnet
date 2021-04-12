@@ -81,9 +81,9 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
                 // Get the page feed details. This code example creates a new feed, but you can
                 // fetch and re-use an existing feed.
-                String feedResourceName = CreateFeed(client, customerId);
+                string feedResourceName = CreateFeed(client, customerId);
                 Dictionary<DsaPageFeedCriterionField, FeedAttribute> feedAttributes =
-                  GetFeed(client, customerId, feedResourceName);
+                    GetFeed(client, customerId, feedResourceName);
                 CreateFeedMapping(client, customerId, feedResourceName, feedAttributes);
                 CreateFeedItems(client, customerId, feedResourceName, feedAttributes,
                     dsaPageUrlLabel);
@@ -408,7 +408,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                   FROM
                       campaign
                   WHERE
-                      campaign.id = ${campaignId}";
+                      campaign.id = {campaignId}";
 
             GoogleAdsRow result = googleAdsService.Search(
                 customerId.ToString(), query).FirstOrDefault();
