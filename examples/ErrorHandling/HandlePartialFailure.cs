@@ -149,7 +149,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         // [START handle_partial_failure_1]
         private static bool CheckIfPartialFailureErrorExists(MutateAdGroupsResponse response)
         {
-            return response.PartialFailureError == null;
+            return response.PartialFailureError != null;
         }
         // [END handle_partial_failure_1]
 
