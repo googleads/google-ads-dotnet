@@ -181,6 +181,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <returns>
         /// A Map containing the RealEstatePlaceholderField and FeedAttribute.
         /// </returns>
+        // [START add_real_estate_feed]
         public Dictionary<RealEstatePlaceholderField, FeedAttribute> GetFeed(
             GoogleAdsClient client, long customerId, string feedResourceName)
         {
@@ -241,6 +242,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             }
             return feedAttributes;
         }
+        // [END add_real_estate_feed]
 
         /// <summary>
         /// Creates a feed mapping for a given feed.
@@ -338,6 +340,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// added.</param>
         /// <param name="feedAttributes">The feed attributes.</param>
         /// <param name="feedResourceName">The resource name of the feed.</param>
+        // [START add_real_estate_feed_1]
         private void CreateFeedItem(GoogleAdsClient client, long customerId,
             Dictionary<RealEstatePlaceholderField, FeedAttribute> feedAttributes,
             string feedResourceName)
@@ -417,5 +420,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                     $"'{result.ResourceName}'.");
             }
         }
+        // [END add_real_estate_feed_1]
     }
 }

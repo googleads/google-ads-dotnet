@@ -118,6 +118,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="merchantCenterAccountId">The Merchant Center account ID.</param>
         /// <param name="campaignBudgetId">The campaign budget ID.</param>
         /// <returns>The string resource name for the newly created campaign.</returns>
+        // [START add_merchant_center_dynamic_remarketing_campaign_2]
         private string CreateCampaign(GoogleAdsClient client, long customerId,
             long merchantCenterAccountId, long campaignBudgetId)
         {
@@ -164,6 +165,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             Console.WriteLine($"Created campaign with resource name '{campaignResourceName}'.");
             return campaignResourceName;
         }
+        // [END add_merchant_center_dynamic_remarketing_campaign_2]
 
         /// <summary>
         /// Creates an ad group for the remarketing campaign.
@@ -172,6 +174,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="customerId">The client customer ID.</param>
         /// <param name="campaignResourceName">The campaign resource name.</param>
         /// <returns>The string resource name for the newly created ad group.</returns>
+        // [START add_merchant_center_dynamic_remarketing_campaign_1]
         private string CreateAdGroup(GoogleAdsClient client, long customerId,
             string campaignResourceName)
         {
@@ -201,6 +204,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             Console.WriteLine($"Created ad group with resource name '{adGroupResourceName}'.");
             return adGroupResourceName;
         }
+        // [END add_merchant_center_dynamic_remarketing_campaign_1]
 
         /// <summary>
         /// Creates the responsive display ad.
@@ -218,11 +222,11 @@ namespace Google.Ads.GoogleAds.Examples.V6
             string marketingImageUrl = "https://goo.gl/3b9Wfh";
             string marketingImageName = "Marketing Image";
             string marketingImageResourceName =
-                uploadAsset(client, customerId, marketingImageUrl, marketingImageName);
+                UploadAsset(client, customerId, marketingImageUrl, marketingImageName);
             string squareMarketingImageName = "Square Marketing Image";
             string squareMarketingImageUrl = "https://goo.gl/mtt54n";
             string squareMarketingImageResourceName =
-                uploadAsset(client, customerId, squareMarketingImageUrl, squareMarketingImageName);
+                UploadAsset(client, customerId, squareMarketingImageUrl, squareMarketingImageName);
 
             // Creates the responsive display ad info object.
             ResponsiveDisplayAdInfo responsiveDisplayAdInfo = new ResponsiveDisplayAdInfo()
@@ -322,7 +326,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="imageUrl">The URL of the image.</param>
         /// <param name="assetName">The name of the asset.</param>
         /// <returns>The string resource name of the newly uploaded asset.</returns>
-        private string uploadAsset(GoogleAdsClient client, long customerId,
+        private string UploadAsset(GoogleAdsClient client, long customerId,
             string imageUrl, string assetName)
         {
             // Creates the asset service client.
@@ -362,6 +366,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="customerId">The client customer ID.</param>
         /// <param name="adGroupResourceName">The campaign resource name.</param>
         /// <param name="userListId">The user list ID.</param>
+        // [START add_merchant_center_dynamic_remarketing_campaign_3]
         private void AttachUserList(GoogleAdsClient client, long customerId,
             string adGroupResourceName, long userListId)
         {
@@ -393,5 +398,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
             Console.WriteLine("Created ad group criterion with resource name " +
                               $"'{response.Results.First().ResourceName}'.");
         }
+        // [END add_merchant_center_dynamic_remarketing_campaign_3]
     }
 }

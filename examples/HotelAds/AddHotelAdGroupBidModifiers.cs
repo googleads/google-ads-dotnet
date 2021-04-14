@@ -1,4 +1,4 @@
-﻿// Copyright 2019 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -59,6 +59,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="adGroupId">The ad group to which bid modifiers are set.</param>
+        // [START add_hotel_ad_group_bid_modifiers]
         public void Run(GoogleAdsClient client, long customerId, long adGroupId)
         {
             // Get the AdGroupBidModifierService.
@@ -140,5 +141,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 throw;
             }
         }
+        // [END add_hotel_ad_group_bid_modifiers]
     }
 }

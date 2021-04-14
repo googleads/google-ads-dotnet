@@ -121,6 +121,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="feedName">Name of the feed.</param>
         /// <returns>The resource name of the newly created feed.</returns>
+        // [START add_ad_customizer]
         private string CreateAdCustomizerFeed(GoogleAdsClient client, long customerId,
             string feedName)
         {
@@ -165,6 +166,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             Console.WriteLine($"Added feed with resource name '{feedResourceName}'.");
             return feedResourceName;
         }
+        // [END add_ad_customizer]
 
         /// <summary>
         ///  Retrieves all the attributes for a feed and returns them in a map using the
@@ -174,6 +176,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="feedResourceName">The resource name of the feed.</param>
         /// <returns>The attributes of the feed.</returns>
+        // [START add_ad_customizer_1]
         private Dictionary<string, FeedAttribute> GetFeedAttributes(GoogleAdsClient client,
                     long customerId, string feedResourceName)
         {
@@ -204,6 +207,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             }
             return feedAttributes;
         }
+        // [END add_ad_customizer_1]
 
         /// <summary>
         /// Creates a feed mapping and sets the feed as an ad customizer feed.
@@ -212,6 +216,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="feedResourceName">The resource name of the feed.</param>
         /// <param name="feedAttributes">The attributes of the feed.</param>
+        // [START add_ad_customizer_2]
         private void CreateAdCustomizerMapping(GoogleAdsClient client, long customerId,
                     string feedResourceName, Dictionary<string, FeedAttribute> feedAttributes)
         {
@@ -258,6 +263,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             Console.WriteLine($"Added feed mapping with resource name" +
                 $" '{response.Results[0].ResourceName}'.");
         }
+        // [END add_ad_customizer_2]
 
         /// <summary>
         /// Creates two different feed items to enable two different ad customizations.
@@ -267,6 +273,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="feedResourceName">The resource name of the feed.</param>
         /// <param name="feedAttributes">The attributes of the feed.</param>
         /// <returns>The resource names of the feed items.</returns>
+        // [START add_ad_customizer_3]
         private List<string> CreateFeedItems(GoogleAdsClient client, long customerId,
                     string feedResourceName, Dictionary<string, FeedAttribute> feedAttributes)
         {
@@ -300,6 +307,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             }
             return feedItemResourceNames;
         }
+        // [END add_ad_customizer_3]
 
         /// <summary>
         /// Helper function to create a FeedItemOperation.
@@ -310,6 +318,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="feedResourceName">The resource name of the feed.</param>
         /// <param name="feedAttributes">The attributes to be set on the feed.</param>
         /// <returns>A FeedItemOperation to create a feed item.</returns>
+        // [START add_ad_customizer_4]
         private FeedItemOperation CreateFeedItemOperation(string name, string price, string date,
                     string feedResourceName, Dictionary<string, FeedAttribute> feedAttributes)
         {
@@ -342,6 +351,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 Create = feedItem
             };
         }
+        // [END add_ad_customizer_4]
 
         /// <summary>
         /// Restricts the feed items to work only with a specific ad group; this prevents the
@@ -352,6 +362,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="adGroupIds">The ad group IDs to bind the feed items to..</param>
         /// <param name="feedItemResourceNames">The resource names of the feed items.</param>
+        // [START add_ad_customizer_5]
         private void CreateFeedItemTargets(GoogleAdsClient client,
                     long customerId, long[] adGroupIds, List<string> feedItemResourceNames)
         {
@@ -387,6 +398,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                     $"'{response.Results[0].ResourceName}'.");
             }
         }
+        // [END add_ad_customizer_5]
 
         /// <summary>
         /// Creates expanded text ads that use the ad customizer feed to populate the placeholders.
@@ -395,6 +407,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="adGroupIds">The ad group IDs in which to create the ads.</param>
         /// <param name="feedName">Name of the feed.</param>
+        // [START add_ad_customizer_6]
         private void CreateAdsWithCustomizations(GoogleAdsClient client, long customerId,
                     long[] adGroupIds, string feedName)
         {
@@ -442,5 +455,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 Console.WriteLine($"Added an ad with resource name '{result.ResourceName}'.");
             }
         }
+        // [END add_ad_customizer_6]
     }
 }
