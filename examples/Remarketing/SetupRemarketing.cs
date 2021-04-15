@@ -143,6 +143,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="client">The Google Ads API client.</param>
         /// <param name="customerId">The Google Ads customer ID.</param>
         /// <returns>The resource name of the newly created user list.</returns>
+        // [START setup_remarketing]
         private string CreateUserList(GoogleAdsClient client, long customerId)
         {
             // Get the UserListService client.
@@ -203,6 +204,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
             return userListResourceName;
         }
+        // [END setup_remarketing]
 
         /// <summary>
         /// Creates an ad group criterion that targets a user list with an ad group.
@@ -213,6 +215,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="userListResourceName">The resource name of the user list to be
         /// targeted.</param>
         /// <returns>The resource name of the newly created ad group criterion.</returns>
+        // [START setup_remarketing_1]
         private string TargetAdsInAdGroupToUserList(
             GoogleAdsClient client, long customerId, long adGroupId, string userListResourceName)
         {
@@ -248,6 +251,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 $"'{userListResourceName}' with ad group with ID {adGroupId}.");
             return adGroupCriterionResourceName;
         }
+        // [END setup_remarketing_1]
 
         /// <summary>
         /// Updates the bid modifier on an ad group criterion.
@@ -296,6 +300,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="client">The Google Ads API client.</param>
         /// <param name="customerId">The Google Ads customer ID.</param>
         /// <param name="campaignId">The campaign from which to remove the ad group criteria.</param>
+        // [START setup_remarketing_3]
         private void RemoveExistingListCriteriaFromAdGroup(GoogleAdsClient client, long customerId,
             long campaignId)
         {
@@ -324,6 +329,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                     $"'{result.ResourceName}'.");
             }
         }
+        // [END setup_remarketing_3]
 
         /// <summary>
         /// Finds all of user list ad group criteria under a campaign.
@@ -332,6 +338,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="customerId">The Google Ads customer ID.</param>
         /// <param name="campaignId">The campaign in which to search the ad group criteria.</param>
         /// <returns>A list of ad group criteria resource names.</returns>
+        // [START setup_remarketing_2]
         private List<string> GetUserListAdGroupCriteria(
             GoogleAdsClient client, long customerId, long campaignId)
         {
@@ -366,6 +373,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
             return userListCriteriaResourceNames;
         }
+        // [END setup_remarketing_2]
 
         /// <summary>
         /// Creates a campaign criterion that targets a user list with a campaign.
@@ -376,6 +384,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="userListResourceName">The resource name of the user list to be
         /// targeted.</param>
         /// <returns>The resource name of the newly created campaign criterion.</returns>
+        // [START setup_remarketing_4]
         private string TargetAdsInCampaignToUserList(
             GoogleAdsClient client, long customerId, long campaignId, string userListResourceName)
         {
@@ -412,6 +421,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
             return campaignCriterionResourceName;
         }
+        // [END setup_remarketing_4]
 
         /// <summary>
         /// Updates the bid modifier on a campaign criterion.

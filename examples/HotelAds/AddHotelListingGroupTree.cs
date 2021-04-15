@@ -189,6 +189,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         ///     ad group criteria.</param>
         /// <returns>The string resource name of the "other hotel classes" node, which serves as the
         ///     parent node for the next level of the listing tree.</returns>
+        // [START add_hotel_listing_group_tree]
         private string AddLevel1Nodes(long customerId, long adGroupId, string rootResourceName,
             List<AdGroupCriterionOperation> operations, long percentCpcBidMicroAmount)
         {
@@ -250,6 +251,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
             return otherHotelsAdGroupCriterion.ResourceName;
         }
+        // [END add_hotel_listing_group_tree]
 
         /// <summary>
         /// Creates child nodes on level 2, partitioned by the country region.

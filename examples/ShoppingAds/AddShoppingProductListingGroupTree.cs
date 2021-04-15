@@ -96,6 +96,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// existing listing group tree on the ad group, if it already exists. The example will
         /// throw a <code>LISTING_GROUP_ALREADY_EXISTS</code> error if listing group tree already
         /// exists and this option is not set to true.</param>
+        // [START add_shopping_product_listing_group_tree]
         public void Run(GoogleAdsClient client, long customerId, long adGroupId,
             bool replaceExistingTree)
         {
@@ -284,6 +285,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 throw;
             }
         }
+        // [END add_shopping_product_listing_group_tree]
 
         /// <summary>
         /// Removes all the ad group criteria that define the existing listing group tree for an

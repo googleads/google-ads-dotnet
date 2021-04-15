@@ -102,6 +102,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 FeedItem feedItem = RemoveAttributeValueFromFeedItem(client, customerId, feedId,
                     feedItemId, placeholdersToFeedAttributesMap, flightPlaceholderField);
 
+                // [START remove_flights_feed_item_attribute_value_1]
                 // Creates the operation.
                 FeedItemOperation operation = new FeedItemOperation
                 {
@@ -117,6 +118,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                     Console.WriteLine("Updated feed item with resource name " +
                         $"'{result.ResourceName}'.");
                 }
+                // [END remove_flights_feed_item_attribute_value_1]
             }
             catch (GoogleAdsException e)
             {
@@ -222,6 +224,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <returns>The modified feed item.</returns>
         /// <exception cref="ArgumentException">If the specified attribute was not found in the
         /// feed item.</exception>
+        // [START remove_flights_feed_item_attribute_value]
         private FeedItem RemoveAttributeValueFromFeedItem(GoogleAdsClient client, long customerId,
             long feedId, long feedItemId,
             Dictionary<FlightPlaceholderField, FeedAttribute> placeholdersToFeedAttributesMap,
@@ -260,6 +263,8 @@ namespace Google.Ads.GoogleAds.Examples.V6
             feedItem.AttributeValues.RemoveAt(attributeIndex);
             return feedItem;
         }
+        // [END remove_flights_feed_item_attribute_value]
+
 
         /// <summary>
         /// Retrieves a feed item and its attribute values given a resource name.
