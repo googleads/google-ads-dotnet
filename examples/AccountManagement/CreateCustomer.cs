@@ -1,4 +1,4 @@
-﻿// Copyright 2019 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -56,6 +56,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="managerCustomerId">The manager customer ID.</param>
+        // [START create_customer]
         public void Run(GoogleAdsClient client, long managerCustomerId)
         {
             // Get the CustomerService.
@@ -96,5 +97,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 throw;
             }
         }
+        // [END create_customer]
     }
 }

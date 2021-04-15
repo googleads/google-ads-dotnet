@@ -110,6 +110,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID.</param>
         /// <returns>The resource name of the newly created campaign budget.</returns>
+        // [START add_local_campaign]
         private string CreateCampaignBudget(GoogleAdsClient client, in long customerId)
         {
             // Get the CampaignBudgetService client.
@@ -145,6 +146,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
             return campaignBudgetResourceName;
         }
+        // [END add_local_campaign]
 
         /// <summary>
         /// Creates a Local campaign.
@@ -154,6 +156,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="budgetResourceName">The resource name of the budget to use with the new
         ///     campaign.</param>
         /// <returns>The resource name of the newly created campaign.</returns>
+        // [START add_local_campaign_1]
         private string CreateCampaign(GoogleAdsClient client, long customerId,
             string budgetResourceName)
         {
@@ -219,6 +222,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
             return campaignResourceName;
         }
+        // [END add_local_campaign_1]
 
         /// <summary>
         /// Creates an ad group for the given campaign.
@@ -228,6 +232,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="campaignResourceName">The campaign resource name to which to attach the ad
         ///     group.</param>
         /// <returns>The string resource name for the newly created ad group.</returns>
+        // [START add_local_campaign_2]
         private string CreateAdGroup(GoogleAdsClient client, long customerId,
             string campaignResourceName)
         {
@@ -262,6 +267,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             Console.WriteLine($"Created ad group with resource name '{adGroupResourceName}'.");
             return adGroupResourceName;
         }
+        // [END add_local_campaign_2]
 
         /// <summary>
         /// Creates a Local ad for the given ad group.
@@ -270,6 +276,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="customerId">The client customer ID.</param>
         /// <param name="adGroupResourceName">The ad group resource name to which the ad will
         ///     belong.</param>
+        // [START add_local_campaign_3]
         private void CreateLocalAd(GoogleAdsClient client, in long customerId,
             string adGroupResourceName)
         {
@@ -343,6 +350,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             Console.WriteLine("Created ad group ad with resource name " +
                 $"'{adGroupAdResponse.Results.First().ResourceName}'.");
         }
+        // [END add_local_campaign_3]
 
         /// <summary>
         /// Creates an ad text asset with the given text.
@@ -365,6 +373,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="imageUrl">The URL of the image source.</param>
         /// <param name="imageName">The name to associate with the image asset.</param>
         /// <returns>A new ad text asset with the given text.</returns>
+        // [START add_local_campaign_4]
         private string CreateImageAsset(GoogleAdsClient client, long customerId, string imageUrl,
             string imageName)
         {
@@ -400,6 +409,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
             return assetResourceName;
         }
+        // [END add_local_campaign_4]
 
         /// <summary>
         /// Creates a YouTube video asset.
@@ -409,6 +419,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="youtubeVideoId">The YouTube video ID to be attached to the asset.</param>
         /// <param name="youtubeVideoName">The name to associate with the video.</param>
         /// <returns></returns>
+        // [START add_local_campaign_5]
         private string CreateYoutubeVideoAsset(GoogleAdsClient client, in long customerId,
             string youtubeVideoId, string youtubeVideoName)
         {
@@ -443,5 +454,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
             return assetResourceName;
         }
+        // [END add_local_campaign_5]
     }
 }

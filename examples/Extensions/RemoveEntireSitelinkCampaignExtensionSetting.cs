@@ -71,6 +71,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="client">The Google Ads API client.</param>
         /// <param name="customerId">The Google Ads customer ID.</param>
         /// <param name="campaignId">ID of the campaign from which sitelinks will be removed.</param>
+        // [START remove_entire_sitelink_campaign_extension_setting]
         public void Run(GoogleAdsClient client, long customerId, long campaignId)
         {
             // Get the GoogleAdsService client.
@@ -132,6 +133,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 throw;
             }
         }
+        // [END remove_entire_sitelink_campaign_extension_setting]
 
         /// <summary>
         /// Creates a mutate operation for the sitelink campaign extension setting that will be
@@ -172,6 +174,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="campaignId">The campaign ID from which to fetch sitelink extension feed
         /// items.</param>
         /// <returns>A list of resource names of extension feed items.</returns>
+        // [START remove_entire_sitelink_campaign_extension_setting_1]
         private List<string> GetAllSitelinkExtensionFeedItems(
             GoogleAdsServiceClient googleAdsServiceClient, in long customerId, in long campaignId)
         {
@@ -213,6 +216,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
             return extensionFeedItemResourceNames;
         }
+        // [END remove_entire_sitelink_campaign_extension_setting_1]
 
         /// <summary>
         /// Creates mutate operations for the sitelink extension feed items that will be removed.

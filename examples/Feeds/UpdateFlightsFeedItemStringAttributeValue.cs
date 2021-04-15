@@ -1,4 +1,4 @@
-﻿// Copyright 2020 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -110,6 +110,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// updated.</param>
         /// <param name="attributeValue">String value with which to update the
         /// FeedAttributeValue.</param>
+        // [START update_flights_feed_item_string_attribute_value]
         private void UpdateFeedItem(GoogleAdsClient client, long customerId, long feedId,
             long feedItemId, string flightPlaceholderFieldName, string attributeValue)
         {
@@ -279,5 +280,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
 
             return googleAdsService.Search(request).First().FeedItem;
         }
+        // [END update_flights_feed_item_string_attribute_value]
     }
 }

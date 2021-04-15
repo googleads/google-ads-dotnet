@@ -71,10 +71,12 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 client.GetService(Services.V6.GoogleAdsService);
 
             // Create a search request that retrieves the targeting settings from a given ad group.
+            // [START update_audience_target_restriction]
             string query = $@"
                 SELECT ad_group.id, ad_group.name, ad_group.targeting_setting.target_restrictions
                 FROM ad_group
                 WHERE ad_group.id = {adGroupId}";
+            // [END update_audience_target_restriction]
 
             try
             {
@@ -106,6 +108,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                     // TargetingSetting object with the updated audience target restriction because
                     // Google will overwrite the entire targeting_setting field of the ad group when
                     // the field mask includes targeting_setting in an update operation.
+                    // [START update_audience_target_restriction_1]
                     foreach (TargetRestriction targetRestriction in targetRestrictions)
                     {
                         TargetingDimension targetingDimension =
@@ -138,6 +141,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                             });
                         }
                     }
+                    // [END update_audience_target_restriction_1]
                 }
 
                 // Only update the TargetSetting on the ad group if there is an AUDIENCE
@@ -169,6 +173,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="adGroupId">The ad group ID for which to update the audience targeting
         ///     restriction.</param>
         /// <param name="targetingSetting">The updated targeting setting.</param>
+        // [START update_audience_target_restriction_2]
         private void UpdateTargetingSetting(GoogleAdsClient client, long customerId, long
             adGroupId, TargetingSetting targetingSetting)
         {
@@ -200,5 +205,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 $"'{response.Results.First().ResourceName}'; set the AUDIENCE target restriction " +
                 "to 'Observation'.");
         }
+        // [END update_audience_target_restriction_2]
     }
 }
