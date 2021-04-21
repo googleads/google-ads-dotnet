@@ -96,7 +96,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="campaignId">ID of the campaign to which lead form extensions are
         /// added.</param>
         /// <param name="leadFormAssetResourceName">The lead form asset resource name.</param>
-        // [START AddLeadFormExtension_1]
+        // [START add_lead_form_extension_1]
         private void CreateLeadFormExtension(GoogleAdsClient client, long customerId,
             long campaignId, string leadFormAssetResourceName)
         {
@@ -125,7 +125,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
                     $" '{result.ResourceName}' for campaign ID {campaignId}.");
             }
         }
-        // [END AddLeadFormExtension_1]
+        // [END add_lead_form_extension_1]
 
         /// <summary>
         /// Creates the lead form asset.
@@ -133,7 +133,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
         /// <returns>The lead form asset resource name.</returns>
-        // [START AddLeadFormExtension]
+        // [START add_lead_form_extension]
         private string CreateLeadFormAsset(GoogleAdsClient client, long customerId)
         {
             AssetServiceClient assetService = client.GetService(Services.V6.AssetService);
@@ -233,6 +233,6 @@ namespace Google.Ads.GoogleAds.Examples.V6
                 "was created.");
             return leadFormAssetResourceName;
         }
-        // [END AddLeadFormExtension]
+        // [END add_lead_form_extension]
     }
 }
