@@ -15,13 +15,13 @@
 using System;
 using System.Linq;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V6.Common;
-using Google.Ads.GoogleAds.V6.Errors;
-using Google.Ads.GoogleAds.V6.Resources;
-using Google.Ads.GoogleAds.V6.Services;
-using static Google.Ads.GoogleAds.V6.Enums.ExtensionTypeEnum.Types;
+using Google.Ads.GoogleAds.V7.Common;
+using Google.Ads.GoogleAds.V7.Errors;
+using Google.Ads.GoogleAds.V7.Resources;
+using Google.Ads.GoogleAds.V7.Services;
+using static Google.Ads.GoogleAds.V7.Enums.ExtensionTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V6
+namespace Google.Ads.GoogleAds.Examples.V7
 {
     /// <summary>
     /// This example adds a hotel callout extension to a specific account, campaign within the
@@ -119,7 +119,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         {
             // Gets the ExtensionFeedItemService client.
             ExtensionFeedItemServiceClient extensionFeedItemService =
-                client.GetService(Services.V6.ExtensionFeedItemService);
+                client.GetService(Services.V7.ExtensionFeedItemService);
 
             // Creates the callout extension with the specified text and language.
             HotelCalloutFeedItem hotelCalloutFeedItem = new HotelCalloutFeedItem
@@ -163,7 +163,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         {
             // Gets the CustomerExtensionSettingService client.
             CustomerExtensionSettingServiceClient customerExtensionSettingService =
-                client.GetService(Services.V6.CustomerExtensionSettingService);
+                client.GetService(Services.V7.CustomerExtensionSettingService);
 
             // Creates a customer extension setting, sets its type to HOTEL_CALLOUT, and attaches
             // the feed item.
@@ -202,7 +202,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         {
             // Gets the CampaignExtensionSettingService client.
             CampaignExtensionSettingServiceClient campaignExtensionSettingService =
-                client.GetService(Services.V6.CampaignExtensionSettingService);
+                client.GetService(Services.V7.CampaignExtensionSettingService);
 
             // Creates a campaign extension setting, sets its type to HOTEL_CALLOUT, and attaches
             // the feed item.
@@ -242,7 +242,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         {
             // Gets the AdGroupExtensionSettingService client.
             AdGroupExtensionSettingServiceClient adGroupExtensionSettingService =
-                client.GetService(Services.V6.AdGroupExtensionSettingService);
+                client.GetService(Services.V7.AdGroupExtensionSettingService);
 
             // Creates an ad group extension setting, sets its type to HOTEL_CALLOUT, and attaches
             // the feed item.

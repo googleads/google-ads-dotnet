@@ -21,19 +21,19 @@ using System.Linq;
 using System.Web;
 
 using aw = global::Google.Api.Ads.AdWords.v201809;
-using gag__AdGroupAdRotationMode = Google.Ads.GoogleAds.V6.Enums.AdGroupAdRotationModeEnum.Types.AdGroupAdRotationMode;
-using gag__AdGroupStatus = Google.Ads.GoogleAds.V6.Enums.AdGroupStatusEnum.Types.AdGroupStatus;
-using gag__AdvertisingChannelType = Google.Ads.GoogleAds.V6.Enums.AdvertisingChannelTypeEnum.Types.AdvertisingChannelType;
-using gag__BudgetDeliveryMethod = Google.Ads.GoogleAds.V6.Enums.BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod;
-using gag__CampaignStatus = Google.Ads.GoogleAds.V6.Enums.CampaignStatusEnum.Types.CampaignStatus;
-using gag__NetworkSettings = Google.Ads.GoogleAds.V6.Resources.Campaign.Types.NetworkSettings;
+using gag__AdGroupAdRotationMode = Google.Ads.GoogleAds.V7.Enums.AdGroupAdRotationModeEnum.Types.AdGroupAdRotationMode;
+using gag__AdGroupStatus = Google.Ads.GoogleAds.V7.Enums.AdGroupStatusEnum.Types.AdGroupStatus;
+using gag__AdvertisingChannelType = Google.Ads.GoogleAds.V7.Enums.AdvertisingChannelTypeEnum.Types.AdvertisingChannelType;
+using gag__BudgetDeliveryMethod = Google.Ads.GoogleAds.V7.Enums.BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod;
+using gag__CampaignStatus = Google.Ads.GoogleAds.V7.Enums.CampaignStatusEnum.Types.CampaignStatus;
+using gag__NetworkSettings = Google.Ads.GoogleAds.V7.Resources.Campaign.Types.NetworkSettings;
 
-using gagvc = Google.Ads.GoogleAds.V6.Common;
-using gagver = Google.Ads.GoogleAds.V6.Errors;
-using gagvr = Google.Ads.GoogleAds.V6.Resources;
-using gagvs = Google.Ads.GoogleAds.V6.Services;
+using gagvc = Google.Ads.GoogleAds.V7.Common;
+using gagver = Google.Ads.GoogleAds.V7.Errors;
+using gagvr = Google.Ads.GoogleAds.V7.Resources;
+using gagvs = Google.Ads.GoogleAds.V7.Services;
 
-namespace Google.Ads.GoogleAds.Examples.V6.Migration.CampaignManagement
+namespace Google.Ads.GoogleAds.Examples.V7.Migration.CampaignManagement
 {
     /// <summary>
     /// This code example is the fourth in a series of code examples that shows how to create
@@ -108,7 +108,7 @@ namespace Google.Ads.GoogleAds.Examples.V6.Migration.CampaignManagement
         {
             // Get the CampaignBudgetService.
             gagvs::CampaignBudgetServiceClient budgetService = client.GetService(
-                Services.V6.CampaignBudgetService);
+                Services.V7.CampaignBudgetService);
 
             // Create the campaign budget.
             gagvr::CampaignBudget budget = new gagvr::CampaignBudget()
@@ -153,7 +153,7 @@ namespace Google.Ads.GoogleAds.Examples.V6.Migration.CampaignManagement
         {
             // Get the GoogleAdsService.
             gagvs::GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V6.GoogleAdsService);
+                Services.V7.GoogleAdsService);
 
             // Create the search query.
             string searchQuery = "SELECT campaign_budget.id, campaign_budget.name, " +
@@ -180,7 +180,7 @@ namespace Google.Ads.GoogleAds.Examples.V6.Migration.CampaignManagement
         {
             // Get the CampaignService.
             gagvs::CampaignServiceClient campaignService = client.GetService(
-                Services.V6.CampaignService);
+                Services.V7.CampaignService);
 
             // Create a budget to be used for the campaign.
             string budgetResource = gagver::ResourceNames.CampaignBudget(customerId, budgetId);
@@ -246,7 +246,7 @@ namespace Google.Ads.GoogleAds.Examples.V6.Migration.CampaignManagement
         {
             // Get the GoogleAdsService.
             gagvs::GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V6.GoogleAdsService);
+                Services.V7.GoogleAdsService);
 
             // Create the search query.
             string searchQuery = "SELECT campaign.id, campaign.name, " +
@@ -273,7 +273,7 @@ namespace Google.Ads.GoogleAds.Examples.V6.Migration.CampaignManagement
         {
             // Get the AdGroupService.
             gagvs::AdGroupServiceClient adGroupService = client.GetService(
-                Services.V6.AdGroupService);
+                Services.V7.AdGroupService);
 
             // Create the ad group.
             gagvr::AdGroup adGroup = new gagvr::AdGroup()
@@ -323,7 +323,7 @@ namespace Google.Ads.GoogleAds.Examples.V6.Migration.CampaignManagement
         {
             // Get the GoogleAdsService.
             gagvs::GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V6.GoogleAdsService);
+                Services.V7.GoogleAdsService);
 
             // Create the search query.
             string searchQuery = "SELECT ad_group.id, ad_group.name, " +
