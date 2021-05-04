@@ -13,14 +13,14 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V6.Errors;
-using Google.Ads.GoogleAds.V6.Resources;
-using Google.Ads.GoogleAds.V6.Services;
+using Google.Ads.GoogleAds.V7.Errors;
+using Google.Ads.GoogleAds.V7.Resources;
+using Google.Ads.GoogleAds.V7.Services;
 
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V6
+namespace Google.Ads.GoogleAds.Examples.V7
 {
     /// <summary>
     /// This code example adds a campaign label to a list of campaigns.
@@ -70,7 +70,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         {
             // Get the CampaignLabelServiceClient.
             CampaignLabelServiceClient campaignLabelService =
-                client.GetService(Services.V6.CampaignLabelService);
+                client.GetService(Services.V7.CampaignLabelService);
 
             // Gets the resource name of the label to be added across all given campaigns.
             string labelResourceName = ResourceNames.Label(customerId, labelId);

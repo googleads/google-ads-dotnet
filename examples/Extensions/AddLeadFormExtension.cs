@@ -16,19 +16,19 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V6.Common;
-using Google.Ads.GoogleAds.V6.Enums;
-using Google.Ads.GoogleAds.V6.Errors;
-using Google.Ads.GoogleAds.V6.Resources;
-using Google.Ads.GoogleAds.V6.Services;
-using static Google.Ads.GoogleAds.V6.Enums.AssetLinkStatusEnum.Types;
-using static Google.Ads.GoogleAds.V6.Enums.FeedAttributeTypeEnum.Types;
-using static Google.Ads.GoogleAds.V6.Enums.LeadFormCallToActionTypeEnum.Types;
-using static Google.Ads.GoogleAds.V6.Enums.LeadFormFieldUserInputTypeEnum.Types;
-using static Google.Ads.GoogleAds.V6.Enums.LeadFormPostSubmitCallToActionTypeEnum.Types;
-using static Google.Ads.GoogleAds.V6.Enums.SitelinkPlaceholderFieldEnum.Types;
+using Google.Ads.GoogleAds.V7.Common;
+using Google.Ads.GoogleAds.V7.Enums;
+using Google.Ads.GoogleAds.V7.Errors;
+using Google.Ads.GoogleAds.V7.Resources;
+using Google.Ads.GoogleAds.V7.Services;
+using static Google.Ads.GoogleAds.V7.Enums.AssetLinkStatusEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.FeedAttributeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.LeadFormCallToActionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.LeadFormFieldUserInputTypeEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.LeadFormPostSubmitCallToActionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.SitelinkPlaceholderFieldEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V6
+namespace Google.Ads.GoogleAds.Examples.V7
 {
     /// <summary>
     /// This code example creates a lead form and a lead form extension for a campaign. Run
@@ -101,7 +101,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             long campaignId, string leadFormAssetResourceName)
         {
             CampaignAssetServiceClient campaignAssetService = client.GetService(
-                Services.V6.CampaignAssetService);
+                Services.V7.CampaignAssetService);
 
             // Creates the campaign asset for the lead form.
             CampaignAsset campaignAsset = new CampaignAsset()
@@ -136,7 +136,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         // [START add_lead_form_extension]
         private string CreateLeadFormAsset(GoogleAdsClient client, long customerId)
         {
-            AssetServiceClient assetService = client.GetService(Services.V6.AssetService);
+            AssetServiceClient assetService = client.GetService(Services.V7.AssetService);
 
             // Creates the lead form asset.
             Asset leadFormAsset = new Asset()

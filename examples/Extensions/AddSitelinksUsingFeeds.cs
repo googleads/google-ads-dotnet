@@ -16,15 +16,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V6.Common;
-using Google.Ads.GoogleAds.V6.Enums;
-using Google.Ads.GoogleAds.V6.Errors;
-using Google.Ads.GoogleAds.V6.Resources;
-using Google.Ads.GoogleAds.V6.Services;
-using static Google.Ads.GoogleAds.V6.Enums.FeedAttributeTypeEnum.Types;
-using static Google.Ads.GoogleAds.V6.Enums.SitelinkPlaceholderFieldEnum.Types;
+using Google.Ads.GoogleAds.V7.Common;
+using Google.Ads.GoogleAds.V7.Enums;
+using Google.Ads.GoogleAds.V7.Errors;
+using Google.Ads.GoogleAds.V7.Resources;
+using Google.Ads.GoogleAds.V7.Services;
+using static Google.Ads.GoogleAds.V7.Enums.FeedAttributeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.SitelinkPlaceholderFieldEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V6
+namespace Google.Ads.GoogleAds.Examples.V7
 {
     /// <summary>
     /// This code example adds sitelinks to a campaign using feed services.
@@ -112,9 +112,9 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <returns>The newly created feed.</returns>
         private Feed CreateFeed(GoogleAdsClient client, long customerId)
         {
-            FeedServiceClient feedServiceClient = client.GetService(Services.V6.FeedService);
+            FeedServiceClient feedServiceClient = client.GetService(Services.V7.FeedService);
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V6.GoogleAdsService);
+                Services.V7.GoogleAdsService);
 
             Feed feed = new Feed()
             {
@@ -228,7 +228,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         /// <returns>A list of string Feed Item Resource Names.</returns>
         private List<string> CreateFeedItems(GoogleAdsClient client, long customerId, Feed feed)
         {
-            FeedItemServiceClient feedItemService = client.GetService(Services.V6.FeedItemService);
+            FeedItemServiceClient feedItemService = client.GetService(Services.V7.FeedItemService);
 
             List<FeedItemOperation> operations = new List<FeedItemOperation>
             {
@@ -274,7 +274,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         private void CreateFeedMapping(GoogleAdsClient client, long customerId, Feed feed)
         {
             FeedMappingServiceClient feedMappingServiceClient =
-                client.GetService(Services.V6.FeedMappingService);
+                client.GetService(Services.V7.FeedMappingService);
 
             FeedMapping feedMapping = new FeedMapping
             {
@@ -331,7 +331,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             Feed feed)
         {
             CampaignFeedServiceClient campaignFeedServiceClient =
-                client.GetService(Services.V6.CampaignFeedService);
+                client.GetService(Services.V7.CampaignFeedService);
 
             // Fetch the Feed Item IDs and collapse them into a single comma-separated string.
             List<long> feedItemIds = feed.Attributes.Select(attr => attr.Id).ToList();
@@ -370,7 +370,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             string feedItem)
         {
             FeedItemTargetServiceClient feedItemTargetServiceClient =
-                client.GetService(Services.V6.FeedItemTargetService);
+                client.GetService(Services.V7.FeedItemTargetService);
 
             FeedItemTarget feedItemTarget = new FeedItemTarget()
             {

@@ -14,13 +14,13 @@
 
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V6.Errors;
-using Google.Ads.GoogleAds.V6.Enums;
-using Google.Ads.GoogleAds.V6.Resources;
-using Google.Ads.GoogleAds.V6.Services;
+using Google.Ads.GoogleAds.V7.Errors;
+using Google.Ads.GoogleAds.V7.Enums;
+using Google.Ads.GoogleAds.V7.Resources;
+using Google.Ads.GoogleAds.V7.Services;
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V6
+namespace Google.Ads.GoogleAds.Examples.V7
 {
     /// <summary>
     /// This code example illustrates how to update an ad group, setting its status to 'PAUSED',
@@ -74,7 +74,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         public void Run(GoogleAdsClient client, long customerId, long adGroupId,
             long? cpcBidMicroAmount)
         {
-            AdGroupServiceClient adGroupService = client.GetService(Services.V6.AdGroupService);
+            AdGroupServiceClient adGroupService = client.GetService(Services.V7.AdGroupService);
 
             // Create an ad group with the specified ID.
             AdGroup adGroup = new AdGroup();

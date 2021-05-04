@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package experimental.users.eschwelm.fieldmaskexamples;
+package google.ads.googleads.tests.util;
 option csharp_namespace = "Google.Ads.GoogleAds.Tests.Util";
 
 import "google/protobuf/wrappers.proto";
@@ -29,8 +29,12 @@ message Foo {
   Bar bar = 2;
   repeated Bar bars = 3;
   optional string text = 4;
+  Baz baz = 5;
 }
 
 message Bar {
   optional int64 num = 1;
+}
+
+message Baz {
 }

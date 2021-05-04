@@ -13,14 +13,14 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V6.Errors;
-using Google.Ads.GoogleAds.V6.Resources;
-using Google.Ads.GoogleAds.V6.Services;
+using Google.Ads.GoogleAds.V7.Errors;
+using Google.Ads.GoogleAds.V7.Resources;
+using Google.Ads.GoogleAds.V7.Services;
 using Google.Api.Gax;
 using System;
-using static Google.Ads.GoogleAds.V6.Resources.AdGroupBidModifier;
+using static Google.Ads.GoogleAds.V7.Resources.AdGroupBidModifier;
 
-namespace Google.Ads.GoogleAds.Examples.V6
+namespace Google.Ads.GoogleAds.Examples.V7
 {
     /// <summary>
     /// This code example gets ad group bid modifiers.
@@ -66,11 +66,13 @@ namespace Google.Ads.GoogleAds.Examples.V6
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService =
-                client.GetService(Services.V6.GoogleAdsService);
+                client.GetService(Services.V7.GoogleAdsService);
 
             string searchQuery = @"
                 SELECT
-                    ad_group.id, ad_group_bid_modifier.criterion_id, campaign.id,
+                    ad_group.id,
+                    ad_group_bid_modifier.criterion_id,
+                    campaign.id,
                     ad_group_bid_modifier.bid_modifier,
                     ad_group_bid_modifier.device.type,
                     ad_group_bid_modifier.hotel_date_selection_type.type,
@@ -79,6 +81,8 @@ namespace Google.Ads.GoogleAds.Examples.V6
                     ad_group_bid_modifier.hotel_length_of_stay.min_nights,
                     ad_group_bid_modifier.hotel_length_of_stay.max_nights,
                     ad_group_bid_modifier.hotel_check_in_day.day_of_week,
+                    ad_group_bid_modifier.hotel_check_in_date_range.start_date,
+                    ad_group_bid_modifier.hotel_check_in_date_range.end_date,
                     ad_group_bid_modifier.preferred_content.type
                 FROM
                     ad_group_bid_modifier";
@@ -144,6 +148,12 @@ namespace Google.Ads.GoogleAds.Examples.V6
                             criterionDetails +=
                                 $"Min Nights: {adGroupBidModifier.HotelLengthOfStay.MinNights}," +
                                 $"Max Nights: {adGroupBidModifier.HotelLengthOfStay.MaxNights}";
+                            break;
+
+                        case CriterionOneofCase.HotelCheckInDateRange:
+                            criterionDetails +=
+                                $"Start Date: {adGroupBidModifier.HotelCheckInDateRange.StartDate}," +
+                                $"End Date: {adGroupBidModifier.HotelCheckInDateRange.EndDate}";
                             break;
 
                         case CriterionOneofCase.PreferredContent:

@@ -18,14 +18,14 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V6.Common;
-using Google.Ads.GoogleAds.V6.Errors;
-using Google.Ads.GoogleAds.V6.Resources;
-using Google.Ads.GoogleAds.V6.Services;
-using static Google.Ads.GoogleAds.V6.Enums.OfflineUserDataJobTypeEnum.Types;
-using static Google.Ads.GoogleAds.V6.Enums.OfflineUserDataJobStatusEnum.Types;
+using Google.Ads.GoogleAds.V7.Common;
+using Google.Ads.GoogleAds.V7.Errors;
+using Google.Ads.GoogleAds.V7.Resources;
+using Google.Ads.GoogleAds.V7.Services;
+using static Google.Ads.GoogleAds.V7.Enums.OfflineUserDataJobTypeEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.OfflineUserDataJobStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V6
+namespace Google.Ads.GoogleAds.Examples.V7
 {
     /// <summary>
     /// This code example uploads offline data for store sales transactions.
@@ -120,7 +120,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         {
             // Get the OfflineUserDataJobServiceClient.
             OfflineUserDataJobServiceClient offlineUserDataJobServiceClient =
-                client.GetService(Services.V6.OfflineUserDataJobService);
+                client.GetService(Services.V7.OfflineUserDataJobService);
 
             // Ensure that a valid job type is provided.
             if (offlineUserDataJobType != OfflineUserDataJobType.StoreSalesUploadFirstParty &
@@ -480,7 +480,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             string offlineUserDataJobResourceName)
         {
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V6.GoogleAdsService);
+                client.GetService(Services.V7.GoogleAdsService);
 
             string query = $@"SELECT offline_user_data_job.resource_name,
                     offline_user_data_job.id,

@@ -13,25 +13,25 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V6.Common;
-using Google.Ads.GoogleAds.V6.Errors;
-using Google.Ads.GoogleAds.V6.Resources;
-using Google.Ads.GoogleAds.V6.Services;
+using Google.Ads.GoogleAds.V7.Common;
+using Google.Ads.GoogleAds.V7.Errors;
+using Google.Ads.GoogleAds.V7.Resources;
+using Google.Ads.GoogleAds.V7.Services;
 
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V6.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V6.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V6.Enums.AdvertisingChannelSubTypeEnum.Types;
-using static Google.Ads.GoogleAds.V6.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V6.Enums.AppCampaignAppStoreEnum.Types;
-using static Google.Ads.GoogleAds.V6.Enums.AppCampaignBiddingStrategyGoalTypeEnum.Types;
-using static Google.Ads.GoogleAds.V6.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V6.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V6.Enums.CriterionTypeEnum.Types;
-using static Google.Ads.GoogleAds.V6.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V7.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.AdvertisingChannelSubTypeEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.AppCampaignAppStoreEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.AppCampaignBiddingStrategyGoalTypeEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.CriterionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V7.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V6
+namespace Google.Ads.GoogleAds.Examples.V7
 {
     /// <summary>
     /// This code example adds a new App Campaign.
@@ -102,7 +102,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         {
             // Get the BudgetService.
             CampaignBudgetServiceClient budgetService = client.GetService(
-                Services.V6.CampaignBudgetService);
+                Services.V7.CampaignBudgetService);
 
             // Creates a campaign budget.
             CampaignBudget budget = new CampaignBudget()
@@ -143,7 +143,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             string budgetResourceName)
         {
             // Get the CampaignService.
-            CampaignServiceClient campaignService = client.GetService(Services.V6.CampaignService);
+            CampaignServiceClient campaignService = client.GetService(Services.V7.CampaignService);
 
             // Create the campaign.
             Campaign campaign = new Campaign()
@@ -221,7 +221,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         {
             // Get the CampaignCriterionService.
             CampaignCriterionServiceClient campaignCriterionService = client.GetService(
-                Services.V6.CampaignCriterionService);
+                Services.V7.CampaignCriterionService);
 
             List<CampaignCriterionOperation> operations = new List<CampaignCriterionOperation>();
 
@@ -311,7 +311,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             string campaignResourceName)
         {
             // Get the AdGroupService.
-            AdGroupServiceClient adGroupService = client.GetService(Services.V6.AdGroupService);
+            AdGroupServiceClient adGroupService = client.GetService(Services.V7.AdGroupService);
 
             // Creates an ad group.
             // Note that the ad group type must not be set.
@@ -354,7 +354,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         {
             // Get the AdGroupAdService.
             AdGroupAdServiceClient adGroupAdService = client.GetService(
-                Services.V6.AdGroupAdService);
+                Services.V7.AdGroupAdService);
 
             // Creates an ad group ad.
             AdGroupAd adGroupAd = new AdGroupAd

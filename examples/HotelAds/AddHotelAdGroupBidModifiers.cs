@@ -13,14 +13,14 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V6.Errors;
-using Google.Ads.GoogleAds.V6.Common;
-using Google.Ads.GoogleAds.V6.Resources;
-using Google.Ads.GoogleAds.V6.Services;
+using Google.Ads.GoogleAds.V7.Errors;
+using Google.Ads.GoogleAds.V7.Common;
+using Google.Ads.GoogleAds.V7.Resources;
+using Google.Ads.GoogleAds.V7.Services;
 using System;
-using DayOfWeek = Google.Ads.GoogleAds.V6.Enums.DayOfWeekEnum.Types.DayOfWeek;
+using DayOfWeek = Google.Ads.GoogleAds.V7.Enums.DayOfWeekEnum.Types.DayOfWeek;
 
-namespace Google.Ads.GoogleAds.Examples.V6
+namespace Google.Ads.GoogleAds.Examples.V7
 {
     /// <summary>
     /// This code example shows how to add ad group bid modifiers to a hotel ad group based on
@@ -64,7 +64,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         {
             // Get the AdGroupBidModifierService.
             AdGroupBidModifierServiceClient service = client.GetService(
-                Services.V6.AdGroupBidModifierService);
+                Services.V7.AdGroupBidModifierService);
 
             // Constructs the ad group resource name to use for each bid modifier.
             string adGroupResourceName = ResourceNames.AdGroup(customerId, adGroupId);

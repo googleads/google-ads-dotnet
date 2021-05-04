@@ -13,15 +13,15 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V6.Common;
-using Google.Ads.GoogleAds.V6.Errors;
-using Google.Ads.GoogleAds.V6.Resources;
-using Google.Ads.GoogleAds.V6.Services;
+using Google.Ads.GoogleAds.V7.Common;
+using Google.Ads.GoogleAds.V7.Errors;
+using Google.Ads.GoogleAds.V7.Resources;
+using Google.Ads.GoogleAds.V7.Services;
 using System;
-using static Google.Ads.GoogleAds.V6.Enums.ProductCustomAttributeIndexEnum.Types;
-using static Google.Ads.GoogleAds.V6.Enums.ProductTypeLevelEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.ProductCustomAttributeIndexEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.ProductTypeLevelEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V6
+namespace Google.Ads.GoogleAds.Examples.V7
 {
     /// <summary>
     /// This code example adds a shopping listing scope to a shopping campaign. The example will
@@ -83,7 +83,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         {
             // Get the CampaignCriterionService.
             CampaignCriterionServiceClient campaignCriterionService =
-                client.GetService(Services.V6.CampaignCriterionService);
+                client.GetService(Services.V7.CampaignCriterionService);
 
             // A listing scope allows you to filter the products that will be included in a given
             // campaign. You can specify multiple dimensions with conditions that must be met for

@@ -14,19 +14,19 @@
 
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V6.Common;
-using Google.Ads.GoogleAds.V6.Errors;
-using Google.Ads.GoogleAds.V6.Resources;
-using Google.Ads.GoogleAds.V6.Services;
+using Google.Ads.GoogleAds.V7.Common;
+using Google.Ads.GoogleAds.V7.Errors;
+using Google.Ads.GoogleAds.V7.Resources;
+using Google.Ads.GoogleAds.V7.Services;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V6.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V6.Enums.DeviceEnum.Types;
-using static Google.Ads.GoogleAds.V6.Enums.MediaTypeEnum.Types;
-using static Google.Ads.GoogleAds.V6.Enums.MimeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.DeviceEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.MediaTypeEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.MimeTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V6
+namespace Google.Ads.GoogleAds.Examples.V7
 {
     /// <summary>
     /// This code example adds a Gmail ad to a given ad group. The ad group's campaign needs to
@@ -95,7 +95,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         {
             // Get the MediaFileService.
             MediaFileServiceClient mediaFileService =
-                client.GetService(Services.V6.MediaFileService);
+                client.GetService(Services.V7.MediaFileService);
 
             // Creates a bytes array from the logo image data.
             byte[] logoImageData = MediaUtilities.GetAssetDataFromUrl(
@@ -170,7 +170,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         {
             // Get the AdGroupAdService.
             AdGroupAdServiceClient adGroupAdService =
-                client.GetService(Services.V6.AdGroupAdService);
+                client.GetService(Services.V7.AdGroupAdService);
 
             // Creates the Gmail ad info.
             GmailAdInfo gmailAdInfo = new GmailAdInfo()
