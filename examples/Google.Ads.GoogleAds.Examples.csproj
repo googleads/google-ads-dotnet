@@ -23,7 +23,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Condition="!Exists('..\src\Google.Ads.GoogleAds.csproj')"
-        Include="Google.Ads.GoogleAds" Version="7.1.0" />
+        Include="Google.Ads.GoogleAds" Version="8.0.0" />
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
