@@ -13,13 +13,13 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V6.Errors;
-using Google.Ads.GoogleAds.V6.Resources;
-using Google.Ads.GoogleAds.V6.Services;
+using Google.Ads.GoogleAds.V7.Errors;
+using Google.Ads.GoogleAds.V7.Resources;
+using Google.Ads.GoogleAds.V7.Services;
 
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V6
+namespace Google.Ads.GoogleAds.Examples.V7
 {
     /// <summary>
     /// This code example illustrates how to create a new customer under a given manager account.
@@ -60,7 +60,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         public void Run(GoogleAdsClient client, long managerCustomerId)
         {
             // Get the CustomerService.
-            CustomerServiceClient customerService = client.GetService(Services.V6.CustomerService);
+            CustomerServiceClient customerService = client.GetService(Services.V7.CustomerService);
 
             Customer customer = new Customer()
             {

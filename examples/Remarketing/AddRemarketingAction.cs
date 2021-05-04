@@ -14,15 +14,15 @@
 
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V6.Common;
-using Google.Ads.GoogleAds.V6.Errors;
-using Google.Ads.GoogleAds.V6.Resources;
-using Google.Ads.GoogleAds.V6.Services;
+using Google.Ads.GoogleAds.V7.Common;
+using Google.Ads.GoogleAds.V7.Errors;
+using Google.Ads.GoogleAds.V7.Resources;
+using Google.Ads.GoogleAds.V7.Services;
 
 using System;
 using System.Linq;
 
-namespace Google.Ads.GoogleAds.Examples.V6
+namespace Google.Ads.GoogleAds.Examples.V7
 {
     /// <summary>
     /// This code example adds a new remarketing action to the customer and then retrieves its
@@ -63,11 +63,11 @@ namespace Google.Ads.GoogleAds.Examples.V6
         {
             // Get the RemarketingActionService.
             RemarketingActionServiceClient remarketingActionService =
-                client.GetService(Services.V6.RemarketingActionService);
+                client.GetService(Services.V7.RemarketingActionService);
 
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService =
-                client.GetService(Services.V6.GoogleAdsService);
+                client.GetService(Services.V7.GoogleAdsService);
 
             try
             {

@@ -28,6 +28,7 @@ namespace Google.Ads.GoogleAds.Tests.Util.Examples
     /// </summary>
     [TestFixture]
     [Category("Smoke")]
+    [Parallelizable(ParallelScope.Self)]
     internal class ExampleRunnerTest
     {
         /// <summary>

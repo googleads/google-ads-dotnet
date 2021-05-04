@@ -16,22 +16,22 @@ using System;
 using System.Linq;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V6.Common;
-using Google.Ads.GoogleAds.V6.Errors;
-using Google.Ads.GoogleAds.V6.Resources;
-using Google.Ads.GoogleAds.V6.Services;
+using Google.Ads.GoogleAds.V7.Common;
+using Google.Ads.GoogleAds.V7.Errors;
+using Google.Ads.GoogleAds.V7.Resources;
+using Google.Ads.GoogleAds.V7.Services;
 using Google.Protobuf;
-using static Google.Ads.GoogleAds.V6.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V6.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V6.Enums.AdvertisingChannelSubTypeEnum.Types;
-using static Google.Ads.GoogleAds.V6.Enums.LocationSourceTypeEnum.Types;
-using static Google.Ads.GoogleAds.V6.Enums.OptimizationGoalTypeEnum.Types;
-using static Google.Ads.GoogleAds.V6.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V6.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V6.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V6.Enums.AssetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.AdvertisingChannelSubTypeEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.LocationSourceTypeEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.OptimizationGoalTypeEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.AssetTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V6
+namespace Google.Ads.GoogleAds.Examples.V7
 {
     /// <summary>
     /// This example adds an Local campaign.
@@ -115,7 +115,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         {
             // Get the CampaignBudgetService client.
             CampaignBudgetServiceClient campaignBudgetServiceClient =
-                client.GetService(Services.V6.CampaignBudgetService);
+                client.GetService(Services.V7.CampaignBudgetService);
 
             // Create a campaign budget object.
             CampaignBudget campaignBudget = new CampaignBudget
@@ -162,7 +162,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         {
             // Get the CampaignService client.
             CampaignServiceClient campaignServiceClient =
-                client.GetService(Services.V6.CampaignService);
+                client.GetService(Services.V7.CampaignService);
 
             // Create a campaign object.
             Campaign campaign = new Campaign
@@ -238,7 +238,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         {
             // Create the ad group service client.
             AdGroupServiceClient adGroupServiceClient =
-                client.GetService(Services.V6.AdGroupService);
+                client.GetService(Services.V7.AdGroupService);
 
             // Create the ad group.
             // Note that the ad group type must not be set.
@@ -282,7 +282,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         {
             // Create the ad group service client.
             AdGroupAdServiceClient adGroupAdServiceClient =
-                client.GetService(Services.V6.AdGroupAdService);
+                client.GetService(Services.V7.AdGroupAdService);
 
             // Create an ad group ad.
             AdGroupAd adGroupAd = new AdGroupAd
@@ -378,7 +378,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             string imageName)
         {
             // Get the AssetService client.
-            AssetServiceClient assetService = client.GetService(Services.V6.AssetService);
+            AssetServiceClient assetService = client.GetService(Services.V7.AssetService);
 
             // Creates an image asset.
             byte[] imageContent = MediaUtilities.GetAssetDataFromUrl(imageUrl, client.Config);
@@ -424,7 +424,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
             string youtubeVideoId, string youtubeVideoName)
         {
             // Get the AssetService client.
-            AssetServiceClient assetServiceClient = client.GetService(Services.V6.AssetService);
+            AssetServiceClient assetServiceClient = client.GetService(Services.V7.AssetService);
 
             // Create an asset.
             Asset asset = new Asset

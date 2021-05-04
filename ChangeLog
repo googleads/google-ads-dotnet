@@ -1,3 +1,20 @@
+8.0.0
+=====
+- Removed support for v4 of the API. See https://ads-developers.googleblog.com/2021/04/google-ads-api-v4-and-v5-sunset-reminder.html for details.
+- Added support for v7 of the API. See https://developers.google.com/google-ads/api/docs/release-notes#v7_0 for details
+- Updated the GetAdGroupBidModifiers example to include hotel_check_in_date_range field.
+- Updated the parameter names in some code examples to match examples in other languages.
+- Fixed a couple of broken tests cases.
+- Added new code examples.
+  -- Billing\GetInvoices.cs
+  -- Extensions\MigratePromotionFeedToAsset.cs
+  -- Remarketing\AddCustomAudience.cs
+- Made the tests parallelizable.
+- Updated the includecode regions in various code examples to make it consistent with other libraries.
+- Simplified the logic of Fieldmasks::AllSetFieldsOf() method. Also, fix the logic when
+ non-optional singular fields are parsed.
+- Fixed a minor bug in HandlePartialFailure.
+
 7.1.0
 =====
 - Regenerated all stubs. This adds default timeouts for RPC calls in service stub classes.

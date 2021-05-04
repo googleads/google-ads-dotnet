@@ -14,15 +14,15 @@
 
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V6.Errors;
-using Google.Ads.GoogleAds.V6.Resources;
-using Google.Ads.GoogleAds.V6.Services;
+using Google.Ads.GoogleAds.V7.Errors;
+using Google.Ads.GoogleAds.V7.Resources;
+using Google.Ads.GoogleAds.V7.Services;
 using Google.Api.Gax;
 using System;
 using System.Linq;
-using static Google.Ads.GoogleAds.V6.Enums.AccessRoleEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.AccessRoleEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V6
+namespace Google.Ads.GoogleAds.Examples.V7
 {
     /// <summary>
     /// This code example updates the access role of a user, given the email address.
@@ -106,7 +106,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V6.GoogleAdsService);
+                Services.V7.GoogleAdsService);
 
             // Create the search query. Use the LIKE query for filtering to ignore the text case
             // for email address when searching for a match.
@@ -150,7 +150,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         {
             // Get the CustomerUserAccessService.
             CustomerUserAccessServiceClient userAccessService = client.GetService(
-                Services.V6.CustomerUserAccessService);
+                Services.V7.CustomerUserAccessService);
 
             // Creates the modified user access.
             CustomerUserAccess userAccess = new CustomerUserAccess()

@@ -127,7 +127,7 @@ namespace Google.Ads.GoogleAds.Util
                                 {
                                     mask.Paths.Add(childFieldName);
                                 }
-                                else if (originalChildHasValue || modifiedChildHasValue)
+                                else if (originalChildHasValue ^ modifiedChildHasValue)
                                 {
                                     // Only one of the fields have value.
                                     mask.Paths.Add(childFieldName);
@@ -248,6 +248,7 @@ namespace Google.Ads.GoogleAds.Util
         private static void AddNewFields(FieldMask mask, string fieldName, IMessage message)
         {
             var descriptor = message.Descriptor;
+            int fieldCount = mask.Paths.Count;
             foreach (var field in descriptor.Fields.InFieldNumberOrder())
             {
                 string name = GetFullFieldName(fieldName, field);
@@ -267,15 +268,10 @@ namespace Google.Ads.GoogleAds.Util
                 {
                     if (field.FieldType == FieldType.Message)
                     {
-                        // For single message fields, recurse if there's a value; otherwise just add the
-                        // field name.
+                        // For single message fields, recurse if there's a value.
                         if (value != null)
                         {
                             AddNewFields(mask, name, (IMessage) value);
-                        }
-                        else
-                        {
-                            mask.Paths.Add(name);
                         }
                     }
                     else if (field.HasPresence)
@@ -290,12 +286,19 @@ namespace Google.Ads.GoogleAds.Util
                     {
                         // Add a field mask only if there is a non-default value.
                         var defaultValue = GetDefaultValue(field.FieldType);
-                        if (defaultValue != value)
+                        if (!Equals(defaultValue, value))
                         {
                             mask.Paths.Add(name);
                         }
                     }
                 }
+            }
+
+            if (fieldCount == mask.Paths.Count)
+            {
+                // We recursed the whole hierarchy, but added no new fields. This should then be
+                // treated as an empty submessage.
+                mask.Paths.Add(fieldName);
             }
         }
 

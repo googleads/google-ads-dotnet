@@ -13,13 +13,13 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V6.Errors;
-using Google.Ads.GoogleAds.V6.Resources;
-using Google.Ads.GoogleAds.V6.Services;
+using Google.Ads.GoogleAds.V7.Errors;
+using Google.Ads.GoogleAds.V7.Resources;
+using Google.Ads.GoogleAds.V7.Services;
 using System;
-using static Google.Ads.GoogleAds.V6.Enums.AccessRoleEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.AccessRoleEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V6
+namespace Google.Ads.GoogleAds.Examples.V7
 {
     /// <summary>
     /// This code example sends an invitation email to a user to manage a customer
@@ -67,7 +67,7 @@ namespace Google.Ads.GoogleAds.Examples.V6
         {
             // Get the CustomerUserAccessInvitationService.
             CustomerUserAccessInvitationServiceClient service = client.GetService(
-                Services.V6.CustomerUserAccessInvitationService);
+                Services.V7.CustomerUserAccessInvitationService);
 
             // [START invite_user_with_access_role]
             MutateCustomerUserAccessInvitationRequest invitationRequest =
