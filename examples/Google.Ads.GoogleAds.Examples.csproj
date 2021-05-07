@@ -31,6 +31,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Web" />
+    <PackageReference Include="CommandLineParser" Version="2.8.0" />
   </ItemGroup>
   <ItemGroup>
    <!-- Include local projects over nuget dependencies if available -->
