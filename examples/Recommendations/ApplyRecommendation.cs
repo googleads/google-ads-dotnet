@@ -1,4 +1,4 @@
-﻿// Copyright 2019 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,11 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Services;
-
 using System;
+using System.Collections.Generic;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
@@ -27,21 +28,51 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class ApplyRecommendation : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="ApplyRecommendation"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// ID of the recommendation to apply.
+            /// </summary>
+            [Option("recommendationId", Required = true, HelpText =
+                "ID of the recommendation to apply.")]
+            public long RecommendationId { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // ID of the recommendation to apply.
+                    options.RecommendationId = long.Parse("INSERT_RECOMMENDATION_ID_HERE");
+
+                    return 0;
+                });
+
             ApplyRecommendation codeExample = new ApplyRecommendation();
             Console.WriteLine(codeExample.Description);
-
-            //The customer ID for which the call is made.
-            int customerId = int.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // ID of the recommendation to be applied.
-            int recommendationId = int.Parse("INSERT_RECOMMENDATION_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId, recommendationId);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.RecommendationId);
         }
 
         /// <summary>
