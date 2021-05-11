@@ -12,14 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Common;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using static Google.Ads.GoogleAds.V7.Enums.UserListMembershipStatusEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V7
@@ -31,25 +32,56 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class AddConversionBasedUserList : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="AddConversionBasedUserList"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// The IDs of the conversion actions for the basic user list.
+            /// </summary>
+            [Option("conversionActionIds", Required = true, HelpText =
+                "The IDs of the conversion actions for the basic user list.")]
+            public long[] ConversionActionIds { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // The IDs of the conversion actions for the basic user list.
+                    // Add more items to the array as desired.
+                    options.ConversionActionIds = new long[]
+                    {
+                        long.Parse("INSERT_FIRST_CONVERSION_ACTION_ID_HERE"),
+                        long.Parse("INSERT_SECOND_CONVERSION_ACTION_ID_HERE"),
+                    };
+
+                    return 0;
+                });
+
             AddConversionBasedUserList codeExample = new AddConversionBasedUserList();
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // The IDs of the conversion actions for the basic user list.
-            long[] conversionActionIds =
-            {
-                long.Parse("INSERT_FIRST_CONVERSION_ACTION_ID_HERE"),
-                long.Parse("INSERT_SECOND_CONVERSION_ACTION_ID_HERE"),
-            };
-
-            codeExample.Run(new GoogleAdsClient(), customerId, conversionActionIds);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.ConversionActionIds);
         }
 
         /// <summary>
@@ -63,9 +95,9 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// Runs the code example.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
-        /// <param name="customerId">The client customer ID.</param>
+        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="conversionActionIds">The IDs of the conversion actions for the basic user
-        ///     list.</param>
+        /// list.</param>
         // [START add_conversion_based_user_list]
         public void Run(GoogleAdsClient client, long customerId, long[] conversionActionIds)
         {
@@ -110,11 +142,11 @@ namespace Google.Ads.GoogleAds.Examples.V7
             {
                 // Adds the new user list.
                 MutateUserListsResponse response = userListServiceClient.MutateUserLists
-                    (customerId.ToString(), new[] {operation});
+                    (customerId.ToString(), new[] { operation });
 
                 // Prints the result.
                 Console.WriteLine("Created basic user list with resource name: " +
-                                  $"{response.Results.First().ResourceName}");
+                    $"{response.Results.First().ResourceName}");
             }
             catch (GoogleAdsException e)
             {

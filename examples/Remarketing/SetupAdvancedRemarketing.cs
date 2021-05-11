@@ -12,18 +12,20 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using System;
-using System.Linq;
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Common;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
-using static Google.Ads.GoogleAds.V7.Enums.UserListPrepopulationStatusEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.UserListStringRuleItemOperatorEnum.Types;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using static Google.Ads.GoogleAds.V7.Enums.UserListDateRuleItemOperatorEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.UserListMembershipStatusEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.UserListNumberRuleItemOperatorEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.UserListDateRuleItemOperatorEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.UserListPrepopulationStatusEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.UserListStringRuleItemOperatorEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
@@ -35,18 +37,41 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class SetupAdvancedRemarketing : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="SetupAdvancedRemarketing"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the conversion action is added.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the conversion action is added.")]
+            public long CustomerId { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the conversion action is added.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    return 0;
+                });
+
             SetupAdvancedRemarketing codeExample = new SetupAdvancedRemarketing();
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId);
         }
 
         /// <summary>
@@ -61,7 +86,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// Runs the code example.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
-        /// <param name="customerId">The Google Ads customer ID for the conversion action is
+        /// <param name="customerId">The Google Ads customer ID for which the conversion action is
         /// added.</param>
         public void Run(GoogleAdsClient client, long customerId)
         {
@@ -201,7 +226,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 // Add the user list and print the results.
                 MutateUserListsResponse response =
                     userListServiceClient.MutateUserLists(customerId.ToString(),
-                        new[] {userListOperation});
+                        new[] { userListOperation });
 
                 string userListResourceName = response.Results.First().ResourceName;
                 Console.WriteLine(

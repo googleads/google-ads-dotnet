@@ -12,11 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Services;
-
 using System;
+using System.Collections.Generic;
 using static Google.Ads.GoogleAds.V7.Enums.ConversionAdjustmentTypeEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V7
@@ -28,39 +29,105 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class UploadConversionAdjustment : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="UploadConversionAdjustment"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the conversion action is added.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the conversion action is added.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// ID of the conversion action for which adjustments are uploaded.
+            /// </summary>
+            [Option("conversionActionId", Required = true, HelpText =
+                "ID of the conversion action for which adjustments are uploaded.")]
+            public long ConversionActionId { get; set; }
+
+            /// <summary>
+            /// The type of adjustment.
+            /// </summary>
+            [Option("adjustmentType", Required = true, HelpText =
+                "The type of adjustment.")]
+            public ConversionAdjustmentType AdjustmentType { get; set; }
+
+            /// <summary>
+            /// The original conversion time.
+            /// </summary>
+            [Option("conversionDateTime", Required = true, HelpText =
+                "The original conversion time.")]
+            public string ConversionDateTime { get; set; }
+
+            /// <summary>
+            /// The Google Click ID for which adjustments are uploaded.
+            /// </summary>
+            [Option("gclid", Required = true, HelpText =
+                "The Google Click ID for which adjustments are uploaded.")]
+            public string Gclid { get; set; }
+
+            /// <summary>
+            /// The adjustment date and time.
+            /// </summary>
+            [Option("adjustmentDateTime", Required = true, HelpText =
+                "The adjustment date and time.")]
+            public string AdjustmentDateTime { get; set; }
+
+            /// <summary>
+            /// The restatement value.
+            /// </summary>
+            [Option("restatementValue", Required = true, HelpText =
+                "The restatement value.")]
+            public double? RestatementValue { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the conversion action is added.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // ID of the conversion action for which adjustments are uploaded.
+                    options.ConversionActionId = long.Parse("INSERT_CONVERSION_ACTION_ID_HERE");
+
+                    // The type of adjustment.
+                    options.AdjustmentType =
+                       (ConversionAdjustmentType) Enum.Parse(
+                           typeof(ConversionAdjustmentType), "INSERT_ADJUSTMENT_TYPE_HERE");
+
+                    // The original conversion time.
+                    options.ConversionDateTime = "INSERT_CONVERSION_DATE_TIME_HERE";
+
+                    // The Google Click ID for which adjustments are uploaded.
+                    options.Gclid = "INSERT_GCLID_HERE";
+
+                    // The adjustment time in "yyyy-mm-dd hh:mm:ss+|-hh:mm" format.
+                    options.AdjustmentDateTime = "INSERT_ADJUSTMENT_DATE_TIME_HERE";
+
+                    // The restatement value.
+                    options.RestatementValue = double.Parse("INSERT_RESTATEMENT_VALUE_HERE");
+
+                    return 0;
+                });
+
             UploadConversionAdjustment codeExample = new UploadConversionAdjustment();
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // ID of the conversion action for which adjustments are uploaded.
-            long conversionActionId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // The type of adjustment.
-            ConversionAdjustmentType adjustmentType =
-                (ConversionAdjustmentType) Enum.Parse(
-                    typeof(ConversionAdjustmentType), "INSERT_ADJUSTMENT_TYPE_HERE");
-
-            // The original conversion time.
-            string conversionDateTime = "INSERT_CONVERSION_DATE_TIME_HERE";
-
-            // The Google Click ID for which adjustments are uploaded.
-            string gclid = "INSERT_GCLID_HERE";
-
-            // The adjustment time in "yyyy-mm-dd hh:mm:ss+|-hh:mm" format.
-            string adjustmentDateTime = "INSERT_ADJUSTMENT_DATE_TIME_HERE";
-
-            // The restatement value.
-            double? restatementValue = double.Parse("INSERT_RESTATEMENT_VALUE_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId, conversionActionId, gclid,
-                conversionDateTime, adjustmentDateTime, adjustmentType, restatementValue);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.ConversionActionId,
+                options.Gclid, options.ConversionDateTime, options.AdjustmentDateTime,
+                options.AdjustmentType, options.RestatementValue);
         }
 
         /// <summary>
@@ -74,7 +141,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// Runs the code example.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
-        /// <param name="customerId">The Google Ads customer ID for the conversion action is
+        /// <param name="customerId">The Google Ads customer ID for which the conversion action is
         /// added.</param>
         /// <param name="conversionActionId">ID of the conversion action for which adjustments are
         /// uploaded.</param>

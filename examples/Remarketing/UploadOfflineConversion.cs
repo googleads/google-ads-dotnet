@@ -12,11 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Services;
-
 using System;
+using System.Collections.Generic;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
@@ -29,31 +30,82 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class UploadOfflineConversion : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="UploadOfflineConversion"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for the conversion action is added.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for the conversion action is added.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// The conversion action ID.
+            /// </summary>
+            [Option("conversionActionId", Required = true, HelpText =
+                "The conversion action ID.")]
+            public long ConversionActionId { get; set; }
+
+            /// <summary>
+            /// The conversion time in "yyyy-mm-dd hh:mm:ss+|-hh:mm" format.
+            /// </summary>
+            [Option("conversionTime", Required = true, HelpText =
+                "The conversion time.")]
+            public string ConversionTime { get; set; }
+
+            /// <summary>
+            /// The click ID.
+            /// </summary>
+            [Option("gclid", Required = true, HelpText =
+                "The click ID.")]
+            public string Gclid { get; set; }
+
+            /// <summary>
+            /// The convsersion value.
+            /// </summary>
+            [Option("conversionValue", Required = true, HelpText =
+                "The convsersion value.")]
+            public double ConversionValue { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for the conversion action is added.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // The conversion action ID.
+                    options.ConversionActionId = long.Parse("INSERT_CONVERSION_ACTION_ID_HERE");
+
+                    // The conversion time in "yyyy-mm-dd hh:mm:ss+|-hh:mm" format.
+                    options.ConversionTime = "INSERT_CONVERSION_TIME_HERE";
+
+                    // The Google Click ID for which conversions are uploaded.
+                    options.Gclid = "INSERT_GCLID_HERE";
+
+                    // The convsersion value.
+                    options.ConversionValue = double.Parse("INSERT_CONVERSION_VALUE_HERE");
+
+                    return 0;
+                });
+
             UploadOfflineConversion codeExample = new UploadOfflineConversion();
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // The conversion action ID.
-            long conversionActionId = long.Parse("INSERT_CONVERSION_ACTION_ID_HERE");
-
-            // The Google Click ID for which conversions are uploaded.
-            string gclid = "INSERT_GCLID_HERE";
-
-            // The conversion time in "yyyy-mm-dd hh:mm:ss+|-hh:mm" format.
-            string conversionTime = "INSERT_CONVERSION_TIME_HERE";
-
-            // The conversion value.
-            double conversionValue = double.Parse("CONVERSION_VALUE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId, conversionActionId, gclid,
-                conversionTime, conversionValue);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.ConversionActionId,
+                options.ConversionTime, options.Gclid, options.ConversionValue);
         }
 
         /// <summary>
@@ -72,8 +124,9 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="customerId">The Google Ads customer ID for the conversion action is
         /// added.</param>
         /// <param name="conversionActionId">The conversion action ID.</param>
-        /// <param name="conversionTime">The conversion time.</param>
-        /// <param name="gclid">The click ID.</param>
+        /// <param name="conversionTime">The conversion time in "yyyy-mm-dd hh:mm:ss+|-hh:mm"
+        /// format.</param>
+        /// <param name="gclid">The Google Click ID for which conversions are uploaded.</param>
         /// <param name="conversionValue">The convsersion value.</param>
         // [START upload_offline_conversion]
         public void Run(GoogleAdsClient client, long customerId, long conversionActionId,
