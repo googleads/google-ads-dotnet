@@ -12,57 +12,101 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
 using Google.Api.Gax;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using static Google.Ads.GoogleAds.V7.Enums.FlightPlaceholderFieldEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
     /// <summary>
     /// Removes a feed item attribute value of a feed item in a flights feed. To create a flights
-    /// feed, run the AddFlightsFeed example. This example is specific to feeds of type DYNAMIC_FLIGHT.
-    /// The attribute you are removing must be present on the feed.
-    ///
-    /// This example is specifically for removing an attribute of a flights feed item,
-    /// but it can also be changed to work with other feed types.
-    ///
-    /// To make this work with other feed types, replace the FlightPlaceholderField enum with the
-    /// equivalent one of your feed type, and replace the appropriate attribute names in the
-    /// GetFeeds method.
+    /// feed, run the AddFlightsFeed example. This example is specific to feeds of type
+    /// DYNAMIC_FLIGHT. The attribute you are removing must be present on the feed. /// This example
+    /// is specifically for removing an attribute of a flights feed item, but it can also be changed
+    /// to work with other feed types. /// To make this work with other feed types, replace the
+    /// FlightPlaceholderField enum with the equivalent one of your feed type, and replace the
+    /// appropriate attribute names in the GetFeeds method.
     /// </summary>
     public class RemoveFlightsFeedItemAttributeValue : ExampleBase
     {
+        /// <summary>
+        /// Command line options for running the <see cref="RemoveFlightsFeedItemAttributeValue"/>
+        /// example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// The Feed ID to which the feed item belongs.
+            /// </summary>
+            [Option("feedId", Required = true, HelpText =
+                "The Feed ID to which the feed item belongs.")]
+            public long FeedId { get; set; }
+
+            /// <summary>
+            /// The ID of the feed item to be updated.
+            /// </summary>
+            [Option("feedItemId", Required = true, HelpText =
+                "The ID of the feed item to be updated.")]
+            public long FeedItemId { get; set; }
+
+            /// <summary>
+            /// The flight placeholder field name for the attribute to be removed.
+            /// </summary>
+            [Option("flightPlaceholderFieldName", Required = true, HelpText =
+                "The flight placeholder field name for the attribute to be removed.")]
+            public string FlightPlaceholderFieldName { get; set; }
+        }
+
         /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // The Feed ID to which the feed item belongs.
+                    options.FeedId = long.Parse("INSERT_FEED_ID_HERE");
+
+                    // The ID of the feed item to be updated.
+                    options.FeedItemId = long.Parse("INSERT_FEED_ITEM_ID_HERE");
+
+                    // The flight placeholder field name for the attribute to be removed.
+                    options.FlightPlaceholderFieldName =
+                        "INSERT_FLIGHT_PLACEHOLDER_FIELD_NAME_HERE";
+
+                    return 0;
+                });
+
             RemoveFlightsFeedItemAttributeValue codeExample =
                 new RemoveFlightsFeedItemAttributeValue();
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // The Feed ID to which the feed item belongs.
-            long feedId = long.Parse("INSERT_FEED_ID_HERE");
-
-            // The ID of the feed item to be updated.
-            long feedItemId = long.Parse("INSERT_FEED_ITEM_ID_HERE");
-
-            // The flight placeholder field name for the attribute to be removed.
-            string flightPlaceholderFieldName = "INSERT_FLIGHT_PLACEHOLDER_FIELD_NAME_HERE";
-
-            codeExample.Run(new GoogleAdsClient(), customerId, feedId, feedItemId,
-                flightPlaceholderFieldName);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.FeedId,
+                options.FeedItemId, options.FlightPlaceholderFieldName);
         }
 
         /// <summary>
@@ -80,8 +124,9 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="feedId">The Feed ID to which the feed item belongs.</param>
         /// <param name="feedItemId">The ID of the feed item to be updated.</param>
-        /// <param name="flightPlaceholderFieldName">The flight placeholder field name for the
-        /// attribute to be removed.</param>
+        /// <param name="flightPlaceholderFieldName">
+        /// The flight placeholder field name for the attribute to be removed.
+        /// </param>
         public void Run(GoogleAdsClient client, long customerId, long feedId, long feedItemId,
             string flightPlaceholderFieldName)
         {
@@ -102,8 +147,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 FeedItem feedItem = RemoveAttributeValueFromFeedItem(client, customerId, feedId,
                     feedItemId, placeholdersToFeedAttributesMap, flightPlaceholderField);
 
-                // [START remove_flights_feed_item_attribute_value_1]
-                // Creates the operation.
+                // [START remove_flights_feed_item_attribute_value_1] Creates the operation.
                 FeedItemOperation operation = new FeedItemOperation
                 {
                     Update = feedItem,
@@ -112,7 +156,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
 
                 // Updates the feed item and prints the results.
                 MutateFeedItemsResponse response = feedItemServiceClient.MutateFeedItems
-                    (customerId.ToString(), new[] {operation});
+                    (customerId.ToString(), new[] { operation });
                 foreach (MutateFeedItemResult result in response.Results)
                 {
                     Console.WriteLine("Updated feed item with resource name " +
@@ -137,12 +181,11 @@ namespace Google.Ads.GoogleAds.Examples.V7
         }
 
         /// <summary>
-        /// Retrieves details about a feed. The initial query retrieves the FeedAttributes,
-        /// or columns, of the feed. Each FeedAttribute will also include the FeedAttributeId,
-        /// which will be used in a subsequent step. The example then inserts a new key, value
-        /// pair into a map for each FeedAttribute, which is the return value of the method.
-        /// The keys are the placeholder types that the columns will be. The values are the
-        /// FeedAttributes.
+        /// Retrieves details about a feed. The initial query retrieves the FeedAttributes, or
+        /// columns, of the feed. Each FeedAttribute will also include the FeedAttributeId, which
+        /// will be used in a subsequent step. The example then inserts a new key, value pair into
+        /// a map for each FeedAttribute, which is the return value of the method. The keys are the
+        /// placeholder types that the columns will be. The values are the FeedAttributes.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID that has the flights feed.</param>
@@ -168,8 +211,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 Query = query
             };
 
-            // Issues the search request and get the first result, since we only need the
-            // single feed item we created previously.
+            // Issues the search request and get the first result, since we only need the single
+            // feed item we created previously.
             GoogleAdsRow googleAdsRow = googleAdsService.Search(request).First();
 
             // Gets the attributes list from the feed and creates a map with keys of each attribute
@@ -218,12 +261,14 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="customerId">The Google Ads customer ID that has the flights feed.</param>
         /// <param name="feedId">The feed ID that contains the target feed item.</param>
         /// <param name="feedItemId">The feed item ID that will be updated.</param>
-        /// <param name="placeholdersToFeedAttributesMap">A mapping of FlightPlaceholderFields to
-        /// FeedAttributes.</param>
+        /// <param name="placeholdersToFeedAttributesMap">
+        /// A mapping of FlightPlaceholderFields to FeedAttributes.
+        /// </param>
         /// <param name="flightPlaceholderFieldName">The attributed field name to remove.</param>
         /// <returns>The modified feed item.</returns>
-        /// <exception cref="ArgumentException">If the specified attribute was not found in the
-        /// feed item.</exception>
+        /// <exception cref="ArgumentException">
+        /// If the specified attribute was not found in the feed item.
+        /// </exception>
         // [START remove_flights_feed_item_attribute_value]
         private FeedItem RemoveAttributeValueFromFeedItem(GoogleAdsClient client, long customerId,
             long feedId, long feedItemId,
@@ -244,7 +289,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
 
             // Gets the index of the attribute value that will be removed.
             int attributeIndex = feedItem.AttributeValues
-                .Select((item, index) => new {item, index})
+                .Select((item, index) => new { item, index })
                 .Where(itemIndexPair =>
                     itemIndexPair.item.FeedAttributeId == feedItemAttributeValue.FeedAttributeId)
                 .Select(itemIndexPair => itemIndexPair.index + 1)
@@ -257,14 +302,13 @@ namespace Google.Ads.GoogleAds.Examples.V7
             }
 
             // Returns the feed item with the removed FeedItemAttributeValue. Any
-            // FeedItemAttributeValues that are not included in the updated FeedItem will be removed
-            // from the FeedItem, which is why you must create the FeedItem from the existing
-            // FeedItem and set the field(s) that will be removed.
+            // FeedItemAttributeValues that are not included in the updated FeedItem will be
+            // removed from the FeedItem, which is why you must create the FeedItem from the
+            // existing FeedItem and set the field(s) that will be removed.
             feedItem.AttributeValues.RemoveAt(attributeIndex);
             return feedItem;
         }
         // [END remove_flights_feed_item_attribute_value]
-
 
         /// <summary>
         /// Retrieves a feed item and its attribute values given a resource name.

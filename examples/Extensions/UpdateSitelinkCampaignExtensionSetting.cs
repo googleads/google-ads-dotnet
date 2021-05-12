@@ -12,14 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using static Google.Ads.GoogleAds.V7.Enums.ExtensionTypeEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V7
@@ -33,30 +34,65 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class UpdateSitelinkCampaignExtensionSetting : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="UpdateSitelinkCampaignExtensionSetting"/>
+        /// example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// The campaign ID.
+            /// </summary>
+            [Option("campaignId", Required = true, HelpText =
+                "The campaign ID.")]
+            public long CampaignId { get; set; }
+
+            /// <summary>
+            /// The extension feed item IDs to replace.
+            /// </summary>
+            [Option("feedItemIds", Required = true, HelpText =
+                "The extension feed item IDs to replace.")]
+            public long[] FeedItemIds { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // The campaign ID.
+                    options.CampaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
+
+                    // The extension feed item IDs to replace.
+                    // Add more items to the array as desired.
+                    options.FeedItemIds = new long[] { long.Parse("INSERT_FEED_ITEM_IDS_HERE") };
+
+                    return 0;
+                });
+
             UpdateSitelinkCampaignExtensionSetting codeExample =
                 new UpdateSitelinkCampaignExtensionSetting();
-
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // The campaign ID.
-            long campaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
-
-            // The extension feed item IDs to replace.
-            long[] feedItemIds =
-            {
-                long.Parse("INSERT_FEED_ITEM_ID_1_HERE"),
-                long.Parse("INSERT_FEED_ITEM_ID_2_HERE")
-            };
-
-            codeExample.Run(new GoogleAdsClient(), customerId, campaignId, feedItemIds);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.CampaignId,
+                options.FeedItemIds);
         }
 
         /// <summary>
@@ -111,7 +147,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 // Issue a mutate request to update the campaign extension setting.
                 MutateCampaignExtensionSettingsResponse response =
                     campaignExtensionSettingService.MutateCampaignExtensionSettings
-                        (customerId.ToString(), new[] {campaignExtensionSettingOperation});
+                        (customerId.ToString(), new[] { campaignExtensionSettingOperation });
 
                 // Print the resource name of the updated campaign extension setting.
                 Console.WriteLine("Updated a campaign extension setting with resource name " +

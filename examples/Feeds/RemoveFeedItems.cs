@@ -12,11 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using System;
-using System.Collections.Generic;
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Services;
+using System;
+using System.Collections.Generic;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
@@ -26,28 +27,62 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class RemoveFeedItems : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="RemoveFeedItems"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// The Feed ID to which the feed items belong.
+            /// </summary>
+            [Option("feedId", Required = true, HelpText =
+                "The Feed ID to which the feed items belong.")]
+            public long FeedId { get; set; }
+
+            /// <summary>
+            /// The IDs of the feed items to remove.
+            /// </summary>
+            [Option("feedItemIds", Required = true, HelpText =
+                "The IDs of the feed items to remove.")]
+            public long[] FeedItemIds { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // The Feed ID to which the feed items belong.
+                    options.FeedId = long.Parse("INSERT_FEED_ID_HERE");
+
+                    // The IDs of the feed items to remove. Add more items to the array as desired.
+                    options.FeedItemIds = new long[] { long.Parse("INSERT_FEED_ITEM_IDS_HERE") };
+
+                    return 0;
+                });
+
             RemoveFeedItems codeExample = new RemoveFeedItems();
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // The Feed ID to which the feed items belong.
-            long feedId = long.Parse("INSERT_FEED_ID_HERE");
-
-            // The IDs of the feed items to remove.
-            long[] feedItemIds =
-            {
-                long.Parse("INSERT_FEED_ITEM_ID_1_HERE"),
-                long.Parse("INSERT_FEED_ITEM_ID_2_HERE")
-            };
-
-            codeExample.Run(new GoogleAdsClient(), customerId, feedId, feedItemIds);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.FeedId,
+                options.FeedItemIds);
         }
 
         /// <summary>
@@ -76,8 +111,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 string feedItemResourceName =
                     ResourceNames.FeedItem(customerId, feedId, feedItemId);
 
-                // Constructs an operation that will remove the feed item based on the resource
-                // name and adds it to the collection of operations.
+                // Constructs an operation that will remove the feed item based on the resource name
+                // and adds it to the collection of operations.
                 operations.Add(new FeedItemOperation
                 {
                     Remove = feedItemResourceName
@@ -90,7 +125,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 MutateFeedItemsResponse response =
                     feedItemServiceClient.MutateFeedItems(customerId.ToString(), operations);
 
-                //  Prints the resource names of the removed feed items.
+                // Prints the resource names of the removed feed items.
                 foreach (MutateFeedItemResult removedFeedItem in response.Results)
                 {
                     Console.WriteLine("Removed feed item with resource name " +

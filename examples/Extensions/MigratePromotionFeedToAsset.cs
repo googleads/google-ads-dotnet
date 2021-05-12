@@ -12,9 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Common;
 using Google.Ads.GoogleAds.V7.Enums;
@@ -22,6 +20,9 @@ using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
 using Google.Protobuf.Collections;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
@@ -36,21 +37,51 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class MigratePromotionFeedToAsset : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="MigratePromotionFeedToAsset"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// ID of the extension feed item to migrate.
+            /// </summary>
+            [Option("feedItemId", Required = true, HelpText =
+                "ID of the extension feed item to migrate.")]
+            public long FeedItemId { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // ID of the extension feed item to migrate.
+                    options.FeedItemId = long.Parse("INSERT_FEED_ITEM_ID_HERE");
+
+                    return 0;
+                });
+
             MigratePromotionFeedToAsset codeExample = new MigratePromotionFeedToAsset();
             Console.WriteLine(codeExample.Description);
-
-            // The customer ID for which the call is made.
-            int customerId = int.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // ID of the ExtensionFeedItem to migrate.
-            long feedItemId = long.Parse("INSERT_FEED_ITEM_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId, feedItemId);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.FeedItemId);
         }
 
         /// <summary>
@@ -175,7 +206,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
 
             // Issue a search request to get the extension feed item contents.
             googleAdsServiceClient.SearchStream(customerId.ToString(), extensionFeedItemQuery,
-                delegate(SearchGoogleAdsStreamResponse response)
+                delegate (SearchGoogleAdsStreamResponse response)
                 {
                     fetchedExtensionFeedItem = response.Results.First().ExtensionFeedItem;
                 }
@@ -191,7 +222,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
 
             // Issue a search request to get any URL custom parameters.
             googleAdsServiceClient.SearchStream(customerId.ToString(), urlCustomParametersQuery,
-                delegate(SearchGoogleAdsStreamResponse response)
+                delegate (SearchGoogleAdsStreamResponse response)
                 {
                     RepeatedField<CustomParameter> urlCustomParameters =
                         response.Results.First().FeedItem.UrlCustomParameters;
@@ -231,7 +262,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
                   AND campaign.status != 'REMOVED'";
 
             googleAdsServiceClient.SearchStream(customerId.ToString(), query,
-                delegate(SearchGoogleAdsStreamResponse response)
+                delegate (SearchGoogleAdsStreamResponse response)
                 {
                     foreach (GoogleAdsRow googleAdsRow in response.Results)
                     {
@@ -275,7 +306,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
                   AND ad_group.status != 'REMOVED'";
 
             googleAdsServiceClient.SearchStream(customerId.ToString(), query,
-                delegate(SearchGoogleAdsStreamResponse response)
+                delegate (SearchGoogleAdsStreamResponse response)
                 {
                     foreach (GoogleAdsRow googleAdsRow in response.Results)
                     {
@@ -384,7 +415,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
 
             // Issue the request and return the resource name of the new Promotion asset.
             MutateAssetsResponse response = assetServiceClient.MutateAssets(
-                customerId.ToString(), new[] {operation});
+                customerId.ToString(), new[] { operation });
             Console.WriteLine("Created Promotion asset with resource name " +
                 $"{response.Results.First().ResourceName}");
             return response.Results.First().ResourceName;

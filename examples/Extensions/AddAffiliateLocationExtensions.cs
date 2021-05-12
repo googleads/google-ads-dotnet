@@ -1,4 +1,4 @@
-﻿// Copyright 2020 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Common;
 using Google.Ads.GoogleAds.V7.Errors;
@@ -32,14 +33,38 @@ using static Google.Ads.GoogleAds.V7.Resources.Feed.Types;
 namespace Google.Ads.GoogleAds.Examples.V7
 {
     /// <summary>
-    /// This code example adds a feed that syncs retail addresses for a given retail chain ID
-    /// and associates the feed with a campaign for serving affiliate location extensions.
+    /// This code example adds a feed that syncs retail addresses for a given retail chain ID and
+    /// associates the feed with a campaign for serving affiliate location extensions.
     /// </summary>
     public class AddAffiliateLocationExtensions : ExampleBase
     {
-        // The maximum number of attempts to make to retrieve the FeedMappings before throwing an
-        // exception.
-        private const int MAX_FEEDMAPPING_RETRIEVAL_ATTEMPTS = 10;
+        /// <summary>
+        /// Command line options for running the <see cref="AddAffiliateLocationExtensions"/>
+        /// example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// The retail chain ID.
+            /// </summary>
+            [Option("chainId", Required = true, HelpText =
+                "The retail chain ID.")]
+            public long ChainId { get; set; }
+
+            /// <summary>
+            /// The campaign ID for which the affiliate location extensions are added.
+            /// </summary>
+            [Option("campaignId", Required = true, HelpText =
+                "The campaign ID for which the affiliate location extensions are added.")]
+            public long CampaignId { get; set; }
+        }
 
         /// <summary>
         /// Main method, to run this code example as a standalone application.
@@ -47,21 +72,34 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // The retail chain ID.
+                    options.ChainId = long.Parse("INSERT_CHAIN_ID_HERE");
+
+                    // The campaign ID for which the affiliate location extensions are added.
+                    options.CampaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
+
+                    return 0;
+                });
+
             AddAffiliateLocationExtensions codeExample = new AddAffiliateLocationExtensions();
             Console.WriteLine(codeExample.Description);
-
-            // The customer ID for which the call is made.
-            int customerId = int.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // The retail chain ID. See https://developers.google.com/google-ads/api/reference/data/codes-formats#chain-ids
-            // for a complete list of valid retail chain IDs.
-            int chainId = int.Parse("INSERT_CHAIN_ID_HERE");
-
-            // The campaign ID for which the affiliate location extensions are added.
-            int campaignId = int.Parse("INSERT_CAMPAIGN_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId, chainId, campaignId);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.ChainId, options.CampaignId);
         }
+
+        // The maximum number of attempts to make to retrieve the FeedMappings before throwing an
+        // exception.
+        private const int MAX_FEEDMAPPING_RETRIEVAL_ATTEMPTS = 10;
 
         /// <summary>
         /// Returns a description about the code example.
@@ -76,8 +114,9 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
         /// <param name="chainId">The retail chain ID.</param>
-        /// <param name="campaignId">The campaign ID for which the affiliate location extensions
-        /// are added.</param>
+        /// <param name="campaignId">
+        /// The campaign ID for which the affiliate location extensions are added.
+        /// </param>
         public void Run(GoogleAdsClient client, long customerId, long chainId, long campaignId)
         {
             try
@@ -85,9 +124,9 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 string feedResourceName = CreateAffiliateLocationExtensionFeed(
                     client, customerId, chainId);
                 // After the completion of the feed creation operation above the added feed will not
-                // be available for usage in a campaign feed until the feed mappings are created.
-                // We will wait with an exponential back-off policy until the feed mappings have
-                // been created.
+                // be available for usage in a campaign feed until the feed mappings are created. We
+                // will wait with an exponential back-off policy until the feed mappings have been
+                // created.
                 FeedMapping feedMapping = WaitForFeedToBeReady(client, customerId,
                     feedResourceName);
                 CreateCampaignFeed(client, customerId, campaignId, feedMapping,
@@ -114,8 +153,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
         private static string CreateAffiliateLocationExtensionFeed(GoogleAdsClient client,
             long customerId, long chainId)
         {
-            // Optional: Delete all existing location extension feeds. This is an optional step,
-            // and is required for this code example to run correctly more than once.
+            // Optional: Delete all existing location extension feeds. This is an optional step, and
+            // is required for this code example to run correctly more than once.
             // 1. Google Ads only allows one location extension feed per email address.
             // 2. A Google Ads account cannot have a location extension feed and an affiliate
             // location extension feed at the same time.
@@ -124,9 +163,9 @@ namespace Google.Ads.GoogleAds.Examples.V7
             // Get the FeedServiceClient.
             FeedServiceClient feedService = client.GetService(Services.V7.FeedService);
 
-            // Creates a feed that will sync to retail addresses for a given retail chain ID.
-            // Do not add FeedAttributes to this object as Google Ads will add
-            // them automatically because this will be a system generated feed.
+            // Creates a feed that will sync to retail addresses for a given retail chain ID. Do not
+            // add FeedAttributes to this object as Google Ads will add them automatically because
+            // this will be a system generated feed.
             Feed feed = new Feed()
             {
                 Name = "Affiliate Location Extension feed #" + ExampleUtilities.GetRandomString(),
@@ -136,8 +175,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
                     ChainIds = { chainId },
                     RelationshipType = AffiliateLocationFeedRelationshipType.GeneralRetailer
                 },
-                // Since this feed's contents will be managed by Google,
-                // you must set its origin to GOOGLE.
+                // Since this feed's contents will be managed by Google, you must set its origin to
+                // GOOGLE.
                 Origin = FeedOrigin.Google
             };
 
@@ -256,8 +295,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 Services.V7.GoogleAdsService);
 
             // Create the query. A location extension customer feed can be identified by filtering
-            // for placeholder_types=LOCATION (location extension feeds) or
-            // placeholder_types =AFFILIATE_LOCATION (affiliate location extension feeds)
+            // for placeholder_types=LOCATION (location extension feeds) or placeholder_types
+            // =AFFILIATE_LOCATION (affiliate location extension feeds)
             string query = $"SELECT customer_feed.resource_name, customer_feed.feed, " +
                 $"customer_feed.status, customer_feed.matching_function.function_string from " +
                 $"customer_feed " +
@@ -348,16 +387,15 @@ namespace Google.Ads.GoogleAds.Examples.V7
             {
                 // Once you create a feed, Google's servers will setup the feed by creating feed
                 // attributes and feed mapping. Once the feed mapping is created, it is ready to be
-                // used for creating customer feed.
-                // This process is asynchronous, so we wait until the feed mapping is created,
-                // peforming exponential backoff.
+                // used for creating customer feed. This process is asynchronous, so we wait until
+                // the feed mapping is created, peforming exponential backoff.
                 FeedMapping feedMapping = GetAffiliateLocationExtensionFeedMapping(
                     client, customerId, feedResourceName);
 
                 if (feedMapping == null)
                 {
                     numAttempts++;
-                    sleepSeconds = (int)(5 * Math.Pow(2, numAttempts));
+                    sleepSeconds = (int) (5 * Math.Pow(2, numAttempts));
                     Console.WriteLine($"Checked: #{numAttempts} time(s). Feed is not ready " +
                         $"yet. Waiting {sleepSeconds} seconds before trying again.");
                     Thread.Sleep(sleepSeconds * 1000);
@@ -379,10 +417,12 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
-        /// <param name="campaignId">The campaign ID for which the affiliate location extensions
-        /// are added.</param>
-        /// <param name="feedMapping">The affliate location extension feedmapping for
-        /// <paramref name="feedResourceName"/></param>
+        /// <param name="campaignId">
+        /// The campaign ID for which the affiliate location extensions are added.
+        /// </param>
+        /// <param name="feedMapping">
+        /// The affliate location extension feedmapping for <paramref name="feedResourceName"/>
+        /// </param>
         /// <param name="feedResourceName">The feed resource name.</param>
         /// <param name="chainId">The retail chain ID.</param>
         // [START add_affiliate_location_extensions_3]
@@ -398,8 +438,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
 
             string matchingFunction =
                 $"IN(FeedAttribute[{feedId}, {attributeIdForChainId}], {chainId})";
-            // Adds a CampaignFeed that associates the feed with this campaign for
-            // the AFFILIATE_LOCATION placeholder type.
+            // Adds a CampaignFeed that associates the feed with this campaign for the
+            // AFFILIATE_LOCATION placeholder type.
             CampaignFeed campaignFeed = new CampaignFeed()
             {
                 Feed = feedResourceName,
@@ -432,8 +472,9 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// </summary>
         /// <param name="feedMapping">The feed mapping.</param>
         /// <returns>The feeed attribute ID.</returns>
-        /// <exception cref="ArgumentException">Affiliate location feed mapping isn't setup
-        /// correctly.</exception>
+        /// <exception cref="ArgumentException">
+        /// Affiliate location feed mapping isn't setup correctly.
+        /// </exception>
         // [START add_affiliate_location_extensions_4]
         public static long GetAttributeIdForChainId(FeedMapping feedMapping)
         {
