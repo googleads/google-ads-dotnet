@@ -12,12 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
 using Google.Api.Gax;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using static Google.Ads.GoogleAds.V7.Enums.TimeTypeEnum.Types;
 
@@ -26,19 +28,89 @@ namespace Google.Ads.GoogleAds.Examples.V7
     /// <summary>
     /// This example creates a billing setup for a customer. A billing setup is a link between a
     /// payments account and a customer. The new billing setup can either reuse an existing payments
-    /// account, or create a new payments account with a given payments profile.
-    /// Billing setups are applicable for clients on monthly invoicing only. See here for details
-    /// about applying for monthly invoicing: https://support.google.com/google-ads/answer/2375377
-    /// In the case of consolidated billing, a payments account is linked to the manager account and
-    /// is linked to a customer account via a billing setup.
+    /// account, or create a new payments account with a given payments profile. Billing setups are
+    /// applicable for clients on monthly invoicing only. See here for details about applying for
+    /// monthly invoicing: https://support.google.com/google-ads/answer/2375377 In the case of
+    /// consolidated billing, a payments account is linked to the manager account and is linked to a
+    /// customer account via a billing setup.
     /// </summary>
     public class AddBillingSetup : ExampleBase
     {
+        /// <summary>
+        /// Command line options for running the <see cref="AddBillingSetup"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// Optional payments account ID to attach to the new billing setup. Must be formatted
+            /// as "1234-5678-9012-3456".
+            /// </summary>
+            [Option("paymentsAccountId", Required = false, HelpText =
+                "Optional payments account ID to attach to the new billing setup. Must be " +
+                "formatted as '1234-5678-9012-3456'.")]
+            public string PaymentsAccountId { get; set; }
+
+            /// <summary>
+            /// Optional payments profile ID to attach to a new payments account and to the new
+            /// billing setup. Must be formatted as "1234-5678-9012".
+            /// </summary>
+            [Option("paymentsProfileId", Required = false, HelpText =
+                "Optional payments profile ID to attach to a new payments account and to the new" +
+                " billing setup. Must be formatted as '1234-5678-9012'.")]
+            public string PaymentsProfileId { get; set; }
+        }
+
         /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
+        {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // Either a payments account ID or a payments profile ID must be provided for
+                    // the example to run successfully. If both are provided, only the payments
+                    // account ID will be used.
+                    // See: https://developers.google.com/google-ads/api/docs/billing/billing-setups#creating_new_billing_setups
+                    // Provide an existing payments account ID to link to the new billing setup.
+                    // Must be formatted as "1234-5678-9012-3456".
+                    options.PaymentsAccountId = "INSERT_PAYMENTS_ACCOUNT_ID_HERE";
+
+                    // Alternatively, provide a payments profile ID, which will be linked to a new
+                    // payments account and the new billing setup. Must be formatted as
+                    // "1234-5678-9012".
+                    options.PaymentsProfileId = "INSERT_PAYMENTS_PROFILE_ID_HERE";
+
+                    return 0;
+                });
+
+            AddBillingSetup codeExample = new AddBillingSetup();
+            Console.WriteLine(codeExample.Description);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.PaymentsAccountId,
+                options.PaymentsProfileId);
+        }
+
+        /// <summary>
+        /// Main method, to run this code example as a standalone application.
+        /// </summary>
+        /// <param name="args">The command line arguments.</param>
+        public static void __Main(string[] args)
         {
             AddBillingSetup codeExample = new AddBillingSetup();
 
@@ -47,8 +119,9 @@ namespace Google.Ads.GoogleAds.Examples.V7
             // The Google Ads customer ID for which the call is made.
             long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
-            // Either a payments account ID or a payments profile ID must be provided for the example
-            // to run successfully. If both are provided, only the payments account ID will be used.
+            // Either a payments account ID or a payments profile ID must be provided for the
+            // example to run successfully. If both are provided, only the payments account ID will
+            // be used.
             // See: https://developers.google.com/google-ads/api/docs/billing/billing-setups#creating_new_billing_setups
             // Provide an existing payments account ID to link to the new billing setup. Must be
             // formatted as "1234-5678-9012-3456".
@@ -75,16 +148,20 @@ namespace Google.Ads.GoogleAds.Examples.V7
             "manager account and is linked to a customer account via a billing setup.";
 
         /// <summary>
-        /// Runs the code example. Either a payments account ID or a payments profile ID
-        /// must be provided for the example to run successfully. If both are provided, only the
-        /// payments account ID will be used.
+        /// Runs the code example. Either a payments account ID or a payments profile ID must be
+        /// provided for the example to run successfully. If both are provided, only the payments
+        /// account ID will be used.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="paymentsAccountId">Optional payments account ID to attach to the new
-        ///     billing setup. Must be formatted as "1234-5678-9012-3456".</param>
-        /// <param name="paymentsProfileId">Optional payments profile ID to attach to a new payments
-        ///     account and to the new billing setup. Must be formatted as "1234-5678-9012".</param>
+        /// <param name="paymentsAccountId">
+        /// Optional payments account ID to attach to the new billing setup. Must be formatted as
+        /// "1234-5678-9012-3456".
+        /// </param>
+        /// <param name="paymentsProfileId">
+        /// Optional payments profile ID to attach to a new payments account and to the new billing
+        /// setup. Must be formatted as "1234-5678-9012".
+        /// </param>
         public void Run(GoogleAdsClient client, long customerId, string paymentsAccountId,
             string paymentsProfileId)
         {
@@ -132,13 +209,18 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// paymentsAccountId or paymentsProfileId must be provided.
         /// </summary>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="paymentsAccountId">Optional payments account ID to attach to the new
-        ///     billing setup. Must be formatted as "1234-5678-9012-3456".</param>
-        /// <param name="paymentsProfileId">Optional payments profile ID to attach to a new payments
-        ///     account and to the new billing setup. Must be formatted as "1234-5678-9012".</param>
+        /// <param name="paymentsAccountId">
+        /// Optional payments account ID to attach to the new billing setup. Must be formatted as
+        /// "1234-5678-9012-3456".
+        /// </param>
+        /// <param name="paymentsProfileId">
+        /// Optional payments profile ID to attach to a new payments account and to the new billing
+        /// setup. Must be formatted as "1234-5678-9012".
+        /// </param>
         /// <returns>A new BillingSetup instance with complete payment details.</returns>
-        /// <exception cref="Exception">Generic exception if no payment details have been
-        ///     provided.</exception>
+        /// <exception cref="Exception">
+        /// Generic exception if no payment details have been provided.
+        /// </exception>
         private BillingSetup CreateBillingSetup(long customerId, string paymentsAccountId,
             string paymentsProfileId)
         {
@@ -181,14 +263,14 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// </summary>
         /// <param name="googleAdsService">The Google Ads service client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="billingSetup">The instance of BillingSetup whose starting date time will
-        ///     be set.</param>
+        /// <param name="billingSetup">
+        /// The instance of BillingSetup whose starting date time will be set.
+        /// </param>
         private void SetBillingSetupStartDateTime(GoogleAdsServiceClient googleAdsService,
             long customerId, BillingSetup billingSetup)
         {
             // The query to search existing approved billing setups in the end date time descending
-            // order.
-            // See GetBillingSetup.cs for a more detailed example of requesting billing setup
+            // order. See GetBillingSetup.cs for a more detailed example of requesting billing setup
             // information.
             string query = @"
                 SELECT billing_setup.end_date_time

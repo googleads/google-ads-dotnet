@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Common;
 using Google.Ads.GoogleAds.V7.Errors;
@@ -37,9 +38,31 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class HandleKeywordPolicyViolations : ExampleBase
     {
         /// <summary>
-        /// The default keyword to be used if keyword is not provided.
+        /// Command line options for running the <see cref="HandleKeywordPolicyViolations"/> example.
         /// </summary>
-        private const string DEFAULT_KEYWORD = "medication";
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// ID of the ad group to which keywords are added.
+            /// </summary>
+            [Option("adGroupId", Required = true, HelpText =
+                "ID of the ad group to which keywords are added.")]
+            public long AdGroupId { get; set; }
+
+            /// <summary>
+            /// The keyword text to add to the ad group.
+            /// </summary>
+            [Option("keywordText", Required = true, HelpText =
+                "The keyword text to add to the ad group.")]
+            public string KeywordText { get; set; }
+        }
 
         /// <summary>
         /// Main method, to run this code example as a standalone application.
@@ -47,28 +70,36 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            HandleKeywordPolicyViolations codeExample =
-                new HandleKeywordPolicyViolations();
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // ID of the ad group to which keywords are added.
+                    options.AdGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
+
+                    // The keyword text to add to the ad group.
+                    options.KeywordText = "INSERT_KEYWORD_TEXT_HERE";
+
+                    return 0;
+                });
+
+            HandleKeywordPolicyViolations codeExample = new HandleKeywordPolicyViolations();
             Console.WriteLine(codeExample.Description);
-            try
-            {
-                // The Google Ads customer ID for which the call is made.
-                long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                // The ad group to which keywords are added.
-                long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
-
-                // The keyword text to be added to the ad group.
-                string keywordText = "INSERT_KEYWORD_TEXT_HERE";
-
-                codeExample.Run(new GoogleAdsClient(), customerId, adGroupId, keywordText);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("An exception occurred while running this code example. {0}",
-                    ExampleUtilities.FormatException(e));
-            }
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.AdGroupId,
+                options.KeywordText);
         }
+
+        /// <summary>
+        /// The default keyword to be used if keyword is not provided.
+        /// </summary>
+        private const string DEFAULT_KEYWORD = "medication";
 
         /// <summary>
         /// Returns a description about the code example.
