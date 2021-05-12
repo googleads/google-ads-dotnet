@@ -1,4 +1,4 @@
-﻿// Copyright 2019 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,12 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Common;
+using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Services;
-
 using System;
+using System.Collections.Generic;
 using static Google.Ads.GoogleAds.V7.Enums.KeywordPlanNetworkEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V7
@@ -28,41 +29,100 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class GenerateKeywordIdeas : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="GenerateKeywordIdeas"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// Location criteria IDs. For example, specify 21167 for New York. For more
+            /// information on determining this value, see
+            /// https://developers.google.com/google-ads/api/reference/data/geotargets.
+            /// </summary>
+            [Option("locationIds", Required = true, HelpText =
+                "Location criteria IDs. For example, specify 21167 for New York. For more " +
+                "information on determining this value, see " +
+                "https://developers.google.com/google-ads/api/reference/data/geotargets.")]
+            public long[] LocationIds { get; set; }
+
+            /// <summary>
+            /// A language criterion ID. For example, specify 1000 for English. For more information
+            /// on determining this value, see
+            /// https://developers.google.com/google-ads/api/reference/data/codes-formats#languages.
+            /// </summary>
+            [Option("languageId", Required = true, HelpText =
+                "A language criterion ID. For example, specify 1000 for English. For more " +
+                "information on determining this value, see " +
+                "https://developers.google.com/google-ads/api/reference/data/codes-formats#languages.")]
+            public long LanguageId { get; set; }
+
+            /// <summary>
+            /// The list of seed keywords.
+            /// </summary>
+            [Option("keywordTexts", Required = false, HelpText =
+                "The list of seed keywords.", Default = new string[] { })]
+            public string[] KeywordTexts { get; set; }
+
+            /// <summary>
+            /// Specify a URL string related to your business to generate ideas.
+            /// </summary>
+            [Option("pageUrl", Required = false, HelpText =
+                "Specify a URL string related to your business to generate ideas.", Default = null)]
+            public string PageUrl { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // Location criteria IDs. For example, specify 21167 for New York. For more
+                    // information on determining this value, see
+                    // https://developers.google.com/google-ads/api/reference/data/geotargets.
+                    // Add more items to the array as desired.
+                    options.LocationIds = new long[]
+                    {
+                        long.Parse("INSERT_LOCATION_ID_1_HERE"),
+                        long.Parse("INSERT_LOCATION_ID_2_HERE")
+                    };
+
+                    // A language criterion ID. For example, specify 1000 for English. For more
+                    // information on determining this value, see
+                    // https://developers.google.com/google-ads/api/reference/data/codes-formats#languages.
+                    options.LanguageId = long.Parse("INSERT_LANGUAGE_ID_HERE");
+
+                    // The list of seed keywords.
+                    // Add more items to the array as desired.
+                    options.KeywordTexts = new string[] { "INSERT_KEYWORD_TEXT_HERE" };
+
+                    // The seed page URL.
+                    options.PageUrl = "INSERT_PAGE_URL_HERE";
+
+                    return 0;
+                });
+
             GenerateKeywordIdeas codeExample = new GenerateKeywordIdeas();
             Console.WriteLine(codeExample.Description);
-
-            // The customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // Location criteria IDs. For example, specify 21167 for New York. For more information
-            // on determining this value, see
-            // https://developers.google.com/google-ads/api/reference/data/geotargets.
-            long[] locationIds = new long[] {
-                long.Parse("INSERT_LOCATION_ID_1_HERE"),
-                long.Parse("INSERT_LOCATION_ID_2_HERE")
-            };
-
-            // A language criterion ID. For example, specify 1000 for English. For more information
-            // on determining this value, see
-            // https://developers.google.com/google-ads/api/reference/data/codes-formats#languages.
-            long languageId = long.Parse("INSERT_LANGUAGE_ID_HERE");
-
-            // List of seed keywords.
-            string[] keywordTexts = new string[] {
-                "INSERT_KEYWORD_TEXT_1_HERE",
-                "INSERT_KEYWORD_TEXT_2_HERE"
-            };
-
-            // Optional: Specify a URL string related to your business to generate ideas.
-            string pageUrl = null;
-
-            codeExample.Run(new GoogleAdsClient(), customerId, locationIds, languageId,
-                keywordTexts, pageUrl);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.LocationIds,
+                options.LanguageId, options.KeywordTexts, options.PageUrl);
         }
 
         /// <summary>
@@ -77,10 +137,16 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
-        /// <param name="locationIds">The list of location IDs to restrict the search.</param>
-        /// <param name="languageId">The language to restrict the search.</param>
+        /// <param name="locationIds">Location criteria IDs. For example, specify 21167 for
+        /// New York. For more information on determining this value, see
+        /// https://developers.google.com/google-ads/api/reference/data/geotargets.
+        /// </param>
+        /// <param name="languageId">A language criterion ID. For example, specify 1000 for
+        /// English. For more information on determining this value, see
+        /// https://developers.google.com/google-ads/api/reference/data/codes-formats#languages.
+        /// </param>
         /// <param name="keywordTexts">The list of seed keywords.</param>
-        /// <param name="pageUrl">The seed page URL.</param>
+        /// <param name="pageUrl">A URL string related to your business to generate ideas.</param>
         // [START generate_keyword_ideas]
         public void Run(GoogleAdsClient client, long customerId, long[] locationIds,
             long languageId, string[] keywordTexts, string pageUrl)
@@ -124,7 +190,6 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 request.KeywordAndUrlSeed.Url = pageUrl;
                 request.KeywordAndUrlSeed.Keywords.AddRange(keywordTexts);
             }
-
 
             // Create a list of geo target constants based on the resource name of specified
             // location IDs.
