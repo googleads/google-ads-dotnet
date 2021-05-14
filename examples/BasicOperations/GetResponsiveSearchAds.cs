@@ -1,4 +1,4 @@
-﻿// Copyright 2020 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Common;
 using Google.Ads.GoogleAds.V7.Errors;
@@ -20,6 +21,7 @@ using Google.Ads.GoogleAds.V7.Services;
 using Google.Api.Gax;
 using Google.Protobuf.Collections;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Google.Ads.GoogleAds.Examples.V7
@@ -32,9 +34,24 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class GetResponsiveSearchAds : ExampleBase
     {
         /// <summary>
-        /// The page size to be used by default.
+        /// Command line options for running the <see cref="GetResponsiveSearchAds"/> example.
         /// </summary>
-        private const int PAGE_SIZE = 1_000;
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// Optional: ID of the ad group to restrict search to.
+            /// </summary>
+            [Option("adGroupId", Required = true, HelpText =
+                "Optional: ID of the ad group to restrict search to.")]
+            public long? AdGroupId { get; set; }
+        }
 
         /// <summary>
         /// Main method, to run this code example as a standalone application.
@@ -42,18 +59,34 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // Optional: ID of the ad group to restrict search to.
+                    options.AdGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
+
+                    return 0;
+                });
+
             GetResponsiveSearchAds codeExample = new GetResponsiveSearchAds();
-
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // Optional: ID of the ad group to restrict search to.
-            long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId, adGroupId);
+            codeExample.Run(new GoogleAdsClient(),
+                options.CustomerId,
+                options.AdGroupId);
         }
+
+        /// <summary>
+        /// The page size to be used by default.
+        /// </summary>
+        private const int PAGE_SIZE = 1_000;
 
         /// <summary>
         /// Returns a description about the code example.

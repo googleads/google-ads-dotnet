@@ -12,8 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using System;
-using System.Linq;
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
 using Google.Ads.GoogleAds.V7.Common;
@@ -21,36 +20,77 @@ using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
 using Google.Protobuf;
-using static Google.Ads.GoogleAds.V7.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.AdvertisingChannelTypeEnum.Types;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using static Google.Ads.GoogleAds.V7.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.AdGroupStatusEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.AdvertisingChannelSubTypeEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.AssetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.CampaignStatusEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.LocationSourceTypeEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.OptimizationGoalTypeEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.AssetTypeEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
     /// <summary>
     /// This example adds an Local campaign.
-    /// Prerequisite: To create a Local campaign, you need to define the store locations you want to
-    /// promote by linking your Google My Business account or selecting affiliate locations. More
-    /// information about Local campaigns can be found at:
+    /// Prerequisite: To create a Local campaign, you need to define the store locations you want
+    /// to promote by linking your Google My Business account or selecting affiliate locations.
+    /// More information about Local campaigns can be found at:
     /// https: //support.google.com/google-ads/answer/9118422.
     /// </summary>
     public class AddLocalCampaign : ExampleBase
     {
-        const string MARKETING_IMAGE_URL = "https://goo.gl/3b9Wfh";
-        const string LOGO_IMAGE_URL = "https://goo.gl/mtt54n";
-        const string YOUTUBE_VIDEO_ID = "t1fDo0VyeEo";
+        /// <summary>
+        /// Command line options for running the <see cref="AddLocalCampaign"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID.")]
+            public long CustomerId { get; set; }
+        }
 
         /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
+        {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    return 0;
+                });
+
+            AddLocalCampaign codeExample = new AddLocalCampaign();
+            Console.WriteLine(codeExample.Description);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId);
+        }
+
+        private const string MARKETING_IMAGE_URL = "https://goo.gl/3b9Wfh";
+        private const string LOGO_IMAGE_URL = "https://goo.gl/mtt54n";
+        private const string YOUTUBE_VIDEO_ID = "t1fDo0VyeEo";
+
+        /// <summary>
+        /// Main method, to run this code example as a standalone application.
+        /// </summary>
+        /// <param name="args">The command line arguments.</param>
+        public static void __Main(string[] args)
         {
             AddLocalCampaign codeExample = new AddLocalCampaign();
             Console.WriteLine(codeExample.Description);
@@ -65,10 +105,11 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
-            "This example adds an Local campaign.\nPrerequisite: To create a Local campaign, you " +
-            "need to define the store locations you want to promote by linking your Google My " +
-            "Business account or selecting affiliate locations. More information about Local " +
-            "campaigns can be found at: https://support.google.com/google-ads/answer/9118422.";
+            "This example adds an Local campaign.\nPrerequisite: To create a Local campaign, " +
+            "you need to define the store locations you want to promote by linking your " +
+            "Google My Business account or selecting affiliate locations. More information " +
+            "about Local campaigns can be found at: " +
+            "https://support.google.com/google-ads/answer/9118422.";
 
         /// <summary>
         /// Runs the code example.
@@ -85,7 +126,6 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 // Create a campaign.
                 string campaignResourceName = CreateCampaign(client, customerId,
                     budgetResourceName);
-
 
                 // Create an ad group.
                 string adGroupResourceName =
@@ -137,7 +177,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             // resulting budget's resource name.
             MutateCampaignBudgetsResponse campaignBudgetsResponse =
                 campaignBudgetServiceClient.MutateCampaignBudgets(customerId.ToString(),
-                    new[] {campaignBudgetOperation});
+                    new[] { campaignBudgetOperation });
 
             string campaignBudgetResourceName =
                 campaignBudgetsResponse.Results.First().ResourceName;
@@ -214,7 +254,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             // campaign's resource name.
             MutateCampaignsResponse campaignResponse =
                 campaignServiceClient.MutateCampaigns(customerId.ToString(),
-                    new[] {campaignOperation});
+                    new[] { campaignOperation });
 
             string campaignResourceName = campaignResponse.Results.First().ResourceName;
             Console.WriteLine("Created Local campaign with resource name " +
@@ -261,7 +301,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             // Issue a mutate request to add the ad group, then print and return the resulting ad
             // group's resource name.
             MutateAdGroupsResponse adGroupResponse = adGroupServiceClient.MutateAdGroups(
-                customerId.ToString(), new[] {adGroupOperation});
+                customerId.ToString(), new[] { adGroupOperation });
 
             string adGroupResourceName = adGroupResponse.Results.First().ResourceName;
             Console.WriteLine($"Created ad group with resource name '{adGroupResourceName}'.");
@@ -291,7 +331,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 Status = AdGroupAdStatus.Enabled,
                 Ad = new Ad
                 {
-                    FinalUrls = {"https://www.example.com"},
+                    FinalUrls = { "https://www.example.com" },
                     LocalAd = new LocalAdInfo
                     {
                         Headlines =
@@ -304,7 +344,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
                             CreateAdTextAsset("Buy your tickets now"),
                             CreateAdTextAsset("Visit the Red Planet")
                         },
-                        CallToActions = {CreateAdTextAsset("Shop Now")},
+                        CallToActions = { CreateAdTextAsset("Shop Now") },
                         // Set the marketing image and logo image assets.
                         MarketingImages =
                         {
@@ -345,7 +385,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             // resource name.
             MutateAdGroupAdsResponse adGroupAdResponse =
                 adGroupAdServiceClient.MutateAdGroupAds(customerId.ToString(),
-                    new[] {adGroupAdOperation});
+                    new[] { adGroupAdOperation });
 
             Console.WriteLine("Created ad group ad with resource name " +
                 $"'{adGroupAdResponse.Results.First().ResourceName}'.");
@@ -401,7 +441,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             // Issue a mutate request to add the asset, then print and return the resulting asset's
             // resource name.
             MutateAssetsResponse assetResponse =
-                assetService.MutateAssets(customerId.ToString(), new[] {assetOperation});
+                assetService.MutateAssets(customerId.ToString(), new[] { assetOperation });
 
             string assetResourceName = assetResponse.Results.First().ResourceName;
             Console.WriteLine("A new image asset has been added with resource name: " +
@@ -446,7 +486,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             // Issue a mutate request to add the asset, then print and return the resulting asset's
             // resource name.
             MutateAssetsResponse assetResponse =
-                assetServiceClient.MutateAssets(customerId.ToString(), new[] {assetOperation});
+                assetServiceClient.MutateAssets(customerId.ToString(), new[] { assetOperation });
 
             string assetResourceName = assetResponse.Results.First().ResourceName;
             Console.WriteLine("A new YouTube video asset has been added with resource name: " +

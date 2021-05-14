@@ -12,12 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Common;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,25 +34,56 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class AddAdCustomizer : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="AddAdCustomizer"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// ID of the ad groups to which ad customizers are added.
+            /// </summary>
+            [Option("adGroupIds", Required = true, HelpText =
+                "ID of the ad groups to which ad customizers are added.")]
+            public long[] AdGroupIds { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // ID of the ad groups to which ad customizers are added.
+                    // Add more items to the array as desired.
+                    options.AdGroupIds = new long[]
+                    {
+                        long.Parse("INSERT_AD_GROUP_ID_HERE"),
+                        long.Parse("INSERT_AD_GROUP_ID_HERE"),
+                    };
+
+                    return 0;
+                });
+
             AddAdCustomizer codeExample = new AddAdCustomizer();
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // ID of the ad groups to which ads are added.
-            long[] adGroupIds = new[]
-            {
-                long.Parse("INSERT_AD_GROUP_ID_HERE"),
-                long.Parse("INSERT_AD_GROUP_ID_HERE"),
-            };
-
-            codeExample.Run(new GoogleAdsClient(), customerId, adGroupIds);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.AdGroupIds);
         }
 
         /// <summary>
@@ -74,7 +105,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
             AdGroupBidModifierServiceClient adGroupBidModifierService =
                 client.GetService(Services.V7.AdGroupBidModifierService);
 
-            string feedName = "Ad_Customizer_example_feed_" + ExampleUtilities.GetShortRandomString();
+            string feedName = "Ad_Customizer_example_feed_" +
+                ExampleUtilities.GetShortRandomString();
 
             try
             {
@@ -111,7 +143,6 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 Console.WriteLine($"Request ID: {e.RequestId}");
                 throw;
             }
-
         }
 
         /// <summary>
@@ -218,7 +249,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="feedAttributes">The attributes of the feed.</param>
         // [START add_ad_customizer_2]
         private void CreateAdCustomizerMapping(GoogleAdsClient client, long customerId,
-                    string feedResourceName, Dictionary<string, FeedAttribute> feedAttributes)
+            string feedResourceName, Dictionary<string, FeedAttribute> feedAttributes)
         {
             // Get the FeedMappingService.
             FeedMappingServiceClient feedMappingService =
@@ -320,7 +351,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <returns>A FeedItemOperation to create a feed item.</returns>
         // [START add_ad_customizer_4]
         private FeedItemOperation CreateFeedItemOperation(string name, string price, string date,
-                    string feedResourceName, Dictionary<string, FeedAttribute> feedAttributes)
+            string feedResourceName, Dictionary<string, FeedAttribute> feedAttributes)
         {
             FeedItemAttributeValue nameAttributeValue = new FeedItemAttributeValue()
             {
@@ -364,7 +395,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="feedItemResourceNames">The resource names of the feed items.</param>
         // [START add_ad_customizer_5]
         private void CreateFeedItemTargets(GoogleAdsClient client,
-                    long customerId, long[] adGroupIds, List<string> feedItemResourceNames)
+            long customerId, long[] adGroupIds, List<string> feedItemResourceNames)
         {
             // Get the FeedItemTargetServiceClient.
             FeedItemTargetServiceClient feedItemTargetService =
@@ -409,12 +440,11 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="feedName">Name of the feed.</param>
         // [START add_ad_customizer_6]
         private void CreateAdsWithCustomizations(GoogleAdsClient client, long customerId,
-                    long[] adGroupIds, string feedName)
+            long[] adGroupIds, string feedName)
         {
             // Get the AdGroupAdServiceClient.
             AdGroupAdServiceClient adGroupAdService =
                 client.GetService(Services.V7.AdGroupAdService);
-
 
             // Creates an expanded text ad using the feed attribute names as placeholders.
             Ad ad = new Ad()

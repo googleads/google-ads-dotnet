@@ -1,4 +1,4 @@
-﻿// Copyright 2020 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
 using Google.Ads.GoogleAds.V7.Errors;
@@ -19,6 +20,7 @@ using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
 using Google.Api.Gax;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using static Google.Ads.GoogleAds.V7.Enums.AccessRoleEnum.Types;
 
@@ -34,24 +36,64 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class UpdateUserAccess : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="UpdateUserAccess"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// Email address of the user whose access role should be updated.
+            /// </summary>
+            [Option("emailAddress", Required = true, HelpText =
+                "Email address of the user whose access role should be updated.")]
+            public string EmailAddress { get; set; }
+
+            /// <summary>
+            /// The updated access role.
+            /// </summary>
+            [Option("accessRole", Required = true, HelpText =
+                "The updated access role.")]
+            public AccessRole AccessRole { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // Email address of the user whose access role should be updated.
+                    options.EmailAddress = "INSERT_EMAIL_ADDRESS_HERE";
+
+                    // The updated user access role.
+                    options.AccessRole = (AccessRole) Enum.Parse(typeof(AccessRole),
+                        "INSERT_ACCESS_ROLE_HERE");
+                    return 0;
+                });
+
             UpdateUserAccess codeExample = new UpdateUserAccess();
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // Email address of the user whose access role should be modifled.
-            string emailAddress = "INSERT_EMAIL_ADDRESS_HERE";
-
-            // The updated user access role.
-            AccessRole accessRole = (AccessRole) Enum.Parse(typeof(AccessRole), 
-                "INSERT_ACCESS_ROLE_HERE");
-            codeExample.Run(new GoogleAdsClient(), customerId, emailAddress, accessRole);
+            codeExample.Run(new GoogleAdsClient(),
+                options.CustomerId,
+                options.EmailAddress,
+                options.AccessRole);
         }
 
         /// <summary>
@@ -145,7 +187,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="userId">ID of the user whose access role is modified.</param>
         /// <param name="accessRole">The updated access role.</param>
-        private void ModifyUserAccess(GoogleAdsClient client, long customerId, long userId, 
+        private void ModifyUserAccess(GoogleAdsClient client, long customerId, long userId,
             AccessRole accessRole)
         {
             // Get the CustomerUserAccessService.
