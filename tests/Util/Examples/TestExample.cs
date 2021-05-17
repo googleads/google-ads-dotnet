@@ -12,9 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
+using CommandLine.Text;
 using Google.Ads.GoogleAds.Examples;
 using Google.Ads.GoogleAds.Lib;
 using NUnit.Framework;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Google.Ads.GoogleAds.Tests.Util.Examples.V0
 {
@@ -26,6 +31,64 @@ namespace Google.Ads.GoogleAds.Tests.Util.Examples.V0
     [Category("Smoke")]
     internal class TestExample : ExampleBase
     {
+        /// <summary>
+        /// Command line options for running the <see cref="CreateFeedItemSet"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// Array of strings.
+            /// </summary>
+            [Option("stringArgs", Required = true, HelpText = "Array of strings")]
+            public IEnumerable<string> StringArgs { get; set; }
+
+            /// <summary>
+            /// Array of longs.
+            /// </summary>
+            [Option("longArgs", Required = true, HelpText = "Array of longs")]
+            public IEnumerable<long> LongArgs { get; set; }
+
+            /// <summary>
+            /// Single string.
+            /// </summary>
+            [Option("singleStringArg", Required = true, HelpText = "Single string")]
+            public string SingleStringArg { get; set; }
+
+            /// <summary>
+            /// Single long.
+            /// </summary>
+            [Option("singleLongArg", Required = true, HelpText = "Single long")]
+            public long SingleLongArg { get; set; }
+        }
+
+        /// <summary>
+        /// Main method, to run this code example as a standalone application.
+        /// </summary>
+        /// <param name="args">The command line arguments.</param>
+        public static void Main(string[] args)
+        {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    throw new ArgumentException("There were errors when parsing the command " +
+                        "line parameters.");
+                });
+
+            TestExample codeExample = new TestExample();
+            Console.WriteLine(codeExample.Description);
+            codeExample.Run(new GoogleAdsClient(),
+                options.StringArgs.ToArray(),
+                options.LongArgs.ToArray(),
+                options.SingleStringArg,
+                options.SingleLongArg
+            );
+        }
+
         internal const long LONG_ARG1 = 12345;
         internal const long LONG_ARG2 = 34567;
         internal const long LONG_ARG3 = 56789;

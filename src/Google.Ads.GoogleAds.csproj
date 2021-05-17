@@ -42,6 +42,7 @@
     <None Include="logo.png" Pack="true" PackagePath="\" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.8.0" />
     <PackageReference Include="Google.Api.Gax.Grpc.GrpcCore" Version="3.2.0" />
     <PackageReference Include="Google.LongRunning" Version="2.1.0" />
     <PackageReference Include="Google.Protobuf" Version="3.15.6" />
