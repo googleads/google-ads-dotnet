@@ -44,7 +44,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             /// <summary>
             /// Optional: ID of the ad group to restrict search to.
             /// </summary>
-            [Option("adGroupId", Required = true, HelpText =
+            [Option("adGroupId", Required = false, HelpText =
                 "Optional: ID of the ad group to restrict search to.")]
             public long? AdGroupId { get; set; }
         }

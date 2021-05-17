@@ -19,6 +19,7 @@ using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
@@ -44,7 +45,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             /// </summary>
             [Option("campaignIds", Required = true, HelpText =
                 "IDs of the campaigns where the campaign labels will be added.")]
-            public long[] CampaignIds { get; set; }
+            public IEnumerable<long> CampaignIds { get; set; }
 
             /// <summary>
             /// The ID of the label to attach to campaigns.
@@ -86,8 +87,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
 
             AddCampaignLabels codeExample = new AddCampaignLabels();
             Console.WriteLine(codeExample.Description);
-            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.CampaignIds,
-                options.LabelId);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId,
+                options.CampaignIds.ToArray(), options.LabelId);
         }
 
         /// <summary>

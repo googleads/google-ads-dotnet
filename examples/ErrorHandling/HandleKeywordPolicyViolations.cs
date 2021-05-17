@@ -59,7 +59,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             /// <summary>
             /// The keyword text to add to the ad group.
             /// </summary>
-            [Option("keywordText", Required = true, HelpText =
+            [Option("keywordText", Required = false, HelpText =
                 "The keyword text to add to the ad group.")]
             public string KeywordText { get; set; }
         }

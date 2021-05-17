@@ -38,13 +38,6 @@ namespace Google.Ads.GoogleAds.Examples.V7
         public class Options : OptionsBase
         {
             /// <summary>
-            /// The Google Ads customer ID for which the call is made.
-            /// </summary>
-            [Option("customerId", Required = true, HelpText =
-                "The Google Ads customer ID for which the call is made.")]
-            public long CustomerId { get; set; }
-
-            /// <summary>
             /// The artifact for which metadata is retrieved.
             /// </summary>
             [Option("artifactName", Required = true, HelpText =
@@ -66,9 +59,6 @@ namespace Google.Ads.GoogleAds.Examples.V7
                     return 0;
                 }, delegate (IEnumerable<Error> errors)
                 {
-                    // The Google Ads customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
                     // The artifact for which metadata is retrieved.
                     options.ArtifactName = "INSERT_ARTIFACT_NAME_HERE";
 
@@ -78,7 +68,6 @@ namespace Google.Ads.GoogleAds.Examples.V7
             GetArtifactMetadata codeExample = new GetArtifactMetadata();
             Console.WriteLine(codeExample.Description);
             codeExample.Run(new GoogleAdsClient(),
-                options.CustomerId,
                 options.ArtifactName);
         }
 
@@ -95,9 +84,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// Runs the code example.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
-        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="artifactName">The artifact for which metadata is retrieved.</param>
-        public void Run(GoogleAdsClient client, long customerId, string artifactName)
+        public void Run(GoogleAdsClient client, string artifactName)
         {
             // Get the GoogleAdsFieldService.
             GoogleAdsFieldServiceClient googleAdsFieldService = client.GetService(

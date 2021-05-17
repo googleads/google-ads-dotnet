@@ -19,6 +19,7 @@ using Google.Ads.GoogleAds.V7.Services;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Google.Ads.GoogleAds.Examples.V7
@@ -40,12 +41,12 @@ namespace Google.Ads.GoogleAds.Examples.V7
             /// </summary>
             [Option("customerIds", Required = true, HelpText =
                 "The Google Ads customer IDs for which the call is made.")]
-            public long[] CustomerIds { get; set; }
+            public IEnumerable<long> CustomerIds { get; set; }
 
             /// <summary>
             /// Optional login customer ID if your access to the CIDs is via a manager account.
             /// </summary>
-            [Option("loginCustomerId", Required = true, HelpText =
+            [Option("loginCustomerId", Required = false, HelpText =
                 "Optional login customer ID if your access to the CIDs is via a manager account.")]
             public long? LoginCustomerId { get; set; }
         }
@@ -81,7 +82,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
 
             ParallelReportDownload codeExample = new ParallelReportDownload();
             Console.WriteLine(codeExample.Description);
-            codeExample.Run(new GoogleAdsClient(), options.CustomerIds, options.LoginCustomerId);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerIds.ToArray(),
+                options.LoginCustomerId);
         }
 
         // Defines the Google Ads Query Language (GAQL) query strings to run for each customer ID.

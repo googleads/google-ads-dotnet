@@ -18,6 +18,7 @@ using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Services;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
@@ -50,7 +51,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             /// </summary>
             [Option("feedItemIds", Required = true, HelpText =
                 "The IDs of the feed items to remove.")]
-            public long[] FeedItemIds { get; set; }
+            public IEnumerable<long> FeedItemIds { get; set; }
         }
 
         /// <summary>
@@ -82,7 +83,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             RemoveFeedItems codeExample = new RemoveFeedItems();
             Console.WriteLine(codeExample.Description);
             codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.FeedId,
-                options.FeedItemIds);
+                options.FeedItemIds.ToArray());
         }
 
         /// <summary>

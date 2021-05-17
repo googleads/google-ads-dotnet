@@ -48,7 +48,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             /// </summary>
             [Option("userListIds", Required = true, HelpText =
                 "The IDs of the lists to be used for the new combination user list.")]
-            public long[] UserListIds { get; set; }
+            public IEnumerable<long> UserListIds { get; set; }
         }
 
         /// <summary>
@@ -81,7 +81,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
 
             AddLogicalUserList codeExample = new AddLogicalUserList();
             Console.WriteLine(codeExample.Description);
-            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.UserListIds);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId,
+                options.UserListIds.ToArray());
         }
 
         /// <summary>

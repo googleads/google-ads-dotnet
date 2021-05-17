@@ -50,7 +50,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             /// </summary>
             [Option("adGroupIds", Required = true, HelpText =
                 "ID of the ad groups to which ad customizers are added.")]
-            public long[] AdGroupIds { get; set; }
+            public IEnumerable<long> AdGroupIds { get; set; }
         }
 
         /// <summary>
@@ -83,7 +83,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
 
             AddAdCustomizer codeExample = new AddAdCustomizer();
             Console.WriteLine(codeExample.Description);
-            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.AdGroupIds);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId,
+                options.AdGroupIds.ToArray());
         }
 
         /// <summary>

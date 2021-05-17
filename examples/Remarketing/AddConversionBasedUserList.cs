@@ -48,7 +48,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             /// </summary>
             [Option("conversionActionIds", Required = true, HelpText =
                 "The IDs of the conversion actions for the basic user list.")]
-            public long[] ConversionActionIds { get; set; }
+            public IEnumerable<long> ConversionActionIds { get; set; }
         }
 
         /// <summary>
@@ -81,7 +81,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
 
             AddConversionBasedUserList codeExample = new AddConversionBasedUserList();
             Console.WriteLine(codeExample.Description);
-            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.ConversionActionIds);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, 
+                options.ConversionActionIds.ToArray());
         }
 
         /// <summary>

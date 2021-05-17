@@ -54,7 +54,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             /// </summary>
             [Option("geoTargetConstantId", Required = false, HelpText =
                 "Geo target constant ID to add to the extension feed item. Reverts to the United" +
-                " States (2840) if no value passed.", Default = 2840)]
+                " States (2840) if no value passed.")]
             public long? GeoTargetConstantId { get; set; }
         }
 

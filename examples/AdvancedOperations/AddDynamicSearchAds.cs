@@ -49,13 +49,6 @@ namespace Google.Ads.GoogleAds.Examples.V7
             [Option("customerId", Required = true, HelpText =
                 "The customer ID for which the call is made.")]
             public long CustomerId { get; set; }
-
-            /// <summary>
-            /// The ad group ID to which ads are added.
-            /// </summary>
-            [Option("adGroupId", Required = true, HelpText =
-                "The ad group ID to which ads are added.")]
-            public long AdGroupId { get; set; }
         }
 
         /// <summary>
@@ -75,15 +68,12 @@ namespace Google.Ads.GoogleAds.Examples.V7
                     // The customer ID for which the call is made.
                     options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
-                    // The ad group ID to which ads are added.
-                    options.AdGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
-
                     return 0;
                 });
 
             AddDynamicSearchAds codeExample = new AddDynamicSearchAds();
             Console.WriteLine(codeExample.Description);
-            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.AdGroupId);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId);
         }
 
         /// <summary>
@@ -98,8 +88,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
-        /// <param name="adGroupId">The ad group ID to which ads are added.</param>
-        public void Run(GoogleAdsClient client, long customerId, long adGroupId)
+        public void Run(GoogleAdsClient client, long customerId)
         {
             try
             {

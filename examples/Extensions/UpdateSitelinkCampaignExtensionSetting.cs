@@ -58,7 +58,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             /// </summary>
             [Option("feedItemIds", Required = true, HelpText =
                 "The extension feed item IDs to replace.")]
-            public long[] FeedItemIds { get; set; }
+            public IEnumerable<long> FeedItemIds { get; set; }
         }
 
         /// <summary>
@@ -92,7 +92,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 new UpdateSitelinkCampaignExtensionSetting();
             Console.WriteLine(codeExample.Description);
             codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.CampaignId,
-                options.FeedItemIds);
+                options.FeedItemIds.ToArray());
         }
 
         /// <summary>

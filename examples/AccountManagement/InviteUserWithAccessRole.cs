@@ -63,7 +63,11 @@ namespace Google.Ads.GoogleAds.Examples.V7
         public static void Main(string[] args)
         {
             Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+            Parser parser = new Parser(settings =>
+            {
+                settings.CaseInsensitiveEnumValues = true;
+            });
+            parser.ParseArguments<Options>(args).MapResult(
                 delegate (Options o)
                 {
                     options = o;
