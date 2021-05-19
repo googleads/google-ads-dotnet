@@ -1,4 +1,4 @@
-﻿// Copyright 2019 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,11 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Services;
-
 using System;
+using System.Collections.Generic;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
@@ -26,21 +27,53 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class RemoveAdGroup : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="RemoveAdGroup"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// ID of the ad group to remove.
+            /// </summary>
+            [Option("adGroupId", Required = true, HelpText =
+                "ID of the ad group to remove.")]
+            public long AdGroupId { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // ID of the ad group to remove.
+                    options.AdGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
+
+                    return 0;
+                });
+
             RemoveAdGroup codeExample = new RemoveAdGroup();
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // ID of the ad group to remove.
-            long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId, adGroupId);
+            codeExample.Run(new GoogleAdsClient(),
+                options.CustomerId,
+                options.AdGroupId);
         }
 
         /// <summary>

@@ -12,18 +12,19 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Common;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
-using static Google.Ads.GoogleAds.V7.Enums.OfflineUserDataJobTypeEnum.Types;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
 using static Google.Ads.GoogleAds.V7.Enums.OfflineUserDataJobStatusEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.OfflineUserDataJobTypeEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
@@ -34,13 +35,76 @@ namespace Google.Ads.GoogleAds.Examples.V7
     /// </summary>
     public class UploadStoreSalesTransactions : ExampleBase
     {
-        // Gets a digest for generating hashed values using SHA-256. You must normalize and hash the
-        // the value for any field where the name begins with "hashed". See the normalizeAndHash()
-        // method.
-        private static readonly SHA256 _digest = SHA256.Create();
+        /// <summary>
+        /// Command line options for running the <see cref="UploadStoreSalesTransactions"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
 
-        // If uploading data with custom key and values, specify the value:
-        private const string CUSTOM_VALUE = "INSERT_CUSTOM_VALUE_HERE";
+            /// <summary>
+            /// The ID of a store sales conversion action.
+            /// </summary>
+            [Option("conversionActionId", Required = true, HelpText =
+                "The ID of a store sales conversion action.")]
+            public long ConversionActionId { get; set; }
+
+            /// <summary>
+            /// The type of user data in the job (first or third party). If you have an official
+            /// store sales partnership with Google, use StoreSalesUploadThirdParty. Otherwise,
+            /// use StoreSalesUploadFirstParty or omit this parameter.
+            /// </summary>
+            [Option("offlineUserDataJobType", Required = true, HelpText =
+                "The type of user data in the job (first or third party). If you have an" +
+                " official store sales partnership with Google, use StoreSalesUploadThirdParty." +
+                " Otherwise, use StoreSalesUploadFirstParty or omit this parameter.")]
+            public OfflineUserDataJobType OfflineUserDataJobType { get; set; }
+
+            /// <summary>
+            /// Optional (but recommended) external ID to identify the offline user data job.
+            /// </summary>
+            [Option("externalId", Required = true, HelpText =
+                "Optional (but recommended) external ID to identify the offline user data job.")]
+            public long? ExternalId { get; set; }
+
+            /// <summary>
+            /// Date and time the advertiser uploaded data to the partner. Only required if
+            /// uploading third party data.
+            /// </summary>
+            [Option("advertiserUploadDateTime", Required = true, HelpText =
+                "Date and time the advertiser uploaded data to the partner. Only required if " +
+                "uploading third party data.")]
+            public string AdvertiserUploadDateTime { get; set; }
+
+            /// <summary>
+            /// Version of partner IDs to be used for uploads. Only required if uploading third
+            /// party data.
+            /// </summary>
+            [Option("bridgeMapVersionId", Required = true, HelpText =
+                "Version of partner IDs to be used for uploads. Only required if uploading " +
+                "third party data.")]
+            public string BridgeMapVersionId { get; set; }
+
+            /// <summary>
+            /// ID of the third party partner. Only required if uploading third party data.
+            /// </summary>
+            [Option("partnerId", Required = true, HelpText =
+                "ID of the third party partner. Only required if uploading third party data.")]
+            public long? PartnerId { get; set; }
+
+            /// <summary>
+            /// Optional custom key name. Only required if uploading data with custom key and values.
+            /// </summary>
+            [Option("customKey", Required = true, HelpText =
+                "Optional custom key name. Only required if uploading data with custom key and" +
+                " values.")]
+            public string CustomKey { get; set; }
+        }
 
         /// <summary>
         /// Main method, to run this code example as a standalone application.
@@ -48,41 +112,62 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // The ID of a store sales conversion action.
+                    options.ConversionActionId = long.Parse("INSERT_CONVERSION_ACTION_ID_HERE");
+
+                    // The type of user data in the job (first or third party). If you have an
+                    // official store sales partnership with Google, use StoreSalesUploadThirdParty.
+                    // Otherwise, use StoreSalesUploadFirstParty or omit this parameter.
+                    options.OfflineUserDataJobType =
+                        OfflineUserDataJobType.StoreSalesUploadFirstParty;
+
+                    // Optional (but recommended) external ID to identify the offline user data job.
+                    options.ExternalId = long.Parse("INSERT_EXTERNAL_ID_HERE");
+
+                    // Date and time the advertiser uploaded data to the partner. Only required
+                    // if uploading third party data.
+                    options.AdvertiserUploadDateTime = "INSERT_ADVERTISER_UPLOAD_DATE_TIME_HERE";
+
+                    // Version of partner IDs to be used for uploads. Only required if uploading
+                    // third party data.
+                    options.BridgeMapVersionId = "INSERT_BRIDGE_MAP_VERSION_ID_HERE";
+
+                    // ID of the third party partner. Only required if uploading third party data.
+                    options.PartnerId = long.Parse("INSERT_PARTNER_ID_HERE");
+
+                    // Optional custom key name. Only required if uploading data with custom key
+                    // and values.
+                    options.CustomKey = "INSERT_CUSTOM_KEY_HERE";
+
+                    return 0;
+                });
+
             UploadStoreSalesTransactions codeExample = new UploadStoreSalesTransactions();
-
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // The type of user data in the job (first or third party). If you have an official
-            // store sales partnership with Google, use StoreSalesUploadThirdParty.
-            // Otherwise, use StoreSalesUploadFirstParty or omit this parameter.
-            OfflineUserDataJobType offlineUserDataJobType =
-                OfflineUserDataJobType.StoreSalesUploadFirstParty;
-
-            // The ID of a store sales conversion action.
-            long conversionActionId = long.Parse("INSERT_CONVERSION_ACTION_ID_HERE");
-
-            // Optional (but recommended) external ID to identify the offline user data job.
-            long? externalId = long.Parse("INSERT_EXTERNAL_ID_HERE");
-
-            // OPTIONAL: If uploading third party data, also specify the following values:
-            string advertiserUploadDateTime = "INSERT_ADVERTISER_UPLOAD_DATE_TIME_HERE";
-            string bridgeMapVersionId = "INSERT_BRIDGE_MAP_VERSION_ID_HERE";
-            long? partnerId = long.Parse("INSERT_PARTNER_ID_HERE");
-
-            // OPTIONAL: If uploading data with custom key and values, specify the key:
-            string customKey = "INSERT_CUSTOM_KEY_HERE";
-
-            codeExample.Run(new GoogleAdsClient(), customerId, conversionActionId,
-                offlineUserDataJobType: offlineUserDataJobType,
-                externalId: externalId,
-                advertiserUploadDateTime: advertiserUploadDateTime,
-                bridgeMapVersionId: bridgeMapVersionId,
-                partnerId: partnerId,
-                customKey: customKey);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.ConversionActionId,
+                options.OfflineUserDataJobType, options.ExternalId,
+                options.AdvertiserUploadDateTime, options.BridgeMapVersionId, options.PartnerId,
+                options.CustomKey);
         }
+
+        // Gets a digest for generating hashed values using SHA-256. You must normalize and hash the
+        // the value for any field where the name begins with "hashed". See the normalizeAndHash()
+        // method.
+        private static readonly SHA256 _digest = SHA256.Create();
+
+        // If uploading data with custom key and values, specify the value:
+        private const string CUSTOM_VALUE = "INSERT_CUSTOM_VALUE_HERE";
 
         /// <summary>
         /// Returns a description about the code example.
@@ -116,7 +201,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             OfflineUserDataJobType offlineUserDataJobType =
                 OfflineUserDataJobType.StoreSalesUploadFirstParty,
             long? externalId = null, string advertiserUploadDateTime = null,
-            string bridgeMapVersionId = null, long? partnerId = null, string customKey=null)
+            string bridgeMapVersionId = null, long? partnerId = null, string customKey = null)
         {
             // Get the OfflineUserDataJobServiceClient.
             OfflineUserDataJobServiceClient offlineUserDataJobServiceClient =
@@ -315,7 +400,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 {
                     EnablePartialFailure = true,
                     ResourceName = offlineUserDataJobResourceName,
-                    Operations = {userDataJobOperations}
+                    Operations = { userDataJobOperations }
                 });
 
             // Prints the status message if any partial failure error is returned.
@@ -372,11 +457,11 @@ namespace Google.Ads.GoogleAds.Examples.V7
                     CurrencyCode = "USD",
                     // Converts the transaction amount from $200 USD to micros.
                     TransactionAmountMicros = 200L * 1_000_000L,
-                    // Specifies the date and time of the transaction. The format is 
+                    // Specifies the date and time of the transaction. The format is
                     // "YYYY-MM-DD HH:MM:SS[+HH:MM]", where [+HH:MM] is an optional
                     // timezone offset from UTC. If the offset is absent, the API will
                     // use the account's timezone as default. Examples: "2018-03-05 09:15:00"
-                    // or "2018-02-01 14:34:30+03:00".                 
+                    // or "2018-02-01 14:34:30+03:00".
                     TransactionDateTime = DateTime.Today.AddDays(-2).ToString("yyyy-MM-dd HH:mm:ss")
                 }
             };

@@ -12,23 +12,24 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Common;
+using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
-
 using System;
+using System.Collections.Generic;
 using static Google.Ads.GoogleAds.V7.Enums.AdGroupAdStatusEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.AdGroupCriterionStatusEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.AdGroupStatusEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.AdvertisingChannelSubTypeEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.AdvertisingChannelTypeEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.BudgetDeliveryMethodEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.CampaignStatusEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.ListingGroupTypeEnum.Types;
 using static Google.Ads.GoogleAds.V7.Resources.Campaign.Types;
-using static Google.Ads.GoogleAds.V7.Enums.AdvertisingChannelSubTypeEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
@@ -45,28 +46,71 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class AddShoppingSmartAd : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="AddShoppingSmartAd"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// The Merchant Center account ID.
+            /// </summary>
+            [Option("merchantCenterAccountId", Required = true, HelpText =
+                "The Merchant Center account ID.")]
+            public long MerchantCenterAccountId { get; set; }
+
+            /// <summary>
+            /// The boolean to indicate if a default listing group should be created for the
+            /// ad group. Set to false if the listing group will be constructed elsewhere.
+            /// See AddShoppingListingGroupTree for a more comprehensive example.
+            /// </summary>
+            [Option("createDefaultListingGroup", Required = true, HelpText =
+                "The boolean to indicate if a default listing group should be created for the " +
+                "ad group. Set to false if the listing group will be constructed elsewhere. " +
+                "See AddShoppingListingGroupTree for a more comprehensive example.")]
+            public bool CreateDefaultListingGroup { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // The Merchant Center account ID.
+                    options.MerchantCenterAccountId =
+                        long.Parse("INSERT_MERCHANT_CENTER_ACCOUNT_ID_HERE");
+
+                    // The boolean to indicate if a default listing group should be created for
+                    // the ad group. Set to false if the listing group will be constructed
+                    // elsewhere.  See AddShoppingListingGroupTree for a more comprehensive
+                    // example.
+                    options.CreateDefaultListingGroup =
+                        bool.Parse("INSERT_CREATE_DEFAULT_LISTING_GROUP_HERE");
+
+                    return 0;
+                });
+
             AddShoppingSmartAd codeExample = new AddShoppingSmartAd();
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // The Merchant Center account ID.
-            long merchantCenterAccountId = long.Parse("INSERT_MERCHANT_CENTER_ACCOUNT_ID_HERE");
-
-            // The boolean to indicate if a default listing group should be created for the
-            // ad group. Set to false if the listing group will be constructed elsewhere.
-            //
-            // See AddShoppingListingGroupTree for a more comprehensive example.
-            bool createDefaultListingGroup =
-                bool.Parse("INSERT_CREATE_DEFAULT_LISTING_GROUP_HERE");
-            codeExample.Run(new GoogleAdsClient(), customerId, merchantCenterAccountId,
-                createDefaultListingGroup);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId,
+                options.MerchantCenterAccountId, options.CreateDefaultListingGroup);
         }
 
         /// <summary>

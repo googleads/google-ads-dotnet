@@ -12,9 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Common;
+using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
 using System;
@@ -43,9 +44,38 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class AddShoppingProductListingGroupTree : ExampleBase
     {
         /// <summary>
-        /// The page size to be used by default.
+        /// Command line options for running the <see cref="AddShoppingProductListingGroupTree"/>
+        /// example.
         /// </summary>
-        private const int PAGE_SIZE = 1_000;
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// The ID of the ad group.
+            /// </summary>
+            [Option("adGroupId", Required = true, HelpText =
+                "The ID of the ad group.")]
+            public long AdGroupId { get; set; }
+
+            /// <summary>
+            /// The boolean to indicate whether to replace the existing listing group tree on the
+            /// ad group, if it already exists. The example will throw a
+            /// LISTING_GROUP_ALREADY_EXISTS error if listing group tree already exists and this
+            /// option is not set to true.
+            /// </summary>
+            [Option("replaceExistingTree", Required = true, HelpText =
+                "The boolean to indicate whether to replace the existing listing group tree on " +
+                "the ad group, if it already exists. The example will throw a " +
+                "LISTING_GROUP_ALREADY_EXISTS error if listing group tree already exists and " +
+                "this option is not set to true.")]
+            public bool ReplaceExistingTree { get; set; }
+        }
 
         /// <summary>
         /// Main method, to run this code example as a standalone application.
@@ -53,24 +83,40 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // The ID of the ad group.
+                    options.AdGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
+
+                    // The boolean to indicate whether to replace the existing listing group tree
+                    // on the ad group, if it already exists. The example will throw a
+                    // LISTING_GROUP_ALREADY_EXISTS error if listing group tree already exists
+                    // and this option is not set to true.
+                    options.ReplaceExistingTree = bool.Parse("INSERT_REPLACE_EXISTING_TREE_HERE");
+
+                    return 0;
+                });
+
             AddShoppingProductListingGroupTree codeExample =
                 new AddShoppingProductListingGroupTree();
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // The ID of the ad group.
-            long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
-
-            // The boolean to indicate whether to replace the existing listing group tree on the
-            // ad group, if it already exists. The example will throw a
-            // 'LISTING_GROUP_ALREADY_EXISTS' error if listing group tree already exists and this
-            // option is not set to true.
-            bool replaceExistingTree = bool.Parse("INSERT_REPLACE_EXISTING_TREE_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId, adGroupId, replaceExistingTree);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.AdGroupId,
+                options.ReplaceExistingTree);
         }
+
+        /// <summary>
+        /// The page size to be used by default.
+        /// </summary>
+        private const int PAGE_SIZE = 1_000;
 
         /// <summary>
         /// Returns a description about the code example.

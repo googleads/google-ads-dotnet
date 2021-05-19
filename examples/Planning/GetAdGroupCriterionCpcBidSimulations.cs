@@ -12,12 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using System;
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Common;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
+using System;
+using System.Collections.Generic;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
@@ -28,22 +30,53 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class GetAdGroupCriterionCpcBidSimulations : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="GetAdGroupCriterionCpcBidSimulations"/>
+        /// example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// The ad group ID for which to get ad group criterion CPC bid simulations.
+            /// </summary>
+            [Option("adGroupId", Required = true, HelpText =
+                "The ad group ID for which to get ad group criterion CPC bid simulations.")]
+            public long AdGroupId { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // The ad group ID for which to get ad group criterion CPC bid simulations.
+                    options.AdGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
+
+                    return 0;
+                });
+
             GetAdGroupCriterionCpcBidSimulations codeExample =
                 new GetAdGroupCriterionCpcBidSimulations();
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // The ad group ID for which to get available bid simulations.
-            long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId, adGroupId);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.AdGroupId);
         }
 
         /// <summary>
@@ -85,7 +118,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
 
                 // Issue a search stream request.
                 googleAdsService.SearchStream(customerId.ToString(), query,
-                    delegate(SearchGoogleAdsStreamResponse response)
+                    delegate (SearchGoogleAdsStreamResponse response)
                     {
                         // Iterates over all rows in all messages and prints the requested field
                         // values for the ad group criterion CPC bid simulation in each row.

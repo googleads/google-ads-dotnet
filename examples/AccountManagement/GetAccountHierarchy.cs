@@ -12,13 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using System;
-using System.Collections.Generic;
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
 using Google.Api.Gax;
+using System;
+using System.Collections.Generic;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
@@ -32,15 +33,27 @@ namespace Google.Ads.GoogleAds.Examples.V7
     /// </summary>
     public class GetAccountHierarchy : ExampleBase
     {
-        private const int PAGE_SIZE = 1000;
-
         /// <summary>
-        /// Returns a description about the code example.
+        /// Command line options for running the <see cref="GetAccountHierarchy"/> example.
         /// </summary>
-        public override string Description =>
-            "This code example gets the account hierarchy of a specified manager account. If you " +
-            "don't specify a manager customer ID, the example will instead print the hierarchies " +
-            "of all accessible customer accounts for your authenticated Google account.";
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// Optional manager account ID. If none provided, this method will instead list the
+            /// accounts accessible from the authenticated Google Ads account.
+            /// </summary>
+            [Option("managerCustomerId", Required = true, HelpText =
+                "Optional manager account ID. If none provided, this method will instead list the" +
+                " accounts accessible from the authenticated Google Ads account.")]
+            public long? ManagerCustomerId { get; set; }
+
+            /// <summary>
+            /// The login customer ID used to create the GoogleAdsClient.
+            /// </summary>
+            [Option("loginCustomerId", Required = false, HelpText =
+                "The login customer ID used to create the GoogleAdsClient.")]
+            public long? LoginCustomerId { get; set; }
+        }
 
         /// <summary>
         /// Main method, to run this code example as a standalone application.
@@ -48,26 +61,41 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // Optional manager account ID. If none provided, this method will instead
+                    // list the accounts accessible from the authenticated Google Ads account.
+                    options.ManagerCustomerId = long.Parse("INSERT_MANAGER_CUSTOMER_ID_HERE");
+
+                    // The login customer ID used to create the GoogleAdsClient.
+                    options.LoginCustomerId = long.Parse("INSERT_LOGIN_CUSTOMER_ID_HERE");
+
+                    return 0;
+                });
+
             GetAccountHierarchy codeExample = new GetAccountHierarchy();
-
             Console.WriteLine(codeExample.Description);
-
-            long managerId = long.Parse("INSERT_MANAGER_ID_HERE");
-            long loginCustomerId = long.Parse("INSERT_LOGIN_CUSTOMER_ID_HERE");
-
-            try
-            {
-                codeExample.Run(new GoogleAdsClient(), managerId, loginCustomerId);
-            }
-            catch (GoogleAdsException adsException)
-            {
-                Console.WriteLine("Failure:");
-                Console.WriteLine($"Message: {adsException.Message}");
-                Console.WriteLine($"Failure: {adsException.Failure}");
-                Console.WriteLine($"Request ID: {adsException.RequestId}");
-                throw;
-            }
+            codeExample.Run(new GoogleAdsClient(),
+                options.ManagerCustomerId,
+                options.LoginCustomerId);
         }
+
+        private const int PAGE_SIZE = 1000;
+
+        /// <summary>
+        /// Returns a description about the code example.
+        /// </summary>
+        public override string Description =>
+            "This code example gets the account hierarchy of a specified manager account. If " +
+            "you don't specify a manager customer ID, the example will instead print the " +
+            "hierarchies of all accessible customer accounts for your authenticated " +
+            "Google account.";
 
         /// <summary>
         /// Runs the code example.
@@ -105,7 +133,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             else
             {
                 Console.WriteLine(
-                    "No manager customer ID is specified. The example will print the hierarchies " +
+                    "No manager customer ID is specified. The example will print the hierarchies" +
                     " of all accessible customer IDs:");
 
                 string[] customerResourceNames = customerServiceClient.ListAccessibleCustomers();
@@ -163,7 +191,10 @@ namespace Google.Ads.GoogleAds.Examples.V7
                         // The customer client that with level 0 is the specified customer.
                         if (customerClient.Level == 0)
                         {
-                            if (rootCustomerClient == null) rootCustomerClient = customerClient;
+                            if (rootCustomerClient == null)
+                            {
+                                rootCustomerClient = customerClient;
+                            }
 
                             continue;
                         }

@@ -12,39 +12,79 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Services;
 using System;
+using System.Collections.Generic;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
     /// <summary>
-    /// This code example gets all feed items of the specified feed item set by fetching all
-    /// feed item set links. To create a new feed item set, run CreateFeedItemSet.cs. To link
-    /// a feed item to a feed item set, run LinkFeedItemSet.cs.
+    /// This code example gets all feed items of the specified feed item set by fetching all feed
+    /// item set links. To create a new feed item set, run CreateFeedItemSet.cs. To link a feed item
+    /// to a feed item set, run LinkFeedItemSet.cs.
     /// </summary>
     public class GetFeedItemsOfFeedItemSet : ExampleBase
     {
+        /// <summary>
+        /// Command line options for running the <see cref="GetFeedItemsOfFeedItemSet"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// ID of the feed associated with the feed item set.
+            /// </summary>
+            [Option("feedId", Required = true, HelpText =
+                "ID of the feed associated with the feed item set.")]
+            public long FeedId { get; set; }
+
+            /// <summary>
+            /// ID of the feed item set.
+            /// </summary>
+            [Option("feedItemSetId", Required = true, HelpText =
+                "ID of the feed item set.")]
+            public long FeedItemSetId { get; set; }
+        }
+
         /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // ID of the feed associated with the feed item set.
+                    options.FeedId = long.Parse("INSERT_FEED_ID_HERE");
+
+                    // ID of the feed item set.
+                    options.FeedItemSetId = long.Parse("INSERT_FEED_ITEM_SET_ID_HERE");
+
+                    return 0;
+                });
+
             GetFeedItemsOfFeedItemSet codeExample = new GetFeedItemsOfFeedItemSet();
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // ID of the feed associated with the feed item set.
-            long feedId = long.Parse("INSERT_FEED_ID_HERE");
-
-            // ID of the feed item set.
-            long feedItemSetId = long.Parse("FEED_ITEM_SET_ID");
-
-            codeExample.Run(new GoogleAdsClient(), customerId, feedId, feedItemSetId);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.FeedId,
+                options.FeedItemSetId);
         }
 
         /// <summary>
@@ -71,8 +111,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
             string feedItemSetResourceName = ResourceNames.FeedItemSet(
                 customerId, feedId, feedItemSetId);
 
-            // Creates a query that retrieves all feed item set links associated with the
-            // specified feed item set.
+            // Creates a query that retrieves all feed item set links associated with the specified
+            // feed item set.
             string query = $@"
                 SELECT
                     feed_item_set_link.feed_item

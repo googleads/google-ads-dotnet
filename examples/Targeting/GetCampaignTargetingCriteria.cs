@@ -12,14 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
 using Google.Api.Gax;
-
 using System;
-
+using System.Collections.Generic;
 using static Google.Ads.GoogleAds.V7.Resources.CampaignCriterion;
 
 namespace Google.Ads.GoogleAds.Examples.V7
@@ -30,21 +30,51 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class GetCampaignTargetingCriteria : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="GetCampaignTargetingCriteria"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// ID of the campaign to from which targeting criteria are retrieved.
+            /// </summary>
+            [Option("campaignId", Required = true, HelpText =
+                "ID of the campaign to from which targeting criteria are retrieved.")]
+            public long CampaignId { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // ID of the campaign to from which targeting criteria are retrieved.
+                    options.CampaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
+
+                    return 0;
+                });
+
             GetCampaignTargetingCriteria codeExample = new GetCampaignTargetingCriteria();
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // ID of the campaign to from which targeting criteria are retrieved.
-            long campaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId, campaignId);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.CampaignId);
         }
 
         /// <summary>

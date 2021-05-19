@@ -12,38 +12,70 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
 using System;
+using System.Collections.Generic;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
     /// <summary>
     /// This code example creates a new feed item set for a specified feed, which must belong to
     /// either a Google Ads location extension or an affiliate extension. This is equivalent to a
-    /// "location group" in the Google Ads UI.See https://support.google.com/google-ads/answer/9288588
-    /// for more details.
+    /// "location group" in the Google Ads UI.See
+    /// https://support.google.com/google-ads/answer/9288588 for more details.
     /// </summary>
     public class CreateFeedItemSet : ExampleBase
     {
+        /// <summary>
+        /// Command line options for running the <see cref="CreateFeedItemSet"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// The Feed ID for creating the feed item set.
+            /// </summary>
+            [Option("feedId", Required = true, HelpText =
+                "The Feed ID for creating the feed item set.")]
+            public long FeedId { get; set; }
+        }
+
         /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // The Feed ID for creating the feed item set.
+                    options.FeedId = long.Parse("INSERT_FEED_ID_HERE");
+
+                    return 0;
+                });
+
             CreateFeedItemSet codeExample = new CreateFeedItemSet();
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // The Feed ID for creating the feed item set.
-            long feedId = long.Parse("INSERT_FEED_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId, feedId);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.FeedId);
         }
 
         /// <summary>
@@ -112,7 +144,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 MutateFeedItemSetsResponse response =
                     feedItemService.MutateFeedItemSets(customerId.ToString(), new[] { operation });
 
-                //  Prints the resource names of the added feed item sets.
+                // Prints the resource names of the added feed item sets.
                 foreach (MutateFeedItemSetResult addedFeedItemSet in response.Results)
                 {
                     Console.WriteLine("Created a feed item set with resource name " +

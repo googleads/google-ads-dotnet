@@ -1,4 +1,4 @@
-﻿// Copyright 2019 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,11 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Services;
-
 using System;
+using System.Collections.Generic;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
@@ -26,15 +27,31 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class GetGeoTargetConstantsByNames : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="GetGeoTargetConstantsByNames"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    return 0;
+                });
+
             GetGeoTargetConstantsByNames codeExample = new GetGeoTargetConstantsByNames();
-
             Console.WriteLine(codeExample.Description);
-
             codeExample.Run(new GoogleAdsClient());
         }
 
@@ -63,7 +80,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             // https://developers.google.com/google-ads/api/reference/data/geotargets
             string countryCode = "FR";
 
-            String[] locations = { "Paris", "Quebec", "Spain", "Deutschland" };
+            string[] locations = { "Paris", "Quebec", "Spain", "Deutschland" };
 
             SuggestGeoTargetConstantsRequest request = new SuggestGeoTargetConstantsRequest()
             {

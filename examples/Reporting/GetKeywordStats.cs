@@ -12,14 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Services;
-
 using System;
-using System.Threading;
-using System.Threading.Tasks;
-using static Google.Ads.GoogleAds.V7.Services.GoogleAdsServiceClient;
+using System.Collections.Generic;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
@@ -29,18 +27,41 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class GetKeywordStats : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="GetKeywordStats"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer Id.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    return 0;
+                });
+
             GetKeywordStats codeExample = new GetKeywordStats();
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId);
         }
 
         /// <summary>
@@ -53,7 +74,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// Runs the code example.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
-        /// <param name="customerId">The Google Ads customer Id.</param>
+        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         // [START get_keyword_stats]
         public void Run(GoogleAdsClient client, long customerId)
         {

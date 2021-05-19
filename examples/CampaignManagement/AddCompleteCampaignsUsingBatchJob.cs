@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Common;
 using Google.Ads.GoogleAds.V7.Errors;
@@ -39,6 +40,45 @@ namespace Google.Ads.GoogleAds.Examples.V7
     /// </summary>
     public class AddCompleteCampaignsUsingBatchJob : ExampleBase
     {
+        /// <summary>
+        /// Command line options for running the <see cref="AddCompleteCampaignsUsingBatchJob"/>
+        /// example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+        }
+
+        /// <summary>
+        /// Main method, to run this code example as a standalone application.
+        /// </summary>
+        /// <param name="args">The command line arguments.</param>
+        public static void Main(string[] args)
+        {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    return 0;
+                });
+
+            AddCompleteCampaignsUsingBatchJob codeExample = new AddCompleteCampaignsUsingBatchJob();
+            Console.WriteLine(codeExample.Description);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId);
+        }
+
         /// <summary>
         /// The number of campaigns to add.
         /// </summary>
@@ -70,27 +110,11 @@ namespace Google.Ads.GoogleAds.Examples.V7
         private static long temporaryId = -1;
 
         /// <summary>
-        /// Main method, to run this code example as a standalone application.
-        /// </summary>
-        /// <param name="args">The command line arguments.</param>
-        public static void Main(string[] args)
-        {
-            AddCompleteCampaignsUsingBatchJob codeExample =
-                new AddCompleteCampaignsUsingBatchJob();
-            Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId);
-        }
-
-        /// <summary>
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
-            "This code example adds complete campaigns including campaign budgets, campaigns, ad " +
-            "groups and keywords using BatchJobService.";
+            "This code example adds complete campaigns including campaign budgets, campaigns, " +
+            "ad groups and keywords using BatchJobService.";
 
         /// <summary>
         /// Runs the code example.
@@ -136,11 +160,11 @@ namespace Google.Ads.GoogleAds.Examples.V7
             {
                 Create = new BatchJob()
                 {
-
                 }
             };
             string batchJobResourceName =
-                batchJobService.MutateBatchJob(customerId.ToString(), operation).Result.ResourceName;
+                batchJobService.MutateBatchJob(customerId.ToString(), operation)
+                .Result.ResourceName;
             Console.WriteLine($"Created a batch job with resource name: " +
                 $"'{batchJobResourceName}'.");
 
@@ -217,7 +241,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// Fetches and prints all the results from running the batch job.
         /// </summary>
         /// <param name="batchJobService">The batch job service.</param>
-        /// <param name="batchJobResourceName">The resource name of batch job to get its results.</param>
+        /// <param name="batchJobResourceName">The resource name of batch job to get its results.
+        /// </param>
         // [START add_complete_campaigns_using_batch_job_4]
         private static void FetchAndPrintResults(BatchJobServiceClient batchJobService,
             string batchJobResourceName)
@@ -266,7 +291,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
             List<MutateOperation> mutateOperations = new List<MutateOperation>();
 
             // Creates a new campaign budget operation and adds it to the array of mutate operations.
-            CampaignBudgetOperation campaignBudgetOperation = BuildCampaignBudgetOperation(customerId);
+            CampaignBudgetOperation campaignBudgetOperation =
+                BuildCampaignBudgetOperation(customerId);
             mutateOperations.Add(
                 new MutateOperation()
                 {
@@ -287,7 +313,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 );
             }
 
-            // Creates new campaign criterion operations and adds them to the array of mutate operations.
+            // Creates new campaign criterion operations and adds them to the array of mutate
+            // operations.
             List<CampaignCriterionOperation> campaignCriterionOperations =
                 BuildCampaignCriterionOperations(campaignOperations);
             foreach (CampaignCriterionOperation campaignCriterionOperation in
@@ -314,10 +341,12 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 );
             }
 
-            // Creates new ad group criterion operations and adds them to the array of mutate operations.
+            // Creates new ad group criterion operations and adds them to the array of mutate
+            // operations.
             List<AdGroupCriterionOperation> adGroupCriterionOperations =
                 BuildAdGroupCriterionOperations(adGroupOperations);
-            foreach (AdGroupCriterionOperation adGroupCriterionOperation in adGroupCriterionOperations)
+            foreach (AdGroupCriterionOperation adGroupCriterionOperation in
+                adGroupCriterionOperations)
             {
                 mutateOperations.Add(
                     new MutateOperation()
@@ -328,7 +357,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
             }
 
             // Creates new ad group ad operations and adds them to the array of mutate operations.
-            List<AdGroupAdOperation> adGroupAdOperations = BuildAdGroupAdOperations(adGroupOperations);
+            List<AdGroupAdOperation> adGroupAdOperations =
+                BuildAdGroupAdOperations(adGroupOperations);
             foreach (AdGroupAdOperation adGroupAdOperation in adGroupAdOperations)
             {
                 mutateOperations.Add(

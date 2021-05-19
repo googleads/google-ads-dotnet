@@ -1,4 +1,4 @@
-﻿// Copyright 2019 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,12 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
 using Google.Api.Gax;
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,24 +33,42 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class GetArtifactMetadata : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="GetArtifactMetadata"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The artifact for which metadata is retrieved.
+            /// </summary>
+            [Option("artifactName", Required = true, HelpText =
+                "The artifact for which metadata is retrieved.")]
+            public string ArtifactName { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The artifact for which metadata is retrieved.
+                    options.ArtifactName = "INSERT_ARTIFACT_NAME_HERE";
+
+                    return 0;
+                });
+
             GetArtifactMetadata codeExample = new GetArtifactMetadata();
-
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // The artifact for which metadata is retrieved. The artifact can be either a
-            // resource (such as customer, campaign) or a field (such as metrics.impressions,
-            // campaign.id).
-            string artifactName = "INSERT_ARTIFACT_NAME_HERE";
-
-            codeExample.Run(new GoogleAdsClient(), customerId, artifactName);
+            codeExample.Run(new GoogleAdsClient(),
+                options.ArtifactName);
         }
 
         /// <summary>
@@ -66,9 +84,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// Runs the code example.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
-        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="artifactName">The artifact for which metadata is retrieved.</param>
-        public void Run(GoogleAdsClient client, long customerId, string artifactName)
+        public void Run(GoogleAdsClient client, string artifactName)
         {
             // Get the GoogleAdsFieldService.
             GoogleAdsFieldServiceClient googleAdsFieldService = client.GetService(

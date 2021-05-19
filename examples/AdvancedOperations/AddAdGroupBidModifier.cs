@@ -12,13 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Common;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
-
 using System;
+using System.Collections.Generic;
 using static Google.Ads.GoogleAds.V7.Enums.DeviceEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V7
@@ -30,24 +31,62 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class AddAdGroupBidModifier : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="AddAdGroupBidModifier"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// ID of the ad group where the bid modifier will be added.
+            /// </summary>
+            [Option("adGroupId", Required = true, HelpText =
+                "ID of the ad group where the bid modifier will be added.")]
+            public long AdGroupId { get; set; }
+
+            /// <summary>
+            /// The value of the bid modifier to add.
+            /// </summary>
+            [Option("bidModifierValue", Required = true, HelpText =
+                "The value of the bid modifier to add.")]
+            public double BidModifierValue { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            AddAdGroupBidModifier codeExample = new AddAdGroupBidModifier();
-            Console.WriteLine(codeExample.Description);
-
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
             // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+            options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
             // ID of the ad group where the bid modifier will be added.
-            long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
+            options.AdGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
 
             // The value of the bid modifier to add.
-            double bidModifierValue = double.Parse("INSERT_BID_MODIFIER_VALUE_HERE");
+            options.BidModifierValue = double.Parse("INSERT_BID_MODIFIER_VALUE_HERE");
 
-            codeExample.Run(new GoogleAdsClient(), customerId, adGroupId, bidModifierValue);
+                    return 0;
+                });
+
+            AddAdGroupBidModifier codeExample = new AddAdGroupBidModifier();
+            Console.WriteLine(codeExample.Description);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.AdGroupId,
+                options.BidModifierValue);
         }
 
         /// <summary>

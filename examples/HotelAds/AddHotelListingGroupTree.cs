@@ -12,15 +12,16 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using System;
-using System.Collections.Generic;
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Common;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
-using static Google.Ads.GoogleAds.V7.Enums.ListingGroupTypeEnum.Types;
+using System;
+using System.Collections.Generic;
 using static Google.Ads.GoogleAds.V7.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.ListingGroupTypeEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
@@ -40,6 +41,66 @@ namespace Google.Ads.GoogleAds.Examples.V7
     /// </summary>
     public class AddHotelListingGroupTree : ExampleBase
     {
+        /// <summary>
+        /// Command line options for running the <see cref="AddHotelListingGroupTree"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// The ad group ID of the ad group to which the hotel listing will be added.
+            /// </summary>
+            [Option("adGroupId", Required = true, HelpText =
+                "The ad group ID of the ad group to which the hotel listing will be added.")]
+            public long AdGroupId { get; set; }
+
+            /// <summary>
+            /// The CPC bid micro amount to be set on created ad group criteria.
+            /// </summary>
+            [Option("percentCpcBidMicroAmount", Required = true, HelpText =
+                "The CPC bid micro amount to be set on created ad group criteria.")]
+            public long PercentCpcBidMicroAmount { get; set; }
+        }
+
+        /// <summary>
+        /// Main method, to run this code example as a standalone application.
+        /// </summary>
+        /// <param name="args">The command line arguments.</param>
+        public static void Main(string[] args)
+        {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // The ad group ID of the ad group to which the hotel listing will be added.
+                    options.AdGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
+
+                    // The CPC bid micro amount to be set on created ad group criteria.
+                    options.PercentCpcBidMicroAmount =
+                        long.Parse("INSERT_PERCENT_CPC_BID_MICRO_AMOUNT_HERE");
+
+                    return 0;
+                });
+
+            AddHotelListingGroupTree codeExample = new AddHotelListingGroupTree();
+            Console.WriteLine(codeExample.Description);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.AdGroupId,
+                options.PercentCpcBidMicroAmount);
+        }
+
         // The next temporary criterion ID to be used, which is a negative integer.
 
         // When creating a tree, we need to specify the parent-child relationships between nodes.
@@ -50,29 +111,6 @@ namespace Google.Ads.GoogleAds.Examples.V7
         // a criterion is created, it is assigned an ID as normal and the temporary ID will no
         // longer refer to it.
         private int nextTempId = -1;
-
-        /// <summary>
-        /// Main method, to run this code example as a standalone application.
-        /// </summary>
-        /// <param name="args">The command line arguments.</param>
-        public static void Main(string[] args)
-        {
-            AddHotelListingGroupTree codeExample = new AddHotelListingGroupTree();
-            Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // The ad group ID of the ad group to which the hotel listing will be added.
-            long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
-
-            // Specify the CPC bid micro amount to be set on a created ad group criterion.
-            // For simplicity, each ad group criterion will use the below amount equally. In
-            // practice, you probably want to use different values for each ad group criterion.
-            long percentCpcBidMicroAmount = 1000000;
-
-            codeExample.Run(new GoogleAdsClient(), customerId, adGroupId, percentCpcBidMicroAmount);
-        }
 
         /// <summary>
         /// Returns a description about the code example.
@@ -96,9 +134,9 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID.</param>
         /// <param name="adGroupId">The ad group ID of the ad group to which the hotel listing will
-        ///     be added.</param>
+        /// be added.</param>
         /// <param name="percentCpcBidMicroAmount">The CPC bid micro amount to be set on created
-        ///     ad group criteria.</param>
+        /// ad group criteria.</param>
         public void Run(GoogleAdsClient client, long customerId, long adGroupId,
             long percentCpcBidMicroAmount)
         {
@@ -182,13 +220,14 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// </summary>
         /// <param name="customerId">The Google Ads customer ID.</param>
         /// <param name="adGroupId">The ad group ID to which the hotel listing group will be
-        ///     added.</param>
-        /// <param name="rootResourceName">The string resource name of the listing group's root node.</param>
+        /// added.</param>
+        /// <param name="rootResourceName">The string resource name of the listing group's root
+        /// node.</param>
         /// <param name="operations">A list of AdGroupCriterionOperations.</param>
         /// <param name="percentCpcBidMicroAmount">The CPC bid micro amount to be set on created
-        ///     ad group criteria.</param>
+        /// ad group criteria.</param>
         /// <returns>The string resource name of the "other hotel classes" node, which serves as the
-        ///     parent node for the next level of the listing tree.</returns>
+        /// parent node for the next level of the listing tree.</returns>
         // [START add_hotel_listing_group_tree]
         private string AddLevel1Nodes(long customerId, long adGroupId, string rootResourceName,
             List<AdGroupCriterionOperation> operations, long percentCpcBidMicroAmount)
@@ -258,18 +297,18 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// </summary>
         /// <param name="customerId">The Google Ads customer ID.</param>
         /// <param name="adGroupId">The ad group ID to which the hotel listing group will be
-        ///     added.</param>
-        /// <param name="parentResourceName">The resource name of the parent criterion for the nodes
-        ///     to be added at this level.</param>
+        /// added.</param>
+        /// <param name="parentResourceName">The resource name of the parent criterion for the
+        /// nodes to be added at this level.</param>
         /// <param name="operations">A list of AdGroupCriterionOperations.</param>
         /// <param name="percentCpcBidMicroAmount">The CPC bid micro amount to be set on created
-        ///     ad group criteria.</param>
+        /// ad group criteria.</param>
         private void AddLevel2Nodes(long customerId, long adGroupId, string parentResourceName,
             List<AdGroupCriterionOperation> operations, long percentCpcBidMicroAmount)
         {
             // Create hotel dimension info for hotels in Japan. The criterion ID for Japan is 2392.
-            // See https://developers.google.com/google-ads/api/reference/data/geotargets for criteria
-            // ID of other countries.
+            // See https://developers.google.com/google-ads/api/reference/data/geotargets for
+            // criteria ID of other countries.
             ListingDimensionInfo japanListingDimensionInfo = new ListingDimensionInfo
             {
                 HotelCountryRegion = new HotelCountryRegionInfo
@@ -348,13 +387,14 @@ namespace Google.Ads.GoogleAds.Examples.V7
 
         /// <summary>
         /// Creates an ad group criterion from the provided listing group info.
-        /// Bid amount will be set on the created ad group criterion when listing group info type is
-        /// `UNIT`. Setting bid amount for `SUBDIVISION` types is not allowed.
+        /// Bid amount will be set on the created ad group criterion when listing group info type
+        /// is `UNIT`. Setting bid amount for `SUBDIVISION` types is not allowed.
         /// </summary>
         /// <param name="customerId">The Google Ads customer ID.</param>
         /// <param name="adGroupId">The ad group ID to which the criterion will belong.</param>
         /// <param name="listingGroupInfo">The listing group info to apply to the criterion.</param>
-        /// <param name="percentCpcBidMicroAmount">The CPC bid micro amount to set for the ad group criterion.</param>
+        /// <param name="percentCpcBidMicroAmount">The CPC bid micro amount to set for the
+        /// ad group criterion.</param>
         /// <returns>A populated ad group criterion.</returns>
         private AdGroupCriterion CreateAdGroupCriterion(long customerId, long adGroupId,
             ListingGroupInfo listingGroupInfo, long percentCpcBidMicroAmount)
