@@ -87,21 +87,6 @@ namespace Google.Ads.GoogleAds.Examples.V7
         private const string YOUTUBE_VIDEO_ID = "t1fDo0VyeEo";
 
         /// <summary>
-        /// Main method, to run this code example as a standalone application.
-        /// </summary>
-        /// <param name="args">The command line arguments.</param>
-        public static void __Main(string[] args)
-        {
-            AddLocalCampaign codeExample = new AddLocalCampaign();
-            Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId);
-        }
-
-        /// <summary>
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>

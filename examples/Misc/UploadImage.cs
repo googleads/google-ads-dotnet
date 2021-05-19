@@ -69,21 +69,6 @@ namespace Google.Ads.GoogleAds.Examples.V7
         }
 
         /// <summary>
-        /// Main method, to run this code example as a standalone application.
-        /// </summary>
-        /// <param name="args">The command line arguments.</param>
-        public static void __Main(string[] args)
-        {
-            UploadImage codeExample = new UploadImage();
-            Console.WriteLine(codeExample.Description);
-
-            // The customer ID for which the call is made.
-            int customerId = int.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId);
-        }
-
-        /// <summary>
         /// Returns a description about the code example.
         /// </summary>
         public override string Description => "This code example uploads an image.";

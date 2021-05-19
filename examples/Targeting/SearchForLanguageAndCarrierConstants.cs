@@ -85,36 +85,13 @@ namespace Google.Ads.GoogleAds.Examples.V7
                     return 0;
                 });
 
-            SearchForLanguageAndCarrierConstants codeExample = new SearchForLanguageAndCarrierConstants();
+            SearchForLanguageAndCarrierConstants codeExample =
+                new SearchForLanguageAndCarrierConstants();
             Console.WriteLine(codeExample.Description);
             codeExample.Run(new GoogleAdsClient(),
                 options.CustomerId,
                 options.LanguageName,
                 options.CarrierCountryCode);
-        }
-
-        /// <summary>
-        /// Main method, to run this code example as a standalone application.
-        /// </summary>
-        /// <param name="args">The command line arguments.</param>
-        public static void __Main(string[] args)
-        {
-            SearchForLanguageAndCarrierConstants codeExample =
-                new SearchForLanguageAndCarrierConstants();
-            Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // The language name to search for.
-            string languageName = "INSERT_LANGUAGE_NAME_HERE";
-
-            // The country code for which the search is performed.
-            // A list of country codes can be referenced here:
-            // https://developers.google.com/google-ads/api/reference/data/geotargets.
-            string carrierCountryCode = "US";
-
-            codeExample.Run(new GoogleAdsClient(), customerId, languageName, carrierCountryCode);
         }
 
         /// <summary>

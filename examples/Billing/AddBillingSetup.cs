@@ -107,33 +107,6 @@ namespace Google.Ads.GoogleAds.Examples.V7
         }
 
         /// <summary>
-        /// Main method, to run this code example as a standalone application.
-        /// </summary>
-        /// <param name="args">The command line arguments.</param>
-        public static void __Main(string[] args)
-        {
-            AddBillingSetup codeExample = new AddBillingSetup();
-
-            Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // Either a payments account ID or a payments profile ID must be provided for the
-            // example to run successfully. If both are provided, only the payments account ID will
-            // be used.
-            // See: https://developers.google.com/google-ads/api/docs/billing/billing-setups#creating_new_billing_setups
-            // Provide an existing payments account ID to link to the new billing setup. Must be
-            // formatted as "1234-5678-9012-3456".
-            string paymentsAccountId = "INSERT_PAYMENTS_ACCOUNT_ID_HERE";
-            // Alternatively, provide a payments profile ID, which will be linked to a new payments
-            // account and the new billing setup. Must be formatted as "1234-5678-9012".
-            string paymentsProfileId = "INSERT_PAYMENTS_PROFILE_ID_HERE";
-
-            codeExample.Run(new GoogleAdsClient(), customerId, paymentsAccountId, paymentsProfileId);
-        }
-
-        /// <summary>
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
