@@ -28,6 +28,7 @@ namespace Google.Ads.GoogleAds.Tests.Util
     /// </summary>
     [TestFixture]
     [Category("Smoke")]
+    [Parallelizable(ParallelScope.Self)]
     internal class MediaUtilitiesTest
     {
         private const string FILE_CONTENTS = "Hello world";

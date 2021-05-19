@@ -28,6 +28,7 @@ namespace Google.Ads.GoogleAds.Tests.Config
     /// </summary>
     [TestFixture]
     [Category("Smoke")]
+    [Parallelizable(ParallelScope.Self)]
     internal class GoogleAdsConfigTests : GoogleAdsConfig
     {
         /// <summary>
