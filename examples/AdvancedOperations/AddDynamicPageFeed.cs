@@ -12,13 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
 using Google.Ads.GoogleAds.V7.Common;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,32 +37,70 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class AddDynamicPageFeed : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="AddDynamicPageFeed"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// ID of the campaign for which dynamic page feeds are added.
+            /// </summary>
+            [Option("campaignId", Required = true, HelpText =
+                "ID of the campaign for which dynamic page feeds are added.")]
+            public long CampaignId { get; set; }
+
+            /// <summary>
+            /// ID of the ad group for which dynamic page feeds are added.
+            /// </summary>
+            [Option("adGroupId", Required = true, HelpText =
+                "ID of the ad group for which dynamic page feeds are added.")]
+            public long AdGroupId { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // ID of the campaign for which dynamic page feeds are added.
+                    options.CampaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
+
+                    // ID of the ad group for which dynamic page feeds are added.
+                    options.AdGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
+
+                    return 0;
+                });
+
             AddDynamicPageFeed codeExample = new AddDynamicPageFeed();
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // ID of the campaign for which dynamic page feeds are added.
-            long campaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
-
-            // ID of the ad group for which dynamic page feeds are added.
-            long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId, campaignId, adGroupId);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.CampaignId,
+                options.AdGroupId);
         }
 
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
-            "This code example adds a page feed to specify precisely which URLs to use with your " +
-            "Dynamic Search Ads.";
+            "This code example adds a page feed to specify precisely which URLs to use with " +
+            "your Dynamic Search Ads.";
 
         /// <summary>
         /// Runs the code example.
@@ -222,8 +260,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="feedAttributes">The feed attributes.</param>
         private void CreateFeedMapping(GoogleAdsClient client, long customerId,
             string feedResourceName,
-             Dictionary<DsaPageFeedCriterionField, FeedAttribute> feedAttributes
-        )
+             Dictionary<DsaPageFeedCriterionField, FeedAttribute> feedAttributes)
         {
             // Get the FeedMappingService.
             FeedMappingServiceClient feedMappingService = client.GetService(
@@ -401,8 +438,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
             // You must request all DSA fields in order to update the DSA settings in the
             // following step.
             string query =
-                $@"SELECT 
-                      campaign.id, 
+                $@"SELECT
+                      campaign.id,
                       campaign.name,
                       campaign.dynamic_search_ads_setting.use_supplied_urls_only
                   FROM
@@ -433,7 +470,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
         // [END add_dynamic_page_feed]
 
         // [START add_dynamic_page_feed_2]
-        private void AddDsaTarget(GoogleAdsClient client, long customerId, long adGroupId, string dsaPageUrlLabel)
+        private void AddDsaTarget(GoogleAdsClient client, long customerId, long adGroupId,
+            string dsaPageUrlLabel)
         {
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService = client.GetService(

@@ -12,8 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using System;
-using System.Linq;
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
 using Google.Ads.GoogleAds.V7.Common;
@@ -22,6 +21,9 @@ using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
 using Google.Protobuf;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using static Google.Ads.GoogleAds.V7.Enums.DisplayUploadProductTypeEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V7
@@ -33,22 +35,51 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class AddDisplayUploadAd : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="AddDisplayUploadAd"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// The ID of the ad group to which the new ad will be added.
+            /// </summary>
+            [Option("adGroupId", Required = true, HelpText =
+                "The ID of the ad group to which the new ad will be added.")]
+            public long AdGroupId { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // The ID of the ad group to which the new ad will be added.
+                    options.AdGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
+
+                    return 0;
+                });
+
             AddDisplayUploadAd codeExample = new AddDisplayUploadAd();
-
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // The ID of the ad group to which the new ad will be added.
-            long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId, adGroupId);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.AdGroupId);
         }
 
         /// <summary>
@@ -127,7 +158,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
 
             // Adds the asset to the client account.
             MutateAssetsResponse response = assetServiceClient.MutateAssets(customerId.ToString(),
-                new[] {operation});
+                new[] { operation });
 
             // Displays the resulting resource name.
             string uploadedAssetResourceName = response.Results.First().ResourceName;
@@ -156,7 +187,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             Ad displayUploadAd = new Ad()
             {
                 Name = "Ad for HTML5",
-                FinalUrls = {"http://example.com/html5"},
+                FinalUrls = { "http://example.com/html5" },
                 // Exactly one ad data field must be included to specify the ad type. See
                 // https://developers.google.com/google-ads/api/reference/rpc/latest/Ad for the
                 // full list of available types.
@@ -186,7 +217,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
 
             // Adds the ad group ad to the client account.
             MutateAdGroupAdsResponse response = adGroupAdServiceClient.MutateAdGroupAds
-                (customerId.ToString(), new[] {operation});
+                (customerId.ToString(), new[] { operation });
 
             // Displays the resulting ad group ad's resource name.
             Console.WriteLine($"Created new ad group ad{response.Results.First().ResourceName}.");

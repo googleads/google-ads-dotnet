@@ -12,13 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using System;
-using System.Linq;
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Common;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using static Google.Ads.GoogleAds.V7.Enums.ExtensionTypeEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V7
@@ -30,32 +32,85 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class AddHotelCallout : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="AddHotelCallout"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// ID of the campaign to which the hotel callout extension will be added.
+            /// </summary>
+            [Option("campaignId", Required = true, HelpText =
+                "ID of the campaign to which the hotel callout extension will be added.")]
+            public long CampaignId { get; set; }
+
+            /// <summary>
+            /// ID of the ad group to which the hotel callout extension will be added.
+            /// </summary>
+            [Option("adGroupId", Required = true, HelpText =
+                "ID of the ad group to which the hotel callout extension will be added.")]
+            public long AdGroupId { get; set; }
+
+            /// <summary>
+            /// Callout text for the extension.
+            /// </summary>
+            [Option("calloutText", Required = true, HelpText =
+                "Callout text for the extension.")]
+            public string CalloutText { get; set; }
+
+            /// <summary>
+            /// The language code for the text. See supported languages at:
+            /// https://developers.google.com/hotels/hotel-ads/api-reference/language-codes.
+            /// </summary>
+            [Option("languageCode", Required = true, HelpText =
+                "The language code for the text. See supported languages at: " +
+                "https://developers.google.com/hotels/hotel-ads/api-reference/language-codes.")]
+            public string LanguageCode { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // ID of the campaign to which the hotel callout extension will be added.
+                    options.CampaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
+
+                    // ID of the ad group to which the hotel callout extension will be added.
+                    options.AdGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
+
+                    // Callout text for the extension.
+                    options.CalloutText = "INSERT_CALLOUT_TEXT_HERE";
+
+                    // The language code for the text. See supported languages at:
+                    // https://developers.google.com/hotels/hotel-ads/api-reference/language-codes.
+                    options.LanguageCode = "INSERT_LANGUAGE_CODE_HERE";
+
+                    return 0;
+                });
+
             AddHotelCallout codeExample = new AddHotelCallout();
             Console.WriteLine(codeExample.Description);
-
-            // The customer ID for which the call is made.
-            int customerId = int.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // ID of the campaign to which the hotel callout extension will be added.
-            long campaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
-
-            // ID of the ad group to which the hotel callout extension will be added.
-            long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
-
-            // Callout text for the extension.
-            string calloutText = "INSERT_CALLOUT_TEXT_HERE";
-
-            // The language code for the text. See supported languages at:
-            // https://developers.google.com/hotels/hotel-ads/api-reference/language-codes.
-            string languageCode = "INSERT_LANGUAGE_CODE_HERE";
-
-            codeExample.Run(new GoogleAdsClient(), customerId, campaignId, adGroupId,
-                calloutText, languageCode);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.CampaignId,
+                options.AdGroupId, options.CalloutText, options.LanguageCode);
         }
 
         /// <summary>
@@ -143,7 +198,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             // Issues a mutate request to add the extension feed item and print its information.
             MutateExtensionFeedItemsResponse response =
                 extensionFeedItemService.MutateExtensionFeedItems(customerId.ToString(),
-                    new[] {extensionFeedItemOperation});
+                    new[] { extensionFeedItemOperation });
             string extensionFeedItemResourceName = response.Results.First().ResourceName;
             Console.WriteLine("Created an extension feed item with resource name " +
                 $"'{extensionFeedItemResourceName}'.");
@@ -184,7 +239,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             // information.
             MutateCustomerExtensionSettingsResponse response =
                 customerExtensionSettingService.MutateCustomerExtensionSettings(
-                    customerId.ToString(), new[] {customerExtensionSettingOperation});
+                    customerId.ToString(), new[] { customerExtensionSettingOperation });
             Console.WriteLine("Created a customer extension setting with resource name " +
                 $"'{response.Results.First().ResourceName}'");
         }
@@ -224,7 +279,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             // information.
             MutateCampaignExtensionSettingsResponse response =
                 campaignExtensionSettingService.MutateCampaignExtensionSettings(
-                    customerId.ToString(), new[] {campaignExtensionSettingOperation});
+                    customerId.ToString(), new[] { campaignExtensionSettingOperation });
             Console.WriteLine("Created a campaign extension setting with resource name " +
                 $"'{response.Results.First().ResourceName}'");
         }
@@ -264,7 +319,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             // information.
             MutateAdGroupExtensionSettingsResponse response =
                 adGroupExtensionSettingService.MutateAdGroupExtensionSettings(
-                    customerId.ToString(), new[] {adGroupExtensionSettingOperation});
+                    customerId.ToString(), new[] { adGroupExtensionSettingOperation });
             Console.WriteLine("Created an ad group extension setting with resource name " +
                 $"'{response.Results.First().ResourceName}'");
         }

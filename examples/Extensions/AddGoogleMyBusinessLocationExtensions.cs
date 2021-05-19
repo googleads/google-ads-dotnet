@@ -1,4 +1,4 @@
-﻿// Copyright 2020 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Common;
 using Google.Ads.GoogleAds.V7.Errors;
@@ -38,12 +39,40 @@ namespace Google.Ads.GoogleAds.Examples.V7
     /// </summary>
     public class AddGoogleMyBusinessLocationExtensions : ExampleBase
     {
-        // The required scope for setting the OAuth info.
-        private const string GOOGLE_ADS_SCOPE = "https://www.googleapis.com/auth/adwords";
+        /// <summary>
+        /// Command line options for running the <see cref="AddGoogleMyBusinessLocationExtensions"/>
+        /// example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
 
-        // The maximum number of attempts to make to retrieve the FeedMappings before throwing an
-        // exception.
-        private const int MAX_FEEDMAPPING_RETRIEVAL_ATTEMPTS = 10;
+            /// <summary>
+            /// The Google My Business login email address.
+            /// </summary>
+            [Option("gmbEmailAddress", Required = true, HelpText =
+                "The Google My Business login email address.")]
+            public string GmbEmailAddress { get; set; }
+
+            /// <summary>
+            /// The Google My Business account identifier.
+            /// </summary>
+            [Option("businessAccountId", Required = false, HelpText =
+                "The Google My Business account identifier.")]
+            public string BusinessAccountId { get; set; }
+
+            /// <summary>
+            /// The OAuth2 access token for The Google My Business account.
+            /// </summary>
+            [Option("gmbAccessToken", Required = true, HelpText =
+                "The OAuth2 access token for The Google My Business account.")]
+            public string GmbAccessToken { get; set; }
+        }
 
         /// <summary>
         /// Main method, to run this code example as a standalone application.
@@ -51,38 +80,56 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            GoogleAdsClient client = new GoogleAdsClient();
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // The Google My Business login email address.
+                    options.GmbEmailAddress = "INSERT_GMB_EMAIL_ADDRESS_HERE";
+
+                    // If the gmbEmailAddress above is for a GMB manager instead of the GMB
+                    // account owner, then set businessAccountIdentifier to the Google+ Page ID of
+                    // a location for which the manager has access. This information is available
+                    // through the Google My Business API. See
+                    // https://developers.google.com/my-business/reference/rest/v4/accounts.locations#locationkey
+                    // for details.
+                    //options.BusinessAccountId = "INSERT_BUSINESS_ACCOUNT_ID_HERE";
+                    options.BusinessAccountId = null;
+
+                    // If the gmbEmailAddress above is the same user you used to generate
+                    // your Google Ads API refresh token, leave the assignment below unchanged.
+                    // Otherwise, to obtain an access token for your GMB account, run the
+                    // AuthenticateInStandaloneApplication code example while logged in as the same
+                    // user as gmbEmailAddress. Copy and paste the AccessToken value into the
+                    // assignment below and delete the line after it.
+
+                    // options.GmbAccessToken = "INSERT_GMB_ACCESS_TOKEN_HERE";
+                    options.GmbAccessToken = client.Config.OAuth2AccessToken;
+
+                    return 0;
+                });
+
             AddGoogleMyBusinessLocationExtensions codeExample =
                 new AddGoogleMyBusinessLocationExtensions();
             Console.WriteLine(codeExample.Description);
-
-            GoogleAdsClient client = new GoogleAdsClient();
-
-            // The customer ID for which the call is made.
-            int customerId = int.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // The email address of either an owner or a manager of the GMB account.
-            string gmbEmailAddress = "INSERT_GMB_EMAIL_ADDRESS_HERE";
-
-            // If the gmbEmailAddress above is the same user you used to generate
-            // your Google Ads API refresh token, leave the assignment below unchanged.
-            // Otherwise, to obtain an access token for your GMB account, run the
-            // AuthenticateInStandaloneApplication code example while logged in as the same
-            // user as gmbEmailAddress. Copy and paste the AccessToken value into the
-            // assignment below and delete the line after it.
-
-            // string gmbAccessToken = "INSERT_GMB_ACCESS_TOKEN_HERE";
-            string gmbAccessToken = client.Config.OAuth2AccessToken;
-
-            // If the gmbEmailAddress above is for a GMB manager instead of the GMB
-            // account owner, then set businessAccountIdentifier to the Google+ Page ID of
-            // a location for which the manager has access. This information is available
-            // through the Google My Business API. See
-            // https://developers.google.com/my-business/reference/rest/v4/accounts.locations#locationkey
-            // for details.
-            string businessAccountId = null;
-
-            codeExample.Run(client, customerId, gmbEmailAddress, businessAccountId, gmbAccessToken);
+            codeExample.Run(client, options.CustomerId, options.GmbEmailAddress,
+                options.BusinessAccountId, options.GmbAccessToken);
         }
+
+        // The required scope for setting the OAuth info.
+        private const string GOOGLE_ADS_SCOPE = "https://www.googleapis.com/auth/adwords";
+
+        // The maximum number of attempts to make to retrieve the FeedMappings before throwing an
+        // exception.
+        private const int MAX_FEEDMAPPING_RETRIEVAL_ATTEMPTS = 10;
 
         /// <summary>
         /// Returns a description about the code example.

@@ -12,14 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using System;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Services;
-using static Google.Ads.GoogleAds.V7.Services.GoogleAdsServiceClient;
+using System;
+using System.Collections.Concurrent;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
@@ -30,6 +31,61 @@ namespace Google.Ads.GoogleAds.Examples.V7
     /// </summary>
     public class ParallelReportDownload : ExampleBase
     {
+        /// <summary>
+        /// Command line options for running the <see cref="ParallelReportDownload"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer Id.
+            /// </summary>
+            [Option("customerIds", Required = true, HelpText =
+                "The Google Ads customer IDs for which the call is made.")]
+            public IEnumerable<long> CustomerIds { get; set; }
+
+            /// <summary>
+            /// Optional login customer ID if your access to the CIDs is via a manager account.
+            /// </summary>
+            [Option("loginCustomerId", Required = false, HelpText =
+                "Optional login customer ID if your access to the CIDs is via a manager account.")]
+            public long? LoginCustomerId { get; set; }
+        }
+
+        /// <summary>
+        /// Main method, to run this code example as a standalone application.
+        /// </summary>
+        /// <param name="args">The command line arguments.</param>
+        public static void Main(string[] args)
+        {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer IDs for which the call is made.
+                    // Add more items to the array as desired.
+                    options.CustomerIds = new long[]
+                    {
+                        long.Parse("INSERT_CUSTOMER_ID_1_HERE"),
+                        long.Parse("INSERT_CUSTOMER_ID_2_HERE")
+                    };
+
+                    // Optional login customer ID if your access to the CIDs is via a manager
+                    // account.
+                    options.LoginCustomerId = long.Parse("INSERT_LOGIN_CUSTOMER_ID_HERE");
+
+                    return 0;
+                });
+
+            ParallelReportDownload codeExample = new ParallelReportDownload();
+            Console.WriteLine(codeExample.Description);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerIds.ToArray(),
+                options.LoginCustomerId);
+        }
+
         // Defines the Google Ads Query Language (GAQL) query strings to run for each customer ID.
         private readonly Dictionary<string, string> GAQL_QUERY_STRINGS =
             new Dictionary<string, string>()
@@ -47,28 +103,6 @@ namespace Google.Ads.GoogleAds.Examples.V7
                     WHERE segments.date DURING LAST_30_DAYS"
                 }
             };
-
-        /// <summary>
-        /// Main method, to run this code example as a standalone application.
-        /// </summary>
-        /// <param name="args">The command line arguments.</param>
-        public static void Main(string[] args)
-        {
-            ParallelReportDownload codeExample = new ParallelReportDownload();
-            Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer IDs for which the call is made.
-            long[] customerIds =
-            {
-                long.Parse("INSERT_CUSTOMER_ID_1_HERE"),
-                long.Parse("INSERT_CUSTOMER_ID_2_HERE")
-            };
-
-            // Optional login customer ID if your access to the CIDs is via a manager account.
-            long loginCustomerId = long.Parse("INSERT_MANAGER_ACCOUNT_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerIds, loginCustomerId);
-        }
 
         /// <summary>
         /// Returns a description about the code example.
@@ -181,7 +215,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 // Issue an asynchronous download request.
                 googleAdsService.SearchStream(
                     customerId.ToString(), queryValue,
-                    delegate(SearchGoogleAdsStreamResponse resp)
+                    delegate (SearchGoogleAdsStreamResponse resp)
                     {
                         // Store the results.
                         responses.Add(new ReportDownload()
@@ -234,6 +268,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             internal string QueryKey { get; set; }
             internal SearchGoogleAdsStreamResponse Response { get; set; }
             internal Exception Exception { get; set; }
+
             public override string ToString()
             {
                 if (Exception != null)

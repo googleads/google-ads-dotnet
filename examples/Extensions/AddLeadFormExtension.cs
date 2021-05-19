@@ -12,21 +12,18 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Common;
 using Google.Ads.GoogleAds.V7.Enums;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
-using static Google.Ads.GoogleAds.V7.Enums.AssetLinkStatusEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.FeedAttributeTypeEnum.Types;
+using System;
+using System.Collections.Generic;
 using static Google.Ads.GoogleAds.V7.Enums.LeadFormCallToActionTypeEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.LeadFormFieldUserInputTypeEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.LeadFormPostSubmitCallToActionTypeEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.SitelinkPlaceholderFieldEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
@@ -37,21 +34,51 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class AddLeadFormExtension : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="AddLeadFormExtension"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// ID of the campaign to which lead form extensions are added.
+            /// </summary>
+            [Option("campaignId", Required = true, HelpText =
+                "ID of the campaign to which lead form extensions are added.")]
+            public long CampaignId { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // ID of the campaign to which lead form extensions are added.
+                    options.CampaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
+
+                    return 0;
+                });
+
             AddLeadFormExtension codeExample = new AddLeadFormExtension();
             Console.WriteLine(codeExample.Description);
-
-            // The customer ID for which the call is made.
-            int customerId = int.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // ID of the campaign to which lead form extesions are added.
-            long campaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId, campaignId);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.CampaignId);
         }
 
         /// <summary>
@@ -66,8 +93,9 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
-        /// <param name="campaignId">ID of the campaign to which lead form extensions are
-        /// added.</param>
+        /// <param name="campaignId">
+        /// ID of the campaign to which lead form extensions are added.
+        /// </param>
         public void Run(GoogleAdsClient client, long customerId, long campaignId)
         {
             try
@@ -93,8 +121,9 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
-        /// <param name="campaignId">ID of the campaign to which lead form extensions are
-        /// added.</param>
+        /// <param name="campaignId">
+        /// ID of the campaign to which lead form extensions are added.
+        /// </param>
         /// <param name="leadFormAssetResourceName">The lead form asset resource name.</param>
         // [START add_lead_form_extension_1]
         private void CreateLeadFormExtension(GoogleAdsClient client, long customerId,
@@ -182,9 +211,9 @@ namespace Google.Ads.GoogleAds.Examples.V7
                         },
                     },
 
-                    // Optional: You can also specify a background image asset.
-                    // To upload an asset, see Misc/UploadImageAsset.cs.
-                    // BackgroundImageAsset = "INSERT_IMAGE_ASSET_HERE",
+                    // Optional: You can also specify a background image asset. To upload an asset,
+                    // see Misc/UploadImageAsset.cs. BackgroundImageAsset =
+                    // "INSERT_IMAGE_ASSET_HERE",
 
                     // Optional: Define the response page after the user signs up on the form.
                     PostSubmitHeadline = "Thanks for signing up!",
@@ -211,7 +240,6 @@ namespace Google.Ads.GoogleAds.Examples.V7
                             }
                         }
                     },
-
                 },
                 FinalUrls = { "http://example.com/jupiter" }
             };

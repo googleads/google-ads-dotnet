@@ -12,18 +12,19 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
 using Google.Ads.GoogleAds.V7.Common;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using static Google.Ads.GoogleAds.V7.Enums.UserListMembershipStatusEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.UserListPrepopulationStatusEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.UserListStringRuleItemOperatorEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.UserListMembershipStatusEnum.Types;
 using static Google.Ads.GoogleAds.V7.Errors.CriterionErrorEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V7
@@ -45,27 +46,72 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class SetupRemarketing : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="SetupRemarketing"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// The ad group ID on which criteria will be targeted.
+            /// </summary>
+            [Option("adGroupId", Required = true, HelpText =
+                "The ad group ID on which criteria will be targeted.")]
+            public long AdGroupId { get; set; }
+
+            /// <summary>
+            /// The campaign ID on which criteria will be targeted.
+            /// </summary>
+            [Option("campaignId", Required = true, HelpText =
+                "The campaign ID on which criteria will be targeted.")]
+            public long CampaignId { get; set; }
+
+            /// <summary>
+            /// The bid modifier value.
+            /// </summary>
+            [Option("bidModifierValue", Required = true, HelpText =
+                "The bid modifier value.")]
+            public double BidModifierValue { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // The ad group ID on which criteria will be targeted.
+                    options.AdGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
+
+                    // The campaign ID on which criteria will be targeted.
+                    options.CampaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
+
+                    // The bid modifier value.
+                    options.BidModifierValue = double.Parse("INSERT_BID_MODIFIER_VALUE_HERE");
+
+                    return 0;
+                });
+
             SetupRemarketing codeExample = new SetupRemarketing();
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // The ad group ID on which criteria will be targeted.
-            long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
-
-            // The campaign ID on which criteria will be targeted.
-            long campaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
-
-            // The bid modifier value.
-            double bidModifierValue= double.Parse("BID_MODIFIER_VALUE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId, adGroupId, campaignId, bidModifierValue);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.AdGroupId,
+                options.CampaignId, options.BidModifierValue);
         }
 
         /// <summary>
@@ -90,7 +136,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// Runs the code example.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
-        /// <param name="customerId">The Google Ads customer ID.</param>
+        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="adGroupId">The ad group ID on which criteria will be targeted.</param>
         /// <param name="campaignId">The campaign ID on which criteria will be targeted.</param>
         /// <param name="bidModifierValue">The bid modifier value.</param>
@@ -106,7 +152,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 string adGroupCriterionResourceName =
                     TargetAdsInAdGroupToUserList(client, customerId, adGroupId,
                         userListResourceName);
-                ModifyAdGroupBids(client, customerId, adGroupCriterionResourceName, bidModifierValue);
+                ModifyAdGroupBids(client, customerId, adGroupCriterionResourceName,
+                    bidModifierValue);
 
                 // Remove any existing user lists at the ad group level.
                 RemoveExistingListCriteriaFromAdGroup(client, customerId, campaignId);
@@ -115,7 +162,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 string campaignCriterionResourceName =
                     TargetAdsInCampaignToUserList(client, customerId, campaignId,
                         userListResourceName);
-                ModifyCampaignBids(client, customerId, campaignCriterionResourceName, bidModifierValue);
+                ModifyCampaignBids(client, customerId, campaignCriterionResourceName,
+                    bidModifierValue);
             }
             catch (GoogleAdsException e)
             {
@@ -141,7 +189,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// Creates a user list targeting users that have visited a given url.
         /// </summary>
         /// <param name="client">The Google Ads API client.</param>
-        /// <param name="customerId">The Google Ads customer ID.</param>
+        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <returns>The resource name of the newly created user list.</returns>
         // [START setup_remarketing]
         private string CreateUserList(GoogleAdsClient client, long customerId)
@@ -198,7 +246,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
 
             // Add the user list, then print and return the new list's resource name.
             MutateUserListsResponse mutateUserListsResponse = userListServiceClient
-                .MutateUserLists(customerId.ToString(), new[] {userListOperation});
+                .MutateUserLists(customerId.ToString(), new[] { userListOperation });
             string userListResourceName = mutateUserListsResponse.Results.First().ResourceName;
             Console.WriteLine($"Created user list with resource name '{userListResourceName}'.");
 
@@ -210,7 +258,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// Creates an ad group criterion that targets a user list with an ad group.
         /// </summary>
         /// <param name="client">The Google Ads API client.</param>
-        /// <param name="customerId">The Google Ads customer ID.</param>
+        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="adGroupId">The ad group on which the user list will be targeted.</param>
         /// <param name="userListResourceName">The resource name of the user list to be
         /// targeted.</param>
@@ -242,7 +290,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             // Add the ad group criterion, then print and return the new criterion's resource name.
             MutateAdGroupCriteriaResponse mutateAdGroupCriteriaResponse =
                 adGroupCriterionServiceClient.MutateAdGroupCriteria(customerId.ToString(),
-                    new[] {adGroupCriterionOperation});
+                    new[] { adGroupCriterionOperation });
 
             string adGroupCriterionResourceName =
                 mutateAdGroupCriteriaResponse.Results.First().ResourceName;
@@ -257,7 +305,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// Updates the bid modifier on an ad group criterion.
         /// </summary>
         /// <param name="client">The Google Ads API client.</param>
-        /// <param name="customerId">The Google Ads customer ID.</param>
+        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="adGroupCriterionResourceName">The resource name of the ad group criterion to update.</param>
         /// <param name="bidModifierValue">The bid modifier value.</param>
         private void ModifyAdGroupBids(
@@ -288,7 +336,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             // Update the ad group criterion and print the results.
             MutateAdGroupCriteriaResponse mutateAdGroupCriteriaResponse =
                 adGroupCriterionServiceClient.MutateAdGroupCriteria(customerId.ToString(),
-                    new[] {adGroupCriterionOperation});
+                    new[] { adGroupCriterionOperation });
             Console.WriteLine("Successfully updated the bid for ad group criterion with resource " +
                 $"name '{mutateAdGroupCriteriaResponse.Results.First().ResourceName}'.");
         }
@@ -298,7 +346,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// necessary step before targeting a user list at the campaign level.
         /// </summary>
         /// <param name="client">The Google Ads API client.</param>
-        /// <param name="customerId">The Google Ads customer ID.</param>
+        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="campaignId">The campaign from which to remove the ad group criteria.</param>
         // [START setup_remarketing_3]
         private void RemoveExistingListCriteriaFromAdGroup(GoogleAdsClient client, long customerId,
@@ -314,7 +362,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
 
             // Create a list of remove operations.
             List<AdGroupCriterionOperation> operations = adGroupCriteria.Select(adGroupCriterion =>
-                new AdGroupCriterionOperation {Remove = adGroupCriterion}).ToList();
+                new AdGroupCriterionOperation { Remove = adGroupCriterion }).ToList();
 
             // Remove the ad group criteria and print the resource names of the removed criteria.
             MutateAdGroupCriteriaResponse mutateAdGroupCriteriaResponse =
@@ -335,7 +383,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// Finds all of user list ad group criteria under a campaign.
         /// </summary>
         /// <param name="client">The Google Ads API client.</param>
-        /// <param name="customerId">The Google Ads customer ID.</param>
+        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="campaignId">The campaign in which to search the ad group criteria.</param>
         /// <returns>A list of ad group criteria resource names.</returns>
         // [START setup_remarketing_2]
@@ -358,7 +406,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
 
             // Issue the search request.
             googleAdsServiceClient.SearchStream(customerId.ToString(), query,
-                delegate(SearchGoogleAdsStreamResponse resp)
+                delegate (SearchGoogleAdsStreamResponse resp)
                 {
                     // Display the results and add the resource names to the list.
                     foreach (GoogleAdsRow googleAdsRow in resp.Results)
@@ -379,7 +427,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// Creates a campaign criterion that targets a user list with a campaign.
         /// </summary>
         /// <param name="client">The Google Ads API client.</param>
-        /// <param name="customerId">The Google Ads customer ID.</param>
+        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="campaignId">The campaign on which the user list will be targeted.</param>
         /// <param name="userListResourceName">The resource name of the user list to be
         /// targeted.</param>
@@ -411,7 +459,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             // Add the campaign criterion and print the resulting criterion's resource name.
             MutateCampaignCriteriaResponse mutateCampaignCriteriaResponse =
                 campaignCriterionServiceClient.MutateCampaignCriteria(customerId.ToString(),
-                    new[] {campaignCriterionOperation});
+                    new[] { campaignCriterionOperation });
 
             string campaignCriterionResourceName =
                 mutateCampaignCriteriaResponse.Results.First().ResourceName;
@@ -427,7 +475,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// Updates the bid modifier on a campaign criterion.
         /// </summary>
         /// <param name="client">The Google Ads API client.</param>
-        /// <param name="customerId">The Google Ads customer ID.</param>
+        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="campaignCriterionResourceName">The resource name of the campaign criterion to update.</param>
         /// <param name="bidModifierValue">The bid modifier value.</param>
         private void ModifyCampaignBids(
@@ -457,7 +505,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             // Update the campaign criterion and print the results.
             MutateCampaignCriteriaResponse mutateCampaignCriteriaResponse =
                 campaignCriterionServiceClient.MutateCampaignCriteria(customerId.ToString(),
-                    new[] {campaignCriterionOperation});
+                    new[] { campaignCriterionOperation });
             Console.WriteLine("Successfully updated the bid for campaign criterion with resource " +
                 $"name '{mutateCampaignCriteriaResponse.Results.First().CampaignCriterion}'.");
         }

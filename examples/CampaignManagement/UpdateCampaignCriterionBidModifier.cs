@@ -12,12 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
 using System;
+using System.Collections.Generic;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
@@ -27,29 +29,73 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class UpdateCampaignCriterionBidModifier : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="UpdateCampaignCriterionBidModifier"/>
+        /// example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// ID of the campaign that contains the criterion.
+            /// </summary>
+            [Option("campaignId", Required = true, HelpText =
+                "ID of the campaign that contains the criterion.")]
+            public long CampaignId { get; set; }
+
+            /// <summary>
+            /// ID of the criterion for which bid modifier is updated.
+            /// </summary>
+            [Option("criterionId", Required = true, HelpText =
+                "ID of the criterion for which bid modifier is updated.")]
+            public long CriterionId { get; set; }
+
+            /// <summary>
+            /// The new value of the bid modifier to update.
+            /// </summary>
+            [Option("bidModifierValue", Required = false, HelpText =
+                "The new value of the bid modifier to update.")]
+            public float? BidModifierValue { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            UpdateCampaignCriterionBidModifier codeExample =
-                new UpdateCampaignCriterionBidModifier();
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // ID of the campaign that contains the criterion.
+                    options.CampaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
+
+                    // ID of the criterion for which bid modifier is updated.
+                    options.CriterionId = long.Parse("INSERT_CRITERION_ID_HERE");
+
+                    // The new value of the bid modifier to update.
+                    options.BidModifierValue = float.Parse("INSERT_BID_MODIFIER_VALUE_HERE");
+
+                    return 0;
+                });
+
+            UpdateCampaignCriterionBidModifier codeExample = new UpdateCampaignCriterionBidModifier();
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // ID of the campaign that contains the criterion.
-            long campaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
-
-            // ID of the criterion for which bid modifier is updated.
-            long criterionId = long.Parse("INSERT_CRITERION_ID_HERE");
-
-            // The new value of the bid modifier to update.
-            float bidModifierValue = float.Parse("INSERT_BID_MODIFIER_VALUE_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId, campaignId, criterionId,
-                bidModifierValue);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.CampaignId,
+                options.CriterionId, options.BidModifierValue);
         }
 
         /// <summary>

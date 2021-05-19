@@ -12,12 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
-
 using System;
+using System.Collections.Generic;
 using static Google.Ads.GoogleAds.V7.Enums.ConversionActionCategoryEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.ConversionActionStatusEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.ConversionActionTypeEnum.Types;
@@ -30,10 +31,48 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class AddConversionAction : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="AddConversionAction"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the conversion action is added.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the conversion action is added.")]
+            public long CustomerId { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
+        {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the conversion action is added.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    return 0;
+                });
+
+            AddConversionAction codeExample = new AddConversionAction();
+            Console.WriteLine(codeExample.Description);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId);
+        }
+
+        /// <summary>
+        /// Main method, to run this code example as a standalone application.
+        /// </summary>
+        /// <param name="args">The command line arguments.</param>
+        public static void __Main(string[] args)
         {
             AddConversionAction codeExample = new AddConversionAction();
             Console.WriteLine(codeExample.Description);

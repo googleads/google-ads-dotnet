@@ -12,14 +12,16 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using System;
-using System.Linq;
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
 using Google.Ads.GoogleAds.V7.Common;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
@@ -29,25 +31,62 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class UpdateSitelink : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="UpdateSitelink"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// The feed item ID to update.
+            /// </summary>
+            [Option("feedItemId", Required = true, HelpText =
+                "The feed item ID to update.")]
+            public long FeedItemId { get; set; }
+
+            /// <summary>
+            /// The new sitelink text.
+            /// </summary>
+            [Option("sitelinkText", Required = true, HelpText =
+                "The new sitelink text.")]
+            public string SitelinkText { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // The feed item ID to update.
+                    options.FeedItemId = long.Parse("INSERT_FEED_ITEM_ID_HERE");
+
+                    // The new sitelink text.
+                    options.SitelinkText = "INSERT_SITELINK_TEXT_HERE";
+
+                    return 0;
+                });
+
             UpdateSitelink codeExample = new UpdateSitelink();
-
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // The feed item ID to update.
-            long feedItemId = long.Parse("INSERT_FEED_ITEM_ID_HERE");
-
-            // The new sitelink text.
-            string sitelinkText = "INSERT_SITELINK_TEXT_HERE";
-
-            codeExample.Run(new GoogleAdsClient(), customerId, feedItemId, sitelinkText);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.FeedItemId,
+                options.SitelinkText);
         }
 
         /// <summary>
@@ -95,7 +134,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 // Issue a mutate request to update the extension feed item.
                 MutateExtensionFeedItemsResponse response =
                     extensionFeedItemService.MutateExtensionFeedItems(
-                        customerId.ToString(), new[] {extensionFeedItemOperation});
+                        customerId.ToString(), new[] { extensionFeedItemOperation });
 
                 // Print the resource name of the updated extension feed item.
                 Console.WriteLine("Updated extension feed item with resource name " +

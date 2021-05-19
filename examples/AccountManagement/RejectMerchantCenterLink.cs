@@ -12,11 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using System;
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
+using System;
+using System.Collections.Generic;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
@@ -31,21 +33,54 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class RejectMerchantCenterLink : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="RejectMerchantCenterLink"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// The Merchant Center account ID for the account requesting to link.
+            /// </summary>
+            [Option("merchantCenterAccountId", Required = true, HelpText =
+                "The Merchant Center account ID for the account requesting to link.")]
+            public long MerchantCenterAccountId { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // The Merchant Center account ID for the account requesting to link.
+                    options.MerchantCenterAccountId =
+                       long.Parse("INSERT_MERCHANT_CENTER_ACCOUNT_ID_HERE");
+
+                    return 0;
+                });
+
             RejectMerchantCenterLink codeExample = new RejectMerchantCenterLink();
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // The Merchant Center account ID for the account requesting to link.
-            long merchantCenterAccountId = long.Parse("INSERT_MERCHANT_CENTER_ACCOUNT_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId, merchantCenterAccountId);
+            codeExample.Run(new GoogleAdsClient(),
+                options.CustomerId,
+                options.MerchantCenterAccountId);
         }
 
         /// <summary>
@@ -80,13 +115,13 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 ListMerchantCenterLinksResponse response =
                     merchantCenterLinkServiceClient.ListMerchantCenterLinks(customerId.ToString());
 
-                Console.WriteLine($"{response.MerchantCenterLinks.Count} Merchant Center link(s) " +
-                                  "found with the following details:");
+                Console.WriteLine($"{response.MerchantCenterLinks.Count} Merchant Center " +
+                    $"link(s) found with the following details:");
 
                 foreach (MerchantCenterLink merchantCenterLink in response.MerchantCenterLinks)
                 {
                     Console.WriteLine($"Link '{merchantCenterLink.ResourceName}' has status " +
-                                      $"'{merchantCenterLink.Status}'.");
+                        $"'{merchantCenterLink.Status}'.");
 
                     // Checks if there is a link for the Merchant Center account we are looking for.
                     if (merchantCenterAccountId == merchantCenterLink.Id)

@@ -12,11 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Services;
-
 using System;
+using System.Collections.Generic;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
@@ -27,31 +28,82 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class UploadCallConversion : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="UploadCallConversion"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for whom the conversion action will be added.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for whom the conversion action will be added.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// The caller ID in E.164 format with preceding '+' sign. e.g. "+16502531234".
+            /// </summary>
+            [Option("callerId", Required = true, HelpText =
+                "The caller ID in E.164 format with preceding '+' sign. e.g. '+16502531234'.")]
+            public string CallerId { get; set; }
+
+            /// <summary>
+            /// The call start time in 'yyyy-mm-dd hh:mm:ss +|-hh:mm' format.
+            /// </summary>
+            [Option("callStartTime", Required = true, HelpText =
+                "The call start time in 'yyyy-mm-dd hh:mm:ss+|-hh:mm' format.")]
+            public string CallStartTime { get; set; }
+
+            /// <summary>
+            /// The call conversion time.
+            /// </summary>
+            [Option("conversionTime", Required = true, HelpText =
+                "The conversion time in 'yyyy-mm-dd hh:mm:ss+|-hh:mm' format.")]
+            public string ConversionTime { get; set; }
+
+            /// <summary>
+            /// The conversion value.
+            /// </summary>
+            [Option("conversionValue", Required = true, HelpText =
+                "The conversion value.")]
+            public double ConversionValue { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for whom the conversion action will be added.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // The caller ID in E.164 format with preceding '+' sign. e.g. "+16502531234".
+                    options.CallerId = "INSERT_CALLER_ID_HERE";
+
+                    // The call start time in "yyyy-mm-dd hh:mm:ss+|-hh:mm" format.
+                    options.CallStartTime = "INSERT_CALL_START_TIME_HERE";
+
+                    // The conversion time in "yyyy-mm-dd hh:mm:ss+|-hh:mm" format.
+                    options.ConversionTime = "INSERT_CONVERSION_TIME_HERE";
+
+                    // The conversion value.
+                    options.ConversionValue = double.Parse("INSERT_CONVERSION_VALUE_HERE");
+
+                    return 0;
+                });
+
             UploadCallConversion codeExample = new UploadCallConversion();
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // The caller ID in E.164 format with preceding '+' sign. e.g. "+16502531234".
-            string callerId = "INSERT_CALLER_ID_HERE";
-
-            // The call start time in "yyyy-mm-dd hh:mm:ss+|-hh:mm" format.
-            string callStartTime = "INSERT_CALL_START_TIME_HERE";
-
-            // The conversion time in "yyyy-mm-dd hh:mm:ss+|-hh:mm" format.
-            string conversionTime = "INSERT_CONVERSION_TIME_HERE";
-
-            // The conversion value.
-            double conversionValue = double.Parse("CONVERSION_VALUE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId, callerId, callStartTime,
-                conversionTime, conversionValue);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.CallerId,
+                options.CallStartTime, options.ConversionTime, options.ConversionValue);
         }
 
         /// <summary>
@@ -68,10 +120,13 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for whom the conversion action will
         /// be added.</param>
-        /// <param name="callerId">The caller ID.</param>
-        /// <param name="callStartTime">The call start time.</param>
-        /// <param name="conversionTime">The call conversion time.</param>
-        /// <param name="conversionValue">The convsersion value.</param>
+        /// <param name="callerId">The caller ID in E.164 format with preceding '+' sign. e.g.
+        /// "+16502531234".</param>
+        /// <param name="callStartTime">The call start time in "yyyy-mm-dd hh:mm:ss+|-hh:mm"
+        /// format.</param>
+        /// <param name="conversionTime">The conversion time in "yyyy-mm-dd hh:mm:ss+|-hh:mm"
+        /// format.</param>
+        /// <param name="conversionValue">The conversion value.</param>
         // [START upload_call_conversion]
         public void Run(GoogleAdsClient client, long customerId, string callerId,
             string callStartTime, string conversionTime, double conversionValue)

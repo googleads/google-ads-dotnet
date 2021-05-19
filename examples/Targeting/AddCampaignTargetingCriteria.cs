@@ -12,14 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Common;
+using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
-
 using System;
-
+using System.Collections.Generic;
 using static Google.Ads.GoogleAds.V7.Enums.KeywordMatchTypeEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.ProximityRadiusUnitsEnum.Types;
 
@@ -31,28 +31,75 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class AddCampaignTargetingCriteria : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="AddCampaignTargetingCriteria"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// ID of the campaign to which targeting criteria are added.
+            /// </summary>
+            [Option("campaignId", Required = true, HelpText =
+                "ID of the campaign to which targeting criteria are added.")]
+            public long CampaignId { get; set; }
+
+            /// <summary>
+            /// The keyword text for which to add a criterion.
+            /// </summary>
+            [Option("keywordText", Required = true, HelpText =
+                "The keyword text for which to add a criterion.")]
+            public string KeywordText { get; set; }
+
+            /// <summary>
+            /// The locationId for which to add a criterion.
+            /// </summary>
+            [Option("locationId", Required = true, HelpText =
+                "The locationId for which to add a criterion.")]
+            public long LocationId { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // ID of the campaign to which targeting criteria are added.
+                    options.CampaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
+
+                    // The keyword text for which to add a criterion.
+                    options.KeywordText = "INSERT_KEYWORD_TEXT_HERE";
+
+                    // The locationId for which to add a criterion.
+                    options.LocationId = long.Parse("INSERT_LOCATION_ID_HERE");
+
+                    return 0;
+                });
+
             AddCampaignTargetingCriteria codeExample = new AddCampaignTargetingCriteria();
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // ID of the campaign to which targeting criteria are added.
-            long campaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
-
-            // The keyword text to be added as a negative criterion to the keyword.
-            string keywordText = "INSERT_KEYWORD_TEXT_HERE";
-
-            // ID of the campaign to which targeting criteria are added.
-            long locationId = long.Parse("INSERT_LOCATION_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId, campaignId,
-                keywordText, locationId);
+            codeExample.Run(new GoogleAdsClient(),
+                options.CustomerId,
+                options.CampaignId,
+                options.KeywordText,
+                options.LocationId);
         }
 
         /// <summary>

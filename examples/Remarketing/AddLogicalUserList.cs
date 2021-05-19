@@ -12,15 +12,16 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Common;
 using Google.Ads.GoogleAds.V7.Enums;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
@@ -31,25 +32,57 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class AddLogicalUserList : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="AddLogicalUserList"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// The IDs of the lists to be used for the new combination user list.
+            /// </summary>
+            [Option("userListIds", Required = true, HelpText =
+                "The IDs of the lists to be used for the new combination user list.")]
+            public IEnumerable<long> UserListIds { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // The IDs of the lists to be used for the new combination user list.
+                    // Add more items to the array as desired.
+                    options.UserListIds = new long[]
+                    {
+                        long.Parse("INSERT_USER_LIST_ID_HERE"),
+                        long.Parse("INSERT_USER_LIST_ID_HERE")
+                    };
+
+                    return 0;
+                });
+
             AddLogicalUserList codeExample = new AddLogicalUserList();
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // The IDs of the lists to be used for the new combination user list.
-            long[] userListIds =
-            {
-                long.Parse("INSERT_USER_LIST_ID_HERE"),
-                long.Parse("INSERT_USER_LIST_ID_HERE")
-            };
-
-            codeExample.Run(new GoogleAdsClient(), customerId, userListIds);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId,
+                options.UserListIds.ToArray());
         }
 
         /// <summary>
@@ -63,9 +96,9 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// Runs the code example.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
-        /// <param name="customerId">The Google Ads customer ID.</param>
+        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="userListIds">The IDs of the lists to be used for the new combination user
-        ///     list.</param>
+        /// list.</param>
         // [START add_logical_user_list]
         public void Run(GoogleAdsClient client, long customerId, long[] userListIds)
         {
@@ -77,7 +110,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             // the operator should target.
             List<LogicalUserListOperandInfo> logicalUserListOperandInfoList =
                 userListIds.Select(userListId => new LogicalUserListOperandInfo
-                    {UserList = ResourceNames.UserList(customerId, userListId)}).ToList();
+                { UserList = ResourceNames.UserList(customerId, userListId) }).ToList();
 
             // Creates the UserListLogicalRuleInfo specifying that a user should be added to the new
             // list if they are present in any of the provided lists.
@@ -112,9 +145,9 @@ namespace Google.Ads.GoogleAds.Examples.V7
             {
                 // Sends the request to add the user list and prints the response.
                 MutateUserListsResponse response = userListServiceClient.MutateUserLists
-                    (customerId.ToString(), new[] {operation});
+                    (customerId.ToString(), new[] { operation });
                 Console.WriteLine("Created combination user list with resource name: " +
-                                  $"{response.Results.First().ResourceName}");
+                    $"{response.Results.First().ResourceName}");
             }
             catch (GoogleAdsException e)
             {
