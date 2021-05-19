@@ -12,11 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Services;
-
 using System;
+using System.Collections.Generic;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
@@ -30,13 +31,30 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class ListAccessibleCustomers : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="ListAccessibleCustomers"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            ListAccessibleCustomers codeExample = new ListAccessibleCustomers();
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    return 0;
+                });
 
+            ListAccessibleCustomers codeExample = new ListAccessibleCustomers();
             Console.WriteLine(codeExample.Description);
             codeExample.Run(new GoogleAdsClient());
         }
@@ -48,8 +66,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
             "This code example lists the resource names for the customers that the " +
             "authenticating user has access to. This example may be used to display a list of " +
             "customer IDs that can be selected by the user for setting the login-customer-id in " +
-            "a subsequent call. See "+
-            "https://developers.google.com/google-ads/api/docs/concepts/call-structure#login-customer-id "+
+            "a subsequent call. See " +
+            "https://developers.google.com/google-ads/api/docs/concepts/call-structure#login-customer-id " +
             "to learn more about the login-customer-id header.";
 
         /// <summary>

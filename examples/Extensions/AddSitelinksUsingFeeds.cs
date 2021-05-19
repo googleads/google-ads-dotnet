@@ -12,15 +12,16 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Common;
 using Google.Ads.GoogleAds.V7.Enums;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using static Google.Ads.GoogleAds.V7.Enums.FeedAttributeTypeEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.SitelinkPlaceholderFieldEnum.Types;
 
@@ -33,25 +34,62 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class AddSitelinksUsingFeeds : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="AddSitelinksUsingFeeds"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// ID of the campaign to which sitelinks are added.
+            /// </summary>
+            [Option("campaignId", Required = true, HelpText =
+                "ID of the campaign to which sitelinks are added.")]
+            public long CampaignId { get; set; }
+
+            /// <summary>
+            /// Optional ID of the ad group to which sitelinks are added.
+            /// </summary>
+            [Option("adGroupId", Required = true, HelpText =
+                "Optional ID of the ad group to which sitelinks are added.")]
+            public long? AdGroupId { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // ID of the campaign to which sitelinks are added.
+                    options.CampaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
+
+                    // Optional ID of the ad group to which sitelinks are added.
+                    options.AdGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
+
+                    return 0;
+                });
+
             AddSitelinksUsingFeeds codeExample = new AddSitelinksUsingFeeds();
             Console.WriteLine(codeExample.Description);
-
-            // The customer ID for which the call is made.
-            int customerId = int.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // ID of the campaign to which sitelinks are added.
-            long campaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
-
-            // ID of the ad group to which sitelinks are added.
-            // Set to null if you do not wish to limit targeting to a specific ad group.
-            long? adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId, campaignId, adGroupId);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.CampaignId,
+                options.AdGroupId);
         }
 
         /// <summary>
@@ -138,7 +176,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             };
 
             MutateFeedsResponse response = feedServiceClient.MutateFeeds(
-                customerId.ToString(), new[] {operation});
+                customerId.ToString(), new[] { operation });
             string feedResourceName = response.Results[0].ResourceName;
             Console.WriteLine($"Created feed with resource name '{feedResourceName}'.");
 
@@ -186,7 +224,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             FeedItemAttributeValue finalUrlAttributeValue = new FeedItemAttributeValue()
             {
                 FeedAttributeId = feed.Attributes[1].Id,
-                StringValues = {finalUrl}
+                StringValues = { finalUrl }
             };
             FeedItemAttributeValue line1AttributeValue = new FeedItemAttributeValue()
             {
@@ -294,12 +332,15 @@ namespace Google.Ads.GoogleAds.Examples.V7
                     case "Link Text":
                         attributeFieldMapping.SitelinkField = SitelinkPlaceholderField.Text;
                         break;
+
                     case "Link Final URL":
                         attributeFieldMapping.SitelinkField = SitelinkPlaceholderField.FinalUrls;
                         break;
+
                     case "Line 1":
                         attributeFieldMapping.SitelinkField = SitelinkPlaceholderField.Line1;
                         break;
+
                     case "Line 2":
                         attributeFieldMapping.SitelinkField = SitelinkPlaceholderField.Line2;
                         break;
@@ -314,7 +355,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             };
 
             MutateFeedMappingsResponse response = feedMappingServiceClient.MutateFeedMappings
-                (customerId.ToString(), new[] {operation});
+                (customerId.ToString(), new[] { operation });
 
             Console.WriteLine($"Created feed mapping '{response.Results.First().ResourceName}'");
         }
@@ -354,7 +395,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             };
 
             MutateCampaignFeedsResponse response = campaignFeedServiceClient.MutateCampaignFeeds(
-                customerId.ToString(), new[] {operation});
+                customerId.ToString(), new[] { operation });
 
             Console.WriteLine($"Created campaign feed '{response.Results.First().ResourceName}'");
         }
@@ -366,8 +407,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="customerId">The customer ID for which the call is made.</param>
         /// <param name="adGroupId">The ID of the Ad Group being targeted.</param>
         /// <param name="feedItem">The feed item that was added to the feed.</param>
-        private void CreateAdGroupTargeting(GoogleAdsClient client, long customerId, long adGroupId,
-            string feedItem)
+        private void CreateAdGroupTargeting(GoogleAdsClient client, long customerId,
+            long adGroupId, string feedItem)
         {
             FeedItemTargetServiceClient feedItemTargetServiceClient =
                 client.GetService(Services.V7.FeedItemTargetService);
@@ -384,7 +425,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             };
 
             MutateFeedItemTargetsResponse response = feedItemTargetServiceClient
-                .MutateFeedItemTargets(customerId.ToString(), new[] {operation});
+                .MutateFeedItemTargets(customerId.ToString(), new[] { operation });
 
             Console.WriteLine(
                 $"Created feed item target '{response.Results.First().ResourceName}' " +

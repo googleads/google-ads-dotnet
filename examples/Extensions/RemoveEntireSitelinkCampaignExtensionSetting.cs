@@ -12,14 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Services;
 using Google.Protobuf.Collections;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using static Google.Ads.GoogleAds.V7.Enums.ExtensionTypeEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V7
@@ -36,32 +36,63 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class RemoveEntireSitelinkCampaignExtensionSetting : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the
+        /// <see cref="RemoveEntireSitelinkCampaignExtensionSetting"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// ID of the campaign from which sitelinks will be removed.
+            /// </summary>
+            [Option("campaignId", Required = true, HelpText =
+                "ID of the campaign from which sitelinks will be removed.")]
+            public long CampaignId { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // ID of the campaign from which sitelinks will be removed.
+                    options.CampaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
+
+                    return 0;
+                });
+
             RemoveEntireSitelinkCampaignExtensionSetting codeExample =
                 new RemoveEntireSitelinkCampaignExtensionSetting();
             Console.WriteLine(codeExample.Description);
-
-            // The customer ID for which the call is made.
-            int customerId = int.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // ID of the campaign from which sitelinks will be removed.
-            long campaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId, campaignId);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.CampaignId);
         }
 
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
-            "Removes the entire sitelink campaign extension setting by removing both the sitelink" +
-            "campaign extension setting itself and its associated sitelink extension feed items. " +
-            "This requires two steps, since removing the campaign extension setting doesn't " +
-            "automatically remove its extension feed items.\n\n" +
+            "Removes the entire sitelink campaign extension setting by removing both the" +
+            " sitelink campaign extension setting itself and its associated sitelink extension " +
+            "feed items. This requires two steps, since removing the campaign extension setting " +
+            "doesn't automatically remove its extension feed items.\n\n" +
             "To make this example work with other types of extensions, find " +
             "references to 'Sitelink' and replace it with the extension type you wish to remove.";
 
@@ -70,7 +101,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// </summary>
         /// <param name="client">The Google Ads API client.</param>
         /// <param name="customerId">The Google Ads customer ID.</param>
-        /// <param name="campaignId">ID of the campaign from which sitelinks will be removed.</param>
+        /// <param name="campaignId">ID of the campaign from which sitelinks will be removed.
+        /// </param>
         // [START remove_entire_sitelink_campaign_extension_setting]
         public void Run(GoogleAdsClient client, long customerId, long campaignId)
         {
@@ -92,26 +124,27 @@ namespace Google.Ads.GoogleAds.Examples.V7
                     GetAllSitelinkExtensionFeedItems(googleAdsServiceClient, customerId,
                         campaignId);
 
-                // Create mutate operations, each of which contains an extension feed item operation
-                // to remove the specified extension feed items.
-                mutateOperations.AddRange(CreateExtensionFeedItemMutateOperations(extensionFeedItemResourceNames));
+                // Create mutate operations, each of which contains an extension feed item
+                // operation to remove the specified extension feed items.
+                mutateOperations.AddRange(CreateExtensionFeedItemMutateOperations(
+                    extensionFeedItemResourceNames));
 
-                // Issue a mutate request to remove the campaign extension setting and its extension
-                // feed items.
+                // Issue a mutate request to remove the campaign extension setting and its
+                // extension feed items.
                 MutateGoogleAdsResponse mutateGoogleAdsResponse = googleAdsServiceClient.Mutate(
                     customerId
                         .ToString(), mutateOperations);
-                RepeatedField<MutateOperationResponse> mutateOperationResponses =
+                RepeatedField<MutateOperationResponse> mutateOpResponses =
                     mutateGoogleAdsResponse.MutateOperationResponses;
 
-                // Print the information on the removed campaign extension setting and its extension
-                // feed items.
+                // Print the information on the removed campaign extension setting and its
+                // extension feed items.
                 // Each mutate operation response is returned in the same order as we passed its
                 // corresponding operation. Therefore, the first belongs to the campaign setting
                 // operation, and the rest belong to the extension feed item operations.
                 Console.WriteLine("Removed a campaign extension setting with resource name: " +
-                    $"'{mutateOperationResponses.First().CampaignExtensionSettingResult.ResourceName}'.");
-                foreach (MutateOperationResponse response in mutateOperationResponses.Skip(1))
+                    $"'{mutateOpResponses.First().CampaignExtensionSettingResult.ResourceName}'.");
+                foreach (MutateOperationResponse response in mutateOpResponses.Skip(1))
                 {
                     Console.WriteLine("Removed an extension feed item with resource name: " +
                         $"'{response.ExtensionFeedItemResult.ResourceName}'.");
@@ -169,7 +202,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// Return all sitelink extension feed items associated to the specified campaign extension
         /// setting.
         /// </summary>
-        /// <param name="googleAdsServiceClient">An initialized Google Ads API Service client.</param>
+        /// <param name="googleAdsServiceClient">An initialized Google Ads API Service client.
+        /// </param>
         /// <param name="customerId">The Google Ads customer ID.</param>
         /// <param name="campaignId">The campaign ID from which to fetch sitelink extension feed
         /// items.</param>
@@ -186,14 +220,15 @@ namespace Google.Ads.GoogleAds.Examples.V7
                   campaign_extension_setting.extension_feed_items
                 FROM campaign_extension_setting
                 WHERE
-                  campaign_extension_setting.campaign = '{ResourceNames.Campaign(customerId, campaignId)}'
+                  campaign_extension_setting.campaign = 
+                      '{ResourceNames.Campaign(customerId, campaignId)}'
                   AND campaign_extension_setting.extension_type = 'SITELINK'";
 
             // Issue a search stream request, then iterate over all responses.
             // Print out and store in a list each extension feed item's resource name.
             List<string> extensionFeedItemResourceNames = new List<string>();
             googleAdsServiceClient.SearchStream(customerId.ToString(), query,
-                delegate(SearchGoogleAdsStreamResponse resp)
+                delegate (SearchGoogleAdsStreamResponse resp)
                 {
                     foreach (GoogleAdsRow googleAdsRow in resp.Results)
                     {
@@ -229,9 +264,11 @@ namespace Google.Ads.GoogleAds.Examples.V7
         {
             return extensionFeedItemResourceNames
                 .Select(extensionFeedItemResourceName =>
-                    new ExtensionFeedItemOperation {Remove = extensionFeedItemResourceName})
+                    new ExtensionFeedItemOperation { Remove = extensionFeedItemResourceName })
                 .Select(extensionFeedItemOperation =>
-                    new MutateOperation {ExtensionFeedItemOperation = extensionFeedItemOperation})
+                    new MutateOperation {
+                        ExtensionFeedItemOperation = extensionFeedItemOperation
+                    })
                 .ToList();
         }
     }

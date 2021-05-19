@@ -12,11 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
 using System;
+using System.Collections.Generic;
 using static Google.Ads.GoogleAds.V7.Enums.BudgetDeliveryMethodEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V7
@@ -27,21 +29,53 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class GraduateCampaignExperiment : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="GraduateCampaignExperiment"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// ID of the campaign experiment to graduate.
+            /// </summary>
+            [Option("campaignExperimentId", Required = true, HelpText =
+                "ID of the campaign experiment to graduate.")]
+            public long CampaignExperimentId { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // ID of the campaign experiment to graduate.
+                    options.CampaignExperimentId =
+                        long.Parse("INSERT_CAMPAIGN_EXPERIMENT_ID_HERE");
+
+                    return 0;
+                });
+
             GraduateCampaignExperiment codeExample = new GraduateCampaignExperiment();
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // ID of the campaign experiment to graduate.
-            long campaignExperimentId = long.Parse("INSERT_CAMPAIGN_EXPERIMENT_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId, campaignExperimentId);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId,
+                options.CampaignExperimentId);
         }
 
         /// <summary>
@@ -70,8 +104,9 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 string budgetResourceName = CreateBudget(client, customerId);
 
                 // Prints out some information about the created campaign budget.
-                Console.WriteLine($"Created new budget with resource name '{budgetResourceName}' " +
-                    $"for adding to the experiment campaign during graduation.");
+                Console.WriteLine($"Created new budget with resource name " +
+                    $"'{budgetResourceName}' for adding to the experiment campaign during " +
+                    $"graduation.");
 
                 // Graduates the experiment campaign using the campaign budget created above.
                 GraduateCampaignExperimentResponse response =

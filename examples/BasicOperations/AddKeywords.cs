@@ -1,4 +1,4 @@
-﻿// Copyright 2019 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,28 +12,50 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Common;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
-
 using System;
-
+using System.Collections.Generic;
 using static Google.Ads.GoogleAds.V7.Enums.AdGroupCriterionStatusEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.KeywordMatchTypeEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
     /// <summary>
-    /// This code example demonstrates how to add keyword into an ad group.
+    /// This code example demonstrates how to add a keyword into an ad group.
     /// </summary>
     public class AddKeywords : ExampleBase
     {
         /// <summary>
-        /// The default keyword text.
+        /// Command line options for running the <see cref="AddKeywords"/> example.
         /// </summary>
-        private const string KEYWORD_TEXT = "mars cruise";
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// The ad group to which new keyword ia added.
+            /// </summary>
+            [Option("adGroupId", Required = true, HelpText =
+                "The ad group to which new keyword ia added.")]
+            public long AdGroupId { get; set; }
+
+            /// <summary>
+            /// The new keyword text.
+            /// </summary>
+            [Option("keywordText", Required = true, HelpText =
+                "The new keyword text.")]
+            public string KeywordText { get; set; }
+        }
 
         /// <summary>
         /// Main method, to run this code example as a standalone application.
@@ -41,27 +63,44 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // The ad group to which new keyword ia added.
+                    options.AdGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
+
+                    // The new keyword text.
+                    options.KeywordText = "INSERT_KEYWORD_TEXT_HERE";
+
+                    return 0;
+                });
+
             AddKeywords codeExample = new AddKeywords();
-
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // The ad group to which new keyword is added.
-            long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
-
-            // The new keyword text.
-            string keywordText = "INSERT_KEYWORD_TEXT_HERE";
-
-            codeExample.Run(new GoogleAdsClient(), customerId, adGroupId, keywordText);
+            codeExample.Run(new GoogleAdsClient(),
+                options.CustomerId,
+                options.AdGroupId,
+                options.KeywordText);
         }
+
+        /// <summary>
+        /// The default keyword text.
+        /// </summary>
+        private const string KEYWORD_TEXT = "mars cruise";
 
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description => "This code example demonstrates how to add keyword " +
-            "into an ad group.";
+        public override string Description => "This code example demonstrates how to add " +
+            "a keyword into an ad group.";
 
         /// <summary>
         /// Runs the code example.
@@ -70,7 +109,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="adGroupId">The ad group to which new keyword ia added.</param>
         /// <param name="keywordText">The new keyword text.</param>
-        public void Run(GoogleAdsClient client, long customerId, long adGroupId, string keywordText)
+        public void Run(GoogleAdsClient client, long customerId, long adGroupId,
+            string keywordText)
         {
             if (string.IsNullOrEmpty(keywordText))
             {

@@ -12,8 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using System;
-using System.Linq;
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
 using Google.Ads.GoogleAds.V7.Common;
@@ -21,11 +20,14 @@ using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
 using Google.Protobuf;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using static Google.Ads.GoogleAds.V7.Enums.AdGroupStatusEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.AssetTypeEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.CampaignStatusEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.DisplayAdFormatSettingEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.AssetTypeEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
@@ -37,30 +39,75 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class AddMerchantCenterDynamicRemarketingCampaign : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the
+        /// <see cref="AddMerchantCenterDynamicRemarketingCampaign"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// ID of the Merchant Center account to be associated with the new campaign.
+            /// </summary>
+            [Option("merchantCenterAccountId", Required = true, HelpText =
+                "ID of the Merchant Center account to be associated with the new campaign.")]
+            public long MerchantCenterAccountId { get; set; }
+
+            /// <summary>
+            /// ID of the campaign budget to be associated with the new campaign.
+            /// </summary>
+            [Option("campaignBudgetId", Required = true, HelpText =
+                "ID of the campaign budget to be associated with the new campaign.")]
+            public long CampaignBudgetId { get; set; }
+
+            /// <summary>
+            /// ID of the user list to be used for remarketing.
+            /// </summary>
+            [Option("userListId", Required = true, HelpText =
+                "ID of the user list to be used for remarketing.")]
+            public long UserListId { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // ID of the Merchant Center account to be associated with the new campaign.
+                    options.MerchantCenterAccountId =
+                        long.Parse("INSERT_MERCHANT_CENTER_ACCOUNT_ID_HERE");
+
+                    // ID of the campaign budget to be associated with the new campaign.
+                    options.CampaignBudgetId = long.Parse("INSERT_CAMPAIGN_BUDGET_ID_HERE");
+
+                    // ID of the user list to be used for remarketing.
+                    options.UserListId = long.Parse("INSERT_USER_LIST_ID_HERE");
+
+                    return 0;
+                });
+
             AddMerchantCenterDynamicRemarketingCampaign codeExample =
                 new AddMerchantCenterDynamicRemarketingCampaign();
-
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // ID of the Merchant Center account to be associated with the new campaign.
-            long merchantCenterAccountId = long.Parse("INSERT_MERCHANT_CENTER_ID_HERE");
-
-            // ID of the campaign budget to be associated with the new campaign.
-            long campaignBudgetId = long.Parse("INSERT_CAMPAIGN_BUDGET_ID_HERE");
-
-            // ID of the user list to be used for remarketing.
-            long userListId = long.Parse("INSERT_USER_LIST_ID");
-
-            codeExample.Run(new GoogleAdsClient(), customerId, merchantCenterAccountId,
-                campaignBudgetId, userListId);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId,
+                options.MerchantCenterAccountId, options.CampaignBudgetId, options.UserListId);
         }
 
         /// <summary>
@@ -160,7 +207,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
 
             // Adds the campaign.
             MutateCampaignsResponse response = campaignServiceClient.MutateCampaigns(customerId
-                .ToString(), new[] {operation});
+                .ToString(), new[] { operation });
             string campaignResourceName = response.Results.First().ResourceName;
             Console.WriteLine($"Created campaign with resource name '{campaignResourceName}'.");
             return campaignResourceName;
@@ -198,7 +245,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
 
             // Adds the ad group.
             MutateAdGroupsResponse response = adGroupServiceClient.MutateAdGroups(
-                customerId.ToString(), new[] {operation});
+                customerId.ToString(), new[] { operation });
 
             string adGroupResourceName = response.Results.First().ResourceName;
             Console.WriteLine($"Created ad group with resource name '{adGroupResourceName}'.");
@@ -294,7 +341,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             Ad ad = new Ad()
             {
                 ResponsiveDisplayAd = responsiveDisplayAdInfo,
-                FinalUrls = {"http://www.example.com/"}
+                FinalUrls = { "http://www.example.com/" }
             };
 
             // Creates the ad group ad.
@@ -312,7 +359,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
 
             // Adds the ad group ad.
             MutateAdGroupAdsResponse response = adGroupAdServiceClient.MutateAdGroupAds
-                (customerId.ToString(), new[] {operation});
+                (customerId.ToString(), new[] { operation });
             Console.WriteLine("Created ad group ad with resource name " +
                               $"'{response.Results.First().ResourceName}'.");
         }
@@ -353,7 +400,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
 
             // Adds the image asset.
             MutateAssetsResponse response = assetServiceClient.MutateAssets(customerId.ToString()
-                , new[] {operation});
+                , new[] { operation });
             string imageResourceName = response.Results.First().ResourceName;
             Console.WriteLine($"Created image asset with resource name '{imageResourceName}'.");
             return imageResourceName;
@@ -394,7 +441,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
 
             // Adds the ad group criterion.
             MutateAdGroupCriteriaResponse response = adGroupCriterionServiceClient
-                .MutateAdGroupCriteria(customerId.ToString(), new[] {operation});
+                .MutateAdGroupCriteria(customerId.ToString(), new[] { operation });
             Console.WriteLine("Created ad group criterion with resource name " +
                               $"'{response.Results.First().ResourceName}'.");
         }

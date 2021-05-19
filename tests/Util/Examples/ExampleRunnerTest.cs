@@ -20,6 +20,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 
 namespace Google.Ads.GoogleAds.Tests.Util.Examples
 {
@@ -48,29 +49,10 @@ namespace Google.Ads.GoogleAds.Tests.Util.Examples
                 },
                 delegate (string output)
                 {
-                    string[] outputs = output.Split(new char[] { '\r', '\n' },
-                        StringSplitOptions.RemoveEmptyEntries)
-                        .Select(c => c.Trim())
-                        .ToArray();
-
-                    TestExample testExample = new TestExample();
-
-                    string[] expectedOutputs = new string[] {
-                        // Version-free name.
-                        testExample.Name,
-                        new string('=', testExample.Name.Length),
-                        testExample.Description,
-                        "Usage",
-                        ExampleRunner.GetUsage(testExample).Trim(),
-
-                        // Versioned name.
-                        testExample.VersionedName,
-                        new string('=', testExample.Name.Length),
-                        testExample.Description,
-                        "Usage",
-                        ExampleRunner.GetUsage(testExample).Trim(),
-                    };
-                    Assert.That(outputs, Is.EquivalentTo(expectedOutputs));
+                    Assert.AreEqual(
+                        TestResources.UsageSummary.Replace("\r\n", "\n").Trim(), 
+                        output.Replace("\r\n", "\n").Trim()
+                    );
                 }
             );
         }
@@ -90,15 +72,17 @@ namespace Google.Ads.GoogleAds.Tests.Util.Examples
             CaptureConsoleIOAndExecute(
                 delegate ()
                 {
-                    runner.Run(TestExample.TEST_EXAMPLE_NAME, client, new string[] {
-                        $"--{TestExample.STRING_ARGS_NAME}={TestExample.STRING_ARG1}",
-                        $"--{TestExample.STRING_ARGS_NAME}={TestExample.STRING_ARG2}",
-                        $"--{TestExample.LONG_ARGS_NAME}={TestExample.LONG_ARG1}",
-                        $"--{TestExample.LONG_ARGS_NAME}={TestExample.LONG_ARG2}",
-                        $"--{TestExample.LONG_ARGS_NAME}={TestExample.LONG_ARG3}",
-                        $"--{TestExample.SINGLE_STRING_ARG_NAME}={TestExample.SINGLE_STRING_ARG}",
-                        $"--{TestExample.SINGLE_LONG_ARG_NAME}={TestExample.SINGLE_LONG_ARG}"
-                    });
+                    runner.Run(TestExample.TEST_EXAMPLE_NAME, 
+                        new string[] {
+                            $"--{TestExample.STRING_ARGS_NAME}={TestExample.STRING_ARG1}",
+                            $"{TestExample.STRING_ARG2}",
+                            $"--{TestExample.LONG_ARGS_NAME}={TestExample.LONG_ARG1}",
+                            $"{TestExample.LONG_ARG2}",
+                            $"{TestExample.LONG_ARG3}",
+                            $"--{TestExample.SINGLE_STRING_ARG_NAME}={TestExample.SINGLE_STRING_ARG}",
+                            $"--{TestExample.SINGLE_LONG_ARG_NAME}={TestExample.SINGLE_LONG_ARG}",
+                        }
+                    );
                 }, null
             );
 
@@ -110,7 +94,7 @@ namespace Google.Ads.GoogleAds.Tests.Util.Examples
                     Assert.Throws(typeof(KeyNotFoundException),
                         delegate ()
                         {
-                            runner.Run("V1.NoSuchExample", client, new string[] { });
+                            runner.Run("V1.NoSuchExample", new string[] { });
                         }
                     );
                 }, null
@@ -124,22 +108,23 @@ namespace Google.Ads.GoogleAds.Tests.Util.Examples
                     Assert.Throws(typeof(MissingMethodException),
                         delegate ()
                         {
-                            runner.Run(NoRunTestExample.TEST_EXAMPLE_NAME, client,
-                                new string[] { });
+                            runner.Run(NoRunTestExample.TEST_EXAMPLE_NAME, new string[] { });
                         }
                     );
                 }, null
             );
 
-            // Verify that a ArgumentException is thrown if an unknown flag is passed.
+            // If an unknown flag is passed, then the example may choose to handle it in the Main()
+            // method by expecting a substution of INSERT_XXX_ parameters. If that succeeds, no
+            // error may be raised. If it isn't, the exception will be thrown, with the site of
+            // failure as the Main() method.
             CaptureConsoleIOAndExecute(
                 delegate ()
                 {
                     Assert.Throws(typeof(ArgumentException),
                         delegate ()
                         {
-                            runner.Run(TestExample.TEST_EXAMPLE_NAME, client,
-                                new string[] { "--foo=bar" });
+                            runner.Run(TestExample.TEST_EXAMPLE_NAME, new string[] { "--foo=bar" });
                         }
                     );
                 }, null

@@ -12,13 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using System;
-using System.Linq;
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Common;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using static Google.Ads.GoogleAds.V7.Enums.UserListMembershipStatusEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.UserListPrepopulationStatusEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.UserListStringRuleItemOperatorEnum.Types;
@@ -32,18 +34,41 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class AddExpressionRuleUserList : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="AddExpressionRuleUserList"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID to which the new user list will be added.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID to which the new user list will be added.")]
+            public long CustomerId { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID to which the new user list will be added.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    return 0;
+                });
+
             AddExpressionRuleUserList codeExample = new AddExpressionRuleUserList();
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId);
         }
 
         /// <summary>
@@ -119,7 +144,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             {
                 // Adds the user list.
                 MutateUserListsResponse response = userListServiceClient.MutateUserLists
-                    (customerId.ToString(), new[] {operation});
+                    (customerId.ToString(), new[] { operation });
 
                 // Displays the results.
                 Console.WriteLine("Created new user list with resource name: " +

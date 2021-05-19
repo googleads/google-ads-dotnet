@@ -117,29 +117,22 @@ namespace Google.Ads.GoogleAds.Examples
                 return 2;
             }
 
-            GoogleAdsClient session = new GoogleAdsClient();
             string exampleName = args[0];
             try
             {
-                // Optional: Turn on profiling to see how long an API call takes.
-                // runner.RunWithProfiling(exampleName, session, args);
-                runner.Run(exampleName, session, args.Skip(1));
+                runner.Run(exampleName, args.Skip(1));
                 return 0;
             }
-            catch (TargetInvocationException)
+            catch (Exception e) when (e is KeyNotFoundException || e is ArgumentException)
+            {
+                // Bad command line parameter.
+                ShowUsage(runner);
+                return 2;
+            }
+            catch
             {
                 // Indicates a failure due to an unhandled exception.
                 return 1;
-            }
-            catch (Exception e) when (e is KeyNotFoundException || e is ArgumentException ||
-               e is TargetParameterCountException)
-            {
-                // Bad command line parameter.
-                // Note: There are a couple more exceptions that the runner may throw, but all
-                // those indicate a failure with the runner implementation than a code example
-                // failure.
-                ShowUsage(runner);
-                return 2;
             }
         }
 

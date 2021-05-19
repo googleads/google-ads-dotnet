@@ -12,12 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using System;
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Common;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
+using System;
+using System.Collections.Generic;
 
 namespace Google.Ads.GoogleAds.Examples.V7
 {
@@ -28,23 +30,53 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class GetCampaignCriterionBidModifierSimulations : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="GetCampaignCriterionBidModifierSimulations"/>
+        /// example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// The campaign ID to get the criterion bid modifier simulations.
+            /// </summary>
+            [Option("campaignId", Required = true, HelpText =
+                "The campaign ID to get the criterion bid modifier simulations.")]
+            public long CampaignId { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // The campaign ID to get the criterion bid modifier simulations.
+                    options.CampaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
+
+                    return 0;
+                });
+
             GetCampaignCriterionBidModifierSimulations codeExample =
                 new GetCampaignCriterionBidModifierSimulations();
-
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // The campaign ID from which to get the criterion bid modifier simulations.
-            long campaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId, campaignId);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.CampaignId);
         }
 
         /// <summary>
@@ -82,7 +114,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             {
                 // Issue a search request.
                 googleAdsService.SearchStream(customerId.ToString(), query,
-                    delegate(SearchGoogleAdsStreamResponse response)
+                    delegate (SearchGoogleAdsStreamResponse response)
                     {
                         // Iterates over all rows in all messages and prints the requested field
                         // values for the campaign criterion bid modifier simulation in each row.

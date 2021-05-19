@@ -1,4 +1,4 @@
-﻿// Copyright 2020 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
 using Google.Ads.GoogleAds.V7.Errors;
@@ -19,6 +20,7 @@ using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
 using Google.Protobuf;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using static Google.Ads.GoogleAds.V7.Enums.MediaTypeEnum.Types;
 
@@ -30,9 +32,17 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class UploadMediaBundle : ExampleBase
     {
         /// <summary>
-        /// The asset bundle to upload.
+        /// Command line options for running the <see cref="UploadMediaBundle"/> example.
         /// </summary>
-        private const string BUNDLE_URL = "https://goo.gl/9Y7qI2";
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+        }
 
         /// <summary>
         /// Main method, to run this code example as a standalone application.
@@ -40,14 +50,29 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    return 0;
+                });
+
             UploadMediaBundle codeExample = new UploadMediaBundle();
             Console.WriteLine(codeExample.Description);
-
-            // The customer ID for which the call is made.
-            int customerId = int.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId);
         }
+
+        /// <summary>
+        /// The asset bundle to upload.
+        /// </summary>
+        private const string BUNDLE_URL = "https://goo.gl/9Y7qI2";
 
         /// <summary>
         /// Returns a description about the code example.
@@ -63,7 +88,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
         public void Run(GoogleAdsClient client, long customerId)
         {
             // Get the MediaFileServiceClient.
-            MediaFileServiceClient mediaFileService = client.GetService(Services.V7.MediaFileService);
+            MediaFileServiceClient mediaFileService = client.GetService(
+                Services.V7.MediaFileService);
 
             // Creates an HTML5 zip file media bundle content.
             byte[] bundleContent = MediaUtilities.GetAssetDataFromUrl(BUNDLE_URL, client.Config);

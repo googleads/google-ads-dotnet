@@ -215,5 +215,18 @@ namespace Google.Ads.GoogleAds.Tests {
                 return ResourceManager.GetString("SummarySuccessLog", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to V0.TestExample | TestExample stringArgs=&lt;stringArgs&gt; longArgs=&lt;longArgs&gt; singleStringArg=&lt;singleStringArg&gt; singleLongArg=&lt;singleLongArg&gt;
+        ///[Required] stringArgs: Array of strings
+        ///[Required] longArgs: Array of longs
+        ///[Required] singleStringArg: Single string
+        ///[Required] singleLongArg: Single long.
+        /// </summary>
+        internal static string UsageSummary {
+            get {
+                return ResourceManager.GetString("UsageSummary", resourceCulture);
+            }
+        }
     }
 }

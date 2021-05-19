@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Common;
 using Google.Ads.GoogleAds.V7.Errors;
@@ -19,7 +20,6 @@ using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using static Google.Ads.GoogleAds.V7.Enums.AdGroupAdStatusEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V7
@@ -32,29 +32,53 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class HandleExpandedTextAdPolicyViolations : ExampleBase
     {
         /// <summary>
+        /// Command line options for running the <see cref="HandleExpandedTextAdPolicyViolations"/>
+        /// example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// ID of the ad group to which ads are added.
+            /// </summary>
+            [Option("adGroupId", Required = true, HelpText =
+                "ID of the ad group to which ads are added.")]
+            public long AdGroupId { get; set; }
+        }
+
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // ID of the ad group to which ads are added.
+                    options.AdGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
+
+                    return 0;
+                });
+
             HandleExpandedTextAdPolicyViolations codeExample =
                 new HandleExpandedTextAdPolicyViolations();
             Console.WriteLine(codeExample.Description);
-            try
-            {
-                // The Google Ads customer ID for which the call is made.
-                long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                // ID of the ad group to which ads are added.
-                long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
-
-                codeExample.Run(new GoogleAdsClient(), customerId, adGroupId);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("An exception occurred while running this code example. {0}",
-                    ExampleUtilities.FormatException(e));
-            }
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.AdGroupId);
         }
 
         /// <summary>
@@ -115,7 +139,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 try
                 {
                     // Try sending a mutate request to add the ad group ad.
-                    adGroupAdService.MutateAdGroupAds(customerId.ToString(), new [] { operation });
+                    adGroupAdService.MutateAdGroupAds(customerId.ToString(), new[] { operation });
                 }
                 catch (GoogleAdsException ex)
                 {

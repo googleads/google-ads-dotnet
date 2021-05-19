@@ -12,12 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
 using Google.Api.Gax;
 using System;
+using System.Collections.Generic;
 using static Google.Ads.GoogleAds.V7.Resources.AdGroupBidModifier;
 
 namespace Google.Ads.GoogleAds.Examples.V7
@@ -28,9 +30,24 @@ namespace Google.Ads.GoogleAds.Examples.V7
     public class GetAdGroupBidModifiers : ExampleBase
     {
         /// <summary>
-        /// The page size to be used by default.
+        /// Command line options for running the <see cref="GetAdGroupBidModifiers"/> example.
         /// </summary>
-        private const int PAGE_SIZE = 1_000;
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// The ad group ID for which ad group bid modiifers will be retrieved.
+            /// </summary>
+            [Option("adGroupId", Required = false, HelpText =
+                "The ad group ID for which ad group bid modiifers will be retrieved.")]
+            public long? AdGroupId { get; set; }
+        }
 
         /// <summary>
         /// Main method, to run this code example as a standalone application.
@@ -38,17 +55,32 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // The ad group ID for which ad group bid modiifers will be retrieved.
+                    options.AdGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
+
+                    return 0;
+                });
+
             GetAdGroupBidModifiers codeExample = new GetAdGroupBidModifiers();
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // The ad group ID for which ad group bid modiifers will be retrieved.
-            long adGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId, adGroupId);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.AdGroupId);
         }
+
+        /// <summary>
+        /// The page size to be used by default.
+        /// </summary>
+        private const int PAGE_SIZE = 1_000;
 
         /// <summary>
         /// Returns a description about the code example.
@@ -110,55 +142,55 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 // the ad group bid modifiers in each row.
                 foreach (GoogleAdsRow googleAdsRow in searchPagedResponse)
                 {
-                    AdGroupBidModifier adGroupBidModifier = googleAdsRow.AdGroupBidModifier;
+                    AdGroupBidModifier agBidModifier = googleAdsRow.AdGroupBidModifier;
                     AdGroup adGroup = googleAdsRow.AdGroup;
                     Campaign campaign = googleAdsRow.Campaign;
                     Console.WriteLine("Ad group bid modifier with criterion ID {0}, bid " +
                         "modifier value {1:0.00} was found in an ad group with ID {2} of " +
                         "campaign ID {3}.",
-                        adGroupBidModifier.CriterionId,
-                        adGroupBidModifier.BidModifier,
+                        agBidModifier.CriterionId,
+                        agBidModifier.BidModifier,
                         adGroup.Id, campaign.Id);
 
                     string criterionDetails = "  - Criterion type: " +
-                        $"{adGroupBidModifier.CriterionCase}, ";
-                    switch (adGroupBidModifier.CriterionCase)
+                        $"{agBidModifier.CriterionCase}, ";
+                    switch (agBidModifier.CriterionCase)
                     {
                         case CriterionOneofCase.Device:
-                            criterionDetails += $"Type: {adGroupBidModifier.Device.Type}";
+                            criterionDetails += $"Type: {agBidModifier.Device.Type}";
                             break;
 
                         case CriterionOneofCase.HotelAdvanceBookingWindow:
                             criterionDetails +=
-                                $"Min Days: {adGroupBidModifier.HotelAdvanceBookingWindow.MinDays}," +
-                                $"Max Days: {adGroupBidModifier.HotelAdvanceBookingWindow.MaxDays}";
+                                $"Min Days: {agBidModifier.HotelAdvanceBookingWindow.MinDays}," +
+                                $"Max Days: {agBidModifier.HotelAdvanceBookingWindow.MaxDays}";
                             break;
 
                         case CriterionOneofCase.HotelCheckInDay:
                             criterionDetails += $"Day of the week: " +
-                                $"{adGroupBidModifier.HotelCheckInDay.DayOfWeek}";
+                                $"{agBidModifier.HotelCheckInDay.DayOfWeek}";
                             break;
 
                         case CriterionOneofCase.HotelDateSelectionType:
                             criterionDetails += $"Date selection type: " +
-                                $"{adGroupBidModifier.HotelDateSelectionType.Type}";
+                                $"{agBidModifier.HotelDateSelectionType.Type}";
                             break;
 
                         case CriterionOneofCase.HotelLengthOfStay:
                             criterionDetails +=
-                                $"Min Nights: {adGroupBidModifier.HotelLengthOfStay.MinNights}," +
-                                $"Max Nights: {adGroupBidModifier.HotelLengthOfStay.MaxNights}";
+                                $"Min Nights: {agBidModifier.HotelLengthOfStay.MinNights}," +
+                                $"Max Nights: {agBidModifier.HotelLengthOfStay.MaxNights}";
                             break;
 
                         case CriterionOneofCase.HotelCheckInDateRange:
                             criterionDetails +=
-                                $"Start Date: {adGroupBidModifier.HotelCheckInDateRange.StartDate}," +
-                                $"End Date: {adGroupBidModifier.HotelCheckInDateRange.EndDate}";
+                                $"Start Date: {agBidModifier.HotelCheckInDateRange.StartDate}," +
+                                $"End Date: {agBidModifier.HotelCheckInDateRange.EndDate}";
                             break;
 
                         case CriterionOneofCase.PreferredContent:
                             criterionDetails +=
-                                $"Type: {adGroupBidModifier.PreferredContent.Type}";
+                                $"Type: {agBidModifier.PreferredContent.Type}";
                             break;
                     }
                     Console.WriteLine(criterionDetails);

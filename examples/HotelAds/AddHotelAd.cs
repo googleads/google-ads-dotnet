@@ -1,4 +1,4 @@
-﻿// Copyright 2019 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,13 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Common;
+using Google.Ads.GoogleAds.V7.Errors;
 using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
-
 using System;
+using System.Collections.Generic;
 using static Google.Ads.GoogleAds.V7.Enums.AdGroupAdStatusEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.AdGroupStatusEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.AdGroupTypeEnum.Types;
@@ -38,9 +39,39 @@ namespace Google.Ads.GoogleAds.Examples.V7
     /// </summary>
     public class AddHotelAd : ExampleBase
     {
-        // Specify maximum bid limit that can be set when creating a campaign using the Percent CPC
-        // bidding strategy.
-        private const long CPC_BID_CEILING_MICRO_AMOUNT = 20000000;
+        /// <summary>
+        /// Command line options for running the <see cref="AddHotelAd"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// The Hotels account ID. You can see how to find the account ID
+            /// in the Hotel Ads Center at: https://support.google.com/hotelprices/answer/6399770.
+            /// This ID is the same account ID that you use in API requests to the Travel
+            /// Partner APIs (https://developers.google.com/hotels/hotel-ads/api-reference/).
+            /// </summary>
+            [Option("hotelCenterAccountId", Required = true, HelpText =
+                "The Hotels account ID. You can see how to find the account ID in the Hotel Ads " +
+                "Center at: https://support.google.com/hotelprices/answer/6399770. This ID is " +
+                "the same account ID that you use in API requests to the Travel Partner APIs " +
+                "(https://developers.google.com/hotels/hotel-ads/api-reference/).")]
+            public long HotelCenterAccountId { get; set; }
+
+            /// <summary>
+            /// The CPC bid ceiling micro amount.
+            /// </summary>
+            [Option("cpcBidCeilingMicroAmount", Required = false, HelpText =
+                "The maximum bid limit that can be set when creating a campaign using the Percent" +
+                " CPC bidding strategy.", Default = CPC_BID_CEILING_MICRO_AMOUNT)]
+            public long CpcBidCeilingMicroAmount { get; set; }
+        }
 
         /// <summary>
         /// Main method, to run this code example as a standalone application.
@@ -48,31 +79,48 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // Specify your Hotels account ID below. You can see how to find the account ID
+                    // in the Hotel Ads Center at: https://support.google.com/hotelprices/answer/6399770.
+                    // This ID is the same account ID that you use in API requests to the Travel
+                    // Partner APIs (https://developers.google.com/hotels/hotel-ads/api-reference/).
+                    options.HotelCenterAccountId =
+                        long.Parse("INSERT_HOTEL_CENTER_ACCOUNT_ID_HERE");
+
+                    // Optional: Specify the maximum bid limit that can be set when creating a
+                    // campaign using the Percent CPC bidding strategy.
+                    long? cpcBidCeilingMicroAmount = CPC_BID_CEILING_MICRO_AMOUNT;
+
+                    long tempVal = 0;
+                    if (long.TryParse("INSERT_CPC_BID_CEILING_MICRO_AMOUNT", out tempVal))
+                    {
+                        cpcBidCeilingMicroAmount = tempVal;
+                    }
+
+                    options.CpcBidCeilingMicroAmount = cpcBidCeilingMicroAmount.Value;
+
+                    return 0;
+                });
+
             AddHotelAd codeExample = new AddHotelAd();
             Console.WriteLine(codeExample.Description);
-
-            // The customer ID for which the call is made.
-            int customerId = int.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            // Optional: Specify the maximum bid limit that can be set when creating a campaign
-            // using the Percent CPC bidding strategy.
-            long? cpcBidCeilingMicroAmount = CPC_BID_CEILING_MICRO_AMOUNT;
-
-            long tempVal = 0;
-            if (long.TryParse("INSERT_CPC_BID_CEILING_MICRO_AMOUNT", out tempVal))
-            {
-                cpcBidCeilingMicroAmount = tempVal;
-            }
-
-            // Specify your Hotels account ID below. You can see how to find the account ID in the
-            // Hotel Ads Center at: https://support.google.com/hotelprices/answer/6399770.
-            // This ID is the same account ID that you use in API requests to the Travel Partner
-            // APIs (https://developers.google.com/hotels/hotel-ads/api-reference/).
-            int hotelCenterAccountId = int.Parse("INSERT_HOTEL_CENTER_ACCOUNT_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId, hotelCenterAccountId,
-                cpcBidCeilingMicroAmount.Value);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId,
+                options.HotelCenterAccountId, options.CpcBidCeilingMicroAmount);
         }
+
+        // Specify maximum bid limit that can be set when creating a campaign using the Percent CPC
+        // bidding strategy.
+        private const long CPC_BID_CEILING_MICRO_AMOUNT = 20000000;
 
         /// <summary>
         /// Returns a description about the code example.

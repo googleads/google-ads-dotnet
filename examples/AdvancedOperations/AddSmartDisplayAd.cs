@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
 using Google.Ads.GoogleAds.V7.Common;
@@ -21,6 +22,7 @@ using Google.Ads.GoogleAds.V7.Resources;
 using Google.Ads.GoogleAds.V7.Services;
 using Google.Protobuf;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using static Google.Ads.GoogleAds.V7.Enums.AdGroupAdStatusEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.AdvertisingChannelSubTypeEnum.Types;
@@ -40,12 +42,18 @@ namespace Google.Ads.GoogleAds.Examples.V7
     /// </summary>
     public class AddSmartDisplayAd : ExampleBase
     {
-        private const string MARKETING_IMAGE_URL = "https://goo.gl/3b9Wfh";
-        private const int MARKETING_IMAGE_WIDTH = 600;
-        private const int MARKETING_IMAGE_HEIGHT = 315;
-
-        private const string SQUARE_MARKETING_IMAGE_URL = "https://goo.gl/mtt54n";
-        private const int SQUARE_MARKETING_IMAGE_SIZE = 512;
+        /// <summary>
+        /// Command line options for running the <see cref="AddSmartDisplayAd"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+        }
 
         /// <summary>
         /// Main method, to run this code example as a standalone application.
@@ -53,14 +61,31 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    return 0;
+                });
+
             AddSmartDisplayAd codeExample = new AddSmartDisplayAd();
             Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId);
         }
+
+        private const string MARKETING_IMAGE_URL = "https://goo.gl/3b9Wfh";
+        private const int MARKETING_IMAGE_WIDTH = 600;
+        private const int MARKETING_IMAGE_HEIGHT = 315;
+
+        private const string SQUARE_MARKETING_IMAGE_URL = "https://goo.gl/mtt54n";
+        private const int SQUARE_MARKETING_IMAGE_SIZE = 512;
 
         /// <summary>
         /// Returns a description about the code example.
@@ -136,7 +161,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
             string budgetResourceName = response.Results.First().ResourceName;
 
             // Print out some information about the added budget.
-            Console.WriteLine($"Added campaign budget with resource name = '{budgetResourceName}'.");
+            Console.WriteLine($"Added campaign budget with resource name =" +
+                $" '{budgetResourceName}'.");
 
             return budgetResourceName;
         }
