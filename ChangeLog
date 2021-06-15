@@ -1,3 +1,17 @@
+9.0.0
+=====
+- Removed support for version v5 of the Google Ads API.
+- Added support for version v8 of the Google Ads API.
+- Updated all code examples to use CommandLineParser library. Fixes https://github.com/googleads/google-ads-dotnet/issues/241.
+- Convert the grpc channel settings from constants to configurable settings. Fixes https://github.com/googleads/google-ads-dotnet/issues/285.
+- Add support for enums in FieldMasks.AllSetFieldsOf. Fixes https://github.com/googleads/google-ads-dotnet/issues/289.
+- Added new code examples
+  - UseCrossAccountBiddingStrategy.cs
+  - AddSmartCampaign.cs
+- Updated UploadStoreSalesTransactions.cs code example.
+- Converted AuthenticateInDesktopApplication into a nuget tool. Fixes https://github.com/googleads/google-ads-dotnet/issues/164.
+- Marked a couple of tests as non-parallelizable to fix flakiness.
+
 8.0.0
 =====
 - Removed support for v4 of the API. See https://ads-developers.googleblog.com/2021/04/google-ads-api-v4-and-v5-sunset-reminder.html for details.

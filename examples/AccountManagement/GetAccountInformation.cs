@@ -14,13 +14,13 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V7.Errors;
-using Google.Ads.GoogleAds.V7.Resources;
-using Google.Ads.GoogleAds.V7.Services;
+using Google.Ads.GoogleAds.V8.Errors;
+using Google.Ads.GoogleAds.V8.Resources;
+using Google.Ads.GoogleAds.V8.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V7
+namespace Google.Ads.GoogleAds.Examples.V8
 {
     /// <summary>
     /// This code example lists basic information about an advertising account, like the name,
@@ -82,7 +82,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         public void Run(GoogleAdsClient client, long customerId)
         {
             // Get the CustomerService.
-            CustomerServiceClient customerService = client.GetService(Services.V7.CustomerService);
+            CustomerServiceClient customerService = client.GetService(Services.V8.CustomerService);
 
             try
             {

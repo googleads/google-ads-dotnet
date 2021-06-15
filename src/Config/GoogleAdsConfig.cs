@@ -41,6 +41,19 @@ namespace Google.Ads.GoogleAds.Config
         private static readonly int DEFAULT_TIMEOUT = (int) new TimeSpan(1, 0, 0).TotalMilliseconds;
 
         /// <summary>
+        /// Default value of the maximum size in bytes of the message that can be received by the
+        /// service client (64 MB).
+        /// </summary>
+        private const int DEFAULT_MAX_RECEIVE_MESSAGE_LENGTH_IN_BYTES = 64 * 1024 * 1024;
+
+        /// <summary>
+        /// Default value for the maximum size in bytes of the metadata that can be received by the
+        /// service client (16 MB).
+        /// </summary>
+        private const int DEFAULT_MAX_METADATA_SIZE_IN_BYTES = 16 * 1024 * 1024;
+
+
+        /// <summary>
         /// The default value of OAuth2 server URL.
         /// </summary>
         private const string DEFAULT_OAUTH2_SERVER = "https://accounts.google.com";
@@ -178,6 +191,21 @@ namespace Google.Ads.GoogleAds.Config
             new ConfigSetting<bool>("UseChannelCache", true);
 
         /// <summary>
+        /// The maximum message length in bytes that the client library can receive (64 MB).
+        /// </summary>
+        private ConfigSetting<int> maxReceiveMessageLengthInBytes =
+            new ConfigSetting<int>("MaxReceiveMessageLengthInBytes",
+                DEFAULT_MAX_RECEIVE_MESSAGE_LENGTH_IN_BYTES);
+
+        /// <summary>
+        /// The maximum size in bytes of the metadata that can be received by the
+        /// service client.
+        /// </summary>
+        private ConfigSetting<int> maxMetadataSizeInBytes =
+            new ConfigSetting<int>("MaxMetadataSizeInBytes",
+                DEFAULT_MAX_METADATA_SIZE_IN_BYTES);
+
+        /// <summary>
         /// Web proxy to be used with the services.
         /// </summary>
         private ConfigSetting<WebProxy> proxy = new ConfigSetting<WebProxy>("Proxy", null);
@@ -231,6 +259,26 @@ namespace Google.Ads.GoogleAds.Config
         {
             get => timeout.Value;
             set => SetPropertyAndNotify(timeout, value);
+        }
+
+        /// <summary>
+        /// Gets or sets the maximum size in bytes of the message that can be received by the
+        /// service client.
+        /// </summary>
+        public int MaxReceiveMessageSizeInBytes
+        {
+            get => maxReceiveMessageLengthInBytes.Value;
+            set => SetPropertyAndNotify(maxReceiveMessageLengthInBytes, value);
+        }
+
+        /// <summary>
+        /// Gets or sets the maximum size in bytes of the metadata that can be received by the
+        /// service client.
+        /// </summary>
+        public int MaxMetadataSizeInBytes
+        {
+            get => maxMetadataSizeInBytes.Value;
+            set => SetPropertyAndNotify(maxMetadataSizeInBytes, value);
         }
 
         /// <summary>
@@ -591,6 +639,8 @@ namespace Google.Ads.GoogleAds.Config
         protected override void ReadSettings(Dictionary<string, string> settings)
         {
             ReadSetting(settings, timeout);
+            ReadSetting(settings, maxReceiveMessageLengthInBytes);
+            ReadSetting(settings, maxMetadataSizeInBytes);
             ReadSetting(settings, serverUrl);
             ReadSetting(settings, developerToken);
             ReadSetting(settings, loginCustomerId);

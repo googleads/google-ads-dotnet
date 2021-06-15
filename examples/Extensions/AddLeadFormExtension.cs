@@ -14,18 +14,18 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V7.Common;
-using Google.Ads.GoogleAds.V7.Enums;
-using Google.Ads.GoogleAds.V7.Errors;
-using Google.Ads.GoogleAds.V7.Resources;
-using Google.Ads.GoogleAds.V7.Services;
+using Google.Ads.GoogleAds.V8.Common;
+using Google.Ads.GoogleAds.V8.Enums;
+using Google.Ads.GoogleAds.V8.Errors;
+using Google.Ads.GoogleAds.V8.Resources;
+using Google.Ads.GoogleAds.V8.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V7.Enums.LeadFormCallToActionTypeEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.LeadFormFieldUserInputTypeEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.LeadFormPostSubmitCallToActionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V8.Enums.LeadFormCallToActionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V8.Enums.LeadFormFieldUserInputTypeEnum.Types;
+using static Google.Ads.GoogleAds.V8.Enums.LeadFormPostSubmitCallToActionTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V7
+namespace Google.Ads.GoogleAds.Examples.V8
 {
     /// <summary>
     /// This code example creates a lead form and a lead form extension for a campaign. Run
@@ -130,7 +130,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             long campaignId, string leadFormAssetResourceName)
         {
             CampaignAssetServiceClient campaignAssetService = client.GetService(
-                Services.V7.CampaignAssetService);
+                Services.V8.CampaignAssetService);
 
             // Creates the campaign asset for the lead form.
             CampaignAsset campaignAsset = new CampaignAsset()
@@ -165,7 +165,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         // [START add_lead_form_extension]
         private string CreateLeadFormAsset(GoogleAdsClient client, long customerId)
         {
-            AssetServiceClient assetService = client.GetService(Services.V7.AssetService);
+            AssetServiceClient assetService = client.GetService(Services.V8.AssetService);
 
             // Creates the lead form asset.
             Asset leadFormAsset = new Asset()

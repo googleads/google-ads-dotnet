@@ -14,16 +14,16 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V7.Errors;
-using Google.Ads.GoogleAds.V7.Resources;
-using Google.Ads.GoogleAds.V7.Services;
+using Google.Ads.GoogleAds.V8.Errors;
+using Google.Ads.GoogleAds.V8.Resources;
+using Google.Ads.GoogleAds.V8.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V7.Enums.ConversionActionCategoryEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.ConversionActionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.ConversionActionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V8.Enums.ConversionActionCategoryEnum.Types;
+using static Google.Ads.GoogleAds.V8.Enums.ConversionActionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V8.Enums.ConversionActionTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V7
+namespace Google.Ads.GoogleAds.Examples.V8
 {
     /// <summary>
     /// This code example illustrates adding a conversion action.
@@ -69,21 +69,6 @@ namespace Google.Ads.GoogleAds.Examples.V7
         }
 
         /// <summary>
-        /// Main method, to run this code example as a standalone application.
-        /// </summary>
-        /// <param name="args">The command line arguments.</param>
-        public static void __Main(string[] args)
-        {
-            AddConversionAction codeExample = new AddConversionAction();
-            Console.WriteLine(codeExample.Description);
-
-            // The Google Ads customer ID for which the call is made.
-            long customerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-            codeExample.Run(new GoogleAdsClient(), customerId);
-        }
-
-        /// <summary>
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
@@ -100,7 +85,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         {
             // Get the ConversionActionService.
             ConversionActionServiceClient conversionActionService =
-                client.GetService(Services.V7.ConversionActionService);
+                client.GetService(Services.V8.ConversionActionService);
 
             // Add a conversion action.
             ConversionAction conversionAction = new ConversionAction()

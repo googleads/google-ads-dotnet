@@ -291,6 +291,15 @@ namespace Google.Ads.GoogleAds.Util
                             mask.Paths.Add(name);
                         }
                     }
+                    else if (field.FieldType == FieldType.Enum)
+                    {
+                        // Add a field mask only if there is a non-default value.
+                        var defaultValue = System.Enum.ToObject(field.EnumType.ClrType, 0);
+                        if (!Equals(defaultValue, value))
+                        {
+                            mask.Paths.Add(name);
+                        }
+                    }
                 }
             }
 

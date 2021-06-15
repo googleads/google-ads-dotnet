@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V7.Common;
-using Google.Ads.GoogleAds.V7.Errors;
-using Google.Ads.GoogleAds.V7.Resources;
-using Google.Ads.GoogleAds.V7.Services;
+using Google.Ads.GoogleAds.V8.Common;
+using Google.Ads.GoogleAds.V8.Errors;
+using Google.Ads.GoogleAds.V8.Resources;
+using Google.Ads.GoogleAds.V8.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Google.Ads.GoogleAds.Examples.V7
+namespace Google.Ads.GoogleAds.Examples.V8
 {
     /// <summary>
     /// Updates the sitelink extension feed item with the specified link text.
@@ -108,7 +108,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         {
             // Get the ExtensionFeedItemService.
             ExtensionFeedItemServiceClient extensionFeedItemService =
-                client.GetService(Services.V7.ExtensionFeedItemService);
+                client.GetService(Services.V8.ExtensionFeedItemService);
 
             // Create an extension feed item using the specified feed item ID and sitelink text.
             ExtensionFeedItem extensionFeedItem = new ExtensionFeedItem
