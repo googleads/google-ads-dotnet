@@ -14,14 +14,14 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V7.Errors;
-using Google.Ads.GoogleAds.V7.Resources;
-using Google.Ads.GoogleAds.V7.Services;
+using Google.Ads.GoogleAds.V8.Errors;
+using Google.Ads.GoogleAds.V8.Resources;
+using Google.Ads.GoogleAds.V8.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V7.Resources.AccountBudget;
+using static Google.Ads.GoogleAds.V8.Resources.AccountBudget;
 
-namespace Google.Ads.GoogleAds.Examples.V7
+namespace Google.Ads.GoogleAds.Examples.V8
 {
     /// <summary>
     /// This example retrieves all account budgets for a Google Ads customer.
@@ -81,7 +81,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         {
             // Get the GoogleAdsServiceClient.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V7.GoogleAdsService);
+                Services.V8.GoogleAdsService);
 
             // Construct a GAQL query which will retrieve AccountBudgetProposals.
             String query =

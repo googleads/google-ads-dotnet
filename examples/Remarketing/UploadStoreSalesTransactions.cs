@@ -12,21 +12,21 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using CommandLine;
-using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V7.Common;
-using Google.Ads.GoogleAds.V7.Errors;
-using Google.Ads.GoogleAds.V7.Resources;
-using Google.Ads.GoogleAds.V7.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using static Google.Ads.GoogleAds.V7.Enums.OfflineUserDataJobStatusEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.OfflineUserDataJobTypeEnum.Types;
+using CommandLine;
+using Google.Ads.GoogleAds.Lib;
+using Google.Ads.GoogleAds.V8.Common;
+using Google.Ads.GoogleAds.V8.Errors;
+using Google.Ads.GoogleAds.V8.Resources;
+using Google.Ads.GoogleAds.V8.Services;
+using static Google.Ads.GoogleAds.V8.Enums.OfflineUserDataJobStatusEnum.Types;
+using static Google.Ads.GoogleAds.V8.Enums.OfflineUserDataJobTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V7
+namespace Google.Ads.GoogleAds.Examples.V8
 {
     /// <summary>
     /// This code example uploads offline data for store sales transactions.
@@ -59,51 +59,113 @@ namespace Google.Ads.GoogleAds.Examples.V7
             /// store sales partnership with Google, use StoreSalesUploadThirdParty. Otherwise,
             /// use StoreSalesUploadFirstParty or omit this parameter.
             /// </summary>
-            [Option("offlineUserDataJobType", Required = true, HelpText =
-                "The type of user data in the job (first or third party). If you have an" +
-                " official store sales partnership with Google, use StoreSalesUploadThirdParty." +
-                " Otherwise, use StoreSalesUploadFirstParty or omit this parameter.")]
+            [Option("offlineUserDataJobType", Required = false, HelpText =
+                    "The type of user data in the job (first or third party). If you have an" +
+                    " official store sales partnership with Google, use " +
+                    "StoreSalesUploadThirdParty. Otherwise, use StoreSalesUploadFirstParty or " +
+                    "omit this parameter.",
+                Default = OfflineUserDataJobType.StoreSalesUploadFirstParty)]
             public OfflineUserDataJobType OfflineUserDataJobType { get; set; }
 
             /// <summary>
             /// Optional (but recommended) external ID to identify the offline user data job.
             /// </summary>
-            [Option("externalId", Required = true, HelpText =
-                "Optional (but recommended) external ID to identify the offline user data job.")]
+            [Option("externalId", Required = false, HelpText =
+                    "Optional (but recommended) external ID to identify the offline user data job.",
+                Default = null)]
             public long? ExternalId { get; set; }
 
             /// <summary>
             /// Date and time the advertiser uploaded data to the partner. Only required if
             /// uploading third party data.
             /// </summary>
-            [Option("advertiserUploadDateTime", Required = true, HelpText =
+            [Option("advertiserUploadDateTime", Required = false, HelpText =
                 "Date and time the advertiser uploaded data to the partner. Only required if " +
-                "uploading third party data.")]
+                "uploading third party data.", Default = null)]
             public string AdvertiserUploadDateTime { get; set; }
 
             /// <summary>
             /// Version of partner IDs to be used for uploads. Only required if uploading third
             /// party data.
             /// </summary>
-            [Option("bridgeMapVersionId", Required = true, HelpText =
+            [Option("bridgeMapVersionId", Required = false, HelpText =
                 "Version of partner IDs to be used for uploads. Only required if uploading " +
-                "third party data.")]
+                "third party data.", Default = null)]
             public string BridgeMapVersionId { get; set; }
 
             /// <summary>
             /// ID of the third party partner. Only required if uploading third party data.
             /// </summary>
-            [Option("partnerId", Required = true, HelpText =
-                "ID of the third party partner. Only required if uploading third party data.")]
+            [Option("partnerId", Required = false, HelpText =
+                    "ID of the third party partner. Only required if uploading third party data.",
+                Default = null)]
             public long? PartnerId { get; set; }
 
             /// <summary>
-            /// Optional custom key name. Only required if uploading data with custom key and values.
+            /// Optional custom key name. Only required if uploading data with custom key and
+            /// values.
             /// </summary>
-            [Option("customKey", Required = true, HelpText =
+            [Option("customKey", Required = false, HelpText =
                 "Optional custom key name. Only required if uploading data with custom key and" +
-                " values.")]
+                " values.", Default = null)]
             public string CustomKey { get; set; }
+
+            /// <summary>
+            /// A unique identifier of a product, either the Merchant Center Item ID or Global Trade
+            /// Item Number (GTIN). Only required if uploading with item attributes.
+            /// </summary>
+            [Option("itemId", Required = false, HelpText =
+                    "A unique identifier of a product, either the Merchant Center Item ID or " +
+                    "Global Trade Item Number (GTIN). Only required if uploading with item " +
+                    "attributes.",
+                Default = null)]
+            public string ItemId { get; set; }
+
+            /// <summary>
+            /// A Merchant Center Account ID. Only required if uploading with item attributes.
+            /// </summary>
+            [Option("merchantCenterAccountId", Required = false, HelpText =
+                    "A Merchant Center Account ID. Only required if uploading with item " +
+                    "attributes.",
+                Default = null)]
+            public long? MerchantCenterAccountId { get; set; }
+
+            /// <summary>
+            /// A two-letter country code of the location associated with the feed where your items
+            /// are uploaded. Only required if uploading with item attributes.
+            /// For a list of country codes see:
+            /// https://developers.google.com/google-ads/api/reference/data/codes-formats#expandable-16
+            /// </summary>
+            [Option("countryCode", Required = false, HelpText =
+                    "A two-letter country code of the location associated with the feed where your " +
+                    "items are uploaded. Only required if uploading with item attributes.\nFor a " +
+                    "list of country codes see: " +
+                    "https://developers.google.com/google-ads/api/reference/data/codes-formats#expandable-16",
+                Default = null)]
+            public string CountryCode { get; set; }
+
+            /// <summary>
+            /// A two-letter language code of the language associated with the feed where your items
+            /// are uploaded. Only required if uploading with item attributes. For a list of
+            /// language codes see:
+            /// https://developers.google.com/google-ads/api/reference/data/codes-formats#expandable-7
+            /// </summary>
+            [Option("languageCode", Required = false, HelpText =
+                    "A two-letter language code of the language associated with the feed where " +
+                    "your items are uploaded. Only required if uploading with item attributes.\n" +
+                    "For a list of language codes see: " +
+                    "https://developers.google.com/google-ads/api/reference/data/codes-formats#expandable-7",
+                Default = null)]
+            public string LanguageCode { get; set; }
+
+            /// <summary>
+            /// The number of items sold. Can only be set when at least one other item attribute has
+            /// been provided. Only required if uploading with item attributes.
+            /// </summary>
+            [Option("quantity", Required = false, HelpText =
+                    "The number of items sold. Only required if uploading with item attributes.",
+                Default = 1)]
+            public long Quantity { get; set; }
         }
 
         /// <summary>
@@ -113,12 +175,12 @@ namespace Google.Ads.GoogleAds.Examples.V7
         public static void Main(string[] args)
         {
             Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
+            Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate(Options o)
                 {
                     options = o;
                     return 0;
-                }, delegate (IEnumerable<Error> errors)
+                }, delegate(IEnumerable<Error> errors)
                 {
                     // The Google Ads customer ID for which the call is made.
                     options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
@@ -150,6 +212,26 @@ namespace Google.Ads.GoogleAds.Examples.V7
                     // and values.
                     options.CustomKey = "INSERT_CUSTOM_KEY_HERE";
 
+                    // A unique identifier of a product, either the Merchant Center Item ID or Global Trade
+                    // Item Number (GTIN). Only required if uploading with item attributes.
+                    options.ItemId = "INSERT_ITEM_ID_HERE";
+
+                    // A Merchant Center Account ID. Only required if uploading with item
+                    // attributes.
+                    options.MerchantCenterAccountId =
+                        long.Parse("INSERT_MERCHANT_CENTER_ACCOUNT_ID_HERE");
+
+                    // A two-letter country code of the location associated with the feed where your
+                    // items are uploaded. Only required if uploading with item attributes.
+                    options.CountryCode = "INSERT_COUNTRY_CODE_HERE";
+
+                    // A two-letter language code of the language associated with the feed where
+                    // your items are uploaded. Only required if uploading with item attributes.
+                    options.LanguageCode = "INSERT_LANGUAGE_CODE_HERE";
+
+                    // The number of items sold. Only required if uploading with item attributes.
+                    options.Quantity = long.Parse("INSERT_QUANTITY_HERE");
+
                     return 0;
                 });
 
@@ -158,7 +240,9 @@ namespace Google.Ads.GoogleAds.Examples.V7
             codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.ConversionActionId,
                 options.OfflineUserDataJobType, options.ExternalId,
                 options.AdvertiserUploadDateTime, options.BridgeMapVersionId, options.PartnerId,
-                options.CustomKey);
+                options.CustomKey, options.ItemId, options.MerchantCenterAccountId,
+                options.CountryCode,
+                options.LanguageCode, options.Quantity);
         }
 
         // Gets a digest for generating hashed values using SHA-256. You must normalize and hash the
@@ -184,28 +268,41 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="conversionActionId">The ID of a store sales conversion action.</param>
         /// <param name="offlineUserDataJobType">The type of user data in the job (first or third
-        ///     party). If you have an official store sales partnership with Google, use
-        ///     StoreSalesUploadThirdParty. Otherwise, use StoreSalesUploadFirstParty or
-        ///     omit this parameter.</param>
+        /// party). If you have an official store sales partnership with Google, use
+        /// StoreSalesUploadThirdParty. Otherwise, use StoreSalesUploadFirstParty or
+        /// omit this parameter.</param>
         /// <param name="externalId">Optional (but recommended) external ID to identify the offline
-        ///     user data job.</param>
+        /// user data job.</param>
         /// <param name="advertiserUploadDateTime">Date and time the advertiser uploaded data to the
-        ///     partner. Only required if uploading third party data.</param>
+        /// partner. Only required if uploading third party data.</param>
         /// <param name="bridgeMapVersionId">Version of partner IDs to be used for uploads. Only
-        ///     required if uploading third party data.</param>
+        /// required if uploading third party data.</param>
         /// <param name="partnerId">ID of the third party partner. Only required if uploading third
-        ///     party data.</param>
+        /// party data.</param>
         /// <param name="customKey">Optional custom key name. Only required if uploading data
-        ///     with custom key and values.</param>
+        /// with custom key and values.</param>
+        /// <param name="itemId">A unique identifier of a product, either the Merchant Center Item
+        /// ID or Global Trade Item Number (GTIN). Only required if uploading with item
+        /// attributes.</param>
+        /// <param name="merchantCenterAccountId">A Merchant Center Account ID. Only required if uploading with
+        /// item attributes.</param>
+        /// <param name="countryCode">A two-letter country code of the location associated with the
+        /// feed where your items are uploaded. Only required if uploading with item
+        /// attributes.</param>
+        /// <param name="languageCode">A two-letter language code of the language associated with
+        /// the feed where your items are uploaded. Only required if uploading with item
+        /// attributes.</param>
+        /// <param name="quantity">The number of items sold. Only required if uploading with item
+        /// attributes.</param>
         public void Run(GoogleAdsClient client, long customerId, long conversionActionId,
-            OfflineUserDataJobType offlineUserDataJobType =
-                OfflineUserDataJobType.StoreSalesUploadFirstParty,
-            long? externalId = null, string advertiserUploadDateTime = null,
-            string bridgeMapVersionId = null, long? partnerId = null, string customKey = null)
+            OfflineUserDataJobType offlineUserDataJobType, long? externalId,
+            string advertiserUploadDateTime, string bridgeMapVersionId, long? partnerId,
+            string customKey, string itemId, long? merchantCenterAccountId, string countryCode,
+            string languageCode, long quantity)
         {
             // Get the OfflineUserDataJobServiceClient.
             OfflineUserDataJobServiceClient offlineUserDataJobServiceClient =
-                client.GetService(Services.V7.OfflineUserDataJobService);
+                client.GetService(Services.V8.OfflineUserDataJobService);
 
             // Ensure that a valid job type is provided.
             if (offlineUserDataJobType != OfflineUserDataJobType.StoreSalesUploadFirstParty &
@@ -225,7 +322,8 @@ namespace Google.Ads.GoogleAds.Examples.V7
 
                 // Adds transactions to the job.
                 AddTransactionsToOfflineUserDataJob(offlineUserDataJobServiceClient, customerId,
-                    offlineUserDataJobResourceName, conversionActionId, customKey);
+                    offlineUserDataJobResourceName, conversionActionId, customKey, itemId,
+                    merchantCenterAccountId, countryCode, languageCode, quantity);
 
                 // Issues an asynchronous request to run the offline user data job.
                 offlineUserDataJobServiceClient.RunOfflineUserDataJobAsync(
@@ -253,22 +351,22 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// Creates an offline user data job for uploading store sales transactions.
         /// </summary>
         /// <param name="offlineUserDataJobServiceClient">The offline user data job service
-        ///     client.</param>
+        /// client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="offlineUserDataJobType">The type of user data in the job (first or third
-        ///     party). If you have an official store sales partnership with Google, use
-        ///     StoreSalesUploadThirdParty. Otherwise, use StoreSalesUploadFirstParty or
-        ///     omit this parameter.</param>
+        /// party). If you have an official store sales partnership with Google, use
+        /// StoreSalesUploadThirdParty. Otherwise, use StoreSalesUploadFirstParty or
+        /// omit this parameter.</param>
         /// <param name="externalId">Optional (but recommended) external ID to identify the offline
-        ///     user data job.</param>
+        /// user data job.</param>
         /// <param name="advertiserUploadDateTime">Date and time the advertiser uploaded data to the
-        ///     partner. Only required if uploading third party data.</param>
+        /// partner. Only required if uploading third party data.</param>
         /// <param name="bridgeMapVersionId">Version of partner IDs to be used for uploads. Only
-        ///     required if uploading third party data.</param>
+        /// required if uploading third party data.</param>
         /// <param name="partnerId">ID of the third party partner. Only required if uploading third
-        ///     party data.</param>
+        /// party data.</param>
         /// <param name="customKey">The custom key, or null if not uploading data with custom key
-        ///     and value.</param>
+        /// and value.</param>
         /// <returns>The resource name of the created job.</returns>
         private string CreateOfflineUserDataJob(
             OfflineUserDataJobServiceClient offlineUserDataJobServiceClient, long customerId,
@@ -349,6 +447,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 {
                     storeSalesThirdPartyMetadata.PartnerId = partnerId.Value;
                 }
+
                 storeSalesMetadata.ThirdPartyMetadata = storeSalesThirdPartyMetadata;
             }
 
@@ -378,20 +477,33 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// Adds operations to a job for a set of sample transactions.
         /// </summary>
         /// <param name="offlineUserDataJobServiceClient">The offline user data job service
-        ///     client.</param>
+        /// client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="offlineUserDataJobResourceName">The resource name of the job to which to
-        ///     add transactions.</param>
+        /// add transactions.</param>
         /// <param name="conversionActionId">The ID of a store sales conversion action.</param>
         /// <param name="customKey">The custom key, or null if not uploading data with custom key
-        ///     and value.</param>
+        /// and value.</param>
+        /// <param name="itemId">A unique identifier of a product, or null if not uploading with
+        /// item attributes.</param>
+        /// <param name="merchantCenterAccountId">A Merchant Center Account ID, or null if not
+        /// uploading with item attributes.</param>
+        /// <param name="countryCode">A two-letter country code, or null if not uploading with
+        /// item attributes.</param>
+        /// <param name="languageCode">A two-letter language code, or null if not uploading with
+        /// item attributes.</param>
+        /// <param name="quantity">The number of items sold, or null if not uploading with
+        /// item attributes.</param>
         private void AddTransactionsToOfflineUserDataJob(
             OfflineUserDataJobServiceClient offlineUserDataJobServiceClient, long customerId,
-            string offlineUserDataJobResourceName, long conversionActionId, string customKey)
+            string offlineUserDataJobResourceName, long conversionActionId, string customKey,
+            string itemId, long? merchantCenterAccountId, string countryCode, string languageCode,
+            long quantity)
         {
             // Constructions an operation for each transaction.
             List<OfflineUserDataJobOperation> userDataJobOperations =
-                BuildOfflineUserDataJobOperations(customerId, conversionActionId, customKey);
+                BuildOfflineUserDataJobOperations(customerId, conversionActionId, customKey, itemId,
+                    merchantCenterAccountId, countryCode, languageCode, quantity);
 
             // Issues a request with partial failure enabled to add the operations to the offline
             // user data job.
@@ -400,7 +512,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 {
                     EnablePartialFailure = true,
                     ResourceName = offlineUserDataJobResourceName,
-                    Operations = { userDataJobOperations }
+                    Operations = {userDataJobOperations}
                 });
 
             // Prints the status message if any partial failure error is returned.
@@ -427,10 +539,21 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="conversionActionId">The ID of a store sales conversion action.</param>
         /// <param name="customKey">The custom key, or null if not uploading data with custom key
-        ///     and value.</param>
+        /// and value.</param>
+        /// <param name="itemId">A unique identifier of a product, or null if not uploading with
+        /// item attributes.</param>
+        /// <param name="merchantCenterAccountId">A Merchant Center Account ID, or null if not
+        /// uploading with item attributes.</param>
+        /// <param name="countryCode">A two-letter country code, or null if not uploading with
+        /// item attributes.</param>
+        /// <param name="languageCode">A two-letter language code, or null if not uploading with
+        /// item attributes.</param>
+        /// <param name="quantity">The number of items sold, or null if not uploading with
+        /// item attributes.</param>
         /// <returns>A list of operations.</returns>
         private List<OfflineUserDataJobOperation> BuildOfflineUserDataJobOperations(long customerId,
-            long conversionActionId, string customKey)
+            long conversionActionId, string customKey, string itemId, long? merchantCenterAccountId,
+            string countryCode, string languageCode, long quantity)
         {
             // Create the first transaction for upload based on an email address and state.
             UserData userDataWithEmailAddress = new UserData()
@@ -456,13 +579,17 @@ namespace Google.Ads.GoogleAds.Examples.V7
                         ResourceNames.ConversionAction(customerId, conversionActionId),
                     CurrencyCode = "USD",
                     // Converts the transaction amount from $200 USD to micros.
+                    // If item attributes are provided, this value represents the total value of the
+                    // items after multiplying the unit price per item by the quantity provided in
+                    // the ItemAttribute.
                     TransactionAmountMicros = 200L * 1_000_000L,
                     // Specifies the date and time of the transaction. The format is
                     // "YYYY-MM-DD HH:MM:SS[+HH:MM]", where [+HH:MM] is an optional
                     // timezone offset from UTC. If the offset is absent, the API will
                     // use the account's timezone as default. Examples: "2018-03-05 09:15:00"
                     // or "2018-02-01 14:34:30+03:00".
-                    TransactionDateTime = DateTime.Today.AddDays(-2).ToString("yyyy-MM-dd HH:mm:ss")
+                    TransactionDateTime =
+                        DateTime.Today.AddDays(-2).ToString("yyyy-MM-dd HH:mm:ss")
                 }
             };
 
@@ -503,6 +630,21 @@ namespace Google.Ads.GoogleAds.Examples.V7
                     TransactionDateTime = DateTime.Today.AddDays(-1).ToString("yyyy-MM-dd HH:mm:ss")
                 }
             };
+
+            // Set the item attribute if provided.
+            if (!string.IsNullOrEmpty(itemId))
+            {
+                userDataWithPhysicalAddress.TransactionAttribute.ItemAttribute = new ItemAttribute
+                {
+                    ItemId = itemId,
+                    MerchantId = merchantCenterAccountId.Value,
+                    CountryCode = countryCode,
+                    LanguageCode = languageCode,
+                    // Quantity field should only be set when at least one of the other item
+                    // attributes is present.
+                    Quantity = quantity
+                };
+            }
 
             // Creates the operations to add the two transactions.
             List<OfflineUserDataJobOperation> operations = new List<OfflineUserDataJobOperation>()
@@ -560,12 +702,12 @@ namespace Google.Ads.GoogleAds.Examples.V7
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="offlineUserDataJobResourceName">The resource name of the job whose status
-        ///     you wish to check.</param>
+        /// you wish to check.</param>
         private void CheckJobStatus(GoogleAdsClient client, long customerId,
             string offlineUserDataJobResourceName)
         {
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V7.GoogleAdsService);
+                client.GetService(Services.V8.GoogleAdsService);
 
             string query = $@"SELECT offline_user_data_job.resource_name,
                     offline_user_data_job.id,
@@ -590,7 +732,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
                 Console.WriteLine($"\tFailure reason: {offlineUserDataJob.FailureReason}");
             }
             else if (jobStatus == OfflineUserDataJobStatus.Pending |
-                     jobStatus == OfflineUserDataJobStatus.Running)
+                jobStatus == OfflineUserDataJobStatus.Running)
             {
                 Console.WriteLine("\nTo check the status of the job periodically, use the" +
                     $"following GAQL query with GoogleAdsService.Search:\n{query}\n");

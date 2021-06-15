@@ -14,12 +14,12 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V7.Errors;
-using Google.Ads.GoogleAds.V7.Services;
+using Google.Ads.GoogleAds.V8.Errors;
+using Google.Ads.GoogleAds.V8.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V7
+namespace Google.Ads.GoogleAds.Examples.V8
 {
     /// <summary>
     /// This code example imports offline conversion values for specific clicks to your account.
@@ -134,7 +134,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         {
             // Get the ConversionActionService.
             ConversionUploadServiceClient conversionUploadService =
-                client.GetService(Services.V7.ConversionUploadService);
+                client.GetService(Services.V8.ConversionUploadService);
 
             // Creates a click conversion by specifying currency as USD.
             ClickConversion clickConversion = new ClickConversion()

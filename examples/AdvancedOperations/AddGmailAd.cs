@@ -15,18 +15,18 @@
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V7.Common;
-using Google.Ads.GoogleAds.V7.Errors;
-using Google.Ads.GoogleAds.V7.Resources;
-using Google.Ads.GoogleAds.V7.Services;
+using Google.Ads.GoogleAds.V8.Common;
+using Google.Ads.GoogleAds.V8.Errors;
+using Google.Ads.GoogleAds.V8.Resources;
+using Google.Ads.GoogleAds.V8.Services;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V7.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.MediaTypeEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.MimeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V8.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V8.Enums.MediaTypeEnum.Types;
+using static Google.Ads.GoogleAds.V8.Enums.MimeTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V7
+namespace Google.Ads.GoogleAds.Examples.V8
 {
     /// <summary>
     /// This code example adds a Gmail ad to a given ad group. The ad group's campaign needs to
@@ -124,7 +124,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         {
             // Get the MediaFileService.
             MediaFileServiceClient mediaFileService =
-                client.GetService(Services.V7.MediaFileService);
+                client.GetService(Services.V8.MediaFileService);
 
             // Creates a bytes array from the logo image data.
             byte[] logoImageData = MediaUtilities.GetAssetDataFromUrl(
@@ -199,7 +199,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         {
             // Get the AdGroupAdService.
             AdGroupAdServiceClient adGroupAdService =
-                client.GetService(Services.V7.AdGroupAdService);
+                client.GetService(Services.V8.AdGroupAdService);
 
             // Creates the Gmail ad info.
             GmailAdInfo gmailAdInfo = new GmailAdInfo()

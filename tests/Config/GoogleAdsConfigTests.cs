@@ -42,6 +42,16 @@ namespace Google.Ads.GoogleAds.Tests.Config
         private const int TIMEOUT_VALUE = 5000;
 
         /// <summary>
+        /// Test value for <see cref="GoogleAdsConfig.MaxReceiveMessageSizeInBytes"/> property.
+        /// </summary>
+        private const int MAX_RECEIVE_MESSAGE_SIZE_IN_BYTES_VALUE = 8000;
+
+        /// <summary>
+        /// Test value for <see cref="GoogleAdsConfig.MaxMetadataSizeInBytes"/> property.
+        /// </summary>
+        private const int MAX_METADATA_SIZE_IN_BYTES_VALUE = 9000;
+
+        /// <summary>
         /// Test value for <see cref="GoogleAdsConfig.DeveloperToken"/> property.
         /// </summary>
         private const string DEVELOPER_TOKEN_VALUE = "abcdefghijkl1234567890";
@@ -127,6 +137,9 @@ namespace Google.Ads.GoogleAds.Tests.Config
         private readonly Dictionary<string, string> CONFIG_SETTINGS =
             new Dictionary<string, string>() {
                 { "Timeout", TIMEOUT_VALUE.ToString() },
+                { "MaxReceiveMessageLengthInBytes",
+                    MAX_RECEIVE_MESSAGE_SIZE_IN_BYTES_VALUE.ToString() },
+                { "MaxMetadataSizeInBytes", MAX_METADATA_SIZE_IN_BYTES_VALUE.ToString() },
                 { "GoogleAds.Server", SERVER_URL_VALUE },
                 { "DeveloperToken", DEVELOPER_TOKEN_VALUE },
                 { "LoginCustomerId", LOGIN_CUSTOMER_ID_VALUE },
@@ -186,6 +199,9 @@ namespace Google.Ads.GoogleAds.Tests.Config
         {
             Assert.AreEqual(SERVER_URL_VALUE, this.ServerUrl);
             Assert.AreEqual(TIMEOUT_VALUE, this.Timeout);
+            Assert.AreEqual(MAX_RECEIVE_MESSAGE_SIZE_IN_BYTES_VALUE,
+                this.MaxReceiveMessageSizeInBytes);
+            Assert.AreEqual(MAX_METADATA_SIZE_IN_BYTES_VALUE, this.MaxMetadataSizeInBytes);
             Assert.AreEqual(DEVELOPER_TOKEN_VALUE, this.DeveloperToken);
             Assert.AreEqual(LOGIN_CUSTOMER_ID_VALUE, this.LoginCustomerId);
             Assert.AreEqual(LINKED_CUSTOMER_ID_VALUE, this.LinkedCustomerId);

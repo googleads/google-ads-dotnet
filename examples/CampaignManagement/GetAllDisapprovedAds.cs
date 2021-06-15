@@ -14,16 +14,16 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V7.Common;
-using Google.Ads.GoogleAds.V7.Errors;
-using Google.Ads.GoogleAds.V7.Resources;
-using Google.Ads.GoogleAds.V7.Services;
+using Google.Ads.GoogleAds.V8.Common;
+using Google.Ads.GoogleAds.V8.Errors;
+using Google.Ads.GoogleAds.V8.Resources;
+using Google.Ads.GoogleAds.V8.Services;
 using Google.Api.Gax;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Google.Ads.GoogleAds.Examples.V7
+namespace Google.Ads.GoogleAds.Examples.V8
 {
     /// <summary>
     /// This code example retrieves all the disapproved ads in a given campaign.
@@ -100,7 +100,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V7.GoogleAdsService);
+                Services.V8.GoogleAdsService);
 
             string searchQuery = $@"
                 SELECT
