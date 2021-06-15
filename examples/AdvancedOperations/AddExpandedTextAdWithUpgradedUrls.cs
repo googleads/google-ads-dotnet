@@ -14,15 +14,15 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V7.Common;
-using Google.Ads.GoogleAds.V7.Errors;
-using Google.Ads.GoogleAds.V7.Resources;
-using Google.Ads.GoogleAds.V7.Services;
+using Google.Ads.GoogleAds.V8.Common;
+using Google.Ads.GoogleAds.V8.Errors;
+using Google.Ads.GoogleAds.V8.Resources;
+using Google.Ads.GoogleAds.V8.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V7.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V8.Enums.AdGroupAdStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V7
+namespace Google.Ads.GoogleAds.Examples.V8
 {
     /// <summary>
     /// This code example adds expanded text ads to a given ad group. To list
@@ -96,7 +96,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         public void Run(GoogleAdsClient client, long customerId, long adGroupId)
         {
             // Get the AdGroupAdService.
-            AdGroupAdServiceClient service = client.GetService(Services.V7.AdGroupAdService);
+            AdGroupAdServiceClient service = client.GetService(Services.V8.AdGroupAdService);
 
             // Create the expanded text ad.
             AdGroupAd ad = new AdGroupAd

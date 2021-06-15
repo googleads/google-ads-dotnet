@@ -14,16 +14,16 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V7.Errors;
-using Google.Ads.GoogleAds.V7.Resources;
-using Google.Ads.GoogleAds.V7.Services;
+using Google.Ads.GoogleAds.V8.Errors;
+using Google.Ads.GoogleAds.V8.Resources;
+using Google.Ads.GoogleAds.V8.Services;
 using Google.Api.Gax;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V7.Enums.TimeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V8.Enums.TimeTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V7
+namespace Google.Ads.GoogleAds.Examples.V8
 {
     /// <summary>
     /// This example creates a billing setup for a customer. A billing setup is a link between a
@@ -140,11 +140,11 @@ namespace Google.Ads.GoogleAds.Examples.V7
         {
             // Gets the GoogleAdsServiceClient.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V7.GoogleAdsService);
+                Services.V8.GoogleAdsService);
 
             // Gets the BillingSetupServiceClient.
             BillingSetupServiceClient billingSetupServiceClient =
-                client.GetService(Services.V7.BillingSetupService);
+                client.GetService(Services.V8.BillingSetupService);
 
             try
             {

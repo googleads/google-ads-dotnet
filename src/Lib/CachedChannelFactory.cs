@@ -37,20 +37,10 @@ namespace Google.Ads.GoogleAds.Lib
             "grpc.max_receive_message_length";
 
         /// <summary>
-        /// The maximum message length in bytes that the client library can receive (64 MB).
-        /// </summary>
-        private const int MAX_RECEIVE_MESSAGE_LENGTH_IN_BYTES = 64 * 1024 * 1024;
-
-        /// <summary>
         /// The gRPC setting name for maximum metadata size in bytes that can be handled.
         /// </summary>
         private const string GRPC_MAX_METADATA_SIZE_IN_BYTES_SETTING_NAME =
             "grpc.max_metadata_size";
-
-        /// <summary>
-        /// The maximum metadata size in bytes that the client library can receive (16 MB).
-        /// </summary>
-        private const int MAX_METADATA_SIZE_IN_BYTES = 16 * 1024 * 1024;
 
         /// <summary>
         /// Gets the channel for the specified configuration.
@@ -130,9 +120,9 @@ namespace Google.Ads.GoogleAds.Lib
                 new List<ChannelOption>()
                 {
                     new ChannelOption(GRPC_MAX_RECEIVE_MESSAGE_LENGTH_IN_BYTES_SETTING_NAME,
-                        MAX_RECEIVE_MESSAGE_LENGTH_IN_BYTES),
+                        config.MaxReceiveMessageSizeInBytes),
                     new ChannelOption(GRPC_MAX_METADATA_SIZE_IN_BYTES_SETTING_NAME,
-                        MAX_METADATA_SIZE_IN_BYTES),
+                        config.MaxMetadataSizeInBytes),
                 }
             );
         }

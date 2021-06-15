@@ -14,23 +14,23 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V7.Common;
-using Google.Ads.GoogleAds.V7.Errors;
-using Google.Ads.GoogleAds.V7.Resources;
-using Google.Ads.GoogleAds.V7.Services;
+using Google.Ads.GoogleAds.V8.Common;
+using Google.Ads.GoogleAds.V8.Errors;
+using Google.Ads.GoogleAds.V8.Resources;
+using Google.Ads.GoogleAds.V8.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V7.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.WebpageConditionOperandEnum.Types;
-using static Google.Ads.GoogleAds.V7.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V8.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V8.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V8.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V8.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V8.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V8.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V8.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V8.Enums.WebpageConditionOperandEnum.Types;
+using static Google.Ads.GoogleAds.V8.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V7
+namespace Google.Ads.GoogleAds.Examples.V8
 {
     /// <summary>
     /// This code example adds dynamic search ads to a given ad group. To list
@@ -118,7 +118,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         {
             // Get the CampaignBudgetService.
             CampaignBudgetServiceClient campaignBudgetService =
-                client.GetService(Services.V7.CampaignBudgetService);
+                client.GetService(Services.V8.CampaignBudgetService);
 
             // Create the budget.
             CampaignBudget campaignBudget = new CampaignBudget()
@@ -157,7 +157,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             string budgetResourceName)
         {
             // Get the CampaignService.
-            CampaignServiceClient campaignService = client.GetService(Services.V7.CampaignService);
+            CampaignServiceClient campaignService = client.GetService(Services.V8.CampaignService);
 
             // Create the campaign.
             Campaign campaign = new Campaign()
@@ -207,7 +207,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             string campaignResourceName)
         {
             // Get the AdGroupService.
-            AdGroupServiceClient adGroupService = client.GetService(Services.V7.AdGroupService);
+            AdGroupServiceClient adGroupService = client.GetService(Services.V8.AdGroupService);
 
             // Create the ad group.
             AdGroup adGroup = new AdGroup()
@@ -249,7 +249,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         {
             // Get the AdGroupAdService.
             AdGroupAdServiceClient adGroupAdService =
-                client.GetService(Services.V7.AdGroupAdService);
+                client.GetService(Services.V8.AdGroupAdService);
 
             // Create an ad group ad.
             AdGroupAd adGroupAd = new AdGroupAd()
@@ -293,7 +293,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         {
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V7.AdGroupCriterionService);
+                client.GetService(Services.V8.AdGroupCriterionService);
 
             // Create the criterion.
             AdGroupCriterion adGroupCriterion = new AdGroupCriterion()

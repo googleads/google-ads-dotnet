@@ -14,8 +14,8 @@
 
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V7.Errors;
-using Google.Ads.GoogleAds.V7.Services;
+using Google.Ads.GoogleAds.V8.Errors;
+using Google.Ads.GoogleAds.V8.Services;
 using Google.Protobuf;
 
 using Microsoft.AspNetCore.Mvc;
@@ -79,7 +79,7 @@ namespace Google.Ads.GoogleAds.Examples
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-              Services.V7.GoogleAdsService);
+              Services.V8.GoogleAdsService);
 
             string query = "SELECT campaign.id, campaign.name, campaign.status FROM campaign " +
                 "ORDER BY campaign.id limit 100";

@@ -15,24 +15,24 @@
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V7.Common;
-using Google.Ads.GoogleAds.V7.Enums;
-using Google.Ads.GoogleAds.V7.Errors;
-using Google.Ads.GoogleAds.V7.Resources;
-using Google.Ads.GoogleAds.V7.Services;
+using Google.Ads.GoogleAds.V8.Common;
+using Google.Ads.GoogleAds.V8.Enums;
+using Google.Ads.GoogleAds.V8.Errors;
+using Google.Ads.GoogleAds.V8.Resources;
+using Google.Ads.GoogleAds.V8.Services;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V7.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.AdvertisingChannelSubTypeEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.AssetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V7.Enums.MimeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V8.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V8.Enums.AdvertisingChannelSubTypeEnum.Types;
+using static Google.Ads.GoogleAds.V8.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V8.Enums.AssetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V8.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V8.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V8.Enums.MimeTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V7
+namespace Google.Ads.GoogleAds.Examples.V8
 {
     /// <summary>
     ///
@@ -138,7 +138,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         {
             // Get the BudgetService.
             CampaignBudgetServiceClient budgetService = client.GetService(
-                Services.V7.CampaignBudgetService);
+                Services.V8.CampaignBudgetService);
 
             // Create the campaign budget.
             CampaignBudget budget = new CampaignBudget()
@@ -180,7 +180,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             string budgetResourceName)
         {
             // Get the CampaignService.
-            CampaignServiceClient campaignService = client.GetService(Services.V7.CampaignService);
+            CampaignServiceClient campaignService = client.GetService(Services.V8.CampaignService);
 
             // Create the campaign.
             Campaign campaign = new Campaign()
@@ -239,7 +239,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
             string campaignResourceName)
         {
             // Get the AdGroupService.
-            AdGroupServiceClient adGroupService = client.GetService(Services.V7.AdGroupService);
+            AdGroupServiceClient adGroupService = client.GetService(Services.V8.AdGroupService);
 
             // Create the ad group.
             AdGroup adGroup = new AdGroup()
@@ -283,7 +283,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         {
             // Get the AssetServiceClient.
             AssetServiceClient assetService =
-                client.GetService(Services.V7.AssetService);
+                client.GetService(Services.V8.AssetService);
 
             // Creates an image content.
             byte[] imageContent = MediaUtilities.GetAssetDataFromUrl(imageUrl, client.Config);
@@ -351,7 +351,7 @@ namespace Google.Ads.GoogleAds.Examples.V7
         {
             // Get the AdGroupAdServiceClient.
             AdGroupAdServiceClient adGroupAdService =
-                client.GetService(Services.V7.AdGroupAdService);
+                client.GetService(Services.V8.AdGroupAdService);
 
             // Creates a responsive display ad info.
             ResponsiveDisplayAdInfo responsiveDisplayAdInfo = new ResponsiveDisplayAdInfo()
