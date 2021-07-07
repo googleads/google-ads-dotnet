@@ -66,6 +66,20 @@ namespace Google.Ads.GoogleAds.Examples.V8
             [Option("conversionValue", Required = true, HelpText =
                 "The conversion value.")]
             public double ConversionValue { get; set; }
+
+            /// <summary>
+            /// The ID of the conversion custom variable to associate with the upload.
+            /// </summary>
+            [Option("conversionCustomVariableId", Required = false, HelpText =
+                "The ID of the conversion custom variable to associate with the upload.")]
+            public long? ConversionCustomVariableId { get; set; }
+
+            /// <summary>
+            /// The value of the conversion custom variable to associate with the upload.
+            /// </summary>
+            [Option("conversionCustomVariableValue", Required = false, HelpText =
+                "The value of the conversion custom variable to associate with the upload.")]
+            public string ConversionCustomVariableValue { get; set; }
         }
 
         /// <summary>
@@ -97,13 +111,20 @@ namespace Google.Ads.GoogleAds.Examples.V8
                     // The conversion value.
                     options.ConversionValue = double.Parse("INSERT_CONVERSION_VALUE_HERE");
 
+                    // Optional: Set the custom conversion variable ID and value.
+                    //options.ConversionCustomVariableId =
+                    //    long.Parse("INSERT_CONVERSION_CUSTOM_VARIABLE_ID_HERE");
+                    //options.ConversionCustomVariableValue =
+                    //    "INSERT_CONVERSION_CUSTOM_VARIABLE_VALUE_HERE";
+
                     return 0;
                 });
 
             UploadCallConversion codeExample = new UploadCallConversion();
             Console.WriteLine(codeExample.Description);
             codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.CallerId,
-                options.CallStartTime, options.ConversionTime, options.ConversionValue);
+                options.CallStartTime, options.ConversionTime, options.ConversionValue,
+                options.ConversionCustomVariableId, options.ConversionCustomVariableValue);
         }
 
         /// <summary>
@@ -127,9 +148,14 @@ namespace Google.Ads.GoogleAds.Examples.V8
         /// <param name="conversionTime">The conversion time in "yyyy-mm-dd hh:mm:ss+|-hh:mm"
         /// format.</param>
         /// <param name="conversionValue">The conversion value.</param>
+        /// <param name="conversionCustomVariableId">The ID of the conversion custom variable to
+        /// associate with the upload.</param>
+        /// <param name="conversionCustomVariableValue">The value of the conversion custom variable
+        /// to associate with the upload.</param>
         // [START upload_call_conversion]
         public void Run(GoogleAdsClient client, long customerId, string callerId,
-            string callStartTime, string conversionTime, double conversionValue)
+            string callStartTime, string conversionTime, double conversionValue, 
+            long? conversionCustomVariableId, string conversionCustomVariableValue)
         {
             // Get the ConversionUploadService.
             ConversionUploadServiceClient conversionUploadService =
@@ -144,6 +170,17 @@ namespace Google.Ads.GoogleAds.Examples.V8
                 ConversionValue = conversionValue,
                 CurrencyCode = "USD"
             };
+
+            if (conversionCustomVariableId != null &&
+                !string.IsNullOrEmpty(conversionCustomVariableValue))
+            {
+                callConversion.CustomVariables.Add(new CustomVariable() {
+                    ConversionCustomVariable = ResourceNames.ConversionCustomVariable(
+                        customerId, conversionCustomVariableId.Value),
+                    Value = conversionCustomVariableValue
+
+                });
+            }
 
             UploadCallConversionsRequest request = new UploadCallConversionsRequest()
             {
