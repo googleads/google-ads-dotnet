@@ -124,6 +124,7 @@ namespace Google.Ads.GoogleAds.Examples.V8
                 searchQuery += $" WHERE ad_group.id = {adGroupId}";
             }
 
+            searchQuery += " LIMIT 10000";
             // Creates a request that will retrieve ad group bid modifiers using pages of the
             // specified page size.
             SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()
