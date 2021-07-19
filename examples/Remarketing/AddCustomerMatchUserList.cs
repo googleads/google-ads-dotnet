@@ -252,6 +252,7 @@ namespace Google.Ads.GoogleAds.Examples.V8
         /// <returns>An array with the operations</returns>
         private static OfflineUserDataJobOperation[] BuildOfflineUserDataJobOperations()
         {
+            // [START add_customer_match_user_list_2]
             // Creates a first user data based on an email address.
             UserData userDataWithEmailAddress = new UserData()
             {
@@ -283,6 +284,7 @@ namespace Google.Ads.GoogleAds.Examples.V8
                     }
                 }
             };
+            // [END add_customer_match_user_list_2]
 
             // Creates the operations to add the two users.
             return new OfflineUserDataJobOperation[]

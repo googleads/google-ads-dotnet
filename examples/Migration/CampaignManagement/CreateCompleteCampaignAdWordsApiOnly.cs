@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.Examples.V8.Migration.CampaignManagement
     /// This code example is the first in a series of code examples that shows how to create
     /// a Search campaign using the AdWords API, and then migrate it to Google Ads API one
     /// functionality at a time. See other examples in this directory for code examples in various
-    /// stages of migration. 
-    /// 
+    /// stages of migration.
+    ///
     /// This code example represents the initial state, where the AdWords API is used to create a
     /// campaign budget, a Search campaign, ad groups, keywords and expanded text ads. None of the
     /// functionality has yet been migrated to the Google Ads API.
@@ -50,20 +50,15 @@ namespace Google.Ads.GoogleAds.Examples.V8.Migration.CampaignManagement
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example is the first in a series of code examples that " +
-                    "shows how to create a Search campaign using the AdWords API, and then " +
-                    "migrate it to Google Ads API one functionality at a time. See other " +
-                    "examples in this directory for code examples in various stages of " +
-                    "migration. This code example represents the initial state, where the " +
-                    "AdWords API is used to create a campaign budget, a Search campaign, " +
-                    "ad groups, keywords and expanded text ads. None of the functionality has " +
-                    "yet been migrated to the Google Ads API.";
-            }
-        }
+        public override string Description =>
+            "This code example is the first in a series of code examples that " +
+            "shows how to create a Search campaign using the AdWords API, and then " +
+            "migrate it to Google Ads API one functionality at a time. See other " +
+            "examples in this directory for code examples in various stages of " +
+            "migration. This code example represents the initial state, where the " +
+            "AdWords API is used to create a campaign budget, a Search campaign, " +
+            "ad groups, keywords and expanded text ads. None of the functionality has " +
+            "yet been migrated to the Google Ads API.";
 
         /// <summary>
         /// Runs the code example.

@@ -56,20 +56,15 @@ namespace Google.Ads.GoogleAds.Examples.V8.Migration.CampaignManagement
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example is the second in a series of code examples that " +
-                    "shows how to create a Search campaign using the AdWords API, and then " +
-                    "migrate it to the Google Ads API one functionality at a time. See other " +
-                    "examples in this directory for code examples in various stages of " +
-                    "migration. In this code example, the functionality to create campaign " +
-                    "budget has been migrated to the Google Ads API. The rest of the " +
-                    "functionality - creating a Search campaign, ad groups, keywords and " +
-                    "expanded text ads are done using the AdWords API.";
-            }
-        }
+        public override string Description =>
+            "This code example is the second in a series of code examples that " +
+            "shows how to create a Search campaign using the AdWords API, and then " +
+            "migrate it to the Google Ads API one functionality at a time. See other " +
+            "examples in this directory for code examples in various stages of " +
+            "migration. In this code example, the functionality to create campaign " +
+            "budget has been migrated to the Google Ads API. The rest of the " +
+            "functionality - creating a Search campaign, ad groups, keywords and " +
+            "expanded text ads are done using the AdWords API.";
 
         /// <summary>
         /// Runs the code example.
