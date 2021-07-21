@@ -21,7 +21,7 @@ using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V8.Services;
 using Google.Api.Gax;
 
-namespace Google.Ads.GoogleAds.Examples.V8.Migration.CampaignManagement
+namespace Google.Ads.GoogleAds.Examples.V8.Migration
 {
     /// <summary>
     /// This code example illustrates how to use Google Ads API to get metrics about a campaign and
