@@ -15,9 +15,9 @@
 using System;
 using System.IO;
 using System.Linq;
-using System.Text;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V8.Services;
+using Google.Api.Ads.Common.Util;
 
 namespace Google.Ads.GoogleAds.Examples.V8.Migration
 {
@@ -73,21 +73,23 @@ namespace Google.Ads.GoogleAds.Examples.V8.Migration
                         return;
                     }
 
-                    StringBuilder csvRows = new StringBuilder();
+                    CsvFile csvFile = new CsvFile();
 
                     // Set the header for the CSV file.
-                    csvRows.AppendLine(string.Join(",", response.FieldMask.Paths));
+                    csvFile.Headers.AddRange(response.FieldMask.Paths);
 
                     // Iterate over all returned rows and extract the information.
                     foreach (GoogleAdsRow googleAdsRow in response.Results)
                     {
-                        csvRows.AppendLine(string.Format("{0},{1},{2},{3},{4},{5}",
-                            googleAdsRow.Campaign.Id,
+                        csvFile.Records.Add(new string[]
+                        {
+                            googleAdsRow.Campaign.Id.ToString(),
                             googleAdsRow.Campaign.Name,
                             googleAdsRow.Segments.Date,
-                            googleAdsRow.Metrics.Impressions,
-                            googleAdsRow.Metrics.Clicks,
-                            googleAdsRow.Metrics.CostMicros));
+                            googleAdsRow.Metrics.Impressions.ToString(),
+                            googleAdsRow.Metrics.Clicks.ToString(),
+                            googleAdsRow.Metrics.CostMicros.ToString()
+                        });
                     }
 
                     if (outputFilePath == null)
@@ -104,7 +106,8 @@ namespace Google.Ads.GoogleAds.Examples.V8.Migration
                     }
 
                     // Create the file with the specified path, write all lines, and close it.
-                    File.WriteAllText(outputFilePath, csvRows.ToString());
+                    // File.WriteAllText(outputFilePath, csvRows.ToString());
+                    csvFile.Write(outputFilePath);
 
                     Console.WriteLine(
                         $"Successfully wrote {response.Results.Count()} entries to {outputFilePath}.");
