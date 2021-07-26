@@ -94,7 +94,7 @@ namespace Google.Ads.GoogleAds.Examples
             // new CreateCompleteCampaignGoogleAdsApiOnly().Run(googleAdsClient, clientCustomerId);
 
             // CampaignReportToCsv example.
-            // To write the report file to the assembly directory:
+            // To write the report file to the home directory:
             // new CampaignReportToCsv().Run(googleAdsClient, clientCustomerId);
             // Alternatively, specify the output file path using an optional string argument:
             // new CampaignReportToCsv().Run(googleAdsClient, clientCustomerId, "/PATH/TO/output.csv");

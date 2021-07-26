@@ -15,11 +15,9 @@
 using System;
 using System.IO;
 using System.Linq;
-using System.Reflection;
 using System.Text;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V8.Services;
-using Google.Api.Gax;
 
 namespace Google.Ads.GoogleAds.Examples.V8.Migration
 {
@@ -29,10 +27,8 @@ namespace Google.Ads.GoogleAds.Examples.V8.Migration
     /// </summary>
     public class CampaignReportToCsv : ExampleBase
     {
-        private const int PAGE_SIZE = 1000;
-
         // Optional output file path. If left null, a file `CampaignReportToCsv.csv` will be created
-        // in the executing assembly folder.
+        // in the user's home directory.
         private const string OUTPUT_FILE_PATH = null;
 
         /// <summary>
@@ -67,51 +63,53 @@ namespace Google.Ads.GoogleAds.Examples.V8.Migration
                     AND campaign.status = 'ENABLED' 
                 ORDER BY segments.date DESC";
 
-            // Issues a search request with a specified page size.
-            SearchGoogleAdsRequest searchGoogleAdsRequest = new SearchGoogleAdsRequest
-            {
-                CustomerId = customerId.ToString(),
-                Query = query,
-                PageSize = PAGE_SIZE
-            };
-            PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> pagedResponse =
-                googleAdsServiceClient.Search(searchGoogleAdsRequest);
+            // Issues a search request.
+            googleAdsServiceClient.SearchStream(customerId.ToString(), query,
+                delegate(SearchGoogleAdsStreamResponse response)
+                {
+                    if (response.Results.Count() == 0)
+                    {
+                        Console.WriteLine("No results found!");
+                        return;
+                    }
 
-            if (pagedResponse.Count() == 0)
-            {
-                Console.WriteLine("No results found!");
-                return;
-            }
+                    StringBuilder csvRows = new StringBuilder();
 
-            StringBuilder csvRows = new StringBuilder();
+                    // Set the header for the CSV file.
+                    csvRows.AppendLine(string.Join(",", response.FieldMask.Paths));
 
-            // Set the header for the CSV file.
-            csvRows.AppendLine("Campaign.Id,Campaign.Name,Segments.Date,Metrics.Impressions," +
-                "Metrics.Clicks,Metrics.CostMicros");
+                    // Iterate over all returned rows and extract the information.
+                    foreach (GoogleAdsRow googleAdsRow in response.Results)
+                    {
+                        csvRows.AppendLine(string.Format("{0},{1},{2},{3},{4},{5}",
+                            googleAdsRow.Campaign.Id,
+                            googleAdsRow.Campaign.Name,
+                            googleAdsRow.Segments.Date,
+                            googleAdsRow.Metrics.Impressions,
+                            googleAdsRow.Metrics.Clicks,
+                            googleAdsRow.Metrics.CostMicros));
+                    }
 
-            // Iterate over all returned rows in all pages and extract the information.
-            foreach (GoogleAdsRow googleAdsRow in pagedResponse)
-            {
-                csvRows.AppendLine(string.Format("{0},{1},{2},{3},{4},{5}",
-                    googleAdsRow.Campaign.Id,
-                    googleAdsRow.Campaign.Name,
-                    googleAdsRow.Segments.Date,
-                    googleAdsRow.Metrics.Impressions,
-                    googleAdsRow.Metrics.Clicks,
-                    googleAdsRow.Metrics.CostMicros));
-            }
+                    if (outputFilePath == null)
+                    {
+                        outputFilePath =
+                            Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) +
+                            Path.DirectorySeparatorChar +
+                            GetType().Name +
+                            DateTime.Now.ToString("-yyyyMMMMdd-HHmmss") + ".csv";
+                    }
+                    else if (!outputFilePath.EndsWith(".csv"))
+                    {
+                        outputFilePath += ".csv";
+                    }
 
-            if (outputFilePath == null)
-            {
-                outputFilePath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) +
-                    "/" + GetType().Name + ".csv";
-            }
+                    // Create the file with the specified path, write all lines, and close it.
+                    File.WriteAllText(outputFilePath, csvRows.ToString());
 
-            // Create the file with the specified path, write all lines, and close it.
-            File.WriteAllText(outputFilePath, csvRows.ToString());
-
-            Console.WriteLine(
-                $"Successfully wrote {pagedResponse.Count()} entries to {outputFilePath}.");
+                    Console.WriteLine(
+                        $"Successfully wrote {response.Results.Count()} entries to {outputFilePath}.");
+                }
+            );
         }
     }
 }
