@@ -37,12 +37,12 @@ namespace Google.Ads.GoogleAds.Examples.V8.Migration.CampaignManagement
 {
     /// <summary>
     /// This code example is the last in a series of code examples that shows how to create
-    /// a Search campign using the AdWords API, and then migrate it to the Google Ads API one
+    /// a Search campaign using the AdWords API, and then migrate it to the Google Ads API one
     /// functionality at a time. See Step0.cs through Step5.cs for code examples in various stages
     /// of migration.
     ///
     /// This code example represents the final state, where all the functionality - create a
-    /// campaign budget, a Search campaign, ad groups, keywords and expanded text ads have been 
+    /// campaign budget, a Search campaign, ad groups, keywords and expanded text ads have been
     /// migrated to using the Google Ads API. The AdWords API is not used.
     /// </summary>
     public class CreateCompleteCampaignGoogleAdsApiOnly : ExampleBase
@@ -64,25 +64,21 @@ namespace Google.Ads.GoogleAds.Examples.V8.Migration.CampaignManagement
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description
-        {
-            get
-            {
-                return "This code example is the last one in a series of code examples that " +
-                    "shows how to create a Search campign using the AdWords API, and then " +
-                    "migrate it to Google Ads API one functionality at a time. See Step0.cs " +
-                    "through Step5.cs for code examples in various stages of migration. This " +
-                    "code example represents the final state, where all the functionality - " +
-                    "create a campaign budget, a Search campaign, ad groups, keywords and " +
-                    "expanded text ads have been migrated to using the Google Ads API. The " +
-                    "AdWords API is not used.";
-            }
-        }
+        public override string Description =>
+            "This code example is the last one in a series of code examples that " +
+            "shows how to create a Search campaign using the AdWords API, and then " +
+            "migrate it to Google Ads API one functionality at a time. See Step0.cs " +
+            "through Step5.cs for code examples in various stages of migration. This " +
+            "code example represents the final state, where all the functionality - " +
+            "create a campaign budget, a Search campaign, ad groups, keywords and " +
+            "expanded text ads have been migrated to using the Google Ads API. The " +
+            "AdWords API is not used.";
 
         /// <summary>
         /// Runs the code example.
         /// </summary>
-        /// <param name="user">The AdWords user.</param>
+        /// <param name="client">The Google Ads client.</param>
+        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         public void Run(GoogleAdsClient client, long customerId)
         {
             gagvr::CampaignBudget budget = CreateBudget(client, customerId);
