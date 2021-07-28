@@ -106,7 +106,6 @@ namespace Google.Ads.GoogleAds.Examples.V8.Migration
                     }
 
                     // Create the file with the specified path, write all lines, and close it.
-                    // File.WriteAllText(outputFilePath, csvRows.ToString());
                     csvFile.Write(outputFilePath);
 
                     Console.WriteLine(
