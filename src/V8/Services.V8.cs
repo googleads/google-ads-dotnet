@@ -231,6 +231,22 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v8/BiddingDataExclusionService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<BiddingDataExclusionServiceClient, BiddingDataExclusionServiceSettings> BiddingDataExclusionService =
+                new ServiceTemplate<BiddingDataExclusionServiceClient, BiddingDataExclusionServiceSettings>(Create);
+
+
+            /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v8/BiddingSeasonalityAdjustmentService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<BiddingSeasonalityAdjustmentServiceClient, BiddingSeasonalityAdjustmentServiceSettings> BiddingSeasonalityAdjustmentService =
+                new ServiceTemplate<BiddingSeasonalityAdjustmentServiceClient, BiddingSeasonalityAdjustmentServiceSettings>(Create);
+
+
+            /// <summary>
             /// See https://developers.google.com/google-ads/api/reference/rpc/v8/BiddingStrategyService
             /// for details.
             /// </summary>
@@ -428,6 +444,22 @@ namespace Google.Ads.GoogleAds
             /// </summary>
             public static readonly ServiceTemplate<ConversionUploadServiceClient, ConversionUploadServiceSettings> ConversionUploadService =
                 new ServiceTemplate<ConversionUploadServiceClient, ConversionUploadServiceSettings>(Create);
+
+
+            /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v8/ConversionValueRuleService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<ConversionValueRuleServiceClient, ConversionValueRuleServiceSettings> ConversionValueRuleService =
+                new ServiceTemplate<ConversionValueRuleServiceClient, ConversionValueRuleServiceSettings>(Create);
+
+
+            /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v8/ConversionValueRuleSetService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<ConversionValueRuleSetServiceClient, ConversionValueRuleSetServiceSettings> ConversionValueRuleSetService =
+                new ServiceTemplate<ConversionValueRuleSetServiceClient, ConversionValueRuleSetServiceSettings>(Create);
 
 
             /// <summary>
@@ -1206,6 +1238,14 @@ namespace Google.Ads.GoogleAds
                         return BatchJobServiceClient.Create(callInvoker, (BatchJobServiceSettings) settings);
 
 
+                    case "BiddingDataExclusionServiceClient":
+                        return BiddingDataExclusionServiceClient.Create(callInvoker, (BiddingDataExclusionServiceSettings) settings);
+
+
+                    case "BiddingSeasonalityAdjustmentServiceClient":
+                        return BiddingSeasonalityAdjustmentServiceClient.Create(callInvoker, (BiddingSeasonalityAdjustmentServiceSettings) settings);
+
+
                     case "BiddingStrategyServiceClient":
                         return BiddingStrategyServiceClient.Create(callInvoker, (BiddingStrategyServiceSettings) settings);
 
@@ -1304,6 +1344,14 @@ namespace Google.Ads.GoogleAds
 
                     case "ConversionUploadServiceClient":
                         return ConversionUploadServiceClient.Create(callInvoker, (ConversionUploadServiceSettings) settings);
+
+
+                    case "ConversionValueRuleServiceClient":
+                        return ConversionValueRuleServiceClient.Create(callInvoker, (ConversionValueRuleServiceSettings) settings);
+
+
+                    case "ConversionValueRuleSetServiceClient":
+                        return ConversionValueRuleSetServiceClient.Create(callInvoker, (ConversionValueRuleSetServiceSettings) settings);
 
 
                     case "CurrencyConstantServiceClient":

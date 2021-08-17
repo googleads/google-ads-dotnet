@@ -55,10 +55,10 @@ namespace Google.Ads.GoogleAds.V8.Resources {
             "dXJjZXMuQWNjZXNzaWJsZUJpZGRpbmdTdHJhdGVneS5UYXJnZXRTcGVuZEID",
             "4EEDSAAaMwoXTWF4aW1pemVDb252ZXJzaW9uVmFsdWUSGAoLdGFyZ2V0X3Jv",
             "YXMYASABKAFCA+BBAxouChNNYXhpbWl6ZUNvbnZlcnNpb25zEhcKCnRhcmdl",
-            "dF9jcGEYASABKANCA+BBAxpGCglUYXJnZXRDcGESIwoRdGFyZ2V0X2NwYV9t",
-            "aWNyb3MYASABKANCA+BBA0gAiAEBQhQKEl90YXJnZXRfY3BhX21pY3Jvcxo7",
-            "CgpUYXJnZXRSb2FzEh0KC3RhcmdldF9yb2FzGAEgASgBQgPgQQNIAIgBAUIO",
-            "CgxfdGFyZ2V0X3JvYXMakwEKC1RhcmdldFNwZW5kEicKE3RhcmdldF9zcGVu",
+            "dF9jcGEYASABKANCA+BBAxo7CgpUYXJnZXRSb2FzEh0KC3RhcmdldF9yb2Fz",
+            "GAEgASgBQgPgQQNIAIgBAUIOCgxfdGFyZ2V0X3JvYXMaRgoJVGFyZ2V0Q3Bh",
+            "EiMKEXRhcmdldF9jcGFfbWljcm9zGAEgASgDQgPgQQNIAIgBAUIUChJfdGFy",
+            "Z2V0X2NwYV9taWNyb3MakwEKC1RhcmdldFNwZW5kEicKE3RhcmdldF9zcGVu",
             "ZF9taWNyb3MYASABKANCBRgB4EEDSACIAQESKAoWY3BjX2JpZF9jZWlsaW5n",
             "X21pY3JvcxgCIAEoA0ID4EEDSAGIAQFCFgoUX3RhcmdldF9zcGVuZF9taWNy",
             "b3NCGQoXX2NwY19iaWRfY2VpbGluZ19taWNyb3MalwIKFVRhcmdldEltcHJl",
@@ -83,8 +83,8 @@ namespace Google.Ads.GoogleAds.V8.Resources {
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy), global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Parser, new[]{ "ResourceName", "Id", "Name", "Type", "OwnerCustomerId", "OwnerDescriptiveName", "MaximizeConversionValue", "MaximizeConversions", "TargetCpa", "TargetImpressionShare", "TargetRoas", "TargetSpend" }, new[]{ "Scheme" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.MaximizeConversionValue), global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.MaximizeConversionValue.Parser, new[]{ "TargetRoas" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.MaximizeConversions), global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.MaximizeConversions.Parser, new[]{ "TargetCpa" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetCpa), global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetCpa.Parser, new[]{ "TargetCpaMicros" }, new[]{ "TargetCpaMicros" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetRoas), global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetRoas.Parser, new[]{ "TargetRoas_" }, new[]{ "TargetRoas" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetCpa), global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetCpa.Parser, new[]{ "TargetCpaMicros" }, new[]{ "TargetCpaMicros" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetSpend), global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetSpend.Parser, new[]{ "TargetSpendMicros", "CpcBidCeilingMicros" }, new[]{ "TargetSpendMicros", "CpcBidCeilingMicros" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetImpressionShare), global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetImpressionShare.Parser, new[]{ "Location", "LocationFractionMicros", "CpcBidCeilingMicros" }, new[]{ "LocationFractionMicros", "CpcBidCeilingMicros" }, null, null, null)})
           }));
@@ -1201,6 +1201,198 @@ namespace Google.Ads.GoogleAds.V8.Resources {
       }
 
       /// <summary>
+      /// An automated bidding strategy that helps you maximize revenue while
+      /// averaging a specific target return on ad spend (ROAS).
+      /// </summary>
+      public sealed partial class TargetRoas : pb::IMessage<TargetRoas>
+      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          , pb::IBufferMessage
+      #endif
+      {
+        private static readonly pb::MessageParser<TargetRoas> _parser = new pb::MessageParser<TargetRoas>(() => new TargetRoas());
+        private pb::UnknownFieldSet _unknownFields;
+        private int _hasBits0;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<TargetRoas> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Descriptor.NestedTypes[2]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public TargetRoas() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public TargetRoas(TargetRoas other) : this() {
+          _hasBits0 = other._hasBits0;
+          targetRoas_ = other.targetRoas_;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public TargetRoas Clone() {
+          return new TargetRoas(this);
+        }
+
+        /// <summary>Field number for the "target_roas" field.</summary>
+        public const int TargetRoas_FieldNumber = 1;
+        private double targetRoas_;
+        /// <summary>
+        /// Output only. The desired revenue (based on conversion data) per unit of spend.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public double TargetRoas_ {
+          get { if ((_hasBits0 & 1) != 0) { return targetRoas_; } else { return 0D; } }
+          set {
+            _hasBits0 |= 1;
+            targetRoas_ = value;
+          }
+        }
+        /// <summary>Gets whether the "target_roas" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool HasTargetRoas_ {
+          get { return (_hasBits0 & 1) != 0; }
+        }
+        /// <summary>Clears the value of the "target_roas" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void ClearTargetRoas_() {
+          _hasBits0 &= ~1;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as TargetRoas);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(TargetRoas other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(TargetRoas_, other.TargetRoas_)) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (HasTargetRoas_) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(TargetRoas_);
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          output.WriteRawMessage(this);
+        #else
+          if (HasTargetRoas_) {
+            output.WriteRawTag(9);
+            output.WriteDouble(TargetRoas_);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+          if (HasTargetRoas_) {
+            output.WriteRawTag(9);
+            output.WriteDouble(TargetRoas_);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(ref output);
+          }
+        }
+        #endif
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (HasTargetRoas_) {
+            size += 1 + 8;
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(TargetRoas other) {
+          if (other == null) {
+            return;
+          }
+          if (other.HasTargetRoas_) {
+            TargetRoas_ = other.TargetRoas_;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          input.ReadRawMessage(this);
+        #else
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 9: {
+                TargetRoas_ = input.ReadDouble();
+                break;
+              }
+            }
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                break;
+              case 9: {
+                TargetRoas_ = input.ReadDouble();
+                break;
+              }
+            }
+          }
+        }
+        #endif
+
+      }
+
+      /// <summary>
       /// An automated bid strategy that sets bids to help get as many conversions as
       /// possible at the target cost-per-acquisition (CPA) you set.
       /// </summary>
@@ -1217,7 +1409,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Descriptor.NestedTypes[2]; }
+          get { return global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Descriptor.NestedTypes[3]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1385,198 +1577,6 @@ namespace Google.Ads.GoogleAds.V8.Resources {
                 break;
               case 8: {
                 TargetCpaMicros = input.ReadInt64();
-                break;
-              }
-            }
-          }
-        }
-        #endif
-
-      }
-
-      /// <summary>
-      /// An automated bidding strategy that helps you maximize revenue while
-      /// averaging a specific target return on ad spend (ROAS).
-      /// </summary>
-      public sealed partial class TargetRoas : pb::IMessage<TargetRoas>
-      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          , pb::IBufferMessage
-      #endif
-      {
-        private static readonly pb::MessageParser<TargetRoas> _parser = new pb::MessageParser<TargetRoas>(() => new TargetRoas());
-        private pb::UnknownFieldSet _unknownFields;
-        private int _hasBits0;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<TargetRoas> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Descriptor.NestedTypes[3]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public TargetRoas() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public TargetRoas(TargetRoas other) : this() {
-          _hasBits0 = other._hasBits0;
-          targetRoas_ = other.targetRoas_;
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public TargetRoas Clone() {
-          return new TargetRoas(this);
-        }
-
-        /// <summary>Field number for the "target_roas" field.</summary>
-        public const int TargetRoas_FieldNumber = 1;
-        private double targetRoas_;
-        /// <summary>
-        /// Output only. The desired revenue (based on conversion data) per unit of spend.
-        /// </summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public double TargetRoas_ {
-          get { if ((_hasBits0 & 1) != 0) { return targetRoas_; } else { return 0D; } }
-          set {
-            _hasBits0 |= 1;
-            targetRoas_ = value;
-          }
-        }
-        /// <summary>Gets whether the "target_roas" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasTargetRoas_ {
-          get { return (_hasBits0 & 1) != 0; }
-        }
-        /// <summary>Clears the value of the "target_roas" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearTargetRoas_() {
-          _hasBits0 &= ~1;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as TargetRoas);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(TargetRoas other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(TargetRoas_, other.TargetRoas_)) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          if (HasTargetRoas_) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(TargetRoas_);
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          output.WriteRawMessage(this);
-        #else
-          if (HasTargetRoas_) {
-            output.WriteRawTag(9);
-            output.WriteDouble(TargetRoas_);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-          if (HasTargetRoas_) {
-            output.WriteRawTag(9);
-            output.WriteDouble(TargetRoas_);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(ref output);
-          }
-        }
-        #endif
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          if (HasTargetRoas_) {
-            size += 1 + 8;
-          }
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(TargetRoas other) {
-          if (other == null) {
-            return;
-          }
-          if (other.HasTargetRoas_) {
-            TargetRoas_ = other.TargetRoas_;
-          }
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          input.ReadRawMessage(this);
-        #else
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 9: {
-                TargetRoas_ = input.ReadDouble();
-                break;
-              }
-            }
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-                break;
-              case 9: {
-                TargetRoas_ = input.ReadDouble();
                 break;
               }
             }

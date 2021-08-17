@@ -26,16 +26,16 @@ namespace Google.Ads.GoogleAds.V8.Enums {
           string.Concat(
             "Cj5nb29nbGUvYWRzL2dvb2dsZWFkcy92OC9lbnVtcy9jb252ZXJzaW9uX2Fk",
             "anVzdG1lbnRfdHlwZS5wcm90bxIdZ29vZ2xlLmFkcy5nb29nbGVhZHMudjgu",
-            "ZW51bXMaHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8ieQocQ29udmVy",
-            "c2lvbkFkanVzdG1lbnRUeXBlRW51bSJZChhDb252ZXJzaW9uQWRqdXN0bWVu",
-            "dFR5cGUSDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESDgoKUkVUUkFD",
-            "VElPThACEg8KC1JFU1RBVEVNRU5UEANC8gEKIWNvbS5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52OC5lbnVtc0IdQ29udmVyc2lvbkFkanVzdG1lbnRUeXBlUHJv",
-            "dG9QAVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9h",
-            "ZHMvZ29vZ2xlYWRzL3Y4L2VudW1zO2VudW1zogIDR0FBqgIdR29vZ2xlLkFk",
-            "cy5Hb29nbGVBZHMuVjguRW51bXPKAh1Hb29nbGVcQWRzXEdvb2dsZUFkc1xW",
-            "OFxFbnVtc+oCIUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlY4OjpFbnVtc2IG",
-            "cHJvdG8z"));
+            "ZW51bXMaHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8iigEKHENvbnZl",
+            "cnNpb25BZGp1c3RtZW50VHlwZUVudW0iagoYQ29udmVyc2lvbkFkanVzdG1l",
+            "bnRUeXBlEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEg4KClJFVFJB",
+            "Q1RJT04QAhIPCgtSRVNUQVRFTUVOVBADEg8KC0VOSEFOQ0VNRU5UEARC8gEK",
+            "IWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52OC5lbnVtc0IdQ29udmVyc2lv",
+            "bkFkanVzdG1lbnRUeXBlUHJvdG9QAVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2Vu",
+            "cHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Y4L2VudW1zO2VudW1z",
+            "ogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjguRW51bXPKAh1Hb29n",
+            "bGVcQWRzXEdvb2dsZUFkc1xWOFxFbnVtc+oCIUdvb2dsZTo6QWRzOjpHb29n",
+            "bGVBZHM6OlY4OjpFbnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -209,6 +209,11 @@ namespace Google.Ads.GoogleAds.V8.Enums {
         /// Changes the value of a conversion.
         /// </summary>
         [pbr::OriginalName("RESTATEMENT")] Restatement = 3,
+        /// <summary>
+        /// Supplements an existing conversion with provided user identifiers and
+        /// user agent, which can be used by Google to enhance the conversion count.
+        /// </summary>
+        [pbr::OriginalName("ENHANCEMENT")] Enhancement = 4,
       }
 
     }

@@ -26,19 +26,22 @@ namespace Google.Ads.GoogleAds.V8.Enums {
           string.Concat(
             "Cj9nb29nbGUvYWRzL2dvb2dsZWFkcy92OC9lbnVtcy9jaGFuZ2Vfc3RhdHVz",
             "X3Jlc291cmNlX3R5cGUucHJvdG8SHWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4",
-            "LmVudW1zGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIpACChxDaGFu",
-            "Z2VTdGF0dXNSZXNvdXJjZVR5cGVFbnVtIu8BChhDaGFuZ2VTdGF0dXNSZXNv",
+            "LmVudW1zGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIoADChxDaGFu",
+            "Z2VTdGF0dXNSZXNvdXJjZVR5cGVFbnVtIt8CChhDaGFuZ2VTdGF0dXNSZXNv",
             "dXJjZVR5cGUSDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESDAoIQURf",
             "R1JPVVAQAxIPCgtBRF9HUk9VUF9BRBAEEhYKEkFEX0dST1VQX0NSSVRFUklP",
             "ThAFEgwKCENBTVBBSUdOEAYSFgoSQ0FNUEFJR05fQ1JJVEVSSU9OEAcSCAoE",
             "RkVFRBAJEg0KCUZFRURfSVRFTRAKEhEKDUFEX0dST1VQX0ZFRUQQCxIRCg1D",
-            "QU1QQUlHTl9GRUVEEAwSGQoVQURfR1JPVVBfQklEX01PRElGSUVSEA1C8gEK",
-            "IWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52OC5lbnVtc0IdQ2hhbmdlU3Rh",
-            "dHVzUmVzb3VyY2VUeXBlUHJvdG9QAVpCZ29vZ2xlLmdvbGFuZy5vcmcvZ2Vu",
-            "cHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Y4L2VudW1zO2VudW1z",
-            "ogIDR0FBqgIdR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjguRW51bXPKAh1Hb29n",
-            "bGVcQWRzXEdvb2dsZUFkc1xWOFxFbnVtc+oCIUdvb2dsZTo6QWRzOjpHb29n",
-            "bGVBZHM6OlY4OjpFbnVtc2IGcHJvdG8z"));
+            "QU1QQUlHTl9GRUVEEAwSGQoVQURfR1JPVVBfQklEX01PRElGSUVSEA0SDgoK",
+            "U0hBUkVEX1NFVBAOEhcKE0NBTVBBSUdOX1NIQVJFRF9TRVQQDxIJCgVBU1NF",
+            "VBAQEhIKDkNVU1RPTUVSX0FTU0VUEBESEgoOQ0FNUEFJR05fQVNTRVQQEhIS",
+            "Cg5BRF9HUk9VUF9BU1NFVBATQvIBCiFjb20uZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjguZW51bXNCHUNoYW5nZVN0YXR1c1Jlc291cmNlVHlwZVByb3RvUAFa",
+            "Qmdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dv",
+            "b2dsZWFkcy92OC9lbnVtcztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29v",
+            "Z2xlQWRzLlY4LkVudW1zygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjhcRW51",
+            "bXPqAiFHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWODo6RW51bXNiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -244,6 +247,30 @@ namespace Google.Ads.GoogleAds.V8.Enums {
         /// An AdGroupBidModifier resource change.
         /// </summary>
         [pbr::OriginalName("AD_GROUP_BID_MODIFIER")] AdGroupBidModifier = 13,
+        /// <summary>
+        /// A SharedSet resource change.
+        /// </summary>
+        [pbr::OriginalName("SHARED_SET")] SharedSet = 14,
+        /// <summary>
+        /// A CampaignSharedSet resource change.
+        /// </summary>
+        [pbr::OriginalName("CAMPAIGN_SHARED_SET")] CampaignSharedSet = 15,
+        /// <summary>
+        /// An Asset resource change.
+        /// </summary>
+        [pbr::OriginalName("ASSET")] Asset = 16,
+        /// <summary>
+        /// A CustomerAsset resource change.
+        /// </summary>
+        [pbr::OriginalName("CUSTOMER_ASSET")] CustomerAsset = 17,
+        /// <summary>
+        /// A CampaignAsset resource change.
+        /// </summary>
+        [pbr::OriginalName("CAMPAIGN_ASSET")] CampaignAsset = 18,
+        /// <summary>
+        /// An AdGroupAsset resource change.
+        /// </summary>
+        [pbr::OriginalName("AD_GROUP_ASSET")] AdGroupAsset = 19,
       }
 
     }

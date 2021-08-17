@@ -62,6 +62,8 @@ namespace Google.Ads.GoogleAds.V8.Services {
 
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignBudgetOptionsRequest> __Marshaller_google_ads_googleads_v8_services_SuggestSmartCampaignBudgetOptionsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignBudgetOptionsRequest.Parser));
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignBudgetOptionsResponse> __Marshaller_google_ads_googleads_v8_services_SuggestSmartCampaignBudgetOptionsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignBudgetOptionsResponse.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignAdRequest> __Marshaller_google_ads_googleads_v8_services_SuggestSmartCampaignAdRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignAdRequest.Parser));
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignAdResponse> __Marshaller_google_ads_googleads_v8_services_SuggestSmartCampaignAdResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignAdResponse.Parser));
 
     static readonly grpc::Method<global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignBudgetOptionsRequest, global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignBudgetOptionsResponse> __Method_SuggestSmartCampaignBudgetOptions = new grpc::Method<global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignBudgetOptionsRequest, global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignBudgetOptionsResponse>(
         grpc::MethodType.Unary,
@@ -69,6 +71,13 @@ namespace Google.Ads.GoogleAds.V8.Services {
         "SuggestSmartCampaignBudgetOptions",
         __Marshaller_google_ads_googleads_v8_services_SuggestSmartCampaignBudgetOptionsRequest,
         __Marshaller_google_ads_googleads_v8_services_SuggestSmartCampaignBudgetOptionsResponse);
+
+    static readonly grpc::Method<global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignAdRequest, global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignAdResponse> __Method_SuggestSmartCampaignAd = new grpc::Method<global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignAdRequest, global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignAdResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "SuggestSmartCampaignAd",
+        __Marshaller_google_ads_googleads_v8_services_SuggestSmartCampaignAdRequest,
+        __Marshaller_google_ads_googleads_v8_services_SuggestSmartCampaignAdResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -87,6 +96,18 @@ namespace Google.Ads.GoogleAds.V8.Services {
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignBudgetOptionsResponse> SuggestSmartCampaignBudgetOptions(global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignBudgetOptionsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Suggests a Smart campaign ad compatible with the Ad family of resources,
+      /// based on data points such as targeting and the business to advertise.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignAdResponse> SuggestSmartCampaignAd(global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignAdRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -160,6 +181,54 @@ namespace Google.Ads.GoogleAds.V8.Services {
       {
         return CallInvoker.AsyncUnaryCall(__Method_SuggestSmartCampaignBudgetOptions, null, options, request);
       }
+      /// <summary>
+      /// Suggests a Smart campaign ad compatible with the Ad family of resources,
+      /// based on data points such as targeting and the business to advertise.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignAdResponse SuggestSmartCampaignAd(global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignAdRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SuggestSmartCampaignAd(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Suggests a Smart campaign ad compatible with the Ad family of resources,
+      /// based on data points such as targeting and the business to advertise.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignAdResponse SuggestSmartCampaignAd(global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignAdRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SuggestSmartCampaignAd, null, options, request);
+      }
+      /// <summary>
+      /// Suggests a Smart campaign ad compatible with the Ad family of resources,
+      /// based on data points such as targeting and the business to advertise.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignAdResponse> SuggestSmartCampaignAdAsync(global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignAdRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SuggestSmartCampaignAdAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Suggests a Smart campaign ad compatible with the Ad family of resources,
+      /// based on data points such as targeting and the business to advertise.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignAdResponse> SuggestSmartCampaignAdAsync(global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignAdRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SuggestSmartCampaignAd, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override SmartCampaignSuggestServiceClient NewInstance(ClientBaseConfiguration configuration)
       {
@@ -172,7 +241,8 @@ namespace Google.Ads.GoogleAds.V8.Services {
     public static grpc::ServerServiceDefinition BindService(SmartCampaignSuggestServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_SuggestSmartCampaignBudgetOptions, serviceImpl.SuggestSmartCampaignBudgetOptions).Build();
+          .AddMethod(__Method_SuggestSmartCampaignBudgetOptions, serviceImpl.SuggestSmartCampaignBudgetOptions)
+          .AddMethod(__Method_SuggestSmartCampaignAd, serviceImpl.SuggestSmartCampaignAd).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -182,6 +252,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, SmartCampaignSuggestServiceBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_SuggestSmartCampaignBudgetOptions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignBudgetOptionsRequest, global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignBudgetOptionsResponse>(serviceImpl.SuggestSmartCampaignBudgetOptions));
+      serviceBinder.AddMethod(__Method_SuggestSmartCampaignAd, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignAdRequest, global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignAdResponse>(serviceImpl.SuggestSmartCampaignAd));
     }
 
   }

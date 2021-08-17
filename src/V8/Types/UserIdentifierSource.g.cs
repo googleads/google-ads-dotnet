@@ -47,7 +47,7 @@ namespace Google.Ads.GoogleAds.V8.Enums {
   #region Messages
   /// <summary>
   /// Container for enum describing the source of the user identifier for offline
-  /// Store Sales third party uploads.
+  /// Store Sales, click conversion, and conversion adjustment uploads.
   /// </summary>
   public sealed partial class UserIdentifierSourceEnum : pb::IMessage<UserIdentifierSourceEnum>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -188,8 +188,8 @@ namespace Google.Ads.GoogleAds.V8.Enums {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static partial class Types {
       /// <summary>
-      /// The type of user identifier source for offline Store Sales third party
-      /// uploads.
+      /// The type of user identifier source for offline Store Sales, click
+      /// conversion, and conversion adjustment uploads.
       /// </summary>
       public enum UserIdentifierSource {
         /// <summary>

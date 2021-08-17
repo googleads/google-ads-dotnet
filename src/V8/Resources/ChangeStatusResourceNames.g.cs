@@ -342,5 +342,58 @@ namespace Google.Ads.GoogleAds.V8.Resources
             get => string.IsNullOrEmpty(AdGroupBidModifier) ? null : AdGroupBidModifierName.Parse(AdGroupBidModifier, allowUnparsed: true);
             set => AdGroupBidModifier = value?.ToString() ?? "";
         }
+
+        /// <summary>
+        /// <see cref="SharedSetName"/>-typed view over the <see cref="SharedSet"/> resource name property.
+        /// </summary>
+        internal SharedSetName SharedSetAsSharedSetName
+        {
+            get => string.IsNullOrEmpty(SharedSet) ? null : SharedSetName.Parse(SharedSet, allowUnparsed: true);
+            set => SharedSet = value?.ToString() ?? "";
+        }
+
+        /// <summary>
+        /// <see cref="CampaignSharedSetName"/>-typed view over the <see cref="CampaignSharedSet"/> resource name
+        /// property.
+        /// </summary>
+        internal CampaignSharedSetName CampaignSharedSetAsCampaignSharedSetName
+        {
+            get => string.IsNullOrEmpty(CampaignSharedSet) ? null : CampaignSharedSetName.Parse(CampaignSharedSet, allowUnparsed: true);
+            set => CampaignSharedSet = value?.ToString() ?? "";
+        }
+
+        /// <summary><see cref="AssetName"/>-typed view over the <see cref="Asset"/> resource name property.</summary>
+        internal AssetName AssetAsAssetName
+        {
+            get => string.IsNullOrEmpty(Asset) ? null : AssetName.Parse(Asset, allowUnparsed: true);
+            set => Asset = value?.ToString() ?? "";
+        }
+
+        /// <summary>
+        /// <see cref="CustomerAssetName"/>-typed view over the <see cref="CustomerAsset"/> resource name property.
+        /// </summary>
+        internal CustomerAssetName CustomerAssetAsCustomerAssetName
+        {
+            get => string.IsNullOrEmpty(CustomerAsset) ? null : CustomerAssetName.Parse(CustomerAsset, allowUnparsed: true);
+            set => CustomerAsset = value?.ToString() ?? "";
+        }
+
+        /// <summary>
+        /// <see cref="CampaignAssetName"/>-typed view over the <see cref="CampaignAsset"/> resource name property.
+        /// </summary>
+        internal CampaignAssetName CampaignAssetAsCampaignAssetName
+        {
+            get => string.IsNullOrEmpty(CampaignAsset) ? null : CampaignAssetName.Parse(CampaignAsset, allowUnparsed: true);
+            set => CampaignAsset = value?.ToString() ?? "";
+        }
+
+        /// <summary>
+        /// <see cref="AdGroupAssetName"/>-typed view over the <see cref="AdGroupAsset"/> resource name property.
+        /// </summary>
+        internal AdGroupAssetName AdGroupAssetAsAdGroupAssetName
+        {
+            get => string.IsNullOrEmpty(AdGroupAsset) ? null : AdGroupAssetName.Parse(AdGroupAsset, allowUnparsed: true);
+            set => AdGroupAsset = value?.ToString() ?? "";
+        }
     }
 }

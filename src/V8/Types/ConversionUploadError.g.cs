@@ -26,8 +26,8 @@ namespace Google.Ads.GoogleAds.V8.Errors {
           string.Concat(
             "Cjxnb29nbGUvYWRzL2dvb2dsZWFkcy92OC9lcnJvcnMvY29udmVyc2lvbl91",
             "cGxvYWRfZXJyb3IucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LmVy",
-            "cm9ycxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byKKCAoZQ29udmVy",
-            "c2lvblVwbG9hZEVycm9yRW51bSLsBwoVQ29udmVyc2lvblVwbG9hZEVycm9y",
+            "cm9ycxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLRCQoZQ29udmVy",
+            "c2lvblVwbG9hZEVycm9yRW51bSKzCQoVQ29udmVyc2lvblVwbG9hZEVycm9y",
             "Eg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEiMKH1RPT19NQU5ZX0NP",
             "TlZFUlNJT05TX0lOX1JFUVVFU1QQAhIVChFVTlBBUlNFQUJMRV9HQ0xJRBAD",
             "Eh0KGUNPTlZFUlNJT05fUFJFQ0VERVNfR0NMSUQQBBIRCg1FWFBJUkVEX0dD",
@@ -49,13 +49,17 @@ namespace Google.Ads.GoogleAds.V8.Errors {
             "VkFSSUFCTEVfTk9UX0VOQUJMRUQQHBImCiJDVVNUT01fVkFSSUFCTEVfVkFM",
             "VUVfQ09OVEFJTlNfUElJEB0SHgoaSU5WQUxJRF9DVVNUT01FUl9GT1JfQ0xJ",
             "Q0sQHhIdChlJTlZBTElEX0NVU1RPTUVSX0ZPUl9DQUxMEB8SLAooQ09OVkVS",
-            "U0lPTl9OT1RfQ09NUExJQU5UX1dJVEhfQVRUX1BPTElDWRAgQvUBCiJjb20u",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjguZXJyb3JzQhpDb252ZXJzaW9uVXBs",
-            "b2FkRXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9n",
-            "b29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjgvZXJyb3JzO2Vycm9yc6ICA0dB",
-            "QaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlY4LkVycm9yc8oCHkdvb2dsZVxB",
-            "ZHNcR29vZ2xlQWRzXFY4XEVycm9yc+oCIkdvb2dsZTo6QWRzOjpHb29nbGVB",
-            "ZHM6OlY4OjpFcnJvcnNiBnByb3RvMw=="));
+            "U0lPTl9OT1RfQ09NUExJQU5UX1dJVEhfQVRUX1BPTElDWRAgEhMKD0NMSUNL",
+            "X05PVF9GT1VORBAhEhsKF0lOVkFMSURfVVNFUl9JREVOVElGSUVSECISTgpK",
+            "RVhURVJOQUxMWV9BVFRSSUJVVEVEX0NPTlZFUlNJT05fQUNUSU9OX05PVF9Q",
+            "RVJNSVRURURfV0lUSF9VU0VSX0lERU5USUZJRVIQIxIfChtVTlNVUFBPUlRF",
+            "RF9VU0VSX0lERU5USUZJRVIQJBIiCh5JTlZBTElEX1VTRVJfSURFTlRJRklF",
+            "Ul9TT1VSQ0UQJUL1AQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LmVy",
+            "cm9yc0IaQ29udmVyc2lvblVwbG9hZEVycm9yUHJvdG9QAVpEZ29vZ2xlLmdv",
+            "bGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Y4",
+            "L2Vycm9ycztlcnJvcnOiAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5W",
+            "OC5FcnJvcnPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWOFxFcnJvcnPqAiJH",
+            "b29nbGU6OkFkczo6R29vZ2xlQWRzOjpWODo6RXJyb3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -351,6 +355,30 @@ namespace Google.Ads.GoogleAds.V8.Errors {
         /// converted didn't consent to tracking.
         /// </summary>
         [pbr::OriginalName("CONVERSION_NOT_COMPLIANT_WITH_ATT_POLICY")] ConversionNotCompliantWithAttPolicy = 32,
+        /// <summary>
+        /// No click was found for the provided user identifiers that could be
+        /// applied to the specified conversion action.
+        /// </summary>
+        [pbr::OriginalName("CLICK_NOT_FOUND")] ClickNotFound = 33,
+        /// <summary>
+        /// The provided user identifier is not a SHA-256 hash. It is either unhashed
+        /// or hashed using a different hash function.
+        /// </summary>
+        [pbr::OriginalName("INVALID_USER_IDENTIFIER")] InvalidUserIdentifier = 34,
+        /// <summary>
+        /// Conversion actions which use an external attribution model cannot be used
+        /// with UserIdentifier.
+        /// </summary>
+        [pbr::OriginalName("EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION_NOT_PERMITTED_WITH_USER_IDENTIFIER")] ExternallyAttributedConversionActionNotPermittedWithUserIdentifier = 35,
+        /// <summary>
+        /// The provided user identifier is not supported. ConversionUploadService
+        /// only supports hashed_email and hashed_phone_number.
+        /// </summary>
+        [pbr::OriginalName("UNSUPPORTED_USER_IDENTIFIER")] UnsupportedUserIdentifier = 36,
+        /// <summary>
+        /// The user_identifier_source must be FIRST_PARTY for conversion uploads.
+        /// </summary>
+        [pbr::OriginalName("INVALID_USER_IDENTIFIER_SOURCE")] InvalidUserIdentifierSource = 37,
       }
 
     }

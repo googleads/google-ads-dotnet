@@ -50,7 +50,7 @@ namespace Google.Ads.GoogleAds.Examples
             // Environment.SetEnvironmentVariable("GRPC_TRACE", "http");
 
             // If you simply want to try out a code example, you can create an instance of it here,
-            // and call it's Run method. E.g.
+            // and call its Run method. E.g.
 
             // Optional: If you have specified these keys in the App.config file, you can skip
             // creating a GoogleAdsConfig object and do
@@ -123,15 +123,24 @@ namespace Google.Ads.GoogleAds.Examples
                 runner.Run(exampleName, args.Skip(1));
                 return 0;
             }
-            catch (Exception e) when (e is KeyNotFoundException || e is ArgumentException)
+            catch (Exception e) when (e is KeyNotFoundException)
             {
-                // Bad command line parameter.
+                // First arg is not a valid example name.
+                Console.WriteLine("First arg is not a valid example name");
                 ShowUsage(runner);
                 return 2;
             }
-            catch
+            catch (Exception e) when (e is ArgumentException)
+            {
+                // Args passed to runner are invalid
+                Console.WriteLine(e.Message);
+                Console.WriteLine(ExampleBase.GetUsage(runner.GetCodeExampleType(exampleName)));
+                return 2;
+            }
+            catch (Exception e)
             {
                 // Indicates a failure due to an unhandled exception.
+                Console.WriteLine(e.Message);
                 return 1;
             }
         }

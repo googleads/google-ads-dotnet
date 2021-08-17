@@ -290,13 +290,9 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         = pb::FieldCodec.ForString(218);
     private readonly pbc::RepeatedField<string> metrics_ = new pbc::RepeatedField<string>();
     /// <summary>
-    /// Output only. At and beyond version V1 this field lists the names of all metrics that are
-    /// selectable with the described artifact when it is used in the FROM clause.
+    /// Output only. This field lists the names of all metrics that are selectable with the
+    /// described artifact when it is used in the FROM clause.
     /// It is only set for artifacts whose category is RESOURCE.
-    ///
-    /// Before version V1 this field lists the names of all metrics that are
-    /// selectable with the described artifact. It is only set for artifacts whose
-    /// category is either RESOURCE or SEGMENT
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<string> Metrics {
@@ -309,15 +305,10 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         = pb::FieldCodec.ForString(226);
     private readonly pbc::RepeatedField<string> segments_ = new pbc::RepeatedField<string>();
     /// <summary>
-    /// Output only. At and beyond version V1 this field lists the names of all artifacts,
-    /// whether a segment or another resource, that segment metrics when included
-    /// in search queries and when the described artifact is used in the FROM
-    /// clause. It is only set for artifacts whose category is RESOURCE.
-    ///
-    /// Before version V1 this field lists the names of all artifacts, whether a
-    /// segment or another resource, that segment metrics when included in search
-    /// queries. It is only set for artifacts of category RESOURCE, SEGMENT or
-    /// METRIC.
+    /// Output only. This field lists the names of all artifacts, whether a segment or another
+    /// resource, that segment metrics when included in search queries and when the
+    /// described artifact is used in the FROM clause. It is only set for artifacts
+    /// whose category is RESOURCE.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<string> Segments {

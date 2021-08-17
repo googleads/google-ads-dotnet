@@ -84,7 +84,7 @@ namespace Google.Ads.GoogleAds.Examples.V8
 
         private const string MARKETING_IMAGE_URL = "https://goo.gl/3b9Wfh";
         private const string LOGO_IMAGE_URL = "https://goo.gl/mtt54n";
-        private const string YOUTUBE_VIDEO_ID = "t1fDo0VyeEo";
+        private const string YOUTUBE_VIDEO_ID = "ECpDzH9gXh8";
 
         /// <summary>
         /// Returns a description about the code example.

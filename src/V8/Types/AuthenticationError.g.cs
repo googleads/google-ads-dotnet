@@ -215,11 +215,11 @@ namespace Google.Ads.GoogleAds.V8.Errors {
         /// </summary>
         [pbr::OriginalName("AUTHENTICATION_ERROR")] AuthenticationError = 2,
         /// <summary>
-        /// Client Customer Id is not a number.
+        /// Client Customer ID is not a number.
         /// </summary>
         [pbr::OriginalName("CLIENT_CUSTOMER_ID_INVALID")] ClientCustomerIdInvalid = 5,
         /// <summary>
-        /// No customer found for the provided customer id.
+        /// No customer found for the provided customer ID.
         /// </summary>
         [pbr::OriginalName("CUSTOMER_NOT_FOUND")] CustomerNotFound = 8,
         /// <summary>
@@ -235,7 +235,7 @@ namespace Google.Ads.GoogleAds.V8.Errors {
         /// </summary>
         [pbr::OriginalName("GOOGLE_ACCOUNT_AUTHENTICATION_FAILED")] GoogleAccountAuthenticationFailed = 25,
         /// <summary>
-        /// The user in the google account login token does not match the UserId in
+        /// The user in the Google account login token does not match the user ID in
         /// the cookie.
         /// </summary>
         [pbr::OriginalName("GOOGLE_ACCOUNT_USER_AND_ADS_USER_MISMATCH")] GoogleAccountUserAndAdsUserMismatch = 12,

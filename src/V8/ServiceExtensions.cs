@@ -43,6 +43,8 @@ namespace Google.Ads.GoogleAds.V8.Services
     public abstract partial class AssetFieldTypeViewServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class AssetServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class BatchJobServiceClient : GoogleAdsServiceClientBase { }
+    public abstract partial class BiddingDataExclusionServiceClient : GoogleAdsServiceClientBase { }
+    public abstract partial class BiddingSeasonalityAdjustmentServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class BiddingStrategyServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class BiddingStrategySimulationServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class BillingSetupServiceClient : GoogleAdsServiceClientBase { }
@@ -68,6 +70,8 @@ namespace Google.Ads.GoogleAds.V8.Services
     public abstract partial class ConversionAdjustmentUploadServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class ConversionCustomVariableServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class ConversionUploadServiceClient : GoogleAdsServiceClientBase { }
+    public abstract partial class ConversionValueRuleServiceClient : GoogleAdsServiceClientBase { }
+    public abstract partial class ConversionValueRuleSetServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class CurrencyConstantServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class CustomAudienceServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class CustomInterestServiceClient : GoogleAdsServiceClientBase { }
