@@ -25,7 +25,6 @@ using grpc = global::Grpc.Core;
 namespace Google.Ads.GoogleAds.V8.Services {
   /// <summary>
   /// Service to manage user data uploads.
-  /// Accessible only to customers on the allow-list.
   /// </summary>
   public static partial class UserDataService
   {

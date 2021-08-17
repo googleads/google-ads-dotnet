@@ -22,8 +22,12 @@
     <None Remove="Migration\**" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migration\CampaignReportToCsv.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Google.Ads.Common" Version="9.5.1" />
     <PackageReference Condition="!Exists('..\src\Google.Ads.GoogleAds.csproj')"
-        Include="Google.Ads.GoogleAds" Version="9.0.0" />
+        Include="Google.Ads.GoogleAds" Version="10.0.0" />
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>

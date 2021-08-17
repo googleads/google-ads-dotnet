@@ -34,7 +34,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
             "bGVhZHMvdjgvZW51bXMvcG9saWN5X3Jldmlld19zdGF0dXMucHJvdG8aKmdv",
             "b2dsZS9hZHMvZ29vZ2xlYWRzL3Y4L3Jlc291cmNlcy9hZC5wcm90bxofZ29v",
             "Z2xlL2FwaS9maWVsZF9iZWhhdmlvci5wcm90bxoZZ29vZ2xlL2FwaS9yZXNv",
-            "dXJjZS5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byL4BAoJ",
+            "dXJjZS5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byKTBQoJ",
             "QWRHcm91cEFkEkEKDXJlc291cmNlX25hbWUYASABKAlCKuBBBfpBJAoiZ29v",
             "Z2xlYWRzLmdvb2dsZWFwaXMuY29tL0FkR3JvdXBBZBJSCgZzdGF0dXMYAyAB",
             "KA4yQi5nb29nbGUuYWRzLmdvb2dsZWFkcy52OC5lbnVtcy5BZEdyb3VwQWRT",
@@ -45,27 +45,28 @@ namespace Google.Ads.GoogleAds.V8.Resources {
             "YWRzLmdvb2dsZWFkcy52OC5yZXNvdXJjZXMuQWRHcm91cEFkUG9saWN5U3Vt",
             "bWFyeUID4EEDElIKC2FkX3N0cmVuZ3RoGAcgASgOMjguZ29vZ2xlLmFkcy5n",
             "b29nbGVhZHMudjguZW51bXMuQWRTdHJlbmd0aEVudW0uQWRTdHJlbmd0aEID",
-            "4EEDEj8KBmxhYmVscxgKIAMoCUIv4EED+kEpCidnb29nbGVhZHMuZ29vZ2xl",
-            "YXBpcy5jb20vQWRHcm91cEFkTGFiZWw6YepBXgoiZ29vZ2xlYWRzLmdvb2ds",
-            "ZWFwaXMuY29tL0FkR3JvdXBBZBI4Y3VzdG9tZXJzL3tjdXN0b21lcl9pZH0v",
-            "YWRHcm91cEFkcy97YWRfZ3JvdXBfaWR9fnthZF9pZH1CCwoJX2FkX2dyb3Vw",
-            "Ir8CChZBZEdyb3VwQWRQb2xpY3lTdW1tYXJ5ElMKFHBvbGljeV90b3BpY19l",
-            "bnRyaWVzGAEgAygLMjAuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjguY29tbW9u",
-            "LlBvbGljeVRvcGljRW50cnlCA+BBAxJkCg1yZXZpZXdfc3RhdHVzGAIgASgO",
-            "MkguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjguZW51bXMuUG9saWN5UmV2aWV3",
-            "U3RhdHVzRW51bS5Qb2xpY3lSZXZpZXdTdGF0dXNCA+BBAxJqCg9hcHByb3Zh",
-            "bF9zdGF0dXMYAyABKA4yTC5nb29nbGUuYWRzLmdvb2dsZWFkcy52OC5lbnVt",
-            "cy5Qb2xpY3lBcHByb3ZhbFN0YXR1c0VudW0uUG9saWN5QXBwcm92YWxTdGF0",
-            "dXNCA+BBA0L7AQolY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LnJlc291",
-            "cmNlc0IOQWRHcm91cEFkUHJvdG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2Vu",
-            "cHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Y4L3Jlc291cmNlczty",
-            "ZXNvdXJjZXOiAgNHQUGqAiFHb29nbGUuQWRzLkdvb2dsZUFkcy5WOC5SZXNv",
-            "dXJjZXPKAiFHb29nbGVcQWRzXEdvb2dsZUFkc1xWOFxSZXNvdXJjZXPqAiVH",
-            "b29nbGU6OkFkczo6R29vZ2xlQWRzOjpWODo6UmVzb3VyY2VzYgZwcm90bzM="));
+            "4EEDEhkKDGFjdGlvbl9pdGVtcxgNIAMoCUID4EEDEj8KBmxhYmVscxgKIAMo",
+            "CUIv4EED+kEpCidnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vQWRHcm91cEFk",
+            "TGFiZWw6YepBXgoiZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0FkR3JvdXBB",
+            "ZBI4Y3VzdG9tZXJzL3tjdXN0b21lcl9pZH0vYWRHcm91cEFkcy97YWRfZ3Jv",
+            "dXBfaWR9fnthZF9pZH1CCwoJX2FkX2dyb3VwIr8CChZBZEdyb3VwQWRQb2xp",
+            "Y3lTdW1tYXJ5ElMKFHBvbGljeV90b3BpY19lbnRyaWVzGAEgAygLMjAuZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjguY29tbW9uLlBvbGljeVRvcGljRW50cnlC",
+            "A+BBAxJkCg1yZXZpZXdfc3RhdHVzGAIgASgOMkguZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjguZW51bXMuUG9saWN5UmV2aWV3U3RhdHVzRW51bS5Qb2xpY3lS",
+            "ZXZpZXdTdGF0dXNCA+BBAxJqCg9hcHByb3ZhbF9zdGF0dXMYAyABKA4yTC5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52OC5lbnVtcy5Qb2xpY3lBcHByb3ZhbFN0",
+            "YXR1c0VudW0uUG9saWN5QXBwcm92YWxTdGF0dXNCA+BBA0L7AQolY29tLmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnY4LnJlc291cmNlc0IOQWRHcm91cEFkUHJv",
+            "dG9QAVpKZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9h",
+            "ZHMvZ29vZ2xlYWRzL3Y4L3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGqAiFH",
+            "b29nbGUuQWRzLkdvb2dsZUFkcy5WOC5SZXNvdXJjZXPKAiFHb29nbGVcQWRz",
+            "XEdvb2dsZUFkc1xWOFxSZXNvdXJjZXPqAiVHb29nbGU6OkFkczo6R29vZ2xl",
+            "QWRzOjpWODo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V8.Common.PolicyReflection.Descriptor, global::Google.Ads.GoogleAds.V8.Enums.AdGroupAdStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V8.Enums.AdStrengthReflection.Descriptor, global::Google.Ads.GoogleAds.V8.Enums.PolicyApprovalStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V8.Enums.PolicyReviewStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V8.Resources.AdReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Resources.AdGroupAd), global::Google.Ads.GoogleAds.V8.Resources.AdGroupAd.Parser, new[]{ "ResourceName", "Status", "AdGroup", "Ad", "PolicySummary", "AdStrength", "Labels" }, new[]{ "AdGroup" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Resources.AdGroupAd), global::Google.Ads.GoogleAds.V8.Resources.AdGroupAd.Parser, new[]{ "ResourceName", "Status", "AdGroup", "Ad", "PolicySummary", "AdStrength", "ActionItems", "Labels" }, new[]{ "AdGroup" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Resources.AdGroupAdPolicySummary), global::Google.Ads.GoogleAds.V8.Resources.AdGroupAdPolicySummary.Parser, new[]{ "PolicyTopicEntries", "ReviewStatus", "ApprovalStatus" }, null, null, null, null)
           }));
     }
@@ -111,6 +112,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
       ad_ = other.ad_ != null ? other.ad_.Clone() : null;
       policySummary_ = other.policySummary_ != null ? other.policySummary_.Clone() : null;
       adStrength_ = other.adStrength_;
+      actionItems_ = other.actionItems_.Clone();
       labels_ = other.labels_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -217,6 +219,21 @@ namespace Google.Ads.GoogleAds.V8.Resources {
       }
     }
 
+    /// <summary>Field number for the "action_items" field.</summary>
+    public const int ActionItemsFieldNumber = 13;
+    private static readonly pb::FieldCodec<string> _repeated_actionItems_codec
+        = pb::FieldCodec.ForString(106);
+    private readonly pbc::RepeatedField<string> actionItems_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// Output only. A list of recommendations to improve the ad strength. For example, a
+    /// recommendation could be "Your headlines are a little too similar.
+    /// Try adding more distinct headlines.".
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<string> ActionItems {
+      get { return actionItems_; }
+    }
+
     /// <summary>Field number for the "labels" field.</summary>
     public const int LabelsFieldNumber = 10;
     private static readonly pb::FieldCodec<string> _repeated_labels_codec
@@ -249,6 +266,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
       if (!object.Equals(Ad, other.Ad)) return false;
       if (!object.Equals(PolicySummary, other.PolicySummary)) return false;
       if (AdStrength != other.AdStrength) return false;
+      if(!actionItems_.Equals(other.actionItems_)) return false;
       if(!labels_.Equals(other.labels_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -262,6 +280,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
       if (ad_ != null) hash ^= Ad.GetHashCode();
       if (policySummary_ != null) hash ^= PolicySummary.GetHashCode();
       if (AdStrength != global::Google.Ads.GoogleAds.V8.Enums.AdStrengthEnum.Types.AdStrength.Unspecified) hash ^= AdStrength.GetHashCode();
+      hash ^= actionItems_.GetHashCode();
       hash ^= labels_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -304,6 +323,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         output.WriteString(AdGroup);
       }
       labels_.WriteTo(output, _repeated_labels_codec);
+      actionItems_.WriteTo(output, _repeated_actionItems_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -338,6 +358,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         output.WriteString(AdGroup);
       }
       labels_.WriteTo(ref output, _repeated_labels_codec);
+      actionItems_.WriteTo(ref output, _repeated_actionItems_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -365,6 +386,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
       if (AdStrength != global::Google.Ads.GoogleAds.V8.Enums.AdStrengthEnum.Types.AdStrength.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) AdStrength);
       }
+      size += actionItems_.CalculateSize(_repeated_actionItems_codec);
       size += labels_.CalculateSize(_repeated_labels_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -401,6 +423,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
       if (other.AdStrength != global::Google.Ads.GoogleAds.V8.Enums.AdStrengthEnum.Types.AdStrength.Unspecified) {
         AdStrength = other.AdStrength;
       }
+      actionItems_.Add(other.actionItems_);
       labels_.Add(other.labels_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -450,6 +473,10 @@ namespace Google.Ads.GoogleAds.V8.Resources {
             labels_.AddEntriesFrom(input, _repeated_labels_codec);
             break;
           }
+          case 106: {
+            actionItems_.AddEntriesFrom(input, _repeated_actionItems_codec);
+            break;
+          }
         }
       }
     #endif
@@ -496,6 +523,10 @@ namespace Google.Ads.GoogleAds.V8.Resources {
           }
           case 82: {
             labels_.AddEntriesFrom(ref input, _repeated_labels_codec);
+            break;
+          }
+          case 106: {
+            actionItems_.AddEntriesFrom(ref input, _repeated_actionItems_codec);
             break;
           }
         }

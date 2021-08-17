@@ -2808,8 +2808,8 @@ namespace Google.Ads.GoogleAds.V8.Common {
     public const int UrlCollectionIdFieldNumber = 7;
     private string urlCollectionId_;
     /// <summary>
-    /// Identifies the url collection in the ad.url_collections field. If not set
-    /// the url defaults to final_url.
+    /// Identifies the URL collection in the `ad.url_collections` field. If not
+    /// set, the URL defaults to `final_url`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string UrlCollectionId {
@@ -6234,7 +6234,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     public const int Path1FieldNumber = 5;
     private string path1_;
     /// <summary>
-    /// First part of text that may appear appended to the url displayed in the ad.
+    /// First part of text that can be appended to the URL in the ad.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Path1 {
@@ -6258,8 +6258,8 @@ namespace Google.Ads.GoogleAds.V8.Common {
     public const int Path2FieldNumber = 6;
     private string path2_;
     /// <summary>
-    /// Second part of text that may appear appended to the url displayed in the
-    /// ad. This field can only be set when path1 is also set.
+    /// Second part of text that can be appended to the URL in the ad. This field
+    /// can only be set when `path1` is also set.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Path2 {
@@ -6615,8 +6615,8 @@ namespace Google.Ads.GoogleAds.V8.Common {
     /// Advertiser's consent to allow flexible color. When true, the ad may be
     /// served with different color if necessary. When false, the ad will be served
     /// with the specified colors or a neutral color.
-    /// The default value is true.
-    /// Must be true if main_color and accent_color are not set.
+    /// The default value is `true`.
+    /// Must be true if `main_color` and `accent_color` are not set.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool AllowFlexibleColor {
@@ -6642,7 +6642,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     private string accentColor_;
     /// <summary>
     /// The accent color of the ad in hexadecimal, e.g. #ffffff for white.
-    /// If one of main_color and accent_color is set, the other is required as
+    /// If one of `main_color` and `accent_color` is set, the other is required as
     /// well.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6668,7 +6668,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     private string mainColor_;
     /// <summary>
     /// The main color of the ad in hexadecimal, e.g. #ffffff for white.
-    /// If one of main_color and accent_color is set, the other is required as
+    /// If one of `main_color` and `accent_color` is set, the other is required as
     /// well.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7965,7 +7965,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     public const int AppIdFieldNumber = 6;
     private string appId_;
     /// <summary>
-    /// The id of the mobile app.
+    /// The ID of the mobile app.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string AppId {
@@ -8357,8 +8357,8 @@ namespace Google.Ads.GoogleAds.V8.Common {
     /// <summary>
     /// Marketing images to be used in the ad. Valid image types are GIF,
     /// JPEG, and PNG. The minimum size is 600x314 and the aspect ratio must
-    /// be 1.91:1 (+-1%). At least one marketing_image is required. Combined with
-    /// square_marketing_images the maximum is 15.
+    /// be 1.91:1 (+-1%). At least one `marketing_image` is required. Combined
+    /// with `square_marketing_images`, the maximum is 15.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Google.Ads.GoogleAds.V8.Common.AdImageAsset> MarketingImages {
@@ -8373,8 +8373,8 @@ namespace Google.Ads.GoogleAds.V8.Common {
     /// <summary>
     /// Square marketing images to be used in the ad. Valid image types are GIF,
     /// JPEG, and PNG. The minimum size is 300x300 and the aspect ratio must
-    /// be 1:1 (+-1%). At least one square marketing_image is required. Combined
-    /// with marketing_images the maximum is 15.
+    /// be 1:1 (+-1%). At least one square `marketing_image` is required. Combined
+    /// with `marketing_images`, the maximum is 15.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Google.Ads.GoogleAds.V8.Common.AdImageAsset> SquareMarketingImages {
@@ -8389,7 +8389,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     /// <summary>
     /// Logo images to be used in the ad. Valid image types are GIF,
     /// JPEG, and PNG. The minimum size is 512x128 and the aspect ratio must
-    /// be 4:1 (+-1%). Combined with square_logo_images the maximum is 5.
+    /// be 4:1 (+-1%). Combined with `square_logo_images`, the maximum is 5.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Google.Ads.GoogleAds.V8.Common.AdImageAsset> LogoImages {
@@ -8404,7 +8404,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     /// <summary>
     /// Square logo images to be used in the ad. Valid image types are GIF,
     /// JPEG, and PNG. The minimum size is 128x128 and the aspect ratio must
-    /// be 1:1 (+-1%). Combined with square_logo_images the maximum is 5.
+    /// be 1:1 (+-1%). Combined with `square_logo_images`, the maximum is 5.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Google.Ads.GoogleAds.V8.Common.AdImageAsset> SquareLogoImages {
@@ -8495,7 +8495,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     private string mainColor_;
     /// <summary>
     /// The main color of the ad in hexadecimal, e.g. #ffffff for white.
-    /// If one of main_color and accent_color is set, the other is required as
+    /// If one of `main_color` and `accent_color` is set, the other is required as
     /// well.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8521,7 +8521,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     private string accentColor_;
     /// <summary>
     /// The accent color of the ad in hexadecimal, e.g. #ffffff for white.
-    /// If one of main_color and accent_color is set, the other is required as
+    /// If one of `main_color` and `accent_color` is set, the other is required as
     /// well.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8549,8 +8549,8 @@ namespace Google.Ads.GoogleAds.V8.Common {
     /// Advertiser's consent to allow flexible color. When true, the ad may be
     /// served with different color if necessary. When false, the ad will be served
     /// with the specified colors or a neutral color.
-    /// The default value is true.
-    /// Must be true if main_color and accent_color are not set.
+    /// The default value is `true`.
+    /// Must be true if `main_color` and `accent_color` are not set.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool AllowFlexibleColor {
@@ -9268,8 +9268,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     public const int Path1FieldNumber = 9;
     private string path1_;
     /// <summary>
-    /// First part of optional text that may appear appended to the url displayed
-    /// in the ad.
+    /// First part of optional text that can be appended to the URL in the ad.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Path1 {
@@ -9293,8 +9292,8 @@ namespace Google.Ads.GoogleAds.V8.Common {
     public const int Path2FieldNumber = 10;
     private string path2_;
     /// <summary>
-    /// Second part of optional text that may appear appended to the url displayed
-    /// in the ad. This field can only be set when path1 is also set.
+    /// Second part of optional text that can be appended to the URL in the ad.
+    /// This field can only be set when `path1` is also set.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Path2 {
@@ -9547,7 +9546,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
 
   /// <summary>
   /// A generic type of display ad. The exact ad format is controlled by the
-  /// display_upload_product_type field, which determines what kinds of data
+  /// `display_upload_product_type` field, which determines what kinds of data
   /// need to be included with the ad.
   /// </summary>
   public sealed partial class DisplayUploadAdInfo : pb::IMessage<DisplayUploadAdInfo>
@@ -9612,7 +9611,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     public const int MediaBundleFieldNumber = 2;
     /// <summary>
     /// A media bundle asset to be used in the ad. For information about the
-    /// media bundle for HTML5_UPLOAD_AD see
+    /// media bundle for HTML5_UPLOAD_AD, see
     /// https://support.google.com/google-ads/answer/1722096
     /// Media bundles that are part of dynamic product types use a special format
     /// that needs to be created through the Google Web Designer. See
@@ -10429,7 +10428,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     /// <summary>
     /// The conversion action to attribute a call conversion to. If not set a
     /// default conversion action is used. This field only has effect if
-    /// call_tracked is set to true. Otherwise this field is ignored.
+    /// `call_tracked` is set to `true`. Otherwise this field is ignored.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ConversionAction {
@@ -10458,8 +10457,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     public const int Path1FieldNumber = 13;
     private string path1_ = "";
     /// <summary>
-    /// First part of text that may appear appended to the url displayed to in
-    /// the ad. Optional.
+    /// First part of text that can be appended to the URL in the ad. Optional.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Path1 {
@@ -10473,8 +10471,8 @@ namespace Google.Ads.GoogleAds.V8.Common {
     public const int Path2FieldNumber = 14;
     private string path2_ = "";
     /// <summary>
-    /// Second part of text that may appear appended to the url displayed to in
-    /// the ad. This field can only be set when path1 is set. Optional.
+    /// Second part of text that can be appended to the URL in the ad. This field
+    /// can only be set when `path1` is also set. Optional.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Path2 {

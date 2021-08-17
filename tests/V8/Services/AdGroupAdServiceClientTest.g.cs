@@ -50,6 +50,10 @@ namespace Google.Ads.GoogleAds.Tests.V8.Services
                 {
                     gagvr::AdGroupAdLabelName.FromCustomerAdGroupAdLabel("[CUSTOMER_ID]", "[AD_GROUP_ID]", "[AD_ID]", "[LABEL_ID]"),
                 },
+                ActionItems =
+                {
+                    "action_items5599cf0c",
+                },
             };
             mockGrpcClient.Setup(x => x.GetAdGroupAd(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             AdGroupAdServiceClient client = new AdGroupAdServiceClientImpl(mockGrpcClient.Object, null);
@@ -77,6 +81,10 @@ namespace Google.Ads.GoogleAds.Tests.V8.Services
                 LabelsAsAdGroupAdLabelNames =
                 {
                     gagvr::AdGroupAdLabelName.FromCustomerAdGroupAdLabel("[CUSTOMER_ID]", "[AD_GROUP_ID]", "[AD_ID]", "[LABEL_ID]"),
+                },
+                ActionItems =
+                {
+                    "action_items5599cf0c",
                 },
             };
             mockGrpcClient.Setup(x => x.GetAdGroupAdAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdGroupAd>(stt::Task.FromResult(expectedResponse), null, null, null, null));
@@ -108,6 +116,10 @@ namespace Google.Ads.GoogleAds.Tests.V8.Services
                 {
                     gagvr::AdGroupAdLabelName.FromCustomerAdGroupAdLabel("[CUSTOMER_ID]", "[AD_GROUP_ID]", "[AD_ID]", "[LABEL_ID]"),
                 },
+                ActionItems =
+                {
+                    "action_items5599cf0c",
+                },
             };
             mockGrpcClient.Setup(x => x.GetAdGroupAd(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             AdGroupAdServiceClient client = new AdGroupAdServiceClientImpl(mockGrpcClient.Object, null);
@@ -135,6 +147,10 @@ namespace Google.Ads.GoogleAds.Tests.V8.Services
                 LabelsAsAdGroupAdLabelNames =
                 {
                     gagvr::AdGroupAdLabelName.FromCustomerAdGroupAdLabel("[CUSTOMER_ID]", "[AD_GROUP_ID]", "[AD_ID]", "[LABEL_ID]"),
+                },
+                ActionItems =
+                {
+                    "action_items5599cf0c",
                 },
             };
             mockGrpcClient.Setup(x => x.GetAdGroupAdAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdGroupAd>(stt::Task.FromResult(expectedResponse), null, null, null, null));
@@ -166,6 +182,10 @@ namespace Google.Ads.GoogleAds.Tests.V8.Services
                 {
                     gagvr::AdGroupAdLabelName.FromCustomerAdGroupAdLabel("[CUSTOMER_ID]", "[AD_GROUP_ID]", "[AD_ID]", "[LABEL_ID]"),
                 },
+                ActionItems =
+                {
+                    "action_items5599cf0c",
+                },
             };
             mockGrpcClient.Setup(x => x.GetAdGroupAd(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             AdGroupAdServiceClient client = new AdGroupAdServiceClientImpl(mockGrpcClient.Object, null);
@@ -193,6 +213,10 @@ namespace Google.Ads.GoogleAds.Tests.V8.Services
                 LabelsAsAdGroupAdLabelNames =
                 {
                     gagvr::AdGroupAdLabelName.FromCustomerAdGroupAdLabel("[CUSTOMER_ID]", "[AD_GROUP_ID]", "[AD_ID]", "[LABEL_ID]"),
+                },
+                ActionItems =
+                {
+                    "action_items5599cf0c",
                 },
             };
             mockGrpcClient.Setup(x => x.GetAdGroupAdAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::AdGroupAd>(stt::Task.FromResult(expectedResponse), null, null, null, null));

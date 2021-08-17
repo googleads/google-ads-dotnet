@@ -13,13 +13,15 @@
 // limitations under the License.
 
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V8.Services;
 using Google.Api.Ads.Common.Util;
 
-namespace Google.Ads.GoogleAds.Examples.V8.Migration
+namespace Google.Ads.GoogleAds.Examples.V8
 {
     /// <summary>
     /// This code example illustrates how to use Google Ads API to get metrics about a campaign and
@@ -27,9 +29,27 @@ namespace Google.Ads.GoogleAds.Examples.V8.Migration
     /// </summary>
     public class CampaignReportToCsv : ExampleBase
     {
-        // Optional output file path. If left null, a file `CampaignReportToCsv.csv` will be created
-        // in the user's home directory.
-        private const string OUTPUT_FILE_PATH = null;
+        /// <summary>
+        /// Command line options for running the <see cref="CampaignReportToCsv"/> example.
+        /// </summary>
+        public class Options : OptionsBase
+        {
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("customerId", Required = true, HelpText =
+                "The Google Ads customer ID for which the call is made.")]
+            public long CustomerId { get; set; }
+
+            /// <summary>
+            /// Optional output file path. If left null, a file `CampaignReportToCsv.csv` will 
+            /// be created in the user's home directory.
+            /// </summary>
+            [Option("OutputFilePath", Required = false, HelpText =
+                "Optional output file path. If left null, a file `CampaignReportToCsv.csv` will " +
+                "be created in the user's home directory.")]
+            public string OutputFilePath { get; set; }
+        }
 
         /// <summary>
         /// Returns a description about the code example.
@@ -39,12 +59,42 @@ namespace Google.Ads.GoogleAds.Examples.V8.Migration
             "result as a CSV file.";
 
         /// <summary>
+        /// Main method, to run this code example as a standalone application.
+        /// </summary>
+        /// <param name="args">The command line arguments.</param>
+        public static void Main(string[] args)
+        {
+            Options options = new Options();
+            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
+                delegate (Options o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // The Google Ads customer ID for which the call is made.
+                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
+
+                    // ID of the Merchant center whose link request is to be approved.
+                    options.OutputFilePath = null;
+
+                    return 0;
+                });
+
+            CampaignReportToCsv codeExample = new CampaignReportToCsv();
+            Console.WriteLine(codeExample.Description);
+            codeExample.Run(new GoogleAdsClient(),
+                options.CustomerId,
+                options.OutputFilePath);
+        }
+
+        /// <summary>
         /// Runs the code example.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        public void Run(GoogleAdsClient client, long customerId,
-            string outputFilePath = OUTPUT_FILE_PATH)
+        /// <param name="outputFilePath">The path to which the CSV file is written.</param>
+        public void Run(GoogleAdsClient client, long customerId, string outputFilePath)
         {
             GoogleAdsServiceClient googleAdsServiceClient =
                 client.GetService(Services.V8.GoogleAdsService);

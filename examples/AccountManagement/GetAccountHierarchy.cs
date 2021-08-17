@@ -14,7 +14,6 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V8.Errors;
 using Google.Ads.GoogleAds.V8.Resources;
 using Google.Ads.GoogleAds.V8.Services;
 using Google.Api.Gax;

@@ -26,8 +26,8 @@ namespace Google.Ads.GoogleAds.V8.Errors {
           string.Concat(
             "CjRnb29nbGUvYWRzL2dvb2dsZWFkcy92OC9lcnJvcnMvY3JpdGVyaW9uX2Vy",
             "cm9yLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52OC5lcnJvcnMaHGdv",
-            "b2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8ilScKEkNyaXRlcmlvbkVycm9y",
-            "RW51bSL+JgoOQ3JpdGVyaW9uRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdV",
+            "b2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8ixCcKEkNyaXRlcmlvbkVycm9y",
+            "RW51bSKtJwoOQ3JpdGVyaW9uRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdV",
             "TktOT1dOEAESGgoWQ09OQ1JFVEVfVFlQRV9SRVFVSVJFRBACEh0KGUlOVkFM",
             "SURfRVhDTFVERURfQ0FURUdPUlkQAxIYChRJTlZBTElEX0tFWVdPUkRfVEVY",
             "VBAEEhkKFUtFWVdPUkRfVEVYVF9UT09fTE9ORxAFEh4KGktFWVdPUkRfSEFT",
@@ -138,12 +138,13 @@ namespace Google.Ads.GoogleAds.V8.Errors {
             "RUxfQ0hFQ0tfSU5fREFURV9SQU5HRV9TVEFSVF9EQVRFX1RPT19FQVJMWRCE",
             "ARIwCitIT1RFTF9DSEVDS19JTl9EQVRFX1JBTkdFX0VORF9EQVRFX1RPT19M",
             "QVRFEIUBEicKIkhPVEVMX0NIRUNLX0lOX0RBVEVfUkFOR0VfUkVWRVJTRUQQ",
-            "hgFC7gEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52OC5lcnJvcnNCE0Ny",
-            "aXRlcmlvbkVycm9yUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJv",
-            "dG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Y4L2Vycm9ycztlcnJvcnOi",
-            "AgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WOC5FcnJvcnPKAh5Hb29n",
-            "bGVcQWRzXEdvb2dsZUFkc1xWOFxFcnJvcnPqAiJHb29nbGU6OkFkczo6R29v",
-            "Z2xlQWRzOjpWODo6RXJyb3JzYgZwcm90bzM="));
+            "hgESLQooQlJPQURfTUFUQ0hfTU9ESUZJRVJfS0VZV09SRF9OT1RfQUxMT1dF",
+            "RBCHAULuAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LmVycm9yc0IT",
+            "Q3JpdGVyaW9uRXJyb3JQcm90b1ABWkRnb29nbGUuZ29sYW5nLm9yZy9nZW5w",
+            "cm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjgvZXJyb3JzO2Vycm9y",
+            "c6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlY4LkVycm9yc8oCHkdv",
+            "b2dsZVxBZHNcR29vZ2xlQWRzXFY4XEVycm9yc+oCIkdvb2dsZTo6QWRzOjpH",
+            "b29nbGVBZHM6OlY4OjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -840,6 +841,11 @@ namespace Google.Ads.GoogleAds.V8.Errors {
         /// Start date is after end date.
         /// </summary>
         [pbr::OriginalName("HOTEL_CHECK_IN_DATE_RANGE_REVERSED")] HotelCheckInDateRangeReversed = 134,
+        /// <summary>
+        /// Broad match modifier (BMM) keywords can no longer be created. Please see
+        /// https://ads-developers.googleblog.com/2021/06/broad-match-modifier-upcoming-changes.html.
+        /// </summary>
+        [pbr::OriginalName("BROAD_MATCH_MODIFIER_KEYWORD_NOT_ALLOWED")] BroadMatchModifierKeywordNotAllowed = 135,
       }
 
     }

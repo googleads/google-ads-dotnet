@@ -73,93 +73,102 @@ namespace Google.Ads.GoogleAds.V8.Services {
             "dmljZXMuUHJvZHVjdEFsbG9jYXRpb24igQEKEVByb2R1Y3RBbGxvY2F0aW9u",
             "EiMKFnBsYW5uYWJsZV9wcm9kdWN0X2NvZGUYAyABKAlIAIgBARIaCg1idWRn",
             "ZXRfbWljcm9zGAQgASgDSAGIAQFCGQoXX3BsYW5uYWJsZV9wcm9kdWN0X2Nv",
-            "ZGVCEAoOX2J1ZGdldF9taWNyb3MinwQKHEdlbmVyYXRlUmVhY2hGb3JlY2Fz",
+            "ZGVCEAoOX2J1ZGdldF9taWNyb3MioAUKHEdlbmVyYXRlUmVhY2hGb3JlY2Fz",
             "dFJlcXVlc3QSGAoLY3VzdG9tZXJfaWQYASABKAlCA+BBAhIaCg1jdXJyZW5j",
             "eV9jb2RlGAkgASgJSACIAQESUgoRY2FtcGFpZ25fZHVyYXRpb24YAyABKAsy",
             "Mi5nb29nbGUuYWRzLmdvb2dsZWFkcy52OC5zZXJ2aWNlcy5DYW1wYWlnbkR1",
             "cmF0aW9uQgPgQQISIQoUY29va2llX2ZyZXF1ZW5jeV9jYXAYCiABKAVIAYgB",
             "ARJUChxjb29raWVfZnJlcXVlbmN5X2NhcF9zZXR0aW5nGAggASgLMi4uZ29v",
             "Z2xlLmFkcy5nb29nbGVhZHMudjguc2VydmljZXMuRnJlcXVlbmN5Q2FwEiQK",
-            "F21pbl9lZmZlY3RpdmVfZnJlcXVlbmN5GAsgASgFSAKIAQESPgoJdGFyZ2V0",
-            "aW5nGAYgASgLMisuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjguc2VydmljZXMu",
-            "VGFyZ2V0aW5nEk8KEHBsYW5uZWRfcHJvZHVjdHMYByADKAsyMC5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52OC5zZXJ2aWNlcy5QbGFubmVkUHJvZHVjdEID4EEC",
-            "QhAKDl9jdXJyZW5jeV9jb2RlQhcKFV9jb29raWVfZnJlcXVlbmN5X2NhcEIa",
-            "ChhfbWluX2VmZmVjdGl2ZV9mcmVxdWVuY3kijgEKDEZyZXF1ZW5jeUNhcBIY",
-            "CgtpbXByZXNzaW9ucxgDIAEoBUID4EECEmQKCXRpbWVfdW5pdBgCIAEoDjJM",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LmVudW1zLkZyZXF1ZW5jeUNhcFRp",
-            "bWVVbml0RW51bS5GcmVxdWVuY3lDYXBUaW1lVW5pdEID4EECIvUCCglUYXJn",
-            "ZXRpbmcSIgoVcGxhbm5hYmxlX2xvY2F0aW9uX2lkGAYgASgJSACIAQESWQoJ",
-            "YWdlX3JhbmdlGAIgASgOMkYuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjguZW51",
-            "bXMuUmVhY2hQbGFuQWdlUmFuZ2VFbnVtLlJlYWNoUGxhbkFnZVJhbmdlEjsK",
-            "B2dlbmRlcnMYAyADKAsyKi5nb29nbGUuYWRzLmdvb2dsZWFkcy52OC5jb21t",
-            "b24uR2VuZGVySW5mbxI7CgdkZXZpY2VzGAQgAygLMiouZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjguY29tbW9uLkRldmljZUluZm8SVQoHbmV0d29yaxgFIAEo",
-            "DjJELmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LmVudW1zLlJlYWNoUGxhbk5l",
-            "dHdvcmtFbnVtLlJlYWNoUGxhbk5ldHdvcmtCGAoWX3BsYW5uYWJsZV9sb2Nh",
-            "dGlvbl9pZCJGChBDYW1wYWlnbkR1cmF0aW9uEh0KEGR1cmF0aW9uX2luX2Rh",
-            "eXMYAiABKAVIAIgBAUITChFfZHVyYXRpb25faW5fZGF5cyJ+Cg5QbGFubmVk",
-            "UHJvZHVjdBIjChZwbGFubmFibGVfcHJvZHVjdF9jb2RlGAMgASgJSACIAQES",
-            "GgoNYnVkZ2V0X21pY3JvcxgEIAEoA0gBiAEBQhkKF19wbGFubmFibGVfcHJv",
-            "ZHVjdF9jb2RlQhAKDl9idWRnZXRfbWljcm9zIsEBCh1HZW5lcmF0ZVJlYWNo",
-            "Rm9yZWNhc3RSZXNwb25zZRJdChpvbl90YXJnZXRfYXVkaWVuY2VfbWV0cmlj",
-            "cxgBIAEoCzI5Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LnNlcnZpY2VzLk9u",
-            "VGFyZ2V0QXVkaWVuY2VNZXRyaWNzEkEKC3JlYWNoX2N1cnZlGAIgASgLMiwu",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjguc2VydmljZXMuUmVhY2hDdXJ2ZSJW",
-            "CgpSZWFjaEN1cnZlEkgKD3JlYWNoX2ZvcmVjYXN0cxgBIAMoCzIvLmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnY4LnNlcnZpY2VzLlJlYWNoRm9yZWNhc3QiygEK",
-            "DVJlYWNoRm9yZWNhc3QSEwoLY29zdF9taWNyb3MYBSABKAMSPAoIZm9yZWNh",
-            "c3QYAiABKAsyKi5nb29nbGUuYWRzLmdvb2dsZWFkcy52OC5zZXJ2aWNlcy5G",
-            "b3JlY2FzdBJmCh9wbGFubmVkX3Byb2R1Y3RfcmVhY2hfZm9yZWNhc3RzGAQg",
-            "AygLMj0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjguc2VydmljZXMuUGxhbm5l",
-            "ZFByb2R1Y3RSZWFjaEZvcmVjYXN0IpYCCghGb3JlY2FzdBIcCg9vbl90YXJn",
-            "ZXRfcmVhY2gYBSABKANIAIgBARIYCgt0b3RhbF9yZWFjaBgGIAEoA0gBiAEB",
-            "EiIKFW9uX3RhcmdldF9pbXByZXNzaW9ucxgHIAEoA0gCiAEBEh4KEXRvdGFs",
-            "X2ltcHJlc3Npb25zGAggASgDSAOIAQESIQoUdmlld2FibGVfaW1wcmVzc2lv",
-            "bnMYCSABKANIBIgBAUISChBfb25fdGFyZ2V0X3JlYWNoQg4KDF90b3RhbF9y",
-            "ZWFjaEIYChZfb25fdGFyZ2V0X2ltcHJlc3Npb25zQhQKEl90b3RhbF9pbXBy",
-            "ZXNzaW9uc0IXChVfdmlld2FibGVfaW1wcmVzc2lvbnMirgEKG1BsYW5uZWRQ",
-            "cm9kdWN0UmVhY2hGb3JlY2FzdBIeChZwbGFubmFibGVfcHJvZHVjdF9jb2Rl",
-            "GAEgASgJEhMKC2Nvc3RfbWljcm9zGAIgASgDEloKGHBsYW5uZWRfcHJvZHVj",
-            "dF9mb3JlY2FzdBgDIAEoCzI4Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LnNl",
-            "cnZpY2VzLlBsYW5uZWRQcm9kdWN0Rm9yZWNhc3QivAEKFlBsYW5uZWRQcm9k",
-            "dWN0Rm9yZWNhc3QSFwoPb25fdGFyZ2V0X3JlYWNoGAEgASgDEhMKC3RvdGFs",
-            "X3JlYWNoGAIgASgDEh0KFW9uX3RhcmdldF9pbXByZXNzaW9ucxgDIAEoAxIZ",
-            "ChF0b3RhbF9pbXByZXNzaW9ucxgEIAEoAxIhChR2aWV3YWJsZV9pbXByZXNz",
-            "aW9ucxgFIAEoA0gAiAEBQhcKFV92aWV3YWJsZV9pbXByZXNzaW9ucyKTAQoX",
-            "T25UYXJnZXRBdWRpZW5jZU1ldHJpY3MSIgoVeW91dHViZV9hdWRpZW5jZV9z",
-            "aXplGAMgASgDSACIAQESIQoUY2Vuc3VzX2F1ZGllbmNlX3NpemUYBCABKANI",
-            "AYgBAUIYChZfeW91dHViZV9hdWRpZW5jZV9zaXplQhcKFV9jZW5zdXNfYXVk",
-            "aWVuY2Vfc2l6ZTKnCAoQUmVhY2hQbGFuU2VydmljZRLCAQoWTGlzdFBsYW5u",
-            "YWJsZUxvY2F0aW9ucxI/Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LnNlcnZp",
-            "Y2VzLkxpc3RQbGFubmFibGVMb2NhdGlvbnNSZXF1ZXN0GkAuZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjguc2VydmljZXMuTGlzdFBsYW5uYWJsZUxvY2F0aW9u",
-            "c1Jlc3BvbnNlIiWC0+STAh8iGi92ODpsaXN0UGxhbm5hYmxlTG9jYXRpb25z",
-            "OgEqEtYBChVMaXN0UGxhbm5hYmxlUHJvZHVjdHMSPi5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52OC5zZXJ2aWNlcy5MaXN0UGxhbm5hYmxlUHJvZHVjdHNSZXF1",
-            "ZXN0Gj8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjguc2VydmljZXMuTGlzdFBs",
-            "YW5uYWJsZVByb2R1Y3RzUmVzcG9uc2UiPILT5JMCHiIZL3Y4Omxpc3RQbGFu",
-            "bmFibGVQcm9kdWN0czoBKtpBFXBsYW5uYWJsZV9sb2NhdGlvbl9pZBKhAgoX",
-            "R2VuZXJhdGVQcm9kdWN0TWl4SWRlYXMSQC5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52OC5zZXJ2aWNlcy5HZW5lcmF0ZVByb2R1Y3RNaXhJZGVhc1JlcXVlc3Qa",
-            "QS5nb29nbGUuYWRzLmdvb2dsZWFkcy52OC5zZXJ2aWNlcy5HZW5lcmF0ZVBy",
-            "b2R1Y3RNaXhJZGVhc1Jlc3BvbnNlIoABgtPkkwI6IjUvdjgvY3VzdG9tZXJz",
-            "L3tjdXN0b21lcl9pZD0qfTpnZW5lcmF0ZVByb2R1Y3RNaXhJZGVhczoBKtpB",
-            "PWN1c3RvbWVyX2lkLHBsYW5uYWJsZV9sb2NhdGlvbl9pZCxjdXJyZW5jeV9j",
-            "b2RlLGJ1ZGdldF9taWNyb3MSiQIKFUdlbmVyYXRlUmVhY2hGb3JlY2FzdBI+",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LnNlcnZpY2VzLkdlbmVyYXRlUmVh",
-            "Y2hGb3JlY2FzdFJlcXVlc3QaPy5nb29nbGUuYWRzLmdvb2dsZWFkcy52OC5z",
-            "ZXJ2aWNlcy5HZW5lcmF0ZVJlYWNoRm9yZWNhc3RSZXNwb25zZSJvgtPkkwI4",
-            "IjMvdjgvY3VzdG9tZXJzL3tjdXN0b21lcl9pZD0qfTpnZW5lcmF0ZVJlYWNo",
-            "Rm9yZWNhc3Q6ASraQS5jdXN0b21lcl9pZCxjYW1wYWlnbl9kdXJhdGlvbixw",
-            "bGFubmVkX3Byb2R1Y3RzGkXKQRhnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb23S",
-            "QSdodHRwczovL3d3dy5nb29nbGVhcGlzLmNvbS9hdXRoL2Fkd29yZHNC/AEK",
-            "JGNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52OC5zZXJ2aWNlc0IVUmVhY2hQ",
-            "bGFuU2VydmljZVByb3RvUAFaSGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3Rv",
-            "L2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92OC9zZXJ2aWNlcztzZXJ2aWNl",
-            "c6ICA0dBQaoCIEdvb2dsZS5BZHMuR29vZ2xlQWRzLlY4LlNlcnZpY2VzygIg",
-            "R29vZ2xlXEFkc1xHb29nbGVBZHNcVjhcU2VydmljZXPqAiRHb29nbGU6OkFk",
-            "czo6R29vZ2xlQWRzOjpWODo6U2VydmljZXNiBnByb3RvMw=="));
+            "F21pbl9lZmZlY3RpdmVfZnJlcXVlbmN5GAsgASgFSAKIAQESYQoZZWZmZWN0",
+            "aXZlX2ZyZXF1ZW5jeV9saW1pdBgMIAEoCzI5Lmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnY4LnNlcnZpY2VzLkVmZmVjdGl2ZUZyZXF1ZW5jeUxpbWl0SAOIAQES",
+            "PgoJdGFyZ2V0aW5nGAYgASgLMisuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjgu",
+            "c2VydmljZXMuVGFyZ2V0aW5nEk8KEHBsYW5uZWRfcHJvZHVjdHMYByADKAsy",
+            "MC5nb29nbGUuYWRzLmdvb2dsZWFkcy52OC5zZXJ2aWNlcy5QbGFubmVkUHJv",
+            "ZHVjdEID4EECQhAKDl9jdXJyZW5jeV9jb2RlQhcKFV9jb29raWVfZnJlcXVl",
+            "bmN5X2NhcEIaChhfbWluX2VmZmVjdGl2ZV9mcmVxdWVuY3lCHAoaX2VmZmVj",
+            "dGl2ZV9mcmVxdWVuY3lfbGltaXQiRgoXRWZmZWN0aXZlRnJlcXVlbmN5TGlt",
+            "aXQSKwojZWZmZWN0aXZlX2ZyZXF1ZW5jeV9icmVha2Rvd25fbGltaXQYASAB",
+            "KAUijgEKDEZyZXF1ZW5jeUNhcBIYCgtpbXByZXNzaW9ucxgDIAEoBUID4EEC",
+            "EmQKCXRpbWVfdW5pdBgCIAEoDjJMLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4",
+            "LmVudW1zLkZyZXF1ZW5jeUNhcFRpbWVVbml0RW51bS5GcmVxdWVuY3lDYXBU",
+            "aW1lVW5pdEID4EECIvUCCglUYXJnZXRpbmcSIgoVcGxhbm5hYmxlX2xvY2F0",
+            "aW9uX2lkGAYgASgJSACIAQESWQoJYWdlX3JhbmdlGAIgASgOMkYuZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjguZW51bXMuUmVhY2hQbGFuQWdlUmFuZ2VFbnVt",
+            "LlJlYWNoUGxhbkFnZVJhbmdlEjsKB2dlbmRlcnMYAyADKAsyKi5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52OC5jb21tb24uR2VuZGVySW5mbxI7CgdkZXZpY2Vz",
+            "GAQgAygLMiouZ29vZ2xlLmFkcy5nb29nbGVhZHMudjguY29tbW9uLkRldmlj",
+            "ZUluZm8SVQoHbmV0d29yaxgFIAEoDjJELmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnY4LmVudW1zLlJlYWNoUGxhbk5ldHdvcmtFbnVtLlJlYWNoUGxhbk5ldHdv",
+            "cmtCGAoWX3BsYW5uYWJsZV9sb2NhdGlvbl9pZCJGChBDYW1wYWlnbkR1cmF0",
+            "aW9uEh0KEGR1cmF0aW9uX2luX2RheXMYAiABKAVIAIgBAUITChFfZHVyYXRp",
+            "b25faW5fZGF5cyJ+Cg5QbGFubmVkUHJvZHVjdBIjChZwbGFubmFibGVfcHJv",
+            "ZHVjdF9jb2RlGAMgASgJSACIAQESGgoNYnVkZ2V0X21pY3JvcxgEIAEoA0gB",
+            "iAEBQhkKF19wbGFubmFibGVfcHJvZHVjdF9jb2RlQhAKDl9idWRnZXRfbWlj",
+            "cm9zIsEBCh1HZW5lcmF0ZVJlYWNoRm9yZWNhc3RSZXNwb25zZRJdChpvbl90",
+            "YXJnZXRfYXVkaWVuY2VfbWV0cmljcxgBIAEoCzI5Lmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnY4LnNlcnZpY2VzLk9uVGFyZ2V0QXVkaWVuY2VNZXRyaWNzEkEK",
+            "C3JlYWNoX2N1cnZlGAIgASgLMiwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjgu",
+            "c2VydmljZXMuUmVhY2hDdXJ2ZSJWCgpSZWFjaEN1cnZlEkgKD3JlYWNoX2Zv",
+            "cmVjYXN0cxgBIAMoCzIvLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LnNlcnZp",
+            "Y2VzLlJlYWNoRm9yZWNhc3QiygEKDVJlYWNoRm9yZWNhc3QSEwoLY29zdF9t",
+            "aWNyb3MYBSABKAMSPAoIZm9yZWNhc3QYAiABKAsyKi5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52OC5zZXJ2aWNlcy5Gb3JlY2FzdBJmCh9wbGFubmVkX3Byb2R1",
+            "Y3RfcmVhY2hfZm9yZWNhc3RzGAQgAygLMj0uZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjguc2VydmljZXMuUGxhbm5lZFByb2R1Y3RSZWFjaEZvcmVjYXN0Iv0C",
+            "CghGb3JlY2FzdBIcCg9vbl90YXJnZXRfcmVhY2gYBSABKANIAIgBARIYCgt0",
+            "b3RhbF9yZWFjaBgGIAEoA0gBiAEBEiIKFW9uX3RhcmdldF9pbXByZXNzaW9u",
+            "cxgHIAEoA0gCiAEBEh4KEXRvdGFsX2ltcHJlc3Npb25zGAggASgDSAOIAQES",
+            "IQoUdmlld2FibGVfaW1wcmVzc2lvbnMYCSABKANIBIgBARJlCh5lZmZlY3Rp",
+            "dmVfZnJlcXVlbmN5X2JyZWFrZG93bnMYCiADKAsyPS5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52OC5zZXJ2aWNlcy5FZmZlY3RpdmVGcmVxdWVuY3lCcmVha2Rv",
+            "d25CEgoQX29uX3RhcmdldF9yZWFjaEIOCgxfdG90YWxfcmVhY2hCGAoWX29u",
+            "X3RhcmdldF9pbXByZXNzaW9uc0IUChJfdG90YWxfaW1wcmVzc2lvbnNCFwoV",
+            "X3ZpZXdhYmxlX2ltcHJlc3Npb25zIq4BChtQbGFubmVkUHJvZHVjdFJlYWNo",
+            "Rm9yZWNhc3QSHgoWcGxhbm5hYmxlX3Byb2R1Y3RfY29kZRgBIAEoCRITCgtj",
+            "b3N0X21pY3JvcxgCIAEoAxJaChhwbGFubmVkX3Byb2R1Y3RfZm9yZWNhc3QY",
+            "AyABKAsyOC5nb29nbGUuYWRzLmdvb2dsZWFkcy52OC5zZXJ2aWNlcy5QbGFu",
+            "bmVkUHJvZHVjdEZvcmVjYXN0IrwBChZQbGFubmVkUHJvZHVjdEZvcmVjYXN0",
+            "EhcKD29uX3RhcmdldF9yZWFjaBgBIAEoAxITCgt0b3RhbF9yZWFjaBgCIAEo",
+            "AxIdChVvbl90YXJnZXRfaW1wcmVzc2lvbnMYAyABKAMSGQoRdG90YWxfaW1w",
+            "cmVzc2lvbnMYBCABKAMSIQoUdmlld2FibGVfaW1wcmVzc2lvbnMYBSABKANI",
+            "AIgBAUIXChVfdmlld2FibGVfaW1wcmVzc2lvbnMikwEKF09uVGFyZ2V0QXVk",
+            "aWVuY2VNZXRyaWNzEiIKFXlvdXR1YmVfYXVkaWVuY2Vfc2l6ZRgDIAEoA0gA",
+            "iAEBEiEKFGNlbnN1c19hdWRpZW5jZV9zaXplGAQgASgDSAGIAQFCGAoWX3lv",
+            "dXR1YmVfYXVkaWVuY2Vfc2l6ZUIXChVfY2Vuc3VzX2F1ZGllbmNlX3NpemUi",
+            "aAobRWZmZWN0aXZlRnJlcXVlbmN5QnJlYWtkb3duEhsKE2VmZmVjdGl2ZV9m",
+            "cmVxdWVuY3kYASABKAUSFwoPb25fdGFyZ2V0X3JlYWNoGAIgASgDEhMKC3Rv",
+            "dGFsX3JlYWNoGAMgASgDMqcIChBSZWFjaFBsYW5TZXJ2aWNlEsIBChZMaXN0",
+            "UGxhbm5hYmxlTG9jYXRpb25zEj8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjgu",
+            "c2VydmljZXMuTGlzdFBsYW5uYWJsZUxvY2F0aW9uc1JlcXVlc3QaQC5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52OC5zZXJ2aWNlcy5MaXN0UGxhbm5hYmxlTG9j",
+            "YXRpb25zUmVzcG9uc2UiJYLT5JMCHyIaL3Y4Omxpc3RQbGFubmFibGVMb2Nh",
+            "dGlvbnM6ASoS1gEKFUxpc3RQbGFubmFibGVQcm9kdWN0cxI+Lmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnY4LnNlcnZpY2VzLkxpc3RQbGFubmFibGVQcm9kdWN0",
+            "c1JlcXVlc3QaPy5nb29nbGUuYWRzLmdvb2dsZWFkcy52OC5zZXJ2aWNlcy5M",
+            "aXN0UGxhbm5hYmxlUHJvZHVjdHNSZXNwb25zZSI8gtPkkwIeIhkvdjg6bGlz",
+            "dFBsYW5uYWJsZVByb2R1Y3RzOgEq2kEVcGxhbm5hYmxlX2xvY2F0aW9uX2lk",
+            "EqECChdHZW5lcmF0ZVByb2R1Y3RNaXhJZGVhcxJALmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnY4LnNlcnZpY2VzLkdlbmVyYXRlUHJvZHVjdE1peElkZWFzUmVx",
+            "dWVzdBpBLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LnNlcnZpY2VzLkdlbmVy",
+            "YXRlUHJvZHVjdE1peElkZWFzUmVzcG9uc2UigAGC0+STAjoiNS92OC9jdXN0",
+            "b21lcnMve2N1c3RvbWVyX2lkPSp9OmdlbmVyYXRlUHJvZHVjdE1peElkZWFz",
+            "OgEq2kE9Y3VzdG9tZXJfaWQscGxhbm5hYmxlX2xvY2F0aW9uX2lkLGN1cnJl",
+            "bmN5X2NvZGUsYnVkZ2V0X21pY3JvcxKJAgoVR2VuZXJhdGVSZWFjaEZvcmVj",
+            "YXN0Ej4uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjguc2VydmljZXMuR2VuZXJh",
+            "dGVSZWFjaEZvcmVjYXN0UmVxdWVzdBo/Lmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnY4LnNlcnZpY2VzLkdlbmVyYXRlUmVhY2hGb3JlY2FzdFJlc3BvbnNlIm+C",
+            "0+STAjgiMy92OC9jdXN0b21lcnMve2N1c3RvbWVyX2lkPSp9OmdlbmVyYXRl",
+            "UmVhY2hGb3JlY2FzdDoBKtpBLmN1c3RvbWVyX2lkLGNhbXBhaWduX2R1cmF0",
+            "aW9uLHBsYW5uZWRfcHJvZHVjdHMaRcpBGGdvb2dsZWFkcy5nb29nbGVhcGlz",
+            "LmNvbdJBJ2h0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvYWR3b3Jk",
+            "c0L8AQokY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LnNlcnZpY2VzQhVS",
+            "ZWFjaFBsYW5TZXJ2aWNlUHJvdG9QAVpIZ29vZ2xlLmdvbGFuZy5vcmcvZ2Vu",
+            "cHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Y4L3NlcnZpY2VzO3Nl",
+            "cnZpY2VzogIDR0FBqgIgR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjguU2Vydmlj",
+            "ZXPKAiBHb29nbGVcQWRzXEdvb2dsZUFkc1xWOFxTZXJ2aWNlc+oCJEdvb2ds",
+            "ZTo6QWRzOjpHb29nbGVBZHM6OlY4OjpTZXJ2aWNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V8.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V8.Enums.FrequencyCapTimeUnitReflection.Descriptor, global::Google.Ads.GoogleAds.V8.Enums.ReachPlanAdLengthReflection.Descriptor, global::Google.Ads.GoogleAds.V8.Enums.ReachPlanAgeRangeReflection.Descriptor, global::Google.Ads.GoogleAds.V8.Enums.ReachPlanNetworkReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -174,7 +183,8 @@ namespace Google.Ads.GoogleAds.V8.Services {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.Preferences), global::Google.Ads.GoogleAds.V8.Services.Preferences.Parser, new[]{ "IsSkippable", "StartsWithSound", "AdLength", "TopContentOnly", "HasGuaranteedPrice" }, new[]{ "IsSkippable", "StartsWithSound", "TopContentOnly", "HasGuaranteedPrice" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.GenerateProductMixIdeasResponse), global::Google.Ads.GoogleAds.V8.Services.GenerateProductMixIdeasResponse.Parser, new[]{ "ProductAllocation" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.ProductAllocation), global::Google.Ads.GoogleAds.V8.Services.ProductAllocation.Parser, new[]{ "PlannableProductCode", "BudgetMicros" }, new[]{ "PlannableProductCode", "BudgetMicros" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.GenerateReachForecastRequest), global::Google.Ads.GoogleAds.V8.Services.GenerateReachForecastRequest.Parser, new[]{ "CustomerId", "CurrencyCode", "CampaignDuration", "CookieFrequencyCap", "CookieFrequencyCapSetting", "MinEffectiveFrequency", "Targeting", "PlannedProducts" }, new[]{ "CurrencyCode", "CookieFrequencyCap", "MinEffectiveFrequency" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.GenerateReachForecastRequest), global::Google.Ads.GoogleAds.V8.Services.GenerateReachForecastRequest.Parser, new[]{ "CustomerId", "CurrencyCode", "CampaignDuration", "CookieFrequencyCap", "CookieFrequencyCapSetting", "MinEffectiveFrequency", "EffectiveFrequencyLimit", "Targeting", "PlannedProducts" }, new[]{ "CurrencyCode", "CookieFrequencyCap", "MinEffectiveFrequency", "EffectiveFrequencyLimit" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.EffectiveFrequencyLimit), global::Google.Ads.GoogleAds.V8.Services.EffectiveFrequencyLimit.Parser, new[]{ "EffectiveFrequencyBreakdownLimit" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.FrequencyCap), global::Google.Ads.GoogleAds.V8.Services.FrequencyCap.Parser, new[]{ "Impressions", "TimeUnit" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.Targeting), global::Google.Ads.GoogleAds.V8.Services.Targeting.Parser, new[]{ "PlannableLocationId", "AgeRange", "Genders", "Devices", "Network" }, new[]{ "PlannableLocationId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.CampaignDuration), global::Google.Ads.GoogleAds.V8.Services.CampaignDuration.Parser, new[]{ "DurationInDays" }, new[]{ "DurationInDays" }, null, null, null),
@@ -182,10 +192,11 @@ namespace Google.Ads.GoogleAds.V8.Services {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.GenerateReachForecastResponse), global::Google.Ads.GoogleAds.V8.Services.GenerateReachForecastResponse.Parser, new[]{ "OnTargetAudienceMetrics", "ReachCurve" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.ReachCurve), global::Google.Ads.GoogleAds.V8.Services.ReachCurve.Parser, new[]{ "ReachForecasts" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.ReachForecast), global::Google.Ads.GoogleAds.V8.Services.ReachForecast.Parser, new[]{ "CostMicros", "Forecast", "PlannedProductReachForecasts" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.Forecast), global::Google.Ads.GoogleAds.V8.Services.Forecast.Parser, new[]{ "OnTargetReach", "TotalReach", "OnTargetImpressions", "TotalImpressions", "ViewableImpressions" }, new[]{ "OnTargetReach", "TotalReach", "OnTargetImpressions", "TotalImpressions", "ViewableImpressions" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.Forecast), global::Google.Ads.GoogleAds.V8.Services.Forecast.Parser, new[]{ "OnTargetReach", "TotalReach", "OnTargetImpressions", "TotalImpressions", "ViewableImpressions", "EffectiveFrequencyBreakdowns" }, new[]{ "OnTargetReach", "TotalReach", "OnTargetImpressions", "TotalImpressions", "ViewableImpressions" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.PlannedProductReachForecast), global::Google.Ads.GoogleAds.V8.Services.PlannedProductReachForecast.Parser, new[]{ "PlannableProductCode", "CostMicros", "PlannedProductForecast" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.PlannedProductForecast), global::Google.Ads.GoogleAds.V8.Services.PlannedProductForecast.Parser, new[]{ "OnTargetReach", "TotalReach", "OnTargetImpressions", "TotalImpressions", "ViewableImpressions" }, new[]{ "ViewableImpressions" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.OnTargetAudienceMetrics), global::Google.Ads.GoogleAds.V8.Services.OnTargetAudienceMetrics.Parser, new[]{ "YoutubeAudienceSize", "CensusAudienceSize" }, new[]{ "YoutubeAudienceSize", "CensusAudienceSize" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.OnTargetAudienceMetrics), global::Google.Ads.GoogleAds.V8.Services.OnTargetAudienceMetrics.Parser, new[]{ "YoutubeAudienceSize", "CensusAudienceSize" }, new[]{ "YoutubeAudienceSize", "CensusAudienceSize" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.EffectiveFrequencyBreakdown), global::Google.Ads.GoogleAds.V8.Services.EffectiveFrequencyBreakdown.Parser, new[]{ "EffectiveFrequency", "OnTargetReach", "TotalReach" }, null, null, null, null)
           }));
     }
     #endregion
@@ -2858,6 +2869,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
       cookieFrequencyCap_ = other.cookieFrequencyCap_;
       cookieFrequencyCapSetting_ = other.cookieFrequencyCapSetting_ != null ? other.cookieFrequencyCapSetting_.Clone() : null;
       minEffectiveFrequency_ = other.minEffectiveFrequency_;
+      effectiveFrequencyLimit_ = other.effectiveFrequencyLimit_ != null ? other.effectiveFrequencyLimit_.Clone() : null;
       targeting_ = other.targeting_ != null ? other.targeting_.Clone() : null;
       plannedProducts_ = other.plannedProducts_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -2981,6 +2993,8 @@ namespace Google.Ads.GoogleAds.V8.Services {
     /// exposed to the ad) for the reported reach metrics [1-10].
     /// This won't affect the targeting, but just the reporting.
     /// If not specified, a default of 1 is applied.
+    ///
+    /// This field cannot be combined with the effective_frequency_limit field.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int MinEffectiveFrequency {
@@ -2999,6 +3013,29 @@ namespace Google.Ads.GoogleAds.V8.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void ClearMinEffectiveFrequency() {
       _hasBits0 &= ~2;
+    }
+
+    /// <summary>Field number for the "effective_frequency_limit" field.</summary>
+    public const int EffectiveFrequencyLimitFieldNumber = 12;
+    private global::Google.Ads.GoogleAds.V8.Services.EffectiveFrequencyLimit effectiveFrequencyLimit_;
+    /// <summary>
+    /// The highest minimum effective frequency (the number of times a person was
+    /// exposed to the ad) value [1-10] to include in
+    /// Forecast.effective_frequency_breakdowns.
+    /// If not specified, Forecast.effective_frequency_breakdowns will not be
+    /// provided.
+    ///
+    /// The effective frequency value provided here will also be used as the
+    /// minimum effective frequency for the reported reach metrics.
+    ///
+    /// This field cannot be combined with the min_effective_frequency field.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V8.Services.EffectiveFrequencyLimit EffectiveFrequencyLimit {
+      get { return effectiveFrequencyLimit_; }
+      set {
+        effectiveFrequencyLimit_ = value;
+      }
     }
 
     /// <summary>Field number for the "targeting" field.</summary>
@@ -3053,6 +3090,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
       if (CookieFrequencyCap != other.CookieFrequencyCap) return false;
       if (!object.Equals(CookieFrequencyCapSetting, other.CookieFrequencyCapSetting)) return false;
       if (MinEffectiveFrequency != other.MinEffectiveFrequency) return false;
+      if (!object.Equals(EffectiveFrequencyLimit, other.EffectiveFrequencyLimit)) return false;
       if (!object.Equals(Targeting, other.Targeting)) return false;
       if(!plannedProducts_.Equals(other.plannedProducts_)) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -3067,6 +3105,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
       if (HasCookieFrequencyCap) hash ^= CookieFrequencyCap.GetHashCode();
       if (cookieFrequencyCapSetting_ != null) hash ^= CookieFrequencyCapSetting.GetHashCode();
       if (HasMinEffectiveFrequency) hash ^= MinEffectiveFrequency.GetHashCode();
+      if (effectiveFrequencyLimit_ != null) hash ^= EffectiveFrequencyLimit.GetHashCode();
       if (targeting_ != null) hash ^= Targeting.GetHashCode();
       hash ^= plannedProducts_.GetHashCode();
       if (_unknownFields != null) {
@@ -3114,6 +3153,10 @@ namespace Google.Ads.GoogleAds.V8.Services {
         output.WriteRawTag(88);
         output.WriteInt32(MinEffectiveFrequency);
       }
+      if (effectiveFrequencyLimit_ != null) {
+        output.WriteRawTag(98);
+        output.WriteMessage(EffectiveFrequencyLimit);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3152,6 +3195,10 @@ namespace Google.Ads.GoogleAds.V8.Services {
         output.WriteRawTag(88);
         output.WriteInt32(MinEffectiveFrequency);
       }
+      if (effectiveFrequencyLimit_ != null) {
+        output.WriteRawTag(98);
+        output.WriteMessage(EffectiveFrequencyLimit);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3178,6 +3225,9 @@ namespace Google.Ads.GoogleAds.V8.Services {
       }
       if (HasMinEffectiveFrequency) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(MinEffectiveFrequency);
+      }
+      if (effectiveFrequencyLimit_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(EffectiveFrequencyLimit);
       }
       if (targeting_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Targeting);
@@ -3217,6 +3267,12 @@ namespace Google.Ads.GoogleAds.V8.Services {
       }
       if (other.HasMinEffectiveFrequency) {
         MinEffectiveFrequency = other.MinEffectiveFrequency;
+      }
+      if (other.effectiveFrequencyLimit_ != null) {
+        if (effectiveFrequencyLimit_ == null) {
+          EffectiveFrequencyLimit = new global::Google.Ads.GoogleAds.V8.Services.EffectiveFrequencyLimit();
+        }
+        EffectiveFrequencyLimit.MergeFrom(other.EffectiveFrequencyLimit);
       }
       if (other.targeting_ != null) {
         if (targeting_ == null) {
@@ -3280,6 +3336,13 @@ namespace Google.Ads.GoogleAds.V8.Services {
             MinEffectiveFrequency = input.ReadInt32();
             break;
           }
+          case 98: {
+            if (effectiveFrequencyLimit_ == null) {
+              EffectiveFrequencyLimit = new global::Google.Ads.GoogleAds.V8.Services.EffectiveFrequencyLimit();
+            }
+            input.ReadMessage(EffectiveFrequencyLimit);
+            break;
+          }
         }
       }
     #endif
@@ -3335,6 +3398,193 @@ namespace Google.Ads.GoogleAds.V8.Services {
             MinEffectiveFrequency = input.ReadInt32();
             break;
           }
+          case 98: {
+            if (effectiveFrequencyLimit_ == null) {
+              EffectiveFrequencyLimit = new global::Google.Ads.GoogleAds.V8.Services.EffectiveFrequencyLimit();
+            }
+            input.ReadMessage(EffectiveFrequencyLimit);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Effective frequency limit.
+  /// </summary>
+  public sealed partial class EffectiveFrequencyLimit : pb::IMessage<EffectiveFrequencyLimit>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<EffectiveFrequencyLimit> _parser = new pb::MessageParser<EffectiveFrequencyLimit>(() => new EffectiveFrequencyLimit());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<EffectiveFrequencyLimit> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V8.Services.ReachPlanServiceReflection.Descriptor.MessageTypes[12]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public EffectiveFrequencyLimit() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public EffectiveFrequencyLimit(EffectiveFrequencyLimit other) : this() {
+      effectiveFrequencyBreakdownLimit_ = other.effectiveFrequencyBreakdownLimit_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public EffectiveFrequencyLimit Clone() {
+      return new EffectiveFrequencyLimit(this);
+    }
+
+    /// <summary>Field number for the "effective_frequency_breakdown_limit" field.</summary>
+    public const int EffectiveFrequencyBreakdownLimitFieldNumber = 1;
+    private int effectiveFrequencyBreakdownLimit_;
+    /// <summary>
+    /// The highest effective frequency value to include in
+    /// Forecast.effective_frequency_breakdowns.
+    /// This field supports frequencies 1-10, inclusive.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int EffectiveFrequencyBreakdownLimit {
+      get { return effectiveFrequencyBreakdownLimit_; }
+      set {
+        effectiveFrequencyBreakdownLimit_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as EffectiveFrequencyLimit);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(EffectiveFrequencyLimit other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (EffectiveFrequencyBreakdownLimit != other.EffectiveFrequencyBreakdownLimit) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (EffectiveFrequencyBreakdownLimit != 0) hash ^= EffectiveFrequencyBreakdownLimit.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (EffectiveFrequencyBreakdownLimit != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(EffectiveFrequencyBreakdownLimit);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (EffectiveFrequencyBreakdownLimit != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(EffectiveFrequencyBreakdownLimit);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (EffectiveFrequencyBreakdownLimit != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(EffectiveFrequencyBreakdownLimit);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(EffectiveFrequencyLimit other) {
+      if (other == null) {
+        return;
+      }
+      if (other.EffectiveFrequencyBreakdownLimit != 0) {
+        EffectiveFrequencyBreakdownLimit = other.EffectiveFrequencyBreakdownLimit;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            EffectiveFrequencyBreakdownLimit = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            EffectiveFrequencyBreakdownLimit = input.ReadInt32();
+            break;
+          }
         }
       }
     }
@@ -3358,7 +3608,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V8.Services.ReachPlanServiceReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Google.Ads.GoogleAds.V8.Services.ReachPlanServiceReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3575,7 +3825,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V8.Services.ReachPlanServiceReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Google.Ads.GoogleAds.V8.Services.ReachPlanServiceReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3905,7 +4155,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V8.Services.ReachPlanServiceReflection.Descriptor.MessageTypes[14]; }
+      get { return global::Google.Ads.GoogleAds.V8.Services.ReachPlanServiceReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4096,7 +4346,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V8.Services.ReachPlanServiceReflection.Descriptor.MessageTypes[15]; }
+      get { return global::Google.Ads.GoogleAds.V8.Services.ReachPlanServiceReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4339,7 +4589,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V8.Services.ReachPlanServiceReflection.Descriptor.MessageTypes[16]; }
+      get { return global::Google.Ads.GoogleAds.V8.Services.ReachPlanServiceReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4574,7 +4824,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V8.Services.ReachPlanServiceReflection.Descriptor.MessageTypes[17]; }
+      get { return global::Google.Ads.GoogleAds.V8.Services.ReachPlanServiceReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4741,7 +4991,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V8.Services.ReachPlanServiceReflection.Descriptor.MessageTypes[18]; }
+      get { return global::Google.Ads.GoogleAds.V8.Services.ReachPlanServiceReflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4997,7 +5247,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V8.Services.ReachPlanServiceReflection.Descriptor.MessageTypes[19]; }
+      get { return global::Google.Ads.GoogleAds.V8.Services.ReachPlanServiceReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5020,6 +5270,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
       onTargetImpressions_ = other.onTargetImpressions_;
       totalImpressions_ = other.totalImpressions_;
       viewableImpressions_ = other.viewableImpressions_;
+      effectiveFrequencyBreakdowns_ = other.effectiveFrequencyBreakdowns_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -5033,8 +5284,13 @@ namespace Google.Ads.GoogleAds.V8.Services {
     private long onTargetReach_;
     /// <summary>
     /// Number of unique people reached at least
-    /// GenerateReachForecastRequest.min_effective_frequency times that exactly
+    /// GenerateReachForecastRequest.min_effective_frequency or
+    /// GenerateReachForecastRequest.effective_frequency_limit times that exactly
     /// matches the Targeting.
+    ///
+    /// Note that a minimum number of unique people must be reached in order for
+    /// data to be reported. If the minimum number is not met, the on_target_reach
+    /// value will be rounded to 0.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long OnTargetReach {
@@ -5060,8 +5316,13 @@ namespace Google.Ads.GoogleAds.V8.Services {
     private long totalReach_;
     /// <summary>
     /// Total number of unique people reached at least
-    /// GenerateReachForecastRequest.min_effective_frequency times. This includes
+    /// GenerateReachForecastRequest.min_effective_frequency or
+    /// GenerateReachForecastRequest.effective_frequency_limit times. This includes
     /// people that may fall outside the specified Targeting.
+    ///
+    /// Note that a minimum number of unique people must be reached in order for
+    /// data to be reported. If the minimum number is not met, the total_reach
+    /// value will be rounded to 0.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long TotalReach {
@@ -5162,6 +5423,22 @@ namespace Google.Ads.GoogleAds.V8.Services {
       _hasBits0 &= ~16;
     }
 
+    /// <summary>Field number for the "effective_frequency_breakdowns" field.</summary>
+    public const int EffectiveFrequencyBreakdownsFieldNumber = 10;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V8.Services.EffectiveFrequencyBreakdown> _repeated_effectiveFrequencyBreakdowns_codec
+        = pb::FieldCodec.ForMessage(82, global::Google.Ads.GoogleAds.V8.Services.EffectiveFrequencyBreakdown.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V8.Services.EffectiveFrequencyBreakdown> effectiveFrequencyBreakdowns_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V8.Services.EffectiveFrequencyBreakdown>();
+    /// <summary>
+    /// A list of effective frequency forecasts. The list is ordered starting with
+    /// 1+ and ending with the value set in
+    /// GenerateReachForecastRequest.effective_frequency_limit. If no
+    /// effective_frequency_limit was set, this list will be empty.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V8.Services.EffectiveFrequencyBreakdown> EffectiveFrequencyBreakdowns {
+      get { return effectiveFrequencyBreakdowns_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Forecast);
@@ -5180,6 +5457,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
       if (OnTargetImpressions != other.OnTargetImpressions) return false;
       if (TotalImpressions != other.TotalImpressions) return false;
       if (ViewableImpressions != other.ViewableImpressions) return false;
+      if(!effectiveFrequencyBreakdowns_.Equals(other.effectiveFrequencyBreakdowns_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -5191,6 +5469,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
       if (HasOnTargetImpressions) hash ^= OnTargetImpressions.GetHashCode();
       if (HasTotalImpressions) hash ^= TotalImpressions.GetHashCode();
       if (HasViewableImpressions) hash ^= ViewableImpressions.GetHashCode();
+      hash ^= effectiveFrequencyBreakdowns_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -5227,6 +5506,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
         output.WriteRawTag(72);
         output.WriteInt64(ViewableImpressions);
       }
+      effectiveFrequencyBreakdowns_.WriteTo(output, _repeated_effectiveFrequencyBreakdowns_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -5256,6 +5536,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
         output.WriteRawTag(72);
         output.WriteInt64(ViewableImpressions);
       }
+      effectiveFrequencyBreakdowns_.WriteTo(ref output, _repeated_effectiveFrequencyBreakdowns_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -5280,6 +5561,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
       if (HasViewableImpressions) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(ViewableImpressions);
       }
+      size += effectiveFrequencyBreakdowns_.CalculateSize(_repeated_effectiveFrequencyBreakdowns_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -5306,6 +5588,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
       if (other.HasViewableImpressions) {
         ViewableImpressions = other.ViewableImpressions;
       }
+      effectiveFrequencyBreakdowns_.Add(other.effectiveFrequencyBreakdowns_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -5338,6 +5621,10 @@ namespace Google.Ads.GoogleAds.V8.Services {
           }
           case 72: {
             ViewableImpressions = input.ReadInt64();
+            break;
+          }
+          case 82: {
+            effectiveFrequencyBreakdowns_.AddEntriesFrom(input, _repeated_effectiveFrequencyBreakdowns_codec);
             break;
           }
         }
@@ -5374,6 +5661,10 @@ namespace Google.Ads.GoogleAds.V8.Services {
             ViewableImpressions = input.ReadInt64();
             break;
           }
+          case 82: {
+            effectiveFrequencyBreakdowns_.AddEntriesFrom(ref input, _repeated_effectiveFrequencyBreakdowns_codec);
+            break;
+          }
         }
       }
     }
@@ -5397,7 +5688,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V8.Services.ReachPlanServiceReflection.Descriptor.MessageTypes[20]; }
+      get { return global::Google.Ads.GoogleAds.V8.Services.ReachPlanServiceReflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5667,7 +5958,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V8.Services.ReachPlanServiceReflection.Descriptor.MessageTypes[21]; }
+      get { return global::Google.Ads.GoogleAds.V8.Services.ReachPlanServiceReflection.Descriptor.MessageTypes[22]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5703,6 +5994,10 @@ namespace Google.Ads.GoogleAds.V8.Services {
     private long onTargetReach_;
     /// <summary>
     /// Number of unique people reached that exactly matches the Targeting.
+    ///
+    /// Note that a minimum number of unique people must be reached in order for
+    /// data to be reported. If the minimum number is not met, the on_target_reach
+    /// value will be rounded to 0.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long OnTargetReach {
@@ -5718,6 +6013,10 @@ namespace Google.Ads.GoogleAds.V8.Services {
     /// <summary>
     /// Number of unique people reached. This includes people that may fall
     /// outside the specified Targeting.
+    ///
+    /// Note that a minimum number of unique people must be reached in order for
+    /// data to be reported. If the minimum number is not met, the total_reach
+    /// value will be rounded to 0.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long TotalReach {
@@ -6025,7 +6324,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V8.Services.ReachPlanServiceReflection.Descriptor.MessageTypes[22]; }
+      get { return global::Google.Ads.GoogleAds.V8.Services.ReachPlanServiceReflection.Descriptor.MessageTypes[23]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6241,6 +6540,273 @@ namespace Google.Ads.GoogleAds.V8.Services {
           }
           case 32: {
             CensusAudienceSize = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// A breakdown of the number of unique people reached at a given effective
+  /// frequency.
+  /// </summary>
+  public sealed partial class EffectiveFrequencyBreakdown : pb::IMessage<EffectiveFrequencyBreakdown>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<EffectiveFrequencyBreakdown> _parser = new pb::MessageParser<EffectiveFrequencyBreakdown>(() => new EffectiveFrequencyBreakdown());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<EffectiveFrequencyBreakdown> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V8.Services.ReachPlanServiceReflection.Descriptor.MessageTypes[24]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public EffectiveFrequencyBreakdown() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public EffectiveFrequencyBreakdown(EffectiveFrequencyBreakdown other) : this() {
+      effectiveFrequency_ = other.effectiveFrequency_;
+      onTargetReach_ = other.onTargetReach_;
+      totalReach_ = other.totalReach_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public EffectiveFrequencyBreakdown Clone() {
+      return new EffectiveFrequencyBreakdown(this);
+    }
+
+    /// <summary>Field number for the "effective_frequency" field.</summary>
+    public const int EffectiveFrequencyFieldNumber = 1;
+    private int effectiveFrequency_;
+    /// <summary>
+    /// The effective frequency [1-10].
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int EffectiveFrequency {
+      get { return effectiveFrequency_; }
+      set {
+        effectiveFrequency_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "on_target_reach" field.</summary>
+    public const int OnTargetReachFieldNumber = 2;
+    private long onTargetReach_;
+    /// <summary>
+    /// The number of unique people reached at least effective_frequency times that
+    /// exactly matches the Targeting.
+    ///
+    /// Note that a minimum number of unique people must be reached in order for
+    /// data to be reported. If the minimum number is not met, the on_target_reach
+    /// value will be rounded to 0.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long OnTargetReach {
+      get { return onTargetReach_; }
+      set {
+        onTargetReach_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "total_reach" field.</summary>
+    public const int TotalReachFieldNumber = 3;
+    private long totalReach_;
+    /// <summary>
+    /// Total number of unique people reached at least effective_frequency times.
+    /// This includes people that may fall outside the specified Targeting.
+    ///
+    /// Note that a minimum number of unique people must be reached in order for
+    /// data to be reported. If the minimum number is not met, the total_reach
+    /// value will be rounded to 0.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long TotalReach {
+      get { return totalReach_; }
+      set {
+        totalReach_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as EffectiveFrequencyBreakdown);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(EffectiveFrequencyBreakdown other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (EffectiveFrequency != other.EffectiveFrequency) return false;
+      if (OnTargetReach != other.OnTargetReach) return false;
+      if (TotalReach != other.TotalReach) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (EffectiveFrequency != 0) hash ^= EffectiveFrequency.GetHashCode();
+      if (OnTargetReach != 0L) hash ^= OnTargetReach.GetHashCode();
+      if (TotalReach != 0L) hash ^= TotalReach.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (EffectiveFrequency != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(EffectiveFrequency);
+      }
+      if (OnTargetReach != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(OnTargetReach);
+      }
+      if (TotalReach != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(TotalReach);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (EffectiveFrequency != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(EffectiveFrequency);
+      }
+      if (OnTargetReach != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(OnTargetReach);
+      }
+      if (TotalReach != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(TotalReach);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (EffectiveFrequency != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(EffectiveFrequency);
+      }
+      if (OnTargetReach != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(OnTargetReach);
+      }
+      if (TotalReach != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(TotalReach);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(EffectiveFrequencyBreakdown other) {
+      if (other == null) {
+        return;
+      }
+      if (other.EffectiveFrequency != 0) {
+        EffectiveFrequency = other.EffectiveFrequency;
+      }
+      if (other.OnTargetReach != 0L) {
+        OnTargetReach = other.OnTargetReach;
+      }
+      if (other.TotalReach != 0L) {
+        TotalReach = other.TotalReach;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            EffectiveFrequency = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            OnTargetReach = input.ReadInt64();
+            break;
+          }
+          case 24: {
+            TotalReach = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            EffectiveFrequency = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            OnTargetReach = input.ReadInt64();
+            break;
+          }
+          case 24: {
+            TotalReach = input.ReadInt64();
             break;
           }
         }

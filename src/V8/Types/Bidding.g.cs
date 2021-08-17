@@ -1333,6 +1333,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     /// <summary>
     /// Maximum bid limit that can be set by the bid strategy.
     /// The limit applies to all keywords managed by the strategy.
+    /// This should only be set for portfolio bid strategies.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long CpcBidCeilingMicros {
@@ -1359,6 +1360,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     /// <summary>
     /// Minimum bid limit that can be set by the bid strategy.
     /// The limit applies to all keywords managed by the strategy.
+    /// This should only be set for portfolio bid strategies.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long CpcBidFloorMicros {
@@ -2053,6 +2055,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     /// <summary>
     /// Maximum bid limit that can be set by the bid strategy.
     /// The limit applies to all keywords managed by the strategy.
+    /// This should only be set for portfolio bid strategies.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long CpcBidCeilingMicros {
@@ -2079,6 +2082,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     /// <summary>
     /// Minimum bid limit that can be set by the bid strategy.
     /// The limit applies to all keywords managed by the strategy.
+    /// This should only be set for portfolio bid strategies.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long CpcBidFloorMicros {

@@ -1,3 +1,22 @@
+10.0.0
+=====
+
+- Added support for version v8_1 of the Google Ads API.
+- Removed support for version v6 of the Google Ads API.
+- Added new code examples.
+  - Migration\CampaignReportToCsv.cs.
+- Fixed a few code examples.
+  - Fix the video ID in AddLocalCampaign.cs.
+  - Added SmartCampaignSuggestionService to AddSmartCampaign example.
+  - Updated AccountManagement/GetChangeDetails.cs to add support for more asset types.
+- Removed some code examples.
+  - Removed AddGmailAd.cs.
+- Downgrade a few dependencies to make the library work on Azure. Fixes https://github.com/googleads/google-ads-dotnet/issues/302.
+- Fixed the example runner.
+  - Update example runner to disambiguate error conditions.
+  - Fix bug where exceptions were swallowed by incorrect condition.
+  - Refactor example type extraction into GetCodeExampleType.
+
 9.0.0
 =====
 - Removed support for version v5 of the Google Ads API.

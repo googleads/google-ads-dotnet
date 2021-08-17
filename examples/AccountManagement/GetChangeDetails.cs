@@ -152,9 +152,9 @@ namespace Google.Ads.GoogleAds.Examples.V8
                                     newResourceEntity = newResource.AdGroupAd;
                                     break;
 
-                                case ChangeEventResourceType.AdGroupCriterion:
-                                    oldResourceEntity = oldResource.AdGroupCriterion;
-                                    newResourceEntity = newResource.AdGroupCriterion;
+                                case ChangeEventResourceType.AdGroupAsset:
+                                    oldResourceEntity = oldResource.AdGroupAsset;
+                                    newResourceEntity = newResource.AdGroupAsset;
                                     break;
 
                                 case ChangeEventResourceType.AdGroupBidModifier:
@@ -162,9 +162,29 @@ namespace Google.Ads.GoogleAds.Examples.V8
                                     newResourceEntity = newResource.AdGroupBidModifier;
                                     break;
 
+                                case ChangeEventResourceType.AdGroupCriterion:
+                                    oldResourceEntity = oldResource.AdGroupCriterion;
+                                    newResourceEntity = newResource.AdGroupCriterion;
+                                    break;
+
+                                case ChangeEventResourceType.AdGroupFeed:
+                                    oldResourceEntity = oldResource.AdGroupFeed;
+                                    newResourceEntity = newResource.AdGroupFeed;
+                                    break;
+
+                                case ChangeEventResourceType.Asset:
+                                    oldResourceEntity = oldResource.Asset;
+                                    newResourceEntity = newResource.Asset;
+                                    break;
+
                                 case ChangeEventResourceType.Campaign:
                                     oldResourceEntity = oldResource.Campaign;
                                     newResourceEntity = newResource.Campaign;
+                                    break;
+
+                                case ChangeEventResourceType.CampaignAsset:
+                                    oldResourceEntity = oldResource.CampaignAsset;
+                                    newResourceEntity = newResource.CampaignAsset;
                                     break;
 
                                 case ChangeEventResourceType.CampaignBudget:
@@ -177,14 +197,14 @@ namespace Google.Ads.GoogleAds.Examples.V8
                                     newResourceEntity = newResource.CampaignCriterion;
                                     break;
 
-                                case ChangeEventResourceType.AdGroupFeed:
-                                    oldResourceEntity = oldResource.AdGroupFeed;
-                                    newResourceEntity = newResource.AdGroupFeed;
-                                    break;
-
                                 case ChangeEventResourceType.CampaignFeed:
                                     oldResourceEntity = oldResource.CampaignFeed;
                                     newResourceEntity = newResource.CampaignFeed;
+                                    break;
+
+                                case ChangeEventResourceType.CustomerAsset:
+                                    oldResourceEntity = oldResource.CustomerAsset;
+                                    newResourceEntity = newResource.CustomerAsset;
                                     break;
 
                                 case ChangeEventResourceType.Feed:

@@ -46,6 +46,7 @@ namespace Google.Ads.GoogleAds.V8.Services
         {
             gax::GaxPreconditions.CheckNotNull(existing, nameof(existing));
             SuggestSmartCampaignBudgetOptionsSettings = existing.SuggestSmartCampaignBudgetOptionsSettings;
+            SuggestSmartCampaignAdSettings = existing.SuggestSmartCampaignAdSettings;
             OnCopy(existing);
         }
 
@@ -66,6 +67,22 @@ namespace Google.Ads.GoogleAds.V8.Services
         /// </list>
         /// </remarks>
         public gaxgrpc::CallSettings SuggestSmartCampaignBudgetOptionsSettings { get; set; } = gaxgrpc::CallSettingsExtensions.WithRetry(gaxgrpc::CallSettings.FromExpiration(gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(3600000))), gaxgrpc::RetrySettings.FromExponentialBackoff(maxAttempts: 2147483647, initialBackoff: sys::TimeSpan.FromMilliseconds(5000), maxBackoff: sys::TimeSpan.FromMilliseconds(60000), backoffMultiplier: 1.3, retryFilter: gaxgrpc::RetrySettings.FilterForStatusCodes(grpccore::StatusCode.Unavailable, grpccore::StatusCode.DeadlineExceeded)));
+
+        /// <summary>
+        /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
+        /// <c>SmartCampaignSuggestServiceClient.SuggestSmartCampaignAd</c> and
+        /// <c>SmartCampaignSuggestServiceClient.SuggestSmartCampaignAdAsync</c>.
+        /// </summary>
+        /// <remarks>
+        /// <list type="bullet">
+        /// <item><description>Initial retry delay: 5000 milliseconds.</description></item>
+        /// <item><description>Retry delay multiplier: 1.3</description></item>
+        /// <item><description>Retry maximum delay: 60000 milliseconds.</description></item>
+        /// <item><description>Maximum attempts: Unlimited</description></item>
+        /// <item><description>Timeout: 3600 seconds.</description></item>
+        /// </list>
+        /// </remarks>
+        public gaxgrpc::CallSettings SuggestSmartCampaignAdSettings { get; set; } = gaxgrpc::CallSettingsExtensions.WithRetry(gaxgrpc::CallSettings.FromExpiration(gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(3600000))), gaxgrpc::RetrySettings.FromExponentialBackoff(maxAttempts: 2147483647, initialBackoff: sys::TimeSpan.FromMilliseconds(5000), maxBackoff: sys::TimeSpan.FromMilliseconds(60000), backoffMultiplier: 1.3, retryFilter: gaxgrpc::RetrySettings.FilterForStatusCodes(grpccore::StatusCode.Unavailable, grpccore::StatusCode.DeadlineExceeded)));
 
         /// <summary>Creates a deep clone of this object, with all the same property values.</summary>
         /// <returns>A deep clone of this <see cref="SmartCampaignSuggestServiceSettings"/> object.</returns>
@@ -237,6 +254,36 @@ namespace Google.Ads.GoogleAds.V8.Services
         /// <returns>A Task containing the RPC response.</returns>
         public virtual stt::Task<SuggestSmartCampaignBudgetOptionsResponse> SuggestSmartCampaignBudgetOptionsAsync(SuggestSmartCampaignBudgetOptionsRequest request, st::CancellationToken cancellationToken) =>
             SuggestSmartCampaignBudgetOptionsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Suggests a Smart campaign ad compatible with the Ad family of resources,
+        /// based on data points such as targeting and the business to advertise.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual SuggestSmartCampaignAdResponse SuggestSmartCampaignAd(SuggestSmartCampaignAdRequest request, gaxgrpc::CallSettings callSettings = null) =>
+            throw new sys::NotImplementedException();
+
+        /// <summary>
+        /// Suggests a Smart campaign ad compatible with the Ad family of resources,
+        /// based on data points such as targeting and the business to advertise.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<SuggestSmartCampaignAdResponse> SuggestSmartCampaignAdAsync(SuggestSmartCampaignAdRequest request, gaxgrpc::CallSettings callSettings = null) =>
+            throw new sys::NotImplementedException();
+
+        /// <summary>
+        /// Suggests a Smart campaign ad compatible with the Ad family of resources,
+        /// based on data points such as targeting and the business to advertise.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<SuggestSmartCampaignAdResponse> SuggestSmartCampaignAdAsync(SuggestSmartCampaignAdRequest request, st::CancellationToken cancellationToken) =>
+            SuggestSmartCampaignAdAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
     }
 
     /// <summary>SmartCampaignSuggestService client wrapper implementation, for convenient use.</summary>
@@ -246,6 +293,8 @@ namespace Google.Ads.GoogleAds.V8.Services
     public sealed partial class SmartCampaignSuggestServiceClientImpl : SmartCampaignSuggestServiceClient
     {
         private readonly gaxgrpc::ApiCall<SuggestSmartCampaignBudgetOptionsRequest, SuggestSmartCampaignBudgetOptionsResponse> _callSuggestSmartCampaignBudgetOptions;
+
+        private readonly gaxgrpc::ApiCall<SuggestSmartCampaignAdRequest, SuggestSmartCampaignAdResponse> _callSuggestSmartCampaignAd;
 
         /// <summary>
         /// Constructs a client wrapper for the SmartCampaignSuggestService service, with the specified gRPC client and
@@ -263,6 +312,9 @@ namespace Google.Ads.GoogleAds.V8.Services
             _callSuggestSmartCampaignBudgetOptions = clientHelper.BuildApiCall<SuggestSmartCampaignBudgetOptionsRequest, SuggestSmartCampaignBudgetOptionsResponse>(grpcClient.SuggestSmartCampaignBudgetOptionsAsync, grpcClient.SuggestSmartCampaignBudgetOptions, effectiveSettings.SuggestSmartCampaignBudgetOptionsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callSuggestSmartCampaignBudgetOptions);
             Modify_SuggestSmartCampaignBudgetOptionsApiCall(ref _callSuggestSmartCampaignBudgetOptions);
+            _callSuggestSmartCampaignAd = clientHelper.BuildApiCall<SuggestSmartCampaignAdRequest, SuggestSmartCampaignAdResponse>(grpcClient.SuggestSmartCampaignAdAsync, grpcClient.SuggestSmartCampaignAd, effectiveSettings.SuggestSmartCampaignAdSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            Modify_ApiCall(ref _callSuggestSmartCampaignAd);
+            Modify_SuggestSmartCampaignAdApiCall(ref _callSuggestSmartCampaignAd);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);
         }
 
@@ -270,12 +322,16 @@ namespace Google.Ads.GoogleAds.V8.Services
 
         partial void Modify_SuggestSmartCampaignBudgetOptionsApiCall(ref gaxgrpc::ApiCall<SuggestSmartCampaignBudgetOptionsRequest, SuggestSmartCampaignBudgetOptionsResponse> call);
 
+        partial void Modify_SuggestSmartCampaignAdApiCall(ref gaxgrpc::ApiCall<SuggestSmartCampaignAdRequest, SuggestSmartCampaignAdResponse> call);
+
         partial void OnConstruction(SmartCampaignSuggestService.SmartCampaignSuggestServiceClient grpcClient, SmartCampaignSuggestServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
         /// <summary>The underlying gRPC SmartCampaignSuggestService client</summary>
         public override SmartCampaignSuggestService.SmartCampaignSuggestServiceClient GrpcClient { get; }
 
         partial void Modify_SuggestSmartCampaignBudgetOptionsRequest(ref SuggestSmartCampaignBudgetOptionsRequest request, ref gaxgrpc::CallSettings settings);
+
+        partial void Modify_SuggestSmartCampaignAdRequest(ref SuggestSmartCampaignAdRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
         /// Returns BudgetOption suggestions.
@@ -299,6 +355,32 @@ namespace Google.Ads.GoogleAds.V8.Services
         {
             Modify_SuggestSmartCampaignBudgetOptionsRequest(ref request, ref callSettings);
             return _callSuggestSmartCampaignBudgetOptions.Async(request, callSettings);
+        }
+
+        /// <summary>
+        /// Suggests a Smart campaign ad compatible with the Ad family of resources,
+        /// based on data points such as targeting and the business to advertise.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public override SuggestSmartCampaignAdResponse SuggestSmartCampaignAd(SuggestSmartCampaignAdRequest request, gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_SuggestSmartCampaignAdRequest(ref request, ref callSettings);
+            return _callSuggestSmartCampaignAd.Sync(request, callSettings);
+        }
+
+        /// <summary>
+        /// Suggests a Smart campaign ad compatible with the Ad family of resources,
+        /// based on data points such as targeting and the business to advertise.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public override stt::Task<SuggestSmartCampaignAdResponse> SuggestSmartCampaignAdAsync(SuggestSmartCampaignAdRequest request, gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_SuggestSmartCampaignAdRequest(ref request, ref callSettings);
+            return _callSuggestSmartCampaignAd.Async(request, callSettings);
         }
     }
 }

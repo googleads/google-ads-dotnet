@@ -27,74 +27,75 @@ namespace Google.Ads.GoogleAds.V8.Common {
             "CjZnb29nbGUvYWRzL2dvb2dsZWFkcy92OC9jb21tb24vb2ZmbGluZV91c2Vy",
             "X2RhdGEucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LmNvbW1vbho6",
             "Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjgvZW51bXMvdXNlcl9pZGVudGlmaWVy",
-            "X3NvdXJjZS5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byKS",
+            "X3NvdXJjZS5wcm90bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90byLQ",
             "AgoWT2ZmbGluZVVzZXJBZGRyZXNzSW5mbxIeChFoYXNoZWRfZmlyc3RfbmFt",
             "ZRgHIAEoCUgAiAEBEh0KEGhhc2hlZF9sYXN0X25hbWUYCCABKAlIAYgBARIR",
             "CgRjaXR5GAkgASgJSAKIAQESEgoFc3RhdGUYCiABKAlIA4gBARIZCgxjb3Vu",
             "dHJ5X2NvZGUYCyABKAlIBIgBARIYCgtwb3N0YWxfY29kZRgMIAEoCUgFiAEB",
-            "QhQKEl9oYXNoZWRfZmlyc3RfbmFtZUITChFfaGFzaGVkX2xhc3RfbmFtZUIH",
-            "CgVfY2l0eUIICgZfc3RhdGVCDwoNX2NvdW50cnlfY29kZUIOCgxfcG9zdGFs",
-            "X2NvZGUixwIKDlVzZXJJZGVudGlmaWVyEmwKFnVzZXJfaWRlbnRpZmllcl9z",
-            "b3VyY2UYBiABKA4yTC5nb29nbGUuYWRzLmdvb2dsZWFkcy52OC5lbnVtcy5V",
-            "c2VySWRlbnRpZmllclNvdXJjZUVudW0uVXNlcklkZW50aWZpZXJTb3VyY2US",
-            "FgoMaGFzaGVkX2VtYWlsGAcgASgJSAASHQoTaGFzaGVkX3Bob25lX251bWJl",
-            "chgIIAEoCUgAEhMKCW1vYmlsZV9pZBgJIAEoCUgAEh0KE3RoaXJkX3BhcnR5",
-            "X3VzZXJfaWQYCiABKAlIABJOCgxhZGRyZXNzX2luZm8YBSABKAsyNi5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52OC5jb21tb24uT2ZmbGluZVVzZXJBZGRyZXNz",
-            "SW5mb0gAQgwKCmlkZW50aWZpZXIi3gMKFFRyYW5zYWN0aW9uQXR0cmlidXRl",
-            "EiIKFXRyYW5zYWN0aW9uX2RhdGVfdGltZRgIIAEoCUgAiAEBEiYKGXRyYW5z",
-            "YWN0aW9uX2Ftb3VudF9taWNyb3MYCSABKAFIAYgBARIaCg1jdXJyZW5jeV9j",
-            "b2RlGAogASgJSAKIAQESHgoRY29udmVyc2lvbl9hY3Rpb24YCyABKAlIA4gB",
-            "ARIVCghvcmRlcl9pZBgMIAEoCUgEiAEBEkcKD3N0b3JlX2F0dHJpYnV0ZRgG",
-            "IAEoCzIuLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LmNvbW1vbi5TdG9yZUF0",
-            "dHJpYnV0ZRIZCgxjdXN0b21fdmFsdWUYDSABKAlIBYgBARJFCg5pdGVtX2F0",
-            "dHJpYnV0ZRgOIAEoCzItLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LmNvbW1v",
-            "bi5JdGVtQXR0cmlidXRlQhgKFl90cmFuc2FjdGlvbl9kYXRlX3RpbWVCHAoa",
-            "X3RyYW5zYWN0aW9uX2Ftb3VudF9taWNyb3NCEAoOX2N1cnJlbmN5X2NvZGVC",
-            "FAoSX2NvbnZlcnNpb25fYWN0aW9uQgsKCV9vcmRlcl9pZEIPCg1fY3VzdG9t",
-            "X3ZhbHVlIjgKDlN0b3JlQXR0cmlidXRlEhcKCnN0b3JlX2NvZGUYAiABKAlI",
-            "AIgBAUINCgtfc3RvcmVfY29kZSKJAQoNSXRlbUF0dHJpYnV0ZRIPCgdpdGVt",
-            "X2lkGAEgASgJEhgKC21lcmNoYW50X2lkGAIgASgDSACIAQESFAoMY291bnRy",
-            "eV9jb2RlGAMgASgJEhUKDWxhbmd1YWdlX2NvZGUYBCABKAkSEAoIcXVhbnRp",
-            "dHkYBSABKANCDgoMX21lcmNoYW50X2lkIvABCghVc2VyRGF0YRJIChB1c2Vy",
-            "X2lkZW50aWZpZXJzGAEgAygLMi4uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjgu",
-            "Y29tbW9uLlVzZXJJZGVudGlmaWVyElMKFXRyYW5zYWN0aW9uX2F0dHJpYnV0",
-            "ZRgCIAEoCzI0Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LmNvbW1vbi5UcmFu",
-            "c2FjdGlvbkF0dHJpYnV0ZRJFCg51c2VyX2F0dHJpYnV0ZRgDIAEoCzItLmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnY4LmNvbW1vbi5Vc2VyQXR0cmlidXRlIpIC",
-            "Cg1Vc2VyQXR0cmlidXRlEiIKFWxpZmV0aW1lX3ZhbHVlX21pY3JvcxgBIAEo",
-            "A0gAiAEBEiIKFWxpZmV0aW1lX3ZhbHVlX2J1Y2tldBgCIAEoBUgBiAEBEh8K",
-            "F2xhc3RfcHVyY2hhc2VfZGF0ZV90aW1lGAMgASgJEh4KFmF2ZXJhZ2VfcHVy",
-            "Y2hhc2VfY291bnQYBCABKAUSJQodYXZlcmFnZV9wdXJjaGFzZV92YWx1ZV9t",
-            "aWNyb3MYBSABKAMSHQoVYWNxdWlzaXRpb25fZGF0ZV90aW1lGAYgASgJQhgK",
-            "Fl9saWZldGltZV92YWx1ZV9taWNyb3NCGAoWX2xpZmV0aW1lX3ZhbHVlX2J1",
-            "Y2tldCJFCh1DdXN0b21lck1hdGNoVXNlckxpc3RNZXRhZGF0YRIWCgl1c2Vy",
-            "X2xpc3QYAiABKAlIAIgBAUIMCgpfdXNlcl9saXN0IpYCChJTdG9yZVNhbGVz",
-            "TWV0YWRhdGESHQoQbG95YWx0eV9mcmFjdGlvbhgFIAEoAUgAiAEBEigKG3Ry",
-            "YW5zYWN0aW9uX3VwbG9hZF9mcmFjdGlvbhgGIAEoAUgBiAEBEhcKCmN1c3Rv",
-            "bV9rZXkYByABKAlIAogBARJaChR0aGlyZF9wYXJ0eV9tZXRhZGF0YRgDIAEo",
-            "CzI8Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LmNvbW1vbi5TdG9yZVNhbGVz",
-            "VGhpcmRQYXJ0eU1ldGFkYXRhQhMKEV9sb3lhbHR5X2ZyYWN0aW9uQh4KHF90",
-            "cmFuc2FjdGlvbl91cGxvYWRfZnJhY3Rpb25CDQoLX2N1c3RvbV9rZXkimAMK",
-            "HFN0b3JlU2FsZXNUaGlyZFBhcnR5TWV0YWRhdGESKAobYWR2ZXJ0aXNlcl91",
-            "cGxvYWRfZGF0ZV90aW1lGAcgASgJSACIAQESJwoadmFsaWRfdHJhbnNhY3Rp",
-            "b25fZnJhY3Rpb24YCCABKAFIAYgBARIjChZwYXJ0bmVyX21hdGNoX2ZyYWN0",
-            "aW9uGAkgASgBSAKIAQESJAoXcGFydG5lcl91cGxvYWRfZnJhY3Rpb24YCiAB",
-            "KAFIA4gBARIiChVicmlkZ2VfbWFwX3ZlcnNpb25faWQYCyABKAlIBIgBARIX",
-            "CgpwYXJ0bmVyX2lkGAwgASgDSAWIAQFCHgocX2FkdmVydGlzZXJfdXBsb2Fk",
-            "X2RhdGVfdGltZUIdChtfdmFsaWRfdHJhbnNhY3Rpb25fZnJhY3Rpb25CGQoX",
-            "X3BhcnRuZXJfbWF0Y2hfZnJhY3Rpb25CGgoYX3BhcnRuZXJfdXBsb2FkX2Zy",
-            "YWN0aW9uQhgKFl9icmlkZ2VfbWFwX3ZlcnNpb25faWRCDQoLX3BhcnRuZXJf",
-            "aWRC7wEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52OC5jb21tb25CFE9m",
-            "ZmxpbmVVc2VyRGF0YVByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnBy",
-            "b3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92OC9jb21tb247Y29tbW9u",
-            "ogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjguQ29tbW9uygIeR29v",
-            "Z2xlXEFkc1xHb29nbGVBZHNcVjhcQ29tbW9u6gIiR29vZ2xlOjpBZHM6Okdv",
-            "b2dsZUFkczo6Vjg6OkNvbW1vbmIGcHJvdG8z"));
+            "EiIKFWhhc2hlZF9zdHJlZXRfYWRkcmVzcxgNIAEoCUgGiAEBQhQKEl9oYXNo",
+            "ZWRfZmlyc3RfbmFtZUITChFfaGFzaGVkX2xhc3RfbmFtZUIHCgVfY2l0eUII",
+            "CgZfc3RhdGVCDwoNX2NvdW50cnlfY29kZUIOCgxfcG9zdGFsX2NvZGVCGAoW",
+            "X2hhc2hlZF9zdHJlZXRfYWRkcmVzcyLHAgoOVXNlcklkZW50aWZpZXISbAoW",
+            "dXNlcl9pZGVudGlmaWVyX3NvdXJjZRgGIAEoDjJMLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnY4LmVudW1zLlVzZXJJZGVudGlmaWVyU291cmNlRW51bS5Vc2Vy",
+            "SWRlbnRpZmllclNvdXJjZRIWCgxoYXNoZWRfZW1haWwYByABKAlIABIdChNo",
+            "YXNoZWRfcGhvbmVfbnVtYmVyGAggASgJSAASEwoJbW9iaWxlX2lkGAkgASgJ",
+            "SAASHQoTdGhpcmRfcGFydHlfdXNlcl9pZBgKIAEoCUgAEk4KDGFkZHJlc3Nf",
+            "aW5mbxgFIAEoCzI2Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LmNvbW1vbi5P",
+            "ZmZsaW5lVXNlckFkZHJlc3NJbmZvSABCDAoKaWRlbnRpZmllciLeAwoUVHJh",
+            "bnNhY3Rpb25BdHRyaWJ1dGUSIgoVdHJhbnNhY3Rpb25fZGF0ZV90aW1lGAgg",
+            "ASgJSACIAQESJgoZdHJhbnNhY3Rpb25fYW1vdW50X21pY3JvcxgJIAEoAUgB",
+            "iAEBEhoKDWN1cnJlbmN5X2NvZGUYCiABKAlIAogBARIeChFjb252ZXJzaW9u",
+            "X2FjdGlvbhgLIAEoCUgDiAEBEhUKCG9yZGVyX2lkGAwgASgJSASIAQESRwoP",
+            "c3RvcmVfYXR0cmlidXRlGAYgASgLMi4uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djguY29tbW9uLlN0b3JlQXR0cmlidXRlEhkKDGN1c3RvbV92YWx1ZRgNIAEo",
+            "CUgFiAEBEkUKDml0ZW1fYXR0cmlidXRlGA4gASgLMi0uZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjguY29tbW9uLkl0ZW1BdHRyaWJ1dGVCGAoWX3RyYW5zYWN0",
+            "aW9uX2RhdGVfdGltZUIcChpfdHJhbnNhY3Rpb25fYW1vdW50X21pY3Jvc0IQ",
+            "Cg5fY3VycmVuY3lfY29kZUIUChJfY29udmVyc2lvbl9hY3Rpb25CCwoJX29y",
+            "ZGVyX2lkQg8KDV9jdXN0b21fdmFsdWUiOAoOU3RvcmVBdHRyaWJ1dGUSFwoK",
+            "c3RvcmVfY29kZRgCIAEoCUgAiAEBQg0KC19zdG9yZV9jb2RlIokBCg1JdGVt",
+            "QXR0cmlidXRlEg8KB2l0ZW1faWQYASABKAkSGAoLbWVyY2hhbnRfaWQYAiAB",
+            "KANIAIgBARIUCgxjb3VudHJ5X2NvZGUYAyABKAkSFQoNbGFuZ3VhZ2VfY29k",
+            "ZRgEIAEoCRIQCghxdWFudGl0eRgFIAEoA0IOCgxfbWVyY2hhbnRfaWQi8AEK",
+            "CFVzZXJEYXRhEkgKEHVzZXJfaWRlbnRpZmllcnMYASADKAsyLi5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52OC5jb21tb24uVXNlcklkZW50aWZpZXISUwoVdHJh",
+            "bnNhY3Rpb25fYXR0cmlidXRlGAIgASgLMjQuZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjguY29tbW9uLlRyYW5zYWN0aW9uQXR0cmlidXRlEkUKDnVzZXJfYXR0",
+            "cmlidXRlGAMgASgLMi0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjguY29tbW9u",
+            "LlVzZXJBdHRyaWJ1dGUikgIKDVVzZXJBdHRyaWJ1dGUSIgoVbGlmZXRpbWVf",
+            "dmFsdWVfbWljcm9zGAEgASgDSACIAQESIgoVbGlmZXRpbWVfdmFsdWVfYnVj",
+            "a2V0GAIgASgFSAGIAQESHwoXbGFzdF9wdXJjaGFzZV9kYXRlX3RpbWUYAyAB",
+            "KAkSHgoWYXZlcmFnZV9wdXJjaGFzZV9jb3VudBgEIAEoBRIlCh1hdmVyYWdl",
+            "X3B1cmNoYXNlX3ZhbHVlX21pY3JvcxgFIAEoAxIdChVhY3F1aXNpdGlvbl9k",
+            "YXRlX3RpbWUYBiABKAlCGAoWX2xpZmV0aW1lX3ZhbHVlX21pY3Jvc0IYChZf",
+            "bGlmZXRpbWVfdmFsdWVfYnVja2V0IkUKHUN1c3RvbWVyTWF0Y2hVc2VyTGlz",
+            "dE1ldGFkYXRhEhYKCXVzZXJfbGlzdBgCIAEoCUgAiAEBQgwKCl91c2VyX2xp",
+            "c3QilgIKElN0b3JlU2FsZXNNZXRhZGF0YRIdChBsb3lhbHR5X2ZyYWN0aW9u",
+            "GAUgASgBSACIAQESKAobdHJhbnNhY3Rpb25fdXBsb2FkX2ZyYWN0aW9uGAYg",
+            "ASgBSAGIAQESFwoKY3VzdG9tX2tleRgHIAEoCUgCiAEBEloKFHRoaXJkX3Bh",
+            "cnR5X21ldGFkYXRhGAMgASgLMjwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjgu",
+            "Y29tbW9uLlN0b3JlU2FsZXNUaGlyZFBhcnR5TWV0YWRhdGFCEwoRX2xveWFs",
+            "dHlfZnJhY3Rpb25CHgocX3RyYW5zYWN0aW9uX3VwbG9hZF9mcmFjdGlvbkIN",
+            "CgtfY3VzdG9tX2tleSKYAwocU3RvcmVTYWxlc1RoaXJkUGFydHlNZXRhZGF0",
+            "YRIoChthZHZlcnRpc2VyX3VwbG9hZF9kYXRlX3RpbWUYByABKAlIAIgBARIn",
+            "Chp2YWxpZF90cmFuc2FjdGlvbl9mcmFjdGlvbhgIIAEoAUgBiAEBEiMKFnBh",
+            "cnRuZXJfbWF0Y2hfZnJhY3Rpb24YCSABKAFIAogBARIkChdwYXJ0bmVyX3Vw",
+            "bG9hZF9mcmFjdGlvbhgKIAEoAUgDiAEBEiIKFWJyaWRnZV9tYXBfdmVyc2lv",
+            "bl9pZBgLIAEoCUgEiAEBEhcKCnBhcnRuZXJfaWQYDCABKANIBYgBAUIeChxf",
+            "YWR2ZXJ0aXNlcl91cGxvYWRfZGF0ZV90aW1lQh0KG192YWxpZF90cmFuc2Fj",
+            "dGlvbl9mcmFjdGlvbkIZChdfcGFydG5lcl9tYXRjaF9mcmFjdGlvbkIaChhf",
+            "cGFydG5lcl91cGxvYWRfZnJhY3Rpb25CGAoWX2JyaWRnZV9tYXBfdmVyc2lv",
+            "bl9pZEINCgtfcGFydG5lcl9pZELvAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnY4LmNvbW1vbkIUT2ZmbGluZVVzZXJEYXRhUHJvdG9QAVpEZ29vZ2xl",
+            "LmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRz",
+            "L3Y4L2NvbW1vbjtjb21tb26iAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFk",
+            "cy5WOC5Db21tb27KAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWOFxDb21tb27q",
+            "AiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWODo6Q29tbW9uYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V8.Enums.UserIdentifierSourceReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Common.OfflineUserAddressInfo), global::Google.Ads.GoogleAds.V8.Common.OfflineUserAddressInfo.Parser, new[]{ "HashedFirstName", "HashedLastName", "City", "State", "CountryCode", "PostalCode" }, new[]{ "HashedFirstName", "HashedLastName", "City", "State", "CountryCode", "PostalCode" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Common.OfflineUserAddressInfo), global::Google.Ads.GoogleAds.V8.Common.OfflineUserAddressInfo.Parser, new[]{ "HashedFirstName", "HashedLastName", "City", "State", "CountryCode", "PostalCode", "HashedStreetAddress" }, new[]{ "HashedFirstName", "HashedLastName", "City", "State", "CountryCode", "PostalCode", "HashedStreetAddress" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Common.UserIdentifier), global::Google.Ads.GoogleAds.V8.Common.UserIdentifier.Parser, new[]{ "UserIdentifierSource", "HashedEmail", "HashedPhoneNumber", "MobileId", "ThirdPartyUserId", "AddressInfo" }, new[]{ "Identifier" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Common.TransactionAttribute), global::Google.Ads.GoogleAds.V8.Common.TransactionAttribute.Parser, new[]{ "TransactionDateTime", "TransactionAmountMicros", "CurrencyCode", "ConversionAction", "OrderId", "StoreAttribute", "CustomValue", "ItemAttribute" }, new[]{ "TransactionDateTime", "TransactionAmountMicros", "CurrencyCode", "ConversionAction", "OrderId", "CustomValue" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Common.StoreAttribute), global::Google.Ads.GoogleAds.V8.Common.StoreAttribute.Parser, new[]{ "StoreCode" }, new[]{ "StoreCode" }, null, null, null),
@@ -148,6 +149,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
       state_ = other.state_;
       countryCode_ = other.countryCode_;
       postalCode_ = other.postalCode_;
+      hashedStreetAddress_ = other.hashedStreetAddress_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -211,7 +213,8 @@ namespace Google.Ads.GoogleAds.V8.Common {
     public const int CityFieldNumber = 9;
     private string city_;
     /// <summary>
-    /// City of the address. Only accepted for Store Sales Direct data.
+    /// City of the address. Only accepted for Store Sales and
+    /// ConversionAdjustmentUploadService.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string City {
@@ -235,7 +238,8 @@ namespace Google.Ads.GoogleAds.V8.Common {
     public const int StateFieldNumber = 10;
     private string state_;
     /// <summary>
-    /// State code of the address. Only accepted for Store Sales Direct data.
+    /// State code of the address. Only accepted for Store Sales and
+    /// ConversionAdjustmentUploadService.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string State {
@@ -303,6 +307,32 @@ namespace Google.Ads.GoogleAds.V8.Common {
       postalCode_ = null;
     }
 
+    /// <summary>Field number for the "hashed_street_address" field.</summary>
+    public const int HashedStreetAddressFieldNumber = 13;
+    private string hashedStreetAddress_;
+    /// <summary>
+    /// The street address of the user hashed using SHA-256 hash function after
+    /// normalization (lower case only). Only accepted for
+    /// ConversionAdjustmentUploadService.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string HashedStreetAddress {
+      get { return hashedStreetAddress_ ?? ""; }
+      set {
+        hashedStreetAddress_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "hashed_street_address" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HasHashedStreetAddress {
+      get { return hashedStreetAddress_ != null; }
+    }
+    /// <summary>Clears the value of the "hashed_street_address" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearHashedStreetAddress() {
+      hashedStreetAddress_ = null;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as OfflineUserAddressInfo);
@@ -322,6 +352,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
       if (State != other.State) return false;
       if (CountryCode != other.CountryCode) return false;
       if (PostalCode != other.PostalCode) return false;
+      if (HashedStreetAddress != other.HashedStreetAddress) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -334,6 +365,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
       if (HasState) hash ^= State.GetHashCode();
       if (HasCountryCode) hash ^= CountryCode.GetHashCode();
       if (HasPostalCode) hash ^= PostalCode.GetHashCode();
+      if (HasHashedStreetAddress) hash ^= HashedStreetAddress.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -374,6 +406,10 @@ namespace Google.Ads.GoogleAds.V8.Common {
         output.WriteRawTag(98);
         output.WriteString(PostalCode);
       }
+      if (HasHashedStreetAddress) {
+        output.WriteRawTag(106);
+        output.WriteString(HashedStreetAddress);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -407,6 +443,10 @@ namespace Google.Ads.GoogleAds.V8.Common {
         output.WriteRawTag(98);
         output.WriteString(PostalCode);
       }
+      if (HasHashedStreetAddress) {
+        output.WriteRawTag(106);
+        output.WriteString(HashedStreetAddress);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -433,6 +473,9 @@ namespace Google.Ads.GoogleAds.V8.Common {
       }
       if (HasPostalCode) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(PostalCode);
+      }
+      if (HasHashedStreetAddress) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(HashedStreetAddress);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -462,6 +505,9 @@ namespace Google.Ads.GoogleAds.V8.Common {
       }
       if (other.HasPostalCode) {
         PostalCode = other.PostalCode;
+      }
+      if (other.HasHashedStreetAddress) {
+        HashedStreetAddress = other.HashedStreetAddress;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -499,6 +545,10 @@ namespace Google.Ads.GoogleAds.V8.Common {
           }
           case 98: {
             PostalCode = input.ReadString();
+            break;
+          }
+          case 106: {
+            HashedStreetAddress = input.ReadString();
             break;
           }
         }
@@ -539,6 +589,10 @@ namespace Google.Ads.GoogleAds.V8.Common {
             PostalCode = input.ReadString();
             break;
           }
+          case 106: {
+            HashedStreetAddress = input.ReadString();
+            break;
+          }
         }
       }
     }
@@ -547,7 +601,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
   }
 
   /// <summary>
-  /// Hashed user identifying information.
+  /// User identifying information.
   /// </summary>
   public sealed partial class UserIdentifier : pb::IMessage<UserIdentifier>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -609,8 +663,11 @@ namespace Google.Ads.GoogleAds.V8.Common {
     public const int UserIdentifierSourceFieldNumber = 6;
     private global::Google.Ads.GoogleAds.V8.Enums.UserIdentifierSourceEnum.Types.UserIdentifierSource userIdentifierSource_ = global::Google.Ads.GoogleAds.V8.Enums.UserIdentifierSourceEnum.Types.UserIdentifierSource.Unspecified;
     /// <summary>
-    /// Source of the user identifier when the upload is from Store Sales third
-    /// party partners.
+    /// Source of the user identifier when the upload is from Store Sales,
+    /// ConversionUploadService, or ConversionAdjustmentUploadService. For
+    /// ConversionUploadService and ConversionAdjustmentUploadService, the source
+    /// of the user identifier must be specified as FIRST_PARTY, otherwise an error
+    /// will be returned.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V8.Enums.UserIdentifierSourceEnum.Types.UserIdentifierSource UserIdentifierSource {
@@ -624,6 +681,8 @@ namespace Google.Ads.GoogleAds.V8.Common {
     public const int HashedEmailFieldNumber = 7;
     /// <summary>
     /// Hashed email address using SHA-256 hash function after normalization.
+    /// Accepted for Customer Match, Store Sales, ConversionUploadService, and
+    /// ConversionAdjustmentUploadService.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string HashedEmail {
@@ -638,7 +697,8 @@ namespace Google.Ads.GoogleAds.V8.Common {
     public const int HashedPhoneNumberFieldNumber = 8;
     /// <summary>
     /// Hashed phone number using SHA-256 hash function after normalization
-    /// (E164 standard).
+    /// (E164 standard). Accepted for Customer Match, Store Sales,
+    /// ConversionUploadService, and ConversionAdjustmentUploadService.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string HashedPhoneNumber {
@@ -652,7 +712,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     /// <summary>Field number for the "mobile_id" field.</summary>
     public const int MobileIdFieldNumber = 9;
     /// <summary>
-    /// Mobile device ID (advertising ID/IDFA).
+    /// Mobile device ID (advertising ID/IDFA). Accepted only for Customer Match.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string MobileId {
@@ -667,7 +727,8 @@ namespace Google.Ads.GoogleAds.V8.Common {
     public const int ThirdPartyUserIdFieldNumber = 10;
     /// <summary>
     /// Advertiser-assigned user ID for Customer Match upload, or
-    /// third-party-assigned user ID for SSD.
+    /// third-party-assigned user ID for Store Sales. Accepted only for Customer
+    /// Match and Store Sales.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string ThirdPartyUserId {
@@ -681,7 +742,8 @@ namespace Google.Ads.GoogleAds.V8.Common {
     /// <summary>Field number for the "address_info" field.</summary>
     public const int AddressInfoFieldNumber = 5;
     /// <summary>
-    /// Address information.
+    /// Address information. Accepted only for Customer Match, Store Sales, and
+    /// ConversionAdjustmentUploadService.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Google.Ads.GoogleAds.V8.Common.OfflineUserAddressInfo AddressInfo {
@@ -1058,6 +1120,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     private double transactionAmountMicros_;
     /// <summary>
     /// Transaction amount in micros. Required.
+    /// Transaction amount in micros needs to be greater than 1000.
     /// If item Attributes are provided, it represents the total value of the
     /// items, after multiplying the unit price per item by the quantity provided
     /// in the ItemAttributes.

@@ -37,7 +37,7 @@ Our documentation is available [here](https://developers.google.com/google-ads/a
 
 ### Support forum
 
-- https://developers.google.com/adwords/api/community/
+- https://developers.google.com/google-ads/api/support
 
 ### Authors
 

@@ -94,14 +94,10 @@ namespace Google.Ads.GoogleAds.Examples
         }
 
         /// <summary>
-        /// Runs the specified example name.
+        /// Returns the system type for a code example name
         /// </summary>
         /// <param name="exampleName">Name of the example.</param>
-        /// <param name="args">The arguments.</param>
-        /// <exception cref="KeyNotFoundException">Thrown if the example with the specified name
-        /// is not found.</exception>
-        public void Run(string exampleName, IEnumerable<string> args)
-        {
+        public SystemType GetCodeExampleType(string exampleName) {
             SystemType codeExampleType = null;
 
             string[] splits = exampleName.Split('.');
@@ -120,6 +116,20 @@ namespace Google.Ads.GoogleAds.Examples
             {
                 codeExampleType = codeExampleMap[exampleNameWithoutVersion];
             }
+
+            return codeExampleType;
+        }
+
+        /// <summary>
+        /// Runs the specified example name.
+        /// </summary>
+        /// <param name="exampleName">Name of the example.</param>
+        /// <param name="args">The arguments.</param>
+        /// <exception cref="KeyNotFoundException">Thrown if the example with the specified name
+        /// is not found.</exception>
+        public void Run(string exampleName, IEnumerable<string> args)
+        {
+            SystemType codeExampleType = GetCodeExampleType(exampleName);
 
             if (codeExampleType != null)
             {
@@ -146,7 +156,7 @@ namespace Google.Ads.GoogleAds.Examples
             catch (Exception e)
             {
                 StackTrace stackTrace = new StackTrace(e.InnerException);
-                StackFrame frame = stackTrace.GetFrame(stackTrace.FrameCount - 1);
+                StackFrame frame = stackTrace.GetFrame(0);
                 if (frame.GetMethod() == method)
                 {
                     // The site of the exception was the main method itself. So there was an error
