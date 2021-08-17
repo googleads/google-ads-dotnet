@@ -353,7 +353,7 @@ namespace Google.Ads.GoogleAds.V8.Errors {
         /// </summary>
         [pbr::OriginalName("INVALID_VALUE_WITH_DURING_OPERATOR")] InvalidValueWithDuringOperator = 22,
         /// <summary>
-        /// A non-string value was passed to the LIKE operator.
+        /// An invalid value was passed to the LIKE operator.
         /// </summary>
         [pbr::OriginalName("INVALID_VALUE_WITH_LIKE_OPERATOR")] InvalidValueWithLikeOperator = 56,
         /// <summary>

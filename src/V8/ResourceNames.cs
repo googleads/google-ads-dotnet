@@ -164,6 +164,16 @@ namespace Google.Ads.GoogleAds.V8.Errors
             return $"customers/{customerId}/batchJobs/{batchJobId}";
         }
 
+        public static string BiddingDataExclusions(long customerId, long seasonalityEventId)
+        {
+            return $"customers/{customerId}/biddingDataExclusions/{seasonalityEventId}";
+        }
+
+        public static string BiddingSeasonalityAdjustment(long customerId, long seasonalityEventId)
+        {
+            return $"customers/{customerId}/biddingSeasonalityAdjustments/{seasonalityEventId}";
+        }
+
         public static string BiddingStrategy(long customerId, long biddingStrategyId)
         {
             return $"customers/{customerId}/biddingStrategies/{biddingStrategyId}";
@@ -294,6 +304,16 @@ namespace Google.Ads.GoogleAds.V8.Errors
             long conversionCustomVariableId)
         {
             return $"customers/{customerId}/conversionCustomVariables/{conversionCustomVariableId}";
+        }
+
+        public static string ConversionValueRule(long customerId, long conversionValueRuleId)
+        {
+            return $"customers/{customerId}/conversionValueRules/{conversionValueRuleId}";
+        }
+
+        public static string ConversionValueRuleSet(long customerId, long conversionValueRuleSetId)
+        {
+            return $"customers/{customerId}/conversionValueRuleSets/{conversionValueRuleSetId}";
         }
 
         public static string CurrencyConstant(string currencyCode)

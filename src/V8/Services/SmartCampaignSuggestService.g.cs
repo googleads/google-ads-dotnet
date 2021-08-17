@@ -26,64 +26,83 @@ namespace Google.Ads.GoogleAds.V8.Services {
           string.Concat(
             "CkVnb29nbGUvYWRzL2dvb2dsZWFkcy92OC9zZXJ2aWNlcy9zbWFydF9jYW1w",
             "YWlnbl9zdWdnZXN0X3NlcnZpY2UucHJvdG8SIGdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnY4LnNlcnZpY2VzGi1nb29nbGUvYWRzL2dvb2dsZWFkcy92OC9jb21t",
-            "b24vY3JpdGVyaWEucHJvdG8aHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJv",
-            "dG8aH2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8aGWdvb2dsZS9h",
-            "cGkvcmVzb3VyY2UucHJvdG8aF2dvb2dsZS9hcGkvY2xpZW50LnByb3RvIvUB",
-            "CihTdWdnZXN0U21hcnRDYW1wYWlnbkJ1ZGdldE9wdGlvbnNSZXF1ZXN0EhgK",
-            "C2N1c3RvbWVyX2lkGAEgASgJQgPgQQISPQoIY2FtcGFpZ24YAiABKAlCKeBB",
-            "AvpBIwohZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0NhbXBhaWduSAASXQoP",
-            "c3VnZ2VzdGlvbl9pbmZvGAMgASgLMj0uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djguc2VydmljZXMuU21hcnRDYW1wYWlnblN1Z2dlc3Rpb25JbmZvQgPgQQJI",
-            "AEIRCg9zdWdnZXN0aW9uX2RhdGEipQQKG1NtYXJ0Q2FtcGFpZ25TdWdnZXN0",
-            "aW9uSW5mbxIWCglmaW5hbF91cmwYASABKAlCA+BBARIhChRidXNpbmVzc19s",
-            "b2NhdGlvbl9pZBgCIAEoA0ID4EEBEhoKDWxhbmd1YWdlX2NvZGUYAyABKAlC",
-            "A+BBARJJCgxhZF9zY2hlZHVsZXMYBiADKAsyLi5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52OC5jb21tb24uQWRTY2hlZHVsZUluZm9CA+BBARJNCg5rZXl3b3Jk",
-            "X3RoZW1lcxgHIAMoCzIwLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LmNvbW1v",
-            "bi5LZXl3b3JkVGhlbWVJbmZvQgPgQQESaAoNbG9jYXRpb25fbGlzdBgEIAEo",
-            "CzJKLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LnNlcnZpY2VzLlNtYXJ0Q2Ft",
-            "cGFpZ25TdWdnZXN0aW9uSW5mby5Mb2NhdGlvbkxpc3RCA+BBAUgAEkcKCXBy",
-            "b3hpbWl0eRgFIAEoCzItLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LmNvbW1v",
-            "bi5Qcm94aW1pdHlJbmZvQgPgQQFIABpUCgxMb2NhdGlvbkxpc3QSRAoJbG9j",
-            "YXRpb25zGAEgAygLMiwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjguY29tbW9u",
-            "LkxvY2F0aW9uSW5mb0ID4EECQgwKCmdlb190YXJnZXQi+wQKKVN1Z2dlc3RT",
-            "bWFydENhbXBhaWduQnVkZ2V0T3B0aW9uc1Jlc3BvbnNlEm8KA2xvdxgBIAEo",
-            "CzJYLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LnNlcnZpY2VzLlN1Z2dlc3RT",
-            "bWFydENhbXBhaWduQnVkZ2V0T3B0aW9uc1Jlc3BvbnNlLkJ1ZGdldE9wdGlv",
-            "bkID4EEBSACIAQESdwoLcmVjb21tZW5kZWQYAiABKAsyWC5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52OC5zZXJ2aWNlcy5TdWdnZXN0U21hcnRDYW1wYWlnbkJ1",
-            "ZGdldE9wdGlvbnNSZXNwb25zZS5CdWRnZXRPcHRpb25CA+BBAUgBiAEBEnAK",
-            "BGhpZ2gYAyABKAsyWC5nb29nbGUuYWRzLmdvb2dsZWFkcy52OC5zZXJ2aWNl",
-            "cy5TdWdnZXN0U21hcnRDYW1wYWlnbkJ1ZGdldE9wdGlvbnNSZXNwb25zZS5C",
-            "dWRnZXRPcHRpb25CA+BBAUgCiAEBGj0KB01ldHJpY3MSGAoQbWluX2RhaWx5",
-            "X2NsaWNrcxgBIAEoAxIYChBtYXhfZGFpbHlfY2xpY2tzGAIgASgDGpEBCgxC",
-            "dWRnZXRPcHRpb24SGwoTZGFpbHlfYW1vdW50X21pY3JvcxgBIAEoAxJkCgdt",
-            "ZXRyaWNzGAIgASgLMlMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjguc2Vydmlj",
-            "ZXMuU3VnZ2VzdFNtYXJ0Q2FtcGFpZ25CdWRnZXRPcHRpb25zUmVzcG9uc2Uu",
-            "TWV0cmljc0IGCgRfbG93Qg4KDF9yZWNvbW1lbmRlZEIHCgVfaGlnaDLvAgob",
+            "YWRzLnY4LnNlcnZpY2VzGjJnb29nbGUvYWRzL2dvb2dsZWFkcy92OC9jb21t",
+            "b24vYWRfdHlwZV9pbmZvcy5wcm90bxotZ29vZ2xlL2Fkcy9nb29nbGVhZHMv",
+            "djgvY29tbW9uL2NyaXRlcmlhLnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRp",
+            "b25zLnByb3RvGh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9yLnByb3RvGhln",
+            "b29nbGUvYXBpL3Jlc291cmNlLnByb3RvGhdnb29nbGUvYXBpL2NsaWVudC5w",
+            "cm90byL1AQooU3VnZ2VzdFNtYXJ0Q2FtcGFpZ25CdWRnZXRPcHRpb25zUmVx",
+            "dWVzdBIYCgtjdXN0b21lcl9pZBgBIAEoCUID4EECEj0KCGNhbXBhaWduGAIg",
+            "ASgJQingQQL6QSMKIWdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9DYW1wYWln",
+            "bkgAEl0KD3N1Z2dlc3Rpb25faW5mbxgDIAEoCzI9Lmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnY4LnNlcnZpY2VzLlNtYXJ0Q2FtcGFpZ25TdWdnZXN0aW9uSW5m",
+            "b0ID4EECSABCEQoPc3VnZ2VzdGlvbl9kYXRhItoFChtTbWFydENhbXBhaWdu",
+            "U3VnZ2VzdGlvbkluZm8SFgoJZmluYWxfdXJsGAEgASgJQgPgQQESGgoNbGFu",
+            "Z3VhZ2VfY29kZRgDIAEoCUID4EEBEkkKDGFkX3NjaGVkdWxlcxgGIAMoCzIu",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LmNvbW1vbi5BZFNjaGVkdWxlSW5m",
+            "b0ID4EEBEk0KDmtleXdvcmRfdGhlbWVzGAcgAygLMjAuZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjguY29tbW9uLktleXdvcmRUaGVtZUluZm9CA+BBARJuChBi",
+            "dXNpbmVzc19jb250ZXh0GAggASgLMk0uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djguc2VydmljZXMuU21hcnRDYW1wYWlnblN1Z2dlc3Rpb25JbmZvLkJ1c2lu",
+            "ZXNzQ29udGV4dEID4EEBSAASIwoUYnVzaW5lc3NfbG9jYXRpb25faWQYAiAB",
+            "KANCA+BBAUgAEmgKDWxvY2F0aW9uX2xpc3QYBCABKAsySi5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52OC5zZXJ2aWNlcy5TbWFydENhbXBhaWduU3VnZ2VzdGlv",
+            "bkluZm8uTG9jYXRpb25MaXN0QgPgQQFIARJHCglwcm94aW1pdHkYBSABKAsy",
+            "LS5nb29nbGUuYWRzLmdvb2dsZWFkcy52OC5jb21tb24uUHJveGltaXR5SW5m",
+            "b0ID4EEBSAEaVAoMTG9jYXRpb25MaXN0EkQKCWxvY2F0aW9ucxgBIAMoCzIs",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LmNvbW1vbi5Mb2NhdGlvbkluZm9C",
+            "A+BBAhotCg9CdXNpbmVzc0NvbnRleHQSGgoNYnVzaW5lc3NfbmFtZRgBIAEo",
+            "CUID4EEBQhIKEGJ1c2luZXNzX3NldHRpbmdCDAoKZ2VvX3RhcmdldCL7BAop",
+            "U3VnZ2VzdFNtYXJ0Q2FtcGFpZ25CdWRnZXRPcHRpb25zUmVzcG9uc2USbwoD",
+            "bG93GAEgASgLMlguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjguc2VydmljZXMu",
+            "U3VnZ2VzdFNtYXJ0Q2FtcGFpZ25CdWRnZXRPcHRpb25zUmVzcG9uc2UuQnVk",
+            "Z2V0T3B0aW9uQgPgQQFIAIgBARJ3CgtyZWNvbW1lbmRlZBgCIAEoCzJYLmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnY4LnNlcnZpY2VzLlN1Z2dlc3RTbWFydENh",
+            "bXBhaWduQnVkZ2V0T3B0aW9uc1Jlc3BvbnNlLkJ1ZGdldE9wdGlvbkID4EEB",
+            "SAGIAQEScAoEaGlnaBgDIAEoCzJYLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4",
+            "LnNlcnZpY2VzLlN1Z2dlc3RTbWFydENhbXBhaWduQnVkZ2V0T3B0aW9uc1Jl",
+            "c3BvbnNlLkJ1ZGdldE9wdGlvbkID4EEBSAKIAQEaPQoHTWV0cmljcxIYChBt",
+            "aW5fZGFpbHlfY2xpY2tzGAEgASgDEhgKEG1heF9kYWlseV9jbGlja3MYAiAB",
+            "KAMakQEKDEJ1ZGdldE9wdGlvbhIbChNkYWlseV9hbW91bnRfbWljcm9zGAEg",
+            "ASgDEmQKB21ldHJpY3MYAiABKAsyUy5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "OC5zZXJ2aWNlcy5TdWdnZXN0U21hcnRDYW1wYWlnbkJ1ZGdldE9wdGlvbnNS",
+            "ZXNwb25zZS5NZXRyaWNzQgYKBF9sb3dCDgoMX3JlY29tbWVuZGVkQgcKBV9o",
+            "aWdoIpYBCh1TdWdnZXN0U21hcnRDYW1wYWlnbkFkUmVxdWVzdBIYCgtjdXN0",
+            "b21lcl9pZBgBIAEoCUID4EECElsKD3N1Z2dlc3Rpb25faW5mbxgCIAEoCzI9",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LnNlcnZpY2VzLlNtYXJ0Q2FtcGFp",
+            "Z25TdWdnZXN0aW9uSW5mb0ID4EECImsKHlN1Z2dlc3RTbWFydENhbXBhaWdu",
+            "QWRSZXNwb25zZRJJCgdhZF9pbmZvGAEgASgLMjMuZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjguY29tbW9uLlNtYXJ0Q2FtcGFpZ25BZEluZm9CA+BBATLOBAob",
             "U21hcnRDYW1wYWlnblN1Z2dlc3RTZXJ2aWNlEogCCiFTdWdnZXN0U21hcnRD",
             "YW1wYWlnbkJ1ZGdldE9wdGlvbnMSSi5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
             "OC5zZXJ2aWNlcy5TdWdnZXN0U21hcnRDYW1wYWlnbkJ1ZGdldE9wdGlvbnNS",
             "ZXF1ZXN0GksuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjguc2VydmljZXMuU3Vn",
             "Z2VzdFNtYXJ0Q2FtcGFpZ25CdWRnZXRPcHRpb25zUmVzcG9uc2UiSoLT5JMC",
             "RCI/L3Y4L2N1c3RvbWVycy97Y3VzdG9tZXJfaWQ9Kn06c3VnZ2VzdFNtYXJ0",
-            "Q2FtcGFpZ25CdWRnZXRPcHRpb25zOgEqGkXKQRhnb29nbGVhZHMuZ29vZ2xl",
-            "YXBpcy5jb23SQSdodHRwczovL3d3dy5nb29nbGVhcGlzLmNvbS9hdXRoL2Fk",
-            "d29yZHNChwIKJGNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52OC5zZXJ2aWNl",
-            "c0IgU21hcnRDYW1wYWlnblN1Z2dlc3RTZXJ2aWNlUHJvdG9QAVpIZ29vZ2xl",
-            "LmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRz",
-            "L3Y4L3NlcnZpY2VzO3NlcnZpY2VzogIDR0FBqgIgR29vZ2xlLkFkcy5Hb29n",
-            "bGVBZHMuVjguU2VydmljZXPKAiBHb29nbGVcQWRzXEdvb2dsZUFkc1xWOFxT",
-            "ZXJ2aWNlc+oCJEdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlY4OjpTZXJ2aWNl",
-            "c2IGcHJvdG8z"));
+            "Q2FtcGFpZ25CdWRnZXRPcHRpb25zOgEqEtwBChZTdWdnZXN0U21hcnRDYW1w",
+            "YWlnbkFkEj8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjguc2VydmljZXMuU3Vn",
+            "Z2VzdFNtYXJ0Q2FtcGFpZ25BZFJlcXVlc3QaQC5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52OC5zZXJ2aWNlcy5TdWdnZXN0U21hcnRDYW1wYWlnbkFkUmVzcG9u",
+            "c2UiP4LT5JMCOSI0L3Y4L2N1c3RvbWVycy97Y3VzdG9tZXJfaWQ9Kn06c3Vn",
+            "Z2VzdFNtYXJ0Q2FtcGFpZ25BZDoBKhpFykEYZ29vZ2xlYWRzLmdvb2dsZWFw",
+            "aXMuY29t0kEnaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vYXV0aC9hZHdv",
+            "cmRzQocCCiRjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjguc2VydmljZXNC",
+            "IFNtYXJ0Q2FtcGFpZ25TdWdnZXN0U2VydmljZVByb3RvUAFaSGdvb2dsZS5n",
+            "b2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92",
+            "OC9zZXJ2aWNlcztzZXJ2aWNlc6ICA0dBQaoCIEdvb2dsZS5BZHMuR29vZ2xl",
+            "QWRzLlY4LlNlcnZpY2VzygIgR29vZ2xlXEFkc1xHb29nbGVBZHNcVjhcU2Vy",
+            "dmljZXPqAiRHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWODo6U2VydmljZXNi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V8.Common.CriteriaReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V8.Common.AdTypeInfosReflection.Descriptor, global::Google.Ads.GoogleAds.V8.Common.CriteriaReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignBudgetOptionsRequest), global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignBudgetOptionsRequest.Parser, new[]{ "CustomerId", "Campaign", "SuggestionInfo" }, new[]{ "SuggestionData" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.SmartCampaignSuggestionInfo), global::Google.Ads.GoogleAds.V8.Services.SmartCampaignSuggestionInfo.Parser, new[]{ "FinalUrl", "BusinessLocationId", "LanguageCode", "AdSchedules", "KeywordThemes", "LocationList", "Proximity" }, new[]{ "GeoTarget" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.SmartCampaignSuggestionInfo.Types.LocationList), global::Google.Ads.GoogleAds.V8.Services.SmartCampaignSuggestionInfo.Types.LocationList.Parser, new[]{ "Locations" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.SmartCampaignSuggestionInfo), global::Google.Ads.GoogleAds.V8.Services.SmartCampaignSuggestionInfo.Parser, new[]{ "FinalUrl", "LanguageCode", "AdSchedules", "KeywordThemes", "BusinessContext", "BusinessLocationId", "LocationList", "Proximity" }, new[]{ "BusinessSetting", "GeoTarget" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.SmartCampaignSuggestionInfo.Types.LocationList), global::Google.Ads.GoogleAds.V8.Services.SmartCampaignSuggestionInfo.Types.LocationList.Parser, new[]{ "Locations" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.SmartCampaignSuggestionInfo.Types.BusinessContext), global::Google.Ads.GoogleAds.V8.Services.SmartCampaignSuggestionInfo.Types.BusinessContext.Parser, new[]{ "BusinessName" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignBudgetOptionsResponse), global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignBudgetOptionsResponse.Parser, new[]{ "Low", "Recommended", "High" }, new[]{ "Low", "Recommended", "High" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignBudgetOptionsResponse.Types.Metrics), global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignBudgetOptionsResponse.Types.Metrics.Parser, new[]{ "MinDailyClicks", "MaxDailyClicks" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignBudgetOptionsResponse.Types.BudgetOption), global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignBudgetOptionsResponse.Types.BudgetOption.Parser, new[]{ "DailyAmountMicros", "Metrics" }, null, null, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignBudgetOptionsResponse.Types.BudgetOption), global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignBudgetOptionsResponse.Types.BudgetOption.Parser, new[]{ "DailyAmountMicros", "Metrics" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignAdRequest), global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignAdRequest.Parser, new[]{ "CustomerId", "SuggestionInfo" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignAdResponse), global::Google.Ads.GoogleAds.V8.Services.SuggestSmartCampaignAdResponse.Parser, new[]{ "AdInfo" }, null, null, null, null)
           }));
     }
     #endregion
@@ -92,7 +111,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
   #region Messages
   /// <summary>
   /// Request message for
-  /// [SmartCampaignBudgetSuggestService.SuggestSmartCampaignBudgets][].
+  /// [SmartCampaignSuggestService.SuggestSmartCampaignBudgets][].
   /// </summary>
   public sealed partial class SuggestSmartCampaignBudgetOptionsRequest : pb::IMessage<SuggestSmartCampaignBudgetOptionsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -425,10 +444,18 @@ namespace Google.Ads.GoogleAds.V8.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SmartCampaignSuggestionInfo(SmartCampaignSuggestionInfo other) : this() {
       finalUrl_ = other.finalUrl_;
-      businessLocationId_ = other.businessLocationId_;
       languageCode_ = other.languageCode_;
       adSchedules_ = other.adSchedules_.Clone();
       keywordThemes_ = other.keywordThemes_.Clone();
+      switch (other.BusinessSettingCase) {
+        case BusinessSettingOneofCase.BusinessContext:
+          BusinessContext = other.BusinessContext.Clone();
+          break;
+        case BusinessSettingOneofCase.BusinessLocationId:
+          BusinessLocationId = other.BusinessLocationId;
+          break;
+      }
+
       switch (other.GeoTargetCase) {
         case GeoTargetOneofCase.LocationList:
           LocationList = other.LocationList.Clone();
@@ -457,25 +484,6 @@ namespace Google.Ads.GoogleAds.V8.Services {
       get { return finalUrl_; }
       set {
         finalUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "business_location_id" field.</summary>
-    public const int BusinessLocationIdFieldNumber = 2;
-    private long businessLocationId_;
-    /// <summary>
-    /// Optional. The ID of the Google My Business (GMB) Location.
-    /// The location ID can be fetched by GMB API with its form:
-    /// accounts/{accountId}/locations/{locationId}. The last {locationId}
-    /// component from the GMB API represents the business_location_id.
-    /// See the [Google My Business API]
-    /// (https://developers.google.com/my-business/reference/rest/v4/accounts.locations)
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long BusinessLocationId {
-      get { return businessLocationId_; }
-      set {
-        businessLocationId_ = value;
       }
     }
 
@@ -521,6 +529,39 @@ namespace Google.Ads.GoogleAds.V8.Services {
       get { return keywordThemes_; }
     }
 
+    /// <summary>Field number for the "business_context" field.</summary>
+    public const int BusinessContextFieldNumber = 8;
+    /// <summary>
+    /// Optional. Context describing the business to advertise.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V8.Services.SmartCampaignSuggestionInfo.Types.BusinessContext BusinessContext {
+      get { return businessSettingCase_ == BusinessSettingOneofCase.BusinessContext ? (global::Google.Ads.GoogleAds.V8.Services.SmartCampaignSuggestionInfo.Types.BusinessContext) businessSetting_ : null; }
+      set {
+        businessSetting_ = value;
+        businessSettingCase_ = value == null ? BusinessSettingOneofCase.None : BusinessSettingOneofCase.BusinessContext;
+      }
+    }
+
+    /// <summary>Field number for the "business_location_id" field.</summary>
+    public const int BusinessLocationIdFieldNumber = 2;
+    /// <summary>
+    /// Optional. The ID of the Google My Business (GMB) Location.
+    /// The location ID can be fetched by GMB API with its form:
+    /// accounts/{accountId}/locations/{locationId}. The last {locationId}
+    /// component from the GMB API represents the business_location_id.
+    /// See the [Google My Business API]
+    /// (https://developers.google.com/my-business/reference/rest/v4/accounts.locations)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long BusinessLocationId {
+      get { return businessSettingCase_ == BusinessSettingOneofCase.BusinessLocationId ? (long) businessSetting_ : 0L; }
+      set {
+        businessSetting_ = value;
+        businessSettingCase_ = BusinessSettingOneofCase.BusinessLocationId;
+      }
+    }
+
     /// <summary>Field number for the "location_list" field.</summary>
     public const int LocationListFieldNumber = 4;
     /// <summary>
@@ -547,6 +588,25 @@ namespace Google.Ads.GoogleAds.V8.Services {
         geoTarget_ = value;
         geoTargetCase_ = value == null ? GeoTargetOneofCase.None : GeoTargetOneofCase.Proximity;
       }
+    }
+
+    private object businessSetting_;
+    /// <summary>Enum of possible cases for the "business_setting" oneof.</summary>
+    public enum BusinessSettingOneofCase {
+      None = 0,
+      BusinessContext = 8,
+      BusinessLocationId = 2,
+    }
+    private BusinessSettingOneofCase businessSettingCase_ = BusinessSettingOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public BusinessSettingOneofCase BusinessSettingCase {
+      get { return businessSettingCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearBusinessSetting() {
+      businessSettingCase_ = BusinessSettingOneofCase.None;
+      businessSetting_ = null;
     }
 
     private object geoTarget_;
@@ -582,12 +642,14 @@ namespace Google.Ads.GoogleAds.V8.Services {
         return true;
       }
       if (FinalUrl != other.FinalUrl) return false;
-      if (BusinessLocationId != other.BusinessLocationId) return false;
       if (LanguageCode != other.LanguageCode) return false;
       if(!adSchedules_.Equals(other.adSchedules_)) return false;
       if(!keywordThemes_.Equals(other.keywordThemes_)) return false;
+      if (!object.Equals(BusinessContext, other.BusinessContext)) return false;
+      if (BusinessLocationId != other.BusinessLocationId) return false;
       if (!object.Equals(LocationList, other.LocationList)) return false;
       if (!object.Equals(Proximity, other.Proximity)) return false;
+      if (BusinessSettingCase != other.BusinessSettingCase) return false;
       if (GeoTargetCase != other.GeoTargetCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -596,12 +658,14 @@ namespace Google.Ads.GoogleAds.V8.Services {
     public override int GetHashCode() {
       int hash = 1;
       if (FinalUrl.Length != 0) hash ^= FinalUrl.GetHashCode();
-      if (BusinessLocationId != 0L) hash ^= BusinessLocationId.GetHashCode();
       if (LanguageCode.Length != 0) hash ^= LanguageCode.GetHashCode();
       hash ^= adSchedules_.GetHashCode();
       hash ^= keywordThemes_.GetHashCode();
+      if (businessSettingCase_ == BusinessSettingOneofCase.BusinessContext) hash ^= BusinessContext.GetHashCode();
+      if (businessSettingCase_ == BusinessSettingOneofCase.BusinessLocationId) hash ^= BusinessLocationId.GetHashCode();
       if (geoTargetCase_ == GeoTargetOneofCase.LocationList) hash ^= LocationList.GetHashCode();
       if (geoTargetCase_ == GeoTargetOneofCase.Proximity) hash ^= Proximity.GetHashCode();
+      hash ^= (int) businessSettingCase_;
       hash ^= (int) geoTargetCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -623,7 +687,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
         output.WriteRawTag(10);
         output.WriteString(FinalUrl);
       }
-      if (BusinessLocationId != 0L) {
+      if (businessSettingCase_ == BusinessSettingOneofCase.BusinessLocationId) {
         output.WriteRawTag(16);
         output.WriteInt64(BusinessLocationId);
       }
@@ -641,6 +705,10 @@ namespace Google.Ads.GoogleAds.V8.Services {
       }
       adSchedules_.WriteTo(output, _repeated_adSchedules_codec);
       keywordThemes_.WriteTo(output, _repeated_keywordThemes_codec);
+      if (businessSettingCase_ == BusinessSettingOneofCase.BusinessContext) {
+        output.WriteRawTag(66);
+        output.WriteMessage(BusinessContext);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -654,7 +722,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
         output.WriteRawTag(10);
         output.WriteString(FinalUrl);
       }
-      if (BusinessLocationId != 0L) {
+      if (businessSettingCase_ == BusinessSettingOneofCase.BusinessLocationId) {
         output.WriteRawTag(16);
         output.WriteInt64(BusinessLocationId);
       }
@@ -672,6 +740,10 @@ namespace Google.Ads.GoogleAds.V8.Services {
       }
       adSchedules_.WriteTo(ref output, _repeated_adSchedules_codec);
       keywordThemes_.WriteTo(ref output, _repeated_keywordThemes_codec);
+      if (businessSettingCase_ == BusinessSettingOneofCase.BusinessContext) {
+        output.WriteRawTag(66);
+        output.WriteMessage(BusinessContext);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -684,14 +756,17 @@ namespace Google.Ads.GoogleAds.V8.Services {
       if (FinalUrl.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(FinalUrl);
       }
-      if (BusinessLocationId != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(BusinessLocationId);
-      }
       if (LanguageCode.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(LanguageCode);
       }
       size += adSchedules_.CalculateSize(_repeated_adSchedules_codec);
       size += keywordThemes_.CalculateSize(_repeated_keywordThemes_codec);
+      if (businessSettingCase_ == BusinessSettingOneofCase.BusinessContext) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(BusinessContext);
+      }
+      if (businessSettingCase_ == BusinessSettingOneofCase.BusinessLocationId) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(BusinessLocationId);
+      }
       if (geoTargetCase_ == GeoTargetOneofCase.LocationList) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(LocationList);
       }
@@ -712,14 +787,23 @@ namespace Google.Ads.GoogleAds.V8.Services {
       if (other.FinalUrl.Length != 0) {
         FinalUrl = other.FinalUrl;
       }
-      if (other.BusinessLocationId != 0L) {
-        BusinessLocationId = other.BusinessLocationId;
-      }
       if (other.LanguageCode.Length != 0) {
         LanguageCode = other.LanguageCode;
       }
       adSchedules_.Add(other.adSchedules_);
       keywordThemes_.Add(other.keywordThemes_);
+      switch (other.BusinessSettingCase) {
+        case BusinessSettingOneofCase.BusinessContext:
+          if (BusinessContext == null) {
+            BusinessContext = new global::Google.Ads.GoogleAds.V8.Services.SmartCampaignSuggestionInfo.Types.BusinessContext();
+          }
+          BusinessContext.MergeFrom(other.BusinessContext);
+          break;
+        case BusinessSettingOneofCase.BusinessLocationId:
+          BusinessLocationId = other.BusinessLocationId;
+          break;
+      }
+
       switch (other.GeoTargetCase) {
         case GeoTargetOneofCase.LocationList:
           if (LocationList == null) {
@@ -787,6 +871,15 @@ namespace Google.Ads.GoogleAds.V8.Services {
             keywordThemes_.AddEntriesFrom(input, _repeated_keywordThemes_codec);
             break;
           }
+          case 66: {
+            global::Google.Ads.GoogleAds.V8.Services.SmartCampaignSuggestionInfo.Types.BusinessContext subBuilder = new global::Google.Ads.GoogleAds.V8.Services.SmartCampaignSuggestionInfo.Types.BusinessContext();
+            if (businessSettingCase_ == BusinessSettingOneofCase.BusinessContext) {
+              subBuilder.MergeFrom(BusinessContext);
+            }
+            input.ReadMessage(subBuilder);
+            BusinessContext = subBuilder;
+            break;
+          }
         }
       }
     #endif
@@ -837,6 +930,15 @@ namespace Google.Ads.GoogleAds.V8.Services {
           }
           case 58: {
             keywordThemes_.AddEntriesFrom(ref input, _repeated_keywordThemes_codec);
+            break;
+          }
+          case 66: {
+            global::Google.Ads.GoogleAds.V8.Services.SmartCampaignSuggestionInfo.Types.BusinessContext subBuilder = new global::Google.Ads.GoogleAds.V8.Services.SmartCampaignSuggestionInfo.Types.BusinessContext();
+            if (businessSettingCase_ == BusinessSettingOneofCase.BusinessContext) {
+              subBuilder.MergeFrom(BusinessContext);
+            }
+            input.ReadMessage(subBuilder);
+            BusinessContext = subBuilder;
             break;
           }
         }
@@ -1015,6 +1117,184 @@ namespace Google.Ads.GoogleAds.V8.Services {
 
       }
 
+      /// <summary>
+      /// A context that describes a business.
+      /// </summary>
+      public sealed partial class BusinessContext : pb::IMessage<BusinessContext>
+      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          , pb::IBufferMessage
+      #endif
+      {
+        private static readonly pb::MessageParser<BusinessContext> _parser = new pb::MessageParser<BusinessContext>(() => new BusinessContext());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<BusinessContext> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V8.Services.SmartCampaignSuggestionInfo.Descriptor.NestedTypes[1]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public BusinessContext() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public BusinessContext(BusinessContext other) : this() {
+          businessName_ = other.businessName_;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public BusinessContext Clone() {
+          return new BusinessContext(this);
+        }
+
+        /// <summary>Field number for the "business_name" field.</summary>
+        public const int BusinessNameFieldNumber = 1;
+        private string businessName_ = "";
+        /// <summary>
+        /// Optional. The name of the business.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public string BusinessName {
+          get { return businessName_; }
+          set {
+            businessName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as BusinessContext);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(BusinessContext other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (BusinessName != other.BusinessName) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (BusinessName.Length != 0) hash ^= BusinessName.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          output.WriteRawMessage(this);
+        #else
+          if (BusinessName.Length != 0) {
+            output.WriteRawTag(10);
+            output.WriteString(BusinessName);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+          if (BusinessName.Length != 0) {
+            output.WriteRawTag(10);
+            output.WriteString(BusinessName);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(ref output);
+          }
+        }
+        #endif
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (BusinessName.Length != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(BusinessName);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(BusinessContext other) {
+          if (other == null) {
+            return;
+          }
+          if (other.BusinessName.Length != 0) {
+            BusinessName = other.BusinessName;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          input.ReadRawMessage(this);
+        #else
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                BusinessName = input.ReadString();
+                break;
+              }
+            }
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                break;
+              case 10: {
+                BusinessName = input.ReadString();
+                break;
+              }
+            }
+          }
+        }
+        #endif
+
+      }
+
     }
     #endregion
 
@@ -1022,8 +1302,8 @@ namespace Google.Ads.GoogleAds.V8.Services {
 
   /// <summary>
   /// Response message for
-  /// [SmartCampaignBudgetSuggestService.SuggestSmartCampaignBudgets][]. Depending
-  /// on whether the system could suggest the options, either all of the options or
+  /// [SmartCampaignSuggestService.SuggestSmartCampaignBudgets][]. Depending on
+  /// whether the system could suggest the options, either all of the options or
   /// none of them might be returned.
   /// </summary>
   public sealed partial class SuggestSmartCampaignBudgetOptionsResponse : pb::IMessage<SuggestSmartCampaignBudgetOptionsResponse>
@@ -1756,6 +2036,424 @@ namespace Google.Ads.GoogleAds.V8.Services {
 
     }
     #endregion
+
+  }
+
+  /// <summary>
+  /// Request message for
+  /// [SmartCampaignSuggestService.SuggestSmartCampaignAd][google.ads.googleads.v8.services.SmartCampaignSuggestService.SuggestSmartCampaignAd].
+  /// </summary>
+  public sealed partial class SuggestSmartCampaignAdRequest : pb::IMessage<SuggestSmartCampaignAdRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SuggestSmartCampaignAdRequest> _parser = new pb::MessageParser<SuggestSmartCampaignAdRequest>(() => new SuggestSmartCampaignAdRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<SuggestSmartCampaignAdRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V8.Services.SmartCampaignSuggestServiceReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SuggestSmartCampaignAdRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SuggestSmartCampaignAdRequest(SuggestSmartCampaignAdRequest other) : this() {
+      customerId_ = other.customerId_;
+      suggestionInfo_ = other.suggestionInfo_ != null ? other.suggestionInfo_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SuggestSmartCampaignAdRequest Clone() {
+      return new SuggestSmartCampaignAdRequest(this);
+    }
+
+    /// <summary>Field number for the "customer_id" field.</summary>
+    public const int CustomerIdFieldNumber = 1;
+    private string customerId_ = "";
+    /// <summary>
+    /// Required. The ID of the customer.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string CustomerId {
+      get { return customerId_; }
+      set {
+        customerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "suggestion_info" field.</summary>
+    public const int SuggestionInfoFieldNumber = 2;
+    private global::Google.Ads.GoogleAds.V8.Services.SmartCampaignSuggestionInfo suggestionInfo_;
+    /// <summary>
+    /// Required. Inputs used to suggest a Smart campaign ad.
+    /// Required fields: final_url, language_code, keyword_themes.
+    /// Optional but recommended fields to improve the quality of the suggestion:
+    /// business_setting and geo_target.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V8.Services.SmartCampaignSuggestionInfo SuggestionInfo {
+      get { return suggestionInfo_; }
+      set {
+        suggestionInfo_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as SuggestSmartCampaignAdRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(SuggestSmartCampaignAdRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (CustomerId != other.CustomerId) return false;
+      if (!object.Equals(SuggestionInfo, other.SuggestionInfo)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (CustomerId.Length != 0) hash ^= CustomerId.GetHashCode();
+      if (suggestionInfo_ != null) hash ^= SuggestionInfo.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (CustomerId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(CustomerId);
+      }
+      if (suggestionInfo_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(SuggestionInfo);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (CustomerId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(CustomerId);
+      }
+      if (suggestionInfo_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(SuggestionInfo);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (CustomerId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CustomerId);
+      }
+      if (suggestionInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SuggestionInfo);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(SuggestSmartCampaignAdRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.CustomerId.Length != 0) {
+        CustomerId = other.CustomerId;
+      }
+      if (other.suggestionInfo_ != null) {
+        if (suggestionInfo_ == null) {
+          SuggestionInfo = new global::Google.Ads.GoogleAds.V8.Services.SmartCampaignSuggestionInfo();
+        }
+        SuggestionInfo.MergeFrom(other.SuggestionInfo);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            CustomerId = input.ReadString();
+            break;
+          }
+          case 18: {
+            if (suggestionInfo_ == null) {
+              SuggestionInfo = new global::Google.Ads.GoogleAds.V8.Services.SmartCampaignSuggestionInfo();
+            }
+            input.ReadMessage(SuggestionInfo);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            CustomerId = input.ReadString();
+            break;
+          }
+          case 18: {
+            if (suggestionInfo_ == null) {
+              SuggestionInfo = new global::Google.Ads.GoogleAds.V8.Services.SmartCampaignSuggestionInfo();
+            }
+            input.ReadMessage(SuggestionInfo);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Response message for
+  /// [SmartCampaignSuggestService.SuggestSmartCampaignAd][google.ads.googleads.v8.services.SmartCampaignSuggestService.SuggestSmartCampaignAd].
+  /// </summary>
+  public sealed partial class SuggestSmartCampaignAdResponse : pb::IMessage<SuggestSmartCampaignAdResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SuggestSmartCampaignAdResponse> _parser = new pb::MessageParser<SuggestSmartCampaignAdResponse>(() => new SuggestSmartCampaignAdResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<SuggestSmartCampaignAdResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V8.Services.SmartCampaignSuggestServiceReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SuggestSmartCampaignAdResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SuggestSmartCampaignAdResponse(SuggestSmartCampaignAdResponse other) : this() {
+      adInfo_ = other.adInfo_ != null ? other.adInfo_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SuggestSmartCampaignAdResponse Clone() {
+      return new SuggestSmartCampaignAdResponse(this);
+    }
+
+    /// <summary>Field number for the "ad_info" field.</summary>
+    public const int AdInfoFieldNumber = 1;
+    private global::Google.Ads.GoogleAds.V8.Common.SmartCampaignAdInfo adInfo_;
+    /// <summary>
+    /// Optional. Ad info includes 3 creative headlines and 2 creative descriptions.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Ads.GoogleAds.V8.Common.SmartCampaignAdInfo AdInfo {
+      get { return adInfo_; }
+      set {
+        adInfo_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as SuggestSmartCampaignAdResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(SuggestSmartCampaignAdResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(AdInfo, other.AdInfo)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (adInfo_ != null) hash ^= AdInfo.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (adInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(AdInfo);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (adInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(AdInfo);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (adInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AdInfo);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(SuggestSmartCampaignAdResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.adInfo_ != null) {
+        if (adInfo_ == null) {
+          AdInfo = new global::Google.Ads.GoogleAds.V8.Common.SmartCampaignAdInfo();
+        }
+        AdInfo.MergeFrom(other.AdInfo);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (adInfo_ == null) {
+              AdInfo = new global::Google.Ads.GoogleAds.V8.Common.SmartCampaignAdInfo();
+            }
+            input.ReadMessage(AdInfo);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (adInfo_ == null) {
+              AdInfo = new global::Google.Ads.GoogleAds.V8.Common.SmartCampaignAdInfo();
+            }
+            input.ReadMessage(AdInfo);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

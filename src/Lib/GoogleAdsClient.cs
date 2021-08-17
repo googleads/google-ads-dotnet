@@ -69,7 +69,7 @@ namespace Google.Ads.GoogleAds.Lib
         /// <param name="serviceTemplate"><para>The template that corresponds to the service to
         /// be created. Predefined service templates are available for each supported version, as
         /// a nested class within the <see cref="Services"/> class.</para>
-        /// <para>E.g. <see cref="Services.V6"/> class contains predefined templates for v6 of the
+        /// <para>E.g. <see cref="Services.V8"/> class contains predefined templates for v6 of the
         /// Google Ads API.</para>
         /// </param>
         /// <returns>A service instance.</returns>

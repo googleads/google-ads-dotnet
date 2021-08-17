@@ -346,5 +346,12 @@ namespace Google.Ads.GoogleAds.V8.Resources
             get => string.IsNullOrEmpty(FeedItem) ? null : FeedItemName.Parse(FeedItem, allowUnparsed: true);
             set => FeedItem = value?.ToString() ?? "";
         }
+
+        /// <summary><see cref="AssetName"/>-typed view over the <see cref="Asset"/> resource name property.</summary>
+        internal AssetName AssetAsAssetName
+        {
+            get => string.IsNullOrEmpty(Asset) ? null : AssetName.Parse(Asset, allowUnparsed: true);
+            set => Asset = value?.ToString() ?? "";
+        }
     }
 }

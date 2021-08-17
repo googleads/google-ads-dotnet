@@ -27,7 +27,7 @@ namespace Google.Ads.GoogleAds.V8.Errors {
             "Ckdnb29nbGUvYWRzL2dvb2dsZWFkcy92OC9lcnJvcnMvY29udmVyc2lvbl9h",
             "ZGp1c3RtZW50X3VwbG9hZF9lcnJvci5wcm90bxIeZ29vZ2xlLmFkcy5nb29n",
             "bGVhZHMudjguZXJyb3JzGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3Rv",
-            "Iu0DCiNDb252ZXJzaW9uQWRqdXN0bWVudFVwbG9hZEVycm9yRW51bSLFAwof",
+            "IrIFCiNDb252ZXJzaW9uQWRqdXN0bWVudFVwbG9hZEVycm9yRW51bSKKBQof",
             "Q29udmVyc2lvbkFkanVzdG1lbnRVcGxvYWRFcnJvchIPCgtVTlNQRUNJRklF",
             "RBAAEgsKB1VOS05PV04QARIgChxUT09fUkVDRU5UX0NPTlZFUlNJT05fQUNU",
             "SU9OEAISHQoZSU5WQUxJRF9DT05WRVJTSU9OX0FDVElPThADEiAKHENPTlZF",
@@ -38,12 +38,17 @@ namespace Google.Ads.GoogleAds.V8.Errors {
             "Tk9UX1JFU1RBVEVfQ09OVkVSU0lPTl9BQ1RJT05fVEhBVF9BTFdBWVNfVVNF",
             "U19ERUZBVUxUX0NPTlZFUlNJT05fVkFMVUUQChIjCh9UT09fTUFOWV9BREpV",
             "U1RNRU5UU19JTl9SRVFVRVNUEAsSGAoUVE9PX01BTllfQURKVVNUTUVOVFMQ",
-            "DEL/AQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LmVycm9yc0IkQ29u",
-            "dmVyc2lvbkFkanVzdG1lbnRVcGxvYWRFcnJvclByb3RvUAFaRGdvb2dsZS5n",
-            "b2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92",
-            "OC9lcnJvcnM7ZXJyb3JzogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMu",
-            "VjguRXJyb3JzygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjhcRXJyb3Jz6gIi",
-            "R29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6Vjg6OkVycm9yc2IGcHJvdG8z"));
+            "DBItCilDVVNUT01FUl9OT1RfQUNDRVBURURfQ1VTVE9NRVJfREFUQV9URVJN",
+            "UxAPEjIKLkNPTlZFUlNJT05fQUNUSU9OX05PVF9FTElHSUJMRV9GT1JfRU5I",
+            "QU5DRU1FTlQQEBIbChdJTlZBTElEX1VTRVJfSURFTlRJRklFUhAREh8KG1VO",
+            "U1VQUE9SVEVEX1VTRVJfSURFTlRJRklFUhASEiIKHklOVkFMSURfVVNFUl9J",
+            "REVOVElGSUVSX1NPVVJDRRATQv8BCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjguZXJyb3JzQiRDb252ZXJzaW9uQWRqdXN0bWVudFVwbG9hZEVycm9y",
+            "UHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBp",
+            "cy9hZHMvZ29vZ2xlYWRzL3Y4L2Vycm9ycztlcnJvcnOiAgNHQUGqAh5Hb29n",
+            "bGUuQWRzLkdvb2dsZUFkcy5WOC5FcnJvcnPKAh5Hb29nbGVcQWRzXEdvb2ds",
+            "ZUFkc1xWOFxFcnJvcnPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWODo6",
+            "RXJyb3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -259,6 +264,31 @@ namespace Google.Ads.GoogleAds.V8.Errors {
         /// The conversion has been adjusted too many times.
         /// </summary>
         [pbr::OriginalName("TOO_MANY_ADJUSTMENTS")] TooManyAdjustments = 12,
+        /// <summary>
+        /// The customer has not accepted the customer data terms in the conversion
+        /// settings page.
+        /// </summary>
+        [pbr::OriginalName("CUSTOMER_NOT_ACCEPTED_CUSTOMER_DATA_TERMS")] CustomerNotAcceptedCustomerDataTerms = 15,
+        /// <summary>
+        /// The enhanced conversion settings of the conversion action supplied is
+        /// not eligible for enhancements.
+        /// </summary>
+        [pbr::OriginalName("CONVERSION_ACTION_NOT_ELIGIBLE_FOR_ENHANCEMENT")] ConversionActionNotEligibleForEnhancement = 16,
+        /// <summary>
+        /// The provided user identifier is not a SHA-256 hash. It is either unhashed
+        /// or hashed using a different hash function.
+        /// </summary>
+        [pbr::OriginalName("INVALID_USER_IDENTIFIER")] InvalidUserIdentifier = 17,
+        /// <summary>
+        /// The provided user identifier is not supported.
+        /// ConversionAdjustmentUploadService only supports hashed_email,
+        /// hashed_phone_number, and address_info.
+        /// </summary>
+        [pbr::OriginalName("UNSUPPORTED_USER_IDENTIFIER")] UnsupportedUserIdentifier = 18,
+        /// <summary>
+        /// The user_identifier_source must be FIRST_PARTY for enhancements.
+        /// </summary>
+        [pbr::OriginalName("INVALID_USER_IDENTIFIER_SOURCE")] InvalidUserIdentifierSource = 19,
       }
 
     }

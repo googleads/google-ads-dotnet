@@ -199,11 +199,11 @@ namespace Google.Ads.GoogleAds.V8.Errors {
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
-        /// The login customer id could not be validated.
+        /// The login customer ID could not be validated.
         /// </summary>
         [pbr::OriginalName("INVALID_LOGIN_CUSTOMER_ID")] InvalidLoginCustomerId = 3,
         /// <summary>
-        /// The linked customer id could not be validated.
+        /// The linked customer ID could not be validated.
         /// </summary>
         [pbr::OriginalName("INVALID_LINKED_CUSTOMER_ID")] InvalidLinkedCustomerId = 7,
       }

@@ -154,7 +154,7 @@ namespace Google.Ads.GoogleAds.Examples.V8
         /// to associate with the upload.</param>
         // [START upload_call_conversion]
         public void Run(GoogleAdsClient client, long customerId, string callerId,
-            string callStartTime, string conversionTime, double conversionValue, 
+            string callStartTime, string conversionTime, double conversionValue,
             long? conversionCustomVariableId, string conversionCustomVariableValue)
         {
             // Get the ConversionUploadService.
@@ -174,11 +174,11 @@ namespace Google.Ads.GoogleAds.Examples.V8
             if (conversionCustomVariableId != null &&
                 !string.IsNullOrEmpty(conversionCustomVariableValue))
             {
-                callConversion.CustomVariables.Add(new CustomVariable() {
+                callConversion.CustomVariables.Add(new CustomVariable()
+                {
                     ConversionCustomVariable = ResourceNames.ConversionCustomVariable(
                         customerId, conversionCustomVariableId.Value),
                     Value = conversionCustomVariableValue
-
                 });
             }
 

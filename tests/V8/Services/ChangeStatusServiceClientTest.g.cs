@@ -40,7 +40,7 @@ namespace Google.Ads.GoogleAds.Tests.V8.Services
             gagvr::ChangeStatus expectedResponse = new gagvr::ChangeStatus
             {
                 ResourceNameAsChangeStatusName = gagvr::ChangeStatusName.FromCustomerChangeStatus("[CUSTOMER_ID]", "[CHANGE_STATUS_ID]"),
-                ResourceType = gagve::ChangeStatusResourceTypeEnum.Types.ChangeStatusResourceType.Feed,
+                ResourceType = gagve::ChangeStatusResourceTypeEnum.Types.ChangeStatusResourceType.CampaignSharedSet,
                 ResourceStatus = gagve::ChangeStatusOperationEnum.Types.ChangeStatusOperation.Unspecified,
                 CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER_ID]", "[CAMPAIGN_ID]"),
                 AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER_ID]", "[AD_GROUP_ID]"),
@@ -53,6 +53,12 @@ namespace Google.Ads.GoogleAds.Tests.V8.Services
                 AdGroupFeedAsAdGroupFeedName = gagvr::AdGroupFeedName.FromCustomerAdGroupFeed("[CUSTOMER_ID]", "[AD_GROUP_ID]", "[FEED_ID]"),
                 CampaignFeedAsCampaignFeedName = gagvr::CampaignFeedName.FromCustomerCampaignFeed("[CUSTOMER_ID]", "[CAMPAIGN_ID]", "[FEED_ID]"),
                 AdGroupBidModifierAsAdGroupBidModifierName = gagvr::AdGroupBidModifierName.FromCustomerAdGroupCriterion("[CUSTOMER_ID]", "[AD_GROUP_ID]", "[CRITERION_ID]"),
+                SharedSetAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER_ID]", "[SHARED_SET_ID]"),
+                CampaignSharedSetAsCampaignSharedSetName = gagvr::CampaignSharedSetName.FromCustomerCampaignSharedSet("[CUSTOMER_ID]", "[CAMPAIGN_ID]", "[SHARED_SET_ID]"),
+                AssetAsAssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER_ID]", "[ASSET_ID]"),
+                CustomerAssetAsCustomerAssetName = gagvr::CustomerAssetName.FromCustomerAssetFieldType("[CUSTOMER_ID]", "[ASSET_ID]", "[FIELD_TYPE]"),
+                CampaignAssetAsCampaignAssetName = gagvr::CampaignAssetName.FromCustomerCampaignAssetFieldType("[CUSTOMER_ID]", "[CAMPAIGN_ID]", "[ASSET_ID]", "[FIELD_TYPE]"),
+                AdGroupAssetAsAdGroupAssetName = gagvr::AdGroupAssetName.FromCustomerAdGroupAssetFieldType("[CUSTOMER_ID]", "[AD_GROUP_ID]", "[ASSET_ID]", "[FIELD_TYPE]"),
             };
             mockGrpcClient.Setup(x => x.GetChangeStatus(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             ChangeStatusServiceClient client = new ChangeStatusServiceClientImpl(mockGrpcClient.Object, null);
@@ -72,7 +78,7 @@ namespace Google.Ads.GoogleAds.Tests.V8.Services
             gagvr::ChangeStatus expectedResponse = new gagvr::ChangeStatus
             {
                 ResourceNameAsChangeStatusName = gagvr::ChangeStatusName.FromCustomerChangeStatus("[CUSTOMER_ID]", "[CHANGE_STATUS_ID]"),
-                ResourceType = gagve::ChangeStatusResourceTypeEnum.Types.ChangeStatusResourceType.Feed,
+                ResourceType = gagve::ChangeStatusResourceTypeEnum.Types.ChangeStatusResourceType.CampaignSharedSet,
                 ResourceStatus = gagve::ChangeStatusOperationEnum.Types.ChangeStatusOperation.Unspecified,
                 CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER_ID]", "[CAMPAIGN_ID]"),
                 AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER_ID]", "[AD_GROUP_ID]"),
@@ -85,6 +91,12 @@ namespace Google.Ads.GoogleAds.Tests.V8.Services
                 AdGroupFeedAsAdGroupFeedName = gagvr::AdGroupFeedName.FromCustomerAdGroupFeed("[CUSTOMER_ID]", "[AD_GROUP_ID]", "[FEED_ID]"),
                 CampaignFeedAsCampaignFeedName = gagvr::CampaignFeedName.FromCustomerCampaignFeed("[CUSTOMER_ID]", "[CAMPAIGN_ID]", "[FEED_ID]"),
                 AdGroupBidModifierAsAdGroupBidModifierName = gagvr::AdGroupBidModifierName.FromCustomerAdGroupCriterion("[CUSTOMER_ID]", "[AD_GROUP_ID]", "[CRITERION_ID]"),
+                SharedSetAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER_ID]", "[SHARED_SET_ID]"),
+                CampaignSharedSetAsCampaignSharedSetName = gagvr::CampaignSharedSetName.FromCustomerCampaignSharedSet("[CUSTOMER_ID]", "[CAMPAIGN_ID]", "[SHARED_SET_ID]"),
+                AssetAsAssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER_ID]", "[ASSET_ID]"),
+                CustomerAssetAsCustomerAssetName = gagvr::CustomerAssetName.FromCustomerAssetFieldType("[CUSTOMER_ID]", "[ASSET_ID]", "[FIELD_TYPE]"),
+                CampaignAssetAsCampaignAssetName = gagvr::CampaignAssetName.FromCustomerCampaignAssetFieldType("[CUSTOMER_ID]", "[CAMPAIGN_ID]", "[ASSET_ID]", "[FIELD_TYPE]"),
+                AdGroupAssetAsAdGroupAssetName = gagvr::AdGroupAssetName.FromCustomerAdGroupAssetFieldType("[CUSTOMER_ID]", "[AD_GROUP_ID]", "[ASSET_ID]", "[FIELD_TYPE]"),
             };
             mockGrpcClient.Setup(x => x.GetChangeStatusAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ChangeStatus>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             ChangeStatusServiceClient client = new ChangeStatusServiceClientImpl(mockGrpcClient.Object, null);
@@ -106,7 +118,7 @@ namespace Google.Ads.GoogleAds.Tests.V8.Services
             gagvr::ChangeStatus expectedResponse = new gagvr::ChangeStatus
             {
                 ResourceNameAsChangeStatusName = gagvr::ChangeStatusName.FromCustomerChangeStatus("[CUSTOMER_ID]", "[CHANGE_STATUS_ID]"),
-                ResourceType = gagve::ChangeStatusResourceTypeEnum.Types.ChangeStatusResourceType.Feed,
+                ResourceType = gagve::ChangeStatusResourceTypeEnum.Types.ChangeStatusResourceType.CampaignSharedSet,
                 ResourceStatus = gagve::ChangeStatusOperationEnum.Types.ChangeStatusOperation.Unspecified,
                 CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER_ID]", "[CAMPAIGN_ID]"),
                 AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER_ID]", "[AD_GROUP_ID]"),
@@ -119,6 +131,12 @@ namespace Google.Ads.GoogleAds.Tests.V8.Services
                 AdGroupFeedAsAdGroupFeedName = gagvr::AdGroupFeedName.FromCustomerAdGroupFeed("[CUSTOMER_ID]", "[AD_GROUP_ID]", "[FEED_ID]"),
                 CampaignFeedAsCampaignFeedName = gagvr::CampaignFeedName.FromCustomerCampaignFeed("[CUSTOMER_ID]", "[CAMPAIGN_ID]", "[FEED_ID]"),
                 AdGroupBidModifierAsAdGroupBidModifierName = gagvr::AdGroupBidModifierName.FromCustomerAdGroupCriterion("[CUSTOMER_ID]", "[AD_GROUP_ID]", "[CRITERION_ID]"),
+                SharedSetAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER_ID]", "[SHARED_SET_ID]"),
+                CampaignSharedSetAsCampaignSharedSetName = gagvr::CampaignSharedSetName.FromCustomerCampaignSharedSet("[CUSTOMER_ID]", "[CAMPAIGN_ID]", "[SHARED_SET_ID]"),
+                AssetAsAssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER_ID]", "[ASSET_ID]"),
+                CustomerAssetAsCustomerAssetName = gagvr::CustomerAssetName.FromCustomerAssetFieldType("[CUSTOMER_ID]", "[ASSET_ID]", "[FIELD_TYPE]"),
+                CampaignAssetAsCampaignAssetName = gagvr::CampaignAssetName.FromCustomerCampaignAssetFieldType("[CUSTOMER_ID]", "[CAMPAIGN_ID]", "[ASSET_ID]", "[FIELD_TYPE]"),
+                AdGroupAssetAsAdGroupAssetName = gagvr::AdGroupAssetName.FromCustomerAdGroupAssetFieldType("[CUSTOMER_ID]", "[AD_GROUP_ID]", "[ASSET_ID]", "[FIELD_TYPE]"),
             };
             mockGrpcClient.Setup(x => x.GetChangeStatus(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             ChangeStatusServiceClient client = new ChangeStatusServiceClientImpl(mockGrpcClient.Object, null);
@@ -138,7 +156,7 @@ namespace Google.Ads.GoogleAds.Tests.V8.Services
             gagvr::ChangeStatus expectedResponse = new gagvr::ChangeStatus
             {
                 ResourceNameAsChangeStatusName = gagvr::ChangeStatusName.FromCustomerChangeStatus("[CUSTOMER_ID]", "[CHANGE_STATUS_ID]"),
-                ResourceType = gagve::ChangeStatusResourceTypeEnum.Types.ChangeStatusResourceType.Feed,
+                ResourceType = gagve::ChangeStatusResourceTypeEnum.Types.ChangeStatusResourceType.CampaignSharedSet,
                 ResourceStatus = gagve::ChangeStatusOperationEnum.Types.ChangeStatusOperation.Unspecified,
                 CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER_ID]", "[CAMPAIGN_ID]"),
                 AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER_ID]", "[AD_GROUP_ID]"),
@@ -151,6 +169,12 @@ namespace Google.Ads.GoogleAds.Tests.V8.Services
                 AdGroupFeedAsAdGroupFeedName = gagvr::AdGroupFeedName.FromCustomerAdGroupFeed("[CUSTOMER_ID]", "[AD_GROUP_ID]", "[FEED_ID]"),
                 CampaignFeedAsCampaignFeedName = gagvr::CampaignFeedName.FromCustomerCampaignFeed("[CUSTOMER_ID]", "[CAMPAIGN_ID]", "[FEED_ID]"),
                 AdGroupBidModifierAsAdGroupBidModifierName = gagvr::AdGroupBidModifierName.FromCustomerAdGroupCriterion("[CUSTOMER_ID]", "[AD_GROUP_ID]", "[CRITERION_ID]"),
+                SharedSetAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER_ID]", "[SHARED_SET_ID]"),
+                CampaignSharedSetAsCampaignSharedSetName = gagvr::CampaignSharedSetName.FromCustomerCampaignSharedSet("[CUSTOMER_ID]", "[CAMPAIGN_ID]", "[SHARED_SET_ID]"),
+                AssetAsAssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER_ID]", "[ASSET_ID]"),
+                CustomerAssetAsCustomerAssetName = gagvr::CustomerAssetName.FromCustomerAssetFieldType("[CUSTOMER_ID]", "[ASSET_ID]", "[FIELD_TYPE]"),
+                CampaignAssetAsCampaignAssetName = gagvr::CampaignAssetName.FromCustomerCampaignAssetFieldType("[CUSTOMER_ID]", "[CAMPAIGN_ID]", "[ASSET_ID]", "[FIELD_TYPE]"),
+                AdGroupAssetAsAdGroupAssetName = gagvr::AdGroupAssetName.FromCustomerAdGroupAssetFieldType("[CUSTOMER_ID]", "[AD_GROUP_ID]", "[ASSET_ID]", "[FIELD_TYPE]"),
             };
             mockGrpcClient.Setup(x => x.GetChangeStatusAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ChangeStatus>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             ChangeStatusServiceClient client = new ChangeStatusServiceClientImpl(mockGrpcClient.Object, null);
@@ -172,7 +196,7 @@ namespace Google.Ads.GoogleAds.Tests.V8.Services
             gagvr::ChangeStatus expectedResponse = new gagvr::ChangeStatus
             {
                 ResourceNameAsChangeStatusName = gagvr::ChangeStatusName.FromCustomerChangeStatus("[CUSTOMER_ID]", "[CHANGE_STATUS_ID]"),
-                ResourceType = gagve::ChangeStatusResourceTypeEnum.Types.ChangeStatusResourceType.Feed,
+                ResourceType = gagve::ChangeStatusResourceTypeEnum.Types.ChangeStatusResourceType.CampaignSharedSet,
                 ResourceStatus = gagve::ChangeStatusOperationEnum.Types.ChangeStatusOperation.Unspecified,
                 CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER_ID]", "[CAMPAIGN_ID]"),
                 AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER_ID]", "[AD_GROUP_ID]"),
@@ -185,6 +209,12 @@ namespace Google.Ads.GoogleAds.Tests.V8.Services
                 AdGroupFeedAsAdGroupFeedName = gagvr::AdGroupFeedName.FromCustomerAdGroupFeed("[CUSTOMER_ID]", "[AD_GROUP_ID]", "[FEED_ID]"),
                 CampaignFeedAsCampaignFeedName = gagvr::CampaignFeedName.FromCustomerCampaignFeed("[CUSTOMER_ID]", "[CAMPAIGN_ID]", "[FEED_ID]"),
                 AdGroupBidModifierAsAdGroupBidModifierName = gagvr::AdGroupBidModifierName.FromCustomerAdGroupCriterion("[CUSTOMER_ID]", "[AD_GROUP_ID]", "[CRITERION_ID]"),
+                SharedSetAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER_ID]", "[SHARED_SET_ID]"),
+                CampaignSharedSetAsCampaignSharedSetName = gagvr::CampaignSharedSetName.FromCustomerCampaignSharedSet("[CUSTOMER_ID]", "[CAMPAIGN_ID]", "[SHARED_SET_ID]"),
+                AssetAsAssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER_ID]", "[ASSET_ID]"),
+                CustomerAssetAsCustomerAssetName = gagvr::CustomerAssetName.FromCustomerAssetFieldType("[CUSTOMER_ID]", "[ASSET_ID]", "[FIELD_TYPE]"),
+                CampaignAssetAsCampaignAssetName = gagvr::CampaignAssetName.FromCustomerCampaignAssetFieldType("[CUSTOMER_ID]", "[CAMPAIGN_ID]", "[ASSET_ID]", "[FIELD_TYPE]"),
+                AdGroupAssetAsAdGroupAssetName = gagvr::AdGroupAssetName.FromCustomerAdGroupAssetFieldType("[CUSTOMER_ID]", "[AD_GROUP_ID]", "[ASSET_ID]", "[FIELD_TYPE]"),
             };
             mockGrpcClient.Setup(x => x.GetChangeStatus(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
             ChangeStatusServiceClient client = new ChangeStatusServiceClientImpl(mockGrpcClient.Object, null);
@@ -204,7 +234,7 @@ namespace Google.Ads.GoogleAds.Tests.V8.Services
             gagvr::ChangeStatus expectedResponse = new gagvr::ChangeStatus
             {
                 ResourceNameAsChangeStatusName = gagvr::ChangeStatusName.FromCustomerChangeStatus("[CUSTOMER_ID]", "[CHANGE_STATUS_ID]"),
-                ResourceType = gagve::ChangeStatusResourceTypeEnum.Types.ChangeStatusResourceType.Feed,
+                ResourceType = gagve::ChangeStatusResourceTypeEnum.Types.ChangeStatusResourceType.CampaignSharedSet,
                 ResourceStatus = gagve::ChangeStatusOperationEnum.Types.ChangeStatusOperation.Unspecified,
                 CampaignAsCampaignName = gagvr::CampaignName.FromCustomerCampaign("[CUSTOMER_ID]", "[CAMPAIGN_ID]"),
                 AdGroupAsAdGroupName = gagvr::AdGroupName.FromCustomerAdGroup("[CUSTOMER_ID]", "[AD_GROUP_ID]"),
@@ -217,6 +247,12 @@ namespace Google.Ads.GoogleAds.Tests.V8.Services
                 AdGroupFeedAsAdGroupFeedName = gagvr::AdGroupFeedName.FromCustomerAdGroupFeed("[CUSTOMER_ID]", "[AD_GROUP_ID]", "[FEED_ID]"),
                 CampaignFeedAsCampaignFeedName = gagvr::CampaignFeedName.FromCustomerCampaignFeed("[CUSTOMER_ID]", "[CAMPAIGN_ID]", "[FEED_ID]"),
                 AdGroupBidModifierAsAdGroupBidModifierName = gagvr::AdGroupBidModifierName.FromCustomerAdGroupCriterion("[CUSTOMER_ID]", "[AD_GROUP_ID]", "[CRITERION_ID]"),
+                SharedSetAsSharedSetName = gagvr::SharedSetName.FromCustomerSharedSet("[CUSTOMER_ID]", "[SHARED_SET_ID]"),
+                CampaignSharedSetAsCampaignSharedSetName = gagvr::CampaignSharedSetName.FromCustomerCampaignSharedSet("[CUSTOMER_ID]", "[CAMPAIGN_ID]", "[SHARED_SET_ID]"),
+                AssetAsAssetName = gagvr::AssetName.FromCustomerAsset("[CUSTOMER_ID]", "[ASSET_ID]"),
+                CustomerAssetAsCustomerAssetName = gagvr::CustomerAssetName.FromCustomerAssetFieldType("[CUSTOMER_ID]", "[ASSET_ID]", "[FIELD_TYPE]"),
+                CampaignAssetAsCampaignAssetName = gagvr::CampaignAssetName.FromCustomerCampaignAssetFieldType("[CUSTOMER_ID]", "[CAMPAIGN_ID]", "[ASSET_ID]", "[FIELD_TYPE]"),
+                AdGroupAssetAsAdGroupAssetName = gagvr::AdGroupAssetName.FromCustomerAdGroupAssetFieldType("[CUSTOMER_ID]", "[AD_GROUP_ID]", "[ASSET_ID]", "[FIELD_TYPE]"),
             };
             mockGrpcClient.Setup(x => x.GetChangeStatusAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::ChangeStatus>(stt::Task.FromResult(expectedResponse), null, null, null, null));
             ChangeStatusServiceClient client = new ChangeStatusServiceClientImpl(mockGrpcClient.Object, null);

@@ -224,7 +224,7 @@ namespace Google.Ads.GoogleAds.V8.Errors {
         /// </summary>
         [pbr::OriginalName("UPDATE_OPERATION_NOT_PERMITTED")] UpdateOperationNotPermitted = 5,
         /// <summary>
-        /// A mutate action is not allowed on this campaign, from this client.
+        /// A mutate action is not allowed on this resource, from this client.
         /// </summary>
         [pbr::OriginalName("MUTATE_ACTION_NOT_PERMITTED_FOR_CLIENT")] MutateActionNotPermittedForClient = 6,
         /// <summary>
@@ -236,7 +236,7 @@ namespace Google.Ads.GoogleAds.V8.Errors {
         /// </summary>
         [pbr::OriginalName("CREATE_AS_REMOVED_NOT_PERMITTED")] CreateAsRemovedNotPermitted = 8,
         /// <summary>
-        /// This operation is not allowed because the campaign or adgroup is removed.
+        /// This operation is not allowed because the resource is removed.
         /// </summary>
         [pbr::OriginalName("OPERATION_NOT_PERMITTED_FOR_REMOVED_RESOURCE")] OperationNotPermittedForRemovedResource = 9,
         /// <summary>

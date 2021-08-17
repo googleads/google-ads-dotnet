@@ -26,21 +26,21 @@ namespace Google.Ads.GoogleAds.V8.Enums {
           string.Concat(
             "Cjlnb29nbGUvYWRzL2dvb2dsZWFkcy92OC9lbnVtcy9iaWRkaW5nX3N0cmF0",
             "ZWd5X3R5cGUucHJvdG8SHWdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LmVudW1z",
-            "Ghxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIvwCChdCaWRkaW5nU3Ry",
-            "YXRlZ3lUeXBlRW51bSLgAgoTQmlkZGluZ1N0cmF0ZWd5VHlwZRIPCgtVTlNQ",
+            "Ghxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvIokDChdCaWRkaW5nU3Ry",
+            "YXRlZ3lUeXBlRW51bSLtAgoTQmlkZGluZ1N0cmF0ZWd5VHlwZRIPCgtVTlNQ",
             "RUNJRklFRBAAEgsKB1VOS05PV04QARIOCgpDT01NSVNTSU9OEBASEAoMRU5I",
-            "QU5DRURfQ1BDEAISDgoKTUFOVUFMX0NQQxADEg4KCk1BTlVBTF9DUE0QBBIO",
-            "CgpNQU5VQUxfQ1BWEA0SGAoUTUFYSU1JWkVfQ09OVkVSU0lPTlMQChIdChlN",
-            "QVhJTUlaRV9DT05WRVJTSU9OX1ZBTFVFEAsSFQoRUEFHRV9PTkVfUFJPTU9U",
-            "RUQQBRIPCgtQRVJDRU5UX0NQQxAMEg4KClRBUkdFVF9DUEEQBhIOCgpUQVJH",
-            "RVRfQ1BNEA4SGwoXVEFSR0VUX0lNUFJFU1NJT05fU0hBUkUQDxIYChRUQVJH",
-            "RVRfT1VUUkFOS19TSEFSRRAHEg8KC1RBUkdFVF9ST0FTEAgSEAoMVEFSR0VU",
-            "X1NQRU5EEAlC7QEKIWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52OC5lbnVt",
-            "c0IYQmlkZGluZ1N0cmF0ZWd5VHlwZVByb3RvUAFaQmdvb2dsZS5nb2xhbmcu",
-            "b3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92OC9lbnVt",
-            "cztlbnVtc6ICA0dBQaoCHUdvb2dsZS5BZHMuR29vZ2xlQWRzLlY4LkVudW1z",
-            "ygIdR29vZ2xlXEFkc1xHb29nbGVBZHNcVjhcRW51bXPqAiFHb29nbGU6OkFk",
-            "czo6R29vZ2xlQWRzOjpWODo6RW51bXNiBnByb3RvMw=="));
+            "QU5DRURfQ1BDEAISCwoHSU5WQUxJRBAREg4KCk1BTlVBTF9DUEMQAxIOCgpN",
+            "QU5VQUxfQ1BNEAQSDgoKTUFOVUFMX0NQVhANEhgKFE1BWElNSVpFX0NPTlZF",
+            "UlNJT05TEAoSHQoZTUFYSU1JWkVfQ09OVkVSU0lPTl9WQUxVRRALEhUKEVBB",
+            "R0VfT05FX1BST01PVEVEEAUSDwoLUEVSQ0VOVF9DUEMQDBIOCgpUQVJHRVRf",
+            "Q1BBEAYSDgoKVEFSR0VUX0NQTRAOEhsKF1RBUkdFVF9JTVBSRVNTSU9OX1NI",
+            "QVJFEA8SGAoUVEFSR0VUX09VVFJBTktfU0hBUkUQBxIPCgtUQVJHRVRfUk9B",
+            "UxAIEhAKDFRBUkdFVF9TUEVORBAJQu0BCiFjb20uZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjguZW51bXNCGEJpZGRpbmdTdHJhdGVneVR5cGVQcm90b1ABWkJn",
+            "b29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29n",
+            "bGVhZHMvdjgvZW51bXM7ZW51bXOiAgNHQUGqAh1Hb29nbGUuQWRzLkdvb2ds",
+            "ZUFkcy5WOC5FbnVtc8oCHUdvb2dsZVxBZHNcR29vZ2xlQWRzXFY4XEVudW1z",
+            "6gIhR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6Vjg6OkVudW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -215,6 +215,16 @@ namespace Google.Ads.GoogleAds.V8.Enums {
         /// them for clicks where they seem less likely.
         /// </summary>
         [pbr::OriginalName("ENHANCED_CPC")] EnhancedCpc = 2,
+        /// <summary>
+        /// Used for return value only. Indicates that a campaign does not have a
+        /// bidding strategy. This prevents the campaign from serving. For example,
+        /// a campaign may be attached to a manager bidding strategy and the serving
+        /// account is subsequently unlinked from the manager account. In this case
+        /// the campaign will automatically be detached from the now inaccessible
+        /// manager bidding strategy and transition to the INVALID bidding strategy
+        /// type.
+        /// </summary>
+        [pbr::OriginalName("INVALID")] Invalid = 17,
         /// <summary>
         /// Manual click based bidding where user pays per click.
         /// </summary>
