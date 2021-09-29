@@ -72,7 +72,7 @@ namespace Google.Ads.GoogleAds.Examples.V8
         /// <summary>
         /// The asset bundle to upload.
         /// </summary>
-        private const string BUNDLE_URL = "https://goo.gl/9Y7qI2";
+        private const string BUNDLE_URL = "https://gaagl.page.link/ib87";
 
         /// <summary>
         /// Returns a description about the code example.
