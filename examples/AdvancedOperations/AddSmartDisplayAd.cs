@@ -80,11 +80,11 @@ namespace Google.Ads.GoogleAds.Examples.V8
             codeExample.Run(new GoogleAdsClient(), options.CustomerId);
         }
 
-        private const string MARKETING_IMAGE_URL = "https://goo.gl/3b9Wfh";
+        private const string MARKETING_IMAGE_URL = "https://gaagl.page.link/Eit5";
         private const int MARKETING_IMAGE_WIDTH = 600;
         private const int MARKETING_IMAGE_HEIGHT = 315;
 
-        private const string SQUARE_MARKETING_IMAGE_URL = "https://goo.gl/mtt54n";
+        private const string SQUARE_MARKETING_IMAGE_URL = "https://gaagl.page.link/bjYi";
         private const int SQUARE_MARKETING_IMAGE_SIZE = 512;
 
         /// <summary>

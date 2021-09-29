@@ -74,7 +74,7 @@ namespace Google.Ads.GoogleAds.Examples.V8
         /// <summary>
         /// The image URL to upload as asset.
         /// </summary>
-        private const string IMAGE_URL = "https://goo.gl/3b9Wfh";
+        private const string IMAGE_URL = "https://gaagl.page.link/Eit5";
 
         /// <summary>
         /// Returns a description about the code example.

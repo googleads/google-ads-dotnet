@@ -84,7 +84,7 @@ namespace Google.Ads.GoogleAds.Examples.V8
             MediaFileServiceClient mediaFileService =
                 client.GetService(Services.V8.MediaFileService);
 
-            const string URL = "https://goo.gl/3b9Wfh";
+            const string URL = "https://gaagl.page.link/Eit5";
 
             MediaFile file = new MediaFile()
             {
