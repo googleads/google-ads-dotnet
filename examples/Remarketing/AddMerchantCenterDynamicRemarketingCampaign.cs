@@ -266,12 +266,12 @@ namespace Google.Ads.GoogleAds.Examples.V8
             AdGroupAdServiceClient adGroupAdServiceClient =
                 client.GetService(Services.V8.AdGroupAdService);
 
-            string marketingImageUrl = "https://goo.gl/3b9Wfh";
+            string marketingImageUrl = "https://gaagl.page.link/Eit5";
             string marketingImageName = "Marketing Image";
             string marketingImageResourceName =
                 UploadAsset(client, customerId, marketingImageUrl, marketingImageName);
             string squareMarketingImageName = "Square Marketing Image";
-            string squareMarketingImageUrl = "https://goo.gl/mtt54n";
+            string squareMarketingImageUrl = "https://gaagl.page.link/bjYi";
             string squareMarketingImageResourceName =
                 UploadAsset(client, customerId, squareMarketingImageUrl, squareMarketingImageName);
 
