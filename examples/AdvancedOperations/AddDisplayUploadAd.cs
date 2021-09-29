@@ -137,7 +137,7 @@ namespace Google.Ads.GoogleAds.Examples.V8
             // The HTML5 zip file contains all the HTML, CSS, and images needed for the
             // HTML5 ad. For help on creating an HTML5 zip file, check out Google Web
             // Designer (https://www.google.com/webdesigner/).
-            byte[] html5Zip = MediaUtilities.GetAssetDataFromUrl("https://goo.gl/9Y7qI2",
+            byte[] html5Zip = MediaUtilities.GetAssetDataFromUrl("https://gaagl.page.link/ib87",
                 client.Config);
 
             // Creates the media bundle asset.
