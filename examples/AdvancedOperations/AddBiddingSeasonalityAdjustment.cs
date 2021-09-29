@@ -98,6 +98,8 @@ namespace Google.Ads.GoogleAds.Examples.V8
                     // yyyy-MM-dd HH:mm:ss format) in the account's timezone.")]
                     options.EndDateTime = "INSERT_END_DATE_TIME_HERE";
 
+                    // The conversion rate adjustment(an increase or a decrease), which accounts
+                    // for estimated changes in conversion rate due to a future event.
                     options.ConversionRateModifier =
                         long.Parse("INSERT_CONVERSION_RATE_MODIFIER_HERE");
 
@@ -185,7 +187,6 @@ namespace Google.Ads.GoogleAds.Examples.V8
                 Console.WriteLine($"Request ID: {e.RequestId}");
                 throw;
             }
-
             // [END add_bidding_seasonality_adjustment]
         }
     }
