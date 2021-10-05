@@ -17,6 +17,7 @@ using Google.Ads.GoogleAds.Config;
 using System;
 using System.IO;
 using System.Net;
+using System.Threading.Tasks;
 
 namespace Google.Ads.GoogleAds.Util
 {
@@ -59,6 +60,39 @@ namespace Google.Ads.GoogleAds.Util
         }
 
         /// <summary>
+        /// Asynchronously retrieves an asset from the web given its URL.
+        /// </summary>
+        /// <param name="assetUrl">The URL of the asset to be retrieved.</param>
+        /// <param name="config">The application configuration instance.</param>
+        /// <returns>Asset data, as an array of bytes.</returns>
+        /// <exception cref="ArgumentNullException">Thrown if
+        /// <paramref name="assetUrl"/> or <paramref name="config"/>is null.
+        /// </exception>
+        public static async Task<byte[]> GetAssetDataFromUrlAsync(Uri assetUrl, GoogleAdsConfig config)
+        {
+            if (assetUrl == null)
+            {
+                throw new ArgumentNullException(nameof(assetUrl));
+            }
+
+            if (config == null)
+            {
+                throw new ArgumentNullException(nameof(config));
+            }
+
+            WebRequest request = HttpUtilities.BuildRequest(assetUrl.AbsoluteUri, "GET", config);
+            WebResponse response = await request.GetResponseAsync();
+
+            MemoryStream memStream = new MemoryStream();
+            using (Stream responseStream = response.GetResponseStream())
+            {
+                await responseStream.CopyToAsync(memStream);
+            }
+
+            return memStream.ToArray();
+        }
+
+        /// <summary>
         /// Retrieves an asset from the web given its URL.
         /// </summary>
         /// <param name="assetUrl">The URL of the asset to be retrieved.</param>
@@ -70,6 +104,20 @@ namespace Google.Ads.GoogleAds.Util
         public static byte[] GetAssetDataFromUrl(string assetUrl, GoogleAdsConfig config)
         {
             return GetAssetDataFromUrl(new Uri(assetUrl), config);
+        }
+
+        /// <summary>
+        /// Asynchronously retrieves an asset from the web given its URL.
+        /// </summary>
+        /// <param name="assetUrl">The URL of the asset to be retrieved.</param>
+        /// <param name="config">The application configuration instance.</param>
+        /// <returns>Asset data, as an array of bytes.</returns>
+        /// <exception cref="ArgumentNullException">Thrown if
+        /// <paramref name="assetUrl"/> or <paramref name="config" /> is null.
+        /// </exception>
+        public static async Task<byte[]> GetAssetDataFromUrlAsync(string assetUrl, GoogleAdsConfig config)
+        {
+            return await GetAssetDataFromUrlAsync(new Uri(assetUrl), config);
         }
     }
 }
