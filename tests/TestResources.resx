@@ -255,10 +255,8 @@ Partial failures: PARTIAL_FAILURES
 }</value>
   </data>
   <data name="UsageSummary" xml:space="preserve">
-    <value>V0.TestExample | TestExample stringArgs=&lt;stringArgs&gt; longArgs=&lt;longArgs&gt; singleStringArg=&lt;singleStringArg&gt; singleLongArg=&lt;singleLongArg&gt;
-[Required] stringArgs: Array of strings
-[Required] longArgs: Array of longs
-[Required] singleStringArg: Single string
-[Required] singleLongArg: Single long</value>
+    <value>
+TestExample
+V0.TestExample</value>
   </data>
 </root>
