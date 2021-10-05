@@ -9,7 +9,7 @@
 - Added new code examples.
   - AdvancedOperations\AddBiddingDataExclusion.cs
   - AdvancedOperations\AddBiddingSeasonalityAdjustment.cs
-- Added library version logging in the user agent through the gccl flag.
+- Add gccl version header for logging purposes.
 
 10.0.0
 ======
