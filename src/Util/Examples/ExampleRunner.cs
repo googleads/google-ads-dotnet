@@ -80,16 +80,9 @@ namespace Google.Ads.GoogleAds.Examples
         /// </summary>
         public void PrintAvailableExamples()
         {
-            HashSet<SystemType> exampleTypes = new HashSet<SystemType>();
-
             foreach (string key in codeExampleMap.Keys)
             {
-                SystemType codeExampleType = codeExampleMap[key];
-                if (!exampleTypes.Contains(codeExampleType))
-                {
-                    Console.WriteLine(ExampleBase.GetUsage(codeExampleType));
-                    exampleTypes.Add(codeExampleType);
-                }
+                Console.WriteLine(key);
             }
         }
 
