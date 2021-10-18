@@ -78,5 +78,26 @@ namespace Google.Ads.GoogleAds.Tests.Util
                 new GoogleAdsConfig());
             Assert.AreEqual(FILE_CONTENTS, Encoding.UTF8.GetString(data));
         }
+        
+        /// <summary>
+        /// Tests if data can be asynchronously retrieved from a URL.
+        /// </summary>
+        [Test]
+        public async Task TestGetAssetDataFromUrlAsync1()
+        {
+            byte[] data = await MediaUtilities.GetAssetDataFromUrlAsync(fileUri, new GoogleAdsConfig());
+            Assert.AreEqual(FILE_CONTENTS, Encoding.UTF8.GetString(data));
+        }
+
+        /// <summary>
+        /// Tests if data can be asynchronously retrieved from a URL.
+        /// </summary>
+        [Test]
+        public async Task TestGetAssetDataFromUrlAsync2()
+        {
+            byte[] data = await MediaUtilities.GetAssetDataFromUrlAsync(fileUri.AbsoluteUri,
+                new GoogleAdsConfig());
+            Assert.AreEqual(FILE_CONTENTS, Encoding.UTF8.GetString(data));
+        }
     }
 }
