@@ -39,9 +39,18 @@ namespace Google.Ads.GoogleAds.Logging
         private GoogleAdsConfig config;
 
         /// <summary>
-        /// Gets or sets the callback for writing logs.
+        /// Gets or sets the callback for writing detailed logs.
         /// </summary>
-        internal Action<LogEntry> WriteLogs
+        internal Action<LogEntry> WriteDetailedLogs
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// Gets or sets the callback for writing summary logs.
+        /// </summary>
+        internal Action<LogEntry> WriteSummaryLogs
         {
             get;
             set;
@@ -55,7 +64,8 @@ namespace Google.Ads.GoogleAds.Logging
         {
             this.config = config;
             this.traceWriter = new DefaultTraceWriter();
-            this.WriteLogs = WriteLogEntry;
+            this.WriteDetailedLogs = WriteDetailedLogEntry;
+            this.WriteSummaryLogs = WriteSummaryLogEntry;
         }
 
         /// <summary>
@@ -75,7 +85,26 @@ namespace Google.Ads.GoogleAds.Logging
         {
             // Generating log entry is expensive, so let's do that only if the log source
             // has been configured to do so.
-            if (TraceUtilities.ShouldGenerateRequestLogs())
+
+            RpcException exception = null;
+
+            if (TraceUtilities.ShouldGenerateSummaryRequestLogs())
+            {
+                exception = UnaryRpcInterceptor.ParseTaskException(oldTask.Exception);
+
+                LogEntry logEntry = new LogEntry()
+                {
+                    Host = config.ServerUrl,
+                    Method = context.Method.FullName,
+                    RequestHeaders = context.Options.Headers,  // includes the RequestId
+                    IsFailure = oldTask.IsFaulted,
+                    Exception = exception,
+                };
+
+                WriteSummaryLogs(logEntry);
+            }
+
+            if (TraceUtilities.ShouldGenerateDetailedRequestLogs())
             {
                 LogEntry logEntry = new LogEntry()
                 {
@@ -86,13 +115,14 @@ namespace Google.Ads.GoogleAds.Logging
                     ResponseHeaders = Merge(GetResponseHeader(call.ResponseHeadersAsync),
                                             call.GetTrailers()),
                     Response = (oldTask.IsFaulted) ? default : oldTask.Result,
-                    Exception = UnaryRpcInterceptor.ParseTaskException(oldTask.Exception),
+                    Exception = exception ?? UnaryRpcInterceptor.ParseTaskException(oldTask.Exception),
                     IsFailure = oldTask.IsFaulted,
                     CustomerId = GetCustomerId(request),
                     PartialFailures = (oldTask.IsFaulted) ? "" :
                         GetPartialFailures(oldTask.Result)
                 };
-                WriteLogs(logEntry);
+
+                WriteDetailedLogs(logEntry);
             }
         }
 
@@ -114,7 +144,26 @@ namespace Google.Ads.GoogleAds.Logging
         {
             // Generating log entry is expensive, so let's do that only if the log source
             // has been configured to do so.
-            if (TraceUtilities.ShouldGenerateRequestLogs())
+
+            RpcException exception = null;
+
+            if (TraceUtilities.ShouldGenerateSummaryRequestLogs())
+            {
+                exception = UnaryRpcInterceptor.ParseTaskException(rpcException);
+
+                LogEntry logEntry = new LogEntry()
+                {
+                    Host = config.ServerUrl,
+                    Method = context.Method.FullName,
+                    RequestHeaders = context.Options.Headers,  // includes the RequestId
+                    IsFailure = (rpcException != null),
+                    Exception = UnaryRpcInterceptor.ParseTaskException(rpcException),
+                };
+
+                WriteSummaryLogs(logEntry);
+            }
+
+            if (TraceUtilities.ShouldGenerateDetailedRequestLogs())
             {
                 LogEntry logEntry = new LogEntry()
                 {
@@ -122,15 +171,16 @@ namespace Google.Ads.GoogleAds.Logging
                     Method = context.Method.FullName,
                     RequestHeaders = context.Options.Headers,
                     Request = request,
-                    ResponseHeaders = Merge(GetResponseHeader(call.ResponseHeadersAsync), 
-                                                TryGetCallTrailers(call)),
+                    ResponseHeaders = Merge(GetResponseHeader(call.ResponseHeadersAsync),
+                        TryGetCallTrailers(call)),
                     Response = response,
-                    Exception = UnaryRpcInterceptor.ParseTaskException(rpcException),
+                    Exception = exception ?? UnaryRpcInterceptor.ParseTaskException(rpcException),
                     IsFailure = (rpcException != null),
                     CustomerId = GetCustomerId(request),
                     PartialFailures = (rpcException != null) ? "" : GetPartialFailures(response)
                 };
-                WriteLogs(logEntry);
+
+                WriteDetailedLogs(logEntry);
             }
         }
 
@@ -155,12 +205,20 @@ namespace Google.Ads.GoogleAds.Logging
         }
 
         /// <summary>
-        /// Writes the log entry.
+        /// Writes the detailed log entry.
         /// </summary>
         /// <param name="logEntry">The log entry.</param>
-        private void WriteLogEntry(LogEntry logEntry)
+        private void WriteDetailedLogEntry(LogEntry logEntry)
         {
             traceWriter.WriteDetailedRequestLogs(logEntry);
+        }
+
+        /// <summary>
+        /// Writes the summary log entry.
+        /// </summary>
+        /// <param name="logEntry">The log entry.</param>
+        private void WriteSummaryLogEntry(LogEntry logEntry)
+        {
             traceWriter.WriteSummaryRequestLogs(logEntry);
         }
 

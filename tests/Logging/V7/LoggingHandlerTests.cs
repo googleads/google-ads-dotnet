@@ -162,7 +162,15 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V7
         {
             GoogleAdsConfig config = new GoogleAdsConfig();
             LoggingHandler handler = new LoggingHandler(config);
-            handler.WriteLogs = delegate (LogEntry logEntry)
+            handler.WriteSummaryLogs = delegate (LogEntry logEntry)
+            {
+                Assert.AreEqual(config.ServerUrl, logEntry.Host);
+                Assert.AreEqual(TEST_METHOD_IN_LOGS, logEntry.Method);
+                Assert.AreSame(TEST_REQUEST_METADATA, logEntry.RequestHeaders);
+                CompareMetadata(TEST_REQUEST_METADATA, logEntry.RequestHeaders);
+                Assert.False(logEntry.IsFailure);
+            };
+            handler.WriteDetailedLogs = delegate (LogEntry logEntry)
             {
                 Assert.AreEqual(config.ServerUrl, logEntry.Host);
                 Assert.AreEqual(TEST_METHOD_IN_LOGS, logEntry.Method);
@@ -188,7 +196,24 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V7
         {
             GoogleAdsConfig config = new GoogleAdsConfig();
             LoggingHandler handler = new LoggingHandler(config);
-            handler.WriteLogs = delegate (LogEntry logEntry)
+            handler.WriteSummaryLogs = delegate (LogEntry logEntry)
+            {
+                Assert.AreEqual(config.ServerUrl, logEntry.Host);
+                Assert.AreEqual(TEST_METHOD_IN_LOGS, logEntry.Method);
+                CompareMetadata(TEST_REQUEST_METADATA, logEntry.RequestHeaders);
+
+                Assert.True(logEntry.IsFailure);
+                GoogleAdsException googleAdsException = logEntry.Exception as GoogleAdsException;
+                Assert.NotNull(googleAdsException);
+
+                Assert.AreEqual(TEST_REQUEST_ID, googleAdsException.RequestId);
+
+                Assert.NotNull(googleAdsException.Failure);
+                Assert.AreEqual(1, googleAdsException.Failure.Errors.Count);
+                Assert.NotNull(googleAdsException.Failure.Errors[0].ErrorCode);
+                Assert.NotNull(googleAdsException.Failure.Errors[0].ErrorCode.DistinctError);
+            };
+            handler.WriteDetailedLogs = delegate (LogEntry logEntry)
             {
                 Assert.AreEqual(config.ServerUrl, logEntry.Host);
                 Assert.AreEqual(TEST_METHOD_IN_LOGS, logEntry.Method);
@@ -227,7 +252,14 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V7
         {
             GoogleAdsConfig config = new GoogleAdsConfig();
             LoggingHandler handler = new LoggingHandler(config);
-            handler.WriteLogs = delegate (LogEntry logEntry)
+            handler.WriteSummaryLogs = delegate (LogEntry logEntry)
+            {
+                Assert.AreEqual(config.ServerUrl, logEntry.Host);
+                Assert.AreEqual(TEST_METHOD_IN_LOGS, logEntry.Method);
+                CompareMetadata(TEST_REQUEST_METADATA, logEntry.RequestHeaders);
+                Assert.False(logEntry.IsFailure);
+            };
+            handler.WriteDetailedLogs = delegate (LogEntry logEntry)
             {
                 Assert.AreEqual(config.ServerUrl, logEntry.Host);
                 Assert.AreEqual(TEST_METHOD_IN_LOGS, logEntry.Method);
@@ -254,7 +286,14 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V7
         {
             GoogleAdsConfig config = new GoogleAdsConfig();
             LoggingHandler handler = new LoggingHandler(config);
-            handler.WriteLogs = delegate (LogEntry logEntry)
+            handler.WriteSummaryLogs = delegate (LogEntry logEntry)
+            {
+                Assert.AreEqual(config.ServerUrl, logEntry.Host);
+                Assert.AreEqual(TEST_METHOD_IN_LOGS, logEntry.Method);
+                CompareMetadata(TEST_REQUEST_METADATA, logEntry.RequestHeaders);
+                Assert.False(logEntry.IsFailure);
+            };
+            handler.WriteDetailedLogs = delegate (LogEntry logEntry)
             {
                 Assert.AreEqual(config.ServerUrl, logEntry.Host);
                 Assert.AreEqual(TEST_METHOD_IN_LOGS, logEntry.Method);
@@ -282,7 +321,23 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V7
         {
             GoogleAdsConfig config = new GoogleAdsConfig();
             LoggingHandler handler = new LoggingHandler(config);
-            handler.WriteLogs = delegate (LogEntry logEntry)
+            handler.WriteSummaryLogs = delegate (LogEntry logEntry)
+            {
+                Assert.AreEqual(config.ServerUrl, logEntry.Host);
+                Assert.AreEqual(TEST_METHOD_IN_LOGS, logEntry.Method);
+                CompareMetadata(TEST_REQUEST_METADATA, logEntry.RequestHeaders);
+                Assert.True(logEntry.IsFailure);
+                GoogleAdsException googleAdsException = logEntry.Exception as GoogleAdsException;
+                Assert.NotNull(googleAdsException);
+
+                Assert.AreEqual(TEST_REQUEST_ID, googleAdsException.RequestId);
+
+                Assert.NotNull(googleAdsException.Failure);
+                Assert.AreEqual(1, googleAdsException.Failure.Errors.Count);
+                Assert.NotNull(googleAdsException.Failure.Errors[0].ErrorCode);
+                Assert.NotNull(googleAdsException.Failure.Errors[0].ErrorCode.DistinctError);
+            };
+            handler.WriteDetailedLogs = delegate (LogEntry logEntry)
             {
                 Assert.AreEqual(config.ServerUrl, logEntry.Host);
                 Assert.AreEqual(TEST_METHOD_IN_LOGS, logEntry.Method);
