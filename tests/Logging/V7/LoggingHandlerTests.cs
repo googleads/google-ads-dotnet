@@ -150,6 +150,8 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V7
             // Create the test exception.
             TEST_EXCEPTION = TestUtils.CreateRpcException(TEST_ERROR_MESSAGE, TEST_ERROR_TRIGGER,
                 TEST_REQUEST_ID);
+            TraceUtilities.Configure(TraceUtilities.SUMMARY_REQUEST_LOGS_SOURCE,
+                new StringWriter(), SourceLevels.All);
             TraceUtilities.Configure(TraceUtilities.DETAILED_REQUEST_LOGS_SOURCE,
                 new StringWriter(), SourceLevels.All);
         }
