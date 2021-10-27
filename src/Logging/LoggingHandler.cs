@@ -157,7 +157,7 @@ namespace Google.Ads.GoogleAds.Logging
                     Method = context.Method.FullName,
                     RequestHeaders = context.Options.Headers,  // includes the RequestId
                     IsFailure = (rpcException != null),
-                    Exception = UnaryRpcInterceptor.ParseTaskException(rpcException),
+                    Exception = exception,
                 };
 
                 WriteSummaryLogs(logEntry);
