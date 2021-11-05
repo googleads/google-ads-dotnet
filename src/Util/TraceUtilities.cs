@@ -129,18 +129,21 @@ namespace Google.Ads.GoogleAds.Util
         }
 
         /// <summary>
-        /// Decide whether the library should attempt to generate logs.
+        /// Decide whether the library should attempt to generate detailed logs.
         /// </summary>
-        internal static bool ShouldGenerateRequestLogs()
+        internal static bool ShouldGenerateDetailedRequestLogs()
         {
             TraceSource detailedSource = GetSource(DETAILED_REQUEST_LOGS_SOURCE);
-            TraceSource summarySource = GetSource(SUMMARY_REQUEST_LOGS_SOURCE);
+            return (detailedSource.Switch.Level & SourceLevels.Information) == SourceLevels.Information;
+        }
 
-            return (
-                ((detailedSource.Switch.Level & SourceLevels.Information) ==
-                    SourceLevels.Information) ||
-                ((summarySource.Switch.Level & SourceLevels.Warning) == SourceLevels.Warning)
-            );
+        /// <summary>
+        /// Decide whether the library should attempt to generate summary logs.
+        /// </summary>
+        internal static bool ShouldGenerateSummaryRequestLogs()
+        {
+            TraceSource summarySource = GetSource(SUMMARY_REQUEST_LOGS_SOURCE);
+            return (summarySource.Switch.Level & SourceLevels.Warning) == SourceLevels.Warning;
         }
 
         /// <summary>
