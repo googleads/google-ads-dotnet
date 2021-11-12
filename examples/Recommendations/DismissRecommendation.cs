@@ -14,14 +14,14 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V8.Errors;
-using Google.Ads.GoogleAds.V8.Services;
+using Google.Ads.GoogleAds.V9.Errors;
+using Google.Ads.GoogleAds.V9.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V8.Services.DismissRecommendationRequest.Types;
-using static Google.Ads.GoogleAds.V8.Services.DismissRecommendationResponse.Types;
+using static Google.Ads.GoogleAds.V9.Services.DismissRecommendationRequest.Types;
+using static Google.Ads.GoogleAds.V9.Services.DismissRecommendationResponse.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V8
+namespace Google.Ads.GoogleAds.Examples.V9
 {
     /// <summary>
     /// This code example dismisses a given recommendation. To retrieve recommendations for text
@@ -94,7 +94,7 @@ namespace Google.Ads.GoogleAds.Examples.V8
         {
             // Get the RecommendationServiceClient.
             RecommendationServiceClient service = client.GetService(
-                Services.V8.RecommendationService);
+                Services.V9.RecommendationService);
 
             DismissRecommendationOperation operation = new DismissRecommendationOperation()
             {

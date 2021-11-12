@@ -55,19 +55,19 @@ namespace Google.Ads.GoogleAds.V8.Resources {
             "dXJjZXMuQWNjZXNzaWJsZUJpZGRpbmdTdHJhdGVneS5UYXJnZXRTcGVuZEID",
             "4EEDSAAaMwoXTWF4aW1pemVDb252ZXJzaW9uVmFsdWUSGAoLdGFyZ2V0X3Jv",
             "YXMYASABKAFCA+BBAxouChNNYXhpbWl6ZUNvbnZlcnNpb25zEhcKCnRhcmdl",
-            "dF9jcGEYASABKANCA+BBAxo7CgpUYXJnZXRSb2FzEh0KC3RhcmdldF9yb2Fz",
-            "GAEgASgBQgPgQQNIAIgBAUIOCgxfdGFyZ2V0X3JvYXMaRgoJVGFyZ2V0Q3Bh",
-            "EiMKEXRhcmdldF9jcGFfbWljcm9zGAEgASgDQgPgQQNIAIgBAUIUChJfdGFy",
-            "Z2V0X2NwYV9taWNyb3MakwEKC1RhcmdldFNwZW5kEicKE3RhcmdldF9zcGVu",
-            "ZF9taWNyb3MYASABKANCBRgB4EEDSACIAQESKAoWY3BjX2JpZF9jZWlsaW5n",
-            "X21pY3JvcxgCIAEoA0ID4EEDSAGIAQFCFgoUX3RhcmdldF9zcGVuZF9taWNy",
-            "b3NCGQoXX2NwY19iaWRfY2VpbGluZ19taWNyb3MalwIKFVRhcmdldEltcHJl",
-            "c3Npb25TaGFyZRJ1Cghsb2NhdGlvbhgBIAEoDjJeLmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnY4LmVudW1zLlRhcmdldEltcHJlc3Npb25TaGFyZUxvY2F0aW9u",
-            "RW51bS5UYXJnZXRJbXByZXNzaW9uU2hhcmVMb2NhdGlvbkID4EEDEiUKGGxv",
-            "Y2F0aW9uX2ZyYWN0aW9uX21pY3JvcxgCIAEoA0gAiAEBEigKFmNwY19iaWRf",
-            "Y2VpbGluZ19taWNyb3MYAyABKANCA+BBA0gBiAEBQhsKGV9sb2NhdGlvbl9m",
-            "cmFjdGlvbl9taWNyb3NCGQoXX2NwY19iaWRfY2VpbGluZ19taWNyb3M6ggHq",
+            "dF9jcGEYASABKANCA+BBAxpGCglUYXJnZXRDcGESIwoRdGFyZ2V0X2NwYV9t",
+            "aWNyb3MYASABKANCA+BBA0gAiAEBQhQKEl90YXJnZXRfY3BhX21pY3JvcxqX",
+            "AgoVVGFyZ2V0SW1wcmVzc2lvblNoYXJlEnUKCGxvY2F0aW9uGAEgASgOMl4u",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjguZW51bXMuVGFyZ2V0SW1wcmVzc2lv",
+            "blNoYXJlTG9jYXRpb25FbnVtLlRhcmdldEltcHJlc3Npb25TaGFyZUxvY2F0",
+            "aW9uQgPgQQMSJQoYbG9jYXRpb25fZnJhY3Rpb25fbWljcm9zGAIgASgDSACI",
+            "AQESKAoWY3BjX2JpZF9jZWlsaW5nX21pY3JvcxgDIAEoA0ID4EEDSAGIAQFC",
+            "GwoZX2xvY2F0aW9uX2ZyYWN0aW9uX21pY3Jvc0IZChdfY3BjX2JpZF9jZWls",
+            "aW5nX21pY3Jvcxo7CgpUYXJnZXRSb2FzEh0KC3RhcmdldF9yb2FzGAEgASgB",
+            "QgPgQQNIAIgBAUIOCgxfdGFyZ2V0X3JvYXMakwEKC1RhcmdldFNwZW5kEicK",
+            "E3RhcmdldF9zcGVuZF9taWNyb3MYASABKANCBRgB4EEDSACIAQESKAoWY3Bj",
+            "X2JpZF9jZWlsaW5nX21pY3JvcxgCIAEoA0ID4EEDSAGIAQFCFgoUX3Rhcmdl",
+            "dF9zcGVuZF9taWNyb3NCGQoXX2NwY19iaWRfY2VpbGluZ19taWNyb3M6ggHq",
             "QX8KMmdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9BY2Nlc3NpYmxlQmlkZGlu",
             "Z1N0cmF0ZWd5EkljdXN0b21lcnMve2N1c3RvbWVyX2lkfS9hY2Nlc3NpYmxl",
             "QmlkZGluZ1N0cmF0ZWdpZXMve2JpZGRpbmdfc3RyYXRlZ3lfaWR9QggKBnNj",
@@ -83,10 +83,10 @@ namespace Google.Ads.GoogleAds.V8.Resources {
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy), global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Parser, new[]{ "ResourceName", "Id", "Name", "Type", "OwnerCustomerId", "OwnerDescriptiveName", "MaximizeConversionValue", "MaximizeConversions", "TargetCpa", "TargetImpressionShare", "TargetRoas", "TargetSpend" }, new[]{ "Scheme" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.MaximizeConversionValue), global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.MaximizeConversionValue.Parser, new[]{ "TargetRoas" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.MaximizeConversions), global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.MaximizeConversions.Parser, new[]{ "TargetCpa" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetRoas), global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetRoas.Parser, new[]{ "TargetRoas_" }, new[]{ "TargetRoas" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetCpa), global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetCpa.Parser, new[]{ "TargetCpaMicros" }, new[]{ "TargetCpaMicros" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetSpend), global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetSpend.Parser, new[]{ "TargetSpendMicros", "CpcBidCeilingMicros" }, new[]{ "TargetSpendMicros", "CpcBidCeilingMicros" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetImpressionShare), global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetImpressionShare.Parser, new[]{ "Location", "LocationFractionMicros", "CpcBidCeilingMicros" }, new[]{ "LocationFractionMicros", "CpcBidCeilingMicros" }, null, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetImpressionShare), global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetImpressionShare.Parser, new[]{ "Location", "LocationFractionMicros", "CpcBidCeilingMicros" }, new[]{ "LocationFractionMicros", "CpcBidCeilingMicros" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetRoas), global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetRoas.Parser, new[]{ "TargetRoas_" }, new[]{ "TargetRoas" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetSpend), global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetSpend.Parser, new[]{ "TargetSpendMicros", "CpcBidCeilingMicros" }, new[]{ "TargetSpendMicros", "CpcBidCeilingMicros" }, null, null, null)})
           }));
     }
     #endregion
@@ -109,19 +109,23 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     private static readonly pb::MessageParser<AccessibleBiddingStrategy> _parser = new pb::MessageParser<AccessibleBiddingStrategy>(() => new AccessibleBiddingStrategy());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<AccessibleBiddingStrategy> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategyReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AccessibleBiddingStrategy() {
       OnConstruction();
     }
@@ -129,6 +133,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AccessibleBiddingStrategy(AccessibleBiddingStrategy other) : this() {
       resourceName_ = other.resourceName_;
       id_ = other.id_;
@@ -161,6 +166,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AccessibleBiddingStrategy Clone() {
       return new AccessibleBiddingStrategy(this);
     }
@@ -175,6 +181,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// `customers/{customer_id}/accessibleBiddingStrategies/{bidding_strategy_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ResourceName {
       get { return resourceName_; }
       set {
@@ -189,6 +196,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The ID of the bidding strategy.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long Id {
       get { return id_; }
       set {
@@ -203,6 +211,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The name of the bidding strategy.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
       get { return name_; }
       set {
@@ -217,6 +226,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The type of the bidding strategy.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.BiddingStrategyTypeEnum.Types.BiddingStrategyType Type {
       get { return type_; }
       set {
@@ -231,6 +241,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The ID of the Customer which owns the bidding strategy.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long OwnerCustomerId {
       get { return ownerCustomerId_; }
       set {
@@ -245,6 +256,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. descriptive_name of the Customer which owns the bidding strategy.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OwnerDescriptiveName {
       get { return ownerDescriptiveName_; }
       set {
@@ -259,6 +271,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// your campaigns while spending your budget.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.MaximizeConversionValue MaximizeConversionValue {
       get { return schemeCase_ == SchemeOneofCase.MaximizeConversionValue ? (global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.MaximizeConversionValue) scheme_ : null; }
       set {
@@ -274,6 +287,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// campaigns while spending your budget.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.MaximizeConversions MaximizeConversions {
       get { return schemeCase_ == SchemeOneofCase.MaximizeConversions ? (global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.MaximizeConversions) scheme_ : null; }
       set {
@@ -289,6 +303,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// possible at the target cost-per-acquisition (CPA) you set.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetCpa TargetCpa {
       get { return schemeCase_ == SchemeOneofCase.TargetCpa ? (global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetCpa) scheme_ : null; }
       set {
@@ -304,6 +319,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// percentage of impressions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetImpressionShare TargetImpressionShare {
       get { return schemeCase_ == SchemeOneofCase.TargetImpressionShare ? (global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetImpressionShare) scheme_ : null; }
       set {
@@ -319,6 +335,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// specific target Return On Ad Spend (ROAS).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetRoas TargetRoas {
       get { return schemeCase_ == SchemeOneofCase.TargetRoas ? (global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetRoas) scheme_ : null; }
       set {
@@ -334,6 +351,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// possible within your budget.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetSpend TargetSpend {
       get { return schemeCase_ == SchemeOneofCase.TargetSpend ? (global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Types.TargetSpend) scheme_ : null; }
       set {
@@ -355,22 +373,26 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     private SchemeOneofCase schemeCase_ = SchemeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SchemeOneofCase SchemeCase {
       get { return schemeCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearScheme() {
       schemeCase_ = SchemeOneofCase.None;
       scheme_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as AccessibleBiddingStrategy);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(AccessibleBiddingStrategy other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -395,6 +417,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
@@ -417,11 +440,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -482,6 +507,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
@@ -538,6 +564,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ResourceName.Length != 0) {
@@ -583,6 +610,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(AccessibleBiddingStrategy other) {
       if (other == null) {
         return;
@@ -648,6 +676,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -743,6 +772,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -836,6 +866,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     #region Nested types
     /// <summary>Container for nested types declared in the AccessibleBiddingStrategy message type.</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static partial class Types {
       /// <summary>
       /// An automated bidding strategy to help get the most conversion value for
@@ -849,19 +880,23 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         private static readonly pb::MessageParser<MaximizeConversionValue> _parser = new pb::MessageParser<MaximizeConversionValue>(() => new MaximizeConversionValue());
         private pb::UnknownFieldSet _unknownFields;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pb::MessageParser<MaximizeConversionValue> Parser { get { return _parser; } }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
           get { return global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Descriptor.NestedTypes[0]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         pbr::MessageDescriptor pb::IMessage.Descriptor {
           get { return Descriptor; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public MaximizeConversionValue() {
           OnConstruction();
         }
@@ -869,12 +904,14 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         partial void OnConstruction();
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public MaximizeConversionValue(MaximizeConversionValue other) : this() {
           targetRoas_ = other.targetRoas_;
           _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public MaximizeConversionValue Clone() {
           return new MaximizeConversionValue(this);
         }
@@ -890,6 +927,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// achieve the highest possible ROAS for the budget.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public double TargetRoas {
           get { return targetRoas_; }
           set {
@@ -898,11 +936,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override bool Equals(object other) {
           return Equals(other as MaximizeConversionValue);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool Equals(MaximizeConversionValue other) {
           if (ReferenceEquals(other, null)) {
             return false;
@@ -915,6 +955,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override int GetHashCode() {
           int hash = 1;
           if (TargetRoas != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(TargetRoas);
@@ -925,11 +966,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override string ToString() {
           return pb::JsonFormatter.ToDiagnosticString(this);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void WriteTo(pb::CodedOutputStream output) {
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           output.WriteRawMessage(this);
@@ -946,6 +989,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
           if (TargetRoas != 0D) {
             output.WriteRawTag(9);
@@ -958,6 +1002,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         #endif
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public int CalculateSize() {
           int size = 0;
           if (TargetRoas != 0D) {
@@ -970,6 +1015,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void MergeFrom(MaximizeConversionValue other) {
           if (other == null) {
             return;
@@ -981,6 +1027,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void MergeFrom(pb::CodedInputStream input) {
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           input.ReadRawMessage(this);
@@ -1002,6 +1049,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
@@ -1032,19 +1080,23 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         private static readonly pb::MessageParser<MaximizeConversions> _parser = new pb::MessageParser<MaximizeConversions>(() => new MaximizeConversions());
         private pb::UnknownFieldSet _unknownFields;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pb::MessageParser<MaximizeConversions> Parser { get { return _parser; } }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
           get { return global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Descriptor.NestedTypes[1]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         pbr::MessageDescriptor pb::IMessage.Descriptor {
           get { return Descriptor; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public MaximizeConversions() {
           OnConstruction();
         }
@@ -1052,12 +1104,14 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         partial void OnConstruction();
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public MaximizeConversions(MaximizeConversions other) : this() {
           targetCpa_ = other.targetCpa_;
           _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public MaximizeConversions Clone() {
           return new MaximizeConversions(this);
         }
@@ -1070,6 +1124,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// that you would like to spend per acquisition.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public long TargetCpa {
           get { return targetCpa_; }
           set {
@@ -1078,11 +1133,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override bool Equals(object other) {
           return Equals(other as MaximizeConversions);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool Equals(MaximizeConversions other) {
           if (ReferenceEquals(other, null)) {
             return false;
@@ -1095,6 +1152,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override int GetHashCode() {
           int hash = 1;
           if (TargetCpa != 0L) hash ^= TargetCpa.GetHashCode();
@@ -1105,11 +1163,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override string ToString() {
           return pb::JsonFormatter.ToDiagnosticString(this);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void WriteTo(pb::CodedOutputStream output) {
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           output.WriteRawMessage(this);
@@ -1126,6 +1186,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
           if (TargetCpa != 0L) {
             output.WriteRawTag(8);
@@ -1138,6 +1199,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         #endif
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public int CalculateSize() {
           int size = 0;
           if (TargetCpa != 0L) {
@@ -1150,6 +1212,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void MergeFrom(MaximizeConversions other) {
           if (other == null) {
             return;
@@ -1161,6 +1224,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void MergeFrom(pb::CodedInputStream input) {
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           input.ReadRawMessage(this);
@@ -1182,6 +1246,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
@@ -1191,198 +1256,6 @@ namespace Google.Ads.GoogleAds.V8.Resources {
                 break;
               case 8: {
                 TargetCpa = input.ReadInt64();
-                break;
-              }
-            }
-          }
-        }
-        #endif
-
-      }
-
-      /// <summary>
-      /// An automated bidding strategy that helps you maximize revenue while
-      /// averaging a specific target return on ad spend (ROAS).
-      /// </summary>
-      public sealed partial class TargetRoas : pb::IMessage<TargetRoas>
-      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          , pb::IBufferMessage
-      #endif
-      {
-        private static readonly pb::MessageParser<TargetRoas> _parser = new pb::MessageParser<TargetRoas>(() => new TargetRoas());
-        private pb::UnknownFieldSet _unknownFields;
-        private int _hasBits0;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<TargetRoas> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Descriptor.NestedTypes[2]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public TargetRoas() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public TargetRoas(TargetRoas other) : this() {
-          _hasBits0 = other._hasBits0;
-          targetRoas_ = other.targetRoas_;
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public TargetRoas Clone() {
-          return new TargetRoas(this);
-        }
-
-        /// <summary>Field number for the "target_roas" field.</summary>
-        public const int TargetRoas_FieldNumber = 1;
-        private double targetRoas_;
-        /// <summary>
-        /// Output only. The desired revenue (based on conversion data) per unit of spend.
-        /// </summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public double TargetRoas_ {
-          get { if ((_hasBits0 & 1) != 0) { return targetRoas_; } else { return 0D; } }
-          set {
-            _hasBits0 |= 1;
-            targetRoas_ = value;
-          }
-        }
-        /// <summary>Gets whether the "target_roas" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasTargetRoas_ {
-          get { return (_hasBits0 & 1) != 0; }
-        }
-        /// <summary>Clears the value of the "target_roas" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearTargetRoas_() {
-          _hasBits0 &= ~1;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as TargetRoas);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(TargetRoas other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(TargetRoas_, other.TargetRoas_)) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          if (HasTargetRoas_) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(TargetRoas_);
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          output.WriteRawMessage(this);
-        #else
-          if (HasTargetRoas_) {
-            output.WriteRawTag(9);
-            output.WriteDouble(TargetRoas_);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-          if (HasTargetRoas_) {
-            output.WriteRawTag(9);
-            output.WriteDouble(TargetRoas_);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(ref output);
-          }
-        }
-        #endif
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          if (HasTargetRoas_) {
-            size += 1 + 8;
-          }
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(TargetRoas other) {
-          if (other == null) {
-            return;
-          }
-          if (other.HasTargetRoas_) {
-            TargetRoas_ = other.TargetRoas_;
-          }
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          input.ReadRawMessage(this);
-        #else
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 9: {
-                TargetRoas_ = input.ReadDouble();
-                break;
-              }
-            }
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-                break;
-              case 9: {
-                TargetRoas_ = input.ReadDouble();
                 break;
               }
             }
@@ -1405,19 +1278,23 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         private pb::UnknownFieldSet _unknownFields;
         private int _hasBits0;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pb::MessageParser<TargetCpa> Parser { get { return _parser; } }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Descriptor.NestedTypes[3]; }
+          get { return global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Descriptor.NestedTypes[2]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         pbr::MessageDescriptor pb::IMessage.Descriptor {
           get { return Descriptor; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public TargetCpa() {
           OnConstruction();
         }
@@ -1425,6 +1302,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         partial void OnConstruction();
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public TargetCpa(TargetCpa other) : this() {
           _hasBits0 = other._hasBits0;
           targetCpaMicros_ = other.targetCpaMicros_;
@@ -1432,6 +1310,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public TargetCpa Clone() {
           return new TargetCpa(this);
         }
@@ -1445,6 +1324,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// based on the currency for the account.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public long TargetCpaMicros {
           get { if ((_hasBits0 & 1) != 0) { return targetCpaMicros_; } else { return 0L; } }
           set {
@@ -1454,21 +1334,25 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
         /// <summary>Gets whether the "target_cpa_micros" field is set</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasTargetCpaMicros {
           get { return (_hasBits0 & 1) != 0; }
         }
         /// <summary>Clears the value of the "target_cpa_micros" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearTargetCpaMicros() {
           _hasBits0 &= ~1;
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override bool Equals(object other) {
           return Equals(other as TargetCpa);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool Equals(TargetCpa other) {
           if (ReferenceEquals(other, null)) {
             return false;
@@ -1481,6 +1365,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override int GetHashCode() {
           int hash = 1;
           if (HasTargetCpaMicros) hash ^= TargetCpaMicros.GetHashCode();
@@ -1491,11 +1376,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override string ToString() {
           return pb::JsonFormatter.ToDiagnosticString(this);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void WriteTo(pb::CodedOutputStream output) {
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           output.WriteRawMessage(this);
@@ -1512,6 +1399,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
           if (HasTargetCpaMicros) {
             output.WriteRawTag(8);
@@ -1524,6 +1412,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         #endif
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public int CalculateSize() {
           int size = 0;
           if (HasTargetCpaMicros) {
@@ -1536,6 +1425,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void MergeFrom(TargetCpa other) {
           if (other == null) {
             return;
@@ -1547,6 +1437,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void MergeFrom(pb::CodedInputStream input) {
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           input.ReadRawMessage(this);
@@ -1568,6 +1459,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
@@ -1577,258 +1469,6 @@ namespace Google.Ads.GoogleAds.V8.Resources {
                 break;
               case 8: {
                 TargetCpaMicros = input.ReadInt64();
-                break;
-              }
-            }
-          }
-        }
-        #endif
-
-      }
-
-      /// <summary>
-      /// An automated bid strategy that sets your bids to help get as many clicks
-      /// as possible within your budget.
-      /// </summary>
-      public sealed partial class TargetSpend : pb::IMessage<TargetSpend>
-      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          , pb::IBufferMessage
-      #endif
-      {
-        private static readonly pb::MessageParser<TargetSpend> _parser = new pb::MessageParser<TargetSpend>(() => new TargetSpend());
-        private pb::UnknownFieldSet _unknownFields;
-        private int _hasBits0;
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pb::MessageParser<TargetSpend> Parser { get { return _parser; } }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Descriptor.NestedTypes[4]; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        pbr::MessageDescriptor pb::IMessage.Descriptor {
-          get { return Descriptor; }
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public TargetSpend() {
-          OnConstruction();
-        }
-
-        partial void OnConstruction();
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public TargetSpend(TargetSpend other) : this() {
-          _hasBits0 = other._hasBits0;
-          targetSpendMicros_ = other.targetSpendMicros_;
-          cpcBidCeilingMicros_ = other.cpcBidCeilingMicros_;
-          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public TargetSpend Clone() {
-          return new TargetSpend(this);
-        }
-
-        /// <summary>Field number for the "target_spend_micros" field.</summary>
-        public const int TargetSpendMicrosFieldNumber = 1;
-        private long targetSpendMicros_;
-        /// <summary>
-        /// Output only. The spend target under which to maximize clicks.
-        /// A TargetSpend bidder will attempt to spend the smaller of this value
-        /// or the natural throttling spend amount.
-        /// If not specified, the budget is used as the spend target.
-        /// This field is deprecated and should no longer be used. See
-        /// https://ads-developers.googleblog.com/2020/05/reminder-about-sunset-creation-of.html
-        /// for details.
-        /// </summary>
-        [global::System.ObsoleteAttribute]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public long TargetSpendMicros {
-          get { if ((_hasBits0 & 1) != 0) { return targetSpendMicros_; } else { return 0L; } }
-          set {
-            _hasBits0 |= 1;
-            targetSpendMicros_ = value;
-          }
-        }
-        /// <summary>Gets whether the "target_spend_micros" field is set</summary>
-        [global::System.ObsoleteAttribute]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasTargetSpendMicros {
-          get { return (_hasBits0 & 1) != 0; }
-        }
-        /// <summary>Clears the value of the "target_spend_micros" field</summary>
-        [global::System.ObsoleteAttribute]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearTargetSpendMicros() {
-          _hasBits0 &= ~1;
-        }
-
-        /// <summary>Field number for the "cpc_bid_ceiling_micros" field.</summary>
-        public const int CpcBidCeilingMicrosFieldNumber = 2;
-        private long cpcBidCeilingMicros_;
-        /// <summary>
-        /// Output only. Maximum bid limit that can be set by the bid strategy.
-        /// The limit applies to all keywords managed by the strategy.
-        /// </summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public long CpcBidCeilingMicros {
-          get { if ((_hasBits0 & 2) != 0) { return cpcBidCeilingMicros_; } else { return 0L; } }
-          set {
-            _hasBits0 |= 2;
-            cpcBidCeilingMicros_ = value;
-          }
-        }
-        /// <summary>Gets whether the "cpc_bid_ceiling_micros" field is set</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool HasCpcBidCeilingMicros {
-          get { return (_hasBits0 & 2) != 0; }
-        }
-        /// <summary>Clears the value of the "cpc_bid_ceiling_micros" field</summary>
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void ClearCpcBidCeilingMicros() {
-          _hasBits0 &= ~2;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override bool Equals(object other) {
-          return Equals(other as TargetSpend);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public bool Equals(TargetSpend other) {
-          if (ReferenceEquals(other, null)) {
-            return false;
-          }
-          if (ReferenceEquals(other, this)) {
-            return true;
-          }
-          if (TargetSpendMicros != other.TargetSpendMicros) return false;
-          if (CpcBidCeilingMicros != other.CpcBidCeilingMicros) return false;
-          return Equals(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override int GetHashCode() {
-          int hash = 1;
-          if (HasTargetSpendMicros) hash ^= TargetSpendMicros.GetHashCode();
-          if (HasCpcBidCeilingMicros) hash ^= CpcBidCeilingMicros.GetHashCode();
-          if (_unknownFields != null) {
-            hash ^= _unknownFields.GetHashCode();
-          }
-          return hash;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public override string ToString() {
-          return pb::JsonFormatter.ToDiagnosticString(this);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void WriteTo(pb::CodedOutputStream output) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          output.WriteRawMessage(this);
-        #else
-          if (HasTargetSpendMicros) {
-            output.WriteRawTag(8);
-            output.WriteInt64(TargetSpendMicros);
-          }
-          if (HasCpcBidCeilingMicros) {
-            output.WriteRawTag(16);
-            output.WriteInt64(CpcBidCeilingMicros);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(output);
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-          if (HasTargetSpendMicros) {
-            output.WriteRawTag(8);
-            output.WriteInt64(TargetSpendMicros);
-          }
-          if (HasCpcBidCeilingMicros) {
-            output.WriteRawTag(16);
-            output.WriteInt64(CpcBidCeilingMicros);
-          }
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(ref output);
-          }
-        }
-        #endif
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public int CalculateSize() {
-          int size = 0;
-          if (HasTargetSpendMicros) {
-            size += 1 + pb::CodedOutputStream.ComputeInt64Size(TargetSpendMicros);
-          }
-          if (HasCpcBidCeilingMicros) {
-            size += 1 + pb::CodedOutputStream.ComputeInt64Size(CpcBidCeilingMicros);
-          }
-          if (_unknownFields != null) {
-            size += _unknownFields.CalculateSize();
-          }
-          return size;
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(TargetSpend other) {
-          if (other == null) {
-            return;
-          }
-          if (other.HasTargetSpendMicros) {
-            TargetSpendMicros = other.TargetSpendMicros;
-          }
-          if (other.HasCpcBidCeilingMicros) {
-            CpcBidCeilingMicros = other.CpcBidCeilingMicros;
-          }
-          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-        }
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        public void MergeFrom(pb::CodedInputStream input) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          input.ReadRawMessage(this);
-        #else
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-                break;
-              case 8: {
-                TargetSpendMicros = input.ReadInt64();
-                break;
-              }
-              case 16: {
-                CpcBidCeilingMicros = input.ReadInt64();
-                break;
-              }
-            }
-          }
-        #endif
-        }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-                break;
-              case 8: {
-                TargetSpendMicros = input.ReadInt64();
-                break;
-              }
-              case 16: {
-                CpcBidCeilingMicros = input.ReadInt64();
                 break;
               }
             }
@@ -1852,19 +1492,23 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         private pb::UnknownFieldSet _unknownFields;
         private int _hasBits0;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pb::MessageParser<TargetImpressionShare> Parser { get { return _parser; } }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Descriptor.NestedTypes[5]; }
+          get { return global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Descriptor.NestedTypes[3]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         pbr::MessageDescriptor pb::IMessage.Descriptor {
           get { return Descriptor; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public TargetImpressionShare() {
           OnConstruction();
         }
@@ -1872,6 +1516,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         partial void OnConstruction();
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public TargetImpressionShare(TargetImpressionShare other) : this() {
           _hasBits0 = other._hasBits0;
           location_ = other.location_;
@@ -1881,6 +1526,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public TargetImpressionShare Clone() {
           return new TargetImpressionShare(this);
         }
@@ -1892,6 +1538,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// Output only. The targeted location on the search results page.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public global::Google.Ads.GoogleAds.V8.Enums.TargetImpressionShareLocationEnum.Types.TargetImpressionShareLocation Location {
           get { return location_; }
           set {
@@ -1907,6 +1554,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// micros. E.g. 1% equals 10,000.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public long LocationFractionMicros {
           get { if ((_hasBits0 & 1) != 0) { return locationFractionMicros_; } else { return 0L; } }
           set {
@@ -1916,11 +1564,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
         /// <summary>Gets whether the "location_fraction_micros" field is set</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasLocationFractionMicros {
           get { return (_hasBits0 & 1) != 0; }
         }
         /// <summary>Clears the value of the "location_fraction_micros" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearLocationFractionMicros() {
           _hasBits0 &= ~1;
         }
@@ -1934,6 +1584,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// and specified in local micros.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public long CpcBidCeilingMicros {
           get { if ((_hasBits0 & 2) != 0) { return cpcBidCeilingMicros_; } else { return 0L; } }
           set {
@@ -1943,21 +1594,25 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
         /// <summary>Gets whether the "cpc_bid_ceiling_micros" field is set</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasCpcBidCeilingMicros {
           get { return (_hasBits0 & 2) != 0; }
         }
         /// <summary>Clears the value of the "cpc_bid_ceiling_micros" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearCpcBidCeilingMicros() {
           _hasBits0 &= ~2;
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override bool Equals(object other) {
           return Equals(other as TargetImpressionShare);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool Equals(TargetImpressionShare other) {
           if (ReferenceEquals(other, null)) {
             return false;
@@ -1972,6 +1627,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override int GetHashCode() {
           int hash = 1;
           if (Location != global::Google.Ads.GoogleAds.V8.Enums.TargetImpressionShareLocationEnum.Types.TargetImpressionShareLocation.Unspecified) hash ^= Location.GetHashCode();
@@ -1984,11 +1640,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override string ToString() {
           return pb::JsonFormatter.ToDiagnosticString(this);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void WriteTo(pb::CodedOutputStream output) {
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           output.WriteRawMessage(this);
@@ -2013,6 +1671,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
           if (Location != global::Google.Ads.GoogleAds.V8.Enums.TargetImpressionShareLocationEnum.Types.TargetImpressionShareLocation.Unspecified) {
             output.WriteRawTag(8);
@@ -2033,6 +1692,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         #endif
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public int CalculateSize() {
           int size = 0;
           if (Location != global::Google.Ads.GoogleAds.V8.Enums.TargetImpressionShareLocationEnum.Types.TargetImpressionShareLocation.Unspecified) {
@@ -2051,6 +1711,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void MergeFrom(TargetImpressionShare other) {
           if (other == null) {
             return;
@@ -2068,6 +1729,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void MergeFrom(pb::CodedInputStream input) {
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           input.ReadRawMessage(this);
@@ -2097,6 +1759,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
@@ -2113,6 +1776,491 @@ namespace Google.Ads.GoogleAds.V8.Resources {
                 break;
               }
               case 24: {
+                CpcBidCeilingMicros = input.ReadInt64();
+                break;
+              }
+            }
+          }
+        }
+        #endif
+
+      }
+
+      /// <summary>
+      /// An automated bidding strategy that helps you maximize revenue while
+      /// averaging a specific target return on ad spend (ROAS).
+      /// </summary>
+      public sealed partial class TargetRoas : pb::IMessage<TargetRoas>
+      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          , pb::IBufferMessage
+      #endif
+      {
+        private static readonly pb::MessageParser<TargetRoas> _parser = new pb::MessageParser<TargetRoas>(() => new TargetRoas());
+        private pb::UnknownFieldSet _unknownFields;
+        private int _hasBits0;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public static pb::MessageParser<TargetRoas> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Descriptor.NestedTypes[4]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public TargetRoas() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public TargetRoas(TargetRoas other) : this() {
+          _hasBits0 = other._hasBits0;
+          targetRoas_ = other.targetRoas_;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public TargetRoas Clone() {
+          return new TargetRoas(this);
+        }
+
+        /// <summary>Field number for the "target_roas" field.</summary>
+        public const int TargetRoas_FieldNumber = 1;
+        private double targetRoas_;
+        /// <summary>
+        /// Output only. The desired revenue (based on conversion data) per unit of spend.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public double TargetRoas_ {
+          get { if ((_hasBits0 & 1) != 0) { return targetRoas_; } else { return 0D; } }
+          set {
+            _hasBits0 |= 1;
+            targetRoas_ = value;
+          }
+        }
+        /// <summary>Gets whether the "target_roas" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasTargetRoas_ {
+          get { return (_hasBits0 & 1) != 0; }
+        }
+        /// <summary>Clears the value of the "target_roas" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearTargetRoas_() {
+          _hasBits0 &= ~1;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override bool Equals(object other) {
+          return Equals(other as TargetRoas);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool Equals(TargetRoas other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(TargetRoas_, other.TargetRoas_)) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (HasTargetRoas_) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(TargetRoas_);
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void WriteTo(pb::CodedOutputStream output) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          output.WriteRawMessage(this);
+        #else
+          if (HasTargetRoas_) {
+            output.WriteRawTag(9);
+            output.WriteDouble(TargetRoas_);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+          if (HasTargetRoas_) {
+            output.WriteRawTag(9);
+            output.WriteDouble(TargetRoas_);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(ref output);
+          }
+        }
+        #endif
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public int CalculateSize() {
+          int size = 0;
+          if (HasTargetRoas_) {
+            size += 1 + 8;
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void MergeFrom(TargetRoas other) {
+          if (other == null) {
+            return;
+          }
+          if (other.HasTargetRoas_) {
+            TargetRoas_ = other.TargetRoas_;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void MergeFrom(pb::CodedInputStream input) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          input.ReadRawMessage(this);
+        #else
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 9: {
+                TargetRoas_ = input.ReadDouble();
+                break;
+              }
+            }
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                break;
+              case 9: {
+                TargetRoas_ = input.ReadDouble();
+                break;
+              }
+            }
+          }
+        }
+        #endif
+
+      }
+
+      /// <summary>
+      /// An automated bid strategy that sets your bids to help get as many clicks
+      /// as possible within your budget.
+      /// </summary>
+      public sealed partial class TargetSpend : pb::IMessage<TargetSpend>
+      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          , pb::IBufferMessage
+      #endif
+      {
+        private static readonly pb::MessageParser<TargetSpend> _parser = new pb::MessageParser<TargetSpend>(() => new TargetSpend());
+        private pb::UnknownFieldSet _unknownFields;
+        private int _hasBits0;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public static pb::MessageParser<TargetSpend> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V8.Resources.AccessibleBiddingStrategy.Descriptor.NestedTypes[5]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public TargetSpend() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public TargetSpend(TargetSpend other) : this() {
+          _hasBits0 = other._hasBits0;
+          targetSpendMicros_ = other.targetSpendMicros_;
+          cpcBidCeilingMicros_ = other.cpcBidCeilingMicros_;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public TargetSpend Clone() {
+          return new TargetSpend(this);
+        }
+
+        /// <summary>Field number for the "target_spend_micros" field.</summary>
+        public const int TargetSpendMicrosFieldNumber = 1;
+        private long targetSpendMicros_;
+        /// <summary>
+        /// Output only. The spend target under which to maximize clicks.
+        /// A TargetSpend bidder will attempt to spend the smaller of this value
+        /// or the natural throttling spend amount.
+        /// If not specified, the budget is used as the spend target.
+        /// This field is deprecated and should no longer be used. See
+        /// https://ads-developers.googleblog.com/2020/05/reminder-about-sunset-creation-of.html
+        /// for details.
+        /// </summary>
+        [global::System.ObsoleteAttribute]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public long TargetSpendMicros {
+          get { if ((_hasBits0 & 1) != 0) { return targetSpendMicros_; } else { return 0L; } }
+          set {
+            _hasBits0 |= 1;
+            targetSpendMicros_ = value;
+          }
+        }
+        /// <summary>Gets whether the "target_spend_micros" field is set</summary>
+        [global::System.ObsoleteAttribute]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasTargetSpendMicros {
+          get { return (_hasBits0 & 1) != 0; }
+        }
+        /// <summary>Clears the value of the "target_spend_micros" field</summary>
+        [global::System.ObsoleteAttribute]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearTargetSpendMicros() {
+          _hasBits0 &= ~1;
+        }
+
+        /// <summary>Field number for the "cpc_bid_ceiling_micros" field.</summary>
+        public const int CpcBidCeilingMicrosFieldNumber = 2;
+        private long cpcBidCeilingMicros_;
+        /// <summary>
+        /// Output only. Maximum bid limit that can be set by the bid strategy.
+        /// The limit applies to all keywords managed by the strategy.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public long CpcBidCeilingMicros {
+          get { if ((_hasBits0 & 2) != 0) { return cpcBidCeilingMicros_; } else { return 0L; } }
+          set {
+            _hasBits0 |= 2;
+            cpcBidCeilingMicros_ = value;
+          }
+        }
+        /// <summary>Gets whether the "cpc_bid_ceiling_micros" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasCpcBidCeilingMicros {
+          get { return (_hasBits0 & 2) != 0; }
+        }
+        /// <summary>Clears the value of the "cpc_bid_ceiling_micros" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearCpcBidCeilingMicros() {
+          _hasBits0 &= ~2;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override bool Equals(object other) {
+          return Equals(other as TargetSpend);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool Equals(TargetSpend other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (TargetSpendMicros != other.TargetSpendMicros) return false;
+          if (CpcBidCeilingMicros != other.CpcBidCeilingMicros) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (HasTargetSpendMicros) hash ^= TargetSpendMicros.GetHashCode();
+          if (HasCpcBidCeilingMicros) hash ^= CpcBidCeilingMicros.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void WriteTo(pb::CodedOutputStream output) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          output.WriteRawMessage(this);
+        #else
+          if (HasTargetSpendMicros) {
+            output.WriteRawTag(8);
+            output.WriteInt64(TargetSpendMicros);
+          }
+          if (HasCpcBidCeilingMicros) {
+            output.WriteRawTag(16);
+            output.WriteInt64(CpcBidCeilingMicros);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+          if (HasTargetSpendMicros) {
+            output.WriteRawTag(8);
+            output.WriteInt64(TargetSpendMicros);
+          }
+          if (HasCpcBidCeilingMicros) {
+            output.WriteRawTag(16);
+            output.WriteInt64(CpcBidCeilingMicros);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(ref output);
+          }
+        }
+        #endif
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public int CalculateSize() {
+          int size = 0;
+          if (HasTargetSpendMicros) {
+            size += 1 + pb::CodedOutputStream.ComputeInt64Size(TargetSpendMicros);
+          }
+          if (HasCpcBidCeilingMicros) {
+            size += 1 + pb::CodedOutputStream.ComputeInt64Size(CpcBidCeilingMicros);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void MergeFrom(TargetSpend other) {
+          if (other == null) {
+            return;
+          }
+          if (other.HasTargetSpendMicros) {
+            TargetSpendMicros = other.TargetSpendMicros;
+          }
+          if (other.HasCpcBidCeilingMicros) {
+            CpcBidCeilingMicros = other.CpcBidCeilingMicros;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void MergeFrom(pb::CodedInputStream input) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          input.ReadRawMessage(this);
+        #else
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 8: {
+                TargetSpendMicros = input.ReadInt64();
+                break;
+              }
+              case 16: {
+                CpcBidCeilingMicros = input.ReadInt64();
+                break;
+              }
+            }
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                break;
+              case 8: {
+                TargetSpendMicros = input.ReadInt64();
+                break;
+              }
+              case 16: {
                 CpcBidCeilingMicros = input.ReadInt64();
                 break;
               }

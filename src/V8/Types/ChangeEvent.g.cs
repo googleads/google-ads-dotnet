@@ -145,19 +145,23 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     private static readonly pb::MessageParser<ChangeEvent> _parser = new pb::MessageParser<ChangeEvent>(() => new ChangeEvent());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ChangeEvent> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Ads.GoogleAds.V8.Resources.ChangeEventReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChangeEvent() {
       OnConstruction();
     }
@@ -165,6 +169,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChangeEvent(ChangeEvent other) : this() {
       resourceName_ = other.resourceName_;
       changeDateTime_ = other.changeDateTime_;
@@ -185,6 +190,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ChangeEvent Clone() {
       return new ChangeEvent(this);
     }
@@ -199,6 +205,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// `customers/{customer_id}/changeEvents/{timestamp_micros}~{command_index}~{mutate_index}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ResourceName {
       get { return resourceName_; }
       set {
@@ -213,6 +220,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. Time at which the change was committed on this resource.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ChangeDateTime {
       get { return changeDateTime_; }
       set {
@@ -228,6 +236,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// will be set in old_resource and new_resource.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.ChangeEventResourceTypeEnum.Types.ChangeEventResourceType ChangeResourceType {
       get { return changeResourceType_; }
       set {
@@ -242,6 +251,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The Simply resource this change occurred on.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ChangeResourceName {
       get { return changeResourceName_; }
       set {
@@ -256,6 +266,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. Where the change was made through.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.ChangeClientTypeEnum.Types.ChangeClientType ClientType {
       get { return clientType_; }
       set {
@@ -270,6 +281,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The email of the user who made this change.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string UserEmail {
       get { return userEmail_; }
       set {
@@ -284,6 +296,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The old resource before the change. Only changed fields will be populated.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Resources.ChangeEvent.Types.ChangedResource OldResource {
       get { return oldResource_; }
       set {
@@ -298,6 +311,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The new resource after the change. Only changed fields will be populated.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Resources.ChangeEvent.Types.ChangedResource NewResource {
       get { return newResource_; }
       set {
@@ -312,6 +326,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The operation on the changed resource.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.ResourceChangeOperationEnum.Types.ResourceChangeOperation ResourceChangeOperation {
       get { return resourceChangeOperation_; }
       set {
@@ -326,6 +341,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. A list of fields that are changed in the returned resource.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.FieldMask ChangedFields {
       get { return changedFields_; }
       set {
@@ -340,6 +356,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The Campaign affected by this change.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Campaign {
       get { return campaign_; }
       set {
@@ -354,6 +371,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The AdGroup affected by this change.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string AdGroup {
       get { return adGroup_; }
       set {
@@ -368,6 +386,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The Feed affected by this change.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Feed {
       get { return feed_; }
       set {
@@ -382,6 +401,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The FeedItem affected by this change.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string FeedItem {
       get { return feedItem_; }
       set {
@@ -396,6 +416,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The Asset affected by this change.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Asset {
       get { return asset_; }
       set {
@@ -404,11 +425,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ChangeEvent);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ChangeEvent other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -435,6 +458,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
@@ -459,11 +483,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -536,6 +562,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
@@ -604,6 +631,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ResourceName.Length != 0) {
@@ -658,6 +686,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ChangeEvent other) {
       if (other == null) {
         return;
@@ -720,6 +749,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -806,6 +836,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -890,6 +921,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     #region Nested types
     /// <summary>Container for nested types declared in the ChangeEvent message type.</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static partial class Types {
       /// <summary>
       /// A wrapper proto presenting all supported resources.
@@ -903,19 +935,23 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         private static readonly pb::MessageParser<ChangedResource> _parser = new pb::MessageParser<ChangedResource>(() => new ChangedResource());
         private pb::UnknownFieldSet _unknownFields;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pb::MessageParser<ChangedResource> Parser { get { return _parser; } }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
           get { return global::Google.Ads.GoogleAds.V8.Resources.ChangeEvent.Descriptor.NestedTypes[0]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         pbr::MessageDescriptor pb::IMessage.Descriptor {
           get { return Descriptor; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public ChangedResource() {
           OnConstruction();
         }
@@ -923,6 +959,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         partial void OnConstruction();
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public ChangedResource(ChangedResource other) : this() {
           ad_ = other.ad_ != null ? other.ad_.Clone() : null;
           adGroup_ = other.adGroup_ != null ? other.adGroup_.Clone() : null;
@@ -944,6 +981,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public ChangedResource Clone() {
           return new ChangedResource(this);
         }
@@ -955,6 +993,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// Output only. Set if change_resource_type == AD.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public global::Google.Ads.GoogleAds.V8.Resources.Ad Ad {
           get { return ad_; }
           set {
@@ -969,6 +1008,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// Output only. Set if change_resource_type == AD_GROUP.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public global::Google.Ads.GoogleAds.V8.Resources.AdGroup AdGroup {
           get { return adGroup_; }
           set {
@@ -983,6 +1023,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// Output only. Set if change_resource_type == AD_GROUP_CRITERION.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public global::Google.Ads.GoogleAds.V8.Resources.AdGroupCriterion AdGroupCriterion {
           get { return adGroupCriterion_; }
           set {
@@ -997,6 +1038,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// Output only. Set if change_resource_type == CAMPAIGN.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public global::Google.Ads.GoogleAds.V8.Resources.Campaign Campaign {
           get { return campaign_; }
           set {
@@ -1011,6 +1053,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// Output only. Set if change_resource_type == CAMPAIGN_BUDGET.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public global::Google.Ads.GoogleAds.V8.Resources.CampaignBudget CampaignBudget {
           get { return campaignBudget_; }
           set {
@@ -1025,6 +1068,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// Output only. Set if change_resource_type == AD_GROUP_BID_MODIFIER.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public global::Google.Ads.GoogleAds.V8.Resources.AdGroupBidModifier AdGroupBidModifier {
           get { return adGroupBidModifier_; }
           set {
@@ -1039,6 +1083,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// Output only. Set if change_resource_type == CAMPAIGN_CRITERION.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public global::Google.Ads.GoogleAds.V8.Resources.CampaignCriterion CampaignCriterion {
           get { return campaignCriterion_; }
           set {
@@ -1053,6 +1098,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// Output only. Set if change_resource_type == FEED.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public global::Google.Ads.GoogleAds.V8.Resources.Feed Feed {
           get { return feed_; }
           set {
@@ -1067,6 +1113,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// Output only. Set if change_resource_type == FEED_ITEM.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public global::Google.Ads.GoogleAds.V8.Resources.FeedItem FeedItem {
           get { return feedItem_; }
           set {
@@ -1081,6 +1128,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// Output only. Set if change_resource_type == CAMPAIGN_FEED.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public global::Google.Ads.GoogleAds.V8.Resources.CampaignFeed CampaignFeed {
           get { return campaignFeed_; }
           set {
@@ -1095,6 +1143,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// Output only. Set if change_resource_type == AD_GROUP_FEED.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public global::Google.Ads.GoogleAds.V8.Resources.AdGroupFeed AdGroupFeed {
           get { return adGroupFeed_; }
           set {
@@ -1109,6 +1158,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// Output only. Set if change_resource_type == AD_GROUP_AD.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public global::Google.Ads.GoogleAds.V8.Resources.AdGroupAd AdGroupAd {
           get { return adGroupAd_; }
           set {
@@ -1123,6 +1173,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// Output only. Set if change_resource_type == ASSET.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public global::Google.Ads.GoogleAds.V8.Resources.Asset Asset {
           get { return asset_; }
           set {
@@ -1137,6 +1188,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// Output only. Set if change_resource_type == CUSTOMER_ASSET.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public global::Google.Ads.GoogleAds.V8.Resources.CustomerAsset CustomerAsset {
           get { return customerAsset_; }
           set {
@@ -1151,6 +1203,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// Output only. Set if change_resource_type == CAMPAIGN_ASSET.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public global::Google.Ads.GoogleAds.V8.Resources.CampaignAsset CampaignAsset {
           get { return campaignAsset_; }
           set {
@@ -1165,6 +1218,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// Output only. Set if change_resource_type == AD_GROUP_ASSET.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public global::Google.Ads.GoogleAds.V8.Resources.AdGroupAsset AdGroupAsset {
           get { return adGroupAsset_; }
           set {
@@ -1173,11 +1227,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override bool Equals(object other) {
           return Equals(other as ChangedResource);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool Equals(ChangedResource other) {
           if (ReferenceEquals(other, null)) {
             return false;
@@ -1205,6 +1261,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override int GetHashCode() {
           int hash = 1;
           if (ad_ != null) hash ^= Ad.GetHashCode();
@@ -1230,11 +1287,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override string ToString() {
           return pb::JsonFormatter.ToDiagnosticString(this);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void WriteTo(pb::CodedOutputStream output) {
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           output.WriteRawMessage(this);
@@ -1311,6 +1370,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
           if (ad_ != null) {
             output.WriteRawTag(10);
@@ -1383,6 +1443,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         #endif
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public int CalculateSize() {
           int size = 0;
           if (ad_ != null) {
@@ -1440,6 +1501,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void MergeFrom(ChangedResource other) {
           if (other == null) {
             return;
@@ -1544,6 +1606,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void MergeFrom(pb::CodedInputStream input) {
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           input.ReadRawMessage(this);
@@ -1673,6 +1736,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {

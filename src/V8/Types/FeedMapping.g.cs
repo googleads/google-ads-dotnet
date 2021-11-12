@@ -168,19 +168,23 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     private static readonly pb::MessageParser<FeedMapping> _parser = new pb::MessageParser<FeedMapping>(() => new FeedMapping());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<FeedMapping> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Ads.GoogleAds.V8.Resources.FeedMappingReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FeedMapping() {
       OnConstruction();
     }
@@ -188,6 +192,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FeedMapping(FeedMapping other) : this() {
       resourceName_ = other.resourceName_;
       feed_ = other.feed_;
@@ -206,6 +211,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FeedMapping Clone() {
       return new FeedMapping(this);
     }
@@ -220,6 +226,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// `customers/{customer_id}/feedMappings/{feed_id}~{feed_mapping_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ResourceName {
       get { return resourceName_; }
       set {
@@ -234,6 +241,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. The feed of this feed mapping.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Feed {
       get { return feed_ ?? ""; }
       set {
@@ -242,11 +250,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "feed" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasFeed {
       get { return feed_ != null; }
     }
     /// <summary>Clears the value of the "feed" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearFeed() {
       feed_ = null;
     }
@@ -264,6 +274,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// field can be mapped to multiple feed attributes. Required.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Google.Ads.GoogleAds.V8.Resources.AttributeFieldMapping> AttributeFieldMappings {
       get { return attributeFieldMappings_; }
     }
@@ -276,6 +287,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// This field is read-only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.FeedMappingStatusEnum.Types.FeedMappingStatus Status {
       get { return status_; }
       set {
@@ -290,6 +302,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// attributes to placeholder fields).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.PlaceholderTypeEnum.Types.PlaceholderType PlaceholderType {
       get { return targetCase_ == TargetOneofCase.PlaceholderType ? (global::Google.Ads.GoogleAds.V8.Enums.PlaceholderTypeEnum.Types.PlaceholderType) target_ : global::Google.Ads.GoogleAds.V8.Enums.PlaceholderTypeEnum.Types.PlaceholderType.Unspecified; }
       set {
@@ -305,6 +318,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// attributes to criterion fields).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.FeedMappingCriterionTypeEnum.Types.FeedMappingCriterionType CriterionType {
       get { return targetCase_ == TargetOneofCase.CriterionType ? (global::Google.Ads.GoogleAds.V8.Enums.FeedMappingCriterionTypeEnum.Types.FeedMappingCriterionType) target_ : global::Google.Ads.GoogleAds.V8.Enums.FeedMappingCriterionTypeEnum.Types.FeedMappingCriterionType.Unspecified; }
       set {
@@ -322,22 +336,26 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     private TargetOneofCase targetCase_ = TargetOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public TargetOneofCase TargetCase {
       get { return targetCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearTarget() {
       targetCase_ = TargetOneofCase.None;
       target_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as FeedMapping);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(FeedMapping other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -356,6 +374,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
@@ -372,11 +391,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -410,6 +431,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
@@ -439,6 +461,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ResourceName.Length != 0) {
@@ -464,6 +487,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(FeedMapping other) {
       if (other == null) {
         return;
@@ -491,6 +515,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -534,6 +559,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -586,19 +612,23 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<AttributeFieldMapping> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Ads.GoogleAds.V8.Resources.FeedMappingReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AttributeFieldMapping() {
       OnConstruction();
     }
@@ -606,6 +636,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AttributeFieldMapping(AttributeFieldMapping other) : this() {
       _hasBits0 = other._hasBits0;
       feedAttributeId_ = other.feedAttributeId_;
@@ -683,6 +714,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AttributeFieldMapping Clone() {
       return new AttributeFieldMapping(this);
     }
@@ -694,6 +726,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. Feed attribute from which to map.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long FeedAttributeId {
       get { if ((_hasBits0 & 1) != 0) { return feedAttributeId_; } else { return 0L; } }
       set {
@@ -703,11 +736,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "feed_attribute_id" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasFeedAttributeId {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "feed_attribute_id" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearFeedAttributeId() {
       _hasBits0 &= ~1;
     }
@@ -722,6 +757,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// This field is read-only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long FieldId {
       get { if ((_hasBits0 & 2) != 0) { return fieldId_; } else { return 0L; } }
       set {
@@ -731,11 +767,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "field_id" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasFieldId {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "field_id" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearFieldId() {
       _hasBits0 &= ~2;
     }
@@ -746,6 +784,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. Sitelink Placeholder Fields.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.SitelinkPlaceholderFieldEnum.Types.SitelinkPlaceholderField SitelinkField {
       get { return fieldCase_ == FieldOneofCase.SitelinkField ? (global::Google.Ads.GoogleAds.V8.Enums.SitelinkPlaceholderFieldEnum.Types.SitelinkPlaceholderField) field_ : global::Google.Ads.GoogleAds.V8.Enums.SitelinkPlaceholderFieldEnum.Types.SitelinkPlaceholderField.Unspecified; }
       set {
@@ -760,6 +799,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. Call Placeholder Fields.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.CallPlaceholderFieldEnum.Types.CallPlaceholderField CallField {
       get { return fieldCase_ == FieldOneofCase.CallField ? (global::Google.Ads.GoogleAds.V8.Enums.CallPlaceholderFieldEnum.Types.CallPlaceholderField) field_ : global::Google.Ads.GoogleAds.V8.Enums.CallPlaceholderFieldEnum.Types.CallPlaceholderField.Unspecified; }
       set {
@@ -774,6 +814,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. App Placeholder Fields.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.AppPlaceholderFieldEnum.Types.AppPlaceholderField AppField {
       get { return fieldCase_ == FieldOneofCase.AppField ? (global::Google.Ads.GoogleAds.V8.Enums.AppPlaceholderFieldEnum.Types.AppPlaceholderField) field_ : global::Google.Ads.GoogleAds.V8.Enums.AppPlaceholderFieldEnum.Types.AppPlaceholderField.Unspecified; }
       set {
@@ -788,6 +829,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. Location Placeholder Fields. This field is read-only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.LocationPlaceholderFieldEnum.Types.LocationPlaceholderField LocationField {
       get { return fieldCase_ == FieldOneofCase.LocationField ? (global::Google.Ads.GoogleAds.V8.Enums.LocationPlaceholderFieldEnum.Types.LocationPlaceholderField) field_ : global::Google.Ads.GoogleAds.V8.Enums.LocationPlaceholderFieldEnum.Types.LocationPlaceholderField.Unspecified; }
       set {
@@ -802,6 +844,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. Affiliate Location Placeholder Fields. This field is read-only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.AffiliateLocationPlaceholderFieldEnum.Types.AffiliateLocationPlaceholderField AffiliateLocationField {
       get { return fieldCase_ == FieldOneofCase.AffiliateLocationField ? (global::Google.Ads.GoogleAds.V8.Enums.AffiliateLocationPlaceholderFieldEnum.Types.AffiliateLocationPlaceholderField) field_ : global::Google.Ads.GoogleAds.V8.Enums.AffiliateLocationPlaceholderFieldEnum.Types.AffiliateLocationPlaceholderField.Unspecified; }
       set {
@@ -816,6 +859,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. Callout Placeholder Fields.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.CalloutPlaceholderFieldEnum.Types.CalloutPlaceholderField CalloutField {
       get { return fieldCase_ == FieldOneofCase.CalloutField ? (global::Google.Ads.GoogleAds.V8.Enums.CalloutPlaceholderFieldEnum.Types.CalloutPlaceholderField) field_ : global::Google.Ads.GoogleAds.V8.Enums.CalloutPlaceholderFieldEnum.Types.CalloutPlaceholderField.Unspecified; }
       set {
@@ -830,6 +874,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. Structured Snippet Placeholder Fields.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.StructuredSnippetPlaceholderFieldEnum.Types.StructuredSnippetPlaceholderField StructuredSnippetField {
       get { return fieldCase_ == FieldOneofCase.StructuredSnippetField ? (global::Google.Ads.GoogleAds.V8.Enums.StructuredSnippetPlaceholderFieldEnum.Types.StructuredSnippetPlaceholderField) field_ : global::Google.Ads.GoogleAds.V8.Enums.StructuredSnippetPlaceholderFieldEnum.Types.StructuredSnippetPlaceholderField.Unspecified; }
       set {
@@ -844,6 +889,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. Message Placeholder Fields.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.MessagePlaceholderFieldEnum.Types.MessagePlaceholderField MessageField {
       get { return fieldCase_ == FieldOneofCase.MessageField ? (global::Google.Ads.GoogleAds.V8.Enums.MessagePlaceholderFieldEnum.Types.MessagePlaceholderField) field_ : global::Google.Ads.GoogleAds.V8.Enums.MessagePlaceholderFieldEnum.Types.MessagePlaceholderField.Unspecified; }
       set {
@@ -858,6 +904,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. Price Placeholder Fields.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.PricePlaceholderFieldEnum.Types.PricePlaceholderField PriceField {
       get { return fieldCase_ == FieldOneofCase.PriceField ? (global::Google.Ads.GoogleAds.V8.Enums.PricePlaceholderFieldEnum.Types.PricePlaceholderField) field_ : global::Google.Ads.GoogleAds.V8.Enums.PricePlaceholderFieldEnum.Types.PricePlaceholderField.Unspecified; }
       set {
@@ -872,6 +919,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. Promotion Placeholder Fields.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.PromotionPlaceholderFieldEnum.Types.PromotionPlaceholderField PromotionField {
       get { return fieldCase_ == FieldOneofCase.PromotionField ? (global::Google.Ads.GoogleAds.V8.Enums.PromotionPlaceholderFieldEnum.Types.PromotionPlaceholderField) field_ : global::Google.Ads.GoogleAds.V8.Enums.PromotionPlaceholderFieldEnum.Types.PromotionPlaceholderField.Unspecified; }
       set {
@@ -886,6 +934,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. Ad Customizer Placeholder Fields
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.AdCustomizerPlaceholderFieldEnum.Types.AdCustomizerPlaceholderField AdCustomizerField {
       get { return fieldCase_ == FieldOneofCase.AdCustomizerField ? (global::Google.Ads.GoogleAds.V8.Enums.AdCustomizerPlaceholderFieldEnum.Types.AdCustomizerPlaceholderField) field_ : global::Google.Ads.GoogleAds.V8.Enums.AdCustomizerPlaceholderFieldEnum.Types.AdCustomizerPlaceholderField.Unspecified; }
       set {
@@ -900,6 +949,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. Dynamic Search Ad Page Feed Fields.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.DsaPageFeedCriterionFieldEnum.Types.DsaPageFeedCriterionField DsaPageFeedField {
       get { return fieldCase_ == FieldOneofCase.DsaPageFeedField ? (global::Google.Ads.GoogleAds.V8.Enums.DsaPageFeedCriterionFieldEnum.Types.DsaPageFeedCriterionField) field_ : global::Google.Ads.GoogleAds.V8.Enums.DsaPageFeedCriterionFieldEnum.Types.DsaPageFeedCriterionField.Unspecified; }
       set {
@@ -914,6 +964,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. Location Target Fields.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.LocationExtensionTargetingCriterionFieldEnum.Types.LocationExtensionTargetingCriterionField LocationExtensionTargetingField {
       get { return fieldCase_ == FieldOneofCase.LocationExtensionTargetingField ? (global::Google.Ads.GoogleAds.V8.Enums.LocationExtensionTargetingCriterionFieldEnum.Types.LocationExtensionTargetingCriterionField) field_ : global::Google.Ads.GoogleAds.V8.Enums.LocationExtensionTargetingCriterionFieldEnum.Types.LocationExtensionTargetingCriterionField.Unspecified; }
       set {
@@ -928,6 +979,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. Education Placeholder Fields
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.EducationPlaceholderFieldEnum.Types.EducationPlaceholderField EducationField {
       get { return fieldCase_ == FieldOneofCase.EducationField ? (global::Google.Ads.GoogleAds.V8.Enums.EducationPlaceholderFieldEnum.Types.EducationPlaceholderField) field_ : global::Google.Ads.GoogleAds.V8.Enums.EducationPlaceholderFieldEnum.Types.EducationPlaceholderField.Unspecified; }
       set {
@@ -942,6 +994,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. Flight Placeholder Fields
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.FlightPlaceholderFieldEnum.Types.FlightPlaceholderField FlightField {
       get { return fieldCase_ == FieldOneofCase.FlightField ? (global::Google.Ads.GoogleAds.V8.Enums.FlightPlaceholderFieldEnum.Types.FlightPlaceholderField) field_ : global::Google.Ads.GoogleAds.V8.Enums.FlightPlaceholderFieldEnum.Types.FlightPlaceholderField.Unspecified; }
       set {
@@ -956,6 +1009,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. Custom Placeholder Fields
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.CustomPlaceholderFieldEnum.Types.CustomPlaceholderField CustomField {
       get { return fieldCase_ == FieldOneofCase.CustomField ? (global::Google.Ads.GoogleAds.V8.Enums.CustomPlaceholderFieldEnum.Types.CustomPlaceholderField) field_ : global::Google.Ads.GoogleAds.V8.Enums.CustomPlaceholderFieldEnum.Types.CustomPlaceholderField.Unspecified; }
       set {
@@ -970,6 +1024,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. Hotel Placeholder Fields
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.HotelPlaceholderFieldEnum.Types.HotelPlaceholderField HotelField {
       get { return fieldCase_ == FieldOneofCase.HotelField ? (global::Google.Ads.GoogleAds.V8.Enums.HotelPlaceholderFieldEnum.Types.HotelPlaceholderField) field_ : global::Google.Ads.GoogleAds.V8.Enums.HotelPlaceholderFieldEnum.Types.HotelPlaceholderField.Unspecified; }
       set {
@@ -984,6 +1039,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. Real Estate Placeholder Fields
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.RealEstatePlaceholderFieldEnum.Types.RealEstatePlaceholderField RealEstateField {
       get { return fieldCase_ == FieldOneofCase.RealEstateField ? (global::Google.Ads.GoogleAds.V8.Enums.RealEstatePlaceholderFieldEnum.Types.RealEstatePlaceholderField) field_ : global::Google.Ads.GoogleAds.V8.Enums.RealEstatePlaceholderFieldEnum.Types.RealEstatePlaceholderField.Unspecified; }
       set {
@@ -998,6 +1054,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. Travel Placeholder Fields
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.TravelPlaceholderFieldEnum.Types.TravelPlaceholderField TravelField {
       get { return fieldCase_ == FieldOneofCase.TravelField ? (global::Google.Ads.GoogleAds.V8.Enums.TravelPlaceholderFieldEnum.Types.TravelPlaceholderField) field_ : global::Google.Ads.GoogleAds.V8.Enums.TravelPlaceholderFieldEnum.Types.TravelPlaceholderField.Unspecified; }
       set {
@@ -1012,6 +1069,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. Local Placeholder Fields
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.LocalPlaceholderFieldEnum.Types.LocalPlaceholderField LocalField {
       get { return fieldCase_ == FieldOneofCase.LocalField ? (global::Google.Ads.GoogleAds.V8.Enums.LocalPlaceholderFieldEnum.Types.LocalPlaceholderField) field_ : global::Google.Ads.GoogleAds.V8.Enums.LocalPlaceholderFieldEnum.Types.LocalPlaceholderField.Unspecified; }
       set {
@@ -1026,6 +1084,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. Job Placeholder Fields
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.JobPlaceholderFieldEnum.Types.JobPlaceholderField JobField {
       get { return fieldCase_ == FieldOneofCase.JobField ? (global::Google.Ads.GoogleAds.V8.Enums.JobPlaceholderFieldEnum.Types.JobPlaceholderField) field_ : global::Google.Ads.GoogleAds.V8.Enums.JobPlaceholderFieldEnum.Types.JobPlaceholderField.Unspecified; }
       set {
@@ -1040,6 +1099,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. Image Placeholder Fields
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.ImagePlaceholderFieldEnum.Types.ImagePlaceholderField ImageField {
       get { return fieldCase_ == FieldOneofCase.ImageField ? (global::Google.Ads.GoogleAds.V8.Enums.ImagePlaceholderFieldEnum.Types.ImagePlaceholderField) field_ : global::Google.Ads.GoogleAds.V8.Enums.ImagePlaceholderFieldEnum.Types.ImagePlaceholderField.Unspecified; }
       set {
@@ -1077,22 +1137,26 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     private FieldOneofCase fieldCase_ = FieldOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FieldOneofCase FieldCase {
       get { return fieldCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearField() {
       fieldCase_ = FieldOneofCase.None;
       field_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as AttributeFieldMapping);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(AttributeFieldMapping other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1129,6 +1193,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (HasFeedAttributeId) hash ^= FeedAttributeId.GetHashCode();
@@ -1163,11 +1228,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1276,6 +1343,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (fieldCase_ == FieldOneofCase.SitelinkField) {
         output.WriteRawTag(24);
@@ -1380,6 +1448,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (HasFeedAttributeId) {
@@ -1461,6 +1530,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(AttributeFieldMapping other) {
       if (other == null) {
         return;
@@ -1544,6 +1614,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1679,6 +1750,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {

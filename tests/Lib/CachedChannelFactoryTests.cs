@@ -38,7 +38,7 @@ namespace Google.Ads.GoogleAds.Tests.Lib
             Channel channel1 = factory.GetChannel(config);
             Channel channel2 = factory.GetChannel(config);
 
-            Assert.AreEqual(channel1, channel2);
+            Assert.AreSame(channel1, channel2);
         }
 
         /// <summary>
@@ -56,7 +56,7 @@ namespace Google.Ads.GoogleAds.Tests.Lib
             Channel channel1 = factory.GetChannel(configNoCache);
             Channel channel2 = factory.GetChannel(configNoCache);
 
-            Assert.AreNotEqual(channel1, channel2);
+            Assert.AreNotSame(channel1, channel2);
         }
 
         /// <summary>
@@ -69,7 +69,7 @@ namespace Google.Ads.GoogleAds.Tests.Lib
             channel1.ShutdownAsync().Wait();
 
             Channel channel2 = factory.GetChannel(config);
-            Assert.AreNotEqual(channel1, channel2);
+            Assert.AreNotSame(channel1, channel2);
         }
     }
 }

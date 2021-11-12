@@ -61,6 +61,12 @@ namespace Google.Ads.GoogleAds.V8.Services
         /// <item><description>Retry delay multiplier: 1.3</description></item>
         /// <item><description>Retry maximum delay: 60000 milliseconds.</description></item>
         /// <item><description>Maximum attempts: Unlimited</description></item>
+        /// <item>
+        /// <description>
+        /// Retriable status codes: <see cref="grpccore::StatusCode.Unavailable"/>,
+        /// <see cref="grpccore::StatusCode.DeadlineExceeded"/>.
+        /// </description>
+        /// </item>
         /// <item><description>Timeout: 3600 seconds.</description></item>
         /// </list>
         /// </remarks>
@@ -76,6 +82,12 @@ namespace Google.Ads.GoogleAds.V8.Services
         /// <item><description>Retry delay multiplier: 1.3</description></item>
         /// <item><description>Retry maximum delay: 60000 milliseconds.</description></item>
         /// <item><description>Maximum attempts: Unlimited</description></item>
+        /// <item>
+        /// <description>
+        /// Retriable status codes: <see cref="grpccore::StatusCode.Unavailable"/>,
+        /// <see cref="grpccore::StatusCode.DeadlineExceeded"/>.
+        /// </description>
+        /// </item>
         /// <item><description>Timeout: 3600 seconds.</description></item>
         /// </list>
         /// </remarks>
@@ -94,6 +106,12 @@ namespace Google.Ads.GoogleAds.V8.Services
     {
         /// <summary>The settings to use for RPCs, or <c>null</c> for the default settings.</summary>
         public UserListServiceSettings Settings { get; set; }
+
+        /// <summary>Creates a new builder with default settings.</summary>
+        public UserListServiceClientBuilder()
+        {
+            UseJwtAccessWithScopes = UserListServiceClient.UseJwtAccessWithScopes;
+        }
 
         partial void InterceptBuild(ref UserListServiceClient client);
 
@@ -166,7 +184,19 @@ namespace Google.Ads.GoogleAds.V8.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+
+        internal static bool UseJwtAccessWithScopes
+        {
+            get
+            {
+                bool useJwtAccessWithScopes = true;
+                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
+                return useJwtAccessWithScopes;
+            }
+        }
+
+        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
 
         /// <summary>
         /// Asynchronously creates a <see cref="UserListServiceClient"/> using the default credentials, endpoint and

@@ -107,19 +107,23 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<UserList> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Ads.GoogleAds.V8.Resources.UserListReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public UserList() {
       OnConstruction();
     }
@@ -127,6 +131,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public UserList(UserList other) : this() {
       _hasBits0 = other._hasBits0;
       resourceName_ = other.resourceName_;
@@ -170,6 +175,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public UserList Clone() {
       return new UserList(this);
     }
@@ -184,6 +190,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// `customers/{customer_id}/userLists/{user_list_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ResourceName {
       get { return resourceName_; }
       set {
@@ -198,6 +205,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. Id of the user list.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long Id {
       get { if ((_hasBits0 & 2) != 0) { return id_; } else { return 0L; } }
       set {
@@ -207,11 +215,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "id" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasId {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "id" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearId() {
       _hasBits0 &= ~2;
     }
@@ -227,6 +237,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// This field is read-only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool ReadOnly {
       get { if ((_hasBits0 & 4) != 0) { return readOnly_; } else { return false; } }
       set {
@@ -236,11 +247,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "read_only" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasReadOnly {
       get { return (_hasBits0 & 4) != 0; }
     }
     /// <summary>Clears the value of the "read_only" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearReadOnly() {
       _hasBits0 &= ~4;
     }
@@ -253,6 +266,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// may not be unique (e.g. if access_reason=SHARED)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
       get { return name_ ?? ""; }
       set {
@@ -261,11 +275,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "name" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasName {
       get { return name_ != null; }
     }
     /// <summary>Clears the value of the "name" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearName() {
       name_ = null;
     }
@@ -277,6 +293,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Description of this user list.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Description {
       get { return description_ ?? ""; }
       set {
@@ -285,11 +302,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "description" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasDescription {
       get { return description_ != null; }
     }
     /// <summary>Clears the value of the "description" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearDescription() {
       description_ = null;
     }
@@ -303,6 +322,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// targeted to.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.UserListMembershipStatusEnum.Types.UserListMembershipStatus MembershipStatus {
       get { return membershipStatus_; }
       set {
@@ -318,6 +338,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// IDs on their systems.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string IntegrationCode {
       get { return integrationCode_ ?? ""; }
       set {
@@ -326,11 +347,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "integration_code" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasIntegrationCode {
       get { return integrationCode_ != null; }
     }
     /// <summary>Clears the value of the "integration_code" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearIntegrationCode() {
       integrationCode_ = null;
     }
@@ -347,6 +370,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// It'll be ignored for logical_user_list.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long MembershipLifeSpan {
       get { if ((_hasBits0 & 8) != 0) { return membershipLifeSpan_; } else { return 0L; } }
       set {
@@ -356,11 +380,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "membership_life_span" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasMembershipLifeSpan {
       get { return (_hasBits0 & 8) != 0; }
     }
     /// <summary>Clears the value of the "membership_life_span" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearMembershipLifeSpan() {
       _hasBits0 &= ~8;
     }
@@ -375,6 +401,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// This field is read-only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long SizeForDisplay {
       get { if ((_hasBits0 & 16) != 0) { return sizeForDisplay_; } else { return 0L; } }
       set {
@@ -384,11 +411,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "size_for_display" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasSizeForDisplay {
       get { return (_hasBits0 & 16) != 0; }
     }
     /// <summary>Clears the value of the "size_for_display" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearSizeForDisplay() {
       _hasBits0 &= ~16;
     }
@@ -403,6 +432,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// This field is read-only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.UserListSizeRangeEnum.Types.UserListSizeRange SizeRangeForDisplay {
       get { return sizeRangeForDisplay_; }
       set {
@@ -421,6 +451,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// This field is read-only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long SizeForSearch {
       get { if ((_hasBits0 & 32) != 0) { return sizeForSearch_; } else { return 0L; } }
       set {
@@ -430,11 +461,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "size_for_search" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasSizeForSearch {
       get { return (_hasBits0 & 32) != 0; }
     }
     /// <summary>Clears the value of the "size_for_search" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearSizeForSearch() {
       _hasBits0 &= ~32;
     }
@@ -448,6 +481,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// This field is read-only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.UserListSizeRangeEnum.Types.UserListSizeRange SizeRangeForSearch {
       get { return sizeRangeForSearch_; }
       set {
@@ -464,6 +498,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// This field is read-only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.UserListTypeEnum.Types.UserListType Type {
       get { return type_; }
       set {
@@ -480,6 +515,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// and will be cleared once the list membership status becomes open.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.UserListClosingReasonEnum.Types.UserListClosingReason ClosingReason {
       get { return closingReason_; }
       set {
@@ -497,6 +533,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// This field is read-only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.AccessReasonEnum.Types.AccessReason AccessReason {
       get { return accessReason_; }
       set {
@@ -514,6 +551,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// The default value of this field is set to ENABLED.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.UserListAccessStatusEnum.Types.UserListAccessStatus AccountUserListStatus {
       get { return accountUserListStatus_; }
       set {
@@ -528,6 +566,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Indicates if this user list is eligible for Google Search Network.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool EligibleForSearch {
       get { if ((_hasBits0 & 64) != 0) { return eligibleForSearch_; } else { return false; } }
       set {
@@ -537,11 +576,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "eligible_for_search" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasEligibleForSearch {
       get { return (_hasBits0 & 64) != 0; }
     }
     /// <summary>Clears the value of the "eligible_for_search" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearEligibleForSearch() {
       _hasBits0 &= ~64;
     }
@@ -555,6 +596,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// This field is read-only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool EligibleForDisplay {
       get { if ((_hasBits0 & 128) != 0) { return eligibleForDisplay_; } else { return false; } }
       set {
@@ -564,11 +606,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "eligible_for_display" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasEligibleForDisplay {
       get { return (_hasBits0 & 128) != 0; }
     }
     /// <summary>Clears the value of the "eligible_for_display" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearEligibleForDisplay() {
       _hasBits0 &= ~128;
     }
@@ -584,6 +628,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// This field is read-only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int MatchRatePercentage {
       get { if ((_hasBits0 & 1) != 0) { return matchRatePercentage_; } else { return 0; } }
       set {
@@ -593,11 +638,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "match_rate_percentage" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasMatchRatePercentage {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "match_rate_percentage" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearMatchRatePercentage() {
       _hasBits0 &= ~1;
     }
@@ -608,6 +655,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// User list of CRM users provided by the advertiser.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Common.CrmBasedUserListInfo CrmBasedUserList {
       get { return userListCase_ == UserListOneofCase.CrmBasedUserList ? (global::Google.Ads.GoogleAds.V8.Common.CrmBasedUserListInfo) userList_ : null; }
       set {
@@ -623,6 +671,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// These lists are readonly and automatically created by google.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Common.SimilarUserListInfo SimilarUserList {
       get { return userListCase_ == UserListOneofCase.SimilarUserList ? (global::Google.Ads.GoogleAds.V8.Common.SimilarUserListInfo) userList_ : null; }
       set {
@@ -637,6 +686,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// User list generated by a rule.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Common.RuleBasedUserListInfo RuleBasedUserList {
       get { return userListCase_ == UserListOneofCase.RuleBasedUserList ? (global::Google.Ads.GoogleAds.V8.Common.RuleBasedUserListInfo) userList_ : null; }
       set {
@@ -651,6 +701,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// User list that is a custom combination of user lists and user interests.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Common.LogicalUserListInfo LogicalUserList {
       get { return userListCase_ == UserListOneofCase.LogicalUserList ? (global::Google.Ads.GoogleAds.V8.Common.LogicalUserListInfo) userList_ : null; }
       set {
@@ -665,6 +716,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// User list targeting as a collection of conversion or remarketing actions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Common.BasicUserListInfo BasicUserList {
       get { return userListCase_ == UserListOneofCase.BasicUserList ? (global::Google.Ads.GoogleAds.V8.Common.BasicUserListInfo) userList_ : null; }
       set {
@@ -685,22 +737,26 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     private UserListOneofCase userListCase_ = UserListOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public UserListOneofCase UserListCase {
       get { return userListCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearUserList() {
       userListCase_ = UserListOneofCase.None;
       userList_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as UserList);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(UserList other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -737,6 +793,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
@@ -771,11 +828,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -884,6 +943,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
@@ -988,6 +1048,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ResourceName.Length != 0) {
@@ -1069,6 +1130,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(UserList other) {
       if (other == null) {
         return;
@@ -1167,6 +1229,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1305,6 +1368,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {

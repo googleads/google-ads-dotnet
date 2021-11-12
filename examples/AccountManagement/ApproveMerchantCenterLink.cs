@@ -15,14 +15,14 @@
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V8.Errors;
-using Google.Ads.GoogleAds.V8.Resources;
-using Google.Ads.GoogleAds.V8.Services;
+using Google.Ads.GoogleAds.V9.Errors;
+using Google.Ads.GoogleAds.V9.Resources;
+using Google.Ads.GoogleAds.V9.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V8.Enums.MerchantCenterLinkStatusEnum.Types;
+using static Google.Ads.GoogleAds.V9.Enums.MerchantCenterLinkStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V8
+namespace Google.Ads.GoogleAds.Examples.V9
 {
     /// <summary>
     /// This code example demonstrates how to approve a Merchant Center link request.
@@ -109,7 +109,7 @@ namespace Google.Ads.GoogleAds.Examples.V8
         {
             // Get the MerchantCenterLink.
             MerchantCenterLinkServiceClient merchantCenterLinkService = client.GetService(
-                Services.V8.MerchantCenterLinkService);
+                Services.V9.MerchantCenterLinkService);
 
             try
             {

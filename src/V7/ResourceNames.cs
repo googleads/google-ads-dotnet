@@ -15,9 +15,11 @@
 using System;
 using System.Text;
 using static Google.Ads.GoogleAds.V7.Enums.AssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.ConversionActionCategoryEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.ExtensionTypeEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.FeedItemTargetTypeEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.PlaceholderTypeEnum.Types;
+using static Google.Ads.GoogleAds.V7.Enums.ProductBiddingCategoryLevelEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.SimulationModificationMethodEnum.Types;
 using static Google.Ads.GoogleAds.V7.Enums.SimulationTypeEnum.Types;
 
@@ -30,9 +32,9 @@ namespace Google.Ads.GoogleAds.V7.Errors
     /// </summary>
     public class ResourceNames
     {
-        private static string Base64Encode(string text)
+        public static string AccessibleBiddingStrategy(long customerId, long biddingStrategyId)
         {
-            return Convert.ToBase64String(Encoding.UTF8.GetBytes(text));
+            return $"customers/{customerId}/accessibleBiddingStrategies/{biddingStrategyId}";
         }
 
         public static string AccountBudgetProposal(long customerId, long accountBudgetProposalId)
@@ -45,6 +47,11 @@ namespace Google.Ads.GoogleAds.V7.Errors
             return $"customers/{customerId}/accountLinks/{accountLinkId}";
         }
 
+        public static string Ad(long customerId, long adId)
+        {
+            return $"customers/{customerId}/ads/{adId}";
+        }
+
         public static string AdGroup(long customerId, long adGroupId)
         {
             return $"customers/{customerId}/adGroups/{adGroupId}";
@@ -53,11 +60,6 @@ namespace Google.Ads.GoogleAds.V7.Errors
         public static string AdGroupAd(long customerId, long adGroupId, long adId)
         {
             return $"customers/{customerId}/adGroupAds/{adGroupId}~{adId}";
-        }
-
-        public static string Ad(long customerId, long adId)
-        {
-            return $"customers/{customerId}/ads/{adId}";
         }
 
         public static string AdGroupAdLabel(long customerId, long adGroupId, long adId,
@@ -88,6 +90,13 @@ namespace Google.Ads.GoogleAds.V7.Errors
             return $"customers/{customerId}/adGroupCriteria/{adGroupId}~{criterionId}";
         }
 
+        public static string AdGroupCriterionCustomizer(long customerId, long adGroupId,
+            long criterionId, long customizerAttributeId)
+        {
+            return $"customers/{customerId}/adGroupCriterionCustomizers/{adGroupId}~" +
+                $"{criterionId}~{customizerAttributeId}";
+        }
+
         public static string AdGroupCriterionLabel(long customerId, long adGroupId,
             long criterionId, long labelId)
         {
@@ -103,6 +112,13 @@ namespace Google.Ads.GoogleAds.V7.Errors
                 $"{criterionId}~{type.ToString().ToUpper()}~" +
                 $"{modificationMethod.ToString().ToUpper()}~{startDate.ToString("yyyy-MM-dd")}" +
                 $"~{endDate.ToString("yyyy-MM-dd")}";
+        }
+
+        public static string AdGroupCustomizer(long customerId, long adGroupId,
+            long customizerAttributeId)
+        {
+            return $"customers/{customerId}/adGroupCustomizers/{adGroupId}~" +
+                $"{customizerAttributeId}";
         }
 
         public static string AdGroupExtensionSetting(long customerId, long adGroupId,
@@ -138,14 +154,14 @@ namespace Google.Ads.GoogleAds.V7.Errors
                 $"{parameterIndex}";
         }
 
-        public static string AgeRangeView(long customerId, long adGroupId, long criterionId)
-        {
-            return $"customers/{customerId}/ageRangeViews/{adGroupId}~{criterionId}";
-        }
-
         public static string AdScheduleView(long customerId, long campaignId, long criterionId)
         {
             return $"customers/{customerId}/adScheduleViews/{campaignId}~{criterionId}";
+        }
+
+        public static string AgeRangeView(long customerId, long adGroupId, long criterionId)
+        {
+            return $"customers/{customerId}/ageRangeViews/{adGroupId}~{criterionId}";
         }
 
         public static string Asset(long customerId, long assetId)
@@ -153,9 +169,60 @@ namespace Google.Ads.GoogleAds.V7.Errors
             return $"customers/{customerId}/assets/{assetId}";
         }
 
+        public static string AssetFieldTypeView(long customerId, AssetFieldType fieldType)
+        {
+            return $"customers/{customerId}/assetFieldTypeViews/{fieldType.ToString().ToUpper()}";
+        }
+
+        public static string AssetGroup(long customerId, long assetGroupId)
+        {
+            return $"customers/{customerId}/assetGroups/{assetGroupId}";
+        }
+
+        public static string AssetGroupAsset(long customerId, long assetGroupId, long assetId,
+            AssetFieldType fieldType)
+        {
+            return $"customers/{customerId}/assetGroupAssets/{assetGroupId}~{assetId}~" +
+                $"{fieldType.ToString().ToUpper()}";
+        }
+
+        public static string AssetGroupListingGroupFilter(long customerId, long assetGroupId,
+            long listingGroupFilterId)
+        {
+            return $"customers/{customerId}/assetGroupListingGroupFilters/{assetGroupId}~" +
+                $"{listingGroupFilterId}";
+        }
+
+        public static string AssetGroupProductGroupView(long customerId, long assetGroupId,
+            long listingGroupFilterId)
+        {
+            return $"customers/{customerId}/assetGroupProductGroupViews/{assetGroupId}~" +
+                $"{listingGroupFilterId}";
+        }
+
+        public static string AssetSet(long customerId, long assetSetId, long assetId)
+        {
+            return $"customers/{customerId}/assetSets/{assetSetId}";
+        }
+
+        public static string AssetSetAsset(long customerId, long assetSetId, long assetId)
+        {
+            return $"customers/{customerId}/assetSetAssets/{assetSetId}~{assetId}";
+        }
+
         public static string BatchJob(long customerId, long batchJobId)
         {
             return $"customers/{customerId}/batchJobs/{batchJobId}";
+        }
+
+        public static string BiddingDataExclusions(long customerId, long seasonalityEventId)
+        {
+            return $"customers/{customerId}/biddingDataExclusions/{seasonalityEventId}";
+        }
+
+        public static string BiddingSeasonalityAdjustment(long customerId, long seasonalityEventId)
+        {
+            return $"customers/{customerId}/biddingSeasonalityAdjustments/{seasonalityEventId}";
         }
 
         public static string BiddingStrategy(long customerId, long biddingStrategyId)
@@ -187,6 +254,11 @@ namespace Google.Ads.GoogleAds.V7.Errors
             return $"customers/{customerId}/campaignAssets/{campaignAssetId}";
         }
 
+        public static string CampaignAssetSet(long customerId, long campaignId, long assetSetId)
+        {
+            return $"customers/{customerId}/campaignAssetSets/{campaignId}~{assetSetId}";
+        }
+
         public static string CampaignAudienceView(long customerId, long campaignId,
             long criterionId)
         {
@@ -214,8 +286,16 @@ namespace Google.Ads.GoogleAds.V7.Errors
             DateTime startDate, DateTime endDate)
         {
             return $"customers/{customerId}/campaignCriterionSimulations/{campaignId}~" +
-                $"{criterionId}~{type}~{modificationMethod}~{startDate.ToString("yyyy-MM-dd")}~" +
+                $"{criterionId}~{type.ToString().ToUpper()}~" +
+                $"{modificationMethod.ToString().ToUpper()}~{startDate.ToString("yyyy-MM-dd")}~" +
                 $"{endDate.ToString("yyyy-MM-dd")}";
+        }
+
+        public static string CampaignCustomizer(long customerId, long campaignId,
+            long customizerAttributeId)
+        {
+            return $"customers/{customerId}/campaignCustomizers/{campaignId}~" +
+                $"{customizerAttributeId}";
         }
 
         public static string CampaignDraft(long customerId, long baseCampaignId, long draftId)
@@ -254,9 +334,9 @@ namespace Google.Ads.GoogleAds.V7.Errors
             SimulationType type, SimulationModificationMethod modificationMethod,
             DateTime startDate, DateTime endDate)
         {
-            return $"customers/{customerId}/campaignSimulations/{campaignId}~{type}~" +
-                $"{modificationMethod.ToString().ToUpper()}~{startDate.ToString("yyyy-MM-dd")}" +
-                $"~{endDate.ToString("yyyy-MM-dd")}";
+            return $"customers/{customerId}/campaignSimulations/{campaignId}~" +
+                $"{type.ToString().ToUpper()}~{modificationMethod.ToString().ToUpper()}~" +
+                $"{startDate.ToString("yyyy-MM-dd")}~{endDate.ToString("yyyy-MM-dd")}";
         }
 
         public static string CarrierConstant(long criterionId)
@@ -287,13 +367,23 @@ namespace Google.Ads.GoogleAds.V7.Errors
         public static string ConversionCustomVariable(long customerId,
             long conversionCustomVariableId)
         {
-            return $"customers/{customerId}/conversionCustomVariables/{conversionCustomVariableId}";
+            return $"customers/{customerId}/conversionCustomVariables/" +
+                $"{conversionCustomVariableId}";
         }
 
-        public static string CustomerAsset(long customerId, long assetId, AssetFieldType fieldType)
+        public static string ConversionGoalCampaignConfig(long customerId, long campaignId)
         {
-            return $"customers/{customerId}/customerAssets/{assetId}~" +
-                $"{fieldType.ToString().ToUpper()}";
+            return $"customers/{customerId}/conversionGoalCampaignConfigs/{campaignId}";
+        }
+
+        public static string ConversionValueRule(long customerId, long conversionValueRuleId)
+        {
+            return $"customers/{customerId}/conversionValueRules/{conversionValueRuleId}";
+        }
+
+        public static string ConversionValueRuleSet(long customerId, long conversionValueRuleSetId)
+        {
+            return $"customers/{customerId}/conversionValueRuleSets/{conversionValueRuleSetId}";
         }
 
         public static string CurrencyConstant(string currencyCode)
@@ -301,14 +391,20 @@ namespace Google.Ads.GoogleAds.V7.Errors
             return $"currencyConstants/{currencyCode}";
         }
 
-        public static string CustomInterest(long customerId, long customInterestId)
+        public static string CustomConversionGoal(long customerId, long goalId)
         {
-            return $"customers/{customerId}/customInterests/{customInterestId}";
+            return $"customers/{customerId}/customConversionGoals/{goalId}";
         }
 
         public static string Customer(long customerId)
         {
             return $"customers/{customerId}";
+        }
+
+        public static string CustomerAsset(long customerId, long assetId, AssetFieldType fieldType)
+        {
+            return $"customers/{customerId}/customerAssets/{assetId}~" +
+                $"{fieldType.ToString().ToUpper()}";
         }
 
         public static string CustomerClient(long customerId, long clientCustomerId)
@@ -319,7 +415,13 @@ namespace Google.Ads.GoogleAds.V7.Errors
         public static string CustomerClientLink(long customerId, long clientCustomerId,
             long managerLinkId)
         {
-            return $"customers/{customerId}/customerClientLinks/{clientCustomerId}~{managerLinkId}";
+            return $"customers/{customerId}/customerClientLinks/" +
+                $"{clientCustomerId}~{managerLinkId}";
+        }
+
+        public static string CustomerCustomizer(long customerId, long customizerAttributeId)
+        {
+            return $"customers/{customerId}/customerCustomizers/{customizerAttributeId}";
         }
 
         public static string CustomerExtensionSetting(long customerId, ExtensionType extensionType)
@@ -356,8 +458,25 @@ namespace Google.Ads.GoogleAds.V7.Errors
         }
 
         public static string CustomerUserAccessInvitation(long customerId, long invitationId)
+
         {
             return $"customers/{customerId}/customerUserAccessInvitations/{invitationId}";
+        }
+
+        public static string CustomInterest(long customerId, long customInterestId)
+        {
+            return $"customers/{customerId}/customInterests/{customInterestId}";
+        }
+
+        public static string CustomizerAttribute(long customerId,
+            long customizerAttributeId)
+        {
+            return $"customers/{customerId}/customizerAttributes/{customizerAttributeId}";
+        }
+
+        public static string DetailedDemographic(long customerId, long detailedDemographicId)
+        {
+            return $"customers/{customerId}/detailedDemographics/{detailedDemographicId}";
         }
 
         public static string DetailPlacementView(long customerId, long adGroupId, string placement)
@@ -366,7 +485,8 @@ namespace Google.Ads.GoogleAds.V7.Errors
                 $"{Base64Encode(placement)}";
         }
 
-        public static string DisplayKeywordView(long customerId, long adGroupId, string criterionId)
+        public static string DisplayKeywordView(long customerId, long adGroupId,
+            string criterionId)
         {
             return $"customers/{customerId}/displayKeywordViews/{adGroupId}~{criterionId}";
         }
@@ -388,7 +508,8 @@ namespace Google.Ads.GoogleAds.V7.Errors
         public static string ExpandedLandingPageView(long customerId,
             string expandedFinalUrlFingerprint)
         {
-            return $"customers/{customerId}/expandedLandingPageViews/{expandedFinalUrlFingerprint}";
+            return $"customers/{customerId}/expandedLandingPageViews/" +
+                $"{expandedFinalUrlFingerprint}";
         }
 
         public static string ExtensionFeedItem(long customerId, long feedItemId)
@@ -406,6 +527,18 @@ namespace Google.Ads.GoogleAds.V7.Errors
             return $"customers/{customerId}/feedItems/{feedId}~{feedItemId}";
         }
 
+        public static string FeedItemSet(long customerId, long feedId, long feedItemSetId)
+        {
+            return $"customers/{customerId}/feedItemSets/{feedId}~{feedItemSetId}";
+        }
+
+        public static string FeedItemSetLink(long customerId, long feedId, long feedItemId,
+            long feedItemSetId)
+        {
+            return $"customers/{customerId}/feedItemSetLinks/" +
+                $"{feedId}~{feedItemId}~{feedItemSetId}";
+        }
+
         public static string FeedItemTarget(long customerId, long feedId, long feedItemId,
             FeedItemTargetType feedItemTargetType, long feedItemTargetId)
         {
@@ -416,17 +549,6 @@ namespace Google.Ads.GoogleAds.V7.Errors
         public static string FeedMapping(long customerId, long feedId, long feedMappingId)
         {
             return $"customers/{customerId}/feedMappings/{feedId}~{feedMappingId}";
-        }
-
-        public static string FeedItemSet(long customerId, long feedId, long feedItemSetId)
-        {
-            return $"customers/{customerId}/feedItemSets/{feedId}~{feedItemSetId}";
-        }
-
-        public static string FeedItemSetLink(long customerId, long feedId, long feedItemId,
-            long feedItemSetId)
-        {
-            return $"customers/{customerId}/feedItemSetLinks/{feedId}~{feedItemId}~{feedItemSetId}";
         }
 
         public static string FeedPlaceholderView(long customerId, PlaceholderType placeholderType)
@@ -440,15 +562,15 @@ namespace Google.Ads.GoogleAds.V7.Errors
             return $"customers/{customerId}/genderViews/{adGroupId}~{criterionId}";
         }
 
-        public static string GeoTargetConstant(long geoTargetConstantId)
-        {
-            return $"geoTargetConstants/{geoTargetConstantId}";
-        }
-
         public static string GeographicView(long customerId, long countryCriterionId,
             string locationType)
         {
             return $"customers/{customerId}/geographicViews/{countryCriterionId}~{locationType}";
+        }
+
+        public static string GeoTargetConstant(long geoTargetConstantId)
+        {
+            return $"geoTargetConstants/{geoTargetConstantId}";
         }
 
         public static string GoogleAdsField(string name)
@@ -472,6 +594,11 @@ namespace Google.Ads.GoogleAds.V7.Errors
             return $"customers/{customerId}/hotelPerformanceView";
         }
 
+        public static string HotelReconciliation(long customerId, long commissionId)
+        {
+            return $"customers/{customerId}/hotelReconciliations/{commissionId}";
+        }
+
         public static string IncomeRangeView(long customerId, long adGroupId, long criterionId)
         {
             return $"customers/{customerId}/incomeRangeViews/{adGroupId}~{criterionId}";
@@ -487,9 +614,19 @@ namespace Google.Ads.GoogleAds.V7.Errors
             return $"customers/{customerId}/keywordPlanAdGroups/{kpAdGroupId}";
         }
 
+        public static string KeywordPlanAdGroupKeyword(long customerId, string kpAdGroupKeyword)
+        {
+            return $"customers/{customerId}/keywordPlanAdGroupKeywords/{kpAdGroupKeyword}";
+        }
+
         public static string KeywordPlanCampaign(long customerId, long kpCampaignId)
         {
             return $"customers/{customerId}/keywordPlanCampaigns/{kpCampaignId}";
+        }
+
+        public static string KeywordPlanCampaignKeyword(long customerId, string kpCampaignKeyword)
+        {
+            return $"customers/{customerId}/keywordPlanCampaignKeywords/{kpCampaignKeyword}";
         }
 
         public static string KeywordPlanKeyword(long customerId, long kpAdGroupKeywordId)
@@ -502,14 +639,10 @@ namespace Google.Ads.GoogleAds.V7.Errors
             return $"customers/{customerId}/keywordPlanNegativeKeywords/{kpNegativeKeywordId}";
         }
 
-        public static string KeywordPlanAdGroupKeyword(long customerId, string kpAdGroupKeyword)
+        public static string KeywordThemeConstant(long expressCategoryId,
+            long expressSubCategoryId)
         {
-            return $"customers/{customerId}/keywordPlanAdGroupKeywords/{kpAdGroupKeyword}";
-        }
-
-        public static string KeywordPlanCampaignKeyword(long customerId, string kpCampaignKeyword)
-        {
-            return $"customers/{customerId}/keywordPlanCampaignKeywords/{kpCampaignKeyword}";
+            return $"keywordThemeConstants/{expressCategoryId}~{expressSubCategoryId}";
         }
 
         public static string KeywordView(long customerId, long adGroupId, long criterionId)
@@ -542,7 +675,8 @@ namespace Google.Ads.GoogleAds.V7.Errors
             return $"customers/{customerId}/locationViews/{campaignId}~{criterionId}";
         }
 
-        public static string ManagedPlacementView(long customerId, long adGroupId, long criterionId)
+        public static string ManagedPlacementView(long customerId, long adGroupId,
+            long criterionId)
         {
             return $"customers/{customerId}/managedPlacementViews/{adGroupId}~{criterionId}";
         }
@@ -595,9 +729,10 @@ namespace Google.Ads.GoogleAds.V7.Errors
         }
 
         public static string ProductBiddingCategoryConstant(string country_code,
-            long level, long id)
+            ProductBiddingCategoryLevel level, long id)
         {
-            return $"productBiddingCategoryConstants/{country_code}~{level}~{id}";
+            return $"productBiddingCategoryConstants/{country_code}~" +
+                $"{level.ToString().ToUpper()}~{id}";
         }
 
         public static string ProductGroupView(long customerId, long adGroupId, long criterionId)
@@ -637,6 +772,18 @@ namespace Google.Ads.GoogleAds.V7.Errors
             return $"customers/{customerId}/shoppingPerformanceView";
         }
 
+        public static string SmartCampaignSearchTermView(long customerId, long campaignId,
+            string query)
+        {
+            return $"customers/{customerId}/smartCampaignSearchTermViews/{campaignId}" +
+                $"~{Base64Encode(query)}";
+        }
+
+        public static string SmartCampaignSetting(long customerId, long smartCampaignId)
+        {
+            return $"customers/{customerId}/smartCampaignSettings/{smartCampaignId}";
+        }
+
         public static string ThirdPartyAppAnalyticsLinks(long customerId, long shareableLinkId)
         {
             return $"customers/{customerId}/thirdPartyAppAnalyticsLinks/{shareableLinkId}";
@@ -665,6 +812,11 @@ namespace Google.Ads.GoogleAds.V7.Errors
         public static string Video(long customerId, long videoId)
         {
             return $"customers/{customerId}/videos/{videoId}";
+        }
+
+        private static string Base64Encode(string text)
+        {
+            return Convert.ToBase64String(Encoding.UTF8.GetBytes(text));
         }
     }
 }

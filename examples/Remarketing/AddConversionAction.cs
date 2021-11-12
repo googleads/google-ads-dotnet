@@ -14,16 +14,16 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V8.Errors;
-using Google.Ads.GoogleAds.V8.Resources;
-using Google.Ads.GoogleAds.V8.Services;
+using Google.Ads.GoogleAds.V9.Errors;
+using Google.Ads.GoogleAds.V9.Resources;
+using Google.Ads.GoogleAds.V9.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V8.Enums.ConversionActionCategoryEnum.Types;
-using static Google.Ads.GoogleAds.V8.Enums.ConversionActionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V8.Enums.ConversionActionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V9.Enums.ConversionActionCategoryEnum.Types;
+using static Google.Ads.GoogleAds.V9.Enums.ConversionActionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V9.Enums.ConversionActionTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V8
+namespace Google.Ads.GoogleAds.Examples.V9
 {
     /// <summary>
     /// This code example illustrates adding a conversion action.
@@ -85,7 +85,7 @@ namespace Google.Ads.GoogleAds.Examples.V8
         {
             // Get the ConversionActionService.
             ConversionActionServiceClient conversionActionService =
-                client.GetService(Services.V8.ConversionActionService);
+                client.GetService(Services.V9.ConversionActionService);
 
             // Add a conversion action.
             ConversionAction conversionAction = new ConversionAction()

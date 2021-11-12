@@ -18,20 +18,20 @@ using System.Linq;
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V8.Common;
-using Google.Ads.GoogleAds.V8.Enums;
-using Google.Ads.GoogleAds.V8.Errors;
-using Google.Ads.GoogleAds.V8.Resources;
-using Google.Ads.GoogleAds.V8.Services;
-using static Google.Ads.GoogleAds.V8.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V8.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V8.Enums.AdvertisingChannelSubTypeEnum.Types;
-using static Google.Ads.GoogleAds.V8.Enums.BudgetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V8.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V8.Enums.CriterionTypeEnum.Types;
-using static Google.Ads.GoogleAds.V8.Services.SmartCampaignSuggestionInfo.Types;
+using Google.Ads.GoogleAds.V9.Common;
+using Google.Ads.GoogleAds.V9.Enums;
+using Google.Ads.GoogleAds.V9.Errors;
+using Google.Ads.GoogleAds.V9.Resources;
+using Google.Ads.GoogleAds.V9.Services;
+using static Google.Ads.GoogleAds.V9.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V9.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V9.Enums.AdvertisingChannelSubTypeEnum.Types;
+using static Google.Ads.GoogleAds.V9.Enums.BudgetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V9.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V9.Enums.CriterionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V9.Services.SmartCampaignSuggestionInfo.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V8
+namespace Google.Ads.GoogleAds.Examples.V9
 {
     /// <summary>
     /// This example shows how to create a Smart Campaign.
@@ -54,16 +54,34 @@ namespace Google.Ads.GoogleAds.Examples.V8
             public long CustomerId { get; set; }
 
             /// <summary>
-            /// A keyword text used to generate a set of keyword themes, which are used to improve
-            /// the budget recommendation and performance of the Smart Campaign. Default value is
-            /// defined in the DEFAULT_KEYWORD_TEXT constant.
+            /// A keyword text used to retrieve keyword theme constant suggestions from the
+            /// KeywordThemeConstantService. These keyword theme suggestions are generated
+            /// using auto-completion data for the given text and may help improve the
+            /// performance of the Smart campaign.
             /// </summary>
             [Option("keywordText", Required = false, HelpText =
-                    "A keyword text used to generate a set of keyword themes, which are used to " +
-                    "improve the budget recommendation and performance of the Smart Campaign." +
-                    "\nDefault value is defined in the DEFAULT_KEYWORD_TEXT constant.",
+                "A keyword text used to retrieve keyword theme constant suggestions from the " +
+                "KeywordThemeConstantService. These keyword theme suggestions are generated " +
+                "using auto-completion data for the given text and may help improve the " +
+                "performance of the Smart campaign.",
                 Default = DEFAULT_KEYWORD_TEXT)]
             public string Keyword { get; set; }
+
+            /// <summary>
+            /// A keyword text used to create a freeform keyword theme, which is entirely
+            /// user-specified and not derived from any suggestion service. Using free-form
+            /// keyword themes is typically not recommended because they are less effective
+            /// than suggested keyword themes, however they are useful in situations where a
+            /// very specific term needs to be targeted.
+            /// </summary>
+            [Option("keywordText", Required = false, HelpText =
+                "A keyword text used to create a freeform keyword theme, which is entirely " +
+                "user-specified and not derived from any suggestion service. Using free-form " +
+                "keyword themes is typically not recommended because they are less effective " +
+                "than suggested keyword themes, however they are useful in situations where a " +
+                "very specific term needs to be targeted.",
+                Default = DEFAULT_KEYWORD_TEXT)]
+            public string FreeformKeywordText { get; set; }
 
             /// <summary>
             /// The ID of a Google My Business (GMB) location.  This is required if a business name
@@ -75,15 +93,15 @@ namespace Google.Ads.GoogleAds.Examples.V8
                 "name is not provided.\n" +
                 "This ID can be retrieved using the GMB API; for details see: " +
                 "https://developers.google.com/my-business/reference/rest/v4/accounts.locations")]
-            public long? BusinessLocationId { get; set; }
+            public ulong? BusinessLocationId { get; set; }
 
             /// <summary>
             /// The name of a Google My Business (GMB) business. This is required if a business
             /// location ID is not provided.
             /// </summary>
             [Option("businessName", Required = false, HelpText =
-                "The name of a Google My Business (GMB) business. This is required if a business " +
-                "location ID is not provided.")]
+                "The name of a Google My Business (GMB) business. This is required if a " +
+                "business location ID is not provided.")]
             public string BusinessName { get; set; }
         }
 
@@ -108,11 +126,14 @@ namespace Google.Ads.GoogleAds.Examples.V8
                     // improve the budget recommendation and performance of the Smart Campaign.
                     options.Keyword = DEFAULT_KEYWORD_TEXT;
 
-                    // The ID of a Google My Business (GMB) location. This is required if a business
-                    // name is not provided.
-                    options.BusinessLocationId = long.Parse("INSERT_BUSINESS_LOCATION_ID_HERE");
+                    // A keyword used to create a free-form keyword theme.
+                    options.FreeformKeywordText = DEFAULT_KEYWORD_TEXT;
 
-                    // The name of a Google My Business (GMB) business. This is required if a
+                    // The ID of a Google My Business (GMB) location. This is required if a
+                    // business name is not provided.
+                    options.BusinessLocationId = ulong.Parse("INSERT_BUSINESS_LOCATION_ID_HERE");
+
+                    // The name of a Google My Bus`iness (GMB) business. This is required if a
                     // business location ID is not provided.
                     options.BusinessName = "INSERT_BUSINESS_NAME_HERE";
 
@@ -122,6 +143,7 @@ namespace Google.Ads.GoogleAds.Examples.V8
             AddSmartCampaign codeExample = new AddSmartCampaign();
             Console.WriteLine(codeExample.Description);
             codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.Keyword,
+                options.FreeformKeywordText,
                 options.BusinessLocationId, options.BusinessName);
         }
 
@@ -136,13 +158,15 @@ namespace Google.Ads.GoogleAds.Examples.V8
         private const long BUDGET_TEMPORARY_ID = -1;
         private const long SMART_CAMPAIGN_TEMPORARY_ID = -2;
         private const long AD_GROUP_TEMPORARY_ID = -3;
+        private const int NUM_REQUIRED_HEADLINES = 3;
+        private const int NUM_REQUIRED_DESCRIPTIONS = 2;
 
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
-            "This example shows how to create a Smart Campaign.\nMore details on Smart Campaigns " +
-            "can be found here: https: //support.google.com/google-ads/answer/7652860";
+            "This example shows how to create a Smart Campaign.\nMore details on Smart " +
+            "Campaigns can be found here: https: //support.google.com/google-ads/answer/7652860";
 
         /// <summary>
         /// Runs the code example.
@@ -150,27 +174,60 @@ namespace Google.Ads.GoogleAds.Examples.V8
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID.</param>
         /// <param name="keywordText">A keyword string used for generating keyword themes.</param>
+        /// <param name="freeFormKeywordText">A keyword used to create a free-form keyword theme.
+        /// </param>
         /// <param name="businessLocationId">The ID of a Google My Business location.</param>
         /// <param name="businessName">The name of a Google My Business business.</param>
         public void Run(GoogleAdsClient client, long customerId, string keywordText,
-            long? businessLocationId, string businessName)
+            string freeFormKeywordText, ulong? businessLocationId, string businessName)
         {
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V8.GoogleAdsService);
+                client.GetService(Services.V9.GoogleAdsService);
 
             try
             {
-                IEnumerable<KeywordThemeConstant> keywordThemeConstants =
-                    GetKeywordThemeConstants(client, keywordText);
+                // [START add_smart_campaign_12]
+                // Gets the SmartCampaignSuggestionInfo object which acts as the basis for many
+                // of the entities necessary to create a Smart campaign. It will be reused a number
+                // of times to retrieve suggestions for keyword themes, budget amount, ad
+                //creatives, and campaign criteria.
+                SmartCampaignSuggestionInfo suggestionInfo =
+                    GetSmartCampaignSuggestionInfo(client, businessLocationId, businessName);
 
-                // Map the KeywordThemeConstants to KeywordThemeInfo objects.
-                IEnumerable<KeywordThemeInfo> keywordThemeInfos = keywordThemeConstants.Select(
-                        constant =>
-                            new KeywordThemeInfo { KeywordThemeConstant = constant.ResourceName })
+                // Generates a list of keyword themes using the SuggestKeywordThemes method on the
+                // SmartCampaignSuggestService. It is strongly recommended that you use this
+                // strategy for generating keyword themes.
+                List<KeywordThemeConstant> keywordThemeConstants =
+                    GetKeywordThemeSuggestions(client, customerId, suggestionInfo);
+
+                // Optionally retrieves auto-complete suggestions for the given keyword text and
+                // adds them to the list of keyWordThemeConstants.
+                if (keywordText != null)
+                {
+                    keywordThemeConstants.AddRange(GetKeywordTextAutoCompletions(
+                        client, keywordText));
+                }
+
+                // Converts the KeywordThemeConstants to KeywordThemeInfos.
+                List<KeywordThemeInfo> keywordThemeInfos = keywordThemeConstants.Select(
+                    constant =>
+                        new KeywordThemeInfo { KeywordThemeConstant = constant.ResourceName })
                     .ToList();
 
-                SmartCampaignSuggestionInfo suggestionInfo = GetSmartCampaignSuggestionInfo(client,
-                    businessLocationId, businessName, keywordThemeInfos);
+                // Optionally includes any freeform keywords verbatim.
+                if (freeFormKeywordText != null)
+                {
+                    keywordThemeInfos.Add(new KeywordThemeInfo()
+                    {
+                        FreeFormKeywordTheme = freeFormKeywordText
+                    });
+                }
+
+                // Includes the keyword suggestions in the overall SuggestionInfo object.
+                // [START add_smart_campaign_13]
+                suggestionInfo.KeywordThemes.Add(keywordThemeInfos);
+                // [END add_smart_campaign_13]
+                // [END add_smart_campaign_12]
 
                 SmartCampaignAdInfo adSuggestions = GetAdSuggestions(client, customerId,
                     suggestionInfo);
@@ -179,8 +236,8 @@ namespace Google.Ads.GoogleAds.Examples.V8
                     suggestionInfo);
 
                 // [START add_smart_campaign_7]
-                // The below methods create and return MutateOperations that we later provide to the
-                // GoogleAdsService.Mutate method in order to create the entities in a single
+                // The below methods create and return MutateOperations that we later provide to
+                // the GoogleAdsService.Mutate method in order to create the entities in a single
                 // request. Since the entities for a Smart campaign are closely tied to one-another
                 // it's considered a best practice to create them in a single Mutate request; the
                 // entities will either all complete successfully or fail entirely, leaving no
@@ -204,9 +261,9 @@ namespace Google.Ads.GoogleAds.Examples.V8
                 {
                     CustomerId = customerId.ToString()
                 };
-                // It's important to create these entities in this order because they depend on each
-                // other, for example the SmartCampaignSetting and ad group depend on the campaign,
-                // and the ad group ad depends on the ad group.
+                // It's important to create these entities in this order because they depend on
+                // each other, for example the SmartCampaignSetting and ad group depend on the
+                // campaign, and the ad group ad depends on the ad group.
                 mutateGoogleAdsRequest.MutateOperations.Add(campaignBudgetOperation);
                 mutateGoogleAdsRequest.MutateOperations.Add(smartCampaignOperation);
                 mutateGoogleAdsRequest.MutateOperations.Add(smartCampaignSettingOperation);
@@ -230,18 +287,51 @@ namespace Google.Ads.GoogleAds.Examples.V8
             }
         }
 
-        // [START add_smart_campaign]
+        // [START add_smart_campaign_11]
         /// <summary>
-        /// Retrieves keyword theme constants for the given criteria.
+        /// Retrieves KeywordThemeConstants suggestions with the SmartCampaignSuggestService.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
-        /// <param name="keywordText">A keyword used for generating keyword themes.</param>
+        /// <param name="customerId">The Google Ads customer ID.</param>
+        /// <param name="suggestionInfo">The suggestion information.</param>
+        /// <returns>The suggestions.</returns>
+        private List<KeywordThemeConstant> GetKeywordThemeSuggestions(
+            GoogleAdsClient client, long customerId, SmartCampaignSuggestionInfo suggestionInfo)
+        {
+            SmartCampaignSuggestServiceClient smartCampaignSuggestService =
+                client.GetService(Services.V9.SmartCampaignSuggestService);
+
+            SuggestKeywordThemesRequest request = new SuggestKeywordThemesRequest()
+            {
+                SuggestionInfo = suggestionInfo,
+                CustomerId = customerId.ToString()
+            };
+
+            SuggestKeywordThemesResponse response =
+                smartCampaignSuggestService.SuggestKeywordThemes(request);
+
+            // Prints some information about the result.
+            Console.WriteLine($"Retrieved {response.KeywordThemes.Count} keyword theme " +
+                $"constant suggestions from the SuggestKeywordThemes method.");
+            return response.KeywordThemes.ToList();
+        }
+        // [END add_smart_campaign_11]
+
+
+        // [START add_smart_campaign]
+        /// <summary>
+        /// Retrieves KeywordThemeConstants that are derived from autocomplete data for the
+        /// given keyword text.
+        /// </summary>
+        /// <param name="client">The Google Ads client.</param>
+        /// <param name="keywordText">A keyword used for generating keyword auto completions.
+        /// </param>
         /// <returns>A list of KeywordThemeConstants.</returns>
-        private IEnumerable<KeywordThemeConstant> GetKeywordThemeConstants(GoogleAdsClient client,
-            string keywordText)
+        private IEnumerable<KeywordThemeConstant> GetKeywordTextAutoCompletions(
+            GoogleAdsClient client, string keywordText)
         {
             KeywordThemeConstantServiceClient keywordThemeConstantServiceClient =
-                client.GetService(Services.V8.KeywordThemeConstantService);
+                client.GetService(Services.V9.KeywordThemeConstantService);
 
             SuggestKeywordThemeConstantsRequest request = new SuggestKeywordThemeConstantsRequest
             {
@@ -273,14 +363,12 @@ namespace Google.Ads.GoogleAds.Examples.V8
         /// <param name="client">The Google Ads client.</param>
         /// <param name="businessLocationId">The ID of a Google My Business location.</param>
         /// <param name="businessName">The name of a Google My Business.</param>
-        /// <param name="keywordThemeInfos">A list of KeywordThemeInfos.</param>
         /// <returns>A SmartCampaignSuggestionInfo instance .</returns>
         private SmartCampaignSuggestionInfo GetSmartCampaignSuggestionInfo(GoogleAdsClient client,
-            long? businessLocationId, string businessName, IEnumerable<KeywordThemeInfo>
-            keywordThemeInfos)
+            ulong? businessLocationId, string businessName)
         {
-            SmartCampaignSuggestServiceClient smartCampaignSuggestServiceClient = client.GetService
-    (Services.V8.SmartCampaignSuggestService);
+            SmartCampaignSuggestServiceClient smartCampaignSuggestServiceClient =
+                client.GetService(Services.V9.SmartCampaignSuggestService);
 
             SmartCampaignSuggestionInfo suggestionInfo = new SmartCampaignSuggestionInfo
             {
@@ -307,27 +395,29 @@ namespace Google.Ads.GoogleAds.Examples.V8
                 // }
                 // For more information on proximities see:
                 // https://developers.google.com/google-ads/api/reference/rpc/latest/ProximityInfo
-                LocationList = new SmartCampaignSuggestionInfo.Types.LocationList()
+                LocationList = new LocationList()
+                {
+                    Locations =
+                    {
+                        new LocationInfo
+                        {
+                            // Set the location to the resource name of the given geo target
+                            // constant.
+                            GeoTargetConstant =
+                                ResourceNames.GeoTargetConstant(GEO_TARGET_CONSTANT)
+                        }
+                    }
+                }
             };
 
-            LocationInfo locationInfo = new LocationInfo
-            {
-                // Set the location to the resource name of the given geo target constant.
-                GeoTargetConstant = ResourceNames.GeoTargetConstant(GEO_TARGET_CONSTANT)
-            };
-
-            // Add the LocationInfo object to the list of locations on the SuggestionInfo object.
-            // You have the option of providing multiple locations when using location-based
-            // suggestions.
-            suggestionInfo.LocationList.Locations.Add(locationInfo);
-
-            // Add the KeywordThemeInfo objects to the SuggestionInfo object.
-            suggestionInfo.KeywordThemes.Add(keywordThemeInfos);
 
             // Add the GMB location ID if provided.
             if (businessLocationId.HasValue)
             {
-                suggestionInfo.BusinessLocationId = businessLocationId.Value;
+                // Transform Google Business Location ID to a compatible format before
+                // passing it onto the API.
+                suggestionInfo.BusinessLocationId =
+                    ConvertBusinessLocationId(businessLocationId.Value);
             }
             else
             {
@@ -373,7 +463,7 @@ namespace Google.Ads.GoogleAds.Examples.V8
             SmartCampaignSuggestionInfo suggestionInfo)
         {
             SmartCampaignSuggestServiceClient smartCampaignSuggestServiceClient = client.GetService
-                (Services.V8.SmartCampaignSuggestService);
+                (Services.V9.SmartCampaignSuggestService);
 
             SuggestSmartCampaignBudgetOptionsRequest request =
                 new SuggestSmartCampaignBudgetOptionsRequest
@@ -402,10 +492,11 @@ namespace Google.Ads.GoogleAds.Examples.V8
             // Three tiers of options will be returned: "low", "high", and "recommended".
             // Here we will use the "recommended" option. The amount is specified in micros, where
             // one million is equivalent to one currency unit.
-            Console.WriteLine($"A daily budget amount of {response.Recommended.DailyAmountMicros}" +
+            Console.WriteLine($"A daily budget amount of " +
+                $"{response.Recommended.DailyAmountMicros}" +
                 $" was suggested, garnering an estimated minimum of " +
-                $"{response.Recommended.Metrics.MinDailyClicks} clicks and an estimated maximum " +
-                $"of {response.Recommended.Metrics.MaxDailyClicks} clicks per day.");
+                $"{response.Recommended.Metrics.MinDailyClicks} clicks and an estimated " +
+                $"maximum of {response.Recommended.Metrics.MaxDailyClicks} clicks per day.");
 
             return response.Recommended.DailyAmountMicros;
         }
@@ -429,7 +520,7 @@ namespace Google.Ads.GoogleAds.Examples.V8
             long customerId, SmartCampaignSuggestionInfo suggestionInfo)
         {
             SmartCampaignSuggestServiceClient smartCampaignSuggestService =
-              client.GetService(Services.V8.SmartCampaignSuggestService);
+              client.GetService(Services.V9.SmartCampaignSuggestService);
 
             SuggestSmartCampaignAdRequest request = new SuggestSmartCampaignAdRequest
             {
@@ -449,16 +540,24 @@ namespace Google.Ads.GoogleAds.Examples.V8
             // review them and filter out any empty values.
             SmartCampaignAdInfo adSuggestions = response.AdInfo;
 
-            Console.WriteLine($"The following headlines were suggested:");
-            foreach (AdTextAsset headline in adSuggestions.Headlines)
+            if (adSuggestions != null)
             {
-                Console.WriteLine($"\t{headline.Text}");
-            }
+                Console.WriteLine($"The following headlines were suggested:");
+                foreach (AdTextAsset headline in adSuggestions.Headlines)
+                {
+                    Console.WriteLine($"\t{headline.Text}");
+                }
 
-            Console.WriteLine($"And the following descriptions were suggested:");
-            foreach (AdTextAsset description in adSuggestions.Descriptions)
+                Console.WriteLine($"And the following descriptions were suggested:");
+                foreach (AdTextAsset description in adSuggestions.Descriptions)
+                {
+                    Console.WriteLine($"\t{description.Text}");
+                }
+            }
+            else
             {
-                Console.WriteLine($"\t{description.Text}");
+                Console.WriteLine("No ad suggestions were found.");
+                adSuggestions = new SmartCampaignAdInfo();
             }
 
             return adSuggestions;
@@ -492,7 +591,8 @@ namespace Google.Ads.GoogleAds.Examples.V8
                         AmountMicros = suggestedBudgetAmount,
                         // Set a temporary ID in the budget's resource name so it can be referenced
                         // by the campaign in later steps.
-                        ResourceName = ResourceNames.CampaignBudget(customerId, BUDGET_TEMPORARY_ID)
+                        ResourceName = ResourceNames.CampaignBudget(
+                            customerId, BUDGET_TEMPORARY_ID)
                     }
                 }
             };
@@ -516,8 +616,8 @@ namespace Google.Ads.GoogleAds.Examples.V8
                     Create = new Campaign
                     {
                         Name = $"Smart campaign #{ExampleUtilities.GetRandomString()}",
-                        // Set the campaign status as PAUSED. The campaign is the only entity in the
-                        // mutate request that should have its status set.
+                        // Set the campaign status as PAUSED. The campaign is the only entity in
+                        // the mutate request that should have its status set.
                         Status = CampaignStatus.Paused,
                         // AdvertisingChannelType must be SMART.
                         AdvertisingChannelType = AdvertisingChannelType.Smart,
@@ -547,7 +647,7 @@ namespace Google.Ads.GoogleAds.Examples.V8
         /// <param name="businessName">The name of a Google My Business business.</param>
         /// <returns>A MutateOperation that creates a SmartCampaignSetting.</returns>
         private MutateOperation CreateSmartCampaignSettingOperation(long customerId,
-            long? businessLocationId, string businessName)
+            ulong? businessLocationId, string businessName)
         {
             SmartCampaignSetting smartCampaignSetting = new SmartCampaignSetting
             {
@@ -570,7 +670,10 @@ namespace Google.Ads.GoogleAds.Examples.V8
             // SmartCampaignSetting.
             if (businessLocationId.HasValue)
             {
-                smartCampaignSetting.BusinessLocationId = businessLocationId.Value;
+                // Transform Google Business Location ID to a compatible format before
+                // passing it onto the API.
+                smartCampaignSetting.BusinessLocationId =
+                    ConvertBusinessLocationId(businessLocationId.Value);
             }
             else
             {
@@ -583,8 +686,8 @@ namespace Google.Ads.GoogleAds.Examples.V8
                 {
                     Update = smartCampaignSetting,
                     // Set the update mask on the operation. This is required since the smart
-                    // campaign setting is created in an UPDATE operation. Here the update mask will
-                    // be a list of all the fields that were set on the SmartCampaignSetting.
+                    // campaign setting is created in an UPDATE operation. Here the update mask
+                    // will be a list of all the fields that were set on the SmartCampaignSetting.
                     UpdateMask = FieldMasks.AllSetFieldsOf(smartCampaignSetting)
                 }
             };
@@ -622,10 +725,10 @@ namespace Google.Ads.GoogleAds.Examples.V8
         // [START add_smart_campaign_5]
         /// <summary>
         /// Creates a MutateOperation that creates a new ad group.
-        /// A temporary ID will be used in the campaign resource name for this ad group to associate
-        /// it with the Smart campaign created in earlier steps. A temporary ID will also be used
-        /// for its own resource name so that we can associate an ad group ad with it later in the
-        /// process.
+        /// A temporary ID will be used in the campaign resource name for this ad group to
+        /// associate it with the Smart campaign created in earlier steps. A temporary ID will
+        /// also be used for its own resource name so that we can associate an ad group ad with
+        /// it later in the process.
         /// Only one ad group can be created for a given Smart campaign.
         /// </summary>
         /// <param name="customerId">The Google Ads customer ID.</param>
@@ -682,9 +785,38 @@ namespace Google.Ads.GoogleAds.Examples.V8
             // these assets may contain empty texts, which should not be set on the ad
             // and instead should be replaced with meaninful texts from the user. Below
             // we just accept the creatives that were suggested while filtering out empty
-            // assets, but individual workflows will vary here.
+            // assets. If no headlines or descriptions were suggested, then we manually
+            // add some, otherwise this operation will generate an INVALID_ARGUMENT
+            // error. Individual workflows will likely vary here.
             ad.Headlines.Add(adSuggestions.Headlines);
             ad.Descriptions.Add(adSuggestions.Descriptions);
+
+            // If there are fewer headlines than are required, we manually add additional
+            // headlines to make up for the difference.
+            if (adSuggestions.Headlines.Count() < NUM_REQUIRED_HEADLINES)
+            {
+                for (int i = 0; i < NUM_REQUIRED_HEADLINES - adSuggestions.Headlines.Count(); i++)
+                {
+                    ad.Headlines.Add(new AdTextAsset()
+                    {
+                        Text = $"Placeholder headline {i + 1}"
+                    });
+                }
+            }
+
+            // If there are fewer descriptions than are required, we manually add
+            // additional descriptions to make up for the difference.
+            if (adSuggestions.Descriptions.Count() < NUM_REQUIRED_DESCRIPTIONS)
+            {
+                for (int i = 0; i < NUM_REQUIRED_DESCRIPTIONS -
+                    adSuggestions.Descriptions.Count(); i++)
+                {
+                    ad.Descriptions.Add(new AdTextAsset()
+                    {
+                        Text = $"Placeholder description {i + 1}"
+                    });
+                }
+            }
 
             return new MutateOperation
             {
@@ -694,7 +826,23 @@ namespace Google.Ads.GoogleAds.Examples.V8
                 }
             };
         }
-        //[END add_smart_campaign_6]
+        // [END add_smart_campaign_6]
+
+        // [START add_smart_campaign_14]
+        /// <summary>
+        /// Converts the business location ID from the format returned by Google My Business
+        /// to the format expected by the API.
+        /// </summary>
+        /// <param name="businessLocationId">The business location identifier.</param>
+        /// <returns>The transformed ID.</returns>
+        private long ConvertBusinessLocationId(ulong businessLocationId)
+        {
+            // The business location ID is an unsigned 64-bit integer. However, the Google Ads API
+            // expects a signed 64-bit integer. So we convert the unsigned ID into a signed ID,
+            // while allowing an overflow, so that the ID wraps around if it is too large.
+            return unchecked((long) businessLocationId);
+        }
+        // [END add_smart_campaign_14]
 
         /// <summary>
         /// Prints the details of a MutateGoogleAdsResponse. Parses the "response" oneof field name

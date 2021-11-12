@@ -43,6 +43,11 @@ namespace Google.Ads.GoogleAds.Lib
             "grpc.max_metadata_size";
 
         /// <summary>
+        /// The gRPC setting name for http proxy.
+        /// </summary>
+        private const string GRPC_HTTP_PROXY_SETTING_NAME = "grpc.http_proxy";
+
+        /// <summary>
         /// Gets the channel for the specified configuration.
         /// </summary>
         /// <param name="config">The configuration.</param>
@@ -116,15 +121,22 @@ namespace Google.Ads.GoogleAds.Lib
                     GoogleGrpcCredentials.ToChannelCredentials(config.Credentials);
             }
             Uri uri = new Uri(config.ServerUrl);
-            return new Channel(uri.Host, uri.Port, channelCredentials,
-                new List<ChannelOption>()
-                {
-                    new ChannelOption(GRPC_MAX_RECEIVE_MESSAGE_LENGTH_IN_BYTES_SETTING_NAME,
-                        config.MaxReceiveMessageSizeInBytes),
-                    new ChannelOption(GRPC_MAX_METADATA_SIZE_IN_BYTES_SETTING_NAME,
-                        config.MaxMetadataSizeInBytes),
-                }
-            );
+
+            List<ChannelOption> options = new List<ChannelOption>()
+            {
+                new ChannelOption(GRPC_MAX_RECEIVE_MESSAGE_LENGTH_IN_BYTES_SETTING_NAME,
+                    config.MaxReceiveMessageSizeInBytes),
+                new ChannelOption(GRPC_MAX_METADATA_SIZE_IN_BYTES_SETTING_NAME,
+                    config.MaxMetadataSizeInBytes),
+            };
+
+            if (config.Proxy != null)
+            {
+                options.Add(new ChannelOption(GRPC_HTTP_PROXY_SETTING_NAME,
+                    config.Proxy.Address.ToString()));
+            }
+
+            return new Channel(uri.Host, uri.Port, channelCredentials, options);
         }
     }
 }
