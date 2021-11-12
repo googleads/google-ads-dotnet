@@ -100,19 +100,23 @@ namespace Google.Ads.GoogleAds.V8.Services {
     private static readonly pb::MessageParser<GetKeywordPlanAdGroupKeywordRequest> _parser = new pb::MessageParser<GetKeywordPlanAdGroupKeywordRequest>(() => new GetKeywordPlanAdGroupKeywordRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GetKeywordPlanAdGroupKeywordRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Ads.GoogleAds.V8.Services.KeywordPlanAdGroupKeywordServiceReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetKeywordPlanAdGroupKeywordRequest() {
       OnConstruction();
     }
@@ -120,12 +124,14 @@ namespace Google.Ads.GoogleAds.V8.Services {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetKeywordPlanAdGroupKeywordRequest(GetKeywordPlanAdGroupKeywordRequest other) : this() {
       resourceName_ = other.resourceName_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetKeywordPlanAdGroupKeywordRequest Clone() {
       return new GetKeywordPlanAdGroupKeywordRequest(this);
     }
@@ -137,6 +143,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     /// Required. The resource name of the ad group keyword to fetch.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ResourceName {
       get { return resourceName_; }
       set {
@@ -145,11 +152,13 @@ namespace Google.Ads.GoogleAds.V8.Services {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GetKeywordPlanAdGroupKeywordRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GetKeywordPlanAdGroupKeywordRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -162,6 +171,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
@@ -172,11 +182,13 @@ namespace Google.Ads.GoogleAds.V8.Services {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -193,6 +205,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
@@ -205,6 +218,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ResourceName.Length != 0) {
@@ -217,6 +231,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GetKeywordPlanAdGroupKeywordRequest other) {
       if (other == null) {
         return;
@@ -228,6 +243,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -249,6 +265,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -279,19 +296,23 @@ namespace Google.Ads.GoogleAds.V8.Services {
     private static readonly pb::MessageParser<MutateKeywordPlanAdGroupKeywordsRequest> _parser = new pb::MessageParser<MutateKeywordPlanAdGroupKeywordsRequest>(() => new MutateKeywordPlanAdGroupKeywordsRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<MutateKeywordPlanAdGroupKeywordsRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Ads.GoogleAds.V8.Services.KeywordPlanAdGroupKeywordServiceReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MutateKeywordPlanAdGroupKeywordsRequest() {
       OnConstruction();
     }
@@ -299,6 +320,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MutateKeywordPlanAdGroupKeywordsRequest(MutateKeywordPlanAdGroupKeywordsRequest other) : this() {
       customerId_ = other.customerId_;
       operations_ = other.operations_.Clone();
@@ -308,6 +330,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MutateKeywordPlanAdGroupKeywordsRequest Clone() {
       return new MutateKeywordPlanAdGroupKeywordsRequest(this);
     }
@@ -320,6 +343,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     /// modified.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CustomerId {
       get { return customerId_; }
       set {
@@ -337,6 +361,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     /// keywords.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Google.Ads.GoogleAds.V8.Services.KeywordPlanAdGroupKeywordOperation> Operations {
       get { return operations_; }
     }
@@ -351,6 +376,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     /// Default is false.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool PartialFailure {
       get { return partialFailure_; }
       set {
@@ -366,6 +392,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     /// returned, not results.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool ValidateOnly {
       get { return validateOnly_; }
       set {
@@ -374,11 +401,13 @@ namespace Google.Ads.GoogleAds.V8.Services {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as MutateKeywordPlanAdGroupKeywordsRequest);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(MutateKeywordPlanAdGroupKeywordsRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -394,6 +423,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (CustomerId.Length != 0) hash ^= CustomerId.GetHashCode();
@@ -407,11 +437,13 @@ namespace Google.Ads.GoogleAds.V8.Services {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -437,6 +469,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (CustomerId.Length != 0) {
         output.WriteRawTag(10);
@@ -458,6 +491,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (CustomerId.Length != 0) {
@@ -477,6 +511,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(MutateKeywordPlanAdGroupKeywordsRequest other) {
       if (other == null) {
         return;
@@ -495,6 +530,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -528,6 +564,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -570,19 +607,23 @@ namespace Google.Ads.GoogleAds.V8.Services {
     private static readonly pb::MessageParser<KeywordPlanAdGroupKeywordOperation> _parser = new pb::MessageParser<KeywordPlanAdGroupKeywordOperation>(() => new KeywordPlanAdGroupKeywordOperation());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<KeywordPlanAdGroupKeywordOperation> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Ads.GoogleAds.V8.Services.KeywordPlanAdGroupKeywordServiceReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public KeywordPlanAdGroupKeywordOperation() {
       OnConstruction();
     }
@@ -590,6 +631,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public KeywordPlanAdGroupKeywordOperation(KeywordPlanAdGroupKeywordOperation other) : this() {
       updateMask_ = other.updateMask_ != null ? other.updateMask_.Clone() : null;
       switch (other.OperationCase) {
@@ -608,6 +650,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public KeywordPlanAdGroupKeywordOperation Clone() {
       return new KeywordPlanAdGroupKeywordOperation(this);
     }
@@ -620,6 +663,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     /// update.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.FieldMask UpdateMask {
       get { return updateMask_; }
       set {
@@ -634,6 +678,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     /// ad group keyword.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Resources.KeywordPlanAdGroupKeyword Create {
       get { return operationCase_ == OperationOneofCase.Create ? (global::Google.Ads.GoogleAds.V8.Resources.KeywordPlanAdGroupKeyword) operation_ : null; }
       set {
@@ -649,6 +694,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     /// valid resource name.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Resources.KeywordPlanAdGroupKeyword Update {
       get { return operationCase_ == OperationOneofCase.Update ? (global::Google.Ads.GoogleAds.V8.Resources.KeywordPlanAdGroupKeyword) operation_ : null; }
       set {
@@ -666,6 +712,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     /// `customers/{customer_id}/keywordPlanAdGroupKeywords/{kp_ad_group_keyword_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Remove {
       get { return operationCase_ == OperationOneofCase.Remove ? (string) operation_ : ""; }
       set {
@@ -684,22 +731,26 @@ namespace Google.Ads.GoogleAds.V8.Services {
     }
     private OperationOneofCase operationCase_ = OperationOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public OperationOneofCase OperationCase {
       get { return operationCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearOperation() {
       operationCase_ = OperationOneofCase.None;
       operation_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as KeywordPlanAdGroupKeywordOperation);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(KeywordPlanAdGroupKeywordOperation other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -716,6 +767,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (updateMask_ != null) hash ^= UpdateMask.GetHashCode();
@@ -730,11 +782,13 @@ namespace Google.Ads.GoogleAds.V8.Services {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -763,6 +817,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (operationCase_ == OperationOneofCase.Create) {
         output.WriteRawTag(10);
@@ -787,6 +842,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (updateMask_ != null) {
@@ -808,6 +864,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(KeywordPlanAdGroupKeywordOperation other) {
       if (other == null) {
         return;
@@ -840,6 +897,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -886,6 +944,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -940,19 +999,23 @@ namespace Google.Ads.GoogleAds.V8.Services {
     private static readonly pb::MessageParser<MutateKeywordPlanAdGroupKeywordsResponse> _parser = new pb::MessageParser<MutateKeywordPlanAdGroupKeywordsResponse>(() => new MutateKeywordPlanAdGroupKeywordsResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<MutateKeywordPlanAdGroupKeywordsResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Ads.GoogleAds.V8.Services.KeywordPlanAdGroupKeywordServiceReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MutateKeywordPlanAdGroupKeywordsResponse() {
       OnConstruction();
     }
@@ -960,6 +1023,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MutateKeywordPlanAdGroupKeywordsResponse(MutateKeywordPlanAdGroupKeywordsResponse other) : this() {
       partialFailureError_ = other.partialFailureError_ != null ? other.partialFailureError_.Clone() : null;
       results_ = other.results_.Clone();
@@ -967,6 +1031,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MutateKeywordPlanAdGroupKeywordsResponse Clone() {
       return new MutateKeywordPlanAdGroupKeywordsResponse(this);
     }
@@ -981,6 +1046,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     /// we return an RPC level error.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Rpc.Status PartialFailureError {
       get { return partialFailureError_; }
       set {
@@ -997,16 +1063,19 @@ namespace Google.Ads.GoogleAds.V8.Services {
     /// All results for the mutate.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Google.Ads.GoogleAds.V8.Services.MutateKeywordPlanAdGroupKeywordResult> Results {
       get { return results_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as MutateKeywordPlanAdGroupKeywordsResponse);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(MutateKeywordPlanAdGroupKeywordsResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1020,6 +1089,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (partialFailureError_ != null) hash ^= PartialFailureError.GetHashCode();
@@ -1031,11 +1101,13 @@ namespace Google.Ads.GoogleAds.V8.Services {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1053,6 +1125,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       results_.WriteTo(ref output, _repeated_results_codec);
       if (partialFailureError_ != null) {
@@ -1066,6 +1139,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (partialFailureError_ != null) {
@@ -1079,6 +1153,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(MutateKeywordPlanAdGroupKeywordsResponse other) {
       if (other == null) {
         return;
@@ -1094,6 +1169,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1122,6 +1198,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1158,19 +1235,23 @@ namespace Google.Ads.GoogleAds.V8.Services {
     private static readonly pb::MessageParser<MutateKeywordPlanAdGroupKeywordResult> _parser = new pb::MessageParser<MutateKeywordPlanAdGroupKeywordResult>(() => new MutateKeywordPlanAdGroupKeywordResult());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<MutateKeywordPlanAdGroupKeywordResult> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Ads.GoogleAds.V8.Services.KeywordPlanAdGroupKeywordServiceReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MutateKeywordPlanAdGroupKeywordResult() {
       OnConstruction();
     }
@@ -1178,12 +1259,14 @@ namespace Google.Ads.GoogleAds.V8.Services {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MutateKeywordPlanAdGroupKeywordResult(MutateKeywordPlanAdGroupKeywordResult other) : this() {
       resourceName_ = other.resourceName_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MutateKeywordPlanAdGroupKeywordResult Clone() {
       return new MutateKeywordPlanAdGroupKeywordResult(this);
     }
@@ -1195,6 +1278,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     /// Returned for successful operations.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ResourceName {
       get { return resourceName_; }
       set {
@@ -1203,11 +1287,13 @@ namespace Google.Ads.GoogleAds.V8.Services {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as MutateKeywordPlanAdGroupKeywordResult);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(MutateKeywordPlanAdGroupKeywordResult other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1220,6 +1306,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
@@ -1230,11 +1317,13 @@ namespace Google.Ads.GoogleAds.V8.Services {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1251,6 +1340,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
@@ -1263,6 +1353,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ResourceName.Length != 0) {
@@ -1275,6 +1366,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(MutateKeywordPlanAdGroupKeywordResult other) {
       if (other == null) {
         return;
@@ -1286,6 +1378,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1307,6 +1400,7 @@ namespace Google.Ads.GoogleAds.V8.Services {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {

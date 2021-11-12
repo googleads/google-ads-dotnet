@@ -27,19 +27,20 @@ namespace Google.Ads.GoogleAds.V8.Errors {
             "Ckhnb29nbGUvYWRzL2dvb2dsZWFkcy92OC9lcnJvcnMva2V5d29yZF9wbGFu",
             "X2FkX2dyb3VwX2tleXdvcmRfZXJyb3IucHJvdG8SHmdvb2dsZS5hZHMuZ29v",
             "Z2xlYWRzLnY4LmVycm9ycxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90",
-            "byKyAgoiS2V5d29yZFBsYW5BZEdyb3VwS2V5d29yZEVycm9yRW51bSKLAgoe",
+            "byLUAgoiS2V5d29yZFBsYW5BZEdyb3VwS2V5d29yZEVycm9yRW51bSKtAgoe",
             "S2V5d29yZFBsYW5BZEdyb3VwS2V5d29yZEVycm9yEg8KC1VOU1BFQ0lGSUVE",
             "EAASCwoHVU5LTk9XThABEh4KGklOVkFMSURfS0VZV09SRF9NQVRDSF9UWVBF",
             "EAISFQoRRFVQTElDQVRFX0tFWVdPUkQQAxIZChVLRVlXT1JEX1RFWFRfVE9P",
             "X0xPTkcQBBIdChlLRVlXT1JEX0hBU19JTlZBTElEX0NIQVJTEAUSHgoaS0VZ",
             "V09SRF9IQVNfVE9PX01BTllfV09SRFMQBhIYChRJTlZBTElEX0tFWVdPUkRf",
-            "VEVYVBAHEiAKHE5FR0FUSVZFX0tFWVdPUkRfSEFTX0NQQ19CSUQQCEL+AQoi",
-            "Y29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnY4LmVycm9yc0IjS2V5d29yZFBs",
-            "YW5BZEdyb3VwS2V5d29yZEVycm9yUHJvdG9QAVpEZ29vZ2xlLmdvbGFuZy5v",
-            "cmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Y4L2Vycm9y",
-            "cztlcnJvcnOiAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WOC5FcnJv",
-            "cnPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWOFxFcnJvcnPqAiJHb29nbGU6",
-            "OkFkczo6R29vZ2xlQWRzOjpWODo6RXJyb3JzYgZwcm90bzM="));
+            "VEVYVBAHEiAKHE5FR0FUSVZFX0tFWVdPUkRfSEFTX0NQQ19CSUQQCBIgChxO",
+            "RVdfQk1NX0tFWVdPUkRTX05PVF9BTExPV0VEEAlC/gEKImNvbS5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52OC5lcnJvcnNCI0tleXdvcmRQbGFuQWRHcm91cEtl",
+            "eXdvcmRFcnJvclByb3RvUAFaRGdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3Rv",
+            "L2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92OC9lcnJvcnM7ZXJyb3JzogID",
+            "R0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjguRXJyb3JzygIeR29vZ2xl",
+            "XEFkc1xHb29nbGVBZHNcVjhcRXJyb3Jz6gIiR29vZ2xlOjpBZHM6Okdvb2ds",
+            "ZUFkczo6Vjg6OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -62,19 +63,23 @@ namespace Google.Ads.GoogleAds.V8.Errors {
     private static readonly pb::MessageParser<KeywordPlanAdGroupKeywordErrorEnum> _parser = new pb::MessageParser<KeywordPlanAdGroupKeywordErrorEnum>(() => new KeywordPlanAdGroupKeywordErrorEnum());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<KeywordPlanAdGroupKeywordErrorEnum> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Ads.GoogleAds.V8.Errors.KeywordPlanAdGroupKeywordErrorReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public KeywordPlanAdGroupKeywordErrorEnum() {
       OnConstruction();
     }
@@ -82,21 +87,25 @@ namespace Google.Ads.GoogleAds.V8.Errors {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public KeywordPlanAdGroupKeywordErrorEnum(KeywordPlanAdGroupKeywordErrorEnum other) : this() {
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public KeywordPlanAdGroupKeywordErrorEnum Clone() {
       return new KeywordPlanAdGroupKeywordErrorEnum(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as KeywordPlanAdGroupKeywordErrorEnum);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(KeywordPlanAdGroupKeywordErrorEnum other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -108,6 +117,7 @@ namespace Google.Ads.GoogleAds.V8.Errors {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (_unknownFields != null) {
@@ -117,11 +127,13 @@ namespace Google.Ads.GoogleAds.V8.Errors {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -134,6 +146,7 @@ namespace Google.Ads.GoogleAds.V8.Errors {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -142,6 +155,7 @@ namespace Google.Ads.GoogleAds.V8.Errors {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (_unknownFields != null) {
@@ -151,6 +165,7 @@ namespace Google.Ads.GoogleAds.V8.Errors {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(KeywordPlanAdGroupKeywordErrorEnum other) {
       if (other == null) {
         return;
@@ -159,6 +174,7 @@ namespace Google.Ads.GoogleAds.V8.Errors {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -176,6 +192,7 @@ namespace Google.Ads.GoogleAds.V8.Errors {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -191,6 +208,7 @@ namespace Google.Ads.GoogleAds.V8.Errors {
     #region Nested types
     /// <summary>Container for nested types declared in the KeywordPlanAdGroupKeywordErrorEnum message type.</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static partial class Types {
       /// <summary>
       /// Enum describing possible errors from applying a keyword plan ad group
@@ -234,6 +252,10 @@ namespace Google.Ads.GoogleAds.V8.Errors {
         /// Cpc Bid set for negative keyword.
         /// </summary>
         [pbr::OriginalName("NEGATIVE_KEYWORD_HAS_CPC_BID")] NegativeKeywordHasCpcBid = 8,
+        /// <summary>
+        /// New broad match modifier (BMM) KpAdGroupKeywords are not allowed.
+        /// </summary>
+        [pbr::OriginalName("NEW_BMM_KEYWORDS_NOT_ALLOWED")] NewBmmKeywordsNotAllowed = 9,
       }
 
     }

@@ -63,19 +63,23 @@ namespace Google.Ads.GoogleAds.V8.Enums {
     private static readonly pb::MessageParser<PlaceholderTypeEnum> _parser = new pb::MessageParser<PlaceholderTypeEnum>(() => new PlaceholderTypeEnum());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<PlaceholderTypeEnum> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Ads.GoogleAds.V8.Enums.PlaceholderTypeReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PlaceholderTypeEnum() {
       OnConstruction();
     }
@@ -83,21 +87,25 @@ namespace Google.Ads.GoogleAds.V8.Enums {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PlaceholderTypeEnum(PlaceholderTypeEnum other) : this() {
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PlaceholderTypeEnum Clone() {
       return new PlaceholderTypeEnum(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as PlaceholderTypeEnum);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(PlaceholderTypeEnum other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -109,6 +117,7 @@ namespace Google.Ads.GoogleAds.V8.Enums {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (_unknownFields != null) {
@@ -118,11 +127,13 @@ namespace Google.Ads.GoogleAds.V8.Enums {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -135,6 +146,7 @@ namespace Google.Ads.GoogleAds.V8.Enums {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -143,6 +155,7 @@ namespace Google.Ads.GoogleAds.V8.Enums {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (_unknownFields != null) {
@@ -152,6 +165,7 @@ namespace Google.Ads.GoogleAds.V8.Enums {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(PlaceholderTypeEnum other) {
       if (other == null) {
         return;
@@ -160,6 +174,7 @@ namespace Google.Ads.GoogleAds.V8.Enums {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -177,6 +192,7 @@ namespace Google.Ads.GoogleAds.V8.Enums {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -192,6 +208,7 @@ namespace Google.Ads.GoogleAds.V8.Enums {
     #region Nested types
     /// <summary>Container for nested types declared in the PlaceholderTypeEnum message type.</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static partial class Types {
       /// <summary>
       /// Possible placeholder types for a feed mapping.
@@ -221,8 +238,8 @@ namespace Google.Ads.GoogleAds.V8.Enums {
         /// </summary>
         [pbr::OriginalName("APP")] App = 4,
         /// <summary>
-        /// Lets you show locations of businesses from your Google My Business
-        /// account in your ad. This helps people find your locations by showing your
+        /// Lets you show locations of businesses from your Business Profile
+        /// in your ad. This helps people find your locations by showing your
         /// ads with your address, a map to your location, or the distance to your
         /// business. This extension type is useful to draw customers to your
         /// brick-and-mortar location.

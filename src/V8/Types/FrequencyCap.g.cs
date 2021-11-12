@@ -71,19 +71,23 @@ namespace Google.Ads.GoogleAds.V8.Common {
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<FrequencyCapEntry> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Ads.GoogleAds.V8.Common.FrequencyCapReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FrequencyCapEntry() {
       OnConstruction();
     }
@@ -91,6 +95,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FrequencyCapEntry(FrequencyCapEntry other) : this() {
       _hasBits0 = other._hasBits0;
       key_ = other.key_ != null ? other.key_.Clone() : null;
@@ -99,6 +104,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FrequencyCapEntry Clone() {
       return new FrequencyCapEntry(this);
     }
@@ -111,6 +117,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     /// than one frequency cap with the same key.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Common.FrequencyCapKey Key {
       get { return key_; }
       set {
@@ -125,6 +132,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     /// Maximum number of events allowed during the time range by this cap.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Cap {
       get { if ((_hasBits0 & 1) != 0) { return cap_; } else { return 0; } }
       set {
@@ -134,21 +142,25 @@ namespace Google.Ads.GoogleAds.V8.Common {
     }
     /// <summary>Gets whether the "cap" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCap {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "cap" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCap() {
       _hasBits0 &= ~1;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as FrequencyCapEntry);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(FrequencyCapEntry other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -162,6 +174,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (key_ != null) hash ^= Key.GetHashCode();
@@ -173,11 +186,13 @@ namespace Google.Ads.GoogleAds.V8.Common {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -198,6 +213,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (key_ != null) {
         output.WriteRawTag(10);
@@ -214,6 +230,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (key_ != null) {
@@ -229,6 +246,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(FrequencyCapEntry other) {
       if (other == null) {
         return;
@@ -246,6 +264,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -274,6 +293,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -312,19 +332,23 @@ namespace Google.Ads.GoogleAds.V8.Common {
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<FrequencyCapKey> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Ads.GoogleAds.V8.Common.FrequencyCapReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FrequencyCapKey() {
       OnConstruction();
     }
@@ -332,6 +356,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FrequencyCapKey(FrequencyCapKey other) : this() {
       _hasBits0 = other._hasBits0;
       level_ = other.level_;
@@ -342,6 +367,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public FrequencyCapKey Clone() {
       return new FrequencyCapKey(this);
     }
@@ -354,6 +380,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     /// The cap is applied to all the entities of this level.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.FrequencyCapLevelEnum.Types.FrequencyCapLevel Level {
       get { return level_; }
       set {
@@ -368,6 +395,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     /// The type of event that the cap applies to (e.g. impression).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.FrequencyCapEventTypeEnum.Types.FrequencyCapEventType EventType {
       get { return eventType_; }
       set {
@@ -382,6 +410,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     /// Unit of time the cap is defined at (e.g. day, week).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.FrequencyCapTimeUnitEnum.Types.FrequencyCapTimeUnit TimeUnit {
       get { return timeUnit_; }
       set {
@@ -396,6 +425,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     /// Number of time units the cap lasts.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int TimeLength {
       get { if ((_hasBits0 & 1) != 0) { return timeLength_; } else { return 0; } }
       set {
@@ -405,21 +435,25 @@ namespace Google.Ads.GoogleAds.V8.Common {
     }
     /// <summary>Gets whether the "time_length" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasTimeLength {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "time_length" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearTimeLength() {
       _hasBits0 &= ~1;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as FrequencyCapKey);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(FrequencyCapKey other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -435,6 +469,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Level != global::Google.Ads.GoogleAds.V8.Enums.FrequencyCapLevelEnum.Types.FrequencyCapLevel.Unspecified) hash ^= Level.GetHashCode();
@@ -448,11 +483,13 @@ namespace Google.Ads.GoogleAds.V8.Common {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -481,6 +518,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Level != global::Google.Ads.GoogleAds.V8.Enums.FrequencyCapLevelEnum.Types.FrequencyCapLevel.Unspecified) {
         output.WriteRawTag(8);
@@ -505,6 +543,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Level != global::Google.Ads.GoogleAds.V8.Enums.FrequencyCapLevelEnum.Types.FrequencyCapLevel.Unspecified) {
@@ -526,6 +565,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(FrequencyCapKey other) {
       if (other == null) {
         return;
@@ -546,6 +586,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -579,6 +620,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {

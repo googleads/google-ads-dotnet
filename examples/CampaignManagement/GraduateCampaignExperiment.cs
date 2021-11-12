@@ -14,14 +14,14 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V8.Errors;
-using Google.Ads.GoogleAds.V8.Resources;
-using Google.Ads.GoogleAds.V8.Services;
+using Google.Ads.GoogleAds.V9.Errors;
+using Google.Ads.GoogleAds.V9.Resources;
+using Google.Ads.GoogleAds.V9.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V8.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V9.Enums.BudgetDeliveryMethodEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V8
+namespace Google.Ads.GoogleAds.Examples.V9
 {
     /// <summary>
     /// This code example illustrates how to graduate a campaign experiment.
@@ -94,7 +94,7 @@ namespace Google.Ads.GoogleAds.Examples.V8
         {
             // Get the CampaignExperimentService.
             CampaignExperimentServiceClient campaignExperimentService = client.GetService(
-                Services.V8.CampaignExperimentService);
+                Services.V9.CampaignExperimentService);
 
             try
             {
@@ -136,7 +136,7 @@ namespace Google.Ads.GoogleAds.Examples.V8
         {
             // Get the BudgetService.
             CampaignBudgetServiceClient budgetService = client.GetService(
-                Services.V8.CampaignBudgetService);
+                Services.V9.CampaignBudgetService);
 
             // Create the campaign budget.
             CampaignBudget budget = new CampaignBudget()

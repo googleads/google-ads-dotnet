@@ -94,19 +94,23 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CampaignBudget> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Ads.GoogleAds.V8.Resources.CampaignBudgetReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CampaignBudget() {
       OnConstruction();
     }
@@ -114,6 +118,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CampaignBudget(CampaignBudget other) : this() {
       _hasBits0 = other._hasBits0;
       resourceName_ = other.resourceName_;
@@ -137,6 +142,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CampaignBudget Clone() {
       return new CampaignBudget(this);
     }
@@ -151,6 +157,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// `customers/{customer_id}/campaignBudgets/{campaign_budget_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ResourceName {
       get { return resourceName_; }
       set {
@@ -170,6 +177,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// among different campaigns to get optimum results.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long Id {
       get { if ((_hasBits0 & 1) != 0) { return id_; } else { return 0L; } }
       set {
@@ -179,11 +187,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "id" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasId {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "id" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearId() {
       _hasBits0 &= ~1;
     }
@@ -203,6 +213,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// in UTF-8 bytes, (trimmed).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
       get { return name_ ?? ""; }
       set {
@@ -211,11 +222,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "name" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasName {
       get { return name_ != null; }
     }
     /// <summary>Clears the value of the "name" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearName() {
       name_ = null;
     }
@@ -229,6 +242,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// currency unit. Monthly spend is capped at 30.4 times this amount.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long AmountMicros {
       get { if ((_hasBits0 & 2) != 0) { return amountMicros_; } else { return 0L; } }
       set {
@@ -238,11 +252,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "amount_micros" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasAmountMicros {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "amount_micros" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearAmountMicros() {
       _hasBits0 &= ~2;
     }
@@ -256,6 +272,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// currency unit.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long TotalAmountMicros {
       get { if ((_hasBits0 & 4) != 0) { return totalAmountMicros_; } else { return 0L; } }
       set {
@@ -265,11 +282,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "total_amount_micros" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasTotalAmountMicros {
       get { return (_hasBits0 & 4) != 0; }
     }
     /// <summary>Clears the value of the "total_amount_micros" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearTotalAmountMicros() {
       _hasBits0 &= ~4;
     }
@@ -281,6 +300,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The status of this campaign budget. This field is read-only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.BudgetStatusEnum.Types.BudgetStatus Status {
       get { return status_; }
       set {
@@ -298,6 +318,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Defaults to STANDARD if unspecified in a create operation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod DeliveryMethod {
       get { return deliveryMethod_; }
       set {
@@ -326,6 +347,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// A shared campaign budget can never become non-shared.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool ExplicitlyShared {
       get { if ((_hasBits0 & 8) != 0) { return explicitlyShared_; } else { return false; } }
       set {
@@ -335,11 +357,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "explicitly_shared" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasExplicitlyShared {
       get { return (_hasBits0 & 8) != 0; }
     }
     /// <summary>Clears the value of the "explicitly_shared" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearExplicitlyShared() {
       _hasBits0 &= ~8;
     }
@@ -353,6 +377,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// This field is read-only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long ReferenceCount {
       get { if ((_hasBits0 & 16) != 0) { return referenceCount_; } else { return 0L; } }
       set {
@@ -362,11 +387,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "reference_count" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasReferenceCount {
       get { return (_hasBits0 & 16) != 0; }
     }
     /// <summary>Clears the value of the "reference_count" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearReferenceCount() {
       _hasBits0 &= ~16;
     }
@@ -380,6 +407,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// This field is read-only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasRecommendedBudget {
       get { if ((_hasBits0 & 32) != 0) { return hasRecommendedBudget_; } else { return false; } }
       set {
@@ -389,11 +417,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "has_recommended_budget" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasHasRecommendedBudget {
       get { return (_hasBits0 & 32) != 0; }
     }
     /// <summary>Clears the value of the "has_recommended_budget" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearHasRecommendedBudget() {
       _hasBits0 &= ~32;
     }
@@ -410,6 +440,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// This field is read-only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long RecommendedBudgetAmountMicros {
       get { if ((_hasBits0 & 64) != 0) { return recommendedBudgetAmountMicros_; } else { return 0L; } }
       set {
@@ -419,11 +450,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "recommended_budget_amount_micros" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasRecommendedBudgetAmountMicros {
       get { return (_hasBits0 & 64) != 0; }
     }
     /// <summary>Clears the value of the "recommended_budget_amount_micros" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearRecommendedBudgetAmountMicros() {
       _hasBits0 &= ~64;
     }
@@ -435,6 +468,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. Period over which to spend the budget. Defaults to DAILY if not specified.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.BudgetPeriodEnum.Types.BudgetPeriod Period {
       get { return period_; }
       set {
@@ -451,6 +485,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// This field is read-only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long RecommendedBudgetEstimatedChangeWeeklyClicks {
       get { if ((_hasBits0 & 128) != 0) { return recommendedBudgetEstimatedChangeWeeklyClicks_; } else { return 0L; } }
       set {
@@ -460,11 +495,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "recommended_budget_estimated_change_weekly_clicks" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasRecommendedBudgetEstimatedChangeWeeklyClicks {
       get { return (_hasBits0 & 128) != 0; }
     }
     /// <summary>Clears the value of the "recommended_budget_estimated_change_weekly_clicks" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearRecommendedBudgetEstimatedChangeWeeklyClicks() {
       _hasBits0 &= ~128;
     }
@@ -479,6 +516,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// This field is read-only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long RecommendedBudgetEstimatedChangeWeeklyCostMicros {
       get { if ((_hasBits0 & 256) != 0) { return recommendedBudgetEstimatedChangeWeeklyCostMicros_; } else { return 0L; } }
       set {
@@ -488,11 +526,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "recommended_budget_estimated_change_weekly_cost_micros" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasRecommendedBudgetEstimatedChangeWeeklyCostMicros {
       get { return (_hasBits0 & 256) != 0; }
     }
     /// <summary>Clears the value of the "recommended_budget_estimated_change_weekly_cost_micros" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearRecommendedBudgetEstimatedChangeWeeklyCostMicros() {
       _hasBits0 &= ~256;
     }
@@ -507,6 +547,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// This field is read-only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long RecommendedBudgetEstimatedChangeWeeklyInteractions {
       get { if ((_hasBits0 & 512) != 0) { return recommendedBudgetEstimatedChangeWeeklyInteractions_; } else { return 0L; } }
       set {
@@ -516,11 +557,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "recommended_budget_estimated_change_weekly_interactions" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasRecommendedBudgetEstimatedChangeWeeklyInteractions {
       get { return (_hasBits0 & 512) != 0; }
     }
     /// <summary>Clears the value of the "recommended_budget_estimated_change_weekly_interactions" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearRecommendedBudgetEstimatedChangeWeeklyInteractions() {
       _hasBits0 &= ~512;
     }
@@ -534,6 +577,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// This field is read-only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long RecommendedBudgetEstimatedChangeWeeklyViews {
       get { if ((_hasBits0 & 1024) != 0) { return recommendedBudgetEstimatedChangeWeeklyViews_; } else { return 0L; } }
       set {
@@ -543,11 +587,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "recommended_budget_estimated_change_weekly_views" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasRecommendedBudgetEstimatedChangeWeeklyViews {
       get { return (_hasBits0 & 1024) != 0; }
     }
     /// <summary>Clears the value of the "recommended_budget_estimated_change_weekly_views" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearRecommendedBudgetEstimatedChangeWeeklyViews() {
       _hasBits0 &= ~1024;
     }
@@ -559,6 +605,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. The type of the campaign budget.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.BudgetTypeEnum.Types.BudgetType Type {
       get { return type_; }
       set {
@@ -567,11 +614,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CampaignBudget);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CampaignBudget other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -600,6 +649,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
@@ -626,11 +676,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -711,6 +763,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
@@ -787,6 +840,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ResourceName.Length != 0) {
@@ -847,6 +901,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CampaignBudget other) {
       if (other == null) {
         return;
@@ -906,6 +961,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -991,6 +1047,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {

@@ -18,10 +18,10 @@ using System.IO;
 using System.Linq;
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V8.Services;
+using Google.Ads.GoogleAds.V9.Services;
 using Google.Api.Ads.Common.Util;
 
-namespace Google.Ads.GoogleAds.Examples.V8
+namespace Google.Ads.GoogleAds.Examples.V9
 {
     /// <summary>
     /// This code example illustrates how to use Google Ads API to get metrics about a campaign and
@@ -97,7 +97,7 @@ namespace Google.Ads.GoogleAds.Examples.V8
         public void Run(GoogleAdsClient client, long customerId, string outputFilePath)
         {
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V8.GoogleAdsService);
+                client.GetService(Services.V9.GoogleAdsService);
 
             // Create a query that retrieves campaigns.
             string query = @"

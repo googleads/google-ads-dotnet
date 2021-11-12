@@ -104,19 +104,23 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Invoice> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Ads.GoogleAds.V8.Resources.InvoiceReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Invoice() {
       OnConstruction();
     }
@@ -124,6 +128,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Invoice(Invoice other) : this() {
       _hasBits0 = other._hasBits0;
       resourceName_ = other.resourceName_;
@@ -153,6 +158,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Invoice Clone() {
       return new Invoice(this);
     }
@@ -168,6 +174,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// `customers/{customer_id}/invoices/{invoice_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ResourceName {
       get { return resourceName_; }
       set {
@@ -182,6 +189,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The ID of the invoice. It appears on the invoice PDF as "Invoice number".
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
       get { return id_ ?? ""; }
       set {
@@ -190,11 +198,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "id" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasId {
       get { return id_ != null; }
     }
     /// <summary>Clears the value of the "id" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearId() {
       id_ = null;
     }
@@ -206,6 +216,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The type of invoice.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.InvoiceTypeEnum.Types.InvoiceType Type {
       get { return type_; }
       set {
@@ -222,6 +233,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// `customers/{customer_id}/billingSetups/{billing_setup_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string BillingSetup {
       get { return billingSetup_ ?? ""; }
       set {
@@ -230,11 +242,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "billing_setup" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasBillingSetup {
       get { return billingSetup_ != null; }
     }
     /// <summary>Clears the value of the "billing_setup" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearBillingSetup() {
       billingSetup_ = null;
     }
@@ -248,6 +262,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// "Billing Account Number".
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PaymentsAccountId {
       get { return paymentsAccountId_ ?? ""; }
       set {
@@ -256,11 +271,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "payments_account_id" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasPaymentsAccountId {
       get { return paymentsAccountId_ != null; }
     }
     /// <summary>Clears the value of the "payments_account_id" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearPaymentsAccountId() {
       paymentsAccountId_ = null;
     }
@@ -274,6 +291,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// "Billing ID".
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PaymentsProfileId {
       get { return paymentsProfileId_ ?? ""; }
       set {
@@ -282,11 +300,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "payments_profile_id" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasPaymentsProfileId {
       get { return paymentsProfileId_ != null; }
     }
     /// <summary>Clears the value of the "payments_profile_id" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearPaymentsProfileId() {
       paymentsProfileId_ = null;
     }
@@ -299,6 +319,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// either "Issue date" or "Invoice date".
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string IssueDate {
       get { return issueDate_ ?? ""; }
       set {
@@ -307,11 +328,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "issue_date" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasIssueDate {
       get { return issueDate_ != null; }
     }
     /// <summary>Clears the value of the "issue_date" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearIssueDate() {
       issueDate_ = null;
     }
@@ -323,6 +346,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The due date in yyyy-mm-dd format.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string DueDate {
       get { return dueDate_ ?? ""; }
       set {
@@ -331,11 +355,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "due_date" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasDueDate {
       get { return dueDate_ != null; }
     }
     /// <summary>Clears the value of the "due_date" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearDueDate() {
       dueDate_ = null;
     }
@@ -347,6 +373,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The service period date range of this invoice. The end date is inclusive.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Common.DateRange ServiceDateRange {
       get { return serviceDateRange_; }
       set {
@@ -362,6 +389,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// currency codes derived from the ISO 4217 standard is supported.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CurrencyCode {
       get { return currencyCode_ ?? ""; }
       set {
@@ -370,11 +398,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "currency_code" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCurrencyCode {
       get { return currencyCode_ != null; }
     }
     /// <summary>Clears the value of the "currency_code" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCurrencyCode() {
       currencyCode_ = null;
     }
@@ -386,6 +416,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The pretax subtotal amount of invoice level adjustments, in micros.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long AdjustmentsSubtotalAmountMicros {
       get { return adjustmentsSubtotalAmountMicros_; }
       set {
@@ -400,6 +431,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The sum of taxes on the invoice level adjustments, in micros.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long AdjustmentsTaxAmountMicros {
       get { return adjustmentsTaxAmountMicros_; }
       set {
@@ -414,6 +446,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The total amount of invoice level adjustments, in micros.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long AdjustmentsTotalAmountMicros {
       get { return adjustmentsTotalAmountMicros_; }
       set {
@@ -428,6 +461,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The pretax subtotal amount of invoice level regulatory costs, in micros.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long RegulatoryCostsSubtotalAmountMicros {
       get { return regulatoryCostsSubtotalAmountMicros_; }
       set {
@@ -442,6 +476,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The sum of taxes on the invoice level regulatory costs, in micros.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long RegulatoryCostsTaxAmountMicros {
       get { return regulatoryCostsTaxAmountMicros_; }
       set {
@@ -456,6 +491,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The total amount of invoice level regulatory costs, in micros.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long RegulatoryCostsTotalAmountMicros {
       get { return regulatoryCostsTotalAmountMicros_; }
       set {
@@ -475,6 +511,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// longer included.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long SubtotalAmountMicros {
       get { if ((_hasBits0 & 1) != 0) { return subtotalAmountMicros_; } else { return 0L; } }
       set {
@@ -484,11 +521,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "subtotal_amount_micros" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasSubtotalAmountMicros {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "subtotal_amount_micros" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearSubtotalAmountMicros() {
       _hasBits0 &= ~1;
     }
@@ -502,6 +541,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// account budget.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long TaxAmountMicros {
       get { if ((_hasBits0 & 2) != 0) { return taxAmountMicros_; } else { return 0L; } }
       set {
@@ -511,11 +551,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "tax_amount_micros" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasTaxAmountMicros {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "tax_amount_micros" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearTaxAmountMicros() {
       _hasBits0 &= ~2;
     }
@@ -531,6 +573,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Invoice.tax_amount_micros.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long TotalAmountMicros {
       get { if ((_hasBits0 & 4) != 0) { return totalAmountMicros_; } else { return 0L; } }
       set {
@@ -540,11 +583,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "total_amount_micros" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasTotalAmountMicros {
       get { return (_hasBits0 & 4) != 0; }
     }
     /// <summary>Clears the value of the "total_amount_micros" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearTotalAmountMicros() {
       _hasBits0 &= ~4;
     }
@@ -561,6 +606,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// `customers/{customer_id}/invoices/{invoice_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CorrectedInvoice {
       get { return correctedInvoice_ ?? ""; }
       set {
@@ -569,11 +615,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "corrected_invoice" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCorrectedInvoice {
       get { return correctedInvoice_ != null; }
     }
     /// <summary>Clears the value of the "corrected_invoice" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCorrectedInvoice() {
       correctedInvoice_ = null;
     }
@@ -594,6 +642,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// `customers/{customer_id}/invoices/{invoice_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> ReplacedInvoices {
       get { return replacedInvoices_; }
     }
@@ -606,6 +655,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// token to request the PDF with this URL.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string PdfUrl {
       get { return pdfUrl_ ?? ""; }
       set {
@@ -614,11 +664,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "pdf_url" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasPdfUrl {
       get { return pdfUrl_ != null; }
     }
     /// <summary>Clears the value of the "pdf_url" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearPdfUrl() {
       pdfUrl_ = null;
     }
@@ -633,16 +685,19 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// invoice.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Google.Ads.GoogleAds.V8.Resources.Invoice.Types.AccountBudgetSummary> AccountBudgetSummaries {
       get { return accountBudgetSummaries_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Invoice);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Invoice other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -677,6 +732,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
@@ -709,11 +765,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -812,6 +870,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
@@ -906,6 +965,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ResourceName.Length != 0) {
@@ -980,6 +1040,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Invoice other) {
       if (other == null) {
         return;
@@ -1056,6 +1117,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1168,6 +1230,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1278,6 +1341,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     #region Nested types
     /// <summary>Container for nested types declared in the Invoice message type.</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static partial class Types {
       /// <summary>
       /// Represents a summarized account budget billable cost.
@@ -1291,19 +1355,23 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         private pb::UnknownFieldSet _unknownFields;
         private int _hasBits0;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pb::MessageParser<AccountBudgetSummary> Parser { get { return _parser; } }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
           get { return global::Google.Ads.GoogleAds.V8.Resources.Invoice.Descriptor.NestedTypes[0]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         pbr::MessageDescriptor pb::IMessage.Descriptor {
           get { return Descriptor; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public AccountBudgetSummary() {
           OnConstruction();
         }
@@ -1311,6 +1379,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         partial void OnConstruction();
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public AccountBudgetSummary(AccountBudgetSummary other) : this() {
           _hasBits0 = other._hasBits0;
           customer_ = other.customer_;
@@ -1326,6 +1395,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public AccountBudgetSummary Clone() {
           return new AccountBudgetSummary(this);
         }
@@ -1342,6 +1412,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// `customers/{customer_id}`
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public string Customer {
           get { return customer_ ?? ""; }
           set {
@@ -1350,11 +1421,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
         /// <summary>Gets whether the "customer" field is set</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasCustomer {
           get { return customer_ != null; }
         }
         /// <summary>Clears the value of the "customer" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearCustomer() {
           customer_ = null;
         }
@@ -1367,6 +1440,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// invoice PDF as "Account".
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public string CustomerDescriptiveName {
           get { return customerDescriptiveName_ ?? ""; }
           set {
@@ -1375,11 +1449,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
         /// <summary>Gets whether the "customer_descriptive_name" field is set</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasCustomerDescriptiveName {
           get { return customerDescriptiveName_ != null; }
         }
         /// <summary>Clears the value of the "customer_descriptive_name" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearCustomerDescriptiveName() {
           customerDescriptiveName_ = null;
         }
@@ -1395,6 +1471,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// `customers/{customer_id}/accountBudgets/{account_budget_id}`
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public string AccountBudget {
           get { return accountBudget_ ?? ""; }
           set {
@@ -1403,11 +1480,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
         /// <summary>Gets whether the "account_budget" field is set</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasAccountBudget {
           get { return accountBudget_ != null; }
         }
         /// <summary>Clears the value of the "account_budget" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearAccountBudget() {
           accountBudget_ = null;
         }
@@ -1420,6 +1499,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// budget".
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public string AccountBudgetName {
           get { return accountBudgetName_ ?? ""; }
           set {
@@ -1428,11 +1508,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
         /// <summary>Gets whether the "account_budget_name" field is set</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasAccountBudgetName {
           get { return accountBudgetName_ != null; }
         }
         /// <summary>Clears the value of the "account_budget_name" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearAccountBudgetName() {
           accountBudgetName_ = null;
         }
@@ -1445,6 +1527,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// invoice PDF as "Purchase order".
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public string PurchaseOrderNumber {
           get { return purchaseOrderNumber_ ?? ""; }
           set {
@@ -1453,11 +1536,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
         /// <summary>Gets whether the "purchase_order_number" field is set</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasPurchaseOrderNumber {
           get { return purchaseOrderNumber_ != null; }
         }
         /// <summary>Clears the value of the "purchase_order_number" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearPurchaseOrderNumber() {
           purchaseOrderNumber_ = null;
         }
@@ -1470,6 +1555,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// period, in micros.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public long SubtotalAmountMicros {
           get { if ((_hasBits0 & 1) != 0) { return subtotalAmountMicros_; } else { return 0L; } }
           set {
@@ -1479,11 +1565,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
         /// <summary>Gets whether the "subtotal_amount_micros" field is set</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasSubtotalAmountMicros {
           get { return (_hasBits0 & 1) != 0; }
         }
         /// <summary>Clears the value of the "subtotal_amount_micros" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearSubtotalAmountMicros() {
           _hasBits0 &= ~1;
         }
@@ -1496,6 +1584,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// micros.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public long TaxAmountMicros {
           get { if ((_hasBits0 & 2) != 0) { return taxAmountMicros_; } else { return 0L; } }
           set {
@@ -1505,11 +1594,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
         /// <summary>Gets whether the "tax_amount_micros" field is set</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasTaxAmountMicros {
           get { return (_hasBits0 & 2) != 0; }
         }
         /// <summary>Clears the value of the "tax_amount_micros" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearTaxAmountMicros() {
           _hasBits0 &= ~2;
         }
@@ -1523,6 +1614,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// the account budget tax amount.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public long TotalAmountMicros {
           get { if ((_hasBits0 & 4) != 0) { return totalAmountMicros_; } else { return 0L; } }
           set {
@@ -1532,11 +1624,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
         /// <summary>Gets whether the "total_amount_micros" field is set</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool HasTotalAmountMicros {
           get { return (_hasBits0 & 4) != 0; }
         }
         /// <summary>Clears the value of the "total_amount_micros" field</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void ClearTotalAmountMicros() {
           _hasBits0 &= ~4;
         }
@@ -1550,6 +1644,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         /// be different from the account budget's start and end time.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public global::Google.Ads.GoogleAds.V8.Common.DateRange BillableActivityDateRange {
           get { return billableActivityDateRange_; }
           set {
@@ -1558,11 +1653,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override bool Equals(object other) {
           return Equals(other as AccountBudgetSummary);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool Equals(AccountBudgetSummary other) {
           if (ReferenceEquals(other, null)) {
             return false;
@@ -1583,6 +1680,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override int GetHashCode() {
           int hash = 1;
           if (HasCustomer) hash ^= Customer.GetHashCode();
@@ -1601,11 +1699,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override string ToString() {
           return pb::JsonFormatter.ToDiagnosticString(this);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void WriteTo(pb::CodedOutputStream output) {
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           output.WriteRawMessage(this);
@@ -1654,6 +1754,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
           if (billableActivityDateRange_ != null) {
             output.WriteRawTag(74);
@@ -1698,6 +1799,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         #endif
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public int CalculateSize() {
           int size = 0;
           if (HasCustomer) {
@@ -1734,6 +1836,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void MergeFrom(AccountBudgetSummary other) {
           if (other == null) {
             return;
@@ -1772,6 +1875,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void MergeFrom(pb::CodedInputStream input) {
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
           input.ReadRawMessage(this);
@@ -1828,6 +1932,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
         #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {

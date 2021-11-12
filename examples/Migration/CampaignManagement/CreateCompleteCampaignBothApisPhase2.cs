@@ -21,17 +21,17 @@ using System.Linq;
 using System.Web;
 
 using aw = global::Google.Api.Ads.AdWords.v201809;
-using gag__AdvertisingChannelType = Google.Ads.GoogleAds.V8.Enums.AdvertisingChannelTypeEnum.Types.AdvertisingChannelType;
-using gag__BudgetDeliveryMethod = Google.Ads.GoogleAds.V8.Enums.BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod;
-using gag__CampaignStatus = Google.Ads.GoogleAds.V8.Enums.CampaignStatusEnum.Types.CampaignStatus;
-using gag__NetworkSettings = Google.Ads.GoogleAds.V8.Resources.Campaign.Types.NetworkSettings;
+using gag__AdvertisingChannelType = Google.Ads.GoogleAds.V9.Enums.AdvertisingChannelTypeEnum.Types.AdvertisingChannelType;
+using gag__BudgetDeliveryMethod = Google.Ads.GoogleAds.V9.Enums.BudgetDeliveryMethodEnum.Types.BudgetDeliveryMethod;
+using gag__CampaignStatus = Google.Ads.GoogleAds.V9.Enums.CampaignStatusEnum.Types.CampaignStatus;
+using gag__NetworkSettings = Google.Ads.GoogleAds.V9.Resources.Campaign.Types.NetworkSettings;
 
-using gagvc = Google.Ads.GoogleAds.V8.Common;
-using gagver = Google.Ads.GoogleAds.V8.Errors;
-using gagvr = Google.Ads.GoogleAds.V8.Resources;
-using gagvs = Google.Ads.GoogleAds.V8.Services;
+using gagvc = Google.Ads.GoogleAds.V9.Common;
+using gagver = Google.Ads.GoogleAds.V9.Errors;
+using gagvr = Google.Ads.GoogleAds.V9.Resources;
+using gagvs = Google.Ads.GoogleAds.V9.Services;
 
-namespace Google.Ads.GoogleAds.Examples.V8.Migration.CampaignManagement
+namespace Google.Ads.GoogleAds.Examples.V9.Migration.CampaignManagement
 {
     /// <summary>
     /// This code example is the third in a series of code examples that shows how to create
@@ -101,7 +101,7 @@ namespace Google.Ads.GoogleAds.Examples.V8.Migration.CampaignManagement
         {
             // Get the CampaignBudgetService.
             gagvs::CampaignBudgetServiceClient budgetService = client.GetService(
-                Services.V8.CampaignBudgetService);
+                Services.V9.CampaignBudgetService);
 
             // Create the campaign budget.
             gagvr::CampaignBudget budget = new gagvr::CampaignBudget()
@@ -146,7 +146,7 @@ namespace Google.Ads.GoogleAds.Examples.V8.Migration.CampaignManagement
         {
             // Get the GoogleAdsService.
             gagvs::GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V8.GoogleAdsService);
+                Services.V9.GoogleAdsService);
 
             // Create the search query.
             string searchQuery = "SELECT campaign_budget.id, campaign_budget.name, " +
@@ -173,7 +173,7 @@ namespace Google.Ads.GoogleAds.Examples.V8.Migration.CampaignManagement
         {
             // Get the CampaignService.
             gagvs::CampaignServiceClient campaignService = client.GetService(
-                Services.V8.CampaignService);
+                Services.V9.CampaignService);
 
             // Create a budget to be used for the campaign.
             string budgetResource = gagver::ResourceNames.CampaignBudget(customerId, budgetId);
@@ -239,7 +239,7 @@ namespace Google.Ads.GoogleAds.Examples.V8.Migration.CampaignManagement
         {
             // Get the GoogleAdsService.
             gagvs::GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V8.GoogleAdsService);
+                Services.V9.GoogleAdsService);
 
             // Create the search query.
             string searchQuery = "SELECT campaign.id, campaign.name, " +

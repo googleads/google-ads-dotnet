@@ -14,13 +14,13 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V8.Errors;
-using Google.Ads.GoogleAds.V8.Services;
+using Google.Ads.GoogleAds.V9.Errors;
+using Google.Ads.GoogleAds.V9.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Google.Ads.GoogleAds.Examples.V8
+namespace Google.Ads.GoogleAds.Examples.V9
 {
     /// <summary>
     /// Removes feed items from a feed.
@@ -101,7 +101,7 @@ namespace Google.Ads.GoogleAds.Examples.V8
         public void Run(GoogleAdsClient client, long customerId, long feedId, long[] feedItemIds)
         {
             FeedItemServiceClient feedItemServiceClient = client.GetService(
-                Services.V8.FeedItemService);
+                Services.V9.FeedItemService);
 
             // Creates the remove operations.
             List<FeedItemOperation> operations = new List<FeedItemOperation>();

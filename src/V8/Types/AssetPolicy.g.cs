@@ -64,19 +64,23 @@ namespace Google.Ads.GoogleAds.V8.Common {
     private static readonly pb::MessageParser<AdAssetPolicySummary> _parser = new pb::MessageParser<AdAssetPolicySummary>(() => new AdAssetPolicySummary());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<AdAssetPolicySummary> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Ads.GoogleAds.V8.Common.AssetPolicyReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AdAssetPolicySummary() {
       OnConstruction();
     }
@@ -84,6 +88,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AdAssetPolicySummary(AdAssetPolicySummary other) : this() {
       policyTopicEntries_ = other.policyTopicEntries_.Clone();
       reviewStatus_ = other.reviewStatus_;
@@ -92,6 +97,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AdAssetPolicySummary Clone() {
       return new AdAssetPolicySummary(this);
     }
@@ -105,6 +111,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     /// The list of policy findings for this asset.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Google.Ads.GoogleAds.V8.Common.PolicyTopicEntry> PolicyTopicEntries {
       get { return policyTopicEntries_; }
     }
@@ -116,6 +123,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     /// Where in the review process this asset.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.PolicyReviewStatusEnum.Types.PolicyReviewStatus ReviewStatus {
       get { return reviewStatus_; }
       set {
@@ -131,6 +139,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     /// the status of its individual policy topic entries.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.PolicyApprovalStatusEnum.Types.PolicyApprovalStatus ApprovalStatus {
       get { return approvalStatus_; }
       set {
@@ -139,11 +148,13 @@ namespace Google.Ads.GoogleAds.V8.Common {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as AdAssetPolicySummary);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(AdAssetPolicySummary other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -158,6 +169,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= policyTopicEntries_.GetHashCode();
@@ -170,11 +182,13 @@ namespace Google.Ads.GoogleAds.V8.Common {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -196,6 +210,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       policyTopicEntries_.WriteTo(ref output, _repeated_policyTopicEntries_codec);
       if (ReviewStatus != global::Google.Ads.GoogleAds.V8.Enums.PolicyReviewStatusEnum.Types.PolicyReviewStatus.Unspecified) {
@@ -213,6 +228,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += policyTopicEntries_.CalculateSize(_repeated_policyTopicEntries_codec);
@@ -229,6 +245,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(AdAssetPolicySummary other) {
       if (other == null) {
         return;
@@ -244,6 +261,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -273,6 +291,7 @@ namespace Google.Ads.GoogleAds.V8.Common {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {

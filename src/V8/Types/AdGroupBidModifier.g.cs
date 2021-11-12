@@ -87,19 +87,23 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<AdGroupBidModifier> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Ads.GoogleAds.V8.Resources.AdGroupBidModifierReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AdGroupBidModifier() {
       OnConstruction();
     }
@@ -107,6 +111,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AdGroupBidModifier(AdGroupBidModifier other) : this() {
       _hasBits0 = other._hasBits0;
       resourceName_ = other.resourceName_;
@@ -143,6 +148,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AdGroupBidModifier Clone() {
       return new AdGroupBidModifier(this);
     }
@@ -157,6 +163,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// `customers/{customer_id}/adGroupBidModifiers/{ad_group_id}~{criterion_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ResourceName {
       get { return resourceName_; }
       set {
@@ -171,6 +178,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. The ad group to which this criterion belongs.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string AdGroup {
       get { return adGroup_ ?? ""; }
       set {
@@ -179,11 +187,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "ad_group" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasAdGroup {
       get { return adGroup_ != null; }
     }
     /// <summary>Clears the value of the "ad_group" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearAdGroup() {
       adGroup_ = null;
     }
@@ -197,6 +207,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// This field is ignored for mutates.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long CriterionId {
       get { if ((_hasBits0 & 1) != 0) { return criterionId_; } else { return 0L; } }
       set {
@@ -206,11 +217,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "criterion_id" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCriterionId {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "criterion_id" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCriterionId() {
       _hasBits0 &= ~1;
     }
@@ -224,6 +237,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Use 0 to opt out of a Device type.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double BidModifier {
       get { if ((_hasBits0 & 2) != 0) { return bidModifier_; } else { return 0D; } }
       set {
@@ -233,11 +247,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "bid_modifier" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasBidModifier {
       get { return (_hasBits0 & 2) != 0; }
     }
     /// <summary>Clears the value of the "bid_modifier" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearBidModifier() {
       _hasBits0 &= ~2;
     }
@@ -253,6 +269,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// This field is readonly.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string BaseAdGroup {
       get { return baseAdGroup_ ?? ""; }
       set {
@@ -261,11 +278,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "base_ad_group" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasBaseAdGroup {
       get { return baseAdGroup_ != null; }
     }
     /// <summary>Clears the value of the "base_ad_group" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearBaseAdGroup() {
       baseAdGroup_ = null;
     }
@@ -277,6 +296,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. Bid modifier source.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.BidModifierSourceEnum.Types.BidModifierSource BidModifierSource {
       get { return bidModifierSource_; }
       set {
@@ -290,6 +310,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. Criterion for hotel date selection (default dates vs. user selected).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Common.HotelDateSelectionTypeInfo HotelDateSelectionType {
       get { return criterionCase_ == CriterionOneofCase.HotelDateSelectionType ? (global::Google.Ads.GoogleAds.V8.Common.HotelDateSelectionTypeInfo) criterion_ : null; }
       set {
@@ -304,6 +325,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. Criterion for number of days prior to the stay the booking is being made.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Common.HotelAdvanceBookingWindowInfo HotelAdvanceBookingWindow {
       get { return criterionCase_ == CriterionOneofCase.HotelAdvanceBookingWindow ? (global::Google.Ads.GoogleAds.V8.Common.HotelAdvanceBookingWindowInfo) criterion_ : null; }
       set {
@@ -318,6 +340,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. Criterion for length of hotel stay in nights.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Common.HotelLengthOfStayInfo HotelLengthOfStay {
       get { return criterionCase_ == CriterionOneofCase.HotelLengthOfStay ? (global::Google.Ads.GoogleAds.V8.Common.HotelLengthOfStayInfo) criterion_ : null; }
       set {
@@ -332,6 +355,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. Criterion for day of the week the booking is for.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Common.HotelCheckInDayInfo HotelCheckInDay {
       get { return criterionCase_ == CriterionOneofCase.HotelCheckInDay ? (global::Google.Ads.GoogleAds.V8.Common.HotelCheckInDayInfo) criterion_ : null; }
       set {
@@ -346,6 +370,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. A device criterion.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Common.DeviceInfo Device {
       get { return criterionCase_ == CriterionOneofCase.Device ? (global::Google.Ads.GoogleAds.V8.Common.DeviceInfo) criterion_ : null; }
       set {
@@ -360,6 +385,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. A preferred content criterion.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Common.PreferredContentInfo PreferredContent {
       get { return criterionCase_ == CriterionOneofCase.PreferredContent ? (global::Google.Ads.GoogleAds.V8.Common.PreferredContentInfo) criterion_ : null; }
       set {
@@ -374,6 +400,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. Criterion for a hotel check-in date range.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Common.HotelCheckInDateRangeInfo HotelCheckInDateRange {
       get { return criterionCase_ == CriterionOneofCase.HotelCheckInDateRange ? (global::Google.Ads.GoogleAds.V8.Common.HotelCheckInDateRangeInfo) criterion_ : null; }
       set {
@@ -396,22 +423,26 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     private CriterionOneofCase criterionCase_ = CriterionOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CriterionOneofCase CriterionCase {
       get { return criterionCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCriterion() {
       criterionCase_ = CriterionOneofCase.None;
       criterion_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as AdGroupBidModifier);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(AdGroupBidModifier other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -437,6 +468,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
@@ -460,11 +492,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -529,6 +563,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
@@ -589,6 +624,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ResourceName.Length != 0) {
@@ -637,6 +673,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(AdGroupBidModifier other) {
       if (other == null) {
         return;
@@ -708,6 +745,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -812,6 +850,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {

@@ -14,18 +14,18 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V8.Common;
-using Google.Ads.GoogleAds.V8.Errors;
-using Google.Ads.GoogleAds.V8.Resources;
-using Google.Ads.GoogleAds.V8.Services;
+using Google.Ads.GoogleAds.V9.Common;
+using Google.Ads.GoogleAds.V9.Errors;
+using Google.Ads.GoogleAds.V9.Resources;
+using Google.Ads.GoogleAds.V9.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V8.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V8.Enums.ListingGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V8.Enums.ProductConditionEnum.Types;
+using static Google.Ads.GoogleAds.V9.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V9.Enums.ListingGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V9.Enums.ProductConditionEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V8
+namespace Google.Ads.GoogleAds.Examples.V9
 {
     /// <summary>
     /// This code example shows how to add a shopping listing group tree to a shopping ad group.
@@ -148,7 +148,7 @@ namespace Google.Ads.GoogleAds.Examples.V8
         {
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V8.AdGroupCriterionService);
+                client.GetService(Services.V9.AdGroupCriterionService);
 
             try
             {
@@ -349,11 +349,11 @@ namespace Google.Ads.GoogleAds.Examples.V8
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V8.GoogleAdsService);
+                Services.V9.GoogleAdsService);
 
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V8.AdGroupCriterionService);
+                client.GetService(Services.V9.AdGroupCriterionService);
 
             String searchQuery = "SELECT ad_group_criterion.resource_name FROM " +
                 "ad_group_criterion WHERE ad_group_criterion.type = LISTING_GROUP AND " +

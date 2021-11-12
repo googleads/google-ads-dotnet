@@ -14,16 +14,17 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V8.Common;
-using Google.Ads.GoogleAds.V8.Errors;
-using Google.Ads.GoogleAds.V8.Resources;
-using Google.Ads.GoogleAds.V8.Services;
+using Google.Ads.GoogleAds.V9.Common;
+using Google.Ads.GoogleAds.V9.Errors;
+using Google.Ads.GoogleAds.V9.Resources;
+using Google.Ads.GoogleAds.V9.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V8.Enums.ExtensionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V9.Enums.ExtensionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V9.Enums.AssetFieldTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V8
+namespace Google.Ads.GoogleAds.Examples.V9
 {
     /// <summary>
     /// This example adds a hotel callout extension to a specific account, campaign within the
@@ -42,27 +43,6 @@ namespace Google.Ads.GoogleAds.Examples.V8
             [Option("customerId", Required = true, HelpText =
                 "The customer ID for which the call is made.")]
             public long CustomerId { get; set; }
-
-            /// <summary>
-            /// ID of the campaign to which the hotel callout extension will be added.
-            /// </summary>
-            [Option("campaignId", Required = true, HelpText =
-                "ID of the campaign to which the hotel callout extension will be added.")]
-            public long CampaignId { get; set; }
-
-            /// <summary>
-            /// ID of the ad group to which the hotel callout extension will be added.
-            /// </summary>
-            [Option("adGroupId", Required = true, HelpText =
-                "ID of the ad group to which the hotel callout extension will be added.")]
-            public long AdGroupId { get; set; }
-
-            /// <summary>
-            /// Callout text for the extension.
-            /// </summary>
-            [Option("calloutText", Required = true, HelpText =
-                "Callout text for the extension.")]
-            public string CalloutText { get; set; }
 
             /// <summary>
             /// The language code for the text. See supported languages at:
@@ -91,15 +71,6 @@ namespace Google.Ads.GoogleAds.Examples.V8
                     // The customer ID for which the call is made.
                     options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
-                    // ID of the campaign to which the hotel callout extension will be added.
-                    options.CampaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
-
-                    // ID of the ad group to which the hotel callout extension will be added.
-                    options.AdGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
-
-                    // Callout text for the extension.
-                    options.CalloutText = "INSERT_CALLOUT_TEXT_HERE";
-
                     // The language code for the text. See supported languages at:
                     // https://developers.google.com/hotels/hotel-ads/api-reference/language-codes.
                     options.LanguageCode = "INSERT_LANGUAGE_CODE_HERE";
@@ -109,47 +80,33 @@ namespace Google.Ads.GoogleAds.Examples.V8
 
             AddHotelCallout codeExample = new AddHotelCallout();
             Console.WriteLine(codeExample.Description);
-            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.CampaignId,
-                options.AdGroupId, options.CalloutText, options.LanguageCode);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.LanguageCode);
         }
 
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
-            "This example adds a hotel callout extension to a specific account, campaign within " +
-            "the account, and ad group within the campaign.";
+            "This example adds a hotel callout extension to a specific account.";
 
         /// <summary>
         /// Runs the code example.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
-        /// <param name="campaignId">ID of the campaign to which the hotel callout extension will be
-        /// added.</param>
-        /// <param name="adGroupId">ID of the ad group to which the hotel callout extension will be
-        /// added.</param>
-        /// <param name="calloutText">Callout text for the extension.</param>
         /// <param name="languageCode">The language code for the text. See supported languages at:
         /// https://developers.google.com/hotels/hotel-ads/api-reference/language-codes.</param>
-        public void Run(GoogleAdsClient client, long customerId, long campaignId, long adGroupId,
-            string calloutText, string languageCode)
+        public void Run(GoogleAdsClient client, long customerId, string languageCode)
         {
             try
             {
-                // Creates an extension feed item as hotel callout.
-                string extensionFeedItemResourceName = AddExtensionFeedItem(client, customerId,
-                    calloutText, languageCode);
+                // Creates assets for the hotel callout extensions.
+                List<string> assetResourceNames =
+                    AddExtensionAsset(client, customerId, languageCode);
 
-                // Adds the extension feed item to the account.
-                AddExtensionToAccount(client, customerId, extensionFeedItemResourceName);
-
-                // Adds the extension feed item to the campaign.
-                AddExtensionToCampaign(client, customerId, campaignId,
-                    extensionFeedItemResourceName);
-
-                // Adds the extension feed item to the ad group.
-                AddExtensionToAdGroup(client, customerId, adGroupId, extensionFeedItemResourceName);
+                // Adds the extensions at the account level, so these will serve in all eligible
+                // campaigns.
+                LinkAssetToAccount(client, customerId, assetResourceNames);
             }
             catch (GoogleAdsException e)
             {
@@ -162,166 +119,105 @@ namespace Google.Ads.GoogleAds.Examples.V8
         }
 
         /// <summary>
-        /// Creates a new extension feed item for the callout extension.
+        /// Creates a new asset for the callout.
         /// </summary>
         /// <param name="client">The Google Ads API client.</param>
         /// <param name="customerId">The client customer ID.</param>
-        /// <param name="calloutText">Callout text for the extension.</param>
         /// <param name="languageCode">The language code for the text.</param>
         /// <returns>The created extension feed item's resource name.</returns>
-        private string AddExtensionFeedItem(GoogleAdsClient client, in long customerId,
-            string calloutText, string languageCode)
+        private List<string> AddExtensionAsset(GoogleAdsClient client, in long customerId,
+            string languageCode)
         {
-            // Gets the ExtensionFeedItemService client.
-            ExtensionFeedItemServiceClient extensionFeedItemService =
-                client.GetService(Services.V8.ExtensionFeedItemService);
+            List<HotelCalloutAsset> hotelCalloutAssets = new List<HotelCalloutAsset>();
 
-            // Creates the callout extension with the specified text and language.
-            HotelCalloutFeedItem hotelCalloutFeedItem = new HotelCalloutFeedItem
+            // Creates the callouts with text and specified language.
+            hotelCalloutAssets.Add(
+                new HotelCalloutAsset
+                {
+                    Text = "Book now!",
+                    LanguageCode = languageCode,
+                });
+            hotelCalloutAssets.Add(
+                new HotelCalloutAsset
+                {
+                    Text = "Spa and dining!",
+                    LanguageCode = languageCode,
+                });
+
+            // Wraps the HotelCalloutAsset in an Asset and creates an AssetOperation to add the
+            // Asset.
+            List<AssetOperation> operations = new List<AssetOperation>();
+
+            foreach (HotelCalloutAsset asset in hotelCalloutAssets)
             {
-                Text = calloutText,
-                LanguageCode = languageCode
-            };
+                operations.Add(new AssetOperation
+                {
+                    Create = new Asset
+                    {
+                        HotelCalloutAsset = asset,
+                    },
+                });
+            }
 
-            // Creates a feed item from the hotel callout extension.
-            ExtensionFeedItem extensionFeedItem = new ExtensionFeedItem
+            // Issues the create request to create the assets.
+
+            AssetServiceClient assetClient = client.GetService(Services.V9.AssetService);
+            MutateAssetsResponse response =
+                assetClient.MutateAssets(customerId.ToString(), operations);
+            List<MutateAssetResult> results = response.Results.ToList();
+            List<string> resourceNames = new List<string>();
+            // Prints some information about the result.
+            foreach (MutateAssetResult result in results)
             {
-                HotelCalloutFeedItem = hotelCalloutFeedItem
-            };
+                resourceNames.Add(result.ResourceName);
+                Console.WriteLine("Created hotel call out asset with resource name " +
+                    result.ResourceName);
+            }
 
-            // Creates an extension feed item operation.
-            ExtensionFeedItemOperation extensionFeedItemOperation = new ExtensionFeedItemOperation
-            {
-                Create = extensionFeedItem
-            };
-
-            // Issues a mutate request to add the extension feed item and print its information.
-            MutateExtensionFeedItemsResponse response =
-                extensionFeedItemService.MutateExtensionFeedItems(customerId.ToString(),
-                    new[] { extensionFeedItemOperation });
-            string extensionFeedItemResourceName = response.Results.First().ResourceName;
-            Console.WriteLine("Created an extension feed item with resource name " +
-                $"'{extensionFeedItemResourceName}'.");
-
-            return extensionFeedItemResourceName;
+            return resourceNames;
         }
 
         /// <summary>
-        /// Adds the extension feed item to the customer account.
+        /// Link asset to customer.
         /// </summary>
         /// <param name="client">The Google Ads API client.</param>
         /// <param name="customerId">The client customer ID.</param>
-        /// <param name="extensionFeedItemResourceName">The extension feed item's resource
-        /// name.</param>
-        private void AddExtensionToAccount(GoogleAdsClient client, in long customerId,
-            string extensionFeedItemResourceName)
+        /// <param name="assetResourceNames">The asset resource names.</param>
+        /// <returns>The created extension feed item's resource name.</returns>
+        private void LinkAssetToAccount(GoogleAdsClient client, in long customerId,
+            List<string> assetResourceNames)
         {
-            // Gets the CustomerExtensionSettingService client.
-            CustomerExtensionSettingServiceClient customerExtensionSettingService =
-                client.GetService(Services.V8.CustomerExtensionSettingService);
+            // Creates a CustomerAsset link for each Asset resource name provided, then converts
+            // this into a CustomerAssetOperation to create the Asset.
+            List<CustomerAssetOperation> customerAssetOperations =
+              new List<CustomerAssetOperation>();
 
-            // Creates a customer extension setting, sets its type to HOTEL_CALLOUT, and attaches
-            // the feed item.
-            CustomerExtensionSetting customerExtensionSetting = new CustomerExtensionSetting
+            foreach (string asset in assetResourceNames)
             {
-                ExtensionType = ExtensionType.HotelCallout,
-            };
-            customerExtensionSetting.ExtensionFeedItems.Add(extensionFeedItemResourceName);
+                customerAssetOperations.Add(
+                    new CustomerAssetOperation
+                    {
+                        Create = new CustomerAsset
+                        {
+                            Asset = asset,
+                            FieldType = AssetFieldType.HotelCallout,
+                        },
+                    });
+            }
 
-            // Creates a customer extension setting operation.
-            CustomerExtensionSettingOperation customerExtensionSettingOperation =
-                new CustomerExtensionSettingOperation
-                {
-                    Create = customerExtensionSetting
-                };
+            // Issues the create request to add the callout.
+            CustomerAssetServiceClient customerAssetServiceClient =
+                client.GetService(Services.V9.CustomerAssetService);
 
-            // Issues a mutate request to add the customer extension setting and prints its
-            // information.
-            MutateCustomerExtensionSettingsResponse response =
-                customerExtensionSettingService.MutateCustomerExtensionSettings(
-                    customerId.ToString(), new[] { customerExtensionSettingOperation });
-            Console.WriteLine("Created a customer extension setting with resource name " +
-                $"'{response.Results.First().ResourceName}'");
-        }
+            MutateCustomerAssetsResponse response =
+              customerAssetServiceClient.MutateCustomerAssets(customerId.ToString(),
+                  customerAssetOperations);
 
-        /// <summary>
-        /// Adds the extension feed item to the specified campaign.
-        /// </summary>
-        /// <param name="client">The Google Ads API client.</param>
-        /// <param name="customerId">The client customer ID.</param>
-        /// <param name="campaignId">The campaign ID to which to add the extension.</param>
-        /// <param name="extensionFeedItemResourceName">The extension feed item's resource
-        /// name.</param>
-        private void AddExtensionToCampaign(GoogleAdsClient client, in long customerId,
-            in long campaignId, string extensionFeedItemResourceName)
-        {
-            // Gets the CampaignExtensionSettingService client.
-            CampaignExtensionSettingServiceClient campaignExtensionSettingService =
-                client.GetService(Services.V8.CampaignExtensionSettingService);
-
-            // Creates a campaign extension setting, sets its type to HOTEL_CALLOUT, and attaches
-            // the feed item.
-            CampaignExtensionSetting campaignExtensionSetting = new CampaignExtensionSetting
+            foreach (MutateCustomerAssetResult result in response.Results)
             {
-                Campaign = ResourceNames.Campaign(customerId, campaignId),
-                ExtensionType = ExtensionType.HotelCallout
-            };
-            campaignExtensionSetting.ExtensionFeedItems.Add(extensionFeedItemResourceName);
-
-            // Creates a campaign extension setting operation.
-            CampaignExtensionSettingOperation campaignExtensionSettingOperation =
-                new CampaignExtensionSettingOperation
-                {
-                    Create = campaignExtensionSetting
-                };
-
-            // Issues a mutate request to add the campaign extension setting and prints its
-            // information.
-            MutateCampaignExtensionSettingsResponse response =
-                campaignExtensionSettingService.MutateCampaignExtensionSettings(
-                    customerId.ToString(), new[] { campaignExtensionSettingOperation });
-            Console.WriteLine("Created a campaign extension setting with resource name " +
-                $"'{response.Results.First().ResourceName}'");
-        }
-
-        /// <summary>
-        /// Adds the extension feed item to the specified ad group.
-        /// </summary>
-        /// <param name="client">The Google Ads API client.</param>
-        /// <param name="customerId">The client customer ID.</param>
-        /// <param name="adGroupId">The ad group ID to which to add the extension.</param>
-        /// <param name="extensionFeedItemResourceName">The extension feed item's resource
-        /// name.</param>
-        private void AddExtensionToAdGroup(GoogleAdsClient client, in long customerId,
-            in long adGroupId, string extensionFeedItemResourceName)
-        {
-            // Gets the AdGroupExtensionSettingService client.
-            AdGroupExtensionSettingServiceClient adGroupExtensionSettingService =
-                client.GetService(Services.V8.AdGroupExtensionSettingService);
-
-            // Creates an ad group extension setting, sets its type to HOTEL_CALLOUT, and attaches
-            // the feed item.
-            AdGroupExtensionSetting adGroupExtensionSetting = new AdGroupExtensionSetting
-            {
-                AdGroup = ResourceNames.AdGroup(customerId, adGroupId),
-                ExtensionType = ExtensionType.HotelCallout
-            };
-            adGroupExtensionSetting.ExtensionFeedItems.Add(extensionFeedItemResourceName);
-
-            // Creates an ad group extension setting operation.
-            AdGroupExtensionSettingOperation adGroupExtensionSettingOperation =
-                new AdGroupExtensionSettingOperation
-                {
-                    Create = adGroupExtensionSetting
-                };
-
-            // Issues a mutate request to add the ad group extension setting and prints its
-            // information.
-            MutateAdGroupExtensionSettingsResponse response =
-                adGroupExtensionSettingService.MutateAdGroupExtensionSettings(
-                    customerId.ToString(), new[] { adGroupExtensionSettingOperation });
-            Console.WriteLine("Created an ad group extension setting with resource name " +
-                $"'{response.Results.First().ResourceName}'");
+                Console.WriteLine("Added an account extension with resource name: " +
+                    result.ResourceName);
+            }
         }
     }
 }

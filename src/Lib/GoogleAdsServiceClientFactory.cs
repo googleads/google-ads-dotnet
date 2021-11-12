@@ -186,15 +186,6 @@ namespace Google.Ads.GoogleAds.Lib
         /// <returns>The new channel.</returns>
         private Channel CreateChannel(GoogleAdsConfig config)
         {
-            if (config.Proxy == null)
-            {
-                Environment.SetEnvironmentVariable("http_proxy", null);
-            }
-            else
-            {
-                Environment.SetEnvironmentVariable("http_proxy", config.Proxy.Address.ToString());
-            }
-
             // GRPC uses c-ares DNS resolver, which doesn't seem to work on some Windows machines.
             // Turn it off for now.
             // https://github.com/googleads/google-ads-dotnet/issues/59
