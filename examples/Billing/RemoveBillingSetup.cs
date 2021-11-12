@@ -14,12 +14,12 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V8.Errors;
-using Google.Ads.GoogleAds.V8.Services;
+using Google.Ads.GoogleAds.V9.Errors;
+using Google.Ads.GoogleAds.V9.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V8
+namespace Google.Ads.GoogleAds.Examples.V9
 {
     /// <summary>
     /// This code example removes a billing setup, specified by ID. To get available billing setup,
@@ -98,7 +98,7 @@ namespace Google.Ads.GoogleAds.Examples.V8
         {
             // Get the BillingSetupServiceClient.
             BillingSetupServiceClient billingSetupService = client.GetService(
-                Services.V8.BillingSetupService);
+                Services.V9.BillingSetupService);
 
             // Create the billing setup resource.
             String billingSetupResource = ResourceNames.BillingSetup(customerId, billingSetupId);

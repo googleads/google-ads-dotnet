@@ -1,3 +1,23 @@
+10.2.0
+======
+- Added support for v9 of the Google Ads API.
+- Migrated some code examples to use Assets.
+  - Updated Extensions\AddHotelCallout.cs
+  - Updated Extensions\AddPrices.cs
+  - Updated Extensions\AddSitelinks.cs
+  - Added Extensions\AddSitelinksUsingAssets.cs
+  - Deleted Extensions\AddSitelinksUsingFeeds.cs
+- Fix https://github.com/googleads/google-ads-dotnet/issues/320. Use channel settings instead of environment variable to set proxy.
+- Updated AdvancedOperations/AddSmartCampaign.cs to use GetKeywordThemeSuggestions.
+- Separated the Summary and Detailed Log String Creation. Fix was contributed by Kevin
+(https://github.com/aukevin)
+- Added tests for async MediaUtilities. Fix was contributed by Jarrod Mosen
+(https://github.com/wub)
+- Regenerated all stubs to work with the latest code generator.
+- Added support for warnings. Updated Remarketing\UploadStoreSalesTransactions.cs example.
+- Upgraded all dependencies where possible.
+
+
 10.1.0
 ======
 

@@ -63,6 +63,12 @@ namespace Google.Ads.GoogleAds.V7.Services
         /// <item><description>Retry delay multiplier: 1.3</description></item>
         /// <item><description>Retry maximum delay: 60000 milliseconds.</description></item>
         /// <item><description>Maximum attempts: Unlimited</description></item>
+        /// <item>
+        /// <description>
+        /// Retriable status codes: <see cref="grpccore::StatusCode.Unavailable"/>,
+        /// <see cref="grpccore::StatusCode.DeadlineExceeded"/>.
+        /// </description>
+        /// </item>
         /// <item><description>Timeout: 3600 seconds.</description></item>
         /// </list>
         /// </remarks>
@@ -79,6 +85,12 @@ namespace Google.Ads.GoogleAds.V7.Services
         /// <item><description>Retry delay multiplier: 1.3</description></item>
         /// <item><description>Retry maximum delay: 60000 milliseconds.</description></item>
         /// <item><description>Maximum attempts: Unlimited</description></item>
+        /// <item>
+        /// <description>
+        /// Retriable status codes: <see cref="grpccore::StatusCode.Unavailable"/>,
+        /// <see cref="grpccore::StatusCode.DeadlineExceeded"/>.
+        /// </description>
+        /// </item>
         /// <item><description>Timeout: 3600 seconds.</description></item>
         /// </list>
         /// </remarks>
@@ -95,6 +107,12 @@ namespace Google.Ads.GoogleAds.V7.Services
         /// <item><description>Retry delay multiplier: 1.3</description></item>
         /// <item><description>Retry maximum delay: 60000 milliseconds.</description></item>
         /// <item><description>Maximum attempts: Unlimited</description></item>
+        /// <item>
+        /// <description>
+        /// Retriable status codes: <see cref="grpccore::StatusCode.Unavailable"/>,
+        /// <see cref="grpccore::StatusCode.DeadlineExceeded"/>.
+        /// </description>
+        /// </item>
         /// <item><description>Timeout: 3600 seconds.</description></item>
         /// </list>
         /// </remarks>
@@ -111,6 +129,12 @@ namespace Google.Ads.GoogleAds.V7.Services
         /// <item><description>Retry delay multiplier: 1.3</description></item>
         /// <item><description>Retry maximum delay: 60000 milliseconds.</description></item>
         /// <item><description>Maximum attempts: Unlimited</description></item>
+        /// <item>
+        /// <description>
+        /// Retriable status codes: <see cref="grpccore::StatusCode.Unavailable"/>,
+        /// <see cref="grpccore::StatusCode.DeadlineExceeded"/>.
+        /// </description>
+        /// </item>
         /// <item><description>Timeout: 3600 seconds.</description></item>
         /// </list>
         /// </remarks>
@@ -129,6 +153,12 @@ namespace Google.Ads.GoogleAds.V7.Services
     {
         /// <summary>The settings to use for RPCs, or <c>null</c> for the default settings.</summary>
         public ReachPlanServiceSettings Settings { get; set; }
+
+        /// <summary>Creates a new builder with default settings.</summary>
+        public ReachPlanServiceClientBuilder()
+        {
+            UseJwtAccessWithScopes = ReachPlanServiceClient.UseJwtAccessWithScopes;
+        }
 
         partial void InterceptBuild(ref ReachPlanServiceClient client);
 
@@ -205,7 +235,19 @@ namespace Google.Ads.GoogleAds.V7.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+
+        internal static bool UseJwtAccessWithScopes
+        {
+            get
+            {
+                bool useJwtAccessWithScopes = true;
+                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
+                return useJwtAccessWithScopes;
+            }
+        }
+
+        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
 
         /// <summary>
         /// Asynchronously creates a <see cref="ReachPlanServiceClient"/> using the default credentials, endpoint and
@@ -380,7 +422,7 @@ namespace Google.Ads.GoogleAds.V7.Services
         /// </summary>
         /// <param name="plannableLocationId">
         /// Required. The ID of the selected location for planning. To list the available
-        /// plannable location ids use ListPlannableLocations.
+        /// plannable location ids use [ReachPlanService.ListPlannableLocations][google.ads.googleads.v7.services.ReachPlanService.ListPlannableLocations].
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>The RPC response.</returns>
@@ -404,7 +446,7 @@ namespace Google.Ads.GoogleAds.V7.Services
         /// </summary>
         /// <param name="plannableLocationId">
         /// Required. The ID of the selected location for planning. To list the available
-        /// plannable location ids use ListPlannableLocations.
+        /// plannable location ids use [ReachPlanService.ListPlannableLocations][google.ads.googleads.v7.services.ReachPlanService.ListPlannableLocations].
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A Task containing the RPC response.</returns>
@@ -428,7 +470,7 @@ namespace Google.Ads.GoogleAds.V7.Services
         /// </summary>
         /// <param name="plannableLocationId">
         /// Required. The ID of the selected location for planning. To list the available
-        /// plannable location ids use ListPlannableLocations.
+        /// plannable location ids use [ReachPlanService.ListPlannableLocations][google.ads.googleads.v7.services.ReachPlanService.ListPlannableLocations].
         /// </param>
         /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
         /// <returns>A Task containing the RPC response.</returns>
@@ -514,7 +556,7 @@ namespace Google.Ads.GoogleAds.V7.Services
         /// </param>
         /// <param name="plannableLocationId">
         /// Required. The ID of the location, this is one of the ids returned by
-        /// ListPlannableLocations.
+        /// [ReachPlanService.ListPlannableLocations][google.ads.googleads.v7.services.ReachPlanService.ListPlannableLocations].
         /// </param>
         /// <param name="currencyCode">
         /// Required. Currency code.
@@ -554,7 +596,7 @@ namespace Google.Ads.GoogleAds.V7.Services
         /// </param>
         /// <param name="plannableLocationId">
         /// Required. The ID of the location, this is one of the ids returned by
-        /// ListPlannableLocations.
+        /// [ReachPlanService.ListPlannableLocations][google.ads.googleads.v7.services.ReachPlanService.ListPlannableLocations].
         /// </param>
         /// <param name="currencyCode">
         /// Required. Currency code.
@@ -594,7 +636,7 @@ namespace Google.Ads.GoogleAds.V7.Services
         /// </param>
         /// <param name="plannableLocationId">
         /// Required. The ID of the location, this is one of the ids returned by
-        /// ListPlannableLocations.
+        /// [ReachPlanService.ListPlannableLocations][google.ads.googleads.v7.services.ReachPlanService.ListPlannableLocations].
         /// </param>
         /// <param name="currencyCode">
         /// Required. Currency code.

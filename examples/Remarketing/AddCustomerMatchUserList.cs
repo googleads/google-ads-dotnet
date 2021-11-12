@@ -14,10 +14,10 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V8.Common;
-using Google.Ads.GoogleAds.V8.Errors;
-using Google.Ads.GoogleAds.V8.Resources;
-using Google.Ads.GoogleAds.V8.Services;
+using Google.Ads.GoogleAds.V9.Common;
+using Google.Ads.GoogleAds.V9.Errors;
+using Google.Ads.GoogleAds.V9.Resources;
+using Google.Ads.GoogleAds.V9.Services;
 using Google.Api.Gax;
 using Google.LongRunning;
 using Google.Protobuf.WellKnownTypes;
@@ -25,10 +25,10 @@ using System;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
-using static Google.Ads.GoogleAds.V8.Enums.CustomerMatchUploadKeyTypeEnum.Types;
-using static Google.Ads.GoogleAds.V8.Enums.OfflineUserDataJobTypeEnum.Types;
+using static Google.Ads.GoogleAds.V9.Enums.CustomerMatchUploadKeyTypeEnum.Types;
+using static Google.Ads.GoogleAds.V9.Enums.OfflineUserDataJobTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V8
+namespace Google.Ads.GoogleAds.Examples.V9
 {
     /// <summary>
     ///  This code example uses Customer Match to create a new user list (a.k.a. audience) and adds
@@ -129,7 +129,7 @@ namespace Google.Ads.GoogleAds.Examples.V8
         private string CreateCustomerMatchUserList(GoogleAdsClient client, long customerId)
         {
             // Get the UserListService.
-            UserListServiceClient service = client.GetService(Services.V8.UserListService);
+            UserListServiceClient service = client.GetService(Services.V9.UserListService);
 
             // Creates the user list.
             UserList userList = new UserList()
@@ -175,7 +175,7 @@ namespace Google.Ads.GoogleAds.Examples.V8
         {
             // Get the OfflineUserDataJobService.
             OfflineUserDataJobServiceClient service = client.GetService(
-                Services.V8.OfflineUserDataJobService);
+                Services.V9.OfflineUserDataJobService);
 
             // Creates a new offline user data job.
             OfflineUserDataJob offlineUserDataJob = new OfflineUserDataJob()
@@ -219,7 +219,7 @@ namespace Google.Ads.GoogleAds.Examples.V8
 
             // Issues an asynchronous request to run the offline user data job for executing
             // all added operations.
-            Operation<Empty, Empty> operationResponse =
+            Operation<Empty, OfflineUserDataJobMetadata> operationResponse =
                 service.RunOfflineUserDataJob(offlineUserDataJobResourceName);
 
             Console.WriteLine("Asynchronous request to execute the added operations started."); ;
@@ -313,7 +313,7 @@ namespace Google.Ads.GoogleAds.Examples.V8
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient service =
-                client.GetService(Services.V8.GoogleAdsService);
+                client.GetService(Services.V9.GoogleAdsService);
 
             // Creates a query that retrieves the user list.
             string query =

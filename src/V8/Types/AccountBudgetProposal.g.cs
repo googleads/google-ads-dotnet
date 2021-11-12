@@ -113,19 +113,23 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     private pb::UnknownFieldSet _unknownFields;
     private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<AccountBudgetProposal> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Google.Ads.GoogleAds.V8.Resources.AccountBudgetProposalReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AccountBudgetProposal() {
       OnConstruction();
     }
@@ -133,6 +137,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AccountBudgetProposal(AccountBudgetProposal other) : this() {
       _hasBits0 = other._hasBits0;
       resourceName_ = other.resourceName_;
@@ -196,6 +201,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public AccountBudgetProposal Clone() {
       return new AccountBudgetProposal(this);
     }
@@ -210,6 +216,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// `customers/{customer_id}/accountBudgetProposals/{account_budget_proposal_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ResourceName {
       get { return resourceName_; }
       set {
@@ -224,6 +231,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The ID of the proposal.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long Id {
       get { if ((_hasBits0 & 1) != 0) { return id_; } else { return 0L; } }
       set {
@@ -233,11 +241,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "id" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasId {
       get { return (_hasBits0 & 1) != 0; }
     }
     /// <summary>Clears the value of the "id" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearId() {
       _hasBits0 &= ~1;
     }
@@ -249,6 +259,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. The resource name of the billing setup associated with this proposal.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string BillingSetup {
       get { return billingSetup_ ?? ""; }
       set {
@@ -257,11 +268,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "billing_setup" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasBillingSetup {
       get { return billingSetup_ != null; }
     }
     /// <summary>Clears the value of the "billing_setup" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearBillingSetup() {
       billingSetup_ = null;
     }
@@ -274,6 +287,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// proposal.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string AccountBudget {
       get { return accountBudget_ ?? ""; }
       set {
@@ -282,11 +296,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "account_budget" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasAccountBudget {
       get { return accountBudget_ != null; }
     }
     /// <summary>Clears the value of the "account_budget" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearAccountBudget() {
       accountBudget_ = null;
     }
@@ -299,6 +315,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// proposal.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.AccountBudgetProposalTypeEnum.Types.AccountBudgetProposalType ProposalType {
       get { return proposalType_; }
       set {
@@ -314,6 +331,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// When a new proposal is created, the status defaults to PENDING.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.AccountBudgetProposalStatusEnum.Types.AccountBudgetProposalStatus Status {
       get { return status_; }
       set {
@@ -328,6 +346,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. The name to assign to the account-level budget.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ProposedName {
       get { return proposedName_ ?? ""; }
       set {
@@ -336,11 +355,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "proposed_name" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasProposedName {
       get { return proposedName_ != null; }
     }
     /// <summary>Clears the value of the "proposed_name" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearProposedName() {
       proposedName_ = null;
     }
@@ -352,6 +373,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The approved start date time in yyyy-mm-dd hh:mm:ss format.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ApprovedStartDateTime {
       get { return approvedStartDateTime_ ?? ""; }
       set {
@@ -360,11 +382,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "approved_start_date_time" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasApprovedStartDateTime {
       get { return approvedStartDateTime_ != null; }
     }
     /// <summary>Clears the value of the "approved_start_date_time" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearApprovedStartDateTime() {
       approvedStartDateTime_ = null;
     }
@@ -377,6 +401,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// reference this budget in their monthly invoices.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ProposedPurchaseOrderNumber {
       get { return proposedPurchaseOrderNumber_ ?? ""; }
       set {
@@ -385,11 +410,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "proposed_purchase_order_number" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasProposedPurchaseOrderNumber {
       get { return proposedPurchaseOrderNumber_ != null; }
     }
     /// <summary>Clears the value of the "proposed_purchase_order_number" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearProposedPurchaseOrderNumber() {
       proposedPurchaseOrderNumber_ = null;
     }
@@ -401,6 +428,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. Notes associated with this budget.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ProposedNotes {
       get { return proposedNotes_ ?? ""; }
       set {
@@ -409,11 +437,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "proposed_notes" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasProposedNotes {
       get { return proposedNotes_ != null; }
     }
     /// <summary>Clears the value of the "proposed_notes" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearProposedNotes() {
       proposedNotes_ = null;
     }
@@ -426,6 +456,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// not the same as its approval date time, if applicable.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string CreationDateTime {
       get { return creationDateTime_ ?? ""; }
       set {
@@ -434,11 +465,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "creation_date_time" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCreationDateTime {
       get { return creationDateTime_ != null; }
     }
     /// <summary>Clears the value of the "creation_date_time" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCreationDateTime() {
       creationDateTime_ = null;
     }
@@ -450,6 +483,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The date time when this account-level budget was approved, if applicable.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ApprovalDateTime {
       get { return approvalDateTime_ ?? ""; }
       set {
@@ -458,11 +492,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     /// <summary>Gets whether the "approval_date_time" field is set</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasApprovalDateTime {
       get { return approvalDateTime_ != null; }
     }
     /// <summary>Clears the value of the "approval_date_time" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearApprovalDateTime() {
       approvalDateTime_ = null;
     }
@@ -473,6 +509,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. The proposed start date time in yyyy-mm-dd hh:mm:ss format.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ProposedStartDateTime {
       get { return proposedStartTimeCase_ == ProposedStartTimeOneofCase.ProposedStartDateTime ? (string) proposedStartTime_ : ""; }
       set {
@@ -487,6 +524,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. The proposed start date time as a well-defined type, e.g. NOW.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.TimeTypeEnum.Types.TimeType ProposedStartTimeType {
       get { return proposedStartTimeCase_ == ProposedStartTimeOneofCase.ProposedStartTimeType ? (global::Google.Ads.GoogleAds.V8.Enums.TimeTypeEnum.Types.TimeType) proposedStartTime_ : global::Google.Ads.GoogleAds.V8.Enums.TimeTypeEnum.Types.TimeType.Unspecified; }
       set {
@@ -501,6 +539,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. The proposed end date time in yyyy-mm-dd hh:mm:ss format.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ProposedEndDateTime {
       get { return proposedEndTimeCase_ == ProposedEndTimeOneofCase.ProposedEndDateTime ? (string) proposedEndTime_ : ""; }
       set {
@@ -515,6 +554,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. The proposed end date time as a well-defined type, e.g. FOREVER.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.TimeTypeEnum.Types.TimeType ProposedEndTimeType {
       get { return proposedEndTimeCase_ == ProposedEndTimeOneofCase.ProposedEndTimeType ? (global::Google.Ads.GoogleAds.V8.Enums.TimeTypeEnum.Types.TimeType) proposedEndTime_ : global::Google.Ads.GoogleAds.V8.Enums.TimeTypeEnum.Types.TimeType.Unspecified; }
       set {
@@ -529,6 +569,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The approved end date time in yyyy-mm-dd hh:mm:ss format.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ApprovedEndDateTime {
       get { return approvedEndTimeCase_ == ApprovedEndTimeOneofCase.ApprovedEndDateTime ? (string) approvedEndTime_ : ""; }
       set {
@@ -543,6 +584,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The approved end date time as a well-defined type, e.g. FOREVER.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.TimeTypeEnum.Types.TimeType ApprovedEndTimeType {
       get { return approvedEndTimeCase_ == ApprovedEndTimeOneofCase.ApprovedEndTimeType ? (global::Google.Ads.GoogleAds.V8.Enums.TimeTypeEnum.Types.TimeType) approvedEndTime_ : global::Google.Ads.GoogleAds.V8.Enums.TimeTypeEnum.Types.TimeType.Unspecified; }
       set {
@@ -558,6 +600,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// one unit.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long ProposedSpendingLimitMicros {
       get { return proposedSpendingLimitCase_ == ProposedSpendingLimitOneofCase.ProposedSpendingLimitMicros ? (long) proposedSpendingLimit_ : 0L; }
       set {
@@ -572,6 +615,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Immutable. The proposed spending limit as a well-defined type, e.g. INFINITE.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.SpendingLimitTypeEnum.Types.SpendingLimitType ProposedSpendingLimitType {
       get { return proposedSpendingLimitCase_ == ProposedSpendingLimitOneofCase.ProposedSpendingLimitType ? (global::Google.Ads.GoogleAds.V8.Enums.SpendingLimitTypeEnum.Types.SpendingLimitType) proposedSpendingLimit_ : global::Google.Ads.GoogleAds.V8.Enums.SpendingLimitTypeEnum.Types.SpendingLimitType.Unspecified; }
       set {
@@ -587,6 +631,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// one unit.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long ApprovedSpendingLimitMicros {
       get { return approvedSpendingLimitCase_ == ApprovedSpendingLimitOneofCase.ApprovedSpendingLimitMicros ? (long) approvedSpendingLimit_ : 0L; }
       set {
@@ -601,6 +646,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     /// Output only. The approved spending limit as a well-defined type, e.g. INFINITE.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Ads.GoogleAds.V8.Enums.SpendingLimitTypeEnum.Types.SpendingLimitType ApprovedSpendingLimitType {
       get { return approvedSpendingLimitCase_ == ApprovedSpendingLimitOneofCase.ApprovedSpendingLimitType ? (global::Google.Ads.GoogleAds.V8.Enums.SpendingLimitTypeEnum.Types.SpendingLimitType) approvedSpendingLimit_ : global::Google.Ads.GoogleAds.V8.Enums.SpendingLimitTypeEnum.Types.SpendingLimitType.Unspecified; }
       set {
@@ -618,11 +664,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     private ProposedStartTimeOneofCase proposedStartTimeCase_ = ProposedStartTimeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ProposedStartTimeOneofCase ProposedStartTimeCase {
       get { return proposedStartTimeCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearProposedStartTime() {
       proposedStartTimeCase_ = ProposedStartTimeOneofCase.None;
       proposedStartTime_ = null;
@@ -637,11 +685,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     private ProposedEndTimeOneofCase proposedEndTimeCase_ = ProposedEndTimeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ProposedEndTimeOneofCase ProposedEndTimeCase {
       get { return proposedEndTimeCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearProposedEndTime() {
       proposedEndTimeCase_ = ProposedEndTimeOneofCase.None;
       proposedEndTime_ = null;
@@ -656,11 +706,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     private ApprovedEndTimeOneofCase approvedEndTimeCase_ = ApprovedEndTimeOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ApprovedEndTimeOneofCase ApprovedEndTimeCase {
       get { return approvedEndTimeCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearApprovedEndTime() {
       approvedEndTimeCase_ = ApprovedEndTimeOneofCase.None;
       approvedEndTime_ = null;
@@ -675,11 +727,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     private ProposedSpendingLimitOneofCase proposedSpendingLimitCase_ = ProposedSpendingLimitOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ProposedSpendingLimitOneofCase ProposedSpendingLimitCase {
       get { return proposedSpendingLimitCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearProposedSpendingLimit() {
       proposedSpendingLimitCase_ = ProposedSpendingLimitOneofCase.None;
       proposedSpendingLimit_ = null;
@@ -694,22 +748,26 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
     private ApprovedSpendingLimitOneofCase approvedSpendingLimitCase_ = ApprovedSpendingLimitOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ApprovedSpendingLimitOneofCase ApprovedSpendingLimitCase {
       get { return approvedSpendingLimitCase_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearApprovedSpendingLimit() {
       approvedSpendingLimitCase_ = ApprovedSpendingLimitOneofCase.None;
       approvedSpendingLimit_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as AccountBudgetProposal);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(AccountBudgetProposal other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -748,6 +806,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
@@ -784,11 +843,13 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -889,6 +950,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (ResourceName.Length != 0) {
         output.WriteRawTag(10);
@@ -985,6 +1047,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ResourceName.Length != 0) {
@@ -1060,6 +1123,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(AccountBudgetProposal other) {
       if (other == null) {
         return;
@@ -1149,6 +1213,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1259,6 +1324,7 @@ namespace Google.Ads.GoogleAds.V8.Resources {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {

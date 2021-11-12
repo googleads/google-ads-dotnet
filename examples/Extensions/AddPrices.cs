@@ -14,25 +14,21 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V8.Common;
-using Google.Ads.GoogleAds.V8.Enums;
-using Google.Ads.GoogleAds.V8.Errors;
-using Google.Ads.GoogleAds.V8.Resources;
-using Google.Ads.GoogleAds.V8.Services;
+using Google.Ads.GoogleAds.V9.Common;
+using Google.Ads.GoogleAds.V9.Enums;
+using Google.Ads.GoogleAds.V9.Errors;
+using Google.Ads.GoogleAds.V9.Resources;
+using Google.Ads.GoogleAds.V9.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V8.Enums.ExtensionTypeEnum.Types;
-using static Google.Ads.GoogleAds.V8.Enums.MinuteOfHourEnum.Types;
-using static Google.Ads.GoogleAds.V8.Enums.PriceExtensionPriceQualifierEnum.Types;
-using static Google.Ads.GoogleAds.V8.Enums.PriceExtensionPriceUnitEnum.Types;
-using static Google.Ads.GoogleAds.V8.Enums.PriceExtensionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V9.Enums.PriceExtensionPriceQualifierEnum.Types;
+using static Google.Ads.GoogleAds.V9.Enums.PriceExtensionPriceUnitEnum.Types;
+using static Google.Ads.GoogleAds.V9.Enums.PriceExtensionTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V8
+namespace Google.Ads.GoogleAds.Examples.V9
 {
     /// <summary>
-    /// This code example adds a price extension and associates it with an account. Campaign
-    /// targeting is also set using the specified campaign ID. To get campaigns, run
-    /// GetCampaigns.cs.
+    /// This code example adds a price extension and associates it with an account.
     /// </summary>
     public class AddPrices : ExampleBase
     {
@@ -47,13 +43,6 @@ namespace Google.Ads.GoogleAds.Examples.V8
             [Option("customerId", Required = true, HelpText =
                 "The customer ID for which the call is made.")]
             public long CustomerId { get; set; }
-
-            /// <summary>
-            /// ID of the campaign to targeting are added.
-            /// </summary>
-            [Option("campaignId", Required = true, HelpText =
-                "ID of the campaign to targeting are added.")]
-            public long CampaignId { get; set; }
         }
 
         /// <summary>
@@ -73,70 +62,35 @@ namespace Google.Ads.GoogleAds.Examples.V8
                     // The customer ID for which the call is made.
                     options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
-                    // ID of the campaign to targeting are added.
-                    options.CampaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
-
                     return 0;
                 });
 
             AddPrices codeExample = new AddPrices();
             Console.WriteLine(codeExample.Description);
-            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.CampaignId);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId);
         }
 
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
-            "This code example adds a price extension and associates it with an account. " +
-            "Campaign targeting is also set using the specified campaign ID. To get campaigns, " +
-            "run GetCampaigns.cs.";
+            "This example adds a price extension and associates it with an account.";
 
         /// <summary>
         /// Runs the code example.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
-        /// <param name="campaignId">ID of the campaign to targeting are added.</param>
-        public void Run(GoogleAdsClient client, long customerId, long campaignId)
+        public void Run(GoogleAdsClient client, long customerId)
         {
-            // Get the CustomerExtensionSettingServiceClient.
-            CustomerExtensionSettingServiceClient customerExtensionSettingService =
-                client.GetService(Services.V8.CustomerExtensionSettingService);
-
             try
             {
-                // Creates an extension feed item as price.
-                string extensionFeedItemResourceName =
-                    CreateExtensionFeedItem(client, customerId, campaignId);
+                // Create a new price asset.
+                string priceAssetResourceName = CreatePriceAsset(client, customerId);
 
-                // Creates a customer extension setting using the previously created extension
-                // feed item. This associates the price extension to your account.
-                CustomerExtensionSetting customerExtensionSetting =
-                    new CustomerExtensionSetting()
-                    {
-                        ExtensionType = ExtensionType.Price,
-                        ExtensionFeedItems = { extensionFeedItemResourceName }
-                    };
-
-                // Creates an operation to add the extension setting.
-                CustomerExtensionSettingOperation operation =
-                    new CustomerExtensionSettingOperation()
-                    {
-                        Create = customerExtensionSetting
-                    };
-
-                // Issues a mutate request to add the customer extension setting
-                // and prints its information.
-                MutateCustomerExtensionSettingsResponse response =
-                    customerExtensionSettingService.MutateCustomerExtensionSettings(
-                        customerId.ToString(), new[] { operation });
-
-                foreach (MutateCustomerExtensionSettingResult result in response.Results)
-                {
-                    Console.WriteLine("Created customer extension setting with resource name: " +
-                        result.ResourceName);
-                }
+                // Add the new price asset to the account, so it will serve all
+                // campaigns under the account.
+                AddExtensionToAccount(client, customerId, priceAssetResourceName);
             }
             catch (GoogleAdsException e)
             {
@@ -149,148 +103,141 @@ namespace Google.Ads.GoogleAds.Examples.V8
         }
 
         /// <summary>
-        /// Creates an extension feed item for price extension.
+        /// Creates a price asset.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
-        /// <param name="campaignId">ID of the campaign to target.</param>
-        /// <returns>the resource name of the newly created extension feed item.</returns>
-        private string CreateExtensionFeedItem(GoogleAdsClient client, long customerId,
-            long campaignId)
+        /// <returns>the resource name of the newly created price asset.</returns>
+        private string CreatePriceAsset(GoogleAdsClient client, long customerId)
         {
-            // Get the ExtensionFeedItemServiceClient.
-            ExtensionFeedItemServiceClient extensionFeedItemService =
-                client.GetService(Services.V8.ExtensionFeedItemService);
-
-            // Creates the price extension feed item.
-            PriceFeedItem priceFeedItem = new PriceFeedItem()
+            PriceAsset priceAsset = new PriceAsset
             {
                 Type = PriceExtensionType.Services,
-                // Optional: sets a qualifier text to show with the price extension.
+                // Price qualifier is optional.
                 PriceQualifier = PriceExtensionPriceQualifier.From,
-                TrackingUrlTemplate = "http://tracker.example.com/?u={lpurl}",
                 LanguageCode = "en",
-                // To create a price extension, at least three price offerings are needed.
-                PriceOfferings =
-                {
-                    CreatePriceOffer(
+                PriceOfferings = {
+                    CreatePriceOffering(
                         "Scrubs",
                         "Body Scrub, Salt Scrub",
+                        "http://www.example.com/scrubs",
+                        "http://m.example.com/scrubs",
                         60000000, // 60 USD
                         "USD",
-                        PriceExtensionPriceUnit.PerHour,
-                        "http://www.example.com/scrubs",
-                        "http://m.example.com/scrubs"),
-                    CreatePriceOffer(
+                        PriceExtensionPriceUnit.PerHour
+                    ),
+                    CreatePriceOffering(
                         "Hair Cuts",
                         "Once a month",
-                        75000000, // 75 USD
-                        "USD",
-                        PriceExtensionPriceUnit.PerMonth,
                         "http://www.example.com/haircuts",
-                        "http://m.example.com/haircuts"),
-                    CreatePriceOffer(
+                        "http://m.example.com/haircuts",
+                        250000000, // 60 USD
+                        "USD",
+                        PriceExtensionPriceUnit.PerMonth
+                    ),
+                    CreatePriceOffering(
                         "Skin Care Package",
                         "Four times a month",
+                        "http://www.example.com/skincarepackage",
+                        null,
                         250000000, // 250 USD
                         "USD",
-                        PriceExtensionPriceUnit.PerMonth,
-                        "http://www.example.com/skincarepackage",
-                        null)
-                }
+                        PriceExtensionPriceUnit.PerMonth
+                    ),
+                },
             };
 
-            // Creates an extension feed item from the price feed item.
-            ExtensionFeedItem extensionFeedItem = new ExtensionFeedItem()
+            Asset asset = new Asset
             {
-                ExtensionType = ExtensionType.Price,
-                PriceFeedItem = priceFeedItem,
-                TargetedCampaign = ResourceNames.Campaign(customerId, campaignId),
-                AdSchedules =
-                {
-                    CreateAdScheduleInfo(DayOfWeekEnum.Types.DayOfWeek.Sunday, 10,
-                        MinuteOfHour.Zero, 18, MinuteOfHour.Zero),
-                    CreateAdScheduleInfo(DayOfWeekEnum.Types.DayOfWeek.Saturday, 10,
-                        MinuteOfHour.Zero, 22, MinuteOfHour.Zero)
-                }
+                Name = "Price Asset #" + ExampleUtilities.GetRandomString(),
+                TrackingUrlTemplate = "http://tracker.example.com/?u={lpurl}",
+                PriceAsset = priceAsset,
             };
 
-            // Creates an operation to add the feed item.
-            ExtensionFeedItemOperation operation = new ExtensionFeedItemOperation()
+            AssetOperation operation = new AssetOperation
             {
-                Create = extensionFeedItem
+                Create = asset,
             };
 
-            // Issues a mutate request to add the extension feed item and prints its information.
-            MutateExtensionFeedItemsResponse response =
-                extensionFeedItemService.MutateExtensionFeedItems(customerId.ToString(),
-                    new[] { operation });
+            AssetServiceClient assetClient = client.GetService(Services.V9.AssetService);
+            MutateAssetsResponse response = assetClient.MutateAssets(customerId.ToString(),
+                new[] { operation });
             string resourceName = response.Results[0].ResourceName;
-            Console.WriteLine($"Created extension feed item with resource name: {resourceName}.");
+
+            Console.WriteLine($"Created price asset with resource name '{resourceName}'.");
+
             return resourceName;
         }
 
         /// <summary>
-        /// Creates a new price offer with the specified parameters.
+        /// Adds the price asset to the customer account, allowing it to serve all campaigns under
+        /// the account.
         /// </summary>
-        /// <param name="header">The headline for the price extension.</param>
-        /// <param name="description">The detailed description line that may show on the price
-        /// extension.</param>
-        /// <param name="priceInMicros">The price to display, measured in micros
-        /// (e.g. 1_000_000 micros = 1 USD).</param>
-        /// <param name="currencyCode">The currency code representing the unit of currency.</param>
-        /// <param name="unit">Optionally set a unit describing the quantity obtained for the
-        /// price.</param>
-        /// <param name="finalUrl">The final URL to which a click on the price extension drives
-        /// traffic.</param>
-        /// <param name="finalMobileUrl">The final URL to which mobile clicks on the price
-        /// extension drives traffic.</param>
-        /// <returns></returns>
-        private PriceOffer CreatePriceOffer(string header, string description, int priceInMicros,
-            string currencyCode, PriceExtensionPriceUnit unit, string finalUrl,
-            string finalMobileUrl)
+        /// <param name="client">The Google Ads client.</param>
+        /// <param name="customerId">The customer ID for which the call is made.</param>
+        /// <param name="priceAssetResourceName">The price asset resource name for which the call is
+        /// made.</param>
+        private void AddExtensionToAccount(GoogleAdsClient client, long customerId,
+            string priceAssetResourceName)
         {
-            PriceOffer priceOffer = new PriceOffer()
+            CustomerAsset customerAsset = new CustomerAsset
             {
-                Header = header,
-                Description = description,
-                FinalUrls = { finalUrl },
-                Price = new Money()
-                {
-                    AmountMicros = priceInMicros,
-                    CurrencyCode = currencyCode
-                },
-                Unit = unit
+                Asset = priceAssetResourceName,
+                FieldType = AssetFieldTypeEnum.Types.AssetFieldType.Price,
             };
 
-            // Optional: Sets the final mobile URLs.
-            if (!string.IsNullOrEmpty(finalMobileUrl))
+            // Issues the create request to add the callout.
+            CustomerAssetServiceClient customerAssetServiceClient =
+                client.GetService(Services.V9.CustomerAssetService);
+            CustomerAssetOperation operation = new CustomerAssetOperation
             {
-                priceOffer.FinalMobileUrls.Add(finalMobileUrl);
-            }
-            return priceOffer;
+                Create = customerAsset,
+            };
+
+            CustomerAssetServiceClient assetClient =
+              client.GetService(Services.V9.CustomerAssetService);
+            MutateCustomerAssetsResponse response =
+              assetClient.MutateCustomerAssets(customerId.ToString(), new[] { operation });
+
+            string resourceName = response.Results[0].ResourceName;
+
+            Console.WriteLine($"Created customer asset with resource name '{resourceName}'.");
         }
 
         /// <summary>
-        /// Creates a new AdScheduleInfo with the specified attributes.
+        /// Creates a new price offering with the specified attributes.
         /// </summary>
-        /// <param name="day">Day of the week of the AdScheduleInfo.</param>
-        /// <param name="startHour">The starting hour of the AdScheduleInfo.</param>
-        /// <param name="startMinute">The starting minute of the AdScheduleInfo.</param>
-        /// <param name="endHour">The ending hour of the AdScheduleInfo.</param>
-        /// <param name="endMinute">The ending minute of the AdScheduleInfo.</param>
-        /// <returns>The ad schedule info.</returns>
-        private static AdScheduleInfo CreateAdScheduleInfo(DayOfWeekEnum.Types.DayOfWeek day,
-            int startHour, MinuteOfHour startMinute, int endHour, MinuteOfHour endMinute)
+        /// <param name="header">The header for the price offering.</param>
+        /// <param name="description">The description for the price offering.</param>
+        /// <param name="finalUrl">The final url for the price offering.</param>
+        /// <param name="finalMobileUrl">The final mobile url for the price offering. Can be set to
+        /// null.</param>
+        /// <param name="priceInMicros">The price in micros.</param>
+        /// <param name="currencyCode">The currency code.</param>
+        /// <param name="unit">The price unit.</param>
+        private PriceOffering CreatePriceOffering(string header, string description,
+            string finalUrl, string finalMobileUrl, long priceInMicros,
+            string currencyCode, PriceExtensionPriceUnit unit)
         {
-            return new AdScheduleInfo()
+            PriceOffering priceOffering = new PriceOffering
             {
-                DayOfWeek = day,
-                StartHour = startHour,
-                StartMinute = startMinute,
-                EndHour = endHour,
-                EndMinute = endMinute
+                Header = header,
+                Description = description,
+                FinalUrl = finalUrl,
+                Price = new Money
+                {
+                    AmountMicros = priceInMicros,
+                    CurrencyCode = currencyCode,
+                },
+                Unit = unit,
             };
+
+            if (finalMobileUrl != null)
+            {
+                priceOffering.FinalMobileUrl = finalMobileUrl;
+            }
+
+            return priceOffering;
         }
     }
 }

@@ -15,14 +15,14 @@
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V8.Errors;
-using Google.Ads.GoogleAds.V8.Resources;
-using Google.Ads.GoogleAds.V8.Services;
+using Google.Ads.GoogleAds.V9.Errors;
+using Google.Ads.GoogleAds.V9.Resources;
+using Google.Ads.GoogleAds.V9.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Google.Ads.GoogleAds.Examples.V8
+namespace Google.Ads.GoogleAds.Examples.V9
 {
     /// <summary>
     /// Adds a geo target to a extension feed item for targeting.
@@ -112,7 +112,7 @@ namespace Google.Ads.GoogleAds.Examples.V8
         {
             // Get the ExtensionFeedItemServiceClient.
             ExtensionFeedItemServiceClient extensionFeedItemServiceClient =
-                client.GetService(Services.V8.ExtensionFeedItemService);
+                client.GetService(Services.V9.ExtensionFeedItemService);
 
             // Apply the default geo target constant ID (USA) if none was passed to the function.
             if (!geoTargetConstantId.HasValue)
