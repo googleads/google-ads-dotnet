@@ -1,5 +1,6 @@
 10.1.0
 ======
+test metadata
 
 - Introduced an async version of GetAssetDataFromUrl. Feature contributed by Jarrod Mosen
 (https://github.com/wub)
