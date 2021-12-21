@@ -134,13 +134,13 @@ namespace Google.Ads.GoogleAds.Examples.V9
             hotelCalloutAssets.Add(
                 new HotelCalloutAsset
                 {
-                    Text = "Book now!",
+                    Text = "Activities",
                     LanguageCode = languageCode,
                 });
             hotelCalloutAssets.Add(
                 new HotelCalloutAsset
                 {
-                    Text = "Spa and dining!",
+                    Text = "Facilities",
                     LanguageCode = languageCode,
                 });
 

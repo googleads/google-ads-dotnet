@@ -207,7 +207,8 @@ namespace Google.Ads.GoogleAds.Examples.V9
             // To delete a location extension feed, you need to
             // 1. Delete the CustomerFeed so that the location extensions from the feed stop
             // serving.
-            // 2. Delete the feed so that Google Ads will no longer sync from the GMB account.
+            // 2. Delete the feed so that Google Ads will no longer sync from the Business Profile
+            // account.
             CustomerFeed[] oldCustomerFeeds =
                 GetLocationExtensionCustomerFeeds(client, customerId);
             if (oldCustomerFeeds.Length != 0)

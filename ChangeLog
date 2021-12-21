@@ -1,3 +1,19 @@
+Upcoming / Unreleased
+=====================
+- Added and updated some examples:
+  - Updated Extensions\AddHotelCallout
+  - Updated AdvancedOperations\AddSmartCampaign
+  - Added AdvancedOperations\AddResponsiveSearchAdWithAdCustomizer
+  - Added ShoppingAds\AddPerformanceMaxRetailCampaign
+  - Added AdvancedOperations\AddPerformanceMaxCampaign
+  - Added Remarketing\UploadConversionEnhancement
+  - Rename several examples
+- Fix https://github.com/googleads/google-ads-dotnet/issues/331. Always get a refresh token in the
+web application example. Fix was contributed by Jhon Samamé
+(https://github.com/johnpisg)
+- Renamed Google My Business (GMB) to Business Profile everywhere.
+
+
 10.2.0
 ======
 - Added support for v9 of the Google Ads API.

@@ -154,24 +154,6 @@ namespace Google.Ads.GoogleAds.Config
             new ConfigSetting<long>("ClientCustomerId", 0);
 
         /// <summary>
-        /// The GMB login email.
-        /// </summary>
-        /// <remarks>
-        /// This setting is only for testing purposes.
-        /// </remarks>
-        private ConfigSetting<string> gmbLoginEmail =
-            new ConfigSetting<string>("GMBLoginEmail", "");
-
-        /// <summary>
-        /// Merchant Center ID to be used for Shopping campaigns.
-        /// </summary>
-        /// <remarks>
-        /// This setting is only for testing purposes.
-        /// </remarks>
-        private ConfigSetting<string> merchantCenterAccountId =
-            new ConfigSetting<string>("MerchantCenterAccountId", "");
-
-        /// <summary>
         /// A flag to determine whether or not to enable profiling.
         /// </summary>
         /// <remarks>
@@ -457,26 +439,6 @@ namespace Google.Ads.GoogleAds.Config
         }
 
         /// <summary>
-        /// Gets or sets the GMB login email.
-        /// </summary>
-        /// <remarks>This setting is only for testing purposes.</remarks>
-        internal string GMBLoginEmail
-        {
-            get => gmbLoginEmail.Value;
-            set => SetPropertyAndNotify(gmbLoginEmail, value);
-        }
-
-        /// <summary>
-        /// Merchant Center ID to be used for Shopping campaigns.
-        /// </summary>
-        /// <remarks>This setting is only for testing purposes.</remarks>
-        internal string MerchantCenterAccountId
-        {
-            get => merchantCenterAccountId.Value;
-            set => SetPropertyAndNotify(merchantCenterAccountId, value);
-        }
-
-        /// <summary>
         /// A flag to determine whether or not to turn on profiling in the client library.
         /// </summary>
         /// <remarks>This setting is only for testing purposes.</remarks>
@@ -646,8 +608,6 @@ namespace Google.Ads.GoogleAds.Config
             ReadSetting(settings, loginCustomerId);
             ReadSetting(settings, linkedCustomerId);
             ReadSetting(settings, clientCustomerId);
-            ReadSetting(settings, gmbLoginEmail);
-            ReadSetting(settings, merchantCenterAccountId);
 
             ReadSetting(settings, oAuth2Mode);
             ReadSetting(settings, oAuth2ClientId);

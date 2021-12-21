@@ -38,7 +38,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
     /// <summary>
     /// This example adds an Local campaign.
     /// Prerequisite: To create a Local campaign, you need to define the store locations you want
-    /// to promote by linking your Google My Business account or selecting affiliate locations.
+    /// to promote by linking your Business Profile account or selecting affiliate locations.
     /// More information about Local campaigns can be found at:
     /// https: //support.google.com/google-ads/answer/9118422.
     /// </summary>
@@ -92,7 +92,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         public override string Description =>
             "This example adds an Local campaign.\nPrerequisite: To create a Local campaign, " +
             "you need to define the store locations you want to promote by linking your " +
-            "Google My Business account or selecting affiliate locations. More information " +
+            "Business Profile account or selecting affiliate locations. More information " +
             "about Local campaigns can be found at: " +
             "https://support.google.com/google-ads/answer/9118422.";
 
