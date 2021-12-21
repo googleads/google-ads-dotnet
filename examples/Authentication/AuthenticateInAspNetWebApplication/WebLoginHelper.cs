@@ -69,6 +69,9 @@ namespace Google.Ads.GoogleAds.Examples
             flow = new GoogleAuthorizationCodeFlow(
                 new GoogleAuthorizationCodeFlow.Initializer
                 {
+                    //Google will only return a refresh token on the user's first authorization request,
+                    //unless you always specify prompt=consent in your query params.
+                    Prompt = "consent",
                     ClientSecrets = new ClientSecrets()
                     {
                         ClientId = config.OAuth2ClientId,
