@@ -84,23 +84,24 @@ namespace Google.Ads.GoogleAds.Examples.V9
             public string FreeformKeywordText { get; set; }
 
             /// <summary>
-            /// The ID of a Google My Business (GMB) location.  This is required if a business name
-            /// is not provided. This ID can be retrieved using the GMB API, for details see:
+            /// The ID of a Business Profile location.  This is required if a business name
+            /// is not provided. This ID can be retrieved using the Business Profile API, for
+            /// details see:
             /// https://developers.google.com/my-business/reference/rest/v4/accounts.locations
             /// </summary>
             [Option("businessLocationId", Required = false, HelpText =
-                "The ID of a Google My Business (GMB) location. This is required if a business " +
+                "The ID of a Business Profile location. This is required if a business " +
                 "name is not provided.\n" +
-                "This ID can be retrieved using the GMB API; for details see: " +
+                "This ID can be retrieved using the Business Profile API; for details see: " +
                 "https://developers.google.com/my-business/reference/rest/v4/accounts.locations")]
             public ulong? BusinessLocationId { get; set; }
 
             /// <summary>
-            /// The name of a Google My Business (GMB) business. This is required if a business
+            /// The name of a Business Profile business. This is required if a business
             /// location ID is not provided.
             /// </summary>
             [Option("businessName", Required = false, HelpText =
-                "The name of a Google My Business (GMB) business. This is required if a " +
+                "The name of a Business Profile business. This is required if a " +
                 "business location ID is not provided.")]
             public string BusinessName { get; set; }
         }
@@ -129,11 +130,11 @@ namespace Google.Ads.GoogleAds.Examples.V9
                     // A keyword used to create a free-form keyword theme.
                     options.FreeformKeywordText = DEFAULT_KEYWORD_TEXT;
 
-                    // The ID of a Google My Business (GMB) location. This is required if a
+                    // The ID of a Business Profile location. This is required if a
                     // business name is not provided.
                     options.BusinessLocationId = ulong.Parse("INSERT_BUSINESS_LOCATION_ID_HERE");
 
-                    // The name of a Google My Bus`iness (GMB) business. This is required if a
+                    // The name of a Business Profile business. This is required if a
                     // business location ID is not provided.
                     options.BusinessName = "INSERT_BUSINESS_NAME_HERE";
 
@@ -176,8 +177,8 @@ namespace Google.Ads.GoogleAds.Examples.V9
         /// <param name="keywordText">A keyword string used for generating keyword themes.</param>
         /// <param name="freeFormKeywordText">A keyword used to create a free-form keyword theme.
         /// </param>
-        /// <param name="businessLocationId">The ID of a Google My Business location.</param>
-        /// <param name="businessName">The name of a Google My Business business.</param>
+        /// <param name="businessLocationId">The ID of a Business Profile location.</param>
+        /// <param name="businessName">The name of a Business Profile business.</param>
         public void Run(GoogleAdsClient client, long customerId, string keywordText,
             string freeFormKeywordText, ulong? businessLocationId, string businessName)
         {
@@ -251,7 +252,8 @@ namespace Google.Ads.GoogleAds.Examples.V9
                     CreateSmartCampaignSettingOperation(customerId, businessLocationId,
                         businessName);
                 IEnumerable<MutateOperation> campaignCriterionOperations =
-                    CreateCampaignCriterionOperations(customerId, keywordThemeInfos);
+                    CreateCampaignCriterionOperations(customerId, keywordThemeInfos,
+                        suggestionInfo);
                 MutateOperation adGroupOperation = CreateAdGroupOperation(customerId);
                 MutateOperation adGroupAdOperation = CreateAdGroupAdOperation(customerId,
                     adSuggestions);
@@ -361,8 +363,8 @@ namespace Google.Ads.GoogleAds.Examples.V9
         /// SmartCampaignSuggestionInfo instance.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
-        /// <param name="businessLocationId">The ID of a Google My Business location.</param>
-        /// <param name="businessName">The name of a Google My Business.</param>
+        /// <param name="businessLocationId">The ID of a Business Profile location.</param>
+        /// <param name="businessName">The name of a Business Profile.</param>
         /// <returns>A SmartCampaignSuggestionInfo instance .</returns>
         private SmartCampaignSuggestionInfo GetSmartCampaignSuggestionInfo(GoogleAdsClient client,
             ulong? businessLocationId, string businessName)
@@ -411,7 +413,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
             };
 
 
-            // Add the GMB location ID if provided.
+            // Add the Business Profile location ID if provided.
             if (businessLocationId.HasValue)
             {
                 // Transform Google Business Location ID to a compatible format before
@@ -643,8 +645,8 @@ namespace Google.Ads.GoogleAds.Examples.V9
         /// the campaign created in the previous step.
         /// </summary>
         /// <param name="customerId">The Google Ads customer ID.</param>
-        /// <param name="businessLocationId">The ID of a Google My Business location.</param>
-        /// <param name="businessName">The name of a Google My Business business.</param>
+        /// <param name="businessLocationId">The ID of a Business Profile location.</param>
+        /// <param name="businessName">The name of a Business Profile business.</param>
         /// <returns>A MutateOperation that creates a SmartCampaignSetting.</returns>
         private MutateOperation CreateSmartCampaignSettingOperation(long customerId,
             ulong? businessLocationId, string businessName)
@@ -700,25 +702,47 @@ namespace Google.Ads.GoogleAds.Examples.V9
         /// </summary>
         /// <param name="customerId">The Google Ads customer ID.</param>
         /// <param name="keywordThemeInfos">A list of KeywordThemeInfos.</param>
+        /// <param name="suggestionInfo">A SmartCampaignSuggestionInfo instance.</param>
         /// <returns>A list of MutateOperations that create new campaign criteria.</returns>
         private IEnumerable<MutateOperation> CreateCampaignCriterionOperations(long customerId,
-            IEnumerable<KeywordThemeInfo> keywordThemeInfos)
+            IEnumerable<KeywordThemeInfo> keywordThemeInfos, SmartCampaignSuggestionInfo
+            suggestionInfo)
         {
-            return keywordThemeInfos.Select(keywordThemeInfo => new MutateOperation
-            {
-                CampaignCriterionOperation = new CampaignCriterionOperation
+            List<MutateOperation> mutateOperations = keywordThemeInfos.Select(
+                keywordThemeInfo => new MutateOperation
                 {
-                    Create = new CampaignCriterion
+                    CampaignCriterionOperation = new CampaignCriterionOperation
                     {
-                        // Set the campaign ID to a temporary ID.
-                        Campaign = ResourceNames.Campaign(customerId, SMART_CAMPAIGN_TEMPORARY_ID),
-                        // Set the criterion type to KeywordTheme.
-                        Type = CriterionType.KeywordTheme,
-                        // Set the keyword theme to each KeywordThemeInfo in turn.
-                        KeywordTheme = keywordThemeInfo,
+                        Create = new CampaignCriterion
+                        {
+                            // Set the campaign ID to a temporary ID.
+                            Campaign = ResourceNames.Campaign(
+                                customerId, SMART_CAMPAIGN_TEMPORARY_ID),
+                            // Set the keyword theme to each KeywordThemeInfo in turn.
+                            KeywordTheme = keywordThemeInfo,
+                        }
                     }
-                }
-            }).ToList();
+                }).ToList();
+
+            // Create a location criterion for each location in the suggestion info.
+            mutateOperations.AddRange(
+                suggestionInfo.LocationList.Locations.Select(
+                    locationInfo => new MutateOperation()
+                    {
+                        CampaignCriterionOperation = new CampaignCriterionOperation()
+                        {
+                            Create = new CampaignCriterion()
+                            {
+                                // Set the campaign ID to a temporary ID.
+                                Campaign = ResourceNames.Campaign(customerId,
+                                    SMART_CAMPAIGN_TEMPORARY_ID),
+                                // Set the location to the given location.
+                                Location = locationInfo
+                            }
+                        }
+                    }).ToList()
+            );
+            return mutateOperations;
         }
         // [END add_smart_campaign_8]
 
@@ -830,7 +854,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
 
         // [START add_smart_campaign_14]
         /// <summary>
-        /// Converts the business location ID from the format returned by Google My Business
+        /// Converts the business location ID from the format returned by Business Profile
         /// to the format expected by the API.
         /// </summary>
         /// <param name="businessLocationId">The business location identifier.</param>
