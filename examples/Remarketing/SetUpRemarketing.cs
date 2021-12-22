@@ -43,10 +43,10 @@ namespace Google.Ads.GoogleAds.Examples.V9
     /// simultaneously. Consider removing or disabling any existing user lists at the campaign level
     /// before running this example.
     /// </summary>
-    public class SetupRemarketing : ExampleBase
+    public class SetUpRemarketing : ExampleBase
     {
         /// <summary>
-        /// Command line options for running the <see cref="SetupRemarketing"/> example.
+        /// Command line options for running the <see cref="SetUpRemarketing"/> example.
         /// </summary>
         public class Options : OptionsBase
         {
@@ -108,7 +108,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
                     return 0;
                 });
 
-            SetupRemarketing codeExample = new SetupRemarketing();
+            SetUpRemarketing codeExample = new SetUpRemarketing();
             Console.WriteLine(codeExample.Description);
             codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.AdGroupId,
                 options.CampaignId, options.BidModifierValue);

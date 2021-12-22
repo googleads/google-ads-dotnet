@@ -34,10 +34,10 @@ namespace Google.Ads.GoogleAds.Examples.V9
     /// checked out in November or December OR visited the checkout page with more than one item
     /// in their cart.
     /// </summary>
-    public class SetupAdvancedRemarketing : ExampleBase
+    public class SetUpAdvancedRemarketing : ExampleBase
     {
         /// <summary>
-        /// Command line options for running the <see cref="SetupAdvancedRemarketing"/> example.
+        /// Command line options for running the <see cref="SetUpAdvancedRemarketing"/> example.
         /// </summary>
         public class Options : OptionsBase
         {
@@ -69,7 +69,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
                     return 0;
                 });
 
-            SetupAdvancedRemarketing codeExample = new SetupAdvancedRemarketing();
+            SetUpAdvancedRemarketing codeExample = new SetUpAdvancedRemarketing();
             Console.WriteLine(codeExample.Description);
             codeExample.Run(new GoogleAdsClient(), options.CustomerId);
         }

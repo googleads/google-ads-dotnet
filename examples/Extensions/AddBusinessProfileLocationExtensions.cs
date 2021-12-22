@@ -34,13 +34,13 @@ using static Google.Ads.GoogleAds.V9.Resources.Feed.Types.PlacesLocationFeedData
 namespace Google.Ads.GoogleAds.Examples.V9
 {
     /// <summary>
-    /// This code example adds a feed that syncs feed items from a Google My Business (GMB) account
+    /// This code example adds a feed that syncs feed items from a Business Profile account
     /// and associates the feed with a customer.
     /// </summary>
-    public class AddGoogleMyBusinessLocationExtensions : ExampleBase
+    public class AddBusinessProfileLocationExtensions : ExampleBase
     {
         /// <summary>
-        /// Command line options for running the <see cref="AddGoogleMyBusinessLocationExtensions"/>
+        /// Command line options for running the <see cref="AddBusinessProfileLocationExtensions"/>
         /// example.
         /// </summary>
         public class Options : OptionsBase
@@ -53,25 +53,25 @@ namespace Google.Ads.GoogleAds.Examples.V9
             public long CustomerId { get; set; }
 
             /// <summary>
-            /// The Google My Business login email address.
+            /// The Business Profile login email address.
             /// </summary>
-            [Option("gmbEmailAddress", Required = true, HelpText =
-                "The Google My Business login email address.")]
-            public string GmbEmailAddress { get; set; }
+            [Option("businessProfileEmailAddress", Required = true, HelpText =
+                "The Business Profile login email address.")]
+            public string BusinessProfileEmailAddress { get; set; }
 
             /// <summary>
-            /// The Google My Business account identifier.
+            /// The Business Profile account identifier.
             /// </summary>
             [Option("businessAccountId", Required = false, HelpText =
-                "The Google My Business account identifier.")]
+                "The Business Profile account identifier.")]
             public string BusinessAccountId { get; set; }
 
             /// <summary>
-            /// The OAuth2 access token for The Google My Business account.
+            /// The OAuth2 access token for the Business Profile account.
             /// </summary>
-            [Option("gmbAccessToken", Required = true, HelpText =
-                "The OAuth2 access token for The Google My Business account.")]
-            public string GmbAccessToken { get; set; }
+            [Option("businessProfileAccessToken", Required = true, HelpText =
+                "The OAuth2 access token for the Business Profile account.")]
+            public string BusinessProfileAccessToken { get; set; }
         }
 
         /// <summary>
@@ -92,36 +92,40 @@ namespace Google.Ads.GoogleAds.Examples.V9
                     // The customer ID for which the call is made.
                     options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
-                    // The Google My Business login email address.
-                    options.GmbEmailAddress = "INSERT_GMB_EMAIL_ADDRESS_HERE";
+                    // The Business Profile login email address.
+                    options.BusinessProfileEmailAddress =
+                        "INSERT_BUSINESS_PROFILE_EMAIL_ADDRESS_HERE";
 
-                    // If the gmbEmailAddress above is for a GMB manager instead of the GMB
-                    // account owner, then set businessAccountIdentifier to the Google+ Page ID of
-                    // a location for which the manager has access. This information is available
-                    // through the Google My Business API. See
+                    // If the businessProfileEmailAddress above is for a Business Profile manager
+                    // instead of the Business Profile account owner, then set
+                    // businessAccountIdentifier to the Google+ Page ID of a location for which the
+                    // manager has access. This information is available through the Business
+                    // Profile API. See
                     // https://developers.google.com/my-business/reference/rest/v4/accounts.locations#locationkey
                     // for details.
                     //options.BusinessAccountId = "INSERT_BUSINESS_ACCOUNT_ID_HERE";
                     options.BusinessAccountId = null;
 
-                    // If the gmbEmailAddress above is the same user you used to generate
-                    // your Google Ads API refresh token, leave the assignment below unchanged.
-                    // Otherwise, to obtain an access token for your GMB account, run the
-                    // AuthenticateInStandaloneApplication code example while logged in as the same
-                    // user as gmbEmailAddress. Copy and paste the AccessToken value into the
-                    // assignment below and delete the line after it.
+                    // If the businessProfileEmailAddress above is the same user you used to
+                    // generate your Google Ads API refresh token, leave the assignment below
+                    // unchanged. Otherwise, to obtain an access token for your Business Profile
+                    // account, run the AuthenticateInStandaloneApplication code example while
+                    // logged in as the same user as businessProfileEmailAddress. Copy and paste
+                    // the AccessToken value into the assignment below and delete the line
+                    // after it.
 
-                    // options.GmbAccessToken = "INSERT_GMB_ACCESS_TOKEN_HERE";
-                    options.GmbAccessToken = client.Config.OAuth2AccessToken;
+                    // options.BusinessProfileAccessToken =
+                    //     "INSERT_BUSINESS_PROFILE_ACCESS_TOKEN_HERE";
+                    options.BusinessProfileAccessToken = client.Config.OAuth2AccessToken;
 
                     return 0;
                 });
 
-            AddGoogleMyBusinessLocationExtensions codeExample =
-                new AddGoogleMyBusinessLocationExtensions();
+            AddBusinessProfileLocationExtensions codeExample =
+                new AddBusinessProfileLocationExtensions();
             Console.WriteLine(codeExample.Description);
-            codeExample.Run(client, options.CustomerId, options.GmbEmailAddress,
-                options.BusinessAccountId, options.GmbAccessToken);
+            codeExample.Run(client, options.CustomerId, options.BusinessProfileEmailAddress,
+                options.BusinessAccountId, options.BusinessProfileAccessToken);
         }
 
         // The required scope for setting the OAuth info.
@@ -135,7 +139,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
-            "This code example adds a feed that syncs feed items from a Google My Business (GMB) " +
+            "This code example adds a feed that syncs feed items from a Business Profile " +
             "account and associates the feed with a customer.";
 
         /// <summary>
@@ -143,28 +147,29 @@ namespace Google.Ads.GoogleAds.Examples.V9
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
-        /// <param name="gmbEmailAddress">The Google My Business login email address.</param>
-        /// <param name="businessAccountId">The Google My Business account
-        /// identifier.</param>
-        /// <param name="gmbAccessToken">The OAuth2 access token for The Google My Business
-        /// account.</param>
-        public void Run(GoogleAdsClient client, long customerId, string gmbEmailAddress,
-            string businessAccountId, string gmbAccessToken)
+        /// <param name="businessProfileEmailAddress">The Business Profile login email address.
+        /// </param>
+        /// <param name="businessAccountId">The Business Profile account identifier.</param>
+        /// <param name="businessProfileAccessToken">The OAuth2 access token for the Business
+        /// Profile account.</param>
+        public void Run(GoogleAdsClient client, long customerId,
+            string businessProfileEmailAddress, string businessAccountId,
+            string businessProfileAccessToken)
         {
             try
             {
-                if (string.IsNullOrEmpty(gmbAccessToken))
+                if (string.IsNullOrEmpty(businessProfileAccessToken))
                 {
-                    gmbAccessToken = client.Config.OAuth2AccessToken;
+                    businessProfileAccessToken = client.Config.OAuth2AccessToken;
                 }
-                string gmbFeedResourceName = CreateGMBFeed(client, customerId, gmbEmailAddress,
-                    businessAccountId, gmbAccessToken);
+                string businessProfileFeedResourceName = CreateBusinessProfileFeed(client, customerId, businessProfileEmailAddress,
+                    businessAccountId, businessProfileAccessToken);
                 // After the completion of the Feed ADD operation above the added feed will not be
                 // available for usage in a CustomerFeed until the FeedMappings are created.
                 // We will wait with an exponential back-off policy until the feedmappings have
                 // been created.
-                WaitForGMBFeedToBeReady(client, customerId, gmbFeedResourceName);
-                CreateCustomerFeed(client, customerId, gmbFeedResourceName);
+                WaitForBusinessProfileFeedToBeReady(client, customerId, businessProfileFeedResourceName);
+                CreateCustomerFeed(client, customerId, businessProfileFeedResourceName);
             }
             catch (GoogleAdsException e)
             {
@@ -177,18 +182,20 @@ namespace Google.Ads.GoogleAds.Examples.V9
         }
 
         /// <summary>
-        /// Creates the Google My Business feed.
+        /// Creates the Business Profile feed.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
-        /// <param name="gmbEmailAddress">The Google My Business login email address.</param>
-        /// <param name="businessAccountId">The Google My Business account ID.</param>
-        /// <param name="gmbAccessToken">The OAuth2 access token for The Google My Business
-        /// account.</param>
-        /// <returns>ID of the newly created Google My Business feed.</returns>
-        // [START add_google_my_business_location_extensions]
-        private static string CreateGMBFeed(GoogleAdsClient client, long customerId,
-            string gmbEmailAddress, string businessAccountId, string gmbAccessToken)
+        /// <param name="businessProfileEmailAddress">The Business Profile login email address.
+        /// </param>
+        /// <param name="businessAccountId">The Business Profile account ID.</param>
+        /// <param name="businessProfileAccessToken">The OAuth2 access token for the Business
+        /// Profile account.</param>
+        /// <returns>ID of the newly created Business Profile feed.</returns>
+        // [START add_business_profile_location_extensions]
+        private static string CreateBusinessProfileFeed(GoogleAdsClient client, long customerId,
+            string businessProfileEmailAddress, string businessAccountId,
+            string businessProfileAccessToken)
         {
             // Optional: Delete all existing location extension feeds. This is an optional step,
             // and is required for this code example to run correctly more than once.
@@ -200,36 +207,36 @@ namespace Google.Ads.GoogleAds.Examples.V9
             // Get the FeedServiceClient.
             FeedServiceClient feedService = client.GetService(Services.V9.FeedService);
 
-            // Creates a feed that will sync to the Google My Business account specified by
-            // gmbEmailAddress. Do not add FeedAttributes to this object as Google Ads will add
-            // them automatically because this will be a system generated feed.
-            Feed gmbFeed = new Feed()
+            // Creates a feed that will sync to the Business Profile account specified by
+            // businessProfileEmailAddress. Do not add FeedAttributes to this object as Google Ads
+            // will add them automatically because this will be a system generated feed.
+            Feed businessProfileFeed = new Feed()
             {
-                Name = "Google My Business feed #" + ExampleUtilities.GetRandomString(),
+                Name = "Business Profile feed #" + ExampleUtilities.GetRandomString(),
 
                 PlacesLocationFeedData = new PlacesLocationFeedData()
                 {
-                    EmailAddress = gmbEmailAddress,
-                    // If the EmailAddress is for a GMB manager instead of the GMB
-                    // account owner, then set BusinessAccountId to the Google+ Page ID of
-                    // a location for which the manager has access. This information is available
-                    // through the Google My Business API. See
+                    EmailAddress = businessProfileEmailAddress,
+                    // If the EmailAddress is for a Business Profile manager instead of the
+                    // Business Profile account owner, then set BusinessAccountId to the Google+
+                    // Page ID of a location for which the manager has access. This information is
+                    // available through the Business Profile API. See
                     // https://developers.google.com/my-business/reference/rest/v4/accounts.locations#locationkey
                     // for details.
                     BusinessAccountId = string.IsNullOrEmpty(businessAccountId) ?
                         null : businessAccountId,
-                    // Used to filter Google My Business listings by labels. If entries exist in
+                    // Used to filter Business Profile listings by labels. If entries exist in
                     // label_filters, only listings that have at least one of the labels set are
                     // candidates to be synchronized into FeedItems. If no entries exist in
                     // label_filters, then all listings are candidates for syncing.
                     LabelFilters = { "Stores in New York" },
-                    // Sets the authentication info to be able to connect Google Ads to the GMB
-                    // account.
+                    // Sets the authentication info to be able to connect Google Ads to the
+                    // Business Profile account.
                     OauthInfo = new OAuthInfo()
                     {
                         HttpMethod = "GET",
                         HttpRequestUrl = GOOGLE_ADS_SCOPE,
-                        HttpAuthorizationHeader = $"Bearer {gmbAccessToken}"
+                        HttpAuthorizationHeader = $"Bearer {businessProfileAccessToken}"
                     },
                 },
                 // Since this feed's feed items will be managed by Google,
@@ -239,7 +246,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
 
             FeedOperation operation = new FeedOperation()
             {
-                Create = gmbFeed
+                Create = businessProfileFeed
             };
 
             // Adds the feed.
@@ -247,11 +254,12 @@ namespace Google.Ads.GoogleAds.Examples.V9
                 feedService.MutateFeeds(customerId.ToString(), new[] { operation });
 
             // Displays the results.
-            string gmbFeedResourceName = response.Results[0].ResourceName;
-            Console.WriteLine($"GMB feed created with resource name: {gmbFeedResourceName}.");
-            return gmbFeedResourceName;
+            string businessProfileFeedResourceName = response.Results[0].ResourceName;
+            Console.WriteLine($"Business Profile feed created with resource name: " +
+                $"{businessProfileFeedResourceName}.");
+            return businessProfileFeedResourceName;
         }
-        // [END add_google_my_business_location_extensions]
+        // [END add_business_profile_location_extensions]
 
         /// <summary>
         /// Deletes the old location extension feeds.
@@ -263,8 +271,10 @@ namespace Google.Ads.GoogleAds.Examples.V9
             // To delete a location extension feed, you need to
             // 1. Delete the CustomerFeed so that the location extensions from the feed stop
             // serving.
-            // 2. Delete the feed so that Google Ads will no longer sync from the GMB account.
-            CustomerFeed[] oldCustomerFeeds = GetLocationExtensionCustomerFeeds(client, customerId);
+            // 2. Delete the feed so that Google Ads will no longer sync from the Business Profile
+            // account.
+            CustomerFeed[] oldCustomerFeeds =
+                GetLocationExtensionCustomerFeeds(client, customerId);
             if (oldCustomerFeeds.Length != 0)
             {
                 DeleteCustomerFeeds(client, customerId, oldCustomerFeeds);
@@ -387,15 +397,16 @@ namespace Google.Ads.GoogleAds.Examples.V9
         }
 
         /// <summary>
-        /// Gets the Google My Business feed mapping.
+        /// Gets the Business Profile feed mapping.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
-        /// <param name="gmbFeedResourceName">The GMB feed resource name.</param>
+        /// <param name="businessProfileFeedResourceName">The Business Profile feed resource name.
+        /// </param>
         /// <returns>The newly created feed mapping.</returns>
-        // [START add_google_my_business_location_extensions_1]
-        private static FeedMapping GetGMBFeedMapping(GoogleAdsClient client, long customerId,
-            string gmbFeedResourceName)
+        // [START add_business_profile_location_extensions_1]
+        private static FeedMapping GetBusinessProfileFeedMapping(GoogleAdsClient client,
+            long customerId, string businessProfileFeedResourceName)
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
@@ -403,7 +414,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
 
             // Create the query.
             string query = $"SELECT feed_mapping.resource_name, feed_mapping.status FROM " +
-                $"feed_mapping WHERE feed_mapping.feed = '{gmbFeedResourceName}' and " +
+                $"feed_mapping WHERE feed_mapping.feed = '{businessProfileFeedResourceName}' and " +
                 $"feed_mapping.status = ENABLED and feed_mapping.placeholder_type = LOCATION" +
                 $" LIMIT 1";
 
@@ -415,21 +426,20 @@ namespace Google.Ads.GoogleAds.Examples.V9
             GoogleAdsRow googleAdsRow = result.FirstOrDefault();
             return (googleAdsRow == null) ? null : googleAdsRow.FeedMapping;
         }
-        // [END add_google_my_business_location_extensions_1]
+        // [END add_business_profile_location_extensions_1]
 
         /// <summary>
-        /// Waits for GMB feed to be ready.
+        /// Waits for the Business Profile feed to be ready.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
-        /// <param name="gmbFeedResourceName">Name of the GMB feed resource.</param>
-        // [START add_google_my_business_location_extensions_3]
-        private static void WaitForGMBFeedToBeReady(GoogleAdsClient client, long customerId,
-            string gmbFeedResourceName)
+        /// <param name="businessProfileFeedResourceName">The Business Profile feed resource name.
+        /// </param>
+        // [START add_business_profile_location_extensions_3]
+        private static void WaitForBusinessProfileFeedToBeReady(GoogleAdsClient client,
+            long customerId, string businessProfileFeedResourceName)
         {
             int numAttempts = 0;
-            int sleepSeconds = 0;
-
             while (numAttempts < MAX_FEEDMAPPING_RETRIEVAL_ATTEMPTS)
             {
                 // Once you create a feed, Google's servers will setup the feed by creating feed
@@ -437,38 +447,40 @@ namespace Google.Ads.GoogleAds.Examples.V9
                 // used for creating customer feed.
                 // This process is asynchronous, so we wait until the feed mapping is created,
                 // peforming exponential backoff.
-                FeedMapping feedMapping = GetGMBFeedMapping(client,
-                    customerId, gmbFeedResourceName);
+                FeedMapping feedMapping = GetBusinessProfileFeedMapping(client,
+                    customerId, businessProfileFeedResourceName);
 
                 if (feedMapping == null)
                 {
                     numAttempts++;
-                    sleepSeconds = (int) (5 * Math.Pow(2, numAttempts));
-                    Console.WriteLine($"Checked: #{numAttempts} time(s). GMB feed is not ready " +
-                        $"yet. Waiting {sleepSeconds} seconds before trying again.");
+                    int sleepSeconds = (int)(5 * Math.Pow(2, numAttempts));
+                    Console.WriteLine($"Checked: #{numAttempts} time(s). Business Profile feed " +
+                        $"is not ready yet. Waiting {sleepSeconds} seconds before trying again.");
                     Thread.Sleep(sleepSeconds * 1000);
                 }
                 else
                 {
-                    Console.WriteLine($"GMB Feed {gmbFeedResourceName} is now ready.");
+                    Console.WriteLine($"Business Profile Feed {businessProfileFeedResourceName} " +
+                        $"is now ready.");
                     return;
                 }
             }
             throw new RpcException(new Status(StatusCode.DeadlineExceeded,
-                $"GMB Feed is not ready after {MAX_FEEDMAPPING_RETRIEVAL_ATTEMPTS}" +
-                $" retries."));
+                $"Business Profile Feed is not ready after {MAX_FEEDMAPPING_RETRIEVAL_ATTEMPTS} " +
+                $"retries."));
         }
-        // [END add_google_my_business_location_extensions_3]
+        // [END add_business_profile_location_extensions_3]
 
         /// <summary>
         /// Creates the customer feed.
         /// </summary>
         /// <param name="client">The client.</param>
         /// <param name="customerId">The customer identifier.</param>
-        /// <param name="gmbFeedResourceName">Name of the GMB feed resource.</param>
-        // [START add_google_my_business_location_extensions_2]
+        /// <param name="businessProfileFeedResourceName">The Business Profile feed resource name.
+        /// </param>
+        // [START add_business_profile_location_extensions_2]
         private static void CreateCustomerFeed(GoogleAdsClient client, long customerId,
-            string gmbFeedResourceName)
+            string businessProfileFeedResourceName)
         {
             // Get the CustomerFeedService.
             CustomerFeedServiceClient customerFeedService = client.GetService(
@@ -478,7 +490,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
             // the LOCATION placeholder type.
             CustomerFeed customerFeed = new CustomerFeed()
             {
-                Feed = gmbFeedResourceName,
+                Feed = businessProfileFeedResourceName,
                 PlaceholderTypes = { PlaceholderType.Location },
                 MatchingFunction = new MatchingFunction()
                 {
@@ -512,6 +524,6 @@ namespace Google.Ads.GoogleAds.Examples.V9
             Console.WriteLine($"Customer feed created with resource name: {addedCustomerFeed}.");
             return;
         }
-        // [END add_google_my_business_location_extensions_2]
+        // [END add_business_profile_location_extensions_2]
     }
 }
