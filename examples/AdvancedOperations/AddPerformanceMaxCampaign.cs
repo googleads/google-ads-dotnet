@@ -15,30 +15,31 @@
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V9.Common;
-using Google.Ads.GoogleAds.V9.Enums;
-using Google.Ads.GoogleAds.V9.Errors;
-using Google.Ads.GoogleAds.V9.Resources;
-using Google.Ads.GoogleAds.V9.Services;
+using Google.Ads.GoogleAds.V10.Common;
+using Google.Ads.GoogleAds.V10.Enums;
+using Google.Ads.GoogleAds.V10.Errors;
+using Google.Ads.GoogleAds.V10.Resources;
+using Google.Ads.GoogleAds.V10.Services;
 using Google.Protobuf;
 using System.Collections.Generic;
 using System.Linq;
 using System;
-using static Google.Ads.GoogleAds.V9.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.AdvertisingChannelSubTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.AssetFieldTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.AssetGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.AssetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.BiddingStrategyTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.BudgetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.CriterionTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.MediaTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Services.SmartCampaignSuggestionInfo.Types;
+using System.Threading;
+using static Google.Ads.GoogleAds.V10.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.AdvertisingChannelSubTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.AssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.AssetGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.AssetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.BiddingStrategyTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.BudgetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.CriterionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.MediaTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Services.SmartCampaignSuggestionInfo.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V9
+namespace Google.Ads.GoogleAds.Examples.V10
 {
     /// <summary>
     /// This example shows how to create a Performance Max campaign.
@@ -68,6 +69,13 @@ namespace Google.Ads.GoogleAds.Examples.V9
             [Option("customerId", Required = true, HelpText =
                 "The Google Ads customer ID.")]
             public long CustomerId { get; set; }
+
+            /// <summary>
+            /// Optional: An audience ID to use to improve the targeting of the Performance Max
+            /// campaign.
+            /// </summary>
+            [Option("audienceId", Required = false, HelpText = "The ID of an audience.")]
+            public long? AudienceId { get; set; }
         }
 
         /// <summary>
@@ -94,7 +102,8 @@ namespace Google.Ads.GoogleAds.Examples.V9
             Console.WriteLine(codeExample.Description);
             codeExample.Run(
                 new GoogleAdsClient(),
-                options.CustomerId
+                options.CustomerId,
+                options.AudienceId
             );
         }
 
@@ -123,13 +132,11 @@ namespace Google.Ads.GoogleAds.Examples.V9
                 this.next = assetGroupId - 1;
             }
 
-            public string Next(AssetFieldType fieldType) {
-                lock (this)
-                {
-                    long i = next;
-                    next -= 1;
-                    return ResourceNames.AssetGroupAsset(customerId, assetGroupId, i, fieldType);
-                }
+            public string Next()
+            {
+                long i = next;
+                Interlocked.Decrement(ref next);
+                return ResourceNames.Asset(customerId, i);
             }
         }
 
@@ -145,11 +152,12 @@ namespace Google.Ads.GoogleAds.Examples.V9
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID.</param>
-        public void Run(GoogleAdsClient client, long customerId)
+        /// <param name="audienceId">The optional audience ID.</param>
+        public void Run(GoogleAdsClient client, long customerId, long? audienceId)
         {
             // [START add_performance_max_campaign_1]
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V9.GoogleAdsService);
+                client.GetService(Services.V10.GoogleAdsService);
 
             // Performance Max campaigns require that repeated assets such as headlines and
             // descriptions be created before the campaign.
@@ -223,6 +231,14 @@ namespace Google.Ads.GoogleAds.Examples.V9
                     )
                 );
 
+            List<MutateOperation> assetGroupSignalOperations =
+                CreateAssetGroupSignalOperations(
+                    client,
+                    customerId,
+                    ResourceNames.AssetGroup(customerId, TEMPORARY_ID_ASSET_GROUP),
+                    audienceId
+                );
+
             MutateGoogleAdsRequest request = new MutateGoogleAdsRequest
             {
                 CustomerId = customerId.ToString()
@@ -237,6 +253,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
             request.MutateOperations.Add(performanceMaxCampaignOperation);
             request.MutateOperations.AddRange(campaignCriterionOperations);
             request.MutateOperations.AddRange(assetGroupOperations);
+            request.MutateOperations.AddRange(assetGroupSignalOperations);
 
             MutateGoogleAdsResponse response = googleAdsServiceClient.Mutate(request);
 
@@ -261,7 +278,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         {
             // Get the BudgetService.
             CampaignBudgetServiceClient budgetService =
-              client.GetService(Services.V9.CampaignBudgetService);
+              client.GetService(Services.V10.CampaignBudgetService);
 
             MutateOperation operation = new MutateOperation
             {
@@ -469,7 +486,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
 
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V9.GoogleAdsService);
+                client.GetService(Services.V10.GoogleAdsService);
 
             // Send the operations in a single Mutate request.
             MutateGoogleAdsResponse response = googleAdsServiceClient.Mutate(request);
@@ -579,7 +596,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
                 CreateAndLinkTextAsset(
                     client,
                     assetGroupResourceName,
-                    resourceNameGenerator.Next(AssetFieldType.LongHeadline),
+                    resourceNameGenerator.Next(),
                     "Travel the World",
                     AssetFieldType.LongHeadline
                 )
@@ -590,7 +607,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
                 CreateAndLinkTextAsset(
                     client,
                     assetGroupResourceName,
-                    resourceNameGenerator.Next(AssetFieldType.BusinessName),
+                    resourceNameGenerator.Next(),
                     "Interplanetary Cruises",
                     AssetFieldType.BusinessName
                 )
@@ -603,9 +620,10 @@ namespace Google.Ads.GoogleAds.Examples.V9
                 CreateAndLinkImageAsset(
                     client,
                     assetGroupResourceName,
-                    resourceNameGenerator.Next(AssetFieldType.Logo),
+                    resourceNameGenerator.Next(),
                     "https://gaagl.page.link/bjYi",
-                    AssetFieldType.Logo
+                    AssetFieldType.Logo,
+                    "Marketing Logo"
                 )
             );
 
@@ -614,9 +632,10 @@ namespace Google.Ads.GoogleAds.Examples.V9
                 CreateAndLinkImageAsset(
                     client,
                     assetGroupResourceName,
-                    resourceNameGenerator.Next(AssetFieldType.MarketingImage),
+                    resourceNameGenerator.Next(),
                     "https://gaagl.page.link/Eit5",
-                    AssetFieldType.MarketingImage
+                    AssetFieldType.MarketingImage,
+                    "Marketing Image"
                 )
             );
 
@@ -625,9 +644,10 @@ namespace Google.Ads.GoogleAds.Examples.V9
                 CreateAndLinkImageAsset(
                     client,
                     assetGroupResourceName,
-                    resourceNameGenerator.Next(AssetFieldType.SquareMarketingImage),
+                    resourceNameGenerator.Next(),
                     "https://gaagl.page.link/bjYi",
-                    AssetFieldType.SquareMarketingImage
+                    AssetFieldType.SquareMarketingImage,
+                    "Square Marketing Image"
                 )
             );
 
@@ -698,13 +718,15 @@ namespace Google.Ads.GoogleAds.Examples.V9
         /// created.</param>
         /// <param name="url">The url of the image to be retrieved and put into an asset.</param>
         /// <param name="fieldType">The field type of the asset to be created.</param>
+        /// <param name="assetName">The asset name.</param>
         /// <returns>A list of MutateOperations that create a new linked image asset.</returns>
         private List<MutateOperation> CreateAndLinkImageAsset(
             GoogleAdsClient client,
             string assetGroupResourceName,
             string assetResourceName,
             string url,
-            AssetFieldType fieldType)
+            AssetFieldType fieldType,
+            string assetName)
         {
             List<MutateOperation> operations = new List<MutateOperation>();
 
@@ -719,7 +741,11 @@ namespace Google.Ads.GoogleAds.Examples.V9
                                     ByteString.CopyFrom(
                                         MediaUtilities.GetAssetDataFromUrl(url, client.Config)
                                     )
-                            }
+                            },
+                            // Provide a unique friendly name to identify your asset.
+                            // When there is an existing image asset with the same content but a
+                            // different name, the new name will be dropped silently.
+                            Name = assetName
                         }
                     }
                 }
@@ -741,6 +767,51 @@ namespace Google.Ads.GoogleAds.Examples.V9
             return operations;
         }
         // [END add_performance_max_campaign_8]
+
+        // [START add_performance_max_campaign_9]
+        /// <summary>
+        /// Creates a list of MutateOperations that may create AssetGroupSignals
+        /// </summary>
+        /// <param name="client">The Google Ads API client.</param>
+        /// <param name="customerId">The customer ID.</param>
+        /// <param name="assetGroupResourceName">The resource name of the asset group to be
+        /// created.</param>
+        /// <param name="audienceId">The optional audience ID.</param>
+        /// <returns>A list of MutateOperations that create may create AssetGroupSignals.</returns>
+        private List<MutateOperation> CreateAssetGroupSignalOperations(
+            GoogleAdsClient client,
+            long customerId,
+            string assetGroupResourceName,
+            long? audienceId)
+        {
+            List<MutateOperation> operations = new List<MutateOperation>();
+
+            if (!audienceId.HasValue) {
+                return operations;
+            }
+
+            operations.Add(
+                new MutateOperation()
+                {
+                    AssetGroupSignalOperation = new AssetGroupSignalOperation()
+                    {
+                        // To learn more about Audience Signals, see
+                        // https://developers.google.com/google-ads/api/docs/performance-max/asset-groups#audience_signals
+                        Create = new AssetGroupSignal()
+                        {
+                            AssetGroup = assetGroupResourceName,
+                            Audience = new AudienceInfo()
+                            {
+                                Audience = ResourceNames.Audience(customerId, audienceId.Value)
+                            }
+                        }
+                    }
+                }
+            );
+
+            return operations;
+        }
+        // [END add_performance_max_campaign_9]
 
         /// <summary>
         /// Prints the details of a MutateGoogleAdsResponse. Parses the "response" oneof field name

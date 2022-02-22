@@ -14,12 +14,12 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V9.Errors;
-using Google.Ads.GoogleAds.V9.Services;
+using Google.Ads.GoogleAds.V10.Errors;
+using Google.Ads.GoogleAds.V10.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V9
+namespace Google.Ads.GoogleAds.Examples.V10
 {
     /// <summary>
     /// This code example removes an ad. To list ads, run GetExpandedTextAds.cs.
@@ -103,7 +103,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         public void Run(GoogleAdsClient client, long customerId, long adGroupId, long adId)
         {
             // Get the AdGroupAdService.
-            AdGroupAdServiceClient service = client.GetService(Services.V9.AdGroupAdService);
+            AdGroupAdServiceClient service = client.GetService(Services.V10.AdGroupAdService);
 
             // Create a new operation.
             AdGroupAdOperation operation = new AdGroupAdOperation

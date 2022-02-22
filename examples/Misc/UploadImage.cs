@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V9.Errors;
-using Google.Ads.GoogleAds.V9.Resources;
-using Google.Ads.GoogleAds.V9.Services;
+using Google.Ads.GoogleAds.V10.Errors;
+using Google.Ads.GoogleAds.V10.Resources;
+using Google.Ads.GoogleAds.V10.Services;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V9.Enums.MediaTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.MediaTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V9
+namespace Google.Ads.GoogleAds.Examples.V10
 {
     /// <summary>
     /// This code example uploads an image.
@@ -82,7 +82,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         {
             // Get the MediaFileServiceClient.
             MediaFileServiceClient mediaFileService =
-                client.GetService(Services.V9.MediaFileService);
+                client.GetService(Services.V10.MediaFileService);
 
             const string URL = "https://gaagl.page.link/Eit5";
 

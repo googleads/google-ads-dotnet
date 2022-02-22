@@ -57,6 +57,11 @@ namespace Google.Ads.GoogleAds.Logging
         }
 
         /// <summary>
+        /// The log customizer.
+        /// </summary>
+        ILogFormatter logCustomizer;
+        
+        /// <summary>
         /// Initializes a new instance of the <see cref="LoggingHandler"/> class.
         /// </summary>
         /// <param name="config">The configuration.</param>
@@ -64,6 +69,7 @@ namespace Google.Ads.GoogleAds.Logging
         {
             this.config = config;
             this.traceWriter = new DefaultTraceWriter();
+            this.logCustomizer = new LogFormatter(); ;
             this.WriteDetailedLogs = WriteDetailedLogEntry;
             this.WriteSummaryLogs = WriteSummaryLogEntry;
         }
@@ -92,13 +98,14 @@ namespace Google.Ads.GoogleAds.Logging
             {
                 exception = UnaryRpcInterceptor.ParseTaskException(oldTask.Exception);
 
-                LogEntry logEntry = new LogEntry()
+                LogEntry logEntry = new LogEntry(logCustomizer)
                 {
                     Host = config.ServerUrl,
                     Method = context.Method.FullName,
                     RequestHeaders = context.Options.Headers,  // includes the RequestId
                     IsFailure = oldTask.IsFaulted,
                     Exception = exception,
+                    Response = (oldTask.IsFaulted) ? default : oldTask.Result,
                 };
 
                 WriteSummaryLogs(logEntry);
@@ -106,7 +113,7 @@ namespace Google.Ads.GoogleAds.Logging
 
             if (TraceUtilities.ShouldGenerateDetailedRequestLogs())
             {
-                LogEntry logEntry = new LogEntry()
+                LogEntry logEntry = new LogEntry(logCustomizer)
                 {
                     Host = config.ServerUrl,
                     Method = context.Method.FullName,
@@ -151,13 +158,14 @@ namespace Google.Ads.GoogleAds.Logging
             {
                 exception = UnaryRpcInterceptor.ParseTaskException(rpcException);
 
-                LogEntry logEntry = new LogEntry()
+                LogEntry logEntry = new LogEntry(logCustomizer)
                 {
                     Host = config.ServerUrl,
                     Method = context.Method.FullName,
                     RequestHeaders = context.Options.Headers,  // includes the RequestId
                     IsFailure = (rpcException != null),
                     Exception = exception,
+                    Response = response,
                 };
 
                 WriteSummaryLogs(logEntry);
@@ -165,7 +173,7 @@ namespace Google.Ads.GoogleAds.Logging
 
             if (TraceUtilities.ShouldGenerateDetailedRequestLogs())
             {
-                LogEntry logEntry = new LogEntry()
+                LogEntry logEntry = new LogEntry(logCustomizer)
                 {
                     Host = config.ServerUrl,
                     Method = context.Method.FullName,

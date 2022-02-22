@@ -14,16 +14,17 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V9.Errors;
-using Google.Ads.GoogleAds.V9.Services;
-using Google.Api.Gax;
+using Google.Ads.GoogleAds.V10.Errors;
+using Google.Ads.GoogleAds.V10.Resources;
+using Google.Ads.GoogleAds.V10.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V9
+namespace Google.Ads.GoogleAds.Examples.V10
 {
     /// <summary>
-    /// This code example illustrates getting keywords.
+    /// This code example illustrates getting keywords and demonstrates how to use the
+    /// omit_unselected_resource_names option in GAQL to reduce payload size.
     /// </summary>
     public class GetKeywords : ExampleBase
     {
@@ -38,6 +39,14 @@ namespace Google.Ads.GoogleAds.Examples.V9
             [Option("customerId", Required = true, HelpText =
                 "The Google Ads customer ID for which the call is made.")]
             public long CustomerId { get; set; }
+
+            /// <summary>
+            /// The Google Ads customer ID for which the call is made.
+            /// </summary>
+            [Option("omitUnselectedResourceNames", Required = false, HelpText =
+                "Specifies whether to omit unselected resource names from response.",
+                Default = false)]
+            public bool? OmitUnselectedResourceNames { get; set; }
         }
 
         /// <summary>
@@ -57,54 +66,90 @@ namespace Google.Ads.GoogleAds.Examples.V9
                     // The Google Ads customer ID for which the call is made.
                     options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
 
+                    // Specifies whether to omit unselected resource names from response.
+                    options.OmitUnselectedResourceNames = false;
+
                     return 0;
                 });
 
             GetKeywords codeExample = new GetKeywords();
             Console.WriteLine(codeExample.Description);
             codeExample.Run(new GoogleAdsClient(),
-                options.CustomerId);
+                options.CustomerId, options.OmitUnselectedResourceNames);
         }
 
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
-        public override string Description => "This code example illustrates getting keywords.";
+        public override string Description => "This code example illustrates getting keywords " +
+            "and demonstrates how to use the omit_unselected_resource_names option in GAQL to " +
+            "reduce payload size.";
 
         /// <summary>
         /// Runs the code example.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        public void Run(GoogleAdsClient client, long customerId)
+        /// <param name="omitUnselectedResourceNames">Specifies whether to omit unselected resource
+        /// names from response.</param>
+        public void Run(GoogleAdsClient client, long customerId, bool? omitUnselectedResourceNames)
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V9.GoogleAdsService);
+                Services.V10.GoogleAdsService);
             try
             {
-                PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> result =
-                  googleAdsService.Search(customerId.ToString(),
-                      $@"SELECT
-                    ad_group.id,
-                    ad_group.status,
-                    ad_group_criterion.criterion_id,
-                    ad_group_criterion.keyword.text,
-                    ad_group_criterion.keyword.match_type
-                FROM ad_group_criterion
-                WHERE ad_group_criterion.type = 'KEYWORD'
-                    AND ad_group.status = 'ENABLED'
-                    AND ad_group_criterion.status IN ('ENABLED', 'PAUSED')
-                LIMIT 50");
-                foreach (GoogleAdsRow criterionRow in result)
+                string query =
+                    $@"SELECT
+                        ad_group.id,
+                        ad_group.status,
+                        ad_group_criterion.criterion_id,
+                        ad_group_criterion.keyword.text,
+                        ad_group_criterion.keyword.match_type
+                    FROM ad_group_criterion
+                    WHERE ad_group_criterion.type = 'KEYWORD'
+                        AND ad_group.status = 'ENABLED'
+                        AND ad_group_criterion.status IN ('ENABLED', 'PAUSED')";
+
+                // Adds omit_unselected_resource_names=true to the PARAMETERS clause of the
+                // Google Ads Query Language (GAQL) query, which excludes the resource names of
+                // all resources that aren't explicitly requested in the SELECT clause.
+                // Enabling this option reduces payload size, but if you plan to use a returned
+                // object in subsequent mutate operations, make sure you explicitly request its
+                // "resource_name" field in the SELECT clause.
+                //
+                // Read more about PARAMETERS:
+                // https://developers.google.com/google-ads/api/docs/query/structure#parameters
+                if (omitUnselectedResourceNames.HasValue && omitUnselectedResourceNames.Value)
                 {
-                    Console.WriteLine("Keyword with text '{0}', id = '{1}' and match type = " +
-                        "'{2}' was retrieved for ad group '{3}'.",
-                        criterionRow.AdGroupCriterion.Keyword.Text,
-                        criterionRow.AdGroupCriterion.CriterionId,
-                        criterionRow.AdGroupCriterion.Keyword.MatchType,
-                        criterionRow.AdGroup.Id.ToString());
+                    query += " PARAMETERS omit_unselected_resource_names=true";
                 }
+
+                googleAdsService.SearchStream(customerId.ToString(), query,
+                    delegate (SearchGoogleAdsStreamResponse resp)
+                    {
+                        foreach (GoogleAdsRow criterionRow in resp.Results)
+                        {
+                            AdGroup adGroup = criterionRow.AdGroup;
+                            AdGroupCriterion criterion = criterionRow.AdGroupCriterion;
+                            string andResourceName = null;
+                            if (omitUnselectedResourceNames.HasValue &&
+                                omitUnselectedResourceNames.Value)
+                            {
+                                andResourceName = "";
+                            }
+                            else
+                            {
+                                andResourceName = $" and resource name '{adGroup.ResourceName}'";
+                            }
+
+                            Console.WriteLine("Keyword with text '{0}', id = '{1}' and " +
+                                "match type = '{2}' was retrieved for ad group '{3}'{4}.",
+                                criterion.Keyword.Text, criterion.CriterionId,
+                                criterion.Keyword.MatchType, adGroup.Id, andResourceName);
+                        }
+                    }
+                );
             }
             catch (GoogleAdsException e)
             {

@@ -15,14 +15,14 @@
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V9.Errors;
-using Google.Ads.GoogleAds.V9.Resources;
-using Google.Ads.GoogleAds.V9.Services;
+using Google.Ads.GoogleAds.V10.Errors;
+using Google.Ads.GoogleAds.V10.Resources;
+using Google.Ads.GoogleAds.V10.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V9.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.AdGroupCriterionStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V9
+namespace Google.Ads.GoogleAds.Examples.V10
 {
     /// <summary>
     /// This code example illustrates udating a keyword.
@@ -106,7 +106,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         {
             // Get the CampaignCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V9.AdGroupCriterionService);
+                client.GetService(Services.V10.AdGroupCriterionService);
 
             // Create the keyword for update.
             AdGroupCriterion keyword = new AdGroupCriterion()

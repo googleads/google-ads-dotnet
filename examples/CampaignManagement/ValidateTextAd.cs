@@ -14,17 +14,17 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V9.Common;
-using Google.Ads.GoogleAds.V9.Errors;
-using Google.Ads.GoogleAds.V9.Resources;
-using Google.Ads.GoogleAds.V9.Services;
+using Google.Ads.GoogleAds.V10.Common;
+using Google.Ads.GoogleAds.V10.Errors;
+using Google.Ads.GoogleAds.V10.Resources;
+using Google.Ads.GoogleAds.V10.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V9.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V9.Errors.PolicyFindingErrorEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V10.Errors.PolicyFindingErrorEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V9
+namespace Google.Ads.GoogleAds.Examples.V10
 {
     /// <summary>
     /// This code example shows how to use the validateOnly header to validate an expanded text ad.
@@ -97,7 +97,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         {
             // Get the AdGroupAdService.
             AdGroupAdServiceClient adGroupAdService = client.GetService(
-                Services.V9.AdGroupAdService);
+                Services.V10.AdGroupAdService);
 
             // Create the ad group ad object.
             AdGroupAd adGroupAd = new AdGroupAd

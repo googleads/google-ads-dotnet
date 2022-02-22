@@ -15,32 +15,32 @@
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V9.Common;
-using Google.Ads.GoogleAds.V9.Enums;
-using Google.Ads.GoogleAds.V9.Errors;
-using Google.Ads.GoogleAds.V9.Resources;
-using Google.Ads.GoogleAds.V9.Services;
+using Google.Ads.GoogleAds.V10.Common;
+using Google.Ads.GoogleAds.V10.Enums;
+using Google.Ads.GoogleAds.V10.Errors;
+using Google.Ads.GoogleAds.V10.Resources;
+using Google.Ads.GoogleAds.V10.Services;
 using Google.Protobuf;
 using System.Collections.Generic;
 using System.Linq;
 using System;
-using static Google.Ads.GoogleAds.V9.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.AdvertisingChannelSubTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.AssetFieldTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.AssetGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.AssetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.BiddingStrategyTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.BudgetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.CriterionTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.CustomizerAttributeTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.MediaTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Services.SmartCampaignSuggestionInfo.Types;
+using static Google.Ads.GoogleAds.V10.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.AdvertisingChannelSubTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.AssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.AssetGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.AssetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.BiddingStrategyTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.BudgetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.CriterionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.CustomizerAttributeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.MediaTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Services.SmartCampaignSuggestionInfo.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V9
+namespace Google.Ads.GoogleAds.Examples.V10
 {
     /// <summary>
     /// Adds a customizer attribute, links the customizer attribute to a customer, and then adds
@@ -185,7 +185,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
             };
 
             CustomizerAttributeServiceClient serviceClient =
-                client.GetService(Services.V9.CustomizerAttributeService);
+                client.GetService(Services.V10.CustomizerAttributeService);
 
             // Issues a mutate request to add the customizer attribute and prints its information.
             MutateCustomizerAttributesResponse response =
@@ -234,7 +234,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
             };
 
             CustomerCustomizerServiceClient serviceClient =
-                client.GetService(Services.V9.CustomerCustomizerService);
+                client.GetService(Services.V10.CustomerCustomizerService);
 
             // Issues a mutate request to add the customer customizer and prints its information.
             MutateCustomerCustomizersResponse response =
@@ -313,7 +313,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
             };
 
             // Issues a mutate request to add the ad group ad and prints its information.
-            AdGroupAdServiceClient serviceClient = client.GetService(Services.V9.AdGroupAdService);
+            AdGroupAdServiceClient serviceClient = client.GetService(Services.V10.AdGroupAdService);
 
             MutateAdGroupAdsResponse response = serviceClient.MutateAdGroupAds(
                 customerId.ToString(),

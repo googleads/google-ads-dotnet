@@ -23,6 +23,20 @@ message HelloResponse {
   string partial_failure = 2;
 }
 
+message HelloStreamRequest {
+  string customer_id = 1;
+  string name = 2;
+  optional int64 age = 3;
+  Address address = 4;
+}
+
+message HelloStreamResponse {
+  string name = 1;
+  string partial_failure = 2;
+  string request_id = 3;
+}
+
 service HelloService {
   rpc Hello (HelloRequest) returns (HelloResponse);
+  rpc HelloStream (HelloStreamRequest) returns (stream HelloStreamResponse);
 }

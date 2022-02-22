@@ -15,18 +15,18 @@
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V9.Common;
-using Google.Ads.GoogleAds.V9.Enums;
-using Google.Ads.GoogleAds.V9.Errors;
-using Google.Ads.GoogleAds.V9.Resources;
-using Google.Ads.GoogleAds.V9.Services;
+using Google.Ads.GoogleAds.V10.Common;
+using Google.Ads.GoogleAds.V10.Enums;
+using Google.Ads.GoogleAds.V10.Errors;
+using Google.Ads.GoogleAds.V10.Resources;
+using Google.Ads.GoogleAds.V10.Services;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V9.Enums.DisplayUploadProductTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.DisplayUploadProductTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V9
+namespace Google.Ads.GoogleAds.Examples.V10
 {
     /// <summary>
     /// This code example adds a display upload ad to a given ad group. To get ad groups,
@@ -132,7 +132,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         private string CreateMediaBundleAsset(GoogleAdsClient client, long customerId)
         {
             // Gets the AssetService.
-            AssetServiceClient assetServiceClient = client.GetService(Services.V9.AssetService);
+            AssetServiceClient assetServiceClient = client.GetService(Services.V10.AssetService);
 
             // The HTML5 zip file contains all the HTML, CSS, and images needed for the
             // HTML5 ad. For help on creating an HTML5 zip file, check out Google Web
@@ -147,7 +147,8 @@ namespace Google.Ads.GoogleAds.Examples.V9
                 MediaBundleAsset = new MediaBundleAsset()
                 {
                     Data = ByteString.CopyFrom(html5Zip)
-                }
+                },
+                Name = "Ad Media Bundle"
             };
 
             // Creates the asset operation.
@@ -181,7 +182,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         {
             // Get the AdGroupAdService.
             AdGroupAdServiceClient adGroupAdServiceClient =
-                client.GetService(Services.V9.AdGroupAdService);
+                client.GetService(Services.V10.AdGroupAdService);
 
             // Creates the ad with the required fields.
             Ad displayUploadAd = new Ad()

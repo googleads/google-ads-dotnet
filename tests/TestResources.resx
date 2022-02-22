@@ -259,4 +259,31 @@ Partial failures: PARTIAL_FAILURES
 TestExample
 V0.TestExample</value>
   </data>
+  <data name="DetailedStreamSuccessLog" xml:space="preserve">
+    <value>---------------BEGIN API CALL---------------
+
+Request
+-------
+
+Method Name: TEST_METHOD
+Host: TEST_HOST
+Headers: {
+  "developer-token": "REDACTED",
+  "test_key1": "TEST_VALUE1"
+}
+
+{ "customerId": "1234567890", "name": "API", "age": "25", "address": { "line1": "111 8th Ave", "city": "New York", "zipcode": "10011", "state": "NY" } }
+
+Response
+--------
+Headers: {
+  "test_key2": "TEST_VALUE2"
+}
+
+{ "name": "API", "requestId": "TEST_REQUEST_ID" }
+----------------END API CALL----------------</value>
+  </data>
+  <data name="SummaryStreamSuccessLog" xml:space="preserve">
+    <value>Request made: Host: TEST_HOST, Method: TEST_METHOD, ClientCustomerID: 1234567890,  RequestID: TEST_REQUEST_ID, IsFault: False, FaultMessage: Status(StatusCode="OK", Detail="")</value>
+  </data>
 </root>

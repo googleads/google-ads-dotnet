@@ -14,12 +14,12 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V9.Errors;
-using Google.Ads.GoogleAds.V9.Services;
+using Google.Ads.GoogleAds.V10.Errors;
+using Google.Ads.GoogleAds.V10.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V9
+namespace Google.Ads.GoogleAds.Examples.V10
 {
     /// <summary>
     /// This code example applies a given recommendation. To retrieve recommendations for text ads,
@@ -93,7 +93,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         {
             // Get the RecommendationServiceClient.
             RecommendationServiceClient service = client.GetService(
-                Services.V9.RecommendationService);
+                Services.V10.RecommendationService);
 
             ApplyRecommendationOperation operation = new ApplyRecommendationOperation()
             {
