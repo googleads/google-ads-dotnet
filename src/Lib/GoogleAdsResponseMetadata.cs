@@ -13,6 +13,7 @@
 // limitations under the License.
 
 using Grpc.Core;
+using System.Linq;
 
 namespace Google.Ads.GoogleAds.Lib
 {
@@ -21,11 +22,6 @@ namespace Google.Ads.GoogleAds.Lib
     /// </summary>
     public class GoogleAdsResponseMetadata
     {
-        /// <summary>
-        /// The gRPC metadata key name for request ID.
-        /// </summary>
-        private const string RequestIdKey = "request-id";
-
         /// <summary>
         /// Gets the request ID.
         /// </summary>
@@ -40,25 +36,27 @@ namespace Google.Ads.GoogleAds.Lib
         /// </summary>
         public GoogleAdsResponseMetadata(Metadata metadata) : base()
         {
-            // Clear out all properties to start with, to end up with
-            // a consistent set.
-            RequestId = null;
+            if (metadata == null)
+            {
+                return;
+            }
+            RequestId = metadata.Where(e => e.Key == MetadataKeyNames.RequestId)
+                .Select(e => e.Value)
+                .FirstOrDefault();
+        }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GoogleAdsResponseMetadata"/> class.
+        /// </summary>
+        /// <param name="metadata">The metadata.</param>
+        public GoogleAdsResponseMetadata(IResponseMetadata metadata) : base()
+        {
             if (metadata == null)
             {
                 return;
             }
 
-            for (int i = 0; i < metadata.Count; i++)
-            {
-                var entry = metadata[i];
-                switch (entry.Key)
-                {
-                    case RequestIdKey:
-                        RequestId = entry.Value;
-                        break;
-                }
-            }
+            RequestId = metadata.RequestId;
         }
     }
 }

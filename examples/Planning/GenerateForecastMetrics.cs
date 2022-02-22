@@ -14,12 +14,12 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V9.Errors;
-using Google.Ads.GoogleAds.V9.Services;
+using Google.Ads.GoogleAds.V10.Errors;
+using Google.Ads.GoogleAds.V10.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V9
+namespace Google.Ads.GoogleAds.Examples.V10
 {
     /// <summary>
     /// This code example generates forecast metrics for a keyword plan. To create a keyword plan,
@@ -92,7 +92,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         public void Run(GoogleAdsClient client, long customerId, long keywordPlanId)
         {
             KeywordPlanServiceClient kpServiceClient =
-                client.GetService(Services.V9.KeywordPlanService);
+                client.GetService(Services.V10.KeywordPlanService);
             string keywordPlanResource = ResourceNames.KeywordPlan(customerId, keywordPlanId);
 
             try

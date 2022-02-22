@@ -15,24 +15,24 @@
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V9.Common;
-using Google.Ads.GoogleAds.V9.Enums;
-using Google.Ads.GoogleAds.V9.Errors;
-using Google.Ads.GoogleAds.V9.Resources;
-using Google.Ads.GoogleAds.V9.Services;
+using Google.Ads.GoogleAds.V10.Common;
+using Google.Ads.GoogleAds.V10.Enums;
+using Google.Ads.GoogleAds.V10.Errors;
+using Google.Ads.GoogleAds.V10.Resources;
+using Google.Ads.GoogleAds.V10.Services;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V9.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.AdvertisingChannelSubTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.AssetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.MimeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.AdvertisingChannelSubTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.AssetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.MimeTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V9
+namespace Google.Ads.GoogleAds.Examples.V10
 {
     /// <summary>
     ///
@@ -110,10 +110,11 @@ namespace Google.Ads.GoogleAds.Examples.V9
                 string adGroupResourceName = CreateAdGroup(client, customerId,
                     campaignResourceName);
                 string marketingImageAssetResourceName = UploadImageAsset(client, customerId,
-                    MARKETING_IMAGE_URL, MARKETING_IMAGE_WIDTH, MARKETING_IMAGE_HEIGHT);
+                    MARKETING_IMAGE_URL, MARKETING_IMAGE_WIDTH, MARKETING_IMAGE_HEIGHT,
+                    "Marketing Image");
                 string squareMarketingImageAssetResourceName = UploadImageAsset(client, customerId,
                     SQUARE_MARKETING_IMAGE_URL, SQUARE_MARKETING_IMAGE_SIZE,
-                    SQUARE_MARKETING_IMAGE_SIZE);
+                    SQUARE_MARKETING_IMAGE_SIZE, "Square Marketing Image");
                 CreateResponsiveDisplayAd(client, customerId, adGroupResourceName,
                     marketingImageAssetResourceName, squareMarketingImageAssetResourceName);
             }
@@ -138,7 +139,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         {
             // Get the BudgetService.
             CampaignBudgetServiceClient budgetService = client.GetService(
-                Services.V9.CampaignBudgetService);
+                Services.V10.CampaignBudgetService);
 
             // Create the campaign budget.
             CampaignBudget budget = new CampaignBudget()
@@ -180,7 +181,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
             string budgetResourceName)
         {
             // Get the CampaignService.
-            CampaignServiceClient campaignService = client.GetService(Services.V9.CampaignService);
+            CampaignServiceClient campaignService = client.GetService(Services.V10.CampaignService);
 
             // Create the campaign.
             Campaign campaign = new Campaign()
@@ -239,7 +240,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
             string campaignResourceName)
         {
             // Get the AdGroupService.
-            AdGroupServiceClient adGroupService = client.GetService(Services.V9.AdGroupService);
+            AdGroupServiceClient adGroupService = client.GetService(Services.V10.AdGroupService);
 
             // Create the ad group.
             AdGroup adGroup = new AdGroup()
@@ -276,14 +277,15 @@ namespace Google.Ads.GoogleAds.Examples.V9
         /// <param name="imageUrl">The image URL.</param>
         /// <param name="width">The image width in pixels.</param>
         /// <param name="height">The image height in pixels.</param>
-        /// <returns></returns>
+        /// <param name="imageName">Name of the image asset.</param>
+        /// <returns>The resource name of the asset.</returns>
         // [START add_smart_display_ad_3]
         private static string UploadImageAsset(GoogleAdsClient client, long customerId,
-            string imageUrl, long width, long height)
+            string imageUrl, long width, long height, string imageName)
         {
             // Get the AssetServiceClient.
             AssetServiceClient assetService =
-                client.GetService(Services.V9.AssetService);
+                client.GetService(Services.V10.AssetService);
 
             // Creates an image content.
             byte[] imageContent = MediaUtilities.GetAssetDataFromUrl(imageUrl, client.Config);
@@ -311,7 +313,8 @@ namespace Google.Ads.GoogleAds.Examples.V9
                 // customer account.
                 // Name = 'Jupiter Trip #' + ExampleUtilities.GetRandomString(),
                 Type = AssetType.Image,
-                ImageAsset = imageAsset
+                ImageAsset = imageAsset,
+                Name = imageName
             };
 
             // Creates an asset operation.
@@ -351,7 +354,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         {
             // Get the AdGroupAdServiceClient.
             AdGroupAdServiceClient adGroupAdService =
-                client.GetService(Services.V9.AdGroupAdService);
+                client.GetService(Services.V10.AdGroupAdService);
 
             // Creates a responsive display ad info.
             ResponsiveDisplayAdInfo responsiveDisplayAdInfo = new ResponsiveDisplayAdInfo()

@@ -19,32 +19,50 @@ function dotnet_library::main() {
 
   DOTNET_CLIENT_LIBRARY_CUSTOM_NUGET_PATH="${DOTNET_CLIENT_LIBRARY_PATH}/custom_nupkg"
 
-  dotnet_library::set_vars_for_dotnet_env
   dotnet_library::install_dotnet
   dotnet_library::build_library
-}
-
-function dotnet_library::set_vars_for_dotnet_env() {
-  #Set an environment varlable to workaround https://github.com/dotnet/corefx/issues/38467
-  export CLR_OPENSSL_VERSION_OVERRIDE=1.1
 }
 
 function dotnet_library::install_dotnet() {
   # "Distro Check"
   uname -r
 
- # Remove broken apt-get dependency (temporary)
-  sudo rm /etc/apt/sources.list.d/cuda.list*
-  # "Install dotnet 5.0"
-  wget -q https://packages.microsoft.com/config/ubuntu/20.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+  # Note: 
+  # * dotnet-sdk-6.0 is capable of compiling the code to all the 4 frameworks - net6.0, net5.0,
+  #   net472 and netcoreapp3.1. Hence we install dotnet-sdk-6.0.
+  # * On Linux, dotnet-sdk-6.0 forwards the compilation of .net472 to Mono. Hence we install
+  #   mono-complete.
+  # * To actually run the tests, we need the corresponding runtimes to be installed.
+  #   *  dotnet-runtime-5.0 is installed to run tests for net5.0.
+  #   *  The library actually supports netstandard2.0, but Microsoft expects test assemblies to be 
+  #      compiled against executable targets even though the test itself is written as a library.
+  #      So we target netcoreapp3.1 instead of netstandard2.0 in the Google.Ads.GoogleAds.Tests.dll
+  #      and install dotnet-runtime-3.1 to run the tests.
+  #   *  .NET 472 runtime is included in mono-complete, so we don't install mono-runtime package.
+  #   *  .NET 6.0 runtime is included in dotnet-sdk-6.0, so we don't install dotnet-runtime-6.0.
+  
+  # "Install dotnet 3.1, 5.0, 6.0"
+  wget -q https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
   sudo dpkg -i packages-microsoft-prod.deb
   sudo add-apt-repository universe
   sudo apt-get update
   sudo apt-get install apt-transport-https -y
-  sudo apt-get install dotnet-sdk-5.0 -y
+  sudo apt-get install dotnet-sdk-6.0 -y
+  sudo apt-get install dotnet-runtime-5.0 -y
+  sudo apt-get install dotnet-runtime-3.1 -y
 
   # "Verify dotnet install"
   dotnet --info
+
+  # "Install mono."
+  #sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+  #sudo apt install apt-transport-https ca-certificates
+  #echo "deb https://download.mono-project.com/repo/ubuntu stable-xenial main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
+  #sudo apt update
+  #sudo apt-get install mono-complete -y
+
+  # "Verify mono install"
+  #mono --version
 }
 
 function dotnet_library::build_library() {
@@ -80,9 +98,10 @@ function dotnet_library::build_library() {
       "${DOTNET_CLIENT_LIBRARY_PATH}/tests/Google.Ads.GoogleAds.Tests.csproj"
 
   echo "Run the smoke tests."
-  echo "==================="
-  dotnet test "${DOTNET_CLIENT_LIBRARY_PATH}/tests/bin/Release/net5.0/Google.Ads.GoogleAds.Tests.dll" \
-      -v d --filter TestCategory=Smoke
+  echo "===================="
+  dotnet test --configuration Release --no-build  \
+      "${DOTNET_CLIENT_LIBRARY_PATH}/tests/Google.Ads.GoogleAds.Tests.csproj" \
+      -s "${DOTNET_CLIENT_LIBRARY_PATH}/tests/presubmit.runsettings"
 }
 
 dotnet_library::main

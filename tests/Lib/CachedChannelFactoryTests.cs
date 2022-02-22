@@ -23,7 +23,7 @@ namespace Google.Ads.GoogleAds.Tests.Lib
     /// Tests for <see cref="CachedChannelFactory"/> class.
     /// </summary>
     [TestFixture]
-    [Category("Smoke")]
+    [Category("Flaky")]
     internal class CachedChannelFactoryTests
     {
         private GoogleAdsConfig config = new GoogleAdsConfig();

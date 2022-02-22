@@ -14,17 +14,17 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V9.Common;
-using Google.Ads.GoogleAds.V9.Errors;
-using Google.Ads.GoogleAds.V9.Services;
+using Google.Ads.GoogleAds.V10.Common;
+using Google.Ads.GoogleAds.V10.Errors;
+using Google.Ads.GoogleAds.V10.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V9.Enums.DeviceEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.GenderTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.ReachPlanAdLengthEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.ReachPlanAgeRangeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.DeviceEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.GenderTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.ReachPlanAdLengthEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.ReachPlanAgeRangeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V9
+namespace Google.Ads.GoogleAds.Examples.V10
 {
     /// <summary>
     /// This example demonstrates how to interact with the ReachPlanService to find plannable
@@ -80,7 +80,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
 
         /// <summary>
         /// Runs the code example, showing a typical series of calls to the
-        /// <see cref="Services.V9.ReachPlanService"/>.
+        /// <see cref="Services.V10.ReachPlanService"/>.
         /// </summary>
         /// <param name="client">The Google Ads API client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
@@ -90,7 +90,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
             string currencyCode = "USD";
             long budgetMicros = 5_000_000L;
             ReachPlanServiceClient reachPlanService =
-                client.GetService(Services.V9.ReachPlanService);
+                client.GetService(Services.V10.ReachPlanService);
 
             try
             {

@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V9.Errors;
-using Google.Ads.GoogleAds.V9.Resources;
-using Google.Ads.GoogleAds.V9.Services;
+using Google.Ads.GoogleAds.V10.Errors;
+using Google.Ads.GoogleAds.V10.Resources;
+using Google.Ads.GoogleAds.V10.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V9.Enums.FlightPlaceholderFieldEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.FlightPlaceholderFieldEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V9
+namespace Google.Ads.GoogleAds.Examples.V10
 {
     /// <summary>
     /// This code example updates a FeedItemAttributeValue in a flights feed. To create a flights
@@ -173,7 +173,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         {
             // Get the FeedItemServiceClient.
             FeedItemServiceClient feedItemService =
-                client.GetService(Services.V9.FeedItemService);
+                client.GetService(Services.V10.FeedItemService);
 
             // Gets the feed resource name.
             string feedResourceName = ResourceNames.Feed(customerId, feedId);
@@ -254,7 +254,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V9.GoogleAdsService);
+                Services.V10.GoogleAdsService);
 
             // Constructs the query.
             string query = "SELECT feed.attributes FROM feed WHERE feed.resource_name = " +
@@ -324,7 +324,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V9.GoogleAdsService);
+                Services.V10.GoogleAdsService);
 
             // Constructs the query.
             string query = "SELECT feed_item.attribute_values FROM feed_item WHERE " +

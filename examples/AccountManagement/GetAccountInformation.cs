@@ -14,13 +14,14 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V9.Errors;
-using Google.Ads.GoogleAds.V9.Resources;
-using Google.Ads.GoogleAds.V9.Services;
+using Google.Ads.GoogleAds.V10.Errors;
+using Google.Ads.GoogleAds.V10.Resources;
+using Google.Ads.GoogleAds.V10.Services;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
-namespace Google.Ads.GoogleAds.Examples.V9
+namespace Google.Ads.GoogleAds.Examples.V10
 {
     /// <summary>
     /// This code example lists basic information about an advertising account, like the name,
@@ -81,13 +82,29 @@ namespace Google.Ads.GoogleAds.Examples.V9
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         public void Run(GoogleAdsClient client, long customerId)
         {
-            // Get the CustomerService.
-            CustomerServiceClient customerService = client.GetService(Services.V9.CustomerService);
+            // Get the GoogleAdsService.
+            GoogleAdsServiceClient googleAdsService = client.GetService(
+                Services.V10.GoogleAdsService);
+
+            // Construct a query to retrieve the customer.
+            // Add a limit of 1 row to clarify that selecting from the customer resource
+            // will always return only one row, which will be for the customer
+            // ID specified in the request.
+            string query = "SELECT customer.id, customer.descriptive_name, " +
+                "customer.currency_code, customer.time_zone, customer.tracking_url_template, " +
+                "customer.auto_tagging_enabled FROM customer LIMIT 1";
+
+            // Executes the query and gets the Customer object from the single row of the response.
+            SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()
+            {
+                CustomerId = customerId.ToString(),
+                Query = query
+            };
 
             try
             {
-                string customerResourceName = ResourceNames.Customer(customerId);
-                Customer customer = customerService.GetCustomer(customerResourceName);
+                // Issue the search request.
+                Customer customer = googleAdsService.Search(request).First().Customer;
 
                 // Print account information.
                 Console.WriteLine("Customer with ID {0}, descriptive name '{1}', currency " +

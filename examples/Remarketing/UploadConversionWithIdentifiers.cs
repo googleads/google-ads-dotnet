@@ -14,16 +14,16 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V9.Common;
-using Google.Ads.GoogleAds.V9.Errors;
-using Google.Ads.GoogleAds.V9.Services;
+using Google.Ads.GoogleAds.V10.Common;
+using Google.Ads.GoogleAds.V10.Errors;
+using Google.Ads.GoogleAds.V10.Services;
 using System;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
-using static Google.Ads.GoogleAds.V9.Enums.UserIdentifierSourceEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.UserIdentifierSourceEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V9
+namespace Google.Ads.GoogleAds.Examples.V10
 {
     /// <summary>
     /// This code example uploads a conversion using hashed email address instead of GCLID.
@@ -153,7 +153,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         {
             // Get the ConversionUploadService.
             ConversionUploadServiceClient conversionUploadService =
-                client.GetService(Services.V9.ConversionUploadService);
+                client.GetService(Services.V10.ConversionUploadService);
 
             // [START create_conversion]
             // Gets the conversion action resource name.
