@@ -15,14 +15,14 @@
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V9.Common;
-using Google.Ads.GoogleAds.V9.Errors;
-using Google.Ads.GoogleAds.V9.Resources;
-using Google.Ads.GoogleAds.V9.Services;
+using Google.Ads.GoogleAds.V10.Common;
+using Google.Ads.GoogleAds.V10.Errors;
+using Google.Ads.GoogleAds.V10.Resources;
+using Google.Ads.GoogleAds.V10.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V9
+namespace Google.Ads.GoogleAds.Examples.V10
 {
     /// <summary>
     /// This code example updates an expanded text ad. To get expanded text ads,
@@ -97,7 +97,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         public void Run(GoogleAdsClient client, long customerId, long adId)
         {
             // Get the AdService.
-            AdServiceClient adService = client.GetService(Services.V9.AdService);
+            AdServiceClient adService = client.GetService(Services.V10.AdService);
 
             Ad ad = new Ad()
             {

@@ -14,15 +14,15 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V9.Errors;
-using Google.Ads.GoogleAds.V9.Services;
+using Google.Ads.GoogleAds.V10.Errors;
+using Google.Ads.GoogleAds.V10.Services;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Google.Ads.GoogleAds.Examples.V9
+namespace Google.Ads.GoogleAds.Examples.V10
 {
     /// <summary>
     /// Shows how to download a set of reports from a list of accounts in parallel. If you need
@@ -129,7 +129,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
 
             // Get the GoogleAdsService. A single client can be shared by all threads.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V9.GoogleAdsService);
+                Services.V10.GoogleAdsService);
 
             try
             {

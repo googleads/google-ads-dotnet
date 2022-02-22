@@ -15,18 +15,18 @@
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V9.Common;
-using Google.Ads.GoogleAds.V9.Errors;
-using Google.Ads.GoogleAds.V9.Resources;
-using Google.Ads.GoogleAds.V9.Services;
+using Google.Ads.GoogleAds.V10.Common;
+using Google.Ads.GoogleAds.V10.Errors;
+using Google.Ads.GoogleAds.V10.Resources;
+using Google.Ads.GoogleAds.V10.Services;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V9.Enums.AssetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.MimeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.AssetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.MimeTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V9
+namespace Google.Ads.GoogleAds.Examples.V10
 {
     /// <summary>
     /// This code example uploads an image asset. To get image assets, run GetAllImageAssets.cs.
@@ -93,7 +93,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         {
             // Get the AssetServiceClient.
             AssetServiceClient assetService =
-                client.GetService(Services.V9.AssetService);
+                client.GetService(Services.V10.AssetService);
 
             // Creates an image content.
             byte[] imageContent = MediaUtilities.GetAssetDataFromUrl(IMAGE_URL, client.Config);
@@ -121,7 +121,11 @@ namespace Google.Ads.GoogleAds.Examples.V9
                 // customer account.
                 // Name = 'Jupiter Trip #' + ExampleUtilities.GetRandomString(),
                 Type = AssetType.Image,
-                ImageAsset = imageAsset
+                ImageAsset = imageAsset,
+                // Provide a unique friendly name to identify your asset.
+                // When there is an existing image asset with the same content but a different
+                // name, the new name will be dropped silently.
+                Name = "Marketing Image"
             };
 
             // Creates an asset operation.

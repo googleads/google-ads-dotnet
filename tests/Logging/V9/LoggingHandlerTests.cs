@@ -58,12 +58,12 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V9
         /// <summary>
         /// The service name.
         /// </summary>
-        private const string TEST_SERVICE = "TestService";
+        private const string TEST_SERVICE = "TEST_SERVICE";
 
         /// <summary>
         /// The method name.
         /// </summary>
-        private const string TEST_METHOD = "TestMethod";
+        private const string TEST_METHOD = "TEST_METHOD";
 
         /// <summary>
         /// The method name, as it appears in the logs.

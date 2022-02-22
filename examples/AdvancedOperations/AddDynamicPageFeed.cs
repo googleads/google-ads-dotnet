@@ -15,25 +15,27 @@
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V9.Common;
-using Google.Ads.GoogleAds.V9.Errors;
-using Google.Ads.GoogleAds.V9.Resources;
-using Google.Ads.GoogleAds.V9.Services;
+using Google.Ads.GoogleAds.V10.Common;
+using Google.Ads.GoogleAds.V10.Errors;
+using Google.Ads.GoogleAds.V10.Resources;
+using Google.Ads.GoogleAds.V10.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V9.Enums.DsaPageFeedCriterionFieldEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.FeedAttributeTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.FeedMappingCriterionTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.WebpageConditionOperandEnum.Types;
-using static Google.Ads.GoogleAds.V9.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V10.Enums.DsaPageFeedCriterionFieldEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.FeedAttributeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.FeedMappingCriterionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.WebpageConditionOperandEnum.Types;
+using static Google.Ads.GoogleAds.V10.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V9
+namespace Google.Ads.GoogleAds.Examples.V10
 {
     /// <summary>
     /// This code example adds a page feed to specify precisely which URLs to use with your
     /// Dynamic Search Ads.
     /// </summary>
+    [Obsolete("Feed-services based DSA page feeds are deprecated and being replaced with " +
+        "assets. See AddDynamicPageFeedAsset.cs.")]
     public class AddDynamicPageFeed : ExampleBase
     {
         /// <summary>
@@ -154,7 +156,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         private string CreateFeed(GoogleAdsClient client, long customerId)
         {
             // Get the FeedService.
-            FeedServiceClient feedService = client.GetService(Services.V9.FeedService);
+            FeedServiceClient feedService = client.GetService(Services.V10.FeedService);
 
             // Create a URL attribute.
             FeedAttribute urlAttribute = new FeedAttribute()
@@ -208,7 +210,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V9.GoogleAdsService);
+                Services.V10.GoogleAdsService);
 
             // Construct the query.
             String query = $"SELECT feed.attributes FROM feed WHERE feed.resource_name" +
@@ -264,7 +266,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         {
             // Get the FeedMappingService.
             FeedMappingServiceClient feedMappingService = client.GetService(
-                Services.V9.FeedMappingService);
+                Services.V10.FeedMappingService);
 
             FeedMapping feedMapping = new FeedMapping()
             {
@@ -322,7 +324,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         {
             // Get the FeedItemService.
             FeedItemServiceClient feedItemService = client.GetService(
-                Services.V9.FeedItemService);
+                Services.V10.FeedItemService);
 
             List<string> urls = new List<string>
             {
@@ -387,7 +389,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         {
             // Get the CampaignService.
             CampaignServiceClient campaignService = client.GetService(
-                Services.V9.CampaignService);
+                Services.V10.CampaignService);
 
             DynamicSearchAdsSetting dsaSetting = GetDsaSetting(client, customerId, campaignId);
             dsaSetting.Feeds.Add(feedResourceName);
@@ -432,7 +434,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V9.GoogleAdsService);
+                Services.V10.GoogleAdsService);
 
             // Creates the query.
             // You must request all DSA fields in order to update the DSA settings in the
@@ -475,7 +477,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         {
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService = client.GetService(
-                Services.V9.AdGroupCriterionService);
+                Services.V10.AdGroupCriterionService);
 
             // Create the webpage condition info.
             WebpageConditionInfo webpageConditionInfo = new WebpageConditionInfo()

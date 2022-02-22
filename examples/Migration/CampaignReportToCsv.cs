@@ -18,10 +18,10 @@ using System.IO;
 using System.Linq;
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V9.Services;
+using Google.Ads.GoogleAds.V10.Services;
 using Google.Api.Ads.Common.Util;
 
-namespace Google.Ads.GoogleAds.Examples.V9
+namespace Google.Ads.GoogleAds.Examples.V10
 {
     /// <summary>
     /// This code example illustrates how to use Google Ads API to get metrics about a campaign and
@@ -42,7 +42,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
             public long CustomerId { get; set; }
 
             /// <summary>
-            /// Optional output file path. If left null, a file `CampaignReportToCsv.csv` will 
+            /// Optional output file path. If left null, a file `CampaignReportToCsv.csv` will
             /// be created in the user's home directory.
             /// </summary>
             [Option("OutputFilePath", Required = false, HelpText =
@@ -97,7 +97,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         public void Run(GoogleAdsClient client, long customerId, string outputFilePath)
         {
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V9.GoogleAdsService);
+                client.GetService(Services.V10.GoogleAdsService);
 
             // Create a query that retrieves campaigns.
             string query = @"
@@ -107,10 +107,10 @@ namespace Google.Ads.GoogleAds.Examples.V9
                     segments.date,
                     metrics.impressions,
                     metrics.clicks,
-                    metrics.cost_micros 
-                FROM campaign 
-                WHERE segments.date DURING LAST_30_DAYS 
-                    AND campaign.status = 'ENABLED' 
+                    metrics.cost_micros
+                FROM campaign
+                WHERE segments.date DURING LAST_30_DAYS
+                    AND campaign.status = 'ENABLED'
                 ORDER BY segments.date DESC";
 
             // Issues a search request.

@@ -14,12 +14,12 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V9.Errors;
-using Google.Ads.GoogleAds.V9.Services;
+using Google.Ads.GoogleAds.V10.Errors;
+using Google.Ads.GoogleAds.V10.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V9
+namespace Google.Ads.GoogleAds.Examples.V10
 {
     /// <summary>
     /// This code example imports offline call conversion values for calls related to the
@@ -159,7 +159,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         {
             // Get the ConversionUploadService.
             ConversionUploadServiceClient conversionUploadService =
-                client.GetService(Services.V9.ConversionUploadService);
+                client.GetService(Services.V10.ConversionUploadService);
 
             // Create a call conversion by specifying currency as USD.
             CallConversion callConversion = new CallConversion()

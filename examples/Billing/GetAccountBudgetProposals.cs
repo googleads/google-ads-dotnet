@@ -14,14 +14,14 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V9.Errors;
-using Google.Ads.GoogleAds.V9.Resources;
-using Google.Ads.GoogleAds.V9.Services;
+using Google.Ads.GoogleAds.V10.Errors;
+using Google.Ads.GoogleAds.V10.Resources;
+using Google.Ads.GoogleAds.V10.Services;
 using Google.Api.Gax;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V9
+namespace Google.Ads.GoogleAds.Examples.V10
 {
     /// <summary>
     /// This code example gets all account budget proposals. To add an account budget proposal, run
@@ -88,7 +88,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         {
             // Get the GoogleAdsServiceClient.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V9.GoogleAdsService);
+                Services.V10.GoogleAdsService);
 
             // Construct a GAQL query which will retrieve AccountBudgetProposals.
             String searchQuery =

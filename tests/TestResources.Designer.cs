@@ -19,7 +19,7 @@ namespace Google.Ads.GoogleAds.Tests {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class TestResources {
@@ -80,7 +80,7 @@ namespace Google.Ads.GoogleAds.Tests {
         ///  &quot;type&quot;: &quot;service_account&quot;,
         ///  &quot;project_id&quot;: &quot;TEST_PROJECT_ID&quot;,
         ///  &quot;private_key_id&quot;: &quot;TEST_PRIVATE_KEY_ID&quot;,
-        ///  &quot;private_key&quot;: &quot;-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDKp3GAzlfe2vch\ncIKvCxzZa4lwED7LHjxofRoKlRNKtn4cC6RAY/8vuSHslQXbMdXLc2l4UdDOnLD0\n5Gg82jES4v8kxCyI/mxJU3ZQoGrfbpOossj8Lr0J35xfsVAdcnz01GxvNOXORNE4\nHqBKaNX2YxGC+gxskmPHECwWQ4dQA6l1+PUbdgS5UoubYdwDlh2AjtSsP6oWgeIN\nrGdOyttOLdGIhdKueGWy7U4RUFP/UFC3nzICI7BJbRAjFtFfdlT5IRbNd9l7jW77\nVWGqXP9Y/AOydsJyGEF5tvTvOG [rest of string was truncated]&quot;;.
+        ///  &quot;private_key&quot;: &quot;-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDKp3GAzlfe2vch\ncIKvCxzZa4lwED7LHjxofRoKlRNKtn4cC6RAY/8vuSHslQXbMdXLc2l4UdDOnLD0\n5Gg82jES4v8kxCyI/mxJU3ZQoGrfbpOossj8Lr0J35xfsVAdcnz01GxvNOXORNE4\nHqBKaNX2YxGC+gxskmPHECwWQ4dQA6l1+PUbdgS5UoubYdwDlh2AjtSsP6oWgeIN\nrGdOyttOLdGIhdKueGWy7U4RUFP/UFC3nzICI7BJbRAjFtFfdlT5IRbNd9l7jW77\nVWGqXP9Y/AOydsJyGEF5tv [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string credentials_sa {
             get {
@@ -172,6 +172,36 @@ namespace Google.Ads.GoogleAds.Tests {
         ///Response
         ///--------
         ///Headers: {
+        ///  &quot;test_key2&quot;: &quot;TEST_VALUE2&quot;
+        ///}
+        ///
+        ///{ &quot;name&quot;: &quot;API&quot;, &quot;requestId&quot;: &quot;TEST_REQUEST_ID&quot; }
+        ///----------------END API CALL----------------.
+        /// </summary>
+        internal static string DetailedStreamSuccessLog {
+            get {
+                return ResourceManager.GetString("DetailedStreamSuccessLog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ---------------BEGIN API CALL---------------
+        ///
+        ///Request
+        ///-------
+        ///
+        ///Method Name: TEST_METHOD
+        ///Host: TEST_HOST
+        ///Headers: {
+        ///  &quot;developer-token&quot;: &quot;REDACTED&quot;,
+        ///  &quot;test_key1&quot;: &quot;TEST_VALUE1&quot;
+        ///}
+        ///
+        ///{ &quot;customerId&quot;: &quot;1234567890&quot;, &quot;name&quot;: &quot;API&quot;, &quot;age&quot;: &quot;25&quot;, &quot;address&quot;: { &quot;line1&quot;: &quot;111 8th Ave&quot;, &quot;city&quot;: &quot;New York&quot;, &quot;zipcode&quot;: &quot;10011&quot;, &quot;state&quot;: &quot;NY&quot; } }
+        ///
+        ///Response
+        ///--------
+        ///Headers: {
         ///  &quot;request-id&quot;: &quot;TEST_REQUEST_ID&quot;,
         ///  &quot;test_key2&quot;: &quot;TEST_VALUE2&quot;
         ///}
@@ -210,6 +240,15 @@ namespace Google.Ads.GoogleAds.Tests {
         /// <summary>
         ///   Looks up a localized string similar to Request made: Host: TEST_HOST, Method: TEST_METHOD, ClientCustomerID: 1234567890,  RequestID: TEST_REQUEST_ID, IsFault: False, FaultMessage: Status(StatusCode=&quot;OK&quot;, Detail=&quot;&quot;).
         /// </summary>
+        internal static string SummaryStreamSuccessLog {
+            get {
+                return ResourceManager.GetString("SummaryStreamSuccessLog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Request made: Host: TEST_HOST, Method: TEST_METHOD, ClientCustomerID: 1234567890,  RequestID: TEST_REQUEST_ID, IsFault: False, FaultMessage: Status(StatusCode=&quot;OK&quot;, Detail=&quot;&quot;).
+        /// </summary>
         internal static string SummarySuccessLog {
             get {
                 return ResourceManager.GetString("SummarySuccessLog", resourceCulture);
@@ -217,11 +256,9 @@ namespace Google.Ads.GoogleAds.Tests {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to V0.TestExample | TestExample stringArgs=&lt;stringArgs&gt; longArgs=&lt;longArgs&gt; singleStringArg=&lt;singleStringArg&gt; singleLongArg=&lt;singleLongArg&gt;
-        ///[Required] stringArgs: Array of strings
-        ///[Required] longArgs: Array of longs
-        ///[Required] singleStringArg: Single string
-        ///[Required] singleLongArg: Single long.
+        ///   Looks up a localized string similar to 
+        ///TestExample
+        ///V0.TestExample.
         /// </summary>
         internal static string UsageSummary {
             get {

@@ -14,13 +14,13 @@
 
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V9.Errors;
-using Google.Ads.GoogleAds.V9.Services;
+using Google.Ads.GoogleAds.V10.Errors;
+using Google.Ads.GoogleAds.V10.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V9.Enums.ConversionAdjustmentTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.ConversionAdjustmentTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V9
+namespace Google.Ads.GoogleAds.Examples.V10
 {
     /// <summary>
     /// This code example imports conversion adjustments for conversions that already exist.
@@ -158,7 +158,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
         {
             // Get the ConversionAdjustmentUploadService.
             ConversionAdjustmentUploadServiceClient conversionAdjustmentUploadService =
-                client.GetService(Services.V9.ConversionAdjustmentUploadService);
+                client.GetService(Services.V10.ConversionAdjustmentUploadService);
 
             // Associate conversion adjustments with the existing conversion action.
             // The GCLID should have been uploaded before with a conversion.

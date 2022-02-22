@@ -19,6 +19,13 @@ using Google.Ads.GoogleAds.V9.Errors;
 using Grpc.Core;
 using NUnit.Framework;
 
+namespace Google.Ads.GoogleAds.Tests
+{
+    public sealed partial class HelloStreamResponse : IResponseMetadata
+    {
+    }
+}
+
 namespace Google.Ads.GoogleAds.Tests.Logging.V9
 {
     /// <summary>
@@ -84,6 +91,11 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V9
         private readonly Metadata TEST_RESPONSE_METADATA;
 
         /// <summary>
+        /// The response metadata headers for streaming calls.
+        /// </summary>
+        private readonly Metadata TEST_STREAMING_RESPONSE_METADATA;
+
+        /// <summary>
         /// The request sent to the server for method call.
         /// </summary>
         private readonly HelloRequest TEST_REQUEST = new HelloRequest()
@@ -108,6 +120,32 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V9
             Name = "API",
         };
 
+        /// <summary>
+        /// The request sent to the server for streaming method call.
+        /// </summary>
+        private readonly HelloStreamRequest TEST_STREAM_REQUEST = new HelloStreamRequest()
+        {
+            CustomerId = TEST_CUSTOMER_ID,
+            Name = "API",
+            Age = 25,
+            Address = new Address()
+            {
+                Line1 = "111 8th Ave",
+                City = "New York",
+                Zipcode = 10011,
+                State = "NY"
+            }
+        };
+
+        /// <summary>
+        /// The response from the server for successful streaming method call.
+        /// </summary>
+        private readonly HelloStreamResponse TEST_STREAM_RESPONSE = new HelloStreamResponse()
+        {
+            Name = "API",
+            RequestId = TEST_REQUEST_ID
+        };
+
         #endregion constants for request and response data.
 
         #region constants for constructing a test exception.
@@ -130,6 +168,11 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V9
         #endregion constants for constructing a test exception.
 
         /// <summary>
+        /// The log formatter for running tests.
+        /// </summary>
+        ILogFormatter logFormatter = new LogFormatter();
+
+        /// <summary>
         /// Initializes a new instance of the <see cref="LogEntryTests"/> class.
         /// </summary>
         public LogEntryTests()
@@ -148,6 +191,9 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V9
 
             TEST_EXCEPTION = TestUtils.CreateException(TEST_ERROR_MESSAGE, TEST_ERROR_TRIGGER,
                 TEST_REQUEST_ID);
+
+            TEST_STREAMING_RESPONSE_METADATA = new Metadata();
+            TEST_STREAMING_RESPONSE_METADATA.Add(TEST_KEY2, TEST_VALUE2);
         }
 
         /// <summary>
@@ -156,7 +202,7 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V9
         [Test]
         public void TestSuccessLogs()
         {
-            LogEntry logEntry = new LogEntry()
+            LogEntry logEntry = new LogEntry(logFormatter)
             {
                 Host = TEST_HOST,
                 Method = TEST_METHOD,
@@ -176,12 +222,39 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V9
         }
 
         /// <summary>
+        /// Test for Log entry files for a successful streaming API call.
+        /// </summary>
+        /// <remarks>RequestId comes from the response object and not response
+        /// headers.</remarks>
+        [Test]
+        public void TestSuccessStreamingLogs()
+        {
+            LogEntry logEntry = new LogEntry(logFormatter)
+            {
+                Host = TEST_HOST,
+                Method = TEST_METHOD,
+                RequestHeaders = TEST_REQUEST_METADATA,
+                Request = TEST_STREAM_REQUEST,
+                ResponseHeaders = TEST_STREAMING_RESPONSE_METADATA,
+                Response = TEST_STREAM_RESPONSE,
+                Exception = TEST_EXCEPTION,
+                IsFailure = false,
+                CustomerId = TEST_CUSTOMER_ID
+            };
+
+            AssertExtensions.AreMultiLineEqual(TestResources.DetailedStreamSuccessLog,
+                logEntry.DetailedLog);
+            AssertExtensions.AreMultiLineEqual(TestResources.SummaryStreamSuccessLog,
+                logEntry.SummaryLog);
+        }
+
+        /// <summary>
         /// Test for Log entry files for a failed API call.
         /// </summary>
         [Test]
         public void TestFailureLogs()
         {
-            LogEntry logEntry = new LogEntry()
+            LogEntry logEntry = new LogEntry(logFormatter)
             {
                 Host = TEST_HOST,
                 Method = TEST_METHOD,
@@ -206,7 +279,7 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V9
         [Test]
         public void TestPartialFailureLogs()
         {
-            LogEntry logEntry = new LogEntry()
+            LogEntry logEntry = new LogEntry(logFormatter)
             {
                 Host = TEST_HOST,
                 Method = TEST_METHOD,

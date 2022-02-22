@@ -15,39 +15,25 @@
 using CommandLine;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V9.Common;
-using Google.Ads.GoogleAds.V9.Enums;
-using Google.Ads.GoogleAds.V9.Errors;
-using Google.Ads.GoogleAds.V9.Resources;
-using Google.Ads.GoogleAds.V9.Services;
+using Google.Ads.GoogleAds.V10.Common;
+using Google.Ads.GoogleAds.V10.Errors;
+using Google.Ads.GoogleAds.V10.Resources;
+using Google.Ads.GoogleAds.V10.Services;
 using Google.Api.Gax;
-using Google.Protobuf.Collections;
 using Google.Protobuf;
 using System.Collections.Generic;
-using System.Linq;
 using System;
-using static Google.Ads.GoogleAds.V9.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.ConversionActionCategoryEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.ConversionOriginEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.AdvertisingChannelSubTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.AssetFieldTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.AssetGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.AssetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.BiddingStrategyTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.BudgetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.CriterionTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.ListingGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Enums.MediaTypeEnum.Types;
-using static Google.Ads.GoogleAds.V9.Resources.Campaign.Types;
-using static Google.Ads.GoogleAds.V9.Services.SmartCampaignSuggestionInfo.Types;
+using System.Threading;
+using static Google.Ads.GoogleAds.V10.Enums.ConversionActionCategoryEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.ConversionOriginEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.AssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.AssetGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V10.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V9
+namespace Google.Ads.GoogleAds.Examples.V10
 {
     /// <summary>
     /// This example shows how to create a Performance Max retail campaign.
@@ -99,13 +85,6 @@ namespace Google.Ads.GoogleAds.Examples.V9
             [Option("salesCountry", Required = true, HelpText =
                 "The sales country.")]
             public string SalesCountry { get; set; }
-
-            /// <summary>
-            /// The final URL.
-            /// </summary>
-            [Option("finalURL", Required = true, HelpText =
-                "The final URL.")]
-            public string FinalURL { get; set; }
         }
 
         /// <summary>
@@ -131,9 +110,6 @@ namespace Google.Ads.GoogleAds.Examples.V9
                     // The sales country
                     options.SalesCountry = "INSERT_SALES_COUNTRY_HERE";
 
-                    // The final URL
-                    options.FinalURL = "INSERT_FINAL_URL_HERE";
-
                     return 0;
                 });
 
@@ -143,8 +119,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
                 new GoogleAdsClient(),
                 options.CustomerId,
                 options.MerchantCenterAccountId,
-                options.SalesCountry,
-                options.FinalURL
+                options.SalesCountry
             );
         }
 
@@ -156,12 +131,14 @@ namespace Google.Ads.GoogleAds.Examples.V9
         //
         // These temporary IDs are fixed because they are used in multiple places.
         private const int TEMPORARY_ID_BUDGET = -1;
+
         private const int TEMPORARY_ID_CAMPAIGN = -2;
         private const int TEMPORARY_ID_ASSET_GROUP = -3;
 
         // There are also entities that will be created in the same request but do not need to be
         // fixed temporary IDs because they are referenced only once.
-        private class AssetGroupAssetTemporaryResourceNameGenerator {
+        private class AssetGroupAssetTemporaryResourceNameGenerator
+        {
             private long customerId;
             private long assetGroupId;
             private long next;
@@ -173,13 +150,11 @@ namespace Google.Ads.GoogleAds.Examples.V9
                 this.next = assetGroupId - 1;
             }
 
-            public string Next(AssetFieldType fieldType) {
-                lock (this)
-                {
-                    long i = next;
-                    next -= 1;
-                    return ResourceNames.AssetGroupAsset(customerId, assetGroupId, i, fieldType);
-                }
+            public string Next()
+            {
+                long i = next;
+                Interlocked.Decrement(ref next);
+                return ResourceNames.Asset(customerId, i);
             }
         }
 
@@ -196,17 +171,15 @@ namespace Google.Ads.GoogleAds.Examples.V9
         /// <param name="customerId">The Google Ads customer ID.</param>
         /// <param name="merchantCenterAccountId">The Merchant Center account ID.</param>
         /// <param name="salesCountry">The sales country.</param>
-        /// <param name="finalURL">The final URL.</param>
         public void Run(
                 GoogleAdsClient client,
                 long customerId,
                 long merchantCenterAccountId,
-                string salesCountry,
-                string finalURL)
+                string salesCountry)
         {
             // [START add_performance_max_retail_campaign_1]
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V9.GoogleAdsService);
+                client.GetService(Services.V10.GoogleAdsService);
 
             // This campaign will override the customer conversion goals.
             // Retrieve the current list of customer conversion goals.
@@ -245,6 +218,11 @@ namespace Google.Ads.GoogleAds.Examples.V9
                 TEMPORARY_ID_BUDGET
             );
 
+            string assetGroupResourceName = ResourceNames.AssetGroup(
+                customerId,
+                TEMPORARY_ID_ASSET_GROUP
+            );
+
             // The below methods create and return MutateOperations that we later provide to the
             // GoogleAdsService.Mutate method in order to create the entities in a single request.
             // Since the entities for a Performance Max campaign are closely tied to one-another,
@@ -274,12 +252,11 @@ namespace Google.Ads.GoogleAds.Examples.V9
             List<MutateOperation> campaignCriterionOperations =
                 CreateCampaignCriterionOperations(client, tempResourceNameCampaign);
 
-
             List<MutateOperation> assetGroupOperations =
                 CreateAssetGroupOperations(
                     client,
                     tempResourceNameCampaign,
-                    ResourceNames.AssetGroup(customerId, TEMPORARY_ID_ASSET_GROUP),
+                    assetGroupResourceName,
                     headlineAssetResourceNames,
                     descriptionAssetResourceNames,
                     new AssetGroupAssetTemporaryResourceNameGenerator(
@@ -293,6 +270,14 @@ namespace Google.Ads.GoogleAds.Examples.V9
                     client,
                     customerId,
                     customerConversionGoals
+                );
+
+            // Retail Performance Max campaigns require listing groups, which are created via the
+            // AssetGroupListingGroupFilter resource.
+            List<MutateOperation> assetGroupListingGroupOperations =
+                CreateAssetGroupListingGroupOperations(
+                    client,
+                    assetGroupResourceName
                 );
 
             MutateGoogleAdsRequest request = new MutateGoogleAdsRequest
@@ -310,6 +295,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
             request.MutateOperations.AddRange(campaignCriterionOperations);
             request.MutateOperations.AddRange(assetGroupOperations);
             request.MutateOperations.AddRange(conversionGoalOperations);
+            request.MutateOperations.AddRange(assetGroupListingGroupOperations);
 
             MutateGoogleAdsResponse response = googleAdsServiceClient.Mutate(request);
 
@@ -334,13 +320,14 @@ namespace Google.Ads.GoogleAds.Examples.V9
         {
             // Get the BudgetService.
             CampaignBudgetServiceClient budgetService =
-              client.GetService(Services.V9.CampaignBudgetService);
+              client.GetService(Services.V10.CampaignBudgetService);
 
             MutateOperation operation = new MutateOperation
             {
                 CampaignBudgetOperation = new CampaignBudgetOperation
                 {
-                    Create = new CampaignBudget {
+                    Create = new CampaignBudget
+                    {
                         Name = "Performance Max campaign budget #"
                           + ExampleUtilities.GetRandomString(),
 
@@ -360,6 +347,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
 
             return operation;
         }
+
         // [END add_performance_max_retail_campaign_2]
 
         // [START add_performance_max_retail_campaign_3]
@@ -377,9 +365,12 @@ namespace Google.Ads.GoogleAds.Examples.V9
             long merchantCenterAccountId,
             string salesCountry)
         {
-            MutateOperation operation = new MutateOperation() {
-                CampaignOperation = new CampaignOperation() {
-                    Create = new Campaign() {
+            MutateOperation operation = new MutateOperation()
+            {
+                CampaignOperation = new CampaignOperation()
+                {
+                    Create = new Campaign()
+                    {
                         Name = "Performance Max campaign #" + ExampleUtilities.GetRandomString(),
 
                         // Set the campaign status as PAUSED. The campaign is the only entity in
@@ -409,7 +400,8 @@ namespace Google.Ads.GoogleAds.Examples.V9
                             TargetRoas = 3.5
                         },
 
-                        ShoppingSetting = new ShoppingSetting() {
+                        ShoppingSetting = new ShoppingSetting()
+                        {
                             MerchantId = merchantCenterAccountId,
                             SalesCountry = salesCountry
                         },
@@ -418,10 +410,14 @@ namespace Google.Ads.GoogleAds.Examples.V9
                         // Performance Max campaigns. If opted out (True), only the final URLs in
                         // the asset group or URLs specified in the advertiser's Google Merchant
                         // Center or business data feeds are targeted.
+                        //
                         // If opted in (False), the entire domain will be targeted. For best
                         // results, set this value to false to opt in and allow URL expansions. You
                         // can optionally add exclusions to limit traffic to parts of your website.
-                        UrlExpansionOptOut = false,
+                        //
+                        // For a Retail campaign, we want the final URL's to be limited to those
+                        // explicitly surfaced via GMC.
+                        UrlExpansionOptOut = true,
 
                         // Use the temporary resource name created earlier
                         ResourceName = campaignResourceName,
@@ -438,6 +434,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
 
             return operation;
         }
+
         // [END add_performance_max_retail_campaign_3]
 
         // [START add_performance_max_retail_campaign_4]
@@ -463,11 +460,15 @@ namespace Google.Ads.GoogleAds.Examples.V9
             // We will add one positive location target for New York City (ID=1023191)
             // and one negative location target for Brooklyn (ID=1022762).
             // First, add the positive (negative = False) for New York City.
-            MutateOperation operation1 = new MutateOperation() {
-                CampaignCriterionOperation = new CampaignCriterionOperation() {
-                    Create = new CampaignCriterion() {
+            MutateOperation operation1 = new MutateOperation()
+            {
+                CampaignCriterionOperation = new CampaignCriterionOperation()
+                {
+                    Create = new CampaignCriterion()
+                    {
                         Campaign = campaignResourceName,
-                        Location = new LocationInfo() {
+                        Location = new LocationInfo()
+                        {
                             GeoTargetConstant = ResourceNames.GeoTargetConstant(1023191)
                         },
 
@@ -479,11 +480,15 @@ namespace Google.Ads.GoogleAds.Examples.V9
             operations.Add(operation1);
 
             // Next add the negative target for Brooklyn.
-            MutateOperation operation2 = new MutateOperation() {
-                CampaignCriterionOperation = new CampaignCriterionOperation() {
-                    Create = new CampaignCriterion() {
+            MutateOperation operation2 = new MutateOperation()
+            {
+                CampaignCriterionOperation = new CampaignCriterionOperation()
+                {
+                    Create = new CampaignCriterion()
+                    {
                         Campaign = campaignResourceName,
-                        Location = new LocationInfo() {
+                        Location = new LocationInfo()
+                        {
                             GeoTargetConstant = ResourceNames.GeoTargetConstant(1022762)
                         },
 
@@ -495,15 +500,19 @@ namespace Google.Ads.GoogleAds.Examples.V9
             operations.Add(operation2);
 
             // Set the LANGUAGE campaign criterion.
-            MutateOperation operation3 = new MutateOperation() {
-                CampaignCriterionOperation = new CampaignCriterionOperation() {
-                    Create = new CampaignCriterion() {
+            MutateOperation operation3 = new MutateOperation()
+            {
+                CampaignCriterionOperation = new CampaignCriterionOperation()
+                {
+                    Create = new CampaignCriterion()
+                    {
                         Campaign = campaignResourceName,
 
                         // Set the language.
                         // For a list of all language codes, see:
                         // https://developers.google.com/google-ads/api/reference/data/codes-formats#expandable-7
-                        Language = new LanguageInfo() {
+                        Language = new LanguageInfo()
+                        {
                             LanguageConstant = ResourceNames.LanguageConstant(1000) // English
                         },
                     }
@@ -514,6 +523,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
 
             return operations;
         }
+
         // [END add_performance_max_retail_campaign_4]
 
         // [START add_performance_max_retail_campaign_5]
@@ -529,16 +539,20 @@ namespace Google.Ads.GoogleAds.Examples.V9
             long customerId,
             string[] texts)
         {
-            MutateGoogleAdsRequest request = new MutateGoogleAdsRequest() {
+            MutateGoogleAdsRequest request = new MutateGoogleAdsRequest()
+            {
                 CustomerId = customerId.ToString()
             };
 
             foreach (string text in texts)
             {
                 request.MutateOperations.Add(
-                    new MutateOperation() {
-                        AssetOperation = new AssetOperation() {
-                            Create = new Asset() {
+                    new MutateOperation()
+                    {
+                        AssetOperation = new AssetOperation()
+                        {
+                            Create = new Asset()
+                            {
                                 TextAsset = new TextAsset()
                                 {
                                     Text = text
@@ -551,7 +565,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
 
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V9.GoogleAdsService);
+                client.GetService(Services.V10.GoogleAdsService);
 
             // Send the operations in a single Mutate request.
             MutateGoogleAdsResponse response = googleAdsServiceClient.Mutate(request);
@@ -568,6 +582,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
 
             return assetResourceNames;
         }
+
         // [END add_performance_max_retail_campaign_5]
 
         // [START add_performance_max_retail_campaign_6]
@@ -594,9 +609,12 @@ namespace Google.Ads.GoogleAds.Examples.V9
 
             // Create the AssetGroup
             operations.Add(
-                new MutateOperation() {
-                    AssetGroupOperation = new AssetGroupOperation() {
-                        Create = new AssetGroup() {
+                new MutateOperation()
+                {
+                    AssetGroupOperation = new AssetGroupOperation()
+                    {
+                        Create = new AssetGroup()
+                        {
                             Name = "Performance Max asset group #" +
                                 ExampleUtilities.GetRandomString(),
 
@@ -628,9 +646,12 @@ namespace Google.Ads.GoogleAds.Examples.V9
             foreach (string resourceName in headlineAssetResourceNames)
             {
                 operations.Add(
-                    new MutateOperation() {
-                        AssetGroupAssetOperation = new AssetGroupAssetOperation() {
-                            Create = new AssetGroupAsset() {
+                    new MutateOperation()
+                    {
+                        AssetGroupAssetOperation = new AssetGroupAssetOperation()
+                        {
+                            Create = new AssetGroupAsset()
+                            {
                                 FieldType = AssetFieldType.Headline,
                                 AssetGroup = assetGroupResourceName,
                                 Asset = resourceName
@@ -644,9 +665,12 @@ namespace Google.Ads.GoogleAds.Examples.V9
             foreach (string resourceName in descriptionAssetResourceNames)
             {
                 operations.Add(
-                    new MutateOperation() {
-                        AssetGroupAssetOperation = new AssetGroupAssetOperation() {
-                            Create = new AssetGroupAsset() {
+                    new MutateOperation()
+                    {
+                        AssetGroupAssetOperation = new AssetGroupAssetOperation()
+                        {
+                            Create = new AssetGroupAsset()
+                            {
                                 FieldType = AssetFieldType.Description,
                                 AssetGroup = assetGroupResourceName,
                                 Asset = resourceName
@@ -661,7 +685,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
                 CreateAndLinkTextAsset(
                     client,
                     assetGroupResourceName,
-                    resourceNameGenerator.Next(AssetFieldType.LongHeadline),
+                    resourceNameGenerator.Next(),
                     "Travel the World",
                     AssetFieldType.LongHeadline
                 )
@@ -672,7 +696,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
                 CreateAndLinkTextAsset(
                     client,
                     assetGroupResourceName,
-                    resourceNameGenerator.Next(AssetFieldType.BusinessName),
+                    resourceNameGenerator.Next(),
                     "Interplanetary Cruises",
                     AssetFieldType.BusinessName
                 )
@@ -685,9 +709,10 @@ namespace Google.Ads.GoogleAds.Examples.V9
                 CreateAndLinkImageAsset(
                     client,
                     assetGroupResourceName,
-                    resourceNameGenerator.Next(AssetFieldType.Logo),
+                    resourceNameGenerator.Next(),
                     "https://gaagl.page.link/bjYi",
-                    AssetFieldType.Logo
+                    AssetFieldType.Logo,
+                    "Logo Image"
                 )
             );
 
@@ -696,9 +721,10 @@ namespace Google.Ads.GoogleAds.Examples.V9
                 CreateAndLinkImageAsset(
                     client,
                     assetGroupResourceName,
-                    resourceNameGenerator.Next(AssetFieldType.MarketingImage),
+                    resourceNameGenerator.Next(),
                     "https://gaagl.page.link/Eit5",
-                    AssetFieldType.MarketingImage
+                    AssetFieldType.MarketingImage,
+                    "Marketing Image"
                 )
             );
 
@@ -707,14 +733,16 @@ namespace Google.Ads.GoogleAds.Examples.V9
                 CreateAndLinkImageAsset(
                     client,
                     assetGroupResourceName,
-                    resourceNameGenerator.Next(AssetFieldType.SquareMarketingImage),
+                    resourceNameGenerator.Next(),
                     "https://gaagl.page.link/bjYi",
-                    AssetFieldType.SquareMarketingImage
+                    AssetFieldType.SquareMarketingImage,
+                    "Square Marketing Image"
                 )
             );
 
             return operations;
         }
+
         // [END add_performance_max_retail_campaign_6]
 
         // [START add_performance_max_retail_campaign_7]
@@ -740,11 +768,15 @@ namespace Google.Ads.GoogleAds.Examples.V9
 
             // Create the Text Asset.
             operations.Add(
-                new MutateOperation() {
-                    AssetOperation = new AssetOperation() {
-                        Create = new Asset() {
+                new MutateOperation()
+                {
+                    AssetOperation = new AssetOperation()
+                    {
+                        Create = new Asset()
+                        {
                             ResourceName = assetResourceName,
-                            TextAsset = new TextAsset() {
+                            TextAsset = new TextAsset()
+                            {
                                 Text = text
                             }
                         }
@@ -754,9 +786,12 @@ namespace Google.Ads.GoogleAds.Examples.V9
 
             // Create an AssetGroupAsset to link the Asset to the AssetGroup.
             operations.Add(
-                new MutateOperation() {
-                    AssetGroupAssetOperation = new AssetGroupAssetOperation() {
-                        Create = new AssetGroupAsset() {
+                new MutateOperation()
+                {
+                    AssetGroupAssetOperation = new AssetGroupAssetOperation()
+                    {
+                        Create = new AssetGroupAsset()
+                        {
                             FieldType = fieldType,
                             AssetGroup = assetGroupResourceName,
                             Asset = assetResourceName
@@ -767,6 +802,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
 
             return operations;
         }
+
         // [END add_performance_max_retail_campaign_7]
 
         // [START add_performance_max_retail_campaign_8]
@@ -780,28 +816,38 @@ namespace Google.Ads.GoogleAds.Examples.V9
         /// created.</param>
         /// <param name="url">The url of the image to be retrieved and put into an asset.</param>
         /// <param name="fieldType">The field type of the asset to be created.</param>
+        /// <param name="assetName">The asset name.</param>
         /// <returns>A list of MutateOperations that create a new linked image asset.</returns>
         private List<MutateOperation> CreateAndLinkImageAsset(
             GoogleAdsClient client,
             string assetGroupResourceName,
             string assetResourceName,
             string url,
-            AssetFieldType fieldType)
+            AssetFieldType fieldType,
+            string assetName)
         {
             List<MutateOperation> operations = new List<MutateOperation>();
 
             // Create the Image Asset.
             operations.Add(
-                new MutateOperation() {
-                    AssetOperation = new AssetOperation() {
-                        Create = new Asset() {
+                new MutateOperation()
+                {
+                    AssetOperation = new AssetOperation()
+                    {
+                        Create = new Asset()
+                        {
                             ResourceName = assetResourceName,
-                            ImageAsset = new ImageAsset() {
+                            ImageAsset = new ImageAsset()
+                            {
                                 Data =
                                     ByteString.CopyFrom(
                                         MediaUtilities.GetAssetDataFromUrl(url, client.Config)
                                     )
-                            }
+                            },
+                            // Provide a unique friendly name to identify your asset.
+                            // When there is an existing image asset with the same content but a
+                            // different name, the new name will be dropped silently.
+                            Name = assetName
                         }
                     }
                 }
@@ -809,9 +855,12 @@ namespace Google.Ads.GoogleAds.Examples.V9
 
             // Create an AssetGroupAsset to link the Asset to the AssetGroup.
             operations.Add(
-                new MutateOperation() {
-                    AssetGroupAssetOperation = new AssetGroupAssetOperation() {
-                        Create = new AssetGroupAsset() {
+                new MutateOperation()
+                {
+                    AssetGroupAssetOperation = new AssetGroupAssetOperation()
+                    {
+                        Create = new AssetGroupAsset()
+                        {
                             FieldType = fieldType,
                             AssetGroup = assetGroupResourceName,
                             Asset = assetResourceName
@@ -822,6 +871,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
 
             return operations;
         }
+
         // [END add_performance_max_retail_campaign_8]
 
         // [START add_performance_max_retail_campaign_9]
@@ -851,7 +901,7 @@ namespace Google.Ads.GoogleAds.Examples.V9
 
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V9.GoogleAdsService);
+                client.GetService(Services.V10.GoogleAdsService);
 
             // The number of conversion goals is typically less than 50 so we use
             // GoogleAdsService.search instead of search_stream.
@@ -884,7 +934,8 @@ namespace Google.Ads.GoogleAds.Examples.V9
 
             foreach (CustomerConversionGoal conversionGoal in conversionGoals)
             {
-                CustomerConversionGoal newConversionGoal = new CustomerConversionGoal() {
+                CustomerConversionGoal newConversionGoal = new CustomerConversionGoal()
+                {
                     ResourceName = ResourceNames.CustomerConversionGoal(
                         customerId,
                         conversionGoal.Category,
@@ -905,8 +956,10 @@ namespace Google.Ads.GoogleAds.Examples.V9
                     conversionGoal.Origin == ConversionOrigin.Website;
 
                 operations.Add(
-                    new MutateOperation() {
-                        CustomerConversionGoalOperation = new CustomerConversionGoalOperation() {
+                    new MutateOperation()
+                    {
+                        CustomerConversionGoalOperation = new CustomerConversionGoalOperation()
+                        {
                             Update = newConversionGoal,
                             UpdateMask = FieldMasks.AllSetFieldsOf(newConversionGoal)
                         }
@@ -916,7 +969,48 @@ namespace Google.Ads.GoogleAds.Examples.V9
 
             return operations;
         }
+
         // [END add_performance_max_retail_campaign_9]
+
+        // [START add_performance_max_retail_campaign_10]
+        /// <summary>
+        /// Creates a list of MutateOperations that create a new asset group
+        /// listing group filter.
+        /// </summary>
+        /// <param name="client">The Google Ads Client.</param>
+        /// <param name="assetGroupResourceName">The resource name of the asset group.</param>
+        /// <returns>A list of mutate operations.</returns>
+        private List<MutateOperation> CreateAssetGroupListingGroupOperations(
+            GoogleAdsClient client,
+            string assetGroupResourceName)
+        {
+            List<MutateOperation> operations =  new List<MutateOperation>();
+
+            // Creates a new ad group criterion containing the "default" listing group (All
+            // products).
+            AssetGroupListingGroupFilter listingGroupFilter = new AssetGroupListingGroupFilter()
+            {
+                AssetGroup = assetGroupResourceName,
+
+                // Unset for the root listing group filter node.
+                // ParentListingGroupFilter = "<PARENT FILTER NAME>"
+            };
+
+            AssetGroupListingGroupFilterOperation operation =
+                new AssetGroupListingGroupFilterOperation()
+                {
+                    Create = listingGroupFilter
+                };
+
+            operations.Add(
+                new MutateOperation() {
+                    AssetGroupListingGroupFilterOperation = operation
+                }
+            );
+
+            return operations;
+        }
+        // [END add_performance_max_retail_campaign_10]
 
         /// <summary>
         /// Prints the details of a MutateGoogleAdsResponse. Parses the "response" oneof field name
@@ -940,20 +1034,41 @@ namespace Google.Ads.GoogleAds.Examples.V9
                     case MutateOperationResponse.ResponseOneofCase.AdGroupResult:
                         resourceName = operationResponse.AdGroupResult.ResourceName;
                         break;
+
                     case MutateOperationResponse.ResponseOneofCase.AdGroupAdResult:
                         resourceName = operationResponse.AdGroupAdResult.ResourceName;
                         break;
+
                     case MutateOperationResponse.ResponseOneofCase.CampaignResult:
                         resourceName = operationResponse.CampaignResult.ResourceName;
                         break;
+
                     case MutateOperationResponse.ResponseOneofCase.CampaignBudgetResult:
                         resourceName = operationResponse.CampaignBudgetResult.ResourceName;
                         break;
+
                     case MutateOperationResponse.ResponseOneofCase.CampaignCriterionResult:
                         resourceName = operationResponse.CampaignCriterionResult.ResourceName;
                         break;
+
                     case MutateOperationResponse.ResponseOneofCase.SmartCampaignSettingResult:
                         resourceName = operationResponse.SmartCampaignSettingResult.ResourceName;
+                        break;
+
+                    case MutateOperationResponse.ResponseOneofCase.AssetResult:
+                        resourceName = operationResponse.AssetResult.ResourceName;
+                        break;
+
+                    case MutateOperationResponse.ResponseOneofCase.AssetGroupAssetResult:
+                        resourceName = operationResponse.AssetGroupAssetResult.ResourceName;
+                        break;
+
+                    case MutateOperationResponse.ResponseOneofCase.AssetGroupResult:
+                        resourceName = operationResponse.AssetGroupResult.ResourceName;
+                        break;
+
+                    case MutateOperationResponse.ResponseOneofCase.AssetGroupListingGroupFilterResult:
+                        resourceName = operationResponse.AssetGroupListingGroupFilterResult.ResourceName;
                         break;
                 }
 
