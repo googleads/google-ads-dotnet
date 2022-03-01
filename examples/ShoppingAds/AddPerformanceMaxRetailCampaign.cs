@@ -85,6 +85,15 @@ namespace Google.Ads.GoogleAds.Examples.V10
             [Option("salesCountry", Required = true, HelpText =
                 "The sales country.")]
             public string SalesCountry { get; set; }
+
+            /// <summary>
+            /// The final url for the generated ads. Must have the same domain as the Merchant
+            /// Center account.
+            /// </summary>
+            [Option("finalUrl", Required = true, HelpText =
+                "The final url for the generated ads." +
+                "Must have the same domain as the Merchant Center account.")]
+            public string FinalUrl { get; set; }
         }
 
         /// <summary>
@@ -110,6 +119,9 @@ namespace Google.Ads.GoogleAds.Examples.V10
                     // The sales country
                     options.SalesCountry = "INSERT_SALES_COUNTRY_HERE";
 
+                    // The final URL
+                    options.FinalUrl = "INSERT_FINAL_URL_HERE";
+
                     return 0;
                 });
 
@@ -119,7 +131,8 @@ namespace Google.Ads.GoogleAds.Examples.V10
                 new GoogleAdsClient(),
                 options.CustomerId,
                 options.MerchantCenterAccountId,
-                options.SalesCountry
+                options.SalesCountry,
+                options.FinalUrl
             );
         }
 
@@ -171,11 +184,13 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="customerId">The Google Ads customer ID.</param>
         /// <param name="merchantCenterAccountId">The Merchant Center account ID.</param>
         /// <param name="salesCountry">The sales country.</param>
+        /// <param name="finalUrl">The final URL.</param>
         public void Run(
                 GoogleAdsClient client,
                 long customerId,
                 long merchantCenterAccountId,
-                string salesCountry)
+                string salesCountry,
+                string finalUrl)
         {
             // [START add_performance_max_retail_campaign_1]
             GoogleAdsServiceClient googleAdsServiceClient =
@@ -257,6 +272,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
                     client,
                     tempResourceNameCampaign,
                     assetGroupResourceName,
+                    finalUrl,
                     headlineAssetResourceNames,
                     descriptionAssetResourceNames,
                     new AssetGroupAssetTemporaryResourceNameGenerator(
@@ -592,6 +608,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="client">The Google Ads API client.</param>
         /// <param name="campaignResourceName">The campaign resource name.</param>
         /// <param name="assetGroupResourceName">The asset group resource name.</param>
+        /// <param name="finalUrl">The final url.</param>
         /// <param name="headlineAssetResourceNames">The headline asset resource names.</param>
         /// <param name="descriptionAssetResourceNames">The description asset resource
         /// names.</param>
@@ -601,6 +618,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             GoogleAdsClient client,
             string campaignResourceName,
             string assetGroupResourceName,
+            string finalUrl,
             List<string> headlineAssetResourceNames,
             List<string> descriptionAssetResourceNames,
             AssetGroupAssetTemporaryResourceNameGenerator resourceNameGenerator)
@@ -619,8 +637,8 @@ namespace Google.Ads.GoogleAds.Examples.V10
                                 ExampleUtilities.GetRandomString(),
 
                             Campaign = campaignResourceName,
-                            FinalUrls = { "http://www.example.com" },
-                            FinalMobileUrls = { "http://www.example.com" },
+                            FinalUrls = { finalUrl },
+                            FinalMobileUrls = { finalUrl },
                             Status = AssetGroupStatus.Paused,
                             ResourceName = assetGroupResourceName
                         }
