@@ -119,8 +119,8 @@ namespace Google.Ads.GoogleAds.Examples.V10
 
                     // The option to remove the existing listing group tree.
                     //
-                    // If the current AssetGroup already has a tree of ListingGroupFilter's, and you
-                    // try to add a new set of ListinGroupFilter's including a root filter, you'll
+                    // If the current AssetGroup already has a tree of ListingGroupFilters, and you
+                    // try to add a new set of ListinGroupFilters including a root filter, you'll
                     // receive a 'ASSET_GROUP_LISTING_GROUP_FILTER_ERROR_MULTIPLE_ROOTS' error.
                     //
                     // Setting this option to true via the CLI or here will remove the existing tree
@@ -143,7 +143,6 @@ namespace Google.Ads.GoogleAds.Examples.V10
             );
         }
 
-        // [START add_performance_max_product_listing_group_tree]
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
@@ -152,10 +151,10 @@ namespace Google.Ads.GoogleAds.Examples.V10
             "Performance Max retail campaign.";
 
         /// <summary>
-        /// A factory that creates MutateOperation's for removing an existing tree of
-        /// AssetGroupListingGroupFilter's.
+        /// A factory that creates MutateOperations for removing an existing tree of
+        /// AssetGroupListingGroupFilters.
         ///
-        /// AssetGroupListingGroupFilter's must be removed in a specific order: all of the children
+        /// AssetGroupListingGroupFilters must be removed in a specific order: all of the children
         /// of a filter must be removed before the filter itself, otherwise the API will return an
         /// error.
         ///
@@ -214,10 +213,10 @@ namespace Google.Ads.GoogleAds.Examples.V10
 
             // [START add_performance_max_product_listing_group_tree_2]
             /// <summary>
-            /// Creates a list of MutateOperation's that remove all of the resources in the tree
+            /// Creates a list of MutateOperations that remove all of the resources in the tree
             /// originally used to create this factory object.
             /// </summary>
-            /// <returns>A list of MutateOperation's</returns>
+            /// <returns>A list of MutateOperations</returns>
             public List<MutateOperation> RemoveAll()
             {
                 return this.RemoveDescendentsAndFilter(this.rootResourceName);
@@ -226,12 +225,12 @@ namespace Google.Ads.GoogleAds.Examples.V10
 
             // [START add_performance_max_product_listing_group_tree_3]
             /// <summary>
-            /// Creates a list of MutateOperation's that remove all the descendents of the specified
+            /// Creates a list of MutateOperations that remove all the descendents of the specified
             /// AssetGroupListingGroupFilter resource name. The order of removal is post-order,
             /// where all the children (and their children, recursively) are removed first. Then,
             /// the node itself is removed.
             /// </summary>
-            /// <returns>A list of MutateOperation's</returns>
+            /// <returns>A list of MutateOperations</returns>
             public List<MutateOperation> RemoveDescendentsAndFilter(string resourceName)
             {
                 List<MutateOperation> operations =  new List<MutateOperation>();
@@ -267,8 +266,8 @@ namespace Google.Ads.GoogleAds.Examples.V10
         private const int TEMPORARY_ID_LISTING_GROUP_ROOT = -1;
 
         /// <summary>
-        /// A factory that creates MutateOperation's wrapping
-        /// AssetGroupListingGroupFilterMutateOperation's for a specific customerId and
+        /// A factory that creates MutateOperations wrapping
+        /// AssetGroupListingGroupFilterMutateOperations for a specific customerId and
         /// assetGroupId.
         ///
         /// This object is intended to be used with an array of MutateOperations to perform an
@@ -294,7 +293,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             /// <summary>
             /// Returns a new temporary ID to be used for a resource name in a MutateOperation. See
             /// https://developers.google.com/google-ads/api/docs/mutating/best-practices#temporary_resource_names
-            /// for details about temporary ID's.
+            /// for details about temporary IDs.
             /// </summary>
             /// <returns>A new temporary ID.</returns>
             public long NextId()
@@ -477,6 +476,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             // [END add_performance_max_product_listing_group_tree_6]
         }
 
+        // [START add_performance_max_product_listing_group_tree]
         /// <summary>
         /// Runs the code example.
         /// </summary>
@@ -497,13 +497,13 @@ namespace Google.Ads.GoogleAds.Examples.V10
 
             string assetGroupResourceName = ResourceNames.AssetGroup(customerId, assetGroupId);
 
-            // We use a factory create all the MutateOperation's that manipulate a specific
+            // We use a factory to create all the MutateOperations that manipulate a specific
             // AssetGroup for a specific customer. The operations returned by the factory's methods
-            // are used to optionally remove all AssetGroupListingGroupFilter's from the tree, and
+            // are used to optionally remove all AssetGroupListingGroupFilters from the tree, and
             // then to construct a new tree of filters. These filters can have a parent-child
             // relationship, and also include a special root that includes all children.
             //
-            // When creating these filters, we use temporary ID's to create the hierarchy between
+            // When creating these filters, we use temporary IDs to create the hierarchy between
             // the root listing group filter, and the subdivisions and leave nodes beneath that.
             //
             // The factory specific to a customerId and assetGroupId is created below.
@@ -682,7 +682,6 @@ namespace Google.Ads.GoogleAds.Examples.V10
             return resources;
         }
         // [END add_performance_max_product_listing_group_tree_7]
-        // [START add_performance_max_product_listing_group_tree]
 
         /// <summary>
         /// Prints the details of a MutateGoogleAdsResponse. Parses the "response" oneof field name
