@@ -31,6 +31,8 @@ using static Google.Ads.GoogleAds.V10.Enums.AssetFieldTypeEnum.Types;
 using static Google.Ads.GoogleAds.V10.Enums.AssetGroupStatusEnum.Types;
 using static Google.Ads.GoogleAds.V10.Enums.BudgetDeliveryMethodEnum.Types;
 using static Google.Ads.GoogleAds.V10.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.ListingGroupFilterTypeEnum.Types;
+using static Google.Ads.GoogleAds.V10.Enums.ListingGroupFilterVerticalEnum.Types;
 using static Google.Ads.GoogleAds.V10.Resources.Campaign.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V10
@@ -1010,8 +1012,17 @@ namespace Google.Ads.GoogleAds.Examples.V10
             {
                 AssetGroup = assetGroupResourceName,
 
-                // Unset for the root listing group filter node.
+                // Since this is the root node, do not set the ParentListingGroupFilter. For all
+                // other nodes, this would refer to the parent listing group filter resource name.
                 // ParentListingGroupFilter = "<PARENT FILTER NAME>"
+
+                // The Subdivision type means this node has children. This type is used for the root
+                // node as well.
+                Type = ListingGroupFilterType.UnitIncluded,
+
+                // Because this is a Performance Max campaign for retail, we need to specify that
+                // this is in the shopping vertical.
+                Vertical = ListingGroupFilterVertical.Shopping
             };
 
             AssetGroupListingGroupFilterOperation operation =
