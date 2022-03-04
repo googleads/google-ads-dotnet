@@ -120,7 +120,9 @@ namespace Google.Ads.GoogleAds.Examples.V10
                     {
                         TargetGoogleSearch = true,
                         TargetSearchNetwork = true,
-                        TargetContentNetwork = false,
+                        // Enable Display Expansion on Search campaigns. See
+                        // https://support.google.com/google-ads/answer/7193800 to learn more.
+                        TargetContentNetwork = true,
                         TargetPartnerSearchNetwork = false
                     },
 
