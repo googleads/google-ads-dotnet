@@ -491,7 +491,6 @@ namespace Google.Ads.GoogleAds.Examples.V10
             long assetGroupId,
             bool replaceExistingTree)
         {
-            // [START add_performance_max_product_listing_group_tree_1]
             GoogleAdsServiceClient googleAdsServiceClient =
                 client.GetService(Services.V10.GoogleAdsService);
 
@@ -629,8 +628,8 @@ namespace Google.Ads.GoogleAds.Examples.V10
             MutateGoogleAdsResponse response = googleAdsServiceClient.Mutate(request);
 
             PrintResponseDetails(request, response);
-            // [END add_performance_max_product_listing_group_tree_1]
         }
+        // [END add_performance_max_product_listing_group_tree]
 
         // [START add_performance_max_product_listing_group_tree_7]
         /// <summary>
