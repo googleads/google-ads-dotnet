@@ -1016,8 +1016,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
                 // other nodes, this would refer to the parent listing group filter resource name.
                 // ParentListingGroupFilter = "<PARENT FILTER NAME>"
 
-                // The Subdivision type means this node has children. This type is used for the root
-                // node as well.
+                // The UnitIncluded means this node has no children.
                 Type = ListingGroupFilterType.UnitIncluded,
 
                 // Because this is a Performance Max campaign for retail, we need to specify that

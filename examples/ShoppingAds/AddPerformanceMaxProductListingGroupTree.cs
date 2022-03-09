@@ -326,11 +326,13 @@ namespace Google.Ads.GoogleAds.Examples.V10
                         this.assetGroupId
                     ),
 
-                    // The root listing group filter node should be unset.
-                    // ParentListingGroupFilter = "",
+                    // Since this is the root node, do not set the ParentListingGroupFilter. For all
+                    // other nodes, this would refer to the parent listing group filter resource
+                    // name.
+                    // ParentListingGroupFilter = "<PARENT FILTER NAME>"
 
-                    // The UnitIncluded type means this node has no children, and listings that fall
-                    // into this category will be included in ads.
+                    // Unlike AddPerformanceMaxRetailCampaign, the type for the root node here must
+                    // be Subdivision because we add child partitions under it.
                     Type = ListingGroupFilterType.Subdivision,
 
                     // Because this is a Performance Max campaign for retail, we need to specify
