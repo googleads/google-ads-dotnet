@@ -165,7 +165,10 @@ namespace Google.Ads.GoogleAds.Logging
                     RequestHeaders = context.Options.Headers,  // includes the RequestId
                     IsFailure = (rpcException != null),
                     Exception = exception,
+                    CustomerId = GetCustomerId(request),
                     Response = response,
+                    ResponseHeaders = Merge(GetResponseHeader(call.ResponseHeadersAsync),
+                        TryGetCallTrailers(call)),
                 };
 
                 WriteSummaryLogs(logEntry);
