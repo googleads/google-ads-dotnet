@@ -94,11 +94,17 @@ namespace Google.Ads.GoogleAds.Interceptors
                     }
                     else
                     {
-                        // There is no exception. Invoke the callback if we haven't reached
-                        // the end of stream.
+                        // There is no exception.
                         if (task.Result)
                         {
+                            // We have some results, so log it.
                             onMoveNext(this.Current, null);
+                        }
+                        else
+                        {
+                            // We have an empty response, so invoke the callback with null response
+                            // to complete logging.
+                            onMoveNext(null, null);
                         }
                     }
                 }
