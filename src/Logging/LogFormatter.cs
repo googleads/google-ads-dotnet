@@ -122,6 +122,11 @@ namespace Google.Ads.GoogleAds.Logging
         /// <returns>The formatted body.</returns>
         private static string FormatBody(object body, HashSet<string> keysToMask)
         {
+            if (body == null)
+            {
+                return "{ }";
+            }
+
             string bodyTypeName = body.GetType().Name;
 
             switch (bodyTypeName)
