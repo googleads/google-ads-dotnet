@@ -156,13 +156,16 @@ namespace Google.Ads.GoogleAds.Logging
                 case "SearchGoogleAdsStreamResponse":
                     {
                         FieldMask fieldMask = GetFieldMask(body);
-                        foreach (string mask in fieldMask.Paths)
+                        if (fieldMask != null)
                         {
-                            if (keysToMask.Contains(mask))
+                            foreach (string mask in fieldMask.Paths)
                             {
-                                object clonedMessage = CloneMessage(body);
-                                MaskFieldsInSearchResponse(clonedMessage);
-                                return clonedMessage.ToString();
+                                if (keysToMask.Contains(mask))
+                                {
+                                    object clonedMessage = CloneMessage(body);
+                                    MaskFieldsInSearchResponse(clonedMessage);
+                                    return clonedMessage.ToString();
+                                }
                             }
                         }
                         return body.ToString();
