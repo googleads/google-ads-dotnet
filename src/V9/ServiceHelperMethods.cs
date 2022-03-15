@@ -96,7 +96,7 @@ namespace Google.Ads.GoogleAds.V9.Services
             {
                 var responseStream = searchStream.GetResponseStream();
                 bool emptyResult = true;
-                while (await responseStream.MoveNextAsync(CancellationToken.None))
+                while (await responseStream.MoveNextAsync())
                 {
                     emptyResult = false;
                     SearchGoogleAdsStreamResponse resp = responseStream.Current;
