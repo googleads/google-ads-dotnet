@@ -92,9 +92,9 @@ namespace Google.Ads.GoogleAds.Examples.V10
             /// An option to remove the listing group tree from the asset group when this example is
             /// run.
             /// </summary>
-            [Option("shouldReplaceExistingProductTree", Required = false, HelpText =
+            [Option("replaceExistingTree", Required = false, HelpText =
                 "An option that removes the existing listing group tree from the asset group.")]
-            public bool ShouldReplaceExistingProductTree { get; set; }
+            public bool ReplaceExistingTree { get; set; }
         }
 
         /// <summary>
@@ -125,7 +125,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
                     //
                     // Setting this option to true via the CLI or here will remove the existing tree
                     // and prevent this error.
-                    options.ShouldReplaceExistingProductTree = false;
+                    options.ReplaceExistingTree = false;
 
                     return 0;
                 });
@@ -139,7 +139,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
                 new GoogleAdsClient(),
                 options.CustomerId,
                 options.AssetGroupId,
-                options.ShouldReplaceExistingProductTree
+                options.ReplaceExistingTree
             );
         }
 
@@ -326,11 +326,13 @@ namespace Google.Ads.GoogleAds.Examples.V10
                         this.assetGroupId
                     ),
 
-                    // The root listing group filter node should be unset.
-                    // ParentListingGroupFilter = "",
+                    // Since this is the root node, do not set the ParentListingGroupFilter. For all
+                    // other nodes, this would refer to the parent listing group filter resource
+                    // name.
+                    // ParentListingGroupFilter = "<PARENT FILTER NAME>"
 
-                    // The UnitIncluded type means this node has no children, and listings that fall
-                    // into this category will be included in ads.
+                    // Unlike AddPerformanceMaxRetailCampaign, the type for the root node here must
+                    // be Subdivision because we add child partitions under it.
                     Type = ListingGroupFilterType.Subdivision,
 
                     // Because this is a Performance Max campaign for retail, we need to specify
@@ -483,15 +485,14 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID.</param>
         /// <param name="assetGroupId">The asset group id for the Performance Max campaign.</param>
-        /// <param name="shouldReplaceExistingProductTree">Option to remove existing product tree
+        /// <param name="replaceExistingTree">Option to remove existing product tree
         /// from the passed in asset group.</param>
         public void Run(
             GoogleAdsClient client,
             long customerId,
             long assetGroupId,
-            bool shouldReplaceExistingProductTree)
+            bool replaceExistingTree)
         {
-            // [START add_performance_max_product_listing_group_tree_1]
             GoogleAdsServiceClient googleAdsServiceClient =
                 client.GetService(Services.V10.GoogleAdsService);
 
@@ -519,7 +520,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
                 CustomerId = customerId.ToString()
             };
 
-            if (shouldReplaceExistingProductTree)
+            if (replaceExistingTree)
             {
                 List<AssetGroupListingGroupFilter> existingListingGroupFilters =
                     GetAllExistingListingGroupFilterAssetsInAssetGroup(
@@ -629,8 +630,8 @@ namespace Google.Ads.GoogleAds.Examples.V10
             MutateGoogleAdsResponse response = googleAdsServiceClient.Mutate(request);
 
             PrintResponseDetails(request, response);
-            // [END add_performance_max_product_listing_group_tree_1]
         }
+        // [END add_performance_max_product_listing_group_tree]
 
         // [START add_performance_max_product_listing_group_tree_7]
         /// <summary>
