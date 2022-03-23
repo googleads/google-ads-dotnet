@@ -18,6 +18,7 @@ using Google.Ads.GoogleAds.V10.Errors;
 using Google.Ads.GoogleAds.V10.Services;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Google.Ads.GoogleAds.Examples.V10
 {
@@ -58,9 +59,26 @@ namespace Google.Ads.GoogleAds.Examples.V10
             /// <summary>
             /// The click ID.
             /// </summary>
-            [Option("gclid", Required = true, HelpText =
-                "The click ID.")]
+            [Option("gclid", Required = false, HelpText =
+                "The Google Click identifier. If setting this value, do not set gbraid or " +
+                "wbraid parameters.")]
             public string Gclid { get; set; }
+
+            /// <summary>
+            /// The click ID.
+            /// </summary>
+            [Option("wbraid", Required = false, HelpText =
+                "The WBRAID identifer for an iOS web conversion. If setting this value, do not " +
+                "set gclid or gbraid parameters.")]
+            public string Wbraid { get; set; }
+
+            /// <summary>
+            /// The click ID.
+            /// </summary>
+            [Option("gbraid", Required = false, HelpText =
+                "The GBRAID identifier for an iOS app conversion. If setting this value, do " +
+                "not set gclid or wbraid parameters.")]
+            public string Gbraid { get; set; }
 
             /// <summary>
             /// The convsersion value.
@@ -93,8 +111,10 @@ namespace Google.Ads.GoogleAds.Examples.V10
                     // The conversion time in "yyyy-mm-dd hh:mm:ss+|-hh:mm" format.
                     options.ConversionTime = "INSERT_CONVERSION_TIME_HERE";
 
-                    // The Google Click ID for which conversions are uploaded.
+                    // Set exactly one of gclid, gbraid, or wbraid.
                     options.Gclid = "INSERT_GCLID_HERE";
+                    options.Wbraid = null;
+                    options.Gbraid = null;
 
                     // The convsersion value.
                     options.ConversionValue = double.Parse("INSERT_CONVERSION_VALUE_HERE");
@@ -105,7 +125,8 @@ namespace Google.Ads.GoogleAds.Examples.V10
             UploadOfflineConversion codeExample = new UploadOfflineConversion();
             Console.WriteLine(codeExample.Description);
             codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.ConversionActionId,
-                options.ConversionTime, options.Gclid, options.ConversionValue);
+                options.ConversionTime, options.Gclid, options.Gbraid, options.Wbraid,
+                options.ConversionValue);
         }
 
         /// <summary>
@@ -126,11 +147,17 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="conversionActionId">The conversion action ID.</param>
         /// <param name="conversionTime">The conversion time in "yyyy-mm-dd hh:mm:ss+|-hh:mm"
         /// format.</param>
-        /// <param name="gclid">The Google Click ID for which conversions are uploaded.</param>
+        /// <param name="gclid">The GCLID for the conversion. If set, <code>gbraid</code> and
+        /// <code>wbraid</code> must be null.</param>
+        /// <param name="gbraid">The GBRAID for the iOS app conversion. If set, <code>gclid</code>
+        /// and <code>wbraid</code> must be null.</param>
+        /// <param name="wbraid">The WBRAID for the iOS web conversion. If set, <code>gclid</code>
+        /// and <code>gbraid</code> must be null.</param>
         /// <param name="conversionValue">The convsersion value.</param>
         // [START upload_offline_conversion]
         public void Run(GoogleAdsClient client, long customerId, long conversionActionId,
-            string gclid, string conversionTime, double conversionValue)
+            string gclid, string gbraid, string wbraid, string conversionTime,
+            double conversionValue)
         {
             // Get the ConversionActionService.
             ConversionUploadServiceClient conversionUploadService =
@@ -140,11 +167,36 @@ namespace Google.Ads.GoogleAds.Examples.V10
             ClickConversion clickConversion = new ClickConversion()
             {
                 ConversionAction = ResourceNames.ConversionAction(customerId, conversionActionId),
-                Gclid = gclid,
                 ConversionValue = conversionValue,
                 ConversionDateTime = conversionTime,
                 CurrencyCode = "USD"
             };
+
+            // Verifies that exactly one of gclid, gbraid, and wbraid is specified, as required.
+            // See https://developers.google.com/google-ads/api/docs/conversions/upload-clicks
+            // for details.
+            string[] ids = { gclid, gbraid, wbraid };
+            int idCount = ids.Where(id => !string.IsNullOrEmpty(id)).Count();
+
+            if (idCount != 1)
+            {
+                throw new ArgumentException($"Exactly 1 of gclid, gbraid, or wbraid is " +
+                    $"required, but {idCount} ID values were provided");
+            }
+
+            // Sets the single specified ID field.
+            if (!string.IsNullOrEmpty(gclid))
+            {
+                clickConversion.Gclid = gclid;
+            }
+            if (!string.IsNullOrEmpty(wbraid))
+            {
+                clickConversion.Wbraid = wbraid;
+            }
+            if (!string.IsNullOrEmpty(gbraid))
+            {
+                clickConversion.Gbraid = gbraid;
+            }
 
             try
             {
