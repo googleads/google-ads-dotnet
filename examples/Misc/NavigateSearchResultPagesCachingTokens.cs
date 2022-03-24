@@ -1,4 +1,4 @@
-// Copyright 2020 Google LLC
+// Copyright 2022 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -29,9 +29,9 @@ namespace Google.Ads.GoogleAds.Examples.V10
     /// https://developers.google.com/google-ads/api/docs/reporting/paging.
     ///
     /// This code example searches campaigns illustrating how GoogleAdsService.Search result page
-    /// tokens can be cached and reused to retrieve previous pages.This is useful when you need
+    /// tokens can be cached and reused to retrieve previous pages. This is useful when you need
     /// to request pages that were already requested in the past without starting over from the
-    /// first page.For example, it can be used to implement an interactive application that
+    /// first page. For example, it can be used to implement an interactive application that
     /// displays a page of results at a time without caching all the results first.
     /// </summary>
     public class NavigateSearchResultPagesCachingTokens : ExampleBase
@@ -91,9 +91,9 @@ namespace Google.Ads.GoogleAds.Examples.V10
             "they can only be retrieved in sequence starting by the first page. More details " +
             "at https://developers.google.com/google-ads/api/docs/reporting/paging. This code " +
             "example searches campaigns illustrating how GoogleAdsService.Search result page " +
-            "tokens can be cached and reused to retrieve previous pages.This is useful when " +
+            "tokens can be cached and reused to retrieve previous pages. This is useful when " +
             "you need to request pages that were already requested in the past without starting " +
-            "over from the first page.For example, it can be used to implement an interactive " +
+            "over from the first page. For example, it can be used to implement an interactive " +
             "application that displays a page of results at a time without caching all the " +
             "results first.";
 
