@@ -189,11 +189,11 @@ namespace Google.Ads.GoogleAds.Examples.V10
             {
                 clickConversion.Gclid = gclid;
             }
-            if (!string.IsNullOrEmpty(wbraid))
+            else if (!string.IsNullOrEmpty(wbraid))
             {
                 clickConversion.Wbraid = wbraid;
             }
-            if (!string.IsNullOrEmpty(gbraid))
+            else if (!string.IsNullOrEmpty(gbraid))
             {
                 clickConversion.Gbraid = gbraid;
             }
