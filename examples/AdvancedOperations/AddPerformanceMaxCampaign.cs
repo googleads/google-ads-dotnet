@@ -824,7 +824,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             // in the request.
             foreach (MutateOperationResponse operationResponse in response.MutateOperationResponses)
             {
-                string resourceName = "<not found>";
+                string resourceName = "";
 
                 string entityName = operationResponse.ResponseCase.ToString();
                 // Trim the substring "Result" from the end of the entity name.
@@ -849,6 +849,18 @@ namespace Google.Ads.GoogleAds.Examples.V10
                         break;
                     case MutateOperationResponse.ResponseOneofCase.SmartCampaignSettingResult:
                         resourceName = operationResponse.SmartCampaignSettingResult.ResourceName;
+                        break;
+                    case MutateOperationResponse.ResponseOneofCase.AssetResult:
+                        resourceName = operationResponse.AssetResult.ResourceName;
+                        break;
+                    case MutateOperationResponse.ResponseOneofCase.AssetGroupResult:
+                        resourceName = operationResponse.AssetGroupResult.ResourceName;
+                        break;
+                    case MutateOperationResponse.ResponseOneofCase.AssetGroupAssetResult:
+                        resourceName = operationResponse.AssetGroupAssetResult.ResourceName;
+                        break;
+                    default:
+                        resourceName = "<not found>";
                         break;
                 }
 
