@@ -194,131 +194,142 @@ namespace Google.Ads.GoogleAds.Examples.V10
                 string salesCountry,
                 string finalUrl)
         {
-            // [START add_performance_max_retail_campaign_1]
-            GoogleAdsServiceClient googleAdsServiceClient =
+            try
+            {
+                // [START add_performance_max_retail_campaign_1]
+                GoogleAdsServiceClient googleAdsServiceClient =
                 client.GetService(Services.V10.GoogleAdsService);
 
-            // This campaign will override the customer conversion goals.
-            // Retrieve the current list of customer conversion goals.
-            List<CustomerConversionGoal> customerConversionGoals =
-                GetCustomerConversionGoals(client, customerId);
+                // This campaign will override the customer conversion goals.
+                // Retrieve the current list of customer conversion goals.
+                List<CustomerConversionGoal> customerConversionGoals =
+                    GetCustomerConversionGoals(client, customerId);
 
-            // Performance Max campaigns require that repeated assets such as headlines and
-            // descriptions be created before the campaign.
-            //
-            // For the list of required assets for a Performance Max campaign, see
-            // https://developers.google.com/google-ads/api/docs/performance-max/assets
-            //
-            // Create the headlines.
-            List<string> headlineAssetResourceNames = CreateMultipleTextAssets(
-                client,
-                customerId,
-                new[] {
+                // Performance Max campaigns require that repeated assets such as headlines and
+                // descriptions be created before the campaign.
+                //
+                // For the list of required assets for a Performance Max campaign, see
+                // https://developers.google.com/google-ads/api/docs/performance-max/assets
+                //
+                // Create the headlines.
+                List<string> headlineAssetResourceNames = CreateMultipleTextAssets(
+                    client,
+                    customerId,
+                    new[] {
                     "Travel",
                     "Travel Reviews",
                     "Book travel"
-                }
-            );
-
-            // Create the descriptions.
-            List<string> descriptionAssetResourceNames = CreateMultipleTextAssets(
-                client,
-                customerId,
-                new[] {
-                    "Take to the air!",
-                    "Fly to the sky!"
-                }
-            );
-
-            string tempResourceNameCampaignBudget = ResourceNames.CampaignBudget(
-                customerId,
-                TEMPORARY_ID_BUDGET
-            );
-
-            string assetGroupResourceName = ResourceNames.AssetGroup(
-                customerId,
-                TEMPORARY_ID_ASSET_GROUP
-            );
-
-            // The below methods create and return MutateOperations that we later provide to the
-            // GoogleAdsService.Mutate method in order to create the entities in a single request.
-            // Since the entities for a Performance Max campaign are closely tied to one-another,
-            // it's considered a best practice to create them in a single Mutate request so they all
-            // complete successfully or fail entirely, leaving no orphaned entities.
-            //
-            // See: https://developers.google.com/google-ads/api/docs/mutating/overview
-            MutateOperation campaignBudgetOperation = CreateCampaignBudgetOperation(
-                client,
-                tempResourceNameCampaignBudget
-            );
-
-            string tempResourceNameCampaign = ResourceNames.Campaign(
-                customerId,
-                TEMPORARY_ID_CAMPAIGN
-            );
-
-            MutateOperation performanceMaxCampaignOperation =
-                CreatePerformanceMaxCampaignOperation(
-                        client,
-                        tempResourceNameCampaign,
-                        tempResourceNameCampaignBudget,
-                        merchantCenterAccountId,
-                        salesCountry
-                    );
-
-            List<MutateOperation> campaignCriterionOperations =
-                CreateCampaignCriterionOperations(client, tempResourceNameCampaign);
-
-            List<MutateOperation> assetGroupOperations =
-                CreateAssetGroupOperations(
-                    client,
-                    tempResourceNameCampaign,
-                    assetGroupResourceName,
-                    finalUrl,
-                    headlineAssetResourceNames,
-                    descriptionAssetResourceNames,
-                    new AssetGroupAssetTemporaryResourceNameGenerator(
-                        customerId,
-                        TEMPORARY_ID_ASSET_GROUP
-                    )
+                    }
                 );
 
-            List<MutateOperation> conversionGoalOperations =
-                CreateCustomerConversionGoalOperations(
+                // Create the descriptions.
+                List<string> descriptionAssetResourceNames = CreateMultipleTextAssets(
                     client,
                     customerId,
-                    customerConversionGoals
+                    new[] {
+                    "Take to the air!",
+                    "Fly to the sky!"
+                    }
                 );
 
-            // Retail Performance Max campaigns require listing groups, which are created via the
-            // AssetGroupListingGroupFilter resource.
-            List<MutateOperation> assetGroupListingGroupOperations =
-                CreateAssetGroupListingGroupOperations(
+                string tempResourceNameCampaignBudget = ResourceNames.CampaignBudget(
+                    customerId,
+                    TEMPORARY_ID_BUDGET
+                );
+
+                string assetGroupResourceName = ResourceNames.AssetGroup(
+                    customerId,
+                    TEMPORARY_ID_ASSET_GROUP
+                );
+
+                // The below methods create and return MutateOperations that we later provide to the
+                // GoogleAdsService.Mutate method in order to create the entities in a single request.
+                // Since the entities for a Performance Max campaign are closely tied to one-another,
+                // it's considered a best practice to create them in a single Mutate request so they all
+                // complete successfully or fail entirely, leaving no orphaned entities.
+                //
+                // See: https://developers.google.com/google-ads/api/docs/mutating/overview
+                MutateOperation campaignBudgetOperation = CreateCampaignBudgetOperation(
                     client,
-                    assetGroupResourceName
+                    tempResourceNameCampaignBudget
                 );
 
-            MutateGoogleAdsRequest request = new MutateGoogleAdsRequest
+                string tempResourceNameCampaign = ResourceNames.Campaign(
+                    customerId,
+                    TEMPORARY_ID_CAMPAIGN
+                );
+
+                MutateOperation performanceMaxCampaignOperation =
+                    CreatePerformanceMaxCampaignOperation(
+                            client,
+                            tempResourceNameCampaign,
+                            tempResourceNameCampaignBudget,
+                            merchantCenterAccountId,
+                            salesCountry
+                        );
+
+                List<MutateOperation> campaignCriterionOperations =
+                    CreateCampaignCriterionOperations(client, tempResourceNameCampaign);
+
+                List<MutateOperation> assetGroupOperations =
+                    CreateAssetGroupOperations(
+                        client,
+                        tempResourceNameCampaign,
+                        assetGroupResourceName,
+                        finalUrl,
+                        headlineAssetResourceNames,
+                        descriptionAssetResourceNames,
+                        new AssetGroupAssetTemporaryResourceNameGenerator(
+                            customerId,
+                            TEMPORARY_ID_ASSET_GROUP
+                        )
+                    );
+
+                List<MutateOperation> conversionGoalOperations =
+                    CreateCustomerConversionGoalOperations(
+                        client,
+                        customerId,
+                        customerConversionGoals
+                    );
+
+                // Retail Performance Max campaigns require listing groups, which are created via the
+                // AssetGroupListingGroupFilter resource.
+                List<MutateOperation> assetGroupListingGroupOperations =
+                    CreateAssetGroupListingGroupOperations(
+                        client,
+                        assetGroupResourceName
+                    );
+
+                MutateGoogleAdsRequest request = new MutateGoogleAdsRequest
+                {
+                    CustomerId = customerId.ToString()
+                };
+
+                // It's important to create these entities in this order because they depend on
+                // each other.
+                //
+                // Additionally, we take several lists of operations and flatten them into one
+                // large list.
+                request.MutateOperations.Add(campaignBudgetOperation);
+                request.MutateOperations.Add(performanceMaxCampaignOperation);
+                request.MutateOperations.AddRange(campaignCriterionOperations);
+                request.MutateOperations.AddRange(assetGroupOperations);
+                request.MutateOperations.AddRange(conversionGoalOperations);
+                request.MutateOperations.AddRange(assetGroupListingGroupOperations);
+
+                MutateGoogleAdsResponse response = googleAdsServiceClient.Mutate(request);
+
+                PrintResponseDetails(response);
+                // [END add_performance_max_retail_campaign_1]
+            }
+            catch (GoogleAdsException e)
             {
-                CustomerId = customerId.ToString()
-            };
-
-            // It's important to create these entities in this order because they depend on each
-            // other.
-            //
-            // Additionally, we take several lists of operations and flatten them into one large
-            // list.
-            request.MutateOperations.Add(campaignBudgetOperation);
-            request.MutateOperations.Add(performanceMaxCampaignOperation);
-            request.MutateOperations.AddRange(campaignCriterionOperations);
-            request.MutateOperations.AddRange(assetGroupOperations);
-            request.MutateOperations.AddRange(conversionGoalOperations);
-            request.MutateOperations.AddRange(assetGroupListingGroupOperations);
-
-            MutateGoogleAdsResponse response = googleAdsServiceClient.Mutate(request);
-
-            PrintResponseDetails(response);
-            // [END add_performance_max_retail_campaign_1]
+                Console.WriteLine("Failure:");
+                Console.WriteLine($"Message: {e.Message}");
+                Console.WriteLine($"Failure: {e.Failure}");
+                Console.WriteLine($"Request ID: {e.RequestId}");
+                throw;
+            }
         }
 
         // [START add_performance_max_retail_campaign_2]
@@ -1051,7 +1062,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             // in the request.
             foreach (MutateOperationResponse operationResponse in response.MutateOperationResponses)
             {
-                string resourceName = "<not found>";
+                string resourceName;
 
                 string entityName = operationResponse.ResponseCase.ToString();
                 // Trim the substring "Result" from the end of the entity name.
@@ -1097,6 +1108,18 @@ namespace Google.Ads.GoogleAds.Examples.V10
 
                     case MutateOperationResponse.ResponseOneofCase.AssetGroupListingGroupFilterResult:
                         resourceName = operationResponse.AssetGroupListingGroupFilterResult.ResourceName;
+                        break;
+
+                    case MutateOperationResponse.ResponseOneofCase.CampaignConversionGoalResult:
+                        resourceName = operationResponse.CampaignConversionGoalResult.ResourceName;
+                        break;
+
+                    case MutateOperationResponse.ResponseOneofCase.CustomerConversionGoalResult:
+                        resourceName = operationResponse.CustomerConversionGoalResult.ResourceName;
+                        break;
+
+                    default:
+                        resourceName = "<not found>";
                         break;
                 }
 
