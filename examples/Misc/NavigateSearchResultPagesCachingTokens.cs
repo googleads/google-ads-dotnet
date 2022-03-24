@@ -108,8 +108,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             GoogleAdsServiceClient googleAdsService =
                 client.GetService(Services.V10.GoogleAdsService);
 
-            // The cache of page tokens. It is stored in-memory and in ascending order
-            // of page number. The first page's token is always an empty string.
+            // The cache of page tokens. The first page's token is always an empty string.
             Dictionary<int, string> pageTokens = new Dictionary<int, string>();
             CacheNextPageToken(pageTokens, null, 0);
 
