@@ -29,21 +29,24 @@ namespace Google.Ads.GoogleAds.Tests {
             "ZXNzGAQgASgLMgguQWRkcmVzc0IGCgRfYWdlInIKB0FkZHJlc3MSDQoFbGlu",
             "ZTEYASABKAkSEgoFbGluZTIYAiABKAlIAIgBARIRCgRjaXR5GAMgASgJSAGI",
             "AQESDwoHemlwY29kZRgEIAEoAxINCgVzdGF0ZRgFIAEoCUIICgZfbGluZTJC",
-            "BwoFX2NpdHkiNgoNSGVsbG9SZXNwb25zZRIMCgRuYW1lGAEgASgJEhcKD3Bh",
-            "cnRpYWxfZmFpbHVyZRgCIAEoCSJsChJIZWxsb1N0cmVhbVJlcXVlc3QSEwoL",
-            "Y3VzdG9tZXJfaWQYASABKAkSDAoEbmFtZRgCIAEoCRIQCgNhZ2UYAyABKANI",
-            "AIgBARIZCgdhZGRyZXNzGAQgASgLMgguQWRkcmVzc0IGCgRfYWdlIlAKE0hl",
-            "bGxvU3RyZWFtUmVzcG9uc2USDAoEbmFtZRgBIAEoCRIXCg9wYXJ0aWFsX2Zh",
-            "aWx1cmUYAiABKAkSEgoKcmVxdWVzdF9pZBgDIAEoCTJyCgxIZWxsb1NlcnZp",
-            "Y2USJgoFSGVsbG8SDS5IZWxsb1JlcXVlc3QaDi5IZWxsb1Jlc3BvbnNlEjoK",
-            "C0hlbGxvU3RyZWFtEhMuSGVsbG9TdHJlYW1SZXF1ZXN0GhQuSGVsbG9TdHJl",
-            "YW1SZXNwb25zZTABQh2qAhpHb29nbGUuQWRzLkdvb2dsZUFkcy5UZXN0c2IG",
-            "cHJvdG8z"));
+            "BwoFX2NpdHkiaQoPSGVsbG9TdGF0dXNFbnVtIlYKC0hlbGxvU3RhdHVzEg8K",
+            "C1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEg4KCklOX1BST0NFU1MQAhIM",
+            "CghERUNMSU5FRBADEgsKB0VYUElSRUQQBCI2Cg1IZWxsb1Jlc3BvbnNlEgwK",
+            "BG5hbWUYASABKAkSFwoPcGFydGlhbF9mYWlsdXJlGAIgASgJImwKEkhlbGxv",
+            "U3RyZWFtUmVxdWVzdBITCgtjdXN0b21lcl9pZBgBIAEoCRIMCgRuYW1lGAIg",
+            "ASgJEhAKA2FnZRgDIAEoA0gAiAEBEhkKB2FkZHJlc3MYBCABKAsyCC5BZGRy",
+            "ZXNzQgYKBF9hZ2UiUAoTSGVsbG9TdHJlYW1SZXNwb25zZRIMCgRuYW1lGAEg",
+            "ASgJEhcKD3BhcnRpYWxfZmFpbHVyZRgCIAEoCRISCgpyZXF1ZXN0X2lkGAMg",
+            "ASgJMnIKDEhlbGxvU2VydmljZRImCgVIZWxsbxINLkhlbGxvUmVxdWVzdBoO",
+            "LkhlbGxvUmVzcG9uc2USOgoLSGVsbG9TdHJlYW0SEy5IZWxsb1N0cmVhbVJl",
+            "cXVlc3QaFC5IZWxsb1N0cmVhbVJlc3BvbnNlMAFCHaoCGkdvb2dsZS5BZHMu",
+            "R29vZ2xlQWRzLlRlc3RzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.Tests.HelloRequest), global::Google.Ads.GoogleAds.Tests.HelloRequest.Parser, new[]{ "CustomerId", "Name", "Age", "Address" }, new[]{ "Age" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.Tests.Address), global::Google.Ads.GoogleAds.Tests.Address.Parser, new[]{ "Line1", "Line2", "City", "Zipcode", "State" }, new[]{ "Line2", "City" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.Tests.HelloStatusEnum), global::Google.Ads.GoogleAds.Tests.HelloStatusEnum.Parser, null, null, new[]{ typeof(global::Google.Ads.GoogleAds.Tests.HelloStatusEnum.Types.HelloStatus) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.Tests.HelloResponse), global::Google.Ads.GoogleAds.Tests.HelloResponse.Parser, new[]{ "Name", "PartialFailure" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.Tests.HelloStreamRequest), global::Google.Ads.GoogleAds.Tests.HelloStreamRequest.Parser, new[]{ "CustomerId", "Name", "Age", "Address" }, new[]{ "Age" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.Tests.HelloStreamResponse), global::Google.Ads.GoogleAds.Tests.HelloStreamResponse.Parser, new[]{ "Name", "PartialFailure", "RequestId" }, null, null, null, null)
@@ -738,6 +741,177 @@ namespace Google.Ads.GoogleAds.Tests {
 
   }
 
+  public sealed partial class HelloStatusEnum : pb::IMessage<HelloStatusEnum>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<HelloStatusEnum> _parser = new pb::MessageParser<HelloStatusEnum>(() => new HelloStatusEnum());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<HelloStatusEnum> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.Tests.HelloReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public HelloStatusEnum() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public HelloStatusEnum(HelloStatusEnum other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public HelloStatusEnum Clone() {
+      return new HelloStatusEnum(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as HelloStatusEnum);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(HelloStatusEnum other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(HelloStatusEnum other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the HelloStatusEnum message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static partial class Types {
+      /// <summary>
+      /// Possible access invitation status of a user
+      /// </summary>
+      public enum HelloStatus {
+        [pbr::OriginalName("UNSPECIFIED")] Unspecified = 0,
+        [pbr::OriginalName("UNKNOWN")] Unknown = 1,
+        [pbr::OriginalName("IN_PROCESS")] InProcess = 2,
+        [pbr::OriginalName("DECLINED")] Declined = 3,
+        [pbr::OriginalName("EXPIRED")] Expired = 4,
+      }
+
+    }
+    #endregion
+
+  }
+
   public sealed partial class HelloResponse : pb::IMessage<HelloResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -752,7 +926,7 @@ namespace Google.Ads.GoogleAds.Tests {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.Tests.HelloReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Google.Ads.GoogleAds.Tests.HelloReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -979,7 +1153,7 @@ namespace Google.Ads.GoogleAds.Tests {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.Tests.HelloReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Google.Ads.GoogleAds.Tests.HelloReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1302,7 +1476,7 @@ namespace Google.Ads.GoogleAds.Tests {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.Tests.HelloReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Google.Ads.GoogleAds.Tests.HelloReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
