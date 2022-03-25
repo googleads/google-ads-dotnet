@@ -38,6 +38,7 @@ using static Google.Ads.GoogleAds.V10.Enums.CampaignStatusEnum.Types;
 using static Google.Ads.GoogleAds.V10.Enums.CriterionTypeEnum.Types;
 using static Google.Ads.GoogleAds.V10.Enums.MediaTypeEnum.Types;
 using static Google.Ads.GoogleAds.V10.Services.SmartCampaignSuggestionInfo.Types;
+using Google.Ads.GoogleAds.Config;
 
 namespace Google.Ads.GoogleAds.Examples.V10
 {
@@ -155,110 +156,119 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="audienceId">The optional audience ID.</param>
         public void Run(GoogleAdsClient client, long customerId, long? audienceId)
         {
-            // [START add_performance_max_campaign_1]
-            GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V10.GoogleAdsService);
+            try
+            {
+                // [START add_performance_max_campaign_1]
+                GoogleAdsServiceClient googleAdsServiceClient =
+                    client.GetService(Services.V10.GoogleAdsService);
 
-            // Performance Max campaigns require that repeated assets such as headlines and
-            // descriptions be created before the campaign.
-            //
-            // For the list of required assets for a Performance Max campaign, see
-            // https://developers.google.com/google-ads/api/docs/performance-max/assets
-            //
-            // Create the headlines.
-            List<string> headlineAssetResourceNames = CreateMultipleTextAssets(
-                client,
-                customerId,
-                new[] {
+                // Performance Max campaigns require that repeated assets such as headlines and
+                // descriptions be created before the campaign.
+                //
+                // For the list of required assets for a Performance Max campaign, see
+                // https://developers.google.com/google-ads/api/docs/performance-max/assets
+                //
+                // Create the headlines.
+                List<string> headlineAssetResourceNames = CreateMultipleTextAssets(
+                    client,
+                    customerId,
+                    new[] {
                     "Travel",
                     "Travel Reviews",
                     "Book travel"
-                }
-            );
+                    }
+                );
 
-            // Create the descriptions.
-            List<string> descriptionAssetResourceNames = CreateMultipleTextAssets(
-                client,
-                customerId,
-                new[] {
+                // Create the descriptions.
+                List<string> descriptionAssetResourceNames = CreateMultipleTextAssets(
+                    client,
+                    customerId,
+                    new[] {
                     "Take to the air!",
                     "Fly to the sky!"
-                }
-            );
+                    }
+                );
 
-            string tempResourceNameCampaignBudget = ResourceNames.CampaignBudget(
-                customerId,
-                TEMPORARY_ID_BUDGET
-            );
+                string tempResourceNameCampaignBudget = ResourceNames.CampaignBudget(
+                    customerId,
+                    TEMPORARY_ID_BUDGET
+                );
 
-            // The below methods create and return MutateOperations that we later provide to the
-            // GoogleAdsService.Mutate method in order to create the entities in a single request.
-            // Since the entities for a Performance Max campaign are closely tied to one-another,
-            // it's considered a best practice to create them in a single Mutate request so they all
-            // complete successfully or fail entirely, leaving no orphaned entities.
-            //
-            // See: https://developers.google.com/google-ads/api/docs/mutating/overview
-            MutateOperation campaignBudgetOperation = CreateCampaignBudgetOperation(
-                client,
-                tempResourceNameCampaignBudget
-            );
+                // The below methods create and return MutateOperations that we later provide to
+                // the GoogleAdsService.Mutate method in order to create the entities in a single
+                // request. Since the entities for a Performance Max campaign are closely tied to
+                // one-another, it is considered a best practice to create them in a single Mutate
+                // request so they all complete successfully or fail entirely, leaving no
+                // orphaned entities.
+                //
+                // See: https://developers.google.com/google-ads/api/docs/mutating/overview
+                MutateOperation campaignBudgetOperation = CreateCampaignBudgetOperation(
+                    tempResourceNameCampaignBudget
+                );
 
-            string tempResourceNameCampaign = ResourceNames.Campaign(
-                customerId,
-                TEMPORARY_ID_CAMPAIGN
-            );
+                string tempResourceNameCampaign = ResourceNames.Campaign(
+                    customerId,
+                    TEMPORARY_ID_CAMPAIGN
+                );
 
-            MutateOperation performanceMaxCampaignOperation =
-                CreatePerformanceMaxCampaignOperation(
-                        client,
+                MutateOperation performanceMaxCampaignOperation =
+                    CreatePerformanceMaxCampaignOperation(
                         tempResourceNameCampaign,
                         tempResourceNameCampaignBudget
                     );
 
-            List<MutateOperation> campaignCriterionOperations =
-                CreateCampaignCriterionOperations(client, tempResourceNameCampaign);
+                List<MutateOperation> campaignCriterionOperations =
+                    CreateCampaignCriterionOperations(tempResourceNameCampaign);
 
-            List<MutateOperation> assetGroupOperations =
-                CreateAssetGroupOperations(
-                    client,
-                    tempResourceNameCampaign,
-                    ResourceNames.AssetGroup(customerId, TEMPORARY_ID_ASSET_GROUP),
-                    headlineAssetResourceNames,
-                    descriptionAssetResourceNames,
-                    new AssetGroupAssetTemporaryResourceNameGenerator(
+                List<MutateOperation> assetGroupOperations =
+                    CreateAssetGroupOperations(
+                        tempResourceNameCampaign,
+                        ResourceNames.AssetGroup(customerId, TEMPORARY_ID_ASSET_GROUP),
+                        headlineAssetResourceNames,
+                        descriptionAssetResourceNames,
+                        new AssetGroupAssetTemporaryResourceNameGenerator(
+                            customerId,
+                            TEMPORARY_ID_ASSET_GROUP
+                        ),
+                        client.Config
+                    );
+
+                List<MutateOperation> assetGroupSignalOperations =
+                    CreateAssetGroupSignalOperations(
                         customerId,
-                        TEMPORARY_ID_ASSET_GROUP
-                    )
-                );
+                        ResourceNames.AssetGroup(customerId, TEMPORARY_ID_ASSET_GROUP),
+                        audienceId
+                    );
 
-            List<MutateOperation> assetGroupSignalOperations =
-                CreateAssetGroupSignalOperations(
-                    client,
-                    customerId,
-                    ResourceNames.AssetGroup(customerId, TEMPORARY_ID_ASSET_GROUP),
-                    audienceId
-                );
+                MutateGoogleAdsRequest request = new MutateGoogleAdsRequest
+                {
+                    CustomerId = customerId.ToString()
+                };
 
-            MutateGoogleAdsRequest request = new MutateGoogleAdsRequest
+                // It's important to create these entities in this order because they depend on
+                // each other.
+                //
+                // Additionally, we take several lists of operations and flatten them into one
+                // large list.
+                request.MutateOperations.Add(campaignBudgetOperation);
+                request.MutateOperations.Add(performanceMaxCampaignOperation);
+                request.MutateOperations.AddRange(campaignCriterionOperations);
+                request.MutateOperations.AddRange(assetGroupOperations);
+                request.MutateOperations.AddRange(assetGroupSignalOperations);
+
+                MutateGoogleAdsResponse response = googleAdsServiceClient.Mutate(request);
+
+                PrintResponseDetails(response);
+                // [END add_performance_max_campaign_1]
+            }
+            catch (GoogleAdsException e)
             {
-                CustomerId = customerId.ToString()
-            };
-
-            // It's important to create these entities in this order because they depend on each
-            // other.
-            //
-            // Additionally, we take several lists of operations and flatten them into one large
-            // list.
-            request.MutateOperations.Add(campaignBudgetOperation);
-            request.MutateOperations.Add(performanceMaxCampaignOperation);
-            request.MutateOperations.AddRange(campaignCriterionOperations);
-            request.MutateOperations.AddRange(assetGroupOperations);
-            request.MutateOperations.AddRange(assetGroupSignalOperations);
-
-            MutateGoogleAdsResponse response = googleAdsServiceClient.Mutate(request);
-
-            PrintResponseDetails(response);
-            // [END add_performance_max_campaign_1]
+                Console.WriteLine("Failure:");
+                Console.WriteLine($"Message: {e.Message}");
+                Console.WriteLine($"Failure: {e.Failure}");
+                Console.WriteLine($"Request ID: {e.RequestId}");
+                throw;
+            }
         }
 
         // [START add_performance_max_campaign_2]
@@ -268,18 +278,11 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// A temporary ID will be assigned to this campaign budget so that it can be
         /// referenced by other objects being created in the same Mutate request.
         /// </summary>
-        /// <param name="client">The Google Ads API client.</param>
         /// <param name="budgetResourceName">The temporary resource name of the budget to
         /// create.</param>
         /// <returns>A MutateOperation that creates a CampaignBudget.</returns>
-        private MutateOperation CreateCampaignBudgetOperation(
-            GoogleAdsClient client,
-            string budgetResourceName)
+        private MutateOperation CreateCampaignBudgetOperation(string budgetResourceName)
         {
-            // Get the BudgetService.
-            CampaignBudgetServiceClient budgetService =
-              client.GetService(Services.V10.CampaignBudgetService);
-
             MutateOperation operation = new MutateOperation
             {
                 CampaignBudgetOperation = new CampaignBudgetOperation
@@ -308,12 +311,10 @@ namespace Google.Ads.GoogleAds.Examples.V10
 
         // [START add_performance_max_campaign_3]
         /// Creates a MutateOperation that creates a new Performance Max campaign.
-        /// <param name="client">The Google Ads API client.</param>
         /// <param name="campaignResourceName">The campaign resource name.</param>
         /// <param name="campaignBudgetResourceName">The campaign budget resource name.</param>
         /// <returns>A MutateOperations that will create this new campaign.</returns>
         private MutateOperation CreatePerformanceMaxCampaignOperation(
-            GoogleAdsClient client,
             string campaignResourceName,
             string campaignBudgetResourceName)
         {
@@ -379,11 +380,9 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <summary>
         /// Creates a list of MutateOperations that create new campaign criteria.
         /// </summary>
-        /// <param name="client">The Google Ads API client.</param>
         /// <param name="campaignResourceName">The campaign resource name.</param>
         /// <returns>A list of MutateOperations that create new campaign criteria.</returns>
         private List<MutateOperation> CreateCampaignCriterionOperations(
-            GoogleAdsClient client,
             string campaignResourceName)
         {
             List<MutateOperation> operations = new List<MutateOperation>();
@@ -464,6 +463,10 @@ namespace Google.Ads.GoogleAds.Examples.V10
             long customerId,
             string[] texts)
         {
+            // Get the GoogleAdsService.
+            GoogleAdsServiceClient googleAdsServiceClient =
+                client.GetService(Services.V10.GoogleAdsService);
+
             MutateGoogleAdsRequest request = new MutateGoogleAdsRequest() {
                 CustomerId = customerId.ToString()
             };
@@ -483,10 +486,6 @@ namespace Google.Ads.GoogleAds.Examples.V10
                     }
                 );
             }
-
-            // Get the GoogleAdsService.
-            GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V10.GoogleAdsService);
 
             // Send the operations in a single Mutate request.
             MutateGoogleAdsResponse response = googleAdsServiceClient.Mutate(request);
@@ -509,21 +508,21 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <summary>
         /// Creates a list of MutateOperations that create a new asset_group.
         /// </summary>
-        /// <param name="client">The Google Ads API client.</param>
         /// <param name="campaignResourceName">The campaign resource name.</param>
         /// <param name="assetGroupResourceName">The asset group resource name.</param>
         /// <param name="headlineAssetResourceNames">The headline asset resource names.</param>
         /// <param name="descriptionAssetResourceNames">The description asset resource
         /// names.</param>
         /// <param name="resourceNameGenerator">A generator for unique temporary ID's.</param>
+        /// <param name="config">The Google Ads config.</param>
         /// <returns>A list of MutateOperations that create the new asset group.</returns>
         private List<MutateOperation> CreateAssetGroupOperations(
-            GoogleAdsClient client,
             string campaignResourceName,
             string assetGroupResourceName,
             List<string> headlineAssetResourceNames,
             List<string> descriptionAssetResourceNames,
-            AssetGroupAssetTemporaryResourceNameGenerator resourceNameGenerator)
+            AssetGroupAssetTemporaryResourceNameGenerator resourceNameGenerator,
+            GoogleAdsConfig config)
         {
             List<MutateOperation> operations = new List<MutateOperation>();
 
@@ -534,7 +533,6 @@ namespace Google.Ads.GoogleAds.Examples.V10
                         Create = new AssetGroup() {
                             Name = "Performance Max asset group #" +
                                 ExampleUtilities.GetRandomString(),
-
                             Campaign = campaignResourceName,
                             FinalUrls = { "http://www.example.com" },
                             FinalMobileUrls = { "http://www.example.com" },
@@ -594,7 +592,6 @@ namespace Google.Ads.GoogleAds.Examples.V10
             // Create and link the long headline text asset.
             operations.AddRange(
                 CreateAndLinkTextAsset(
-                    client,
                     assetGroupResourceName,
                     resourceNameGenerator.Next(),
                     "Travel the World",
@@ -605,7 +602,6 @@ namespace Google.Ads.GoogleAds.Examples.V10
             // Create and link the business name text asset.
             operations.AddRange(
                 CreateAndLinkTextAsset(
-                    client,
                     assetGroupResourceName,
                     resourceNameGenerator.Next(),
                     "Interplanetary Cruises",
@@ -618,36 +614,36 @@ namespace Google.Ads.GoogleAds.Examples.V10
             // Create and link the Logo Asset.
             operations.AddRange(
                 CreateAndLinkImageAsset(
-                    client,
                     assetGroupResourceName,
                     resourceNameGenerator.Next(),
                     "https://gaagl.page.link/bjYi",
                     AssetFieldType.Logo,
-                    "Marketing Logo"
+                    "Marketing Logo",
+                    config
                 )
             );
 
             // Create and link the Marketing Image Asset.
             operations.AddRange(
                 CreateAndLinkImageAsset(
-                    client,
                     assetGroupResourceName,
                     resourceNameGenerator.Next(),
                     "https://gaagl.page.link/Eit5",
                     AssetFieldType.MarketingImage,
-                    "Marketing Image"
+                    "Marketing Image",
+                    config
                 )
             );
 
             // Create and link the Square Marketing Image Asset.
             operations.AddRange(
                 CreateAndLinkImageAsset(
-                    client,
                     assetGroupResourceName,
                     resourceNameGenerator.Next(),
                     "https://gaagl.page.link/bjYi",
                     AssetFieldType.SquareMarketingImage,
-                    "Square Marketing Image"
+                    "Square Marketing Image",
+                    config
                 )
             );
 
@@ -659,7 +655,6 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <summary>
         /// Creates a list of MutateOperations that create a new linked text asset.
         /// </summary>
-        /// <param name="client">The Google Ads API client.</param>
         /// <param name="assetGroupResourceName">The resource name of the asset group to be
         /// created.</param>
         /// <param name="assetResourceName">The resource name of the text asset to be
@@ -668,7 +663,6 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="fieldType">The field type of the asset to be created.</param>
         /// <returns>A list of MutateOperations that create the new linked text asset.</returns>
         private List<MutateOperation> CreateAndLinkTextAsset(
-            GoogleAdsClient client,
             string assetGroupResourceName,
             string assetResourceName,
             string text,
@@ -711,7 +705,6 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <summary>
         /// Creates a list of MutateOperations that create a new linked image asset.
         /// </summary>
-        /// <param name="client">The Google Ads API client.</param>
         /// <param name="assetGroupResourceName">The resource name of the asset group to be
         /// created.</param>
         /// <param name="assetResourceName">The resource name of the text asset to be
@@ -719,14 +712,14 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="url">The url of the image to be retrieved and put into an asset.</param>
         /// <param name="fieldType">The field type of the asset to be created.</param>
         /// <param name="assetName">The asset name.</param>
+        /// <param name="config">The Google Ads Config.</param>
         /// <returns>A list of MutateOperations that create a new linked image asset.</returns>
         private List<MutateOperation> CreateAndLinkImageAsset(
-            GoogleAdsClient client,
             string assetGroupResourceName,
             string assetResourceName,
             string url,
             AssetFieldType fieldType,
-            string assetName)
+            string assetName, GoogleAdsConfig config)
         {
             List<MutateOperation> operations = new List<MutateOperation>();
 
@@ -739,7 +732,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
                             ImageAsset = new ImageAsset() {
                                 Data =
                                     ByteString.CopyFrom(
-                                        MediaUtilities.GetAssetDataFromUrl(url, client.Config)
+                                        MediaUtilities.GetAssetDataFromUrl(url, config)
                                     )
                             },
                             // Provide a unique friendly name to identify your asset.
@@ -772,14 +765,12 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <summary>
         /// Creates a list of MutateOperations that may create AssetGroupSignals
         /// </summary>
-        /// <param name="client">The Google Ads API client.</param>
         /// <param name="customerId">The customer ID.</param>
         /// <param name="assetGroupResourceName">The resource name of the asset group to be
         /// created.</param>
         /// <param name="audienceId">The optional audience ID.</param>
         /// <returns>A list of MutateOperations that create may create AssetGroupSignals.</returns>
         private List<MutateOperation> CreateAssetGroupSignalOperations(
-            GoogleAdsClient client,
             long customerId,
             string assetGroupResourceName,
             long? audienceId)
@@ -824,12 +815,11 @@ namespace Google.Ads.GoogleAds.Examples.V10
             // in the request.
             foreach (MutateOperationResponse operationResponse in response.MutateOperationResponses)
             {
-                string resourceName = "<not found>";
-
                 string entityName = operationResponse.ResponseCase.ToString();
                 // Trim the substring "Result" from the end of the entity name.
                 entityName = entityName.Remove(entityName.Length - 6);
 
+                string resourceName;
                 switch (operationResponse.ResponseCase)
                 {
                     case MutateOperationResponse.ResponseOneofCase.AdGroupResult:
@@ -849,6 +839,18 @@ namespace Google.Ads.GoogleAds.Examples.V10
                         break;
                     case MutateOperationResponse.ResponseOneofCase.SmartCampaignSettingResult:
                         resourceName = operationResponse.SmartCampaignSettingResult.ResourceName;
+                        break;
+                    case MutateOperationResponse.ResponseOneofCase.AssetResult:
+                        resourceName = operationResponse.AssetResult.ResourceName;
+                        break;
+                    case MutateOperationResponse.ResponseOneofCase.AssetGroupResult:
+                        resourceName = operationResponse.AssetGroupResult.ResourceName;
+                        break;
+                    case MutateOperationResponse.ResponseOneofCase.AssetGroupAssetResult:
+                        resourceName = operationResponse.AssetGroupAssetResult.ResourceName;
+                        break;
+                    default:
+                        resourceName = "<not found>";
                         break;
                 }
 
