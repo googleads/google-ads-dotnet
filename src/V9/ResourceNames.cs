@@ -12,7 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using Google.Ads.GoogleAds.Util;
+using Google.Protobuf.Reflection;
 using System;
+using System.Linq;
 using System.Text;
 using static Google.Ads.GoogleAds.V9.Enums.AssetFieldTypeEnum.Types;
 using static Google.Ads.GoogleAds.V9.Enums.ConversionActionCategoryEnum.Types;
@@ -73,7 +76,7 @@ namespace Google.Ads.GoogleAds.V9.Errors
             AssetFieldType fieldType)
         {
             return $"customers/{customerId}/adGroupAssets/{adGroupId}~{assetId}~" +
-                $"{fieldType.ToString().ToUpper()}";
+                $"{ProtobufUtilities.GetOriginalEnumFieldName(fieldType)}";
         }
 
         public static string AdGroupAudienceView(long customerId, long adGroupId, long criterionId)
@@ -110,9 +113,10 @@ namespace Google.Ads.GoogleAds.V9.Errors
             DateTime startDate, DateTime endDate)
         {
             return $"customers/{customerId}/adGroupCriterionSimulations/{adGroupId}~" +
-                $"{criterionId}~{type.ToString().ToUpper()}~" +
-                $"{modificationMethod.ToString().ToUpper()}~{startDate.ToString("yyyy-MM-dd")}" +
-                $"~{endDate.ToString("yyyy-MM-dd")}";
+                $"{criterionId}~{ProtobufUtilities.GetOriginalEnumFieldName(type)}~" +
+                $"{ProtobufUtilities.GetOriginalEnumFieldName(modificationMethod)}~" +
+                $"{startDate:yyyy-MM-dd}" +
+                $"~{endDate:yyyy-MM-dd}";
         }
 
         public static string AdGroupCustomizer(long customerId, long adGroupId,
@@ -126,7 +130,7 @@ namespace Google.Ads.GoogleAds.V9.Errors
             ExtensionType extensionType)
         {
             return $"customers/{customerId}/adGroupExtensionSettings/{adGroupId}~" +
-                $"{extensionType.ToString().ToUpper()}";
+                $"{ProtobufUtilities.GetOriginalEnumFieldName(extensionType)}";
         }
 
         public static string AdGroupFeed(long customerId, long adGroupId, long feedId)
@@ -144,8 +148,9 @@ namespace Google.Ads.GoogleAds.V9.Errors
             DateTime startDate, DateTime endDate)
         {
             return $"customers/{customerId}/adGroupSimulations/{adGroupId}~" +
-                $"{type.ToString().ToUpper()}~{modificationMethod.ToString().ToUpper()}~" +
-                $"{startDate.ToString("yyyy-MM-dd")}~{endDate.ToString("yyyy-MM-dd")}";
+                $"{ProtobufUtilities.GetOriginalEnumFieldName(type)}~" +
+                $"{ProtobufUtilities.GetOriginalEnumFieldName(modificationMethod)}~" +
+                $"{startDate:yyyy-MM-dd}~{endDate:yyyy-MM-dd}";
         }
 
         public static string AdParameter(long customerId, long adGroupId, long criterionId,
@@ -172,7 +177,8 @@ namespace Google.Ads.GoogleAds.V9.Errors
 
         public static string AssetFieldTypeView(long customerId, AssetFieldType fieldType)
         {
-            return $"customers/{customerId}/assetFieldTypeViews/{fieldType.ToString().ToUpper()}";
+            return $"customers/{customerId}/assetFieldTypeViews/" +
+                $"{ProtobufUtilities.GetOriginalEnumFieldName(fieldType)}";
         }
 
         public static string AssetGroup(long customerId, long assetGroupId)
@@ -184,7 +190,7 @@ namespace Google.Ads.GoogleAds.V9.Errors
             AssetFieldType fieldType)
         {
             return $"customers/{customerId}/assetGroupAssets/{assetGroupId}~{assetId}~" +
-                $"{fieldType.ToString().ToUpper()}";
+                $"{ProtobufUtilities.GetOriginalEnumFieldName(fieldType)}";
         }
 
         public static string AssetGroupListingGroupFilter(long customerId, long assetGroupId,
@@ -236,8 +242,9 @@ namespace Google.Ads.GoogleAds.V9.Errors
             DateTime startDate, DateTime endDate)
         {
             return $"customers/{customerId}/biddingStrategySimulations/{biddingStrategyId}~" +
-                $"{type.ToString().ToUpper()}~{modificationMethod.ToString().ToUpper()}~" +
-                $"{startDate.ToString("yyyy-MM-dd")}~{endDate.ToString("yyyy-MM-dd")}";
+                $"{ProtobufUtilities.GetOriginalEnumFieldName(type)}~" +
+                $"{ProtobufUtilities.GetOriginalEnumFieldName(modificationMethod)}~" +
+                $"{startDate:yyyy-MM-dd}~{endDate:yyyy-MM-dd}";
         }
 
         public static string BillingSetup(long customerId, long billingSetupId)
@@ -281,7 +288,8 @@ namespace Google.Ads.GoogleAds.V9.Errors
             ConversionActionCategory category, ConversionOrigin origin)
         {
             return $"customers/{customerId}/campaignConversionGoals/{campaignId}~" +
-                $"{category.ToString().ToUpper()}~{origin.ToString().ToUpper()}";
+                $"{ProtobufUtilities.GetOriginalEnumFieldName(category)}~" +
+                $"{ProtobufUtilities.GetOriginalEnumFieldName(origin)}";
         }
 
         public static string CampaignCriteria(long customerId, long campaignId, long criterionId)
@@ -294,9 +302,9 @@ namespace Google.Ads.GoogleAds.V9.Errors
             DateTime startDate, DateTime endDate)
         {
             return $"customers/{customerId}/campaignCriterionSimulations/{campaignId}~" +
-                $"{criterionId}~{type.ToString().ToUpper()}~" +
-                $"{modificationMethod.ToString().ToUpper()}~{startDate.ToString("yyyy-MM-dd")}~" +
-                $"{endDate.ToString("yyyy-MM-dd")}";
+                $"{criterionId}~{ProtobufUtilities.GetOriginalEnumFieldName(type)}~" +
+                $"{ProtobufUtilities.GetOriginalEnumFieldName(modificationMethod)}~" +
+                $"{startDate:yyyy-MM-dd}~{endDate:yyyy-MM-dd}";
         }
 
         public static string CampaignCustomizer(long customerId, long campaignId,
@@ -320,7 +328,7 @@ namespace Google.Ads.GoogleAds.V9.Errors
             ExtensionType extensionType)
         {
             return $"customers/{customerId}/campaignExtensionSettings/{campaignId}~" +
-                $"{extensionType.ToString().ToUpper()}";
+                $"{ProtobufUtilities.GetOriginalEnumFieldName(extensionType)}";
         }
 
         public static string CampaignFeed(long customerId, long campaignId, long feedId)
@@ -343,8 +351,9 @@ namespace Google.Ads.GoogleAds.V9.Errors
             DateTime startDate, DateTime endDate)
         {
             return $"customers/{customerId}/campaignSimulations/{campaignId}~" +
-                $"{type.ToString().ToUpper()}~{modificationMethod.ToString().ToUpper()}~" +
-                $"{startDate.ToString("yyyy-MM-dd")}~{endDate.ToString("yyyy-MM-dd")}";
+                $"{ProtobufUtilities.GetOriginalEnumFieldName(type)}~" +
+                $"{ProtobufUtilities.GetOriginalEnumFieldName(modificationMethod)}~" +
+                $"{startDate:yyyy-MM-dd}~{endDate:yyyy-MM-dd}";
         }
 
         public static string CarrierConstant(long criterionId)
@@ -359,7 +368,7 @@ namespace Google.Ads.GoogleAds.V9.Errors
 
         public static string ClickView(long customerId, DateTime date, string gclid)
         {
-            return $"customers/{customerId}/clickViews/{date.ToString("yyyy-MM-dd")}~{gclid}";
+            return $"customers/{customerId}/clickViews/{date:yyyy-MM-dd}~{gclid}";
         }
 
         public static string CombinedAudience(long customerId, long combinedAudienceId)
@@ -412,7 +421,7 @@ namespace Google.Ads.GoogleAds.V9.Errors
         public static string CustomerAsset(long customerId, long assetId, AssetFieldType fieldType)
         {
             return $"customers/{customerId}/customerAssets/{assetId}~" +
-                $"{fieldType.ToString().ToUpper()}";
+                $"{ProtobufUtilities.GetOriginalEnumFieldName(fieldType)}";
         }
 
         public static string CustomerClient(long customerId, long clientCustomerId)
@@ -431,7 +440,8 @@ namespace Google.Ads.GoogleAds.V9.Errors
             ConversionActionCategory category, ConversionOrigin origin)
         {
             return $"customers/{customerId}/customerConversionGoals/" +
-                $"{category.ToString().ToUpper()}~{origin.ToString().ToUpper()}";
+                $"{ProtobufUtilities.GetOriginalEnumFieldName(category)}~" +
+                $"{ProtobufUtilities.GetOriginalEnumFieldName(origin)}";
         }
 
         public static string CustomerCustomizer(long customerId, long customizerAttributeId)
@@ -442,7 +452,7 @@ namespace Google.Ads.GoogleAds.V9.Errors
         public static string CustomerExtensionSetting(long customerId, ExtensionType extensionType)
         {
             return $"customers/{customerId}/customerExtensionSettings/" +
-                $"{extensionType.ToString().ToUpper()}";
+                $"{ProtobufUtilities.GetOriginalEnumFieldName(extensionType)}";
         }
 
         public static string CustomerFeed(long customerId, long feedId)
@@ -558,7 +568,8 @@ namespace Google.Ads.GoogleAds.V9.Errors
             FeedItemTargetType feedItemTargetType, long feedItemTargetId)
         {
             return $"customers/{customerId}/feedItemTargets/{feedId}~{feedItemId}~" +
-                $"{feedItemTargetType.ToString().ToUpper()}~{feedItemTargetId}";
+                $"{ProtobufUtilities.GetOriginalEnumFieldName(feedItemTargetType)}~" +
+                $"{feedItemTargetId}";
         }
 
         public static string FeedMapping(long customerId, long feedId, long feedMappingId)
@@ -569,7 +580,7 @@ namespace Google.Ads.GoogleAds.V9.Errors
         public static string FeedPlaceholderView(long customerId, PlaceholderType placeholderType)
         {
             return $"customers/{customerId}/feedPlaceholderViews/" +
-                $"{placeholderType.ToString().ToUpper()}";
+                $"{ProtobufUtilities.GetOriginalEnumFieldName(placeholderType)}";
         }
 
         public static string GenderView(long customerId, long adGroupId, long criterionId)
@@ -747,7 +758,7 @@ namespace Google.Ads.GoogleAds.V9.Errors
             ProductBiddingCategoryLevel level, long id)
         {
             return $"productBiddingCategoryConstants/{country_code}~" +
-                $"{level.ToString().ToUpper()}~{id}";
+                $"{ProtobufUtilities.GetOriginalEnumFieldName(level)}~{id}";
         }
 
         public static string ProductGroupView(long customerId, long adGroupId, long criterionId)
@@ -766,10 +777,10 @@ namespace Google.Ads.GoogleAds.V9.Errors
         }
 
         public static string SearchTermView(long customerId, long campaignId, long adGroupId,
-            string searchterm)
+            string searchTerm)
         {
             return $"customers/{customerId}/searchTermViews/{campaignId}~" +
-                $"{adGroupId}_{Base64Encode(searchterm)}";
+                $"{adGroupId}_{Base64Encode(searchTerm)}";
         }
 
         public static string SharedCriterion(long customerId, long sharedSetId, long criterionId)
