@@ -35,7 +35,7 @@ namespace Google.Ads.GoogleAds.Util
             {
                 OriginalNameAttribute originalName = (OriginalNameAttribute)
                     fi.GetCustomAttributes(typeof(OriginalNameAttribute),
-                    false).FirstOrDefault();
+                        false).FirstOrDefault();
                 if (originalName != null)
                 {
                     return originalName.Name;
