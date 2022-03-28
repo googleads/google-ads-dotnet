@@ -69,8 +69,8 @@ namespace Google.Ads.GoogleAds.Examples.V10
             /// <summary>
             /// The Google Ads customizer attribute name ID.
             /// </summary>
-            [Option("customizerAttributeName", Required = true, HelpText =
-                "The Google Ads customizer attribute name.")]
+            [Option("customizerAttributeName", Required = false, HelpText =
+                "The Google Ads customizer attribute name.", Default = CUSTOMIZER_ATTRIBUTE_NAME)]
             public string CustomizerAttributeName { get; set; }
         }
 
