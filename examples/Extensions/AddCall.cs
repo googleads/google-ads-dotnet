@@ -77,7 +77,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             /// </summary>
             [Option("conversionActionId", Required = false, HelpText =
                 "The conversion action ID.")]
-            public long ConversionActionId { get; set; }
+            public long? ConversionActionId { get; set; }
         }
 
         /// <summary>
