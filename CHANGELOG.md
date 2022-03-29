@@ -34,26 +34,26 @@ web application example. Fix was contributed by Jhon Samamé
   - Remarketing/SetUpRemarketing
 - Renamed code examples
   - Extensions/AddGoogleMyBusinessLocationExtensions => Extensions/AddGoogleMyBusinessLocationExtensions  
-Marked multiple issues as fixed.
- - https://github.com/googleads/google-ads-dotnet/issues/351
- - https://github.com/googleads/google-ads-dotnet/issues/350
- - https://github.com/googleads/google-ads-dotnet/issues/349
- - https://github.com/googleads/google-ads-dotnet/issues/347
- - https://github.com/googleads/google-ads-dotnet/issues/346
- - https://github.com/googleads/google-ads-dotnet/issues/344
- - https://github.com/googleads/google-ads-dotnet/issues/343
- - https://github.com/googleads/google-ads-dotnet/issues/342
- - https://github.com/googleads/google-ads-dotnet/issues/341
- - https://github.com/googleads/google-ads-dotnet/issues/340
- - https://github.com/googleads/google-ads-dotnet/issues/339
- - https://github.com/googleads/google-ads-dotnet/issues/337
- - https://github.com/googleads/google-ads-dotnet/issues/336
- - https://github.com/googleads/google-ads-dotnet/issues/335
- - https://github.com/googleads/google-ads-dotnet/issues/334
- - https://github.com/googleads/google-ads-dotnet/issues/333
- - https://github.com/googleads/google-ads-dotnet/issues/331
- - https://github.com/googleads/google-ads-dotnet/issues/327
- - https://github.com/googleads/google-ads-dotnet/issues/283
+- Marked multiple issues as fixed.
+  - https://github.com/googleads/google-ads-dotnet/issues/351
+  - https://github.com/googleads/google-ads-dotnet/issues/350
+  - https://github.com/googleads/google-ads-dotnet/issues/349
+  - https://github.com/googleads/google-ads-dotnet/issues/347
+  - https://github.com/googleads/google-ads-dotnet/issues/346
+  - https://github.com/googleads/google-ads-dotnet/issues/344
+  - https://github.com/googleads/google-ads-dotnet/issues/343
+  - https://github.com/googleads/google-ads-dotnet/issues/342
+  - https://github.com/googleads/google-ads-dotnet/issues/341
+  - https://github.com/googleads/google-ads-dotnet/issues/340
+  - https://github.com/googleads/google-ads-dotnet/issues/339
+  - https://github.com/googleads/google-ads-dotnet/issues/337
+  - https://github.com/googleads/google-ads-dotnet/issues/336
+  - https://github.com/googleads/google-ads-dotnet/issues/335
+  - https://github.com/googleads/google-ads-dotnet/issues/334
+  - https://github.com/googleads/google-ads-dotnet/issues/333
+  - https://github.com/googleads/google-ads-dotnet/issues/331
+  - https://github.com/googleads/google-ads-dotnet/issues/327
+  - https://github.com/googleads/google-ads-dotnet/issues/283
 - Refactored the logging code to introduce an interface that handles API-specific logging logic.
 - Regenerated stubs for v8 and v9 of the Google Ads API to pick up the correct copyright year.
 - Fixed some build warnings for .NET472.
