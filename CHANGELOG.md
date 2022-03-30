@@ -1,3 +1,29 @@
+11.0.1
+======
+
+- Fixed some issues with code examples.
+  - Remarketing/AddDynamicRemarketingAsset.cs
+  - AdvancedOperations/AddResponsiveSearchAdWithAdCustomizer.cs
+  - AdvancedOperations/AddCallAd.cs
+  - Extensions/AddCall.cs
+  - AdvancedOperations/AddPerformanceMaxCampaign.cs
+  - ShoppingAds/AddPerformanceMaxRetailCampaign.cs
+- Fixed an issue with how enums are used when constructing resource names.
+- Updated code examples.
+  - Remarketing/UploadOfflineConversion.cs by adding support for GBRAID and WBRAID.
+  - BasicOperations/AddCampaigns.cs example to show Display Expansion for Search Campaigns. 
+- Add new code examples.
+  - Misc/NavigateSearchResultPagesCachingToken.cs
+- Fixed issues related to logging.
+  -  Do not skip logging if an empty response is returned by the server for a streaming call.
+  Fixes https://github.com/googleads/google-ads-dotnet/issues/359 
+- Added a null check to make logging more robust. 
+- Fix customerId and requestId in summary logs. Fixes https://github.com/googleads/google-ads-dotnet/issues/364 
+- Do not set a default value of CancellationToken in GoogleAdsService.SearchStreamAsync call so
+ users can use their own CancellationToken. See 
+ https://developers.google.com/google-ads/api/docs/client-libs/dotnet/getting-started#canceling_async_methods
+ for an usage example. Fixes https://github.com/googleads/google-ads-dotnet/issues/360
+
 11.0.0
 ======
 - Added support for v10 of the Google Ads API.
