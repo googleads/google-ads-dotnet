@@ -154,7 +154,9 @@ namespace Google.Ads.GoogleAds.Examples.V10
             };
             Asset asset = new Asset()
             {
-                DynamicEducationAsset = educationAsset
+                DynamicEducationAsset = educationAsset,
+                // The final_urls list must not be empty
+                FinalUrls = { "https://www.example.com" }
             };
 
             // Creates an operation to add the asset.
