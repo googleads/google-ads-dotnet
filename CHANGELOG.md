@@ -22,7 +22,7 @@
 - Do not set a default value of CancellationToken in GoogleAdsService.SearchStreamAsync call so
  users can use their own CancellationToken. See 
  https://developers.google.com/google-ads/api/docs/client-libs/dotnet/getting-started#canceling_async_methods
- for an usage example. Fixes https://github.com/googleads/google-ads-dotnet/issues/360
+ for a usage example. Fixes https://github.com/googleads/google-ads-dotnet/issues/360
 
 11.0.0
 ======
