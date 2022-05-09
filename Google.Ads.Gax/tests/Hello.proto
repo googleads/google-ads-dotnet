@@ -1,0 +1,99 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "Google.Ads.Gax.Tests";
+
+message HelloRequest {
+  string customer_id = 1;
+  string name = 2;
+  optional int64 age = 3;
+  Address address = 4;
+}
+
+message Address {
+  string line1 = 1;
+  optional string line2 = 2;
+  optional string city = 3;
+  int64 zipcode = 4;
+  string state = 5;
+}
+
+message HelloFailure {
+  repeated HelloError errors = 1;
+  string request_id = 2;
+}
+
+message HelloError {
+  HelloErrorCode error_code = 1;
+  string message = 2;
+  string trigger = 3;
+  HelloErrorLocation location = 4;
+  HelloErrorDetails details = 5;
+}
+
+message HelloErrorCode {
+  oneof error_code {
+    HelloRequestErrorEnum.HelloRequestError request_error = 1;
+    HelloResponseErrorEnum.HelloResponseError response_error = 2;
+  }
+}
+
+message HelloErrorLocation {
+  message HelloFieldPathElement {
+    string field_name = 1;
+    optional int32 index = 3;
+  }
+  repeated HelloFieldPathElement field_path_elements = 2;
+}
+
+message HelloErrorDetails {
+  string unpublished_error_code = 1;
+}
+
+message HelloRequestErrorEnum {
+  enum HelloRequestError {
+    UNSPECIFIED = 0;
+    UNKNOWN = 1;
+    RESOURCE_NAME_MISSING = 3;
+  }
+}
+
+message HelloResponseErrorEnum {
+  enum HelloResponseError {
+    UNSPECIFIED = 0;
+    UNKNOWN = 1;
+    RESOURCE_NAME_MISMATCH = 3;
+  }
+}
+
+message HelloStatusEnum {
+  enum HelloStatus {
+    UNSPECIFIED = 0;
+    UNKNOWN = 1;
+    IN_PROCESS = 2;
+    DECLINED = 3;
+    EXPIRED = 4;
+  }
+}
+
+message HelloResponse {
+  string name = 1;
+  string partial_failure = 2;
+}
+
+message HelloStreamRequest {
+  string customer_id = 1;
+  string name = 2;
+  optional int64 age = 3;
+  Address address = 4;
+}
+
+message HelloStreamResponse {
+  string name = 1;
+  string partial_failure = 2;
+  string request_id = 3;
+}
+
+service HelloService {
+  rpc Hello (HelloRequest) returns (HelloResponse);
+  rpc HelloStream (HelloStreamRequest) returns (stream HelloStreamResponse);
+}

@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <PropertyGroup>
+    <TargetFrameworks>net5.0;netcoreapp3.1</TargetFrameworks>
+    <RootNamespace>Google.Ads.Gax.Tests</RootNamespace>
+    <AssemblyName>Google.Ads.Gax.Tests</AssemblyName>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <SignAssembly>true</SignAssembly>
+    <IsTestProject>true</IsTestProject>
+    <AssemblyOriginatorKeyFile>..\src\GoogleAds.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Google.Apis.Auth" Version="1.55.0" />
+    <PackageReference Include="JunitXml.TestLogger" Version="3.0.98" />
+    <PackageReference Include="Moq" Version="4.16.1" />
+    <PackageReference Include="NUnit" Version="3.13.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+    <ProjectReference Include="..\src\Google.Ads.Gax.csproj" />
+    <EmbeddedResource Include="Util\field_mask_tests.json" />
+  </ItemGroup>
+</Project>
