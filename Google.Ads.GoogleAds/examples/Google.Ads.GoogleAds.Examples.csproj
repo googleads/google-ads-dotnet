@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <PropertyGroup>
+    <TargetFrameworks>net472;netcoreapp3.1;net5.0</TargetFrameworks>
+    <RootNamespace>Google.Ads.GoogleAds.Examples</RootNamespace>
+    <AssemblyName>Google.Ads.GoogleAds.Examples</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <StartupObject>Google.Ads.GoogleAds.Examples.Program</StartupObject>
+    <DebugType>pdbonly</DebugType>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\src\GoogleAds.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Authentication\**" />
+    <Compile Remove="Migration\**" />
+    <EmbeddedResource Remove="Authentication\**" />
+    <EmbeddedResource Remove="Migration\**" />
+    <None Remove="Authentication\**" />
+    <None Remove="Migration\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Migration\CampaignReportToCsv.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Google.Ads.Common" Version="9.5.1" />
+    <PackageReference Condition="!Exists('..\src\Google.Ads.GoogleAds.csproj')" Include="Google.Ads.GoogleAds" Version="12.0.0" />
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)'=='net472'">
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.8.0" />
+  </ItemGroup>
+  <ItemGroup>
+   <!-- Include local projects over nuget dependencies if available -->
+    <ProjectReference Condition="Exists('..\src\Google.Ads.GoogleAds.csproj')" Include="..\src\Google.Ads.GoogleAds.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Condition="Exists('..\src\App.config')" Include="..\src\App.config">
+      <Link>App.config</Link>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,3 +1,35 @@
+12.0.0
+======
+- The project was split into two assemblies -- Google.Ads.Gax and Google.Ads.GoogleAds. This was
+  done to extract common functionality so that we can use it for other Ads APIs. The main difference
+  from a usage perspective is that several utility classes like `FieldMasks`, `MediaUtilities`,
+  etc. moved from the `Google.Ads.GoogleAds` namespace to `Google.Ads.Gax` namespace. As a result,
+  you need to fix the namespaces in your `using` statements. Other than that, the library remains
+  unchanged (e.g. there were no additional changes to any of the code examples as a result of this
+  refactoring).
+  - If you use the Nuget package, you will continue to add reference to `Google.Ads.GoogleAds`.
+    There is no need to add dependency to `Google.Ads.Gax` package; it will be downloaded as a
+    transitive dependency.
+  - If you work with the repo code directly, then the code has been split into two top-level
+    folders, namely `Google.Ads.Gax` and `Google.Ads.GoogleAds`. The `Google.Ads.GoogleAds.sln`
+    has moved to the `Google.Ads.GoogleAds` folder as a result. `Google.Ads.GoogleAds.sln` still
+    remains the main Visual Studio solution file for working with the entire repo.
+- Updated some code examples.
+  - Made polling consistent across libs in Remarketing/AddCustomerMatchUserList.cs
+  - Updated AccountManagement/GetChangeDetails.cs to add newly supported ChangeEventResourceType.
+  - Renamed AuthenticateInDesktopApplication example to GenerateUserCredentials.
+  - Renamed AuthenticateInWebApplication to AuthenticateInAspNetCoreApplication.
+- Regenerated stubs for versions v9 and v10 of the Google Ads API library. The library now supports
+  higher timeout changes that were rolled out to some methods in the Google Ads API.
+- Added support for version v10_1 of the Google Ads API.
+- Removed support for version v8 of the Google Ads API. See
+  https://developers.google.com/google-ads/api/docs/sunset-dates for migration guides for newer
+  versions.
+- Added support for tracking protobuf library version in request headers.
+- Made the services disposable. Fixes https://github.com/googleads/google-ads-dotnet/issues/355. The
+  underlying issue and workaround was suggested by
+  Claude Beauchemin(https://github.com/cbeauchemin).
+
 11.0.1
 ======
 
@@ -11,16 +43,16 @@
 - Fixed an issue with how enums are used when constructing resource names.
 - Updated code examples.
   - Remarketing/UploadOfflineConversion.cs by adding support for GBRAID and WBRAID.
-  - BasicOperations/AddCampaigns.cs example to show Display Expansion for Search Campaigns. 
+  - BasicOperations/AddCampaigns.cs example to show Display Expansion for Search Campaigns.
 - Add new code examples.
   - Misc/NavigateSearchResultPagesCachingToken.cs
 - Fixed issues related to logging.
   -  Do not skip logging if an empty response is returned by the server for a streaming call.
-  Fixes https://github.com/googleads/google-ads-dotnet/issues/359 
-- Added a null check to make logging more robust. 
-- Fix customerId and requestId in summary logs. Fixes https://github.com/googleads/google-ads-dotnet/issues/364 
+  Fixes https://github.com/googleads/google-ads-dotnet/issues/359
+- Added a null check to make logging more robust.
+- Fix customerId and requestId in summary logs. Fixes https://github.com/googleads/google-ads-dotnet/issues/364
 - Do not set a default value of CancellationToken in GoogleAdsService.SearchStreamAsync call so
- users can use their own CancellationToken. See 
+ users can use their own CancellationToken. See
  https://developers.google.com/google-ads/api/docs/client-libs/dotnet/getting-started#canceling_async_methods
  for a usage example. Fixes https://github.com/googleads/google-ads-dotnet/issues/360
 
@@ -59,7 +91,7 @@ web application example. Fix was contributed by Jhon Samamé
   - Remarketing/SetUpAdvancedRemarketing
   - Remarketing/SetUpRemarketing
 - Renamed code examples
-  - Extensions/AddGoogleMyBusinessLocationExtensions => Extensions/AddGoogleMyBusinessLocationExtensions  
+  - Extensions/AddGoogleMyBusinessLocationExtensions => Extensions/AddGoogleMyBusinessLocationExtensions
 - Marked multiple issues as fixed.
   - https://github.com/googleads/google-ads-dotnet/issues/351
   - https://github.com/googleads/google-ads-dotnet/issues/350
