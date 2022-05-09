@@ -12,8 +12,8 @@ function dotnet_library::main() {
   # This block is made to work with both GitHub and Git-On-Borg (GOB).
   # Source code is available at src/github/* in case of GitHub, whereas it's
   # available at src/git/* in case of GOB.
-  DOTNET_CLIENT_LIBRARY_PATH="${KOKORO_ROOT}"/src/github/google-ads-dotnet
-  DOTNET_GAX_LIBRARY_PATH="${KOKORO_ROOT}"/src/github/google-ads-dotnet
+  DOTNET_CLIENT_LIBRARY_PATH="${KOKORO_ROOT}"/src/github/google-ads-dotnet/Google.Ads.GoogleAds
+  DOTNET_GAX_LIBRARY_PATH="${KOKORO_ROOT}"/src/github/google-ads-dotnet/Google.Ads.GoogleAds
   if [[ ! -d "${DOTNET_CLIENT_LIBRARY_PATH}" ]]; then
     DOTNET_CLIENT_LIBRARY_PATH="${KOKORO_ROOT}"/src/git/google-ads-dotnet/Google.Ads.GoogleAds
     DOTNET_GAX_LIBRARY_PATH="${KOKORO_ROOT}"/src/git/google-ads-dotnet/Google.Ads.Gax
