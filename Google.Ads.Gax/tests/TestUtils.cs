@@ -13,20 +13,19 @@
 // limitations under the License.
 
 using Google.Ads.Gax.Lib;
-using Google.Ads.Gax.Tests;
 using Google.Ads.Gax.Util;
 using Google.Protobuf;
 using Grpc.Core;
 using System.IO;
 
-namespace Google.Ads.GoogleAds.Tests
+namespace Google.Ads.Gax.Tests
 {
-    internal class TestUtils
+    public class AdsTestUtils
     {
         /// <summary>
         /// Creates an <see cref="RpcException"/> for testing purposes.
         /// </summary>
-        internal static RpcException CreateRpcException(string errorMessage, string errorTrigger,
+        public static RpcException CreateRpcException(string errorMessage, string errorTrigger,
             string requestId)
         {
             HelloFailure failure = new HelloFailure();
@@ -56,7 +55,7 @@ namespace Google.Ads.GoogleAds.Tests
         /// <summary>
         /// Creates an <see cref="GoogleAdsException"/> for testing purposes.
         /// </summary>
-        internal static HelloException CreateException(string errorMessage,
+        public static HelloException CreateException(string errorMessage,
             string errorTrigger, string requestId)
         {
             return (HelloException) HelloException.Create(CreateRpcException(
