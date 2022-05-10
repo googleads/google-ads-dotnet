@@ -13,7 +13,6 @@
 // limitations under the License.
 
 using Google.Ads.Gax.Lib;
-using Google.Ads.GoogleAds.Lib;
 using Grpc.Core;
 using System;
 using System.Collections.Generic;
@@ -21,7 +20,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 
-namespace Google.Ads.GoogleAds.Profiling
+namespace Google.Ads.Gax.Profiling
 {
     /// <summary>
     /// Represents a time profile.

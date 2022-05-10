@@ -15,7 +15,7 @@
 using Google.Ads.Gax.Lib;
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Interceptors;
-using Google.Ads.GoogleAds.Profiling;
+using Google.Ads.Gax.Profiling;
 using Google.Api.Gax;
 using Google.Api.Gax.Grpc;
 using Google.Protobuf;

@@ -15,7 +15,7 @@
 using System;
 using System.Diagnostics;
 
-namespace Google.Ads.GoogleAds.Profiling
+namespace Google.Ads.Gax.Profiling
 {
     /// <summary>
     /// Utility class for measuring execution times.

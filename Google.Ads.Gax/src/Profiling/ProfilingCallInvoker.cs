@@ -15,7 +15,7 @@
 using Google.Ads.Gax.Config;
 using Grpc.Core;
 
-namespace Google.Ads.GoogleAds.Profiling
+namespace Google.Ads.Gax.Profiling
 {
     /// <summary>
     /// A call invoker that profiles the call timing.

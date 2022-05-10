@@ -14,7 +14,7 @@
 
 using System;
 
-namespace Google.Ads.GoogleAds.Profiling
+namespace Google.Ads.Gax.Profiling
 {
     /// <summary>
     /// Represents an interval of time.
