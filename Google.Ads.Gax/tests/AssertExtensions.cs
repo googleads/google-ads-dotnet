@@ -14,19 +14,19 @@
 
 using NUnit.Framework;
 
-namespace Google.Ads.GoogleAds.Tests.Logging
+namespace Google.Ads.Gax.Tests
 {
     /// <summary>
     /// Extension methods for <see cref="Assert"/> class.
     /// </summary>
-    internal class AssertExtensions
+    public class AssertExtensions
     {
         /// <summary>
         /// Adds an assertion for checking the equality of multiline texts.
         /// </summary>
         /// <param name="expected">The expected text.</param>
         /// <param name="actual">The actual text.</param>
-        internal static void AreMultiLineEqual(string expected, string actual)
+        public static void AreMultiLineEqual(string expected, string actual)
         {
             Assert.AreEqual(CleanupMultiLineText(expected), CleanupMultiLineText(actual));
         }

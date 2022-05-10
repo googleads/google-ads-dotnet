@@ -151,7 +151,7 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V10
             TEST_TRAILERS_METADATA = new Metadata();
 
             // Create the test exception.
-            TEST_EXCEPTION = TestUtils.CreateRpcException(TEST_ERROR_MESSAGE, TEST_ERROR_TRIGGER,
+            TEST_EXCEPTION = AdsTestUtils.CreateRpcException(TEST_ERROR_MESSAGE, TEST_ERROR_TRIGGER,
                 TEST_REQUEST_ID);
             TraceUtilities.Configure(TraceUtilities.SUMMARY_REQUEST_LOGS_SOURCE,
                 new StringWriter(), SourceLevels.All);

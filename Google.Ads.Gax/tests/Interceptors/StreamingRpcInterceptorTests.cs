@@ -14,8 +14,7 @@
 
 using Google.Ads.Gax.Interceptors;
 using Google.Ads.Gax.Lib;
-using Google.Ads.GoogleAds.Interceptors;
-using Google.Ads.GoogleAds.Tests.V10;
+using Google.Ads.Gax.Tests;
 using Grpc.Core;
 using NUnit.Framework;
 using System;
@@ -33,7 +32,7 @@ namespace Google.Ads.GoogleAds.Tests.Interceptors
         /// <summary>
         /// The exception object for testing purposes.
         /// </summary>
-        private static readonly RpcException TEST_EXCEPTION = TestUtils.CreateException(
+        private static readonly RpcException TEST_EXCEPTION = AdsTestUtils.CreateException(
             "Test message", "Test trigger", "request-id");
 
         /// <summary>
