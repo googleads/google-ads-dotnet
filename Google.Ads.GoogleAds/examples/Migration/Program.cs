@@ -14,6 +14,7 @@
 
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Lib;
+using Google.Api.Ads.AdWords.Lib;
 using System.IO;
 
 using gacu = global::Google.Api.Ads.Common.Util;
