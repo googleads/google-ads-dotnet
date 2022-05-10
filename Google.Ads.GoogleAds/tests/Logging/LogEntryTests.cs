@@ -16,7 +16,6 @@ using Google.Ads.Gax.Logging;
 using Google.Ads.Gax.Tests;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Logging;
-using Google.Ads.GoogleAds.Tests.V10;
 using Grpc.Core;
 using NUnit.Framework;
 
@@ -183,7 +182,7 @@ namespace Google.Ads.GoogleAds.Tests.Logging.V10
 
             // Create an exception for testing purposes.
 
-            TEST_EXCEPTION = TestUtils.CreateException(TEST_ERROR_MESSAGE, TEST_ERROR_TRIGGER,
+            TEST_EXCEPTION = AdsTestUtils.CreateException(TEST_ERROR_MESSAGE, TEST_ERROR_TRIGGER,
                 TEST_REQUEST_ID);
 
             TEST_STREAMING_RESPONSE_METADATA = new Metadata();
