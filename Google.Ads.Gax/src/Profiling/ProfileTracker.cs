@@ -16,7 +16,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Google.Ads.GoogleAds.Profiling
+namespace Google.Ads.Gax.Profiling
 {
     /// <summary>
     /// A class to keep track of profiles.

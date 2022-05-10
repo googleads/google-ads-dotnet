@@ -15,7 +15,7 @@
 using Grpc.Core;
 using System;
 
-namespace Google.Ads.GoogleAds.Profiling
+namespace Google.Ads.Gax.Profiling
 {
     /// <summary>
     /// A marshaller that wraps another marshaller and profiles it.
