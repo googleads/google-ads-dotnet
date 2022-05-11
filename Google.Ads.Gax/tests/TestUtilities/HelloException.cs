@@ -25,21 +25,21 @@ namespace Google.Ads.Gax.Tests
     public sealed class HelloException : AdsBaseException<HelloFailure>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="GoogleAdsException"/> class.
+        /// Initializes a new instance of the <see cref="HelloException"/> class.
         /// </summary>
         /// <param name="status">Resulting status of a call.</param>
         /// <param name="message">The exception message.</param>
         private HelloException(Status status, string message) : base(status, message) { }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="GoogleAdsException"/> class.
+        /// Initializes a new instance of the <see cref="HelloException"/> class.
         /// </summary>
         /// <param name="status">Resulting status of a call.</param>
         /// <param name="trailers">Response trailing metadata.</param>
         private HelloException(Status status, Metadata trailers) : base(status, trailers) { }
 
         /// <summary>
-        /// Creates a new instance of the <see cref="GoogleAdsException"/> class from an
+        /// Creates a new instance of the <see cref="HelloException"/> class from an
         /// <see cref="RpcException"/>.
         /// </summary>
         /// <param name="rpcException">The original gRPC exception.</param>
@@ -52,7 +52,7 @@ namespace Google.Ads.Gax.Tests
         }
 
         /// <summary>
-        /// Extracts a <see cref="GoogleAdsException"/> from an <see cref="AggregateException"/>
+        /// Extracts a <see cref="HelloException"/> from an <see cref="AggregateException"/>
         /// </summary>
         /// <param name="ae">The aggregate exception.</param>
         /// <returns>An underlying GoogleAdsException if present, or <code>null</code> if one
