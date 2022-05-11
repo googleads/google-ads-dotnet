@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <!-- nupkg properties -->
+  <PropertyGroup>
+    <Title>Google Ads GAPIC Extensions Dotnet Client Library Test Utils</Title>
+    <PackageId>Google.Ads.Gax.TestUtilities</PackageId>
+    <Version>1.0.1</Version>
+    <Description>This library provides testing functionality for GAPIC client libraries for Google's Ads APIs.</Description>
+    <PackageReleaseNotes>https://github.com/googleads/google-ads-dotnet/blob/main/ChangeLog</PackageReleaseNotes>
+    <PackageTags>GoogleAds Google Gax</PackageTags>
+    <Copyright>Copyright 2022, Google LLC</Copyright>
+    <Authors>https://github.com/AnashOommen</Authors>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/googleads/google-ads-dotnet</PackageProjectUrl>
+    <Company>Google</Company>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/googleads/google-ads-dotnet</RepositoryUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <NoWarn>$(NoWarn);SYSLIB0014</NoWarn>
+  </PropertyGroup>
+  <!-- build properties -->
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net472;net5.0</TargetFrameworks>
+    <AssemblyName>Google.Ads.Gax.TestUtilities</AssemblyName>
+    <RootNamespace>Google.Ads.Gax.TestUtilities</RootNamespace>
+    <PublicSign Condition="'$(OS)' != 'Windows_NT'">true</PublicSign>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\src\GoogleAds.snk</AssemblyOriginatorKeyFile>
+    <DebugType>pdbonly</DebugType>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AssemblyVersion>1.0.1</AssemblyVersion>
+    <FileVersion>1.0.1</FileVersion>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="logo.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.13.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Google.Ads.Gax.csproj" />
+  </ItemGroup>
+</Project>

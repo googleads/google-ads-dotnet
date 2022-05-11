@@ -20,6 +20,9 @@ using System.IO;
 
 namespace Google.Ads.Gax.Tests
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class AdsTestUtils
     {
         /// <summary>
@@ -53,7 +56,7 @@ namespace Google.Ads.Gax.Tests
         }
 
         /// <summary>
-        /// Creates an <see cref="GoogleAdsException"/> for testing purposes.
+        /// Creates an <see cref="HelloException"/> for testing purposes.
         /// </summary>
         public static HelloException CreateException(string errorMessage,
             string errorTrigger, string requestId)
