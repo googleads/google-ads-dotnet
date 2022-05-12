@@ -121,7 +121,7 @@ namespace Google.Ads.Gax.Interceptors
         /// <param name="e">The <see cref="AggregateException"/> to parse.</param>
         /// <returns>The parsed <see cref="AdsBaseException"/> if parsing is successful;
         /// The underlying <see cref="RpcException" /> if the exception cannot be parsed as a
-        /// GoogleAdsException.</returns>
+        /// AdsBaseException.</returns>
         /// <remarks><code>AggregateException</code> is very close to a catch-all exception for
         /// Tasks. While all the situations that we know of involves this exception being thrown
         /// by an underlying <code>RpcException</code>, theoretically this method may return a
@@ -131,8 +131,8 @@ namespace Google.Ads.Gax.Interceptors
         internal static RpcException ParseTaskException<TResponse>(AggregateException e)
         {
             RpcException rpcException = ExtractRpcException(e);
-            AdsBaseException googleAdsException = ParseRpcException<TResponse>(rpcException);
-            return (googleAdsException == null) ? rpcException : googleAdsException;
+            AdsBaseException adsException = ParseRpcException<TResponse>(rpcException);
+            return (adsException == null) ? rpcException : adsException;
         }
 
         /// <summary>
@@ -170,7 +170,7 @@ namespace Google.Ads.Gax.Interceptors
         /// <param name="rpcException">The RPC exception.</param>
         private static System.Type FindAdsExceptionType<TResponse>(RpcException rpcException)
         {
-            // We are trying to find a GoogleAdsBaseException in the assembly pointed to by
+            // We are trying to find a AdsBaseException in the assembly pointed to by
             // TResponse which has a matching FailureKey.
 
             Assembly myAssembly = typeof(TResponse).Assembly;
