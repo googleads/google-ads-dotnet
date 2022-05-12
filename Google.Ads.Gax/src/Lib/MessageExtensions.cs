@@ -14,7 +14,7 @@
 
 using Google.Protobuf;
 
-namespace Google.Ads.GoogleAds.Lib
+namespace Google.Ads.Gax.Lib
 {
     /// <summary>
     /// Class to add extension methods to <see cref="IMessage"/>

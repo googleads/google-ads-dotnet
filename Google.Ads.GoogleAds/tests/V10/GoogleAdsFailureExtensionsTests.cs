@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using Google.Ads.GoogleAds.Lib;
+using Google.Ads.Gax.Lib;
 using Google.Ads.GoogleAds.V10.Errors;
 using Google.Ads.GoogleAds.V10.Services;
 using Google.Protobuf.WellKnownTypes;

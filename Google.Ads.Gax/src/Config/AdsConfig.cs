@@ -409,8 +409,7 @@ namespace Google.Ads.Gax.Config
         }
 
         /// <summary>
-        /// Public constructor. Loads the configuration from the <code>GoogleAdsApi</code> section
-        /// of the App.config / Web.config.
+        /// Public constructor.
         /// </summary>
         public AdsConfig() : base()
         {
