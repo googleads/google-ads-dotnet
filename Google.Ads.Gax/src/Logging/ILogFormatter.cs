@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using Google.Ads.Gax.Lib;
 using Grpc.Core;
 
 namespace Google.Ads.Gax.Logging
@@ -54,7 +55,9 @@ namespace Google.Ads.Gax.Logging
         /// </summary>
         /// <param name="responseHeaders">The response headers.</param>
         /// <param name="response">The response.</param>
+        /// <param name="exception">The exception, if available, null otherwise.</param>
         /// <returns>The request ID.</returns>
-        public string GetRequestId(Metadata responseHeaders, object response);
+        public string GetRequestId(Metadata responseHeaders, object response,
+            RpcException exception);
     }
 }
