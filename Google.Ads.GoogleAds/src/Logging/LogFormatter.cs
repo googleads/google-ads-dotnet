@@ -97,8 +97,10 @@ namespace Google.Ads.GoogleAds.Logging
         /// </summary>
         /// <param name="responseHeaders">The response headers.</param>
         /// <param name="response">The response.</param>
+        /// <param name="exception">The exception, if available.</param>
         /// <returns>The request ID.</returns>
-        public string GetRequestId(Metadata responseHeaders, object response)
+        public string GetRequestId(Metadata responseHeaders, object response,
+            RpcException exception)
         {
             string requestId = new AdsResponseMetadata(responseHeaders).RequestId;
             // For streaming calls, the trailing response headers are returned only after
@@ -112,6 +114,14 @@ namespace Google.Ads.GoogleAds.Logging
                 if (responseMetadata != null)
                 {
                     requestId = responseMetadata.RequestId;
+                }
+            }
+            if (string.IsNullOrEmpty(requestId))
+            {
+                AdsBaseException adsException = exception as AdsBaseException;
+                if (adsException != null)
+                {
+                    requestId = adsException.RequestId;
                 }
             }
             return requestId;

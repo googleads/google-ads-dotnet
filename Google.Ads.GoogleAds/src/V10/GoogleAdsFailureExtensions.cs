@@ -12,12 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using Google.Ads.Gax.Lib;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace Google.Ads.GoogleAds.V10.Errors
 {
-    partial class GoogleAdsFailure
+    partial class GoogleAdsFailure : IResponseMetadata
     {
         /// <summary>
         /// The operations fieldname.

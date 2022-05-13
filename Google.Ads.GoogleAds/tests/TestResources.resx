@@ -206,10 +206,10 @@ Headers: {
 ----------------END API CALL----------------</value>
   </data>
   <data name="SummaryFailureLog" xml:space="preserve">
-    <value>Request made: Host: TEST_HOST, Method: TEST_METHOD, ClientCustomerID: 1234567890,  RequestID: TEST_REQUEST_ID, IsFault: True, FaultMessage: Status(StatusCode="OK", Detail="")</value>
+    <value>Request made: Host: TEST_HOST, Method: TEST_METHOD, ClientCustomerID: 1234567890, RequestID: TEST_REQUEST_ID, IsFault: True, FaultMessage: Status(StatusCode="OK", Detail="")</value>
   </data>
   <data name="SummarySuccessLog" xml:space="preserve">
-    <value>Request made: Host: TEST_HOST, Method: TEST_METHOD, ClientCustomerID: 1234567890,  RequestID: TEST_REQUEST_ID, IsFault: False, FaultMessage: Status(StatusCode="OK", Detail="")</value>
+    <value>Request made: Host: TEST_HOST, Method: TEST_METHOD, ClientCustomerID: 1234567890, RequestID: TEST_REQUEST_ID, IsFault: False, FaultMessage: Status(StatusCode="OK", Detail="")</value>
   </data>
   <data name="DetailedPartialFailureLog" xml:space="preserve">
     <value>---------------BEGIN API CALL---------------
@@ -282,6 +282,6 @@ Headers: {
 ----------------END API CALL----------------</value>
   </data>
   <data name="SummaryStreamSuccessLog" xml:space="preserve">
-    <value>Request made: Host: TEST_HOST, Method: TEST_METHOD, ClientCustomerID: 1234567890,  RequestID: TEST_REQUEST_ID, IsFault: False, FaultMessage: Status(StatusCode="OK", Detail="")</value>
+    <value>Request made: Host: TEST_HOST, Method: TEST_METHOD, ClientCustomerID: 1234567890, RequestID: TEST_REQUEST_ID, IsFault: False, FaultMessage: Status(StatusCode="OK", Detail="")</value>
   </data>
 </root>
