@@ -229,7 +229,7 @@ namespace Google.Ads.GoogleAds.Tests {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Request made: Host: TEST_HOST, Method: TEST_METHOD, ClientCustomerID: 1234567890,  RequestID: TEST_REQUEST_ID, IsFault: True, FaultMessage: Status(StatusCode=&quot;OK&quot;, Detail=&quot;&quot;).
+        ///   Looks up a localized string similar to Request made: Host: TEST_HOST, Method: TEST_METHOD, ClientCustomerID: 1234567890, RequestID: TEST_REQUEST_ID, IsFault: True, FaultMessage: Status(StatusCode=&quot;OK&quot;, Detail=&quot;&quot;).
         /// </summary>
         internal static string SummaryFailureLog {
             get {
@@ -238,7 +238,7 @@ namespace Google.Ads.GoogleAds.Tests {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Request made: Host: TEST_HOST, Method: TEST_METHOD, ClientCustomerID: 1234567890,  RequestID: TEST_REQUEST_ID, IsFault: False, FaultMessage: Status(StatusCode=&quot;OK&quot;, Detail=&quot;&quot;).
+        ///   Looks up a localized string similar to Request made: Host: TEST_HOST, Method: TEST_METHOD, ClientCustomerID: 1234567890, RequestID: TEST_REQUEST_ID, IsFault: False, FaultMessage: Status(StatusCode=&quot;OK&quot;, Detail=&quot;&quot;).
         /// </summary>
         internal static string SummaryStreamSuccessLog {
             get {
@@ -247,7 +247,7 @@ namespace Google.Ads.GoogleAds.Tests {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Request made: Host: TEST_HOST, Method: TEST_METHOD, ClientCustomerID: 1234567890,  RequestID: TEST_REQUEST_ID, IsFault: False, FaultMessage: Status(StatusCode=&quot;OK&quot;, Detail=&quot;&quot;).
+        ///   Looks up a localized string similar to Request made: Host: TEST_HOST, Method: TEST_METHOD, ClientCustomerID: 1234567890, RequestID: TEST_REQUEST_ID, IsFault: False, FaultMessage: Status(StatusCode=&quot;OK&quot;, Detail=&quot;&quot;).
         /// </summary>
         internal static string SummarySuccessLog {
             get {

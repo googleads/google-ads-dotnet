@@ -144,8 +144,8 @@ namespace Google.Ads.Gax.Logging
             get
             {
                 return $"Request made: Host: {Host}, Method: {Method}, " +
-                    $"ClientCustomerID: {CustomerId},  " +
-                    $"RequestID: {logFormatter.GetRequestId(ResponseHeaders, Response)}, " +
+                    $"ClientCustomerID: {CustomerId}, RequestID: " +
+                    $"{logFormatter.GetRequestId(ResponseHeaders, Response, Exception)}, " +
                     $"IsFault: {IsFailure}, FaultMessage: {Exception?.Message}";
             }
         }
