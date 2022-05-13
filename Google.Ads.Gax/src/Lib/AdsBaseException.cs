@@ -93,9 +93,14 @@ namespace Google.Ads.Gax.Lib
         /// <param name="trailers">Response trailing metadata.</param>
         protected AdsBaseException(Status status, Metadata trailers) : base(status, trailers)
         {
-            this.RequestId = new AdsResponseMetadata(trailers).RequestId;
-
             Failure = ProtobufUtilities.Parse<T>(trailers.GetEntry(FailureKey).ValueBytes);
+            // Try to extract the request ID from the response trailers, and fall back
+            // to extract from Failure if possible.
+            this.RequestId = new AdsResponseMetadata(trailers).RequestId;
+            if (this.RequestId == null && Failure is IResponseMetadata)
+            {
+                this.RequestId = (Failure as IResponseMetadata).RequestId;
+            }
         }
 
         /// <summary>
