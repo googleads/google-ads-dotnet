@@ -4,7 +4,7 @@
     <Title>Google Ads GAPIC Extensions Dotnet Client Library</Title>
     <PackageId>Google.Ads.Gax</PackageId>
     <Version>1.0.1</Version>
-    <Description>This library provides functionality that makes it easiser to work with Generated
+    <Description>This library provides functionality that makes it easier to work with Generated
     API Client GAPIC client libraries for Google's Ads APIs.</Description>
     <PackageReleaseNotes>https://github.com/googleads/google-ads-dotnet/blob/main/ChangeLog</PackageReleaseNotes>
     <PackageTags>GoogleAds Google Gax</PackageTags>
@@ -16,7 +16,7 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/googleads/google-ads-dotnet</RepositoryUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <NoWarn>$(NoWarn);SYSLIB0014</NoWarn>
   </PropertyGroup>
   <!-- build properties -->
@@ -37,7 +37,9 @@
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="logo.png" Pack="true" PackagePath="\" />
+    <None Include="..\..\THIRD-PARTY-LICENSE.txt" Pack="true" PackagePath="" />
+    <None Include="..\..\LICENSE" Pack="true" PackagePath=""/>
+    <None Include="..\..\logo.png" Pack="true" PackagePath="" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="CommandLineParser" Version="2.8.0" />

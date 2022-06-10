@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// Shows how to download a set of reports from a list of accounts in parallel. If you need
@@ -58,28 +58,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer IDs for which the call is made.
-                    // Add more items to the array as desired.
-                    options.CustomerIds = new long[]
-                    {
-                        long.Parse("INSERT_CUSTOMER_ID_1_HERE"),
-                        long.Parse("INSERT_CUSTOMER_ID_2_HERE")
-                    };
-
-                    // Optional login customer ID if your access to the CIDs is via a manager
-                    // account.
-                    options.LoginCustomerId = long.Parse("INSERT_LOGIN_CUSTOMER_ID_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             ParallelReportDownload codeExample = new ParallelReportDownload();
             Console.WriteLine(codeExample.Description);
@@ -130,7 +109,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
 
             // Get the GoogleAdsService. A single client can be shared by all threads.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V10.GoogleAdsService);
+                Services.V11.GoogleAdsService);
 
             try
             {

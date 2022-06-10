@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V10.Enums.AssetSetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AssetSetTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example adds an asset for use in dynamic remarketing and links it to a campaign.
@@ -57,23 +57,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // ID of the campaign to which the asset is linked. Specify a campaign
-                    // type which supports dynamic remarketing, such as Display.
-                    options.CampaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             AddDynamicRemarketingAsset codeExample = new AddDynamicRemarketingAsset();
             Console.WriteLine(codeExample.Description);
@@ -129,7 +113,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <returns>The resource name of the newly created asset.</returns>
         private string CreateAsset(GoogleAdsClient client, long customerId)
         {
-            AssetServiceClient assetService = client.GetService(Services.V10.AssetService);
+            AssetServiceClient assetService = client.GetService(Services.V11.AssetService);
 
             // Creates a DynamicEducationAsset.
             // See https://support.google.com/google-ads/answer/6053288?#zippy=%2Ceducation for a
@@ -186,7 +170,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         private string CreateAssetSet(GoogleAdsClient client, long customerId)
         {
             AssetSetServiceClient assetSetService = client.GetService(
-                Services.V10.AssetSetService);
+                Services.V11.AssetSetService);
 
             // Creates an AssetSet which will be used to link the dynamic remarketing assets
             // to a campaign.
@@ -223,7 +207,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             string assetResourceName, string assetSetResourceName)
         {
             AssetSetAssetServiceClient assetSetAssetService = client.GetService(
-                Services.V10.AssetSetAssetService);
+                Services.V11.AssetSetAssetService);
 
             AssetSetAsset assetSetAsset = new AssetSetAsset()
             {
@@ -263,7 +247,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             long campaignId, string assetSetResourceName)
         {
             CampaignAssetSetServiceClient campaignAssetSetService = client.GetService(
-                Services.V10.CampaignAssetSetService);
+                Services.V11.CampaignAssetSetService);
 
             // Creates a CampaignAssetSet representing the link between an AssetSet and a Campaign.
             CampaignAssetSet campaignAssetSet = new CampaignAssetSet()

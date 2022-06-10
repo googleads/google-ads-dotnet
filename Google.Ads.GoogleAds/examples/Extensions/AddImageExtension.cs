@@ -15,16 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V10.Enums.ExtensionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.ExtensionTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example adds an image extension to a campaign. To create a campaign, run
@@ -65,25 +65,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // ID of the campaign to which sitelinks are added.
-                    options.CampaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
-
-                    // ID of the image asset to be used for creating the extension.
-                    options.ImageAssetId = long.Parse("INSERT_IMAGE_ASSET_ID_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             AddImageExtension codeExample = new AddImageExtension();
             Console.WriteLine(codeExample.Description);
@@ -111,7 +93,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the CampaignExtensionSettingServiceClient.
             CampaignExtensionSettingServiceClient campaignExtensionSettingService =
-                client.GetService(Services.V10.CampaignExtensionSettingService);
+                client.GetService(Services.V11.CampaignExtensionSettingService);
 
             try
             {
@@ -168,7 +150,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the ExtensionFeedItemServiceClient.
             ExtensionFeedItemServiceClient extensionFeedItemService =
-                client.GetService(Services.V10.ExtensionFeedItemService);
+                client.GetService(Services.V11.ExtensionFeedItemService);
 
             // Creates the image feed item using the provided image.
             ImageFeedItem imageFeedItem = new ImageFeedItem()

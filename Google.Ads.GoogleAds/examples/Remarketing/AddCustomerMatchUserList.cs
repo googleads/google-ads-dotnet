@@ -15,10 +15,10 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using Google.Api.Gax;
 using Google.LongRunning;
 using Google.Protobuf.WellKnownTypes;
@@ -27,11 +27,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using static Google.Ads.GoogleAds.V10.Enums.CustomerMatchUploadKeyTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.OfflineUserDataJobStatusEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.OfflineUserDataJobTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.CustomerMatchUploadKeyTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.OfflineUserDataJobStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.OfflineUserDataJobTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     ///  This code example uses Customer Match to create a new user list (a.k.a. audience) and adds
@@ -64,19 +64,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID for which the user list is added.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             AddCustomerMatchUserList codeExample = new AddCustomerMatchUserList();
             Console.WriteLine(codeExample.Description);
@@ -134,7 +122,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         private string CreateCustomerMatchUserList(GoogleAdsClient client, long customerId)
         {
             // Get the UserListService.
-            UserListServiceClient service = client.GetService(Services.V10.UserListService);
+            UserListServiceClient service = client.GetService(Services.V11.UserListService);
 
             // Creates the user list.
             UserList userList = new UserList()
@@ -181,7 +169,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the OfflineUserDataJobService.
             OfflineUserDataJobServiceClient service = client.GetService(
-                Services.V10.OfflineUserDataJobService);
+                Services.V11.OfflineUserDataJobService);
 
             // Creates a new offline user data job.
             OfflineUserDataJob offlineUserDataJob = new OfflineUserDataJob()
@@ -255,7 +243,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             string offlineUserDataJobResourceName, string userListResourceName)
         {
             // Get the GoogleAdsService.
-            GoogleAdsServiceClient service = client.GetService(Services.V10.GoogleAdsService);
+            GoogleAdsServiceClient service = client.GetService(Services.V11.GoogleAdsService);
 
             string query = "SELECT offline_user_data_job.resource_name, " +
                 "offline_user_data_job.id, offline_user_data_job.status, " +
@@ -357,7 +345,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient service =
-                client.GetService(Services.V10.GoogleAdsService);
+                client.GetService(Services.V11.GoogleAdsService);
 
             // Creates a query that retrieves the user list.
             string query =

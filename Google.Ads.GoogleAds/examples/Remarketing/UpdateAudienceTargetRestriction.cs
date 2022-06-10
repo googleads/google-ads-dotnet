@@ -16,18 +16,18 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using Google.Api.Gax;
 using Google.Protobuf.Collections;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V10.Enums.TargetingDimensionEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.TargetingDimensionEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example updates the AUDIENCE target restriction of a given ad group to bid only.
@@ -61,22 +61,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID for the conversion action is added.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // The ad group ID for which to update the audience targeting restriction.
-                    options.AdGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             UpdateAudienceTargetRestriction codeExample = new UpdateAudienceTargetRestriction();
             Console.WriteLine(codeExample.Description);
@@ -102,7 +87,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the GoogleAdsService client.
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V10.GoogleAdsService);
+                client.GetService(Services.V11.GoogleAdsService);
 
             // Create a search request that retrieves the targeting settings from a given ad group.
             // [START update_audience_target_restriction]
@@ -213,7 +198,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the AdGroupService client.
             AdGroupServiceClient adGroupServiceClient =
-                client.GetService(Services.V10.AdGroupService);
+                client.GetService(Services.V11.AdGroupService);
 
             // Create an ad group object with the updated targeting setting.
             AdGroup adGroup = new AdGroup

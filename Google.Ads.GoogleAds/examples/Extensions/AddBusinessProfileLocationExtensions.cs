@@ -15,24 +15,24 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using Google.Api.Gax;
 using Grpc.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
-using static Google.Ads.GoogleAds.V10.Common.Operand.Types;
-using static Google.Ads.GoogleAds.V10.Enums.FeedOriginEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.MatchingFunctionOperatorEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.PlaceholderTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Resources.Feed.Types;
-using static Google.Ads.GoogleAds.V10.Resources.Feed.Types.PlacesLocationFeedData.Types;
+using static Google.Ads.GoogleAds.V11.Common.Operand.Types;
+using static Google.Ads.GoogleAds.V11.Enums.FeedOriginEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.MatchingFunctionOperatorEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.PlaceholderTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Resources.Feed.Types;
+using static Google.Ads.GoogleAds.V11.Resources.Feed.Types.PlacesLocationFeedData.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example adds a feed that syncs feed items from a Business Profile account
@@ -81,51 +81,13 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            GoogleAdsClient client = new GoogleAdsClient();
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // The Business Profile login email address.
-                    options.BusinessProfileEmailAddress =
-                        "INSERT_BUSINESS_PROFILE_EMAIL_ADDRESS_HERE";
-
-                    // If the businessProfileEmailAddress above is for a Business Profile manager
-                    // instead of the Business Profile account owner, then set
-                    // businessAccountIdentifier to the Google+ Page ID of a location for which the
-                    // manager has access. This information is available through the Business
-                    // Profile API. See
-                    // https://developers.google.com/my-business/reference/rest/v4/accounts.locations#locationkey
-                    // for details.
-                    //options.BusinessAccountId = "INSERT_BUSINESS_ACCOUNT_ID_HERE";
-                    options.BusinessAccountId = null;
-
-                    // If the businessProfileEmailAddress above is the same user you used to
-                    // generate your Google Ads API refresh token, leave the assignment below
-                    // unchanged. Otherwise, to obtain an access token for your Business Profile
-                    // account, run the AuthenticateInStandaloneApplication code example while
-                    // logged in as the same user as businessProfileEmailAddress. Copy and paste
-                    // the AccessToken value into the assignment below and delete the line
-                    // after it.
-
-                    // options.BusinessProfileAccessToken =
-                    //     "INSERT_BUSINESS_PROFILE_ACCESS_TOKEN_HERE";
-                    options.BusinessProfileAccessToken = client.Config.OAuth2AccessToken;
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             AddBusinessProfileLocationExtensions codeExample =
                 new AddBusinessProfileLocationExtensions();
             Console.WriteLine(codeExample.Description);
-            codeExample.Run(client, options.CustomerId, options.BusinessProfileEmailAddress,
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId,
+                options.BusinessProfileEmailAddress,
                 options.BusinessAccountId, options.BusinessProfileAccessToken);
         }
 
@@ -206,7 +168,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             DeleteLocationExtensionFeeds(client, customerId);
 
             // Get the FeedServiceClient.
-            FeedServiceClient feedService = client.GetService(Services.V10.FeedService);
+            FeedServiceClient feedService = client.GetService(Services.V11.FeedService);
 
             // Creates a feed that will sync to the Business Profile account specified by
             // businessProfileEmailAddress. Do not add FeedAttributes to this object as Google Ads
@@ -298,7 +260,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             List<Feed> feeds = new List<Feed>();
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V10.GoogleAdsService);
+                Services.V11.GoogleAdsService);
 
             // Create the query.
             string query = $"SELECT feed.resource_name, feed.status, " +
@@ -341,7 +303,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
                 operations.Add(operation);
             }
             FeedServiceClient feedService = client.GetService(
-                Services.V10.FeedService);
+                Services.V11.FeedService);
 
             feedService.MutateFeeds(customerId.ToString(), operations.ToArray());
         }
@@ -351,7 +313,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             List<CustomerFeed> customerFeeds = new List<CustomerFeed>();
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V10.GoogleAdsService);
+                Services.V11.GoogleAdsService);
 
             // Create the query. A location extension customer feed can be identified by filtering
             // for placeholder_types=LOCATION (location extension feeds) or
@@ -392,7 +354,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             }
 
             CustomerFeedServiceClient feedService = client.GetService(
-                Services.V10.CustomerFeedService);
+                Services.V11.CustomerFeedService);
 
             feedService.MutateCustomerFeeds(customerId.ToString(), operations.ToArray());
         }
@@ -411,7 +373,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V10.GoogleAdsService);
+                Services.V11.GoogleAdsService);
 
             // Create the query.
             string query = $"SELECT feed_mapping.resource_name, feed_mapping.status FROM " +
@@ -485,7 +447,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the CustomerFeedService.
             CustomerFeedServiceClient customerFeedService = client.GetService(
-                Services.V10.CustomerFeedService);
+                Services.V11.CustomerFeedService);
 
             // Adds a CustomerFeed that associates the feed with this customer for
             // the LOCATION placeholder type.

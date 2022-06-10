@@ -19,13 +19,13 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
-using static Google.Ads.GoogleAds.V10.Enums.BiddingStrategyTypeEnum.Types;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
+using static Google.Ads.GoogleAds.V11.Enums.BiddingStrategyTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example adds a cross-account bidding strategy to a manager account and attaches it
@@ -74,27 +74,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate(Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate(IEnumerable<Error> errors)
-                {
-                    // The Google Ads client customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // The manager customer ID.
-                    options.ManagerCustomerId = long.Parse("INSERT_MANAGER_CUSTOMER_ID_HERE");
-
-                    // The ID of the campaign owned by the customer ID to which the cross-account
-                    // bidding strategy will be attached.
-                    options.CampaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
-
-                    return 0;
-                });
-
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
             UseCrossAccountBiddingStrategy codeExample = new UseCrossAccountBiddingStrategy();
             Console.WriteLine(codeExample.Description);
             codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.ManagerCustomerId,
@@ -153,7 +133,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         private string CreateBiddingStrategy(GoogleAdsClient client, long managerCustomerId)
         {
             BiddingStrategyServiceClient biddingStrategyServiceClient =
-                client.GetService(Services.V10.BiddingStrategyService);
+                client.GetService(Services.V11.BiddingStrategyService);
 
             // Create a portfolio bidding strategy.
             // [START set_currency_code]
@@ -199,7 +179,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             long managerCustomerId)
         {
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V10.GoogleAdsService);
+                client.GetService(Services.V11.GoogleAdsService);
 
             // Create a GAQL query that will retrieve all cross-account bidding strategies.
             string query = @"
@@ -245,7 +225,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             long customerId)
         {
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V10.GoogleAdsService);
+                client.GetService(Services.V11.GoogleAdsService);
 
             // Create a GAQL query that will retrieve all accessible bidding strategies.
             string query = @"
@@ -301,7 +281,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             long customerId, long campaignId, string biddingStrategyResourceName)
         {
             CampaignServiceClient campaignServiceClient =
-                client.GetService(Services.V10.CampaignService);
+                client.GetService(Services.V11.CampaignService);
 
             Campaign campaign = new Campaign
             {

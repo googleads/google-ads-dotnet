@@ -15,17 +15,17 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V10.Enums.DeviceEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.GenderTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.ReachPlanAdLengthEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.ReachPlanAgeRangeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.DeviceEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.GenderTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.ReachPlanAdLengthEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.ReachPlanAgeRangeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This example demonstrates how to interact with the ReachPlanService to find plannable
@@ -52,19 +52,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             ForecastReach codeExample = new ForecastReach();
             Console.WriteLine(codeExample.Description);
@@ -81,7 +69,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
 
         /// <summary>
         /// Runs the code example, showing a typical series of calls to the
-        /// <see cref="Services.V10.ReachPlanService"/>.
+        /// <see cref="Services.V11.ReachPlanService"/>.
         /// </summary>
         /// <param name="client">The Google Ads API client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
@@ -91,7 +79,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             string currencyCode = "USD";
             long budgetMicros = 5_000_000L;
             ReachPlanServiceClient reachPlanService =
-                client.GetService(Services.V10.ReachPlanService);
+                client.GetService(Services.V11.ReachPlanService);
 
             try
             {

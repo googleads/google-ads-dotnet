@@ -16,15 +16,15 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V10.Enums.FlightPlaceholderFieldEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.FlightPlaceholderFieldEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example updates a FeedItemAttributeValue in a flights feed. To create a flights
@@ -82,32 +82,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // ID of the feed containing the feed item to be updated.
-                    options.FeedId = long.Parse("INSERT_FEED_ID_HERE");
-
-                    // ID of the feed item to be updated.
-                    options.FeedItemId = long.Parse("INSERT_FEED_ITEM_ID_HERE");
-
-                    // The placeholder type for the attribute to be removed.
-                    options.FlightPlaceholderFieldName =
-                        "INSERT_FLIGHT_PLACEHOLDER_FIELD_NAME_HERE";
-
-                    // Value with which to update the FeedAttributeValue.
-                    options.AttributeValue = "INSERT_ATTRIBUTE_VALUE_HERE";
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             UpdateFlightsFeedItemStringAttributeValue codeExample =
                 new UpdateFlightsFeedItemStringAttributeValue();
@@ -174,7 +149,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the FeedItemServiceClient.
             FeedItemServiceClient feedItemService =
-                client.GetService(Services.V10.FeedItemService);
+                client.GetService(Services.V11.FeedItemService);
 
             // Gets the feed resource name.
             string feedResourceName = ResourceNames.Feed(customerId, feedId);
@@ -255,7 +230,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V10.GoogleAdsService);
+                Services.V11.GoogleAdsService);
 
             // Constructs the query.
             string query = "SELECT feed.attributes FROM feed WHERE feed.resource_name = " +
@@ -325,7 +300,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V10.GoogleAdsService);
+                Services.V11.GoogleAdsService);
 
             // Constructs the query.
             string query = "SELECT feed_item.attribute_values FROM feed_item WHERE " +

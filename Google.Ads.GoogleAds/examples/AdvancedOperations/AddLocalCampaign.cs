@@ -17,25 +17,25 @@ using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V10.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.AdvertisingChannelSubTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.AssetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.LocationSourceTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.OptimizationGoalTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdvertisingChannelSubTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AssetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.LocationSourceTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.OptimizationGoalTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This example adds an Local campaign.
@@ -65,19 +65,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             AddLocalCampaign codeExample = new AddLocalCampaign();
             Console.WriteLine(codeExample.Description);
@@ -142,7 +130,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the CampaignBudgetService client.
             CampaignBudgetServiceClient campaignBudgetServiceClient =
-                client.GetService(Services.V10.CampaignBudgetService);
+                client.GetService(Services.V11.CampaignBudgetService);
 
             // Create a campaign budget object.
             CampaignBudget campaignBudget = new CampaignBudget
@@ -189,7 +177,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the CampaignService client.
             CampaignServiceClient campaignServiceClient =
-                client.GetService(Services.V10.CampaignService);
+                client.GetService(Services.V11.CampaignService);
 
             // Create a campaign object.
             Campaign campaign = new Campaign
@@ -265,7 +253,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Create the ad group service client.
             AdGroupServiceClient adGroupServiceClient =
-                client.GetService(Services.V10.AdGroupService);
+                client.GetService(Services.V11.AdGroupService);
 
             // Create the ad group.
             // Note that the ad group type must not be set.
@@ -309,7 +297,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Create the ad group service client.
             AdGroupAdServiceClient adGroupAdServiceClient =
-                client.GetService(Services.V10.AdGroupAdService);
+                client.GetService(Services.V11.AdGroupAdService);
 
             // Create an ad group ad.
             AdGroupAd adGroupAd = new AdGroupAd
@@ -405,7 +393,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             string imageName)
         {
             // Get the AssetService client.
-            AssetServiceClient assetService = client.GetService(Services.V10.AssetService);
+            AssetServiceClient assetService = client.GetService(Services.V11.AssetService);
 
             // Creates an image asset.
             byte[] imageContent = MediaUtilities.GetAssetDataFromUrl(imageUrl, client.Config);
@@ -451,7 +439,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             string youtubeVideoId, string youtubeVideoName)
         {
             // Get the AssetService client.
-            AssetServiceClient assetServiceClient = client.GetService(Services.V10.AssetService);
+            AssetServiceClient assetServiceClient = client.GetService(Services.V11.AssetService);
 
             // Create an asset.
             Asset asset = new Asset

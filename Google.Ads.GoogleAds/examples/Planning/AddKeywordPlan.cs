@@ -15,16 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V10.Enums.KeywordMatchTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.KeywordPlanForecastIntervalEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.KeywordPlanNetworkEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.KeywordMatchTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.KeywordPlanForecastIntervalEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.KeywordPlanNetworkEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example creates a keyword plan, which can be reused for retrieving forecast
@@ -51,19 +51,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             AddKeywordPlan codeExample = new AddKeywordPlan();
             Console.WriteLine(codeExample.Description);
@@ -115,7 +103,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the KeywordPlanService.
             KeywordPlanServiceClient serviceClient = client.GetService(
-                Services.V10.KeywordPlanService);
+                Services.V11.KeywordPlanService);
 
             // Create a keyword plan for next quarter forecast.
             KeywordPlan keywordPlan = new KeywordPlan()
@@ -154,7 +142,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the KeywordPlanCampaignService.
             KeywordPlanCampaignServiceClient serviceClient = client.GetService(
-                Services.V10.KeywordPlanCampaignService);
+                Services.V11.KeywordPlanCampaignService);
 
             // Create a keyword plan campaign.
             KeywordPlanCampaign campaign = new KeywordPlanCampaign()
@@ -205,7 +193,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the KeywordPlanAdGroupService.
             KeywordPlanAdGroupServiceClient serviceClient = client.GetService(
-                Services.V10.KeywordPlanAdGroupService);
+                Services.V11.KeywordPlanAdGroupService);
 
             // Create the keyword plan ad group.
             KeywordPlanAdGroup adGroup = new KeywordPlanAdGroup()
@@ -243,7 +231,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the KeywordPlanAdGroupKeywordService.
             KeywordPlanAdGroupKeywordServiceClient serviceClient = client.GetService(
-                Services.V10.KeywordPlanAdGroupKeywordService);
+                Services.V11.KeywordPlanAdGroupKeywordService);
 
             // Create the adgroup level keywords for keyword plan.
             KeywordPlanAdGroupKeyword kpAdGroupKeyword1 = new KeywordPlanAdGroupKeyword()
@@ -314,7 +302,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the KeywordPlanCampaignKeywordService.
             KeywordPlanCampaignKeywordServiceClient service = client.GetService(
-                Services.V10.KeywordPlanCampaignKeywordService);
+                Services.V11.KeywordPlanCampaignKeywordService);
 
             // Create the campaign negative keyword for the keyword plan.
             KeywordPlanCampaignKeyword kpCampaignNegativeKeyword = new KeywordPlanCampaignKeyword()

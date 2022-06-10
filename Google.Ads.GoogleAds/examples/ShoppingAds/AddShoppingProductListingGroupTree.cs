@@ -15,18 +15,18 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V10.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.ListingGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.ProductConditionEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.ListingGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.ProductConditionEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example shows how to add a shopping listing group tree to a shopping ad group.
@@ -84,28 +84,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // The ID of the ad group.
-                    options.AdGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
-
-                    // The boolean to indicate whether to replace the existing listing group tree
-                    // on the ad group, if it already exists. The example will throw a
-                    // LISTING_GROUP_ALREADY_EXISTS error if listing group tree already exists
-                    // and this option is not set to true.
-                    options.ReplaceExistingTree = bool.Parse("INSERT_REPLACE_EXISTING_TREE_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             AddShoppingProductListingGroupTree codeExample =
                 new AddShoppingProductListingGroupTree();
@@ -149,7 +128,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V10.AdGroupCriterionService);
+                client.GetService(Services.V11.AdGroupCriterionService);
 
             try
             {
@@ -350,11 +329,11 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V10.GoogleAdsService);
+                Services.V11.GoogleAdsService);
 
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V10.AdGroupCriterionService);
+                client.GetService(Services.V11.AdGroupCriterionService);
 
             String searchQuery = "SELECT ad_group_criterion.resource_name FROM " +
                 "ad_group_criterion WHERE ad_group_criterion.type = LISTING_GROUP AND " +

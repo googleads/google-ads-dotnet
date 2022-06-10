@@ -15,23 +15,23 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using Google.Api.Gax;
 using Grpc.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
-using static Google.Ads.GoogleAds.V10.Enums.AffiliateLocationFeedRelationshipTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.AffiliateLocationPlaceholderFieldEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.FeedOriginEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.PlaceholderTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Resources.Feed.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AffiliateLocationFeedRelationshipTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AffiliateLocationPlaceholderFieldEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.FeedOriginEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.PlaceholderTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Resources.Feed.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example adds a feed that syncs retail addresses for a given retail chain ID and
@@ -73,25 +73,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // The retail chain ID.
-                    options.ChainId = long.Parse("INSERT_CHAIN_ID_HERE");
-
-                    // The campaign ID for which the affiliate location extensions are added.
-                    options.CampaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             AddAffiliateLocationExtensions codeExample = new AddAffiliateLocationExtensions();
             Console.WriteLine(codeExample.Description);
@@ -162,7 +144,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             DeleteLocationExtensionFeeds(client, customerId);
 
             // Get the FeedServiceClient.
-            FeedServiceClient feedService = client.GetService(Services.V10.FeedService);
+            FeedServiceClient feedService = client.GetService(Services.V11.FeedService);
 
             // Creates a feed that will sync to retail addresses for a given retail chain ID. Do not
             // add FeedAttributes to this object as Google Ads will add them automatically because
@@ -235,7 +217,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             List<Feed> feeds = new List<Feed>();
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V10.GoogleAdsService);
+                Services.V11.GoogleAdsService);
 
             // Create the query.
             string query = $"SELECT feed.resource_name, feed.status, " +
@@ -278,7 +260,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
                 operations.Add(operation);
             }
             FeedServiceClient feedService = client.GetService(
-                Services.V10.FeedService);
+                Services.V11.FeedService);
 
             feedService.MutateFeeds(customerId.ToString(), operations.ToArray());
         }
@@ -294,7 +276,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             List<CustomerFeed> customerFeeds = new List<CustomerFeed>();
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V10.GoogleAdsService);
+                Services.V11.GoogleAdsService);
 
             // Create the query. A location extension customer feed can be identified by filtering
             // for placeholder_types=LOCATION (location extension feeds) or placeholder_types
@@ -335,7 +317,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             }
 
             CustomerFeedServiceClient feedService = client.GetService(
-                Services.V10.CustomerFeedService);
+                Services.V11.CustomerFeedService);
 
             feedService.MutateCustomerFeeds(customerId.ToString(), operations.ToArray());
         }
@@ -353,7 +335,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V10.GoogleAdsService);
+                Services.V11.GoogleAdsService);
 
             // Create the query.
             string query = $"SELECT feed_mapping.resource_name, " +
@@ -433,7 +415,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the CampaignFeedService.
             CampaignFeedServiceClient campaignFeedService = client.GetService(
-                Services.V10.CampaignFeedService);
+                Services.V11.CampaignFeedService);
 
             long attributeIdForChainId = GetAttributeIdForChainId(feedMapping);
             string feedId = FeedName.Parse(feedResourceName).FeedId;

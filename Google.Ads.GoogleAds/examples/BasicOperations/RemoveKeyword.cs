@@ -15,12 +15,12 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example removes a keyword. To get keywords, run GetKeywords.cs.
@@ -60,25 +60,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The customer account ID.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // Id of the ad group that contains the keyword.
-                    options.AdGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
-
-                    // Id of the keyword to be removed.
-                    options.CriterionId = long.Parse("INSERT_CRITERION_ID_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             RemoveKeyword codeExample = new RemoveKeyword();
             Console.WriteLine(codeExample.Description);
@@ -106,7 +88,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService = client.GetService(
-                Services.V10.AdGroupCriterionService);
+                Services.V11.AdGroupCriterionService);
 
             // Create the operation.
             AdGroupCriterionOperation operation = new AdGroupCriterionOperation();
