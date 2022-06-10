@@ -15,13 +15,13 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example links the specified feed item to the specified feed item set. The
@@ -74,28 +74,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // ID of the feed associated with the feed item set.
-                    options.FeedId = long.Parse("INSERT_FEED_ID_HERE");
-
-                    // ID of the feed item set.
-                    options.FeedItemSetId = long.Parse("INSERT_FEED_ITEM_SET_ID_HERE");
-
-                    // ID of the feed item to link to the set.
-                    options.FeedItemId = long.Parse("INSERT_FEED_ITEM_ID_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             LinkFeedItemSet codeExample = new LinkFeedItemSet();
             Console.WriteLine(codeExample.Description);
@@ -125,7 +104,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the FeedItemSetLinkService.
             FeedItemSetLinkServiceClient feedItemSetLinkService = client.GetService(
-                Services.V10.FeedItemSetLinkService);
+                Services.V11.FeedItemSetLinkService);
 
             // Creates a new feed item set link that binds the specified feed item set and feed
             // item.

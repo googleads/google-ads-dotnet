@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V10.Enums.KeywordPlanNetworkEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.KeywordPlanNetworkEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example generates keyword ideas from a list of seed keywords or a seed page URL.
@@ -85,41 +85,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // Location criteria IDs. For example, specify 21167 for New York. For more
-                    // information on determining this value, see
-                    // https://developers.google.com/google-ads/api/reference/data/geotargets.
-                    // Add more items to the array as desired.
-                    options.LocationIds = new long[]
-                    {
-                        long.Parse("INSERT_LOCATION_ID_1_HERE"),
-                        long.Parse("INSERT_LOCATION_ID_2_HERE")
-                    };
-
-                    // A language criterion ID. For example, specify 1000 for English. For more
-                    // information on determining this value, see
-                    // https://developers.google.com/google-ads/api/reference/data/codes-formats#languages.
-                    options.LanguageId = long.Parse("INSERT_LANGUAGE_ID_HERE");
-
-                    // The list of seed keywords.
-                    // Add more items to the array as desired.
-                    options.KeywordTexts = new string[] { "INSERT_KEYWORD_TEXT_HERE" };
-
-                    // The seed page URL.
-                    options.PageUrl = "INSERT_PAGE_URL_HERE";
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             GenerateKeywordIdeas codeExample = new GenerateKeywordIdeas();
             Console.WriteLine(codeExample.Description);
@@ -155,7 +121,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             long languageId, string[] keywordTexts, string pageUrl)
         {
             KeywordPlanIdeaServiceClient keywordPlanIdeaService =
-                client.GetService(Services.V10.KeywordPlanIdeaService);
+                client.GetService(Services.V11.KeywordPlanIdeaService);
 
             // Make sure that keywords and/or page URL were specified. The request must have
             // exactly one of urlSeed, keywordSeed, or keywordAndUrlSeed set.

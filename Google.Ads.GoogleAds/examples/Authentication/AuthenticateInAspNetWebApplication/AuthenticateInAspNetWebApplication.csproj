@@ -55,11 +55,11 @@
     <Reference Include="CommandLine, Version=2.8.0.0, Culture=neutral, PublicKeyToken=5a870481e358d379, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\CommandLineParser.2.8.0\lib\net461\CommandLine.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Ads.Gax, Version=1.0.0.0, Culture=neutral, PublicKeyToken=52807268f2b614dc, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Google.Ads.Gax.1.0.0\lib\net472\Google.Ads.Gax.dll</HintPath>
+    <Reference Include="Google.Ads.Gax, Version=1.0.1.0, Culture=neutral, PublicKeyToken=52807268f2b614dc, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Google.Ads.Gax.1.0.1\lib\net472\Google.Ads.Gax.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Ads.GoogleAds, Version=12.0.0.0, Culture=neutral, PublicKeyToken=52807268f2b614dc, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Google.Ads.GoogleAds.12.0.0\lib\net472\Google.Ads.GoogleAds.dll</HintPath>
+    <Reference Include="Google.Ads.GoogleAds, Version=12.1.0.0, Culture=neutral, PublicKeyToken=52807268f2b614dc, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Google.Ads.GoogleAds.12.1.0\lib\net472\Google.Ads.GoogleAds.dll</HintPath>
     </Reference>
     <Reference Include="Google.Api.CommonProtos, Version=2.3.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Google.Api.CommonProtos.2.4.0\lib\net461\Google.Api.CommonProtos.dll</HintPath>

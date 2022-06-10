@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V10.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.SeasonalityEventScopeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.SeasonalityEventScopeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example adds a channel-level data exclusion that excludes conversions from
@@ -67,27 +67,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // The start date time in yyyy-MM-dd HH:mm:ss format of the data exclusion
-                    // period.
-                    options.StartDateTime = "INSERT_START_DATE_TIME_HERE";
-
-                    // The end date time in yyyy-MM-dd HH:mm:ss format of the data exclusion
-                    // period.
-                    options.EndDateTime = "INSERT_END_DATE_TIME_HERE";
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             AddBiddingDataExclusion codeExample = new AddBiddingDataExclusion();
             Console.WriteLine(codeExample.Description);
@@ -118,7 +98,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the BiddingDataExclusionServiceClient.
             BiddingDataExclusionServiceClient biddingDataExclusionService =
-                client.GetService(Services.V10.BiddingDataExclusionService);
+                client.GetService(Services.V11.BiddingDataExclusionService);
 
             // [START add_bidding_data_exclusion]
             BiddingDataExclusion dataExclusion = new BiddingDataExclusion()

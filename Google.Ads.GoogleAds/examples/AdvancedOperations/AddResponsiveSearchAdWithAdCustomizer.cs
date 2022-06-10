@@ -16,32 +16,32 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Enums;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Enums;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using Google.Protobuf;
 using System.Collections.Generic;
 using System.Linq;
 using System;
-using static Google.Ads.GoogleAds.V10.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.AdvertisingChannelSubTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.AssetFieldTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.AssetGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.AssetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.BiddingStrategyTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.BudgetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.CriterionTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.CustomizerAttributeTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.MediaTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Services.SmartCampaignSuggestionInfo.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdvertisingChannelSubTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AssetGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AssetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.BiddingStrategyTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.BudgetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.CriterionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.CustomizerAttributeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.MediaTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Services.SmartCampaignSuggestionInfo.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// Adds a customizer attribute, links the customizer attribute to a customer, and then adds
@@ -81,25 +81,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // ID of the ad group to which ads are added.
-                    options.AdGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
-
-                    // The name of the customizer attribute
-                    options.CustomizerAttributeName = "INSERT_CUSTOMIZER_ATTRIBUTE_NAME_HERE";
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             AddResponsiveSearchAdWithAdCustomizer codeExample =
                 new AddResponsiveSearchAdWithAdCustomizer();
@@ -186,7 +168,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             };
 
             CustomizerAttributeServiceClient serviceClient =
-                client.GetService(Services.V10.CustomizerAttributeService);
+                client.GetService(Services.V11.CustomizerAttributeService);
 
             // Issues a mutate request to add the customizer attribute and prints its information.
             MutateCustomizerAttributesResponse response =
@@ -235,7 +217,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             };
 
             CustomerCustomizerServiceClient serviceClient =
-                client.GetService(Services.V10.CustomerCustomizerService);
+                client.GetService(Services.V11.CustomerCustomizerService);
 
             // Issues a mutate request to add the customer customizer and prints its information.
             MutateCustomerCustomizersResponse response =
@@ -314,7 +296,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             };
 
             // Issues a mutate request to add the ad group ad and prints its information.
-            AdGroupAdServiceClient serviceClient = client.GetService(Services.V10.AdGroupAdService);
+            AdGroupAdServiceClient serviceClient = client.GetService(Services.V11.AdGroupAdService);
 
             MutateAdGroupAdsResponse response = serviceClient.MutateAdGroupAds(
                 customerId.ToString(),

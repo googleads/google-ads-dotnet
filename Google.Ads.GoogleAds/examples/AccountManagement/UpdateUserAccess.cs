@@ -16,16 +16,16 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using Google.Api.Gax;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V10.Enums.AccessRoleEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AccessRoleEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example updates the access role of a user, given the email address.
@@ -69,29 +69,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            Parser parser = new Parser(settings =>
-            {
-                settings.CaseInsensitiveEnumValues = true;
-            });
-            parser.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // Email address of the user whose access role should be updated.
-                    options.EmailAddress = "INSERT_EMAIL_ADDRESS_HERE";
-
-                    // The updated user access role.
-                    options.AccessRole = (AccessRole) Enum.Parse(typeof(AccessRole),
-                        "INSERT_ACCESS_ROLE_HERE");
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             UpdateUserAccess codeExample = new UpdateUserAccess();
             Console.WriteLine(codeExample.Description);
@@ -153,7 +131,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V10.GoogleAdsService);
+                Services.V11.GoogleAdsService);
 
             // Create the search query. Use the LIKE query for filtering to ignore the text case
             // for email address when searching for a match.
@@ -197,7 +175,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the CustomerUserAccessService.
             CustomerUserAccessServiceClient userAccessService = client.GetService(
-                Services.V10.CustomerUserAccessService);
+                Services.V11.CustomerUserAccessService);
 
             // Creates the modified user access.
             CustomerUserAccess userAccess = new CustomerUserAccess()

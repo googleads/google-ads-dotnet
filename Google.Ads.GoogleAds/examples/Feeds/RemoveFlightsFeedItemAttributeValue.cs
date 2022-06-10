@@ -16,16 +16,16 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using Google.Api.Gax;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V10.Enums.FlightPlaceholderFieldEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.FlightPlaceholderFieldEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// Removes a feed item attribute value of a feed item in a flights feed. To create a flights
@@ -79,29 +79,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // The Feed ID to which the feed item belongs.
-                    options.FeedId = long.Parse("INSERT_FEED_ID_HERE");
-
-                    // The ID of the feed item to be updated.
-                    options.FeedItemId = long.Parse("INSERT_FEED_ITEM_ID_HERE");
-
-                    // The flight placeholder field name for the attribute to be removed.
-                    options.FlightPlaceholderFieldName =
-                        "INSERT_FLIGHT_PLACEHOLDER_FIELD_NAME_HERE";
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             RemoveFlightsFeedItemAttributeValue codeExample =
                 new RemoveFlightsFeedItemAttributeValue();
@@ -133,7 +111,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Creates the Feed Item service client.
             FeedItemServiceClient feedItemServiceClient = client.GetService(
-                Services.V10.FeedItemService);
+                Services.V11.FeedItemService);
 
             try
             {
@@ -197,7 +175,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V10.GoogleAdsService);
+                Services.V11.GoogleAdsService);
 
             string feedResourceName = ResourceNames.Feed(customerId, feedId);
 
@@ -324,7 +302,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Gets the Google Ads service.
             GoogleAdsServiceClient googleAdsServiceClient = client.GetService(
-                Services.V10.GoogleAdsService);
+                Services.V11.GoogleAdsService);
 
             // Constructs the resource name for the feed item.
             string feedItemResourceName = ResourceNames.FeedItem(customerId, feedId, feedItemId);

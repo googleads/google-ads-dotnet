@@ -15,16 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using Google.Api.Gax;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V10.Enums.TimeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.TimeTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This example creates a billing setup for a customer. A billing setup is a link between a
@@ -74,32 +74,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // Either a payments account ID or a payments profile ID must be provided for
-                    // the example to run successfully. If both are provided, only the payments
-                    // account ID will be used.
-                    // See: https://developers.google.com/google-ads/api/docs/billing/billing-setups#creating_new_billing_setups
-                    // Provide an existing payments account ID to link to the new billing setup.
-                    // Must be formatted as "1234-5678-9012-3456".
-                    options.PaymentsAccountId = "INSERT_PAYMENTS_ACCOUNT_ID_HERE";
-
-                    // Alternatively, provide a payments profile ID, which will be linked to a new
-                    // payments account and the new billing setup. Must be formatted as
-                    // "1234-5678-9012".
-                    options.PaymentsProfileId = "INSERT_PAYMENTS_PROFILE_ID_HERE";
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             AddBillingSetup codeExample = new AddBillingSetup();
             Console.WriteLine(codeExample.Description);
@@ -141,11 +116,11 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Gets the GoogleAdsServiceClient.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V10.GoogleAdsService);
+                Services.V11.GoogleAdsService);
 
             // Gets the BillingSetupServiceClient.
             BillingSetupServiceClient billingSetupServiceClient =
-                client.GetService(Services.V10.BillingSetupService);
+                client.GetService(Services.V11.BillingSetupService);
 
             try
             {
