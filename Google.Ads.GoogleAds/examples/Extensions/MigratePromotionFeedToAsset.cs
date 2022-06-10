@@ -15,17 +15,17 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Enums;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Enums;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using Google.Protobuf.Collections;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example retrieves the full details of a Promotion Feed-based extension and
@@ -63,22 +63,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // ID of the extension feed item to migrate.
-                    options.FeedItemId = long.Parse("INSERT_FEED_ITEM_ID_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             MigratePromotionFeedToAsset codeExample = new MigratePromotionFeedToAsset();
             Console.WriteLine(codeExample.Description);
@@ -106,7 +91,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the GoogleAdsService client.
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V10.GoogleAdsService);
+                client.GetService(Services.V11.GoogleAdsService);
 
             string extensionFeedItemResourceName =
                 ResourceNames.ExtensionFeedItem(customerId, feedItemId);
@@ -339,7 +324,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             ExtensionFeedItem extensionFeedItem)
         {
             // Get the Asset Service client.
-            AssetServiceClient assetServiceClient = client.GetService(Services.V10.AssetService);
+            AssetServiceClient assetServiceClient = client.GetService(Services.V11.AssetService);
 
             PromotionFeedItem promotionFeedItem = extensionFeedItem.PromotionFeedItem;
 
@@ -442,7 +427,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
                 return;
             }
 
-            CampaignAssetServiceClient campaignAssetServiceClient = client.GetService(Services.V10
+            CampaignAssetServiceClient campaignAssetServiceClient = client.GetService(Services.V11
                 .CampaignAssetService);
 
             List<CampaignAssetOperation> operations = new List<CampaignAssetOperation>();
@@ -489,7 +474,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
                 return;
             }
 
-            AdGroupAssetServiceClient adGroupAssetServiceClient = client.GetService(Services.V10
+            AdGroupAssetServiceClient adGroupAssetServiceClient = client.GetService(Services.V11
                 .AdGroupAssetService);
 
             List<AdGroupAssetOperation> operations = new List<AdGroupAssetOperation>();

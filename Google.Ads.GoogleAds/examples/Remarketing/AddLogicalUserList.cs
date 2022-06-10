@@ -15,16 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Enums;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Enums;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example creates a combination user list containing users that are present on any
@@ -58,27 +58,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // The IDs of the lists to be used for the new combination user list.
-                    // Add more items to the array as desired.
-                    options.UserListIds = new long[]
-                    {
-                        long.Parse("INSERT_USER_LIST_ID_HERE"),
-                        long.Parse("INSERT_USER_LIST_ID_HERE")
-                    };
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             AddLogicalUserList codeExample = new AddLogicalUserList();
             Console.WriteLine(codeExample.Description);
@@ -105,7 +85,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Gets the UserListService client.
             UserListServiceClient userListServiceClient =
-                client.GetService(Services.V10.UserListService);
+                client.GetService(Services.V11.UserListService);
 
             // Adds each of the provided list IDs to a list of rule operands specifying which lists
             // the operator should target.

@@ -12,7 +12,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using Google.Ads.Gax.Tests.Util;
 using Google.Ads.Gax.Util;
 using Google.Protobuf.WellKnownTypes;
 using NUnit.Framework;
@@ -22,7 +21,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Google.Ads.GoogleAds.Tests.Util
+namespace Google.Ads.Gax.Tests.Util
 {
     /// <summary>
     /// Tests for <see cref="FieldMasks"/> class.

@@ -14,6 +14,8 @@
 
 using System;
 using System.Collections.Generic;
+using System.IO;
+using CommandLine;
 
 namespace Google.Ads.Gax.Examples
 {
@@ -60,6 +62,47 @@ namespace Google.Ads.Gax.Examples
                 rootEx = rootEx.InnerException;
             }
             return String.Join("\nCaused by\n\n", messages.ToArray());
+        }
+
+        /// <summary>
+        /// Parses the command line.
+        /// </summary>
+        /// <typeparam name="T">The type of options.</typeparam>
+        /// <param name="args">The command line arguments.</param>
+        /// <returns>The parsed options.</returns>
+        public static T ParseCommandLine<T>(string[] args) where T : OptionsBase, new()
+        {
+            T options = new T();
+            StringWriter memStream = new StringWriter();
+            Parser parser = new Parser(settings =>
+            {
+                settings.CaseInsensitiveEnumValues = true;
+                settings.AutoHelp = true;
+                settings.HelpWriter = memStream;
+            });
+            bool hasErrors = false;
+            parser.ParseArguments<T>(args).MapResult(
+                delegate (T o)
+                {
+                    options = o;
+                    return 0;
+                }, delegate (IEnumerable<Error> errors)
+                {
+                    // We do not process the errors here, we just flip a flag to mark that
+                    // the error help content in memStream should be inspected and an exception
+                    // should be raised.
+                    hasErrors = true;
+                    return 0;
+                });
+
+            if (hasErrors)
+            {
+                throw new ArgumentException($"Invalid command line parameters\n {memStream}");
+            }
+            else
+            {
+                return options;
+            }
         }
     }
 }

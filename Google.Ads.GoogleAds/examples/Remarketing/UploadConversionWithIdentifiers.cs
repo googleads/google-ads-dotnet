@@ -15,16 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
-using static Google.Ads.GoogleAds.V10.Enums.UserIdentifierSourceEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.UserIdentifierSourceEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example uploads a conversion using hashed email address instead of GCLID.
@@ -88,36 +88,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID for which conversions are uploaded.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // ID of the conversion action for which conversions are uploaded.
-                    options.ConversionActionId = long.Parse("INSERT_CONVERSION_ACTION_ID_HERE");
-
-                    // The email address.
-                    options.EmailAddress = "INSERT_EMAIL_ADDRESS_HERE";
-
-                    // The date time at which the conversion occurred. Must be after the click
-                    // time, and must include the time zone offset. The format is
-                    // 'yyyy-mm-dd hh:mm:ss+|-hh:mm', e.g. '2019-01-01 12:32:45-08:00'.
-                    options.ConversionDateTime = "INSERT_CONVERSION_DATE_TIME_HERE";
-
-                    // The conversion value.
-                    options.ConversionValue = double.Parse("INSERT_CONVERSION_VALUE_HERE");
-
-                    // The unique order ID (transaction ID) of the conversion.
-                    options.OrderId = "INSERT_ORDER_ID_HERE";
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             UploadConversionWithIdentifiers codeExample = new UploadConversionWithIdentifiers();
             Console.WriteLine(codeExample.Description);
@@ -154,7 +125,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the ConversionUploadService.
             ConversionUploadServiceClient conversionUploadService =
-                client.GetService(Services.V10.ConversionUploadService);
+                client.GetService(Services.V11.ConversionUploadService);
 
             // [START create_conversion]
             // Gets the conversion action resource name.

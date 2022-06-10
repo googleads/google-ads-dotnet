@@ -19,7 +19,7 @@ using Google.Ads.GoogleAds.Logging;
 using Grpc.Core;
 using NUnit.Framework;
 
-namespace Google.Ads.GoogleAds.Tests.Logging.V10
+namespace Google.Ads.GoogleAds.Tests.Logging
 {
     /// <summary>
     /// Tests for <see cref="LogEntry"/> class.

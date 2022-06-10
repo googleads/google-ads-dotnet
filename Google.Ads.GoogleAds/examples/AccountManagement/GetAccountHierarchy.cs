@@ -15,13 +15,13 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using Google.Api.Gax;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This example gets the account hierarchy of the specified manager account. If you don't
@@ -61,23 +61,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // Optional manager account ID. If none provided, this method will instead
-                    // list the accounts accessible from the authenticated Google Ads account.
-                    options.ManagerCustomerId = long.Parse("INSERT_MANAGER_CUSTOMER_ID_HERE");
-
-                    // The login customer ID used to create the GoogleAdsClient.
-                    options.LoginCustomerId = long.Parse("INSERT_LOGIN_CUSTOMER_ID_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             GetAccountHierarchy codeExample = new GetAccountHierarchy();
             Console.WriteLine(codeExample.Description);
@@ -115,10 +99,10 @@ namespace Google.Ads.GoogleAds.Examples.V10
             }
 
             GoogleAdsServiceClient googleAdsServiceClient =
-                googleAdsClient.GetService(Services.V10.GoogleAdsService);
+                googleAdsClient.GetService(Services.V11.GoogleAdsService);
 
             CustomerServiceClient customerServiceClient =
-                googleAdsClient.GetService(Services.V10.CustomerService);
+                googleAdsClient.GetService(Services.V11.CustomerService);
 
             // List of Customer IDs to handle.
             List<long> seedCustomerIds = new List<long>();

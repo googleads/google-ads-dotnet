@@ -15,16 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V10.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.ListingGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.ListingGroupTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This example shows how to add a hotel listing group tree, which has two levels. The first
@@ -75,26 +75,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // The ad group ID of the ad group to which the hotel listing will be added.
-                    options.AdGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
-
-                    // The CPC bid micro amount to be set on created ad group criteria.
-                    options.PercentCpcBidMicroAmount =
-                        long.Parse("INSERT_PERCENT_CPC_BID_MICRO_AMOUNT_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             AddHotelListingGroupTree codeExample = new AddHotelListingGroupTree();
             Console.WriteLine(codeExample.Description);
@@ -143,7 +124,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the AdGroupCriterionService client.
             AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V10.AdGroupCriterionService);
+                client.GetService(Services.V11.AdGroupCriterionService);
 
             List<AdGroupCriterionOperation> operations = new List<AdGroupCriterionOperation>();
 

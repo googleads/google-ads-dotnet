@@ -155,6 +155,17 @@
         }
       },
       "expectedMask": "foo.baz"
+    },
+    {
+      "description": "Empty message field 2",
+      "originalResource": {
+      },
+      "modifiedResource": {
+        "foo": {
+          "bar": {}
+        }
+      },
+      "expectedMask": "foo.bar"
     }
   ]
 }

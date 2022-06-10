@@ -15,21 +15,21 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V10.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V10.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example creates a hotel campaign, a hotel ad group and hotel ad group ad.
@@ -80,38 +80,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // Specify your Hotels account ID below. You can see how to find the account ID
-                    // in the Hotel Ads Center at: https://support.google.com/hotelprices/answer/6399770.
-                    // This ID is the same account ID that you use in API requests to the Travel
-                    // Partner APIs (https://developers.google.com/hotels/hotel-ads/api-reference/).
-                    options.HotelCenterAccountId =
-                        long.Parse("INSERT_HOTEL_CENTER_ACCOUNT_ID_HERE");
-
-                    // Optional: Specify the maximum bid limit that can be set when creating a
-                    // campaign using the Percent CPC bidding strategy.
-                    long? cpcBidCeilingMicroAmount = CPC_BID_CEILING_MICRO_AMOUNT;
-
-                    long tempVal = 0;
-                    if (long.TryParse("INSERT_CPC_BID_CEILING_MICRO_AMOUNT", out tempVal))
-                    {
-                        cpcBidCeilingMicroAmount = tempVal;
-                    }
-
-                    options.CpcBidCeilingMicroAmount = cpcBidCeilingMicroAmount.Value;
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             AddHotelAd codeExample = new AddHotelAd();
             Console.WriteLine(codeExample.Description);
@@ -180,7 +149,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the CampaignBudgetService.
             CampaignBudgetServiceClient service = client.GetService(
-                Services.V10.CampaignBudgetService);
+                Services.V11.CampaignBudgetService);
 
             // Create a campaign budget.
             CampaignBudget budget = new CampaignBudget()
@@ -219,7 +188,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             string budgetResourceName, long hotelCenterAccountId, long cpcBidCeilingMicroAmount)
         {
             // Get the CampaignService.
-            CampaignServiceClient service = client.GetService(Services.V10.CampaignService);
+            CampaignServiceClient service = client.GetService(Services.V11.CampaignService);
 
             // [START add_hotel_ad_1]
             // Create a campaign.
@@ -285,7 +254,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             string campaignResourceName)
         {
             // Get the AdGroupService.
-            AdGroupServiceClient service = client.GetService(Services.V10.AdGroupService);
+            AdGroupServiceClient service = client.GetService(Services.V11.AdGroupService);
 
             // Create an ad group.
             AdGroup adGroup = new AdGroup()
@@ -328,7 +297,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             string adGroupResourceName)
         {
             // Get the AdGroupAdService.
-            AdGroupAdServiceClient service = client.GetService(Services.V10.AdGroupAdService);
+            AdGroupAdServiceClient service = client.GetService(Services.V11.AdGroupAdService);
 
             // Create a new ad group ad and sets the hotel ad to it.
             AdGroupAd adGroupAd = new AdGroupAd()

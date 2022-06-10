@@ -15,17 +15,17 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V10.Enums.ExtensionTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.AssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.ExtensionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AssetFieldTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This example adds a hotel callout extension to a specific account, campaign within the
@@ -61,23 +61,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // The language code for the text. See supported languages at:
-                    // https://developers.google.com/hotels/hotel-ads/api-reference/language-codes.
-                    options.LanguageCode = "INSERT_LANGUAGE_CODE_HERE";
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             AddHotelCallout codeExample = new AddHotelCallout();
             Console.WriteLine(codeExample.Description);
@@ -162,7 +146,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
 
             // Issues the create request to create the assets.
 
-            AssetServiceClient assetClient = client.GetService(Services.V10.AssetService);
+            AssetServiceClient assetClient = client.GetService(Services.V11.AssetService);
             MutateAssetsResponse response =
                 assetClient.MutateAssets(customerId.ToString(), operations);
             List<MutateAssetResult> results = response.Results.ToList();
@@ -208,7 +192,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
 
             // Issues the create request to add the callout.
             CustomerAssetServiceClient customerAssetServiceClient =
-                client.GetService(Services.V10.CustomerAssetService);
+                client.GetService(Services.V11.CustomerAssetService);
 
             MutateCustomerAssetsResponse response =
               customerAssetServiceClient.MutateCustomerAssets(customerId.ToString(),
