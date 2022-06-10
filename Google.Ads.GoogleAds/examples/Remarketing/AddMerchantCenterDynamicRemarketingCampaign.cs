@@ -17,21 +17,21 @@ using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V10.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.AssetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.DisplayAdFormatSettingEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AssetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.DisplayAdFormatSettingEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example creates a shopping campaign associated with an existing Merchant Center
@@ -81,29 +81,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // ID of the Merchant Center account to be associated with the new campaign.
-                    options.MerchantCenterAccountId =
-                        long.Parse("INSERT_MERCHANT_CENTER_ACCOUNT_ID_HERE");
-
-                    // ID of the campaign budget to be associated with the new campaign.
-                    options.CampaignBudgetId = long.Parse("INSERT_CAMPAIGN_BUDGET_ID_HERE");
-
-                    // ID of the user list to be used for remarketing.
-                    options.UserListId = long.Parse("INSERT_USER_LIST_ID_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             AddMerchantCenterDynamicRemarketingCampaign codeExample =
                 new AddMerchantCenterDynamicRemarketingCampaign();
@@ -173,7 +151,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Creates the Campaign Service client.
             CampaignServiceClient campaignServiceClient =
-                client.GetService(Services.V10.CampaignService);
+                client.GetService(Services.V11.CampaignService);
 
             string budgetResourceName = ResourceNames.CampaignBudget(customerId, campaignBudgetId);
 
@@ -229,7 +207,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Creates the ad group service client.
             AdGroupServiceClient adGroupServiceClient =
-                client.GetService(Services.V10.AdGroupService);
+                client.GetService(Services.V11.AdGroupService);
 
             // Creates the ad group.
             AdGroup adGroup = new AdGroup()
@@ -266,7 +244,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Creates the ad group ad service client.
             AdGroupAdServiceClient adGroupAdServiceClient =
-                client.GetService(Services.V10.AdGroupAdService);
+                client.GetService(Services.V11.AdGroupAdService);
 
             string marketingImageUrl = "https://gaagl.page.link/Eit5";
             string marketingImageName = "Marketing Image";
@@ -379,7 +357,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             string imageUrl, string assetName)
         {
             // Creates the asset service client.
-            AssetServiceClient assetServiceClient = client.GetService(Services.V10.AssetService);
+            AssetServiceClient assetServiceClient = client.GetService(Services.V11.AssetService);
 
             byte[] imageData = MediaUtilities.GetAssetDataFromUrl(imageUrl, client.Config);
 
@@ -421,7 +399,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Creates the ad group criterion service client.
             AdGroupCriterionServiceClient adGroupCriterionServiceClient = client.GetService
-                (Services.V10.AdGroupCriterionService);
+                (Services.V11.AdGroupCriterionService);
 
             string userListResourceName = ResourceNames.UserList(customerId, userListId);
 

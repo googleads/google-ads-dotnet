@@ -15,24 +15,24 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V10.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.AdvertisingChannelSubTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.ListingGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdvertisingChannelSubTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.ListingGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example creates a Smart Shopping campaign, a Smart Shopping ad group, a Smart
@@ -83,30 +83,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // The Merchant Center account ID.
-                    options.MerchantCenterAccountId =
-                        long.Parse("INSERT_MERCHANT_CENTER_ACCOUNT_ID_HERE");
-
-                    // The boolean to indicate if a default listing group should be created for
-                    // the ad group. Set to false if the listing group will be constructed
-                    // elsewhere.  See AddShoppingListingGroupTree for a more comprehensive
-                    // example.
-                    options.CreateDefaultListingGroup =
-                        bool.Parse("INSERT_CREATE_DEFAULT_LISTING_GROUP_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             AddShoppingSmartAd codeExample = new AddShoppingSmartAd();
             Console.WriteLine(codeExample.Description);
@@ -187,7 +164,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the CampaignBudgetService.
             CampaignBudgetServiceClient campaignBudgetService =
-                client.GetService(Services.V10.CampaignBudgetService);
+                client.GetService(Services.V11.CampaignBudgetService);
 
             CampaignBudget budget = new CampaignBudget()
             {
@@ -228,7 +205,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the CampaignService.
             CampaignServiceClient campaignService =
-                client.GetService(Services.V10.CampaignService);
+                client.GetService(Services.V11.CampaignService);
 
             // Configures the shopping settings.
             ShoppingSetting shoppingSetting = new ShoppingSetting()
@@ -308,7 +285,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
                     string campaignResourceName)
         {
             // Get the AdGroupService.
-            AdGroupServiceClient adGroupService = client.GetService(Services.V10.AdGroupService);
+            AdGroupServiceClient adGroupService = client.GetService(Services.V11.AdGroupService);
 
             // Creates an ad group.
             AdGroup adGroup = new AdGroup()
@@ -355,7 +332,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the AdGroupAdService.
             AdGroupAdServiceClient adGroupAdService = client.GetService(
-                Services.V10.AdGroupAdService);
+                Services.V11.AdGroupAdService);
 
             // Creates a new shopping product ad.
             Ad ad = new Ad()
@@ -411,7 +388,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService = client.GetService(
-                Services.V10.AdGroupCriterionService);
+                Services.V11.AdGroupCriterionService);
 
             // Creates a new ad group criterion. This will contain the "default" listing group (All
             // products).

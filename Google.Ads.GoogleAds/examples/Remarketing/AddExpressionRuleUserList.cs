@@ -15,18 +15,18 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V10.Enums.UserListMembershipStatusEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.UserListPrepopulationStatusEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.UserListStringRuleItemOperatorEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.UserListMembershipStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.UserListPrepopulationStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.UserListStringRuleItemOperatorEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example creates a rule-based user list defined by an expression rule for users who
@@ -53,19 +53,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID to which the new user list will be added.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             AddExpressionRuleUserList codeExample = new AddExpressionRuleUserList();
             Console.WriteLine(codeExample.Description);
@@ -90,7 +78,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Gets the UserListService.
             UserListServiceClient userListServiceClient =
-                client.GetService(Services.V10.UserListService);
+                client.GetService(Services.V11.UserListService);
 
             // Creates the user targeting rules for each URL.
             UserListRuleItemInfo rule1 = BuildVisitedSiteRuleInfo("example.com/section1");

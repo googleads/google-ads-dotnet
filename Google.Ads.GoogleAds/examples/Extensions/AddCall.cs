@@ -16,26 +16,26 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Enums;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Enums;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using Google.Protobuf;
 using System.Collections.Generic;
 using System.Linq;
 using System;
 using System.Threading;
-using static Google.Ads.GoogleAds.V10.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.AssetFieldTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.CallConversionReportingStateEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.DayOfWeekEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.MinuteOfHourEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.CallConversionReportingStateEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.DayOfWeekEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.MinuteOfHourEnum.Types;
 
 using SystemDayOfWeek = System.DayOfWeek;
-using DayOfWeek = Google.Ads.GoogleAds.V10.Enums.DayOfWeekEnum.Types.DayOfWeek;
+using DayOfWeek = Google.Ads.GoogleAds.V11.Enums.DayOfWeekEnum.Types.DayOfWeek;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This example adds a call extension to a specific account.
@@ -87,28 +87,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // The phone number country.
-                    options.PhoneCountry = "US";
-
-                    // The phone number itself.
-                    options.PhoneNumber = "INSERT_PHONE_NUMBER_HERE";
-
-                    // The conversion action ID.
-                    options.ConversionActionId = long.Parse("INSERT_CONVERSION_ACTION_ID_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             AddCall codeExample = new AddCall();
             Console.WriteLine(codeExample.Description);
@@ -230,7 +209,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             };
 
             AssetServiceClient assetServiceClient =
-                client.GetService(Services.V10.AssetService);
+                client.GetService(Services.V11.AssetService);
 
             // Issues a mutate request to add the asset and prints its information.
             MutateAssetsResponse response = assetServiceClient.MutateAssets(
@@ -269,7 +248,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             };
 
             CustomerAssetServiceClient customerAssetServiceClient =
-                client.GetService(Services.V10.CustomerAssetService);
+                client.GetService(Services.V11.CustomerAssetService);
 
             // Issues a mutate request to add the customer asset and prints its information.
             MutateCustomerAssetsResponse response = customerAssetServiceClient.MutateCustomerAssets(

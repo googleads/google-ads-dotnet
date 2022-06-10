@@ -15,12 +15,12 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example imports offline call conversion values for calls related to the
@@ -89,37 +89,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID for whom the conversion action will be added.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // The caller ID in E.164 format with preceding '+' sign. e.g. "+16502531234".
-                    options.CallerId = "INSERT_CALLER_ID_HERE";
-
-                    // The call start time in "yyyy-mm-dd hh:mm:ss+|-hh:mm" format.
-                    options.CallStartTime = "INSERT_CALL_START_TIME_HERE";
-
-                    // The conversion time in "yyyy-mm-dd hh:mm:ss+|-hh:mm" format.
-                    options.ConversionTime = "INSERT_CONVERSION_TIME_HERE";
-
-                    // The conversion value.
-                    options.ConversionValue = double.Parse("INSERT_CONVERSION_VALUE_HERE");
-
-                    // Optional: Set the custom conversion variable ID and value.
-                    //options.ConversionCustomVariableId =
-                    //    long.Parse("INSERT_CONVERSION_CUSTOM_VARIABLE_ID_HERE");
-                    //options.ConversionCustomVariableValue =
-                    //    "INSERT_CONVERSION_CUSTOM_VARIABLE_VALUE_HERE";
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             UploadCallConversion codeExample = new UploadCallConversion();
             Console.WriteLine(codeExample.Description);
@@ -160,7 +130,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the ConversionUploadService.
             ConversionUploadServiceClient conversionUploadService =
-                client.GetService(Services.V10.ConversionUploadService);
+                client.GetService(Services.V11.ConversionUploadService);
 
             // Create a call conversion by specifying currency as USD.
             CallConversion callConversion = new CallConversion()

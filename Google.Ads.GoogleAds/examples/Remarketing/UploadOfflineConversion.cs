@@ -15,13 +15,13 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example imports offline conversion values for specific clicks to your account.
@@ -95,33 +95,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID for the conversion action is added.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // The conversion action ID.
-                    options.ConversionActionId = long.Parse("INSERT_CONVERSION_ACTION_ID_HERE");
-
-                    // The conversion time in "yyyy-mm-dd hh:mm:ss+|-hh:mm" format.
-                    options.ConversionTime = "INSERT_CONVERSION_TIME_HERE";
-
-                    // Set exactly one of gclid, gbraid, or wbraid.
-                    options.Gclid = "INSERT_GCLID_HERE";
-                    options.Wbraid = null;
-                    options.Gbraid = null;
-
-                    // The convsersion value.
-                    options.ConversionValue = double.Parse("INSERT_CONVERSION_VALUE_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             UploadOfflineConversion codeExample = new UploadOfflineConversion();
             Console.WriteLine(codeExample.Description);
@@ -162,7 +136,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the ConversionActionService.
             ConversionUploadServiceClient conversionUploadService =
-                client.GetService(Services.V10.ConversionUploadService);
+                client.GetService(Services.V11.ConversionUploadService);
 
             // Creates a click conversion by specifying currency as USD.
             ClickConversion clickConversion = new ClickConversion()

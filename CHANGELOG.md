@@ -1,3 +1,27 @@
+12.1.0
+======
+
+- Added support for version v11 of the Google Ads API.
+- Added new code examples:
+  - CampaignManagement\CreateExperiment.cs
+  - Recommendations\DetectAndApplyRecommendations.cs
+- Removed some code examples:
+  - CampaignManagement\CreateCampaignExperiment.cs
+  - CampaignManagement\GraduateCampaignExperiment.cs
+- Updated some code examples
+  - Fixed the AddSmartCampaign.cs example to use BusinessProfileLocation instead of BusinessProfileId
+- Fixed the protobuf key name in the user agent header.
+- Updated all code examples to remove INSERT_XXX_ placeholders from the Main() method.
+- Added an additional test case to ensure that FieldMask handles empty messages correctly.
+- Made more changes related to the Google.Ads.Gax refactoring.
+  - Deleted an orphaned file.
+  - Fixed some incorrect namespaces.
+  - Fixed the internal visibility of Google.Ads.Gax assembly to a bunch of additional assemblies.
+  - Extract some common test utilities into a separate assembly.
+- Added a THIRD-PARTY-LICENSE.txt that captures the licenses of all the third_party transitive
+  dependencies into a single file. This file will also be embedded into the nupkg distribution.
+- Fixed an NPE when initalizing GoogleAdsException without metadata. Fixes https://github.com/googleads/google-ads-dotnet/issues/402
+
 12.0.0
 ======
 - The project was split into two assemblies -- Google.Ads.Gax and Google.Ads.GoogleAds. This was
