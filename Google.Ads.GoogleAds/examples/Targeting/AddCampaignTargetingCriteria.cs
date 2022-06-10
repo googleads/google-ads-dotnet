@@ -15,16 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V10.Enums.KeywordMatchTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.ProximityRadiusUnitsEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.KeywordMatchTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.ProximityRadiusUnitsEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example illustrates adding campaign targeting criteria.
@@ -71,28 +71,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // ID of the campaign to which targeting criteria are added.
-                    options.CampaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
-
-                    // The keyword text for which to add a criterion.
-                    options.KeywordText = "INSERT_KEYWORD_TEXT_HERE";
-
-                    // The locationId for which to add a criterion.
-                    options.LocationId = long.Parse("INSERT_LOCATION_ID_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             AddCampaignTargetingCriteria codeExample = new AddCampaignTargetingCriteria();
             Console.WriteLine(codeExample.Description);
@@ -123,7 +102,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the CampaignCriterionService.
             CampaignCriterionServiceClient campaignCriterionService =
-                client.GetService(Services.V10.CampaignCriterionService);
+                client.GetService(Services.V11.CampaignCriterionService);
 
             // Set the Campaign Resource Name
             string campaignResourceName = ResourceNames.Campaign(customerId, campaignId);

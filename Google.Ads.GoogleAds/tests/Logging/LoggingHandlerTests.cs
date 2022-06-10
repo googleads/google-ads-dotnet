@@ -12,13 +12,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using Google.Ads.Gax.Lib;
 using Google.Ads.Gax.Logging;
 using Google.Ads.Gax.Tests;
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Logging;
-using Google.Ads.GoogleAds.Tests.V10;
 using Google.Ads.GoogleAds.Util;
 using Grpc.Core;
 using Grpc.Core.Interceptors;
@@ -26,10 +24,9 @@ using NUnit.Framework;
 using System;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.Threading.Tasks;
 
-namespace Google.Ads.GoogleAds.Tests.Logging.V10
+namespace Google.Ads.GoogleAds.Tests.Logging
 {
     /// <summary>
     /// Tests for <see cref="LoggingHandler"/> class.

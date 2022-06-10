@@ -15,23 +15,23 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V10.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.WebpageConditionOperandEnum.Types;
-using static Google.Ads.GoogleAds.V10.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.WebpageConditionOperandEnum.Types;
+using static Google.Ads.GoogleAds.V11.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example adds dynamic search ads to a given ad group. To list
@@ -58,19 +58,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             AddDynamicSearchAds codeExample = new AddDynamicSearchAds();
             Console.WriteLine(codeExample.Description);
@@ -119,7 +107,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the CampaignBudgetService.
             CampaignBudgetServiceClient campaignBudgetService =
-                client.GetService(Services.V10.CampaignBudgetService);
+                client.GetService(Services.V11.CampaignBudgetService);
 
             // Create the budget.
             CampaignBudget campaignBudget = new CampaignBudget()
@@ -158,7 +146,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             string budgetResourceName)
         {
             // Get the CampaignService.
-            CampaignServiceClient campaignService = client.GetService(Services.V10.CampaignService);
+            CampaignServiceClient campaignService = client.GetService(Services.V11.CampaignService);
 
             // Create the campaign.
             Campaign campaign = new Campaign()
@@ -208,7 +196,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             string campaignResourceName)
         {
             // Get the AdGroupService.
-            AdGroupServiceClient adGroupService = client.GetService(Services.V10.AdGroupService);
+            AdGroupServiceClient adGroupService = client.GetService(Services.V11.AdGroupService);
 
             // Create the ad group.
             AdGroup adGroup = new AdGroup()
@@ -250,7 +238,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the AdGroupAdService.
             AdGroupAdServiceClient adGroupAdService =
-                client.GetService(Services.V10.AdGroupAdService);
+                client.GetService(Services.V11.AdGroupAdService);
 
             // Create an ad group ad.
             AdGroupAd adGroupAd = new AdGroupAd()
@@ -294,7 +282,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V10.AdGroupCriterionService);
+                client.GetService(Services.V11.AdGroupCriterionService);
 
             // Create the criterion.
             AdGroupCriterion adGroupCriterion = new AdGroupCriterion()

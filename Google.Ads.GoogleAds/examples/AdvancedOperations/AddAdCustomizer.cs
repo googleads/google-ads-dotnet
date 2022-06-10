@@ -15,18 +15,18 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V10.Enums.AdCustomizerPlaceholderFieldEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.FeedAttributeTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.PlaceholderTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdCustomizerPlaceholderFieldEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.FeedAttributeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.PlaceholderTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example adds an ad customizer feed and associates it with the customer.
@@ -60,27 +60,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // ID of the ad groups to which ad customizers are added.
-                    // Add more items to the array as desired.
-                    options.AdGroupIds = new long[]
-                    {
-                        long.Parse("INSERT_AD_GROUP_ID_HERE"),
-                        long.Parse("INSERT_AD_GROUP_ID_HERE"),
-                    };
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             AddAdCustomizer codeExample = new AddAdCustomizer();
             Console.WriteLine(codeExample.Description);
@@ -105,7 +85,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the AdGroupBidModifierService.
             AdGroupBidModifierServiceClient adGroupBidModifierService =
-                client.GetService(Services.V10.AdGroupBidModifierService);
+                client.GetService(Services.V11.AdGroupBidModifierService);
 
             string feedName = "Ad_Customizer_example_feed_" +
                 ExampleUtilities.GetShortRandomString();
@@ -159,7 +139,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             string feedName)
         {
             // Get the FeedServiceClient.
-            FeedServiceClient feedService = client.GetService(Services.V10.FeedService);
+            FeedServiceClient feedService = client.GetService(Services.V11.FeedService);
 
             // Creates three feed attributes: a name, a price and a date. The attribute names
             // are arbitrary choices and will be used as placeholders in the ad text fields.
@@ -215,7 +195,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the GoogleAdsServiceClient.
             GoogleAdsServiceClient googleAdsService =
-                client.GetService(Services.V10.GoogleAdsService);
+                client.GetService(Services.V11.GoogleAdsService);
 
             string query = $"SELECT feed.attributes, feed.name FROM feed WHERE " +
                 $"feed.resource_name = '{feedResourceName}'";
@@ -255,7 +235,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the FeedMappingService.
             FeedMappingServiceClient feedMappingService =
-                client.GetService(Services.V10.FeedMappingService);
+                client.GetService(Services.V11.FeedMappingService);
 
             // Map the feed attributes to ad customizer placeholder fields.
             // For a full list of ad customizer placeholder fields, see
@@ -312,7 +292,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the FeedItemServiceClient.
             FeedItemServiceClient feedItemService =
-                client.GetService(Services.V10.FeedItemService);
+                client.GetService(Services.V11.FeedItemService);
 
             List<FeedItemOperation> feedItemOperations = new List<FeedItemOperation>();
 
@@ -401,7 +381,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the FeedItemTargetServiceClient.
             FeedItemTargetServiceClient feedItemTargetService =
-                client.GetService(Services.V10.FeedItemTargetService);
+                client.GetService(Services.V11.FeedItemTargetService);
 
             // Bind each feed item to a specific ad group to make sure it will only be used to
             // customize ads inside that ad group; using the feed item elsewhere will result
@@ -446,7 +426,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the AdGroupAdServiceClient.
             AdGroupAdServiceClient adGroupAdService =
-                client.GetService(Services.V10.AdGroupAdService);
+                client.GetService(Services.V11.AdGroupAdService);
 
             // Creates an expanded text ad using the feed attribute names as placeholders.
             Ad ad = new Ad()

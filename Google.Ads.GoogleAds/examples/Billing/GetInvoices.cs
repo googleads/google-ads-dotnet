@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V10.Enums.MonthOfYearEnum.Types;
-using static Google.Ads.GoogleAds.V10.Resources.Invoice.Types;
+using static Google.Ads.GoogleAds.V11.Enums.MonthOfYearEnum.Types;
+using static Google.Ads.GoogleAds.V11.Resources.Invoice.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example retrieves the invoices issued last month for a given billing setup.
@@ -56,22 +56,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // The billing setup ID for which to request invoices.
-                    options.BillingSetupId = long.Parse("INSERT_BILLING_SETUP_ID_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             GetInvoices codeExample = new GetInvoices();
             Console.WriteLine(codeExample.Description);
@@ -94,7 +79,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the InvoiceService client.
             InvoiceServiceClient invoiceServiceClient =
-                client.GetService(Services.V10.InvoiceService);
+                client.GetService(Services.V11.InvoiceService);
 
             // Get the last month before today.
             DateTime lastMonthDateTime = DateTime.Today.AddMonths(-1);

@@ -15,12 +15,12 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example illustrates getting GeoTargetConstants by given location names.
@@ -40,16 +40,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             GetGeoTargetConstantsByNames codeExample = new GetGeoTargetConstantsByNames();
             Console.WriteLine(codeExample.Description);
@@ -71,7 +62,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the GeoTargetConstantServiceClient.
             GeoTargetConstantServiceClient geoService =
-                client.GetService(Services.V10.GeoTargetConstantService);
+                client.GetService(Services.V11.GeoTargetConstantService);
 
             // Locale is using ISO 639-1 format. If an invalid locale is given,
             // 'en' is used by default.

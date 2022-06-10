@@ -15,13 +15,13 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V10.Enums.ConversionAdjustmentTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.ConversionAdjustmentTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example imports conversion adjustments for conversions that already exist.
@@ -90,39 +90,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID for which the conversion action is added.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // ID of the conversion action for which adjustments are uploaded.
-                    options.ConversionActionId = long.Parse("INSERT_CONVERSION_ACTION_ID_HERE");
-
-                    // The type of adjustment.
-                    options.AdjustmentType =
-                       (ConversionAdjustmentType) Enum.Parse(
-                           typeof(ConversionAdjustmentType), "INSERT_ADJUSTMENT_TYPE_HERE");
-
-                    // The original conversion time.
-                    options.ConversionDateTime = "INSERT_CONVERSION_DATE_TIME_HERE";
-
-                    // The Google Click ID for which adjustments are uploaded.
-                    options.Gclid = "INSERT_GCLID_HERE";
-
-                    // The adjustment time in "yyyy-mm-dd hh:mm:ss+|-hh:mm" format.
-                    options.AdjustmentDateTime = "INSERT_ADJUSTMENT_DATE_TIME_HERE";
-
-                    // The restatement value.
-                    options.RestatementValue = double.Parse("INSERT_RESTATEMENT_VALUE_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             UploadConversionAdjustment codeExample = new UploadConversionAdjustment();
             Console.WriteLine(codeExample.Description);
@@ -159,7 +127,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the ConversionAdjustmentUploadService.
             ConversionAdjustmentUploadServiceClient conversionAdjustmentUploadService =
-                client.GetService(Services.V10.ConversionAdjustmentUploadService);
+                client.GetService(Services.V11.ConversionAdjustmentUploadService);
 
             // Associate conversion adjustments with the existing conversion action.
             // The GCLID should have been uploaded before with a conversion.

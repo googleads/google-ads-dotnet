@@ -15,17 +15,17 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V10.Enums.FeedAttributeTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.PlaceholderTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.RealEstatePlaceholderFieldEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.FeedAttributeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.PlaceholderTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.RealEstatePlaceholderFieldEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example adds a real estate feed, creates the feed mapping, and adds items to
@@ -52,19 +52,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID for which the real estate feed is added.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             AddRealEstateFeed codeExample = new AddRealEstateFeed();
             Console.WriteLine(codeExample.Description);
@@ -122,7 +110,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         private string CreateFeed(GoogleAdsClient client, long customerId)
         {
             // Get the FeedService.
-            FeedServiceClient feedService = client.GetService(Services.V10.FeedService);
+            FeedServiceClient feedService = client.GetService(Services.V11.FeedService);
 
             // Creates a Listing ID attribute.
             FeedAttribute listingIdAttribute = new FeedAttribute()
@@ -211,7 +199,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V10.GoogleAdsService);
+                Services.V11.GoogleAdsService);
 
             // Constructs the query.
             string query = $"SELECT feed.attributes FROM feed WHERE feed.resource_name = " +
@@ -282,7 +270,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the FeedMappingServiceClient.
             FeedMappingServiceClient feedMappingService = client.GetService(
-                Services.V10.FeedMappingService);
+                Services.V11.FeedMappingService);
 
             // Maps the FeedAttributeIds to the placeholder values. The FeedAttributeId is the
             // ID of the FeedAttribute created in the CreatedFeed method. This can be thought of
@@ -371,7 +359,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the FeedItemServiceClient.
             FeedItemServiceClient feedItemService = client.GetService(
-                Services.V10.FeedItemService);
+                Services.V11.FeedItemService);
 
             // Creates the listing ID feed attribute value.
             FeedItemAttributeValue listingId = new FeedItemAttributeValue()

@@ -16,20 +16,20 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V10.Enums.DsaPageFeedCriterionFieldEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.FeedAttributeTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.FeedMappingCriterionTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.WebpageConditionOperandEnum.Types;
-using static Google.Ads.GoogleAds.V10.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V11.Enums.DsaPageFeedCriterionFieldEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.FeedAttributeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.FeedMappingCriterionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.WebpageConditionOperandEnum.Types;
+using static Google.Ads.GoogleAds.V11.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example adds a page feed to specify precisely which URLs to use with your
@@ -72,25 +72,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // ID of the campaign for which dynamic page feeds are added.
-                    options.CampaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
-
-                    // ID of the ad group for which dynamic page feeds are added.
-                    options.AdGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             AddDynamicPageFeed codeExample = new AddDynamicPageFeed();
             Console.WriteLine(codeExample.Description);
@@ -157,7 +139,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         private string CreateFeed(GoogleAdsClient client, long customerId)
         {
             // Get the FeedService.
-            FeedServiceClient feedService = client.GetService(Services.V10.FeedService);
+            FeedServiceClient feedService = client.GetService(Services.V11.FeedService);
 
             // Create a URL attribute.
             FeedAttribute urlAttribute = new FeedAttribute()
@@ -211,7 +193,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V10.GoogleAdsService);
+                Services.V11.GoogleAdsService);
 
             // Construct the query.
             String query = $"SELECT feed.attributes FROM feed WHERE feed.resource_name" +
@@ -267,7 +249,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the FeedMappingService.
             FeedMappingServiceClient feedMappingService = client.GetService(
-                Services.V10.FeedMappingService);
+                Services.V11.FeedMappingService);
 
             FeedMapping feedMapping = new FeedMapping()
             {
@@ -325,7 +307,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the FeedItemService.
             FeedItemServiceClient feedItemService = client.GetService(
-                Services.V10.FeedItemService);
+                Services.V11.FeedItemService);
 
             List<string> urls = new List<string>
             {
@@ -390,7 +372,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the CampaignService.
             CampaignServiceClient campaignService = client.GetService(
-                Services.V10.CampaignService);
+                Services.V11.CampaignService);
 
             DynamicSearchAdsSetting dsaSetting = GetDsaSetting(client, customerId, campaignId);
             dsaSetting.Feeds.Add(feedResourceName);
@@ -435,7 +417,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V10.GoogleAdsService);
+                Services.V11.GoogleAdsService);
 
             // Creates the query.
             // You must request all DSA fields in order to update the DSA settings in the
@@ -478,7 +460,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService = client.GetService(
-                Services.V10.AdGroupCriterionService);
+                Services.V11.AdGroupCriterionService);
 
             // Create the webpage condition info.
             WebpageConditionInfo webpageConditionInfo = new WebpageConditionInfo()

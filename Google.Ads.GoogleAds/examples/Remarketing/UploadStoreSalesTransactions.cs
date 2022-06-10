@@ -20,14 +20,14 @@ using System.Text;
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
-using static Google.Ads.GoogleAds.V10.Enums.OfflineUserDataJobStatusEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.OfflineUserDataJobTypeEnum.Types;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
+using static Google.Ads.GoogleAds.V11.Enums.OfflineUserDataJobStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.OfflineUserDataJobTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example uploads offline data for store sales transactions.
@@ -175,66 +175,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate(Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate(IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // The ID of a store sales conversion action.
-                    options.ConversionActionId = long.Parse("INSERT_CONVERSION_ACTION_ID_HERE");
-
-                    // The type of user data in the job (first or third party). If you have an
-                    // official store sales partnership with Google, use StoreSalesUploadThirdParty.
-                    // Otherwise, use StoreSalesUploadFirstParty or omit this parameter.
-                    options.OfflineUserDataJobType =
-                        OfflineUserDataJobType.StoreSalesUploadFirstParty;
-
-                    // Optional (but recommended) external ID to identify the offline user data job.
-                    options.ExternalId = long.Parse("INSERT_EXTERNAL_ID_HERE");
-
-                    // Date and time the advertiser uploaded data to the partner. Only required
-                    // if uploading third party data.
-                    options.AdvertiserUploadDateTime = "INSERT_ADVERTISER_UPLOAD_DATE_TIME_HERE";
-
-                    // Version of partner IDs to be used for uploads. Only required if uploading
-                    // third party data.
-                    options.BridgeMapVersionId = "INSERT_BRIDGE_MAP_VERSION_ID_HERE";
-
-                    // ID of the third party partner. Only required if uploading third party data.
-                    options.PartnerId = long.Parse("INSERT_PARTNER_ID_HERE");
-
-                    // Optional custom key name. Only required if uploading data with custom key
-                    // and values.
-                    options.CustomKey = "INSERT_CUSTOM_KEY_HERE";
-
-                    // A unique identifier of a product, either the Merchant Center Item ID or Global Trade
-                    // Item Number (GTIN). Only required if uploading with item attributes.
-                    options.ItemId = "INSERT_ITEM_ID_HERE";
-
-                    // A Merchant Center Account ID. Only required if uploading with item
-                    // attributes.
-                    options.MerchantCenterAccountId =
-                        long.Parse("INSERT_MERCHANT_CENTER_ACCOUNT_ID_HERE");
-
-                    // A two-letter country code of the location associated with the feed where your
-                    // items are uploaded. Only required if uploading with item attributes.
-                    options.CountryCode = "INSERT_COUNTRY_CODE_HERE";
-
-                    // A two-letter language code of the language associated with the feed where
-                    // your items are uploaded. Only required if uploading with item attributes.
-                    options.LanguageCode = "INSERT_LANGUAGE_CODE_HERE";
-
-                    // The number of items sold. Only required if uploading with item attributes.
-                    options.Quantity = long.Parse("INSERT_QUANTITY_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             UploadStoreSalesTransactions codeExample = new UploadStoreSalesTransactions();
             Console.WriteLine(codeExample.Description);
@@ -303,7 +244,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the OfflineUserDataJobServiceClient.
             OfflineUserDataJobServiceClient offlineUserDataJobServiceClient =
-                client.GetService(Services.V10.OfflineUserDataJobService);
+                client.GetService(Services.V11.OfflineUserDataJobService);
 
             // Ensure that a valid job type is provided.
             if (offlineUserDataJobType != OfflineUserDataJobType.StoreSalesUploadFirstParty &
@@ -726,7 +667,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             string offlineUserDataJobResourceName)
         {
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V10.GoogleAdsService);
+                client.GetService(Services.V11.GoogleAdsService);
 
             string query = $@"SELECT offline_user_data_job.resource_name,
                     offline_user_data_job.id,

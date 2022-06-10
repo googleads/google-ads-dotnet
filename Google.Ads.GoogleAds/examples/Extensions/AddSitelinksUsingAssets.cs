@@ -15,16 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V10.Enums.AssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AssetFieldTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example adds sitelinks to a campaign using assets. Run AddCampaigns.cs to
@@ -58,22 +58,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // ID of the campaign to which sitelinks are added.
-                    options.CampaignId = long.Parse("INSERT_CAMPAIGN_ID_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             AddSitelinksUsingAssets codeExample = new AddSitelinksUsingAssets();
             Console.WriteLine(codeExample.Description);
@@ -122,7 +107,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <returns>The list of sitelink resource names.</returns>
         private List<string> CreateSitelinkAssets(GoogleAdsClient client, long customerId)
         {
-            AssetServiceClient assetService = client.GetService(Services.V10.AssetService);
+            AssetServiceClient assetService = client.GetService(Services.V11.AssetService);
 
             // Creates some sitelink assets.
             SitelinkAsset storeLocatorExtension = new SitelinkAsset()
@@ -208,7 +193,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             long campaignId, List<string> sitelinkAssetResourceNames)
         {
             CampaignAssetServiceClient campaignAssetService = client.GetService(
-                Services.V10.CampaignAssetService);
+                Services.V11.CampaignAssetService);
 
             string campaignResourceName = ResourceNames.Campaign(customerId, campaignId);
 

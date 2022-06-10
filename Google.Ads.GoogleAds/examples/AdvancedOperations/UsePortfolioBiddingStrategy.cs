@@ -15,18 +15,18 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Common;
-using Google.Ads.GoogleAds.V10.Enums;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Common;
+using Google.Ads.GoogleAds.V11.Enums;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V10.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V10.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example adds a portfolio bidding strategy and uses it to construct a campaign.
@@ -52,19 +52,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             UsePortfolioBiddingStrategy codeExample = new UsePortfolioBiddingStrategy();
             Console.WriteLine(codeExample.Description);
@@ -142,7 +130,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the BiddingStrategyService.
             BiddingStrategyServiceClient biddingStrategyService = client.GetService(
-                Services.V10.BiddingStrategyService);
+                Services.V11.BiddingStrategyService);
 
             // Create a portfolio bidding strategy.
             BiddingStrategy biddingStrategy = new BiddingStrategy()
@@ -184,7 +172,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the CampaignBudgetService.
             CampaignBudgetServiceClient campaignBudgetService =
-                client.GetService(Services.V10.CampaignBudgetService);
+                client.GetService(Services.V11.CampaignBudgetService);
 
             // Create a shared budget.
             CampaignBudget budget = new CampaignBudget()
@@ -222,7 +210,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
             string campaignBudgetResourceName)
         {
             // Get the CampaignService.
-            CampaignServiceClient campaignService = client.GetService(Services.V10.CampaignService);
+            CampaignServiceClient campaignService = client.GetService(Services.V11.CampaignService);
 
             // [START use_portfolio_bidding_strategy_2]
             // Create the campaign.

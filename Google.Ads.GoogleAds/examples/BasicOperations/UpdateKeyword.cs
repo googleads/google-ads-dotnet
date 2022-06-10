@@ -16,14 +16,14 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V10.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdGroupCriterionStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example illustrates udating a keyword.
@@ -63,25 +63,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // The Google Ads ad group ID.
-                    options.AdGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
-
-                    // The Google Ads keyword criterion ID.
-                    options.CriterionId = long.Parse("INSERT_CRITERION_ID_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             UpdateKeyword codeExample = new UpdateKeyword();
             Console.WriteLine(codeExample.Description);
@@ -107,7 +89,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the CampaignCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V10.AdGroupCriterionService);
+                client.GetService(Services.V11.AdGroupCriterionService);
 
             // Create the keyword for update.
             AdGroupCriterion keyword = new AdGroupCriterion()

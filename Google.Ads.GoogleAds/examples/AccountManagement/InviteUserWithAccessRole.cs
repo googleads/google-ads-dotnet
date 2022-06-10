@@ -15,14 +15,14 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V10.Enums.AccessRoleEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AccessRoleEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example sends an invitation email to a user to manage a customer
@@ -63,30 +63,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            Parser parser = new Parser(settings =>
-            {
-                settings.CaseInsensitiveEnumValues = true;
-            });
-            parser.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // Email address of the user to send the invitation to.
-                    options.EmailAddress = "INSERT_EMAIL_ADDRESS_HERE";
-
-                    // The access role for which the user is invited.
-                    options.AccessRole = (AccessRole) Enum.Parse(typeof(AccessRole),
-                        "INSERT_ACCESS_ROLE_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             InviteUserWithAccessRole codeExample = new InviteUserWithAccessRole();
             Console.WriteLine(codeExample.Description);
@@ -115,7 +92,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the CustomerUserAccessInvitationService.
             CustomerUserAccessInvitationServiceClient service = client.GetService(
-                Services.V10.CustomerUserAccessInvitationService);
+                Services.V11.CustomerUserAccessInvitationService);
 
             // [START invite_user_with_access_role]
             MutateCustomerUserAccessInvitationRequest invitationRequest =

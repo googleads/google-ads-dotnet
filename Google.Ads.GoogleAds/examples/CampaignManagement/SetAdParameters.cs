@@ -15,13 +15,13 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example sets ad parameters for a keyword. To get ad group criteria,
@@ -62,25 +62,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // ID of the ad group that contains the keywrd.
-                    options.AdGroupId = long.Parse("INSERT_AD_GROUP_ID_HERE");
-
-                    // ID of the keyword to which ad parameters are attached.
-                    options.CriterionId = long.Parse("INSERT_CRITERION_ID_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             SetAdParameters codeExample = new SetAdParameters();
             Console.WriteLine(codeExample.Description);
@@ -107,7 +89,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the AdParameterServiceClient.
             AdParameterServiceClient adParameterService =
-                client.GetService(Services.V10.AdParameterService);
+                client.GetService(Services.V11.AdParameterService);
 
             // Creates ad parameters.
             // There can be a maximum of two AdParameters per ad group criterion.

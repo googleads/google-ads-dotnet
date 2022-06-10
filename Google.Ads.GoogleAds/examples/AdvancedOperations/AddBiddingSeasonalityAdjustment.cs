@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V10.Errors;
-using Google.Ads.GoogleAds.V10.Resources;
-using Google.Ads.GoogleAds.V10.Services;
+using Google.Ads.GoogleAds.V11.Errors;
+using Google.Ads.GoogleAds.V11.Resources;
+using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V10.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V10.Enums.SeasonalityEventScopeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.SeasonalityEventScopeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V10
+namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
     /// This code example adds a channel-level seasonality adjustment that adjusts Smart Bidding
@@ -80,32 +80,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         /// <param name="args">The command line arguments.</param>
         public static void Main(string[] args)
         {
-            Options options = new Options();
-            CommandLine.Parser.Default.ParseArguments<Options>(args).MapResult(
-                delegate (Options o)
-                {
-                    options = o;
-                    return 0;
-                }, delegate (IEnumerable<Error> errors)
-                {
-                    // The Google Ads customer ID for which the call is made.
-                    options.CustomerId = long.Parse("INSERT_CUSTOMER_ID_HERE");
-
-                    // The start time of the seasonality adjustment (in
-                    // yyyy-MM-dd HH:mm:ss format) in the account's timezone.")]
-                    options.StartDateTime = "INSERT_START_DATE_TIME_HERE";
-
-                    // The end time of the seasonality adjustment (in
-                    // yyyy-MM-dd HH:mm:ss format) in the account's timezone.")]
-                    options.EndDateTime = "INSERT_END_DATE_TIME_HERE";
-
-                    // The conversion rate adjustment(an increase or a decrease), which accounts
-                    // for estimated changes in conversion rate due to a future event.
-                    options.ConversionRateModifier =
-                        long.Parse("INSERT_CONVERSION_RATE_MODIFIER_HERE");
-
-                    return 0;
-                });
+            Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
             AddBiddingSeasonalityAdjustment codeExample = new AddBiddingSeasonalityAdjustment();
             Console.WriteLine(codeExample.Description);
@@ -139,7 +114,7 @@ namespace Google.Ads.GoogleAds.Examples.V10
         {
             // Get the BiddingSeasonalityAdjustmentServiceClient.
             BiddingSeasonalityAdjustmentServiceClient biddingSeasonalityAdjustmentService =
-                client.GetService(Services.V10.BiddingSeasonalityAdjustmentService);
+                client.GetService(Services.V11.BiddingSeasonalityAdjustmentService);
 
 
             // [START add_bidding_seasonality_adjustment]
