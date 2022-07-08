@@ -22,17 +22,18 @@ using Google.Ads.GoogleAds.V11.Resources;
 using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
+using Google.Ads.GoogleAds.V11.Enums;
 
 namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
-    /// This code example updates an expanded text ad. To get expanded text ads,
-    /// run GetExpandedTextAds.cs.
+    /// This code example updates a responsive search ad. To get responsive search ads,
+    /// run GetResponsiveSearchAds.cs.
     /// </summary>
-    public class UpdateExpandedTextAd : ExampleBase
+    public class UpdateResponsiveSearchAd : ExampleBase
     {
         /// <summary>
-        /// Command line options for running the <see cref="UpdateExpandedTextAd"/> example.
+        /// Command line options for running the <see cref="UpdateResponsiveSearchAd"/> example.
         /// </summary>
         public class Options : OptionsBase
         {
@@ -59,7 +60,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
-            UpdateExpandedTextAd codeExample = new UpdateExpandedTextAd();
+            UpdateResponsiveSearchAd codeExample = new UpdateResponsiveSearchAd();
             Console.WriteLine(codeExample.Description);
             codeExample.Run(new GoogleAdsClient(),
                 options.CustomerId,
@@ -70,8 +71,8 @@ namespace Google.Ads.GoogleAds.Examples.V11
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
-            "This code example updates an expanded text ad. To get expanded text ads, run " +
-            "GetExpandedTextAds.cs.";
+            "This code example updates a responsive search ad. To get responsive search ads, run " +
+            "GetResponsiveSearchAds.cs.";
 
         /// <summary>
         /// Runs the code example.
@@ -79,7 +80,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="adId"> ID of the ad to update.</param>
-        // [START update_expanded_text_ad]
+        // [START update_responsive_search_ad]
         public void Run(GoogleAdsClient client, long customerId, long adId)
         {
             // Get the AdService.
@@ -88,12 +89,24 @@ namespace Google.Ads.GoogleAds.Examples.V11
             Ad ad = new Ad()
             {
                 ResourceName = ResourceNames.Ad(customerId, adId),
-                ExpandedTextAd = new ExpandedTextAdInfo()
+                ResponsiveSearchAd = new ResponsiveSearchAdInfo()
                 {
-                    // Update some properties of the expanded text ad.
-                    HeadlinePart1 = "Cruise to Pluto #" + ExampleUtilities.GetShortRandomString(),
-                    HeadlinePart2 = "Tickets on sale now",
-                    Description = "Best space cruise ever.",
+                    // Update some properties of the responsive search ad.
+                    Headlines =
+                    {
+                        new AdTextAsset()
+                        {
+                            Text = "Cruise to Pluto #" + ExampleUtilities.GetShortRandomString(),
+                            PinnedField = ServedAssetFieldTypeEnum.Types.ServedAssetFieldType.Headline1
+                        },
+                        new AdTextAsset() { Text = "Tickets on sale now" },
+                        new AdTextAsset() { Text = "Buy your ticket now" }
+                    },
+                    Descriptions =
+                    {
+                        new AdTextAsset() { Text = "Best space cruise ever." },
+                        new AdTextAsset() { Text = "The most wonderful space experience you will ever have." },
+                    }
                 },
                 FinalUrls = { "http://www.example.com/" },
                 FinalMobileUrls = { "http://www.example.com/mobile" }
@@ -127,6 +140,6 @@ namespace Google.Ads.GoogleAds.Examples.V11
                 throw;
             }
         }
-        // [END update_expanded_text_ad]
+        // [END update_responsive_search_ad]
     }
 }
