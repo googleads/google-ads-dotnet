@@ -20,21 +20,21 @@ using Google.Ads.GoogleAds.V11.Errors;
 using Google.Ads.GoogleAds.V11.Resources;
 using Google.Ads.GoogleAds.V11.Services;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using static Google.Ads.GoogleAds.V11.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V11.Enums.ServedAssetFieldTypeEnum.Types;
 using static Google.Ads.GoogleAds.V11.Errors.PolicyFindingErrorEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
-    /// This code example shows how to use the validateOnly header to validate an expanded text ad.
+    /// This code example shows how to use the validateOnly header to validate a responsive search ad.
     /// No objects will be created, but exceptions will still be thrown.
     /// </summary>
-    public class ValidateTextAd : ExampleBase
+    public class ValidateAd : ExampleBase
     {
         /// <summary>
-        /// Command line options for running the <see cref="ValidateTextAd"/> example.
+        /// Command line options for running the <see cref="ValidateAd"/> example.
         /// </summary>
         public class Options : OptionsBase
         {
@@ -61,7 +61,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
-            ValidateTextAd codeExample = new ValidateTextAd();
+            ValidateAd codeExample = new ValidateAd();
             Console.WriteLine(codeExample.Description);
             codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.AdGroupId);
         }
@@ -70,8 +70,8 @@ namespace Google.Ads.GoogleAds.Examples.V11
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
-            "This code example shows how to use the validateOnly header to validate an expanded " +
-            "text ad. No objects will be created, but exceptions will still be thrown.";
+            "This code example shows how to use the validateOnly header to validate a resopnsive " +
+            "search ad. No objects will be created, but exceptions will still be thrown.";
 
         /// <summary>
         /// Runs the code example.
@@ -93,11 +93,21 @@ namespace Google.Ads.GoogleAds.Examples.V11
                 Status = AdGroupAdStatus.Paused,
                 Ad = new Ad
                 {
-                    ExpandedTextAd = new ExpandedTextAdInfo
+                    ResponsiveSearchAd = new ResponsiveSearchAdInfo
                     {
-                        Description = "Luxury Cruise to Mars",
-                        HeadlinePart1 = "Visit the Red Planet in style.",
-                        HeadlinePart2 = "Low-gravity fun for everyone!!",
+                        Headlines = 
+                        {
+                            new AdTextAsset() {
+                                Text = "Visit the Red Planet in style.",
+                                PinnedField = ServedAssetFieldType.Headline1
+                            },
+                            new AdTextAsset() { Text = "Low-gravity fun for everyone!!" }
+                        },
+                        Descriptions = 
+                        {
+                            new AdTextAsset() { Text = "Luxury Cruise to Mars" },
+                            new AdTextAsset() { Text = "Book your ticket now" }
+                        }                        
                     },
                     FinalUrls = { "http://www.example.com/" },
                 }
@@ -122,13 +132,13 @@ namespace Google.Ads.GoogleAds.Examples.V11
                     });
 
                 // Since validation is ON, result will be null.
-                Console.WriteLine("Expanded text ad validated successfully.");
+                Console.WriteLine("Responsive search ad validated successfully.");
             }
             catch (GoogleAdsException e)
             {
                 // This block will be hit if there is a validation error from the server.
                 Console.WriteLine(
-                    "There were validation error(s) while adding expanded text ad.");
+                    "There were validation error(s) while adding a responsive search ad.");
 
                 if (e.Failure != null)
                 {
