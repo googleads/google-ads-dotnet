@@ -70,7 +70,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
-            "This code example shows how to use the validateOnly header to validate a resopnsive " +
+            "This code example shows how to use the validateOnly header to validate a responsive " +
             "search ad. No objects will be created, but exceptions will still be thrown.";
 
         /// <summary>
