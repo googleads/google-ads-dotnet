@@ -45,11 +45,11 @@ namespace Google.Ads.GoogleAds.Examples.V11
             public long CustomerId { get; set; }
 
             /// <summary>
-            /// Id of the campaign for which disapproved ads are retrieved.
+            /// Id of the campaign for which the control arm is created.
             /// </summary>
-            [Option("campaignId", Required = true, HelpText =
+            [Option("baseCampaignId", Required = true, HelpText =
                 "Id of the campaign for which the control arm is created.")]
-            public long CampaignId { get; set; }
+            public long BaseCampaignId { get; set; }
         }
 
         /// <summary>
@@ -62,7 +62,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
 
             CreateExperiment codeExample = new CreateExperiment();
             Console.WriteLine(codeExample.Description);
-            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.CampaignId);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.BaseCampaignId);
         }
 
         /// <summary>
@@ -77,8 +77,8 @@ namespace Google.Ads.GoogleAds.Examples.V11
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
-        /// <param name="campaignId">Id of the campaign for which the control arm is created.</param>
-        public void Run(GoogleAdsClient client, long customerId, long campaignId)
+        /// <param name="baseCampaignId">Id of the campaign for which the control arm is created.</param>
+        public void Run(GoogleAdsClient client, long customerId, long baseCampaignId)
         {
             // Get the ExperimentService.
             ExperimentServiceClient experimentService = client.GetService(
@@ -90,7 +90,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
                 string controlArmResourceName, treatmentArmResourceName;
 
                 (controlArmResourceName, treatmentArmResourceName) = CreateExperimentArms(
-                    client, customerId, campaignId, experimentResourceName);
+                    client, customerId, baseCampaignId, experimentResourceName);
 
                 string draftCampaignResourceName = FetchDraftCampaign(
                     client, customerId, treatmentArmResourceName);
@@ -160,12 +160,12 @@ namespace Google.Ads.GoogleAds.Examples.V11
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
-        /// <param name="campaignId">ID of the campaign for which the control arm is
+        /// <param name="baseCampaignId">ID of the campaign for which the control arm is
         /// created.</param>
         /// <param name="experimentResourceName">Resource name of the experiment.</param>
         /// <returns>The resource names of the control and treatment arms.</returns>
         private static (string, string) CreateExperimentArms(GoogleAdsClient client,
-            long customerId, long campaignId, string experimentResourceName)
+            long customerId, long baseCampaignId, string experimentResourceName)
         {
             // Get the ExperimentArmService.
             ExperimentArmServiceClient experimentService = client.GetService(
@@ -178,7 +178,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
                 {
                     Control = true,
                     Campaigns = {
-                        ResourceNames.Campaign(customerId, campaignId)
+                        ResourceNames.Campaign(customerId, baseCampaignId)
                     },
                     Trial = experimentResourceName,
                     Name = "Control Arm",
