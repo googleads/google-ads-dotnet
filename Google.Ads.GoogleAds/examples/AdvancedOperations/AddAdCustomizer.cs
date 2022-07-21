@@ -21,16 +21,16 @@ using Google.Ads.GoogleAds.V11.Resources;
 using Google.Ads.GoogleAds.V11.Services;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using static Google.Ads.GoogleAds.V11.Enums.AdCustomizerPlaceholderFieldEnum.Types;
-using static Google.Ads.GoogleAds.V11.Enums.FeedAttributeTypeEnum.Types;
-using static Google.Ads.GoogleAds.V11.Enums.PlaceholderTypeEnum.Types;
+using Google.Ads.GoogleAds.V11.Enums;
+using static Google.Ads.GoogleAds.V11.Enums.CustomizerAttributeTypeEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
-    /// This code example adds an ad customizer feed and associates it with the customer.
-    /// Then it adds an ad that uses the feed to populate dynamic data.
+    /// This code example adds two ad customizer attributes and associates
+    /// them with the ad group.
+    /// Then it adds an ad that uses the ad customizer attributes to populate
+    /// dynamic data.
     /// </summary>
     public class AddAdCustomizer : ExampleBase
     {
@@ -47,11 +47,11 @@ namespace Google.Ads.GoogleAds.Examples.V11
             public long CustomerId { get; set; }
 
             /// <summary>
-            /// ID of the ad groups to which ad customizers are added.
+            /// ID of the ad group to which ad customizers are added.
             /// </summary>
-            [Option("adGroupIds", Required = true, HelpText =
-                "ID of the ad groups to which ad customizers are added.")]
-            public IEnumerable<long> AdGroupIds { get; set; }
+            [Option("adGroupId", Required = true, HelpText =
+                "ID of the ad group to which ad customizers are added.")]
+            public long AdGroupId { get; set; }
         }
 
         /// <summary>
@@ -65,57 +65,46 @@ namespace Google.Ads.GoogleAds.Examples.V11
             AddAdCustomizer codeExample = new AddAdCustomizer();
             Console.WriteLine(codeExample.Description);
             codeExample.Run(new GoogleAdsClient(), options.CustomerId,
-                options.AdGroupIds.ToArray());
+                options.AdGroupId);
         }
 
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
-            "This code example adds an ad customizer feed and associates it with the customer. " +
-            "Then it adds an ad that uses the feed to populate dynamic data.";
+            "This code example adds two ad customizer attributes and associates them with the ad group. " +
+            "Then it adds an ad that uses the customizer attributes to populate dynamic data.";
 
         /// <summary>
         /// Runs the code example.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="adGroupIds">ID of the ad groups to which ad customizers are added.</param>
-        public void Run(GoogleAdsClient client, long customerId, long[] adGroupIds)
-        {
+        /// <param name="adGroupId">ID of the ad group to which ad customizers are added.</param>
+        public void Run(GoogleAdsClient client, long customerId, long adGroupId)
+        {            
             // Get the AdGroupBidModifierService.
             AdGroupBidModifierServiceClient adGroupBidModifierService =
                 client.GetService(Services.V11.AdGroupBidModifierService);
 
-            string feedName = "Ad_Customizer_example_feed_" +
-                ExampleUtilities.GetShortRandomString();
+            string stringCustomizerName = "Planet_" + ExampleUtilities.GetShortRandomString();
+            string priceCustomizerName = "Price_" + ExampleUtilities.GetShortRandomString();
 
             try
             {
-                // Create a feed to be used as the ad customizer.
-                string adCustomizerFeedResourceName =
-                    CreateAdCustomizerFeed(client, customerId, feedName);
+                // Create ad customizer attributes.
+                string textCustomizerAttributeResourceName =
+                    CreateTextCustomizerAttribute(client, customerId, stringCustomizerName);
+                string priceCustomizerAttributeResourceName =
+                    CreatePriceCustomizerAttribute(client, customerId, priceCustomizerName);
 
-                // Retrieve the attributes for the newly created feed.
-                Dictionary<string, FeedAttribute> adCustomizerFeedAttributes =
-                    GetFeedAttributes(client, customerId, adCustomizerFeedResourceName);
-
-                // Map the feed to the ad customizer placeholder type to mark it as an
-                // ad customizer.
-                CreateAdCustomizerMapping(client, customerId, adCustomizerFeedResourceName,
-                    adCustomizerFeedAttributes);
-
-                // Create the feed items that will fill the placeholders in the ads customized by
-                // the feed.
-                List<string> feedItemResourceNames = CreateFeedItems(client, customerId,
-                    adCustomizerFeedResourceName, adCustomizerFeedAttributes);
-
-                // Create a feed item targeting to associate the feed items with specific
-                // ad groups to prevent them from being used in other ways.
-                CreateFeedItemTargets(client, customerId, adGroupIds, feedItemResourceNames);
-
-                // Create ads with the customizations provided by the feed items.
-                CreateAdsWithCustomizations(client, customerId, adGroupIds, feedName);
+                // Link the customizer attributes to the ad group.
+                LinkCustomizerAttributes(client, customerId, adGroupId,
+                    textCustomizerAttributeResourceName, priceCustomizerAttributeResourceName);
+                
+                // Create an ad with the customizations provided by the ad customizer attributes.
+                CreateAdWithCustomizations(client, customerId, adGroupId,
+                    stringCustomizerName, priceCustomizerName);
             }
             catch (GoogleAdsException e)
             {
@@ -126,347 +115,212 @@ namespace Google.Ads.GoogleAds.Examples.V11
                 throw;
             }
         }
-
+       
         /// <summary>
-        /// Creates a feed to be used for ad customization.
+        /// Creates a text customizer attribute and returns its resource name.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
-        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="feedName">Name of the feed.</param>
-        /// <returns>The resource name of the newly created feed.</returns>
+        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>        
+        /// <param name="customizerName">The name of the customizer to create.</param>
         // [START add_ad_customizer]
-        private string CreateAdCustomizerFeed(GoogleAdsClient client, long customerId,
-            string feedName)
+        private string CreateTextCustomizerAttribute(GoogleAdsClient client, long customerId,
+            string customizerName)
         {
-            // Get the FeedServiceClient.
-            FeedServiceClient feedService = client.GetService(Services.V11.FeedService);
+            // Get the customizer attribute service.
+            CustomizerAttributeServiceClient customizerAttributeService = 
+                client.GetService(Services.V11.CustomizerAttributeService);
 
-            // Creates three feed attributes: a name, a price and a date. The attribute names
-            // are arbitrary choices and will be used as placeholders in the ad text fields.
-            FeedAttribute nameAttribute = new FeedAttribute()
+            // Creates a text customizer attribute. The customizer attribute name is
+            // arbitrary and will be used as a placeholder in the ad text fields.
+            CustomizerAttribute textAttribute = new CustomizerAttribute()
             {
-                Name = "Name",
-                Type = FeedAttributeType.String
+                Name = customizerName,
+                Type = CustomizerAttributeType.Text
             };
 
-            FeedAttribute priceAttribute = new FeedAttribute()
-            {
-                Name = "Price",
-                Type = FeedAttributeType.String
+            CustomizerAttributeOperation textAttributeOperation = new CustomizerAttributeOperation(){
+                Create = textAttribute
             };
 
-            FeedAttribute dateAttribute = new FeedAttribute()
-            {
-                Name = "Date",
-                Type = FeedAttributeType.DateTime
-            };
+            MutateCustomizerAttributesResponse response =
+                customizerAttributeService.MutateCustomizerAttributes(customerId.ToString(),
+                    new[] {textAttributeOperation});
 
-            Feed adCustomizerFeed = new Feed()
-            {
-                Name = feedName,
-                Attributes = { nameAttribute, priceAttribute, dateAttribute }
-            };
+            string customizerAttributeResourceName = response.Results[0].ResourceName; 
+            Console.WriteLine($"Added text customizer attribute with resource name" +
+                $" '{customizerAttributeResourceName}'.");
 
-            FeedOperation feedOperation = new FeedOperation()
-            {
-                Create = adCustomizerFeed
-            };
-
-            MutateFeedsResponse response =
-                feedService.MutateFeeds(customerId.ToString(), new[] { feedOperation });
-
-            string feedResourceName = response.Results[0].ResourceName;
-            Console.WriteLine($"Added feed with resource name '{feedResourceName}'.");
-            return feedResourceName;
+            return customizerAttributeResourceName;
         }
         // [END add_ad_customizer]
 
         /// <summary>
-        ///  Retrieves all the attributes for a feed and returns them in a map using the
-        ///  attribute names as keys.
+        /// Creates a price customizer attribute ad returns its resource name.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
-        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="feedResourceName">The resource name of the feed.</param>
-        /// <returns>The attributes of the feed.</returns>
+        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>        
+        /// <param name="customizerName">The name of the customizer to create.</param>
         // [START add_ad_customizer_1]
-        private Dictionary<string, FeedAttribute> GetFeedAttributes(GoogleAdsClient client,
-                    long customerId, string feedResourceName)
+        private string CreatePriceCustomizerAttribute(GoogleAdsClient client, long customerId,
+            string customizerName)
         {
-            // Get the GoogleAdsServiceClient.
-            GoogleAdsServiceClient googleAdsService =
-                client.GetService(Services.V11.GoogleAdsService);
-
-            string query = $"SELECT feed.attributes, feed.name FROM feed WHERE " +
-                $"feed.resource_name = '{feedResourceName}'";
-
-            SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()
+            // Get the customizer attribute service.
+            CustomizerAttributeServiceClient customizerAttributeService = 
+                client.GetService(Services.V11.CustomizerAttributeService);
+    
+            // Creates a price customizer attribute. The customizer attribute name is
+            // arbitrary and will be used as a placeholder in the ad text fields.
+            CustomizerAttribute priceAttribute = new CustomizerAttribute()
             {
-                CustomerId = customerId.ToString(),
-                Query = query
+                Name = customizerName,
+                Type = CustomizerAttributeType.Price
+            };
+    
+            CustomizerAttributeOperation priceAttributeOperation = new CustomizerAttributeOperation(){
+                Create = priceAttribute
             };
 
-            Dictionary<string, FeedAttribute> feedAttributes =
-                new Dictionary<string, FeedAttribute>();
+            List<string> customizerAttributeResourceNames = new List<string>();
+            MutateCustomizerAttributesResponse response =
+                customizerAttributeService.MutateCustomizerAttributes(customerId.ToString(),
+                    new[] {priceAttributeOperation});
 
-            Feed feed = googleAdsService.Search(request).First().Feed;
+            string customizerAttributeResourceName = response.Results[0].ResourceName; 
+            Console.WriteLine($"Added price customizer attribute with resource name" +
+                $" '{customizerAttributeResourceName}'.");
 
-            Console.WriteLine($"Found the following attributes for feed with name '{feed.Name}'");
-            foreach (FeedAttribute feedAttribute in feed.Attributes)
-            {
-                Console.WriteLine($"\t'{feedAttribute.Name}' with id {feedAttribute.Id} and " +
-                    $"type '{feedAttribute.Type}'");
-                feedAttributes[feedAttribute.Name] = feedAttribute;
-            }
-            return feedAttributes;
+            return customizerAttributeResourceName;
         }
         // [END add_ad_customizer_1]
 
         /// <summary>
-        /// Creates a feed mapping and sets the feed as an ad customizer feed.
-        /// </summary>
-        /// <param name="client">The Google Ads client.</param>
-        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="feedResourceName">The resource name of the feed.</param>
-        /// <param name="feedAttributes">The attributes of the feed.</param>
-        // [START add_ad_customizer_2]
-        private void CreateAdCustomizerMapping(GoogleAdsClient client, long customerId,
-            string feedResourceName, Dictionary<string, FeedAttribute> feedAttributes)
-        {
-            // Get the FeedMappingService.
-            FeedMappingServiceClient feedMappingService =
-                client.GetService(Services.V11.FeedMappingService);
-
-            // Map the feed attributes to ad customizer placeholder fields.
-            // For a full list of ad customizer placeholder fields, see
-            // https://developers.google.com/google-ads/api/reference/rpc/latest/AdCustomizerPlaceholderFieldEnum.AdCustomizerPlaceholderField
-            AttributeFieldMapping nameFieldMapping = new AttributeFieldMapping()
-            {
-                FeedAttributeId = feedAttributes["Name"].Id,
-                AdCustomizerField = AdCustomizerPlaceholderField.String
-            };
-
-            AttributeFieldMapping priceFieldMapping = new AttributeFieldMapping()
-            {
-                FeedAttributeId = feedAttributes["Price"].Id,
-                AdCustomizerField = AdCustomizerPlaceholderField.Price
-            };
-
-            AttributeFieldMapping dateFieldMapping = new AttributeFieldMapping()
-            {
-                FeedAttributeId = feedAttributes["Date"].Id,
-                AdCustomizerField = AdCustomizerPlaceholderField.Date
-            };
-
-            FeedMapping feedMapping = new FeedMapping()
-            {
-                Feed = feedResourceName,
-                PlaceholderType = PlaceholderType.AdCustomizer,
-                AttributeFieldMappings = { nameFieldMapping, priceFieldMapping, dateFieldMapping }
-            };
-
-            FeedMappingOperation operation = new FeedMappingOperation()
-            {
-                Create = feedMapping
-            };
-
-            MutateFeedMappingsResponse response =
-                feedMappingService.MutateFeedMappings(customerId.ToString(), new[] { operation });
-
-            Console.WriteLine($"Added feed mapping with resource name" +
-                $" '{response.Results[0].ResourceName}'.");
-        }
-        // [END add_ad_customizer_2]
-
-        /// <summary>
-        /// Creates two different feed items to enable two different ad customizations.
-        /// </summary>
-        /// <param name="client">The Google Ads client.</param>
-        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="feedResourceName">The resource name of the feed.</param>
-        /// <param name="feedAttributes">The attributes of the feed.</param>
-        /// <returns>The resource names of the feed items.</returns>
-        // [START add_ad_customizer_3]
-        private List<string> CreateFeedItems(GoogleAdsClient client, long customerId,
-                    string feedResourceName, Dictionary<string, FeedAttribute> feedAttributes)
-        {
-            // Get the FeedItemServiceClient.
-            FeedItemServiceClient feedItemService =
-                client.GetService(Services.V11.FeedItemService);
-
-            List<FeedItemOperation> feedItemOperations = new List<FeedItemOperation>();
-
-            DateTime marsDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
-            feedItemOperations.Add(
-                CreateFeedItemOperation("Mars", "$1234.56", marsDate.ToString("yyyyMMdd HHmmss"),
-                    feedResourceName, feedAttributes));
-
-            DateTime venusDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 15);
-            feedItemOperations.Add(
-                CreateFeedItemOperation("Venus", "$1450.00", venusDate.ToString("yyyyMMdd HHmmss"),
-                    feedResourceName, feedAttributes));
-
-            List<string> feedItemResourceNames = new List<string>();
-            MutateFeedItemsResponse response =
-                feedItemService.MutateFeedItems(customerId.ToString(), feedItemOperations);
-
-            Console.WriteLine($"Added {response.Results.Count} feed items:");
-
-            foreach (MutateFeedItemResult result in response.Results)
-            {
-                string feedItemResourceName = result.ResourceName;
-                feedItemResourceNames.Add(feedItemResourceName);
-                Console.WriteLine($"Added feed item with resource name '{feedItemResourceName}'.");
-            }
-            return feedItemResourceNames;
-        }
-        // [END add_ad_customizer_3]
-
-        /// <summary>
-        /// Helper function to create a FeedItemOperation.
-        /// </summary>
-        /// <param name="name">The value of the Name attribute.</param>
-        /// <param name="price">The value of the Price attribute.</param>
-        /// <param name="date">The value of the Date attribute.</param>
-        /// <param name="feedResourceName">The resource name of the feed.</param>
-        /// <param name="feedAttributes">The attributes to be set on the feed.</param>
-        /// <returns>A FeedItemOperation to create a feed item.</returns>
-        // [START add_ad_customizer_4]
-        private FeedItemOperation CreateFeedItemOperation(string name, string price, string date,
-            string feedResourceName, Dictionary<string, FeedAttribute> feedAttributes)
-        {
-            FeedItemAttributeValue nameAttributeValue = new FeedItemAttributeValue()
-            {
-                FeedAttributeId = feedAttributes["Name"].Id,
-                StringValue = name
-            };
-
-            FeedItemAttributeValue priceAttributeValue = new FeedItemAttributeValue()
-            {
-                FeedAttributeId = feedAttributes["Price"].Id,
-                StringValue = price
-            };
-
-            FeedItemAttributeValue dateAttributeValue = new FeedItemAttributeValue()
-            {
-                FeedAttributeId = feedAttributes["Date"].Id,
-                StringValue = date
-            };
-
-            FeedItem feedItem = new FeedItem()
-            {
-                Feed = feedResourceName,
-                AttributeValues = { nameAttributeValue, priceAttributeValue, dateAttributeValue }
-            };
-
-            return new FeedItemOperation()
-            {
-                Create = feedItem
-            };
-        }
-        // [END add_ad_customizer_4]
-
-        /// <summary>
-        /// Restricts the feed items to work only with a specific ad group; this prevents the
-        /// feed items from being used elsewhere and makes sure they are used only for
+        /// Restricts the ad customizer attributes to work only with a specific ad group; this prevents
+        /// the customizer attributes from being used elsewhere and makes sure they are used only for
         /// customizing a specific ad group.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="adGroupIds">The ad group IDs to bind the feed items to..</param>
-        /// <param name="feedItemResourceNames">The resource names of the feed items.</param>
-        // [START add_ad_customizer_5]
-        private void CreateFeedItemTargets(GoogleAdsClient client,
-            long customerId, long[] adGroupIds, List<string> feedItemResourceNames)
+        /// <param name="adGroupId">The ad group ID to bind the customizer attributes to.</param>
+        /// <param name="textCustomizerAttributeResourceName">The resource name of the text customizer attribute.</param>
+        /// <param name="priceCustomizerAttributeResourceName">The resource name of the price customizer attribute.</param>
+        // [START add_ad_customizer_2]
+        private void LinkCustomizerAttributes(GoogleAdsClient client,
+            long customerId, long adGroupId,
+            string textCustomizerAttributeResourceName,
+            string priceCustomizerAttributeResourceName)
         {
-            // Get the FeedItemTargetServiceClient.
-            FeedItemTargetServiceClient feedItemTargetService =
-                client.GetService(Services.V11.FeedItemTargetService);
+            // Get the ad group customizer service.
+            AdGroupCustomizerServiceClient adGroupCustomizerService =
+                client.GetService(Services.V11.AdGroupCustomizerService);
 
-            // Bind each feed item to a specific ad group to make sure it will only be used to
-            // customize ads inside that ad group; using the feed item elsewhere will result
-            // in an error.
-            for (int i = 0; i < feedItemResourceNames.Count; i++)
+            List<AdGroupCustomizerOperation> adGroupCustomizerOperations =
+                new List<AdGroupCustomizerOperation>();
+
+            // Binds the text attribute customizer to a specific ad group to
+            // make sure it will only be used to customize ads inside that ad
+            // group.
+            AdGroupCustomizer marsCustomizer = new AdGroupCustomizer(){
+                CustomizerAttribute = textCustomizerAttributeResourceName,
+                Value = new CustomizerValue(){
+                    Type = CustomizerAttributeType.Text,
+                    StringValue = "Mars"
+                },
+                AdGroup = ResourceNames.AdGroup(customerId, adGroupId)
+            };
+
+            adGroupCustomizerOperations.Add(new AdGroupCustomizerOperation(){
+                Create = marsCustomizer
+            });
+
+            // Binds the price attribute customizer to a specific ad group to
+            // make sure it will only be used to customize ads inside that ad
+            // group.
+            AdGroupCustomizer priceCustomizer = new AdGroupCustomizer(){
+                CustomizerAttribute = priceCustomizerAttributeResourceName,
+                Value = new CustomizerValue(){
+                    Type = CustomizerAttributeType.Price,
+                    StringValue = "100.0€"
+                },
+                AdGroup = ResourceNames.AdGroup(customerId, adGroupId)
+            };
+
+            adGroupCustomizerOperations.Add(new AdGroupCustomizerOperation(){
+                Create = priceCustomizer
+            });                        
+
+            MutateAdGroupCustomizersResponse response =                
+                adGroupCustomizerService.MutateAdGroupCustomizers(customerId.ToString(),
+                    adGroupCustomizerOperations);
+
+            foreach (MutateAdGroupCustomizerResult result in response.Results)
             {
-                string feedItemResourceName = feedItemResourceNames[i];
-                long adGroupId = adGroupIds[i];
-
-                FeedItemTarget feedItemTarget = new FeedItemTarget()
-                {
-                    AdGroup = ResourceNames.AdGroup(customerId, adGroupId),
-                    FeedItem = feedItemResourceName
-                };
-
-                FeedItemTargetOperation feedItemTargetOperation = new FeedItemTargetOperation()
-                {
-                    Create = feedItemTarget
-                };
-
-                MutateFeedItemTargetsResponse response =
-                    feedItemTargetService.MutateFeedItemTargets(customerId.ToString(),
-                        new[] { feedItemTargetOperation });
-
-                string feedItemTargetResourceName = response.Results[0].ResourceName;
-                Console.WriteLine($"Added feed item target with resource name " +
-                    $"'{response.Results[0].ResourceName}'.");
+                Console.WriteLine($"Added an ad group customizer with resource name '{result.ResourceName}'.");
             }
         }
-        // [END add_ad_customizer_5]
+        // [END add_ad_customizer_2]
 
         /// <summary>
-        /// Creates expanded text ads that use the ad customizer feed to populate the placeholders.
+        /// Creates a responsive search ad that uses the ad customizer attributes to populate the placeholders.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
-        /// <param name="adGroupIds">The ad group IDs in which to create the ads.</param>
-        /// <param name="feedName">Name of the feed.</param>
-        // [START add_ad_customizer_6]
-        private void CreateAdsWithCustomizations(GoogleAdsClient client, long customerId,
-            long[] adGroupIds, string feedName)
+        /// <param name="adGroupId">The ad group IDs in which to create the ads.</param>
+        /// <param name="stringCustomizerName">Name of the string customizer.</param>
+        /// <param name="priceCustomizerName">Name of the price customizer.</param>
+        // [START add_ad_customizer_3]
+        private void CreateAdWithCustomizations(GoogleAdsClient client, long customerId,
+            long adGroupId, string stringCustomizerName, string priceCustomizerName)
         {
             // Get the AdGroupAdServiceClient.
             AdGroupAdServiceClient adGroupAdService =
                 client.GetService(Services.V11.AdGroupAdService);
 
-            // Creates an expanded text ad using the feed attribute names as placeholders.
+            // Creates a responsive search ad using the attribute customizer names as
+            // placeholders and default values to be used in case there are no attribute
+            // customizer values.
             Ad ad = new Ad()
             {
-                ExpandedTextAd = new ExpandedTextAdInfo()
+                ResponsiveSearchAd = new ResponsiveSearchAdInfo()
                 {
-                    HeadlinePart1 = $"Luxury cruise to {{={feedName}.Name}}",
-                    HeadlinePart2 = $"Only {{={feedName}.Price}}",
-                    Description = $"Offer ends in {{=countdown({feedName}.Date)}}!"
+                    Headlines =
+                    {
+                        new AdTextAsset()
+                        {
+                            Text = $"Luxury cruise to {{CUSTOMIZER.{stringCustomizerName}:Venus}}",
+                            PinnedField = ServedAssetFieldTypeEnum.Types.ServedAssetFieldType.Headline1
+                        },
+                        new AdTextAsset() { Text = $"Only {{CUSTOMIZER.{priceCustomizerName}:10.0€}}" },
+                        new AdTextAsset()
+                        {
+                            Text = $"Cruise to {{CUSTOMIZER.{stringCustomizerName}:Venus}} for {{CUSTOMIZER.{priceCustomizerName}:10.0€}}"
+                        }
+                    },
+                    Descriptions =
+                    {
+                        new AdTextAsset() { Text = $"Tickets are only {{CUSTOMIZER.{priceCustomizerName}:10.0€}}!" },
+                        new AdTextAsset() { Text = $"Buy your tickets to {{CUSTOMIZER.{stringCustomizerName}:Venus}} now!" }
+                    }
                 },
-                FinalUrls = { "http://www.example.com" }
+                FinalUrls = { "https://www.example.com" }
+            };
+            
+            AdGroupAd adGroupAd = new AdGroupAd()
+            {
+                Ad = ad,
+                AdGroup = ResourceNames.AdGroup(customerId, adGroupId)
             };
 
-            List<AdGroupAdOperation> adGroupAdOperations = new List<AdGroupAdOperation>();
-
-            // Creates the same ad in all ad groups. When they serve, they will show
-            // different values, since they match different feed items.
-            foreach (long adGroupId in adGroupIds)
-            {
-                AdGroupAd adGroupAd = new AdGroupAd()
-                {
-                    Ad = ad,
-                    AdGroup = ResourceNames.AdGroup(customerId, adGroupId)
-                };
-
-                adGroupAdOperations.Add(new AdGroupAdOperation()
-                {
-                    Create = adGroupAd
-                });
-            }
+            AdGroupAdOperation adGroupAdOperation = new AdGroupAdOperation(){ Create = adGroupAd };
 
             MutateAdGroupAdsResponse response =
-                adGroupAdService.MutateAdGroupAds(customerId.ToString(), adGroupAdOperations);
-
-            Console.WriteLine($"Added {response.Results.Count} ads:");
+                adGroupAdService.MutateAdGroupAds(customerId.ToString(), 
+                new[] { adGroupAdOperation });
+            
             foreach (MutateAdGroupAdResult result in response.Results)
             {
                 Console.WriteLine($"Added an ad with resource name '{result.ResourceName}'.");
             }
         }
-        // [END add_ad_customizer_6]
+        // [END add_ad_customizer_3]
     }
 }
