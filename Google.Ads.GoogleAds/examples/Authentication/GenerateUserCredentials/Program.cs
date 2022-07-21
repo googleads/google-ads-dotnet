@@ -13,6 +13,7 @@
 // limitations under the License.
 
 using Google.Apis.Auth.OAuth2;
+using Google.Apis.Auth.OAuth2.Flows;
 using Google.Apis.Util.Store;
 
 using System;
@@ -71,12 +72,18 @@ namespace Google.Ads.GoogleAds.Examples
 
             try
             {
+                var initializer = new GoogleAuthorizationCodeFlow.Initializer
+                {
+                    ClientSecrets = secrets,
+                    Prompt = "consent",
+                };
+
                 // Authorize the user using desktop flow. GoogleWebAuthorizationBroker creates a
                 // web server that listens to a random port at 127.0.0.1 and the /authorize url
                 // as loopback url. See https://github.com/googleapis/google-api-dotnet-client/blob/main/Src/Support/Google.Apis.Auth/OAuth2/LocalServerCodeReceiver.cs
                 // for details.
                 Task<UserCredential> task = GoogleWebAuthorizationBroker.AuthorizeAsync(
-                    secrets,
+                    initializer,
                     new string[] { GOOGLE_ADS_API_SCOPE },
                     string.Empty,
                     CancellationToken.None,

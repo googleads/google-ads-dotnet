@@ -133,13 +133,20 @@ namespace Google.Ads.GoogleAds.Examples.V11
                     );
 
                     // Sends the apply recommendation request and prints information.
-                    ApplyRecommendationResponse response =
-                        recommendationService.ApplyRecommendation(
-                            customerId.ToString(), operations);
-                    Console.WriteLine($"Applied {0} recommendation(s):", response.Results.Count);
-                    foreach (ApplyRecommendationResult result in response.Results)
+                    if (operations.Count > 0)
                     {
-                        Console.WriteLine($"- {result.ResourceName}");
+                        ApplyRecommendationResponse response =
+                            recommendationService.ApplyRecommendation(
+                                customerId.ToString(), operations);
+                        Console.WriteLine($"Applied {0} recommendation(s):", response.Results.Count);
+                        foreach (ApplyRecommendationResult result in response.Results)
+                        {
+                            Console.WriteLine($"- {result.ResourceName}");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("No recommendations were found.");
                     }
                     if (i < NUMBER_OF_RUNS - 1)
                     {

@@ -10,7 +10,7 @@
     <IncludeSource>true</IncludeSource>
     <SignAssembly>true</SignAssembly>
     <IsTestProject>true</IsTestProject>
-    <AssemblyOriginatorKeyFile>..\src\GoogleAds.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\..\GoogleAds.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="TestUtilities\**" />

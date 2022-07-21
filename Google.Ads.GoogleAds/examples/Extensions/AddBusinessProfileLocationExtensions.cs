@@ -70,7 +70,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
             /// <summary>
             /// The OAuth2 access token for the Business Profile account.
             /// </summary>
-            [Option("businessProfileAccessToken", Required = true, HelpText =
+            [Option("businessProfileAccessToken", Required = false, HelpText =
                 "The OAuth2 access token for the Business Profile account.")]
             public string BusinessProfileAccessToken { get; set; }
         }

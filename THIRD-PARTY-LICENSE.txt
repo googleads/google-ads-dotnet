@@ -967,6 +967,7 @@ Packages covered:
 * System.Threading.Tasks.Extensions
 * System.ValueTuple
 * System.Windows.Extensions
+* third_party/dotnet/dotnet-install.sh
 
 
 Latest online version:

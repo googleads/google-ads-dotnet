@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Title>Google Ads GAPIC Extensions Dotnet Client Library</Title>
     <PackageId>Google.Ads.Gax</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Description>This library provides functionality that makes it easier to work with Generated
     API Client GAPIC client libraries for Google's Ads APIs.</Description>
     <PackageReleaseNotes>https://github.com/googleads/google-ads-dotnet/blob/main/ChangeLog</PackageReleaseNotes>
@@ -26,14 +26,14 @@
     <RootNamespace>Google.Ads.Gax</RootNamespace>
     <PublicSign Condition="'$(OS)' != 'Windows_NT'">true</PublicSign>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>$(ProjectDir)GoogleAds.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\..\GoogleAds.snk</AssemblyOriginatorKeyFile>
     <DebugType>pdbonly</DebugType>
     <IncludeSymbols>true</IncludeSymbols>
     <IncludeSource>true</IncludeSource>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <AssemblyVersion>1.0.1</AssemblyVersion>
-    <FileVersion>1.0.1</FileVersion>
+    <AssemblyVersion>1.0.2</AssemblyVersion>
+    <FileVersion>1.0.2</FileVersion>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>

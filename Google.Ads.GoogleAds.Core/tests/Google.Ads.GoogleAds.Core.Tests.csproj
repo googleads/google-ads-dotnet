@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFrameworks>net5.0;netcoreapp3.1</TargetFrameworks>
     <RootNamespace>Google.Ads.GoogleAds.Tests</RootNamespace>
-    <AssemblyName>Google.Ads.GoogleAds.Tests</AssemblyName>
+    <AssemblyName>Google.Ads.GoogleAds.Core.Tests</AssemblyName>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <WarningLevel>4</WarningLevel>
     <DebugType>full</DebugType>
@@ -21,9 +21,14 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\src\App.config">
+      <Link>App.config</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\..\Google.Ads.Gax\tests\TestUtilities\Google.Ads.Gax.TestUtilities.csproj" />
     <ProjectReference Include="..\..\Google.Ads.Gax\tests\Google.Ads.Gax.Tests.csproj" />
-    <ProjectReference Include="..\src\Google.Ads.GoogleAds.csproj" />
+    <ProjectReference Include="..\src\Google.Ads.GoogleAds.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="TestResources.Designer.cs">
