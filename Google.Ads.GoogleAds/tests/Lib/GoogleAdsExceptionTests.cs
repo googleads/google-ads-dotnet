@@ -12,7 +12,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using Google.Ads.GoogleAds.Lib;
 using Grpc.Core;
 using NUnit.Framework;
 using System.Collections.Generic;
@@ -34,7 +33,7 @@ namespace Google.Ads.GoogleAds.Tests.Lib
         [Test]
         public void TestCreateException()
         {
-            List<System.Type> exceptionTypes = typeof(GoogleAdsClient).Assembly.GetTypes().Where(
+            List<System.Type> exceptionTypes = typeof(Services).Assembly.GetTypes().Where(
                 delegate (System.Type type)
                 {
                     return type.Name == "GoogleAdsException";

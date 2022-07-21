@@ -1,3 +1,27 @@
+13.0.0
+======
+- Continued with the Gax library refactoring. Google.Ads.GoogleAds is now split into
+  Google.Ads.GoogleAds (which contains the stubs), and Google.Ads.GoogleAds.Core (which
+  contains the library logic).
+- Fixed an issue with DetectAndApplyRecommendations.cs to handle an empty list of
+  recommendations.
+- Google.Ads.Gax version was bumped to v1.0.2.
+- Google.Ads.GoogleAds.Core version was set to 1.0.0 for its first release.
+- Rewrote the release script to work on Linux instead of Windows.
+- Updated some code examples.
+  - Reworked AddAdCustomizer.cs to use CustomizerAttributes and ResponsiveSearchAds instead of feeds and ExpandedTextAds.
+  - Rename the ValidateTextAd.cs to ValidateAd.cs.
+  - Rename the campaignId parameter to baseCampaignId in CreateExperiment.cs
+  - Rename UpdatedExpandedTextAd.cs to UpdateResponsiveSearchAd.cs to illustrate how to update RSAs.
+  - Update AddBusinessProfileLocationExtensions.cs to mark businessProfileAccessToken as an
+    optional parameter.
+- Removed some code examples since ExpandedTextAds are now sunset.
+  - AddExpandedTextAdWithUpgradedUrls.cs
+  - AddExpandedTextAds.cs
+- Removed support for v9 of the Google Ads API.
+- Updated GenerateUserCredentials example to force an OAuth2 Consent screen every time.
+
+
 12.1.0
 ======
 
