@@ -93,22 +93,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
                 }
 
                 // Finds the failed operations by looping through the results.
-                PrintResults(response);
-
-                // Display the results.
-                if (response.PartialFailureError != null)
-                {
-                    Console.WriteLine("Partial failures occurred. Details will be shown below.");
-                }
-                else
-                {
-                    Console.WriteLine("All operations completed successfully. No partial " +
-                        "failures to show.");
-                    return;
-                }
-
-                // Finds the failed operations by looping through the results.
-                PrintResults(response);
+                PrintResults(response);                
             }
             catch (GoogleAdsException e)
             {
