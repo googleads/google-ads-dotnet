@@ -58,8 +58,8 @@
     <Reference Include="Google.Ads.Gax, Version=1.0.1.0, Culture=neutral, PublicKeyToken=52807268f2b614dc, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Google.Ads.Gax.1.0.2\lib\net472\Google.Ads.Gax.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Ads.GoogleAds, Version=13.0.0.0, Culture=neutral, PublicKeyToken=52807268f2b614dc, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Google.Ads.GoogleAds.13.0.0\lib\net472\Google.Ads.GoogleAds.dll</HintPath>
+    <Reference Include="Google.Ads.GoogleAds, Version=13.0.1.0, Culture=neutral, PublicKeyToken=52807268f2b614dc, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Google.Ads.GoogleAds.13.0.1\lib\net472\Google.Ads.GoogleAds.dll</HintPath>
     </Reference>
     <Reference Include="Google.Ads.GoogleAds.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=52807268f2b614dc, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Google.Ads.GoogleAds.Core.1.0.0\lib\net472\Google.Ads.GoogleAds.Core.dll</HintPath>
