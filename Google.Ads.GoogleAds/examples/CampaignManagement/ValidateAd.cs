@@ -20,6 +20,7 @@ using Google.Ads.GoogleAds.V11.Errors;
 using Google.Ads.GoogleAds.V11.Resources;
 using Google.Ads.GoogleAds.V11.Services;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using static Google.Ads.GoogleAds.V11.Enums.AdGroupAdStatusEnum.Types;
 using static Google.Ads.GoogleAds.V11.Enums.ServedAssetFieldTypeEnum.Types;
@@ -101,15 +102,16 @@ namespace Google.Ads.GoogleAds.Examples.V11
                                 Text = "Visit the Red Planet in style.",
                                 PinnedField = ServedAssetFieldType.Headline1
                             },
-                            new AdTextAsset() { Text = "Low-gravity fun for everyone!!" }
+                            new AdTextAsset() { Text = "Low-gravity fun for everyone!!" },
+                            new AdTextAsset() { Text = "Book your Cruise to Mars now" }
                         },
                         Descriptions = 
                         {
                             new AdTextAsset() { Text = "Luxury Cruise to Mars" },
                             new AdTextAsset() { Text = "Book your ticket now" }
                         }                        
-                    },
-                    FinalUrls = { "http://www.example.com/" },
+                    },                
+                    FinalUrls = { "https://www.example.com/" },
                 }
             };
 
@@ -131,7 +133,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
                         ValidateOnly = true
                     });
 
-                // Since validation is ON, result will be null.
+                // This line will not be executed since the ad will fail validation.
                 Console.WriteLine("Responsive search ad validated successfully.");
             }
             catch (GoogleAdsException e)
@@ -139,17 +141,17 @@ namespace Google.Ads.GoogleAds.Examples.V11
                 // This block will be hit if there is a validation error from the server.
                 Console.WriteLine(
                     "There were validation error(s) while adding a responsive search ad.");
-
-                if (e.Failure != null)
-                {
-                    // Note: Policy violation errors are returned as PolicyFindingErrors. See
-                    // https://developers.google.com/google-ads/api/docs/policy-exemption/overview
-                    // for additional details.
-                    e.Failure.Errors
-                        .Where(err =>
-                            err.ErrorCode.PolicyFindingError == PolicyFindingError.PolicyFinding)
-                        .ToList()
-                        .ForEach(delegate (GoogleAdsError err)
+                
+                // Note: Policy violation errors are returned as PolicyFindingErrors. See
+                // https://developers.google.com/google-ads/api/docs/policy-exemption/overview
+                // for additional details.
+                List<GoogleAdsError> policyFindingErrors = e.Failure.Errors
+                    .Where(
+                        err => err.ErrorCode.PolicyFindingError == PolicyFindingError.PolicyFinding)
+                    .ToList();
+                            
+                if (policyFindingErrors.Any()) {
+                    policyFindingErrors.ForEach(delegate (GoogleAdsError err)
                         {
                             int count = 1;
                             if (err.Details.PolicyFindingDetails != null)
@@ -164,13 +166,11 @@ namespace Google.Ads.GoogleAds.Examples.V11
                             }
                             count++;
                         });
-                }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Failure:");
-                Console.WriteLine($"Message: {e.Message}");
-            }
+                } else {
+                    // There were unexpected validation errors, rethrowing the exception
+                    throw e;
+                }        
+            }            
         }
     }
 }
