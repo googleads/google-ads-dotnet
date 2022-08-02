@@ -1,3 +1,11 @@
+13.0.1
+======
+- Updated some code examples.
+  - Reworked UploadCallConversion.cs to support a missing parameter and support partial failure.
+  - Removed some redundant code from HandlePartialFailure.cs.
+  - Modified ValidateAd.cs to fail on unhandled errors.
+- Fixed the release script to load secrets from Keystore.
+
 13.0.0
 ======
 - Continued with the Gax library refactoring. Google.Ads.GoogleAds is now split into
