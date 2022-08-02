@@ -350,7 +350,6 @@ END
 function dotnet_library::build_main() {
   dotnet_library::set_repo_root
   dotnet_library::set_path_variables
-  dotnet_library::extract_keystore_secrets
   dotnet_library::install_dotnet
   dotnet_library::install_additional_tools
   dotnet_library::build_library
