@@ -22,6 +22,11 @@ function dotnet_library::set_repo_root() {
     # This script is running locally, from the root of the repo.
     REPO_ROOT=`pwd`
     KOKORO_ARTIFACTS_DIR="${REPO_ROOT}"/output
+    # There should be a folder named keystore at the root of the
+    # repo, and it should contain two files:
+    # - 74347_google_ads_dotnet_github_key: This file contains the GitHub key.
+    # - 74347_google_ads_dotnet_nuget_key: This file contains the NuGet key.
+    KOKORO_KEYSTORE_DIR="${REPO_ROOT}/keystore"
   fi
   echo "Repo root is '${REPO_ROOT}'"
 }
@@ -50,6 +55,21 @@ function dotnet_library::set_path_variables() {
   DOTNET_CLIENT_LIBRARY_CUSTOM_NUGET_PATH="${DOTNET_CLIENT_LIBRARY_PATH}/custom_nupkg"
   NUGET_PACKAGE_PATH="https://api.nuget.org/v3/index.json;${DOTNET_CLIENT_LIBRARY_CUSTOM_NUGET_PATH}"
   GITHUB_RELEASE_URL="https://api.github.com/repos/googleads/google-ads-dotnet/releases"
+}
+
+########################################################################
+# Extracts the secrets from Keystore.
+# Globals:
+#   KOKORO_KEYSTORE_DIR the root directory where Kokoro saves the
+#     keystore secrets.
+#   GOOGLE_ADS_DOTNET_GITHUB_KEY The GitHub key for making the release.
+#   GOOGLE_ADS_DOTNET_NUGET_KEY The NuGet key for making the release.
+# Arguments:
+#   None
+########################################################################
+function dotnet_library::extract_keystore_secrets() {
+  GOOGLE_ADS_DOTNET_GITHUB_KEY="$(cat "${KOKORO_KEYSTORE_DIR}/74347_google_ads_dotnet_github_key")"
+  GOOGLE_ADS_DOTNET_NUGET_KEY="$(cat "${KOKORO_KEYSTORE_DIR}/74347_google_ads_dotnet_nuget_key")"
 }
 
 ########################################################################
@@ -241,7 +261,6 @@ function dotnet_library::save_build_artifacts() {
 # Globals:
 #   DOTNET_BINARY the path to the dotnet compiler binary.
 #   GOOGLE_ADS_DOTNET_NUGET_KEY the nuget key for publishing the package.
-#     This variable is populated by the Kokoro job from the keystore.
 #   REPO_ROOT the root directory of the google-ads-dotnet repo.
 # Arguments:
 #   None
@@ -292,7 +311,6 @@ function dotnet_library::check_library_release_version_exists() {
 #   DOTNET_CLIENT_LIBRARY_PATH root of the Google.Ads.GoogleAds package
 #     source code.
 #   GOOGLE_ADS_DOTNET_GITHUB_KEY the GitHub key for making the release.
-#     This variable is populated by the Kokoro job from the keystore.
 # Arguments:
 #   None
 ########################################################################
@@ -349,6 +367,7 @@ function dotnet_library::build_main() {
 ########################################################################
 function dotnet_library::release_main() {
   dotnet_library::build_main
+  dotnet_library::extract_keystore_secrets
   dotnet_library::check_library_release_version_exists
   if (( ${LIBRARY_VERSION_EXISTS} )); then
     echo "Library version ${LIBRARY_VERSION_TO_RELEASE} exists. "
