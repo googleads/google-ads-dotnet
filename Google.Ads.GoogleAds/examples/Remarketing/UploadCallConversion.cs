@@ -34,11 +34,18 @@ namespace Google.Ads.GoogleAds.Examples.V11
         public class Options : OptionsBase
         {
             /// <summary>
-            /// The Google Ads customer ID for whom the conversion action will be added.
+            /// The Google Ads customer ID for whom the conversion will be imported.
             /// </summary>
             [Option("customerId", Required = true, HelpText =
-                "The Google Ads customer ID for whom the conversion action will be added.")]
+                "The Google Ads customer ID for whom the conversion will be imported.")]
             public long CustomerId { get; set; }
+
+            /// <summary>
+            /// The conversion action ID.
+            /// </summary>
+            [Option("conversionActionId", Required = true, HelpText =
+                "The conversion action ID.")]
+            public long ConversionActionId { get; set; }
 
             /// <summary>
             /// The caller ID in E.164 format with preceding '+' sign. e.g. "+16502531234".
@@ -93,8 +100,9 @@ namespace Google.Ads.GoogleAds.Examples.V11
 
             UploadCallConversion codeExample = new UploadCallConversion();
             Console.WriteLine(codeExample.Description);
-            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.CallerId,
-                options.CallStartTime, options.ConversionTime, options.ConversionValue,
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, 
+                options.ConversionActionId, options.CallerId, options.CallStartTime,
+                options.ConversionTime, options.ConversionValue,
                 options.ConversionCustomVariableId, options.ConversionCustomVariableValue);
         }
 
@@ -110,10 +118,11 @@ namespace Google.Ads.GoogleAds.Examples.V11
         /// Runs the code example.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
-        /// <param name="customerId">The Google Ads customer ID for whom the conversion action will
-        /// be added.</param>
+        /// <param name="customerId">The Google Ads customer ID for whom the conversion will
+        /// be imported.</param>
         /// <param name="callerId">The caller ID in E.164 format with preceding '+' sign. e.g.
         /// "+16502531234".</param>
+        /// <param name="conversionActionId">The ID of the conversion action</param>
         /// <param name="callStartTime">The call start time in "yyyy-mm-dd hh:mm:ss+|-hh:mm"
         /// format.</param>
         /// <param name="conversionTime">The conversion time in "yyyy-mm-dd hh:mm:ss+|-hh:mm"
@@ -124,8 +133,9 @@ namespace Google.Ads.GoogleAds.Examples.V11
         /// <param name="conversionCustomVariableValue">The value of the conversion custom variable
         /// to associate with the upload.</param>
         // [START upload_call_conversion]
-        public void Run(GoogleAdsClient client, long customerId, string callerId,
-            string callStartTime, string conversionTime, double conversionValue,
+        public void Run(GoogleAdsClient client, long customerId, 
+            long conversionActionId, string callerId, string callStartTime,
+            string conversionTime, double conversionValue,
             long? conversionCustomVariableId, string conversionCustomVariableValue)
         {
             // Get the ConversionUploadService.
@@ -135,6 +145,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
             // Create a call conversion by specifying currency as USD.
             CallConversion callConversion = new CallConversion()
             {
+                ConversionAction = ResourceNames.ConversionAction(customerId, conversionActionId),
                 CallerId = callerId,
                 CallStartDateTime = callStartTime,
                 ConversionDateTime = conversionTime,
@@ -168,12 +179,30 @@ namespace Google.Ads.GoogleAds.Examples.V11
                 UploadCallConversionsResponse response =
                     conversionUploadService.UploadCallConversions(request);
 
-                // Prints the result.
-                CallConversionResult uploadedCallConversion = response.Results[0];
-                Console.WriteLine($"Uploaded call conversion that occurred at " +
-                    $"'{uploadedCallConversion.CallStartDateTime}' for caller ID " +
-                    $"'{uploadedCallConversion.CallerId}' to the conversion action with " +
-                    $"resource name '{uploadedCallConversion.ConversionAction}'.");
+                // Since we set partialFailure = true, we can retrieve error messages (if any) from
+                // the operation response.
+                if (response.PartialFailureError != null)
+                {
+                    Console.WriteLine("Call conversion upload failed.");
+                    
+                    // Retrieves the errors from the partial failure and prints them.
+                    List<GoogleAdsError> errors =
+                        response.PartialFailure.GetErrorsByOperationIndex(0);
+                    foreach (GoogleAdsError error in errors)
+                    {
+                        Console.WriteLine($"Operation failed with error: {error}.");
+                    }                
+                }
+                else
+                {
+                    // Prints the result.
+                    CallConversionResult uploadedCallConversion = response.Results[0];
+                    Console.WriteLine($"Uploaded call conversion that occurred at " +
+                        $"'{uploadedCallConversion.CallStartDateTime}' for caller ID " +
+                        $"'{uploadedCallConversion.CallerId}' to the conversion action with " +
+                        $"resource name '{uploadedCallConversion.ConversionAction}'.");
+                }
+                
             }
             catch (GoogleAdsException e)
             {
