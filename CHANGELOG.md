@@ -4,6 +4,7 @@
   - Reworked UploadCallConversion.cs to support a missing parameter and support partial failure.
   - Removed some redundant code from HandlePartialFailure.cs.
   - Modified ValidateAd.cs to fail on unhandled errors.
+  - Improved the instructions for LoginCustomerId in GenerateUserCredentials example.
 - Fixed the release script to load secrets from Keystore.
 
 13.0.0
