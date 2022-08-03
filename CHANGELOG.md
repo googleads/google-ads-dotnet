@@ -1,3 +1,9 @@
+13.0.2
+======
+- Removed the PublicSign clause from all csproj files. Fixes https://github.com/googleads/google-ads-dotnet/issues/437.
+- Version for Google.Ads.Gax was bumped to 1.0.3.
+- Version for Google.Ads.GoogleAds.Core was bumped to 1.0.1.
+
 13.0.1
 ======
 - Updated some code examples.
