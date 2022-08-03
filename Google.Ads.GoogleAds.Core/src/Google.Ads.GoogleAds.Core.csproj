@@ -23,7 +23,6 @@
     <TargetFrameworks>netstandard2.0;net472;net5.0</TargetFrameworks>
     <AssemblyName>Google.Ads.GoogleAds.Core</AssemblyName>
     <RootNamespace>Google.Ads.GoogleAds</RootNamespace>
-    <PublicSign Condition="'$(OS)' != 'Windows_NT'">true</PublicSign>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\..\GoogleAds.snk</AssemblyOriginatorKeyFile>
     <DebugType>pdbonly</DebugType>
