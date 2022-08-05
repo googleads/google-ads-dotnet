@@ -34,7 +34,7 @@
   - AddExpandedTextAdWithUpgradedUrls.cs
   - AddExpandedTextAds.cs
 - Removed support for v9 of the Google Ads API.
-- Updated GenerateUserCredentials example to force an OAuth2 Consent screen every time.
+- Updated GenerateUserCredentials example to force an OAuth2 Consent screen every time. Fixes https://github.com/googleads/google-ads-dotnet/issues/418
 
 
 12.1.0
