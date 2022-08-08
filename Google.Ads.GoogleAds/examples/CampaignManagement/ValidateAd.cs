@@ -161,14 +161,14 @@ namespace Google.Ads.GoogleAds.Examples.V11
                                 {
                                     Console.WriteLine($"{count}) Policy topic entry with topic = " +
                                         $"\"{entry.Topic}\" and type = \"{entry.Type}\" " +
-                                        $"was found.");
+                                        $"found.");
+                                    count++;
                                 }
-                            }
-                            count++;
+                            }                            
                         });
                 } else {
                     // There were unexpected validation errors, rethrowing the exception
-                    throw e;
+                    throw;
                 }        
             }            
         }
