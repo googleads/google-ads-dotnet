@@ -180,7 +180,6 @@ namespace Google.Ads.GoogleAds.Examples.V11
                 Create = priceAttribute
             };
 
-            List<string> customizerAttributeResourceNames = new List<string>();
             MutateCustomizerAttributesResponse response =
                 customizerAttributeService.MutateCustomizerAttributes(customerId.ToString(),
                     new[] {priceAttributeOperation});
