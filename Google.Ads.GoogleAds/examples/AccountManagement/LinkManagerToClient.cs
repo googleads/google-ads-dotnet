@@ -190,7 +190,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
                 managerCustomerId.ToString(), query).First();
 
             // Gets the ID and resource name associated to the manager link found.
-            long managerLinkId = result.CustomerManagerLink.ManagerLinkId;
+            long managerLinkId = result.CustomerClientLink.ManagerLinkId;
             string managerLinkResourceName = ResourceNames.CustomerManagerLink(
                 clientCustomerId, managerCustomerId, managerLinkId);
             // Prints the result.
@@ -213,7 +213,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
             CustomerManagerLinkServiceClient customerManagerLinkService =
                 client.GetService(Services.V11.CustomerManagerLinkService);
 
-            // Create a client with the manager customer ID as login customer ID.
+            // Create a client with the client customer ID as login customer ID.
             client.Config.LoginCustomerId = clientCustomerId.ToString();
 
             // Creates the customer manager link with the updated status.
