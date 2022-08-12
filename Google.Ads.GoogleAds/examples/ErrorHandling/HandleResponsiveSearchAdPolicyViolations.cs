@@ -26,14 +26,14 @@ using static Google.Ads.GoogleAds.V11.Enums.AdGroupAdStatusEnum.Types;
 namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
-    /// This code example demonstrates how to request an exemption for policy violations of an
-    /// expanded text ad. If the request somehow fails with exceptions that are not policy finding
+    /// This code example demonstrates how to request an exemption for policy violations of a
+    /// responsive search ad. If the request somehow fails with exceptions that are not policy finding
     /// errors, the code example will stop instead of trying to send an exemption request.
     /// </summary>
-    public class HandleExpandedTextAdPolicyViolations : ExampleBase
+    public class HandleResponsiveSearchAdPolicyViolations : ExampleBase
     {
         /// <summary>
-        /// Command line options for running the <see cref="HandleExpandedTextAdPolicyViolations"/>
+        /// Command line options for running the <see cref="HandleResponsiveSearchAdPolicyViolations"/>
         /// example.
         /// </summary>
         public class Options : OptionsBase
@@ -61,8 +61,8 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
-            HandleExpandedTextAdPolicyViolations codeExample =
-                new HandleExpandedTextAdPolicyViolations();
+            HandleResponsiveSearchAdPolicyViolations codeExample =
+                new HandleResponsiveSearchAdPolicyViolations();
             Console.WriteLine(codeExample.Description);
             codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.AdGroupId);
         }
@@ -72,7 +72,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         /// </summary>
         public override string Description =>
             "This code example demonstrates how to request an exemption for policy violations of " +
-            "an expanded text ad. If the request somehow fails with exceptions that are not " +
+            "a responsive search ad. If the request somehow fails with exceptions that are not " +
             "policy finding  errors, the code example will stop instead of trying to send an " +
             "exemption request.";
 
@@ -89,16 +89,21 @@ namespace Google.Ads.GoogleAds.Examples.V11
                 Services.V11.AdGroupAdService);
 
             string adGroupResourceName = ResourceNames.AdGroup(customerId, adGroupId);
-            // Creates an expanded text ad info object.
-            ExpandedTextAdInfo expandedTextAdInfo = new ExpandedTextAdInfo()
+            ResponsiveSearchAdInfo responsiveSearchAdInfo = new ResponsiveSearchAdInfo()
             {
-                HeadlinePart1 = $"Cruise to Mars #{ExampleUtilities.GetShortRandomString()}",
-                HeadlinePart2 = "Best Space Cruise Line",
-                // Intentionally use an ad text that violates policy -- having too many exclamation
-                // marks.
-                Description = "Buy your tickets now!!!!!!!"
+                Headlines = {
+                    new AdTextAsset() { Text = $"Cruise to Mars #{ExampleUtilities.GetShortRandomString()}" },
+                    new AdTextAsset() { Text = "Best Space Cruise Line" },
+                    new AdTextAsset() { Text = "Experience the Stars" }                    
+                },
+                Descriptions = {
+                    // Intentionally use an ad text that violates policy -- having too many exclamation
+                    // marks.
+                    new AdTextAsset() { Text = "Buy your tickets now!!!!!!!" },
+                    new AdTextAsset() { Text = "Visit the Red Planet" }
+                }
             };
-
+            
             // Creates an ad group ad to hold the above ad.
             AdGroupAd adGroupAd = new AdGroupAd()
             {
@@ -106,11 +111,11 @@ namespace Google.Ads.GoogleAds.Examples.V11
                 // Set the ad group ad to PAUSED to prevent it from immediately serving.
                 // Set to ENABLED once you've added targeting and the ad are ready to serve.
                 Status = AdGroupAdStatus.Paused,
-                // Sets the expanded text ad info on an Ad.
+                // Sets the responsive search ad info on an Ad.
                 Ad = new Ad()
                 {
-                    ExpandedTextAd = expandedTextAdInfo,
-                    FinalUrls = { "http://www.example.com" }
+                    ResponsiveSearchAd = responsiveSearchAdInfo,
+                    FinalUrls = { "https://www.example.com" }
                 }
             };
 
@@ -132,7 +137,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
                     // The request will always fail because of the policy violation in the
                     // description of the ad.
                     var ignorablePolicyTopics = FetchIgnorablePolicyTopics(ex);
-                    // Try sending exemption requests for creating an expanded text ad.
+                    // Try sending exemption requests for creating a responsive search ad.
                     RequestExemption(customerId, adGroupAdService, operation, ignorablePolicyTopics);
                 }
             }
@@ -151,7 +156,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         /// </summary>
         /// <param name="ex">The API exception from a previous call to add ad group ads.</param>
         /// <returns>The ignorable policy topics</returns>
-        // [START handle_expanded_text_ad_policy_violations]
+        // [START handle_responsive_search_ad_policy_violations]
         private static string[] FetchIgnorablePolicyTopics(GoogleAdsException ex)
         {
             List<string> ignorablePolicyTopics = new List<string>(); ;
@@ -171,8 +176,8 @@ namespace Google.Ads.GoogleAds.Examples.V11
                     foreach (PolicyTopicEntry entry in details.PolicyTopicEntries)
                     {
                         ignorablePolicyTopics.Add(entry.Topic);
-                        Console.WriteLine($"  - Policy topic name: '{entry.Topic}");
-                        Console.WriteLine($"  - Policy topic entry type: '{entry.Type}");
+                        Console.WriteLine($"  - Policy topic name: '{entry.Topic}'");
+                        Console.WriteLine($"  - Policy topic entry type: '{entry.Type}'");
                         // For the sake of brevity, we exclude printing "policy topic evidences"
                         // and "policy topic constraints" here. You can fetch those data by
                         // calling:
@@ -183,20 +188,20 @@ namespace Google.Ads.GoogleAds.Examples.V11
             }
             return ignorablePolicyTopics.ToArray();
         }
-        // [END handle_expanded_text_ad_policy_violations]
+        // [END handle_responsive_search_ad_policy_violations]
 
         /// <summary>
-        /// Sends exemption requests for creating an expanded text ad.
+        /// Sends exemption requests for creating a responsive search ad.
         /// </summary>
         /// <param name="customerId">The customer ID for which the call is made.</param>
         /// <param name="service">The ad group ad service.</param>
         /// <param name="operation">The ad group ad operation to request exemption for.</param>
         /// <param name="ignorablePolicyTopics">The ignorable policy topics.</param>
-        // [START handle_expanded_text_ad_policy_violations_1]
+        // [START handle_responsive_search_ad_policy_violations_1]
         private static void RequestExemption(long customerId, AdGroupAdServiceClient service,
             AdGroupAdOperation operation, string[] ignorablePolicyTopics)
         {
-            Console.WriteLine("Try adding an expanded text ad again by requesting exemption for " +
+            Console.WriteLine("Try adding a responsive search ad again by requesting exemption for " +
                 "its policy violations.");
             PolicyValidationParameter validationParameter = new PolicyValidationParameter();
             validationParameter.IgnorablePolicyTopics.AddRange(ignorablePolicyTopics);
@@ -204,10 +209,10 @@ namespace Google.Ads.GoogleAds.Examples.V11
 
             MutateAdGroupAdsResponse response = service.MutateAdGroupAds(
                 customerId.ToString(), new[] { operation });
-            Console.WriteLine($"Successfully added an expanded text ad with resource name " +
+            Console.WriteLine($"Successfully added a responsive search ad with resource name " +
                 $"'{response.Results[0].ResourceName}' by requesting for policy violation " +
                 $"exemption.");
         }
-        // [END handle_expanded_text_ad_policy_violations_1]
+        // [END handle_responsive_search_ad_policy_violations_1]
     }
 }
