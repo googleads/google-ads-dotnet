@@ -29,7 +29,8 @@ using static Google.Ads.GoogleAds.V11.Errors.PolicyFindingErrorEnum.Types;
 namespace Google.Ads.GoogleAds.Examples.V11
 {
     /// <summary>
-    /// This code example shows how to use the validateOnly header to validate a responsive search ad.
+    /// This code example shows how to use the validateOnly request parameter to validate a
+    /// responsive search ad.
     /// No objects will be created, but exceptions will still be thrown.
     /// </summary>
     public class ValidateAd : ExampleBase
@@ -71,8 +72,8 @@ namespace Google.Ads.GoogleAds.Examples.V11
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
-            "This code example shows how to use the validateOnly header to validate a responsive " +
-            "search ad. No objects will be created, but exceptions will still be thrown.";
+            "This code example shows how to use the validateOnly request parameter to validate " +
+            "a responsive search ad. No objects will be created, but exceptions will still be thrown.";
 
         /// <summary>
         /// Runs the code example.
