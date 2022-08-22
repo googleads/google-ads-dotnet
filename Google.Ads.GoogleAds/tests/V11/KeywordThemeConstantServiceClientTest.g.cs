@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagvr = Google.Ads.GoogleAds.V11.Resources;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using grpccore = Grpc.Core;
@@ -46,7 +47,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.SuggestKeywordThemeConstants(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            KeywordThemeConstantServiceClient client = new KeywordThemeConstantServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordThemeConstantServiceClient client = new KeywordThemeConstantServiceClientImpl(mockGrpcClient.Object, null, null);
             SuggestKeywordThemeConstantsResponse response = client.SuggestKeywordThemeConstants(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -70,7 +71,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.SuggestKeywordThemeConstantsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<SuggestKeywordThemeConstantsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            KeywordThemeConstantServiceClient client = new KeywordThemeConstantServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordThemeConstantServiceClient client = new KeywordThemeConstantServiceClientImpl(mockGrpcClient.Object, null, null);
             SuggestKeywordThemeConstantsResponse responseCallSettings = await client.SuggestKeywordThemeConstantsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             SuggestKeywordThemeConstantsResponse responseCancellationToken = await client.SuggestKeywordThemeConstantsAsync(request, st::CancellationToken.None);

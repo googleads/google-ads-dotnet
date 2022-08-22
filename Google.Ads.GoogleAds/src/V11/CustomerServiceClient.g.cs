@@ -14,13 +14,14 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagvr = Google.Ads.GoogleAds.V11.Resources;
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
-using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using proto = Google.Protobuf;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
+using mel = Microsoft.Extensions.Logging;
 using sys = System;
 using scg = System.Collections.Generic;
 using sco = System.Collections.ObjectModel;
@@ -132,9 +133,8 @@ namespace Google.Ads.GoogleAds.V11.Services
         public CustomerServiceSettings Settings { get; set; }
 
         /// <summary>Creates a new builder with default settings.</summary>
-        public CustomerServiceClientBuilder()
+        public CustomerServiceClientBuilder() : base(CustomerServiceClient.ServiceMetadata)
         {
-            UseJwtAccessWithScopes = CustomerServiceClient.UseJwtAccessWithScopes;
         }
 
         partial void InterceptBuild(ref CustomerServiceClient client);
@@ -161,29 +161,18 @@ namespace Google.Ads.GoogleAds.V11.Services
         {
             Validate();
             grpccore::CallInvoker callInvoker = CreateCallInvoker();
-            return CustomerServiceClient.Create(callInvoker, Settings);
+            return CustomerServiceClient.Create(callInvoker, Settings, Logger);
         }
 
         private async stt::Task<CustomerServiceClient> BuildAsyncImpl(st::CancellationToken cancellationToken)
         {
             Validate();
             grpccore::CallInvoker callInvoker = await CreateCallInvokerAsync(cancellationToken).ConfigureAwait(false);
-            return CustomerServiceClient.Create(callInvoker, Settings);
+            return CustomerServiceClient.Create(callInvoker, Settings, Logger);
         }
-
-        /// <summary>Returns the endpoint for this builder type, used if no endpoint is otherwise specified.</summary>
-        protected override string GetDefaultEndpoint() => CustomerServiceClient.DefaultEndpoint;
-
-        /// <summary>
-        /// Returns the default scopes for this builder type, used if no scopes are otherwise specified.
-        /// </summary>
-        protected override scg::IReadOnlyList<string> GetDefaultScopes() => CustomerServiceClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
         protected override gaxgrpc::ChannelPool GetChannelPool() => CustomerServiceClient.ChannelPool;
-
-        /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
-        protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
     }
 
     /// <summary>CustomerService client wrapper, for convenient use.</summary>
@@ -208,19 +197,10 @@ namespace Google.Ads.GoogleAds.V11.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+        /// <summary>The service metadata associated with this client type.</summary>
+        public static gaxgrpc::ServiceMetadata ServiceMetadata { get; } = new gaxgrpc::ServiceMetadata(CustomerService.Descriptor, DefaultEndpoint, DefaultScopes, true, gax::ApiTransports.Grpc, PackageApiMetadata.ApiMetadata);
 
-        internal static bool UseJwtAccessWithScopes
-        {
-            get
-            {
-                bool useJwtAccessWithScopes = true;
-                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
-                return useJwtAccessWithScopes;
-            }
-        }
-
-        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(ServiceMetadata);
 
         /// <summary>
         /// Asynchronously creates a <see cref="CustomerServiceClient"/> using the default credentials, endpoint and
@@ -247,8 +227,9 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
         /// </param>
         /// <param name="settings">Optional <see cref="CustomerServiceSettings"/>.</param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
         /// <returns>The created <see cref="CustomerServiceClient"/>.</returns>
-        internal static CustomerServiceClient Create(grpccore::CallInvoker callInvoker, CustomerServiceSettings settings = null)
+        internal static CustomerServiceClient Create(grpccore::CallInvoker callInvoker, CustomerServiceSettings settings = null, mel::ILogger logger = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpcinter::Interceptor interceptor = settings?.Interceptor;
@@ -257,7 +238,7 @@ namespace Google.Ads.GoogleAds.V11.Services
                 callInvoker = grpcinter::CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
             CustomerService.CustomerServiceClient grpcClient = new CustomerService.CustomerServiceClient(callInvoker);
-            return new CustomerServiceClientImpl(grpcClient, settings);
+            return new CustomerServiceClientImpl(grpcClient, settings, logger);
         }
 
         /// <summary>
@@ -649,18 +630,19 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// </summary>
         /// <param name="grpcClient">The underlying gRPC client.</param>
         /// <param name="settings">The base <see cref="CustomerServiceSettings"/> used within this client.</param>
-        public CustomerServiceClientImpl(CustomerService.CustomerServiceClient grpcClient, CustomerServiceSettings settings)
+        /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
+        public CustomerServiceClientImpl(CustomerService.CustomerServiceClient grpcClient, CustomerServiceSettings settings, mel::ILogger logger)
         {
             GrpcClient = grpcClient;
             CustomerServiceSettings effectiveSettings = settings ?? CustomerServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callMutateCustomer = clientHelper.BuildApiCall<MutateCustomerRequest, MutateCustomerResponse>(grpcClient.MutateCustomerAsync, grpcClient.MutateCustomer, effectiveSettings.MutateCustomerSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            _callMutateCustomer = clientHelper.BuildApiCall<MutateCustomerRequest, MutateCustomerResponse>("MutateCustomer", grpcClient.MutateCustomerAsync, grpcClient.MutateCustomer, effectiveSettings.MutateCustomerSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateCustomer);
             Modify_MutateCustomerApiCall(ref _callMutateCustomer);
-            _callListAccessibleCustomers = clientHelper.BuildApiCall<ListAccessibleCustomersRequest, ListAccessibleCustomersResponse>(grpcClient.ListAccessibleCustomersAsync, grpcClient.ListAccessibleCustomers, effectiveSettings.ListAccessibleCustomersSettings);
+            _callListAccessibleCustomers = clientHelper.BuildApiCall<ListAccessibleCustomersRequest, ListAccessibleCustomersResponse>("ListAccessibleCustomers", grpcClient.ListAccessibleCustomersAsync, grpcClient.ListAccessibleCustomers, effectiveSettings.ListAccessibleCustomersSettings);
             Modify_ApiCall(ref _callListAccessibleCustomers);
             Modify_ListAccessibleCustomersApiCall(ref _callListAccessibleCustomers);
-            _callCreateCustomerClient = clientHelper.BuildApiCall<CreateCustomerClientRequest, CreateCustomerClientResponse>(grpcClient.CreateCustomerClientAsync, grpcClient.CreateCustomerClient, effectiveSettings.CreateCustomerClientSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            _callCreateCustomerClient = clientHelper.BuildApiCall<CreateCustomerClientRequest, CreateCustomerClientResponse>("CreateCustomerClient", grpcClient.CreateCustomerClientAsync, grpcClient.CreateCustomerClient, effectiveSettings.CreateCustomerClientSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callCreateCustomerClient);
             Modify_CreateCustomerClientApiCall(ref _callCreateCustomerClient);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

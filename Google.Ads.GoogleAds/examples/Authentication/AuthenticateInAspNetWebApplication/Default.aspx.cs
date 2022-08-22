@@ -77,7 +77,7 @@ namespace Google.Ads.GoogleAds.Examples
         /// </summary>
         /// <param name="sender">The source of the event.</param>
         /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
-        protected void btnGetCampaigns_Click(object sender, EventArgs e)
+        async protected void btnGetCampaigns_Click(object sender, EventArgs e)
         {
             string customerId = txtCustomerId.Text;
             // Get the GoogleAdsService.
@@ -95,12 +95,12 @@ namespace Google.Ads.GoogleAds.Examples
             };
 
             // Issue the search request.
-            PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> searchPagedResponse =
-                googleAdsService.Search(request);
+            PagedAsyncEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> searchPagedResponse =
+                googleAdsService.SearchAsync(request);
 
             // Iterate over all rows in all pages and prints the requested field values for the
             // campaign in each row.
-            foreach (GoogleAdsRow googleAdsRow in searchPagedResponse)
+            await foreach (GoogleAdsRow googleAdsRow in searchPagedResponse)
             {
                 TableRow row = new TableRow();
                 row.Cells.Add(new TableCell()

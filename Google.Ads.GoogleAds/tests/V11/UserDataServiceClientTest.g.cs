@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagvc = Google.Ads.GoogleAds.V11.Common;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using grpccore = Grpc.Core;
@@ -47,7 +48,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 ReceivedOperationsCount = -816258212,
             };
             mockGrpcClient.Setup(x => x.UploadUserData(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            UserDataServiceClient client = new UserDataServiceClientImpl(mockGrpcClient.Object, null);
+            UserDataServiceClient client = new UserDataServiceClientImpl(mockGrpcClient.Object, null, null);
             UploadUserDataResponse response = client.UploadUserData(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -72,7 +73,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 ReceivedOperationsCount = -816258212,
             };
             mockGrpcClient.Setup(x => x.UploadUserDataAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<UploadUserDataResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            UserDataServiceClient client = new UserDataServiceClientImpl(mockGrpcClient.Object, null);
+            UserDataServiceClient client = new UserDataServiceClientImpl(mockGrpcClient.Object, null, null);
             UploadUserDataResponse responseCallSettings = await client.UploadUserDataAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             UploadUserDataResponse responseCancellationToken = await client.UploadUserDataAsync(request, st::CancellationToken.None);

@@ -14,7 +14,6 @@
 
 using Google.Ads.Gax.Interceptors;
 using Google.Ads.Gax.Logging;
-using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Util;
 using Grpc.Core;
 using Grpc.Core.Interceptors;
@@ -33,11 +32,6 @@ namespace Google.Ads.GoogleAds.Logging
         /// Gets the trace writer.
         /// </summary>
         private ITraceWriter traceWriter;
-
-        /// <summary>
-        /// Gets the configuration.
-        /// </summary>
-        private GoogleAdsConfig config;
 
         /// <summary>
         /// Gets or sets the callback for writing detailed logs.
@@ -60,17 +54,15 @@ namespace Google.Ads.GoogleAds.Logging
         /// <summary>
         /// The log customizer.
         /// </summary>
-        ILogFormatter logCustomizer;
-        
+        private ILogFormatter logCustomizer;
+
         /// <summary>
         /// Initializes a new instance of the <see cref="LoggingHandler"/> class.
         /// </summary>
-        /// <param name="config">The configuration.</param>
-        internal LoggingHandler(GoogleAdsConfig config)
+        internal LoggingHandler()
         {
-            this.config = config;
             this.traceWriter = new DefaultTraceWriter();
-            this.logCustomizer = new LogFormatter(); ;
+            this.logCustomizer = new LogFormatter();
             this.WriteDetailedLogs = WriteDetailedLogEntry;
             this.WriteSummaryLogs = WriteSummaryLogEntry;
         }
@@ -84,7 +76,7 @@ namespace Google.Ads.GoogleAds.Logging
         /// <param name="context">The context.</param>
         /// <param name="oldTask">The old task.</param>
         /// <param name="call">The call.</param>
-        internal void HandleAsyncUnaryLogging<TRequest, TResponse>(TRequest request,
+        internal async void HandleAsyncUnaryLogging<TRequest, TResponse>(TRequest request,
             ClientInterceptorContext<TRequest, TResponse> context,
             Task<TResponse> oldTask, AsyncUnaryCall<TResponse> call)
             where TRequest : class
@@ -101,13 +93,13 @@ namespace Google.Ads.GoogleAds.Logging
 
                 LogEntry logEntry = new LogEntry(logCustomizer)
                 {
-                    Host = config.ServerUrl,
+                    Host = context.Host,
                     Method = context.Method.FullName,
                     RequestHeaders = context.Options.Headers,  // includes the RequestId
                     IsFailure = oldTask.IsFaulted,
                     Exception = exception,
                     CustomerId = GetCustomerId(request),
-                    ResponseHeaders = Merge(GetResponseHeader(call.ResponseHeadersAsync),
+                    ResponseHeaders = Merge(await call.ResponseHeadersAsync,
                                             call.GetTrailers()),
                     Response = (oldTask.IsFaulted) ? default : oldTask.Result,
                 };
@@ -119,11 +111,11 @@ namespace Google.Ads.GoogleAds.Logging
             {
                 LogEntry logEntry = new LogEntry(logCustomizer)
                 {
-                    Host = config.ServerUrl,
+                    Host = context.Host,
                     Method = context.Method.FullName,
                     RequestHeaders = context.Options.Headers,
                     Request = request,
-                    ResponseHeaders = Merge(GetResponseHeader(call.ResponseHeadersAsync),
+                    ResponseHeaders = Merge(await call.ResponseHeadersAsync,
                                             call.GetTrailers()),
                     Response = (oldTask.IsFaulted) ? default : oldTask.Result,
                     Exception = exception ?? UnaryRpcInterceptor.ParseTaskException<TResponse>(
@@ -148,7 +140,7 @@ namespace Google.Ads.GoogleAds.Logging
         /// <param name="context">The context.</param>
         /// <param name="rpcException">The RPC exception.</param>
         /// <param name="call">The call.</param>
-        internal void HandleAsyncServerStreamingLogging<TRequest, TResponse>(TRequest request,
+        internal async void HandleAsyncServerStreamingLogging<TRequest, TResponse>(TRequest request,
             TResponse response, ClientInterceptorContext<TRequest, TResponse> context,
             AggregateException rpcException, AsyncServerStreamingCall<TResponse> call)
             where TRequest : class
@@ -165,14 +157,14 @@ namespace Google.Ads.GoogleAds.Logging
 
                 LogEntry logEntry = new LogEntry(logCustomizer)
                 {
-                    Host = config.ServerUrl,
+                    Host = context.Host,
                     Method = context.Method.FullName,
                     RequestHeaders = context.Options.Headers,  // includes the RequestId
                     IsFailure = (rpcException != null),
                     Exception = exception,
                     CustomerId = GetCustomerId(request),
                     Response = response,
-                    ResponseHeaders = Merge(GetResponseHeader(call.ResponseHeadersAsync),
+                    ResponseHeaders = Merge(await call.ResponseHeadersAsync,
                         TryGetCallTrailers(call)),
                 };
 
@@ -183,11 +175,11 @@ namespace Google.Ads.GoogleAds.Logging
             {
                 LogEntry logEntry = new LogEntry(logCustomizer)
                 {
-                    Host = config.ServerUrl,
+                    Host = context.Host,
                     Method = context.Method.FullName,
                     RequestHeaders = context.Options.Headers,
                     Request = request,
-                    ResponseHeaders = Merge(GetResponseHeader(call.ResponseHeadersAsync),
+                    ResponseHeaders = Merge(await call.ResponseHeadersAsync,
                         TryGetCallTrailers(call)),
                     Response = response,
                     Exception = exception ?? UnaryRpcInterceptor.ParseTaskException<TResponse>(
@@ -216,7 +208,8 @@ namespace Google.Ads.GoogleAds.Logging
             {
                 return call.GetTrailers();
             }
-            catch (InvalidOperationException) {
+            catch (InvalidOperationException)
+            {
                 return new Metadata();
             }
         }
@@ -307,9 +300,9 @@ namespace Google.Ads.GoogleAds.Logging
         /// </summary>
         /// <param name="task">The task for retrieving metadata headers.</param>
         /// <returns>The trailing response metadata headers.</returns>
-        private static Metadata GetResponseHeader(Task<Metadata> task)
+        private static async Task<Metadata> GetResponseHeader(Task<Metadata> task)
         {
-            task.Wait();
+            await task;
             return task.Result;
         }
 

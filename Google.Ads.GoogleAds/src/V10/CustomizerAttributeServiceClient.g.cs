@@ -14,12 +14,13 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
-using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using proto = Google.Protobuf;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
+using mel = Microsoft.Extensions.Logging;
 using sys = System;
 using scg = System.Collections.Generic;
 using sco = System.Collections.ObjectModel;
@@ -88,9 +89,8 @@ namespace Google.Ads.GoogleAds.V10.Services
         public CustomizerAttributeServiceSettings Settings { get; set; }
 
         /// <summary>Creates a new builder with default settings.</summary>
-        public CustomizerAttributeServiceClientBuilder()
+        public CustomizerAttributeServiceClientBuilder() : base(CustomizerAttributeServiceClient.ServiceMetadata)
         {
-            UseJwtAccessWithScopes = CustomizerAttributeServiceClient.UseJwtAccessWithScopes;
         }
 
         partial void InterceptBuild(ref CustomizerAttributeServiceClient client);
@@ -117,29 +117,18 @@ namespace Google.Ads.GoogleAds.V10.Services
         {
             Validate();
             grpccore::CallInvoker callInvoker = CreateCallInvoker();
-            return CustomizerAttributeServiceClient.Create(callInvoker, Settings);
+            return CustomizerAttributeServiceClient.Create(callInvoker, Settings, Logger);
         }
 
         private async stt::Task<CustomizerAttributeServiceClient> BuildAsyncImpl(st::CancellationToken cancellationToken)
         {
             Validate();
             grpccore::CallInvoker callInvoker = await CreateCallInvokerAsync(cancellationToken).ConfigureAwait(false);
-            return CustomizerAttributeServiceClient.Create(callInvoker, Settings);
+            return CustomizerAttributeServiceClient.Create(callInvoker, Settings, Logger);
         }
-
-        /// <summary>Returns the endpoint for this builder type, used if no endpoint is otherwise specified.</summary>
-        protected override string GetDefaultEndpoint() => CustomizerAttributeServiceClient.DefaultEndpoint;
-
-        /// <summary>
-        /// Returns the default scopes for this builder type, used if no scopes are otherwise specified.
-        /// </summary>
-        protected override scg::IReadOnlyList<string> GetDefaultScopes() => CustomizerAttributeServiceClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
         protected override gaxgrpc::ChannelPool GetChannelPool() => CustomizerAttributeServiceClient.ChannelPool;
-
-        /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
-        protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
     }
 
     /// <summary>CustomizerAttributeService client wrapper, for convenient use.</summary>
@@ -164,19 +153,10 @@ namespace Google.Ads.GoogleAds.V10.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+        /// <summary>The service metadata associated with this client type.</summary>
+        public static gaxgrpc::ServiceMetadata ServiceMetadata { get; } = new gaxgrpc::ServiceMetadata(CustomizerAttributeService.Descriptor, DefaultEndpoint, DefaultScopes, true, gax::ApiTransports.Grpc, PackageApiMetadata.ApiMetadata);
 
-        internal static bool UseJwtAccessWithScopes
-        {
-            get
-            {
-                bool useJwtAccessWithScopes = true;
-                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
-                return useJwtAccessWithScopes;
-            }
-        }
-
-        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(ServiceMetadata);
 
         /// <summary>
         /// Asynchronously creates a <see cref="CustomizerAttributeServiceClient"/> using the default credentials,
@@ -206,8 +186,9 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
         /// </param>
         /// <param name="settings">Optional <see cref="CustomizerAttributeServiceSettings"/>.</param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
         /// <returns>The created <see cref="CustomizerAttributeServiceClient"/>.</returns>
-        internal static CustomizerAttributeServiceClient Create(grpccore::CallInvoker callInvoker, CustomizerAttributeServiceSettings settings = null)
+        internal static CustomizerAttributeServiceClient Create(grpccore::CallInvoker callInvoker, CustomizerAttributeServiceSettings settings = null, mel::ILogger logger = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpcinter::Interceptor interceptor = settings?.Interceptor;
@@ -216,7 +197,7 @@ namespace Google.Ads.GoogleAds.V10.Services
                 callInvoker = grpcinter::CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
             CustomizerAttributeService.CustomizerAttributeServiceClient grpcClient = new CustomizerAttributeService.CustomizerAttributeServiceClient(callInvoker);
-            return new CustomizerAttributeServiceClientImpl(grpcClient, settings);
+            return new CustomizerAttributeServiceClientImpl(grpcClient, settings, logger);
         }
 
         /// <summary>
@@ -341,12 +322,13 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// <param name="settings">
         /// The base <see cref="CustomizerAttributeServiceSettings"/> used within this client.
         /// </param>
-        public CustomizerAttributeServiceClientImpl(CustomizerAttributeService.CustomizerAttributeServiceClient grpcClient, CustomizerAttributeServiceSettings settings)
+        /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
+        public CustomizerAttributeServiceClientImpl(CustomizerAttributeService.CustomizerAttributeServiceClient grpcClient, CustomizerAttributeServiceSettings settings, mel::ILogger logger)
         {
             GrpcClient = grpcClient;
             CustomizerAttributeServiceSettings effectiveSettings = settings ?? CustomizerAttributeServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callMutateCustomizerAttributes = clientHelper.BuildApiCall<MutateCustomizerAttributesRequest, MutateCustomizerAttributesResponse>(grpcClient.MutateCustomizerAttributesAsync, grpcClient.MutateCustomizerAttributes, effectiveSettings.MutateCustomizerAttributesSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            _callMutateCustomizerAttributes = clientHelper.BuildApiCall<MutateCustomizerAttributesRequest, MutateCustomizerAttributesResponse>("MutateCustomizerAttributes", grpcClient.MutateCustomizerAttributesAsync, grpcClient.MutateCustomizerAttributes, effectiveSettings.MutateCustomizerAttributesSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateCustomizerAttributes);
             Modify_MutateCustomizerAttributesApiCall(ref _callMutateCustomizerAttributes);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

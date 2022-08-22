@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagve = Google.Ads.GoogleAds.V11.Enums;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using gr = Google.Rpc;
@@ -53,7 +54,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateCustomizerAttributes(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            CustomizerAttributeServiceClient client = new CustomizerAttributeServiceClientImpl(mockGrpcClient.Object, null);
+            CustomizerAttributeServiceClient client = new CustomizerAttributeServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomizerAttributesResponse response = client.MutateCustomizerAttributes(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -83,7 +84,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateCustomizerAttributesAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomizerAttributesResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            CustomizerAttributeServiceClient client = new CustomizerAttributeServiceClientImpl(mockGrpcClient.Object, null);
+            CustomizerAttributeServiceClient client = new CustomizerAttributeServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomizerAttributesResponse responseCallSettings = await client.MutateCustomizerAttributesAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateCustomizerAttributesResponse responseCancellationToken = await client.MutateCustomizerAttributesAsync(request, st::CancellationToken.None);
@@ -112,7 +113,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateCustomizerAttributes(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            CustomizerAttributeServiceClient client = new CustomizerAttributeServiceClientImpl(mockGrpcClient.Object, null);
+            CustomizerAttributeServiceClient client = new CustomizerAttributeServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomizerAttributesResponse response = client.MutateCustomizerAttributes(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -139,7 +140,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateCustomizerAttributesAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomizerAttributesResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            CustomizerAttributeServiceClient client = new CustomizerAttributeServiceClientImpl(mockGrpcClient.Object, null);
+            CustomizerAttributeServiceClient client = new CustomizerAttributeServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomizerAttributesResponse responseCallSettings = await client.MutateCustomizerAttributesAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateCustomizerAttributesResponse responseCancellationToken = await client.MutateCustomizerAttributesAsync(request.CustomerId, request.Operations, st::CancellationToken.None);

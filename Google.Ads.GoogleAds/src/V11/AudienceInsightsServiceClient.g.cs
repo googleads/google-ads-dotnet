@@ -14,13 +14,14 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagve = Google.Ads.GoogleAds.V11.Enums;
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
-using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using proto = Google.Protobuf;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
+using mel = Microsoft.Extensions.Logging;
 using sys = System;
 using scg = System.Collections.Generic;
 using sco = System.Collections.ObjectModel;
@@ -48,6 +49,7 @@ namespace Google.Ads.GoogleAds.V11.Services
             gax::GaxPreconditions.CheckNotNull(existing, nameof(existing));
             GenerateInsightsFinderReportSettings = existing.GenerateInsightsFinderReportSettings;
             ListAudienceInsightsAttributesSettings = existing.ListAudienceInsightsAttributesSettings;
+            GenerateAudienceCompositionInsightsSettings = existing.GenerateAudienceCompositionInsightsSettings;
             OnCopy(existing);
         }
 
@@ -97,6 +99,28 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// </remarks>
         public gaxgrpc::CallSettings ListAudienceInsightsAttributesSettings { get; set; } = gaxgrpc::CallSettingsExtensions.WithRetry(gaxgrpc::CallSettings.FromExpiration(gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(14400000))), gaxgrpc::RetrySettings.FromExponentialBackoff(maxAttempts: 2147483647, initialBackoff: sys::TimeSpan.FromMilliseconds(5000), maxBackoff: sys::TimeSpan.FromMilliseconds(60000), backoffMultiplier: 1.3, retryFilter: gaxgrpc::RetrySettings.FilterForStatusCodes(grpccore::StatusCode.Unavailable, grpccore::StatusCode.DeadlineExceeded)));
 
+        /// <summary>
+        /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
+        /// <c>AudienceInsightsServiceClient.GenerateAudienceCompositionInsights</c> and
+        /// <c>AudienceInsightsServiceClient.GenerateAudienceCompositionInsightsAsync</c>.
+        /// </summary>
+        /// <remarks>
+        /// <list type="bullet">
+        /// <item><description>Initial retry delay: 5000 milliseconds.</description></item>
+        /// <item><description>Retry delay multiplier: 1.3</description></item>
+        /// <item><description>Retry maximum delay: 60000 milliseconds.</description></item>
+        /// <item><description>Maximum attempts: Unlimited</description></item>
+        /// <item>
+        /// <description>
+        /// Retriable status codes: <see cref="grpccore::StatusCode.Unavailable"/>,
+        /// <see cref="grpccore::StatusCode.DeadlineExceeded"/>.
+        /// </description>
+        /// </item>
+        /// <item><description>Timeout: 14400 seconds.</description></item>
+        /// </list>
+        /// </remarks>
+        public gaxgrpc::CallSettings GenerateAudienceCompositionInsightsSettings { get; set; } = gaxgrpc::CallSettingsExtensions.WithRetry(gaxgrpc::CallSettings.FromExpiration(gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(14400000))), gaxgrpc::RetrySettings.FromExponentialBackoff(maxAttempts: 2147483647, initialBackoff: sys::TimeSpan.FromMilliseconds(5000), maxBackoff: sys::TimeSpan.FromMilliseconds(60000), backoffMultiplier: 1.3, retryFilter: gaxgrpc::RetrySettings.FilterForStatusCodes(grpccore::StatusCode.Unavailable, grpccore::StatusCode.DeadlineExceeded)));
+
         /// <summary>Creates a deep clone of this object, with all the same property values.</summary>
         /// <returns>A deep clone of this <see cref="AudienceInsightsServiceSettings"/> object.</returns>
         public AudienceInsightsServiceSettings Clone() => new AudienceInsightsServiceSettings(this);
@@ -112,9 +136,8 @@ namespace Google.Ads.GoogleAds.V11.Services
         public AudienceInsightsServiceSettings Settings { get; set; }
 
         /// <summary>Creates a new builder with default settings.</summary>
-        public AudienceInsightsServiceClientBuilder()
+        public AudienceInsightsServiceClientBuilder() : base(AudienceInsightsServiceClient.ServiceMetadata)
         {
-            UseJwtAccessWithScopes = AudienceInsightsServiceClient.UseJwtAccessWithScopes;
         }
 
         partial void InterceptBuild(ref AudienceInsightsServiceClient client);
@@ -141,29 +164,18 @@ namespace Google.Ads.GoogleAds.V11.Services
         {
             Validate();
             grpccore::CallInvoker callInvoker = CreateCallInvoker();
-            return AudienceInsightsServiceClient.Create(callInvoker, Settings);
+            return AudienceInsightsServiceClient.Create(callInvoker, Settings, Logger);
         }
 
         private async stt::Task<AudienceInsightsServiceClient> BuildAsyncImpl(st::CancellationToken cancellationToken)
         {
             Validate();
             grpccore::CallInvoker callInvoker = await CreateCallInvokerAsync(cancellationToken).ConfigureAwait(false);
-            return AudienceInsightsServiceClient.Create(callInvoker, Settings);
+            return AudienceInsightsServiceClient.Create(callInvoker, Settings, Logger);
         }
-
-        /// <summary>Returns the endpoint for this builder type, used if no endpoint is otherwise specified.</summary>
-        protected override string GetDefaultEndpoint() => AudienceInsightsServiceClient.DefaultEndpoint;
-
-        /// <summary>
-        /// Returns the default scopes for this builder type, used if no scopes are otherwise specified.
-        /// </summary>
-        protected override scg::IReadOnlyList<string> GetDefaultScopes() => AudienceInsightsServiceClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
         protected override gaxgrpc::ChannelPool GetChannelPool() => AudienceInsightsServiceClient.ChannelPool;
-
-        /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
-        protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
     }
 
     /// <summary>AudienceInsightsService client wrapper, for convenient use.</summary>
@@ -189,19 +201,10 @@ namespace Google.Ads.GoogleAds.V11.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+        /// <summary>The service metadata associated with this client type.</summary>
+        public static gaxgrpc::ServiceMetadata ServiceMetadata { get; } = new gaxgrpc::ServiceMetadata(AudienceInsightsService.Descriptor, DefaultEndpoint, DefaultScopes, true, gax::ApiTransports.Grpc, PackageApiMetadata.ApiMetadata);
 
-        internal static bool UseJwtAccessWithScopes
-        {
-            get
-            {
-                bool useJwtAccessWithScopes = true;
-                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
-                return useJwtAccessWithScopes;
-            }
-        }
-
-        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(ServiceMetadata);
 
         /// <summary>
         /// Asynchronously creates a <see cref="AudienceInsightsServiceClient"/> using the default credentials, endpoint
@@ -231,8 +234,9 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
         /// </param>
         /// <param name="settings">Optional <see cref="AudienceInsightsServiceSettings"/>.</param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
         /// <returns>The created <see cref="AudienceInsightsServiceClient"/>.</returns>
-        internal static AudienceInsightsServiceClient Create(grpccore::CallInvoker callInvoker, AudienceInsightsServiceSettings settings = null)
+        internal static AudienceInsightsServiceClient Create(grpccore::CallInvoker callInvoker, AudienceInsightsServiceSettings settings = null, mel::ILogger logger = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpcinter::Interceptor interceptor = settings?.Interceptor;
@@ -241,7 +245,7 @@ namespace Google.Ads.GoogleAds.V11.Services
                 callInvoker = grpcinter::CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
             AudienceInsightsService.AudienceInsightsServiceClient grpcClient = new AudienceInsightsService.AudienceInsightsServiceClient(callInvoker);
-            return new AudienceInsightsServiceClientImpl(grpcClient, settings);
+            return new AudienceInsightsServiceClientImpl(grpcClient, settings, logger);
         }
 
         /// <summary>
@@ -570,6 +574,178 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// <returns>A Task containing the RPC response.</returns>
         public virtual stt::Task<ListAudienceInsightsAttributesResponse> ListAudienceInsightsAttributesAsync(string customerId, scg::IEnumerable<gagve::AudienceInsightsDimensionEnum.Types.AudienceInsightsDimension> dimensions, string queryText, st::CancellationToken cancellationToken) =>
             ListAudienceInsightsAttributesAsync(customerId, dimensions, queryText, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Returns a collection of attributes that are represented in an audience of
+        /// interest, with metrics that compare each attribute's share of the audience
+        /// with its share of a baseline audience.
+        /// 
+        /// List of thrown errors:
+        /// [AudienceInsightsError]()
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [FieldError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [QuotaError]()
+        /// [RangeError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual GenerateAudienceCompositionInsightsResponse GenerateAudienceCompositionInsights(GenerateAudienceCompositionInsightsRequest request, gaxgrpc::CallSettings callSettings = null) =>
+            throw new sys::NotImplementedException();
+
+        /// <summary>
+        /// Returns a collection of attributes that are represented in an audience of
+        /// interest, with metrics that compare each attribute's share of the audience
+        /// with its share of a baseline audience.
+        /// 
+        /// List of thrown errors:
+        /// [AudienceInsightsError]()
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [FieldError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [QuotaError]()
+        /// [RangeError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<GenerateAudienceCompositionInsightsResponse> GenerateAudienceCompositionInsightsAsync(GenerateAudienceCompositionInsightsRequest request, gaxgrpc::CallSettings callSettings = null) =>
+            throw new sys::NotImplementedException();
+
+        /// <summary>
+        /// Returns a collection of attributes that are represented in an audience of
+        /// interest, with metrics that compare each attribute's share of the audience
+        /// with its share of a baseline audience.
+        /// 
+        /// List of thrown errors:
+        /// [AudienceInsightsError]()
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [FieldError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [QuotaError]()
+        /// [RangeError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<GenerateAudienceCompositionInsightsResponse> GenerateAudienceCompositionInsightsAsync(GenerateAudienceCompositionInsightsRequest request, st::CancellationToken cancellationToken) =>
+            GenerateAudienceCompositionInsightsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Returns a collection of attributes that are represented in an audience of
+        /// interest, with metrics that compare each attribute's share of the audience
+        /// with its share of a baseline audience.
+        /// 
+        /// List of thrown errors:
+        /// [AudienceInsightsError]()
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [FieldError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [QuotaError]()
+        /// [RangeError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="customerId">
+        /// Required. The ID of the customer.
+        /// </param>
+        /// <param name="audience">
+        /// Required. The audience of interest for which insights are being requested.
+        /// </param>
+        /// <param name="dimensions">
+        /// Required. The audience dimensions for which composition insights should be returned.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual GenerateAudienceCompositionInsightsResponse GenerateAudienceCompositionInsights(string customerId, InsightsAudience audience, scg::IEnumerable<gagve::AudienceInsightsDimensionEnum.Types.AudienceInsightsDimension> dimensions, gaxgrpc::CallSettings callSettings = null) =>
+            GenerateAudienceCompositionInsights(new GenerateAudienceCompositionInsightsRequest
+            {
+                CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                Audience = gax::GaxPreconditions.CheckNotNull(audience, nameof(audience)),
+                Dimensions =
+                {
+                    gax::GaxPreconditions.CheckNotNull(dimensions, nameof(dimensions)),
+                },
+            }, callSettings);
+
+        /// <summary>
+        /// Returns a collection of attributes that are represented in an audience of
+        /// interest, with metrics that compare each attribute's share of the audience
+        /// with its share of a baseline audience.
+        /// 
+        /// List of thrown errors:
+        /// [AudienceInsightsError]()
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [FieldError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [QuotaError]()
+        /// [RangeError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="customerId">
+        /// Required. The ID of the customer.
+        /// </param>
+        /// <param name="audience">
+        /// Required. The audience of interest for which insights are being requested.
+        /// </param>
+        /// <param name="dimensions">
+        /// Required. The audience dimensions for which composition insights should be returned.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<GenerateAudienceCompositionInsightsResponse> GenerateAudienceCompositionInsightsAsync(string customerId, InsightsAudience audience, scg::IEnumerable<gagve::AudienceInsightsDimensionEnum.Types.AudienceInsightsDimension> dimensions, gaxgrpc::CallSettings callSettings = null) =>
+            GenerateAudienceCompositionInsightsAsync(new GenerateAudienceCompositionInsightsRequest
+            {
+                CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                Audience = gax::GaxPreconditions.CheckNotNull(audience, nameof(audience)),
+                Dimensions =
+                {
+                    gax::GaxPreconditions.CheckNotNull(dimensions, nameof(dimensions)),
+                },
+            }, callSettings);
+
+        /// <summary>
+        /// Returns a collection of attributes that are represented in an audience of
+        /// interest, with metrics that compare each attribute's share of the audience
+        /// with its share of a baseline audience.
+        /// 
+        /// List of thrown errors:
+        /// [AudienceInsightsError]()
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [FieldError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [QuotaError]()
+        /// [RangeError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="customerId">
+        /// Required. The ID of the customer.
+        /// </param>
+        /// <param name="audience">
+        /// Required. The audience of interest for which insights are being requested.
+        /// </param>
+        /// <param name="dimensions">
+        /// Required. The audience dimensions for which composition insights should be returned.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<GenerateAudienceCompositionInsightsResponse> GenerateAudienceCompositionInsightsAsync(string customerId, InsightsAudience audience, scg::IEnumerable<gagve::AudienceInsightsDimensionEnum.Types.AudienceInsightsDimension> dimensions, st::CancellationToken cancellationToken) =>
+            GenerateAudienceCompositionInsightsAsync(customerId, audience, dimensions, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
     }
 
     /// <summary>AudienceInsightsService client wrapper implementation, for convenient use.</summary>
@@ -583,6 +759,8 @@ namespace Google.Ads.GoogleAds.V11.Services
 
         private readonly gaxgrpc::ApiCall<ListAudienceInsightsAttributesRequest, ListAudienceInsightsAttributesResponse> _callListAudienceInsightsAttributes;
 
+        private readonly gaxgrpc::ApiCall<GenerateAudienceCompositionInsightsRequest, GenerateAudienceCompositionInsightsResponse> _callGenerateAudienceCompositionInsights;
+
         /// <summary>
         /// Constructs a client wrapper for the AudienceInsightsService service, with the specified gRPC client and
         /// settings.
@@ -591,17 +769,21 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// <param name="settings">
         /// The base <see cref="AudienceInsightsServiceSettings"/> used within this client.
         /// </param>
-        public AudienceInsightsServiceClientImpl(AudienceInsightsService.AudienceInsightsServiceClient grpcClient, AudienceInsightsServiceSettings settings)
+        /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
+        public AudienceInsightsServiceClientImpl(AudienceInsightsService.AudienceInsightsServiceClient grpcClient, AudienceInsightsServiceSettings settings, mel::ILogger logger)
         {
             GrpcClient = grpcClient;
             AudienceInsightsServiceSettings effectiveSettings = settings ?? AudienceInsightsServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callGenerateInsightsFinderReport = clientHelper.BuildApiCall<GenerateInsightsFinderReportRequest, GenerateInsightsFinderReportResponse>(grpcClient.GenerateInsightsFinderReportAsync, grpcClient.GenerateInsightsFinderReport, effectiveSettings.GenerateInsightsFinderReportSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            _callGenerateInsightsFinderReport = clientHelper.BuildApiCall<GenerateInsightsFinderReportRequest, GenerateInsightsFinderReportResponse>("GenerateInsightsFinderReport", grpcClient.GenerateInsightsFinderReportAsync, grpcClient.GenerateInsightsFinderReport, effectiveSettings.GenerateInsightsFinderReportSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callGenerateInsightsFinderReport);
             Modify_GenerateInsightsFinderReportApiCall(ref _callGenerateInsightsFinderReport);
-            _callListAudienceInsightsAttributes = clientHelper.BuildApiCall<ListAudienceInsightsAttributesRequest, ListAudienceInsightsAttributesResponse>(grpcClient.ListAudienceInsightsAttributesAsync, grpcClient.ListAudienceInsightsAttributes, effectiveSettings.ListAudienceInsightsAttributesSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            _callListAudienceInsightsAttributes = clientHelper.BuildApiCall<ListAudienceInsightsAttributesRequest, ListAudienceInsightsAttributesResponse>("ListAudienceInsightsAttributes", grpcClient.ListAudienceInsightsAttributesAsync, grpcClient.ListAudienceInsightsAttributes, effectiveSettings.ListAudienceInsightsAttributesSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callListAudienceInsightsAttributes);
             Modify_ListAudienceInsightsAttributesApiCall(ref _callListAudienceInsightsAttributes);
+            _callGenerateAudienceCompositionInsights = clientHelper.BuildApiCall<GenerateAudienceCompositionInsightsRequest, GenerateAudienceCompositionInsightsResponse>("GenerateAudienceCompositionInsights", grpcClient.GenerateAudienceCompositionInsightsAsync, grpcClient.GenerateAudienceCompositionInsights, effectiveSettings.GenerateAudienceCompositionInsightsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            Modify_ApiCall(ref _callGenerateAudienceCompositionInsights);
+            Modify_GenerateAudienceCompositionInsightsApiCall(ref _callGenerateAudienceCompositionInsights);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);
         }
 
@@ -611,6 +793,8 @@ namespace Google.Ads.GoogleAds.V11.Services
 
         partial void Modify_ListAudienceInsightsAttributesApiCall(ref gaxgrpc::ApiCall<ListAudienceInsightsAttributesRequest, ListAudienceInsightsAttributesResponse> call);
 
+        partial void Modify_GenerateAudienceCompositionInsightsApiCall(ref gaxgrpc::ApiCall<GenerateAudienceCompositionInsightsRequest, GenerateAudienceCompositionInsightsResponse> call);
+
         partial void OnConstruction(AudienceInsightsService.AudienceInsightsServiceClient grpcClient, AudienceInsightsServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
         /// <summary>The underlying gRPC AudienceInsightsService client</summary>
@@ -619,6 +803,8 @@ namespace Google.Ads.GoogleAds.V11.Services
         partial void Modify_GenerateInsightsFinderReportRequest(ref GenerateInsightsFinderReportRequest request, ref gaxgrpc::CallSettings settings);
 
         partial void Modify_ListAudienceInsightsAttributesRequest(ref ListAudienceInsightsAttributesRequest request, ref gaxgrpc::CallSettings settings);
+
+        partial void Modify_GenerateAudienceCompositionInsightsRequest(ref GenerateAudienceCompositionInsightsRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
         /// Creates a saved report that can be viewed in the Insights Finder tool.
@@ -706,6 +892,56 @@ namespace Google.Ads.GoogleAds.V11.Services
         {
             Modify_ListAudienceInsightsAttributesRequest(ref request, ref callSettings);
             return _callListAudienceInsightsAttributes.Async(request, callSettings);
+        }
+
+        /// <summary>
+        /// Returns a collection of attributes that are represented in an audience of
+        /// interest, with metrics that compare each attribute's share of the audience
+        /// with its share of a baseline audience.
+        /// 
+        /// List of thrown errors:
+        /// [AudienceInsightsError]()
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [FieldError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [QuotaError]()
+        /// [RangeError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public override GenerateAudienceCompositionInsightsResponse GenerateAudienceCompositionInsights(GenerateAudienceCompositionInsightsRequest request, gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_GenerateAudienceCompositionInsightsRequest(ref request, ref callSettings);
+            return _callGenerateAudienceCompositionInsights.Sync(request, callSettings);
+        }
+
+        /// <summary>
+        /// Returns a collection of attributes that are represented in an audience of
+        /// interest, with metrics that compare each attribute's share of the audience
+        /// with its share of a baseline audience.
+        /// 
+        /// List of thrown errors:
+        /// [AudienceInsightsError]()
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [FieldError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [QuotaError]()
+        /// [RangeError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public override stt::Task<GenerateAudienceCompositionInsightsResponse> GenerateAudienceCompositionInsightsAsync(GenerateAudienceCompositionInsightsRequest request, gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_GenerateAudienceCompositionInsightsRequest(ref request, ref callSettings);
+            return _callGenerateAudienceCompositionInsights.Async(request, callSettings);
         }
     }
 }

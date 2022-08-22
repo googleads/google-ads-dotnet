@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagvr = Google.Ads.GoogleAds.V10.Resources;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using lro = Google.LongRunning;
@@ -47,7 +48,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 ResourceNameAsOfflineUserDataJobName = gagvr::OfflineUserDataJobName.FromCustomerOfflineUserDataUpdate("[CUSTOMER_ID]", "[OFFLINE_USER_DATA_UPDATE_ID]"),
             };
             mockGrpcClient.Setup(x => x.CreateOfflineUserDataJob(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
+            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null, null);
             CreateOfflineUserDataJobResponse response = client.CreateOfflineUserDataJob(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -70,7 +71,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 ResourceNameAsOfflineUserDataJobName = gagvr::OfflineUserDataJobName.FromCustomerOfflineUserDataUpdate("[CUSTOMER_ID]", "[OFFLINE_USER_DATA_UPDATE_ID]"),
             };
             mockGrpcClient.Setup(x => x.CreateOfflineUserDataJobAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<CreateOfflineUserDataJobResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
+            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null, null);
             CreateOfflineUserDataJobResponse responseCallSettings = await client.CreateOfflineUserDataJobAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             CreateOfflineUserDataJobResponse responseCancellationToken = await client.CreateOfflineUserDataJobAsync(request, st::CancellationToken.None);
@@ -93,7 +94,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 ResourceNameAsOfflineUserDataJobName = gagvr::OfflineUserDataJobName.FromCustomerOfflineUserDataUpdate("[CUSTOMER_ID]", "[OFFLINE_USER_DATA_UPDATE_ID]"),
             };
             mockGrpcClient.Setup(x => x.CreateOfflineUserDataJob(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
+            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null, null);
             CreateOfflineUserDataJobResponse response = client.CreateOfflineUserDataJob(request.CustomerId, request.Job);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -114,7 +115,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 ResourceNameAsOfflineUserDataJobName = gagvr::OfflineUserDataJobName.FromCustomerOfflineUserDataUpdate("[CUSTOMER_ID]", "[OFFLINE_USER_DATA_UPDATE_ID]"),
             };
             mockGrpcClient.Setup(x => x.CreateOfflineUserDataJobAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<CreateOfflineUserDataJobResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
+            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null, null);
             CreateOfflineUserDataJobResponse responseCallSettings = await client.CreateOfflineUserDataJobAsync(request.CustomerId, request.Job, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             CreateOfflineUserDataJobResponse responseCancellationToken = await client.CreateOfflineUserDataJobAsync(request.CustomerId, request.Job, st::CancellationToken.None);
@@ -144,7 +145,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 Warning = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.AddOfflineUserDataJobOperations(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
+            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null, null);
             AddOfflineUserDataJobOperationsResponse response = client.AddOfflineUserDataJobOperations(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -172,7 +173,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 Warning = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.AddOfflineUserDataJobOperationsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<AddOfflineUserDataJobOperationsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
+            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null, null);
             AddOfflineUserDataJobOperationsResponse responseCallSettings = await client.AddOfflineUserDataJobOperationsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             AddOfflineUserDataJobOperationsResponse responseCancellationToken = await client.AddOfflineUserDataJobOperationsAsync(request, st::CancellationToken.None);
@@ -199,7 +200,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 Warning = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.AddOfflineUserDataJobOperations(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
+            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null, null);
             AddOfflineUserDataJobOperationsResponse response = client.AddOfflineUserDataJobOperations(request.ResourceName, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -224,7 +225,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 Warning = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.AddOfflineUserDataJobOperationsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<AddOfflineUserDataJobOperationsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
+            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null, null);
             AddOfflineUserDataJobOperationsResponse responseCallSettings = await client.AddOfflineUserDataJobOperationsAsync(request.ResourceName, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             AddOfflineUserDataJobOperationsResponse responseCancellationToken = await client.AddOfflineUserDataJobOperationsAsync(request.ResourceName, request.Operations, st::CancellationToken.None);
@@ -251,7 +252,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 Warning = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.AddOfflineUserDataJobOperations(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
+            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null, null);
             AddOfflineUserDataJobOperationsResponse response = client.AddOfflineUserDataJobOperations(request.ResourceNameAsOfflineUserDataJobName, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -276,7 +277,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 Warning = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.AddOfflineUserDataJobOperationsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<AddOfflineUserDataJobOperationsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null);
+            OfflineUserDataJobServiceClient client = new OfflineUserDataJobServiceClientImpl(mockGrpcClient.Object, null, null);
             AddOfflineUserDataJobOperationsResponse responseCallSettings = await client.AddOfflineUserDataJobOperationsAsync(request.ResourceNameAsOfflineUserDataJobName, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             AddOfflineUserDataJobOperationsResponse responseCancellationToken = await client.AddOfflineUserDataJobOperationsAsync(request.ResourceNameAsOfflineUserDataJobName, request.Operations, st::CancellationToken.None);

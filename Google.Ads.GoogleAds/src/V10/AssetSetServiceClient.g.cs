@@ -14,12 +14,13 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
-using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using proto = Google.Protobuf;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
+using mel = Microsoft.Extensions.Logging;
 using sys = System;
 using scg = System.Collections.Generic;
 using sco = System.Collections.ObjectModel;
@@ -85,9 +86,8 @@ namespace Google.Ads.GoogleAds.V10.Services
         public AssetSetServiceSettings Settings { get; set; }
 
         /// <summary>Creates a new builder with default settings.</summary>
-        public AssetSetServiceClientBuilder()
+        public AssetSetServiceClientBuilder() : base(AssetSetServiceClient.ServiceMetadata)
         {
-            UseJwtAccessWithScopes = AssetSetServiceClient.UseJwtAccessWithScopes;
         }
 
         partial void InterceptBuild(ref AssetSetServiceClient client);
@@ -114,29 +114,18 @@ namespace Google.Ads.GoogleAds.V10.Services
         {
             Validate();
             grpccore::CallInvoker callInvoker = CreateCallInvoker();
-            return AssetSetServiceClient.Create(callInvoker, Settings);
+            return AssetSetServiceClient.Create(callInvoker, Settings, Logger);
         }
 
         private async stt::Task<AssetSetServiceClient> BuildAsyncImpl(st::CancellationToken cancellationToken)
         {
             Validate();
             grpccore::CallInvoker callInvoker = await CreateCallInvokerAsync(cancellationToken).ConfigureAwait(false);
-            return AssetSetServiceClient.Create(callInvoker, Settings);
+            return AssetSetServiceClient.Create(callInvoker, Settings, Logger);
         }
-
-        /// <summary>Returns the endpoint for this builder type, used if no endpoint is otherwise specified.</summary>
-        protected override string GetDefaultEndpoint() => AssetSetServiceClient.DefaultEndpoint;
-
-        /// <summary>
-        /// Returns the default scopes for this builder type, used if no scopes are otherwise specified.
-        /// </summary>
-        protected override scg::IReadOnlyList<string> GetDefaultScopes() => AssetSetServiceClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
         protected override gaxgrpc::ChannelPool GetChannelPool() => AssetSetServiceClient.ChannelPool;
-
-        /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
-        protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
     }
 
     /// <summary>AssetSetService client wrapper, for convenient use.</summary>
@@ -161,19 +150,10 @@ namespace Google.Ads.GoogleAds.V10.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+        /// <summary>The service metadata associated with this client type.</summary>
+        public static gaxgrpc::ServiceMetadata ServiceMetadata { get; } = new gaxgrpc::ServiceMetadata(AssetSetService.Descriptor, DefaultEndpoint, DefaultScopes, true, gax::ApiTransports.Grpc, PackageApiMetadata.ApiMetadata);
 
-        internal static bool UseJwtAccessWithScopes
-        {
-            get
-            {
-                bool useJwtAccessWithScopes = true;
-                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
-                return useJwtAccessWithScopes;
-            }
-        }
-
-        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(ServiceMetadata);
 
         /// <summary>
         /// Asynchronously creates a <see cref="AssetSetServiceClient"/> using the default credentials, endpoint and
@@ -200,8 +180,9 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
         /// </param>
         /// <param name="settings">Optional <see cref="AssetSetServiceSettings"/>.</param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
         /// <returns>The created <see cref="AssetSetServiceClient"/>.</returns>
-        internal static AssetSetServiceClient Create(grpccore::CallInvoker callInvoker, AssetSetServiceSettings settings = null)
+        internal static AssetSetServiceClient Create(grpccore::CallInvoker callInvoker, AssetSetServiceSettings settings = null, mel::ILogger logger = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpcinter::Interceptor interceptor = settings?.Interceptor;
@@ -210,7 +191,7 @@ namespace Google.Ads.GoogleAds.V10.Services
                 callInvoker = grpcinter::CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
             AssetSetService.AssetSetServiceClient grpcClient = new AssetSetService.AssetSetServiceClient(callInvoker);
-            return new AssetSetServiceClientImpl(grpcClient, settings);
+            return new AssetSetServiceClientImpl(grpcClient, settings, logger);
         }
 
         /// <summary>
@@ -332,12 +313,13 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// </summary>
         /// <param name="grpcClient">The underlying gRPC client.</param>
         /// <param name="settings">The base <see cref="AssetSetServiceSettings"/> used within this client.</param>
-        public AssetSetServiceClientImpl(AssetSetService.AssetSetServiceClient grpcClient, AssetSetServiceSettings settings)
+        /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
+        public AssetSetServiceClientImpl(AssetSetService.AssetSetServiceClient grpcClient, AssetSetServiceSettings settings, mel::ILogger logger)
         {
             GrpcClient = grpcClient;
             AssetSetServiceSettings effectiveSettings = settings ?? AssetSetServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callMutateAssetSets = clientHelper.BuildApiCall<MutateAssetSetsRequest, MutateAssetSetsResponse>(grpcClient.MutateAssetSetsAsync, grpcClient.MutateAssetSets, effectiveSettings.MutateAssetSetsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            _callMutateAssetSets = clientHelper.BuildApiCall<MutateAssetSetsRequest, MutateAssetSetsResponse>("MutateAssetSets", grpcClient.MutateAssetSetsAsync, grpcClient.MutateAssetSets, effectiveSettings.MutateAssetSetsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateAssetSets);
             Modify_MutateAssetSetsApiCall(ref _callMutateAssetSets);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

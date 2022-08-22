@@ -14,12 +14,13 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
-using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using proto = Google.Protobuf;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
+using mel = Microsoft.Extensions.Logging;
 using sys = System;
 using scg = System.Collections.Generic;
 using sco = System.Collections.ObjectModel;
@@ -91,9 +92,8 @@ namespace Google.Ads.GoogleAds.V10.Services
         public AdGroupCriterionCustomizerServiceSettings Settings { get; set; }
 
         /// <summary>Creates a new builder with default settings.</summary>
-        public AdGroupCriterionCustomizerServiceClientBuilder()
+        public AdGroupCriterionCustomizerServiceClientBuilder() : base(AdGroupCriterionCustomizerServiceClient.ServiceMetadata)
         {
-            UseJwtAccessWithScopes = AdGroupCriterionCustomizerServiceClient.UseJwtAccessWithScopes;
         }
 
         partial void InterceptBuild(ref AdGroupCriterionCustomizerServiceClient client);
@@ -120,30 +120,18 @@ namespace Google.Ads.GoogleAds.V10.Services
         {
             Validate();
             grpccore::CallInvoker callInvoker = CreateCallInvoker();
-            return AdGroupCriterionCustomizerServiceClient.Create(callInvoker, Settings);
+            return AdGroupCriterionCustomizerServiceClient.Create(callInvoker, Settings, Logger);
         }
 
         private async stt::Task<AdGroupCriterionCustomizerServiceClient> BuildAsyncImpl(st::CancellationToken cancellationToken)
         {
             Validate();
             grpccore::CallInvoker callInvoker = await CreateCallInvokerAsync(cancellationToken).ConfigureAwait(false);
-            return AdGroupCriterionCustomizerServiceClient.Create(callInvoker, Settings);
+            return AdGroupCriterionCustomizerServiceClient.Create(callInvoker, Settings, Logger);
         }
-
-        /// <summary>Returns the endpoint for this builder type, used if no endpoint is otherwise specified.</summary>
-        protected override string GetDefaultEndpoint() => AdGroupCriterionCustomizerServiceClient.DefaultEndpoint;
-
-        /// <summary>
-        /// Returns the default scopes for this builder type, used if no scopes are otherwise specified.
-        /// </summary>
-        protected override scg::IReadOnlyList<string> GetDefaultScopes() =>
-            AdGroupCriterionCustomizerServiceClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
         protected override gaxgrpc::ChannelPool GetChannelPool() => AdGroupCriterionCustomizerServiceClient.ChannelPool;
-
-        /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
-        protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
     }
 
     /// <summary>AdGroupCriterionCustomizerService client wrapper, for convenient use.</summary>
@@ -168,19 +156,10 @@ namespace Google.Ads.GoogleAds.V10.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+        /// <summary>The service metadata associated with this client type.</summary>
+        public static gaxgrpc::ServiceMetadata ServiceMetadata { get; } = new gaxgrpc::ServiceMetadata(AdGroupCriterionCustomizerService.Descriptor, DefaultEndpoint, DefaultScopes, true, gax::ApiTransports.Grpc, PackageApiMetadata.ApiMetadata);
 
-        internal static bool UseJwtAccessWithScopes
-        {
-            get
-            {
-                bool useJwtAccessWithScopes = true;
-                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
-                return useJwtAccessWithScopes;
-            }
-        }
-
-        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(ServiceMetadata);
 
         /// <summary>
         /// Asynchronously creates a <see cref="AdGroupCriterionCustomizerServiceClient"/> using the default
@@ -211,8 +190,9 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
         /// </param>
         /// <param name="settings">Optional <see cref="AdGroupCriterionCustomizerServiceSettings"/>.</param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
         /// <returns>The created <see cref="AdGroupCriterionCustomizerServiceClient"/>.</returns>
-        internal static AdGroupCriterionCustomizerServiceClient Create(grpccore::CallInvoker callInvoker, AdGroupCriterionCustomizerServiceSettings settings = null)
+        internal static AdGroupCriterionCustomizerServiceClient Create(grpccore::CallInvoker callInvoker, AdGroupCriterionCustomizerServiceSettings settings = null, mel::ILogger logger = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpcinter::Interceptor interceptor = settings?.Interceptor;
@@ -221,7 +201,7 @@ namespace Google.Ads.GoogleAds.V10.Services
                 callInvoker = grpcinter::CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
             AdGroupCriterionCustomizerService.AdGroupCriterionCustomizerServiceClient grpcClient = new AdGroupCriterionCustomizerService.AdGroupCriterionCustomizerServiceClient(callInvoker);
-            return new AdGroupCriterionCustomizerServiceClientImpl(grpcClient, settings);
+            return new AdGroupCriterionCustomizerServiceClientImpl(grpcClient, settings, logger);
         }
 
         /// <summary>
@@ -352,12 +332,13 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// <param name="settings">
         /// The base <see cref="AdGroupCriterionCustomizerServiceSettings"/> used within this client.
         /// </param>
-        public AdGroupCriterionCustomizerServiceClientImpl(AdGroupCriterionCustomizerService.AdGroupCriterionCustomizerServiceClient grpcClient, AdGroupCriterionCustomizerServiceSettings settings)
+        /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
+        public AdGroupCriterionCustomizerServiceClientImpl(AdGroupCriterionCustomizerService.AdGroupCriterionCustomizerServiceClient grpcClient, AdGroupCriterionCustomizerServiceSettings settings, mel::ILogger logger)
         {
             GrpcClient = grpcClient;
             AdGroupCriterionCustomizerServiceSettings effectiveSettings = settings ?? AdGroupCriterionCustomizerServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callMutateAdGroupCriterionCustomizers = clientHelper.BuildApiCall<MutateAdGroupCriterionCustomizersRequest, MutateAdGroupCriterionCustomizersResponse>(grpcClient.MutateAdGroupCriterionCustomizersAsync, grpcClient.MutateAdGroupCriterionCustomizers, effectiveSettings.MutateAdGroupCriterionCustomizersSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            _callMutateAdGroupCriterionCustomizers = clientHelper.BuildApiCall<MutateAdGroupCriterionCustomizersRequest, MutateAdGroupCriterionCustomizersResponse>("MutateAdGroupCriterionCustomizers", grpcClient.MutateAdGroupCriterionCustomizersAsync, grpcClient.MutateAdGroupCriterionCustomizers, effectiveSettings.MutateAdGroupCriterionCustomizersSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateAdGroupCriterionCustomizers);
             Modify_MutateAdGroupCriterionCustomizersApiCall(ref _callMutateAdGroupCriterionCustomizers);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

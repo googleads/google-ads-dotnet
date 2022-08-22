@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagve = Google.Ads.GoogleAds.V11.Enums;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using gr = Google.Rpc;
@@ -53,7 +54,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateCustomerNegativeCriteria(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            CustomerNegativeCriterionServiceClient client = new CustomerNegativeCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerNegativeCriterionServiceClient client = new CustomerNegativeCriterionServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomerNegativeCriteriaResponse response = client.MutateCustomerNegativeCriteria(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -83,7 +84,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateCustomerNegativeCriteriaAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomerNegativeCriteriaResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            CustomerNegativeCriterionServiceClient client = new CustomerNegativeCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerNegativeCriterionServiceClient client = new CustomerNegativeCriterionServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomerNegativeCriteriaResponse responseCallSettings = await client.MutateCustomerNegativeCriteriaAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateCustomerNegativeCriteriaResponse responseCancellationToken = await client.MutateCustomerNegativeCriteriaAsync(request, st::CancellationToken.None);
@@ -112,7 +113,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateCustomerNegativeCriteria(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            CustomerNegativeCriterionServiceClient client = new CustomerNegativeCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerNegativeCriterionServiceClient client = new CustomerNegativeCriterionServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomerNegativeCriteriaResponse response = client.MutateCustomerNegativeCriteria(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -139,7 +140,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateCustomerNegativeCriteriaAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomerNegativeCriteriaResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            CustomerNegativeCriterionServiceClient client = new CustomerNegativeCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerNegativeCriterionServiceClient client = new CustomerNegativeCriterionServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomerNegativeCriteriaResponse responseCallSettings = await client.MutateCustomerNegativeCriteriaAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateCustomerNegativeCriteriaResponse responseCancellationToken = await client.MutateCustomerNegativeCriteriaAsync(request.CustomerId, request.Operations, st::CancellationToken.None);

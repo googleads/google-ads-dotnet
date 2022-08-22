@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagvc = Google.Ads.GoogleAds.V10.Common;
 using gagvr = Google.Ads.GoogleAds.V10.Resources;
 using gaxgrpc = Google.Api.Gax.Grpc;
@@ -46,7 +47,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 High = new SuggestSmartCampaignBudgetOptionsResponse.Types.BudgetOption(),
             };
             mockGrpcClient.Setup(x => x.SuggestSmartCampaignBudgetOptions(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            SmartCampaignSuggestServiceClient client = new SmartCampaignSuggestServiceClientImpl(mockGrpcClient.Object, null);
+            SmartCampaignSuggestServiceClient client = new SmartCampaignSuggestServiceClientImpl(mockGrpcClient.Object, null, null);
             SuggestSmartCampaignBudgetOptionsResponse response = client.SuggestSmartCampaignBudgetOptions(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -69,7 +70,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 High = new SuggestSmartCampaignBudgetOptionsResponse.Types.BudgetOption(),
             };
             mockGrpcClient.Setup(x => x.SuggestSmartCampaignBudgetOptionsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<SuggestSmartCampaignBudgetOptionsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            SmartCampaignSuggestServiceClient client = new SmartCampaignSuggestServiceClientImpl(mockGrpcClient.Object, null);
+            SmartCampaignSuggestServiceClient client = new SmartCampaignSuggestServiceClientImpl(mockGrpcClient.Object, null, null);
             SuggestSmartCampaignBudgetOptionsResponse responseCallSettings = await client.SuggestSmartCampaignBudgetOptionsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             SuggestSmartCampaignBudgetOptionsResponse responseCancellationToken = await client.SuggestSmartCampaignBudgetOptionsAsync(request, st::CancellationToken.None);
@@ -91,7 +92,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 AdInfo = new gagvc::SmartCampaignAdInfo(),
             };
             mockGrpcClient.Setup(x => x.SuggestSmartCampaignAd(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            SmartCampaignSuggestServiceClient client = new SmartCampaignSuggestServiceClientImpl(mockGrpcClient.Object, null);
+            SmartCampaignSuggestServiceClient client = new SmartCampaignSuggestServiceClientImpl(mockGrpcClient.Object, null, null);
             SuggestSmartCampaignAdResponse response = client.SuggestSmartCampaignAd(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -111,7 +112,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 AdInfo = new gagvc::SmartCampaignAdInfo(),
             };
             mockGrpcClient.Setup(x => x.SuggestSmartCampaignAdAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<SuggestSmartCampaignAdResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            SmartCampaignSuggestServiceClient client = new SmartCampaignSuggestServiceClientImpl(mockGrpcClient.Object, null);
+            SmartCampaignSuggestServiceClient client = new SmartCampaignSuggestServiceClientImpl(mockGrpcClient.Object, null, null);
             SuggestSmartCampaignAdResponse responseCallSettings = await client.SuggestSmartCampaignAdAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             SuggestSmartCampaignAdResponse responseCancellationToken = await client.SuggestSmartCampaignAdAsync(request, st::CancellationToken.None);
@@ -136,7 +137,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.SuggestKeywordThemes(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            SmartCampaignSuggestServiceClient client = new SmartCampaignSuggestServiceClientImpl(mockGrpcClient.Object, null);
+            SmartCampaignSuggestServiceClient client = new SmartCampaignSuggestServiceClientImpl(mockGrpcClient.Object, null, null);
             SuggestKeywordThemesResponse response = client.SuggestKeywordThemes(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -159,7 +160,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.SuggestKeywordThemesAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<SuggestKeywordThemesResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            SmartCampaignSuggestServiceClient client = new SmartCampaignSuggestServiceClientImpl(mockGrpcClient.Object, null);
+            SmartCampaignSuggestServiceClient client = new SmartCampaignSuggestServiceClientImpl(mockGrpcClient.Object, null, null);
             SuggestKeywordThemesResponse responseCallSettings = await client.SuggestKeywordThemesAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             SuggestKeywordThemesResponse responseCancellationToken = await client.SuggestKeywordThemesAsync(request, st::CancellationToken.None);

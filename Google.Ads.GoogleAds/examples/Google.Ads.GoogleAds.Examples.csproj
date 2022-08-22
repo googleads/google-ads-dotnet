@@ -27,7 +27,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Google.Ads.Common" Version="9.5.1" />
-    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0">
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
@@ -36,11 +36,11 @@
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="CommandLineParser" Version="2.8.0" />
+    <PackageReference Include="CommandLineParser" Version="2.9.1" />
   </ItemGroup>
   <ItemGroup>
    <!-- Include local projects over nuget dependencies if available -->
-    <PackageReference Condition="!Exists('..\src\Google.Ads.GoogleAds.csproj')" Include="Google.Ads.GoogleAds" Version="13.0.2" />
+    <PackageReference Condition="!Exists('..\src\Google.Ads.GoogleAds.csproj')" Include="Google.Ads.GoogleAds" Version="14.0.0" />
     <ProjectReference Condition="Exists('..\src\Google.Ads.GoogleAds.csproj')" Include="..\src\Google.Ads.GoogleAds.csproj" />
   </ItemGroup>
   <ItemGroup>

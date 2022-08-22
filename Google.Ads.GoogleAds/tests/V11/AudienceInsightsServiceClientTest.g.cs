@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagve = Google.Ads.GoogleAds.V11.Enums;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using grpccore = Grpc.Core;
@@ -44,7 +45,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 SavedReportUrl = "saved_report_url8574fd0f",
             };
             mockGrpcClient.Setup(x => x.GenerateInsightsFinderReport(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            AudienceInsightsServiceClient client = new AudienceInsightsServiceClientImpl(mockGrpcClient.Object, null);
+            AudienceInsightsServiceClient client = new AudienceInsightsServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateInsightsFinderReportResponse response = client.GenerateInsightsFinderReport(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -66,7 +67,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 SavedReportUrl = "saved_report_url8574fd0f",
             };
             mockGrpcClient.Setup(x => x.GenerateInsightsFinderReportAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateInsightsFinderReportResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            AudienceInsightsServiceClient client = new AudienceInsightsServiceClientImpl(mockGrpcClient.Object, null);
+            AudienceInsightsServiceClient client = new AudienceInsightsServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateInsightsFinderReportResponse responseCallSettings = await client.GenerateInsightsFinderReportAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             GenerateInsightsFinderReportResponse responseCancellationToken = await client.GenerateInsightsFinderReportAsync(request, st::CancellationToken.None);
@@ -89,7 +90,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 SavedReportUrl = "saved_report_url8574fd0f",
             };
             mockGrpcClient.Setup(x => x.GenerateInsightsFinderReport(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            AudienceInsightsServiceClient client = new AudienceInsightsServiceClientImpl(mockGrpcClient.Object, null);
+            AudienceInsightsServiceClient client = new AudienceInsightsServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateInsightsFinderReportResponse response = client.GenerateInsightsFinderReport(request.CustomerId, request.BaselineAudience, request.SpecificAudience);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -110,7 +111,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 SavedReportUrl = "saved_report_url8574fd0f",
             };
             mockGrpcClient.Setup(x => x.GenerateInsightsFinderReportAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateInsightsFinderReportResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            AudienceInsightsServiceClient client = new AudienceInsightsServiceClientImpl(mockGrpcClient.Object, null);
+            AudienceInsightsServiceClient client = new AudienceInsightsServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateInsightsFinderReportResponse responseCallSettings = await client.GenerateInsightsFinderReportAsync(request.CustomerId, request.BaselineAudience, request.SpecificAudience, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             GenerateInsightsFinderReportResponse responseCancellationToken = await client.GenerateInsightsFinderReportAsync(request.CustomerId, request.BaselineAudience, request.SpecificAudience, st::CancellationToken.None);
@@ -127,7 +128,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 CustomerId = "customer_id3b3724cb",
                 Dimensions =
                 {
-                    gagve::AudienceInsightsDimensionEnum.Types.AudienceInsightsDimension.Unspecified,
+                    gagve::AudienceInsightsDimensionEnum.Types.AudienceInsightsDimension.AgeRange,
                 },
                 QueryText = "query_text3b0c4d80",
                 CustomerInsightsGroup = "customer_insights_groupee7d0741",
@@ -140,7 +141,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.ListAudienceInsightsAttributes(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            AudienceInsightsServiceClient client = new AudienceInsightsServiceClientImpl(mockGrpcClient.Object, null);
+            AudienceInsightsServiceClient client = new AudienceInsightsServiceClientImpl(mockGrpcClient.Object, null, null);
             ListAudienceInsightsAttributesResponse response = client.ListAudienceInsightsAttributes(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -155,7 +156,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 CustomerId = "customer_id3b3724cb",
                 Dimensions =
                 {
-                    gagve::AudienceInsightsDimensionEnum.Types.AudienceInsightsDimension.Unspecified,
+                    gagve::AudienceInsightsDimensionEnum.Types.AudienceInsightsDimension.AgeRange,
                 },
                 QueryText = "query_text3b0c4d80",
                 CustomerInsightsGroup = "customer_insights_groupee7d0741",
@@ -168,7 +169,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.ListAudienceInsightsAttributesAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<ListAudienceInsightsAttributesResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            AudienceInsightsServiceClient client = new AudienceInsightsServiceClientImpl(mockGrpcClient.Object, null);
+            AudienceInsightsServiceClient client = new AudienceInsightsServiceClientImpl(mockGrpcClient.Object, null, null);
             ListAudienceInsightsAttributesResponse responseCallSettings = await client.ListAudienceInsightsAttributesAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             ListAudienceInsightsAttributesResponse responseCancellationToken = await client.ListAudienceInsightsAttributesAsync(request, st::CancellationToken.None);
@@ -185,7 +186,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 CustomerId = "customer_id3b3724cb",
                 Dimensions =
                 {
-                    gagve::AudienceInsightsDimensionEnum.Types.AudienceInsightsDimension.Unspecified,
+                    gagve::AudienceInsightsDimensionEnum.Types.AudienceInsightsDimension.AgeRange,
                 },
                 QueryText = "query_text3b0c4d80",
             };
@@ -197,7 +198,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.ListAudienceInsightsAttributes(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            AudienceInsightsServiceClient client = new AudienceInsightsServiceClientImpl(mockGrpcClient.Object, null);
+            AudienceInsightsServiceClient client = new AudienceInsightsServiceClientImpl(mockGrpcClient.Object, null, null);
             ListAudienceInsightsAttributesResponse response = client.ListAudienceInsightsAttributes(request.CustomerId, request.Dimensions, request.QueryText);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -212,7 +213,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 CustomerId = "customer_id3b3724cb",
                 Dimensions =
                 {
-                    gagve::AudienceInsightsDimensionEnum.Types.AudienceInsightsDimension.Unspecified,
+                    gagve::AudienceInsightsDimensionEnum.Types.AudienceInsightsDimension.AgeRange,
                 },
                 QueryText = "query_text3b0c4d80",
             };
@@ -224,10 +225,126 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.ListAudienceInsightsAttributesAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<ListAudienceInsightsAttributesResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            AudienceInsightsServiceClient client = new AudienceInsightsServiceClientImpl(mockGrpcClient.Object, null);
+            AudienceInsightsServiceClient client = new AudienceInsightsServiceClientImpl(mockGrpcClient.Object, null, null);
             ListAudienceInsightsAttributesResponse responseCallSettings = await client.ListAudienceInsightsAttributesAsync(request.CustomerId, request.Dimensions, request.QueryText, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             ListAudienceInsightsAttributesResponse responseCancellationToken = await client.ListAudienceInsightsAttributesAsync(request.CustomerId, request.Dimensions, request.QueryText, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Category("Autogenerated")][Test]
+        public void GenerateAudienceCompositionInsightsRequestObject()
+        {
+            moq::Mock<AudienceInsightsService.AudienceInsightsServiceClient> mockGrpcClient = new moq::Mock<AudienceInsightsService.AudienceInsightsServiceClient>(moq::MockBehavior.Strict);
+            GenerateAudienceCompositionInsightsRequest request = new GenerateAudienceCompositionInsightsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Audience = new InsightsAudience(),
+                DataMonth = "data_month47be152a",
+                Dimensions =
+                {
+                    gagve::AudienceInsightsDimensionEnum.Types.AudienceInsightsDimension.AgeRange,
+                },
+                CustomerInsightsGroup = "customer_insights_groupee7d0741",
+            };
+            GenerateAudienceCompositionInsightsResponse expectedResponse = new GenerateAudienceCompositionInsightsResponse
+            {
+                Sections =
+                {
+                    new AudienceCompositionSection(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GenerateAudienceCompositionInsights(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AudienceInsightsServiceClient client = new AudienceInsightsServiceClientImpl(mockGrpcClient.Object, null, null);
+            GenerateAudienceCompositionInsightsResponse response = client.GenerateAudienceCompositionInsights(request);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Category("Autogenerated")][Test]
+        public async stt::Task GenerateAudienceCompositionInsightsRequestObjectAsync()
+        {
+            moq::Mock<AudienceInsightsService.AudienceInsightsServiceClient> mockGrpcClient = new moq::Mock<AudienceInsightsService.AudienceInsightsServiceClient>(moq::MockBehavior.Strict);
+            GenerateAudienceCompositionInsightsRequest request = new GenerateAudienceCompositionInsightsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Audience = new InsightsAudience(),
+                DataMonth = "data_month47be152a",
+                Dimensions =
+                {
+                    gagve::AudienceInsightsDimensionEnum.Types.AudienceInsightsDimension.AgeRange,
+                },
+                CustomerInsightsGroup = "customer_insights_groupee7d0741",
+            };
+            GenerateAudienceCompositionInsightsResponse expectedResponse = new GenerateAudienceCompositionInsightsResponse
+            {
+                Sections =
+                {
+                    new AudienceCompositionSection(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GenerateAudienceCompositionInsightsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateAudienceCompositionInsightsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AudienceInsightsServiceClient client = new AudienceInsightsServiceClientImpl(mockGrpcClient.Object, null, null);
+            GenerateAudienceCompositionInsightsResponse responseCallSettings = await client.GenerateAudienceCompositionInsightsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            GenerateAudienceCompositionInsightsResponse responseCancellationToken = await client.GenerateAudienceCompositionInsightsAsync(request, st::CancellationToken.None);
+            Assert.AreEqual(expectedResponse, responseCancellationToken);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Category("Autogenerated")][Test]
+        public void GenerateAudienceCompositionInsights()
+        {
+            moq::Mock<AudienceInsightsService.AudienceInsightsServiceClient> mockGrpcClient = new moq::Mock<AudienceInsightsService.AudienceInsightsServiceClient>(moq::MockBehavior.Strict);
+            GenerateAudienceCompositionInsightsRequest request = new GenerateAudienceCompositionInsightsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Audience = new InsightsAudience(),
+                Dimensions =
+                {
+                    gagve::AudienceInsightsDimensionEnum.Types.AudienceInsightsDimension.AgeRange,
+                },
+            };
+            GenerateAudienceCompositionInsightsResponse expectedResponse = new GenerateAudienceCompositionInsightsResponse
+            {
+                Sections =
+                {
+                    new AudienceCompositionSection(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GenerateAudienceCompositionInsights(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
+            AudienceInsightsServiceClient client = new AudienceInsightsServiceClientImpl(mockGrpcClient.Object, null, null);
+            GenerateAudienceCompositionInsightsResponse response = client.GenerateAudienceCompositionInsights(request.CustomerId, request.Audience, request.Dimensions);
+            Assert.AreEqual(expectedResponse, response);
+            mockGrpcClient.VerifyAll();
+        }
+
+        [Category("Autogenerated")][Test]
+        public async stt::Task GenerateAudienceCompositionInsightsAsync()
+        {
+            moq::Mock<AudienceInsightsService.AudienceInsightsServiceClient> mockGrpcClient = new moq::Mock<AudienceInsightsService.AudienceInsightsServiceClient>(moq::MockBehavior.Strict);
+            GenerateAudienceCompositionInsightsRequest request = new GenerateAudienceCompositionInsightsRequest
+            {
+                CustomerId = "customer_id3b3724cb",
+                Audience = new InsightsAudience(),
+                Dimensions =
+                {
+                    gagve::AudienceInsightsDimensionEnum.Types.AudienceInsightsDimension.AgeRange,
+                },
+            };
+            GenerateAudienceCompositionInsightsResponse expectedResponse = new GenerateAudienceCompositionInsightsResponse
+            {
+                Sections =
+                {
+                    new AudienceCompositionSection(),
+                },
+            };
+            mockGrpcClient.Setup(x => x.GenerateAudienceCompositionInsightsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateAudienceCompositionInsightsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
+            AudienceInsightsServiceClient client = new AudienceInsightsServiceClientImpl(mockGrpcClient.Object, null, null);
+            GenerateAudienceCompositionInsightsResponse responseCallSettings = await client.GenerateAudienceCompositionInsightsAsync(request.CustomerId, request.Audience, request.Dimensions, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
+            Assert.AreEqual(expectedResponse, responseCallSettings);
+            GenerateAudienceCompositionInsightsResponse responseCancellationToken = await client.GenerateAudienceCompositionInsightsAsync(request.CustomerId, request.Audience, request.Dimensions, st::CancellationToken.None);
             Assert.AreEqual(expectedResponse, responseCancellationToken);
             mockGrpcClient.VerifyAll();
         }

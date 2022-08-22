@@ -13,7 +13,6 @@
 // limitations under the License.
 
 using Google.Ads.Gax.Interceptors;
-using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Logging;
 using Grpc.Core;
 using Grpc.Core.Interceptors;
@@ -33,18 +32,11 @@ namespace Google.Ads.GoogleAds.Interceptors
         private LoggingHandler loggingHandler;
 
         /// <summary>
-        /// The configuration.
-        /// </summary>
-        private GoogleAdsConfig config;
-
-        /// <summary>
         /// Initializes a new instance of the <see cref="GoogleAdsGrpcInterceptor"/> class.
         /// </summary>
-        /// <param name="config">The configuration.</param>
-        internal GoogleAdsGrpcInterceptor(GoogleAdsConfig config) : base()
+        internal GoogleAdsGrpcInterceptor() : base()
         {
-            this.config = config;
-            this.loggingHandler = new LoggingHandler(config);
+            this.loggingHandler = new LoggingHandler();
         }
 
         /// <summary>
@@ -70,14 +62,12 @@ namespace Google.Ads.GoogleAds.Interceptors
         {
             AsyncUnaryCall<TResponse> call = continuationCallback(request, context);
 
-            Task t = call.ResponseAsync.ContinueWith(
-                delegate (Task<TResponse> oldTask)
-                {
-                    loggingHandler.HandleAsyncUnaryLogging(request, context, oldTask, call);
-                });
-            t.Wait();
+            Action<Task<TResponse>> loggingCallback = delegate (Task<TResponse> oldTask)
+            {
+                loggingHandler.HandleAsyncUnaryLogging(request, context, oldTask, call);
+            };
 
-            return UnaryRpcInterceptor.Intercept(call);
+            return UnaryRpcInterceptor.Intercept(call, loggingCallback);
         }
 
         /// <summary>

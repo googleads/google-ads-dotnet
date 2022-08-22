@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagvc = Google.Ads.GoogleAds.V11.Common;
 using gagve = Google.Ads.GoogleAds.V11.Enums;
 using gaxgrpc = Google.Api.Gax.Grpc;
@@ -59,7 +60,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 AggregateMetricResults = new gagvc::KeywordPlanAggregateMetricResults(),
             };
             mockGrpcClient.Setup(x => x.GenerateKeywordHistoricalMetrics(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            KeywordPlanIdeaServiceClient client = new KeywordPlanIdeaServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanIdeaServiceClient client = new KeywordPlanIdeaServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateKeywordHistoricalMetricsResponse response = client.GenerateKeywordHistoricalMetrics(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -95,7 +96,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 AggregateMetricResults = new gagvc::KeywordPlanAggregateMetricResults(),
             };
             mockGrpcClient.Setup(x => x.GenerateKeywordHistoricalMetricsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateKeywordHistoricalMetricsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            KeywordPlanIdeaServiceClient client = new KeywordPlanIdeaServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanIdeaServiceClient client = new KeywordPlanIdeaServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateKeywordHistoricalMetricsResponse responseCallSettings = await client.GenerateKeywordHistoricalMetricsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             GenerateKeywordHistoricalMetricsResponse responseCancellationToken = await client.GenerateKeywordHistoricalMetricsAsync(request, st::CancellationToken.None);
@@ -131,7 +132,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.GenerateAdGroupThemes(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            KeywordPlanIdeaServiceClient client = new KeywordPlanIdeaServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanIdeaServiceClient client = new KeywordPlanIdeaServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateAdGroupThemesResponse response = client.GenerateAdGroupThemes(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -165,7 +166,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.GenerateAdGroupThemesAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateAdGroupThemesResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            KeywordPlanIdeaServiceClient client = new KeywordPlanIdeaServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanIdeaServiceClient client = new KeywordPlanIdeaServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateAdGroupThemesResponse responseCallSettings = await client.GenerateAdGroupThemesAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             GenerateAdGroupThemesResponse responseCancellationToken = await client.GenerateAdGroupThemesAsync(request, st::CancellationToken.None);

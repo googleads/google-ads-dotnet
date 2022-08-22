@@ -40,6 +40,11 @@ namespace Google.Ads.Gax.Config
         private const string DEFAULT_USER_ID = "user";
 
         /// <summary>
+        /// The default OAuth2 scope.
+        /// </summary>
+        private const string DEFAULT_OAUTH_SCOPE = "";
+
+        /// <summary>
         /// The default timeout for API calls in milliseconds (1 hour).
         /// </summary>
         private static readonly int DEFAULT_TIMEOUT = (int)new TimeSpan(1, 0, 0).TotalMilliseconds;
@@ -107,7 +112,8 @@ namespace Google.Ads.Gax.Config
         /// <summary>
         /// OAuth2 scope.
         /// </summary>
-        protected StringConfigSetting oAuth2Scope = null;
+        protected StringConfigSetting oAuth2Scope = new StringConfigSetting("OAuth2Scope",
+            DEFAULT_OAUTH_SCOPE);
 
         /// <summary>
         /// Authorization method.
@@ -127,6 +133,12 @@ namespace Google.Ads.Gax.Config
         /// </remarks>
         private ConfigSetting<bool> enableProfiling =
             new ConfigSetting<bool>("EnableProfiling", false);
+
+        /// <summary>
+        /// A flag to force the library to use <code>Grpc.Core</code> transport.
+        /// </summary>
+        private ConfigSetting<bool> useGrpcCore =
+            new ConfigSetting<bool>("UseGrpcCore", false);
 
         /// <summary>
         /// A flag to determine whether or not to use channel caching.
@@ -314,6 +326,21 @@ namespace Google.Ads.Gax.Config
         }
 
         /// <summary>
+        /// A flag to determine whether or not to force using Grpc.Core library.
+        /// </summary>
+        /// <remarks>When set to <code>false</code>, the library uses <code>Grpc.Net.Client</code>
+        /// transport, and falls back to <code>Grpc.Core</code> transport if
+        /// <code>Grpc.Net.Client</code> is not supported on the chosen platform. When set to true,
+        /// the library always uses <code>Grpc.Core</code> transport. This flag defaults to
+        /// <code>false</code>. 
+        /// </remarks>
+        public bool UseGrpcCore
+        {
+            get => useGrpcCore.Value;
+            set => SetPropertyAndNotify(useGrpcCore, value);
+        }
+
+        /// <summary>
         /// A flag to determine whether or not to enable channel cache in the client library.
         /// </summary>
         /// <remarks>
@@ -448,6 +475,7 @@ namespace Google.Ads.Gax.Config
             ReadSetting(settings, timeout);
             ReadSetting(settings, maxReceiveMessageLengthInBytes);
             ReadSetting(settings, maxMetadataSizeInBytes);
+            ReadSetting(settings, useGrpcCore);
 
             ReadSetting(settings, oAuth2Mode);
             ReadSetting(settings, oAuth2ClientId);

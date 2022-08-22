@@ -17,7 +17,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-#pragma warning disable 0414, 1591
+#pragma warning disable 0414, 1591, 8981
 #region Designer generated code
 
 using grpc = global::Grpc.Core;
@@ -72,6 +72,10 @@ namespace Google.Ads.GoogleAds.V11.Services {
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V11.Services.ListAudienceInsightsAttributesRequest> __Marshaller_google_ads_googleads_v11_services_ListAudienceInsightsAttributesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V11.Services.ListAudienceInsightsAttributesRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V11.Services.ListAudienceInsightsAttributesResponse> __Marshaller_google_ads_googleads_v11_services_ListAudienceInsightsAttributesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V11.Services.ListAudienceInsightsAttributesResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V11.Services.GenerateAudienceCompositionInsightsRequest> __Marshaller_google_ads_googleads_v11_services_GenerateAudienceCompositionInsightsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V11.Services.GenerateAudienceCompositionInsightsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V11.Services.GenerateAudienceCompositionInsightsResponse> __Marshaller_google_ads_googleads_v11_services_GenerateAudienceCompositionInsightsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V11.Services.GenerateAudienceCompositionInsightsResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Google.Ads.GoogleAds.V11.Services.GenerateInsightsFinderReportRequest, global::Google.Ads.GoogleAds.V11.Services.GenerateInsightsFinderReportResponse> __Method_GenerateInsightsFinderReport = new grpc::Method<global::Google.Ads.GoogleAds.V11.Services.GenerateInsightsFinderReportRequest, global::Google.Ads.GoogleAds.V11.Services.GenerateInsightsFinderReportResponse>(
@@ -88,6 +92,14 @@ namespace Google.Ads.GoogleAds.V11.Services {
         "ListAudienceInsightsAttributes",
         __Marshaller_google_ads_googleads_v11_services_ListAudienceInsightsAttributesRequest,
         __Marshaller_google_ads_googleads_v11_services_ListAudienceInsightsAttributesResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Google.Ads.GoogleAds.V11.Services.GenerateAudienceCompositionInsightsRequest, global::Google.Ads.GoogleAds.V11.Services.GenerateAudienceCompositionInsightsResponse> __Method_GenerateAudienceCompositionInsights = new grpc::Method<global::Google.Ads.GoogleAds.V11.Services.GenerateAudienceCompositionInsightsRequest, global::Google.Ads.GoogleAds.V11.Services.GenerateAudienceCompositionInsightsResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GenerateAudienceCompositionInsights",
+        __Marshaller_google_ads_googleads_v11_services_GenerateAudienceCompositionInsightsRequest,
+        __Marshaller_google_ads_googleads_v11_services_GenerateAudienceCompositionInsightsResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -139,6 +151,31 @@ namespace Google.Ads.GoogleAds.V11.Services {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Google.Ads.GoogleAds.V11.Services.ListAudienceInsightsAttributesResponse> ListAudienceInsightsAttributes(global::Google.Ads.GoogleAds.V11.Services.ListAudienceInsightsAttributesRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Returns a collection of attributes that are represented in an audience of
+      /// interest, with metrics that compare each attribute's share of the audience
+      /// with its share of a baseline audience.
+      ///
+      /// List of thrown errors:
+      ///   [AudienceInsightsError]()
+      ///   [AuthenticationError]()
+      ///   [AuthorizationError]()
+      ///   [FieldError]()
+      ///   [HeaderError]()
+      ///   [InternalError]()
+      ///   [QuotaError]()
+      ///   [RangeError]()
+      ///   [RequestError]()
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Google.Ads.GoogleAds.V11.Services.GenerateAudienceCompositionInsightsResponse> GenerateAudienceCompositionInsights(global::Google.Ads.GoogleAds.V11.Services.GenerateAudienceCompositionInsightsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -348,6 +385,106 @@ namespace Google.Ads.GoogleAds.V11.Services {
       {
         return CallInvoker.AsyncUnaryCall(__Method_ListAudienceInsightsAttributes, null, options, request);
       }
+      /// <summary>
+      /// Returns a collection of attributes that are represented in an audience of
+      /// interest, with metrics that compare each attribute's share of the audience
+      /// with its share of a baseline audience.
+      ///
+      /// List of thrown errors:
+      ///   [AudienceInsightsError]()
+      ///   [AuthenticationError]()
+      ///   [AuthorizationError]()
+      ///   [FieldError]()
+      ///   [HeaderError]()
+      ///   [InternalError]()
+      ///   [QuotaError]()
+      ///   [RangeError]()
+      ///   [RequestError]()
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Ads.GoogleAds.V11.Services.GenerateAudienceCompositionInsightsResponse GenerateAudienceCompositionInsights(global::Google.Ads.GoogleAds.V11.Services.GenerateAudienceCompositionInsightsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GenerateAudienceCompositionInsights(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Returns a collection of attributes that are represented in an audience of
+      /// interest, with metrics that compare each attribute's share of the audience
+      /// with its share of a baseline audience.
+      ///
+      /// List of thrown errors:
+      ///   [AudienceInsightsError]()
+      ///   [AuthenticationError]()
+      ///   [AuthorizationError]()
+      ///   [FieldError]()
+      ///   [HeaderError]()
+      ///   [InternalError]()
+      ///   [QuotaError]()
+      ///   [RangeError]()
+      ///   [RequestError]()
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Ads.GoogleAds.V11.Services.GenerateAudienceCompositionInsightsResponse GenerateAudienceCompositionInsights(global::Google.Ads.GoogleAds.V11.Services.GenerateAudienceCompositionInsightsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GenerateAudienceCompositionInsights, null, options, request);
+      }
+      /// <summary>
+      /// Returns a collection of attributes that are represented in an audience of
+      /// interest, with metrics that compare each attribute's share of the audience
+      /// with its share of a baseline audience.
+      ///
+      /// List of thrown errors:
+      ///   [AudienceInsightsError]()
+      ///   [AuthenticationError]()
+      ///   [AuthorizationError]()
+      ///   [FieldError]()
+      ///   [HeaderError]()
+      ///   [InternalError]()
+      ///   [QuotaError]()
+      ///   [RangeError]()
+      ///   [RequestError]()
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Ads.GoogleAds.V11.Services.GenerateAudienceCompositionInsightsResponse> GenerateAudienceCompositionInsightsAsync(global::Google.Ads.GoogleAds.V11.Services.GenerateAudienceCompositionInsightsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GenerateAudienceCompositionInsightsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Returns a collection of attributes that are represented in an audience of
+      /// interest, with metrics that compare each attribute's share of the audience
+      /// with its share of a baseline audience.
+      ///
+      /// List of thrown errors:
+      ///   [AudienceInsightsError]()
+      ///   [AuthenticationError]()
+      ///   [AuthorizationError]()
+      ///   [FieldError]()
+      ///   [HeaderError]()
+      ///   [InternalError]()
+      ///   [QuotaError]()
+      ///   [RangeError]()
+      ///   [RequestError]()
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Ads.GoogleAds.V11.Services.GenerateAudienceCompositionInsightsResponse> GenerateAudienceCompositionInsightsAsync(global::Google.Ads.GoogleAds.V11.Services.GenerateAudienceCompositionInsightsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GenerateAudienceCompositionInsights, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override AudienceInsightsServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -363,10 +500,11 @@ namespace Google.Ads.GoogleAds.V11.Services {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GenerateInsightsFinderReport, serviceImpl.GenerateInsightsFinderReport)
-          .AddMethod(__Method_ListAudienceInsightsAttributes, serviceImpl.ListAudienceInsightsAttributes).Build();
+          .AddMethod(__Method_ListAudienceInsightsAttributes, serviceImpl.ListAudienceInsightsAttributes)
+          .AddMethod(__Method_GenerateAudienceCompositionInsights, serviceImpl.GenerateAudienceCompositionInsights).Build();
     }
 
-    /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+    /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
     /// Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
     /// <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
@@ -375,6 +513,7 @@ namespace Google.Ads.GoogleAds.V11.Services {
     {
       serviceBinder.AddMethod(__Method_GenerateInsightsFinderReport, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Ads.GoogleAds.V11.Services.GenerateInsightsFinderReportRequest, global::Google.Ads.GoogleAds.V11.Services.GenerateInsightsFinderReportResponse>(serviceImpl.GenerateInsightsFinderReport));
       serviceBinder.AddMethod(__Method_ListAudienceInsightsAttributes, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Ads.GoogleAds.V11.Services.ListAudienceInsightsAttributesRequest, global::Google.Ads.GoogleAds.V11.Services.ListAudienceInsightsAttributesResponse>(serviceImpl.ListAudienceInsightsAttributes));
+      serviceBinder.AddMethod(__Method_GenerateAudienceCompositionInsights, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Ads.GoogleAds.V11.Services.GenerateAudienceCompositionInsightsRequest, global::Google.Ads.GoogleAds.V11.Services.GenerateAudienceCompositionInsightsResponse>(serviceImpl.GenerateAudienceCompositionInsights));
     }
 
   }

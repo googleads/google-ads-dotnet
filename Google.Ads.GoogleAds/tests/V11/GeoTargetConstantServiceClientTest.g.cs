@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gaxgrpc = Google.Api.Gax.Grpc;
 using grpccore = Grpc.Core;
 using moq = Moq;
@@ -46,7 +47,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.SuggestGeoTargetConstants(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            GeoTargetConstantServiceClient client = new GeoTargetConstantServiceClientImpl(mockGrpcClient.Object, null);
+            GeoTargetConstantServiceClient client = new GeoTargetConstantServiceClientImpl(mockGrpcClient.Object, null, null);
             SuggestGeoTargetConstantsResponse response = client.SuggestGeoTargetConstants(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -71,7 +72,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.SuggestGeoTargetConstantsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<SuggestGeoTargetConstantsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            GeoTargetConstantServiceClient client = new GeoTargetConstantServiceClientImpl(mockGrpcClient.Object, null);
+            GeoTargetConstantServiceClient client = new GeoTargetConstantServiceClientImpl(mockGrpcClient.Object, null, null);
             SuggestGeoTargetConstantsResponse responseCallSettings = await client.SuggestGeoTargetConstantsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             SuggestGeoTargetConstantsResponse responseCancellationToken = await client.SuggestGeoTargetConstantsAsync(request, st::CancellationToken.None);

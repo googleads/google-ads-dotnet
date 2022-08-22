@@ -40,5 +40,19 @@ namespace Google.Ads.GoogleAds.Gax.Util
             Assert.AreEqual("EXPIRED", ProtobufUtilities.GetOriginalEnumFieldName(
                 HelloStatus.Expired));
         }
+
+        /// <summary>
+        /// Test for <see cref="ProtobufUtilities.ParseOriginalEnumFieldName{T}(string)"/>
+        /// </summary>
+        [Test]
+        public void TestParseOriginalEnumFieldName()
+        {
+            // Enum value and proto enum value are different.
+            Assert.AreEqual(HelloStatus.InProcess,
+                ProtobufUtilities.ParseOriginalEnumFieldName<HelloStatus>("IN_PROCESS"));
+
+            Assert.AreEqual(HelloStatus.Expired,
+                ProtobufUtilities.ParseOriginalEnumFieldName<HelloStatus>("EXPIRED"));
+        }
     }
 }

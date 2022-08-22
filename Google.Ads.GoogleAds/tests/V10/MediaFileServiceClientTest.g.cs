@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagve = Google.Ads.GoogleAds.V10.Enums;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using gr = Google.Rpc;
@@ -53,7 +54,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateMediaFiles(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            MediaFileServiceClient client = new MediaFileServiceClientImpl(mockGrpcClient.Object, null);
+            MediaFileServiceClient client = new MediaFileServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateMediaFilesResponse response = client.MutateMediaFiles(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -83,7 +84,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateMediaFilesAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateMediaFilesResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            MediaFileServiceClient client = new MediaFileServiceClientImpl(mockGrpcClient.Object, null);
+            MediaFileServiceClient client = new MediaFileServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateMediaFilesResponse responseCallSettings = await client.MutateMediaFilesAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateMediaFilesResponse responseCancellationToken = await client.MutateMediaFilesAsync(request, st::CancellationToken.None);
@@ -112,7 +113,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateMediaFiles(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            MediaFileServiceClient client = new MediaFileServiceClientImpl(mockGrpcClient.Object, null);
+            MediaFileServiceClient client = new MediaFileServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateMediaFilesResponse response = client.MutateMediaFiles(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -139,7 +140,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateMediaFilesAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateMediaFilesResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            MediaFileServiceClient client = new MediaFileServiceClientImpl(mockGrpcClient.Object, null);
+            MediaFileServiceClient client = new MediaFileServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateMediaFilesResponse responseCallSettings = await client.MutateMediaFilesAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateMediaFilesResponse responseCancellationToken = await client.MutateMediaFilesAsync(request.CustomerId, request.Operations, st::CancellationToken.None);

@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagve = Google.Ads.GoogleAds.V10.Enums;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using gr = Google.Rpc;
@@ -53,7 +54,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateAdGroupAds(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            AdGroupAdServiceClient client = new AdGroupAdServiceClientImpl(mockGrpcClient.Object, null);
+            AdGroupAdServiceClient client = new AdGroupAdServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAdGroupAdsResponse response = client.MutateAdGroupAds(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -83,7 +84,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateAdGroupAdsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAdGroupAdsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            AdGroupAdServiceClient client = new AdGroupAdServiceClientImpl(mockGrpcClient.Object, null);
+            AdGroupAdServiceClient client = new AdGroupAdServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAdGroupAdsResponse responseCallSettings = await client.MutateAdGroupAdsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateAdGroupAdsResponse responseCancellationToken = await client.MutateAdGroupAdsAsync(request, st::CancellationToken.None);
@@ -112,7 +113,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateAdGroupAds(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            AdGroupAdServiceClient client = new AdGroupAdServiceClientImpl(mockGrpcClient.Object, null);
+            AdGroupAdServiceClient client = new AdGroupAdServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAdGroupAdsResponse response = client.MutateAdGroupAds(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -139,7 +140,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateAdGroupAdsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAdGroupAdsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            AdGroupAdServiceClient client = new AdGroupAdServiceClientImpl(mockGrpcClient.Object, null);
+            AdGroupAdServiceClient client = new AdGroupAdServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAdGroupAdsResponse responseCallSettings = await client.MutateAdGroupAdsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateAdGroupAdsResponse responseCancellationToken = await client.MutateAdGroupAdsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);

@@ -14,12 +14,13 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
-using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using proto = Google.Protobuf;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
+using mel = Microsoft.Extensions.Logging;
 using sys = System;
 using scg = System.Collections.Generic;
 using sco = System.Collections.ObjectModel;
@@ -88,9 +89,8 @@ namespace Google.Ads.GoogleAds.V10.Services
         public CustomerNegativeCriterionServiceSettings Settings { get; set; }
 
         /// <summary>Creates a new builder with default settings.</summary>
-        public CustomerNegativeCriterionServiceClientBuilder()
+        public CustomerNegativeCriterionServiceClientBuilder() : base(CustomerNegativeCriterionServiceClient.ServiceMetadata)
         {
-            UseJwtAccessWithScopes = CustomerNegativeCriterionServiceClient.UseJwtAccessWithScopes;
         }
 
         partial void InterceptBuild(ref CustomerNegativeCriterionServiceClient client);
@@ -117,30 +117,18 @@ namespace Google.Ads.GoogleAds.V10.Services
         {
             Validate();
             grpccore::CallInvoker callInvoker = CreateCallInvoker();
-            return CustomerNegativeCriterionServiceClient.Create(callInvoker, Settings);
+            return CustomerNegativeCriterionServiceClient.Create(callInvoker, Settings, Logger);
         }
 
         private async stt::Task<CustomerNegativeCriterionServiceClient> BuildAsyncImpl(st::CancellationToken cancellationToken)
         {
             Validate();
             grpccore::CallInvoker callInvoker = await CreateCallInvokerAsync(cancellationToken).ConfigureAwait(false);
-            return CustomerNegativeCriterionServiceClient.Create(callInvoker, Settings);
+            return CustomerNegativeCriterionServiceClient.Create(callInvoker, Settings, Logger);
         }
-
-        /// <summary>Returns the endpoint for this builder type, used if no endpoint is otherwise specified.</summary>
-        protected override string GetDefaultEndpoint() => CustomerNegativeCriterionServiceClient.DefaultEndpoint;
-
-        /// <summary>
-        /// Returns the default scopes for this builder type, used if no scopes are otherwise specified.
-        /// </summary>
-        protected override scg::IReadOnlyList<string> GetDefaultScopes() =>
-            CustomerNegativeCriterionServiceClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
         protected override gaxgrpc::ChannelPool GetChannelPool() => CustomerNegativeCriterionServiceClient.ChannelPool;
-
-        /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
-        protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
     }
 
     /// <summary>CustomerNegativeCriterionService client wrapper, for convenient use.</summary>
@@ -165,19 +153,10 @@ namespace Google.Ads.GoogleAds.V10.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+        /// <summary>The service metadata associated with this client type.</summary>
+        public static gaxgrpc::ServiceMetadata ServiceMetadata { get; } = new gaxgrpc::ServiceMetadata(CustomerNegativeCriterionService.Descriptor, DefaultEndpoint, DefaultScopes, true, gax::ApiTransports.Grpc, PackageApiMetadata.ApiMetadata);
 
-        internal static bool UseJwtAccessWithScopes
-        {
-            get
-            {
-                bool useJwtAccessWithScopes = true;
-                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
-                return useJwtAccessWithScopes;
-            }
-        }
-
-        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(ServiceMetadata);
 
         /// <summary>
         /// Asynchronously creates a <see cref="CustomerNegativeCriterionServiceClient"/> using the default credentials,
@@ -208,8 +187,9 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
         /// </param>
         /// <param name="settings">Optional <see cref="CustomerNegativeCriterionServiceSettings"/>.</param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
         /// <returns>The created <see cref="CustomerNegativeCriterionServiceClient"/>.</returns>
-        internal static CustomerNegativeCriterionServiceClient Create(grpccore::CallInvoker callInvoker, CustomerNegativeCriterionServiceSettings settings = null)
+        internal static CustomerNegativeCriterionServiceClient Create(grpccore::CallInvoker callInvoker, CustomerNegativeCriterionServiceSettings settings = null, mel::ILogger logger = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpcinter::Interceptor interceptor = settings?.Interceptor;
@@ -218,7 +198,7 @@ namespace Google.Ads.GoogleAds.V10.Services
                 callInvoker = grpcinter::CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
             CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient grpcClient = new CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient(callInvoker);
-            return new CustomerNegativeCriterionServiceClientImpl(grpcClient, settings);
+            return new CustomerNegativeCriterionServiceClientImpl(grpcClient, settings, logger);
         }
 
         /// <summary>
@@ -409,12 +389,13 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// <param name="settings">
         /// The base <see cref="CustomerNegativeCriterionServiceSettings"/> used within this client.
         /// </param>
-        public CustomerNegativeCriterionServiceClientImpl(CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient grpcClient, CustomerNegativeCriterionServiceSettings settings)
+        /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
+        public CustomerNegativeCriterionServiceClientImpl(CustomerNegativeCriterionService.CustomerNegativeCriterionServiceClient grpcClient, CustomerNegativeCriterionServiceSettings settings, mel::ILogger logger)
         {
             GrpcClient = grpcClient;
             CustomerNegativeCriterionServiceSettings effectiveSettings = settings ?? CustomerNegativeCriterionServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callMutateCustomerNegativeCriteria = clientHelper.BuildApiCall<MutateCustomerNegativeCriteriaRequest, MutateCustomerNegativeCriteriaResponse>(grpcClient.MutateCustomerNegativeCriteriaAsync, grpcClient.MutateCustomerNegativeCriteria, effectiveSettings.MutateCustomerNegativeCriteriaSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            _callMutateCustomerNegativeCriteria = clientHelper.BuildApiCall<MutateCustomerNegativeCriteriaRequest, MutateCustomerNegativeCriteriaResponse>("MutateCustomerNegativeCriteria", grpcClient.MutateCustomerNegativeCriteriaAsync, grpcClient.MutateCustomerNegativeCriteria, effectiveSettings.MutateCustomerNegativeCriteriaSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateCustomerNegativeCriteria);
             Modify_MutateCustomerNegativeCriteriaApiCall(ref _callMutateCustomerNegativeCriteria);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

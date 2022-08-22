@@ -14,13 +14,14 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagvr = Google.Ads.GoogleAds.V11.Resources;
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
-using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using proto = Google.Protobuf;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
+using mel = Microsoft.Extensions.Logging;
 using sys = System;
 using scg = System.Collections.Generic;
 using sco = System.Collections.ObjectModel;
@@ -135,9 +136,8 @@ namespace Google.Ads.GoogleAds.V11.Services
         public MerchantCenterLinkServiceSettings Settings { get; set; }
 
         /// <summary>Creates a new builder with default settings.</summary>
-        public MerchantCenterLinkServiceClientBuilder()
+        public MerchantCenterLinkServiceClientBuilder() : base(MerchantCenterLinkServiceClient.ServiceMetadata)
         {
-            UseJwtAccessWithScopes = MerchantCenterLinkServiceClient.UseJwtAccessWithScopes;
         }
 
         partial void InterceptBuild(ref MerchantCenterLinkServiceClient client);
@@ -164,29 +164,18 @@ namespace Google.Ads.GoogleAds.V11.Services
         {
             Validate();
             grpccore::CallInvoker callInvoker = CreateCallInvoker();
-            return MerchantCenterLinkServiceClient.Create(callInvoker, Settings);
+            return MerchantCenterLinkServiceClient.Create(callInvoker, Settings, Logger);
         }
 
         private async stt::Task<MerchantCenterLinkServiceClient> BuildAsyncImpl(st::CancellationToken cancellationToken)
         {
             Validate();
             grpccore::CallInvoker callInvoker = await CreateCallInvokerAsync(cancellationToken).ConfigureAwait(false);
-            return MerchantCenterLinkServiceClient.Create(callInvoker, Settings);
+            return MerchantCenterLinkServiceClient.Create(callInvoker, Settings, Logger);
         }
-
-        /// <summary>Returns the endpoint for this builder type, used if no endpoint is otherwise specified.</summary>
-        protected override string GetDefaultEndpoint() => MerchantCenterLinkServiceClient.DefaultEndpoint;
-
-        /// <summary>
-        /// Returns the default scopes for this builder type, used if no scopes are otherwise specified.
-        /// </summary>
-        protected override scg::IReadOnlyList<string> GetDefaultScopes() => MerchantCenterLinkServiceClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
         protected override gaxgrpc::ChannelPool GetChannelPool() => MerchantCenterLinkServiceClient.ChannelPool;
-
-        /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
-        protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
     }
 
     /// <summary>MerchantCenterLinkService client wrapper, for convenient use.</summary>
@@ -212,19 +201,10 @@ namespace Google.Ads.GoogleAds.V11.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+        /// <summary>The service metadata associated with this client type.</summary>
+        public static gaxgrpc::ServiceMetadata ServiceMetadata { get; } = new gaxgrpc::ServiceMetadata(MerchantCenterLinkService.Descriptor, DefaultEndpoint, DefaultScopes, true, gax::ApiTransports.Grpc, PackageApiMetadata.ApiMetadata);
 
-        internal static bool UseJwtAccessWithScopes
-        {
-            get
-            {
-                bool useJwtAccessWithScopes = true;
-                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
-                return useJwtAccessWithScopes;
-            }
-        }
-
-        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(ServiceMetadata);
 
         /// <summary>
         /// Asynchronously creates a <see cref="MerchantCenterLinkServiceClient"/> using the default credentials,
@@ -254,8 +234,9 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
         /// </param>
         /// <param name="settings">Optional <see cref="MerchantCenterLinkServiceSettings"/>.</param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
         /// <returns>The created <see cref="MerchantCenterLinkServiceClient"/>.</returns>
-        internal static MerchantCenterLinkServiceClient Create(grpccore::CallInvoker callInvoker, MerchantCenterLinkServiceSettings settings = null)
+        internal static MerchantCenterLinkServiceClient Create(grpccore::CallInvoker callInvoker, MerchantCenterLinkServiceSettings settings = null, mel::ILogger logger = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpcinter::Interceptor interceptor = settings?.Interceptor;
@@ -264,7 +245,7 @@ namespace Google.Ads.GoogleAds.V11.Services
                 callInvoker = grpcinter::CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
             MerchantCenterLinkService.MerchantCenterLinkServiceClient grpcClient = new MerchantCenterLinkService.MerchantCenterLinkServiceClient(callInvoker);
-            return new MerchantCenterLinkServiceClientImpl(grpcClient, settings);
+            return new MerchantCenterLinkServiceClientImpl(grpcClient, settings, logger);
         }
 
         /// <summary>
@@ -730,18 +711,19 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// <param name="settings">
         /// The base <see cref="MerchantCenterLinkServiceSettings"/> used within this client.
         /// </param>
-        public MerchantCenterLinkServiceClientImpl(MerchantCenterLinkService.MerchantCenterLinkServiceClient grpcClient, MerchantCenterLinkServiceSettings settings)
+        /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
+        public MerchantCenterLinkServiceClientImpl(MerchantCenterLinkService.MerchantCenterLinkServiceClient grpcClient, MerchantCenterLinkServiceSettings settings, mel::ILogger logger)
         {
             GrpcClient = grpcClient;
             MerchantCenterLinkServiceSettings effectiveSettings = settings ?? MerchantCenterLinkServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callListMerchantCenterLinks = clientHelper.BuildApiCall<ListMerchantCenterLinksRequest, ListMerchantCenterLinksResponse>(grpcClient.ListMerchantCenterLinksAsync, grpcClient.ListMerchantCenterLinks, effectiveSettings.ListMerchantCenterLinksSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            _callListMerchantCenterLinks = clientHelper.BuildApiCall<ListMerchantCenterLinksRequest, ListMerchantCenterLinksResponse>("ListMerchantCenterLinks", grpcClient.ListMerchantCenterLinksAsync, grpcClient.ListMerchantCenterLinks, effectiveSettings.ListMerchantCenterLinksSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callListMerchantCenterLinks);
             Modify_ListMerchantCenterLinksApiCall(ref _callListMerchantCenterLinks);
-            _callGetMerchantCenterLink = clientHelper.BuildApiCall<GetMerchantCenterLinkRequest, gagvr::MerchantCenterLink>(grpcClient.GetMerchantCenterLinkAsync, grpcClient.GetMerchantCenterLink, effectiveSettings.GetMerchantCenterLinkSettings).WithGoogleRequestParam("resource_name", request => request.ResourceName);
+            _callGetMerchantCenterLink = clientHelper.BuildApiCall<GetMerchantCenterLinkRequest, gagvr::MerchantCenterLink>("GetMerchantCenterLink", grpcClient.GetMerchantCenterLinkAsync, grpcClient.GetMerchantCenterLink, effectiveSettings.GetMerchantCenterLinkSettings).WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetMerchantCenterLink);
             Modify_GetMerchantCenterLinkApiCall(ref _callGetMerchantCenterLink);
-            _callMutateMerchantCenterLink = clientHelper.BuildApiCall<MutateMerchantCenterLinkRequest, MutateMerchantCenterLinkResponse>(grpcClient.MutateMerchantCenterLinkAsync, grpcClient.MutateMerchantCenterLink, effectiveSettings.MutateMerchantCenterLinkSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            _callMutateMerchantCenterLink = clientHelper.BuildApiCall<MutateMerchantCenterLinkRequest, MutateMerchantCenterLinkResponse>("MutateMerchantCenterLink", grpcClient.MutateMerchantCenterLinkAsync, grpcClient.MutateMerchantCenterLink, effectiveSettings.MutateMerchantCenterLinkSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateMerchantCenterLink);
             Modify_MutateMerchantCenterLinkApiCall(ref _callMutateMerchantCenterLink);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

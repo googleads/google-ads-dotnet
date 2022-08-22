@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagve = Google.Ads.GoogleAds.V11.Enums;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using gr = Google.Rpc;
@@ -53,7 +54,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateSmartCampaignSettings(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            SmartCampaignSettingServiceClient client = new SmartCampaignSettingServiceClientImpl(mockGrpcClient.Object, null);
+            SmartCampaignSettingServiceClient client = new SmartCampaignSettingServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateSmartCampaignSettingsResponse response = client.MutateSmartCampaignSettings(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -83,7 +84,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateSmartCampaignSettingsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateSmartCampaignSettingsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            SmartCampaignSettingServiceClient client = new SmartCampaignSettingServiceClientImpl(mockGrpcClient.Object, null);
+            SmartCampaignSettingServiceClient client = new SmartCampaignSettingServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateSmartCampaignSettingsResponse responseCallSettings = await client.MutateSmartCampaignSettingsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateSmartCampaignSettingsResponse responseCancellationToken = await client.MutateSmartCampaignSettingsAsync(request, st::CancellationToken.None);
@@ -112,7 +113,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateSmartCampaignSettings(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            SmartCampaignSettingServiceClient client = new SmartCampaignSettingServiceClientImpl(mockGrpcClient.Object, null);
+            SmartCampaignSettingServiceClient client = new SmartCampaignSettingServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateSmartCampaignSettingsResponse response = client.MutateSmartCampaignSettings(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -139,7 +140,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateSmartCampaignSettingsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateSmartCampaignSettingsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            SmartCampaignSettingServiceClient client = new SmartCampaignSettingServiceClientImpl(mockGrpcClient.Object, null);
+            SmartCampaignSettingServiceClient client = new SmartCampaignSettingServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateSmartCampaignSettingsResponse responseCallSettings = await client.MutateSmartCampaignSettingsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateSmartCampaignSettingsResponse responseCancellationToken = await client.MutateSmartCampaignSettingsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);

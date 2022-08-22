@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagve = Google.Ads.GoogleAds.V11.Enums;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using gr = Google.Rpc;
@@ -53,7 +54,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateBiddingStrategies(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            BiddingStrategyServiceClient client = new BiddingStrategyServiceClientImpl(mockGrpcClient.Object, null);
+            BiddingStrategyServiceClient client = new BiddingStrategyServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateBiddingStrategiesResponse response = client.MutateBiddingStrategies(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -83,7 +84,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateBiddingStrategiesAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateBiddingStrategiesResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            BiddingStrategyServiceClient client = new BiddingStrategyServiceClientImpl(mockGrpcClient.Object, null);
+            BiddingStrategyServiceClient client = new BiddingStrategyServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateBiddingStrategiesResponse responseCallSettings = await client.MutateBiddingStrategiesAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateBiddingStrategiesResponse responseCancellationToken = await client.MutateBiddingStrategiesAsync(request, st::CancellationToken.None);
@@ -112,7 +113,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateBiddingStrategies(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            BiddingStrategyServiceClient client = new BiddingStrategyServiceClientImpl(mockGrpcClient.Object, null);
+            BiddingStrategyServiceClient client = new BiddingStrategyServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateBiddingStrategiesResponse response = client.MutateBiddingStrategies(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -139,7 +140,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateBiddingStrategiesAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateBiddingStrategiesResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            BiddingStrategyServiceClient client = new BiddingStrategyServiceClientImpl(mockGrpcClient.Object, null);
+            BiddingStrategyServiceClient client = new BiddingStrategyServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateBiddingStrategiesResponse responseCallSettings = await client.MutateBiddingStrategiesAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateBiddingStrategiesResponse responseCancellationToken = await client.MutateBiddingStrategiesAsync(request.CustomerId, request.Operations, st::CancellationToken.None);

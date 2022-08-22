@@ -14,12 +14,13 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
-using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using proto = Google.Protobuf;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
+using mel = Microsoft.Extensions.Logging;
 using sys = System;
 using sc = System.Collections;
 using scg = System.Collections.Generic;
@@ -116,9 +117,8 @@ namespace Google.Ads.GoogleAds.V10.Services
         public GoogleAdsServiceSettings Settings { get; set; }
 
         /// <summary>Creates a new builder with default settings.</summary>
-        public GoogleAdsServiceClientBuilder()
+        public GoogleAdsServiceClientBuilder() : base(GoogleAdsServiceClient.ServiceMetadata)
         {
-            UseJwtAccessWithScopes = GoogleAdsServiceClient.UseJwtAccessWithScopes;
         }
 
         partial void InterceptBuild(ref GoogleAdsServiceClient client);
@@ -145,29 +145,18 @@ namespace Google.Ads.GoogleAds.V10.Services
         {
             Validate();
             grpccore::CallInvoker callInvoker = CreateCallInvoker();
-            return GoogleAdsServiceClient.Create(callInvoker, Settings);
+            return GoogleAdsServiceClient.Create(callInvoker, Settings, Logger);
         }
 
         private async stt::Task<GoogleAdsServiceClient> BuildAsyncImpl(st::CancellationToken cancellationToken)
         {
             Validate();
             grpccore::CallInvoker callInvoker = await CreateCallInvokerAsync(cancellationToken).ConfigureAwait(false);
-            return GoogleAdsServiceClient.Create(callInvoker, Settings);
+            return GoogleAdsServiceClient.Create(callInvoker, Settings, Logger);
         }
-
-        /// <summary>Returns the endpoint for this builder type, used if no endpoint is otherwise specified.</summary>
-        protected override string GetDefaultEndpoint() => GoogleAdsServiceClient.DefaultEndpoint;
-
-        /// <summary>
-        /// Returns the default scopes for this builder type, used if no scopes are otherwise specified.
-        /// </summary>
-        protected override scg::IReadOnlyList<string> GetDefaultScopes() => GoogleAdsServiceClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
         protected override gaxgrpc::ChannelPool GetChannelPool() => GoogleAdsServiceClient.ChannelPool;
-
-        /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
-        protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
     }
 
     /// <summary>GoogleAdsService client wrapper, for convenient use.</summary>
@@ -192,19 +181,10 @@ namespace Google.Ads.GoogleAds.V10.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+        /// <summary>The service metadata associated with this client type.</summary>
+        public static gaxgrpc::ServiceMetadata ServiceMetadata { get; } = new gaxgrpc::ServiceMetadata(GoogleAdsService.Descriptor, DefaultEndpoint, DefaultScopes, true, gax::ApiTransports.Grpc, PackageApiMetadata.ApiMetadata);
 
-        internal static bool UseJwtAccessWithScopes
-        {
-            get
-            {
-                bool useJwtAccessWithScopes = true;
-                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
-                return useJwtAccessWithScopes;
-            }
-        }
-
-        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(ServiceMetadata);
 
         /// <summary>
         /// Asynchronously creates a <see cref="GoogleAdsServiceClient"/> using the default credentials, endpoint and
@@ -231,8 +211,9 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
         /// </param>
         /// <param name="settings">Optional <see cref="GoogleAdsServiceSettings"/>.</param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
         /// <returns>The created <see cref="GoogleAdsServiceClient"/>.</returns>
-        internal static GoogleAdsServiceClient Create(grpccore::CallInvoker callInvoker, GoogleAdsServiceSettings settings = null)
+        internal static GoogleAdsServiceClient Create(grpccore::CallInvoker callInvoker, GoogleAdsServiceSettings settings = null, mel::ILogger logger = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpcinter::Interceptor interceptor = settings?.Interceptor;
@@ -241,7 +222,7 @@ namespace Google.Ads.GoogleAds.V10.Services
                 callInvoker = grpcinter::CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
             GoogleAdsService.GoogleAdsServiceClient grpcClient = new GoogleAdsService.GoogleAdsServiceClient(callInvoker);
-            return new GoogleAdsServiceClientImpl(grpcClient, settings);
+            return new GoogleAdsServiceClientImpl(grpcClient, settings, logger);
         }
 
         /// <summary>
@@ -460,7 +441,7 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// 
         /// Atomicity makes error handling much easier. If you're making a series of
         /// changes and one fails, it can leave your account in an inconsistent state.
-        /// With atomicity, you either reach the desired state directly, or the request
+        /// With atomicity, you either reach the chosen state directly, or the request
         /// fails and you can retry.
         /// 
         /// ## Temp Resource Names
@@ -580,7 +561,7 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// 
         /// Atomicity makes error handling much easier. If you're making a series of
         /// changes and one fails, it can leave your account in an inconsistent state.
-        /// With atomicity, you either reach the desired state directly, or the request
+        /// With atomicity, you either reach the chosen state directly, or the request
         /// fails and you can retry.
         /// 
         /// ## Temp Resource Names
@@ -700,7 +681,7 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// 
         /// Atomicity makes error handling much easier. If you're making a series of
         /// changes and one fails, it can leave your account in an inconsistent state.
-        /// With atomicity, you either reach the desired state directly, or the request
+        /// With atomicity, you either reach the chosen state directly, or the request
         /// fails and you can retry.
         /// 
         /// ## Temp Resource Names
@@ -820,7 +801,7 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// 
         /// Atomicity makes error handling much easier. If you're making a series of
         /// changes and one fails, it can leave your account in an inconsistent state.
-        /// With atomicity, you either reach the desired state directly, or the request
+        /// With atomicity, you either reach the chosen state directly, or the request
         /// fails and you can retry.
         /// 
         /// ## Temp Resource Names
@@ -952,7 +933,7 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// 
         /// Atomicity makes error handling much easier. If you're making a series of
         /// changes and one fails, it can leave your account in an inconsistent state.
-        /// With atomicity, you either reach the desired state directly, or the request
+        /// With atomicity, you either reach the chosen state directly, or the request
         /// fails and you can retry.
         /// 
         /// ## Temp Resource Names
@@ -1084,7 +1065,7 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// 
         /// Atomicity makes error handling much easier. If you're making a series of
         /// changes and one fails, it can leave your account in an inconsistent state.
-        /// With atomicity, you either reach the desired state directly, or the request
+        /// With atomicity, you either reach the chosen state directly, or the request
         /// fails and you can retry.
         /// 
         /// ## Temp Resource Names
@@ -1207,18 +1188,19 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// </summary>
         /// <param name="grpcClient">The underlying gRPC client.</param>
         /// <param name="settings">The base <see cref="GoogleAdsServiceSettings"/> used within this client.</param>
-        public GoogleAdsServiceClientImpl(GoogleAdsService.GoogleAdsServiceClient grpcClient, GoogleAdsServiceSettings settings)
+        /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
+        public GoogleAdsServiceClientImpl(GoogleAdsService.GoogleAdsServiceClient grpcClient, GoogleAdsServiceSettings settings, mel::ILogger logger)
         {
             GrpcClient = grpcClient;
             GoogleAdsServiceSettings effectiveSettings = settings ?? GoogleAdsServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callSearch = clientHelper.BuildApiCall<SearchGoogleAdsRequest, SearchGoogleAdsResponse>(grpcClient.SearchAsync, grpcClient.Search, effectiveSettings.SearchSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            _callSearch = clientHelper.BuildApiCall<SearchGoogleAdsRequest, SearchGoogleAdsResponse>("Search", grpcClient.SearchAsync, grpcClient.Search, effectiveSettings.SearchSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callSearch);
             Modify_SearchApiCall(ref _callSearch);
-            _callSearchStream = clientHelper.BuildApiCall<SearchGoogleAdsStreamRequest, SearchGoogleAdsStreamResponse>(grpcClient.SearchStream, effectiveSettings.SearchStreamSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            _callSearchStream = clientHelper.BuildApiCall<SearchGoogleAdsStreamRequest, SearchGoogleAdsStreamResponse>("SearchStream", grpcClient.SearchStream, effectiveSettings.SearchStreamSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callSearchStream);
             Modify_SearchStreamApiCall(ref _callSearchStream);
-            _callMutate = clientHelper.BuildApiCall<MutateGoogleAdsRequest, MutateGoogleAdsResponse>(grpcClient.MutateAsync, grpcClient.Mutate, effectiveSettings.MutateSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            _callMutate = clientHelper.BuildApiCall<MutateGoogleAdsRequest, MutateGoogleAdsResponse>("Mutate", grpcClient.MutateAsync, grpcClient.Mutate, effectiveSettings.MutateSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutate);
             Modify_MutateApiCall(ref _callMutate);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);
@@ -1346,7 +1328,7 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// 
         /// Atomicity makes error handling much easier. If you're making a series of
         /// changes and one fails, it can leave your account in an inconsistent state.
-        /// With atomicity, you either reach the desired state directly, or the request
+        /// With atomicity, you either reach the chosen state directly, or the request
         /// fails and you can retry.
         /// 
         /// ## Temp Resource Names
@@ -1469,7 +1451,7 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// 
         /// Atomicity makes error handling much easier. If you're making a series of
         /// changes and one fails, it can leave your account in an inconsistent state.
-        /// With atomicity, you either reach the desired state directly, or the request
+        /// With atomicity, you either reach the chosen state directly, or the request
         /// fails and you can retry.
         /// 
         /// ## Temp Resource Names

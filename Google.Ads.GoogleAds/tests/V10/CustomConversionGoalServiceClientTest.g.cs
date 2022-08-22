@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagve = Google.Ads.GoogleAds.V10.Enums;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using grpccore = Grpc.Core;
@@ -50,7 +51,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateCustomConversionGoals(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            CustomConversionGoalServiceClient client = new CustomConversionGoalServiceClientImpl(mockGrpcClient.Object, null);
+            CustomConversionGoalServiceClient client = new CustomConversionGoalServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomConversionGoalsResponse response = client.MutateCustomConversionGoals(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -78,7 +79,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateCustomConversionGoalsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomConversionGoalsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            CustomConversionGoalServiceClient client = new CustomConversionGoalServiceClientImpl(mockGrpcClient.Object, null);
+            CustomConversionGoalServiceClient client = new CustomConversionGoalServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomConversionGoalsResponse responseCallSettings = await client.MutateCustomConversionGoalsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateCustomConversionGoalsResponse responseCancellationToken = await client.MutateCustomConversionGoalsAsync(request, st::CancellationToken.None);
@@ -106,7 +107,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateCustomConversionGoals(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            CustomConversionGoalServiceClient client = new CustomConversionGoalServiceClientImpl(mockGrpcClient.Object, null);
+            CustomConversionGoalServiceClient client = new CustomConversionGoalServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomConversionGoalsResponse response = client.MutateCustomConversionGoals(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -132,7 +133,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateCustomConversionGoalsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomConversionGoalsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            CustomConversionGoalServiceClient client = new CustomConversionGoalServiceClientImpl(mockGrpcClient.Object, null);
+            CustomConversionGoalServiceClient client = new CustomConversionGoalServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomConversionGoalsResponse responseCallSettings = await client.MutateCustomConversionGoalsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateCustomConversionGoalsResponse responseCancellationToken = await client.MutateCustomConversionGoalsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);

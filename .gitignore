@@ -39,3 +39,7 @@ msbuild.wrn
 
 # Nano stack dump
 nano.exe.stackdump
+
+# Credentials configuration files
+Google.Ads.GoogleAds.Core/src/App.config
+Google.Ads.GoogleAds/examples/Authentication/AuthenticateInAspNetWebApplication/Web.config

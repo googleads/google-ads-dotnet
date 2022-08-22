@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagve = Google.Ads.GoogleAds.V11.Enums;
 using gagvr = Google.Ads.GoogleAds.V11.Resources;
 using gaxgrpc = Google.Api.Gax.Grpc;
@@ -48,7 +49,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.ListInvoices(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            InvoiceServiceClient client = new InvoiceServiceClientImpl(mockGrpcClient.Object, null);
+            InvoiceServiceClient client = new InvoiceServiceClientImpl(mockGrpcClient.Object, null, null);
             ListInvoicesResponse response = client.ListInvoices(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -73,7 +74,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.ListInvoicesAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<ListInvoicesResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            InvoiceServiceClient client = new InvoiceServiceClientImpl(mockGrpcClient.Object, null);
+            InvoiceServiceClient client = new InvoiceServiceClientImpl(mockGrpcClient.Object, null, null);
             ListInvoicesResponse responseCallSettings = await client.ListInvoicesAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             ListInvoicesResponse responseCancellationToken = await client.ListInvoicesAsync(request, st::CancellationToken.None);
@@ -100,7 +101,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.ListInvoices(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            InvoiceServiceClient client = new InvoiceServiceClientImpl(mockGrpcClient.Object, null);
+            InvoiceServiceClient client = new InvoiceServiceClientImpl(mockGrpcClient.Object, null, null);
             ListInvoicesResponse response = client.ListInvoices(request.CustomerId, request.BillingSetup, request.IssueYear, request.IssueMonth);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -125,7 +126,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.ListInvoicesAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<ListInvoicesResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            InvoiceServiceClient client = new InvoiceServiceClientImpl(mockGrpcClient.Object, null);
+            InvoiceServiceClient client = new InvoiceServiceClientImpl(mockGrpcClient.Object, null, null);
             ListInvoicesResponse responseCallSettings = await client.ListInvoicesAsync(request.CustomerId, request.BillingSetup, request.IssueYear, request.IssueMonth, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             ListInvoicesResponse responseCancellationToken = await client.ListInvoicesAsync(request.CustomerId, request.BillingSetup, request.IssueYear, request.IssueMonth, st::CancellationToken.None);

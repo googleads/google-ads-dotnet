@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gaxgrpc = Google.Api.Gax.Grpc;
 using gr = Google.Rpc;
 using grpccore = Grpc.Core;
@@ -51,7 +52,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateKeywordPlanAdGroups(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            KeywordPlanAdGroupServiceClient client = new KeywordPlanAdGroupServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanAdGroupServiceClient client = new KeywordPlanAdGroupServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateKeywordPlanAdGroupsResponse response = client.MutateKeywordPlanAdGroups(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -80,7 +81,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateKeywordPlanAdGroupsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateKeywordPlanAdGroupsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            KeywordPlanAdGroupServiceClient client = new KeywordPlanAdGroupServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanAdGroupServiceClient client = new KeywordPlanAdGroupServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateKeywordPlanAdGroupsResponse responseCallSettings = await client.MutateKeywordPlanAdGroupsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateKeywordPlanAdGroupsResponse responseCancellationToken = await client.MutateKeywordPlanAdGroupsAsync(request, st::CancellationToken.None);
@@ -109,7 +110,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateKeywordPlanAdGroups(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            KeywordPlanAdGroupServiceClient client = new KeywordPlanAdGroupServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanAdGroupServiceClient client = new KeywordPlanAdGroupServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateKeywordPlanAdGroupsResponse response = client.MutateKeywordPlanAdGroups(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -136,7 +137,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateKeywordPlanAdGroupsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateKeywordPlanAdGroupsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            KeywordPlanAdGroupServiceClient client = new KeywordPlanAdGroupServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanAdGroupServiceClient client = new KeywordPlanAdGroupServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateKeywordPlanAdGroupsResponse responseCallSettings = await client.MutateKeywordPlanAdGroupsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateKeywordPlanAdGroupsResponse responseCancellationToken = await client.MutateKeywordPlanAdGroupsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);

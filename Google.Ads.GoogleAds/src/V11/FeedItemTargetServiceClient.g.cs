@@ -14,12 +14,13 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
-using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using proto = Google.Protobuf;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
+using mel = Microsoft.Extensions.Logging;
 using sys = System;
 using scg = System.Collections.Generic;
 using sco = System.Collections.ObjectModel;
@@ -88,9 +89,8 @@ namespace Google.Ads.GoogleAds.V11.Services
         public FeedItemTargetServiceSettings Settings { get; set; }
 
         /// <summary>Creates a new builder with default settings.</summary>
-        public FeedItemTargetServiceClientBuilder()
+        public FeedItemTargetServiceClientBuilder() : base(FeedItemTargetServiceClient.ServiceMetadata)
         {
-            UseJwtAccessWithScopes = FeedItemTargetServiceClient.UseJwtAccessWithScopes;
         }
 
         partial void InterceptBuild(ref FeedItemTargetServiceClient client);
@@ -117,29 +117,18 @@ namespace Google.Ads.GoogleAds.V11.Services
         {
             Validate();
             grpccore::CallInvoker callInvoker = CreateCallInvoker();
-            return FeedItemTargetServiceClient.Create(callInvoker, Settings);
+            return FeedItemTargetServiceClient.Create(callInvoker, Settings, Logger);
         }
 
         private async stt::Task<FeedItemTargetServiceClient> BuildAsyncImpl(st::CancellationToken cancellationToken)
         {
             Validate();
             grpccore::CallInvoker callInvoker = await CreateCallInvokerAsync(cancellationToken).ConfigureAwait(false);
-            return FeedItemTargetServiceClient.Create(callInvoker, Settings);
+            return FeedItemTargetServiceClient.Create(callInvoker, Settings, Logger);
         }
-
-        /// <summary>Returns the endpoint for this builder type, used if no endpoint is otherwise specified.</summary>
-        protected override string GetDefaultEndpoint() => FeedItemTargetServiceClient.DefaultEndpoint;
-
-        /// <summary>
-        /// Returns the default scopes for this builder type, used if no scopes are otherwise specified.
-        /// </summary>
-        protected override scg::IReadOnlyList<string> GetDefaultScopes() => FeedItemTargetServiceClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
         protected override gaxgrpc::ChannelPool GetChannelPool() => FeedItemTargetServiceClient.ChannelPool;
-
-        /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
-        protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
     }
 
     /// <summary>FeedItemTargetService client wrapper, for convenient use.</summary>
@@ -164,19 +153,10 @@ namespace Google.Ads.GoogleAds.V11.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+        /// <summary>The service metadata associated with this client type.</summary>
+        public static gaxgrpc::ServiceMetadata ServiceMetadata { get; } = new gaxgrpc::ServiceMetadata(FeedItemTargetService.Descriptor, DefaultEndpoint, DefaultScopes, true, gax::ApiTransports.Grpc, PackageApiMetadata.ApiMetadata);
 
-        internal static bool UseJwtAccessWithScopes
-        {
-            get
-            {
-                bool useJwtAccessWithScopes = true;
-                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
-                return useJwtAccessWithScopes;
-            }
-        }
-
-        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(ServiceMetadata);
 
         /// <summary>
         /// Asynchronously creates a <see cref="FeedItemTargetServiceClient"/> using the default credentials, endpoint
@@ -206,8 +186,9 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
         /// </param>
         /// <param name="settings">Optional <see cref="FeedItemTargetServiceSettings"/>.</param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
         /// <returns>The created <see cref="FeedItemTargetServiceClient"/>.</returns>
-        internal static FeedItemTargetServiceClient Create(grpccore::CallInvoker callInvoker, FeedItemTargetServiceSettings settings = null)
+        internal static FeedItemTargetServiceClient Create(grpccore::CallInvoker callInvoker, FeedItemTargetServiceSettings settings = null, mel::ILogger logger = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpcinter::Interceptor interceptor = settings?.Interceptor;
@@ -216,7 +197,7 @@ namespace Google.Ads.GoogleAds.V11.Services
                 callInvoker = grpcinter::CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
             FeedItemTargetService.FeedItemTargetServiceClient grpcClient = new FeedItemTargetService.FeedItemTargetServiceClient(callInvoker);
-            return new FeedItemTargetServiceClientImpl(grpcClient, settings);
+            return new FeedItemTargetServiceClientImpl(grpcClient, settings, logger);
         }
 
         /// <summary>
@@ -459,12 +440,13 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// </summary>
         /// <param name="grpcClient">The underlying gRPC client.</param>
         /// <param name="settings">The base <see cref="FeedItemTargetServiceSettings"/> used within this client.</param>
-        public FeedItemTargetServiceClientImpl(FeedItemTargetService.FeedItemTargetServiceClient grpcClient, FeedItemTargetServiceSettings settings)
+        /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
+        public FeedItemTargetServiceClientImpl(FeedItemTargetService.FeedItemTargetServiceClient grpcClient, FeedItemTargetServiceSettings settings, mel::ILogger logger)
         {
             GrpcClient = grpcClient;
             FeedItemTargetServiceSettings effectiveSettings = settings ?? FeedItemTargetServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callMutateFeedItemTargets = clientHelper.BuildApiCall<MutateFeedItemTargetsRequest, MutateFeedItemTargetsResponse>(grpcClient.MutateFeedItemTargetsAsync, grpcClient.MutateFeedItemTargets, effectiveSettings.MutateFeedItemTargetsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            _callMutateFeedItemTargets = clientHelper.BuildApiCall<MutateFeedItemTargetsRequest, MutateFeedItemTargetsResponse>("MutateFeedItemTargets", grpcClient.MutateFeedItemTargetsAsync, grpcClient.MutateFeedItemTargets, effectiveSettings.MutateFeedItemTargetsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateFeedItemTargets);
             Modify_MutateFeedItemTargetsApiCall(ref _callMutateFeedItemTargets);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

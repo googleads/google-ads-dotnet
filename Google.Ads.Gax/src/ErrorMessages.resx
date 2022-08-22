@@ -129,6 +129,10 @@
     <value>Failed to load JSON secrets file for service account configuration. See inner exception for details.</value>
     <comment>Used by AdsConfig class when trying to load various settings from the JSON secrets file when using OAuth2 service account flow.</comment>
   </data>
+  <data name="GrpcNetClientNotSupported" xml:space="preserve">
+    <value>Grpc.Net.Client is not supported on this platform. See https://docs.microsoft.com/en-us/aspnet/core/grpc/supported-platforms?view=aspnetcore-6.0 for requirements.</value>
+    <comment>Used by AdsChannel.cs when trying to choose Grpc.Net.Client as the  transport.</comment>
+  </data>
   <data name="PrivateKeyIsMissingInJsonFile" xml:space="preserve">
     <value>Required key 'private_key' is missing in JSON secrets file.</value>
     <comment>Used by AdsConfig class when trying to load various settings from the JSON secrets file when using OAuth2 service account flow. Thrown if private_key key is missing in the JSON file.</comment>

@@ -14,16 +14,17 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagvr = Google.Ads.GoogleAds.V10.Resources;
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
-using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using lro = Google.LongRunning;
 using proto = Google.Protobuf;
 using wkt = Google.Protobuf.WellKnownTypes;
 using gr = Google.Rpc;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
+using mel = Microsoft.Extensions.Logging;
 using sys = System;
 using sc = System.Collections;
 using scg = System.Collections.Generic;
@@ -241,9 +242,8 @@ namespace Google.Ads.GoogleAds.V10.Services
         public ExperimentServiceSettings Settings { get; set; }
 
         /// <summary>Creates a new builder with default settings.</summary>
-        public ExperimentServiceClientBuilder()
+        public ExperimentServiceClientBuilder() : base(ExperimentServiceClient.ServiceMetadata)
         {
-            UseJwtAccessWithScopes = ExperimentServiceClient.UseJwtAccessWithScopes;
         }
 
         partial void InterceptBuild(ref ExperimentServiceClient client);
@@ -270,29 +270,18 @@ namespace Google.Ads.GoogleAds.V10.Services
         {
             Validate();
             grpccore::CallInvoker callInvoker = CreateCallInvoker();
-            return ExperimentServiceClient.Create(callInvoker, Settings);
+            return ExperimentServiceClient.Create(callInvoker, Settings, Logger);
         }
 
         private async stt::Task<ExperimentServiceClient> BuildAsyncImpl(st::CancellationToken cancellationToken)
         {
             Validate();
             grpccore::CallInvoker callInvoker = await CreateCallInvokerAsync(cancellationToken).ConfigureAwait(false);
-            return ExperimentServiceClient.Create(callInvoker, Settings);
+            return ExperimentServiceClient.Create(callInvoker, Settings, Logger);
         }
-
-        /// <summary>Returns the endpoint for this builder type, used if no endpoint is otherwise specified.</summary>
-        protected override string GetDefaultEndpoint() => ExperimentServiceClient.DefaultEndpoint;
-
-        /// <summary>
-        /// Returns the default scopes for this builder type, used if no scopes are otherwise specified.
-        /// </summary>
-        protected override scg::IReadOnlyList<string> GetDefaultScopes() => ExperimentServiceClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
         protected override gaxgrpc::ChannelPool GetChannelPool() => ExperimentServiceClient.ChannelPool;
-
-        /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
-        protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
     }
 
     /// <summary>ExperimentService client wrapper, for convenient use.</summary>
@@ -317,19 +306,10 @@ namespace Google.Ads.GoogleAds.V10.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+        /// <summary>The service metadata associated with this client type.</summary>
+        public static gaxgrpc::ServiceMetadata ServiceMetadata { get; } = new gaxgrpc::ServiceMetadata(ExperimentService.Descriptor, DefaultEndpoint, DefaultScopes, true, gax::ApiTransports.Grpc, PackageApiMetadata.ApiMetadata);
 
-        internal static bool UseJwtAccessWithScopes
-        {
-            get
-            {
-                bool useJwtAccessWithScopes = true;
-                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
-                return useJwtAccessWithScopes;
-            }
-        }
-
-        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(ServiceMetadata);
 
         /// <summary>
         /// Asynchronously creates a <see cref="ExperimentServiceClient"/> using the default credentials, endpoint and
@@ -356,8 +336,9 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
         /// </param>
         /// <param name="settings">Optional <see cref="ExperimentServiceSettings"/>.</param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
         /// <returns>The created <see cref="ExperimentServiceClient"/>.</returns>
-        internal static ExperimentServiceClient Create(grpccore::CallInvoker callInvoker, ExperimentServiceSettings settings = null)
+        internal static ExperimentServiceClient Create(grpccore::CallInvoker callInvoker, ExperimentServiceSettings settings = null, mel::ILogger logger = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpcinter::Interceptor interceptor = settings?.Interceptor;
@@ -366,7 +347,7 @@ namespace Google.Ads.GoogleAds.V10.Services
                 callInvoker = grpcinter::CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
             ExperimentService.ExperimentServiceClient grpcClient = new ExperimentService.ExperimentServiceClient(callInvoker);
-            return new ExperimentServiceClientImpl(grpcClient, settings);
+            return new ExperimentServiceClientImpl(grpcClient, settings, logger);
         }
 
         /// <summary>
@@ -1775,29 +1756,30 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// </summary>
         /// <param name="grpcClient">The underlying gRPC client.</param>
         /// <param name="settings">The base <see cref="ExperimentServiceSettings"/> used within this client.</param>
-        public ExperimentServiceClientImpl(ExperimentService.ExperimentServiceClient grpcClient, ExperimentServiceSettings settings)
+        /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
+        public ExperimentServiceClientImpl(ExperimentService.ExperimentServiceClient grpcClient, ExperimentServiceSettings settings, mel::ILogger logger)
         {
             GrpcClient = grpcClient;
             ExperimentServiceSettings effectiveSettings = settings ?? ExperimentServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            ScheduleExperimentOperationsClient = new lro::OperationsClientImpl(grpcClient.CreateOperationsClient(), effectiveSettings.ScheduleExperimentOperationsSettings);
-            PromoteExperimentOperationsClient = new lro::OperationsClientImpl(grpcClient.CreateOperationsClient(), effectiveSettings.PromoteExperimentOperationsSettings);
-            _callMutateExperiments = clientHelper.BuildApiCall<MutateExperimentsRequest, MutateExperimentsResponse>(grpcClient.MutateExperimentsAsync, grpcClient.MutateExperiments, effectiveSettings.MutateExperimentsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            ScheduleExperimentOperationsClient = new lro::OperationsClientImpl(grpcClient.CreateOperationsClient(), effectiveSettings.ScheduleExperimentOperationsSettings, logger);
+            PromoteExperimentOperationsClient = new lro::OperationsClientImpl(grpcClient.CreateOperationsClient(), effectiveSettings.PromoteExperimentOperationsSettings, logger);
+            _callMutateExperiments = clientHelper.BuildApiCall<MutateExperimentsRequest, MutateExperimentsResponse>("MutateExperiments", grpcClient.MutateExperimentsAsync, grpcClient.MutateExperiments, effectiveSettings.MutateExperimentsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateExperiments);
             Modify_MutateExperimentsApiCall(ref _callMutateExperiments);
-            _callEndExperiment = clientHelper.BuildApiCall<EndExperimentRequest, wkt::Empty>(grpcClient.EndExperimentAsync, grpcClient.EndExperiment, effectiveSettings.EndExperimentSettings).WithGoogleRequestParam("experiment", request => request.Experiment);
+            _callEndExperiment = clientHelper.BuildApiCall<EndExperimentRequest, wkt::Empty>("EndExperiment", grpcClient.EndExperimentAsync, grpcClient.EndExperiment, effectiveSettings.EndExperimentSettings).WithGoogleRequestParam("experiment", request => request.Experiment);
             Modify_ApiCall(ref _callEndExperiment);
             Modify_EndExperimentApiCall(ref _callEndExperiment);
-            _callListExperimentAsyncErrors = clientHelper.BuildApiCall<ListExperimentAsyncErrorsRequest, ListExperimentAsyncErrorsResponse>(grpcClient.ListExperimentAsyncErrorsAsync, grpcClient.ListExperimentAsyncErrors, effectiveSettings.ListExperimentAsyncErrorsSettings).WithGoogleRequestParam("resource_name", request => request.ResourceName);
+            _callListExperimentAsyncErrors = clientHelper.BuildApiCall<ListExperimentAsyncErrorsRequest, ListExperimentAsyncErrorsResponse>("ListExperimentAsyncErrors", grpcClient.ListExperimentAsyncErrorsAsync, grpcClient.ListExperimentAsyncErrors, effectiveSettings.ListExperimentAsyncErrorsSettings).WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callListExperimentAsyncErrors);
             Modify_ListExperimentAsyncErrorsApiCall(ref _callListExperimentAsyncErrors);
-            _callGraduateExperiment = clientHelper.BuildApiCall<GraduateExperimentRequest, wkt::Empty>(grpcClient.GraduateExperimentAsync, grpcClient.GraduateExperiment, effectiveSettings.GraduateExperimentSettings).WithGoogleRequestParam("experiment", request => request.Experiment);
+            _callGraduateExperiment = clientHelper.BuildApiCall<GraduateExperimentRequest, wkt::Empty>("GraduateExperiment", grpcClient.GraduateExperimentAsync, grpcClient.GraduateExperiment, effectiveSettings.GraduateExperimentSettings).WithGoogleRequestParam("experiment", request => request.Experiment);
             Modify_ApiCall(ref _callGraduateExperiment);
             Modify_GraduateExperimentApiCall(ref _callGraduateExperiment);
-            _callScheduleExperiment = clientHelper.BuildApiCall<ScheduleExperimentRequest, lro::Operation>(grpcClient.ScheduleExperimentAsync, grpcClient.ScheduleExperiment, effectiveSettings.ScheduleExperimentSettings).WithGoogleRequestParam("resource_name", request => request.ResourceName);
+            _callScheduleExperiment = clientHelper.BuildApiCall<ScheduleExperimentRequest, lro::Operation>("ScheduleExperiment", grpcClient.ScheduleExperimentAsync, grpcClient.ScheduleExperiment, effectiveSettings.ScheduleExperimentSettings).WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callScheduleExperiment);
             Modify_ScheduleExperimentApiCall(ref _callScheduleExperiment);
-            _callPromoteExperiment = clientHelper.BuildApiCall<PromoteExperimentRequest, lro::Operation>(grpcClient.PromoteExperimentAsync, grpcClient.PromoteExperiment, effectiveSettings.PromoteExperimentSettings).WithGoogleRequestParam("resource_name", request => request.ResourceName);
+            _callPromoteExperiment = clientHelper.BuildApiCall<PromoteExperimentRequest, lro::Operation>("PromoteExperiment", grpcClient.PromoteExperimentAsync, grpcClient.PromoteExperiment, effectiveSettings.PromoteExperimentSettings).WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callPromoteExperiment);
             Modify_PromoteExperimentApiCall(ref _callPromoteExperiment);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

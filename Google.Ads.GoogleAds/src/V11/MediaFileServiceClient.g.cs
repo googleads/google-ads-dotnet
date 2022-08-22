@@ -14,12 +14,13 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
-using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using proto = Google.Protobuf;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
+using mel = Microsoft.Extensions.Logging;
 using sys = System;
 using scg = System.Collections.Generic;
 using sco = System.Collections.ObjectModel;
@@ -85,9 +86,8 @@ namespace Google.Ads.GoogleAds.V11.Services
         public MediaFileServiceSettings Settings { get; set; }
 
         /// <summary>Creates a new builder with default settings.</summary>
-        public MediaFileServiceClientBuilder()
+        public MediaFileServiceClientBuilder() : base(MediaFileServiceClient.ServiceMetadata)
         {
-            UseJwtAccessWithScopes = MediaFileServiceClient.UseJwtAccessWithScopes;
         }
 
         partial void InterceptBuild(ref MediaFileServiceClient client);
@@ -114,29 +114,18 @@ namespace Google.Ads.GoogleAds.V11.Services
         {
             Validate();
             grpccore::CallInvoker callInvoker = CreateCallInvoker();
-            return MediaFileServiceClient.Create(callInvoker, Settings);
+            return MediaFileServiceClient.Create(callInvoker, Settings, Logger);
         }
 
         private async stt::Task<MediaFileServiceClient> BuildAsyncImpl(st::CancellationToken cancellationToken)
         {
             Validate();
             grpccore::CallInvoker callInvoker = await CreateCallInvokerAsync(cancellationToken).ConfigureAwait(false);
-            return MediaFileServiceClient.Create(callInvoker, Settings);
+            return MediaFileServiceClient.Create(callInvoker, Settings, Logger);
         }
-
-        /// <summary>Returns the endpoint for this builder type, used if no endpoint is otherwise specified.</summary>
-        protected override string GetDefaultEndpoint() => MediaFileServiceClient.DefaultEndpoint;
-
-        /// <summary>
-        /// Returns the default scopes for this builder type, used if no scopes are otherwise specified.
-        /// </summary>
-        protected override scg::IReadOnlyList<string> GetDefaultScopes() => MediaFileServiceClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
         protected override gaxgrpc::ChannelPool GetChannelPool() => MediaFileServiceClient.ChannelPool;
-
-        /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
-        protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
     }
 
     /// <summary>MediaFileService client wrapper, for convenient use.</summary>
@@ -161,19 +150,10 @@ namespace Google.Ads.GoogleAds.V11.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+        /// <summary>The service metadata associated with this client type.</summary>
+        public static gaxgrpc::ServiceMetadata ServiceMetadata { get; } = new gaxgrpc::ServiceMetadata(MediaFileService.Descriptor, DefaultEndpoint, DefaultScopes, true, gax::ApiTransports.Grpc, PackageApiMetadata.ApiMetadata);
 
-        internal static bool UseJwtAccessWithScopes
-        {
-            get
-            {
-                bool useJwtAccessWithScopes = true;
-                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
-                return useJwtAccessWithScopes;
-            }
-        }
-
-        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(ServiceMetadata);
 
         /// <summary>
         /// Asynchronously creates a <see cref="MediaFileServiceClient"/> using the default credentials, endpoint and
@@ -200,8 +180,9 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
         /// </param>
         /// <param name="settings">Optional <see cref="MediaFileServiceSettings"/>.</param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
         /// <returns>The created <see cref="MediaFileServiceClient"/>.</returns>
-        internal static MediaFileServiceClient Create(grpccore::CallInvoker callInvoker, MediaFileServiceSettings settings = null)
+        internal static MediaFileServiceClient Create(grpccore::CallInvoker callInvoker, MediaFileServiceSettings settings = null, mel::ILogger logger = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpcinter::Interceptor interceptor = settings?.Interceptor;
@@ -210,7 +191,7 @@ namespace Google.Ads.GoogleAds.V11.Services
                 callInvoker = grpcinter::CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
             MediaFileService.MediaFileServiceClient grpcClient = new MediaFileService.MediaFileServiceClient(callInvoker);
-            return new MediaFileServiceClientImpl(grpcClient, settings);
+            return new MediaFileServiceClientImpl(grpcClient, settings, logger);
         }
 
         /// <summary>
@@ -464,12 +445,13 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// </summary>
         /// <param name="grpcClient">The underlying gRPC client.</param>
         /// <param name="settings">The base <see cref="MediaFileServiceSettings"/> used within this client.</param>
-        public MediaFileServiceClientImpl(MediaFileService.MediaFileServiceClient grpcClient, MediaFileServiceSettings settings)
+        /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
+        public MediaFileServiceClientImpl(MediaFileService.MediaFileServiceClient grpcClient, MediaFileServiceSettings settings, mel::ILogger logger)
         {
             GrpcClient = grpcClient;
             MediaFileServiceSettings effectiveSettings = settings ?? MediaFileServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callMutateMediaFiles = clientHelper.BuildApiCall<MutateMediaFilesRequest, MutateMediaFilesResponse>(grpcClient.MutateMediaFilesAsync, grpcClient.MutateMediaFiles, effectiveSettings.MutateMediaFilesSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            _callMutateMediaFiles = clientHelper.BuildApiCall<MutateMediaFilesRequest, MutateMediaFilesResponse>("MutateMediaFiles", grpcClient.MutateMediaFilesAsync, grpcClient.MutateMediaFiles, effectiveSettings.MutateMediaFilesSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateMediaFiles);
             Modify_MutateMediaFilesApiCall(ref _callMutateMediaFiles);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

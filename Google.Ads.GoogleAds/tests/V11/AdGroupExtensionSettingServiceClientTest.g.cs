@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gaxgrpc = Google.Api.Gax.Grpc;
 using gr = Google.Rpc;
 using grpccore = Grpc.Core;
@@ -51,7 +52,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateAdGroupExtensionSettings(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            AdGroupExtensionSettingServiceClient client = new AdGroupExtensionSettingServiceClientImpl(mockGrpcClient.Object, null);
+            AdGroupExtensionSettingServiceClient client = new AdGroupExtensionSettingServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAdGroupExtensionSettingsResponse response = client.MutateAdGroupExtensionSettings(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -80,7 +81,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateAdGroupExtensionSettingsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAdGroupExtensionSettingsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            AdGroupExtensionSettingServiceClient client = new AdGroupExtensionSettingServiceClientImpl(mockGrpcClient.Object, null);
+            AdGroupExtensionSettingServiceClient client = new AdGroupExtensionSettingServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAdGroupExtensionSettingsResponse responseCallSettings = await client.MutateAdGroupExtensionSettingsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateAdGroupExtensionSettingsResponse responseCancellationToken = await client.MutateAdGroupExtensionSettingsAsync(request, st::CancellationToken.None);
@@ -109,7 +110,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateAdGroupExtensionSettings(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            AdGroupExtensionSettingServiceClient client = new AdGroupExtensionSettingServiceClientImpl(mockGrpcClient.Object, null);
+            AdGroupExtensionSettingServiceClient client = new AdGroupExtensionSettingServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAdGroupExtensionSettingsResponse response = client.MutateAdGroupExtensionSettings(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -136,7 +137,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateAdGroupExtensionSettingsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAdGroupExtensionSettingsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            AdGroupExtensionSettingServiceClient client = new AdGroupExtensionSettingServiceClientImpl(mockGrpcClient.Object, null);
+            AdGroupExtensionSettingServiceClient client = new AdGroupExtensionSettingServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAdGroupExtensionSettingsResponse responseCallSettings = await client.MutateAdGroupExtensionSettingsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateAdGroupExtensionSettingsResponse responseCancellationToken = await client.MutateAdGroupExtensionSettingsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);

@@ -14,12 +14,13 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
-using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using proto = Google.Protobuf;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
+using mel = Microsoft.Extensions.Logging;
 using sys = System;
 using scg = System.Collections.Generic;
 using sco = System.Collections.ObjectModel;
@@ -85,9 +86,8 @@ namespace Google.Ads.GoogleAds.V11.Services
         public UserDataServiceSettings Settings { get; set; }
 
         /// <summary>Creates a new builder with default settings.</summary>
-        public UserDataServiceClientBuilder()
+        public UserDataServiceClientBuilder() : base(UserDataServiceClient.ServiceMetadata)
         {
-            UseJwtAccessWithScopes = UserDataServiceClient.UseJwtAccessWithScopes;
         }
 
         partial void InterceptBuild(ref UserDataServiceClient client);
@@ -114,39 +114,28 @@ namespace Google.Ads.GoogleAds.V11.Services
         {
             Validate();
             grpccore::CallInvoker callInvoker = CreateCallInvoker();
-            return UserDataServiceClient.Create(callInvoker, Settings);
+            return UserDataServiceClient.Create(callInvoker, Settings, Logger);
         }
 
         private async stt::Task<UserDataServiceClient> BuildAsyncImpl(st::CancellationToken cancellationToken)
         {
             Validate();
             grpccore::CallInvoker callInvoker = await CreateCallInvokerAsync(cancellationToken).ConfigureAwait(false);
-            return UserDataServiceClient.Create(callInvoker, Settings);
+            return UserDataServiceClient.Create(callInvoker, Settings, Logger);
         }
-
-        /// <summary>Returns the endpoint for this builder type, used if no endpoint is otherwise specified.</summary>
-        protected override string GetDefaultEndpoint() => UserDataServiceClient.DefaultEndpoint;
-
-        /// <summary>
-        /// Returns the default scopes for this builder type, used if no scopes are otherwise specified.
-        /// </summary>
-        protected override scg::IReadOnlyList<string> GetDefaultScopes() => UserDataServiceClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
         protected override gaxgrpc::ChannelPool GetChannelPool() => UserDataServiceClient.ChannelPool;
-
-        /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
-        protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
     }
 
     /// <summary>UserDataService client wrapper, for convenient use.</summary>
     /// <remarks>
     /// Service to manage user data uploads.
-    /// Any uploads made to a Customer Match list via this service will be eligible
-    /// for matching as per the customer matching process. Please see
+    /// Any uploads made to a Customer Match list through this service will be
+    /// eligible for matching as per the customer matching process. See
     /// https://support.google.com/google-ads/answer/7474263. However, the uploads
-    /// made via this service will not be visible under the 'Segment members' section
-    /// for the Customer Match List in the Google Ads UI.
+    /// made through this service will not be visible under the 'Segment members'
+    /// section for the Customer Match List in the Google Ads UI.
     /// </remarks>
     public abstract partial class UserDataServiceClient
     {
@@ -166,19 +155,10 @@ namespace Google.Ads.GoogleAds.V11.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+        /// <summary>The service metadata associated with this client type.</summary>
+        public static gaxgrpc::ServiceMetadata ServiceMetadata { get; } = new gaxgrpc::ServiceMetadata(UserDataService.Descriptor, DefaultEndpoint, DefaultScopes, true, gax::ApiTransports.Grpc, PackageApiMetadata.ApiMetadata);
 
-        internal static bool UseJwtAccessWithScopes
-        {
-            get
-            {
-                bool useJwtAccessWithScopes = true;
-                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
-                return useJwtAccessWithScopes;
-            }
-        }
-
-        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(ServiceMetadata);
 
         /// <summary>
         /// Asynchronously creates a <see cref="UserDataServiceClient"/> using the default credentials, endpoint and
@@ -205,8 +185,9 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
         /// </param>
         /// <param name="settings">Optional <see cref="UserDataServiceSettings"/>.</param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
         /// <returns>The created <see cref="UserDataServiceClient"/>.</returns>
-        internal static UserDataServiceClient Create(grpccore::CallInvoker callInvoker, UserDataServiceSettings settings = null)
+        internal static UserDataServiceClient Create(grpccore::CallInvoker callInvoker, UserDataServiceSettings settings = null, mel::ILogger logger = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpcinter::Interceptor interceptor = settings?.Interceptor;
@@ -215,7 +196,7 @@ namespace Google.Ads.GoogleAds.V11.Services
                 callInvoker = grpcinter::CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
             UserDataService.UserDataServiceClient grpcClient = new UserDataService.UserDataServiceClient(callInvoker);
-            return new UserDataServiceClientImpl(grpcClient, settings);
+            return new UserDataServiceClientImpl(grpcClient, settings, logger);
         }
 
         /// <summary>
@@ -304,11 +285,11 @@ namespace Google.Ads.GoogleAds.V11.Services
     /// <summary>UserDataService client wrapper implementation, for convenient use.</summary>
     /// <remarks>
     /// Service to manage user data uploads.
-    /// Any uploads made to a Customer Match list via this service will be eligible
-    /// for matching as per the customer matching process. Please see
+    /// Any uploads made to a Customer Match list through this service will be
+    /// eligible for matching as per the customer matching process. See
     /// https://support.google.com/google-ads/answer/7474263. However, the uploads
-    /// made via this service will not be visible under the 'Segment members' section
-    /// for the Customer Match List in the Google Ads UI.
+    /// made through this service will not be visible under the 'Segment members'
+    /// section for the Customer Match List in the Google Ads UI.
     /// </remarks>
     public sealed partial class UserDataServiceClientImpl : UserDataServiceClient
     {
@@ -319,12 +300,13 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// </summary>
         /// <param name="grpcClient">The underlying gRPC client.</param>
         /// <param name="settings">The base <see cref="UserDataServiceSettings"/> used within this client.</param>
-        public UserDataServiceClientImpl(UserDataService.UserDataServiceClient grpcClient, UserDataServiceSettings settings)
+        /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
+        public UserDataServiceClientImpl(UserDataService.UserDataServiceClient grpcClient, UserDataServiceSettings settings, mel::ILogger logger)
         {
             GrpcClient = grpcClient;
             UserDataServiceSettings effectiveSettings = settings ?? UserDataServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callUploadUserData = clientHelper.BuildApiCall<UploadUserDataRequest, UploadUserDataResponse>(grpcClient.UploadUserDataAsync, grpcClient.UploadUserData, effectiveSettings.UploadUserDataSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            _callUploadUserData = clientHelper.BuildApiCall<UploadUserDataRequest, UploadUserDataResponse>("UploadUserData", grpcClient.UploadUserDataAsync, grpcClient.UploadUserData, effectiveSettings.UploadUserDataSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callUploadUserData);
             Modify_UploadUserDataApiCall(ref _callUploadUserData);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

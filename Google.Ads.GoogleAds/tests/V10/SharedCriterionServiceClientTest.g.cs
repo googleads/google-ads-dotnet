@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagve = Google.Ads.GoogleAds.V10.Enums;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using gr = Google.Rpc;
@@ -53,7 +54,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateSharedCriteria(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            SharedCriterionServiceClient client = new SharedCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            SharedCriterionServiceClient client = new SharedCriterionServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateSharedCriteriaResponse response = client.MutateSharedCriteria(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -83,7 +84,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateSharedCriteriaAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateSharedCriteriaResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            SharedCriterionServiceClient client = new SharedCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            SharedCriterionServiceClient client = new SharedCriterionServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateSharedCriteriaResponse responseCallSettings = await client.MutateSharedCriteriaAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateSharedCriteriaResponse responseCancellationToken = await client.MutateSharedCriteriaAsync(request, st::CancellationToken.None);
@@ -112,7 +113,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateSharedCriteria(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            SharedCriterionServiceClient client = new SharedCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            SharedCriterionServiceClient client = new SharedCriterionServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateSharedCriteriaResponse response = client.MutateSharedCriteria(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -139,7 +140,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateSharedCriteriaAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateSharedCriteriaResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            SharedCriterionServiceClient client = new SharedCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            SharedCriterionServiceClient client = new SharedCriterionServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateSharedCriteriaResponse responseCallSettings = await client.MutateSharedCriteriaAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateSharedCriteriaResponse responseCancellationToken = await client.MutateSharedCriteriaAsync(request.CustomerId, request.Operations, st::CancellationToken.None);

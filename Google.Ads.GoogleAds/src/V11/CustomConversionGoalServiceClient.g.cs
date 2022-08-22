@@ -14,12 +14,13 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
-using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using proto = Google.Protobuf;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
+using mel = Microsoft.Extensions.Logging;
 using sys = System;
 using scg = System.Collections.Generic;
 using sco = System.Collections.ObjectModel;
@@ -88,9 +89,8 @@ namespace Google.Ads.GoogleAds.V11.Services
         public CustomConversionGoalServiceSettings Settings { get; set; }
 
         /// <summary>Creates a new builder with default settings.</summary>
-        public CustomConversionGoalServiceClientBuilder()
+        public CustomConversionGoalServiceClientBuilder() : base(CustomConversionGoalServiceClient.ServiceMetadata)
         {
-            UseJwtAccessWithScopes = CustomConversionGoalServiceClient.UseJwtAccessWithScopes;
         }
 
         partial void InterceptBuild(ref CustomConversionGoalServiceClient client);
@@ -117,29 +117,18 @@ namespace Google.Ads.GoogleAds.V11.Services
         {
             Validate();
             grpccore::CallInvoker callInvoker = CreateCallInvoker();
-            return CustomConversionGoalServiceClient.Create(callInvoker, Settings);
+            return CustomConversionGoalServiceClient.Create(callInvoker, Settings, Logger);
         }
 
         private async stt::Task<CustomConversionGoalServiceClient> BuildAsyncImpl(st::CancellationToken cancellationToken)
         {
             Validate();
             grpccore::CallInvoker callInvoker = await CreateCallInvokerAsync(cancellationToken).ConfigureAwait(false);
-            return CustomConversionGoalServiceClient.Create(callInvoker, Settings);
+            return CustomConversionGoalServiceClient.Create(callInvoker, Settings, Logger);
         }
-
-        /// <summary>Returns the endpoint for this builder type, used if no endpoint is otherwise specified.</summary>
-        protected override string GetDefaultEndpoint() => CustomConversionGoalServiceClient.DefaultEndpoint;
-
-        /// <summary>
-        /// Returns the default scopes for this builder type, used if no scopes are otherwise specified.
-        /// </summary>
-        protected override scg::IReadOnlyList<string> GetDefaultScopes() => CustomConversionGoalServiceClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
         protected override gaxgrpc::ChannelPool GetChannelPool() => CustomConversionGoalServiceClient.ChannelPool;
-
-        /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
-        protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
     }
 
     /// <summary>CustomConversionGoalService client wrapper, for convenient use.</summary>
@@ -164,19 +153,10 @@ namespace Google.Ads.GoogleAds.V11.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+        /// <summary>The service metadata associated with this client type.</summary>
+        public static gaxgrpc::ServiceMetadata ServiceMetadata { get; } = new gaxgrpc::ServiceMetadata(CustomConversionGoalService.Descriptor, DefaultEndpoint, DefaultScopes, true, gax::ApiTransports.Grpc, PackageApiMetadata.ApiMetadata);
 
-        internal static bool UseJwtAccessWithScopes
-        {
-            get
-            {
-                bool useJwtAccessWithScopes = true;
-                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
-                return useJwtAccessWithScopes;
-            }
-        }
-
-        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(ServiceMetadata);
 
         /// <summary>
         /// Asynchronously creates a <see cref="CustomConversionGoalServiceClient"/> using the default credentials,
@@ -206,8 +186,9 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
         /// </param>
         /// <param name="settings">Optional <see cref="CustomConversionGoalServiceSettings"/>.</param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
         /// <returns>The created <see cref="CustomConversionGoalServiceClient"/>.</returns>
-        internal static CustomConversionGoalServiceClient Create(grpccore::CallInvoker callInvoker, CustomConversionGoalServiceSettings settings = null)
+        internal static CustomConversionGoalServiceClient Create(grpccore::CallInvoker callInvoker, CustomConversionGoalServiceSettings settings = null, mel::ILogger logger = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpcinter::Interceptor interceptor = settings?.Interceptor;
@@ -216,7 +197,7 @@ namespace Google.Ads.GoogleAds.V11.Services
                 callInvoker = grpcinter::CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
             CustomConversionGoalService.CustomConversionGoalServiceClient grpcClient = new CustomConversionGoalService.CustomConversionGoalServiceClient(callInvoker);
-            return new CustomConversionGoalServiceClientImpl(grpcClient, settings);
+            return new CustomConversionGoalServiceClientImpl(grpcClient, settings, logger);
         }
 
         /// <summary>
@@ -341,12 +322,13 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// <param name="settings">
         /// The base <see cref="CustomConversionGoalServiceSettings"/> used within this client.
         /// </param>
-        public CustomConversionGoalServiceClientImpl(CustomConversionGoalService.CustomConversionGoalServiceClient grpcClient, CustomConversionGoalServiceSettings settings)
+        /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
+        public CustomConversionGoalServiceClientImpl(CustomConversionGoalService.CustomConversionGoalServiceClient grpcClient, CustomConversionGoalServiceSettings settings, mel::ILogger logger)
         {
             GrpcClient = grpcClient;
             CustomConversionGoalServiceSettings effectiveSettings = settings ?? CustomConversionGoalServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callMutateCustomConversionGoals = clientHelper.BuildApiCall<MutateCustomConversionGoalsRequest, MutateCustomConversionGoalsResponse>(grpcClient.MutateCustomConversionGoalsAsync, grpcClient.MutateCustomConversionGoals, effectiveSettings.MutateCustomConversionGoalsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            _callMutateCustomConversionGoals = clientHelper.BuildApiCall<MutateCustomConversionGoalsRequest, MutateCustomConversionGoalsResponse>("MutateCustomConversionGoals", grpcClient.MutateCustomConversionGoalsAsync, grpcClient.MutateCustomConversionGoals, effectiveSettings.MutateCustomConversionGoalsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateCustomConversionGoals);
             Modify_MutateCustomConversionGoalsApiCall(ref _callMutateCustomConversionGoals);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

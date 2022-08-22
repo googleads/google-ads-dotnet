@@ -14,13 +14,14 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagvr = Google.Ads.GoogleAds.V10.Resources;
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
-using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using proto = Google.Protobuf;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
+using mel = Microsoft.Extensions.Logging;
 using sys = System;
 using scg = System.Collections.Generic;
 using sco = System.Collections.ObjectModel;
@@ -110,9 +111,8 @@ namespace Google.Ads.GoogleAds.V10.Services
         public AccountLinkServiceSettings Settings { get; set; }
 
         /// <summary>Creates a new builder with default settings.</summary>
-        public AccountLinkServiceClientBuilder()
+        public AccountLinkServiceClientBuilder() : base(AccountLinkServiceClient.ServiceMetadata)
         {
-            UseJwtAccessWithScopes = AccountLinkServiceClient.UseJwtAccessWithScopes;
         }
 
         partial void InterceptBuild(ref AccountLinkServiceClient client);
@@ -139,29 +139,18 @@ namespace Google.Ads.GoogleAds.V10.Services
         {
             Validate();
             grpccore::CallInvoker callInvoker = CreateCallInvoker();
-            return AccountLinkServiceClient.Create(callInvoker, Settings);
+            return AccountLinkServiceClient.Create(callInvoker, Settings, Logger);
         }
 
         private async stt::Task<AccountLinkServiceClient> BuildAsyncImpl(st::CancellationToken cancellationToken)
         {
             Validate();
             grpccore::CallInvoker callInvoker = await CreateCallInvokerAsync(cancellationToken).ConfigureAwait(false);
-            return AccountLinkServiceClient.Create(callInvoker, Settings);
+            return AccountLinkServiceClient.Create(callInvoker, Settings, Logger);
         }
-
-        /// <summary>Returns the endpoint for this builder type, used if no endpoint is otherwise specified.</summary>
-        protected override string GetDefaultEndpoint() => AccountLinkServiceClient.DefaultEndpoint;
-
-        /// <summary>
-        /// Returns the default scopes for this builder type, used if no scopes are otherwise specified.
-        /// </summary>
-        protected override scg::IReadOnlyList<string> GetDefaultScopes() => AccountLinkServiceClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
         protected override gaxgrpc::ChannelPool GetChannelPool() => AccountLinkServiceClient.ChannelPool;
-
-        /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
-        protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
     }
 
     /// <summary>AccountLinkService client wrapper, for convenient use.</summary>
@@ -187,19 +176,10 @@ namespace Google.Ads.GoogleAds.V10.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+        /// <summary>The service metadata associated with this client type.</summary>
+        public static gaxgrpc::ServiceMetadata ServiceMetadata { get; } = new gaxgrpc::ServiceMetadata(AccountLinkService.Descriptor, DefaultEndpoint, DefaultScopes, true, gax::ApiTransports.Grpc, PackageApiMetadata.ApiMetadata);
 
-        internal static bool UseJwtAccessWithScopes
-        {
-            get
-            {
-                bool useJwtAccessWithScopes = true;
-                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
-                return useJwtAccessWithScopes;
-            }
-        }
-
-        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(ServiceMetadata);
 
         /// <summary>
         /// Asynchronously creates a <see cref="AccountLinkServiceClient"/> using the default credentials, endpoint and
@@ -229,8 +209,9 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
         /// </param>
         /// <param name="settings">Optional <see cref="AccountLinkServiceSettings"/>.</param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
         /// <returns>The created <see cref="AccountLinkServiceClient"/>.</returns>
-        internal static AccountLinkServiceClient Create(grpccore::CallInvoker callInvoker, AccountLinkServiceSettings settings = null)
+        internal static AccountLinkServiceClient Create(grpccore::CallInvoker callInvoker, AccountLinkServiceSettings settings = null, mel::ILogger logger = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpcinter::Interceptor interceptor = settings?.Interceptor;
@@ -239,7 +220,7 @@ namespace Google.Ads.GoogleAds.V10.Services
                 callInvoker = grpcinter::CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
             AccountLinkService.AccountLinkServiceClient grpcClient = new AccountLinkService.AccountLinkServiceClient(callInvoker);
-            return new AccountLinkServiceClientImpl(grpcClient, settings);
+            return new AccountLinkServiceClientImpl(grpcClient, settings, logger);
         }
 
         /// <summary>
@@ -410,7 +391,7 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// <summary>
         /// Creates or removes an account link.
         /// From V5, create is not supported through
-        /// AccountLinkService.MutateAccountLink. Please use
+        /// AccountLinkService.MutateAccountLink. Use
         /// AccountLinkService.CreateAccountLink instead.
         /// 
         /// List of thrown errors:
@@ -433,7 +414,7 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// <summary>
         /// Creates or removes an account link.
         /// From V5, create is not supported through
-        /// AccountLinkService.MutateAccountLink. Please use
+        /// AccountLinkService.MutateAccountLink. Use
         /// AccountLinkService.CreateAccountLink instead.
         /// 
         /// List of thrown errors:
@@ -456,7 +437,7 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// <summary>
         /// Creates or removes an account link.
         /// From V5, create is not supported through
-        /// AccountLinkService.MutateAccountLink. Please use
+        /// AccountLinkService.MutateAccountLink. Use
         /// AccountLinkService.CreateAccountLink instead.
         /// 
         /// List of thrown errors:
@@ -479,7 +460,7 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// <summary>
         /// Creates or removes an account link.
         /// From V5, create is not supported through
-        /// AccountLinkService.MutateAccountLink. Please use
+        /// AccountLinkService.MutateAccountLink. Use
         /// AccountLinkService.CreateAccountLink instead.
         /// 
         /// List of thrown errors:
@@ -511,7 +492,7 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// <summary>
         /// Creates or removes an account link.
         /// From V5, create is not supported through
-        /// AccountLinkService.MutateAccountLink. Please use
+        /// AccountLinkService.MutateAccountLink. Use
         /// AccountLinkService.CreateAccountLink instead.
         /// 
         /// List of thrown errors:
@@ -543,7 +524,7 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// <summary>
         /// Creates or removes an account link.
         /// From V5, create is not supported through
-        /// AccountLinkService.MutateAccountLink. Please use
+        /// AccountLinkService.MutateAccountLink. Use
         /// AccountLinkService.CreateAccountLink instead.
         /// 
         /// List of thrown errors:
@@ -585,15 +566,16 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// </summary>
         /// <param name="grpcClient">The underlying gRPC client.</param>
         /// <param name="settings">The base <see cref="AccountLinkServiceSettings"/> used within this client.</param>
-        public AccountLinkServiceClientImpl(AccountLinkService.AccountLinkServiceClient grpcClient, AccountLinkServiceSettings settings)
+        /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
+        public AccountLinkServiceClientImpl(AccountLinkService.AccountLinkServiceClient grpcClient, AccountLinkServiceSettings settings, mel::ILogger logger)
         {
             GrpcClient = grpcClient;
             AccountLinkServiceSettings effectiveSettings = settings ?? AccountLinkServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callCreateAccountLink = clientHelper.BuildApiCall<CreateAccountLinkRequest, CreateAccountLinkResponse>(grpcClient.CreateAccountLinkAsync, grpcClient.CreateAccountLink, effectiveSettings.CreateAccountLinkSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            _callCreateAccountLink = clientHelper.BuildApiCall<CreateAccountLinkRequest, CreateAccountLinkResponse>("CreateAccountLink", grpcClient.CreateAccountLinkAsync, grpcClient.CreateAccountLink, effectiveSettings.CreateAccountLinkSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callCreateAccountLink);
             Modify_CreateAccountLinkApiCall(ref _callCreateAccountLink);
-            _callMutateAccountLink = clientHelper.BuildApiCall<MutateAccountLinkRequest, MutateAccountLinkResponse>(grpcClient.MutateAccountLinkAsync, grpcClient.MutateAccountLink, effectiveSettings.MutateAccountLinkSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            _callMutateAccountLink = clientHelper.BuildApiCall<MutateAccountLinkRequest, MutateAccountLinkResponse>("MutateAccountLink", grpcClient.MutateAccountLinkAsync, grpcClient.MutateAccountLink, effectiveSettings.MutateAccountLinkSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateAccountLink);
             Modify_MutateAccountLinkApiCall(ref _callMutateAccountLink);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);
@@ -665,7 +647,7 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// <summary>
         /// Creates or removes an account link.
         /// From V5, create is not supported through
-        /// AccountLinkService.MutateAccountLink. Please use
+        /// AccountLinkService.MutateAccountLink. Use
         /// AccountLinkService.CreateAccountLink instead.
         /// 
         /// List of thrown errors:
@@ -691,7 +673,7 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// <summary>
         /// Creates or removes an account link.
         /// From V5, create is not supported through
-        /// AccountLinkService.MutateAccountLink. Please use
+        /// AccountLinkService.MutateAccountLink. Use
         /// AccountLinkService.CreateAccountLink instead.
         /// 
         /// List of thrown errors:

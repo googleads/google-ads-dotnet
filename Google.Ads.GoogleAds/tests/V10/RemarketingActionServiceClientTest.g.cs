@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gaxgrpc = Google.Api.Gax.Grpc;
 using gr = Google.Rpc;
 using grpccore = Grpc.Core;
@@ -51,7 +52,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateRemarketingActions(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            RemarketingActionServiceClient client = new RemarketingActionServiceClientImpl(mockGrpcClient.Object, null);
+            RemarketingActionServiceClient client = new RemarketingActionServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateRemarketingActionsResponse response = client.MutateRemarketingActions(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -80,7 +81,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateRemarketingActionsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateRemarketingActionsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            RemarketingActionServiceClient client = new RemarketingActionServiceClientImpl(mockGrpcClient.Object, null);
+            RemarketingActionServiceClient client = new RemarketingActionServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateRemarketingActionsResponse responseCallSettings = await client.MutateRemarketingActionsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateRemarketingActionsResponse responseCancellationToken = await client.MutateRemarketingActionsAsync(request, st::CancellationToken.None);
@@ -109,7 +110,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateRemarketingActions(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            RemarketingActionServiceClient client = new RemarketingActionServiceClientImpl(mockGrpcClient.Object, null);
+            RemarketingActionServiceClient client = new RemarketingActionServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateRemarketingActionsResponse response = client.MutateRemarketingActions(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -136,7 +137,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateRemarketingActionsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateRemarketingActionsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            RemarketingActionServiceClient client = new RemarketingActionServiceClientImpl(mockGrpcClient.Object, null);
+            RemarketingActionServiceClient client = new RemarketingActionServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateRemarketingActionsResponse responseCallSettings = await client.MutateRemarketingActionsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateRemarketingActionsResponse responseCancellationToken = await client.MutateRemarketingActionsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);

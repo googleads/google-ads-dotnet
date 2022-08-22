@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagve = Google.Ads.GoogleAds.V10.Enums;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using gr = Google.Rpc;
@@ -53,7 +54,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateCustomerCustomizers(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            CustomerCustomizerServiceClient client = new CustomerCustomizerServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerCustomizerServiceClient client = new CustomerCustomizerServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomerCustomizersResponse response = client.MutateCustomerCustomizers(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -83,7 +84,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateCustomerCustomizersAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomerCustomizersResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            CustomerCustomizerServiceClient client = new CustomerCustomizerServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerCustomizerServiceClient client = new CustomerCustomizerServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomerCustomizersResponse responseCallSettings = await client.MutateCustomerCustomizersAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateCustomerCustomizersResponse responseCancellationToken = await client.MutateCustomerCustomizersAsync(request, st::CancellationToken.None);
@@ -112,7 +113,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateCustomerCustomizers(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            CustomerCustomizerServiceClient client = new CustomerCustomizerServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerCustomizerServiceClient client = new CustomerCustomizerServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomerCustomizersResponse response = client.MutateCustomerCustomizers(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -139,7 +140,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateCustomerCustomizersAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomerCustomizersResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            CustomerCustomizerServiceClient client = new CustomerCustomizerServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerCustomizerServiceClient client = new CustomerCustomizerServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomerCustomizersResponse responseCallSettings = await client.MutateCustomerCustomizersAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateCustomerCustomizersResponse responseCancellationToken = await client.MutateCustomerCustomizersAsync(request.CustomerId, request.Operations, st::CancellationToken.None);

@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagve = Google.Ads.GoogleAds.V10.Enums;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using gr = Google.Rpc;
@@ -53,7 +54,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateSharedSets(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            SharedSetServiceClient client = new SharedSetServiceClientImpl(mockGrpcClient.Object, null);
+            SharedSetServiceClient client = new SharedSetServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateSharedSetsResponse response = client.MutateSharedSets(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -83,7 +84,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateSharedSetsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateSharedSetsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            SharedSetServiceClient client = new SharedSetServiceClientImpl(mockGrpcClient.Object, null);
+            SharedSetServiceClient client = new SharedSetServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateSharedSetsResponse responseCallSettings = await client.MutateSharedSetsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateSharedSetsResponse responseCancellationToken = await client.MutateSharedSetsAsync(request, st::CancellationToken.None);
@@ -112,7 +113,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateSharedSets(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            SharedSetServiceClient client = new SharedSetServiceClientImpl(mockGrpcClient.Object, null);
+            SharedSetServiceClient client = new SharedSetServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateSharedSetsResponse response = client.MutateSharedSets(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -139,7 +140,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateSharedSetsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateSharedSetsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            SharedSetServiceClient client = new SharedSetServiceClientImpl(mockGrpcClient.Object, null);
+            SharedSetServiceClient client = new SharedSetServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateSharedSetsResponse responseCallSettings = await client.MutateSharedSetsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateSharedSetsResponse responseCancellationToken = await client.MutateSharedSetsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);

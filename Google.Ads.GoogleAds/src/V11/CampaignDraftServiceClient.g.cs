@@ -14,16 +14,17 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagvr = Google.Ads.GoogleAds.V11.Resources;
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
-using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using lro = Google.LongRunning;
 using proto = Google.Protobuf;
 using wkt = Google.Protobuf.WellKnownTypes;
 using gr = Google.Rpc;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
+using mel = Microsoft.Extensions.Logging;
 using sys = System;
 using sc = System.Collections;
 using scg = System.Collections.Generic;
@@ -156,9 +157,8 @@ namespace Google.Ads.GoogleAds.V11.Services
         public CampaignDraftServiceSettings Settings { get; set; }
 
         /// <summary>Creates a new builder with default settings.</summary>
-        public CampaignDraftServiceClientBuilder()
+        public CampaignDraftServiceClientBuilder() : base(CampaignDraftServiceClient.ServiceMetadata)
         {
-            UseJwtAccessWithScopes = CampaignDraftServiceClient.UseJwtAccessWithScopes;
         }
 
         partial void InterceptBuild(ref CampaignDraftServiceClient client);
@@ -185,29 +185,18 @@ namespace Google.Ads.GoogleAds.V11.Services
         {
             Validate();
             grpccore::CallInvoker callInvoker = CreateCallInvoker();
-            return CampaignDraftServiceClient.Create(callInvoker, Settings);
+            return CampaignDraftServiceClient.Create(callInvoker, Settings, Logger);
         }
 
         private async stt::Task<CampaignDraftServiceClient> BuildAsyncImpl(st::CancellationToken cancellationToken)
         {
             Validate();
             grpccore::CallInvoker callInvoker = await CreateCallInvokerAsync(cancellationToken).ConfigureAwait(false);
-            return CampaignDraftServiceClient.Create(callInvoker, Settings);
+            return CampaignDraftServiceClient.Create(callInvoker, Settings, Logger);
         }
-
-        /// <summary>Returns the endpoint for this builder type, used if no endpoint is otherwise specified.</summary>
-        protected override string GetDefaultEndpoint() => CampaignDraftServiceClient.DefaultEndpoint;
-
-        /// <summary>
-        /// Returns the default scopes for this builder type, used if no scopes are otherwise specified.
-        /// </summary>
-        protected override scg::IReadOnlyList<string> GetDefaultScopes() => CampaignDraftServiceClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
         protected override gaxgrpc::ChannelPool GetChannelPool() => CampaignDraftServiceClient.ChannelPool;
-
-        /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
-        protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
     }
 
     /// <summary>CampaignDraftService client wrapper, for convenient use.</summary>
@@ -232,19 +221,10 @@ namespace Google.Ads.GoogleAds.V11.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+        /// <summary>The service metadata associated with this client type.</summary>
+        public static gaxgrpc::ServiceMetadata ServiceMetadata { get; } = new gaxgrpc::ServiceMetadata(CampaignDraftService.Descriptor, DefaultEndpoint, DefaultScopes, true, gax::ApiTransports.Grpc, PackageApiMetadata.ApiMetadata);
 
-        internal static bool UseJwtAccessWithScopes
-        {
-            get
-            {
-                bool useJwtAccessWithScopes = true;
-                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
-                return useJwtAccessWithScopes;
-            }
-        }
-
-        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(ServiceMetadata);
 
         /// <summary>
         /// Asynchronously creates a <see cref="CampaignDraftServiceClient"/> using the default credentials, endpoint
@@ -274,8 +254,9 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
         /// </param>
         /// <param name="settings">Optional <see cref="CampaignDraftServiceSettings"/>.</param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
         /// <returns>The created <see cref="CampaignDraftServiceClient"/>.</returns>
-        internal static CampaignDraftServiceClient Create(grpccore::CallInvoker callInvoker, CampaignDraftServiceSettings settings = null)
+        internal static CampaignDraftServiceClient Create(grpccore::CallInvoker callInvoker, CampaignDraftServiceSettings settings = null, mel::ILogger logger = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpcinter::Interceptor interceptor = settings?.Interceptor;
@@ -284,7 +265,7 @@ namespace Google.Ads.GoogleAds.V11.Services
                 callInvoker = grpcinter::CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
             CampaignDraftService.CampaignDraftServiceClient grpcClient = new CampaignDraftService.CampaignDraftServiceClient(callInvoker);
-            return new CampaignDraftServiceClientImpl(grpcClient, settings);
+            return new CampaignDraftServiceClientImpl(grpcClient, settings, logger);
         }
 
         /// <summary>
@@ -942,19 +923,20 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// </summary>
         /// <param name="grpcClient">The underlying gRPC client.</param>
         /// <param name="settings">The base <see cref="CampaignDraftServiceSettings"/> used within this client.</param>
-        public CampaignDraftServiceClientImpl(CampaignDraftService.CampaignDraftServiceClient grpcClient, CampaignDraftServiceSettings settings)
+        /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
+        public CampaignDraftServiceClientImpl(CampaignDraftService.CampaignDraftServiceClient grpcClient, CampaignDraftServiceSettings settings, mel::ILogger logger)
         {
             GrpcClient = grpcClient;
             CampaignDraftServiceSettings effectiveSettings = settings ?? CampaignDraftServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            PromoteCampaignDraftOperationsClient = new lro::OperationsClientImpl(grpcClient.CreateOperationsClient(), effectiveSettings.PromoteCampaignDraftOperationsSettings);
-            _callMutateCampaignDrafts = clientHelper.BuildApiCall<MutateCampaignDraftsRequest, MutateCampaignDraftsResponse>(grpcClient.MutateCampaignDraftsAsync, grpcClient.MutateCampaignDrafts, effectiveSettings.MutateCampaignDraftsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            PromoteCampaignDraftOperationsClient = new lro::OperationsClientImpl(grpcClient.CreateOperationsClient(), effectiveSettings.PromoteCampaignDraftOperationsSettings, logger);
+            _callMutateCampaignDrafts = clientHelper.BuildApiCall<MutateCampaignDraftsRequest, MutateCampaignDraftsResponse>("MutateCampaignDrafts", grpcClient.MutateCampaignDraftsAsync, grpcClient.MutateCampaignDrafts, effectiveSettings.MutateCampaignDraftsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateCampaignDrafts);
             Modify_MutateCampaignDraftsApiCall(ref _callMutateCampaignDrafts);
-            _callPromoteCampaignDraft = clientHelper.BuildApiCall<PromoteCampaignDraftRequest, lro::Operation>(grpcClient.PromoteCampaignDraftAsync, grpcClient.PromoteCampaignDraft, effectiveSettings.PromoteCampaignDraftSettings).WithGoogleRequestParam("campaign_draft", request => request.CampaignDraft);
+            _callPromoteCampaignDraft = clientHelper.BuildApiCall<PromoteCampaignDraftRequest, lro::Operation>("PromoteCampaignDraft", grpcClient.PromoteCampaignDraftAsync, grpcClient.PromoteCampaignDraft, effectiveSettings.PromoteCampaignDraftSettings).WithGoogleRequestParam("campaign_draft", request => request.CampaignDraft);
             Modify_ApiCall(ref _callPromoteCampaignDraft);
             Modify_PromoteCampaignDraftApiCall(ref _callPromoteCampaignDraft);
-            _callListCampaignDraftAsyncErrors = clientHelper.BuildApiCall<ListCampaignDraftAsyncErrorsRequest, ListCampaignDraftAsyncErrorsResponse>(grpcClient.ListCampaignDraftAsyncErrorsAsync, grpcClient.ListCampaignDraftAsyncErrors, effectiveSettings.ListCampaignDraftAsyncErrorsSettings).WithGoogleRequestParam("resource_name", request => request.ResourceName);
+            _callListCampaignDraftAsyncErrors = clientHelper.BuildApiCall<ListCampaignDraftAsyncErrorsRequest, ListCampaignDraftAsyncErrorsResponse>("ListCampaignDraftAsyncErrors", grpcClient.ListCampaignDraftAsyncErrorsAsync, grpcClient.ListCampaignDraftAsyncErrors, effectiveSettings.ListCampaignDraftAsyncErrorsSettings).WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callListCampaignDraftAsyncErrors);
             Modify_ListCampaignDraftAsyncErrorsApiCall(ref _callListCampaignDraftAsyncErrors);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

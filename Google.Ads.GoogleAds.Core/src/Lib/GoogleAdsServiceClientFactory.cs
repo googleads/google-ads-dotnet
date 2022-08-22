@@ -49,7 +49,7 @@ namespace Google.Ads.GoogleAds.Lib
         {
             ChannelBase channel = CreateChannel(config);
             CallInvoker interceptedInvoker = channel
-                .Intercept(new GoogleAdsGrpcInterceptor(config));
+                .Intercept(new GoogleAdsGrpcInterceptor());
 
             CallInvoker callInvoker = config.EnableProfiling ?
                 new ProfilingCallInvoker(interceptedInvoker, config) : interceptedInvoker;
@@ -73,7 +73,7 @@ namespace Google.Ads.GoogleAds.Lib
             TService service = Create(serviceTemplate, callInvoker, serviceSettings);
             serviceContext.Service = service;
             service.ServiceContext = serviceContext;
-            service.ServiceContext.ChannelBase = channel;
+            service.ServiceContext.Channel = channel;
             return service;
         }
 
@@ -146,12 +146,7 @@ namespace Google.Ads.GoogleAds.Lib
         /// <returns>The new channel.</returns>
         private ChannelBase CreateChannel(GoogleAdsConfig config)
         {
-            // GRPC uses c-ares DNS resolver, which doesn't seem to work on some Windows machines.
-            // Turn it off for now.
-            // https://github.com/googleads/google-ads-dotnet/issues/59
-            Environment.SetEnvironmentVariable("GRPC_DNS_RESOLVER", "native");
-
-            return channelFactory.GetChannel(config);
+            return channelFactory.GetChannel(config, config.ServerUrl);
         }
     }
 }

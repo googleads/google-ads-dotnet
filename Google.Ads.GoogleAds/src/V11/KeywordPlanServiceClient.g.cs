@@ -14,13 +14,14 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagvr = Google.Ads.GoogleAds.V11.Resources;
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
-using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using proto = Google.Protobuf;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
+using mel = Microsoft.Extensions.Logging;
 using sys = System;
 using scg = System.Collections.Generic;
 using sco = System.Collections.ObjectModel;
@@ -179,9 +180,8 @@ namespace Google.Ads.GoogleAds.V11.Services
         public KeywordPlanServiceSettings Settings { get; set; }
 
         /// <summary>Creates a new builder with default settings.</summary>
-        public KeywordPlanServiceClientBuilder()
+        public KeywordPlanServiceClientBuilder() : base(KeywordPlanServiceClient.ServiceMetadata)
         {
-            UseJwtAccessWithScopes = KeywordPlanServiceClient.UseJwtAccessWithScopes;
         }
 
         partial void InterceptBuild(ref KeywordPlanServiceClient client);
@@ -208,29 +208,18 @@ namespace Google.Ads.GoogleAds.V11.Services
         {
             Validate();
             grpccore::CallInvoker callInvoker = CreateCallInvoker();
-            return KeywordPlanServiceClient.Create(callInvoker, Settings);
+            return KeywordPlanServiceClient.Create(callInvoker, Settings, Logger);
         }
 
         private async stt::Task<KeywordPlanServiceClient> BuildAsyncImpl(st::CancellationToken cancellationToken)
         {
             Validate();
             grpccore::CallInvoker callInvoker = await CreateCallInvokerAsync(cancellationToken).ConfigureAwait(false);
-            return KeywordPlanServiceClient.Create(callInvoker, Settings);
+            return KeywordPlanServiceClient.Create(callInvoker, Settings, Logger);
         }
-
-        /// <summary>Returns the endpoint for this builder type, used if no endpoint is otherwise specified.</summary>
-        protected override string GetDefaultEndpoint() => KeywordPlanServiceClient.DefaultEndpoint;
-
-        /// <summary>
-        /// Returns the default scopes for this builder type, used if no scopes are otherwise specified.
-        /// </summary>
-        protected override scg::IReadOnlyList<string> GetDefaultScopes() => KeywordPlanServiceClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
         protected override gaxgrpc::ChannelPool GetChannelPool() => KeywordPlanServiceClient.ChannelPool;
-
-        /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
-        protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
     }
 
     /// <summary>KeywordPlanService client wrapper, for convenient use.</summary>
@@ -255,19 +244,10 @@ namespace Google.Ads.GoogleAds.V11.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+        /// <summary>The service metadata associated with this client type.</summary>
+        public static gaxgrpc::ServiceMetadata ServiceMetadata { get; } = new gaxgrpc::ServiceMetadata(KeywordPlanService.Descriptor, DefaultEndpoint, DefaultScopes, true, gax::ApiTransports.Grpc, PackageApiMetadata.ApiMetadata);
 
-        internal static bool UseJwtAccessWithScopes
-        {
-            get
-            {
-                bool useJwtAccessWithScopes = true;
-                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
-                return useJwtAccessWithScopes;
-            }
-        }
-
-        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(ServiceMetadata);
 
         /// <summary>
         /// Asynchronously creates a <see cref="KeywordPlanServiceClient"/> using the default credentials, endpoint and
@@ -297,8 +277,9 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
         /// </param>
         /// <param name="settings">Optional <see cref="KeywordPlanServiceSettings"/>.</param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
         /// <returns>The created <see cref="KeywordPlanServiceClient"/>.</returns>
-        internal static KeywordPlanServiceClient Create(grpccore::CallInvoker callInvoker, KeywordPlanServiceSettings settings = null)
+        internal static KeywordPlanServiceClient Create(grpccore::CallInvoker callInvoker, KeywordPlanServiceSettings settings = null, mel::ILogger logger = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpcinter::Interceptor interceptor = settings?.Interceptor;
@@ -307,7 +288,7 @@ namespace Google.Ads.GoogleAds.V11.Services
                 callInvoker = grpcinter::CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
             KeywordPlanService.KeywordPlanServiceClient grpcClient = new KeywordPlanService.KeywordPlanServiceClient(callInvoker);
-            return new KeywordPlanServiceClientImpl(grpcClient, settings);
+            return new KeywordPlanServiceClientImpl(grpcClient, settings, logger);
         }
 
         /// <summary>
@@ -1376,24 +1357,25 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// </summary>
         /// <param name="grpcClient">The underlying gRPC client.</param>
         /// <param name="settings">The base <see cref="KeywordPlanServiceSettings"/> used within this client.</param>
-        public KeywordPlanServiceClientImpl(KeywordPlanService.KeywordPlanServiceClient grpcClient, KeywordPlanServiceSettings settings)
+        /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
+        public KeywordPlanServiceClientImpl(KeywordPlanService.KeywordPlanServiceClient grpcClient, KeywordPlanServiceSettings settings, mel::ILogger logger)
         {
             GrpcClient = grpcClient;
             KeywordPlanServiceSettings effectiveSettings = settings ?? KeywordPlanServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callMutateKeywordPlans = clientHelper.BuildApiCall<MutateKeywordPlansRequest, MutateKeywordPlansResponse>(grpcClient.MutateKeywordPlansAsync, grpcClient.MutateKeywordPlans, effectiveSettings.MutateKeywordPlansSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            _callMutateKeywordPlans = clientHelper.BuildApiCall<MutateKeywordPlansRequest, MutateKeywordPlansResponse>("MutateKeywordPlans", grpcClient.MutateKeywordPlansAsync, grpcClient.MutateKeywordPlans, effectiveSettings.MutateKeywordPlansSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateKeywordPlans);
             Modify_MutateKeywordPlansApiCall(ref _callMutateKeywordPlans);
-            _callGenerateForecastCurve = clientHelper.BuildApiCall<GenerateForecastCurveRequest, GenerateForecastCurveResponse>(grpcClient.GenerateForecastCurveAsync, grpcClient.GenerateForecastCurve, effectiveSettings.GenerateForecastCurveSettings).WithGoogleRequestParam("keyword_plan", request => request.KeywordPlan);
+            _callGenerateForecastCurve = clientHelper.BuildApiCall<GenerateForecastCurveRequest, GenerateForecastCurveResponse>("GenerateForecastCurve", grpcClient.GenerateForecastCurveAsync, grpcClient.GenerateForecastCurve, effectiveSettings.GenerateForecastCurveSettings).WithGoogleRequestParam("keyword_plan", request => request.KeywordPlan);
             Modify_ApiCall(ref _callGenerateForecastCurve);
             Modify_GenerateForecastCurveApiCall(ref _callGenerateForecastCurve);
-            _callGenerateForecastTimeSeries = clientHelper.BuildApiCall<GenerateForecastTimeSeriesRequest, GenerateForecastTimeSeriesResponse>(grpcClient.GenerateForecastTimeSeriesAsync, grpcClient.GenerateForecastTimeSeries, effectiveSettings.GenerateForecastTimeSeriesSettings).WithGoogleRequestParam("keyword_plan", request => request.KeywordPlan);
+            _callGenerateForecastTimeSeries = clientHelper.BuildApiCall<GenerateForecastTimeSeriesRequest, GenerateForecastTimeSeriesResponse>("GenerateForecastTimeSeries", grpcClient.GenerateForecastTimeSeriesAsync, grpcClient.GenerateForecastTimeSeries, effectiveSettings.GenerateForecastTimeSeriesSettings).WithGoogleRequestParam("keyword_plan", request => request.KeywordPlan);
             Modify_ApiCall(ref _callGenerateForecastTimeSeries);
             Modify_GenerateForecastTimeSeriesApiCall(ref _callGenerateForecastTimeSeries);
-            _callGenerateForecastMetrics = clientHelper.BuildApiCall<GenerateForecastMetricsRequest, GenerateForecastMetricsResponse>(grpcClient.GenerateForecastMetricsAsync, grpcClient.GenerateForecastMetrics, effectiveSettings.GenerateForecastMetricsSettings).WithGoogleRequestParam("keyword_plan", request => request.KeywordPlan);
+            _callGenerateForecastMetrics = clientHelper.BuildApiCall<GenerateForecastMetricsRequest, GenerateForecastMetricsResponse>("GenerateForecastMetrics", grpcClient.GenerateForecastMetricsAsync, grpcClient.GenerateForecastMetrics, effectiveSettings.GenerateForecastMetricsSettings).WithGoogleRequestParam("keyword_plan", request => request.KeywordPlan);
             Modify_ApiCall(ref _callGenerateForecastMetrics);
             Modify_GenerateForecastMetricsApiCall(ref _callGenerateForecastMetrics);
-            _callGenerateHistoricalMetrics = clientHelper.BuildApiCall<GenerateHistoricalMetricsRequest, GenerateHistoricalMetricsResponse>(grpcClient.GenerateHistoricalMetricsAsync, grpcClient.GenerateHistoricalMetrics, effectiveSettings.GenerateHistoricalMetricsSettings).WithGoogleRequestParam("keyword_plan", request => request.KeywordPlan);
+            _callGenerateHistoricalMetrics = clientHelper.BuildApiCall<GenerateHistoricalMetricsRequest, GenerateHistoricalMetricsResponse>("GenerateHistoricalMetrics", grpcClient.GenerateHistoricalMetricsAsync, grpcClient.GenerateHistoricalMetrics, effectiveSettings.GenerateHistoricalMetricsSettings).WithGoogleRequestParam("keyword_plan", request => request.KeywordPlan);
             Modify_ApiCall(ref _callGenerateHistoricalMetrics);
             Modify_GenerateHistoricalMetricsApiCall(ref _callGenerateHistoricalMetrics);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

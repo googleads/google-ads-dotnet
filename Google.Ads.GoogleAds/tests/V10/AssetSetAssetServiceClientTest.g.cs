@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagve = Google.Ads.GoogleAds.V10.Enums;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using gr = Google.Rpc;
@@ -53,7 +54,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateAssetSetAssets(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            AssetSetAssetServiceClient client = new AssetSetAssetServiceClientImpl(mockGrpcClient.Object, null);
+            AssetSetAssetServiceClient client = new AssetSetAssetServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAssetSetAssetsResponse response = client.MutateAssetSetAssets(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -83,7 +84,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateAssetSetAssetsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAssetSetAssetsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            AssetSetAssetServiceClient client = new AssetSetAssetServiceClientImpl(mockGrpcClient.Object, null);
+            AssetSetAssetServiceClient client = new AssetSetAssetServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAssetSetAssetsResponse responseCallSettings = await client.MutateAssetSetAssetsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateAssetSetAssetsResponse responseCancellationToken = await client.MutateAssetSetAssetsAsync(request, st::CancellationToken.None);
@@ -112,7 +113,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateAssetSetAssets(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            AssetSetAssetServiceClient client = new AssetSetAssetServiceClientImpl(mockGrpcClient.Object, null);
+            AssetSetAssetServiceClient client = new AssetSetAssetServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAssetSetAssetsResponse response = client.MutateAssetSetAssets(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -139,7 +140,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateAssetSetAssetsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAssetSetAssetsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            AssetSetAssetServiceClient client = new AssetSetAssetServiceClientImpl(mockGrpcClient.Object, null);
+            AssetSetAssetServiceClient client = new AssetSetAssetServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAssetSetAssetsResponse responseCallSettings = await client.MutateAssetSetAssetsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateAssetSetAssetsResponse responseCancellationToken = await client.MutateAssetSetAssetsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);

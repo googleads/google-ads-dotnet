@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagvc = Google.Ads.GoogleAds.V10.Common;
 using gagve = Google.Ads.GoogleAds.V10.Enums;
 using gagvr = Google.Ads.GoogleAds.V10.Resources;
@@ -97,7 +98,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 DiscoveryCarouselAd = new gagvc::DiscoveryCarouselAdInfo(),
             };
             mockGrpcClient.Setup(x => x.GetAd(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null);
+            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null, null);
             gagvr::Ad response = client.GetAd(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -169,7 +170,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 DiscoveryCarouselAd = new gagvc::DiscoveryCarouselAdInfo(),
             };
             mockGrpcClient.Setup(x => x.GetAdAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::Ad>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null);
+            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null, null);
             gagvr::Ad responseCallSettings = await client.GetAdAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             gagvr::Ad responseCancellationToken = await client.GetAdAsync(request, st::CancellationToken.None);
@@ -243,7 +244,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 DiscoveryCarouselAd = new gagvc::DiscoveryCarouselAdInfo(),
             };
             mockGrpcClient.Setup(x => x.GetAd(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null);
+            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null, null);
             gagvr::Ad response = client.GetAd(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -315,7 +316,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 DiscoveryCarouselAd = new gagvc::DiscoveryCarouselAdInfo(),
             };
             mockGrpcClient.Setup(x => x.GetAdAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::Ad>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null);
+            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null, null);
             gagvr::Ad responseCallSettings = await client.GetAdAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             gagvr::Ad responseCancellationToken = await client.GetAdAsync(request.ResourceName, st::CancellationToken.None);
@@ -389,7 +390,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 DiscoveryCarouselAd = new gagvc::DiscoveryCarouselAdInfo(),
             };
             mockGrpcClient.Setup(x => x.GetAd(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null);
+            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null, null);
             gagvr::Ad response = client.GetAd(request.ResourceNameAsAdName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -461,7 +462,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 DiscoveryCarouselAd = new gagvc::DiscoveryCarouselAdInfo(),
             };
             mockGrpcClient.Setup(x => x.GetAdAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::Ad>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null);
+            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null, null);
             gagvr::Ad responseCallSettings = await client.GetAdAsync(request.ResourceNameAsAdName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             gagvr::Ad responseCancellationToken = await client.GetAdAsync(request.ResourceNameAsAdName, st::CancellationToken.None);
@@ -490,7 +491,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateAds(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null);
+            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAdsResponse response = client.MutateAds(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -517,7 +518,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateAdsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAdsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null);
+            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAdsResponse responseCallSettings = await client.MutateAdsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateAdsResponse responseCancellationToken = await client.MutateAdsAsync(request, st::CancellationToken.None);
@@ -543,7 +544,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateAds(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null);
+            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAdsResponse response = client.MutateAds(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -567,7 +568,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateAdsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAdsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null);
+            AdServiceClient client = new AdServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAdsResponse responseCallSettings = await client.MutateAdsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateAdsResponse responseCancellationToken = await client.MutateAdsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);

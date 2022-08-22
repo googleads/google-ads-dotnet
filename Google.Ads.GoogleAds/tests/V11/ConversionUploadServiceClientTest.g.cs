@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gaxgrpc = Google.Api.Gax.Grpc;
 using gr = Google.Rpc;
 using grpccore = Grpc.Core;
@@ -51,7 +52,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.UploadClickConversions(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
+            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null, null);
             UploadClickConversionsResponse response = client.UploadClickConversions(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -80,7 +81,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.UploadClickConversionsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<UploadClickConversionsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
+            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null, null);
             UploadClickConversionsResponse responseCallSettings = await client.UploadClickConversionsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             UploadClickConversionsResponse responseCancellationToken = await client.UploadClickConversionsAsync(request, st::CancellationToken.None);
@@ -110,7 +111,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.UploadClickConversions(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
+            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null, null);
             UploadClickConversionsResponse response = client.UploadClickConversions(request.CustomerId, request.Conversions, request.PartialFailure);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -138,7 +139,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.UploadClickConversionsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<UploadClickConversionsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
+            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null, null);
             UploadClickConversionsResponse responseCallSettings = await client.UploadClickConversionsAsync(request.CustomerId, request.Conversions, request.PartialFailure, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             UploadClickConversionsResponse responseCancellationToken = await client.UploadClickConversionsAsync(request.CustomerId, request.Conversions, request.PartialFailure, st::CancellationToken.None);
@@ -169,7 +170,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.UploadCallConversions(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
+            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null, null);
             UploadCallConversionsResponse response = client.UploadCallConversions(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -198,7 +199,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.UploadCallConversionsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<UploadCallConversionsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
+            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null, null);
             UploadCallConversionsResponse responseCallSettings = await client.UploadCallConversionsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             UploadCallConversionsResponse responseCancellationToken = await client.UploadCallConversionsAsync(request, st::CancellationToken.None);
@@ -228,7 +229,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.UploadCallConversions(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
+            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null, null);
             UploadCallConversionsResponse response = client.UploadCallConversions(request.CustomerId, request.Conversions, request.PartialFailure);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -256,7 +257,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.UploadCallConversionsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<UploadCallConversionsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null);
+            ConversionUploadServiceClient client = new ConversionUploadServiceClientImpl(mockGrpcClient.Object, null, null);
             UploadCallConversionsResponse responseCallSettings = await client.UploadCallConversionsAsync(request.CustomerId, request.Conversions, request.PartialFailure, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             UploadCallConversionsResponse responseCancellationToken = await client.UploadCallConversionsAsync(request.CustomerId, request.Conversions, request.PartialFailure, st::CancellationToken.None);

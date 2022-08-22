@@ -33,13 +33,15 @@ namespace Google.Ads.Gax.Interceptors
         /// </summary>
         /// <typeparam name="TResponse">The type of the response.</typeparam>
         /// <param name="call">The async unary call to intercept.</param>
+        /// <param name="responseCallback">Response callback</param>
         /// <returns>The async unary call with custom exception handling for
         /// <see cref="RpcException"/>.</returns>
-        internal static AsyncUnaryCall<TResponse> Intercept<TResponse>(AsyncUnaryCall<TResponse> call)
+        internal static AsyncUnaryCall<TResponse> Intercept<TResponse>(
+            AsyncUnaryCall<TResponse> call, Action<Task<TResponse>> responseCallback)
         {
             return new AsyncUnaryCall<TResponse>(
-                Intercept<TResponse, TResponse>(call.ResponseAsync),
-                Intercept<Metadata, TResponse>(call.ResponseHeadersAsync),
+                Intercept<TResponse, TResponse>(call.ResponseAsync, responseCallback),
+                Intercept<Metadata, TResponse>(call.ResponseHeadersAsync, null),
                 Intercept<Status, TResponse>(call.GetStatus),
                 Intercept<Metadata, TResponse>(call.GetTrailers),
                 Intercept<TResponse>(call.Dispose));
@@ -51,20 +53,31 @@ namespace Google.Ads.Gax.Interceptors
         /// <typeparam name="T">The task result type</typeparam>
         /// <typeparam name="TResponse">The response type.</typeparam>
         /// <param name="task">The task to be intercepted.</param>
+        /// <param name="callback">The callback to be invoked after the intercepted task
+        /// is completed.</param>
         /// <returns>The intercepted task with custom exception handling for
         /// <see cref="RpcException"/>.</returns>
         /// <exception cref="AdsBaseException">Thrown if the intercepted
         /// <see cref="RpcException"/> can be parsed.</exception>
-        internal static async Task<T> Intercept<T, TResponse>(Task<T> task)
+        internal static async Task<T> Intercept<T, TResponse>(Task<T> task,
+            Action<Task<T>> callback)
         {
             AdsBaseException parsedException;
             try
             {
                 return await task;
             }
-            catch (RpcException e) when ((parsedException = ParseRpcException<TResponse>(e)) != null)
+            catch (RpcException e) when ((parsedException =
+                ParseRpcException<TResponse>(e)) != null)
             {
                 throw parsedException;
+            }
+            finally
+            {
+                if (callback != null)
+                {
+                    callback(task);
+                }
             }
         }
 
@@ -85,7 +98,8 @@ namespace Google.Ads.Gax.Interceptors
                 {
                     return function();
                 }
-                catch (RpcException e) when ((parsedException = ParseRpcException<TResponse>(e)) != null)
+                catch (RpcException e) when ((parsedException =
+                    ParseRpcException<TResponse>(e)) != null)
                 {
                     throw parsedException;
                 }
@@ -108,7 +122,8 @@ namespace Google.Ads.Gax.Interceptors
                 {
                     action();
                 }
-                catch (RpcException e) when ((parsedException = ParseRpcException<TResponse>(e)) != null)
+                catch (RpcException e) when ((parsedException =
+                    ParseRpcException<TResponse>(e)) != null)
                 {
                     throw parsedException;
                 }
@@ -189,7 +204,6 @@ namespace Google.Ads.Gax.Interceptors
                     return true;
                 }
                 return false;
-
             }).FirstOrDefault();
         }
 
