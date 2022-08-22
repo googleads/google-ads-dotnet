@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gaxgrpc = Google.Api.Gax.Grpc;
 using grpccore = Grpc.Core;
 using moq = Moq;
@@ -48,7 +49,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateCustomInterests(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            CustomInterestServiceClient client = new CustomInterestServiceClientImpl(mockGrpcClient.Object, null);
+            CustomInterestServiceClient client = new CustomInterestServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomInterestsResponse response = client.MutateCustomInterests(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -75,7 +76,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateCustomInterestsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomInterestsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            CustomInterestServiceClient client = new CustomInterestServiceClientImpl(mockGrpcClient.Object, null);
+            CustomInterestServiceClient client = new CustomInterestServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomInterestsResponse responseCallSettings = await client.MutateCustomInterestsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateCustomInterestsResponse responseCancellationToken = await client.MutateCustomInterestsAsync(request, st::CancellationToken.None);
@@ -103,7 +104,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateCustomInterests(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            CustomInterestServiceClient client = new CustomInterestServiceClientImpl(mockGrpcClient.Object, null);
+            CustomInterestServiceClient client = new CustomInterestServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomInterestsResponse response = client.MutateCustomInterests(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -129,7 +130,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateCustomInterestsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomInterestsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            CustomInterestServiceClient client = new CustomInterestServiceClientImpl(mockGrpcClient.Object, null);
+            CustomInterestServiceClient client = new CustomInterestServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomInterestsResponse responseCallSettings = await client.MutateCustomInterestsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateCustomInterestsResponse responseCancellationToken = await client.MutateCustomInterestsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);

@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagve = Google.Ads.GoogleAds.V11.Enums;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using gr = Google.Rpc;
@@ -53,7 +54,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateCustomerAssets(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            CustomerAssetServiceClient client = new CustomerAssetServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerAssetServiceClient client = new CustomerAssetServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomerAssetsResponse response = client.MutateCustomerAssets(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -83,7 +84,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateCustomerAssetsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomerAssetsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            CustomerAssetServiceClient client = new CustomerAssetServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerAssetServiceClient client = new CustomerAssetServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomerAssetsResponse responseCallSettings = await client.MutateCustomerAssetsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateCustomerAssetsResponse responseCancellationToken = await client.MutateCustomerAssetsAsync(request, st::CancellationToken.None);
@@ -112,7 +113,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateCustomerAssets(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            CustomerAssetServiceClient client = new CustomerAssetServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerAssetServiceClient client = new CustomerAssetServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomerAssetsResponse response = client.MutateCustomerAssets(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -139,7 +140,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateCustomerAssetsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomerAssetsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            CustomerAssetServiceClient client = new CustomerAssetServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerAssetServiceClient client = new CustomerAssetServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomerAssetsResponse responseCallSettings = await client.MutateCustomerAssetsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateCustomerAssetsResponse responseCancellationToken = await client.MutateCustomerAssetsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);

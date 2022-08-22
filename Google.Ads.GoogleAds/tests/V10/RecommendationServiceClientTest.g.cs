@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gaxgrpc = Google.Api.Gax.Grpc;
 using gr = Google.Rpc;
 using grpccore = Grpc.Core;
@@ -50,7 +51,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.ApplyRecommendation(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
+            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null, null);
             ApplyRecommendationResponse response = client.ApplyRecommendation(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -78,7 +79,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.ApplyRecommendationAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<ApplyRecommendationResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
+            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null, null);
             ApplyRecommendationResponse responseCallSettings = await client.ApplyRecommendationAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             ApplyRecommendationResponse responseCancellationToken = await client.ApplyRecommendationAsync(request, st::CancellationToken.None);
@@ -107,7 +108,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.ApplyRecommendation(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
+            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null, null);
             ApplyRecommendationResponse response = client.ApplyRecommendation(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -134,7 +135,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.ApplyRecommendationAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<ApplyRecommendationResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
+            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null, null);
             ApplyRecommendationResponse responseCallSettings = await client.ApplyRecommendationAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             ApplyRecommendationResponse responseCancellationToken = await client.ApplyRecommendationAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
@@ -164,7 +165,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.DismissRecommendation(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
+            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null, null);
             DismissRecommendationResponse response = client.DismissRecommendation(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -192,7 +193,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.DismissRecommendationAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<DismissRecommendationResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
+            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null, null);
             DismissRecommendationResponse responseCallSettings = await client.DismissRecommendationAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             DismissRecommendationResponse responseCancellationToken = await client.DismissRecommendationAsync(request, st::CancellationToken.None);
@@ -221,7 +222,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.DismissRecommendation(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
+            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null, null);
             DismissRecommendationResponse response = client.DismissRecommendation(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -248,7 +249,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.DismissRecommendationAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<DismissRecommendationResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null);
+            RecommendationServiceClient client = new RecommendationServiceClientImpl(mockGrpcClient.Object, null, null);
             DismissRecommendationResponse responseCallSettings = await client.DismissRecommendationAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             DismissRecommendationResponse responseCancellationToken = await client.DismissRecommendationAsync(request.CustomerId, request.Operations, st::CancellationToken.None);

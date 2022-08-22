@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagve = Google.Ads.GoogleAds.V11.Enums;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using gr = Google.Rpc;
@@ -53,7 +54,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateAdGroupCriterionCustomizers(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            AdGroupCriterionCustomizerServiceClient client = new AdGroupCriterionCustomizerServiceClientImpl(mockGrpcClient.Object, null);
+            AdGroupCriterionCustomizerServiceClient client = new AdGroupCriterionCustomizerServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAdGroupCriterionCustomizersResponse response = client.MutateAdGroupCriterionCustomizers(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -83,7 +84,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateAdGroupCriterionCustomizersAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAdGroupCriterionCustomizersResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            AdGroupCriterionCustomizerServiceClient client = new AdGroupCriterionCustomizerServiceClientImpl(mockGrpcClient.Object, null);
+            AdGroupCriterionCustomizerServiceClient client = new AdGroupCriterionCustomizerServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAdGroupCriterionCustomizersResponse responseCallSettings = await client.MutateAdGroupCriterionCustomizersAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateAdGroupCriterionCustomizersResponse responseCancellationToken = await client.MutateAdGroupCriterionCustomizersAsync(request, st::CancellationToken.None);
@@ -112,7 +113,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateAdGroupCriterionCustomizers(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            AdGroupCriterionCustomizerServiceClient client = new AdGroupCriterionCustomizerServiceClientImpl(mockGrpcClient.Object, null);
+            AdGroupCriterionCustomizerServiceClient client = new AdGroupCriterionCustomizerServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAdGroupCriterionCustomizersResponse response = client.MutateAdGroupCriterionCustomizers(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -139,7 +140,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateAdGroupCriterionCustomizersAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAdGroupCriterionCustomizersResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            AdGroupCriterionCustomizerServiceClient client = new AdGroupCriterionCustomizerServiceClientImpl(mockGrpcClient.Object, null);
+            AdGroupCriterionCustomizerServiceClient client = new AdGroupCriterionCustomizerServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAdGroupCriterionCustomizersResponse responseCallSettings = await client.MutateAdGroupCriterionCustomizersAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateAdGroupCriterionCustomizersResponse responseCancellationToken = await client.MutateAdGroupCriterionCustomizersAsync(request.CustomerId, request.Operations, st::CancellationToken.None);

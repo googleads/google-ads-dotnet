@@ -14,13 +14,14 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagve = Google.Ads.GoogleAds.V11.Enums;
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
-using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using proto = Google.Protobuf;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
+using mel = Microsoft.Extensions.Logging;
 using sys = System;
 using scg = System.Collections.Generic;
 using sco = System.Collections.ObjectModel;
@@ -86,9 +87,8 @@ namespace Google.Ads.GoogleAds.V11.Services
         public InvoiceServiceSettings Settings { get; set; }
 
         /// <summary>Creates a new builder with default settings.</summary>
-        public InvoiceServiceClientBuilder()
+        public InvoiceServiceClientBuilder() : base(InvoiceServiceClient.ServiceMetadata)
         {
-            UseJwtAccessWithScopes = InvoiceServiceClient.UseJwtAccessWithScopes;
         }
 
         partial void InterceptBuild(ref InvoiceServiceClient client);
@@ -115,29 +115,18 @@ namespace Google.Ads.GoogleAds.V11.Services
         {
             Validate();
             grpccore::CallInvoker callInvoker = CreateCallInvoker();
-            return InvoiceServiceClient.Create(callInvoker, Settings);
+            return InvoiceServiceClient.Create(callInvoker, Settings, Logger);
         }
 
         private async stt::Task<InvoiceServiceClient> BuildAsyncImpl(st::CancellationToken cancellationToken)
         {
             Validate();
             grpccore::CallInvoker callInvoker = await CreateCallInvokerAsync(cancellationToken).ConfigureAwait(false);
-            return InvoiceServiceClient.Create(callInvoker, Settings);
+            return InvoiceServiceClient.Create(callInvoker, Settings, Logger);
         }
-
-        /// <summary>Returns the endpoint for this builder type, used if no endpoint is otherwise specified.</summary>
-        protected override string GetDefaultEndpoint() => InvoiceServiceClient.DefaultEndpoint;
-
-        /// <summary>
-        /// Returns the default scopes for this builder type, used if no scopes are otherwise specified.
-        /// </summary>
-        protected override scg::IReadOnlyList<string> GetDefaultScopes() => InvoiceServiceClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
         protected override gaxgrpc::ChannelPool GetChannelPool() => InvoiceServiceClient.ChannelPool;
-
-        /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
-        protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
     }
 
     /// <summary>InvoiceService client wrapper, for convenient use.</summary>
@@ -162,19 +151,10 @@ namespace Google.Ads.GoogleAds.V11.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+        /// <summary>The service metadata associated with this client type.</summary>
+        public static gaxgrpc::ServiceMetadata ServiceMetadata { get; } = new gaxgrpc::ServiceMetadata(InvoiceService.Descriptor, DefaultEndpoint, DefaultScopes, true, gax::ApiTransports.Grpc, PackageApiMetadata.ApiMetadata);
 
-        internal static bool UseJwtAccessWithScopes
-        {
-            get
-            {
-                bool useJwtAccessWithScopes = true;
-                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
-                return useJwtAccessWithScopes;
-            }
-        }
-
-        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(ServiceMetadata);
 
         /// <summary>
         /// Asynchronously creates a <see cref="InvoiceServiceClient"/> using the default credentials, endpoint and
@@ -201,8 +181,9 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
         /// </param>
         /// <param name="settings">Optional <see cref="InvoiceServiceSettings"/>.</param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
         /// <returns>The created <see cref="InvoiceServiceClient"/>.</returns>
-        internal static InvoiceServiceClient Create(grpccore::CallInvoker callInvoker, InvoiceServiceSettings settings = null)
+        internal static InvoiceServiceClient Create(grpccore::CallInvoker callInvoker, InvoiceServiceSettings settings = null, mel::ILogger logger = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpcinter::Interceptor interceptor = settings?.Interceptor;
@@ -211,7 +192,7 @@ namespace Google.Ads.GoogleAds.V11.Services
                 callInvoker = grpcinter::CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
             InvoiceService.InvoiceServiceClient grpcClient = new InvoiceService.InvoiceServiceClient(callInvoker);
-            return new InvoiceServiceClientImpl(grpcClient, settings);
+            return new InvoiceServiceClientImpl(grpcClient, settings, logger);
         }
 
         /// <summary>
@@ -412,12 +393,13 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// </summary>
         /// <param name="grpcClient">The underlying gRPC client.</param>
         /// <param name="settings">The base <see cref="InvoiceServiceSettings"/> used within this client.</param>
-        public InvoiceServiceClientImpl(InvoiceService.InvoiceServiceClient grpcClient, InvoiceServiceSettings settings)
+        /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
+        public InvoiceServiceClientImpl(InvoiceService.InvoiceServiceClient grpcClient, InvoiceServiceSettings settings, mel::ILogger logger)
         {
             GrpcClient = grpcClient;
             InvoiceServiceSettings effectiveSettings = settings ?? InvoiceServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callListInvoices = clientHelper.BuildApiCall<ListInvoicesRequest, ListInvoicesResponse>(grpcClient.ListInvoicesAsync, grpcClient.ListInvoices, effectiveSettings.ListInvoicesSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            _callListInvoices = clientHelper.BuildApiCall<ListInvoicesRequest, ListInvoicesResponse>("ListInvoices", grpcClient.ListInvoicesAsync, grpcClient.ListInvoices, effectiveSettings.ListInvoicesSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callListInvoices);
             Modify_ListInvoicesApiCall(ref _callListInvoices);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

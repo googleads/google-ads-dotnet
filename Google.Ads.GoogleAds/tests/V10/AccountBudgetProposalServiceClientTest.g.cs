@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gaxgrpc = Google.Api.Gax.Grpc;
 using grpccore = Grpc.Core;
 using moq = Moq;
@@ -42,7 +43,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 Result = new MutateAccountBudgetProposalResult(),
             };
             mockGrpcClient.Setup(x => x.MutateAccountBudgetProposal(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            AccountBudgetProposalServiceClient client = new AccountBudgetProposalServiceClientImpl(mockGrpcClient.Object, null);
+            AccountBudgetProposalServiceClient client = new AccountBudgetProposalServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAccountBudgetProposalResponse response = client.MutateAccountBudgetProposal(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -63,7 +64,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 Result = new MutateAccountBudgetProposalResult(),
             };
             mockGrpcClient.Setup(x => x.MutateAccountBudgetProposalAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAccountBudgetProposalResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            AccountBudgetProposalServiceClient client = new AccountBudgetProposalServiceClientImpl(mockGrpcClient.Object, null);
+            AccountBudgetProposalServiceClient client = new AccountBudgetProposalServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAccountBudgetProposalResponse responseCallSettings = await client.MutateAccountBudgetProposalAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateAccountBudgetProposalResponse responseCancellationToken = await client.MutateAccountBudgetProposalAsync(request, st::CancellationToken.None);
@@ -85,7 +86,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 Result = new MutateAccountBudgetProposalResult(),
             };
             mockGrpcClient.Setup(x => x.MutateAccountBudgetProposal(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            AccountBudgetProposalServiceClient client = new AccountBudgetProposalServiceClientImpl(mockGrpcClient.Object, null);
+            AccountBudgetProposalServiceClient client = new AccountBudgetProposalServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAccountBudgetProposalResponse response = client.MutateAccountBudgetProposal(request.CustomerId, request.Operation);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -105,7 +106,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 Result = new MutateAccountBudgetProposalResult(),
             };
             mockGrpcClient.Setup(x => x.MutateAccountBudgetProposalAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAccountBudgetProposalResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            AccountBudgetProposalServiceClient client = new AccountBudgetProposalServiceClientImpl(mockGrpcClient.Object, null);
+            AccountBudgetProposalServiceClient client = new AccountBudgetProposalServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAccountBudgetProposalResponse responseCallSettings = await client.MutateAccountBudgetProposalAsync(request.CustomerId, request.Operation, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateAccountBudgetProposalResponse responseCancellationToken = await client.MutateAccountBudgetProposalAsync(request.CustomerId, request.Operation, st::CancellationToken.None);

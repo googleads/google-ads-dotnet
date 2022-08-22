@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gaxgrpc = Google.Api.Gax.Grpc;
 using grpccore = Grpc.Core;
 using moq = Moq;
@@ -41,7 +42,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 Result = new MutateBillingSetupResult(),
             };
             mockGrpcClient.Setup(x => x.MutateBillingSetup(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            BillingSetupServiceClient client = new BillingSetupServiceClientImpl(mockGrpcClient.Object, null);
+            BillingSetupServiceClient client = new BillingSetupServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateBillingSetupResponse response = client.MutateBillingSetup(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -61,7 +62,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 Result = new MutateBillingSetupResult(),
             };
             mockGrpcClient.Setup(x => x.MutateBillingSetupAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateBillingSetupResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            BillingSetupServiceClient client = new BillingSetupServiceClientImpl(mockGrpcClient.Object, null);
+            BillingSetupServiceClient client = new BillingSetupServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateBillingSetupResponse responseCallSettings = await client.MutateBillingSetupAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateBillingSetupResponse responseCancellationToken = await client.MutateBillingSetupAsync(request, st::CancellationToken.None);
@@ -83,7 +84,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 Result = new MutateBillingSetupResult(),
             };
             mockGrpcClient.Setup(x => x.MutateBillingSetup(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            BillingSetupServiceClient client = new BillingSetupServiceClientImpl(mockGrpcClient.Object, null);
+            BillingSetupServiceClient client = new BillingSetupServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateBillingSetupResponse response = client.MutateBillingSetup(request.CustomerId, request.Operation);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -103,7 +104,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 Result = new MutateBillingSetupResult(),
             };
             mockGrpcClient.Setup(x => x.MutateBillingSetupAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateBillingSetupResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            BillingSetupServiceClient client = new BillingSetupServiceClientImpl(mockGrpcClient.Object, null);
+            BillingSetupServiceClient client = new BillingSetupServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateBillingSetupResponse responseCallSettings = await client.MutateBillingSetupAsync(request.CustomerId, request.Operation, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateBillingSetupResponse responseCancellationToken = await client.MutateBillingSetupAsync(request.CustomerId, request.Operation, st::CancellationToken.None);

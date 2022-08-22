@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagvr = Google.Ads.GoogleAds.V10.Resources;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using lro = Google.LongRunning;
@@ -44,7 +45,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 Result = new MutateBatchJobResult(),
             };
             mockGrpcClient.Setup(x => x.MutateBatchJob(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null);
+            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateBatchJobResponse response = client.MutateBatchJob(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -65,7 +66,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 Result = new MutateBatchJobResult(),
             };
             mockGrpcClient.Setup(x => x.MutateBatchJobAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateBatchJobResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null);
+            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateBatchJobResponse responseCallSettings = await client.MutateBatchJobAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateBatchJobResponse responseCancellationToken = await client.MutateBatchJobAsync(request, st::CancellationToken.None);
@@ -88,7 +89,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 Result = new MutateBatchJobResult(),
             };
             mockGrpcClient.Setup(x => x.MutateBatchJob(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null);
+            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateBatchJobResponse response = client.MutateBatchJob(request.CustomerId, request.Operation);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -109,7 +110,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 Result = new MutateBatchJobResult(),
             };
             mockGrpcClient.Setup(x => x.MutateBatchJobAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateBatchJobResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null);
+            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateBatchJobResponse responseCallSettings = await client.MutateBatchJobAsync(request.CustomerId, request.Operation, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateBatchJobResponse responseCancellationToken = await client.MutateBatchJobAsync(request.CustomerId, request.Operation, st::CancellationToken.None);
@@ -137,7 +138,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 NextSequenceToken = "next_sequence_token160dabc7",
             };
             mockGrpcClient.Setup(x => x.AddBatchJobOperations(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null);
+            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null, null);
             AddBatchJobOperationsResponse response = client.AddBatchJobOperations(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -163,7 +164,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 NextSequenceToken = "next_sequence_token160dabc7",
             };
             mockGrpcClient.Setup(x => x.AddBatchJobOperationsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<AddBatchJobOperationsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null);
+            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null, null);
             AddBatchJobOperationsResponse responseCallSettings = await client.AddBatchJobOperationsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             AddBatchJobOperationsResponse responseCancellationToken = await client.AddBatchJobOperationsAsync(request, st::CancellationToken.None);
@@ -191,7 +192,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 NextSequenceToken = "next_sequence_token160dabc7",
             };
             mockGrpcClient.Setup(x => x.AddBatchJobOperations(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null);
+            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null, null);
             AddBatchJobOperationsResponse response = client.AddBatchJobOperations(request.ResourceName, request.SequenceToken, request.MutateOperations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -217,7 +218,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 NextSequenceToken = "next_sequence_token160dabc7",
             };
             mockGrpcClient.Setup(x => x.AddBatchJobOperationsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<AddBatchJobOperationsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null);
+            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null, null);
             AddBatchJobOperationsResponse responseCallSettings = await client.AddBatchJobOperationsAsync(request.ResourceName, request.SequenceToken, request.MutateOperations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             AddBatchJobOperationsResponse responseCancellationToken = await client.AddBatchJobOperationsAsync(request.ResourceName, request.SequenceToken, request.MutateOperations, st::CancellationToken.None);
@@ -245,7 +246,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 NextSequenceToken = "next_sequence_token160dabc7",
             };
             mockGrpcClient.Setup(x => x.AddBatchJobOperations(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null);
+            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null, null);
             AddBatchJobOperationsResponse response = client.AddBatchJobOperations(request.ResourceNameAsBatchJobName, request.SequenceToken, request.MutateOperations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -271,7 +272,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 NextSequenceToken = "next_sequence_token160dabc7",
             };
             mockGrpcClient.Setup(x => x.AddBatchJobOperationsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<AddBatchJobOperationsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null);
+            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null, null);
             AddBatchJobOperationsResponse responseCallSettings = await client.AddBatchJobOperationsAsync(request.ResourceNameAsBatchJobName, request.SequenceToken, request.MutateOperations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             AddBatchJobOperationsResponse responseCancellationToken = await client.AddBatchJobOperationsAsync(request.ResourceNameAsBatchJobName, request.SequenceToken, request.MutateOperations, st::CancellationToken.None);
@@ -298,7 +299,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 NextSequenceToken = "next_sequence_token160dabc7",
             };
             mockGrpcClient.Setup(x => x.AddBatchJobOperations(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null);
+            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null, null);
             AddBatchJobOperationsResponse response = client.AddBatchJobOperations(request.ResourceName, request.MutateOperations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -323,7 +324,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 NextSequenceToken = "next_sequence_token160dabc7",
             };
             mockGrpcClient.Setup(x => x.AddBatchJobOperationsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<AddBatchJobOperationsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null);
+            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null, null);
             AddBatchJobOperationsResponse responseCallSettings = await client.AddBatchJobOperationsAsync(request.ResourceName, request.MutateOperations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             AddBatchJobOperationsResponse responseCancellationToken = await client.AddBatchJobOperationsAsync(request.ResourceName, request.MutateOperations, st::CancellationToken.None);
@@ -350,7 +351,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 NextSequenceToken = "next_sequence_token160dabc7",
             };
             mockGrpcClient.Setup(x => x.AddBatchJobOperations(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null);
+            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null, null);
             AddBatchJobOperationsResponse response = client.AddBatchJobOperations(request.ResourceNameAsBatchJobName, request.MutateOperations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -375,7 +376,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 NextSequenceToken = "next_sequence_token160dabc7",
             };
             mockGrpcClient.Setup(x => x.AddBatchJobOperationsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<AddBatchJobOperationsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null);
+            BatchJobServiceClient client = new BatchJobServiceClientImpl(mockGrpcClient.Object, null, null);
             AddBatchJobOperationsResponse responseCallSettings = await client.AddBatchJobOperationsAsync(request.ResourceNameAsBatchJobName, request.MutateOperations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             AddBatchJobOperationsResponse responseCancellationToken = await client.AddBatchJobOperationsAsync(request.ResourceNameAsBatchJobName, request.MutateOperations, st::CancellationToken.None);

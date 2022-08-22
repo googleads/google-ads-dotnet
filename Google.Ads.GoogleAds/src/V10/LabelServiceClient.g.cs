@@ -14,12 +14,13 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
-using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using proto = Google.Protobuf;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
+using mel = Microsoft.Extensions.Logging;
 using sys = System;
 using scg = System.Collections.Generic;
 using sco = System.Collections.ObjectModel;
@@ -84,9 +85,8 @@ namespace Google.Ads.GoogleAds.V10.Services
         public LabelServiceSettings Settings { get; set; }
 
         /// <summary>Creates a new builder with default settings.</summary>
-        public LabelServiceClientBuilder()
+        public LabelServiceClientBuilder() : base(LabelServiceClient.ServiceMetadata)
         {
-            UseJwtAccessWithScopes = LabelServiceClient.UseJwtAccessWithScopes;
         }
 
         partial void InterceptBuild(ref LabelServiceClient client);
@@ -113,29 +113,18 @@ namespace Google.Ads.GoogleAds.V10.Services
         {
             Validate();
             grpccore::CallInvoker callInvoker = CreateCallInvoker();
-            return LabelServiceClient.Create(callInvoker, Settings);
+            return LabelServiceClient.Create(callInvoker, Settings, Logger);
         }
 
         private async stt::Task<LabelServiceClient> BuildAsyncImpl(st::CancellationToken cancellationToken)
         {
             Validate();
             grpccore::CallInvoker callInvoker = await CreateCallInvokerAsync(cancellationToken).ConfigureAwait(false);
-            return LabelServiceClient.Create(callInvoker, Settings);
+            return LabelServiceClient.Create(callInvoker, Settings, Logger);
         }
-
-        /// <summary>Returns the endpoint for this builder type, used if no endpoint is otherwise specified.</summary>
-        protected override string GetDefaultEndpoint() => LabelServiceClient.DefaultEndpoint;
-
-        /// <summary>
-        /// Returns the default scopes for this builder type, used if no scopes are otherwise specified.
-        /// </summary>
-        protected override scg::IReadOnlyList<string> GetDefaultScopes() => LabelServiceClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
         protected override gaxgrpc::ChannelPool GetChannelPool() => LabelServiceClient.ChannelPool;
-
-        /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
-        protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
     }
 
     /// <summary>LabelService client wrapper, for convenient use.</summary>
@@ -160,19 +149,10 @@ namespace Google.Ads.GoogleAds.V10.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+        /// <summary>The service metadata associated with this client type.</summary>
+        public static gaxgrpc::ServiceMetadata ServiceMetadata { get; } = new gaxgrpc::ServiceMetadata(LabelService.Descriptor, DefaultEndpoint, DefaultScopes, true, gax::ApiTransports.Grpc, PackageApiMetadata.ApiMetadata);
 
-        internal static bool UseJwtAccessWithScopes
-        {
-            get
-            {
-                bool useJwtAccessWithScopes = true;
-                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
-                return useJwtAccessWithScopes;
-            }
-        }
-
-        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(ServiceMetadata);
 
         /// <summary>
         /// Asynchronously creates a <see cref="LabelServiceClient"/> using the default credentials, endpoint and
@@ -199,8 +179,9 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
         /// </param>
         /// <param name="settings">Optional <see cref="LabelServiceSettings"/>.</param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
         /// <returns>The created <see cref="LabelServiceClient"/>.</returns>
-        internal static LabelServiceClient Create(grpccore::CallInvoker callInvoker, LabelServiceSettings settings = null)
+        internal static LabelServiceClient Create(grpccore::CallInvoker callInvoker, LabelServiceSettings settings = null, mel::ILogger logger = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpcinter::Interceptor interceptor = settings?.Interceptor;
@@ -209,7 +190,7 @@ namespace Google.Ads.GoogleAds.V10.Services
                 callInvoker = grpcinter::CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
             LabelService.LabelServiceClient grpcClient = new LabelService.LabelServiceClient(callInvoker);
-            return new LabelServiceClientImpl(grpcClient, settings);
+            return new LabelServiceClientImpl(grpcClient, settings, logger);
         }
 
         /// <summary>
@@ -475,12 +456,13 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// </summary>
         /// <param name="grpcClient">The underlying gRPC client.</param>
         /// <param name="settings">The base <see cref="LabelServiceSettings"/> used within this client.</param>
-        public LabelServiceClientImpl(LabelService.LabelServiceClient grpcClient, LabelServiceSettings settings)
+        /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
+        public LabelServiceClientImpl(LabelService.LabelServiceClient grpcClient, LabelServiceSettings settings, mel::ILogger logger)
         {
             GrpcClient = grpcClient;
             LabelServiceSettings effectiveSettings = settings ?? LabelServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callMutateLabels = clientHelper.BuildApiCall<MutateLabelsRequest, MutateLabelsResponse>(grpcClient.MutateLabelsAsync, grpcClient.MutateLabels, effectiveSettings.MutateLabelsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            _callMutateLabels = clientHelper.BuildApiCall<MutateLabelsRequest, MutateLabelsResponse>("MutateLabels", grpcClient.MutateLabelsAsync, grpcClient.MutateLabels, effectiveSettings.MutateLabelsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateLabels);
             Modify_MutateLabelsApiCall(ref _callMutateLabels);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

@@ -14,12 +14,13 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
-using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using proto = Google.Protobuf;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
+using mel = Microsoft.Extensions.Logging;
 using sys = System;
 using scg = System.Collections.Generic;
 using sco = System.Collections.ObjectModel;
@@ -111,9 +112,8 @@ namespace Google.Ads.GoogleAds.V10.Services
         public CustomerManagerLinkServiceSettings Settings { get; set; }
 
         /// <summary>Creates a new builder with default settings.</summary>
-        public CustomerManagerLinkServiceClientBuilder()
+        public CustomerManagerLinkServiceClientBuilder() : base(CustomerManagerLinkServiceClient.ServiceMetadata)
         {
-            UseJwtAccessWithScopes = CustomerManagerLinkServiceClient.UseJwtAccessWithScopes;
         }
 
         partial void InterceptBuild(ref CustomerManagerLinkServiceClient client);
@@ -140,29 +140,18 @@ namespace Google.Ads.GoogleAds.V10.Services
         {
             Validate();
             grpccore::CallInvoker callInvoker = CreateCallInvoker();
-            return CustomerManagerLinkServiceClient.Create(callInvoker, Settings);
+            return CustomerManagerLinkServiceClient.Create(callInvoker, Settings, Logger);
         }
 
         private async stt::Task<CustomerManagerLinkServiceClient> BuildAsyncImpl(st::CancellationToken cancellationToken)
         {
             Validate();
             grpccore::CallInvoker callInvoker = await CreateCallInvokerAsync(cancellationToken).ConfigureAwait(false);
-            return CustomerManagerLinkServiceClient.Create(callInvoker, Settings);
+            return CustomerManagerLinkServiceClient.Create(callInvoker, Settings, Logger);
         }
-
-        /// <summary>Returns the endpoint for this builder type, used if no endpoint is otherwise specified.</summary>
-        protected override string GetDefaultEndpoint() => CustomerManagerLinkServiceClient.DefaultEndpoint;
-
-        /// <summary>
-        /// Returns the default scopes for this builder type, used if no scopes are otherwise specified.
-        /// </summary>
-        protected override scg::IReadOnlyList<string> GetDefaultScopes() => CustomerManagerLinkServiceClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
         protected override gaxgrpc::ChannelPool GetChannelPool() => CustomerManagerLinkServiceClient.ChannelPool;
-
-        /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
-        protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
     }
 
     /// <summary>CustomerManagerLinkService client wrapper, for convenient use.</summary>
@@ -187,19 +176,10 @@ namespace Google.Ads.GoogleAds.V10.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+        /// <summary>The service metadata associated with this client type.</summary>
+        public static gaxgrpc::ServiceMetadata ServiceMetadata { get; } = new gaxgrpc::ServiceMetadata(CustomerManagerLinkService.Descriptor, DefaultEndpoint, DefaultScopes, true, gax::ApiTransports.Grpc, PackageApiMetadata.ApiMetadata);
 
-        internal static bool UseJwtAccessWithScopes
-        {
-            get
-            {
-                bool useJwtAccessWithScopes = true;
-                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
-                return useJwtAccessWithScopes;
-            }
-        }
-
-        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(ServiceMetadata);
 
         /// <summary>
         /// Asynchronously creates a <see cref="CustomerManagerLinkServiceClient"/> using the default credentials,
@@ -229,8 +209,9 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
         /// </param>
         /// <param name="settings">Optional <see cref="CustomerManagerLinkServiceSettings"/>.</param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
         /// <returns>The created <see cref="CustomerManagerLinkServiceClient"/>.</returns>
-        internal static CustomerManagerLinkServiceClient Create(grpccore::CallInvoker callInvoker, CustomerManagerLinkServiceSettings settings = null)
+        internal static CustomerManagerLinkServiceClient Create(grpccore::CallInvoker callInvoker, CustomerManagerLinkServiceSettings settings = null, mel::ILogger logger = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpcinter::Interceptor interceptor = settings?.Interceptor;
@@ -239,7 +220,7 @@ namespace Google.Ads.GoogleAds.V10.Services
                 callInvoker = grpcinter::CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
             CustomerManagerLinkService.CustomerManagerLinkServiceClient grpcClient = new CustomerManagerLinkService.CustomerManagerLinkServiceClient(callInvoker);
-            return new CustomerManagerLinkServiceClientImpl(grpcClient, settings);
+            return new CustomerManagerLinkServiceClientImpl(grpcClient, settings, logger);
         }
 
         /// <summary>
@@ -422,7 +403,7 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// <summary>
         /// Moves a client customer to a new manager customer.
         /// This simplifies the complex request that requires two operations to move
-        /// a client customer to a new manager. i.e:
+        /// a client customer to a new manager, for example:
         /// 1. Update operation with Status INACTIVE (previous manager) and,
         /// 2. Update operation with Status ACTIVE (new manager).
         /// 
@@ -446,7 +427,7 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// <summary>
         /// Moves a client customer to a new manager customer.
         /// This simplifies the complex request that requires two operations to move
-        /// a client customer to a new manager. i.e:
+        /// a client customer to a new manager, for example:
         /// 1. Update operation with Status INACTIVE (previous manager) and,
         /// 2. Update operation with Status ACTIVE (new manager).
         /// 
@@ -470,7 +451,7 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// <summary>
         /// Moves a client customer to a new manager customer.
         /// This simplifies the complex request that requires two operations to move
-        /// a client customer to a new manager. i.e:
+        /// a client customer to a new manager, for example:
         /// 1. Update operation with Status INACTIVE (previous manager) and,
         /// 2. Update operation with Status ACTIVE (new manager).
         /// 
@@ -494,7 +475,7 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// <summary>
         /// Moves a client customer to a new manager customer.
         /// This simplifies the complex request that requires two operations to move
-        /// a client customer to a new manager. i.e:
+        /// a client customer to a new manager, for example:
         /// 1. Update operation with Status INACTIVE (previous manager) and,
         /// 2. Update operation with Status ACTIVE (new manager).
         /// 
@@ -534,7 +515,7 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// <summary>
         /// Moves a client customer to a new manager customer.
         /// This simplifies the complex request that requires two operations to move
-        /// a client customer to a new manager. i.e:
+        /// a client customer to a new manager, for example:
         /// 1. Update operation with Status INACTIVE (previous manager) and,
         /// 2. Update operation with Status ACTIVE (new manager).
         /// 
@@ -574,7 +555,7 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// <summary>
         /// Moves a client customer to a new manager customer.
         /// This simplifies the complex request that requires two operations to move
-        /// a client customer to a new manager. i.e:
+        /// a client customer to a new manager, for example:
         /// 1. Update operation with Status INACTIVE (previous manager) and,
         /// 2. Update operation with Status ACTIVE (new manager).
         /// 
@@ -625,15 +606,16 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// <param name="settings">
         /// The base <see cref="CustomerManagerLinkServiceSettings"/> used within this client.
         /// </param>
-        public CustomerManagerLinkServiceClientImpl(CustomerManagerLinkService.CustomerManagerLinkServiceClient grpcClient, CustomerManagerLinkServiceSettings settings)
+        /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
+        public CustomerManagerLinkServiceClientImpl(CustomerManagerLinkService.CustomerManagerLinkServiceClient grpcClient, CustomerManagerLinkServiceSettings settings, mel::ILogger logger)
         {
             GrpcClient = grpcClient;
             CustomerManagerLinkServiceSettings effectiveSettings = settings ?? CustomerManagerLinkServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callMutateCustomerManagerLink = clientHelper.BuildApiCall<MutateCustomerManagerLinkRequest, MutateCustomerManagerLinkResponse>(grpcClient.MutateCustomerManagerLinkAsync, grpcClient.MutateCustomerManagerLink, effectiveSettings.MutateCustomerManagerLinkSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            _callMutateCustomerManagerLink = clientHelper.BuildApiCall<MutateCustomerManagerLinkRequest, MutateCustomerManagerLinkResponse>("MutateCustomerManagerLink", grpcClient.MutateCustomerManagerLinkAsync, grpcClient.MutateCustomerManagerLink, effectiveSettings.MutateCustomerManagerLinkSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateCustomerManagerLink);
             Modify_MutateCustomerManagerLinkApiCall(ref _callMutateCustomerManagerLink);
-            _callMoveManagerLink = clientHelper.BuildApiCall<MoveManagerLinkRequest, MoveManagerLinkResponse>(grpcClient.MoveManagerLinkAsync, grpcClient.MoveManagerLink, effectiveSettings.MoveManagerLinkSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            _callMoveManagerLink = clientHelper.BuildApiCall<MoveManagerLinkRequest, MoveManagerLinkResponse>("MoveManagerLink", grpcClient.MoveManagerLinkAsync, grpcClient.MoveManagerLink, effectiveSettings.MoveManagerLinkSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMoveManagerLink);
             Modify_MoveManagerLinkApiCall(ref _callMoveManagerLink);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);
@@ -707,7 +689,7 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// <summary>
         /// Moves a client customer to a new manager customer.
         /// This simplifies the complex request that requires two operations to move
-        /// a client customer to a new manager. i.e:
+        /// a client customer to a new manager, for example:
         /// 1. Update operation with Status INACTIVE (previous manager) and,
         /// 2. Update operation with Status ACTIVE (new manager).
         /// 
@@ -734,7 +716,7 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// <summary>
         /// Moves a client customer to a new manager customer.
         /// This simplifies the complex request that requires two operations to move
-        /// a client customer to a new manager. i.e:
+        /// a client customer to a new manager, for example:
         /// 1. Update operation with Status INACTIVE (previous manager) and,
         /// 2. Update operation with Status ACTIVE (new manager).
         /// 

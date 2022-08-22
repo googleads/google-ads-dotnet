@@ -14,12 +14,13 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
-using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using proto = Google.Protobuf;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
+using mel = Microsoft.Extensions.Logging;
 using sys = System;
 using scg = System.Collections.Generic;
 using sco = System.Collections.ObjectModel;
@@ -134,9 +135,8 @@ namespace Google.Ads.GoogleAds.V11.Services
         public SmartCampaignSuggestServiceSettings Settings { get; set; }
 
         /// <summary>Creates a new builder with default settings.</summary>
-        public SmartCampaignSuggestServiceClientBuilder()
+        public SmartCampaignSuggestServiceClientBuilder() : base(SmartCampaignSuggestServiceClient.ServiceMetadata)
         {
-            UseJwtAccessWithScopes = SmartCampaignSuggestServiceClient.UseJwtAccessWithScopes;
         }
 
         partial void InterceptBuild(ref SmartCampaignSuggestServiceClient client);
@@ -163,29 +163,18 @@ namespace Google.Ads.GoogleAds.V11.Services
         {
             Validate();
             grpccore::CallInvoker callInvoker = CreateCallInvoker();
-            return SmartCampaignSuggestServiceClient.Create(callInvoker, Settings);
+            return SmartCampaignSuggestServiceClient.Create(callInvoker, Settings, Logger);
         }
 
         private async stt::Task<SmartCampaignSuggestServiceClient> BuildAsyncImpl(st::CancellationToken cancellationToken)
         {
             Validate();
             grpccore::CallInvoker callInvoker = await CreateCallInvokerAsync(cancellationToken).ConfigureAwait(false);
-            return SmartCampaignSuggestServiceClient.Create(callInvoker, Settings);
+            return SmartCampaignSuggestServiceClient.Create(callInvoker, Settings, Logger);
         }
-
-        /// <summary>Returns the endpoint for this builder type, used if no endpoint is otherwise specified.</summary>
-        protected override string GetDefaultEndpoint() => SmartCampaignSuggestServiceClient.DefaultEndpoint;
-
-        /// <summary>
-        /// Returns the default scopes for this builder type, used if no scopes are otherwise specified.
-        /// </summary>
-        protected override scg::IReadOnlyList<string> GetDefaultScopes() => SmartCampaignSuggestServiceClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
         protected override gaxgrpc::ChannelPool GetChannelPool() => SmartCampaignSuggestServiceClient.ChannelPool;
-
-        /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
-        protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
     }
 
     /// <summary>SmartCampaignSuggestService client wrapper, for convenient use.</summary>
@@ -210,19 +199,10 @@ namespace Google.Ads.GoogleAds.V11.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+        /// <summary>The service metadata associated with this client type.</summary>
+        public static gaxgrpc::ServiceMetadata ServiceMetadata { get; } = new gaxgrpc::ServiceMetadata(SmartCampaignSuggestService.Descriptor, DefaultEndpoint, DefaultScopes, true, gax::ApiTransports.Grpc, PackageApiMetadata.ApiMetadata);
 
-        internal static bool UseJwtAccessWithScopes
-        {
-            get
-            {
-                bool useJwtAccessWithScopes = true;
-                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
-                return useJwtAccessWithScopes;
-            }
-        }
-
-        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(ServiceMetadata);
 
         /// <summary>
         /// Asynchronously creates a <see cref="SmartCampaignSuggestServiceClient"/> using the default credentials,
@@ -252,8 +232,9 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
         /// </param>
         /// <param name="settings">Optional <see cref="SmartCampaignSuggestServiceSettings"/>.</param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
         /// <returns>The created <see cref="SmartCampaignSuggestServiceClient"/>.</returns>
-        internal static SmartCampaignSuggestServiceClient Create(grpccore::CallInvoker callInvoker, SmartCampaignSuggestServiceSettings settings = null)
+        internal static SmartCampaignSuggestServiceClient Create(grpccore::CallInvoker callInvoker, SmartCampaignSuggestServiceSettings settings = null, mel::ILogger logger = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpcinter::Interceptor interceptor = settings?.Interceptor;
@@ -262,7 +243,7 @@ namespace Google.Ads.GoogleAds.V11.Services
                 callInvoker = grpcinter::CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
             SmartCampaignSuggestService.SmartCampaignSuggestServiceClient grpcClient = new SmartCampaignSuggestService.SmartCampaignSuggestServiceClient(callInvoker);
-            return new SmartCampaignSuggestServiceClientImpl(grpcClient, settings);
+            return new SmartCampaignSuggestServiceClientImpl(grpcClient, settings, logger);
         }
 
         /// <summary>
@@ -386,18 +367,19 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// <param name="settings">
         /// The base <see cref="SmartCampaignSuggestServiceSettings"/> used within this client.
         /// </param>
-        public SmartCampaignSuggestServiceClientImpl(SmartCampaignSuggestService.SmartCampaignSuggestServiceClient grpcClient, SmartCampaignSuggestServiceSettings settings)
+        /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
+        public SmartCampaignSuggestServiceClientImpl(SmartCampaignSuggestService.SmartCampaignSuggestServiceClient grpcClient, SmartCampaignSuggestServiceSettings settings, mel::ILogger logger)
         {
             GrpcClient = grpcClient;
             SmartCampaignSuggestServiceSettings effectiveSettings = settings ?? SmartCampaignSuggestServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callSuggestSmartCampaignBudgetOptions = clientHelper.BuildApiCall<SuggestSmartCampaignBudgetOptionsRequest, SuggestSmartCampaignBudgetOptionsResponse>(grpcClient.SuggestSmartCampaignBudgetOptionsAsync, grpcClient.SuggestSmartCampaignBudgetOptions, effectiveSettings.SuggestSmartCampaignBudgetOptionsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            _callSuggestSmartCampaignBudgetOptions = clientHelper.BuildApiCall<SuggestSmartCampaignBudgetOptionsRequest, SuggestSmartCampaignBudgetOptionsResponse>("SuggestSmartCampaignBudgetOptions", grpcClient.SuggestSmartCampaignBudgetOptionsAsync, grpcClient.SuggestSmartCampaignBudgetOptions, effectiveSettings.SuggestSmartCampaignBudgetOptionsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callSuggestSmartCampaignBudgetOptions);
             Modify_SuggestSmartCampaignBudgetOptionsApiCall(ref _callSuggestSmartCampaignBudgetOptions);
-            _callSuggestSmartCampaignAd = clientHelper.BuildApiCall<SuggestSmartCampaignAdRequest, SuggestSmartCampaignAdResponse>(grpcClient.SuggestSmartCampaignAdAsync, grpcClient.SuggestSmartCampaignAd, effectiveSettings.SuggestSmartCampaignAdSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            _callSuggestSmartCampaignAd = clientHelper.BuildApiCall<SuggestSmartCampaignAdRequest, SuggestSmartCampaignAdResponse>("SuggestSmartCampaignAd", grpcClient.SuggestSmartCampaignAdAsync, grpcClient.SuggestSmartCampaignAd, effectiveSettings.SuggestSmartCampaignAdSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callSuggestSmartCampaignAd);
             Modify_SuggestSmartCampaignAdApiCall(ref _callSuggestSmartCampaignAd);
-            _callSuggestKeywordThemes = clientHelper.BuildApiCall<SuggestKeywordThemesRequest, SuggestKeywordThemesResponse>(grpcClient.SuggestKeywordThemesAsync, grpcClient.SuggestKeywordThemes, effectiveSettings.SuggestKeywordThemesSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            _callSuggestKeywordThemes = clientHelper.BuildApiCall<SuggestKeywordThemesRequest, SuggestKeywordThemesResponse>("SuggestKeywordThemes", grpcClient.SuggestKeywordThemesAsync, grpcClient.SuggestKeywordThemes, effectiveSettings.SuggestKeywordThemesSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callSuggestKeywordThemes);
             Modify_SuggestKeywordThemesApiCall(ref _callSuggestKeywordThemes);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

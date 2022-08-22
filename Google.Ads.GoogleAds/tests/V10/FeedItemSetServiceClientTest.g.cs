@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gaxgrpc = Google.Api.Gax.Grpc;
 using gr = Google.Rpc;
 using grpccore = Grpc.Core;
@@ -51,7 +52,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateFeedItemSets(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            FeedItemSetServiceClient client = new FeedItemSetServiceClientImpl(mockGrpcClient.Object, null);
+            FeedItemSetServiceClient client = new FeedItemSetServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateFeedItemSetsResponse response = client.MutateFeedItemSets(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -80,7 +81,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateFeedItemSetsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateFeedItemSetsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            FeedItemSetServiceClient client = new FeedItemSetServiceClientImpl(mockGrpcClient.Object, null);
+            FeedItemSetServiceClient client = new FeedItemSetServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateFeedItemSetsResponse responseCallSettings = await client.MutateFeedItemSetsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateFeedItemSetsResponse responseCancellationToken = await client.MutateFeedItemSetsAsync(request, st::CancellationToken.None);
@@ -109,7 +110,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateFeedItemSets(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            FeedItemSetServiceClient client = new FeedItemSetServiceClientImpl(mockGrpcClient.Object, null);
+            FeedItemSetServiceClient client = new FeedItemSetServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateFeedItemSetsResponse response = client.MutateFeedItemSets(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -136,7 +137,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateFeedItemSetsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateFeedItemSetsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            FeedItemSetServiceClient client = new FeedItemSetServiceClientImpl(mockGrpcClient.Object, null);
+            FeedItemSetServiceClient client = new FeedItemSetServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateFeedItemSetsResponse responseCallSettings = await client.MutateFeedItemSetsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateFeedItemSetsResponse responseCancellationToken = await client.MutateFeedItemSetsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);

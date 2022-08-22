@@ -67,9 +67,9 @@ namespace Google.Ads.Gax.Lib
         }
 
         /// <summary>
-        /// Gets or sets the underlying grpc channel.
+        /// Gets or sets the underlying Ads channel.
         /// </summary>
-        internal ChannelBase ChannelBase
+        internal ChannelBase Channel
         {
             get;
             set;

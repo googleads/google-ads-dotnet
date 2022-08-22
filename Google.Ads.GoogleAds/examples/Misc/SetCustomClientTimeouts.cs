@@ -110,6 +110,9 @@ namespace Google.Ads.GoogleAds.Examples.V11
             StringWriter writer = new StringWriter();
 
             // Set a custom timeout.
+            // Note: This overrides the default value and can lead to
+            // RequestError.RPC_DEADLINE_TOO_SHORT errors when too small. We recommend
+            // to do it only if necessary.
             CallSettings callSettings = CallSettings.FromExpiration(
                   Expiration.FromTimeout(TimeSpan.FromMilliseconds(CLIENT_TIMEOUT_MILLIS)));
             try
@@ -168,6 +171,9 @@ namespace Google.Ads.GoogleAds.Examples.V11
             StringWriter writer = new StringWriter();
 
             // Set a custom timeout.
+            // Note: This overrides the default value and can lead to
+            // RequestError.RPC_DEADLINE_TOO_SHORT errors when too small. We recommend
+            // to do it only if necessary.
             CallSettings callSettings = CallSettings.FromExpiration(
                   Expiration.FromTimeout(TimeSpan.FromMilliseconds(CLIENT_TIMEOUT_MILLIS)));
             try

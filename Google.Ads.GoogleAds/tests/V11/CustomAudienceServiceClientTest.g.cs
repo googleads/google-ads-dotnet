@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gaxgrpc = Google.Api.Gax.Grpc;
 using grpccore = Grpc.Core;
 using moq = Moq;
@@ -48,7 +49,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateCustomAudiences(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            CustomAudienceServiceClient client = new CustomAudienceServiceClientImpl(mockGrpcClient.Object, null);
+            CustomAudienceServiceClient client = new CustomAudienceServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomAudiencesResponse response = client.MutateCustomAudiences(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -75,7 +76,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateCustomAudiencesAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomAudiencesResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            CustomAudienceServiceClient client = new CustomAudienceServiceClientImpl(mockGrpcClient.Object, null);
+            CustomAudienceServiceClient client = new CustomAudienceServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomAudiencesResponse responseCallSettings = await client.MutateCustomAudiencesAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateCustomAudiencesResponse responseCancellationToken = await client.MutateCustomAudiencesAsync(request, st::CancellationToken.None);
@@ -103,7 +104,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateCustomAudiences(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            CustomAudienceServiceClient client = new CustomAudienceServiceClientImpl(mockGrpcClient.Object, null);
+            CustomAudienceServiceClient client = new CustomAudienceServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomAudiencesResponse response = client.MutateCustomAudiences(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -129,7 +130,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateCustomAudiencesAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomAudiencesResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            CustomAudienceServiceClient client = new CustomAudienceServiceClientImpl(mockGrpcClient.Object, null);
+            CustomAudienceServiceClient client = new CustomAudienceServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomAudiencesResponse responseCallSettings = await client.MutateCustomAudiencesAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateCustomAudiencesResponse responseCancellationToken = await client.MutateCustomAudiencesAsync(request.CustomerId, request.Operations, st::CancellationToken.None);

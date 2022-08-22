@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagvc = Google.Ads.GoogleAds.V10.Common;
 using gagvr = Google.Ads.GoogleAds.V10.Resources;
 using gaxgrpc = Google.Api.Gax.Grpc;
@@ -53,7 +54,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateKeywordPlans(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateKeywordPlansResponse response = client.MutateKeywordPlans(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -82,7 +83,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateKeywordPlansAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateKeywordPlansResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateKeywordPlansResponse responseCallSettings = await client.MutateKeywordPlansAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateKeywordPlansResponse responseCancellationToken = await client.MutateKeywordPlansAsync(request, st::CancellationToken.None);
@@ -111,7 +112,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateKeywordPlans(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateKeywordPlansResponse response = client.MutateKeywordPlans(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -138,7 +139,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateKeywordPlansAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateKeywordPlansResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateKeywordPlansResponse responseCallSettings = await client.MutateKeywordPlansAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateKeywordPlansResponse responseCancellationToken = await client.MutateKeywordPlansAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
@@ -162,7 +163,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.GenerateForecastCurve(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateForecastCurveResponse response = client.GenerateForecastCurve(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -184,7 +185,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.GenerateForecastCurveAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateForecastCurveResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateForecastCurveResponse responseCallSettings = await client.GenerateForecastCurveAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             GenerateForecastCurveResponse responseCancellationToken = await client.GenerateForecastCurveAsync(request, st::CancellationToken.None);
@@ -208,7 +209,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.GenerateForecastCurve(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateForecastCurveResponse response = client.GenerateForecastCurve(request.KeywordPlan);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -230,7 +231,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.GenerateForecastCurveAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateForecastCurveResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateForecastCurveResponse responseCallSettings = await client.GenerateForecastCurveAsync(request.KeywordPlan, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             GenerateForecastCurveResponse responseCancellationToken = await client.GenerateForecastCurveAsync(request.KeywordPlan, st::CancellationToken.None);
@@ -254,7 +255,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.GenerateForecastCurve(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateForecastCurveResponse response = client.GenerateForecastCurve(request.KeywordPlanAsKeywordPlanName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -276,7 +277,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.GenerateForecastCurveAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateForecastCurveResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateForecastCurveResponse responseCallSettings = await client.GenerateForecastCurveAsync(request.KeywordPlanAsKeywordPlanName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             GenerateForecastCurveResponse responseCancellationToken = await client.GenerateForecastCurveAsync(request.KeywordPlanAsKeywordPlanName, st::CancellationToken.None);
@@ -300,7 +301,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.GenerateForecastTimeSeries(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateForecastTimeSeriesResponse response = client.GenerateForecastTimeSeries(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -322,7 +323,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.GenerateForecastTimeSeriesAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateForecastTimeSeriesResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateForecastTimeSeriesResponse responseCallSettings = await client.GenerateForecastTimeSeriesAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             GenerateForecastTimeSeriesResponse responseCancellationToken = await client.GenerateForecastTimeSeriesAsync(request, st::CancellationToken.None);
@@ -346,7 +347,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.GenerateForecastTimeSeries(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateForecastTimeSeriesResponse response = client.GenerateForecastTimeSeries(request.KeywordPlan);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -368,7 +369,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.GenerateForecastTimeSeriesAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateForecastTimeSeriesResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateForecastTimeSeriesResponse responseCallSettings = await client.GenerateForecastTimeSeriesAsync(request.KeywordPlan, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             GenerateForecastTimeSeriesResponse responseCancellationToken = await client.GenerateForecastTimeSeriesAsync(request.KeywordPlan, st::CancellationToken.None);
@@ -392,7 +393,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.GenerateForecastTimeSeries(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateForecastTimeSeriesResponse response = client.GenerateForecastTimeSeries(request.KeywordPlanAsKeywordPlanName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -414,7 +415,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.GenerateForecastTimeSeriesAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateForecastTimeSeriesResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateForecastTimeSeriesResponse responseCallSettings = await client.GenerateForecastTimeSeriesAsync(request.KeywordPlanAsKeywordPlanName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             GenerateForecastTimeSeriesResponse responseCancellationToken = await client.GenerateForecastTimeSeriesAsync(request.KeywordPlanAsKeywordPlanName, st::CancellationToken.None);
@@ -446,7 +447,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.GenerateForecastMetrics(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateForecastMetricsResponse response = client.GenerateForecastMetrics(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -476,7 +477,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.GenerateForecastMetricsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateForecastMetricsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateForecastMetricsResponse responseCallSettings = await client.GenerateForecastMetricsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             GenerateForecastMetricsResponse responseCancellationToken = await client.GenerateForecastMetricsAsync(request, st::CancellationToken.None);
@@ -508,7 +509,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.GenerateForecastMetrics(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateForecastMetricsResponse response = client.GenerateForecastMetrics(request.KeywordPlan);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -538,7 +539,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.GenerateForecastMetricsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateForecastMetricsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateForecastMetricsResponse responseCallSettings = await client.GenerateForecastMetricsAsync(request.KeywordPlan, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             GenerateForecastMetricsResponse responseCancellationToken = await client.GenerateForecastMetricsAsync(request.KeywordPlan, st::CancellationToken.None);
@@ -570,7 +571,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.GenerateForecastMetrics(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateForecastMetricsResponse response = client.GenerateForecastMetrics(request.KeywordPlanAsKeywordPlanName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -600,7 +601,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.GenerateForecastMetricsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateForecastMetricsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateForecastMetricsResponse responseCallSettings = await client.GenerateForecastMetricsAsync(request.KeywordPlanAsKeywordPlanName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             GenerateForecastMetricsResponse responseCancellationToken = await client.GenerateForecastMetricsAsync(request.KeywordPlanAsKeywordPlanName, st::CancellationToken.None);
@@ -627,7 +628,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 AggregateMetricResults = new gagvc::KeywordPlanAggregateMetricResults(),
             };
             mockGrpcClient.Setup(x => x.GenerateHistoricalMetrics(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateHistoricalMetricsResponse response = client.GenerateHistoricalMetrics(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -652,7 +653,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 AggregateMetricResults = new gagvc::KeywordPlanAggregateMetricResults(),
             };
             mockGrpcClient.Setup(x => x.GenerateHistoricalMetricsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateHistoricalMetricsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateHistoricalMetricsResponse responseCallSettings = await client.GenerateHistoricalMetricsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             GenerateHistoricalMetricsResponse responseCancellationToken = await client.GenerateHistoricalMetricsAsync(request, st::CancellationToken.None);
@@ -677,7 +678,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 AggregateMetricResults = new gagvc::KeywordPlanAggregateMetricResults(),
             };
             mockGrpcClient.Setup(x => x.GenerateHistoricalMetrics(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateHistoricalMetricsResponse response = client.GenerateHistoricalMetrics(request.KeywordPlan);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -700,7 +701,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 AggregateMetricResults = new gagvc::KeywordPlanAggregateMetricResults(),
             };
             mockGrpcClient.Setup(x => x.GenerateHistoricalMetricsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateHistoricalMetricsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateHistoricalMetricsResponse responseCallSettings = await client.GenerateHistoricalMetricsAsync(request.KeywordPlan, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             GenerateHistoricalMetricsResponse responseCancellationToken = await client.GenerateHistoricalMetricsAsync(request.KeywordPlan, st::CancellationToken.None);
@@ -725,7 +726,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 AggregateMetricResults = new gagvc::KeywordPlanAggregateMetricResults(),
             };
             mockGrpcClient.Setup(x => x.GenerateHistoricalMetrics(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateHistoricalMetricsResponse response = client.GenerateHistoricalMetrics(request.KeywordPlanAsKeywordPlanName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -748,7 +749,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 AggregateMetricResults = new gagvc::KeywordPlanAggregateMetricResults(),
             };
             mockGrpcClient.Setup(x => x.GenerateHistoricalMetricsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateHistoricalMetricsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null);
+            KeywordPlanServiceClient client = new KeywordPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateHistoricalMetricsResponse responseCallSettings = await client.GenerateHistoricalMetricsAsync(request.KeywordPlanAsKeywordPlanName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             GenerateHistoricalMetricsResponse responseCancellationToken = await client.GenerateHistoricalMetricsAsync(request.KeywordPlanAsKeywordPlanName, st::CancellationToken.None);

@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagve = Google.Ads.GoogleAds.V10.Enums;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using grpccore = Grpc.Core;
@@ -50,7 +51,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateConversionGoalCampaignConfigs(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            ConversionGoalCampaignConfigServiceClient client = new ConversionGoalCampaignConfigServiceClientImpl(mockGrpcClient.Object, null);
+            ConversionGoalCampaignConfigServiceClient client = new ConversionGoalCampaignConfigServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateConversionGoalCampaignConfigsResponse response = client.MutateConversionGoalCampaignConfigs(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -78,7 +79,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateConversionGoalCampaignConfigsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateConversionGoalCampaignConfigsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            ConversionGoalCampaignConfigServiceClient client = new ConversionGoalCampaignConfigServiceClientImpl(mockGrpcClient.Object, null);
+            ConversionGoalCampaignConfigServiceClient client = new ConversionGoalCampaignConfigServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateConversionGoalCampaignConfigsResponse responseCallSettings = await client.MutateConversionGoalCampaignConfigsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateConversionGoalCampaignConfigsResponse responseCancellationToken = await client.MutateConversionGoalCampaignConfigsAsync(request, st::CancellationToken.None);
@@ -106,7 +107,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateConversionGoalCampaignConfigs(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            ConversionGoalCampaignConfigServiceClient client = new ConversionGoalCampaignConfigServiceClientImpl(mockGrpcClient.Object, null);
+            ConversionGoalCampaignConfigServiceClient client = new ConversionGoalCampaignConfigServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateConversionGoalCampaignConfigsResponse response = client.MutateConversionGoalCampaignConfigs(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -132,7 +133,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateConversionGoalCampaignConfigsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateConversionGoalCampaignConfigsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            ConversionGoalCampaignConfigServiceClient client = new ConversionGoalCampaignConfigServiceClientImpl(mockGrpcClient.Object, null);
+            ConversionGoalCampaignConfigServiceClient client = new ConversionGoalCampaignConfigServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateConversionGoalCampaignConfigsResponse responseCallSettings = await client.MutateConversionGoalCampaignConfigsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateConversionGoalCampaignConfigsResponse responseCancellationToken = await client.MutateConversionGoalCampaignConfigsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);

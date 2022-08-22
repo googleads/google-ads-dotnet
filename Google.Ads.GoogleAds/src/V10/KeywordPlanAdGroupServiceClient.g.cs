@@ -14,12 +14,13 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
-using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using proto = Google.Protobuf;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
+using mel = Microsoft.Extensions.Logging;
 using sys = System;
 using scg = System.Collections.Generic;
 using sco = System.Collections.ObjectModel;
@@ -88,9 +89,8 @@ namespace Google.Ads.GoogleAds.V10.Services
         public KeywordPlanAdGroupServiceSettings Settings { get; set; }
 
         /// <summary>Creates a new builder with default settings.</summary>
-        public KeywordPlanAdGroupServiceClientBuilder()
+        public KeywordPlanAdGroupServiceClientBuilder() : base(KeywordPlanAdGroupServiceClient.ServiceMetadata)
         {
-            UseJwtAccessWithScopes = KeywordPlanAdGroupServiceClient.UseJwtAccessWithScopes;
         }
 
         partial void InterceptBuild(ref KeywordPlanAdGroupServiceClient client);
@@ -117,29 +117,18 @@ namespace Google.Ads.GoogleAds.V10.Services
         {
             Validate();
             grpccore::CallInvoker callInvoker = CreateCallInvoker();
-            return KeywordPlanAdGroupServiceClient.Create(callInvoker, Settings);
+            return KeywordPlanAdGroupServiceClient.Create(callInvoker, Settings, Logger);
         }
 
         private async stt::Task<KeywordPlanAdGroupServiceClient> BuildAsyncImpl(st::CancellationToken cancellationToken)
         {
             Validate();
             grpccore::CallInvoker callInvoker = await CreateCallInvokerAsync(cancellationToken).ConfigureAwait(false);
-            return KeywordPlanAdGroupServiceClient.Create(callInvoker, Settings);
+            return KeywordPlanAdGroupServiceClient.Create(callInvoker, Settings, Logger);
         }
-
-        /// <summary>Returns the endpoint for this builder type, used if no endpoint is otherwise specified.</summary>
-        protected override string GetDefaultEndpoint() => KeywordPlanAdGroupServiceClient.DefaultEndpoint;
-
-        /// <summary>
-        /// Returns the default scopes for this builder type, used if no scopes are otherwise specified.
-        /// </summary>
-        protected override scg::IReadOnlyList<string> GetDefaultScopes() => KeywordPlanAdGroupServiceClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
         protected override gaxgrpc::ChannelPool GetChannelPool() => KeywordPlanAdGroupServiceClient.ChannelPool;
-
-        /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
-        protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
     }
 
     /// <summary>KeywordPlanAdGroupService client wrapper, for convenient use.</summary>
@@ -164,19 +153,10 @@ namespace Google.Ads.GoogleAds.V10.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+        /// <summary>The service metadata associated with this client type.</summary>
+        public static gaxgrpc::ServiceMetadata ServiceMetadata { get; } = new gaxgrpc::ServiceMetadata(KeywordPlanAdGroupService.Descriptor, DefaultEndpoint, DefaultScopes, true, gax::ApiTransports.Grpc, PackageApiMetadata.ApiMetadata);
 
-        internal static bool UseJwtAccessWithScopes
-        {
-            get
-            {
-                bool useJwtAccessWithScopes = true;
-                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
-                return useJwtAccessWithScopes;
-            }
-        }
-
-        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(ServiceMetadata);
 
         /// <summary>
         /// Asynchronously creates a <see cref="KeywordPlanAdGroupServiceClient"/> using the default credentials,
@@ -206,8 +186,9 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
         /// </param>
         /// <param name="settings">Optional <see cref="KeywordPlanAdGroupServiceSettings"/>.</param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
         /// <returns>The created <see cref="KeywordPlanAdGroupServiceClient"/>.</returns>
-        internal static KeywordPlanAdGroupServiceClient Create(grpccore::CallInvoker callInvoker, KeywordPlanAdGroupServiceSettings settings = null)
+        internal static KeywordPlanAdGroupServiceClient Create(grpccore::CallInvoker callInvoker, KeywordPlanAdGroupServiceSettings settings = null, mel::ILogger logger = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpcinter::Interceptor interceptor = settings?.Interceptor;
@@ -216,7 +197,7 @@ namespace Google.Ads.GoogleAds.V10.Services
                 callInvoker = grpcinter::CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
             KeywordPlanAdGroupService.KeywordPlanAdGroupServiceClient grpcClient = new KeywordPlanAdGroupService.KeywordPlanAdGroupServiceClient(callInvoker);
-            return new KeywordPlanAdGroupServiceClientImpl(grpcClient, settings);
+            return new KeywordPlanAdGroupServiceClientImpl(grpcClient, settings, logger);
         }
 
         /// <summary>
@@ -437,12 +418,13 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// <param name="settings">
         /// The base <see cref="KeywordPlanAdGroupServiceSettings"/> used within this client.
         /// </param>
-        public KeywordPlanAdGroupServiceClientImpl(KeywordPlanAdGroupService.KeywordPlanAdGroupServiceClient grpcClient, KeywordPlanAdGroupServiceSettings settings)
+        /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
+        public KeywordPlanAdGroupServiceClientImpl(KeywordPlanAdGroupService.KeywordPlanAdGroupServiceClient grpcClient, KeywordPlanAdGroupServiceSettings settings, mel::ILogger logger)
         {
             GrpcClient = grpcClient;
             KeywordPlanAdGroupServiceSettings effectiveSettings = settings ?? KeywordPlanAdGroupServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callMutateKeywordPlanAdGroups = clientHelper.BuildApiCall<MutateKeywordPlanAdGroupsRequest, MutateKeywordPlanAdGroupsResponse>(grpcClient.MutateKeywordPlanAdGroupsAsync, grpcClient.MutateKeywordPlanAdGroups, effectiveSettings.MutateKeywordPlanAdGroupsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            _callMutateKeywordPlanAdGroups = clientHelper.BuildApiCall<MutateKeywordPlanAdGroupsRequest, MutateKeywordPlanAdGroupsResponse>("MutateKeywordPlanAdGroups", grpcClient.MutateKeywordPlanAdGroupsAsync, grpcClient.MutateKeywordPlanAdGroups, effectiveSettings.MutateKeywordPlanAdGroupsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateKeywordPlanAdGroups);
             Modify_MutateKeywordPlanAdGroupsApiCall(ref _callMutateKeywordPlanAdGroups);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

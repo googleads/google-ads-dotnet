@@ -88,6 +88,15 @@ namespace Google.Ads.Gax {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Grpc.Net.Client is not supported on this platform. See https://docs.microsoft.com/en-us/aspnet/core/grpc/supported-platforms?view=aspnetcore-6.0 for requirements..
+        /// </summary>
+        internal static string GrpcNetClientNotSupported {
+            get {
+                return ResourceManager.GetString("GrpcNetClientNotSupported", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Required key &apos;private_key&apos; is missing in JSON secrets file..
         /// </summary>
         internal static string PrivateKeyIsMissingInJsonFile {

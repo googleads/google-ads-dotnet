@@ -17,7 +17,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-#pragma warning disable 0414, 1591
+#pragma warning disable 0414, 1591, 8981
 #region Designer generated code
 
 using grpc = global::Grpc.Core;
@@ -25,6 +25,11 @@ using grpc = global::Grpc.Core;
 namespace Google.Ads.GoogleAds.V10.Services {
   /// <summary>
   /// Service to manage user data uploads.
+  /// Any uploads made to a Customer Match list through this service will be
+  /// eligible for matching as per the customer matching process. See
+  /// https://support.google.com/google-ads/answer/7474263. However, the uploads
+  /// made through this service will not be visible under the 'Segment members'
+  /// section for the Customer Match List in the Google Ads UI.
   /// </summary>
   public static partial class UserDataService
   {
@@ -257,7 +262,7 @@ namespace Google.Ads.GoogleAds.V10.Services {
           .AddMethod(__Method_UploadUserData, serviceImpl.UploadUserData).Build();
     }
 
-    /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+    /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
     /// Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
     /// <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>

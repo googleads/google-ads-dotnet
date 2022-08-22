@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagve = Google.Ads.GoogleAds.V11.Enums;
 using gagvr = Google.Ads.GoogleAds.V11.Resources;
 using gaxgrpc = Google.Api.Gax.Grpc;
@@ -67,7 +68,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 IsRepeated = false,
             };
             mockGrpcClient.Setup(x => x.GetGoogleAdsField(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            GoogleAdsFieldServiceClient client = new GoogleAdsFieldServiceClientImpl(mockGrpcClient.Object, null);
+            GoogleAdsFieldServiceClient client = new GoogleAdsFieldServiceClientImpl(mockGrpcClient.Object, null, null);
             gagvr::GoogleAdsField response = client.GetGoogleAdsField(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -111,7 +112,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 IsRepeated = false,
             };
             mockGrpcClient.Setup(x => x.GetGoogleAdsFieldAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::GoogleAdsField>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            GoogleAdsFieldServiceClient client = new GoogleAdsFieldServiceClientImpl(mockGrpcClient.Object, null);
+            GoogleAdsFieldServiceClient client = new GoogleAdsFieldServiceClientImpl(mockGrpcClient.Object, null, null);
             gagvr::GoogleAdsField responseCallSettings = await client.GetGoogleAdsFieldAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             gagvr::GoogleAdsField responseCancellationToken = await client.GetGoogleAdsFieldAsync(request, st::CancellationToken.None);
@@ -157,7 +158,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 IsRepeated = false,
             };
             mockGrpcClient.Setup(x => x.GetGoogleAdsField(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            GoogleAdsFieldServiceClient client = new GoogleAdsFieldServiceClientImpl(mockGrpcClient.Object, null);
+            GoogleAdsFieldServiceClient client = new GoogleAdsFieldServiceClientImpl(mockGrpcClient.Object, null, null);
             gagvr::GoogleAdsField response = client.GetGoogleAdsField(request.ResourceName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -201,7 +202,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 IsRepeated = false,
             };
             mockGrpcClient.Setup(x => x.GetGoogleAdsFieldAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::GoogleAdsField>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            GoogleAdsFieldServiceClient client = new GoogleAdsFieldServiceClientImpl(mockGrpcClient.Object, null);
+            GoogleAdsFieldServiceClient client = new GoogleAdsFieldServiceClientImpl(mockGrpcClient.Object, null, null);
             gagvr::GoogleAdsField responseCallSettings = await client.GetGoogleAdsFieldAsync(request.ResourceName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             gagvr::GoogleAdsField responseCancellationToken = await client.GetGoogleAdsFieldAsync(request.ResourceName, st::CancellationToken.None);
@@ -247,7 +248,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 IsRepeated = false,
             };
             mockGrpcClient.Setup(x => x.GetGoogleAdsField(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            GoogleAdsFieldServiceClient client = new GoogleAdsFieldServiceClientImpl(mockGrpcClient.Object, null);
+            GoogleAdsFieldServiceClient client = new GoogleAdsFieldServiceClientImpl(mockGrpcClient.Object, null, null);
             gagvr::GoogleAdsField response = client.GetGoogleAdsField(request.ResourceNameAsGoogleAdsFieldName);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -291,7 +292,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 IsRepeated = false,
             };
             mockGrpcClient.Setup(x => x.GetGoogleAdsFieldAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<gagvr::GoogleAdsField>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            GoogleAdsFieldServiceClient client = new GoogleAdsFieldServiceClientImpl(mockGrpcClient.Object, null);
+            GoogleAdsFieldServiceClient client = new GoogleAdsFieldServiceClientImpl(mockGrpcClient.Object, null, null);
             gagvr::GoogleAdsField responseCallSettings = await client.GetGoogleAdsFieldAsync(request.ResourceNameAsGoogleAdsFieldName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             gagvr::GoogleAdsField responseCancellationToken = await client.GetGoogleAdsFieldAsync(request.ResourceNameAsGoogleAdsFieldName, st::CancellationToken.None);

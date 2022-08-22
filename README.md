@@ -15,12 +15,12 @@ This project hosts the .NET client library for the Google Ads API.
 ## Supported Frameworks
 
 - .NET Framework 4.7.2+ (net472)
-- .NET Standard 2.0 (netstandard2.0)
+- .NET Standard 2.1 (netstandard2.1)
 - .NET 5.0 (net5.0)
 - .NET Core 3.1 (netcoreapp3.1)
 
 The library doesn't have an explicit build target for .NET 6.0 (net6.0) yet. However, you can use
-the library with a binary built for .NET 6.0, since netstandard2.0 is compatible with .NET 6.0.
+the library with a binary built for .NET 6.0, since netstandard2.1 is compatible with .NET 6.0.
 
 ## Documentation
 

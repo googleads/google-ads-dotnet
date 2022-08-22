@@ -1,3 +1,45 @@
+14.0.0
+======
+
+- Added support for version v11.1 of Google Ads API.
+- Added missing copyright headers to build scripts.
+- Added new code examples.
+  - Reworked HandleResponsiveSearchAdPolicyViolations.cs to show policy violation handling using
+    RSAs rather than ETAs.
+- Fixed some code examples.
+  - Fixed ValidateAd.cs to change the rethrowing to prevent error CA2200 and fix a bug with error
+    counting. Also clarified some comments to clarify how to use validateOnly setting.
+  - Updated AddAdCustomizer.cs to remove unused code.
+- Moved CachedChannelFactory.cs to Google.Ads.Gax.
+- Initialize OAuth2Scope with an empty value. Useful for avoiding NPE in some tests when refactoring.
+- Removed unused GoogleAdsConfig in a couple of internal classes.
+- Upgrade to Cloud SDK v4.0. Fixes https://github.com/googleads/google-ads-dotnet/issues/445. This
+  upgrade has several implications.
+  - We increased the runtime requirements from `netstandard2.0` to `netstandard2.1`. This is required
+    since `Google.Api.Gax.Grpc` bumped its runtime requirements to `netstandard2.1`. Since this is
+    a backwards incompatible change, we are doing a major version bump of `Google.Ads.Gax`,
+    `Google.Ads.GoogleAds.Core` and `Google.Ads.GoogleAds`. There are no other code changes required
+    to your application.
+  - The library has the ability to switch between `Grpc.Net.Client` and `Grpc.Core` for wire transport.
+    Grpc.Net.Client is the default implementation used by the client library. This is a fully managed
+    .NET implementation of the gRPC protocol, but doesn't work on some older platforms like
+    `.NET472`. On platforms where `Grpc.Net.Client` doesn't work, the client library falls back to
+    `Grpc.Core`, the library used for implementing wire transport until `v13.0.2` of the client
+    library. You can refer to
+    https://docs.microsoft.com/en-us/aspnet/core/grpc/supported-platforms?view=aspnetcore-6.0#net-grpc-client-requirements
+    for an upto date list of platforms that are supported by `Grpc.Net.Client` library.
+  - `Grpc.Core` is scheduled to go away in the future, see https://grpc.io/blog/grpc-csharp-future/.
+  - You can use a new setting named `GoogleAdsConfig::UseGrpcCore` to force the client library to
+    use the `Grpc.Core` library for wire transport. This setting defaults to `false`.
+- Removed the dependency on `System.Configuration.ConfigurationManager` and replaced it with a
+  simple implementation tha reads from App.config.
+- Added `App.config` and `Web.config` to .gitignore to prevent accidental leak of credentials from
+  the development environment.
+- Added a utility method to reverse-parse a proto enum from the protobuf enum value.
+- Use callback instead of Task chaining to perform logging. Fixes https://github.com/googleads/google-ads-dotnet/issues/386
+- Version for Google.Ads.Gax was bumped to 2.0.0.
+- Version for Google.Ads.GoogleAds.Core was bumped to 2.0.0.
+
 13.0.2
 ======
 - Removed the PublicSign clause from all csproj files. Fixes https://github.com/googleads/google-ads-dotnet/issues/437.

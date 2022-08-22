@@ -97,7 +97,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
                 {
                     ResponsiveSearchAd = new ResponsiveSearchAdInfo
                     {
-                        Headlines = 
+                        Headlines =
                         {
                             new AdTextAsset() {
                                 Text = "Visit the Red Planet in style.",
@@ -106,12 +106,12 @@ namespace Google.Ads.GoogleAds.Examples.V11
                             new AdTextAsset() { Text = "Low-gravity fun for everyone!!" },
                             new AdTextAsset() { Text = "Book your Cruise to Mars now" }
                         },
-                        Descriptions = 
+                        Descriptions =
                         {
                             new AdTextAsset() { Text = "Luxury Cruise to Mars" },
                             new AdTextAsset() { Text = "Book your ticket now" }
-                        }                        
-                    },                
+                        }
+                    },
                     FinalUrls = { "https://www.example.com/" },
                 }
             };
@@ -142,7 +142,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
                 // This block will be hit if there is a validation error from the server.
                 Console.WriteLine(
                     "There were validation error(s) while adding a responsive search ad.");
-                
+
                 // Note: Policy violation errors are returned as PolicyFindingErrors. See
                 // https://developers.google.com/google-ads/api/docs/policy-exemption/overview
                 // for additional details.
@@ -150,28 +150,31 @@ namespace Google.Ads.GoogleAds.Examples.V11
                     .Where(
                         err => err.ErrorCode.PolicyFindingError == PolicyFindingError.PolicyFinding)
                     .ToList();
-                            
-                if (policyFindingErrors.Any()) {
+
+                if (policyFindingErrors.Any())
+                {
                     policyFindingErrors.ForEach(delegate (GoogleAdsError err)
+                    {
+                        int count = 1;
+                        if (err.Details.PolicyFindingDetails != null)
                         {
-                            int count = 1;
-                            if (err.Details.PolicyFindingDetails != null)
+                            foreach (PolicyTopicEntry entry in
+                                err.Details.PolicyFindingDetails.PolicyTopicEntries)
                             {
-                                foreach (PolicyTopicEntry entry in
-                                    err.Details.PolicyFindingDetails.PolicyTopicEntries)
-                                {
-                                    Console.WriteLine($"{count}) Policy topic entry with topic = " +
-                                        $"\"{entry.Topic}\" and type = \"{entry.Type}\" " +
-                                        $"found.");
-                                    count++;
-                                }
-                            }                            
-                        });
-                } else {
+                                Console.WriteLine($"{count}) Policy topic entry with topic = " +
+                                    $"\"{entry.Topic}\" and type = \"{entry.Type}\" " +
+                                    $"found.");
+                                count++;
+                            }
+                        }
+                    });
+                }
+                else
+                {
                     // There were unexpected validation errors, rethrowing the exception
                     throw;
-                }        
-            }            
+                }
+            }
         }
     }
 }

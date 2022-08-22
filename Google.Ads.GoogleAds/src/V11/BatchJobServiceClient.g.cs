@@ -14,15 +14,16 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagvr = Google.Ads.GoogleAds.V11.Resources;
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
-using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using lro = Google.LongRunning;
 using proto = Google.Protobuf;
 using wkt = Google.Protobuf.WellKnownTypes;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
+using mel = Microsoft.Extensions.Logging;
 using sys = System;
 using sc = System.Collections;
 using scg = System.Collections.Generic;
@@ -175,9 +176,8 @@ namespace Google.Ads.GoogleAds.V11.Services
         public BatchJobServiceSettings Settings { get; set; }
 
         /// <summary>Creates a new builder with default settings.</summary>
-        public BatchJobServiceClientBuilder()
+        public BatchJobServiceClientBuilder() : base(BatchJobServiceClient.ServiceMetadata)
         {
-            UseJwtAccessWithScopes = BatchJobServiceClient.UseJwtAccessWithScopes;
         }
 
         partial void InterceptBuild(ref BatchJobServiceClient client);
@@ -204,29 +204,18 @@ namespace Google.Ads.GoogleAds.V11.Services
         {
             Validate();
             grpccore::CallInvoker callInvoker = CreateCallInvoker();
-            return BatchJobServiceClient.Create(callInvoker, Settings);
+            return BatchJobServiceClient.Create(callInvoker, Settings, Logger);
         }
 
         private async stt::Task<BatchJobServiceClient> BuildAsyncImpl(st::CancellationToken cancellationToken)
         {
             Validate();
             grpccore::CallInvoker callInvoker = await CreateCallInvokerAsync(cancellationToken).ConfigureAwait(false);
-            return BatchJobServiceClient.Create(callInvoker, Settings);
+            return BatchJobServiceClient.Create(callInvoker, Settings, Logger);
         }
-
-        /// <summary>Returns the endpoint for this builder type, used if no endpoint is otherwise specified.</summary>
-        protected override string GetDefaultEndpoint() => BatchJobServiceClient.DefaultEndpoint;
-
-        /// <summary>
-        /// Returns the default scopes for this builder type, used if no scopes are otherwise specified.
-        /// </summary>
-        protected override scg::IReadOnlyList<string> GetDefaultScopes() => BatchJobServiceClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
         protected override gaxgrpc::ChannelPool GetChannelPool() => BatchJobServiceClient.ChannelPool;
-
-        /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
-        protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
     }
 
     /// <summary>BatchJobService client wrapper, for convenient use.</summary>
@@ -251,19 +240,10 @@ namespace Google.Ads.GoogleAds.V11.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+        /// <summary>The service metadata associated with this client type.</summary>
+        public static gaxgrpc::ServiceMetadata ServiceMetadata { get; } = new gaxgrpc::ServiceMetadata(BatchJobService.Descriptor, DefaultEndpoint, DefaultScopes, true, gax::ApiTransports.Grpc, PackageApiMetadata.ApiMetadata);
 
-        internal static bool UseJwtAccessWithScopes
-        {
-            get
-            {
-                bool useJwtAccessWithScopes = true;
-                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
-                return useJwtAccessWithScopes;
-            }
-        }
-
-        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(ServiceMetadata);
 
         /// <summary>
         /// Asynchronously creates a <see cref="BatchJobServiceClient"/> using the default credentials, endpoint and
@@ -290,8 +270,9 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
         /// </param>
         /// <param name="settings">Optional <see cref="BatchJobServiceSettings"/>.</param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
         /// <returns>The created <see cref="BatchJobServiceClient"/>.</returns>
-        internal static BatchJobServiceClient Create(grpccore::CallInvoker callInvoker, BatchJobServiceSettings settings = null)
+        internal static BatchJobServiceClient Create(grpccore::CallInvoker callInvoker, BatchJobServiceSettings settings = null, mel::ILogger logger = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpcinter::Interceptor interceptor = settings?.Interceptor;
@@ -300,7 +281,7 @@ namespace Google.Ads.GoogleAds.V11.Services
                 callInvoker = grpcinter::CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
             BatchJobService.BatchJobServiceClient grpcClient = new BatchJobService.BatchJobServiceClient(callInvoker);
-            return new BatchJobServiceClientImpl(grpcClient, settings);
+            return new BatchJobServiceClientImpl(grpcClient, settings, logger);
         }
 
         /// <summary>
@@ -1441,22 +1422,23 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// </summary>
         /// <param name="grpcClient">The underlying gRPC client.</param>
         /// <param name="settings">The base <see cref="BatchJobServiceSettings"/> used within this client.</param>
-        public BatchJobServiceClientImpl(BatchJobService.BatchJobServiceClient grpcClient, BatchJobServiceSettings settings)
+        /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
+        public BatchJobServiceClientImpl(BatchJobService.BatchJobServiceClient grpcClient, BatchJobServiceSettings settings, mel::ILogger logger)
         {
             GrpcClient = grpcClient;
             BatchJobServiceSettings effectiveSettings = settings ?? BatchJobServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            RunBatchJobOperationsClient = new lro::OperationsClientImpl(grpcClient.CreateOperationsClient(), effectiveSettings.RunBatchJobOperationsSettings);
-            _callMutateBatchJob = clientHelper.BuildApiCall<MutateBatchJobRequest, MutateBatchJobResponse>(grpcClient.MutateBatchJobAsync, grpcClient.MutateBatchJob, effectiveSettings.MutateBatchJobSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            RunBatchJobOperationsClient = new lro::OperationsClientImpl(grpcClient.CreateOperationsClient(), effectiveSettings.RunBatchJobOperationsSettings, logger);
+            _callMutateBatchJob = clientHelper.BuildApiCall<MutateBatchJobRequest, MutateBatchJobResponse>("MutateBatchJob", grpcClient.MutateBatchJobAsync, grpcClient.MutateBatchJob, effectiveSettings.MutateBatchJobSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateBatchJob);
             Modify_MutateBatchJobApiCall(ref _callMutateBatchJob);
-            _callListBatchJobResults = clientHelper.BuildApiCall<ListBatchJobResultsRequest, ListBatchJobResultsResponse>(grpcClient.ListBatchJobResultsAsync, grpcClient.ListBatchJobResults, effectiveSettings.ListBatchJobResultsSettings).WithGoogleRequestParam("resource_name", request => request.ResourceName);
+            _callListBatchJobResults = clientHelper.BuildApiCall<ListBatchJobResultsRequest, ListBatchJobResultsResponse>("ListBatchJobResults", grpcClient.ListBatchJobResultsAsync, grpcClient.ListBatchJobResults, effectiveSettings.ListBatchJobResultsSettings).WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callListBatchJobResults);
             Modify_ListBatchJobResultsApiCall(ref _callListBatchJobResults);
-            _callRunBatchJob = clientHelper.BuildApiCall<RunBatchJobRequest, lro::Operation>(grpcClient.RunBatchJobAsync, grpcClient.RunBatchJob, effectiveSettings.RunBatchJobSettings).WithGoogleRequestParam("resource_name", request => request.ResourceName);
+            _callRunBatchJob = clientHelper.BuildApiCall<RunBatchJobRequest, lro::Operation>("RunBatchJob", grpcClient.RunBatchJobAsync, grpcClient.RunBatchJob, effectiveSettings.RunBatchJobSettings).WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callRunBatchJob);
             Modify_RunBatchJobApiCall(ref _callRunBatchJob);
-            _callAddBatchJobOperations = clientHelper.BuildApiCall<AddBatchJobOperationsRequest, AddBatchJobOperationsResponse>(grpcClient.AddBatchJobOperationsAsync, grpcClient.AddBatchJobOperations, effectiveSettings.AddBatchJobOperationsSettings).WithGoogleRequestParam("resource_name", request => request.ResourceName);
+            _callAddBatchJobOperations = clientHelper.BuildApiCall<AddBatchJobOperationsRequest, AddBatchJobOperationsResponse>("AddBatchJobOperations", grpcClient.AddBatchJobOperationsAsync, grpcClient.AddBatchJobOperations, effectiveSettings.AddBatchJobOperationsSettings).WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callAddBatchJobOperations);
             Modify_AddBatchJobOperationsApiCall(ref _callAddBatchJobOperations);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

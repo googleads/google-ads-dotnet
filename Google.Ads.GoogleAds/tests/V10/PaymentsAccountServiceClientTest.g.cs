@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagvr = Google.Ads.GoogleAds.V10.Resources;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using grpccore = Grpc.Core;
@@ -44,7 +45,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.ListPaymentsAccounts(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            PaymentsAccountServiceClient client = new PaymentsAccountServiceClientImpl(mockGrpcClient.Object, null);
+            PaymentsAccountServiceClient client = new PaymentsAccountServiceClientImpl(mockGrpcClient.Object, null, null);
             ListPaymentsAccountsResponse response = client.ListPaymentsAccounts(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -66,7 +67,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.ListPaymentsAccountsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<ListPaymentsAccountsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            PaymentsAccountServiceClient client = new PaymentsAccountServiceClientImpl(mockGrpcClient.Object, null);
+            PaymentsAccountServiceClient client = new PaymentsAccountServiceClientImpl(mockGrpcClient.Object, null, null);
             ListPaymentsAccountsResponse responseCallSettings = await client.ListPaymentsAccountsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             ListPaymentsAccountsResponse responseCancellationToken = await client.ListPaymentsAccountsAsync(request, st::CancellationToken.None);
@@ -90,7 +91,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.ListPaymentsAccounts(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            PaymentsAccountServiceClient client = new PaymentsAccountServiceClientImpl(mockGrpcClient.Object, null);
+            PaymentsAccountServiceClient client = new PaymentsAccountServiceClientImpl(mockGrpcClient.Object, null, null);
             ListPaymentsAccountsResponse response = client.ListPaymentsAccounts(request.CustomerId);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -112,7 +113,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.ListPaymentsAccountsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<ListPaymentsAccountsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            PaymentsAccountServiceClient client = new PaymentsAccountServiceClientImpl(mockGrpcClient.Object, null);
+            PaymentsAccountServiceClient client = new PaymentsAccountServiceClientImpl(mockGrpcClient.Object, null, null);
             ListPaymentsAccountsResponse responseCallSettings = await client.ListPaymentsAccountsAsync(request.CustomerId, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             ListPaymentsAccountsResponse responseCancellationToken = await client.ListPaymentsAccountsAsync(request.CustomerId, st::CancellationToken.None);

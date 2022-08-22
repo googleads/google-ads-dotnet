@@ -61,12 +61,18 @@ namespace Google.Ads.Gax.Tests.Interceptors
         [Test]
         public void TestInterceptTaskNoException()
         {
+            bool callbackCalled = false;
+            Action<Task<int>> callback = delegate(Task<int> task) {
+                callbackCalled = true;
+            };
+
             Task<int> interceptedTask = UnaryRpcInterceptor.Intercept<int, HelloException>(
-                Task.Run(returnIntFunc));
+                Task.Run(returnIntFunc), callback);
             Assert.DoesNotThrow(delegate ()
             {
                 interceptedTask.Wait();
             });
+            Assert.True(callbackCalled);
         }
 
         /// <summary>
@@ -75,8 +81,13 @@ namespace Google.Ads.Gax.Tests.Interceptors
         [Test]
         public void TestInterceptTaskWithException()
         {
+            bool callbackCalled = false;
+            Action<Task<int>> callback = delegate (Task<int> task) {
+                callbackCalled = true;
+            };
+
             Task<int> interceptedTask = UnaryRpcInterceptor.Intercept<int, HelloException>(
-                Task.Run(throwExceptionFunc));
+                Task.Run(throwExceptionFunc), callback);
             try
             {
                 interceptedTask.Wait();
@@ -85,6 +96,7 @@ namespace Google.Ads.Gax.Tests.Interceptors
             {
                 CheckForHelloException(ae);
             }
+            Assert.True(callbackCalled);
         }
 
         /// <summary>

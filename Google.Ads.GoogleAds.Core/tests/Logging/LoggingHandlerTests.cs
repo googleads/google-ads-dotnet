@@ -162,11 +162,10 @@ namespace Google.Ads.GoogleAds.Tests.Logging
         [Test]
         public void TestAsyncUnaryCallWithResponse()
         {
-            GoogleAdsConfig config = new GoogleAdsConfig();
-            LoggingHandler handler = new LoggingHandler(config);
+            LoggingHandler handler = new LoggingHandler();
             handler.WriteSummaryLogs = delegate (LogEntry logEntry)
             {
-                Assert.AreEqual(config.ServerUrl, logEntry.Host);
+                Assert.AreEqual(TEST_HOST, logEntry.Host);
                 Assert.AreEqual(TEST_METHOD_IN_LOGS, logEntry.Method);
                 Assert.AreSame(TEST_REQUEST_METADATA, logEntry.RequestHeaders);
                 CompareMetadata(TEST_REQUEST_METADATA, logEntry.RequestHeaders);
@@ -174,7 +173,7 @@ namespace Google.Ads.GoogleAds.Tests.Logging
             };
             handler.WriteDetailedLogs = delegate (LogEntry logEntry)
             {
-                Assert.AreEqual(config.ServerUrl, logEntry.Host);
+                Assert.AreEqual(TEST_HOST, logEntry.Host);
                 Assert.AreEqual(TEST_METHOD_IN_LOGS, logEntry.Method);
                 Assert.AreSame(TEST_REQUEST_METADATA, logEntry.RequestHeaders);
                 CompareMetadata(TEST_REQUEST_METADATA, logEntry.RequestHeaders);
@@ -196,11 +195,10 @@ namespace Google.Ads.GoogleAds.Tests.Logging
         [Test]
         public void TestAsyncUnaryCallWithException()
         {
-            GoogleAdsConfig config = new GoogleAdsConfig();
-            LoggingHandler handler = new LoggingHandler(config);
+            LoggingHandler handler = new LoggingHandler();
             handler.WriteSummaryLogs = delegate (LogEntry logEntry)
             {
-                Assert.AreEqual(config.ServerUrl, logEntry.Host);
+                Assert.AreEqual(TEST_HOST, logEntry.Host);
                 Assert.AreEqual(TEST_METHOD_IN_LOGS, logEntry.Method);
                 CompareMetadata(TEST_REQUEST_METADATA, logEntry.RequestHeaders);
 
@@ -217,7 +215,7 @@ namespace Google.Ads.GoogleAds.Tests.Logging
             };
             handler.WriteDetailedLogs = delegate (LogEntry logEntry)
             {
-                Assert.AreEqual(config.ServerUrl, logEntry.Host);
+                Assert.AreEqual(TEST_HOST, logEntry.Host);
                 Assert.AreEqual(TEST_METHOD_IN_LOGS, logEntry.Method);
                 CompareMetadata(TEST_REQUEST_METADATA, logEntry.RequestHeaders);
                 CompareMetadata(TEST_RESPONSE_METADATA, logEntry.ResponseHeaders);
@@ -252,18 +250,17 @@ namespace Google.Ads.GoogleAds.Tests.Logging
         [Test]
         public void TestAsyncUnaryCallWithPartialFailure()
         {
-            GoogleAdsConfig config = new GoogleAdsConfig();
-            LoggingHandler handler = new LoggingHandler(config);
+            LoggingHandler handler = new LoggingHandler();
             handler.WriteSummaryLogs = delegate (LogEntry logEntry)
             {
-                Assert.AreEqual(config.ServerUrl, logEntry.Host);
+                Assert.AreEqual(TEST_HOST, logEntry.Host);
                 Assert.AreEqual(TEST_METHOD_IN_LOGS, logEntry.Method);
                 CompareMetadata(TEST_REQUEST_METADATA, logEntry.RequestHeaders);
                 Assert.False(logEntry.IsFailure);
             };
             handler.WriteDetailedLogs = delegate (LogEntry logEntry)
             {
-                Assert.AreEqual(config.ServerUrl, logEntry.Host);
+                Assert.AreEqual(TEST_HOST, logEntry.Host);
                 Assert.AreEqual(TEST_METHOD_IN_LOGS, logEntry.Method);
                 CompareMetadata(TEST_REQUEST_METADATA, logEntry.RequestHeaders);
                 CompareMetadata(TEST_RESPONSE_METADATA, logEntry.ResponseHeaders);
@@ -286,18 +283,17 @@ namespace Google.Ads.GoogleAds.Tests.Logging
         [Test]
         public void TestServerStreamingWithResult()
         {
-            GoogleAdsConfig config = new GoogleAdsConfig();
-            LoggingHandler handler = new LoggingHandler(config);
+            LoggingHandler handler = new LoggingHandler();
             handler.WriteSummaryLogs = delegate (LogEntry logEntry)
             {
-                Assert.AreEqual(config.ServerUrl, logEntry.Host);
+                Assert.AreEqual(TEST_HOST, logEntry.Host);
                 Assert.AreEqual(TEST_METHOD_IN_LOGS, logEntry.Method);
                 CompareMetadata(TEST_REQUEST_METADATA, logEntry.RequestHeaders);
                 Assert.False(logEntry.IsFailure);
             };
             handler.WriteDetailedLogs = delegate (LogEntry logEntry)
             {
-                Assert.AreEqual(config.ServerUrl, logEntry.Host);
+                Assert.AreEqual(TEST_HOST, logEntry.Host);
                 Assert.AreEqual(TEST_METHOD_IN_LOGS, logEntry.Method);
                 CompareMetadata(TEST_REQUEST_METADATA, logEntry.RequestHeaders);
                 CompareMetadata(TEST_RESPONSE_METADATA, logEntry.ResponseHeaders);
@@ -321,11 +317,10 @@ namespace Google.Ads.GoogleAds.Tests.Logging
         [Test]
         public void TestServerStreamingWithException()
         {
-            GoogleAdsConfig config = new GoogleAdsConfig();
-            LoggingHandler handler = new LoggingHandler(config);
+            LoggingHandler handler = new LoggingHandler();
             handler.WriteSummaryLogs = delegate (LogEntry logEntry)
             {
-                Assert.AreEqual(config.ServerUrl, logEntry.Host);
+                Assert.AreEqual(TEST_HOST, logEntry.Host);
                 Assert.AreEqual(TEST_METHOD_IN_LOGS, logEntry.Method);
                 CompareMetadata(TEST_REQUEST_METADATA, logEntry.RequestHeaders);
                 Assert.True(logEntry.IsFailure);
@@ -341,7 +336,7 @@ namespace Google.Ads.GoogleAds.Tests.Logging
             };
             handler.WriteDetailedLogs = delegate (LogEntry logEntry)
             {
-                Assert.AreEqual(config.ServerUrl, logEntry.Host);
+                Assert.AreEqual(TEST_HOST, logEntry.Host);
                 Assert.AreEqual(TEST_METHOD_IN_LOGS, logEntry.Method);
                 CompareMetadata(TEST_REQUEST_METADATA, logEntry.RequestHeaders);
                 CompareMetadata(TEST_RESPONSE_METADATA, logEntry.ResponseHeaders);

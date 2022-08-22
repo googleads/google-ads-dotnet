@@ -75,7 +75,7 @@ namespace Google.Ads.Gax.Interceptors
             try
             {
                 // Wait for the next result to be retrieved.
-                task.Wait();
+                await task;
             }
             catch (AggregateException e)
             {

@@ -12,20 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using Google.Ads.Gax.Util;
 using Microsoft.Extensions.Configuration;
 
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Configuration;
 using System.Linq;
 using System.Runtime.CompilerServices;
-
-#if NET472
-using System.Web.Hosting;
-using System.Web.Configuration;
-#endif
 
 namespace Google.Ads.Gax.Config
 {
@@ -118,8 +113,7 @@ namespace Google.Ads.Gax.Config
         /// <param name="sectionName">Name of the section.</param>
         protected void LoadFromSettingsJson(string filePath, string sectionName)
         {
-            IConfigurationBuilder builder = 
-                new Microsoft.Extensions.Configuration.ConfigurationBuilder()
+            IConfigurationBuilder builder = new ConfigurationBuilder()
                 .AddJsonFile(filePath);
             IConfigurationRoot configRoot = builder.Build();
             LoadFromConfiguration(configRoot, sectionName);
@@ -133,20 +127,7 @@ namespace Google.Ads.Gax.Config
         /// value.</returns>
         private static Dictionary<string, string> ReadAppConfigSection(string sectionName)
         {
-            Hashtable config = null;
-
-#if NET472
-            if (HostingEnvironment.IsHosted)
-            {
-                config = (Hashtable) WebConfigurationManager.GetSection(sectionName);
-            }
-            else
-            {
-                config = (Hashtable) ConfigurationManager.GetSection(sectionName);
-            }
-#else
-            config = (Hashtable) ConfigurationManager.GetSection(sectionName);
-#endif
+            Hashtable config = ConfigUtilities.GetSection(sectionName);
             return config != null ?
                 config.Cast<DictionaryEntry>().ToDictionary(
                     d => d.Key.ToString(), d => d.Value?.ToString()) :

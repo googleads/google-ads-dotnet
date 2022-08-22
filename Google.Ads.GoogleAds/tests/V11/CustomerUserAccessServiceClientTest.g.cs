@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gaxgrpc = Google.Api.Gax.Grpc;
 using grpccore = Grpc.Core;
 using moq = Moq;
@@ -41,7 +42,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 Result = new MutateCustomerUserAccessResult(),
             };
             mockGrpcClient.Setup(x => x.MutateCustomerUserAccess(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            CustomerUserAccessServiceClient client = new CustomerUserAccessServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerUserAccessServiceClient client = new CustomerUserAccessServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomerUserAccessResponse response = client.MutateCustomerUserAccess(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -61,7 +62,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 Result = new MutateCustomerUserAccessResult(),
             };
             mockGrpcClient.Setup(x => x.MutateCustomerUserAccessAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomerUserAccessResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            CustomerUserAccessServiceClient client = new CustomerUserAccessServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerUserAccessServiceClient client = new CustomerUserAccessServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomerUserAccessResponse responseCallSettings = await client.MutateCustomerUserAccessAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateCustomerUserAccessResponse responseCancellationToken = await client.MutateCustomerUserAccessAsync(request, st::CancellationToken.None);
@@ -83,7 +84,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 Result = new MutateCustomerUserAccessResult(),
             };
             mockGrpcClient.Setup(x => x.MutateCustomerUserAccess(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            CustomerUserAccessServiceClient client = new CustomerUserAccessServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerUserAccessServiceClient client = new CustomerUserAccessServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomerUserAccessResponse response = client.MutateCustomerUserAccess(request.CustomerId, request.Operation);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -103,7 +104,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 Result = new MutateCustomerUserAccessResult(),
             };
             mockGrpcClient.Setup(x => x.MutateCustomerUserAccessAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomerUserAccessResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            CustomerUserAccessServiceClient client = new CustomerUserAccessServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerUserAccessServiceClient client = new CustomerUserAccessServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomerUserAccessResponse responseCallSettings = await client.MutateCustomerUserAccessAsync(request.CustomerId, request.Operation, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateCustomerUserAccessResponse responseCancellationToken = await client.MutateCustomerUserAccessAsync(request.CustomerId, request.Operation, st::CancellationToken.None);

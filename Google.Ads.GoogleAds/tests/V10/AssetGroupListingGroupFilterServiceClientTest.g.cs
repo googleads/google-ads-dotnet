@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagve = Google.Ads.GoogleAds.V10.Enums;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using grpccore = Grpc.Core;
@@ -50,7 +51,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateAssetGroupListingGroupFilters(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            AssetGroupListingGroupFilterServiceClient client = new AssetGroupListingGroupFilterServiceClientImpl(mockGrpcClient.Object, null);
+            AssetGroupListingGroupFilterServiceClient client = new AssetGroupListingGroupFilterServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAssetGroupListingGroupFiltersResponse response = client.MutateAssetGroupListingGroupFilters(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -78,7 +79,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateAssetGroupListingGroupFiltersAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAssetGroupListingGroupFiltersResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            AssetGroupListingGroupFilterServiceClient client = new AssetGroupListingGroupFilterServiceClientImpl(mockGrpcClient.Object, null);
+            AssetGroupListingGroupFilterServiceClient client = new AssetGroupListingGroupFilterServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAssetGroupListingGroupFiltersResponse responseCallSettings = await client.MutateAssetGroupListingGroupFiltersAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateAssetGroupListingGroupFiltersResponse responseCancellationToken = await client.MutateAssetGroupListingGroupFiltersAsync(request, st::CancellationToken.None);
@@ -106,7 +107,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateAssetGroupListingGroupFilters(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            AssetGroupListingGroupFilterServiceClient client = new AssetGroupListingGroupFilterServiceClientImpl(mockGrpcClient.Object, null);
+            AssetGroupListingGroupFilterServiceClient client = new AssetGroupListingGroupFilterServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAssetGroupListingGroupFiltersResponse response = client.MutateAssetGroupListingGroupFilters(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -132,7 +133,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateAssetGroupListingGroupFiltersAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAssetGroupListingGroupFiltersResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            AssetGroupListingGroupFilterServiceClient client = new AssetGroupListingGroupFilterServiceClientImpl(mockGrpcClient.Object, null);
+            AssetGroupListingGroupFilterServiceClient client = new AssetGroupListingGroupFilterServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAssetGroupListingGroupFiltersResponse responseCallSettings = await client.MutateAssetGroupListingGroupFiltersAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateAssetGroupListingGroupFiltersResponse responseCancellationToken = await client.MutateAssetGroupListingGroupFiltersAsync(request.CustomerId, request.Operations, st::CancellationToken.None);

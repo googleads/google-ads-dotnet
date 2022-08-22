@@ -17,7 +17,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-#pragma warning disable 0414, 1591
+#pragma warning disable 0414, 1591, 8981
 #region Designer generated code
 
 using grpc = global::Grpc.Core;
@@ -126,7 +126,7 @@ namespace Google.Ads.GoogleAds.V10.Services {
       /// <summary>
       /// Creates or removes an account link.
       /// From V5, create is not supported through
-      /// AccountLinkService.MutateAccountLink. Please use
+      /// AccountLinkService.MutateAccountLink. Use
       /// AccountLinkService.CreateAccountLink instead.
       ///
       /// List of thrown errors:
@@ -277,7 +277,7 @@ namespace Google.Ads.GoogleAds.V10.Services {
       /// <summary>
       /// Creates or removes an account link.
       /// From V5, create is not supported through
-      /// AccountLinkService.MutateAccountLink. Please use
+      /// AccountLinkService.MutateAccountLink. Use
       /// AccountLinkService.CreateAccountLink instead.
       ///
       /// List of thrown errors:
@@ -304,7 +304,7 @@ namespace Google.Ads.GoogleAds.V10.Services {
       /// <summary>
       /// Creates or removes an account link.
       /// From V5, create is not supported through
-      /// AccountLinkService.MutateAccountLink. Please use
+      /// AccountLinkService.MutateAccountLink. Use
       /// AccountLinkService.CreateAccountLink instead.
       ///
       /// List of thrown errors:
@@ -329,7 +329,7 @@ namespace Google.Ads.GoogleAds.V10.Services {
       /// <summary>
       /// Creates or removes an account link.
       /// From V5, create is not supported through
-      /// AccountLinkService.MutateAccountLink. Please use
+      /// AccountLinkService.MutateAccountLink. Use
       /// AccountLinkService.CreateAccountLink instead.
       ///
       /// List of thrown errors:
@@ -356,7 +356,7 @@ namespace Google.Ads.GoogleAds.V10.Services {
       /// <summary>
       /// Creates or removes an account link.
       /// From V5, create is not supported through
-      /// AccountLinkService.MutateAccountLink. Please use
+      /// AccountLinkService.MutateAccountLink. Use
       /// AccountLinkService.CreateAccountLink instead.
       ///
       /// List of thrown errors:
@@ -396,7 +396,7 @@ namespace Google.Ads.GoogleAds.V10.Services {
           .AddMethod(__Method_MutateAccountLink, serviceImpl.MutateAccountLink).Build();
     }
 
-    /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+    /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
     /// Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
     /// <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>

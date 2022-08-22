@@ -14,7 +14,6 @@
 
 using Google.Ads.Gax.Config;
 using System;
-using System.Threading.Tasks;
 
 namespace Google.Ads.Gax.Lib
 {
@@ -59,6 +58,8 @@ namespace Google.Ads.Gax.Lib
         /// </summary>
         /// <param name="disposing"><c>true</c> to release both managed and unmanaged resources;
         /// <c>false</c> to release only unmanaged resources.</param>
+        /// <remarks>We only have unmanaged resources to dispose, so we don't use
+        /// <paramref name="disposing"/>.</remarks>
         protected virtual void Dispose(bool disposing)
         {
             // First, mark the object as disposed, so other calls don't have to wait.
@@ -77,27 +78,13 @@ namespace Google.Ads.Gax.Lib
             var context = this.ServiceContext;
             if (context != null)
             {
-                var channel = context.ChannelBase;
+                AdsChannel channel = context.Channel as AdsChannel;
                 var client = context.Client;
 
                 if (client != null && channel != null && client.Config.UseChannelCache == false)
                 {
-                    var shutdownTask = channel.ShutdownAsync();
-                    context.ChannelBase = null;
-                    // Offload waiting for shutdown to finish to another thread.
-                    Task.Run(delegate ()
-                    {
-                        try
-                        {
-                            shutdownTask.Wait();
-                        }
-                        catch (Exception)
-                        {
-                            // Nothing to do, except to log this error.
-                            // TODO(Anash): Add logging once
-                            // https://github.com/googleads/google-ads-dotnet/issues/381 is fixed.
-                        }
-                    });
+                    channel.Dispose();
+                    context.Channel = null;
                 }
             }
         }

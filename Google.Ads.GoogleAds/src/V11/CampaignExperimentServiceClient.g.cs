@@ -14,16 +14,17 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagvr = Google.Ads.GoogleAds.V11.Resources;
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
-using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using lro = Google.LongRunning;
 using proto = Google.Protobuf;
 using wkt = Google.Protobuf.WellKnownTypes;
 using gr = Google.Rpc;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
+using mel = Microsoft.Extensions.Logging;
 using sys = System;
 using sc = System.Collections;
 using scg = System.Collections.Generic;
@@ -246,9 +247,8 @@ namespace Google.Ads.GoogleAds.V11.Services
         public CampaignExperimentServiceSettings Settings { get; set; }
 
         /// <summary>Creates a new builder with default settings.</summary>
-        public CampaignExperimentServiceClientBuilder()
+        public CampaignExperimentServiceClientBuilder() : base(CampaignExperimentServiceClient.ServiceMetadata)
         {
-            UseJwtAccessWithScopes = CampaignExperimentServiceClient.UseJwtAccessWithScopes;
         }
 
         partial void InterceptBuild(ref CampaignExperimentServiceClient client);
@@ -275,29 +275,18 @@ namespace Google.Ads.GoogleAds.V11.Services
         {
             Validate();
             grpccore::CallInvoker callInvoker = CreateCallInvoker();
-            return CampaignExperimentServiceClient.Create(callInvoker, Settings);
+            return CampaignExperimentServiceClient.Create(callInvoker, Settings, Logger);
         }
 
         private async stt::Task<CampaignExperimentServiceClient> BuildAsyncImpl(st::CancellationToken cancellationToken)
         {
             Validate();
             grpccore::CallInvoker callInvoker = await CreateCallInvokerAsync(cancellationToken).ConfigureAwait(false);
-            return CampaignExperimentServiceClient.Create(callInvoker, Settings);
+            return CampaignExperimentServiceClient.Create(callInvoker, Settings, Logger);
         }
-
-        /// <summary>Returns the endpoint for this builder type, used if no endpoint is otherwise specified.</summary>
-        protected override string GetDefaultEndpoint() => CampaignExperimentServiceClient.DefaultEndpoint;
-
-        /// <summary>
-        /// Returns the default scopes for this builder type, used if no scopes are otherwise specified.
-        /// </summary>
-        protected override scg::IReadOnlyList<string> GetDefaultScopes() => CampaignExperimentServiceClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
         protected override gaxgrpc::ChannelPool GetChannelPool() => CampaignExperimentServiceClient.ChannelPool;
-
-        /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
-        protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
     }
 
     /// <summary>CampaignExperimentService client wrapper, for convenient use.</summary>
@@ -331,19 +320,10 @@ namespace Google.Ads.GoogleAds.V11.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+        /// <summary>The service metadata associated with this client type.</summary>
+        public static gaxgrpc::ServiceMetadata ServiceMetadata { get; } = new gaxgrpc::ServiceMetadata(CampaignExperimentService.Descriptor, DefaultEndpoint, DefaultScopes, true, gax::ApiTransports.Grpc, PackageApiMetadata.ApiMetadata);
 
-        internal static bool UseJwtAccessWithScopes
-        {
-            get
-            {
-                bool useJwtAccessWithScopes = true;
-                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
-                return useJwtAccessWithScopes;
-            }
-        }
-
-        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(ServiceMetadata);
 
         /// <summary>
         /// Asynchronously creates a <see cref="CampaignExperimentServiceClient"/> using the default credentials,
@@ -373,8 +353,9 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
         /// </param>
         /// <param name="settings">Optional <see cref="CampaignExperimentServiceSettings"/>.</param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
         /// <returns>The created <see cref="CampaignExperimentServiceClient"/>.</returns>
-        internal static CampaignExperimentServiceClient Create(grpccore::CallInvoker callInvoker, CampaignExperimentServiceSettings settings = null)
+        internal static CampaignExperimentServiceClient Create(grpccore::CallInvoker callInvoker, CampaignExperimentServiceSettings settings = null, mel::ILogger logger = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpcinter::Interceptor interceptor = settings?.Interceptor;
@@ -383,7 +364,7 @@ namespace Google.Ads.GoogleAds.V11.Services
                 callInvoker = grpcinter::CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
             CampaignExperimentService.CampaignExperimentServiceClient grpcClient = new CampaignExperimentService.CampaignExperimentServiceClient(callInvoker);
-            return new CampaignExperimentServiceClientImpl(grpcClient, settings);
+            return new CampaignExperimentServiceClientImpl(grpcClient, settings, logger);
         }
 
         /// <summary>
@@ -1680,29 +1661,30 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// <param name="settings">
         /// The base <see cref="CampaignExperimentServiceSettings"/> used within this client.
         /// </param>
-        public CampaignExperimentServiceClientImpl(CampaignExperimentService.CampaignExperimentServiceClient grpcClient, CampaignExperimentServiceSettings settings)
+        /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
+        public CampaignExperimentServiceClientImpl(CampaignExperimentService.CampaignExperimentServiceClient grpcClient, CampaignExperimentServiceSettings settings, mel::ILogger logger)
         {
             GrpcClient = grpcClient;
             CampaignExperimentServiceSettings effectiveSettings = settings ?? CampaignExperimentServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            CreateCampaignExperimentOperationsClient = new lro::OperationsClientImpl(grpcClient.CreateOperationsClient(), effectiveSettings.CreateCampaignExperimentOperationsSettings);
-            PromoteCampaignExperimentOperationsClient = new lro::OperationsClientImpl(grpcClient.CreateOperationsClient(), effectiveSettings.PromoteCampaignExperimentOperationsSettings);
-            _callCreateCampaignExperiment = clientHelper.BuildApiCall<CreateCampaignExperimentRequest, lro::Operation>(grpcClient.CreateCampaignExperimentAsync, grpcClient.CreateCampaignExperiment, effectiveSettings.CreateCampaignExperimentSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            CreateCampaignExperimentOperationsClient = new lro::OperationsClientImpl(grpcClient.CreateOperationsClient(), effectiveSettings.CreateCampaignExperimentOperationsSettings, logger);
+            PromoteCampaignExperimentOperationsClient = new lro::OperationsClientImpl(grpcClient.CreateOperationsClient(), effectiveSettings.PromoteCampaignExperimentOperationsSettings, logger);
+            _callCreateCampaignExperiment = clientHelper.BuildApiCall<CreateCampaignExperimentRequest, lro::Operation>("CreateCampaignExperiment", grpcClient.CreateCampaignExperimentAsync, grpcClient.CreateCampaignExperiment, effectiveSettings.CreateCampaignExperimentSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callCreateCampaignExperiment);
             Modify_CreateCampaignExperimentApiCall(ref _callCreateCampaignExperiment);
-            _callMutateCampaignExperiments = clientHelper.BuildApiCall<MutateCampaignExperimentsRequest, MutateCampaignExperimentsResponse>(grpcClient.MutateCampaignExperimentsAsync, grpcClient.MutateCampaignExperiments, effectiveSettings.MutateCampaignExperimentsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            _callMutateCampaignExperiments = clientHelper.BuildApiCall<MutateCampaignExperimentsRequest, MutateCampaignExperimentsResponse>("MutateCampaignExperiments", grpcClient.MutateCampaignExperimentsAsync, grpcClient.MutateCampaignExperiments, effectiveSettings.MutateCampaignExperimentsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateCampaignExperiments);
             Modify_MutateCampaignExperimentsApiCall(ref _callMutateCampaignExperiments);
-            _callGraduateCampaignExperiment = clientHelper.BuildApiCall<GraduateCampaignExperimentRequest, GraduateCampaignExperimentResponse>(grpcClient.GraduateCampaignExperimentAsync, grpcClient.GraduateCampaignExperiment, effectiveSettings.GraduateCampaignExperimentSettings).WithGoogleRequestParam("campaign_experiment", request => request.CampaignExperiment);
+            _callGraduateCampaignExperiment = clientHelper.BuildApiCall<GraduateCampaignExperimentRequest, GraduateCampaignExperimentResponse>("GraduateCampaignExperiment", grpcClient.GraduateCampaignExperimentAsync, grpcClient.GraduateCampaignExperiment, effectiveSettings.GraduateCampaignExperimentSettings).WithGoogleRequestParam("campaign_experiment", request => request.CampaignExperiment);
             Modify_ApiCall(ref _callGraduateCampaignExperiment);
             Modify_GraduateCampaignExperimentApiCall(ref _callGraduateCampaignExperiment);
-            _callPromoteCampaignExperiment = clientHelper.BuildApiCall<PromoteCampaignExperimentRequest, lro::Operation>(grpcClient.PromoteCampaignExperimentAsync, grpcClient.PromoteCampaignExperiment, effectiveSettings.PromoteCampaignExperimentSettings).WithGoogleRequestParam("campaign_experiment", request => request.CampaignExperiment);
+            _callPromoteCampaignExperiment = clientHelper.BuildApiCall<PromoteCampaignExperimentRequest, lro::Operation>("PromoteCampaignExperiment", grpcClient.PromoteCampaignExperimentAsync, grpcClient.PromoteCampaignExperiment, effectiveSettings.PromoteCampaignExperimentSettings).WithGoogleRequestParam("campaign_experiment", request => request.CampaignExperiment);
             Modify_ApiCall(ref _callPromoteCampaignExperiment);
             Modify_PromoteCampaignExperimentApiCall(ref _callPromoteCampaignExperiment);
-            _callEndCampaignExperiment = clientHelper.BuildApiCall<EndCampaignExperimentRequest, wkt::Empty>(grpcClient.EndCampaignExperimentAsync, grpcClient.EndCampaignExperiment, effectiveSettings.EndCampaignExperimentSettings).WithGoogleRequestParam("campaign_experiment", request => request.CampaignExperiment);
+            _callEndCampaignExperiment = clientHelper.BuildApiCall<EndCampaignExperimentRequest, wkt::Empty>("EndCampaignExperiment", grpcClient.EndCampaignExperimentAsync, grpcClient.EndCampaignExperiment, effectiveSettings.EndCampaignExperimentSettings).WithGoogleRequestParam("campaign_experiment", request => request.CampaignExperiment);
             Modify_ApiCall(ref _callEndCampaignExperiment);
             Modify_EndCampaignExperimentApiCall(ref _callEndCampaignExperiment);
-            _callListCampaignExperimentAsyncErrors = clientHelper.BuildApiCall<ListCampaignExperimentAsyncErrorsRequest, ListCampaignExperimentAsyncErrorsResponse>(grpcClient.ListCampaignExperimentAsyncErrorsAsync, grpcClient.ListCampaignExperimentAsyncErrors, effectiveSettings.ListCampaignExperimentAsyncErrorsSettings).WithGoogleRequestParam("resource_name", request => request.ResourceName);
+            _callListCampaignExperimentAsyncErrors = clientHelper.BuildApiCall<ListCampaignExperimentAsyncErrorsRequest, ListCampaignExperimentAsyncErrorsResponse>("ListCampaignExperimentAsyncErrors", grpcClient.ListCampaignExperimentAsyncErrorsAsync, grpcClient.ListCampaignExperimentAsyncErrors, effectiveSettings.ListCampaignExperimentAsyncErrorsSettings).WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callListCampaignExperimentAsyncErrors);
             Modify_ListCampaignExperimentAsyncErrorsApiCall(ref _callListCampaignExperimentAsyncErrors);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

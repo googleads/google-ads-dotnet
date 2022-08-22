@@ -14,12 +14,13 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
-using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using proto = Google.Protobuf;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
+using mel = Microsoft.Extensions.Logging;
 using sys = System;
 using scg = System.Collections.Generic;
 using sco = System.Collections.ObjectModel;
@@ -88,9 +89,8 @@ namespace Google.Ads.GoogleAds.V11.Services
         public KeywordThemeConstantServiceSettings Settings { get; set; }
 
         /// <summary>Creates a new builder with default settings.</summary>
-        public KeywordThemeConstantServiceClientBuilder()
+        public KeywordThemeConstantServiceClientBuilder() : base(KeywordThemeConstantServiceClient.ServiceMetadata)
         {
-            UseJwtAccessWithScopes = KeywordThemeConstantServiceClient.UseJwtAccessWithScopes;
         }
 
         partial void InterceptBuild(ref KeywordThemeConstantServiceClient client);
@@ -117,29 +117,18 @@ namespace Google.Ads.GoogleAds.V11.Services
         {
             Validate();
             grpccore::CallInvoker callInvoker = CreateCallInvoker();
-            return KeywordThemeConstantServiceClient.Create(callInvoker, Settings);
+            return KeywordThemeConstantServiceClient.Create(callInvoker, Settings, Logger);
         }
 
         private async stt::Task<KeywordThemeConstantServiceClient> BuildAsyncImpl(st::CancellationToken cancellationToken)
         {
             Validate();
             grpccore::CallInvoker callInvoker = await CreateCallInvokerAsync(cancellationToken).ConfigureAwait(false);
-            return KeywordThemeConstantServiceClient.Create(callInvoker, Settings);
+            return KeywordThemeConstantServiceClient.Create(callInvoker, Settings, Logger);
         }
-
-        /// <summary>Returns the endpoint for this builder type, used if no endpoint is otherwise specified.</summary>
-        protected override string GetDefaultEndpoint() => KeywordThemeConstantServiceClient.DefaultEndpoint;
-
-        /// <summary>
-        /// Returns the default scopes for this builder type, used if no scopes are otherwise specified.
-        /// </summary>
-        protected override scg::IReadOnlyList<string> GetDefaultScopes() => KeywordThemeConstantServiceClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
         protected override gaxgrpc::ChannelPool GetChannelPool() => KeywordThemeConstantServiceClient.ChannelPool;
-
-        /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
-        protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
     }
 
     /// <summary>KeywordThemeConstantService client wrapper, for convenient use.</summary>
@@ -164,19 +153,10 @@ namespace Google.Ads.GoogleAds.V11.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+        /// <summary>The service metadata associated with this client type.</summary>
+        public static gaxgrpc::ServiceMetadata ServiceMetadata { get; } = new gaxgrpc::ServiceMetadata(KeywordThemeConstantService.Descriptor, DefaultEndpoint, DefaultScopes, true, gax::ApiTransports.Grpc, PackageApiMetadata.ApiMetadata);
 
-        internal static bool UseJwtAccessWithScopes
-        {
-            get
-            {
-                bool useJwtAccessWithScopes = true;
-                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
-                return useJwtAccessWithScopes;
-            }
-        }
-
-        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(ServiceMetadata);
 
         /// <summary>
         /// Asynchronously creates a <see cref="KeywordThemeConstantServiceClient"/> using the default credentials,
@@ -206,8 +186,9 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
         /// </param>
         /// <param name="settings">Optional <see cref="KeywordThemeConstantServiceSettings"/>.</param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
         /// <returns>The created <see cref="KeywordThemeConstantServiceClient"/>.</returns>
-        internal static KeywordThemeConstantServiceClient Create(grpccore::CallInvoker callInvoker, KeywordThemeConstantServiceSettings settings = null)
+        internal static KeywordThemeConstantServiceClient Create(grpccore::CallInvoker callInvoker, KeywordThemeConstantServiceSettings settings = null, mel::ILogger logger = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpcinter::Interceptor interceptor = settings?.Interceptor;
@@ -216,7 +197,7 @@ namespace Google.Ads.GoogleAds.V11.Services
                 callInvoker = grpcinter::CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
             KeywordThemeConstantService.KeywordThemeConstantServiceClient grpcClient = new KeywordThemeConstantService.KeywordThemeConstantServiceClient(callInvoker);
-            return new KeywordThemeConstantServiceClientImpl(grpcClient, settings);
+            return new KeywordThemeConstantServiceClientImpl(grpcClient, settings, logger);
         }
 
         /// <summary>
@@ -303,12 +284,13 @@ namespace Google.Ads.GoogleAds.V11.Services
         /// <param name="settings">
         /// The base <see cref="KeywordThemeConstantServiceSettings"/> used within this client.
         /// </param>
-        public KeywordThemeConstantServiceClientImpl(KeywordThemeConstantService.KeywordThemeConstantServiceClient grpcClient, KeywordThemeConstantServiceSettings settings)
+        /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
+        public KeywordThemeConstantServiceClientImpl(KeywordThemeConstantService.KeywordThemeConstantServiceClient grpcClient, KeywordThemeConstantServiceSettings settings, mel::ILogger logger)
         {
             GrpcClient = grpcClient;
             KeywordThemeConstantServiceSettings effectiveSettings = settings ?? KeywordThemeConstantServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callSuggestKeywordThemeConstants = clientHelper.BuildApiCall<SuggestKeywordThemeConstantsRequest, SuggestKeywordThemeConstantsResponse>(grpcClient.SuggestKeywordThemeConstantsAsync, grpcClient.SuggestKeywordThemeConstants, effectiveSettings.SuggestKeywordThemeConstantsSettings);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            _callSuggestKeywordThemeConstants = clientHelper.BuildApiCall<SuggestKeywordThemeConstantsRequest, SuggestKeywordThemeConstantsResponse>("SuggestKeywordThemeConstants", grpcClient.SuggestKeywordThemeConstantsAsync, grpcClient.SuggestKeywordThemeConstants, effectiveSettings.SuggestKeywordThemeConstantsSettings);
             Modify_ApiCall(ref _callSuggestKeywordThemeConstants);
             Modify_SuggestKeywordThemeConstantsApiCall(ref _callSuggestKeywordThemeConstants);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

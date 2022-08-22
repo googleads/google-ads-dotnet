@@ -19,7 +19,7 @@ using Google.Protobuf.WellKnownTypes;
 
 namespace Google.Ads.GoogleAds.V10.Services
 {
-    public sealed partial class MutateCampaignGroupsResponse
+    public sealed partial class MutateCampaignGroupsResponse 
     {
         /// <summary>
         /// Gets a GoogleAdsFailure instance that combines all the errors

@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagvr = Google.Ads.GoogleAds.V10.Resources;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using lro = Google.LongRunning;
@@ -55,7 +56,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateExperiments(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null);
+            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateExperimentsResponse response = client.MutateExperiments(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -85,7 +86,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateExperimentsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateExperimentsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null);
+            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateExperimentsResponse responseCallSettings = await client.MutateExperimentsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateExperimentsResponse responseCancellationToken = await client.MutateExperimentsAsync(request, st::CancellationToken.None);
@@ -115,7 +116,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateExperiments(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null);
+            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateExperimentsResponse response = client.MutateExperiments(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -143,7 +144,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateExperimentsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateExperimentsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null);
+            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateExperimentsResponse responseCallSettings = await client.MutateExperimentsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateExperimentsResponse responseCancellationToken = await client.MutateExperimentsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
@@ -163,7 +164,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
             };
             wkt::Empty expectedResponse = new wkt::Empty { };
             mockGrpcClient.Setup(x => x.EndExperiment(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null);
+            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null, null);
             client.EndExperiment(request);
             mockGrpcClient.VerifyAll();
         }
@@ -180,7 +181,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
             };
             wkt::Empty expectedResponse = new wkt::Empty { };
             mockGrpcClient.Setup(x => x.EndExperimentAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<wkt::Empty>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null);
+            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null, null);
             await client.EndExperimentAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             await client.EndExperimentAsync(request, st::CancellationToken.None);
             mockGrpcClient.VerifyAll();
@@ -197,7 +198,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
             };
             wkt::Empty expectedResponse = new wkt::Empty { };
             mockGrpcClient.Setup(x => x.EndExperiment(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null);
+            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null, null);
             client.EndExperiment(request.Experiment);
             mockGrpcClient.VerifyAll();
         }
@@ -213,7 +214,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
             };
             wkt::Empty expectedResponse = new wkt::Empty { };
             mockGrpcClient.Setup(x => x.EndExperimentAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<wkt::Empty>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null);
+            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null, null);
             await client.EndExperimentAsync(request.Experiment, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             await client.EndExperimentAsync(request.Experiment, st::CancellationToken.None);
             mockGrpcClient.VerifyAll();
@@ -230,7 +231,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
             };
             wkt::Empty expectedResponse = new wkt::Empty { };
             mockGrpcClient.Setup(x => x.EndExperiment(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null);
+            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null, null);
             client.EndExperiment(request.ExperimentAsExperimentName);
             mockGrpcClient.VerifyAll();
         }
@@ -246,7 +247,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
             };
             wkt::Empty expectedResponse = new wkt::Empty { };
             mockGrpcClient.Setup(x => x.EndExperimentAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<wkt::Empty>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null);
+            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null, null);
             await client.EndExperimentAsync(request.ExperimentAsExperimentName, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             await client.EndExperimentAsync(request.ExperimentAsExperimentName, st::CancellationToken.None);
             mockGrpcClient.VerifyAll();
@@ -268,7 +269,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
             };
             wkt::Empty expectedResponse = new wkt::Empty { };
             mockGrpcClient.Setup(x => x.GraduateExperiment(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null);
+            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null, null);
             client.GraduateExperiment(request);
             mockGrpcClient.VerifyAll();
         }
@@ -289,7 +290,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
             };
             wkt::Empty expectedResponse = new wkt::Empty { };
             mockGrpcClient.Setup(x => x.GraduateExperimentAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<wkt::Empty>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null);
+            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null, null);
             await client.GraduateExperimentAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             await client.GraduateExperimentAsync(request, st::CancellationToken.None);
             mockGrpcClient.VerifyAll();
@@ -310,7 +311,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
             };
             wkt::Empty expectedResponse = new wkt::Empty { };
             mockGrpcClient.Setup(x => x.GraduateExperiment(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null);
+            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null, null);
             client.GraduateExperiment(request.Experiment, request.CampaignBudgetMappings);
             mockGrpcClient.VerifyAll();
         }
@@ -330,7 +331,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
             };
             wkt::Empty expectedResponse = new wkt::Empty { };
             mockGrpcClient.Setup(x => x.GraduateExperimentAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<wkt::Empty>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null);
+            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null, null);
             await client.GraduateExperimentAsync(request.Experiment, request.CampaignBudgetMappings, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             await client.GraduateExperimentAsync(request.Experiment, request.CampaignBudgetMappings, st::CancellationToken.None);
             mockGrpcClient.VerifyAll();
@@ -351,7 +352,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
             };
             wkt::Empty expectedResponse = new wkt::Empty { };
             mockGrpcClient.Setup(x => x.GraduateExperiment(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null);
+            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null, null);
             client.GraduateExperiment(request.ExperimentAsExperimentName, request.CampaignBudgetMappings);
             mockGrpcClient.VerifyAll();
         }
@@ -371,7 +372,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
             };
             wkt::Empty expectedResponse = new wkt::Empty { };
             mockGrpcClient.Setup(x => x.GraduateExperimentAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<wkt::Empty>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null);
+            ExperimentServiceClient client = new ExperimentServiceClientImpl(mockGrpcClient.Object, null, null);
             await client.GraduateExperimentAsync(request.ExperimentAsExperimentName, request.CampaignBudgetMappings, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             await client.GraduateExperimentAsync(request.ExperimentAsExperimentName, request.CampaignBudgetMappings, st::CancellationToken.None);
             mockGrpcClient.VerifyAll();

@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gaxgrpc = Google.Api.Gax.Grpc;
 using grpccore = Grpc.Core;
 using moq = Moq;
@@ -41,7 +42,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 Result = new MutateCustomerUserAccessInvitationResult(),
             };
             mockGrpcClient.Setup(x => x.MutateCustomerUserAccessInvitation(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            CustomerUserAccessInvitationServiceClient client = new CustomerUserAccessInvitationServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerUserAccessInvitationServiceClient client = new CustomerUserAccessInvitationServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomerUserAccessInvitationResponse response = client.MutateCustomerUserAccessInvitation(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -61,7 +62,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 Result = new MutateCustomerUserAccessInvitationResult(),
             };
             mockGrpcClient.Setup(x => x.MutateCustomerUserAccessInvitationAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomerUserAccessInvitationResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            CustomerUserAccessInvitationServiceClient client = new CustomerUserAccessInvitationServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerUserAccessInvitationServiceClient client = new CustomerUserAccessInvitationServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomerUserAccessInvitationResponse responseCallSettings = await client.MutateCustomerUserAccessInvitationAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateCustomerUserAccessInvitationResponse responseCancellationToken = await client.MutateCustomerUserAccessInvitationAsync(request, st::CancellationToken.None);
@@ -83,7 +84,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 Result = new MutateCustomerUserAccessInvitationResult(),
             };
             mockGrpcClient.Setup(x => x.MutateCustomerUserAccessInvitation(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            CustomerUserAccessInvitationServiceClient client = new CustomerUserAccessInvitationServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerUserAccessInvitationServiceClient client = new CustomerUserAccessInvitationServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomerUserAccessInvitationResponse response = client.MutateCustomerUserAccessInvitation(request.CustomerId, request.Operation);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -103,7 +104,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 Result = new MutateCustomerUserAccessInvitationResult(),
             };
             mockGrpcClient.Setup(x => x.MutateCustomerUserAccessInvitationAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomerUserAccessInvitationResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            CustomerUserAccessInvitationServiceClient client = new CustomerUserAccessInvitationServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerUserAccessInvitationServiceClient client = new CustomerUserAccessInvitationServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomerUserAccessInvitationResponse responseCallSettings = await client.MutateCustomerUserAccessInvitationAsync(request.CustomerId, request.Operation, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateCustomerUserAccessInvitationResponse responseCancellationToken = await client.MutateCustomerUserAccessInvitationAsync(request.CustomerId, request.Operation, st::CancellationToken.None);

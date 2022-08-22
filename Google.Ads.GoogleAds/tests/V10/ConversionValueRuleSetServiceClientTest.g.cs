@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagve = Google.Ads.GoogleAds.V10.Enums;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using gr = Google.Rpc;
@@ -53,7 +54,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateConversionValueRuleSets(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            ConversionValueRuleSetServiceClient client = new ConversionValueRuleSetServiceClientImpl(mockGrpcClient.Object, null);
+            ConversionValueRuleSetServiceClient client = new ConversionValueRuleSetServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateConversionValueRuleSetsResponse response = client.MutateConversionValueRuleSets(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -83,7 +84,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateConversionValueRuleSetsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateConversionValueRuleSetsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            ConversionValueRuleSetServiceClient client = new ConversionValueRuleSetServiceClientImpl(mockGrpcClient.Object, null);
+            ConversionValueRuleSetServiceClient client = new ConversionValueRuleSetServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateConversionValueRuleSetsResponse responseCallSettings = await client.MutateConversionValueRuleSetsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateConversionValueRuleSetsResponse responseCancellationToken = await client.MutateConversionValueRuleSetsAsync(request, st::CancellationToken.None);
@@ -112,7 +113,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateConversionValueRuleSets(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            ConversionValueRuleSetServiceClient client = new ConversionValueRuleSetServiceClientImpl(mockGrpcClient.Object, null);
+            ConversionValueRuleSetServiceClient client = new ConversionValueRuleSetServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateConversionValueRuleSetsResponse response = client.MutateConversionValueRuleSets(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -139,7 +140,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateConversionValueRuleSetsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateConversionValueRuleSetsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            ConversionValueRuleSetServiceClient client = new ConversionValueRuleSetServiceClientImpl(mockGrpcClient.Object, null);
+            ConversionValueRuleSetServiceClient client = new ConversionValueRuleSetServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateConversionValueRuleSetsResponse responseCallSettings = await client.MutateConversionValueRuleSetsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateConversionValueRuleSetsResponse responseCancellationToken = await client.MutateConversionValueRuleSetsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);

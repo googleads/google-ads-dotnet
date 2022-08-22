@@ -27,6 +27,30 @@ namespace Google.Ads.Gax.Util
     public static class ProtobufUtilities
     {
         /// <summary>
+        /// Parses an enum from the original protobuf name of the field.
+        /// </summary>
+        /// <typeparam name="T">Type of the enum to parse into.</typeparam>
+        /// <param name="name">The protobuf name.</param>
+        /// <returns>The parsed enum.</returns>
+        public static T ParseOriginalEnumFieldName<T>(string name)
+            where T : Enum
+        {
+            FieldInfo[] fields = typeof(T).GetFields(BindingFlags.Public |
+                BindingFlags.Static);
+            foreach (FieldInfo field in fields)
+            {
+                OriginalNameAttribute originalName = (OriginalNameAttribute)
+                   field.GetCustomAttributes(typeof(OriginalNameAttribute),
+                       false).FirstOrDefault();
+                if (originalName != null && originalName.Name == name)
+                {
+                    return (T)Enum.Parse(typeof(T), field.Name, true);
+                }
+            }
+            return default(T);
+        }
+
+        /// <summary>
         /// Gets the original name of an enum field in case it was renamed for
         /// name style conventions.
         /// </summary>

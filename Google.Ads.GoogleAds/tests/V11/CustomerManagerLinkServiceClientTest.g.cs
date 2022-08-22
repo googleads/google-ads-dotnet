@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagvr = Google.Ads.GoogleAds.V11.Resources;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using grpccore = Grpc.Core;
@@ -49,7 +50,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateCustomerManagerLink(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomerManagerLinkResponse response = client.MutateCustomerManagerLink(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -76,7 +77,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateCustomerManagerLinkAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomerManagerLinkResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomerManagerLinkResponse responseCallSettings = await client.MutateCustomerManagerLinkAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateCustomerManagerLinkResponse responseCancellationToken = await client.MutateCustomerManagerLinkAsync(request, st::CancellationToken.None);
@@ -104,7 +105,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateCustomerManagerLink(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomerManagerLinkResponse response = client.MutateCustomerManagerLink(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -130,7 +131,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 },
             };
             mockGrpcClient.Setup(x => x.MutateCustomerManagerLinkAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCustomerManagerLinkResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCustomerManagerLinkResponse responseCallSettings = await client.MutateCustomerManagerLinkAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateCustomerManagerLinkResponse responseCancellationToken = await client.MutateCustomerManagerLinkAsync(request.CustomerId, request.Operations, st::CancellationToken.None);
@@ -154,7 +155,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerManagerCustomerManagerLink("[CUSTOMER_ID]", "[MANAGER_CUSTOMER_ID]", "[MANAGER_LINK_ID]"),
             };
             mockGrpcClient.Setup(x => x.MoveManagerLink(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null, null);
             MoveManagerLinkResponse response = client.MoveManagerLink(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -176,7 +177,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerManagerCustomerManagerLink("[CUSTOMER_ID]", "[MANAGER_CUSTOMER_ID]", "[MANAGER_LINK_ID]"),
             };
             mockGrpcClient.Setup(x => x.MoveManagerLinkAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MoveManagerLinkResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null, null);
             MoveManagerLinkResponse responseCallSettings = await client.MoveManagerLinkAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MoveManagerLinkResponse responseCancellationToken = await client.MoveManagerLinkAsync(request, st::CancellationToken.None);
@@ -199,7 +200,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerManagerCustomerManagerLink("[CUSTOMER_ID]", "[MANAGER_CUSTOMER_ID]", "[MANAGER_LINK_ID]"),
             };
             mockGrpcClient.Setup(x => x.MoveManagerLink(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null, null);
             MoveManagerLinkResponse response = client.MoveManagerLink(request.CustomerId, request.PreviousCustomerManagerLink, request.NewManager);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -220,7 +221,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 ResourceNameAsCustomerManagerLinkName = gagvr::CustomerManagerLinkName.FromCustomerManagerCustomerManagerLink("[CUSTOMER_ID]", "[MANAGER_CUSTOMER_ID]", "[MANAGER_LINK_ID]"),
             };
             mockGrpcClient.Setup(x => x.MoveManagerLinkAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MoveManagerLinkResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null);
+            CustomerManagerLinkServiceClient client = new CustomerManagerLinkServiceClientImpl(mockGrpcClient.Object, null, null);
             MoveManagerLinkResponse responseCallSettings = await client.MoveManagerLinkAsync(request.CustomerId, request.PreviousCustomerManagerLink, request.NewManager, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MoveManagerLinkResponse responseCancellationToken = await client.MoveManagerLinkAsync(request.CustomerId, request.PreviousCustomerManagerLink, request.NewManager, st::CancellationToken.None);

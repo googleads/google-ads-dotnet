@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagve = Google.Ads.GoogleAds.V10.Enums;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using gr = Google.Rpc;
@@ -53,7 +54,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateCampaignCriteria(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            CampaignCriterionServiceClient client = new CampaignCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            CampaignCriterionServiceClient client = new CampaignCriterionServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCampaignCriteriaResponse response = client.MutateCampaignCriteria(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -83,7 +84,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateCampaignCriteriaAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCampaignCriteriaResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            CampaignCriterionServiceClient client = new CampaignCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            CampaignCriterionServiceClient client = new CampaignCriterionServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCampaignCriteriaResponse responseCallSettings = await client.MutateCampaignCriteriaAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateCampaignCriteriaResponse responseCancellationToken = await client.MutateCampaignCriteriaAsync(request, st::CancellationToken.None);
@@ -112,7 +113,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateCampaignCriteria(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            CampaignCriterionServiceClient client = new CampaignCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            CampaignCriterionServiceClient client = new CampaignCriterionServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCampaignCriteriaResponse response = client.MutateCampaignCriteria(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -139,7 +140,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateCampaignCriteriaAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateCampaignCriteriaResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            CampaignCriterionServiceClient client = new CampaignCriterionServiceClientImpl(mockGrpcClient.Object, null);
+            CampaignCriterionServiceClient client = new CampaignCriterionServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateCampaignCriteriaResponse responseCallSettings = await client.MutateCampaignCriteriaAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateCampaignCriteriaResponse responseCancellationToken = await client.MutateCampaignCriteriaAsync(request.CustomerId, request.Operations, st::CancellationToken.None);

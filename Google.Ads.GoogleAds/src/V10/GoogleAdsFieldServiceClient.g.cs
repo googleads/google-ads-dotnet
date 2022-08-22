@@ -14,13 +14,14 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagvr = Google.Ads.GoogleAds.V10.Resources;
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
-using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using proto = Google.Protobuf;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
+using mel = Microsoft.Extensions.Logging;
 using sys = System;
 using sc = System.Collections;
 using scg = System.Collections.Generic;
@@ -113,9 +114,8 @@ namespace Google.Ads.GoogleAds.V10.Services
         public GoogleAdsFieldServiceSettings Settings { get; set; }
 
         /// <summary>Creates a new builder with default settings.</summary>
-        public GoogleAdsFieldServiceClientBuilder()
+        public GoogleAdsFieldServiceClientBuilder() : base(GoogleAdsFieldServiceClient.ServiceMetadata)
         {
-            UseJwtAccessWithScopes = GoogleAdsFieldServiceClient.UseJwtAccessWithScopes;
         }
 
         partial void InterceptBuild(ref GoogleAdsFieldServiceClient client);
@@ -142,29 +142,18 @@ namespace Google.Ads.GoogleAds.V10.Services
         {
             Validate();
             grpccore::CallInvoker callInvoker = CreateCallInvoker();
-            return GoogleAdsFieldServiceClient.Create(callInvoker, Settings);
+            return GoogleAdsFieldServiceClient.Create(callInvoker, Settings, Logger);
         }
 
         private async stt::Task<GoogleAdsFieldServiceClient> BuildAsyncImpl(st::CancellationToken cancellationToken)
         {
             Validate();
             grpccore::CallInvoker callInvoker = await CreateCallInvokerAsync(cancellationToken).ConfigureAwait(false);
-            return GoogleAdsFieldServiceClient.Create(callInvoker, Settings);
+            return GoogleAdsFieldServiceClient.Create(callInvoker, Settings, Logger);
         }
-
-        /// <summary>Returns the endpoint for this builder type, used if no endpoint is otherwise specified.</summary>
-        protected override string GetDefaultEndpoint() => GoogleAdsFieldServiceClient.DefaultEndpoint;
-
-        /// <summary>
-        /// Returns the default scopes for this builder type, used if no scopes are otherwise specified.
-        /// </summary>
-        protected override scg::IReadOnlyList<string> GetDefaultScopes() => GoogleAdsFieldServiceClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
         protected override gaxgrpc::ChannelPool GetChannelPool() => GoogleAdsFieldServiceClient.ChannelPool;
-
-        /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
-        protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
     }
 
     /// <summary>GoogleAdsFieldService client wrapper, for convenient use.</summary>
@@ -189,19 +178,10 @@ namespace Google.Ads.GoogleAds.V10.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+        /// <summary>The service metadata associated with this client type.</summary>
+        public static gaxgrpc::ServiceMetadata ServiceMetadata { get; } = new gaxgrpc::ServiceMetadata(GoogleAdsFieldService.Descriptor, DefaultEndpoint, DefaultScopes, true, gax::ApiTransports.Grpc, PackageApiMetadata.ApiMetadata);
 
-        internal static bool UseJwtAccessWithScopes
-        {
-            get
-            {
-                bool useJwtAccessWithScopes = true;
-                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
-                return useJwtAccessWithScopes;
-            }
-        }
-
-        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(ServiceMetadata);
 
         /// <summary>
         /// Asynchronously creates a <see cref="GoogleAdsFieldServiceClient"/> using the default credentials, endpoint
@@ -231,8 +211,9 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
         /// </param>
         /// <param name="settings">Optional <see cref="GoogleAdsFieldServiceSettings"/>.</param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
         /// <returns>The created <see cref="GoogleAdsFieldServiceClient"/>.</returns>
-        internal static GoogleAdsFieldServiceClient Create(grpccore::CallInvoker callInvoker, GoogleAdsFieldServiceSettings settings = null)
+        internal static GoogleAdsFieldServiceClient Create(grpccore::CallInvoker callInvoker, GoogleAdsFieldServiceSettings settings = null, mel::ILogger logger = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpcinter::Interceptor interceptor = settings?.Interceptor;
@@ -241,7 +222,7 @@ namespace Google.Ads.GoogleAds.V10.Services
                 callInvoker = grpcinter::CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
             GoogleAdsFieldService.GoogleAdsFieldServiceClient grpcClient = new GoogleAdsFieldService.GoogleAdsFieldServiceClient(callInvoker);
-            return new GoogleAdsFieldServiceClientImpl(grpcClient, settings);
+            return new GoogleAdsFieldServiceClientImpl(grpcClient, settings, logger);
         }
 
         /// <summary>
@@ -556,15 +537,16 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// </summary>
         /// <param name="grpcClient">The underlying gRPC client.</param>
         /// <param name="settings">The base <see cref="GoogleAdsFieldServiceSettings"/> used within this client.</param>
-        public GoogleAdsFieldServiceClientImpl(GoogleAdsFieldService.GoogleAdsFieldServiceClient grpcClient, GoogleAdsFieldServiceSettings settings)
+        /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
+        public GoogleAdsFieldServiceClientImpl(GoogleAdsFieldService.GoogleAdsFieldServiceClient grpcClient, GoogleAdsFieldServiceSettings settings, mel::ILogger logger)
         {
             GrpcClient = grpcClient;
             GoogleAdsFieldServiceSettings effectiveSettings = settings ?? GoogleAdsFieldServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callGetGoogleAdsField = clientHelper.BuildApiCall<GetGoogleAdsFieldRequest, gagvr::GoogleAdsField>(grpcClient.GetGoogleAdsFieldAsync, grpcClient.GetGoogleAdsField, effectiveSettings.GetGoogleAdsFieldSettings).WithGoogleRequestParam("resource_name", request => request.ResourceName);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            _callGetGoogleAdsField = clientHelper.BuildApiCall<GetGoogleAdsFieldRequest, gagvr::GoogleAdsField>("GetGoogleAdsField", grpcClient.GetGoogleAdsFieldAsync, grpcClient.GetGoogleAdsField, effectiveSettings.GetGoogleAdsFieldSettings).WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetGoogleAdsField);
             Modify_GetGoogleAdsFieldApiCall(ref _callGetGoogleAdsField);
-            _callSearchGoogleAdsFields = clientHelper.BuildApiCall<SearchGoogleAdsFieldsRequest, SearchGoogleAdsFieldsResponse>(grpcClient.SearchGoogleAdsFieldsAsync, grpcClient.SearchGoogleAdsFields, effectiveSettings.SearchGoogleAdsFieldsSettings);
+            _callSearchGoogleAdsFields = clientHelper.BuildApiCall<SearchGoogleAdsFieldsRequest, SearchGoogleAdsFieldsResponse>("SearchGoogleAdsFields", grpcClient.SearchGoogleAdsFieldsAsync, grpcClient.SearchGoogleAdsFields, effectiveSettings.SearchGoogleAdsFieldsSettings);
             Modify_ApiCall(ref _callSearchGoogleAdsFields);
             Modify_SearchGoogleAdsFieldsApiCall(ref _callSearchGoogleAdsFields);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

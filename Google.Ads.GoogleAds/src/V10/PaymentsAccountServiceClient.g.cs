@@ -14,12 +14,13 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
-using gaxgrpccore = Google.Api.Gax.Grpc.GrpcCore;
 using proto = Google.Protobuf;
 using grpccore = Grpc.Core;
 using grpcinter = Grpc.Core.Interceptors;
+using mel = Microsoft.Extensions.Logging;
 using sys = System;
 using scg = System.Collections.Generic;
 using sco = System.Collections.ObjectModel;
@@ -88,9 +89,8 @@ namespace Google.Ads.GoogleAds.V10.Services
         public PaymentsAccountServiceSettings Settings { get; set; }
 
         /// <summary>Creates a new builder with default settings.</summary>
-        public PaymentsAccountServiceClientBuilder()
+        public PaymentsAccountServiceClientBuilder() : base(PaymentsAccountServiceClient.ServiceMetadata)
         {
-            UseJwtAccessWithScopes = PaymentsAccountServiceClient.UseJwtAccessWithScopes;
         }
 
         partial void InterceptBuild(ref PaymentsAccountServiceClient client);
@@ -117,29 +117,18 @@ namespace Google.Ads.GoogleAds.V10.Services
         {
             Validate();
             grpccore::CallInvoker callInvoker = CreateCallInvoker();
-            return PaymentsAccountServiceClient.Create(callInvoker, Settings);
+            return PaymentsAccountServiceClient.Create(callInvoker, Settings, Logger);
         }
 
         private async stt::Task<PaymentsAccountServiceClient> BuildAsyncImpl(st::CancellationToken cancellationToken)
         {
             Validate();
             grpccore::CallInvoker callInvoker = await CreateCallInvokerAsync(cancellationToken).ConfigureAwait(false);
-            return PaymentsAccountServiceClient.Create(callInvoker, Settings);
+            return PaymentsAccountServiceClient.Create(callInvoker, Settings, Logger);
         }
-
-        /// <summary>Returns the endpoint for this builder type, used if no endpoint is otherwise specified.</summary>
-        protected override string GetDefaultEndpoint() => PaymentsAccountServiceClient.DefaultEndpoint;
-
-        /// <summary>
-        /// Returns the default scopes for this builder type, used if no scopes are otherwise specified.
-        /// </summary>
-        protected override scg::IReadOnlyList<string> GetDefaultScopes() => PaymentsAccountServiceClient.DefaultScopes;
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
         protected override gaxgrpc::ChannelPool GetChannelPool() => PaymentsAccountServiceClient.ChannelPool;
-
-        /// <summary>Returns the default <see cref="gaxgrpc::GrpcAdapter"/>to use if not otherwise specified.</summary>
-        protected override gaxgrpc::GrpcAdapter DefaultGrpcAdapter => gaxgrpccore::GrpcCoreAdapter.Instance;
     }
 
     /// <summary>PaymentsAccountService client wrapper, for convenient use.</summary>
@@ -165,19 +154,10 @@ namespace Google.Ads.GoogleAds.V10.Services
             "https://www.googleapis.com/auth/adwords",
         });
 
-        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(DefaultScopes, UseJwtAccessWithScopes);
+        /// <summary>The service metadata associated with this client type.</summary>
+        public static gaxgrpc::ServiceMetadata ServiceMetadata { get; } = new gaxgrpc::ServiceMetadata(PaymentsAccountService.Descriptor, DefaultEndpoint, DefaultScopes, true, gax::ApiTransports.Grpc, PackageApiMetadata.ApiMetadata);
 
-        internal static bool UseJwtAccessWithScopes
-        {
-            get
-            {
-                bool useJwtAccessWithScopes = true;
-                MaybeUseJwtAccessWithScopes(ref useJwtAccessWithScopes);
-                return useJwtAccessWithScopes;
-            }
-        }
-
-        static partial void MaybeUseJwtAccessWithScopes(ref bool useJwtAccessWithScopes);
+        internal static gaxgrpc::ChannelPool ChannelPool { get; } = new gaxgrpc::ChannelPool(ServiceMetadata);
 
         /// <summary>
         /// Asynchronously creates a <see cref="PaymentsAccountServiceClient"/> using the default credentials, endpoint
@@ -207,8 +187,9 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
         /// </param>
         /// <param name="settings">Optional <see cref="PaymentsAccountServiceSettings"/>.</param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
         /// <returns>The created <see cref="PaymentsAccountServiceClient"/>.</returns>
-        internal static PaymentsAccountServiceClient Create(grpccore::CallInvoker callInvoker, PaymentsAccountServiceSettings settings = null)
+        internal static PaymentsAccountServiceClient Create(grpccore::CallInvoker callInvoker, PaymentsAccountServiceSettings settings = null, mel::ILogger logger = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpcinter::Interceptor interceptor = settings?.Interceptor;
@@ -217,7 +198,7 @@ namespace Google.Ads.GoogleAds.V10.Services
                 callInvoker = grpcinter::CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
             PaymentsAccountService.PaymentsAccountServiceClient grpcClient = new PaymentsAccountService.PaymentsAccountServiceClient(callInvoker);
-            return new PaymentsAccountServiceClientImpl(grpcClient, settings);
+            return new PaymentsAccountServiceClientImpl(grpcClient, settings, logger);
         }
 
         /// <summary>
@@ -386,12 +367,13 @@ namespace Google.Ads.GoogleAds.V10.Services
         /// <param name="settings">
         /// The base <see cref="PaymentsAccountServiceSettings"/> used within this client.
         /// </param>
-        public PaymentsAccountServiceClientImpl(PaymentsAccountService.PaymentsAccountServiceClient grpcClient, PaymentsAccountServiceSettings settings)
+        /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
+        public PaymentsAccountServiceClientImpl(PaymentsAccountService.PaymentsAccountServiceClient grpcClient, PaymentsAccountServiceSettings settings, mel::ILogger logger)
         {
             GrpcClient = grpcClient;
             PaymentsAccountServiceSettings effectiveSettings = settings ?? PaymentsAccountServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings);
-            _callListPaymentsAccounts = clientHelper.BuildApiCall<ListPaymentsAccountsRequest, ListPaymentsAccountsResponse>(grpcClient.ListPaymentsAccountsAsync, grpcClient.ListPaymentsAccounts, effectiveSettings.ListPaymentsAccountsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            _callListPaymentsAccounts = clientHelper.BuildApiCall<ListPaymentsAccountsRequest, ListPaymentsAccountsResponse>("ListPaymentsAccounts", grpcClient.ListPaymentsAccountsAsync, grpcClient.ListPaymentsAccounts, effectiveSettings.ListPaymentsAccountsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callListPaymentsAccounts);
             Modify_ListPaymentsAccountsApiCall(ref _callListPaymentsAccounts);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);

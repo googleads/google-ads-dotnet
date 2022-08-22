@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Title>Google Ads GAPIC Extensions Dotnet Client Library Test Utils</Title>
     <PackageId>Google.Ads.Gax.TestUtilities</PackageId>
-    <Version>1.0.3</Version>
+    <Version>1.0.1</Version>
     <Description>This library provides testing functionality for GAPIC client libraries for Google's Ads APIs.</Description>
     <PackageReleaseNotes>https://github.com/googleads/google-ads-dotnet/blob/main/ChangeLog</PackageReleaseNotes>
     <PackageTags>GoogleAds Google Gax</PackageTags>
@@ -20,7 +20,7 @@
   </PropertyGroup>
   <!-- build properties -->
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net472;net5.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1;net472;net5.0</TargetFrameworks>
     <AssemblyName>Google.Ads.Gax.TestUtilities</AssemblyName>
     <RootNamespace>Google.Ads.Gax.TestUtilities</RootNamespace>
     <SignAssembly>true</SignAssembly>
@@ -30,15 +30,15 @@
     <IncludeSource>true</IncludeSource>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <AssemblyVersion>1.0.3</AssemblyVersion>
-    <FileVersion>1.0.3</FileVersion>
+    <AssemblyVersion>1.0.1</AssemblyVersion>
+    <FileVersion>1.0.1</FileVersion>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <None Include="logo.png" Pack="true" PackagePath="\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="NUnit" Version="3.13.2" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\Google.Ads.Gax.csproj" />

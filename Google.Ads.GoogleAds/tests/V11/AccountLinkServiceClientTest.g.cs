@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagvr = Google.Ads.GoogleAds.V11.Resources;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using gr = Google.Rpc;
@@ -43,7 +44,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 ResourceNameAsAccountLinkName = gagvr::AccountLinkName.FromCustomerAccountLink("[CUSTOMER_ID]", "[ACCOUNT_LINK_ID]"),
             };
             mockGrpcClient.Setup(x => x.CreateAccountLink(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            AccountLinkServiceClient client = new AccountLinkServiceClientImpl(mockGrpcClient.Object, null);
+            AccountLinkServiceClient client = new AccountLinkServiceClientImpl(mockGrpcClient.Object, null, null);
             CreateAccountLinkResponse response = client.CreateAccountLink(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -63,7 +64,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 ResourceNameAsAccountLinkName = gagvr::AccountLinkName.FromCustomerAccountLink("[CUSTOMER_ID]", "[ACCOUNT_LINK_ID]"),
             };
             mockGrpcClient.Setup(x => x.CreateAccountLinkAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<CreateAccountLinkResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            AccountLinkServiceClient client = new AccountLinkServiceClientImpl(mockGrpcClient.Object, null);
+            AccountLinkServiceClient client = new AccountLinkServiceClientImpl(mockGrpcClient.Object, null, null);
             CreateAccountLinkResponse responseCallSettings = await client.CreateAccountLinkAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             CreateAccountLinkResponse responseCancellationToken = await client.CreateAccountLinkAsync(request, st::CancellationToken.None);
@@ -85,7 +86,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 ResourceNameAsAccountLinkName = gagvr::AccountLinkName.FromCustomerAccountLink("[CUSTOMER_ID]", "[ACCOUNT_LINK_ID]"),
             };
             mockGrpcClient.Setup(x => x.CreateAccountLink(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            AccountLinkServiceClient client = new AccountLinkServiceClientImpl(mockGrpcClient.Object, null);
+            AccountLinkServiceClient client = new AccountLinkServiceClientImpl(mockGrpcClient.Object, null, null);
             CreateAccountLinkResponse response = client.CreateAccountLink(request.CustomerId, request.AccountLink);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -105,7 +106,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 ResourceNameAsAccountLinkName = gagvr::AccountLinkName.FromCustomerAccountLink("[CUSTOMER_ID]", "[ACCOUNT_LINK_ID]"),
             };
             mockGrpcClient.Setup(x => x.CreateAccountLinkAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<CreateAccountLinkResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            AccountLinkServiceClient client = new AccountLinkServiceClientImpl(mockGrpcClient.Object, null);
+            AccountLinkServiceClient client = new AccountLinkServiceClientImpl(mockGrpcClient.Object, null, null);
             CreateAccountLinkResponse responseCallSettings = await client.CreateAccountLinkAsync(request.CustomerId, request.AccountLink, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             CreateAccountLinkResponse responseCancellationToken = await client.CreateAccountLinkAsync(request.CustomerId, request.AccountLink, st::CancellationToken.None);
@@ -130,7 +131,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateAccountLink(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            AccountLinkServiceClient client = new AccountLinkServiceClientImpl(mockGrpcClient.Object, null);
+            AccountLinkServiceClient client = new AccountLinkServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAccountLinkResponse response = client.MutateAccountLink(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -153,7 +154,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateAccountLinkAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAccountLinkResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            AccountLinkServiceClient client = new AccountLinkServiceClientImpl(mockGrpcClient.Object, null);
+            AccountLinkServiceClient client = new AccountLinkServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAccountLinkResponse responseCallSettings = await client.MutateAccountLinkAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateAccountLinkResponse responseCancellationToken = await client.MutateAccountLinkAsync(request, st::CancellationToken.None);
@@ -176,7 +177,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateAccountLink(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            AccountLinkServiceClient client = new AccountLinkServiceClientImpl(mockGrpcClient.Object, null);
+            AccountLinkServiceClient client = new AccountLinkServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAccountLinkResponse response = client.MutateAccountLink(request.CustomerId, request.Operation);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -197,7 +198,7 @@ namespace Google.Ads.GoogleAds.Tests.V11.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateAccountLinkAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateAccountLinkResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            AccountLinkServiceClient client = new AccountLinkServiceClientImpl(mockGrpcClient.Object, null);
+            AccountLinkServiceClient client = new AccountLinkServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateAccountLinkResponse responseCallSettings = await client.MutateAccountLinkAsync(request.CustomerId, request.Operation, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateAccountLinkResponse responseCancellationToken = await client.MutateAccountLinkAsync(request.CustomerId, request.Operation, st::CancellationToken.None);

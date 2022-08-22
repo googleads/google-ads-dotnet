@@ -12,12 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using Google.Ads.GoogleAds.Config;
-using Google.Ads.GoogleAds.Lib;
+using Google.Ads.Gax.Config;
+using Google.Ads.Gax.Lib;
 using Grpc.Core;
 using NUnit.Framework;
 
-namespace Google.Ads.GoogleAds.Tests.Lib
+namespace Google.Ads.Gax.Tests.Lib
 {
     /// <summary>
     /// Tests for <see cref="CachedChannelFactory"/> class.
@@ -26,7 +26,11 @@ namespace Google.Ads.GoogleAds.Tests.Lib
     [Category("Flaky")]
     internal class CachedChannelFactoryTests
     {
-        private GoogleAdsConfig config = new GoogleAdsConfig();
+        private AdsConfig config = new AdsConfig()
+        {
+            OAuth2Scope = "TEST_OAUTH2_SCOPE"
+        };
+        private const string TEST_SERVER_URL = "https://ignored.com";
         CachedChannelFactory factory = new CachedChannelFactory();
 
         /// <summary>
@@ -35,8 +39,8 @@ namespace Google.Ads.GoogleAds.Tests.Lib
         [Test]
         public void TestGetChannelIsCached()
         {
-            ChannelBase channel1 = factory.GetChannel(config);
-            ChannelBase channel2 = factory.GetChannel(config);
+            ChannelBase channel1 = factory.GetChannel(config, TEST_SERVER_URL);
+            ChannelBase channel2 = factory.GetChannel(config, TEST_SERVER_URL);
 
             Assert.AreSame(channel1, channel2);
         }
@@ -48,13 +52,14 @@ namespace Google.Ads.GoogleAds.Tests.Lib
         [Test]
         public void TestGetChannelCanBeDisabled()
         {
-            GoogleAdsConfig configNoCache = new GoogleAdsConfig()
+            AdsConfig configNoCache = new AdsConfig()
             {
-                UseChannelCache = false
+                UseChannelCache = false,
+                OAuth2Scope = "TEST_OAUTH2_SCOPE"
             };
 
-            ChannelBase channel1 = factory.GetChannel(configNoCache);
-            ChannelBase channel2 = factory.GetChannel(configNoCache);
+            ChannelBase channel1 = factory.GetChannel(configNoCache, TEST_SERVER_URL);
+            ChannelBase channel2 = factory.GetChannel(configNoCache, TEST_SERVER_URL);
 
             Assert.AreNotSame(channel1, channel2);
         }

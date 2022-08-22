@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gaxgrpc = Google.Api.Gax.Grpc;
 using grpccore = Grpc.Core;
 using moq = Moq;
@@ -40,7 +41,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.ListPlannableLocations(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
+            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             ListPlannableLocationsResponse response = client.ListPlannableLocations(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -59,7 +60,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.ListPlannableLocationsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<ListPlannableLocationsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
+            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             ListPlannableLocationsResponse responseCallSettings = await client.ListPlannableLocationsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             ListPlannableLocationsResponse responseCancellationToken = await client.ListPlannableLocationsAsync(request, st::CancellationToken.None);
@@ -83,7 +84,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.ListPlannableProducts(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
+            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             ListPlannableProductsResponse response = client.ListPlannableProducts(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -105,7 +106,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.ListPlannableProductsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<ListPlannableProductsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
+            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             ListPlannableProductsResponse responseCallSettings = await client.ListPlannableProductsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             ListPlannableProductsResponse responseCancellationToken = await client.ListPlannableProductsAsync(request, st::CancellationToken.None);
@@ -129,7 +130,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.ListPlannableProducts(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
+            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             ListPlannableProductsResponse response = client.ListPlannableProducts(request.PlannableLocationId);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -151,7 +152,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.ListPlannableProductsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<ListPlannableProductsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
+            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             ListPlannableProductsResponse responseCallSettings = await client.ListPlannableProductsAsync(request.PlannableLocationId, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             ListPlannableProductsResponse responseCancellationToken = await client.ListPlannableProductsAsync(request.PlannableLocationId, st::CancellationToken.None);
@@ -179,7 +180,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.GenerateProductMixIdeas(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
+            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateProductMixIdeasResponse response = client.GenerateProductMixIdeas(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -205,7 +206,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.GenerateProductMixIdeasAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateProductMixIdeasResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
+            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateProductMixIdeasResponse responseCallSettings = await client.GenerateProductMixIdeasAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             GenerateProductMixIdeasResponse responseCancellationToken = await client.GenerateProductMixIdeasAsync(request, st::CancellationToken.None);
@@ -232,7 +233,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.GenerateProductMixIdeas(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
+            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateProductMixIdeasResponse response = client.GenerateProductMixIdeas(request.CustomerId, request.PlannableLocationId, request.CurrencyCode, request.BudgetMicros);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -257,7 +258,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 },
             };
             mockGrpcClient.Setup(x => x.GenerateProductMixIdeasAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateProductMixIdeasResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
+            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateProductMixIdeasResponse responseCallSettings = await client.GenerateProductMixIdeasAsync(request.CustomerId, request.PlannableLocationId, request.CurrencyCode, request.BudgetMicros, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             GenerateProductMixIdeasResponse responseCancellationToken = await client.GenerateProductMixIdeasAsync(request.CustomerId, request.PlannableLocationId, request.CurrencyCode, request.BudgetMicros, st::CancellationToken.None);
@@ -290,7 +291,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 ReachCurve = new ReachCurve(),
             };
             mockGrpcClient.Setup(x => x.GenerateReachForecast(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
+            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateReachForecastResponse response = client.GenerateReachForecast(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -321,7 +322,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 ReachCurve = new ReachCurve(),
             };
             mockGrpcClient.Setup(x => x.GenerateReachForecastAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateReachForecastResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
+            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateReachForecastResponse responseCallSettings = await client.GenerateReachForecastAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             GenerateReachForecastResponse responseCancellationToken = await client.GenerateReachForecastAsync(request, st::CancellationToken.None);
@@ -348,7 +349,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 ReachCurve = new ReachCurve(),
             };
             mockGrpcClient.Setup(x => x.GenerateReachForecast(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
+            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateReachForecastResponse response = client.GenerateReachForecast(request.CustomerId, request.CampaignDuration, request.PlannedProducts);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -373,7 +374,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 ReachCurve = new ReachCurve(),
             };
             mockGrpcClient.Setup(x => x.GenerateReachForecastAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<GenerateReachForecastResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null);
+            ReachPlanServiceClient client = new ReachPlanServiceClientImpl(mockGrpcClient.Object, null, null);
             GenerateReachForecastResponse responseCallSettings = await client.GenerateReachForecastAsync(request.CustomerId, request.CampaignDuration, request.PlannedProducts, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             GenerateReachForecastResponse responseCancellationToken = await client.GenerateReachForecastAsync(request.CustomerId, request.CampaignDuration, request.PlannedProducts, st::CancellationToken.None);

@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagvr = Google.Ads.GoogleAds.V10.Resources;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using grpccore = Grpc.Core;
@@ -38,7 +39,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
             };
             RegenerateShareableLinkIdResponse expectedResponse = new RegenerateShareableLinkIdResponse { };
             mockGrpcClient.Setup(x => x.RegenerateShareableLinkId(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            ThirdPartyAppAnalyticsLinkServiceClient client = new ThirdPartyAppAnalyticsLinkServiceClientImpl(mockGrpcClient.Object, null);
+            ThirdPartyAppAnalyticsLinkServiceClient client = new ThirdPartyAppAnalyticsLinkServiceClientImpl(mockGrpcClient.Object, null, null);
             RegenerateShareableLinkIdResponse response = client.RegenerateShareableLinkId(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -54,7 +55,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
             };
             RegenerateShareableLinkIdResponse expectedResponse = new RegenerateShareableLinkIdResponse { };
             mockGrpcClient.Setup(x => x.RegenerateShareableLinkIdAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<RegenerateShareableLinkIdResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            ThirdPartyAppAnalyticsLinkServiceClient client = new ThirdPartyAppAnalyticsLinkServiceClientImpl(mockGrpcClient.Object, null);
+            ThirdPartyAppAnalyticsLinkServiceClient client = new ThirdPartyAppAnalyticsLinkServiceClientImpl(mockGrpcClient.Object, null, null);
             RegenerateShareableLinkIdResponse responseCallSettings = await client.RegenerateShareableLinkIdAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             RegenerateShareableLinkIdResponse responseCancellationToken = await client.RegenerateShareableLinkIdAsync(request, st::CancellationToken.None);

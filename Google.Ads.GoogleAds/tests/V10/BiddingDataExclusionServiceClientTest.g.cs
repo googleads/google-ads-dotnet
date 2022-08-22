@@ -14,6 +14,7 @@
 
 // Generated code. DO NOT EDIT!
 
+#pragma warning disable CS8981
 using gagve = Google.Ads.GoogleAds.V10.Enums;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using gr = Google.Rpc;
@@ -53,7 +54,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateBiddingDataExclusions(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            BiddingDataExclusionServiceClient client = new BiddingDataExclusionServiceClientImpl(mockGrpcClient.Object, null);
+            BiddingDataExclusionServiceClient client = new BiddingDataExclusionServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateBiddingDataExclusionsResponse response = client.MutateBiddingDataExclusions(request);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -83,7 +84,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateBiddingDataExclusionsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateBiddingDataExclusionsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            BiddingDataExclusionServiceClient client = new BiddingDataExclusionServiceClientImpl(mockGrpcClient.Object, null);
+            BiddingDataExclusionServiceClient client = new BiddingDataExclusionServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateBiddingDataExclusionsResponse responseCallSettings = await client.MutateBiddingDataExclusionsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateBiddingDataExclusionsResponse responseCancellationToken = await client.MutateBiddingDataExclusionsAsync(request, st::CancellationToken.None);
@@ -112,7 +113,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateBiddingDataExclusions(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(expectedResponse);
-            BiddingDataExclusionServiceClient client = new BiddingDataExclusionServiceClientImpl(mockGrpcClient.Object, null);
+            BiddingDataExclusionServiceClient client = new BiddingDataExclusionServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateBiddingDataExclusionsResponse response = client.MutateBiddingDataExclusions(request.CustomerId, request.Operations);
             Assert.AreEqual(expectedResponse, response);
             mockGrpcClient.VerifyAll();
@@ -139,7 +140,7 @@ namespace Google.Ads.GoogleAds.Tests.V10.Services
                 PartialFailureError = new gr::Status(),
             };
             mockGrpcClient.Setup(x => x.MutateBiddingDataExclusionsAsync(request, moq::It.IsAny<grpccore::CallOptions>())).Returns(new grpccore::AsyncUnaryCall<MutateBiddingDataExclusionsResponse>(stt::Task.FromResult(expectedResponse), null, null, null, null));
-            BiddingDataExclusionServiceClient client = new BiddingDataExclusionServiceClientImpl(mockGrpcClient.Object, null);
+            BiddingDataExclusionServiceClient client = new BiddingDataExclusionServiceClientImpl(mockGrpcClient.Object, null, null);
             MutateBiddingDataExclusionsResponse responseCallSettings = await client.MutateBiddingDataExclusionsAsync(request.CustomerId, request.Operations, gaxgrpc::CallSettings.FromCancellationToken(st::CancellationToken.None));
             Assert.AreEqual(expectedResponse, responseCallSettings);
             MutateBiddingDataExclusionsResponse responseCancellationToken = await client.MutateBiddingDataExclusionsAsync(request.CustomerId, request.Operations, st::CancellationToken.None);

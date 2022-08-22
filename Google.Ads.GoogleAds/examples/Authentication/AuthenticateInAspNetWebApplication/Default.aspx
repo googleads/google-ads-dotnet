@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Google.Ads.GoogleAds.Examples.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Google.Ads.GoogleAds.Examples.Default" Async="true"%>
 
 <!DOCTYPE html>
 

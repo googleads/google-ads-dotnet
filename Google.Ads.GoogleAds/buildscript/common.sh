@@ -1,4 +1,17 @@
 #!/bin/bash
+# Copyright 2022 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http:#www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
 
 ########################################################################
 # Sets up the global variable for REPO_ROOT relative to KOKORO_ROOT. The
@@ -169,6 +182,9 @@ function dotnet_library::build_library() {
   "${DOTNET_BINARY}" build --configuration Release --source "${NUGET_PACKAGE_PATH}" \
       "${DOTNET_CLIENT_LIBRARY_PATH}/src/Google.Ads.GoogleAds.csproj"
 
+  "${DOTNET_BINARY}" build --configuration Release --source "${NUGET_PACKAGE_PATH}" \
+      "${DOTNET_GAX_LIBRARY_PATH}/tests/TestUtilities/Google.Ads.Gax.TestUtilities.csproj"
+
   echo "Build the examples."
   echo "==================="
   "${DOTNET_BINARY}" build --configuration Release --source "${NUGET_PACKAGE_PATH}" \
@@ -183,7 +199,7 @@ function dotnet_library::build_library() {
       "${DOTNET_CLIENT_LIBRARY_PATH}/examples/Authentication/AuthenticateInAspNetCoreApplication/AuthenticateInAspNetCoreApplication.csproj"
 
   echo "Build the tests."
-  echo "=============="
+  echo "================"
   "${DOTNET_BINARY}" build --configuration Release --source "${NUGET_PACKAGE_PATH}" \
       "${DOTNET_CLIENT_LIBRARY_PATH}/tests/Google.Ads.GoogleAds.Tests.csproj"
 
@@ -227,6 +243,10 @@ function dotnet_library::build_library_artifacts() {
 
   echo "Package the library"
   echo "==================="
+
+  "${DOTNET_BINARY}" pack --configuration Release --no-build \
+      --output "${REPO_ROOT}/artifacts" \
+      "${DOTNET_GAX_LIBRARY_PATH}/tests/TestUtilities/Google.Ads.Gax.TestUtilities.csproj"
 
   "${DOTNET_BINARY}" pack --configuration Release --no-build \
       --output "${REPO_ROOT}/artifacts" \
