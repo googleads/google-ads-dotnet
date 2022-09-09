@@ -25,4 +25,5 @@ source "${scriptdir}/common.sh"
 # Fail on any error.
 set -e
 
-dotnet_library::release_main
+#dotnet_library::release_main
+tree ${KOKORO_GFILE_DIR} 
