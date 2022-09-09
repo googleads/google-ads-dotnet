@@ -16,14 +16,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="Authentication\**" />
-    <Compile Remove="Migration\**" />
     <EmbeddedResource Remove="Authentication\**" />
-    <EmbeddedResource Remove="Migration\**" />
     <None Remove="Authentication\**" />
-    <None Remove="Migration\**" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Migration\CampaignReportToCsv.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Google.Ads.Common" Version="9.5.1" />
