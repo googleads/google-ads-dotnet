@@ -16,7 +16,6 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.Util;
 using Google.Ads.GoogleAds.V11.Common;
 using Google.Ads.GoogleAds.V11.Errors;
 using Google.Ads.GoogleAds.V11.Resources;
@@ -25,6 +24,7 @@ using Google.Api.Gax;
 using Google.Protobuf;
 using System.Collections.Generic;
 using System;
+using System.Linq;
 using System.Threading;
 using static Google.Ads.GoogleAds.V11.Enums.ConversionActionCategoryEnum.Types;
 using static Google.Ads.GoogleAds.V11.Enums.ConversionOriginEnum.Types;
@@ -524,6 +524,8 @@ namespace Google.Ads.GoogleAds.Examples.V11
         // [START add_performance_max_retail_campaign_5]
         /// <summary>
         /// Creates multiple text assets and returns the list of resource names.
+        /// These repeated assets must be created in a separate request prior to
+        /// creating the campaign.
         /// </summary>
         /// <param name="client">The Google Ads Client.</param>
         /// <param name="customerId">The customer's ID.</param>
@@ -704,7 +706,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
                 CreateAndLinkImageAsset(
                     assetGroupResourceName,
                     resourceNameGenerator.Next(),
-                    "https://gaagl.page.link/bjYi",
+                    "https://gaagl.page.link/1Crm",
                     AssetFieldType.Logo,
                     "Logo Image",
                     config
@@ -735,7 +737,10 @@ namespace Google.Ads.GoogleAds.Examples.V11
                 )
             );
 
-            return operations;
+            // The list of operations must be sorted so that all asset
+            // operations come before all the asset group asset operations,
+            // otherwise the API will reject the request.
+            return operations.OrderBy(x => x.AssetOperation is null).ToList();
         }
 
         // [END add_performance_max_retail_campaign_6]
