@@ -28,10 +28,10 @@ namespace Google.Ads.GoogleAds.Examples.V11
     /// This code example generates historical metrics for a keyword plan. To create a keyword
     /// plan, run the AddKeywordPlan example.
     /// </summary>
-    public class GenerateHistoricMetrics : ExampleBase
+    public class GenerateHistoricalMetrics : ExampleBase
     {
         /// <summary>
-        /// Command line options for running the <see cref="GenerateHistoricMetrics"/> example.
+        /// Command line options for running the <see cref="GenerateHistoricalMetrics"/> example.
         /// </summary>
         public class Options : OptionsBase
         {
@@ -43,11 +43,11 @@ namespace Google.Ads.GoogleAds.Examples.V11
             public long CustomerId { get; set; }
 
             /// <summary>
-            /// ID of the plan for which the historic metrics are retrieved.
+            /// The keyword plan ID.
             /// </summary>
-            [Option("planId", Required = true, HelpText =
-                "ID of the plan for which the historic metrics are retrieved.")]
-            public long PlanId { get; set; }
+            [Option("keywordPlanId", Required = true, HelpText =
+                "The keyword plan ID.")]
+            public long KeywordPlanId { get; set; }
         }
 
         /// <summary>
@@ -58,9 +58,9 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
-            GenerateHistoricMetrics codeExample = new GenerateHistoricMetrics();
+            GenerateHistoricalMetrics codeExample = new GenerateHistoricalMetrics();
             Console.WriteLine(codeExample.Description);
-            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.PlanId);
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.KeywordPlanId);
         }
 
         /// <summary>
