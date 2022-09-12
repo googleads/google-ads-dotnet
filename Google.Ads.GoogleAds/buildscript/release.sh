@@ -25,4 +25,7 @@ source "${scriptdir}/common.sh"
 # Fail on any error.
 set -e
 
-dotnet_library::release_main
+#dotnet_library::release_main
+echo "Now in parent..."
+echo "Listing the contents of ${KOKORO_GFILE_DIR}"
+tree ${KOKORO_GFILE_DIR} 
