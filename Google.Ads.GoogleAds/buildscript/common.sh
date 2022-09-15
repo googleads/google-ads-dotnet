@@ -313,6 +313,7 @@ function dotnet_library::upload_nuget_packages() {
 #   None
 ########################################################################
 function dotnet_library::check_library_release_version_exists() {
+  echo "[BEGIN] check_library_release_version_exists
   pushd "${KOKORO_GFILE_DIR}"
   while read i
   do
@@ -323,7 +324,7 @@ function dotnet_library::check_library_release_version_exists() {
       break
     fi
   done < <(ls Google.Ads.GoogleAds.*.nupkg)
-
+  echo "Library version to release is '${LIBRARY_VERSION_TO_RELEASE}'."
   if [[ -z "${LIBRARY_VERSION_TO_RELEASE}" ]]; then
     LIBRARY_VERSION_EXISTS=0
   else
@@ -337,6 +338,7 @@ function dotnet_library::check_library_release_version_exists() {
     fi
   fi
   popd
+  echo "[END] check_library_release_version_exists
 }
 
 ########################################################################
