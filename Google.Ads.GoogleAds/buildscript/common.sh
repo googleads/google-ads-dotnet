@@ -292,7 +292,7 @@ function dotnet_library::upload_nuget_packages() {
   # So it is safe to run this command multiple times.
   # Note: We do not publish debug symbols today, hence we skip it.
   
-  rm *.symbols.nupkg
+  rm ${KOKORO_GFILE_DIR}/*.symbols.nupkg
   "${DOTNET_BINARY}" nuget push --api-key ${GOOGLE_ADS_DOTNET_NUGET_KEY} \
       --skip-duplicate --no-symbols \
       --source https://api.nuget.org/v3/index.json \
@@ -327,15 +327,17 @@ function dotnet_library::check_library_release_version_exists() {
   if [[ -z "${LIBRARY_VERSION_TO_RELEASE}" ]]; then
     LIBRARY_VERSION_EXISTS=0
   else
-    version_tag=`curl "${GITHUB_RELEASE_URL}" | \
-    jq '.[] | select(.tag_name == "v{LIBRARY_VERSION_TO_RELEASE}") | .tag_name'`
+    jq_query=".[] | select(.tag_name==\""v${LIBRARY_VERSION_TO_RELEASE}\"") | .tag_name"
 
+    version_tag=`curl "${GITHUB_RELEASE_URL}" | jq "${jq_query}"`
+    echo "Version tag is ${version_tag}"
     if [[ -z "${version_tag}" ]]; then
       LIBRARY_VERSION_EXISTS=0
     else
       LIBRARY_VERSION_EXISTS=1
     fi
   fi
+  echo "Library version exists: ${LIBRARY_VERSION_EXISTS}"
   popd
 }
 
