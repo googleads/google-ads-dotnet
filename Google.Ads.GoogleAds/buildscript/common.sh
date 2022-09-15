@@ -313,7 +313,6 @@ function dotnet_library::upload_nuget_packages() {
 #   None
 ########################################################################
 function dotnet_library::check_library_release_version_exists() {
-  echo "[BEGIN] check_library_release_version_exists"
   pushd "${KOKORO_GFILE_DIR}"
   while read i
   do
@@ -338,7 +337,6 @@ function dotnet_library::check_library_release_version_exists() {
     fi
   fi
   popd
-  echo "[END] check_library_release_version_exists"
 }
 
 ########################################################################
@@ -389,7 +387,6 @@ function dotnet_library::build_main() {
   dotnet_library::set_repo_root
   dotnet_library::set_path_variables
   dotnet_library::install_dotnet
-  dotnet_library::install_additional_tools
   dotnet_library::build_library
   dotnet_library::build_library_artifacts
   dotnet_library::save_build_artifacts
@@ -404,6 +401,9 @@ function dotnet_library::build_main() {
 #   None
 ########################################################################
 function dotnet_library::release_main() {
+  dotnet_library::set_repo_root
+  dotnet_library::set_path_variables
+  dotnet_library::install_additional_tools
   dotnet_library::extract_keystore_secrets
   dotnet_library::check_library_release_version_exists
   if (( ${LIBRARY_VERSION_EXISTS} )); then
