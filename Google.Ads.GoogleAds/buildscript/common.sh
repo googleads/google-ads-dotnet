@@ -313,7 +313,7 @@ function dotnet_library::upload_nuget_packages() {
 #   None
 ########################################################################
 function dotnet_library::check_library_release_version_exists() {
-  echo "[BEGIN] check_library_release_version_exists
+  echo "[BEGIN] check_library_release_version_exists"
   pushd "${KOKORO_GFILE_DIR}"
   while read i
   do
@@ -338,7 +338,7 @@ function dotnet_library::check_library_release_version_exists() {
     fi
   fi
   popd
-  echo "[END] check_library_release_version_exists
+  echo "[END] check_library_release_version_exists"
 }
 
 ########################################################################
