@@ -281,7 +281,8 @@ function dotnet_library::save_build_artifacts() {
 # Globals:
 #   DOTNET_BINARY the path to the dotnet compiler binary.
 #   GOOGLE_ADS_DOTNET_NUGET_KEY the nuget key for publishing the package.
-#   REPO_ROOT the root directory of the google-ads-dotnet repo.
+#   KOKORO_GFILE_DIR root of the Kokoro GFile directory. Kokoro downloads
+#     the output from the build job into this directory.
 # Arguments:
 #   None
 ########################################################################
@@ -290,17 +291,19 @@ function dotnet_library::upload_nuget_packages() {
   # so there is no need to detect if a package was formally published.
   # So it is safe to run this command multiple times.
   # Note: We do not publish debug symbols today, hence we skip it.
+  
+  rm ${KOKORO_GFILE_DIR}/*.symbols.nupkg
   "${DOTNET_BINARY}" nuget push --api-key ${GOOGLE_ADS_DOTNET_NUGET_KEY} \
       --skip-duplicate --no-symbols \
       --source https://api.nuget.org/v3/index.json \
-      "${REPO_ROOT}/artifacts/*.nupkg"
+      "${KOKORO_GFILE_DIR}/*.nupkg"
 }
 
 ########################################################################
 # Check if a release exists on GitHub.
 # Globals:
-#   DOTNET_CLIENT_LIBRARY_PATH root of the Google.Ads.GoogleAds package
-#     source code.
+#   KOKORO_GFILE_DIR root of the Kokoro GFile directory. Kokoro downloads
+#     the output from the build job into this directory.
 #   LIBRARY_VERSION_TO_RELEASE: This is the new library version to
 #     release.
 #   LIBRARY_VERSION_EXISTS This flag is set to true if the release
@@ -310,17 +313,32 @@ function dotnet_library::upload_nuget_packages() {
 #   None
 ########################################################################
 function dotnet_library::check_library_release_version_exists() {
-  LIBRARY_VERSION_TO_RELEASE=`sed -rn "s/\s*<Version>(([0-9]*\.?){3})<\/Version>\s*/\1/p" \
-      ${DOTNET_CLIENT_LIBRARY_PATH}/src/Google.Ads.GoogleAds.csproj`
-
-  version_tag=`curl "${GITHUB_RELEASE_URL}" | \
-      jq '.[] | select(.tag_name == "v{LIBRARY_VERSION_TO_RELEASE}") | .tag_name'`
-
-  if [[ -z "${version_tag}" ]]; then
+  pushd "${KOKORO_GFILE_DIR}"
+  while read i
+  do
+    version_match=`echo "${i}" | sed -rn "s/Google\.Ads\.GoogleAds\.(([0-9]*\.?){3})\.nupkg/\1/p"`
+    if [[ -n "${version_match}" ]]
+    then
+      LIBRARY_VERSION_TO_RELEASE="${version_match}"
+      break
+    fi
+  done < <(ls Google.Ads.GoogleAds.*.nupkg)
+  echo "Library version to release is '${LIBRARY_VERSION_TO_RELEASE}'."
+  if [[ -z "${LIBRARY_VERSION_TO_RELEASE}" ]]; then
     LIBRARY_VERSION_EXISTS=0
   else
-    LIBRARY_VERSION_EXISTS=1
+    jq_query=".[] | select(.tag_name==\""v${LIBRARY_VERSION_TO_RELEASE}\"") | .tag_name"
+
+    version_tag=`curl "${GITHUB_RELEASE_URL}" | jq "${jq_query}"`
+    echo "Version tag is ${version_tag}"
+    if [[ -z "${version_tag}" ]]; then
+      LIBRARY_VERSION_EXISTS=0
+    else
+      LIBRARY_VERSION_EXISTS=1
+    fi
   fi
+  echo "Library version exists: ${LIBRARY_VERSION_EXISTS}"
+  popd
 }
 
 ########################################################################
@@ -371,14 +389,13 @@ function dotnet_library::build_main() {
   dotnet_library::set_repo_root
   dotnet_library::set_path_variables
   dotnet_library::install_dotnet
-  dotnet_library::install_additional_tools
   dotnet_library::build_library
   dotnet_library::build_library_artifacts
   dotnet_library::save_build_artifacts
 }
 
 ########################################################################
-# Builds and releases the client library.
+# Releases the client library.
 # Globals:
 #   LIBRARY_VERSION_EXISTS: This flag is set to true if the release
 #     exists, false otherwise.
@@ -386,7 +403,9 @@ function dotnet_library::build_main() {
 #   None
 ########################################################################
 function dotnet_library::release_main() {
-  dotnet_library::build_main
+  dotnet_library::set_repo_root
+  dotnet_library::set_path_variables
+  dotnet_library::install_additional_tools
   dotnet_library::extract_keystore_secrets
   dotnet_library::check_library_release_version_exists
   if (( ${LIBRARY_VERSION_EXISTS} )); then
@@ -397,5 +416,3 @@ function dotnet_library::release_main() {
   dotnet_library::make_github_release
   dotnet_library::upload_nuget_packages
 }
-
-
