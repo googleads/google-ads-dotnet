@@ -16,7 +16,6 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.Util;
 using Google.Ads.GoogleAds.V11.Common;
 using Google.Ads.GoogleAds.V11.Errors;
 using Google.Ads.GoogleAds.V11.Resources;
@@ -25,6 +24,7 @@ using Google.Api.Gax;
 using Google.Protobuf;
 using System.Collections.Generic;
 using System;
+using System.Linq;
 using System.Threading;
 using static Google.Ads.GoogleAds.V11.Enums.ConversionActionCategoryEnum.Types;
 using static Google.Ads.GoogleAds.V11.Enums.ConversionOriginEnum.Types;
@@ -524,6 +524,8 @@ namespace Google.Ads.GoogleAds.Examples.V11
         // [START add_performance_max_retail_campaign_5]
         /// <summary>
         /// Creates multiple text assets and returns the list of resource names.
+        /// These repeated assets must be created in a separate request prior to
+        /// creating the campaign.
         /// </summary>
         /// <param name="client">The Google Ads Client.</param>
         /// <param name="customerId">The customer's ID.</param>
@@ -604,6 +606,72 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             List<MutateOperation> operations = new List<MutateOperation>();
 
+            // For the list of required assets for a Performance Max campaign, see
+            // https://developers.google.com/google-ads/api/docs/performance-max/assets
+
+            // Create and link the long headline text asset.
+            string longHeadlineResourceName = resourceNameGenerator.Next();
+            operations.Add(
+                CreateTextAssetOperation(
+                    longHeadlineResourceName,
+                    "Travel the World"
+                )
+            );
+
+            // Create the business name text asset.
+            string businessNameResourceName = resourceNameGenerator.Next();
+            operations.Add(
+                CreateTextAssetOperation(
+                    businessNameResourceName,
+                    "Interplanetary Cruises"
+                )
+            );
+
+            // Create the Logo Asset.
+            string logoResourceName = resourceNameGenerator.Next();
+            operations.Add(
+                CreateImageAssetOperation(
+                    logoResourceName,
+                    "https://gaagl.page.link/1Crm",
+                    "Logo Image",
+                    config
+                )
+            );
+
+            // Create the Marketing Image Asset.
+            string marketingImageResourceName = resourceNameGenerator.Next();
+            operations.Add(
+                CreateImageAssetOperation(
+                    marketingImageResourceName,
+                    "https://gaagl.page.link/Eit5",
+                    "Marketing Image",
+                    config
+                )
+            );
+
+            // Create the Square Marketing Image Asset.
+            string squareMarketingImageResourceName = resourceNameGenerator.Next();
+            operations.Add(
+                CreateImageAssetOperation(
+                    squareMarketingImageResourceName,
+                    "https://gaagl.page.link/bjYi",
+                    "Square Marketing Image",
+                    config
+                )
+            );
+
+            // An AssetGroup is linked to an Asset by creating a new AssetGroupAsset
+            // and providing:
+            //   the resource name of the AssetGroup
+            //   the resource name of the Asset
+            //   the field_type of the Asset in this AssetGroup.
+            //
+            // To learn more about AssetGroups, see
+            // https://developers.google.com/google-ads/api/docs/performance-max/asset-groups
+            //
+            // Also, note that all asset creation operations must be before the
+            // asset group creation operation and the asset group linking operations.
+
             // Create the AssetGroup
             operations.Add(
                 new MutateOperation()
@@ -625,19 +693,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
                 }
             );
 
-            // For the list of required assets for a Performance Max campaign, see
-            // https://developers.google.com/google-ads/api/docs/performance-max/assets
-
-            // An AssetGroup is linked to an Asset by creating a new AssetGroupAsset
-            // and providing:
-            //   the resource name of the AssetGroup
-            //   the resource name of the Asset
-            //   the field_type of the Asset in this AssetGroup.
-            //
-            // To learn more about AssetGroups, see
-            // https://developers.google.com/google-ads/api/docs/performance-max/asset-groups
-
-            // Link the previously created multiple text assets.
+            // Link the previously created assets.
 
             // Link the headline assets.
             foreach (string resourceName in headlineAssetResourceNames)
@@ -677,61 +733,43 @@ namespace Google.Ads.GoogleAds.Examples.V11
                 );
             }
 
-            // Create and link the long headline text asset.
-            operations.AddRange(
-                CreateAndLinkTextAsset(
+            operations.Add(
+                CreateLinkAssetOperation(
+                    AssetFieldType.LongHeadline,
                     assetGroupResourceName,
-                    resourceNameGenerator.Next(),
-                    "Travel the World",
-                    AssetFieldType.LongHeadline
+                    longHeadlineResourceName
                 )
             );
 
-            // Create and link the business name text asset.
-            operations.AddRange(
-                CreateAndLinkTextAsset(
+            operations.Add(
+                CreateLinkAssetOperation(
+                    AssetFieldType.BusinessName,
                     assetGroupResourceName,
-                    resourceNameGenerator.Next(),
-                    "Interplanetary Cruises",
-                    AssetFieldType.BusinessName
+                    businessNameResourceName
                 )
             );
 
-            // Create and link the image assets.
-
-            // Create and link the Logo Asset.
-            operations.AddRange(
-                CreateAndLinkImageAsset(
-                    assetGroupResourceName,
-                    resourceNameGenerator.Next(),
-                    "https://gaagl.page.link/bjYi",
+            operations.Add(
+                CreateLinkAssetOperation(
                     AssetFieldType.Logo,
-                    "Logo Image",
-                    config
+                    assetGroupResourceName,
+                    logoResourceName
                 )
             );
 
-            // Create and link the Marketing Image Asset.
-            operations.AddRange(
-                CreateAndLinkImageAsset(
-                    assetGroupResourceName,
-                    resourceNameGenerator.Next(),
-                    "https://gaagl.page.link/Eit5",
+            operations.Add(
+                CreateLinkAssetOperation(
                     AssetFieldType.MarketingImage,
-                    "Marketing Image",
-                    config
+                    assetGroupResourceName,
+                    marketingImageResourceName
                 )
             );
 
-            // Create and link the Square Marketing Image Asset.
-            operations.AddRange(
-                CreateAndLinkImageAsset(
-                    assetGroupResourceName,
-                    resourceNameGenerator.Next(),
-                    "https://gaagl.page.link/bjYi",
+            operations.Add(
+                CreateLinkAssetOperation(
                     AssetFieldType.SquareMarketingImage,
-                    "Square Marketing Image",
-                    config
+                    assetGroupResourceName,
+                    squareMarketingImageResourceName
                 )
             );
 
@@ -742,132 +780,98 @@ namespace Google.Ads.GoogleAds.Examples.V11
 
         // [START add_performance_max_retail_campaign_7]
         /// <summary>
-        /// Creates a list of MutateOperations that create a new linked text asset.
+        /// Creates a MutateOperation that creates a new text asset.
         /// </summary>
-        /// <param name="assetGroupResourceName">The resource name of the asset group to be
-        /// created.</param>
         /// <param name="assetResourceName">The resource name of the text asset to be
         /// created.</param>
         /// <param name="text">The text of the asset to be created.</param>
-        /// <param name="fieldType">The field type of the asset to be created.</param>
-        /// <returns>A list of MutateOperations that create the new linked text asset.</returns>
-        private List<MutateOperation> CreateAndLinkTextAsset(
-            string assetGroupResourceName,
+        /// <returns>A MutateOperation that creates the new text asset.</returns>
+        private MutateOperation CreateTextAssetOperation(
             string assetResourceName,
-            string text,
-            AssetFieldType fieldType)
+            string text) => new MutateOperation()
         {
-            List<MutateOperation> operations = new List<MutateOperation>();
-
-            // Create the Text Asset.
-            operations.Add(
-                new MutateOperation()
+            AssetOperation = new AssetOperation()
+            {
+                Create = new Asset()
                 {
-                    AssetOperation = new AssetOperation()
+                    ResourceName = assetResourceName,
+                    TextAsset = new TextAsset()
                     {
-                        Create = new Asset()
-                        {
-                            ResourceName = assetResourceName,
-                            TextAsset = new TextAsset()
-                            {
-                                Text = text
-                            }
-                        }
+                        Text = text
                     }
                 }
-            );
-
-            // Create an AssetGroupAsset to link the Asset to the AssetGroup.
-            operations.Add(
-                new MutateOperation()
-                {
-                    AssetGroupAssetOperation = new AssetGroupAssetOperation()
-                    {
-                        Create = new AssetGroupAsset()
-                        {
-                            FieldType = fieldType,
-                            AssetGroup = assetGroupResourceName,
-                            Asset = assetResourceName
-                        }
-                    }
-                }
-            );
-
-            return operations;
-        }
+            }
+        };
 
         // [END add_performance_max_retail_campaign_7]
 
         // [START add_performance_max_retail_campaign_8]
         /// <summary>
-        /// Creates a list of MutateOperations that create a new linked image asset.
+        /// Creates a MutateOperation that creates a new image asset.
         /// </summary>
-        /// <param name="assetGroupResourceName">The resource name of the asset group to be
-        /// created.</param>
         /// <param name="assetResourceName">The resource name of the text asset to be
         /// created.</param>
         /// <param name="url">The url of the image to be retrieved and put into an asset.</param>
-        /// <param name="fieldType">The field type of the asset to be created.</param>
         /// <param name="assetName">The asset name.</param>
         /// <param name="config">The Google Ads config.</param>
-        /// <returns>A list of MutateOperations that create a new linked image asset.</returns>
-        private List<MutateOperation> CreateAndLinkImageAsset(
-            string assetGroupResourceName,
+        /// <returns>A MutateOperation that creates a new image asset.</returns>
+        private MutateOperation CreateImageAssetOperation(
             string assetResourceName,
             string url,
-            AssetFieldType fieldType,
             string assetName,
-            GoogleAdsConfig config)
+            GoogleAdsConfig config) => new MutateOperation()
         {
-            List<MutateOperation> operations = new List<MutateOperation>();
-
-            // Create the Image Asset.
-            operations.Add(
-                new MutateOperation()
+            AssetOperation = new AssetOperation()
+            {
+                Create = new Asset()
                 {
-                    AssetOperation = new AssetOperation()
+                    ResourceName = assetResourceName,
+                    ImageAsset = new ImageAsset()
                     {
-                        Create = new Asset()
-                        {
-                            ResourceName = assetResourceName,
-                            ImageAsset = new ImageAsset()
-                            {
-                                Data =
-                                    ByteString.CopyFrom(
-                                        MediaUtilities.GetAssetDataFromUrl(url, config)
-                                    )
-                            },
-                            // Provide a unique friendly name to identify your asset.
-                            // When there is an existing image asset with the same content but a
-                            // different name, the new name will be dropped silently.
-                            Name = assetName
-                        }
-                    }
+                        Data =
+                            ByteString.CopyFrom(
+                                MediaUtilities.GetAssetDataFromUrl(url, config)
+                            )
+                    },
+                    // Provide a unique friendly name to identify your asset.
+                    // When there is an existing image asset with the same content but a
+                    // different name, the new name will be dropped silently.
+                    Name = assetName
                 }
-            );
-
-            // Create an AssetGroupAsset to link the Asset to the AssetGroup.
-            operations.Add(
-                new MutateOperation()
-                {
-                    AssetGroupAssetOperation = new AssetGroupAssetOperation()
-                    {
-                        Create = new AssetGroupAsset()
-                        {
-                            FieldType = fieldType,
-                            AssetGroup = assetGroupResourceName,
-                            Asset = assetResourceName
-                        }
-                    }
-                }
-            );
-
-            return operations;
-        }
+            }
+        };
 
         // [END add_performance_max_retail_campaign_8]
 
         // [START add_performance_max_retail_campaign_9]
+        /// <summary>
+        /// Creates a MutateOperation that links an asset to an asset group.
+        /// </summary>
+        /// <param name="fieldType">The field type of the asset to be linked.</param>
+        /// <param name="assetGroupResourceName">The resource name of the asset group
+        /// to link the asset to.</param>
+        /// <param name="assetResourceName">The resource name of the text asset to be
+        /// linked.</param>
+        /// <returns>A MutateOperation that links an asset to an asset group.</returns>
+        private MutateOperation CreateLinkAssetOperation(
+            AssetFieldType fieldType,
+            string assetGroupResourceName,
+            string assetResourceName) => new MutateOperation()
+        {
+            AssetGroupAssetOperation = new AssetGroupAssetOperation()
+            {
+                Create = new AssetGroupAsset()
+                {
+                    FieldType = fieldType,
+                    AssetGroup = assetGroupResourceName,
+                    Asset = assetResourceName
+                }
+            }
+        };
+
+        // [END add_performance_max_retail_campaign_9]
+
+        // [START add_performance_max_retail_campaign_10]
         /// <summary>
         /// Retrieves the list of customer conversion goals.
         /// </summary>
@@ -961,9 +965,9 @@ namespace Google.Ads.GoogleAds.Examples.V11
             return operations;
         }
 
-        // [END add_performance_max_retail_campaign_9]
+        // [END add_performance_max_retail_campaign_10]
 
-        // [START add_performance_max_retail_campaign_10]
+        // [START add_performance_max_retail_campaign_11]
         /// <summary>
         /// Creates a list of MutateOperations that create a new asset group
         /// listing group filter.
@@ -1007,7 +1011,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
 
             return operations;
         }
-        // [END add_performance_max_retail_campaign_10]
+        // [END add_performance_max_retail_campaign_11]
 
         /// <summary>
         /// Prints the details of a MutateGoogleAdsResponse. Parses the "response" oneof field name
