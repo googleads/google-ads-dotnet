@@ -82,6 +82,10 @@ namespace Google.Ads.Gax.Interceptors
                 // If an exception is caught, we catch it, for parsing later.
                 aggregateException = e;
             }
+            catch (RpcException e)
+            {
+                aggregateException = new AggregateException(e);
+            }
             finally
             {
                 if (onMoveNext != null)

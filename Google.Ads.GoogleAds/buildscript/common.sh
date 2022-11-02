@@ -211,6 +211,7 @@ function dotnet_library::build_library() {
 
   echo "Run the smoke tests."
   echo "===================="
+
   "${DOTNET_BINARY}" test --configuration Release --no-build  \
       "${DOTNET_CLIENT_LIBRARY_PATH}/tests/Google.Ads.GoogleAds.Tests.csproj" \
       -s "${DOTNET_CLIENT_LIBRARY_PATH}/tests/presubmit.runsettings"
@@ -257,6 +258,8 @@ function dotnet_library::build_library_artifacts() {
   "${DOTNET_BINARY}" pack --configuration Release --no-build \
       --output "${REPO_ROOT}/artifacts" \
       "${DOTNET_CLIENT_LIBRARY_PATH}/src/Google.Ads.GoogleAds.csproj"
+
+  echo "Library packages created successfully"
 }
 
 ########################################################################
@@ -271,9 +274,14 @@ function dotnet_library::build_library_artifacts() {
 #   None
 ########################################################################
 function dotnet_library::save_build_artifacts() {
+  echo "Saving build artifacts"
+  echo "======================"
+
   # Make sure the directory exists.
   mkdir -p "${KOKORO_ARTIFACTS_DIR}"
   cp -r "${REPO_ROOT}/artifacts" "${KOKORO_ARTIFACTS_DIR}/artifacts"
+
+  echo "Build packages saved successfully"
 }
 
 ########################################################################
@@ -287,6 +295,9 @@ function dotnet_library::save_build_artifacts() {
 #   None
 ########################################################################
 function dotnet_library::upload_nuget_packages() {
+  echo "Uploading the packages to nuget.org"
+  echo "==================================="
+
   # Note: this command will skip any conflicting packages and versions,
   # so there is no need to detect if a package was formally published.
   # So it is safe to run this command multiple times.
@@ -297,6 +308,8 @@ function dotnet_library::upload_nuget_packages() {
       --skip-duplicate --no-symbols \
       --source https://api.nuget.org/v3/index.json \
       "${KOKORO_GFILE_DIR}/*.nupkg"
+
+  echo "Packages uploaded to nuget.org successfully"
 }
 
 ########################################################################
@@ -353,6 +366,9 @@ function dotnet_library::check_library_release_version_exists() {
 #   None
 ########################################################################
 function dotnet_library::make_github_release() {
+  echo "Making a GitHub release"
+  echo "======================="
+
   payload=$(cat <<-END
 {
     "tag_name" : "v${LIBRARY_VERSION_TO_RELEASE}",
@@ -386,12 +402,18 @@ END
 #   None
 ########################################################################
 function dotnet_library::build_main() {
+  echo "Starting a build"
+  echo "================"
+
   dotnet_library::set_repo_root
   dotnet_library::set_path_variables
   dotnet_library::install_dotnet
+  dotnet_library::install_additional_tools
   dotnet_library::build_library
   dotnet_library::build_library_artifacts
   dotnet_library::save_build_artifacts
+
+  echo "Build completed successfully. Build artifacts are available on placer."
 }
 
 ########################################################################

@@ -16,26 +16,26 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V11.Common;
-using Google.Ads.GoogleAds.V11.Enums;
-using Google.Ads.GoogleAds.V11.Errors;
-using Google.Ads.GoogleAds.V11.Resources;
-using Google.Ads.GoogleAds.V11.Services;
+using Google.Ads.GoogleAds.V12.Common;
+using Google.Ads.GoogleAds.V12.Enums;
+using Google.Ads.GoogleAds.V12.Errors;
+using Google.Ads.GoogleAds.V12.Resources;
+using Google.Ads.GoogleAds.V12.Services;
 using Google.Protobuf;
 using System.Collections.Generic;
 using System.Linq;
 using System;
 using System.Threading;
-using static Google.Ads.GoogleAds.V11.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V11.Enums.AssetFieldTypeEnum.Types;
-using static Google.Ads.GoogleAds.V11.Enums.CallConversionReportingStateEnum.Types;
-using static Google.Ads.GoogleAds.V11.Enums.DayOfWeekEnum.Types;
-using static Google.Ads.GoogleAds.V11.Enums.MinuteOfHourEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.AssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.CallConversionReportingStateEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.DayOfWeekEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.MinuteOfHourEnum.Types;
 
 using SystemDayOfWeek = System.DayOfWeek;
-using DayOfWeek = Google.Ads.GoogleAds.V11.Enums.DayOfWeekEnum.Types.DayOfWeek;
+using DayOfWeek = Google.Ads.GoogleAds.V12.Enums.DayOfWeekEnum.Types.DayOfWeek;
 
-namespace Google.Ads.GoogleAds.Examples.V11
+namespace Google.Ads.GoogleAds.Examples.V12
 {
     /// <summary>
     /// This example adds a call extension to a specific account.
@@ -209,7 +209,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
             };
 
             AssetServiceClient assetServiceClient =
-                client.GetService(Services.V11.AssetService);
+                client.GetService(Services.V12.AssetService);
 
             // Issues a mutate request to add the asset and prints its information.
             MutateAssetsResponse response = assetServiceClient.MutateAssets(
@@ -248,7 +248,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
             };
 
             CustomerAssetServiceClient customerAssetServiceClient =
-                client.GetService(Services.V11.CustomerAssetService);
+                client.GetService(Services.V12.CustomerAssetService);
 
             // Issues a mutate request to add the customer asset and prints its information.
             MutateCustomerAssetsResponse response = customerAssetServiceClient.MutateCustomerAssets(

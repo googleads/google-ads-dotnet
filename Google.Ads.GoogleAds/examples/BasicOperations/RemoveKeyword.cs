@@ -15,12 +15,12 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V11.Errors;
-using Google.Ads.GoogleAds.V11.Services;
+using Google.Ads.GoogleAds.V12.Errors;
+using Google.Ads.GoogleAds.V12.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V11
+namespace Google.Ads.GoogleAds.Examples.V12
 {
     /// <summary>
     /// This code example removes a keyword. To get keywords, run GetKeywords.cs.
@@ -88,7 +88,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService = client.GetService(
-                Services.V11.AdGroupCriterionService);
+                Services.V12.AdGroupCriterionService);
 
             // Create the operation.
             AdGroupCriterionOperation operation = new AdGroupCriterionOperation();

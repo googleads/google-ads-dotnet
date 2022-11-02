@@ -19,19 +19,19 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V11.Common;
-using Google.Ads.GoogleAds.V11.Enums;
-using Google.Ads.GoogleAds.V11.Errors;
-using Google.Ads.GoogleAds.V11.Resources;
-using Google.Ads.GoogleAds.V11.Services;
-using static Google.Ads.GoogleAds.V11.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V11.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V11.Enums.AdvertisingChannelSubTypeEnum.Types;
-using static Google.Ads.GoogleAds.V11.Enums.BudgetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V11.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V11.Services.SmartCampaignSuggestionInfo.Types;
+using Google.Ads.GoogleAds.V12.Common;
+using Google.Ads.GoogleAds.V12.Enums;
+using Google.Ads.GoogleAds.V12.Errors;
+using Google.Ads.GoogleAds.V12.Resources;
+using Google.Ads.GoogleAds.V12.Services;
+using static Google.Ads.GoogleAds.V12.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.AdvertisingChannelSubTypeEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.BudgetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V12.Services.SmartCampaignSuggestionInfo.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V11
+namespace Google.Ads.GoogleAds.Examples.V12
 {
     /// <summary>
     /// This example shows how to create a Smart Campaign.
@@ -74,7 +74,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
             /// than suggested keyword themes, however they are useful in situations where a
             /// very specific term needs to be targeted.
             /// </summary>
-            [Option("keywordText", Required = false, HelpText =
+            [Option("freeformKeywordText", Required = false, HelpText =
                 "A keyword text used to create a freeform keyword theme, which is entirely " +
                 "user-specified and not derived from any suggestion service. Using free-form " +
                 "keyword themes is typically not recommended because they are less effective " +
@@ -150,7 +150,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
             string freeFormKeywordText, string businessProfileLocation, string businessName)
         {
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V11.GoogleAdsService);
+                client.GetService(Services.V12.GoogleAdsService);
 
             try
             {
@@ -268,7 +268,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
             GoogleAdsClient client, long customerId, SmartCampaignSuggestionInfo suggestionInfo)
         {
             SmartCampaignSuggestServiceClient smartCampaignSuggestService =
-                client.GetService(Services.V11.SmartCampaignSuggestService);
+                client.GetService(Services.V12.SmartCampaignSuggestService);
 
             SuggestKeywordThemesRequest request = new SuggestKeywordThemesRequest()
             {
@@ -282,7 +282,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
             // Prints some information about the result.
             Console.WriteLine($"Retrieved {response.KeywordThemes.Count} keyword theme " +
                 $"constant suggestions from the SuggestKeywordThemes method.");
-            return response.KeywordThemes.ToList();
+            return response.KeywordThemes.ToList().ConvertAll(x => x.KeywordThemeConstant);
         }
         // [END add_smart_campaign_11]
 
@@ -300,7 +300,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
             GoogleAdsClient client, string keywordText)
         {
             KeywordThemeConstantServiceClient keywordThemeConstantServiceClient =
-                client.GetService(Services.V11.KeywordThemeConstantService);
+                client.GetService(Services.V12.KeywordThemeConstantService);
 
             SuggestKeywordThemeConstantsRequest request = new SuggestKeywordThemeConstantsRequest
             {
@@ -429,7 +429,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
             SmartCampaignSuggestionInfo suggestionInfo)
         {
             SmartCampaignSuggestServiceClient smartCampaignSuggestServiceClient = client.GetService
-                (Services.V11.SmartCampaignSuggestService);
+                (Services.V12.SmartCampaignSuggestService);
 
             SuggestSmartCampaignBudgetOptionsRequest request =
                 new SuggestSmartCampaignBudgetOptionsRequest
@@ -486,7 +486,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
             long customerId, SmartCampaignSuggestionInfo suggestionInfo)
         {
             SmartCampaignSuggestServiceClient smartCampaignSuggestService =
-              client.GetService(Services.V11.SmartCampaignSuggestService);
+              client.GetService(Services.V12.SmartCampaignSuggestService);
 
             SuggestSmartCampaignAdRequest request = new SuggestSmartCampaignAdRequest
             {

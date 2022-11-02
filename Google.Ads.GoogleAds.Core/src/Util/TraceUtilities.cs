@@ -14,7 +14,9 @@
 
 #define TRACE
 
+using Google.Ads.Gax.Logging;
 using Google.Ads.Gax.Util;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -127,6 +129,30 @@ namespace Google.Ads.GoogleAds.Util
         {
             StreamWriter textWriter = new StreamWriter(filePath, true);
             Configure(source, textWriter, levels);
+        }
+
+        /// <summary>
+        /// Configures an <see cref="ILogger"/> for
+        /// forwarding request summary traces.
+        /// </summary>
+        /// <param name="logger">The logger.</param>
+        public static void ConfigureSummaryLogger(ILogger logger)
+        {
+            TraceListener summaryTraceListener = new LoggerTraceListener(logger);
+            Configure(SUMMARY_REQUEST_LOGS_SOURCE, summaryTraceListener,
+                System.Diagnostics.SourceLevels.Information);
+        }
+
+        /// <summary>
+        /// Configures an <see cref="ILogger"/> for
+        /// forwarding request detail traces.
+        /// </summary>
+        /// <param name="logger">The logger.</param>
+        public static void ConfigureDetailLogger(ILogger logger)
+        {
+            TraceListener detailTraceListener = new LoggerTraceListener(logger);
+            Configure(DETAILED_REQUEST_LOGS_SOURCE, detailTraceListener,
+                System.Diagnostics.SourceLevels.Verbose);
         }
 
         /// <summary>

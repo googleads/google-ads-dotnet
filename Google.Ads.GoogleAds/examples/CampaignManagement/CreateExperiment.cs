@@ -16,15 +16,15 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V11.Errors;
-using Google.Ads.GoogleAds.V11.Resources;
-using Google.Ads.GoogleAds.V11.Services;
+using Google.Ads.GoogleAds.V12.Errors;
+using Google.Ads.GoogleAds.V12.Resources;
+using Google.Ads.GoogleAds.V12.Services;
 using System;
 using System.Linq;
-using static Google.Ads.GoogleAds.V11.Enums.ExperimentStatusEnum.Types;
-using static Google.Ads.GoogleAds.V11.Enums.ExperimentTypeEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.ExperimentStatusEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.ExperimentTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V11
+namespace Google.Ads.GoogleAds.Examples.V12
 {
     /// <summary>
     /// This code example creates a new experiment, experiment arms, and demonstrates
@@ -82,7 +82,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             // Get the ExperimentService.
             ExperimentServiceClient experimentService = client.GetService(
-                Services.V11.ExperimentService);
+                Services.V12.ExperimentService);
 
             try
             {
@@ -122,7 +122,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             // Get the ExperimentService.
             ExperimentServiceClient experimentService = client.GetService(
-                Services.V11.ExperimentService);
+                Services.V12.ExperimentService);
 
             // Creates the experiment.
             Experiment experiment = new Experiment()
@@ -169,7 +169,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             // Get the ExperimentArmService.
             ExperimentArmServiceClient experimentService = client.GetService(
-                Services.V11.ExperimentArmService);
+                Services.V12.ExperimentArmService);
 
             // Create the control arm. The control arm references an already-existing campaign.
             ExperimentArmOperation controlArmOperation = new ExperimentArmOperation()
@@ -180,7 +180,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
                     Campaigns = {
                         ResourceNames.Campaign(customerId, baseCampaignId)
                     },
-                    Trial = experimentResourceName,
+                    Experiment = experimentResourceName,
                     Name = "Control Arm",
                     TrafficSplit = 40
                 }
@@ -194,7 +194,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
                 Create = new ExperimentArm()
                 {
                     Control = false,
-                    Trial = experimentResourceName,
+                    Experiment = experimentResourceName,
                     Name = "Experiment Arm",
                     TrafficSplit = 60
                 }
@@ -233,7 +233,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V11.GoogleAdsService);
+                Services.V12.GoogleAdsService);
 
             // Creates the query.
             // The `in_design_campaigns` represent campaign drafts, which you can modify
@@ -266,7 +266,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             // Get the CampaignService.
             CampaignServiceClient campaignService = client.GetService(
-                Services.V11.CampaignService);
+                Services.V12.CampaignService);
 
             // You can change anything you like about the campaign. These are the changes you're
             // testing by doing this experiment. Here we just change the name for illustrative

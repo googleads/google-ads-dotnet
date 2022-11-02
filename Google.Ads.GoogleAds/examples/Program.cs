@@ -36,11 +36,31 @@ namespace Google.Ads.GoogleAds.Examples
         /// <returns>The application's exit code.</returns>
         public static int Main(string[] args)
         {
-            // Turn on detailed logging. This is useful for debugging your requests.
+
+            // Turn on trace-based logging. This is useful if you just want to
+            // capture logs once for debugging your requests.
             // You should also replace INSERT_PATH_TO_DETAILED_LOGS_HERE to a file path that will
             // be used to write the detailed logs to. E.g. C:\\logs\\details.log
             // TraceUtilities.Configure(TraceUtilities.DETAILED_REQUEST_LOGS_SOURCE,
             //    "INSERT_PATH_TO_DETAILED_LOGS_HERE", System.Diagnostics.SourceLevels.All);
+
+            // Redirect the trace output to an ILogger instance. This solution is better
+            // suited if you want to integrate the API logs in your application logs.
+            // First, create a logger factory.
+            // var loggerFactory = LoggerFactory.Create(delegate (ILoggingBuilder builder)
+            // {
+            //  builder.AddConsole();
+            //  builder.AddFilter(TraceUtilities.SUMMARY_REQUEST_LOGS_SOURCE, LogLevel.Trace);
+            //  builder.AddFilter(TraceUtilities.DETAILED_REQUEST_LOGS_SOURCE, LogLevel.Trace);
+            // });
+            // Then, create loggers for request summaries and details.
+            // ILogger summaryLogger = loggerFactory.CreateLogger(
+            //  TraceUtilities.SUMMARY_REQUEST_LOGS_SOURCE);
+            // ILogger detailedLogger = loggerFactory.CreateLogger(
+            //  TraceUtilities.DETAILED_REQUEST_LOGS_SOURCE);
+            // Finally, configure the client library to redirect its traces to the loggers.
+            // TraceUtilities.ConfigureSummaryLogger(summaryLogger);
+            // TraceUtilities.ConfigureDetailLogger(detailLogger);
 
             // If the API log doesn't give you enough details, then you can enable more low level
             // logging at grpc level. Keep in mind that this can get pretty detailed and long. The

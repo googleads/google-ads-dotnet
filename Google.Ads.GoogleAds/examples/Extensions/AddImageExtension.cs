@@ -15,16 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V11.Common;
-using Google.Ads.GoogleAds.V11.Errors;
-using Google.Ads.GoogleAds.V11.Resources;
-using Google.Ads.GoogleAds.V11.Services;
+using Google.Ads.GoogleAds.V12.Common;
+using Google.Ads.GoogleAds.V12.Errors;
+using Google.Ads.GoogleAds.V12.Resources;
+using Google.Ads.GoogleAds.V12.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V11.Enums.ExtensionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.ExtensionTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V11
+namespace Google.Ads.GoogleAds.Examples.V12
 {
     /// <summary>
     /// This code example adds an image extension to a campaign. To create a campaign, run
@@ -93,7 +93,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             // Get the CampaignExtensionSettingServiceClient.
             CampaignExtensionSettingServiceClient campaignExtensionSettingService =
-                client.GetService(Services.V11.CampaignExtensionSettingService);
+                client.GetService(Services.V12.CampaignExtensionSettingService);
 
             try
             {
@@ -150,7 +150,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             // Get the ExtensionFeedItemServiceClient.
             ExtensionFeedItemServiceClient extensionFeedItemService =
-                client.GetService(Services.V11.ExtensionFeedItemService);
+                client.GetService(Services.V12.ExtensionFeedItemService);
 
             // Creates the image feed item using the provided image.
             ImageFeedItem imageFeedItem = new ImageFeedItem()

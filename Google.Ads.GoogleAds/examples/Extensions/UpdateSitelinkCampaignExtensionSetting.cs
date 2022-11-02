@@ -16,15 +16,15 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V11.Errors;
-using Google.Ads.GoogleAds.V11.Resources;
-using Google.Ads.GoogleAds.V11.Services;
+using Google.Ads.GoogleAds.V12.Errors;
+using Google.Ads.GoogleAds.V12.Resources;
+using Google.Ads.GoogleAds.V12.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V11.Enums.ExtensionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.ExtensionTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V11
+namespace Google.Ads.GoogleAds.Examples.V12
 {
     /// <summary>
     /// Updates the sitelink campaign extension setting to replace its extension feed items. Note
@@ -99,7 +99,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             // Get the CampaignExtensionSettingService.
             CampaignExtensionSettingServiceClient campaignExtensionSettingService =
-                client.GetService(Services.V11.CampaignExtensionSettingService);
+                client.GetService(Services.V12.CampaignExtensionSettingService);
 
             // Transform the specified extension feed item IDs to an array of resource names.
             IEnumerable<string> extensionFeedItems = feedItemIds.Select(feedItemId =>

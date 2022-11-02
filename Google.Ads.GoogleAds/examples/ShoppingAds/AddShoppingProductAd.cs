@@ -15,23 +15,23 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V11.Common;
-using Google.Ads.GoogleAds.V11.Errors;
-using Google.Ads.GoogleAds.V11.Resources;
-using Google.Ads.GoogleAds.V11.Services;
+using Google.Ads.GoogleAds.V12.Common;
+using Google.Ads.GoogleAds.V12.Errors;
+using Google.Ads.GoogleAds.V12.Resources;
+using Google.Ads.GoogleAds.V12.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V11.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V11.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V11.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V11.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V11.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V11.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V11.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V11.Enums.ListingGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V11.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V12.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.ListingGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V12.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V11
+namespace Google.Ads.GoogleAds.Examples.V12
 {
     /// <summary>
     /// This code example creates a standard shopping campaign, a shopping product ad group and a
@@ -163,7 +163,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             // Get the CampaignBudgetService.
             CampaignBudgetServiceClient campaignBudgetService =
-                client.GetService(Services.V11.CampaignBudgetService);
+                client.GetService(Services.V12.CampaignBudgetService);
 
             CampaignBudget budget = new CampaignBudget()
             {
@@ -202,7 +202,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             // Get the CampaignService.
             CampaignServiceClient campaignService =
-                client.GetService(Services.V11.CampaignService);
+                client.GetService(Services.V12.CampaignService);
 
             // Configures the shopping settings.
             ShoppingSetting shoppingSetting = new ShoppingSetting()
@@ -282,7 +282,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
                     string campaignResourceName)
         {
             // Get the AdGroupService.
-            AdGroupServiceClient adGroupService = client.GetService(Services.V11.AdGroupService);
+            AdGroupServiceClient adGroupService = client.GetService(Services.V12.AdGroupService);
 
             // Creates an ad group.
             AdGroup adGroup = new AdGroup()
@@ -329,7 +329,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             // Get the AdGroupAdService.
             AdGroupAdServiceClient adGroupAdService = client.GetService(
-                Services.V11.AdGroupAdService);
+                Services.V12.AdGroupAdService);
 
             // Creates a new shopping product ad.
             Ad ad = new Ad()
@@ -385,7 +385,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService = client.GetService(
-                Services.V11.AdGroupCriterionService);
+                Services.V12.AdGroupCriterionService);
 
             // Creates a new ad group criterion. This will contain the "default" listing group (All
             // products).
