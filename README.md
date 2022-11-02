@@ -46,4 +46,4 @@ Our documentation is available [here](https://developers.google.com/google-ads/a
 ### Authors
 
 - https://github.com/AnashOommen
-- https://github.com/friedenberg
+- https://github.com/Raibaz
