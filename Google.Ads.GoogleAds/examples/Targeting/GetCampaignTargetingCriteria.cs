@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V11.Errors;
-using Google.Ads.GoogleAds.V11.Resources;
-using Google.Ads.GoogleAds.V11.Services;
+using Google.Ads.GoogleAds.V12.Errors;
+using Google.Ads.GoogleAds.V12.Resources;
+using Google.Ads.GoogleAds.V12.Services;
 using Google.Api.Gax;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V11.Resources.CampaignCriterion;
+using static Google.Ads.GoogleAds.V12.Resources.CampaignCriterion;
 
-namespace Google.Ads.GoogleAds.Examples.V11
+namespace Google.Ads.GoogleAds.Examples.V12
 {
     /// <summary>
     /// This code example illustrates getting campaign targeting criteria.
@@ -80,7 +80,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V11.GoogleAdsService);
+                Services.V12.GoogleAdsService);
 
             // Create the query.
             string query = $@"SELECT campaign.id, campaign_criterion.campaign,

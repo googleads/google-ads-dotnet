@@ -1,3 +1,12 @@
+14.1.0
+======
+- Added support for version v12.0 of the Google Ads API.
+- Fixed #381 by adding support for ILogger-based logging.
+- Fixed some code examples.
+  - Fixed AddPerformanceMaxRetailCampaign by creating the mutate operations in the correct order.
+  - Removed the AddLocalCampaign example - local campaigns have been migrated to PMax.
+  - Removed the AddSmartDisplayAd example - smart display ads are no longer supported.
+
 14.0.0
 ======
 

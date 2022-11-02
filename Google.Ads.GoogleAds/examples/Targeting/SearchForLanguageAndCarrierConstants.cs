@@ -15,13 +15,13 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V11.Errors;
-using Google.Ads.GoogleAds.V11.Resources;
-using Google.Ads.GoogleAds.V11.Services;
+using Google.Ads.GoogleAds.V12.Errors;
+using Google.Ads.GoogleAds.V12.Resources;
+using Google.Ads.GoogleAds.V12.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V11
+namespace Google.Ads.GoogleAds.Examples.V12
 {
     /// <summary>
     /// This code example illustrates how to search for language constants by name that
@@ -122,7 +122,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService =
-                client.GetService(Services.V11.GoogleAdsService);
+                client.GetService(Services.V12.GoogleAdsService);
 
             // Create a query that retrieves the targetable carriers by country code.
             string query = $"SELECT carrier_constant.id, carrier_constant.name, " +
@@ -154,7 +154,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService =
-                client.GetService(Services.V11.GoogleAdsService);
+                client.GetService(Services.V12.GoogleAdsService);
 
             // Create a query that retrieves the language constants by the keyword included
             // in the name.

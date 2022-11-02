@@ -15,17 +15,17 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V11.Common;
-using Google.Ads.GoogleAds.V11.Errors;
-using Google.Ads.GoogleAds.V11.Services;
+using Google.Ads.GoogleAds.V12.Common;
+using Google.Ads.GoogleAds.V12.Errors;
+using Google.Ads.GoogleAds.V12.Services;
 using System;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
-using static Google.Ads.GoogleAds.V11.Enums.ConversionAdjustmentTypeEnum.Types;
-using static Google.Ads.GoogleAds.V11.Enums.UserIdentifierSourceEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.ConversionAdjustmentTypeEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.UserIdentifierSourceEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V11
+namespace Google.Ads.GoogleAds.Examples.V12
 {
     /// <summary>
     /// This code example adjusts an existing conversion by supplying user identifiers so
@@ -139,7 +139,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             // Get the ConversionAdjustmentUploadService.
             ConversionAdjustmentUploadServiceClient conversionAdjustmentUploadService =
-                client.GetService(Services.V11.ConversionAdjustmentUploadService);
+                client.GetService(Services.V12.ConversionAdjustmentUploadService);
 
             // [START create_adjustment]
             // Creates the enhancement adjustment.

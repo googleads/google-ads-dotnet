@@ -15,16 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V11.Common;
-using Google.Ads.GoogleAds.V11.Errors;
-using Google.Ads.GoogleAds.V11.Resources;
-using Google.Ads.GoogleAds.V11.Services;
+using Google.Ads.GoogleAds.V12.Common;
+using Google.Ads.GoogleAds.V12.Errors;
+using Google.Ads.GoogleAds.V12.Resources;
+using Google.Ads.GoogleAds.V12.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V11.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V11.Enums.KeywordMatchTypeEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.KeywordMatchTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V11
+namespace Google.Ads.GoogleAds.Examples.V12
 {
     /// <summary>
     /// This code example demonstrates how to add a keyword into an ad group.
@@ -101,7 +101,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
             }
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V11.AdGroupCriterionService);
+                client.GetService(Services.V12.AdGroupCriterionService);
 
             // Create a keyword.
             AdGroupCriterion criterion = new AdGroupCriterion()

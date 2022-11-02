@@ -15,10 +15,10 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V11.Common;
-using Google.Ads.GoogleAds.V11.Errors;
-using Google.Ads.GoogleAds.V11.Resources;
-using Google.Ads.GoogleAds.V11.Services;
+using Google.Ads.GoogleAds.V12.Common;
+using Google.Ads.GoogleAds.V12.Errors;
+using Google.Ads.GoogleAds.V12.Resources;
+using Google.Ads.GoogleAds.V12.Services;
 using Google.Api.Gax;
 using Google.LongRunning;
 using Google.Protobuf.WellKnownTypes;
@@ -27,11 +27,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using static Google.Ads.GoogleAds.V11.Enums.CustomerMatchUploadKeyTypeEnum.Types;
-using static Google.Ads.GoogleAds.V11.Enums.OfflineUserDataJobStatusEnum.Types;
-using static Google.Ads.GoogleAds.V11.Enums.OfflineUserDataJobTypeEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.CustomerMatchUploadKeyTypeEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.OfflineUserDataJobStatusEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.OfflineUserDataJobTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V11
+namespace Google.Ads.GoogleAds.Examples.V12
 {
     /// <summary>
     ///  This code example uses Customer Match to create a new user list (a.k.a. audience) and adds
@@ -122,7 +122,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         private string CreateCustomerMatchUserList(GoogleAdsClient client, long customerId)
         {
             // Get the UserListService.
-            UserListServiceClient service = client.GetService(Services.V11.UserListService);
+            UserListServiceClient service = client.GetService(Services.V12.UserListService);
 
             // Creates the user list.
             UserList userList = new UserList()
@@ -169,7 +169,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             // Get the OfflineUserDataJobService.
             OfflineUserDataJobServiceClient service = client.GetService(
-                Services.V11.OfflineUserDataJobService);
+                Services.V12.OfflineUserDataJobService);
 
             // Creates a new offline user data job.
             OfflineUserDataJob offlineUserDataJob = new OfflineUserDataJob()
@@ -243,7 +243,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
             string offlineUserDataJobResourceName, string userListResourceName)
         {
             // Get the GoogleAdsService.
-            GoogleAdsServiceClient service = client.GetService(Services.V11.GoogleAdsService);
+            GoogleAdsServiceClient service = client.GetService(Services.V12.GoogleAdsService);
 
             string query = "SELECT offline_user_data_job.resource_name, " +
                 "offline_user_data_job.id, offline_user_data_job.status, " +
@@ -345,7 +345,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient service =
-                client.GetService(Services.V11.GoogleAdsService);
+                client.GetService(Services.V12.GoogleAdsService);
 
             // Creates a query that retrieves the user list.
             string query =

@@ -15,12 +15,12 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V11.Errors;
-using Google.Ads.GoogleAds.V11.Services;
+using Google.Ads.GoogleAds.V12.Errors;
+using Google.Ads.GoogleAds.V12.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V11
+namespace Google.Ads.GoogleAds.Examples.V12
 {
     /// <summary>
     /// This code example retrieves pending invitations for a customer account. To create a pending
@@ -71,7 +71,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             // Get the AdGroupService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V11.GoogleAdsService);
+                Services.V12.GoogleAdsService);
 
             // [START get_pending_invitations]
             // Create the search query.

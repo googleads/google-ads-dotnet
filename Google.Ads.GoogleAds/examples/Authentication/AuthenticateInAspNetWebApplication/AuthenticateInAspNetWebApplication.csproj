@@ -58,8 +58,8 @@
     <Reference Include="Google.Ads.Gax, Version=2.0.0.0, Culture=neutral, PublicKeyToken=52807268f2b614dc, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Google.Ads.Gax.2.0.0\lib\net472\Google.Ads.Gax.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Ads.GoogleAds, Version=14.0.0.0, Culture=neutral, PublicKeyToken=52807268f2b614dc, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Google.Ads.GoogleAds.14.0.0\lib\net472\Google.Ads.GoogleAds.dll</HintPath>
+    <Reference Include="Google.Ads.GoogleAds, Version=14.1.0, Culture=neutral, PublicKeyToken=52807268f2b614dc, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Google.Ads.GoogleAds.14.1.0\lib\net472\Google.Ads.GoogleAds.dll</HintPath>
     </Reference>
     <Reference Include="Google.Ads.GoogleAds.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=52807268f2b614dc, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Google.Ads.GoogleAds.Core.2.0.0\lib\net472\Google.Ads.GoogleAds.Core.dll</HintPath>
@@ -287,7 +287,7 @@
   <Import Project="..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
   <Import Project="..\..\..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.1\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('..\..\..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.1\build\Microsoft.Extensions.Logging.Abstractions.targets')" />
   <Import Project="..\..\..\packages\System.Text.Json.6.0.5\build\System.Text.Json.targets" Condition="Exists('..\..\..\packages\System.Text.Json.6.0.5\build\System.Text.Json.targets')" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>

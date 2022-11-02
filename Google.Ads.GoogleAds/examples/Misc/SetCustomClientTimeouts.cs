@@ -15,8 +15,8 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V11.Errors;
-using Google.Ads.GoogleAds.V11.Services;
+using Google.Ads.GoogleAds.V12.Errors;
+using Google.Ads.GoogleAds.V12.Services;
 using Google.Api.Gax;
 using Google.Api.Gax.Grpc;
 using Grpc.Core;
@@ -24,7 +24,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace Google.Ads.GoogleAds.Examples.V11
+namespace Google.Ads.GoogleAds.Examples.V12
 {
     /// <summary>
     /// This code example illustrates the use of custom client timeouts in the context
@@ -119,7 +119,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
             {
                 // Get the GoogleAdsService.
                 GoogleAdsServiceClient googleAdsService = client.GetService(
-                    Services.V11.GoogleAdsService);
+                    Services.V12.GoogleAdsService);
 
                 string query = "SELECT campaign.id FROM campaign";
                 SearchGoogleAdsStreamRequest request = new SearchGoogleAdsStreamRequest()
@@ -181,7 +181,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
             {
                 // Get the GoogleAdsService.
                 GoogleAdsServiceClient googleAdsService = client.GetService(
-                    Services.V11.GoogleAdsService);
+                    Services.V12.GoogleAdsService);
 
                 string query = "SELECT campaign.id FROM campaign";
                 SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()

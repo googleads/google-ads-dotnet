@@ -46,6 +46,9 @@
   <ItemGroup>
     <PackageReference Condition="!Exists('..\..\Google.Ads.Gax\src\Google.Ads.Gax.csproj')" Include="Google.Ads.Gax" Version="2.0.0" />
     <ProjectReference Condition="Exists('..\..\Google.Ads.Gax\src\Google.Ads.Gax.csproj')" Include="..\..\Google.Ads.Gax\src\Google.Ads.Gax.csproj" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="6.0.0" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="ErrorMessages.Designer.cs">

@@ -16,15 +16,15 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V11.Errors;
-using Google.Ads.GoogleAds.V11.Resources;
-using Google.Ads.GoogleAds.V11.Services;
+using Google.Ads.GoogleAds.V12.Errors;
+using Google.Ads.GoogleAds.V12.Resources;
+using Google.Ads.GoogleAds.V12.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V11.Enums.FlightPlaceholderFieldEnum.Types;
+using static Google.Ads.GoogleAds.V12.Enums.FlightPlaceholderFieldEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V11
+namespace Google.Ads.GoogleAds.Examples.V12
 {
     /// <summary>
     /// This code example updates a FeedItemAttributeValue in a flights feed. To create a flights
@@ -149,7 +149,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             // Get the FeedItemServiceClient.
             FeedItemServiceClient feedItemService =
-                client.GetService(Services.V11.FeedItemService);
+                client.GetService(Services.V12.FeedItemService);
 
             // Gets the feed resource name.
             string feedResourceName = ResourceNames.Feed(customerId, feedId);
@@ -230,7 +230,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V11.GoogleAdsService);
+                Services.V12.GoogleAdsService);
 
             // Constructs the query.
             string query = "SELECT feed.attributes FROM feed WHERE feed.resource_name = " +
@@ -300,7 +300,7 @@ namespace Google.Ads.GoogleAds.Examples.V11
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V11.GoogleAdsService);
+                Services.V12.GoogleAdsService);
 
             // Constructs the query.
             string query = "SELECT feed_item.attribute_values FROM feed_item WHERE " +
