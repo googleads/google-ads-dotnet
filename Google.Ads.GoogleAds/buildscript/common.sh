@@ -302,7 +302,7 @@ function dotnet_library::upload_nuget_packages() {
   # so there is no need to detect if a package was formally published.
   # So it is safe to run this command multiple times.
   # Note: We do not publish debug symbols today, hence we skip it.
-  
+
   rm ${KOKORO_GFILE_DIR}/*.symbols.nupkg
   "${DOTNET_BINARY}" nuget push --api-key ${GOOGLE_ADS_DOTNET_NUGET_KEY} \
       --skip-duplicate --no-symbols \
@@ -427,6 +427,7 @@ function dotnet_library::build_main() {
 function dotnet_library::release_main() {
   dotnet_library::set_repo_root
   dotnet_library::set_path_variables
+  dotnet_library::install_dotnet
   dotnet_library::install_additional_tools
   dotnet_library::extract_keystore_secrets
   dotnet_library::check_library_release_version_exists
