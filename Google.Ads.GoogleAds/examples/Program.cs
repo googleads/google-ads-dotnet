@@ -73,16 +73,6 @@ namespace Google.Ads.GoogleAds.Examples
             // If you simply want to try out a code example, you can create an instance of it here,
             // and call its Run method. E.g.
 
-            // Optional: If you have specified these keys in the App.config file, you can skip
-            // creating a GoogleAdsConfig object and do
-            // GoogleAdsClient googleAdsClient = new GoogleAdsClient();
-
-            // string developerToken = "INSERT_YOUR_DEVELOPER_TOKEN_HERE";
-            // string oAuth2clientId = "INSERT_OAUTH2_CLIENT_ID_HERE";
-            // string oAuth2Secret = "INSERT_OAUTH2_CLIENT_SECRET_HERE";
-            // string oAuth2RefreshToken = "INSERT_OAUTH2_REFRESH_TOKEN_HERE";
-            // long loginCustomerId = long.Parse("INSERT_LOGIN_CUSTOMER_ID_HERE");
-
             // GoogleAdsConfig googleAdsConfig = new GoogleAdsConfig()
             // {
             //     DeveloperToken = developerToken,
@@ -93,6 +83,16 @@ namespace Google.Ads.GoogleAds.Examples
             // };
 
             //GoogleAdsClient googleAdsClient = new GoogleAdsClient(googleAdsConfig);
+
+            // Optional: If you have specified these keys in the App.config file, you can skip
+            // creating a GoogleAdsConfig object and do
+            // GoogleAdsClient googleAdsClient = new GoogleAdsClient();
+
+            // string developerToken = "INSERT_YOUR_DEVELOPER_TOKEN_HERE";
+            // string oAuth2clientId = "INSERT_OAUTH2_CLIENT_ID_HERE";
+            // string oAuth2Secret = "INSERT_OAUTH2_CLIENT_SECRET_HERE";
+            // string oAuth2RefreshToken = "INSERT_OAUTH2_REFRESH_TOKEN_HERE";
+            // long loginCustomerId = long.Parse("INSERT_LOGIN_CUSTOMER_ID_HERE");
 
             // Run the code example.
             // new V2.GetCampaigns().Run(new GoogleAdsClient(), 1234567890);
