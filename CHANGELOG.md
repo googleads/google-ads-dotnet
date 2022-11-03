@@ -1,3 +1,7 @@
+14.2.0
+======
+- Update the dependencies on Google.Ads.GoogleAds.Core and Google.Ads.Gax
+
 14.1.0
 ======
 - Added support for version v12.0 of the Google Ads API.
