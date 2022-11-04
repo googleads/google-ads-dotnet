@@ -244,6 +244,42 @@ namespace Google.Ads.GoogleAds.Tests.Logging
         }
 
         /// <summary>
+        /// Tests whether an asynchronous unary call with an exception in response headers
+        ///  is logged correctly.
+        /// </summary>
+        [Test]
+        public void TestAsyncUnaryCallWithExceptionInHeaders()
+        {
+            LoggingHandler handler = new LoggingHandler();
+            handler.WriteSummaryLogs = delegate (LogEntry logEntry)
+            {
+                Assert.AreEqual(TEST_HOST, logEntry.Host);
+                Assert.AreEqual(TEST_METHOD_IN_LOGS, logEntry.Method);
+                Assert.AreSame(TEST_REQUEST_METADATA, logEntry.RequestHeaders);
+                CompareMetadata(TEST_REQUEST_METADATA, logEntry.RequestHeaders);
+                Assert.IsEmpty(logEntry.ResponseHeaders);
+                Assert.False(logEntry.IsFailure);
+            };
+            handler.WriteDetailedLogs = delegate (LogEntry logEntry)
+            {
+                Assert.AreEqual(TEST_HOST, logEntry.Host);
+                Assert.AreEqual(TEST_METHOD_IN_LOGS, logEntry.Method);
+                Assert.AreSame(TEST_REQUEST_METADATA, logEntry.RequestHeaders);
+                CompareMetadata(TEST_REQUEST_METADATA, logEntry.RequestHeaders);
+                Assert.IsEmpty(logEntry.ResponseHeaders);
+                Assert.AreSame(TEST_REQUEST, logEntry.Request);
+                Assert.AreSame(TEST_RESPONSE, logEntry.Response);
+                Assert.AreEqual(TEST_CUSTOMER_ID, logEntry.CustomerId);
+                Assert.False(logEntry.IsFailure);
+            };
+
+            ClientInterceptorContext<HelloRequest, HelloResponse> context =
+                GetClientInterceptorContext();
+            AsyncUnaryCall<HelloResponse> call = ContinuationWithExceptionInHeaders(TEST_REQUEST, context);
+            handler.HandleAsyncUnaryLogging(TEST_REQUEST, context, call.ResponseAsync, call);
+        }
+
+        /// <summary>
         /// Tests whether an asynchronous unary call with partial failure response is logged
         /// correctly.
         /// </summary>
@@ -368,6 +404,64 @@ namespace Google.Ads.GoogleAds.Tests.Logging
         }
 
         /// <summary>
+        /// Tests if logs are generated correctly for a streaming call that throws exceptions
+        /// when retrieving response headers.
+        /// </summary>
+        [Test]
+        public void TestServerStreamingWithExceptionInHeaders()
+        {
+            LoggingHandler handler = new LoggingHandler();
+            handler.WriteSummaryLogs = delegate (LogEntry logEntry)
+            {
+                Assert.AreEqual(TEST_HOST, logEntry.Host);
+                Assert.AreEqual(TEST_METHOD_IN_LOGS, logEntry.Method);
+                CompareMetadata(TEST_REQUEST_METADATA, logEntry.RequestHeaders);
+                Assert.IsEmpty(logEntry.ResponseHeaders);
+                Assert.True(logEntry.IsFailure);
+                HelloException helloException = logEntry.Exception as HelloException;
+                Assert.NotNull(helloException);
+
+                Assert.AreEqual(TEST_REQUEST_ID, helloException.RequestId);
+
+                Assert.NotNull(helloException.Failure);
+                Assert.AreEqual(1, helloException.Failure.Errors.Count);
+                Assert.NotNull(helloException.Failure.Errors[0].ErrorCode);
+                Assert.NotNull(helloException.Failure.Errors[0].ErrorCode.RequestError);
+            };
+            handler.WriteDetailedLogs = delegate (LogEntry logEntry)
+            {
+                Assert.AreEqual(TEST_HOST, logEntry.Host);
+                Assert.AreEqual(TEST_METHOD_IN_LOGS, logEntry.Method);
+                CompareMetadata(TEST_REQUEST_METADATA, logEntry.RequestHeaders);
+                Assert.IsEmpty(logEntry.ResponseHeaders);
+                Assert.AreSame(TEST_REQUEST, logEntry.Request);
+
+                // Response is null if there's an exception.
+                Assert.IsNull(logEntry.Response);
+
+                Assert.AreEqual(TEST_CUSTOMER_ID, logEntry.CustomerId);
+                Assert.True(logEntry.IsFailure);
+                HelloException helloException = logEntry.Exception as HelloException;
+                Assert.NotNull(helloException);
+
+                Assert.AreEqual(TEST_REQUEST_ID, helloException.RequestId);
+
+                Assert.NotNull(helloException.Failure);
+                Assert.AreEqual(1, helloException.Failure.Errors.Count);
+                Assert.NotNull(helloException.Failure.Errors[0].ErrorCode);
+                Assert.NotNull(helloException.Failure.Errors[0].ErrorCode.RequestError);
+            };
+
+            ClientInterceptorContext<HelloRequest, HelloResponse> context =
+                GetClientInterceptorContext();
+            AsyncServerStreamingCall<HelloResponse> call =
+                StreamingContinuationWithExceptionInHeaders<HelloResponse>();
+            handler.HandleAsyncServerStreamingLogging(TEST_REQUEST,
+                null, context, new AggregateException(TEST_EXCEPTION),
+                call);
+        }
+
+        /// <summary>
         /// Creates a server streaming call continuation with test results.
         /// </summary>
         /// <typeparam name="TResponse">The type of the response.</typeparam>
@@ -398,6 +492,28 @@ namespace Google.Ads.GoogleAds.Tests.Logging
             Task<Metadata> responseHeadersTask = Task.FromResult(TEST_RESPONSE_METADATA);
             Task<HelloResponse> responseTask =
                 TestStreamReader<object>.FromException<HelloResponse>(TEST_EXCEPTION);
+            Func<Metadata> trailersTask = () => TEST_TRAILERS_METADATA;
+
+            TestStreamReader<HelloResponse> responseStream =
+                new TestStreamReader<HelloResponse>(new HelloResponse[] { }, TEST_EXCEPTION);
+
+            AsyncServerStreamingCall<HelloResponse> call =
+                new AsyncServerStreamingCall<HelloResponse>(responseStream, responseHeadersTask,
+                null, trailersTask, null);
+            return call;
+        }
+
+        /// <summary>
+        /// Creates a server streaming call continuation with an exception in headers.
+        /// </summary>
+        /// <typeparam name="TResponse">The type of the response.</typeparam>
+        /// <returns>The streaming continuation.</returns>
+        private AsyncServerStreamingCall<HelloResponse> StreamingContinuationWithExceptionInHeaders<TResponse>()
+            where TResponse : class
+        {
+            Task<Metadata> responseHeadersTask =
+                TestStreamReader<object>.FromException<Metadata>(TEST_EXCEPTION);
+            Task<HelloResponse> responseTask = Task.FromResult(TEST_RESPONSE);
             Func<Metadata> trailersTask = () => TEST_TRAILERS_METADATA;
 
             TestStreamReader<HelloResponse> responseStream =
@@ -496,6 +612,25 @@ namespace Google.Ads.GoogleAds.Tests.Logging
             Task<Metadata> responseHeadersTask = Task.FromResult(TEST_RESPONSE_METADATA);
             Task<HelloResponse> responseTask =
                 TestStreamReader<object>.FromException<HelloResponse>(TEST_EXCEPTION);
+            Func<Metadata> trailersTask = () => TEST_TRAILERS_METADATA;
+            return new AsyncUnaryCall<HelloResponse>(responseTask, responseHeadersTask,
+                null, trailersTask, null);
+        }
+
+        /// <summary>
+        /// Creates an async unary call continuation with test exception in the headers.
+        /// </summary>
+        /// <param name="request">The test request.</param>
+        /// <param name="context">The client interceptor context.</param>
+        /// <returns>An async unary call that throws a test exception and returns test metadata
+        /// upon completion.
+        /// </returns>
+        private AsyncUnaryCall<HelloResponse> ContinuationWithExceptionInHeaders(HelloRequest request,
+            ClientInterceptorContext<HelloRequest, HelloResponse> context)
+        {
+            Task<Metadata> responseHeadersTask =
+                TestStreamReader<object>.FromException<Metadata>(TEST_EXCEPTION);
+            Task<HelloResponse> responseTask = Task.FromResult(TEST_RESPONSE);
             Func<Metadata> trailersTask = () => TEST_TRAILERS_METADATA;
             return new AsyncUnaryCall<HelloResponse>(responseTask, responseHeadersTask,
                 null, trailersTask, null);

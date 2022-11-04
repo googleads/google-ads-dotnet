@@ -84,10 +84,23 @@ namespace Google.Ads.GoogleAds.Logging
         {
             // Generating log entry is expensive, so let's do that only if the log source
             // has been configured to do so.
+            var generateSummaryLogs = TraceUtilities.ShouldGenerateSummaryRequestLogs();
+            var generateDetailedLogs = TraceUtilities.ShouldGenerateDetailedRequestLogs();
+            var generateAnyLogs = generateSummaryLogs || generateDetailedLogs;
+
+            if (!generateAnyLogs) {
+                return;
+            }
 
             RpcException exception = null;
+            Metadata responseHeaders = new Metadata();
 
-            if (TraceUtilities.ShouldGenerateSummaryRequestLogs())
+            try {
+                responseHeaders = Merge(await call.ResponseHeadersAsync, call.GetTrailers());
+            } catch (RpcException) {
+            }
+
+            if (generateSummaryLogs)
             {
                 exception = UnaryRpcInterceptor.ParseTaskException<TResponse>(oldTask.Exception);
 
@@ -99,15 +112,14 @@ namespace Google.Ads.GoogleAds.Logging
                     IsFailure = oldTask.IsFaulted,
                     Exception = exception,
                     CustomerId = GetCustomerId(request),
-                    ResponseHeaders = Merge(await call.ResponseHeadersAsync,
-                                            call.GetTrailers()),
+                    ResponseHeaders = responseHeaders,
                     Response = (oldTask.IsFaulted) ? default : oldTask.Result,
                 };
 
                 WriteSummaryLogs(logEntry);
             }
 
-            if (TraceUtilities.ShouldGenerateDetailedRequestLogs())
+            if (generateDetailedLogs)
             {
                 LogEntry logEntry = new LogEntry(logCustomizer)
                 {
@@ -115,8 +127,7 @@ namespace Google.Ads.GoogleAds.Logging
                     Method = context.Method.FullName,
                     RequestHeaders = context.Options.Headers,
                     Request = request,
-                    ResponseHeaders = Merge(await call.ResponseHeadersAsync,
-                                            call.GetTrailers()),
+                    ResponseHeaders = responseHeaders,
                     Response = (oldTask.IsFaulted) ? default : oldTask.Result,
                     Exception = exception ?? UnaryRpcInterceptor.ParseTaskException<TResponse>(
                         oldTask.Exception),
@@ -146,12 +157,25 @@ namespace Google.Ads.GoogleAds.Logging
             where TRequest : class
             where TResponse : class
         {
+
             // Generating log entry is expensive, so let's do that only if the log source
             // has been configured to do so.
+            var generateSummaryLogs = TraceUtilities.ShouldGenerateSummaryRequestLogs();
+            var generateDetailedLogs = TraceUtilities.ShouldGenerateDetailedRequestLogs();
+            var generateAnyLogs = generateSummaryLogs || generateDetailedLogs;
+
+            if (!generateAnyLogs) {
+                return;
+            }
 
             RpcException exception = null;
+            Metadata responseHeaders = new Metadata();
 
-            if (TraceUtilities.ShouldGenerateSummaryRequestLogs())
+            try {
+                responseHeaders = Merge(await call.ResponseHeadersAsync, TryGetCallTrailers(call));
+            } catch (RpcException) {}
+
+            if (generateSummaryLogs)
             {
                 exception = UnaryRpcInterceptor.ParseTaskException<TResponse>(rpcException);
 
@@ -164,14 +188,13 @@ namespace Google.Ads.GoogleAds.Logging
                     Exception = exception,
                     CustomerId = GetCustomerId(request),
                     Response = response,
-                    ResponseHeaders = Merge(await call.ResponseHeadersAsync,
-                        TryGetCallTrailers(call)),
+                    ResponseHeaders = responseHeaders
                 };
 
                 WriteSummaryLogs(logEntry);
             }
 
-            if (TraceUtilities.ShouldGenerateDetailedRequestLogs())
+            if (generateDetailedLogs)
             {
                 LogEntry logEntry = new LogEntry(logCustomizer)
                 {
@@ -179,8 +202,7 @@ namespace Google.Ads.GoogleAds.Logging
                     Method = context.Method.FullName,
                     RequestHeaders = context.Options.Headers,
                     Request = request,
-                    ResponseHeaders = Merge(await call.ResponseHeadersAsync,
-                        TryGetCallTrailers(call)),
+                    ResponseHeaders = responseHeaders,
                     Response = response,
                     Exception = exception ?? UnaryRpcInterceptor.ParseTaskException<TResponse>(
                         rpcException),
