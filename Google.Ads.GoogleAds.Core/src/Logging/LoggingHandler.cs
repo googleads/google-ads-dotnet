@@ -82,8 +82,17 @@ namespace Google.Ads.GoogleAds.Logging
             where TRequest : class
             where TResponse : class
         {
-            RpcException exception = null;
+            // Generating log entry is expensive, so let's do that only if the log source
+            // has been configured to do so.
+            var generateSummaryLogs = TraceUtilities.ShouldGenerateSummaryRequestLogs();
+            var generateDetailedLogs = TraceUtilities.ShouldGenerateDetailedRequestLogs();
+            var generateAnyLogs = generateSummaryLogs || generateDetailedLogs;
 
+            if (!generateAnyLogs) {
+                return;
+            }
+
+            RpcException exception = null;
             Metadata responseHeaders = new Metadata();
 
             try {
@@ -91,9 +100,7 @@ namespace Google.Ads.GoogleAds.Logging
             } catch (RpcException) {
             }
 
-            // Generating log entry is expensive, so let's do that only if the log source
-            // has been configured to do so.
-            if (TraceUtilities.ShouldGenerateSummaryRequestLogs())
+            if (generateSummaryLogs)
             {
                 exception = UnaryRpcInterceptor.ParseTaskException<TResponse>(oldTask.Exception);
 
@@ -112,7 +119,7 @@ namespace Google.Ads.GoogleAds.Logging
                 WriteSummaryLogs(logEntry);
             }
 
-            if (TraceUtilities.ShouldGenerateDetailedRequestLogs())
+            if (generateDetailedLogs)
             {
                 LogEntry logEntry = new LogEntry(logCustomizer)
                 {
@@ -150,17 +157,25 @@ namespace Google.Ads.GoogleAds.Logging
             where TRequest : class
             where TResponse : class
         {
-            RpcException exception = null;
 
+            // Generating log entry is expensive, so let's do that only if the log source
+            // has been configured to do so.
+            var generateSummaryLogs = TraceUtilities.ShouldGenerateSummaryRequestLogs();
+            var generateDetailedLogs = TraceUtilities.ShouldGenerateDetailedRequestLogs();
+            var generateAnyLogs = generateSummaryLogs || generateDetailedLogs;
+
+            if (!generateAnyLogs) {
+                return;
+            }
+
+            RpcException exception = null;
             Metadata responseHeaders = new Metadata();
 
             try {
                 responseHeaders = Merge(await call.ResponseHeadersAsync, TryGetCallTrailers(call));
             } catch (RpcException) {}
 
-            // Generating log entry is expensive, so let's do that only if the log source
-            // has been configured to do so.
-            if (TraceUtilities.ShouldGenerateSummaryRequestLogs())
+            if (generateSummaryLogs)
             {
                 exception = UnaryRpcInterceptor.ParseTaskException<TResponse>(rpcException);
 
@@ -179,7 +194,7 @@ namespace Google.Ads.GoogleAds.Logging
                 WriteSummaryLogs(logEntry);
             }
 
-            if (TraceUtilities.ShouldGenerateDetailedRequestLogs())
+            if (generateDetailedLogs)
             {
                 LogEntry logEntry = new LogEntry(logCustomizer)
                 {
