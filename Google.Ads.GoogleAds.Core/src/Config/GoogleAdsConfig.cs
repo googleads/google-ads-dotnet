@@ -15,15 +15,22 @@
 using Google.Ads.Gax.Config;
 using Google.Ads.GoogleAds.Lib;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
 namespace Google.Ads.GoogleAds.Config
 {
     /// <summary>
+    /// The Google Ads Config interface to allow for DI container configuration.
+    /// </summary>
+    public interface IGoogleAdsConfig { }
+
+    /// <summary>
     /// This class reads the configuration keys from App.config.
     /// </summary>
-    public class GoogleAdsConfig : AdsConfig
+    public class GoogleAdsConfig : AdsConfig, IGoogleAdsConfig
     {
         /// <summary>
         /// The Google Ads API server URL.
@@ -164,6 +171,18 @@ namespace Google.Ads.GoogleAds.Config
         /// <param name="configurationSection">The configuration section.</param>
         public GoogleAdsConfig(IConfigurationSection configurationSection)
             : base(configurationSection) { }
+
+        /// <summary>
+        /// Public constructor. Loads the configuration from injected options.
+        /// </summary>
+        public GoogleAdsConfig(IOptions<GoogleAdsApiOptions> options)
+        {
+            DeveloperToken = options.Value.DeveloperToken;
+            OAuth2Mode = (OAuth2Flow)Enum.Parse(typeof(OAuth2Flow), options.Value.OAuth2Mode);
+            OAuth2ClientId = options.Value.OAuth2ClientId;
+            OAuth2ClientSecret = options.Value.OAuth2ClientSecret;
+            OAuth2RefreshToken = options.Value.OAuth2RefreshToken;
+        }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="GoogleAdsConfig"/> class.
