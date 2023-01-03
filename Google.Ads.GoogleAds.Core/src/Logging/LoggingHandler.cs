@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using Google.Ads.Gax.Interceptors;
+using Google.Ads.Gax.Util;
 using Google.Ads.Gax.Logging;
 using Google.Ads.GoogleAds.Util;
 using Grpc.Core;
@@ -102,7 +102,7 @@ namespace Google.Ads.GoogleAds.Logging
 
             if (generateSummaryLogs)
             {
-                exception = UnaryRpcInterceptor.ParseTaskException<TResponse>(oldTask.Exception);
+                exception = ExceptionUtilities.ParseTaskException<TResponse>(oldTask.Exception);
 
                 LogEntry logEntry = new LogEntry(logCustomizer)
                 {
@@ -129,7 +129,7 @@ namespace Google.Ads.GoogleAds.Logging
                     Request = request,
                     ResponseHeaders = responseHeaders,
                     Response = (oldTask.IsFaulted) ? default : oldTask.Result,
-                    Exception = exception ?? UnaryRpcInterceptor.ParseTaskException<TResponse>(
+                    Exception = exception ?? ExceptionUtilities.ParseTaskException<TResponse>(
                         oldTask.Exception),
                     IsFailure = oldTask.IsFaulted,
                     CustomerId = GetCustomerId(request),
@@ -177,7 +177,7 @@ namespace Google.Ads.GoogleAds.Logging
 
             if (generateSummaryLogs)
             {
-                exception = UnaryRpcInterceptor.ParseTaskException<TResponse>(rpcException);
+                exception = ExceptionUtilities.ParseTaskException<TResponse>(rpcException);
 
                 LogEntry logEntry = new LogEntry(logCustomizer)
                 {
@@ -204,7 +204,7 @@ namespace Google.Ads.GoogleAds.Logging
                     Request = request,
                     ResponseHeaders = responseHeaders,
                     Response = response,
-                    Exception = exception ?? UnaryRpcInterceptor.ParseTaskException<TResponse>(
+                    Exception = exception ?? ExceptionUtilities.ParseTaskException<TResponse>(
                         rpcException),
                     IsFailure = (rpcException != null),
                     CustomerId = GetCustomerId(request),

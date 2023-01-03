@@ -15,6 +15,7 @@
 using Google.Ads.Gax.Interceptors;
 using Google.Ads.Gax.Lib;
 using Google.Ads.Gax.Tests;
+using Google.Ads.Gax.Util;
 using Grpc.Core;
 using NUnit.Framework;
 using System;
@@ -77,7 +78,7 @@ namespace Google.Ads.GoogleAds.Tests.Interceptors
                 new StreamingRpcInterceptor<object>(testStreamReader,
                 delegate (object foo, AggregateException e)
                 {
-                    RpcException innerException = UnaryRpcInterceptor.ExtractRpcException(e);
+                    RpcException innerException = ExceptionUtilities.ExtractRpcException(e);
                     Assert.IsInstanceOf<AdsBaseException>(innerException);
                     return;
                 });

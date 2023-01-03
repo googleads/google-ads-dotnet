@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package google.ads.gax.tests.util;
+option csharp_namespace = "Google.Ads.Gax.Tests.Util";
+
+message AdsFailure {
+  int64 id = 1;
+  optional string text = 2;
+}

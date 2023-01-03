@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using Google.Ads.Gax.Util;
 using Grpc.Core;
 using System;
 using System.Threading;
@@ -117,7 +118,7 @@ namespace Google.Ads.Gax.Interceptors
             if (task.IsFaulted)
             {
                 // Parse the exception thrown by the task and throw it.
-                throw UnaryRpcInterceptor.ParseTaskException<TResponse>(aggregateException);
+                throw ExceptionUtilities.ParseTaskException<TResponse>(aggregateException);
             }
             else
             {

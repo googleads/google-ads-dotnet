@@ -84,6 +84,17 @@ namespace Google.Ads.Gax.Util
         }
 
         /// <summary>
+        /// Parses the failure.
+        /// </summary>
+        /// <typeparam name="U"></typeparam>
+        /// <param name="message">The message.</param>
+        /// <returns></returns>
+        public static byte[] Serialize<U>(U message) where U : IMessage<U>, new()
+        {
+            return message.ToByteArray();
+        }
+
+        /// <summary>
         /// Gets the metadata key name when a type is serialized as bytes.
         /// </summary>
         /// <typeparam name="U">The type.</typeparam>

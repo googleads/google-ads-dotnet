@@ -14,6 +14,7 @@
 
 using Google.Ads.Gax.Interceptors;
 using Google.Ads.Gax.Lib;
+using Google.Ads.Gax.Util;
 using Grpc.Core;
 using NUnit.Framework;
 using System;
@@ -179,7 +180,7 @@ namespace Google.Ads.Gax.Tests.Interceptors
         [Test]
         public void TestParseRpcException()
         {
-            Assert.NotNull(UnaryRpcInterceptor.ParseRpcException<HelloException>(
+            Assert.NotNull(ExceptionUtilities.ParseRpcException<HelloException>(
                 TEST_EXCEPTION));
         }
 
@@ -190,7 +191,7 @@ namespace Google.Ads.Gax.Tests.Interceptors
         [Test]
         public void TestParseTaskException()
         {
-            Assert.NotNull(UnaryRpcInterceptor.ParseTaskException<HelloException>(
+            Assert.NotNull(ExceptionUtilities.ParseTaskException<HelloException>(
                 new AggregateException(TEST_EXCEPTION)));
         }
 
@@ -202,7 +203,7 @@ namespace Google.Ads.Gax.Tests.Interceptors
         public void TestExtractRpcException()
         {
             AggregateException ae = new AggregateException(TEST_EXCEPTION);
-            RpcException innerException = UnaryRpcInterceptor.ExtractRpcException(ae);
+            RpcException innerException = ExceptionUtilities.ExtractRpcException(ae);
             Assert.IsInstanceOf<AdsBaseException>(innerException);
         }
 
