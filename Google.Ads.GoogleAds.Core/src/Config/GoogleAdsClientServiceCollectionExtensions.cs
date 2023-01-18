@@ -26,8 +26,8 @@ namespace Microsoft.Extensions.DependencyInjection
             }
 
             services.Configure<GoogleAdsApiOptions>(googleAdsSection);
-            services.AddSingleton<IGoogleAdsConfig, GoogleAdsConfig>();
-            services.AddSingleton<IGoogleAdsClient, GoogleAdsClient>();
+            services.AddTransient<IGoogleAdsConfig, GoogleAdsConfig>();
+            services.AddTransient<IGoogleAdsClient, GoogleAdsClient>();
 
             return services;
         }
