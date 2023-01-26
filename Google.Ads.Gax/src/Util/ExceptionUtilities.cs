@@ -29,7 +29,7 @@ namespace Google.Ads.Gax.Util
         /// <summary>
         /// Parses the OAuth exceptions.
         /// </summary>
-        /// <param name="e">The aggregate exception that wraps the rpc exception.</param>
+        /// <param name="e">The aggregate exception that wraps the RPC exception.</param>
         /// <returns>The parsed exception, or <code>null</code> if the exception cannot be parsed.
         /// </returns>
         internal static TokenResponseException ParseOAuthException(AggregateException e) =>
@@ -38,7 +38,7 @@ namespace Google.Ads.Gax.Util
         /// <summary>
         /// Parses the OAuth exceptions.
         /// </summary>
-        /// <param name="rpcException">The rpc exception</param>
+        /// <param name="rpcException">The RPC exception</param>
         /// <returns>The parsed exception, or <code>null</code> if the exception cannot be parsed.
         /// </returns>
         internal static TokenResponseException ParseOAuthException(RpcException rpcException)
