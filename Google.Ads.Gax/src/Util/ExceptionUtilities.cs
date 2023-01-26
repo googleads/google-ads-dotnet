@@ -58,6 +58,10 @@ namespace Google.Ads.Gax.Util
             {
                 return null;
             }
+            // When the grpc layer serializes the inner exception into a string, it starts with
+            // the full type of the exception. So if we can't find the full type name of
+            // TokenResponseException in the message (index == -1), we won't try to parse
+            // the OAuth exception.
             int prefixIndex = rpcException.Message.IndexOf(EXCEPTION_TYPE_PREFIX);
             if (prefixIndex == -1)
             {
@@ -127,6 +131,12 @@ namespace Google.Ads.Gax.Util
         /// <param name="aggregateException">The aggregate exception.</param>
         /// <returns>the extracted <see cref="RpcException"/>, or null if an exception
         /// cannot be extracted.</returns>
+        /// <remarks>The <code>AggregateException</code>We do not have a scenario where we can
+        /// have more than one RpcException in a single API call. An RpcException is fatal for
+        /// an API call, and the call logic fails and returns immediately to the caller.
+        /// As a result, we've chosen to make this method return an RpcException and not a
+        /// <code>List(RpcException).</code>
+        /// </remarks>
         internal static RpcException ExtractRpcException(AggregateException aggregateException)
         {
             return aggregateException?.InnerExceptions?.FirstOrDefault(
