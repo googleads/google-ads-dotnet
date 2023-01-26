@@ -176,7 +176,8 @@ namespace Google.Ads.Gax.Util
         }
 
         /// <summary>
-        /// Finds the type of the ads exception that matches <paramref name="rpcException"/>.
+        /// Inspect the <paramref name="rpcException"/> to find a potential type of Ads exception
+        /// that the <code>rpcException</code> can be interpreted as.
         /// </summary>
         /// <typeparam name="TResponse">The type of the response.</typeparam>
         /// <param name="rpcException">The RPC exception.</param>
