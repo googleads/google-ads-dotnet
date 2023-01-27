@@ -14,6 +14,7 @@
 
 using Google.Ads.Gax.Lib;
 using Google.Ads.Gax.Util;
+using Google.Apis.Auth.OAuth2.Responses;
 using Grpc.Core;
 using System;
 using System.Linq;
@@ -62,15 +63,19 @@ namespace Google.Ads.Gax.Interceptors
         internal static async Task<T> Intercept<T, TResponse>(Task<T> task,
             Action<Task<T>> callback)
         {
-            AdsBaseException parsedException;
             try
             {
                 return await task;
             }
-            catch (RpcException e) when ((parsedException =
-                ParseRpcException<TResponse>(e)) != null)
+            catch (RpcException e)
             {
-                throw parsedException;
+                AdsBaseException parsedException =
+                    ExceptionUtilities.ParseRpcException<TResponse>(e);
+                if (parsedException != null)
+                {
+                    throw parsedException;
+                }
+                throw;
             }
             finally
             {
@@ -99,7 +104,7 @@ namespace Google.Ads.Gax.Interceptors
                     return function();
                 }
                 catch (RpcException e) when ((parsedException =
-                    ParseRpcException<TResponse>(e)) != null)
+                    ExceptionUtilities.ParseRpcException<TResponse>(e)) != null)
                 {
                     throw parsedException;
                 }
@@ -123,104 +128,11 @@ namespace Google.Ads.Gax.Interceptors
                     action();
                 }
                 catch (RpcException e) when ((parsedException =
-                    ParseRpcException<TResponse>(e)) != null)
+                    ExceptionUtilities.ParseRpcException<TResponse>(e)) != null)
                 {
                     throw parsedException;
                 }
             });
-        }
-
-        /// <summary>
-        /// Parses the task exception.
-        /// </summary>
-        /// <param name="e">The <see cref="AggregateException"/> to parse.</param>
-        /// <returns>The parsed <see cref="AdsBaseException"/> if parsing is successful;
-        /// The underlying <see cref="RpcException" /> if the exception cannot be parsed as a
-        /// AdsBaseException.</returns>
-        /// <remarks><code>AggregateException</code> is very close to a catch-all exception for
-        /// Tasks. While all the situations that we know of involves this exception being thrown
-        /// by an underlying <code>RpcException</code>, theoretically this method may return a
-        /// null object, if the <code>AggregateException</code> is not caused by an
-        /// <code>RpcException</code>. That would typically indicate an underlying issue with
-        /// the code.</remarks>
-        internal static RpcException ParseTaskException<TResponse>(AggregateException e)
-        {
-            RpcException rpcException = ExtractRpcException(e);
-            AdsBaseException adsException = ParseRpcException<TResponse>(rpcException);
-            return (adsException == null) ? rpcException : adsException;
-        }
-
-        /// <summary>
-        /// Parses the RPC exception into a <see cref="AdsBaseException" />.
-        /// </summary>
-        /// <param name="rpcException">The RPC exception.</param>
-        /// <returns>The parsed exception, or a null if the parsing cannot be done.</returns>
-        internal static AdsBaseException ParseRpcException<TResponse>(RpcException rpcException)
-        {
-            if (rpcException == null)
-            {
-                return null;
-            }
-
-            System.Type exceptionType = FindAdsExceptionType<TResponse>(rpcException);
-
-            if (exceptionType == null)
-            {
-                return null;
-            }
-            MethodInfo methodInfo = exceptionType.GetMethod("Create",
-                BindingFlags.Public | BindingFlags.Static);
-            if (methodInfo == null)
-            {
-                return null;
-            }
-            return methodInfo.Invoke(null, new object[] { rpcException })
-                as AdsBaseException;
-        }
-
-        /// <summary>
-        /// Finds the type of the ads exception that matches <paramref name="rpcException"/>.
-        /// </summary>
-        /// <typeparam name="TResponse">The type of the response.</typeparam>
-        /// <param name="rpcException">The RPC exception.</param>
-        private static System.Type FindAdsExceptionType<TResponse>(RpcException rpcException)
-        {
-            // We are trying to find a AdsBaseException in the assembly pointed to by
-            // TResponse which has a matching FailureKey.
-
-            Assembly myAssembly = typeof(TResponse).Assembly;
-            return myAssembly.GetTypes().Where(delegate (System.Type type)
-            {
-                if (!type.IsSubclassOf(typeof(AdsBaseException)))
-                {
-                    return false;
-                }
-                string failureKey = type.GetProperty("FailureKey",
-                    BindingFlags.Static | BindingFlags.Public | BindingFlags.FlattenHierarchy)
-                    .GetValue(null).ToString();
-                Metadata.Entry failureEntry = rpcException.Trailers.GetEntry(failureKey);
-                if (failureEntry != null)
-                {
-                    return true;
-                }
-                return false;
-            }).FirstOrDefault();
-        }
-
-        /// <summary>
-        /// Extracts the RPC exception from an <see cref="AggregateException"/>.
-        /// </summary>
-        /// <param name="aggregateException">The aggregate exception.</param>
-        /// <returns>the extracted <see cref="RpcException"/>, or null if an exception
-        /// cannot be extracted.</returns>
-        internal static RpcException ExtractRpcException(AggregateException aggregateException)
-        {
-            return aggregateException?.InnerExceptions?.FirstOrDefault(
-                delegate (Exception innerException)
-                {
-                    return (innerException is RpcException);
-                }
-            ) as RpcException;
         }
     }
 }
