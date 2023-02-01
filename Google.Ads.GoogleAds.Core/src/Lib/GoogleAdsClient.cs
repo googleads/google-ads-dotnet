@@ -43,14 +43,14 @@ namespace Google.Ads.GoogleAds.Lib
         /// <para>Gets an instance of the specified service. Use this method with a predefined
         /// list of templates available for each supported version. E.g.</para>
         /// <para>
-        /// // Gets an instance of V10.GoogleAdsServiceClient<br/>
-        /// GoogleAdsServiceClient googleAdsService = client.GetService(Services.V10.GoogleAdsService);
+        /// // Gets an instance of V12.GoogleAdsServiceClient<br/>
+        /// GoogleAdsServiceClient googleAdsService = client.GetService(Services.V12.GoogleAdsService);
         /// </para>
         /// </summary>
         /// <param name="serviceTemplate"><para>The template that corresponds to the service to
         /// be created. Predefined service templates are available for each supported version, as
         /// a nested class within the <code>Services</code> class.</para>
-        /// <para>E.g. <code>Services.V10</code> class contains predefined templates for v10 of
+        /// <para>E.g. <code>Services.V12</code> class contains predefined templates for v12 of
         /// the Google Ads API.</para>
         /// </param>
         /// <returns>A service instance.</returns>
