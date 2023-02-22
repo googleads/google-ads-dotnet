@@ -1,3 +1,10 @@
+15.0.0
+======
+- Added support for version v13.0 of the Google Ads API.
+- Removed support for v10 of the Google Ads API.
+- Fixed some code examples.
+  - Updated AddCustomerMatchUserList to clarify UserIdentifier usage.
+
 14.2.0
 ======
 - Update the dependencies on Google.Ads.GoogleAds.Core and Google.Ads.Gax

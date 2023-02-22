@@ -15,15 +15,14 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V12.Errors;
-using Google.Ads.GoogleAds.V12.Resources;
-using Google.Ads.GoogleAds.V12.Services;
+using Google.Ads.GoogleAds.V13.Errors;
+using Google.Ads.GoogleAds.V13.Resources;
+using Google.Ads.GoogleAds.V13.Services;
 using Google.Api.Gax;
 using System;
-using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V12.Resources.AdGroupBidModifier;
+using static Google.Ads.GoogleAds.V13.Resources.AdGroupBidModifier;
 
-namespace Google.Ads.GoogleAds.Examples.V12
+namespace Google.Ads.GoogleAds.Examples.V13
 {
     /// <summary>
     /// This code example gets ad group bid modifiers.
@@ -84,7 +83,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService =
-                client.GetService(Services.V12.GoogleAdsService);
+                client.GetService(Services.V13.GoogleAdsService);
 
             string searchQuery = @"
                 SELECT
@@ -100,8 +99,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
                     ad_group_bid_modifier.hotel_length_of_stay.max_nights,
                     ad_group_bid_modifier.hotel_check_in_day.day_of_week,
                     ad_group_bid_modifier.hotel_check_in_date_range.start_date,
-                    ad_group_bid_modifier.hotel_check_in_date_range.end_date,
-                    ad_group_bid_modifier.preferred_content.type
+                    ad_group_bid_modifier.hotel_check_in_date_range.end_date
                 FROM
                     ad_group_bid_modifier";
 
@@ -173,11 +171,6 @@ namespace Google.Ads.GoogleAds.Examples.V12
                             criterionDetails +=
                                 $"Start Date: {agBidModifier.HotelCheckInDateRange.StartDate}," +
                                 $"End Date: {agBidModifier.HotelCheckInDateRange.EndDate}";
-                            break;
-
-                        case CriterionOneofCase.PreferredContent:
-                            criterionDetails +=
-                                $"Type: {agBidModifier.PreferredContent.Type}";
                             break;
                     }
                     Console.WriteLine(criterionDetails);

@@ -16,16 +16,16 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V12.Errors;
-using Google.Ads.GoogleAds.V12.Resources;
-using Google.Ads.GoogleAds.V12.Services;
+using Google.Ads.GoogleAds.V13.Errors;
+using Google.Ads.GoogleAds.V13.Resources;
+using Google.Ads.GoogleAds.V13.Services;
 using Google.Api.Gax;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V12.Enums.FlightPlaceholderFieldEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.FlightPlaceholderFieldEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V12
+namespace Google.Ads.GoogleAds.Examples.V13
 {
     /// <summary>
     /// Removes a feed item attribute value of a feed item in a flights feed. To create a flights
@@ -111,7 +111,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
         {
             // Creates the Feed Item service client.
             FeedItemServiceClient feedItemServiceClient = client.GetService(
-                Services.V12.FeedItemService);
+                Services.V13.FeedItemService);
 
             try
             {
@@ -175,7 +175,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V12.GoogleAdsService);
+                Services.V13.GoogleAdsService);
 
             string feedResourceName = ResourceNames.Feed(customerId, feedId);
 
@@ -302,7 +302,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
         {
             // Gets the Google Ads service.
             GoogleAdsServiceClient googleAdsServiceClient = client.GetService(
-                Services.V12.GoogleAdsService);
+                Services.V13.GoogleAdsService);
 
             // Constructs the resource name for the feed item.
             string feedItemResourceName = ResourceNames.FeedItem(customerId, feedId, feedItemId);

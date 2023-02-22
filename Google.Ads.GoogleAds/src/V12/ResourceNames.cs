@@ -780,6 +780,11 @@ namespace Google.Ads.GoogleAds.V12.Errors
             return $"customers/{customerId}/mutateJobs/{mutateJobId}";
         }
 
+        public static string OfflineUserDataJob(long customerId, long offlineUserDataJobId)
+        {
+            return $"customers/{customerId}/offlineUserDataJobs/{offlineUserDataJobId}";
+        }
+
         public static string OperatingSystemVersionConstant(long criterionId)
         {
             return $"operatingSystemVersionConstants/{criterionId}";

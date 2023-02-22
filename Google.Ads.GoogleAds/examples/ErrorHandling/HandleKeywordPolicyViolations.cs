@@ -15,16 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V12.Common;
-using Google.Ads.GoogleAds.V12.Errors;
-using Google.Ads.GoogleAds.V12.Resources;
-using Google.Ads.GoogleAds.V12.Services;
+using Google.Ads.GoogleAds.V13.Common;
+using Google.Ads.GoogleAds.V13.Errors;
+using Google.Ads.GoogleAds.V13.Resources;
+using Google.Ads.GoogleAds.V13.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V12.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.KeywordMatchTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.KeywordMatchTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V12
+namespace Google.Ads.GoogleAds.Examples.V13
 {
     /// <summary>
     /// This code example demonstrates how to request an exemption for policy violations of a
@@ -109,7 +109,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
         {
             // Get the AdGroupCriterionServiceClient.
             AdGroupCriterionServiceClient service = client.GetService(
-                Services.V12.AdGroupCriterionService);
+                Services.V13.AdGroupCriterionService);
 
             if (string.IsNullOrEmpty(keywordText))
             {

@@ -15,12 +15,12 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V12.Errors;
-using Google.Ads.GoogleAds.V12.Services;
+using Google.Ads.GoogleAds.V13.Errors;
+using Google.Ads.GoogleAds.V13.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V12
+namespace Google.Ads.GoogleAds.Examples.V13
 {
     /// <summary>
     /// This code example gets all campaigns with a specific label.
@@ -77,7 +77,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
         {
             // Get the GoogleAdsServiceClient.
             GoogleAdsServiceClient googleAdsService =
-                client.GetService(Services.V12.GoogleAdsService);
+                client.GetService(Services.V13.GoogleAdsService);
 
             // Creates a request that will retrieve all campaign labels with the specified
             // labelId using pages of the specified page size.

@@ -16,11 +16,11 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V12.Common;
-using Google.Ads.GoogleAds.V12.Enums;
-using Google.Ads.GoogleAds.V12.Errors;
-using Google.Ads.GoogleAds.V12.Resources;
-using Google.Ads.GoogleAds.V12.Services;
+using Google.Ads.GoogleAds.V13.Common;
+using Google.Ads.GoogleAds.V13.Enums;
+using Google.Ads.GoogleAds.V13.Errors;
+using Google.Ads.GoogleAds.V13.Resources;
+using Google.Ads.GoogleAds.V13.Services;
 using Google.Api.Gax;
 using Google.Protobuf.Collections;
 using Google.Protobuf;
@@ -28,33 +28,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System;
 using System.Threading;
-using static Google.Ads.GoogleAds.V12.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.ConversionActionCategoryEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.ConversionOriginEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.AdvertisingChannelSubTypeEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.AssetFieldTypeEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.AssetGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.ListingGroupFilterTypeEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.ListingGroupFilterVerticalEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.ListingGroupFilterProductConditionEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.AssetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.BiddingStrategyTypeEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.BudgetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.CriterionTypeEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.ListingGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.MediaTypeEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.ProductConditionEnum.Types;
-using static Google.Ads.GoogleAds.V12.Resources.Campaign.Types;
-using static Google.Ads.GoogleAds.V12.Resources.ListingGroupFilterDimension.Types;
-using static Google.Ads.GoogleAds.V12.Services.SmartCampaignSuggestionInfo.Types;
+using static Google.Ads.GoogleAds.V13.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.ConversionActionCategoryEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.ConversionOriginEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.AdvertisingChannelSubTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.AssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.AssetGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.ListingGroupFilterTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.ListingGroupFilterVerticalEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.ListingGroupFilterProductConditionEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.AssetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.BiddingStrategyTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.BudgetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.CriterionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.ListingGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.MediaTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.ProductConditionEnum.Types;
+using static Google.Ads.GoogleAds.V13.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V13.Resources.ListingGroupFilterDimension.Types;
+using static Google.Ads.GoogleAds.V13.Services.SmartCampaignSuggestionInfo.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V12
+namespace Google.Ads.GoogleAds.Examples.V13
 {
     /// <summary>
     /// This example shows how to add product partitions to a Performance Max retail campaign.
@@ -470,7 +470,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
             bool replaceExistingTree)
         {
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V12.GoogleAdsService);
+                client.GetService(Services.V13.GoogleAdsService);
 
             string assetGroupResourceName = ResourceNames.AssetGroup(customerId, assetGroupId);
 
@@ -627,7 +627,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
 
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V12.GoogleAdsService);
+                Services.V13.GoogleAdsService);
 
             SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()
             {
