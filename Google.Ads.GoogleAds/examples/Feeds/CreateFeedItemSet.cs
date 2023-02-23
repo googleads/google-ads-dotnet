@@ -15,13 +15,13 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V12.Errors;
-using Google.Ads.GoogleAds.V12.Resources;
-using Google.Ads.GoogleAds.V12.Services;
+using Google.Ads.GoogleAds.V13.Errors;
+using Google.Ads.GoogleAds.V13.Resources;
+using Google.Ads.GoogleAds.V13.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V12
+namespace Google.Ads.GoogleAds.Examples.V13
 {
     /// <summary>
     /// This code example creates a new feed item set for a specified feed, which must belong to
@@ -82,7 +82,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
         {
             // Get the FeedItemSetService.
             FeedItemSetServiceClient feedItemService = client.GetService(
-                Services.V12.FeedItemSetService);
+                Services.V13.FeedItemSetService);
 
             FeedItemSet feedItemSet = new FeedItemSet()
             {

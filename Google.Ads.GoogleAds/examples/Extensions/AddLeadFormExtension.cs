@@ -15,18 +15,18 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V12.Common;
-using Google.Ads.GoogleAds.V12.Enums;
-using Google.Ads.GoogleAds.V12.Errors;
-using Google.Ads.GoogleAds.V12.Resources;
-using Google.Ads.GoogleAds.V12.Services;
+using Google.Ads.GoogleAds.V13.Common;
+using Google.Ads.GoogleAds.V13.Enums;
+using Google.Ads.GoogleAds.V13.Errors;
+using Google.Ads.GoogleAds.V13.Resources;
+using Google.Ads.GoogleAds.V13.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V12.Enums.LeadFormCallToActionTypeEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.LeadFormFieldUserInputTypeEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.LeadFormPostSubmitCallToActionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.LeadFormCallToActionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.LeadFormFieldUserInputTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.LeadFormPostSubmitCallToActionTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V12
+namespace Google.Ads.GoogleAds.Examples.V13
 {
     /// <summary>
     /// This code example creates a lead form and a lead form extension for a campaign. Run
@@ -116,7 +116,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
             long campaignId, string leadFormAssetResourceName)
         {
             CampaignAssetServiceClient campaignAssetService = client.GetService(
-                Services.V12.CampaignAssetService);
+                Services.V13.CampaignAssetService);
 
             // Creates the campaign asset for the lead form.
             CampaignAsset campaignAsset = new CampaignAsset()
@@ -151,7 +151,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
         // [START add_lead_form_extension]
         private string CreateLeadFormAsset(GoogleAdsClient client, long customerId)
         {
-            AssetServiceClient assetService = client.GetService(Services.V12.AssetService);
+            AssetServiceClient assetService = client.GetService(Services.V13.AssetService);
 
             // Creates the lead form asset.
             Asset leadFormAsset = new Asset()

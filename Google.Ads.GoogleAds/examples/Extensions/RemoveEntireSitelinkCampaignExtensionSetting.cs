@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V12.Errors;
-using Google.Ads.GoogleAds.V12.Services;
+using Google.Ads.GoogleAds.V13.Errors;
+using Google.Ads.GoogleAds.V13.Services;
 using Google.Protobuf.Collections;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V12.Enums.ExtensionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.ExtensionTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V12
+namespace Google.Ads.GoogleAds.Examples.V13
 {
     /// <summary>
     /// Removes the entire sitelink campaign extension setting by removing both the sitelink
@@ -94,7 +94,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
         {
             // Get the GoogleAdsService client.
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V12.GoogleAdsService);
+                client.GetService(Services.V13.GoogleAdsService);
 
             List<MutateOperation> mutateOperations = new List<MutateOperation>();
 
@@ -206,7 +206,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
                   campaign_extension_setting.extension_feed_items
                 FROM campaign_extension_setting
                 WHERE
-                  campaign_extension_setting.campaign = 
+                  campaign_extension_setting.campaign =
                       '{ResourceNames.Campaign(customerId, campaignId)}'
                   AND campaign_extension_setting.extension_type = 'SITELINK'";
 

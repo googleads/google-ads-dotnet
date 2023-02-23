@@ -16,32 +16,32 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V12.Common;
-using Google.Ads.GoogleAds.V12.Enums;
-using Google.Ads.GoogleAds.V12.Errors;
-using Google.Ads.GoogleAds.V12.Resources;
-using Google.Ads.GoogleAds.V12.Services;
+using Google.Ads.GoogleAds.V13.Common;
+using Google.Ads.GoogleAds.V13.Enums;
+using Google.Ads.GoogleAds.V13.Errors;
+using Google.Ads.GoogleAds.V13.Resources;
+using Google.Ads.GoogleAds.V13.Services;
 using Google.Protobuf;
 using System.Collections.Generic;
 using System.Linq;
 using System;
-using static Google.Ads.GoogleAds.V12.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.AdvertisingChannelSubTypeEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.AssetFieldTypeEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.AssetGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.AssetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.BiddingStrategyTypeEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.BudgetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.CriterionTypeEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.CustomizerAttributeTypeEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.MediaTypeEnum.Types;
-using static Google.Ads.GoogleAds.V12.Services.SmartCampaignSuggestionInfo.Types;
+using static Google.Ads.GoogleAds.V13.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.AdvertisingChannelSubTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.AssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.AssetGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.AssetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.BiddingStrategyTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.BudgetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.CriterionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.CustomizerAttributeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.MediaTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Services.SmartCampaignSuggestionInfo.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V12
+namespace Google.Ads.GoogleAds.Examples.V13
 {
     /// <summary>
     /// Adds a customizer attribute, links the customizer attribute to a customer, and then adds
@@ -168,7 +168,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
             };
 
             CustomizerAttributeServiceClient serviceClient =
-                client.GetService(Services.V12.CustomizerAttributeService);
+                client.GetService(Services.V13.CustomizerAttributeService);
 
             // Issues a mutate request to add the customizer attribute and prints its information.
             MutateCustomizerAttributesResponse response =
@@ -217,7 +217,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
             };
 
             CustomerCustomizerServiceClient serviceClient =
-                client.GetService(Services.V12.CustomerCustomizerService);
+                client.GetService(Services.V13.CustomerCustomizerService);
 
             // Issues a mutate request to add the customer customizer and prints its information.
             MutateCustomerCustomizersResponse response =
@@ -296,7 +296,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
             };
 
             // Issues a mutate request to add the ad group ad and prints its information.
-            AdGroupAdServiceClient serviceClient = client.GetService(Services.V12.AdGroupAdService);
+            AdGroupAdServiceClient serviceClient = client.GetService(Services.V13.AdGroupAdService);
 
             MutateAdGroupAdsResponse response = serviceClient.MutateAdGroupAds(
                 customerId.ToString(),

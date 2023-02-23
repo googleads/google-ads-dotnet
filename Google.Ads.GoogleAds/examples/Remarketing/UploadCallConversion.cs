@@ -15,12 +15,12 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V12.Errors;
-using Google.Ads.GoogleAds.V12.Services;
+using Google.Ads.GoogleAds.V13.Errors;
+using Google.Ads.GoogleAds.V13.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V12
+namespace Google.Ads.GoogleAds.Examples.V13
 {
     /// <summary>
     /// This code example imports offline call conversion values for calls related to the
@@ -100,7 +100,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
 
             UploadCallConversion codeExample = new UploadCallConversion();
             Console.WriteLine(codeExample.Description);
-            codeExample.Run(new GoogleAdsClient(), options.CustomerId, 
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId,
                 options.ConversionActionId, options.CallerId, options.CallStartTime,
                 options.ConversionTime, options.ConversionValue,
                 options.ConversionCustomVariableId, options.ConversionCustomVariableValue);
@@ -133,14 +133,14 @@ namespace Google.Ads.GoogleAds.Examples.V12
         /// <param name="conversionCustomVariableValue">The value of the conversion custom variable
         /// to associate with the upload.</param>
         // [START upload_call_conversion]
-        public void Run(GoogleAdsClient client, long customerId, 
+        public void Run(GoogleAdsClient client, long customerId,
             long conversionActionId, string callerId, string callStartTime,
             string conversionTime, double conversionValue,
             long? conversionCustomVariableId, string conversionCustomVariableValue)
         {
             // Get the ConversionUploadService.
             ConversionUploadServiceClient conversionUploadService =
-                client.GetService(Services.V12.ConversionUploadService);
+                client.GetService(Services.V13.ConversionUploadService);
 
             // Create a call conversion by specifying currency as USD.
             CallConversion callConversion = new CallConversion()
@@ -184,14 +184,14 @@ namespace Google.Ads.GoogleAds.Examples.V12
                 if (response.PartialFailureError != null)
                 {
                     Console.WriteLine("Call conversion upload failed.");
-                    
+
                     // Retrieves the errors from the partial failure and prints them.
                     List<GoogleAdsError> errors =
                         response.PartialFailure.GetErrorsByOperationIndex(0);
                     foreach (GoogleAdsError error in errors)
                     {
                         Console.WriteLine($"Operation failed with error: {error}.");
-                    }                
+                    }
                 }
                 else
                 {
@@ -202,7 +202,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
                         $"'{uploadedCallConversion.CallerId}' to the conversion action with " +
                         $"resource name '{uploadedCallConversion.ConversionAction}'.");
                 }
-                
+
             }
             catch (GoogleAdsException e)
             {

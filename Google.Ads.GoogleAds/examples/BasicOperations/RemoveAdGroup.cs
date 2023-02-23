@@ -15,12 +15,12 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V12.Errors;
-using Google.Ads.GoogleAds.V12.Services;
+using Google.Ads.GoogleAds.V13.Errors;
+using Google.Ads.GoogleAds.V13.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V12
+namespace Google.Ads.GoogleAds.Examples.V13
 {
     /// <summary>
     /// This code example deletes an ad group. To get ad groups, run GetAdGroups.cs.
@@ -77,7 +77,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
         public void Run(GoogleAdsClient client, long customerId, long adGroupId)
         {
             // Get the AdGroupService.
-            AdGroupServiceClient service = client.GetService(Services.V12.AdGroupService);
+            AdGroupServiceClient service = client.GetService(Services.V13.AdGroupService);
 
             // Construct an operation that will remove the ad group with the specified
             // resource name.

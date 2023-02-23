@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V12.Common;
-using Google.Ads.GoogleAds.V12.Errors;
-using Google.Ads.GoogleAds.V12.Resources;
-using Google.Ads.GoogleAds.V12.Services;
+using Google.Ads.GoogleAds.V13.Common;
+using Google.Ads.GoogleAds.V13.Errors;
+using Google.Ads.GoogleAds.V13.Resources;
+using Google.Ads.GoogleAds.V13.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V12.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.AdGroupAdStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V12
+namespace Google.Ads.GoogleAds.Examples.V13
 {
     /// <summary>
     /// This code example demonstrates how to request an exemption for policy violations of a
@@ -86,7 +86,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
         {
             // Get the AdGroupAdServiceClient.
             AdGroupAdServiceClient adGroupAdService = client.GetService(
-                Services.V12.AdGroupAdService);
+                Services.V13.AdGroupAdService);
 
             string adGroupResourceName = ResourceNames.AdGroup(customerId, adGroupId);
             ResponsiveSearchAdInfo responsiveSearchAdInfo = new ResponsiveSearchAdInfo()
@@ -94,7 +94,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
                 Headlines = {
                     new AdTextAsset() { Text = $"Cruise to Mars #{ExampleUtilities.GetShortRandomString()}" },
                     new AdTextAsset() { Text = "Best Space Cruise Line" },
-                    new AdTextAsset() { Text = "Experience the Stars" }                    
+                    new AdTextAsset() { Text = "Experience the Stars" }
                 },
                 Descriptions = {
                     // Intentionally use an ad text that violates policy -- having too many exclamation
@@ -103,7 +103,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
                     new AdTextAsset() { Text = "Visit the Red Planet" }
                 }
             };
-            
+
             // Creates an ad group ad to hold the above ad.
             AdGroupAd adGroupAd = new AdGroupAd()
             {

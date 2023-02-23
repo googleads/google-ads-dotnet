@@ -15,20 +15,20 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V12.Common;
-using Google.Ads.GoogleAds.V12.Errors;
-using Google.Ads.GoogleAds.V12.Resources;
-using Google.Ads.GoogleAds.V12.Services;
+using Google.Ads.GoogleAds.V13.Common;
+using Google.Ads.GoogleAds.V13.Errors;
+using Google.Ads.GoogleAds.V13.Resources;
+using Google.Ads.GoogleAds.V13.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V12.Enums.AdCustomizerPlaceholderFieldEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.AssetSetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.FeedAttributeTypeEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.PlaceholderTypeEnum.Types;
-using static Google.Ads.GoogleAds.V12.Enums.WebpageConditionOperandEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.AdCustomizerPlaceholderFieldEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.AssetSetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.FeedAttributeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.PlaceholderTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.WebpageConditionOperandEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V12
+namespace Google.Ads.GoogleAds.Examples.V13
 {
     /// <summary>
     /// This code example adds a page feed with URLs for a Dynamic Search Ads campaign.
@@ -134,7 +134,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
         private static List<string> CreateAssets(GoogleAdsClient client, long customerId,
             string dsaPageUrlLabel)
         {
-            AssetServiceClient assetService = client.GetService(Services.V12.AssetService);
+            AssetServiceClient assetService = client.GetService(Services.V13.AssetService);
 
             string[] urls = new[]
             {
@@ -192,7 +192,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
         private string CreateAssetSet(GoogleAdsClient client, long customerId)
         {
             AssetSetServiceClient assetSetService = client.GetService(
-                Services.V12.AssetSetService);
+                Services.V13.AssetSetService);
 
             // Creates an AssetSet which will be used to link the dynamic page feed assets
             // to a campaign.
@@ -231,7 +231,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
             List<string> assetResourceNames, string assetSetResourceName)
         {
             AssetSetAssetServiceClient assetSetAssetService = client.GetService(
-                Services.V12.AssetSetAssetService);
+                Services.V13.AssetSetAssetService);
 
             List<AssetSetAssetOperation> operations = new List<AssetSetAssetOperation>();
             foreach (string assetResourceName in assetResourceNames)
@@ -271,7 +271,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
             long campaignId, string assetSetResourceName)
         {
             CampaignAssetSetServiceClient campaignAssetSetService = client.GetService(
-                Services.V12.CampaignAssetSetService);
+                Services.V13.CampaignAssetSetService);
 
             // Creates a CampaignAssetSet representing the link between an AssetSet and a Campaign.
             CampaignAssetSet campaignAssetSet = new CampaignAssetSet()
@@ -306,7 +306,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
             GoogleAdsClient client, long customerId, long adGroupId, string dsaPageUrlLabel)
         {
             AdGroupCriterionServiceClient adGroupCriterionService = client.GetService(
-                Services.V12.AdGroupCriterionService);
+                Services.V13.AdGroupCriterionService);
 
             string adGroupResourceName = ResourceNames.AdGroup(customerId, adGroupId);
 

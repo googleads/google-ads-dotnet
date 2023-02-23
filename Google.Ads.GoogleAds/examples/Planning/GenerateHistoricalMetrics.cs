@@ -15,14 +15,14 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V12.Common;
-using Google.Ads.GoogleAds.V12.Errors;
-using Google.Ads.GoogleAds.V12.Services;
+using Google.Ads.GoogleAds.V13.Common;
+using Google.Ads.GoogleAds.V13.Errors;
+using Google.Ads.GoogleAds.V13.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Google.Ads.GoogleAds.Examples.V12
+namespace Google.Ads.GoogleAds.Examples.V13
 {
     /// <summary>
     /// This code example generates historical metrics for a keyword plan. To create a keyword
@@ -80,7 +80,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
         public void Run(GoogleAdsClient client, long customerId, long planId)
         {
             KeywordPlanServiceClient keywordPlanIdeaServiceClient =
-                client.GetService(Services.V12.KeywordPlanService);
+                client.GetService(Services.V13.KeywordPlanService);
 
             string resourceName = ResourceNames.KeywordPlan(customerId, planId);
 

@@ -15,16 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V12.Common;
-using Google.Ads.GoogleAds.V12.Errors;
-using Google.Ads.GoogleAds.V12.Resources;
-using Google.Ads.GoogleAds.V12.Services;
+using Google.Ads.GoogleAds.V13.Common;
+using Google.Ads.GoogleAds.V13.Errors;
+using Google.Ads.GoogleAds.V13.Resources;
+using Google.Ads.GoogleAds.V13.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V12.Enums.UserListMembershipStatusEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.UserListMembershipStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V12
+namespace Google.Ads.GoogleAds.Examples.V13
 {
     /// <summary>
     /// This code example creates a basic user list consisting of people who triggered one or more
@@ -62,7 +62,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
 
             AddConversionBasedUserList codeExample = new AddConversionBasedUserList();
             Console.WriteLine(codeExample.Description);
-            codeExample.Run(new GoogleAdsClient(), options.CustomerId, 
+            codeExample.Run(new GoogleAdsClient(), options.CustomerId,
                 options.ConversionActionIds.ToArray());
         }
 
@@ -85,7 +85,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
         {
             // Creates the service client.
             UserListServiceClient userListServiceClient =
-                client.GetService(Services.V12.UserListService);
+                client.GetService(Services.V13.UserListService);
 
             List<UserListActionInfo> userListActionInfoList = new List<UserListActionInfo>();
             foreach (long conversionActionId in conversionActionIds)

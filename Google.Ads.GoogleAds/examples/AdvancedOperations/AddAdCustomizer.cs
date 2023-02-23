@@ -15,16 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V12.Common;
-using Google.Ads.GoogleAds.V12.Errors;
-using Google.Ads.GoogleAds.V12.Resources;
-using Google.Ads.GoogleAds.V12.Services;
+using Google.Ads.GoogleAds.V13.Common;
+using Google.Ads.GoogleAds.V13.Errors;
+using Google.Ads.GoogleAds.V13.Resources;
+using Google.Ads.GoogleAds.V13.Services;
 using System;
 using System.Collections.Generic;
-using Google.Ads.GoogleAds.V12.Enums;
-using static Google.Ads.GoogleAds.V12.Enums.CustomizerAttributeTypeEnum.Types;
+using Google.Ads.GoogleAds.V13.Enums;
+using static Google.Ads.GoogleAds.V13.Enums.CustomizerAttributeTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V12
+namespace Google.Ads.GoogleAds.Examples.V13
 {
     /// <summary>
     /// This code example adds two ad customizer attributes and associates
@@ -82,10 +82,10 @@ namespace Google.Ads.GoogleAds.Examples.V12
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="adGroupId">ID of the ad group to which ad customizers are added.</param>
         public void Run(GoogleAdsClient client, long customerId, long adGroupId)
-        {            
+        {
             // Get the AdGroupBidModifierService.
             AdGroupBidModifierServiceClient adGroupBidModifierService =
-                client.GetService(Services.V12.AdGroupBidModifierService);
+                client.GetService(Services.V13.AdGroupBidModifierService);
 
             string stringCustomizerName = "Planet_" + ExampleUtilities.GetShortRandomString();
             string priceCustomizerName = "Price_" + ExampleUtilities.GetShortRandomString();
@@ -101,7 +101,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
                 // Link the customizer attributes to the ad group.
                 LinkCustomizerAttributes(client, customerId, adGroupId,
                     textCustomizerAttributeResourceName, priceCustomizerAttributeResourceName);
-                
+
                 // Create an ad with the customizations provided by the ad customizer attributes.
                 CreateAdWithCustomizations(client, customerId, adGroupId,
                     stringCustomizerName, priceCustomizerName);
@@ -115,20 +115,20 @@ namespace Google.Ads.GoogleAds.Examples.V12
                 throw;
             }
         }
-       
+
         /// <summary>
         /// Creates a text customizer attribute and returns its resource name.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
-        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>        
+        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="customizerName">The name of the customizer to create.</param>
         // [START add_ad_customizer]
         private string CreateTextCustomizerAttribute(GoogleAdsClient client, long customerId,
             string customizerName)
         {
             // Get the customizer attribute service.
-            CustomizerAttributeServiceClient customizerAttributeService = 
-                client.GetService(Services.V12.CustomizerAttributeService);
+            CustomizerAttributeServiceClient customizerAttributeService =
+                client.GetService(Services.V13.CustomizerAttributeService);
 
             // Creates a text customizer attribute. The customizer attribute name is
             // arbitrary and will be used as a placeholder in the ad text fields.
@@ -146,7 +146,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
                 customizerAttributeService.MutateCustomizerAttributes(customerId.ToString(),
                     new[] {textAttributeOperation});
 
-            string customizerAttributeResourceName = response.Results[0].ResourceName; 
+            string customizerAttributeResourceName = response.Results[0].ResourceName;
             Console.WriteLine($"Added text customizer attribute with resource name" +
                 $" '{customizerAttributeResourceName}'.");
 
@@ -158,16 +158,16 @@ namespace Google.Ads.GoogleAds.Examples.V12
         /// Creates a price customizer attribute ad returns its resource name.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
-        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>        
+        /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
         /// <param name="customizerName">The name of the customizer to create.</param>
         // [START add_ad_customizer_1]
         private string CreatePriceCustomizerAttribute(GoogleAdsClient client, long customerId,
             string customizerName)
         {
             // Get the customizer attribute service.
-            CustomizerAttributeServiceClient customizerAttributeService = 
-                client.GetService(Services.V12.CustomizerAttributeService);
-    
+            CustomizerAttributeServiceClient customizerAttributeService =
+                client.GetService(Services.V13.CustomizerAttributeService);
+
             // Creates a price customizer attribute. The customizer attribute name is
             // arbitrary and will be used as a placeholder in the ad text fields.
             CustomizerAttribute priceAttribute = new CustomizerAttribute()
@@ -175,7 +175,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
                 Name = customizerName,
                 Type = CustomizerAttributeType.Price
             };
-    
+
             CustomizerAttributeOperation priceAttributeOperation = new CustomizerAttributeOperation(){
                 Create = priceAttribute
             };
@@ -184,7 +184,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
                 customizerAttributeService.MutateCustomizerAttributes(customerId.ToString(),
                     new[] {priceAttributeOperation});
 
-            string customizerAttributeResourceName = response.Results[0].ResourceName; 
+            string customizerAttributeResourceName = response.Results[0].ResourceName;
             Console.WriteLine($"Added price customizer attribute with resource name" +
                 $" '{customizerAttributeResourceName}'.");
 
@@ -210,7 +210,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
         {
             // Get the ad group customizer service.
             AdGroupCustomizerServiceClient adGroupCustomizerService =
-                client.GetService(Services.V12.AdGroupCustomizerService);
+                client.GetService(Services.V13.AdGroupCustomizerService);
 
             List<AdGroupCustomizerOperation> adGroupCustomizerOperations =
                 new List<AdGroupCustomizerOperation>();
@@ -245,9 +245,9 @@ namespace Google.Ads.GoogleAds.Examples.V12
 
             adGroupCustomizerOperations.Add(new AdGroupCustomizerOperation(){
                 Create = priceCustomizer
-            });                        
+            });
 
-            MutateAdGroupCustomizersResponse response =                
+            MutateAdGroupCustomizersResponse response =
                 adGroupCustomizerService.MutateAdGroupCustomizers(customerId.ToString(),
                     adGroupCustomizerOperations);
 
@@ -272,7 +272,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
         {
             // Get the AdGroupAdServiceClient.
             AdGroupAdServiceClient adGroupAdService =
-                client.GetService(Services.V12.AdGroupAdService);
+                client.GetService(Services.V13.AdGroupAdService);
 
             // Creates a responsive search ad using the attribute customizer names as
             // placeholders and default values to be used in case there are no attribute
@@ -302,7 +302,7 @@ namespace Google.Ads.GoogleAds.Examples.V12
                 },
                 FinalUrls = { "https://www.example.com" }
             };
-            
+
             AdGroupAd adGroupAd = new AdGroupAd()
             {
                 Ad = ad,
@@ -312,9 +312,9 @@ namespace Google.Ads.GoogleAds.Examples.V12
             AdGroupAdOperation adGroupAdOperation = new AdGroupAdOperation(){ Create = adGroupAd };
 
             MutateAdGroupAdsResponse response =
-                adGroupAdService.MutateAdGroupAds(customerId.ToString(), 
+                adGroupAdService.MutateAdGroupAds(customerId.ToString(),
                 new[] { adGroupAdOperation });
-            
+
             foreach (MutateAdGroupAdResult result in response.Results)
             {
                 Console.WriteLine($"Added an ad with resource name '{result.ResourceName}'.");
