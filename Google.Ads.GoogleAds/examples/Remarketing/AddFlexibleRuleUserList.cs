@@ -77,6 +77,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the user list is
         /// added.</param>
+        // [START add_combined_rule_user_list]
         public void Run(GoogleAdsClient client, long customerId)
         {
             // Creates a UserListRuleInfo object containing the first rule.
@@ -193,5 +194,6 @@ namespace Google.Ads.GoogleAds.Examples.V13
 
             return userListRuleInfo;
         }
+        // [END add_combined_rule_user_list]
     }
 }
