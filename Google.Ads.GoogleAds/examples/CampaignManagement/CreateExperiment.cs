@@ -23,6 +23,7 @@ using System;
 using System.Linq;
 using static Google.Ads.GoogleAds.V13.Enums.ExperimentStatusEnum.Types;
 using static Google.Ads.GoogleAds.V13.Enums.ExperimentTypeEnum.Types;
+using static Google.Ads.GoogleAds.V13.Enums.ResponseContentTypeEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V13
 {
@@ -87,15 +88,13 @@ namespace Google.Ads.GoogleAds.Examples.V13
             try
             {
                 string experimentResourceName = CreateAnExperiment(client, customerId);
-                string controlArmResourceName, treatmentArmResourceName;
+                MutateExperimentArmResult controlArm, treatmentArm;
 
-                (controlArmResourceName, treatmentArmResourceName) = CreateExperimentArms(
+                (controlArm, treatmentArm) = CreateExperimentArms(
                     client, customerId, baseCampaignId, experimentResourceName);
 
-                string draftCampaignResourceName = FetchDraftCampaign(
-                    client, customerId, treatmentArmResourceName);
-
-                ModifyDraftCampaign(client, customerId, draftCampaignResourceName);
+                ModifyDraftCampaign(client, customerId,
+                    treatmentArm.ExperimentArm.InDesignCampaigns.First());
 
                 // When you're done setting up the experiment and arms and modifying the draft
                 // campaign, this will begin the experiment.
@@ -163,9 +162,10 @@ namespace Google.Ads.GoogleAds.Examples.V13
         /// <param name="baseCampaignId">ID of the campaign for which the control arm is
         /// created.</param>
         /// <param name="experimentResourceName">Resource name of the experiment.</param>
-        /// <returns>The resource names of the control and treatment arms.</returns>
-        private static (string, string) CreateExperimentArms(GoogleAdsClient client,
-            long customerId, long baseCampaignId, string experimentResourceName)
+        /// <returns>The control and treatment arms.</returns>
+        private static (MutateExperimentArmResult, MutateExperimentArmResult)
+            CreateExperimentArms(GoogleAdsClient client, long customerId, long baseCampaignId,
+                string experimentResourceName)
         {
             // Get the ExperimentArmService.
             ExperimentArmServiceClient experimentService = client.GetService(
@@ -200,60 +200,34 @@ namespace Google.Ads.GoogleAds.Examples.V13
                 }
             };
 
-            // Makes the API call.
+            // We want to fetch the draft campaign IDs from the treatment arm, so the
+            // easiest way to do that is to have the response return the newly created
+            // entities.
+            MutateExperimentArmsRequest request = new MutateExperimentArmsRequest
+            {
+                CustomerId = customerId.ToString(),
+                Operations = { controlArmOperation, treatmentArmOperation },
+                ResponseContentType = ResponseContentType.MutableResource
+            };
+
+
             MutateExperimentArmsResponse response = experimentService.MutateExperimentArms(
-                customerId.ToString(), new[] { controlArmOperation, treatmentArmOperation });
+                request
+            );
 
             // Results always return in the order that you specify them in the request.
-            // Since we created the treatment arm last, it will be the last result.  If
-            // you don't remember which arm is the treatment arm, you can always filter
-            // the query in the FetchDraftCampaign method with `experiment_arm.control = false`.
-            string controlArmResourceName = response.Results.First().ResourceName;
-            string treatmentArmResourceName = response.Results.Last().ResourceName;
+            // Since we created the treatment arm last, it will be the last result.
+            MutateExperimentArmResult controlArm = response.Results.First();
+            MutateExperimentArmResult treatmentArm = response.Results.Last();
 
             Console.WriteLine($"Created control arm with resource name " +
-                $"'{controlArmResourceName}.");
+                $"'{controlArm.ResourceName}.");
             Console.WriteLine($"Created treatment arm with resource name" +
-              $" '{treatmentArmResourceName}'.");
-            return (controlArmResourceName, treatmentArmResourceName);
+              $" '{treatmentArm.ResourceName}'.");
+            return (controlArm, treatmentArm);
         }
 
         // [END create_experiment_2]
-
-        // [START create_experiment_3]
-        /// <summary>
-        /// Fetches the draft campaign.
-        /// </summary>
-        /// <param name="client">The Google Ads client.</param>
-        /// <param name="customerId">The customer ID for which the call is made.</param>
-        /// <param name="treatmentArmResourceName">Name of the treatment arm resource.</param>
-        /// <returns>Resource name of the draft campaign</returns>
-        private static string FetchDraftCampaign(GoogleAdsClient client, long customerId,
-            string treatmentArmResourceName)
-        {
-            // Get the GoogleAdsService.
-            GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V13.GoogleAdsService);
-
-            // Creates the query.
-            // The `in_design_campaigns` represent campaign drafts, which you can modify
-            // before starting the experiment.
-            string query = $"SELECT experiment_arm.in_design_campaigns FROM experiment_arm " +
-                $"WHERE experiment_arm.resource_name = '{treatmentArmResourceName}'";
-
-            // Makes the API call.
-            // In design campaigns returns as an array, but for now it can only ever
-            // contain a single ID, so we just grab the first one.
-            string draftCampaignResourceName = googleAdsService.Search(
-                customerId.ToString(), query).First().ExperimentArm.InDesignCampaigns.First();
-
-            Console.WriteLine($"Found draft campaign with resource name " +
-                $"'{draftCampaignResourceName}'.");
-
-            return draftCampaignResourceName;
-        }
-
-        // [END create_experiment_3]
 
         /// <summary>
         /// Modifies the draft campaign.
