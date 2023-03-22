@@ -330,20 +330,23 @@ namespace Google.Ads.GoogleAds.Examples.V13
             {
                 foreach (HotelTextAsset asset in hotelAssetSuggestion.TextAssets)
                 {
-                    MutateOperation operation = new MutateOperation
+                    if (asset.AssetFieldType == assetFieldType)
                     {
-                        AssetOperation = new AssetOperation
+                        MutateOperation operation = new MutateOperation
                         {
-                            Create = new Asset
+                            AssetOperation = new AssetOperation
                             {
-                                TextAsset = new TextAsset
+                                Create = new Asset
                                 {
-                                    Text = asset.Text
+                                    TextAsset = new TextAsset
+                                    {
+                                        Text = asset.Text
+                                    }
                                 }
                             }
-                        }
-                    };
-                    mutateOperations.Add(operation);
+                        };
+                        mutateOperations.Add(operation);
+                    }
                 }
             }
 
