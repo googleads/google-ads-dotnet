@@ -96,7 +96,8 @@ namespace Google.Ads.GoogleAds.Logging
             Metadata responseHeaders = new Metadata();
 
             try {
-                responseHeaders = Merge(await call.ResponseHeadersAsync, call.GetTrailers());
+                responseHeaders = Merge(await call.ResponseHeadersAsync.ConfigureAwait(false),
+                    call.GetTrailers());
             } catch (RpcException) {
             }
 
@@ -172,7 +173,8 @@ namespace Google.Ads.GoogleAds.Logging
             Metadata responseHeaders = new Metadata();
 
             try {
-                responseHeaders = Merge(await call.ResponseHeadersAsync, TryGetCallTrailers(call));
+                responseHeaders = Merge(await call.ResponseHeadersAsync.ConfigureAwait(false),
+                    TryGetCallTrailers(call));
             } catch (RpcException) {}
 
             if (generateSummaryLogs)
@@ -315,17 +317,6 @@ namespace Google.Ads.GoogleAds.Logging
             {
                 return propValue.ToString();
             }
-        }
-
-        /// <summary>
-        /// Gets the response header.
-        /// </summary>
-        /// <param name="task">The task for retrieving metadata headers.</param>
-        /// <returns>The trailing response metadata headers.</returns>
-        private static async Task<Metadata> GetResponseHeader(Task<Metadata> task)
-        {
-            await task;
-            return task.Result;
         }
 
         /// <summary>

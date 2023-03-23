@@ -14,11 +14,8 @@
 
 using Google.Ads.Gax.Lib;
 using Google.Ads.Gax.Util;
-using Google.Apis.Auth.OAuth2.Responses;
 using Grpc.Core;
 using System;
-using System.Linq;
-using System.Reflection;
 using System.Threading.Tasks;
 
 namespace Google.Ads.Gax.Interceptors
@@ -65,7 +62,7 @@ namespace Google.Ads.Gax.Interceptors
         {
             try
             {
-                return await task;
+                return await task.ConfigureAwait(false);
             }
             catch (RpcException e)
             {
