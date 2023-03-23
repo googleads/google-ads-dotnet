@@ -96,7 +96,7 @@ namespace Google.Ads.GoogleAds.V13.Services
             {
                 var responseStream = searchStream.GetResponseStream();
                 bool emptyResult = true;
-                while (await responseStream.MoveNextAsync())
+                while (await responseStream.MoveNextAsync().ConfigureAwait(false))
                 {
                     emptyResult = false;
                     SearchGoogleAdsStreamResponse resp = responseStream.Current;
