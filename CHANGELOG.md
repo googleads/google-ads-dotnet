@@ -1,3 +1,7 @@
+15.0.1
+======
+- Fixed #488 by marking all async calls as ConfigureAwait(false)
+
 15.0.0
 ======
 - Added support for version v13.0 of the Google Ads API.
