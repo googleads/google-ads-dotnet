@@ -81,12 +81,12 @@ namespace Google.Ads.Gax.Util
             }
 
             WebRequest request = HttpUtilities.BuildRequest(assetUrl.AbsoluteUri, "GET", config);
-            WebResponse response = await request.GetResponseAsync();
+            WebResponse response = await request.GetResponseAsync().ConfigureAwait(false);
 
             MemoryStream memStream = new MemoryStream();
             using (Stream responseStream = response.GetResponseStream())
             {
-                await responseStream.CopyToAsync(memStream);
+                await responseStream.CopyToAsync(memStream).ConfigureAwait(false);
             }
 
             return memStream.ToArray();
@@ -117,7 +117,7 @@ namespace Google.Ads.Gax.Util
         /// </exception>
         public static async Task<byte[]> GetAssetDataFromUrlAsync(string assetUrl, AdsConfig config)
         {
-            return await GetAssetDataFromUrlAsync(new Uri(assetUrl), config);
+            return await GetAssetDataFromUrlAsync(new Uri(assetUrl), config).ConfigureAwait(false);
         }
     }
 }

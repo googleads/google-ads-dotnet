@@ -76,7 +76,7 @@ namespace Google.Ads.Gax.Interceptors
             try
             {
                 // Wait for the next result to be retrieved.
-                await task;
+                await task.ConfigureAwait(false);
             }
             catch (AggregateException e)
             {
@@ -123,7 +123,7 @@ namespace Google.Ads.Gax.Interceptors
             else
             {
                 // Pass on the result we retrieved.
-                return await Task.FromResult(task.Result);
+                return task.Result;
             }
         }
 
