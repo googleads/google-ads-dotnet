@@ -174,8 +174,12 @@ namespace Google.Ads.Gax.Lib
         /// </summary>
         /// <returns><code>True</code> if the <code>Grpc.Net.Client</code> is supported,
         /// <code>false</code> otherwise.</returns>
-        private static bool DetectGrpcNetClientTransport()
+        private bool DetectGrpcNetClientTransport()
         {
+            if (this.config.UseGrpcCore)
+            {
+                return false;
+            }
             try
             {
                 GrpcChannel.ForAddress("https://ignored.com");
