@@ -1,3 +1,8 @@
+15.0.2
+======
+- Use ContinueWith for exception handling in Unary calls: this should provide a more general fix for
+  #488
+
 15.0.1
 ======
 - Fixed #488 by marking all async calls as ConfigureAwait(false)
