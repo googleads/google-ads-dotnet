@@ -1,3 +1,10 @@
+15.0.3
+======
+- Bumped the version for Google.Ads.Gax to 2.2.0
+- Bumped the version for Google.Ads.GoogleAds.Core to 2.2.0
+- Bumped the version requirement of Google.Ads.GoogleAds to Google.Ads.GoogleAds.Core >= 2.2.0. This
+  ensures that the fix for #488 is picked up by the latest library.
+  
 15.0.2
 ======
 - Use ContinueWith for exception handling in Unary calls: this should provide a more general fix for

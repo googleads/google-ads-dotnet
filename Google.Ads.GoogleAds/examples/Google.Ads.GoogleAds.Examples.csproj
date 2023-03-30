@@ -34,7 +34,7 @@
   </ItemGroup>
   <ItemGroup>
    <!-- Include local projects over nuget dependencies if available -->
-    <PackageReference Condition="!Exists('..\src\Google.Ads.GoogleAds.csproj')" Include="Google.Ads.GoogleAds" Version="15.0.2" />
+    <PackageReference Condition="!Exists('..\src\Google.Ads.GoogleAds.csproj')" Include="Google.Ads.GoogleAds" Version="15.0.3" />
     <ProjectReference Condition="Exists('..\src\Google.Ads.GoogleAds.csproj')" Include="..\src\Google.Ads.GoogleAds.csproj" />
   </ItemGroup>
   <ItemGroup>
