@@ -68,10 +68,10 @@
       <HintPath>..\..\..\packages\Google.Api.CommonProtos.2.6.0\lib\net461\Google.Api.CommonProtos.dll</HintPath>
     </Reference>
     <Reference Include="Google.Api.Gax, Version=4.0.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Google.Api.Gax.4.0.0\lib\net462\Google.Api.Gax.dll</HintPath>
+      <HintPath>..\..\..\packages\Google.Api.Gax.4.2.0\lib\net462\Google.Api.Gax.dll</HintPath>
     </Reference>
     <Reference Include="Google.Api.Gax.Grpc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Google.Api.Gax.Grpc.4.0.0\lib\net462\Google.Api.Gax.Grpc.dll</HintPath>
+      <HintPath>..\..\..\packages\Google.Api.Gax.Grpc.4.2.0\lib\net462\Google.Api.Gax.Grpc.dll</HintPath>
     </Reference>
     <Reference Include="Google.Api.Gax.Grpc.GrpcCore, Version=3.7.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Google.Api.Gax.Grpc.GrpcCore.3.7.0\lib\net461\Google.Api.Gax.Grpc.GrpcCore.dll</HintPath>

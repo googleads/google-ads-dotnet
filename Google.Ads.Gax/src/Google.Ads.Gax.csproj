@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="CommandLineParser" Version="2.9.1" />
-    <PackageReference Include="Google.Api.Gax.Grpc" Version="4.0.0" />
+    <PackageReference Include="Google.Api.Gax.Grpc" Version="4.2.0" />
     <PackageReference Include="Google.Api.Gax.Grpc.GrpcCore" Version="3.7.0" />
     <PackageReference Include="Google.LongRunning" Version="3.0.0" />
     <PackageReference Include="Google.Protobuf" Version="3.21.5" />
