@@ -12,12 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-namespace Google.Ads.GoogleAds.Lib
+namespace Google.Ads.GoogleAds.Extensions.Config
 {
     /// <summary>
     /// A class to list all the environment variable names used by the library.
     /// </summary>
-    internal class EnvironmentVariableNames
+    public class EnvironmentVariableNames
     {
         /// <summary>
         /// The prefix for all the environment variables.
@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.Lib
         /// should point to a settings.json as explained on
         /// https://developers.google.com/google-ads/api/docs/client-libs/dotnet/configuration#configuring_using_a_custom_json_file
         /// </summary>
-        internal const string CONFIG_FILE_PATH = PREFIX + "CONFIGURATION_FILE_PATH";
+        public const string CONFIG_FILE_PATH = PREFIX + "CONFIGURATION_FILE_PATH";
 
         /// <summary>
         /// The environment variable for OAuth2 mode.
@@ -80,5 +80,7 @@ namespace Google.Ads.GoogleAds.Lib
         /// The environment variable for the API endpoint.
         /// </summary>
         internal const string ENDPOINT = PREFIX + "ENDPOINT";
+
+
     }
 }

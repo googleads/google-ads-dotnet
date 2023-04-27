@@ -21,11 +21,6 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.2.0" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\src\App.config">
-      <Link>App.config</Link>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\..\Google.Ads.Gax\tests\TestUtilities\Google.Ads.Gax.TestUtilities.csproj" />
     <ProjectReference Include="..\..\Google.Ads.Gax\tests\Google.Ads.Gax.Tests.csproj" />
     <ProjectReference Include="..\src\Google.Ads.GoogleAds.Core.csproj" />

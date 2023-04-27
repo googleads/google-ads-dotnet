@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V13.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjFnb29nbGUvYWRzL2dvb2dsZWFkcy92MTMvZXJyb3JzL2Fzc2V0X2Vycm9y",
-            "LnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFkcy52MTMuZXJyb3JzIoYLCg5B",
-            "c3NldEVycm9yRW51bSLzCgoKQXNzZXRFcnJvchIPCgtVTlNQRUNJRklFRBAA",
+            "LnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFkcy52MTMuZXJyb3JzIrULCg5B",
+            "c3NldEVycm9yRW51bSKiCwoKQXNzZXRFcnJvchIPCgtVTlNQRUNJRklFRBAA",
             "EgsKB1VOS05PV04QARIsCihDVVNUT01FUl9OT1RfT05fQUxMT1dMSVNUX0ZP",
             "Ul9BU1NFVF9UWVBFEA0SEwoPRFVQTElDQVRFX0FTU0VUEAMSGAoURFVQTElD",
             "QVRFX0FTU0VUX05BTUUQBBIZChVBU1NFVF9EQVRBX0lTX01JU1NJTkcQBRIc",
@@ -57,12 +57,13 @@ namespace Google.Ads.GoogleAds.V13.Errors {
             "R0FDWV9RVUFMSUZZSU5HX1FVRVNUSU9OU19ESVNBTExPV0VEECESIAocTkFN",
             "RV9DT05GTElDVF9GT1JfQVNTRVRfVFlQRRAiEh4KGkNBTk5PVF9NT0RJRllf",
             "QVNTRVRfU09VUkNFECMSLQopQ0FOTk9UX01PRElGWV9BVVRPTUFUSUNBTExZ",
-            "X0NSRUFURURfQVNTRVQQJELvAQojY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYxMy5lcnJvcnNCD0Fzc2V0RXJyb3JQcm90b1ABWkVnb29nbGUuZ29sYW5n",
-            "Lm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjEzL2Vy",
-            "cm9ycztlcnJvcnOiAgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMTMu",
-            "RXJyb3JzygIfR29vZ2xlXEFkc1xHb29nbGVBZHNcVjEzXEVycm9yc+oCI0dv",
-            "b2dsZTo6QWRzOjpHb29nbGVBZHM6OlYxMzo6RXJyb3JzYgZwcm90bzM="));
+            "X0NSRUFURURfQVNTRVQQJBItCilMRUFEX0ZPUk1fTE9DQVRJT05fQU5TV0VS",
+            "X1RZUEVfRElTQUxMT1dFRBAlQu8BCiNjb20uZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjEzLmVycm9yc0IPQXNzZXRFcnJvclByb3RvUAFaRWdvb2dsZS5nb2xh",
+            "bmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MTMv",
+            "ZXJyb3JzO2Vycm9yc6ICA0dBQaoCH0dvb2dsZS5BZHMuR29vZ2xlQWRzLlYx",
+            "My5FcnJvcnPKAh9Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMTNcRXJyb3Jz6gIj",
+            "R29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjEzOjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -389,6 +390,10 @@ namespace Google.Ads.GoogleAds.V13.Errors {
         /// User can not modify the automatically created asset.
         /// </summary>
         [pbr::OriginalName("CANNOT_MODIFY_AUTOMATICALLY_CREATED_ASSET")] CannotModifyAutomaticallyCreatedAsset = 36,
+        /// <summary>
+        /// Lead Form is disallowed to use "LOCATION" answer type.
+        /// </summary>
+        [pbr::OriginalName("LEAD_FORM_LOCATION_ANSWER_TYPE_DISALLOWED")] LeadFormLocationAnswerTypeDisallowed = 37,
       }
 
     }

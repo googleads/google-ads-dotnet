@@ -13,6 +13,7 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Config;
+using Google.Ads.GoogleAds.Extensions.Config;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V13.Errors;
 using Google.Ads.GoogleAds.V13.Services;
@@ -51,7 +52,8 @@ namespace Google.Ads.GoogleAds.Examples
         public AdsController(IConfiguration configRoot)
         {
             IConfigurationSection section = configRoot.GetSection("GoogleAdsApi");
-            GoogleAdsConfig config = new GoogleAdsConfig(section);
+            GoogleAdsConfig config = new GoogleAdsConfig();
+            config.LoadFromConfigurationSection(section);
             client = new GoogleAdsClient(config);
         }
 

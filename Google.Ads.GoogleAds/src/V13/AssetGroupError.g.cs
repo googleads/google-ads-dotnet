@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V13.Errors {
           string.Concat(
             "Cjdnb29nbGUvYWRzL2dvb2dsZWFkcy92MTMvZXJyb3JzL2Fzc2V0X2dyb3Vw",
             "X2Vycm9yLnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFkcy52MTMuZXJyb3Jz",
-            "Ir4DChNBc3NldEdyb3VwRXJyb3JFbnVtIqYDCg9Bc3NldEdyb3VwRXJyb3IS",
+            "Ip0FChNBc3NldEdyb3VwRXJyb3JFbnVtIoUFCg9Bc3NldEdyb3VwRXJyb3IS",
             "DwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESEgoORFVQTElDQVRFX05B",
             "TUUQAhIsCihDQU5OT1RfQUREX0FTU0VUX0dST1VQX0ZPUl9DQU1QQUlHTl9U",
             "WVBFEAMSHQoZTk9UX0VOT1VHSF9IRUFETElORV9BU1NFVBAEEiIKHk5PVF9F",
@@ -35,13 +35,18 @@ namespace Google.Ads.GoogleAds.V13.Errors {
             "QVNTRVQQBxIkCiBOT1RfRU5PVUdIX01BUktFVElOR19JTUFHRV9BU1NFVBAI",
             "EisKJ05PVF9FTk9VR0hfU1FVQVJFX01BUktFVElOR19JTUFHRV9BU1NFVBAJ",
             "EhkKFU5PVF9FTk9VR0hfTE9HT19BU1NFVBAKEjwKOEZJTkFMX1VSTF9TSE9Q",
-            "UElOR19NRVJDSEFOVF9IT01FX1BBR0VfVVJMX0RPTUFJTlNfRElGRkVSEAtC",
-            "9AEKI2NvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTMuZXJyb3JzQhRBc3Nl",
-            "dEdyb3VwRXJyb3JQcm90b1ABWkVnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90",
-            "by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjEzL2Vycm9ycztlcnJvcnOi",
-            "AgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMTMuRXJyb3JzygIfR29v",
-            "Z2xlXEFkc1xHb29nbGVBZHNcVjEzXEVycm9yc+oCI0dvb2dsZTo6QWRzOjpH",
-            "b29nbGVBZHM6OlYxMzo6RXJyb3JzYgZwcm90bzM="));
+            "UElOR19NRVJDSEFOVF9IT01FX1BBR0VfVVJMX0RPTUFJTlNfRElGRkVSEAsS",
+            "JAogUEFUSDFfUkVRVUlSRURfV0hFTl9QQVRIMl9JU19TRVQQDBIeChpTSE9S",
+            "VF9ERVNDUklQVElPTl9SRVFVSVJFRBANEhYKEkZJTkFMX1VSTF9SRVFVSVJF",
+            "RBAOEioKJkZJTkFMX1VSTF9DT05UQUlOU19JTlZBTElEX0RPTUFJTl9OQU1F",
+            "EA8SHwobQURfQ1VTVE9NSVpFUl9OT1RfU1VQUE9SVEVEEBASMgouQ0FOTk9U",
+            "X01VVEFURV9BU1NFVF9HUk9VUF9GT1JfUkVNT1ZFRF9DQU1QQUlHThARQvQB",
+            "CiNjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEzLmVycm9yc0IUQXNzZXRH",
+            "cm91cEVycm9yUHJvdG9QAVpFZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8v",
+            "Z29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YxMy9lcnJvcnM7ZXJyb3JzogID",
+            "R0FBqgIfR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjEzLkVycm9yc8oCH0dvb2ds",
+            "ZVxBZHNcR29vZ2xlQWRzXFYxM1xFcnJvcnPqAiNHb29nbGU6OkFkczo6R29v",
+            "Z2xlQWRzOjpWMTM6OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -262,6 +267,30 @@ namespace Google.Ads.GoogleAds.V13.Errors {
         /// Final url and shopping merchant url does not have the same domain.
         /// </summary>
         [pbr::OriginalName("FINAL_URL_SHOPPING_MERCHANT_HOME_PAGE_URL_DOMAINS_DIFFER")] FinalUrlShoppingMerchantHomePageUrlDomainsDiffer = 11,
+        /// <summary>
+        /// Path1 required when path2 is set.
+        /// </summary>
+        [pbr::OriginalName("PATH1_REQUIRED_WHEN_PATH2_IS_SET")] Path1RequiredWhenPath2IsSet = 12,
+        /// <summary>
+        /// At least one short description asset is required for a valid asset group.
+        /// </summary>
+        [pbr::OriginalName("SHORT_DESCRIPTION_REQUIRED")] ShortDescriptionRequired = 13,
+        /// <summary>
+        /// Final url field is required for asset group.
+        /// </summary>
+        [pbr::OriginalName("FINAL_URL_REQUIRED")] FinalUrlRequired = 14,
+        /// <summary>
+        /// Final url contains invalid domain name.
+        /// </summary>
+        [pbr::OriginalName("FINAL_URL_CONTAINS_INVALID_DOMAIN_NAME")] FinalUrlContainsInvalidDomainName = 15,
+        /// <summary>
+        /// Ad customizers are not supported in asset group's text field.
+        /// </summary>
+        [pbr::OriginalName("AD_CUSTOMIZER_NOT_SUPPORTED")] AdCustomizerNotSupported = 16,
+        /// <summary>
+        /// Cannot mutate asset group for campaign with removed status.
+        /// </summary>
+        [pbr::OriginalName("CANNOT_MUTATE_ASSET_GROUP_FOR_REMOVED_CAMPAIGN")] CannotMutateAssetGroupForRemovedCampaign = 17,
       }
 
     }

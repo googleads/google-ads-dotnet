@@ -20,7 +20,7 @@ using System.IO;
 using System.Reflection;
 using System.Xml;
 
-namespace Google.Ads.Gax.Util
+namespace Google.Ads.GoogleAds.Extensions.Config
 {
     /// <summary>
     /// A minimal implementation to replace System.Configuration.ConfigurationManaager.
@@ -28,7 +28,7 @@ namespace Google.Ads.Gax.Util
     /// <remarks>We support reading configuration from <code>App.config</code> for legacy reasons,
     /// but most modern applications will either set the configuration at runtime, or use a
     /// <see cref="ConfigurationBuilder"/> instead.</remarks>
-    internal class ConfigUtilities
+    internal class AppConfigUtilities
     {
         /// <summary>
         /// Gets the path of the App.config file.

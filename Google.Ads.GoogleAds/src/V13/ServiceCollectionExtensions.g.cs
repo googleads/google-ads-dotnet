@@ -18,6 +18,7 @@
 using gagvs = Google.Ads.GoogleAds.V13.Services;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using lro = Google.LongRunning;
+using proto = Google.Protobuf;
 using gpr = Google.Protobuf.Reflection;
 using sys = System;
 using scg = System.Collections.Generic;
@@ -1212,6 +1213,25 @@ namespace Microsoft.Extensions.DependencyInjection
             services.AddSingleton(provider =>
             {
                 gagvs::CustomerServiceClientBuilder builder = new gagvs::CustomerServiceClientBuilder();
+                action?.Invoke(builder);
+                return builder.Build(provider);
+            });
+
+        /// <summary>
+        /// Adds a singleton <see cref="gagvs::CustomerSkAdNetworkConversionValueSchemaServiceClient"/> to
+        /// <paramref name="services"/>.
+        /// </summary>
+        /// <param name="services">
+        /// The service collection to add the client to. The services are used to configure the client when requested.
+        /// </param>
+        /// <param name="action">
+        /// An optional action to invoke on the client builder. This is invoked before services from
+        /// <paramref name="services"/> are used.
+        /// </param>
+        internal static IServiceCollection AddCustomerSkAdNetworkConversionValueSchemaServiceClient(this IServiceCollection services, sys::Action<gagvs::CustomerSkAdNetworkConversionValueSchemaServiceClientBuilder> action = null) =>
+            services.AddSingleton(provider =>
+            {
+                gagvs::CustomerSkAdNetworkConversionValueSchemaServiceClientBuilder builder = new gagvs::CustomerSkAdNetworkConversionValueSchemaServiceClientBuilder();
                 action?.Invoke(builder);
                 return builder.Build(provider);
             });

@@ -51,7 +51,7 @@ namespace Google.Ads.GoogleAds.V13.Enums {
   }
   #region Messages
   /// <summary>
-  /// Container for enum describing audience insights dimensions.
+  /// Container for enum describing insights dimensions.
   /// </summary>
   public sealed partial class AudienceInsightsDimensionEnum : pb::IMessage<AudienceInsightsDimensionEnum>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -209,7 +209,7 @@ namespace Google.Ads.GoogleAds.V13.Enums {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static partial class Types {
       /// <summary>
-      /// Possible audience dimensions for use in generating insights.
+      /// Possible dimensions for use in generating insights.
       /// </summary>
       public enum AudienceInsightsDimension {
         /// <summary>

@@ -270,7 +270,7 @@ namespace Google.Ads.GoogleAds.V13.Enums {
         /// </summary>
         [pbr::OriginalName("STRUCTURED_SNIPPET")] StructuredSnippet = 12,
         /// <summary>
-        /// The asset is linked for use as a Sitelink extension.
+        /// The asset is linked for use as a Sitelink.
         /// </summary>
         [pbr::OriginalName("SITELINK")] Sitelink = 13,
         /// <summary>

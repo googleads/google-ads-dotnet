@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V13.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjVnb29nbGUvYWRzL2dvb2dsZWFkcy92MTMvZXJyb3JzL3VzZXJfbGlzdF9l",
-            "cnJvci5wcm90bxIfZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEzLmVycm9ycyLt",
-            "BwoRVXNlckxpc3RFcnJvckVudW0i1wcKDVVzZXJMaXN0RXJyb3ISDwoLVU5T",
+            "cnJvci5wcm90bxIfZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEzLmVycm9ycyLB",
+            "CAoRVXNlckxpc3RFcnJvckVudW0iqwgKDVVzZXJMaXN0RXJyb3ISDwoLVU5T",
             "UEVDSUZJRUQQABILCgdVTktOT1dOEAESNwozRVhURVJOQUxfUkVNQVJLRVRJ",
             "TkdfVVNFUl9MSVNUX01VVEFURV9OT1RfU1VQUE9SVEVEEAISGgoWQ09OQ1JF",
             "VEVfVFlQRV9SRVFVSVJFRBADEh8KG0NPTlZFUlNJT05fVFlQRV9JRF9SRVFV",
@@ -48,12 +48,14 @@ namespace Google.Ads.GoogleAds.V13.Errors {
             "HgoaUlVMRV9UWVBFX0lTX05PVF9TVVBQT1JURUQQIhI6CjZDQU5fTk9UX0FE",
             "RF9BX1NJTUlMQVJfVVNFUkxJU1RfQVNfTE9HSUNBTF9MSVNUX09QRVJBTkQQ",
             "IxI6CjZDQU5fTk9UX01JWF9DUk1fQkFTRURfSU5fTE9HSUNBTF9MSVNUX1dJ",
-            "VEhfT1RIRVJfTElTVFMQJELyAQojY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYxMy5lcnJvcnNCElVzZXJMaXN0RXJyb3JQcm90b1ABWkVnb29nbGUuZ29s",
-            "YW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjEz",
-            "L2Vycm9ycztlcnJvcnOiAgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5W",
-            "MTMuRXJyb3JzygIfR29vZ2xlXEFkc1xHb29nbGVBZHNcVjEzXEVycm9yc+oC",
-            "I0dvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYxMzo6RXJyb3JzYgZwcm90bzM="));
+            "VEhfT1RIRVJfTElTVFMQJBIWChJBUFBfSURfTk9UX0FMTE9XRUQQJxIdChlD",
+            "QU5OT1RfTVVUQVRFX1NZU1RFTV9MSVNUECgSGwoXTU9CSUxFX0FQUF9JU19T",
+            "RU5TSVRJVkUQKULyAQojY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxMy5l",
+            "cnJvcnNCElVzZXJMaXN0RXJyb3JQcm90b1ABWkVnb29nbGUuZ29sYW5nLm9y",
+            "Zy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjEzL2Vycm9y",
+            "cztlcnJvcnOiAgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMTMuRXJy",
+            "b3JzygIfR29vZ2xlXEFkc1xHb29nbGVBZHNcVjEzXEVycm9yc+oCI0dvb2ds",
+            "ZTo6QWRzOjpHb29nbGVBZHM6OlYxMzo6RXJyb3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -345,6 +347,19 @@ namespace Google.Ads.GoogleAds.V13.Errors {
         /// types of lists in its rules.
         /// </summary>
         [pbr::OriginalName("CAN_NOT_MIX_CRM_BASED_IN_LOGICAL_LIST_WITH_OTHER_LISTS")] CanNotMixCrmBasedInLogicalListWithOtherLists = 36,
+        /// <summary>
+        /// crm_based_user_list.app_id field can only be set when upload_key_type is
+        /// MOBILE_ADVERTISING_ID.
+        /// </summary>
+        [pbr::OriginalName("APP_ID_NOT_ALLOWED")] AppIdNotAllowed = 39,
+        /// <summary>
+        /// Google system generated user lists cannot be mutated.
+        /// </summary>
+        [pbr::OriginalName("CANNOT_MUTATE_SYSTEM_LIST")] CannotMutateSystemList = 40,
+        /// <summary>
+        /// The mobile app associated with the remarketing list is sensitive.
+        /// </summary>
+        [pbr::OriginalName("MOBILE_APP_IS_SENSITIVE")] MobileAppIsSensitive = 41,
       }
 
     }

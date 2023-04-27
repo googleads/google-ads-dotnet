@@ -4964,7 +4964,7 @@ namespace Google.Ads.GoogleAds.V13.Common {
   }
 
   /// <summary>
-  /// Represents a sitelink extension.
+  /// Represents a sitelink.
   /// </summary>
   public sealed partial class SitelinkFeedItem : pb::IMessage<SitelinkFeedItem>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V13.Errors {
           string.Concat(
             "Cjpnb29nbGUvYWRzL2dvb2dsZWFkcy92MTMvZXJyb3JzL3JlY29tbWVuZGF0",
             "aW9uX2Vycm9yLnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFkcy52MTMuZXJy",
-            "b3JzItoDChdSZWNvbW1lbmRhdGlvbkVycm9yRW51bSK+AwoTUmVjb21tZW5k",
+            "b3JzIocEChdSZWNvbW1lbmRhdGlvbkVycm9yRW51bSLrAwoTUmVjb21tZW5k",
             "YXRpb25FcnJvchIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIbChdC",
             "VURHRVRfQU1PVU5UX1RPT19TTUFMTBACEhsKF0JVREdFVF9BTU9VTlRfVE9P",
             "X0xBUkdFEAMSGQoVSU5WQUxJRF9CVURHRVRfQU1PVU5UEAQSEAoMUE9MSUNZ",
@@ -36,7 +36,8 @@ namespace Google.Ads.GoogleAds.V13.Errors {
             "TUFOWV9PUEVSQVRJT05TEAoSEQoNTk9fT1BFUkFUSU9OUxALEiEKHURJRkZF",
             "UkVOVF9UWVBFU19OT1RfU1VQUE9SVEVEEAwSGwoXRFVQTElDQVRFX1JFU09V",
             "UkNFX05BTUUQDRIkCiBSRUNPTU1FTkRBVElPTl9BTFJFQURZX0RJU01JU1NF",
-            "RBAOEhkKFUlOVkFMSURfQVBQTFlfUkVRVUVTVBAPQvgBCiNjb20uZ29vZ2xl",
+            "RBAOEhkKFUlOVkFMSURfQVBQTFlfUkVRVUVTVBAPEisKJ1JFQ09NTUVOREFU",
+            "SU9OX1RZUEVfQVBQTFlfTk9UX1NVUFBPUlRFRBARQvgBCiNjb20uZ29vZ2xl",
             "LmFkcy5nb29nbGVhZHMudjEzLmVycm9yc0IYUmVjb21tZW5kYXRpb25FcnJv",
             "clByb3RvUAFaRWdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
             "aXMvYWRzL2dvb2dsZWFkcy92MTMvZXJyb3JzO2Vycm9yc6ICA0dBQaoCH0dv",
@@ -283,6 +284,10 @@ namespace Google.Ads.GoogleAds.V13.Errors {
         /// The recommendation apply request was malformed and invalid.
         /// </summary>
         [pbr::OriginalName("INVALID_APPLY_REQUEST")] InvalidApplyRequest = 15,
+        /// <summary>
+        /// The type of recommendation requested to apply is not supported.
+        /// </summary>
+        [pbr::OriginalName("RECOMMENDATION_TYPE_APPLY_NOT_SUPPORTED")] RecommendationTypeApplyNotSupported = 17,
       }
 
     }
