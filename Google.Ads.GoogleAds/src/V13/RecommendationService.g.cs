@@ -716,7 +716,7 @@ namespace Google.Ads.GoogleAds.V13.Services {
     /// <summary>Field number for the "sitelink_extension" field.</summary>
     public const int SitelinkExtensionFieldNumber = 8;
     /// <summary>
-    /// Parameters to use when applying sitelink extension recommendation.
+    /// Parameters to use when applying sitelink recommendation.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3610,7 +3610,7 @@ namespace Google.Ads.GoogleAds.V13.Services {
       }
 
       /// <summary>
-      /// Parameters to use when applying sitelink extension recommendation.
+      /// Parameters to use when applying sitelink recommendation.
       /// </summary>
       public sealed partial class SitelinkExtensionParameters : pb::IMessage<SitelinkExtensionParameters>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -3662,7 +3662,7 @@ namespace Google.Ads.GoogleAds.V13.Services {
             = pb::FieldCodec.ForMessage(10, global::Google.Ads.GoogleAds.V13.Common.SitelinkFeedItem.Parser);
         private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V13.Common.SitelinkFeedItem> sitelinkExtensions_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V13.Common.SitelinkFeedItem>();
         /// <summary>
-        /// Sitelink extensions to be added. This is a required field.
+        /// Sitelinks to be added. This is a required field.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

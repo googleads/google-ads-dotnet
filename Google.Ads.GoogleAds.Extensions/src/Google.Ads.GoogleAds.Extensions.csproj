@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- nupkg properties -->
+  <PropertyGroup>
+    <Title>Google Ads API Dotnet Client Library Extensions</Title>
+    <PackageId>Google.Ads.GoogleAds.Extensions</PackageId>
+    <Version>1.0.1</Version>
+    <Description>This library provides you with extensions for the Google Ads API client library. The Google Ads API is the modern programmatic interface to Google Ads. See https://developers.google.com/google-ads/api to learn more about Google Ads API.</Description>
+    <PackageReleaseNotes>https://github.com/googleads/google-ads-dotnet/blob/master/ChangeLog</PackageReleaseNotes>
+    <PackageTags>GoogleAds Google</PackageTags>
+    <Copyright>Copyright 2023, Google LLC</Copyright>
+    <Authors>https://github.com/AnashOommen</Authors>
+    <Authors>https://github.com/Raibaz</Authors>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/googleads/google-ads-dotnet</PackageProjectUrl>
+    <Company>Google</Company>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/googleads/google-ads-dotnet</RepositoryUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <NoWarn>$(NoWarn);SYSLIB0014</NoWarn>
+  </PropertyGroup>
+  <!-- build properties -->
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.1;net472;net5.0</TargetFrameworks>
+    <AssemblyName>Google.Ads.GoogleAds.Config</AssemblyName>
+    <RootNamespace>Google.Ads.GoogleAds</RootNamespace>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\GoogleAds.snk</AssemblyOriginatorKeyFile>
+    <DebugType>pdbonly</DebugType>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <FileVersion>1.0.0</FileVersion>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="app.config.transform" PackagePath="content" />
+    <Content Include="web.config.transform" PackagePath="content" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\THIRD-PARTY-LICENSE.txt" Pack="true" PackagePath="" />
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="" />
+    <None Include="..\..\logo.png" Pack="true" PackagePath="" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Condition="!Exists('..\..\Google.Ads.GoogleAds.Core\src\Google.Ads.GoogleAds.Core.csproj')" Include="Google.Ads.GoogleAds.Core" Version="3.0.0" />
+    <ProjectReference Condition="Exists('..\..\Google.Ads.GoogleAds.Core\src\Google.Ads.GoogleAds.Core.csproj')" Include="..\..\Google.Ads.GoogleAds.Core\src\Google.Ads.GoogleAds.Core.csproj" />
+    <PackageReference Condition="!Exists('..\..\Google.Ads.Gax\src\Google.Ads.Gax.csproj')" Include="Google.Ads.Gax" Version="3.0.0" />
+    <ProjectReference Condition="Exists('..\..\Google.Ads.Gax\src\Google.Ads.Gax.csproj')" Include="..\..\Google.Ads.Gax\src\Google.Ads.Gax.csproj" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
+  </ItemGroup>
+  <Target Name="CopyAppConfig" BeforeTargets="pack;Build">
+    <Copy SourceFiles="App.config" DestinationFiles="app.config.transform" />
+    <Copy SourceFiles="App.config" DestinationFiles="web.config.transform" />
+  </Target>
+</Project>

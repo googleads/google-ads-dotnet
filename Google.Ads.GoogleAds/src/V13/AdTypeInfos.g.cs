@@ -7953,7 +7953,7 @@ namespace Google.Ads.GoogleAds.V13.Common {
     /// <summary>
     /// Square logo images to be used in the ad. Valid image types are GIF,
     /// JPEG, and PNG. The minimum size is 128x128 and the aspect ratio must
-    /// be 1:1 (+-1%). Combined with `square_logo_images`, the maximum is 5.
+    /// be 1:1 (+-1%). Combined with `logo_images`, the maximum is 5.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

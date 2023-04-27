@@ -510,6 +510,13 @@ namespace Google.Ads.GoogleAds.V12.Errors
             return $"customers/{customerId}/customerNegativeCriteria/{criterionId}";
         }
 
+        public static string CustomerSkAdNetworkConversionValueSchema(long customerId,
+            long accountLinkId)
+        {
+            return $"customers/{customerId}/" +
+                $"customerSkAdNetworkConversionValueSchemas/{accountLinkId}";
+        }
+
         public static string CustomerUserAccess(long customerId, long userId)
         {
             return $"customers/{customerId}/customerUserAccesses/{userId}";

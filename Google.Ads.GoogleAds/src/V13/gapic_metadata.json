@@ -1079,6 +1079,21 @@
         }
       }
     },
+    "CustomerSkAdNetworkConversionValueSchemaService": {
+      "clients": {
+        "grpc": {
+          "libraryClient": "CustomerSkAdNetworkConversionValueSchemaServiceClient",
+          "rpcs": {
+            "MutateCustomerSkAdNetworkConversionValueSchema": {
+              "methods": [
+                "MutateCustomerSkAdNetworkConversionValueSchema",
+                "MutateCustomerSkAdNetworkConversionValueSchemaAsync"
+              ]
+            }
+          }
+        }
+      }
+    },
     "CustomerUserAccessInvitationService": {
       "clients": {
         "grpc": {

@@ -55,6 +55,8 @@ function dotnet_library::set_repo_root() {
 #     package source code.
 #   DOTNET_CLIENT_LIBRARY_PATH root of the Google.Ads.GoogleAds package
 #     source code.
+#   DOTNET_EXTENSIONS_LIBRARY_PATH root of the
+#     Google.Ads.GoogleAds.Extensions package source code.
 #   DOTNET_CLIENT_LIBRARY_CUSTOM_NUGET_PATH: The list of paths / URIs where
 #     the dotnet command looks for resolving nuget packages.
 #   GITHUB_RELEASE_URL: The URL for making GitHub release.
@@ -65,6 +67,7 @@ function dotnet_library::set_path_variables() {
   DOTNET_GAX_LIBRARY_PATH="${REPO_ROOT}"/Google.Ads.Gax
   DOTNET_CORE_LIBRARY_PATH="${REPO_ROOT}"/Google.Ads.GoogleAds.Core
   DOTNET_CLIENT_LIBRARY_PATH="${REPO_ROOT}"/Google.Ads.GoogleAds
+  DOTNET_EXTENSIONS_LIBRARY_PATH="${REPO_ROOT}"/Google.Ads.GoogleAds.Extensions
   DOTNET_CLIENT_LIBRARY_CUSTOM_NUGET_PATH="${DOTNET_CLIENT_LIBRARY_PATH}/custom_nupkg"
   NUGET_PACKAGE_PATH="https://api.nuget.org/v3/index.json;${DOTNET_CLIENT_LIBRARY_CUSTOM_NUGET_PATH}"
   GITHUB_RELEASE_URL="https://api.github.com/repos/googleads/google-ads-dotnet/releases"
@@ -183,6 +186,9 @@ function dotnet_library::build_library() {
       "${DOTNET_CLIENT_LIBRARY_PATH}/src/Google.Ads.GoogleAds.csproj"
 
   "${DOTNET_BINARY}" build --configuration Release --source "${NUGET_PACKAGE_PATH}" \
+      "${DOTNET_EXTENSIONS_LIBRARY_PATH}/src/Google.Ads.GoogleAds.Extensions.csproj"
+
+  "${DOTNET_BINARY}" build --configuration Release --source "${NUGET_PACKAGE_PATH}" \
       "${DOTNET_GAX_LIBRARY_PATH}/tests/TestUtilities/Google.Ads.Gax.TestUtilities.csproj"
 
   echo "Build the examples."
@@ -209,6 +215,9 @@ function dotnet_library::build_library() {
   "${DOTNET_BINARY}" build --configuration Release --source "${NUGET_PACKAGE_PATH}" \
       "${DOTNET_GAX_LIBRARY_PATH}/tests/Google.Ads.Gax.Tests.csproj"
 
+  "${DOTNET_BINARY}" build --configuration Release --source "${NUGET_PACKAGE_PATH}" \
+      "${DOTNET_EXTENSIONS_LIBRARY_PATH}/tests/Google.Ads.GoogleAds.Extensions.Tests.csproj"
+
   echo "Run the smoke tests."
   echo "===================="
 
@@ -222,6 +231,10 @@ function dotnet_library::build_library() {
 
   "${DOTNET_BINARY}" test --configuration Release --no-build  \
       "${DOTNET_GAX_LIBRARY_PATH}/tests/Google.Ads.Gax.Tests.csproj"
+
+  "${DOTNET_BINARY}" test --configuration Release --no-build  \
+      "${DOTNET_EXTENSIONS_LIBRARY_PATH}/tests/Google.Ads.GoogleAds.Extensions.Tests.csproj"
+
   popd
 }
 
@@ -258,6 +271,9 @@ function dotnet_library::build_library_artifacts() {
   "${DOTNET_BINARY}" pack --configuration Release --no-build \
       --output "${REPO_ROOT}/artifacts" \
       "${DOTNET_CLIENT_LIBRARY_PATH}/src/Google.Ads.GoogleAds.csproj"
+  "${DOTNET_BINARY}" pack --configuration Release --no-build \
+      --output "${REPO_ROOT}/artifacts" \
+      "${DOTNET_EXTENSIONS_LIBRARY_PATH}/src/Google.Ads.GoogleAds.Extensions.csproj"
 
   echo "Library packages created successfully"
 }

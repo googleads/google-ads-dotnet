@@ -416,7 +416,7 @@ namespace Google.Ads.GoogleAds.V13.Resources {
     /// <summary>Field number for the "sitelink_feed_item" field.</summary>
     public const int SitelinkFeedItemFieldNumber = 2;
     /// <summary>
-    /// Sitelink extension.
+    /// Sitelink.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
