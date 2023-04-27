@@ -13,6 +13,7 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Config;
+using Google.Ads.GoogleAds.Extensions.Config;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 
@@ -42,7 +43,8 @@ namespace Google.Ads.GoogleAds.Examples
         public LoginController(IConfiguration configRoot)
         {
             IConfigurationSection section = configRoot.GetSection("GoogleAdsApi");
-            config = new GoogleAdsConfig(section);
+            config = new GoogleAdsConfig();
+            config.LoadFromConfigurationSection(section);
         }
 
         /// <summary>

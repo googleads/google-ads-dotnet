@@ -561,6 +561,14 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v13/CustomerSkAdNetworkConversionValueSchemaService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<CustomerSkAdNetworkConversionValueSchemaServiceClient, CustomerSkAdNetworkConversionValueSchemaServiceSettings, GoogleAdsConfig> CustomerSkAdNetworkConversionValueSchemaService =
+                new ServiceTemplate<CustomerSkAdNetworkConversionValueSchemaServiceClient, CustomerSkAdNetworkConversionValueSchemaServiceSettings, GoogleAdsConfig>(Create);
+
+
+            /// <summary>
             /// See https://developers.google.com/google-ads/api/reference/rpc/v13/CustomerUserAccessInvitationService
             /// for details.
             /// </summary>
@@ -1154,6 +1162,10 @@ namespace Google.Ads.GoogleAds
 
                     case "CustomerServiceClient":
                         return CustomerServiceClient.Create(callInvoker, (CustomerServiceSettings) settings);
+
+
+                    case "CustomerSkAdNetworkConversionValueSchemaServiceClient":
+                        return CustomerSkAdNetworkConversionValueSchemaServiceClient.Create(callInvoker, (CustomerSkAdNetworkConversionValueSchemaServiceSettings) settings);
 
 
                     case "CustomerUserAccessInvitationServiceClient":

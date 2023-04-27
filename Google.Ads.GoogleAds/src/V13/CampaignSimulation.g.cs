@@ -89,6 +89,9 @@ namespace Google.Ads.GoogleAds.V13.Resources {
   /// * MULTI_CHANNEL - TARGET_CPA - UNIFORM
   /// * DISCOVERY - TARGET_CPA - DEFAULT
   /// * DISPLAY - TARGET_CPA - UNIFORM
+  /// * PERFORMANCE_MAX - TARGET_CPA - UNIFORM
+  /// * PERFORMANCE_MAX - TARGET_ROAS - UNIFORM
+  /// * PERFORMANCE_MAX - BUDGET - UNIFORM
   /// </summary>
   public sealed partial class CampaignSimulation : pb::IMessage<CampaignSimulation>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

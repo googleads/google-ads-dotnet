@@ -17,7 +17,6 @@ using Google.Ads.Gax.Util;
 using Google.Apis.Auth.OAuth2;
 using Google.Apis.Auth.OAuth2.Flows;
 using Google.Apis.Auth.OAuth2.Responses;
-using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -65,25 +64,25 @@ namespace Google.Ads.Gax.Config
         /// OAuth2 client ID.
         /// </summary>
         protected StringConfigSetting oAuth2ClientId =
-            new StringConfigSetting("OAuth2ClientId", "");
+            new StringConfigSetting(ConfigSettingNames.OAUTH2_CLIENT_ID, "");
 
         /// <summary>
         /// OAuth2 client secret.
         /// </summary>
         protected StringConfigSetting oAuth2ClientSecret = new StringConfigSetting(
-            "OAuth2ClientSecret", "");
+            ConfigSettingNames.OAUTH2_CLIENT_SECRET, "");
 
         /// <summary>
         /// OAuth2 refresh token.
         /// </summary>
         protected StringConfigSetting oAuth2RefreshToken = new StringConfigSetting(
-            "OAuth2RefreshToken", "");
+            ConfigSettingNames.OAUTH2_REFRESH_TOKEN, "");
 
         /// <summary>
         /// OAuth2 prn email.
         /// </summary>
         protected StringConfigSetting oAuth2PrnEmail = new StringConfigSetting(
-            "OAuth2PrnEmail", "");
+            ConfigSettingNames.OAUTH2_IMPERSONATED_EMAIL, "");
 
         /// <summary>
         /// OAuth2 service account email loaded from secrets JSON file.
@@ -101,13 +100,15 @@ namespace Google.Ads.Gax.Config
         /// OAuth2 secrets JSON file path.
         /// </summary>
         protected StringConfigSetting oAuth2SecretsJsonPath = new StringConfigSetting(
-            "OAuth2SecretsJsonPath", "");
+            ConfigSettingNames.OAUTH2_JSON_KEY_FILE_PATH, "");
 
         /// <summary>
         /// OAuth2 mode.
         /// </summary>
-        protected ConfigSetting<OAuth2Flow> oAuth2Mode = new ConfigSetting<OAuth2Flow>("OAuth2Mode",
-            OAuth2Flow.APPLICATION);
+        protected ConfigSetting<OAuth2Flow> oAuth2Mode = new ConfigSetting<OAuth2Flow>(
+            ConfigSettingNames.OAUTH2_MODE,
+            OAuth2Flow.APPLICATION
+        );
 
         /// <summary>
         /// OAuth2 scope.
@@ -332,7 +333,7 @@ namespace Google.Ads.Gax.Config
         /// transport, and falls back to <code>Grpc.Core</code> transport if
         /// <code>Grpc.Net.Client</code> is not supported on the chosen platform. When set to true,
         /// the library always uses <code>Grpc.Core</code> transport. This flag defaults to
-        /// <code>false</code>. 
+        /// <code>false</code>.
         /// </remarks>
         public bool UseGrpcCore
         {
@@ -443,23 +444,6 @@ namespace Google.Ads.Gax.Config
         }
 
         /// <summary>
-        /// Public constructor. Loads the configuration from an <see cref="IConfigurationRoot"/>.
-        /// </summary>
-        /// <param name="configurationRoot">The configuration root.</param>
-        public AdsConfig(IConfigurationRoot configurationRoot) : base(configurationRoot)
-        {
-        }
-
-        /// <summary>
-        /// Public constructor. Loads the configuration from a <see cref="IConfigurationSection"/>.
-        /// </summary>
-        /// <param name="configurationSection">The configuration section.</param>
-        public AdsConfig(IConfigurationSection configurationSection)
-            : base(configurationSection)
-        {
-        }
-
-        /// <summary>
         /// Initializes a new instance of the <see cref="AdsConfig"/> class.
         /// </summary>
         /// <param name="settings">The settings.</param>
@@ -469,7 +453,7 @@ namespace Google.Ads.Gax.Config
         /// Read all settings from App.config.
         /// </summary>
         /// <param name="settings">The parsed App.config settings.</param>
-        protected override void ReadSettings(Dictionary<string, string> settings)
+        public override void ReadSettings(Dictionary<string, string> settings)
         {
             base.ReadSettings(settings);
             ReadSetting(settings, timeout);
@@ -493,24 +477,6 @@ namespace Google.Ads.Gax.Config
 
             ReadSetting(settings, oAuth2PrnEmail);
             ReadProxySettings(settings);
-        }
-
-        /// <summary>
-        /// Loads the configuration from environment variables.
-        /// </summary>
-        public void LoadFromEnvironmentVariables()
-        {
-            Dictionary<string, string> settings = new Dictionary<string, string>();
-
-            foreach (string key in ENV_VAR_TO_CONFIG_KEY_MAP.Keys)
-            {
-                string value = Environment.GetEnvironmentVariable(key);
-                if (!string.IsNullOrEmpty(value))
-                {
-                    settings[ENV_VAR_TO_CONFIG_KEY_MAP[key]] = value;
-                }
-            }
-            ReadSettings(settings);
         }
 
         /// <summary>

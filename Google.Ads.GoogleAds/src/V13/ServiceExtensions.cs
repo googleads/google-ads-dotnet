@@ -84,6 +84,7 @@ namespace Google.Ads.GoogleAds.V13.Services
     public abstract partial class CustomerManagerLinkServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class CustomerNegativeCriterionServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class CustomerServiceClient : GoogleAdsServiceClientBase { }
+    public abstract partial class CustomerSkAdNetworkConversionValueSchemaServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class CustomerUserAccessInvitationServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class CustomerUserAccessServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class CustomizerAttributeServiceClient : GoogleAdsServiceClientBase { }
