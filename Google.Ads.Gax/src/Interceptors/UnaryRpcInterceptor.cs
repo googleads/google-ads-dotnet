@@ -14,11 +14,8 @@
 
 using Google.Ads.Gax.Lib;
 using Google.Ads.Gax.Util;
-using Google.Apis.Auth.OAuth2.Responses;
 using Grpc.Core;
 using System;
-using System.Linq;
-using System.Reflection;
 using System.Threading.Tasks;
 
 namespace Google.Ads.Gax.Interceptors
@@ -60,30 +57,33 @@ namespace Google.Ads.Gax.Interceptors
         /// <see cref="RpcException"/>.</returns>
         /// <exception cref="AdsBaseException">Thrown if the intercepted
         /// <see cref="RpcException"/> can be parsed.</exception>
-        internal static async Task<T> Intercept<T, TResponse>(Task<T> task,
-            Action<Task<T>> callback)
+        internal static Task<T> Intercept<T, TResponse>(Task<T> task, Action<Task<T>> callback)
         {
-            try
-            {
-                return await task;
-            }
-            catch (RpcException e)
-            {
-                AdsBaseException parsedException =
-                    ExceptionUtilities.ParseRpcException<TResponse>(e);
-                if (parsedException != null)
-                {
-                    throw parsedException;
-                }
-                throw;
-            }
-            finally
+            return task.ContinueWith(delegate (Task<T> oldTask)
             {
                 if (callback != null)
                 {
-                    callback(task);
+                    callback(oldTask);
                 }
-            }
+                if (oldTask.IsFaulted)
+                {
+                    AggregateException ae = oldTask.Exception;
+                    RpcException e = ExceptionUtilities.ExtractRpcException(ae);
+
+                    AdsBaseException parsedException =
+                        ExceptionUtilities.ParseRpcException<TResponse>(e);
+
+                    if (parsedException != null)
+                    {
+                        throw parsedException;
+                    }
+                    else
+                    {
+                        throw ae;
+                    }
+                }
+                return oldTask.Result;
+            });
         }
 
         /// <summary>

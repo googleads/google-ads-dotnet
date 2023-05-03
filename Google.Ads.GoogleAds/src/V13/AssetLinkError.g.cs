@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V13.Errors {
           string.Concat(
             "CjZnb29nbGUvYWRzL2dvb2dsZWFkcy92MTMvZXJyb3JzL2Fzc2V0X2xpbmtf",
             "ZXJyb3IucHJvdG8SH2dvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxMy5lcnJvcnMi",
-            "5gYKEkFzc2V0TGlua0Vycm9yRW51bSLPBgoOQXNzZXRMaW5rRXJyb3ISDwoL",
+            "oQcKEkFzc2V0TGlua0Vycm9yRW51bSKKBwoOQXNzZXRMaW5rRXJyb3ISDwoL",
             "VU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESFwoTUElOTklOR19VTlNVUFBP",
             "UlRFRBACEhoKFlVOU1VQUE9SVEVEX0ZJRUxEX1RZUEUQAxIrCidGSUVMRF9U",
             "WVBFX0lOQ09NUEFUSUJMRV9XSVRIX0FTU0VUX1RZUEUQBBIuCipGSUVMRF9U",
@@ -45,13 +45,14 @@ namespace Google.Ads.GoogleAds.V13.Errors {
             "UkFUSU9OX05PVF9ERUZJTkVEEBISLQopQ0FOTk9UX0NSRUFURV9BVVRPTUFU",
             "SUNBTExZX0NSRUFURURfTElOS1MQExIuCipDQU5OT1RfTElOS19UT19BVVRP",
             "TUFUSUNBTExZX0NSRUFURURfQVNTRVQQFBIjCh9DQU5OT1RfTU9ESUZZX0FT",
-            "U0VUX0xJTktfU09VUkNFEBVC8wEKI2NvbS5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52MTMuZXJyb3JzQhNBc3NldExpbmtFcnJvclByb3RvUAFaRWdvb2dsZS5n",
-            "b2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92",
-            "MTMvZXJyb3JzO2Vycm9yc6ICA0dBQaoCH0dvb2dsZS5BZHMuR29vZ2xlQWRz",
-            "LlYxMy5FcnJvcnPKAh9Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMTNcRXJyb3Jz",
-            "6gIjR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjEzOjpFcnJvcnNiBnByb3Rv",
-            "Mw=="));
+            "U0VUX0xJTktfU09VUkNFEBUSOQo1Q0FOTk9UX0xJTktfTE9DQVRJT05fTEVB",
+            "RF9GT1JNX1dJVEhPVVRfTE9DQVRJT05fQVNTRVQQFkLzAQojY29tLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYxMy5lcnJvcnNCE0Fzc2V0TGlua0Vycm9yUHJv",
+            "dG9QAVpFZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9h",
+            "ZHMvZ29vZ2xlYWRzL3YxMy9lcnJvcnM7ZXJyb3JzogIDR0FBqgIfR29vZ2xl",
+            "LkFkcy5Hb29nbGVBZHMuVjEzLkVycm9yc8oCH0dvb2dsZVxBZHNcR29vZ2xl",
+            "QWRzXFYxM1xFcnJvcnPqAiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTM6",
+            "OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -325,10 +326,15 @@ namespace Google.Ads.GoogleAds.V13.Errors {
         /// </summary>
         [pbr::OriginalName("CANNOT_LINK_TO_AUTOMATICALLY_CREATED_ASSET")] CannotLinkToAutomaticallyCreatedAsset = 20,
         /// <summary>
-        /// Automatically created links cannot be changed into adveritser links or
+        /// Automatically created links cannot be changed into advertiser links or
         /// the reverse.
         /// </summary>
         [pbr::OriginalName("CANNOT_MODIFY_ASSET_LINK_SOURCE")] CannotModifyAssetLinkSource = 21,
+        /// <summary>
+        /// Lead Form asset with Location answer type can't be linked to the
+        /// Customer/Campaign because there are no Location assets.
+        /// </summary>
+        [pbr::OriginalName("CANNOT_LINK_LOCATION_LEAD_FORM_WITHOUT_LOCATION_ASSET")] CannotLinkLocationLeadFormWithoutLocationAsset = 22,
       }
 
     }

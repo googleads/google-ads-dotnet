@@ -97,7 +97,7 @@ namespace Google.Ads.GoogleAds.V13.Common {
   #region Messages
   /// <summary>
   /// Historical metrics specific to the targeting options selected.
-  /// Targeting options include geographies, network, etc.
+  /// Targeting options include geographies, network, and so on.
   /// Refer to https://support.google.com/google-ads/answer/3022575 for more
   /// details.
   /// </summary>
@@ -157,7 +157,7 @@ namespace Google.Ads.GoogleAds.V13.Common {
     public const int AvgMonthlySearchesFieldNumber = 7;
     private long avgMonthlySearches_;
     /// <summary>
-    /// Approximate number of monthly searches on this query averaged
+    /// Approximate number of monthly searches on this query, averaged
     /// for the past 12 months.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -646,11 +646,11 @@ namespace Google.Ads.GoogleAds.V13.Common {
     public const int YearMonthRangeFieldNumber = 1;
     private global::Google.Ads.GoogleAds.V13.Common.YearMonthRange yearMonthRange_;
     /// <summary>
-    /// The year month range for historical metrics. If not specified the searches
-    /// will be returned for past 12 months.
-    /// Searches data is available for the past 4 years. If the search volume is
+    /// The year month range for historical metrics. If not specified, metrics
+    /// for the past 12 months are returned.
+    /// Search metrics are available for the past 4 years. If the search volume is
     /// not available for the entire year_month_range provided, the subset of the
-    /// year month range for which search volume is available will be returned.
+    /// year month range for which search volume is available are returned.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -666,10 +666,7 @@ namespace Google.Ads.GoogleAds.V13.Common {
     private bool includeAverageCpc_;
     /// <summary>
     /// Indicates whether to include average cost per click value.
-    /// Average CPC is a legacy value that will be removed and replaced in the
-    /// future, and as such we are including it as an optioanl value so clients
-    /// only use it when strictly necessary and to better track clients that use
-    /// this value.
+    /// Average CPC is provided only for legacy support.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1777,7 +1774,7 @@ namespace Google.Ads.GoogleAds.V13.Common {
   }
 
   /// <summary>
-  /// The Annotations for the Keyword plan keywords.
+  /// The annotations for the keyword plan keywords.
   /// </summary>
   public sealed partial class KeywordAnnotations : pb::IMessage<KeywordAnnotations>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

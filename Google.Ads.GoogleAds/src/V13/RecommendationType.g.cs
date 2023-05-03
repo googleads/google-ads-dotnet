@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V13.Enums {
           string.Concat(
             "Cjhnb29nbGUvYWRzL2dvb2dsZWFkcy92MTMvZW51bXMvcmVjb21tZW5kYXRp",
             "b25fdHlwZS5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEzLmVudW1z",
-            "Iq4GChZSZWNvbW1lbmRhdGlvblR5cGVFbnVtIpMGChJSZWNvbW1lbmRhdGlv",
+            "IvUJChZSZWNvbW1lbmRhdGlvblR5cGVFbnVtItoJChJSZWNvbW1lbmRhdGlv",
             "blR5cGUSDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESEwoPQ0FNUEFJ",
             "R05fQlVER0VUEAISCwoHS0VZV09SRBADEgsKB1RFWFRfQUQQBBIVChFUQVJH",
             "RVRfQ1BBX09QVF9JThAFEh8KG01BWElNSVpFX0NPTlZFUlNJT05TX09QVF9J",
@@ -44,12 +44,22 @@ namespace Google.Ads.GoogleAds.V13.Enums {
             "VE9fUEVSRk9STUFOQ0VfTUFYEBkSIAocUkFJU0VfVEFSR0VUX0NQQV9CSURf",
             "VE9PX0xPVxAaEh8KG0ZPUkVDQVNUSU5HX1NFVF9UQVJHRVRfUk9BUxAbEhEK",
             "DUNBTExPVVRfQVNTRVQQHBISCg5TSVRFTElOS19BU1NFVBAdEg4KCkNBTExf",
-            "QVNTRVQQHkLxAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxMy5lbnVt",
-            "c0IXUmVjb21tZW5kYXRpb25UeXBlUHJvdG9QAVpDZ29vZ2xlLmdvbGFuZy5v",
-            "cmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YxMy9lbnVt",
-            "cztlbnVtc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYxMy5FbnVt",
-            "c8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYxM1xFbnVtc+oCIkdvb2dsZTo6",
-            "QWRzOjpHb29nbGVBZHM6OlYxMzo6RW51bXNiBnByb3RvMw=="));
+            "QVNTRVQQHhIaChZTSE9QUElOR19BRERfQUdFX0dST1VQEB8SFgoSU0hPUFBJ",
+            "TkdfQUREX0NPTE9SECASFwoTU0hPUFBJTkdfQUREX0dFTkRFUhAhEhUKEVNI",
+            "T1BQSU5HX0FERF9HVElOECISIQodU0hPUFBJTkdfQUREX01PUkVfSURFTlRJ",
+            "RklFUlMQIxIVChFTSE9QUElOR19BRERfU0laRRAkEiUKIVNIT1BQSU5HX0FE",
+            "RF9QUk9EVUNUU19UT19DQU1QQUlHThAlEiUKIVNIT1BQSU5HX0ZJWF9ESVNB",
+            "UFBST1ZFRF9QUk9EVUNUUxAmEh4KGlNIT1BQSU5HX1RBUkdFVF9BTExfT0ZG",
+            "RVJTECcSMgouU0hPUFBJTkdfRklYX1NVU1BFTkRFRF9NRVJDSEFOVF9DRU5U",
+            "RVJfQUNDT1VOVBAoEjsKN1NIT1BQSU5HX0ZJWF9NRVJDSEFOVF9DRU5URVJf",
+            "QUNDT1VOVF9TVVNQRU5TSU9OX1dBUk5JTkcQKRJICkRTSE9QUElOR19NSUdS",
+            "QVRFX1JFR1VMQVJfU0hPUFBJTkdfQ0FNUEFJR05fT0ZGRVJTX1RPX1BFUkZP",
+            "Uk1BTkNFX01BWBAqQvEBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjEz",
+            "LmVudW1zQhdSZWNvbW1lbmRhdGlvblR5cGVQcm90b1ABWkNnb29nbGUuZ29s",
+            "YW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjEz",
+            "L2VudW1zO2VudW1zogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjEz",
+            "LkVudW1zygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjEzXEVudW1z6gIiR29v",
+            "Z2xlOjpBZHM6Okdvb2dsZUFkczo6VjEzOjpFbnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -305,8 +315,8 @@ namespace Google.Ads.GoogleAds.V13.Enums {
         /// </summary>
         [pbr::OriginalName("MARGINAL_ROI_CAMPAIGN_BUDGET")] MarginalRoiCampaignBudget = 19,
         /// <summary>
-        /// Recommendation to expand keywords to broad match for fully automated
-        /// conversion-based bidding campaigns.
+        /// Recommendation to add broad match versions of keywords for fully
+        /// automated conversion-based bidding campaigns.
         /// </summary>
         [pbr::OriginalName("USE_BROAD_MATCH_KEYWORD")] UseBroadMatchKeyword = 20,
         /// <summary>
@@ -335,7 +345,7 @@ namespace Google.Ads.GoogleAds.V13.Enums {
         /// Recommendation to raise target CPA when it is too low and there are very
         /// few or no conversions.
         /// It is applied asynchronously and can take minutes
-        /// depending on the number of ad groups there is in the related campaign.
+        /// depending on the number of ad groups there are in the related campaign.
         /// </summary>
         [pbr::OriginalName("RAISE_TARGET_CPA_BID_TOO_LOW")] RaiseTargetCpaBidTooLow = 26,
         /// <summary>
@@ -356,6 +366,63 @@ namespace Google.Ads.GoogleAds.V13.Enums {
         /// Recommendation to add call assets to campaign or customer level.
         /// </summary>
         [pbr::OriginalName("CALL_ASSET")] CallAsset = 30,
+        /// <summary>
+        /// Recommendation to add the age group attribute to offers that are
+        /// demoted because of a missing age group.
+        /// </summary>
+        [pbr::OriginalName("SHOPPING_ADD_AGE_GROUP")] ShoppingAddAgeGroup = 31,
+        /// <summary>
+        /// Recommendation to add a color to offers that are demoted
+        /// because of a missing color.
+        /// </summary>
+        [pbr::OriginalName("SHOPPING_ADD_COLOR")] ShoppingAddColor = 32,
+        /// <summary>
+        /// Recommendation to add a gender to offers that are demoted
+        /// because of a missing gender.
+        /// </summary>
+        [pbr::OriginalName("SHOPPING_ADD_GENDER")] ShoppingAddGender = 33,
+        /// <summary>
+        /// Recommendation to add a GTIN (Global Trade Item Number) to offers
+        /// that are demoted because of a missing GTIN.
+        /// </summary>
+        [pbr::OriginalName("SHOPPING_ADD_GTIN")] ShoppingAddGtin = 34,
+        /// <summary>
+        /// Recommendation to add more identifiers to offers that are demoted because
+        /// of missing identifiers.
+        /// </summary>
+        [pbr::OriginalName("SHOPPING_ADD_MORE_IDENTIFIERS")] ShoppingAddMoreIdentifiers = 35,
+        /// <summary>
+        /// Recommendation to add the size to offers that are demoted
+        /// because of a missing size.
+        /// </summary>
+        [pbr::OriginalName("SHOPPING_ADD_SIZE")] ShoppingAddSize = 36,
+        /// <summary>
+        /// Recommendation informing a customer about a campaign that cannot serve
+        /// because no products are being targeted.
+        /// </summary>
+        [pbr::OriginalName("SHOPPING_ADD_PRODUCTS_TO_CAMPAIGN")] ShoppingAddProductsToCampaign = 37,
+        /// <summary>
+        /// The shopping recommendation informing a customer about campaign with a
+        /// high percentage of disapproved products.
+        /// </summary>
+        [pbr::OriginalName("SHOPPING_FIX_DISAPPROVED_PRODUCTS")] ShoppingFixDisapprovedProducts = 38,
+        /// <summary>
+        /// Recommendation to create a catch-all campaign that targets all offers.
+        /// </summary>
+        [pbr::OriginalName("SHOPPING_TARGET_ALL_OFFERS")] ShoppingTargetAllOffers = 39,
+        /// <summary>
+        /// Recommendation to fix Merchant Center account suspension issues.
+        /// </summary>
+        [pbr::OriginalName("SHOPPING_FIX_SUSPENDED_MERCHANT_CENTER_ACCOUNT")] ShoppingFixSuspendedMerchantCenterAccount = 40,
+        /// <summary>
+        /// Recommendation to fix Merchant Center account suspension warning issues.
+        /// </summary>
+        [pbr::OriginalName("SHOPPING_FIX_MERCHANT_CENTER_ACCOUNT_SUSPENSION_WARNING")] ShoppingFixMerchantCenterAccountSuspensionWarning = 41,
+        /// <summary>
+        /// Recommendation to migrate offers targeted by Regular Shopping Campaigns
+        /// to existing Performance Max campaigns.
+        /// </summary>
+        [pbr::OriginalName("SHOPPING_MIGRATE_REGULAR_SHOPPING_CAMPAIGN_OFFERS_TO_PERFORMANCE_MAX")] ShoppingMigrateRegularShoppingCampaignOffersToPerformanceMax = 42,
       }
 
     }

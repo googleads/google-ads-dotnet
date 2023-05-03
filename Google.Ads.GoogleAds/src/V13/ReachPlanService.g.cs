@@ -2259,7 +2259,6 @@ namespace Google.Ads.GoogleAds.V13.Services {
     private string customerReachGroup_;
     /// <summary>
     /// The name of the customer being planned for. This is a user-defined value.
-    /// Required if targeting.audience_targeting is set.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

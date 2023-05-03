@@ -15,7 +15,7 @@
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -60,7 +60,7 @@ namespace Google.Ads.GoogleAds.Examples
             //  TraceUtilities.DETAILED_REQUEST_LOGS_SOURCE);
             // Finally, configure the client library to redirect its traces to the loggers.
             // TraceUtilities.ConfigureSummaryLogger(summaryLogger);
-            // TraceUtilities.ConfigureDetailLogger(detailLogger);
+            // TraceUtilities.ConfigureDetailLogger(detailedLogger);
 
             // If the API log doesn't give you enough details, then you can enable more low level
             // logging at grpc level. Keep in mind that this can get pretty detailed and long. The

@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V13.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjNnb29nbGUvYWRzL2dvb2dsZWFkcy92MTMvZXJyb3JzL3JlcXVlc3RfZXJy",
-            "b3IucHJvdG8SH2dvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxMy5lcnJvcnMiuwYK",
-            "EFJlcXVlc3RFcnJvckVudW0ipgYKDFJlcXVlc3RFcnJvchIPCgtVTlNQRUNJ",
+            "b3IucHJvdG8SH2dvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxMy5lcnJvcnMi1AYK",
+            "EFJlcXVlc3RFcnJvckVudW0ivwYKDFJlcXVlc3RFcnJvchIPCgtVTlNQRUNJ",
             "RklFRBAAEgsKB1VOS05PV04QARIZChVSRVNPVVJDRV9OQU1FX01JU1NJTkcQ",
             "AxIbChdSRVNPVVJDRV9OQU1FX01BTEZPUk1FRBAEEhMKD0JBRF9SRVNPVVJD",
             "RV9JRBAREhcKE0lOVkFMSURfQ1VTVE9NRVJfSUQQEBIWChJPUEVSQVRJT05f",
@@ -44,12 +44,13 @@ namespace Google.Ads.GoogleAds.V13.Errors {
             "V19GT1JfVkFMSURBVEVfT05MWV9SRVFVRVNUUxAeEikKJUlOQ09OU0lTVEVO",
             "VF9SRVRVUk5fU1VNTUFSWV9ST1dfVkFMVUUQHxIwCixUT1RBTF9SRVNVTFRT",
             "X0NPVU5UX05PVF9PUklHSU5BTExZX1JFUVVFU1RFRBAgEhoKFlJQQ19ERUFE",
-            "TElORV9UT09fU0hPUlQQIULxAQojY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYxMy5lcnJvcnNCEVJlcXVlc3RFcnJvclByb3RvUAFaRWdvb2dsZS5nb2xh",
-            "bmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MTMv",
-            "ZXJyb3JzO2Vycm9yc6ICA0dBQaoCH0dvb2dsZS5BZHMuR29vZ2xlQWRzLlYx",
-            "My5FcnJvcnPKAh9Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMTNcRXJyb3Jz6gIj",
-            "R29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjEzOjpFcnJvcnNiBnByb3RvMw=="));
+            "TElORV9UT09fU0hPUlQQIRIXChNVTlNVUFBPUlRFRF9WRVJTSU9OECZC8QEK",
+            "I2NvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTMuZXJyb3JzQhFSZXF1ZXN0",
+            "RXJyb3JQcm90b1ABWkVnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29n",
+            "bGVhcGlzL2Fkcy9nb29nbGVhZHMvdjEzL2Vycm9ycztlcnJvcnOiAgNHQUGq",
+            "Ah9Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMTMuRXJyb3JzygIfR29vZ2xlXEFk",
+            "c1xHb29nbGVBZHNcVjEzXEVycm9yc+oCI0dvb2dsZTo6QWRzOjpHb29nbGVB",
+            "ZHM6OlYxMzo6RXJyb3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -328,6 +329,10 @@ namespace Google.Ads.GoogleAds.V13.Errors {
         /// Deadline specified by the client was too short.
         /// </summary>
         [pbr::OriginalName("RPC_DEADLINE_TOO_SHORT")] RpcDeadlineTooShort = 33,
+        /// <summary>
+        /// This API version has been sunset and is no longer supported.
+        /// </summary>
+        [pbr::OriginalName("UNSUPPORTED_VERSION")] UnsupportedVersion = 38,
       }
 
     }

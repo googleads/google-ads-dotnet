@@ -34,11 +34,13 @@
   </ItemGroup>
   <ItemGroup>
    <!-- Include local projects over nuget dependencies if available -->
-    <PackageReference Condition="!Exists('..\src\Google.Ads.GoogleAds.csproj')" Include="Google.Ads.GoogleAds" Version="15.0.0" />
+    <PackageReference Condition="!Exists('..\src\Google.Ads.GoogleAds.csproj')" Include="Google.Ads.GoogleAds" Version="16.0.0" />
     <ProjectReference Condition="Exists('..\src\Google.Ads.GoogleAds.csproj')" Include="..\src\Google.Ads.GoogleAds.csproj" />
+    <PackageReference Condition="!Exists('..\..\Google.Ads.GoogleAds.Extensions\src\Google.Ads.GoogleAds.Extensions.csproj')" Include="Google.Ads.GoogleAds.Extensions" Version="1.0.1" />
+    <ProjectReference Condition="Exists('..\..\Google.Ads.GoogleAds.Extensions\src\Google.Ads.GoogleAds.Extensions.csproj')" Include="..\..\Google.Ads.GoogleAds.Extensions\src\Google.Ads.GoogleAds.Extensions.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <None Condition="Exists('..\..\Google.Ads.GoogleAds.Core\src\App.config')" Include="..\..\Google.Ads.GoogleAds.Core\src\App.config">
+    <None Condition="Exists('..\..\Google.Ads.GoogleAds.Extensions\src\App.config')" Include="..\..\Google.Ads.GoogleAds.Extensions\src\App.config">
       <Link>App.config</Link>
       <SubType>Designer</SubType>
     </None>

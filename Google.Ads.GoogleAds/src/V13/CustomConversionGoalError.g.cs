@@ -26,19 +26,20 @@ namespace Google.Ads.GoogleAds.V13.Errors {
           string.Concat(
             "CkJnb29nbGUvYWRzL2dvb2dsZWFkcy92MTMvZXJyb3JzL2N1c3RvbV9jb252",
             "ZXJzaW9uX2dvYWxfZXJyb3IucHJvdG8SH2dvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYxMy5lcnJvcnMilAIKHUN1c3RvbUNvbnZlcnNpb25Hb2FsRXJyb3JFbnVt",
-            "IvIBChlDdXN0b21Db252ZXJzaW9uR29hbEVycm9yEg8KC1VOU1BFQ0lGSUVE",
+            "LnYxMy5lcnJvcnMi1QIKHUN1c3RvbUNvbnZlcnNpb25Hb2FsRXJyb3JFbnVt",
+            "IrMCChlDdXN0b21Db252ZXJzaW9uR29hbEVycm9yEg8KC1VOU1BFQ0lGSUVE",
             "EAASCwoHVU5LTk9XThABEh0KGUlOVkFMSURfQ09OVkVSU0lPTl9BQ1RJT04Q",
             "AhIhCh1DT05WRVJTSU9OX0FDVElPTl9OT1RfRU5BQkxFRBADEi8KK0NBTk5P",
             "VF9SRU1PVkVfTElOS0VEX0NVU1RPTV9DT05WRVJTSU9OX0dPQUwQBBIeChpD",
             "VVNUT01fR09BTF9EVVBMSUNBVEVfTkFNRRAFEiQKIERVUExJQ0FURV9DT05W",
-            "RVJTSU9OX0FDVElPTl9MSVNUEAZC/gEKI2NvbS5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MTMuZXJyb3JzQh5DdXN0b21Db252ZXJzaW9uR29hbEVycm9yUHJv",
-            "dG9QAVpFZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9h",
-            "ZHMvZ29vZ2xlYWRzL3YxMy9lcnJvcnM7ZXJyb3JzogIDR0FBqgIfR29vZ2xl",
-            "LkFkcy5Hb29nbGVBZHMuVjEzLkVycm9yc8oCH0dvb2dsZVxBZHNcR29vZ2xl",
-            "QWRzXFYxM1xFcnJvcnPqAiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTM6",
-            "OkVycm9yc2IGcHJvdG8z"));
+            "RVJTSU9OX0FDVElPTl9MSVNUEAYSPwo7Tk9OX0JJRERBQkxFX0NPTlZFUlNJ",
+            "T05fQUNUSU9OX05PVF9FTElHSUJMRV9GT1JfQ1VTVE9NX0dPQUwQB0L+AQoj",
+            "Y29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxMy5lcnJvcnNCHkN1c3RvbUNv",
+            "bnZlcnNpb25Hb2FsRXJyb3JQcm90b1ABWkVnb29nbGUuZ29sYW5nLm9yZy9n",
+            "ZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjEzL2Vycm9ycztl",
+            "cnJvcnOiAgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMTMuRXJyb3Jz",
+            "ygIfR29vZ2xlXEFkc1xHb29nbGVBZHNcVjEzXEVycm9yc+oCI0dvb2dsZTo6",
+            "QWRzOjpHb29nbGVBZHM6OlYxMzo6RXJyb3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -241,6 +242,11 @@ namespace Google.Ads.GoogleAds.V13.Errors {
         /// Custom goal with the same conversion action list already exists.
         /// </summary>
         [pbr::OriginalName("DUPLICATE_CONVERSION_ACTION_LIST")] DuplicateConversionActionList = 6,
+        /// <summary>
+        /// Conversion types that cannot be biddable should not be included in custom
+        /// goal.
+        /// </summary>
+        [pbr::OriginalName("NON_BIDDABLE_CONVERSION_ACTION_NOT_ELIGIBLE_FOR_CUSTOM_GOAL")] NonBiddableConversionActionNotEligibleForCustomGoal = 7,
       }
 
     }

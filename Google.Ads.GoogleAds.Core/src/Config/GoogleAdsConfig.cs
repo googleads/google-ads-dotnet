@@ -13,10 +13,7 @@
 // limitations under the License.
 
 using Google.Ads.Gax.Config;
-using Google.Ads.GoogleAds.Lib;
-using Microsoft.Extensions.Configuration;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 
 namespace Google.Ads.GoogleAds.Config
 {
@@ -34,13 +31,6 @@ namespace Google.Ads.GoogleAds.Config
         /// OAuth scope for Google Ads API.
         /// </summary>
         private const string DEFAULT_OAUTH_SCOPE = "https://www.googleapis.com/auth/adwords";
-
-        /// <summary>
-        /// The configuration section name in App.config file.
-        /// </summary>
-        /// <remarks>This is kept as such to provide backwards compatibility with the SOAP client
-        /// libraries.</remarks>
-        protected const string CONFIG_SECTION_NAME = "GoogleAdsApi";
 
         /// <summary>
         /// The client customer ID.
@@ -62,19 +52,19 @@ namespace Google.Ads.GoogleAds.Config
         /// The developer token.
         /// </summary>
         private readonly StringConfigSetting developerToken = new StringConfigSetting(
-            "DeveloperToken", "");
+            ConfigSettingNames.DEVELOPER_TOKEN, "");
 
         /// <summary>
         /// The Login Customer ID.
         /// </summary>
         private readonly StringConfigSetting loginCustomerId = new StringConfigSetting(
-            "LoginCustomerId", "");
+            ConfigSettingNames.LOGIN_CUSTOMER_ID, "");
 
         /// <summary>
         /// The linked Customer ID.
         /// </summary>
         private readonly StringConfigSetting linkedCustomerId = new StringConfigSetting(
-            "LinkedCustomerId", "");
+            ConfigSettingNames.LINKED_CUSTOMER_ID, "");
 
         /// <summary>
         /// Gets or sets the Google Ads API server URL.
@@ -144,26 +134,7 @@ namespace Google.Ads.GoogleAds.Config
         public GoogleAdsConfig() : base()
         {
             InitBeforeReadSettings();
-
-            if (!LoadFromAppConfigSection(CONFIG_SECTION_NAME))
-            {
-                TryLoadFromEnvironmentFilePath(EnvironmentVariableNames.CONFIG_FILE_PATH,
-                    CONFIG_SECTION_NAME);
-            }
         }
-
-        /// <summary>
-        /// Public constructor. Loads the configuration from an <see cref="IConfigurationRoot"/>.
-        /// </summary>
-        /// <param name="configurationRoot">The configuration root.</param>
-        public GoogleAdsConfig(IConfigurationRoot configurationRoot) : base(configurationRoot) { }
-
-        /// <summary>
-        /// Public constructor. Loads the configuration from a <see cref="IConfigurationSection"/>.
-        /// </summary>
-        /// <param name="configurationSection">The configuration section.</param>
-        public GoogleAdsConfig(IConfigurationSection configurationSection)
-            : base(configurationSection) { }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="GoogleAdsConfig"/> class.
@@ -175,7 +146,7 @@ namespace Google.Ads.GoogleAds.Config
         /// Read all settings from App.config.
         /// </summary>
         /// <param name="settings">The parsed App.config settings.</param>
-        protected override void ReadSettings(Dictionary<string, string> settings)
+        public override void ReadSettings(Dictionary<string, string> settings)
         {
             InitBeforeReadSettings();
 
@@ -197,20 +168,6 @@ namespace Google.Ads.GoogleAds.Config
         private void InitBeforeReadSettings()
         {
             oAuth2Scope = new StringConfigSetting("OAuth2Scope", DEFAULT_OAUTH_SCOPE);
-
-            ENV_VAR_TO_CONFIG_KEY_MAP = new ReadOnlyDictionary<string, string>(
-                new Dictionary<string, string>() {
-                { EnvironmentVariableNames.OAUTH2_MODE, oAuth2Mode.Name},
-                { EnvironmentVariableNames.OAUTH2_CLIENT_ID, oAuth2ClientId.Name},
-                { EnvironmentVariableNames.OAUTH2_CLIENT_SECRET, oAuth2ClientSecret.Name},
-                { EnvironmentVariableNames.OAUTH2_REFRESH_TOKEN, oAuth2RefreshToken.Name},
-                { EnvironmentVariableNames.OAUTH2_JSON_KEY_FILE_PATH, oAuth2SecretsJsonPath.Name},
-                { EnvironmentVariableNames.OAUTH2_IMPERSONATED_EMAIL, oAuth2PrnEmail.Name},
-                { EnvironmentVariableNames.DEVELOPER_TOKEN, developerToken.Name},
-                { EnvironmentVariableNames.LOGIN_CUSTOMER_ID, loginCustomerId.Name},
-                { EnvironmentVariableNames.LINKED_CUSTOMER_ID, linkedCustomerId.Name},
-                { EnvironmentVariableNames.ENDPOINT, serverUrl.Name},
-            });
         }
     }
 }

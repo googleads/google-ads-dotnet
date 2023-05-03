@@ -12,14 +12,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using Google.Ads.Gax.Util;
-using Microsoft.Extensions.Configuration;
-
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
 using System.Runtime.CompilerServices;
 
 namespace Google.Ads.Gax.Config
@@ -46,126 +41,10 @@ namespace Google.Ads.Gax.Config
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ConfigBase"/> class.
+        /// Read all settings from a configuration Dictionary.
         /// </summary>
-        /// <param name="configurationRoot">The configuration root.</param>
-        public ConfigBase(IConfigurationRoot configurationRoot) : base()
-        {
-            LoadFromConfiguration(configurationRoot, "");
-        }
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ConfigBase"/> class.
-        /// </summary>
-        /// <param name="configurationSection">The configuration section.</param>
-        public ConfigBase(IConfigurationSection configurationSection) : base()
-        {
-            LoadFromConfiguration(configurationSection, configurationSection.Key);
-        }
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ConfigBase"/> class.
-        /// </summary>
-        /// <param name="configuration">The configuration section.</param>
-        /// <param name="sectionName"></param>
-        protected void LoadFromConfiguration(IConfiguration configuration, string sectionName)
-        {
-            ReadSettings(ToDictionary(configuration, sectionName));
-        }
-
-        /// <summary>
-        /// Attempts to load the configuration section with the given name.
-        /// </summary>
-        /// <param name="sectionName">The name of the configuration section to load.</param>
-        /// <returns>
-        /// The request configuration section, or <code>null</code> if none was found.
-        /// </returns>
-        protected bool LoadFromAppConfigSection(string sectionName)
-        {
-            Dictionary<string, string> config = ReadAppConfigSection(sectionName);
-            if (config.Count == 0)
-            {
-                return false;
-            }
-            ReadSettings(config);
-            return true;
-        }
-
-        /// <summary>
-        /// Loads configuration from a file path pointed to by a specified environment variable.
-        /// </summary>
-        /// <param name="environmentVariableName">Name of the environment variable to use.</param>
-        /// <param name="sectionName">Name of the section.</param>
-        protected void TryLoadFromEnvironmentFilePath(string environmentVariableName,
-            string sectionName)
-        {
-            string filePath = Environment.GetEnvironmentVariable(environmentVariableName);
-            if (!string.IsNullOrEmpty(filePath))
-            {
-                LoadFromSettingsJson(filePath, sectionName);
-            }
-        }
-
-        /// <summary>
-        /// Loads the configuration from settings json.
-        /// </summary>
-        /// <param name="filePath">The file path.</param>
-        /// <param name="sectionName">Name of the section.</param>
-        protected void LoadFromSettingsJson(string filePath, string sectionName)
-        {
-            IConfigurationBuilder builder = new ConfigurationBuilder()
-                .AddJsonFile(filePath);
-            IConfigurationRoot configRoot = builder.Build();
-            LoadFromConfiguration(configRoot, sectionName);
-        }
-
-        /// <summary>
-        /// Reads the application configuration section.
-        /// </summary>
-        /// <param name="sectionName">Name of the section.</param>
-        /// <returns>A dictionary with key as configuration keyname and value as configuration
-        /// value.</returns>
-        private static Dictionary<string, string> ReadAppConfigSection(string sectionName)
-        {
-            Hashtable config = ConfigUtilities.GetSection(sectionName);
-            return config != null ?
-                config.Cast<DictionaryEntry>().ToDictionary(
-                    d => d.Key.ToString(), d => d.Value?.ToString()) :
-                new Dictionary<string, string>();
-            ;
-        }
-
-        /// <summary>
-        /// Converts a configuration section into a dictionary. Section name prefix is stripped
-        /// from the key names.
-        /// </summary>
-        /// <param name="configuration">The configuration section.</param>
-        /// <param name="sectionName">Name of the section.</param>
-        /// <returns>A dictionary with key as configuration keyname and value as configuration
-        /// value.</returns>
-        private static Dictionary<string, string> ToDictionary(IConfiguration configuration,
-            string sectionName)
-        {
-            if (string.IsNullOrEmpty(sectionName))
-            {
-                return configuration.AsEnumerable().ToDictionary(
-                    setting => setting.Key,
-                    setting => setting.Value);
-            }
-            else
-            {
-                string sectionPrefix = sectionName + ":";
-                return configuration.AsEnumerable().ToDictionary(
-                    setting => setting.Key.Replace(sectionPrefix, ""),
-                    setting => setting.Value);
-            }
-        }
-
-        /// <summary>
-        /// Read all settings from App.config.
-        /// </summary>
-        /// <param name="settings">The parsed app.config settings.</param>
-        protected virtual void ReadSettings(Dictionary<string, string> settings)
+        /// <param name="settings">The parsed configuration settings.</param>
+        public virtual void ReadSettings(Dictionary<string, string> settings)
         {
         }
 

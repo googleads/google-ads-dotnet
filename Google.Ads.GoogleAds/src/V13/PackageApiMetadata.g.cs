@@ -17,6 +17,7 @@
 #pragma warning disable CS8981
 using gaxgrpc = Google.Api.Gax.Grpc;
 using lro = Google.LongRunning;
+using proto = Google.Protobuf;
 using gpr = Google.Protobuf.Reflection;
 using scg = System.Collections.Generic;
 
@@ -26,7 +27,35 @@ namespace Google.Ads.GoogleAds.V13.Services
     internal static class PackageApiMetadata
     {
         /// <summary>The <see cref="gaxgrpc::ApiMetadata"/> for services in this package.</summary>
-        internal static gaxgrpc::ApiMetadata ApiMetadata { get; } = new gaxgrpc::ApiMetadata("Google.Ads.GoogleAds.V13.Services", GetFileDescriptors);
+        internal static gaxgrpc::ApiMetadata ApiMetadata { get; } = new gaxgrpc::ApiMetadata("Google.Ads.GoogleAds.V13.Services", GetFileDescriptors)
+            .WithHttpRuleOverrides(new scg::Dictionary<string, proto::ByteString>
+            {
+                {
+                    "google.longrunning.Operations.CancelOperation",
+                    // { "post": "/v13/{name=customers/*/operations/*}:cancel", "body": "*" }
+                    proto::ByteString.FromBase64("IisvdjEzL3tuYW1lPWN1c3RvbWVycy8qL29wZXJhdGlvbnMvKn06Y2FuY2VsOgEq")
+                },
+                {
+                    "google.longrunning.Operations.DeleteOperation",
+                    // { "delete": "/v13/{name=customers/*/operations/*}" }
+                    proto::ByteString.FromBase64("KiQvdjEzL3tuYW1lPWN1c3RvbWVycy8qL29wZXJhdGlvbnMvKn0=")
+                },
+                {
+                    "google.longrunning.Operations.GetOperation",
+                    // { "get": "/v13/{name=customers/*/operations/*}" }
+                    proto::ByteString.FromBase64("EiQvdjEzL3tuYW1lPWN1c3RvbWVycy8qL29wZXJhdGlvbnMvKn0=")
+                },
+                {
+                    "google.longrunning.Operations.ListOperations",
+                    // { "get": "/v13/{name=customers/*/operations}" }
+                    proto::ByteString.FromBase64("EiIvdjEzL3tuYW1lPWN1c3RvbWVycy8qL29wZXJhdGlvbnN9")
+                },
+                {
+                    "google.longrunning.Operations.WaitOperation",
+                    // { "post": "/v13/{name=customers/*/operations/*}:wait", "body": "*" }
+                    proto::ByteString.FromBase64("IikvdjEzL3tuYW1lPWN1c3RvbWVycy8qL29wZXJhdGlvbnMvKn06d2FpdDoBKg==")
+                },
+            });
 
         private static scg::IEnumerable<gpr::FileDescriptor> GetFileDescriptors()
         {
@@ -96,6 +125,7 @@ namespace Google.Ads.GoogleAds.V13.Services
             yield return CustomerManagerLinkServiceReflection.Descriptor;
             yield return CustomerNegativeCriterionServiceReflection.Descriptor;
             yield return CustomerServiceReflection.Descriptor;
+            yield return CustomerSkAdNetworkConversionValueSchemaServiceReflection.Descriptor;
             yield return CustomerUserAccessInvitationServiceReflection.Descriptor;
             yield return CustomerUserAccessServiceReflection.Descriptor;
             yield return CustomizerAttributeServiceReflection.Descriptor;

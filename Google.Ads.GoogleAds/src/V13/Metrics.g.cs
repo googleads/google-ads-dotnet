@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.V13.Common {
             "dG8SH2dvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxMy5jb21tb24aO2dvb2dsZS9h",
             "ZHMvZ29vZ2xlYWRzL3YxMy9lbnVtcy9pbnRlcmFjdGlvbl9ldmVudF90eXBl",
             "LnByb3RvGjlnb29nbGUvYWRzL2dvb2dsZWFkcy92MTMvZW51bXMvcXVhbGl0",
-            "eV9zY29yZV9idWNrZXQucHJvdG8inFsKB01ldHJpY3MSMAoiYWJzb2x1dGVf",
+            "eV9zY29yZV9idWNrZXQucHJvdG8ioFwKB01ldHJpY3MSMAoiYWJzb2x1dGVf",
             "dG9wX2ltcHJlc3Npb25fcGVyY2VudGFnZRi3ASABKAFIAIgBARIdCg9hY3Rp",
             "dmVfdmlld19jcG0YuAEgASgBSAGIAQESHQoPYWN0aXZlX3ZpZXdfY3RyGLkB",
             "IAEoAUgCiAEBEiUKF2FjdGl2ZV92aWV3X2ltcHJlc3Npb25zGLoBIAEoA0gD",
@@ -145,159 +145,162 @@ namespace Google.Ads.GoogleAds.V13.Common {
             "IAEoAUhoiAEBEjMKJXNlYXJjaF9yYW5rX2xvc3RfdG9wX2ltcHJlc3Npb25f",
             "c2hhcmUYkQEgASgBSGmIAQESKQobc2VhcmNoX3RvcF9pbXByZXNzaW9uX3No",
             "YXJlGJIBIAEoAUhqiAEBEhkKC3NwZWVkX3Njb3JlGJMBIAEoA0hriAEBEicK",
-            "GXRvcF9pbXByZXNzaW9uX3BlcmNlbnRhZ2UYlAEgASgBSGyIAQESPgowdmFs",
-            "aWRfYWNjZWxlcmF0ZWRfbW9iaWxlX3BhZ2VzX2NsaWNrc19wZXJjZW50YWdl",
-            "GJUBIAEoAUhtiAEBEicKGXZhbHVlX3Blcl9hbGxfY29udmVyc2lvbnMYlgEg",
-            "ASgBSG6IAQESOgosdmFsdWVfcGVyX2FsbF9jb252ZXJzaW9uc19ieV9jb252",
-            "ZXJzaW9uX2RhdGUY9AEgASgBSG+IAQESIgoUdmFsdWVfcGVyX2NvbnZlcnNp",
-            "b24YlwEgASgBSHCIAQESNgoodmFsdWVfcGVyX2NvbnZlcnNpb25zX2J5X2Nv",
-            "bnZlcnNpb25fZGF0ZRj1ASABKAFIcYgBARI7Ci12YWx1ZV9wZXJfY3VycmVu",
-            "dF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNpb24YmAEgASgBSHKIAQESJgoY",
-            "dmlkZW9fcXVhcnRpbGVfcDEwMF9yYXRlGIQBIAEoAUhziAEBEiUKF3ZpZGVv",
-            "X3F1YXJ0aWxlX3AyNV9yYXRlGIUBIAEoAUh0iAEBEiUKF3ZpZGVvX3F1YXJ0",
-            "aWxlX3A1MF9yYXRlGIYBIAEoAUh1iAEBEiUKF3ZpZGVvX3F1YXJ0aWxlX3A3",
-            "NV9yYXRlGIcBIAEoAUh2iAEBEh0KD3ZpZGVvX3ZpZXdfcmF0ZRiZASABKAFI",
-            "d4gBARIZCgt2aWRlb192aWV3cxiaASABKANIeIgBARImChh2aWV3X3Rocm91",
-            "Z2hfY29udmVyc2lvbnMYmwEgASgDSHmIAQESIgoZc2tfYWRfbmV0d29ya19j",
-            "b252ZXJzaW9ucxj2ASABKAMSIwoacHVibGlzaGVyX3B1cmNoYXNlZF9jbGlj",
-            "a3MYiAIgASgDEiEKGHB1Ymxpc2hlcl9vcmdhbmljX2NsaWNrcxiJAiABKAMS",
-            "IQoYcHVibGlzaGVyX3Vua25vd25fY2xpY2tzGIoCIAEoAxI/CjFhbGxfY29u",
-            "dmVyc2lvbnNfZnJvbV9sb2NhdGlvbl9hc3NldF9jbGlja190b19jYWxsGIsC",
-            "IAEoAUh6iAEBEjwKLmFsbF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fz",
-            "c2V0X2RpcmVjdGlvbnMYjAIgASgBSHuIAQESNgooYWxsX2NvbnZlcnNpb25z",
-            "X2Zyb21fbG9jYXRpb25fYXNzZXRfbWVudRiNAiABKAFIfIgBARI3CilhbGxf",
-            "Y29udmVyc2lvbnNfZnJvbV9sb2NhdGlvbl9hc3NldF9vcmRlchiOAiABKAFI",
-            "fYgBARJCCjRhbGxfY29udmVyc2lvbnNfZnJvbV9sb2NhdGlvbl9hc3NldF9v",
-            "dGhlcl9lbmdhZ2VtZW50GI8CIAEoAUh+iAEBEj4KMGFsbF9jb252ZXJzaW9u",
-            "c19mcm9tX2xvY2F0aW9uX2Fzc2V0X3N0b3JlX3Zpc2l0cxiQAiABKAFIf4gB",
-            "ARI6CithbGxfY29udmVyc2lvbnNfZnJvbV9sb2NhdGlvbl9hc3NldF93ZWJz",
-            "aXRlGJECIAEoAUiAAYgBARJDCjRlbGlnaWJsZV9pbXByZXNzaW9uc19mcm9t",
-            "X2xvY2F0aW9uX2Fzc2V0X3N0b3JlX3JlYWNoGJICIAEoA0iBAYgBARJJCjp2",
-            "aWV3X3Rocm91Z2hfY29udmVyc2lvbnNfZnJvbV9sb2NhdGlvbl9hc3NldF9j",
-            "bGlja190b19jYWxsGJMCIAEoAUiCAYgBARJGCjd2aWV3X3Rocm91Z2hfY29u",
-            "dmVyc2lvbnNfZnJvbV9sb2NhdGlvbl9hc3NldF9kaXJlY3Rpb25zGJQCIAEo",
-            "AUiDAYgBARJACjF2aWV3X3Rocm91Z2hfY29udmVyc2lvbnNfZnJvbV9sb2Nh",
-            "dGlvbl9hc3NldF9tZW51GJUCIAEoAUiEAYgBARJBCjJ2aWV3X3Rocm91Z2hf",
-            "Y29udmVyc2lvbnNfZnJvbV9sb2NhdGlvbl9hc3NldF9vcmRlchiWAiABKAFI",
-            "hQGIAQESTAo9dmlld190aHJvdWdoX2NvbnZlcnNpb25zX2Zyb21fbG9jYXRp",
-            "b25fYXNzZXRfb3RoZXJfZW5nYWdlbWVudBiXAiABKAFIhgGIAQESSAo5dmll",
-            "d190aHJvdWdoX2NvbnZlcnNpb25zX2Zyb21fbG9jYXRpb25fYXNzZXRfc3Rv",
-            "cmVfdmlzaXRzGJgCIAEoAUiHAYgBARJDCjR2aWV3X3Rocm91Z2hfY29udmVy",
-            "c2lvbnNfZnJvbV9sb2NhdGlvbl9hc3NldF93ZWJzaXRlGJkCIAEoAUiIAYgB",
-            "AUIlCiNfYWJzb2x1dGVfdG9wX2ltcHJlc3Npb25fcGVyY2VudGFnZUISChBf",
-            "YWN0aXZlX3ZpZXdfY3BtQhIKEF9hY3RpdmVfdmlld19jdHJCGgoYX2FjdGl2",
-            "ZV92aWV3X2ltcHJlc3Npb25zQhwKGl9hY3RpdmVfdmlld19tZWFzdXJhYmls",
-            "aXR5QiUKI19hY3RpdmVfdmlld19tZWFzdXJhYmxlX2Nvc3RfbWljcm9zQiUK",
-            "I19hY3RpdmVfdmlld19tZWFzdXJhYmxlX2ltcHJlc3Npb25zQhoKGF9hY3Rp",
-            "dmVfdmlld192aWV3YWJpbGl0eUIpCidfYWxsX2NvbnZlcnNpb25zX2Zyb21f",
-            "aW50ZXJhY3Rpb25zX3JhdGVCGAoWX2FsbF9jb252ZXJzaW9uc192YWx1ZUIS",
-            "ChBfYWxsX2NvbnZlcnNpb25zQiEKH19hbGxfY29udmVyc2lvbnNfdmFsdWVf",
-            "cGVyX2Nvc3RCJQojX2FsbF9jb252ZXJzaW9uc19mcm9tX2NsaWNrX3RvX2Nh",
-            "bGxCIgogX2FsbF9jb252ZXJzaW9uc19mcm9tX2RpcmVjdGlvbnNCOgo4X2Fs",
-            "bF9jb252ZXJzaW9uc19mcm9tX2ludGVyYWN0aW9uc192YWx1ZV9wZXJfaW50",
-            "ZXJhY3Rpb25CHAoaX2FsbF9jb252ZXJzaW9uc19mcm9tX21lbnVCHQobX2Fs",
-            "bF9jb252ZXJzaW9uc19mcm9tX29yZGVyQigKJl9hbGxfY29udmVyc2lvbnNf",
-            "ZnJvbV9vdGhlcl9lbmdhZ2VtZW50QiMKIV9hbGxfY29udmVyc2lvbnNfZnJv",
-            "bV9zdG9yZV92aXNpdEIlCiNfYWxsX2NvbnZlcnNpb25zX2Zyb21fc3RvcmVf",
-            "d2Vic2l0ZUI8CjpfYXVjdGlvbl9pbnNpZ2h0X3NlYXJjaF9hYnNvbHV0ZV90",
-            "b3BfaW1wcmVzc2lvbl9wZXJjZW50YWdlQioKKF9hdWN0aW9uX2luc2lnaHRf",
-            "c2VhcmNoX2ltcHJlc3Npb25fc2hhcmVCKgooX2F1Y3Rpb25faW5zaWdodF9z",
-            "ZWFyY2hfb3V0cmFua2luZ19zaGFyZUImCiRfYXVjdGlvbl9pbnNpZ2h0X3Nl",
-            "YXJjaF9vdmVybGFwX3JhdGVCLQorX2F1Y3Rpb25faW5zaWdodF9zZWFyY2hf",
-            "cG9zaXRpb25fYWJvdmVfcmF0ZUIzCjFfYXVjdGlvbl9pbnNpZ2h0X3NlYXJj",
-            "aF90b3BfaW1wcmVzc2lvbl9wZXJjZW50YWdlQg8KDV9hdmVyYWdlX2Nvc3RC",
-            "DgoMX2F2ZXJhZ2VfY3BjQg4KDF9hdmVyYWdlX2NwZUIOCgxfYXZlcmFnZV9j",
-            "cG1CDgoMX2F2ZXJhZ2VfY3B2QhUKE19hdmVyYWdlX3BhZ2Vfdmlld3NCFwoV",
-            "X2F2ZXJhZ2VfdGltZV9vbl9zaXRlQhwKGl9iZW5jaG1hcmtfYXZlcmFnZV9t",
-            "YXhfY3BjQiMKIV9iaWRkYWJsZV9hcHBfaW5zdGFsbF9jb252ZXJzaW9uc0Io",
-            "CiZfYmlkZGFibGVfYXBwX3Bvc3RfaW5zdGFsbF9jb252ZXJzaW9uc0IQCg5f",
-            "YmVuY2htYXJrX2N0ckIOCgxfYm91bmNlX3JhdGVCCQoHX2NsaWNrc0ISChBf",
-            "Y29tYmluZWRfY2xpY2tzQhwKGl9jb21iaW5lZF9jbGlja3NfcGVyX3F1ZXJ5",
-            "QhMKEV9jb21iaW5lZF9xdWVyaWVzQicKJV9jb250ZW50X2J1ZGdldF9sb3N0",
-            "X2ltcHJlc3Npb25fc2hhcmVCGwoZX2NvbnRlbnRfaW1wcmVzc2lvbl9zaGFy",
-            "ZUItCitfY29udmVyc2lvbl9sYXN0X3JlY2VpdmVkX3JlcXVlc3RfZGF0ZV90",
-            "aW1lQiIKIF9jb252ZXJzaW9uX2xhc3RfY29udmVyc2lvbl9kYXRlQiUKI19j",
-            "b250ZW50X3JhbmtfbG9zdF9pbXByZXNzaW9uX3NoYXJlQiUKI19jb252ZXJz",
-            "aW9uc19mcm9tX2ludGVyYWN0aW9uc19yYXRlQhQKEl9jb252ZXJzaW9uc192",
-            "YWx1ZUIdChtfY29udmVyc2lvbnNfdmFsdWVfcGVyX2Nvc3RCNgo0X2NvbnZl",
-            "cnNpb25zX2Zyb21faW50ZXJhY3Rpb25zX3ZhbHVlX3Blcl9pbnRlcmFjdGlv",
-            "bkIOCgxfY29udmVyc2lvbnNCDgoMX2Nvc3RfbWljcm9zQhsKGV9jb3N0X3Bl",
-            "cl9hbGxfY29udmVyc2lvbnNCFgoUX2Nvc3RfcGVyX2NvbnZlcnNpb25CLwot",
-            "X2Nvc3RfcGVyX2N1cnJlbnRfbW9kZWxfYXR0cmlidXRlZF9jb252ZXJzaW9u",
-            "QhsKGV9jcm9zc19kZXZpY2VfY29udmVyc2lvbnNCBgoEX2N0ckInCiVfY3Vy",
-            "cmVudF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNpb25zQj4KPF9jdXJyZW50",
-            "X21vZGVsX2F0dHJpYnV0ZWRfY29udmVyc2lvbnNfZnJvbV9pbnRlcmFjdGlv",
-            "bnNfcmF0ZUJPCk1fY3VycmVudF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNp",
-            "b25zX2Zyb21faW50ZXJhY3Rpb25zX3ZhbHVlX3Blcl9pbnRlcmFjdGlvbkIt",
-            "CitfY3VycmVudF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNpb25zX3ZhbHVl",
-            "QjYKNF9jdXJyZW50X21vZGVsX2F0dHJpYnV0ZWRfY29udmVyc2lvbnNfdmFs",
-            "dWVfcGVyX2Nvc3RCEgoQX2VuZ2FnZW1lbnRfcmF0ZUIOCgxfZW5nYWdlbWVu",
-            "dHNCIgogX2hvdGVsX2F2ZXJhZ2VfbGVhZF92YWx1ZV9taWNyb3NCHwodX2hv",
-            "dGVsX2NvbW1pc3Npb25fcmF0ZV9taWNyb3NCIQofX2hvdGVsX2V4cGVjdGVk",
-            "X2NvbW1pc3Npb25fY29zdEIkCiJfaG90ZWxfcHJpY2VfZGlmZmVyZW5jZV9w",
-            "ZXJjZW50YWdlQh0KG19ob3RlbF9lbGlnaWJsZV9pbXByZXNzaW9uc0IbChlf",
-            "aGlzdG9yaWNhbF9xdWFsaXR5X3Njb3JlQhEKD19nbWFpbF9mb3J3YXJkc0IO",
-            "CgxfZ21haWxfc2F2ZXNCGQoXX2dtYWlsX3NlY29uZGFyeV9jbGlja3NCHwod",
-            "X2ltcHJlc3Npb25zX2Zyb21fc3RvcmVfcmVhY2hCDgoMX2ltcHJlc3Npb25z",
-            "QhMKEV9pbnRlcmFjdGlvbl9yYXRlQg8KDV9pbnRlcmFjdGlvbnNCFQoTX2lu",
-            "dmFsaWRfY2xpY2tfcmF0ZUIRCg9faW52YWxpZF9jbGlja3NCEAoOX21lc3Nh",
-            "Z2VfY2hhdHNCFgoUX21lc3NhZ2VfaW1wcmVzc2lvbnNCFAoSX21lc3NhZ2Vf",
-            "Y2hhdF9yYXRlQiQKIl9tb2JpbGVfZnJpZW5kbHlfY2xpY2tzX3BlcmNlbnRh",
-            "Z2VCHAoaX29wdGltaXphdGlvbl9zY29yZV91cGxpZnRCGQoXX29wdGltaXph",
-            "dGlvbl9zY29yZV91cmxCEQoPX29yZ2FuaWNfY2xpY2tzQhsKGV9vcmdhbmlj",
-            "X2NsaWNrc19wZXJfcXVlcnlCFgoUX29yZ2FuaWNfaW1wcmVzc2lvbnNCIAoe",
-            "X29yZ2FuaWNfaW1wcmVzc2lvbnNfcGVyX3F1ZXJ5QhIKEF9vcmdhbmljX3F1",
-            "ZXJpZXNCFwoVX3BlcmNlbnRfbmV3X3Zpc2l0b3JzQg4KDF9waG9uZV9jYWxs",
-            "c0IUChJfcGhvbmVfaW1wcmVzc2lvbnNCFQoTX3Bob25lX3Rocm91Z2hfcmF0",
-            "ZUIPCg1fcmVsYXRpdmVfY3RyQicKJV9zZWFyY2hfYWJzb2x1dGVfdG9wX2lt",
-            "cHJlc3Npb25fc2hhcmVCMwoxX3NlYXJjaF9idWRnZXRfbG9zdF9hYnNvbHV0",
-            "ZV90b3BfaW1wcmVzc2lvbl9zaGFyZUImCiRfc2VhcmNoX2J1ZGdldF9sb3N0",
-            "X2ltcHJlc3Npb25fc2hhcmVCKgooX3NlYXJjaF9idWRnZXRfbG9zdF90b3Bf",
-            "aW1wcmVzc2lvbl9zaGFyZUIVChNfc2VhcmNoX2NsaWNrX3NoYXJlQiYKJF9z",
-            "ZWFyY2hfZXhhY3RfbWF0Y2hfaW1wcmVzc2lvbl9zaGFyZUIaChhfc2VhcmNo",
-            "X2ltcHJlc3Npb25fc2hhcmVCMQovX3NlYXJjaF9yYW5rX2xvc3RfYWJzb2x1",
-            "dGVfdG9wX2ltcHJlc3Npb25fc2hhcmVCJAoiX3NlYXJjaF9yYW5rX2xvc3Rf",
-            "aW1wcmVzc2lvbl9zaGFyZUIoCiZfc2VhcmNoX3JhbmtfbG9zdF90b3BfaW1w",
-            "cmVzc2lvbl9zaGFyZUIeChxfc2VhcmNoX3RvcF9pbXByZXNzaW9uX3NoYXJl",
-            "Qg4KDF9zcGVlZF9zY29yZUIcChpfdG9wX2ltcHJlc3Npb25fcGVyY2VudGFn",
-            "ZUIzCjFfdmFsaWRfYWNjZWxlcmF0ZWRfbW9iaWxlX3BhZ2VzX2NsaWNrc19w",
-            "ZXJjZW50YWdlQhwKGl92YWx1ZV9wZXJfYWxsX2NvbnZlcnNpb25zQi8KLV92",
-            "YWx1ZV9wZXJfYWxsX2NvbnZlcnNpb25zX2J5X2NvbnZlcnNpb25fZGF0ZUIX",
-            "ChVfdmFsdWVfcGVyX2NvbnZlcnNpb25CKwopX3ZhbHVlX3Blcl9jb252ZXJz",
-            "aW9uc19ieV9jb252ZXJzaW9uX2RhdGVCMAouX3ZhbHVlX3Blcl9jdXJyZW50",
-            "X21vZGVsX2F0dHJpYnV0ZWRfY29udmVyc2lvbkIbChlfdmlkZW9fcXVhcnRp",
-            "bGVfcDEwMF9yYXRlQhoKGF92aWRlb19xdWFydGlsZV9wMjVfcmF0ZUIaChhf",
-            "dmlkZW9fcXVhcnRpbGVfcDUwX3JhdGVCGgoYX3ZpZGVvX3F1YXJ0aWxlX3A3",
-            "NV9yYXRlQhIKEF92aWRlb192aWV3X3JhdGVCDgoMX3ZpZGVvX3ZpZXdzQhsK",
-            "GV92aWV3X3Rocm91Z2hfY29udmVyc2lvbnNCNAoyX2FsbF9jb252ZXJzaW9u",
-            "c19mcm9tX2xvY2F0aW9uX2Fzc2V0X2NsaWNrX3RvX2NhbGxCMQovX2FsbF9j",
-            "b252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0X2RpcmVjdGlvbnNCKwop",
-            "X2FsbF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0X21lbnVCLAoq",
-            "X2FsbF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0X29yZGVyQjcK",
-            "NV9hbGxfY29udmVyc2lvbnNfZnJvbV9sb2NhdGlvbl9hc3NldF9vdGhlcl9l",
-            "bmdhZ2VtZW50QjMKMV9hbGxfY29udmVyc2lvbnNfZnJvbV9sb2NhdGlvbl9h",
-            "c3NldF9zdG9yZV92aXNpdHNCLgosX2FsbF9jb252ZXJzaW9uc19mcm9tX2xv",
-            "Y2F0aW9uX2Fzc2V0X3dlYnNpdGVCNwo1X2VsaWdpYmxlX2ltcHJlc3Npb25z",
-            "X2Zyb21fbG9jYXRpb25fYXNzZXRfc3RvcmVfcmVhY2hCPQo7X3ZpZXdfdGhy",
-            "b3VnaF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0X2NsaWNrX3Rv",
-            "X2NhbGxCOgo4X3ZpZXdfdGhyb3VnaF9jb252ZXJzaW9uc19mcm9tX2xvY2F0",
-            "aW9uX2Fzc2V0X2RpcmVjdGlvbnNCNAoyX3ZpZXdfdGhyb3VnaF9jb252ZXJz",
-            "aW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0X21lbnVCNQozX3ZpZXdfdGhyb3Vn",
-            "aF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0X29yZGVyQkAKPl92",
-            "aWV3X3Rocm91Z2hfY29udmVyc2lvbnNfZnJvbV9sb2NhdGlvbl9hc3NldF9v",
-            "dGhlcl9lbmdhZ2VtZW50QjwKOl92aWV3X3Rocm91Z2hfY29udmVyc2lvbnNf",
-            "ZnJvbV9sb2NhdGlvbl9hc3NldF9zdG9yZV92aXNpdHNCNwo1X3ZpZXdfdGhy",
-            "b3VnaF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0X3dlYnNpdGVC",
-            "7AEKI2NvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTMuY29tbW9uQgxNZXRy",
-            "aWNzUHJvdG9QAVpFZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xl",
-            "YXBpcy9hZHMvZ29vZ2xlYWRzL3YxMy9jb21tb247Y29tbW9uogIDR0FBqgIf",
-            "R29vZ2xlLkFkcy5Hb29nbGVBZHMuVjEzLkNvbW1vbsoCH0dvb2dsZVxBZHNc",
-            "R29vZ2xlQWRzXFYxM1xDb21tb27qAiNHb29nbGU6OkFkczo6R29vZ2xlQWRz",
-            "OjpWMTM6OkNvbW1vbmIGcHJvdG8z"));
+            "GWF2ZXJhZ2VfdGFyZ2V0X2NwYV9taWNyb3MYogIgASgDSGyIAQESIQoTYXZl",
+            "cmFnZV90YXJnZXRfcm9hcxj6ASABKAFIbYgBARInChl0b3BfaW1wcmVzc2lv",
+            "bl9wZXJjZW50YWdlGJQBIAEoAUhuiAEBEj4KMHZhbGlkX2FjY2VsZXJhdGVk",
+            "X21vYmlsZV9wYWdlc19jbGlja3NfcGVyY2VudGFnZRiVASABKAFIb4gBARIn",
+            "Chl2YWx1ZV9wZXJfYWxsX2NvbnZlcnNpb25zGJYBIAEoAUhwiAEBEjoKLHZh",
+            "bHVlX3Blcl9hbGxfY29udmVyc2lvbnNfYnlfY29udmVyc2lvbl9kYXRlGPQB",
+            "IAEoAUhxiAEBEiIKFHZhbHVlX3Blcl9jb252ZXJzaW9uGJcBIAEoAUhyiAEB",
+            "EjYKKHZhbHVlX3Blcl9jb252ZXJzaW9uc19ieV9jb252ZXJzaW9uX2RhdGUY",
+            "9QEgASgBSHOIAQESOwotdmFsdWVfcGVyX2N1cnJlbnRfbW9kZWxfYXR0cmli",
+            "dXRlZF9jb252ZXJzaW9uGJgBIAEoAUh0iAEBEiYKGHZpZGVvX3F1YXJ0aWxl",
+            "X3AxMDBfcmF0ZRiEASABKAFIdYgBARIlChd2aWRlb19xdWFydGlsZV9wMjVf",
+            "cmF0ZRiFASABKAFIdogBARIlChd2aWRlb19xdWFydGlsZV9wNTBfcmF0ZRiG",
+            "ASABKAFId4gBARIlChd2aWRlb19xdWFydGlsZV9wNzVfcmF0ZRiHASABKAFI",
+            "eIgBARIdCg92aWRlb192aWV3X3JhdGUYmQEgASgBSHmIAQESGQoLdmlkZW9f",
+            "dmlld3MYmgEgASgDSHqIAQESJgoYdmlld190aHJvdWdoX2NvbnZlcnNpb25z",
+            "GJsBIAEoA0h7iAEBEiIKGXNrX2FkX25ldHdvcmtfY29udmVyc2lvbnMY9gEg",
+            "ASgDEiMKGnB1Ymxpc2hlcl9wdXJjaGFzZWRfY2xpY2tzGIgCIAEoAxIhChhw",
+            "dWJsaXNoZXJfb3JnYW5pY19jbGlja3MYiQIgASgDEiEKGHB1Ymxpc2hlcl91",
+            "bmtub3duX2NsaWNrcxiKAiABKAMSPwoxYWxsX2NvbnZlcnNpb25zX2Zyb21f",
+            "bG9jYXRpb25fYXNzZXRfY2xpY2tfdG9fY2FsbBiLAiABKAFIfIgBARI8Ci5h",
+            "bGxfY29udmVyc2lvbnNfZnJvbV9sb2NhdGlvbl9hc3NldF9kaXJlY3Rpb25z",
+            "GIwCIAEoAUh9iAEBEjYKKGFsbF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9u",
+            "X2Fzc2V0X21lbnUYjQIgASgBSH6IAQESNwopYWxsX2NvbnZlcnNpb25zX2Zy",
+            "b21fbG9jYXRpb25fYXNzZXRfb3JkZXIYjgIgASgBSH+IAQESQwo0YWxsX2Nv",
+            "bnZlcnNpb25zX2Zyb21fbG9jYXRpb25fYXNzZXRfb3RoZXJfZW5nYWdlbWVu",
+            "dBiPAiABKAFIgAGIAQESPwowYWxsX2NvbnZlcnNpb25zX2Zyb21fbG9jYXRp",
+            "b25fYXNzZXRfc3RvcmVfdmlzaXRzGJACIAEoAUiBAYgBARI6CithbGxfY29u",
+            "dmVyc2lvbnNfZnJvbV9sb2NhdGlvbl9hc3NldF93ZWJzaXRlGJECIAEoAUiC",
+            "AYgBARJDCjRlbGlnaWJsZV9pbXByZXNzaW9uc19mcm9tX2xvY2F0aW9uX2Fz",
+            "c2V0X3N0b3JlX3JlYWNoGJICIAEoA0iDAYgBARJJCjp2aWV3X3Rocm91Z2hf",
+            "Y29udmVyc2lvbnNfZnJvbV9sb2NhdGlvbl9hc3NldF9jbGlja190b19jYWxs",
+            "GJMCIAEoAUiEAYgBARJGCjd2aWV3X3Rocm91Z2hfY29udmVyc2lvbnNfZnJv",
+            "bV9sb2NhdGlvbl9hc3NldF9kaXJlY3Rpb25zGJQCIAEoAUiFAYgBARJACjF2",
+            "aWV3X3Rocm91Z2hfY29udmVyc2lvbnNfZnJvbV9sb2NhdGlvbl9hc3NldF9t",
+            "ZW51GJUCIAEoAUiGAYgBARJBCjJ2aWV3X3Rocm91Z2hfY29udmVyc2lvbnNf",
+            "ZnJvbV9sb2NhdGlvbl9hc3NldF9vcmRlchiWAiABKAFIhwGIAQESTAo9dmll",
+            "d190aHJvdWdoX2NvbnZlcnNpb25zX2Zyb21fbG9jYXRpb25fYXNzZXRfb3Ro",
+            "ZXJfZW5nYWdlbWVudBiXAiABKAFIiAGIAQESSAo5dmlld190aHJvdWdoX2Nv",
+            "bnZlcnNpb25zX2Zyb21fbG9jYXRpb25fYXNzZXRfc3RvcmVfdmlzaXRzGJgC",
+            "IAEoAUiJAYgBARJDCjR2aWV3X3Rocm91Z2hfY29udmVyc2lvbnNfZnJvbV9s",
+            "b2NhdGlvbl9hc3NldF93ZWJzaXRlGJkCIAEoAUiKAYgBAUIlCiNfYWJzb2x1",
+            "dGVfdG9wX2ltcHJlc3Npb25fcGVyY2VudGFnZUISChBfYWN0aXZlX3ZpZXdf",
+            "Y3BtQhIKEF9hY3RpdmVfdmlld19jdHJCGgoYX2FjdGl2ZV92aWV3X2ltcHJl",
+            "c3Npb25zQhwKGl9hY3RpdmVfdmlld19tZWFzdXJhYmlsaXR5QiUKI19hY3Rp",
+            "dmVfdmlld19tZWFzdXJhYmxlX2Nvc3RfbWljcm9zQiUKI19hY3RpdmVfdmll",
+            "d19tZWFzdXJhYmxlX2ltcHJlc3Npb25zQhoKGF9hY3RpdmVfdmlld192aWV3",
+            "YWJpbGl0eUIpCidfYWxsX2NvbnZlcnNpb25zX2Zyb21faW50ZXJhY3Rpb25z",
+            "X3JhdGVCGAoWX2FsbF9jb252ZXJzaW9uc192YWx1ZUISChBfYWxsX2NvbnZl",
+            "cnNpb25zQiEKH19hbGxfY29udmVyc2lvbnNfdmFsdWVfcGVyX2Nvc3RCJQoj",
+            "X2FsbF9jb252ZXJzaW9uc19mcm9tX2NsaWNrX3RvX2NhbGxCIgogX2FsbF9j",
+            "b252ZXJzaW9uc19mcm9tX2RpcmVjdGlvbnNCOgo4X2FsbF9jb252ZXJzaW9u",
+            "c19mcm9tX2ludGVyYWN0aW9uc192YWx1ZV9wZXJfaW50ZXJhY3Rpb25CHAoa",
+            "X2FsbF9jb252ZXJzaW9uc19mcm9tX21lbnVCHQobX2FsbF9jb252ZXJzaW9u",
+            "c19mcm9tX29yZGVyQigKJl9hbGxfY29udmVyc2lvbnNfZnJvbV9vdGhlcl9l",
+            "bmdhZ2VtZW50QiMKIV9hbGxfY29udmVyc2lvbnNfZnJvbV9zdG9yZV92aXNp",
+            "dEIlCiNfYWxsX2NvbnZlcnNpb25zX2Zyb21fc3RvcmVfd2Vic2l0ZUI8Cjpf",
+            "YXVjdGlvbl9pbnNpZ2h0X3NlYXJjaF9hYnNvbHV0ZV90b3BfaW1wcmVzc2lv",
+            "bl9wZXJjZW50YWdlQioKKF9hdWN0aW9uX2luc2lnaHRfc2VhcmNoX2ltcHJl",
+            "c3Npb25fc2hhcmVCKgooX2F1Y3Rpb25faW5zaWdodF9zZWFyY2hfb3V0cmFu",
+            "a2luZ19zaGFyZUImCiRfYXVjdGlvbl9pbnNpZ2h0X3NlYXJjaF9vdmVybGFw",
+            "X3JhdGVCLQorX2F1Y3Rpb25faW5zaWdodF9zZWFyY2hfcG9zaXRpb25fYWJv",
+            "dmVfcmF0ZUIzCjFfYXVjdGlvbl9pbnNpZ2h0X3NlYXJjaF90b3BfaW1wcmVz",
+            "c2lvbl9wZXJjZW50YWdlQg8KDV9hdmVyYWdlX2Nvc3RCDgoMX2F2ZXJhZ2Vf",
+            "Y3BjQg4KDF9hdmVyYWdlX2NwZUIOCgxfYXZlcmFnZV9jcG1CDgoMX2F2ZXJh",
+            "Z2VfY3B2QhUKE19hdmVyYWdlX3BhZ2Vfdmlld3NCFwoVX2F2ZXJhZ2VfdGlt",
+            "ZV9vbl9zaXRlQhwKGl9iZW5jaG1hcmtfYXZlcmFnZV9tYXhfY3BjQiMKIV9i",
+            "aWRkYWJsZV9hcHBfaW5zdGFsbF9jb252ZXJzaW9uc0IoCiZfYmlkZGFibGVf",
+            "YXBwX3Bvc3RfaW5zdGFsbF9jb252ZXJzaW9uc0IQCg5fYmVuY2htYXJrX2N0",
+            "ckIOCgxfYm91bmNlX3JhdGVCCQoHX2NsaWNrc0ISChBfY29tYmluZWRfY2xp",
+            "Y2tzQhwKGl9jb21iaW5lZF9jbGlja3NfcGVyX3F1ZXJ5QhMKEV9jb21iaW5l",
+            "ZF9xdWVyaWVzQicKJV9jb250ZW50X2J1ZGdldF9sb3N0X2ltcHJlc3Npb25f",
+            "c2hhcmVCGwoZX2NvbnRlbnRfaW1wcmVzc2lvbl9zaGFyZUItCitfY29udmVy",
+            "c2lvbl9sYXN0X3JlY2VpdmVkX3JlcXVlc3RfZGF0ZV90aW1lQiIKIF9jb252",
+            "ZXJzaW9uX2xhc3RfY29udmVyc2lvbl9kYXRlQiUKI19jb250ZW50X3Jhbmtf",
+            "bG9zdF9pbXByZXNzaW9uX3NoYXJlQiUKI19jb252ZXJzaW9uc19mcm9tX2lu",
+            "dGVyYWN0aW9uc19yYXRlQhQKEl9jb252ZXJzaW9uc192YWx1ZUIdChtfY29u",
+            "dmVyc2lvbnNfdmFsdWVfcGVyX2Nvc3RCNgo0X2NvbnZlcnNpb25zX2Zyb21f",
+            "aW50ZXJhY3Rpb25zX3ZhbHVlX3Blcl9pbnRlcmFjdGlvbkIOCgxfY29udmVy",
+            "c2lvbnNCDgoMX2Nvc3RfbWljcm9zQhsKGV9jb3N0X3Blcl9hbGxfY29udmVy",
+            "c2lvbnNCFgoUX2Nvc3RfcGVyX2NvbnZlcnNpb25CLwotX2Nvc3RfcGVyX2N1",
+            "cnJlbnRfbW9kZWxfYXR0cmlidXRlZF9jb252ZXJzaW9uQhsKGV9jcm9zc19k",
+            "ZXZpY2VfY29udmVyc2lvbnNCBgoEX2N0ckInCiVfY3VycmVudF9tb2RlbF9h",
+            "dHRyaWJ1dGVkX2NvbnZlcnNpb25zQj4KPF9jdXJyZW50X21vZGVsX2F0dHJp",
+            "YnV0ZWRfY29udmVyc2lvbnNfZnJvbV9pbnRlcmFjdGlvbnNfcmF0ZUJPCk1f",
+            "Y3VycmVudF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNpb25zX2Zyb21faW50",
+            "ZXJhY3Rpb25zX3ZhbHVlX3Blcl9pbnRlcmFjdGlvbkItCitfY3VycmVudF9t",
+            "b2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNpb25zX3ZhbHVlQjYKNF9jdXJyZW50",
+            "X21vZGVsX2F0dHJpYnV0ZWRfY29udmVyc2lvbnNfdmFsdWVfcGVyX2Nvc3RC",
+            "EgoQX2VuZ2FnZW1lbnRfcmF0ZUIOCgxfZW5nYWdlbWVudHNCIgogX2hvdGVs",
+            "X2F2ZXJhZ2VfbGVhZF92YWx1ZV9taWNyb3NCHwodX2hvdGVsX2NvbW1pc3Np",
+            "b25fcmF0ZV9taWNyb3NCIQofX2hvdGVsX2V4cGVjdGVkX2NvbW1pc3Npb25f",
+            "Y29zdEIkCiJfaG90ZWxfcHJpY2VfZGlmZmVyZW5jZV9wZXJjZW50YWdlQh0K",
+            "G19ob3RlbF9lbGlnaWJsZV9pbXByZXNzaW9uc0IbChlfaGlzdG9yaWNhbF9x",
+            "dWFsaXR5X3Njb3JlQhEKD19nbWFpbF9mb3J3YXJkc0IOCgxfZ21haWxfc2F2",
+            "ZXNCGQoXX2dtYWlsX3NlY29uZGFyeV9jbGlja3NCHwodX2ltcHJlc3Npb25z",
+            "X2Zyb21fc3RvcmVfcmVhY2hCDgoMX2ltcHJlc3Npb25zQhMKEV9pbnRlcmFj",
+            "dGlvbl9yYXRlQg8KDV9pbnRlcmFjdGlvbnNCFQoTX2ludmFsaWRfY2xpY2tf",
+            "cmF0ZUIRCg9faW52YWxpZF9jbGlja3NCEAoOX21lc3NhZ2VfY2hhdHNCFgoU",
+            "X21lc3NhZ2VfaW1wcmVzc2lvbnNCFAoSX21lc3NhZ2VfY2hhdF9yYXRlQiQK",
+            "Il9tb2JpbGVfZnJpZW5kbHlfY2xpY2tzX3BlcmNlbnRhZ2VCHAoaX29wdGlt",
+            "aXphdGlvbl9zY29yZV91cGxpZnRCGQoXX29wdGltaXphdGlvbl9zY29yZV91",
+            "cmxCEQoPX29yZ2FuaWNfY2xpY2tzQhsKGV9vcmdhbmljX2NsaWNrc19wZXJf",
+            "cXVlcnlCFgoUX29yZ2FuaWNfaW1wcmVzc2lvbnNCIAoeX29yZ2FuaWNfaW1w",
+            "cmVzc2lvbnNfcGVyX3F1ZXJ5QhIKEF9vcmdhbmljX3F1ZXJpZXNCFwoVX3Bl",
+            "cmNlbnRfbmV3X3Zpc2l0b3JzQg4KDF9waG9uZV9jYWxsc0IUChJfcGhvbmVf",
+            "aW1wcmVzc2lvbnNCFQoTX3Bob25lX3Rocm91Z2hfcmF0ZUIPCg1fcmVsYXRp",
+            "dmVfY3RyQicKJV9zZWFyY2hfYWJzb2x1dGVfdG9wX2ltcHJlc3Npb25fc2hh",
+            "cmVCMwoxX3NlYXJjaF9idWRnZXRfbG9zdF9hYnNvbHV0ZV90b3BfaW1wcmVz",
+            "c2lvbl9zaGFyZUImCiRfc2VhcmNoX2J1ZGdldF9sb3N0X2ltcHJlc3Npb25f",
+            "c2hhcmVCKgooX3NlYXJjaF9idWRnZXRfbG9zdF90b3BfaW1wcmVzc2lvbl9z",
+            "aGFyZUIVChNfc2VhcmNoX2NsaWNrX3NoYXJlQiYKJF9zZWFyY2hfZXhhY3Rf",
+            "bWF0Y2hfaW1wcmVzc2lvbl9zaGFyZUIaChhfc2VhcmNoX2ltcHJlc3Npb25f",
+            "c2hhcmVCMQovX3NlYXJjaF9yYW5rX2xvc3RfYWJzb2x1dGVfdG9wX2ltcHJl",
+            "c3Npb25fc2hhcmVCJAoiX3NlYXJjaF9yYW5rX2xvc3RfaW1wcmVzc2lvbl9z",
+            "aGFyZUIoCiZfc2VhcmNoX3JhbmtfbG9zdF90b3BfaW1wcmVzc2lvbl9zaGFy",
+            "ZUIeChxfc2VhcmNoX3RvcF9pbXByZXNzaW9uX3NoYXJlQg4KDF9zcGVlZF9z",
+            "Y29yZUIcChpfYXZlcmFnZV90YXJnZXRfY3BhX21pY3Jvc0IWChRfYXZlcmFn",
+            "ZV90YXJnZXRfcm9hc0IcChpfdG9wX2ltcHJlc3Npb25fcGVyY2VudGFnZUIz",
+            "CjFfdmFsaWRfYWNjZWxlcmF0ZWRfbW9iaWxlX3BhZ2VzX2NsaWNrc19wZXJj",
+            "ZW50YWdlQhwKGl92YWx1ZV9wZXJfYWxsX2NvbnZlcnNpb25zQi8KLV92YWx1",
+            "ZV9wZXJfYWxsX2NvbnZlcnNpb25zX2J5X2NvbnZlcnNpb25fZGF0ZUIXChVf",
+            "dmFsdWVfcGVyX2NvbnZlcnNpb25CKwopX3ZhbHVlX3Blcl9jb252ZXJzaW9u",
+            "c19ieV9jb252ZXJzaW9uX2RhdGVCMAouX3ZhbHVlX3Blcl9jdXJyZW50X21v",
+            "ZGVsX2F0dHJpYnV0ZWRfY29udmVyc2lvbkIbChlfdmlkZW9fcXVhcnRpbGVf",
+            "cDEwMF9yYXRlQhoKGF92aWRlb19xdWFydGlsZV9wMjVfcmF0ZUIaChhfdmlk",
+            "ZW9fcXVhcnRpbGVfcDUwX3JhdGVCGgoYX3ZpZGVvX3F1YXJ0aWxlX3A3NV9y",
+            "YXRlQhIKEF92aWRlb192aWV3X3JhdGVCDgoMX3ZpZGVvX3ZpZXdzQhsKGV92",
+            "aWV3X3Rocm91Z2hfY29udmVyc2lvbnNCNAoyX2FsbF9jb252ZXJzaW9uc19m",
+            "cm9tX2xvY2F0aW9uX2Fzc2V0X2NsaWNrX3RvX2NhbGxCMQovX2FsbF9jb252",
+            "ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0X2RpcmVjdGlvbnNCKwopX2Fs",
+            "bF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0X21lbnVCLAoqX2Fs",
+            "bF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0X29yZGVyQjcKNV9h",
+            "bGxfY29udmVyc2lvbnNfZnJvbV9sb2NhdGlvbl9hc3NldF9vdGhlcl9lbmdh",
+            "Z2VtZW50QjMKMV9hbGxfY29udmVyc2lvbnNfZnJvbV9sb2NhdGlvbl9hc3Nl",
+            "dF9zdG9yZV92aXNpdHNCLgosX2FsbF9jb252ZXJzaW9uc19mcm9tX2xvY2F0",
+            "aW9uX2Fzc2V0X3dlYnNpdGVCNwo1X2VsaWdpYmxlX2ltcHJlc3Npb25zX2Zy",
+            "b21fbG9jYXRpb25fYXNzZXRfc3RvcmVfcmVhY2hCPQo7X3ZpZXdfdGhyb3Vn",
+            "aF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0X2NsaWNrX3RvX2Nh",
+            "bGxCOgo4X3ZpZXdfdGhyb3VnaF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9u",
+            "X2Fzc2V0X2RpcmVjdGlvbnNCNAoyX3ZpZXdfdGhyb3VnaF9jb252ZXJzaW9u",
+            "c19mcm9tX2xvY2F0aW9uX2Fzc2V0X21lbnVCNQozX3ZpZXdfdGhyb3VnaF9j",
+            "b252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0X29yZGVyQkAKPl92aWV3",
+            "X3Rocm91Z2hfY29udmVyc2lvbnNfZnJvbV9sb2NhdGlvbl9hc3NldF9vdGhl",
+            "cl9lbmdhZ2VtZW50QjwKOl92aWV3X3Rocm91Z2hfY29udmVyc2lvbnNfZnJv",
+            "bV9sb2NhdGlvbl9hc3NldF9zdG9yZV92aXNpdHNCNwo1X3ZpZXdfdGhyb3Vn",
+            "aF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0X3dlYnNpdGVC7AEK",
+            "I2NvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTMuY29tbW9uQgxNZXRyaWNz",
+            "UHJvdG9QAVpFZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBp",
+            "cy9hZHMvZ29vZ2xlYWRzL3YxMy9jb21tb247Y29tbW9uogIDR0FBqgIfR29v",
+            "Z2xlLkFkcy5Hb29nbGVBZHMuVjEzLkNvbW1vbsoCH0dvb2dsZVxBZHNcR29v",
+            "Z2xlQWRzXFYxM1xDb21tb27qAiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpW",
+            "MTM6OkNvbW1vbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V13.Enums.InteractionEventTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V13.Enums.QualityScoreBucketReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V13.Common.Metrics), global::Google.Ads.GoogleAds.V13.Common.Metrics.Parser, new[]{ "AbsoluteTopImpressionPercentage", "ActiveViewCpm", "ActiveViewCtr", "ActiveViewImpressions", "ActiveViewMeasurability", "ActiveViewMeasurableCostMicros", "ActiveViewMeasurableImpressions", "ActiveViewViewability", "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversionsValueByConversionDate", "AllConversions", "AllConversionsByConversionDate", "AllConversionsValuePerCost", "AllConversionsFromClickToCall", "AllConversionsFromDirections", "AllConversionsFromInteractionsValuePerInteraction", "AllConversionsFromMenu", "AllConversionsFromOrder", "AllConversionsFromOtherEngagement", "AllConversionsFromStoreVisit", "AllConversionsFromStoreWebsite", "AuctionInsightSearchAbsoluteTopImpressionPercentage", "AuctionInsightSearchImpressionShare", "AuctionInsightSearchOutrankingShare", "AuctionInsightSearchOverlapRate", "AuctionInsightSearchPositionAboveRate", "AuctionInsightSearchTopImpressionPercentage", "AverageCost", "AverageCpc", "AverageCpe", "AverageCpm", "AverageCpv", "AveragePageViews", "AverageTimeOnSite", "BenchmarkAverageMaxCpc", "BiddableAppInstallConversions", "BiddableAppPostInstallConversions", "BenchmarkCtr", "BounceRate", "Clicks", "CombinedClicks", "CombinedClicksPerQuery", "CombinedQueries", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValueByConversionDate", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "ConversionsByConversionDate", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CostPerCurrentModelAttributedConversion", "CrossDeviceConversions", "Ctr", "CurrentModelAttributedConversions", "CurrentModelAttributedConversionsFromInteractionsRate", "CurrentModelAttributedConversionsFromInteractionsValuePerInteraction", "CurrentModelAttributedConversionsValue", "CurrentModelAttributedConversionsValuePerCost", "EngagementRate", "Engagements", "HotelAverageLeadValueMicros", "HotelCommissionRateMicros", "HotelExpectedCommissionCost", "HotelPriceDifferencePercentage", "HotelEligibleImpressions", "HistoricalCreativeQualityScore", "HistoricalLandingPageQualityScore", "HistoricalQualityScore", "HistoricalSearchPredictedCtr", "GmailForwards", "GmailSaves", "GmailSecondaryClicks", "ImpressionsFromStoreReach", "Impressions", "InteractionRate", "Interactions", "InteractionEventTypes", "InvalidClickRate", "InvalidClicks", "MessageChats", "MessageImpressions", "MessageChatRate", "MobileFriendlyClicksPercentage", "OptimizationScoreUplift", "OptimizationScoreUrl", "OrganicClicks", "OrganicClicksPerQuery", "OrganicImpressions", "OrganicImpressionsPerQuery", "OrganicQueries", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchAbsoluteTopImpressionShare", "SearchBudgetLostAbsoluteTopImpressionShare", "SearchBudgetLostImpressionShare", "SearchBudgetLostTopImpressionShare", "SearchClickShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostAbsoluteTopImpressionShare", "SearchRankLostImpressionShare", "SearchRankLostTopImpressionShare", "SearchTopImpressionShare", "SpeedScore", "TopImpressionPercentage", "ValidAcceleratedMobilePagesClicksPercentage", "ValuePerAllConversions", "ValuePerAllConversionsByConversionDate", "ValuePerConversion", "ValuePerConversionsByConversionDate", "ValuePerCurrentModelAttributedConversion", "VideoQuartileP100Rate", "VideoQuartileP25Rate", "VideoQuartileP50Rate", "VideoQuartileP75Rate", "VideoViewRate", "VideoViews", "ViewThroughConversions", "SkAdNetworkConversions", "PublisherPurchasedClicks", "PublisherOrganicClicks", "PublisherUnknownClicks", "AllConversionsFromLocationAssetClickToCall", "AllConversionsFromLocationAssetDirections", "AllConversionsFromLocationAssetMenu", "AllConversionsFromLocationAssetOrder", "AllConversionsFromLocationAssetOtherEngagement", "AllConversionsFromLocationAssetStoreVisits", "AllConversionsFromLocationAssetWebsite", "EligibleImpressionsFromLocationAssetStoreReach", "ViewThroughConversionsFromLocationAssetClickToCall", "ViewThroughConversionsFromLocationAssetDirections", "ViewThroughConversionsFromLocationAssetMenu", "ViewThroughConversionsFromLocationAssetOrder", "ViewThroughConversionsFromLocationAssetOtherEngagement", "ViewThroughConversionsFromLocationAssetStoreVisits", "ViewThroughConversionsFromLocationAssetWebsite" }, new[]{ "AbsoluteTopImpressionPercentage", "ActiveViewCpm", "ActiveViewCtr", "ActiveViewImpressions", "ActiveViewMeasurability", "ActiveViewMeasurableCostMicros", "ActiveViewMeasurableImpressions", "ActiveViewViewability", "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversions", "AllConversionsValuePerCost", "AllConversionsFromClickToCall", "AllConversionsFromDirections", "AllConversionsFromInteractionsValuePerInteraction", "AllConversionsFromMenu", "AllConversionsFromOrder", "AllConversionsFromOtherEngagement", "AllConversionsFromStoreVisit", "AllConversionsFromStoreWebsite", "AuctionInsightSearchAbsoluteTopImpressionPercentage", "AuctionInsightSearchImpressionShare", "AuctionInsightSearchOutrankingShare", "AuctionInsightSearchOverlapRate", "AuctionInsightSearchPositionAboveRate", "AuctionInsightSearchTopImpressionPercentage", "AverageCost", "AverageCpc", "AverageCpe", "AverageCpm", "AverageCpv", "AveragePageViews", "AverageTimeOnSite", "BenchmarkAverageMaxCpc", "BiddableAppInstallConversions", "BiddableAppPostInstallConversions", "BenchmarkCtr", "BounceRate", "Clicks", "CombinedClicks", "CombinedClicksPerQuery", "CombinedQueries", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CostPerCurrentModelAttributedConversion", "CrossDeviceConversions", "Ctr", "CurrentModelAttributedConversions", "CurrentModelAttributedConversionsFromInteractionsRate", "CurrentModelAttributedConversionsFromInteractionsValuePerInteraction", "CurrentModelAttributedConversionsValue", "CurrentModelAttributedConversionsValuePerCost", "EngagementRate", "Engagements", "HotelAverageLeadValueMicros", "HotelCommissionRateMicros", "HotelExpectedCommissionCost", "HotelPriceDifferencePercentage", "HotelEligibleImpressions", "HistoricalQualityScore", "GmailForwards", "GmailSaves", "GmailSecondaryClicks", "ImpressionsFromStoreReach", "Impressions", "InteractionRate", "Interactions", "InvalidClickRate", "InvalidClicks", "MessageChats", "MessageImpressions", "MessageChatRate", "MobileFriendlyClicksPercentage", "OptimizationScoreUplift", "OptimizationScoreUrl", "OrganicClicks", "OrganicClicksPerQuery", "OrganicImpressions", "OrganicImpressionsPerQuery", "OrganicQueries", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchAbsoluteTopImpressionShare", "SearchBudgetLostAbsoluteTopImpressionShare", "SearchBudgetLostImpressionShare", "SearchBudgetLostTopImpressionShare", "SearchClickShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostAbsoluteTopImpressionShare", "SearchRankLostImpressionShare", "SearchRankLostTopImpressionShare", "SearchTopImpressionShare", "SpeedScore", "TopImpressionPercentage", "ValidAcceleratedMobilePagesClicksPercentage", "ValuePerAllConversions", "ValuePerAllConversionsByConversionDate", "ValuePerConversion", "ValuePerConversionsByConversionDate", "ValuePerCurrentModelAttributedConversion", "VideoQuartileP100Rate", "VideoQuartileP25Rate", "VideoQuartileP50Rate", "VideoQuartileP75Rate", "VideoViewRate", "VideoViews", "ViewThroughConversions", "AllConversionsFromLocationAssetClickToCall", "AllConversionsFromLocationAssetDirections", "AllConversionsFromLocationAssetMenu", "AllConversionsFromLocationAssetOrder", "AllConversionsFromLocationAssetOtherEngagement", "AllConversionsFromLocationAssetStoreVisits", "AllConversionsFromLocationAssetWebsite", "EligibleImpressionsFromLocationAssetStoreReach", "ViewThroughConversionsFromLocationAssetClickToCall", "ViewThroughConversionsFromLocationAssetDirections", "ViewThroughConversionsFromLocationAssetMenu", "ViewThroughConversionsFromLocationAssetOrder", "ViewThroughConversionsFromLocationAssetOtherEngagement", "ViewThroughConversionsFromLocationAssetStoreVisits", "ViewThroughConversionsFromLocationAssetWebsite" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V13.Common.Metrics), global::Google.Ads.GoogleAds.V13.Common.Metrics.Parser, new[]{ "AbsoluteTopImpressionPercentage", "ActiveViewCpm", "ActiveViewCtr", "ActiveViewImpressions", "ActiveViewMeasurability", "ActiveViewMeasurableCostMicros", "ActiveViewMeasurableImpressions", "ActiveViewViewability", "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversionsValueByConversionDate", "AllConversions", "AllConversionsByConversionDate", "AllConversionsValuePerCost", "AllConversionsFromClickToCall", "AllConversionsFromDirections", "AllConversionsFromInteractionsValuePerInteraction", "AllConversionsFromMenu", "AllConversionsFromOrder", "AllConversionsFromOtherEngagement", "AllConversionsFromStoreVisit", "AllConversionsFromStoreWebsite", "AuctionInsightSearchAbsoluteTopImpressionPercentage", "AuctionInsightSearchImpressionShare", "AuctionInsightSearchOutrankingShare", "AuctionInsightSearchOverlapRate", "AuctionInsightSearchPositionAboveRate", "AuctionInsightSearchTopImpressionPercentage", "AverageCost", "AverageCpc", "AverageCpe", "AverageCpm", "AverageCpv", "AveragePageViews", "AverageTimeOnSite", "BenchmarkAverageMaxCpc", "BiddableAppInstallConversions", "BiddableAppPostInstallConversions", "BenchmarkCtr", "BounceRate", "Clicks", "CombinedClicks", "CombinedClicksPerQuery", "CombinedQueries", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValueByConversionDate", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "ConversionsByConversionDate", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CostPerCurrentModelAttributedConversion", "CrossDeviceConversions", "Ctr", "CurrentModelAttributedConversions", "CurrentModelAttributedConversionsFromInteractionsRate", "CurrentModelAttributedConversionsFromInteractionsValuePerInteraction", "CurrentModelAttributedConversionsValue", "CurrentModelAttributedConversionsValuePerCost", "EngagementRate", "Engagements", "HotelAverageLeadValueMicros", "HotelCommissionRateMicros", "HotelExpectedCommissionCost", "HotelPriceDifferencePercentage", "HotelEligibleImpressions", "HistoricalCreativeQualityScore", "HistoricalLandingPageQualityScore", "HistoricalQualityScore", "HistoricalSearchPredictedCtr", "GmailForwards", "GmailSaves", "GmailSecondaryClicks", "ImpressionsFromStoreReach", "Impressions", "InteractionRate", "Interactions", "InteractionEventTypes", "InvalidClickRate", "InvalidClicks", "MessageChats", "MessageImpressions", "MessageChatRate", "MobileFriendlyClicksPercentage", "OptimizationScoreUplift", "OptimizationScoreUrl", "OrganicClicks", "OrganicClicksPerQuery", "OrganicImpressions", "OrganicImpressionsPerQuery", "OrganicQueries", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchAbsoluteTopImpressionShare", "SearchBudgetLostAbsoluteTopImpressionShare", "SearchBudgetLostImpressionShare", "SearchBudgetLostTopImpressionShare", "SearchClickShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostAbsoluteTopImpressionShare", "SearchRankLostImpressionShare", "SearchRankLostTopImpressionShare", "SearchTopImpressionShare", "SpeedScore", "AverageTargetCpaMicros", "AverageTargetRoas", "TopImpressionPercentage", "ValidAcceleratedMobilePagesClicksPercentage", "ValuePerAllConversions", "ValuePerAllConversionsByConversionDate", "ValuePerConversion", "ValuePerConversionsByConversionDate", "ValuePerCurrentModelAttributedConversion", "VideoQuartileP100Rate", "VideoQuartileP25Rate", "VideoQuartileP50Rate", "VideoQuartileP75Rate", "VideoViewRate", "VideoViews", "ViewThroughConversions", "SkAdNetworkConversions", "PublisherPurchasedClicks", "PublisherOrganicClicks", "PublisherUnknownClicks", "AllConversionsFromLocationAssetClickToCall", "AllConversionsFromLocationAssetDirections", "AllConversionsFromLocationAssetMenu", "AllConversionsFromLocationAssetOrder", "AllConversionsFromLocationAssetOtherEngagement", "AllConversionsFromLocationAssetStoreVisits", "AllConversionsFromLocationAssetWebsite", "EligibleImpressionsFromLocationAssetStoreReach", "ViewThroughConversionsFromLocationAssetClickToCall", "ViewThroughConversionsFromLocationAssetDirections", "ViewThroughConversionsFromLocationAssetMenu", "ViewThroughConversionsFromLocationAssetOrder", "ViewThroughConversionsFromLocationAssetOtherEngagement", "ViewThroughConversionsFromLocationAssetStoreVisits", "ViewThroughConversionsFromLocationAssetWebsite" }, new[]{ "AbsoluteTopImpressionPercentage", "ActiveViewCpm", "ActiveViewCtr", "ActiveViewImpressions", "ActiveViewMeasurability", "ActiveViewMeasurableCostMicros", "ActiveViewMeasurableImpressions", "ActiveViewViewability", "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversions", "AllConversionsValuePerCost", "AllConversionsFromClickToCall", "AllConversionsFromDirections", "AllConversionsFromInteractionsValuePerInteraction", "AllConversionsFromMenu", "AllConversionsFromOrder", "AllConversionsFromOtherEngagement", "AllConversionsFromStoreVisit", "AllConversionsFromStoreWebsite", "AuctionInsightSearchAbsoluteTopImpressionPercentage", "AuctionInsightSearchImpressionShare", "AuctionInsightSearchOutrankingShare", "AuctionInsightSearchOverlapRate", "AuctionInsightSearchPositionAboveRate", "AuctionInsightSearchTopImpressionPercentage", "AverageCost", "AverageCpc", "AverageCpe", "AverageCpm", "AverageCpv", "AveragePageViews", "AverageTimeOnSite", "BenchmarkAverageMaxCpc", "BiddableAppInstallConversions", "BiddableAppPostInstallConversions", "BenchmarkCtr", "BounceRate", "Clicks", "CombinedClicks", "CombinedClicksPerQuery", "CombinedQueries", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CostPerCurrentModelAttributedConversion", "CrossDeviceConversions", "Ctr", "CurrentModelAttributedConversions", "CurrentModelAttributedConversionsFromInteractionsRate", "CurrentModelAttributedConversionsFromInteractionsValuePerInteraction", "CurrentModelAttributedConversionsValue", "CurrentModelAttributedConversionsValuePerCost", "EngagementRate", "Engagements", "HotelAverageLeadValueMicros", "HotelCommissionRateMicros", "HotelExpectedCommissionCost", "HotelPriceDifferencePercentage", "HotelEligibleImpressions", "HistoricalQualityScore", "GmailForwards", "GmailSaves", "GmailSecondaryClicks", "ImpressionsFromStoreReach", "Impressions", "InteractionRate", "Interactions", "InvalidClickRate", "InvalidClicks", "MessageChats", "MessageImpressions", "MessageChatRate", "MobileFriendlyClicksPercentage", "OptimizationScoreUplift", "OptimizationScoreUrl", "OrganicClicks", "OrganicClicksPerQuery", "OrganicImpressions", "OrganicImpressionsPerQuery", "OrganicQueries", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchAbsoluteTopImpressionShare", "SearchBudgetLostAbsoluteTopImpressionShare", "SearchBudgetLostImpressionShare", "SearchBudgetLostTopImpressionShare", "SearchClickShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostAbsoluteTopImpressionShare", "SearchRankLostImpressionShare", "SearchRankLostTopImpressionShare", "SearchTopImpressionShare", "SpeedScore", "AverageTargetCpaMicros", "AverageTargetRoas", "TopImpressionPercentage", "ValidAcceleratedMobilePagesClicksPercentage", "ValuePerAllConversions", "ValuePerAllConversionsByConversionDate", "ValuePerConversion", "ValuePerConversionsByConversionDate", "ValuePerCurrentModelAttributedConversion", "VideoQuartileP100Rate", "VideoQuartileP25Rate", "VideoQuartileP50Rate", "VideoQuartileP75Rate", "VideoViewRate", "VideoViews", "ViewThroughConversions", "AllConversionsFromLocationAssetClickToCall", "AllConversionsFromLocationAssetDirections", "AllConversionsFromLocationAssetMenu", "AllConversionsFromLocationAssetOrder", "AllConversionsFromLocationAssetOtherEngagement", "AllConversionsFromLocationAssetStoreVisits", "AllConversionsFromLocationAssetWebsite", "EligibleImpressionsFromLocationAssetStoreReach", "ViewThroughConversionsFromLocationAssetClickToCall", "ViewThroughConversionsFromLocationAssetDirections", "ViewThroughConversionsFromLocationAssetMenu", "ViewThroughConversionsFromLocationAssetOrder", "ViewThroughConversionsFromLocationAssetOtherEngagement", "ViewThroughConversionsFromLocationAssetStoreVisits", "ViewThroughConversionsFromLocationAssetWebsite" }, null, null, null)
           }));
     }
     #endregion
@@ -467,6 +470,8 @@ namespace Google.Ads.GoogleAds.V13.Common {
       searchRankLostTopImpressionShare_ = other.searchRankLostTopImpressionShare_;
       searchTopImpressionShare_ = other.searchTopImpressionShare_;
       speedScore_ = other.speedScore_;
+      averageTargetCpaMicros_ = other.averageTargetCpaMicros_;
+      averageTargetRoas_ = other.averageTargetRoas_;
       topImpressionPercentage_ = other.topImpressionPercentage_;
       validAcceleratedMobilePagesClicksPercentage_ = other.validAcceleratedMobilePagesClicksPercentage_;
       valuePerAllConversions_ = other.valuePerAllConversions_;
@@ -1153,9 +1158,9 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double AuctionInsightSearchAbsoluteTopImpressionPercentage {
-      get { if ((_hasBits3 & 131072) != 0) { return auctionInsightSearchAbsoluteTopImpressionPercentage_; } else { return 0D; } }
+      get { if ((_hasBits3 & 262144) != 0) { return auctionInsightSearchAbsoluteTopImpressionPercentage_; } else { return 0D; } }
       set {
-        _hasBits3 |= 131072;
+        _hasBits3 |= 262144;
         auctionInsightSearchAbsoluteTopImpressionPercentage_ = value;
       }
     }
@@ -1163,13 +1168,13 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasAuctionInsightSearchAbsoluteTopImpressionPercentage {
-      get { return (_hasBits3 & 131072) != 0; }
+      get { return (_hasBits3 & 262144) != 0; }
     }
     /// <summary>Clears the value of the "auction_insight_search_absolute_top_impression_percentage" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearAuctionInsightSearchAbsoluteTopImpressionPercentage() {
-      _hasBits3 &= ~131072;
+      _hasBits3 &= ~262144;
     }
 
     /// <summary>Field number for the "auction_insight_search_impression_share" field.</summary>
@@ -1186,9 +1191,9 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double AuctionInsightSearchImpressionShare {
-      get { if ((_hasBits3 & 262144) != 0) { return auctionInsightSearchImpressionShare_; } else { return 0D; } }
+      get { if ((_hasBits3 & 524288) != 0) { return auctionInsightSearchImpressionShare_; } else { return 0D; } }
       set {
-        _hasBits3 |= 262144;
+        _hasBits3 |= 524288;
         auctionInsightSearchImpressionShare_ = value;
       }
     }
@@ -1196,13 +1201,13 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasAuctionInsightSearchImpressionShare {
-      get { return (_hasBits3 & 262144) != 0; }
+      get { return (_hasBits3 & 524288) != 0; }
     }
     /// <summary>Clears the value of the "auction_insight_search_impression_share" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearAuctionInsightSearchImpressionShare() {
-      _hasBits3 &= ~262144;
+      _hasBits3 &= ~524288;
     }
 
     /// <summary>Field number for the "auction_insight_search_outranking_share" field.</summary>
@@ -1220,9 +1225,9 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double AuctionInsightSearchOutrankingShare {
-      get { if ((_hasBits3 & 524288) != 0) { return auctionInsightSearchOutrankingShare_; } else { return 0D; } }
+      get { if ((_hasBits3 & 1048576) != 0) { return auctionInsightSearchOutrankingShare_; } else { return 0D; } }
       set {
-        _hasBits3 |= 524288;
+        _hasBits3 |= 1048576;
         auctionInsightSearchOutrankingShare_ = value;
       }
     }
@@ -1230,13 +1235,13 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasAuctionInsightSearchOutrankingShare {
-      get { return (_hasBits3 & 524288) != 0; }
+      get { return (_hasBits3 & 1048576) != 0; }
     }
     /// <summary>Clears the value of the "auction_insight_search_outranking_share" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearAuctionInsightSearchOutrankingShare() {
-      _hasBits3 &= ~524288;
+      _hasBits3 &= ~1048576;
     }
 
     /// <summary>Field number for the "auction_insight_search_overlap_rate" field.</summary>
@@ -1252,9 +1257,9 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double AuctionInsightSearchOverlapRate {
-      get { if ((_hasBits3 & 1048576) != 0) { return auctionInsightSearchOverlapRate_; } else { return 0D; } }
+      get { if ((_hasBits3 & 2097152) != 0) { return auctionInsightSearchOverlapRate_; } else { return 0D; } }
       set {
-        _hasBits3 |= 1048576;
+        _hasBits3 |= 2097152;
         auctionInsightSearchOverlapRate_ = value;
       }
     }
@@ -1262,13 +1267,13 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasAuctionInsightSearchOverlapRate {
-      get { return (_hasBits3 & 1048576) != 0; }
+      get { return (_hasBits3 & 2097152) != 0; }
     }
     /// <summary>Clears the value of the "auction_insight_search_overlap_rate" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearAuctionInsightSearchOverlapRate() {
-      _hasBits3 &= ~1048576;
+      _hasBits3 &= ~2097152;
     }
 
     /// <summary>Field number for the "auction_insight_search_position_above_rate" field.</summary>
@@ -1284,9 +1289,9 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double AuctionInsightSearchPositionAboveRate {
-      get { if ((_hasBits3 & 2097152) != 0) { return auctionInsightSearchPositionAboveRate_; } else { return 0D; } }
+      get { if ((_hasBits3 & 4194304) != 0) { return auctionInsightSearchPositionAboveRate_; } else { return 0D; } }
       set {
-        _hasBits3 |= 2097152;
+        _hasBits3 |= 4194304;
         auctionInsightSearchPositionAboveRate_ = value;
       }
     }
@@ -1294,13 +1299,13 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasAuctionInsightSearchPositionAboveRate {
-      get { return (_hasBits3 & 2097152) != 0; }
+      get { return (_hasBits3 & 4194304) != 0; }
     }
     /// <summary>Clears the value of the "auction_insight_search_position_above_rate" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearAuctionInsightSearchPositionAboveRate() {
-      _hasBits3 &= ~2097152;
+      _hasBits3 &= ~4194304;
     }
 
     /// <summary>Field number for the "auction_insight_search_top_impression_percentage" field.</summary>
@@ -1317,9 +1322,9 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double AuctionInsightSearchTopImpressionPercentage {
-      get { if ((_hasBits3 & 4194304) != 0) { return auctionInsightSearchTopImpressionPercentage_; } else { return 0D; } }
+      get { if ((_hasBits3 & 8388608) != 0) { return auctionInsightSearchTopImpressionPercentage_; } else { return 0D; } }
       set {
-        _hasBits3 |= 4194304;
+        _hasBits3 |= 8388608;
         auctionInsightSearchTopImpressionPercentage_ = value;
       }
     }
@@ -1327,13 +1332,13 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasAuctionInsightSearchTopImpressionPercentage {
-      get { return (_hasBits3 & 4194304) != 0; }
+      get { return (_hasBits3 & 8388608) != 0; }
     }
     /// <summary>Clears the value of the "auction_insight_search_top_impression_percentage" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearAuctionInsightSearchTopImpressionPercentage() {
-      _hasBits3 &= ~4194304;
+      _hasBits3 &= ~8388608;
     }
 
     /// <summary>Field number for the "average_cost" field.</summary>
@@ -1576,9 +1581,9 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double BiddableAppInstallConversions {
-      get { if ((_hasBits3 & 8192) != 0) { return biddableAppInstallConversions_; } else { return 0D; } }
+      get { if ((_hasBits3 & 16384) != 0) { return biddableAppInstallConversions_; } else { return 0D; } }
       set {
-        _hasBits3 |= 8192;
+        _hasBits3 |= 16384;
         biddableAppInstallConversions_ = value;
       }
     }
@@ -1586,13 +1591,13 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasBiddableAppInstallConversions {
-      get { return (_hasBits3 & 8192) != 0; }
+      get { return (_hasBits3 & 16384) != 0; }
     }
     /// <summary>Clears the value of the "biddable_app_install_conversions" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearBiddableAppInstallConversions() {
-      _hasBits3 &= ~8192;
+      _hasBits3 &= ~16384;
     }
 
     /// <summary>Field number for the "biddable_app_post_install_conversions" field.</summary>
@@ -1604,9 +1609,9 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double BiddableAppPostInstallConversions {
-      get { if ((_hasBits3 & 16384) != 0) { return biddableAppPostInstallConversions_; } else { return 0D; } }
+      get { if ((_hasBits3 & 32768) != 0) { return biddableAppPostInstallConversions_; } else { return 0D; } }
       set {
-        _hasBits3 |= 16384;
+        _hasBits3 |= 32768;
         biddableAppPostInstallConversions_ = value;
       }
     }
@@ -1614,13 +1619,13 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasBiddableAppPostInstallConversions {
-      get { return (_hasBits3 & 16384) != 0; }
+      get { return (_hasBits3 & 32768) != 0; }
     }
     /// <summary>Clears the value of the "biddable_app_post_install_conversions" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearBiddableAppPostInstallConversions() {
-      _hasBits3 &= ~16384;
+      _hasBits3 &= ~32768;
     }
 
     /// <summary>Field number for the "benchmark_ctr" field.</summary>
@@ -2587,9 +2592,9 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long HotelCommissionRateMicros {
-      get { if ((_hasBits3 & 32768) != 0) { return hotelCommissionRateMicros_; } else { return 0L; } }
+      get { if ((_hasBits3 & 65536) != 0) { return hotelCommissionRateMicros_; } else { return 0L; } }
       set {
-        _hasBits3 |= 32768;
+        _hasBits3 |= 65536;
         hotelCommissionRateMicros_ = value;
       }
     }
@@ -2597,13 +2602,13 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasHotelCommissionRateMicros {
-      get { return (_hasBits3 & 32768) != 0; }
+      get { return (_hasBits3 & 65536) != 0; }
     }
     /// <summary>Clears the value of the "hotel_commission_rate_micros" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearHotelCommissionRateMicros() {
-      _hasBits3 &= ~32768;
+      _hasBits3 &= ~65536;
     }
 
     /// <summary>Field number for the "hotel_expected_commission_cost" field.</summary>
@@ -2616,9 +2621,9 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double HotelExpectedCommissionCost {
-      get { if ((_hasBits3 & 65536) != 0) { return hotelExpectedCommissionCost_; } else { return 0D; } }
+      get { if ((_hasBits3 & 131072) != 0) { return hotelExpectedCommissionCost_; } else { return 0D; } }
       set {
-        _hasBits3 |= 65536;
+        _hasBits3 |= 131072;
         hotelExpectedCommissionCost_ = value;
       }
     }
@@ -2626,13 +2631,13 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasHotelExpectedCommissionCost {
-      get { return (_hasBits3 & 65536) != 0; }
+      get { return (_hasBits3 & 131072) != 0; }
     }
     /// <summary>Clears the value of the "hotel_expected_commission_cost" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearHotelExpectedCommissionCost() {
-      _hasBits3 &= ~65536;
+      _hasBits3 &= ~131072;
     }
 
     /// <summary>Field number for the "hotel_price_difference_percentage" field.</summary>
@@ -3888,6 +3893,64 @@ namespace Google.Ads.GoogleAds.V13.Common {
       _hasBits0 &= ~65536;
     }
 
+    /// <summary>Field number for the "average_target_cpa_micros" field.</summary>
+    public const int AverageTargetCpaMicrosFieldNumber = 290;
+    private long averageTargetCpaMicros_;
+    /// <summary>
+    /// The average Target CPA, or unset if not available (for example, for
+    /// campaigns that had traffic from portfolio bidding strategies or non-tCPA).
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long AverageTargetCpaMicros {
+      get { if ((_hasBits4 & 128) != 0) { return averageTargetCpaMicros_; } else { return 0L; } }
+      set {
+        _hasBits4 |= 128;
+        averageTargetCpaMicros_ = value;
+      }
+    }
+    /// <summary>Gets whether the "average_target_cpa_micros" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAverageTargetCpaMicros {
+      get { return (_hasBits4 & 128) != 0; }
+    }
+    /// <summary>Clears the value of the "average_target_cpa_micros" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAverageTargetCpaMicros() {
+      _hasBits4 &= ~128;
+    }
+
+    /// <summary>Field number for the "average_target_roas" field.</summary>
+    public const int AverageTargetRoasFieldNumber = 250;
+    private double averageTargetRoas_;
+    /// <summary>
+    /// The average Target ROAS, or unset if not available (for example, for
+    /// campaigns that had traffic from portfolio bidding strategies or non-tROAS).
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double AverageTargetRoas {
+      get { if ((_hasBits3 & 8192) != 0) { return averageTargetRoas_; } else { return 0D; } }
+      set {
+        _hasBits3 |= 8192;
+        averageTargetRoas_ = value;
+      }
+    }
+    /// <summary>Gets whether the "average_target_roas" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAverageTargetRoas {
+      get { return (_hasBits3 & 8192) != 0; }
+    }
+    /// <summary>Clears the value of the "average_target_roas" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAverageTargetRoas() {
+      _hasBits3 &= ~8192;
+    }
+
     /// <summary>Field number for the "top_impression_percentage" field.</summary>
     public const int TopImpressionPercentageFieldNumber = 148;
     private double topImpressionPercentage_;
@@ -4377,9 +4440,9 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double AllConversionsFromLocationAssetClickToCall {
-      get { if ((_hasBits3 & 8388608) != 0) { return allConversionsFromLocationAssetClickToCall_; } else { return 0D; } }
+      get { if ((_hasBits3 & 16777216) != 0) { return allConversionsFromLocationAssetClickToCall_; } else { return 0D; } }
       set {
-        _hasBits3 |= 8388608;
+        _hasBits3 |= 16777216;
         allConversionsFromLocationAssetClickToCall_ = value;
       }
     }
@@ -4387,13 +4450,13 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasAllConversionsFromLocationAssetClickToCall {
-      get { return (_hasBits3 & 8388608) != 0; }
+      get { return (_hasBits3 & 16777216) != 0; }
     }
     /// <summary>Clears the value of the "all_conversions_from_location_asset_click_to_call" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearAllConversionsFromLocationAssetClickToCall() {
-      _hasBits3 &= ~8388608;
+      _hasBits3 &= ~16777216;
     }
 
     /// <summary>Field number for the "all_conversions_from_location_asset_directions" field.</summary>
@@ -4407,9 +4470,9 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double AllConversionsFromLocationAssetDirections {
-      get { if ((_hasBits3 & 16777216) != 0) { return allConversionsFromLocationAssetDirections_; } else { return 0D; } }
+      get { if ((_hasBits3 & 33554432) != 0) { return allConversionsFromLocationAssetDirections_; } else { return 0D; } }
       set {
-        _hasBits3 |= 16777216;
+        _hasBits3 |= 33554432;
         allConversionsFromLocationAssetDirections_ = value;
       }
     }
@@ -4417,13 +4480,13 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasAllConversionsFromLocationAssetDirections {
-      get { return (_hasBits3 & 16777216) != 0; }
+      get { return (_hasBits3 & 33554432) != 0; }
     }
     /// <summary>Clears the value of the "all_conversions_from_location_asset_directions" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearAllConversionsFromLocationAssetDirections() {
-      _hasBits3 &= ~16777216;
+      _hasBits3 &= ~33554432;
     }
 
     /// <summary>Field number for the "all_conversions_from_location_asset_menu" field.</summary>
@@ -4437,9 +4500,9 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double AllConversionsFromLocationAssetMenu {
-      get { if ((_hasBits3 & 33554432) != 0) { return allConversionsFromLocationAssetMenu_; } else { return 0D; } }
+      get { if ((_hasBits3 & 67108864) != 0) { return allConversionsFromLocationAssetMenu_; } else { return 0D; } }
       set {
-        _hasBits3 |= 33554432;
+        _hasBits3 |= 67108864;
         allConversionsFromLocationAssetMenu_ = value;
       }
     }
@@ -4447,13 +4510,13 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasAllConversionsFromLocationAssetMenu {
-      get { return (_hasBits3 & 33554432) != 0; }
+      get { return (_hasBits3 & 67108864) != 0; }
     }
     /// <summary>Clears the value of the "all_conversions_from_location_asset_menu" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearAllConversionsFromLocationAssetMenu() {
-      _hasBits3 &= ~33554432;
+      _hasBits3 &= ~67108864;
     }
 
     /// <summary>Field number for the "all_conversions_from_location_asset_order" field.</summary>
@@ -4467,9 +4530,9 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double AllConversionsFromLocationAssetOrder {
-      get { if ((_hasBits3 & 67108864) != 0) { return allConversionsFromLocationAssetOrder_; } else { return 0D; } }
+      get { if ((_hasBits3 & 134217728) != 0) { return allConversionsFromLocationAssetOrder_; } else { return 0D; } }
       set {
-        _hasBits3 |= 67108864;
+        _hasBits3 |= 134217728;
         allConversionsFromLocationAssetOrder_ = value;
       }
     }
@@ -4477,13 +4540,13 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasAllConversionsFromLocationAssetOrder {
-      get { return (_hasBits3 & 67108864) != 0; }
+      get { return (_hasBits3 & 134217728) != 0; }
     }
     /// <summary>Clears the value of the "all_conversions_from_location_asset_order" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearAllConversionsFromLocationAssetOrder() {
-      _hasBits3 &= ~67108864;
+      _hasBits3 &= ~134217728;
     }
 
     /// <summary>Field number for the "all_conversions_from_location_asset_other_engagement" field.</summary>
@@ -4497,9 +4560,9 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double AllConversionsFromLocationAssetOtherEngagement {
-      get { if ((_hasBits3 & 134217728) != 0) { return allConversionsFromLocationAssetOtherEngagement_; } else { return 0D; } }
+      get { if ((_hasBits3 & 268435456) != 0) { return allConversionsFromLocationAssetOtherEngagement_; } else { return 0D; } }
       set {
-        _hasBits3 |= 134217728;
+        _hasBits3 |= 268435456;
         allConversionsFromLocationAssetOtherEngagement_ = value;
       }
     }
@@ -4507,13 +4570,13 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasAllConversionsFromLocationAssetOtherEngagement {
-      get { return (_hasBits3 & 134217728) != 0; }
+      get { return (_hasBits3 & 268435456) != 0; }
     }
     /// <summary>Clears the value of the "all_conversions_from_location_asset_other_engagement" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearAllConversionsFromLocationAssetOtherEngagement() {
-      _hasBits3 &= ~134217728;
+      _hasBits3 &= ~268435456;
     }
 
     /// <summary>Field number for the "all_conversions_from_location_asset_store_visits" field.</summary>
@@ -4527,9 +4590,9 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double AllConversionsFromLocationAssetStoreVisits {
-      get { if ((_hasBits3 & 268435456) != 0) { return allConversionsFromLocationAssetStoreVisits_; } else { return 0D; } }
+      get { if ((_hasBits3 & 536870912) != 0) { return allConversionsFromLocationAssetStoreVisits_; } else { return 0D; } }
       set {
-        _hasBits3 |= 268435456;
+        _hasBits3 |= 536870912;
         allConversionsFromLocationAssetStoreVisits_ = value;
       }
     }
@@ -4537,13 +4600,13 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasAllConversionsFromLocationAssetStoreVisits {
-      get { return (_hasBits3 & 268435456) != 0; }
+      get { return (_hasBits3 & 536870912) != 0; }
     }
     /// <summary>Clears the value of the "all_conversions_from_location_asset_store_visits" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearAllConversionsFromLocationAssetStoreVisits() {
-      _hasBits3 &= ~268435456;
+      _hasBits3 &= ~536870912;
     }
 
     /// <summary>Field number for the "all_conversions_from_location_asset_website" field.</summary>
@@ -4557,9 +4620,9 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double AllConversionsFromLocationAssetWebsite {
-      get { if ((_hasBits3 & 536870912) != 0) { return allConversionsFromLocationAssetWebsite_; } else { return 0D; } }
+      get { if ((_hasBits3 & 1073741824) != 0) { return allConversionsFromLocationAssetWebsite_; } else { return 0D; } }
       set {
-        _hasBits3 |= 536870912;
+        _hasBits3 |= 1073741824;
         allConversionsFromLocationAssetWebsite_ = value;
       }
     }
@@ -4567,13 +4630,13 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasAllConversionsFromLocationAssetWebsite {
-      get { return (_hasBits3 & 536870912) != 0; }
+      get { return (_hasBits3 & 1073741824) != 0; }
     }
     /// <summary>Clears the value of the "all_conversions_from_location_asset_website" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearAllConversionsFromLocationAssetWebsite() {
-      _hasBits3 &= ~536870912;
+      _hasBits3 &= ~1073741824;
     }
 
     /// <summary>Field number for the "eligible_impressions_from_location_asset_store_reach" field.</summary>
@@ -4587,9 +4650,9 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long EligibleImpressionsFromLocationAssetStoreReach {
-      get { if ((_hasBits3 & 1073741824) != 0) { return eligibleImpressionsFromLocationAssetStoreReach_; } else { return 0L; } }
+      get { if ((_hasBits3 & -2147483648) != 0) { return eligibleImpressionsFromLocationAssetStoreReach_; } else { return 0L; } }
       set {
-        _hasBits3 |= 1073741824;
+        _hasBits3 |= -2147483648;
         eligibleImpressionsFromLocationAssetStoreReach_ = value;
       }
     }
@@ -4597,13 +4660,13 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasEligibleImpressionsFromLocationAssetStoreReach {
-      get { return (_hasBits3 & 1073741824) != 0; }
+      get { return (_hasBits3 & -2147483648) != 0; }
     }
     /// <summary>Clears the value of the "eligible_impressions_from_location_asset_store_reach" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearEligibleImpressionsFromLocationAssetStoreReach() {
-      _hasBits3 &= ~1073741824;
+      _hasBits3 &= ~-2147483648;
     }
 
     /// <summary>Field number for the "view_through_conversions_from_location_asset_click_to_call" field.</summary>
@@ -4616,9 +4679,9 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double ViewThroughConversionsFromLocationAssetClickToCall {
-      get { if ((_hasBits3 & -2147483648) != 0) { return viewThroughConversionsFromLocationAssetClickToCall_; } else { return 0D; } }
+      get { if ((_hasBits4 & 1) != 0) { return viewThroughConversionsFromLocationAssetClickToCall_; } else { return 0D; } }
       set {
-        _hasBits3 |= -2147483648;
+        _hasBits4 |= 1;
         viewThroughConversionsFromLocationAssetClickToCall_ = value;
       }
     }
@@ -4626,13 +4689,13 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasViewThroughConversionsFromLocationAssetClickToCall {
-      get { return (_hasBits3 & -2147483648) != 0; }
+      get { return (_hasBits4 & 1) != 0; }
     }
     /// <summary>Clears the value of the "view_through_conversions_from_location_asset_click_to_call" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearViewThroughConversionsFromLocationAssetClickToCall() {
-      _hasBits3 &= ~-2147483648;
+      _hasBits4 &= ~1;
     }
 
     /// <summary>Field number for the "view_through_conversions_from_location_asset_directions" field.</summary>
@@ -4645,9 +4708,9 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double ViewThroughConversionsFromLocationAssetDirections {
-      get { if ((_hasBits4 & 1) != 0) { return viewThroughConversionsFromLocationAssetDirections_; } else { return 0D; } }
+      get { if ((_hasBits4 & 2) != 0) { return viewThroughConversionsFromLocationAssetDirections_; } else { return 0D; } }
       set {
-        _hasBits4 |= 1;
+        _hasBits4 |= 2;
         viewThroughConversionsFromLocationAssetDirections_ = value;
       }
     }
@@ -4655,13 +4718,13 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasViewThroughConversionsFromLocationAssetDirections {
-      get { return (_hasBits4 & 1) != 0; }
+      get { return (_hasBits4 & 2) != 0; }
     }
     /// <summary>Clears the value of the "view_through_conversions_from_location_asset_directions" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearViewThroughConversionsFromLocationAssetDirections() {
-      _hasBits4 &= ~1;
+      _hasBits4 &= ~2;
     }
 
     /// <summary>Field number for the "view_through_conversions_from_location_asset_menu" field.</summary>
@@ -4674,9 +4737,9 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double ViewThroughConversionsFromLocationAssetMenu {
-      get { if ((_hasBits4 & 2) != 0) { return viewThroughConversionsFromLocationAssetMenu_; } else { return 0D; } }
+      get { if ((_hasBits4 & 4) != 0) { return viewThroughConversionsFromLocationAssetMenu_; } else { return 0D; } }
       set {
-        _hasBits4 |= 2;
+        _hasBits4 |= 4;
         viewThroughConversionsFromLocationAssetMenu_ = value;
       }
     }
@@ -4684,13 +4747,13 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasViewThroughConversionsFromLocationAssetMenu {
-      get { return (_hasBits4 & 2) != 0; }
+      get { return (_hasBits4 & 4) != 0; }
     }
     /// <summary>Clears the value of the "view_through_conversions_from_location_asset_menu" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearViewThroughConversionsFromLocationAssetMenu() {
-      _hasBits4 &= ~2;
+      _hasBits4 &= ~4;
     }
 
     /// <summary>Field number for the "view_through_conversions_from_location_asset_order" field.</summary>
@@ -4703,9 +4766,9 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double ViewThroughConversionsFromLocationAssetOrder {
-      get { if ((_hasBits4 & 4) != 0) { return viewThroughConversionsFromLocationAssetOrder_; } else { return 0D; } }
+      get { if ((_hasBits4 & 8) != 0) { return viewThroughConversionsFromLocationAssetOrder_; } else { return 0D; } }
       set {
-        _hasBits4 |= 4;
+        _hasBits4 |= 8;
         viewThroughConversionsFromLocationAssetOrder_ = value;
       }
     }
@@ -4713,13 +4776,13 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasViewThroughConversionsFromLocationAssetOrder {
-      get { return (_hasBits4 & 4) != 0; }
+      get { return (_hasBits4 & 8) != 0; }
     }
     /// <summary>Clears the value of the "view_through_conversions_from_location_asset_order" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearViewThroughConversionsFromLocationAssetOrder() {
-      _hasBits4 &= ~4;
+      _hasBits4 &= ~8;
     }
 
     /// <summary>Field number for the "view_through_conversions_from_location_asset_other_engagement" field.</summary>
@@ -4732,9 +4795,9 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double ViewThroughConversionsFromLocationAssetOtherEngagement {
-      get { if ((_hasBits4 & 8) != 0) { return viewThroughConversionsFromLocationAssetOtherEngagement_; } else { return 0D; } }
+      get { if ((_hasBits4 & 16) != 0) { return viewThroughConversionsFromLocationAssetOtherEngagement_; } else { return 0D; } }
       set {
-        _hasBits4 |= 8;
+        _hasBits4 |= 16;
         viewThroughConversionsFromLocationAssetOtherEngagement_ = value;
       }
     }
@@ -4742,13 +4805,13 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasViewThroughConversionsFromLocationAssetOtherEngagement {
-      get { return (_hasBits4 & 8) != 0; }
+      get { return (_hasBits4 & 16) != 0; }
     }
     /// <summary>Clears the value of the "view_through_conversions_from_location_asset_other_engagement" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearViewThroughConversionsFromLocationAssetOtherEngagement() {
-      _hasBits4 &= ~8;
+      _hasBits4 &= ~16;
     }
 
     /// <summary>Field number for the "view_through_conversions_from_location_asset_store_visits" field.</summary>
@@ -4761,9 +4824,9 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double ViewThroughConversionsFromLocationAssetStoreVisits {
-      get { if ((_hasBits4 & 16) != 0) { return viewThroughConversionsFromLocationAssetStoreVisits_; } else { return 0D; } }
+      get { if ((_hasBits4 & 32) != 0) { return viewThroughConversionsFromLocationAssetStoreVisits_; } else { return 0D; } }
       set {
-        _hasBits4 |= 16;
+        _hasBits4 |= 32;
         viewThroughConversionsFromLocationAssetStoreVisits_ = value;
       }
     }
@@ -4771,13 +4834,13 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasViewThroughConversionsFromLocationAssetStoreVisits {
-      get { return (_hasBits4 & 16) != 0; }
+      get { return (_hasBits4 & 32) != 0; }
     }
     /// <summary>Clears the value of the "view_through_conversions_from_location_asset_store_visits" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearViewThroughConversionsFromLocationAssetStoreVisits() {
-      _hasBits4 &= ~16;
+      _hasBits4 &= ~32;
     }
 
     /// <summary>Field number for the "view_through_conversions_from_location_asset_website" field.</summary>
@@ -4790,9 +4853,9 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double ViewThroughConversionsFromLocationAssetWebsite {
-      get { if ((_hasBits4 & 32) != 0) { return viewThroughConversionsFromLocationAssetWebsite_; } else { return 0D; } }
+      get { if ((_hasBits4 & 64) != 0) { return viewThroughConversionsFromLocationAssetWebsite_; } else { return 0D; } }
       set {
-        _hasBits4 |= 32;
+        _hasBits4 |= 64;
         viewThroughConversionsFromLocationAssetWebsite_ = value;
       }
     }
@@ -4800,13 +4863,13 @@ namespace Google.Ads.GoogleAds.V13.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasViewThroughConversionsFromLocationAssetWebsite {
-      get { return (_hasBits4 & 32) != 0; }
+      get { return (_hasBits4 & 64) != 0; }
     }
     /// <summary>Clears the value of the "view_through_conversions_from_location_asset_website" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearViewThroughConversionsFromLocationAssetWebsite() {
-      _hasBits4 &= ~32;
+      _hasBits4 &= ~64;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4940,6 +5003,8 @@ namespace Google.Ads.GoogleAds.V13.Common {
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(SearchRankLostTopImpressionShare, other.SearchRankLostTopImpressionShare)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(SearchTopImpressionShare, other.SearchTopImpressionShare)) return false;
       if (SpeedScore != other.SpeedScore) return false;
+      if (AverageTargetCpaMicros != other.AverageTargetCpaMicros) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(AverageTargetRoas, other.AverageTargetRoas)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(TopImpressionPercentage, other.TopImpressionPercentage)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ValidAcceleratedMobilePagesClicksPercentage, other.ValidAcceleratedMobilePagesClicksPercentage)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ValuePerAllConversions, other.ValuePerAllConversions)) return false;
@@ -5096,6 +5161,8 @@ namespace Google.Ads.GoogleAds.V13.Common {
       if (HasSearchRankLostTopImpressionShare) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(SearchRankLostTopImpressionShare);
       if (HasSearchTopImpressionShare) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(SearchTopImpressionShare);
       if (HasSpeedScore) hash ^= SpeedScore.GetHashCode();
+      if (HasAverageTargetCpaMicros) hash ^= AverageTargetCpaMicros.GetHashCode();
+      if (HasAverageTargetRoas) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(AverageTargetRoas);
       if (HasTopImpressionPercentage) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(TopImpressionPercentage);
       if (HasValidAcceleratedMobilePagesClicksPercentage) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ValidAcceleratedMobilePagesClicksPercentage);
       if (HasValuePerAllConversions) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ValuePerAllConversions);
@@ -5628,6 +5695,10 @@ namespace Google.Ads.GoogleAds.V13.Common {
         output.WriteRawTag(194, 15);
         output.WriteString(OptimizationScoreUrl);
       }
+      if (HasAverageTargetRoas) {
+        output.WriteRawTag(209, 15);
+        output.WriteDouble(AverageTargetRoas);
+      }
       if (HasBiddableAppInstallConversions) {
         output.WriteRawTag(241, 15);
         output.WriteDouble(BiddableAppInstallConversions);
@@ -5739,6 +5810,10 @@ namespace Google.Ads.GoogleAds.V13.Common {
       if (HasViewThroughConversionsFromLocationAssetWebsite) {
         output.WriteRawTag(201, 17);
         output.WriteDouble(ViewThroughConversionsFromLocationAssetWebsite);
+      }
+      if (HasAverageTargetCpaMicros) {
+        output.WriteRawTag(144, 18);
+        output.WriteInt64(AverageTargetCpaMicros);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -6231,6 +6306,10 @@ namespace Google.Ads.GoogleAds.V13.Common {
         output.WriteRawTag(194, 15);
         output.WriteString(OptimizationScoreUrl);
       }
+      if (HasAverageTargetRoas) {
+        output.WriteRawTag(209, 15);
+        output.WriteDouble(AverageTargetRoas);
+      }
       if (HasBiddableAppInstallConversions) {
         output.WriteRawTag(241, 15);
         output.WriteDouble(BiddableAppInstallConversions);
@@ -6342,6 +6421,10 @@ namespace Google.Ads.GoogleAds.V13.Common {
       if (HasViewThroughConversionsFromLocationAssetWebsite) {
         output.WriteRawTag(201, 17);
         output.WriteDouble(ViewThroughConversionsFromLocationAssetWebsite);
+      }
+      if (HasAverageTargetCpaMicros) {
+        output.WriteRawTag(144, 18);
+        output.WriteInt64(AverageTargetCpaMicros);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -6698,6 +6781,12 @@ namespace Google.Ads.GoogleAds.V13.Common {
       }
       if (HasSpeedScore) {
         size += 2 + pb::CodedOutputStream.ComputeInt64Size(SpeedScore);
+      }
+      if (HasAverageTargetCpaMicros) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(AverageTargetCpaMicros);
+      }
+      if (HasAverageTargetRoas) {
+        size += 2 + 8;
       }
       if (HasTopImpressionPercentage) {
         size += 2 + 8;
@@ -7155,6 +7244,12 @@ namespace Google.Ads.GoogleAds.V13.Common {
       }
       if (other.HasSpeedScore) {
         SpeedScore = other.SpeedScore;
+      }
+      if (other.HasAverageTargetCpaMicros) {
+        AverageTargetCpaMicros = other.AverageTargetCpaMicros;
+      }
+      if (other.HasAverageTargetRoas) {
+        AverageTargetRoas = other.AverageTargetRoas;
       }
       if (other.HasTopImpressionPercentage) {
         TopImpressionPercentage = other.TopImpressionPercentage;
@@ -7755,6 +7850,10 @@ namespace Google.Ads.GoogleAds.V13.Common {
             OptimizationScoreUrl = input.ReadString();
             break;
           }
+          case 2001: {
+            AverageTargetRoas = input.ReadDouble();
+            break;
+          }
           case 2033: {
             BiddableAppInstallConversions = input.ReadDouble();
             break;
@@ -7865,6 +7964,10 @@ namespace Google.Ads.GoogleAds.V13.Common {
           }
           case 2249: {
             ViewThroughConversionsFromLocationAssetWebsite = input.ReadDouble();
+            break;
+          }
+          case 2320: {
+            AverageTargetCpaMicros = input.ReadInt64();
             break;
           }
         }
@@ -8367,6 +8470,10 @@ namespace Google.Ads.GoogleAds.V13.Common {
             OptimizationScoreUrl = input.ReadString();
             break;
           }
+          case 2001: {
+            AverageTargetRoas = input.ReadDouble();
+            break;
+          }
           case 2033: {
             BiddableAppInstallConversions = input.ReadDouble();
             break;
@@ -8477,6 +8584,10 @@ namespace Google.Ads.GoogleAds.V13.Common {
           }
           case 2249: {
             ViewThroughConversionsFromLocationAssetWebsite = input.ReadDouble();
+            break;
+          }
+          case 2320: {
+            AverageTargetCpaMicros = input.ReadInt64();
             break;
           }
         }

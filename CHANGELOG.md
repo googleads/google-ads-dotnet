@@ -1,3 +1,29 @@
+16.0.0
+======
+- Added support for version v13.1 of the Google Ads API.
+- Removed support for v11 of the Google Ads API.
+- Moved configuration loading from App.config, settings.json and environment variables to a
+  separate assembly.
+- Disallowed Grpc.Net.Client on .NET framework.
+- Bumped the version for Google.Ads.Gax to 3.0.0
+- Bumped the version for Google.Ads.GoogleAds.Core to 3.0.0
+
+15.0.3
+======
+- Bumped the version for Google.Ads.Gax to 2.2.0
+- Bumped the version for Google.Ads.GoogleAds.Core to 2.2.0
+- Bumped the version requirement of Google.Ads.GoogleAds to Google.Ads.GoogleAds.Core >= 2.2.0. This
+  ensures that the fix for #488 is picked up by the latest library.
+
+15.0.2
+======
+- Use ContinueWith for exception handling in Unary calls: this should provide a more general fix for
+  #488
+
+15.0.1
+======
+- Fixed #488 by marking all async calls as ConfigureAwait(false)
+
 15.0.0
 ======
 - Added support for version v13.0 of the Google Ads API.

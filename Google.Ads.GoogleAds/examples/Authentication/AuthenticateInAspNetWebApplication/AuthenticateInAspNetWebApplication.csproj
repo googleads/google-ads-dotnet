@@ -55,14 +55,14 @@
     <Reference Include="CommandLine, Version=2.9.1.0, Culture=neutral, PublicKeyToken=5a870481e358d379, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\CommandLineParser.2.9.1\lib\net461\CommandLine.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Ads.Gax, Version=2.1.0.0, Culture=neutral, PublicKeyToken=52807268f2b614dc, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Google.Ads.Gax.2.1.0\lib\net472\Google.Ads.Gax.dll</HintPath>
+    <Reference Include="Google.Ads.Gax, Version=3.0.0, Culture=neutral, PublicKeyToken=52807268f2b614dc, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Google.Ads.Gax.3.0.0\lib\net472\Google.Ads.Gax.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Ads.GoogleAds, Version=15.0.0, Culture=neutral, PublicKeyToken=52807268f2b614dc, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Google.Ads.GoogleAds.15.0.0\lib\net472\Google.Ads.GoogleAds.dll</HintPath>
+    <Reference Include="Google.Ads.GoogleAds, Version=16.0.0, Culture=neutral, PublicKeyToken=52807268f2b614dc, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Google.Ads.GoogleAds.16.0.0\lib\net472\Google.Ads.GoogleAds.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Ads.GoogleAds.Core, Version=2.1.0.0, Culture=neutral, PublicKeyToken=52807268f2b614dc, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Google.Ads.GoogleAds.Core.2.1.0\lib\net472\Google.Ads.GoogleAds.Core.dll</HintPath>
+    <Reference Include="Google.Ads.GoogleAds.Core, Version=3.0.0.0, Culture=neutral, PublicKeyToken=52807268f2b614dc, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Google.Ads.GoogleAds.Core.3.0.0\lib\net472\Google.Ads.GoogleAds.Core.dll</HintPath>
     </Reference>
     <Reference Include="Google.Api.CommonProtos, Version=2.6.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Google.Api.CommonProtos.2.6.0\lib\net461\Google.Api.CommonProtos.dll</HintPath>
@@ -71,7 +71,7 @@
       <HintPath>..\..\..\packages\Google.Api.Gax.4.0.0\lib\net462\Google.Api.Gax.dll</HintPath>
     </Reference>
     <Reference Include="Google.Api.Gax.Grpc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\Google.Api.Gax.Grpc.4.0.0\lib\net462\Google.Api.Gax.Grpc.dll</HintPath>
+      <HintPath>..\..\..\packages\Google.Api.Gax.Grpc.4.2.0\lib\net462\Google.Api.Gax.Grpc.dll</HintPath>
     </Reference>
     <Reference Include="Google.Api.Gax.Grpc.GrpcCore, Version=3.7.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Google.Api.Gax.Grpc.GrpcCore.3.7.0\lib\net461\Google.Api.Gax.Grpc.GrpcCore.dll</HintPath>
