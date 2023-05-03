@@ -103,18 +103,18 @@ namespace Google.Ads.GoogleAds.Examples.V13
         private Dictionary<AssetFieldType, int> MIN_REQUIRED_TEXT_ASSET_COUNTS =
             new Dictionary<AssetFieldType, int>()
             {
-                { AssetFieldType.Headline, 3},
-                { AssetFieldType.LongHeadline, 1},
-                { AssetFieldType.Description, 2},
-                { AssetFieldType.BusinessName, 1},
+                { AssetFieldType.Headline, 3 },
+                { AssetFieldType.LongHeadline, 1 },
+                { AssetFieldType.Description, 2 },
+                { AssetFieldType.BusinessName, 1 },
             };
 
         private Dictionary<AssetFieldType, int> MIN_REQUIRED_IMAGE_ASSET_COUNTS =
             new Dictionary<AssetFieldType, int>()
             {
-                { AssetFieldType.MarketingImage, 1},
-                { AssetFieldType.SquareMarketingImage, 1},
-                { AssetFieldType.Logo, 1},
+                { AssetFieldType.MarketingImage, 1 },
+                { AssetFieldType.SquareMarketingImage, 1 },
+                { AssetFieldType.Logo, 1 },
             };
 
 
@@ -181,24 +181,17 @@ namespace Google.Ads.GoogleAds.Examples.V13
             " Max for travel goals campaign. It also uses TravelAssetSuggestionService to fetch " +
             "suggested assets for creating an asset group. In case there are not enough assets " +
             "for the asset group (required by Performance Max), this example will create more " +
-            "assets to fulfill the requirements." +
-            "<p>For more information about Performance Max campaigns, see " +
-            "https://developers.google.com/google-ads/api/docs/performance-max/overview.</p>" +
-            "<p>Prerequisites:</p>" +
-            "<ul>" +
-            "<li>You must have at least one conversion action in the account. For more about " +
+            "assets to fulfill the requirements.\n" +
+            "For more information about Performance Max campaigns, see " +
+            "https://developers.google.com/google-ads/api/docs/performance-max/overview.\n" +
+            "Prerequisites:\n" +
+            "You must have at least one conversion action in the account. For more about " +
             "conversion actions, see " +
-            "https://developers.google.com/google-ads/api/docs/conversions/overview#conversion_actions." +
-            "</li>" +
-            "</ul>" +
-            "<p>Notes:</p>" +
-            "<ul>" +
-            "<li>This example uses the default customer conversion goals. For an example of " +
-            "setting campaign-specific conversion goals, see AddPerformanceMaxRetailCampaign.cs." +
-            "</li>" +
-            "<li>To learn how to create asset group signals, see AddPerformanceMaxCampaign.cs." +
-            "</li>" +
-            "</ul>";
+            "https://developers.google.com/google-ads/api/docs/conversions/overview#conversion_actions.\n" +
+            "Notes:\n" +
+            "- This example uses the default customer conversion goals. For an example of " +
+            "setting campaign-specific conversion goals, see AddPerformanceMaxRetailCampaign.cs.\n" +
+            "- To learn how to create asset group signals, see AddPerformanceMaxCampaign.cs.";
 
         /// <summary>
         /// Runs the code example.
@@ -357,16 +350,16 @@ namespace Google.Ads.GoogleAds.Examples.V13
             {
                 string text = DEFAULT_TEXT_ASSETS_INFO[assetFieldType][i++];
                 MutateOperation operation = new MutateOperation
-                    {
-                        AssetOperation = new AssetOperation {
-                            Create = new Asset {
-                                TextAsset = new TextAsset {
-                                    Text = text
-                                }
+                {
+                    AssetOperation = new AssetOperation {
+                        Create = new Asset {
+                            TextAsset = new TextAsset {
+                                Text = text
                             }
                         }
-                    };
-                    mutateOperations.Add(operation);
+                    }
+                };
+                mutateOperations.Add(operation);
             }
 
             GoogleAdsServiceClient googleAdsService =
@@ -779,7 +772,8 @@ namespace Google.Ads.GoogleAds.Examples.V13
                     if (assetFieldType == AssetFieldType.Headline ||
                         assetFieldType == AssetFieldType.Description)
                     {
-                        // Headlines and descriptions were already created at the first step of this code example.
+                        // Headlines and descriptions were already created at the first step of this
+                        // code example.
                         continue;
                     }
                     Console.WriteLine($"A text asset with text {hotelTextAsset.Text} is " +
