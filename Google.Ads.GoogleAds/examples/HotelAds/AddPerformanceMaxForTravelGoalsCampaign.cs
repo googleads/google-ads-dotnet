@@ -555,10 +555,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
                 // Assigns the resource name with a temporary ID.
                 ResourceName = ResourceNames.Campaign(customerId, CAMPAIGN_TEMPORARY_ID),
                 // Sets the budget using the given budget resource name.
-                CampaignBudget = ResourceNames.CampaignBudget(customerId, BUDGET_TEMPORARY_ID),
-                // Optional fields
-                StartDate = DateTime.Now.AddDays(1).ToString("yyyyMMdd"),
-                EndDate = DateTime.Now.AddDays(365).ToString("yyyyMMdd")
+                CampaignBudget = ResourceNames.CampaignBudget(customerId, BUDGET_TEMPORARY_ID)
             };
 
             return new MutateOperation
@@ -571,6 +568,19 @@ namespace Google.Ads.GoogleAds.Examples.V13
         }
         // [END create_campaign]
 
+        /// <summary>
+        /// Creates a mutate operation that creates a new asset group.
+        /// <param name="customerId">The client customer ID.</param>
+        /// <param name="hotelPropertyAssetResourceName"> The resource name of the hotel property
+        /// asset.</param>
+        /// <param name="headlineAssetResourceNames">The resource names for headline
+        /// assets.</param>
+        /// <param name="descriptionAssetResourceNames">The resource names for description
+        /// assets.</param>
+        /// <param name="hotelAssetSuggestion">The hotel asset suggestion.</param>
+        /// <param name="config">The Google Ads configuration.</param>
+        /// <returns>A mutate operation that creates an asset group.</returns>
+        /// </summary>
         private List<MutateOperation> CreateAssetGroupOperations(
             long customerId,
             string hotelPropertyAssetResourceName,
@@ -862,7 +872,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
         }
 
         /// <summary>
-        ///Creates image assets required for an asset group using the suggested hotel image assets.
+        /// Creates image assets required for an asset group using the suggested hotel image assets.
         /// It adds more image assets to fulfill the requirements if the suggested hotel image
         /// assets are not enough.
         /// <param name="customerId">The client customer ID.</param>
