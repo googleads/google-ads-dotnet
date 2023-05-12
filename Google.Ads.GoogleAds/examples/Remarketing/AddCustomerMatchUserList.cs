@@ -176,6 +176,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
         /// <param name="customerId">The Google Ads customer ID for which the user list is added.
         /// </param>
         /// <returns>The resource name of the newly created user list</returns>
+        // [START add_customer_match_user_list_3]
         private string CreateCustomerMatchUserList(GoogleAdsClient client, long customerId)
         {
             // Get the UserListService.
@@ -210,6 +211,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
                 $"was created.");
             return userListResourceName;
         }
+        // [END add_customer_match_user_list_3]
 
         /// <summary>
         /// Creates and executes an asynchronous job to add users to the Customer Match user list.
@@ -321,6 +323,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
         /// </param>
         /// <param name="offlineUserDataJobResourceName">Resource name of the of the offline user
         /// data job.</param>
+        // [START add_customer_match_user_list_4]
         private static void CheckJobStatusAndPrintResults(GoogleAdsClient client, long customerId,
             string offlineUserDataJobResourceName)
         {
@@ -360,6 +363,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
                     break;
             }
         }
+        // [END add_customer_match_user_list_4]
 
         /// <summary>
         /// Builds and returns offline user data job operations to add one user identified by an
@@ -502,8 +506,6 @@ namespace Google.Ads.GoogleAds.Examples.V13
                 }
             }
 
-            // [END add_customer_match_user_list_2]
-
             // Creates the operations to add the users.
             List<OfflineUserDataJobOperation> operations = new List<OfflineUserDataJobOperation>();
             foreach(UserData userData in userDataList)
@@ -513,6 +515,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
                     Create = userData
                 });
             }
+            // [END add_customer_match_user_list_2]
             return operations.ToArray();
         }
 
@@ -527,6 +530,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
         private static void PrintCustomerMatchUserListInfo(GoogleAdsClient client, long customerId,
             string userListResourceName)
         {
+            // [START add_customer_match_user_list_5]
             // Get the GoogleAdsService.
             GoogleAdsServiceClient service =
                 client.GetService(Services.V13.GoogleAdsService);
@@ -550,6 +554,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
                    }
                }
            );
+           // [END add_customer_match_user_list_5]
 
             Console.WriteLine("Reminder: It may take several hours for the user list to be " +
                 "populated with the users so getting zeros for the estimations is expected.");
