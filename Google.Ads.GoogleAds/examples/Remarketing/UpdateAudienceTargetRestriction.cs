@@ -16,18 +16,18 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V13.Common;
-using Google.Ads.GoogleAds.V13.Errors;
-using Google.Ads.GoogleAds.V13.Resources;
-using Google.Ads.GoogleAds.V13.Services;
+using Google.Ads.GoogleAds.V14.Common;
+using Google.Ads.GoogleAds.V14.Errors;
+using Google.Ads.GoogleAds.V14.Resources;
+using Google.Ads.GoogleAds.V14.Services;
 using Google.Api.Gax;
 using Google.Protobuf.Collections;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V13.Enums.TargetingDimensionEnum.Types;
+using static Google.Ads.GoogleAds.V14.Enums.TargetingDimensionEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V13
+namespace Google.Ads.GoogleAds.Examples.V14
 {
     /// <summary>
     /// This code example updates the AUDIENCE target restriction of a given ad group to bid only.
@@ -87,7 +87,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
         {
             // Get the GoogleAdsService client.
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V13.GoogleAdsService);
+                client.GetService(Services.V14.GoogleAdsService);
 
             // Create a search request that retrieves the targeting settings from a given ad group.
             // [START update_audience_target_restriction]
@@ -198,7 +198,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
         {
             // Get the AdGroupService client.
             AdGroupServiceClient adGroupServiceClient =
-                client.GetService(Services.V13.AdGroupService);
+                client.GetService(Services.V14.AdGroupService);
 
             // Create an ad group object with the updated targeting setting.
             AdGroup adGroup = new AdGroup

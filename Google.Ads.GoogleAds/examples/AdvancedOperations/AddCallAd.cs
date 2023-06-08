@@ -15,21 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V13.Common;
-using Google.Ads.GoogleAds.V13.Enums;
-using Google.Ads.GoogleAds.V13.Errors;
-using Google.Ads.GoogleAds.V13.Resources;
-using Google.Ads.GoogleAds.V13.Services;
-using Google.Protobuf;
-using System.Collections.Generic;
+using Google.Ads.GoogleAds.V14.Common;
+using Google.Ads.GoogleAds.V14.Errors;
+using Google.Ads.GoogleAds.V14.Resources;
+using Google.Ads.GoogleAds.V14.Services;
 using System.Linq;
 using System;
-using System.Threading;
-using static Google.Ads.GoogleAds.V13.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V13.Enums.CallConversionReportingStateEnum.Types;
+using static Google.Ads.GoogleAds.V14.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V14.Enums.CallConversionReportingStateEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V13
+namespace Google.Ads.GoogleAds.Examples.V14
 {
     /// <summary>
     /// This example adds a call ad to a given ad group. More information about call ads can be
@@ -185,7 +180,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
 
                 // Issues a mutate request to add the ad group ad.
                 AdGroupAdServiceClient adGroupAdServiceClient =
-                    client.GetService(Services.V13.AdGroupAdService);
+                    client.GetService(Services.V14.AdGroupAdService);
 
                 MutateAdGroupAdsResponse adGroupAdResponse =
                     adGroupAdServiceClient.MutateAdGroupAds(

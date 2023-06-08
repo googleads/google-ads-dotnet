@@ -15,13 +15,13 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V13.Errors;
-using Google.Ads.GoogleAds.V13.Resources;
-using Google.Ads.GoogleAds.V13.Services;
+using Google.Ads.GoogleAds.V14.Errors;
+using Google.Ads.GoogleAds.V14.Resources;
+using Google.Ads.GoogleAds.V14.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V13
+namespace Google.Ads.GoogleAds.Examples.V14
 {
     /// <summary>
     /// This code example demonstrates how to reject a Merchant Center link request.
@@ -90,7 +90,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
         {
             // Get the MerchantCenterLinkService.
             MerchantCenterLinkServiceClient merchantCenterLinkServiceClient =
-                client.GetService(Services.V13.MerchantCenterLinkService);
+                client.GetService(Services.V14.MerchantCenterLinkService);
 
             try
             {

@@ -15,13 +15,13 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V13.Errors;
-using Google.Ads.GoogleAds.V13.Services;
+using Google.Ads.GoogleAds.V14.Errors;
+using Google.Ads.GoogleAds.V14.Services;
 using System;
 using System.Collections.Generic;
 using System.Threading;
 
-namespace Google.Ads.GoogleAds.Examples.V13
+namespace Google.Ads.GoogleAds.Examples.V14
 {
     /// <summary>
     /// The auto-apply feature, which automatically applies recommendations as they become
@@ -101,11 +101,11 @@ namespace Google.Ads.GoogleAds.Examples.V13
         {
             // Get the RecommendationServiceClient.
             RecommendationServiceClient recommendationService = client.GetService(
-                Services.V13.RecommendationService);
+                Services.V14.RecommendationService);
 
             // Get the GoogleAdsServiceClient.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V13.GoogleAdsService);
+                Services.V14.GoogleAdsService);
 
             // Creates a query that retrieves keyword recommendations.
             string query = "SELECT recommendation.resource_name FROM recommendation WHERE " +

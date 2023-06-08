@@ -1446,8 +1446,11 @@ namespace Google.Ads.GoogleAds.V13.Services {
     public const int QueryTextFieldNumber = 3;
     private string queryText_ = "";
     /// <summary>
-    /// Required. A free text query.  Attributes matching or related to this string
-    /// will be returned.
+    /// Required. A free text query.  If the requested dimensions include
+    /// Attributes CATEGORY or KNOWLEDGE_GRAPH, then the attributes returned for
+    /// those dimensions will match or be related to this string.  For other
+    /// dimensions, this field is ignored and all available attributes are
+    /// returned.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

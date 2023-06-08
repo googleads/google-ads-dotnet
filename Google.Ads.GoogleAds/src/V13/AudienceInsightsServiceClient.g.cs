@@ -522,8 +522,11 @@ namespace Google.Ads.GoogleAds.V13.Services
         /// Required. The types of attributes to be returned.
         /// </param>
         /// <param name="queryText">
-        /// Required. A free text query.  Attributes matching or related to this string
-        /// will be returned.
+        /// Required. A free text query.  If the requested dimensions include
+        /// Attributes CATEGORY or KNOWLEDGE_GRAPH, then the attributes returned for
+        /// those dimensions will match or be related to this string.  For other
+        /// dimensions, this field is ignored and all available attributes are
+        /// returned.
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>The RPC response.</returns>
@@ -558,8 +561,11 @@ namespace Google.Ads.GoogleAds.V13.Services
         /// Required. The types of attributes to be returned.
         /// </param>
         /// <param name="queryText">
-        /// Required. A free text query.  Attributes matching or related to this string
-        /// will be returned.
+        /// Required. A free text query.  If the requested dimensions include
+        /// Attributes CATEGORY or KNOWLEDGE_GRAPH, then the attributes returned for
+        /// those dimensions will match or be related to this string.  For other
+        /// dimensions, this field is ignored and all available attributes are
+        /// returned.
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A Task containing the RPC response.</returns>
@@ -594,8 +600,11 @@ namespace Google.Ads.GoogleAds.V13.Services
         /// Required. The types of attributes to be returned.
         /// </param>
         /// <param name="queryText">
-        /// Required. A free text query.  Attributes matching or related to this string
-        /// will be returned.
+        /// Required. A free text query.  If the requested dimensions include
+        /// Attributes CATEGORY or KNOWLEDGE_GRAPH, then the attributes returned for
+        /// those dimensions will match or be related to this string.  For other
+        /// dimensions, this field is ignored and all available attributes are
+        /// returned.
         /// </param>
         /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
         /// <returns>A Task containing the RPC response.</returns>

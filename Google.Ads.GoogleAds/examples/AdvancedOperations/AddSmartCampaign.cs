@@ -19,19 +19,19 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V13.Common;
-using Google.Ads.GoogleAds.V13.Enums;
-using Google.Ads.GoogleAds.V13.Errors;
-using Google.Ads.GoogleAds.V13.Resources;
-using Google.Ads.GoogleAds.V13.Services;
-using static Google.Ads.GoogleAds.V13.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V13.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V13.Enums.AdvertisingChannelSubTypeEnum.Types;
-using static Google.Ads.GoogleAds.V13.Enums.BudgetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V13.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V13.Services.SmartCampaignSuggestionInfo.Types;
+using Google.Ads.GoogleAds.V14.Common;
+using Google.Ads.GoogleAds.V14.Enums;
+using Google.Ads.GoogleAds.V14.Errors;
+using Google.Ads.GoogleAds.V14.Resources;
+using Google.Ads.GoogleAds.V14.Services;
+using static Google.Ads.GoogleAds.V14.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V14.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V14.Enums.AdvertisingChannelSubTypeEnum.Types;
+using static Google.Ads.GoogleAds.V14.Enums.BudgetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V14.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V14.Services.SmartCampaignSuggestionInfo.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V13
+namespace Google.Ads.GoogleAds.Examples.V14
 {
     /// <summary>
     /// This example shows how to create a Smart Campaign.
@@ -121,7 +121,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
         private const string COUNTRY_CODE = "US";
         private const string LANGUAGE_CODE = "en";
         private const string LANDING_PAGE_URL = "http://www.example.com";
-        private const string PHONE_NUMBER = "555-555-5555";
+        private const string PHONE_NUMBER = "800-555-0100";
         private const long BUDGET_TEMPORARY_ID = -1;
         private const long SMART_CAMPAIGN_TEMPORARY_ID = -2;
         private const long AD_GROUP_TEMPORARY_ID = -3;
@@ -150,7 +150,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
             string freeFormKeywordText, string businessProfileLocation, string businessName)
         {
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V13.GoogleAdsService);
+                client.GetService(Services.V14.GoogleAdsService);
 
             try
             {
@@ -268,7 +268,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
             GoogleAdsClient client, long customerId, SmartCampaignSuggestionInfo suggestionInfo)
         {
             SmartCampaignSuggestServiceClient smartCampaignSuggestService =
-                client.GetService(Services.V13.SmartCampaignSuggestService);
+                client.GetService(Services.V14.SmartCampaignSuggestService);
 
             SuggestKeywordThemesRequest request = new SuggestKeywordThemesRequest()
             {
@@ -300,7 +300,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
             GoogleAdsClient client, string keywordText)
         {
             KeywordThemeConstantServiceClient keywordThemeConstantServiceClient =
-                client.GetService(Services.V13.KeywordThemeConstantService);
+                client.GetService(Services.V14.KeywordThemeConstantService);
 
             SuggestKeywordThemeConstantsRequest request = new SuggestKeywordThemeConstantsRequest
             {
@@ -429,7 +429,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
             SmartCampaignSuggestionInfo suggestionInfo)
         {
             SmartCampaignSuggestServiceClient smartCampaignSuggestServiceClient = client.GetService
-                (Services.V13.SmartCampaignSuggestService);
+                (Services.V14.SmartCampaignSuggestService);
 
             SuggestSmartCampaignBudgetOptionsRequest request =
                 new SuggestSmartCampaignBudgetOptionsRequest
@@ -486,7 +486,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
             long customerId, SmartCampaignSuggestionInfo suggestionInfo)
         {
             SmartCampaignSuggestServiceClient smartCampaignSuggestService =
-              client.GetService(Services.V13.SmartCampaignSuggestService);
+              client.GetService(Services.V14.SmartCampaignSuggestService);
 
             SuggestSmartCampaignAdRequest request = new SuggestSmartCampaignAdRequest
             {

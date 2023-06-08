@@ -15,16 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V13.Errors;
-using Google.Ads.GoogleAds.V13.Resources;
-using Google.Ads.GoogleAds.V13.Services;
+using Google.Ads.GoogleAds.V14.Errors;
+using Google.Ads.GoogleAds.V14.Resources;
+using Google.Ads.GoogleAds.V14.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V13.Enums.KeywordMatchTypeEnum.Types;
-using static Google.Ads.GoogleAds.V13.Enums.KeywordPlanForecastIntervalEnum.Types;
-using static Google.Ads.GoogleAds.V13.Enums.KeywordPlanNetworkEnum.Types;
+using static Google.Ads.GoogleAds.V14.Enums.KeywordMatchTypeEnum.Types;
+using static Google.Ads.GoogleAds.V14.Enums.KeywordPlanForecastIntervalEnum.Types;
+using static Google.Ads.GoogleAds.V14.Enums.KeywordPlanNetworkEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V13
+namespace Google.Ads.GoogleAds.Examples.V14
 {
     /// <summary>
     /// This code example creates a keyword plan, which can be reused for retrieving forecast
@@ -103,7 +103,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
         {
             // Get the KeywordPlanService.
             KeywordPlanServiceClient serviceClient = client.GetService(
-                Services.V13.KeywordPlanService);
+                Services.V14.KeywordPlanService);
 
             // Create a keyword plan for next quarter forecast.
             KeywordPlan keywordPlan = new KeywordPlan()
@@ -142,7 +142,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
         {
             // Get the KeywordPlanCampaignService.
             KeywordPlanCampaignServiceClient serviceClient = client.GetService(
-                Services.V13.KeywordPlanCampaignService);
+                Services.V14.KeywordPlanCampaignService);
 
             // Create a keyword plan campaign.
             KeywordPlanCampaign campaign = new KeywordPlanCampaign()
@@ -193,7 +193,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
         {
             // Get the KeywordPlanAdGroupService.
             KeywordPlanAdGroupServiceClient serviceClient = client.GetService(
-                Services.V13.KeywordPlanAdGroupService);
+                Services.V14.KeywordPlanAdGroupService);
 
             // Create the keyword plan ad group.
             KeywordPlanAdGroup adGroup = new KeywordPlanAdGroup()
@@ -231,7 +231,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
         {
             // Get the KeywordPlanAdGroupKeywordService.
             KeywordPlanAdGroupKeywordServiceClient serviceClient = client.GetService(
-                Services.V13.KeywordPlanAdGroupKeywordService);
+                Services.V14.KeywordPlanAdGroupKeywordService);
 
             // Create the adgroup level keywords for keyword plan.
             KeywordPlanAdGroupKeyword kpAdGroupKeyword1 = new KeywordPlanAdGroupKeyword()
@@ -302,7 +302,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
         {
             // Get the KeywordPlanCampaignKeywordService.
             KeywordPlanCampaignKeywordServiceClient service = client.GetService(
-                Services.V13.KeywordPlanCampaignKeywordService);
+                Services.V14.KeywordPlanCampaignKeywordService);
 
             // Create the campaign negative keyword for the keyword plan.
             KeywordPlanCampaignKeyword kpCampaignNegativeKeyword = new KeywordPlanCampaignKeyword()

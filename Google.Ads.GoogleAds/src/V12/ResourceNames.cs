@@ -320,16 +320,6 @@ namespace Google.Ads.GoogleAds.V12.Errors
             return $"customers/{customerId}/campaignCriteria/{campaignId}~{criterionId}";
         }
 
-        public static string CampaignCriterionSimulation(long customerId, long campaignId,
-            long criterionId, SimulationType type, SimulationModificationMethod modificationMethod,
-            DateTime startDate, DateTime endDate)
-        {
-            return $"customers/{customerId}/campaignCriterionSimulations/{campaignId}~" +
-                $"{criterionId}~{ProtobufUtilities.GetOriginalEnumFieldName(type)}~" +
-                $"{ProtobufUtilities.GetOriginalEnumFieldName(modificationMethod)}~" +
-                $"{startDate:yyyy-MM-dd}~{endDate:yyyy-MM-dd}";
-        }
-
         public static string CampaignCustomizer(long customerId, long campaignId,
             long customizerAttributeId)
         {

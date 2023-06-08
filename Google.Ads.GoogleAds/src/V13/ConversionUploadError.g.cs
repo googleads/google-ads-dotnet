@@ -247,220 +247,229 @@ namespace Google.Ads.GoogleAds.V13.Errors {
         /// </summary>
         [pbr::OriginalName("UNSPECIFIED")] Unspecified = 0,
         /// <summary>
-        /// The received error code is not known in this version.
+        /// Used for return value only. Represents value unknown in this version.
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
-        /// The request contained more than 2000 conversions.
+        /// Upload fewer than 2001 events in a single request.
         /// </summary>
         [pbr::OriginalName("TOO_MANY_CONVERSIONS_IN_REQUEST")] TooManyConversionsInRequest = 2,
         /// <summary>
-        /// The specified gclid could not be decoded.
+        /// The imported gclid could not be decoded. Make sure you have not modified
+        /// the click IDs.
         /// </summary>
         [pbr::OriginalName("UNPARSEABLE_GCLID")] UnparseableGclid = 3,
         /// <summary>
-        /// The specified conversion_date_time is before the event time
-        /// associated with the given identifier or iOS URL parameter.
+        /// The imported event has a `conversion_date_time` that precedes the click.
+        /// Make sure your `conversion_date_time` is correct and try again.
         /// </summary>
         [pbr::OriginalName("CONVERSION_PRECEDES_EVENT")] ConversionPrecedesEvent = 42,
         /// <summary>
-        /// The click associated with the given identifier or iOS URL parameter is
-        /// either too old to be imported or occurred outside of the click through
-        /// lookback window for the specified conversion action.
+        /// The imported event can't be recorded because its click occurred before
+        /// this conversion's click-through window. Make sure you import the most
+        /// recent data.
         /// </summary>
         [pbr::OriginalName("EXPIRED_EVENT")] ExpiredEvent = 43,
         /// <summary>
         /// The click associated with the given identifier or iOS URL parameter
-        /// occurred too recently. Try uploading again after 6 hours have
-        /// passed since the click occurred.
+        /// occurred less than 6 hours ago. Retry after 6 hours have passed.
         /// </summary>
         [pbr::OriginalName("TOO_RECENT_EVENT")] TooRecentEvent = 44,
         /// <summary>
-        /// The click associated with the given identifier or iOS URL parameter could
-        /// not be found in the system. This can happen if the identifier or iOS URL
-        /// parameter are collected for non Google Ads clicks.
+        /// The imported event could not be attributed to a click. This may be
+        /// because the event did not come from a Google Ads campaign.
         /// </summary>
         [pbr::OriginalName("EVENT_NOT_FOUND")] EventNotFound = 45,
         /// <summary>
-        /// The click associated with the given identifier or iOS URL parameter is
-        /// owned by a customer account that the uploading customer does not manage.
+        /// The click ID or call is associated with an Ads account you don't have
+        /// access to. Make sure you import conversions for accounts managed by your
+        /// manager account.
         /// </summary>
         [pbr::OriginalName("UNAUTHORIZED_CUSTOMER")] UnauthorizedCustomer = 8,
         /// <summary>
-        /// No upload eligible conversion action that matches the provided
-        /// information can be found for the customer.
+        /// Make sure you specify a valid conversion action set up for offline
+        /// import.
         /// </summary>
         [pbr::OriginalName("INVALID_CONVERSION_ACTION")] InvalidConversionAction = 9,
         /// <summary>
-        /// The specified conversion action was created too recently.
-        /// Try the upload again after 4-6 hours have passed since the
-        /// conversion action was created.
+        /// Can't import events to a conversion action that was just created. Try
+        /// importing again in 6 hours.
         /// </summary>
         [pbr::OriginalName("TOO_RECENT_CONVERSION_ACTION")] TooRecentConversionAction = 10,
         /// <summary>
-        /// The click associated with the given identifier does not contain
-        /// conversion tracking information.
+        /// At the time of the click, conversion tracking was not enabled in the
+        /// effective conversion account of the click's Google Ads account.
         /// </summary>
         [pbr::OriginalName("CONVERSION_TRACKING_NOT_ENABLED_AT_IMPRESSION_TIME")] ConversionTrackingNotEnabledAtImpressionTime = 11,
         /// <summary>
-        /// The specified conversion action does not use an external attribution
-        /// model, but external_attribution_data was set.
+        /// The imported event includes external attribution data, but the conversion
+        /// action isn't set up to use an external attribution model. Make sure the
+        /// conversion action is correctly configured and try again.
         /// </summary>
         [pbr::OriginalName("EXTERNAL_ATTRIBUTION_DATA_SET_FOR_NON_EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION")] ExternalAttributionDataSetForNonExternallyAttributedConversionAction = 12,
         /// <summary>
-        /// The specified conversion action uses an external attribution model, but
-        /// external_attribution_data or one of its contained fields was not set.
-        /// Both external_attribution_credit and external_attribution_model must be
-        /// set for externally attributed conversion actions.
+        /// The conversion action is set up to use an external attribution model, but
+        /// the imported event is missing data. Make sure imported events include the
+        /// external attribution credit and all necessary fields.
         /// </summary>
         [pbr::OriginalName("EXTERNAL_ATTRIBUTION_DATA_NOT_SET_FOR_EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION")] ExternalAttributionDataNotSetForExternallyAttributedConversionAction = 13,
         /// <summary>
-        /// Order IDs are not supported for conversion actions which use an external
-        /// attribution model.
+        /// Order IDs can't be used for a conversion measured with an external
+        /// attribution model. Make sure the conversion is correctly configured and
+        /// imported events include only necessary data and try again.
         /// </summary>
         [pbr::OriginalName("ORDER_ID_NOT_PERMITTED_FOR_EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION")] OrderIdNotPermittedForExternallyAttributedConversionAction = 14,
         /// <summary>
-        /// A conversion with the same order id and conversion action combination
-        /// already exists in our system.
+        /// The imported event includes an order ID that was previously recorded, so
+        /// the event was not processed.
         /// </summary>
         [pbr::OriginalName("ORDER_ID_ALREADY_IN_USE")] OrderIdAlreadyInUse = 15,
         /// <summary>
-        /// The request contained two or more conversions with the same order id and
-        /// conversion action combination.
+        /// Imported events include multiple conversions with the same order ID and
+        /// were not processed.  Make sure order IDs are unique and try again.
         /// </summary>
         [pbr::OriginalName("DUPLICATE_ORDER_ID")] DuplicateOrderId = 16,
         /// <summary>
-        /// The call occurred too recently. Try uploading again after 12 hours
-        /// have passed since the call occurred.
+        /// Can't import calls that occurred less than 6 hours ago. Try uploading
+        /// again in 6 hours.
         /// </summary>
         [pbr::OriginalName("TOO_RECENT_CALL")] TooRecentCall = 17,
         /// <summary>
-        /// The click that initiated the call is too old for this conversion to be
-        /// imported.
+        /// The call can't be recorded because it occurred before this conversion
+        /// action's lookback window. Make sure your import is configured to get the
+        /// most recent data.
         /// </summary>
         [pbr::OriginalName("EXPIRED_CALL")] ExpiredCall = 18,
         /// <summary>
-        /// The call or the click leading to the call was not found.
+        /// The call or click leading to the imported event can't be found. Make sure
+        /// your data source is set up to include correct identifiers.
         /// </summary>
         [pbr::OriginalName("CALL_NOT_FOUND")] CallNotFound = 19,
         /// <summary>
-        /// The specified conversion_date_time is before the call_start_date_time.
+        /// The call has a `conversion_date_time` that precedes the associated click.
+        /// Make sure your `conversion_date_time` is correct.
         /// </summary>
         [pbr::OriginalName("CONVERSION_PRECEDES_CALL")] ConversionPrecedesCall = 20,
         /// <summary>
-        /// The click associated with the call does not contain conversion tracking
-        /// information.
+        /// At the time of the imported call, conversion tracking was not enabled in
+        /// the effective conversion account of the click's Google Ads account.
         /// </summary>
         [pbr::OriginalName("CONVERSION_TRACKING_NOT_ENABLED_AT_CALL_TIME")] ConversionTrackingNotEnabledAtCallTime = 21,
         /// <summary>
-        /// The caller's phone number cannot be parsed. It should be formatted either
-        /// as E.164 "+16502531234", International "+64 3-331 6005" or US national
-        /// number "6502531234".
+        /// Make sure phone numbers are formatted as E.164 (+16502531234),
+        /// International (+64 3-331 6005), or US national number (6502531234).
         /// </summary>
         [pbr::OriginalName("UNPARSEABLE_CALLERS_PHONE_NUMBER")] UnparseableCallersPhoneNumber = 22,
         /// <summary>
-        /// A conversion with this timestamp already exists for this click. To upload
-        /// another conversion, use a different timestamp.
+        /// The imported event has the same click and `conversion_date_time` as an
+        /// existing conversion. Use a unique `conversion_date_time` or order ID for
+        /// each unique event and try again.
         /// </summary>
         [pbr::OriginalName("CLICK_CONVERSION_ALREADY_EXISTS")] ClickConversionAlreadyExists = 23,
         /// <summary>
-        /// A conversion with this timestamp already exists for this call. To upload
-        /// another conversion, use a different timestamp.
+        /// The imported call has the same `conversion_date_time` as an existing
+        /// conversion. Make sure your `conversion_date_time` correctly configured
+        /// and try again.
         /// </summary>
         [pbr::OriginalName("CALL_CONVERSION_ALREADY_EXISTS")] CallConversionAlreadyExists = 24,
         /// <summary>
-        /// This conversion has the same click and timestamp as another conversion in
-        /// the request. To upload another conversion for this click, use a
-        /// different timestamp.
+        /// Multiple events have the same click and `conversion_date_time`. Make sure
+        /// your `conversion_date_time` is correctly configured and try again.
         /// </summary>
         [pbr::OriginalName("DUPLICATE_CLICK_CONVERSION_IN_REQUEST")] DuplicateClickConversionInRequest = 25,
         /// <summary>
-        /// This conversion has the same call and timestamp as another conversion in
-        /// the request. To upload another conversion for this call, use a
-        /// different timestamp.
+        /// Multiple events have the same call and `conversion_date_time`. Make sure
+        /// your `conversion_date_time` is correctly configured and try again.
         /// </summary>
         [pbr::OriginalName("DUPLICATE_CALL_CONVERSION_IN_REQUEST")] DuplicateCallConversionInRequest = 26,
         /// <summary>
-        /// The custom variable is not enabled.
+        /// Enable the custom variable in your conversion settings and try again.
         /// </summary>
         [pbr::OriginalName("CUSTOM_VARIABLE_NOT_ENABLED")] CustomVariableNotEnabled = 28,
         /// <summary>
-        /// The value of the custom variable contains personally identifiable
-        /// information (PII), such as an email address or phone number.
+        /// Can't import events with custom variables containing
+        /// personally-identifiable information (PII). Remove these variables and try
+        /// again.
         /// </summary>
         [pbr::OriginalName("CUSTOM_VARIABLE_VALUE_CONTAINS_PII")] CustomVariableValueContainsPii = 29,
         /// <summary>
-        /// The click associated with the given identifier or iOS URL parameter isn't
-        /// from the account where conversion tracking is set up.
+        /// The click from the imported event is associated with a different Google
+        /// Ads account. Make sure you're importing to the correct account.
         /// </summary>
         [pbr::OriginalName("INVALID_CUSTOMER_FOR_CLICK")] InvalidCustomerForClick = 30,
         /// <summary>
-        /// The click associated with the given call isn't from the account where
-        /// conversion tracking is set up.
+        /// The click from the call is associated with a different Google Ads
+        /// account. Make sure you're importing to the correct account. Query
+        /// conversion_tracking_setting.google_ads_conversion_customer on Customer to
+        /// identify the correct account.
         /// </summary>
         [pbr::OriginalName("INVALID_CUSTOMER_FOR_CALL")] InvalidCustomerForCall = 31,
         /// <summary>
-        /// The conversion can't be uploaded because the conversion source didn't
-        /// comply with the App Tracking Transparency (ATT) policy or the person who
-        /// converted didn't consent to tracking.
+        /// The connversion can't be imported because the conversion source didn't
+        /// comply with Apple App Transparency Tracking (ATT) policies or because the
+        /// customer didn't consent to tracking.
         /// </summary>
         [pbr::OriginalName("CONVERSION_NOT_COMPLIANT_WITH_ATT_POLICY")] ConversionNotCompliantWithAttPolicy = 32,
         /// <summary>
-        /// No click was found for the provided user identifiers. This may be because
-        /// the conversion did not come from a Google Ads campaign.
+        /// The click can't be found for the specified identifiers. This may be
+        /// because it did not come from a Google Ads campaign.
         /// </summary>
         [pbr::OriginalName("CLICK_NOT_FOUND")] ClickNotFound = 33,
         /// <summary>
-        /// The provided user identifier is not a SHA-256 hash. It is either unhashed
-        /// or hashed using a different hash function.
+        /// Make sure you hash user provided data using SHA-256 and ensure you are
+        /// normalizing according to the guidelines.
         /// </summary>
         [pbr::OriginalName("INVALID_USER_IDENTIFIER")] InvalidUserIdentifier = 34,
         /// <summary>
-        /// Conversion actions which use an external attribution model cannot be used
-        /// with UserIdentifier.
+        /// User provided data can't be used with external attribution models. Use a
+        /// different attribution model or omit user identifiers and try again.
         /// </summary>
         [pbr::OriginalName("EXTERNALLY_ATTRIBUTED_CONVERSION_ACTION_NOT_PERMITTED_WITH_USER_IDENTIFIER")] ExternallyAttributedConversionActionNotPermittedWithUserIdentifier = 35,
         /// <summary>
-        /// The provided user identifier is not supported. ConversionUploadService
-        /// only supports hashed_email and hashed_phone_number.
+        /// The provided user identifiers are not supported. Use only hashed email
+        /// or phone number and try again.
         /// </summary>
         [pbr::OriginalName("UNSUPPORTED_USER_IDENTIFIER")] UnsupportedUserIdentifier = 36,
         /// <summary>
-        /// gbraid and wbraid are both set in the request. Only one is allowed.
+        /// Can't use both gbraid and wbraid parameters. Use only 1 and try again.
         /// </summary>
         [pbr::OriginalName("GBRAID_WBRAID_BOTH_SET")] GbraidWbraidBothSet = 38,
         /// <summary>
-        /// The specified wbraid could not be decoded.
+        /// Can't parse event import data. Check if your wbraid parameter was
+        /// not modified and try again.
         /// </summary>
         [pbr::OriginalName("UNPARSEABLE_WBRAID")] UnparseableWbraid = 39,
         /// <summary>
-        /// The specified gbraid could not be decoded.
+        /// Can't parse event import data. Check if your gbraid parameter was
+        /// not modified and try again.
         /// </summary>
         [pbr::OriginalName("UNPARSEABLE_GBRAID")] UnparseableGbraid = 40,
         /// <summary>
-        /// Conversion actions which use the one-per-click counting type cannot be
-        /// used with gbraid or wbraid.
+        /// Conversion actions that use one-per-click counting can't be used with
+        /// gbraid or wbraid parameters.
         /// </summary>
         [pbr::OriginalName("ONE_PER_CLICK_CONVERSION_ACTION_NOT_PERMITTED_WITH_BRAID")] OnePerClickConversionActionNotPermittedWithBraid = 46,
         /// <summary>
-        /// Per our customer data policies, enhanced conversions have been prohibited
-        /// in your account. If you have any questions, contact your Google
-        /// representative.
+        /// Enhanced conversions can't be used for this account because of Google
+        /// customer data policies. Contact your Google representative.
         /// </summary>
         [pbr::OriginalName("CUSTOMER_DATA_POLICY_PROHIBITS_ENHANCED_CONVERSIONS")] CustomerDataPolicyProhibitsEnhancedConversions = 47,
         /// <summary>
-        /// The customer has not accepted the customer data terms in the conversion
-        /// settings page.
+        /// Make sure you agree to the customer data processing terms in conversion
+        /// settings and try again. You can check your setting by querying
+        /// conversion_tracking_setting.accepted_customer_data_terms on Customer.
         /// </summary>
         [pbr::OriginalName("CUSTOMER_NOT_ACCEPTED_CUSTOMER_DATA_TERMS")] CustomerNotAcceptedCustomerDataTerms = 48,
         /// <summary>
-        /// The order_id contains personally identifiable information (PII), such as
-        /// an email address or phone number.
+        /// Can't import events with order IDs containing personally-identifiable
+        /// information (PII).
         /// </summary>
         [pbr::OriginalName("ORDER_ID_CONTAINS_PII")] OrderIdContainsPii = 49,
         /// <summary>
-        /// The customer has not enabled enhanced conversions for leads in the
-        /// conversion settings page.
+        /// Make sure you've turned on enhanced conversions for leads in conversion
+        /// settings and try again. You can check your setting by querying
+        /// conversion_tracking_setting.enhanced_conversions_for_leads_enabled on
+        /// Customer.
         /// </summary>
         [pbr::OriginalName("CUSTOMER_NOT_ENABLED_ENHANCED_CONVERSIONS_FOR_LEADS")] CustomerNotEnabledEnhancedConversionsForLeads = 50,
       }

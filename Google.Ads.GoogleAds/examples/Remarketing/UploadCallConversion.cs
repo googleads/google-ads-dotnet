@@ -15,12 +15,12 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V13.Errors;
-using Google.Ads.GoogleAds.V13.Services;
+using Google.Ads.GoogleAds.V14.Errors;
+using Google.Ads.GoogleAds.V14.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V13
+namespace Google.Ads.GoogleAds.Examples.V14
 {
     /// <summary>
     /// This code example imports offline call conversion values for calls related to the
@@ -48,10 +48,10 @@ namespace Google.Ads.GoogleAds.Examples.V13
             public long ConversionActionId { get; set; }
 
             /// <summary>
-            /// The caller ID in E.164 format with preceding '+' sign. e.g. "+16502531234".
+            /// The caller ID in E.164 format with preceding '+' sign. e.g. "+18005550100".
             /// </summary>
             [Option("callerId", Required = true, HelpText =
-                "The caller ID in E.164 format with preceding '+' sign. e.g. '+16502531234'.")]
+                "The caller ID in E.164 format with preceding '+' sign. e.g. '+18005550100'.")]
             public string CallerId { get; set; }
 
             /// <summary>
@@ -121,7 +121,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
         /// <param name="customerId">The Google Ads customer ID for whom the conversion will
         /// be imported.</param>
         /// <param name="callerId">The caller ID in E.164 format with preceding '+' sign. e.g.
-        /// "+16502531234".</param>
+        /// "+18005550100".</param>
         /// <param name="conversionActionId">The ID of the conversion action</param>
         /// <param name="callStartTime">The call start time in "yyyy-mm-dd hh:mm:ss+|-hh:mm"
         /// format.</param>
@@ -140,7 +140,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
         {
             // Get the ConversionUploadService.
             ConversionUploadServiceClient conversionUploadService =
-                client.GetService(Services.V13.ConversionUploadService);
+                client.GetService(Services.V14.ConversionUploadService);
 
             // Create a call conversion by specifying currency as USD.
             CallConversion callConversion = new CallConversion()

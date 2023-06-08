@@ -15,24 +15,22 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V13.Common;
-using Google.Ads.GoogleAds.V13.Errors;
-using Google.Ads.GoogleAds.V13.Resources;
-using Google.Ads.GoogleAds.V13.Services;
-using Google.Api.Gax;
+using Google.Ads.GoogleAds.V14.Common;
+using Google.Ads.GoogleAds.V14.Errors;
+using Google.Ads.GoogleAds.V14.Resources;
+using Google.Ads.GoogleAds.V14.Services;
 using Google.LongRunning;
 using Google.Protobuf.WellKnownTypes;
 using System;
 using System.Collections.Generic;
-using System.Collections.Specialized;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using static Google.Ads.GoogleAds.V13.Enums.CustomerMatchUploadKeyTypeEnum.Types;
-using static Google.Ads.GoogleAds.V13.Enums.OfflineUserDataJobStatusEnum.Types;
-using static Google.Ads.GoogleAds.V13.Enums.OfflineUserDataJobTypeEnum.Types;
+using static Google.Ads.GoogleAds.V14.Enums.CustomerMatchUploadKeyTypeEnum.Types;
+using static Google.Ads.GoogleAds.V14.Enums.OfflineUserDataJobStatusEnum.Types;
+using static Google.Ads.GoogleAds.V14.Enums.OfflineUserDataJobTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V13
+namespace Google.Ads.GoogleAds.Examples.V14
 {
     /// <summary>
     /// Creates operations to add members to a user list (a.k.a. audience) using an
@@ -180,7 +178,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
         private string CreateCustomerMatchUserList(GoogleAdsClient client, long customerId)
         {
             // Get the UserListService.
-            UserListServiceClient service = client.GetService(Services.V13.UserListService);
+            UserListServiceClient service = client.GetService(Services.V14.UserListService);
 
             // Creates the user list.
             UserList userList = new UserList()
@@ -232,7 +230,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
         {
             // Get the OfflineUserDataJobService.
             OfflineUserDataJobServiceClient service = client.GetService(
-                Services.V13.OfflineUserDataJobService);
+                Services.V14.OfflineUserDataJobService);
 
             string offlineUserDataJobResourceName;
             if (offlineUserDataJobId == null)
@@ -328,7 +326,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
             string offlineUserDataJobResourceName)
         {
             // Get the GoogleAdsService.
-            GoogleAdsServiceClient service = client.GetService(Services.V13.GoogleAdsService);
+            GoogleAdsServiceClient service = client.GetService(Services.V14.GoogleAdsService);
 
             string query = "SELECT offline_user_data_job.resource_name, " +
                 "offline_user_data_job.id, offline_user_data_job.status, " +
@@ -382,28 +380,28 @@ namespace Google.Ads.GoogleAds.Examples.V13
 
             // The first user data has an email address and a phone number.
             Dictionary<string, string> rawRecord1 = new Dictionary<string, string>();
-            rawRecord1.Add("email", "test@gmail.com");
+            rawRecord1.Add("email", "dana@example.com");
             // Phone number to be converted to E.164 format, with a leading '+' as required.
             // This includes whitespace that will be removed later.
-            rawRecord1.Add("phone", "+1 234 5678910");
+            rawRecord1.Add("phone", "+1 800 5550101");
 
             // The second user data has an email address, a mailing address, and a phone number.
             Dictionary<string, string> rawRecord2 = new Dictionary<string, string>();
             // Email address that includes a period (.) before the Gmail domain.
-            rawRecord2.Add("email", "test.2@gmail.com");
+            rawRecord2.Add("email", "alex.2@example.com");
             // Address that includes all four required elements: first name, last name, country
             // code, and postal code.
-            rawRecord2.Add("firstName", "John");
-            rawRecord2.Add("lastName", "Doe");
+            rawRecord2.Add("firstName", "Alex");
+            rawRecord2.Add("lastName", "Quinn");
             rawRecord2.Add("countryCode", "US");
-            rawRecord2.Add("postalCode", "10011");
+            rawRecord2.Add("postalCode", "94045");
             // Phone number to be converted to E.164 format, with a leading '+' as required.
             // This includes whitespace that will be removed later.
-            rawRecord2.Add("phone", "+1 234 5678911");
+            rawRecord2.Add("phone", "+1 800 5550102");
 
             // The third user data only has an email address.
             Dictionary<string, string> rawRecord3 = new Dictionary<string, string>();
-            rawRecord3.Add("email", "test3@gmail.com");
+            rawRecord3.Add("email", "charlie@example.com");
 
             // Adds the raw records to the raw input list.
             rawRecords.Add(rawRecord1);
@@ -533,7 +531,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
             // [START add_customer_match_user_list_5]
             // Get the GoogleAdsService.
             GoogleAdsServiceClient service =
-                client.GetService(Services.V13.GoogleAdsService);
+                client.GetService(Services.V14.GoogleAdsService);
 
             // Creates a query that retrieves the user list.
             string query =
