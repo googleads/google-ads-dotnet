@@ -16,14 +16,14 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V13.Errors;
-using Google.Ads.GoogleAds.V13.Resources;
-using Google.Ads.GoogleAds.V13.Services;
+using Google.Ads.GoogleAds.V14.Errors;
+using Google.Ads.GoogleAds.V14.Resources;
+using Google.Ads.GoogleAds.V14.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V13.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V14.Enums.AdGroupCriterionStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V13
+namespace Google.Ads.GoogleAds.Examples.V14
 {
     /// <summary>
     /// This code example illustrates udating a keyword.
@@ -89,7 +89,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
         {
             // Get the CampaignCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V13.AdGroupCriterionService);
+                client.GetService(Services.V14.AdGroupCriterionService);
 
             // Create the keyword for update.
             AdGroupCriterion keyword = new AdGroupCriterion()

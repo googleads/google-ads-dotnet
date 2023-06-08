@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V13.Errors;
-using Google.Ads.GoogleAds.V13.Resources;
-using Google.Ads.GoogleAds.V13.Services;
+using Google.Ads.GoogleAds.V14.Errors;
+using Google.Ads.GoogleAds.V14.Resources;
+using Google.Ads.GoogleAds.V14.Services;
 using Google.Api.Gax;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V13.Enums.BillingSetupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V14.Enums.BillingSetupStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V13
+namespace Google.Ads.GoogleAds.Examples.V14
 {
     /// <summary>
     /// This code example gets all BillingSetup objects available for the specified customer ID.
@@ -78,7 +78,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
         {
             // Get the GoogleAdsServiceClient.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V13.GoogleAdsService);
+                Services.V14.GoogleAdsService);
 
             // Define a GAQL query to retrieve all billing setup information.
             string searchQuery = @"

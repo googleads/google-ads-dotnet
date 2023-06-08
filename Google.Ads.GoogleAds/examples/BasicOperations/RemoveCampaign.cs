@@ -15,12 +15,12 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V13.Errors;
-using Google.Ads.GoogleAds.V13.Services;
+using Google.Ads.GoogleAds.V14.Errors;
+using Google.Ads.GoogleAds.V14.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V13
+namespace Google.Ads.GoogleAds.Examples.V14
 {
     /// <summary>
     /// This code example removes a campaign. To get campaigns, run GetCampaigns.cs.
@@ -77,7 +77,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
         public void Run(GoogleAdsClient client, long customerId, long campaignId)
         {
             // Get the CampaignService.
-            CampaignServiceClient campaignService = client.GetService(Services.V13.CampaignService);
+            CampaignServiceClient campaignService = client.GetService(Services.V14.CampaignService);
 
             // Create the operation, and set the Remove field to the resource name of the
             // campaign to be removed.

@@ -1,3 +1,8 @@
+16.1.0
+======
+- Added support for version 14.0 of the Google Ads API.
+- Renamed the HotelAds examples directory to "Travel".
+
 16.0.0
 ======
 - Added support for version v13.1 of the Google Ads API.

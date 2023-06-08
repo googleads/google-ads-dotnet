@@ -15,13 +15,13 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V13.Errors;
-using Google.Ads.GoogleAds.V13.Resources;
-using Google.Ads.GoogleAds.V13.Services;
+using Google.Ads.GoogleAds.V14.Errors;
+using Google.Ads.GoogleAds.V14.Resources;
+using Google.Ads.GoogleAds.V14.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V13
+namespace Google.Ads.GoogleAds.Examples.V14
 {
     /// <summary>
     /// This code example links the specified feed item to the specified feed item set. The
@@ -104,7 +104,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
         {
             // Get the FeedItemSetLinkService.
             FeedItemSetLinkServiceClient feedItemSetLinkService = client.GetService(
-                Services.V13.FeedItemSetLinkService);
+                Services.V14.FeedItemSetLinkService);
 
             // Creates a new feed item set link that binds the specified feed item set and feed
             // item.

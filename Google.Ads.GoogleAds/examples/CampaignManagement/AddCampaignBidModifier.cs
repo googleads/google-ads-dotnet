@@ -15,16 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V13.Common;
-using Google.Ads.GoogleAds.V13.Errors;
-using Google.Ads.GoogleAds.V13.Resources;
-using Google.Ads.GoogleAds.V13.Services;
+using Google.Ads.GoogleAds.V14.Common;
+using Google.Ads.GoogleAds.V14.Errors;
+using Google.Ads.GoogleAds.V14.Resources;
+using Google.Ads.GoogleAds.V14.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V13.Enums.InteractionTypeEnum.Types;
-using static Google.Ads.GoogleAds.V13.Enums.ResponseContentTypeEnum.Types;
+using static Google.Ads.GoogleAds.V14.Enums.InteractionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V14.Enums.ResponseContentTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V13
+namespace Google.Ads.GoogleAds.Examples.V14
 {
     /// <summary>
     /// This code example demonstrates how to add a campaign-level bid modifier for call
@@ -93,7 +93,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
         {
             // Get the CampaignBidModifierService.
             CampaignBidModifierServiceClient campaignBidModifierService =
-                client.GetService(Services.V13.CampaignBidModifierService);
+                client.GetService(Services.V14.CampaignBidModifierService);
 
             String campaignResourceName = ResourceNames.Campaign(customerId, campaignId);
 

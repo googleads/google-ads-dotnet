@@ -15,17 +15,17 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V13.Common;
-using Google.Ads.GoogleAds.V13.Errors;
-using Google.Ads.GoogleAds.V13.Services;
+using Google.Ads.GoogleAds.V14.Common;
+using Google.Ads.GoogleAds.V14.Errors;
+using Google.Ads.GoogleAds.V14.Services;
 using System;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
-using static Google.Ads.GoogleAds.V13.Enums.ConversionAdjustmentTypeEnum.Types;
-using static Google.Ads.GoogleAds.V13.Enums.UserIdentifierSourceEnum.Types;
+using static Google.Ads.GoogleAds.V14.Enums.ConversionAdjustmentTypeEnum.Types;
+using static Google.Ads.GoogleAds.V14.Enums.UserIdentifierSourceEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V13
+namespace Google.Ads.GoogleAds.Examples.V14
 {
     /// <summary>
     /// This code example adjusts an existing conversion by supplying user identifiers so
@@ -78,19 +78,6 @@ namespace Google.Ads.GoogleAds.Examples.V13
             [Option("userAgent", Required = true, HelpText =
                 "The HTTP user agent of the conversion.")]
             public string UserAgent { get; set; }
-
-            /// <summary>
-            /// The restatement value.
-            /// </summary>
-            [Option("restatementValue", Required = true, HelpText = "The restatement value.")]
-            public double? RestatementValue { get; set; }
-
-            /// <summary>
-            /// The currency of the restatement value.
-            /// </summary>
-            [Option("currencyCode", Required = false, HelpText =
-                "The currency of the restatement value.")]
-            public string CurrencyCode { get; set; }
         }
 
         /// <summary>
@@ -105,8 +92,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
             Console.WriteLine(codeExample.Description);
 
             codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.ConversionActionId,
-                options.OrderId, options.ConversionDateTime, options.UserAgent,
-                options.RestatementValue, options.CurrencyCode);
+                options.OrderId, options.ConversionDateTime, options.UserAgent);
         }
 
         private static SHA256 digest = SHA256.Create();
@@ -130,16 +116,13 @@ namespace Google.Ads.GoogleAds.Examples.V13
         /// <param name="conversionDateTime">The date time at which the conversion with the
         /// specified order ID occurred.</param>
         /// <param name="userAgent">The HTTP user agent of the conversion.</param>
-        /// <param name="restatementValue">The restatement value.</param>
-        /// <param name="restatementCurrencyCode">The currency of the restatement value.</param>
         // [START upload_conversion_enhancement]
         public void Run(GoogleAdsClient client, long customerId, long conversionActionId,
-            string orderId, string conversionDateTime, string userAgent, double? restatementValue,
-            string restatementCurrencyCode)
+            string orderId, string conversionDateTime, string userAgent)
         {
             // Get the ConversionAdjustmentUploadService.
             ConversionAdjustmentUploadServiceClient conversionAdjustmentUploadService =
-                client.GetService(Services.V13.ConversionAdjustmentUploadService);
+                client.GetService(Services.V14.ConversionAdjustmentUploadService);
 
             // [START create_adjustment]
             // Creates the enhancement adjustment.
@@ -169,8 +152,8 @@ namespace Google.Ads.GoogleAds.Examples.V13
             {
                 AddressInfo = new OfflineUserAddressInfo()
                 {
-                    HashedFirstName = NormalizeAndHash("Joanna"),
-                    HashedLastName = NormalizeAndHash("Smith"),
+                    HashedFirstName = NormalizeAndHash("Dana"),
+                    HashedLastName = NormalizeAndHash("Quinn"),
                     HashedStreetAddress = NormalizeAndHash("1600 Amphitheatre Pkwy"),
                     City = "Mountain View",
                     State = "CA",
@@ -186,7 +169,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
             {
                 UserIdentifierSource = UserIdentifierSource.FirstParty,
                 // Uses the normalize and hash method specifically for email addresses.
-                HashedEmail = NormalizeAndHashEmailAddress("joannasmith@example.com")
+                HashedEmail = NormalizeAndHashEmailAddress("dana@example.com")
             };
 
             // Adds the user identifiers to the enhancement adjustment.
@@ -201,21 +184,6 @@ namespace Google.Ads.GoogleAds.Examples.V13
                 enhancement.UserAgent = userAgent;
             }
 
-            if (restatementValue != null)
-            {
-                enhancement.RestatementValue = new RestatementValue()
-                {
-                    // Sets the new value of the conversion.
-                    AdjustedValue = restatementValue.Value
-                };
-                // Sets the currency of the new value, if provided. Otherwise, the default currency
-                // from the conversion action is used, and if that is not set then the account
-                // currency is used.
-                if (restatementCurrencyCode != null)
-                {
-                    enhancement.RestatementValue.CurrencyCode = restatementCurrencyCode;
-                }
-            }
             // [END create_adjustment]
             try
             {

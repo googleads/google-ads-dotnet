@@ -20,14 +20,14 @@ using System.Text;
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V13.Common;
-using Google.Ads.GoogleAds.V13.Errors;
-using Google.Ads.GoogleAds.V13.Resources;
-using Google.Ads.GoogleAds.V13.Services;
-using static Google.Ads.GoogleAds.V13.Enums.OfflineUserDataJobStatusEnum.Types;
-using static Google.Ads.GoogleAds.V13.Enums.OfflineUserDataJobTypeEnum.Types;
+using Google.Ads.GoogleAds.V14.Common;
+using Google.Ads.GoogleAds.V14.Errors;
+using Google.Ads.GoogleAds.V14.Resources;
+using Google.Ads.GoogleAds.V14.Services;
+using static Google.Ads.GoogleAds.V14.Enums.OfflineUserDataJobStatusEnum.Types;
+using static Google.Ads.GoogleAds.V14.Enums.OfflineUserDataJobTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V13
+namespace Google.Ads.GoogleAds.Examples.V14
 {
     /// <summary>
     /// This code example uploads offline data for store sales transactions.
@@ -244,7 +244,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
         {
             // Get the OfflineUserDataJobServiceClient.
             OfflineUserDataJobServiceClient offlineUserDataJobServiceClient =
-                client.GetService(Services.V13.OfflineUserDataJobService);
+                client.GetService(Services.V14.OfflineUserDataJobService);
 
             // Ensure that a valid job type is provided.
             if (offlineUserDataJobType != OfflineUserDataJobType.StoreSalesUploadFirstParty &
@@ -523,7 +523,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
                     new UserIdentifier()
                     {
                         // Email addresses must be normalized and hashed.
-                        HashedEmail = NormalizeAndHash("customer@example.com")
+                        HashedEmail = NormalizeAndHash("dana@example.com")
                     },
                     new UserIdentifier()
                     {
@@ -569,8 +569,8 @@ namespace Google.Ads.GoogleAds.Examples.V13
                         AddressInfo = new OfflineUserAddressInfo()
                         {
                             // Names must be normalized and hashed.
-                            HashedFirstName = NormalizeAndHash("John"),
-                            HashedLastName = NormalizeAndHash("Doe"),
+                            HashedFirstName = NormalizeAndHash("Alex"),
+                            HashedLastName = NormalizeAndHash("Quinn"),
                             CountryCode = "US",
                             PostalCode = "10011"
                         }
@@ -667,7 +667,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
             string offlineUserDataJobResourceName)
         {
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V13.GoogleAdsService);
+                client.GetService(Services.V14.GoogleAdsService);
 
             string query = $@"SELECT offline_user_data_job.resource_name,
                     offline_user_data_job.id,

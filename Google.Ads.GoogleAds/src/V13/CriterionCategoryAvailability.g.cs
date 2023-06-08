@@ -708,7 +708,7 @@ namespace Google.Ads.GoogleAds.V13.Common {
     public const int CountryCodeFieldNumber = 4;
     private string countryCode_;
     /// <summary>
-    /// Code of the country.
+    /// The ISO-3166-1 alpha-2 country code associated with the category.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -735,7 +735,7 @@ namespace Google.Ads.GoogleAds.V13.Common {
     public const int LanguageCodeFieldNumber = 5;
     private string languageCode_;
     /// <summary>
-    /// Code of the language.
+    /// ISO 639-1 code of the language associated with the category.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

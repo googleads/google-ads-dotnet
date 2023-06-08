@@ -231,122 +231,124 @@ namespace Google.Ads.GoogleAds.V13.Errors {
         /// </summary>
         [pbr::OriginalName("UNSPECIFIED")] Unspecified = 0,
         /// <summary>
-        /// The received error code is not known in this version.
+        /// Used for return value only. Represents value unknown in this version.
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
-        /// The specified conversion action was created too recently.
-        /// Try the upload again after 4-6 hours have passed since the
-        /// conversion action was created.
+        /// Can't import events to a conversion action that was just created. Try
+        /// importing again in 6 hours.
         /// </summary>
         [pbr::OriginalName("TOO_RECENT_CONVERSION_ACTION")] TooRecentConversionAction = 2,
         /// <summary>
-        /// No conversion action of a supported ConversionActionType that matches the
-        /// provided information can be found for the customer.
+        /// Make sure you specify an active conversion action that can be adjusted.
         /// </summary>
         [pbr::OriginalName("INVALID_CONVERSION_ACTION")] InvalidConversionAction = 3,
         /// <summary>
-        /// A retraction was already reported for this conversion.
+        /// The conversion was already retracted. This adjustment was not processed.
         /// </summary>
         [pbr::OriginalName("CONVERSION_ALREADY_RETRACTED")] ConversionAlreadyRetracted = 4,
         /// <summary>
-        /// A conversion for the supplied combination of conversion
-        /// action and conversion identifier could not be found.
+        /// The conversion for this conversion action and conversion identifier can't
+        /// be found. Make sure your conversion identifiers are associated with the
+        /// correct conversion action and try again.
         /// </summary>
         [pbr::OriginalName("CONVERSION_NOT_FOUND")] ConversionNotFound = 5,
         /// <summary>
-        /// The specified conversion has already expired. Conversions expire after 55
-        /// days, after which adjustments cannot be reported against them.
+        /// Adjustment can't be made to a conversion that occurred more than 54 days
+        /// ago.
         /// </summary>
         [pbr::OriginalName("CONVERSION_EXPIRED")] ConversionExpired = 6,
         /// <summary>
-        /// The supplied adjustment date time precedes that of the original
-        /// conversion.
+        /// Adjustment has an `adjustment_date_time` that occurred before the
+        /// associated conversion. Make sure your `adjustment_date_time` is correct
+        /// and try again.
         /// </summary>
         [pbr::OriginalName("ADJUSTMENT_PRECEDES_CONVERSION")] AdjustmentPrecedesConversion = 7,
         /// <summary>
-        /// A restatement with a more recent adjustment date time was already
-        /// reported for this conversion.
+        /// More recent adjustment `adjustment_date_time` has already been reported
+        /// for the associated conversion.  Make sure your adjustment
+        /// `adjustment_date_time` is correct and try again.
         /// </summary>
         [pbr::OriginalName("MORE_RECENT_RESTATEMENT_FOUND")] MoreRecentRestatementFound = 8,
         /// <summary>
-        /// The conversion was created too recently.
+        /// Adjustment can't be recorded because the conversion occurred too
+        /// recently. Try adjusting a conversion that occurred at least 24 hours ago.
         /// </summary>
         [pbr::OriginalName("TOO_RECENT_CONVERSION")] TooRecentConversion = 9,
         /// <summary>
-        /// Restatements cannot be reported for a conversion action that always uses
-        /// the default value.
+        /// Can't make an adjustment to a conversion that is set up to use the
+        /// default value. Check your conversion action value setting and try again.
         /// </summary>
         [pbr::OriginalName("CANNOT_RESTATE_CONVERSION_ACTION_THAT_ALWAYS_USES_DEFAULT_CONVERSION_VALUE")] CannotRestateConversionActionThatAlwaysUsesDefaultConversionValue = 10,
         /// <summary>
-        /// The request contained more than 2000 adjustments.
+        /// Try uploading fewer than 2001 adjustments in a single API request.
         /// </summary>
         [pbr::OriginalName("TOO_MANY_ADJUSTMENTS_IN_REQUEST")] TooManyAdjustmentsInRequest = 11,
         /// <summary>
-        /// The conversion has been adjusted too many times.
+        /// The conversion has already been adjusted the maximum number of times.
+        /// Make sure you're only making necessary adjustment to existing conversion.
         /// </summary>
         [pbr::OriginalName("TOO_MANY_ADJUSTMENTS")] TooManyAdjustments = 12,
         /// <summary>
-        /// A restatement with this timestamp already exists for this conversion. To
-        /// upload another adjustment, use a different timestamp.
+        /// The conversion has prior a restatement with the same
+        /// `adjustment_date_time`. Make sure your adjustment has the correct and
+        /// unique `adjustment_date_time` and try again.
         /// </summary>
         [pbr::OriginalName("RESTATEMENT_ALREADY_EXISTS")] RestatementAlreadyExists = 13,
         /// <summary>
-        /// This adjustment has the same timestamp as another adjustment in the
-        /// request for this conversion. To upload another adjustment, use a
-        /// different timestamp.
+        /// Imported adjustment has a duplicate conversion adjustment with same
+        /// `adjustment_date_time`. Make sure your adjustment has the correct
+        /// `adjustment_date_time` and try again.
         /// </summary>
         [pbr::OriginalName("DUPLICATE_ADJUSTMENT_IN_REQUEST")] DuplicateAdjustmentInRequest = 14,
         /// <summary>
-        /// The customer has not accepted the customer data terms in the conversion
-        /// settings page.
+        /// Make sure you agree to the customer data processing terms in conversion
+        /// settings and try again.
         /// </summary>
         [pbr::OriginalName("CUSTOMER_NOT_ACCEPTED_CUSTOMER_DATA_TERMS")] CustomerNotAcceptedCustomerDataTerms = 15,
         /// <summary>
-        /// The enhanced conversion settings of the conversion action supplied is
-        /// not eligible for enhancements.
+        /// Can't use enhanced conversions with the specified conversion action.
         /// </summary>
         [pbr::OriginalName("CONVERSION_ACTION_NOT_ELIGIBLE_FOR_ENHANCEMENT")] ConversionActionNotEligibleForEnhancement = 16,
         /// <summary>
-        /// The provided user identifier is not a SHA-256 hash. It is either unhashed
-        /// or hashed using a different hash function.
+        /// Make sure you hash user provided data using SHA-256 and ensure you are
+        /// normalizing according to the guidelines.
         /// </summary>
         [pbr::OriginalName("INVALID_USER_IDENTIFIER")] InvalidUserIdentifier = 17,
         /// <summary>
-        /// The provided user identifier is not supported.
-        /// ConversionAdjustmentUploadService only supports hashed_email,
-        /// hashed_phone_number, and address_info.
+        /// Use user provided data such as emails or phone numbers hashed using
+        /// SHA-256 and try again.
         /// </summary>
         [pbr::OriginalName("UNSUPPORTED_USER_IDENTIFIER")] UnsupportedUserIdentifier = 18,
         /// <summary>
-        /// Cannot set both gclid_date_time_pair and order_id.
+        /// Cannot set both gclid_date_time_pair and order_id. Use only 1 type and
+        /// try again.
         /// </summary>
         [pbr::OriginalName("GCLID_DATE_TIME_PAIR_AND_ORDER_ID_BOTH_SET")] GclidDateTimePairAndOrderIdBothSet = 20,
         /// <summary>
-        /// An enhancement with this conversion action and order_id already exists
-        /// for this conversion.
+        /// Conversion already has enhancements with the same Order ID and conversion
+        /// action. Make sure your data is correctly configured and try again.
         /// </summary>
         [pbr::OriginalName("CONVERSION_ALREADY_ENHANCED")] ConversionAlreadyEnhanced = 21,
         /// <summary>
-        /// This enhancement has the same conversion action and order_id as
-        /// another enhancement in the request.
+        /// Multiple enhancements have the same conversion action and Order ID.  Make
+        /// sure your data is correctly configured and try again.
         /// </summary>
         [pbr::OriginalName("DUPLICATE_ENHANCEMENT_IN_REQUEST")] DuplicateEnhancementInRequest = 22,
         /// <summary>
-        /// Per our customer data policies, enhancement has been prohibited in your
-        /// account. If you have any questions, contact your Google
-        /// representative.
+        /// Enhanced conversions can't be used for this account because of Google
+        /// customer data policies. Contact your Google representative.
         /// </summary>
         [pbr::OriginalName("CUSTOMER_DATA_POLICY_PROHIBITS_ENHANCEMENT")] CustomerDataPolicyProhibitsEnhancement = 23,
         /// <summary>
-        /// The conversion adjustment is for a conversion action of type WEBPAGE, but
-        /// does not have an order_id. The order_id is required for an adjustment for
-        /// a WEBPAGE conversion action.
+        /// Adjustment for website conversion requires Order ID (ie, transaction ID).
+        /// Make sure your website tags capture Order IDs and you send the same Order
+        /// IDs with your adjustment.
         /// </summary>
         [pbr::OriginalName("MISSING_ORDER_ID_FOR_WEBPAGE")] MissingOrderIdForWebpage = 24,
         /// <summary>
-        /// The order_id contains personally identifiable information (PII), such as
-        /// an email address or phone number.
+        /// Can't use adjustment with Order IDs containing personally-identifiable
+        /// information (PII).
         /// </summary>
         [pbr::OriginalName("ORDER_ID_CONTAINS_PII")] OrderIdContainsPii = 25,
       }

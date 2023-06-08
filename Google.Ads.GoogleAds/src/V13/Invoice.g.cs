@@ -1439,7 +1439,6 @@ namespace Google.Ads.GoogleAds.V13.Resources {
     public static partial class Types {
       /// <summary>
       /// Represents a summarized view at account level.
-      /// AccountSummary fields are accessible only to customers on the allow-list.
       /// </summary>
       public sealed partial class AccountSummary : pb::IMessage<AccountSummary>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2762,10 +2761,9 @@ namespace Google.Ads.GoogleAds.V13.Resources {
         public const int ServedAmountMicrosFieldNumber = 18;
         private long servedAmountMicros_;
         /// <summary>
-        /// Output only. Accessible only to customers on the allow-list.
-        /// The pretax served amount attributable to this budget during the service
-        /// period, in micros. This is only useful to reconcile invoice and delivery
-        /// data.
+        /// Output only. The pretax served amount attributable to this budget during
+        /// the service period, in micros. This is only useful to reconcile invoice
+        /// and delivery data.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2793,9 +2791,8 @@ namespace Google.Ads.GoogleAds.V13.Resources {
         public const int BilledAmountMicrosFieldNumber = 19;
         private long billedAmountMicros_;
         /// <summary>
-        /// Output only. Accessible only to customers on the allow-list.
-        /// The pretax billed amount attributable to this budget during the
-        /// service period, in micros. This does not account for any adjustments.
+        /// Output only. The pretax billed amount attributable to this budget during
+        /// the service period, in micros. This does not account for any adjustments.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2823,9 +2820,8 @@ namespace Google.Ads.GoogleAds.V13.Resources {
         public const int OverdeliveryAmountMicrosFieldNumber = 20;
         private long overdeliveryAmountMicros_;
         /// <summary>
-        /// Output only. Accessible only to customers on the allow-list.
-        /// The pretax overdelivery amount attributable to this budget during the
-        /// service period, in micros (negative value).
+        /// Output only. The pretax overdelivery amount attributable to this budget
+        /// during the service period, in micros (negative value).
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2853,9 +2849,8 @@ namespace Google.Ads.GoogleAds.V13.Resources {
         public const int InvalidActivityAmountMicrosFieldNumber = 21;
         private long invalidActivityAmountMicros_;
         /// <summary>
-        /// Output only. Accessible only to customers on the allow-list.
-        /// The pretax invalid activity amount attributable to this budget in
-        /// previous months, in micros (negative value).
+        /// Output only. The pretax invalid activity amount attributable to this
+        /// budget in previous months, in micros (negative value).
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
