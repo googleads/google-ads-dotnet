@@ -19,6 +19,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Ads.GoogleAds.Core",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Ads.GoogleAds.Core.Tests", "..\Google.Ads.GoogleAds.Core\tests\Google.Ads.GoogleAds.Core.Tests.csproj", "{434E2495-5086-4CC8-BBBF-E12647B4CC80}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Ads.GoogleAds.Extensions", "..\Google.Ads.GoogleAds.Extensions\src\Google.Ads.GoogleAds.Extensions.csproj", "{67ED23E8-CEF8-441B-A2EC-FC1639BC0F71}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Ads.GoogleAds.Extensions.Tests", "..\Google.Ads.GoogleAds.Extensions\tests\Google.Ads.GoogleAds.Extensions.Tests.csproj", "{570BA0FF-D06D-420F-9226-41D269D684E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{434E2495-5086-4CC8-BBBF-E12647B4CC80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{434E2495-5086-4CC8-BBBF-E12647B4CC80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{434E2495-5086-4CC8-BBBF-E12647B4CC80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67ED23E8-CEF8-441B-A2EC-FC1639BC0F71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67ED23E8-CEF8-441B-A2EC-FC1639BC0F71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67ED23E8-CEF8-441B-A2EC-FC1639BC0F71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67ED23E8-CEF8-441B-A2EC-FC1639BC0F71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{570BA0FF-D06D-420F-9226-41D269D684E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{570BA0FF-D06D-420F-9226-41D269D684E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{570BA0FF-D06D-420F-9226-41D269D684E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{570BA0FF-D06D-420F-9226-41D269D684E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
