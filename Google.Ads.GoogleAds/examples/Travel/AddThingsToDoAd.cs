@@ -127,7 +127,8 @@ namespace Google.Ads.GoogleAds.Examples.V14
             {
                 Name = "Interplanetary Cruise Budget #" + ExampleUtilities.GetRandomString(),
                 DeliveryMethod = BudgetDeliveryMethod.Standard,
-                AmountMicros = 500000
+                AmountMicros = 500000,
+                ExplicitlyShared = true
             };
 
             // Create the operation.
@@ -183,13 +184,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
                 NetworkSettings = new NetworkSettings
                 {
                     TargetGoogleSearch = true
-                },
-
-                // Optional: Set the start date.
-                StartDate = DateTime.Now.AddDays(1).ToString("yyyyMMdd"),
-
-                // Optional: Set the end date.
-                EndDate = DateTime.Now.AddYears(1).ToString("yyyyMMdd"),
+                }
             };
             // [END add_things_to_do_ad_1]
 
@@ -200,7 +195,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
             );
 
             string campaignResourceName = response.Results[0].ResourceName;
-            Console.WriteLine("Campaign with resource ID = '{0}' was added.", campaignResourceName);
+            Console.WriteLine("Campaign with resource name = '{0}' was added.", campaignResourceName);
 
             return campaignResourceName;
         }
@@ -235,7 +230,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
             );
 
             string adGroupResourceName = response.Results[0].ResourceName;
-            Console.WriteLine("Ad group with resource ID = '{0}' was added.", adGroupResourceName);
+            Console.WriteLine("Ad group with resource name = '{0}' was added.", adGroupResourceName);
 
             return adGroupResourceName;
         }
@@ -277,8 +272,9 @@ namespace Google.Ads.GoogleAds.Examples.V14
             );
 
             string adGroupAdResourceName = response.Results[0].ResourceName;
-            Console.WriteLine("Ad group ad with resource ID = '{0}' was added.",
+            Console.WriteLine("Ad group ad with resource name = '{0}' was added.",
                 adGroupAdResourceName);
         }
+        // [END add_things_to_do_ad_3]
     }
 }
