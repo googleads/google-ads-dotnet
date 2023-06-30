@@ -75,7 +75,9 @@ namespace Google.Ads.GoogleAds.Examples.V14
             public long CustomerId { get; set; }
 
             /// <summary>
-            /// The Google Ads customer ID.
+            /// The place ID of a hotel property. A place ID uniquely identifies a place in the
+            /// Google Places database. See
+            /// https://developers.google.com/places/web-service-place-id to learn more.
             /// </summary>
             [Option("placeId", Required = true, HelpText =
                 "The place ID of a hotel property. A place ID uniquely identifies a place in the" +
@@ -84,7 +86,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
             public string PlaceId { get; set; }
         }
 
-         /// <summary>
+        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
