@@ -38,7 +38,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
 {
     /// <summary>
     /// This example creates a Things to do campaign, an ad group and a Things to do ad.
-    /// Prerequisite: You need to have an access to the Things to Do Center. The integration
+    /// Prerequisite: You need to have access to a Things to Do Center account. The integration
     /// instructions can be found at: https://support.google.com/google-ads/answer/13387362.
     /// </summary>
     public class AddThingsToDoAd : ExampleBase
@@ -84,7 +84,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
         /// </summary>
         public override string Description => "This example creates a Things to do campaign, an " +
             "ad group and a Things to do ad.\n" +
-            "Prerequisite: You need to have an access to the Things to Do Center. The " +
+            "Prerequisite: You need to have access to a Things to Do Center account. The " +
             "integration instructions can be found at: " +
             "https://support.google.com/google-ads/answer/13387362.";
 
