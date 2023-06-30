@@ -158,7 +158,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
             // Get the CampaignService.
             CampaignServiceClient campaignService = client.GetService(Services.V14.CampaignService);
 
-            // [START add_things_to_do_ad_1]
+            // [START add_things_to_do_ad]
             // Creates a campaign.
             Campaign campaign = new Campaign()
             {
@@ -186,7 +186,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
                     TargetGoogleSearch = true
                 }
             };
-            // [END add_things_to_do_ad_1]
+            // [END add_things_to_do_ad]
 
             MutateCampaignsResponse response = campaignService.MutateCampaigns(
                 customerId.ToString(), new CampaignOperation[] { new CampaignOperation() {
