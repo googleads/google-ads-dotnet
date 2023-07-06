@@ -1,3 +1,7 @@
+16.2.0
+======
+- Bumped Grpc.Net.Client from 2.47.0 to 2.52.0
+
 16.1.0
 ======
 - Added support for version 14.0 of the Google Ads API.
