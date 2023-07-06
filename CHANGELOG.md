@@ -1,6 +1,7 @@
 16.2.0
 ======
-- Bumped Grpc.Net.Client from 2.47.0 to 2.52.0
+- Bumped Grpc.Net.Client from 2.47.0 to 2.52.0 in the AuthenticateInAspNetWebApplication example
+  to address a vulnerability found by dependabot
 
 16.1.0
 ======
