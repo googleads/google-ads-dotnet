@@ -436,6 +436,11 @@ namespace Google.Ads.GoogleAds.V14.Errors
             return $"currencyConstants/{currencyCode}";
         }
 
+        public static string CustomAudience(long customerId, long customAudienceId)
+        {
+            return $"customers/{customerId}/customAudiences/{customAudienceId}";
+        }
+
         public static string CustomConversionGoal(long customerId, long goalId)
         {
             return $"customers/{customerId}/customConversionGoals/{goalId}";
