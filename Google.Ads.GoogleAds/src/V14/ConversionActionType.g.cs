@@ -409,7 +409,7 @@ namespace Google.Ads.GoogleAds.V14.Enums {
         [pbr::OriginalName("STORE_VISITS")] StoreVisits = 36,
         /// <summary>
         /// Conversions created from website events (such as form submissions or page
-        /// loads), that don't use individually coded event snippets.
+        /// loads), that don't use individually coded event snippets. Read only.
         /// </summary>
         [pbr::OriginalName("WEBPAGE_CODELESS")] WebpageCodeless = 37,
         /// <summary>

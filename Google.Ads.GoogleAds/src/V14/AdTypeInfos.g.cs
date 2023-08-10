@@ -231,13 +231,25 @@ namespace Google.Ads.GoogleAds.V14.Common {
             "b29nbGVhZHMudjE0LmNvbW1vbi5BZFRleHRBc3NldEID4EECEhsKE2NhbGxf",
             "dG9fYWN0aW9uX3RleHQYBSABKAkSWgoOY2Fyb3VzZWxfY2FyZHMYBiADKAsy",
             "PS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTQuY29tbW9uLkFkRGlzY292ZXJ5",
-            "Q2Fyb3VzZWxDYXJkQXNzZXRCA+BBAkLwAQojY29tLmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYxNC5jb21tb25CEEFkVHlwZUluZm9zUHJvdG9QAVpFZ29vZ2xl",
-            "LmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRz",
-            "L3YxNC9jb21tb247Y29tbW9uogIDR0FBqgIfR29vZ2xlLkFkcy5Hb29nbGVB",
-            "ZHMuVjE0LkNvbW1vbsoCH0dvb2dsZVxBZHNcR29vZ2xlQWRzXFYxNFxDb21t",
-            "b27qAiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTQ6OkNvbW1vbmIGcHJv",
-            "dG8z"));
+            "Q2Fyb3VzZWxDYXJkQXNzZXRCA+BBAiKxBAoeRGlzY292ZXJ5VmlkZW9SZXNw",
+            "b25zaXZlQWRJbmZvEj8KCWhlYWRsaW5lcxgBIAMoCzIsLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYxNC5jb21tb24uQWRUZXh0QXNzZXQSRAoObG9uZ19oZWFk",
+            "bGluZXMYAiADKAsyLC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTQuY29tbW9u",
+            "LkFkVGV4dEFzc2V0EkIKDGRlc2NyaXB0aW9ucxgDIAMoCzIsLmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYxNC5jb21tb24uQWRUZXh0QXNzZXQSPQoGdmlkZW9z",
+            "GAQgAygLMi0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE0LmNvbW1vbi5BZFZp",
+            "ZGVvQXNzZXQSQgoLbG9nb19pbWFnZXMYBSADKAsyLS5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MTQuY29tbW9uLkFkSW1hZ2VBc3NldBITCgticmVhZGNydW1i",
+            "MRgGIAEoCRITCgticmVhZGNydW1iMhgHIAEoCRJICg1idXNpbmVzc19uYW1l",
+            "GAggASgLMiwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE0LmNvbW1vbi5BZFRl",
+            "eHRBc3NldEID4EECEk0KD2NhbGxfdG9fYWN0aW9ucxgJIAMoCzI0Lmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYxNC5jb21tb24uQWRDYWxsVG9BY3Rpb25Bc3Nl",
+            "dELwAQojY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNC5jb21tb25CEEFk",
+            "VHlwZUluZm9zUHJvdG9QAVpFZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8v",
+            "Z29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YxNC9jb21tb247Y29tbW9uogID",
+            "R0FBqgIfR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjE0LkNvbW1vbsoCH0dvb2ds",
+            "ZVxBZHNcR29vZ2xlQWRzXFYxNFxDb21tb27qAiNHb29nbGU6OkFkczo6R29v",
+            "Z2xlQWRzOjpWMTQ6OkNvbW1vbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V14.Common.AdAssetReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Enums.CallConversionReportingStateReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Enums.DisplayAdFormatSettingReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Enums.DisplayUploadProductTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Enums.LegacyAppInstallAdAppStoreReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Enums.MimeTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Enums.VideoThumbnailReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -270,7 +282,8 @@ namespace Google.Ads.GoogleAds.V14.Common {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Common.SmartCampaignAdInfo), global::Google.Ads.GoogleAds.V14.Common.SmartCampaignAdInfo.Parser, new[]{ "Headlines", "Descriptions" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Common.CallAdInfo), global::Google.Ads.GoogleAds.V14.Common.CallAdInfo.Parser, new[]{ "CountryCode", "PhoneNumber", "BusinessName", "Headline1", "Headline2", "Description1", "Description2", "CallTracked", "DisableCallConversion", "PhoneNumberVerificationUrl", "ConversionAction", "ConversionReportingState", "Path1", "Path2" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Common.DiscoveryMultiAssetAdInfo), global::Google.Ads.GoogleAds.V14.Common.DiscoveryMultiAssetAdInfo.Parser, new[]{ "MarketingImages", "SquareMarketingImages", "PortraitMarketingImages", "LogoImages", "Headlines", "Descriptions", "BusinessName", "CallToActionText", "LeadFormOnly" }, new[]{ "BusinessName", "CallToActionText", "LeadFormOnly" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Common.DiscoveryCarouselAdInfo), global::Google.Ads.GoogleAds.V14.Common.DiscoveryCarouselAdInfo.Parser, new[]{ "BusinessName", "LogoImage", "Headline", "Description", "CallToActionText", "CarouselCards" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Common.DiscoveryCarouselAdInfo), global::Google.Ads.GoogleAds.V14.Common.DiscoveryCarouselAdInfo.Parser, new[]{ "BusinessName", "LogoImage", "Headline", "Description", "CallToActionText", "CarouselCards" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Common.DiscoveryVideoResponsiveAdInfo), global::Google.Ads.GoogleAds.V14.Common.DiscoveryVideoResponsiveAdInfo.Parser, new[]{ "Headlines", "LongHeadlines", "Descriptions", "Videos", "LogoImages", "Breadcrumb1", "Breadcrumb2", "BusinessName", "CallToActions" }, null, null, null, null)
           }));
     }
     #endregion
@@ -11669,6 +11682,466 @@ namespace Google.Ads.GoogleAds.V14.Common {
           }
           case 50: {
             carouselCards_.AddEntriesFrom(ref input, _repeated_carouselCards_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// A discovery video responsive ad.
+  /// </summary>
+  public sealed partial class DiscoveryVideoResponsiveAdInfo : pb::IMessage<DiscoveryVideoResponsiveAdInfo>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<DiscoveryVideoResponsiveAdInfo> _parser = new pb::MessageParser<DiscoveryVideoResponsiveAdInfo>(() => new DiscoveryVideoResponsiveAdInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<DiscoveryVideoResponsiveAdInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V14.Common.AdTypeInfosReflection.Descriptor.MessageTypes[30]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public DiscoveryVideoResponsiveAdInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public DiscoveryVideoResponsiveAdInfo(DiscoveryVideoResponsiveAdInfo other) : this() {
+      headlines_ = other.headlines_.Clone();
+      longHeadlines_ = other.longHeadlines_.Clone();
+      descriptions_ = other.descriptions_.Clone();
+      videos_ = other.videos_.Clone();
+      logoImages_ = other.logoImages_.Clone();
+      breadcrumb1_ = other.breadcrumb1_;
+      breadcrumb2_ = other.breadcrumb2_;
+      businessName_ = other.businessName_ != null ? other.businessName_.Clone() : null;
+      callToActions_ = other.callToActions_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public DiscoveryVideoResponsiveAdInfo Clone() {
+      return new DiscoveryVideoResponsiveAdInfo(this);
+    }
+
+    /// <summary>Field number for the "headlines" field.</summary>
+    public const int HeadlinesFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V14.Common.AdTextAsset> _repeated_headlines_codec
+        = pb::FieldCodec.ForMessage(10, global::Google.Ads.GoogleAds.V14.Common.AdTextAsset.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V14.Common.AdTextAsset> headlines_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V14.Common.AdTextAsset>();
+    /// <summary>
+    /// List of text assets used for the short headline, for example, the "Call To
+    /// Action" banner.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V14.Common.AdTextAsset> Headlines {
+      get { return headlines_; }
+    }
+
+    /// <summary>Field number for the "long_headlines" field.</summary>
+    public const int LongHeadlinesFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V14.Common.AdTextAsset> _repeated_longHeadlines_codec
+        = pb::FieldCodec.ForMessage(18, global::Google.Ads.GoogleAds.V14.Common.AdTextAsset.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V14.Common.AdTextAsset> longHeadlines_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V14.Common.AdTextAsset>();
+    /// <summary>
+    /// List of text assets used for the long headline.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V14.Common.AdTextAsset> LongHeadlines {
+      get { return longHeadlines_; }
+    }
+
+    /// <summary>Field number for the "descriptions" field.</summary>
+    public const int DescriptionsFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V14.Common.AdTextAsset> _repeated_descriptions_codec
+        = pb::FieldCodec.ForMessage(26, global::Google.Ads.GoogleAds.V14.Common.AdTextAsset.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V14.Common.AdTextAsset> descriptions_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V14.Common.AdTextAsset>();
+    /// <summary>
+    /// List of text assets used for the description.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V14.Common.AdTextAsset> Descriptions {
+      get { return descriptions_; }
+    }
+
+    /// <summary>Field number for the "videos" field.</summary>
+    public const int VideosFieldNumber = 4;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V14.Common.AdVideoAsset> _repeated_videos_codec
+        = pb::FieldCodec.ForMessage(34, global::Google.Ads.GoogleAds.V14.Common.AdVideoAsset.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V14.Common.AdVideoAsset> videos_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V14.Common.AdVideoAsset>();
+    /// <summary>
+    /// List of YouTube video assets used for the ad.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V14.Common.AdVideoAsset> Videos {
+      get { return videos_; }
+    }
+
+    /// <summary>Field number for the "logo_images" field.</summary>
+    public const int LogoImagesFieldNumber = 5;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V14.Common.AdImageAsset> _repeated_logoImages_codec
+        = pb::FieldCodec.ForMessage(42, global::Google.Ads.GoogleAds.V14.Common.AdImageAsset.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V14.Common.AdImageAsset> logoImages_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V14.Common.AdImageAsset>();
+    /// <summary>
+    /// Logo image to be used in the ad. Valid image types are GIF, JPEG, and PNG.
+    /// The minimum size is 128x128 and the aspect ratio must be 1:1(+-1%).
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V14.Common.AdImageAsset> LogoImages {
+      get { return logoImages_; }
+    }
+
+    /// <summary>Field number for the "breadcrumb1" field.</summary>
+    public const int Breadcrumb1FieldNumber = 6;
+    private string breadcrumb1_ = "";
+    /// <summary>
+    /// First part of text that appears in the ad with the displayed URL.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Breadcrumb1 {
+      get { return breadcrumb1_; }
+      set {
+        breadcrumb1_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "breadcrumb2" field.</summary>
+    public const int Breadcrumb2FieldNumber = 7;
+    private string breadcrumb2_ = "";
+    /// <summary>
+    /// Second part of text that appears in the ad with the displayed URL.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Breadcrumb2 {
+      get { return breadcrumb2_; }
+      set {
+        breadcrumb2_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "business_name" field.</summary>
+    public const int BusinessNameFieldNumber = 8;
+    private global::Google.Ads.GoogleAds.V14.Common.AdTextAsset businessName_;
+    /// <summary>
+    /// Required. The advertiser/brand name.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V14.Common.AdTextAsset BusinessName {
+      get { return businessName_; }
+      set {
+        businessName_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "call_to_actions" field.</summary>
+    public const int CallToActionsFieldNumber = 9;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V14.Common.AdCallToActionAsset> _repeated_callToActions_codec
+        = pb::FieldCodec.ForMessage(74, global::Google.Ads.GoogleAds.V14.Common.AdCallToActionAsset.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V14.Common.AdCallToActionAsset> callToActions_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V14.Common.AdCallToActionAsset>();
+    /// <summary>
+    /// Assets of type CallToActionAsset used for the "Call To Action" button.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V14.Common.AdCallToActionAsset> CallToActions {
+      get { return callToActions_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as DiscoveryVideoResponsiveAdInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(DiscoveryVideoResponsiveAdInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!headlines_.Equals(other.headlines_)) return false;
+      if(!longHeadlines_.Equals(other.longHeadlines_)) return false;
+      if(!descriptions_.Equals(other.descriptions_)) return false;
+      if(!videos_.Equals(other.videos_)) return false;
+      if(!logoImages_.Equals(other.logoImages_)) return false;
+      if (Breadcrumb1 != other.Breadcrumb1) return false;
+      if (Breadcrumb2 != other.Breadcrumb2) return false;
+      if (!object.Equals(BusinessName, other.BusinessName)) return false;
+      if(!callToActions_.Equals(other.callToActions_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= headlines_.GetHashCode();
+      hash ^= longHeadlines_.GetHashCode();
+      hash ^= descriptions_.GetHashCode();
+      hash ^= videos_.GetHashCode();
+      hash ^= logoImages_.GetHashCode();
+      if (Breadcrumb1.Length != 0) hash ^= Breadcrumb1.GetHashCode();
+      if (Breadcrumb2.Length != 0) hash ^= Breadcrumb2.GetHashCode();
+      if (businessName_ != null) hash ^= BusinessName.GetHashCode();
+      hash ^= callToActions_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      headlines_.WriteTo(output, _repeated_headlines_codec);
+      longHeadlines_.WriteTo(output, _repeated_longHeadlines_codec);
+      descriptions_.WriteTo(output, _repeated_descriptions_codec);
+      videos_.WriteTo(output, _repeated_videos_codec);
+      logoImages_.WriteTo(output, _repeated_logoImages_codec);
+      if (Breadcrumb1.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(Breadcrumb1);
+      }
+      if (Breadcrumb2.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(Breadcrumb2);
+      }
+      if (businessName_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(BusinessName);
+      }
+      callToActions_.WriteTo(output, _repeated_callToActions_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      headlines_.WriteTo(ref output, _repeated_headlines_codec);
+      longHeadlines_.WriteTo(ref output, _repeated_longHeadlines_codec);
+      descriptions_.WriteTo(ref output, _repeated_descriptions_codec);
+      videos_.WriteTo(ref output, _repeated_videos_codec);
+      logoImages_.WriteTo(ref output, _repeated_logoImages_codec);
+      if (Breadcrumb1.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(Breadcrumb1);
+      }
+      if (Breadcrumb2.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(Breadcrumb2);
+      }
+      if (businessName_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(BusinessName);
+      }
+      callToActions_.WriteTo(ref output, _repeated_callToActions_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += headlines_.CalculateSize(_repeated_headlines_codec);
+      size += longHeadlines_.CalculateSize(_repeated_longHeadlines_codec);
+      size += descriptions_.CalculateSize(_repeated_descriptions_codec);
+      size += videos_.CalculateSize(_repeated_videos_codec);
+      size += logoImages_.CalculateSize(_repeated_logoImages_codec);
+      if (Breadcrumb1.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Breadcrumb1);
+      }
+      if (Breadcrumb2.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Breadcrumb2);
+      }
+      if (businessName_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(BusinessName);
+      }
+      size += callToActions_.CalculateSize(_repeated_callToActions_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(DiscoveryVideoResponsiveAdInfo other) {
+      if (other == null) {
+        return;
+      }
+      headlines_.Add(other.headlines_);
+      longHeadlines_.Add(other.longHeadlines_);
+      descriptions_.Add(other.descriptions_);
+      videos_.Add(other.videos_);
+      logoImages_.Add(other.logoImages_);
+      if (other.Breadcrumb1.Length != 0) {
+        Breadcrumb1 = other.Breadcrumb1;
+      }
+      if (other.Breadcrumb2.Length != 0) {
+        Breadcrumb2 = other.Breadcrumb2;
+      }
+      if (other.businessName_ != null) {
+        if (businessName_ == null) {
+          BusinessName = new global::Google.Ads.GoogleAds.V14.Common.AdTextAsset();
+        }
+        BusinessName.MergeFrom(other.BusinessName);
+      }
+      callToActions_.Add(other.callToActions_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            headlines_.AddEntriesFrom(input, _repeated_headlines_codec);
+            break;
+          }
+          case 18: {
+            longHeadlines_.AddEntriesFrom(input, _repeated_longHeadlines_codec);
+            break;
+          }
+          case 26: {
+            descriptions_.AddEntriesFrom(input, _repeated_descriptions_codec);
+            break;
+          }
+          case 34: {
+            videos_.AddEntriesFrom(input, _repeated_videos_codec);
+            break;
+          }
+          case 42: {
+            logoImages_.AddEntriesFrom(input, _repeated_logoImages_codec);
+            break;
+          }
+          case 50: {
+            Breadcrumb1 = input.ReadString();
+            break;
+          }
+          case 58: {
+            Breadcrumb2 = input.ReadString();
+            break;
+          }
+          case 66: {
+            if (businessName_ == null) {
+              BusinessName = new global::Google.Ads.GoogleAds.V14.Common.AdTextAsset();
+            }
+            input.ReadMessage(BusinessName);
+            break;
+          }
+          case 74: {
+            callToActions_.AddEntriesFrom(input, _repeated_callToActions_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            headlines_.AddEntriesFrom(ref input, _repeated_headlines_codec);
+            break;
+          }
+          case 18: {
+            longHeadlines_.AddEntriesFrom(ref input, _repeated_longHeadlines_codec);
+            break;
+          }
+          case 26: {
+            descriptions_.AddEntriesFrom(ref input, _repeated_descriptions_codec);
+            break;
+          }
+          case 34: {
+            videos_.AddEntriesFrom(ref input, _repeated_videos_codec);
+            break;
+          }
+          case 42: {
+            logoImages_.AddEntriesFrom(ref input, _repeated_logoImages_codec);
+            break;
+          }
+          case 50: {
+            Breadcrumb1 = input.ReadString();
+            break;
+          }
+          case 58: {
+            Breadcrumb2 = input.ReadString();
+            break;
+          }
+          case 66: {
+            if (businessName_ == null) {
+              BusinessName = new global::Google.Ads.GoogleAds.V14.Common.AdTextAsset();
+            }
+            input.ReadMessage(BusinessName);
+            break;
+          }
+          case 74: {
+            callToActions_.AddEntriesFrom(ref input, _repeated_callToActions_codec);
             break;
           }
         }

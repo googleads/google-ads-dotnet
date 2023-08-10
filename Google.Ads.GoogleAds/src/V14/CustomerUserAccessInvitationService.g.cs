@@ -76,7 +76,7 @@ namespace Google.Ads.GoogleAds.V14.Services {
   #region Messages
   /// <summary>
   /// Request message for
-  /// [CustomerUserAccessInvitation.MutateCustomerUserAccessInvitation][]
+  /// [CustomerUserAccessInvitationService.MutateCustomerUserAccessInvitation][google.ads.googleads.v14.services.CustomerUserAccessInvitationService.MutateCustomerUserAccessInvitation]
   /// </summary>
   public sealed partial class MutateCustomerUserAccessInvitationRequest : pb::IMessage<MutateCustomerUserAccessInvitationRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

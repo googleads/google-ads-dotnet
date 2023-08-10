@@ -53,7 +53,6 @@ namespace Google.Ads.GoogleAds.V14.Enums {
   /// <summary>
   /// Indicates the key issue that results in a shopping campaign targeting zero
   /// products.
-  /// Next Id: 5
   /// </summary>
   public sealed partial class ShoppingAddProductsToCampaignRecommendationEnum : pb::IMessage<ShoppingAddProductsToCampaignRecommendationEnum>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

@@ -5199,7 +5199,6 @@ namespace Google.Ads.GoogleAds.V14.Services {
         public static partial class Types {
           /// <summary>
           /// Scope to apply the assets to.
-          /// Next ID: 4
           /// </summary>
           public enum ApplyScope {
             /// <summary>

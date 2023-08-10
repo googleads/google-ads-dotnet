@@ -15,13 +15,13 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V13.Errors;
-using Google.Ads.GoogleAds.V13.Services;
+using Google.Ads.GoogleAds.V14.Errors;
+using Google.Ads.GoogleAds.V14.Services;
 using Google.Api.Gax;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V13
+namespace Google.Ads.GoogleAds.Examples.V14
 {
     /// <summary>
     /// This code example gets Hotel-ads performance statistics for the 50 Hotel ad groups with
@@ -71,7 +71,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V13.GoogleAdsService);
+                Services.V14.GoogleAdsService);
 
             // Creates a query that retrieves hotel-ads statistics for each campaign and ad group.
             // Returned statistics will be segmented by the check-in day of week and length of

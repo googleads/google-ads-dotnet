@@ -344,7 +344,6 @@ namespace Google.Ads.GoogleAds.V14.Common {
   /// annotated with it.  For instance, when the reason is ASSET_DISAPPROVED, the
   /// details field will contain additional information about the offline
   /// evaluation errors which led to the asset being disapproved.
-  /// Next Id: 4
   /// </summary>
   public sealed partial class AssetLinkPrimaryStatusDetails : pb::IMessage<AssetLinkPrimaryStatusDetails>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -695,7 +694,6 @@ namespace Google.Ads.GoogleAds.V14.Common {
 
   /// <summary>
   /// Details related to AssetLinkPrimaryStatusReasonPB.ASSET_DISAPPROVED
-  /// Next Id: 2
   /// </summary>
   public sealed partial class AssetDisapproved : pb::IMessage<AssetDisapproved>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

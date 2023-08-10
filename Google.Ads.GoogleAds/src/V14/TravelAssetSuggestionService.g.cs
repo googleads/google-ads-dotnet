@@ -83,7 +83,7 @@ namespace Google.Ads.GoogleAds.V14.Services {
   #region Messages
   /// <summary>
   /// Request message for
-  /// [TravelSuggestAssetsService.SuggestTravelAssets][].
+  /// [TravelAssetSuggestionService.SuggestTravelAssets][google.ads.googleads.v14.services.TravelAssetSuggestionService.SuggestTravelAssets].
   /// </summary>
   public sealed partial class SuggestTravelAssetsRequest : pb::IMessage<SuggestTravelAssetsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -352,7 +352,7 @@ namespace Google.Ads.GoogleAds.V14.Services {
 
   /// <summary>
   /// Response message for
-  /// [TravelSuggestAssetsService.SuggestTravelAssets][].
+  /// [TravelAssetSuggestionService.SuggestTravelAssets][google.ads.googleads.v14.services.TravelAssetSuggestionService.SuggestTravelAssets].
   /// </summary>
   public sealed partial class SuggestTravelAssetsResponse : pb::IMessage<SuggestTravelAssetsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

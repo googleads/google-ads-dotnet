@@ -83,7 +83,7 @@ namespace Google.Ads.GoogleAds.V14.Services {
   #region Messages
   /// <summary>
   /// Request message for
-  /// [ConversionGoalCampaignConfigService.MutateConversionGoalCampaignConfig][].
+  /// [ConversionGoalCampaignConfigService.MutateConversionGoalCampaignConfigs][google.ads.googleads.v14.services.ConversionGoalCampaignConfigService.MutateConversionGoalCampaignConfigs].
   /// </summary>
   public sealed partial class MutateConversionGoalCampaignConfigsRequest : pb::IMessage<MutateConversionGoalCampaignConfigsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

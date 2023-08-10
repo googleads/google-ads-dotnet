@@ -26,8 +26,8 @@ namespace Google.Ads.GoogleAds.V14.Enums {
           string.Concat(
             "CkNnb29nbGUvYWRzL2dvb2dsZWFkcy92MTQvZW51bXMvY2FtcGFpZ25fcHJp",
             "bWFyeV9zdGF0dXNfcmVhc29uLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52MTQuZW51bXMi1gcKH0NhbXBhaWduUHJpbWFyeVN0YXR1c1JlYXNvbkVu",
-            "dW0isgcKG0NhbXBhaWduUHJpbWFyeVN0YXR1c1JlYXNvbhIPCgtVTlNQRUNJ",
+            "cy52MTQuZW51bXMixAgKH0NhbXBhaWduUHJpbWFyeVN0YXR1c1JlYXNvbkVu",
+            "dW0ioAgKG0NhbXBhaWduUHJpbWFyeVN0YXR1c1JlYXNvbhIPCgtVTlNQRUNJ",
             "RklFRBAAEgsKB1VOS05PV04QARIUChBDQU1QQUlHTl9SRU1PVkVEEAISEwoP",
             "Q0FNUEFJR05fUEFVU0VEEAMSFAoQQ0FNUEFJR05fUEVORElORxAEEhIKDkNB",
             "TVBBSUdOX0VOREVEEAUSEgoOQ0FNUEFJR05fRFJBRlQQBhIiCh5CSURESU5H",
@@ -48,12 +48,15 @@ namespace Google.Ads.GoogleAds.V14.Enums {
             "X0FEX0dST1VQX0NSSVRFUklBEB0SGQoVQ0FNUEFJR05fR1JPVVBfUEFVU0VE",
             "EB4SKgomQ0FNUEFJR05fR1JPVVBfQUxMX0dST1VQX0JVREdFVFNfRU5ERUQQ",
             "HxIUChBBUFBfTk9UX1JFTEVBU0VEECASGgoWQVBQX1BBUlRJQUxMWV9SRUxF",
-            "QVNFRBAhQvoBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE0LmVudW1z",
-            "QiBDYW1wYWlnblByaW1hcnlTdGF0dXNSZWFzb25Qcm90b1ABWkNnb29nbGUu",
-            "Z29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMv",
-            "djE0L2VudW1zO2VudW1zogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMu",
-            "VjE0LkVudW1zygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjE0XEVudW1z6gIi",
-            "R29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE0OjpFbnVtc2IGcHJvdG8z"));
+            "QVNFRBAhEiAKHEhBU19BU1NFVF9HUk9VUFNfRElTQVBQUk9WRUQQIhImCiJI",
+            "QVNfQVNTRVRfR1JPVVBTX0xJTUlURURfQllfUE9MSUNZECMSIgoeTU9TVF9B",
+            "U1NFVF9HUk9VUFNfVU5ERVJfUkVWSUVXECRC+gEKImNvbS5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MTQuZW51bXNCIENhbXBhaWduUHJpbWFyeVN0YXR1c1Jl",
+            "YXNvblByb3RvUAFaQ2dvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2ds",
+            "ZWFwaXMvYWRzL2dvb2dsZWFkcy92MTQvZW51bXM7ZW51bXOiAgNHQUGqAh5H",
+            "b29nbGUuQWRzLkdvb2dsZUFkcy5WMTQuRW51bXPKAh5Hb29nbGVcQWRzXEdv",
+            "b2dsZUFkc1xWMTRcRW51bXPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpW",
+            "MTQ6OkVudW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -371,6 +374,18 @@ namespace Google.Ads.GoogleAds.V14.Enums {
         /// target countries of the campaign.
         /// </summary>
         [pbr::OriginalName("APP_PARTIALLY_RELEASED")] AppPartiallyReleased = 33,
+        /// <summary>
+        /// At least one asset group in this campaign is disapproved.
+        /// </summary>
+        [pbr::OriginalName("HAS_ASSET_GROUPS_DISAPPROVED")] HasAssetGroupsDisapproved = 34,
+        /// <summary>
+        /// At least one asset group in this campaign is limited by policy.
+        /// </summary>
+        [pbr::OriginalName("HAS_ASSET_GROUPS_LIMITED_BY_POLICY")] HasAssetGroupsLimitedByPolicy = 35,
+        /// <summary>
+        /// Most asset groups in this campaign are pending review.
+        /// </summary>
+        [pbr::OriginalName("MOST_ASSET_GROUPS_UNDER_REVIEW")] MostAssetGroupsUnderReview = 36,
       }
 
     }

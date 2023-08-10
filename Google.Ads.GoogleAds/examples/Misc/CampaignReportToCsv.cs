@@ -15,14 +15,14 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V13.Services;
+using Google.Ads.GoogleAds.V14.Services;
 using Google.Api.Ads.Common.Util;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Google.Ads.GoogleAds.Examples.V13
+namespace Google.Ads.GoogleAds.Examples.V14
 {
     /// <summary>
     /// This code example illustrates how to use Google Ads API to get metrics about a campaign and
@@ -83,7 +83,7 @@ namespace Google.Ads.GoogleAds.Examples.V13
         public void Run(GoogleAdsClient client, long customerId, string outputFilePath)
         {
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V13.GoogleAdsService);
+                client.GetService(Services.V14.GoogleAdsService);
 
             // Create a query that retrieves campaigns.
             string query = @"

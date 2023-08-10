@@ -130,7 +130,7 @@ namespace Google.Ads.GoogleAds.V14.Services {
   #region Messages
   /// <summary>
   /// Request message for
-  /// [SmartCampaignSuggestService.SuggestSmartCampaignBudgets][].
+  /// [SmartCampaignSuggestService.SuggestSmartCampaignBudgetOptions][google.ads.googleads.v14.services.SmartCampaignSuggestService.SuggestSmartCampaignBudgetOptions].
   /// </summary>
   public sealed partial class SuggestSmartCampaignBudgetOptionsRequest : pb::IMessage<SuggestSmartCampaignBudgetOptionsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1435,9 +1435,9 @@ namespace Google.Ads.GoogleAds.V14.Services {
 
   /// <summary>
   /// Response message for
-  /// [SmartCampaignSuggestService.SuggestSmartCampaignBudgets][]. Depending on
-  /// whether the system could suggest the options, either all of the options or
-  /// none of them might be returned.
+  /// [SmartCampaignSuggestService.SuggestSmartCampaignBudgetOptions][google.ads.googleads.v14.services.SmartCampaignSuggestService.SuggestSmartCampaignBudgetOptions].
+  /// Depending on whether the system could suggest the options, either all of the
+  /// options or none of them might be returned.
   /// </summary>
   public sealed partial class SuggestSmartCampaignBudgetOptionsResponse : pb::IMessage<SuggestSmartCampaignBudgetOptionsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
