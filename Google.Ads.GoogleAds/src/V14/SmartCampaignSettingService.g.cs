@@ -1940,7 +1940,7 @@ namespace Google.Ads.GoogleAds.V14.Services {
 
   /// <summary>
   /// Request message for
-  /// [SmartCampaignSettingService.MutateSmartCampaignSetting][].
+  /// [SmartCampaignSettingService.MutateSmartCampaignSettings][google.ads.googleads.v14.services.SmartCampaignSettingService.MutateSmartCampaignSettings].
   /// </summary>
   public sealed partial class MutateSmartCampaignSettingsRequest : pb::IMessage<MutateSmartCampaignSettingsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

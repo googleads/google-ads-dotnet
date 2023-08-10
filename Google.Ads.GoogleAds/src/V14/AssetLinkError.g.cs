@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V14.Errors {
           string.Concat(
             "CjZnb29nbGUvYWRzL2dvb2dsZWFkcy92MTQvZXJyb3JzL2Fzc2V0X2xpbmtf",
             "ZXJyb3IucHJvdG8SH2dvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNC5lcnJvcnMi",
-            "oQcKEkFzc2V0TGlua0Vycm9yRW51bSKKBwoOQXNzZXRMaW5rRXJyb3ISDwoL",
+            "3AcKEkFzc2V0TGlua0Vycm9yRW51bSLFBwoOQXNzZXRMaW5rRXJyb3ISDwoL",
             "VU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESFwoTUElOTklOR19VTlNVUFBP",
             "UlRFRBACEhoKFlVOU1VQUE9SVEVEX0ZJRUxEX1RZUEUQAxIrCidGSUVMRF9U",
             "WVBFX0lOQ09NUEFUSUJMRV9XSVRIX0FTU0VUX1RZUEUQBBIuCipGSUVMRF9U",
@@ -46,13 +46,14 @@ namespace Google.Ads.GoogleAds.V14.Errors {
             "SUNBTExZX0NSRUFURURfTElOS1MQExIuCipDQU5OT1RfTElOS19UT19BVVRP",
             "TUFUSUNBTExZX0NSRUFURURfQVNTRVQQFBIjCh9DQU5OT1RfTU9ESUZZX0FT",
             "U0VUX0xJTktfU09VUkNFEBUSOQo1Q0FOTk9UX0xJTktfTE9DQVRJT05fTEVB",
-            "RF9GT1JNX1dJVEhPVVRfTE9DQVRJT05fQVNTRVQQFkLzAQojY29tLmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYxNC5lcnJvcnNCE0Fzc2V0TGlua0Vycm9yUHJv",
-            "dG9QAVpFZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9h",
-            "ZHMvZ29vZ2xlYWRzL3YxNC9lcnJvcnM7ZXJyb3JzogIDR0FBqgIfR29vZ2xl",
-            "LkFkcy5Hb29nbGVBZHMuVjE0LkVycm9yc8oCH0dvb2dsZVxBZHNcR29vZ2xl",
-            "QWRzXFYxNFxFcnJvcnPqAiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTQ6",
-            "OkVycm9yc2IGcHJvdG8z"));
+            "RF9GT1JNX1dJVEhPVVRfTE9DQVRJT05fQVNTRVQQFhIZChVDVVNUT01FUl9O",
+            "T1RfVkVSSUZJRUQQFxIeChpVTlNVUFBPUlRFRF9DQUxMX1RPX0FDVElPThAY",
+            "QvMBCiNjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE0LmVycm9yc0ITQXNz",
+            "ZXRMaW5rRXJyb3JQcm90b1ABWkVnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90",
+            "by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjE0L2Vycm9ycztlcnJvcnOi",
+            "AgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMTQuRXJyb3JzygIfR29v",
+            "Z2xlXEFkc1xHb29nbGVBZHNcVjE0XEVycm9yc+oCI0dvb2dsZTo6QWRzOjpH",
+            "b29nbGVBZHM6OlYxNDo6RXJyb3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -335,6 +336,14 @@ namespace Google.Ads.GoogleAds.V14.Errors {
         /// Customer/Campaign because there are no Location assets.
         /// </summary>
         [pbr::OriginalName("CANNOT_LINK_LOCATION_LEAD_FORM_WITHOUT_LOCATION_ASSET")] CannotLinkLocationLeadFormWithoutLocationAsset = 22,
+        /// <summary>
+        /// Customer is not verified.
+        /// </summary>
+        [pbr::OriginalName("CUSTOMER_NOT_VERIFIED")] CustomerNotVerified = 23,
+        /// <summary>
+        /// Call to action value is not supported.
+        /// </summary>
+        [pbr::OriginalName("UNSUPPORTED_CALL_TO_ACTION")] UnsupportedCallToAction = 24,
       }
 
     }

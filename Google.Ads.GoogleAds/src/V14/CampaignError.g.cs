@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V14.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjRnb29nbGUvYWRzL2dvb2dsZWFkcy92MTQvZXJyb3JzL2NhbXBhaWduX2Vy",
-            "cm9yLnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFkcy52MTQuZXJyb3JzItEX",
-            "ChFDYW1wYWlnbkVycm9yRW51bSK7FwoNQ2FtcGFpZ25FcnJvchIPCgtVTlNQ",
+            "cm9yLnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFkcy52MTQuZXJyb3JzIqQY",
+            "ChFDYW1wYWlnbkVycm9yRW51bSKOGAoNQ2FtcGFpZ25FcnJvchIPCgtVTlNQ",
             "RUNJRklFRBAAEgsKB1VOS05PV04QARIhCh1DQU5OT1RfVEFSR0VUX0NPTlRF",
             "TlRfTkVUV09SSxADEiAKHENBTk5PVF9UQVJHRVRfU0VBUkNIX05FVFdPUksQ",
             "BBI2CjJDQU5OT1RfVEFSR0VUX1NFQVJDSF9ORVRXT1JLX1dJVEhPVVRfR09P",
@@ -93,12 +93,14 @@ namespace Google.Ads.GoogleAds.V14.Errors {
             "Tk9UX0VOQUJMRUQQTxItCilOT1RfQ09NUEFUSUJMRV9XSVRIX0JJRERJTkdf",
             "U1RSQVRFR1lfVFlQRRBQEjYKMk5PVF9DT01QQVRJQkxFX1dJVEhfR09PR0xF",
             "X0FUVFJJQlVUSU9OX0NPTlZFUlNJT05TEFESGwoXQ09OVkVSU0lPTl9MQUdf",
-            "VE9PX0hJR0gQUkLyAQojY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNC5l",
-            "cnJvcnNCEkNhbXBhaWduRXJyb3JQcm90b1ABWkVnb29nbGUuZ29sYW5nLm9y",
-            "Zy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjE0L2Vycm9y",
-            "cztlcnJvcnOiAgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMTQuRXJy",
-            "b3JzygIfR29vZ2xlXEFkc1xHb29nbGVBZHNcVjE0XEVycm9yc+oCI0dvb2ds",
-            "ZTo6QWRzOjpHb29nbGVBZHM6OlYxNDo6RXJyb3JzYgZwcm90bzM="));
+            "VE9PX0hJR0gQUhIiCh5OT1RfTElOS0VEX0FEVkVSVElTSU5HX1BBUlRORVIQ",
+            "UxItCilJTlZBTElEX05VTUJFUl9PRl9BRFZFUlRJU0lOR19QQVJUTkVSX0lE",
+            "UxBUQvIBCiNjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE0LmVycm9yc0IS",
+            "Q2FtcGFpZ25FcnJvclByb3RvUAFaRWdvb2dsZS5nb2xhbmcub3JnL2dlbnBy",
+            "b3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MTQvZXJyb3JzO2Vycm9y",
+            "c6ICA0dBQaoCH0dvb2dsZS5BZHMuR29vZ2xlQWRzLlYxNC5FcnJvcnPKAh9H",
+            "b29nbGVcQWRzXEdvb2dsZUFkc1xWMTRcRXJyb3Jz6gIjR29vZ2xlOjpBZHM6",
+            "Okdvb2dsZUFkczo6VjE0OjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -589,6 +591,15 @@ namespace Google.Ads.GoogleAds.V14.Errors {
         /// Customer level conversion lag is too high.
         /// </summary>
         [pbr::OriginalName("CONVERSION_LAG_TOO_HIGH")] ConversionLagTooHigh = 82,
+        /// <summary>
+        /// The advertiser set as an advertising partner is not an actively linked
+        /// advertiser to this customer.
+        /// </summary>
+        [pbr::OriginalName("NOT_LINKED_ADVERTISING_PARTNER")] NotLinkedAdvertisingPartner = 83,
+        /// <summary>
+        /// Invalid number of advertising partner IDs.
+        /// </summary>
+        [pbr::OriginalName("INVALID_NUMBER_OF_ADVERTISING_PARTNER_IDS")] InvalidNumberOfAdvertisingPartnerIds = 84,
       }
 
     }

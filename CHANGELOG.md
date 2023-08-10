@@ -1,3 +1,9 @@
+17.0.0
+======
+- Added support for version v14.1 of the Google Ads API.
+- Removed support for v12 of the Google Ads API.
+- Moved the ResourceNames utility to the Google.Ads.GoogleAds.V14.Resources namespace.
+
 16.1.0
 ======
 - Added support for version 14.0 of the Google Ads API.

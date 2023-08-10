@@ -13,10 +13,7 @@
 // limitations under the License.
 
 using Google.Ads.Gax.Util;
-using Google.Ads.GoogleAds.Util;
-using Google.Protobuf.Reflection;
 using System;
-using System.Linq;
 using System.Text;
 using static Google.Ads.GoogleAds.V14.Enums.AssetFieldTypeEnum.Types;
 using static Google.Ads.GoogleAds.V14.Enums.ConversionActionCategoryEnum.Types;
@@ -27,10 +24,12 @@ using static Google.Ads.GoogleAds.V14.Enums.PlaceholderTypeEnum.Types;
 using static Google.Ads.GoogleAds.V14.Enums.ProductBiddingCategoryLevelEnum.Types;
 using static Google.Ads.GoogleAds.V14.Enums.SimulationModificationMethodEnum.Types;
 using static Google.Ads.GoogleAds.V14.Enums.SimulationTypeEnum.Types;
+using static Google.Ads.GoogleAds.V14.Resources.CampaignSearchTermInsightName;
+using static Google.Ads.GoogleAds.V14.Resources.CustomerSearchTermInsightName;
 
 #pragma warning disable 1591
 
-namespace Google.Ads.GoogleAds.V14.Errors
+namespace Google.Ads.GoogleAds.V14.Resources
 {
     /// <summary>
     /// Helper class to generate resource names for various entities.
@@ -369,6 +368,13 @@ namespace Google.Ads.GoogleAds.V14.Errors
             return $"customers/{customerId}/campaignLabels/{campaignId}~{labelId}";
         }
 
+        public static string CampaignSearchTermInsight(long customerId, long campaignId,
+            long clusterId)
+        {
+            return CampaignSearchTermInsightName.Format(customerId.ToString(),
+                campaignId.ToString(), clusterId.ToString());
+        }
+
         public static string CampaignSharedSet(long customerId, long campaignId, long sharedSetId)
         {
             return $"customers/{customerId}/campaignSharedSets/{campaignId}~{sharedSetId}";
@@ -513,6 +519,12 @@ namespace Google.Ads.GoogleAds.V14.Errors
         public static string CustomerNegativeCriteria(long customerId, long criterionId)
         {
             return $"customers/{customerId}/customerNegativeCriteria/{criterionId}";
+        }
+
+        public static string CustomerSearchTermInsight(long customerId, long clusterId)
+        {
+            return CustomerSearchTermInsightName.Format(customerId.ToString(),
+                clusterId.ToString());
         }
 
         public static string CustomerUserAccess(long customerId, long userId)

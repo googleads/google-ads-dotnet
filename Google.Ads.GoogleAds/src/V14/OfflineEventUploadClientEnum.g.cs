@@ -205,7 +205,7 @@ namespace Google.Ads.GoogleAds.V14.Enums {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static partial class Types {
       /// <summary>
-      /// Next id: 5
+      /// Type of client.
       /// </summary>
       public enum OfflineEventUploadClient {
         /// <summary>

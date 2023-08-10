@@ -26,39 +26,51 @@ namespace Google.Ads.GoogleAds.V14.Resources {
           string.Concat(
             "Cjpnb29nbGUvYWRzL2dvb2dsZWFkcy92MTQvcmVzb3VyY2VzL2Fzc2V0X2dy",
             "b3VwX2Fzc2V0LnByb3RvEiJnb29nbGUuYWRzLmdvb2dsZWFkcy52MTQucmVz",
-            "b3VyY2VzGjRnb29nbGUvYWRzL2dvb2dsZWFkcy92MTQvY29tbW9uL3BvbGlj",
-            "eV9zdW1tYXJ5LnByb3RvGjVnb29nbGUvYWRzL2dvb2dsZWFkcy92MTQvZW51",
-            "bXMvYXNzZXRfZmllbGRfdHlwZS5wcm90bxo2Z29vZ2xlL2Fkcy9nb29nbGVh",
-            "ZHMvdjE0L2VudW1zL2Fzc2V0X2xpbmtfc3RhdHVzLnByb3RvGjxnb29nbGUv",
-            "YWRzL2dvb2dsZWFkcy92MTQvZW51bXMvYXNzZXRfcGVyZm9ybWFuY2VfbGFi",
-            "ZWwucHJvdG8aH2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8aGWdv",
-            "b2dsZS9hcGkvcmVzb3VyY2UucHJvdG8iwAUKD0Fzc2V0R3JvdXBBc3NldBJH",
-            "Cg1yZXNvdXJjZV9uYW1lGAEgASgJQjDgQQX6QSoKKGdvb2dsZWFkcy5nb29n",
-            "bGVhcGlzLmNvbS9Bc3NldEdyb3VwQXNzZXQSQAoLYXNzZXRfZ3JvdXAYAiAB",
-            "KAlCK+BBBfpBJQojZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0Fzc2V0R3Jv",
-            "dXASNQoFYXNzZXQYAyABKAlCJuBBBfpBIAoeZ29vZ2xlYWRzLmdvb2dsZWFw",
-            "aXMuY29tL0Fzc2V0ElUKCmZpZWxkX3R5cGUYBCABKA4yQS5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MTQuZW51bXMuQXNzZXRGaWVsZFR5cGVFbnVtLkFzc2V0",
-            "RmllbGRUeXBlElMKBnN0YXR1cxgFIAEoDjJDLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYxNC5lbnVtcy5Bc3NldExpbmtTdGF0dXNFbnVtLkFzc2V0TGlua1N0",
-            "YXR1cxJvChFwZXJmb3JtYW5jZV9sYWJlbBgGIAEoDjJPLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYxNC5lbnVtcy5Bc3NldFBlcmZvcm1hbmNlTGFiZWxFbnVt",
-            "LkFzc2V0UGVyZm9ybWFuY2VMYWJlbEID4EEDEksKDnBvbGljeV9zdW1tYXJ5",
-            "GAcgASgLMi4uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE0LmNvbW1vbi5Qb2xp",
-            "Y3lTdW1tYXJ5QgPgQQM6gAHqQX0KKGdvb2dsZWFkcy5nb29nbGVhcGlzLmNv",
-            "bS9Bc3NldEdyb3VwQXNzZXQSUWN1c3RvbWVycy97Y3VzdG9tZXJfaWR9L2Fz",
-            "c2V0R3JvdXBBc3NldHMve2Fzc2V0X2dyb3VwX2lkfX57YXNzZXRfaWR9fntm",
-            "aWVsZF90eXBlfUKGAgomY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNC5y",
-            "ZXNvdXJjZXNCFEFzc2V0R3JvdXBBc3NldFByb3RvUAFaS2dvb2dsZS5nb2xh",
-            "bmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MTQv",
-            "cmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIkdvb2dsZS5BZHMuR29vZ2xl",
-            "QWRzLlYxNC5SZXNvdXJjZXPKAiJHb29nbGVcQWRzXEdvb2dsZUFkc1xWMTRc",
-            "UmVzb3VyY2Vz6gImR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE0OjpSZXNv",
-            "dXJjZXNiBnByb3RvMw=="));
+            "b3VyY2VzGjJnb29nbGUvYWRzL2dvb2dsZWFkcy92MTQvY29tbW9uL2Fzc2V0",
+            "X3BvbGljeS5wcm90bxo0Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjE0L2NvbW1v",
+            "bi9wb2xpY3lfc3VtbWFyeS5wcm90bxo1Z29vZ2xlL2Fkcy9nb29nbGVhZHMv",
+            "djE0L2VudW1zL2Fzc2V0X2ZpZWxkX3R5cGUucHJvdG8aPmdvb2dsZS9hZHMv",
+            "Z29vZ2xlYWRzL3YxNC9lbnVtcy9hc3NldF9saW5rX3ByaW1hcnlfc3RhdHVz",
+            "LnByb3RvGkVnb29nbGUvYWRzL2dvb2dsZWFkcy92MTQvZW51bXMvYXNzZXRf",
+            "bGlua19wcmltYXJ5X3N0YXR1c19yZWFzb24ucHJvdG8aNmdvb2dsZS9hZHMv",
+            "Z29vZ2xlYWRzL3YxNC9lbnVtcy9hc3NldF9saW5rX3N0YXR1cy5wcm90bxo8",
+            "Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjE0L2VudW1zL2Fzc2V0X3BlcmZvcm1h",
+            "bmNlX2xhYmVsLnByb3RvGh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9yLnBy",
+            "b3RvGhlnb29nbGUvYXBpL3Jlc291cmNlLnByb3RvIpoICg9Bc3NldEdyb3Vw",
+            "QXNzZXQSRwoNcmVzb3VyY2VfbmFtZRgBIAEoCUIw4EEF+kEqCihnb29nbGVh",
+            "ZHMuZ29vZ2xlYXBpcy5jb20vQXNzZXRHcm91cEFzc2V0EkAKC2Fzc2V0X2dy",
+            "b3VwGAIgASgJQivgQQX6QSUKI2dvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9B",
+            "c3NldEdyb3VwEjUKBWFzc2V0GAMgASgJQibgQQX6QSAKHmdvb2dsZWFkcy5n",
+            "b29nbGVhcGlzLmNvbS9Bc3NldBJVCgpmaWVsZF90eXBlGAQgASgOMkEuZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjE0LmVudW1zLkFzc2V0RmllbGRUeXBlRW51",
+            "bS5Bc3NldEZpZWxkVHlwZRJTCgZzdGF0dXMYBSABKA4yQy5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MTQuZW51bXMuQXNzZXRMaW5rU3RhdHVzRW51bS5Bc3Nl",
+            "dExpbmtTdGF0dXMSbgoOcHJpbWFyeV9zdGF0dXMYCCABKA4yUS5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52MTQuZW51bXMuQXNzZXRMaW5rUHJpbWFyeVN0YXR1",
+            "c0VudW0uQXNzZXRMaW5rUHJpbWFyeVN0YXR1c0ID4EEDEoIBChZwcmltYXJ5",
+            "X3N0YXR1c19yZWFzb25zGAkgAygOMl0uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djE0LmVudW1zLkFzc2V0TGlua1ByaW1hcnlTdGF0dXNSZWFzb25FbnVtLkFz",
+            "c2V0TGlua1ByaW1hcnlTdGF0dXNSZWFzb25CA+BBAxJjChZwcmltYXJ5X3N0",
+            "YXR1c19kZXRhaWxzGAogAygLMj4uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE0",
+            "LmNvbW1vbi5Bc3NldExpbmtQcmltYXJ5U3RhdHVzRGV0YWlsc0ID4EEDEm8K",
+            "EXBlcmZvcm1hbmNlX2xhYmVsGAYgASgOMk8uZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjE0LmVudW1zLkFzc2V0UGVyZm9ybWFuY2VMYWJlbEVudW0uQXNzZXRQ",
+            "ZXJmb3JtYW5jZUxhYmVsQgPgQQMSSwoOcG9saWN5X3N1bW1hcnkYByABKAsy",
+            "Li5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTQuY29tbW9uLlBvbGljeVN1bW1h",
+            "cnlCA+BBAzqAAepBfQooZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0Fzc2V0",
+            "R3JvdXBBc3NldBJRY3VzdG9tZXJzL3tjdXN0b21lcl9pZH0vYXNzZXRHcm91",
+            "cEFzc2V0cy97YXNzZXRfZ3JvdXBfaWR9fnthc3NldF9pZH1+e2ZpZWxkX3R5",
+            "cGV9QoYCCiZjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE0LnJlc291cmNl",
+            "c0IUQXNzZXRHcm91cEFzc2V0UHJvdG9QAVpLZ29vZ2xlLmdvbGFuZy5vcmcv",
+            "Z2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YxNC9yZXNvdXJj",
+            "ZXM7cmVzb3VyY2VzogIDR0FBqgIiR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjE0",
+            "LlJlc291cmNlc8oCIkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYxNFxSZXNvdXJj",
+            "ZXPqAiZHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTQ6OlJlc291cmNlc2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V14.Common.PolicySummaryReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Enums.AssetFieldTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Enums.AssetLinkStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Enums.AssetPerformanceLabelReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V14.Common.AssetPolicyReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Common.PolicySummaryReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Enums.AssetFieldTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Enums.AssetLinkPrimaryStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Enums.AssetLinkPrimaryStatusReasonReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Enums.AssetLinkStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Enums.AssetPerformanceLabelReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Resources.AssetGroupAsset), global::Google.Ads.GoogleAds.V14.Resources.AssetGroupAsset.Parser, new[]{ "ResourceName", "AssetGroup", "Asset", "FieldType", "Status", "PerformanceLabel", "PolicySummary" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Resources.AssetGroupAsset), global::Google.Ads.GoogleAds.V14.Resources.AssetGroupAsset.Parser, new[]{ "ResourceName", "AssetGroup", "Asset", "FieldType", "Status", "PrimaryStatus", "PrimaryStatusReasons", "PrimaryStatusDetails", "PerformanceLabel", "PolicySummary" }, null, null, null, null)
           }));
     }
     #endregion
@@ -108,6 +120,9 @@ namespace Google.Ads.GoogleAds.V14.Resources {
       asset_ = other.asset_;
       fieldType_ = other.fieldType_;
       status_ = other.status_;
+      primaryStatus_ = other.primaryStatus_;
+      primaryStatusReasons_ = other.primaryStatusReasons_.Clone();
+      primaryStatusDetails_ = other.primaryStatusDetails_.Clone();
       performanceLabel_ = other.performanceLabel_;
       policySummary_ = other.policySummary_ != null ? other.policySummary_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -198,6 +213,56 @@ namespace Google.Ads.GoogleAds.V14.Resources {
       }
     }
 
+    /// <summary>Field number for the "primary_status" field.</summary>
+    public const int PrimaryStatusFieldNumber = 8;
+    private global::Google.Ads.GoogleAds.V14.Enums.AssetLinkPrimaryStatusEnum.Types.AssetLinkPrimaryStatus primaryStatus_ = global::Google.Ads.GoogleAds.V14.Enums.AssetLinkPrimaryStatusEnum.Types.AssetLinkPrimaryStatus.Unspecified;
+    /// <summary>
+    /// Output only. Provides the PrimaryStatus of this asset link.
+    /// Primary status is meant essentially to differentiate between the plain
+    /// "status" field, which has advertiser set values of enabled, paused, or
+    /// removed.  The primary status takes into account other signals (for assets
+    /// its mainly policy and quality approvals) to come up with a more
+    /// comprehensive status to indicate its serving state.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V14.Enums.AssetLinkPrimaryStatusEnum.Types.AssetLinkPrimaryStatus PrimaryStatus {
+      get { return primaryStatus_; }
+      set {
+        primaryStatus_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "primary_status_reasons" field.</summary>
+    public const int PrimaryStatusReasonsFieldNumber = 9;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V14.Enums.AssetLinkPrimaryStatusReasonEnum.Types.AssetLinkPrimaryStatusReason> _repeated_primaryStatusReasons_codec
+        = pb::FieldCodec.ForEnum(74, x => (int) x, x => (global::Google.Ads.GoogleAds.V14.Enums.AssetLinkPrimaryStatusReasonEnum.Types.AssetLinkPrimaryStatusReason) x);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V14.Enums.AssetLinkPrimaryStatusReasonEnum.Types.AssetLinkPrimaryStatusReason> primaryStatusReasons_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V14.Enums.AssetLinkPrimaryStatusReasonEnum.Types.AssetLinkPrimaryStatusReason>();
+    /// <summary>
+    /// Output only. Provides a list of reasons for why an asset is not serving or
+    /// not serving at full capacity.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V14.Enums.AssetLinkPrimaryStatusReasonEnum.Types.AssetLinkPrimaryStatusReason> PrimaryStatusReasons {
+      get { return primaryStatusReasons_; }
+    }
+
+    /// <summary>Field number for the "primary_status_details" field.</summary>
+    public const int PrimaryStatusDetailsFieldNumber = 10;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V14.Common.AssetLinkPrimaryStatusDetails> _repeated_primaryStatusDetails_codec
+        = pb::FieldCodec.ForMessage(82, global::Google.Ads.GoogleAds.V14.Common.AssetLinkPrimaryStatusDetails.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V14.Common.AssetLinkPrimaryStatusDetails> primaryStatusDetails_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V14.Common.AssetLinkPrimaryStatusDetails>();
+    /// <summary>
+    /// Output only. Provides the details of the primary status and its associated
+    /// reasons.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V14.Common.AssetLinkPrimaryStatusDetails> PrimaryStatusDetails {
+      get { return primaryStatusDetails_; }
+    }
+
     /// <summary>Field number for the "performance_label" field.</summary>
     public const int PerformanceLabelFieldNumber = 6;
     private global::Google.Ads.GoogleAds.V14.Enums.AssetPerformanceLabelEnum.Types.AssetPerformanceLabel performanceLabel_ = global::Google.Ads.GoogleAds.V14.Enums.AssetPerformanceLabelEnum.Types.AssetPerformanceLabel.Unspecified;
@@ -248,6 +313,9 @@ namespace Google.Ads.GoogleAds.V14.Resources {
       if (Asset != other.Asset) return false;
       if (FieldType != other.FieldType) return false;
       if (Status != other.Status) return false;
+      if (PrimaryStatus != other.PrimaryStatus) return false;
+      if(!primaryStatusReasons_.Equals(other.primaryStatusReasons_)) return false;
+      if(!primaryStatusDetails_.Equals(other.primaryStatusDetails_)) return false;
       if (PerformanceLabel != other.PerformanceLabel) return false;
       if (!object.Equals(PolicySummary, other.PolicySummary)) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -262,6 +330,9 @@ namespace Google.Ads.GoogleAds.V14.Resources {
       if (Asset.Length != 0) hash ^= Asset.GetHashCode();
       if (FieldType != global::Google.Ads.GoogleAds.V14.Enums.AssetFieldTypeEnum.Types.AssetFieldType.Unspecified) hash ^= FieldType.GetHashCode();
       if (Status != global::Google.Ads.GoogleAds.V14.Enums.AssetLinkStatusEnum.Types.AssetLinkStatus.Unspecified) hash ^= Status.GetHashCode();
+      if (PrimaryStatus != global::Google.Ads.GoogleAds.V14.Enums.AssetLinkPrimaryStatusEnum.Types.AssetLinkPrimaryStatus.Unspecified) hash ^= PrimaryStatus.GetHashCode();
+      hash ^= primaryStatusReasons_.GetHashCode();
+      hash ^= primaryStatusDetails_.GetHashCode();
       if (PerformanceLabel != global::Google.Ads.GoogleAds.V14.Enums.AssetPerformanceLabelEnum.Types.AssetPerformanceLabel.Unspecified) hash ^= PerformanceLabel.GetHashCode();
       if (policySummary_ != null) hash ^= PolicySummary.GetHashCode();
       if (_unknownFields != null) {
@@ -310,6 +381,12 @@ namespace Google.Ads.GoogleAds.V14.Resources {
         output.WriteRawTag(58);
         output.WriteMessage(PolicySummary);
       }
+      if (PrimaryStatus != global::Google.Ads.GoogleAds.V14.Enums.AssetLinkPrimaryStatusEnum.Types.AssetLinkPrimaryStatus.Unspecified) {
+        output.WriteRawTag(64);
+        output.WriteEnum((int) PrimaryStatus);
+      }
+      primaryStatusReasons_.WriteTo(output, _repeated_primaryStatusReasons_codec);
+      primaryStatusDetails_.WriteTo(output, _repeated_primaryStatusDetails_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -348,6 +425,12 @@ namespace Google.Ads.GoogleAds.V14.Resources {
         output.WriteRawTag(58);
         output.WriteMessage(PolicySummary);
       }
+      if (PrimaryStatus != global::Google.Ads.GoogleAds.V14.Enums.AssetLinkPrimaryStatusEnum.Types.AssetLinkPrimaryStatus.Unspecified) {
+        output.WriteRawTag(64);
+        output.WriteEnum((int) PrimaryStatus);
+      }
+      primaryStatusReasons_.WriteTo(ref output, _repeated_primaryStatusReasons_codec);
+      primaryStatusDetails_.WriteTo(ref output, _repeated_primaryStatusDetails_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -373,6 +456,11 @@ namespace Google.Ads.GoogleAds.V14.Resources {
       if (Status != global::Google.Ads.GoogleAds.V14.Enums.AssetLinkStatusEnum.Types.AssetLinkStatus.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
       }
+      if (PrimaryStatus != global::Google.Ads.GoogleAds.V14.Enums.AssetLinkPrimaryStatusEnum.Types.AssetLinkPrimaryStatus.Unspecified) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PrimaryStatus);
+      }
+      size += primaryStatusReasons_.CalculateSize(_repeated_primaryStatusReasons_codec);
+      size += primaryStatusDetails_.CalculateSize(_repeated_primaryStatusDetails_codec);
       if (PerformanceLabel != global::Google.Ads.GoogleAds.V14.Enums.AssetPerformanceLabelEnum.Types.AssetPerformanceLabel.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PerformanceLabel);
       }
@@ -406,6 +494,11 @@ namespace Google.Ads.GoogleAds.V14.Resources {
       if (other.Status != global::Google.Ads.GoogleAds.V14.Enums.AssetLinkStatusEnum.Types.AssetLinkStatus.Unspecified) {
         Status = other.Status;
       }
+      if (other.PrimaryStatus != global::Google.Ads.GoogleAds.V14.Enums.AssetLinkPrimaryStatusEnum.Types.AssetLinkPrimaryStatus.Unspecified) {
+        PrimaryStatus = other.PrimaryStatus;
+      }
+      primaryStatusReasons_.Add(other.primaryStatusReasons_);
+      primaryStatusDetails_.Add(other.primaryStatusDetails_);
       if (other.PerformanceLabel != global::Google.Ads.GoogleAds.V14.Enums.AssetPerformanceLabelEnum.Types.AssetPerformanceLabel.Unspecified) {
         PerformanceLabel = other.PerformanceLabel;
       }
@@ -461,6 +554,19 @@ namespace Google.Ads.GoogleAds.V14.Resources {
             input.ReadMessage(PolicySummary);
             break;
           }
+          case 64: {
+            PrimaryStatus = (global::Google.Ads.GoogleAds.V14.Enums.AssetLinkPrimaryStatusEnum.Types.AssetLinkPrimaryStatus) input.ReadEnum();
+            break;
+          }
+          case 74:
+          case 72: {
+            primaryStatusReasons_.AddEntriesFrom(input, _repeated_primaryStatusReasons_codec);
+            break;
+          }
+          case 82: {
+            primaryStatusDetails_.AddEntriesFrom(input, _repeated_primaryStatusDetails_codec);
+            break;
+          }
         }
       }
     #endif
@@ -505,6 +611,19 @@ namespace Google.Ads.GoogleAds.V14.Resources {
               PolicySummary = new global::Google.Ads.GoogleAds.V14.Common.PolicySummary();
             }
             input.ReadMessage(PolicySummary);
+            break;
+          }
+          case 64: {
+            PrimaryStatus = (global::Google.Ads.GoogleAds.V14.Enums.AssetLinkPrimaryStatusEnum.Types.AssetLinkPrimaryStatus) input.ReadEnum();
+            break;
+          }
+          case 74:
+          case 72: {
+            primaryStatusReasons_.AddEntriesFrom(ref input, _repeated_primaryStatusReasons_codec);
+            break;
+          }
+          case 82: {
+            primaryStatusDetails_.AddEntriesFrom(ref input, _repeated_primaryStatusDetails_codec);
             break;
           }
         }

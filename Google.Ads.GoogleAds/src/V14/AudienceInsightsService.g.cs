@@ -1898,7 +1898,8 @@ namespace Google.Ads.GoogleAds.V14.Services {
   }
 
   /// <summary>
-  /// Request message for [AudienceInsightsService.ListAudienceInsightsDates][].
+  /// Request message for
+  /// [AudienceInsightsService.ListInsightsEligibleDates][google.ads.googleads.v14.services.AudienceInsightsService.ListInsightsEligibleDates].
   /// </summary>
   public sealed partial class ListInsightsEligibleDatesRequest : pb::IMessage<ListInsightsEligibleDatesRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2053,7 +2054,8 @@ namespace Google.Ads.GoogleAds.V14.Services {
   }
 
   /// <summary>
-  /// Response message for [AudienceInsightsService.ListAudienceInsightsDates][].
+  /// Response message for
+  /// [AudienceInsightsService.ListInsightsEligibleDates][google.ads.googleads.v14.services.AudienceInsightsService.ListInsightsEligibleDates].
   /// </summary>
   public sealed partial class ListInsightsEligibleDatesResponse : pb::IMessage<ListInsightsEligibleDatesResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

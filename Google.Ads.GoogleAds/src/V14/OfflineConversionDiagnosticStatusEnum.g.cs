@@ -206,7 +206,7 @@ namespace Google.Ads.GoogleAds.V14.Enums {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static partial class Types {
       /// <summary>
-      /// Next id: 8
+      /// Possible statuses of the offline ingestion setup.
       /// </summary>
       public enum OfflineConversionDiagnosticStatus {
         /// <summary>

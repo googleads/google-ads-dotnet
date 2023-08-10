@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V14.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjVnb29nbGUvYWRzL2dvb2dsZWFkcy92MTQvZXJyb3JzL2NyaXRlcmlvbl9l",
-            "cnJvci5wcm90bxIfZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE0LmVycm9ycyKl",
-            "LQoSQ3JpdGVyaW9uRXJyb3JFbnVtIo4tCg5Dcml0ZXJpb25FcnJvchIPCgtV",
+            "cnJvci5wcm90bxIfZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE0LmVycm9ycyK5",
+            "LgoSQ3JpdGVyaW9uRXJyb3JFbnVtIqIuCg5Dcml0ZXJpb25FcnJvchIPCgtV",
             "TlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIaChZDT05DUkVURV9UWVBFX1JF",
             "UVVJUkVEEAISHQoZSU5WQUxJRF9FWENMVURFRF9DQVRFR09SWRADEhgKFElO",
             "VkFMSURfS0VZV09SRF9URVhUEAQSGQoVS0VZV09SRF9URVhUX1RPT19MT05H",
@@ -154,13 +154,16 @@ namespace Google.Ads.GoogleAds.V14.Errors {
             "SVZFX0tFWVdPUkRfU0hBUkVEX1NFVBCSARI7CjZDQU5OT1RfSEFWRV9NVUxU",
             "SVBMRV9ORUdBVElWRV9LRVlXT1JEX0xJU1RfUEVSX0FDQ09VTlQQkwESLwoq",
             "Q1VTVE9NRVJfQ0FOTk9UX0FERF9DUklURVJJT05fT0ZfVEhJU19UWVBFEJUB",
-            "EiQKH0NBTk5PVF9UQVJHRVRfU0lNSUxBUl9VU0VSX0xJU1QQlwFC8wEKI2Nv",
-            "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTQuZXJyb3JzQhNDcml0ZXJpb25F",
-            "cnJvclByb3RvUAFaRWdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2ds",
-            "ZWFwaXMvYWRzL2dvb2dsZWFkcy92MTQvZXJyb3JzO2Vycm9yc6ICA0dBQaoC",
-            "H0dvb2dsZS5BZHMuR29vZ2xlQWRzLlYxNC5FcnJvcnPKAh9Hb29nbGVcQWRz",
-            "XEdvb2dsZUFkc1xWMTRcRXJyb3Jz6gIjR29vZ2xlOjpBZHM6Okdvb2dsZUFk",
-            "czo6VjE0OjpFcnJvcnNiBnByb3RvMw=="));
+            "EiQKH0NBTk5PVF9UQVJHRVRfU0lNSUxBUl9VU0VSX0xJU1QQlwESRwpCQ0FO",
+            "Tk9UX0FERF9BVURJRU5DRV9TRUdNRU5UX0NSSVRFUklPTl9XSEVOX0FVRElF",
+            "TkNFX0dST1VQRURfSVNfU0VUEJgBEiYKIU9ORV9BVURJRU5DRV9BTExPV0VE",
+            "X1BFUl9BRF9HUk9VUBCZARIhChxJTlZBTElEX0RFVEFJTEVEX0RFTU9HUkFQ",
+            "SElDEJoBQvMBCiNjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE0LmVycm9y",
+            "c0ITQ3JpdGVyaW9uRXJyb3JQcm90b1ABWkVnb29nbGUuZ29sYW5nLm9yZy9n",
+            "ZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjE0L2Vycm9ycztl",
+            "cnJvcnOiAgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMTQuRXJyb3Jz",
+            "ygIfR29vZ2xlXEFkc1xHb29nbGVBZHNcVjE0XEVycm9yc+oCI0dvb2dsZTo6",
+            "QWRzOjpHb29nbGVBZHM6OlYxNDo6RXJyb3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -946,6 +949,19 @@ namespace Google.Ads.GoogleAds.V14.Errors {
         /// https://support.google.com/google-ads/answer/12463119 to learn more.
         /// </summary>
         [pbr::OriginalName("CANNOT_TARGET_SIMILAR_USER_LIST")] CannotTargetSimilarUserList = 151,
+        /// <summary>
+        /// Audience segment criteria cannot be added when use_audience_grouped bit
+        /// is set.
+        /// </summary>
+        [pbr::OriginalName("CANNOT_ADD_AUDIENCE_SEGMENT_CRITERION_WHEN_AUDIENCE_GROUPED_IS_SET")] CannotAddAudienceSegmentCriterionWhenAudienceGroupedIsSet = 152,
+        /// <summary>
+        /// Only one audience is allowed in an ad group.
+        /// </summary>
+        [pbr::OriginalName("ONE_AUDIENCE_ALLOWED_PER_AD_GROUP")] OneAudienceAllowedPerAdGroup = 153,
+        /// <summary>
+        /// Invalid detailed demographics criterion.
+        /// </summary>
+        [pbr::OriginalName("INVALID_DETAILED_DEMOGRAPHIC")] InvalidDetailedDemographic = 154,
       }
 
     }

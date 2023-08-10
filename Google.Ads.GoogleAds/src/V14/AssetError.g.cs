@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V14.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjFnb29nbGUvYWRzL2dvb2dsZWFkcy92MTQvZXJyb3JzL2Fzc2V0X2Vycm9y",
-            "LnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFkcy52MTQuZXJyb3JzIrULCg5B",
-            "c3NldEVycm9yRW51bSKiCwoKQXNzZXRFcnJvchIPCgtVTlNQRUNJRklFRBAA",
+            "LnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFkcy52MTQuZXJyb3JzItcLCg5B",
+            "c3NldEVycm9yRW51bSLECwoKQXNzZXRFcnJvchIPCgtVTlNQRUNJRklFRBAA",
             "EgsKB1VOS05PV04QARIsCihDVVNUT01FUl9OT1RfT05fQUxMT1dMSVNUX0ZP",
             "Ul9BU1NFVF9UWVBFEA0SEwoPRFVQTElDQVRFX0FTU0VUEAMSGAoURFVQTElD",
             "QVRFX0FTU0VUX05BTUUQBBIZChVBU1NFVF9EQVRBX0lTX01JU1NJTkcQBRIc",
@@ -58,12 +58,13 @@ namespace Google.Ads.GoogleAds.V14.Errors {
             "RV9DT05GTElDVF9GT1JfQVNTRVRfVFlQRRAiEh4KGkNBTk5PVF9NT0RJRllf",
             "QVNTRVRfU09VUkNFECMSLQopQ0FOTk9UX01PRElGWV9BVVRPTUFUSUNBTExZ",
             "X0NSRUFURURfQVNTRVQQJBItCilMRUFEX0ZPUk1fTE9DQVRJT05fQU5TV0VS",
-            "X1RZUEVfRElTQUxMT1dFRBAlQu8BCiNjb20uZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjE0LmVycm9yc0IPQXNzZXRFcnJvclByb3RvUAFaRWdvb2dsZS5nb2xh",
-            "bmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MTQv",
-            "ZXJyb3JzO2Vycm9yc6ICA0dBQaoCH0dvb2dsZS5BZHMuR29vZ2xlQWRzLlYx",
-            "NC5FcnJvcnPKAh9Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMTRcRXJyb3Jz6gIj",
-            "R29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE0OjpFcnJvcnNiBnByb3RvMw=="));
+            "X1RZUEVfRElTQUxMT1dFRBAlEiAKHFBBR0VfRkVFRF9JTlZBTElEX0xBQkVM",
+            "X1RFWFQQJkLvAQojY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNC5lcnJv",
+            "cnNCD0Fzc2V0RXJyb3JQcm90b1ABWkVnb29nbGUuZ29sYW5nLm9yZy9nZW5w",
+            "cm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjE0L2Vycm9ycztlcnJv",
+            "cnOiAgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMTQuRXJyb3JzygIf",
+            "R29vZ2xlXEFkc1xHb29nbGVBZHNcVjE0XEVycm9yc+oCI0dvb2dsZTo6QWRz",
+            "OjpHb29nbGVBZHM6OlYxNDo6RXJyb3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -394,6 +395,10 @@ namespace Google.Ads.GoogleAds.V14.Errors {
         /// Lead Form is disallowed to use "LOCATION" answer type.
         /// </summary>
         [pbr::OriginalName("LEAD_FORM_LOCATION_ANSWER_TYPE_DISALLOWED")] LeadFormLocationAnswerTypeDisallowed = 37,
+        /// <summary>
+        /// Page Feed label text contains invalid characters.
+        /// </summary>
+        [pbr::OriginalName("PAGE_FEED_INVALID_LABEL_TEXT")] PageFeedInvalidLabelText = 38,
       }
 
     }

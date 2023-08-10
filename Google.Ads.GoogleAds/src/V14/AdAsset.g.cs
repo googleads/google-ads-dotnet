@@ -41,13 +41,14 @@ namespace Google.Ads.GoogleAds.V14.Common {
             "CUgAiAEBQggKBl9hc3NldCIsCgxBZFZpZGVvQXNzZXQSEgoFYXNzZXQYAiAB",
             "KAlIAIgBAUIICgZfYXNzZXQiMgoSQWRNZWRpYUJ1bmRsZUFzc2V0EhIKBWFz",
             "c2V0GAIgASgJSACIAQFCCAoGX2Fzc2V0IjwKHEFkRGlzY292ZXJ5Q2Fyb3Vz",
-            "ZWxDYXJkQXNzZXQSEgoFYXNzZXQYASABKAlIAIgBAUIICgZfYXNzZXRC7AEK",
-            "I2NvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTQuY29tbW9uQgxBZEFzc2V0",
-            "UHJvdG9QAVpFZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBp",
-            "cy9hZHMvZ29vZ2xlYWRzL3YxNC9jb21tb247Y29tbW9uogIDR0FBqgIfR29v",
-            "Z2xlLkFkcy5Hb29nbGVBZHMuVjE0LkNvbW1vbsoCH0dvb2dsZVxBZHNcR29v",
-            "Z2xlQWRzXFYxNFxDb21tb27qAiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpW",
-            "MTQ6OkNvbW1vbmIGcHJvdG8z"));
+            "ZWxDYXJkQXNzZXQSEgoFYXNzZXQYASABKAlIAIgBAUIICgZfYXNzZXQiMwoT",
+            "QWRDYWxsVG9BY3Rpb25Bc3NldBISCgVhc3NldBgBIAEoCUgAiAEBQggKBl9h",
+            "c3NldELsAQojY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNC5jb21tb25C",
+            "DEFkQXNzZXRQcm90b1ABWkVnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9n",
+            "b29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjE0L2NvbW1vbjtjb21tb26iAgNH",
+            "QUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMTQuQ29tbW9uygIfR29vZ2xl",
+            "XEFkc1xHb29nbGVBZHNcVjE0XENvbW1vbuoCI0dvb2dsZTo6QWRzOjpHb29n",
+            "bGVBZHM6OlYxNDo6Q29tbW9uYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V14.Common.AssetPolicyReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Enums.AssetPerformanceLabelReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Enums.ServedAssetFieldTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -55,7 +56,8 @@ namespace Google.Ads.GoogleAds.V14.Common {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Common.AdImageAsset), global::Google.Ads.GoogleAds.V14.Common.AdImageAsset.Parser, new[]{ "Asset" }, new[]{ "Asset" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Common.AdVideoAsset), global::Google.Ads.GoogleAds.V14.Common.AdVideoAsset.Parser, new[]{ "Asset" }, new[]{ "Asset" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Common.AdMediaBundleAsset), global::Google.Ads.GoogleAds.V14.Common.AdMediaBundleAsset.Parser, new[]{ "Asset" }, new[]{ "Asset" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Common.AdDiscoveryCarouselCardAsset), global::Google.Ads.GoogleAds.V14.Common.AdDiscoveryCarouselCardAsset.Parser, new[]{ "Asset" }, new[]{ "Asset" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Common.AdDiscoveryCarouselCardAsset), global::Google.Ads.GoogleAds.V14.Common.AdDiscoveryCarouselCardAsset.Parser, new[]{ "Asset" }, new[]{ "Asset" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Common.AdCallToActionAsset), global::Google.Ads.GoogleAds.V14.Common.AdCallToActionAsset.Parser, new[]{ "Asset" }, new[]{ "Asset" }, null, null, null)
           }));
     }
     #endregion
@@ -1188,6 +1190,215 @@ namespace Google.Ads.GoogleAds.V14.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(AdDiscoveryCarouselCardAsset other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasAsset) {
+        Asset = other.Asset;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Asset = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Asset = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// A call to action asset used inside an ad.
+  /// </summary>
+  public sealed partial class AdCallToActionAsset : pb::IMessage<AdCallToActionAsset>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<AdCallToActionAsset> _parser = new pb::MessageParser<AdCallToActionAsset>(() => new AdCallToActionAsset());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<AdCallToActionAsset> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V14.Common.AdAssetReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AdCallToActionAsset() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AdCallToActionAsset(AdCallToActionAsset other) : this() {
+      asset_ = other.asset_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AdCallToActionAsset Clone() {
+      return new AdCallToActionAsset(this);
+    }
+
+    /// <summary>Field number for the "asset" field.</summary>
+    public const int AssetFieldNumber = 1;
+    private readonly static string AssetDefaultValue = "";
+
+    private string asset_;
+    /// <summary>
+    /// The Asset resource name of this call to action asset.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Asset {
+      get { return asset_ ?? AssetDefaultValue; }
+      set {
+        asset_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "asset" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAsset {
+      get { return asset_ != null; }
+    }
+    /// <summary>Clears the value of the "asset" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAsset() {
+      asset_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as AdCallToActionAsset);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(AdCallToActionAsset other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Asset != other.Asset) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasAsset) hash ^= Asset.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasAsset) {
+        output.WriteRawTag(10);
+        output.WriteString(Asset);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasAsset) {
+        output.WriteRawTag(10);
+        output.WriteString(Asset);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasAsset) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Asset);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(AdCallToActionAsset other) {
       if (other == null) {
         return;
       }

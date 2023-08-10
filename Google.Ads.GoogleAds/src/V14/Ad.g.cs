@@ -35,7 +35,7 @@ namespace Google.Ads.GoogleAds.V14.Resources {
             "bGVhZHMvdjE0L2VudW1zL2RldmljZS5wcm90bxpBZ29vZ2xlL2Fkcy9nb29n",
             "bGVhZHMvdjE0L2VudW1zL3N5c3RlbV9tYW5hZ2VkX2VudGl0eV9zb3VyY2Uu",
             "cHJvdG8aH2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8aGWdvb2ds",
-            "ZS9hcGkvcmVzb3VyY2UucHJvdG8ioRcKAkFkEjoKDXJlc291cmNlX25hbWUY",
+            "ZS9hcGkvcmVzb3VyY2UucHJvdG8iixgKAkFkEjoKDXJlc291cmNlX25hbWUY",
             "JSABKAlCI+BBBfpBHQobZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0FkEhQK",
             "AmlkGCggASgDQgPgQQNIAYgBARISCgpmaW5hbF91cmxzGCkgAygJEkQKDmZp",
             "bmFsX2FwcF91cmxzGCMgAygLMiwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE0",
@@ -96,22 +96,24 @@ namespace Google.Ads.GoogleAds.V14.Resources {
             "b2dsZWFkcy52MTQuY29tbW9uLkRpc2NvdmVyeU11bHRpQXNzZXRBZEluZm9I",
             "ABJZChVkaXNjb3ZlcnlfY2Fyb3VzZWxfYWQYNCABKAsyOC5nb29nbGUuYWRz",
             "Lmdvb2dsZWFkcy52MTQuY29tbW9uLkRpc2NvdmVyeUNhcm91c2VsQWRJbmZv",
-            "SAASQgoJdHJhdmVsX2FkGDYgASgLMi0uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djE0LmNvbW1vbi5UcmF2ZWxBZEluZm9IADpF6kFCChtnb29nbGVhZHMuZ29v",
-            "Z2xlYXBpcy5jb20vQWQSI2N1c3RvbWVycy97Y3VzdG9tZXJfaWR9L2Fkcy97",
-            "YWRfaWR9QgkKB2FkX2RhdGFCBQoDX2lkQhgKFl90cmFja2luZ191cmxfdGVt",
-            "cGxhdGVCEwoRX2ZpbmFsX3VybF9zdWZmaXhCDgoMX2Rpc3BsYXlfdXJsQhYK",
-            "FF9hZGRlZF9ieV9nb29nbGVfYWRzQgcKBV9uYW1lQvkBCiZjb20uZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjE0LnJlc291cmNlc0IHQWRQcm90b1ABWktnb29n",
-            "bGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVh",
-            "ZHMvdjE0L3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGqAiJHb29nbGUuQWRz",
-            "Lkdvb2dsZUFkcy5WMTQuUmVzb3VyY2VzygIiR29vZ2xlXEFkc1xHb29nbGVB",
-            "ZHNcVjE0XFJlc291cmNlc+oCJkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYx",
-            "NDo6UmVzb3VyY2VzYgZwcm90bzM="));
+            "SAASaAodZGlzY292ZXJ5X3ZpZGVvX3Jlc3BvbnNpdmVfYWQYPCABKAsyPy5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MTQuY29tbW9uLkRpc2NvdmVyeVZpZGVv",
+            "UmVzcG9uc2l2ZUFkSW5mb0gAEkIKCXRyYXZlbF9hZBg2IAEoCzItLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYxNC5jb21tb24uVHJhdmVsQWRJbmZvSAA6RepB",
+            "QgobZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0FkEiNjdXN0b21lcnMve2N1",
+            "c3RvbWVyX2lkfS9hZHMve2FkX2lkfUIJCgdhZF9kYXRhQgUKA19pZEIYChZf",
+            "dHJhY2tpbmdfdXJsX3RlbXBsYXRlQhMKEV9maW5hbF91cmxfc3VmZml4Qg4K",
+            "DF9kaXNwbGF5X3VybEIWChRfYWRkZWRfYnlfZ29vZ2xlX2Fkc0IHCgVfbmFt",
+            "ZUL5AQomY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNC5yZXNvdXJjZXNC",
+            "B0FkUHJvdG9QAVpLZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xl",
+            "YXBpcy9hZHMvZ29vZ2xlYWRzL3YxNC9yZXNvdXJjZXM7cmVzb3VyY2VzogID",
+            "R0FBqgIiR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjE0LlJlc291cmNlc8oCIkdv",
+            "b2dsZVxBZHNcR29vZ2xlQWRzXFYxNFxSZXNvdXJjZXPqAiZHb29nbGU6OkFk",
+            "czo6R29vZ2xlQWRzOjpWMTQ6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V14.Common.AdTypeInfosReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Common.FinalAppUrlReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Common.UrlCollectionReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Enums.AdTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Enums.DeviceReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Enums.SystemManagedEntitySourceReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Resources.Ad), global::Google.Ads.GoogleAds.V14.Resources.Ad.Parser, new[]{ "ResourceName", "Id", "FinalUrls", "FinalAppUrls", "FinalMobileUrls", "TrackingUrlTemplate", "FinalUrlSuffix", "UrlCustomParameters", "DisplayUrl", "Type", "AddedByGoogleAds", "DevicePreference", "UrlCollections", "Name", "SystemManagedResourceSource", "TextAd", "ExpandedTextAd", "CallAd", "ExpandedDynamicSearchAd", "HotelAd", "ShoppingSmartAd", "ShoppingProductAd", "ImageAd", "VideoAd", "VideoResponsiveAd", "ResponsiveSearchAd", "LegacyResponsiveDisplayAd", "AppAd", "LegacyAppInstallAd", "ResponsiveDisplayAd", "LocalAd", "DisplayUploadAd", "AppEngagementAd", "ShoppingComparisonListingAd", "SmartCampaignAd", "AppPreRegistrationAd", "DiscoveryMultiAssetAd", "DiscoveryCarouselAd", "TravelAd" }, new[]{ "AdData", "Id", "TrackingUrlTemplate", "FinalUrlSuffix", "DisplayUrl", "AddedByGoogleAds", "Name" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Resources.Ad), global::Google.Ads.GoogleAds.V14.Resources.Ad.Parser, new[]{ "ResourceName", "Id", "FinalUrls", "FinalAppUrls", "FinalMobileUrls", "TrackingUrlTemplate", "FinalUrlSuffix", "UrlCustomParameters", "DisplayUrl", "Type", "AddedByGoogleAds", "DevicePreference", "UrlCollections", "Name", "SystemManagedResourceSource", "TextAd", "ExpandedTextAd", "CallAd", "ExpandedDynamicSearchAd", "HotelAd", "ShoppingSmartAd", "ShoppingProductAd", "ImageAd", "VideoAd", "VideoResponsiveAd", "ResponsiveSearchAd", "LegacyResponsiveDisplayAd", "AppAd", "LegacyAppInstallAd", "ResponsiveDisplayAd", "LocalAd", "DisplayUploadAd", "AppEngagementAd", "ShoppingComparisonListingAd", "SmartCampaignAd", "AppPreRegistrationAd", "DiscoveryMultiAssetAd", "DiscoveryCarouselAd", "DiscoveryVideoResponsiveAd", "TravelAd" }, new[]{ "AdData", "Id", "TrackingUrlTemplate", "FinalUrlSuffix", "DisplayUrl", "AddedByGoogleAds", "Name" }, null, null, null)
           }));
     }
     #endregion
@@ -241,6 +243,9 @@ namespace Google.Ads.GoogleAds.V14.Resources {
           break;
         case AdDataOneofCase.DiscoveryCarouselAd:
           DiscoveryCarouselAd = other.DiscoveryCarouselAd.Clone();
+          break;
+        case AdDataOneofCase.DiscoveryVideoResponsiveAd:
+          DiscoveryVideoResponsiveAd = other.DiscoveryVideoResponsiveAd.Clone();
           break;
         case AdDataOneofCase.TravelAd:
           TravelAd = other.TravelAd.Clone();
@@ -932,6 +937,21 @@ namespace Google.Ads.GoogleAds.V14.Resources {
       }
     }
 
+    /// <summary>Field number for the "discovery_video_responsive_ad" field.</summary>
+    public const int DiscoveryVideoResponsiveAdFieldNumber = 60;
+    /// <summary>
+    /// Details pertaining to a discovery video responsive ad.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V14.Common.DiscoveryVideoResponsiveAdInfo DiscoveryVideoResponsiveAd {
+      get { return adDataCase_ == AdDataOneofCase.DiscoveryVideoResponsiveAd ? (global::Google.Ads.GoogleAds.V14.Common.DiscoveryVideoResponsiveAdInfo) adData_ : null; }
+      set {
+        adData_ = value;
+        adDataCase_ = value == null ? AdDataOneofCase.None : AdDataOneofCase.DiscoveryVideoResponsiveAd;
+      }
+    }
+
     /// <summary>Field number for the "travel_ad" field.</summary>
     public const int TravelAdFieldNumber = 54;
     /// <summary>
@@ -974,6 +994,7 @@ namespace Google.Ads.GoogleAds.V14.Resources {
       AppPreRegistrationAd = 50,
       DiscoveryMultiAssetAd = 51,
       DiscoveryCarouselAd = 52,
+      DiscoveryVideoResponsiveAd = 60,
       TravelAd = 54,
     }
     private AdDataOneofCase adDataCase_ = AdDataOneofCase.None;
@@ -1043,6 +1064,7 @@ namespace Google.Ads.GoogleAds.V14.Resources {
       if (!object.Equals(AppPreRegistrationAd, other.AppPreRegistrationAd)) return false;
       if (!object.Equals(DiscoveryMultiAssetAd, other.DiscoveryMultiAssetAd)) return false;
       if (!object.Equals(DiscoveryCarouselAd, other.DiscoveryCarouselAd)) return false;
+      if (!object.Equals(DiscoveryVideoResponsiveAd, other.DiscoveryVideoResponsiveAd)) return false;
       if (!object.Equals(TravelAd, other.TravelAd)) return false;
       if (AdDataCase != other.AdDataCase) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -1090,6 +1112,7 @@ namespace Google.Ads.GoogleAds.V14.Resources {
       if (adDataCase_ == AdDataOneofCase.AppPreRegistrationAd) hash ^= AppPreRegistrationAd.GetHashCode();
       if (adDataCase_ == AdDataOneofCase.DiscoveryMultiAssetAd) hash ^= DiscoveryMultiAssetAd.GetHashCode();
       if (adDataCase_ == AdDataOneofCase.DiscoveryCarouselAd) hash ^= DiscoveryCarouselAd.GetHashCode();
+      if (adDataCase_ == AdDataOneofCase.DiscoveryVideoResponsiveAd) hash ^= DiscoveryVideoResponsiveAd.GetHashCode();
       if (adDataCase_ == AdDataOneofCase.TravelAd) hash ^= TravelAd.GetHashCode();
       hash ^= (int) adDataCase_;
       if (_unknownFields != null) {
@@ -1251,6 +1274,10 @@ namespace Google.Ads.GoogleAds.V14.Resources {
         output.WriteRawTag(178, 3);
         output.WriteMessage(TravelAd);
       }
+      if (adDataCase_ == AdDataOneofCase.DiscoveryVideoResponsiveAd) {
+        output.WriteRawTag(226, 3);
+        output.WriteMessage(DiscoveryVideoResponsiveAd);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1402,6 +1429,10 @@ namespace Google.Ads.GoogleAds.V14.Resources {
         output.WriteRawTag(178, 3);
         output.WriteMessage(TravelAd);
       }
+      if (adDataCase_ == AdDataOneofCase.DiscoveryVideoResponsiveAd) {
+        output.WriteRawTag(226, 3);
+        output.WriteMessage(DiscoveryVideoResponsiveAd);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1515,6 +1546,9 @@ namespace Google.Ads.GoogleAds.V14.Resources {
       }
       if (adDataCase_ == AdDataOneofCase.DiscoveryCarouselAd) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(DiscoveryCarouselAd);
+      }
+      if (adDataCase_ == AdDataOneofCase.DiscoveryVideoResponsiveAd) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(DiscoveryVideoResponsiveAd);
       }
       if (adDataCase_ == AdDataOneofCase.TravelAd) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(TravelAd);
@@ -1704,6 +1738,12 @@ namespace Google.Ads.GoogleAds.V14.Resources {
             DiscoveryCarouselAd = new global::Google.Ads.GoogleAds.V14.Common.DiscoveryCarouselAdInfo();
           }
           DiscoveryCarouselAd.MergeFrom(other.DiscoveryCarouselAd);
+          break;
+        case AdDataOneofCase.DiscoveryVideoResponsiveAd:
+          if (DiscoveryVideoResponsiveAd == null) {
+            DiscoveryVideoResponsiveAd = new global::Google.Ads.GoogleAds.V14.Common.DiscoveryVideoResponsiveAdInfo();
+          }
+          DiscoveryVideoResponsiveAd.MergeFrom(other.DiscoveryVideoResponsiveAd);
           break;
         case AdDataOneofCase.TravelAd:
           if (TravelAd == null) {
@@ -2004,6 +2044,15 @@ namespace Google.Ads.GoogleAds.V14.Resources {
             TravelAd = subBuilder;
             break;
           }
+          case 482: {
+            global::Google.Ads.GoogleAds.V14.Common.DiscoveryVideoResponsiveAdInfo subBuilder = new global::Google.Ads.GoogleAds.V14.Common.DiscoveryVideoResponsiveAdInfo();
+            if (adDataCase_ == AdDataOneofCase.DiscoveryVideoResponsiveAd) {
+              subBuilder.MergeFrom(DiscoveryVideoResponsiveAd);
+            }
+            input.ReadMessage(subBuilder);
+            DiscoveryVideoResponsiveAd = subBuilder;
+            break;
+          }
         }
       }
     #endif
@@ -2293,6 +2342,15 @@ namespace Google.Ads.GoogleAds.V14.Resources {
             }
             input.ReadMessage(subBuilder);
             TravelAd = subBuilder;
+            break;
+          }
+          case 482: {
+            global::Google.Ads.GoogleAds.V14.Common.DiscoveryVideoResponsiveAdInfo subBuilder = new global::Google.Ads.GoogleAds.V14.Common.DiscoveryVideoResponsiveAdInfo();
+            if (adDataCase_ == AdDataOneofCase.DiscoveryVideoResponsiveAd) {
+              subBuilder.MergeFrom(DiscoveryVideoResponsiveAd);
+            }
+            input.ReadMessage(subBuilder);
+            DiscoveryVideoResponsiveAd = subBuilder;
             break;
           }
         }

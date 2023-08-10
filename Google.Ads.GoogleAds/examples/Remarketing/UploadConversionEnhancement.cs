@@ -17,6 +17,7 @@ using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V14.Common;
 using Google.Ads.GoogleAds.V14.Errors;
+using Google.Ads.GoogleAds.V14.Resources;
 using Google.Ads.GoogleAds.V14.Services;
 using System;
 using System.Collections.Generic;

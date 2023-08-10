@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V14.Errors {
           string.Concat(
             "Cjpnb29nbGUvYWRzL2dvb2dsZWFkcy92MTQvZXJyb3JzL2F1dGhlbnRpY2F0",
             "aW9uX2Vycm9yLnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFkcy52MTQuZXJy",
-            "b3JzIugEChdBdXRoZW50aWNhdGlvbkVycm9yRW51bSLMBAoTQXV0aGVudGlj",
+            "b3JzIt4FChdBdXRoZW50aWNhdGlvbkVycm9yRW51bSLCBQoTQXV0aGVudGlj",
             "YXRpb25FcnJvchIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIYChRB",
             "VVRIRU5USUNBVElPTl9FUlJPUhACEh4KGkNMSUVOVF9DVVNUT01FUl9JRF9J",
             "TlZBTElEEAUSFgoSQ1VTVE9NRVJfTk9UX0ZPVU5EEAgSGgoWR09PR0xFX0FD",
@@ -39,13 +39,16 @@ namespace Google.Ads.GoogleAds.V14.Errors {
             "VE9LRU5fUkVWT0tFRBASEh4KGk9BVVRIX1RPS0VOX0hFQURFUl9JTlZBTElE",
             "EBMSGAoUTE9HSU5fQ09PS0lFX0lOVkFMSUQQFBITCg9VU0VSX0lEX0lOVkFM",
             "SUQQFhImCiJUV09fU1RFUF9WRVJJRklDQVRJT05fTk9UX0VOUk9MTEVEEBcS",
-            "JAogQURWQU5DRURfUFJPVEVDVElPTl9OT1RfRU5ST0xMRUQQGEL4AQojY29t",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNC5lcnJvcnNCGEF1dGhlbnRpY2F0",
-            "aW9uRXJyb3JQcm90b1ABWkVnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9n",
-            "b29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjE0L2Vycm9ycztlcnJvcnOiAgNH",
-            "QUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMTQuRXJyb3JzygIfR29vZ2xl",
-            "XEFkc1xHb29nbGVBZHNcVjE0XEVycm9yc+oCI0dvb2dsZTo6QWRzOjpHb29n",
-            "bGVBZHM6OlYxNDo6RXJyb3JzYgZwcm90bzM="));
+            "JAogQURWQU5DRURfUFJPVEVDVElPTl9OT1RfRU5ST0xMRUQQGBIfChtPUkdB",
+            "TklaQVRJT05fTk9UX1JFQ09HTklaRUQQGhIdChlPUkdBTklaQVRJT05fTk9U",
+            "X0FQUFJPVkVEEBsSNAowT1JHQU5JWkFUSU9OX05PVF9BU1NPQ0lBVEVEX1dJ",
+            "VEhfREVWRUxPUEVSX1RPS0VOEBxC+AEKI2NvbS5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MTQuZXJyb3JzQhhBdXRoZW50aWNhdGlvbkVycm9yUHJvdG9QAVpF",
+            "Z29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29v",
+            "Z2xlYWRzL3YxNC9lcnJvcnM7ZXJyb3JzogIDR0FBqgIfR29vZ2xlLkFkcy5H",
+            "b29nbGVBZHMuVjE0LkVycm9yc8oCH0dvb2dsZVxBZHNcR29vZ2xlQWRzXFYx",
+            "NFxFcnJvcnPqAiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTQ6OkVycm9y",
+            "c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -303,6 +306,20 @@ namespace Google.Ads.GoogleAds.V14.Errors {
         /// Google account at https://landing.google.com/advancedprotection.
         /// </summary>
         [pbr::OriginalName("ADVANCED_PROTECTION_NOT_ENROLLED")] AdvancedProtectionNotEnrolled = 24,
+        /// <summary>
+        /// The Cloud organization associated with the project is not recognized.
+        /// </summary>
+        [pbr::OriginalName("ORGANIZATION_NOT_RECOGNIZED")] OrganizationNotRecognized = 26,
+        /// <summary>
+        /// The Cloud organization associated with the project is not approved for
+        /// prod access.
+        /// </summary>
+        [pbr::OriginalName("ORGANIZATION_NOT_APPROVED")] OrganizationNotApproved = 27,
+        /// <summary>
+        /// The Cloud organization associated with the project is not associated with
+        /// the developer token.
+        /// </summary>
+        [pbr::OriginalName("ORGANIZATION_NOT_ASSOCIATED_WITH_DEVELOPER_TOKEN")] OrganizationNotAssociatedWithDeveloperToken = 28,
       }
 
     }

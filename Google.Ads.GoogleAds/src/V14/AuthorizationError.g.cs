@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V14.Errors {
           string.Concat(
             "Cjlnb29nbGUvYWRzL2dvb2dsZWFkcy92MTQvZXJyb3JzL2F1dGhvcml6YXRp",
             "b25fZXJyb3IucHJvdG8SH2dvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNC5lcnJv",
-            "cnMi9AMKFkF1dGhvcml6YXRpb25FcnJvckVudW0i2QMKEkF1dGhvcml6YXRp",
+            "cnMingQKFkF1dGhvcml6YXRpb25FcnJvckVudW0igwQKEkF1dGhvcml6YXRp",
             "b25FcnJvchIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIaChZVU0VS",
             "X1BFUk1JU1NJT05fREVOSUVEEAISJAogREVWRUxPUEVSX1RPS0VOX05PVF9P",
             "Tl9BTExPV0xJU1QQDRIeChpERVZFTE9QRVJfVE9LRU5fUFJPSElCSVRFRBAE",
@@ -37,12 +37,13 @@ namespace Google.Ads.GoogleAds.V14.Errors {
             "QUxJRF9MT0dJTl9DVVNUT01FUl9JRF9TRVJWSU5HX0NVU1RPTUVSX0lEX0NP",
             "TUJJTkFUSU9OEAsSGQoVU0VSVklDRV9BQ0NFU1NfREVOSUVEEAwSIgoeQUND",
             "RVNTX0RFTklFRF9GT1JfQUNDT1VOVF9UWVBFEBkSGAoUTUVUUklDX0FDQ0VT",
-            "U19ERU5JRUQQGkL3AQojY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNC5l",
-            "cnJvcnNCF0F1dGhvcml6YXRpb25FcnJvclByb3RvUAFaRWdvb2dsZS5nb2xh",
-            "bmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MTQv",
-            "ZXJyb3JzO2Vycm9yc6ICA0dBQaoCH0dvb2dsZS5BZHMuR29vZ2xlQWRzLlYx",
-            "NC5FcnJvcnPKAh9Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMTRcRXJyb3Jz6gIj",
-            "R29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE0OjpFcnJvcnNiBnByb3RvMw=="));
+            "U19ERU5JRUQQGhIoCiRDTE9VRF9QUk9KRUNUX05PVF9VTkRFUl9PUkdBTkla",
+            "QVRJT04QG0L3AQojY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNC5lcnJv",
+            "cnNCF0F1dGhvcml6YXRpb25FcnJvclByb3RvUAFaRWdvb2dsZS5nb2xhbmcu",
+            "b3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MTQvZXJy",
+            "b3JzO2Vycm9yc6ICA0dBQaoCH0dvb2dsZS5BZHMuR29vZ2xlQWRzLlYxNC5F",
+            "cnJvcnPKAh9Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMTRcRXJyb3Jz6gIjR29v",
+            "Z2xlOjpBZHM6Okdvb2dsZUFkczo6VjE0OjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -289,6 +290,10 @@ namespace Google.Ads.GoogleAds.V14.Errors {
         /// The developer does not have access to the metrics queried.
         /// </summary>
         [pbr::OriginalName("METRIC_ACCESS_DENIED")] MetricAccessDenied = 26,
+        /// <summary>
+        /// The Google Cloud project is not under the required organization.
+        /// </summary>
+        [pbr::OriginalName("CLOUD_PROJECT_NOT_UNDER_ORGANIZATION")] CloudProjectNotUnderOrganization = 27,
       }
 
     }

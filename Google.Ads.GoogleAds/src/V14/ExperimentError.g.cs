@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V14.Errors {
           string.Concat(
             "CjZnb29nbGUvYWRzL2dvb2dsZWFkcy92MTQvZXJyb3JzL2V4cGVyaW1lbnRf",
             "ZXJyb3IucHJvdG8SH2dvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNC5lcnJvcnMi",
-            "xAcKE0V4cGVyaW1lbnRFcnJvckVudW0irAcKD0V4cGVyaW1lbnRFcnJvchIP",
+            "yAgKE0V4cGVyaW1lbnRFcnJvckVudW0isAgKD0V4cGVyaW1lbnRFcnJvchIP",
             "CgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIhCh1DQU5OT1RfU0VUX1NU",
             "QVJUX0RBVEVfSU5fUEFTVBACEh4KGkVORF9EQVRFX0JFRk9SRV9TVEFSVF9E",
             "QVRFEAMSIAocU1RBUlRfREFURV9UT09fRkFSX0lOX0ZVVFVSRRAEEh0KGURV",
@@ -47,13 +47,16 @@ namespace Google.Ads.GoogleAds.V14.Errors {
             "QURVQVRFRBAWEjgKNENBTk5PVF9DUkVBVEVfRVhQRVJJTUVOVF9DQU1QQUlH",
             "Tl9XSVRIX1NIQVJFRF9CVURHRVQQFxI4CjRDQU5OT1RfQ1JFQVRFX0VYUEVS",
             "SU1FTlRfQ0FNUEFJR05fV0lUSF9DVVNUT01fQlVER0VUEBgSHQoZU1RBVFVT",
-            "X1RSQU5TSVRJT05fSU5WQUxJRBAZQvQBCiNjb20uZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjE0LmVycm9yc0IURXhwZXJpbWVudEVycm9yUHJvdG9QAVpFZ29v",
-            "Z2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xl",
-            "YWRzL3YxNC9lcnJvcnM7ZXJyb3JzogIDR0FBqgIfR29vZ2xlLkFkcy5Hb29n",
-            "bGVBZHMuVjE0LkVycm9yc8oCH0dvb2dsZVxBZHNcR29vZ2xlQWRzXFYxNFxF",
-            "cnJvcnPqAiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTQ6OkVycm9yc2IG",
-            "cHJvdG8z"));
+            "X1RSQU5TSVRJT05fSU5WQUxJRBAZEiYKIkRVUExJQ0FURV9FWFBFUklNRU5U",
+            "X0NBTVBBSUdOX05BTUUQGhIoCiRDQU5OT1RfUkVNT1ZFX0lOX0NSRUFUSU9O",
+            "X0VYUEVSSU1FTlQQGxIwCixDQU5OT1RfQUREX0NBTVBBSUdOX1dJVEhfREVQ",
+            "UkVDQVRFRF9BRF9UWVBFUxAcQvQBCiNjb20uZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjE0LmVycm9yc0IURXhwZXJpbWVudEVycm9yUHJvdG9QAVpFZ29vZ2xl",
+            "LmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRz",
+            "L3YxNC9lcnJvcnM7ZXJyb3JzogIDR0FBqgIfR29vZ2xlLkFkcy5Hb29nbGVB",
+            "ZHMuVjE0LkVycm9yc8oCH0dvb2dsZVxBZHNcR29vZ2xlQWRzXFYxNFxFcnJv",
+            "cnPqAiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTQ6OkVycm9yc2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -336,6 +339,19 @@ namespace Google.Ads.GoogleAds.V14.Errors {
         /// Invalid status transition.
         /// </summary>
         [pbr::OriginalName("STATUS_TRANSITION_INVALID")] StatusTransitionInvalid = 25,
+        /// <summary>
+        /// The experiment campaign name conflicts with a pre-existing campaign.
+        /// </summary>
+        [pbr::OriginalName("DUPLICATE_EXPERIMENT_CAMPAIGN_NAME")] DuplicateExperimentCampaignName = 26,
+        /// <summary>
+        /// Cannot remove in creation experiments.
+        /// </summary>
+        [pbr::OriginalName("CANNOT_REMOVE_IN_CREATION_EXPERIMENT")] CannotRemoveInCreationExperiment = 27,
+        /// <summary>
+        /// Cannot add campaign with deprecated ad types. Deprecated ad types:
+        /// ENHANCED_DISPLAY, GALLERY, GMAIL, KEYWORDLESS, TEXT.
+        /// </summary>
+        [pbr::OriginalName("CANNOT_ADD_CAMPAIGN_WITH_DEPRECATED_AD_TYPES")] CannotAddCampaignWithDeprecatedAdTypes = 28,
       }
 
     }

@@ -39,7 +39,7 @@ namespace Google.Ads.GoogleAds.V14.Resources {
             "c3RpbmdfZ3JvdXBfZmlsdGVyX3R5cGVfZW51bS5wcm90bxpCZ29vZ2xlL2Fk",
             "cy9nb29nbGVhZHMvdjE0L2VudW1zL2xpc3RpbmdfZ3JvdXBfZmlsdGVyX3Zl",
             "cnRpY2FsLnByb3RvGh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9yLnByb3Rv",
-            "Ghlnb29nbGUvYXBpL3Jlc291cmNlLnByb3RvIvgFChxBc3NldEdyb3VwTGlz",
+            "Ghlnb29nbGUvYXBpL3Jlc291cmNlLnByb3RvItAGChxBc3NldEdyb3VwTGlz",
             "dGluZ0dyb3VwRmlsdGVyElQKDXJlc291cmNlX25hbWUYASABKAlCPeBBBfpB",
             "Nwo1Z29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0Fzc2V0R3JvdXBMaXN0aW5n",
             "R3JvdXBGaWx0ZXISQAoLYXNzZXRfZ3JvdXAYAiABKAlCK+BBBfpBJQojZ29v",
@@ -53,59 +53,65 @@ namespace Google.Ads.GoogleAds.V14.Resources {
             "c291cmNlcy5MaXN0aW5nR3JvdXBGaWx0ZXJEaW1lbnNpb24SYgobcGFyZW50",
             "X2xpc3RpbmdfZ3JvdXBfZmlsdGVyGAcgASgJQj3gQQX6QTcKNWdvb2dsZWFk",
             "cy5nb29nbGVhcGlzLmNvbS9Bc3NldEdyb3VwTGlzdGluZ0dyb3VwRmlsdGVy",
-            "Op0B6kGZAQo1Z29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0Fzc2V0R3JvdXBM",
-            "aXN0aW5nR3JvdXBGaWx0ZXISYGN1c3RvbWVycy97Y3VzdG9tZXJfaWR9L2Fz",
-            "c2V0R3JvdXBMaXN0aW5nR3JvdXBGaWx0ZXJzL3thc3NldF9ncm91cF9pZH1+",
-            "e2xpc3RpbmdfZ3JvdXBfZmlsdGVyX2lkfSLHDQobTGlzdGluZ0dyb3VwRmls",
-            "dGVyRGltZW5zaW9uEnoKGHByb2R1Y3RfYmlkZGluZ19jYXRlZ29yeRgBIAEo",
-            "CzJWLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNC5yZXNvdXJjZXMuTGlzdGlu",
-            "Z0dyb3VwRmlsdGVyRGltZW5zaW9uLlByb2R1Y3RCaWRkaW5nQ2F0ZWdvcnlI",
-            "ABJlCg1wcm9kdWN0X2JyYW5kGAIgASgLMkwuZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjE0LnJlc291cmNlcy5MaXN0aW5nR3JvdXBGaWx0ZXJEaW1lbnNpb24u",
-            "UHJvZHVjdEJyYW5kSAASaQoPcHJvZHVjdF9jaGFubmVsGAMgASgLMk4uZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjE0LnJlc291cmNlcy5MaXN0aW5nR3JvdXBG",
-            "aWx0ZXJEaW1lbnNpb24uUHJvZHVjdENoYW5uZWxIABJtChFwcm9kdWN0X2Nv",
-            "bmRpdGlvbhgEIAEoCzJQLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNC5yZXNv",
-            "dXJjZXMuTGlzdGluZ0dyb3VwRmlsdGVyRGltZW5zaW9uLlByb2R1Y3RDb25k",
-            "aXRpb25IABJ6Chhwcm9kdWN0X2N1c3RvbV9hdHRyaWJ1dGUYBSABKAsyVi5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MTQucmVzb3VyY2VzLkxpc3RpbmdHcm91",
-            "cEZpbHRlckRpbWVuc2lvbi5Qcm9kdWN0Q3VzdG9tQXR0cmlidXRlSAASaAoP",
-            "cHJvZHVjdF9pdGVtX2lkGAYgASgLMk0uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djE0LnJlc291cmNlcy5MaXN0aW5nR3JvdXBGaWx0ZXJEaW1lbnNpb24uUHJv",
-            "ZHVjdEl0ZW1JZEgAEmMKDHByb2R1Y3RfdHlwZRgHIAEoCzJLLmdvb2dsZS5h",
+            "ElYKBHBhdGgYCCABKAsyQy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTQucmVz",
+            "b3VyY2VzLkxpc3RpbmdHcm91cEZpbHRlckRpbWVuc2lvblBhdGhCA+BBAzqd",
+            "AepBmQEKNWdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9Bc3NldEdyb3VwTGlz",
+            "dGluZ0dyb3VwRmlsdGVyEmBjdXN0b21lcnMve2N1c3RvbWVyX2lkfS9hc3Nl",
+            "dEdyb3VwTGlzdGluZ0dyb3VwRmlsdGVycy97YXNzZXRfZ3JvdXBfaWR9fnts",
+            "aXN0aW5nX2dyb3VwX2ZpbHRlcl9pZH0iewofTGlzdGluZ0dyb3VwRmlsdGVy",
+            "RGltZW5zaW9uUGF0aBJYCgpkaW1lbnNpb25zGAEgAygLMj8uZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjE0LnJlc291cmNlcy5MaXN0aW5nR3JvdXBGaWx0ZXJE",
+            "aW1lbnNpb25CA+BBAyLHDQobTGlzdGluZ0dyb3VwRmlsdGVyRGltZW5zaW9u",
+            "EnoKGHByb2R1Y3RfYmlkZGluZ19jYXRlZ29yeRgBIAEoCzJWLmdvb2dsZS5h",
             "ZHMuZ29vZ2xlYWRzLnYxNC5yZXNvdXJjZXMuTGlzdGluZ0dyb3VwRmlsdGVy",
-            "RGltZW5zaW9uLlByb2R1Y3RUeXBlSAAaswEKFlByb2R1Y3RCaWRkaW5nQ2F0",
-            "ZWdvcnkSDwoCaWQYASABKANIAIgBARKAAQoFbGV2ZWwYAiABKA4ycS5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52MTQuZW51bXMuTGlzdGluZ0dyb3VwRmlsdGVy",
-            "QmlkZGluZ0NhdGVnb3J5TGV2ZWxFbnVtLkxpc3RpbmdHcm91cEZpbHRlckJp",
-            "ZGRpbmdDYXRlZ29yeUxldmVsQgUKA19pZBosCgxQcm9kdWN0QnJhbmQSEgoF",
-            "dmFsdWUYASABKAlIAIgBAUIICgZfdmFsdWUaiAEKDlByb2R1Y3RDaGFubmVs",
-            "EnYKB2NoYW5uZWwYASABKA4yZS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTQu",
-            "ZW51bXMuTGlzdGluZ0dyb3VwRmlsdGVyUHJvZHVjdENoYW5uZWxFbnVtLkxp",
-            "c3RpbmdHcm91cEZpbHRlclByb2R1Y3RDaGFubmVsGpABChBQcm9kdWN0Q29u",
-            "ZGl0aW9uEnwKCWNvbmRpdGlvbhgBIAEoDjJpLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYxNC5lbnVtcy5MaXN0aW5nR3JvdXBGaWx0ZXJQcm9kdWN0Q29uZGl0",
-            "aW9uRW51bS5MaXN0aW5nR3JvdXBGaWx0ZXJQcm9kdWN0Q29uZGl0aW9uGrkB",
-            "ChZQcm9kdWN0Q3VzdG9tQXR0cmlidXRlEhIKBXZhbHVlGAEgASgJSACIAQES",
-            "gAEKBWluZGV4GAIgASgOMnEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE0LmVu",
-            "dW1zLkxpc3RpbmdHcm91cEZpbHRlckN1c3RvbUF0dHJpYnV0ZUluZGV4RW51",
-            "bS5MaXN0aW5nR3JvdXBGaWx0ZXJDdXN0b21BdHRyaWJ1dGVJbmRleEIICgZf",
-            "dmFsdWUaLQoNUHJvZHVjdEl0ZW1JZBISCgV2YWx1ZRgBIAEoCUgAiAEBQggK",
-            "Bl92YWx1ZRqlAQoLUHJvZHVjdFR5cGUSEgoFdmFsdWUYASABKAlIAIgBARJ4",
-            "CgVsZXZlbBgCIAEoDjJpLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNC5lbnVt",
-            "cy5MaXN0aW5nR3JvdXBGaWx0ZXJQcm9kdWN0VHlwZUxldmVsRW51bS5MaXN0",
-            "aW5nR3JvdXBGaWx0ZXJQcm9kdWN0VHlwZUxldmVsQggKBl92YWx1ZUILCglk",
-            "aW1lbnNpb25CkwIKJmNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTQucmVz",
-            "b3VyY2VzQiFBc3NldEdyb3VwTGlzdGluZ0dyb3VwRmlsdGVyUHJvdG9QAVpL",
-            "Z29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29v",
-            "Z2xlYWRzL3YxNC9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FBqgIiR29vZ2xl",
-            "LkFkcy5Hb29nbGVBZHMuVjE0LlJlc291cmNlc8oCIkdvb2dsZVxBZHNcR29v",
-            "Z2xlQWRzXFYxNFxSZXNvdXJjZXPqAiZHb29nbGU6OkFkczo6R29vZ2xlQWRz",
-            "OjpWMTQ6OlJlc291cmNlc2IGcHJvdG8z"));
+            "RGltZW5zaW9uLlByb2R1Y3RCaWRkaW5nQ2F0ZWdvcnlIABJlCg1wcm9kdWN0",
+            "X2JyYW5kGAIgASgLMkwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE0LnJlc291",
+            "cmNlcy5MaXN0aW5nR3JvdXBGaWx0ZXJEaW1lbnNpb24uUHJvZHVjdEJyYW5k",
+            "SAASaQoPcHJvZHVjdF9jaGFubmVsGAMgASgLMk4uZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjE0LnJlc291cmNlcy5MaXN0aW5nR3JvdXBGaWx0ZXJEaW1lbnNp",
+            "b24uUHJvZHVjdENoYW5uZWxIABJtChFwcm9kdWN0X2NvbmRpdGlvbhgEIAEo",
+            "CzJQLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNC5yZXNvdXJjZXMuTGlzdGlu",
+            "Z0dyb3VwRmlsdGVyRGltZW5zaW9uLlByb2R1Y3RDb25kaXRpb25IABJ6Chhw",
+            "cm9kdWN0X2N1c3RvbV9hdHRyaWJ1dGUYBSABKAsyVi5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MTQucmVzb3VyY2VzLkxpc3RpbmdHcm91cEZpbHRlckRpbWVu",
+            "c2lvbi5Qcm9kdWN0Q3VzdG9tQXR0cmlidXRlSAASaAoPcHJvZHVjdF9pdGVt",
+            "X2lkGAYgASgLMk0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE0LnJlc291cmNl",
+            "cy5MaXN0aW5nR3JvdXBGaWx0ZXJEaW1lbnNpb24uUHJvZHVjdEl0ZW1JZEgA",
+            "EmMKDHByb2R1Y3RfdHlwZRgHIAEoCzJLLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYxNC5yZXNvdXJjZXMuTGlzdGluZ0dyb3VwRmlsdGVyRGltZW5zaW9uLlBy",
+            "b2R1Y3RUeXBlSAAaswEKFlByb2R1Y3RCaWRkaW5nQ2F0ZWdvcnkSDwoCaWQY",
+            "ASABKANIAIgBARKAAQoFbGV2ZWwYAiABKA4ycS5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MTQuZW51bXMuTGlzdGluZ0dyb3VwRmlsdGVyQmlkZGluZ0NhdGVn",
+            "b3J5TGV2ZWxFbnVtLkxpc3RpbmdHcm91cEZpbHRlckJpZGRpbmdDYXRlZ29y",
+            "eUxldmVsQgUKA19pZBosCgxQcm9kdWN0QnJhbmQSEgoFdmFsdWUYASABKAlI",
+            "AIgBAUIICgZfdmFsdWUaiAEKDlByb2R1Y3RDaGFubmVsEnYKB2NoYW5uZWwY",
+            "ASABKA4yZS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTQuZW51bXMuTGlzdGlu",
+            "Z0dyb3VwRmlsdGVyUHJvZHVjdENoYW5uZWxFbnVtLkxpc3RpbmdHcm91cEZp",
+            "bHRlclByb2R1Y3RDaGFubmVsGpABChBQcm9kdWN0Q29uZGl0aW9uEnwKCWNv",
+            "bmRpdGlvbhgBIAEoDjJpLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNC5lbnVt",
+            "cy5MaXN0aW5nR3JvdXBGaWx0ZXJQcm9kdWN0Q29uZGl0aW9uRW51bS5MaXN0",
+            "aW5nR3JvdXBGaWx0ZXJQcm9kdWN0Q29uZGl0aW9uGrkBChZQcm9kdWN0Q3Vz",
+            "dG9tQXR0cmlidXRlEhIKBXZhbHVlGAEgASgJSACIAQESgAEKBWluZGV4GAIg",
+            "ASgOMnEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE0LmVudW1zLkxpc3RpbmdH",
+            "cm91cEZpbHRlckN1c3RvbUF0dHJpYnV0ZUluZGV4RW51bS5MaXN0aW5nR3Jv",
+            "dXBGaWx0ZXJDdXN0b21BdHRyaWJ1dGVJbmRleEIICgZfdmFsdWUaLQoNUHJv",
+            "ZHVjdEl0ZW1JZBISCgV2YWx1ZRgBIAEoCUgAiAEBQggKBl92YWx1ZRqlAQoL",
+            "UHJvZHVjdFR5cGUSEgoFdmFsdWUYASABKAlIAIgBARJ4CgVsZXZlbBgCIAEo",
+            "DjJpLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNC5lbnVtcy5MaXN0aW5nR3Jv",
+            "dXBGaWx0ZXJQcm9kdWN0VHlwZUxldmVsRW51bS5MaXN0aW5nR3JvdXBGaWx0",
+            "ZXJQcm9kdWN0VHlwZUxldmVsQggKBl92YWx1ZUILCglkaW1lbnNpb25CkwIK",
+            "JmNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTQucmVzb3VyY2VzQiFBc3Nl",
+            "dEdyb3VwTGlzdGluZ0dyb3VwRmlsdGVyUHJvdG9QAVpLZ29vZ2xlLmdvbGFu",
+            "Zy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YxNC9y",
+            "ZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FBqgIiR29vZ2xlLkFkcy5Hb29nbGVB",
+            "ZHMuVjE0LlJlc291cmNlc8oCIkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYxNFxS",
+            "ZXNvdXJjZXPqAiZHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTQ6OlJlc291",
+            "cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V14.Enums.ListingGroupFilterBiddingCategoryLevelReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Enums.ListingGroupFilterCustomAttributeIndexReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Enums.ListingGroupFilterProductChannelReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Enums.ListingGroupFilterProductConditionReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Enums.ListingGroupFilterProductTypeLevelReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Enums.ListingGroupFilterTypeEnumReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Enums.ListingGroupFilterVerticalReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Resources.AssetGroupListingGroupFilter), global::Google.Ads.GoogleAds.V14.Resources.AssetGroupListingGroupFilter.Parser, new[]{ "ResourceName", "AssetGroup", "Id", "Type", "Vertical", "CaseValue", "ParentListingGroupFilter" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Resources.AssetGroupListingGroupFilter), global::Google.Ads.GoogleAds.V14.Resources.AssetGroupListingGroupFilter.Parser, new[]{ "ResourceName", "AssetGroup", "Id", "Type", "Vertical", "CaseValue", "ParentListingGroupFilter", "Path" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Resources.ListingGroupFilterDimensionPath), global::Google.Ads.GoogleAds.V14.Resources.ListingGroupFilterDimensionPath.Parser, new[]{ "Dimensions" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Resources.ListingGroupFilterDimension), global::Google.Ads.GoogleAds.V14.Resources.ListingGroupFilterDimension.Parser, new[]{ "ProductBiddingCategory", "ProductBrand", "ProductChannel", "ProductCondition", "ProductCustomAttribute", "ProductItemId", "ProductType" }, new[]{ "Dimension" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Resources.ListingGroupFilterDimension.Types.ProductBiddingCategory), global::Google.Ads.GoogleAds.V14.Resources.ListingGroupFilterDimension.Types.ProductBiddingCategory.Parser, new[]{ "Id", "Level" }, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Resources.ListingGroupFilterDimension.Types.ProductBrand), global::Google.Ads.GoogleAds.V14.Resources.ListingGroupFilterDimension.Types.ProductBrand.Parser, new[]{ "Value" }, new[]{ "Value" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Resources.ListingGroupFilterDimension.Types.ProductChannel), global::Google.Ads.GoogleAds.V14.Resources.ListingGroupFilterDimension.Types.ProductChannel.Parser, new[]{ "Channel" }, null, null, null, null),
@@ -164,6 +170,7 @@ namespace Google.Ads.GoogleAds.V14.Resources {
       vertical_ = other.vertical_;
       caseValue_ = other.caseValue_ != null ? other.caseValue_.Clone() : null;
       parentListingGroupFilter_ = other.parentListingGroupFilter_;
+      path_ = other.path_ != null ? other.path_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -285,6 +292,21 @@ namespace Google.Ads.GoogleAds.V14.Resources {
       }
     }
 
+    /// <summary>Field number for the "path" field.</summary>
+    public const int PathFieldNumber = 8;
+    private global::Google.Ads.GoogleAds.V14.Resources.ListingGroupFilterDimensionPath path_;
+    /// <summary>
+    /// Output only. The path of dimensions defining this listing group filter.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V14.Resources.ListingGroupFilterDimensionPath Path {
+      get { return path_; }
+      set {
+        path_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -307,6 +329,7 @@ namespace Google.Ads.GoogleAds.V14.Resources {
       if (Vertical != other.Vertical) return false;
       if (!object.Equals(CaseValue, other.CaseValue)) return false;
       if (ParentListingGroupFilter != other.ParentListingGroupFilter) return false;
+      if (!object.Equals(Path, other.Path)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -321,6 +344,7 @@ namespace Google.Ads.GoogleAds.V14.Resources {
       if (Vertical != global::Google.Ads.GoogleAds.V14.Enums.ListingGroupFilterVerticalEnum.Types.ListingGroupFilterVertical.Unspecified) hash ^= Vertical.GetHashCode();
       if (caseValue_ != null) hash ^= CaseValue.GetHashCode();
       if (ParentListingGroupFilter.Length != 0) hash ^= ParentListingGroupFilter.GetHashCode();
+      if (path_ != null) hash ^= Path.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -367,6 +391,10 @@ namespace Google.Ads.GoogleAds.V14.Resources {
         output.WriteRawTag(58);
         output.WriteString(ParentListingGroupFilter);
       }
+      if (path_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(Path);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -405,6 +433,10 @@ namespace Google.Ads.GoogleAds.V14.Resources {
         output.WriteRawTag(58);
         output.WriteString(ParentListingGroupFilter);
       }
+      if (path_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(Path);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -435,6 +467,9 @@ namespace Google.Ads.GoogleAds.V14.Resources {
       }
       if (ParentListingGroupFilter.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ParentListingGroupFilter);
+      }
+      if (path_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Path);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -471,6 +506,12 @@ namespace Google.Ads.GoogleAds.V14.Resources {
       }
       if (other.ParentListingGroupFilter.Length != 0) {
         ParentListingGroupFilter = other.ParentListingGroupFilter;
+      }
+      if (other.path_ != null) {
+        if (path_ == null) {
+          Path = new global::Google.Ads.GoogleAds.V14.Resources.ListingGroupFilterDimensionPath();
+        }
+        Path.MergeFrom(other.Path);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -516,6 +557,13 @@ namespace Google.Ads.GoogleAds.V14.Resources {
           }
           case 58: {
             ParentListingGroupFilter = input.ReadString();
+            break;
+          }
+          case 66: {
+            if (path_ == null) {
+              Path = new global::Google.Ads.GoogleAds.V14.Resources.ListingGroupFilterDimensionPath();
+            }
+            input.ReadMessage(Path);
             break;
           }
         }
@@ -564,6 +612,198 @@ namespace Google.Ads.GoogleAds.V14.Resources {
             ParentListingGroupFilter = input.ReadString();
             break;
           }
+          case 66: {
+            if (path_ == null) {
+              Path = new global::Google.Ads.GoogleAds.V14.Resources.ListingGroupFilterDimensionPath();
+            }
+            input.ReadMessage(Path);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// The path defining of dimensions defining a listing group filter.
+  /// </summary>
+  public sealed partial class ListingGroupFilterDimensionPath : pb::IMessage<ListingGroupFilterDimensionPath>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ListingGroupFilterDimensionPath> _parser = new pb::MessageParser<ListingGroupFilterDimensionPath>(() => new ListingGroupFilterDimensionPath());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ListingGroupFilterDimensionPath> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V14.Resources.AssetGroupListingGroupFilterReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ListingGroupFilterDimensionPath() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ListingGroupFilterDimensionPath(ListingGroupFilterDimensionPath other) : this() {
+      dimensions_ = other.dimensions_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ListingGroupFilterDimensionPath Clone() {
+      return new ListingGroupFilterDimensionPath(this);
+    }
+
+    /// <summary>Field number for the "dimensions" field.</summary>
+    public const int DimensionsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V14.Resources.ListingGroupFilterDimension> _repeated_dimensions_codec
+        = pb::FieldCodec.ForMessage(10, global::Google.Ads.GoogleAds.V14.Resources.ListingGroupFilterDimension.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V14.Resources.ListingGroupFilterDimension> dimensions_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V14.Resources.ListingGroupFilterDimension>();
+    /// <summary>
+    /// Output only. The complete path of dimensions through the listing group
+    /// filter hierarchy (excluding the root node) to this listing group filter.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V14.Resources.ListingGroupFilterDimension> Dimensions {
+      get { return dimensions_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ListingGroupFilterDimensionPath);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ListingGroupFilterDimensionPath other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!dimensions_.Equals(other.dimensions_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= dimensions_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      dimensions_.WriteTo(output, _repeated_dimensions_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      dimensions_.WriteTo(ref output, _repeated_dimensions_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += dimensions_.CalculateSize(_repeated_dimensions_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ListingGroupFilterDimensionPath other) {
+      if (other == null) {
+        return;
+      }
+      dimensions_.Add(other.dimensions_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            dimensions_.AddEntriesFrom(input, _repeated_dimensions_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            dimensions_.AddEntriesFrom(ref input, _repeated_dimensions_codec);
+            break;
+          }
         }
       }
     }
@@ -588,7 +828,7 @@ namespace Google.Ads.GoogleAds.V14.Resources {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V14.Resources.AssetGroupListingGroupFilterReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Google.Ads.GoogleAds.V14.Resources.AssetGroupListingGroupFilterReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

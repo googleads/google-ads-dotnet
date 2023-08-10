@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V14.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjNnb29nbGUvYWRzL2dvb2dsZWFkcy92MTQvZXJyb3JzL3JlcXVlc3RfZXJy",
-            "b3IucHJvdG8SH2dvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNC5lcnJvcnMi1AYK",
-            "EFJlcXVlc3RFcnJvckVudW0ivwYKDFJlcXVlc3RFcnJvchIPCgtVTlNQRUNJ",
+            "b3IucHJvdG8SH2dvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNC5lcnJvcnMi8QYK",
+            "EFJlcXVlc3RFcnJvckVudW0i3AYKDFJlcXVlc3RFcnJvchIPCgtVTlNQRUNJ",
             "RklFRBAAEgsKB1VOS05PV04QARIZChVSRVNPVVJDRV9OQU1FX01JU1NJTkcQ",
             "AxIbChdSRVNPVVJDRV9OQU1FX01BTEZPUk1FRBAEEhMKD0JBRF9SRVNPVVJD",
             "RV9JRBAREhcKE0lOVkFMSURfQ1VTVE9NRVJfSUQQEBIWChJPUEVSQVRJT05f",
@@ -44,13 +44,14 @@ namespace Google.Ads.GoogleAds.V14.Errors {
             "V19GT1JfVkFMSURBVEVfT05MWV9SRVFVRVNUUxAeEikKJUlOQ09OU0lTVEVO",
             "VF9SRVRVUk5fU1VNTUFSWV9ST1dfVkFMVUUQHxIwCixUT1RBTF9SRVNVTFRT",
             "X0NPVU5UX05PVF9PUklHSU5BTExZX1JFUVVFU1RFRBAgEhoKFlJQQ19ERUFE",
-            "TElORV9UT09fU0hPUlQQIRIXChNVTlNVUFBPUlRFRF9WRVJTSU9OECZC8QEK",
-            "I2NvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTQuZXJyb3JzQhFSZXF1ZXN0",
-            "RXJyb3JQcm90b1ABWkVnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29n",
-            "bGVhcGlzL2Fkcy9nb29nbGVhZHMvdjE0L2Vycm9ycztlcnJvcnOiAgNHQUGq",
-            "Ah9Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMTQuRXJyb3JzygIfR29vZ2xlXEFk",
-            "c1xHb29nbGVBZHNcVjE0XEVycm9yc+oCI0dvb2dsZTo6QWRzOjpHb29nbGVB",
-            "ZHM6OlYxNDo6RXJyb3JzYgZwcm90bzM="));
+            "TElORV9UT09fU0hPUlQQIRIXChNVTlNVUFBPUlRFRF9WRVJTSU9OECYSGwoX",
+            "Q0xPVURfUFJPSkVDVF9OT1RfRk9VTkQQJ0LxAQojY29tLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYxNC5lcnJvcnNCEVJlcXVlc3RFcnJvclByb3RvUAFaRWdv",
+            "b2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2ds",
+            "ZWFkcy92MTQvZXJyb3JzO2Vycm9yc6ICA0dBQaoCH0dvb2dsZS5BZHMuR29v",
+            "Z2xlQWRzLlYxNC5FcnJvcnPKAh9Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMTRc",
+            "RXJyb3Jz6gIjR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE0OjpFcnJvcnNi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -333,6 +334,10 @@ namespace Google.Ads.GoogleAds.V14.Errors {
         /// This API version has been sunset and is no longer supported.
         /// </summary>
         [pbr::OriginalName("UNSUPPORTED_VERSION")] UnsupportedVersion = 38,
+        /// <summary>
+        /// The Google Cloud project in the request was not found.
+        /// </summary>
+        [pbr::OriginalName("CLOUD_PROJECT_NOT_FOUND")] CloudProjectNotFound = 39,
       }
 
     }

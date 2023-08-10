@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.V14.Resources {
             "b2dsZS9hZHMvZ29vZ2xlYWRzL3YxNC9lbnVtcy9pbnZvaWNlX3R5cGUucHJv",
             "dG8aMmdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YxNC9lbnVtcy9tb250aF9vZl95",
             "ZWFyLnByb3RvGh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9yLnByb3RvGhln",
-            "b29nbGUvYXBpL3Jlc291cmNlLnByb3RvIv8iCgdJbnZvaWNlEj8KDXJlc291",
+            "b29nbGUvYXBpL3Jlc291cmNlLnByb3RvIqUnCgdJbnZvaWNlEj8KDXJlc291",
             "cmNlX25hbWUYASABKAlCKOBBA/pBIgogZ29vZ2xlYWRzLmdvb2dsZWFwaXMu",
             "Y29tL0ludm9pY2USFAoCaWQYGSABKAlCA+BBA0gAiAEBEk4KBHR5cGUYAyAB",
             "KA4yOy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTQuZW51bXMuSW52b2ljZVR5",
@@ -47,100 +47,112 @@ namespace Google.Ads.GoogleAds.V14.Resources {
             "YXRvcnlfY29zdHNfc3VidG90YWxfYW1vdW50X21pY3JvcxgWIAEoA0ID4EED",
             "Ei8KInJlZ3VsYXRvcnlfY29zdHNfdGF4X2Ftb3VudF9taWNyb3MYFyABKANC",
             "A+BBAxIxCiRyZWd1bGF0b3J5X2Nvc3RzX3RvdGFsX2Ftb3VudF9taWNyb3MY",
-            "GCABKANCA+BBAxIoChZzdWJ0b3RhbF9hbW91bnRfbWljcm9zGCEgASgDQgPg",
-            "QQNIB4gBARIjChF0YXhfYW1vdW50X21pY3JvcxgiIAEoA0ID4EEDSAiIAQES",
-            "JQoTdG90YWxfYW1vdW50X21pY3JvcxgjIAEoA0ID4EEDSAmIAQESIwoRY29y",
-            "cmVjdGVkX2ludm9pY2UYJCABKAlCA+BBA0gKiAEBEh4KEXJlcGxhY2VkX2lu",
-            "dm9pY2VzGCUgAygJQgPgQQMSGQoHcGRmX3VybBgmIAEoCUID4EEDSAuIAQES",
-            "ZwoYYWNjb3VudF9idWRnZXRfc3VtbWFyaWVzGBIgAygLMkAuZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjE0LnJlc291cmNlcy5JbnZvaWNlLkFjY291bnRCdWRn",
-            "ZXRTdW1tYXJ5QgPgQQMSWgoRYWNjb3VudF9zdW1tYXJpZXMYJyADKAsyOi5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MTQucmVzb3VyY2VzLkludm9pY2UuQWNj",
-            "b3VudFN1bW1hcnlCA+BBAxrOCwoOQWNjb3VudFN1bW1hcnkSGgoIY3VzdG9t",
-            "ZXIYASABKAlCA+BBA0gAiAEBEjsKKWJpbGxpbmdfY29ycmVjdGlvbl9zdWJ0",
-            "b3RhbF9hbW91bnRfbWljcm9zGAIgASgDQgPgQQNIAYgBARI2CiRiaWxsaW5n",
-            "X2NvcnJlY3Rpb25fdGF4X2Ftb3VudF9taWNyb3MYAyABKANCA+BBA0gCiAEB",
-            "EjgKJmJpbGxpbmdfY29ycmVjdGlvbl90b3RhbF9hbW91bnRfbWljcm9zGAQg",
-            "ASgDQgPgQQNIA4gBARI6Cihjb3Vwb25fYWRqdXN0bWVudF9zdWJ0b3RhbF9h",
-            "bW91bnRfbWljcm9zGAUgASgDQgPgQQNIBIgBARI1CiNjb3Vwb25fYWRqdXN0",
-            "bWVudF90YXhfYW1vdW50X21pY3JvcxgGIAEoA0ID4EEDSAWIAQESNwolY291",
-            "cG9uX2FkanVzdG1lbnRfdG90YWxfYW1vdW50X21pY3JvcxgHIAEoA0ID4EED",
-            "SAaIAQESQQovZXhjZXNzX2NyZWRpdF9hZGp1c3RtZW50X3N1YnRvdGFsX2Ft",
-            "b3VudF9taWNyb3MYCCABKANCA+BBA0gHiAEBEjwKKmV4Y2Vzc19jcmVkaXRf",
-            "YWRqdXN0bWVudF90YXhfYW1vdW50X21pY3JvcxgJIAEoA0ID4EEDSAiIAQES",
-            "PgosZXhjZXNzX2NyZWRpdF9hZGp1c3RtZW50X3RvdGFsX2Ftb3VudF9taWNy",
-            "b3MYCiABKANCA+BBA0gJiAEBEjkKJ3JlZ3VsYXRvcnlfY29zdHNfc3VidG90",
-            "YWxfYW1vdW50X21pY3JvcxgLIAEoA0ID4EEDSAqIAQESNAoicmVndWxhdG9y",
-            "eV9jb3N0c190YXhfYW1vdW50X21pY3JvcxgMIAEoA0ID4EEDSAuIAQESNgok",
-            "cmVndWxhdG9yeV9jb3N0c190b3RhbF9hbW91bnRfbWljcm9zGA0gASgDQgPg",
-            "QQNIDIgBARIoChZzdWJ0b3RhbF9hbW91bnRfbWljcm9zGA4gASgDQgPgQQNI",
-            "DYgBARIjChF0YXhfYW1vdW50X21pY3JvcxgPIAEoA0ID4EEDSA6IAQESJQoT",
-            "dG90YWxfYW1vdW50X21pY3JvcxgQIAEoA0ID4EEDSA+IAQFCCwoJX2N1c3Rv",
-            "bWVyQiwKKl9iaWxsaW5nX2NvcnJlY3Rpb25fc3VidG90YWxfYW1vdW50X21p",
-            "Y3Jvc0InCiVfYmlsbGluZ19jb3JyZWN0aW9uX3RheF9hbW91bnRfbWljcm9z",
-            "QikKJ19iaWxsaW5nX2NvcnJlY3Rpb25fdG90YWxfYW1vdW50X21pY3Jvc0Ir",
-            "CilfY291cG9uX2FkanVzdG1lbnRfc3VidG90YWxfYW1vdW50X21pY3Jvc0Im",
-            "CiRfY291cG9uX2FkanVzdG1lbnRfdGF4X2Ftb3VudF9taWNyb3NCKAomX2Nv",
-            "dXBvbl9hZGp1c3RtZW50X3RvdGFsX2Ftb3VudF9taWNyb3NCMgowX2V4Y2Vz",
-            "c19jcmVkaXRfYWRqdXN0bWVudF9zdWJ0b3RhbF9hbW91bnRfbWljcm9zQi0K",
-            "K19leGNlc3NfY3JlZGl0X2FkanVzdG1lbnRfdGF4X2Ftb3VudF9taWNyb3NC",
-            "LwotX2V4Y2Vzc19jcmVkaXRfYWRqdXN0bWVudF90b3RhbF9hbW91bnRfbWlj",
-            "cm9zQioKKF9yZWd1bGF0b3J5X2Nvc3RzX3N1YnRvdGFsX2Ftb3VudF9taWNy",
-            "b3NCJQojX3JlZ3VsYXRvcnlfY29zdHNfdGF4X2Ftb3VudF9taWNyb3NCJwol",
-            "X3JlZ3VsYXRvcnlfY29zdHNfdG90YWxfYW1vdW50X21pY3Jvc0IZChdfc3Vi",
-            "dG90YWxfYW1vdW50X21pY3Jvc0IUChJfdGF4X2Ftb3VudF9taWNyb3NCFgoU",
-            "X3RvdGFsX2Ftb3VudF9taWNyb3Ma6AcKFEFjY291bnRCdWRnZXRTdW1tYXJ5",
-            "EhoKCGN1c3RvbWVyGAogASgJQgPgQQNIAIgBARIrChljdXN0b21lcl9kZXNj",
-            "cmlwdGl2ZV9uYW1lGAsgASgJQgPgQQNIAYgBARIgCg5hY2NvdW50X2J1ZGdl",
-            "dBgMIAEoCUID4EEDSAKIAQESJQoTYWNjb3VudF9idWRnZXRfbmFtZRgNIAEo",
-            "CUID4EEDSAOIAQESJwoVcHVyY2hhc2Vfb3JkZXJfbnVtYmVyGA4gASgJQgPg",
-            "QQNIBIgBARIoChZzdWJ0b3RhbF9hbW91bnRfbWljcm9zGA8gASgDQgPgQQNI",
-            "BYgBARIjChF0YXhfYW1vdW50X21pY3JvcxgQIAEoA0ID4EEDSAaIAQESJQoT",
-            "dG90YWxfYW1vdW50X21pY3JvcxgRIAEoA0ID4EEDSAeIAQESVQocYmlsbGFi",
-            "bGVfYWN0aXZpdHlfZGF0ZV9yYW5nZRgJIAEoCzIqLmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYxNC5jb21tb24uRGF0ZVJhbmdlQgPgQQMSJgoUc2VydmVkX2Ft",
-            "b3VudF9taWNyb3MYEiABKANCA+BBA0gIiAEBEiYKFGJpbGxlZF9hbW91bnRf",
-            "bWljcm9zGBMgASgDQgPgQQNICYgBARIsChpvdmVyZGVsaXZlcnlfYW1vdW50",
-            "X21pY3JvcxgUIAEoA0ID4EEDSAqIAQESMAoeaW52YWxpZF9hY3Rpdml0eV9h",
-            "bW91bnRfbWljcm9zGBUgASgDQgPgQQNIC4gBARJrChppbnZhbGlkX2FjdGl2",
-            "aXR5X3N1bW1hcmllcxgWIAMoCzJCLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYx",
-            "NC5yZXNvdXJjZXMuSW52b2ljZS5JbnZhbGlkQWN0aXZpdHlTdW1tYXJ5QgPg",
-            "QQNCCwoJX2N1c3RvbWVyQhwKGl9jdXN0b21lcl9kZXNjcmlwdGl2ZV9uYW1l",
-            "QhEKD19hY2NvdW50X2J1ZGdldEIWChRfYWNjb3VudF9idWRnZXRfbmFtZUIY",
-            "ChZfcHVyY2hhc2Vfb3JkZXJfbnVtYmVyQhkKF19zdWJ0b3RhbF9hbW91bnRf",
-            "bWljcm9zQhQKEl90YXhfYW1vdW50X21pY3Jvc0IWChRfdG90YWxfYW1vdW50",
-            "X21pY3Jvc0IXChVfc2VydmVkX2Ftb3VudF9taWNyb3NCFwoVX2JpbGxlZF9h",
-            "bW91bnRfbWljcm9zQh0KG19vdmVyZGVsaXZlcnlfYW1vdW50X21pY3Jvc0Ih",
-            "Ch9faW52YWxpZF9hY3Rpdml0eV9hbW91bnRfbWljcm9zGoEEChZJbnZhbGlk",
-            "QWN0aXZpdHlTdW1tYXJ5EmgKGW9yaWdpbmFsX21vbnRoX29mX3NlcnZpY2UY",
-            "ASABKA4yOy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTQuZW51bXMuTW9udGhP",
-            "ZlllYXJFbnVtLk1vbnRoT2ZZZWFyQgPgQQNIAIgBARIqChhvcmlnaW5hbF95",
-            "ZWFyX29mX3NlcnZpY2UYAiABKAlCA+BBA0gBiAEBEiUKE29yaWdpbmFsX2lu",
-            "dm9pY2VfaWQYAyABKAlCA+BBA0gCiAEBEi4KHG9yaWdpbmFsX2FjY291bnRf",
-            "YnVkZ2V0X25hbWUYBCABKAlCA+BBA0gDiAEBEjAKHm9yaWdpbmFsX3B1cmNo",
-            "YXNlX29yZGVyX251bWJlchgFIAEoCUID4EEDSASIAQESHwoNYW1vdW50X21p",
-            "Y3JvcxgGIAEoA0ID4EEDSAWIAQFCHAoaX29yaWdpbmFsX21vbnRoX29mX3Nl",
-            "cnZpY2VCGwoZX29yaWdpbmFsX3llYXJfb2Zfc2VydmljZUIWChRfb3JpZ2lu",
-            "YWxfaW52b2ljZV9pZEIfCh1fb3JpZ2luYWxfYWNjb3VudF9idWRnZXRfbmFt",
-            "ZUIhCh9fb3JpZ2luYWxfcHVyY2hhc2Vfb3JkZXJfbnVtYmVyQhAKDl9hbW91",
-            "bnRfbWljcm9zOlTqQVEKIGdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9JbnZv",
-            "aWNlEi1jdXN0b21lcnMve2N1c3RvbWVyX2lkfS9pbnZvaWNlcy97aW52b2lj",
-            "ZV9pZH1CBQoDX2lkQhAKDl9iaWxsaW5nX3NldHVwQhYKFF9wYXltZW50c19h",
-            "Y2NvdW50X2lkQhYKFF9wYXltZW50c19wcm9maWxlX2lkQg0KC19pc3N1ZV9k",
-            "YXRlQgsKCV9kdWVfZGF0ZUIQCg5fY3VycmVuY3lfY29kZUIZChdfc3VidG90",
-            "YWxfYW1vdW50X21pY3Jvc0IUChJfdGF4X2Ftb3VudF9taWNyb3NCFgoUX3Rv",
-            "dGFsX2Ftb3VudF9taWNyb3NCFAoSX2NvcnJlY3RlZF9pbnZvaWNlQgoKCF9w",
-            "ZGZfdXJsQv4BCiZjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE0LnJlc291",
-            "cmNlc0IMSW52b2ljZVByb3RvUAFaS2dvb2dsZS5nb2xhbmcub3JnL2dlbnBy",
-            "b3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MTQvcmVzb3VyY2VzO3Jl",
-            "c291cmNlc6ICA0dBQaoCIkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYxNC5SZXNv",
-            "dXJjZXPKAiJHb29nbGVcQWRzXEdvb2dsZUFkc1xWMTRcUmVzb3VyY2Vz6gIm",
-            "R29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE0OjpSZXNvdXJjZXNiBnByb3Rv",
-            "Mw=="));
+            "GCABKANCA+BBAxI2CiRleHBvcnRfY2hhcmdlX3N1YnRvdGFsX2Ftb3VudF9t",
+            "aWNyb3MYKCABKANCA+BBA0gHiAEBEjEKH2V4cG9ydF9jaGFyZ2VfdGF4X2Ft",
+            "b3VudF9taWNyb3MYKSABKANCA+BBA0gIiAEBEjMKIWV4cG9ydF9jaGFyZ2Vf",
+            "dG90YWxfYW1vdW50X21pY3JvcxgqIAEoA0ID4EEDSAmIAQESKAoWc3VidG90",
+            "YWxfYW1vdW50X21pY3JvcxghIAEoA0ID4EEDSAqIAQESIwoRdGF4X2Ftb3Vu",
+            "dF9taWNyb3MYIiABKANCA+BBA0gLiAEBEiUKE3RvdGFsX2Ftb3VudF9taWNy",
+            "b3MYIyABKANCA+BBA0gMiAEBEiMKEWNvcnJlY3RlZF9pbnZvaWNlGCQgASgJ",
+            "QgPgQQNIDYgBARIeChFyZXBsYWNlZF9pbnZvaWNlcxglIAMoCUID4EEDEhkK",
+            "B3BkZl91cmwYJiABKAlCA+BBA0gOiAEBEmcKGGFjY291bnRfYnVkZ2V0X3N1",
+            "bW1hcmllcxgSIAMoCzJALmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNC5yZXNv",
+            "dXJjZXMuSW52b2ljZS5BY2NvdW50QnVkZ2V0U3VtbWFyeUID4EEDEloKEWFj",
+            "Y291bnRfc3VtbWFyaWVzGCcgAygLMjouZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djE0LnJlc291cmNlcy5JbnZvaWNlLkFjY291bnRTdW1tYXJ5QgPgQQMa4Q0K",
+            "DkFjY291bnRTdW1tYXJ5EhoKCGN1c3RvbWVyGAEgASgJQgPgQQNIAIgBARI7",
+            "CiliaWxsaW5nX2NvcnJlY3Rpb25fc3VidG90YWxfYW1vdW50X21pY3JvcxgC",
+            "IAEoA0ID4EEDSAGIAQESNgokYmlsbGluZ19jb3JyZWN0aW9uX3RheF9hbW91",
+            "bnRfbWljcm9zGAMgASgDQgPgQQNIAogBARI4CiZiaWxsaW5nX2NvcnJlY3Rp",
+            "b25fdG90YWxfYW1vdW50X21pY3JvcxgEIAEoA0ID4EEDSAOIAQESOgooY291",
+            "cG9uX2FkanVzdG1lbnRfc3VidG90YWxfYW1vdW50X21pY3JvcxgFIAEoA0ID",
+            "4EEDSASIAQESNQojY291cG9uX2FkanVzdG1lbnRfdGF4X2Ftb3VudF9taWNy",
+            "b3MYBiABKANCA+BBA0gFiAEBEjcKJWNvdXBvbl9hZGp1c3RtZW50X3RvdGFs",
+            "X2Ftb3VudF9taWNyb3MYByABKANCA+BBA0gGiAEBEkEKL2V4Y2Vzc19jcmVk",
+            "aXRfYWRqdXN0bWVudF9zdWJ0b3RhbF9hbW91bnRfbWljcm9zGAggASgDQgPg",
+            "QQNIB4gBARI8CipleGNlc3NfY3JlZGl0X2FkanVzdG1lbnRfdGF4X2Ftb3Vu",
+            "dF9taWNyb3MYCSABKANCA+BBA0gIiAEBEj4KLGV4Y2Vzc19jcmVkaXRfYWRq",
+            "dXN0bWVudF90b3RhbF9hbW91bnRfbWljcm9zGAogASgDQgPgQQNICYgBARI5",
+            "CidyZWd1bGF0b3J5X2Nvc3RzX3N1YnRvdGFsX2Ftb3VudF9taWNyb3MYCyAB",
+            "KANCA+BBA0gKiAEBEjQKInJlZ3VsYXRvcnlfY29zdHNfdGF4X2Ftb3VudF9t",
+            "aWNyb3MYDCABKANCA+BBA0gLiAEBEjYKJHJlZ3VsYXRvcnlfY29zdHNfdG90",
+            "YWxfYW1vdW50X21pY3JvcxgNIAEoA0ID4EEDSAyIAQESNgokZXhwb3J0X2No",
+            "YXJnZV9zdWJ0b3RhbF9hbW91bnRfbWljcm9zGBEgASgDQgPgQQNIDYgBARIx",
+            "Ch9leHBvcnRfY2hhcmdlX3RheF9hbW91bnRfbWljcm9zGBIgASgDQgPgQQNI",
+            "DogBARIzCiFleHBvcnRfY2hhcmdlX3RvdGFsX2Ftb3VudF9taWNyb3MYEyAB",
+            "KANCA+BBA0gPiAEBEigKFnN1YnRvdGFsX2Ftb3VudF9taWNyb3MYDiABKANC",
+            "A+BBA0gQiAEBEiMKEXRheF9hbW91bnRfbWljcm9zGA8gASgDQgPgQQNIEYgB",
+            "ARIlChN0b3RhbF9hbW91bnRfbWljcm9zGBAgASgDQgPgQQNIEogBAUILCglf",
+            "Y3VzdG9tZXJCLAoqX2JpbGxpbmdfY29ycmVjdGlvbl9zdWJ0b3RhbF9hbW91",
+            "bnRfbWljcm9zQicKJV9iaWxsaW5nX2NvcnJlY3Rpb25fdGF4X2Ftb3VudF9t",
+            "aWNyb3NCKQonX2JpbGxpbmdfY29ycmVjdGlvbl90b3RhbF9hbW91bnRfbWlj",
+            "cm9zQisKKV9jb3Vwb25fYWRqdXN0bWVudF9zdWJ0b3RhbF9hbW91bnRfbWlj",
+            "cm9zQiYKJF9jb3Vwb25fYWRqdXN0bWVudF90YXhfYW1vdW50X21pY3Jvc0Io",
+            "CiZfY291cG9uX2FkanVzdG1lbnRfdG90YWxfYW1vdW50X21pY3Jvc0IyCjBf",
+            "ZXhjZXNzX2NyZWRpdF9hZGp1c3RtZW50X3N1YnRvdGFsX2Ftb3VudF9taWNy",
+            "b3NCLQorX2V4Y2Vzc19jcmVkaXRfYWRqdXN0bWVudF90YXhfYW1vdW50X21p",
+            "Y3Jvc0IvCi1fZXhjZXNzX2NyZWRpdF9hZGp1c3RtZW50X3RvdGFsX2Ftb3Vu",
+            "dF9taWNyb3NCKgooX3JlZ3VsYXRvcnlfY29zdHNfc3VidG90YWxfYW1vdW50",
+            "X21pY3Jvc0IlCiNfcmVndWxhdG9yeV9jb3N0c190YXhfYW1vdW50X21pY3Jv",
+            "c0InCiVfcmVndWxhdG9yeV9jb3N0c190b3RhbF9hbW91bnRfbWljcm9zQicK",
+            "JV9leHBvcnRfY2hhcmdlX3N1YnRvdGFsX2Ftb3VudF9taWNyb3NCIgogX2V4",
+            "cG9ydF9jaGFyZ2VfdGF4X2Ftb3VudF9taWNyb3NCJAoiX2V4cG9ydF9jaGFy",
+            "Z2VfdG90YWxfYW1vdW50X21pY3Jvc0IZChdfc3VidG90YWxfYW1vdW50X21p",
+            "Y3Jvc0IUChJfdGF4X2Ftb3VudF9taWNyb3NCFgoUX3RvdGFsX2Ftb3VudF9t",
+            "aWNyb3Ma6AcKFEFjY291bnRCdWRnZXRTdW1tYXJ5EhoKCGN1c3RvbWVyGAog",
+            "ASgJQgPgQQNIAIgBARIrChljdXN0b21lcl9kZXNjcmlwdGl2ZV9uYW1lGAsg",
+            "ASgJQgPgQQNIAYgBARIgCg5hY2NvdW50X2J1ZGdldBgMIAEoCUID4EEDSAKI",
+            "AQESJQoTYWNjb3VudF9idWRnZXRfbmFtZRgNIAEoCUID4EEDSAOIAQESJwoV",
+            "cHVyY2hhc2Vfb3JkZXJfbnVtYmVyGA4gASgJQgPgQQNIBIgBARIoChZzdWJ0",
+            "b3RhbF9hbW91bnRfbWljcm9zGA8gASgDQgPgQQNIBYgBARIjChF0YXhfYW1v",
+            "dW50X21pY3JvcxgQIAEoA0ID4EEDSAaIAQESJQoTdG90YWxfYW1vdW50X21p",
+            "Y3JvcxgRIAEoA0ID4EEDSAeIAQESVQocYmlsbGFibGVfYWN0aXZpdHlfZGF0",
+            "ZV9yYW5nZRgJIAEoCzIqLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNC5jb21t",
+            "b24uRGF0ZVJhbmdlQgPgQQMSJgoUc2VydmVkX2Ftb3VudF9taWNyb3MYEiAB",
+            "KANCA+BBA0gIiAEBEiYKFGJpbGxlZF9hbW91bnRfbWljcm9zGBMgASgDQgPg",
+            "QQNICYgBARIsChpvdmVyZGVsaXZlcnlfYW1vdW50X21pY3JvcxgUIAEoA0ID",
+            "4EEDSAqIAQESMAoeaW52YWxpZF9hY3Rpdml0eV9hbW91bnRfbWljcm9zGBUg",
+            "ASgDQgPgQQNIC4gBARJrChppbnZhbGlkX2FjdGl2aXR5X3N1bW1hcmllcxgW",
+            "IAMoCzJCLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNC5yZXNvdXJjZXMuSW52",
+            "b2ljZS5JbnZhbGlkQWN0aXZpdHlTdW1tYXJ5QgPgQQNCCwoJX2N1c3RvbWVy",
+            "QhwKGl9jdXN0b21lcl9kZXNjcmlwdGl2ZV9uYW1lQhEKD19hY2NvdW50X2J1",
+            "ZGdldEIWChRfYWNjb3VudF9idWRnZXRfbmFtZUIYChZfcHVyY2hhc2Vfb3Jk",
+            "ZXJfbnVtYmVyQhkKF19zdWJ0b3RhbF9hbW91bnRfbWljcm9zQhQKEl90YXhf",
+            "YW1vdW50X21pY3Jvc0IWChRfdG90YWxfYW1vdW50X21pY3Jvc0IXChVfc2Vy",
+            "dmVkX2Ftb3VudF9taWNyb3NCFwoVX2JpbGxlZF9hbW91bnRfbWljcm9zQh0K",
+            "G19vdmVyZGVsaXZlcnlfYW1vdW50X21pY3Jvc0IhCh9faW52YWxpZF9hY3Rp",
+            "dml0eV9hbW91bnRfbWljcm9zGoEEChZJbnZhbGlkQWN0aXZpdHlTdW1tYXJ5",
+            "EmgKGW9yaWdpbmFsX21vbnRoX29mX3NlcnZpY2UYASABKA4yOy5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52MTQuZW51bXMuTW9udGhPZlllYXJFbnVtLk1vbnRo",
+            "T2ZZZWFyQgPgQQNIAIgBARIqChhvcmlnaW5hbF95ZWFyX29mX3NlcnZpY2UY",
+            "AiABKAlCA+BBA0gBiAEBEiUKE29yaWdpbmFsX2ludm9pY2VfaWQYAyABKAlC",
+            "A+BBA0gCiAEBEi4KHG9yaWdpbmFsX2FjY291bnRfYnVkZ2V0X25hbWUYBCAB",
+            "KAlCA+BBA0gDiAEBEjAKHm9yaWdpbmFsX3B1cmNoYXNlX29yZGVyX251bWJl",
+            "chgFIAEoCUID4EEDSASIAQESHwoNYW1vdW50X21pY3JvcxgGIAEoA0ID4EED",
+            "SAWIAQFCHAoaX29yaWdpbmFsX21vbnRoX29mX3NlcnZpY2VCGwoZX29yaWdp",
+            "bmFsX3llYXJfb2Zfc2VydmljZUIWChRfb3JpZ2luYWxfaW52b2ljZV9pZEIf",
+            "Ch1fb3JpZ2luYWxfYWNjb3VudF9idWRnZXRfbmFtZUIhCh9fb3JpZ2luYWxf",
+            "cHVyY2hhc2Vfb3JkZXJfbnVtYmVyQhAKDl9hbW91bnRfbWljcm9zOlTqQVEK",
+            "IGdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9JbnZvaWNlEi1jdXN0b21lcnMv",
+            "e2N1c3RvbWVyX2lkfS9pbnZvaWNlcy97aW52b2ljZV9pZH1CBQoDX2lkQhAK",
+            "Dl9iaWxsaW5nX3NldHVwQhYKFF9wYXltZW50c19hY2NvdW50X2lkQhYKFF9w",
+            "YXltZW50c19wcm9maWxlX2lkQg0KC19pc3N1ZV9kYXRlQgsKCV9kdWVfZGF0",
+            "ZUIQCg5fY3VycmVuY3lfY29kZUInCiVfZXhwb3J0X2NoYXJnZV9zdWJ0b3Rh",
+            "bF9hbW91bnRfbWljcm9zQiIKIF9leHBvcnRfY2hhcmdlX3RheF9hbW91bnRf",
+            "bWljcm9zQiQKIl9leHBvcnRfY2hhcmdlX3RvdGFsX2Ftb3VudF9taWNyb3NC",
+            "GQoXX3N1YnRvdGFsX2Ftb3VudF9taWNyb3NCFAoSX3RheF9hbW91bnRfbWlj",
+            "cm9zQhYKFF90b3RhbF9hbW91bnRfbWljcm9zQhQKEl9jb3JyZWN0ZWRfaW52",
+            "b2ljZUIKCghfcGRmX3VybEL+AQomY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYxNC5yZXNvdXJjZXNCDEludm9pY2VQcm90b1ABWktnb29nbGUuZ29sYW5n",
+            "Lm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjE0L3Jl",
+            "c291cmNlcztyZXNvdXJjZXOiAgNHQUGqAiJHb29nbGUuQWRzLkdvb2dsZUFk",
+            "cy5WMTQuUmVzb3VyY2VzygIiR29vZ2xlXEFkc1xHb29nbGVBZHNcVjE0XFJl",
+            "c291cmNlc+oCJkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYxNDo6UmVzb3Vy",
+            "Y2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V14.Common.DatesReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Enums.InvoiceTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V14.Enums.MonthOfYearReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Resources.Invoice), global::Google.Ads.GoogleAds.V14.Resources.Invoice.Parser, new[]{ "ResourceName", "Id", "Type", "BillingSetup", "PaymentsAccountId", "PaymentsProfileId", "IssueDate", "DueDate", "ServiceDateRange", "CurrencyCode", "AdjustmentsSubtotalAmountMicros", "AdjustmentsTaxAmountMicros", "AdjustmentsTotalAmountMicros", "RegulatoryCostsSubtotalAmountMicros", "RegulatoryCostsTaxAmountMicros", "RegulatoryCostsTotalAmountMicros", "SubtotalAmountMicros", "TaxAmountMicros", "TotalAmountMicros", "CorrectedInvoice", "ReplacedInvoices", "PdfUrl", "AccountBudgetSummaries", "AccountSummaries" }, new[]{ "Id", "BillingSetup", "PaymentsAccountId", "PaymentsProfileId", "IssueDate", "DueDate", "CurrencyCode", "SubtotalAmountMicros", "TaxAmountMicros", "TotalAmountMicros", "CorrectedInvoice", "PdfUrl" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Resources.Invoice.Types.AccountSummary), global::Google.Ads.GoogleAds.V14.Resources.Invoice.Types.AccountSummary.Parser, new[]{ "Customer", "BillingCorrectionSubtotalAmountMicros", "BillingCorrectionTaxAmountMicros", "BillingCorrectionTotalAmountMicros", "CouponAdjustmentSubtotalAmountMicros", "CouponAdjustmentTaxAmountMicros", "CouponAdjustmentTotalAmountMicros", "ExcessCreditAdjustmentSubtotalAmountMicros", "ExcessCreditAdjustmentTaxAmountMicros", "ExcessCreditAdjustmentTotalAmountMicros", "RegulatoryCostsSubtotalAmountMicros", "RegulatoryCostsTaxAmountMicros", "RegulatoryCostsTotalAmountMicros", "SubtotalAmountMicros", "TaxAmountMicros", "TotalAmountMicros" }, new[]{ "Customer", "BillingCorrectionSubtotalAmountMicros", "BillingCorrectionTaxAmountMicros", "BillingCorrectionTotalAmountMicros", "CouponAdjustmentSubtotalAmountMicros", "CouponAdjustmentTaxAmountMicros", "CouponAdjustmentTotalAmountMicros", "ExcessCreditAdjustmentSubtotalAmountMicros", "ExcessCreditAdjustmentTaxAmountMicros", "ExcessCreditAdjustmentTotalAmountMicros", "RegulatoryCostsSubtotalAmountMicros", "RegulatoryCostsTaxAmountMicros", "RegulatoryCostsTotalAmountMicros", "SubtotalAmountMicros", "TaxAmountMicros", "TotalAmountMicros" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Resources.Invoice), global::Google.Ads.GoogleAds.V14.Resources.Invoice.Parser, new[]{ "ResourceName", "Id", "Type", "BillingSetup", "PaymentsAccountId", "PaymentsProfileId", "IssueDate", "DueDate", "ServiceDateRange", "CurrencyCode", "AdjustmentsSubtotalAmountMicros", "AdjustmentsTaxAmountMicros", "AdjustmentsTotalAmountMicros", "RegulatoryCostsSubtotalAmountMicros", "RegulatoryCostsTaxAmountMicros", "RegulatoryCostsTotalAmountMicros", "ExportChargeSubtotalAmountMicros", "ExportChargeTaxAmountMicros", "ExportChargeTotalAmountMicros", "SubtotalAmountMicros", "TaxAmountMicros", "TotalAmountMicros", "CorrectedInvoice", "ReplacedInvoices", "PdfUrl", "AccountBudgetSummaries", "AccountSummaries" }, new[]{ "Id", "BillingSetup", "PaymentsAccountId", "PaymentsProfileId", "IssueDate", "DueDate", "CurrencyCode", "ExportChargeSubtotalAmountMicros", "ExportChargeTaxAmountMicros", "ExportChargeTotalAmountMicros", "SubtotalAmountMicros", "TaxAmountMicros", "TotalAmountMicros", "CorrectedInvoice", "PdfUrl" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Resources.Invoice.Types.AccountSummary), global::Google.Ads.GoogleAds.V14.Resources.Invoice.Types.AccountSummary.Parser, new[]{ "Customer", "BillingCorrectionSubtotalAmountMicros", "BillingCorrectionTaxAmountMicros", "BillingCorrectionTotalAmountMicros", "CouponAdjustmentSubtotalAmountMicros", "CouponAdjustmentTaxAmountMicros", "CouponAdjustmentTotalAmountMicros", "ExcessCreditAdjustmentSubtotalAmountMicros", "ExcessCreditAdjustmentTaxAmountMicros", "ExcessCreditAdjustmentTotalAmountMicros", "RegulatoryCostsSubtotalAmountMicros", "RegulatoryCostsTaxAmountMicros", "RegulatoryCostsTotalAmountMicros", "ExportChargeSubtotalAmountMicros", "ExportChargeTaxAmountMicros", "ExportChargeTotalAmountMicros", "SubtotalAmountMicros", "TaxAmountMicros", "TotalAmountMicros" }, new[]{ "Customer", "BillingCorrectionSubtotalAmountMicros", "BillingCorrectionTaxAmountMicros", "BillingCorrectionTotalAmountMicros", "CouponAdjustmentSubtotalAmountMicros", "CouponAdjustmentTaxAmountMicros", "CouponAdjustmentTotalAmountMicros", "ExcessCreditAdjustmentSubtotalAmountMicros", "ExcessCreditAdjustmentTaxAmountMicros", "ExcessCreditAdjustmentTotalAmountMicros", "RegulatoryCostsSubtotalAmountMicros", "RegulatoryCostsTaxAmountMicros", "RegulatoryCostsTotalAmountMicros", "ExportChargeSubtotalAmountMicros", "ExportChargeTaxAmountMicros", "ExportChargeTotalAmountMicros", "SubtotalAmountMicros", "TaxAmountMicros", "TotalAmountMicros" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Resources.Invoice.Types.AccountBudgetSummary), global::Google.Ads.GoogleAds.V14.Resources.Invoice.Types.AccountBudgetSummary.Parser, new[]{ "Customer", "CustomerDescriptiveName", "AccountBudget", "AccountBudgetName", "PurchaseOrderNumber", "SubtotalAmountMicros", "TaxAmountMicros", "TotalAmountMicros", "BillableActivityDateRange", "ServedAmountMicros", "BilledAmountMicros", "OverdeliveryAmountMicros", "InvalidActivityAmountMicros", "InvalidActivitySummaries" }, new[]{ "Customer", "CustomerDescriptiveName", "AccountBudget", "AccountBudgetName", "PurchaseOrderNumber", "SubtotalAmountMicros", "TaxAmountMicros", "TotalAmountMicros", "ServedAmountMicros", "BilledAmountMicros", "OverdeliveryAmountMicros", "InvalidActivityAmountMicros" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V14.Resources.Invoice.Types.InvalidActivitySummary), global::Google.Ads.GoogleAds.V14.Resources.Invoice.Types.InvalidActivitySummary.Parser, new[]{ "OriginalMonthOfService", "OriginalYearOfService", "OriginalInvoiceId", "OriginalAccountBudgetName", "OriginalPurchaseOrderNumber", "AmountMicros" }, new[]{ "OriginalMonthOfService", "OriginalYearOfService", "OriginalInvoiceId", "OriginalAccountBudgetName", "OriginalPurchaseOrderNumber", "AmountMicros" }, null, null, null)})
           }));
@@ -206,6 +218,9 @@ namespace Google.Ads.GoogleAds.V14.Resources {
       regulatoryCostsSubtotalAmountMicros_ = other.regulatoryCostsSubtotalAmountMicros_;
       regulatoryCostsTaxAmountMicros_ = other.regulatoryCostsTaxAmountMicros_;
       regulatoryCostsTotalAmountMicros_ = other.regulatoryCostsTotalAmountMicros_;
+      exportChargeSubtotalAmountMicros_ = other.exportChargeSubtotalAmountMicros_;
+      exportChargeTaxAmountMicros_ = other.exportChargeTaxAmountMicros_;
+      exportChargeTotalAmountMicros_ = other.exportChargeTotalAmountMicros_;
       subtotalAmountMicros_ = other.subtotalAmountMicros_;
       taxAmountMicros_ = other.taxAmountMicros_;
       totalAmountMicros_ = other.totalAmountMicros_;
@@ -579,18 +594,107 @@ namespace Google.Ads.GoogleAds.V14.Resources {
       }
     }
 
+    /// <summary>Field number for the "export_charge_subtotal_amount_micros" field.</summary>
+    public const int ExportChargeSubtotalAmountMicrosFieldNumber = 40;
+    private readonly static long ExportChargeSubtotalAmountMicrosDefaultValue = 0L;
+
+    private long exportChargeSubtotalAmountMicros_;
+    /// <summary>
+    /// Output only. The pretax subtotal amount of invoice level export charges, in
+    /// micros.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long ExportChargeSubtotalAmountMicros {
+      get { if ((_hasBits0 & 8) != 0) { return exportChargeSubtotalAmountMicros_; } else { return ExportChargeSubtotalAmountMicrosDefaultValue; } }
+      set {
+        _hasBits0 |= 8;
+        exportChargeSubtotalAmountMicros_ = value;
+      }
+    }
+    /// <summary>Gets whether the "export_charge_subtotal_amount_micros" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasExportChargeSubtotalAmountMicros {
+      get { return (_hasBits0 & 8) != 0; }
+    }
+    /// <summary>Clears the value of the "export_charge_subtotal_amount_micros" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearExportChargeSubtotalAmountMicros() {
+      _hasBits0 &= ~8;
+    }
+
+    /// <summary>Field number for the "export_charge_tax_amount_micros" field.</summary>
+    public const int ExportChargeTaxAmountMicrosFieldNumber = 41;
+    private readonly static long ExportChargeTaxAmountMicrosDefaultValue = 0L;
+
+    private long exportChargeTaxAmountMicros_;
+    /// <summary>
+    /// Output only. The sum of taxes on the invoice level export charges, in
+    /// micros.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long ExportChargeTaxAmountMicros {
+      get { if ((_hasBits0 & 16) != 0) { return exportChargeTaxAmountMicros_; } else { return ExportChargeTaxAmountMicrosDefaultValue; } }
+      set {
+        _hasBits0 |= 16;
+        exportChargeTaxAmountMicros_ = value;
+      }
+    }
+    /// <summary>Gets whether the "export_charge_tax_amount_micros" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasExportChargeTaxAmountMicros {
+      get { return (_hasBits0 & 16) != 0; }
+    }
+    /// <summary>Clears the value of the "export_charge_tax_amount_micros" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearExportChargeTaxAmountMicros() {
+      _hasBits0 &= ~16;
+    }
+
+    /// <summary>Field number for the "export_charge_total_amount_micros" field.</summary>
+    public const int ExportChargeTotalAmountMicrosFieldNumber = 42;
+    private readonly static long ExportChargeTotalAmountMicrosDefaultValue = 0L;
+
+    private long exportChargeTotalAmountMicros_;
+    /// <summary>
+    /// Output only. The total amount of invoice level export charges, in micros.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long ExportChargeTotalAmountMicros {
+      get { if ((_hasBits0 & 32) != 0) { return exportChargeTotalAmountMicros_; } else { return ExportChargeTotalAmountMicrosDefaultValue; } }
+      set {
+        _hasBits0 |= 32;
+        exportChargeTotalAmountMicros_ = value;
+      }
+    }
+    /// <summary>Gets whether the "export_charge_total_amount_micros" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasExportChargeTotalAmountMicros {
+      get { return (_hasBits0 & 32) != 0; }
+    }
+    /// <summary>Clears the value of the "export_charge_total_amount_micros" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearExportChargeTotalAmountMicros() {
+      _hasBits0 &= ~32;
+    }
+
     /// <summary>Field number for the "subtotal_amount_micros" field.</summary>
     public const int SubtotalAmountMicrosFieldNumber = 33;
     private readonly static long SubtotalAmountMicrosDefaultValue = 0L;
 
     private long subtotalAmountMicros_;
     /// <summary>
-    /// Output only. The pretax subtotal amount, in micros. This equals the
-    /// sum of the AccountBudgetSummary subtotal amounts,
-    /// Invoice.adjustments_subtotal_amount_micros, and
-    /// Invoice.regulatory_costs_subtotal_amount_micros.
-    /// Starting with v6, the Invoice.regulatory_costs_subtotal_amount_micros is no
-    /// longer included.
+    /// Output only. The pretax subtotal amount, in micros. This is equal to the
+    /// sum of the AccountBudgetSummary subtotal amounts and
+    /// Invoice.adjustments_subtotal_amount_micros.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -653,10 +757,10 @@ namespace Google.Ads.GoogleAds.V14.Resources {
     private long totalAmountMicros_;
     /// <summary>
     /// Output only. The total amount, in micros. This equals the sum of
-    /// Invoice.subtotal_amount_micros and Invoice.tax_amount_micros.
-    /// Starting with v6, Invoice.regulatory_costs_subtotal_amount_micros is
-    /// also added as it is no longer already included in
-    /// Invoice.tax_amount_micros.
+    /// Invoice.subtotal_amount_micros, Invoice.tax_amount_micros,
+    /// Invoice.regulatory_costs_subtotal_amount_micros, and
+    /// Invoice.export_charge_subtotal_amount_micros (which is separated into a
+    /// separate line item starting with V14.1).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -825,6 +929,9 @@ namespace Google.Ads.GoogleAds.V14.Resources {
       if (RegulatoryCostsSubtotalAmountMicros != other.RegulatoryCostsSubtotalAmountMicros) return false;
       if (RegulatoryCostsTaxAmountMicros != other.RegulatoryCostsTaxAmountMicros) return false;
       if (RegulatoryCostsTotalAmountMicros != other.RegulatoryCostsTotalAmountMicros) return false;
+      if (ExportChargeSubtotalAmountMicros != other.ExportChargeSubtotalAmountMicros) return false;
+      if (ExportChargeTaxAmountMicros != other.ExportChargeTaxAmountMicros) return false;
+      if (ExportChargeTotalAmountMicros != other.ExportChargeTotalAmountMicros) return false;
       if (SubtotalAmountMicros != other.SubtotalAmountMicros) return false;
       if (TaxAmountMicros != other.TaxAmountMicros) return false;
       if (TotalAmountMicros != other.TotalAmountMicros) return false;
@@ -856,6 +963,9 @@ namespace Google.Ads.GoogleAds.V14.Resources {
       if (RegulatoryCostsSubtotalAmountMicros != 0L) hash ^= RegulatoryCostsSubtotalAmountMicros.GetHashCode();
       if (RegulatoryCostsTaxAmountMicros != 0L) hash ^= RegulatoryCostsTaxAmountMicros.GetHashCode();
       if (RegulatoryCostsTotalAmountMicros != 0L) hash ^= RegulatoryCostsTotalAmountMicros.GetHashCode();
+      if (HasExportChargeSubtotalAmountMicros) hash ^= ExportChargeSubtotalAmountMicros.GetHashCode();
+      if (HasExportChargeTaxAmountMicros) hash ^= ExportChargeTaxAmountMicros.GetHashCode();
+      if (HasExportChargeTotalAmountMicros) hash ^= ExportChargeTotalAmountMicros.GetHashCode();
       if (HasSubtotalAmountMicros) hash ^= SubtotalAmountMicros.GetHashCode();
       if (HasTaxAmountMicros) hash ^= TaxAmountMicros.GetHashCode();
       if (HasTotalAmountMicros) hash ^= TotalAmountMicros.GetHashCode();
@@ -969,6 +1079,18 @@ namespace Google.Ads.GoogleAds.V14.Resources {
         output.WriteString(PdfUrl);
       }
       accountSummaries_.WriteTo(output, _repeated_accountSummaries_codec);
+      if (HasExportChargeSubtotalAmountMicros) {
+        output.WriteRawTag(192, 2);
+        output.WriteInt64(ExportChargeSubtotalAmountMicros);
+      }
+      if (HasExportChargeTaxAmountMicros) {
+        output.WriteRawTag(200, 2);
+        output.WriteInt64(ExportChargeTaxAmountMicros);
+      }
+      if (HasExportChargeTotalAmountMicros) {
+        output.WriteRawTag(208, 2);
+        output.WriteInt64(ExportChargeTotalAmountMicros);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1066,6 +1188,18 @@ namespace Google.Ads.GoogleAds.V14.Resources {
         output.WriteString(PdfUrl);
       }
       accountSummaries_.WriteTo(ref output, _repeated_accountSummaries_codec);
+      if (HasExportChargeSubtotalAmountMicros) {
+        output.WriteRawTag(192, 2);
+        output.WriteInt64(ExportChargeSubtotalAmountMicros);
+      }
+      if (HasExportChargeTaxAmountMicros) {
+        output.WriteRawTag(200, 2);
+        output.WriteInt64(ExportChargeTaxAmountMicros);
+      }
+      if (HasExportChargeTotalAmountMicros) {
+        output.WriteRawTag(208, 2);
+        output.WriteInt64(ExportChargeTotalAmountMicros);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1123,6 +1257,15 @@ namespace Google.Ads.GoogleAds.V14.Resources {
       }
       if (RegulatoryCostsTotalAmountMicros != 0L) {
         size += 2 + pb::CodedOutputStream.ComputeInt64Size(RegulatoryCostsTotalAmountMicros);
+      }
+      if (HasExportChargeSubtotalAmountMicros) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(ExportChargeSubtotalAmountMicros);
+      }
+      if (HasExportChargeTaxAmountMicros) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(ExportChargeTaxAmountMicros);
+      }
+      if (HasExportChargeTotalAmountMicros) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(ExportChargeTotalAmountMicros);
       }
       if (HasSubtotalAmountMicros) {
         size += 2 + pb::CodedOutputStream.ComputeInt64Size(SubtotalAmountMicros);
@@ -1204,6 +1347,15 @@ namespace Google.Ads.GoogleAds.V14.Resources {
       }
       if (other.RegulatoryCostsTotalAmountMicros != 0L) {
         RegulatoryCostsTotalAmountMicros = other.RegulatoryCostsTotalAmountMicros;
+      }
+      if (other.HasExportChargeSubtotalAmountMicros) {
+        ExportChargeSubtotalAmountMicros = other.ExportChargeSubtotalAmountMicros;
+      }
+      if (other.HasExportChargeTaxAmountMicros) {
+        ExportChargeTaxAmountMicros = other.ExportChargeTaxAmountMicros;
+      }
+      if (other.HasExportChargeTotalAmountMicros) {
+        ExportChargeTotalAmountMicros = other.ExportChargeTotalAmountMicros;
       }
       if (other.HasSubtotalAmountMicros) {
         SubtotalAmountMicros = other.SubtotalAmountMicros;
@@ -1337,6 +1489,18 @@ namespace Google.Ads.GoogleAds.V14.Resources {
             accountSummaries_.AddEntriesFrom(input, _repeated_accountSummaries_codec);
             break;
           }
+          case 320: {
+            ExportChargeSubtotalAmountMicros = input.ReadInt64();
+            break;
+          }
+          case 328: {
+            ExportChargeTaxAmountMicros = input.ReadInt64();
+            break;
+          }
+          case 336: {
+            ExportChargeTotalAmountMicros = input.ReadInt64();
+            break;
+          }
         }
       }
     #endif
@@ -1451,6 +1615,18 @@ namespace Google.Ads.GoogleAds.V14.Resources {
             accountSummaries_.AddEntriesFrom(ref input, _repeated_accountSummaries_codec);
             break;
           }
+          case 320: {
+            ExportChargeSubtotalAmountMicros = input.ReadInt64();
+            break;
+          }
+          case 328: {
+            ExportChargeTaxAmountMicros = input.ReadInt64();
+            break;
+          }
+          case 336: {
+            ExportChargeTotalAmountMicros = input.ReadInt64();
+            break;
+          }
         }
       }
     }
@@ -1513,6 +1689,9 @@ namespace Google.Ads.GoogleAds.V14.Resources {
           regulatoryCostsSubtotalAmountMicros_ = other.regulatoryCostsSubtotalAmountMicros_;
           regulatoryCostsTaxAmountMicros_ = other.regulatoryCostsTaxAmountMicros_;
           regulatoryCostsTotalAmountMicros_ = other.regulatoryCostsTotalAmountMicros_;
+          exportChargeSubtotalAmountMicros_ = other.exportChargeSubtotalAmountMicros_;
+          exportChargeTaxAmountMicros_ = other.exportChargeTaxAmountMicros_;
+          exportChargeTotalAmountMicros_ = other.exportChargeTotalAmountMicros_;
           subtotalAmountMicros_ = other.subtotalAmountMicros_;
           taxAmountMicros_ = other.taxAmountMicros_;
           totalAmountMicros_ = other.totalAmountMicros_;
@@ -1914,6 +2093,96 @@ namespace Google.Ads.GoogleAds.V14.Resources {
           _hasBits0 &= ~2048;
         }
 
+        /// <summary>Field number for the "export_charge_subtotal_amount_micros" field.</summary>
+        public const int ExportChargeSubtotalAmountMicrosFieldNumber = 17;
+        private readonly static long ExportChargeSubtotalAmountMicrosDefaultValue = 0L;
+
+        private long exportChargeSubtotalAmountMicros_;
+        /// <summary>
+        /// Output only. Pretax export charge subtotal amount, in micros.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public long ExportChargeSubtotalAmountMicros {
+          get { if ((_hasBits0 & 32768) != 0) { return exportChargeSubtotalAmountMicros_; } else { return ExportChargeSubtotalAmountMicrosDefaultValue; } }
+          set {
+            _hasBits0 |= 32768;
+            exportChargeSubtotalAmountMicros_ = value;
+          }
+        }
+        /// <summary>Gets whether the "export_charge_subtotal_amount_micros" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasExportChargeSubtotalAmountMicros {
+          get { return (_hasBits0 & 32768) != 0; }
+        }
+        /// <summary>Clears the value of the "export_charge_subtotal_amount_micros" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearExportChargeSubtotalAmountMicros() {
+          _hasBits0 &= ~32768;
+        }
+
+        /// <summary>Field number for the "export_charge_tax_amount_micros" field.</summary>
+        public const int ExportChargeTaxAmountMicrosFieldNumber = 18;
+        private readonly static long ExportChargeTaxAmountMicrosDefaultValue = 0L;
+
+        private long exportChargeTaxAmountMicros_;
+        /// <summary>
+        /// Output only. Tax on export charge, in micros.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public long ExportChargeTaxAmountMicros {
+          get { if ((_hasBits0 & 65536) != 0) { return exportChargeTaxAmountMicros_; } else { return ExportChargeTaxAmountMicrosDefaultValue; } }
+          set {
+            _hasBits0 |= 65536;
+            exportChargeTaxAmountMicros_ = value;
+          }
+        }
+        /// <summary>Gets whether the "export_charge_tax_amount_micros" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasExportChargeTaxAmountMicros {
+          get { return (_hasBits0 & 65536) != 0; }
+        }
+        /// <summary>Clears the value of the "export_charge_tax_amount_micros" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearExportChargeTaxAmountMicros() {
+          _hasBits0 &= ~65536;
+        }
+
+        /// <summary>Field number for the "export_charge_total_amount_micros" field.</summary>
+        public const int ExportChargeTotalAmountMicrosFieldNumber = 19;
+        private readonly static long ExportChargeTotalAmountMicrosDefaultValue = 0L;
+
+        private long exportChargeTotalAmountMicros_;
+        /// <summary>
+        /// Output only. Total export charge amount, in micros.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public long ExportChargeTotalAmountMicros {
+          get { if ((_hasBits0 & 131072) != 0) { return exportChargeTotalAmountMicros_; } else { return ExportChargeTotalAmountMicrosDefaultValue; } }
+          set {
+            _hasBits0 |= 131072;
+            exportChargeTotalAmountMicros_ = value;
+          }
+        }
+        /// <summary>Gets whether the "export_charge_total_amount_micros" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasExportChargeTotalAmountMicros {
+          get { return (_hasBits0 & 131072) != 0; }
+        }
+        /// <summary>Clears the value of the "export_charge_total_amount_micros" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearExportChargeTotalAmountMicros() {
+          _hasBits0 &= ~131072;
+        }
+
         /// <summary>Field number for the "subtotal_amount_micros" field.</summary>
         public const int SubtotalAmountMicrosFieldNumber = 14;
         private readonly static long SubtotalAmountMicrosDefaultValue = 0L;
@@ -2036,6 +2305,9 @@ namespace Google.Ads.GoogleAds.V14.Resources {
           if (RegulatoryCostsSubtotalAmountMicros != other.RegulatoryCostsSubtotalAmountMicros) return false;
           if (RegulatoryCostsTaxAmountMicros != other.RegulatoryCostsTaxAmountMicros) return false;
           if (RegulatoryCostsTotalAmountMicros != other.RegulatoryCostsTotalAmountMicros) return false;
+          if (ExportChargeSubtotalAmountMicros != other.ExportChargeSubtotalAmountMicros) return false;
+          if (ExportChargeTaxAmountMicros != other.ExportChargeTaxAmountMicros) return false;
+          if (ExportChargeTotalAmountMicros != other.ExportChargeTotalAmountMicros) return false;
           if (SubtotalAmountMicros != other.SubtotalAmountMicros) return false;
           if (TaxAmountMicros != other.TaxAmountMicros) return false;
           if (TotalAmountMicros != other.TotalAmountMicros) return false;
@@ -2059,6 +2331,9 @@ namespace Google.Ads.GoogleAds.V14.Resources {
           if (HasRegulatoryCostsSubtotalAmountMicros) hash ^= RegulatoryCostsSubtotalAmountMicros.GetHashCode();
           if (HasRegulatoryCostsTaxAmountMicros) hash ^= RegulatoryCostsTaxAmountMicros.GetHashCode();
           if (HasRegulatoryCostsTotalAmountMicros) hash ^= RegulatoryCostsTotalAmountMicros.GetHashCode();
+          if (HasExportChargeSubtotalAmountMicros) hash ^= ExportChargeSubtotalAmountMicros.GetHashCode();
+          if (HasExportChargeTaxAmountMicros) hash ^= ExportChargeTaxAmountMicros.GetHashCode();
+          if (HasExportChargeTotalAmountMicros) hash ^= ExportChargeTotalAmountMicros.GetHashCode();
           if (HasSubtotalAmountMicros) hash ^= SubtotalAmountMicros.GetHashCode();
           if (HasTaxAmountMicros) hash ^= TaxAmountMicros.GetHashCode();
           if (HasTotalAmountMicros) hash ^= TotalAmountMicros.GetHashCode();
@@ -2144,6 +2419,18 @@ namespace Google.Ads.GoogleAds.V14.Resources {
             output.WriteRawTag(128, 1);
             output.WriteInt64(TotalAmountMicros);
           }
+          if (HasExportChargeSubtotalAmountMicros) {
+            output.WriteRawTag(136, 1);
+            output.WriteInt64(ExportChargeSubtotalAmountMicros);
+          }
+          if (HasExportChargeTaxAmountMicros) {
+            output.WriteRawTag(144, 1);
+            output.WriteInt64(ExportChargeTaxAmountMicros);
+          }
+          if (HasExportChargeTotalAmountMicros) {
+            output.WriteRawTag(152, 1);
+            output.WriteInt64(ExportChargeTotalAmountMicros);
+          }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
           }
@@ -2218,6 +2505,18 @@ namespace Google.Ads.GoogleAds.V14.Resources {
             output.WriteRawTag(128, 1);
             output.WriteInt64(TotalAmountMicros);
           }
+          if (HasExportChargeSubtotalAmountMicros) {
+            output.WriteRawTag(136, 1);
+            output.WriteInt64(ExportChargeSubtotalAmountMicros);
+          }
+          if (HasExportChargeTaxAmountMicros) {
+            output.WriteRawTag(144, 1);
+            output.WriteInt64(ExportChargeTaxAmountMicros);
+          }
+          if (HasExportChargeTotalAmountMicros) {
+            output.WriteRawTag(152, 1);
+            output.WriteInt64(ExportChargeTotalAmountMicros);
+          }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(ref output);
           }
@@ -2266,6 +2565,15 @@ namespace Google.Ads.GoogleAds.V14.Resources {
           }
           if (HasRegulatoryCostsTotalAmountMicros) {
             size += 1 + pb::CodedOutputStream.ComputeInt64Size(RegulatoryCostsTotalAmountMicros);
+          }
+          if (HasExportChargeSubtotalAmountMicros) {
+            size += 2 + pb::CodedOutputStream.ComputeInt64Size(ExportChargeSubtotalAmountMicros);
+          }
+          if (HasExportChargeTaxAmountMicros) {
+            size += 2 + pb::CodedOutputStream.ComputeInt64Size(ExportChargeTaxAmountMicros);
+          }
+          if (HasExportChargeTotalAmountMicros) {
+            size += 2 + pb::CodedOutputStream.ComputeInt64Size(ExportChargeTotalAmountMicros);
           }
           if (HasSubtotalAmountMicros) {
             size += 1 + pb::CodedOutputStream.ComputeInt64Size(SubtotalAmountMicros);
@@ -2326,6 +2634,15 @@ namespace Google.Ads.GoogleAds.V14.Resources {
           }
           if (other.HasRegulatoryCostsTotalAmountMicros) {
             RegulatoryCostsTotalAmountMicros = other.RegulatoryCostsTotalAmountMicros;
+          }
+          if (other.HasExportChargeSubtotalAmountMicros) {
+            ExportChargeSubtotalAmountMicros = other.ExportChargeSubtotalAmountMicros;
+          }
+          if (other.HasExportChargeTaxAmountMicros) {
+            ExportChargeTaxAmountMicros = other.ExportChargeTaxAmountMicros;
+          }
+          if (other.HasExportChargeTotalAmountMicros) {
+            ExportChargeTotalAmountMicros = other.ExportChargeTotalAmountMicros;
           }
           if (other.HasSubtotalAmountMicros) {
             SubtotalAmountMicros = other.SubtotalAmountMicros;
@@ -2415,6 +2732,18 @@ namespace Google.Ads.GoogleAds.V14.Resources {
                 TotalAmountMicros = input.ReadInt64();
                 break;
               }
+              case 136: {
+                ExportChargeSubtotalAmountMicros = input.ReadInt64();
+                break;
+              }
+              case 144: {
+                ExportChargeTaxAmountMicros = input.ReadInt64();
+                break;
+              }
+              case 152: {
+                ExportChargeTotalAmountMicros = input.ReadInt64();
+                break;
+              }
             }
           }
         #endif
@@ -2492,6 +2821,18 @@ namespace Google.Ads.GoogleAds.V14.Resources {
               }
               case 128: {
                 TotalAmountMicros = input.ReadInt64();
+                break;
+              }
+              case 136: {
+                ExportChargeSubtotalAmountMicros = input.ReadInt64();
+                break;
+              }
+              case 144: {
+                ExportChargeTaxAmountMicros = input.ReadInt64();
+                break;
+              }
+              case 152: {
+                ExportChargeTotalAmountMicros = input.ReadInt64();
                 break;
               }
             }
