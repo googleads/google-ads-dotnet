@@ -119,21 +119,19 @@ namespace Google.Ads.Gax.Tests.Util
             {
                 OptFoos = 32
             };
-            Assert.Throws<ArgumentException>(delegate () {
-                // r2.Foo is null.
-                FieldMasks.GetFieldValue("foo.bar", r2);
-            });
+
+            Assert.IsNull(FieldMasks.GetFieldValue("foo.bar", r2));
             Assert.Throws<ArgumentException>(delegate () {
                 // r2.Jazz is not a valid field.
-                FieldMasks.GetFieldValue("foo.jazz", r2);
+                FieldMasks.GetFieldValue("jazz", r2);
             });
             Assert.Throws<ArgumentException>(delegate () {
                 // r2.OptFoos.Blah cannot be recursed because OptFoos is a leaf level node.
-                FieldMasks.GetFieldValue("foo.opt_foos.blah", r2);
+                FieldMasks.GetFieldValue("opt_foos.blah", r2);
             });
             Assert.Throws<ArgumentException>(delegate () {
-                // YOu cannot recurse r2.Foos because it is a repeated field.
-                FieldMasks.GetFieldValue("foo.opt_foos.blah", r2);
+                // You cannot recurse r2.Foos because it is a repeated field.
+                FieldMasks.GetFieldValue("foos.blah", r2);
             });
         }
     }
