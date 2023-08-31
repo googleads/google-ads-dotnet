@@ -206,6 +206,10 @@ namespace Google.Ads.Gax.Util
                             // we cannot recurse any longer.
                             return childValue;
                         }
+                        else if (childValue is null)
+                        {
+                            return null;
+                        }
                         else
                         {
                             string currentPath = string.Join(".",
