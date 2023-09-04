@@ -1,3 +1,8 @@
+17.0.1
+======
+- Fixed a bug with navigating nested properties in field masks (#533): return null when an
+  intermediate property is null.
+
 17.0.0
 ======
 - Added support for version v14.1 of the Google Ads API.
