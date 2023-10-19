@@ -107,9 +107,13 @@ namespace Google.Ads.GoogleAds.Lib
         private CallSettings UpdateCallSettingsWithConfigParameters(CallSettings callSettings,
                     GoogleAdsConfig config, GoogleAdsServiceContext serviceContext)
         {
-            callSettings = callSettings.WithHeader(MetadataKeyNames.DeveloperToken,
-                config.DeveloperToken)
-                .WithResponseMetadataHandler(delegate (Metadata metadata)
+            if (!config.UseCloudOrgForApiAccess)
+            {
+                callSettings = callSettings.WithHeader(MetadataKeyNames.DeveloperToken,
+                    config.DeveloperToken);
+            }
+
+            callSettings = callSettings.WithResponseMetadataHandler(delegate (Metadata metadata)
                 {
                     AdsResponseMetadata responseMetadata = new AdsResponseMetadata(metadata);
                     serviceContext.OnResponseMetadataReceived(responseMetadata);

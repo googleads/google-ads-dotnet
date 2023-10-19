@@ -1,3 +1,32 @@
+17.1.0
+======
+- Added support for version 15.0 of the Google Ads API. The following code examples still use
+  version 14 because the services in the examples were removed in version 15:
+    * ApproveMerchantCenterLink
+    * RejectMerchantCenterLink
+    * UploadImage
+    * UploadMediaBundle
+- Added support for the net6.0 target framework.
+- Updated [`LogFormatter`](https://github.com/googleads/google-ads-dotnet/blob/main/Google.Ads.GoogleAds.Core/src/Logging/LogFormatter.cs)
+  to redact fields of Local Services Lead and Local Services Lead Conversation.
+- Added support for the `useCloudOrgForApiAccess` configuration flag. This is in preparation for a
+  pilot project that uses Google Cloud orgs for API Access levels.
+- Updated code examples:
+    * AddBillingSetup
+    * AddPerformanceMaxProductListingGroupTree
+    * AddCustomerMatchUserList
+    * UploadCallConversion
+    * UploadOfflineConversion
+    * UploadStoreSalesTransactions
+- Renamed and updated code examples:
+    * UploadConversionWithIdentifiers to UploadEnhancedConversionsForLeads
+    * UploadConversionEnhancement to UploadEnhancedConversionsForWeb
+- Fixed the following Shopping examples after the `ShoppingSetting::sales_country` field was
+    removed:
+    * AddMerchantCenterDynamicRemarketingCampaign
+    * AddPerformanceMaxRetailCampaign
+    * AddShoppingProductAd
+
 17.0.1
 ======
 - Fixed a bug with navigating nested properties in field masks (#533): return null when an

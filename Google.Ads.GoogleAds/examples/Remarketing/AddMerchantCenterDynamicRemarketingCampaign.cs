@@ -17,21 +17,21 @@ using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V14.Common;
-using Google.Ads.GoogleAds.V14.Errors;
-using Google.Ads.GoogleAds.V14.Resources;
-using Google.Ads.GoogleAds.V14.Services;
+using Google.Ads.GoogleAds.V15.Common;
+using Google.Ads.GoogleAds.V15.Errors;
+using Google.Ads.GoogleAds.V15.Resources;
+using Google.Ads.GoogleAds.V15.Services;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V14.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.AssetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.DisplayAdFormatSettingEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.AssetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.DisplayAdFormatSettingEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V14
+namespace Google.Ads.GoogleAds.Examples.V15
 {
     /// <summary>
     /// This code example creates a shopping campaign associated with an existing Merchant Center
@@ -151,7 +151,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
         {
             // Creates the Campaign Service client.
             CampaignServiceClient campaignServiceClient =
-                client.GetService(Services.V14.CampaignService);
+                client.GetService(Services.V15.CampaignService);
 
             string budgetResourceName = ResourceNames.CampaignBudget(customerId, campaignBudgetId);
 
@@ -170,11 +170,6 @@ namespace Google.Ads.GoogleAds.Examples.V14
                 {
                     CampaignPriority = 0,
                     MerchantId = merchantCenterAccountId,
-                    // Display Network campaigns do not support partition by country. The only
-                    // supported value is "ZZ". This signals that products from all countries are
-                    // available in the campaign. The actual products which serve are based on
-                    // the products tagged in the user list entry.
-                    SalesCountry = "ZZ",
                     EnableLocal = true
                 }
             };
@@ -207,7 +202,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
         {
             // Creates the ad group service client.
             AdGroupServiceClient adGroupServiceClient =
-                client.GetService(Services.V14.AdGroupService);
+                client.GetService(Services.V15.AdGroupService);
 
             // Creates the ad group.
             AdGroup adGroup = new AdGroup()
@@ -244,7 +239,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
         {
             // Creates the ad group ad service client.
             AdGroupAdServiceClient adGroupAdServiceClient =
-                client.GetService(Services.V14.AdGroupAdService);
+                client.GetService(Services.V15.AdGroupAdService);
 
             string marketingImageUrl = "https://gaagl.page.link/Eit5";
             string marketingImageName = "Marketing Image";
@@ -357,7 +352,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
             string imageUrl, string assetName)
         {
             // Creates the asset service client.
-            AssetServiceClient assetServiceClient = client.GetService(Services.V14.AssetService);
+            AssetServiceClient assetServiceClient = client.GetService(Services.V15.AssetService);
 
             byte[] imageData = MediaUtilities.GetAssetDataFromUrl(imageUrl, client.Config);
 
@@ -399,7 +394,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
         {
             // Creates the ad group criterion service client.
             AdGroupCriterionServiceClient adGroupCriterionServiceClient = client.GetService
-                (Services.V14.AdGroupCriterionService);
+                (Services.V15.AdGroupCriterionService);
 
             string userListResourceName = ResourceNames.UserList(customerId, userListId);
 

@@ -34,6 +34,10 @@ namespace Google.Ads.GoogleAds.Examples.V14
     ///
     /// To run this code example, you must use the Merchant Center UI or the Content API for
     /// Shopping to send a link request between your Merchant Center and Google Ads accounts.
+    ///
+    /// <remarks>This code example uses version v14 of the Google Ads API. Version v15 of the
+    /// Google Ads API replaces MerchantCenterLinkService with ProductLinkInvitationService and
+    /// ProductLinkService. We will add new code examples using these services shortly.</remarks>
     /// </summary>
     public class ApproveMerchantCenterLink : ExampleBase
     {

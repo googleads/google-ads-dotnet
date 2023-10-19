@@ -15,13 +15,14 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V14.Errors;
-using Google.Ads.GoogleAds.V14.Resources;
-using Google.Ads.GoogleAds.V14.Services;
+using Google.Ads.GoogleAds.V15.Common;
+using Google.Ads.GoogleAds.V15.Errors;
+using Google.Ads.GoogleAds.V15.Services;
 using System;
 using System.Collections.Generic;
+using static Google.Ads.GoogleAds.V15.Enums.ConsentStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V14
+namespace Google.Ads.GoogleAds.Examples.V15
 {
     /// <summary>
     /// This code example imports offline call conversion values for calls related to the
@@ -89,6 +90,13 @@ namespace Google.Ads.GoogleAds.Examples.V14
             [Option("conversionCustomVariableValue", Required = false, HelpText =
                 "The value of the conversion custom variable to associate with the upload.")]
             public string ConversionCustomVariableValue { get; set; }
+
+            /// <summary>
+            ///  The consent status for ad user data.
+            /// </summary>
+            [Option("adUserDataConsent", Required = false, HelpText =
+                "The consent status for ad user data.")]
+            public ConsentStatus? AdUserDataConsent { get; set; }
         }
 
         /// <summary>
@@ -104,7 +112,8 @@ namespace Google.Ads.GoogleAds.Examples.V14
             codeExample.Run(new GoogleAdsClient(), options.CustomerId,
                 options.ConversionActionId, options.CallerId, options.CallStartTime,
                 options.ConversionTime, options.ConversionValue,
-                options.ConversionCustomVariableId, options.ConversionCustomVariableValue);
+                options.ConversionCustomVariableId, options.ConversionCustomVariableValue,
+                options.AdUserDataConsent);
         }
 
         /// <summary>
@@ -133,15 +142,17 @@ namespace Google.Ads.GoogleAds.Examples.V14
         /// associate with the upload.</param>
         /// <param name="conversionCustomVariableValue">The value of the conversion custom variable
         /// to associate with the upload.</param>
+        /// <param name="adUserDataConsent">The consent status for ad user data.</param>
         // [START upload_call_conversion]
         public void Run(GoogleAdsClient client, long customerId,
             long conversionActionId, string callerId, string callStartTime,
             string conversionTime, double conversionValue,
-            long? conversionCustomVariableId, string conversionCustomVariableValue)
+            long? conversionCustomVariableId, string conversionCustomVariableValue,
+            ConsentStatus? adUserDataConsent)
         {
             // Get the ConversionUploadService.
             ConversionUploadServiceClient conversionUploadService =
-                client.GetService(Services.V14.ConversionUploadService);
+                client.GetService(Services.V15.ConversionUploadService);
 
             // Create a call conversion by specifying currency as USD.
             CallConversion callConversion = new CallConversion()
@@ -151,8 +162,19 @@ namespace Google.Ads.GoogleAds.Examples.V14
                 CallStartDateTime = callStartTime,
                 ConversionDateTime = conversionTime,
                 ConversionValue = conversionValue,
-                CurrencyCode = "USD"
+                CurrencyCode = "USD",
             };
+
+            if (adUserDataConsent != null)
+            {
+                // Specifies whether user consent was obtained for the data you are uploading. See
+                // https://www.google.com/about/company/user-consent-policy
+                // for details.
+                callConversion.Consent = new Consent()
+                {
+                    AdUserData = (ConsentStatus)adUserDataConsent
+                };
+            }
 
             if (conversionCustomVariableId != null &&
                 !string.IsNullOrEmpty(conversionCustomVariableValue))
@@ -177,6 +199,11 @@ namespace Google.Ads.GoogleAds.Examples.V14
                 // Issues a request to upload the call conversion. The partialFailure parameter
                 // is set to true, and validateOnly parameter to false as required by this method
                 // call.
+                // NOTE: This request contains a single conversion as a demonstration.  However, if
+                // you have multiple conversions to upload, it's best to upload multiple conversions
+                // per request instead of sending a separate request per conversion. See the
+                // following for per-request limits:
+                // https://developers.google.com/google-ads/api/docs/best-practices/quotas#conversion_upload_service
                 UploadCallConversionsResponse response =
                     conversionUploadService.UploadCallConversions(request);
 

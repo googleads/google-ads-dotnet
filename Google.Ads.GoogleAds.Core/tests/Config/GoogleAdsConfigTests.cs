@@ -56,6 +56,11 @@ namespace Google.Ads.GoogleAds.Tests.Config
         private const string DEVELOPER_TOKEN_VALUE = "abcdefghijkl1234567890";
 
         /// <summary>
+        /// Test value for <see cref="GoogleAdsConfig.UseCloudOrgForApiAccess"/> property.
+        /// </summary>
+        private const bool USE_CLOUD_ORG_FOR_API_ACCESS_VALUE = true;
+
+        /// <summary>
         /// Test value for <see cref="GoogleAdsConfig.LoginCustomerId"/> property.
         /// </summary>
         private const string LOGIN_CUSTOMER_ID_VALUE = "1234567890";
@@ -131,6 +136,7 @@ namespace Google.Ads.GoogleAds.Tests.Config
                 { "MaxMetadataSizeInBytes", MAX_METADATA_SIZE_IN_BYTES_VALUE.ToString() },
                 { "GoogleAds.Server", SERVER_URL_VALUE },
                 { "DeveloperToken", DEVELOPER_TOKEN_VALUE },
+                { "UseCloudOrgForApiAccess", USE_CLOUD_ORG_FOR_API_ACCESS_VALUE.ToString() },
                 { "LoginCustomerId", LOGIN_CUSTOMER_ID_VALUE },
                 { "LinkedCustomerId", LINKED_CUSTOMER_ID_VALUE },
                 { "ClientCustomerId", CLIENT_CUSTOMER_ID_VALUE },
@@ -160,6 +166,7 @@ namespace Google.Ads.GoogleAds.Tests.Config
             Assert.AreEqual(MAX_RECEIVE_MESSAGE_SIZE_IN_BYTES_VALUE,
                 this.MaxReceiveMessageSizeInBytes);
             Assert.AreEqual(MAX_METADATA_SIZE_IN_BYTES_VALUE, this.MaxMetadataSizeInBytes);
+            Assert.AreEqual(USE_CLOUD_ORG_FOR_API_ACCESS_VALUE, this.UseCloudOrgForApiAccess);
             Assert.AreEqual(DEVELOPER_TOKEN_VALUE, this.DeveloperToken);
             Assert.AreEqual(LOGIN_CUSTOMER_ID_VALUE, this.LoginCustomerId);
             Assert.AreEqual(LINKED_CUSTOMER_ID_VALUE, this.LinkedCustomerId);

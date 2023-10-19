@@ -45,6 +45,8 @@ namespace Google.Ads.GoogleAds.Logging
                 MetadataKeyNames.ChangeEventUserEmail,
                 MetadataKeyNames.FeedPlaceholderEmailAddress,
                 MetadataKeyNames.CustomerUserAccessInvitationEmailAddress,
+                MetadataKeyNames.LocalServicesLeadContactDetails,
+                MetadataKeyNames.LocalServicesLeadConversationMessageDetailText,
             };
 
         private static readonly Regex GAQL_REDACTION_MATCHER =
