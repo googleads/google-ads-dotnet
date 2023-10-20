@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
   <PropertyGroup>
-    <TargetFrameworks>net5.0;netcoreapp3.1;net6.0</TargetFrameworks>
+    <TargetFrameworks>net5.0;net6.0</TargetFrameworks>
     <RootNamespace>Google.Ads.GoogleAds.Extensions.Tests</RootNamespace>
     <AssemblyName>Google.Ads.GoogleAds.Extensions.Tests</AssemblyName>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>

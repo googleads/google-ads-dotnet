@@ -20,14 +20,15 @@ using System.Text;
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V14.Common;
-using Google.Ads.GoogleAds.V14.Errors;
-using Google.Ads.GoogleAds.V14.Resources;
-using Google.Ads.GoogleAds.V14.Services;
-using static Google.Ads.GoogleAds.V14.Enums.OfflineUserDataJobStatusEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.OfflineUserDataJobTypeEnum.Types;
+using Google.Ads.GoogleAds.V15.Common;
+using Google.Ads.GoogleAds.V15.Errors;
+using Google.Ads.GoogleAds.V15.Resources;
+using Google.Ads.GoogleAds.V15.Services;
+using static Google.Ads.GoogleAds.V15.Enums.ConsentStatusEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.OfflineUserDataJobStatusEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.OfflineUserDataJobTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V14
+namespace Google.Ads.GoogleAds.Examples.V15
 {
     /// <summary>
     /// This code example uploads offline data for store sales transactions.
@@ -167,6 +168,20 @@ namespace Google.Ads.GoogleAds.Examples.V14
                     "The number of items sold. Only required if uploading with item attributes.",
                 Default = 1)]
             public long Quantity { get; set; }
+
+            /// <summary>
+            ///  The consent status for ad personalization.
+            /// </summary>
+            [Option("adPersonalizationConsent", Required = false, HelpText =
+                "The consent status for ad user data.")]
+            public ConsentStatus? AdPersonalizationConsent { get; set; }
+
+            /// <summary>
+            ///  The consent status for ad user data.
+            /// </summary>
+            [Option("adUserDataConsent", Required = false, HelpText =
+                "The consent status for ad user data.")]
+            public ConsentStatus? AdUserDataConsent { get; set; }
         }
 
         /// <summary>
@@ -184,7 +199,8 @@ namespace Google.Ads.GoogleAds.Examples.V14
                 options.AdvertiserUploadDateTime, options.BridgeMapVersionId, options.PartnerId,
                 options.CustomKey, options.ItemId, options.MerchantCenterAccountId,
                 options.CountryCode,
-                options.LanguageCode, options.Quantity);
+                options.LanguageCode, options.Quantity, options.AdPersonalizationConsent,
+                options.AdUserDataConsent);
         }
 
         // Gets a digest for generating hashed values using SHA-256. You must normalize and hash the
@@ -236,15 +252,19 @@ namespace Google.Ads.GoogleAds.Examples.V14
         /// attributes.</param>
         /// <param name="quantity">The number of items sold. Only required if uploading with item
         /// attributes.</param>
+        /// <param name="adPersonalizationConsent">The consent status for ad personalization.
+        /// </param>
+        /// <param name="adUserDataConsent">The consent status for ad user data.</param>
         public void Run(GoogleAdsClient client, long customerId, long conversionActionId,
             OfflineUserDataJobType offlineUserDataJobType, long? externalId,
             string advertiserUploadDateTime, string bridgeMapVersionId, long? partnerId,
             string customKey, string itemId, long? merchantCenterAccountId, string countryCode,
-            string languageCode, long quantity)
+            string languageCode, long quantity, ConsentStatus? adPersonalizationConsent,
+            ConsentStatus? adUserDataConsent)
         {
             // Get the OfflineUserDataJobServiceClient.
             OfflineUserDataJobServiceClient offlineUserDataJobServiceClient =
-                client.GetService(Services.V14.OfflineUserDataJobService);
+                client.GetService(Services.V15.OfflineUserDataJobService);
 
             // Ensure that a valid job type is provided.
             if (offlineUserDataJobType != OfflineUserDataJobType.StoreSalesUploadFirstParty &
@@ -265,7 +285,8 @@ namespace Google.Ads.GoogleAds.Examples.V14
                 // Adds transactions to the job.
                 AddTransactionsToOfflineUserDataJob(offlineUserDataJobServiceClient, customerId,
                     offlineUserDataJobResourceName, conversionActionId, customKey, itemId,
-                    merchantCenterAccountId, countryCode, languageCode, quantity);
+                    merchantCenterAccountId, countryCode, languageCode, quantity,
+                    adPersonalizationConsent, adUserDataConsent);
 
                 // Issues an asynchronous request to run the offline user data job.
                 offlineUserDataJobServiceClient.RunOfflineUserDataJobAsync(
@@ -436,16 +457,21 @@ namespace Google.Ads.GoogleAds.Examples.V14
         /// item attributes.</param>
         /// <param name="quantity">The number of items sold, or null if not uploading with
         /// item attributes.</param>
+        /// <param name="adPersonalizationConsent">The consent status for ad personalization.
+        /// </param>
+        /// <param name="adUserDataConsent">The consent status for ad user data.</param>
         private void AddTransactionsToOfflineUserDataJob(
             OfflineUserDataJobServiceClient offlineUserDataJobServiceClient, long customerId,
             string offlineUserDataJobResourceName, long conversionActionId, string customKey,
             string itemId, long? merchantCenterAccountId, string countryCode, string languageCode,
-            long quantity)
+            long quantity, ConsentStatus? adPersonalizationConsent,
+            ConsentStatus? adUserDataConsent)
         {
             // Constructions an operation for each transaction.
             List<OfflineUserDataJobOperation> userDataJobOperations =
                 BuildOfflineUserDataJobOperations(customerId, conversionActionId, customKey, itemId,
-                    merchantCenterAccountId, countryCode, languageCode, quantity);
+                    merchantCenterAccountId, countryCode, languageCode, quantity,
+                    adPersonalizationConsent, adUserDataConsent);
 
             // [START enable_warnings_1]
             // Constructs a request with partial failure enabled to add the operations to the
@@ -510,10 +536,14 @@ namespace Google.Ads.GoogleAds.Examples.V14
         /// item attributes.</param>
         /// <param name="quantity">The number of items sold, or null if not uploading with
         /// item attributes.</param>
+        /// <param name="adPersonalizationConsent">The consent status for ad personalization.
+        /// </param>
+        /// <param name="adUserDataConsent">The consent status for ad user data.</param>
         /// <returns>A list of operations.</returns>
         private List<OfflineUserDataJobOperation> BuildOfflineUserDataJobOperations(long customerId,
             long conversionActionId, string customKey, string itemId, long? merchantCenterAccountId,
-            string countryCode, string languageCode, long quantity)
+            string countryCode, string languageCode, long quantity,
+            ConsentStatus? adPersonalizationConsent, ConsentStatus? adUserDataConsent)
         {
             // Create the first transaction for upload based on an email address and state.
             UserData userDataWithEmailAddress = new UserData()
@@ -557,6 +587,25 @@ namespace Google.Ads.GoogleAds.Examples.V14
             if (!string.IsNullOrEmpty(customKey))
             {
                 userDataWithEmailAddress.TransactionAttribute.CustomValue = CUSTOM_VALUE;
+            }
+
+            if (adUserDataConsent != null || adPersonalizationConsent != null)
+            {
+                // Specifies whether user consent was obtained for the data you are uploading. See
+                // https://www.google.com/about/company/user-consent-policy
+                // for details.
+                userDataWithEmailAddress.Consent = new Consent();
+
+                if (adPersonalizationConsent != null)
+                {
+                    userDataWithEmailAddress.Consent.AdPersonalization =
+                        (ConsentStatus)adPersonalizationConsent;
+                }
+
+                if (adUserDataConsent != null)
+                {
+                    userDataWithEmailAddress.Consent.AdUserData = (ConsentStatus)adUserDataConsent;
+                }
             }
 
             // Creates the second transaction for upload based on a physical address.
@@ -605,6 +654,16 @@ namespace Google.Ads.GoogleAds.Examples.V14
                     Quantity = quantity
                 };
             }
+
+            // Specifies whether user consent was obtained for the data you are uploading. See
+            // https://www.google.com/about/company/user-consent-policy
+            // for details.
+            userDataWithPhysicalAddress.Consent = new Consent()
+            {
+                AdPersonalization = ConsentStatus.Granted,
+                AdUserData = ConsentStatus.Denied
+            };
+
 
             // Creates the operations to add the two transactions.
             List<OfflineUserDataJobOperation> operations = new List<OfflineUserDataJobOperation>()
@@ -667,7 +726,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
             string offlineUserDataJobResourceName)
         {
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V14.GoogleAdsService);
+                client.GetService(Services.V15.GoogleAdsService);
 
             string query = $@"SELECT offline_user_data_job.resource_name,
                     offline_user_data_job.id,

@@ -15,14 +15,14 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V14.Enums;
-using Google.Ads.GoogleAds.V14.Errors;
-using Google.Ads.GoogleAds.V14.Resources;
-using Google.Ads.GoogleAds.V14.Services;
+using Google.Ads.GoogleAds.V15.Enums;
+using Google.Ads.GoogleAds.V15.Errors;
+using Google.Ads.GoogleAds.V15.Resources;
+using Google.Ads.GoogleAds.V15.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V14
+namespace Google.Ads.GoogleAds.Examples.V15
 {
     /// <summary>
     /// This code example illustrates how to create ad groups. To create campaigns, run
@@ -86,7 +86,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
         public void Run(GoogleAdsClient client, long customerId, long campaignId)
         {
             // Get the AdGroupService.
-            AdGroupServiceClient adGroupService = client.GetService(Services.V14.AdGroupService);
+            AdGroupServiceClient adGroupService = client.GetService(Services.V15.AdGroupService);
 
             List<AdGroupOperation> operations = new List<AdGroupOperation>();
 

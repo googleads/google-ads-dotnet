@@ -17,21 +17,21 @@ using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V14.Common;
-using Google.Ads.GoogleAds.V14.Errors;
-using Google.Ads.GoogleAds.V14.Resources;
-using Google.Ads.GoogleAds.V14.Services;
+using Google.Ads.GoogleAds.V15.Common;
+using Google.Ads.GoogleAds.V15.Errors;
+using Google.Ads.GoogleAds.V15.Resources;
+using Google.Ads.GoogleAds.V15.Services;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
 using System.Threading;
-using static Google.Ads.GoogleAds.V14.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.AssetFieldTypeEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.AssetGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.AssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.AssetGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.CampaignStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V14
+namespace Google.Ads.GoogleAds.Examples.V15
 {
     /// <summary>
     /// This example shows how to create a Performance Max campaign.
@@ -141,7 +141,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
             {
                 // [START add_performance_max_campaign_1]
                 GoogleAdsServiceClient googleAdsServiceClient =
-                    client.GetService(Services.V14.GoogleAdsService);
+                    client.GetService(Services.V15.GoogleAdsService);
 
                 // Performance Max campaigns require that repeated assets such as headlines and
                 // descriptions be created before the campaign.
@@ -320,7 +320,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
                         // Bidding strategy must be set directly on the campaign. Setting a
                         // portfolio bidding strategy by resource name is not supported. Max
                         // Conversion and Maximize Conversion Value are the only strategies
-                        // supported for Performance Max campaigns. BiddingStrategyTYpe is
+                        // supported for Performance Max campaigns. BiddingStrategyType is
                         // read-only and cannot be set by the API. An optional ROAS (Return on
                         // Advertising Spend) can be set to enable the MaximizeConversionValue
                         // bidding strategy. The ROAS value must be specified as a ratio in the API.
@@ -465,7 +465,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V14.GoogleAdsService);
+                client.GetService(Services.V15.GoogleAdsService);
 
             MutateGoogleAdsRequest request = new MutateGoogleAdsRequest()
             {

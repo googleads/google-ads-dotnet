@@ -15,30 +15,29 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
+using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V14.Common;
-using Google.Ads.GoogleAds.V14.Errors;
-using Google.Ads.GoogleAds.V14.Resources;
-using Google.Ads.GoogleAds.V14.Services;
+using Google.Ads.GoogleAds.V15.Common;
+using Google.Ads.GoogleAds.V15.Errors;
+using Google.Ads.GoogleAds.V15.Resources;
+using Google.Ads.GoogleAds.V15.Services;
 using Google.Api.Gax;
 using Google.Protobuf;
-using System.Collections.Generic;
 using System;
-using System.Linq;
+using System.Collections.Generic;
 using System.Threading;
-using static Google.Ads.GoogleAds.V14.Enums.ConversionActionCategoryEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.ConversionOriginEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.AssetFieldTypeEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.AssetGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.ListingGroupFilterTypeEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.ListingGroupFilterVerticalEnum.Types;
-using static Google.Ads.GoogleAds.V14.Resources.Campaign.Types;
-using Google.Ads.GoogleAds.Config;
+using static Google.Ads.GoogleAds.V15.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.AssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.AssetGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.ConversionActionCategoryEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.ConversionOriginEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.ListingGroupFilterListingSourceEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.ListingGroupFilterTypeEnum.Types;
+using static Google.Ads.GoogleAds.V15.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V14
+namespace Google.Ads.GoogleAds.Examples.V15
 {
     /// <summary>
     /// This example shows how to create a Performance Max retail campaign.
@@ -85,13 +84,6 @@ namespace Google.Ads.GoogleAds.Examples.V14
             public long MerchantCenterAccountId { get; set; }
 
             /// <summary>
-            /// The sales country of products to include in the campaign.
-            /// </summary>
-            [Option("salesCountry", Required = true, HelpText =
-                "The sales country.")]
-            public string SalesCountry { get; set; }
-
-            /// <summary>
             /// The final url for the generated ads. Must have the same domain as the Merchant
             /// Center account.
             /// </summary>
@@ -115,7 +107,6 @@ namespace Google.Ads.GoogleAds.Examples.V14
                 new GoogleAdsClient(),
                 options.CustomerId,
                 options.MerchantCenterAccountId,
-                options.SalesCountry,
                 options.FinalUrl
             );
         }
@@ -165,20 +156,18 @@ namespace Google.Ads.GoogleAds.Examples.V14
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID.</param>
         /// <param name="merchantCenterAccountId">The Merchant Center account ID.</param>
-        /// <param name="salesCountry">The sales country.</param>
         /// <param name="finalUrl">The final URL.</param>
         public void Run(
                 GoogleAdsClient client,
                 long customerId,
                 long merchantCenterAccountId,
-                string salesCountry,
                 string finalUrl)
         {
             try
             {
                 // [START add_performance_max_retail_campaign_1]
                 GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V14.GoogleAdsService);
+                client.GetService(Services.V15.GoogleAdsService);
 
                 // This campaign will override the customer conversion goals.
                 // Retrieve the current list of customer conversion goals.
@@ -242,8 +231,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
                     CreatePerformanceMaxCampaignOperation(
                             tempResourceNameCampaign,
                             tempResourceNameCampaignBudget,
-                            merchantCenterAccountId,
-                            salesCountry
+                            merchantCenterAccountId
                         );
 
                 List<MutateOperation> campaignCriterionOperations =
@@ -354,13 +342,11 @@ namespace Google.Ads.GoogleAds.Examples.V14
         /// <param name="campaignResourceName">The campaign resource name.</param>
         /// <param name="campaignBudgetResourceName">The campaign budget resource name.</param>
         /// <param name="merchantCenterAccountId">The Merchant Center account ID.</param>
-        /// <param name="salesCountry">The sales country.</param>
         /// <returns>A MutateOperations that will create this new campaign.</returns>
         private MutateOperation CreatePerformanceMaxCampaignOperation(
             string campaignResourceName,
             string campaignBudgetResourceName,
-            long merchantCenterAccountId,
-            string salesCountry)
+            long merchantCenterAccountId)
         {
             MutateOperation operation = new MutateOperation()
             {
@@ -400,7 +386,11 @@ namespace Google.Ads.GoogleAds.Examples.V14
                         ShoppingSetting = new ShoppingSetting()
                         {
                             MerchantId = merchantCenterAccountId,
-                            SalesCountry = salesCountry
+                            // Optional: To use products only from a specific feed, set FeedLabel
+                            // to the feed label used in Merchant Center.
+                            // See: https://support.google.com/merchants/answer/12453549.
+                            // Omitting the FeedLabel field will use products from all feeds.
+                            // FeedLabel = "INSERT_FEED_LABEL_HERE"
                         },
 
                         // Set the Final URL expansion opt out. This flag is specific to
@@ -538,7 +528,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V14.GoogleAdsService);
+                client.GetService(Services.V15.GoogleAdsService);
 
             MutateGoogleAdsRequest request = new MutateGoogleAdsRequest()
             {
@@ -789,19 +779,19 @@ namespace Google.Ads.GoogleAds.Examples.V14
         private MutateOperation CreateTextAssetOperation(
             string assetResourceName,
             string text) => new MutateOperation()
-        {
-            AssetOperation = new AssetOperation()
             {
-                Create = new Asset()
+                AssetOperation = new AssetOperation()
                 {
-                    ResourceName = assetResourceName,
-                    TextAsset = new TextAsset()
+                    Create = new Asset()
                     {
-                        Text = text
+                        ResourceName = assetResourceName,
+                        TextAsset = new TextAsset()
+                        {
+                            Text = text
+                        }
                     }
                 }
-            }
-        };
+            };
 
         // [END add_performance_max_retail_campaign_7]
 
@@ -820,26 +810,26 @@ namespace Google.Ads.GoogleAds.Examples.V14
             string url,
             string assetName,
             GoogleAdsConfig config) => new MutateOperation()
-        {
-            AssetOperation = new AssetOperation()
             {
-                Create = new Asset()
+                AssetOperation = new AssetOperation()
                 {
-                    ResourceName = assetResourceName,
-                    ImageAsset = new ImageAsset()
+                    Create = new Asset()
                     {
-                        Data =
+                        ResourceName = assetResourceName,
+                        ImageAsset = new ImageAsset()
+                        {
+                            Data =
                             ByteString.CopyFrom(
                                 MediaUtilities.GetAssetDataFromUrl(url, config)
                             )
-                    },
-                    // Provide a unique friendly name to identify your asset.
-                    // When there is an existing image asset with the same content but a
-                    // different name, the new name will be dropped silently.
-                    Name = assetName
+                        },
+                        // Provide a unique friendly name to identify your asset.
+                        // When there is an existing image asset with the same content but a
+                        // different name, the new name will be dropped silently.
+                        Name = assetName
+                    }
                 }
-            }
-        };
+            };
 
         // [END add_performance_max_retail_campaign_8]
 
@@ -857,17 +847,17 @@ namespace Google.Ads.GoogleAds.Examples.V14
             AssetFieldType fieldType,
             string assetGroupResourceName,
             string assetResourceName) => new MutateOperation()
-        {
-            AssetGroupAssetOperation = new AssetGroupAssetOperation()
             {
-                Create = new AssetGroupAsset()
+                AssetGroupAssetOperation = new AssetGroupAssetOperation()
                 {
-                    FieldType = fieldType,
-                    AssetGroup = assetGroupResourceName,
-                    Asset = assetResourceName
+                    Create = new AssetGroupAsset()
+                    {
+                        FieldType = fieldType,
+                        AssetGroup = assetGroupResourceName,
+                        Asset = assetResourceName
+                    }
                 }
-            }
-        };
+            };
 
         // [END add_performance_max_retail_campaign_9]
 
@@ -884,7 +874,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V14.GoogleAdsService);
+                client.GetService(Services.V15.GoogleAdsService);
 
             List<CustomerConversionGoal> conversionGoals = new List<CustomerConversionGoal>();
 
@@ -977,7 +967,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
         private List<MutateOperation> CreateAssetGroupListingGroupOperations(
             string assetGroupResourceName)
         {
-            List<MutateOperation> operations =  new List<MutateOperation>();
+            List<MutateOperation> operations = new List<MutateOperation>();
 
             // Creates a new ad group criterion containing the "default" listing group (All
             // products).
@@ -993,8 +983,8 @@ namespace Google.Ads.GoogleAds.Examples.V14
                 Type = ListingGroupFilterType.UnitIncluded,
 
                 // Because this is a Performance Max campaign for retail, we need to specify that
-                // this is in the shopping vertical.
-                Vertical = ListingGroupFilterVertical.Shopping
+                // this is in the shopping listing source.
+                ListingSource = ListingGroupFilterListingSource.Shopping
             };
 
             AssetGroupListingGroupFilterOperation operation =
@@ -1004,13 +994,15 @@ namespace Google.Ads.GoogleAds.Examples.V14
                 };
 
             operations.Add(
-                new MutateOperation() {
+                new MutateOperation()
+                {
                     AssetGroupListingGroupFilterOperation = operation
                 }
             );
 
             return operations;
         }
+
         // [END add_performance_max_retail_campaign_11]
 
         /// <summary>

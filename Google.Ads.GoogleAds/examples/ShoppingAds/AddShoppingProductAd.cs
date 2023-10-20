@@ -15,23 +15,23 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V14.Common;
-using Google.Ads.GoogleAds.V14.Errors;
-using Google.Ads.GoogleAds.V14.Resources;
-using Google.Ads.GoogleAds.V14.Services;
+using Google.Ads.GoogleAds.V15.Common;
+using Google.Ads.GoogleAds.V15.Errors;
+using Google.Ads.GoogleAds.V15.Resources;
+using Google.Ads.GoogleAds.V15.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V14.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.ListingGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V14.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V15.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.ListingGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V15.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V14
+namespace Google.Ads.GoogleAds.Examples.V15
 {
     /// <summary>
     /// This code example creates a standard shopping campaign, a shopping product ad group and a
@@ -163,7 +163,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
         {
             // Get the CampaignBudgetService.
             CampaignBudgetServiceClient campaignBudgetService =
-                client.GetService(Services.V14.CampaignBudgetService);
+                client.GetService(Services.V15.CampaignBudgetService);
 
             CampaignBudget budget = new CampaignBudget()
             {
@@ -202,14 +202,11 @@ namespace Google.Ads.GoogleAds.Examples.V14
         {
             // Get the CampaignService.
             CampaignServiceClient campaignService =
-                client.GetService(Services.V14.CampaignService);
+                client.GetService(Services.V15.CampaignService);
 
             // Configures the shopping settings.
             ShoppingSetting shoppingSetting = new ShoppingSetting()
             {
-                // Sets the sales country of products to include in the campaign.
-                SalesCountry = "US",
-
                 // Sets the priority of the campaign. Higher numbers take priority over lower
                 // numbers. For Shopping Product Ad campaigns, allowed values are between 0 and 2,
                 // inclusive.
@@ -282,7 +279,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
                     string campaignResourceName)
         {
             // Get the AdGroupService.
-            AdGroupServiceClient adGroupService = client.GetService(Services.V14.AdGroupService);
+            AdGroupServiceClient adGroupService = client.GetService(Services.V15.AdGroupService);
 
             // Creates an ad group.
             AdGroup adGroup = new AdGroup()
@@ -329,7 +326,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
         {
             // Get the AdGroupAdService.
             AdGroupAdServiceClient adGroupAdService = client.GetService(
-                Services.V14.AdGroupAdService);
+                Services.V15.AdGroupAdService);
 
             // Creates a new shopping product ad.
             Ad ad = new Ad()
@@ -385,7 +382,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
         {
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService = client.GetService(
-                Services.V14.AdGroupCriterionService);
+                Services.V15.AdGroupCriterionService);
 
             // Creates a new ad group criterion. This will contain the "default" listing group (All
             // products).

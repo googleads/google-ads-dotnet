@@ -15,20 +15,20 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V14.Common;
-using Google.Ads.GoogleAds.V14.Errors;
-using Google.Ads.GoogleAds.V14.Resources;
-using Google.Ads.GoogleAds.V14.Services;
+using Google.Ads.GoogleAds.V15.Common;
+using Google.Ads.GoogleAds.V15.Errors;
+using Google.Ads.GoogleAds.V15.Resources;
+using Google.Ads.GoogleAds.V15.Services;
 using System.Linq;
 using System;
-using static Google.Ads.GoogleAds.V14.Enums.AssetFieldTypeEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.CallConversionReportingStateEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.MinuteOfHourEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.AssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.CallConversionReportingStateEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.MinuteOfHourEnum.Types;
 
 using SystemDayOfWeek = System.DayOfWeek;
-using DayOfWeek = Google.Ads.GoogleAds.V14.Enums.DayOfWeekEnum.Types.DayOfWeek;
+using DayOfWeek = Google.Ads.GoogleAds.V15.Enums.DayOfWeekEnum.Types.DayOfWeek;
 
-namespace Google.Ads.GoogleAds.Examples.V14
+namespace Google.Ads.GoogleAds.Examples.V15
 {
     /// <summary>
     /// This example adds a call extension to a specific account.
@@ -202,7 +202,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
             };
 
             AssetServiceClient assetServiceClient =
-                client.GetService(Services.V14.AssetService);
+                client.GetService(Services.V15.AssetService);
 
             // Issues a mutate request to add the asset and prints its information.
             MutateAssetsResponse response = assetServiceClient.MutateAssets(
@@ -241,7 +241,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
             };
 
             CustomerAssetServiceClient customerAssetServiceClient =
-                client.GetService(Services.V14.CustomerAssetService);
+                client.GetService(Services.V15.CustomerAssetService);
 
             // Issues a mutate request to add the customer asset and prints its information.
             MutateCustomerAssetsResponse response = customerAssetServiceClient.MutateCustomerAssets(

@@ -15,17 +15,17 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V14.Common;
-using Google.Ads.GoogleAds.V14.Enums;
-using Google.Ads.GoogleAds.V14.Errors;
-using Google.Ads.GoogleAds.V14.Resources;
-using Google.Ads.GoogleAds.V14.Services;
+using Google.Ads.GoogleAds.V15.Common;
+using Google.Ads.GoogleAds.V15.Enums;
+using Google.Ads.GoogleAds.V15.Errors;
+using Google.Ads.GoogleAds.V15.Resources;
+using Google.Ads.GoogleAds.V15.Services;
 using Google.Protobuf.Collections;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Google.Ads.GoogleAds.Examples.V14
+namespace Google.Ads.GoogleAds.Examples.V15
 {
     /// <summary>
     /// This code example retrieves the full details of a Promotion Feed-based extension and
@@ -91,7 +91,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
         {
             // Get the GoogleAdsService client.
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V14.GoogleAdsService);
+                client.GetService(Services.V15.GoogleAdsService);
 
             string extensionFeedItemResourceName =
                 ResourceNames.ExtensionFeedItem(customerId, feedItemId);
@@ -324,7 +324,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
             ExtensionFeedItem extensionFeedItem)
         {
             // Get the Asset Service client.
-            AssetServiceClient assetServiceClient = client.GetService(Services.V14.AssetService);
+            AssetServiceClient assetServiceClient = client.GetService(Services.V15.AssetService);
 
             PromotionFeedItem promotionFeedItem = extensionFeedItem.PromotionFeedItem;
 
@@ -427,7 +427,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
                 return;
             }
 
-            CampaignAssetServiceClient campaignAssetServiceClient = client.GetService(Services.V14
+            CampaignAssetServiceClient campaignAssetServiceClient = client.GetService(Services.V15
                 .CampaignAssetService);
 
             List<CampaignAssetOperation> operations = new List<CampaignAssetOperation>();
@@ -474,7 +474,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
                 return;
             }
 
-            AdGroupAssetServiceClient adGroupAssetServiceClient = client.GetService(Services.V14
+            AdGroupAssetServiceClient adGroupAssetServiceClient = client.GetService(Services.V15
                 .AdGroupAssetService);
 
             List<AdGroupAssetOperation> operations = new List<AdGroupAssetOperation>();

@@ -82,5 +82,17 @@ namespace Google.Ads.GoogleAds.Lib
         /// </summary>
         internal const string FeedPlaceholderEmailAddress =
             "feed.places_location_feed_data.email_address";
+
+        /// <summary>
+        /// The metadata key name for the Local services lead contact details.
+        /// </summary>
+        internal const string LocalServicesLeadContactDetails =
+            "local_services_lead.contact_details";
+
+        /// <summary>
+        /// The metadata key name for the Local services lead conversation message details text.
+        /// </summary>
+        internal const string LocalServicesLeadConversationMessageDetailText =
+            "local_services_lead_conversation.message_details.text";
     }
 }

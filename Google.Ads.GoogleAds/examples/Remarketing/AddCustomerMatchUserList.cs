@@ -15,10 +15,10 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V14.Common;
-using Google.Ads.GoogleAds.V14.Errors;
-using Google.Ads.GoogleAds.V14.Resources;
-using Google.Ads.GoogleAds.V14.Services;
+using Google.Ads.GoogleAds.V15.Common;
+using Google.Ads.GoogleAds.V15.Errors;
+using Google.Ads.GoogleAds.V15.Resources;
+using Google.Ads.GoogleAds.V15.Services;
 using Google.LongRunning;
 using Google.Protobuf.WellKnownTypes;
 using System;
@@ -26,11 +26,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using static Google.Ads.GoogleAds.V14.Enums.CustomerMatchUploadKeyTypeEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.OfflineUserDataJobStatusEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.OfflineUserDataJobTypeEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.ConsentStatusEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.CustomerMatchUploadKeyTypeEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.OfflineUserDataJobStatusEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.OfflineUserDataJobTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V14
+namespace Google.Ads.GoogleAds.Examples.V15
 {
     /// <summary>
     /// Creates operations to add members to a user list (a.k.a. audience) using an
@@ -90,6 +91,20 @@ namespace Google.Ads.GoogleAds.Examples.V14
                 "The ID of an existing OfflineUserDataJob in the PENDING state. If not specified," +
                 "this example will create a new job.")]
             public long? OfflineUserDataJobId { get; set; }
+
+            /// <summary>
+            ///  The consent status for ad personalization.
+            /// </summary>
+            [Option("adPersonalizationConsent", Required = false, HelpText =
+                "The consent status for ad user data.")]
+            public ConsentStatus? AdPersonalizationConsent { get; set; }
+
+            /// <summary>
+            ///  The consent status for ad user data.
+            /// </summary>
+            [Option("adUserDataConsent", Required = false, HelpText =
+                "The consent status for ad user data.")]
+            public ConsentStatus? AdUserDataConsent { get; set; }
         }
 
         /// <summary>
@@ -103,7 +118,8 @@ namespace Google.Ads.GoogleAds.Examples.V14
             AddCustomerMatchUserList codeExample = new AddCustomerMatchUserList();
             Console.WriteLine(codeExample.Description);
             codeExample.Run(new GoogleAdsClient(), options.CustomerId,
-                options.RunJob, options.UserListId, options.OfflineUserDataJobId);
+                options.RunJob, options.UserListId, options.OfflineUserDataJobId,
+                options.AdPersonalizationConsent, options.AdUserDataConsent);
         }
 
         private static SHA256 digest = SHA256.Create();
@@ -128,8 +144,13 @@ namespace Google.Ads.GoogleAds.Examples.V14
         /// </param>
         /// <param name="userListId">The ID of an existing user list.</param>
         /// <param name="offlineUserDataJobId">The ID of an existing OfflineUserDataJob.</param>
+        /// <param name="adPersonalizationConsent">The consent status for ad personalization for all
+        /// members in the job.</param>
+        /// <param name="adUserDataConsent">The consent status for ad user data for all members in
+        /// the job.</param>
         public void Run(GoogleAdsClient client, long customerId, bool runJob,
-            long? userListId, long? offlineUserDataJobId)
+            long? userListId, long? offlineUserDataJobId, ConsentStatus? adPersonalizationConsent,
+            ConsentStatus? adUserDataConsent)
         {
             try
             {
@@ -147,7 +168,8 @@ namespace Google.Ads.GoogleAds.Examples.V14
                 }
 
                 string offlineUserDataJobResourceName = AddUsersToCustomerMatchUserList(
-                    client, customerId, userListResourceName, runJob, offlineUserDataJobId);
+                    client, customerId, userListResourceName, runJob, offlineUserDataJobId,
+                    adPersonalizationConsent, adUserDataConsent);
 
                 // Since offline user data jobs may take 24 hours or more to complete, you may need
                 // to call this function periodically until the job completes.
@@ -178,7 +200,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
         private string CreateCustomerMatchUserList(GoogleAdsClient client, long customerId)
         {
             // Get the UserListService.
-            UserListServiceClient service = client.GetService(Services.V14.UserListService);
+            UserListServiceClient service = client.GetService(Services.V15.UserListService);
 
             // Creates the user list.
             UserList userList = new UserList()
@@ -222,15 +244,20 @@ namespace Google.Ads.GoogleAds.Examples.V14
         /// <param name="runJob">If true, runs the offlineUserDataJob after adding operations.
         /// </param>
         /// <param name="offlineUserDataJobId">The ID of an existing OfflineUserDataJob.</param>
-        /// <remarks>Resource of the offline user data job.</remarks>
+        /// <param name="adPersonalizationConsent">The for ad personalization for all members in
+        /// the job. Only used if offlineUserDataJobId is null.</param>
+        /// <param name="adUserDataConsent">The consent status for ad user data for all members in
+        /// the job. Only used if offlineUserDataJobId is null.</param>
+        /// <returns>Resource of the offline user data job.</returns>
         // [START add_customer_match_user_list]
         private static string AddUsersToCustomerMatchUserList(GoogleAdsClient client,
             long customerId, string userListResourceName, bool runJob,
-            long? offlineUserDataJobId)
+            long? offlineUserDataJobId, ConsentStatus? adPersonalizationConsent,
+            ConsentStatus? adUserDataConsent)
         {
             // Get the OfflineUserDataJobService.
             OfflineUserDataJobServiceClient service = client.GetService(
-                Services.V14.OfflineUserDataJobService);
+                Services.V15.OfflineUserDataJobService);
 
             string offlineUserDataJobResourceName;
             if (offlineUserDataJobId == null)
@@ -241,9 +268,29 @@ namespace Google.Ads.GoogleAds.Examples.V14
                     Type = OfflineUserDataJobType.CustomerMatchUserList,
                     CustomerMatchUserListMetadata = new CustomerMatchUserListMetadata()
                     {
-                        UserList = userListResourceName
+                        UserList = userListResourceName,
                     }
                 };
+
+                if (adUserDataConsent != null || adPersonalizationConsent != null)
+                {
+                    // Specifies whether user consent was obtained for the data you are uploading.
+                    // See https://www.google.com/about/company/user-consent-policy
+                    // for details.
+                    offlineUserDataJob.CustomerMatchUserListMetadata.Consent = new Consent();
+
+                    if (adPersonalizationConsent != null)
+                    {
+                        offlineUserDataJob.CustomerMatchUserListMetadata.Consent.AdPersonalization =
+                            (ConsentStatus)adPersonalizationConsent;
+                    }
+
+                    if (adUserDataConsent != null)
+                    {
+                        offlineUserDataJob.CustomerMatchUserListMetadata.Consent.AdUserData =
+                            (ConsentStatus)adUserDataConsent;
+                    }
+                }
 
                 // Issues a request to create the offline user data job.
                 CreateOfflineUserDataJobResponse response1 = service.CreateOfflineUserDataJob(
@@ -326,7 +373,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
             string offlineUserDataJobResourceName)
         {
             // Get the GoogleAdsService.
-            GoogleAdsServiceClient service = client.GetService(Services.V14.GoogleAdsService);
+            GoogleAdsServiceClient service = client.GetService(Services.V15.GoogleAdsService);
 
             string query = "SELECT offline_user_data_job.resource_name, " +
                 "offline_user_data_job.id, offline_user_data_job.status, " +
@@ -531,7 +578,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
             // [START add_customer_match_user_list_5]
             // Get the GoogleAdsService.
             GoogleAdsServiceClient service =
-                client.GetService(Services.V14.GoogleAdsService);
+                client.GetService(Services.V15.GoogleAdsService);
 
             // Creates a query that retrieves the user list.
             string query =
