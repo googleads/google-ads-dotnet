@@ -12,20 +12,44 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using Google.Ads.Gax.Config;
 using Google.Ads.Gax.Lib;
 using Google.Ads.GoogleAds.Config;
 using Google.Api.Gax.Grpc;
 using Grpc.Core.Interceptors;
-using System;
 using System.Collections.Generic;
 
 namespace Google.Ads.GoogleAds.Lib
 {
     /// <summary>
+    /// The Google Ads Client interface to allow for DI container configuration.
+    /// </summary>
+    public interface IGoogleAdsClient
+    {
+        /// <summary>
+        /// <para>Gets an instance of the specified service. Use this method with a predefined
+        /// list of templates available for each supported version. E.g.</para>
+        /// <para>
+        /// // Gets an instance of V10.GoogleAdsServiceClient<br/>
+        /// GoogleAdsServiceClient googleAdsService = client.GetService(Services.V10.GoogleAdsService);
+        /// </para>
+        /// </summary>
+        /// <param name="serviceTemplate"><para>The template that corresponds to the service to
+        /// be created. Predefined service templates are available for each supported version, as
+        /// a nested class within the <code>Services</code> class.</para>
+        /// <para>E.g. <code>Services.V10</code> class contains predefined templates for v10 of
+        /// the Google Ads API.</para>
+        /// </param>
+        /// <returns>A service instance.</returns>
+        TService GetService<TService, TServiceSetting>(
+            ServiceTemplate<TService, TServiceSetting, GoogleAdsConfig> serviceTemplate)
+                where TServiceSetting : ServiceSettingsBase, new()
+                where TService : GoogleAdsServiceClientBase;
+    }
+
+    /// <summary>
     /// A client for creating Google Ads API services.
     /// </summary>
-    public class GoogleAdsClient : AdsClient<GoogleAdsConfig>
+    public class GoogleAdsClient : AdsClient<GoogleAdsConfig>, IGoogleAdsClient
     {
 
         private List<Interceptor> userInterceptors = new List<Interceptor>();
@@ -42,7 +66,7 @@ namespace Google.Ads.GoogleAds.Lib
         /// Initializes a new instance of the <see cref="GoogleAdsClient"/> class.
         /// </summary>
         /// <param name="config">The client configuration.</param>
-        public GoogleAdsClient(GoogleAdsConfig config) : base(config) { }
+        public GoogleAdsClient(IGoogleAdsConfig config) : base((GoogleAdsConfig)config) { }
 
         /// <summary>
         /// Adds a custom gRPC <see cref="Interceptor"/>.
