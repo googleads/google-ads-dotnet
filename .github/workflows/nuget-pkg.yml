@@ -21,8 +21,4 @@ jobs:
       run: dotnet pack -c Release -p:PackagePath=Google.Ads.GoogleAds.Extensions.DependencyInjection
 
     - name: Publish NuGet package
-      uses: nuget/publish@1.0.0
-      with:
-        nuget-api-key: ${{ secrets.NUGET_API_KEY }}
-        nuget-package: '**/*.nupkg'
-        nuget-source: 'https://nuget.nwcloudsolutions.com/v3/index.json'
+      run: dotnet nuget push -s https://nuget.nwcloudsolutions.com/v3/index.json -k ${{ secrets.NUGET_API_KEY }} **/*.nupkg
