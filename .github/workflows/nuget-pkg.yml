@@ -1,0 +1,28 @@
+name: Build and Publish NuGet Package
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '6.0'
+
+    - name: Build and pack
+      run: dotnet pack -c Release -p:PackagePath=Google.Ads.GoogleAds.Extensions.DependencyInjection
+
+    - name: Publish NuGet package
+      uses: nuget/publish@1.0.0
+      with:
+        nuget-api-key: ${{ secrets.NUGET_API_KEY }}
+        nuget-package: '**/*.nupkg'
+        nuget-source: 'https://nuget.nwcloudsolutions.com/v3/index.json'
