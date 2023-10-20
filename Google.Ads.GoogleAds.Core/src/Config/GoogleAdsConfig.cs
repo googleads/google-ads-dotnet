@@ -18,9 +18,14 @@ using System.Collections.Generic;
 namespace Google.Ads.GoogleAds.Config
 {
     /// <summary>
+    /// The Google Ads Config interface to allow for DI container configuration.
+    /// </summary>
+    public interface IGoogleAdsConfig { }
+
+    /// <summary>
     /// This class reads the configuration keys from App.config.
     /// </summary>
-    public class GoogleAdsConfig : AdsConfig
+    public class GoogleAdsConfig : AdsConfig, IGoogleAdsConfig
     {
         /// <summary>
         /// The Google Ads API server URL.
