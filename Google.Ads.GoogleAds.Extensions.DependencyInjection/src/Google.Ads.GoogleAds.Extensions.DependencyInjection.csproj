@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Google.Ads.GoogleAds.Core\src\Google.Ads.GoogleAds.Core.csproj" />
+    <ProjectReference Include="..\..\Google.Ads.GoogleAds\src\Google.Ads.GoogleAds.csproj" />
   </ItemGroup>
 
 </Project>
