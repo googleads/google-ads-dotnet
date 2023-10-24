@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V14.Common;
-using Google.Ads.GoogleAds.V14.Errors;
-using Google.Ads.GoogleAds.V14.Resources;
-using Google.Ads.GoogleAds.V14.Services;
+using Google.Ads.GoogleAds.V15.Common;
+using Google.Ads.GoogleAds.V15.Errors;
+using Google.Ads.GoogleAds.V15.Resources;
+using Google.Ads.GoogleAds.V15.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V14.Enums.AssetSetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.AssetSetTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V14
+namespace Google.Ads.GoogleAds.Examples.V15
 {
     /// <summary>
     /// This code example adds an asset for use in dynamic remarketing and links it to a campaign.
@@ -113,7 +113,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
         /// <returns>The resource name of the newly created asset.</returns>
         private string CreateAsset(GoogleAdsClient client, long customerId)
         {
-            AssetServiceClient assetService = client.GetService(Services.V14.AssetService);
+            AssetServiceClient assetService = client.GetService(Services.V15.AssetService);
 
             // Creates a DynamicEducationAsset.
             // See https://support.google.com/google-ads/answer/6053288?#zippy=%2Ceducation for a
@@ -170,7 +170,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
         private string CreateAssetSet(GoogleAdsClient client, long customerId)
         {
             AssetSetServiceClient assetSetService = client.GetService(
-                Services.V14.AssetSetService);
+                Services.V15.AssetSetService);
 
             // Creates an AssetSet which will be used to link the dynamic remarketing assets
             // to a campaign.
@@ -207,7 +207,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
             string assetResourceName, string assetSetResourceName)
         {
             AssetSetAssetServiceClient assetSetAssetService = client.GetService(
-                Services.V14.AssetSetAssetService);
+                Services.V15.AssetSetAssetService);
 
             AssetSetAsset assetSetAsset = new AssetSetAsset()
             {
@@ -247,7 +247,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
             long campaignId, string assetSetResourceName)
         {
             CampaignAssetSetServiceClient campaignAssetSetService = client.GetService(
-                Services.V14.CampaignAssetSetService);
+                Services.V15.CampaignAssetSetService);
 
             // Creates a CampaignAssetSet representing the link between an AssetSet and a Campaign.
             CampaignAssetSet campaignAssetSet = new CampaignAssetSet()

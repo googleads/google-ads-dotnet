@@ -15,23 +15,23 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V14.Common;
-using Google.Ads.GoogleAds.V14.Errors;
-using Google.Ads.GoogleAds.V14.Resources;
-using Google.Ads.GoogleAds.V14.Services;
+using Google.Ads.GoogleAds.V15.Common;
+using Google.Ads.GoogleAds.V15.Errors;
+using Google.Ads.GoogleAds.V15.Resources;
+using Google.Ads.GoogleAds.V15.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V14.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.WebpageConditionOperandEnum.Types;
-using static Google.Ads.GoogleAds.V14.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V15.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.WebpageConditionOperandEnum.Types;
+using static Google.Ads.GoogleAds.V15.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V14
+namespace Google.Ads.GoogleAds.Examples.V15
 {
     /// <summary>
     /// This code example adds dynamic search ads to a given ad group. To list
@@ -107,7 +107,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
         {
             // Get the CampaignBudgetService.
             CampaignBudgetServiceClient campaignBudgetService =
-                client.GetService(Services.V14.CampaignBudgetService);
+                client.GetService(Services.V15.CampaignBudgetService);
 
             // Create the budget.
             CampaignBudget campaignBudget = new CampaignBudget()
@@ -146,7 +146,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
             string budgetResourceName)
         {
             // Get the CampaignService.
-            CampaignServiceClient campaignService = client.GetService(Services.V14.CampaignService);
+            CampaignServiceClient campaignService = client.GetService(Services.V15.CampaignService);
 
             // Create the campaign.
             Campaign campaign = new Campaign()
@@ -196,7 +196,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
             string campaignResourceName)
         {
             // Get the AdGroupService.
-            AdGroupServiceClient adGroupService = client.GetService(Services.V14.AdGroupService);
+            AdGroupServiceClient adGroupService = client.GetService(Services.V15.AdGroupService);
 
             // Create the ad group.
             AdGroup adGroup = new AdGroup()
@@ -238,7 +238,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
         {
             // Get the AdGroupAdService.
             AdGroupAdServiceClient adGroupAdService =
-                client.GetService(Services.V14.AdGroupAdService);
+                client.GetService(Services.V15.AdGroupAdService);
 
             // Create an ad group ad.
             AdGroupAd adGroupAd = new AdGroupAd()
@@ -282,7 +282,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
         {
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V14.AdGroupCriterionService);
+                client.GetService(Services.V15.AdGroupCriterionService);
 
             // Create the criterion.
             AdGroupCriterion adGroupCriterion = new AdGroupCriterion()

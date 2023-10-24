@@ -15,17 +15,17 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V14.Common;
-using Google.Ads.GoogleAds.V14.Errors;
-using Google.Ads.GoogleAds.V14.Resources;
-using Google.Ads.GoogleAds.V14.Services;
+using Google.Ads.GoogleAds.V15.Common;
+using Google.Ads.GoogleAds.V15.Errors;
+using Google.Ads.GoogleAds.V15.Resources;
+using Google.Ads.GoogleAds.V15.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V14.Enums.ExtensionTypeEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.AssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.ExtensionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.AssetFieldTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V14
+namespace Google.Ads.GoogleAds.Examples.V15
 {
     /// <summary>
     /// This example adds a hotel callout extension to a specific account, campaign within the
@@ -146,7 +146,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
 
             // Issues the create request to create the assets.
 
-            AssetServiceClient assetClient = client.GetService(Services.V14.AssetService);
+            AssetServiceClient assetClient = client.GetService(Services.V15.AssetService);
             MutateAssetsResponse response =
                 assetClient.MutateAssets(customerId.ToString(), operations);
             List<MutateAssetResult> results = response.Results.ToList();
@@ -192,7 +192,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
 
             // Issues the create request to add the callout.
             CustomerAssetServiceClient customerAssetServiceClient =
-                client.GetService(Services.V14.CustomerAssetService);
+                client.GetService(Services.V15.CustomerAssetService);
 
             MutateCustomerAssetsResponse response =
               customerAssetServiceClient.MutateCustomerAssets(customerId.ToString(),

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Title>Google Ads GAPIC Extensions Dotnet Client Library</Title>
     <PackageId>Google.Ads.Gax</PackageId>
-    <Version>3.0.1</Version>
+    <Version>3.1.0</Version>
     <Description>This library provides functionality that makes it easier to work with Generated
     API Client GAPIC client libraries for Google's Ads APIs.</Description>
     <PackageReleaseNotes>https://github.com/googleads/google-ads-dotnet/blob/main/ChangeLog</PackageReleaseNotes>
@@ -21,7 +21,7 @@
   </PropertyGroup>
   <!-- build properties -->
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.1;net472;net5.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1;net472;net5.0;net6.0</TargetFrameworks>
     <AssemblyName>Google.Ads.Gax</AssemblyName>
     <RootNamespace>Google.Ads.Gax</RootNamespace>
     <SignAssembly>true</SignAssembly>
@@ -31,8 +31,8 @@
     <IncludeSource>true</IncludeSource>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <AssemblyVersion>3.0.1</AssemblyVersion>
-    <FileVersion>3.0.1</FileVersion>
+    <AssemblyVersion>3.1.0</AssemblyVersion>
+    <FileVersion>3.1.0</FileVersion>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>

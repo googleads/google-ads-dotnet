@@ -72,6 +72,15 @@ namespace Google.Ads.GoogleAds.Config
             ConfigSettingNames.LINKED_CUSTOMER_ID, "");
 
         /// <summary>
+        /// A flag that specifies whether to use the Google Cloud Organization of your Google Cloud
+        /// project instead of developer token to determine your Google Ads API access levels. Use
+        /// this flag only if you are enrolled into a limited pilot that supports this
+        /// configuration.
+        /// </summary>
+        private readonly ConfigSetting<bool> useCloudOrgForApiAccess =
+            new ConfigSetting<bool>(ConfigSettingNames.USE_CLOUD_ORG_FOR_API_ACCESS, false);
+
+        /// <summary>
         /// Gets or sets the Google Ads API server URL.
         /// </summary>
         /// <remarks>This setting is used only for testing purposes.</remarks>
@@ -133,6 +142,19 @@ namespace Google.Ads.GoogleAds.Config
         }
 
         /// <summary>
+        /// Gets or sets whether to use the Google Cloud Organization of your Google Cloud
+        /// project instead of developer token to determine your Google Ads API access levels.
+        /// configuration.
+        /// </summary>
+        /// <remarks> Use this flag only if you are enrolled into a limited pilot that supports
+        /// this configuration.</remarks>
+        public bool UseCloudOrgForApiAccess
+        {
+            get => useCloudOrgForApiAccess.Value;
+            set => SetPropertyAndNotify(useCloudOrgForApiAccess, value);
+        }
+
+        /// <summary>
         /// Public constructor. Loads the configuration from the <code>GoogleAdsApi</code> section
         /// of the App.config / Web.config.
         /// </summary>
@@ -161,6 +183,7 @@ namespace Google.Ads.GoogleAds.Config
             ReadSetting(settings, loginCustomerId);
             ReadSetting(settings, linkedCustomerId);
             ReadSetting(settings, clientCustomerId);
+            ReadSetting(settings, useCloudOrgForApiAccess);
         }
 
         /// <summary>

@@ -63,5 +63,12 @@ namespace Google.Ads.Gax.Config
         /// The configuration setting name for the linked customer id.
         /// </summary>
         public const string LINKED_CUSTOMER_ID = "LinkedCustomerId";
+
+        /// <summary>
+        /// The configuration setting name for a flag that specifies whether to use the Google
+        /// Cloud Organization of your Google Cloud project instead of developer token to
+        /// determine your Google Ads API access levels.
+        /// </summary>
+        public const string USE_CLOUD_ORG_FOR_API_ACCESS = "UseCloudOrgForApiAccess";
     }
 }

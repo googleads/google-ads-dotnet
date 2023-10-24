@@ -15,46 +15,19 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V14.Common;
-using Google.Ads.GoogleAds.V14.Enums;
-using Google.Ads.GoogleAds.V14.Errors;
-using Google.Ads.GoogleAds.V14.Resources;
-using Google.Ads.GoogleAds.V14.Services;
+using Google.Ads.GoogleAds.V15.Errors;
+using Google.Ads.GoogleAds.V15.Resources;
+using Google.Ads.GoogleAds.V15.Services;
 using Google.Api.Gax;
-using Google.Protobuf.Collections;
-using Google.Protobuf;
-using System.Collections.Generic;
-using System.Linq;
 using System;
+using System.Collections.Generic;
 using System.Threading;
-using static Google.Ads.GoogleAds.V14.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.ConversionActionCategoryEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.ConversionOriginEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.AdvertisingChannelSubTypeEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.AssetFieldTypeEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.AssetGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.ListingGroupFilterTypeEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.ListingGroupFilterVerticalEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.ListingGroupFilterProductConditionEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.AssetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.BiddingStrategyTypeEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.BudgetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.CriterionTypeEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.ListingGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.MediaTypeEnum.Types;
-using static Google.Ads.GoogleAds.V14.Enums.ProductConditionEnum.Types;
-using static Google.Ads.GoogleAds.V14.Resources.Campaign.Types;
-using static Google.Ads.GoogleAds.V14.Resources.ListingGroupFilterDimension.Types;
-using static Google.Ads.GoogleAds.V14.Services.SmartCampaignSuggestionInfo.Types;
+using static Google.Ads.GoogleAds.V15.Enums.ListingGroupFilterListingSourceEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.ListingGroupFilterProductConditionEnum.Types;
+using static Google.Ads.GoogleAds.V15.Enums.ListingGroupFilterTypeEnum.Types;
+using static Google.Ads.GoogleAds.V15.Resources.ListingGroupFilterDimension.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V14
+namespace Google.Ads.GoogleAds.Examples.V15
 {
     /// <summary>
     /// This example shows how to add product partitions to a Performance Max retail campaign.
@@ -137,7 +110,8 @@ namespace Google.Ads.GoogleAds.Examples.V14
         /// This object is intended to be used with an array of MutateOperations to perform a series
         /// of related updates to an AssetGroup.
         /// </summary>
-        private class AssetGroupListingGroupFilterRemoveOperationFactory {
+        private class AssetGroupListingGroupFilterRemoveOperationFactory
+        {
             private string rootResourceName;
             private Dictionary<string, AssetGroupListingGroupFilter> resources;
             private Dictionary<string, HashSet<string>> parentsToChildren;
@@ -145,7 +119,8 @@ namespace Google.Ads.GoogleAds.Examples.V14
             public AssetGroupListingGroupFilterRemoveOperationFactory(
                 List<AssetGroupListingGroupFilter> resources)
             {
-                if (resources.Count == 0) {
+                if (resources.Count == 0)
+                {
                     throw new InvalidOperationException("No listing group filters to remove");
                 }
 
@@ -178,7 +153,9 @@ namespace Google.Ads.GoogleAds.Examples.V14
                     if (this.parentsToChildren.ContainsKey(parentResourceName))
                     {
                         siblings = this.parentsToChildren[parentResourceName];
-                    } else {
+                    }
+                    else
+                    {
                         siblings = new HashSet<string>();
                     }
 
@@ -197,6 +174,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
             {
                 return this.RemoveDescendentsAndFilter(this.rootResourceName);
             }
+
             // [END add_performance_max_product_listing_group_tree_2]
 
             // [START add_performance_max_product_listing_group_tree_3]
@@ -209,7 +187,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
             /// <returns>A list of MutateOperations</returns>
             public List<MutateOperation> RemoveDescendentsAndFilter(string resourceName)
             {
-                List<MutateOperation> operations =  new List<MutateOperation>();
+                List<MutateOperation> operations = new List<MutateOperation>();
 
                 if (this.parentsToChildren.ContainsKey(resourceName))
                 {
@@ -236,6 +214,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
 
                 return operations;
             }
+
             // [END add_performance_max_product_listing_group_tree_3]
         }
 
@@ -249,7 +228,8 @@ namespace Google.Ads.GoogleAds.Examples.V14
         /// This object is intended to be used with an array of MutateOperations to perform an
         /// atomic update to an AssetGroup.
         /// </summary>
-        private class AssetGroupListingGroupFilterCreateOperationFactory {
+        private class AssetGroupListingGroupFilterCreateOperationFactory
+        {
             private long customerId;
             private long assetGroupId;
             private long rootListingGroupId;
@@ -312,8 +292,8 @@ namespace Google.Ads.GoogleAds.Examples.V14
                     Type = ListingGroupFilterType.Subdivision,
 
                     // Because this is a Performance Max campaign for retail, we need to specify
-                    // that this is in the shopping vertical.
-                    Vertical = ListingGroupFilterVertical.Shopping
+                    // that this is in the shopping listing source.
+                    ListingSource = ListingGroupFilterListingSource.Shopping
                 };
 
                 AssetGroupListingGroupFilterOperation operation =
@@ -327,6 +307,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
                     AssetGroupListingGroupFilterOperation = operation
                 };
             }
+
             // [END add_performance_max_product_listing_group_tree_4]
 
             // [START add_performance_max_product_listing_group_tree_5]
@@ -372,8 +353,8 @@ namespace Google.Ads.GoogleAds.Examples.V14
                     Type = ListingGroupFilterType.Subdivision,
 
                     // Because this is a Performance Max campaign for retail, we need to specify
-                    // that this is in the shopping vertical.
-                    Vertical = ListingGroupFilterVertical.Shopping,
+                    // that this is in the shopping listing source.
+                    ListingSource = ListingGroupFilterListingSource.Shopping,
 
                     CaseValue = dimension
                 };
@@ -389,6 +370,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
                     AssetGroupListingGroupFilterOperation = filterOperation
                 };
             }
+
             // [END add_performance_max_product_listing_group_tree_5]
 
             // [START add_performance_max_product_listing_group_tree_6]
@@ -434,8 +416,8 @@ namespace Google.Ads.GoogleAds.Examples.V14
                     Type = ListingGroupFilterType.UnitIncluded,
 
                     // Because this is a Performance Max campaign for retail, we need to specify
-                    // that this is in the shopping vertical.
-                    Vertical = ListingGroupFilterVertical.Shopping,
+                    // that this is in the shopping listing source.
+                    ListingSource = ListingGroupFilterListingSource.Shopping,
 
                     CaseValue = dimension
                 };
@@ -451,6 +433,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
                     AssetGroupListingGroupFilterOperation = filterOperation
                 };
             }
+
             // [END add_performance_max_product_listing_group_tree_6]
         }
 
@@ -470,7 +453,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
             bool replaceExistingTree)
         {
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V14.GoogleAdsService);
+                client.GetService(Services.V15.GoogleAdsService);
 
             string assetGroupResourceName = ResourceNames.AssetGroup(customerId, assetGroupId);
 
@@ -505,7 +488,8 @@ namespace Google.Ads.GoogleAds.Examples.V14
                         assetGroupResourceName
                     );
 
-                if (existingListingGroupFilters.Count > 0) {
+                if (existingListingGroupFilters.Count > 0)
+                {
                     // A special factory object that ensures the creation of remove operations in the
                     // correct order (child listing group filters must be removed before their parents).
                     AssetGroupListingGroupFilterRemoveOperationFactory removeOperationFactory =
@@ -607,6 +591,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
 
             PrintResponseDetails(request, response);
         }
+
         // [END add_performance_max_product_listing_group_tree]
 
         // [START add_performance_max_product_listing_group_tree_7]
@@ -623,11 +608,11 @@ namespace Google.Ads.GoogleAds.Examples.V14
                 long customerId,
                 string assetGroupResourceName)
         {
-            List<AssetGroupListingGroupFilter> resources =  new List<AssetGroupListingGroupFilter>();
+            List<AssetGroupListingGroupFilter> resources = new List<AssetGroupListingGroupFilter>();
 
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V14.GoogleAdsService);
+                Services.V15.GoogleAdsService);
 
             SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()
             {
@@ -658,6 +643,7 @@ namespace Google.Ads.GoogleAds.Examples.V14
 
             return resources;
         }
+
         // [END add_performance_max_product_listing_group_tree_7]
 
         /// <summary>
