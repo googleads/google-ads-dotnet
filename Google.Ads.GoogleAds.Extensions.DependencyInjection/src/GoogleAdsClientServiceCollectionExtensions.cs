@@ -8,6 +8,9 @@ namespace Microsoft.Extensions.DependencyInjection
 {
     public static class GoogleAdsClientServiceCollectionExtensions
     {
+        /// <summary>
+        /// Adds the settings, Google Ads Config, and the Google Ads Client to the DI container.
+        /// </summary>
         public static IServiceCollection AddGoogleAdsClient(this IServiceCollection services, IConfiguration config)
         {
             IConfigurationSection googleAdsSection = config.GetSection(GoogleAdsApiOptions.GoogleAdsApi);
@@ -16,8 +19,13 @@ namespace Microsoft.Extensions.DependencyInjection
                 throw new Exception($"Missing {GoogleAdsApiOptions.GoogleAdsApi} configuration.");
             }
 
+            // add the setting to the DI container as options
             services.Configure<GoogleAdsApiOptions>(googleAdsSection);
+
+            // add the GoogleAdsConfig to the DI container
             services.AddSingleton<IGoogleAdsConfig, GoogleAdsConfig>();
+
+            // add the GoogleAdsClient to the DI container
             services.AddTransient<IGoogleAdsClient, GoogleAdsClient>();
 
             return services;
