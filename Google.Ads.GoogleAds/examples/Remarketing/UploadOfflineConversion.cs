@@ -20,6 +20,7 @@ using Google.Ads.GoogleAds.V15.Errors;
 using Google.Ads.GoogleAds.V15.Services;
 using System;
 using System.Linq;
+using static Google.Ads.GoogleAds.V15.Enums.ConsentStatusEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V15
 {
@@ -87,6 +88,13 @@ namespace Google.Ads.GoogleAds.Examples.V15
             [Option("conversionValue", Required = true, HelpText =
                 "The convsersion value.")]
             public double ConversionValue { get; set; }
+
+            /// <summary>
+            ///  The consent status for ad user data.
+            /// </summary>
+            [Option("adUserDataConsent", Required = false, HelpText =
+                "The ad user data consent for the click.")]
+            public ConsentStatus? AdUserDataConsent { get; set; }
         }
 
         /// <summary>
@@ -101,7 +109,7 @@ namespace Google.Ads.GoogleAds.Examples.V15
             Console.WriteLine(codeExample.Description);
             codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.ConversionActionId,
                 options.ConversionTime, options.Gclid, options.Gbraid, options.Wbraid,
-                options.ConversionValue);
+                options.ConversionValue, options.AdUserDataConsent);
         }
 
         /// <summary>
@@ -129,10 +137,11 @@ namespace Google.Ads.GoogleAds.Examples.V15
         /// <param name="wbraid">The WBRAID for the iOS web conversion. If set, <code>gclid</code>
         /// and <code>gbraid</code> must be null.</param>
         /// <param name="conversionValue">The convsersion value.</param>
+        /// <param name="adUserDataConsent">The ad user data consent for the click.</param>
         // [START upload_offline_conversion]
         public void Run(GoogleAdsClient client, long customerId, long conversionActionId,
             string gclid, string gbraid, string wbraid, string conversionTime,
-            double conversionValue)
+            double conversionValue, ConsentStatus? adUserDataConsent)
         {
             // Get the ConversionActionService.
             ConversionUploadServiceClient conversionUploadService =
@@ -146,6 +155,18 @@ namespace Google.Ads.GoogleAds.Examples.V15
                 ConversionDateTime = conversionTime,
                 CurrencyCode = "USD",
             };
+
+            // Sets the consent information, if provided.
+            if (adUserDataConsent != null)
+            {
+                // Specifies whether user consent was obtained for the data you are uploading. See
+                // https://www.google.com/about/company/user-consent-policy
+                // for details.
+                clickConversion.Consent = new Consent()
+                {
+                    AdUserData = (ConsentStatus)adUserDataConsent
+                };
+            }
 
             // Verifies that exactly one of gclid, gbraid, and wbraid is specified, as required.
             // See https://developers.google.com/google-ads/api/docs/conversions/upload-clicks
