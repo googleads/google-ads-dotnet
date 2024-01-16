@@ -19,10 +19,7 @@ using Google.Ads.GoogleAds.V15.Common;
 using Google.Ads.GoogleAds.V15.Errors;
 using Google.Ads.GoogleAds.V15.Resources;
 using Google.Ads.GoogleAds.V15.Services;
-using Google.Api.Gax;
 using System;
-using System.Collections.Generic;
-using System.Collections.Specialized;
 using static Google.Ads.GoogleAds.V15.Enums.UserListFlexibleRuleOperatorEnum.Types;
 using static Google.Ads.GoogleAds.V15.Enums.UserListMembershipStatusEnum.Types;
 using static Google.Ads.GoogleAds.V15.Enums.UserListPrepopulationStatusEnum.Types;
@@ -138,7 +135,6 @@ namespace Google.Ads.GoogleAds.Examples.V15
                 Description = "Visitors of both https://example.com/example1 AND " +
                     "https://example.com/example2 but NOT https://example.com/example3",
                 MembershipStatus = UserListMembershipStatus.Open,
-                MembershipLifeSpan = 365,
                 RuleBasedUserList = ruleBasedUserListInfo
             };
 
