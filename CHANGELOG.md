@@ -1,3 +1,8 @@
+18.0.0
+======
+- Removed support for version 13.0 of the Google Ads API.
+- Removed setting the MembershipLifeSpan field in the AddFlexibleRuleUserList example.
+
 17.1.0
 ======
 - Added support for version 15.0 of the Google Ads API. The following code examples still use
