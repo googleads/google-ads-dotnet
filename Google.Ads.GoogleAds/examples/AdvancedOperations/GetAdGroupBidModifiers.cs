@@ -130,12 +130,29 @@ namespace Google.Ads.GoogleAds.Examples.V15
                     AdGroupBidModifier agBidModifier = googleAdsRow.AdGroupBidModifier;
                     AdGroup adGroup = googleAdsRow.AdGroup;
                     Campaign campaign = googleAdsRow.Campaign;
-                    Console.WriteLine("Ad group bid modifier with criterion ID {0}, bid " +
-                        "modifier value {1:0.00} was found in an ad group with ID {2} of " +
-                        "campaign ID {3}.",
+                    Console.Write("Ad group bid modifier with criterion ID {0} in ad group " +
+                        "with ID {1} of campaign ID {2} ",
                         agBidModifier.CriterionId,
-                        agBidModifier.BidModifier,
                         adGroup.Id, campaign.Id);
+
+                    // When working with an 'optional' protocol buffer field such as
+                    // AdGroup.bidModifier, use HasXX to check if the field is set, and only
+                    // retrieve the value if HasXX returns true. See the protocol buffer
+                    // documentation on field presence for more information:
+                    // https://protobuf.dev/programming-guides/field_presence/#presence-in-proto3-apis
+                    if (agBidModifier.HasBidModifier)
+                    {
+                        // Prints the bid modifier value since it is set.
+                        Console.WriteLine("has a bid modifier value of {0:0.00}.",
+                            agBidModifier.BidModifier);
+                    }
+                    else
+                    {
+                        // Does not print the bid modifier value since it is not set. Printing the
+                        // result of agBidModifier.BidModifier in this case would be misleading,
+                        // since it will be 0.
+                        Console.WriteLine("does NOT have a bid modifier value.");
+                    }
 
                     string criterionDetails = "  - Criterion type: " +
                         $"{agBidModifier.CriterionCase}, ";
