@@ -15,23 +15,32 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V15.Errors;
-using Google.Ads.GoogleAds.V15.Services;
+using Google.Ads.GoogleAds.V16.Common;
+using Google.Ads.GoogleAds.V16.Resources;
+using Google.Ads.GoogleAds.V16.Errors;
+using Google.Ads.GoogleAds.V16.Services;
 using System;
-using System.Collections.Generic;
 using System.Threading;
+using System.Collections.Generic;
+using Google.Ads.GoogleAds.Config;
+using Google.Ads.GoogleAds.Extensions.Config;
 
-namespace Google.Ads.GoogleAds.Examples.V15
+namespace Google.Ads.GoogleAds.Examples.V16
 {
     /// <summary>
-    /// The auto-apply feature, which automatically applies recommendations as they become
-    /// eligible, is currently supported by the Google Ads UI but not by the Google Ads API. See
-    /// https://support.google.com/google-ads/answer/10279006 for more information on
-    /// using auto-apply in the Google Ads UI.
+    /// This example shows how to retrieve recommendations and apply them in a batch.
+    /// Recommendations should be applied shortly after they're retrieved. Depending on the
+    /// recommendation type, a recommendation can become obsolete quickly, and obsolete
+    /// recommendations throw an error when applied. For more details, see:
+    /// https://developers.google.com/google-ads/api/docs/recommendations#take_action
     ///
-    /// This code example demonstrates how an alternative can be implemented with the features that
-    /// are currently supported by the Google Ads API. It periodically retrieves and applies
-    /// <code>KEYWORD</code> recommendations with default parameters.
+    /// As of Google Ads API V15, users can subscribe to certain recommendation types to apply
+    /// them automatically. For more details, see:
+    /// https://developers.google.com/google-ads/api/docs/recommendations#auto-apply
+    ///
+    /// As of Google Ads API V16, users can proactively generate certain recommendation types
+    /// during the campaign construction process. For more details, see:
+    /// https://developers.google.com/google-ads/api/docs/recommendations#recommendations-in-campaign-construction
     /// </summary>
     public class DetectAndApplyRecommendations : ExampleBase
     {
@@ -50,24 +59,6 @@ namespace Google.Ads.GoogleAds.Examples.V15
         }
 
         /// <summary>
-        /// The maximum number of recommendations to periodically retrieve and apply. In a real
-        /// application, such a limit would typically not be used.
-        /// </summary>
-        private const int MAX_RESULT_SIZE = 2;
-
-        /// <summary>
-        /// The number of times to retrieve and apply recommendations. In a real application, such
-        /// a limit would typically not be used.
-        /// </summary>
-        private const int NUMBER_OF_RUNS = 3;
-
-        /// <summary>
-        /// The time to wait between two runs. In a real application, this would typically be set
-        /// to minutes or hours instead of seconds.
-        /// </summary>
-        private const int WAIT_TIME_IN_SECONDS = 5;
-
-        /// <summary>
         /// Main method, to run this code example as a standalone application.
         /// </summary>
         /// <param name="args">The command line arguments.</param>
@@ -77,20 +68,26 @@ namespace Google.Ads.GoogleAds.Examples.V15
 
             DetectAndApplyRecommendations codeExample = new DetectAndApplyRecommendations();
             Console.WriteLine(codeExample.Description);
-            codeExample.Run(new GoogleAdsClient(), options.CustomerId);
+            GoogleAdsConfig config = new GoogleAdsConfig();
+            config.LoadFromEnvironmentVariables();
+            codeExample.Run(new GoogleAdsClient(config), options.CustomerId);
         }
 
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
-            "The auto-apply feature, which automatically applies recommendations as they become " +
-            "eligible, is currently supported by the Google Ads UI but not by the Google Ads " +
-            "API. See https://support.google.com/google-ads/answer/10279006 for more " +
-            "information on using auto-apply in the Google Ads UI. " +
-            "This code example demonstrates how an alternative can be implemented with the " +
-            "features that are currently supported by the Google Ads API. It periodically " +
-            "retrieves and applies <code>KEYWORD</code> recommendations with default parameters.";
+            "This example shows how to retrieve recommendations and apply them in a batch.\n" +
+            "Recommendations should be applied shortly after they're retrieved. Depending on the " +
+            "recommendation type, a recommendation can become obsolete quickly, and obsolete " +
+            "recommendations throw an error when applied. For more details, see: " +
+            "https://developers.google.com/google-ads/api/docs/recommendations#take_action\n" +
+            "As of Google Ads API V15, users can subscribe to certain recommendation types to " +
+            "apply them automatically. For more details, see: " +
+            "https://developers.google.com/google-ads/api/docs/recommendations#auto-apply\n" +
+            "As of Google Ads API V16, users can proactively generate certain recommendation " +
+            "types during the campaign construction process. For more details, see: " +
+            "https://developers.google.com/google-ads/api/docs/recommendations#recommendations-in-campaign-construction";
 
         /// <summary>
         /// Runs the code example.
@@ -99,62 +96,52 @@ namespace Google.Ads.GoogleAds.Examples.V15
         /// <param name="customerId">The customer ID for which the call is made.</param>
         public void Run(GoogleAdsClient client, long customerId)
         {
-            // Get the RecommendationServiceClient.
-            RecommendationServiceClient recommendationService = client.GetService(
-                Services.V15.RecommendationService);
-
             // Get the GoogleAdsServiceClient.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V15.GoogleAdsService);
+                Services.V16.GoogleAdsService);
 
             // Creates a query that retrieves keyword recommendations.
-            string query = "SELECT recommendation.resource_name FROM recommendation WHERE " +
-                $"recommendation.type = KEYWORD LIMIT {MAX_RESULT_SIZE}";
+            string query = "SELECT recommendation.resource_name, " +
+                "recommendation.campaign, recommendation.keyword_recommendation " +
+                "FROM recommendation WHERE " +
+                $"recommendation.type = KEYWORD";
+
+            List<ApplyRecommendationOperation> operations =
+                new List<ApplyRecommendationOperation>();
 
             try
             {
-                // Creates apply operations for all the recommendations found.
-                for (int i = 0; i < NUMBER_OF_RUNS; i++)
-                {
-                    List<ApplyRecommendationOperation> operations =
-                        new List<ApplyRecommendationOperation>();
-                    // Issue a search request.
-                    googleAdsService.SearchStream(customerId.ToString(), query,
-                        delegate (SearchGoogleAdsStreamResponse resp)
+                // Issue a search request.
+                googleAdsService.SearchStream(customerId.ToString(), query,
+                    delegate (SearchGoogleAdsStreamResponse resp)
+                    {
+                        Console.WriteLine($"Found {resp.Results.Count} recommendations.");
+                        foreach (GoogleAdsRow googleAdsRow in resp.Results)
                         {
-                            foreach (GoogleAdsRow googleAdsRow in resp.Results)
-                            {
-                                operations.Add(new ApplyRecommendationOperation()
-                                {
-                                    ResourceName = googleAdsRow.Recommendation.ResourceName
-                                });
-                            }
-                        }
-                    );
+                            Recommendation recommendation = googleAdsRow.Recommendation;
+                            Console.WriteLine("Keyword recommendation " +
+                                $"{recommendation.ResourceName} was found for campaign " +
+                                $"{recommendation.Campaign}.");
 
-                    // Sends the apply recommendation request and prints information.
-                    if (operations.Count > 0)
-                    {
-                        ApplyRecommendationResponse response =
-                            recommendationService.ApplyRecommendation(
-                                customerId.ToString(), operations);
-                        Console.WriteLine($"Applied {0} recommendation(s):", response.Results.Count);
-                        foreach (ApplyRecommendationResult result in response.Results)
-                        {
-                            Console.WriteLine($"- {result.ResourceName}");
+                            if (recommendation.KeywordRecommendation != null)
+                            {
+                                KeywordInfo keyword =
+                                    recommendation.KeywordRecommendation.Keyword;
+                                Console.WriteLine($"Keyword = {keyword.Text}, type = " +
+                                    "{keyword.MatchType}");
+                            }
+
+                            operations.Add(new ApplyRecommendationOperation()
+                            {
+                                // If you have a recommendation_id instead of the resource_name
+                                // you can create a resource name from it like this:
+                                // string recommendationResourceName =
+                                //    ResourceNames.Recommendation(customerId, recommendationId)
+                                ResourceName = recommendation.ResourceName
+                            });
                         }
                     }
-                    else
-                    {
-                        Console.WriteLine("No recommendations were found.");
-                    }
-                    if (i < NUMBER_OF_RUNS - 1)
-                    {
-                        Console.WriteLine($"Waiting {WAIT_TIME_IN_SECONDS} seconds before " +
-                            $"applying recommendations.");
-                        Thread.Sleep(WAIT_TIME_IN_SECONDS * 1000);
-                    }
-                }
+                );
             }
             catch (GoogleAdsException e)
             {
@@ -165,5 +152,36 @@ namespace Google.Ads.GoogleAds.Examples.V15
                 throw;
             }
         }
+
+        /// <summary>
+        /// Applies a list of recommendation.
+        /// </summary>
+        /// <param name="client">The Google Ads client.</param>
+        /// <param name="customerId">The customer ID for which the call is made.</param>
+        /// <param name="operations">The recommendations to apply.</param>
+        // [START apply_recommendation]
+        private void ApplyRecommendation(GoogleAdsClient client, long customerId,
+            List<ApplyRecommendationOperation> operations)
+        {
+            // Get the RecommendationServiceClient.
+            RecommendationServiceClient recommendationService = client.GetService(
+                Services.V16.RecommendationService);
+
+            ApplyRecommendationRequest applyRecommendationRequest = new ApplyRecommendationRequest()
+            {
+                CustomerId = customerId.ToString(),
+            };
+
+            applyRecommendationRequest.Operations.AddRange(operations);
+
+            ApplyRecommendationResponse response =
+                recommendationService.ApplyRecommendation(applyRecommendationRequest);
+            foreach (ApplyRecommendationResult result in response.Results)
+            {
+                Console.WriteLine("Applied a recommendation with resource name: " +
+                    result.ResourceName);
+            }
+        }
+        // [END apply_recommendation]
     }
 }

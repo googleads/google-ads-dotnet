@@ -16,14 +16,14 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Extensions.Config;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V15.Errors;
-using Google.Ads.GoogleAds.V15.Resources;
-using Google.Ads.GoogleAds.V15.Services;
+using Google.Ads.GoogleAds.V16.Errors;
+using Google.Ads.GoogleAds.V16.Resources;
+using Google.Ads.GoogleAds.V16.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Google.Ads.GoogleAds.Examples.V15
+namespace Google.Ads.GoogleAds.Examples.V16
 {
     /// <summary>
     /// This code example fetches the set of valid ProductCategories.
@@ -127,7 +127,7 @@ namespace Google.Ads.GoogleAds.Examples.V15
         {
             // Get the GoogleAdsServiceClient .
             GoogleAdsServiceClient googleAdsService =
-                client.GetService(Services.V15.GoogleAdsService);
+                client.GetService(Services.V16.GoogleAdsService);
 
             // Creates the query.
             string query = "SELECT product_category_constant.localizations, " +

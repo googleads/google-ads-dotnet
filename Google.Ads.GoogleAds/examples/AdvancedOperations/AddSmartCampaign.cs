@@ -19,19 +19,19 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V15.Common;
-using Google.Ads.GoogleAds.V15.Enums;
-using Google.Ads.GoogleAds.V15.Errors;
-using Google.Ads.GoogleAds.V15.Resources;
-using Google.Ads.GoogleAds.V15.Services;
-using static Google.Ads.GoogleAds.V15.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V15.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V15.Enums.AdvertisingChannelSubTypeEnum.Types;
-using static Google.Ads.GoogleAds.V15.Enums.BudgetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V15.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V15.Services.SmartCampaignSuggestionInfo.Types;
+using Google.Ads.GoogleAds.V16.Common;
+using Google.Ads.GoogleAds.V16.Enums;
+using Google.Ads.GoogleAds.V16.Errors;
+using Google.Ads.GoogleAds.V16.Resources;
+using Google.Ads.GoogleAds.V16.Services;
+using static Google.Ads.GoogleAds.V16.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V16.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V16.Enums.AdvertisingChannelSubTypeEnum.Types;
+using static Google.Ads.GoogleAds.V16.Enums.BudgetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V16.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V16.Services.SmartCampaignSuggestionInfo.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V15
+namespace Google.Ads.GoogleAds.Examples.V16
 {
     /// <summary>
     /// This example shows how to create a Smart Campaign.
@@ -150,7 +150,7 @@ namespace Google.Ads.GoogleAds.Examples.V15
             string freeFormKeywordText, string businessProfileLocation, string businessName)
         {
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V15.GoogleAdsService);
+                client.GetService(Services.V16.GoogleAdsService);
 
             try
             {
@@ -268,7 +268,7 @@ namespace Google.Ads.GoogleAds.Examples.V15
             GoogleAdsClient client, long customerId, SmartCampaignSuggestionInfo suggestionInfo)
         {
             SmartCampaignSuggestServiceClient smartCampaignSuggestService =
-                client.GetService(Services.V15.SmartCampaignSuggestService);
+                client.GetService(Services.V16.SmartCampaignSuggestService);
 
             SuggestKeywordThemesRequest request = new SuggestKeywordThemesRequest()
             {
@@ -300,7 +300,7 @@ namespace Google.Ads.GoogleAds.Examples.V15
             GoogleAdsClient client, string keywordText)
         {
             KeywordThemeConstantServiceClient keywordThemeConstantServiceClient =
-                client.GetService(Services.V15.KeywordThemeConstantService);
+                client.GetService(Services.V16.KeywordThemeConstantService);
 
             SuggestKeywordThemeConstantsRequest request = new SuggestKeywordThemeConstantsRequest
             {
@@ -429,7 +429,7 @@ namespace Google.Ads.GoogleAds.Examples.V15
             SmartCampaignSuggestionInfo suggestionInfo)
         {
             SmartCampaignSuggestServiceClient smartCampaignSuggestServiceClient = client.GetService
-                (Services.V15.SmartCampaignSuggestService);
+                (Services.V16.SmartCampaignSuggestService);
 
             SuggestSmartCampaignBudgetOptionsRequest request =
                 new SuggestSmartCampaignBudgetOptionsRequest
@@ -486,7 +486,7 @@ namespace Google.Ads.GoogleAds.Examples.V15
             long customerId, SmartCampaignSuggestionInfo suggestionInfo)
         {
             SmartCampaignSuggestServiceClient smartCampaignSuggestService =
-              client.GetService(Services.V15.SmartCampaignSuggestService);
+              client.GetService(Services.V16.SmartCampaignSuggestService);
 
             SuggestSmartCampaignAdRequest request = new SuggestSmartCampaignAdRequest
             {
