@@ -19,7 +19,6 @@ using Google.Ads.GoogleAds.V14.Errors;
 using Google.Ads.GoogleAds.V14.Resources;
 using Google.Ads.GoogleAds.V14.Services;
 using System;
-using System.Collections.Generic;
 
 namespace Google.Ads.GoogleAds.Examples.V14
 {

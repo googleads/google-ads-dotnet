@@ -45,9 +45,9 @@
     <None Include="..\..\logo.png" Pack="true" PackagePath="" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Condition="!Exists('..\..\Google.Ads.GoogleAds.Core\src\Google.Ads.GoogleAds.Core.csproj')" Include="Google.Ads.GoogleAds.Core" Version="3.1.0" />
+    <PackageReference Condition="!Exists('..\..\Google.Ads.GoogleAds.Core\src\Google.Ads.GoogleAds.Core.csproj')" Include="Google.Ads.GoogleAds.Core" Version="3.2.0" />
     <ProjectReference Condition="Exists('..\..\Google.Ads.GoogleAds.Core\src\Google.Ads.GoogleAds.Core.csproj')" Include="..\..\Google.Ads.GoogleAds.Core\src\Google.Ads.GoogleAds.Core.csproj" />
-    <PackageReference Condition="!Exists('..\..\Google.Ads.Gax\src\Google.Ads.Gax.csproj')" Include="Google.Ads.Gax" Version="3.1.0" />
+    <PackageReference Condition="!Exists('..\..\Google.Ads.Gax\src\Google.Ads.Gax.csproj')" Include="Google.Ads.Gax" Version="3.2.0" />
     <ProjectReference Condition="Exists('..\..\Google.Ads.Gax\src\Google.Ads.Gax.csproj')" Include="..\..\Google.Ads.Gax\src\Google.Ads.Gax.csproj" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />

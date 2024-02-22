@@ -15,16 +15,15 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V15.Errors;
-using Google.Ads.GoogleAds.V15.Resources;
-using Google.Ads.GoogleAds.V15.Services;
+using Google.Ads.GoogleAds.V16.Errors;
+using Google.Ads.GoogleAds.V16.Resources;
+using Google.Ads.GoogleAds.V16.Services;
 using System;
-using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V15.Enums.ConversionActionCategoryEnum.Types;
-using static Google.Ads.GoogleAds.V15.Enums.ConversionActionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V15.Enums.ConversionActionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V16.Enums.ConversionActionCategoryEnum.Types;
+using static Google.Ads.GoogleAds.V16.Enums.ConversionActionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V16.Enums.ConversionActionTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V15
+namespace Google.Ads.GoogleAds.Examples.V16
 {
     /// <summary>
     /// This code example illustrates adding a conversion action.
@@ -74,12 +73,18 @@ namespace Google.Ads.GoogleAds.Examples.V15
         {
             // Get the ConversionActionService.
             ConversionActionServiceClient conversionActionService =
-                client.GetService(Services.V15.ConversionActionService);
+                client.GetService(Services.V16.ConversionActionService);
+
+            // Note that conversion action names must be unique.
+            // If a conversion action already exists with the specified name the create operation
+            // will fail with a ConversionAction.DUPLICATE_NAME error.
+            string ConversionActionName = "Earth to Mars Cruises Conversion #"
+                + ExampleUtilities.GetRandomString();
 
             // Add a conversion action.
             ConversionAction conversionAction = new ConversionAction()
             {
-                Name = "Earth to Mars Cruises Conversion #" + ExampleUtilities.GetRandomString(),
+                Name = ConversionActionName,
                 Category = ConversionActionCategory.Default,
                 Type = ConversionActionType.Webpage,
                 Status = ConversionActionStatus.Enabled,

@@ -15,16 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V15.Common;
-using Google.Ads.GoogleAds.V15.Errors;
-using Google.Ads.GoogleAds.V15.Services;
+using Google.Ads.GoogleAds.V16.Common;
+using Google.Ads.GoogleAds.V16.Errors;
+using Google.Ads.GoogleAds.V16.Services;
 using System;
 using System.Security.Cryptography;
 using System.Text;
-using static Google.Ads.GoogleAds.V15.Enums.ConsentStatusEnum.Types;
-using static Google.Ads.GoogleAds.V15.Enums.UserIdentifierSourceEnum.Types;
+using static Google.Ads.GoogleAds.V16.Enums.ConsentStatusEnum.Types;
+using static Google.Ads.GoogleAds.V16.Enums.UserIdentifierSourceEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V15
+namespace Google.Ads.GoogleAds.Examples.V16
 {
     /// <summary>
     /// This code example uploads an enhanced conversion for leads by uploading a ClickConversion
@@ -129,7 +129,7 @@ namespace Google.Ads.GoogleAds.Examples.V15
         {
             // Get the ConversionUploadService.
             ConversionUploadServiceClient conversionUploadService =
-                client.GetService(Services.V15.ConversionUploadService);
+                client.GetService(Services.V16.ConversionUploadService);
 
             // [START create_conversion]
             // Creates an empty click conversion.

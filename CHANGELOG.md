@@ -1,3 +1,17 @@
+18.1.0
+======
+- Added support for version 16.0 of the Google Ads API.
+- Upgraded the Google.Api.Gax.Grpc dependency to 4.5.0 and the Google.Protobuf dependency to 3.25.0.
+- Updated code examples:
+  * DetectAndApplyRecommendations
+  * AddResponsiveSearchAdFull
+  * AddCall
+  * AddHotelCallout
+  * AddLeadFormAsset
+  * AddPrices
+  * AddSitelinks
+- Added the VerifyAdvertiserIdentity example.
+
 18.0.0
 ======
 - Removed support for version 13.0 of the Google Ads API.
