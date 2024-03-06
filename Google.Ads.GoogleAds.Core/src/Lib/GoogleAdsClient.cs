@@ -16,7 +16,9 @@ using Google.Ads.Gax.Config;
 using Google.Ads.Gax.Lib;
 using Google.Ads.GoogleAds.Config;
 using Google.Api.Gax.Grpc;
+using Grpc.Core.Interceptors;
 using System;
+using System.Collections.Generic;
 
 namespace Google.Ads.GoogleAds.Lib
 {
@@ -25,6 +27,9 @@ namespace Google.Ads.GoogleAds.Lib
     /// </summary>
     public class GoogleAdsClient : AdsClient<GoogleAdsConfig>
     {
+
+        private List<Interceptor> userInterceptors = new List<Interceptor>();
+
         /// <summary>
         /// Initializes a new instance of the <see cref="GoogleAdsClient"/> class.
         /// </summary>
@@ -38,6 +43,15 @@ namespace Google.Ads.GoogleAds.Lib
         /// </summary>
         /// <param name="config">The client configuration.</param>
         public GoogleAdsClient(GoogleAdsConfig config) : base(config) { }
+
+        /// <summary>
+        /// Adds a custom gRPC <see cref="Interceptor"/>.
+        /// </summary>
+        /// <param name="interceptor">The custom interceptor.</param>
+        public void AddInterceptor(Interceptor interceptor)
+        {
+            userInterceptors.Add(interceptor);
+        }
 
         /// <summary>
         /// <para>Gets an instance of the specified service. Use this method with a predefined
@@ -59,7 +73,8 @@ namespace Google.Ads.GoogleAds.Lib
                 where TServiceSetting : ServiceSettingsBase, new()
                 where TService : GoogleAdsServiceClientBase
         {
-            GoogleAdsServiceClientFactory factory = new GoogleAdsServiceClientFactory();
+            GoogleAdsServiceClientFactory factory =
+                new GoogleAdsServiceClientFactory(customInterceptors);
             TService service = factory.GetService(serviceTemplate, Config);
             service.ServiceContext.Client = this;
             return service;

@@ -22,6 +22,7 @@ using Google.Protobuf;
 using Grpc.Core;
 using Grpc.Core.Interceptors;
 using System;
+using System.Collections.Generic;
 
 namespace Google.Ads.GoogleAds.Lib
 {
@@ -31,9 +32,19 @@ namespace Google.Ads.GoogleAds.Lib
     internal class GoogleAdsServiceClientFactory : AdsServiceClientFactory
     {
         /// <summary>
+        /// The custom interceptors.
+        /// </summary>
+        private List<Interceptor> userInterceptors = new List<Interceptor>();
+
+        /// <summary>
         /// The channel factory.
         /// </summary>
         private CachedChannelFactory channelFactory = new CachedChannelFactory();
+
+        internal GoogleAdsServiceClientFactory(List<Interceptor> userInterceptors)
+        {
+            this.userInterceptors = userInterceptors;
+        }
 
         /// <summary>
         /// Gets an instance of the specified service.
@@ -50,6 +61,11 @@ namespace Google.Ads.GoogleAds.Lib
             ChannelBase channel = CreateChannel(config);
             CallInvoker interceptedInvoker = channel
                 .Intercept(new GoogleAdsGrpcInterceptor());
+
+            foreach (Interceptor customInterceptor in userInterceptors)
+            {
+                interceptedInvoker = interceptedInvoker.Intercept(customInterceptor);
+            }
 
             CallInvoker callInvoker = config.EnableProfiling ?
                 new ProfilingCallInvoker(interceptedInvoker, config) : interceptedInvoker;

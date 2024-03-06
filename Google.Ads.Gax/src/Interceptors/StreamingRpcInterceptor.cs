@@ -26,7 +26,7 @@ namespace Google.Ads.Gax.Interceptors
     /// </summary>
     /// <typeparam name="TResponse">The type of the response.</typeparam>
     /// <seealso cref="Grpc.Core.IAsyncStreamReader{TResponse}" />
-    internal class StreamingRpcInterceptor<TResponse> : IAsyncStreamReader<TResponse>
+    public class StreamingRpcInterceptor<TResponse> : IAsyncStreamReader<TResponse>
         where TResponse : class
     {
         /// <summary>
@@ -45,7 +45,7 @@ namespace Google.Ads.Gax.Interceptors
         /// <param name="streamReader">The stream reader to wrap over..</param>
         /// <param name="moveNextCallback">The callback to be invoked when MoveNext() is
         /// called.</param>
-        internal StreamingRpcInterceptor(IAsyncStreamReader<TResponse> streamReader,
+        public StreamingRpcInterceptor(IAsyncStreamReader<TResponse> streamReader,
             Action<TResponse, AggregateException> moveNextCallback)
         {
             this.innerStreamReader = streamReader;

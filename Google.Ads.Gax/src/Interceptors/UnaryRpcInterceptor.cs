@@ -24,7 +24,7 @@ namespace Google.Ads.Gax.Interceptors
     /// This class provides functionality to intercept tasks and callbacks, and performs custom
     /// exception handling.
     /// </summary>
-    internal class UnaryRpcInterceptor
+    public class UnaryRpcInterceptor
     {
         /// <summary>
         /// Intercepts an async unary call adds a custom exception handler.
@@ -34,7 +34,7 @@ namespace Google.Ads.Gax.Interceptors
         /// <param name="responseCallback">Response callback</param>
         /// <returns>The async unary call with custom exception handling for
         /// <see cref="RpcException"/>.</returns>
-        internal static AsyncUnaryCall<TResponse> Intercept<TResponse>(
+        public static AsyncUnaryCall<TResponse> Intercept<TResponse>(
             AsyncUnaryCall<TResponse> call, Action<Task<TResponse>> responseCallback)
         {
             return new AsyncUnaryCall<TResponse>(
