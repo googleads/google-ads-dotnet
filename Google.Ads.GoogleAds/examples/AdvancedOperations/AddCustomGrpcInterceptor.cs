@@ -101,7 +101,6 @@ namespace Google.Ads.GoogleAds.Examples.V16
                 Console.WriteLine($"Request ID: {e.RequestId}");
                 throw;
             }
-
             try
             {
                 // Issue a non-streaming call.

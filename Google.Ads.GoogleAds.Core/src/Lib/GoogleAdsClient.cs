@@ -74,7 +74,7 @@ namespace Google.Ads.GoogleAds.Lib
                 where TService : GoogleAdsServiceClientBase
         {
             GoogleAdsServiceClientFactory factory =
-                new GoogleAdsServiceClientFactory(customInterceptors);
+                new GoogleAdsServiceClientFactory(userInterceptors);
             TService service = factory.GetService(serviceTemplate, Config);
             service.ServiceContext.Client = this;
             return service;
