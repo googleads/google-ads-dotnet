@@ -41,6 +41,9 @@ namespace Google.Ads.GoogleAds.Lib
         /// </summary>
         private CachedChannelFactory channelFactory = new CachedChannelFactory();
 
+        internal GoogleAdsServiceClientFactory(): this(new List<Interceptor>()) {
+        }
+
         internal GoogleAdsServiceClientFactory(List<Interceptor> userInterceptors)
         {
             this.userInterceptors = userInterceptors;
