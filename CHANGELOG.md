@@ -1,3 +1,9 @@
+19.0.0
+======
+- Removed support for .NET 5.0.
+- Added support for .NET 8.0.
+- Added support for user-defined gRPC interceptors.
+
 18.1.0
 ======
 - Added support for version 16.0 of the Google Ads API.
