@@ -20,7 +20,7 @@
   </PropertyGroup>
   <!-- build properties -->
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.1;net472;net6.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1;net472;net6.0;net8.0</TargetFrameworks>
     <AssemblyName>Google.Ads.Gax.TestUtilities</AssemblyName>
     <RootNamespace>Google.Ads.Gax.TestUtilities</RootNamespace>
     <SignAssembly>true</SignAssembly>
