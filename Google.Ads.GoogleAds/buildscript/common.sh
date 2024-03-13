@@ -101,19 +101,19 @@ function dotnet_library::extract_keystore_secrets() {
 ########################################################################
 function dotnet_library::install_dotnet() {
   # Note:
-  # * dotnet-sdk-6.0 is capable of compiling the code to all the 4
-  #  frameworks - net6.0, net5.0, net472 and netcoreapp3.1. Hence we
-  #  install dotnet-sdk-6.0.
+  # * dotnet-sdk-8.0 is capable of compiling the code to all the frameworks
+  #  we need - net8.0, net6.0, net472 and netcoreapp3.1. Hence we
+  #  install dotnet-sdk-8.0.
   # * To run the tests, we need the corresponding runtimes to be installed.
-  #   *  dotnet-runtime-5.0 is installed to run tests for net5.0.
+  #   *  dotnet-runtime-6.0 is installed to run tests for net6.0.
   #   *  The library supports netstandard2.0, but Microsoft expects test
   #      assemblies to be compiled against executable targets even though
   #      the test itself is written as a library. So we target
   #      netcoreapp3.1 instead of netstandard2.0 in the
   #      various test assemblies and install dotnet-runtime-3.1 to run
   #      the tests.
-  #   *  .NET 6.0 runtime is included in dotnet-sdk-6.0, so we don't
-  #      install dotnet-runtime-6.0.
+  #   *  .NET 8.0 runtime is included in dotnet-sdk-8.0, so we don't
+  #      install dotnet-runtime-8.0.
   #   *  We don't install mono (or run tests for .NET 472). Pretty much
   #      no one uses mono, and mono itself is known to have multiple
   #      deviations from the .NET Framework 472, so testing for .NET 472
@@ -122,7 +122,7 @@ function dotnet_library::install_dotnet() {
   # * We use Microsoft's dotnet-install.sh and let it deal with resolving
   #   download locations and platform-specific builds.
 
-  # Install dotnet 3.1, 5.0, 6.0.
+  # Install dotnet 6.0, 8.0.
   echo "Installing .NET"
   echo "==============="
 
@@ -131,8 +131,8 @@ function dotnet_library::install_dotnet() {
     "${REPO_ROOT}/dotnet_setup/dotnet-install.sh"
   pushd "${REPO_ROOT}/dotnet_setup"
   chmod 755 ./dotnet-install.sh
-  ./dotnet-install.sh --install-dir . --version 6.0.300
-  ./dotnet-install.sh --install-dir . --runtime dotnet --version 5.0.13
+  ./dotnet-install.sh --install-dir . --channel 8.0
+  ./dotnet-install.sh --install-dir . --runtime dotnet --version 6.0.27
   ./dotnet-install.sh --install-dir . --runtime dotnet --version 3.1.22
   DOTNET_BINARY="${REPO_ROOT}/dotnet_setup/dotnet"
   popd
