@@ -1,3 +1,8 @@
+19.0.1
+======
+- Added support for .NET 8.0 in the Google.Ads.GoogleAds project: it was left out in the previous
+  release.
+
 19.0.0
 ======
 - Removed support for .NET 5.0.
