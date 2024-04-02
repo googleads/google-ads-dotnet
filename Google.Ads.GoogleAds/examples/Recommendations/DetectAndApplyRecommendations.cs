@@ -96,6 +96,7 @@ namespace Google.Ads.GoogleAds.Examples.V16
         /// <param name="customerId">The customer ID for which the call is made.</param>
         public void Run(GoogleAdsClient client, long customerId)
         {
+            // [START detect_keyword_recommendations]
             // Get the GoogleAdsServiceClient.
             GoogleAdsServiceClient googleAdsService = client.GetService(
                 Services.V16.GoogleAdsService);
@@ -131,6 +132,7 @@ namespace Google.Ads.GoogleAds.Examples.V16
                                     "{keyword.MatchType}");
                             }
 
+                            // [START build_apply_recommendation_operation]
                             operations.Add(new ApplyRecommendationOperation()
                             {
                                 // If you have a recommendation_id instead of the resource_name
@@ -139,6 +141,7 @@ namespace Google.Ads.GoogleAds.Examples.V16
                                 //    ResourceNames.Recommendation(customerId, recommendationId)
                                 ResourceName = recommendation.ResourceName
                             });
+                            // [END build_apply_recommendation_operation]
                         }
                     }
                 );
@@ -151,6 +154,7 @@ namespace Google.Ads.GoogleAds.Examples.V16
                 Console.WriteLine($"Request ID: {e.RequestId}");
                 throw;
             }
+            // [END detect_keyword_recommendations]
         }
 
         /// <summary>
