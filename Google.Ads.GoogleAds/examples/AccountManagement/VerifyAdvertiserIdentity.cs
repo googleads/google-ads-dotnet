@@ -88,37 +88,35 @@ namespace Google.Ads.GoogleAds.Examples.V16
                     "verification program.");
                     return;
             }
-            else
+
+            switch(identityVerification.VerificationProgress.ProgramStatus)
             {
-                switch(identityVerification.VerificationProgress.ProgramStatus)
-                {
-                    case IdentityVerificationProgramStatus.Unspecified:
-                        // Starts an identity verification session.
-                        StartIdentityVerification(client, customerId);
-                        // Calls GetIdentityVerification again to retrieve the verification progress
-                        // after starting an identity verification session.
-                        GetIdentityVerification(client, customerId);
-                        break;
-                    case IdentityVerificationProgramStatus.PendingUserAction:
-                        // If there is an identity verification session in progress, there is no
-                        // need to start another one by calling StartIdentityVerification.
-                        Console.WriteLine("There is an advertiser identity verification session " +
-                            "in progress.\n" +
-                            "The URL for the verification process is: " +
-                            identityVerification.VerificationProgress.ActionUrl +
-                            " and it will expire at " +
-                            identityVerification.VerificationProgress.InvitationLinkExpirationTime);
-                        break;
-                    case IdentityVerificationProgramStatus.PendingReview:
-                        Console.WriteLine("The verification is under review.");
-                        break;
-                    case IdentityVerificationProgramStatus.Success:
-                        Console.WriteLine("The verification completed successfully.");
-                        break;
-                    default:
-                        Console.WriteLine("The verification has an unknown state.");
-                        break;
-                }
+                case IdentityVerificationProgramStatus.Unspecified:
+                    // Starts an identity verification session.
+                    StartIdentityVerification(client, customerId);
+                    // Calls GetIdentityVerification again to retrieve the verification progress
+                    // after starting an identity verification session.
+                    GetIdentityVerification(client, customerId);
+                    break;
+                case IdentityVerificationProgramStatus.PendingUserAction:
+                    // If there is an identity verification session in progress, there is no
+                    // need to start another one by calling StartIdentityVerification.
+                    Console.WriteLine("There is an advertiser identity verification session " +
+                        "in progress.\n" +
+                        "The URL for the verification process is: " +
+                        identityVerification.VerificationProgress.ActionUrl +
+                        " and it will expire at " +
+                        identityVerification.VerificationProgress.InvitationLinkExpirationTime);
+                    break;
+                case IdentityVerificationProgramStatus.PendingReview:
+                    Console.WriteLine("The verification is under review.");
+                    break;
+                case IdentityVerificationProgramStatus.Success:
+                    Console.WriteLine("The verification completed successfully.");
+                    break;
+                default:
+                    Console.WriteLine("The verification has an unknown state.");
+                    break;
             }
         }
 
