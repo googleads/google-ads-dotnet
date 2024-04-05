@@ -18,7 +18,10 @@ using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V16.Errors;
 using Google.Ads.GoogleAds.V16.Services;
 using static Google.Ads.GoogleAds.V16.Enums.IdentityVerificationProgramEnum.Types;
+using static Google.Ads.GoogleAds.V16.Enums.IdentityVerificationProgramStatusEnum.Types;
 using System;
+using Google.Ads.GoogleAds.Config;
+using Google.Ads.GoogleAds.Extensions.Config;
 
 namespace Google.Ads.GoogleAds.Examples.V16
 {
@@ -73,29 +76,9 @@ namespace Google.Ads.GoogleAds.Examples.V16
             IdentityVerification identityVerification =
                 GetIdentityVerification(client, customerId);
 
-            if (identityVerification != null)
+            if (identityVerification == null)
             {
-                if (identityVerification.VerificationProgress.ActionUrl == null)
-                {
-                    StartIdentityVerification(client, customerId);
 
-                    // Call GetIdentityVerification again to retrieve the verification progress
-                    // after starting an identity verification session.
-                    GetIdentityVerification(client, customerId);
-
-                } else {
-                    // If there is an identity verification session in progress, there is no need
-                    // to start another one by calling StartIdentityVerification.
-                    Console.WriteLine("There is an advertiser identity verification session in " +
-                        "progress.\n" +
-                        "The URL for the verification process is: " +
-                        identityVerification.VerificationProgress.ActionUrl +
-                        " and it will expire at " +
-                        identityVerification.VerificationProgress.InvitationLinkExpirationTime);
-                }
-            }
-            else
-            {
                 // If GetIdentityVerification returned an empty response, the account is not
                 // enrolled in mandatory identity verification.
                 Console.WriteLine($"Account {customerId} is not required to perform advertiser " +
@@ -103,7 +86,37 @@ namespace Google.Ads.GoogleAds.Examples.V16
                     "See https://support.google.com/adspolicy/answer/9703665 for details on how " +
                     "and when an account is required to undergo the advertiser identity " +
                     "verification program.");
+                    return;
+            }
 
+            switch(identityVerification.VerificationProgress.ProgramStatus)
+            {
+                case IdentityVerificationProgramStatus.Unspecified:
+                    // Starts an identity verification session.
+                    StartIdentityVerification(client, customerId);
+                    // Calls GetIdentityVerification again to retrieve the verification progress
+                    // after starting an identity verification session.
+                    GetIdentityVerification(client, customerId);
+                    break;
+                case IdentityVerificationProgramStatus.PendingUserAction:
+                    // If there is an identity verification session in progress, there is no
+                    // need to start another one by calling StartIdentityVerification.
+                    Console.WriteLine("There is an advertiser identity verification session " +
+                        "in progress.\n" +
+                        "The URL for the verification process is: " +
+                        identityVerification.VerificationProgress.ActionUrl +
+                        " and it will expire at " +
+                        identityVerification.VerificationProgress.InvitationLinkExpirationTime);
+                    break;
+                case IdentityVerificationProgramStatus.PendingReview:
+                    Console.WriteLine("The verification is under review.");
+                    break;
+                case IdentityVerificationProgramStatus.Success:
+                    Console.WriteLine("The verification completed successfully.");
+                    break;
+                default:
+                    Console.WriteLine("The verification has an unknown state.");
+                    break;
             }
         }
 
