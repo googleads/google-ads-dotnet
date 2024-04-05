@@ -132,16 +132,9 @@ namespace Google.Ads.GoogleAds.Examples.V16
                                     "{keyword.MatchType}");
                             }
 
-                            // [START build_apply_recommendation_operation]
-                            operations.Add(new ApplyRecommendationOperation()
-                            {
-                                // If you have a recommendation_id instead of the resource_name
-                                // you can create a resource name from it like this:
-                                // string recommendationResourceName =
-                                //    ResourceNames.Recommendation(customerId, recommendationId)
-                                ResourceName = recommendation.ResourceName
-                            });
-                            // [END build_apply_recommendation_operation]
+                            operations.Add(
+                                BuildApplyRecommendationOperation(recommendation.ResourceName)
+                            );
                         }
                     }
                 );
@@ -157,8 +150,44 @@ namespace Google.Ads.GoogleAds.Examples.V16
             // [END detect_keyword_recommendations]
         }
 
+        // [START build_apply_recommendation_operation]
+        private ApplyRecommendationOperation BuildApplyRecommendationOperation(
+            string recommendationResourceName
+        )
+        {
+            // If you have a recommendation_id instead of the resource_name you can create a
+            // resource name from it like this:
+            // string recommendationResourceName =
+            //    ResourceNames.Recommendation(customerId, recommendationId)
+
+            // Each recommendation type has optional parameters to override the recommended values.
+            // This is an example to override a recommended ad when a TextAdRecommendation is
+            // applied.
+            // For details, please read
+            // https://developers.google.com/google-ads/api/reference/rpc/latest/ApplyRecommendationOperation.
+            /*
+            Ad overridingAd = new Ad()
+            {
+                Id = "INSERT_AD_ID_AS_LONG_HERE"
+            };
+            applyRecommendationOperation.TextAd = new TextAdParameters()
+            {
+                Ad = overridingAd
+            };
+            */
+
+            ApplyRecommendationOperation applyRecommendationOperation =
+            new ApplyRecommendationOperation()
+            {
+                ResourceName = recommendationResourceName
+            };
+
+            return applyRecommendationOperation;
+        }
+        // [END build_apply_recommendation_operation]
+
         /// <summary>
-        /// Applies a list of recommendation.
+        /// Applies a list of recommendations.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
