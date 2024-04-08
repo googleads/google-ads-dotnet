@@ -16,10 +16,8 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V16.Errors;
-using Google.Ads.GoogleAds.V16.Resources;
 using Google.Ads.GoogleAds.V16.Services;
 using System;
-using System.Collections.Generic;
 using static Google.Ads.GoogleAds.V16.Services.DismissRecommendationRequest.Types;
 using static Google.Ads.GoogleAds.V16.Services.DismissRecommendationResponse.Types;
 
