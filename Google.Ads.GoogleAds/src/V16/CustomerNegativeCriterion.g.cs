@@ -29,7 +29,7 @@ namespace Google.Ads.GoogleAds.V16.Resources {
             "ZHMudjE2LnJlc291cmNlcxouZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjE2L2Nv",
             "bW1vbi9jcml0ZXJpYS5wcm90bxozZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjE2",
             "L2VudW1zL2NyaXRlcmlvbl90eXBlLnByb3RvGh9nb29nbGUvYXBpL2ZpZWxk",
-            "X2JlaGF2aW9yLnByb3RvGhlnb29nbGUvYXBpL3Jlc291cmNlLnByb3RvIr4H",
+            "X2JlaGF2aW9yLnByb3RvGhlnb29nbGUvYXBpL3Jlc291cmNlLnByb3RvIoUI",
             "ChlDdXN0b21lck5lZ2F0aXZlQ3JpdGVyaW9uElEKDXJlc291cmNlX25hbWUY",
             "ASABKAlCOuBBBfpBNAoyZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0N1c3Rv",
             "bWVyTmVnYXRpdmVDcml0ZXJpb24SFAoCaWQYCiABKANCA+BBA0gBiAEBElIK",
@@ -48,20 +48,22 @@ namespace Google.Ads.GoogleAds.V16.Resources {
             "b29nbGVhZHMudjE2LmNvbW1vbi5Zb3VUdWJlQ2hhbm5lbEluZm9CA+BBBUgA",
             "El4KFW5lZ2F0aXZlX2tleXdvcmRfbGlzdBgLIAEoCzI4Lmdvb2dsZS5hZHMu",
             "Z29vZ2xlYWRzLnYxNi5jb21tb24uTmVnYXRpdmVLZXl3b3JkTGlzdEluZm9C",
-            "A+BBBUgAOnjqQXUKMmdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9DdXN0b21l",
-            "ck5lZ2F0aXZlQ3JpdGVyaW9uEj9jdXN0b21lcnMve2N1c3RvbWVyX2lkfS9j",
-            "dXN0b21lck5lZ2F0aXZlQ3JpdGVyaWEve2NyaXRlcmlvbl9pZH1CCwoJY3Jp",
-            "dGVyaW9uQgUKA19pZEKQAgomY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYx",
-            "Ni5yZXNvdXJjZXNCHkN1c3RvbWVyTmVnYXRpdmVDcml0ZXJpb25Qcm90b1AB",
-            "Wktnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9n",
-            "b29nbGVhZHMvdjE2L3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGqAiJHb29n",
-            "bGUuQWRzLkdvb2dsZUFkcy5WMTYuUmVzb3VyY2VzygIiR29vZ2xlXEFkc1xH",
-            "b29nbGVBZHNcVjE2XFJlc291cmNlc+oCJkdvb2dsZTo6QWRzOjpHb29nbGVB",
-            "ZHM6OlYxNjo6UmVzb3VyY2VzYgZwcm90bzM="));
+            "A+BBBUgAEkUKCGlwX2Jsb2NrGAwgASgLMiwuZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjE2LmNvbW1vbi5JcEJsb2NrSW5mb0ID4EEFSAA6eOpBdQoyZ29vZ2xl",
+            "YWRzLmdvb2dsZWFwaXMuY29tL0N1c3RvbWVyTmVnYXRpdmVDcml0ZXJpb24S",
+            "P2N1c3RvbWVycy97Y3VzdG9tZXJfaWR9L2N1c3RvbWVyTmVnYXRpdmVDcml0",
+            "ZXJpYS97Y3JpdGVyaW9uX2lkfUILCgljcml0ZXJpb25CBQoDX2lkQpACCiZj",
+            "b20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE2LnJlc291cmNlc0IeQ3VzdG9t",
+            "ZXJOZWdhdGl2ZUNyaXRlcmlvblByb3RvUAFaS2dvb2dsZS5nb2xhbmcub3Jn",
+            "L2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MTYvcmVzb3Vy",
+            "Y2VzO3Jlc291cmNlc6ICA0dBQaoCIkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYx",
+            "Ni5SZXNvdXJjZXPKAiJHb29nbGVcQWRzXEdvb2dsZUFkc1xWMTZcUmVzb3Vy",
+            "Y2Vz6gImR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE2OjpSZXNvdXJjZXNi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V16.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V16.Enums.CriterionTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V16.Resources.CustomerNegativeCriterion), global::Google.Ads.GoogleAds.V16.Resources.CustomerNegativeCriterion.Parser, new[]{ "ResourceName", "Id", "Type", "ContentLabel", "MobileApplication", "MobileAppCategory", "Placement", "YoutubeVideo", "YoutubeChannel", "NegativeKeywordList" }, new[]{ "Criterion", "Id" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V16.Resources.CustomerNegativeCriterion), global::Google.Ads.GoogleAds.V16.Resources.CustomerNegativeCriterion.Parser, new[]{ "ResourceName", "Id", "Type", "ContentLabel", "MobileApplication", "MobileAppCategory", "Placement", "YoutubeVideo", "YoutubeChannel", "NegativeKeywordList", "IpBlock" }, new[]{ "Criterion", "Id" }, null, null, null)
           }));
     }
     #endregion
@@ -132,6 +134,9 @@ namespace Google.Ads.GoogleAds.V16.Resources {
           break;
         case CriterionOneofCase.NegativeKeywordList:
           NegativeKeywordList = other.NegativeKeywordList.Clone();
+          break;
+        case CriterionOneofCase.IpBlock:
+          IpBlock = other.IpBlock.Clone();
           break;
       }
 
@@ -312,6 +317,21 @@ namespace Google.Ads.GoogleAds.V16.Resources {
       }
     }
 
+    /// <summary>Field number for the "ip_block" field.</summary>
+    public const int IpBlockFieldNumber = 12;
+    /// <summary>
+    /// Immutable. IPBLock
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V16.Common.IpBlockInfo IpBlock {
+      get { return criterionCase_ == CriterionOneofCase.IpBlock ? (global::Google.Ads.GoogleAds.V16.Common.IpBlockInfo) criterion_ : null; }
+      set {
+        criterion_ = value;
+        criterionCase_ = value == null ? CriterionOneofCase.None : CriterionOneofCase.IpBlock;
+      }
+    }
+
     private object criterion_;
     /// <summary>Enum of possible cases for the "criterion" oneof.</summary>
     public enum CriterionOneofCase {
@@ -323,6 +343,7 @@ namespace Google.Ads.GoogleAds.V16.Resources {
       YoutubeVideo = 8,
       YoutubeChannel = 9,
       NegativeKeywordList = 11,
+      IpBlock = 12,
     }
     private CriterionOneofCase criterionCase_ = CriterionOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -363,6 +384,7 @@ namespace Google.Ads.GoogleAds.V16.Resources {
       if (!object.Equals(YoutubeVideo, other.YoutubeVideo)) return false;
       if (!object.Equals(YoutubeChannel, other.YoutubeChannel)) return false;
       if (!object.Equals(NegativeKeywordList, other.NegativeKeywordList)) return false;
+      if (!object.Equals(IpBlock, other.IpBlock)) return false;
       if (CriterionCase != other.CriterionCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -381,6 +403,7 @@ namespace Google.Ads.GoogleAds.V16.Resources {
       if (criterionCase_ == CriterionOneofCase.YoutubeVideo) hash ^= YoutubeVideo.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.YoutubeChannel) hash ^= YoutubeChannel.GetHashCode();
       if (criterionCase_ == CriterionOneofCase.NegativeKeywordList) hash ^= NegativeKeywordList.GetHashCode();
+      if (criterionCase_ == CriterionOneofCase.IpBlock) hash ^= IpBlock.GetHashCode();
       hash ^= (int) criterionCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -440,6 +463,10 @@ namespace Google.Ads.GoogleAds.V16.Resources {
         output.WriteRawTag(90);
         output.WriteMessage(NegativeKeywordList);
       }
+      if (criterionCase_ == CriterionOneofCase.IpBlock) {
+        output.WriteRawTag(98);
+        output.WriteMessage(IpBlock);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -490,6 +517,10 @@ namespace Google.Ads.GoogleAds.V16.Resources {
         output.WriteRawTag(90);
         output.WriteMessage(NegativeKeywordList);
       }
+      if (criterionCase_ == CriterionOneofCase.IpBlock) {
+        output.WriteRawTag(98);
+        output.WriteMessage(IpBlock);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -529,6 +560,9 @@ namespace Google.Ads.GoogleAds.V16.Resources {
       }
       if (criterionCase_ == CriterionOneofCase.NegativeKeywordList) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(NegativeKeywordList);
+      }
+      if (criterionCase_ == CriterionOneofCase.IpBlock) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(IpBlock);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -593,6 +627,12 @@ namespace Google.Ads.GoogleAds.V16.Resources {
             NegativeKeywordList = new global::Google.Ads.GoogleAds.V16.Common.NegativeKeywordListInfo();
           }
           NegativeKeywordList.MergeFrom(other.NegativeKeywordList);
+          break;
+        case CriterionOneofCase.IpBlock:
+          if (IpBlock == null) {
+            IpBlock = new global::Google.Ads.GoogleAds.V16.Common.IpBlockInfo();
+          }
+          IpBlock.MergeFrom(other.IpBlock);
           break;
       }
 
@@ -686,6 +726,15 @@ namespace Google.Ads.GoogleAds.V16.Resources {
             NegativeKeywordList = subBuilder;
             break;
           }
+          case 98: {
+            global::Google.Ads.GoogleAds.V16.Common.IpBlockInfo subBuilder = new global::Google.Ads.GoogleAds.V16.Common.IpBlockInfo();
+            if (criterionCase_ == CriterionOneofCase.IpBlock) {
+              subBuilder.MergeFrom(IpBlock);
+            }
+            input.ReadMessage(subBuilder);
+            IpBlock = subBuilder;
+            break;
+          }
         }
       }
     #endif
@@ -774,6 +823,15 @@ namespace Google.Ads.GoogleAds.V16.Resources {
             }
             input.ReadMessage(subBuilder);
             NegativeKeywordList = subBuilder;
+            break;
+          }
+          case 98: {
+            global::Google.Ads.GoogleAds.V16.Common.IpBlockInfo subBuilder = new global::Google.Ads.GoogleAds.V16.Common.IpBlockInfo();
+            if (criterionCase_ == CriterionOneofCase.IpBlock) {
+              subBuilder.MergeFrom(IpBlock);
+            }
+            input.ReadMessage(subBuilder);
+            IpBlock = subBuilder;
             break;
           }
         }

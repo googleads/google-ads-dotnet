@@ -305,7 +305,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             CustomerSkAdNetworkConversionValueSchemaServiceSettings effectiveSettings = settings ?? CustomerSkAdNetworkConversionValueSchemaServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callMutateCustomerSkAdNetworkConversionValueSchema = clientHelper.BuildApiCall<MutateCustomerSkAdNetworkConversionValueSchemaRequest, MutateCustomerSkAdNetworkConversionValueSchemaResponse>("MutateCustomerSkAdNetworkConversionValueSchema", grpcClient.MutateCustomerSkAdNetworkConversionValueSchemaAsync, grpcClient.MutateCustomerSkAdNetworkConversionValueSchema, effectiveSettings.MutateCustomerSkAdNetworkConversionValueSchemaSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateCustomerSkAdNetworkConversionValueSchema);
             Modify_MutateCustomerSkAdNetworkConversionValueSchemaApiCall(ref _callMutateCustomerSkAdNetworkConversionValueSchema);

@@ -14,7 +14,6 @@
 
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V16.Resources;
 using Google.Protobuf.Reflection;
 using System;
 using System.Linq;
@@ -742,11 +741,6 @@ namespace Google.Ads.GoogleAds.V16.Errors
         public static string LifeEvent(long customerId, long lifeEventId)
         {
             return $"customers/{customerId}/lifeEvents/{lifeEventId}";
-        }
-
-        public static string LocalServicesEmployee(long customerId, long glsEmployeeId)
-        {
-            return $"customers/{customerId}/localServicesEmployees/{glsEmployeeId}";
         }
 
         public static string LocationView(long customerId, long campaignId, long criterionId)

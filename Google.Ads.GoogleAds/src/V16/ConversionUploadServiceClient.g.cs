@@ -601,7 +601,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             ConversionUploadServiceSettings effectiveSettings = settings ?? ConversionUploadServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callUploadClickConversions = clientHelper.BuildApiCall<UploadClickConversionsRequest, UploadClickConversionsResponse>("UploadClickConversions", grpcClient.UploadClickConversionsAsync, grpcClient.UploadClickConversions, effectiveSettings.UploadClickConversionsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callUploadClickConversions);
             Modify_UploadClickConversionsApiCall(ref _callUploadClickConversions);

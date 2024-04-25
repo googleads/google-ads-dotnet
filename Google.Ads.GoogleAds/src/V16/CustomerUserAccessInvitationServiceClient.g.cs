@@ -377,7 +377,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             CustomerUserAccessInvitationServiceSettings effectiveSettings = settings ?? CustomerUserAccessInvitationServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callMutateCustomerUserAccessInvitation = clientHelper.BuildApiCall<MutateCustomerUserAccessInvitationRequest, MutateCustomerUserAccessInvitationResponse>("MutateCustomerUserAccessInvitation", grpcClient.MutateCustomerUserAccessInvitationAsync, grpcClient.MutateCustomerUserAccessInvitation, effectiveSettings.MutateCustomerUserAccessInvitationSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateCustomerUserAccessInvitation);
             Modify_MutateCustomerUserAccessInvitationApiCall(ref _callMutateCustomerUserAccessInvitation);

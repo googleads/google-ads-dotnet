@@ -1388,9 +1388,6 @@ namespace Google.Ads.GoogleAds.V16.Resources {
         private readonly pbc::RepeatedField<string> userLists_ = new pbc::RepeatedField<string>();
         /// <summary>
         /// User Lists.
-        /// The Similar Audiences sunset starts May 2023. Refer to
-        /// https://ads-developers.googleblog.com/2022/11/announcing-deprecation-and-sunset-of.html
-        /// for other options.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

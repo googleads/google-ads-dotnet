@@ -339,7 +339,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             TravelAssetSuggestionServiceSettings effectiveSettings = settings ?? TravelAssetSuggestionServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callSuggestTravelAssets = clientHelper.BuildApiCall<SuggestTravelAssetsRequest, SuggestTravelAssetsResponse>("SuggestTravelAssets", grpcClient.SuggestTravelAssetsAsync, grpcClient.SuggestTravelAssets, effectiveSettings.SuggestTravelAssetsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callSuggestTravelAssets);
             Modify_SuggestTravelAssetsApiCall(ref _callSuggestTravelAssets);

@@ -51,20 +51,21 @@ namespace Google.Ads.GoogleAds.V16.Resources {
             "L3tsb2NhbF9zZXJ2aWNlc19sZWFkX2NvbnZlcnNhdGlvbl9pZH1CFQoTX3Bo",
             "b25lX2NhbGxfZGV0YWlsc0ISChBfbWVzc2FnZV9kZXRhaWxzIlYKEFBob25l",
             "Q2FsbERldGFpbHMSIQoUY2FsbF9kdXJhdGlvbl9taWxsaXMYASABKANCA+BB",
-            "AxIfChJjYWxsX3JlY29yZGluZ191cmwYAiABKAlCA+BBAyIjCg5NZXNzYWdl",
-            "RGV0YWlscxIRCgR0ZXh0GAEgASgJQgPgQQNClAIKJmNvbS5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MTYucmVzb3VyY2VzQiJMb2NhbFNlcnZpY2VzTGVhZENv",
-            "bnZlcnNhdGlvblByb3RvUAFaS2dvb2dsZS5nb2xhbmcub3JnL2dlbnByb3Rv",
-            "L2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MTYvcmVzb3VyY2VzO3Jlc291",
-            "cmNlc6ICA0dBQaoCIkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYxNi5SZXNvdXJj",
-            "ZXPKAiJHb29nbGVcQWRzXEdvb2dsZUFkc1xWMTZcUmVzb3VyY2Vz6gImR29v",
-            "Z2xlOjpBZHM6Okdvb2dsZUFkczo6VjE2OjpSZXNvdXJjZXNiBnByb3RvMw=="));
+            "AxIfChJjYWxsX3JlY29yZGluZ191cmwYAiABKAlCA+BBAyJBCg5NZXNzYWdl",
+            "RGV0YWlscxIRCgR0ZXh0GAEgASgJQgPgQQMSHAoPYXR0YWNobWVudF91cmxz",
+            "GAIgAygJQgPgQQNClAIKJmNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTYu",
+            "cmVzb3VyY2VzQiJMb2NhbFNlcnZpY2VzTGVhZENvbnZlcnNhdGlvblByb3Rv",
+            "UAFaS2dvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRz",
+            "L2dvb2dsZWFkcy92MTYvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIkdv",
+            "b2dsZS5BZHMuR29vZ2xlQWRzLlYxNi5SZXNvdXJjZXPKAiJHb29nbGVcQWRz",
+            "XEdvb2dsZUFkc1xWMTZcUmVzb3VyY2Vz6gImR29vZ2xlOjpBZHM6Okdvb2ds",
+            "ZUFkczo6VjE2OjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V16.Enums.LocalServicesConversationTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V16.Enums.LocalServicesParticipantTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V16.Resources.LocalServicesLeadConversation), global::Google.Ads.GoogleAds.V16.Resources.LocalServicesLeadConversation.Parser, new[]{ "ResourceName", "Id", "ConversationChannel", "ParticipantType", "Lead", "EventDateTime", "PhoneCallDetails", "MessageDetails" }, new[]{ "PhoneCallDetails", "MessageDetails" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V16.Resources.PhoneCallDetails), global::Google.Ads.GoogleAds.V16.Resources.PhoneCallDetails.Parser, new[]{ "CallDurationMillis", "CallRecordingUrl" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V16.Resources.MessageDetails), global::Google.Ads.GoogleAds.V16.Resources.MessageDetails.Parser, new[]{ "Text" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V16.Resources.MessageDetails), global::Google.Ads.GoogleAds.V16.Resources.MessageDetails.Parser, new[]{ "Text", "AttachmentUrls" }, null, null, null, null)
           }));
     }
     #endregion
@@ -852,6 +853,7 @@ namespace Google.Ads.GoogleAds.V16.Resources {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MessageDetails(MessageDetails other) : this() {
       text_ = other.text_;
+      attachmentUrls_ = other.attachmentUrls_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -876,6 +878,21 @@ namespace Google.Ads.GoogleAds.V16.Resources {
       }
     }
 
+    /// <summary>Field number for the "attachment_urls" field.</summary>
+    public const int AttachmentUrlsFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _repeated_attachmentUrls_codec
+        = pb::FieldCodec.ForString(18);
+    private readonly pbc::RepeatedField<string> attachmentUrls_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// Output only. URL to the SMS or email attachments. These URLs can be used to
+    /// download the contents of the attachment by using the developer token.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<string> AttachmentUrls {
+      get { return attachmentUrls_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -892,6 +909,7 @@ namespace Google.Ads.GoogleAds.V16.Resources {
         return true;
       }
       if (Text != other.Text) return false;
+      if(!attachmentUrls_.Equals(other.attachmentUrls_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -900,6 +918,7 @@ namespace Google.Ads.GoogleAds.V16.Resources {
     public override int GetHashCode() {
       int hash = 1;
       if (Text.Length != 0) hash ^= Text.GetHashCode();
+      hash ^= attachmentUrls_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -922,6 +941,7 @@ namespace Google.Ads.GoogleAds.V16.Resources {
         output.WriteRawTag(10);
         output.WriteString(Text);
       }
+      attachmentUrls_.WriteTo(output, _repeated_attachmentUrls_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -936,6 +956,7 @@ namespace Google.Ads.GoogleAds.V16.Resources {
         output.WriteRawTag(10);
         output.WriteString(Text);
       }
+      attachmentUrls_.WriteTo(ref output, _repeated_attachmentUrls_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -949,6 +970,7 @@ namespace Google.Ads.GoogleAds.V16.Resources {
       if (Text.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Text);
       }
+      size += attachmentUrls_.CalculateSize(_repeated_attachmentUrls_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -964,6 +986,7 @@ namespace Google.Ads.GoogleAds.V16.Resources {
       if (other.Text.Length != 0) {
         Text = other.Text;
       }
+      attachmentUrls_.Add(other.attachmentUrls_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -983,6 +1006,10 @@ namespace Google.Ads.GoogleAds.V16.Resources {
             Text = input.ReadString();
             break;
           }
+          case 18: {
+            attachmentUrls_.AddEntriesFrom(input, _repeated_attachmentUrls_codec);
+            break;
+          }
         }
       }
     #endif
@@ -1000,6 +1027,10 @@ namespace Google.Ads.GoogleAds.V16.Resources {
             break;
           case 10: {
             Text = input.ReadString();
+            break;
+          }
+          case 18: {
+            attachmentUrls_.AddEntriesFrom(ref input, _repeated_attachmentUrls_codec);
             break;
           }
         }

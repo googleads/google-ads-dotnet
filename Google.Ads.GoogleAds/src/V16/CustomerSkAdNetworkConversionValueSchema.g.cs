@@ -26,62 +26,94 @@ namespace Google.Ads.GoogleAds.V16.Resources {
           string.Concat(
             "Cldnb29nbGUvYWRzL2dvb2dsZWFkcy92MTYvcmVzb3VyY2VzL2N1c3RvbWVy",
             "X3NrX2FkX25ldHdvcmtfY29udmVyc2lvbl92YWx1ZV9zY2hlbWEucHJvdG8S",
-            "Imdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNi5yZXNvdXJjZXMaH2dvb2dsZS9h",
-            "cGkvZmllbGRfYmVoYXZpb3IucHJvdG8aGWdvb2dsZS9hcGkvcmVzb3VyY2Uu",
-            "cHJvdG8ihQ8KKEN1c3RvbWVyU2tBZE5ldHdvcmtDb252ZXJzaW9uVmFsdWVT",
-            "Y2hlbWESYAoNcmVzb3VyY2VfbmFtZRgBIAEoCUJJ4EED+kFDCkFnb29nbGVh",
-            "ZHMuZ29vZ2xlYXBpcy5jb20vQ3VzdG9tZXJTa0FkTmV0d29ya0NvbnZlcnNp",
-            "b25WYWx1ZVNjaGVtYRKCAQoGc2NoZW1hGAIgASgLMm0uZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjE2LnJlc291cmNlcy5DdXN0b21lclNrQWROZXR3b3JrQ29u",
-            "dmVyc2lvblZhbHVlU2NoZW1hLlNrQWROZXR3b3JrQ29udmVyc2lvblZhbHVl",
-            "U2NoZW1hQgPgQQMa0gsKIFNrQWROZXR3b3JrQ29udmVyc2lvblZhbHVlU2No",
-            "ZW1hEhYKBmFwcF9pZBgBIAEoCUIG4EEC4EEDEiUKGG1lYXN1cmVtZW50X3dp",
-            "bmRvd19ob3VycxgCIAEoBUID4EEDEsYBCiZmaW5lX2dyYWluZWRfY29udmVy",
-            "c2lvbl92YWx1ZV9tYXBwaW5ncxgDIAMoCzKQAS5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MTYucmVzb3VyY2VzLkN1c3RvbWVyU2tBZE5ldHdvcmtDb252ZXJz",
-            "aW9uVmFsdWVTY2hlbWEuU2tBZE5ldHdvcmtDb252ZXJzaW9uVmFsdWVTY2hl",
-            "bWEuRmluZUdyYWluZWRDb252ZXJzaW9uVmFsdWVNYXBwaW5nc0ID4EEDGv8B",
-            "CiJGaW5lR3JhaW5lZENvbnZlcnNpb25WYWx1ZU1hcHBpbmdzEioKHWZpbmVf",
-            "Z3JhaW5lZF9jb252ZXJzaW9uX3ZhbHVlGAEgASgFQgPgQQMSrAEKGGNvbnZl",
-            "cnNpb25fdmFsdWVfbWFwcGluZxgCIAEoCzKEAS5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MTYucmVzb3VyY2VzLkN1c3RvbWVyU2tBZE5ldHdvcmtDb252ZXJz",
-            "aW9uVmFsdWVTY2hlbWEuU2tBZE5ldHdvcmtDb252ZXJzaW9uVmFsdWVTY2hl",
-            "bWEuQ29udmVyc2lvblZhbHVlTWFwcGluZ0ID4EEDGv4BChZDb252ZXJzaW9u",
-            "VmFsdWVNYXBwaW5nEigKG21pbl90aW1lX3Bvc3RfaW5zdGFsbF9ob3VycxgB",
-            "IAEoA0ID4EEDEigKG21heF90aW1lX3Bvc3RfaW5zdGFsbF9ob3VycxgCIAEo",
-            "A0ID4EEDEo8BCg1tYXBwZWRfZXZlbnRzGAMgAygLMnMuZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjE2LnJlc291cmNlcy5DdXN0b21lclNrQWROZXR3b3JrQ29u",
-            "dmVyc2lvblZhbHVlU2NoZW1hLlNrQWROZXR3b3JrQ29udmVyc2lvblZhbHVl",
-            "U2NoZW1hLkV2ZW50QgPgQQMaogUKBUV2ZW50Eh4KEW1hcHBlZF9ldmVudF9u",
-            "YW1lGAEgASgJQgPgQQMSGgoNY3VycmVuY3lfY29kZRgCIAEoCUID4EEDEqUB",
-            "ChNldmVudF9yZXZlbnVlX3JhbmdlGAMgASgLMoABLmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYxNi5yZXNvdXJjZXMuQ3VzdG9tZXJTa0FkTmV0d29ya0NvbnZl",
-            "cnNpb25WYWx1ZVNjaGVtYS5Ta0FkTmV0d29ya0NvbnZlcnNpb25WYWx1ZVNj",
-            "aGVtYS5FdmVudC5SZXZlbnVlUmFuZ2VCA+BBA0gAEiIKE2V2ZW50X3JldmVu",
-            "dWVfdmFsdWUYBCABKAFCA+BBA0gAErABChZldmVudF9vY2N1cnJlbmNlX3Jh",
-            "bmdlGAUgASgLMogBLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNi5yZXNvdXJj",
-            "ZXMuQ3VzdG9tZXJTa0FkTmV0d29ya0NvbnZlcnNpb25WYWx1ZVNjaGVtYS5T",
-            "a0FkTmV0d29ya0NvbnZlcnNpb25WYWx1ZVNjaGVtYS5FdmVudC5FdmVudE9j",
-            "Y3VycmVuY2VSYW5nZUID4EEDSAESHAoNZXZlbnRfY291bnRlchgGIAEoA0ID",
-            "4EEDSAEaTgoMUmV2ZW51ZVJhbmdlEh4KEW1pbl9ldmVudF9yZXZlbnVlGAMg",
-            "ASgBQgPgQQMSHgoRbWF4X2V2ZW50X3JldmVudWUYBCABKAFCA+BBAxpSChRF",
-            "dmVudE9jY3VycmVuY2VSYW5nZRIcCg9taW5fZXZlbnRfY291bnQYASABKANC",
-            "A+BBAxIcCg9tYXhfZXZlbnRfY291bnQYAiABKANCA+BBA0IOCgxyZXZlbnVl",
-            "X3JhdGVCDAoKZXZlbnRfcmF0ZTqcAepBmAEKQWdvb2dsZWFkcy5nb29nbGVh",
-            "cGlzLmNvbS9DdXN0b21lclNrQWROZXR3b3JrQ29udmVyc2lvblZhbHVlU2No",
-            "ZW1hElNjdXN0b21lcnMve2N1c3RvbWVyX2lkfS9jdXN0b21lclNrQWROZXR3",
-            "b3JrQ29udmVyc2lvblZhbHVlU2NoZW1hcy97YWNjb3VudF9saW5rX2lkfUKf",
-            "AgomY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNi5yZXNvdXJjZXNCLUN1",
-            "c3RvbWVyU2tBZE5ldHdvcmtDb252ZXJzaW9uVmFsdWVTY2hlbWFQcm90b1AB",
-            "Wktnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9n",
-            "b29nbGVhZHMvdjE2L3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGqAiJHb29n",
-            "bGUuQWRzLkdvb2dsZUFkcy5WMTYuUmVzb3VyY2VzygIiR29vZ2xlXEFkc1xH",
-            "b29nbGVBZHNcVjE2XFJlc291cmNlc+oCJkdvb2dsZTo6QWRzOjpHb29nbGVB",
-            "ZHM6OlYxNjo6UmVzb3VyY2VzYgZwcm90bzM="));
+            "Imdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNi5yZXNvdXJjZXMaSmdvb2dsZS9h",
+            "ZHMvZ29vZ2xlYWRzL3YxNi9lbnVtcy9za19hZF9uZXR3b3JrX2NvYXJzZV9j",
+            "b252ZXJzaW9uX3ZhbHVlLnByb3RvGh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2",
+            "aW9yLnByb3RvGhlnb29nbGUvYXBpL3Jlc291cmNlLnByb3RvIvkYCihDdXN0",
+            "b21lclNrQWROZXR3b3JrQ29udmVyc2lvblZhbHVlU2NoZW1hEmAKDXJlc291",
+            "cmNlX25hbWUYASABKAlCSeBBA/pBQwpBZ29vZ2xlYWRzLmdvb2dsZWFwaXMu",
+            "Y29tL0N1c3RvbWVyU2tBZE5ldHdvcmtDb252ZXJzaW9uVmFsdWVTY2hlbWES",
+            "ggEKBnNjaGVtYRgCIAEoCzJtLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNi5y",
+            "ZXNvdXJjZXMuQ3VzdG9tZXJTa0FkTmV0d29ya0NvbnZlcnNpb25WYWx1ZVNj",
+            "aGVtYS5Ta0FkTmV0d29ya0NvbnZlcnNpb25WYWx1ZVNjaGVtYUID4EEDGsYV",
+            "CiBTa0FkTmV0d29ya0NvbnZlcnNpb25WYWx1ZVNjaGVtYRIWCgZhcHBfaWQY",
+            "ASABKAlCBuBBAuBBAxIlChhtZWFzdXJlbWVudF93aW5kb3dfaG91cnMYAiAB",
+            "KAVCA+BBAxLGAQomZmluZV9ncmFpbmVkX2NvbnZlcnNpb25fdmFsdWVfbWFw",
+            "cGluZ3MYAyADKAsykAEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE2LnJlc291",
+            "cmNlcy5DdXN0b21lclNrQWROZXR3b3JrQ29udmVyc2lvblZhbHVlU2NoZW1h",
+            "LlNrQWROZXR3b3JrQ29udmVyc2lvblZhbHVlU2NoZW1hLkZpbmVHcmFpbmVk",
+            "Q29udmVyc2lvblZhbHVlTWFwcGluZ3NCA+BBAxKdAQoRcG9zdGJhY2tfbWFw",
+            "cGluZ3MYBCADKAsyfS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTYucmVzb3Vy",
+            "Y2VzLkN1c3RvbWVyU2tBZE5ldHdvcmtDb252ZXJzaW9uVmFsdWVTY2hlbWEu",
+            "U2tBZE5ldHdvcmtDb252ZXJzaW9uVmFsdWVTY2hlbWEuUG9zdGJhY2tNYXBw",
+            "aW5nQgPgQQMa/wEKIkZpbmVHcmFpbmVkQ29udmVyc2lvblZhbHVlTWFwcGlu",
+            "Z3MSKgodZmluZV9ncmFpbmVkX2NvbnZlcnNpb25fdmFsdWUYASABKAVCA+BB",
+            "AxKsAQoYY29udmVyc2lvbl92YWx1ZV9tYXBwaW5nGAIgASgLMoQBLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYxNi5yZXNvdXJjZXMuQ3VzdG9tZXJTa0FkTmV0",
+            "d29ya0NvbnZlcnNpb25WYWx1ZVNjaGVtYS5Ta0FkTmV0d29ya0NvbnZlcnNp",
+            "b25WYWx1ZVNjaGVtYS5Db252ZXJzaW9uVmFsdWVNYXBwaW5nQgPgQQMaiwQK",
+            "D1Bvc3RiYWNrTWFwcGluZxIkChdwb3N0YmFja19zZXF1ZW5jZV9pbmRleBgB",
+            "IAEoBUID4EEDEsoBCihjb2Fyc2VfZ3JhaW5lZF9jb252ZXJzaW9uX3ZhbHVl",
+            "X21hcHBpbmdzGAIgASgLMpIBLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNi5y",
+            "ZXNvdXJjZXMuQ3VzdG9tZXJTa0FkTmV0d29ya0NvbnZlcnNpb25WYWx1ZVNj",
+            "aGVtYS5Ta0FkTmV0d29ya0NvbnZlcnNpb25WYWx1ZVNjaGVtYS5Db2Fyc2VH",
+            "cmFpbmVkQ29udmVyc2lvblZhbHVlTWFwcGluZ3NCA+BBAxKZAQojbG9ja193",
+            "aW5kb3dfY29hcnNlX2NvbnZlcnNpb25fdmFsdWUYAyABKA4yZS5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52MTYuZW51bXMuU2tBZE5ldHdvcmtDb2Fyc2VDb252",
+            "ZXJzaW9uVmFsdWVFbnVtLlNrQWROZXR3b3JrQ29hcnNlQ29udmVyc2lvblZh",
+            "bHVlQgPgQQNIABIwCiFsb2NrX3dpbmRvd19maW5lX2NvbnZlcnNpb25fdmFs",
+            "dWUYBCABKAVCA+BBA0gAEiAKEWxvY2tfd2luZG93X2V2ZW50GAUgASgJQgPg",
+            "QQNIAEIVChNsb2NrX3dpbmRvd190cmlnZ2VyGsMECiRDb2Fyc2VHcmFpbmVk",
+            "Q29udmVyc2lvblZhbHVlTWFwcGluZ3MSsAEKHGxvd19jb252ZXJzaW9uX3Zh",
+            "bHVlX21hcHBpbmcYASABKAsyhAEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE2",
+            "LnJlc291cmNlcy5DdXN0b21lclNrQWROZXR3b3JrQ29udmVyc2lvblZhbHVl",
+            "U2NoZW1hLlNrQWROZXR3b3JrQ29udmVyc2lvblZhbHVlU2NoZW1hLkNvbnZl",
+            "cnNpb25WYWx1ZU1hcHBpbmdCA+BBAxKzAQofbWVkaXVtX2NvbnZlcnNpb25f",
+            "dmFsdWVfbWFwcGluZxgCIAEoCzKEAS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MTYucmVzb3VyY2VzLkN1c3RvbWVyU2tBZE5ldHdvcmtDb252ZXJzaW9uVmFs",
+            "dWVTY2hlbWEuU2tBZE5ldHdvcmtDb252ZXJzaW9uVmFsdWVTY2hlbWEuQ29u",
+            "dmVyc2lvblZhbHVlTWFwcGluZ0ID4EEDErEBCh1oaWdoX2NvbnZlcnNpb25f",
+            "dmFsdWVfbWFwcGluZxgDIAEoCzKEAS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MTYucmVzb3VyY2VzLkN1c3RvbWVyU2tBZE5ldHdvcmtDb252ZXJzaW9uVmFs",
+            "dWVTY2hlbWEuU2tBZE5ldHdvcmtDb252ZXJzaW9uVmFsdWVTY2hlbWEuQ29u",
+            "dmVyc2lvblZhbHVlTWFwcGluZ0ID4EEDGv4BChZDb252ZXJzaW9uVmFsdWVN",
+            "YXBwaW5nEigKG21pbl90aW1lX3Bvc3RfaW5zdGFsbF9ob3VycxgBIAEoA0ID",
+            "4EEDEigKG21heF90aW1lX3Bvc3RfaW5zdGFsbF9ob3VycxgCIAEoA0ID4EED",
+            "Eo8BCg1tYXBwZWRfZXZlbnRzGAMgAygLMnMuZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjE2LnJlc291cmNlcy5DdXN0b21lclNrQWROZXR3b3JrQ29udmVyc2lv",
+            "blZhbHVlU2NoZW1hLlNrQWROZXR3b3JrQ29udmVyc2lvblZhbHVlU2NoZW1h",
+            "LkV2ZW50QgPgQQMaogUKBUV2ZW50Eh4KEW1hcHBlZF9ldmVudF9uYW1lGAEg",
+            "ASgJQgPgQQMSGgoNY3VycmVuY3lfY29kZRgCIAEoCUID4EEDEqUBChNldmVu",
+            "dF9yZXZlbnVlX3JhbmdlGAMgASgLMoABLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYxNi5yZXNvdXJjZXMuQ3VzdG9tZXJTa0FkTmV0d29ya0NvbnZlcnNpb25W",
+            "YWx1ZVNjaGVtYS5Ta0FkTmV0d29ya0NvbnZlcnNpb25WYWx1ZVNjaGVtYS5F",
+            "dmVudC5SZXZlbnVlUmFuZ2VCA+BBA0gAEiIKE2V2ZW50X3JldmVudWVfdmFs",
+            "dWUYBCABKAFCA+BBA0gAErABChZldmVudF9vY2N1cnJlbmNlX3JhbmdlGAUg",
+            "ASgLMogBLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNi5yZXNvdXJjZXMuQ3Vz",
+            "dG9tZXJTa0FkTmV0d29ya0NvbnZlcnNpb25WYWx1ZVNjaGVtYS5Ta0FkTmV0",
+            "d29ya0NvbnZlcnNpb25WYWx1ZVNjaGVtYS5FdmVudC5FdmVudE9jY3VycmVu",
+            "Y2VSYW5nZUID4EEDSAESHAoNZXZlbnRfY291bnRlchgGIAEoA0ID4EEDSAEa",
+            "TgoMUmV2ZW51ZVJhbmdlEh4KEW1pbl9ldmVudF9yZXZlbnVlGAMgASgBQgPg",
+            "QQMSHgoRbWF4X2V2ZW50X3JldmVudWUYBCABKAFCA+BBAxpSChRFdmVudE9j",
+            "Y3VycmVuY2VSYW5nZRIcCg9taW5fZXZlbnRfY291bnQYASABKANCA+BBAxIc",
+            "Cg9tYXhfZXZlbnRfY291bnQYAiABKANCA+BBA0IOCgxyZXZlbnVlX3JhdGVC",
+            "DAoKZXZlbnRfcmF0ZTqcAepBmAEKQWdvb2dsZWFkcy5nb29nbGVhcGlzLmNv",
+            "bS9DdXN0b21lclNrQWROZXR3b3JrQ29udmVyc2lvblZhbHVlU2NoZW1hElNj",
+            "dXN0b21lcnMve2N1c3RvbWVyX2lkfS9jdXN0b21lclNrQWROZXR3b3JrQ29u",
+            "dmVyc2lvblZhbHVlU2NoZW1hcy97YWNjb3VudF9saW5rX2lkfUKfAgomY29t",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNi5yZXNvdXJjZXNCLUN1c3RvbWVy",
+            "U2tBZE5ldHdvcmtDb252ZXJzaW9uVmFsdWVTY2hlbWFQcm90b1ABWktnb29n",
+            "bGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVh",
+            "ZHMvdjE2L3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGqAiJHb29nbGUuQWRz",
+            "Lkdvb2dsZUFkcy5WMTYuUmVzb3VyY2VzygIiR29vZ2xlXEFkc1xHb29nbGVB",
+            "ZHNcVjE2XFJlc291cmNlc+oCJkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYx",
+            "Njo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V16.Enums.SkAdNetworkCoarseConversionValueReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema), global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Parser, new[]{ "ResourceName", "Schema" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema), global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Parser, new[]{ "AppId", "MeasurementWindowHours", "FineGrainedConversionValueMappings" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.FineGrainedConversionValueMappings), global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.FineGrainedConversionValueMappings.Parser, new[]{ "FineGrainedConversionValue", "ConversionValueMapping" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema), global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Parser, new[]{ "ResourceName", "Schema" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema), global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Parser, new[]{ "AppId", "MeasurementWindowHours", "FineGrainedConversionValueMappings", "PostbackMappings" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.FineGrainedConversionValueMappings), global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.FineGrainedConversionValueMappings.Parser, new[]{ "FineGrainedConversionValue", "ConversionValueMapping" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.PostbackMapping), global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.PostbackMapping.Parser, new[]{ "PostbackSequenceIndex", "CoarseGrainedConversionValueMappings", "LockWindowCoarseConversionValue", "LockWindowFineConversionValue", "LockWindowEvent" }, new[]{ "LockWindowTrigger" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.CoarseGrainedConversionValueMappings), global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.CoarseGrainedConversionValueMappings.Parser, new[]{ "LowConversionValueMapping", "MediumConversionValueMapping", "HighConversionValueMapping" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.ConversionValueMapping), global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.ConversionValueMapping.Parser, new[]{ "MinTimePostInstallHours", "MaxTimePostInstallHours", "MappedEvents" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.Event), global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.Event.Parser, new[]{ "MappedEventName", "CurrencyCode", "EventRevenueRange", "EventRevenueValue", "EventOccurrenceRange", "EventCounter" }, new[]{ "RevenueRate", "EventRate" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.Event.Types.RevenueRange), global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.Event.Types.RevenueRange.Parser, new[]{ "MinEventRevenue", "MaxEventRevenue" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.Event.Types.EventOccurrenceRange), global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.Event.Types.EventOccurrenceRange.Parser, new[]{ "MinEventCount", "MaxEventCount" }, null, null, null, null)})})})
@@ -382,6 +414,7 @@ namespace Google.Ads.GoogleAds.V16.Resources {
           appId_ = other.appId_;
           measurementWindowHours_ = other.measurementWindowHours_;
           fineGrainedConversionValueMappings_ = other.fineGrainedConversionValueMappings_.Clone();
+          postbackMappings_ = other.postbackMappings_.Clone();
           _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
         }
 
@@ -431,11 +464,30 @@ namespace Google.Ads.GoogleAds.V16.Resources {
         private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.FineGrainedConversionValueMappings> fineGrainedConversionValueMappings_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.FineGrainedConversionValueMappings>();
         /// <summary>
         /// Output only. Fine grained conversion value mappings.
+        /// For SkAdNetwork versions >= 4.0 that support multiple conversion
+        /// windows, fine grained conversion value mappings are only applicable to
+        /// the first postback.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public pbc::RepeatedField<global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.FineGrainedConversionValueMappings> FineGrainedConversionValueMappings {
           get { return fineGrainedConversionValueMappings_; }
+        }
+
+        /// <summary>Field number for the "postback_mappings" field.</summary>
+        public const int PostbackMappingsFieldNumber = 4;
+        private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.PostbackMapping> _repeated_postbackMappings_codec
+            = pb::FieldCodec.ForMessage(34, global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.PostbackMapping.Parser);
+        private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.PostbackMapping> postbackMappings_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.PostbackMapping>();
+        /// <summary>
+        /// Output only. Per-postback conversion value mappings for postbacks in
+        /// multiple conversion windows. Only applicable for SkAdNetwork versions
+        /// >= 4.0.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public pbc::RepeatedField<global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.PostbackMapping> PostbackMappings {
+          get { return postbackMappings_; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -456,6 +508,7 @@ namespace Google.Ads.GoogleAds.V16.Resources {
           if (AppId != other.AppId) return false;
           if (MeasurementWindowHours != other.MeasurementWindowHours) return false;
           if(!fineGrainedConversionValueMappings_.Equals(other.fineGrainedConversionValueMappings_)) return false;
+          if(!postbackMappings_.Equals(other.postbackMappings_)) return false;
           return Equals(_unknownFields, other._unknownFields);
         }
 
@@ -466,6 +519,7 @@ namespace Google.Ads.GoogleAds.V16.Resources {
           if (AppId.Length != 0) hash ^= AppId.GetHashCode();
           if (MeasurementWindowHours != 0) hash ^= MeasurementWindowHours.GetHashCode();
           hash ^= fineGrainedConversionValueMappings_.GetHashCode();
+          hash ^= postbackMappings_.GetHashCode();
           if (_unknownFields != null) {
             hash ^= _unknownFields.GetHashCode();
           }
@@ -493,6 +547,7 @@ namespace Google.Ads.GoogleAds.V16.Resources {
             output.WriteInt32(MeasurementWindowHours);
           }
           fineGrainedConversionValueMappings_.WriteTo(output, _repeated_fineGrainedConversionValueMappings_codec);
+          postbackMappings_.WriteTo(output, _repeated_postbackMappings_codec);
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
           }
@@ -512,6 +567,7 @@ namespace Google.Ads.GoogleAds.V16.Resources {
             output.WriteInt32(MeasurementWindowHours);
           }
           fineGrainedConversionValueMappings_.WriteTo(ref output, _repeated_fineGrainedConversionValueMappings_codec);
+          postbackMappings_.WriteTo(ref output, _repeated_postbackMappings_codec);
           if (_unknownFields != null) {
             _unknownFields.WriteTo(ref output);
           }
@@ -529,6 +585,7 @@ namespace Google.Ads.GoogleAds.V16.Resources {
             size += 1 + pb::CodedOutputStream.ComputeInt32Size(MeasurementWindowHours);
           }
           size += fineGrainedConversionValueMappings_.CalculateSize(_repeated_fineGrainedConversionValueMappings_codec);
+          size += postbackMappings_.CalculateSize(_repeated_postbackMappings_codec);
           if (_unknownFields != null) {
             size += _unknownFields.CalculateSize();
           }
@@ -548,6 +605,7 @@ namespace Google.Ads.GoogleAds.V16.Resources {
             MeasurementWindowHours = other.MeasurementWindowHours;
           }
           fineGrainedConversionValueMappings_.Add(other.fineGrainedConversionValueMappings_);
+          postbackMappings_.Add(other.postbackMappings_);
           _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
         }
 
@@ -575,6 +633,10 @@ namespace Google.Ads.GoogleAds.V16.Resources {
                 fineGrainedConversionValueMappings_.AddEntriesFrom(input, _repeated_fineGrainedConversionValueMappings_codec);
                 break;
               }
+              case 34: {
+                postbackMappings_.AddEntriesFrom(input, _repeated_postbackMappings_codec);
+                break;
+              }
             }
           }
         #endif
@@ -600,6 +662,10 @@ namespace Google.Ads.GoogleAds.V16.Resources {
               }
               case 26: {
                 fineGrainedConversionValueMappings_.AddEntriesFrom(ref input, _repeated_fineGrainedConversionValueMappings_codec);
+                break;
+              }
+              case 34: {
+                postbackMappings_.AddEntriesFrom(ref input, _repeated_postbackMappings_codec);
                 break;
               }
             }
@@ -860,6 +926,758 @@ namespace Google.Ads.GoogleAds.V16.Resources {
           }
 
           /// <summary>
+          /// Mappings for each postback in multiple conversion windows.
+          /// </summary>
+          [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+          public sealed partial class PostbackMapping : pb::IMessage<PostbackMapping>
+          #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+              , pb::IBufferMessage
+          #endif
+          {
+            private static readonly pb::MessageParser<PostbackMapping> _parser = new pb::MessageParser<PostbackMapping>(() => new PostbackMapping());
+            private pb::UnknownFieldSet _unknownFields;
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public static pb::MessageParser<PostbackMapping> Parser { get { return _parser; } }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public static pbr::MessageDescriptor Descriptor {
+              get { return global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Descriptor.NestedTypes[1]; }
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            pbr::MessageDescriptor pb::IMessage.Descriptor {
+              get { return Descriptor; }
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public PostbackMapping() {
+              OnConstruction();
+            }
+
+            partial void OnConstruction();
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public PostbackMapping(PostbackMapping other) : this() {
+              postbackSequenceIndex_ = other.postbackSequenceIndex_;
+              coarseGrainedConversionValueMappings_ = other.coarseGrainedConversionValueMappings_ != null ? other.coarseGrainedConversionValueMappings_.Clone() : null;
+              switch (other.LockWindowTriggerCase) {
+                case LockWindowTriggerOneofCase.LockWindowCoarseConversionValue:
+                  LockWindowCoarseConversionValue = other.LockWindowCoarseConversionValue;
+                  break;
+                case LockWindowTriggerOneofCase.LockWindowFineConversionValue:
+                  LockWindowFineConversionValue = other.LockWindowFineConversionValue;
+                  break;
+                case LockWindowTriggerOneofCase.LockWindowEvent:
+                  LockWindowEvent = other.LockWindowEvent;
+                  break;
+              }
+
+              _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public PostbackMapping Clone() {
+              return new PostbackMapping(this);
+            }
+
+            /// <summary>Field number for the "postback_sequence_index" field.</summary>
+            public const int PostbackSequenceIndexFieldNumber = 1;
+            private int postbackSequenceIndex_;
+            /// <summary>
+            /// Output only. 0-based index that indicates the order of postback. Valid
+            /// values are in the inclusive range [0,2].
+            /// </summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public int PostbackSequenceIndex {
+              get { return postbackSequenceIndex_; }
+              set {
+                postbackSequenceIndex_ = value;
+              }
+            }
+
+            /// <summary>Field number for the "coarse_grained_conversion_value_mappings" field.</summary>
+            public const int CoarseGrainedConversionValueMappingsFieldNumber = 2;
+            private global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.CoarseGrainedConversionValueMappings coarseGrainedConversionValueMappings_;
+            /// <summary>
+            /// Output only. Conversion value mappings for all coarse grained
+            /// conversion values.
+            /// </summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.CoarseGrainedConversionValueMappings CoarseGrainedConversionValueMappings {
+              get { return coarseGrainedConversionValueMappings_; }
+              set {
+                coarseGrainedConversionValueMappings_ = value;
+              }
+            }
+
+            /// <summary>Field number for the "lock_window_coarse_conversion_value" field.</summary>
+            public const int LockWindowCoarseConversionValueFieldNumber = 3;
+            /// <summary>
+            /// Output only. Coarse grained conversion value that triggers conversion
+            /// window lock.
+            /// </summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public global::Google.Ads.GoogleAds.V16.Enums.SkAdNetworkCoarseConversionValueEnum.Types.SkAdNetworkCoarseConversionValue LockWindowCoarseConversionValue {
+              get { return HasLockWindowCoarseConversionValue ? (global::Google.Ads.GoogleAds.V16.Enums.SkAdNetworkCoarseConversionValueEnum.Types.SkAdNetworkCoarseConversionValue) lockWindowTrigger_ : global::Google.Ads.GoogleAds.V16.Enums.SkAdNetworkCoarseConversionValueEnum.Types.SkAdNetworkCoarseConversionValue.Unspecified; }
+              set {
+                lockWindowTrigger_ = value;
+                lockWindowTriggerCase_ = LockWindowTriggerOneofCase.LockWindowCoarseConversionValue;
+              }
+            }
+            /// <summary>Gets whether the "lock_window_coarse_conversion_value" field is set</summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public bool HasLockWindowCoarseConversionValue {
+              get { return lockWindowTriggerCase_ == LockWindowTriggerOneofCase.LockWindowCoarseConversionValue; }
+            }
+            /// <summary> Clears the value of the oneof if it's currently set to "lock_window_coarse_conversion_value" </summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public void ClearLockWindowCoarseConversionValue() {
+              if (HasLockWindowCoarseConversionValue) {
+                ClearLockWindowTrigger();
+              }
+            }
+
+            /// <summary>Field number for the "lock_window_fine_conversion_value" field.</summary>
+            public const int LockWindowFineConversionValueFieldNumber = 4;
+            /// <summary>
+            /// Output only. Fine grained conversion value that triggers conversion
+            /// window lock.
+            /// </summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public int LockWindowFineConversionValue {
+              get { return HasLockWindowFineConversionValue ? (int) lockWindowTrigger_ : 0; }
+              set {
+                lockWindowTrigger_ = value;
+                lockWindowTriggerCase_ = LockWindowTriggerOneofCase.LockWindowFineConversionValue;
+              }
+            }
+            /// <summary>Gets whether the "lock_window_fine_conversion_value" field is set</summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public bool HasLockWindowFineConversionValue {
+              get { return lockWindowTriggerCase_ == LockWindowTriggerOneofCase.LockWindowFineConversionValue; }
+            }
+            /// <summary> Clears the value of the oneof if it's currently set to "lock_window_fine_conversion_value" </summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public void ClearLockWindowFineConversionValue() {
+              if (HasLockWindowFineConversionValue) {
+                ClearLockWindowTrigger();
+              }
+            }
+
+            /// <summary>Field number for the "lock_window_event" field.</summary>
+            public const int LockWindowEventFieldNumber = 5;
+            /// <summary>
+            /// Output only. Event name that triggers conversion window lock.
+            /// </summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public string LockWindowEvent {
+              get { return HasLockWindowEvent ? (string) lockWindowTrigger_ : ""; }
+              set {
+                lockWindowTrigger_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+                lockWindowTriggerCase_ = LockWindowTriggerOneofCase.LockWindowEvent;
+              }
+            }
+            /// <summary>Gets whether the "lock_window_event" field is set</summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public bool HasLockWindowEvent {
+              get { return lockWindowTriggerCase_ == LockWindowTriggerOneofCase.LockWindowEvent; }
+            }
+            /// <summary> Clears the value of the oneof if it's currently set to "lock_window_event" </summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public void ClearLockWindowEvent() {
+              if (HasLockWindowEvent) {
+                ClearLockWindowTrigger();
+              }
+            }
+
+            private object lockWindowTrigger_;
+            /// <summary>Enum of possible cases for the "lock_window_trigger" oneof.</summary>
+            public enum LockWindowTriggerOneofCase {
+              None = 0,
+              LockWindowCoarseConversionValue = 3,
+              LockWindowFineConversionValue = 4,
+              LockWindowEvent = 5,
+            }
+            private LockWindowTriggerOneofCase lockWindowTriggerCase_ = LockWindowTriggerOneofCase.None;
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public LockWindowTriggerOneofCase LockWindowTriggerCase {
+              get { return lockWindowTriggerCase_; }
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public void ClearLockWindowTrigger() {
+              lockWindowTriggerCase_ = LockWindowTriggerOneofCase.None;
+              lockWindowTrigger_ = null;
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public override bool Equals(object other) {
+              return Equals(other as PostbackMapping);
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public bool Equals(PostbackMapping other) {
+              if (ReferenceEquals(other, null)) {
+                return false;
+              }
+              if (ReferenceEquals(other, this)) {
+                return true;
+              }
+              if (PostbackSequenceIndex != other.PostbackSequenceIndex) return false;
+              if (!object.Equals(CoarseGrainedConversionValueMappings, other.CoarseGrainedConversionValueMappings)) return false;
+              if (LockWindowCoarseConversionValue != other.LockWindowCoarseConversionValue) return false;
+              if (LockWindowFineConversionValue != other.LockWindowFineConversionValue) return false;
+              if (LockWindowEvent != other.LockWindowEvent) return false;
+              if (LockWindowTriggerCase != other.LockWindowTriggerCase) return false;
+              return Equals(_unknownFields, other._unknownFields);
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public override int GetHashCode() {
+              int hash = 1;
+              if (PostbackSequenceIndex != 0) hash ^= PostbackSequenceIndex.GetHashCode();
+              if (coarseGrainedConversionValueMappings_ != null) hash ^= CoarseGrainedConversionValueMappings.GetHashCode();
+              if (HasLockWindowCoarseConversionValue) hash ^= LockWindowCoarseConversionValue.GetHashCode();
+              if (HasLockWindowFineConversionValue) hash ^= LockWindowFineConversionValue.GetHashCode();
+              if (HasLockWindowEvent) hash ^= LockWindowEvent.GetHashCode();
+              hash ^= (int) lockWindowTriggerCase_;
+              if (_unknownFields != null) {
+                hash ^= _unknownFields.GetHashCode();
+              }
+              return hash;
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public override string ToString() {
+              return pb::JsonFormatter.ToDiagnosticString(this);
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public void WriteTo(pb::CodedOutputStream output) {
+            #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+              output.WriteRawMessage(this);
+            #else
+              if (PostbackSequenceIndex != 0) {
+                output.WriteRawTag(8);
+                output.WriteInt32(PostbackSequenceIndex);
+              }
+              if (coarseGrainedConversionValueMappings_ != null) {
+                output.WriteRawTag(18);
+                output.WriteMessage(CoarseGrainedConversionValueMappings);
+              }
+              if (HasLockWindowCoarseConversionValue) {
+                output.WriteRawTag(24);
+                output.WriteEnum((int) LockWindowCoarseConversionValue);
+              }
+              if (HasLockWindowFineConversionValue) {
+                output.WriteRawTag(32);
+                output.WriteInt32(LockWindowFineConversionValue);
+              }
+              if (HasLockWindowEvent) {
+                output.WriteRawTag(42);
+                output.WriteString(LockWindowEvent);
+              }
+              if (_unknownFields != null) {
+                _unknownFields.WriteTo(output);
+              }
+            #endif
+            }
+
+            #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+              if (PostbackSequenceIndex != 0) {
+                output.WriteRawTag(8);
+                output.WriteInt32(PostbackSequenceIndex);
+              }
+              if (coarseGrainedConversionValueMappings_ != null) {
+                output.WriteRawTag(18);
+                output.WriteMessage(CoarseGrainedConversionValueMappings);
+              }
+              if (HasLockWindowCoarseConversionValue) {
+                output.WriteRawTag(24);
+                output.WriteEnum((int) LockWindowCoarseConversionValue);
+              }
+              if (HasLockWindowFineConversionValue) {
+                output.WriteRawTag(32);
+                output.WriteInt32(LockWindowFineConversionValue);
+              }
+              if (HasLockWindowEvent) {
+                output.WriteRawTag(42);
+                output.WriteString(LockWindowEvent);
+              }
+              if (_unknownFields != null) {
+                _unknownFields.WriteTo(ref output);
+              }
+            }
+            #endif
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public int CalculateSize() {
+              int size = 0;
+              if (PostbackSequenceIndex != 0) {
+                size += 1 + pb::CodedOutputStream.ComputeInt32Size(PostbackSequenceIndex);
+              }
+              if (coarseGrainedConversionValueMappings_ != null) {
+                size += 1 + pb::CodedOutputStream.ComputeMessageSize(CoarseGrainedConversionValueMappings);
+              }
+              if (HasLockWindowCoarseConversionValue) {
+                size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) LockWindowCoarseConversionValue);
+              }
+              if (HasLockWindowFineConversionValue) {
+                size += 1 + pb::CodedOutputStream.ComputeInt32Size(LockWindowFineConversionValue);
+              }
+              if (HasLockWindowEvent) {
+                size += 1 + pb::CodedOutputStream.ComputeStringSize(LockWindowEvent);
+              }
+              if (_unknownFields != null) {
+                size += _unknownFields.CalculateSize();
+              }
+              return size;
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public void MergeFrom(PostbackMapping other) {
+              if (other == null) {
+                return;
+              }
+              if (other.PostbackSequenceIndex != 0) {
+                PostbackSequenceIndex = other.PostbackSequenceIndex;
+              }
+              if (other.coarseGrainedConversionValueMappings_ != null) {
+                if (coarseGrainedConversionValueMappings_ == null) {
+                  CoarseGrainedConversionValueMappings = new global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.CoarseGrainedConversionValueMappings();
+                }
+                CoarseGrainedConversionValueMappings.MergeFrom(other.CoarseGrainedConversionValueMappings);
+              }
+              switch (other.LockWindowTriggerCase) {
+                case LockWindowTriggerOneofCase.LockWindowCoarseConversionValue:
+                  LockWindowCoarseConversionValue = other.LockWindowCoarseConversionValue;
+                  break;
+                case LockWindowTriggerOneofCase.LockWindowFineConversionValue:
+                  LockWindowFineConversionValue = other.LockWindowFineConversionValue;
+                  break;
+                case LockWindowTriggerOneofCase.LockWindowEvent:
+                  LockWindowEvent = other.LockWindowEvent;
+                  break;
+              }
+
+              _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public void MergeFrom(pb::CodedInputStream input) {
+            #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+              input.ReadRawMessage(this);
+            #else
+              uint tag;
+              while ((tag = input.ReadTag()) != 0) {
+                switch(tag) {
+                  default:
+                    _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                    break;
+                  case 8: {
+                    PostbackSequenceIndex = input.ReadInt32();
+                    break;
+                  }
+                  case 18: {
+                    if (coarseGrainedConversionValueMappings_ == null) {
+                      CoarseGrainedConversionValueMappings = new global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.CoarseGrainedConversionValueMappings();
+                    }
+                    input.ReadMessage(CoarseGrainedConversionValueMappings);
+                    break;
+                  }
+                  case 24: {
+                    lockWindowTrigger_ = input.ReadEnum();
+                    lockWindowTriggerCase_ = LockWindowTriggerOneofCase.LockWindowCoarseConversionValue;
+                    break;
+                  }
+                  case 32: {
+                    LockWindowFineConversionValue = input.ReadInt32();
+                    break;
+                  }
+                  case 42: {
+                    LockWindowEvent = input.ReadString();
+                    break;
+                  }
+                }
+              }
+            #endif
+            }
+
+            #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+              uint tag;
+              while ((tag = input.ReadTag()) != 0) {
+                switch(tag) {
+                  default:
+                    _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                    break;
+                  case 8: {
+                    PostbackSequenceIndex = input.ReadInt32();
+                    break;
+                  }
+                  case 18: {
+                    if (coarseGrainedConversionValueMappings_ == null) {
+                      CoarseGrainedConversionValueMappings = new global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.CoarseGrainedConversionValueMappings();
+                    }
+                    input.ReadMessage(CoarseGrainedConversionValueMappings);
+                    break;
+                  }
+                  case 24: {
+                    lockWindowTrigger_ = input.ReadEnum();
+                    lockWindowTriggerCase_ = LockWindowTriggerOneofCase.LockWindowCoarseConversionValue;
+                    break;
+                  }
+                  case 32: {
+                    LockWindowFineConversionValue = input.ReadInt32();
+                    break;
+                  }
+                  case 42: {
+                    LockWindowEvent = input.ReadString();
+                    break;
+                  }
+                }
+              }
+            }
+            #endif
+
+          }
+
+          /// <summary>
+          /// Mappings for coarse grained conversion values.
+          /// </summary>
+          [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+          public sealed partial class CoarseGrainedConversionValueMappings : pb::IMessage<CoarseGrainedConversionValueMappings>
+          #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+              , pb::IBufferMessage
+          #endif
+          {
+            private static readonly pb::MessageParser<CoarseGrainedConversionValueMappings> _parser = new pb::MessageParser<CoarseGrainedConversionValueMappings>(() => new CoarseGrainedConversionValueMappings());
+            private pb::UnknownFieldSet _unknownFields;
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public static pb::MessageParser<CoarseGrainedConversionValueMappings> Parser { get { return _parser; } }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public static pbr::MessageDescriptor Descriptor {
+              get { return global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Descriptor.NestedTypes[2]; }
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            pbr::MessageDescriptor pb::IMessage.Descriptor {
+              get { return Descriptor; }
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public CoarseGrainedConversionValueMappings() {
+              OnConstruction();
+            }
+
+            partial void OnConstruction();
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public CoarseGrainedConversionValueMappings(CoarseGrainedConversionValueMappings other) : this() {
+              lowConversionValueMapping_ = other.lowConversionValueMapping_ != null ? other.lowConversionValueMapping_.Clone() : null;
+              mediumConversionValueMapping_ = other.mediumConversionValueMapping_ != null ? other.mediumConversionValueMapping_.Clone() : null;
+              highConversionValueMapping_ = other.highConversionValueMapping_ != null ? other.highConversionValueMapping_.Clone() : null;
+              _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public CoarseGrainedConversionValueMappings Clone() {
+              return new CoarseGrainedConversionValueMappings(this);
+            }
+
+            /// <summary>Field number for the "low_conversion_value_mapping" field.</summary>
+            public const int LowConversionValueMappingFieldNumber = 1;
+            private global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.ConversionValueMapping lowConversionValueMapping_;
+            /// <summary>
+            /// Output only. Mapping for "low" coarse conversion value.
+            /// </summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.ConversionValueMapping LowConversionValueMapping {
+              get { return lowConversionValueMapping_; }
+              set {
+                lowConversionValueMapping_ = value;
+              }
+            }
+
+            /// <summary>Field number for the "medium_conversion_value_mapping" field.</summary>
+            public const int MediumConversionValueMappingFieldNumber = 2;
+            private global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.ConversionValueMapping mediumConversionValueMapping_;
+            /// <summary>
+            /// Output only. Mapping for "medium" coarse conversion value.
+            /// </summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.ConversionValueMapping MediumConversionValueMapping {
+              get { return mediumConversionValueMapping_; }
+              set {
+                mediumConversionValueMapping_ = value;
+              }
+            }
+
+            /// <summary>Field number for the "high_conversion_value_mapping" field.</summary>
+            public const int HighConversionValueMappingFieldNumber = 3;
+            private global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.ConversionValueMapping highConversionValueMapping_;
+            /// <summary>
+            /// Output only. Mapping for "high" coarse conversion value.
+            /// </summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.ConversionValueMapping HighConversionValueMapping {
+              get { return highConversionValueMapping_; }
+              set {
+                highConversionValueMapping_ = value;
+              }
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public override bool Equals(object other) {
+              return Equals(other as CoarseGrainedConversionValueMappings);
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public bool Equals(CoarseGrainedConversionValueMappings other) {
+              if (ReferenceEquals(other, null)) {
+                return false;
+              }
+              if (ReferenceEquals(other, this)) {
+                return true;
+              }
+              if (!object.Equals(LowConversionValueMapping, other.LowConversionValueMapping)) return false;
+              if (!object.Equals(MediumConversionValueMapping, other.MediumConversionValueMapping)) return false;
+              if (!object.Equals(HighConversionValueMapping, other.HighConversionValueMapping)) return false;
+              return Equals(_unknownFields, other._unknownFields);
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public override int GetHashCode() {
+              int hash = 1;
+              if (lowConversionValueMapping_ != null) hash ^= LowConversionValueMapping.GetHashCode();
+              if (mediumConversionValueMapping_ != null) hash ^= MediumConversionValueMapping.GetHashCode();
+              if (highConversionValueMapping_ != null) hash ^= HighConversionValueMapping.GetHashCode();
+              if (_unknownFields != null) {
+                hash ^= _unknownFields.GetHashCode();
+              }
+              return hash;
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public override string ToString() {
+              return pb::JsonFormatter.ToDiagnosticString(this);
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public void WriteTo(pb::CodedOutputStream output) {
+            #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+              output.WriteRawMessage(this);
+            #else
+              if (lowConversionValueMapping_ != null) {
+                output.WriteRawTag(10);
+                output.WriteMessage(LowConversionValueMapping);
+              }
+              if (mediumConversionValueMapping_ != null) {
+                output.WriteRawTag(18);
+                output.WriteMessage(MediumConversionValueMapping);
+              }
+              if (highConversionValueMapping_ != null) {
+                output.WriteRawTag(26);
+                output.WriteMessage(HighConversionValueMapping);
+              }
+              if (_unknownFields != null) {
+                _unknownFields.WriteTo(output);
+              }
+            #endif
+            }
+
+            #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+              if (lowConversionValueMapping_ != null) {
+                output.WriteRawTag(10);
+                output.WriteMessage(LowConversionValueMapping);
+              }
+              if (mediumConversionValueMapping_ != null) {
+                output.WriteRawTag(18);
+                output.WriteMessage(MediumConversionValueMapping);
+              }
+              if (highConversionValueMapping_ != null) {
+                output.WriteRawTag(26);
+                output.WriteMessage(HighConversionValueMapping);
+              }
+              if (_unknownFields != null) {
+                _unknownFields.WriteTo(ref output);
+              }
+            }
+            #endif
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public int CalculateSize() {
+              int size = 0;
+              if (lowConversionValueMapping_ != null) {
+                size += 1 + pb::CodedOutputStream.ComputeMessageSize(LowConversionValueMapping);
+              }
+              if (mediumConversionValueMapping_ != null) {
+                size += 1 + pb::CodedOutputStream.ComputeMessageSize(MediumConversionValueMapping);
+              }
+              if (highConversionValueMapping_ != null) {
+                size += 1 + pb::CodedOutputStream.ComputeMessageSize(HighConversionValueMapping);
+              }
+              if (_unknownFields != null) {
+                size += _unknownFields.CalculateSize();
+              }
+              return size;
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public void MergeFrom(CoarseGrainedConversionValueMappings other) {
+              if (other == null) {
+                return;
+              }
+              if (other.lowConversionValueMapping_ != null) {
+                if (lowConversionValueMapping_ == null) {
+                  LowConversionValueMapping = new global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.ConversionValueMapping();
+                }
+                LowConversionValueMapping.MergeFrom(other.LowConversionValueMapping);
+              }
+              if (other.mediumConversionValueMapping_ != null) {
+                if (mediumConversionValueMapping_ == null) {
+                  MediumConversionValueMapping = new global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.ConversionValueMapping();
+                }
+                MediumConversionValueMapping.MergeFrom(other.MediumConversionValueMapping);
+              }
+              if (other.highConversionValueMapping_ != null) {
+                if (highConversionValueMapping_ == null) {
+                  HighConversionValueMapping = new global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.ConversionValueMapping();
+                }
+                HighConversionValueMapping.MergeFrom(other.HighConversionValueMapping);
+              }
+              _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public void MergeFrom(pb::CodedInputStream input) {
+            #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+              input.ReadRawMessage(this);
+            #else
+              uint tag;
+              while ((tag = input.ReadTag()) != 0) {
+                switch(tag) {
+                  default:
+                    _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                    break;
+                  case 10: {
+                    if (lowConversionValueMapping_ == null) {
+                      LowConversionValueMapping = new global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.ConversionValueMapping();
+                    }
+                    input.ReadMessage(LowConversionValueMapping);
+                    break;
+                  }
+                  case 18: {
+                    if (mediumConversionValueMapping_ == null) {
+                      MediumConversionValueMapping = new global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.ConversionValueMapping();
+                    }
+                    input.ReadMessage(MediumConversionValueMapping);
+                    break;
+                  }
+                  case 26: {
+                    if (highConversionValueMapping_ == null) {
+                      HighConversionValueMapping = new global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.ConversionValueMapping();
+                    }
+                    input.ReadMessage(HighConversionValueMapping);
+                    break;
+                  }
+                }
+              }
+            #endif
+            }
+
+            #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+              uint tag;
+              while ((tag = input.ReadTag()) != 0) {
+                switch(tag) {
+                  default:
+                    _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                    break;
+                  case 10: {
+                    if (lowConversionValueMapping_ == null) {
+                      LowConversionValueMapping = new global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.ConversionValueMapping();
+                    }
+                    input.ReadMessage(LowConversionValueMapping);
+                    break;
+                  }
+                  case 18: {
+                    if (mediumConversionValueMapping_ == null) {
+                      MediumConversionValueMapping = new global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.ConversionValueMapping();
+                    }
+                    input.ReadMessage(MediumConversionValueMapping);
+                    break;
+                  }
+                  case 26: {
+                    if (highConversionValueMapping_ == null) {
+                      HighConversionValueMapping = new global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Types.ConversionValueMapping();
+                    }
+                    input.ReadMessage(HighConversionValueMapping);
+                    break;
+                  }
+                }
+              }
+            }
+            #endif
+
+          }
+
+          /// <summary>
           /// Represents mapping from one conversion value to one or more conversion
           /// events.
           /// </summary>
@@ -878,7 +1696,7 @@ namespace Google.Ads.GoogleAds.V16.Resources {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
             [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public static pbr::MessageDescriptor Descriptor {
-              get { return global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Descriptor.NestedTypes[1]; }
+              get { return global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Descriptor.NestedTypes[3]; }
             }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1146,7 +1964,7 @@ namespace Google.Ads.GoogleAds.V16.Resources {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
             [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public static pbr::MessageDescriptor Descriptor {
-              get { return global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Descriptor.NestedTypes[2]; }
+              get { return global::Google.Ads.GoogleAds.V16.Resources.CustomerSkAdNetworkConversionValueSchema.Types.SkAdNetworkConversionValueSchema.Descriptor.NestedTypes[4]; }
             }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

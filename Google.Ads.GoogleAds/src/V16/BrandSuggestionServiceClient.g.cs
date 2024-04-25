@@ -324,7 +324,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             BrandSuggestionServiceSettings effectiveSettings = settings ?? BrandSuggestionServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callSuggestBrands = clientHelper.BuildApiCall<SuggestBrandsRequest, SuggestBrandsResponse>("SuggestBrands", grpcClient.SuggestBrandsAsync, grpcClient.SuggestBrands, effectiveSettings.SuggestBrandsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callSuggestBrands);
             Modify_SuggestBrandsApiCall(ref _callSuggestBrands);

@@ -435,7 +435,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             KeywordPlanCampaignServiceSettings effectiveSettings = settings ?? KeywordPlanCampaignServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callMutateKeywordPlanCampaigns = clientHelper.BuildApiCall<MutateKeywordPlanCampaignsRequest, MutateKeywordPlanCampaignsResponse>("MutateKeywordPlanCampaigns", grpcClient.MutateKeywordPlanCampaignsAsync, grpcClient.MutateKeywordPlanCampaigns, effectiveSettings.MutateKeywordPlanCampaignsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateKeywordPlanCampaigns);
             Modify_MutateKeywordPlanCampaignsApiCall(ref _callMutateKeywordPlanCampaigns);

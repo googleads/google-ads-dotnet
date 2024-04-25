@@ -170,6 +170,8 @@ namespace Google.Ads.GoogleAds.V16.Resources {
   #region Messages
   /// <summary>
   /// An ad group criterion.
+  /// The ad_group_criterion report only returns criteria that were explicitly
+  /// added to the ad group.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AdGroupCriterion : pb::IMessage<AdGroupCriterion>
@@ -1157,9 +1159,6 @@ namespace Google.Ads.GoogleAds.V16.Resources {
     public const int UserListFieldNumber = 42;
     /// <summary>
     /// Immutable. User List.
-    /// The Similar Audiences sunset starts May 2023. Refer to
-    /// https://ads-developers.googleblog.com/2022/11/announcing-deprecation-and-sunset-of.html
-    /// for other options.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

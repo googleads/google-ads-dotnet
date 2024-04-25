@@ -1,3 +1,18 @@
+20.0.0
+======
+- Added support for version 16.1 of the Google Ads API.
+- Updated code examples:
+  * VerifyAdvertiserIdentity
+  * UploadConversionAdjustment
+- Removed obsolete code examples:
+  * AddFlightsFeed
+  * AddRealEstateFeed
+  * ApproveMerchantCenterLink
+  * RejectMerchantCenterLink
+- Bumped the Google.Api.Gax.Grpc dependency to 4.8.0 and changed the Grpc.Core dependency to depend
+  directly on it
+- Removed support for version 14 of the Google Ads API.
+
 19.0.1
 ======
 - Added support for .NET 8.0 in the Google.Ads.GoogleAds project: it was left out in the previous

@@ -339,7 +339,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             BiddingSeasonalityAdjustmentServiceSettings effectiveSettings = settings ?? BiddingSeasonalityAdjustmentServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callMutateBiddingSeasonalityAdjustments = clientHelper.BuildApiCall<MutateBiddingSeasonalityAdjustmentsRequest, MutateBiddingSeasonalityAdjustmentsResponse>("MutateBiddingSeasonalityAdjustments", grpcClient.MutateBiddingSeasonalityAdjustmentsAsync, grpcClient.MutateBiddingSeasonalityAdjustments, effectiveSettings.MutateBiddingSeasonalityAdjustmentsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateBiddingSeasonalityAdjustments);
             Modify_MutateBiddingSeasonalityAdjustmentsApiCall(ref _callMutateBiddingSeasonalityAdjustments);

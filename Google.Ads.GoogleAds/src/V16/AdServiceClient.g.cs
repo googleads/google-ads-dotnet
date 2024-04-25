@@ -759,7 +759,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             AdServiceSettings effectiveSettings = settings ?? AdServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callGetAd = clientHelper.BuildApiCall<GetAdRequest, gagvr::Ad>("GetAd", grpcClient.GetAdAsync, grpcClient.GetAd, effectiveSettings.GetAdSettings).WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetAd);
             Modify_GetAdApiCall(ref _callGetAd);

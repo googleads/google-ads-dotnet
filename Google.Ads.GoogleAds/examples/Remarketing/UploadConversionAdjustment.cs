@@ -57,18 +57,16 @@ namespace Google.Ads.GoogleAds.Examples.V16
             public ConversionAdjustmentType AdjustmentType { get; set; }
 
             /// <summary>
-            /// The original conversion time.
+            /// The transaction ID of the conversion to adjust. Required if the conversion being
+            /// adjusted meets the criteria described at
+            /// https://developers.google.com/google-ads/api/docs/conversions/upload-adjustments#requirements.
             /// </summary>
-            [Option("conversionDateTime", Required = true, HelpText =
-                "The original conversion time.")]
-            public string ConversionDateTime { get; set; }
-
-            /// <summary>
-            /// The Google Click ID for which adjustments are uploaded.
-            /// </summary>
-            [Option("gclid", Required = true, HelpText =
-                "The Google Click ID for which adjustments are uploaded.")]
-            public string Gclid { get; set; }
+            [Option("orderId", Required = true, HelpText =
+                "The transaction ID of the conversion to adjust. Required if the conversion " +
+                "being adjusted meets the criteria described at " +
+                "https://developers.google.com/google-ads/api/docs/conversions/upload-adjustments#requirements."
+            )]
+            public string OrderId { get; set; }
 
             /// <summary>
             /// The adjustment date and time.
@@ -96,7 +94,7 @@ namespace Google.Ads.GoogleAds.Examples.V16
             UploadConversionAdjustment codeExample = new UploadConversionAdjustment();
             Console.WriteLine(codeExample.Description);
             codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.ConversionActionId,
-                options.Gclid, options.ConversionDateTime, options.AdjustmentDateTime,
+                options.OrderId, options.AdjustmentDateTime,
                 options.AdjustmentType, options.RestatementValue);
         }
 
@@ -116,13 +114,13 @@ namespace Google.Ads.GoogleAds.Examples.V16
         /// <param name="conversionActionId">ID of the conversion action for which adjustments are
         /// uploaded.</param>
         /// <param name="adjustmentType">The type of adjustment.</param>
-        /// <param name="conversionDateTime">The original conversion time.</param>
-        /// <param name="gclid">The Google Click ID for which adjustments are uploaded.</param>
+        /// <param name="orderId">The order ID for the conversion. Strongly recommended instead
+        /// of using GCLID and conversionDateTime.</param>
         /// <param name="adjustmentDateTime">The adjustment date and time.</param>
         /// <param name="restatementValue">The restatement value.</param>
         // [START upload_conversion_adjustment]
         public void Run(GoogleAdsClient client, long customerId, long conversionActionId,
-            string gclid, string conversionDateTime, string adjustmentDateTime,
+            string orderId, string adjustmentDateTime,
             ConversionAdjustmentType adjustmentType,
             double? restatementValue)
         {
@@ -131,16 +129,19 @@ namespace Google.Ads.GoogleAds.Examples.V16
                 client.GetService(Services.V16.ConversionAdjustmentUploadService);
 
             // Associate conversion adjustments with the existing conversion action.
-            // The GCLID should have been uploaded before with a conversion.
             ConversionAdjustment conversionAdjustment = new ConversionAdjustment()
             {
                 ConversionAction = ResourceNames.ConversionAction(customerId, conversionActionId),
                 AdjustmentType = adjustmentType,
-                GclidDateTimePair = new GclidDateTimePair()
-                {
-                    Gclid = gclid,
-                    ConversionDateTime = conversionDateTime,
-                },
+                // Sets the orderId to identify the conversion to adjust.
+                OrderId = orderId,
+                // As an alternative to setting orderId, you can provide a GclidDateTimePair,
+                // but setting orderId instead is strongly recommended.
+                //GclidDateTimePair = new GclidDateTimePair()
+                //{
+                //    Gclid = gclid,
+                //    ConversionDateTime = conversionDateTime,
+                //},
                 AdjustmentDateTime = adjustmentDateTime,
             };
 
@@ -162,15 +163,29 @@ namespace Google.Ads.GoogleAds.Examples.V16
                         {
                             CustomerId = customerId.ToString(),
                             ConversionAdjustments = { conversionAdjustment },
+                            // Enables partial failure (must be true).
                             PartialFailure = true,
                             ValidateOnly = false
                         });
 
-                ConversionAdjustmentResult result = response.Results[0];
-                // Print the result.
-                Console.WriteLine($"Uploaded conversion adjustment value of" +
-                    $" '{result.ConversionAction}' for Google Click ID " +
-                    $"'{result.GclidDateTimePair.Gclid}'");
+                // Prints any partial errors returned.
+                // To review the overall health of your recent uploads, see:
+                // https://developers.google.com/google-ads/api/docs/conversions/upload-summaries
+                if (response.PartialFailureError != null)
+                {
+                    // Extracts the partial failure from the response status.
+                    GoogleAdsFailure partialFailure = response.PartialFailure;
+                    Console.WriteLine($"{partialFailure.Errors.Count} partial failure error(s) " +
+                        $"occurred");
+                }
+                else
+                {
+                    ConversionAdjustmentResult result = response.Results[0];
+                    // Print the result.
+                    Console.WriteLine($"Uploaded conversion adjustment value of" +
+                        $" '{result.ConversionAction}' for Google Click ID " +
+                        $"'{result.GclidDateTimePair.Gclid}'");
+                }
             }
             catch (GoogleAdsException e)
             {

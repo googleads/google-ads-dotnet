@@ -409,7 +409,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             CustomAudienceServiceSettings effectiveSettings = settings ?? CustomAudienceServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callMutateCustomAudiences = clientHelper.BuildApiCall<MutateCustomAudiencesRequest, MutateCustomAudiencesResponse>("MutateCustomAudiences", grpcClient.MutateCustomAudiencesAsync, grpcClient.MutateCustomAudiences, effectiveSettings.MutateCustomAudiencesSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateCustomAudiences);
             Modify_MutateCustomAudiencesApiCall(ref _callMutateCustomAudiences);

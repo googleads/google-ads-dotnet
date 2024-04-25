@@ -508,7 +508,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             CampaignExtensionSettingServiceSettings effectiveSettings = settings ?? CampaignExtensionSettingServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callMutateCampaignExtensionSettings = clientHelper.BuildApiCall<MutateCampaignExtensionSettingsRequest, MutateCampaignExtensionSettingsResponse>("MutateCampaignExtensionSettings", grpcClient.MutateCampaignExtensionSettingsAsync, grpcClient.MutateCampaignExtensionSettings, effectiveSettings.MutateCampaignExtensionSettingsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateCampaignExtensionSettings);
             Modify_MutateCampaignExtensionSettingsApiCall(ref _callMutateCampaignExtensionSettings);

@@ -787,7 +787,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             RecommendationServiceSettings effectiveSettings = settings ?? RecommendationServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callApplyRecommendation = clientHelper.BuildApiCall<ApplyRecommendationRequest, ApplyRecommendationResponse>("ApplyRecommendation", grpcClient.ApplyRecommendationAsync, grpcClient.ApplyRecommendation, effectiveSettings.ApplyRecommendationSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callApplyRecommendation);
             Modify_ApplyRecommendationApiCall(ref _callApplyRecommendation);

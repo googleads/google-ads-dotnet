@@ -49,8 +49,10 @@ namespace Google.Ads.GoogleAds.V16.Resources {
   }
   #region Messages
   /// <summary>
-  /// A location view summarizes the performance of campaigns by
-  /// Location criteria.
+  /// A location view summarizes the performance of campaigns by a Location
+  /// criterion.
+  /// If no Location criterion is set, no results are returned; instead, use
+  /// geographic_view or user_location_view for visitor location data.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class LocationView : pb::IMessage<LocationView>

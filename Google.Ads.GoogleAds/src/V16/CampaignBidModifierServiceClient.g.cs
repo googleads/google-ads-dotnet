@@ -477,7 +477,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             CampaignBidModifierServiceSettings effectiveSettings = settings ?? CampaignBidModifierServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callMutateCampaignBidModifiers = clientHelper.BuildApiCall<MutateCampaignBidModifiersRequest, MutateCampaignBidModifiersResponse>("MutateCampaignBidModifiers", grpcClient.MutateCampaignBidModifiersAsync, grpcClient.MutateCampaignBidModifiers, effectiveSettings.MutateCampaignBidModifiersSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateCampaignBidModifiers);
             Modify_MutateCampaignBidModifiersApiCall(ref _callMutateCampaignBidModifiers);

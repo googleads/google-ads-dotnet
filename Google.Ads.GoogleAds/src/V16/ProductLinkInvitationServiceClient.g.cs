@@ -663,7 +663,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             ProductLinkInvitationServiceSettings effectiveSettings = settings ?? ProductLinkInvitationServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callCreateProductLinkInvitation = clientHelper.BuildApiCall<CreateProductLinkInvitationRequest, CreateProductLinkInvitationResponse>("CreateProductLinkInvitation", grpcClient.CreateProductLinkInvitationAsync, grpcClient.CreateProductLinkInvitation, effectiveSettings.CreateProductLinkInvitationSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callCreateProductLinkInvitation);
             Modify_CreateProductLinkInvitationApiCall(ref _callCreateProductLinkInvitation);

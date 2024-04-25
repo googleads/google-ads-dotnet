@@ -444,7 +444,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             UserListServiceSettings effectiveSettings = settings ?? UserListServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callMutateUserLists = clientHelper.BuildApiCall<MutateUserListsRequest, MutateUserListsResponse>("MutateUserLists", grpcClient.MutateUserListsAsync, grpcClient.MutateUserLists, effectiveSettings.MutateUserListsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateUserLists);
             Modify_MutateUserListsApiCall(ref _callMutateUserLists);

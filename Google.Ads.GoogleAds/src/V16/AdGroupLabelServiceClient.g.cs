@@ -401,7 +401,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             AdGroupLabelServiceSettings effectiveSettings = settings ?? AdGroupLabelServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callMutateAdGroupLabels = clientHelper.BuildApiCall<MutateAdGroupLabelsRequest, MutateAdGroupLabelsResponse>("MutateAdGroupLabels", grpcClient.MutateAdGroupLabelsAsync, grpcClient.MutateAdGroupLabels, effectiveSettings.MutateAdGroupLabelsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateAdGroupLabels);
             Modify_MutateAdGroupLabelsApiCall(ref _callMutateAdGroupLabels);

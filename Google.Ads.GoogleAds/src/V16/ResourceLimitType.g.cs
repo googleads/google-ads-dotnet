@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V16.Enums {
           string.Concat(
             "Cjhnb29nbGUvYWRzL2dvb2dsZWFkcy92MTYvZW51bXMvcmVzb3VyY2VfbGlt",
             "aXRfdHlwZS5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE2LmVudW1z",
-            "IuotChVSZXNvdXJjZUxpbWl0VHlwZUVudW0i0C0KEVJlc291cmNlTGltaXRU",
+            "IpIuChVSZXNvdXJjZUxpbWl0VHlwZUVudW0i+C0KEVJlc291cmNlTGltaXRU",
             "eXBlEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEhoKFkNBTVBBSUdO",
             "U19QRVJfQ1VTVE9NRVIQAhIfChtCQVNFX0NBTVBBSUdOU19QRVJfQ1VTVE9N",
             "RVIQAxIlCiFFWFBFUklNRU5UX0NBTVBBSUdOU19QRVJfQ1VTVE9NRVIQaRIg",
@@ -156,12 +156,13 @@ namespace Google.Ads.GoogleAds.V16.Enums {
             "UFJPUEVSVFlfQVNTRVRfTElOS1NfUEVSX0FTU0VUX0dST1VQELYBEhoKFUJS",
             "QU5EU19QRVJfU0hBUkVEX1NFVBC3ARItCihFTkFCTEVEX0JSQU5EX0xJU1Rf",
             "Q1JJVEVSSUFfUEVSX0NBTVBBSUdOELgBEiYKIVNIQVJFRF9TRVRTX1BFUl9B",
-            "Q0NPVU5UX0ZPUl9CUkFORBC5AULwAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYxNi5lbnVtc0IWUmVzb3VyY2VMaW1pdFR5cGVQcm90b1ABWkNnb29n",
-            "bGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVh",
-            "ZHMvdjE2L2VudW1zO2VudW1zogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVB",
-            "ZHMuVjE2LkVudW1zygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjE2XEVudW1z",
-            "6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE2OjpFbnVtc2IGcHJvdG8z"));
+            "Q0NPVU5UX0ZPUl9CUkFORBC5ARImCiFMT09LQUxJS0VfVVNFUl9MSVNUU19Q",
+            "RVJfQ1VTVE9NRVIQugFC8AEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MTYuZW51bXNCFlJlc291cmNlTGltaXRUeXBlUHJvdG9QAVpDZ29vZ2xlLmdv",
+            "bGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Yx",
+            "Ni9lbnVtcztlbnVtc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYx",
+            "Ni5FbnVtc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYxNlxFbnVtc+oCIkdv",
+            "b2dsZTo6QWRzOjpHb29nbGVBZHM6OlYxNjo6RW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -939,6 +940,10 @@ namespace Google.Ads.GoogleAds.V16.Enums {
         /// Maximum number of shared sets of brand type for an account.
         /// </summary>
         [pbr::OriginalName("SHARED_SETS_PER_ACCOUNT_FOR_BRAND")] SharedSetsPerAccountForBrand = 185,
+        /// <summary>
+        /// Maximum number of lookalike lists per customer.
+        /// </summary>
+        [pbr::OriginalName("LOOKALIKE_USER_LISTS_PER_CUSTOMER")] LookalikeUserListsPerCustomer = 186,
       }
 
     }

@@ -333,7 +333,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             CampaignAssetSetServiceSettings effectiveSettings = settings ?? CampaignAssetSetServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callMutateCampaignAssetSets = clientHelper.BuildApiCall<MutateCampaignAssetSetsRequest, MutateCampaignAssetSetsResponse>("MutateCampaignAssetSets", grpcClient.MutateCampaignAssetSetsAsync, grpcClient.MutateCampaignAssetSets, effectiveSettings.MutateCampaignAssetSetsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateCampaignAssetSets);
             Modify_MutateCampaignAssetSetsApiCall(ref _callMutateCampaignAssetSets);

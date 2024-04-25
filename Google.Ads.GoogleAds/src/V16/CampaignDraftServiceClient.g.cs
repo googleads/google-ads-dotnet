@@ -932,7 +932,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             CampaignDraftServiceSettings effectiveSettings = settings ?? CampaignDraftServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             PromoteCampaignDraftOperationsClient = new lro::OperationsClientImpl(grpcClient.CreateOperationsClient(), effectiveSettings.PromoteCampaignDraftOperationsSettings, logger);
             _callMutateCampaignDrafts = clientHelper.BuildApiCall<MutateCampaignDraftsRequest, MutateCampaignDraftsResponse>("MutateCampaignDrafts", grpcClient.MutateCampaignDraftsAsync, grpcClient.MutateCampaignDrafts, effectiveSettings.MutateCampaignDraftsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateCampaignDrafts);

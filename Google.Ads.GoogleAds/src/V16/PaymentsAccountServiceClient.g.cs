@@ -375,7 +375,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             PaymentsAccountServiceSettings effectiveSettings = settings ?? PaymentsAccountServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callListPaymentsAccounts = clientHelper.BuildApiCall<ListPaymentsAccountsRequest, ListPaymentsAccountsResponse>("ListPaymentsAccounts", grpcClient.ListPaymentsAccountsAsync, grpcClient.ListPaymentsAccounts, effectiveSettings.ListPaymentsAccountsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callListPaymentsAccounts);
             Modify_ListPaymentsAccountsApiCall(ref _callListPaymentsAccounts);

@@ -333,7 +333,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             ConversionValueRuleServiceSettings effectiveSettings = settings ?? ConversionValueRuleServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callMutateConversionValueRules = clientHelper.BuildApiCall<MutateConversionValueRulesRequest, MutateConversionValueRulesResponse>("MutateConversionValueRules", grpcClient.MutateConversionValueRulesAsync, grpcClient.MutateConversionValueRules, effectiveSettings.MutateConversionValueRulesSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateConversionValueRules);
             Modify_MutateConversionValueRulesApiCall(ref _callMutateConversionValueRules);

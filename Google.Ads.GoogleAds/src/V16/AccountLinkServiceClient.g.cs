@@ -571,7 +571,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             AccountLinkServiceSettings effectiveSettings = settings ?? AccountLinkServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callCreateAccountLink = clientHelper.BuildApiCall<CreateAccountLinkRequest, CreateAccountLinkResponse>("CreateAccountLink", grpcClient.CreateAccountLinkAsync, grpcClient.CreateAccountLink, effectiveSettings.CreateAccountLinkSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callCreateAccountLink);
             Modify_CreateAccountLinkApiCall(ref _callCreateAccountLink);

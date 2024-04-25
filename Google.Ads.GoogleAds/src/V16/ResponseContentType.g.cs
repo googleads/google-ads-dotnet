@@ -217,8 +217,9 @@ namespace Google.Ads.GoogleAds.V16.Enums {
         /// </summary>
         [pbr::OriginalName("RESOURCE_NAME_ONLY")] ResourceNameOnly = 1,
         /// <summary>
-        /// The mutate response will be the resource name and the resource with
-        /// all mutable fields.
+        /// The mutate response will contain the resource name and the resource with
+        /// mutable fields if possible. Otherwise, only the resource name will be
+        /// returned.
         /// </summary>
         [pbr::OriginalName("MUTABLE_RESOURCE")] MutableResource = 2,
       }

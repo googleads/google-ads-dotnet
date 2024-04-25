@@ -50,6 +50,9 @@ namespace Google.Ads.GoogleAds.V16.Resources {
   #region Messages
   /// <summary>
   /// A gender view.
+  /// The gender_view resource reflects the effective serving state, rather than
+  /// what criteria were added. An ad group without gender criteria by default
+  /// shows to all genders, so all genders appear in gender_view with stats.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GenderView : pb::IMessage<GenderView>
