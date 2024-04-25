@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V16.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjRnb29nbGUvYWRzL2dvb2dsZWFkcy92MTYvZXJyb3JzL2NhbXBhaWduX2Vy",
-            "cm9yLnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFkcy52MTYuZXJyb3JzIpYa",
-            "ChFDYW1wYWlnbkVycm9yRW51bSKAGgoNQ2FtcGFpZ25FcnJvchIPCgtVTlNQ",
+            "cm9yLnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFkcy52MTYuZXJyb3JzIt0a",
+            "ChFDYW1wYWlnbkVycm9yRW51bSLHGgoNQ2FtcGFpZ25FcnJvchIPCgtVTlNQ",
             "RUNJRklFRBAAEgsKB1VOS05PV04QARIhCh1DQU5OT1RfVEFSR0VUX0NPTlRF",
             "TlRfTkVUV09SSxADEiAKHENBTk5PVF9UQVJHRVRfU0VBUkNIX05FVFdPUksQ",
             "BBI2CjJDQU5OT1RfVEFSR0VUX1NFQVJDSF9ORVRXT1JLX1dJVEhPVVRfR09P",
@@ -100,13 +100,14 @@ namespace Google.Ads.GoogleAds.V16.Errors {
             "TkdfU0VSVklDRV9BQ0NPVU5UEFYSSQpFQ0FOTk9UX1RBUkdFVF9ORVRXT1JL",
             "X0ZPUl9DT01QQVJJU09OX1NIT1BQSU5HX1NFUlZJQ0VfTElOS0VEX0FDQ09V",
             "TlRTEFcSOgo2Q0FOTk9UX01PRElGWV9URVhUX0FTU0VUX0FVVE9NQVRJT05f",
-            "V0lUSF9FTkFCTEVEX1RSSUFMEFhC8gEKI2NvbS5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MTYuZXJyb3JzQhJDYW1wYWlnbkVycm9yUHJvdG9QAVpFZ29vZ2xl",
-            "LmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRz",
-            "L3YxNi9lcnJvcnM7ZXJyb3JzogIDR0FBqgIfR29vZ2xlLkFkcy5Hb29nbGVB",
-            "ZHMuVjE2LkVycm9yc8oCH0dvb2dsZVxBZHNcR29vZ2xlQWRzXFYxNlxFcnJv",
-            "cnPqAiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTY6OkVycm9yc2IGcHJv",
-            "dG8z"));
+            "V0lUSF9FTkFCTEVEX1RSSUFMEFgSRQpBRFlOQU1JQ19URVhUX0FTU0VUX0NB",
+            "Tk5PVF9PUFRfT1VUX1dJVEhfRklOQUxfVVJMX0VYUEFOU0lPTl9PUFRfSU4Q",
+            "WULyAQojY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNi5lcnJvcnNCEkNh",
+            "bXBhaWduRXJyb3JQcm90b1ABWkVnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90",
+            "by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjE2L2Vycm9ycztlcnJvcnOi",
+            "AgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMTYuRXJyb3JzygIfR29v",
+            "Z2xlXEFkc1xHb29nbGVBZHNcVjE2XEVycm9yc+oCI0dvb2dsZTo6QWRzOjpH",
+            "b29nbGVBZHM6OlYxNjo6RXJyb3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -627,6 +628,11 @@ namespace Google.Ads.GoogleAds.V16.Errors {
         /// experiment. End the experiment to modify these settings.
         /// </summary>
         [pbr::OriginalName("CANNOT_MODIFY_TEXT_ASSET_AUTOMATION_WITH_ENABLED_TRIAL")] CannotModifyTextAssetAutomationWithEnabledTrial = 88,
+        /// <summary>
+        /// Dynamic text asset cannot be opted out when final URL expansion is opted
+        /// in.
+        /// </summary>
+        [pbr::OriginalName("DYNAMIC_TEXT_ASSET_CANNOT_OPT_OUT_WITH_FINAL_URL_EXPANSION_OPT_IN")] DynamicTextAssetCannotOptOutWithFinalUrlExpansionOptIn = 89,
       }
 
     }

@@ -399,7 +399,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             CustomerClientLinkServiceSettings effectiveSettings = settings ?? CustomerClientLinkServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callMutateCustomerClientLink = clientHelper.BuildApiCall<MutateCustomerClientLinkRequest, MutateCustomerClientLinkResponse>("MutateCustomerClientLink", grpcClient.MutateCustomerClientLinkAsync, grpcClient.MutateCustomerClientLink, effectiveSettings.MutateCustomerClientLinkSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateCustomerClientLink);
             Modify_MutateCustomerClientLinkApiCall(ref _callMutateCustomerClientLink);

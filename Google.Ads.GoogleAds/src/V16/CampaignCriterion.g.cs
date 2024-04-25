@@ -631,9 +631,6 @@ namespace Google.Ads.GoogleAds.V16.Resources {
     public const int UserListFieldNumber = 22;
     /// <summary>
     /// Immutable. User List.
-    /// The Similar Audiences sunset starts May 2023. Refer to
-    /// https://ads-developers.googleblog.com/2022/11/announcing-deprecation-and-sunset-of.html
-    /// for other options.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

@@ -298,7 +298,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             ThirdPartyAppAnalyticsLinkServiceSettings effectiveSettings = settings ?? ThirdPartyAppAnalyticsLinkServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callRegenerateShareableLinkId = clientHelper.BuildApiCall<RegenerateShareableLinkIdRequest, RegenerateShareableLinkIdResponse>("RegenerateShareableLinkId", grpcClient.RegenerateShareableLinkIdAsync, grpcClient.RegenerateShareableLinkId, effectiveSettings.RegenerateShareableLinkIdSettings).WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callRegenerateShareableLinkId);
             Modify_RegenerateShareableLinkIdApiCall(ref _callRegenerateShareableLinkId);

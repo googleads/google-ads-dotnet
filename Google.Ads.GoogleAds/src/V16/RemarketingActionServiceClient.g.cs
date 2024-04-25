@@ -381,7 +381,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             RemarketingActionServiceSettings effectiveSettings = settings ?? RemarketingActionServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callMutateRemarketingActions = clientHelper.BuildApiCall<MutateRemarketingActionsRequest, MutateRemarketingActionsResponse>("MutateRemarketingActions", grpcClient.MutateRemarketingActionsAsync, grpcClient.MutateRemarketingActions, effectiveSettings.MutateRemarketingActionsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateRemarketingActions);
             Modify_MutateRemarketingActionsApiCall(ref _callMutateRemarketingActions);

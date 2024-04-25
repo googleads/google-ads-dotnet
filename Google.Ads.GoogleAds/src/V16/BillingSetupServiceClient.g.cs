@@ -402,7 +402,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             BillingSetupServiceSettings effectiveSettings = settings ?? BillingSetupServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callMutateBillingSetup = clientHelper.BuildApiCall<MutateBillingSetupRequest, MutateBillingSetupResponse>("MutateBillingSetup", grpcClient.MutateBillingSetupAsync, grpcClient.MutateBillingSetup, effectiveSettings.MutateBillingSetupSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateBillingSetup);
             Modify_MutateBillingSetupApiCall(ref _callMutateBillingSetup);

@@ -451,7 +451,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             FeedItemTargetServiceSettings effectiveSettings = settings ?? FeedItemTargetServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callMutateFeedItemTargets = clientHelper.BuildApiCall<MutateFeedItemTargetsRequest, MutateFeedItemTargetsResponse>("MutateFeedItemTargets", grpcClient.MutateFeedItemTargetsAsync, grpcClient.MutateFeedItemTargets, effectiveSettings.MutateFeedItemTargetsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateFeedItemTargets);
             Modify_MutateFeedItemTargetsApiCall(ref _callMutateFeedItemTargets);

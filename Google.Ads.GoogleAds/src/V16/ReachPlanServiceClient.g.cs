@@ -628,7 +628,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             ReachPlanServiceSettings effectiveSettings = settings ?? ReachPlanServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callListPlannableLocations = clientHelper.BuildApiCall<ListPlannableLocationsRequest, ListPlannableLocationsResponse>("ListPlannableLocations", grpcClient.ListPlannableLocationsAsync, grpcClient.ListPlannableLocations, effectiveSettings.ListPlannableLocationsSettings);
             Modify_ApiCall(ref _callListPlannableLocations);
             Modify_ListPlannableLocationsApiCall(ref _callListPlannableLocations);

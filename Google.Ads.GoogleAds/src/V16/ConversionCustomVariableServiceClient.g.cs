@@ -394,7 +394,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             ConversionCustomVariableServiceSettings effectiveSettings = settings ?? ConversionCustomVariableServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callMutateConversionCustomVariables = clientHelper.BuildApiCall<MutateConversionCustomVariablesRequest, MutateConversionCustomVariablesResponse>("MutateConversionCustomVariables", grpcClient.MutateConversionCustomVariablesAsync, grpcClient.MutateConversionCustomVariables, effectiveSettings.MutateConversionCustomVariablesSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateConversionCustomVariables);
             Modify_MutateConversionCustomVariablesApiCall(ref _callMutateConversionCustomVariables);

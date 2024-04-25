@@ -372,7 +372,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             SmartCampaignSuggestServiceSettings effectiveSettings = settings ?? SmartCampaignSuggestServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callSuggestSmartCampaignBudgetOptions = clientHelper.BuildApiCall<SuggestSmartCampaignBudgetOptionsRequest, SuggestSmartCampaignBudgetOptionsResponse>("SuggestSmartCampaignBudgetOptions", grpcClient.SuggestSmartCampaignBudgetOptionsAsync, grpcClient.SuggestSmartCampaignBudgetOptions, effectiveSettings.SuggestSmartCampaignBudgetOptionsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callSuggestSmartCampaignBudgetOptions);
             Modify_SuggestSmartCampaignBudgetOptionsApiCall(ref _callSuggestSmartCampaignBudgetOptions);

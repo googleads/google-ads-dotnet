@@ -369,7 +369,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             CampaignLifecycleGoalServiceSettings effectiveSettings = settings ?? CampaignLifecycleGoalServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callConfigureCampaignLifecycleGoals = clientHelper.BuildApiCall<ConfigureCampaignLifecycleGoalsRequest, ConfigureCampaignLifecycleGoalsResponse>("ConfigureCampaignLifecycleGoals", grpcClient.ConfigureCampaignLifecycleGoalsAsync, grpcClient.ConfigureCampaignLifecycleGoals, effectiveSettings.ConfigureCampaignLifecycleGoalsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callConfigureCampaignLifecycleGoals);
             Modify_ConfigureCampaignLifecycleGoalsApiCall(ref _callConfigureCampaignLifecycleGoals);

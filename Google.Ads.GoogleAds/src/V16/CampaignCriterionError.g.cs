@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V16.Errors {
           string.Concat(
             "Cj5nb29nbGUvYWRzL2dvb2dsZWFkcy92MTYvZXJyb3JzL2NhbXBhaWduX2Ny",
             "aXRlcmlvbl9lcnJvci5wcm90bxIfZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE2",
-            "LmVycm9ycyLDCgoaQ2FtcGFpZ25Dcml0ZXJpb25FcnJvckVudW0ipAoKFkNh",
+            "LmVycm9ycyKHCwoaQ2FtcGFpZ25Dcml0ZXJpb25FcnJvckVudW0i6AoKFkNh",
             "bXBhaWduQ3JpdGVyaW9uRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktO",
             "T1dOEAESGgoWQ09OQ1JFVEVfVFlQRV9SRVFVSVJFRBACEhkKFUlOVkFMSURf",
             "UExBQ0VNRU5UX1VSTBADEiAKHENBTk5PVF9FWENMVURFX0NSSVRFUklBX1RZ",
@@ -56,12 +56,14 @@ namespace Google.Ads.GoogleAds.V16.Errors {
             "SVJFRF9GT1JfTE9DQUxfU0VSVklDRVNfQ0FNUEFJR04QGBIrCidMT0NBTF9T",
             "RVJWSUNFX0lEX05PVF9GT1VORF9GT1JfQ0FURUdPUlkQGRI9CjlDQU5OT1Rf",
             "QVRUQUNIX0JSQU5EX0xJU1RfVE9fTk9OX1FVQUxJRklFRF9TRUFSQ0hfQ0FN",
-            "UEFJR04QGkL7AQojY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNi5lcnJv",
-            "cnNCG0NhbXBhaWduQ3JpdGVyaW9uRXJyb3JQcm90b1ABWkVnb29nbGUuZ29s",
-            "YW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjE2",
-            "L2Vycm9ycztlcnJvcnOiAgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5W",
-            "MTYuRXJyb3JzygIfR29vZ2xlXEFkc1xHb29nbGVBZHNcVjE2XEVycm9yc+oC",
-            "I0dvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYxNjo6RXJyb3JzYgZwcm90bzM="));
+            "UEFJR04QGhJCCj5DQU5OT1RfUkVNT1ZFX0FMTF9MT0NBVElPTlNfRFVFX1RP",
+            "X1RPT19NQU5ZX0NPVU5UUllfRVhDTFVTSU9OUxAbQvsBCiNjb20uZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjE2LmVycm9yc0IbQ2FtcGFpZ25Dcml0ZXJpb25F",
+            "cnJvclByb3RvUAFaRWdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2ds",
+            "ZWFwaXMvYWRzL2dvb2dsZWFkcy92MTYvZXJyb3JzO2Vycm9yc6ICA0dBQaoC",
+            "H0dvb2dsZS5BZHMuR29vZ2xlQWRzLlYxNi5FcnJvcnPKAh9Hb29nbGVcQWRz",
+            "XEdvb2dsZUFkc1xWMTZcRXJyb3Jz6gIjR29vZ2xlOjpBZHM6Okdvb2dsZUFk",
+            "czo6VjE2OjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -355,6 +357,14 @@ namespace Google.Ads.GoogleAds.V16.Errors {
         /// PMax generated campaigns.
         /// </summary>
         [pbr::OriginalName("CANNOT_ATTACH_BRAND_LIST_TO_NON_QUALIFIED_SEARCH_CAMPAIGN")] CannotAttachBrandListToNonQualifiedSearchCampaign = 26,
+        /// <summary>
+        /// Campaigns that target all countries and territories are limited to a
+        /// certain number of top-level location exclusions. If removing a criterion
+        /// causes the campaign to target all countries and territories and the
+        /// campaign has more top-level location exclusions than the limit allows,
+        /// then this error is returned.
+        /// </summary>
+        [pbr::OriginalName("CANNOT_REMOVE_ALL_LOCATIONS_DUE_TO_TOO_MANY_COUNTRY_EXCLUSIONS")] CannotRemoveAllLocationsDueToTooManyCountryExclusions = 27,
       }
 
     }

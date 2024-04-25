@@ -26,42 +26,51 @@ namespace Google.Ads.GoogleAds.V16.Resources {
           string.Concat(
             "Cjxnb29nbGUvYWRzL2dvb2dsZWFkcy92MTYvcmVzb3VyY2VzL2xvY2FsX3Nl",
             "cnZpY2VzX2xlYWQucHJvdG8SImdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNi5y",
-            "ZXNvdXJjZXMaP2dvb2dsZS9hZHMvZ29vZ2xlYWRzL3YxNi9lbnVtcy9sb2Nh",
-            "bF9zZXJ2aWNlc19sZWFkX3N0YXR1cy5wcm90bxo9Z29vZ2xlL2Fkcy9nb29n",
-            "bGVhZHMvdjE2L2VudW1zL2xvY2FsX3NlcnZpY2VzX2xlYWRfdHlwZS5wcm90",
-            "bxofZ29vZ2xlL2FwaS9maWVsZF9iZWhhdmlvci5wcm90bxoZZ29vZ2xlL2Fw",
-            "aS9yZXNvdXJjZS5wcm90byLEBQoRTG9jYWxTZXJ2aWNlc0xlYWQSSQoNcmVz",
-            "b3VyY2VfbmFtZRgBIAEoCUIy4EED+kEsCipnb29nbGVhZHMuZ29vZ2xlYXBp",
-            "cy5jb20vTG9jYWxTZXJ2aWNlc0xlYWQSDwoCaWQYAiABKANCA+BBAxIYCgtj",
-            "YXRlZ29yeV9pZBgDIAEoCUID4EEDEhcKCnNlcnZpY2VfaWQYBCABKAlCA+BB",
-            "AxJQCg9jb250YWN0X2RldGFpbHMYBSABKAsyMi5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MTYucmVzb3VyY2VzLkNvbnRhY3REZXRhaWxzQgPgQQMSWgoJbGVh",
-            "ZF90eXBlGAYgASgOMkIuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE2LmVudW1z",
-            "LkxvY2FsU2VydmljZXNMZWFkVHlwZUVudW0uTGVhZFR5cGVCA+BBAxJgCgts",
-            "ZWFkX3N0YXR1cxgHIAEoDjJGLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNi5l",
-            "bnVtcy5Mb2NhbFNlcnZpY2VzTGVhZFN0YXR1c0VudW0uTGVhZFN0YXR1c0ID",
-            "4EEDEh8KEmNyZWF0aW9uX2RhdGVfdGltZRgIIAEoCUID4EEDEhMKBmxvY2Fs",
-            "ZRgJIAEoCUID4EEDEkAKBG5vdGUYCiABKAsyKC5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MTYucmVzb3VyY2VzLk5vdGVCA+BBA0gAiAEBEhkKDGxlYWRfY2hh",
-            "cmdlZBgLIAEoCEID4EEDOnTqQXEKKmdvb2dsZWFkcy5nb29nbGVhcGlzLmNv",
-            "bS9Mb2NhbFNlcnZpY2VzTGVhZBJDY3VzdG9tZXJzL3tjdXN0b21lcl9pZH0v",
-            "bG9jYWxTZXJ2aWNlc0xlYWRzL3tsb2NhbF9zZXJ2aWNlc19sZWFkX2lkfUIH",
-            "CgVfbm90ZSJbCg5Db250YWN0RGV0YWlscxIZCgxwaG9uZV9udW1iZXIYASAB",
-            "KAlCA+BBAxISCgVlbWFpbBgCIAEoCUID4EEDEhoKDWNvbnN1bWVyX25hbWUY",
-            "AyABKAlCA+BBAyI9CgROb3RlEhsKDmVkaXRfZGF0ZV90aW1lGAEgASgJQgPg",
-            "QQMSGAoLZGVzY3JpcHRpb24YAiABKAlCA+BBA0KIAgomY29tLmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYxNi5yZXNvdXJjZXNCFkxvY2FsU2VydmljZXNMZWFk",
-            "UHJvdG9QAVpLZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBp",
-            "cy9hZHMvZ29vZ2xlYWRzL3YxNi9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FB",
-            "qgIiR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjE2LlJlc291cmNlc8oCIkdvb2ds",
-            "ZVxBZHNcR29vZ2xlQWRzXFYxNlxSZXNvdXJjZXPqAiZHb29nbGU6OkFkczo6",
-            "R29vZ2xlQWRzOjpWMTY6OlJlc291cmNlc2IGcHJvdG8z"));
+            "ZXNvdXJjZXMaRWdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YxNi9lbnVtcy9sb2Nh",
+            "bF9zZXJ2aWNlc19sZWFkX2NyZWRpdF9zdGF0ZS5wcm90bxo/Z29vZ2xlL2Fk",
+            "cy9nb29nbGVhZHMvdjE2L2VudW1zL2xvY2FsX3NlcnZpY2VzX2xlYWRfc3Rh",
+            "dHVzLnByb3RvGj1nb29nbGUvYWRzL2dvb2dsZWFkcy92MTYvZW51bXMvbG9j",
+            "YWxfc2VydmljZXNfbGVhZF90eXBlLnByb3RvGh9nb29nbGUvYXBpL2ZpZWxk",
+            "X2JlaGF2aW9yLnByb3RvGhlnb29nbGUvYXBpL3Jlc291cmNlLnByb3RvIqwG",
+            "ChFMb2NhbFNlcnZpY2VzTGVhZBJJCg1yZXNvdXJjZV9uYW1lGAEgASgJQjLg",
+            "QQP6QSwKKmdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9Mb2NhbFNlcnZpY2Vz",
+            "TGVhZBIPCgJpZBgCIAEoA0ID4EEDEhgKC2NhdGVnb3J5X2lkGAMgASgJQgPg",
+            "QQMSFwoKc2VydmljZV9pZBgEIAEoCUID4EEDElAKD2NvbnRhY3RfZGV0YWls",
+            "cxgFIAEoCzIyLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNi5yZXNvdXJjZXMu",
+            "Q29udGFjdERldGFpbHNCA+BBAxJaCglsZWFkX3R5cGUYBiABKA4yQi5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MTYuZW51bXMuTG9jYWxTZXJ2aWNlc0xlYWRU",
+            "eXBlRW51bS5MZWFkVHlwZUID4EEDEmAKC2xlYWRfc3RhdHVzGAcgASgOMkYu",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjE2LmVudW1zLkxvY2FsU2VydmljZXNM",
+            "ZWFkU3RhdHVzRW51bS5MZWFkU3RhdHVzQgPgQQMSHwoSY3JlYXRpb25fZGF0",
+            "ZV90aW1lGAggASgJQgPgQQMSEwoGbG9jYWxlGAkgASgJQgPgQQMSQAoEbm90",
+            "ZRgKIAEoCzIoLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNi5yZXNvdXJjZXMu",
+            "Tm90ZUID4EEDSACIAQESGQoMbGVhZF9jaGFyZ2VkGAsgASgIQgPgQQMSUwoO",
+            "Y3JlZGl0X2RldGFpbHMYDCABKAsyMS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MTYucmVzb3VyY2VzLkNyZWRpdERldGFpbHNCA+BBA0gBiAEBOnTqQXEKKmdv",
+            "b2dsZWFkcy5nb29nbGVhcGlzLmNvbS9Mb2NhbFNlcnZpY2VzTGVhZBJDY3Vz",
+            "dG9tZXJzL3tjdXN0b21lcl9pZH0vbG9jYWxTZXJ2aWNlc0xlYWRzL3tsb2Nh",
+            "bF9zZXJ2aWNlc19sZWFkX2lkfUIHCgVfbm90ZUIRCg9fY3JlZGl0X2RldGFp",
+            "bHMiWwoOQ29udGFjdERldGFpbHMSGQoMcGhvbmVfbnVtYmVyGAEgASgJQgPg",
+            "QQMSEgoFZW1haWwYAiABKAlCA+BBAxIaCg1jb25zdW1lcl9uYW1lGAMgASgJ",
+            "QgPgQQMiPQoETm90ZRIbCg5lZGl0X2RhdGVfdGltZRgBIAEoCUID4EEDEhgK",
+            "C2Rlc2NyaXB0aW9uGAIgASgJQgPgQQMipQEKDUNyZWRpdERldGFpbHMSYwoM",
+            "Y3JlZGl0X3N0YXRlGAEgASgOMkguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE2",
+            "LmVudW1zLkxvY2FsU2VydmljZXNDcmVkaXRTdGF0ZUVudW0uQ3JlZGl0U3Rh",
+            "dGVCA+BBAxIvCiJjcmVkaXRfc3RhdGVfbGFzdF91cGRhdGVfZGF0ZV90aW1l",
+            "GAIgASgJQgPgQQNCiAIKJmNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTYu",
+            "cmVzb3VyY2VzQhZMb2NhbFNlcnZpY2VzTGVhZFByb3RvUAFaS2dvb2dsZS5n",
+            "b2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92",
+            "MTYvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIkdvb2dsZS5BZHMuR29v",
+            "Z2xlQWRzLlYxNi5SZXNvdXJjZXPKAiJHb29nbGVcQWRzXEdvb2dsZUFkc1xW",
+            "MTZcUmVzb3VyY2Vz6gImR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE2OjpS",
+            "ZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V16.Enums.LocalServicesLeadStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V16.Enums.LocalServicesLeadTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V16.Enums.LocalServicesLeadCreditStateReflection.Descriptor, global::Google.Ads.GoogleAds.V16.Enums.LocalServicesLeadStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V16.Enums.LocalServicesLeadTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V16.Resources.LocalServicesLead), global::Google.Ads.GoogleAds.V16.Resources.LocalServicesLead.Parser, new[]{ "ResourceName", "Id", "CategoryId", "ServiceId", "ContactDetails", "LeadType", "LeadStatus", "CreationDateTime", "Locale", "Note", "LeadCharged" }, new[]{ "Note" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V16.Resources.LocalServicesLead), global::Google.Ads.GoogleAds.V16.Resources.LocalServicesLead.Parser, new[]{ "ResourceName", "Id", "CategoryId", "ServiceId", "ContactDetails", "LeadType", "LeadStatus", "CreationDateTime", "Locale", "Note", "LeadCharged", "CreditDetails" }, new[]{ "Note", "CreditDetails" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V16.Resources.ContactDetails), global::Google.Ads.GoogleAds.V16.Resources.ContactDetails.Parser, new[]{ "PhoneNumber", "Email", "ConsumerName" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V16.Resources.Note), global::Google.Ads.GoogleAds.V16.Resources.Note.Parser, new[]{ "EditDateTime", "Description" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V16.Resources.Note), global::Google.Ads.GoogleAds.V16.Resources.Note.Parser, new[]{ "EditDateTime", "Description" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V16.Resources.CreditDetails), global::Google.Ads.GoogleAds.V16.Resources.CreditDetails.Parser, new[]{ "CreditState", "CreditStateLastUpdateDateTime" }, null, null, null, null)
           }));
     }
     #endregion
@@ -120,6 +129,7 @@ namespace Google.Ads.GoogleAds.V16.Resources {
       locale_ = other.locale_;
       note_ = other.note_ != null ? other.note_.Clone() : null;
       leadCharged_ = other.leadCharged_;
+      creditDetails_ = other.creditDetails_ != null ? other.creditDetails_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -306,6 +316,21 @@ namespace Google.Ads.GoogleAds.V16.Resources {
       }
     }
 
+    /// <summary>Field number for the "credit_details" field.</summary>
+    public const int CreditDetailsFieldNumber = 12;
+    private global::Google.Ads.GoogleAds.V16.Resources.CreditDetails creditDetails_;
+    /// <summary>
+    /// Output only. Credit details of the lead.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V16.Resources.CreditDetails CreditDetails {
+      get { return creditDetails_; }
+      set {
+        creditDetails_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -332,6 +357,7 @@ namespace Google.Ads.GoogleAds.V16.Resources {
       if (Locale != other.Locale) return false;
       if (!object.Equals(Note, other.Note)) return false;
       if (LeadCharged != other.LeadCharged) return false;
+      if (!object.Equals(CreditDetails, other.CreditDetails)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -350,6 +376,7 @@ namespace Google.Ads.GoogleAds.V16.Resources {
       if (Locale.Length != 0) hash ^= Locale.GetHashCode();
       if (note_ != null) hash ^= Note.GetHashCode();
       if (LeadCharged != false) hash ^= LeadCharged.GetHashCode();
+      if (creditDetails_ != null) hash ^= CreditDetails.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -412,6 +439,10 @@ namespace Google.Ads.GoogleAds.V16.Resources {
         output.WriteRawTag(88);
         output.WriteBool(LeadCharged);
       }
+      if (creditDetails_ != null) {
+        output.WriteRawTag(98);
+        output.WriteMessage(CreditDetails);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -466,6 +497,10 @@ namespace Google.Ads.GoogleAds.V16.Resources {
         output.WriteRawTag(88);
         output.WriteBool(LeadCharged);
       }
+      if (creditDetails_ != null) {
+        output.WriteRawTag(98);
+        output.WriteMessage(CreditDetails);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -508,6 +543,9 @@ namespace Google.Ads.GoogleAds.V16.Resources {
       }
       if (LeadCharged != false) {
         size += 1 + 1;
+      }
+      if (creditDetails_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CreditDetails);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -559,6 +597,12 @@ namespace Google.Ads.GoogleAds.V16.Resources {
       }
       if (other.LeadCharged != false) {
         LeadCharged = other.LeadCharged;
+      }
+      if (other.creditDetails_ != null) {
+        if (creditDetails_ == null) {
+          CreditDetails = new global::Google.Ads.GoogleAds.V16.Resources.CreditDetails();
+        }
+        CreditDetails.MergeFrom(other.CreditDetails);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -625,6 +669,13 @@ namespace Google.Ads.GoogleAds.V16.Resources {
             LeadCharged = input.ReadBool();
             break;
           }
+          case 98: {
+            if (creditDetails_ == null) {
+              CreditDetails = new global::Google.Ads.GoogleAds.V16.Resources.CreditDetails();
+            }
+            input.ReadMessage(CreditDetails);
+            break;
+          }
         }
       }
     #endif
@@ -688,6 +739,13 @@ namespace Google.Ads.GoogleAds.V16.Resources {
           }
           case 88: {
             LeadCharged = input.ReadBool();
+            break;
+          }
+          case 98: {
+            if (creditDetails_ == null) {
+              CreditDetails = new global::Google.Ads.GoogleAds.V16.Resources.CreditDetails();
+            }
+            input.ReadMessage(CreditDetails);
             break;
           }
         }
@@ -1204,6 +1262,244 @@ namespace Google.Ads.GoogleAds.V16.Resources {
           }
           case 18: {
             Description = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Represents the credit details of a lead.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CreditDetails : pb::IMessage<CreditDetails>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CreditDetails> _parser = new pb::MessageParser<CreditDetails>(() => new CreditDetails());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CreditDetails> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V16.Resources.LocalServicesLeadReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CreditDetails() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CreditDetails(CreditDetails other) : this() {
+      creditState_ = other.creditState_;
+      creditStateLastUpdateDateTime_ = other.creditStateLastUpdateDateTime_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CreditDetails Clone() {
+      return new CreditDetails(this);
+    }
+
+    /// <summary>Field number for the "credit_state" field.</summary>
+    public const int CreditStateFieldNumber = 1;
+    private global::Google.Ads.GoogleAds.V16.Enums.LocalServicesCreditStateEnum.Types.CreditState creditState_ = global::Google.Ads.GoogleAds.V16.Enums.LocalServicesCreditStateEnum.Types.CreditState.Unspecified;
+    /// <summary>
+    /// Output only. Credit state of the lead.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V16.Enums.LocalServicesCreditStateEnum.Types.CreditState CreditState {
+      get { return creditState_; }
+      set {
+        creditState_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "credit_state_last_update_date_time" field.</summary>
+    public const int CreditStateLastUpdateDateTimeFieldNumber = 2;
+    private string creditStateLastUpdateDateTime_ = "";
+    /// <summary>
+    /// Output only. The date time when the credit state of the lead was last
+    /// updated. The format is "YYYY-MM-DD HH:MM:SS" in the Google Ads account's
+    /// timezone. Examples: "2018-03-05 09:15:00" or "2018-02-01 14:34:30"
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CreditStateLastUpdateDateTime {
+      get { return creditStateLastUpdateDateTime_; }
+      set {
+        creditStateLastUpdateDateTime_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CreditDetails);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CreditDetails other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (CreditState != other.CreditState) return false;
+      if (CreditStateLastUpdateDateTime != other.CreditStateLastUpdateDateTime) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (CreditState != global::Google.Ads.GoogleAds.V16.Enums.LocalServicesCreditStateEnum.Types.CreditState.Unspecified) hash ^= CreditState.GetHashCode();
+      if (CreditStateLastUpdateDateTime.Length != 0) hash ^= CreditStateLastUpdateDateTime.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (CreditState != global::Google.Ads.GoogleAds.V16.Enums.LocalServicesCreditStateEnum.Types.CreditState.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) CreditState);
+      }
+      if (CreditStateLastUpdateDateTime.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(CreditStateLastUpdateDateTime);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (CreditState != global::Google.Ads.GoogleAds.V16.Enums.LocalServicesCreditStateEnum.Types.CreditState.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) CreditState);
+      }
+      if (CreditStateLastUpdateDateTime.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(CreditStateLastUpdateDateTime);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (CreditState != global::Google.Ads.GoogleAds.V16.Enums.LocalServicesCreditStateEnum.Types.CreditState.Unspecified) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) CreditState);
+      }
+      if (CreditStateLastUpdateDateTime.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CreditStateLastUpdateDateTime);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CreditDetails other) {
+      if (other == null) {
+        return;
+      }
+      if (other.CreditState != global::Google.Ads.GoogleAds.V16.Enums.LocalServicesCreditStateEnum.Types.CreditState.Unspecified) {
+        CreditState = other.CreditState;
+      }
+      if (other.CreditStateLastUpdateDateTime.Length != 0) {
+        CreditStateLastUpdateDateTime = other.CreditStateLastUpdateDateTime;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            CreditState = (global::Google.Ads.GoogleAds.V16.Enums.LocalServicesCreditStateEnum.Types.CreditState) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            CreditStateLastUpdateDateTime = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            CreditState = (global::Google.Ads.GoogleAds.V16.Enums.LocalServicesCreditStateEnum.Types.CreditState) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            CreditStateLastUpdateDateTime = input.ReadString();
             break;
           }
         }

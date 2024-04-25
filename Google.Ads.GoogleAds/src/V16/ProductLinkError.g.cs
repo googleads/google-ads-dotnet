@@ -26,16 +26,16 @@ namespace Google.Ads.GoogleAds.V16.Errors {
           string.Concat(
             "Cjhnb29nbGUvYWRzL2dvb2dsZWFkcy92MTYvZXJyb3JzL3Byb2R1Y3RfbGlu",
             "a19lcnJvci5wcm90bxIfZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE2LmVycm9y",
-            "cyKSAQoUUHJvZHVjdExpbmtFcnJvckVudW0iegoQUHJvZHVjdExpbmtFcnJv",
-            "chIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIVChFJTlZBTElEX09Q",
-            "RVJBVElPThACEhoKFkNSRUFUSU9OX05PVF9QRVJNSVRURUQQAxIVChFJTlZJ",
-            "VEFUSU9OX0VYSVNUUxAEQvUBCiNjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djE2LmVycm9yc0IVUHJvZHVjdExpbmtFcnJvclByb3RvUAFaRWdvb2dsZS5n",
-            "b2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92",
-            "MTYvZXJyb3JzO2Vycm9yc6ICA0dBQaoCH0dvb2dsZS5BZHMuR29vZ2xlQWRz",
-            "LlYxNi5FcnJvcnPKAh9Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMTZcRXJyb3Jz",
-            "6gIjR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE2OjpFcnJvcnNiBnByb3Rv",
-            "Mw=="));
+            "cyKkAQoUUHJvZHVjdExpbmtFcnJvckVudW0iiwEKEFByb2R1Y3RMaW5rRXJy",
+            "b3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESFQoRSU5WQUxJRF9P",
+            "UEVSQVRJT04QAhIaChZDUkVBVElPTl9OT1RfUEVSTUlUVEVEEAMSFQoRSU5W",
+            "SVRBVElPTl9FWElTVFMQBBIPCgtMSU5LX0VYSVNUUxAFQvUBCiNjb20uZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjE2LmVycm9yc0IVUHJvZHVjdExpbmtFcnJv",
+            "clByb3RvUAFaRWdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
+            "aXMvYWRzL2dvb2dsZWFkcy92MTYvZXJyb3JzO2Vycm9yc6ICA0dBQaoCH0dv",
+            "b2dsZS5BZHMuR29vZ2xlQWRzLlYxNi5FcnJvcnPKAh9Hb29nbGVcQWRzXEdv",
+            "b2dsZUFkc1xWMTZcRXJyb3Jz6gIjR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6",
+            "VjE2OjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -230,6 +230,10 @@ namespace Google.Ads.GoogleAds.V16.Errors {
         /// A link cannot be created because a pending link already exists.
         /// </summary>
         [pbr::OriginalName("INVITATION_EXISTS")] InvitationExists = 4,
+        /// <summary>
+        /// A link cannot be created because an active link already exists.
+        /// </summary>
+        [pbr::OriginalName("LINK_EXISTS")] LinkExists = 5,
       }
 
     }

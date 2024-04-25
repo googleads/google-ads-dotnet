@@ -289,7 +289,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             KeywordThemeConstantServiceSettings effectiveSettings = settings ?? KeywordThemeConstantServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callSuggestKeywordThemeConstants = clientHelper.BuildApiCall<SuggestKeywordThemeConstantsRequest, SuggestKeywordThemeConstantsResponse>("SuggestKeywordThemeConstants", grpcClient.SuggestKeywordThemeConstantsAsync, grpcClient.SuggestKeywordThemeConstants, effectiveSettings.SuggestKeywordThemeConstantsSettings);
             Modify_ApiCall(ref _callSuggestKeywordThemeConstants);
             Modify_SuggestKeywordThemeConstantsApiCall(ref _callSuggestKeywordThemeConstants);

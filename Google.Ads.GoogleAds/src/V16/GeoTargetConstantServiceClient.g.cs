@@ -292,7 +292,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             GeoTargetConstantServiceSettings effectiveSettings = settings ?? GeoTargetConstantServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callSuggestGeoTargetConstants = clientHelper.BuildApiCall<SuggestGeoTargetConstantsRequest, SuggestGeoTargetConstantsResponse>("SuggestGeoTargetConstants", grpcClient.SuggestGeoTargetConstantsAsync, grpcClient.SuggestGeoTargetConstants, effectiveSettings.SuggestGeoTargetConstantsSettings);
             Modify_ApiCall(ref _callSuggestGeoTargetConstants);
             Modify_SuggestGeoTargetConstantsApiCall(ref _callSuggestGeoTargetConstants);

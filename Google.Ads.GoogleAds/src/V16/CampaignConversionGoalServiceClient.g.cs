@@ -334,7 +334,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             CampaignConversionGoalServiceSettings effectiveSettings = settings ?? CampaignConversionGoalServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callMutateCampaignConversionGoals = clientHelper.BuildApiCall<MutateCampaignConversionGoalsRequest, MutateCampaignConversionGoalsResponse>("MutateCampaignConversionGoals", grpcClient.MutateCampaignConversionGoalsAsync, grpcClient.MutateCampaignConversionGoals, effectiveSettings.MutateCampaignConversionGoalsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateCampaignConversionGoals);
             Modify_MutateCampaignConversionGoalsApiCall(ref _callMutateCampaignConversionGoals);

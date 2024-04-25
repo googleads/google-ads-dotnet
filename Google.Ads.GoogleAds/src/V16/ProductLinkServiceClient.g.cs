@@ -639,7 +639,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             ProductLinkServiceSettings effectiveSettings = settings ?? ProductLinkServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callCreateProductLink = clientHelper.BuildApiCall<CreateProductLinkRequest, CreateProductLinkResponse>("CreateProductLink", grpcClient.CreateProductLinkAsync, grpcClient.CreateProductLink, effectiveSettings.CreateProductLinkSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callCreateProductLink);
             Modify_CreateProductLinkApiCall(ref _callCreateProductLink);

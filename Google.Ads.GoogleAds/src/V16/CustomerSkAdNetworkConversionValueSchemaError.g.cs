@@ -26,18 +26,20 @@ namespace Google.Ads.GoogleAds.V16.Errors {
           string.Concat(
             "Clpnb29nbGUvYWRzL2dvb2dsZWFkcy92MTYvZXJyb3JzL2N1c3RvbWVyX3Nr",
             "X2FkX25ldHdvcmtfY29udmVyc2lvbl92YWx1ZV9zY2hlbWFfZXJyb3IucHJv",
-            "dG8SH2dvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNi5lcnJvcnMi2QEKMUN1c3Rv",
+            "dG8SH2dvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNi5lcnJvcnMijAIKMUN1c3Rv",
             "bWVyU2tBZE5ldHdvcmtDb252ZXJzaW9uVmFsdWVTY2hlbWFFcnJvckVudW0i",
-            "owEKLUN1c3RvbWVyU2tBZE5ldHdvcmtDb252ZXJzaW9uVmFsdWVTY2hlbWFF",
+            "1gEKLUN1c3RvbWVyU2tBZE5ldHdvcmtDb252ZXJzaW9uVmFsdWVTY2hlbWFF",
             "cnJvchIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARITCg9JTlZBTElE",
             "X0xJTktfSUQQAhISCg5JTlZBTElEX0FQUF9JRBADEhIKDklOVkFMSURfU0NI",
-            "RU1BEAQSFwoTTElOS19DT0RFX05PVF9GT1VORBAFQpICCiNjb20uZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjE2LmVycm9yc0IyQ3VzdG9tZXJTa0FkTmV0d29y",
-            "a0NvbnZlcnNpb25WYWx1ZVNjaGVtYUVycm9yUHJvdG9QAVpFZ29vZ2xlLmdv",
-            "bGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Yx",
-            "Ni9lcnJvcnM7ZXJyb3JzogIDR0FBqgIfR29vZ2xlLkFkcy5Hb29nbGVBZHMu",
-            "VjE2LkVycm9yc8oCH0dvb2dsZVxBZHNcR29vZ2xlQWRzXFYxNlxFcnJvcnPq",
-            "AiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTY6OkVycm9yc2IGcHJvdG8z"));
+            "RU1BEAQSFwoTTElOS19DT0RFX05PVF9GT1VORBAFEhkKFUlOVkFMSURfRVZF",
+            "TlRfQ09VTlRFUhAHEhYKEklOVkFMSURfRVZFTlRfTkFNRRAIQpICCiNjb20u",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjE2LmVycm9yc0IyQ3VzdG9tZXJTa0Fk",
+            "TmV0d29ya0NvbnZlcnNpb25WYWx1ZVNjaGVtYUVycm9yUHJvdG9QAVpFZ29v",
+            "Z2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xl",
+            "YWRzL3YxNi9lcnJvcnM7ZXJyb3JzogIDR0FBqgIfR29vZ2xlLkFkcy5Hb29n",
+            "bGVBZHMuVjE2LkVycm9yc8oCH0dvb2dsZVxBZHNcR29vZ2xlQWRzXFYxNlxF",
+            "cnJvcnPqAiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTY6OkVycm9yc2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -236,6 +238,14 @@ namespace Google.Ads.GoogleAds.V16.Errors {
         /// The customer link id provided could not be found.
         /// </summary>
         [pbr::OriginalName("LINK_CODE_NOT_FOUND")] LinkCodeNotFound = 5,
+        /// <summary>
+        /// The SkAdNetwork event counter provided is invalid.
+        /// </summary>
+        [pbr::OriginalName("INVALID_EVENT_COUNTER")] InvalidEventCounter = 7,
+        /// <summary>
+        /// The SkAdNetwork event name provided is invalid.
+        /// </summary>
+        [pbr::OriginalName("INVALID_EVENT_NAME")] InvalidEventName = 8,
       }
 
     }

@@ -581,8 +581,8 @@ namespace Google.Ads.GoogleAds.V16.Common {
 
     private double absoluteTopImpressionPercentage_;
     /// <summary>
-    /// The percent of your ad impressions that are shown as the very first ad
-    /// above the organic search results.
+    /// Search absolute top impression share is the percentage of your Search ad
+    /// impressions that are shown in the most prominent Search position.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1287,8 +1287,8 @@ namespace Google.Ads.GoogleAds.V16.Common {
     private double auctionInsightSearchAbsoluteTopImpressionPercentage_;
     /// <summary>
     /// This metric is part of the Auction Insights report, and tells how often
-    /// the ads of another participant showed as the very first ad above the
-    /// organic search results.
+    /// the ads of another participant showed in the most prominent position on the
+    /// search results page.
     /// This percentage is computed only over the auctions that you appeared in
     /// the page.
     ///
@@ -1462,9 +1462,9 @@ namespace Google.Ads.GoogleAds.V16.Common {
     private double auctionInsightSearchTopImpressionPercentage_;
     /// <summary>
     /// This metric is part of the Auction Insights report, and tells how often
-    /// the ads of another participant showed above the organic search results.
-    /// This percentage is computed only over the auctions that you appeared in
-    /// the page.
+    /// the ads of another participant showed adjacent to the top organic search
+    /// results. This percentage is computed only over the auctions that you
+    /// appeared in the page.
     ///
     /// This metric is not publicly available.
     /// </summary>
@@ -3914,8 +3914,8 @@ namespace Google.Ads.GoogleAds.V16.Common {
 
     private double searchBudgetLostAbsoluteTopImpressionShare_;
     /// <summary>
-    /// The number estimating how often your ad wasn't the very first ad above the
-    /// organic search results due to a low budget. Note: Search
+    /// The number estimating how often your ad wasn't the very first ad among the
+    /// top ads in the search results due to a low budget. Note: Search
     /// budget lost absolute top impression share is reported in the range of 0 to
     /// 0.9. Any value above 0.9 is reported as 0.9001.
     /// </summary>
@@ -3980,7 +3980,7 @@ namespace Google.Ads.GoogleAds.V16.Common {
 
     private double searchBudgetLostTopImpressionShare_;
     /// <summary>
-    /// The number estimating how often your ad didn't show anywhere above the
+    /// The number estimating how often your ad didn't show adjacent to the top
     /// organic search results due to a low budget. Note: Search
     /// budget lost top impression share is reported in the range of 0 to 0.9. Any
     /// value above 0.9 is reported as 0.9001.
@@ -4114,8 +4114,8 @@ namespace Google.Ads.GoogleAds.V16.Common {
 
     private double searchRankLostAbsoluteTopImpressionShare_;
     /// <summary>
-    /// The number estimating how often your ad wasn't the very first ad above the
-    /// organic search results due to poor Ad Rank.
+    /// The number estimating how often your ad wasn't the very first ad among the
+    /// top ads in the search results due to poor Ad Rank.
     /// Note: Search rank lost absolute top impression share is reported in the
     /// range of 0 to 0.9. Any value above 0.9 is reported as 0.9001.
     /// </summary>
@@ -4180,7 +4180,7 @@ namespace Google.Ads.GoogleAds.V16.Common {
 
     private double searchRankLostTopImpressionShare_;
     /// <summary>
-    /// The number estimating how often your ad didn't show anywhere above the
+    /// The number estimating how often your ad didn't show adjacent to the top
     /// organic search results due to poor Ad Rank.
     /// Note: Search rank lost top impression share is reported in the range of 0
     /// to 0.9. Any value above 0.9 is reported as 0.9001.
@@ -4213,11 +4213,13 @@ namespace Google.Ads.GoogleAds.V16.Common {
 
     private double searchTopImpressionShare_;
     /// <summary>
-    /// The impressions you've received in the top location (anywhere above the
-    /// organic search results) compared to the estimated number of impressions you
-    /// were eligible to receive in the top location.
+    /// The impressions you've received among the top ads compared to the estimated
+    /// number of impressions you were eligible to receive among the top ads.
     /// Note: Search top impression share is reported in the range of 0.1 to 1. Any
     /// value below 0.1 is reported as 0.0999.
+    ///
+    /// Top ads are generally above the top organic results, although they may show
+    /// below the top organic results on certain queries.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4355,7 +4357,7 @@ namespace Google.Ads.GoogleAds.V16.Common {
 
     private double topImpressionPercentage_;
     /// <summary>
-    /// The percent of your ad impressions that are shown anywhere above the
+    /// The percent of your ad impressions that are shown adjacent to the top
     /// organic search results.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

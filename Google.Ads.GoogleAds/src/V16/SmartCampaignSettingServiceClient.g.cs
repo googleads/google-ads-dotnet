@@ -464,7 +464,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             SmartCampaignSettingServiceSettings effectiveSettings = settings ?? SmartCampaignSettingServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callGetSmartCampaignStatus = clientHelper.BuildApiCall<GetSmartCampaignStatusRequest, GetSmartCampaignStatusResponse>("GetSmartCampaignStatus", grpcClient.GetSmartCampaignStatusAsync, grpcClient.GetSmartCampaignStatus, effectiveSettings.GetSmartCampaignStatusSettings).WithGoogleRequestParam("resource_name", request => request.ResourceName);
             Modify_ApiCall(ref _callGetSmartCampaignStatus);
             Modify_GetSmartCampaignStatusApiCall(ref _callGetSmartCampaignStatus);

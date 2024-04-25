@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V16.Errors {
           string.Concat(
             "CjZnb29nbGUvYWRzL2dvb2dsZWFkcy92MTYvZXJyb3JzL2V4cGVyaW1lbnRf",
             "ZXJyb3IucHJvdG8SH2dvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNi5lcnJvcnMi",
-            "gAkKE0V4cGVyaW1lbnRFcnJvckVudW0i6AgKD0V4cGVyaW1lbnRFcnJvchIP",
+            "qAkKE0V4cGVyaW1lbnRFcnJvckVudW0ikAkKD0V4cGVyaW1lbnRFcnJvchIP",
             "CgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIhCh1DQU5OT1RfU0VUX1NU",
             "QVJUX0RBVEVfSU5fUEFTVBACEh4KGkVORF9EQVRFX0JFRk9SRV9TVEFSVF9E",
             "QVRFEAMSIAocU1RBUlRfREFURV9UT09fRkFSX0lOX0ZVVFVSRRAEEh0KGURV",
@@ -51,13 +51,14 @@ namespace Google.Ads.GoogleAds.V16.Errors {
             "X0NBTVBBSUdOX05BTUUQGhIoCiRDQU5OT1RfUkVNT1ZFX0lOX0NSRUFUSU9O",
             "X0VYUEVSSU1FTlQQGxIwCixDQU5OT1RfQUREX0NBTVBBSUdOX1dJVEhfREVQ",
             "UkVDQVRFRF9BRF9UWVBFUxAcEjYKMkNBTk5PVF9FTkFCTEVfU1lOQ19GT1Jf",
-            "VU5TVVBQT1JURURfRVhQRVJJTUVOVF9UWVBFEB1C9AEKI2NvbS5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MTYuZXJyb3JzQhRFeHBlcmltZW50RXJyb3JQcm90",
-            "b1ABWkVnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fk",
-            "cy9nb29nbGVhZHMvdjE2L2Vycm9ycztlcnJvcnOiAgNHQUGqAh9Hb29nbGUu",
-            "QWRzLkdvb2dsZUFkcy5WMTYuRXJyb3JzygIfR29vZ2xlXEFkc1xHb29nbGVB",
-            "ZHNcVjE2XEVycm9yc+oCI0dvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYxNjo6",
-            "RXJyb3JzYgZwcm90bzM="));
+            "VU5TVVBQT1JURURfRVhQRVJJTUVOVF9UWVBFEB0SJgoiSU5WQUxJRF9EVVJB",
+            "VElPTl9GT1JfQU5fRVhQRVJJTUVOVBAeQvQBCiNjb20uZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjE2LmVycm9yc0IURXhwZXJpbWVudEVycm9yUHJvdG9QAVpF",
+            "Z29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29v",
+            "Z2xlYWRzL3YxNi9lcnJvcnM7ZXJyb3JzogIDR0FBqgIfR29vZ2xlLkFkcy5H",
+            "b29nbGVBZHMuVjE2LkVycm9yc8oCH0dvb2dsZVxBZHNcR29vZ2xlQWRzXFYx",
+            "NlxFcnJvcnPqAiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTY6OkVycm9y",
+            "c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -360,6 +361,10 @@ namespace Google.Ads.GoogleAds.V16.Errors {
         /// DISPLAY_AUTOMATED_BIDDING_STRATEGY, SEARCH_AUTOMATED_BIDDING_STRATEGY.
         /// </summary>
         [pbr::OriginalName("CANNOT_ENABLE_SYNC_FOR_UNSUPPORTED_EXPERIMENT_TYPE")] CannotEnableSyncForUnsupportedExperimentType = 29,
+        /// <summary>
+        /// Experiment length cannot be longer than max length.
+        /// </summary>
+        [pbr::OriginalName("INVALID_DURATION_FOR_AN_EXPERIMENT")] InvalidDurationForAnExperiment = 30,
       }
 
     }

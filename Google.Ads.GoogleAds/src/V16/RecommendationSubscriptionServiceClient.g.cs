@@ -403,7 +403,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             RecommendationSubscriptionServiceSettings effectiveSettings = settings ?? RecommendationSubscriptionServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callMutateRecommendationSubscription = clientHelper.BuildApiCall<MutateRecommendationSubscriptionRequest, MutateRecommendationSubscriptionResponse>("MutateRecommendationSubscription", grpcClient.MutateRecommendationSubscriptionAsync, grpcClient.MutateRecommendationSubscription, effectiveSettings.MutateRecommendationSubscriptionSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateRecommendationSubscription);
             Modify_MutateRecommendationSubscriptionApiCall(ref _callMutateRecommendationSubscription);

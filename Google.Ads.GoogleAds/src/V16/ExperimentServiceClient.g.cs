@@ -1761,7 +1761,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             ExperimentServiceSettings effectiveSettings = settings ?? ExperimentServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             ScheduleExperimentOperationsClient = new lro::OperationsClientImpl(grpcClient.CreateOperationsClient(), effectiveSettings.ScheduleExperimentOperationsSettings, logger);
             PromoteExperimentOperationsClient = new lro::OperationsClientImpl(grpcClient.CreateOperationsClient(), effectiveSettings.PromoteExperimentOperationsSettings, logger);
             _callMutateExperiments = clientHelper.BuildApiCall<MutateExperimentsRequest, MutateExperimentsResponse>("MutateExperiments", grpcClient.MutateExperimentsAsync, grpcClient.MutateExperiments, effectiveSettings.MutateExperimentsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);

@@ -1047,7 +1047,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             AudienceInsightsServiceSettings effectiveSettings = settings ?? AudienceInsightsServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callGenerateInsightsFinderReport = clientHelper.BuildApiCall<GenerateInsightsFinderReportRequest, GenerateInsightsFinderReportResponse>("GenerateInsightsFinderReport", grpcClient.GenerateInsightsFinderReportAsync, grpcClient.GenerateInsightsFinderReport, effectiveSettings.GenerateInsightsFinderReportSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callGenerateInsightsFinderReport);
             Modify_GenerateInsightsFinderReportApiCall(ref _callGenerateInsightsFinderReport);

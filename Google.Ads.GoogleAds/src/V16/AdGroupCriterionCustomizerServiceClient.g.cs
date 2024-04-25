@@ -337,7 +337,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             AdGroupCriterionCustomizerServiceSettings effectiveSettings = settings ?? AdGroupCriterionCustomizerServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callMutateAdGroupCriterionCustomizers = clientHelper.BuildApiCall<MutateAdGroupCriterionCustomizersRequest, MutateAdGroupCriterionCustomizersResponse>("MutateAdGroupCriterionCustomizers", grpcClient.MutateAdGroupCriterionCustomizersAsync, grpcClient.MutateAdGroupCriterionCustomizers, effectiveSettings.MutateAdGroupCriterionCustomizersSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateAdGroupCriterionCustomizers);
             Modify_MutateAdGroupCriterionCustomizersApiCall(ref _callMutateAdGroupCriterionCustomizers);

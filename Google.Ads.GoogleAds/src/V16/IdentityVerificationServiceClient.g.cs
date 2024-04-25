@@ -519,7 +519,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             IdentityVerificationServiceSettings effectiveSettings = settings ?? IdentityVerificationServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callStartIdentityVerification = clientHelper.BuildApiCall<StartIdentityVerificationRequest, wkt::Empty>("StartIdentityVerification", grpcClient.StartIdentityVerificationAsync, grpcClient.StartIdentityVerification, effectiveSettings.StartIdentityVerificationSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callStartIdentityVerification);
             Modify_StartIdentityVerificationApiCall(ref _callStartIdentityVerification);

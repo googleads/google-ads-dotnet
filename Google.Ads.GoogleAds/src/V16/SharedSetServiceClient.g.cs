@@ -462,7 +462,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             SharedSetServiceSettings effectiveSettings = settings ?? SharedSetServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callMutateSharedSets = clientHelper.BuildApiCall<MutateSharedSetsRequest, MutateSharedSetsResponse>("MutateSharedSets", grpcClient.MutateSharedSetsAsync, grpcClient.MutateSharedSets, effectiveSettings.MutateSharedSetsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateSharedSets);
             Modify_MutateSharedSetsApiCall(ref _callMutateSharedSets);

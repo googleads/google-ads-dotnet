@@ -387,7 +387,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             CustomerUserAccessServiceSettings effectiveSettings = settings ?? CustomerUserAccessServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callMutateCustomerUserAccess = clientHelper.BuildApiCall<MutateCustomerUserAccessRequest, MutateCustomerUserAccessResponse>("MutateCustomerUserAccess", grpcClient.MutateCustomerUserAccessAsync, grpcClient.MutateCustomerUserAccess, effectiveSettings.MutateCustomerUserAccessSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateCustomerUserAccess);
             Modify_MutateCustomerUserAccessApiCall(ref _callMutateCustomerUserAccess);

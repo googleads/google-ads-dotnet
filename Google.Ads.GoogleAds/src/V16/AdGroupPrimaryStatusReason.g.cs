@@ -26,8 +26,8 @@ namespace Google.Ads.GoogleAds.V16.Enums {
           string.Concat(
             "CkNnb29nbGUvYWRzL2dvb2dsZWFkcy92MTYvZW51bXMvYWRfZ3JvdXBfcHJp",
             "bWFyeV9zdGF0dXNfcmVhc29uLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52MTYuZW51bXMisQMKHkFkR3JvdXBQcmltYXJ5U3RhdHVzUmVhc29uRW51",
-            "bSKOAwoaQWRHcm91cFByaW1hcnlTdGF0dXNSZWFzb24SDwoLVU5TUEVDSUZJ",
+            "cy52MTYuZW51bXMi2gMKHkFkR3JvdXBQcmltYXJ5U3RhdHVzUmVhc29uRW51",
+            "bSK3AwoaQWRHcm91cFByaW1hcnlTdGF0dXNSZWFzb24SDwoLVU5TUEVDSUZJ",
             "RUQQABILCgdVTktOT1dOEAESFAoQQ0FNUEFJR05fUkVNT1ZFRBACEhMKD0NB",
             "TVBBSUdOX1BBVVNFRBADEhQKEENBTVBBSUdOX1BFTkRJTkcQBBISCg5DQU1Q",
             "QUlHTl9FTkRFRBAFEhMKD0FEX0dST1VQX1BBVVNFRBAGEhQKEEFEX0dST1VQ",
@@ -35,13 +35,14 @@ namespace Google.Ads.GoogleAds.V16.Enums {
             "RFNfUEFVU0VEEAkSDwoLTk9fS0VZV09SRFMQChIXChNBRF9HUk9VUF9BRFNf",
             "UEFVU0VEEAsSEwoPTk9fQURfR1JPVVBfQURTEAwSFwoTSEFTX0FEU19ESVNB",
             "UFBST1ZFRBANEh0KGUhBU19BRFNfTElNSVRFRF9CWV9QT0xJQ1kQDhIZChVN",
-            "T1NUX0FEU19VTkRFUl9SRVZJRVcQDxISCg5DQU1QQUlHTl9EUkFGVBAQQvkB",
-            "CiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE2LmVudW1zQh9BZEdyb3Vw",
-            "UHJpbWFyeVN0YXR1c1JlYXNvblByb3RvUAFaQ2dvb2dsZS5nb2xhbmcub3Jn",
-            "L2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MTYvZW51bXM7",
-            "ZW51bXOiAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMTYuRW51bXPK",
-            "Ah5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMTZcRW51bXPqAiJHb29nbGU6OkFk",
-            "czo6R29vZ2xlQWRzOjpWMTY6OkVudW1zYgZwcm90bzM="));
+            "T1NUX0FEU19VTkRFUl9SRVZJRVcQDxISCg5DQU1QQUlHTl9EUkFGVBAQEicK",
+            "I0FEX0dST1VQX1BBVVNFRF9EVUVfVE9fTE9XX0FDVElWSVRZEBNC+QEKImNv",
+            "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTYuZW51bXNCH0FkR3JvdXBQcmlt",
+            "YXJ5U3RhdHVzUmVhc29uUHJvdG9QAVpDZ29vZ2xlLmdvbGFuZy5vcmcvZ2Vu",
+            "cHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YxNi9lbnVtcztlbnVt",
+            "c6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYxNi5FbnVtc8oCHkdv",
+            "b2dsZVxBZHNcR29vZ2xlQWRzXFYxNlxFbnVtc+oCIkdvb2dsZTo6QWRzOjpH",
+            "b29nbGVBZHM6OlYxNjo6RW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -300,6 +301,11 @@ namespace Google.Ads.GoogleAds.V16.Enums {
         /// AdGroupPrimaryStatus.NOT_ELIGIBLE.
         /// </summary>
         [pbr::OriginalName("CAMPAIGN_DRAFT")] CampaignDraft = 16,
+        /// <summary>
+        /// Ad group has been paused due to prolonged low activity in serving.
+        /// Contributes to AdGroupPrimaryStatus.PAUSED.
+        /// </summary>
+        [pbr::OriginalName("AD_GROUP_PAUSED_DUE_TO_LOW_ACTIVITY")] AdGroupPausedDueToLowActivity = 19,
       }
 
     }

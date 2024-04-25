@@ -1187,7 +1187,10 @@ namespace Google.Ads.GoogleAds.V16.Resources {
     public const int VideoBrandSafetySuitabilityFieldNumber = 42;
     private global::Google.Ads.GoogleAds.V16.Enums.BrandSafetySuitabilityEnum.Types.BrandSafetySuitability videoBrandSafetySuitability_ = global::Google.Ads.GoogleAds.V16.Enums.BrandSafetySuitabilityEnum.Types.BrandSafetySuitability.Unspecified;
     /// <summary>
-    /// Output only. 3-Tier Brand Safety setting for the campaign.
+    /// Output only. Brand Safety setting at the individual campaign level. Allows
+    /// for selecting an inventory type to show your ads on content that is the
+    /// right fit for your brand. See
+    /// https://support.google.com/google-ads/answer/7515513.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

@@ -305,7 +305,11 @@ namespace Google.Ads.GoogleAds.V16.Services
         {
             GrpcClient = grpcClient;
             UserDataServiceSettings effectiveSettings = settings ?? UserDataServiceSettings.GetDefault();
-            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(effectiveSettings, logger);
+            gaxgrpc::ClientHelper clientHelper = new gaxgrpc::ClientHelper(new gaxgrpc::ClientHelper.Options
+            {
+                Settings = effectiveSettings,
+                Logger = logger,
+            });
             _callUploadUserData = clientHelper.BuildApiCall<UploadUserDataRequest, UploadUserDataResponse>("UploadUserData", grpcClient.UploadUserDataAsync, grpcClient.UploadUserData, effectiveSettings.UploadUserDataSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callUploadUserData);
             Modify_UploadUserDataApiCall(ref _callUploadUserData);
