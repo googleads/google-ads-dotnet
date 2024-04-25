@@ -9,6 +9,8 @@
   * AddRealEstateFeed
   * ApproveMerchantCenterLink
   * RejectMerchantCenterLink
+  * RemoveFlightsFeedItemAttributeValue
+  * UpdateFlightsFeedItemStringAttributeValue
 - Bumped the Google.Api.Gax.Grpc dependency to 4.8.0 and changed the Grpc.Core dependency to depend
   directly on it
 - Removed support for version 14 of the Google Ads API.
