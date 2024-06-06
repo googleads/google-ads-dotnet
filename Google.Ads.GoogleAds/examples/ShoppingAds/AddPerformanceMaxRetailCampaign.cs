@@ -17,27 +17,27 @@ using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V16.Common;
-using Google.Ads.GoogleAds.V16.Errors;
-using Google.Ads.GoogleAds.V16.Resources;
-using Google.Ads.GoogleAds.V16.Services;
+using Google.Ads.GoogleAds.V17.Common;
+using Google.Ads.GoogleAds.V17.Errors;
+using Google.Ads.GoogleAds.V17.Resources;
+using Google.Ads.GoogleAds.V17.Services;
 using Google.Api.Gax;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
 using System.Threading;
-using static Google.Ads.GoogleAds.V16.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V16.Enums.AssetFieldTypeEnum.Types;
-using static Google.Ads.GoogleAds.V16.Enums.AssetGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V16.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V16.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V16.Enums.ConversionActionCategoryEnum.Types;
-using static Google.Ads.GoogleAds.V16.Enums.ConversionOriginEnum.Types;
-using static Google.Ads.GoogleAds.V16.Enums.ListingGroupFilterListingSourceEnum.Types;
-using static Google.Ads.GoogleAds.V16.Enums.ListingGroupFilterTypeEnum.Types;
-using static Google.Ads.GoogleAds.V16.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V17.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V17.Enums.AssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V17.Enums.AssetGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V17.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V17.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V17.Enums.ConversionActionCategoryEnum.Types;
+using static Google.Ads.GoogleAds.V17.Enums.ConversionOriginEnum.Types;
+using static Google.Ads.GoogleAds.V17.Enums.ListingGroupFilterListingSourceEnum.Types;
+using static Google.Ads.GoogleAds.V17.Enums.ListingGroupFilterTypeEnum.Types;
+using static Google.Ads.GoogleAds.V17.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V16
+namespace Google.Ads.GoogleAds.Examples.V17
 {
     /// <summary>
     /// This example shows how to create a Performance Max retail campaign.
@@ -167,7 +167,7 @@ namespace Google.Ads.GoogleAds.Examples.V16
             {
                 // [START add_performance_max_retail_campaign_1]
                 GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V16.GoogleAdsService);
+                client.GetService(Services.V17.GoogleAdsService);
 
                 // This campaign will override the customer conversion goals.
                 // Retrieve the current list of customer conversion goals.
@@ -528,7 +528,7 @@ namespace Google.Ads.GoogleAds.Examples.V16
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V16.GoogleAdsService);
+                client.GetService(Services.V17.GoogleAdsService);
 
             MutateGoogleAdsRequest request = new MutateGoogleAdsRequest()
             {
@@ -874,14 +874,13 @@ namespace Google.Ads.GoogleAds.Examples.V16
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V16.GoogleAdsService);
+                client.GetService(Services.V17.GoogleAdsService);
 
             List<CustomerConversionGoal> conversionGoals = new List<CustomerConversionGoal>();
 
             SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()
             {
                 CustomerId = customerId.ToString(),
-                PageSize = 10000,
                 Query =
                     @"SELECT
                         customer_conversion_goal.category,

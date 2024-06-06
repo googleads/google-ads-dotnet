@@ -16,16 +16,16 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V16.Errors;
-using Google.Ads.GoogleAds.V16.Resources;
-using Google.Ads.GoogleAds.V16.Services;
+using Google.Ads.GoogleAds.V17.Errors;
+using Google.Ads.GoogleAds.V17.Resources;
+using Google.Ads.GoogleAds.V17.Services;
 using System;
 using System.Linq;
-using static Google.Ads.GoogleAds.V16.Enums.ExperimentStatusEnum.Types;
-using static Google.Ads.GoogleAds.V16.Enums.ExperimentTypeEnum.Types;
-using static Google.Ads.GoogleAds.V16.Enums.ResponseContentTypeEnum.Types;
+using static Google.Ads.GoogleAds.V17.Enums.ExperimentStatusEnum.Types;
+using static Google.Ads.GoogleAds.V17.Enums.ExperimentTypeEnum.Types;
+using static Google.Ads.GoogleAds.V17.Enums.ResponseContentTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V16
+namespace Google.Ads.GoogleAds.Examples.V17
 {
     /// <summary>
     /// This code example creates a new experiment, experiment arms, and demonstrates
@@ -83,7 +83,7 @@ namespace Google.Ads.GoogleAds.Examples.V16
         {
             // Get the ExperimentService.
             ExperimentServiceClient experimentService = client.GetService(
-                Services.V16.ExperimentService);
+                Services.V17.ExperimentService);
 
             try
             {
@@ -121,7 +121,7 @@ namespace Google.Ads.GoogleAds.Examples.V16
         {
             // Get the ExperimentService.
             ExperimentServiceClient experimentService = client.GetService(
-                Services.V16.ExperimentService);
+                Services.V17.ExperimentService);
 
             // Creates the experiment.
             Experiment experiment = new Experiment()
@@ -169,7 +169,7 @@ namespace Google.Ads.GoogleAds.Examples.V16
         {
             // Get the ExperimentArmService.
             ExperimentArmServiceClient experimentService = client.GetService(
-                Services.V16.ExperimentArmService);
+                Services.V17.ExperimentArmService);
 
             // Create the control arm. The control arm references an already-existing campaign.
             ExperimentArmOperation controlArmOperation = new ExperimentArmOperation()
@@ -240,7 +240,7 @@ namespace Google.Ads.GoogleAds.Examples.V16
         {
             // Get the CampaignService.
             CampaignServiceClient campaignService = client.GetService(
-                Services.V16.CampaignService);
+                Services.V17.CampaignService);
 
             // You can change anything you like about the campaign. These are the changes you're
             // testing by doing this experiment. Here we just change the name for illustrative
