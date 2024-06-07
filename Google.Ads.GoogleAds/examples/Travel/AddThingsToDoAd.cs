@@ -18,23 +18,23 @@ using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Extensions.Config;
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V16.Common;
-using Google.Ads.GoogleAds.V16.Errors;
-using Google.Ads.GoogleAds.V16.Resources;
-using Google.Ads.GoogleAds.V16.Services;
+using Google.Ads.GoogleAds.V17.Common;
+using Google.Ads.GoogleAds.V17.Errors;
+using Google.Ads.GoogleAds.V17.Resources;
+using Google.Ads.GoogleAds.V17.Services;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V16.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V16.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V16.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V16.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V16.Enums.AdvertisingChannelSubTypeEnum.Types;
-using static Google.Ads.GoogleAds.V16.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V16.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V16.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V17.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V17.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V17.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V17.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V17.Enums.AdvertisingChannelSubTypeEnum.Types;
+using static Google.Ads.GoogleAds.V17.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V17.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V17.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V16
+namespace Google.Ads.GoogleAds.Examples.V17
 {
     /// <summary>
     /// This example creates a Things to do campaign, an ad group and a Things to do ad.
@@ -120,7 +120,7 @@ namespace Google.Ads.GoogleAds.Examples.V16
         {
             // Get the BudgetService.
             CampaignBudgetServiceClient budgetService = client.GetService(
-                Services.V16.CampaignBudgetService);
+                Services.V17.CampaignBudgetService);
 
             // Create the campaign budget.
             CampaignBudget budget = new CampaignBudget()
@@ -156,7 +156,7 @@ namespace Google.Ads.GoogleAds.Examples.V16
         {
 
             // Get the CampaignService.
-            CampaignServiceClient campaignService = client.GetService(Services.V16.CampaignService);
+            CampaignServiceClient campaignService = client.GetService(Services.V17.CampaignService);
 
             // [START add_things_to_do_ad]
             // Creates a campaign.
@@ -212,7 +212,7 @@ namespace Google.Ads.GoogleAds.Examples.V16
             string campaign)
         {
             // Get the AdGroupService.
-            AdGroupServiceClient adGroupService = client.GetService(Services.V16.AdGroupService);
+            AdGroupServiceClient adGroupService = client.GetService(Services.V17.AdGroupService);
 
             // Create the ad group.
             AdGroup adGroup = new AdGroup()
@@ -249,7 +249,7 @@ namespace Google.Ads.GoogleAds.Examples.V16
 
             // Get the AdGroupAdService.
             AdGroupAdServiceClient adGroupAdService =
-                client.GetService(Services.V16.AdGroupAdService);
+                client.GetService(Services.V17.AdGroupAdService);
 
             // Creates a new ad group ad and sets a travel ad info.
             AdGroupAd adGroupAd = new AdGroupAd()

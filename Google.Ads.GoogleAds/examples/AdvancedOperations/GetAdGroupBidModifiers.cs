@@ -15,14 +15,14 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V16.Errors;
-using Google.Ads.GoogleAds.V16.Resources;
-using Google.Ads.GoogleAds.V16.Services;
+using Google.Ads.GoogleAds.V17.Errors;
+using Google.Ads.GoogleAds.V17.Resources;
+using Google.Ads.GoogleAds.V17.Services;
 using Google.Api.Gax;
 using System;
-using static Google.Ads.GoogleAds.V16.Resources.AdGroupBidModifier;
+using static Google.Ads.GoogleAds.V17.Resources.AdGroupBidModifier;
 
-namespace Google.Ads.GoogleAds.Examples.V16
+namespace Google.Ads.GoogleAds.Examples.V17
 {
     /// <summary>
     /// This code example gets ad group bid modifiers.
@@ -63,11 +63,6 @@ namespace Google.Ads.GoogleAds.Examples.V16
         }
 
         /// <summary>
-        /// The page size to be used by default.
-        /// </summary>
-        private const int PAGE_SIZE = 1_000;
-
-        /// <summary>
         /// Returns a description about the code example.
         /// </summary>
         public override string Description => "This code example gets ad group bid modifiers.";
@@ -83,7 +78,7 @@ namespace Google.Ads.GoogleAds.Examples.V16
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService =
-                client.GetService(Services.V16.GoogleAdsService);
+                client.GetService(Services.V17.GoogleAdsService);
 
             string searchQuery = @"
                 SELECT
@@ -109,13 +104,11 @@ namespace Google.Ads.GoogleAds.Examples.V16
             }
 
             searchQuery += " LIMIT 10000";
-            // Creates a request that will retrieve ad group bid modifiers using pages of the
-            // specified page size.
+            // Creates a request that will retrieve ad group bid modifiers.
             SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()
             {
                 CustomerId = customerId.ToString(),
-                Query = searchQuery,
-                PageSize = PAGE_SIZE
+                Query = searchQuery
             };
             try
             {

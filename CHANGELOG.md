@@ -1,3 +1,20 @@
+20.1.0
+======
+- Added support for version 17.0 of the Google Ads API
+- Updated code examples to remove usage of the `PageSize` parameter for `GoogleAdsService.Search`:
+  * GetAccountHierarchy
+  * GetChangeSummary
+  * GetAdGroupBidModifiers
+  * AuthenticateInAspNetWebApplication
+  * GetResponsiveSearchAd
+  * GetAllDisapprovedAds
+  * UpdateAudienceTargetRestriction
+  * AddPerformanceMaxProductListingGroupTree
+  * AddPerformanceMaxRetailCampaign
+  * AddShoppingProductListingGroupTree
+- Removed the NavigateSearchResultPagesCachingTokens example as it is now obsolete
+
+
 20.0.0
 ======
 - Added support for version 16.1 of the Google Ads API.

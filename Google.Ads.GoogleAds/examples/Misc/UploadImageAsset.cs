@@ -17,18 +17,18 @@ using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V16.Common;
-using Google.Ads.GoogleAds.V16.Errors;
-using Google.Ads.GoogleAds.V16.Resources;
-using Google.Ads.GoogleAds.V16.Services;
+using Google.Ads.GoogleAds.V17.Common;
+using Google.Ads.GoogleAds.V17.Errors;
+using Google.Ads.GoogleAds.V17.Resources;
+using Google.Ads.GoogleAds.V17.Services;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V16.Enums.AssetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V16.Enums.MimeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V17.Enums.AssetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V17.Enums.MimeTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V16
+namespace Google.Ads.GoogleAds.Examples.V17
 {
     /// <summary>
     /// This code example uploads an image asset. To get image assets, run GetAllImageAssets.cs.
@@ -83,7 +83,7 @@ namespace Google.Ads.GoogleAds.Examples.V16
         {
             // Get the AssetServiceClient.
             AssetServiceClient assetService =
-                client.GetService(Services.V16.AssetService);
+                client.GetService(Services.V17.AssetService);
 
             // Creates an image content.
             byte[] imageContent = MediaUtilities.GetAssetDataFromUrl(IMAGE_URL, client.Config);

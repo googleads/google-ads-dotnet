@@ -13,7 +13,7 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V16.Services;
+using Google.Ads.GoogleAds.V17.Services;
 using Google.Api.Gax;
 using System;
 using System.Web.UI;
@@ -82,13 +82,11 @@ namespace Google.Ads.GoogleAds.Examples
             string customerId = txtCustomerId.Text;
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-              Services.V16.GoogleAdsService);
+              Services.V17.GoogleAdsService);
 
-            // Create a request that will retrieve all campaigns using pages of the specified
-            // page size.
+            // Create a request that will retrieve all campaigns.
             SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()
             {
-                PageSize = 500,
                 Query = "SELECT campaign.id, campaign.name, campaign.status FROM campaign " +
                     "ORDER BY campaign.id",
                 CustomerId = customerId.ToString()

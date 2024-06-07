@@ -15,17 +15,17 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V16.Common;
-using Google.Ads.GoogleAds.V16.Errors;
-using Google.Ads.GoogleAds.V16.Resources;
-using Google.Ads.GoogleAds.V16.Services;
+using Google.Ads.GoogleAds.V17.Common;
+using Google.Ads.GoogleAds.V17.Errors;
+using Google.Ads.GoogleAds.V17.Resources;
+using Google.Ads.GoogleAds.V17.Services;
 using Google.Api.Gax;
 using Google.Protobuf.Collections;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Google.Ads.GoogleAds.Examples.V16
+namespace Google.Ads.GoogleAds.Examples.V17
 {
     /// <summary>
     /// This code example gets non-removed responsive search ads in a specified ad group.
@@ -70,11 +70,6 @@ namespace Google.Ads.GoogleAds.Examples.V16
         }
 
         /// <summary>
-        /// The page size to be used by default.
-        /// </summary>
-        private const int PAGE_SIZE = 1_000;
-
-        /// <summary>
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
@@ -92,7 +87,7 @@ namespace Google.Ads.GoogleAds.Examples.V16
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V16.GoogleAdsService);
+                Services.V17.GoogleAdsService);
 
             string searchQuery =
                 $@"SELECT
@@ -111,11 +106,10 @@ namespace Google.Ads.GoogleAds.Examples.V16
                 searchQuery += $" AND ad_group.id = {adGroupId}";
             }
 
-            // Create a request that will retrieve all ads using pages of the specified page size.
+            // Create a request that will retrieve all ads.
             SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()
             {
                 CustomerId = customerId.ToString(),
-                PageSize = PAGE_SIZE,
                 Query = searchQuery
             };
 

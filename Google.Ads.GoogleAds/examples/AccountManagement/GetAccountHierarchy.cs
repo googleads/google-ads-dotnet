@@ -15,13 +15,13 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V16.Resources;
-using Google.Ads.GoogleAds.V16.Services;
+using Google.Ads.GoogleAds.V17.Resources;
+using Google.Ads.GoogleAds.V17.Services;
 using Google.Api.Gax;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V16
+namespace Google.Ads.GoogleAds.Examples.V17
 {
     /// <summary>
     /// This example gets the account hierarchy of the specified manager account. If you don't
@@ -70,8 +70,6 @@ namespace Google.Ads.GoogleAds.Examples.V16
                 options.LoginCustomerId);
         }
 
-        private const int PAGE_SIZE = 1000;
-
         /// <summary>
         /// Returns a description about the code example.
         /// </summary>
@@ -99,10 +97,10 @@ namespace Google.Ads.GoogleAds.Examples.V16
             }
 
             GoogleAdsServiceClient googleAdsServiceClient =
-                googleAdsClient.GetService(Services.V16.GoogleAdsService);
+                googleAdsClient.GetService(Services.V17.GoogleAdsService);
 
             CustomerServiceClient customerServiceClient =
-                googleAdsClient.GetService(Services.V16.CustomerService);
+                googleAdsClient.GetService(Services.V17.CustomerService);
 
             // List of Customer IDs to handle.
             List<long> seedCustomerIds = new List<long>();
@@ -162,8 +160,7 @@ namespace Google.Ads.GoogleAds.Examples.V16
                     PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> response =
                         googleAdsServiceClient.Search(
                             managerCustomerId.ToString(),
-                            query,
-                            pageSize: PAGE_SIZE
+                            query
                         );
 
                     // Iterate over all rows in all pages to get all customer clients under the

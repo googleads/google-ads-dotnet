@@ -15,14 +15,14 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V16.Common;
-using Google.Ads.GoogleAds.V16.Errors;
-using Google.Ads.GoogleAds.V16.Services;
+using Google.Ads.GoogleAds.V17.Common;
+using Google.Ads.GoogleAds.V17.Errors;
+using Google.Ads.GoogleAds.V17.Services;
 using System;
 using System.Linq;
-using static Google.Ads.GoogleAds.V16.Enums.ConsentStatusEnum.Types;
+using static Google.Ads.GoogleAds.V17.Enums.ConsentStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V16
+namespace Google.Ads.GoogleAds.Examples.V17
 {
     /// <summary>
     /// This code example imports offline conversion values for specific clicks to your account.
@@ -145,7 +145,7 @@ namespace Google.Ads.GoogleAds.Examples.V16
         {
             // Get the ConversionActionService.
             ConversionUploadServiceClient conversionUploadService =
-                client.GetService(Services.V16.ConversionUploadService);
+                client.GetService(Services.V17.ConversionUploadService);
 
             // Creates a click conversion by specifying currency as USD.
             ClickConversion clickConversion = new ClickConversion()

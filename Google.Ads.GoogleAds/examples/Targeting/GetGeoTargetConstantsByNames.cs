@@ -15,12 +15,12 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V16.Errors;
-using Google.Ads.GoogleAds.V16.Services;
+using Google.Ads.GoogleAds.V17.Errors;
+using Google.Ads.GoogleAds.V17.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V16
+namespace Google.Ads.GoogleAds.Examples.V17
 {
     /// <summary>
     /// This code example illustrates getting GeoTargetConstants by given location names.
@@ -62,7 +62,7 @@ namespace Google.Ads.GoogleAds.Examples.V16
         {
             // Get the GeoTargetConstantServiceClient.
             GeoTargetConstantServiceClient geoService =
-                client.GetService(Services.V16.GeoTargetConstantService);
+                client.GetService(Services.V17.GeoTargetConstantService);
 
             // Locale is using ISO 639-1 format. If an invalid locale is given,
             // 'en' is used by default.

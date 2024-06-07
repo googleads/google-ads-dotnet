@@ -15,14 +15,14 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V16.Errors;
-using Google.Ads.GoogleAds.V16.Services;
+using Google.Ads.GoogleAds.V17.Errors;
+using Google.Ads.GoogleAds.V17.Services;
 using Google.Api.Gax;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V16.Enums.ChangeStatusResourceTypeEnum.Types;
+using static Google.Ads.GoogleAds.V17.Enums.ChangeStatusResourceTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V16
+namespace Google.Ads.GoogleAds.Examples.V17
 {
     /// <summary>
     /// This code example gets a list of which resources have been changed in your account
@@ -58,11 +58,6 @@ namespace Google.Ads.GoogleAds.Examples.V16
         }
 
         /// <summary>
-        /// The page size to be used by default.
-        /// </summary>
-        private const int PAGE_SIZE = 1_000;
-
-        /// <summary>
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
@@ -78,7 +73,7 @@ namespace Google.Ads.GoogleAds.Examples.V16
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V16.GoogleAdsService);
+                Services.V17.GoogleAdsService);
 
             string searchQuery = @"
                 SELECT
@@ -97,11 +92,9 @@ namespace Google.Ads.GoogleAds.Examples.V16
                 ORDER BY change_status.last_change_date_time
                 LIMIT 10000";
 
-            // Create a request that will retrieve all changes using pages of the specified
-            // page size.
+            // Create a request that will retrieve all changes.
             SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()
             {
-                PageSize = PAGE_SIZE,
                 Query = searchQuery,
                 CustomerId = customerId.ToString()
             };

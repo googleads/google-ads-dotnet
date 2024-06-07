@@ -15,18 +15,18 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V16.Common;
-using Google.Ads.GoogleAds.V16.Errors;
-using Google.Ads.GoogleAds.V16.Resources;
-using Google.Ads.GoogleAds.V16.Services;
+using Google.Ads.GoogleAds.V17.Common;
+using Google.Ads.GoogleAds.V17.Errors;
+using Google.Ads.GoogleAds.V17.Resources;
+using Google.Ads.GoogleAds.V17.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V16.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V16.Enums.ListingGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V16.Enums.ProductConditionEnum.Types;
+using static Google.Ads.GoogleAds.V17.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V17.Enums.ListingGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V17.Enums.ProductConditionEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V16
+namespace Google.Ads.GoogleAds.Examples.V17
 {
     /// <summary>
     /// This code example shows how to add a shopping listing group tree to a shopping ad group.
@@ -94,11 +94,6 @@ namespace Google.Ads.GoogleAds.Examples.V16
         }
 
         /// <summary>
-        /// The page size to be used by default.
-        /// </summary>
-        private const int PAGE_SIZE = 1_000;
-
-        /// <summary>
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
@@ -128,7 +123,7 @@ namespace Google.Ads.GoogleAds.Examples.V16
         {
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V16.AdGroupCriterionService);
+                client.GetService(Services.V17.AdGroupCriterionService);
 
             try
             {
@@ -329,11 +324,11 @@ namespace Google.Ads.GoogleAds.Examples.V16
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V16.GoogleAdsService);
+                Services.V17.GoogleAdsService);
 
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V16.AdGroupCriterionService);
+                client.GetService(Services.V17.AdGroupCriterionService);
 
             String searchQuery = "SELECT ad_group_criterion.resource_name FROM " +
                 "ad_group_criterion WHERE ad_group_criterion.type = LISTING_GROUP AND " +
@@ -345,7 +340,6 @@ namespace Google.Ads.GoogleAds.Examples.V16
             SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()
             {
                 CustomerId = customerId.ToString(),
-                PageSize = PAGE_SIZE,
                 Query = searchQuery
             };
 
