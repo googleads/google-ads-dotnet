@@ -163,6 +163,7 @@ namespace Google.Ads.GoogleAds.V17.Services
             yield return RecommendationServiceReflection.Descriptor;
             yield return RecommendationSubscriptionServiceReflection.Descriptor;
             yield return RemarketingActionServiceReflection.Descriptor;
+            yield return ShareablePreviewServiceReflection.Descriptor;
             yield return SharedCriterionServiceReflection.Descriptor;
             yield return SharedSetServiceReflection.Descriptor;
             yield return SmartCampaignSettingServiceReflection.Descriptor;

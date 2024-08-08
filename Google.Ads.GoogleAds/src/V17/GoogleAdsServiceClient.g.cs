@@ -314,14 +314,23 @@ namespace Google.Ads.GoogleAds.V17.Services
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A pageable sequence of <see cref="GoogleAdsRow"/> resources.</returns>
-        public virtual gax::PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> Search(string customerId, string query, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
-            Search(new SearchGoogleAdsRequest
+        public virtual gax::PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> Search(string customerId, string query, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null)
+        {
+            SearchGoogleAdsRequest request = new SearchGoogleAdsRequest
             {
                 CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                 Query = gax::GaxPreconditions.CheckNotNullOrEmpty(query, nameof(query)),
-                PageToken = pageToken ?? "",
-                PageSize = pageSize ?? 0,
-            }, callSettings);
+            };
+            if (pageToken != null)
+            {
+                request.PageToken = pageToken;
+            }
+            if (pageSize != null)
+            {
+                request.PageSize = pageSize.Value;
+            }
+            return Search(request, callSettings);
+        }
 
         /// <summary>
         /// Returns all rows that match the search query.
@@ -354,14 +363,23 @@ namespace Google.Ads.GoogleAds.V17.Services
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A pageable asynchronous sequence of <see cref="GoogleAdsRow"/> resources.</returns>
-        public virtual gax::PagedAsyncEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> SearchAsync(string customerId, string query, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
-            SearchAsync(new SearchGoogleAdsRequest
+        public virtual gax::PagedAsyncEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> SearchAsync(string customerId, string query, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null)
+        {
+            SearchGoogleAdsRequest request = new SearchGoogleAdsRequest
             {
                 CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
                 Query = gax::GaxPreconditions.CheckNotNullOrEmpty(query, nameof(query)),
-                PageToken = pageToken ?? "",
-                PageSize = pageSize ?? 0,
-            }, callSettings);
+            };
+            if (pageToken != null)
+            {
+                request.PageToken = pageToken;
+            }
+            if (pageSize != null)
+            {
+                request.PageSize = pageSize.Value;
+            }
+            return SearchAsync(request, callSettings);
+        }
 
         /// <summary>
         /// Server streaming methods for <see cref="SearchStream(SearchGoogleAdsStreamRequest,gaxgrpc::CallSettings)"/>.

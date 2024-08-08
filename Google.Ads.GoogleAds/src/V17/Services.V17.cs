@@ -865,6 +865,14 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v17/ShareablePreviewService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<ShareablePreviewServiceClient, ShareablePreviewServiceSettings, GoogleAdsConfig> ShareablePreviewService =
+                new ServiceTemplate<ShareablePreviewServiceClient, ShareablePreviewServiceSettings, GoogleAdsConfig>(Create);
+
+
+            /// <summary>
             /// See https://developers.google.com/google-ads/api/reference/rpc/v17/SharedCriterionService
             /// for details.
             /// </summary>
@@ -1362,6 +1370,10 @@ namespace Google.Ads.GoogleAds
 
                     case "RemarketingActionServiceClient":
                         return RemarketingActionServiceClient.Create(callInvoker, (RemarketingActionServiceSettings) settings);
+
+
+                    case "ShareablePreviewServiceClient":
+                        return ShareablePreviewServiceClient.Create(callInvoker, (ShareablePreviewServiceSettings) settings);
 
 
                     case "SharedCriterionServiceClient":

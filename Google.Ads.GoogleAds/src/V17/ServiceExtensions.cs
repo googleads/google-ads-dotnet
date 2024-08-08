@@ -122,6 +122,7 @@ namespace Google.Ads.GoogleAds.V17.Services
     public abstract partial class RecommendationServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class RecommendationSubscriptionServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class RemarketingActionServiceClient : GoogleAdsServiceClientBase { }
+    public abstract partial class ShareablePreviewServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class SharedCriterionServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class SharedSetServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class SmartCampaignSettingServiceClient : GoogleAdsServiceClientBase { }

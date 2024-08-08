@@ -44,7 +44,7 @@ namespace Google.Ads.GoogleAds.V17.Resources {
             "cm9ycy9zdHJpbmdfZm9ybWF0X2Vycm9yLnByb3RvGjlnb29nbGUvYWRzL2dv",
             "b2dsZWFkcy92MTcvZXJyb3JzL3N0cmluZ19sZW5ndGhfZXJyb3IucHJvdG8a",
             "H2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8aGWdvb2dsZS9hcGkv",
-            "cmVzb3VyY2UucHJvdG8iiAcKJE9mZmxpbmVDb252ZXJzaW9uVXBsb2FkQ2xp",
+            "cmVzb3VyY2UucHJvdG8ixQcKJE9mZmxpbmVDb252ZXJzaW9uVXBsb2FkQ2xp",
             "ZW50U3VtbWFyeRJcCg1yZXNvdXJjZV9uYW1lGAEgASgJQkXgQQP6QT8KPWdv",
             "b2dsZWFkcy5nb29nbGVhcGlzLmNvbS9PZmZsaW5lQ29udmVyc2lvblVwbG9h",
             "ZENsaWVudFN1bW1hcnkSagoGY2xpZW50GAIgASgOMlUuZ29vZ2xlLmFkcy5n",
@@ -54,60 +54,62 @@ namespace Google.Ads.GoogleAds.V17.Resources {
             "b252ZXJzaW9uRGlhZ25vc3RpY1N0YXR1c0VudW0uT2ZmbGluZUNvbnZlcnNp",
             "b25EaWFnbm9zdGljU3RhdHVzQgPgQQMSHgoRdG90YWxfZXZlbnRfY291bnQY",
             "BCABKANCA+BBAxIjChZzdWNjZXNzZnVsX2V2ZW50X2NvdW50GAUgASgDQgPg",
-            "QQMSGQoMc3VjY2Vzc19yYXRlGAYgASgBQgPgQQMSIgoVbGFzdF91cGxvYWRf",
-            "ZGF0ZV90aW1lGAcgASgJQgPgQQMSWgoPZGFpbHlfc3VtbWFyaWVzGAggAygL",
-            "MjwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE3LnJlc291cmNlcy5PZmZsaW5l",
-            "Q29udmVyc2lvblN1bW1hcnlCA+BBAxJYCg1qb2Jfc3VtbWFyaWVzGAkgAygL",
-            "MjwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE3LnJlc291cmNlcy5PZmZsaW5l",
-            "Q29udmVyc2lvblN1bW1hcnlCA+BBAxJPCgZhbGVydHMYCiADKAsyOi5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52MTcucmVzb3VyY2VzLk9mZmxpbmVDb252ZXJz",
-            "aW9uQWxlcnRCA+BBAzqMAepBiAEKPWdvb2dsZWFkcy5nb29nbGVhcGlzLmNv",
-            "bS9PZmZsaW5lQ29udmVyc2lvblVwbG9hZENsaWVudFN1bW1hcnkSR2N1c3Rv",
-            "bWVycy97Y3VzdG9tZXJfaWR9L29mZmxpbmVDb252ZXJzaW9uVXBsb2FkQ2xp",
-            "ZW50U3VtbWFyaWVzL3tjbGllbnR9IpgBChhPZmZsaW5lQ29udmVyc2lvblN1",
-            "bW1hcnkSHQoQc3VjY2Vzc2Z1bF9jb3VudBgDIAEoA0ID4EEDEhkKDGZhaWxl",
-            "ZF9jb3VudBgEIAEoA0ID4EEDEhUKBmpvYl9pZBgBIAEoA0ID4EEDSAASGgoL",
-            "dXBsb2FkX2RhdGUYAiABKAlCA+BBA0gAQg8KDWRpbWVuc2lvbl9rZXkihwEK",
-            "Fk9mZmxpbmVDb252ZXJzaW9uQWxlcnQSTgoFZXJyb3IYASABKAsyOi5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52MTcucmVzb3VyY2VzLk9mZmxpbmVDb252ZXJz",
-            "aW9uRXJyb3JCA+BBAxIdChBlcnJvcl9wZXJjZW50YWdlGAIgASgBQgPgQQMi",
-            "5wgKFk9mZmxpbmVDb252ZXJzaW9uRXJyb3IScgoVY29sbGVjdGlvbl9zaXpl",
-            "X2Vycm9yGAEgASgOMkwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE3LmVycm9y",
-            "cy5Db2xsZWN0aW9uU2l6ZUVycm9yRW51bS5Db2xsZWN0aW9uU2l6ZUVycm9y",
-            "QgPgQQNIABKXAQoiY29udmVyc2lvbl9hZGp1c3RtZW50X3VwbG9hZF9lcnJv",
-            "chgCIAEoDjJkLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNy5lcnJvcnMuQ29u",
-            "dmVyc2lvbkFkanVzdG1lbnRVcGxvYWRFcnJvckVudW0uQ29udmVyc2lvbkFk",
-            "anVzdG1lbnRVcGxvYWRFcnJvckID4EEDSAASeAoXY29udmVyc2lvbl91cGxv",
-            "YWRfZXJyb3IYAyABKA4yUC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTcuZXJy",
-            "b3JzLkNvbnZlcnNpb25VcGxvYWRFcnJvckVudW0uQ29udmVyc2lvblVwbG9h",
-            "ZEVycm9yQgPgQQNIABJTCgpkYXRlX2Vycm9yGAQgASgOMjguZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjE3LmVycm9ycy5EYXRlRXJyb3JFbnVtLkRhdGVFcnJv",
-            "ckID4EEDSAASXwoOZGlzdGluY3RfZXJyb3IYBSABKA4yQC5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MTcuZXJyb3JzLkRpc3RpbmN0RXJyb3JFbnVtLkRpc3Rp",
-            "bmN0RXJyb3JCA+BBA0gAElYKC2ZpZWxkX2Vycm9yGAYgASgOMjouZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjE3LmVycm9ycy5GaWVsZEVycm9yRW51bS5GaWVs",
-            "ZEVycm9yQgPgQQNIABJZCgxtdXRhdGVfZXJyb3IYByABKA4yPC5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MTcuZXJyb3JzLk11dGF0ZUVycm9yRW51bS5NdXRh",
-            "dGVFcnJvckID4EEDSAAScgoVbm90X2FsbG93bGlzdGVkX2Vycm9yGAggASgO",
-            "MkwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE3LmVycm9ycy5Ob3RBbGxvd2xp",
-            "c3RlZEVycm9yRW51bS5Ob3RBbGxvd2xpc3RlZEVycm9yQgPgQQNIABJsChNz",
-            "dHJpbmdfZm9ybWF0X2Vycm9yGAkgASgOMkguZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjE3LmVycm9ycy5TdHJpbmdGb3JtYXRFcnJvckVudW0uU3RyaW5nRm9y",
-            "bWF0RXJyb3JCA+BBA0gAEmwKE3N0cmluZ19sZW5ndGhfZXJyb3IYCiABKA4y",
-            "SC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTcuZXJyb3JzLlN0cmluZ0xlbmd0",
-            "aEVycm9yRW51bS5TdHJpbmdMZW5ndGhFcnJvckID4EEDSABCDAoKZXJyb3Jf",
-            "Y29kZUKbAgomY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNy5yZXNvdXJj",
-            "ZXNCKU9mZmxpbmVDb252ZXJzaW9uVXBsb2FkQ2xpZW50U3VtbWFyeVByb3Rv",
-            "UAFaS2dvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRz",
-            "L2dvb2dsZWFkcy92MTcvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIkdv",
-            "b2dsZS5BZHMuR29vZ2xlQWRzLlYxNy5SZXNvdXJjZXPKAiJHb29nbGVcQWRz",
-            "XEdvb2dsZUFkc1xWMTdcUmVzb3VyY2Vz6gImR29vZ2xlOjpBZHM6Okdvb2ds",
-            "ZUFkczo6VjE3OjpSZXNvdXJjZXNiBnByb3RvMw=="));
+            "QQMSGQoMc3VjY2Vzc19yYXRlGAYgASgBQgPgQQMSIAoTcGVuZGluZ19ldmVu",
+            "dF9jb3VudBgLIAEoA0ID4EEDEhkKDHBlbmRpbmdfcmF0ZRgMIAEoAUID4EED",
+            "EiIKFWxhc3RfdXBsb2FkX2RhdGVfdGltZRgHIAEoCUID4EEDEloKD2RhaWx5",
+            "X3N1bW1hcmllcxgIIAMoCzI8Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNy5y",
+            "ZXNvdXJjZXMuT2ZmbGluZUNvbnZlcnNpb25TdW1tYXJ5QgPgQQMSWAoNam9i",
+            "X3N1bW1hcmllcxgJIAMoCzI8Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNy5y",
+            "ZXNvdXJjZXMuT2ZmbGluZUNvbnZlcnNpb25TdW1tYXJ5QgPgQQMSTwoGYWxl",
+            "cnRzGAogAygLMjouZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE3LnJlc291cmNl",
+            "cy5PZmZsaW5lQ29udmVyc2lvbkFsZXJ0QgPgQQM6jAHqQYgBCj1nb29nbGVh",
+            "ZHMuZ29vZ2xlYXBpcy5jb20vT2ZmbGluZUNvbnZlcnNpb25VcGxvYWRDbGll",
+            "bnRTdW1tYXJ5EkdjdXN0b21lcnMve2N1c3RvbWVyX2lkfS9vZmZsaW5lQ29u",
+            "dmVyc2lvblVwbG9hZENsaWVudFN1bW1hcmllcy97Y2xpZW50fSK0AQoYT2Zm",
+            "bGluZUNvbnZlcnNpb25TdW1tYXJ5Eh0KEHN1Y2Nlc3NmdWxfY291bnQYAyAB",
+            "KANCA+BBAxIZCgxmYWlsZWRfY291bnQYBCABKANCA+BBAxIaCg1wZW5kaW5n",
+            "X2NvdW50GAUgASgDQgPgQQMSFQoGam9iX2lkGAEgASgDQgPgQQNIABIaCgt1",
+            "cGxvYWRfZGF0ZRgCIAEoCUID4EEDSABCDwoNZGltZW5zaW9uX2tleSKHAQoW",
+            "T2ZmbGluZUNvbnZlcnNpb25BbGVydBJOCgVlcnJvchgBIAEoCzI6Lmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYxNy5yZXNvdXJjZXMuT2ZmbGluZUNvbnZlcnNp",
+            "b25FcnJvckID4EEDEh0KEGVycm9yX3BlcmNlbnRhZ2UYAiABKAFCA+BBAyLn",
+            "CAoWT2ZmbGluZUNvbnZlcnNpb25FcnJvchJyChVjb2xsZWN0aW9uX3NpemVf",
+            "ZXJyb3IYASABKA4yTC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTcuZXJyb3Jz",
+            "LkNvbGxlY3Rpb25TaXplRXJyb3JFbnVtLkNvbGxlY3Rpb25TaXplRXJyb3JC",
+            "A+BBA0gAEpcBCiJjb252ZXJzaW9uX2FkanVzdG1lbnRfdXBsb2FkX2Vycm9y",
+            "GAIgASgOMmQuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE3LmVycm9ycy5Db252",
+            "ZXJzaW9uQWRqdXN0bWVudFVwbG9hZEVycm9yRW51bS5Db252ZXJzaW9uQWRq",
+            "dXN0bWVudFVwbG9hZEVycm9yQgPgQQNIABJ4Chdjb252ZXJzaW9uX3VwbG9h",
+            "ZF9lcnJvchgDIAEoDjJQLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNy5lcnJv",
+            "cnMuQ29udmVyc2lvblVwbG9hZEVycm9yRW51bS5Db252ZXJzaW9uVXBsb2Fk",
+            "RXJyb3JCA+BBA0gAElMKCmRhdGVfZXJyb3IYBCABKA4yOC5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MTcuZXJyb3JzLkRhdGVFcnJvckVudW0uRGF0ZUVycm9y",
+            "QgPgQQNIABJfCg5kaXN0aW5jdF9lcnJvchgFIAEoDjJALmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYxNy5lcnJvcnMuRGlzdGluY3RFcnJvckVudW0uRGlzdGlu",
+            "Y3RFcnJvckID4EEDSAASVgoLZmllbGRfZXJyb3IYBiABKA4yOi5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52MTcuZXJyb3JzLkZpZWxkRXJyb3JFbnVtLkZpZWxk",
+            "RXJyb3JCA+BBA0gAElkKDG11dGF0ZV9lcnJvchgHIAEoDjI8Lmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYxNy5lcnJvcnMuTXV0YXRlRXJyb3JFbnVtLk11dGF0",
+            "ZUVycm9yQgPgQQNIABJyChVub3RfYWxsb3dsaXN0ZWRfZXJyb3IYCCABKA4y",
+            "TC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTcuZXJyb3JzLk5vdEFsbG93bGlz",
+            "dGVkRXJyb3JFbnVtLk5vdEFsbG93bGlzdGVkRXJyb3JCA+BBA0gAEmwKE3N0",
+            "cmluZ19mb3JtYXRfZXJyb3IYCSABKA4ySC5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MTcuZXJyb3JzLlN0cmluZ0Zvcm1hdEVycm9yRW51bS5TdHJpbmdGb3Jt",
+            "YXRFcnJvckID4EEDSAASbAoTc3RyaW5nX2xlbmd0aF9lcnJvchgKIAEoDjJI",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNy5lcnJvcnMuU3RyaW5nTGVuZ3Ro",
+            "RXJyb3JFbnVtLlN0cmluZ0xlbmd0aEVycm9yQgPgQQNIAEIMCgplcnJvcl9j",
+            "b2RlQpsCCiZjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE3LnJlc291cmNl",
+            "c0IpT2ZmbGluZUNvbnZlcnNpb25VcGxvYWRDbGllbnRTdW1tYXJ5UHJvdG9Q",
+            "AVpLZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
+            "Z29vZ2xlYWRzL3YxNy9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FBqgIiR29v",
+            "Z2xlLkFkcy5Hb29nbGVBZHMuVjE3LlJlc291cmNlc8oCIkdvb2dsZVxBZHNc",
+            "R29vZ2xlQWRzXFYxN1xSZXNvdXJjZXPqAiZHb29nbGU6OkFkczo6R29vZ2xl",
+            "QWRzOjpWMTc6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V17.Enums.OfflineConversionDiagnosticStatusEnumReflection.Descriptor, global::Google.Ads.GoogleAds.V17.Enums.OfflineEventUploadClientEnumReflection.Descriptor, global::Google.Ads.GoogleAds.V17.Errors.CollectionSizeErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V17.Errors.ConversionAdjustmentUploadErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V17.Errors.ConversionUploadErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V17.Errors.DateErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V17.Errors.DistinctErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V17.Errors.FieldErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V17.Errors.MutateErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V17.Errors.NotAllowlistedErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V17.Errors.StringFormatErrorReflection.Descriptor, global::Google.Ads.GoogleAds.V17.Errors.StringLengthErrorReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V17.Resources.OfflineConversionUploadClientSummary), global::Google.Ads.GoogleAds.V17.Resources.OfflineConversionUploadClientSummary.Parser, new[]{ "ResourceName", "Client", "Status", "TotalEventCount", "SuccessfulEventCount", "SuccessRate", "LastUploadDateTime", "DailySummaries", "JobSummaries", "Alerts" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V17.Resources.OfflineConversionSummary), global::Google.Ads.GoogleAds.V17.Resources.OfflineConversionSummary.Parser, new[]{ "SuccessfulCount", "FailedCount", "JobId", "UploadDate" }, new[]{ "DimensionKey" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V17.Resources.OfflineConversionUploadClientSummary), global::Google.Ads.GoogleAds.V17.Resources.OfflineConversionUploadClientSummary.Parser, new[]{ "ResourceName", "Client", "Status", "TotalEventCount", "SuccessfulEventCount", "SuccessRate", "PendingEventCount", "PendingRate", "LastUploadDateTime", "DailySummaries", "JobSummaries", "Alerts" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V17.Resources.OfflineConversionSummary), global::Google.Ads.GoogleAds.V17.Resources.OfflineConversionSummary.Parser, new[]{ "SuccessfulCount", "FailedCount", "PendingCount", "JobId", "UploadDate" }, new[]{ "DimensionKey" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V17.Resources.OfflineConversionAlert), global::Google.Ads.GoogleAds.V17.Resources.OfflineConversionAlert.Parser, new[]{ "Error", "ErrorPercentage" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V17.Resources.OfflineConversionError), global::Google.Ads.GoogleAds.V17.Resources.OfflineConversionError.Parser, new[]{ "CollectionSizeError", "ConversionAdjustmentUploadError", "ConversionUploadError", "DateError", "DistinctError", "FieldError", "MutateError", "NotAllowlistedError", "StringFormatError", "StringLengthError" }, new[]{ "ErrorCode" }, null, null, null)
           }));
@@ -117,7 +119,7 @@ namespace Google.Ads.GoogleAds.V17.Resources {
   }
   #region Messages
   /// <summary>
-  /// Offline conversion upload client summary.
+  /// Offline conversion upload summary at customer level.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class OfflineConversionUploadClientSummary : pb::IMessage<OfflineConversionUploadClientSummary>
@@ -160,6 +162,8 @@ namespace Google.Ads.GoogleAds.V17.Resources {
       totalEventCount_ = other.totalEventCount_;
       successfulEventCount_ = other.successfulEventCount_;
       successRate_ = other.successRate_;
+      pendingEventCount_ = other.pendingEventCount_;
+      pendingRate_ = other.pendingRate_;
       lastUploadDateTime_ = other.lastUploadDateTime_;
       dailySummaries_ = other.dailySummaries_.Clone();
       jobSummaries_ = other.jobSummaries_.Clone();
@@ -177,9 +181,9 @@ namespace Google.Ads.GoogleAds.V17.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Output only. The resource name of the offline conversion upload client
-    /// summary. Offline conversion upload client summary resource names have the
-    /// form:
+    /// Output only. The resource name of the offline conversion upload summary at
+    /// customer level. Offline conversion upload client summary resource names
+    /// have the form:
     ///
     /// `customers/{customer_id}/offlineConversionUploadClientSummaries/{client}`
     /// </summary>
@@ -212,8 +216,7 @@ namespace Google.Ads.GoogleAds.V17.Resources {
     private global::Google.Ads.GoogleAds.V17.Enums.OfflineConversionDiagnosticStatusEnum.Types.OfflineConversionDiagnosticStatus status_ = global::Google.Ads.GoogleAds.V17.Enums.OfflineConversionDiagnosticStatusEnum.Types.OfflineConversionDiagnosticStatus.Unspecified;
     /// <summary>
     /// Output only. Overall status for offline conversion client summary. Status
-    /// is generated
-    ///  from most recent calendar day with upload stats
+    /// is generated from most recent calendar day with upload stats.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -266,6 +269,36 @@ namespace Google.Ads.GoogleAds.V17.Resources {
       get { return successRate_; }
       set {
         successRate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "pending_event_count" field.</summary>
+    public const int PendingEventCountFieldNumber = 11;
+    private long pendingEventCount_;
+    /// <summary>
+    /// Output only. Total count of pending uploaded events.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long PendingEventCount {
+      get { return pendingEventCount_; }
+      set {
+        pendingEventCount_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "pending_rate" field.</summary>
+    public const int PendingRateFieldNumber = 12;
+    private double pendingRate_;
+    /// <summary>
+    /// Output only. The ratio of total pending events to total events.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double PendingRate {
+      get { return pendingRate_; }
+      set {
+        pendingRate_ = value;
       }
     }
 
@@ -349,6 +382,8 @@ namespace Google.Ads.GoogleAds.V17.Resources {
       if (TotalEventCount != other.TotalEventCount) return false;
       if (SuccessfulEventCount != other.SuccessfulEventCount) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(SuccessRate, other.SuccessRate)) return false;
+      if (PendingEventCount != other.PendingEventCount) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(PendingRate, other.PendingRate)) return false;
       if (LastUploadDateTime != other.LastUploadDateTime) return false;
       if(!dailySummaries_.Equals(other.dailySummaries_)) return false;
       if(!jobSummaries_.Equals(other.jobSummaries_)) return false;
@@ -366,6 +401,8 @@ namespace Google.Ads.GoogleAds.V17.Resources {
       if (TotalEventCount != 0L) hash ^= TotalEventCount.GetHashCode();
       if (SuccessfulEventCount != 0L) hash ^= SuccessfulEventCount.GetHashCode();
       if (SuccessRate != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(SuccessRate);
+      if (PendingEventCount != 0L) hash ^= PendingEventCount.GetHashCode();
+      if (PendingRate != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(PendingRate);
       if (LastUploadDateTime.Length != 0) hash ^= LastUploadDateTime.GetHashCode();
       hash ^= dailySummaries_.GetHashCode();
       hash ^= jobSummaries_.GetHashCode();
@@ -419,6 +456,14 @@ namespace Google.Ads.GoogleAds.V17.Resources {
       dailySummaries_.WriteTo(output, _repeated_dailySummaries_codec);
       jobSummaries_.WriteTo(output, _repeated_jobSummaries_codec);
       alerts_.WriteTo(output, _repeated_alerts_codec);
+      if (PendingEventCount != 0L) {
+        output.WriteRawTag(88);
+        output.WriteInt64(PendingEventCount);
+      }
+      if (PendingRate != 0D) {
+        output.WriteRawTag(97);
+        output.WriteDouble(PendingRate);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -460,6 +505,14 @@ namespace Google.Ads.GoogleAds.V17.Resources {
       dailySummaries_.WriteTo(ref output, _repeated_dailySummaries_codec);
       jobSummaries_.WriteTo(ref output, _repeated_jobSummaries_codec);
       alerts_.WriteTo(ref output, _repeated_alerts_codec);
+      if (PendingEventCount != 0L) {
+        output.WriteRawTag(88);
+        output.WriteInt64(PendingEventCount);
+      }
+      if (PendingRate != 0D) {
+        output.WriteRawTag(97);
+        output.WriteDouble(PendingRate);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -486,6 +539,12 @@ namespace Google.Ads.GoogleAds.V17.Resources {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(SuccessfulEventCount);
       }
       if (SuccessRate != 0D) {
+        size += 1 + 8;
+      }
+      if (PendingEventCount != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(PendingEventCount);
+      }
+      if (PendingRate != 0D) {
         size += 1 + 8;
       }
       if (LastUploadDateTime.Length != 0) {
@@ -523,6 +582,12 @@ namespace Google.Ads.GoogleAds.V17.Resources {
       }
       if (other.SuccessRate != 0D) {
         SuccessRate = other.SuccessRate;
+      }
+      if (other.PendingEventCount != 0L) {
+        PendingEventCount = other.PendingEventCount;
+      }
+      if (other.PendingRate != 0D) {
+        PendingRate = other.PendingRate;
       }
       if (other.LastUploadDateTime.Length != 0) {
         LastUploadDateTime = other.LastUploadDateTime;
@@ -585,6 +650,14 @@ namespace Google.Ads.GoogleAds.V17.Resources {
             alerts_.AddEntriesFrom(input, _repeated_alerts_codec);
             break;
           }
+          case 88: {
+            PendingEventCount = input.ReadInt64();
+            break;
+          }
+          case 97: {
+            PendingRate = input.ReadDouble();
+            break;
+          }
         }
       }
     #endif
@@ -640,6 +713,14 @@ namespace Google.Ads.GoogleAds.V17.Resources {
             alerts_.AddEntriesFrom(ref input, _repeated_alerts_codec);
             break;
           }
+          case 88: {
+            PendingEventCount = input.ReadInt64();
+            break;
+          }
+          case 97: {
+            PendingRate = input.ReadDouble();
+            break;
+          }
         }
       }
     }
@@ -687,6 +768,7 @@ namespace Google.Ads.GoogleAds.V17.Resources {
     public OfflineConversionSummary(OfflineConversionSummary other) : this() {
       successfulCount_ = other.successfulCount_;
       failedCount_ = other.failedCount_;
+      pendingCount_ = other.pendingCount_;
       switch (other.DimensionKeyCase) {
         case DimensionKeyOneofCase.JobId:
           JobId = other.JobId;
@@ -732,6 +814,21 @@ namespace Google.Ads.GoogleAds.V17.Resources {
       get { return failedCount_; }
       set {
         failedCount_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "pending_count" field.</summary>
+    public const int PendingCountFieldNumber = 5;
+    private long pendingCount_;
+    /// <summary>
+    /// Output only. Total count of pending uploaded event.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long PendingCount {
+      get { return pendingCount_; }
+      set {
+        pendingCount_ = value;
       }
     }
 
@@ -831,6 +928,7 @@ namespace Google.Ads.GoogleAds.V17.Resources {
       }
       if (SuccessfulCount != other.SuccessfulCount) return false;
       if (FailedCount != other.FailedCount) return false;
+      if (PendingCount != other.PendingCount) return false;
       if (JobId != other.JobId) return false;
       if (UploadDate != other.UploadDate) return false;
       if (DimensionKeyCase != other.DimensionKeyCase) return false;
@@ -843,6 +941,7 @@ namespace Google.Ads.GoogleAds.V17.Resources {
       int hash = 1;
       if (SuccessfulCount != 0L) hash ^= SuccessfulCount.GetHashCode();
       if (FailedCount != 0L) hash ^= FailedCount.GetHashCode();
+      if (PendingCount != 0L) hash ^= PendingCount.GetHashCode();
       if (HasJobId) hash ^= JobId.GetHashCode();
       if (HasUploadDate) hash ^= UploadDate.GetHashCode();
       hash ^= (int) dimensionKeyCase_;
@@ -880,6 +979,10 @@ namespace Google.Ads.GoogleAds.V17.Resources {
         output.WriteRawTag(32);
         output.WriteInt64(FailedCount);
       }
+      if (PendingCount != 0L) {
+        output.WriteRawTag(40);
+        output.WriteInt64(PendingCount);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -906,6 +1009,10 @@ namespace Google.Ads.GoogleAds.V17.Resources {
         output.WriteRawTag(32);
         output.WriteInt64(FailedCount);
       }
+      if (PendingCount != 0L) {
+        output.WriteRawTag(40);
+        output.WriteInt64(PendingCount);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -921,6 +1028,9 @@ namespace Google.Ads.GoogleAds.V17.Resources {
       }
       if (FailedCount != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(FailedCount);
+      }
+      if (PendingCount != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(PendingCount);
       }
       if (HasJobId) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(JobId);
@@ -945,6 +1055,9 @@ namespace Google.Ads.GoogleAds.V17.Resources {
       }
       if (other.FailedCount != 0L) {
         FailedCount = other.FailedCount;
+      }
+      if (other.PendingCount != 0L) {
+        PendingCount = other.PendingCount;
       }
       switch (other.DimensionKeyCase) {
         case DimensionKeyOneofCase.JobId:
@@ -986,6 +1099,10 @@ namespace Google.Ads.GoogleAds.V17.Resources {
             FailedCount = input.ReadInt64();
             break;
           }
+          case 40: {
+            PendingCount = input.ReadInt64();
+            break;
+          }
         }
       }
     #endif
@@ -1015,6 +1132,10 @@ namespace Google.Ads.GoogleAds.V17.Resources {
           }
           case 32: {
             FailedCount = input.ReadInt64();
+            break;
+          }
+          case 40: {
+            PendingCount = input.ReadInt64();
             break;
           }
         }

@@ -26,19 +26,23 @@ namespace Google.Ads.GoogleAds.V17.Enums {
           string.Concat(
             "CkVnb29nbGUvYWRzL2dvb2dsZWFkcy92MTcvZW51bXMvdXNlcl9saXN0X2N1",
             "c3RvbWVyX3R5cGVfY2F0ZWdvcnkucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYxNy5lbnVtcyKjAgogVXNlckxpc3RDdXN0b21lclR5cGVDYXRlZ29y",
-            "eUVudW0i/gEKHFVzZXJMaXN0Q3VzdG9tZXJUeXBlQ2F0ZWdvcnkSDwoLVU5T",
+            "YWRzLnYxNy5lbnVtcyLnAwogVXNlckxpc3RDdXN0b21lclR5cGVDYXRlZ29y",
+            "eUVudW0iwgMKHFVzZXJMaXN0Q3VzdG9tZXJUeXBlQ2F0ZWdvcnkSDwoLVU5T",
             "UEVDSUZJRUQQABILCgdVTktOT1dOEAESEQoNQUxMX0NVU1RPTUVSUxACEg4K",
             "ClBVUkNIQVNFUlMQAxIYChRISUdIX1ZBTFVFX0NVU1RPTUVSUxAEEhgKFERJ",
             "U0VOR0FHRURfQ1VTVE9NRVJTEAUSEwoPUVVBTElGSUVEX0xFQURTEAYSEwoP",
             "Q09OVkVSVEVEX0xFQURTEAcSFAoQUEFJRF9TVUJTQ1JJQkVSUxAIEhQKEExP",
-            "WUFMVFlfU0lHTl9VUFMQCRITCg9DQVJUX0FCQU5ET05FUlMQCkL7AQoiY29t",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNy5lbnVtc0IhVXNlckxpc3RDdXN0",
-            "b21lclR5cGVDYXRlZ29yeVByb3RvUAFaQ2dvb2dsZS5nb2xhbmcub3JnL2dl",
-            "bnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MTcvZW51bXM7ZW51",
-            "bXOiAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMTcuRW51bXPKAh5H",
-            "b29nbGVcQWRzXEdvb2dsZUFkc1xWMTdcRW51bXPqAiJHb29nbGU6OkFkczo6",
-            "R29vZ2xlQWRzOjpWMTc6OkVudW1zYgZwcm90bzM="));
+            "WUFMVFlfU0lHTl9VUFMQCRITCg9DQVJUX0FCQU5ET05FUlMQChIaChZMT1lB",
+            "TFRZX1RJRVJfMV9NRU1CRVJTEAsSGgoWTE9ZQUxUWV9USUVSXzJfTUVNQkVS",
+            "UxAMEhoKFkxPWUFMVFlfVElFUl8zX01FTUJFUlMQDRIaChZMT1lBTFRZX1RJ",
+            "RVJfNF9NRU1CRVJTEA4SGgoWTE9ZQUxUWV9USUVSXzVfTUVNQkVSUxAPEhoK",
+            "FkxPWUFMVFlfVElFUl82X01FTUJFUlMQEBIaChZMT1lBTFRZX1RJRVJfN19N",
+            "RU1CRVJTEBFC+wEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTcuZW51",
+            "bXNCIVVzZXJMaXN0Q3VzdG9tZXJUeXBlQ2F0ZWdvcnlQcm90b1ABWkNnb29n",
+            "bGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVh",
+            "ZHMvdjE3L2VudW1zO2VudW1zogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVB",
+            "ZHMuVjE3LkVudW1zygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjE3XEVudW1z",
+            "6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE3OjpFbnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -256,6 +260,34 @@ namespace Google.Ads.GoogleAds.V17.Enums {
         /// Customer type category for cart abandoners.
         /// </summary>
         [pbr::OriginalName("CART_ABANDONERS")] CartAbandoners = 10,
+        /// <summary>
+        /// Customer type category for loyalty tier 1 members.
+        /// </summary>
+        [pbr::OriginalName("LOYALTY_TIER_1_MEMBERS")] LoyaltyTier1Members = 11,
+        /// <summary>
+        /// Customer type category for loyalty tier 2 members.
+        /// </summary>
+        [pbr::OriginalName("LOYALTY_TIER_2_MEMBERS")] LoyaltyTier2Members = 12,
+        /// <summary>
+        /// Customer type category for loyalty tier 3 members.
+        /// </summary>
+        [pbr::OriginalName("LOYALTY_TIER_3_MEMBERS")] LoyaltyTier3Members = 13,
+        /// <summary>
+        /// Customer type category for loyalty tier 4 members.
+        /// </summary>
+        [pbr::OriginalName("LOYALTY_TIER_4_MEMBERS")] LoyaltyTier4Members = 14,
+        /// <summary>
+        /// Customer type category for loyalty tier 5 members.
+        /// </summary>
+        [pbr::OriginalName("LOYALTY_TIER_5_MEMBERS")] LoyaltyTier5Members = 15,
+        /// <summary>
+        /// Customer type category for loyalty tier 6 members.
+        /// </summary>
+        [pbr::OriginalName("LOYALTY_TIER_6_MEMBERS")] LoyaltyTier6Members = 16,
+        /// <summary>
+        /// Customer type category for loyalty tier 7 members.
+        /// </summary>
+        [pbr::OriginalName("LOYALTY_TIER_7_MEMBERS")] LoyaltyTier7Members = 17,
       }
 
     }

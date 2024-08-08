@@ -13,17 +13,18 @@
 // limitations under the License.
 
 using Google.Ads.Gax.Util;
-using Google.Ads.GoogleAds.V17.Enums;
-using Google.Ads.GoogleAds.V17.Resources;
+using Google.Ads.GoogleAds.Util;
+using Google.Ads.GoogleAds.V16.Enums;
+using Google.Protobuf.Reflection;
 using System;
+using System.Linq;
 using System.Text;
-using static Google.Ads.GoogleAds.V17.Enums.AdvertisingChannelTypeEnum.Types;
 using static Google.Ads.GoogleAds.V17.Enums.AssetFieldTypeEnum.Types;
-using static Google.Ads.GoogleAds.V17.Enums.AssetSourceEnum.Types;
 using static Google.Ads.GoogleAds.V17.Enums.ConversionActionCategoryEnum.Types;
 using static Google.Ads.GoogleAds.V17.Enums.ConversionOriginEnum.Types;
 using static Google.Ads.GoogleAds.V17.Enums.ExtensionTypeEnum.Types;
 using static Google.Ads.GoogleAds.V17.Enums.FeedItemTargetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V17.Enums.OfflineEventUploadClientEnum.Types;
 using static Google.Ads.GoogleAds.V17.Enums.PlaceholderTypeEnum.Types;
 using static Google.Ads.GoogleAds.V17.Enums.SimulationModificationMethodEnum.Types;
 using static Google.Ads.GoogleAds.V17.Enums.SimulationTypeEnum.Types;
@@ -280,15 +281,6 @@ namespace Google.Ads.GoogleAds.V17.Errors
             return $"customers/{customerId}/campaigns/{campaignId}";
         }
 
-        public static string CampaignAggregateAssetView(long customerId, long campaignId,
-            long assetId, AssetSource assetSource, AssetFieldType fieldType)
-        {
-            return $"customers/{customerId}/campaignAggregateAssetViews/{campaignId}~" +
-                $"{assetId}~" +
-                $"{ProtobufUtilities.GetOriginalEnumFieldName(assetSource)}~" +
-                $"{ProtobufUtilities.GetOriginalEnumFieldName(fieldType)}";
-        }
-
         public static string CampaignAsset(long customerId, long campaignAssetId)
         {
             return $"customers/{customerId}/campaignAssets/{campaignAssetId}";
@@ -401,16 +393,6 @@ namespace Google.Ads.GoogleAds.V17.Errors
         public static string ChangeStatus(long customerId, long changeStatusId)
         {
             return $"customers/{customerId}/changeStatus/{changeStatusId}";
-        }
-
-        public static string ChannelAggregateAssetViewResourceNames(long customerId,
-            AdvertisingChannelType advertisingChannelType, long assetId, AssetSource assetSource,
-            AssetFieldType fieldType)
-        {
-            return $"customers/{customerId}/channelAggregateAssetViews/" +
-                $"{ProtobufUtilities.GetOriginalEnumFieldName(advertisingChannelType)}~" +
-                $"{assetId}~{ProtobufUtilities.GetOriginalEnumFieldName(assetSource)}~" +
-                $"{ProtobufUtilities.GetOriginalEnumFieldName(fieldType)}";
         }
 
         public static string ClickView(long customerId, DateTime date, string gclid)
@@ -763,11 +745,6 @@ namespace Google.Ads.GoogleAds.V17.Errors
             return $"customers/{customerId}/lifeEvents/{lifeEventId}";
         }
 
-        public static string LocalServicesLeadService(long customerId, long localServicesLeadId)
-        {
-            return $"customers/{customerId}/localServicesLeads/{localServicesLeadId}";
-        }
-
         public static string LocationView(long customerId, long campaignId, long criterionId)
         {
             return $"customers/{customerId}/locationViews/{campaignId}~{criterionId}";
@@ -802,6 +779,20 @@ namespace Google.Ads.GoogleAds.V17.Errors
         public static string MutateJob(long customerId, long mutateJobId)
         {
             return $"customers/{customerId}/mutateJobs/{mutateJobId}";
+        }
+
+        public static string OfflineConversionUploadClientSummary(long customerId,
+            OfflineEventUploadClient client)
+        {
+            return $"customers/{customerId}/offlineConversionUploadClientSummaries/" +
+            ProtobufUtilities.GetOriginalEnumFieldName(client);
+        }
+
+        public static string OfflineConversionUploadConversionActionSummary(long customerId,
+            long conversionActionId, OfflineEventUploadClient client)
+        {
+            return $"customers/{customerId}/offlineConversionUploadConversionActionSummaries/" +
+                $"{conversionActionId}~{ProtobufUtilities.GetOriginalEnumFieldName(client)}";
         }
 
         public static string OfflineUserDataJob(long customerId, long offlineUserDataJobId)
@@ -878,13 +869,6 @@ namespace Google.Ads.GoogleAds.V17.Errors
             return $"customers/{customerId}/shoppingPerformanceView";
         }
 
-        public static string ShoppingProduct(long customerId, long merchantCenterId, string channel,
-            string languageCode, string feedLabel, long itemId)
-        {
-            return $"customers/{customerId}/shoppingProducts/{merchantCenterId}~{channel}~" +
-                $"{languageCode}~{feedLabel}~{itemId}";
-;        }
-
         public static string SmartCampaignSearchTermView(long customerId, long campaignId,
             string query)
         {
@@ -931,12 +915,6 @@ namespace Google.Ads.GoogleAds.V17.Errors
         public static string UserList(long customerId, long userListId)
         {
             return $"customers/{customerId}/userLists/{userListId}";
-        }
-
-        public static string UserListCustomerType(long customerId, long userListId,
-            string semanticLabel)
-        {
-            return $"customers/{customerId}/userListCustomerTypes/{userListId}~{semanticLabel}";
         }
 
         public static string Video(long customerId, long videoId)

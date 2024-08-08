@@ -99,7 +99,7 @@ namespace Google.Ads.GoogleAds.V17.Common {
 
     private string backgroundColor_;
     /// <summary>
-    /// Background color of the label in RGB format. This string must match the
+    /// Background color of the label in HEX format. This string must match the
     /// regular expression '^\#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$'.
     /// Note: The background color may not be visible for manager accounts.
     /// </summary>

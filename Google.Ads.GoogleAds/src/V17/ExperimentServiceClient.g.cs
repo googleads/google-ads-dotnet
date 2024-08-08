@@ -772,13 +772,22 @@ namespace Google.Ads.GoogleAds.V17.Services
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A pageable sequence of <see cref="gr::Status"/> resources.</returns>
-        public virtual gax::PagedEnumerable<ListExperimentAsyncErrorsResponse, gr::Status> ListExperimentAsyncErrors(string resourceName, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
-            ListExperimentAsyncErrors(new ListExperimentAsyncErrorsRequest
+        public virtual gax::PagedEnumerable<ListExperimentAsyncErrorsResponse, gr::Status> ListExperimentAsyncErrors(string resourceName, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null)
+        {
+            ListExperimentAsyncErrorsRequest request = new ListExperimentAsyncErrorsRequest
             {
                 ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
-                PageToken = pageToken ?? "",
-                PageSize = pageSize ?? 0,
-            }, callSettings);
+            };
+            if (pageToken != null)
+            {
+                request.PageToken = pageToken;
+            }
+            if (pageSize != null)
+            {
+                request.PageSize = pageSize.Value;
+            }
+            return ListExperimentAsyncErrors(request, callSettings);
+        }
 
         /// <summary>
         /// Returns all errors that occurred during the last Experiment update (either
@@ -807,13 +816,22 @@ namespace Google.Ads.GoogleAds.V17.Services
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A pageable asynchronous sequence of <see cref="gr::Status"/> resources.</returns>
-        public virtual gax::PagedAsyncEnumerable<ListExperimentAsyncErrorsResponse, gr::Status> ListExperimentAsyncErrorsAsync(string resourceName, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
-            ListExperimentAsyncErrorsAsync(new ListExperimentAsyncErrorsRequest
+        public virtual gax::PagedAsyncEnumerable<ListExperimentAsyncErrorsResponse, gr::Status> ListExperimentAsyncErrorsAsync(string resourceName, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null)
+        {
+            ListExperimentAsyncErrorsRequest request = new ListExperimentAsyncErrorsRequest
             {
                 ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
-                PageToken = pageToken ?? "",
-                PageSize = pageSize ?? 0,
-            }, callSettings);
+            };
+            if (pageToken != null)
+            {
+                request.PageToken = pageToken;
+            }
+            if (pageSize != null)
+            {
+                request.PageSize = pageSize.Value;
+            }
+            return ListExperimentAsyncErrorsAsync(request, callSettings);
+        }
 
         /// <summary>
         /// Returns all errors that occurred during the last Experiment update (either
@@ -842,13 +860,22 @@ namespace Google.Ads.GoogleAds.V17.Services
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A pageable sequence of <see cref="gr::Status"/> resources.</returns>
-        public virtual gax::PagedEnumerable<ListExperimentAsyncErrorsResponse, gr::Status> ListExperimentAsyncErrors(gagvr::ExperimentName resourceName, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
-            ListExperimentAsyncErrors(new ListExperimentAsyncErrorsRequest
+        public virtual gax::PagedEnumerable<ListExperimentAsyncErrorsResponse, gr::Status> ListExperimentAsyncErrors(gagvr::ExperimentName resourceName, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null)
+        {
+            ListExperimentAsyncErrorsRequest request = new ListExperimentAsyncErrorsRequest
             {
                 ResourceNameAsExperimentName = gax::GaxPreconditions.CheckNotNull(resourceName, nameof(resourceName)),
-                PageToken = pageToken ?? "",
-                PageSize = pageSize ?? 0,
-            }, callSettings);
+            };
+            if (pageToken != null)
+            {
+                request.PageToken = pageToken;
+            }
+            if (pageSize != null)
+            {
+                request.PageSize = pageSize.Value;
+            }
+            return ListExperimentAsyncErrors(request, callSettings);
+        }
 
         /// <summary>
         /// Returns all errors that occurred during the last Experiment update (either
@@ -877,13 +904,22 @@ namespace Google.Ads.GoogleAds.V17.Services
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A pageable asynchronous sequence of <see cref="gr::Status"/> resources.</returns>
-        public virtual gax::PagedAsyncEnumerable<ListExperimentAsyncErrorsResponse, gr::Status> ListExperimentAsyncErrorsAsync(gagvr::ExperimentName resourceName, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
-            ListExperimentAsyncErrorsAsync(new ListExperimentAsyncErrorsRequest
+        public virtual gax::PagedAsyncEnumerable<ListExperimentAsyncErrorsResponse, gr::Status> ListExperimentAsyncErrorsAsync(gagvr::ExperimentName resourceName, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null)
+        {
+            ListExperimentAsyncErrorsRequest request = new ListExperimentAsyncErrorsRequest
             {
                 ResourceNameAsExperimentName = gax::GaxPreconditions.CheckNotNull(resourceName, nameof(resourceName)),
-                PageToken = pageToken ?? "",
-                PageSize = pageSize ?? 0,
-            }, callSettings);
+            };
+            if (pageToken != null)
+            {
+                request.PageToken = pageToken;
+            }
+            if (pageSize != null)
+            {
+                request.PageSize = pageSize.Value;
+            }
+            return ListExperimentAsyncErrorsAsync(request, callSettings);
+        }
 
         /// <summary>
         /// Graduates an experiment to a full campaign.

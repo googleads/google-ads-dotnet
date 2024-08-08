@@ -795,13 +795,22 @@ namespace Google.Ads.GoogleAds.V17.Services
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A pageable sequence of <see cref="gr::Status"/> resources.</returns>
-        public virtual gax::PagedEnumerable<ListCampaignDraftAsyncErrorsResponse, gr::Status> ListCampaignDraftAsyncErrors(string resourceName, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
-            ListCampaignDraftAsyncErrors(new ListCampaignDraftAsyncErrorsRequest
+        public virtual gax::PagedEnumerable<ListCampaignDraftAsyncErrorsResponse, gr::Status> ListCampaignDraftAsyncErrors(string resourceName, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null)
+        {
+            ListCampaignDraftAsyncErrorsRequest request = new ListCampaignDraftAsyncErrorsRequest
             {
                 ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
-                PageToken = pageToken ?? "",
-                PageSize = pageSize ?? 0,
-            }, callSettings);
+            };
+            if (pageToken != null)
+            {
+                request.PageToken = pageToken;
+            }
+            if (pageSize != null)
+            {
+                request.PageSize = pageSize.Value;
+            }
+            return ListCampaignDraftAsyncErrors(request, callSettings);
+        }
 
         /// <summary>
         /// Returns all errors that occurred during CampaignDraft promote. Throws an
@@ -830,13 +839,22 @@ namespace Google.Ads.GoogleAds.V17.Services
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A pageable asynchronous sequence of <see cref="gr::Status"/> resources.</returns>
-        public virtual gax::PagedAsyncEnumerable<ListCampaignDraftAsyncErrorsResponse, gr::Status> ListCampaignDraftAsyncErrorsAsync(string resourceName, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
-            ListCampaignDraftAsyncErrorsAsync(new ListCampaignDraftAsyncErrorsRequest
+        public virtual gax::PagedAsyncEnumerable<ListCampaignDraftAsyncErrorsResponse, gr::Status> ListCampaignDraftAsyncErrorsAsync(string resourceName, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null)
+        {
+            ListCampaignDraftAsyncErrorsRequest request = new ListCampaignDraftAsyncErrorsRequest
             {
                 ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
-                PageToken = pageToken ?? "",
-                PageSize = pageSize ?? 0,
-            }, callSettings);
+            };
+            if (pageToken != null)
+            {
+                request.PageToken = pageToken;
+            }
+            if (pageSize != null)
+            {
+                request.PageSize = pageSize.Value;
+            }
+            return ListCampaignDraftAsyncErrorsAsync(request, callSettings);
+        }
 
         /// <summary>
         /// Returns all errors that occurred during CampaignDraft promote. Throws an
@@ -865,13 +883,22 @@ namespace Google.Ads.GoogleAds.V17.Services
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A pageable sequence of <see cref="gr::Status"/> resources.</returns>
-        public virtual gax::PagedEnumerable<ListCampaignDraftAsyncErrorsResponse, gr::Status> ListCampaignDraftAsyncErrors(gagvr::CampaignDraftName resourceName, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
-            ListCampaignDraftAsyncErrors(new ListCampaignDraftAsyncErrorsRequest
+        public virtual gax::PagedEnumerable<ListCampaignDraftAsyncErrorsResponse, gr::Status> ListCampaignDraftAsyncErrors(gagvr::CampaignDraftName resourceName, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null)
+        {
+            ListCampaignDraftAsyncErrorsRequest request = new ListCampaignDraftAsyncErrorsRequest
             {
                 ResourceNameAsCampaignDraftName = gax::GaxPreconditions.CheckNotNull(resourceName, nameof(resourceName)),
-                PageToken = pageToken ?? "",
-                PageSize = pageSize ?? 0,
-            }, callSettings);
+            };
+            if (pageToken != null)
+            {
+                request.PageToken = pageToken;
+            }
+            if (pageSize != null)
+            {
+                request.PageSize = pageSize.Value;
+            }
+            return ListCampaignDraftAsyncErrors(request, callSettings);
+        }
 
         /// <summary>
         /// Returns all errors that occurred during CampaignDraft promote. Throws an
@@ -900,13 +927,22 @@ namespace Google.Ads.GoogleAds.V17.Services
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A pageable asynchronous sequence of <see cref="gr::Status"/> resources.</returns>
-        public virtual gax::PagedAsyncEnumerable<ListCampaignDraftAsyncErrorsResponse, gr::Status> ListCampaignDraftAsyncErrorsAsync(gagvr::CampaignDraftName resourceName, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
-            ListCampaignDraftAsyncErrorsAsync(new ListCampaignDraftAsyncErrorsRequest
+        public virtual gax::PagedAsyncEnumerable<ListCampaignDraftAsyncErrorsResponse, gr::Status> ListCampaignDraftAsyncErrorsAsync(gagvr::CampaignDraftName resourceName, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null)
+        {
+            ListCampaignDraftAsyncErrorsRequest request = new ListCampaignDraftAsyncErrorsRequest
             {
                 ResourceNameAsCampaignDraftName = gax::GaxPreconditions.CheckNotNull(resourceName, nameof(resourceName)),
-                PageToken = pageToken ?? "",
-                PageSize = pageSize ?? 0,
-            }, callSettings);
+            };
+            if (pageToken != null)
+            {
+                request.PageToken = pageToken;
+            }
+            if (pageSize != null)
+            {
+                request.PageSize = pageSize.Value;
+            }
+            return ListCampaignDraftAsyncErrorsAsync(request, callSettings);
+        }
     }
 
     /// <summary>CampaignDraftService client wrapper implementation, for convenient use.</summary>

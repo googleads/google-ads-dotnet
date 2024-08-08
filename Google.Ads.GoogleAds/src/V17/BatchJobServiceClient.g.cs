@@ -496,13 +496,22 @@ namespace Google.Ads.GoogleAds.V17.Services
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A pageable sequence of <see cref="BatchJobResult"/> resources.</returns>
-        public virtual gax::PagedEnumerable<ListBatchJobResultsResponse, BatchJobResult> ListBatchJobResults(string resourceName, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
-            ListBatchJobResults(new ListBatchJobResultsRequest
+        public virtual gax::PagedEnumerable<ListBatchJobResultsResponse, BatchJobResult> ListBatchJobResults(string resourceName, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null)
+        {
+            ListBatchJobResultsRequest request = new ListBatchJobResultsRequest
             {
                 ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
-                PageToken = pageToken ?? "",
-                PageSize = pageSize ?? 0,
-            }, callSettings);
+            };
+            if (pageToken != null)
+            {
+                request.PageToken = pageToken;
+            }
+            if (pageSize != null)
+            {
+                request.PageSize = pageSize.Value;
+            }
+            return ListBatchJobResults(request, callSettings);
+        }
 
         /// <summary>
         /// Returns the results of the batch job. The job must be done.
@@ -531,13 +540,22 @@ namespace Google.Ads.GoogleAds.V17.Services
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A pageable asynchronous sequence of <see cref="BatchJobResult"/> resources.</returns>
-        public virtual gax::PagedAsyncEnumerable<ListBatchJobResultsResponse, BatchJobResult> ListBatchJobResultsAsync(string resourceName, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
-            ListBatchJobResultsAsync(new ListBatchJobResultsRequest
+        public virtual gax::PagedAsyncEnumerable<ListBatchJobResultsResponse, BatchJobResult> ListBatchJobResultsAsync(string resourceName, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null)
+        {
+            ListBatchJobResultsRequest request = new ListBatchJobResultsRequest
             {
                 ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
-                PageToken = pageToken ?? "",
-                PageSize = pageSize ?? 0,
-            }, callSettings);
+            };
+            if (pageToken != null)
+            {
+                request.PageToken = pageToken;
+            }
+            if (pageSize != null)
+            {
+                request.PageSize = pageSize.Value;
+            }
+            return ListBatchJobResultsAsync(request, callSettings);
+        }
 
         /// <summary>
         /// Returns the results of the batch job. The job must be done.
@@ -566,13 +584,22 @@ namespace Google.Ads.GoogleAds.V17.Services
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A pageable sequence of <see cref="BatchJobResult"/> resources.</returns>
-        public virtual gax::PagedEnumerable<ListBatchJobResultsResponse, BatchJobResult> ListBatchJobResults(gagvr::BatchJobName resourceName, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
-            ListBatchJobResults(new ListBatchJobResultsRequest
+        public virtual gax::PagedEnumerable<ListBatchJobResultsResponse, BatchJobResult> ListBatchJobResults(gagvr::BatchJobName resourceName, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null)
+        {
+            ListBatchJobResultsRequest request = new ListBatchJobResultsRequest
             {
                 ResourceNameAsBatchJobName = gax::GaxPreconditions.CheckNotNull(resourceName, nameof(resourceName)),
-                PageToken = pageToken ?? "",
-                PageSize = pageSize ?? 0,
-            }, callSettings);
+            };
+            if (pageToken != null)
+            {
+                request.PageToken = pageToken;
+            }
+            if (pageSize != null)
+            {
+                request.PageSize = pageSize.Value;
+            }
+            return ListBatchJobResults(request, callSettings);
+        }
 
         /// <summary>
         /// Returns the results of the batch job. The job must be done.
@@ -601,13 +628,22 @@ namespace Google.Ads.GoogleAds.V17.Services
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A pageable asynchronous sequence of <see cref="BatchJobResult"/> resources.</returns>
-        public virtual gax::PagedAsyncEnumerable<ListBatchJobResultsResponse, BatchJobResult> ListBatchJobResultsAsync(gagvr::BatchJobName resourceName, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
-            ListBatchJobResultsAsync(new ListBatchJobResultsRequest
+        public virtual gax::PagedAsyncEnumerable<ListBatchJobResultsResponse, BatchJobResult> ListBatchJobResultsAsync(gagvr::BatchJobName resourceName, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null)
+        {
+            ListBatchJobResultsRequest request = new ListBatchJobResultsRequest
             {
                 ResourceNameAsBatchJobName = gax::GaxPreconditions.CheckNotNull(resourceName, nameof(resourceName)),
-                PageToken = pageToken ?? "",
-                PageSize = pageSize ?? 0,
-            }, callSettings);
+            };
+            if (pageToken != null)
+            {
+                request.PageToken = pageToken;
+            }
+            if (pageSize != null)
+            {
+                request.PageSize = pageSize.Value;
+            }
+            return ListBatchJobResultsAsync(request, callSettings);
+        }
 
         /// <summary>
         /// Runs the batch job.

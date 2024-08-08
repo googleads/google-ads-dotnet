@@ -418,5 +418,14 @@ namespace Google.Ads.GoogleAds.V17.Resources
             get => string.IsNullOrEmpty(CombinedAudience) ? null : CombinedAudienceName.Parse(CombinedAudience, allowUnparsed: true);
             set => CombinedAudience = value?.ToString() ?? "";
         }
+
+        /// <summary>
+        /// <see cref="AssetGroupName"/>-typed view over the <see cref="AssetGroup"/> resource name property.
+        /// </summary>
+        internal AssetGroupName AssetGroupAsAssetGroupName
+        {
+            get => string.IsNullOrEmpty(AssetGroup) ? null : AssetGroupName.Parse(AssetGroup, allowUnparsed: true);
+            set => AssetGroup = value?.ToString() ?? "";
+        }
     }
 }
