@@ -504,7 +504,7 @@ namespace Google.Ads.GoogleAds.V17.Services {
     /// Remove operation: A resource name for the removed custom conversion goal
     /// is expected, in this format:
     ///
-    /// 'customers/{customer_id}/conversionActions/{ConversionGoal.custom_goal_config.conversion_type_ids}'
+    /// 'customers/{customer_id}/customConversionGoals/{goal_id}'
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

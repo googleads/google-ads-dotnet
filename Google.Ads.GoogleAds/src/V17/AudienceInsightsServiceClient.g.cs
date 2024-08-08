@@ -15,6 +15,7 @@
 // Generated code. DO NOT EDIT!
 
 #pragma warning disable CS8981
+using gagvc = Google.Ads.GoogleAds.V17.Common;
 using gagve = Google.Ads.GoogleAds.V17.Enums;
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
@@ -52,6 +53,7 @@ namespace Google.Ads.GoogleAds.V17.Services
             ListInsightsEligibleDatesSettings = existing.ListInsightsEligibleDatesSettings;
             GenerateAudienceCompositionInsightsSettings = existing.GenerateAudienceCompositionInsightsSettings;
             GenerateSuggestedTargetingInsightsSettings = existing.GenerateSuggestedTargetingInsightsSettings;
+            GenerateAudienceOverlapInsightsSettings = existing.GenerateAudienceOverlapInsightsSettings;
             OnCopy(existing);
         }
 
@@ -166,6 +168,28 @@ namespace Google.Ads.GoogleAds.V17.Services
         /// </list>
         /// </remarks>
         public gaxgrpc::CallSettings GenerateSuggestedTargetingInsightsSettings { get; set; } = gaxgrpc::CallSettingsExtensions.WithRetry(gaxgrpc::CallSettings.FromExpiration(gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(14400000))), gaxgrpc::RetrySettings.FromExponentialBackoff(maxAttempts: 2147483647, initialBackoff: sys::TimeSpan.FromMilliseconds(5000), maxBackoff: sys::TimeSpan.FromMilliseconds(60000), backoffMultiplier: 1.3, retryFilter: gaxgrpc::RetrySettings.FilterForStatusCodes(grpccore::StatusCode.Unavailable, grpccore::StatusCode.DeadlineExceeded)));
+
+        /// <summary>
+        /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
+        /// <c>AudienceInsightsServiceClient.GenerateAudienceOverlapInsights</c> and
+        /// <c>AudienceInsightsServiceClient.GenerateAudienceOverlapInsightsAsync</c>.
+        /// </summary>
+        /// <remarks>
+        /// <list type="bullet">
+        /// <item><description>Initial retry delay: 5000 milliseconds.</description></item>
+        /// <item><description>Retry delay multiplier: 1.3</description></item>
+        /// <item><description>Retry maximum delay: 60000 milliseconds.</description></item>
+        /// <item><description>Maximum attempts: Unlimited</description></item>
+        /// <item>
+        /// <description>
+        /// Retriable status codes: <see cref="grpccore::StatusCode.Unavailable"/>,
+        /// <see cref="grpccore::StatusCode.DeadlineExceeded"/>.
+        /// </description>
+        /// </item>
+        /// <item><description>Timeout: 14400 seconds.</description></item>
+        /// </list>
+        /// </remarks>
+        public gaxgrpc::CallSettings GenerateAudienceOverlapInsightsSettings { get; set; } = gaxgrpc::CallSettingsExtensions.WithRetry(gaxgrpc::CallSettings.FromExpiration(gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(14400000))), gaxgrpc::RetrySettings.FromExponentialBackoff(maxAttempts: 2147483647, initialBackoff: sys::TimeSpan.FromMilliseconds(5000), maxBackoff: sys::TimeSpan.FromMilliseconds(60000), backoffMultiplier: 1.3, retryFilter: gaxgrpc::RetrySettings.FilterForStatusCodes(grpccore::StatusCode.Unavailable, grpccore::StatusCode.DeadlineExceeded)));
 
         /// <summary>Creates a deep clone of this object, with all the same property values.</summary>
         /// <returns>A deep clone of this <see cref="AudienceInsightsServiceSettings"/> object.</returns>
@@ -1014,6 +1038,204 @@ namespace Google.Ads.GoogleAds.V17.Services
         /// <returns>A Task containing the RPC response.</returns>
         public virtual stt::Task<GenerateSuggestedTargetingInsightsResponse> GenerateSuggestedTargetingInsightsAsync(string customerId, InsightsAudience audience, st::CancellationToken cancellationToken) =>
             GenerateSuggestedTargetingInsightsAsync(customerId, audience, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Returns a collection of audience attributes along with estimates of the
+        /// overlap between their potential YouTube reach and that of a given input
+        /// attribute.
+        /// 
+        /// List of thrown errors:
+        /// [AudienceInsightsError]()
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [FieldError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [QuotaError]()
+        /// [RangeError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual GenerateAudienceOverlapInsightsResponse GenerateAudienceOverlapInsights(GenerateAudienceOverlapInsightsRequest request, gaxgrpc::CallSettings callSettings = null) =>
+            throw new sys::NotImplementedException();
+
+        /// <summary>
+        /// Returns a collection of audience attributes along with estimates of the
+        /// overlap between their potential YouTube reach and that of a given input
+        /// attribute.
+        /// 
+        /// List of thrown errors:
+        /// [AudienceInsightsError]()
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [FieldError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [QuotaError]()
+        /// [RangeError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<GenerateAudienceOverlapInsightsResponse> GenerateAudienceOverlapInsightsAsync(GenerateAudienceOverlapInsightsRequest request, gaxgrpc::CallSettings callSettings = null) =>
+            throw new sys::NotImplementedException();
+
+        /// <summary>
+        /// Returns a collection of audience attributes along with estimates of the
+        /// overlap between their potential YouTube reach and that of a given input
+        /// attribute.
+        /// 
+        /// List of thrown errors:
+        /// [AudienceInsightsError]()
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [FieldError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [QuotaError]()
+        /// [RangeError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<GenerateAudienceOverlapInsightsResponse> GenerateAudienceOverlapInsightsAsync(GenerateAudienceOverlapInsightsRequest request, st::CancellationToken cancellationToken) =>
+            GenerateAudienceOverlapInsightsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Returns a collection of audience attributes along with estimates of the
+        /// overlap between their potential YouTube reach and that of a given input
+        /// attribute.
+        /// 
+        /// List of thrown errors:
+        /// [AudienceInsightsError]()
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [FieldError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [QuotaError]()
+        /// [RangeError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="customerId">
+        /// Required. The ID of the customer.
+        /// </param>
+        /// <param name="countryLocation">
+        /// Required. The country in which to calculate the sizes and overlaps of
+        /// audiences.
+        /// </param>
+        /// <param name="primaryAttribute">
+        /// Required. The audience attribute that should be intersected with all other
+        /// eligible audiences.  This must be an Affinity or In-Market UserInterest, an
+        /// AgeRange or a Gender.
+        /// </param>
+        /// <param name="dimensions">
+        /// Required. The types of attributes of which to calculate the overlap with
+        /// the primary_attribute. The values must be a subset of
+        /// AFFINITY_USER_INTEREST, IN_MARKET_USER_INTEREST, AGE_RANGE and GENDER.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual GenerateAudienceOverlapInsightsResponse GenerateAudienceOverlapInsights(string customerId, gagvc::LocationInfo countryLocation, AudienceInsightsAttribute primaryAttribute, scg::IEnumerable<gagve::AudienceInsightsDimensionEnum.Types.AudienceInsightsDimension> dimensions, gaxgrpc::CallSettings callSettings = null) =>
+            GenerateAudienceOverlapInsights(new GenerateAudienceOverlapInsightsRequest
+            {
+                CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                CountryLocation = gax::GaxPreconditions.CheckNotNull(countryLocation, nameof(countryLocation)),
+                PrimaryAttribute = gax::GaxPreconditions.CheckNotNull(primaryAttribute, nameof(primaryAttribute)),
+                Dimensions =
+                {
+                    gax::GaxPreconditions.CheckNotNull(dimensions, nameof(dimensions)),
+                },
+            }, callSettings);
+
+        /// <summary>
+        /// Returns a collection of audience attributes along with estimates of the
+        /// overlap between their potential YouTube reach and that of a given input
+        /// attribute.
+        /// 
+        /// List of thrown errors:
+        /// [AudienceInsightsError]()
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [FieldError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [QuotaError]()
+        /// [RangeError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="customerId">
+        /// Required. The ID of the customer.
+        /// </param>
+        /// <param name="countryLocation">
+        /// Required. The country in which to calculate the sizes and overlaps of
+        /// audiences.
+        /// </param>
+        /// <param name="primaryAttribute">
+        /// Required. The audience attribute that should be intersected with all other
+        /// eligible audiences.  This must be an Affinity or In-Market UserInterest, an
+        /// AgeRange or a Gender.
+        /// </param>
+        /// <param name="dimensions">
+        /// Required. The types of attributes of which to calculate the overlap with
+        /// the primary_attribute. The values must be a subset of
+        /// AFFINITY_USER_INTEREST, IN_MARKET_USER_INTEREST, AGE_RANGE and GENDER.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<GenerateAudienceOverlapInsightsResponse> GenerateAudienceOverlapInsightsAsync(string customerId, gagvc::LocationInfo countryLocation, AudienceInsightsAttribute primaryAttribute, scg::IEnumerable<gagve::AudienceInsightsDimensionEnum.Types.AudienceInsightsDimension> dimensions, gaxgrpc::CallSettings callSettings = null) =>
+            GenerateAudienceOverlapInsightsAsync(new GenerateAudienceOverlapInsightsRequest
+            {
+                CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+                CountryLocation = gax::GaxPreconditions.CheckNotNull(countryLocation, nameof(countryLocation)),
+                PrimaryAttribute = gax::GaxPreconditions.CheckNotNull(primaryAttribute, nameof(primaryAttribute)),
+                Dimensions =
+                {
+                    gax::GaxPreconditions.CheckNotNull(dimensions, nameof(dimensions)),
+                },
+            }, callSettings);
+
+        /// <summary>
+        /// Returns a collection of audience attributes along with estimates of the
+        /// overlap between their potential YouTube reach and that of a given input
+        /// attribute.
+        /// 
+        /// List of thrown errors:
+        /// [AudienceInsightsError]()
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [FieldError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [QuotaError]()
+        /// [RangeError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="customerId">
+        /// Required. The ID of the customer.
+        /// </param>
+        /// <param name="countryLocation">
+        /// Required. The country in which to calculate the sizes and overlaps of
+        /// audiences.
+        /// </param>
+        /// <param name="primaryAttribute">
+        /// Required. The audience attribute that should be intersected with all other
+        /// eligible audiences.  This must be an Affinity or In-Market UserInterest, an
+        /// AgeRange or a Gender.
+        /// </param>
+        /// <param name="dimensions">
+        /// Required. The types of attributes of which to calculate the overlap with
+        /// the primary_attribute. The values must be a subset of
+        /// AFFINITY_USER_INTEREST, IN_MARKET_USER_INTEREST, AGE_RANGE and GENDER.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<GenerateAudienceOverlapInsightsResponse> GenerateAudienceOverlapInsightsAsync(string customerId, gagvc::LocationInfo countryLocation, AudienceInsightsAttribute primaryAttribute, scg::IEnumerable<gagve::AudienceInsightsDimensionEnum.Types.AudienceInsightsDimension> dimensions, st::CancellationToken cancellationToken) =>
+            GenerateAudienceOverlapInsightsAsync(customerId, countryLocation, primaryAttribute, dimensions, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
     }
 
     /// <summary>AudienceInsightsService client wrapper implementation, for convenient use.</summary>
@@ -1033,6 +1255,8 @@ namespace Google.Ads.GoogleAds.V17.Services
         private readonly gaxgrpc::ApiCall<GenerateAudienceCompositionInsightsRequest, GenerateAudienceCompositionInsightsResponse> _callGenerateAudienceCompositionInsights;
 
         private readonly gaxgrpc::ApiCall<GenerateSuggestedTargetingInsightsRequest, GenerateSuggestedTargetingInsightsResponse> _callGenerateSuggestedTargetingInsights;
+
+        private readonly gaxgrpc::ApiCall<GenerateAudienceOverlapInsightsRequest, GenerateAudienceOverlapInsightsResponse> _callGenerateAudienceOverlapInsights;
 
         /// <summary>
         /// Constructs a client wrapper for the AudienceInsightsService service, with the specified gRPC client and
@@ -1067,6 +1291,9 @@ namespace Google.Ads.GoogleAds.V17.Services
             _callGenerateSuggestedTargetingInsights = clientHelper.BuildApiCall<GenerateSuggestedTargetingInsightsRequest, GenerateSuggestedTargetingInsightsResponse>("GenerateSuggestedTargetingInsights", grpcClient.GenerateSuggestedTargetingInsightsAsync, grpcClient.GenerateSuggestedTargetingInsights, effectiveSettings.GenerateSuggestedTargetingInsightsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callGenerateSuggestedTargetingInsights);
             Modify_GenerateSuggestedTargetingInsightsApiCall(ref _callGenerateSuggestedTargetingInsights);
+            _callGenerateAudienceOverlapInsights = clientHelper.BuildApiCall<GenerateAudienceOverlapInsightsRequest, GenerateAudienceOverlapInsightsResponse>("GenerateAudienceOverlapInsights", grpcClient.GenerateAudienceOverlapInsightsAsync, grpcClient.GenerateAudienceOverlapInsights, effectiveSettings.GenerateAudienceOverlapInsightsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
+            Modify_ApiCall(ref _callGenerateAudienceOverlapInsights);
+            Modify_GenerateAudienceOverlapInsightsApiCall(ref _callGenerateAudienceOverlapInsights);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);
         }
 
@@ -1082,6 +1309,8 @@ namespace Google.Ads.GoogleAds.V17.Services
 
         partial void Modify_GenerateSuggestedTargetingInsightsApiCall(ref gaxgrpc::ApiCall<GenerateSuggestedTargetingInsightsRequest, GenerateSuggestedTargetingInsightsResponse> call);
 
+        partial void Modify_GenerateAudienceOverlapInsightsApiCall(ref gaxgrpc::ApiCall<GenerateAudienceOverlapInsightsRequest, GenerateAudienceOverlapInsightsResponse> call);
+
         partial void OnConstruction(AudienceInsightsService.AudienceInsightsServiceClient grpcClient, AudienceInsightsServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
         /// <summary>The underlying gRPC AudienceInsightsService client</summary>
@@ -1096,6 +1325,8 @@ namespace Google.Ads.GoogleAds.V17.Services
         partial void Modify_GenerateAudienceCompositionInsightsRequest(ref GenerateAudienceCompositionInsightsRequest request, ref gaxgrpc::CallSettings settings);
 
         partial void Modify_GenerateSuggestedTargetingInsightsRequest(ref GenerateSuggestedTargetingInsightsRequest request, ref gaxgrpc::CallSettings settings);
+
+        partial void Modify_GenerateAudienceOverlapInsightsRequest(ref GenerateAudienceOverlapInsightsRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
         /// Creates a saved report that can be viewed in the Insights Finder tool.
@@ -1325,6 +1556,56 @@ namespace Google.Ads.GoogleAds.V17.Services
         {
             Modify_GenerateSuggestedTargetingInsightsRequest(ref request, ref callSettings);
             return _callGenerateSuggestedTargetingInsights.Async(request, callSettings);
+        }
+
+        /// <summary>
+        /// Returns a collection of audience attributes along with estimates of the
+        /// overlap between their potential YouTube reach and that of a given input
+        /// attribute.
+        /// 
+        /// List of thrown errors:
+        /// [AudienceInsightsError]()
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [FieldError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [QuotaError]()
+        /// [RangeError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public override GenerateAudienceOverlapInsightsResponse GenerateAudienceOverlapInsights(GenerateAudienceOverlapInsightsRequest request, gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_GenerateAudienceOverlapInsightsRequest(ref request, ref callSettings);
+            return _callGenerateAudienceOverlapInsights.Sync(request, callSettings);
+        }
+
+        /// <summary>
+        /// Returns a collection of audience attributes along with estimates of the
+        /// overlap between their potential YouTube reach and that of a given input
+        /// attribute.
+        /// 
+        /// List of thrown errors:
+        /// [AudienceInsightsError]()
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [FieldError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [QuotaError]()
+        /// [RangeError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public override stt::Task<GenerateAudienceOverlapInsightsResponse> GenerateAudienceOverlapInsightsAsync(GenerateAudienceOverlapInsightsRequest request, gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_GenerateAudienceOverlapInsightsRequest(ref request, ref callSettings);
+            return _callGenerateAudienceOverlapInsights.Async(request, callSettings);
         }
     }
 }

@@ -67,6 +67,10 @@ namespace Google.Ads.GoogleAds.V17.Services {
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V17.Services.MutateAdGroupAdsRequest> __Marshaller_google_ads_googleads_v17_services_MutateAdGroupAdsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V17.Services.MutateAdGroupAdsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V17.Services.MutateAdGroupAdsResponse> __Marshaller_google_ads_googleads_v17_services_MutateAdGroupAdsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V17.Services.MutateAdGroupAdsResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V17.Services.RemoveAutomaticallyCreatedAssetsRequest> __Marshaller_google_ads_googleads_v17_services_RemoveAutomaticallyCreatedAssetsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V17.Services.RemoveAutomaticallyCreatedAssetsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.Empty.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Google.Ads.GoogleAds.V17.Services.MutateAdGroupAdsRequest, global::Google.Ads.GoogleAds.V17.Services.MutateAdGroupAdsResponse> __Method_MutateAdGroupAds = new grpc::Method<global::Google.Ads.GoogleAds.V17.Services.MutateAdGroupAdsRequest, global::Google.Ads.GoogleAds.V17.Services.MutateAdGroupAdsResponse>(
@@ -75,6 +79,14 @@ namespace Google.Ads.GoogleAds.V17.Services {
         "MutateAdGroupAds",
         __Marshaller_google_ads_googleads_v17_services_MutateAdGroupAdsRequest,
         __Marshaller_google_ads_googleads_v17_services_MutateAdGroupAdsResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Google.Ads.GoogleAds.V17.Services.RemoveAutomaticallyCreatedAssetsRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_RemoveAutomaticallyCreatedAssets = new grpc::Method<global::Google.Ads.GoogleAds.V17.Services.RemoveAutomaticallyCreatedAssetsRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "RemoveAutomaticallyCreatedAssets",
+        __Marshaller_google_ads_googleads_v17_services_RemoveAutomaticallyCreatedAssetsRequest,
+        __Marshaller_google_protobuf_Empty);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -139,6 +151,29 @@ namespace Google.Ads.GoogleAds.V17.Services {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Google.Ads.GoogleAds.V17.Services.MutateAdGroupAdsResponse> MutateAdGroupAds(global::Google.Ads.GoogleAds.V17.Services.MutateAdGroupAdsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Remove automatically created assets from an ad.
+      ///
+      /// List of thrown errors:
+      ///   [AdError]()
+      ///   [AuthenticationError]()
+      ///   [AuthorizationError]()
+      ///   [AutomaticallyCreatedAssetRemovalError]()
+      ///   [HeaderError]()
+      ///   [InternalError]()
+      ///   [MutateError]()
+      ///   [QuotaError]()
+      ///   [RequestError]()
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> RemoveAutomaticallyCreatedAssets(global::Google.Ads.GoogleAds.V17.Services.RemoveAutomaticallyCreatedAssetsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -400,6 +435,98 @@ namespace Google.Ads.GoogleAds.V17.Services {
       {
         return CallInvoker.AsyncUnaryCall(__Method_MutateAdGroupAds, null, options, request);
       }
+      /// <summary>
+      /// Remove automatically created assets from an ad.
+      ///
+      /// List of thrown errors:
+      ///   [AdError]()
+      ///   [AuthenticationError]()
+      ///   [AuthorizationError]()
+      ///   [AutomaticallyCreatedAssetRemovalError]()
+      ///   [HeaderError]()
+      ///   [InternalError]()
+      ///   [MutateError]()
+      ///   [QuotaError]()
+      ///   [RequestError]()
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty RemoveAutomaticallyCreatedAssets(global::Google.Ads.GoogleAds.V17.Services.RemoveAutomaticallyCreatedAssetsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return RemoveAutomaticallyCreatedAssets(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Remove automatically created assets from an ad.
+      ///
+      /// List of thrown errors:
+      ///   [AdError]()
+      ///   [AuthenticationError]()
+      ///   [AuthorizationError]()
+      ///   [AutomaticallyCreatedAssetRemovalError]()
+      ///   [HeaderError]()
+      ///   [InternalError]()
+      ///   [MutateError]()
+      ///   [QuotaError]()
+      ///   [RequestError]()
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Protobuf.WellKnownTypes.Empty RemoveAutomaticallyCreatedAssets(global::Google.Ads.GoogleAds.V17.Services.RemoveAutomaticallyCreatedAssetsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_RemoveAutomaticallyCreatedAssets, null, options, request);
+      }
+      /// <summary>
+      /// Remove automatically created assets from an ad.
+      ///
+      /// List of thrown errors:
+      ///   [AdError]()
+      ///   [AuthenticationError]()
+      ///   [AuthorizationError]()
+      ///   [AutomaticallyCreatedAssetRemovalError]()
+      ///   [HeaderError]()
+      ///   [InternalError]()
+      ///   [MutateError]()
+      ///   [QuotaError]()
+      ///   [RequestError]()
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> RemoveAutomaticallyCreatedAssetsAsync(global::Google.Ads.GoogleAds.V17.Services.RemoveAutomaticallyCreatedAssetsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return RemoveAutomaticallyCreatedAssetsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Remove automatically created assets from an ad.
+      ///
+      /// List of thrown errors:
+      ///   [AdError]()
+      ///   [AuthenticationError]()
+      ///   [AuthorizationError]()
+      ///   [AutomaticallyCreatedAssetRemovalError]()
+      ///   [HeaderError]()
+      ///   [InternalError]()
+      ///   [MutateError]()
+      ///   [QuotaError]()
+      ///   [RequestError]()
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Protobuf.WellKnownTypes.Empty> RemoveAutomaticallyCreatedAssetsAsync(global::Google.Ads.GoogleAds.V17.Services.RemoveAutomaticallyCreatedAssetsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_RemoveAutomaticallyCreatedAssets, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override AdGroupAdServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -414,7 +541,8 @@ namespace Google.Ads.GoogleAds.V17.Services {
     public static grpc::ServerServiceDefinition BindService(AdGroupAdServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_MutateAdGroupAds, serviceImpl.MutateAdGroupAds).Build();
+          .AddMethod(__Method_MutateAdGroupAds, serviceImpl.MutateAdGroupAds)
+          .AddMethod(__Method_RemoveAutomaticallyCreatedAssets, serviceImpl.RemoveAutomaticallyCreatedAssets).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -425,6 +553,7 @@ namespace Google.Ads.GoogleAds.V17.Services {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, AdGroupAdServiceBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_MutateAdGroupAds, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Ads.GoogleAds.V17.Services.MutateAdGroupAdsRequest, global::Google.Ads.GoogleAds.V17.Services.MutateAdGroupAdsResponse>(serviceImpl.MutateAdGroupAds));
+      serviceBinder.AddMethod(__Method_RemoveAutomaticallyCreatedAssets, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Ads.GoogleAds.V17.Services.RemoveAutomaticallyCreatedAssetsRequest, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.RemoveAutomaticallyCreatedAssets));
     }
 
   }

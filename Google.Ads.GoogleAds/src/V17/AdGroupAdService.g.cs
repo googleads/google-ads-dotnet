@@ -27,55 +27,73 @@ namespace Google.Ads.GoogleAds.V17.Services {
             "Cjtnb29nbGUvYWRzL2dvb2dsZWFkcy92MTcvc2VydmljZXMvYWRfZ3JvdXBf",
             "YWRfc2VydmljZS5wcm90bxIhZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE3LnNl",
             "cnZpY2VzGixnb29nbGUvYWRzL2dvb2dsZWFkcy92MTcvY29tbW9uL3BvbGlj",
-            "eS5wcm90bxo6Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjE3L2VudW1zL3Jlc3Bv",
-            "bnNlX2NvbnRlbnRfdHlwZS5wcm90bxo0Z29vZ2xlL2Fkcy9nb29nbGVhZHMv",
-            "djE3L3Jlc291cmNlcy9hZF9ncm91cF9hZC5wcm90bxocZ29vZ2xlL2FwaS9h",
-            "bm5vdGF0aW9ucy5wcm90bxoXZ29vZ2xlL2FwaS9jbGllbnQucHJvdG8aH2dv",
-            "b2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8aGWdvb2dsZS9hcGkvcmVz",
-            "b3VyY2UucHJvdG8aIGdvb2dsZS9wcm90b2J1Zi9maWVsZF9tYXNrLnByb3Rv",
-            "Ghdnb29nbGUvcnBjL3N0YXR1cy5wcm90byKfAgoXTXV0YXRlQWRHcm91cEFk",
-            "c1JlcXVlc3QSGAoLY3VzdG9tZXJfaWQYASABKAlCA+BBAhJOCgpvcGVyYXRp",
-            "b25zGAIgAygLMjUuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE3LnNlcnZpY2Vz",
-            "LkFkR3JvdXBBZE9wZXJhdGlvbkID4EECEhcKD3BhcnRpYWxfZmFpbHVyZRgD",
-            "IAEoCBIVCg12YWxpZGF0ZV9vbmx5GAQgASgIEmoKFXJlc3BvbnNlX2NvbnRl",
-            "bnRfdHlwZRgFIAEoDjJLLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNy5lbnVt",
-            "cy5SZXNwb25zZUNvbnRlbnRUeXBlRW51bS5SZXNwb25zZUNvbnRlbnRUeXBl",
-            "IvACChJBZEdyb3VwQWRPcGVyYXRpb24SLwoLdXBkYXRlX21hc2sYBCABKAsy",
-            "Gi5nb29nbGUucHJvdG9idWYuRmllbGRNYXNrEl8KG3BvbGljeV92YWxpZGF0",
-            "aW9uX3BhcmFtZXRlchgFIAEoCzI6Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYx",
-            "Ny5jb21tb24uUG9saWN5VmFsaWRhdGlvblBhcmFtZXRlchI/CgZjcmVhdGUY",
-            "ASABKAsyLS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTcucmVzb3VyY2VzLkFk",
-            "R3JvdXBBZEgAEj8KBnVwZGF0ZRgCIAEoCzItLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYxNy5yZXNvdXJjZXMuQWRHcm91cEFkSAASOQoGcmVtb3ZlGAMgASgJ",
-            "Qif6QSQKImdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9BZEdyb3VwQWRIAEIL",
-            "CglvcGVyYXRpb24imAEKGE11dGF0ZUFkR3JvdXBBZHNSZXNwb25zZRIxChVw",
-            "YXJ0aWFsX2ZhaWx1cmVfZXJyb3IYAyABKAsyEi5nb29nbGUucnBjLlN0YXR1",
-            "cxJJCgdyZXN1bHRzGAIgAygLMjguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE3",
-            "LnNlcnZpY2VzLk11dGF0ZUFkR3JvdXBBZFJlc3VsdCKbAQoVTXV0YXRlQWRH",
-            "cm91cEFkUmVzdWx0Ej4KDXJlc291cmNlX25hbWUYASABKAlCJ/pBJAoiZ29v",
-            "Z2xlYWRzLmdvb2dsZWFwaXMuY29tL0FkR3JvdXBBZBJCCgthZF9ncm91cF9h",
-            "ZBgCIAEoCzItLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNy5yZXNvdXJjZXMu",
-            "QWRHcm91cEFkMr0CChBBZEdyb3VwQWRTZXJ2aWNlEuEBChBNdXRhdGVBZEdy",
-            "b3VwQWRzEjouZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE3LnNlcnZpY2VzLk11",
-            "dGF0ZUFkR3JvdXBBZHNSZXF1ZXN0GjsuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djE3LnNlcnZpY2VzLk11dGF0ZUFkR3JvdXBBZHNSZXNwb25zZSJU2kEWY3Vz",
-            "dG9tZXJfaWQsb3BlcmF0aW9uc4LT5JMCNSIwL3YxNy9jdXN0b21lcnMve2N1",
-            "c3RvbWVyX2lkPSp9L2FkR3JvdXBBZHM6bXV0YXRlOgEqGkXKQRhnb29nbGVh",
-            "ZHMuZ29vZ2xlYXBpcy5jb23SQSdodHRwczovL3d3dy5nb29nbGVhcGlzLmNv",
-            "bS9hdXRoL2Fkd29yZHNCgQIKJWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MTcuc2VydmljZXNCFUFkR3JvdXBBZFNlcnZpY2VQcm90b1ABWklnb29nbGUu",
-            "Z29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMv",
-            "djE3L3NlcnZpY2VzO3NlcnZpY2VzogIDR0FBqgIhR29vZ2xlLkFkcy5Hb29n",
-            "bGVBZHMuVjE3LlNlcnZpY2VzygIhR29vZ2xlXEFkc1xHb29nbGVBZHNcVjE3",
-            "XFNlcnZpY2Vz6gIlR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE3OjpTZXJ2",
-            "aWNlc2IGcHJvdG8z"));
+            "eS5wcm90bxo1Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjE3L2VudW1zL2Fzc2V0",
+            "X2ZpZWxkX3R5cGUucHJvdG8aOmdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YxNy9l",
+            "bnVtcy9yZXNwb25zZV9jb250ZW50X3R5cGUucHJvdG8aNGdvb2dsZS9hZHMv",
+            "Z29vZ2xlYWRzL3YxNy9yZXNvdXJjZXMvYWRfZ3JvdXBfYWQucHJvdG8aHGdv",
+            "b2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8aF2dvb2dsZS9hcGkvY2xpZW50",
+            "LnByb3RvGh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9yLnByb3RvGhlnb29n",
+            "bGUvYXBpL3Jlc291cmNlLnByb3RvGhtnb29nbGUvcHJvdG9idWYvZW1wdHku",
+            "cHJvdG8aIGdvb2dsZS9wcm90b2J1Zi9maWVsZF9tYXNrLnByb3RvGhdnb29n",
+            "bGUvcnBjL3N0YXR1cy5wcm90byKfAgoXTXV0YXRlQWRHcm91cEFkc1JlcXVl",
+            "c3QSGAoLY3VzdG9tZXJfaWQYASABKAlCA+BBAhJOCgpvcGVyYXRpb25zGAIg",
+            "AygLMjUuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE3LnNlcnZpY2VzLkFkR3Jv",
+            "dXBBZE9wZXJhdGlvbkID4EECEhcKD3BhcnRpYWxfZmFpbHVyZRgDIAEoCBIV",
+            "Cg12YWxpZGF0ZV9vbmx5GAQgASgIEmoKFXJlc3BvbnNlX2NvbnRlbnRfdHlw",
+            "ZRgFIAEoDjJLLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNy5lbnVtcy5SZXNw",
+            "b25zZUNvbnRlbnRUeXBlRW51bS5SZXNwb25zZUNvbnRlbnRUeXBlIvACChJB",
+            "ZEdyb3VwQWRPcGVyYXRpb24SLwoLdXBkYXRlX21hc2sYBCABKAsyGi5nb29n",
+            "bGUucHJvdG9idWYuRmllbGRNYXNrEl8KG3BvbGljeV92YWxpZGF0aW9uX3Bh",
+            "cmFtZXRlchgFIAEoCzI6Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNy5jb21t",
+            "b24uUG9saWN5VmFsaWRhdGlvblBhcmFtZXRlchI/CgZjcmVhdGUYASABKAsy",
+            "LS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTcucmVzb3VyY2VzLkFkR3JvdXBB",
+            "ZEgAEj8KBnVwZGF0ZRgCIAEoCzItLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYx",
+            "Ny5yZXNvdXJjZXMuQWRHcm91cEFkSAASOQoGcmVtb3ZlGAMgASgJQif6QSQK",
+            "Imdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9BZEdyb3VwQWRIAEILCglvcGVy",
+            "YXRpb24imAEKGE11dGF0ZUFkR3JvdXBBZHNSZXNwb25zZRIxChVwYXJ0aWFs",
+            "X2ZhaWx1cmVfZXJyb3IYAyABKAsyEi5nb29nbGUucnBjLlN0YXR1cxJJCgdy",
+            "ZXN1bHRzGAIgAygLMjguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE3LnNlcnZp",
+            "Y2VzLk11dGF0ZUFkR3JvdXBBZFJlc3VsdCKbAQoVTXV0YXRlQWRHcm91cEFk",
+            "UmVzdWx0Ej4KDXJlc291cmNlX25hbWUYASABKAlCJ/pBJAoiZ29vZ2xlYWRz",
+            "Lmdvb2dsZWFwaXMuY29tL0FkR3JvdXBBZBJCCgthZF9ncm91cF9hZBgCIAEo",
+            "CzItLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNy5yZXNvdXJjZXMuQWRHcm91",
+            "cEFkIscBCidSZW1vdmVBdXRvbWF0aWNhbGx5Q3JlYXRlZEFzc2V0c1JlcXVl",
+            "c3QSPwoLYWRfZ3JvdXBfYWQYASABKAlCKuBBAvpBJAoiZ29vZ2xlYWRzLmdv",
+            "b2dsZWFwaXMuY29tL0FkR3JvdXBBZBJbChZhc3NldHNfd2l0aF9maWVsZF90",
+            "eXBlGAIgAygLMjYuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE3LnNlcnZpY2Vz",
+            "LkFzc2V0c1dpdGhGaWVsZFR5cGVCA+BBAiKuAQoTQXNzZXRzV2l0aEZpZWxk",
+            "VHlwZRI1CgVhc3NldBgBIAEoCUIm4EEC+kEgCh5nb29nbGVhZHMuZ29vZ2xl",
+            "YXBpcy5jb20vQXNzZXQSYAoQYXNzZXRfZmllbGRfdHlwZRgCIAEoDjJBLmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYxNy5lbnVtcy5Bc3NldEZpZWxkVHlwZUVu",
+            "dW0uQXNzZXRGaWVsZFR5cGVCA+BBAjLEBAoQQWRHcm91cEFkU2VydmljZRLh",
+            "AQoQTXV0YXRlQWRHcm91cEFkcxI6Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYx",
+            "Ny5zZXJ2aWNlcy5NdXRhdGVBZEdyb3VwQWRzUmVxdWVzdBo7Lmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYxNy5zZXJ2aWNlcy5NdXRhdGVBZEdyb3VwQWRzUmVz",
+            "cG9uc2UiVNpBFmN1c3RvbWVyX2lkLG9wZXJhdGlvbnOC0+STAjUiMC92MTcv",
+            "Y3VzdG9tZXJzL3tjdXN0b21lcl9pZD0qfS9hZEdyb3VwQWRzOm11dGF0ZToB",
+            "KhKEAgogUmVtb3ZlQXV0b21hdGljYWxseUNyZWF0ZWRBc3NldHMSSi5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MTcuc2VydmljZXMuUmVtb3ZlQXV0b21hdGlj",
+            "YWxseUNyZWF0ZWRBc3NldHNSZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVt",
+            "cHR5InzaQSJhZF9ncm91cF9hZCxhc3NldHNfd2l0aF9maWVsZF90eXBlgtPk",
+            "kwJRIkwvdjE3L3thZF9ncm91cF9hZD1jdXN0b21lcnMvKi9hZEdyb3VwQWRz",
+            "Lyp9OnJlbW92ZUF1dG9tYXRpY2FsbHlDcmVhdGVkQXNzZXRzOgEqGkXKQRhn",
+            "b29nbGVhZHMuZ29vZ2xlYXBpcy5jb23SQSdodHRwczovL3d3dy5nb29nbGVh",
+            "cGlzLmNvbS9hdXRoL2Fkd29yZHNCgQIKJWNvbS5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MTcuc2VydmljZXNCFUFkR3JvdXBBZFNlcnZpY2VQcm90b1ABWkln",
+            "b29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29n",
+            "bGVhZHMvdjE3L3NlcnZpY2VzO3NlcnZpY2VzogIDR0FBqgIhR29vZ2xlLkFk",
+            "cy5Hb29nbGVBZHMuVjE3LlNlcnZpY2VzygIhR29vZ2xlXEFkc1xHb29nbGVB",
+            "ZHNcVjE3XFNlcnZpY2Vz6gIlR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE3",
+            "OjpTZXJ2aWNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V17.Common.PolicyReflection.Descriptor, global::Google.Ads.GoogleAds.V17.Enums.ResponseContentTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V17.Resources.AdGroupAdReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V17.Common.PolicyReflection.Descriptor, global::Google.Ads.GoogleAds.V17.Enums.AssetFieldTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V17.Enums.ResponseContentTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V17.Resources.AdGroupAdReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V17.Services.MutateAdGroupAdsRequest), global::Google.Ads.GoogleAds.V17.Services.MutateAdGroupAdsRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure", "ValidateOnly", "ResponseContentType" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V17.Services.AdGroupAdOperation), global::Google.Ads.GoogleAds.V17.Services.AdGroupAdOperation.Parser, new[]{ "UpdateMask", "PolicyValidationParameter", "Create", "Update", "Remove" }, new[]{ "Operation" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V17.Services.MutateAdGroupAdsResponse), global::Google.Ads.GoogleAds.V17.Services.MutateAdGroupAdsResponse.Parser, new[]{ "PartialFailureError", "Results" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V17.Services.MutateAdGroupAdResult), global::Google.Ads.GoogleAds.V17.Services.MutateAdGroupAdResult.Parser, new[]{ "ResourceName", "AdGroupAd" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V17.Services.MutateAdGroupAdResult), global::Google.Ads.GoogleAds.V17.Services.MutateAdGroupAdResult.Parser, new[]{ "ResourceName", "AdGroupAd" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V17.Services.RemoveAutomaticallyCreatedAssetsRequest), global::Google.Ads.GoogleAds.V17.Services.RemoveAutomaticallyCreatedAssetsRequest.Parser, new[]{ "AdGroupAd", "AssetsWithFieldType" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V17.Services.AssetsWithFieldType), global::Google.Ads.GoogleAds.V17.Services.AssetsWithFieldType.Parser, new[]{ "Asset", "AssetFieldType" }, null, null, null, null)
           }));
     }
     #endregion
@@ -1361,6 +1379,469 @@ namespace Google.Ads.GoogleAds.V17.Services {
               AdGroupAd = new global::Google.Ads.GoogleAds.V17.Resources.AdGroupAd();
             }
             input.ReadMessage(AdGroupAd);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Request message for
+  /// [AdGroupAdService.RemoveAutomaticallyCreatedAssetsRequest][].
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class RemoveAutomaticallyCreatedAssetsRequest : pb::IMessage<RemoveAutomaticallyCreatedAssetsRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<RemoveAutomaticallyCreatedAssetsRequest> _parser = new pb::MessageParser<RemoveAutomaticallyCreatedAssetsRequest>(() => new RemoveAutomaticallyCreatedAssetsRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<RemoveAutomaticallyCreatedAssetsRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V17.Services.AdGroupAdServiceReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RemoveAutomaticallyCreatedAssetsRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RemoveAutomaticallyCreatedAssetsRequest(RemoveAutomaticallyCreatedAssetsRequest other) : this() {
+      adGroupAd_ = other.adGroupAd_;
+      assetsWithFieldType_ = other.assetsWithFieldType_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RemoveAutomaticallyCreatedAssetsRequest Clone() {
+      return new RemoveAutomaticallyCreatedAssetsRequest(this);
+    }
+
+    /// <summary>Field number for the "ad_group_ad" field.</summary>
+    public const int AdGroupAdFieldNumber = 1;
+    private string adGroupAd_ = "";
+    /// <summary>
+    /// Required. The resource name of the AdGroupAd from which to remove
+    /// automatically created assets.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string AdGroupAd {
+      get { return adGroupAd_; }
+      set {
+        adGroupAd_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "assets_with_field_type" field.</summary>
+    public const int AssetsWithFieldTypeFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V17.Services.AssetsWithFieldType> _repeated_assetsWithFieldType_codec
+        = pb::FieldCodec.ForMessage(18, global::Google.Ads.GoogleAds.V17.Services.AssetsWithFieldType.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V17.Services.AssetsWithFieldType> assetsWithFieldType_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V17.Services.AssetsWithFieldType>();
+    /// <summary>
+    /// Required. List of assets with field type to be removed from the AdGroupAd.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V17.Services.AssetsWithFieldType> AssetsWithFieldType {
+      get { return assetsWithFieldType_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as RemoveAutomaticallyCreatedAssetsRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(RemoveAutomaticallyCreatedAssetsRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (AdGroupAd != other.AdGroupAd) return false;
+      if(!assetsWithFieldType_.Equals(other.assetsWithFieldType_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (AdGroupAd.Length != 0) hash ^= AdGroupAd.GetHashCode();
+      hash ^= assetsWithFieldType_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (AdGroupAd.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(AdGroupAd);
+      }
+      assetsWithFieldType_.WriteTo(output, _repeated_assetsWithFieldType_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (AdGroupAd.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(AdGroupAd);
+      }
+      assetsWithFieldType_.WriteTo(ref output, _repeated_assetsWithFieldType_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (AdGroupAd.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AdGroupAd);
+      }
+      size += assetsWithFieldType_.CalculateSize(_repeated_assetsWithFieldType_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(RemoveAutomaticallyCreatedAssetsRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.AdGroupAd.Length != 0) {
+        AdGroupAd = other.AdGroupAd;
+      }
+      assetsWithFieldType_.Add(other.assetsWithFieldType_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            AdGroupAd = input.ReadString();
+            break;
+          }
+          case 18: {
+            assetsWithFieldType_.AddEntriesFrom(input, _repeated_assetsWithFieldType_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            AdGroupAd = input.ReadString();
+            break;
+          }
+          case 18: {
+            assetsWithFieldType_.AddEntriesFrom(ref input, _repeated_assetsWithFieldType_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// The combination of system asset and field type to remove.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class AssetsWithFieldType : pb::IMessage<AssetsWithFieldType>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<AssetsWithFieldType> _parser = new pb::MessageParser<AssetsWithFieldType>(() => new AssetsWithFieldType());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<AssetsWithFieldType> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V17.Services.AdGroupAdServiceReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AssetsWithFieldType() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AssetsWithFieldType(AssetsWithFieldType other) : this() {
+      asset_ = other.asset_;
+      assetFieldType_ = other.assetFieldType_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AssetsWithFieldType Clone() {
+      return new AssetsWithFieldType(this);
+    }
+
+    /// <summary>Field number for the "asset" field.</summary>
+    public const int AssetFieldNumber = 1;
+    private string asset_ = "";
+    /// <summary>
+    /// Required. The resource name of the asset to be removed.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Asset {
+      get { return asset_; }
+      set {
+        asset_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "asset_field_type" field.</summary>
+    public const int AssetFieldTypeFieldNumber = 2;
+    private global::Google.Ads.GoogleAds.V17.Enums.AssetFieldTypeEnum.Types.AssetFieldType assetFieldType_ = global::Google.Ads.GoogleAds.V17.Enums.AssetFieldTypeEnum.Types.AssetFieldType.Unspecified;
+    /// <summary>
+    /// Required. The asset field type.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V17.Enums.AssetFieldTypeEnum.Types.AssetFieldType AssetFieldType {
+      get { return assetFieldType_; }
+      set {
+        assetFieldType_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as AssetsWithFieldType);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(AssetsWithFieldType other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Asset != other.Asset) return false;
+      if (AssetFieldType != other.AssetFieldType) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Asset.Length != 0) hash ^= Asset.GetHashCode();
+      if (AssetFieldType != global::Google.Ads.GoogleAds.V17.Enums.AssetFieldTypeEnum.Types.AssetFieldType.Unspecified) hash ^= AssetFieldType.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Asset.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Asset);
+      }
+      if (AssetFieldType != global::Google.Ads.GoogleAds.V17.Enums.AssetFieldTypeEnum.Types.AssetFieldType.Unspecified) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) AssetFieldType);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Asset.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Asset);
+      }
+      if (AssetFieldType != global::Google.Ads.GoogleAds.V17.Enums.AssetFieldTypeEnum.Types.AssetFieldType.Unspecified) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) AssetFieldType);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Asset.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Asset);
+      }
+      if (AssetFieldType != global::Google.Ads.GoogleAds.V17.Enums.AssetFieldTypeEnum.Types.AssetFieldType.Unspecified) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) AssetFieldType);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(AssetsWithFieldType other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Asset.Length != 0) {
+        Asset = other.Asset;
+      }
+      if (other.AssetFieldType != global::Google.Ads.GoogleAds.V17.Enums.AssetFieldTypeEnum.Types.AssetFieldType.Unspecified) {
+        AssetFieldType = other.AssetFieldType;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Asset = input.ReadString();
+            break;
+          }
+          case 16: {
+            AssetFieldType = (global::Google.Ads.GoogleAds.V17.Enums.AssetFieldTypeEnum.Types.AssetFieldType) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Asset = input.ReadString();
+            break;
+          }
+          case 16: {
+            AssetFieldType = (global::Google.Ads.GoogleAds.V17.Enums.AssetFieldTypeEnum.Types.AssetFieldType) input.ReadEnum();
             break;
           }
         }

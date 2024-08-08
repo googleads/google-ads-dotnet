@@ -41,7 +41,7 @@ namespace Google.Ads.GoogleAds.V17.Resources {
             "cy92MTcvZW51bXMvYmlkZGluZ19zb3VyY2UucHJvdG8aOGdvb2dsZS9hZHMv",
             "Z29vZ2xlYWRzL3YxNy9lbnVtcy90YXJnZXRpbmdfZGltZW5zaW9uLnByb3Rv",
             "Gh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9yLnByb3RvGhlnb29nbGUvYXBp",
-            "L3Jlc291cmNlLnByb3RvIt8TCgdBZEdyb3VwEj8KDXJlc291cmNlX25hbWUY",
+            "L3Jlc291cmNlLnByb3RvIskUCgdBZEdyb3VwEj8KDXJlc291cmNlX25hbWUY",
             "ASABKAlCKOBBBfpBIgogZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0FkR3Jv",
             "dXASFAoCaWQYIiABKANCA+BBA0gAiAEBEhEKBG5hbWUYIyABKAlIAYgBARJP",
             "CgZzdGF0dXMYBSABKA4yPy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTcuZW51",
@@ -61,53 +61,55 @@ namespace Google.Ads.GoogleAds.V17.Resources {
             "dF9jcGFfbWljcm9zGCkgASgDSAiIAQESGwoOY3B2X2JpZF9taWNyb3MYKiAB",
             "KANICYgBARIeChF0YXJnZXRfY3BtX21pY3JvcxgrIAEoA0gKiAEBEhgKC3Rh",
             "cmdldF9yb2FzGCwgASgBSAuIAQESIwoWcGVyY2VudF9jcGNfYmlkX21pY3Jv",
-            "cxgtIAEoA0gMiAEBEiMKG29wdGltaXplZF90YXJnZXRpbmdfZW5hYmxlZBg7",
-            "IAEoCBJvChxkaXNwbGF5X2N1c3RvbV9iaWRfZGltZW5zaW9uGBcgASgOMkku",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjE3LmVudW1zLlRhcmdldGluZ0RpbWVu",
-            "c2lvbkVudW0uVGFyZ2V0aW5nRGltZW5zaW9uEh0KEGZpbmFsX3VybF9zdWZm",
-            "aXgYLiABKAlIDYgBARJMChF0YXJnZXRpbmdfc2V0dGluZxgZIAEoCzIxLmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYxNy5jb21tb24uVGFyZ2V0aW5nU2V0dGlu",
-            "ZxJaChBhdWRpZW5jZV9zZXR0aW5nGDggASgLMjsuZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjE3LnJlc291cmNlcy5BZEdyb3VwLkF1ZGllbmNlU2V0dGluZ0ID",
-            "4EEFEi0KG2VmZmVjdGl2ZV90YXJnZXRfY3BhX21pY3JvcxgvIAEoA0ID4EED",
-            "SA6IAQESaQobZWZmZWN0aXZlX3RhcmdldF9jcGFfc291cmNlGB0gASgOMj8u",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjE3LmVudW1zLkJpZGRpbmdTb3VyY2VF",
-            "bnVtLkJpZGRpbmdTb3VyY2VCA+BBAxInChVlZmZlY3RpdmVfdGFyZ2V0X3Jv",
-            "YXMYMCABKAFCA+BBA0gPiAEBEmoKHGVmZmVjdGl2ZV90YXJnZXRfcm9hc19z",
-            "b3VyY2UYICABKA4yPy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTcuZW51bXMu",
-            "QmlkZGluZ1NvdXJjZUVudW0uQmlkZGluZ1NvdXJjZUID4EEDEj0KBmxhYmVs",
-            "cxgxIAMoCUIt4EED+kEnCiVnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vQWRH",
-            "cm91cExhYmVsEmwKIWV4Y2x1ZGVkX3BhcmVudF9hc3NldF9maWVsZF90eXBl",
-            "cxg2IAMoDjJBLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNy5lbnVtcy5Bc3Nl",
-            "dEZpZWxkVHlwZUVudW0uQXNzZXRGaWVsZFR5cGUSZgofZXhjbHVkZWRfcGFy",
-            "ZW50X2Fzc2V0X3NldF90eXBlcxg6IAMoDjI9Lmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYxNy5lbnVtcy5Bc3NldFNldFR5cGVFbnVtLkFzc2V0U2V0VHlwZRJq",
-            "Cg5wcmltYXJ5X3N0YXR1cxg+IAEoDjJNLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYxNy5lbnVtcy5BZEdyb3VwUHJpbWFyeVN0YXR1c0VudW0uQWRHcm91cFBy",
-            "aW1hcnlTdGF0dXNCA+BBAxJ+ChZwcmltYXJ5X3N0YXR1c19yZWFzb25zGD8g",
-            "AygOMlkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE3LmVudW1zLkFkR3JvdXBQ",
-            "cmltYXJ5U3RhdHVzUmVhc29uRW51bS5BZEdyb3VwUHJpbWFyeVN0YXR1c1Jl",
-            "YXNvbkID4EEDGjQKD0F1ZGllbmNlU2V0dGluZxIhChR1c2VfYXVkaWVuY2Vf",
-            "Z3JvdXBlZBgBIAEoCEID4EEFOlXqQVIKIGdvb2dsZWFkcy5nb29nbGVhcGlz",
-            "LmNvbS9BZEdyb3VwEi5jdXN0b21lcnMve2N1c3RvbWVyX2lkfS9hZEdyb3Vw",
-            "cy97YWRfZ3JvdXBfaWR9QgUKA19pZEIHCgVfbmFtZUIQCg5fYmFzZV9hZF9n",
-            "cm91cEIYChZfdHJhY2tpbmdfdXJsX3RlbXBsYXRlQgsKCV9jYW1wYWlnbkIR",
-            "Cg9fY3BjX2JpZF9taWNyb3NCGwoZX2VmZmVjdGl2ZV9jcGNfYmlkX21pY3Jv",
-            "c0IRCg9fY3BtX2JpZF9taWNyb3NCFAoSX3RhcmdldF9jcGFfbWljcm9zQhEK",
-            "D19jcHZfYmlkX21pY3Jvc0IUChJfdGFyZ2V0X2NwbV9taWNyb3NCDgoMX3Rh",
-            "cmdldF9yb2FzQhkKF19wZXJjZW50X2NwY19iaWRfbWljcm9zQhMKEV9maW5h",
-            "bF91cmxfc3VmZml4Qh4KHF9lZmZlY3RpdmVfdGFyZ2V0X2NwYV9taWNyb3NC",
-            "GAoWX2VmZmVjdGl2ZV90YXJnZXRfcm9hc0L+AQomY29tLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYxNy5yZXNvdXJjZXNCDEFkR3JvdXBQcm90b1ABWktnb29n",
-            "bGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVh",
-            "ZHMvdjE3L3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGqAiJHb29nbGUuQWRz",
-            "Lkdvb2dsZUFkcy5WMTcuUmVzb3VyY2VzygIiR29vZ2xlXEFkc1xHb29nbGVB",
-            "ZHNcVjE3XFJlc291cmNlc+oCJkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYx",
-            "Nzo6UmVzb3VyY2VzYgZwcm90bzM="));
+            "cxgtIAEoA0gMiAEBEh0KEGZpeGVkX2NwbV9taWNyb3MYQCABKANIDYgBARIe",
+            "ChF0YXJnZXRfY3B2X21pY3JvcxhBIAEoA0gOiAEBEiMKG29wdGltaXplZF90",
+            "YXJnZXRpbmdfZW5hYmxlZBg7IAEoCBJvChxkaXNwbGF5X2N1c3RvbV9iaWRf",
+            "ZGltZW5zaW9uGBcgASgOMkkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE3LmVu",
+            "dW1zLlRhcmdldGluZ0RpbWVuc2lvbkVudW0uVGFyZ2V0aW5nRGltZW5zaW9u",
+            "Eh0KEGZpbmFsX3VybF9zdWZmaXgYLiABKAlID4gBARJMChF0YXJnZXRpbmdf",
+            "c2V0dGluZxgZIAEoCzIxLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNy5jb21t",
+            "b24uVGFyZ2V0aW5nU2V0dGluZxJaChBhdWRpZW5jZV9zZXR0aW5nGDggASgL",
+            "MjsuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE3LnJlc291cmNlcy5BZEdyb3Vw",
+            "LkF1ZGllbmNlU2V0dGluZ0ID4EEFEi0KG2VmZmVjdGl2ZV90YXJnZXRfY3Bh",
+            "X21pY3JvcxgvIAEoA0ID4EEDSBCIAQESaQobZWZmZWN0aXZlX3RhcmdldF9j",
+            "cGFfc291cmNlGB0gASgOMj8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE3LmVu",
+            "dW1zLkJpZGRpbmdTb3VyY2VFbnVtLkJpZGRpbmdTb3VyY2VCA+BBAxInChVl",
+            "ZmZlY3RpdmVfdGFyZ2V0X3JvYXMYMCABKAFCA+BBA0gRiAEBEmoKHGVmZmVj",
+            "dGl2ZV90YXJnZXRfcm9hc19zb3VyY2UYICABKA4yPy5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MTcuZW51bXMuQmlkZGluZ1NvdXJjZUVudW0uQmlkZGluZ1Nv",
+            "dXJjZUID4EEDEj0KBmxhYmVscxgxIAMoCUIt4EED+kEnCiVnb29nbGVhZHMu",
+            "Z29vZ2xlYXBpcy5jb20vQWRHcm91cExhYmVsEmwKIWV4Y2x1ZGVkX3BhcmVu",
+            "dF9hc3NldF9maWVsZF90eXBlcxg2IAMoDjJBLmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYxNy5lbnVtcy5Bc3NldEZpZWxkVHlwZUVudW0uQXNzZXRGaWVsZFR5",
+            "cGUSZgofZXhjbHVkZWRfcGFyZW50X2Fzc2V0X3NldF90eXBlcxg6IAMoDjI9",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNy5lbnVtcy5Bc3NldFNldFR5cGVF",
+            "bnVtLkFzc2V0U2V0VHlwZRJqCg5wcmltYXJ5X3N0YXR1cxg+IAEoDjJNLmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYxNy5lbnVtcy5BZEdyb3VwUHJpbWFyeVN0",
+            "YXR1c0VudW0uQWRHcm91cFByaW1hcnlTdGF0dXNCA+BBAxJ+ChZwcmltYXJ5",
+            "X3N0YXR1c19yZWFzb25zGD8gAygOMlkuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djE3LmVudW1zLkFkR3JvdXBQcmltYXJ5U3RhdHVzUmVhc29uRW51bS5BZEdy",
+            "b3VwUHJpbWFyeVN0YXR1c1JlYXNvbkID4EEDGjQKD0F1ZGllbmNlU2V0dGlu",
+            "ZxIhChR1c2VfYXVkaWVuY2VfZ3JvdXBlZBgBIAEoCEID4EEFOlXqQVIKIGdv",
+            "b2dsZWFkcy5nb29nbGVhcGlzLmNvbS9BZEdyb3VwEi5jdXN0b21lcnMve2N1",
+            "c3RvbWVyX2lkfS9hZEdyb3Vwcy97YWRfZ3JvdXBfaWR9QgUKA19pZEIHCgVf",
+            "bmFtZUIQCg5fYmFzZV9hZF9ncm91cEIYChZfdHJhY2tpbmdfdXJsX3RlbXBs",
+            "YXRlQgsKCV9jYW1wYWlnbkIRCg9fY3BjX2JpZF9taWNyb3NCGwoZX2VmZmVj",
+            "dGl2ZV9jcGNfYmlkX21pY3Jvc0IRCg9fY3BtX2JpZF9taWNyb3NCFAoSX3Rh",
+            "cmdldF9jcGFfbWljcm9zQhEKD19jcHZfYmlkX21pY3Jvc0IUChJfdGFyZ2V0",
+            "X2NwbV9taWNyb3NCDgoMX3RhcmdldF9yb2FzQhkKF19wZXJjZW50X2NwY19i",
+            "aWRfbWljcm9zQhMKEV9maXhlZF9jcG1fbWljcm9zQhQKEl90YXJnZXRfY3B2",
+            "X21pY3Jvc0ITChFfZmluYWxfdXJsX3N1ZmZpeEIeChxfZWZmZWN0aXZlX3Rh",
+            "cmdldF9jcGFfbWljcm9zQhgKFl9lZmZlY3RpdmVfdGFyZ2V0X3JvYXNC/gEK",
+            "JmNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTcucmVzb3VyY2VzQgxBZEdy",
+            "b3VwUHJvdG9QAVpLZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xl",
+            "YXBpcy9hZHMvZ29vZ2xlYWRzL3YxNy9yZXNvdXJjZXM7cmVzb3VyY2VzogID",
+            "R0FBqgIiR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjE3LlJlc291cmNlc8oCIkdv",
+            "b2dsZVxBZHNcR29vZ2xlQWRzXFYxN1xSZXNvdXJjZXPqAiZHb29nbGU6OkFk",
+            "czo6R29vZ2xlQWRzOjpWMTc6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V17.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V17.Common.TargetingSettingReflection.Descriptor, global::Google.Ads.GoogleAds.V17.Enums.AdGroupAdRotationModeReflection.Descriptor, global::Google.Ads.GoogleAds.V17.Enums.AdGroupPrimaryStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V17.Enums.AdGroupPrimaryStatusReasonReflection.Descriptor, global::Google.Ads.GoogleAds.V17.Enums.AdGroupStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V17.Enums.AdGroupTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V17.Enums.AssetFieldTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V17.Enums.AssetSetTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V17.Enums.BiddingSourceReflection.Descriptor, global::Google.Ads.GoogleAds.V17.Enums.TargetingDimensionReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V17.Resources.AdGroup), global::Google.Ads.GoogleAds.V17.Resources.AdGroup.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "Type", "AdRotationMode", "BaseAdGroup", "TrackingUrlTemplate", "UrlCustomParameters", "Campaign", "CpcBidMicros", "EffectiveCpcBidMicros", "CpmBidMicros", "TargetCpaMicros", "CpvBidMicros", "TargetCpmMicros", "TargetRoas", "PercentCpcBidMicros", "OptimizedTargetingEnabled", "DisplayCustomBidDimension", "FinalUrlSuffix", "TargetingSetting", "AudienceSetting", "EffectiveTargetCpaMicros", "EffectiveTargetCpaSource", "EffectiveTargetRoas", "EffectiveTargetRoasSource", "Labels", "ExcludedParentAssetFieldTypes", "ExcludedParentAssetSetTypes", "PrimaryStatus", "PrimaryStatusReasons" }, new[]{ "Id", "Name", "BaseAdGroup", "TrackingUrlTemplate", "Campaign", "CpcBidMicros", "EffectiveCpcBidMicros", "CpmBidMicros", "TargetCpaMicros", "CpvBidMicros", "TargetCpmMicros", "TargetRoas", "PercentCpcBidMicros", "FinalUrlSuffix", "EffectiveTargetCpaMicros", "EffectiveTargetRoas" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V17.Resources.AdGroup.Types.AudienceSetting), global::Google.Ads.GoogleAds.V17.Resources.AdGroup.Types.AudienceSetting.Parser, new[]{ "UseAudienceGrouped" }, null, null, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V17.Resources.AdGroup), global::Google.Ads.GoogleAds.V17.Resources.AdGroup.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "Type", "AdRotationMode", "BaseAdGroup", "TrackingUrlTemplate", "UrlCustomParameters", "Campaign", "CpcBidMicros", "EffectiveCpcBidMicros", "CpmBidMicros", "TargetCpaMicros", "CpvBidMicros", "TargetCpmMicros", "TargetRoas", "PercentCpcBidMicros", "FixedCpmMicros", "TargetCpvMicros", "OptimizedTargetingEnabled", "DisplayCustomBidDimension", "FinalUrlSuffix", "TargetingSetting", "AudienceSetting", "EffectiveTargetCpaMicros", "EffectiveTargetCpaSource", "EffectiveTargetRoas", "EffectiveTargetRoasSource", "Labels", "ExcludedParentAssetFieldTypes", "ExcludedParentAssetSetTypes", "PrimaryStatus", "PrimaryStatusReasons" }, new[]{ "Id", "Name", "BaseAdGroup", "TrackingUrlTemplate", "Campaign", "CpcBidMicros", "EffectiveCpcBidMicros", "CpmBidMicros", "TargetCpaMicros", "CpvBidMicros", "TargetCpmMicros", "TargetRoas", "PercentCpcBidMicros", "FixedCpmMicros", "TargetCpvMicros", "FinalUrlSuffix", "EffectiveTargetCpaMicros", "EffectiveTargetRoas" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V17.Resources.AdGroup.Types.AudienceSetting), global::Google.Ads.GoogleAds.V17.Resources.AdGroup.Types.AudienceSetting.Parser, new[]{ "UseAudienceGrouped" }, null, null, null, null)})
           }));
     }
     #endregion
@@ -172,6 +174,8 @@ namespace Google.Ads.GoogleAds.V17.Resources {
       targetCpmMicros_ = other.targetCpmMicros_;
       targetRoas_ = other.targetRoas_;
       percentCpcBidMicros_ = other.percentCpcBidMicros_;
+      fixedCpmMicros_ = other.fixedCpmMicros_;
+      targetCpvMicros_ = other.targetCpvMicros_;
       optimizedTargetingEnabled_ = other.optimizedTargetingEnabled_;
       displayCustomBidDimension_ = other.displayCustomBidDimension_;
       finalUrlSuffix_ = other.finalUrlSuffix_;
@@ -687,6 +691,68 @@ namespace Google.Ads.GoogleAds.V17.Resources {
       _hasBits0 &= ~128;
     }
 
+    /// <summary>Field number for the "fixed_cpm_micros" field.</summary>
+    public const int FixedCpmMicrosFieldNumber = 64;
+    private readonly static long FixedCpmMicrosDefaultValue = 0L;
+
+    private long fixedCpmMicros_;
+    /// <summary>
+    /// The fixed amount in micros that the advertiser pays for every thousand
+    /// impressions of the ad.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long FixedCpmMicros {
+      get { if ((_hasBits0 & 2048) != 0) { return fixedCpmMicros_; } else { return FixedCpmMicrosDefaultValue; } }
+      set {
+        _hasBits0 |= 2048;
+        fixedCpmMicros_ = value;
+      }
+    }
+    /// <summary>Gets whether the "fixed_cpm_micros" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasFixedCpmMicros {
+      get { return (_hasBits0 & 2048) != 0; }
+    }
+    /// <summary>Clears the value of the "fixed_cpm_micros" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearFixedCpmMicros() {
+      _hasBits0 &= ~2048;
+    }
+
+    /// <summary>Field number for the "target_cpv_micros" field.</summary>
+    public const int TargetCpvMicrosFieldNumber = 65;
+    private readonly static long TargetCpvMicrosDefaultValue = 0L;
+
+    private long targetCpvMicros_;
+    /// <summary>
+    /// Average amount in micros that the advertiser is willing to pay for every ad
+    /// view.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long TargetCpvMicros {
+      get { if ((_hasBits0 & 4096) != 0) { return targetCpvMicros_; } else { return TargetCpvMicrosDefaultValue; } }
+      set {
+        _hasBits0 |= 4096;
+        targetCpvMicros_ = value;
+      }
+    }
+    /// <summary>Gets whether the "target_cpv_micros" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasTargetCpvMicros {
+      get { return (_hasBits0 & 4096) != 0; }
+    }
+    /// <summary>Clears the value of the "target_cpv_micros" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearTargetCpvMicros() {
+      _hasBits0 &= ~4096;
+    }
+
     /// <summary>Field number for the "optimized_targeting_enabled" field.</summary>
     public const int OptimizedTargetingEnabledFieldNumber = 59;
     private bool optimizedTargetingEnabled_;
@@ -990,6 +1056,8 @@ namespace Google.Ads.GoogleAds.V17.Resources {
       if (TargetCpmMicros != other.TargetCpmMicros) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(TargetRoas, other.TargetRoas)) return false;
       if (PercentCpcBidMicros != other.PercentCpcBidMicros) return false;
+      if (FixedCpmMicros != other.FixedCpmMicros) return false;
+      if (TargetCpvMicros != other.TargetCpvMicros) return false;
       if (OptimizedTargetingEnabled != other.OptimizedTargetingEnabled) return false;
       if (DisplayCustomBidDimension != other.DisplayCustomBidDimension) return false;
       if (FinalUrlSuffix != other.FinalUrlSuffix) return false;
@@ -1029,6 +1097,8 @@ namespace Google.Ads.GoogleAds.V17.Resources {
       if (HasTargetCpmMicros) hash ^= TargetCpmMicros.GetHashCode();
       if (HasTargetRoas) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(TargetRoas);
       if (HasPercentCpcBidMicros) hash ^= PercentCpcBidMicros.GetHashCode();
+      if (HasFixedCpmMicros) hash ^= FixedCpmMicros.GetHashCode();
+      if (HasTargetCpvMicros) hash ^= TargetCpvMicros.GetHashCode();
       if (OptimizedTargetingEnabled != false) hash ^= OptimizedTargetingEnabled.GetHashCode();
       if (DisplayCustomBidDimension != global::Google.Ads.GoogleAds.V17.Enums.TargetingDimensionEnum.Types.TargetingDimension.Unspecified) hash ^= DisplayCustomBidDimension.GetHashCode();
       if (HasFinalUrlSuffix) hash ^= FinalUrlSuffix.GetHashCode();
@@ -1174,6 +1244,14 @@ namespace Google.Ads.GoogleAds.V17.Resources {
         output.WriteEnum((int) PrimaryStatus);
       }
       primaryStatusReasons_.WriteTo(output, _repeated_primaryStatusReasons_codec);
+      if (HasFixedCpmMicros) {
+        output.WriteRawTag(128, 4);
+        output.WriteInt64(FixedCpmMicros);
+      }
+      if (HasTargetCpvMicros) {
+        output.WriteRawTag(136, 4);
+        output.WriteInt64(TargetCpvMicros);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1297,6 +1375,14 @@ namespace Google.Ads.GoogleAds.V17.Resources {
         output.WriteEnum((int) PrimaryStatus);
       }
       primaryStatusReasons_.WriteTo(ref output, _repeated_primaryStatusReasons_codec);
+      if (HasFixedCpmMicros) {
+        output.WriteRawTag(128, 4);
+        output.WriteInt64(FixedCpmMicros);
+      }
+      if (HasTargetCpvMicros) {
+        output.WriteRawTag(136, 4);
+        output.WriteInt64(TargetCpvMicros);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1358,6 +1444,12 @@ namespace Google.Ads.GoogleAds.V17.Resources {
       }
       if (HasPercentCpcBidMicros) {
         size += 2 + pb::CodedOutputStream.ComputeInt64Size(PercentCpcBidMicros);
+      }
+      if (HasFixedCpmMicros) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(FixedCpmMicros);
+      }
+      if (HasTargetCpvMicros) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(TargetCpvMicros);
       }
       if (OptimizedTargetingEnabled != false) {
         size += 2 + 1;
@@ -1456,6 +1548,12 @@ namespace Google.Ads.GoogleAds.V17.Resources {
       }
       if (other.HasPercentCpcBidMicros) {
         PercentCpcBidMicros = other.PercentCpcBidMicros;
+      }
+      if (other.HasFixedCpmMicros) {
+        FixedCpmMicros = other.FixedCpmMicros;
+      }
+      if (other.HasTargetCpvMicros) {
+        TargetCpvMicros = other.TargetCpvMicros;
       }
       if (other.OptimizedTargetingEnabled != false) {
         OptimizedTargetingEnabled = other.OptimizedTargetingEnabled;
@@ -1649,6 +1747,14 @@ namespace Google.Ads.GoogleAds.V17.Resources {
             primaryStatusReasons_.AddEntriesFrom(input, _repeated_primaryStatusReasons_codec);
             break;
           }
+          case 512: {
+            FixedCpmMicros = input.ReadInt64();
+            break;
+          }
+          case 520: {
+            TargetCpvMicros = input.ReadInt64();
+            break;
+          }
         }
       }
     #endif
@@ -1799,6 +1905,14 @@ namespace Google.Ads.GoogleAds.V17.Resources {
           case 506:
           case 504: {
             primaryStatusReasons_.AddEntriesFrom(ref input, _repeated_primaryStatusReasons_codec);
+            break;
+          }
+          case 512: {
+            FixedCpmMicros = input.ReadInt64();
+            break;
+          }
+          case 520: {
+            TargetCpvMicros = input.ReadInt64();
             break;
           }
         }

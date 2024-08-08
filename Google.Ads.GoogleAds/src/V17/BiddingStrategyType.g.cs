@@ -26,21 +26,22 @@ namespace Google.Ads.GoogleAds.V17.Enums {
           string.Concat(
             "Cjpnb29nbGUvYWRzL2dvb2dsZWFkcy92MTcvZW51bXMvYmlkZGluZ19zdHJh",
             "dGVneV90eXBlLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTcuZW51",
-            "bXMimQMKF0JpZGRpbmdTdHJhdGVneVR5cGVFbnVtIv0CChNCaWRkaW5nU3Ry",
+            "bXMiuAMKF0JpZGRpbmdTdHJhdGVneVR5cGVFbnVtIpwDChNCaWRkaW5nU3Ry",
             "YXRlZ3lUeXBlEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEg4KCkNP",
-            "TU1JU1NJT04QEBIQCgxFTkhBTkNFRF9DUEMQAhILCgdJTlZBTElEEBESDgoK",
-            "TUFOVUFMX0NQQRASEg4KCk1BTlVBTF9DUEMQAxIOCgpNQU5VQUxfQ1BNEAQS",
-            "DgoKTUFOVUFMX0NQVhANEhgKFE1BWElNSVpFX0NPTlZFUlNJT05TEAoSHQoZ",
-            "TUFYSU1JWkVfQ09OVkVSU0lPTl9WQUxVRRALEhUKEVBBR0VfT05FX1BST01P",
-            "VEVEEAUSDwoLUEVSQ0VOVF9DUEMQDBIOCgpUQVJHRVRfQ1BBEAYSDgoKVEFS",
-            "R0VUX0NQTRAOEhsKF1RBUkdFVF9JTVBSRVNTSU9OX1NIQVJFEA8SGAoUVEFS",
-            "R0VUX09VVFJBTktfU0hBUkUQBxIPCgtUQVJHRVRfUk9BUxAIEhAKDFRBUkdF",
-            "VF9TUEVORBAJQvIBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE3LmVu",
-            "dW1zQhhCaWRkaW5nU3RyYXRlZ3lUeXBlUHJvdG9QAVpDZ29vZ2xlLmdvbGFu",
-            "Zy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YxNy9l",
-            "bnVtcztlbnVtc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYxNy5F",
-            "bnVtc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYxN1xFbnVtc+oCIkdvb2ds",
-            "ZTo6QWRzOjpHb29nbGVBZHM6OlYxNzo6RW51bXNiBnByb3RvMw=="));
+            "TU1JU1NJT04QEBIQCgxFTkhBTkNFRF9DUEMQAhINCglGSVhFRF9DUE0QExIL",
+            "CgdJTlZBTElEEBESDgoKTUFOVUFMX0NQQRASEg4KCk1BTlVBTF9DUEMQAxIO",
+            "CgpNQU5VQUxfQ1BNEAQSDgoKTUFOVUFMX0NQVhANEhgKFE1BWElNSVpFX0NP",
+            "TlZFUlNJT05TEAoSHQoZTUFYSU1JWkVfQ09OVkVSU0lPTl9WQUxVRRALEhUK",
+            "EVBBR0VfT05FX1BST01PVEVEEAUSDwoLUEVSQ0VOVF9DUEMQDBIOCgpUQVJH",
+            "RVRfQ1BBEAYSDgoKVEFSR0VUX0NQTRAOEg4KClRBUkdFVF9DUFYQFBIbChdU",
+            "QVJHRVRfSU1QUkVTU0lPTl9TSEFSRRAPEhgKFFRBUkdFVF9PVVRSQU5LX1NI",
+            "QVJFEAcSDwoLVEFSR0VUX1JPQVMQCBIQCgxUQVJHRVRfU1BFTkQQCULyAQoi",
+            "Y29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxNy5lbnVtc0IYQmlkZGluZ1N0",
+            "cmF0ZWd5VHlwZVByb3RvUAFaQ2dvb2dsZS5nb2xhbmcub3JnL2dlbnByb3Rv",
+            "L2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MTcvZW51bXM7ZW51bXOiAgNH",
+            "QUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMTcuRW51bXPKAh5Hb29nbGVc",
+            "QWRzXEdvb2dsZUFkc1xWMTdcRW51bXPqAiJHb29nbGU6OkFkczo6R29vZ2xl",
+            "QWRzOjpWMTc6OkVudW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -234,6 +235,10 @@ namespace Google.Ads.GoogleAds.V17.Enums {
         /// </summary>
         [pbr::OriginalName("ENHANCED_CPC")] EnhancedCpc = 2,
         /// <summary>
+        /// Fixed CPM is a manual bidding strategy with a fixed CPM.
+        /// </summary>
+        [pbr::OriginalName("FIXED_CPM")] FixedCpm = 19,
+        /// <summary>
         /// Used for return value only. Indicates that a campaign does not have a
         /// bidding strategy. This prevents the campaign from serving. For example,
         /// a campaign may be attached to a manager bidding strategy and the serving
@@ -294,6 +299,11 @@ namespace Google.Ads.GoogleAds.V17.Enums {
         /// impressions (CPM) you set.
         /// </summary>
         [pbr::OriginalName("TARGET_CPM")] TargetCpm = 14,
+        /// <summary>
+        /// Target CPV is an automated bidding strategy that sets bids to optimize
+        /// performance given the average target cost per view.
+        /// </summary>
+        [pbr::OriginalName("TARGET_CPV")] TargetCpv = 20,
         /// <summary>
         /// An automated bidding strategy that sets bids so that a certain percentage
         /// of search ads are shown at the top of the first page (or other targeted

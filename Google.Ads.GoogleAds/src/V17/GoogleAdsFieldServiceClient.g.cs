@@ -479,13 +479,22 @@ namespace Google.Ads.GoogleAds.V17.Services
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A pageable sequence of <see cref="gagvr::GoogleAdsField"/> resources.</returns>
-        public virtual gax::PagedEnumerable<SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField> SearchGoogleAdsFields(string query, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
-            SearchGoogleAdsFields(new SearchGoogleAdsFieldsRequest
+        public virtual gax::PagedEnumerable<SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField> SearchGoogleAdsFields(string query, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null)
+        {
+            SearchGoogleAdsFieldsRequest request = new SearchGoogleAdsFieldsRequest
             {
                 Query = gax::GaxPreconditions.CheckNotNullOrEmpty(query, nameof(query)),
-                PageToken = pageToken ?? "",
-                PageSize = pageSize ?? 0,
-            }, callSettings);
+            };
+            if (pageToken != null)
+            {
+                request.PageToken = pageToken;
+            }
+            if (pageSize != null)
+            {
+                request.PageSize = pageSize.Value;
+            }
+            return SearchGoogleAdsFields(request, callSettings);
+        }
 
         /// <summary>
         /// Returns all fields that match the search query.
@@ -512,13 +521,22 @@ namespace Google.Ads.GoogleAds.V17.Services
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A pageable asynchronous sequence of <see cref="gagvr::GoogleAdsField"/> resources.</returns>
-        public virtual gax::PagedAsyncEnumerable<SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField> SearchGoogleAdsFieldsAsync(string query, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null) =>
-            SearchGoogleAdsFieldsAsync(new SearchGoogleAdsFieldsRequest
+        public virtual gax::PagedAsyncEnumerable<SearchGoogleAdsFieldsResponse, gagvr::GoogleAdsField> SearchGoogleAdsFieldsAsync(string query, string pageToken = null, int? pageSize = null, gaxgrpc::CallSettings callSettings = null)
+        {
+            SearchGoogleAdsFieldsRequest request = new SearchGoogleAdsFieldsRequest
             {
                 Query = gax::GaxPreconditions.CheckNotNullOrEmpty(query, nameof(query)),
-                PageToken = pageToken ?? "",
-                PageSize = pageSize ?? 0,
-            }, callSettings);
+            };
+            if (pageToken != null)
+            {
+                request.PageToken = pageToken;
+            }
+            if (pageSize != null)
+            {
+                request.PageSize = pageSize.Value;
+            }
+            return SearchGoogleAdsFieldsAsync(request, callSettings);
+        }
     }
 
     /// <summary>GoogleAdsFieldService client wrapper implementation, for convenient use.</summary>

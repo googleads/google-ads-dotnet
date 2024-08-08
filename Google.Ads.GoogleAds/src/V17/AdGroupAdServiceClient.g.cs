@@ -15,6 +15,7 @@
 // Generated code. DO NOT EDIT!
 
 #pragma warning disable CS8981
+using gagvr = Google.Ads.GoogleAds.V17.Resources;
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
 using grpccore = Grpc.Core;
@@ -26,6 +27,7 @@ using sco = System.Collections.ObjectModel;
 using st = System.Threading;
 using stt = System.Threading.Tasks;
 using sys = System;
+using wkt = Google.Protobuf.WellKnownTypes;
 
 namespace Google.Ads.GoogleAds.V17.Services
 {
@@ -45,6 +47,7 @@ namespace Google.Ads.GoogleAds.V17.Services
         {
             gax::GaxPreconditions.CheckNotNull(existing, nameof(existing));
             MutateAdGroupAdsSettings = existing.MutateAdGroupAdsSettings;
+            RemoveAutomaticallyCreatedAssetsSettings = existing.RemoveAutomaticallyCreatedAssetsSettings;
             OnCopy(existing);
         }
 
@@ -70,6 +73,28 @@ namespace Google.Ads.GoogleAds.V17.Services
         /// </list>
         /// </remarks>
         public gaxgrpc::CallSettings MutateAdGroupAdsSettings { get; set; } = gaxgrpc::CallSettingsExtensions.WithRetry(gaxgrpc::CallSettings.FromExpiration(gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(14400000))), gaxgrpc::RetrySettings.FromExponentialBackoff(maxAttempts: 2147483647, initialBackoff: sys::TimeSpan.FromMilliseconds(5000), maxBackoff: sys::TimeSpan.FromMilliseconds(60000), backoffMultiplier: 1.3, retryFilter: gaxgrpc::RetrySettings.FilterForStatusCodes(grpccore::StatusCode.Unavailable, grpccore::StatusCode.DeadlineExceeded)));
+
+        /// <summary>
+        /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
+        /// <c>AdGroupAdServiceClient.RemoveAutomaticallyCreatedAssets</c> and
+        /// <c>AdGroupAdServiceClient.RemoveAutomaticallyCreatedAssetsAsync</c>.
+        /// </summary>
+        /// <remarks>
+        /// <list type="bullet">
+        /// <item><description>Initial retry delay: 5000 milliseconds.</description></item>
+        /// <item><description>Retry delay multiplier: 1.3</description></item>
+        /// <item><description>Retry maximum delay: 60000 milliseconds.</description></item>
+        /// <item><description>Maximum attempts: Unlimited</description></item>
+        /// <item>
+        /// <description>
+        /// Retriable status codes: <see cref="grpccore::StatusCode.Unavailable"/>,
+        /// <see cref="grpccore::StatusCode.DeadlineExceeded"/>.
+        /// </description>
+        /// </item>
+        /// <item><description>Timeout: 14400 seconds.</description></item>
+        /// </list>
+        /// </remarks>
+        public gaxgrpc::CallSettings RemoveAutomaticallyCreatedAssetsSettings { get; set; } = gaxgrpc::CallSettingsExtensions.WithRetry(gaxgrpc::CallSettings.FromExpiration(gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(14400000))), gaxgrpc::RetrySettings.FromExponentialBackoff(maxAttempts: 2147483647, initialBackoff: sys::TimeSpan.FromMilliseconds(5000), maxBackoff: sys::TimeSpan.FromMilliseconds(60000), backoffMultiplier: 1.3, retryFilter: gaxgrpc::RetrySettings.FilterForStatusCodes(grpccore::StatusCode.Unavailable, grpccore::StatusCode.DeadlineExceeded)));
 
         /// <summary>Creates a deep clone of this object, with all the same property values.</summary>
         /// <returns>A deep clone of this <see cref="AdGroupAdServiceSettings"/> object.</returns>
@@ -562,6 +587,250 @@ namespace Google.Ads.GoogleAds.V17.Services
         /// <returns>A Task containing the RPC response.</returns>
         public virtual stt::Task<MutateAdGroupAdsResponse> MutateAdGroupAdsAsync(string customerId, scg::IEnumerable<AdGroupAdOperation> operations, st::CancellationToken cancellationToken) =>
             MutateAdGroupAdsAsync(customerId, operations, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Remove automatically created assets from an ad.
+        /// 
+        /// List of thrown errors:
+        /// [AdError]()
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [AutomaticallyCreatedAssetRemovalError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [MutateError]()
+        /// [QuotaError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual void RemoveAutomaticallyCreatedAssets(RemoveAutomaticallyCreatedAssetsRequest request, gaxgrpc::CallSettings callSettings = null) =>
+            throw new sys::NotImplementedException();
+
+        /// <summary>
+        /// Remove automatically created assets from an ad.
+        /// 
+        /// List of thrown errors:
+        /// [AdError]()
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [AutomaticallyCreatedAssetRemovalError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [MutateError]()
+        /// [QuotaError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task RemoveAutomaticallyCreatedAssetsAsync(RemoveAutomaticallyCreatedAssetsRequest request, gaxgrpc::CallSettings callSettings = null) =>
+            throw new sys::NotImplementedException();
+
+        /// <summary>
+        /// Remove automatically created assets from an ad.
+        /// 
+        /// List of thrown errors:
+        /// [AdError]()
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [AutomaticallyCreatedAssetRemovalError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [MutateError]()
+        /// [QuotaError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task RemoveAutomaticallyCreatedAssetsAsync(RemoveAutomaticallyCreatedAssetsRequest request, st::CancellationToken cancellationToken) =>
+            RemoveAutomaticallyCreatedAssetsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Remove automatically created assets from an ad.
+        /// 
+        /// List of thrown errors:
+        /// [AdError]()
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [AutomaticallyCreatedAssetRemovalError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [MutateError]()
+        /// [QuotaError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="adGroupAd">
+        /// Required. The resource name of the AdGroupAd from which to remove
+        /// automatically created assets.
+        /// </param>
+        /// <param name="assetsWithFieldType">
+        /// Required. List of assets with field type to be removed from the AdGroupAd.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual void RemoveAutomaticallyCreatedAssets(string adGroupAd, scg::IEnumerable<AssetsWithFieldType> assetsWithFieldType, gaxgrpc::CallSettings callSettings = null) =>
+            RemoveAutomaticallyCreatedAssets(new RemoveAutomaticallyCreatedAssetsRequest
+            {
+                AdGroupAd = gax::GaxPreconditions.CheckNotNullOrEmpty(adGroupAd, nameof(adGroupAd)),
+                AssetsWithFieldType =
+                {
+                    gax::GaxPreconditions.CheckNotNull(assetsWithFieldType, nameof(assetsWithFieldType)),
+                },
+            }, callSettings);
+
+        /// <summary>
+        /// Remove automatically created assets from an ad.
+        /// 
+        /// List of thrown errors:
+        /// [AdError]()
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [AutomaticallyCreatedAssetRemovalError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [MutateError]()
+        /// [QuotaError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="adGroupAd">
+        /// Required. The resource name of the AdGroupAd from which to remove
+        /// automatically created assets.
+        /// </param>
+        /// <param name="assetsWithFieldType">
+        /// Required. List of assets with field type to be removed from the AdGroupAd.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task RemoveAutomaticallyCreatedAssetsAsync(string adGroupAd, scg::IEnumerable<AssetsWithFieldType> assetsWithFieldType, gaxgrpc::CallSettings callSettings = null) =>
+            RemoveAutomaticallyCreatedAssetsAsync(new RemoveAutomaticallyCreatedAssetsRequest
+            {
+                AdGroupAd = gax::GaxPreconditions.CheckNotNullOrEmpty(adGroupAd, nameof(adGroupAd)),
+                AssetsWithFieldType =
+                {
+                    gax::GaxPreconditions.CheckNotNull(assetsWithFieldType, nameof(assetsWithFieldType)),
+                },
+            }, callSettings);
+
+        /// <summary>
+        /// Remove automatically created assets from an ad.
+        /// 
+        /// List of thrown errors:
+        /// [AdError]()
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [AutomaticallyCreatedAssetRemovalError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [MutateError]()
+        /// [QuotaError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="adGroupAd">
+        /// Required. The resource name of the AdGroupAd from which to remove
+        /// automatically created assets.
+        /// </param>
+        /// <param name="assetsWithFieldType">
+        /// Required. List of assets with field type to be removed from the AdGroupAd.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task RemoveAutomaticallyCreatedAssetsAsync(string adGroupAd, scg::IEnumerable<AssetsWithFieldType> assetsWithFieldType, st::CancellationToken cancellationToken) =>
+            RemoveAutomaticallyCreatedAssetsAsync(adGroupAd, assetsWithFieldType, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Remove automatically created assets from an ad.
+        /// 
+        /// List of thrown errors:
+        /// [AdError]()
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [AutomaticallyCreatedAssetRemovalError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [MutateError]()
+        /// [QuotaError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="adGroupAd">
+        /// Required. The resource name of the AdGroupAd from which to remove
+        /// automatically created assets.
+        /// </param>
+        /// <param name="assetsWithFieldType">
+        /// Required. List of assets with field type to be removed from the AdGroupAd.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual void RemoveAutomaticallyCreatedAssets(gagvr::AdGroupAdName adGroupAd, scg::IEnumerable<AssetsWithFieldType> assetsWithFieldType, gaxgrpc::CallSettings callSettings = null) =>
+            RemoveAutomaticallyCreatedAssets(new RemoveAutomaticallyCreatedAssetsRequest
+            {
+                AdGroupAdAsAdGroupAdName = gax::GaxPreconditions.CheckNotNull(adGroupAd, nameof(adGroupAd)),
+                AssetsWithFieldType =
+                {
+                    gax::GaxPreconditions.CheckNotNull(assetsWithFieldType, nameof(assetsWithFieldType)),
+                },
+            }, callSettings);
+
+        /// <summary>
+        /// Remove automatically created assets from an ad.
+        /// 
+        /// List of thrown errors:
+        /// [AdError]()
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [AutomaticallyCreatedAssetRemovalError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [MutateError]()
+        /// [QuotaError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="adGroupAd">
+        /// Required. The resource name of the AdGroupAd from which to remove
+        /// automatically created assets.
+        /// </param>
+        /// <param name="assetsWithFieldType">
+        /// Required. List of assets with field type to be removed from the AdGroupAd.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task RemoveAutomaticallyCreatedAssetsAsync(gagvr::AdGroupAdName adGroupAd, scg::IEnumerable<AssetsWithFieldType> assetsWithFieldType, gaxgrpc::CallSettings callSettings = null) =>
+            RemoveAutomaticallyCreatedAssetsAsync(new RemoveAutomaticallyCreatedAssetsRequest
+            {
+                AdGroupAdAsAdGroupAdName = gax::GaxPreconditions.CheckNotNull(adGroupAd, nameof(adGroupAd)),
+                AssetsWithFieldType =
+                {
+                    gax::GaxPreconditions.CheckNotNull(assetsWithFieldType, nameof(assetsWithFieldType)),
+                },
+            }, callSettings);
+
+        /// <summary>
+        /// Remove automatically created assets from an ad.
+        /// 
+        /// List of thrown errors:
+        /// [AdError]()
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [AutomaticallyCreatedAssetRemovalError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [MutateError]()
+        /// [QuotaError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="adGroupAd">
+        /// Required. The resource name of the AdGroupAd from which to remove
+        /// automatically created assets.
+        /// </param>
+        /// <param name="assetsWithFieldType">
+        /// Required. List of assets with field type to be removed from the AdGroupAd.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task RemoveAutomaticallyCreatedAssetsAsync(gagvr::AdGroupAdName adGroupAd, scg::IEnumerable<AssetsWithFieldType> assetsWithFieldType, st::CancellationToken cancellationToken) =>
+            RemoveAutomaticallyCreatedAssetsAsync(adGroupAd, assetsWithFieldType, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
     }
 
     /// <summary>AdGroupAdService client wrapper implementation, for convenient use.</summary>
@@ -571,6 +840,8 @@ namespace Google.Ads.GoogleAds.V17.Services
     public sealed partial class AdGroupAdServiceClientImpl : AdGroupAdServiceClient
     {
         private readonly gaxgrpc::ApiCall<MutateAdGroupAdsRequest, MutateAdGroupAdsResponse> _callMutateAdGroupAds;
+
+        private readonly gaxgrpc::ApiCall<RemoveAutomaticallyCreatedAssetsRequest, wkt::Empty> _callRemoveAutomaticallyCreatedAssets;
 
         /// <summary>
         /// Constructs a client wrapper for the AdGroupAdService service, with the specified gRPC client and settings.
@@ -590,6 +861,9 @@ namespace Google.Ads.GoogleAds.V17.Services
             _callMutateAdGroupAds = clientHelper.BuildApiCall<MutateAdGroupAdsRequest, MutateAdGroupAdsResponse>("MutateAdGroupAds", grpcClient.MutateAdGroupAdsAsync, grpcClient.MutateAdGroupAds, effectiveSettings.MutateAdGroupAdsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateAdGroupAds);
             Modify_MutateAdGroupAdsApiCall(ref _callMutateAdGroupAds);
+            _callRemoveAutomaticallyCreatedAssets = clientHelper.BuildApiCall<RemoveAutomaticallyCreatedAssetsRequest, wkt::Empty>("RemoveAutomaticallyCreatedAssets", grpcClient.RemoveAutomaticallyCreatedAssetsAsync, grpcClient.RemoveAutomaticallyCreatedAssets, effectiveSettings.RemoveAutomaticallyCreatedAssetsSettings).WithGoogleRequestParam("ad_group_ad", request => request.AdGroupAd);
+            Modify_ApiCall(ref _callRemoveAutomaticallyCreatedAssets);
+            Modify_RemoveAutomaticallyCreatedAssetsApiCall(ref _callRemoveAutomaticallyCreatedAssets);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);
         }
 
@@ -597,12 +871,16 @@ namespace Google.Ads.GoogleAds.V17.Services
 
         partial void Modify_MutateAdGroupAdsApiCall(ref gaxgrpc::ApiCall<MutateAdGroupAdsRequest, MutateAdGroupAdsResponse> call);
 
+        partial void Modify_RemoveAutomaticallyCreatedAssetsApiCall(ref gaxgrpc::ApiCall<RemoveAutomaticallyCreatedAssetsRequest, wkt::Empty> call);
+
         partial void OnConstruction(AdGroupAdService.AdGroupAdServiceClient grpcClient, AdGroupAdServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
         /// <summary>The underlying gRPC AdGroupAdService client</summary>
         public override AdGroupAdService.AdGroupAdServiceClient GrpcClient { get; }
 
         partial void Modify_MutateAdGroupAdsRequest(ref MutateAdGroupAdsRequest request, ref gaxgrpc::CallSettings settings);
+
+        partial void Modify_RemoveAutomaticallyCreatedAssetsRequest(ref RemoveAutomaticallyCreatedAssetsRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
         /// Creates, updates, or removes ads. Operation statuses are returned.
@@ -716,6 +994,52 @@ namespace Google.Ads.GoogleAds.V17.Services
         {
             Modify_MutateAdGroupAdsRequest(ref request, ref callSettings);
             return _callMutateAdGroupAds.Async(request, callSettings);
+        }
+
+        /// <summary>
+        /// Remove automatically created assets from an ad.
+        /// 
+        /// List of thrown errors:
+        /// [AdError]()
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [AutomaticallyCreatedAssetRemovalError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [MutateError]()
+        /// [QuotaError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public override void RemoveAutomaticallyCreatedAssets(RemoveAutomaticallyCreatedAssetsRequest request, gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_RemoveAutomaticallyCreatedAssetsRequest(ref request, ref callSettings);
+            _callRemoveAutomaticallyCreatedAssets.Sync(request, callSettings);
+        }
+
+        /// <summary>
+        /// Remove automatically created assets from an ad.
+        /// 
+        /// List of thrown errors:
+        /// [AdError]()
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [AutomaticallyCreatedAssetRemovalError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [MutateError]()
+        /// [QuotaError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public override stt::Task RemoveAutomaticallyCreatedAssetsAsync(RemoveAutomaticallyCreatedAssetsRequest request, gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_RemoveAutomaticallyCreatedAssetsRequest(ref request, ref callSettings);
+            return _callRemoveAutomaticallyCreatedAssets.Async(request, callSettings);
         }
     }
 }

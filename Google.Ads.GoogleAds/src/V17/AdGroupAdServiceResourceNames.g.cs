@@ -42,4 +42,28 @@ namespace Google.Ads.GoogleAds.V17.Services
             set => ResourceName = value?.ToString() ?? "";
         }
     }
+
+    public partial class RemoveAutomaticallyCreatedAssetsRequest
+    {
+        /// <summary>
+        /// <see cref="gagvr::AdGroupAdName"/>-typed view over the <see cref="AdGroupAd"/> resource name property.
+        /// </summary>
+        internal gagvr::AdGroupAdName AdGroupAdAsAdGroupAdName
+        {
+            get => string.IsNullOrEmpty(AdGroupAd) ? null : gagvr::AdGroupAdName.Parse(AdGroupAd, allowUnparsed: true);
+            set => AdGroupAd = value?.ToString() ?? "";
+        }
+    }
+
+    public partial class AssetsWithFieldType
+    {
+        /// <summary>
+        /// <see cref="gagvr::AssetName"/>-typed view over the <see cref="Asset"/> resource name property.
+        /// </summary>
+        internal gagvr::AssetName AssetAsAssetName
+        {
+            get => string.IsNullOrEmpty(Asset) ? null : gagvr::AssetName.Parse(Asset, allowUnparsed: true);
+            set => Asset = value?.ToString() ?? "";
+        }
+    }
 }

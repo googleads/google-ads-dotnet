@@ -66,6 +66,12 @@
                 "MutateAdGroupAds",
                 "MutateAdGroupAdsAsync"
               ]
+            },
+            "RemoveAutomaticallyCreatedAssets": {
+              "methods": [
+                "RemoveAutomaticallyCreatedAssets",
+                "RemoveAutomaticallyCreatedAssetsAsync"
+              ]
             }
           }
         }
@@ -380,6 +386,12 @@
               "methods": [
                 "GenerateAudienceCompositionInsights",
                 "GenerateAudienceCompositionInsightsAsync"
+              ]
+            },
+            "GenerateAudienceOverlapInsights": {
+              "methods": [
+                "GenerateAudienceOverlapInsights",
+                "GenerateAudienceOverlapInsightsAsync"
               ]
             },
             "GenerateInsightsFinderReport": {
@@ -1769,6 +1781,21 @@
               "methods": [
                 "MutateRemarketingActions",
                 "MutateRemarketingActionsAsync"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "ShareablePreviewService": {
+      "clients": {
+        "grpc": {
+          "libraryClient": "ShareablePreviewServiceClient",
+          "rpcs": {
+            "GenerateShareablePreviews": {
+              "methods": [
+                "GenerateShareablePreviews",
+                "GenerateShareablePreviewsAsync"
               ]
             }
           }
