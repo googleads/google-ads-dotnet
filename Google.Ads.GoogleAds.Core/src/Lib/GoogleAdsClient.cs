@@ -21,13 +21,13 @@ using System.Collections.Generic;
 namespace Google.Ads.GoogleAds.Lib
 {
     /// <summary>
-    /// The Google Ads Client interface to allow for DI container configuration.
+    /// The Google Ads Client interface to allow for dependency injection container configuration.
     /// </summary>
     public interface IGoogleAdsClient
     {
         /// <summary>
         /// <para>Gets an instance of the specified service. Use this method with a predefined
-        /// list of templates available for each supported version. E.g.</para>
+        /// list of templates available for each supported version. Example:</para>
         /// <para>
         /// // Gets an instance of V10.GoogleAdsServiceClient<br/>
         /// GoogleAdsServiceClient googleAdsService = client.GetService(Services.V10.GoogleAdsService);
@@ -36,7 +36,7 @@ namespace Google.Ads.GoogleAds.Lib
         /// <param name="serviceTemplate"><para>The template that corresponds to the service to
         /// be created. Predefined service templates are available for each supported version, as
         /// a nested class within the <code>Services</code> class.</para>
-        /// <para>E.g. <code>Services.V10</code> class contains predefined templates for v10 of
+        /// <para>Example: <code>Services.V10</code> class contains predefined templates for v10 of
         /// the Google Ads API.</para>
         /// </param>
         /// <returns>A service instance.</returns>
