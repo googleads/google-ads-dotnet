@@ -111,7 +111,7 @@ namespace Google.Ads.GoogleAds.Examples
             }
             catch (AggregateException)
             {
-                Console.WriteLine("An error occured while authorizing the user.");
+                Console.WriteLine("An error occurred while authorizing the user.");
             }
         }
     }
