@@ -20,15 +20,15 @@ using System.Text;
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V17.Common;
-using Google.Ads.GoogleAds.V17.Errors;
-using Google.Ads.GoogleAds.V17.Resources;
-using Google.Ads.GoogleAds.V17.Services;
-using static Google.Ads.GoogleAds.V17.Enums.ConsentStatusEnum.Types;
-using static Google.Ads.GoogleAds.V17.Enums.OfflineUserDataJobStatusEnum.Types;
-using static Google.Ads.GoogleAds.V17.Enums.OfflineUserDataJobTypeEnum.Types;
+using Google.Ads.GoogleAds.V18.Common;
+using Google.Ads.GoogleAds.V18.Errors;
+using Google.Ads.GoogleAds.V18.Resources;
+using Google.Ads.GoogleAds.V18.Services;
+using static Google.Ads.GoogleAds.V18.Enums.ConsentStatusEnum.Types;
+using static Google.Ads.GoogleAds.V18.Enums.OfflineUserDataJobStatusEnum.Types;
+using static Google.Ads.GoogleAds.V18.Enums.OfflineUserDataJobTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V17
+namespace Google.Ads.GoogleAds.Examples.V18
 {
     /// <summary>
     /// This code example uploads offline data for store sales transactions.
@@ -264,7 +264,7 @@ namespace Google.Ads.GoogleAds.Examples.V17
         {
             // Get the OfflineUserDataJobServiceClient.
             OfflineUserDataJobServiceClient offlineUserDataJobServiceClient =
-                client.GetService(Services.V17.OfflineUserDataJobService);
+                client.GetService(Services.V18.OfflineUserDataJobService);
 
             // Ensure that a valid job type is provided.
             if (offlineUserDataJobType != OfflineUserDataJobType.StoreSalesUploadFirstParty &
@@ -726,7 +726,7 @@ namespace Google.Ads.GoogleAds.Examples.V17
             string offlineUserDataJobResourceName)
         {
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V17.GoogleAdsService);
+                client.GetService(Services.V18.GoogleAdsService);
 
             string query = $@"SELECT offline_user_data_job.resource_name,
                     offline_user_data_job.id,

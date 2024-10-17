@@ -15,16 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V17.Common;
-using Google.Ads.GoogleAds.V17.Errors;
-using Google.Ads.GoogleAds.V17.Resources;
-using Google.Ads.GoogleAds.V17.Services;
+using Google.Ads.GoogleAds.V18.Common;
+using Google.Ads.GoogleAds.V18.Errors;
+using Google.Ads.GoogleAds.V18.Resources;
+using Google.Ads.GoogleAds.V18.Services;
 using Google.Api.Gax;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Google.Ads.GoogleAds.Examples.V17
+namespace Google.Ads.GoogleAds.Examples.V18
 {
     /// <summary>
     /// This code example retrieves all the disapproved ads in a given campaign.
@@ -81,7 +81,7 @@ namespace Google.Ads.GoogleAds.Examples.V17
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V17.GoogleAdsService);
+                Services.V18.GoogleAdsService);
 
             string searchQuery = $@"
                 SELECT
@@ -99,7 +99,10 @@ namespace Google.Ads.GoogleAds.Examples.V17
             {
                 Query = searchQuery,
                 CustomerId = customerId.ToString(),
-                ReturnTotalResultsCount = true
+                SearchSettings = new SearchSettings()
+                {
+                    ReturnTotalResultsCount = true
+                }
             };
 
             try

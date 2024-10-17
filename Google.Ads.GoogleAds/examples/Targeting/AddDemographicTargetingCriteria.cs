@@ -15,16 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V17.Common;
-using Google.Ads.GoogleAds.V17.Errors;
-using Google.Ads.GoogleAds.V17.Resources;
-using Google.Ads.GoogleAds.V17.Services;
+using Google.Ads.GoogleAds.V18.Common;
+using Google.Ads.GoogleAds.V18.Errors;
+using Google.Ads.GoogleAds.V18.Resources;
+using Google.Ads.GoogleAds.V18.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V17.Enums.AgeRangeTypeEnum.Types;
-using static Google.Ads.GoogleAds.V17.Enums.GenderTypeEnum.Types;
+using static Google.Ads.GoogleAds.V18.Enums.AgeRangeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V18.Enums.GenderTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V17
+namespace Google.Ads.GoogleAds.Examples.V18
 {
     /// <summary>
     /// This code example adds demographic criteria to an ad group. To get ad groups,
@@ -84,7 +84,7 @@ namespace Google.Ads.GoogleAds.Examples.V17
         {
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V17.AdGroupCriterionService);
+                client.GetService(Services.V18.AdGroupCriterionService);
 
             string adGroupResourceName = ResourceNames.AdGroup(customerId, adGroupId);
 

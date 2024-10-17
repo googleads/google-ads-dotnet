@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V17.Common;
-using Google.Ads.GoogleAds.V17.Errors;
-using Google.Ads.GoogleAds.V17.Resources;
-using Google.Ads.GoogleAds.V17.Services;
+using Google.Ads.GoogleAds.V18.Common;
+using Google.Ads.GoogleAds.V18.Errors;
+using Google.Ads.GoogleAds.V18.Resources;
+using Google.Ads.GoogleAds.V18.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V17.Enums.DeviceEnum.Types;
+using static Google.Ads.GoogleAds.V18.Enums.DeviceEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V17
+namespace Google.Ads.GoogleAds.Examples.V18
 {
     /// <summary>
     /// This code example demonstrates how to add an ad group bid modifier for mobile devices.
@@ -93,7 +93,7 @@ namespace Google.Ads.GoogleAds.Examples.V17
         {
             // Get the AdGroupBidModifierService.
             AdGroupBidModifierServiceClient adGroupBidModifierService =
-                client.GetService(Services.V17.AdGroupBidModifierService);
+                client.GetService(Services.V18.AdGroupBidModifierService);
 
             // Creates an ad group bid modifier for mobile devices with the specified ad group
             // ID and bid modifier value.
