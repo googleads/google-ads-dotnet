@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Title>Google Ads API Core Dotnet Client Library</Title>
     <PackageId>Google.Ads.GoogleAds.Core</PackageId>
-    <Version>4.0.1</Version>
+    <Version>4.0.2</Version>
     <Description>This library provides you with functionality to access the Google Ads API. The Google Ads API is the modern programmatic interface to Google Ads and the next generation of the AdWords API. See https://developers.google.com/google-ads/api to learn more about Google Ads API.</Description>
     <PackageReleaseNotes>https://github.com/googleads/google-ads-dotnet/blob/master/ChangeLog</PackageReleaseNotes>
     <PackageTags>GoogleAds Google</PackageTags>
@@ -30,8 +30,8 @@
     <IncludeSource>true</IncludeSource>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <AssemblyVersion>4.0.1</AssemblyVersion>
-    <FileVersion>4.0.1</FileVersion>
+    <AssemblyVersion>4.0.2</AssemblyVersion>
+    <FileVersion>4.0.2</FileVersion>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>

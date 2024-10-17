@@ -1,5 +1,11 @@
 21.1.0
 ======
+- Added support for version 18.0 of the Google Ads API.
+- Updated the `GetAllDisapprovedAds` example to use the `SearchSettings` object.
+- Added support for adding a `GoogleAdsClient` to a DI container, see [#573](https://github.com/googleads/google-ads-dotnet/pull/573)
+
+21.0.0
+======
 - Added support for version 17.1 of the Google Ads API.
 - Removed support for version 15 of the Google Ads API.
 
