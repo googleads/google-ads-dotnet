@@ -15,25 +15,25 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V17.Common;
-using Google.Ads.GoogleAds.V17.Errors;
-using Google.Ads.GoogleAds.V17.Resources;
-using Google.Ads.GoogleAds.V17.Services;
+using Google.Ads.GoogleAds.V18.Common;
+using Google.Ads.GoogleAds.V18.Errors;
+using Google.Ads.GoogleAds.V18.Resources;
+using Google.Ads.GoogleAds.V18.Services;
 using Google.Api.Gax;
 using Google.LongRunning;
 using Google.Protobuf.WellKnownTypes;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V17.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V17.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V17.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V17.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V17.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V17.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V17.Enums.KeywordMatchTypeEnum.Types;
-using static Google.Ads.GoogleAds.V17.Resources.BatchJob.Types;
+using static Google.Ads.GoogleAds.V18.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V18.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V18.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V18.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V18.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V18.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V18.Enums.KeywordMatchTypeEnum.Types;
+using static Google.Ads.GoogleAds.V18.Resources.BatchJob.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V17
+namespace Google.Ads.GoogleAds.Examples.V18
 {
     /// <summary>
     /// This code example adds complete campaigns including campaign budgets, campaigns, ad groups
@@ -114,7 +114,7 @@ namespace Google.Ads.GoogleAds.Examples.V17
         {
             // Gets the BatchJobService.
             BatchJobServiceClient batchJobService =
-                client.GetService(Services.V17.BatchJobService);
+                client.GetService(Services.V18.BatchJobService);
 
             try
             {

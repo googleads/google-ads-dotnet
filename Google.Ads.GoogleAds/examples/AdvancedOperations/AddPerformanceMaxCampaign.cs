@@ -17,21 +17,21 @@ using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V17.Common;
-using Google.Ads.GoogleAds.V17.Errors;
-using Google.Ads.GoogleAds.V17.Resources;
-using Google.Ads.GoogleAds.V17.Services;
+using Google.Ads.GoogleAds.V18.Common;
+using Google.Ads.GoogleAds.V18.Errors;
+using Google.Ads.GoogleAds.V18.Resources;
+using Google.Ads.GoogleAds.V18.Services;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
 using System.Threading;
-using static Google.Ads.GoogleAds.V17.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V17.Enums.AssetFieldTypeEnum.Types;
-using static Google.Ads.GoogleAds.V17.Enums.AssetGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V17.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V17.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V18.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V18.Enums.AssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V18.Enums.AssetGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V18.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V18.Enums.CampaignStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V17
+namespace Google.Ads.GoogleAds.Examples.V18
 {
     /// <summary>
     /// This example shows how to create a Performance Max campaign.
@@ -141,7 +141,7 @@ namespace Google.Ads.GoogleAds.Examples.V17
             {
                 // [START add_performance_max_campaign_1]
                 GoogleAdsServiceClient googleAdsServiceClient =
-                    client.GetService(Services.V17.GoogleAdsService);
+                    client.GetService(Services.V18.GoogleAdsService);
 
                 // Performance Max campaigns require that repeated assets such as headlines and
                 // descriptions be created before the campaign.
@@ -465,7 +465,7 @@ namespace Google.Ads.GoogleAds.Examples.V17
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V17.GoogleAdsService);
+                client.GetService(Services.V18.GoogleAdsService);
 
             MutateGoogleAdsRequest request = new MutateGoogleAdsRequest()
             {
@@ -792,7 +792,6 @@ namespace Google.Ads.GoogleAds.Examples.V17
 
         // [END add_performance_max_campaign_8]
 
-        // [START add_performance_max_campaign_9]
         /// <summary>
         /// Creates a list of MutateOperations that may create AssetGroupSignals
         /// </summary>
@@ -808,34 +807,55 @@ namespace Google.Ads.GoogleAds.Examples.V17
         {
             List<MutateOperation> operations = new List<MutateOperation>();
 
-            if (!audienceId.HasValue)
+            if (audienceId.HasValue)
             {
-                return operations;
+                // Create an audience asset group signal.
+                // To learn more about Audience Signals, see
+                // https://developers.google.com/google-ads/api/docs/performance-max/asset-groups#audience_signals
+                // [START add_performance_max_campaign_9]
+                operations.Add(
+                    new MutateOperation()
+                    {
+                        AssetGroupSignalOperation = new AssetGroupSignalOperation()
+                        {
+                            Create = new AssetGroupSignal()
+                            {
+                                AssetGroup = assetGroupResourceName,
+                                Audience = new AudienceInfo()
+                                {
+                                    Audience = ResourceNames.Audience(customerId, audienceId.Value)
+                                }
+                            }
+                        }
+                    }
+                );
+                // [END add_performance_max_campaign_9]
             }
 
+            // Create a search theme asset group signal.
+            // To learn more about Search Themes Signals, see:
+            // https://developers.google.com/google-ads/api/performance-max/asset-group-signals#search_themes
+            // [START add_performance_max_campaign_10]
             operations.Add(
                 new MutateOperation()
                 {
                     AssetGroupSignalOperation = new AssetGroupSignalOperation()
                     {
-                        // To learn more about Audience Signals, see
-                        // https://developers.google.com/google-ads/api/docs/performance-max/asset-groups#audience_signals
                         Create = new AssetGroupSignal()
                         {
                             AssetGroup = assetGroupResourceName,
-                            Audience = new AudienceInfo()
+                            SearchTheme = new SearchThemeInfo()
                             {
-                                Audience = ResourceNames.Audience(customerId, audienceId.Value)
+                                Text = "travel"
                             }
                         }
                     }
                 }
             );
+            // [END add_performance_max_campaign_10]
 
             return operations;
         }
-
-        // [END add_performance_max_campaign_9]
 
         /// <summary>
         /// Prints the details of a MutateGoogleAdsResponse. Parses the "response" oneof field name

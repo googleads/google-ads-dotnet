@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V17.Common;
-using Google.Ads.GoogleAds.V17.Errors;
-using Google.Ads.GoogleAds.V17.Resources;
-using Google.Ads.GoogleAds.V17.Services;
+using Google.Ads.GoogleAds.V18.Common;
+using Google.Ads.GoogleAds.V18.Errors;
+using Google.Ads.GoogleAds.V18.Resources;
+using Google.Ads.GoogleAds.V18.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V17.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V18.Enums.AdGroupAdStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V17
+namespace Google.Ads.GoogleAds.Examples.V18
 {
     /// <summary>
     /// This code example demonstrates how to request an exemption for policy violations of a
@@ -86,7 +86,7 @@ namespace Google.Ads.GoogleAds.Examples.V17
         {
             // Get the AdGroupAdServiceClient.
             AdGroupAdServiceClient adGroupAdService = client.GetService(
-                Services.V17.AdGroupAdService);
+                Services.V18.AdGroupAdService);
 
             string adGroupResourceName = ResourceNames.AdGroup(customerId, adGroupId);
             ResponsiveSearchAdInfo responsiveSearchAdInfo = new ResponsiveSearchAdInfo()
