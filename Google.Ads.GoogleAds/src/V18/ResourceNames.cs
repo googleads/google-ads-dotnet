@@ -224,7 +224,7 @@ namespace Google.Ads.GoogleAds.V18.Errors
             return $"customers/{customerId}/assetGroupSignals/{assetGroupIdCriterionId}";
         }
 
-        public static string AssetSet(long customerId, long assetSetId, long assetId)
+        public static string AssetSet(long customerId, long assetSetId)
         {
             return $"customers/{customerId}/assetSets/{assetSetId}";
         }
