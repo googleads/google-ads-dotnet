@@ -495,18 +495,18 @@ namespace Google.Ads.Gax.Config
                 ReadSetting(config, oAuth2ServiceAccountEmail);
                 if (string.IsNullOrEmpty(this.OAuth2ServiceAccountEmail))
                 {
-                    throw new ApplicationException(ErrorMessages.ClientEmailIsMissingInJsonFile);
+                    throw new ApplicationException(ErrorMessages.ClientEmailIsMissingInJson);
                 }
 
                 ReadSetting(config, oAuth2PrivateKey);
                 if (string.IsNullOrEmpty(this.OAuth2PrivateKey))
                 {
-                    throw new ApplicationException(ErrorMessages.PrivateKeyIsMissingInJsonFile);
+                    throw new ApplicationException(ErrorMessages.PrivateKeyIsMissingInJson);
                 }
             }
             catch (Exception e)
             {
-                throw new ArgumentException(ErrorMessages.FailedToLoadJsonSecretsFile, e);
+                throw new ArgumentException(ErrorMessages.FailedToLoadJsonSecrets, e);
             }
         }
 
@@ -632,7 +632,7 @@ namespace Google.Ads.Gax.Config
             }
             catch (Exception e)
             {
-                throw new ArgumentException(ErrorMessages.FailedToLoadJsonSecretsFile, e);
+                throw new ArgumentException(ErrorMessages.FailedToLoadJsonSecrets, e);
             }
         }
     }
