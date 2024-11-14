@@ -34,12 +34,7 @@ namespace Google.Ads.Gax.Tests.Config
         [Test]
         public void TestLoadOauth2SecretsFromStream()
         {
-            string testCredentials = """
-                {
-                    "client_email": "test@test.com",
-                    "private_key": "test_key"
-                }
-            """;
+            string testCredentials = "{\"client_email\": \"test@test.com\", \"private_key\": \"test_key\"}";
 
             AdsConfig config = new AdsConfig();
             config.LoadOAuth2SecretsFromStream(new StreamReader(new MemoryStream(Encoding.UTF8.GetBytes(testCredentials))));
@@ -52,11 +47,7 @@ namespace Google.Ads.Gax.Tests.Config
         [Test]
         public void TestLoadOauth2SecretsFromStreamWithoutPrivateKeyThrowsException()
         {
-            string testCredentials = """
-                {
-                    "client_email": "test@test.com",
-                }
-            """;
+            string testCredentials = "{\"client_email\": \"test@test.com\"}";
 
             AdsConfig config = new AdsConfig();
             Assert.Throws<ArgumentException>(() => config.LoadOAuth2SecretsFromStream(
@@ -70,11 +61,7 @@ namespace Google.Ads.Gax.Tests.Config
         [Test]
         public void TestLoadOauth2SecretsFromStreamWithoutClientEmailThrowsException()
         {
-            string testCredentials = """
-                {
-                    "private_key": "test_key",
-                }
-            """;
+            string testCredentials = "{\"private_key\": \"test_key\"}";
 
             AdsConfig config = new AdsConfig();
             Assert.Throws<ArgumentException>(() => config.LoadOAuth2SecretsFromStream(
