@@ -10,8 +10,8 @@
 
 namespace Google.Ads.Gax {
     using System;
-    
-    
+
+
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -23,15 +23,15 @@ namespace Google.Ads.Gax {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class ErrorMessages {
-        
+
         private static global::System.Resources.ResourceManager resourceMan;
-        
+
         private static global::System.Globalization.CultureInfo resourceCulture;
-        
+
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal ErrorMessages() {
         }
-        
+
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
@@ -45,7 +45,7 @@ namespace Google.Ads.Gax {
                 return resourceMan;
             }
         }
-        
+
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
@@ -59,16 +59,16 @@ namespace Google.Ads.Gax {
                 resourceCulture = value;
             }
         }
-        
+
         /// <summary>
-        ///   Looks up a localized string similar to Required key &apos;client_email&apos; is missing in JSON secrets file..
+        ///   Looks up a localized string similar to Required key &apos;client_email&apos; is missing in JSON secrets.
         /// </summary>
-        internal static string ClientEmailIsMissingInJsonFile {
+        internal static string ClientEmailIsMissingInJson {
             get {
-                return ResourceManager.GetString("ClientEmailIsMissingInJsonFile", resourceCulture);
+                return ResourceManager.GetString("ClientEmailIsMissingInJson", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Failed to parse value for setting name &apos;{0}&apos;. Value provided: &apos;{1}&apos;..
         /// </summary>
@@ -77,16 +77,16 @@ namespace Google.Ads.Gax {
                 return ResourceManager.GetString("ConfigSettingParseError", resourceCulture);
             }
         }
-        
+
         /// <summary>
-        ///   Looks up a localized string similar to Failed to load JSON secrets file for service account configuration. See inner exception for details..
+        ///   Looks up a localized string similar to Failed to load JSON secrets for service account configuration. See inner exception for details..
         /// </summary>
-        internal static string FailedToLoadJsonSecretsFile {
+        internal static string FailedToLoadJsonSecrets {
             get {
-                return ResourceManager.GetString("FailedToLoadJsonSecretsFile", resourceCulture);
+                return ResourceManager.GetString("FailedToLoadJsonSecrets", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Grpc.Net.Client is not supported on this platform. See https://docs.microsoft.com/en-us/aspnet/core/grpc/supported-platforms?view=aspnetcore-6.0 for requirements..
         /// </summary>
@@ -95,13 +95,13 @@ namespace Google.Ads.Gax {
                 return ResourceManager.GetString("GrpcNetClientNotSupported", resourceCulture);
             }
         }
-        
+
         /// <summary>
-        ///   Looks up a localized string similar to Required key &apos;private_key&apos; is missing in JSON secrets file..
+        ///   Looks up a localized string similar to Required key &apos;private_key&apos; is missing in JSON secrets.
         /// </summary>
-        internal static string PrivateKeyIsMissingInJsonFile {
+        internal static string PrivateKeyIsMissingInJson {
             get {
-                return ResourceManager.GetString("PrivateKeyIsMissingInJsonFile", resourceCulture);
+                return ResourceManager.GetString("PrivateKeyIsMissingInJson", resourceCulture);
             }
         }
     }

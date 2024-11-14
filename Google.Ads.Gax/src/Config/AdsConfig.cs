@@ -480,6 +480,37 @@ namespace Google.Ads.Gax.Config
         }
 
         /// <summary>
+        /// Loads the OAuth2 secrets from a stream reader. Note that the stream reader will not be
+        /// disposed of.
+        /// </summary>
+        /// <param name="reader"> A stream reader.</param>
+        public void LoadOAuth2SecretsFromStream(StreamReader reader)
+        {
+            try
+            {
+                string contents = reader.ReadToEnd();
+                Dictionary<string, string> config =
+                    JsonConvert.DeserializeObject<Dictionary<string, string>>(contents);
+
+                ReadSetting(config, oAuth2ServiceAccountEmail);
+                if (string.IsNullOrEmpty(this.OAuth2ServiceAccountEmail))
+                {
+                    throw new ApplicationException(ErrorMessages.ClientEmailIsMissingInJson);
+                }
+
+                ReadSetting(config, oAuth2PrivateKey);
+                if (string.IsNullOrEmpty(this.OAuth2PrivateKey))
+                {
+                    throw new ApplicationException(ErrorMessages.PrivateKeyIsMissingInJson);
+                }
+            }
+            catch (Exception e)
+            {
+                throw new ArgumentException(ErrorMessages.FailedToLoadJsonSecrets, e);
+            }
+        }
+
+        /// <summary>
         /// Reads the proxy settings.
         /// </summary>
         /// <param name="settings">The parsed app.config settings.</param>
@@ -596,26 +627,12 @@ namespace Google.Ads.Gax.Config
             {
                 using (StreamReader reader = new StreamReader(OAuth2SecretsJsonPath))
                 {
-                    string contents = reader.ReadToEnd();
-                    Dictionary<string, string> config =
-                        JsonConvert.DeserializeObject<Dictionary<string, string>>(contents);
-
-                    ReadSetting(config, oAuth2ServiceAccountEmail);
-                    if (string.IsNullOrEmpty(this.OAuth2ServiceAccountEmail))
-                    {
-                        throw new ApplicationException(ErrorMessages.ClientEmailIsMissingInJsonFile);
-                    }
-
-                    ReadSetting(config, oAuth2PrivateKey);
-                    if (string.IsNullOrEmpty(this.OAuth2PrivateKey))
-                    {
-                        throw new ApplicationException(ErrorMessages.PrivateKeyIsMissingInJsonFile);
-                    }
+                    LoadOAuth2SecretsFromStream(reader);
                 }
             }
             catch (Exception e)
             {
-                throw new ArgumentException(ErrorMessages.FailedToLoadJsonSecretsFile, e);
+                throw new ArgumentException(ErrorMessages.FailedToLoadJsonSecrets, e);
             }
         }
     }
