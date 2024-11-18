@@ -1,3 +1,9 @@
+21.1.1
+======
+- Added support for configuring service account credentials from a JSON stream.
+- Upgraded the System.Text.Json dependency in the `AuthenticateInAspNetWebApplication` subproject to
+  address a security finding.
+
 21.1.0
 ======
 - Added support for version 18.0 of the Google Ads API.
