@@ -1,3 +1,4 @@
+using System;
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Extensions.DependencyInjection;
 using Google.Ads.GoogleAds.Lib;
@@ -6,6 +7,9 @@ using GoogleAdsConfig = Google.Ads.GoogleAds.Extensions.DependencyInjection.Goog
 
 namespace Microsoft.Extensions.DependencyInjection
 {
+    /// <summary>
+    ///
+    /// </summary>
     public static class GoogleAdsClientServiceCollectionExtensions
     {
         /// <summary>

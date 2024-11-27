@@ -1,7 +1,13 @@
 namespace Google.Ads.GoogleAds.Extensions.DependencyInjection
 {
+    /// <summary>
+    ///
+    /// </summary>
     public class GoogleAdsApiOptions
     {
+        /// <summary>
+        ///
+        /// </summary>
         public const string GoogleAdsApi = "GoogleAdsApi";
 
         /// <summary>
