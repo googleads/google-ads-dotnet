@@ -1,12 +1,12 @@
 namespace Google.Ads.GoogleAds.Extensions.DependencyInjection
 {
     /// <summary>
-    ///
+    /// Google Ads API options used when injecting the configuration in a DI container.
     /// </summary>
     public class GoogleAdsApiOptions
     {
         /// <summary>
-        ///
+        /// The GoogleAdsApi prefix for configuration options.
         /// </summary>
         public const string GoogleAdsApi = "GoogleAdsApi";
 
