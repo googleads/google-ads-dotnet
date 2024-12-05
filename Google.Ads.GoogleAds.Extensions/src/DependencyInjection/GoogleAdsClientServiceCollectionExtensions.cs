@@ -8,7 +8,7 @@ using GoogleAdsConfig = Google.Ads.GoogleAds.Extensions.DependencyInjection.Goog
 namespace Microsoft.Extensions.DependencyInjection
 {
     /// <summary>
-    ///
+    /// Extension functions to add the Google Ads configuration to a dependency injection container.
     /// </summary>
     public static class GoogleAdsClientServiceCollectionExtensions
     {
