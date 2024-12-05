@@ -42,4 +42,13 @@
       <LastGenOutput>TestResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Condition="!Exists('..\..\Google.Ads.GoogleAds\src\Google.Ads.GoogleAds.csproj')" Include="Google.Ads.GoogleAds" Version="21.1.1" />
+    <ProjectReference Condition="Exists('..\..\Google.Ads.GoogleAds\src\Google.Ads.GoogleAds.csproj')" Include="..\..\Google.Ads.GoogleAds\src\Google.Ads.GoogleAds.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>

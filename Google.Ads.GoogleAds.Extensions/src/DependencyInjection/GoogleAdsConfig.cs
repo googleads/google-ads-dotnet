@@ -1,9 +1,13 @@
+using System;
 using Google.Ads.Gax.Config;
 using Microsoft.Extensions.Options;
 
 namespace Google.Ads.GoogleAds.Extensions.DependencyInjection
 {
-    public class GoogleAdsConfig : Config.GoogleAdsConfig
+    /// <summary>
+    /// Configuration options to be injected in a DI container.
+    /// </summary>
+    public class GoogleAdsConfig : GoogleAds.Config.GoogleAdsConfig
     {
 
         /// <summary>

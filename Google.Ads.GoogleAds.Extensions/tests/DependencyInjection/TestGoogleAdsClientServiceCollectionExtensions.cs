@@ -1,7 +1,12 @@
-﻿using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V14.Services;
+﻿using System;
+using System.IO;
+using Google.Ads.GoogleAds.Lib;
+using Google.Ads.GoogleAds.V18.Services;
+using Grpc.Auth;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using NUnit.Framework;
+
 
 namespace Google.Ads.GoogleAds.Extensions.DependencyInjection.Tests
 {
@@ -14,13 +19,13 @@ namespace Google.Ads.GoogleAds.Extensions.DependencyInjection.Tests
     {
         private IGoogleAdsClient googleAdsClient;
 
-        [SetUp]
-        public void Setup()
+        [Test]
+        public void TestGetGoogleAdsClientFromDIContainer()
         {
             // read the configuration from appsettings.json
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
             IConfigurationRoot Configuration = builder.Build();
             IServiceCollection services = new ServiceCollection();
@@ -31,29 +36,15 @@ namespace Google.Ads.GoogleAds.Extensions.DependencyInjection.Tests
 
             // get the configured Google Ads Client from the DI container
             googleAdsClient = serviceProvider.GetService<IGoogleAdsClient>();
+
+            GoogleAdsServiceClient googleAdsService = googleAdsClient.GetService(
+                Services.V18.GoogleAdsService);
+
+            Assert.AreEqual("abcdefghijkl1234567890", googleAdsService.ServiceContext.Client.Config.DeveloperToken);
+            Assert.AreEqual("TEST_OAUTH2_CLIENT_ID", googleAdsService.ServiceContext.Client.Config.OAuth2ClientId);
+            Assert.AreEqual("TEST_OAUTH2_CLIENT_SECRET", googleAdsService.ServiceContext.Client.Config.OAuth2ClientSecret);
+            Assert.AreEqual("TEST_OAUTH2_REFRESH_TOKEN", googleAdsService.ServiceContext.Client.Config.OAuth2RefreshToken);
         }
 
-        [Test]
-        public async Task TestAddGoogleAdsClientAsync()
-        {
-            string customerId = "987654543";
-            long adId = 123456789012;
-            string query =
-                "SELECT ad_group_ad.ad.id " +
-                "FROM ad_group_ad " +
-                $"WHERE ad_group_ad.ad.id={adId} LIMIT 1";
-
-            GoogleAdsServiceClient googleAdsServiceClient = googleAdsClient.GetService(Services.V14.GoogleAdsService);
-
-            Task t = googleAdsServiceClient.SearchStreamAsync(customerId, query,
-                delegate (SearchGoogleAdsStreamResponse resp)
-                {
-                    foreach (GoogleAdsRow googleAdsRow in resp.Results)
-                    {
-                        Assert.AreEqual(googleAdsRow.AdGroupAd.Ad.Id, adId);
-                    }
-                });
-            await t;
-        }
     }
 }
