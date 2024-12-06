@@ -36,7 +36,7 @@
    <!-- Include local projects over nuget dependencies if available -->
     <PackageReference Condition="!Exists('..\src\Google.Ads.GoogleAds.csproj')" Include="Google.Ads.GoogleAds" Version="21.1.1" />
     <ProjectReference Condition="Exists('..\src\Google.Ads.GoogleAds.csproj')" Include="..\src\Google.Ads.GoogleAds.csproj" />
-    <PackageReference Condition="!Exists('..\..\Google.Ads.GoogleAds.Extensions\src\Google.Ads.GoogleAds.Extensions.csproj')" Include="Google.Ads.GoogleAds.Extensions" Version="2.0.2" />
+    <PackageReference Condition="!Exists('..\..\Google.Ads.GoogleAds.Extensions\src\Google.Ads.GoogleAds.Extensions.csproj')" Include="Google.Ads.GoogleAds.Extensions" Version="2.0.3" />
     <ProjectReference Condition="Exists('..\..\Google.Ads.GoogleAds.Extensions\src\Google.Ads.GoogleAds.Extensions.csproj')" Include="..\..\Google.Ads.GoogleAds.Extensions\src\Google.Ads.GoogleAds.Extensions.csproj" />
   </ItemGroup>
   <ItemGroup>
