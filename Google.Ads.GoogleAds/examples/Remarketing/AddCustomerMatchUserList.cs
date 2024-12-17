@@ -377,8 +377,8 @@ namespace Google.Ads.GoogleAds.Examples.V18
 
             string query = "SELECT offline_user_data_job.resource_name, " +
                 "offline_user_data_job.id, offline_user_data_job.status, " +
-                "offline_user_data_job.type, offline_user_data_job.failure_reason " +
-                "offline_user_data_job.customer_match_user_list_metadata_user_list " +
+                "offline_user_data_job.type, offline_user_data_job.failure_reason, " +
+                "offline_user_data_job.customer_match_user_list_metadata.user_list " +
                 "FROM offline_user_data_job WHERE " +
                 $"offline_user_data_job.resource_name = '{offlineUserDataJobResourceName}'";
 
