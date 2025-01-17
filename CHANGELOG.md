@@ -1,3 +1,8 @@
+22.0.0
+======
+- Removed support for version 16 of the Google Ads API.
+- Added support for setting more configuration properties via dependency injection (fixes #592).
+
 21.1.1
 ======
 - Added support for configuring service account credentials from a JSON stream.

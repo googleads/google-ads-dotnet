@@ -36,5 +36,39 @@ namespace Google.Ads.GoogleAds.Extensions.DependencyInjection
         /// <remarks>This setting is applicable only when using OAuth2 web / application
         /// flow in offline mode.</remarks>
         public string OAuth2RefreshToken { get; set; }
+
+        /// <summary>
+        /// Gets or sets the OAuth2 PRN email.
+        /// </summary>
+        public string OAuth2PrnEmail { get; set; }
+
+        /// <summary>
+        /// Gets or sets the OAuth2 secrets JSON path.
+        /// </summary>
+        public string OAuth2SecretsJsonPath { get; set; }
+
+        /// <summary>
+        /// Gets or sets the OAuth2 scope.
+        /// </summary>
+        public string OAuth2Scope { get; set; }
+
+        /// <summary>
+        /// Gets or sets the flag that specifies whether to use the Google Cloud Organization of
+        /// your Google Cloud project instead of developer token to determine your Google Ads API
+        /// access levels.
+        /// </summary>
+        public bool UseCloudOrgForApiAccess { get; set; }
+
+        /// <summary>
+        /// Gets or sets the maximum size in bytes of the message that can be received by the
+        /// service client.
+        /// </summary>
+        public int MaxReceiveMessageSizeInBytes { get; set; }
+
+        /// <summary>
+        /// Gets or sets the maximum size in bytes of the metadata that can be received by the
+        /// service client.
+        /// </summary>
+        public int MaxMetadataSizeInBytes { get; set; }
     }
 }
