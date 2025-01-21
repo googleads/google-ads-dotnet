@@ -20,6 +20,12 @@ namespace Google.Ads.GoogleAds.Extensions.DependencyInjection
             OAuth2ClientId = options.Value.OAuth2ClientId;
             OAuth2ClientSecret = options.Value.OAuth2ClientSecret;
             OAuth2RefreshToken = options.Value.OAuth2RefreshToken;
+            OAuth2PrnEmail = options.Value.OAuth2PrnEmail;
+            OAuth2SecretsJsonPath = options.Value.OAuth2SecretsJsonPath;
+            OAuth2Scope = options.Value.OAuth2Scope + "";
+            UseCloudOrgForApiAccess = options.Value.UseCloudOrgForApiAccess;
+            MaxReceiveMessageSizeInBytes = options.Value.MaxReceiveMessageSizeInBytes;
+            MaxMetadataSizeInBytes = options.Value.MaxMetadataSizeInBytes;
         }
     }
 }

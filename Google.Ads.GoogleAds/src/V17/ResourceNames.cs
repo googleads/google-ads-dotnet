@@ -13,11 +13,7 @@
 // limitations under the License.
 
 using Google.Ads.Gax.Util;
-using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V16.Enums;
-using Google.Protobuf.Reflection;
 using System;
-using System.Linq;
 using System.Text;
 using static Google.Ads.GoogleAds.V17.Enums.AssetFieldTypeEnum.Types;
 using static Google.Ads.GoogleAds.V17.Enums.ConversionActionCategoryEnum.Types;

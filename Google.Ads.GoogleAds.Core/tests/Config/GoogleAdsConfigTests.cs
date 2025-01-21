@@ -13,11 +13,9 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Config;
-using Newtonsoft.Json;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Net;
 
 namespace Google.Ads.GoogleAds.Tests.Config
