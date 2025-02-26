@@ -15,18 +15,18 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V18.Common;
-using Google.Ads.GoogleAds.V18.Enums;
-using Google.Ads.GoogleAds.V18.Errors;
-using Google.Ads.GoogleAds.V18.Resources;
-using Google.Ads.GoogleAds.V18.Services;
+using Google.Ads.GoogleAds.V19.Common;
+using Google.Ads.GoogleAds.V19.Enums;
+using Google.Ads.GoogleAds.V19.Errors;
+using Google.Ads.GoogleAds.V19.Resources;
+using Google.Ads.GoogleAds.V19.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V18.Enums.PriceExtensionPriceQualifierEnum.Types;
-using static Google.Ads.GoogleAds.V18.Enums.PriceExtensionPriceUnitEnum.Types;
-using static Google.Ads.GoogleAds.V18.Enums.PriceExtensionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.PriceExtensionPriceQualifierEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.PriceExtensionPriceUnitEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.PriceExtensionTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V18
+namespace Google.Ads.GoogleAds.Examples.V19
 {
     /// <summary>
     /// This code example adds a price extension and associates it with an account.
@@ -148,7 +148,7 @@ namespace Google.Ads.GoogleAds.Examples.V18
                 Create = asset,
             };
 
-            AssetServiceClient assetClient = client.GetService(Services.V18.AssetService);
+            AssetServiceClient assetClient = client.GetService(Services.V19.AssetService);
             MutateAssetsResponse response = assetClient.MutateAssets(customerId.ToString(),
                 new[] { operation });
             string resourceName = response.Results[0].ResourceName;
@@ -177,14 +177,14 @@ namespace Google.Ads.GoogleAds.Examples.V18
 
             // Issues the create request to add the callout.
             CustomerAssetServiceClient customerAssetServiceClient =
-                client.GetService(Services.V18.CustomerAssetService);
+                client.GetService(Services.V19.CustomerAssetService);
             CustomerAssetOperation operation = new CustomerAssetOperation
             {
                 Create = customerAsset,
             };
 
             CustomerAssetServiceClient assetClient =
-              client.GetService(Services.V18.CustomerAssetService);
+              client.GetService(Services.V19.CustomerAssetService);
             MutateCustomerAssetsResponse response =
               assetClient.MutateCustomerAssets(customerId.ToString(), new[] { operation });
 

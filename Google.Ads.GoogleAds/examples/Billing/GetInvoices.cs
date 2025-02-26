@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V18.Errors;
-using Google.Ads.GoogleAds.V18.Resources;
-using Google.Ads.GoogleAds.V18.Services;
+using Google.Ads.GoogleAds.V19.Errors;
+using Google.Ads.GoogleAds.V19.Resources;
+using Google.Ads.GoogleAds.V19.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V18.Enums.MonthOfYearEnum.Types;
-using static Google.Ads.GoogleAds.V18.Resources.Invoice.Types;
+using static Google.Ads.GoogleAds.V19.Enums.MonthOfYearEnum.Types;
+using static Google.Ads.GoogleAds.V19.Resources.Invoice.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V18
+namespace Google.Ads.GoogleAds.Examples.V19
 {
     /// <summary>
     /// This code example retrieves the invoices issued last month for a given billing setup.
@@ -79,7 +79,7 @@ namespace Google.Ads.GoogleAds.Examples.V18
         {
             // Get the InvoiceService client.
             InvoiceServiceClient invoiceServiceClient =
-                client.GetService(Services.V18.InvoiceService);
+                client.GetService(Services.V19.InvoiceService);
 
             // Get the last month before today.
             DateTime lastMonthDateTime = DateTime.Today.AddMonths(-1);
