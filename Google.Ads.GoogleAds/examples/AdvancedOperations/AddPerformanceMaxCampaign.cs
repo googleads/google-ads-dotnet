@@ -16,22 +16,23 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Config;
+using Google.Ads.GoogleAds.Extensions.Config;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V18.Common;
-using Google.Ads.GoogleAds.V18.Errors;
-using Google.Ads.GoogleAds.V18.Resources;
-using Google.Ads.GoogleAds.V18.Services;
+using Google.Ads.GoogleAds.V19.Common;
+using Google.Ads.GoogleAds.V19.Errors;
+using Google.Ads.GoogleAds.V19.Resources;
+using Google.Ads.GoogleAds.V19.Services;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
 using System.Threading;
-using static Google.Ads.GoogleAds.V18.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V18.Enums.AssetFieldTypeEnum.Types;
-using static Google.Ads.GoogleAds.V18.Enums.AssetGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V18.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V18.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.AssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.AssetGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.CampaignStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V18
+namespace Google.Ads.GoogleAds.Examples.V19
 {
     /// <summary>
     /// This example shows how to create a Performance Max campaign.
@@ -68,6 +69,14 @@ namespace Google.Ads.GoogleAds.Examples.V18
             /// </summary>
             [Option("audienceId", Required = false, HelpText = "The ID of an audience.")]
             public long? AudienceId { get; set; }
+
+            /// <summary>
+            /// Optional: A boolean value indicating if the campaign is enabled for brand
+            /// guidelines.
+            /// </summary>
+            [Option("brandGuidelinesEnabled", Required = false, HelpText =
+                "A boolean value indicating if the campaign is enabled for brand guidelines.")]
+            public bool BrandGuidelinesEnabled { get; set; }
         }
 
         /// <summary>
@@ -83,7 +92,8 @@ namespace Google.Ads.GoogleAds.Examples.V18
             codeExample.Run(
                 new GoogleAdsClient(),
                 options.CustomerId,
-                options.AudienceId
+                options.AudienceId,
+                options.BrandGuidelinesEnabled
             );
         }
 
@@ -101,16 +111,14 @@ namespace Google.Ads.GoogleAds.Examples.V18
 
         // There are also entities that will be created in the same request but do not need to be
         // fixed temporary IDs because they are referenced only once.
-        private class AssetGroupAssetTemporaryResourceNameGenerator
+        private class AssetTemporaryResourceNameGenerator
         {
             private long customerId;
-            private long assetGroupId;
             private long next;
 
-            public AssetGroupAssetTemporaryResourceNameGenerator(long customerId, long assetGroupId)
+            public AssetTemporaryResourceNameGenerator(long customerId, long assetGroupId)
             {
                 this.customerId = customerId;
-                this.assetGroupId = assetGroupId;
                 this.next = assetGroupId - 1;
             }
 
@@ -135,13 +143,15 @@ namespace Google.Ads.GoogleAds.Examples.V18
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The Google Ads customer ID.</param>
         /// <param name="audienceId">The optional audience ID.</param>
-        public void Run(GoogleAdsClient client, long customerId, long? audienceId)
+        /// <param name="brandGuidelinesEnabled">Whether or not to enable brand guidelines.</param>
+        public void Run(GoogleAdsClient client, long customerId, long? audienceId,
+            bool brandGuidelinesEnabled)
         {
             try
             {
                 // [START add_performance_max_campaign_1]
                 GoogleAdsServiceClient googleAdsServiceClient =
-                    client.GetService(Services.V18.GoogleAdsService);
+                    client.GetService(Services.V19.GoogleAdsService);
 
                 // Performance Max campaigns require that repeated assets such as headlines and
                 // descriptions be created before the campaign.
@@ -195,7 +205,8 @@ namespace Google.Ads.GoogleAds.Examples.V18
                 MutateOperation performanceMaxCampaignOperation =
                     CreatePerformanceMaxCampaignOperation(
                         tempResourceNameCampaign,
-                        tempResourceNameCampaignBudget
+                        tempResourceNameCampaignBudget,
+                        brandGuidelinesEnabled
                     );
 
                 List<MutateOperation> campaignCriterionOperations =
@@ -207,11 +218,12 @@ namespace Google.Ads.GoogleAds.Examples.V18
                         ResourceNames.AssetGroup(customerId, TEMPORARY_ID_ASSET_GROUP),
                         headlineAssetResourceNames,
                         descriptionAssetResourceNames,
-                        new AssetGroupAssetTemporaryResourceNameGenerator(
+                        new AssetTemporaryResourceNameGenerator(
                             customerId,
                             TEMPORARY_ID_ASSET_GROUP
                         ),
-                        client.Config
+                        client.Config,
+                        brandGuidelinesEnabled
                     );
 
                 List<MutateOperation> assetGroupSignalOperations =
@@ -275,7 +287,6 @@ namespace Google.Ads.GoogleAds.Examples.V18
 
                         // The budget period already defaults to DAILY.
                         AmountMicros = 50000000,
-                        DeliveryMethod = BudgetDeliveryMethod.Standard,
 
                         // A Performance Max campaign cannot use a shared campaign budget.
                         ExplicitlyShared = false,
@@ -296,10 +307,12 @@ namespace Google.Ads.GoogleAds.Examples.V18
         /// Creates a MutateOperation that creates a new Performance Max campaign.
         /// <param name="campaignResourceName">The campaign resource name.</param>
         /// <param name="campaignBudgetResourceName">The campaign budget resource name.</param>
+        /// <param name="brandGuidelinesEnabled">Whether or not to enable brand guidelines.</param>
         /// <returns>A MutateOperations that will create this new campaign.</returns>
         private MutateOperation CreatePerformanceMaxCampaignOperation(
             string campaignResourceName,
-            string campaignBudgetResourceName)
+            string campaignBudgetResourceName,
+            bool brandGuidelinesEnabled)
         {
             MutateOperation operation = new MutateOperation()
             {
@@ -350,6 +363,10 @@ namespace Google.Ads.GoogleAds.Examples.V18
 
                         // Set the budget using the given budget resource name.
                         CampaignBudget = campaignBudgetResourceName,
+
+                        // Set if the campaign is enabled for brand guidelines. For more information
+                        // on brand guidelines, see https://support.google.com/google-ads/answer/14934472.
+                        BrandGuidelinesEnabled = brandGuidelinesEnabled,
 
                         // Optional fields
                         StartDate = DateTime.Now.AddDays(1).ToString("yyyyMMdd"),
@@ -465,7 +482,7 @@ namespace Google.Ads.GoogleAds.Examples.V18
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V18.GoogleAdsService);
+                client.GetService(Services.V19.GoogleAdsService);
 
             MutateGoogleAdsRequest request = new MutateGoogleAdsRequest()
             {
@@ -520,14 +537,16 @@ namespace Google.Ads.GoogleAds.Examples.V18
         /// names.</param>
         /// <param name="resourceNameGenerator">A generator for unique temporary ID's.</param>
         /// <param name="config">The Google Ads config.</param>
+        /// <param name="brandGuidelinesEnabled">Whether or not to enable brand guidelines.</param>
         /// <returns>A list of MutateOperations that create the new asset group.</returns>
         private List<MutateOperation> CreateAssetGroupOperations(
             string campaignResourceName,
             string assetGroupResourceName,
             List<string> headlineAssetResourceNames,
             List<string> descriptionAssetResourceNames,
-            AssetGroupAssetTemporaryResourceNameGenerator resourceNameGenerator,
-            GoogleAdsConfig config)
+            AssetTemporaryResourceNameGenerator resourceNameGenerator,
+            GoogleAdsConfig config,
+            bool brandGuidelinesEnabled)
         {
             List<MutateOperation> operations = new List<MutateOperation>();
 
@@ -603,6 +622,20 @@ namespace Google.Ads.GoogleAds.Examples.V18
                 );
             }
 
+            // Create and link the brand assets.
+            operations.AddRange(
+                CreateAndLinkBrandAssets(
+                    assetGroupResourceName,
+                    campaignResourceName,
+                    resourceNameGenerator,
+                    "Interplanetary Cruises",
+                    "https://gaagl.page.link/bjYi",
+                    "Marketing Logo",
+                    config,
+                    brandGuidelinesEnabled
+                )
+            );
+
             // Create and link the long headline text asset.
             operations.AddRange(
                 CreateAndLinkTextAsset(
@@ -613,29 +646,7 @@ namespace Google.Ads.GoogleAds.Examples.V18
                 )
             );
 
-            // Create and link the business name text asset.
-            operations.AddRange(
-                CreateAndLinkTextAsset(
-                    assetGroupResourceName,
-                    resourceNameGenerator.Next(),
-                    "Interplanetary Cruises",
-                    AssetFieldType.BusinessName
-                )
-            );
-
             // Create and link the image assets.
-
-            // Create and link the Logo Asset.
-            operations.AddRange(
-                CreateAndLinkImageAsset(
-                    assetGroupResourceName,
-                    resourceNameGenerator.Next(),
-                    "https://gaagl.page.link/bjYi",
-                    AssetFieldType.Logo,
-                    "Marketing Logo",
-                    config
-                )
-            );
 
             // Create and link the Marketing Image Asset.
             operations.AddRange(
@@ -791,6 +802,149 @@ namespace Google.Ads.GoogleAds.Examples.V18
         }
 
         // [END add_performance_max_campaign_8]
+
+        /// <summary>
+        /// Creates a list of MutateOperations that create and link the brand assets.
+        /// </summary>
+        /// <param name="assetGroupResourceName">The resource name of the asset group to link assets
+        /// to.</param>
+        /// <param name="campaignResourceName">The resource name of the campaign to link assets
+        /// to.</param>
+        /// <param name="assetResourceNameGenerator">The resource name generator of the assets to be
+        /// created.</param>
+        /// <param name="businessName">The business name text to be put into an asset.</param>
+        /// <param name="logoUrl">The url of the logo to be retrieved and put into an asset.</param>
+        /// <param name="logoName">The asset name of the logo.</param>
+        /// <param name="config">The Google Ads Config.</param>
+        /// <param name="brandGuidelinesEnabled">Whether or not to enable brand guidelines.</param>
+        /// <returns>A list of MutateOperations that create a new linked image asset.</returns>
+        private List<MutateOperation> CreateAndLinkBrandAssets(
+            string assetGroupResourceName,
+            string campaignResourceName,
+            AssetTemporaryResourceNameGenerator assetResourceNameGenerator,
+            string businessName,
+            string logoUrl,
+            string logoName,
+            GoogleAdsConfig config,
+            bool brandGuidelinesEnabled)
+        {
+            List<MutateOperation> operations = new List<MutateOperation>();
+
+            string logoAssetResourceName = assetResourceNameGenerator.Next();
+            string businessNameAssetResourceName = assetResourceNameGenerator.Next();
+
+            // Create the Image Asset.
+            operations.Add(
+                new MutateOperation()
+                {
+                    AssetOperation = new AssetOperation()
+                    {
+                        Create = new Asset()
+                        {
+                            ResourceName = logoAssetResourceName,
+                            ImageAsset = new ImageAsset()
+                            {
+                                Data =
+                                    ByteString.CopyFrom(
+                                        MediaUtilities.GetAssetDataFromUrl(logoUrl, config)
+                                    )
+                            },
+                            // Provide a unique friendly name to identify your asset.
+                            // When there is an existing image asset with the same content but a
+                            // different name, the new name will be dropped silently.
+                            Name = logoName
+                        }
+                    }
+                }
+            );
+
+            // Create the business name asset.
+            operations.Add(
+                new MutateOperation()
+                {
+                    AssetOperation = new AssetOperation()
+                    {
+                        Create = new Asset()
+                        {
+                            ResourceName = businessNameAssetResourceName,
+                            TextAsset = new TextAsset()
+                            {
+                                Text = businessName,
+                            }
+                        }
+                    }
+                }
+            );
+
+            if (brandGuidelinesEnabled)
+            {
+                // Create CampaignAssets to link the Assets to the Campaign.
+                operations.Add(
+                    new MutateOperation()
+                    {
+                        CampaignAssetOperation = new CampaignAssetOperation()
+                        {
+                            Create = new CampaignAsset()
+                            {
+                                FieldType = AssetFieldType.Logo,
+                                Campaign = campaignResourceName,
+                                Asset = logoAssetResourceName
+                            }
+                        }
+                    }
+                );
+
+                operations.Add(
+                    new MutateOperation()
+                    {
+                        CampaignAssetOperation = new CampaignAssetOperation()
+                        {
+                            Create = new CampaignAsset()
+                            {
+                                FieldType = AssetFieldType.BusinessName,
+                                Campaign = campaignResourceName,
+                                Asset = businessNameAssetResourceName
+                            }
+                        }
+                    }
+                );
+            } else {
+                // Create AssetGroupAssets to link the Assets to the AssetGroup.
+                operations.Add(
+                    new MutateOperation()
+                    {
+                        AssetGroupAssetOperation = new AssetGroupAssetOperation()
+                        {
+                            Create = new AssetGroupAsset()
+                            {
+                                FieldType = AssetFieldType.Logo,
+                                AssetGroup = assetGroupResourceName,
+                                Asset = logoAssetResourceName
+                            }
+                        }
+                    }
+                );
+
+                operations.Add(
+                    new MutateOperation()
+                    {
+                        AssetGroupAssetOperation = new AssetGroupAssetOperation()
+                        {
+                            Create = new AssetGroupAsset()
+                            {
+                                FieldType = AssetFieldType.BusinessName,
+                                AssetGroup = assetGroupResourceName,
+                                Asset = businessNameAssetResourceName
+                            }
+                        }
+                    }
+                );
+
+            }
+
+
+            return operations;
+        }
 
         /// <summary>
         /// Creates a list of MutateOperations that may create AssetGroupSignals

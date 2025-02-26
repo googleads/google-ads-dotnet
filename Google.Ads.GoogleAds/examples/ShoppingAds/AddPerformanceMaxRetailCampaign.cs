@@ -17,27 +17,27 @@ using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V18.Common;
-using Google.Ads.GoogleAds.V18.Errors;
-using Google.Ads.GoogleAds.V18.Resources;
-using Google.Ads.GoogleAds.V18.Services;
+using Google.Ads.GoogleAds.V19.Common;
+using Google.Ads.GoogleAds.V19.Errors;
+using Google.Ads.GoogleAds.V19.Resources;
+using Google.Ads.GoogleAds.V19.Services;
 using Google.Api.Gax;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
 using System.Threading;
-using static Google.Ads.GoogleAds.V18.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V18.Enums.AssetFieldTypeEnum.Types;
-using static Google.Ads.GoogleAds.V18.Enums.AssetGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V18.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V18.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V18.Enums.ConversionActionCategoryEnum.Types;
-using static Google.Ads.GoogleAds.V18.Enums.ConversionOriginEnum.Types;
-using static Google.Ads.GoogleAds.V18.Enums.ListingGroupFilterListingSourceEnum.Types;
-using static Google.Ads.GoogleAds.V18.Enums.ListingGroupFilterTypeEnum.Types;
-using static Google.Ads.GoogleAds.V18.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V19.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.AssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.AssetGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.ConversionActionCategoryEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.ConversionOriginEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.ListingGroupFilterListingSourceEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.ListingGroupFilterTypeEnum.Types;
+using static Google.Ads.GoogleAds.V19.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V18
+namespace Google.Ads.GoogleAds.Examples.V19
 {
     /// <summary>
     /// This example shows how to create a Performance Max retail campaign.
@@ -91,6 +91,14 @@ namespace Google.Ads.GoogleAds.Examples.V18
                 "The final url for the generated ads." +
                 "Must have the same domain as the Merchant Center account.")]
             public string FinalUrl { get; set; }
+
+            /// <summary>
+            /// Optional: A boolean value indicating if the campaign is enabled for brand
+            /// guidelines.
+            /// </summary>
+            [Option("brandGuidelinesEnabled", Required = false, HelpText =
+                "A boolean value indicating if the campaign is enabled for brand guidelines.")]
+            public bool BrandGuidelinesEnabled { get; set; }
         }
 
         /// <summary>
@@ -107,7 +115,8 @@ namespace Google.Ads.GoogleAds.Examples.V18
                 new GoogleAdsClient(),
                 options.CustomerId,
                 options.MerchantCenterAccountId,
-                options.FinalUrl
+                options.FinalUrl,
+                options.BrandGuidelinesEnabled
             );
         }
 
@@ -125,12 +134,12 @@ namespace Google.Ads.GoogleAds.Examples.V18
 
         // There are also entities that will be created in the same request but do not need to be
         // fixed temporary IDs because they are referenced only once.
-        private class AssetGroupAssetTemporaryResourceNameGenerator
+        private class AssetTemporaryResourceNameGenerator
         {
             private long customerId;
             private long next;
 
-            public AssetGroupAssetTemporaryResourceNameGenerator(long customerId, long assetGroupId)
+            public AssetTemporaryResourceNameGenerator(long customerId, long assetGroupId)
             {
                 this.customerId = customerId;
                 this.next = assetGroupId - 1;
@@ -157,17 +166,19 @@ namespace Google.Ads.GoogleAds.Examples.V18
         /// <param name="customerId">The Google Ads customer ID.</param>
         /// <param name="merchantCenterAccountId">The Merchant Center account ID.</param>
         /// <param name="finalUrl">The final URL.</param>
+        /// <param name="brandGuidelinesEnabled">Whether or not to enable brand guidelines.</param>
         public void Run(
                 GoogleAdsClient client,
                 long customerId,
                 long merchantCenterAccountId,
-                string finalUrl)
+                string finalUrl,
+                bool brandGuidelinesEnabled)
         {
             try
             {
                 // [START add_performance_max_retail_campaign_1]
                 GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V18.GoogleAdsService);
+                client.GetService(Services.V19.GoogleAdsService);
 
                 // This campaign will override the customer conversion goals.
                 // Retrieve the current list of customer conversion goals.
@@ -231,7 +242,8 @@ namespace Google.Ads.GoogleAds.Examples.V18
                     CreatePerformanceMaxCampaignOperation(
                             tempResourceNameCampaign,
                             tempResourceNameCampaignBudget,
-                            merchantCenterAccountId
+                            merchantCenterAccountId,
+                            brandGuidelinesEnabled
                         );
 
                 List<MutateOperation> campaignCriterionOperations =
@@ -244,11 +256,12 @@ namespace Google.Ads.GoogleAds.Examples.V18
                         finalUrl,
                         headlineAssetResourceNames,
                         descriptionAssetResourceNames,
-                        new AssetGroupAssetTemporaryResourceNameGenerator(
+                        new AssetTemporaryResourceNameGenerator(
                             customerId,
                             TEMPORARY_ID_ASSET_GROUP
                         ),
-                        client.Config
+                        client.Config,
+                        brandGuidelinesEnabled
                     );
 
                 List<MutateOperation> conversionGoalOperations =
@@ -342,11 +355,13 @@ namespace Google.Ads.GoogleAds.Examples.V18
         /// <param name="campaignResourceName">The campaign resource name.</param>
         /// <param name="campaignBudgetResourceName">The campaign budget resource name.</param>
         /// <param name="merchantCenterAccountId">The Merchant Center account ID.</param>
+        /// <param name="brandGuidelinesEnabled">Whether or not to enable brand guidelines.</param>
         /// <returns>A MutateOperations that will create this new campaign.</returns>
         private MutateOperation CreatePerformanceMaxCampaignOperation(
             string campaignResourceName,
             string campaignBudgetResourceName,
-            long merchantCenterAccountId)
+            long merchantCenterAccountId,
+            bool brandGuidelinesEnabled)
         {
             MutateOperation operation = new MutateOperation()
             {
@@ -411,6 +426,10 @@ namespace Google.Ads.GoogleAds.Examples.V18
 
                         // Set the budget using the given budget resource name.
                         CampaignBudget = campaignBudgetResourceName,
+
+                        // Set if the campaign is enabled for brand guidelines. For more information
+                        // on brand guidelines, see https://support.google.com/google-ads/answer/14934472.
+                        BrandGuidelinesEnabled = brandGuidelinesEnabled,
 
                         // Optional fields
                         StartDate = DateTime.Now.AddDays(1).ToString("yyyyMMdd"),
@@ -528,7 +547,7 @@ namespace Google.Ads.GoogleAds.Examples.V18
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V18.GoogleAdsService);
+                client.GetService(Services.V19.GoogleAdsService);
 
             MutateGoogleAdsRequest request = new MutateGoogleAdsRequest()
             {
@@ -584,6 +603,7 @@ namespace Google.Ads.GoogleAds.Examples.V18
         /// names.</param>
         /// <param name="resourceNameGenerator">A generator for unique temporary ID's.</param>
         /// <param name="config">The Google Ads config.</param>
+        /// <param name="brandGuidelinesEnabled">Whether or not to enable brand guidelines.</param>
         /// <returns>A list of MutateOperations that create the new asset group.</returns>
         private List<MutateOperation> CreateAssetGroupOperations(
             string campaignResourceName,
@@ -591,8 +611,9 @@ namespace Google.Ads.GoogleAds.Examples.V18
             string finalUrl,
             List<string> headlineAssetResourceNames,
             List<string> descriptionAssetResourceNames,
-            AssetGroupAssetTemporaryResourceNameGenerator resourceNameGenerator,
-            GoogleAdsConfig config)
+            AssetTemporaryResourceNameGenerator resourceNameGenerator,
+            GoogleAdsConfig config,
+            bool brandGuidelinesEnabled)
         {
             List<MutateOperation> operations = new List<MutateOperation>();
 
@@ -735,7 +756,8 @@ namespace Google.Ads.GoogleAds.Examples.V18
                 CreateLinkAssetOperation(
                     AssetFieldType.BusinessName,
                     assetGroupResourceName,
-                    businessNameResourceName
+                    businessNameResourceName,
+                    brandGuidelinesEnabled
                 )
             );
 
@@ -743,7 +765,8 @@ namespace Google.Ads.GoogleAds.Examples.V18
                 CreateLinkAssetOperation(
                     AssetFieldType.Logo,
                     assetGroupResourceName,
-                    logoResourceName
+                    logoResourceName,
+                    brandGuidelinesEnabled
                 )
             );
 
@@ -838,26 +861,46 @@ namespace Google.Ads.GoogleAds.Examples.V18
         /// Creates a MutateOperation that links an asset to an asset group.
         /// </summary>
         /// <param name="fieldType">The field type of the asset to be linked.</param>
-        /// <param name="assetGroupResourceName">The resource name of the asset group
-        /// to link the asset to.</param>
+        /// <param name="linkedEntityResourceName">The resource name of the entity (asset group or
+        /// campaign) to link the asset to.</param>
         /// <param name="assetResourceName">The resource name of the text asset to be
         /// linked.</param>
+        /// <param name="brandGuidelinesEnabled">Whether or not to enable brand guidelines.</param>
         /// <returns>A MutateOperation that links an asset to an asset group.</returns>
         private MutateOperation CreateLinkAssetOperation(
             AssetFieldType fieldType,
-            string assetGroupResourceName,
-            string assetResourceName) => new MutateOperation()
+            string linkedEntityResourceName,
+            string assetResourceName,
+            bool brandGuidelinesEnabled = false)
+        { if (brandGuidelinesEnabled)
             {
-                AssetGroupAssetOperation = new AssetGroupAssetOperation()
+                return new MutateOperation()
                 {
-                    Create = new AssetGroupAsset()
+                    CampaignAssetOperation = new CampaignAssetOperation()
                     {
-                        FieldType = fieldType,
-                        AssetGroup = assetGroupResourceName,
-                        Asset = assetResourceName
+                        Create = new CampaignAsset()
+                        {
+                            FieldType = fieldType,
+                            Campaign = linkedEntityResourceName,
+                            Asset = assetResourceName
+                        }
                     }
-                }
-            };
+                };
+            } else
+            {   return new MutateOperation()
+                {
+                    AssetGroupAssetOperation = new AssetGroupAssetOperation()
+                    {
+                        Create = new AssetGroupAsset()
+                        {
+                            FieldType = fieldType,
+                            AssetGroup = linkedEntityResourceName,
+                            Asset = assetResourceName
+                        }
+                    }
+                };
+            }
+        }
 
         // [END add_performance_max_retail_campaign_9]
 
@@ -874,7 +917,7 @@ namespace Google.Ads.GoogleAds.Examples.V18
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V18.GoogleAdsService);
+                client.GetService(Services.V19.GoogleAdsService);
 
             List<CustomerConversionGoal> conversionGoals = new List<CustomerConversionGoal>();
 

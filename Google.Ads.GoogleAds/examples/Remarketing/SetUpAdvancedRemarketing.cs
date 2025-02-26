@@ -15,20 +15,20 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V18.Common;
-using Google.Ads.GoogleAds.V18.Errors;
-using Google.Ads.GoogleAds.V18.Resources;
-using Google.Ads.GoogleAds.V18.Services;
+using Google.Ads.GoogleAds.V19.Common;
+using Google.Ads.GoogleAds.V19.Errors;
+using Google.Ads.GoogleAds.V19.Resources;
+using Google.Ads.GoogleAds.V19.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V18.Enums.UserListDateRuleItemOperatorEnum.Types;
-using static Google.Ads.GoogleAds.V18.Enums.UserListMembershipStatusEnum.Types;
-using static Google.Ads.GoogleAds.V18.Enums.UserListNumberRuleItemOperatorEnum.Types;
-using static Google.Ads.GoogleAds.V18.Enums.UserListPrepopulationStatusEnum.Types;
-using static Google.Ads.GoogleAds.V18.Enums.UserListStringRuleItemOperatorEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.UserListDateRuleItemOperatorEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.UserListMembershipStatusEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.UserListNumberRuleItemOperatorEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.UserListPrepopulationStatusEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.UserListStringRuleItemOperatorEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V18
+namespace Google.Ads.GoogleAds.Examples.V19
 {
     /// <summary>
     /// Creates a rule-based user list defined by an expression rule for users who have either
@@ -81,7 +81,7 @@ namespace Google.Ads.GoogleAds.Examples.V18
         {
             // Get the user list service client.
             UserListServiceClient userListServiceClient =
-                client.GetService(Services.V18.UserListService);
+                client.GetService(Services.V19.UserListService);
 
             try
             {

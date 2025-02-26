@@ -16,26 +16,26 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V18.Common;
-using Google.Ads.GoogleAds.V18.Resources;
-using Google.Ads.GoogleAds.V18.Services;
+using Google.Ads.GoogleAds.V19.Common;
+using Google.Ads.GoogleAds.V19.Resources;
+using Google.Ads.GoogleAds.V19.Services;
 using System.Collections.Generic;
 using System.Linq;
 using System;
-using static Google.Ads.GoogleAds.V18.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V18.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V18.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V18.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V18.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V18.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V18.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V18.Enums.CustomizerAttributeTypeEnum.Types;
-using static Google.Ads.GoogleAds.V18.Enums.KeywordMatchTypeEnum.Types;
-using static Google.Ads.GoogleAds.V18.Services.SuggestGeoTargetConstantsRequest.Types;
+using static Google.Ads.GoogleAds.V19.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.CustomizerAttributeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.KeywordMatchTypeEnum.Types;
+using static Google.Ads.GoogleAds.V19.Services.SuggestGeoTargetConstantsRequest.Types;
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Extensions.Config;
 
-namespace Google.Ads.GoogleAds.Examples.V18
+namespace Google.Ads.GoogleAds.Examples.V19
 {
     /// <summary>
     /// Adds a customizer attribute, links the customizer attribute to a customer, and then adds
@@ -164,7 +164,7 @@ namespace Google.Ads.GoogleAds.Examples.V18
             };
 
             CustomizerAttributeServiceClient serviceClient =
-                client.GetService(Services.V18.CustomizerAttributeService);
+                client.GetService(Services.V19.CustomizerAttributeService);
 
             // Issues a mutate request to add the customizer attribute and prints its information.
             MutateCustomizerAttributesResponse response =
@@ -213,7 +213,7 @@ namespace Google.Ads.GoogleAds.Examples.V18
             };
 
             CustomerCustomizerServiceClient serviceClient =
-                client.GetService(Services.V18.CustomerCustomizerService);
+                client.GetService(Services.V19.CustomerCustomizerService);
 
             // Issues a mutate request to add the customer customizer and prints its information.
             MutateCustomerCustomizersResponse response =
@@ -238,7 +238,7 @@ namespace Google.Ads.GoogleAds.Examples.V18
         {
             // Get the CampaignBudgetService.
             CampaignBudgetServiceClient campaignBudgetService =
-                client.GetService(Services.V18.CampaignBudgetService);
+                client.GetService(Services.V19.CampaignBudgetService);
 
             // Create the budget.
             CampaignBudget campaignBudget = new CampaignBudget()
@@ -276,7 +276,7 @@ namespace Google.Ads.GoogleAds.Examples.V18
             string budgetResourceName)
         {
             // Get the CampaignService.
-            CampaignServiceClient campaignService = client.GetService(Services.V18.CampaignService);
+            CampaignServiceClient campaignService = client.GetService(Services.V19.CampaignService);
 
             // Create the campaign.
             Campaign campaign = new Campaign()
@@ -327,7 +327,7 @@ namespace Google.Ads.GoogleAds.Examples.V18
             string campaignResourceName)
         {
             // Get the AdGroupService.
-            AdGroupServiceClient adGroupService = client.GetService(Services.V18.AdGroupService);
+            AdGroupServiceClient adGroupService = client.GetService(Services.V19.AdGroupService);
 
             // Create the ad group.
             AdGroup adGroup = new AdGroup()
@@ -424,7 +424,7 @@ namespace Google.Ads.GoogleAds.Examples.V18
             };
 
             // Issues a mutate request to add the ad group ad and prints its information.
-            AdGroupAdServiceClient serviceClient = client.GetService(Services.V18.AdGroupAdService);
+            AdGroupAdServiceClient serviceClient = client.GetService(Services.V19.AdGroupAdService);
 
             MutateAdGroupAdsResponse response = serviceClient.MutateAdGroupAds(
                 customerId.ToString(),
@@ -452,7 +452,7 @@ namespace Google.Ads.GoogleAds.Examples.V18
         {
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V18.AdGroupCriterionService);
+                client.GetService(Services.V19.AdGroupCriterionService);
 
             List<AdGroupCriterionOperation> operations = new List<AdGroupCriterionOperation>();
 
@@ -537,7 +537,7 @@ namespace Google.Ads.GoogleAds.Examples.V18
             string campaignResourceName)
         {
             GeoTargetConstantServiceClient geoTargetConstantService =
-                client.GetService(Services.V18.GeoTargetConstantService);
+                client.GetService(Services.V19.GeoTargetConstantService);
 
             SuggestGeoTargetConstantsRequest suggestGeoTargetConstantsRequest =
                 new SuggestGeoTargetConstantsRequest()
@@ -580,7 +580,7 @@ namespace Google.Ads.GoogleAds.Examples.V18
             }
 
             CampaignCriterionServiceClient campaignCriterionService =
-                client.GetService(Services.V18.CampaignCriterionService);
+                client.GetService(Services.V19.CampaignCriterionService);
 
             MutateCampaignCriteriaResponse mutateCampaignCriteriaResponse =
                 campaignCriterionService.MutateCampaignCriteria(customerId.ToString(), operations);

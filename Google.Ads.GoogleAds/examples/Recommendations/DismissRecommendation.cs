@@ -15,13 +15,13 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V18.Errors;
-using Google.Ads.GoogleAds.V18.Services;
+using Google.Ads.GoogleAds.V19.Errors;
+using Google.Ads.GoogleAds.V19.Services;
 using System;
-using static Google.Ads.GoogleAds.V18.Services.DismissRecommendationRequest.Types;
-using static Google.Ads.GoogleAds.V18.Services.DismissRecommendationResponse.Types;
+using static Google.Ads.GoogleAds.V19.Services.DismissRecommendationRequest.Types;
+using static Google.Ads.GoogleAds.V19.Services.DismissRecommendationResponse.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V18
+namespace Google.Ads.GoogleAds.Examples.V19
 {
     /// <summary>
     /// This code example dismisses a given recommendation. To retrieve recommendations for text
@@ -79,7 +79,7 @@ namespace Google.Ads.GoogleAds.Examples.V18
         {
             // Get the RecommendationServiceClient.
             RecommendationServiceClient service = client.GetService(
-                Services.V18.RecommendationService);
+                Services.V19.RecommendationService);
 
             DismissRecommendationOperation operation = new DismissRecommendationOperation()
             {

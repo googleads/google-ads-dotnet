@@ -16,17 +16,17 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V18.Errors;
-using Google.Ads.GoogleAds.V18.Resources;
-using Google.Ads.GoogleAds.V18.Services;
+using Google.Ads.GoogleAds.V19.Errors;
+using Google.Ads.GoogleAds.V19.Resources;
+using Google.Ads.GoogleAds.V19.Services;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V18.Enums.ChangeEventResourceTypeEnum.Types;
-using static Google.Ads.GoogleAds.V18.Enums.ResourceChangeOperationEnum.Types;
-using static Google.Ads.GoogleAds.V18.Resources.ChangeEvent.Types;
+using static Google.Ads.GoogleAds.V19.Enums.ChangeEventResourceTypeEnum.Types;
+using static Google.Ads.GoogleAds.V19.Enums.ResourceChangeOperationEnum.Types;
+using static Google.Ads.GoogleAds.V19.Resources.ChangeEvent.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V18
+namespace Google.Ads.GoogleAds.Examples.V19
 {
     /// <summary>
     /// This code example gets the changes in an account during the last 25 days.
@@ -76,7 +76,7 @@ namespace Google.Ads.GoogleAds.Examples.V18
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V18.GoogleAdsService);
+                Services.V19.GoogleAdsService);
 
             // Construct a query to find details for recent changes in your account.
             // The LIMIT clause is required for the change_event resource.
@@ -156,11 +156,6 @@ namespace Google.Ads.GoogleAds.Examples.V18
                                     newResourceEntity = newResource.AdGroupCriterion;
                                     break;
 
-                                case ChangeEventResourceType.AdGroupFeed:
-                                    oldResourceEntity = oldResource.AdGroupFeed;
-                                    newResourceEntity = newResource.AdGroupFeed;
-                                    break;
-
                                 case ChangeEventResourceType.Asset:
                                     oldResourceEntity = oldResource.Asset;
                                     newResourceEntity = newResource.Asset;
@@ -201,24 +196,9 @@ namespace Google.Ads.GoogleAds.Examples.V18
                                     newResourceEntity = newResource.CampaignCriterion;
                                     break;
 
-                                case ChangeEventResourceType.CampaignFeed:
-                                    oldResourceEntity = oldResource.CampaignFeed;
-                                    newResourceEntity = newResource.CampaignFeed;
-                                    break;
-
                                 case ChangeEventResourceType.CustomerAsset:
                                     oldResourceEntity = oldResource.CustomerAsset;
                                     newResourceEntity = newResource.CustomerAsset;
-                                    break;
-
-                                case ChangeEventResourceType.Feed:
-                                    oldResourceEntity = oldResource.Feed;
-                                    newResourceEntity = newResource.Feed;
-                                    break;
-
-                                case ChangeEventResourceType.FeedItem:
-                                    oldResourceEntity = oldResource.FeedItem;
-                                    newResourceEntity = newResource.FeedItem;
                                     break;
 
                                 default:
