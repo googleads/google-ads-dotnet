@@ -1,3 +1,13 @@
+22.1.0
+======
+- Added support for version 19.0 of the Google Ads API.
+- Updated the `AddPerformanceMaxCampaign` and `AddPerformanceMaxRetailCampaign` examples to support
+  using brand guidelines.
+- Removed all feed-related examples.
+- Replaced usage of the `GrpcPagedEnumerable` and `GrpcPagedAsyncEnumerable` classes with the
+  `AdsPagedEnumerable` and `AdsPagedAsyncEnumerable` classes to prevent errors when using the
+  `ReadPage` method: fixes [#589](https://github.com/googleads/google-ads-dotnet/issues/589).
+
 22.0.0
 ======
 - Removed support for version 16 of the Google Ads API.
