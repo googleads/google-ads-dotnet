@@ -27,39 +27,65 @@ namespace Google.Ads.GoogleAds.V19.Resources {
             "CjRnb29nbGUvYWRzL2dvb2dsZWFkcy92MTkvcmVzb3VyY2VzL2Fzc2V0X2dy",
             "b3VwLnByb3RvEiJnb29nbGUuYWRzLmdvb2dsZWFkcy52MTkucmVzb3VyY2Vz",
             "GjBnb29nbGUvYWRzL2dvb2dsZWFkcy92MTkvZW51bXMvYWRfc3RyZW5ndGgu",
-            "cHJvdG8aP2dvb2dsZS9hZHMvZ29vZ2xlYWRzL3YxOS9lbnVtcy9hc3NldF9n",
-            "cm91cF9wcmltYXJ5X3N0YXR1cy5wcm90bxpGZ29vZ2xlL2Fkcy9nb29nbGVh",
-            "ZHMvdjE5L2VudW1zL2Fzc2V0X2dyb3VwX3ByaW1hcnlfc3RhdHVzX3JlYXNv",
-            "bi5wcm90bxo3Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjE5L2VudW1zL2Fzc2V0",
-            "X2dyb3VwX3N0YXR1cy5wcm90bxofZ29vZ2xlL2FwaS9maWVsZF9iZWhhdmlv",
-            "ci5wcm90bxoZZ29vZ2xlL2FwaS9yZXNvdXJjZS5wcm90byKDBgoKQXNzZXRH",
-            "cm91cBJCCg1yZXNvdXJjZV9uYW1lGAEgASgJQivgQQX6QSUKI2dvb2dsZWFk",
-            "cy5nb29nbGVhcGlzLmNvbS9Bc3NldEdyb3VwEg8KAmlkGAkgASgDQgPgQQMS",
-            "OwoIY2FtcGFpZ24YAiABKAlCKeBBBfpBIwohZ29vZ2xlYWRzLmdvb2dsZWFw",
-            "aXMuY29tL0NhbXBhaWduEhEKBG5hbWUYAyABKAlCA+BBAhISCgpmaW5hbF91",
-            "cmxzGAQgAygJEhkKEWZpbmFsX21vYmlsZV91cmxzGAUgAygJElUKBnN0YXR1",
-            "cxgGIAEoDjJFLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxOS5lbnVtcy5Bc3Nl",
-            "dEdyb3VwU3RhdHVzRW51bS5Bc3NldEdyb3VwU3RhdHVzEnAKDnByaW1hcnlf",
-            "c3RhdHVzGAsgASgOMlMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LmVudW1z",
-            "LkFzc2V0R3JvdXBQcmltYXJ5U3RhdHVzRW51bS5Bc3NldEdyb3VwUHJpbWFy",
-            "eVN0YXR1c0ID4EEDEoQBChZwcmltYXJ5X3N0YXR1c19yZWFzb25zGAwgAygO",
-            "Ml8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LmVudW1zLkFzc2V0R3JvdXBQ",
-            "cmltYXJ5U3RhdHVzUmVhc29uRW51bS5Bc3NldEdyb3VwUHJpbWFyeVN0YXR1",
-            "c1JlYXNvbkID4EEDEg0KBXBhdGgxGAcgASgJEg0KBXBhdGgyGAggASgJElMK",
-            "C2FkX3N0cmVuZ3RoGAogASgOMjkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5",
-            "LmVudW1zLkFkU3RyZW5ndGhFbnVtLkFkU3RyZW5ndGhCA+BBAzpe6kFbCiNn",
-            "b29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vQXNzZXRHcm91cBI0Y3VzdG9tZXJz",
-            "L3tjdXN0b21lcl9pZH0vYXNzZXRHcm91cHMve2Fzc2V0X2dyb3VwX2lkfUKB",
-            "AgomY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxOS5yZXNvdXJjZXNCD0Fz",
-            "c2V0R3JvdXBQcm90b1ABWktnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9n",
-            "b29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjE5L3Jlc291cmNlcztyZXNvdXJj",
-            "ZXOiAgNHQUGqAiJHb29nbGUuQWRzLkdvb2dsZUFkcy5WMTkuUmVzb3VyY2Vz",
-            "ygIiR29vZ2xlXEFkc1xHb29nbGVBZHNcVjE5XFJlc291cmNlc+oCJkdvb2ds",
-            "ZTo6QWRzOjpHb29nbGVBZHM6OlYxOTo6UmVzb3VyY2VzYgZwcm90bzM="));
+            "cHJvdG8aQWdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YxOS9lbnVtcy9hZF9zdHJl",
+            "bmd0aF9hY3Rpb25faXRlbV90eXBlLnByb3RvGlJnb29nbGUvYWRzL2dvb2ds",
+            "ZWFkcy92MTkvZW51bXMvYXNzZXRfY292ZXJhZ2VfdmlkZW9fYXNwZWN0X3Jh",
+            "dGlvX3JlcXVpcmVtZW50LnByb3RvGjVnb29nbGUvYWRzL2dvb2dsZWFkcy92",
+            "MTkvZW51bXMvYXNzZXRfZmllbGRfdHlwZS5wcm90bxo/Z29vZ2xlL2Fkcy9n",
+            "b29nbGVhZHMvdjE5L2VudW1zL2Fzc2V0X2dyb3VwX3ByaW1hcnlfc3RhdHVz",
+            "LnByb3RvGkZnb29nbGUvYWRzL2dvb2dsZWFkcy92MTkvZW51bXMvYXNzZXRf",
+            "Z3JvdXBfcHJpbWFyeV9zdGF0dXNfcmVhc29uLnByb3RvGjdnb29nbGUvYWRz",
+            "L2dvb2dsZWFkcy92MTkvZW51bXMvYXNzZXRfZ3JvdXBfc3RhdHVzLnByb3Rv",
+            "Gh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9yLnByb3RvGhlnb29nbGUvYXBp",
+            "L3Jlc291cmNlLnByb3RvIuwGCgpBc3NldEdyb3VwEkIKDXJlc291cmNlX25h",
+            "bWUYASABKAlCK+BBBfpBJQojZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0Fz",
+            "c2V0R3JvdXASDwoCaWQYCSABKANCA+BBAxI7CghjYW1wYWlnbhgCIAEoCUIp",
+            "4EEF+kEjCiFnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vQ2FtcGFpZ24SEQoE",
+            "bmFtZRgDIAEoCUID4EECEhIKCmZpbmFsX3VybHMYBCADKAkSGQoRZmluYWxf",
+            "bW9iaWxlX3VybHMYBSADKAkSVQoGc3RhdHVzGAYgASgOMkUuZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjE5LmVudW1zLkFzc2V0R3JvdXBTdGF0dXNFbnVtLkFz",
+            "c2V0R3JvdXBTdGF0dXMScAoOcHJpbWFyeV9zdGF0dXMYCyABKA4yUy5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MTkuZW51bXMuQXNzZXRHcm91cFByaW1hcnlT",
+            "dGF0dXNFbnVtLkFzc2V0R3JvdXBQcmltYXJ5U3RhdHVzQgPgQQMShAEKFnBy",
+            "aW1hcnlfc3RhdHVzX3JlYXNvbnMYDCADKA4yXy5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MTkuZW51bXMuQXNzZXRHcm91cFByaW1hcnlTdGF0dXNSZWFzb25F",
+            "bnVtLkFzc2V0R3JvdXBQcmltYXJ5U3RhdHVzUmVhc29uQgPgQQMSDQoFcGF0",
+            "aDEYByABKAkSDQoFcGF0aDIYCCABKAkSUwoLYWRfc3RyZW5ndGgYCiABKA4y",
+            "OS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTkuZW51bXMuQWRTdHJlbmd0aEVu",
+            "dW0uQWRTdHJlbmd0aEID4EEDEk4KDmFzc2V0X2NvdmVyYWdlGA0gASgLMjEu",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LnJlc291cmNlcy5Bc3NldENvdmVy",
+            "YWdlQgPgQQM6d+pBdAojZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0Fzc2V0",
+            "R3JvdXASNGN1c3RvbWVycy97Y3VzdG9tZXJfaWR9L2Fzc2V0R3JvdXBzL3th",
+            "c3NldF9ncm91cF9pZH0qC2Fzc2V0R3JvdXBzMgphc3NldEdyb3VwInAKDUFz",
+            "c2V0Q292ZXJhZ2USXwoYYWRfc3RyZW5ndGhfYWN0aW9uX2l0ZW1zGAEgAygL",
+            "MjguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LnJlc291cmNlcy5BZFN0cmVu",
+            "Z3RoQWN0aW9uSXRlbUID4EEDIvwEChRBZFN0cmVuZ3RoQWN0aW9uSXRlbRJ0",
+            "ChBhY3Rpb25faXRlbV90eXBlGAEgASgOMlUuZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjE5LmVudW1zLkFkU3RyZW5ndGhBY3Rpb25JdGVtVHlwZUVudW0uQWRT",
+            "dHJlbmd0aEFjdGlvbkl0ZW1UeXBlQgPgQQMSagoRYWRkX2Fzc2V0X2RldGFp",
+            "bHMYAiABKAsySC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTkucmVzb3VyY2Vz",
+            "LkFkU3RyZW5ndGhBY3Rpb25JdGVtLkFkZEFzc2V0RGV0YWlsc0ID4EEDSAAa",
+            "7wIKD0FkZEFzc2V0RGV0YWlscxJgChBhc3NldF9maWVsZF90eXBlGAEgASgO",
+            "MkEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LmVudW1zLkFzc2V0RmllbGRU",
+            "eXBlRW51bS5Bc3NldEZpZWxkVHlwZUID4EEDEh0KC2Fzc2V0X2NvdW50GAIg",
+            "ASgFQgPgQQNIAIgBARKnAQoedmlkZW9fYXNwZWN0X3JhdGlvX3JlcXVpcmVt",
+            "ZW50GAMgASgOMnUuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LmVudW1zLkFz",
+            "c2V0Q292ZXJhZ2VWaWRlb0FzcGVjdFJhdGlvUmVxdWlyZW1lbnRFbnVtLkFz",
+            "c2V0Q292ZXJhZ2VWaWRlb0FzcGVjdFJhdGlvUmVxdWlyZW1lbnRCA+BBA0gB",
+            "iAEBQg4KDF9hc3NldF9jb3VudEIhCh9fdmlkZW9fYXNwZWN0X3JhdGlvX3Jl",
+            "cXVpcmVtZW50QhAKDmFjdGlvbl9kZXRhaWxzQoECCiZjb20uZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjE5LnJlc291cmNlc0IPQXNzZXRHcm91cFByb3RvUAFa",
+            "S2dvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dv",
+            "b2dsZWFkcy92MTkvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIkdvb2ds",
+            "ZS5BZHMuR29vZ2xlQWRzLlYxOS5SZXNvdXJjZXPKAiJHb29nbGVcQWRzXEdv",
+            "b2dsZUFkc1xWMTlcUmVzb3VyY2Vz6gImR29vZ2xlOjpBZHM6Okdvb2dsZUFk",
+            "czo6VjE5OjpSZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V19.Enums.AdStrengthReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.AssetGroupPrimaryStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.AssetGroupPrimaryStatusReasonReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.AssetGroupStatusReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V19.Enums.AdStrengthReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.AdStrengthActionItemTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.AssetCoverageVideoAspectRatioRequirementReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.AssetFieldTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.AssetGroupPrimaryStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.AssetGroupPrimaryStatusReasonReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.AssetGroupStatusReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Resources.AssetGroup), global::Google.Ads.GoogleAds.V19.Resources.AssetGroup.Parser, new[]{ "ResourceName", "Id", "Campaign", "Name", "FinalUrls", "FinalMobileUrls", "Status", "PrimaryStatus", "PrimaryStatusReasons", "Path1", "Path2", "AdStrength" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Resources.AssetGroup), global::Google.Ads.GoogleAds.V19.Resources.AssetGroup.Parser, new[]{ "ResourceName", "Id", "Campaign", "Name", "FinalUrls", "FinalMobileUrls", "Status", "PrimaryStatus", "PrimaryStatusReasons", "Path1", "Path2", "AdStrength", "AssetCoverage" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Resources.AssetCoverage), global::Google.Ads.GoogleAds.V19.Resources.AssetCoverage.Parser, new[]{ "AdStrengthActionItems" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Resources.AdStrengthActionItem), global::Google.Ads.GoogleAds.V19.Resources.AdStrengthActionItem.Parser, new[]{ "ActionItemType", "AddAssetDetails" }, new[]{ "ActionDetails" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Resources.AdStrengthActionItem.Types.AddAssetDetails), global::Google.Ads.GoogleAds.V19.Resources.AdStrengthActionItem.Types.AddAssetDetails.Parser, new[]{ "AssetFieldType", "AssetCount", "VideoAspectRatioRequirement" }, new[]{ "AssetCount", "VideoAspectRatioRequirement" }, null, null, null)})
           }));
     }
     #endregion
@@ -118,6 +144,7 @@ namespace Google.Ads.GoogleAds.V19.Resources {
       path1_ = other.path1_;
       path2_ = other.path2_;
       adStrength_ = other.adStrength_;
+      assetCoverage_ = other.assetCoverage_ != null ? other.assetCoverage_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -317,6 +344,21 @@ namespace Google.Ads.GoogleAds.V19.Resources {
       }
     }
 
+    /// <summary>Field number for the "asset_coverage" field.</summary>
+    public const int AssetCoverageFieldNumber = 13;
+    private global::Google.Ads.GoogleAds.V19.Resources.AssetCoverage assetCoverage_;
+    /// <summary>
+    /// Output only. The asset coverage of this asset group.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V19.Resources.AssetCoverage AssetCoverage {
+      get { return assetCoverage_; }
+      set {
+        assetCoverage_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -344,6 +386,7 @@ namespace Google.Ads.GoogleAds.V19.Resources {
       if (Path1 != other.Path1) return false;
       if (Path2 != other.Path2) return false;
       if (AdStrength != other.AdStrength) return false;
+      if (!object.Equals(AssetCoverage, other.AssetCoverage)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -363,6 +406,7 @@ namespace Google.Ads.GoogleAds.V19.Resources {
       if (Path1.Length != 0) hash ^= Path1.GetHashCode();
       if (Path2.Length != 0) hash ^= Path2.GetHashCode();
       if (AdStrength != global::Google.Ads.GoogleAds.V19.Enums.AdStrengthEnum.Types.AdStrength.Unspecified) hash ^= AdStrength.GetHashCode();
+      if (assetCoverage_ != null) hash ^= AssetCoverage.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -420,6 +464,10 @@ namespace Google.Ads.GoogleAds.V19.Resources {
         output.WriteEnum((int) PrimaryStatus);
       }
       primaryStatusReasons_.WriteTo(output, _repeated_primaryStatusReasons_codec);
+      if (assetCoverage_ != null) {
+        output.WriteRawTag(106);
+        output.WriteMessage(AssetCoverage);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -469,6 +517,10 @@ namespace Google.Ads.GoogleAds.V19.Resources {
         output.WriteEnum((int) PrimaryStatus);
       }
       primaryStatusReasons_.WriteTo(ref output, _repeated_primaryStatusReasons_codec);
+      if (assetCoverage_ != null) {
+        output.WriteRawTag(106);
+        output.WriteMessage(AssetCoverage);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -508,6 +560,9 @@ namespace Google.Ads.GoogleAds.V19.Resources {
       }
       if (AdStrength != global::Google.Ads.GoogleAds.V19.Enums.AdStrengthEnum.Types.AdStrength.Unspecified) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) AdStrength);
+      }
+      if (assetCoverage_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AssetCoverage);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -550,6 +605,12 @@ namespace Google.Ads.GoogleAds.V19.Resources {
       }
       if (other.AdStrength != global::Google.Ads.GoogleAds.V19.Enums.AdStrengthEnum.Types.AdStrength.Unspecified) {
         AdStrength = other.AdStrength;
+      }
+      if (other.assetCoverage_ != null) {
+        if (assetCoverage_ == null) {
+          AssetCoverage = new global::Google.Ads.GoogleAds.V19.Resources.AssetCoverage();
+        }
+        AssetCoverage.MergeFrom(other.AssetCoverage);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -613,6 +674,13 @@ namespace Google.Ads.GoogleAds.V19.Resources {
           case 98:
           case 96: {
             primaryStatusReasons_.AddEntriesFrom(input, _repeated_primaryStatusReasons_codec);
+            break;
+          }
+          case 106: {
+            if (assetCoverage_ == null) {
+              AssetCoverage = new global::Google.Ads.GoogleAds.V19.Resources.AssetCoverage();
+            }
+            input.ReadMessage(AssetCoverage);
             break;
           }
         }
@@ -679,10 +747,801 @@ namespace Google.Ads.GoogleAds.V19.Resources {
             primaryStatusReasons_.AddEntriesFrom(ref input, _repeated_primaryStatusReasons_codec);
             break;
           }
+          case 106: {
+            if (assetCoverage_ == null) {
+              AssetCoverage = new global::Google.Ads.GoogleAds.V19.Resources.AssetCoverage();
+            }
+            input.ReadMessage(AssetCoverage);
+            break;
+          }
         }
       }
     }
     #endif
+
+  }
+
+  /// <summary>
+  /// Information about the asset coverage of an asset group.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class AssetCoverage : pb::IMessage<AssetCoverage>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<AssetCoverage> _parser = new pb::MessageParser<AssetCoverage>(() => new AssetCoverage());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<AssetCoverage> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V19.Resources.AssetGroupReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AssetCoverage() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AssetCoverage(AssetCoverage other) : this() {
+      adStrengthActionItems_ = other.adStrengthActionItems_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AssetCoverage Clone() {
+      return new AssetCoverage(this);
+    }
+
+    /// <summary>Field number for the "ad_strength_action_items" field.</summary>
+    public const int AdStrengthActionItemsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V19.Resources.AdStrengthActionItem> _repeated_adStrengthActionItems_codec
+        = pb::FieldCodec.ForMessage(10, global::Google.Ads.GoogleAds.V19.Resources.AdStrengthActionItem.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V19.Resources.AdStrengthActionItem> adStrengthActionItems_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V19.Resources.AdStrengthActionItem>();
+    /// <summary>
+    /// Output only. A list of action items to improve the ad strength of an asset
+    /// group.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V19.Resources.AdStrengthActionItem> AdStrengthActionItems {
+      get { return adStrengthActionItems_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as AssetCoverage);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(AssetCoverage other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!adStrengthActionItems_.Equals(other.adStrengthActionItems_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= adStrengthActionItems_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      adStrengthActionItems_.WriteTo(output, _repeated_adStrengthActionItems_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      adStrengthActionItems_.WriteTo(ref output, _repeated_adStrengthActionItems_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += adStrengthActionItems_.CalculateSize(_repeated_adStrengthActionItems_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(AssetCoverage other) {
+      if (other == null) {
+        return;
+      }
+      adStrengthActionItems_.Add(other.adStrengthActionItems_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            adStrengthActionItems_.AddEntriesFrom(input, _repeated_adStrengthActionItems_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            adStrengthActionItems_.AddEntriesFrom(ref input, _repeated_adStrengthActionItems_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// An action item to improve the ad strength of an asset group.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class AdStrengthActionItem : pb::IMessage<AdStrengthActionItem>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<AdStrengthActionItem> _parser = new pb::MessageParser<AdStrengthActionItem>(() => new AdStrengthActionItem());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<AdStrengthActionItem> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V19.Resources.AssetGroupReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AdStrengthActionItem() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AdStrengthActionItem(AdStrengthActionItem other) : this() {
+      actionItemType_ = other.actionItemType_;
+      switch (other.ActionDetailsCase) {
+        case ActionDetailsOneofCase.AddAssetDetails:
+          AddAssetDetails = other.AddAssetDetails.Clone();
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AdStrengthActionItem Clone() {
+      return new AdStrengthActionItem(this);
+    }
+
+    /// <summary>Field number for the "action_item_type" field.</summary>
+    public const int ActionItemTypeFieldNumber = 1;
+    private global::Google.Ads.GoogleAds.V19.Enums.AdStrengthActionItemTypeEnum.Types.AdStrengthActionItemType actionItemType_ = global::Google.Ads.GoogleAds.V19.Enums.AdStrengthActionItemTypeEnum.Types.AdStrengthActionItemType.Unspecified;
+    /// <summary>
+    /// Output only. The action item type.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V19.Enums.AdStrengthActionItemTypeEnum.Types.AdStrengthActionItemType ActionItemType {
+      get { return actionItemType_; }
+      set {
+        actionItemType_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "add_asset_details" field.</summary>
+    public const int AddAssetDetailsFieldNumber = 2;
+    /// <summary>
+    /// Output only. The action item details for action item type ADD_ASSET.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V19.Resources.AdStrengthActionItem.Types.AddAssetDetails AddAssetDetails {
+      get { return actionDetailsCase_ == ActionDetailsOneofCase.AddAssetDetails ? (global::Google.Ads.GoogleAds.V19.Resources.AdStrengthActionItem.Types.AddAssetDetails) actionDetails_ : null; }
+      set {
+        actionDetails_ = value;
+        actionDetailsCase_ = value == null ? ActionDetailsOneofCase.None : ActionDetailsOneofCase.AddAssetDetails;
+      }
+    }
+
+    private object actionDetails_;
+    /// <summary>Enum of possible cases for the "action_details" oneof.</summary>
+    public enum ActionDetailsOneofCase {
+      None = 0,
+      AddAssetDetails = 2,
+    }
+    private ActionDetailsOneofCase actionDetailsCase_ = ActionDetailsOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ActionDetailsOneofCase ActionDetailsCase {
+      get { return actionDetailsCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearActionDetails() {
+      actionDetailsCase_ = ActionDetailsOneofCase.None;
+      actionDetails_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as AdStrengthActionItem);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(AdStrengthActionItem other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ActionItemType != other.ActionItemType) return false;
+      if (!object.Equals(AddAssetDetails, other.AddAssetDetails)) return false;
+      if (ActionDetailsCase != other.ActionDetailsCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ActionItemType != global::Google.Ads.GoogleAds.V19.Enums.AdStrengthActionItemTypeEnum.Types.AdStrengthActionItemType.Unspecified) hash ^= ActionItemType.GetHashCode();
+      if (actionDetailsCase_ == ActionDetailsOneofCase.AddAssetDetails) hash ^= AddAssetDetails.GetHashCode();
+      hash ^= (int) actionDetailsCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (ActionItemType != global::Google.Ads.GoogleAds.V19.Enums.AdStrengthActionItemTypeEnum.Types.AdStrengthActionItemType.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) ActionItemType);
+      }
+      if (actionDetailsCase_ == ActionDetailsOneofCase.AddAssetDetails) {
+        output.WriteRawTag(18);
+        output.WriteMessage(AddAssetDetails);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ActionItemType != global::Google.Ads.GoogleAds.V19.Enums.AdStrengthActionItemTypeEnum.Types.AdStrengthActionItemType.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) ActionItemType);
+      }
+      if (actionDetailsCase_ == ActionDetailsOneofCase.AddAssetDetails) {
+        output.WriteRawTag(18);
+        output.WriteMessage(AddAssetDetails);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (ActionItemType != global::Google.Ads.GoogleAds.V19.Enums.AdStrengthActionItemTypeEnum.Types.AdStrengthActionItemType.Unspecified) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ActionItemType);
+      }
+      if (actionDetailsCase_ == ActionDetailsOneofCase.AddAssetDetails) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AddAssetDetails);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(AdStrengthActionItem other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ActionItemType != global::Google.Ads.GoogleAds.V19.Enums.AdStrengthActionItemTypeEnum.Types.AdStrengthActionItemType.Unspecified) {
+        ActionItemType = other.ActionItemType;
+      }
+      switch (other.ActionDetailsCase) {
+        case ActionDetailsOneofCase.AddAssetDetails:
+          if (AddAssetDetails == null) {
+            AddAssetDetails = new global::Google.Ads.GoogleAds.V19.Resources.AdStrengthActionItem.Types.AddAssetDetails();
+          }
+          AddAssetDetails.MergeFrom(other.AddAssetDetails);
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            ActionItemType = (global::Google.Ads.GoogleAds.V19.Enums.AdStrengthActionItemTypeEnum.Types.AdStrengthActionItemType) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            global::Google.Ads.GoogleAds.V19.Resources.AdStrengthActionItem.Types.AddAssetDetails subBuilder = new global::Google.Ads.GoogleAds.V19.Resources.AdStrengthActionItem.Types.AddAssetDetails();
+            if (actionDetailsCase_ == ActionDetailsOneofCase.AddAssetDetails) {
+              subBuilder.MergeFrom(AddAssetDetails);
+            }
+            input.ReadMessage(subBuilder);
+            AddAssetDetails = subBuilder;
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ActionItemType = (global::Google.Ads.GoogleAds.V19.Enums.AdStrengthActionItemTypeEnum.Types.AdStrengthActionItemType) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            global::Google.Ads.GoogleAds.V19.Resources.AdStrengthActionItem.Types.AddAssetDetails subBuilder = new global::Google.Ads.GoogleAds.V19.Resources.AdStrengthActionItem.Types.AddAssetDetails();
+            if (actionDetailsCase_ == ActionDetailsOneofCase.AddAssetDetails) {
+              subBuilder.MergeFrom(AddAssetDetails);
+            }
+            input.ReadMessage(subBuilder);
+            AddAssetDetails = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the AdStrengthActionItem message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static partial class Types {
+      /// <summary>
+      /// The details of the asset to add.
+      /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+      public sealed partial class AddAssetDetails : pb::IMessage<AddAssetDetails>
+      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          , pb::IBufferMessage
+      #endif
+      {
+        private static readonly pb::MessageParser<AddAssetDetails> _parser = new pb::MessageParser<AddAssetDetails>(() => new AddAssetDetails());
+        private pb::UnknownFieldSet _unknownFields;
+        private int _hasBits0;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public static pb::MessageParser<AddAssetDetails> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V19.Resources.AdStrengthActionItem.Descriptor.NestedTypes[0]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public AddAssetDetails() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public AddAssetDetails(AddAssetDetails other) : this() {
+          _hasBits0 = other._hasBits0;
+          assetFieldType_ = other.assetFieldType_;
+          assetCount_ = other.assetCount_;
+          videoAspectRatioRequirement_ = other.videoAspectRatioRequirement_;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public AddAssetDetails Clone() {
+          return new AddAssetDetails(this);
+        }
+
+        /// <summary>Field number for the "asset_field_type" field.</summary>
+        public const int AssetFieldTypeFieldNumber = 1;
+        private global::Google.Ads.GoogleAds.V19.Enums.AssetFieldTypeEnum.Types.AssetFieldType assetFieldType_ = global::Google.Ads.GoogleAds.V19.Enums.AssetFieldTypeEnum.Types.AssetFieldType.Unspecified;
+        /// <summary>
+        /// Output only. The asset field type of the asset(s) to add.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public global::Google.Ads.GoogleAds.V19.Enums.AssetFieldTypeEnum.Types.AssetFieldType AssetFieldType {
+          get { return assetFieldType_; }
+          set {
+            assetFieldType_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "asset_count" field.</summary>
+        public const int AssetCountFieldNumber = 2;
+        private readonly static int AssetCountDefaultValue = 0;
+
+        private int assetCount_;
+        /// <summary>
+        /// Output only. The number of assets to add.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public int AssetCount {
+          get { if ((_hasBits0 & 1) != 0) { return assetCount_; } else { return AssetCountDefaultValue; } }
+          set {
+            _hasBits0 |= 1;
+            assetCount_ = value;
+          }
+        }
+        /// <summary>Gets whether the "asset_count" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasAssetCount {
+          get { return (_hasBits0 & 1) != 0; }
+        }
+        /// <summary>Clears the value of the "asset_count" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearAssetCount() {
+          _hasBits0 &= ~1;
+        }
+
+        /// <summary>Field number for the "video_aspect_ratio_requirement" field.</summary>
+        public const int VideoAspectRatioRequirementFieldNumber = 3;
+        private readonly static global::Google.Ads.GoogleAds.V19.Enums.AssetCoverageVideoAspectRatioRequirementEnum.Types.AssetCoverageVideoAspectRatioRequirement VideoAspectRatioRequirementDefaultValue = global::Google.Ads.GoogleAds.V19.Enums.AssetCoverageVideoAspectRatioRequirementEnum.Types.AssetCoverageVideoAspectRatioRequirement.Unspecified;
+
+        private global::Google.Ads.GoogleAds.V19.Enums.AssetCoverageVideoAspectRatioRequirementEnum.Types.AssetCoverageVideoAspectRatioRequirement videoAspectRatioRequirement_;
+        /// <summary>
+        /// Output only. For video field types, the required aspect ratio of the
+        /// video. When unset and asset_field_type is YOUTUBE_VIDEO, the system
+        /// recommends the advertiser upload any YouTube video, regardless of aspect
+        /// ratio.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public global::Google.Ads.GoogleAds.V19.Enums.AssetCoverageVideoAspectRatioRequirementEnum.Types.AssetCoverageVideoAspectRatioRequirement VideoAspectRatioRequirement {
+          get { if ((_hasBits0 & 2) != 0) { return videoAspectRatioRequirement_; } else { return VideoAspectRatioRequirementDefaultValue; } }
+          set {
+            _hasBits0 |= 2;
+            videoAspectRatioRequirement_ = value;
+          }
+        }
+        /// <summary>Gets whether the "video_aspect_ratio_requirement" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasVideoAspectRatioRequirement {
+          get { return (_hasBits0 & 2) != 0; }
+        }
+        /// <summary>Clears the value of the "video_aspect_ratio_requirement" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearVideoAspectRatioRequirement() {
+          _hasBits0 &= ~2;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override bool Equals(object other) {
+          return Equals(other as AddAssetDetails);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool Equals(AddAssetDetails other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (AssetFieldType != other.AssetFieldType) return false;
+          if (AssetCount != other.AssetCount) return false;
+          if (VideoAspectRatioRequirement != other.VideoAspectRatioRequirement) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (AssetFieldType != global::Google.Ads.GoogleAds.V19.Enums.AssetFieldTypeEnum.Types.AssetFieldType.Unspecified) hash ^= AssetFieldType.GetHashCode();
+          if (HasAssetCount) hash ^= AssetCount.GetHashCode();
+          if (HasVideoAspectRatioRequirement) hash ^= VideoAspectRatioRequirement.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void WriteTo(pb::CodedOutputStream output) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          output.WriteRawMessage(this);
+        #else
+          if (AssetFieldType != global::Google.Ads.GoogleAds.V19.Enums.AssetFieldTypeEnum.Types.AssetFieldType.Unspecified) {
+            output.WriteRawTag(8);
+            output.WriteEnum((int) AssetFieldType);
+          }
+          if (HasAssetCount) {
+            output.WriteRawTag(16);
+            output.WriteInt32(AssetCount);
+          }
+          if (HasVideoAspectRatioRequirement) {
+            output.WriteRawTag(24);
+            output.WriteEnum((int) VideoAspectRatioRequirement);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+          if (AssetFieldType != global::Google.Ads.GoogleAds.V19.Enums.AssetFieldTypeEnum.Types.AssetFieldType.Unspecified) {
+            output.WriteRawTag(8);
+            output.WriteEnum((int) AssetFieldType);
+          }
+          if (HasAssetCount) {
+            output.WriteRawTag(16);
+            output.WriteInt32(AssetCount);
+          }
+          if (HasVideoAspectRatioRequirement) {
+            output.WriteRawTag(24);
+            output.WriteEnum((int) VideoAspectRatioRequirement);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(ref output);
+          }
+        }
+        #endif
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public int CalculateSize() {
+          int size = 0;
+          if (AssetFieldType != global::Google.Ads.GoogleAds.V19.Enums.AssetFieldTypeEnum.Types.AssetFieldType.Unspecified) {
+            size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) AssetFieldType);
+          }
+          if (HasAssetCount) {
+            size += 1 + pb::CodedOutputStream.ComputeInt32Size(AssetCount);
+          }
+          if (HasVideoAspectRatioRequirement) {
+            size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) VideoAspectRatioRequirement);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void MergeFrom(AddAssetDetails other) {
+          if (other == null) {
+            return;
+          }
+          if (other.AssetFieldType != global::Google.Ads.GoogleAds.V19.Enums.AssetFieldTypeEnum.Types.AssetFieldType.Unspecified) {
+            AssetFieldType = other.AssetFieldType;
+          }
+          if (other.HasAssetCount) {
+            AssetCount = other.AssetCount;
+          }
+          if (other.HasVideoAspectRatioRequirement) {
+            VideoAspectRatioRequirement = other.VideoAspectRatioRequirement;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void MergeFrom(pb::CodedInputStream input) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          input.ReadRawMessage(this);
+        #else
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 8: {
+                AssetFieldType = (global::Google.Ads.GoogleAds.V19.Enums.AssetFieldTypeEnum.Types.AssetFieldType) input.ReadEnum();
+                break;
+              }
+              case 16: {
+                AssetCount = input.ReadInt32();
+                break;
+              }
+              case 24: {
+                VideoAspectRatioRequirement = (global::Google.Ads.GoogleAds.V19.Enums.AssetCoverageVideoAspectRatioRequirementEnum.Types.AssetCoverageVideoAspectRatioRequirement) input.ReadEnum();
+                break;
+              }
+            }
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                break;
+              case 8: {
+                AssetFieldType = (global::Google.Ads.GoogleAds.V19.Enums.AssetFieldTypeEnum.Types.AssetFieldType) input.ReadEnum();
+                break;
+              }
+              case 16: {
+                AssetCount = input.ReadInt32();
+                break;
+              }
+              case 24: {
+                VideoAspectRatioRequirement = (global::Google.Ads.GoogleAds.V19.Enums.AssetCoverageVideoAspectRatioRequirementEnum.Types.AssetCoverageVideoAspectRatioRequirement) input.ReadEnum();
+                break;
+              }
+            }
+          }
+        }
+        #endif
+
+      }
+
+    }
+    #endregion
 
   }
 

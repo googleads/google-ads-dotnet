@@ -38,79 +38,102 @@ namespace Google.Ads.GoogleAds.V19.Resources {
             "LnByb3RvGjVnb29nbGUvYWRzL2dvb2dsZWFkcy92MTkvZW51bXMvYXNzZXRf",
             "ZmllbGRfdHlwZS5wcm90bxozZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjE5L2Vu",
             "dW1zL2Fzc2V0X3NldF90eXBlLnByb3RvGjNnb29nbGUvYWRzL2dvb2dsZWFk",
-            "cy92MTkvZW51bXMvYmlkZGluZ19zb3VyY2UucHJvdG8aOGdvb2dsZS9hZHMv",
-            "Z29vZ2xlYWRzL3YxOS9lbnVtcy90YXJnZXRpbmdfZGltZW5zaW9uLnByb3Rv",
-            "Gh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9yLnByb3RvGhlnb29nbGUvYXBp",
-            "L3Jlc291cmNlLnByb3RvIvAUCgdBZEdyb3VwEj8KDXJlc291cmNlX25hbWUY",
-            "ASABKAlCKOBBBfpBIgogZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0FkR3Jv",
-            "dXASFAoCaWQYIiABKANCA+BBA0gAiAEBEhEKBG5hbWUYIyABKAlIAYgBARJP",
-            "CgZzdGF0dXMYBSABKA4yPy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTkuZW51",
-            "bXMuQWRHcm91cFN0YXR1c0VudW0uQWRHcm91cFN0YXR1cxJOCgR0eXBlGAwg",
-            "ASgOMjsuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LmVudW1zLkFkR3JvdXBU",
-            "eXBlRW51bS5BZEdyb3VwVHlwZUID4EEFEmkKEGFkX3JvdGF0aW9uX21vZGUY",
-            "FiABKA4yTy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTkuZW51bXMuQWRHcm91",
-            "cEFkUm90YXRpb25Nb2RlRW51bS5BZEdyb3VwQWRSb3RhdGlvbk1vZGUSRAoN",
-            "YmFzZV9hZF9ncm91cBgkIAEoCUIo4EED+kEiCiBnb29nbGVhZHMuZ29vZ2xl",
-            "YXBpcy5jb20vQWRHcm91cEgCiAEBEiIKFXRyYWNraW5nX3VybF90ZW1wbGF0",
-            "ZRglIAEoCUgDiAEBEk8KFXVybF9jdXN0b21fcGFyYW1ldGVycxgGIAMoCzIw",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxOS5jb21tb24uQ3VzdG9tUGFyYW1l",
-            "dGVyEkAKCGNhbXBhaWduGCYgASgJQingQQX6QSMKIWdvb2dsZWFkcy5nb29n",
-            "bGVhcGlzLmNvbS9DYW1wYWlnbkgEiAEBEhsKDmNwY19iaWRfbWljcm9zGCcg",
-            "ASgDSAWIAQESKgoYZWZmZWN0aXZlX2NwY19iaWRfbWljcm9zGDkgASgDQgPg",
-            "QQNIBogBARIbCg5jcG1fYmlkX21pY3JvcxgoIAEoA0gHiAEBEh4KEXRhcmdl",
-            "dF9jcGFfbWljcm9zGCkgASgDSAiIAQESGwoOY3B2X2JpZF9taWNyb3MYKiAB",
-            "KANICYgBARIeChF0YXJnZXRfY3BtX21pY3JvcxgrIAEoA0gKiAEBEhgKC3Rh",
-            "cmdldF9yb2FzGCwgASgBSAuIAQESIwoWcGVyY2VudF9jcGNfYmlkX21pY3Jv",
-            "cxgtIAEoA0gMiAEBEh0KEGZpeGVkX2NwbV9taWNyb3MYQCABKANIDYgBARIe",
-            "ChF0YXJnZXRfY3B2X21pY3JvcxhBIAEoA0gOiAEBEiMKG29wdGltaXplZF90",
-            "YXJnZXRpbmdfZW5hYmxlZBg7IAEoCBIlCh1leGNsdWRlX2RlbW9ncmFwaGlj",
-            "X2V4cGFuc2lvbhhDIAEoCBJvChxkaXNwbGF5X2N1c3RvbV9iaWRfZGltZW5z",
-            "aW9uGBcgASgOMkkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LmVudW1zLlRh",
-            "cmdldGluZ0RpbWVuc2lvbkVudW0uVGFyZ2V0aW5nRGltZW5zaW9uEh0KEGZp",
-            "bmFsX3VybF9zdWZmaXgYLiABKAlID4gBARJMChF0YXJnZXRpbmdfc2V0dGlu",
-            "ZxgZIAEoCzIxLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxOS5jb21tb24uVGFy",
-            "Z2V0aW5nU2V0dGluZxJaChBhdWRpZW5jZV9zZXR0aW5nGDggASgLMjsuZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjE5LnJlc291cmNlcy5BZEdyb3VwLkF1ZGll",
-            "bmNlU2V0dGluZ0ID4EEFEi0KG2VmZmVjdGl2ZV90YXJnZXRfY3BhX21pY3Jv",
-            "cxgvIAEoA0ID4EEDSBCIAQESaQobZWZmZWN0aXZlX3RhcmdldF9jcGFfc291",
-            "cmNlGB0gASgOMj8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LmVudW1zLkJp",
-            "ZGRpbmdTb3VyY2VFbnVtLkJpZGRpbmdTb3VyY2VCA+BBAxInChVlZmZlY3Rp",
-            "dmVfdGFyZ2V0X3JvYXMYMCABKAFCA+BBA0gRiAEBEmoKHGVmZmVjdGl2ZV90",
-            "YXJnZXRfcm9hc19zb3VyY2UYICABKA4yPy5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52MTkuZW51bXMuQmlkZGluZ1NvdXJjZUVudW0uQmlkZGluZ1NvdXJjZUID",
-            "4EEDEj0KBmxhYmVscxgxIAMoCUIt4EED+kEnCiVnb29nbGVhZHMuZ29vZ2xl",
-            "YXBpcy5jb20vQWRHcm91cExhYmVsEmwKIWV4Y2x1ZGVkX3BhcmVudF9hc3Nl",
-            "dF9maWVsZF90eXBlcxg2IAMoDjJBLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYx",
-            "OS5lbnVtcy5Bc3NldEZpZWxkVHlwZUVudW0uQXNzZXRGaWVsZFR5cGUSZgof",
-            "ZXhjbHVkZWRfcGFyZW50X2Fzc2V0X3NldF90eXBlcxg6IAMoDjI9Lmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYxOS5lbnVtcy5Bc3NldFNldFR5cGVFbnVtLkFz",
-            "c2V0U2V0VHlwZRJqCg5wcmltYXJ5X3N0YXR1cxg+IAEoDjJNLmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYxOS5lbnVtcy5BZEdyb3VwUHJpbWFyeVN0YXR1c0Vu",
-            "dW0uQWRHcm91cFByaW1hcnlTdGF0dXNCA+BBAxJ+ChZwcmltYXJ5X3N0YXR1",
-            "c19yZWFzb25zGD8gAygOMlkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LmVu",
-            "dW1zLkFkR3JvdXBQcmltYXJ5U3RhdHVzUmVhc29uRW51bS5BZEdyb3VwUHJp",
-            "bWFyeVN0YXR1c1JlYXNvbkID4EEDGjQKD0F1ZGllbmNlU2V0dGluZxIhChR1",
-            "c2VfYXVkaWVuY2VfZ3JvdXBlZBgBIAEoCEID4EEFOlXqQVIKIGdvb2dsZWFk",
-            "cy5nb29nbGVhcGlzLmNvbS9BZEdyb3VwEi5jdXN0b21lcnMve2N1c3RvbWVy",
-            "X2lkfS9hZEdyb3Vwcy97YWRfZ3JvdXBfaWR9QgUKA19pZEIHCgVfbmFtZUIQ",
-            "Cg5fYmFzZV9hZF9ncm91cEIYChZfdHJhY2tpbmdfdXJsX3RlbXBsYXRlQgsK",
-            "CV9jYW1wYWlnbkIRCg9fY3BjX2JpZF9taWNyb3NCGwoZX2VmZmVjdGl2ZV9j",
-            "cGNfYmlkX21pY3Jvc0IRCg9fY3BtX2JpZF9taWNyb3NCFAoSX3RhcmdldF9j",
-            "cGFfbWljcm9zQhEKD19jcHZfYmlkX21pY3Jvc0IUChJfdGFyZ2V0X2NwbV9t",
-            "aWNyb3NCDgoMX3RhcmdldF9yb2FzQhkKF19wZXJjZW50X2NwY19iaWRfbWlj",
-            "cm9zQhMKEV9maXhlZF9jcG1fbWljcm9zQhQKEl90YXJnZXRfY3B2X21pY3Jv",
-            "c0ITChFfZmluYWxfdXJsX3N1ZmZpeEIeChxfZWZmZWN0aXZlX3RhcmdldF9j",
-            "cGFfbWljcm9zQhgKFl9lZmZlY3RpdmVfdGFyZ2V0X3JvYXNC/gEKJmNvbS5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MTkucmVzb3VyY2VzQgxBZEdyb3VwUHJv",
-            "dG9QAVpLZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9h",
-            "ZHMvZ29vZ2xlYWRzL3YxOS9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FBqgIi",
-            "R29vZ2xlLkFkcy5Hb29nbGVBZHMuVjE5LlJlc291cmNlc8oCIkdvb2dsZVxB",
-            "ZHNcR29vZ2xlQWRzXFYxOVxSZXNvdXJjZXPqAiZHb29nbGU6OkFkczo6R29v",
-            "Z2xlQWRzOjpWMTk6OlJlc291cmNlc2IGcHJvdG8z"));
+            "cy92MTkvZW51bXMvYmlkZGluZ19zb3VyY2UucHJvdG8aPmdvb2dsZS9hZHMv",
+            "Z29vZ2xlYWRzL3YxOS9lbnVtcy9kZW1hbmRfZ2VuX2NoYW5uZWxfY29uZmln",
+            "LnByb3RvGkBnb29nbGUvYWRzL2dvb2dsZWFkcy92MTkvZW51bXMvZGVtYW5k",
+            "X2dlbl9jaGFubmVsX3N0cmF0ZWd5LnByb3RvGjhnb29nbGUvYWRzL2dvb2ds",
+            "ZWFkcy92MTkvZW51bXMvdGFyZ2V0aW5nX2RpbWVuc2lvbi5wcm90bxofZ29v",
+            "Z2xlL2FwaS9maWVsZF9iZWhhdmlvci5wcm90bxoZZ29vZ2xlL2FwaS9yZXNv",
+            "dXJjZS5wcm90byK+GwoHQWRHcm91cBI/Cg1yZXNvdXJjZV9uYW1lGAEgASgJ",
+            "QijgQQX6QSIKIGdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9BZEdyb3VwEhQK",
+            "AmlkGCIgASgDQgPgQQNIAIgBARIRCgRuYW1lGCMgASgJSAGIAQESTwoGc3Rh",
+            "dHVzGAUgASgOMj8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LmVudW1zLkFk",
+            "R3JvdXBTdGF0dXNFbnVtLkFkR3JvdXBTdGF0dXMSTgoEdHlwZRgMIAEoDjI7",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxOS5lbnVtcy5BZEdyb3VwVHlwZUVu",
+            "dW0uQWRHcm91cFR5cGVCA+BBBRJpChBhZF9yb3RhdGlvbl9tb2RlGBYgASgO",
+            "Mk8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LmVudW1zLkFkR3JvdXBBZFJv",
+            "dGF0aW9uTW9kZUVudW0uQWRHcm91cEFkUm90YXRpb25Nb2RlEkQKDWJhc2Vf",
+            "YWRfZ3JvdXAYJCABKAlCKOBBA/pBIgogZ29vZ2xlYWRzLmdvb2dsZWFwaXMu",
+            "Y29tL0FkR3JvdXBIAogBARIiChV0cmFja2luZ191cmxfdGVtcGxhdGUYJSAB",
+            "KAlIA4gBARJPChV1cmxfY3VzdG9tX3BhcmFtZXRlcnMYBiADKAsyMC5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MTkuY29tbW9uLkN1c3RvbVBhcmFtZXRlchJA",
+            "CghjYW1wYWlnbhgmIAEoCUIp4EEF+kEjCiFnb29nbGVhZHMuZ29vZ2xlYXBp",
+            "cy5jb20vQ2FtcGFpZ25IBIgBARIbCg5jcGNfYmlkX21pY3JvcxgnIAEoA0gF",
+            "iAEBEioKGGVmZmVjdGl2ZV9jcGNfYmlkX21pY3Jvcxg5IAEoA0ID4EEDSAaI",
+            "AQESGwoOY3BtX2JpZF9taWNyb3MYKCABKANIB4gBARIeChF0YXJnZXRfY3Bh",
+            "X21pY3JvcxgpIAEoA0gIiAEBEhsKDmNwdl9iaWRfbWljcm9zGCogASgDSAmI",
+            "AQESHgoRdGFyZ2V0X2NwbV9taWNyb3MYKyABKANICogBARIYCgt0YXJnZXRf",
+            "cm9hcxgsIAEoAUgLiAEBEiMKFnBlcmNlbnRfY3BjX2JpZF9taWNyb3MYLSAB",
+            "KANIDIgBARIdChBmaXhlZF9jcG1fbWljcm9zGEAgASgDSA2IAQESHgoRdGFy",
+            "Z2V0X2Nwdl9taWNyb3MYQSABKANIDogBARIjChtvcHRpbWl6ZWRfdGFyZ2V0",
+            "aW5nX2VuYWJsZWQYOyABKAgSJQodZXhjbHVkZV9kZW1vZ3JhcGhpY19leHBh",
+            "bnNpb24YQyABKAgSbwocZGlzcGxheV9jdXN0b21fYmlkX2RpbWVuc2lvbhgX",
+            "IAEoDjJJLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxOS5lbnVtcy5UYXJnZXRp",
+            "bmdEaW1lbnNpb25FbnVtLlRhcmdldGluZ0RpbWVuc2lvbhIdChBmaW5hbF91",
+            "cmxfc3VmZml4GC4gASgJSA+IAQESTAoRdGFyZ2V0aW5nX3NldHRpbmcYGSAB",
+            "KAsyMS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTkuY29tbW9uLlRhcmdldGlu",
+            "Z1NldHRpbmcSWgoQYXVkaWVuY2Vfc2V0dGluZxg4IAEoCzI7Lmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYxOS5yZXNvdXJjZXMuQWRHcm91cC5BdWRpZW5jZVNl",
+            "dHRpbmdCA+BBBRItChtlZmZlY3RpdmVfdGFyZ2V0X2NwYV9taWNyb3MYLyAB",
+            "KANCA+BBA0gQiAEBEmkKG2VmZmVjdGl2ZV90YXJnZXRfY3BhX3NvdXJjZRgd",
+            "IAEoDjI/Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxOS5lbnVtcy5CaWRkaW5n",
+            "U291cmNlRW51bS5CaWRkaW5nU291cmNlQgPgQQMSJwoVZWZmZWN0aXZlX3Rh",
+            "cmdldF9yb2FzGDAgASgBQgPgQQNIEYgBARJqChxlZmZlY3RpdmVfdGFyZ2V0",
+            "X3JvYXNfc291cmNlGCAgASgOMj8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5",
+            "LmVudW1zLkJpZGRpbmdTb3VyY2VFbnVtLkJpZGRpbmdTb3VyY2VCA+BBAxI9",
+            "CgZsYWJlbHMYMSADKAlCLeBBA/pBJwolZ29vZ2xlYWRzLmdvb2dsZWFwaXMu",
+            "Y29tL0FkR3JvdXBMYWJlbBJsCiFleGNsdWRlZF9wYXJlbnRfYXNzZXRfZmll",
+            "bGRfdHlwZXMYNiADKA4yQS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTkuZW51",
+            "bXMuQXNzZXRGaWVsZFR5cGVFbnVtLkFzc2V0RmllbGRUeXBlEmYKH2V4Y2x1",
+            "ZGVkX3BhcmVudF9hc3NldF9zZXRfdHlwZXMYOiADKA4yPS5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MTkuZW51bXMuQXNzZXRTZXRUeXBlRW51bS5Bc3NldFNl",
+            "dFR5cGUSagoOcHJpbWFyeV9zdGF0dXMYPiABKA4yTS5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MTkuZW51bXMuQWRHcm91cFByaW1hcnlTdGF0dXNFbnVtLkFk",
+            "R3JvdXBQcmltYXJ5U3RhdHVzQgPgQQMSfgoWcHJpbWFyeV9zdGF0dXNfcmVh",
+            "c29ucxg/IAMoDjJZLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxOS5lbnVtcy5B",
+            "ZEdyb3VwUHJpbWFyeVN0YXR1c1JlYXNvbkVudW0uQWRHcm91cFByaW1hcnlT",
+            "dGF0dXNSZWFzb25CA+BBAxJqChxkZW1hbmRfZ2VuX2FkX2dyb3VwX3NldHRp",
+            "bmdzGFsgASgLMkQuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LnJlc291cmNl",
+            "cy5BZEdyb3VwLkRlbWFuZEdlbkFkR3JvdXBTZXR0aW5ncxo0Cg9BdWRpZW5j",
+            "ZVNldHRpbmcSIQoUdXNlX2F1ZGllbmNlX2dyb3VwZWQYASABKAhCA+BBBRrf",
+            "BQoYRGVtYW5kR2VuQWRHcm91cFNldHRpbmdzEncKEGNoYW5uZWxfY29udHJv",
+            "bHMYASABKAsyXS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTkucmVzb3VyY2Vz",
+            "LkFkR3JvdXAuRGVtYW5kR2VuQWRHcm91cFNldHRpbmdzLkRlbWFuZEdlbkNo",
+            "YW5uZWxDb250cm9scxrJBAoYRGVtYW5kR2VuQ2hhbm5lbENvbnRyb2xzEm4K",
+            "DmNoYW5uZWxfY29uZmlnGAEgASgOMlEuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djE5LmVudW1zLkRlbWFuZEdlbkNoYW5uZWxDb25maWdFbnVtLkRlbWFuZEdl",
+            "bkNoYW5uZWxDb25maWdCA+BBAxJxChBjaGFubmVsX3N0cmF0ZWd5GAIgASgO",
+            "MlUuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LmVudW1zLkRlbWFuZEdlbkNo",
+            "YW5uZWxTdHJhdGVneUVudW0uRGVtYW5kR2VuQ2hhbm5lbFN0cmF0ZWd5SAAS",
+            "lAEKEXNlbGVjdGVkX2NoYW5uZWxzGAMgASgLMncuZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjE5LnJlc291cmNlcy5BZEdyb3VwLkRlbWFuZEdlbkFkR3JvdXBT",
+            "ZXR0aW5ncy5EZW1hbmRHZW5DaGFubmVsQ29udHJvbHMuRGVtYW5kR2VuU2Vs",
+            "ZWN0ZWRDaGFubmVsc0gAGpkBChlEZW1hbmRHZW5TZWxlY3RlZENoYW5uZWxz",
+            "EhkKEXlvdXR1YmVfaW5fc3RyZWFtGAEgASgIEhcKD3lvdXR1YmVfaW5fZmVl",
+            "ZBgCIAEoCBIWCg55b3V0dWJlX3Nob3J0cxgDIAEoCBIQCghkaXNjb3ZlchgE",
+            "IAEoCBINCgVnbWFpbBgFIAEoCBIPCgdkaXNwbGF5GAYgASgIQhcKFWNoYW5u",
+            "ZWxfY29uZmlndXJhdGlvbjpV6kFSCiBnb29nbGVhZHMuZ29vZ2xlYXBpcy5j",
+            "b20vQWRHcm91cBIuY3VzdG9tZXJzL3tjdXN0b21lcl9pZH0vYWRHcm91cHMv",
+            "e2FkX2dyb3VwX2lkfUIFCgNfaWRCBwoFX25hbWVCEAoOX2Jhc2VfYWRfZ3Jv",
+            "dXBCGAoWX3RyYWNraW5nX3VybF90ZW1wbGF0ZUILCglfY2FtcGFpZ25CEQoP",
+            "X2NwY19iaWRfbWljcm9zQhsKGV9lZmZlY3RpdmVfY3BjX2JpZF9taWNyb3NC",
+            "EQoPX2NwbV9iaWRfbWljcm9zQhQKEl90YXJnZXRfY3BhX21pY3Jvc0IRCg9f",
+            "Y3B2X2JpZF9taWNyb3NCFAoSX3RhcmdldF9jcG1fbWljcm9zQg4KDF90YXJn",
+            "ZXRfcm9hc0IZChdfcGVyY2VudF9jcGNfYmlkX21pY3Jvc0ITChFfZml4ZWRf",
+            "Y3BtX21pY3Jvc0IUChJfdGFyZ2V0X2Nwdl9taWNyb3NCEwoRX2ZpbmFsX3Vy",
+            "bF9zdWZmaXhCHgocX2VmZmVjdGl2ZV90YXJnZXRfY3BhX21pY3Jvc0IYChZf",
+            "ZWZmZWN0aXZlX3RhcmdldF9yb2FzQv4BCiZjb20uZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjE5LnJlc291cmNlc0IMQWRHcm91cFByb3RvUAFaS2dvb2dsZS5n",
+            "b2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92",
+            "MTkvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIkdvb2dsZS5BZHMuR29v",
+            "Z2xlQWRzLlYxOS5SZXNvdXJjZXPKAiJHb29nbGVcQWRzXEdvb2dsZUFkc1xW",
+            "MTlcUmVzb3VyY2Vz6gImR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE5OjpS",
+            "ZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V19.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Common.TargetingSettingReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.AdGroupAdRotationModeReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.AdGroupPrimaryStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.AdGroupPrimaryStatusReasonReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.AdGroupStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.AdGroupTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.AssetFieldTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.AssetSetTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.BiddingSourceReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.TargetingDimensionReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V19.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Common.TargetingSettingReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.AdGroupAdRotationModeReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.AdGroupPrimaryStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.AdGroupPrimaryStatusReasonReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.AdGroupStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.AdGroupTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.AssetFieldTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.AssetSetTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.BiddingSourceReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.DemandGenChannelConfigReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.DemandGenChannelStrategyReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.TargetingDimensionReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Resources.AdGroup), global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "Type", "AdRotationMode", "BaseAdGroup", "TrackingUrlTemplate", "UrlCustomParameters", "Campaign", "CpcBidMicros", "EffectiveCpcBidMicros", "CpmBidMicros", "TargetCpaMicros", "CpvBidMicros", "TargetCpmMicros", "TargetRoas", "PercentCpcBidMicros", "FixedCpmMicros", "TargetCpvMicros", "OptimizedTargetingEnabled", "ExcludeDemographicExpansion", "DisplayCustomBidDimension", "FinalUrlSuffix", "TargetingSetting", "AudienceSetting", "EffectiveTargetCpaMicros", "EffectiveTargetCpaSource", "EffectiveTargetRoas", "EffectiveTargetRoasSource", "Labels", "ExcludedParentAssetFieldTypes", "ExcludedParentAssetSetTypes", "PrimaryStatus", "PrimaryStatusReasons" }, new[]{ "Id", "Name", "BaseAdGroup", "TrackingUrlTemplate", "Campaign", "CpcBidMicros", "EffectiveCpcBidMicros", "CpmBidMicros", "TargetCpaMicros", "CpvBidMicros", "TargetCpmMicros", "TargetRoas", "PercentCpcBidMicros", "FixedCpmMicros", "TargetCpvMicros", "FinalUrlSuffix", "EffectiveTargetCpaMicros", "EffectiveTargetRoas" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.AudienceSetting), global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.AudienceSetting.Parser, new[]{ "UseAudienceGrouped" }, null, null, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Resources.AdGroup), global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Parser, new[]{ "ResourceName", "Id", "Name", "Status", "Type", "AdRotationMode", "BaseAdGroup", "TrackingUrlTemplate", "UrlCustomParameters", "Campaign", "CpcBidMicros", "EffectiveCpcBidMicros", "CpmBidMicros", "TargetCpaMicros", "CpvBidMicros", "TargetCpmMicros", "TargetRoas", "PercentCpcBidMicros", "FixedCpmMicros", "TargetCpvMicros", "OptimizedTargetingEnabled", "ExcludeDemographicExpansion", "DisplayCustomBidDimension", "FinalUrlSuffix", "TargetingSetting", "AudienceSetting", "EffectiveTargetCpaMicros", "EffectiveTargetCpaSource", "EffectiveTargetRoas", "EffectiveTargetRoasSource", "Labels", "ExcludedParentAssetFieldTypes", "ExcludedParentAssetSetTypes", "PrimaryStatus", "PrimaryStatusReasons", "DemandGenAdGroupSettings" }, new[]{ "Id", "Name", "BaseAdGroup", "TrackingUrlTemplate", "Campaign", "CpcBidMicros", "EffectiveCpcBidMicros", "CpmBidMicros", "TargetCpaMicros", "CpvBidMicros", "TargetCpmMicros", "TargetRoas", "PercentCpcBidMicros", "FixedCpmMicros", "TargetCpvMicros", "FinalUrlSuffix", "EffectiveTargetCpaMicros", "EffectiveTargetRoas" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.AudienceSetting), global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.AudienceSetting.Parser, new[]{ "UseAudienceGrouped" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.DemandGenAdGroupSettings), global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.DemandGenAdGroupSettings.Parser, new[]{ "ChannelControls" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types.DemandGenChannelControls), global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types.DemandGenChannelControls.Parser, new[]{ "ChannelConfig", "ChannelStrategy", "SelectedChannels" }, new[]{ "ChannelConfiguration" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types.DemandGenChannelControls.Types.DemandGenSelectedChannels), global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types.DemandGenChannelControls.Types.DemandGenSelectedChannels.Parser, new[]{ "YoutubeInStream", "YoutubeInFeed", "YoutubeShorts", "Discover", "Gmail", "Display" }, null, null, null, null)})})})
           }));
     }
     #endregion
@@ -192,6 +215,7 @@ namespace Google.Ads.GoogleAds.V19.Resources {
       excludedParentAssetSetTypes_ = other.excludedParentAssetSetTypes_.Clone();
       primaryStatus_ = other.primaryStatus_;
       primaryStatusReasons_ = other.primaryStatusReasons_.Clone();
+      demandGenAdGroupSettings_ = other.demandGenAdGroupSettings_ != null ? other.demandGenAdGroupSettings_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1043,6 +1067,21 @@ namespace Google.Ads.GoogleAds.V19.Resources {
       get { return primaryStatusReasons_; }
     }
 
+    /// <summary>Field number for the "demand_gen_ad_group_settings" field.</summary>
+    public const int DemandGenAdGroupSettingsFieldNumber = 91;
+    private global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.DemandGenAdGroupSettings demandGenAdGroupSettings_;
+    /// <summary>
+    /// Settings for Demand Gen ad groups.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.DemandGenAdGroupSettings DemandGenAdGroupSettings {
+      get { return demandGenAdGroupSettings_; }
+      set {
+        demandGenAdGroupSettings_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1093,6 +1132,7 @@ namespace Google.Ads.GoogleAds.V19.Resources {
       if(!excludedParentAssetSetTypes_.Equals(other.excludedParentAssetSetTypes_)) return false;
       if (PrimaryStatus != other.PrimaryStatus) return false;
       if(!primaryStatusReasons_.Equals(other.primaryStatusReasons_)) return false;
+      if (!object.Equals(DemandGenAdGroupSettings, other.DemandGenAdGroupSettings)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1135,6 +1175,7 @@ namespace Google.Ads.GoogleAds.V19.Resources {
       hash ^= excludedParentAssetSetTypes_.GetHashCode();
       if (PrimaryStatus != global::Google.Ads.GoogleAds.V19.Enums.AdGroupPrimaryStatusEnum.Types.AdGroupPrimaryStatus.Unspecified) hash ^= PrimaryStatus.GetHashCode();
       hash ^= primaryStatusReasons_.GetHashCode();
+      if (demandGenAdGroupSettings_ != null) hash ^= DemandGenAdGroupSettings.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1278,6 +1319,10 @@ namespace Google.Ads.GoogleAds.V19.Resources {
         output.WriteRawTag(152, 4);
         output.WriteBool(ExcludeDemographicExpansion);
       }
+      if (demandGenAdGroupSettings_ != null) {
+        output.WriteRawTag(218, 5);
+        output.WriteMessage(DemandGenAdGroupSettings);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1413,6 +1458,10 @@ namespace Google.Ads.GoogleAds.V19.Resources {
         output.WriteRawTag(152, 4);
         output.WriteBool(ExcludeDemographicExpansion);
       }
+      if (demandGenAdGroupSettings_ != null) {
+        output.WriteRawTag(218, 5);
+        output.WriteMessage(DemandGenAdGroupSettings);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1518,6 +1567,9 @@ namespace Google.Ads.GoogleAds.V19.Resources {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) PrimaryStatus);
       }
       size += primaryStatusReasons_.CalculateSize(_repeated_primaryStatusReasons_codec);
+      if (demandGenAdGroupSettings_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(DemandGenAdGroupSettings);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1631,6 +1683,12 @@ namespace Google.Ads.GoogleAds.V19.Resources {
         PrimaryStatus = other.PrimaryStatus;
       }
       primaryStatusReasons_.Add(other.primaryStatusReasons_);
+      if (other.demandGenAdGroupSettings_ != null) {
+        if (demandGenAdGroupSettings_ == null) {
+          DemandGenAdGroupSettings = new global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.DemandGenAdGroupSettings();
+        }
+        DemandGenAdGroupSettings.MergeFrom(other.DemandGenAdGroupSettings);
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1795,6 +1853,13 @@ namespace Google.Ads.GoogleAds.V19.Resources {
             ExcludeDemographicExpansion = input.ReadBool();
             break;
           }
+          case 730: {
+            if (demandGenAdGroupSettings_ == null) {
+              DemandGenAdGroupSettings = new global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.DemandGenAdGroupSettings();
+            }
+            input.ReadMessage(DemandGenAdGroupSettings);
+            break;
+          }
         }
       }
     #endif
@@ -1957,6 +2022,13 @@ namespace Google.Ads.GoogleAds.V19.Resources {
           }
           case 536: {
             ExcludeDemographicExpansion = input.ReadBool();
+            break;
+          }
+          case 730: {
+            if (demandGenAdGroupSettings_ == null) {
+              DemandGenAdGroupSettings = new global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.DemandGenAdGroupSettings();
+            }
+            input.ReadMessage(DemandGenAdGroupSettings);
             break;
           }
         }
@@ -2164,6 +2236,964 @@ namespace Google.Ads.GoogleAds.V19.Resources {
           }
         }
         #endif
+
+      }
+
+      /// <summary>
+      /// Settings for Demand Gen ad groups.
+      /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+      public sealed partial class DemandGenAdGroupSettings : pb::IMessage<DemandGenAdGroupSettings>
+      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          , pb::IBufferMessage
+      #endif
+      {
+        private static readonly pb::MessageParser<DemandGenAdGroupSettings> _parser = new pb::MessageParser<DemandGenAdGroupSettings>(() => new DemandGenAdGroupSettings());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public static pb::MessageParser<DemandGenAdGroupSettings> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Descriptor.NestedTypes[1]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public DemandGenAdGroupSettings() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public DemandGenAdGroupSettings(DemandGenAdGroupSettings other) : this() {
+          channelControls_ = other.channelControls_ != null ? other.channelControls_.Clone() : null;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public DemandGenAdGroupSettings Clone() {
+          return new DemandGenAdGroupSettings(this);
+        }
+
+        /// <summary>Field number for the "channel_controls" field.</summary>
+        public const int ChannelControlsFieldNumber = 1;
+        private global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types.DemandGenChannelControls channelControls_;
+        /// <summary>
+        /// Channel controls for Demand Gen ad groups.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types.DemandGenChannelControls ChannelControls {
+          get { return channelControls_; }
+          set {
+            channelControls_ = value;
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override bool Equals(object other) {
+          return Equals(other as DemandGenAdGroupSettings);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool Equals(DemandGenAdGroupSettings other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (!object.Equals(ChannelControls, other.ChannelControls)) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (channelControls_ != null) hash ^= ChannelControls.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void WriteTo(pb::CodedOutputStream output) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          output.WriteRawMessage(this);
+        #else
+          if (channelControls_ != null) {
+            output.WriteRawTag(10);
+            output.WriteMessage(ChannelControls);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+          if (channelControls_ != null) {
+            output.WriteRawTag(10);
+            output.WriteMessage(ChannelControls);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(ref output);
+          }
+        }
+        #endif
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public int CalculateSize() {
+          int size = 0;
+          if (channelControls_ != null) {
+            size += 1 + pb::CodedOutputStream.ComputeMessageSize(ChannelControls);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void MergeFrom(DemandGenAdGroupSettings other) {
+          if (other == null) {
+            return;
+          }
+          if (other.channelControls_ != null) {
+            if (channelControls_ == null) {
+              ChannelControls = new global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types.DemandGenChannelControls();
+            }
+            ChannelControls.MergeFrom(other.ChannelControls);
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void MergeFrom(pb::CodedInputStream input) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          input.ReadRawMessage(this);
+        #else
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                if (channelControls_ == null) {
+                  ChannelControls = new global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types.DemandGenChannelControls();
+                }
+                input.ReadMessage(ChannelControls);
+                break;
+              }
+            }
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                break;
+              case 10: {
+                if (channelControls_ == null) {
+                  ChannelControls = new global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types.DemandGenChannelControls();
+                }
+                input.ReadMessage(ChannelControls);
+                break;
+              }
+            }
+          }
+        }
+        #endif
+
+        #region Nested types
+        /// <summary>Container for nested types declared in the DemandGenAdGroupSettings message type.</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public static partial class Types {
+          /// <summary>
+          /// Channel controls for Demand Gen ad groups.
+          /// </summary>
+          [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+          public sealed partial class DemandGenChannelControls : pb::IMessage<DemandGenChannelControls>
+          #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+              , pb::IBufferMessage
+          #endif
+          {
+            private static readonly pb::MessageParser<DemandGenChannelControls> _parser = new pb::MessageParser<DemandGenChannelControls>(() => new DemandGenChannelControls());
+            private pb::UnknownFieldSet _unknownFields;
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public static pb::MessageParser<DemandGenChannelControls> Parser { get { return _parser; } }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public static pbr::MessageDescriptor Descriptor {
+              get { return global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.DemandGenAdGroupSettings.Descriptor.NestedTypes[0]; }
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            pbr::MessageDescriptor pb::IMessage.Descriptor {
+              get { return Descriptor; }
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public DemandGenChannelControls() {
+              OnConstruction();
+            }
+
+            partial void OnConstruction();
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public DemandGenChannelControls(DemandGenChannelControls other) : this() {
+              channelConfig_ = other.channelConfig_;
+              switch (other.ChannelConfigurationCase) {
+                case ChannelConfigurationOneofCase.ChannelStrategy:
+                  ChannelStrategy = other.ChannelStrategy;
+                  break;
+                case ChannelConfigurationOneofCase.SelectedChannels:
+                  SelectedChannels = other.SelectedChannels.Clone();
+                  break;
+              }
+
+              _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public DemandGenChannelControls Clone() {
+              return new DemandGenChannelControls(this);
+            }
+
+            /// <summary>Field number for the "channel_config" field.</summary>
+            public const int ChannelConfigFieldNumber = 1;
+            private global::Google.Ads.GoogleAds.V19.Enums.DemandGenChannelConfigEnum.Types.DemandGenChannelConfig channelConfig_ = global::Google.Ads.GoogleAds.V19.Enums.DemandGenChannelConfigEnum.Types.DemandGenChannelConfig.Unspecified;
+            /// <summary>
+            /// Output only. Channel configuration reflecting which field in the oneof
+            /// is populated.
+            /// </summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public global::Google.Ads.GoogleAds.V19.Enums.DemandGenChannelConfigEnum.Types.DemandGenChannelConfig ChannelConfig {
+              get { return channelConfig_; }
+              set {
+                channelConfig_ = value;
+              }
+            }
+
+            /// <summary>Field number for the "channel_strategy" field.</summary>
+            public const int ChannelStrategyFieldNumber = 2;
+            /// <summary>
+            /// High level channel strategy.
+            /// </summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public global::Google.Ads.GoogleAds.V19.Enums.DemandGenChannelStrategyEnum.Types.DemandGenChannelStrategy ChannelStrategy {
+              get { return HasChannelStrategy ? (global::Google.Ads.GoogleAds.V19.Enums.DemandGenChannelStrategyEnum.Types.DemandGenChannelStrategy) channelConfiguration_ : global::Google.Ads.GoogleAds.V19.Enums.DemandGenChannelStrategyEnum.Types.DemandGenChannelStrategy.Unspecified; }
+              set {
+                channelConfiguration_ = value;
+                channelConfigurationCase_ = ChannelConfigurationOneofCase.ChannelStrategy;
+              }
+            }
+            /// <summary>Gets whether the "channel_strategy" field is set</summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public bool HasChannelStrategy {
+              get { return channelConfigurationCase_ == ChannelConfigurationOneofCase.ChannelStrategy; }
+            }
+            /// <summary> Clears the value of the oneof if it's currently set to "channel_strategy" </summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public void ClearChannelStrategy() {
+              if (HasChannelStrategy) {
+                ClearChannelConfiguration();
+              }
+            }
+
+            /// <summary>Field number for the "selected_channels" field.</summary>
+            public const int SelectedChannelsFieldNumber = 3;
+            /// <summary>
+            /// Explicitly selected channels. This field should be set with at
+            /// least one true value when present.
+            /// </summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types.DemandGenChannelControls.Types.DemandGenSelectedChannels SelectedChannels {
+              get { return channelConfigurationCase_ == ChannelConfigurationOneofCase.SelectedChannels ? (global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types.DemandGenChannelControls.Types.DemandGenSelectedChannels) channelConfiguration_ : null; }
+              set {
+                channelConfiguration_ = value;
+                channelConfigurationCase_ = value == null ? ChannelConfigurationOneofCase.None : ChannelConfigurationOneofCase.SelectedChannels;
+              }
+            }
+
+            private object channelConfiguration_;
+            /// <summary>Enum of possible cases for the "channel_configuration" oneof.</summary>
+            public enum ChannelConfigurationOneofCase {
+              None = 0,
+              ChannelStrategy = 2,
+              SelectedChannels = 3,
+            }
+            private ChannelConfigurationOneofCase channelConfigurationCase_ = ChannelConfigurationOneofCase.None;
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public ChannelConfigurationOneofCase ChannelConfigurationCase {
+              get { return channelConfigurationCase_; }
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public void ClearChannelConfiguration() {
+              channelConfigurationCase_ = ChannelConfigurationOneofCase.None;
+              channelConfiguration_ = null;
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public override bool Equals(object other) {
+              return Equals(other as DemandGenChannelControls);
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public bool Equals(DemandGenChannelControls other) {
+              if (ReferenceEquals(other, null)) {
+                return false;
+              }
+              if (ReferenceEquals(other, this)) {
+                return true;
+              }
+              if (ChannelConfig != other.ChannelConfig) return false;
+              if (ChannelStrategy != other.ChannelStrategy) return false;
+              if (!object.Equals(SelectedChannels, other.SelectedChannels)) return false;
+              if (ChannelConfigurationCase != other.ChannelConfigurationCase) return false;
+              return Equals(_unknownFields, other._unknownFields);
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public override int GetHashCode() {
+              int hash = 1;
+              if (ChannelConfig != global::Google.Ads.GoogleAds.V19.Enums.DemandGenChannelConfigEnum.Types.DemandGenChannelConfig.Unspecified) hash ^= ChannelConfig.GetHashCode();
+              if (HasChannelStrategy) hash ^= ChannelStrategy.GetHashCode();
+              if (channelConfigurationCase_ == ChannelConfigurationOneofCase.SelectedChannels) hash ^= SelectedChannels.GetHashCode();
+              hash ^= (int) channelConfigurationCase_;
+              if (_unknownFields != null) {
+                hash ^= _unknownFields.GetHashCode();
+              }
+              return hash;
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public override string ToString() {
+              return pb::JsonFormatter.ToDiagnosticString(this);
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public void WriteTo(pb::CodedOutputStream output) {
+            #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+              output.WriteRawMessage(this);
+            #else
+              if (ChannelConfig != global::Google.Ads.GoogleAds.V19.Enums.DemandGenChannelConfigEnum.Types.DemandGenChannelConfig.Unspecified) {
+                output.WriteRawTag(8);
+                output.WriteEnum((int) ChannelConfig);
+              }
+              if (HasChannelStrategy) {
+                output.WriteRawTag(16);
+                output.WriteEnum((int) ChannelStrategy);
+              }
+              if (channelConfigurationCase_ == ChannelConfigurationOneofCase.SelectedChannels) {
+                output.WriteRawTag(26);
+                output.WriteMessage(SelectedChannels);
+              }
+              if (_unknownFields != null) {
+                _unknownFields.WriteTo(output);
+              }
+            #endif
+            }
+
+            #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+              if (ChannelConfig != global::Google.Ads.GoogleAds.V19.Enums.DemandGenChannelConfigEnum.Types.DemandGenChannelConfig.Unspecified) {
+                output.WriteRawTag(8);
+                output.WriteEnum((int) ChannelConfig);
+              }
+              if (HasChannelStrategy) {
+                output.WriteRawTag(16);
+                output.WriteEnum((int) ChannelStrategy);
+              }
+              if (channelConfigurationCase_ == ChannelConfigurationOneofCase.SelectedChannels) {
+                output.WriteRawTag(26);
+                output.WriteMessage(SelectedChannels);
+              }
+              if (_unknownFields != null) {
+                _unknownFields.WriteTo(ref output);
+              }
+            }
+            #endif
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public int CalculateSize() {
+              int size = 0;
+              if (ChannelConfig != global::Google.Ads.GoogleAds.V19.Enums.DemandGenChannelConfigEnum.Types.DemandGenChannelConfig.Unspecified) {
+                size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ChannelConfig);
+              }
+              if (HasChannelStrategy) {
+                size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ChannelStrategy);
+              }
+              if (channelConfigurationCase_ == ChannelConfigurationOneofCase.SelectedChannels) {
+                size += 1 + pb::CodedOutputStream.ComputeMessageSize(SelectedChannels);
+              }
+              if (_unknownFields != null) {
+                size += _unknownFields.CalculateSize();
+              }
+              return size;
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public void MergeFrom(DemandGenChannelControls other) {
+              if (other == null) {
+                return;
+              }
+              if (other.ChannelConfig != global::Google.Ads.GoogleAds.V19.Enums.DemandGenChannelConfigEnum.Types.DemandGenChannelConfig.Unspecified) {
+                ChannelConfig = other.ChannelConfig;
+              }
+              switch (other.ChannelConfigurationCase) {
+                case ChannelConfigurationOneofCase.ChannelStrategy:
+                  ChannelStrategy = other.ChannelStrategy;
+                  break;
+                case ChannelConfigurationOneofCase.SelectedChannels:
+                  if (SelectedChannels == null) {
+                    SelectedChannels = new global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types.DemandGenChannelControls.Types.DemandGenSelectedChannels();
+                  }
+                  SelectedChannels.MergeFrom(other.SelectedChannels);
+                  break;
+              }
+
+              _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+            }
+
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public void MergeFrom(pb::CodedInputStream input) {
+            #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+              input.ReadRawMessage(this);
+            #else
+              uint tag;
+              while ((tag = input.ReadTag()) != 0) {
+                switch(tag) {
+                  default:
+                    _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                    break;
+                  case 8: {
+                    ChannelConfig = (global::Google.Ads.GoogleAds.V19.Enums.DemandGenChannelConfigEnum.Types.DemandGenChannelConfig) input.ReadEnum();
+                    break;
+                  }
+                  case 16: {
+                    channelConfiguration_ = input.ReadEnum();
+                    channelConfigurationCase_ = ChannelConfigurationOneofCase.ChannelStrategy;
+                    break;
+                  }
+                  case 26: {
+                    global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types.DemandGenChannelControls.Types.DemandGenSelectedChannels subBuilder = new global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types.DemandGenChannelControls.Types.DemandGenSelectedChannels();
+                    if (channelConfigurationCase_ == ChannelConfigurationOneofCase.SelectedChannels) {
+                      subBuilder.MergeFrom(SelectedChannels);
+                    }
+                    input.ReadMessage(subBuilder);
+                    SelectedChannels = subBuilder;
+                    break;
+                  }
+                }
+              }
+            #endif
+            }
+
+            #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+              uint tag;
+              while ((tag = input.ReadTag()) != 0) {
+                switch(tag) {
+                  default:
+                    _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                    break;
+                  case 8: {
+                    ChannelConfig = (global::Google.Ads.GoogleAds.V19.Enums.DemandGenChannelConfigEnum.Types.DemandGenChannelConfig) input.ReadEnum();
+                    break;
+                  }
+                  case 16: {
+                    channelConfiguration_ = input.ReadEnum();
+                    channelConfigurationCase_ = ChannelConfigurationOneofCase.ChannelStrategy;
+                    break;
+                  }
+                  case 26: {
+                    global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types.DemandGenChannelControls.Types.DemandGenSelectedChannels subBuilder = new global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types.DemandGenChannelControls.Types.DemandGenSelectedChannels();
+                    if (channelConfigurationCase_ == ChannelConfigurationOneofCase.SelectedChannels) {
+                      subBuilder.MergeFrom(SelectedChannels);
+                    }
+                    input.ReadMessage(subBuilder);
+                    SelectedChannels = subBuilder;
+                    break;
+                  }
+                }
+              }
+            }
+            #endif
+
+            #region Nested types
+            /// <summary>Container for nested types declared in the DemandGenChannelControls message type.</summary>
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+            public static partial class Types {
+              /// <summary>
+              /// Explicitly selected channels for channel controls in Demand Gen ad
+              /// groups.
+              /// </summary>
+              [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+              public sealed partial class DemandGenSelectedChannels : pb::IMessage<DemandGenSelectedChannels>
+              #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+                  , pb::IBufferMessage
+              #endif
+              {
+                private static readonly pb::MessageParser<DemandGenSelectedChannels> _parser = new pb::MessageParser<DemandGenSelectedChannels>(() => new DemandGenSelectedChannels());
+                private pb::UnknownFieldSet _unknownFields;
+                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+                public static pb::MessageParser<DemandGenSelectedChannels> Parser { get { return _parser; } }
+
+                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+                public static pbr::MessageDescriptor Descriptor {
+                  get { return global::Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types.DemandGenChannelControls.Descriptor.NestedTypes[0]; }
+                }
+
+                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+                pbr::MessageDescriptor pb::IMessage.Descriptor {
+                  get { return Descriptor; }
+                }
+
+                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+                public DemandGenSelectedChannels() {
+                  OnConstruction();
+                }
+
+                partial void OnConstruction();
+
+                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+                public DemandGenSelectedChannels(DemandGenSelectedChannels other) : this() {
+                  youtubeInStream_ = other.youtubeInStream_;
+                  youtubeInFeed_ = other.youtubeInFeed_;
+                  youtubeShorts_ = other.youtubeShorts_;
+                  discover_ = other.discover_;
+                  gmail_ = other.gmail_;
+                  display_ = other.display_;
+                  _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+                }
+
+                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+                public DemandGenSelectedChannels Clone() {
+                  return new DemandGenSelectedChannels(this);
+                }
+
+                /// <summary>Field number for the "youtube_in_stream" field.</summary>
+                public const int YoutubeInStreamFieldNumber = 1;
+                private bool youtubeInStream_;
+                /// <summary>
+                /// Whether to enable ads on the YouTube In-Stream channel.
+                /// </summary>
+                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+                public bool YoutubeInStream {
+                  get { return youtubeInStream_; }
+                  set {
+                    youtubeInStream_ = value;
+                  }
+                }
+
+                /// <summary>Field number for the "youtube_in_feed" field.</summary>
+                public const int YoutubeInFeedFieldNumber = 2;
+                private bool youtubeInFeed_;
+                /// <summary>
+                /// Whether to enable ads on the YouTube In-Feed channel.
+                /// </summary>
+                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+                public bool YoutubeInFeed {
+                  get { return youtubeInFeed_; }
+                  set {
+                    youtubeInFeed_ = value;
+                  }
+                }
+
+                /// <summary>Field number for the "youtube_shorts" field.</summary>
+                public const int YoutubeShortsFieldNumber = 3;
+                private bool youtubeShorts_;
+                /// <summary>
+                /// Whether to enable ads on the YouTube Shorts channel.
+                /// </summary>
+                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+                public bool YoutubeShorts {
+                  get { return youtubeShorts_; }
+                  set {
+                    youtubeShorts_ = value;
+                  }
+                }
+
+                /// <summary>Field number for the "discover" field.</summary>
+                public const int DiscoverFieldNumber = 4;
+                private bool discover_;
+                /// <summary>
+                /// Whether to enable ads on the Discover channel.
+                /// </summary>
+                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+                public bool Discover {
+                  get { return discover_; }
+                  set {
+                    discover_ = value;
+                  }
+                }
+
+                /// <summary>Field number for the "gmail" field.</summary>
+                public const int GmailFieldNumber = 5;
+                private bool gmail_;
+                /// <summary>
+                /// Whether to enable ads on the Gmail channel.
+                /// </summary>
+                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+                public bool Gmail {
+                  get { return gmail_; }
+                  set {
+                    gmail_ = value;
+                  }
+                }
+
+                /// <summary>Field number for the "display" field.</summary>
+                public const int DisplayFieldNumber = 6;
+                private bool display_;
+                /// <summary>
+                /// Whether to enable ads on the Display channel.
+                /// </summary>
+                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+                public bool Display {
+                  get { return display_; }
+                  set {
+                    display_ = value;
+                  }
+                }
+
+                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+                public override bool Equals(object other) {
+                  return Equals(other as DemandGenSelectedChannels);
+                }
+
+                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+                public bool Equals(DemandGenSelectedChannels other) {
+                  if (ReferenceEquals(other, null)) {
+                    return false;
+                  }
+                  if (ReferenceEquals(other, this)) {
+                    return true;
+                  }
+                  if (YoutubeInStream != other.YoutubeInStream) return false;
+                  if (YoutubeInFeed != other.YoutubeInFeed) return false;
+                  if (YoutubeShorts != other.YoutubeShorts) return false;
+                  if (Discover != other.Discover) return false;
+                  if (Gmail != other.Gmail) return false;
+                  if (Display != other.Display) return false;
+                  return Equals(_unknownFields, other._unknownFields);
+                }
+
+                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+                public override int GetHashCode() {
+                  int hash = 1;
+                  if (YoutubeInStream != false) hash ^= YoutubeInStream.GetHashCode();
+                  if (YoutubeInFeed != false) hash ^= YoutubeInFeed.GetHashCode();
+                  if (YoutubeShorts != false) hash ^= YoutubeShorts.GetHashCode();
+                  if (Discover != false) hash ^= Discover.GetHashCode();
+                  if (Gmail != false) hash ^= Gmail.GetHashCode();
+                  if (Display != false) hash ^= Display.GetHashCode();
+                  if (_unknownFields != null) {
+                    hash ^= _unknownFields.GetHashCode();
+                  }
+                  return hash;
+                }
+
+                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+                public override string ToString() {
+                  return pb::JsonFormatter.ToDiagnosticString(this);
+                }
+
+                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+                public void WriteTo(pb::CodedOutputStream output) {
+                #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+                  output.WriteRawMessage(this);
+                #else
+                  if (YoutubeInStream != false) {
+                    output.WriteRawTag(8);
+                    output.WriteBool(YoutubeInStream);
+                  }
+                  if (YoutubeInFeed != false) {
+                    output.WriteRawTag(16);
+                    output.WriteBool(YoutubeInFeed);
+                  }
+                  if (YoutubeShorts != false) {
+                    output.WriteRawTag(24);
+                    output.WriteBool(YoutubeShorts);
+                  }
+                  if (Discover != false) {
+                    output.WriteRawTag(32);
+                    output.WriteBool(Discover);
+                  }
+                  if (Gmail != false) {
+                    output.WriteRawTag(40);
+                    output.WriteBool(Gmail);
+                  }
+                  if (Display != false) {
+                    output.WriteRawTag(48);
+                    output.WriteBool(Display);
+                  }
+                  if (_unknownFields != null) {
+                    _unknownFields.WriteTo(output);
+                  }
+                #endif
+                }
+
+                #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+                void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+                  if (YoutubeInStream != false) {
+                    output.WriteRawTag(8);
+                    output.WriteBool(YoutubeInStream);
+                  }
+                  if (YoutubeInFeed != false) {
+                    output.WriteRawTag(16);
+                    output.WriteBool(YoutubeInFeed);
+                  }
+                  if (YoutubeShorts != false) {
+                    output.WriteRawTag(24);
+                    output.WriteBool(YoutubeShorts);
+                  }
+                  if (Discover != false) {
+                    output.WriteRawTag(32);
+                    output.WriteBool(Discover);
+                  }
+                  if (Gmail != false) {
+                    output.WriteRawTag(40);
+                    output.WriteBool(Gmail);
+                  }
+                  if (Display != false) {
+                    output.WriteRawTag(48);
+                    output.WriteBool(Display);
+                  }
+                  if (_unknownFields != null) {
+                    _unknownFields.WriteTo(ref output);
+                  }
+                }
+                #endif
+
+                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+                public int CalculateSize() {
+                  int size = 0;
+                  if (YoutubeInStream != false) {
+                    size += 1 + 1;
+                  }
+                  if (YoutubeInFeed != false) {
+                    size += 1 + 1;
+                  }
+                  if (YoutubeShorts != false) {
+                    size += 1 + 1;
+                  }
+                  if (Discover != false) {
+                    size += 1 + 1;
+                  }
+                  if (Gmail != false) {
+                    size += 1 + 1;
+                  }
+                  if (Display != false) {
+                    size += 1 + 1;
+                  }
+                  if (_unknownFields != null) {
+                    size += _unknownFields.CalculateSize();
+                  }
+                  return size;
+                }
+
+                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+                public void MergeFrom(DemandGenSelectedChannels other) {
+                  if (other == null) {
+                    return;
+                  }
+                  if (other.YoutubeInStream != false) {
+                    YoutubeInStream = other.YoutubeInStream;
+                  }
+                  if (other.YoutubeInFeed != false) {
+                    YoutubeInFeed = other.YoutubeInFeed;
+                  }
+                  if (other.YoutubeShorts != false) {
+                    YoutubeShorts = other.YoutubeShorts;
+                  }
+                  if (other.Discover != false) {
+                    Discover = other.Discover;
+                  }
+                  if (other.Gmail != false) {
+                    Gmail = other.Gmail;
+                  }
+                  if (other.Display != false) {
+                    Display = other.Display;
+                  }
+                  _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+                }
+
+                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+                public void MergeFrom(pb::CodedInputStream input) {
+                #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+                  input.ReadRawMessage(this);
+                #else
+                  uint tag;
+                  while ((tag = input.ReadTag()) != 0) {
+                    switch(tag) {
+                      default:
+                        _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                        break;
+                      case 8: {
+                        YoutubeInStream = input.ReadBool();
+                        break;
+                      }
+                      case 16: {
+                        YoutubeInFeed = input.ReadBool();
+                        break;
+                      }
+                      case 24: {
+                        YoutubeShorts = input.ReadBool();
+                        break;
+                      }
+                      case 32: {
+                        Discover = input.ReadBool();
+                        break;
+                      }
+                      case 40: {
+                        Gmail = input.ReadBool();
+                        break;
+                      }
+                      case 48: {
+                        Display = input.ReadBool();
+                        break;
+                      }
+                    }
+                  }
+                #endif
+                }
+
+                #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+                void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+                  uint tag;
+                  while ((tag = input.ReadTag()) != 0) {
+                    switch(tag) {
+                      default:
+                        _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                        break;
+                      case 8: {
+                        YoutubeInStream = input.ReadBool();
+                        break;
+                      }
+                      case 16: {
+                        YoutubeInFeed = input.ReadBool();
+                        break;
+                      }
+                      case 24: {
+                        YoutubeShorts = input.ReadBool();
+                        break;
+                      }
+                      case 32: {
+                        Discover = input.ReadBool();
+                        break;
+                      }
+                      case 40: {
+                        Gmail = input.ReadBool();
+                        break;
+                      }
+                      case 48: {
+                        Display = input.ReadBool();
+                        break;
+                      }
+                    }
+                  }
+                }
+                #endif
+
+              }
+
+            }
+            #endregion
+
+          }
+
+        }
+        #endregion
 
       }
 

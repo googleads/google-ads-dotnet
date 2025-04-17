@@ -31,7 +31,7 @@ namespace Google.Ads.GoogleAds.V19.Resources {
             "cy9nb29nbGVhZHMvdjE5L2VudW1zL2xvY2FsX3NlcnZpY2VzX2xlYWRfc3Rh",
             "dHVzLnByb3RvGj1nb29nbGUvYWRzL2dvb2dsZWFkcy92MTkvZW51bXMvbG9j",
             "YWxfc2VydmljZXNfbGVhZF90eXBlLnByb3RvGh9nb29nbGUvYXBpL2ZpZWxk",
-            "X2JlaGF2aW9yLnByb3RvGhlnb29nbGUvYXBpL3Jlc291cmNlLnByb3RvIqwG",
+            "X2JlaGF2aW9yLnByb3RvGhlnb29nbGUvYXBpL3Jlc291cmNlLnByb3RvItIG",
             "ChFMb2NhbFNlcnZpY2VzTGVhZBJJCg1yZXNvdXJjZV9uYW1lGAEgASgJQjLg",
             "QQP6QSwKKmdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9Mb2NhbFNlcnZpY2Vz",
             "TGVhZBIPCgJpZBgCIAEoA0ID4EEDEhgKC2NhdGVnb3J5X2lkGAMgASgJQgPg",
@@ -46,28 +46,29 @@ namespace Google.Ads.GoogleAds.V19.Resources {
             "ZRgKIAEoCzIoLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxOS5yZXNvdXJjZXMu",
             "Tm90ZUID4EEDSACIAQESGQoMbGVhZF9jaGFyZ2VkGAsgASgIQgPgQQMSUwoO",
             "Y3JlZGl0X2RldGFpbHMYDCABKAsyMS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MTkucmVzb3VyY2VzLkNyZWRpdERldGFpbHNCA+BBA0gBiAEBOnTqQXEKKmdv",
-            "b2dsZWFkcy5nb29nbGVhcGlzLmNvbS9Mb2NhbFNlcnZpY2VzTGVhZBJDY3Vz",
-            "dG9tZXJzL3tjdXN0b21lcl9pZH0vbG9jYWxTZXJ2aWNlc0xlYWRzL3tsb2Nh",
-            "bF9zZXJ2aWNlc19sZWFkX2lkfUIHCgVfbm90ZUIRCg9fY3JlZGl0X2RldGFp",
-            "bHMiWwoOQ29udGFjdERldGFpbHMSGQoMcGhvbmVfbnVtYmVyGAEgASgJQgPg",
-            "QQMSEgoFZW1haWwYAiABKAlCA+BBAxIaCg1jb25zdW1lcl9uYW1lGAMgASgJ",
-            "QgPgQQMiPQoETm90ZRIbCg5lZGl0X2RhdGVfdGltZRgBIAEoCUID4EEDEhgK",
-            "C2Rlc2NyaXB0aW9uGAIgASgJQgPgQQMipQEKDUNyZWRpdERldGFpbHMSYwoM",
-            "Y3JlZGl0X3N0YXRlGAEgASgOMkguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5",
-            "LmVudW1zLkxvY2FsU2VydmljZXNDcmVkaXRTdGF0ZUVudW0uQ3JlZGl0U3Rh",
-            "dGVCA+BBAxIvCiJjcmVkaXRfc3RhdGVfbGFzdF91cGRhdGVfZGF0ZV90aW1l",
-            "GAIgASgJQgPgQQNCiAIKJmNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTku",
-            "cmVzb3VyY2VzQhZMb2NhbFNlcnZpY2VzTGVhZFByb3RvUAFaS2dvb2dsZS5n",
-            "b2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92",
-            "MTkvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIkdvb2dsZS5BZHMuR29v",
-            "Z2xlQWRzLlYxOS5SZXNvdXJjZXPKAiJHb29nbGVcQWRzXEdvb2dsZUFkc1xW",
-            "MTlcUmVzb3VyY2Vz6gImR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE5OjpS",
-            "ZXNvdXJjZXNiBnByb3RvMw=="));
+            "MTkucmVzb3VyY2VzLkNyZWRpdERldGFpbHNCA+BBA0gBiAEBEiQKF2xlYWRf",
+            "ZmVlZGJhY2tfc3VibWl0dGVkGA0gASgIQgPgQQM6dOpBcQoqZ29vZ2xlYWRz",
+            "Lmdvb2dsZWFwaXMuY29tL0xvY2FsU2VydmljZXNMZWFkEkNjdXN0b21lcnMv",
+            "e2N1c3RvbWVyX2lkfS9sb2NhbFNlcnZpY2VzTGVhZHMve2xvY2FsX3NlcnZp",
+            "Y2VzX2xlYWRfaWR9QgcKBV9ub3RlQhEKD19jcmVkaXRfZGV0YWlscyJbCg5D",
+            "b250YWN0RGV0YWlscxIZCgxwaG9uZV9udW1iZXIYASABKAlCA+BBAxISCgVl",
+            "bWFpbBgCIAEoCUID4EEDEhoKDWNvbnN1bWVyX25hbWUYAyABKAlCA+BBAyI9",
+            "CgROb3RlEhsKDmVkaXRfZGF0ZV90aW1lGAEgASgJQgPgQQMSGAoLZGVzY3Jp",
+            "cHRpb24YAiABKAlCA+BBAyKlAQoNQ3JlZGl0RGV0YWlscxJjCgxjcmVkaXRf",
+            "c3RhdGUYASABKA4ySC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTkuZW51bXMu",
+            "TG9jYWxTZXJ2aWNlc0NyZWRpdFN0YXRlRW51bS5DcmVkaXRTdGF0ZUID4EED",
+            "Ei8KImNyZWRpdF9zdGF0ZV9sYXN0X3VwZGF0ZV9kYXRlX3RpbWUYAiABKAlC",
+            "A+BBA0KIAgomY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxOS5yZXNvdXJj",
+            "ZXNCFkxvY2FsU2VydmljZXNMZWFkUHJvdG9QAVpLZ29vZ2xlLmdvbGFuZy5v",
+            "cmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YxOS9yZXNv",
+            "dXJjZXM7cmVzb3VyY2VzogIDR0FBqgIiR29vZ2xlLkFkcy5Hb29nbGVBZHMu",
+            "VjE5LlJlc291cmNlc8oCIkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYxOVxSZXNv",
+            "dXJjZXPqAiZHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTk6OlJlc291cmNl",
+            "c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadCreditStateReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Resources.LocalServicesLead), global::Google.Ads.GoogleAds.V19.Resources.LocalServicesLead.Parser, new[]{ "ResourceName", "Id", "CategoryId", "ServiceId", "ContactDetails", "LeadType", "LeadStatus", "CreationDateTime", "Locale", "Note", "LeadCharged", "CreditDetails" }, new[]{ "Note", "CreditDetails" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Resources.LocalServicesLead), global::Google.Ads.GoogleAds.V19.Resources.LocalServicesLead.Parser, new[]{ "ResourceName", "Id", "CategoryId", "ServiceId", "ContactDetails", "LeadType", "LeadStatus", "CreationDateTime", "Locale", "Note", "LeadCharged", "CreditDetails", "LeadFeedbackSubmitted" }, new[]{ "Note", "CreditDetails" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Resources.ContactDetails), global::Google.Ads.GoogleAds.V19.Resources.ContactDetails.Parser, new[]{ "PhoneNumber", "Email", "ConsumerName" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Resources.Note), global::Google.Ads.GoogleAds.V19.Resources.Note.Parser, new[]{ "EditDateTime", "Description" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Resources.CreditDetails), global::Google.Ads.GoogleAds.V19.Resources.CreditDetails.Parser, new[]{ "CreditState", "CreditStateLastUpdateDateTime" }, null, null, null, null)
@@ -130,6 +131,7 @@ namespace Google.Ads.GoogleAds.V19.Resources {
       note_ = other.note_ != null ? other.note_.Clone() : null;
       leadCharged_ = other.leadCharged_;
       creditDetails_ = other.creditDetails_ != null ? other.creditDetails_.Clone() : null;
+      leadFeedbackSubmitted_ = other.leadFeedbackSubmitted_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -331,6 +333,21 @@ namespace Google.Ads.GoogleAds.V19.Resources {
       }
     }
 
+    /// <summary>Field number for the "lead_feedback_submitted" field.</summary>
+    public const int LeadFeedbackSubmittedFieldNumber = 13;
+    private bool leadFeedbackSubmitted_;
+    /// <summary>
+    /// Output only. True if the advertiser submitted feedback for the lead.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool LeadFeedbackSubmitted {
+      get { return leadFeedbackSubmitted_; }
+      set {
+        leadFeedbackSubmitted_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -358,6 +375,7 @@ namespace Google.Ads.GoogleAds.V19.Resources {
       if (!object.Equals(Note, other.Note)) return false;
       if (LeadCharged != other.LeadCharged) return false;
       if (!object.Equals(CreditDetails, other.CreditDetails)) return false;
+      if (LeadFeedbackSubmitted != other.LeadFeedbackSubmitted) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -377,6 +395,7 @@ namespace Google.Ads.GoogleAds.V19.Resources {
       if (note_ != null) hash ^= Note.GetHashCode();
       if (LeadCharged != false) hash ^= LeadCharged.GetHashCode();
       if (creditDetails_ != null) hash ^= CreditDetails.GetHashCode();
+      if (LeadFeedbackSubmitted != false) hash ^= LeadFeedbackSubmitted.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -443,6 +462,10 @@ namespace Google.Ads.GoogleAds.V19.Resources {
         output.WriteRawTag(98);
         output.WriteMessage(CreditDetails);
       }
+      if (LeadFeedbackSubmitted != false) {
+        output.WriteRawTag(104);
+        output.WriteBool(LeadFeedbackSubmitted);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -501,6 +524,10 @@ namespace Google.Ads.GoogleAds.V19.Resources {
         output.WriteRawTag(98);
         output.WriteMessage(CreditDetails);
       }
+      if (LeadFeedbackSubmitted != false) {
+        output.WriteRawTag(104);
+        output.WriteBool(LeadFeedbackSubmitted);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -546,6 +573,9 @@ namespace Google.Ads.GoogleAds.V19.Resources {
       }
       if (creditDetails_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(CreditDetails);
+      }
+      if (LeadFeedbackSubmitted != false) {
+        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -603,6 +633,9 @@ namespace Google.Ads.GoogleAds.V19.Resources {
           CreditDetails = new global::Google.Ads.GoogleAds.V19.Resources.CreditDetails();
         }
         CreditDetails.MergeFrom(other.CreditDetails);
+      }
+      if (other.LeadFeedbackSubmitted != false) {
+        LeadFeedbackSubmitted = other.LeadFeedbackSubmitted;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -676,6 +709,10 @@ namespace Google.Ads.GoogleAds.V19.Resources {
             input.ReadMessage(CreditDetails);
             break;
           }
+          case 104: {
+            LeadFeedbackSubmitted = input.ReadBool();
+            break;
+          }
         }
       }
     #endif
@@ -746,6 +783,10 @@ namespace Google.Ads.GoogleAds.V19.Resources {
               CreditDetails = new global::Google.Ads.GoogleAds.V19.Resources.CreditDetails();
             }
             input.ReadMessage(CreditDetails);
+            break;
+          }
+          case 104: {
+            LeadFeedbackSubmitted = input.ReadBool();
             break;
           }
         }

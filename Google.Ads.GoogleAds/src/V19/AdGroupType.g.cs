@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V19.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjJnb29nbGUvYWRzL2dvb2dsZWFkcy92MTkvZW51bXMvYWRfZ3JvdXBfdHlw",
-            "ZS5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LmVudW1zIs0DCg9B",
-            "ZEdyb3VwVHlwZUVudW0iuQMKC0FkR3JvdXBUeXBlEg8KC1VOU1BFQ0lGSUVE",
+            "ZS5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LmVudW1zIuADCg9B",
+            "ZEdyb3VwVHlwZUVudW0izAMKC0FkR3JvdXBUeXBlEg8KC1VOU1BFQ0lGSUVE",
             "EAASCwoHVU5LTk9XThABEhMKD1NFQVJDSF9TVEFOREFSRBACEhQKEERJU1BM",
             "QVlfU1RBTkRBUkQQAxIYChRTSE9QUElOR19QUk9EVUNUX0FEUxAEEg0KCUhP",
             "VEVMX0FEUxAGEhYKElNIT1BQSU5HX1NNQVJUX0FEUxAHEhAKDFZJREVPX0JV",
@@ -36,12 +36,13 @@ namespace Google.Ads.GoogleAds.V19.Enums {
             "UFBJTkdfQ09NUEFSSVNPTl9MSVNUSU5HX0FEUxAOEhYKElBST01PVEVEX0hP",
             "VEVMX0FEUxAPEhQKEFZJREVPX1JFU1BPTlNJVkUQEBIZChVWSURFT19FRkZJ",
             "Q0lFTlRfUkVBQ0gQERIWChJTTUFSVF9DQU1QQUlHTl9BRFMQEhIOCgpUUkFW",
-            "RUxfQURTEBNC6gEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTkuZW51",
-            "bXNCEEFkR3JvdXBUeXBlUHJvdG9QAVpDZ29vZ2xlLmdvbGFuZy5vcmcvZ2Vu",
-            "cHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YxOS9lbnVtcztlbnVt",
-            "c6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYxOS5FbnVtc8oCHkdv",
-            "b2dsZVxBZHNcR29vZ2xlQWRzXFYxOVxFbnVtc+oCIkdvb2dsZTo6QWRzOjpH",
-            "b29nbGVBZHM6OlYxOTo6RW51bXNiBnByb3RvMw=="));
+            "RUxfQURTEBMSEQoNWU9VVFVCRV9BVURJTxAUQuoBCiJjb20uZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjE5LmVudW1zQhBBZEdyb3VwVHlwZVByb3RvUAFaQ2dv",
+            "b2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2ds",
+            "ZWFkcy92MTkvZW51bXM7ZW51bXOiAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2ds",
+            "ZUFkcy5WMTkuRW51bXPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMTlcRW51",
+            "bXPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTk6OkVudW1zYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -291,6 +292,10 @@ namespace Google.Ads.GoogleAds.V19.Enums {
         /// Ad group type for Travel campaigns.
         /// </summary>
         [pbr::OriginalName("TRAVEL_ADS")] TravelAds = 19,
+        /// <summary>
+        /// Ad group type for YouTube Audio campaigns.
+        /// </summary>
+        [pbr::OriginalName("YOUTUBE_AUDIO")] YoutubeAudio = 20,
       }
 
     }

@@ -26,15 +26,15 @@ namespace Google.Ads.GoogleAds.V19.Enums {
           string.Concat(
             "Cj9nb29nbGUvYWRzL2dvb2dsZWFkcy92MTkvZW51bXMvdGFyZ2V0X2ZyZXF1",
             "ZW5jeV90aW1lX3VuaXQucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYx",
-            "OS5lbnVtcyJiChtUYXJnZXRGcmVxdWVuY3lUaW1lVW5pdEVudW0iQwoXVGFy",
+            "OS5lbnVtcyJvChtUYXJnZXRGcmVxdWVuY3lUaW1lVW5pdEVudW0iUAoXVGFy",
             "Z2V0RnJlcXVlbmN5VGltZVVuaXQSDwoLVU5TUEVDSUZJRUQQABILCgdVTktO",
-            "T1dOEAESCgoGV0VFS0xZEAJC9gEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52MTkuZW51bXNCHFRhcmdldEZyZXF1ZW5jeVRpbWVVbml0UHJvdG9QAVpD",
-            "Z29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29v",
-            "Z2xlYWRzL3YxOS9lbnVtcztlbnVtc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29v",
-            "Z2xlQWRzLlYxOS5FbnVtc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYxOVxF",
-            "bnVtc+oCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYxOTo6RW51bXNiBnBy",
-            "b3RvMw=="));
+            "T1dOEAESCgoGV0VFS0xZEAISCwoHTU9OVEhMWRADQvYBCiJjb20uZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjE5LmVudW1zQhxUYXJnZXRGcmVxdWVuY3lUaW1l",
+            "VW5pdFByb3RvUAFaQ2dvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2ds",
+            "ZWFwaXMvYWRzL2dvb2dsZWFkcy92MTkvZW51bXM7ZW51bXOiAgNHQUGqAh5H",
+            "b29nbGUuQWRzLkdvb2dsZUFkcy5WMTkuRW51bXPKAh5Hb29nbGVcQWRzXEdv",
+            "b2dsZUFkc1xWMTlcRW51bXPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpW",
+            "MTk6OkVudW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -220,6 +220,10 @@ namespace Google.Ads.GoogleAds.V19.Enums {
         /// Optimize bidding to reach Target Frequency in a week.
         /// </summary>
         [pbr::OriginalName("WEEKLY")] Weekly = 2,
+        /// <summary>
+        /// Optimize bidding to reach Target Frequency in a month.
+        /// </summary>
+        [pbr::OriginalName("MONTHLY")] Monthly = 3,
       }
 
     }

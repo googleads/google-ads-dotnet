@@ -26,43 +26,81 @@ namespace Google.Ads.GoogleAds.V19.Services {
           string.Concat(
             "CkNnb29nbGUvYWRzL2dvb2dsZWFkcy92MTkvc2VydmljZXMvbG9jYWxfc2Vy",
             "dmljZXNfbGVhZF9zZXJ2aWNlLnByb3RvEiFnb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52MTkuc2VydmljZXMaHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8a",
-            "F2dvb2dsZS9hcGkvY2xpZW50LnByb3RvGh9nb29nbGUvYXBpL2ZpZWxkX2Jl",
-            "aGF2aW9yLnByb3RvGhlnb29nbGUvYXBpL3Jlc291cmNlLnByb3RvGhdnb29n",
-            "bGUvcnBjL3N0YXR1cy5wcm90byKGAQodQXBwZW5kTGVhZENvbnZlcnNhdGlv",
-            "blJlcXVlc3QSGAoLY3VzdG9tZXJfaWQYASABKAlCA+BBAhJLCg1jb252ZXJz",
-            "YXRpb25zGAIgAygLMi8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LnNlcnZp",
-            "Y2VzLkNvbnZlcnNhdGlvbkID4EECInAKHkFwcGVuZExlYWRDb252ZXJzYXRp",
-            "b25SZXNwb25zZRJOCglyZXNwb25zZXMYASADKAsyNi5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52MTkuc2VydmljZXMuQ29udmVyc2F0aW9uT3JFcnJvckID4EEC",
-            "InIKDENvbnZlcnNhdGlvbhJPChNsb2NhbF9zZXJ2aWNlc19sZWFkGAEgASgJ",
-            "QjLgQQL6QSwKKmdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9Mb2NhbFNlcnZp",
-            "Y2VzTGVhZBIRCgR0ZXh0GAIgASgJQgPgQQIimwEKE0NvbnZlcnNhdGlvbk9y",
-            "RXJyb3ISKgogbG9jYWxfc2VydmljZXNfbGVhZF9jb252ZXJzYXRpb24YASAB",
-            "KAlIABIzChVwYXJ0aWFsX2ZhaWx1cmVfZXJyb3IYAiABKAsyEi5nb29nbGUu",
-            "cnBjLlN0YXR1c0gAQiMKIWFwcGVuZF9sZWFkX2NvbnZlcnNhdGlvbl9yZXNw",
-            "b25zZTLtAgoYTG9jYWxTZXJ2aWNlc0xlYWRTZXJ2aWNlEokCChZBcHBlbmRM",
-            "ZWFkQ29udmVyc2F0aW9uEkAuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LnNl",
-            "cnZpY2VzLkFwcGVuZExlYWRDb252ZXJzYXRpb25SZXF1ZXN0GkEuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjE5LnNlcnZpY2VzLkFwcGVuZExlYWRDb252ZXJz",
-            "YXRpb25SZXNwb25zZSJq2kEZY3VzdG9tZXJfaWQsY29udmVyc2F0aW9uc4LT",
-            "5JMCSCJDL3YxOS9jdXN0b21lcnMve2N1c3RvbWVyX2lkPSp9L2xvY2FsU2Vy",
-            "dmljZXM6YXBwZW5kTGVhZENvbnZlcnNhdGlvbjoBKhpFykEYZ29vZ2xlYWRz",
-            "Lmdvb2dsZWFwaXMuY29t0kEnaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20v",
-            "YXV0aC9hZHdvcmRzQokCCiVjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5",
-            "LnNlcnZpY2VzQh1Mb2NhbFNlcnZpY2VzTGVhZFNlcnZpY2VQcm90b1ABWkln",
-            "b29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29n",
-            "bGVhZHMvdjE5L3NlcnZpY2VzO3NlcnZpY2VzogIDR0FBqgIhR29vZ2xlLkFk",
-            "cy5Hb29nbGVBZHMuVjE5LlNlcnZpY2VzygIhR29vZ2xlXEFkc1xHb29nbGVB",
-            "ZHNcVjE5XFNlcnZpY2Vz6gIlR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE5",
-            "OjpTZXJ2aWNlc2IGcHJvdG8z"));
+            "cy52MTkuc2VydmljZXMaUWdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YxOS9lbnVt",
+            "cy9sb2NhbF9zZXJ2aWNlc19sZWFkX2NyZWRpdF9pc3N1YW5jZV9kZWNpc2lv",
+            "bi5wcm90bxpGZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjE5L2VudW1zL2xvY2Fs",
+            "X3NlcnZpY2VzX2xlYWRfc3VydmV5X2Fuc3dlci5wcm90bxpTZ29vZ2xlL2Fk",
+            "cy9nb29nbGVhZHMvdjE5L2VudW1zL2xvY2FsX3NlcnZpY2VzX2xlYWRfc3Vy",
+            "dmV5X2Rpc3NhdGlzZmllZF9yZWFzb24ucHJvdG8aUGdvb2dsZS9hZHMvZ29v",
+            "Z2xlYWRzL3YxOS9lbnVtcy9sb2NhbF9zZXJ2aWNlc19sZWFkX3N1cnZleV9z",
+            "YXRpc2ZpZWRfcmVhc29uLnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25z",
+            "LnByb3RvGhdnb29nbGUvYXBpL2NsaWVudC5wcm90bxofZ29vZ2xlL2FwaS9m",
+            "aWVsZF9iZWhhdmlvci5wcm90bxoZZ29vZ2xlL2FwaS9yZXNvdXJjZS5wcm90",
+            "bxoXZ29vZ2xlL3JwYy9zdGF0dXMucHJvdG8ihgEKHUFwcGVuZExlYWRDb252",
+            "ZXJzYXRpb25SZXF1ZXN0EhgKC2N1c3RvbWVyX2lkGAEgASgJQgPgQQISSwoN",
+            "Y29udmVyc2F0aW9ucxgCIAMoCzIvLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYx",
+            "OS5zZXJ2aWNlcy5Db252ZXJzYXRpb25CA+BBAiJwCh5BcHBlbmRMZWFkQ29u",
+            "dmVyc2F0aW9uUmVzcG9uc2USTgoJcmVzcG9uc2VzGAEgAygLMjYuZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjE5LnNlcnZpY2VzLkNvbnZlcnNhdGlvbk9yRXJy",
+            "b3JCA+BBAiJyCgxDb252ZXJzYXRpb24STwoTbG9jYWxfc2VydmljZXNfbGVh",
+            "ZBgBIAEoCUIy4EEC+kEsCipnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vTG9j",
+            "YWxTZXJ2aWNlc0xlYWQSEQoEdGV4dBgCIAEoCUID4EECIpsBChNDb252ZXJz",
+            "YXRpb25PckVycm9yEioKIGxvY2FsX3NlcnZpY2VzX2xlYWRfY29udmVyc2F0",
+            "aW9uGAEgASgJSAASMwoVcGFydGlhbF9mYWlsdXJlX2Vycm9yGAIgASgLMhIu",
+            "Z29vZ2xlLnJwYy5TdGF0dXNIAEIjCiFhcHBlbmRfbGVhZF9jb252ZXJzYXRp",
+            "b25fcmVzcG9uc2UivQEKD1N1cnZleVNhdGlzZmllZBKGAQoXc3VydmV5X3Nh",
+            "dGlzZmllZF9yZWFzb24YASABKA4yYC5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MTkuZW51bXMuTG9jYWxTZXJ2aWNlc0xlYWRTdXJ2ZXlTYXRpc2ZpZWRSZWFz",
+            "b25FbnVtLlN1cnZleVNhdGlzZmllZFJlYXNvbkID4EECEiEKFG90aGVyX3Jl",
+            "YXNvbl9jb21tZW50GAIgASgJQgPgQQEiyQEKElN1cnZleURpc3NhdGlzZmll",
+            "ZBKPAQoac3VydmV5X2Rpc3NhdGlzZmllZF9yZWFzb24YASABKA4yZi5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MTkuZW51bXMuTG9jYWxTZXJ2aWNlc0xlYWRT",
+            "dXJ2ZXlEaXNzYXRpc2ZpZWRSZWFzb25FbnVtLlN1cnZleURpc3NhdGlzZmll",
+            "ZFJlYXNvbkID4EECEiEKFG90aGVyX3JlYXNvbl9jb21tZW50GAIgASgJQgPg",
+            "QQEiiwMKGlByb3ZpZGVMZWFkRmVlZGJhY2tSZXF1ZXN0EkkKDXJlc291cmNl",
+            "X25hbWUYASABKAlCMuBBAvpBLAoqZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29t",
+            "L0xvY2FsU2VydmljZXNMZWFkEmoKDXN1cnZleV9hbnN3ZXIYAiABKA4yTi5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MTkuZW51bXMuTG9jYWxTZXJ2aWNlc0xl",
+            "YWRTdXJ2ZXlBbnN3ZXJFbnVtLlN1cnZleUFuc3dlckID4EECEk4KEHN1cnZl",
+            "eV9zYXRpc2ZpZWQYAyABKAsyMi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTku",
+            "c2VydmljZXMuU3VydmV5U2F0aXNmaWVkSAASVAoTc3VydmV5X2Rpc3NhdGlz",
+            "ZmllZBgEIAEoCzI1Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxOS5zZXJ2aWNl",
+            "cy5TdXJ2ZXlEaXNzYXRpc2ZpZWRIAEIQCg5zdXJ2ZXlfZGV0YWlscyKpAQob",
+            "UHJvdmlkZUxlYWRGZWVkYmFja1Jlc3BvbnNlEokBChhjcmVkaXRfaXNzdWFu",
+            "Y2VfZGVjaXNpb24YASABKA4yYi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTku",
+            "ZW51bXMuTG9jYWxTZXJ2aWNlc0xlYWRDcmVkaXRJc3N1YW5jZURlY2lzaW9u",
+            "RW51bS5DcmVkaXRJc3N1YW5jZURlY2lzaW9uQgPgQQIy2gQKGExvY2FsU2Vy",
+            "dmljZXNMZWFkU2VydmljZRKJAgoWQXBwZW5kTGVhZENvbnZlcnNhdGlvbhJA",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxOS5zZXJ2aWNlcy5BcHBlbmRMZWFk",
+            "Q29udmVyc2F0aW9uUmVxdWVzdBpBLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYx",
+            "OS5zZXJ2aWNlcy5BcHBlbmRMZWFkQ29udmVyc2F0aW9uUmVzcG9uc2UiatpB",
+            "GWN1c3RvbWVyX2lkLGNvbnZlcnNhdGlvbnOC0+STAkgiQy92MTkvY3VzdG9t",
+            "ZXJzL3tjdXN0b21lcl9pZD0qfS9sb2NhbFNlcnZpY2VzOmFwcGVuZExlYWRD",
+            "b252ZXJzYXRpb246ASoS6gEKE1Byb3ZpZGVMZWFkRmVlZGJhY2sSPS5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MTkuc2VydmljZXMuUHJvdmlkZUxlYWRGZWVk",
+            "YmFja1JlcXVlc3QaPi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTkuc2Vydmlj",
+            "ZXMuUHJvdmlkZUxlYWRGZWVkYmFja1Jlc3BvbnNlIlSC0+STAk4iSS92MTkv",
+            "e3Jlc291cmNlX25hbWU9Y3VzdG9tZXJzLyovbG9jYWxTZXJ2aWNlc0xlYWRz",
+            "Lyp9OnByb3ZpZGVMZWFkRmVlZGJhY2s6ASoaRcpBGGdvb2dsZWFkcy5nb29n",
+            "bGVhcGlzLmNvbdJBJ2h0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgv",
+            "YWR3b3Jkc0KJAgolY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxOS5zZXJ2",
+            "aWNlc0IdTG9jYWxTZXJ2aWNlc0xlYWRTZXJ2aWNlUHJvdG9QAVpJZ29vZ2xl",
+            "LmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRz",
+            "L3YxOS9zZXJ2aWNlcztzZXJ2aWNlc6ICA0dBQaoCIUdvb2dsZS5BZHMuR29v",
+            "Z2xlQWRzLlYxOS5TZXJ2aWNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYx",
+            "OVxTZXJ2aWNlc+oCJUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYxOTo6U2Vy",
+            "dmljZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadCreditIssuanceDecisionReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveyAnswerReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveyDissatisfiedReasonReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveySatisfiedReasonReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Services.AppendLeadConversationRequest), global::Google.Ads.GoogleAds.V19.Services.AppendLeadConversationRequest.Parser, new[]{ "CustomerId", "Conversations" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Services.AppendLeadConversationResponse), global::Google.Ads.GoogleAds.V19.Services.AppendLeadConversationResponse.Parser, new[]{ "Responses" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Services.Conversation), global::Google.Ads.GoogleAds.V19.Services.Conversation.Parser, new[]{ "LocalServicesLead", "Text" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Services.ConversationOrError), global::Google.Ads.GoogleAds.V19.Services.ConversationOrError.Parser, new[]{ "LocalServicesLeadConversation", "PartialFailureError" }, new[]{ "AppendLeadConversationResponse" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Services.ConversationOrError), global::Google.Ads.GoogleAds.V19.Services.ConversationOrError.Parser, new[]{ "LocalServicesLeadConversation", "PartialFailureError" }, new[]{ "AppendLeadConversationResponse" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Services.SurveySatisfied), global::Google.Ads.GoogleAds.V19.Services.SurveySatisfied.Parser, new[]{ "SurveySatisfiedReason", "OtherReasonComment" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Services.SurveyDissatisfied), global::Google.Ads.GoogleAds.V19.Services.SurveyDissatisfied.Parser, new[]{ "SurveyDissatisfiedReason", "OtherReasonComment" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Services.ProvideLeadFeedbackRequest), global::Google.Ads.GoogleAds.V19.Services.ProvideLeadFeedbackRequest.Parser, new[]{ "ResourceName", "SurveyAnswer", "SurveySatisfied", "SurveyDissatisfied" }, new[]{ "SurveyDetails" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Services.ProvideLeadFeedbackResponse), global::Google.Ads.GoogleAds.V19.Services.ProvideLeadFeedbackResponse.Parser, new[]{ "CreditIssuanceDecision" }, null, null, null, null)
           }));
     }
     #endregion
@@ -1006,6 +1044,1055 @@ namespace Google.Ads.GoogleAds.V19.Services {
             }
             input.ReadMessage(subBuilder);
             PartialFailureError = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Details about various factors for being satisfied with the lead.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class SurveySatisfied : pb::IMessage<SurveySatisfied>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SurveySatisfied> _parser = new pb::MessageParser<SurveySatisfied>(() => new SurveySatisfied());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SurveySatisfied> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V19.Services.LocalServicesLeadServiceReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SurveySatisfied() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SurveySatisfied(SurveySatisfied other) : this() {
+      surveySatisfiedReason_ = other.surveySatisfiedReason_;
+      otherReasonComment_ = other.otherReasonComment_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SurveySatisfied Clone() {
+      return new SurveySatisfied(this);
+    }
+
+    /// <summary>Field number for the "survey_satisfied_reason" field.</summary>
+    public const int SurveySatisfiedReasonFieldNumber = 1;
+    private global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveySatisfiedReasonEnum.Types.SurveySatisfiedReason surveySatisfiedReason_ = global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveySatisfiedReasonEnum.Types.SurveySatisfiedReason.Unspecified;
+    /// <summary>
+    /// Required. Provider's reason for being satisfied with the lead.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveySatisfiedReasonEnum.Types.SurveySatisfiedReason SurveySatisfiedReason {
+      get { return surveySatisfiedReason_; }
+      set {
+        surveySatisfiedReason_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "other_reason_comment" field.</summary>
+    public const int OtherReasonCommentFieldNumber = 2;
+    private string otherReasonComment_ = "";
+    /// <summary>
+    /// Optional. Provider's free form comments. This field is required when
+    /// OTHER_SATISFIED_REASON is selected as the reason.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string OtherReasonComment {
+      get { return otherReasonComment_; }
+      set {
+        otherReasonComment_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SurveySatisfied);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SurveySatisfied other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (SurveySatisfiedReason != other.SurveySatisfiedReason) return false;
+      if (OtherReasonComment != other.OtherReasonComment) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (SurveySatisfiedReason != global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveySatisfiedReasonEnum.Types.SurveySatisfiedReason.Unspecified) hash ^= SurveySatisfiedReason.GetHashCode();
+      if (OtherReasonComment.Length != 0) hash ^= OtherReasonComment.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (SurveySatisfiedReason != global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveySatisfiedReasonEnum.Types.SurveySatisfiedReason.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) SurveySatisfiedReason);
+      }
+      if (OtherReasonComment.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(OtherReasonComment);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (SurveySatisfiedReason != global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveySatisfiedReasonEnum.Types.SurveySatisfiedReason.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) SurveySatisfiedReason);
+      }
+      if (OtherReasonComment.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(OtherReasonComment);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (SurveySatisfiedReason != global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveySatisfiedReasonEnum.Types.SurveySatisfiedReason.Unspecified) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) SurveySatisfiedReason);
+      }
+      if (OtherReasonComment.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(OtherReasonComment);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SurveySatisfied other) {
+      if (other == null) {
+        return;
+      }
+      if (other.SurveySatisfiedReason != global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveySatisfiedReasonEnum.Types.SurveySatisfiedReason.Unspecified) {
+        SurveySatisfiedReason = other.SurveySatisfiedReason;
+      }
+      if (other.OtherReasonComment.Length != 0) {
+        OtherReasonComment = other.OtherReasonComment;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            SurveySatisfiedReason = (global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveySatisfiedReasonEnum.Types.SurveySatisfiedReason) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            OtherReasonComment = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            SurveySatisfiedReason = (global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveySatisfiedReasonEnum.Types.SurveySatisfiedReason) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            OtherReasonComment = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Details about various factors for not being satisfied with the lead.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class SurveyDissatisfied : pb::IMessage<SurveyDissatisfied>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SurveyDissatisfied> _parser = new pb::MessageParser<SurveyDissatisfied>(() => new SurveyDissatisfied());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SurveyDissatisfied> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V19.Services.LocalServicesLeadServiceReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SurveyDissatisfied() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SurveyDissatisfied(SurveyDissatisfied other) : this() {
+      surveyDissatisfiedReason_ = other.surveyDissatisfiedReason_;
+      otherReasonComment_ = other.otherReasonComment_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SurveyDissatisfied Clone() {
+      return new SurveyDissatisfied(this);
+    }
+
+    /// <summary>Field number for the "survey_dissatisfied_reason" field.</summary>
+    public const int SurveyDissatisfiedReasonFieldNumber = 1;
+    private global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveyDissatisfiedReasonEnum.Types.SurveyDissatisfiedReason surveyDissatisfiedReason_ = global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveyDissatisfiedReasonEnum.Types.SurveyDissatisfiedReason.Unspecified;
+    /// <summary>
+    /// Required. Provider's reason for not being satisfied with the lead.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveyDissatisfiedReasonEnum.Types.SurveyDissatisfiedReason SurveyDissatisfiedReason {
+      get { return surveyDissatisfiedReason_; }
+      set {
+        surveyDissatisfiedReason_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "other_reason_comment" field.</summary>
+    public const int OtherReasonCommentFieldNumber = 2;
+    private string otherReasonComment_ = "";
+    /// <summary>
+    /// Optional. Provider's free form comments. This field is required when
+    /// OTHER_DISSATISFIED_REASON is selected as the reason.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string OtherReasonComment {
+      get { return otherReasonComment_; }
+      set {
+        otherReasonComment_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SurveyDissatisfied);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SurveyDissatisfied other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (SurveyDissatisfiedReason != other.SurveyDissatisfiedReason) return false;
+      if (OtherReasonComment != other.OtherReasonComment) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (SurveyDissatisfiedReason != global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveyDissatisfiedReasonEnum.Types.SurveyDissatisfiedReason.Unspecified) hash ^= SurveyDissatisfiedReason.GetHashCode();
+      if (OtherReasonComment.Length != 0) hash ^= OtherReasonComment.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (SurveyDissatisfiedReason != global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveyDissatisfiedReasonEnum.Types.SurveyDissatisfiedReason.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) SurveyDissatisfiedReason);
+      }
+      if (OtherReasonComment.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(OtherReasonComment);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (SurveyDissatisfiedReason != global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveyDissatisfiedReasonEnum.Types.SurveyDissatisfiedReason.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) SurveyDissatisfiedReason);
+      }
+      if (OtherReasonComment.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(OtherReasonComment);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (SurveyDissatisfiedReason != global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveyDissatisfiedReasonEnum.Types.SurveyDissatisfiedReason.Unspecified) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) SurveyDissatisfiedReason);
+      }
+      if (OtherReasonComment.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(OtherReasonComment);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SurveyDissatisfied other) {
+      if (other == null) {
+        return;
+      }
+      if (other.SurveyDissatisfiedReason != global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveyDissatisfiedReasonEnum.Types.SurveyDissatisfiedReason.Unspecified) {
+        SurveyDissatisfiedReason = other.SurveyDissatisfiedReason;
+      }
+      if (other.OtherReasonComment.Length != 0) {
+        OtherReasonComment = other.OtherReasonComment;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            SurveyDissatisfiedReason = (global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveyDissatisfiedReasonEnum.Types.SurveyDissatisfiedReason) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            OtherReasonComment = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            SurveyDissatisfiedReason = (global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveyDissatisfiedReasonEnum.Types.SurveyDissatisfiedReason) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            OtherReasonComment = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Request message for
+  /// [LocalServicesLeadService.ProvideLeadFeedback][google.ads.googleads.v19.services.LocalServicesLeadService.ProvideLeadFeedback].
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class ProvideLeadFeedbackRequest : pb::IMessage<ProvideLeadFeedbackRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ProvideLeadFeedbackRequest> _parser = new pb::MessageParser<ProvideLeadFeedbackRequest>(() => new ProvideLeadFeedbackRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ProvideLeadFeedbackRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V19.Services.LocalServicesLeadServiceReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProvideLeadFeedbackRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProvideLeadFeedbackRequest(ProvideLeadFeedbackRequest other) : this() {
+      resourceName_ = other.resourceName_;
+      surveyAnswer_ = other.surveyAnswer_;
+      switch (other.SurveyDetailsCase) {
+        case SurveyDetailsOneofCase.SurveySatisfied:
+          SurveySatisfied = other.SurveySatisfied.Clone();
+          break;
+        case SurveyDetailsOneofCase.SurveyDissatisfied:
+          SurveyDissatisfied = other.SurveyDissatisfied.Clone();
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProvideLeadFeedbackRequest Clone() {
+      return new ProvideLeadFeedbackRequest(this);
+    }
+
+    /// <summary>Field number for the "resource_name" field.</summary>
+    public const int ResourceNameFieldNumber = 1;
+    private string resourceName_ = "";
+    /// <summary>
+    /// Required. The resource name of the local services lead that for which the
+    /// feedback is being provided.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ResourceName {
+      get { return resourceName_; }
+      set {
+        resourceName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "survey_answer" field.</summary>
+    public const int SurveyAnswerFieldNumber = 2;
+    private global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveyAnswerEnum.Types.SurveyAnswer surveyAnswer_ = global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveyAnswerEnum.Types.SurveyAnswer.Unspecified;
+    /// <summary>
+    /// Required. Survey answer for Local Services Ads Lead.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveyAnswerEnum.Types.SurveyAnswer SurveyAnswer {
+      get { return surveyAnswer_; }
+      set {
+        surveyAnswer_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "survey_satisfied" field.</summary>
+    public const int SurveySatisfiedFieldNumber = 3;
+    /// <summary>
+    /// Details about various factors for being satisfied with the lead.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V19.Services.SurveySatisfied SurveySatisfied {
+      get { return surveyDetailsCase_ == SurveyDetailsOneofCase.SurveySatisfied ? (global::Google.Ads.GoogleAds.V19.Services.SurveySatisfied) surveyDetails_ : null; }
+      set {
+        surveyDetails_ = value;
+        surveyDetailsCase_ = value == null ? SurveyDetailsOneofCase.None : SurveyDetailsOneofCase.SurveySatisfied;
+      }
+    }
+
+    /// <summary>Field number for the "survey_dissatisfied" field.</summary>
+    public const int SurveyDissatisfiedFieldNumber = 4;
+    /// <summary>
+    /// Details about various factors for not being satisfied with the lead.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V19.Services.SurveyDissatisfied SurveyDissatisfied {
+      get { return surveyDetailsCase_ == SurveyDetailsOneofCase.SurveyDissatisfied ? (global::Google.Ads.GoogleAds.V19.Services.SurveyDissatisfied) surveyDetails_ : null; }
+      set {
+        surveyDetails_ = value;
+        surveyDetailsCase_ = value == null ? SurveyDetailsOneofCase.None : SurveyDetailsOneofCase.SurveyDissatisfied;
+      }
+    }
+
+    private object surveyDetails_;
+    /// <summary>Enum of possible cases for the "survey_details" oneof.</summary>
+    public enum SurveyDetailsOneofCase {
+      None = 0,
+      SurveySatisfied = 3,
+      SurveyDissatisfied = 4,
+    }
+    private SurveyDetailsOneofCase surveyDetailsCase_ = SurveyDetailsOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SurveyDetailsOneofCase SurveyDetailsCase {
+      get { return surveyDetailsCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearSurveyDetails() {
+      surveyDetailsCase_ = SurveyDetailsOneofCase.None;
+      surveyDetails_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ProvideLeadFeedbackRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ProvideLeadFeedbackRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ResourceName != other.ResourceName) return false;
+      if (SurveyAnswer != other.SurveyAnswer) return false;
+      if (!object.Equals(SurveySatisfied, other.SurveySatisfied)) return false;
+      if (!object.Equals(SurveyDissatisfied, other.SurveyDissatisfied)) return false;
+      if (SurveyDetailsCase != other.SurveyDetailsCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
+      if (SurveyAnswer != global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveyAnswerEnum.Types.SurveyAnswer.Unspecified) hash ^= SurveyAnswer.GetHashCode();
+      if (surveyDetailsCase_ == SurveyDetailsOneofCase.SurveySatisfied) hash ^= SurveySatisfied.GetHashCode();
+      if (surveyDetailsCase_ == SurveyDetailsOneofCase.SurveyDissatisfied) hash ^= SurveyDissatisfied.GetHashCode();
+      hash ^= (int) surveyDetailsCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (SurveyAnswer != global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveyAnswerEnum.Types.SurveyAnswer.Unspecified) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) SurveyAnswer);
+      }
+      if (surveyDetailsCase_ == SurveyDetailsOneofCase.SurveySatisfied) {
+        output.WriteRawTag(26);
+        output.WriteMessage(SurveySatisfied);
+      }
+      if (surveyDetailsCase_ == SurveyDetailsOneofCase.SurveyDissatisfied) {
+        output.WriteRawTag(34);
+        output.WriteMessage(SurveyDissatisfied);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (SurveyAnswer != global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveyAnswerEnum.Types.SurveyAnswer.Unspecified) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) SurveyAnswer);
+      }
+      if (surveyDetailsCase_ == SurveyDetailsOneofCase.SurveySatisfied) {
+        output.WriteRawTag(26);
+        output.WriteMessage(SurveySatisfied);
+      }
+      if (surveyDetailsCase_ == SurveyDetailsOneofCase.SurveyDissatisfied) {
+        output.WriteRawTag(34);
+        output.WriteMessage(SurveyDissatisfied);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (ResourceName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ResourceName);
+      }
+      if (SurveyAnswer != global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveyAnswerEnum.Types.SurveyAnswer.Unspecified) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) SurveyAnswer);
+      }
+      if (surveyDetailsCase_ == SurveyDetailsOneofCase.SurveySatisfied) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SurveySatisfied);
+      }
+      if (surveyDetailsCase_ == SurveyDetailsOneofCase.SurveyDissatisfied) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SurveyDissatisfied);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ProvideLeadFeedbackRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ResourceName.Length != 0) {
+        ResourceName = other.ResourceName;
+      }
+      if (other.SurveyAnswer != global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveyAnswerEnum.Types.SurveyAnswer.Unspecified) {
+        SurveyAnswer = other.SurveyAnswer;
+      }
+      switch (other.SurveyDetailsCase) {
+        case SurveyDetailsOneofCase.SurveySatisfied:
+          if (SurveySatisfied == null) {
+            SurveySatisfied = new global::Google.Ads.GoogleAds.V19.Services.SurveySatisfied();
+          }
+          SurveySatisfied.MergeFrom(other.SurveySatisfied);
+          break;
+        case SurveyDetailsOneofCase.SurveyDissatisfied:
+          if (SurveyDissatisfied == null) {
+            SurveyDissatisfied = new global::Google.Ads.GoogleAds.V19.Services.SurveyDissatisfied();
+          }
+          SurveyDissatisfied.MergeFrom(other.SurveyDissatisfied);
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 16: {
+            SurveyAnswer = (global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveyAnswerEnum.Types.SurveyAnswer) input.ReadEnum();
+            break;
+          }
+          case 26: {
+            global::Google.Ads.GoogleAds.V19.Services.SurveySatisfied subBuilder = new global::Google.Ads.GoogleAds.V19.Services.SurveySatisfied();
+            if (surveyDetailsCase_ == SurveyDetailsOneofCase.SurveySatisfied) {
+              subBuilder.MergeFrom(SurveySatisfied);
+            }
+            input.ReadMessage(subBuilder);
+            SurveySatisfied = subBuilder;
+            break;
+          }
+          case 34: {
+            global::Google.Ads.GoogleAds.V19.Services.SurveyDissatisfied subBuilder = new global::Google.Ads.GoogleAds.V19.Services.SurveyDissatisfied();
+            if (surveyDetailsCase_ == SurveyDetailsOneofCase.SurveyDissatisfied) {
+              subBuilder.MergeFrom(SurveyDissatisfied);
+            }
+            input.ReadMessage(subBuilder);
+            SurveyDissatisfied = subBuilder;
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 16: {
+            SurveyAnswer = (global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadSurveyAnswerEnum.Types.SurveyAnswer) input.ReadEnum();
+            break;
+          }
+          case 26: {
+            global::Google.Ads.GoogleAds.V19.Services.SurveySatisfied subBuilder = new global::Google.Ads.GoogleAds.V19.Services.SurveySatisfied();
+            if (surveyDetailsCase_ == SurveyDetailsOneofCase.SurveySatisfied) {
+              subBuilder.MergeFrom(SurveySatisfied);
+            }
+            input.ReadMessage(subBuilder);
+            SurveySatisfied = subBuilder;
+            break;
+          }
+          case 34: {
+            global::Google.Ads.GoogleAds.V19.Services.SurveyDissatisfied subBuilder = new global::Google.Ads.GoogleAds.V19.Services.SurveyDissatisfied();
+            if (surveyDetailsCase_ == SurveyDetailsOneofCase.SurveyDissatisfied) {
+              subBuilder.MergeFrom(SurveyDissatisfied);
+            }
+            input.ReadMessage(subBuilder);
+            SurveyDissatisfied = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Response message for
+  /// [LocalServicesLeadService.ProvideLeadFeedback][google.ads.googleads.v19.services.LocalServicesLeadService.ProvideLeadFeedback].
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class ProvideLeadFeedbackResponse : pb::IMessage<ProvideLeadFeedbackResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ProvideLeadFeedbackResponse> _parser = new pb::MessageParser<ProvideLeadFeedbackResponse>(() => new ProvideLeadFeedbackResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ProvideLeadFeedbackResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V19.Services.LocalServicesLeadServiceReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProvideLeadFeedbackResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProvideLeadFeedbackResponse(ProvideLeadFeedbackResponse other) : this() {
+      creditIssuanceDecision_ = other.creditIssuanceDecision_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProvideLeadFeedbackResponse Clone() {
+      return new ProvideLeadFeedbackResponse(this);
+    }
+
+    /// <summary>Field number for the "credit_issuance_decision" field.</summary>
+    public const int CreditIssuanceDecisionFieldNumber = 1;
+    private global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadCreditIssuanceDecisionEnum.Types.CreditIssuanceDecision creditIssuanceDecision_ = global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadCreditIssuanceDecisionEnum.Types.CreditIssuanceDecision.Unspecified;
+    /// <summary>
+    /// Required. Decision of bonus credit issued or rejected. If a bonus credit is
+    /// issued, it will be available for use in about two months.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadCreditIssuanceDecisionEnum.Types.CreditIssuanceDecision CreditIssuanceDecision {
+      get { return creditIssuanceDecision_; }
+      set {
+        creditIssuanceDecision_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ProvideLeadFeedbackResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ProvideLeadFeedbackResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (CreditIssuanceDecision != other.CreditIssuanceDecision) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (CreditIssuanceDecision != global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadCreditIssuanceDecisionEnum.Types.CreditIssuanceDecision.Unspecified) hash ^= CreditIssuanceDecision.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (CreditIssuanceDecision != global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadCreditIssuanceDecisionEnum.Types.CreditIssuanceDecision.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) CreditIssuanceDecision);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (CreditIssuanceDecision != global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadCreditIssuanceDecisionEnum.Types.CreditIssuanceDecision.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) CreditIssuanceDecision);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (CreditIssuanceDecision != global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadCreditIssuanceDecisionEnum.Types.CreditIssuanceDecision.Unspecified) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) CreditIssuanceDecision);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ProvideLeadFeedbackResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.CreditIssuanceDecision != global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadCreditIssuanceDecisionEnum.Types.CreditIssuanceDecision.Unspecified) {
+        CreditIssuanceDecision = other.CreditIssuanceDecision;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            CreditIssuanceDecision = (global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadCreditIssuanceDecisionEnum.Types.CreditIssuanceDecision) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            CreditIssuanceDecision = (global::Google.Ads.GoogleAds.V19.Enums.LocalServicesLeadCreditIssuanceDecisionEnum.Types.CreditIssuanceDecision) input.ReadEnum();
             break;
           }
         }

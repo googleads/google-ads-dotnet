@@ -135,11 +135,6 @@ namespace Google.Ads.GoogleAds.V19.Errors
                 $"{customizerAttributeId}";
         }
 
-        public static string AdGroupFeed(long customerId, long adGroupId, long feedId)
-        {
-            return $"customers/{customerId}/adGroupFeeds/{adGroupId}~{feedId}";
-        }
-
         public static string AdGroupLabel(long customerId, long adGroupId, long labelId)
         {
             return $"customers/{customerId}/adGroupLabels/{adGroupId}~{labelId}";
@@ -336,11 +331,6 @@ namespace Google.Ads.GoogleAds.V19.Errors
             return $"customers/{customerId}/campaignExperiments/{campaignExperimentId}";
         }
 
-        public static string CampaignFeed(long customerId, long campaignId, long feedId)
-        {
-            return $"customers/{customerId}/campaignFeeds/{campaignId}~{feedId}";
-        }
-
         public static string CampaignGroup(long customerId, long campaignGroupId)
         {
             return $"customers/{customerId}/campaignGroups/{campaignGroupId}";
@@ -464,11 +454,6 @@ namespace Google.Ads.GoogleAds.V19.Errors
             return $"customers/{customerId}/customerCustomizers/{customizerAttributeId}";
         }
 
-        public static string CustomerFeed(long customerId, long feedId)
-        {
-            return $"customers/{customerId}/customerFeeds/{feedId}";
-        }
-
         public static string CustomerLabel(long customerId, long labelId)
         {
             return $"customers/{customerId}/customerLabels/{labelId}";
@@ -546,11 +531,6 @@ namespace Google.Ads.GoogleAds.V19.Errors
                 $"{expandedFinalUrlFingerprint}";
         }
 
-        public static string ExtensionFeedItem(long customerId, long feedItemId)
-        {
-            return $"customers/{customerId}/extensionFeedItems/{feedItemId}";
-        }
-
         public static string Experiment(long customerId, long trialId)
         {
             return $"customers/{customerId}/experiments/{trialId}";
@@ -559,28 +539,6 @@ namespace Google.Ads.GoogleAds.V19.Errors
         public static string ExperimentArm(long customerId, long trialId, long trialArmId)
         {
             return $"customers/{customerId}/experimentArms/{trialId}~{trialArmId}";
-        }
-
-        public static string Feed(long customerId, long feedId)
-        {
-            return $"customers/{customerId}/feeds/{feedId}";
-        }
-
-        public static string FeedItem(long customerId, long feedId, long feedItemId)
-        {
-            return $"customers/{customerId}/feedItems/{feedId}~{feedItemId}";
-        }
-
-        public static string FeedItemSet(long customerId, long feedId, long feedItemSetId)
-        {
-            return $"customers/{customerId}/feedItemSets/{feedId}~{feedItemSetId}";
-        }
-
-        public static string FeedItemSetLink(long customerId, long feedId, long feedItemId,
-            long feedItemSetId)
-        {
-            return $"customers/{customerId}/feedItemSetLinks/" +
-                $"{feedId}~{feedItemId}~{feedItemSetId}";
         }
 
         public static string GenderView(long customerId, long adGroupId, long criterionId)

@@ -18,10 +18,12 @@ using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V19.Common;
 using Google.Ads.GoogleAds.V19.Errors;
 using Google.Ads.GoogleAds.V19.Services;
+using Google.Protobuf;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using static Google.Ads.GoogleAds.V19.Enums.ConsentStatusEnum.Types;
 using static Google.Ads.GoogleAds.V19.Enums.UserIdentifierSourceEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V19
@@ -83,6 +85,26 @@ namespace Google.Ads.GoogleAds.Examples.V19
             [Option("gclid", Required = false, HelpText =
                 "The Google click ID.")]
             public string Gclid { get; set; }
+
+            /// <summary>
+            /// A string token of encoded session attributes. Only one of sessionAttributesEncoded
+            /// or sessionAttributes should be passed.
+            /// </summary>
+            [Option("sessionAttributesEncoded", Required = false, HelpText =
+                "A string token of encoded session attributes. Only one of " +
+                "SessionAttributesEncoded or SessionAttributesJson should be passed.")]
+            public string SessionAttributesEncoded { get; set; }
+
+            /// <summary>
+            /// A string of session attribute key value pairs, in the form
+            /// key1=value1;key2=value2 etc.. Only one of sessionAttributesEncoded or
+            /// sessionAttributes should be passed.
+            /// </summary>
+            [Option("sessionAttributes", Required = false, HelpText =
+                "A string of session attribute key value pairs, in the form " +
+                "key1=value1;key2=value2 etc.. Only one of SessionAttributesEncoded or " +
+                "SessionAttributes should be passed.")]
+            public string SessionAttributes { get; set; }
         }
 
         /// <summary>
@@ -98,7 +120,8 @@ namespace Google.Ads.GoogleAds.Examples.V19
 
             codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.ConversionActionId,
                 options.ConversionDateTime, options.ConversionValue,
-                options.OrderId, options.Gclid);
+                options.OrderId, options.Gclid, options.SessionAttributesEncoded,
+                options.SessionAttributes);
         }
 
         private static SHA256 digest = SHA256.Create();
@@ -123,10 +146,20 @@ namespace Google.Ads.GoogleAds.Examples.V19
         /// <param name="conversionValue">The conversion value.</param>
         /// <param name="orderId">The unique order ID (transaction ID) of the conversion.</param>
         /// <param name="gclid">The Google click ID</param>
+        /// <param name="sessionAttributesEncoded">The encoded session attributes.</param>
+        /// <param name="sessionAttributes">The string for session attributes.</param>
         // [START upload_enhanced_conversions_for_leads]
         public void Run(GoogleAdsClient client, long customerId, long conversionActionId,
-            string conversionDateTime, double conversionValue, string orderId, string gclid)
+            string conversionDateTime, double conversionValue, string orderId, string gclid,
+            string sessionAttributesEncoded, string sessionAttributes)
         {
+            if (!string.IsNullOrEmpty(sessionAttributesEncoded) &&
+             !string.IsNullOrEmpty(sessionAttributes))
+            {
+                throw new InvalidOperationException("Only one of SessionAttributesEncoded or " +
+                "SessionAttributes can be set");
+            }
+
             // Get the ConversionUploadService.
             ConversionUploadServiceClient conversionUploadService =
                 client.GetService(Services.V19.ConversionUploadService);
@@ -215,6 +248,31 @@ namespace Google.Ads.GoogleAds.Examples.V19
             {
                 clickConversion.Gclid = gclid;
             }
+
+            // [START add_session_attributes]
+            if (!string.IsNullOrEmpty(sessionAttributesEncoded))
+            {
+                clickConversion.SessionAttributesEncoded =
+                    ByteString.CopyFrom(sessionAttributesEncoded, Encoding.Unicode);
+            }
+            else if (!string.IsNullOrEmpty(sessionAttributes))
+            {
+                IEnumerable<SessionAttributeKeyValuePair> parsedSessionAttributes =
+                    sessionAttributes.Split(';').Select(pair => {
+                        string[] split = pair.Split('=');
+                        return new SessionAttributeKeyValuePair()
+                        {
+                            SessionAttributeKey = split[0],
+                            SessionAttributeValue = split[1]
+                        };
+                    });
+
+                clickConversion.SessionAttributesKeyValuePairs =
+                    new SessionAttributesKeyValuePairs();
+                clickConversion.SessionAttributesKeyValuePairs.KeyValuePairs
+                    .AddRange(parsedSessionAttributes);
+            }
+            // [END add_session_attributes]
 
             // [END add_conversion_details]
             // [END create_conversion]

@@ -1473,6 +1473,12 @@
                 "AppendLeadConversation",
                 "AppendLeadConversationAsync"
               ]
+            },
+            "ProvideLeadFeedback": {
+              "methods": [
+                "ProvideLeadFeedback",
+                "ProvideLeadFeedbackAsync"
+              ]
             }
           }
         }
@@ -1573,6 +1579,12 @@
         "grpc": {
           "libraryClient": "ReachPlanServiceClient",
           "rpcs": {
+            "GenerateConversionRates": {
+              "methods": [
+                "GenerateConversionRates",
+                "GenerateConversionRatesAsync"
+              ]
+            },
             "GenerateReachForecast": {
               "methods": [
                 "GenerateReachForecast",

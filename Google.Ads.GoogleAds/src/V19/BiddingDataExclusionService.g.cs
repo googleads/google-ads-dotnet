@@ -842,7 +842,7 @@ namespace Google.Ads.GoogleAds.V19.Services {
   }
 
   /// <summary>
-  /// Response message for data exlusions mutate.
+  /// Response message for data exclusions mutate.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MutateBiddingDataExclusionsResponse : pb::IMessage<MutateBiddingDataExclusionsResponse>

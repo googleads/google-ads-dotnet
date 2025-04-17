@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V19.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjVnb29nbGUvYWRzL2dvb2dsZWFkcy92MTkvZXJyb3JzL2NyaXRlcmlvbl9l",
-            "cnJvci5wcm90bxIfZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LmVycm9ycyLg",
-            "LwoSQ3JpdGVyaW9uRXJyb3JFbnVtIskvCg5Dcml0ZXJpb25FcnJvchIPCgtV",
+            "cnJvci5wcm90bxIfZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LmVycm9ycyKe",
+            "MAoSQ3JpdGVyaW9uRXJyb3JFbnVtIocwCg5Dcml0ZXJpb25FcnJvchIPCgtV",
             "TlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIaChZDT05DUkVURV9UWVBFX1JF",
             "UVVJUkVEEAISHQoZSU5WQUxJRF9FWENMVURFRF9DQVRFR09SWRADEhgKFElO",
             "VkFMSURfS0VZV09SRF9URVhUEAQSGQoVS0VZV09SRF9URVhUX1RPT19MT05H",
@@ -161,13 +161,14 @@ namespace Google.Ads.GoogleAds.V19.Errors {
             "SElDEJoBEhsKFkNBTk5PVF9SRUNPR05JWkVfQlJBTkQQmwESJAofQlJBTkRf",
             "U0hBUkVEX1NFVF9ET0VTX05PVF9FWElTVBCcARIoCiNDQU5OT1RfQUREX1JF",
             "TU9WRURfQlJBTkRfU0hBUkVEX1NFVBCdARI4CjNPTkxZX0VYQ0xVU0lPTl9C",
-            "UkFORF9MSVNUX0FMTE9XRURfRk9SX0NBTVBBSUdOX1RZUEUQngFC8wEKI2Nv",
-            "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTkuZXJyb3JzQhNDcml0ZXJpb25F",
-            "cnJvclByb3RvUAFaRWdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2ds",
-            "ZWFwaXMvYWRzL2dvb2dsZWFkcy92MTkvZXJyb3JzO2Vycm9yc6ICA0dBQaoC",
-            "H0dvb2dsZS5BZHMuR29vZ2xlQWRzLlYxOS5FcnJvcnPKAh9Hb29nbGVcQWRz",
-            "XEdvb2dsZUFkc1xWMTlcRXJyb3Jz6gIjR29vZ2xlOjpBZHM6Okdvb2dsZUFk",
-            "czo6VjE5OjpFcnJvcnNiBnByb3RvMw=="));
+            "UkFORF9MSVNUX0FMTE9XRURfRk9SX0NBTVBBSUdOX1RZUEUQngESPAo3TE9D",
+            "QVRJT05fVEFSR0VUSU5HX05PVF9FTElHSUJMRV9GT1JfUkVTVFJJQ1RFRF9D",
+            "QU1QQUlHThCmAULzAQojY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxOS5l",
+            "cnJvcnNCE0NyaXRlcmlvbkVycm9yUHJvdG9QAVpFZ29vZ2xlLmdvbGFuZy5v",
+            "cmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YxOS9lcnJv",
+            "cnM7ZXJyb3JzogIDR0FBqgIfR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjE5LkVy",
+            "cm9yc8oCH0dvb2dsZVxBZHNcR29vZ2xlQWRzXFYxOVxFcnJvcnPqAiNHb29n",
+            "bGU6OkFkczo6R29vZ2xlQWRzOjpWMTk6OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -985,6 +986,11 @@ namespace Google.Ads.GoogleAds.V19.Errors {
         /// Brand list can only be negatively targeted for the campaign type.
         /// </summary>
         [pbr::OriginalName("ONLY_EXCLUSION_BRAND_LIST_ALLOWED_FOR_CAMPAIGN_TYPE")] OnlyExclusionBrandListAllowedForCampaignType = 158,
+        /// <summary>
+        /// Cannot positively target locations outside of restricted area for
+        /// campaign.
+        /// </summary>
+        [pbr::OriginalName("LOCATION_TARGETING_NOT_ELIGIBLE_FOR_RESTRICTED_CAMPAIGN")] LocationTargetingNotEligibleForRestrictedCampaign = 166,
       }
 
     }
