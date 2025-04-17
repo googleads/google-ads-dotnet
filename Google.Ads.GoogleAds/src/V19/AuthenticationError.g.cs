@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V19.Errors {
           string.Concat(
             "Cjpnb29nbGUvYWRzL2dvb2dsZWFkcy92MTkvZXJyb3JzL2F1dGhlbnRpY2F0",
             "aW9uX2Vycm9yLnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFkcy52MTkuZXJy",
-            "b3JzIt4FChdBdXRoZW50aWNhdGlvbkVycm9yRW51bSLCBQoTQXV0aGVudGlj",
+            "b3JzIvsFChdBdXRoZW50aWNhdGlvbkVycm9yRW51bSLfBQoTQXV0aGVudGlj",
             "YXRpb25FcnJvchIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIYChRB",
             "VVRIRU5USUNBVElPTl9FUlJPUhACEh4KGkNMSUVOVF9DVVNUT01FUl9JRF9J",
             "TlZBTElEEAUSFgoSQ1VTVE9NRVJfTk9UX0ZPVU5EEAgSGgoWR09PR0xFX0FD",
@@ -42,13 +42,13 @@ namespace Google.Ads.GoogleAds.V19.Errors {
             "JAogQURWQU5DRURfUFJPVEVDVElPTl9OT1RfRU5ST0xMRUQQGBIfChtPUkdB",
             "TklaQVRJT05fTk9UX1JFQ09HTklaRUQQGhIdChlPUkdBTklaQVRJT05fTk9U",
             "X0FQUFJPVkVEEBsSNAowT1JHQU5JWkFUSU9OX05PVF9BU1NPQ0lBVEVEX1dJ",
-            "VEhfREVWRUxPUEVSX1RPS0VOEBxC+AEKI2NvbS5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MTkuZXJyb3JzQhhBdXRoZW50aWNhdGlvbkVycm9yUHJvdG9QAVpF",
-            "Z29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29v",
-            "Z2xlYWRzL3YxOS9lcnJvcnM7ZXJyb3JzogIDR0FBqgIfR29vZ2xlLkFkcy5H",
-            "b29nbGVBZHMuVjE5LkVycm9yc8oCH0dvb2dsZVxBZHNcR29vZ2xlQWRzXFYx",
-            "OVxFcnJvcnPqAiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTk6OkVycm9y",
-            "c2IGcHJvdG8z"));
+            "VEhfREVWRUxPUEVSX1RPS0VOEBwSGwoXREVWRUxPUEVSX1RPS0VOX0lOVkFM",
+            "SUQQHUL4AQojY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxOS5lcnJvcnNC",
+            "GEF1dGhlbnRpY2F0aW9uRXJyb3JQcm90b1ABWkVnb29nbGUuZ29sYW5nLm9y",
+            "Zy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjE5L2Vycm9y",
+            "cztlcnJvcnOiAgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMTkuRXJy",
+            "b3JzygIfR29vZ2xlXEFkc1xHb29nbGVBZHNcVjE5XEVycm9yc+oCI0dvb2ds",
+            "ZTo6QWRzOjpHb29nbGVBZHM6OlYxOTo6RXJyb3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -323,6 +323,10 @@ namespace Google.Ads.GoogleAds.V19.Errors {
         /// the developer token.
         /// </summary>
         [pbr::OriginalName("ORGANIZATION_NOT_ASSOCIATED_WITH_DEVELOPER_TOKEN")] OrganizationNotAssociatedWithDeveloperToken = 28,
+        /// <summary>
+        /// The developer token is not valid.
+        /// </summary>
+        [pbr::OriginalName("DEVELOPER_TOKEN_INVALID")] DeveloperTokenInvalid = 29,
       }
 
     }

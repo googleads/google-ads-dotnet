@@ -48,7 +48,7 @@ namespace Google.Ads.GoogleAds.V19.Resources {
             "YWRzLnYxOS5yZXNvdXJjZXMuQ2FsbFJlcG9ydGluZ1NldHRpbmcSZwobY29u",
             "dmVyc2lvbl90cmFja2luZ19zZXR0aW5nGA4gASgLMj0uZ29vZ2xlLmFkcy5n",
             "b29nbGVhZHMudjE5LnJlc291cmNlcy5Db252ZXJzaW9uVHJhY2tpbmdTZXR0",
-            "aW5nQgPgQQMSWAoTcmVtYXJrZXRpbmdfc2V0dGluZxgPIAEoCzI2Lmdvb2ds",
+            "aW5nQgPgQQUSWAoTcmVtYXJrZXRpbmdfc2V0dGluZxgPIAEoCzI2Lmdvb2ds",
             "ZS5hZHMuZ29vZ2xlYWRzLnYxOS5yZXNvdXJjZXMuUmVtYXJrZXRpbmdTZXR0",
             "aW5nQgPgQQMSwwEKLnBheV9wZXJfY29udmVyc2lvbl9lbGlnaWJpbGl0eV9m",
             "YWlsdXJlX3JlYXNvbnMYECADKA4yhQEuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
@@ -95,7 +95,7 @@ namespace Google.Ads.GoogleAds.V19.Resources {
             "djE5LmVudW1zLkNvbnZlcnNpb25UcmFja2luZ1N0YXR1c0VudW0uQ29udmVy",
             "c2lvblRyYWNraW5nU3RhdHVzQgPgQQMSMwomZW5oYW5jZWRfY29udmVyc2lv",
             "bnNfZm9yX2xlYWRzX2VuYWJsZWQYByABKAhCA+BBAxIrCh5nb29nbGVfYWRz",
-            "X2NvbnZlcnNpb25fY3VzdG9tZXIYCCABKAlCA+BBA0IZChdfY29udmVyc2lv",
+            "X2NvbnZlcnNpb25fY3VzdG9tZXIYCCABKAlCA+BBBUIZChdfY29udmVyc2lv",
             "bl90cmFja2luZ19pZEInCiVfY3Jvc3NfYWNjb3VudF9jb252ZXJzaW9uX3Ry",
             "YWNraW5nX2lkIlkKElJlbWFya2V0aW5nU2V0dGluZxIoChZnb29nbGVfZ2xv",
             "YmFsX3NpdGVfdGFnGAIgASgJQgPgQQNIAIgBAUIZChdfZ29vZ2xlX2dsb2Jh",
@@ -557,7 +557,7 @@ namespace Google.Ads.GoogleAds.V19.Resources {
     public const int ConversionTrackingSettingFieldNumber = 14;
     private global::Google.Ads.GoogleAds.V19.Resources.ConversionTrackingSetting conversionTrackingSetting_;
     /// <summary>
-    /// Output only. Conversion tracking setting for a customer.
+    /// Immutable. Conversion tracking setting for a customer.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2097,8 +2097,8 @@ namespace Google.Ads.GoogleAds.V19.Resources {
     public const int GoogleAdsConversionCustomerFieldNumber = 8;
     private string googleAdsConversionCustomer_ = "";
     /// <summary>
-    /// Output only. The resource name of the customer where conversions are
-    /// created and managed. This field is read-only.
+    /// Immutable. The resource name of the customer where conversions are created
+    /// and managed. This field is read-only.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

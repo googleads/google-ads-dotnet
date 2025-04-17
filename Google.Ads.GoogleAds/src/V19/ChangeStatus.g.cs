@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.V19.Resources {
             "dHVzX29wZXJhdGlvbi5wcm90bxpAZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjE5",
             "L2VudW1zL2NoYW5nZV9zdGF0dXNfcmVzb3VyY2VfdHlwZS5wcm90bxofZ29v",
             "Z2xlL2FwaS9maWVsZF9iZWhhdmlvci5wcm90bxoZZ29vZ2xlL2FwaS9yZXNv",
-            "dXJjZS5wcm90byLKDAoMQ2hhbmdlU3RhdHVzEkQKDXJlc291cmNlX25hbWUY",
+            "dXJjZS5wcm90byKUDQoMQ2hhbmdlU3RhdHVzEkQKDXJlc291cmNlX25hbWUY",
             "ASABKAlCLeBBA/pBJwolZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0NoYW5n",
             "ZVN0YXR1cxInChVsYXN0X2NoYW5nZV9kYXRlX3RpbWUYGCABKAlCA+BBA0gA",
             "iAEBEnEKDXJlc291cmNlX3R5cGUYBCABKA4yVS5nb29nbGUuYWRzLmdvb2ds",
@@ -60,23 +60,24 @@ namespace Google.Ads.GoogleAds.V19.Resources {
             "bGVhcGlzLmNvbS9BZEdyb3VwQXNzZXQSTAoRY29tYmluZWRfYXVkaWVuY2UY",
             "KCABKAlCMeBBA/pBKwopZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0NvbWJp",
             "bmVkQXVkaWVuY2USQAoLYXNzZXRfZ3JvdXAYKSABKAlCK+BBA/pBJQojZ29v",
-            "Z2xlYWRzLmdvb2dsZWFwaXMuY29tL0Fzc2V0R3JvdXA6Y+pBYAolZ29vZ2xl",
-            "YWRzLmdvb2dsZWFwaXMuY29tL0NoYW5nZVN0YXR1cxI3Y3VzdG9tZXJzL3tj",
-            "dXN0b21lcl9pZH0vY2hhbmdlU3RhdHVzL3tjaGFuZ2Vfc3RhdHVzX2lkfUIY",
-            "ChZfbGFzdF9jaGFuZ2VfZGF0ZV90aW1lQgsKCV9jYW1wYWlnbkILCglfYWRf",
-            "Z3JvdXBCDgoMX2FkX2dyb3VwX2FkQhUKE19hZF9ncm91cF9jcml0ZXJpb25C",
-            "FQoTX2NhbXBhaWduX2NyaXRlcmlvbkIYChZfYWRfZ3JvdXBfYmlkX21vZGlm",
-            "aWVyQoMCCiZjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LnJlc291cmNl",
-            "c0IRQ2hhbmdlU3RhdHVzUHJvdG9QAVpLZ29vZ2xlLmdvbGFuZy5vcmcvZ2Vu",
-            "cHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YxOS9yZXNvdXJjZXM7",
-            "cmVzb3VyY2VzogIDR0FBqgIiR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjE5LlJl",
-            "c291cmNlc8oCIkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYxOVxSZXNvdXJjZXPq",
-            "AiZHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMTk6OlJlc291cmNlc2IGcHJv",
-            "dG8z"));
+            "Z2xlYWRzLmdvb2dsZWFwaXMuY29tL0Fzc2V0R3JvdXASSAoPY2FtcGFpZ25f",
+            "YnVkZ2V0GCogASgJQi/gQQP6QSkKJ2dvb2dsZWFkcy5nb29nbGVhcGlzLmNv",
+            "bS9DYW1wYWlnbkJ1ZGdldDpj6kFgCiVnb29nbGVhZHMuZ29vZ2xlYXBpcy5j",
+            "b20vQ2hhbmdlU3RhdHVzEjdjdXN0b21lcnMve2N1c3RvbWVyX2lkfS9jaGFu",
+            "Z2VTdGF0dXMve2NoYW5nZV9zdGF0dXNfaWR9QhgKFl9sYXN0X2NoYW5nZV9k",
+            "YXRlX3RpbWVCCwoJX2NhbXBhaWduQgsKCV9hZF9ncm91cEIOCgxfYWRfZ3Jv",
+            "dXBfYWRCFQoTX2FkX2dyb3VwX2NyaXRlcmlvbkIVChNfY2FtcGFpZ25fY3Jp",
+            "dGVyaW9uQhgKFl9hZF9ncm91cF9iaWRfbW9kaWZpZXJCgwIKJmNvbS5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MTkucmVzb3VyY2VzQhFDaGFuZ2VTdGF0dXNQ",
+            "cm90b1ABWktnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlz",
+            "L2Fkcy9nb29nbGVhZHMvdjE5L3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGq",
+            "AiJHb29nbGUuQWRzLkdvb2dsZUFkcy5WMTkuUmVzb3VyY2VzygIiR29vZ2xl",
+            "XEFkc1xHb29nbGVBZHNcVjE5XFJlc291cmNlc+oCJkdvb2dsZTo6QWRzOjpH",
+            "b29nbGVBZHM6OlYxOTo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V19.Enums.ChangeStatusOperationReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.ChangeStatusResourceTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Resources.ChangeStatus), global::Google.Ads.GoogleAds.V19.Resources.ChangeStatus.Parser, new[]{ "ResourceName", "LastChangeDateTime", "ResourceType", "Campaign", "AdGroup", "ResourceStatus", "AdGroupAd", "AdGroupCriterion", "CampaignCriterion", "AdGroupBidModifier", "SharedSet", "CampaignSharedSet", "Asset", "CustomerAsset", "CampaignAsset", "AdGroupAsset", "CombinedAudience", "AssetGroup" }, new[]{ "LastChangeDateTime", "Campaign", "AdGroup", "AdGroupAd", "AdGroupCriterion", "CampaignCriterion", "AdGroupBidModifier" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Resources.ChangeStatus), global::Google.Ads.GoogleAds.V19.Resources.ChangeStatus.Parser, new[]{ "ResourceName", "LastChangeDateTime", "ResourceType", "Campaign", "AdGroup", "ResourceStatus", "AdGroupAd", "AdGroupCriterion", "CampaignCriterion", "AdGroupBidModifier", "SharedSet", "CampaignSharedSet", "Asset", "CustomerAsset", "CampaignAsset", "AdGroupAsset", "CombinedAudience", "AssetGroup", "CampaignBudget" }, new[]{ "LastChangeDateTime", "Campaign", "AdGroup", "AdGroupAd", "AdGroupCriterion", "CampaignCriterion", "AdGroupBidModifier" }, null, null, null)
           }));
     }
     #endregion
@@ -140,6 +141,7 @@ namespace Google.Ads.GoogleAds.V19.Resources {
       adGroupAsset_ = other.adGroupAsset_;
       combinedAudience_ = other.combinedAudience_;
       assetGroup_ = other.assetGroup_;
+      campaignBudget_ = other.campaignBudget_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -523,6 +525,21 @@ namespace Google.Ads.GoogleAds.V19.Resources {
       }
     }
 
+    /// <summary>Field number for the "campaign_budget" field.</summary>
+    public const int CampaignBudgetFieldNumber = 42;
+    private string campaignBudget_ = "";
+    /// <summary>
+    /// Output only. The CampaignBudget affected by this change.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CampaignBudget {
+      get { return campaignBudget_; }
+      set {
+        campaignBudget_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -556,6 +573,7 @@ namespace Google.Ads.GoogleAds.V19.Resources {
       if (AdGroupAsset != other.AdGroupAsset) return false;
       if (CombinedAudience != other.CombinedAudience) return false;
       if (AssetGroup != other.AssetGroup) return false;
+      if (CampaignBudget != other.CampaignBudget) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -581,6 +599,7 @@ namespace Google.Ads.GoogleAds.V19.Resources {
       if (AdGroupAsset.Length != 0) hash ^= AdGroupAsset.GetHashCode();
       if (CombinedAudience.Length != 0) hash ^= CombinedAudience.GetHashCode();
       if (AssetGroup.Length != 0) hash ^= AssetGroup.GetHashCode();
+      if (CampaignBudget.Length != 0) hash ^= CampaignBudget.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -671,6 +690,10 @@ namespace Google.Ads.GoogleAds.V19.Resources {
         output.WriteRawTag(202, 2);
         output.WriteString(AssetGroup);
       }
+      if (CampaignBudget.Length != 0) {
+        output.WriteRawTag(210, 2);
+        output.WriteString(CampaignBudget);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -753,6 +776,10 @@ namespace Google.Ads.GoogleAds.V19.Resources {
         output.WriteRawTag(202, 2);
         output.WriteString(AssetGroup);
       }
+      if (CampaignBudget.Length != 0) {
+        output.WriteRawTag(210, 2);
+        output.WriteString(CampaignBudget);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -816,6 +843,9 @@ namespace Google.Ads.GoogleAds.V19.Resources {
       }
       if (AssetGroup.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(AssetGroup);
+      }
+      if (CampaignBudget.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(CampaignBudget);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -882,6 +912,9 @@ namespace Google.Ads.GoogleAds.V19.Resources {
       }
       if (other.AssetGroup.Length != 0) {
         AssetGroup = other.AssetGroup;
+      }
+      if (other.CampaignBudget.Length != 0) {
+        CampaignBudget = other.CampaignBudget;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -970,6 +1003,10 @@ namespace Google.Ads.GoogleAds.V19.Resources {
             AssetGroup = input.ReadString();
             break;
           }
+          case 338: {
+            CampaignBudget = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -1055,6 +1092,10 @@ namespace Google.Ads.GoogleAds.V19.Resources {
           }
           case 330: {
             AssetGroup = input.ReadString();
+            break;
+          }
+          case 338: {
+            CampaignBudget = input.ReadString();
             break;
           }
         }

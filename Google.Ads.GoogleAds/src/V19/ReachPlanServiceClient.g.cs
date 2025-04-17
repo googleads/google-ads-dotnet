@@ -44,6 +44,7 @@ namespace Google.Ads.GoogleAds.V19.Services
         private ReachPlanServiceSettings(ReachPlanServiceSettings existing) : base(existing)
         {
             gax::GaxPreconditions.CheckNotNull(existing, nameof(existing));
+            GenerateConversionRatesSettings = existing.GenerateConversionRatesSettings;
             ListPlannableLocationsSettings = existing.ListPlannableLocationsSettings;
             ListPlannableProductsSettings = existing.ListPlannableProductsSettings;
             GenerateReachForecastSettings = existing.GenerateReachForecastSettings;
@@ -51,6 +52,28 @@ namespace Google.Ads.GoogleAds.V19.Services
         }
 
         partial void OnCopy(ReachPlanServiceSettings existing);
+
+        /// <summary>
+        /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
+        /// <c>ReachPlanServiceClient.GenerateConversionRates</c> and
+        /// <c>ReachPlanServiceClient.GenerateConversionRatesAsync</c>.
+        /// </summary>
+        /// <remarks>
+        /// <list type="bullet">
+        /// <item><description>Initial retry delay: 5000 milliseconds.</description></item>
+        /// <item><description>Retry delay multiplier: 1.3</description></item>
+        /// <item><description>Retry maximum delay: 60000 milliseconds.</description></item>
+        /// <item><description>Maximum attempts: Unlimited</description></item>
+        /// <item>
+        /// <description>
+        /// Retriable status codes: <see cref="grpccore::StatusCode.Unavailable"/>,
+        /// <see cref="grpccore::StatusCode.DeadlineExceeded"/>.
+        /// </description>
+        /// </item>
+        /// <item><description>Timeout: 14400 seconds.</description></item>
+        /// </list>
+        /// </remarks>
+        public gaxgrpc::CallSettings GenerateConversionRatesSettings { get; set; } = gaxgrpc::CallSettingsExtensions.WithRetry(gaxgrpc::CallSettings.FromExpiration(gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(14400000))), gaxgrpc::RetrySettings.FromExponentialBackoff(maxAttempts: 2147483647, initialBackoff: sys::TimeSpan.FromMilliseconds(5000), maxBackoff: sys::TimeSpan.FromMilliseconds(60000), backoffMultiplier: 1.3, retryFilter: gaxgrpc::RetrySettings.FilterForStatusCodes(grpccore::StatusCode.Unavailable, grpccore::StatusCode.DeadlineExceeded)));
 
         /// <summary>
         /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
@@ -260,6 +283,129 @@ namespace Google.Ads.GoogleAds.V19.Services
 
         /// <summary>The underlying gRPC ReachPlanService client</summary>
         public virtual ReachPlanService.ReachPlanServiceClient GrpcClient => throw new sys::NotImplementedException();
+
+        /// <summary>
+        /// Returns a collection of conversion rate suggestions for supported plannable
+        /// products.
+        /// 
+        /// List of thrown errors:
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [QuotaError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual GenerateConversionRatesResponse GenerateConversionRates(GenerateConversionRatesRequest request, gaxgrpc::CallSettings callSettings = null) =>
+            throw new sys::NotImplementedException();
+
+        /// <summary>
+        /// Returns a collection of conversion rate suggestions for supported plannable
+        /// products.
+        /// 
+        /// List of thrown errors:
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [QuotaError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<GenerateConversionRatesResponse> GenerateConversionRatesAsync(GenerateConversionRatesRequest request, gaxgrpc::CallSettings callSettings = null) =>
+            throw new sys::NotImplementedException();
+
+        /// <summary>
+        /// Returns a collection of conversion rate suggestions for supported plannable
+        /// products.
+        /// 
+        /// List of thrown errors:
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [QuotaError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<GenerateConversionRatesResponse> GenerateConversionRatesAsync(GenerateConversionRatesRequest request, st::CancellationToken cancellationToken) =>
+            GenerateConversionRatesAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Returns a collection of conversion rate suggestions for supported plannable
+        /// products.
+        /// 
+        /// List of thrown errors:
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [QuotaError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="customerId">
+        /// Required. The ID of the customer. A conversion rate based on the historical
+        /// data of this customer may be suggested.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual GenerateConversionRatesResponse GenerateConversionRates(string customerId, gaxgrpc::CallSettings callSettings = null) =>
+            GenerateConversionRates(new GenerateConversionRatesRequest
+            {
+                CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+            }, callSettings);
+
+        /// <summary>
+        /// Returns a collection of conversion rate suggestions for supported plannable
+        /// products.
+        /// 
+        /// List of thrown errors:
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [QuotaError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="customerId">
+        /// Required. The ID of the customer. A conversion rate based on the historical
+        /// data of this customer may be suggested.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<GenerateConversionRatesResponse> GenerateConversionRatesAsync(string customerId, gaxgrpc::CallSettings callSettings = null) =>
+            GenerateConversionRatesAsync(new GenerateConversionRatesRequest
+            {
+                CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
+            }, callSettings);
+
+        /// <summary>
+        /// Returns a collection of conversion rate suggestions for supported plannable
+        /// products.
+        /// 
+        /// List of thrown errors:
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [QuotaError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="customerId">
+        /// Required. The ID of the customer. A conversion rate based on the historical
+        /// data of this customer may be suggested.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<GenerateConversionRatesResponse> GenerateConversionRatesAsync(string customerId, st::CancellationToken cancellationToken) =>
+            GenerateConversionRatesAsync(customerId, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
         /// Returns the list of plannable locations (for example, countries).
@@ -612,6 +758,8 @@ namespace Google.Ads.GoogleAds.V19.Services
     /// </remarks>
     public sealed partial class ReachPlanServiceClientImpl : ReachPlanServiceClient
     {
+        private readonly gaxgrpc::ApiCall<GenerateConversionRatesRequest, GenerateConversionRatesResponse> _callGenerateConversionRates;
+
         private readonly gaxgrpc::ApiCall<ListPlannableLocationsRequest, ListPlannableLocationsResponse> _callListPlannableLocations;
 
         private readonly gaxgrpc::ApiCall<ListPlannableProductsRequest, ListPlannableProductsResponse> _callListPlannableProducts;
@@ -633,6 +781,9 @@ namespace Google.Ads.GoogleAds.V19.Services
                 Settings = effectiveSettings,
                 Logger = logger,
             });
+            _callGenerateConversionRates = clientHelper.BuildApiCall<GenerateConversionRatesRequest, GenerateConversionRatesResponse>("GenerateConversionRates", grpcClient.GenerateConversionRatesAsync, grpcClient.GenerateConversionRates, effectiveSettings.GenerateConversionRatesSettings);
+            Modify_ApiCall(ref _callGenerateConversionRates);
+            Modify_GenerateConversionRatesApiCall(ref _callGenerateConversionRates);
             _callListPlannableLocations = clientHelper.BuildApiCall<ListPlannableLocationsRequest, ListPlannableLocationsResponse>("ListPlannableLocations", grpcClient.ListPlannableLocationsAsync, grpcClient.ListPlannableLocations, effectiveSettings.ListPlannableLocationsSettings);
             Modify_ApiCall(ref _callListPlannableLocations);
             Modify_ListPlannableLocationsApiCall(ref _callListPlannableLocations);
@@ -647,6 +798,8 @@ namespace Google.Ads.GoogleAds.V19.Services
 
         partial void Modify_ApiCall<TRequest, TResponse>(ref gaxgrpc::ApiCall<TRequest, TResponse> call) where TRequest : class, proto::IMessage<TRequest> where TResponse : class, proto::IMessage<TResponse>;
 
+        partial void Modify_GenerateConversionRatesApiCall(ref gaxgrpc::ApiCall<GenerateConversionRatesRequest, GenerateConversionRatesResponse> call);
+
         partial void Modify_ListPlannableLocationsApiCall(ref gaxgrpc::ApiCall<ListPlannableLocationsRequest, ListPlannableLocationsResponse> call);
 
         partial void Modify_ListPlannableProductsApiCall(ref gaxgrpc::ApiCall<ListPlannableProductsRequest, ListPlannableProductsResponse> call);
@@ -658,11 +811,55 @@ namespace Google.Ads.GoogleAds.V19.Services
         /// <summary>The underlying gRPC ReachPlanService client</summary>
         public override ReachPlanService.ReachPlanServiceClient GrpcClient { get; }
 
+        partial void Modify_GenerateConversionRatesRequest(ref GenerateConversionRatesRequest request, ref gaxgrpc::CallSettings settings);
+
         partial void Modify_ListPlannableLocationsRequest(ref ListPlannableLocationsRequest request, ref gaxgrpc::CallSettings settings);
 
         partial void Modify_ListPlannableProductsRequest(ref ListPlannableProductsRequest request, ref gaxgrpc::CallSettings settings);
 
         partial void Modify_GenerateReachForecastRequest(ref GenerateReachForecastRequest request, ref gaxgrpc::CallSettings settings);
+
+        /// <summary>
+        /// Returns a collection of conversion rate suggestions for supported plannable
+        /// products.
+        /// 
+        /// List of thrown errors:
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [QuotaError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public override GenerateConversionRatesResponse GenerateConversionRates(GenerateConversionRatesRequest request, gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_GenerateConversionRatesRequest(ref request, ref callSettings);
+            return _callGenerateConversionRates.Sync(request, callSettings);
+        }
+
+        /// <summary>
+        /// Returns a collection of conversion rate suggestions for supported plannable
+        /// products.
+        /// 
+        /// List of thrown errors:
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [QuotaError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public override stt::Task<GenerateConversionRatesResponse> GenerateConversionRatesAsync(GenerateConversionRatesRequest request, gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_GenerateConversionRatesRequest(ref request, ref callSettings);
+            return _callGenerateConversionRates.Async(request, callSettings);
+        }
 
         /// <summary>
         /// Returns the list of plannable locations (for example, countries).

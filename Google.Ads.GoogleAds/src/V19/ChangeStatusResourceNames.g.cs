@@ -393,5 +393,14 @@ namespace Google.Ads.GoogleAds.V19.Resources
             get => string.IsNullOrEmpty(AssetGroup) ? null : AssetGroupName.Parse(AssetGroup, allowUnparsed: true);
             set => AssetGroup = value?.ToString() ?? "";
         }
+
+        /// <summary>
+        /// <see cref="CampaignBudgetName"/>-typed view over the <see cref="CampaignBudget"/> resource name property.
+        /// </summary>
+        internal CampaignBudgetName CampaignBudgetAsCampaignBudgetName
+        {
+            get => string.IsNullOrEmpty(CampaignBudget) ? null : CampaignBudgetName.Parse(CampaignBudget, allowUnparsed: true);
+            set => CampaignBudget = value?.ToString() ?? "";
+        }
     }
 }

@@ -3,7 +3,7 @@
 //     source: google/ads/googleads/v19/services/local_services_lead_service.proto
 // </auto-generated>
 // Original file comments:
-// Copyright 2024 Google LLC
+// Copyright 2025 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -67,6 +67,10 @@ namespace Google.Ads.GoogleAds.V19.Services {
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V19.Services.AppendLeadConversationRequest> __Marshaller_google_ads_googleads_v19_services_AppendLeadConversationRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V19.Services.AppendLeadConversationRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V19.Services.AppendLeadConversationResponse> __Marshaller_google_ads_googleads_v19_services_AppendLeadConversationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V19.Services.AppendLeadConversationResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V19.Services.ProvideLeadFeedbackRequest> __Marshaller_google_ads_googleads_v19_services_ProvideLeadFeedbackRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V19.Services.ProvideLeadFeedbackRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V19.Services.ProvideLeadFeedbackResponse> __Marshaller_google_ads_googleads_v19_services_ProvideLeadFeedbackResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V19.Services.ProvideLeadFeedbackResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Google.Ads.GoogleAds.V19.Services.AppendLeadConversationRequest, global::Google.Ads.GoogleAds.V19.Services.AppendLeadConversationResponse> __Method_AppendLeadConversation = new grpc::Method<global::Google.Ads.GoogleAds.V19.Services.AppendLeadConversationRequest, global::Google.Ads.GoogleAds.V19.Services.AppendLeadConversationResponse>(
@@ -75,6 +79,14 @@ namespace Google.Ads.GoogleAds.V19.Services {
         "AppendLeadConversation",
         __Marshaller_google_ads_googleads_v19_services_AppendLeadConversationRequest,
         __Marshaller_google_ads_googleads_v19_services_AppendLeadConversationResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Google.Ads.GoogleAds.V19.Services.ProvideLeadFeedbackRequest, global::Google.Ads.GoogleAds.V19.Services.ProvideLeadFeedbackResponse> __Method_ProvideLeadFeedback = new grpc::Method<global::Google.Ads.GoogleAds.V19.Services.ProvideLeadFeedbackRequest, global::Google.Ads.GoogleAds.V19.Services.ProvideLeadFeedbackResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ProvideLeadFeedback",
+        __Marshaller_google_ads_googleads_v19_services_ProvideLeadFeedbackRequest,
+        __Marshaller_google_ads_googleads_v19_services_ProvideLeadFeedbackResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -95,6 +107,18 @@ namespace Google.Ads.GoogleAds.V19.Services {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Google.Ads.GoogleAds.V19.Services.AppendLeadConversationResponse> AppendLeadConversation(global::Google.Ads.GoogleAds.V19.Services.AppendLeadConversationRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// RPC to provide feedback on Local Services Lead resources.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Google.Ads.GoogleAds.V19.Services.ProvideLeadFeedbackResponse> ProvideLeadFeedback(global::Google.Ads.GoogleAds.V19.Services.ProvideLeadFeedbackRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -180,6 +204,54 @@ namespace Google.Ads.GoogleAds.V19.Services {
       {
         return CallInvoker.AsyncUnaryCall(__Method_AppendLeadConversation, null, options, request);
       }
+      /// <summary>
+      /// RPC to provide feedback on Local Services Lead resources.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Ads.GoogleAds.V19.Services.ProvideLeadFeedbackResponse ProvideLeadFeedback(global::Google.Ads.GoogleAds.V19.Services.ProvideLeadFeedbackRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ProvideLeadFeedback(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// RPC to provide feedback on Local Services Lead resources.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Ads.GoogleAds.V19.Services.ProvideLeadFeedbackResponse ProvideLeadFeedback(global::Google.Ads.GoogleAds.V19.Services.ProvideLeadFeedbackRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ProvideLeadFeedback, null, options, request);
+      }
+      /// <summary>
+      /// RPC to provide feedback on Local Services Lead resources.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Ads.GoogleAds.V19.Services.ProvideLeadFeedbackResponse> ProvideLeadFeedbackAsync(global::Google.Ads.GoogleAds.V19.Services.ProvideLeadFeedbackRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ProvideLeadFeedbackAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// RPC to provide feedback on Local Services Lead resources.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Ads.GoogleAds.V19.Services.ProvideLeadFeedbackResponse> ProvideLeadFeedbackAsync(global::Google.Ads.GoogleAds.V19.Services.ProvideLeadFeedbackRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ProvideLeadFeedback, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override LocalServicesLeadServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -194,7 +266,8 @@ namespace Google.Ads.GoogleAds.V19.Services {
     public static grpc::ServerServiceDefinition BindService(LocalServicesLeadServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_AppendLeadConversation, serviceImpl.AppendLeadConversation).Build();
+          .AddMethod(__Method_AppendLeadConversation, serviceImpl.AppendLeadConversation)
+          .AddMethod(__Method_ProvideLeadFeedback, serviceImpl.ProvideLeadFeedback).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -205,6 +278,7 @@ namespace Google.Ads.GoogleAds.V19.Services {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, LocalServicesLeadServiceBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_AppendLeadConversation, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Ads.GoogleAds.V19.Services.AppendLeadConversationRequest, global::Google.Ads.GoogleAds.V19.Services.AppendLeadConversationResponse>(serviceImpl.AppendLeadConversation));
+      serviceBinder.AddMethod(__Method_ProvideLeadFeedback, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Ads.GoogleAds.V19.Services.ProvideLeadFeedbackRequest, global::Google.Ads.GoogleAds.V19.Services.ProvideLeadFeedbackResponse>(serviceImpl.ProvideLeadFeedback));
     }
 
   }

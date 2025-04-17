@@ -31,4 +31,17 @@ namespace Google.Ads.GoogleAds.V19.Services
             set => LocalServicesLead = value?.ToString() ?? "";
         }
     }
+
+    public partial class ProvideLeadFeedbackRequest
+    {
+        /// <summary>
+        /// <see cref="gagvr::LocalServicesLeadName"/>-typed view over the <see cref="ResourceName"/> resource name
+        /// property.
+        /// </summary>
+        internal gagvr::LocalServicesLeadName ResourceNameAsLocalServicesLeadName
+        {
+            get => string.IsNullOrEmpty(ResourceName) ? null : gagvr::LocalServicesLeadName.Parse(ResourceName, allowUnparsed: true);
+            set => ResourceName = value?.ToString() ?? "";
+        }
+    }
 }

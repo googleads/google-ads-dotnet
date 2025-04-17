@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V19.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjRnb29nbGUvYWRzL2dvb2dsZWFkcy92MTkvZXJyb3JzL2NhbXBhaWduX2Vy",
-            "cm9yLnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFkcy52MTkuZXJyb3JzIqUg",
-            "ChFDYW1wYWlnbkVycm9yRW51bSKPIAoNQ2FtcGFpZ25FcnJvchIPCgtVTlNQ",
+            "cm9yLnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFkcy52MTkuZXJyb3JzItIg",
+            "ChFDYW1wYWlnbkVycm9yRW51bSK8IAoNQ2FtcGFpZ25FcnJvchIPCgtVTlNQ",
             "RUNJRklFRBAAEgsKB1VOS05PV04QARIhCh1DQU5OT1RfVEFSR0VUX0NPTlRF",
             "TlRfTkVUV09SSxADEiAKHENBTk5PVF9UQVJHRVRfU0VBUkNIX05FVFdPUksQ",
             "BBI2CjJDQU5OT1RfVEFSR0VUX1NFQVJDSF9ORVRXT1JLX1dJVEhPVVRfR09P",
@@ -110,7 +110,8 @@ namespace Google.Ads.GoogleAds.V19.Errors {
             "SU5HX1RSSUFMEF0SOgo2Q0FOTk9UX0VOQUJMRV9CUk9BRF9NQVRDSF9GT1Jf",
             "UFJPTU9USU5HX1RSSUFMX0NBTVBBSUdOEF4SKwonUkVRVUlSRURfQlVTSU5F",
             "U1NfTkFNRV9BU1NFVF9OT1RfTElOS0VEEF8SIgoeUkVRVUlSRURfTE9HT19B",
-            "U1NFVF9OT1RfTElOS0VEEGASLQopQlJBTkRfR1VJREVMSU5FU19OT1RfRU5B",
+            "U1NFVF9OT1RfTElOS0VEEGASKwonQlJBTkRfVEFSR0VUSU5HX09WRVJSSURF",
+            "U19OT1RfU1VQUE9SVEVEEGESLQopQlJBTkRfR1VJREVMSU5FU19OT1RfRU5B",
             "QkxFRF9GT1JfQ0FNUEFJR04QYhI0CjBCUkFORF9HVUlERUxJTkVTX01BSU5f",
             "QU5EX0FDQ0VOVF9DT0xPUlNfUkVRVUlSRUQQYxIpCiVCUkFORF9HVUlERUxJ",
             "TkVTX0NPTE9SX0lOVkFMSURfRk9STUFUEGQSLAooQlJBTkRfR1VJREVMSU5F",
@@ -690,6 +691,12 @@ namespace Google.Ads.GoogleAds.V19.Errors {
         /// groups.
         /// </summary>
         [pbr::OriginalName("REQUIRED_LOGO_ASSET_NOT_LINKED")] RequiredLogoAssetNotLinked = 96,
+        /// <summary>
+        /// This campaign does not support brand targeting overrides. Brand targeting
+        /// overrides are only supported for Performance Max campaigns that have a
+        /// product feed.
+        /// </summary>
+        [pbr::OriginalName("BRAND_TARGETING_OVERRIDES_NOT_SUPPORTED")] BrandTargetingOverridesNotSupported = 97,
         /// <summary>
         /// Brand Guideline fields can only be set for campaigns that have Brand
         /// Guidelines enabled.

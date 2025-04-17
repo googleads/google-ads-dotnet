@@ -1,3 +1,9 @@
+22.2.0
+======
+- Added support for version 19.1 of the Google Ads API.
+- Updated the `UploadEnhancedConversionsForLeads` example to demonstrate usage
+  of the new `sessionAttributes` oneof.
+
 22.1.0
 ======
 - Added support for version 19.0 of the Google Ads API.

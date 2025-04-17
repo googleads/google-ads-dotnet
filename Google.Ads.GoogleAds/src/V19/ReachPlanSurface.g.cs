@@ -26,16 +26,17 @@ namespace Google.Ads.GoogleAds.V19.Enums {
           string.Concat(
             "Cjdnb29nbGUvYWRzL2dvb2dsZWFkcy92MTkvZW51bXMvcmVhY2hfcGxhbl9z",
             "dXJmYWNlLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTkuZW51bXMi",
-            "rgEKFFJlYWNoUGxhblN1cmZhY2VFbnVtIpUBChBSZWFjaFBsYW5TdXJmYWNl",
-            "Eg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgsKB0lOX0ZFRUQQAhIU",
-            "ChBJTl9TVFJFQU1fQlVNUEVSEAMSGwoXSU5fU1RSRUFNX05PTl9TS0lQUEFC",
-            "TEUQBBIXChNJTl9TVFJFQU1fU0tJUFBBQkxFEAUSCgoGU0hPUlRTEAZC7wEK",
-            "ImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTkuZW51bXNCFVJlYWNoUGxh",
-            "blN1cmZhY2VQcm90b1ABWkNnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9n",
-            "b29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjE5L2VudW1zO2VudW1zogIDR0FB",
-            "qgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjE5LkVudW1zygIeR29vZ2xlXEFk",
-            "c1xHb29nbGVBZHNcVjE5XEVudW1z6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFk",
-            "czo6VjE5OjpFbnVtc2IGcHJvdG8z"));
+            "zAEKFFJlYWNoUGxhblN1cmZhY2VFbnVtIrMBChBSZWFjaFBsYW5TdXJmYWNl",
+            "Eg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEhEKDURJU0NPVkVSX0ZF",
+            "RUQQBxIJCgVHTUFJTBAIEgsKB0lOX0ZFRUQQAhIUChBJTl9TVFJFQU1fQlVN",
+            "UEVSEAMSGwoXSU5fU1RSRUFNX05PTl9TS0lQUEFCTEUQBBIXChNJTl9TVFJF",
+            "QU1fU0tJUFBBQkxFEAUSCgoGU0hPUlRTEAZC7wEKImNvbS5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MTkuZW51bXNCFVJlYWNoUGxhblN1cmZhY2VQcm90b1AB",
+            "WkNnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9n",
+            "b29nbGVhZHMvdjE5L2VudW1zO2VudW1zogIDR0FBqgIeR29vZ2xlLkFkcy5H",
+            "b29nbGVBZHMuVjE5LkVudW1zygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjE5",
+            "XEVudW1z6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjE5OjpFbnVtc2IG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -219,6 +220,14 @@ namespace Google.Ads.GoogleAds.V19.Enums {
         /// The value is unknown in this version.
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
+        /// <summary>
+        /// Discover feed ad surface.
+        /// </summary>
+        [pbr::OriginalName("DISCOVER_FEED")] DiscoverFeed = 7,
+        /// <summary>
+        /// Gmail ad surface.
+        /// </summary>
+        [pbr::OriginalName("GMAIL")] Gmail = 8,
         /// <summary>
         /// In-Feed ad surface.
         /// </summary>

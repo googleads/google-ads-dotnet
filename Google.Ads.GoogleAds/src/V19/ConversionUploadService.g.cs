@@ -28,115 +28,130 @@ namespace Google.Ads.GoogleAds.V19.Services {
             "bl91cGxvYWRfc2VydmljZS5wcm90bxIhZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
             "djE5LnNlcnZpY2VzGi1nb29nbGUvYWRzL2dvb2dsZWFkcy92MTkvY29tbW9u",
             "L2NvbnNlbnQucHJvdG8aN2dvb2dsZS9hZHMvZ29vZ2xlYWRzL3YxOS9jb21t",
-            "b24vb2ZmbGluZV91c2VyX2RhdGEucHJvdG8aQGdvb2dsZS9hZHMvZ29vZ2xl",
-            "YWRzL3YxOS9lbnVtcy9jb252ZXJzaW9uX2Vudmlyb25tZW50X2VudW0ucHJv",
-            "dG8aHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8aF2dvb2dsZS9hcGkv",
-            "Y2xpZW50LnByb3RvGh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9yLnByb3Rv",
-            "Ghlnb29nbGUvYXBpL3Jlc291cmNlLnByb3RvGhdnb29nbGUvcnBjL3N0YXR1",
-            "cy5wcm90byL4AQodVXBsb2FkQ2xpY2tDb252ZXJzaW9uc1JlcXVlc3QSGAoL",
-            "Y3VzdG9tZXJfaWQYASABKAlCA+BBAhJMCgtjb252ZXJzaW9ucxgCIAMoCzIy",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxOS5zZXJ2aWNlcy5DbGlja0NvbnZl",
-            "cnNpb25CA+BBAhIcCg9wYXJ0aWFsX2ZhaWx1cmUYAyABKAhCA+BBAhIVCg12",
-            "YWxpZGF0ZV9vbmx5GAQgASgIEhUKDWRlYnVnX2VuYWJsZWQYBSABKAgSGAoG",
-            "am9iX2lkGAYgASgFQgPgQQFIAIgBAUIJCgdfam9iX2lkIq4BCh5VcGxvYWRD",
-            "bGlja0NvbnZlcnNpb25zUmVzcG9uc2USMQoVcGFydGlhbF9mYWlsdXJlX2Vy",
-            "cm9yGAEgASgLMhIuZ29vZ2xlLnJwYy5TdGF0dXMSSQoHcmVzdWx0cxgCIAMo",
-            "CzI4Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxOS5zZXJ2aWNlcy5DbGlja0Nv",
-            "bnZlcnNpb25SZXN1bHQSDgoGam9iX2lkGAMgASgDIroBChxVcGxvYWRDYWxs",
-            "Q29udmVyc2lvbnNSZXF1ZXN0EhgKC2N1c3RvbWVyX2lkGAEgASgJQgPgQQIS",
-            "SwoLY29udmVyc2lvbnMYAiADKAsyMS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MTkuc2VydmljZXMuQ2FsbENvbnZlcnNpb25CA+BBAhIcCg9wYXJ0aWFsX2Zh",
-            "aWx1cmUYAyABKAhCA+BBAhIVCg12YWxpZGF0ZV9vbmx5GAQgASgIIpwBCh1V",
-            "cGxvYWRDYWxsQ29udmVyc2lvbnNSZXNwb25zZRIxChVwYXJ0aWFsX2ZhaWx1",
-            "cmVfZXJyb3IYASABKAsyEi5nb29nbGUucnBjLlN0YXR1cxJICgdyZXN1bHRz",
-            "GAIgAygLMjcuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LnNlcnZpY2VzLkNh",
-            "bGxDb252ZXJzaW9uUmVzdWx0IqoGCg9DbGlja0NvbnZlcnNpb24SEgoFZ2Ns",
-            "aWQYCSABKAlIAIgBARIOCgZnYnJhaWQYEiABKAkSDgoGd2JyYWlkGBMgASgJ",
-            "Eh4KEWNvbnZlcnNpb25fYWN0aW9uGAogASgJSAGIAQESIQoUY29udmVyc2lv",
-            "bl9kYXRlX3RpbWUYCyABKAlIAogBARIdChBjb252ZXJzaW9uX3ZhbHVlGAwg",
-            "ASgBSAOIAQESGgoNY3VycmVuY3lfY29kZRgNIAEoCUgEiAEBEhUKCG9yZGVy",
-            "X2lkGA4gASgJSAWIAQESXQoZZXh0ZXJuYWxfYXR0cmlidXRpb25fZGF0YRgH",
-            "IAEoCzI6Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxOS5zZXJ2aWNlcy5FeHRl",
-            "cm5hbEF0dHJpYnV0aW9uRGF0YRJLChBjdXN0b21fdmFyaWFibGVzGA8gAygL",
-            "MjEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LnNlcnZpY2VzLkN1c3RvbVZh",
-            "cmlhYmxlEj4KCWNhcnRfZGF0YRgQIAEoCzIrLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYxOS5zZXJ2aWNlcy5DYXJ0RGF0YRJJChB1c2VyX2lkZW50aWZpZXJz",
-            "GBEgAygLMi8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LmNvbW1vbi5Vc2Vy",
-            "SWRlbnRpZmllchJvChZjb252ZXJzaW9uX2Vudmlyb25tZW50GBQgASgOMk8u",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LmVudW1zLkNvbnZlcnNpb25FbnZp",
-            "cm9ubWVudEVudW0uQ29udmVyc2lvbkVudmlyb25tZW50EjkKB2NvbnNlbnQY",
-            "FyABKAsyKC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTkuY29tbW9uLkNvbnNl",
-            "bnRCCAoGX2djbGlkQhQKEl9jb252ZXJzaW9uX2FjdGlvbkIXChVfY29udmVy",
-            "c2lvbl9kYXRlX3RpbWVCEwoRX2NvbnZlcnNpb25fdmFsdWVCEAoOX2N1cnJl",
-            "bmN5X2NvZGVCCwoJX29yZGVyX2lkIs4DCg5DYWxsQ29udmVyc2lvbhIWCglj",
-            "YWxsZXJfaWQYByABKAlIAIgBARIhChRjYWxsX3N0YXJ0X2RhdGVfdGltZRgI",
-            "IAEoCUgBiAEBEh4KEWNvbnZlcnNpb25fYWN0aW9uGAkgASgJSAKIAQESIQoU",
-            "Y29udmVyc2lvbl9kYXRlX3RpbWUYCiABKAlIA4gBARIdChBjb252ZXJzaW9u",
-            "X3ZhbHVlGAsgASgBSASIAQESGgoNY3VycmVuY3lfY29kZRgMIAEoCUgFiAEB",
-            "EksKEGN1c3RvbV92YXJpYWJsZXMYDSADKAsyMS5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MTkuc2VydmljZXMuQ3VzdG9tVmFyaWFibGUSOQoHY29uc2VudBgO",
-            "IAEoCzIoLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxOS5jb21tb24uQ29uc2Vu",
-            "dEIMCgpfY2FsbGVyX2lkQhcKFV9jYWxsX3N0YXJ0X2RhdGVfdGltZUIUChJf",
-            "Y29udmVyc2lvbl9hY3Rpb25CFwoVX2NvbnZlcnNpb25fZGF0ZV90aW1lQhMK",
-            "EV9jb252ZXJzaW9uX3ZhbHVlQhAKDl9jdXJyZW5jeV9jb2RlIqsBChdFeHRl",
-            "cm5hbEF0dHJpYnV0aW9uRGF0YRIoChtleHRlcm5hbF9hdHRyaWJ1dGlvbl9j",
-            "cmVkaXQYAyABKAFIAIgBARInChpleHRlcm5hbF9hdHRyaWJ1dGlvbl9tb2Rl",
-            "bBgEIAEoCUgBiAEBQh4KHF9leHRlcm5hbF9hdHRyaWJ1dGlvbl9jcmVkaXRC",
-            "HQobX2V4dGVybmFsX2F0dHJpYnV0aW9uX21vZGVsIpICChVDbGlja0NvbnZl",
-            "cnNpb25SZXN1bHQSEgoFZ2NsaWQYBCABKAlIAIgBARIOCgZnYnJhaWQYCCAB",
-            "KAkSDgoGd2JyYWlkGAkgASgJEh4KEWNvbnZlcnNpb25fYWN0aW9uGAUgASgJ",
-            "SAGIAQESIQoUY29udmVyc2lvbl9kYXRlX3RpbWUYBiABKAlIAogBARJJChB1",
-            "c2VyX2lkZW50aWZpZXJzGAcgAygLMi8uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djE5LmNvbW1vbi5Vc2VySWRlbnRpZmllckIICgZfZ2NsaWRCFAoSX2NvbnZl",
-            "cnNpb25fYWN0aW9uQhcKFV9jb252ZXJzaW9uX2RhdGVfdGltZSLqAQoUQ2Fs",
-            "bENvbnZlcnNpb25SZXN1bHQSFgoJY2FsbGVyX2lkGAUgASgJSACIAQESIQoU",
-            "Y2FsbF9zdGFydF9kYXRlX3RpbWUYBiABKAlIAYgBARIeChFjb252ZXJzaW9u",
-            "X2FjdGlvbhgHIAEoCUgCiAEBEiEKFGNvbnZlcnNpb25fZGF0ZV90aW1lGAgg",
-            "ASgJSAOIAQFCDAoKX2NhbGxlcl9pZEIXChVfY2FsbF9zdGFydF9kYXRlX3Rp",
-            "bWVCFAoSX2NvbnZlcnNpb25fYWN0aW9uQhcKFV9jb252ZXJzaW9uX2RhdGVf",
-            "dGltZSJ7Cg5DdXN0b21WYXJpYWJsZRJaChpjb252ZXJzaW9uX2N1c3RvbV92",
-            "YXJpYWJsZRgBIAEoCUI2+kEzCjFnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20v",
-            "Q29udmVyc2lvbkN1c3RvbVZhcmlhYmxlEg0KBXZhbHVlGAIgASgJIvkBCghD",
-            "YXJ0RGF0YRITCgttZXJjaGFudF9pZBgGIAEoAxIZChFmZWVkX2NvdW50cnlf",
-            "Y29kZRgCIAEoCRIaChJmZWVkX2xhbmd1YWdlX2NvZGUYAyABKAkSHgoWbG9j",
-            "YWxfdHJhbnNhY3Rpb25fY29zdBgEIAEoARI/CgVpdGVtcxgFIAMoCzIwLmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYxOS5zZXJ2aWNlcy5DYXJ0RGF0YS5JdGVt",
-            "GkAKBEl0ZW0SEgoKcHJvZHVjdF9pZBgBIAEoCRIQCghxdWFudGl0eRgCIAEo",
-            "BRISCgp1bml0X3ByaWNlGAMgASgBMvQEChdDb252ZXJzaW9uVXBsb2FkU2Vy",
-            "dmljZRKJAgoWVXBsb2FkQ2xpY2tDb252ZXJzaW9ucxJALmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYxOS5zZXJ2aWNlcy5VcGxvYWRDbGlja0NvbnZlcnNpb25z",
-            "UmVxdWVzdBpBLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxOS5zZXJ2aWNlcy5V",
-            "cGxvYWRDbGlja0NvbnZlcnNpb25zUmVzcG9uc2UiatpBJ2N1c3RvbWVyX2lk",
-            "LGNvbnZlcnNpb25zLHBhcnRpYWxfZmFpbHVyZYLT5JMCOiI1L3YxOS9jdXN0",
-            "b21lcnMve2N1c3RvbWVyX2lkPSp9OnVwbG9hZENsaWNrQ29udmVyc2lvbnM6",
-            "ASoShQIKFVVwbG9hZENhbGxDb252ZXJzaW9ucxI/Lmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYxOS5zZXJ2aWNlcy5VcGxvYWRDYWxsQ29udmVyc2lvbnNSZXF1",
-            "ZXN0GkAuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LnNlcnZpY2VzLlVwbG9h",
-            "ZENhbGxDb252ZXJzaW9uc1Jlc3BvbnNlImnaQSdjdXN0b21lcl9pZCxjb252",
-            "ZXJzaW9ucyxwYXJ0aWFsX2ZhaWx1cmWC0+STAjkiNC92MTkvY3VzdG9tZXJz",
-            "L3tjdXN0b21lcl9pZD0qfTp1cGxvYWRDYWxsQ29udmVyc2lvbnM6ASoaRcpB",
-            "GGdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbdJBJ2h0dHBzOi8vd3d3Lmdvb2ds",
-            "ZWFwaXMuY29tL2F1dGgvYWR3b3Jkc0KIAgolY29tLmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYxOS5zZXJ2aWNlc0IcQ29udmVyc2lvblVwbG9hZFNlcnZpY2VQ",
-            "cm90b1ABWklnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlz",
-            "L2Fkcy9nb29nbGVhZHMvdjE5L3NlcnZpY2VzO3NlcnZpY2VzogIDR0FBqgIh",
-            "R29vZ2xlLkFkcy5Hb29nbGVBZHMuVjE5LlNlcnZpY2VzygIhR29vZ2xlXEFk",
-            "c1xHb29nbGVBZHNcVjE5XFNlcnZpY2Vz6gIlR29vZ2xlOjpBZHM6Okdvb2ds",
-            "ZUFkczo6VjE5OjpTZXJ2aWNlc2IGcHJvdG8z"));
+            "b24vb2ZmbGluZV91c2VyX2RhdGEucHJvdG8aPWdvb2dsZS9hZHMvZ29vZ2xl",
+            "YWRzL3YxOS9lbnVtcy9jb252ZXJzaW9uX2N1c3RvbWVyX3R5cGUucHJvdG8a",
+            "QGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YxOS9lbnVtcy9jb252ZXJzaW9uX2Vu",
+            "dmlyb25tZW50X2VudW0ucHJvdG8aHGdvb2dsZS9hcGkvYW5ub3RhdGlvbnMu",
+            "cHJvdG8aF2dvb2dsZS9hcGkvY2xpZW50LnByb3RvGh9nb29nbGUvYXBpL2Zp",
+            "ZWxkX2JlaGF2aW9yLnByb3RvGhlnb29nbGUvYXBpL3Jlc291cmNlLnByb3Rv",
+            "Ghdnb29nbGUvcnBjL3N0YXR1cy5wcm90byL4AQodVXBsb2FkQ2xpY2tDb252",
+            "ZXJzaW9uc1JlcXVlc3QSGAoLY3VzdG9tZXJfaWQYASABKAlCA+BBAhJMCgtj",
+            "b252ZXJzaW9ucxgCIAMoCzIyLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxOS5z",
+            "ZXJ2aWNlcy5DbGlja0NvbnZlcnNpb25CA+BBAhIcCg9wYXJ0aWFsX2ZhaWx1",
+            "cmUYAyABKAhCA+BBAhIVCg12YWxpZGF0ZV9vbmx5GAQgASgIEhUKDWRlYnVn",
+            "X2VuYWJsZWQYBSABKAgSGAoGam9iX2lkGAYgASgFQgPgQQFIAIgBAUIJCgdf",
+            "am9iX2lkIq4BCh5VcGxvYWRDbGlja0NvbnZlcnNpb25zUmVzcG9uc2USMQoV",
+            "cGFydGlhbF9mYWlsdXJlX2Vycm9yGAEgASgLMhIuZ29vZ2xlLnJwYy5TdGF0",
+            "dXMSSQoHcmVzdWx0cxgCIAMoCzI4Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYx",
+            "OS5zZXJ2aWNlcy5DbGlja0NvbnZlcnNpb25SZXN1bHQSDgoGam9iX2lkGAMg",
+            "ASgDIroBChxVcGxvYWRDYWxsQ29udmVyc2lvbnNSZXF1ZXN0EhgKC2N1c3Rv",
+            "bWVyX2lkGAEgASgJQgPgQQISSwoLY29udmVyc2lvbnMYAiADKAsyMS5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MTkuc2VydmljZXMuQ2FsbENvbnZlcnNpb25C",
+            "A+BBAhIcCg9wYXJ0aWFsX2ZhaWx1cmUYAyABKAhCA+BBAhIVCg12YWxpZGF0",
+            "ZV9vbmx5GAQgASgIIpwBCh1VcGxvYWRDYWxsQ29udmVyc2lvbnNSZXNwb25z",
+            "ZRIxChVwYXJ0aWFsX2ZhaWx1cmVfZXJyb3IYASABKAsyEi5nb29nbGUucnBj",
+            "LlN0YXR1cxJICgdyZXN1bHRzGAIgAygLMjcuZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjE5LnNlcnZpY2VzLkNhbGxDb252ZXJzaW9uUmVzdWx0IsEICg9DbGlj",
+            "a0NvbnZlcnNpb24SEgoFZ2NsaWQYCSABKAlIAYgBARIOCgZnYnJhaWQYEiAB",
+            "KAkSDgoGd2JyYWlkGBMgASgJEh4KEWNvbnZlcnNpb25fYWN0aW9uGAogASgJ",
+            "SAKIAQESIQoUY29udmVyc2lvbl9kYXRlX3RpbWUYCyABKAlIA4gBARIdChBj",
+            "b252ZXJzaW9uX3ZhbHVlGAwgASgBSASIAQESGgoNY3VycmVuY3lfY29kZRgN",
+            "IAEoCUgFiAEBEhUKCG9yZGVyX2lkGA4gASgJSAaIAQESXQoZZXh0ZXJuYWxf",
+            "YXR0cmlidXRpb25fZGF0YRgHIAEoCzI6Lmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYxOS5zZXJ2aWNlcy5FeHRlcm5hbEF0dHJpYnV0aW9uRGF0YRJLChBjdXN0",
+            "b21fdmFyaWFibGVzGA8gAygLMjEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5",
+            "LnNlcnZpY2VzLkN1c3RvbVZhcmlhYmxlEj4KCWNhcnRfZGF0YRgQIAEoCzIr",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxOS5zZXJ2aWNlcy5DYXJ0RGF0YRJJ",
+            "ChB1c2VyX2lkZW50aWZpZXJzGBEgAygLMi8uZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjE5LmNvbW1vbi5Vc2VySWRlbnRpZmllchJvChZjb252ZXJzaW9uX2Vu",
+            "dmlyb25tZW50GBQgASgOMk8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LmVu",
+            "dW1zLkNvbnZlcnNpb25FbnZpcm9ubWVudEVudW0uQ29udmVyc2lvbkVudmly",
+            "b25tZW50EjkKB2NvbnNlbnQYFyABKAsyKC5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MTkuY29tbW9uLkNvbnNlbnQSaAoNY3VzdG9tZXJfdHlwZRgaIAEoDjJR",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYxOS5lbnVtcy5Db252ZXJzaW9uQ3Vz",
+            "dG9tZXJUeXBlRW51bS5Db252ZXJzaW9uQ3VzdG9tZXJUeXBlEiQKGnNlc3Np",
+            "b25fYXR0cmlidXRlc19lbmNvZGVkGBggASgMSAASbwoic2Vzc2lvbl9hdHRy",
+            "aWJ1dGVzX2tleV92YWx1ZV9wYWlycxgZIAEoCzJBLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYxOS5zZXJ2aWNlcy5TZXNzaW9uQXR0cmlidXRlc0tleVZhbHVl",
+            "UGFpcnNIAEIUChJzZXNzaW9uX2F0dHJpYnV0ZXNCCAoGX2djbGlkQhQKEl9j",
+            "b252ZXJzaW9uX2FjdGlvbkIXChVfY29udmVyc2lvbl9kYXRlX3RpbWVCEwoR",
+            "X2NvbnZlcnNpb25fdmFsdWVCEAoOX2N1cnJlbmN5X2NvZGVCCwoJX29yZGVy",
+            "X2lkIs4DCg5DYWxsQ29udmVyc2lvbhIWCgljYWxsZXJfaWQYByABKAlIAIgB",
+            "ARIhChRjYWxsX3N0YXJ0X2RhdGVfdGltZRgIIAEoCUgBiAEBEh4KEWNvbnZl",
+            "cnNpb25fYWN0aW9uGAkgASgJSAKIAQESIQoUY29udmVyc2lvbl9kYXRlX3Rp",
+            "bWUYCiABKAlIA4gBARIdChBjb252ZXJzaW9uX3ZhbHVlGAsgASgBSASIAQES",
+            "GgoNY3VycmVuY3lfY29kZRgMIAEoCUgFiAEBEksKEGN1c3RvbV92YXJpYWJs",
+            "ZXMYDSADKAsyMS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTkuc2VydmljZXMu",
+            "Q3VzdG9tVmFyaWFibGUSOQoHY29uc2VudBgOIAEoCzIoLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYxOS5jb21tb24uQ29uc2VudEIMCgpfY2FsbGVyX2lkQhcK",
+            "FV9jYWxsX3N0YXJ0X2RhdGVfdGltZUIUChJfY29udmVyc2lvbl9hY3Rpb25C",
+            "FwoVX2NvbnZlcnNpb25fZGF0ZV90aW1lQhMKEV9jb252ZXJzaW9uX3ZhbHVl",
+            "QhAKDl9jdXJyZW5jeV9jb2RlIqsBChdFeHRlcm5hbEF0dHJpYnV0aW9uRGF0",
+            "YRIoChtleHRlcm5hbF9hdHRyaWJ1dGlvbl9jcmVkaXQYAyABKAFIAIgBARIn",
+            "ChpleHRlcm5hbF9hdHRyaWJ1dGlvbl9tb2RlbBgEIAEoCUgBiAEBQh4KHF9l",
+            "eHRlcm5hbF9hdHRyaWJ1dGlvbl9jcmVkaXRCHQobX2V4dGVybmFsX2F0dHJp",
+            "YnV0aW9uX21vZGVsIpICChVDbGlja0NvbnZlcnNpb25SZXN1bHQSEgoFZ2Ns",
+            "aWQYBCABKAlIAIgBARIOCgZnYnJhaWQYCCABKAkSDgoGd2JyYWlkGAkgASgJ",
+            "Eh4KEWNvbnZlcnNpb25fYWN0aW9uGAUgASgJSAGIAQESIQoUY29udmVyc2lv",
+            "bl9kYXRlX3RpbWUYBiABKAlIAogBARJJChB1c2VyX2lkZW50aWZpZXJzGAcg",
+            "AygLMi8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjE5LmNvbW1vbi5Vc2VySWRl",
+            "bnRpZmllckIICgZfZ2NsaWRCFAoSX2NvbnZlcnNpb25fYWN0aW9uQhcKFV9j",
+            "b252ZXJzaW9uX2RhdGVfdGltZSLqAQoUQ2FsbENvbnZlcnNpb25SZXN1bHQS",
+            "FgoJY2FsbGVyX2lkGAUgASgJSACIAQESIQoUY2FsbF9zdGFydF9kYXRlX3Rp",
+            "bWUYBiABKAlIAYgBARIeChFjb252ZXJzaW9uX2FjdGlvbhgHIAEoCUgCiAEB",
+            "EiEKFGNvbnZlcnNpb25fZGF0ZV90aW1lGAggASgJSAOIAQFCDAoKX2NhbGxl",
+            "cl9pZEIXChVfY2FsbF9zdGFydF9kYXRlX3RpbWVCFAoSX2NvbnZlcnNpb25f",
+            "YWN0aW9uQhcKFV9jb252ZXJzaW9uX2RhdGVfdGltZSJ7Cg5DdXN0b21WYXJp",
+            "YWJsZRJaChpjb252ZXJzaW9uX2N1c3RvbV92YXJpYWJsZRgBIAEoCUI2+kEz",
+            "CjFnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vQ29udmVyc2lvbkN1c3RvbVZh",
+            "cmlhYmxlEg0KBXZhbHVlGAIgASgJIvkBCghDYXJ0RGF0YRITCgttZXJjaGFu",
+            "dF9pZBgGIAEoAxIZChFmZWVkX2NvdW50cnlfY29kZRgCIAEoCRIaChJmZWVk",
+            "X2xhbmd1YWdlX2NvZGUYAyABKAkSHgoWbG9jYWxfdHJhbnNhY3Rpb25fY29z",
+            "dBgEIAEoARI/CgVpdGVtcxgFIAMoCzIwLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYxOS5zZXJ2aWNlcy5DYXJ0RGF0YS5JdGVtGkAKBEl0ZW0SEgoKcHJvZHVj",
+            "dF9pZBgBIAEoCRIQCghxdWFudGl0eRgCIAEoBRISCgp1bml0X3ByaWNlGAMg",
+            "ASgBImgKHFNlc3Npb25BdHRyaWJ1dGVLZXlWYWx1ZVBhaXISIgoVc2Vzc2lv",
+            "bl9hdHRyaWJ1dGVfa2V5GAEgASgJQgPgQQISJAoXc2Vzc2lvbl9hdHRyaWJ1",
+            "dGVfdmFsdWUYAiABKAlCA+BBAiJ/Ch5TZXNzaW9uQXR0cmlidXRlc0tleVZh",
+            "bHVlUGFpcnMSXQoPa2V5X3ZhbHVlX3BhaXJzGAEgAygLMj8uZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjE5LnNlcnZpY2VzLlNlc3Npb25BdHRyaWJ1dGVLZXlW",
+            "YWx1ZVBhaXJCA+BBAjL0BAoXQ29udmVyc2lvblVwbG9hZFNlcnZpY2USiQIK",
+            "FlVwbG9hZENsaWNrQ29udmVyc2lvbnMSQC5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MTkuc2VydmljZXMuVXBsb2FkQ2xpY2tDb252ZXJzaW9uc1JlcXVlc3Qa",
+            "QS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MTkuc2VydmljZXMuVXBsb2FkQ2xp",
+            "Y2tDb252ZXJzaW9uc1Jlc3BvbnNlImraQSdjdXN0b21lcl9pZCxjb252ZXJz",
+            "aW9ucyxwYXJ0aWFsX2ZhaWx1cmWC0+STAjoiNS92MTkvY3VzdG9tZXJzL3tj",
+            "dXN0b21lcl9pZD0qfTp1cGxvYWRDbGlja0NvbnZlcnNpb25zOgEqEoUCChVV",
+            "cGxvYWRDYWxsQ29udmVyc2lvbnMSPy5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MTkuc2VydmljZXMuVXBsb2FkQ2FsbENvbnZlcnNpb25zUmVxdWVzdBpALmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYxOS5zZXJ2aWNlcy5VcGxvYWRDYWxsQ29u",
+            "dmVyc2lvbnNSZXNwb25zZSJp2kEnY3VzdG9tZXJfaWQsY29udmVyc2lvbnMs",
+            "cGFydGlhbF9mYWlsdXJlgtPkkwI5IjQvdjE5L2N1c3RvbWVycy97Y3VzdG9t",
+            "ZXJfaWQ9Kn06dXBsb2FkQ2FsbENvbnZlcnNpb25zOgEqGkXKQRhnb29nbGVh",
+            "ZHMuZ29vZ2xlYXBpcy5jb23SQSdodHRwczovL3d3dy5nb29nbGVhcGlzLmNv",
+            "bS9hdXRoL2Fkd29yZHNCiAIKJWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MTkuc2VydmljZXNCHENvbnZlcnNpb25VcGxvYWRTZXJ2aWNlUHJvdG9QAVpJ",
+            "Z29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29v",
+            "Z2xlYWRzL3YxOS9zZXJ2aWNlcztzZXJ2aWNlc6ICA0dBQaoCIUdvb2dsZS5B",
+            "ZHMuR29vZ2xlQWRzLlYxOS5TZXJ2aWNlc8oCIUdvb2dsZVxBZHNcR29vZ2xl",
+            "QWRzXFYxOVxTZXJ2aWNlc+oCJUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYx",
+            "OTo6U2VydmljZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V19.Common.ConsentReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Common.OfflineUserDataReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.ConversionEnvironmentEnumReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V19.Common.ConsentReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Common.OfflineUserDataReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.ConversionCustomerTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V19.Enums.ConversionEnvironmentEnumReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Services.UploadClickConversionsRequest), global::Google.Ads.GoogleAds.V19.Services.UploadClickConversionsRequest.Parser, new[]{ "CustomerId", "Conversions", "PartialFailure", "ValidateOnly", "DebugEnabled", "JobId" }, new[]{ "JobId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Services.UploadClickConversionsResponse), global::Google.Ads.GoogleAds.V19.Services.UploadClickConversionsResponse.Parser, new[]{ "PartialFailureError", "Results", "JobId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Services.UploadCallConversionsRequest), global::Google.Ads.GoogleAds.V19.Services.UploadCallConversionsRequest.Parser, new[]{ "CustomerId", "Conversions", "PartialFailure", "ValidateOnly" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Services.UploadCallConversionsResponse), global::Google.Ads.GoogleAds.V19.Services.UploadCallConversionsResponse.Parser, new[]{ "PartialFailureError", "Results" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Services.ClickConversion), global::Google.Ads.GoogleAds.V19.Services.ClickConversion.Parser, new[]{ "Gclid", "Gbraid", "Wbraid", "ConversionAction", "ConversionDateTime", "ConversionValue", "CurrencyCode", "OrderId", "ExternalAttributionData", "CustomVariables", "CartData", "UserIdentifiers", "ConversionEnvironment", "Consent" }, new[]{ "Gclid", "ConversionAction", "ConversionDateTime", "ConversionValue", "CurrencyCode", "OrderId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Services.ClickConversion), global::Google.Ads.GoogleAds.V19.Services.ClickConversion.Parser, new[]{ "Gclid", "Gbraid", "Wbraid", "ConversionAction", "ConversionDateTime", "ConversionValue", "CurrencyCode", "OrderId", "ExternalAttributionData", "CustomVariables", "CartData", "UserIdentifiers", "ConversionEnvironment", "Consent", "CustomerType", "SessionAttributesEncoded", "SessionAttributesKeyValuePairs" }, new[]{ "SessionAttributes", "Gclid", "ConversionAction", "ConversionDateTime", "ConversionValue", "CurrencyCode", "OrderId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Services.CallConversion), global::Google.Ads.GoogleAds.V19.Services.CallConversion.Parser, new[]{ "CallerId", "CallStartDateTime", "ConversionAction", "ConversionDateTime", "ConversionValue", "CurrencyCode", "CustomVariables", "Consent" }, new[]{ "CallerId", "CallStartDateTime", "ConversionAction", "ConversionDateTime", "ConversionValue", "CurrencyCode" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Services.ExternalAttributionData), global::Google.Ads.GoogleAds.V19.Services.ExternalAttributionData.Parser, new[]{ "ExternalAttributionCredit", "ExternalAttributionModel" }, new[]{ "ExternalAttributionCredit", "ExternalAttributionModel" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Services.ClickConversionResult), global::Google.Ads.GoogleAds.V19.Services.ClickConversionResult.Parser, new[]{ "Gclid", "Gbraid", "Wbraid", "ConversionAction", "ConversionDateTime", "UserIdentifiers" }, new[]{ "Gclid", "ConversionAction", "ConversionDateTime" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Services.CallConversionResult), global::Google.Ads.GoogleAds.V19.Services.CallConversionResult.Parser, new[]{ "CallerId", "CallStartDateTime", "ConversionAction", "ConversionDateTime" }, new[]{ "CallerId", "CallStartDateTime", "ConversionAction", "ConversionDateTime" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Services.CustomVariable), global::Google.Ads.GoogleAds.V19.Services.CustomVariable.Parser, new[]{ "ConversionCustomVariable", "Value" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Services.CartData), global::Google.Ads.GoogleAds.V19.Services.CartData.Parser, new[]{ "MerchantId", "FeedCountryCode", "FeedLanguageCode", "LocalTransactionCost", "Items" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Services.CartData.Types.Item), global::Google.Ads.GoogleAds.V19.Services.CartData.Types.Item.Parser, new[]{ "ProductId", "Quantity", "UnitPrice" }, null, null, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Services.CartData), global::Google.Ads.GoogleAds.V19.Services.CartData.Parser, new[]{ "MerchantId", "FeedCountryCode", "FeedLanguageCode", "LocalTransactionCost", "Items" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Services.CartData.Types.Item), global::Google.Ads.GoogleAds.V19.Services.CartData.Types.Item.Parser, new[]{ "ProductId", "Quantity", "UnitPrice" }, null, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Services.SessionAttributeKeyValuePair), global::Google.Ads.GoogleAds.V19.Services.SessionAttributeKeyValuePair.Parser, new[]{ "SessionAttributeKey", "SessionAttributeValue" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V19.Services.SessionAttributesKeyValuePairs), global::Google.Ads.GoogleAds.V19.Services.SessionAttributesKeyValuePairs.Parser, new[]{ "KeyValuePairs" }, null, null, null, null)
           }));
     }
     #endregion
@@ -1465,6 +1480,16 @@ namespace Google.Ads.GoogleAds.V19.Services {
       userIdentifiers_ = other.userIdentifiers_.Clone();
       conversionEnvironment_ = other.conversionEnvironment_;
       consent_ = other.consent_ != null ? other.consent_.Clone() : null;
+      customerType_ = other.customerType_;
+      switch (other.SessionAttributesCase) {
+        case SessionAttributesOneofCase.SessionAttributesEncoded:
+          SessionAttributesEncoded = other.SessionAttributesEncoded;
+          break;
+        case SessionAttributesOneofCase.SessionAttributesKeyValuePairs:
+          SessionAttributesKeyValuePairs = other.SessionAttributesKeyValuePairs.Clone();
+          break;
+      }
+
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1780,6 +1805,90 @@ namespace Google.Ads.GoogleAds.V19.Services {
       }
     }
 
+    /// <summary>Field number for the "customer_type" field.</summary>
+    public const int CustomerTypeFieldNumber = 26;
+    private global::Google.Ads.GoogleAds.V19.Enums.ConversionCustomerTypeEnum.Types.ConversionCustomerType customerType_ = global::Google.Ads.GoogleAds.V19.Enums.ConversionCustomerTypeEnum.Types.ConversionCustomerType.Unspecified;
+    /// <summary>
+    /// Type of the customer associated with the conversion (new or returning).
+    /// Accessible only to customers on the allow-list.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V19.Enums.ConversionCustomerTypeEnum.Types.ConversionCustomerType CustomerType {
+      get { return customerType_; }
+      set {
+        customerType_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "session_attributes_encoded" field.</summary>
+    public const int SessionAttributesEncodedFieldNumber = 24;
+    /// <summary>
+    /// The session attributes for the event, represented as a base64-encoded
+    /// JSON string. The content should be generated by Google-provided library.
+    /// To set session attributes individually, use
+    /// session_attributes_key_value_pairs instead.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pb::ByteString SessionAttributesEncoded {
+      get { return HasSessionAttributesEncoded ? (pb::ByteString) sessionAttributes_ : pb::ByteString.Empty; }
+      set {
+        sessionAttributes_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        sessionAttributesCase_ = SessionAttributesOneofCase.SessionAttributesEncoded;
+      }
+    }
+    /// <summary>Gets whether the "session_attributes_encoded" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasSessionAttributesEncoded {
+      get { return sessionAttributesCase_ == SessionAttributesOneofCase.SessionAttributesEncoded; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "session_attributes_encoded" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearSessionAttributesEncoded() {
+      if (HasSessionAttributesEncoded) {
+        ClearSessionAttributes();
+      }
+    }
+
+    /// <summary>Field number for the "session_attributes_key_value_pairs" field.</summary>
+    public const int SessionAttributesKeyValuePairsFieldNumber = 25;
+    /// <summary>
+    /// The session attributes for the event, represented as key-value pairs.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V19.Services.SessionAttributesKeyValuePairs SessionAttributesKeyValuePairs {
+      get { return sessionAttributesCase_ == SessionAttributesOneofCase.SessionAttributesKeyValuePairs ? (global::Google.Ads.GoogleAds.V19.Services.SessionAttributesKeyValuePairs) sessionAttributes_ : null; }
+      set {
+        sessionAttributes_ = value;
+        sessionAttributesCase_ = value == null ? SessionAttributesOneofCase.None : SessionAttributesOneofCase.SessionAttributesKeyValuePairs;
+      }
+    }
+
+    private object sessionAttributes_;
+    /// <summary>Enum of possible cases for the "session_attributes" oneof.</summary>
+    public enum SessionAttributesOneofCase {
+      None = 0,
+      SessionAttributesEncoded = 24,
+      SessionAttributesKeyValuePairs = 25,
+    }
+    private SessionAttributesOneofCase sessionAttributesCase_ = SessionAttributesOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SessionAttributesOneofCase SessionAttributesCase {
+      get { return sessionAttributesCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearSessionAttributes() {
+      sessionAttributesCase_ = SessionAttributesOneofCase.None;
+      sessionAttributes_ = null;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1809,6 +1918,10 @@ namespace Google.Ads.GoogleAds.V19.Services {
       if(!userIdentifiers_.Equals(other.userIdentifiers_)) return false;
       if (ConversionEnvironment != other.ConversionEnvironment) return false;
       if (!object.Equals(Consent, other.Consent)) return false;
+      if (CustomerType != other.CustomerType) return false;
+      if (SessionAttributesEncoded != other.SessionAttributesEncoded) return false;
+      if (!object.Equals(SessionAttributesKeyValuePairs, other.SessionAttributesKeyValuePairs)) return false;
+      if (SessionAttributesCase != other.SessionAttributesCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1830,6 +1943,10 @@ namespace Google.Ads.GoogleAds.V19.Services {
       hash ^= userIdentifiers_.GetHashCode();
       if (ConversionEnvironment != global::Google.Ads.GoogleAds.V19.Enums.ConversionEnvironmentEnum.Types.ConversionEnvironment.Unspecified) hash ^= ConversionEnvironment.GetHashCode();
       if (consent_ != null) hash ^= Consent.GetHashCode();
+      if (CustomerType != global::Google.Ads.GoogleAds.V19.Enums.ConversionCustomerTypeEnum.Types.ConversionCustomerType.Unspecified) hash ^= CustomerType.GetHashCode();
+      if (HasSessionAttributesEncoded) hash ^= SessionAttributesEncoded.GetHashCode();
+      if (sessionAttributesCase_ == SessionAttributesOneofCase.SessionAttributesKeyValuePairs) hash ^= SessionAttributesKeyValuePairs.GetHashCode();
+      hash ^= (int) sessionAttributesCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1898,6 +2015,18 @@ namespace Google.Ads.GoogleAds.V19.Services {
         output.WriteRawTag(186, 1);
         output.WriteMessage(Consent);
       }
+      if (HasSessionAttributesEncoded) {
+        output.WriteRawTag(194, 1);
+        output.WriteBytes(SessionAttributesEncoded);
+      }
+      if (sessionAttributesCase_ == SessionAttributesOneofCase.SessionAttributesKeyValuePairs) {
+        output.WriteRawTag(202, 1);
+        output.WriteMessage(SessionAttributesKeyValuePairs);
+      }
+      if (CustomerType != global::Google.Ads.GoogleAds.V19.Enums.ConversionCustomerTypeEnum.Types.ConversionCustomerType.Unspecified) {
+        output.WriteRawTag(208, 1);
+        output.WriteEnum((int) CustomerType);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1958,6 +2087,18 @@ namespace Google.Ads.GoogleAds.V19.Services {
         output.WriteRawTag(186, 1);
         output.WriteMessage(Consent);
       }
+      if (HasSessionAttributesEncoded) {
+        output.WriteRawTag(194, 1);
+        output.WriteBytes(SessionAttributesEncoded);
+      }
+      if (sessionAttributesCase_ == SessionAttributesOneofCase.SessionAttributesKeyValuePairs) {
+        output.WriteRawTag(202, 1);
+        output.WriteMessage(SessionAttributesKeyValuePairs);
+      }
+      if (CustomerType != global::Google.Ads.GoogleAds.V19.Enums.ConversionCustomerTypeEnum.Types.ConversionCustomerType.Unspecified) {
+        output.WriteRawTag(208, 1);
+        output.WriteEnum((int) CustomerType);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2005,6 +2146,15 @@ namespace Google.Ads.GoogleAds.V19.Services {
       }
       if (consent_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(Consent);
+      }
+      if (CustomerType != global::Google.Ads.GoogleAds.V19.Enums.ConversionCustomerTypeEnum.Types.ConversionCustomerType.Unspecified) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) CustomerType);
+      }
+      if (HasSessionAttributesEncoded) {
+        size += 2 + pb::CodedOutputStream.ComputeBytesSize(SessionAttributesEncoded);
+      }
+      if (sessionAttributesCase_ == SessionAttributesOneofCase.SessionAttributesKeyValuePairs) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(SessionAttributesKeyValuePairs);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2065,6 +2215,21 @@ namespace Google.Ads.GoogleAds.V19.Services {
         }
         Consent.MergeFrom(other.Consent);
       }
+      if (other.CustomerType != global::Google.Ads.GoogleAds.V19.Enums.ConversionCustomerTypeEnum.Types.ConversionCustomerType.Unspecified) {
+        CustomerType = other.CustomerType;
+      }
+      switch (other.SessionAttributesCase) {
+        case SessionAttributesOneofCase.SessionAttributesEncoded:
+          SessionAttributesEncoded = other.SessionAttributesEncoded;
+          break;
+        case SessionAttributesOneofCase.SessionAttributesKeyValuePairs:
+          if (SessionAttributesKeyValuePairs == null) {
+            SessionAttributesKeyValuePairs = new global::Google.Ads.GoogleAds.V19.Services.SessionAttributesKeyValuePairs();
+          }
+          SessionAttributesKeyValuePairs.MergeFrom(other.SessionAttributesKeyValuePairs);
+          break;
+      }
+
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -2145,6 +2310,23 @@ namespace Google.Ads.GoogleAds.V19.Services {
             input.ReadMessage(Consent);
             break;
           }
+          case 194: {
+            SessionAttributesEncoded = input.ReadBytes();
+            break;
+          }
+          case 202: {
+            global::Google.Ads.GoogleAds.V19.Services.SessionAttributesKeyValuePairs subBuilder = new global::Google.Ads.GoogleAds.V19.Services.SessionAttributesKeyValuePairs();
+            if (sessionAttributesCase_ == SessionAttributesOneofCase.SessionAttributesKeyValuePairs) {
+              subBuilder.MergeFrom(SessionAttributesKeyValuePairs);
+            }
+            input.ReadMessage(subBuilder);
+            SessionAttributesKeyValuePairs = subBuilder;
+            break;
+          }
+          case 208: {
+            CustomerType = (global::Google.Ads.GoogleAds.V19.Enums.ConversionCustomerTypeEnum.Types.ConversionCustomerType) input.ReadEnum();
+            break;
+          }
         }
       }
     #endif
@@ -2223,6 +2405,23 @@ namespace Google.Ads.GoogleAds.V19.Services {
               Consent = new global::Google.Ads.GoogleAds.V19.Common.Consent();
             }
             input.ReadMessage(Consent);
+            break;
+          }
+          case 194: {
+            SessionAttributesEncoded = input.ReadBytes();
+            break;
+          }
+          case 202: {
+            global::Google.Ads.GoogleAds.V19.Services.SessionAttributesKeyValuePairs subBuilder = new global::Google.Ads.GoogleAds.V19.Services.SessionAttributesKeyValuePairs();
+            if (sessionAttributesCase_ == SessionAttributesOneofCase.SessionAttributesKeyValuePairs) {
+              subBuilder.MergeFrom(SessionAttributesKeyValuePairs);
+            }
+            input.ReadMessage(subBuilder);
+            SessionAttributesKeyValuePairs = subBuilder;
+            break;
+          }
+          case 208: {
+            CustomerType = (global::Google.Ads.GoogleAds.V19.Enums.ConversionCustomerTypeEnum.Types.ConversionCustomerType) input.ReadEnum();
             break;
           }
         }
@@ -4750,6 +4949,428 @@ namespace Google.Ads.GoogleAds.V19.Services {
 
     }
     #endregion
+
+  }
+
+  /// <summary>
+  /// Contains one session attribute of the conversion.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class SessionAttributeKeyValuePair : pb::IMessage<SessionAttributeKeyValuePair>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SessionAttributeKeyValuePair> _parser = new pb::MessageParser<SessionAttributeKeyValuePair>(() => new SessionAttributeKeyValuePair());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SessionAttributeKeyValuePair> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V19.Services.ConversionUploadServiceReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SessionAttributeKeyValuePair() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SessionAttributeKeyValuePair(SessionAttributeKeyValuePair other) : this() {
+      sessionAttributeKey_ = other.sessionAttributeKey_;
+      sessionAttributeValue_ = other.sessionAttributeValue_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SessionAttributeKeyValuePair Clone() {
+      return new SessionAttributeKeyValuePair(this);
+    }
+
+    /// <summary>Field number for the "session_attribute_key" field.</summary>
+    public const int SessionAttributeKeyFieldNumber = 1;
+    private string sessionAttributeKey_ = "";
+    /// <summary>
+    /// Required. The name of the session attribute.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string SessionAttributeKey {
+      get { return sessionAttributeKey_; }
+      set {
+        sessionAttributeKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "session_attribute_value" field.</summary>
+    public const int SessionAttributeValueFieldNumber = 2;
+    private string sessionAttributeValue_ = "";
+    /// <summary>
+    /// Required. The value of the session attribute.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string SessionAttributeValue {
+      get { return sessionAttributeValue_; }
+      set {
+        sessionAttributeValue_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SessionAttributeKeyValuePair);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SessionAttributeKeyValuePair other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (SessionAttributeKey != other.SessionAttributeKey) return false;
+      if (SessionAttributeValue != other.SessionAttributeValue) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (SessionAttributeKey.Length != 0) hash ^= SessionAttributeKey.GetHashCode();
+      if (SessionAttributeValue.Length != 0) hash ^= SessionAttributeValue.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (SessionAttributeKey.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(SessionAttributeKey);
+      }
+      if (SessionAttributeValue.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(SessionAttributeValue);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (SessionAttributeKey.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(SessionAttributeKey);
+      }
+      if (SessionAttributeValue.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(SessionAttributeValue);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (SessionAttributeKey.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(SessionAttributeKey);
+      }
+      if (SessionAttributeValue.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(SessionAttributeValue);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SessionAttributeKeyValuePair other) {
+      if (other == null) {
+        return;
+      }
+      if (other.SessionAttributeKey.Length != 0) {
+        SessionAttributeKey = other.SessionAttributeKey;
+      }
+      if (other.SessionAttributeValue.Length != 0) {
+        SessionAttributeValue = other.SessionAttributeValue;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            SessionAttributeKey = input.ReadString();
+            break;
+          }
+          case 18: {
+            SessionAttributeValue = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            SessionAttributeKey = input.ReadString();
+            break;
+          }
+          case 18: {
+            SessionAttributeValue = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Contains session attributes of the conversion, represented as key-value
+  /// pairs.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class SessionAttributesKeyValuePairs : pb::IMessage<SessionAttributesKeyValuePairs>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SessionAttributesKeyValuePairs> _parser = new pb::MessageParser<SessionAttributesKeyValuePairs>(() => new SessionAttributesKeyValuePairs());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SessionAttributesKeyValuePairs> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V19.Services.ConversionUploadServiceReflection.Descriptor.MessageTypes[12]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SessionAttributesKeyValuePairs() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SessionAttributesKeyValuePairs(SessionAttributesKeyValuePairs other) : this() {
+      keyValuePairs_ = other.keyValuePairs_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SessionAttributesKeyValuePairs Clone() {
+      return new SessionAttributesKeyValuePairs(this);
+    }
+
+    /// <summary>Field number for the "key_value_pairs" field.</summary>
+    public const int KeyValuePairsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V19.Services.SessionAttributeKeyValuePair> _repeated_keyValuePairs_codec
+        = pb::FieldCodec.ForMessage(10, global::Google.Ads.GoogleAds.V19.Services.SessionAttributeKeyValuePair.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V19.Services.SessionAttributeKeyValuePair> keyValuePairs_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V19.Services.SessionAttributeKeyValuePair>();
+    /// <summary>
+    /// Required. The session attributes for the conversion.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V19.Services.SessionAttributeKeyValuePair> KeyValuePairs {
+      get { return keyValuePairs_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SessionAttributesKeyValuePairs);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SessionAttributesKeyValuePairs other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!keyValuePairs_.Equals(other.keyValuePairs_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= keyValuePairs_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      keyValuePairs_.WriteTo(output, _repeated_keyValuePairs_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      keyValuePairs_.WriteTo(ref output, _repeated_keyValuePairs_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += keyValuePairs_.CalculateSize(_repeated_keyValuePairs_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SessionAttributesKeyValuePairs other) {
+      if (other == null) {
+        return;
+      }
+      keyValuePairs_.Add(other.keyValuePairs_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            keyValuePairs_.AddEntriesFrom(input, _repeated_keyValuePairs_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            keyValuePairs_.AddEntriesFrom(ref input, _repeated_keyValuePairs_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

@@ -3,7 +3,7 @@
 //     source: google/ads/googleads/v19/services/reach_plan_service.proto
 // </auto-generated>
 // Original file comments:
-// Copyright 2024 Google LLC
+// Copyright 2025 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -68,6 +68,10 @@ namespace Google.Ads.GoogleAds.V19.Services {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V19.Services.GenerateConversionRatesRequest> __Marshaller_google_ads_googleads_v19_services_GenerateConversionRatesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V19.Services.GenerateConversionRatesRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V19.Services.GenerateConversionRatesResponse> __Marshaller_google_ads_googleads_v19_services_GenerateConversionRatesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V19.Services.GenerateConversionRatesResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V19.Services.ListPlannableLocationsRequest> __Marshaller_google_ads_googleads_v19_services_ListPlannableLocationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V19.Services.ListPlannableLocationsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V19.Services.ListPlannableLocationsResponse> __Marshaller_google_ads_googleads_v19_services_ListPlannableLocationsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V19.Services.ListPlannableLocationsResponse.Parser));
@@ -79,6 +83,14 @@ namespace Google.Ads.GoogleAds.V19.Services {
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V19.Services.GenerateReachForecastRequest> __Marshaller_google_ads_googleads_v19_services_GenerateReachForecastRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V19.Services.GenerateReachForecastRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V19.Services.GenerateReachForecastResponse> __Marshaller_google_ads_googleads_v19_services_GenerateReachForecastResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V19.Services.GenerateReachForecastResponse.Parser));
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Google.Ads.GoogleAds.V19.Services.GenerateConversionRatesRequest, global::Google.Ads.GoogleAds.V19.Services.GenerateConversionRatesResponse> __Method_GenerateConversionRates = new grpc::Method<global::Google.Ads.GoogleAds.V19.Services.GenerateConversionRatesRequest, global::Google.Ads.GoogleAds.V19.Services.GenerateConversionRatesResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GenerateConversionRates",
+        __Marshaller_google_ads_googleads_v19_services_GenerateConversionRatesRequest,
+        __Marshaller_google_ads_googleads_v19_services_GenerateConversionRatesResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Google.Ads.GoogleAds.V19.Services.ListPlannableLocationsRequest, global::Google.Ads.GoogleAds.V19.Services.ListPlannableLocationsResponse> __Method_ListPlannableLocations = new grpc::Method<global::Google.Ads.GoogleAds.V19.Services.ListPlannableLocationsRequest, global::Google.Ads.GoogleAds.V19.Services.ListPlannableLocationsResponse>(
@@ -114,6 +126,27 @@ namespace Google.Ads.GoogleAds.V19.Services {
     [grpc::BindServiceMethod(typeof(ReachPlanService), "BindService")]
     public abstract partial class ReachPlanServiceBase
     {
+      /// <summary>
+      /// Returns a collection of conversion rate suggestions for supported plannable
+      /// products.
+      ///
+      /// List of thrown errors:
+      ///   [AuthenticationError]()
+      ///   [AuthorizationError]()
+      ///   [HeaderError]()
+      ///   [InternalError]()
+      ///   [QuotaError]()
+      ///   [RequestError]()
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Google.Ads.GoogleAds.V19.Services.GenerateConversionRatesResponse> GenerateConversionRates(global::Google.Ads.GoogleAds.V19.Services.GenerateConversionRatesRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
       /// <summary>
       /// Returns the list of plannable locations (for example, countries).
       ///
@@ -207,6 +240,90 @@ namespace Google.Ads.GoogleAds.V19.Services {
       {
       }
 
+      /// <summary>
+      /// Returns a collection of conversion rate suggestions for supported plannable
+      /// products.
+      ///
+      /// List of thrown errors:
+      ///   [AuthenticationError]()
+      ///   [AuthorizationError]()
+      ///   [HeaderError]()
+      ///   [InternalError]()
+      ///   [QuotaError]()
+      ///   [RequestError]()
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Ads.GoogleAds.V19.Services.GenerateConversionRatesResponse GenerateConversionRates(global::Google.Ads.GoogleAds.V19.Services.GenerateConversionRatesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GenerateConversionRates(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Returns a collection of conversion rate suggestions for supported plannable
+      /// products.
+      ///
+      /// List of thrown errors:
+      ///   [AuthenticationError]()
+      ///   [AuthorizationError]()
+      ///   [HeaderError]()
+      ///   [InternalError]()
+      ///   [QuotaError]()
+      ///   [RequestError]()
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Ads.GoogleAds.V19.Services.GenerateConversionRatesResponse GenerateConversionRates(global::Google.Ads.GoogleAds.V19.Services.GenerateConversionRatesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GenerateConversionRates, null, options, request);
+      }
+      /// <summary>
+      /// Returns a collection of conversion rate suggestions for supported plannable
+      /// products.
+      ///
+      /// List of thrown errors:
+      ///   [AuthenticationError]()
+      ///   [AuthorizationError]()
+      ///   [HeaderError]()
+      ///   [InternalError]()
+      ///   [QuotaError]()
+      ///   [RequestError]()
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Ads.GoogleAds.V19.Services.GenerateConversionRatesResponse> GenerateConversionRatesAsync(global::Google.Ads.GoogleAds.V19.Services.GenerateConversionRatesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GenerateConversionRatesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Returns a collection of conversion rate suggestions for supported plannable
+      /// products.
+      ///
+      /// List of thrown errors:
+      ///   [AuthenticationError]()
+      ///   [AuthorizationError]()
+      ///   [HeaderError]()
+      ///   [InternalError]()
+      ///   [QuotaError]()
+      ///   [RequestError]()
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Ads.GoogleAds.V19.Services.GenerateConversionRatesResponse> GenerateConversionRatesAsync(global::Google.Ads.GoogleAds.V19.Services.GenerateConversionRatesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GenerateConversionRates, null, options, request);
+      }
       /// <summary>
       /// Returns the list of plannable locations (for example, countries).
       ///
@@ -477,6 +594,7 @@ namespace Google.Ads.GoogleAds.V19.Services {
     public static grpc::ServerServiceDefinition BindService(ReachPlanServiceBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
+          .AddMethod(__Method_GenerateConversionRates, serviceImpl.GenerateConversionRates)
           .AddMethod(__Method_ListPlannableLocations, serviceImpl.ListPlannableLocations)
           .AddMethod(__Method_ListPlannableProducts, serviceImpl.ListPlannableProducts)
           .AddMethod(__Method_GenerateReachForecast, serviceImpl.GenerateReachForecast).Build();
@@ -489,6 +607,7 @@ namespace Google.Ads.GoogleAds.V19.Services {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, ReachPlanServiceBase serviceImpl)
     {
+      serviceBinder.AddMethod(__Method_GenerateConversionRates, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Ads.GoogleAds.V19.Services.GenerateConversionRatesRequest, global::Google.Ads.GoogleAds.V19.Services.GenerateConversionRatesResponse>(serviceImpl.GenerateConversionRates));
       serviceBinder.AddMethod(__Method_ListPlannableLocations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Ads.GoogleAds.V19.Services.ListPlannableLocationsRequest, global::Google.Ads.GoogleAds.V19.Services.ListPlannableLocationsResponse>(serviceImpl.ListPlannableLocations));
       serviceBinder.AddMethod(__Method_ListPlannableProducts, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Ads.GoogleAds.V19.Services.ListPlannableProductsRequest, global::Google.Ads.GoogleAds.V19.Services.ListPlannableProductsResponse>(serviceImpl.ListPlannableProducts));
       serviceBinder.AddMethod(__Method_GenerateReachForecast, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Ads.GoogleAds.V19.Services.GenerateReachForecastRequest, global::Google.Ads.GoogleAds.V19.Services.GenerateReachForecastResponse>(serviceImpl.GenerateReachForecast));

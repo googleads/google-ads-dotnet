@@ -59,7 +59,7 @@ namespace Google.Ads.GoogleAds.V19.Resources {
   }
   #region Messages
   /// <summary>
-  /// A view on the usage of ad group ad asset combination.
+  /// A view on the usage of asset group asset top combinations.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AssetGroupTopCombinationView : pb::IMessage<AssetGroupTopCombinationView>
