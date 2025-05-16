@@ -228,8 +228,7 @@ namespace Google.Ads.GoogleAds.Examples.V19
                     Create = new Campaign
                     {
                         Name = $"Demand Gen #{ExampleUtilities.GetRandomString()}",
-                        // Set the campaign status as PAUSED. The campaign is the only entity in
-                        // the mutate request that should have its status set.
+                        // Set the campaign status as PAUSED.
                         Status = CampaignStatus.Paused,
 
                         // AdvertisingChannelType must be DEMAND_GEN.
@@ -312,7 +311,7 @@ namespace Google.Ads.GoogleAds.Examples.V19
         /// <param name="logoResourceName">The temporary resource name to use for the
         /// logo asset.</param>
         /// <param name="config">The Google Ads Configuration.</param>
-        /// <returns>A MutateOperation that creates an AdGroup</returns>
+        /// <returns>A list of MutateOperations that create Assets</returns>
 
         private List<MutateOperation> CreateAssetOperations(
             string videoAssetResourceName,
