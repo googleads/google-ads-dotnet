@@ -15,17 +15,17 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V19.Common;
-using Google.Ads.GoogleAds.V19.Errors;
-using Google.Ads.GoogleAds.V19.Resources;
-using Google.Ads.GoogleAds.V19.Services;
+using Google.Ads.GoogleAds.V20.Common;
+using Google.Ads.GoogleAds.V20.Errors;
+using Google.Ads.GoogleAds.V20.Resources;
+using Google.Ads.GoogleAds.V20.Services;
 using System;
-using static Google.Ads.GoogleAds.V19.Enums.UserListFlexibleRuleOperatorEnum.Types;
-using static Google.Ads.GoogleAds.V19.Enums.UserListMembershipStatusEnum.Types;
-using static Google.Ads.GoogleAds.V19.Enums.UserListPrepopulationStatusEnum.Types;
-using static Google.Ads.GoogleAds.V19.Enums.UserListStringRuleItemOperatorEnum.Types;
+using static Google.Ads.GoogleAds.V20.Enums.UserListFlexibleRuleOperatorEnum.Types;
+using static Google.Ads.GoogleAds.V20.Enums.UserListMembershipStatusEnum.Types;
+using static Google.Ads.GoogleAds.V20.Enums.UserListPrepopulationStatusEnum.Types;
+using static Google.Ads.GoogleAds.V20.Enums.UserListStringRuleItemOperatorEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V19
+namespace Google.Ads.GoogleAds.Examples.V20
 {
     /// <summary>
     /// Creates a rule-based user list defined by a combination of rules for users who have visited
@@ -147,7 +147,7 @@ namespace Google.Ads.GoogleAds.Examples.V19
             try
             {
                 UserListServiceClient userListServiceClient =
-                    client.GetService(Services.V19.UserListService);
+                    client.GetService(Services.V20.UserListService);
                 MutateUserListsResponse response =
                     userListServiceClient.MutateUserLists(customerId.ToString(),
                         new[] { operation });

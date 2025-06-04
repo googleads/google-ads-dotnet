@@ -15,18 +15,18 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V19.Common;
-using Google.Ads.GoogleAds.V19.Errors;
-using Google.Ads.GoogleAds.V19.Resources;
-using Google.Ads.GoogleAds.V19.Services;
+using Google.Ads.GoogleAds.V20.Common;
+using Google.Ads.GoogleAds.V20.Errors;
+using Google.Ads.GoogleAds.V20.Resources;
+using Google.Ads.GoogleAds.V20.Services;
 using System;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
-using static Google.Ads.GoogleAds.V19.Enums.ConversionAdjustmentTypeEnum.Types;
-using static Google.Ads.GoogleAds.V19.Enums.UserIdentifierSourceEnum.Types;
+using static Google.Ads.GoogleAds.V20.Enums.ConversionAdjustmentTypeEnum.Types;
+using static Google.Ads.GoogleAds.V20.Enums.UserIdentifierSourceEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V19
+namespace Google.Ads.GoogleAds.Examples.V20
 {
     /// <summary>
     /// This code example enhances a web conversion by uploading a {@link ConversionAdjustment}
@@ -122,7 +122,7 @@ namespace Google.Ads.GoogleAds.Examples.V19
         {
             // Get the ConversionAdjustmentUploadService.
             ConversionAdjustmentUploadServiceClient conversionAdjustmentUploadService =
-                client.GetService(Services.V19.ConversionAdjustmentUploadService);
+                client.GetService(Services.V20.ConversionAdjustmentUploadService);
 
             // [START create_adjustment]
             // Creates the enhancement adjustment.

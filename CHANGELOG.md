@@ -1,3 +1,10 @@
+23.0.0
+======
+- Added support for version 20.0 of the Google Ads API.
+- Removed support for version 17 of the Google Ads API.
+- Upgraded the Google.Ads.Gax.Grpc dependency to version 4.10.0 and the Google.Protobuf dependency
+  to version 3.8.2.
+
 22.2.0
 ======
 - Added support for version 19.1 of the Google Ads API.

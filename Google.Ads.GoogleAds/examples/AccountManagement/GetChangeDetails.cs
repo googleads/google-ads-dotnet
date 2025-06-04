@@ -16,17 +16,17 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V19.Errors;
-using Google.Ads.GoogleAds.V19.Resources;
-using Google.Ads.GoogleAds.V19.Services;
+using Google.Ads.GoogleAds.V20.Errors;
+using Google.Ads.GoogleAds.V20.Resources;
+using Google.Ads.GoogleAds.V20.Services;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V19.Enums.ChangeEventResourceTypeEnum.Types;
-using static Google.Ads.GoogleAds.V19.Enums.ResourceChangeOperationEnum.Types;
-using static Google.Ads.GoogleAds.V19.Resources.ChangeEvent.Types;
+using static Google.Ads.GoogleAds.V20.Enums.ChangeEventResourceTypeEnum.Types;
+using static Google.Ads.GoogleAds.V20.Enums.ResourceChangeOperationEnum.Types;
+using static Google.Ads.GoogleAds.V20.Resources.ChangeEvent.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V19
+namespace Google.Ads.GoogleAds.Examples.V20
 {
     /// <summary>
     /// This code example gets the changes in an account during the last 25 days.
@@ -76,7 +76,7 @@ namespace Google.Ads.GoogleAds.Examples.V19
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V19.GoogleAdsService);
+                Services.V20.GoogleAdsService);
 
             // Construct a query to find details for recent changes in your account.
             // The LIMIT clause is required for the change_event resource.

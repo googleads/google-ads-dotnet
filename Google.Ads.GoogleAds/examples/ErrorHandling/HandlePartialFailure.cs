@@ -16,13 +16,13 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Lib;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V19.Errors;
-using Google.Ads.GoogleAds.V19.Resources;
-using Google.Ads.GoogleAds.V19.Services;
+using Google.Ads.GoogleAds.V20.Errors;
+using Google.Ads.GoogleAds.V20.Resources;
+using Google.Ads.GoogleAds.V20.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V19
+namespace Google.Ads.GoogleAds.Examples.V20
 {
     /// <summary>
     /// This code example demonstrates how to handle partial failures.
@@ -162,7 +162,7 @@ namespace Google.Ads.GoogleAds.Examples.V19
             long customerId, long campaignId)
         {
             // Get the AdGroupServiceClient.
-            AdGroupServiceClient adGroupService = client.GetService(Services.V19.AdGroupService);
+            AdGroupServiceClient adGroupService = client.GetService(Services.V20.AdGroupService);
 
             string validAdGroupName = "Valid AdGroup: " + ExampleUtilities.GetRandomString();
 

@@ -15,16 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V19.Common;
-using Google.Ads.GoogleAds.V19.Errors;
-using Google.Ads.GoogleAds.V19.Resources;
-using Google.Ads.GoogleAds.V19.Services;
+using Google.Ads.GoogleAds.V20.Common;
+using Google.Ads.GoogleAds.V20.Errors;
+using Google.Ads.GoogleAds.V20.Resources;
+using Google.Ads.GoogleAds.V20.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V19.Enums.UserListMembershipStatusEnum.Types;
+using static Google.Ads.GoogleAds.V20.Enums.UserListMembershipStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V19
+namespace Google.Ads.GoogleAds.Examples.V20
 {
     /// <summary>
     /// This code example creates a basic user list consisting of people who triggered one or more
@@ -85,7 +85,7 @@ namespace Google.Ads.GoogleAds.Examples.V19
         {
             // Creates the service client.
             UserListServiceClient userListServiceClient =
-                client.GetService(Services.V19.UserListService);
+                client.GetService(Services.V20.UserListService);
 
             List<UserListActionInfo> userListActionInfoList = new List<UserListActionInfo>();
             foreach (long conversionActionId in conversionActionIds)
