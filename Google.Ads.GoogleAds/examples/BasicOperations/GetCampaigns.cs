@@ -15,11 +15,11 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V19.Errors;
-using Google.Ads.GoogleAds.V19.Services;
+using Google.Ads.GoogleAds.V20.Errors;
+using Google.Ads.GoogleAds.V20.Services;
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V19
+namespace Google.Ads.GoogleAds.Examples.V20
 {
     /// <summary>
     /// This code example gets all campaigns. To add campaigns, run AddCampaigns.cs.
@@ -69,7 +69,7 @@ namespace Google.Ads.GoogleAds.Examples.V19
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V19.GoogleAdsService);
+                Services.V20.GoogleAdsService);
 
             // Create a query that will retrieve all campaigns.
             string query = @"SELECT

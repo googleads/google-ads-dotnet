@@ -15,17 +15,17 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V19.Common;
-using Google.Ads.GoogleAds.V19.Resources;
-using Google.Ads.GoogleAds.V19.Errors;
-using Google.Ads.GoogleAds.V19.Services;
+using Google.Ads.GoogleAds.V20.Common;
+using Google.Ads.GoogleAds.V20.Resources;
+using Google.Ads.GoogleAds.V20.Errors;
+using Google.Ads.GoogleAds.V20.Services;
 using System;
 using System.Threading;
 using System.Collections.Generic;
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Extensions.Config;
 
-namespace Google.Ads.GoogleAds.Examples.V19
+namespace Google.Ads.GoogleAds.Examples.V20
 {
     /// <summary>
     /// This example shows how to retrieve recommendations and apply them in a batch.
@@ -99,7 +99,7 @@ namespace Google.Ads.GoogleAds.Examples.V19
             // [START detect_keyword_recommendations]
             // Get the GoogleAdsServiceClient.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V19.GoogleAdsService);
+                Services.V20.GoogleAdsService);
 
             // Creates a query that retrieves keyword recommendations.
             string query = "SELECT recommendation.resource_name, " +
@@ -198,7 +198,7 @@ namespace Google.Ads.GoogleAds.Examples.V19
         {
             // Get the RecommendationServiceClient.
             RecommendationServiceClient recommendationService = client.GetService(
-                Services.V19.RecommendationService);
+                Services.V20.RecommendationService);
 
             ApplyRecommendationRequest applyRecommendationRequest = new ApplyRecommendationRequest()
             {

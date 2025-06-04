@@ -15,14 +15,14 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V19.Errors;
-using Google.Ads.GoogleAds.V19.Resources;
-using Google.Ads.GoogleAds.V19.Services;
+using Google.Ads.GoogleAds.V20.Errors;
+using Google.Ads.GoogleAds.V20.Resources;
+using Google.Ads.GoogleAds.V20.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V19.Enums.ConversionAdjustmentTypeEnum.Types;
+using static Google.Ads.GoogleAds.V20.Enums.ConversionAdjustmentTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V19
+namespace Google.Ads.GoogleAds.Examples.V20
 {
     /// <summary>
     /// This code example imports conversion adjustments for conversions that already exist.
@@ -126,7 +126,7 @@ namespace Google.Ads.GoogleAds.Examples.V19
         {
             // Get the ConversionAdjustmentUploadService.
             ConversionAdjustmentUploadServiceClient conversionAdjustmentUploadService =
-                client.GetService(Services.V19.ConversionAdjustmentUploadService);
+                client.GetService(Services.V20.ConversionAdjustmentUploadService);
 
             // Associate conversion adjustments with the existing conversion action.
             ConversionAdjustment conversionAdjustment = new ConversionAdjustment()

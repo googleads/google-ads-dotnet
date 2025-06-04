@@ -15,14 +15,14 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V19.Errors;
-using Google.Ads.GoogleAds.V19.Services;
+using Google.Ads.GoogleAds.V20.Errors;
+using Google.Ads.GoogleAds.V20.Services;
 using Google.Api.Gax;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V19.Enums.ChangeStatusResourceTypeEnum.Types;
+using static Google.Ads.GoogleAds.V20.Enums.ChangeStatusResourceTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V19
+namespace Google.Ads.GoogleAds.Examples.V20
 {
     /// <summary>
     /// This code example gets a list of which resources have been changed in your account
@@ -73,7 +73,7 @@ namespace Google.Ads.GoogleAds.Examples.V19
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V19.GoogleAdsService);
+                Services.V20.GoogleAdsService);
 
             string searchQuery = @"
                 SELECT

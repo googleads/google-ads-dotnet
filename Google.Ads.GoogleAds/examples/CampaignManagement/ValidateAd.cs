@@ -15,18 +15,18 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V19.Common;
-using Google.Ads.GoogleAds.V19.Errors;
-using Google.Ads.GoogleAds.V19.Resources;
-using Google.Ads.GoogleAds.V19.Services;
+using Google.Ads.GoogleAds.V20.Common;
+using Google.Ads.GoogleAds.V20.Errors;
+using Google.Ads.GoogleAds.V20.Resources;
+using Google.Ads.GoogleAds.V20.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V19.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V19.Enums.ServedAssetFieldTypeEnum.Types;
-using static Google.Ads.GoogleAds.V19.Errors.PolicyFindingErrorEnum.Types;
+using static Google.Ads.GoogleAds.V20.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V20.Enums.ServedAssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V20.Errors.PolicyFindingErrorEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V19
+namespace Google.Ads.GoogleAds.Examples.V20
 {
     /// <summary>
     /// This code example shows how to use the validateOnly request parameter to validate a
@@ -85,7 +85,7 @@ namespace Google.Ads.GoogleAds.Examples.V19
         {
             // Get the AdGroupAdService.
             AdGroupAdServiceClient adGroupAdService = client.GetService(
-                Services.V19.AdGroupAdService);
+                Services.V20.AdGroupAdService);
 
             // Create the ad group ad object.
             AdGroupAd adGroupAd = new AdGroupAd

@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V19.Errors;
-using Google.Ads.GoogleAds.V19.Resources;
-using Google.Ads.GoogleAds.V19.Services;
+using Google.Ads.GoogleAds.V20.Errors;
+using Google.Ads.GoogleAds.V20.Resources;
+using Google.Ads.GoogleAds.V20.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V19.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V19.Enums.SeasonalityEventScopeEnum.Types;
+using static Google.Ads.GoogleAds.V20.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V20.Enums.SeasonalityEventScopeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V19
+namespace Google.Ads.GoogleAds.Examples.V20
 {
     /// <summary>
     /// This code example adds a channel-level seasonality adjustment that adjusts Smart Bidding
@@ -114,7 +114,7 @@ namespace Google.Ads.GoogleAds.Examples.V19
         {
             // Get the BiddingSeasonalityAdjustmentServiceClient.
             BiddingSeasonalityAdjustmentServiceClient biddingSeasonalityAdjustmentService =
-                client.GetService(Services.V19.BiddingSeasonalityAdjustmentService);
+                client.GetService(Services.V20.BiddingSeasonalityAdjustmentService);
 
 
             // [START add_bidding_seasonality_adjustment]
