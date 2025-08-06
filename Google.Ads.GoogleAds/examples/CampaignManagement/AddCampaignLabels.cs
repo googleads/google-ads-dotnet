@@ -15,14 +15,14 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V20.Errors;
-using Google.Ads.GoogleAds.V20.Resources;
-using Google.Ads.GoogleAds.V20.Services;
+using Google.Ads.GoogleAds.V21.Errors;
+using Google.Ads.GoogleAds.V21.Resources;
+using Google.Ads.GoogleAds.V21.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Google.Ads.GoogleAds.Examples.V20
+namespace Google.Ads.GoogleAds.Examples.V21
 {
     /// <summary>
     /// This code example adds a campaign label to a list of campaigns.
@@ -89,7 +89,7 @@ namespace Google.Ads.GoogleAds.Examples.V20
         {
             // Get the CampaignLabelServiceClient.
             CampaignLabelServiceClient campaignLabelService =
-                client.GetService(Services.V20.CampaignLabelService);
+                client.GetService(Services.V21.CampaignLabelService);
 
             // Gets the resource name of the label to be added across all given campaigns.
             string labelResourceName = ResourceNames.Label(customerId, labelId);

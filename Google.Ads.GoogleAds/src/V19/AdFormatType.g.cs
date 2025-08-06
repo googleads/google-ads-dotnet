@@ -209,7 +209,7 @@ namespace Google.Ads.GoogleAds.V19.Enums {
       /// <summary>
       /// Enumerates Google Ads format types.
       ///
-      /// Note that this segmentation is available only for Video and Discovery
+      /// Note that this segmentation is available only for Video and Demand Gen
       /// campaigns. For assets, only video assets are supported.
       /// </summary>
       public enum AdFormatType {
@@ -223,7 +223,7 @@ namespace Google.Ads.GoogleAds.V19.Enums {
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
         /// Value assigned to formats (such as experimental formats) which don't
-        /// support format segmentation in Video and Discovery campaigns.
+        /// support format segmentation in Video and Demand Gen campaigns.
         ///
         /// Note that these formats may change categories in the future, for example
         /// if an experimental format is exposed or a new format is added. We
@@ -248,8 +248,8 @@ namespace Google.Ads.GoogleAds.V19.Enums {
         /// </summary>
         [pbr::OriginalName("INSTREAM_NON_SKIPPABLE")] InstreamNonSkippable = 5,
         /// <summary>
-        /// In-feed YouTube or discovery image ads served on feed surfaces (e.g.
-        /// Discover Feed, YouTube Home, etc.).
+        /// In-feed YouTube or image ads served on feed surfaces (e.g. Discover Feed,
+        /// YouTube Home, etc.).
         /// </summary>
         [pbr::OriginalName("INFEED")] Infeed = 6,
         /// <summary>
@@ -269,8 +269,8 @@ namespace Google.Ads.GoogleAds.V19.Enums {
         /// </summary>
         [pbr::OriginalName("AUDIO")] Audio = 10,
         /// <summary>
-        /// Vertical full-screen video or discovery image ad served on YouTube Shorts
-        /// or BrandConnect ads served as organic YouTube Shorts.
+        /// Vertical full-screen video or image ads served on YouTube Shorts or
+        /// BrandConnect ads served as organic YouTube Shorts.
         /// </summary>
         [pbr::OriginalName("SHORTS")] Shorts = 11,
       }

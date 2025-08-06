@@ -46,7 +46,7 @@ namespace Google.Ads.GoogleAds.V20.Enums {
   }
   #region Messages
   /// <summary>
-  /// Container for enum describing format restrictions for Video Responsive Ads in
+  /// Container for enum describing format restrictions for video responsive ads in
   /// video campaigns.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
@@ -218,7 +218,7 @@ namespace Google.Ads.GoogleAds.V20.Enums {
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
-        /// Non-skippable in-stream Video Responsive Ad.
+        /// Non-skippable in-stream video responsive ad.
         /// </summary>
         [pbr::OriginalName("NON_SKIPPABLE_IN_STREAM")] NonSkippableInStream = 2,
       }

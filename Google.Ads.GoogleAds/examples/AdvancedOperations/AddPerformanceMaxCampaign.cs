@@ -16,23 +16,22 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Config;
-using Google.Ads.GoogleAds.Extensions.Config;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V20.Common;
-using Google.Ads.GoogleAds.V20.Errors;
-using Google.Ads.GoogleAds.V20.Resources;
-using Google.Ads.GoogleAds.V20.Services;
+using Google.Ads.GoogleAds.V21.Common;
+using Google.Ads.GoogleAds.V21.Errors;
+using Google.Ads.GoogleAds.V21.Resources;
+using Google.Ads.GoogleAds.V21.Services;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
 using System.Threading;
-using static Google.Ads.GoogleAds.V20.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V20.Enums.AssetFieldTypeEnum.Types;
-using static Google.Ads.GoogleAds.V20.Enums.AssetGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V20.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V20.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.AssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.AssetGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.EuPoliticalAdvertisingStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V20
+namespace Google.Ads.GoogleAds.Examples.V21
 {
     /// <summary>
     /// This example shows how to create a Performance Max campaign.
@@ -151,7 +150,7 @@ namespace Google.Ads.GoogleAds.Examples.V20
             {
                 // [START add_performance_max_campaign_1]
                 GoogleAdsServiceClient googleAdsServiceClient =
-                    client.GetService(Services.V20.GoogleAdsService);
+                    client.GetService(Services.V21.GoogleAdsService);
 
                 // Performance Max campaigns require that repeated assets such as headlines and
                 // descriptions be created before the campaign.
@@ -368,6 +367,9 @@ namespace Google.Ads.GoogleAds.Examples.V20
                         // on brand guidelines, see https://support.google.com/google-ads/answer/14934472.
                         BrandGuidelinesEnabled = brandGuidelinesEnabled,
 
+                        // Declare whether or not this campaign contains political ads targeting the EU.
+                        ContainsEuPoliticalAdvertising = EuPoliticalAdvertisingStatus.DoesNotContainEuPoliticalAdvertising,
+
                         // Optional fields
                         StartDate = DateTime.Now.AddDays(1).ToString("yyyyMMdd"),
                         EndDate = DateTime.Now.AddDays(365).ToString("yyyyMMdd")
@@ -482,7 +484,7 @@ namespace Google.Ads.GoogleAds.Examples.V20
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V20.GoogleAdsService);
+                client.GetService(Services.V21.GoogleAdsService);
 
             MutateGoogleAdsRequest request = new MutateGoogleAdsRequest()
             {

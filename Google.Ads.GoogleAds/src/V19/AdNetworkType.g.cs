@@ -242,8 +242,9 @@ namespace Google.Ads.GoogleAds.V19.Enums {
         /// </summary>
         [pbr::OriginalName("GOOGLE_TV")] GoogleTv = 9,
         /// <summary>
-        /// Google Owned Channels such as Discover feed, Gmail, YouTube. This network
-        /// is only used by Demand Gen campaigns.
+        /// Google Owned Channels such as Discover feed, Gmail,
+        /// YouTube. This network is only used by Demand Gen
+        /// campaigns.
         /// </summary>
         [pbr::OriginalName("GOOGLE_OWNED_CHANNELS")] GoogleOwnedChannels = 10,
       }

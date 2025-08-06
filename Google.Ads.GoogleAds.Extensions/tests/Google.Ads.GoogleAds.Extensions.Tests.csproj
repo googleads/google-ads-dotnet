@@ -43,7 +43,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Condition="!Exists('..\..\Google.Ads.GoogleAds\src\Google.Ads.GoogleAds.csproj')" Include="Google.Ads.GoogleAds" Version="22.0.0" />
+    <PackageReference Condition="!Exists('..\..\Google.Ads.GoogleAds\src\Google.Ads.GoogleAds.csproj')" Include="Google.Ads.GoogleAds" Version="24.0.0" />
     <ProjectReference Condition="Exists('..\..\Google.Ads.GoogleAds\src\Google.Ads.GoogleAds.csproj')" Include="..\..\Google.Ads.GoogleAds\src\Google.Ads.GoogleAds.csproj" />
   </ItemGroup>
   <ItemGroup>

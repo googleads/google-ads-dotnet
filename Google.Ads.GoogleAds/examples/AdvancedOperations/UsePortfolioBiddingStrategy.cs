@@ -15,18 +15,19 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V20.Common;
-using Google.Ads.GoogleAds.V20.Enums;
-using Google.Ads.GoogleAds.V20.Errors;
-using Google.Ads.GoogleAds.V20.Resources;
-using Google.Ads.GoogleAds.V20.Services;
+using Google.Ads.GoogleAds.V21.Common;
+using Google.Ads.GoogleAds.V21.Enums;
+using Google.Ads.GoogleAds.V21.Errors;
+using Google.Ads.GoogleAds.V21.Resources;
+using Google.Ads.GoogleAds.V21.Services;
 using System;
-using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V20.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V20.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V20.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V21.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.EuPoliticalAdvertisingStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V20
+using static Google.Ads.GoogleAds.V21.Resources.Campaign.Types;
+
+namespace Google.Ads.GoogleAds.Examples.V21
 {
     /// <summary>
     /// This code example adds a portfolio bidding strategy and uses it to construct a campaign.
@@ -130,7 +131,7 @@ namespace Google.Ads.GoogleAds.Examples.V20
         {
             // Get the BiddingStrategyService.
             BiddingStrategyServiceClient biddingStrategyService = client.GetService(
-                Services.V20.BiddingStrategyService);
+                Services.V21.BiddingStrategyService);
 
             // Create a portfolio bidding strategy.
             BiddingStrategy biddingStrategy = new BiddingStrategy()
@@ -172,7 +173,7 @@ namespace Google.Ads.GoogleAds.Examples.V20
         {
             // Get the CampaignBudgetService.
             CampaignBudgetServiceClient campaignBudgetService =
-                client.GetService(Services.V20.CampaignBudgetService);
+                client.GetService(Services.V21.CampaignBudgetService);
 
             // Create a shared budget.
             CampaignBudget budget = new CampaignBudget()
@@ -210,7 +211,7 @@ namespace Google.Ads.GoogleAds.Examples.V20
             string campaignBudgetResourceName)
         {
             // Get the CampaignService.
-            CampaignServiceClient campaignService = client.GetService(Services.V20.CampaignService);
+            CampaignServiceClient campaignService = client.GetService(Services.V21.CampaignService);
 
             // [START use_portfolio_bidding_strategy_2]
             // Create the campaign.
@@ -237,7 +238,10 @@ namespace Google.Ads.GoogleAds.Examples.V20
                     TargetSearchNetwork = true,
                     TargetContentNetwork = true,
                     TargetPartnerSearchNetwork = false
-                }
+                },
+
+                // Declare whether or not this campaign contains political ads targeting the EU.
+                ContainsEuPoliticalAdvertising = EuPoliticalAdvertisingStatus.DoesNotContainEuPoliticalAdvertising,
             };
             // [END use_portfolio_bidding_strategy_2]
 

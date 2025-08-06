@@ -49,7 +49,7 @@ namespace Google.Ads.GoogleAds.V20.Enums {
   #region Messages
   /// <summary>
   /// Container for enum describing the allowed minimum duration values for videos
-  /// used in non-skippable Responsive Video Ads.
+  /// used in non-skippable video responsive ads.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class NonSkippableMinDurationEnum : pb::IMessage<NonSkippableMinDurationEnum>
@@ -209,7 +209,7 @@ namespace Google.Ads.GoogleAds.V20.Enums {
     public static partial class Types {
       /// <summary>
       /// Enum describing the allowed minimum duration values for videos used in
-      /// non-skippable Responsive Video Ads.
+      /// non-skippable video responsive ads.
       /// </summary>
       public enum NonSkippableMinDuration {
         /// <summary>

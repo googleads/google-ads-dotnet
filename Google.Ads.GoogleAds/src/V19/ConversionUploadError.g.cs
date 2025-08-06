@@ -257,8 +257,7 @@ namespace Google.Ads.GoogleAds.V19.Errors {
         /// </summary>
         [pbr::OriginalName("TOO_MANY_CONVERSIONS_IN_REQUEST")] TooManyConversionsInRequest = 2,
         /// <summary>
-        /// The imported gclid could not be decoded. Make sure you have not modified
-        /// the click IDs.
+        /// The imported gclid could not be decoded.
         /// </summary>
         [pbr::OriginalName("UNPARSEABLE_GCLID")] UnparseableGclid = 3,
         /// <summary>

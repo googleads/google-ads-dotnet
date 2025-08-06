@@ -15,16 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V20.Common;
-using Google.Ads.GoogleAds.V20.Errors;
-using Google.Ads.GoogleAds.V20.Resources;
-using Google.Ads.GoogleAds.V20.Services;
+using Google.Ads.GoogleAds.V21.Common;
+using Google.Ads.GoogleAds.V21.Errors;
+using Google.Ads.GoogleAds.V21.Resources;
+using Google.Ads.GoogleAds.V21.Services;
 using System;
 using System.Collections.Generic;
-using Google.Ads.GoogleAds.V20.Enums;
-using static Google.Ads.GoogleAds.V20.Enums.CustomizerAttributeTypeEnum.Types;
+using Google.Ads.GoogleAds.V21.Enums;
+using static Google.Ads.GoogleAds.V21.Enums.CustomizerAttributeTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V20
+namespace Google.Ads.GoogleAds.Examples.V21
 {
     /// <summary>
     /// This code example adds two ad customizer attributes and associates
@@ -85,7 +85,7 @@ namespace Google.Ads.GoogleAds.Examples.V20
         {
             // Get the AdGroupBidModifierService.
             AdGroupBidModifierServiceClient adGroupBidModifierService =
-                client.GetService(Services.V20.AdGroupBidModifierService);
+                client.GetService(Services.V21.AdGroupBidModifierService);
 
             string stringCustomizerName = "Planet_" + ExampleUtilities.GetShortRandomString();
             string priceCustomizerName = "Price_" + ExampleUtilities.GetShortRandomString();
@@ -128,7 +128,7 @@ namespace Google.Ads.GoogleAds.Examples.V20
         {
             // Get the customizer attribute service.
             CustomizerAttributeServiceClient customizerAttributeService =
-                client.GetService(Services.V20.CustomizerAttributeService);
+                client.GetService(Services.V21.CustomizerAttributeService);
 
             // Creates a text customizer attribute. The customizer attribute name is
             // arbitrary and will be used as a placeholder in the ad text fields.
@@ -166,7 +166,7 @@ namespace Google.Ads.GoogleAds.Examples.V20
         {
             // Get the customizer attribute service.
             CustomizerAttributeServiceClient customizerAttributeService =
-                client.GetService(Services.V20.CustomizerAttributeService);
+                client.GetService(Services.V21.CustomizerAttributeService);
 
             // Creates a price customizer attribute. The customizer attribute name is
             // arbitrary and will be used as a placeholder in the ad text fields.
@@ -210,7 +210,7 @@ namespace Google.Ads.GoogleAds.Examples.V20
         {
             // Get the ad group customizer service.
             AdGroupCustomizerServiceClient adGroupCustomizerService =
-                client.GetService(Services.V20.AdGroupCustomizerService);
+                client.GetService(Services.V21.AdGroupCustomizerService);
 
             List<AdGroupCustomizerOperation> adGroupCustomizerOperations =
                 new List<AdGroupCustomizerOperation>();
@@ -272,7 +272,7 @@ namespace Google.Ads.GoogleAds.Examples.V20
         {
             // Get the AdGroupAdServiceClient.
             AdGroupAdServiceClient adGroupAdService =
-                client.GetService(Services.V20.AdGroupAdService);
+                client.GetService(Services.V21.AdGroupAdService);
 
             // Creates a responsive search ad using the attribute customizer names as
             // placeholders and default values to be used in case there are no attribute

@@ -19,19 +19,20 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V20.Common;
-using Google.Ads.GoogleAds.V20.Enums;
-using Google.Ads.GoogleAds.V20.Errors;
-using Google.Ads.GoogleAds.V20.Resources;
-using Google.Ads.GoogleAds.V20.Services;
-using static Google.Ads.GoogleAds.V20.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V20.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V20.Enums.AdvertisingChannelSubTypeEnum.Types;
-using static Google.Ads.GoogleAds.V20.Enums.BudgetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V20.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V20.Services.SmartCampaignSuggestionInfo.Types;
+using Google.Ads.GoogleAds.V21.Common;
+using Google.Ads.GoogleAds.V21.Enums;
+using Google.Ads.GoogleAds.V21.Errors;
+using Google.Ads.GoogleAds.V21.Resources;
+using Google.Ads.GoogleAds.V21.Services;
+using static Google.Ads.GoogleAds.V21.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.AdvertisingChannelSubTypeEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.BudgetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.EuPoliticalAdvertisingStatusEnum.Types;
+using static Google.Ads.GoogleAds.V21.Services.SmartCampaignSuggestionInfo.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V20
+namespace Google.Ads.GoogleAds.Examples.V21
 {
     /// <summary>
     /// This example shows how to create a Smart Campaign.
@@ -150,7 +151,7 @@ namespace Google.Ads.GoogleAds.Examples.V20
             string freeFormKeywordText, string businessProfileLocation, string businessName)
         {
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V20.GoogleAdsService);
+                client.GetService(Services.V21.GoogleAdsService);
 
             try
             {
@@ -268,7 +269,7 @@ namespace Google.Ads.GoogleAds.Examples.V20
             GoogleAdsClient client, long customerId, SmartCampaignSuggestionInfo suggestionInfo)
         {
             SmartCampaignSuggestServiceClient smartCampaignSuggestService =
-                client.GetService(Services.V20.SmartCampaignSuggestService);
+                client.GetService(Services.V21.SmartCampaignSuggestService);
 
             SuggestKeywordThemesRequest request = new SuggestKeywordThemesRequest()
             {
@@ -300,7 +301,7 @@ namespace Google.Ads.GoogleAds.Examples.V20
             GoogleAdsClient client, string keywordText)
         {
             KeywordThemeConstantServiceClient keywordThemeConstantServiceClient =
-                client.GetService(Services.V20.KeywordThemeConstantService);
+                client.GetService(Services.V21.KeywordThemeConstantService);
 
             SuggestKeywordThemeConstantsRequest request = new SuggestKeywordThemeConstantsRequest
             {
@@ -429,7 +430,7 @@ namespace Google.Ads.GoogleAds.Examples.V20
             SmartCampaignSuggestionInfo suggestionInfo)
         {
             SmartCampaignSuggestServiceClient smartCampaignSuggestServiceClient = client.GetService
-                (Services.V20.SmartCampaignSuggestService);
+                (Services.V21.SmartCampaignSuggestService);
 
             SuggestSmartCampaignBudgetOptionsRequest request =
                 new SuggestSmartCampaignBudgetOptionsRequest
@@ -486,7 +487,7 @@ namespace Google.Ads.GoogleAds.Examples.V20
             long customerId, SmartCampaignSuggestionInfo suggestionInfo)
         {
             SmartCampaignSuggestServiceClient smartCampaignSuggestService =
-              client.GetService(Services.V20.SmartCampaignSuggestService);
+              client.GetService(Services.V21.SmartCampaignSuggestService);
 
             SuggestSmartCampaignAdRequest request = new SuggestSmartCampaignAdRequest
             {
@@ -594,7 +595,10 @@ namespace Google.Ads.GoogleAds.Examples.V20
                             ResourceNames.Campaign(customerId, SMART_CAMPAIGN_TEMPORARY_ID),
                         // Set the budget using the given budget resource name.
                         CampaignBudget =
-                            ResourceNames.CampaignBudget(customerId, BUDGET_TEMPORARY_ID)
+                            ResourceNames.CampaignBudget(customerId, BUDGET_TEMPORARY_ID),
+
+                        // Declare whether or not this campaign contains political ads targeting the EU.
+                        ContainsEuPoliticalAdvertising = EuPoliticalAdvertisingStatus.DoesNotContainEuPoliticalAdvertising,
                     }
                 }
             };

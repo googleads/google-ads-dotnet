@@ -17,21 +17,22 @@ using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V19.Common;
-using Google.Ads.GoogleAds.V19.Errors;
-using Google.Ads.GoogleAds.V19.Resources;
-using Google.Ads.GoogleAds.V19.Services;
+using Google.Ads.GoogleAds.V21.Common;
+using Google.Ads.GoogleAds.V21.Errors;
+using Google.Ads.GoogleAds.V21.Resources;
+using Google.Ads.GoogleAds.V21.Services;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V19.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V19.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V19.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V19.Resources.AdGroup.Types;
-using static Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types;
-using static Google.Ads.GoogleAds.V19.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types.DemandGenChannelControls.Types;
+using static Google.Ads.GoogleAds.V21.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V21.Resources.AdGroup.Types;
+using static Google.Ads.GoogleAds.V21.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types;
+using static Google.Ads.GoogleAds.V21.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types.DemandGenChannelControls.Types;
+using static Google.Ads.GoogleAds.V21.Enums.EuPoliticalAdvertisingStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V19
+namespace Google.Ads.GoogleAds.Examples.V21
 {
     /// <summary>
     /// This example shows how to create a Demand Gen campaign with a video ad.
@@ -102,7 +103,7 @@ namespace Google.Ads.GoogleAds.Examples.V19
         {
 
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V19.GoogleAdsService);
+                client.GetService(Services.V21.GoogleAdsService);
 
             try
             {
@@ -244,7 +245,10 @@ namespace Google.Ads.GoogleAds.Examples.V19
                         TargetCpa = new TargetCpa()
                         {
                             TargetCpaMicros = 1_000_000,
-                        }
+                        },
+
+                        ContainsEuPoliticalAdvertising =
+                            EuPoliticalAdvertisingStatus.DoesNotContainEuPoliticalAdvertising
                     }
                 }
             };
@@ -333,7 +337,7 @@ namespace Google.Ads.GoogleAds.Examples.V19
                 CreateImageAssetOperation(
                     logoResourceName,
                     "https://gaagl.page.link/bjYi",
-                    "Square Marketing Image",
+                    "Logo Image",
                     config
                 ),
             ];
@@ -360,7 +364,7 @@ namespace Google.Ads.GoogleAds.Examples.V19
 
             Ad ad = new Ad
             {
-                Name = "Demand gen multi asset ad",
+                Name = "Demand gen video responsive ad",
                 FinalUrls = { "http://example.com/demand_gen" },
                 DemandGenVideoResponsiveAd = new DemandGenVideoResponsiveAdInfo
                 {
