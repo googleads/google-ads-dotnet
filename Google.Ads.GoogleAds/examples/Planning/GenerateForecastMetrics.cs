@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V20.Common;
-using Google.Ads.GoogleAds.V20.Errors;
-using Google.Ads.GoogleAds.V20.Resources;
-using Google.Ads.GoogleAds.V20.Services;
+using Google.Ads.GoogleAds.V21.Common;
+using Google.Ads.GoogleAds.V21.Errors;
+using Google.Ads.GoogleAds.V21.Resources;
+using Google.Ads.GoogleAds.V21.Services;
 using System;
-using static Google.Ads.GoogleAds.V20.Enums.KeywordMatchTypeEnum.Types;
-using static Google.Ads.GoogleAds.V20.Enums.KeywordPlanNetworkEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.KeywordMatchTypeEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.KeywordPlanNetworkEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V20;
+namespace Google.Ads.GoogleAds.Examples.V21;
 
 /// <summary>
 /// This code example generates forecast metrics for keyword planning.
@@ -74,7 +74,7 @@ public class GenerateForecastMetrics : ExampleBase
         CampaignToForecast campaignToForecast = CreateCampaignToForecast();
 
         KeywordPlanIdeaServiceClient keywordPlanIdeaService =
-                client.GetService(Services.V20.KeywordPlanIdeaService);
+                client.GetService(Services.V21.KeywordPlanIdeaService);
 
         GenerateKeywordForecastMetricsRequest request = new GenerateKeywordForecastMetricsRequest()
         {

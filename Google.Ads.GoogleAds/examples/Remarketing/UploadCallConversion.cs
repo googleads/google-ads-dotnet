@@ -15,14 +15,14 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V20.Common;
-using Google.Ads.GoogleAds.V20.Errors;
-using Google.Ads.GoogleAds.V20.Services;
+using Google.Ads.GoogleAds.V21.Common;
+using Google.Ads.GoogleAds.V21.Errors;
+using Google.Ads.GoogleAds.V21.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V20.Enums.ConsentStatusEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.ConsentStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V20
+namespace Google.Ads.GoogleAds.Examples.V21
 {
     /// <summary>
     /// This code example imports offline call conversion values for calls related to the
@@ -152,7 +152,7 @@ namespace Google.Ads.GoogleAds.Examples.V20
         {
             // Get the ConversionUploadService.
             ConversionUploadServiceClient conversionUploadService =
-                client.GetService(Services.V20.ConversionUploadService);
+                client.GetService(Services.V21.ConversionUploadService);
 
             // Create a call conversion by specifying currency as USD.
             CallConversion callConversion = new CallConversion()

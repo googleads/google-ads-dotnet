@@ -10656,7 +10656,7 @@ namespace Google.Ads.GoogleAds.V19.Services {
 
         private long currentBudget_;
         /// <summary>
-        /// Required. Current budget amount.
+        /// Required. Current budget amount in micros.
         /// This field is necessary for the following recommendation_types if
         /// budget_info is set:
         /// CAMPAIGN_BUDGET

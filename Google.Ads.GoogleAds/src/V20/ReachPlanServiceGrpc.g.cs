@@ -225,6 +225,10 @@ namespace Google.Ads.GoogleAds.V20.Services {
 
       /// <summary>
       /// Returns the list of plannable user lists with their plannable status.
+      /// User lists may not be plannable for a number of reasons, including:
+      /// - They are less than 10 days old.
+      /// - They have a membership lifespan that is less than 30 days
+      /// - They have less than 10,000 or more than 700,000 users.
       ///
       /// List of thrown errors:
       ///   [AuthenticationError]()
@@ -617,6 +621,10 @@ namespace Google.Ads.GoogleAds.V20.Services {
       }
       /// <summary>
       /// Returns the list of plannable user lists with their plannable status.
+      /// User lists may not be plannable for a number of reasons, including:
+      /// - They are less than 10 days old.
+      /// - They have a membership lifespan that is less than 30 days
+      /// - They have less than 10,000 or more than 700,000 users.
       ///
       /// List of thrown errors:
       ///   [AuthenticationError]()
@@ -641,6 +649,10 @@ namespace Google.Ads.GoogleAds.V20.Services {
       }
       /// <summary>
       /// Returns the list of plannable user lists with their plannable status.
+      /// User lists may not be plannable for a number of reasons, including:
+      /// - They are less than 10 days old.
+      /// - They have a membership lifespan that is less than 30 days
+      /// - They have less than 10,000 or more than 700,000 users.
       ///
       /// List of thrown errors:
       ///   [AuthenticationError]()
@@ -663,6 +675,10 @@ namespace Google.Ads.GoogleAds.V20.Services {
       }
       /// <summary>
       /// Returns the list of plannable user lists with their plannable status.
+      /// User lists may not be plannable for a number of reasons, including:
+      /// - They are less than 10 days old.
+      /// - They have a membership lifespan that is less than 30 days
+      /// - They have less than 10,000 or more than 700,000 users.
       ///
       /// List of thrown errors:
       ///   [AuthenticationError]()
@@ -687,6 +703,10 @@ namespace Google.Ads.GoogleAds.V20.Services {
       }
       /// <summary>
       /// Returns the list of plannable user lists with their plannable status.
+      /// User lists may not be plannable for a number of reasons, including:
+      /// - They are less than 10 days old.
+      /// - They have a membership lifespan that is less than 30 days
+      /// - They have less than 10,000 or more than 700,000 users.
       ///
       /// List of thrown errors:
       ///   [AuthenticationError]()

@@ -555,7 +555,8 @@ namespace Google.Ads.GoogleAds.V20.Resources {
     /// Immutable. The name of the ad. This is only used to be able to identify the
     /// ad. It does not need to be unique and does not affect the served ad. The
     /// name field is currently only supported for DisplayUploadAd, ImageAd,
-    /// ShoppingComparisonListingAd and VideoAd.
+    /// LegacyAppInstallAd, ShoppingComparisonListingAd, VideoAd, VideoResponsiveAd
+    /// and DemandGen ads.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

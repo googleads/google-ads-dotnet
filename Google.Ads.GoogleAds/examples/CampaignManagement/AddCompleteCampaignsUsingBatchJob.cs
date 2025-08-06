@@ -15,25 +15,26 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V20.Common;
-using Google.Ads.GoogleAds.V20.Errors;
-using Google.Ads.GoogleAds.V20.Resources;
-using Google.Ads.GoogleAds.V20.Services;
+using Google.Ads.GoogleAds.V21.Common;
+using Google.Ads.GoogleAds.V21.Errors;
+using Google.Ads.GoogleAds.V21.Resources;
+using Google.Ads.GoogleAds.V21.Services;
 using Google.Api.Gax;
 using Google.LongRunning;
 using Google.Protobuf.WellKnownTypes;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V20.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V20.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V20.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V20.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V20.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V20.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V20.Enums.KeywordMatchTypeEnum.Types;
-using static Google.Ads.GoogleAds.V20.Resources.BatchJob.Types;
+using static Google.Ads.GoogleAds.V21.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.EuPoliticalAdvertisingStatusEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.KeywordMatchTypeEnum.Types;
+using static Google.Ads.GoogleAds.V21.Resources.BatchJob.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V20
+namespace Google.Ads.GoogleAds.Examples.V21
 {
     /// <summary>
     /// This code example adds complete campaigns including campaign budgets, campaigns, ad groups
@@ -114,7 +115,7 @@ namespace Google.Ads.GoogleAds.Examples.V20
         {
             // Gets the BatchJobService.
             BatchJobServiceClient batchJobService =
-                client.GetService(Services.V20.BatchJobService);
+                client.GetService(Services.V21.BatchJobService);
 
             try
             {
@@ -412,7 +413,10 @@ namespace Google.Ads.GoogleAds.Examples.V20
 
                     // Sets the bidding strategy and budget.
                     ManualCpc = new ManualCpc(),
-                    CampaignBudget = campaignBudgetResourceName
+                    CampaignBudget = campaignBudgetResourceName,
+
+                    // Declare whether or not this campaign contains political ads targeting the EU.
+                    ContainsEuPoliticalAdvertising = EuPoliticalAdvertisingStatus.DoesNotContainEuPoliticalAdvertising,
                 };
 
                 // Creates a campaign operation and adds it to the operations list.

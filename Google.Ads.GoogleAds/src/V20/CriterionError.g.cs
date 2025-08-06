@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V20.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjVnb29nbGUvYWRzL2dvb2dsZWFkcy92MjAvZXJyb3JzL2NyaXRlcmlvbl9l",
-            "cnJvci5wcm90bxIfZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIwLmVycm9ycyKe",
-            "MAoSQ3JpdGVyaW9uRXJyb3JFbnVtIocwCg5Dcml0ZXJpb25FcnJvchIPCgtV",
+            "cnJvci5wcm90bxIfZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIwLmVycm9ycyLW",
+            "MAoSQ3JpdGVyaW9uRXJyb3JFbnVtIr8wCg5Dcml0ZXJpb25FcnJvchIPCgtV",
             "TlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIaChZDT05DUkVURV9UWVBFX1JF",
             "UVVJUkVEEAISHQoZSU5WQUxJRF9FWENMVURFRF9DQVRFR09SWRADEhgKFElO",
             "VkFMSURfS0VZV09SRF9URVhUEAQSGQoVS0VZV09SRF9URVhUX1RPT19MT05H",
@@ -163,12 +163,14 @@ namespace Google.Ads.GoogleAds.V20.Errors {
             "TU9WRURfQlJBTkRfU0hBUkVEX1NFVBCdARI4CjNPTkxZX0VYQ0xVU0lPTl9C",
             "UkFORF9MSVNUX0FMTE9XRURfRk9SX0NBTVBBSUdOX1RZUEUQngESPAo3TE9D",
             "QVRJT05fVEFSR0VUSU5HX05PVF9FTElHSUJMRV9GT1JfUkVTVFJJQ1RFRF9D",
-            "QU1QQUlHThCmAULzAQojY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMC5l",
-            "cnJvcnNCE0NyaXRlcmlvbkVycm9yUHJvdG9QAVpFZ29vZ2xlLmdvbGFuZy5v",
-            "cmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YyMC9lcnJv",
-            "cnM7ZXJyb3JzogIDR0FBqgIfR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjIwLkVy",
-            "cm9yc8oCH0dvb2dsZVxBZHNcR29vZ2xlQWRzXFYyMFxFcnJvcnPqAiNHb29n",
-            "bGU6OkFkczo6R29vZ2xlQWRzOjpWMjA6OkVycm9yc2IGcHJvdG8z"));
+            "QU1QQUlHThCmARI2CjFNSVNTSU5HX0VVX1BPTElUSUNBTF9BRFZFUlRJU0lO",
+            "R19TRUxGX0RFQ0xBUkFUSU9OELABQvMBCiNjb20uZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjIwLmVycm9yc0ITQ3JpdGVyaW9uRXJyb3JQcm90b1ABWkVnb29n",
+            "bGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVh",
+            "ZHMvdjIwL2Vycm9ycztlcnJvcnOiAgNHQUGqAh9Hb29nbGUuQWRzLkdvb2ds",
+            "ZUFkcy5WMjAuRXJyb3JzygIfR29vZ2xlXEFkc1xHb29nbGVBZHNcVjIwXEVy",
+            "cm9yc+oCI0dvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyMDo6RXJyb3JzYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -991,6 +993,11 @@ namespace Google.Ads.GoogleAds.V20.Errors {
         /// campaign.
         /// </summary>
         [pbr::OriginalName("LOCATION_TARGETING_NOT_ELIGIBLE_FOR_RESTRICTED_CAMPAIGN")] LocationTargetingNotEligibleForRestrictedCampaign = 166,
+        /// <summary>
+        /// The operation failed because the campaign is missing the
+        /// self-declaration on political advertising status in the EU.
+        /// </summary>
+        [pbr::OriginalName("MISSING_EU_POLITICAL_ADVERTISING_SELF_DECLARATION")] MissingEuPoliticalAdvertisingSelfDeclaration = 176,
       }
 
     }

@@ -15,23 +15,23 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V20.Common;
-using Google.Ads.GoogleAds.V20.Errors;
-using Google.Ads.GoogleAds.V20.Resources;
-using Google.Ads.GoogleAds.V20.Services;
+using Google.Ads.GoogleAds.V21.Common;
+using Google.Ads.GoogleAds.V21.Errors;
+using Google.Ads.GoogleAds.V21.Resources;
+using Google.Ads.GoogleAds.V21.Services;
 using System;
-using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V20.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V20.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V20.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V20.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V20.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V20.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V20.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V20.Enums.WebpageConditionOperandEnum.Types;
-using static Google.Ads.GoogleAds.V20.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V21.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.EuPoliticalAdvertisingStatusEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.WebpageConditionOperandEnum.Types;
+using static Google.Ads.GoogleAds.V21.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V20
+namespace Google.Ads.GoogleAds.Examples.V21
 {
     /// <summary>
     /// This code example adds dynamic search ads to a given ad group. To list
@@ -107,7 +107,7 @@ namespace Google.Ads.GoogleAds.Examples.V20
         {
             // Get the CampaignBudgetService.
             CampaignBudgetServiceClient campaignBudgetService =
-                client.GetService(Services.V20.CampaignBudgetService);
+                client.GetService(Services.V21.CampaignBudgetService);
 
             // Create the budget.
             CampaignBudget campaignBudget = new CampaignBudget()
@@ -146,7 +146,7 @@ namespace Google.Ads.GoogleAds.Examples.V20
             string budgetResourceName)
         {
             // Get the CampaignService.
-            CampaignServiceClient campaignService = client.GetService(Services.V20.CampaignService);
+            CampaignServiceClient campaignService = client.GetService(Services.V21.CampaignService);
 
             // Create the campaign.
             Campaign campaign = new Campaign()
@@ -163,6 +163,9 @@ namespace Google.Ads.GoogleAds.Examples.V20
                     DomainName = "example.com",
                     LanguageCode = "en"
                 },
+
+                // Declare whether or not this campaign contains political ads targeting the EU.
+                ContainsEuPoliticalAdvertising = EuPoliticalAdvertisingStatus.DoesNotContainEuPoliticalAdvertising,
 
                 StartDate = DateTime.Now.AddDays(1).ToString("yyyyMMdd"),
                 EndDate = DateTime.Now.AddDays(30).ToString("yyyyMMdd")
@@ -196,7 +199,7 @@ namespace Google.Ads.GoogleAds.Examples.V20
             string campaignResourceName)
         {
             // Get the AdGroupService.
-            AdGroupServiceClient adGroupService = client.GetService(Services.V20.AdGroupService);
+            AdGroupServiceClient adGroupService = client.GetService(Services.V21.AdGroupService);
 
             // Create the ad group.
             AdGroup adGroup = new AdGroup()
@@ -238,7 +241,7 @@ namespace Google.Ads.GoogleAds.Examples.V20
         {
             // Get the AdGroupAdService.
             AdGroupAdServiceClient adGroupAdService =
-                client.GetService(Services.V20.AdGroupAdService);
+                client.GetService(Services.V21.AdGroupAdService);
 
             // Create an ad group ad.
             AdGroupAd adGroupAd = new AdGroupAd()
@@ -282,7 +285,7 @@ namespace Google.Ads.GoogleAds.Examples.V20
         {
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V20.AdGroupCriterionService);
+                client.GetService(Services.V21.AdGroupCriterionService);
 
             // Create the criterion.
             AdGroupCriterion adGroupCriterion = new AdGroupCriterion()

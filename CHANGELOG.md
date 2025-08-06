@@ -1,3 +1,11 @@
+24.0.0
+======
+- Added support for version 21.0 of the Google Ads API.
+- Removed support for version 18 of the Google Ads API.
+- Upgraded the System.Text.Json dependency to the latest version.
+- Updated examples that create campaigns to include setting the
+  `ContainsEuPoliticalAdvertising` field.
+
 23.0.0
 ======
 - Added support for version 20.0 of the Google Ads API.

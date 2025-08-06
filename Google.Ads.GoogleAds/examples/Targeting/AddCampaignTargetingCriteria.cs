@@ -15,16 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V20.Common;
-using Google.Ads.GoogleAds.V20.Errors;
-using Google.Ads.GoogleAds.V20.Resources;
-using Google.Ads.GoogleAds.V20.Services;
+using Google.Ads.GoogleAds.V21.Common;
+using Google.Ads.GoogleAds.V21.Errors;
+using Google.Ads.GoogleAds.V21.Resources;
+using Google.Ads.GoogleAds.V21.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V20.Enums.KeywordMatchTypeEnum.Types;
-using static Google.Ads.GoogleAds.V20.Enums.ProximityRadiusUnitsEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.KeywordMatchTypeEnum.Types;
+using static Google.Ads.GoogleAds.V21.Enums.ProximityRadiusUnitsEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V20
+namespace Google.Ads.GoogleAds.Examples.V21
 {
     /// <summary>
     /// This code example illustrates adding campaign targeting criteria.
@@ -102,7 +102,7 @@ namespace Google.Ads.GoogleAds.Examples.V20
         {
             // Get the CampaignCriterionService.
             CampaignCriterionServiceClient campaignCriterionService =
-                client.GetService(Services.V20.CampaignCriterionService);
+                client.GetService(Services.V21.CampaignCriterionService);
 
             // Set the Campaign Resource Name
             string campaignResourceName = ResourceNames.Campaign(customerId, campaignId);
