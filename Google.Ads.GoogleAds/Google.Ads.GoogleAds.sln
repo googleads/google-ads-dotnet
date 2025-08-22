@@ -23,10 +23,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Ads.GoogleAds.Extens
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Ads.GoogleAds.Extensions.Tests", "..\Google.Ads.GoogleAds.Extensions\tests\Google.Ads.GoogleAds.Extensions.Tests.csproj", "{570BA0FF-D06D-420F-9226-41D269D684E9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Ads.GoogleAds.Extensions.DependencyInjection", "..\Google.Ads.GoogleAds.Extensions.DependencyInjection\src\Google.Ads.GoogleAds.Extensions.DependencyInjection.csproj", "{2128D7AC-6B81-4C30-9509-715155C9B738}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Google.Ads.GoogleAds.Extensions.DependencyInjection.Tests", "..\Google.Ads.GoogleAds.Extensions.DependencyInjection\tests\Google.Ads.GoogleAds.Extensions.DependencyInjection.Tests\Google.Ads.GoogleAds.Extensions.DependencyInjection.Tests.csproj", "{DF09202F-2E3B-4F91-826C-E47BD8D0C541}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Google.Ads.Gax.TestUtilities", "..\Google.Ads.Gax\tests\TestUtilities\Google.Ads.Gax.TestUtilities.csproj", "{59C52D08-48BA-474A-AE77-FB1128455E91}"
 EndProject
 Global
