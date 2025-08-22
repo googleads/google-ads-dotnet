@@ -20,7 +20,7 @@
   </PropertyGroup>
   <!-- build properties -->
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.1;net472;net6.0;net8.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1;net472;net8.0</TargetFrameworks>
     <AssemblyName>Google.Ads.GoogleAds.Core</AssemblyName>
     <RootNamespace>Google.Ads.GoogleAds</RootNamespace>
     <SignAssembly>true</SignAssembly>
