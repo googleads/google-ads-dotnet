@@ -1,3 +1,7 @@
+24.0.1
+======
+- Removed explicit support for net6.0 as it's already covered by netstandard2.1
+
 24.0.0
 ======
 - Added support for version 21.0 of the Google Ads API.
