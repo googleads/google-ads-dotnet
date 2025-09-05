@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Title>Google Ads API Dotnet Client Library Extensions</Title>
     <PackageId>Google.Ads.GoogleAds.Extensions</PackageId>
-    <Version>2.0.4</Version>
+    <Version>2.0.5</Version>
     <Description>This library provides you with extensions for the Google Ads API client library. The Google Ads API is the modern programmatic interface to Google Ads. See https://developers.google.com/google-ads/api to learn more about Google Ads API.</Description>
     <PackageReleaseNotes>https://github.com/googleads/google-ads-dotnet/blob/master/ChangeLog</PackageReleaseNotes>
     <PackageTags>GoogleAds Google</PackageTags>
@@ -31,8 +31,8 @@
     <IncludeSource>true</IncludeSource>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <AssemblyVersion>2.0.4</AssemblyVersion>
-    <FileVersion>2.0.4</FileVersion>
+    <AssemblyVersion>2.0.5</AssemblyVersion>
+    <FileVersion>2.0.5</FileVersion>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
