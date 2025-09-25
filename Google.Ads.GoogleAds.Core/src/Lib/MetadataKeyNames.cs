@@ -78,12 +78,6 @@ namespace Google.Ads.GoogleAds.Lib
         internal const string ChangeEventUserEmail = "change_event.user_email";
 
         /// <summary>
-        /// The metadata key name for the Feed placeholder email address.
-        /// </summary>
-        internal const string FeedPlaceholderEmailAddress =
-            "feed.places_location_feed_data.email_address";
-
-        /// <summary>
         /// The metadata key name for the Local services lead contact details.
         /// </summary>
         internal const string LocalServicesLeadContactDetails =

@@ -43,7 +43,6 @@ namespace Google.Ads.GoogleAds.Logging
                 MetadataKeyNames.CustomerUserAccessInviterEmailAddress,
                 MetadataKeyNames.CustomerUserAccessEmailAddress,
                 MetadataKeyNames.ChangeEventUserEmail,
-                MetadataKeyNames.FeedPlaceholderEmailAddress,
                 MetadataKeyNames.CustomerUserAccessInvitationEmailAddress,
                 MetadataKeyNames.LocalServicesLeadContactDetails,
                 MetadataKeyNames.LocalServicesLeadConversationMessageDetailText,
