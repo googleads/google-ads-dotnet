@@ -184,6 +184,12 @@ namespace Google.Ads.Gax.Config
             new StringConfigSetting("LibraryIdentifierOverride", "");
 
         /// <summary>
+        /// A flag to determine whether to use application default credentials.
+        /// </summary>
+        private readonly ConfigSetting<bool> useApplicationDefaultCredentials =
+            new ConfigSetting<bool>("UseApplicationDefaultCredentials", false);
+
+        /// <summary>
         /// A map between the environment variable key names and configuration key names.
         /// </summary>
         protected ReadOnlyDictionary<string, string> ENV_VAR_TO_CONFIG_KEY_MAP;
@@ -304,6 +310,16 @@ namespace Google.Ads.Gax.Config
                 SetPropertyAndNotify(oAuth2Mode, value);
                 credential = null;
             }
+        }
+
+        /// <summary>
+        /// Gets or sets the flag that determines whether or not to use
+        /// application default credentials to authenticate.
+        /// </summary>
+        public bool UseApplicationDefaultCredentials
+        {
+            get => useApplicationDefaultCredentials.Value;
+            set => SetPropertyAndNotify(useApplicationDefaultCredentials, value);
         }
 
         /// <summary>
@@ -467,6 +483,8 @@ namespace Google.Ads.Gax.Config
             ReadSetting(settings, oAuth2RefreshToken);
             ReadSetting(settings, oAuth2Scope);
 
+            ReadSetting(settings, useApplicationDefaultCredentials);
+
             // Read and parse the OAuth2 JSON secrets file if applicable.
             ReadSetting(settings, oAuth2SecretsJsonPath);
 
@@ -573,6 +591,13 @@ namespace Google.Ads.Gax.Config
         /// <returns>The configuration settings.</returns>
         protected virtual ICredential CreateCredentials()
         {
+            // If using application default credentials we don't need to
+            // construct a credentials object.
+            if (UseApplicationDefaultCredentials)
+            {
+                return GoogleCredential.GetApplicationDefault();
+            }
+
             ICredential retval = null;
             string[] scopes = OAuth2Scope.Split(new char[] { ',' },
                 StringSplitOptions.RemoveEmptyEntries)
@@ -580,40 +605,40 @@ namespace Google.Ads.Gax.Config
                 .ToArray();
 
             switch (OAuth2Mode)
-            {
-                case OAuth2Flow.APPLICATION:
-                    retval = new UserCredential(
-                      new GoogleAuthorizationCodeFlow(
-                        new GoogleAuthorizationCodeFlow.Initializer
-                        {
-                            ClientSecrets = new ClientSecrets()
+                {
+                    case OAuth2Flow.APPLICATION:
+                        retval = new UserCredential(
+                          new GoogleAuthorizationCodeFlow(
+                            new GoogleAuthorizationCodeFlow.Initializer
                             {
-                                ClientId = OAuth2ClientId,
-                                ClientSecret = OAuth2ClientSecret,
-                            },
-                            Scopes = scopes,
-                            HttpClientFactory = new AdsHttpClientFactory(this)
-                        }),
-                      DEFAULT_USER_ID,
-                      new TokenResponse()
-                      {
-                          RefreshToken = OAuth2RefreshToken,
-                      });
-                    break;
+                                ClientSecrets = new ClientSecrets()
+                                {
+                                    ClientId = OAuth2ClientId,
+                                    ClientSecret = OAuth2ClientSecret,
+                                },
+                                Scopes = scopes,
+                                HttpClientFactory = new AdsHttpClientFactory(this)
+                            }),
+                          DEFAULT_USER_ID,
+                          new TokenResponse()
+                          {
+                              RefreshToken = OAuth2RefreshToken,
+                          });
+                        break;
 
-                case OAuth2Flow.SERVICE_ACCOUNT:
-                    retval = new ServiceAccountCredential(
-                      new ServiceAccountCredential.Initializer(OAuth2ServiceAccountEmail)
-                      {
-                          User = OAuth2PrnEmail,
-                          Scopes = new string[] { OAuth2Scope },
-                          HttpClientFactory = new AdsHttpClientFactory(this)
-                      }.FromPrivateKey(OAuth2PrivateKey));
-                    break;
+                    case OAuth2Flow.SERVICE_ACCOUNT:
+                        retval = new ServiceAccountCredential(
+                          new ServiceAccountCredential.Initializer(OAuth2ServiceAccountEmail)
+                          {
+                              User = OAuth2PrnEmail,
+                              Scopes = new string[] { OAuth2Scope },
+                              HttpClientFactory = new AdsHttpClientFactory(this)
+                          }.FromPrivateKey(OAuth2PrivateKey));
+                        break;
 
-                default:
-                    throw new ApplicationException("Unrecognized json file format.");
-            }
+                    default:
+                        throw new ApplicationException("Unrecognized json file format.");
+                }
             return retval;
         }
 

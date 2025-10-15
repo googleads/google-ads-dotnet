@@ -15,13 +15,13 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V21.Resources;
-using Google.Ads.GoogleAds.V21.Services;
+using Google.Ads.GoogleAds.V22.Resources;
+using Google.Ads.GoogleAds.V22.Services;
 using Google.Api.Gax;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V21
+namespace Google.Ads.GoogleAds.Examples.V22
 {
     /// <summary>
     /// This example gets the account hierarchy of the specified manager account. If you don't
@@ -97,10 +97,10 @@ namespace Google.Ads.GoogleAds.Examples.V21
             }
 
             GoogleAdsServiceClient googleAdsServiceClient =
-                googleAdsClient.GetService(Services.V21.GoogleAdsService);
+                googleAdsClient.GetService(Services.V22.GoogleAdsService);
 
             CustomerServiceClient customerServiceClient =
-                googleAdsClient.GetService(Services.V21.CustomerService);
+                googleAdsClient.GetService(Services.V22.CustomerService);
 
             // List of Customer IDs to handle.
             List<long> seedCustomerIds = new List<long>();

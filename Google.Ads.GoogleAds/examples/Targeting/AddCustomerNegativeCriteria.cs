@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V21.Common;
-using Google.Ads.GoogleAds.V21.Errors;
-using Google.Ads.GoogleAds.V21.Resources;
-using Google.Ads.GoogleAds.V21.Services;
+using Google.Ads.GoogleAds.V22.Common;
+using Google.Ads.GoogleAds.V22.Errors;
+using Google.Ads.GoogleAds.V22.Resources;
+using Google.Ads.GoogleAds.V22.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V21.Enums.ContentLabelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.ContentLabelTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V21
+namespace Google.Ads.GoogleAds.Examples.V22
 {
     /// <summary>
     /// This code example adds various types of negative criteria as exclusions at the customer
@@ -73,7 +73,7 @@ namespace Google.Ads.GoogleAds.Examples.V21
         {
             // Get the CustomerNegativeCriterionServiceClient .
             CustomerNegativeCriterionServiceClient customerNegativeCriterionService =
-                client.GetService(Services.V21.CustomerNegativeCriterionService);
+                client.GetService(Services.V22.CustomerNegativeCriterionService);
 
             // Creates a negative customer criterion excluding the content label type of 'TRAGEDY'.
             CustomerNegativeCriterion tragedyCriterion = new CustomerNegativeCriterion()

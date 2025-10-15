@@ -15,26 +15,26 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V21.Common;
-using Google.Ads.GoogleAds.V21.Errors;
-using Google.Ads.GoogleAds.V21.Resources;
-using Google.Ads.GoogleAds.V21.Services;
+using Google.Ads.GoogleAds.V22.Common;
+using Google.Ads.GoogleAds.V22.Errors;
+using Google.Ads.GoogleAds.V22.Resources;
+using Google.Ads.GoogleAds.V22.Services;
 using Google.Api.Gax;
 using Google.LongRunning;
 using Google.Protobuf.WellKnownTypes;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V21.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.EuPoliticalAdvertisingStatusEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.KeywordMatchTypeEnum.Types;
-using static Google.Ads.GoogleAds.V21.Resources.BatchJob.Types;
+using static Google.Ads.GoogleAds.V22.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.EuPoliticalAdvertisingStatusEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.KeywordMatchTypeEnum.Types;
+using static Google.Ads.GoogleAds.V22.Resources.BatchJob.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V21
+namespace Google.Ads.GoogleAds.Examples.V22
 {
     /// <summary>
     /// This code example adds complete campaigns including campaign budgets, campaigns, ad groups
@@ -115,7 +115,7 @@ namespace Google.Ads.GoogleAds.Examples.V21
         {
             // Gets the BatchJobService.
             BatchJobServiceClient batchJobService =
-                client.GetService(Services.V21.BatchJobService);
+                client.GetService(Services.V22.BatchJobService);
 
             try
             {

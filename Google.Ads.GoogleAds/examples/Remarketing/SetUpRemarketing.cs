@@ -16,19 +16,19 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V21.Common;
-using Google.Ads.GoogleAds.V21.Errors;
-using Google.Ads.GoogleAds.V21.Resources;
-using Google.Ads.GoogleAds.V21.Services;
+using Google.Ads.GoogleAds.V22.Common;
+using Google.Ads.GoogleAds.V22.Errors;
+using Google.Ads.GoogleAds.V22.Resources;
+using Google.Ads.GoogleAds.V22.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V21.Enums.UserListMembershipStatusEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.UserListPrepopulationStatusEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.UserListStringRuleItemOperatorEnum.Types;
-using static Google.Ads.GoogleAds.V21.Errors.CriterionErrorEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.UserListMembershipStatusEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.UserListPrepopulationStatusEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.UserListStringRuleItemOperatorEnum.Types;
+using static Google.Ads.GoogleAds.V22.Errors.CriterionErrorEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V21
+namespace Google.Ads.GoogleAds.Examples.V22
 {
     /// <summary>
     /// Demonstrates various operations involved in remarketing, including:
@@ -176,7 +176,7 @@ namespace Google.Ads.GoogleAds.Examples.V21
         {
             // Get the UserListService client.
             UserListServiceClient userListServiceClient =
-                client.GetService(Services.V21.UserListService);
+                client.GetService(Services.V22.UserListService);
 
             // Create a rule targeting any user that visited a url containing 'example.com'.
             UserListRuleItemInfo rule = new UserListRuleItemInfo
@@ -250,7 +250,7 @@ namespace Google.Ads.GoogleAds.Examples.V21
         {
             // Get the AdGroupCriterionService client.
             AdGroupCriterionServiceClient adGroupCriterionServiceClient = client.GetService
-                (Services.V21.AdGroupCriterionService);
+                (Services.V22.AdGroupCriterionService);
 
             // Create the ad group criterion targeting members of the user list.
             AdGroupCriterion adGroupCriterion = new AdGroupCriterion
@@ -297,7 +297,7 @@ namespace Google.Ads.GoogleAds.Examples.V21
         {
             // Get the AdGroupCriterionService client.
             AdGroupCriterionServiceClient adGroupCriterionServiceClient =
-                client.GetService(Services.V21.AdGroupCriterionService);
+                client.GetService(Services.V22.AdGroupCriterionService);
 
             // Create the ad group criterion with a bid modifier. You may alternatively set the bid
             // for the ad group criterion directly.
@@ -335,7 +335,7 @@ namespace Google.Ads.GoogleAds.Examples.V21
         {
             // Get the AdGroupCriterionService client.
             AdGroupCriterionServiceClient adGroupCriterionServiceClient =
-                client.GetService(Services.V21.AdGroupCriterionService);
+                client.GetService(Services.V22.AdGroupCriterionService);
 
             // Retrieve all of the ad group criteria under a campaign.
             List<string> adGroupCriteria =
@@ -373,7 +373,7 @@ namespace Google.Ads.GoogleAds.Examples.V21
         {
             // Get the GoogleAdsService client.
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V21.GoogleAdsService);
+                client.GetService(Services.V22.GoogleAdsService);
 
             List<string> userListCriteriaResourceNames = new List<string>();
 
@@ -419,7 +419,7 @@ namespace Google.Ads.GoogleAds.Examples.V21
         {
             // Get the CampaignCriterionService client.
             CampaignCriterionServiceClient campaignCriterionServiceClient =
-                client.GetService(Services.V21.CampaignCriterionService);
+                client.GetService(Services.V22.CampaignCriterionService);
 
             // Create the campaign criterion.
             CampaignCriterion campaignCriterion = new CampaignCriterion
@@ -467,7 +467,7 @@ namespace Google.Ads.GoogleAds.Examples.V21
         {
             // Get the CampaignCriterionService client.
             CampaignCriterionServiceClient campaignCriterionServiceClient =
-                client.GetService(Services.V21.CampaignCriterionService);
+                client.GetService(Services.V22.CampaignCriterionService);
 
             // Create the campaign criterion to update.
             CampaignCriterion campaignCriterion = new CampaignCriterion

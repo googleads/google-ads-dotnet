@@ -81,6 +81,10 @@ namespace Google.Ads.GoogleAds.Extensions.Config
         /// </summary>
         internal const string ENDPOINT = PREFIX + "ENDPOINT";
 
-
+        /// <summary>
+        /// The environment variable for the flag that determines whether or not
+        /// to use application default credentials to authenticate.
+        /// </summary>
+        internal const string USE_APPLICATION_DEFAULT_CREDENTIALS = "USE_APPLICATION_DEFAULT_CREDENTIALS";
     }
 }

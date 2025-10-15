@@ -15,14 +15,14 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V21.Errors;
-using Google.Ads.GoogleAds.V21.Resources;
-using Google.Ads.GoogleAds.V21.Services;
+using Google.Ads.GoogleAds.V22.Errors;
+using Google.Ads.GoogleAds.V22.Resources;
+using Google.Ads.GoogleAds.V22.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V21.Enums.AccessRoleEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.AccessRoleEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V21
+namespace Google.Ads.GoogleAds.Examples.V22
 {
     /// <summary>
     /// This code example sends an invitation email to a user to manage a customer
@@ -92,7 +92,7 @@ namespace Google.Ads.GoogleAds.Examples.V21
         {
             // Get the CustomerUserAccessInvitationService.
             CustomerUserAccessInvitationServiceClient service = client.GetService(
-                Services.V21.CustomerUserAccessInvitationService);
+                Services.V22.CustomerUserAccessInvitationService);
 
             // [START invite_user_with_access_role]
             MutateCustomerUserAccessInvitationRequest invitationRequest =

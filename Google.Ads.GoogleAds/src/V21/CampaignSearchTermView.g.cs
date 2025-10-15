@@ -53,7 +53,8 @@ namespace Google.Ads.GoogleAds.V21.Resources {
   }
   #region Messages
   /// <summary>
-  /// A search term view with metrics aggregated at the campaign level.
+  /// This report provides granular performance data, including cost metrics, for
+  /// each individual search term that triggered your ads.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CampaignSearchTermView : pb::IMessage<CampaignSearchTermView>

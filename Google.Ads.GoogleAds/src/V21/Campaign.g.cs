@@ -5793,7 +5793,7 @@ namespace Google.Ads.GoogleAds.V21.Resources {
         /// The list of Google Ads accounts IDs of advertising partners cooperating
         /// within the campaign.
         /// This feature is currently available only for accounts having an
-        /// advertising partner link.
+        /// advertising partner link. Once set, the field is immutable.
         /// This feature is currently supported only for Performance Max, Shopping,
         /// Search and Demand Gen campaign types.
         /// </summary>
@@ -11648,7 +11648,7 @@ namespace Google.Ads.GoogleAds.V21.Resources {
 
         private bool enableAiMax_;
         /// <summary>
-        /// Controls whether or not AI Max features are serve for this campaign.
+        /// Controls whether or not AI Max features are served for this campaign.
         ///
         /// Individual AI Max features are enabled or disabled by their respective
         /// settings. But if enable_ai_max is set to false or cleared, then no AI

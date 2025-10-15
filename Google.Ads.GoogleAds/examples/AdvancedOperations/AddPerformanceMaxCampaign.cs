@@ -17,21 +17,23 @@ using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V21.Common;
-using Google.Ads.GoogleAds.V21.Errors;
-using Google.Ads.GoogleAds.V21.Resources;
-using Google.Ads.GoogleAds.V21.Services;
+using Google.Ads.GoogleAds.V22.Common;
+using Google.Ads.GoogleAds.V22.Errors;
+using Google.Ads.GoogleAds.V22.Resources;
+using Google.Ads.GoogleAds.V22.Services;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
 using System.Threading;
-using static Google.Ads.GoogleAds.V21.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.AssetFieldTypeEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.AssetGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.EuPoliticalAdvertisingStatusEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.AssetAutomationStatusEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.AssetAutomationTypeEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.AssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.AssetGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.EuPoliticalAdvertisingStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V21
+namespace Google.Ads.GoogleAds.Examples.V22
 {
     /// <summary>
     /// This example shows how to create a Performance Max campaign.
@@ -150,7 +152,7 @@ namespace Google.Ads.GoogleAds.Examples.V21
             {
                 // [START add_performance_max_campaign_1]
                 GoogleAdsServiceClient googleAdsServiceClient =
-                    client.GetService(Services.V21.GoogleAdsService);
+                    client.GetService(Services.V22.GoogleAdsService);
 
                 // Performance Max campaigns require that repeated assets such as headlines and
                 // descriptions be created before the campaign.
@@ -313,67 +315,90 @@ namespace Google.Ads.GoogleAds.Examples.V21
             string campaignBudgetResourceName,
             bool brandGuidelinesEnabled)
         {
+            Campaign campaign = new Campaign()
+            {
+                Name = "Performance Max campaign #" + ExampleUtilities.GetRandomString(),
+
+                // Set the campaign status as PAUSED. The campaign is the only entity in
+                // the mutate request that should have its status set.
+                Status = CampaignStatus.Paused,
+
+                // All Performance Max campaigns have an AdvertisingChannelType of
+                // PerformanceMax. The AdvertisingChannelSubType should not be set.
+                AdvertisingChannelType = AdvertisingChannelType.PerformanceMax,
+
+                // Bidding strategy must be set directly on the campaign. Setting a
+                // portfolio bidding strategy by resource name is not supported. Max
+                // Conversion and Maximize Conversion Value are the only strategies
+                // supported for Performance Max campaigns. BiddingStrategyType is
+                // read-only and cannot be set by the API. An optional ROAS (Return on
+                // Advertising Spend) can be set to enable the MaximizeConversionValue
+                // bidding strategy. The ROAS value must be specified as a ratio in the API.
+                // It is calculated by dividing "total value" by "total spend".
+                //
+                // For more information on Maximize Conversion Value, see the support
+                // article:
+                // http://support.google.com/google-ads/answer/7684216.
+                //
+                // A target_roas of 3.5 corresponds to a 350% return on ad spend.
+                MaximizeConversionValue = new MaximizeConversionValue()
+                {
+                    TargetRoas = 3.5
+                },
+
+                // Use the temporary resource name created earlier
+                ResourceName = campaignResourceName,
+
+                // Set the budget using the given budget resource name.
+                CampaignBudget = campaignBudgetResourceName,
+
+                // Set if the campaign is enabled for brand guidelines. For more information
+                // on brand guidelines, see https://support.google.com/google-ads/answer/14934472.
+                BrandGuidelinesEnabled = brandGuidelinesEnabled,
+
+                // Declare whether or not this campaign contains political ads targeting the EU.
+                ContainsEuPoliticalAdvertising = EuPoliticalAdvertisingStatus.DoesNotContainEuPoliticalAdvertising,
+
+                // Optional fields
+                StartDate = DateTime.Now.AddDays(1).ToString("yyyyMMdd"),
+                EndDate = DateTime.Now.AddDays(365).ToString("yyyyMMdd")
+            };
+
+            // [START add_pmax_asset_automation_settings]
+            campaign.AssetAutomationSettings.AddRange(new[]{
+                new Campaign.Types.AssetAutomationSetting
+                {
+                    AssetAutomationType = AssetAutomationType.GenerateImageExtraction,
+                    AssetAutomationStatus = AssetAutomationStatus.OptedIn
+                },
+                new Campaign.Types.AssetAutomationSetting
+                {
+                    AssetAutomationType = AssetAutomationType.FinalUrlExpansionTextAssetAutomation,
+                    AssetAutomationStatus = AssetAutomationStatus.OptedIn
+                },
+                new Campaign.Types.AssetAutomationSetting
+                {
+                    AssetAutomationType = AssetAutomationType.TextAssetAutomation,
+                    AssetAutomationStatus = AssetAutomationStatus.OptedIn
+                },
+                new Campaign.Types.AssetAutomationSetting
+                {
+                    AssetAutomationType = AssetAutomationType.GenerateEnhancedYoutubeVideos,
+                    AssetAutomationStatus = AssetAutomationStatus.OptedIn
+                },
+                new Campaign.Types.AssetAutomationSetting
+                {
+                    AssetAutomationType = AssetAutomationType.GenerateImageEnhancement,
+                    AssetAutomationStatus = AssetAutomationStatus.OptedIn
+                },
+            });
+            // [END add_pmax_asset_automation_settings]
+
             MutateOperation operation = new MutateOperation()
             {
                 CampaignOperation = new CampaignOperation()
                 {
-                    Create = new Campaign()
-                    {
-                        Name = "Performance Max campaign #" + ExampleUtilities.GetRandomString(),
-
-                        // Set the campaign status as PAUSED. The campaign is the only entity in
-                        // the mutate request that should have its status set.
-                        Status = CampaignStatus.Paused,
-
-                        // All Performance Max campaigns have an AdvertisingChannelType of
-                        // PerformanceMax. The AdvertisingChannelSubType should not be set.
-                        AdvertisingChannelType = AdvertisingChannelType.PerformanceMax,
-
-                        // Bidding strategy must be set directly on the campaign. Setting a
-                        // portfolio bidding strategy by resource name is not supported. Max
-                        // Conversion and Maximize Conversion Value are the only strategies
-                        // supported for Performance Max campaigns. BiddingStrategyType is
-                        // read-only and cannot be set by the API. An optional ROAS (Return on
-                        // Advertising Spend) can be set to enable the MaximizeConversionValue
-                        // bidding strategy. The ROAS value must be specified as a ratio in the API.
-                        // It is calculated by dividing "total value" by "total spend".
-                        //
-                        // For more information on Maximize Conversion Value, see the support
-                        // article:
-                        // http://support.google.com/google-ads/answer/7684216.
-                        //
-                        // A target_roas of 3.5 corresponds to a 350% return on ad spend.
-                        MaximizeConversionValue = new MaximizeConversionValue()
-                        {
-                            TargetRoas = 3.5
-                        },
-
-                        // Set the Final URL expansion opt out. This flag is specific to
-                        // Performance Max campaigns. If opted out (True), only the final URLs in
-                        // the asset group or URLs specified in the advertiser's Google Merchant
-                        // Center or business data feeds are targeted.
-                        // If opted in (False), the entire domain will be targeted. For best
-                        // results, set this value to false to opt in and allow URL expansions. You
-                        // can optionally add exclusions to limit traffic to parts of your website.
-                        UrlExpansionOptOut = false,
-
-                        // Use the temporary resource name created earlier
-                        ResourceName = campaignResourceName,
-
-                        // Set the budget using the given budget resource name.
-                        CampaignBudget = campaignBudgetResourceName,
-
-                        // Set if the campaign is enabled for brand guidelines. For more information
-                        // on brand guidelines, see https://support.google.com/google-ads/answer/14934472.
-                        BrandGuidelinesEnabled = brandGuidelinesEnabled,
-
-                        // Declare whether or not this campaign contains political ads targeting the EU.
-                        ContainsEuPoliticalAdvertising = EuPoliticalAdvertisingStatus.DoesNotContainEuPoliticalAdvertising,
-
-                        // Optional fields
-                        StartDate = DateTime.Now.AddDays(1).ToString("yyyyMMdd"),
-                        EndDate = DateTime.Now.AddDays(365).ToString("yyyyMMdd")
-                    }
+                    Create = campaign
                 }
             };
 
@@ -484,7 +509,7 @@ namespace Google.Ads.GoogleAds.Examples.V21
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V21.GoogleAdsService);
+                client.GetService(Services.V22.GoogleAdsService);
 
             MutateGoogleAdsRequest request = new MutateGoogleAdsRequest()
             {
@@ -820,6 +845,7 @@ namespace Google.Ads.GoogleAds.Examples.V21
         /// <param name="config">The Google Ads Config.</param>
         /// <param name="brandGuidelinesEnabled">Whether or not to enable brand guidelines.</param>
         /// <returns>A list of MutateOperations that create a new linked image asset.</returns>
+        // [START create_and_link_brand_assets]
         private List<MutateOperation> CreateAndLinkBrandAssets(
             string assetGroupResourceName,
             string campaignResourceName,
@@ -947,6 +973,7 @@ namespace Google.Ads.GoogleAds.Examples.V21
 
             return operations;
         }
+        // [END create_and_link_brand_assets]
 
         /// <summary>
         /// Creates a list of MutateOperations that may create AssetGroupSignals

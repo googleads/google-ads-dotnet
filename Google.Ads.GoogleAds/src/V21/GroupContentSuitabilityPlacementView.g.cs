@@ -60,7 +60,6 @@ namespace Google.Ads.GoogleAds.V21.Resources {
   #region Messages
   /// <summary>
   /// A group content suitability placement view.
-  /// {-- next tag to use: 6 --}
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GroupContentSuitabilityPlacementView : pb::IMessage<GroupContentSuitabilityPlacementView>

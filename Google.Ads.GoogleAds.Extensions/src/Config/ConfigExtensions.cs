@@ -14,7 +14,6 @@
 
 using Google.Ads.Gax.Config;
 using Google.Ads.GoogleAds.Config;
-
 using Microsoft.Extensions.Configuration;
 
 using System;
@@ -61,6 +60,10 @@ namespace Google.Ads.GoogleAds.Extensions.Config
             {
                 EnvironmentVariableNames.LINKED_CUSTOMER_ID,
                 ConfigSettingNames.LINKED_CUSTOMER_ID
+            },
+            {
+                EnvironmentVariableNames.USE_APPLICATION_DEFAULT_CREDENTIALS,
+                ConfigSettingNames.USE_APPLICATION_DEFAULT_CREDENTIALS
             }
         });
 
