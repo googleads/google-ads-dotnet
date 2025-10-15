@@ -685,7 +685,7 @@ namespace Google.Ads.GoogleAds.V21.Errors {
             "TGltaXRUeXBlRW51bS5SZXNvdXJjZUxpbWl0VHlwZRIWCg5leGlzdGluZ19j",
             "b3VudBgEIAEoBSKBAgofQnVkZ2V0UGVyRGF5TWluaW11bUVycm9yRGV0YWls",
             "cxIVCg1jdXJyZW5jeV9jb2RlGAEgASgJEiUKHWJ1ZGdldF9wZXJfZGF5X21p",
-            "bmltdW1fbWljcm9zGAIgASgDEiQKHG1pbmltdW1fYnVnZGV0X2Ftb3VudF9t",
+            "bmltdW1fbWljcm9zGAIgASgDEiQKHG1pbmltdW1fYnVkZ2V0X2Ftb3VudF9t",
             "aWNyb3MYAyABKAMSKgoibWluaW11bV9idWRnZXRfdG90YWxfYW1vdW50X21p",
             "Y3JvcxgEIAEoAxIjChtmYWlsZWRfYnVkZ2V0X2Ftb3VudF9taWNyb3MYBSAB",
             "KAMSKQohZmFpbGVkX2J1ZGdldF90b3RhbF9hbW91bnRfbWljcm9zGAYgASgD",
@@ -707,7 +707,7 @@ namespace Google.Ads.GoogleAds.V21.Errors {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V21.Errors.PolicyFindingDetails), global::Google.Ads.GoogleAds.V21.Errors.PolicyFindingDetails.Parser, new[]{ "PolicyTopicEntries" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V21.Errors.QuotaErrorDetails), global::Google.Ads.GoogleAds.V21.Errors.QuotaErrorDetails.Parser, new[]{ "RateScope", "RateName", "RetryDelay" }, null, new[]{ typeof(global::Google.Ads.GoogleAds.V21.Errors.QuotaErrorDetails.Types.QuotaRateScope) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V21.Errors.ResourceCountDetails), global::Google.Ads.GoogleAds.V21.Errors.ResourceCountDetails.Parser, new[]{ "EnclosingId", "EnclosingResource", "Limit", "LimitType", "ExistingCount" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V21.Errors.BudgetPerDayMinimumErrorDetails), global::Google.Ads.GoogleAds.V21.Errors.BudgetPerDayMinimumErrorDetails.Parser, new[]{ "CurrencyCode", "BudgetPerDayMinimumMicros", "MinimumBugdetAmountMicros", "MinimumBudgetTotalAmountMicros", "FailedBudgetAmountMicros", "FailedBudgetTotalAmountMicros" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V21.Errors.BudgetPerDayMinimumErrorDetails), global::Google.Ads.GoogleAds.V21.Errors.BudgetPerDayMinimumErrorDetails.Parser, new[]{ "CurrencyCode", "BudgetPerDayMinimumMicros", "MinimumBudgetAmountMicros", "MinimumBudgetTotalAmountMicros", "FailedBudgetAmountMicros", "FailedBudgetTotalAmountMicros" }, null, null, null, null)
           }));
     }
     #endregion
@@ -13076,7 +13076,7 @@ namespace Google.Ads.GoogleAds.V21.Errors {
     public BudgetPerDayMinimumErrorDetails(BudgetPerDayMinimumErrorDetails other) : this() {
       currencyCode_ = other.currencyCode_;
       budgetPerDayMinimumMicros_ = other.budgetPerDayMinimumMicros_;
-      minimumBugdetAmountMicros_ = other.minimumBugdetAmountMicros_;
+      minimumBudgetAmountMicros_ = other.minimumBudgetAmountMicros_;
       minimumBudgetTotalAmountMicros_ = other.minimumBudgetTotalAmountMicros_;
       failedBudgetAmountMicros_ = other.failedBudgetAmountMicros_;
       failedBudgetTotalAmountMicros_ = other.failedBudgetTotalAmountMicros_;
@@ -13121,9 +13121,9 @@ namespace Google.Ads.GoogleAds.V21.Errors {
       }
     }
 
-    /// <summary>Field number for the "minimum_bugdet_amount_micros" field.</summary>
-    public const int MinimumBugdetAmountMicrosFieldNumber = 3;
-    private long minimumBugdetAmountMicros_;
+    /// <summary>Field number for the "minimum_budget_amount_micros" field.</summary>
+    public const int MinimumBudgetAmountMicrosFieldNumber = 3;
+    private long minimumBudgetAmountMicros_;
     /// <summary>
     /// The minimum value for the budget's amount field required by the campaign,
     /// in micros of the advertiser currency. Only set if this error is caused by
@@ -13131,10 +13131,10 @@ namespace Google.Ads.GoogleAds.V21.Errors {
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public long MinimumBugdetAmountMicros {
-      get { return minimumBugdetAmountMicros_; }
+    public long MinimumBudgetAmountMicros {
+      get { return minimumBudgetAmountMicros_; }
       set {
-        minimumBugdetAmountMicros_ = value;
+        minimumBudgetAmountMicros_ = value;
       }
     }
 
@@ -13207,7 +13207,7 @@ namespace Google.Ads.GoogleAds.V21.Errors {
       }
       if (CurrencyCode != other.CurrencyCode) return false;
       if (BudgetPerDayMinimumMicros != other.BudgetPerDayMinimumMicros) return false;
-      if (MinimumBugdetAmountMicros != other.MinimumBugdetAmountMicros) return false;
+      if (MinimumBudgetAmountMicros != other.MinimumBudgetAmountMicros) return false;
       if (MinimumBudgetTotalAmountMicros != other.MinimumBudgetTotalAmountMicros) return false;
       if (FailedBudgetAmountMicros != other.FailedBudgetAmountMicros) return false;
       if (FailedBudgetTotalAmountMicros != other.FailedBudgetTotalAmountMicros) return false;
@@ -13220,7 +13220,7 @@ namespace Google.Ads.GoogleAds.V21.Errors {
       int hash = 1;
       if (CurrencyCode.Length != 0) hash ^= CurrencyCode.GetHashCode();
       if (BudgetPerDayMinimumMicros != 0L) hash ^= BudgetPerDayMinimumMicros.GetHashCode();
-      if (MinimumBugdetAmountMicros != 0L) hash ^= MinimumBugdetAmountMicros.GetHashCode();
+      if (MinimumBudgetAmountMicros != 0L) hash ^= MinimumBudgetAmountMicros.GetHashCode();
       if (MinimumBudgetTotalAmountMicros != 0L) hash ^= MinimumBudgetTotalAmountMicros.GetHashCode();
       if (FailedBudgetAmountMicros != 0L) hash ^= FailedBudgetAmountMicros.GetHashCode();
       if (FailedBudgetTotalAmountMicros != 0L) hash ^= FailedBudgetTotalAmountMicros.GetHashCode();
@@ -13250,9 +13250,9 @@ namespace Google.Ads.GoogleAds.V21.Errors {
         output.WriteRawTag(16);
         output.WriteInt64(BudgetPerDayMinimumMicros);
       }
-      if (MinimumBugdetAmountMicros != 0L) {
+      if (MinimumBudgetAmountMicros != 0L) {
         output.WriteRawTag(24);
-        output.WriteInt64(MinimumBugdetAmountMicros);
+        output.WriteInt64(MinimumBudgetAmountMicros);
       }
       if (MinimumBudgetTotalAmountMicros != 0L) {
         output.WriteRawTag(32);
@@ -13284,9 +13284,9 @@ namespace Google.Ads.GoogleAds.V21.Errors {
         output.WriteRawTag(16);
         output.WriteInt64(BudgetPerDayMinimumMicros);
       }
-      if (MinimumBugdetAmountMicros != 0L) {
+      if (MinimumBudgetAmountMicros != 0L) {
         output.WriteRawTag(24);
-        output.WriteInt64(MinimumBugdetAmountMicros);
+        output.WriteInt64(MinimumBudgetAmountMicros);
       }
       if (MinimumBudgetTotalAmountMicros != 0L) {
         output.WriteRawTag(32);
@@ -13316,8 +13316,8 @@ namespace Google.Ads.GoogleAds.V21.Errors {
       if (BudgetPerDayMinimumMicros != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(BudgetPerDayMinimumMicros);
       }
-      if (MinimumBugdetAmountMicros != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(MinimumBugdetAmountMicros);
+      if (MinimumBudgetAmountMicros != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(MinimumBudgetAmountMicros);
       }
       if (MinimumBudgetTotalAmountMicros != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(MinimumBudgetTotalAmountMicros);
@@ -13346,8 +13346,8 @@ namespace Google.Ads.GoogleAds.V21.Errors {
       if (other.BudgetPerDayMinimumMicros != 0L) {
         BudgetPerDayMinimumMicros = other.BudgetPerDayMinimumMicros;
       }
-      if (other.MinimumBugdetAmountMicros != 0L) {
-        MinimumBugdetAmountMicros = other.MinimumBugdetAmountMicros;
+      if (other.MinimumBudgetAmountMicros != 0L) {
+        MinimumBudgetAmountMicros = other.MinimumBudgetAmountMicros;
       }
       if (other.MinimumBudgetTotalAmountMicros != 0L) {
         MinimumBudgetTotalAmountMicros = other.MinimumBudgetTotalAmountMicros;
@@ -13382,7 +13382,7 @@ namespace Google.Ads.GoogleAds.V21.Errors {
             break;
           }
           case 24: {
-            MinimumBugdetAmountMicros = input.ReadInt64();
+            MinimumBudgetAmountMicros = input.ReadInt64();
             break;
           }
           case 32: {
@@ -13421,7 +13421,7 @@ namespace Google.Ads.GoogleAds.V21.Errors {
             break;
           }
           case 24: {
-            MinimumBugdetAmountMicros = input.ReadInt64();
+            MinimumBudgetAmountMicros = input.ReadInt64();
             break;
           }
           case 32: {

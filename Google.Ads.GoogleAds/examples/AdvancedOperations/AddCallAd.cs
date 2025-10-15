@@ -15,16 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V21.Common;
-using Google.Ads.GoogleAds.V21.Errors;
-using Google.Ads.GoogleAds.V21.Resources;
-using Google.Ads.GoogleAds.V21.Services;
+using Google.Ads.GoogleAds.V22.Common;
+using Google.Ads.GoogleAds.V22.Errors;
+using Google.Ads.GoogleAds.V22.Resources;
+using Google.Ads.GoogleAds.V22.Services;
 using System.Linq;
 using System;
-using static Google.Ads.GoogleAds.V21.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.CallConversionReportingStateEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.CallConversionReportingStateEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V21
+namespace Google.Ads.GoogleAds.Examples.V22
 {
     /// <summary>
     /// This example adds a call ad to a given ad group. More information about call ads can be
@@ -180,7 +180,7 @@ namespace Google.Ads.GoogleAds.Examples.V21
 
                 // Issues a mutate request to add the ad group ad.
                 AdGroupAdServiceClient adGroupAdServiceClient =
-                    client.GetService(Services.V21.AdGroupAdService);
+                    client.GetService(Services.V22.AdGroupAdService);
 
                 MutateAdGroupAdsResponse adGroupAdResponse =
                     adGroupAdServiceClient.MutateAdGroupAds(

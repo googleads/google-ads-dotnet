@@ -2578,7 +2578,7 @@ namespace Google.Ads.GoogleAds.V21.Services {
     /// <summary>
     /// The lifetime engagement rate of this channel. The value is computed as the
     /// total number of likes, shares, and comments across all videos divided by
-    /// the total number of videos.
+    /// the total number of video views.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

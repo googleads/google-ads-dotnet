@@ -17,28 +17,30 @@ using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V21.Common;
-using Google.Ads.GoogleAds.V21.Errors;
-using Google.Ads.GoogleAds.V21.Resources;
-using Google.Ads.GoogleAds.V21.Services;
+using Google.Ads.GoogleAds.V22.Common;
+using Google.Ads.GoogleAds.V22.Errors;
+using Google.Ads.GoogleAds.V22.Resources;
+using Google.Ads.GoogleAds.V22.Services;
 using Google.Api.Gax;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
 using System.Threading;
-using static Google.Ads.GoogleAds.V21.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.AssetFieldTypeEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.AssetGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.ConversionActionCategoryEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.ConversionOriginEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.EuPoliticalAdvertisingStatusEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.ListingGroupFilterListingSourceEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.ListingGroupFilterTypeEnum.Types;
-using static Google.Ads.GoogleAds.V21.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V22.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.AssetAutomationStatusEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.AssetAutomationTypeEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.AssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.AssetGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.ConversionActionCategoryEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.ConversionOriginEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.EuPoliticalAdvertisingStatusEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.ListingGroupFilterListingSourceEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.ListingGroupFilterTypeEnum.Types;
+using static Google.Ads.GoogleAds.V22.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V21
+namespace Google.Ads.GoogleAds.Examples.V22
 {
     /// <summary>
     /// This example shows how to create a Performance Max retail campaign.
@@ -179,7 +181,7 @@ namespace Google.Ads.GoogleAds.Examples.V21
             {
                 // [START add_performance_max_retail_campaign_1]
                 GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V21.GoogleAdsService);
+                client.GetService(Services.V22.GoogleAdsService);
 
                 // This campaign will override the customer conversion goals.
                 // Retrieve the current list of customer conversion goals.
@@ -364,81 +366,101 @@ namespace Google.Ads.GoogleAds.Examples.V21
             long merchantCenterAccountId,
             bool brandGuidelinesEnabled)
         {
+
+            Campaign campaign = new Campaign()
+            {
+                Name = "Performance Max campaign #" + ExampleUtilities.GetRandomString(),
+
+                // Set the campaign status as PAUSED. The campaign is the only entity in
+                // the mutate request that should have its status set.
+                Status = CampaignStatus.Paused,
+
+                // All Performance Max campaigns have an advertising_channel_type of
+                // PERFORMANCE_MAX. The advertising_channel_sub_type should not be set.
+                AdvertisingChannelType = AdvertisingChannelType.PerformanceMax,
+
+                // Bidding strategy must be set directly on the campaign. Setting a
+                // portfolio bidding strategy by resource name is not supported. Max
+                // Conversion and Maximize Conversion Value are the only strategies
+                // supported for Performance Max campaigns. BiddingStrategyTYpe is
+                // read-only and cannot be set by the API. An optional ROAS (Return on
+                // Advertising Spend) can be set to enable the MaximizeConversionValue
+                // bidding strategy. The ROAS value must be specified as a ratio in the API.
+                // It is calculated by dividing "total value" by "total spend".
+                //
+                // For more information on Maximize Conversion Value, see the support
+                // article:
+                // http://support.google.com/google-ads/answer/7684216.
+                //
+                // A target_roas of 3.5 corresponds to a 350% return on ad spend.
+                MaximizeConversionValue = new MaximizeConversionValue()
+                {
+                    TargetRoas = 3.5
+                },
+
+                ShoppingSetting = new ShoppingSetting()
+                {
+                    MerchantId = merchantCenterAccountId,
+                    // Optional: To use products only from a specific feed, set FeedLabel
+                    // to the feed label used in Merchant Center.
+                    // See: https://support.google.com/merchants/answer/12453549.
+                    // Omitting the FeedLabel field will use products from all feeds.
+                    // FeedLabel = "INSERT_FEED_LABEL_HERE"
+                },
+
+                // Use the temporary resource name created earlier
+                ResourceName = campaignResourceName,
+
+                // Set the budget using the given budget resource name.
+                CampaignBudget = campaignBudgetResourceName,
+
+                // Set if the campaign is enabled for brand guidelines. For more information
+                // on brand guidelines, see https://support.google.com/google-ads/answer/14934472.
+                BrandGuidelinesEnabled = brandGuidelinesEnabled,
+
+                // Declare whether or not this campaign contains political ads targeting the EU.
+                ContainsEuPoliticalAdvertising = EuPoliticalAdvertisingStatus.DoesNotContainEuPoliticalAdvertising,
+
+                // Optional fields
+                StartDate = DateTime.Now.AddDays(1).ToString("yyyyMMdd"),
+                EndDate = DateTime.Now.AddDays(365).ToString("yyyyMMdd")
+            };
+
+            // Configures the optional opt-in/out status for asset automation
+            // settings.
+            campaign.AssetAutomationSettings.AddRange(new[]{
+                new Campaign.Types.AssetAutomationSetting
+                {
+                    AssetAutomationType = AssetAutomationType.GenerateImageExtraction,
+                    AssetAutomationStatus = AssetAutomationStatus.OptedIn
+                },
+                new Campaign.Types.AssetAutomationSetting
+                {
+                    AssetAutomationType = AssetAutomationType.FinalUrlExpansionTextAssetAutomation,
+                    AssetAutomationStatus = AssetAutomationStatus.OptedIn
+                },
+                new Campaign.Types.AssetAutomationSetting
+                {
+                    AssetAutomationType = AssetAutomationType.TextAssetAutomation,
+                    AssetAutomationStatus = AssetAutomationStatus.OptedIn
+                },
+                new Campaign.Types.AssetAutomationSetting
+                {
+                    AssetAutomationType = AssetAutomationType.GenerateEnhancedYoutubeVideos,
+                    AssetAutomationStatus = AssetAutomationStatus.OptedIn
+                },
+                new Campaign.Types.AssetAutomationSetting
+                {
+                    AssetAutomationType = AssetAutomationType.GenerateImageEnhancement,
+                    AssetAutomationStatus = AssetAutomationStatus.OptedIn
+                },
+            });
+
             MutateOperation operation = new MutateOperation()
             {
                 CampaignOperation = new CampaignOperation()
                 {
-                    Create = new Campaign()
-                    {
-                        Name = "Performance Max campaign #" + ExampleUtilities.GetRandomString(),
-
-                        // Set the campaign status as PAUSED. The campaign is the only entity in
-                        // the mutate request that should have its status set.
-                        Status = CampaignStatus.Paused,
-
-                        // All Performance Max campaigns have an advertising_channel_type of
-                        // PERFORMANCE_MAX. The advertising_channel_sub_type should not be set.
-                        AdvertisingChannelType = AdvertisingChannelType.PerformanceMax,
-
-                        // Bidding strategy must be set directly on the campaign. Setting a
-                        // portfolio bidding strategy by resource name is not supported. Max
-                        // Conversion and Maximize Conversion Value are the only strategies
-                        // supported for Performance Max campaigns. BiddingStrategyTYpe is
-                        // read-only and cannot be set by the API. An optional ROAS (Return on
-                        // Advertising Spend) can be set to enable the MaximizeConversionValue
-                        // bidding strategy. The ROAS value must be specified as a ratio in the API.
-                        // It is calculated by dividing "total value" by "total spend".
-                        //
-                        // For more information on Maximize Conversion Value, see the support
-                        // article:
-                        // http://support.google.com/google-ads/answer/7684216.
-                        //
-                        // A target_roas of 3.5 corresponds to a 350% return on ad spend.
-                        MaximizeConversionValue = new MaximizeConversionValue()
-                        {
-                            TargetRoas = 3.5
-                        },
-
-                        ShoppingSetting = new ShoppingSetting()
-                        {
-                            MerchantId = merchantCenterAccountId,
-                            // Optional: To use products only from a specific feed, set FeedLabel
-                            // to the feed label used in Merchant Center.
-                            // See: https://support.google.com/merchants/answer/12453549.
-                            // Omitting the FeedLabel field will use products from all feeds.
-                            // FeedLabel = "INSERT_FEED_LABEL_HERE"
-                        },
-
-                        // Set the Final URL expansion opt out. This flag is specific to
-                        // Performance Max campaigns. If opted out (True), only the final URLs in
-                        // the asset group or URLs specified in the advertiser's Google Merchant
-                        // Center or business data feeds are targeted.
-                        //
-                        // If opted in (False), the entire domain will be targeted. For best
-                        // results, set this value to false to opt in and allow URL expansions. You
-                        // can optionally add exclusions to limit traffic to parts of your website.
-                        //
-                        // For a Retail campaign, we want the final URL's to be limited to those
-                        // explicitly surfaced via GMC.
-                        UrlExpansionOptOut = true,
-
-                        // Use the temporary resource name created earlier
-                        ResourceName = campaignResourceName,
-
-                        // Set the budget using the given budget resource name.
-                        CampaignBudget = campaignBudgetResourceName,
-
-                        // Set if the campaign is enabled for brand guidelines. For more information
-                        // on brand guidelines, see https://support.google.com/google-ads/answer/14934472.
-                        BrandGuidelinesEnabled = brandGuidelinesEnabled,
-
-                        // Declare whether or not this campaign contains political ads targeting the EU.
-                        ContainsEuPoliticalAdvertising = EuPoliticalAdvertisingStatus.DoesNotContainEuPoliticalAdvertising,
-
-                        // Optional fields
-                        StartDate = DateTime.Now.AddDays(1).ToString("yyyyMMdd"),
-                        EndDate = DateTime.Now.AddDays(365).ToString("yyyyMMdd")
-                    }
+                    Create = campaign
                 }
             };
 
@@ -551,7 +573,7 @@ namespace Google.Ads.GoogleAds.Examples.V21
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V21.GoogleAdsService);
+                client.GetService(Services.V22.GoogleAdsService);
 
             MutateGoogleAdsRequest request = new MutateGoogleAdsRequest()
             {
@@ -921,7 +943,7 @@ namespace Google.Ads.GoogleAds.Examples.V21
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V21.GoogleAdsService);
+                client.GetService(Services.V22.GoogleAdsService);
 
             List<CustomerConversionGoal> conversionGoals = new List<CustomerConversionGoal>();
 

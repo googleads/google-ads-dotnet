@@ -117,6 +117,12 @@ namespace Google.Ads.GoogleAds.Extensions.Tests.Config
         private const string PROXY_DOMAIN_VALUE = "TEST_PROXY_DOMAIN";
 
         /// <summary>
+        /// Test value for <see cref="GoogleAdsConfig.UseApplicationDefaultCredentials"/>
+        /// property.
+        /// </summary>
+        private const bool USE_APPLICATION_DEFAULT_CREDENTIALS_VALUE = true;
+
+        /// <summary>
         /// The temporary setting json file for running tests.
         /// </summary>
         private string TEMP_SETTING_JSON_FILE;
@@ -149,13 +155,14 @@ namespace Google.Ads.GoogleAds.Extensions.Tests.Config
                 { "ProxyUser", PROXY_USER_VALUE },
                 { "ProxyPassword", PROXY_PASSWORD_VALUE },
                 { "ProxyDomain", PROXY_DOMAIN_VALUE },
+                { "UseApplicationDefaultCredentials", USE_APPLICATION_DEFAULT_CREDENTIALS_VALUE.ToString() }
             };
 
         [SetUp]
         public void Init()
         {
             TEMP_SETTING_JSON_FILE = CreateSettingsJson();
-            TEMP_SECRET_JSON_FILE = "";// CreateSecretsJson();
+            TEMP_SECRET_JSON_FILE =  CreateSecretsJson();
             CONFIG_SETTINGS["OAuth2SecretsJsonPath"] = TEMP_SECRET_JSON_FILE;
 
             foreach (string envKey in ConfigExtensions.ENV_VAR_TO_CONFIG_KEY_MAP.Keys)
@@ -208,6 +215,7 @@ namespace Google.Ads.GoogleAds.Extensions.Tests.Config
             Assert.AreEqual(OAUTH2_REFRESH_TOKEN_VALUE, config.OAuth2RefreshToken);
             Assert.AreEqual(OAUTH2_PRN_EMAIL_VALUE, config.OAuth2PrnEmail);
             Assert.AreEqual(TEMP_SECRET_JSON_FILE, config.OAuth2SecretsJsonPath);
+            Assert.AreEqual(USE_APPLICATION_DEFAULT_CREDENTIALS_VALUE, config.UseApplicationDefaultCredentials);
         }
 
         /// <summary>
@@ -240,12 +248,14 @@ namespace Google.Ads.GoogleAds.Extensions.Tests.Config
             Assert.AreEqual(OAUTH2_SCOPE_VALUE, config.OAuth2Scope);
 
             // Tests for Proxy field.
-            NetworkCredential credential = (NetworkCredential) config.Proxy.Credentials;
+            NetworkCredential credential = (NetworkCredential)config.Proxy.Credentials;
             Assert.AreEqual(new Uri(PROXY_SERVER_VALUE).AbsoluteUri,
                 config.Proxy.Address.AbsoluteUri);
             Assert.AreEqual(PROXY_USER_VALUE, credential.UserName);
             Assert.AreEqual(PROXY_PASSWORD_VALUE, credential.Password);
             Assert.AreEqual(PROXY_DOMAIN_VALUE, credential.Domain);
+
+            Assert.AreEqual(USE_APPLICATION_DEFAULT_CREDENTIALS_VALUE, config.UseApplicationDefaultCredentials);
         }
 
         /// <summary>

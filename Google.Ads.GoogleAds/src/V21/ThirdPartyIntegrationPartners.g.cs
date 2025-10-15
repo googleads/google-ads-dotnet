@@ -136,7 +136,6 @@ namespace Google.Ads.GoogleAds.V21.Common {
   #region Messages
   /// <summary>
   /// Container for Customer level third party integration partners.
-  /// Next Id = 5
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CustomerThirdPartyIntegrationPartners : pb::IMessage<CustomerThirdPartyIntegrationPartners>
@@ -410,7 +409,6 @@ namespace Google.Ads.GoogleAds.V21.Common {
 
   /// <summary>
   /// Container for third party viewability integration data for Customer.
-  /// Next Id = 3
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CustomerThirdPartyViewabilityIntegrationPartner : pb::IMessage<CustomerThirdPartyViewabilityIntegrationPartner>
@@ -648,7 +646,6 @@ namespace Google.Ads.GoogleAds.V21.Common {
 
   /// <summary>
   /// Container for third party brand safety integration data for Customer.
-  /// Next Id = 2
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CustomerThirdPartyBrandSafetyIntegrationPartner : pb::IMessage<CustomerThirdPartyBrandSafetyIntegrationPartner>
@@ -845,7 +842,6 @@ namespace Google.Ads.GoogleAds.V21.Common {
 
   /// <summary>
   /// Container for third party Brand Lift integration data for Customer.
-  /// Next Id = 3
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CustomerThirdPartyBrandLiftIntegrationPartner : pb::IMessage<CustomerThirdPartyBrandLiftIntegrationPartner>
@@ -1082,7 +1078,6 @@ namespace Google.Ads.GoogleAds.V21.Common {
 
   /// <summary>
   /// Container for third party reach integration data for Customer.
-  /// Next Id = 3
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CustomerThirdPartyReachIntegrationPartner : pb::IMessage<CustomerThirdPartyReachIntegrationPartner>
@@ -1319,7 +1314,6 @@ namespace Google.Ads.GoogleAds.V21.Common {
 
   /// <summary>
   /// Container for Campaign level third party integration partners.
-  /// Next Id = 5
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CampaignThirdPartyIntegrationPartners : pb::IMessage<CampaignThirdPartyIntegrationPartners>
@@ -1595,7 +1589,6 @@ namespace Google.Ads.GoogleAds.V21.Common {
 
   /// <summary>
   /// Container for third party viewability integration data for Campaign.
-  /// Next Id = 4
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CampaignThirdPartyViewabilityIntegrationPartner : pb::IMessage<CampaignThirdPartyViewabilityIntegrationPartner>
@@ -1883,7 +1876,6 @@ namespace Google.Ads.GoogleAds.V21.Common {
 
   /// <summary>
   /// Container for third party brand safety integration data for Campaign.
-  /// Next Id = 3
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CampaignThirdPartyBrandSafetyIntegrationPartner : pb::IMessage<CampaignThirdPartyBrandSafetyIntegrationPartner>
@@ -2130,7 +2122,6 @@ namespace Google.Ads.GoogleAds.V21.Common {
 
   /// <summary>
   /// Container for third party Brand Lift integration data for Campaign.
-  /// Next Id = 4
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CampaignThirdPartyBrandLiftIntegrationPartner : pb::IMessage<CampaignThirdPartyBrandLiftIntegrationPartner>
@@ -2417,7 +2408,6 @@ namespace Google.Ads.GoogleAds.V21.Common {
 
   /// <summary>
   /// Container for third party reach integration data for Campaign.
-  /// Next Id = 4
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CampaignThirdPartyReachIntegrationPartner : pb::IMessage<CampaignThirdPartyReachIntegrationPartner>
@@ -2704,7 +2694,6 @@ namespace Google.Ads.GoogleAds.V21.Common {
 
   /// <summary>
   /// Contains third party measurement partner related data for video campaigns.
-  /// Next Id = 3
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ThirdPartyIntegrationPartnerData : pb::IMessage<ThirdPartyIntegrationPartnerData>

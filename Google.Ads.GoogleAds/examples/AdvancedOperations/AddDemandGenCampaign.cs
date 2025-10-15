@@ -17,22 +17,22 @@ using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V21.Common;
-using Google.Ads.GoogleAds.V21.Errors;
-using Google.Ads.GoogleAds.V21.Resources;
-using Google.Ads.GoogleAds.V21.Services;
+using Google.Ads.GoogleAds.V22.Common;
+using Google.Ads.GoogleAds.V22.Errors;
+using Google.Ads.GoogleAds.V22.Resources;
+using Google.Ads.GoogleAds.V22.Services;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V21.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V21.Resources.AdGroup.Types;
-using static Google.Ads.GoogleAds.V21.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types;
-using static Google.Ads.GoogleAds.V21.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types.DemandGenChannelControls.Types;
-using static Google.Ads.GoogleAds.V21.Enums.EuPoliticalAdvertisingStatusEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V22.Resources.AdGroup.Types;
+using static Google.Ads.GoogleAds.V22.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types;
+using static Google.Ads.GoogleAds.V22.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types.DemandGenChannelControls.Types;
+using static Google.Ads.GoogleAds.V22.Enums.EuPoliticalAdvertisingStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V21
+namespace Google.Ads.GoogleAds.Examples.V22
 {
     /// <summary>
     /// This example shows how to create a Demand Gen campaign with a video ad.
@@ -103,7 +103,7 @@ namespace Google.Ads.GoogleAds.Examples.V21
         {
 
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V21.GoogleAdsService);
+                client.GetService(Services.V22.GoogleAdsService);
 
             try
             {
@@ -365,7 +365,7 @@ namespace Google.Ads.GoogleAds.Examples.V21
             Ad ad = new Ad
             {
                 Name = "Demand gen video responsive ad",
-                FinalUrls = { "http://example.com/demand_gen" },
+                FinalUrls = { "http://example.com" },
                 DemandGenVideoResponsiveAd = new DemandGenVideoResponsiveAdInfo
                 {
                     BusinessName = new AdTextAsset

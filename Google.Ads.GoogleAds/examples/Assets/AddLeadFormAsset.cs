@@ -15,16 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V21.Common;
-using Google.Ads.GoogleAds.V21.Errors;
-using Google.Ads.GoogleAds.V21.Resources;
-using Google.Ads.GoogleAds.V21.Services;
+using Google.Ads.GoogleAds.V22.Common;
+using Google.Ads.GoogleAds.V22.Errors;
+using Google.Ads.GoogleAds.V22.Resources;
+using Google.Ads.GoogleAds.V22.Services;
 using System;
-using static Google.Ads.GoogleAds.V21.Enums.LeadFormCallToActionTypeEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.LeadFormFieldUserInputTypeEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.LeadFormPostSubmitCallToActionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.LeadFormCallToActionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.LeadFormFieldUserInputTypeEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.LeadFormPostSubmitCallToActionTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V21
+namespace Google.Ads.GoogleAds.Examples.V22
 {
     /// <summary>
     /// This code example creates a lead form asset for a campaign. Run
@@ -106,7 +106,7 @@ namespace Google.Ads.GoogleAds.Examples.V21
         // [START add_lead_form_asset]
         private string CreateLeadFormAsset(GoogleAdsClient client, long customerId)
         {
-            AssetServiceClient assetService = client.GetService(Services.V21.AssetService);
+            AssetServiceClient assetService = client.GetService(Services.V22.AssetService);
 
             // Creates the lead form asset.
             Asset leadFormAsset = new Asset()

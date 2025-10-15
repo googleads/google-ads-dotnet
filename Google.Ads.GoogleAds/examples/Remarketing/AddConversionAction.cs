@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V21.Errors;
-using Google.Ads.GoogleAds.V21.Resources;
-using Google.Ads.GoogleAds.V21.Services;
+using Google.Ads.GoogleAds.V22.Errors;
+using Google.Ads.GoogleAds.V22.Resources;
+using Google.Ads.GoogleAds.V22.Services;
 using System;
-using static Google.Ads.GoogleAds.V21.Enums.ConversionActionCategoryEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.ConversionActionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V21.Enums.ConversionActionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.ConversionActionCategoryEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.ConversionActionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V22.Enums.ConversionActionTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V21
+namespace Google.Ads.GoogleAds.Examples.V22
 {
     /// <summary>
     /// This code example illustrates adding a conversion action.
@@ -73,7 +73,7 @@ namespace Google.Ads.GoogleAds.Examples.V21
         {
             // Get the ConversionActionService.
             ConversionActionServiceClient conversionActionService =
-                client.GetService(Services.V21.ConversionActionService);
+                client.GetService(Services.V22.ConversionActionService);
 
             // Note that conversion action names must be unique.
             // If a conversion action already exists with the specified name the create operation

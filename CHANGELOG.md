@@ -1,3 +1,12 @@
+24.1.0
+======
+- Added support for version 22.0 of the Google Ads API.
+- Added support for Application Default Credentials via the 
+  `UseApplicationDefaultCredentials` configuration flag.
+- Added an overload for `SearchStreamAsync` accepting a `Func` (fixes #622)
+- Updated the `AddPerformanceMaxCampaign` and `AddPerformanceMaxRetailCampaign`
+  examples to support configuring asset automation settings.
+
 24.0.1
 ======
 - Removed explicit support for net6.0 as it's already covered by netstandard2.1

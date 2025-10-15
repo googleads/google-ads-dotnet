@@ -53,7 +53,9 @@ namespace Google.Ads.GoogleAds.V21.Resources {
   }
   #region Messages
   /// <summary>
-  /// A Customer search term view.
+  /// This report provides a high-level view of search demand at the customer
+  /// level by grouping similar search terms into categories and showing their
+  /// search volume.
   /// Historical data is available starting March 2023.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]

@@ -70,5 +70,11 @@ namespace Google.Ads.Gax.Config
         /// determine your Google Ads API access levels.
         /// </summary>
         public const string USE_CLOUD_ORG_FOR_API_ACCESS = "UseCloudOrgForApiAccess";
+
+        /// <summary>
+        /// The configuration setting name for the flag that specifies whether
+        /// or not to use application default credentials to authenticate.
+        /// </summary>
+        public const string USE_APPLICATION_DEFAULT_CREDENTIALS = "UseApplicationDefaultCredentials";
     }
 }
