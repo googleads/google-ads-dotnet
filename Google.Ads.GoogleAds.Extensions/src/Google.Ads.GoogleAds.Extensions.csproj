@@ -49,8 +49,7 @@
     <ProjectReference Condition="Exists('..\..\Google.Ads.GoogleAds.Core\src\Google.Ads.GoogleAds.Core.csproj')" Include="..\..\Google.Ads.GoogleAds.Core\src\Google.Ads.GoogleAds.Core.csproj" />
     <PackageReference Condition="!Exists('..\..\Google.Ads.Gax\src\Google.Ads.Gax.csproj')" Include="Google.Ads.Gax" Version="4.0.6" />
     <ProjectReference Condition="Exists('..\..\Google.Ads.Gax\src\Google.Ads.Gax.csproj')" Include="..\..\Google.Ads.Gax\src\Google.Ads.Gax.csproj" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.0" />
   </ItemGroup>
   <Target Name="CopyAppConfig" BeforeTargets="pack;Build">
     <Copy SourceFiles="App.config" DestinationFiles="app.config.transform" />
