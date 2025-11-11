@@ -85,8 +85,6 @@ namespace Google.Ads.GoogleAds.Lib
             TServiceSetting serviceSettings =
                 CreateServiceSettings<TServiceSetting, GoogleAdsConfig>(serviceContext);
             serviceSettings.VersionHeaderBuilder.AppendAssemblyVersion("gccl", this.GetType());
-            serviceSettings.VersionHeaderBuilder.AppendAssemblyVersion("pb",
-                typeof(IMessage));
 
             // Create the service.
             TService service = Create(serviceTemplate, callInvoker, serviceSettings);
