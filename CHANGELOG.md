@@ -1,3 +1,10 @@
+24.1.1
+======
+- Removed setting the `pb` header in requests, as it is already set by GAX;
+  fixes issue #623.
+- Upgraded Microsoft dependencies to version 9.
+- Removed an unused parameter from ResourceNames.AssetSet.
+
 24.1.0
 ======
 - Added support for version 22.0 of the Google Ads API.

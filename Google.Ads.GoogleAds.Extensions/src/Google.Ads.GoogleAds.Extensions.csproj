@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Title>Google Ads API Dotnet Client Library Extensions</Title>
     <PackageId>Google.Ads.GoogleAds.Extensions</PackageId>
-    <Version>2.0.6</Version>
+    <Version>2.0.7</Version>
     <Description>This library provides you with extensions for the Google Ads API client library. The Google Ads API is the modern programmatic interface to Google Ads. See https://developers.google.com/google-ads/api to learn more about Google Ads API.</Description>
     <PackageReleaseNotes>https://github.com/googleads/google-ads-dotnet/blob/master/ChangeLog</PackageReleaseNotes>
     <PackageTags>GoogleAds Google</PackageTags>
@@ -31,8 +31,8 @@
     <IncludeSource>true</IncludeSource>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <AssemblyVersion>2.0.6</AssemblyVersion>
-    <FileVersion>2.0.6</FileVersion>
+    <AssemblyVersion>2.0.7</AssemblyVersion>
+    <FileVersion>2.0.7</FileVersion>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
@@ -45,7 +45,7 @@
     <None Include="..\..\logo.png" Pack="true" PackagePath="" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Condition="!Exists('..\..\Google.Ads.GoogleAds.Core\src\Google.Ads.GoogleAds.Core.csproj')" Include="Google.Ads.GoogleAds.Core" Version="4.0.7" />
+    <PackageReference Condition="!Exists('..\..\Google.Ads.GoogleAds.Core\src\Google.Ads.GoogleAds.Core.csproj')" Include="Google.Ads.GoogleAds.Core" Version="4.0.8" />
     <ProjectReference Condition="Exists('..\..\Google.Ads.GoogleAds.Core\src\Google.Ads.GoogleAds.Core.csproj')" Include="..\..\Google.Ads.GoogleAds.Core\src\Google.Ads.GoogleAds.Core.csproj" />
     <PackageReference Condition="!Exists('..\..\Google.Ads.Gax\src\Google.Ads.Gax.csproj')" Include="Google.Ads.Gax" Version="4.0.6" />
     <ProjectReference Condition="Exists('..\..\Google.Ads.Gax\src\Google.Ads.Gax.csproj')" Include="..\..\Google.Ads.Gax\src\Google.Ads.Gax.csproj" />
