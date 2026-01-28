@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V22.Common;
-using Google.Ads.GoogleAds.V22.Errors;
-using Google.Ads.GoogleAds.V22.Resources;
-using Google.Ads.GoogleAds.V22.Services;
+using Google.Ads.GoogleAds.V23.Common;
+using Google.Ads.GoogleAds.V23.Errors;
+using Google.Ads.GoogleAds.V23.Resources;
+using Google.Ads.GoogleAds.V23.Services;
 using System;
 using System.Collections.Generic;
-using DayOfWeek = Google.Ads.GoogleAds.V22.Enums.DayOfWeekEnum.Types.DayOfWeek;
+using DayOfWeek = Google.Ads.GoogleAds.V23.Enums.DayOfWeekEnum.Types.DayOfWeek;
 
-namespace Google.Ads.GoogleAds.Examples.V22
+namespace Google.Ads.GoogleAds.Examples.V23
 {
     /// <summary>
     /// This code example shows how to add ad group bid modifiers to a hotel ad group based on
@@ -82,7 +82,7 @@ namespace Google.Ads.GoogleAds.Examples.V22
         {
             // Get the AdGroupBidModifierService.
             AdGroupBidModifierServiceClient service = client.GetService(
-                Services.V22.AdGroupBidModifierService);
+                Services.V23.AdGroupBidModifierService);
 
             // Constructs the ad group resource name to use for each bid modifier.
             string adGroupResourceName = ResourceNames.AdGroup(customerId, adGroupId);

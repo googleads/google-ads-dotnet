@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V22.Errors;
-using Google.Ads.GoogleAds.V22.Resources;
-using Google.Ads.GoogleAds.V22.Services;
+using Google.Ads.GoogleAds.V23.Errors;
+using Google.Ads.GoogleAds.V23.Resources;
+using Google.Ads.GoogleAds.V23.Services;
 using Google.Api.Gax;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Google.Ads.GoogleAds.Examples.V22
+namespace Google.Ads.GoogleAds.Examples.V23
 {
     /// <summary>
     /// This code example searches for <see cref="GoogleAdsField" /> that match a given prefix,
@@ -81,7 +81,7 @@ namespace Google.Ads.GoogleAds.Examples.V22
         {
             // Get the GoogleAdsFieldService.
             GoogleAdsFieldServiceClient googleAdsFieldService = client.GetService(
-                Services.V22.GoogleAdsFieldService);
+                Services.V23.GoogleAdsFieldService);
 
             // Create the query.
             string searchQuery = $"SELECT name, category, selectable, filterable, sortable, " +

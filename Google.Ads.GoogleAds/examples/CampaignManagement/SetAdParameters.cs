@@ -15,13 +15,13 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V22.Errors;
-using Google.Ads.GoogleAds.V22.Resources;
-using Google.Ads.GoogleAds.V22.Services;
+using Google.Ads.GoogleAds.V23.Errors;
+using Google.Ads.GoogleAds.V23.Resources;
+using Google.Ads.GoogleAds.V23.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V22
+namespace Google.Ads.GoogleAds.Examples.V23
 {
     /// <summary>
     /// This code example sets ad parameters for a keyword. To get ad group criteria,
@@ -89,7 +89,7 @@ namespace Google.Ads.GoogleAds.Examples.V22
         {
             // Get the AdParameterServiceClient.
             AdParameterServiceClient adParameterService =
-                client.GetService(Services.V22.AdParameterService);
+                client.GetService(Services.V23.AdParameterService);
 
             // Creates ad parameters.
             // There can be a maximum of two AdParameters per ad group criterion.

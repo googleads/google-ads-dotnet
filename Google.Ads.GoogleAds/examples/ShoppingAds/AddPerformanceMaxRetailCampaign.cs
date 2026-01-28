@@ -17,30 +17,30 @@ using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V22.Common;
-using Google.Ads.GoogleAds.V22.Errors;
-using Google.Ads.GoogleAds.V22.Resources;
-using Google.Ads.GoogleAds.V22.Services;
+using Google.Ads.GoogleAds.V23.Common;
+using Google.Ads.GoogleAds.V23.Errors;
+using Google.Ads.GoogleAds.V23.Resources;
+using Google.Ads.GoogleAds.V23.Services;
 using Google.Api.Gax;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
 using System.Threading;
-using static Google.Ads.GoogleAds.V22.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.AssetAutomationStatusEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.AssetAutomationTypeEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.AssetFieldTypeEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.AssetGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.ConversionActionCategoryEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.ConversionOriginEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.EuPoliticalAdvertisingStatusEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.ListingGroupFilterListingSourceEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.ListingGroupFilterTypeEnum.Types;
-using static Google.Ads.GoogleAds.V22.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V23.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.AssetAutomationStatusEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.AssetAutomationTypeEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.AssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.AssetGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.ConversionActionCategoryEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.ConversionOriginEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.EuPoliticalAdvertisingStatusEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.ListingGroupFilterListingSourceEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.ListingGroupFilterTypeEnum.Types;
+using static Google.Ads.GoogleAds.V23.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V22
+namespace Google.Ads.GoogleAds.Examples.V23
 {
     /// <summary>
     /// This example shows how to create a Performance Max retail campaign.
@@ -181,7 +181,7 @@ namespace Google.Ads.GoogleAds.Examples.V22
             {
                 // [START add_performance_max_retail_campaign_1]
                 GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V22.GoogleAdsService);
+                client.GetService(Services.V23.GoogleAdsService);
 
                 // This campaign will override the customer conversion goals.
                 // Retrieve the current list of customer conversion goals.
@@ -422,8 +422,8 @@ namespace Google.Ads.GoogleAds.Examples.V22
                 ContainsEuPoliticalAdvertising = EuPoliticalAdvertisingStatus.DoesNotContainEuPoliticalAdvertising,
 
                 // Optional fields
-                StartDate = DateTime.Now.AddDays(1).ToString("yyyyMMdd"),
-                EndDate = DateTime.Now.AddDays(365).ToString("yyyyMMdd")
+                StartDateTime = DateTime.Now.AddDays(1).ToString("yyyyMMdd 00:00:00"),
+                EndDateTime = DateTime.Now.AddDays(365).ToString("yyyyMMdd 23:59:59")
             };
 
             // Configures the optional opt-in/out status for asset automation
@@ -573,7 +573,7 @@ namespace Google.Ads.GoogleAds.Examples.V22
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V22.GoogleAdsService);
+                client.GetService(Services.V23.GoogleAdsService);
 
             MutateGoogleAdsRequest request = new MutateGoogleAdsRequest()
             {
@@ -943,7 +943,7 @@ namespace Google.Ads.GoogleAds.Examples.V22
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V22.GoogleAdsService);
+                client.GetService(Services.V23.GoogleAdsService);
 
             List<CustomerConversionGoal> conversionGoals = new List<CustomerConversionGoal>();
 

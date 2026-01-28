@@ -23,8 +23,9 @@ namespace Google.Ads.GoogleAds.Tests.Lib
     /// <summary>
     /// UnitTests for extensions in GoogleAdsFailureExtensionsTests.cs.
     /// </summary>
-    [TestFixture("19")]
     [TestFixture("20")]
+    [TestFixture("21")]
+    [TestFixture("22")]
     internal class GoogleAdsFailureExtensionsTests
     {
         private string apiVersion;

@@ -15,17 +15,17 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V22.Errors;
-using Google.Ads.GoogleAds.V22.Resources;
-using Google.Ads.GoogleAds.V22.Services;
+using Google.Ads.GoogleAds.V23.Errors;
+using Google.Ads.GoogleAds.V23.Resources;
+using Google.Ads.GoogleAds.V23.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V22.Enums.CustomAudienceMemberTypeEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.CustomAudienceStatusEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.CustomAudienceTypeEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.CustomAudienceMemberTypeEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.CustomAudienceStatusEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.CustomAudienceTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V22
+namespace Google.Ads.GoogleAds.Examples.V23
 {
     /// <summary>
     /// This example illustrates adding a custom audience. Custom audiences help you reach your
@@ -80,7 +80,7 @@ namespace Google.Ads.GoogleAds.Examples.V22
         {
             // Get the CustomAudienceService client.
             CustomAudienceServiceClient customAudienceServiceClient =
-                client.GetService(Services.V22.CustomAudienceService);
+                client.GetService(Services.V23.CustomAudienceService);
 
             // Create a custom audience.
             CustomAudience customAudience = new CustomAudience

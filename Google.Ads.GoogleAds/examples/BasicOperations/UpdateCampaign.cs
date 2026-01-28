@@ -16,14 +16,14 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V22.Errors;
-using Google.Ads.GoogleAds.V22.Resources;
-using Google.Ads.GoogleAds.V22.Services;
+using Google.Ads.GoogleAds.V23.Errors;
+using Google.Ads.GoogleAds.V23.Resources;
+using Google.Ads.GoogleAds.V23.Services;
 using System;
-using static Google.Ads.GoogleAds.V22.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V22.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V23.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V23.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V22
+namespace Google.Ads.GoogleAds.Examples.V23
 {
     /// <summary>
     /// This code example updates a campaign. To get campaigns, run GetCampaigns.cs.
@@ -80,7 +80,7 @@ namespace Google.Ads.GoogleAds.Examples.V22
         public void Run(GoogleAdsClient client, long customerId, long campaignId)
         {
             // Get the CampaignService.
-            CampaignServiceClient campaignService = client.GetService(Services.V22.CampaignService);
+            CampaignServiceClient campaignService = client.GetService(Services.V23.CampaignService);
 
             // Update campaign by setting its status to paused, and "Search network" to false.
             Campaign campaignToUpdate = new Campaign()

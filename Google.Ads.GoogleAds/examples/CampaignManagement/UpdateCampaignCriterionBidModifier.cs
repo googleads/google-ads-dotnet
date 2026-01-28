@@ -16,13 +16,13 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V22.Errors;
-using Google.Ads.GoogleAds.V22.Resources;
-using Google.Ads.GoogleAds.V22.Services;
+using Google.Ads.GoogleAds.V23.Errors;
+using Google.Ads.GoogleAds.V23.Resources;
+using Google.Ads.GoogleAds.V23.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V22
+namespace Google.Ads.GoogleAds.Examples.V23
 {
     /// <summary>
     /// This code example updates a campaign criterion with a new bid modifier.
@@ -97,7 +97,7 @@ namespace Google.Ads.GoogleAds.Examples.V22
         {
             // Get the CampaignCriterionServiceClient .
             CampaignCriterionServiceClient campaignCriterionService =
-                client.GetService(Services.V22.CampaignCriterionService);
+                client.GetService(Services.V23.CampaignCriterionService);
 
             string criterionResourceName = ResourceNames.CampaignCriteria(customerId,
                 campaignId, criterionId);

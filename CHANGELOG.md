@@ -1,3 +1,12 @@
+25.0.0
+======
+- Added support for version 23.0 of the Google Ads API.
+- Removed support for version 17 of the Google Ads API.
+- Changed the code examples to use `campaign.start_date_time` and
+  `campaign.end_date_time` instead of `campaign.start_date` and
+  `campaign.end_date`.
+- Removed the `AddCallAd` example as call-only ads can no longer be created.
+
 24.1.1
 ======
 - Removed setting the `pb` header in requests, as it is already set by GAX;

@@ -15,18 +15,18 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V22.Common;
-using Google.Ads.GoogleAds.V22.Errors;
-using Google.Ads.GoogleAds.V22.Resources;
-using Google.Ads.GoogleAds.V22.Services;
+using Google.Ads.GoogleAds.V23.Common;
+using Google.Ads.GoogleAds.V23.Errors;
+using Google.Ads.GoogleAds.V23.Resources;
+using Google.Ads.GoogleAds.V23.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V22.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.ListingGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.ProductConditionEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.ListingGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.ProductConditionEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V22
+namespace Google.Ads.GoogleAds.Examples.V23
 {
     /// <summary>
     /// This code example shows how to add a shopping listing group tree to a shopping ad group.
@@ -123,7 +123,7 @@ namespace Google.Ads.GoogleAds.Examples.V22
         {
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V22.AdGroupCriterionService);
+                client.GetService(Services.V23.AdGroupCriterionService);
 
             try
             {
@@ -324,11 +324,11 @@ namespace Google.Ads.GoogleAds.Examples.V22
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V22.GoogleAdsService);
+                Services.V23.GoogleAdsService);
 
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V22.AdGroupCriterionService);
+                client.GetService(Services.V23.AdGroupCriterionService);
 
             String searchQuery = "SELECT ad_group_criterion.resource_name FROM " +
                 "ad_group_criterion WHERE ad_group_criterion.type = LISTING_GROUP AND " +

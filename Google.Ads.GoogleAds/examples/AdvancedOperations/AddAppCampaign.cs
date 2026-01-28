@@ -15,25 +15,25 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V22.Common;
-using Google.Ads.GoogleAds.V22.Errors;
-using Google.Ads.GoogleAds.V22.Resources;
-using Google.Ads.GoogleAds.V22.Services;
+using Google.Ads.GoogleAds.V23.Common;
+using Google.Ads.GoogleAds.V23.Errors;
+using Google.Ads.GoogleAds.V23.Resources;
+using Google.Ads.GoogleAds.V23.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V22.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.AdvertisingChannelSubTypeEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.AppCampaignAppStoreEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.AppCampaignBiddingStrategyGoalTypeEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.EuPoliticalAdvertisingStatusEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.CriterionTypeEnum.Types;
-using static Google.Ads.GoogleAds.V22.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V23.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.AdvertisingChannelSubTypeEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.AppCampaignAppStoreEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.AppCampaignBiddingStrategyGoalTypeEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.EuPoliticalAdvertisingStatusEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.CriterionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V23.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V22
+namespace Google.Ads.GoogleAds.Examples.V23
 {
     /// <summary>
     /// This code example adds a new App Campaign.
@@ -117,7 +117,7 @@ namespace Google.Ads.GoogleAds.Examples.V22
         {
             // Get the BudgetService.
             CampaignBudgetServiceClient budgetService = client.GetService(
-                Services.V22.CampaignBudgetService);
+                Services.V23.CampaignBudgetService);
 
             // Creates a campaign budget.
             CampaignBudget budget = new CampaignBudget()
@@ -158,7 +158,7 @@ namespace Google.Ads.GoogleAds.Examples.V22
             string budgetResourceName)
         {
             // Get the CampaignService.
-            CampaignServiceClient campaignService = client.GetService(Services.V22.CampaignService);
+            CampaignServiceClient campaignService = client.GetService(Services.V23.CampaignService);
 
             // Create the campaign.
             Campaign campaign = new Campaign()
@@ -203,10 +203,10 @@ namespace Google.Ads.GoogleAds.Examples.V22
                 ContainsEuPoliticalAdvertising = EuPoliticalAdvertisingStatus.DoesNotContainEuPoliticalAdvertising,
 
                 // Optional: Set the start date.
-                StartDate = DateTime.Now.AddDays(1).ToString("yyyyMMdd"),
+                StartDateTime = DateTime.Now.AddDays(1).ToString("yyyyMMdd 00:00:00"),
 
                 // Optional: Set the end date.
-                EndDate = DateTime.Now.AddYears(1).ToString("yyyyMMdd"),
+                EndDateTime = DateTime.Now.AddYears(1).ToString("yyyyMMdd 23:59:59"),
             };
 
             // Creates a campaign operation.
@@ -239,7 +239,7 @@ namespace Google.Ads.GoogleAds.Examples.V22
         {
             // Get the CampaignCriterionService.
             CampaignCriterionServiceClient campaignCriterionService = client.GetService(
-                Services.V22.CampaignCriterionService);
+                Services.V23.CampaignCriterionService);
 
             List<CampaignCriterionOperation> operations = new List<CampaignCriterionOperation>();
 
@@ -329,7 +329,7 @@ namespace Google.Ads.GoogleAds.Examples.V22
             string campaignResourceName)
         {
             // Get the AdGroupService.
-            AdGroupServiceClient adGroupService = client.GetService(Services.V22.AdGroupService);
+            AdGroupServiceClient adGroupService = client.GetService(Services.V23.AdGroupService);
 
             // Creates an ad group.
             // Note that the ad group type must not be set.
@@ -372,7 +372,7 @@ namespace Google.Ads.GoogleAds.Examples.V22
         {
             // Get the AdGroupAdService.
             AdGroupAdServiceClient adGroupAdService = client.GetService(
-                Services.V22.AdGroupAdService);
+                Services.V23.AdGroupAdService);
 
             // Creates an ad group ad.
             AdGroupAd adGroupAd = new AdGroupAd

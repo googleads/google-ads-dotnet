@@ -15,21 +15,21 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V22.Common;
-using Google.Ads.GoogleAds.V22.Errors;
-using Google.Ads.GoogleAds.V22.Resources;
-using Google.Ads.GoogleAds.V22.Services;
+using Google.Ads.GoogleAds.V23.Common;
+using Google.Ads.GoogleAds.V23.Errors;
+using Google.Ads.GoogleAds.V23.Resources;
+using Google.Ads.GoogleAds.V23.Services;
 using System;
-using static Google.Ads.GoogleAds.V22.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.EuPoliticalAdvertisingStatusEnum.Types;
-using static Google.Ads.GoogleAds.V22.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V23.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.EuPoliticalAdvertisingStatusEnum.Types;
+using static Google.Ads.GoogleAds.V23.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V22
+namespace Google.Ads.GoogleAds.Examples.V23
 {
     /// <summary>
     /// This code example creates a hotel campaign, a hotel ad group and hotel ad group ad.
@@ -149,7 +149,7 @@ namespace Google.Ads.GoogleAds.Examples.V22
         {
             // Get the CampaignBudgetService.
             CampaignBudgetServiceClient service = client.GetService(
-                Services.V22.CampaignBudgetService);
+                Services.V23.CampaignBudgetService);
 
             // Create a campaign budget.
             CampaignBudget budget = new CampaignBudget()
@@ -188,7 +188,7 @@ namespace Google.Ads.GoogleAds.Examples.V22
             string budgetResourceName, long hotelCenterAccountId, long cpcBidCeilingMicroAmount)
         {
             // Get the CampaignService.
-            CampaignServiceClient service = client.GetService(Services.V22.CampaignService);
+            CampaignServiceClient service = client.GetService(Services.V23.CampaignService);
 
             // [START add_hotel_ad_1]
             // Create a campaign.
@@ -257,7 +257,7 @@ namespace Google.Ads.GoogleAds.Examples.V22
             string campaignResourceName)
         {
             // Get the AdGroupService.
-            AdGroupServiceClient service = client.GetService(Services.V22.AdGroupService);
+            AdGroupServiceClient service = client.GetService(Services.V23.AdGroupService);
 
             // Create an ad group.
             AdGroup adGroup = new AdGroup()
@@ -300,7 +300,7 @@ namespace Google.Ads.GoogleAds.Examples.V22
             string adGroupResourceName)
         {
             // Get the AdGroupAdService.
-            AdGroupAdServiceClient service = client.GetService(Services.V22.AdGroupAdService);
+            AdGroupAdServiceClient service = client.GetService(Services.V23.AdGroupAdService);
 
             // Create a new ad group ad and sets the hotel ad to it.
             AdGroupAd adGroupAd = new AdGroupAd()
