@@ -17,22 +17,22 @@ using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V22.Common;
-using Google.Ads.GoogleAds.V22.Errors;
-using Google.Ads.GoogleAds.V22.Resources;
-using Google.Ads.GoogleAds.V22.Services;
+using Google.Ads.GoogleAds.V23.Common;
+using Google.Ads.GoogleAds.V23.Errors;
+using Google.Ads.GoogleAds.V23.Resources;
+using Google.Ads.GoogleAds.V23.Services;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V22.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V22.Resources.AdGroup.Types;
-using static Google.Ads.GoogleAds.V22.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types;
-using static Google.Ads.GoogleAds.V22.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types.DemandGenChannelControls.Types;
-using static Google.Ads.GoogleAds.V22.Enums.EuPoliticalAdvertisingStatusEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V23.Resources.AdGroup.Types;
+using static Google.Ads.GoogleAds.V23.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types;
+using static Google.Ads.GoogleAds.V23.Resources.AdGroup.Types.DemandGenAdGroupSettings.Types.DemandGenChannelControls.Types;
+using static Google.Ads.GoogleAds.V23.Enums.EuPoliticalAdvertisingStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V22
+namespace Google.Ads.GoogleAds.Examples.V23
 {
     /// <summary>
     /// This example shows how to create a Demand Gen campaign with a video ad.
@@ -103,7 +103,7 @@ namespace Google.Ads.GoogleAds.Examples.V22
         {
 
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V22.GoogleAdsService);
+                client.GetService(Services.V23.GoogleAdsService);
 
             try
             {

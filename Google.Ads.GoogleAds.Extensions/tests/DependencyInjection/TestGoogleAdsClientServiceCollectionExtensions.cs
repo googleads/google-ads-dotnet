@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V22.Services;
+using Google.Ads.GoogleAds.V23.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using NUnit.Framework;
@@ -37,7 +37,7 @@ namespace Google.Ads.GoogleAds.Extensions.DependencyInjection.Tests
             googleAdsClient = serviceProvider.GetService<IGoogleAdsClient>();
 
             GoogleAdsServiceClient googleAdsService = googleAdsClient.GetService(
-                Services.V22.GoogleAdsService);
+                Services.V23.GoogleAdsService);
 
             Assert.AreEqual("abcdefghijkl1234567890", googleAdsService.ServiceContext.Client.Config.DeveloperToken);
             Assert.AreEqual("TEST_OAUTH2_CLIENT_ID", googleAdsService.ServiceContext.Client.Config.OAuth2ClientId);

@@ -15,16 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V22.Common;
-using Google.Ads.GoogleAds.V22.Errors;
-using Google.Ads.GoogleAds.V22.Services;
+using Google.Ads.GoogleAds.V23.Common;
+using Google.Ads.GoogleAds.V23.Errors;
+using Google.Ads.GoogleAds.V23.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V22.Enums.DeviceEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.GenderTypeEnum.Types;
-using static Google.Ads.GoogleAds.V22.Enums.ReachPlanAgeRangeEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.DeviceEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.GenderTypeEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.ReachPlanAgeRangeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V22
+namespace Google.Ads.GoogleAds.Examples.V23
 {
     /// <summary>
     /// This example demonstrates how to interact with the ReachPlanService to find plannable
@@ -68,7 +68,7 @@ namespace Google.Ads.GoogleAds.Examples.V22
 
         /// <summary>
         /// Runs the code example, showing a typical series of calls to the
-        /// <see cref="Services.V22.ReachPlanService"/>.
+        /// <see cref="Services.V23.ReachPlanService"/>.
         /// </summary>
         /// <param name="client">The Google Ads API client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
@@ -78,7 +78,7 @@ namespace Google.Ads.GoogleAds.Examples.V22
             string currencyCode = "USD";
             long budgetMicros = 5_000_000L;
             ReachPlanServiceClient reachPlanService =
-                client.GetService(Services.V22.ReachPlanService);
+                client.GetService(Services.V23.ReachPlanService);
 
             try
             {

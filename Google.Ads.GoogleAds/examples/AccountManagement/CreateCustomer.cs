@@ -15,13 +15,13 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V22.Errors;
-using Google.Ads.GoogleAds.V22.Resources;
-using Google.Ads.GoogleAds.V22.Services;
+using Google.Ads.GoogleAds.V23.Errors;
+using Google.Ads.GoogleAds.V23.Resources;
+using Google.Ads.GoogleAds.V23.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V22
+namespace Google.Ads.GoogleAds.Examples.V23
 {
     /// <summary>
     /// This code example illustrates how to create a new customer under a given manager account.
@@ -76,7 +76,7 @@ namespace Google.Ads.GoogleAds.Examples.V22
         public void Run(GoogleAdsClient client, long managerCustomerId)
         {
             // Get the CustomerService.
-            CustomerServiceClient customerService = client.GetService(Services.V22.CustomerService);
+            CustomerServiceClient customerService = client.GetService(Services.V23.CustomerService);
 
             Customer customer = new Customer()
             {

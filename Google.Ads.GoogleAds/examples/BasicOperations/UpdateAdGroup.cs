@@ -16,14 +16,14 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V22.Enums;
-using Google.Ads.GoogleAds.V22.Errors;
-using Google.Ads.GoogleAds.V22.Resources;
-using Google.Ads.GoogleAds.V22.Services;
+using Google.Ads.GoogleAds.V23.Enums;
+using Google.Ads.GoogleAds.V23.Errors;
+using Google.Ads.GoogleAds.V23.Resources;
+using Google.Ads.GoogleAds.V23.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V22
+namespace Google.Ads.GoogleAds.Examples.V23
 {
     /// <summary>
     /// This code example illustrates how to update an ad group, setting its status to 'PAUSED',
@@ -93,7 +93,7 @@ namespace Google.Ads.GoogleAds.Examples.V22
         public void Run(GoogleAdsClient client, long customerId, long adGroupId,
             long? cpcBidMicroAmount)
         {
-            AdGroupServiceClient adGroupService = client.GetService(Services.V22.AdGroupService);
+            AdGroupServiceClient adGroupService = client.GetService(Services.V23.AdGroupService);
 
             // Create an ad group with the specified ID.
             AdGroup adGroup = new AdGroup();
