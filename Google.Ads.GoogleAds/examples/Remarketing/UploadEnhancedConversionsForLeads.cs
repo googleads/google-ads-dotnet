@@ -250,6 +250,8 @@ namespace Google.Ads.GoogleAds.Examples.V23
             }
 
             // [START add_session_attributes]
+            // The session attribute fields are only available to allowlisted users. To
+            // include these fields in conversion imports, upgrade to the Data Manager API.
             if (!string.IsNullOrEmpty(sessionAttributesEncoded))
             {
                 clickConversion.SessionAttributesEncoded =
