@@ -77,11 +77,17 @@ namespace Google.Ads.GoogleAds.V20.Resources {
   /// detailed below respectively.
   ///
   /// 1. SEARCH - CPC_BID - DEFAULT
+  ///
   /// 2. SEARCH - CPC_BID - UNIFORM
+  ///
   /// 3. SEARCH - TARGET_CPA - UNIFORM
+  ///
   /// 4. SEARCH - TARGET_ROAS - UNIFORM
+  ///
   /// 5. DISPLAY - CPC_BID - DEFAULT
+  ///
   /// 6. DISPLAY - CPC_BID - UNIFORM
+  ///
   /// 7. DISPLAY - TARGET_CPA - UNIFORM
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]

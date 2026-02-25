@@ -59,6 +59,12 @@ namespace Google.Ads.GoogleAds.V20.Resources {
   #region Messages
   /// <summary>
   /// A view with metrics aggregated by ad group and URL or YouTube video.
+  ///
+  /// This view primarily surfaces placement data from the Google Display
+  /// Network. While you can select segments like `segments.ad_network_type`,
+  /// this view generally does not include placement data from other networks, such
+  /// as the Search Partners network. To understand performance on Search
+  /// Partners, consider other reports and segmentations.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DetailPlacementView : pb::IMessage<DetailPlacementView>

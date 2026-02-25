@@ -1,4 +1,4 @@
-// Copyright 2025 Google LLC
+// Copyright 2026 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -528,7 +528,8 @@ namespace Google.Ads.GoogleAds.V20.Services
         /// Required. The resource name of the product link invitation being removed.
         /// expected, in this format:
         /// 
-        /// ` `
+        /// `customers/{customer_id}/productLinkInvitations/{product_link_invitation_id}
+        /// `
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>The RPC response.</returns>
@@ -549,7 +550,8 @@ namespace Google.Ads.GoogleAds.V20.Services
         /// Required. The resource name of the product link invitation being removed.
         /// expected, in this format:
         /// 
-        /// ` `
+        /// `customers/{customer_id}/productLinkInvitations/{product_link_invitation_id}
+        /// `
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A Task containing the RPC response.</returns>
@@ -570,7 +572,8 @@ namespace Google.Ads.GoogleAds.V20.Services
         /// Required. The resource name of the product link invitation being removed.
         /// expected, in this format:
         /// 
-        /// ` `
+        /// `customers/{customer_id}/productLinkInvitations/{product_link_invitation_id}
+        /// `
         /// </param>
         /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
         /// <returns>A Task containing the RPC response.</returns>
@@ -587,7 +590,8 @@ namespace Google.Ads.GoogleAds.V20.Services
         /// Required. The resource name of the product link invitation being removed.
         /// expected, in this format:
         /// 
-        /// ` `
+        /// `customers/{customer_id}/productLinkInvitations/{product_link_invitation_id}
+        /// `
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>The RPC response.</returns>
@@ -608,7 +612,8 @@ namespace Google.Ads.GoogleAds.V20.Services
         /// Required. The resource name of the product link invitation being removed.
         /// expected, in this format:
         /// 
-        /// ` `
+        /// `customers/{customer_id}/productLinkInvitations/{product_link_invitation_id}
+        /// `
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A Task containing the RPC response.</returns>
@@ -629,7 +634,8 @@ namespace Google.Ads.GoogleAds.V20.Services
         /// Required. The resource name of the product link invitation being removed.
         /// expected, in this format:
         /// 
-        /// ` `
+        /// `customers/{customer_id}/productLinkInvitations/{product_link_invitation_id}
+        /// `
         /// </param>
         /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
         /// <returns>A Task containing the RPC response.</returns>

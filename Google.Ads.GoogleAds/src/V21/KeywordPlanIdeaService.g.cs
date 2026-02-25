@@ -4668,7 +4668,8 @@ namespace Google.Ads.GoogleAds.V21.Services {
   }
 
   /// <summary>
-  /// Request message for [KeywordPlanIdeaService.GenerateKeywordForecastMetrics].
+  /// Request message for
+  /// [KeywordPlanIdeaService.GenerateKeywordForecastMetrics][google.ads.googleads.v21.services.KeywordPlanIdeaService.GenerateKeywordForecastMetrics].
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GenerateKeywordForecastMetricsRequest : pb::IMessage<GenerateKeywordForecastMetricsRequest>
@@ -7310,7 +7311,8 @@ namespace Google.Ads.GoogleAds.V21.Services {
   }
 
   /// <summary>
-  /// Response message for [KeywordPlanIdeaService.GenerateKeywordForecastMetrics].
+  /// Response message for
+  /// [KeywordPlanIdeaService.GenerateKeywordForecastMetrics][google.ads.googleads.v21.services.KeywordPlanIdeaService.GenerateKeywordForecastMetrics].
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GenerateKeywordForecastMetricsResponse : pb::IMessage<GenerateKeywordForecastMetricsResponse>

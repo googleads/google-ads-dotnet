@@ -168,6 +168,7 @@ namespace Google.Ads.GoogleAds.V23.Services
             yield return UserDataServiceReflection.Descriptor;
             yield return UserListCustomerTypeServiceReflection.Descriptor;
             yield return UserListServiceReflection.Descriptor;
+            yield return YoutubeVideoUploadServiceReflection.Descriptor;
             yield return lro::OperationsReflection.Descriptor;
         }
     }

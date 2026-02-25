@@ -57,7 +57,8 @@ namespace Google.Ads.GoogleAds.V20.Resources {
   #region Messages
   /// <summary>
   /// A search term view with metrics aggregated by search term at the ad group
-  /// level.
+  /// level. This view does not include Performance Max data. If you are looking
+  /// for Performance Max search term data, use the CampaignSearchTermView instead.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SearchTermView : pb::IMessage<SearchTermView>

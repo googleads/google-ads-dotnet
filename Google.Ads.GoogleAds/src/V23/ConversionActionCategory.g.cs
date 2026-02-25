@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V23.Enums {
           string.Concat(
             "Cj9nb29nbGUvYWRzL2dvb2dsZWFkcy92MjMvZW51bXMvY29udmVyc2lvbl9h",
             "Y3Rpb25fY2F0ZWdvcnkucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
-            "My5lbnVtcyLLAwocQ29udmVyc2lvbkFjdGlvbkNhdGVnb3J5RW51bSKqAwoY",
+            "My5lbnVtcyLoAwocQ29udmVyc2lvbkFjdGlvbkNhdGVnb3J5RW51bSLHAwoY",
             "Q29udmVyc2lvbkFjdGlvbkNhdGVnb3J5Eg8KC1VOU1BFQ0lGSUVEEAASCwoH",
             "VU5LTk9XThABEgsKB0RFRkFVTFQQAhINCglQQUdFX1ZJRVcQAxIMCghQVVJD",
             "SEFTRRAEEgoKBlNJR05VUBAFEgwKCERPV05MT0FEEAcSDwoLQUREX1RPX0NB",
@@ -36,13 +36,13 @@ namespace Google.Ads.GoogleAds.V23.Enums {
             "VUVTVF9RVU9URRAPEhIKDkdFVF9ESVJFQ1RJT05TEBASEgoOT1VUQk9VTkRf",
             "Q0xJQ0sQERILCgdDT05UQUNUEBISDgoKRU5HQUdFTUVOVBATEg8KC1NUT1JF",
             "X1ZJU0lUEBQSDgoKU1RPUkVfU0FMRRAVEhIKDlFVQUxJRklFRF9MRUFEEBYS",
-            "EgoOQ09OVkVSVEVEX0xFQUQQF0L3AQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYyMy5lbnVtc0IdQ29udmVyc2lvbkFjdGlvbkNhdGVnb3J5UHJvdG9Q",
-            "AVpDZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
-            "Z29vZ2xlYWRzL3YyMy9lbnVtcztlbnVtc6ICA0dBQaoCHkdvb2dsZS5BZHMu",
-            "R29vZ2xlQWRzLlYyMy5FbnVtc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYy",
-            "M1xFbnVtc+oCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyMzo6RW51bXNi",
-            "BnByb3RvMw=="));
+            "EgoOQ09OVkVSVEVEX0xFQUQQFxIbChdZT1VUVUJFX0ZPTExPV19PTl9WSUVX",
+            "UxAYQvcBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmVudW1zQh1D",
+            "b252ZXJzaW9uQWN0aW9uQ2F0ZWdvcnlQcm90b1ABWkNnb29nbGUuZ29sYW5n",
+            "Lm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjIzL2Vu",
+            "dW1zO2VudW1zogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjIzLkVu",
+            "dW1zygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjIzXEVudW1z6gIiR29vZ2xl",
+            "OjpBZHM6Okdvb2dsZUFkczo6VjIzOjpFbnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -319,6 +319,11 @@ namespace Google.Ads.GoogleAds.V23.Enums {
         /// advertiser.
         /// </summary>
         [pbr::OriginalName("CONVERTED_LEAD")] ConvertedLead = 23,
+        /// <summary>
+        /// User watches an ad from a channel and later watches either the same video
+        /// or a video from the same channel as the ad.
+        /// </summary>
+        [pbr::OriginalName("YOUTUBE_FOLLOW_ON_VIEWS")] YoutubeFollowOnViews = 24,
       }
 
     }

@@ -1199,9 +1199,9 @@ namespace Google.Ads.GoogleAds.V20.Common {
 
     private double allConversionsFromClickToCall_;
     /// <summary>
-    /// The number of times people clicked the "Call" button to call a store during
-    /// or after clicking an ad. This number doesn't include whether or not calls
-    /// were connected, or the duration of any calls.
+    /// The number of times people clicked the "Call" button to call a business
+    /// during or after clicking an ad. This number doesn't include whether or not
+    /// calls were connected, or the duration of any calls.
     ///
     /// This metric applies to feed items only.
     /// </summary>
@@ -1234,7 +1234,7 @@ namespace Google.Ads.GoogleAds.V20.Common {
     private double allConversionsFromDirections_;
     /// <summary>
     /// The number of times people clicked a "Get directions" button to navigate to
-    /// a store after clicking an ad.
+    /// a business after clicking an ad.
     ///
     /// This metric applies to feed items only.
     /// </summary>
@@ -1297,7 +1297,7 @@ namespace Google.Ads.GoogleAds.V20.Common {
 
     private double allConversionsFromMenu_;
     /// <summary>
-    /// The number of times people clicked a link to view a store's menu after
+    /// The number of times people clicked a link to view a business's menu after
     /// clicking an ad.
     ///
     /// This metric applies to feed items only.
@@ -1330,7 +1330,8 @@ namespace Google.Ads.GoogleAds.V20.Common {
 
     private double allConversionsFromOrder_;
     /// <summary>
-    /// The number of times people placed an order at a store after clicking an ad.
+    /// The number of times people placed an order at a business after clicking an
+    /// ad.
     ///
     /// This metric applies to feed items only.
     /// </summary>
@@ -1363,7 +1364,7 @@ namespace Google.Ads.GoogleAds.V20.Common {
     private double allConversionsFromOtherEngagement_;
     /// <summary>
     /// The number of other conversions (for example, posting a review or saving a
-    /// location for a store) that occurred after people clicked an ad.
+    /// location for a business) that occurred after people clicked an ad.
     ///
     /// This metric applies to feed items only.
     /// </summary>
@@ -1395,7 +1396,7 @@ namespace Google.Ads.GoogleAds.V20.Common {
 
     private double allConversionsFromStoreVisit_;
     /// <summary>
-    /// Estimated number of times people visited a store after clicking an ad.
+    /// Estimated number of times people visited a business after clicking an ad.
     ///
     /// This metric applies to feed items only.
     /// </summary>
@@ -1427,8 +1428,8 @@ namespace Google.Ads.GoogleAds.V20.Common {
 
     private double allConversionsFromStoreWebsite_;
     /// <summary>
-    /// The number of times that people were taken to a store's URL after clicking
-    /// an ad.
+    /// The number of times that people were taken to a business's URL after
+    /// clicking an ad.
     ///
     /// This metric applies to feed items only.
     /// </summary>
@@ -3409,7 +3410,7 @@ namespace Google.Ads.GoogleAds.V20.Common {
 
     private long impressionsFromStoreReach_;
     /// <summary>
-    /// The number of times a store's location-based ad was shown.
+    /// The number of times a business's location-based ad was shown.
     ///
     /// This metric applies to feed items only.
     /// </summary>
@@ -5347,7 +5348,7 @@ namespace Google.Ads.GoogleAds.V20.Common {
 
     private double allConversionsFromLocationAssetStoreVisits_;
     /// <summary>
-    /// Estimated number of visits to the store after a chargeable
+    /// Estimated number of visits to the business after a chargeable
     /// ad event (click or impression). This measure is coming from Asset
     /// based location.
     /// </summary>
@@ -5411,8 +5412,8 @@ namespace Google.Ads.GoogleAds.V20.Common {
 
     private long eligibleImpressionsFromLocationAssetStoreReach_;
     /// <summary>
-    /// Number of impressions in which the store location was shown or the location
-    /// was used for targeting. This measure is coming from Asset based
+    /// Number of impressions in which the business location was shown or the
+    /// location was used for targeting. This measure is coming from Asset based
     /// location.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5598,7 +5599,7 @@ namespace Google.Ads.GoogleAds.V20.Common {
 
     private double viewThroughConversionsFromLocationAssetStoreVisits_;
     /// <summary>
-    /// Estimated number of visits to the store after an impression.
+    /// Estimated number of visits to the business after an impression.
     /// This measure is coming from Asset based location.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7043,7 +7044,7 @@ namespace Google.Ads.GoogleAds.V20.Common {
 
     private double storeVisitsLastClickModelAttributedConversions_;
     /// <summary>
-    /// The amount of store visits attributed by the last click model.
+    /// The amount of business visits attributed by the last click model.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

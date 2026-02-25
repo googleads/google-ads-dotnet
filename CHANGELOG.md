@@ -1,3 +1,9 @@
+25.1.0
+======
+- Added support for version 23.1 of the Google Ads API
+- Updated the `AddPerformanceMaxCampaign` example to demonstrate usage of
+  text guidelines.
+
 25.0.0
 ======
 - Added support for version 23.0 of the Google Ads API.

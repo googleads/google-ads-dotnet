@@ -26,17 +26,17 @@ namespace Google.Ads.GoogleAds.V23.Enums {
           string.Concat(
             "Cjdnb29nbGUvYWRzL2dvb2dsZWFkcy92MjMvZW51bXMvcmVhY2hfcGxhbl9z",
             "dXJmYWNlLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMuZW51bXMi",
-            "zAEKFFJlYWNoUGxhblN1cmZhY2VFbnVtIrMBChBSZWFjaFBsYW5TdXJmYWNl",
+            "6AEKFFJlYWNoUGxhblN1cmZhY2VFbnVtIs8BChBSZWFjaFBsYW5TdXJmYWNl",
             "Eg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEhEKDURJU0NPVkVSX0ZF",
             "RUQQBxIJCgVHTUFJTBAIEgsKB0lOX0ZFRUQQAhIUChBJTl9TVFJFQU1fQlVN",
             "UEVSEAMSGwoXSU5fU1RSRUFNX05PTl9TS0lQUEFCTEUQBBIXChNJTl9TVFJF",
-            "QU1fU0tJUFBBQkxFEAUSCgoGU0hPUlRTEAZC7wEKImNvbS5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MjMuZW51bXNCFVJlYWNoUGxhblN1cmZhY2VQcm90b1AB",
-            "WkNnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9n",
-            "b29nbGVhZHMvdjIzL2VudW1zO2VudW1zogIDR0FBqgIeR29vZ2xlLkFkcy5H",
-            "b29nbGVBZHMuVjIzLkVudW1zygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjIz",
-            "XEVudW1z6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjIzOjpFbnVtc2IG",
-            "cHJvdG8z"));
+            "QU1fU0tJUFBBQkxFEAUSCgoGU0hPUlRTEAYSGgoWR09PR0xFX0RJU1BMQVlf",
+            "TkVUV09SSxAJQu8BCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmVu",
+            "dW1zQhVSZWFjaFBsYW5TdXJmYWNlUHJvdG9QAVpDZ29vZ2xlLmdvbGFuZy5v",
+            "cmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YyMy9lbnVt",
+            "cztlbnVtc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYyMy5FbnVt",
+            "c8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYyM1xFbnVtc+oCIkdvb2dsZTo6",
+            "QWRzOjpHb29nbGVBZHM6OlYyMzo6RW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -248,6 +248,10 @@ namespace Google.Ads.GoogleAds.V23.Enums {
         /// Shorts ad surface.
         /// </summary>
         [pbr::OriginalName("SHORTS")] Shorts = 6,
+        /// <summary>
+        /// Google Display Network ad surface.
+        /// </summary>
+        [pbr::OriginalName("GOOGLE_DISPLAY_NETWORK")] GoogleDisplayNetwork = 9,
       }
 
     }

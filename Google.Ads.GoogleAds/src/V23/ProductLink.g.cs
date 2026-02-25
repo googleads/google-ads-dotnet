@@ -28,10 +28,10 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             "bGluay5wcm90bxIiZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLnJlc291cmNl",
             "cxo4Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjIzL2VudW1zL2xpbmtlZF9wcm9k",
             "dWN0X3R5cGUucHJvdG8aH2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJv",
-            "dG8aGWdvb2dsZS9hcGkvcmVzb3VyY2UucHJvdG8iygUKC1Byb2R1Y3RMaW5r",
+            "dG8aGWdvb2dsZS9hcGkvcmVzb3VyY2UucHJvdG8i1gYKC1Byb2R1Y3RMaW5r",
             "EkMKDXJlc291cmNlX25hbWUYASABKAlCLOBBBfpBJgokZ29vZ2xlYWRzLmdv",
             "b2dsZWFwaXMuY29tL1Byb2R1Y3RMaW5rEiEKD3Byb2R1Y3RfbGlua19pZBgC",
-            "IAEoA0ID4EEDSAGIAQESWgoEdHlwZRgDIAEoDjJHLmdvb2dsZS5hZHMuZ29v",
+            "IAEoA0ID4EEDSAKIAQESWgoEdHlwZRgDIAEoDjJHLmdvb2dsZS5hZHMuZ29v",
             "Z2xlYWRzLnYyMy5lbnVtcy5MaW5rZWRQcm9kdWN0VHlwZUVudW0uTGlua2Vk",
             "UHJvZHVjdFR5cGVCA+BBAxJWCgxkYXRhX3BhcnRuZXIYBCABKAsyOS5nb29n",
             "bGUuYWRzLmdvb2dsZWFkcy52MjMucmVzb3VyY2VzLkRhdGFQYXJ0bmVySWRl",
@@ -41,19 +41,24 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             "cy5nb29nbGVhZHMudjIzLnJlc291cmNlcy5NZXJjaGFudENlbnRlcklkZW50",
             "aWZpZXJCA+BBBUgAEmQKE2FkdmVydGlzaW5nX3BhcnRuZXIYDSABKAsyQC5n",
             "b29nbGUuYWRzLmdvb2dsZWFkcy52MjMucmVzb3VyY2VzLkFkdmVydGlzaW5n",
-            "UGFydG5lcklkZW50aWZpZXJCA+BBA0gAOmHqQV4KJGdvb2dsZWFkcy5nb29n",
-            "bGVhcGlzLmNvbS9Qcm9kdWN0TGluaxI2Y3VzdG9tZXJzL3tjdXN0b21lcl9p",
-            "ZH0vcHJvZHVjdExpbmtzL3twcm9kdWN0X2xpbmtfaWR9QhAKDmxpbmtlZF9w",
-            "cm9kdWN0QhIKEF9wcm9kdWN0X2xpbmtfaWQiTgoVRGF0YVBhcnRuZXJJZGVu",
-            "dGlmaWVyEiEKD2RhdGFfcGFydG5lcl9pZBgBIAEoA0ID4EEFSACIAQFCEgoQ",
-            "X2RhdGFfcGFydG5lcl9pZCJkChNHb29nbGVBZHNJZGVudGlmaWVyEkAKCGN1",
-            "c3RvbWVyGAEgASgJQingQQX6QSMKIWdvb2dsZWFkcy5nb29nbGVhcGlzLmNv",
-            "bS9DdXN0b21lckgAiAEBQgsKCV9jdXN0b21lciJXChhNZXJjaGFudENlbnRl",
-            "cklkZW50aWZpZXISJAoSbWVyY2hhbnRfY2VudGVyX2lkGAEgASgDQgPgQQVI",
-            "AIgBAUIVChNfbWVyY2hhbnRfY2VudGVyX2lkIm0KHEFkdmVydGlzaW5nUGFy",
-            "dG5lcklkZW50aWZpZXISQAoIY3VzdG9tZXIYASABKAlCKeBBA/pBIwohZ29v",
-            "Z2xlYWRzLmdvb2dsZWFwaXMuY29tL0N1c3RvbWVySACIAQFCCwoJX2N1c3Rv",
-            "bWVyQoICCiZjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLnJlc291cmNl",
+            "UGFydG5lcklkZW50aWZpZXJCA+BBA0gAEm8KHmFkdmVydGlzaW5nX3BhcnRu",
+            "ZXJfcHJvcGVydGllcxgPIAEoCzJALmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
+            "My5yZXNvdXJjZXMuQWR2ZXJ0aXNpbmdQYXJ0bmVyUHJvcGVydGllc0ID4EED",
+            "SAE6YepBXgokZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL1Byb2R1Y3RMaW5r",
+            "EjZjdXN0b21lcnMve2N1c3RvbWVyX2lkfS9wcm9kdWN0TGlua3Mve3Byb2R1",
+            "Y3RfbGlua19pZH1CEAoObGlua2VkX3Byb2R1Y3RCGQoXcHJvZHVjdF9saW5r",
+            "X3Byb3BlcnRpZXNCEgoQX3Byb2R1Y3RfbGlua19pZCJOChVEYXRhUGFydG5l",
+            "cklkZW50aWZpZXISIQoPZGF0YV9wYXJ0bmVyX2lkGAEgASgDQgPgQQVIAIgB",
+            "AUISChBfZGF0YV9wYXJ0bmVyX2lkImQKE0dvb2dsZUFkc0lkZW50aWZpZXIS",
+            "QAoIY3VzdG9tZXIYASABKAlCKeBBBfpBIwohZ29vZ2xlYWRzLmdvb2dsZWFw",
+            "aXMuY29tL0N1c3RvbWVySACIAQFCCwoJX2N1c3RvbWVyIlcKGE1lcmNoYW50",
+            "Q2VudGVySWRlbnRpZmllchIkChJtZXJjaGFudF9jZW50ZXJfaWQYASABKANC",
+            "A+BBBUgAiAEBQhUKE19tZXJjaGFudF9jZW50ZXJfaWQibQocQWR2ZXJ0aXNp",
+            "bmdQYXJ0bmVySWRlbnRpZmllchJACghjdXN0b21lchgBIAEoCUIp4EED+kEj",
+            "CiFnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vQ3VzdG9tZXJIAIgBAUILCglf",
+            "Y3VzdG9tZXIiUwocQWR2ZXJ0aXNpbmdQYXJ0bmVyUHJvcGVydGllcxIgCg5h",
+            "bGxvd2VkX2RvbWFpbhgBIAEoCUID4EEDSACIAQFCEQoPX2FsbG93ZWRfZG9t",
+            "YWluQoICCiZjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLnJlc291cmNl",
             "c0IQUHJvZHVjdExpbmtQcm90b1ABWktnb29nbGUuZ29sYW5nLm9yZy9nZW5w",
             "cm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjIzL3Jlc291cmNlczty",
             "ZXNvdXJjZXOiAgNHQUGqAiJHb29nbGUuQWRzLkdvb2dsZUFkcy5WMjMuUmVz",
@@ -63,11 +68,12 @@ namespace Google.Ads.GoogleAds.V23.Resources {
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V23.Enums.LinkedProductTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Resources.ProductLink), global::Google.Ads.GoogleAds.V23.Resources.ProductLink.Parser, new[]{ "ResourceName", "ProductLinkId", "Type", "DataPartner", "GoogleAds", "MerchantCenter", "AdvertisingPartner" }, new[]{ "LinkedProduct", "ProductLinkId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Resources.ProductLink), global::Google.Ads.GoogleAds.V23.Resources.ProductLink.Parser, new[]{ "ResourceName", "ProductLinkId", "Type", "DataPartner", "GoogleAds", "MerchantCenter", "AdvertisingPartner", "AdvertisingPartnerProperties" }, new[]{ "LinkedProduct", "ProductLinkProperties", "ProductLinkId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Resources.DataPartnerIdentifier), global::Google.Ads.GoogleAds.V23.Resources.DataPartnerIdentifier.Parser, new[]{ "DataPartnerId" }, new[]{ "DataPartnerId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Resources.GoogleAdsIdentifier), global::Google.Ads.GoogleAds.V23.Resources.GoogleAdsIdentifier.Parser, new[]{ "Customer" }, new[]{ "Customer" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Resources.MerchantCenterIdentifier), global::Google.Ads.GoogleAds.V23.Resources.MerchantCenterIdentifier.Parser, new[]{ "MerchantCenterId" }, new[]{ "MerchantCenterId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Resources.AdvertisingPartnerIdentifier), global::Google.Ads.GoogleAds.V23.Resources.AdvertisingPartnerIdentifier.Parser, new[]{ "Customer" }, new[]{ "Customer" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Resources.AdvertisingPartnerIdentifier), global::Google.Ads.GoogleAds.V23.Resources.AdvertisingPartnerIdentifier.Parser, new[]{ "Customer" }, new[]{ "Customer" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Resources.AdvertisingPartnerProperties), global::Google.Ads.GoogleAds.V23.Resources.AdvertisingPartnerProperties.Parser, new[]{ "AllowedDomain" }, new[]{ "AllowedDomain" }, null, null, null)
           }));
     }
     #endregion
@@ -130,6 +136,12 @@ namespace Google.Ads.GoogleAds.V23.Resources {
           break;
         case LinkedProductOneofCase.AdvertisingPartner:
           AdvertisingPartner = other.AdvertisingPartner.Clone();
+          break;
+      }
+
+      switch (other.ProductLinkPropertiesCase) {
+        case ProductLinkPropertiesOneofCase.AdvertisingPartnerProperties:
+          AdvertisingPartnerProperties = other.AdvertisingPartnerProperties.Clone();
           break;
       }
 
@@ -266,6 +278,22 @@ namespace Google.Ads.GoogleAds.V23.Resources {
       }
     }
 
+    /// <summary>Field number for the "advertising_partner_properties" field.</summary>
+    public const int AdvertisingPartnerPropertiesFieldNumber = 15;
+    /// <summary>
+    /// Output only. Advertising Partner link properties. These properties are
+    /// only applicable when the link is for an Advertising Partner.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V23.Resources.AdvertisingPartnerProperties AdvertisingPartnerProperties {
+      get { return productLinkPropertiesCase_ == ProductLinkPropertiesOneofCase.AdvertisingPartnerProperties ? (global::Google.Ads.GoogleAds.V23.Resources.AdvertisingPartnerProperties) productLinkProperties_ : null; }
+      set {
+        productLinkProperties_ = value;
+        productLinkPropertiesCase_ = value == null ? ProductLinkPropertiesOneofCase.None : ProductLinkPropertiesOneofCase.AdvertisingPartnerProperties;
+      }
+    }
+
     private object linkedProduct_;
     /// <summary>Enum of possible cases for the "linked_product" oneof.</summary>
     public enum LinkedProductOneofCase {
@@ -287,6 +315,26 @@ namespace Google.Ads.GoogleAds.V23.Resources {
     public void ClearLinkedProduct() {
       linkedProductCase_ = LinkedProductOneofCase.None;
       linkedProduct_ = null;
+    }
+
+    private object productLinkProperties_;
+    /// <summary>Enum of possible cases for the "product_link_properties" oneof.</summary>
+    public enum ProductLinkPropertiesOneofCase {
+      None = 0,
+      AdvertisingPartnerProperties = 15,
+    }
+    private ProductLinkPropertiesOneofCase productLinkPropertiesCase_ = ProductLinkPropertiesOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ProductLinkPropertiesOneofCase ProductLinkPropertiesCase {
+      get { return productLinkPropertiesCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearProductLinkProperties() {
+      productLinkPropertiesCase_ = ProductLinkPropertiesOneofCase.None;
+      productLinkProperties_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -311,7 +359,9 @@ namespace Google.Ads.GoogleAds.V23.Resources {
       if (!object.Equals(GoogleAds, other.GoogleAds)) return false;
       if (!object.Equals(MerchantCenter, other.MerchantCenter)) return false;
       if (!object.Equals(AdvertisingPartner, other.AdvertisingPartner)) return false;
+      if (!object.Equals(AdvertisingPartnerProperties, other.AdvertisingPartnerProperties)) return false;
       if (LinkedProductCase != other.LinkedProductCase) return false;
+      if (ProductLinkPropertiesCase != other.ProductLinkPropertiesCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -326,7 +376,9 @@ namespace Google.Ads.GoogleAds.V23.Resources {
       if (linkedProductCase_ == LinkedProductOneofCase.GoogleAds) hash ^= GoogleAds.GetHashCode();
       if (linkedProductCase_ == LinkedProductOneofCase.MerchantCenter) hash ^= MerchantCenter.GetHashCode();
       if (linkedProductCase_ == LinkedProductOneofCase.AdvertisingPartner) hash ^= AdvertisingPartner.GetHashCode();
+      if (productLinkPropertiesCase_ == ProductLinkPropertiesOneofCase.AdvertisingPartnerProperties) hash ^= AdvertisingPartnerProperties.GetHashCode();
       hash ^= (int) linkedProductCase_;
+      hash ^= (int) productLinkPropertiesCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -373,6 +425,10 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         output.WriteRawTag(106);
         output.WriteMessage(AdvertisingPartner);
       }
+      if (productLinkPropertiesCase_ == ProductLinkPropertiesOneofCase.AdvertisingPartnerProperties) {
+        output.WriteRawTag(122);
+        output.WriteMessage(AdvertisingPartnerProperties);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -411,6 +467,10 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         output.WriteRawTag(106);
         output.WriteMessage(AdvertisingPartner);
       }
+      if (productLinkPropertiesCase_ == ProductLinkPropertiesOneofCase.AdvertisingPartnerProperties) {
+        output.WriteRawTag(122);
+        output.WriteMessage(AdvertisingPartnerProperties);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -441,6 +501,9 @@ namespace Google.Ads.GoogleAds.V23.Resources {
       }
       if (linkedProductCase_ == LinkedProductOneofCase.AdvertisingPartner) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(AdvertisingPartner);
+      }
+      if (productLinkPropertiesCase_ == ProductLinkPropertiesOneofCase.AdvertisingPartnerProperties) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AdvertisingPartnerProperties);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -487,6 +550,15 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             AdvertisingPartner = new global::Google.Ads.GoogleAds.V23.Resources.AdvertisingPartnerIdentifier();
           }
           AdvertisingPartner.MergeFrom(other.AdvertisingPartner);
+          break;
+      }
+
+      switch (other.ProductLinkPropertiesCase) {
+        case ProductLinkPropertiesOneofCase.AdvertisingPartnerProperties:
+          if (AdvertisingPartnerProperties == null) {
+            AdvertisingPartnerProperties = new global::Google.Ads.GoogleAds.V23.Resources.AdvertisingPartnerProperties();
+          }
+          AdvertisingPartnerProperties.MergeFrom(other.AdvertisingPartnerProperties);
           break;
       }
 
@@ -553,6 +625,15 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             AdvertisingPartner = subBuilder;
             break;
           }
+          case 122: {
+            global::Google.Ads.GoogleAds.V23.Resources.AdvertisingPartnerProperties subBuilder = new global::Google.Ads.GoogleAds.V23.Resources.AdvertisingPartnerProperties();
+            if (productLinkPropertiesCase_ == ProductLinkPropertiesOneofCase.AdvertisingPartnerProperties) {
+              subBuilder.MergeFrom(AdvertisingPartnerProperties);
+            }
+            input.ReadMessage(subBuilder);
+            AdvertisingPartnerProperties = subBuilder;
+            break;
+          }
         }
       }
     #endif
@@ -614,6 +695,15 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             }
             input.ReadMessage(subBuilder);
             AdvertisingPartner = subBuilder;
+            break;
+          }
+          case 122: {
+            global::Google.Ads.GoogleAds.V23.Resources.AdvertisingPartnerProperties subBuilder = new global::Google.Ads.GoogleAds.V23.Resources.AdvertisingPartnerProperties();
+            if (productLinkPropertiesCase_ == ProductLinkPropertiesOneofCase.AdvertisingPartnerProperties) {
+              subBuilder.MergeFrom(AdvertisingPartnerProperties);
+            }
+            input.ReadMessage(subBuilder);
+            AdvertisingPartnerProperties = subBuilder;
             break;
           }
         }
@@ -1472,6 +1562,218 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             break;
           case 10: {
             Customer = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Properties specific to an Advertising Partner link.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class AdvertisingPartnerProperties : pb::IMessage<AdvertisingPartnerProperties>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<AdvertisingPartnerProperties> _parser = new pb::MessageParser<AdvertisingPartnerProperties>(() => new AdvertisingPartnerProperties());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<AdvertisingPartnerProperties> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V23.Resources.ProductLinkReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AdvertisingPartnerProperties() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AdvertisingPartnerProperties(AdvertisingPartnerProperties other) : this() {
+      allowedDomain_ = other.allowedDomain_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AdvertisingPartnerProperties Clone() {
+      return new AdvertisingPartnerProperties(this);
+    }
+
+    /// <summary>Field number for the "allowed_domain" field.</summary>
+    public const int AllowedDomainFieldNumber = 1;
+    private readonly static string AllowedDomainDefaultValue = "";
+
+    private string allowedDomain_;
+    /// <summary>
+    /// Output only. The allowed domain for the Advertising Partner link. The
+    /// advertising partner will only be able to advertise on this domain. The
+    /// field is immutable.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string AllowedDomain {
+      get { return allowedDomain_ ?? AllowedDomainDefaultValue; }
+      set {
+        allowedDomain_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "allowed_domain" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAllowedDomain {
+      get { return allowedDomain_ != null; }
+    }
+    /// <summary>Clears the value of the "allowed_domain" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAllowedDomain() {
+      allowedDomain_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as AdvertisingPartnerProperties);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(AdvertisingPartnerProperties other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (AllowedDomain != other.AllowedDomain) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasAllowedDomain) hash ^= AllowedDomain.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasAllowedDomain) {
+        output.WriteRawTag(10);
+        output.WriteString(AllowedDomain);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasAllowedDomain) {
+        output.WriteRawTag(10);
+        output.WriteString(AllowedDomain);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasAllowedDomain) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AllowedDomain);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(AdvertisingPartnerProperties other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasAllowedDomain) {
+        AllowedDomain = other.AllowedDomain;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            AllowedDomain = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            AllowedDomain = input.ReadString();
             break;
           }
         }

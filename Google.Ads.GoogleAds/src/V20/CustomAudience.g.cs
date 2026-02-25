@@ -67,6 +67,9 @@ namespace Google.Ads.GoogleAds.V20.Resources {
   #region Messages
   /// <summary>
   /// A custom audience. This is a list of users by interest.
+  /// The unique key of a custom audience consists of the following fields: name.
+  /// Violating the unique key constraint produces error:
+  /// CustomAudienceError.NAME_ALREADY_USED
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CustomAudience : pb::IMessage<CustomAudience>

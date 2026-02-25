@@ -25,15 +25,16 @@ namespace Google.Ads.GoogleAds.V23.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjVnb29nbGUvYWRzL2dvb2dsZWFkcy92MjMvZXJyb3JzL2luY2VudGl2ZV9l",
-            "cnJvci5wcm90bxIfZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmVycm9ycyJe",
-            "ChJJbmNlbnRpdmVFcnJvckVudW0iSAoOSW5jZW50aXZlRXJyb3ISDwoLVU5T",
-            "UEVDSUZJRUQQABILCgdVTktOT1dOEAESGAoUSU5WQUxJRF9JTkNFTlRJVkVf",
-            "SUQQAkLzAQojY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5lcnJvcnNC",
-            "E0luY2VudGl2ZUVycm9yUHJvdG9QAVpFZ29vZ2xlLmdvbGFuZy5vcmcvZ2Vu",
-            "cHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YyMy9lcnJvcnM7ZXJy",
-            "b3JzogIDR0FBqgIfR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjIzLkVycm9yc8oC",
-            "H0dvb2dsZVxBZHNcR29vZ2xlQWRzXFYyM1xFcnJvcnPqAiNHb29nbGU6OkFk",
-            "czo6R29vZ2xlQWRzOjpWMjM6OkVycm9yc2IGcHJvdG8z"));
+            "cnJvci5wcm90bxIfZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmVycm9ycyKQ",
+            "AQoSSW5jZW50aXZlRXJyb3JFbnVtInoKDkluY2VudGl2ZUVycm9yEg8KC1VO",
+            "U1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEhgKFElOVkFMSURfSU5DRU5USVZF",
+            "X0lEEAISGwoXTUFYX0lOQ0VOVElWRVNfUkVERUVNRUQQAxITCg9BQ0NPVU5U",
+            "X1RPT19PTEQQBELzAQojY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5l",
+            "cnJvcnNCE0luY2VudGl2ZUVycm9yUHJvdG9QAVpFZ29vZ2xlLmdvbGFuZy5v",
+            "cmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YyMy9lcnJv",
+            "cnM7ZXJyb3JzogIDR0FBqgIfR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjIzLkVy",
+            "cm9yc8oCH0dvb2dsZVxBZHNcR29vZ2xlQWRzXFYyM1xFcnJvcnPqAiNHb29n",
+            "bGU6OkFkczo6R29vZ2xlQWRzOjpWMjM6OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -220,6 +221,15 @@ namespace Google.Ads.GoogleAds.V23.Errors {
         /// country.
         /// </summary>
         [pbr::OriginalName("INVALID_INCENTIVE_ID")] InvalidIncentiveId = 2,
+        /// <summary>
+        /// The maximum number of coupons has been redeemed.
+        /// </summary>
+        [pbr::OriginalName("MAX_INCENTIVES_REDEEMED")] MaxIncentivesRedeemed = 3,
+        /// <summary>
+        /// This incentive cannot be applied because too much time has passed since
+        /// the account's first ad impression.
+        /// </summary>
+        [pbr::OriginalName("ACCOUNT_TOO_OLD")] AccountTooOld = 4,
       }
 
     }
