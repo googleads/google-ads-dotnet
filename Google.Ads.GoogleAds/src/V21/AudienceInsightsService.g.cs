@@ -5188,8 +5188,8 @@ namespace Google.Ads.GoogleAds.V21.Services {
     private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V21.Services.TargetingSuggestionMetrics> suggestions_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V21.Services.TargetingSuggestionMetrics>();
     /// <summary>
     /// Suggested targetable audiences. There will be one suggestion for each
-    /// [GenerateTargetingSuggestionMetricsRequest.audiences] requested, matching
-    /// the order requested.
+    /// [GenerateTargetingSuggestionMetricsRequest.audiences][google.ads.googleads.v21.services.GenerateTargetingSuggestionMetricsRequest.audiences]
+    /// requested, matching the order requested.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

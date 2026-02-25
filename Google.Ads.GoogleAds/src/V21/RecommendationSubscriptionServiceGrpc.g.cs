@@ -3,7 +3,7 @@
 //     source: google/ads/googleads/v21/services/recommendation_subscription_service.proto
 // </auto-generated>
 // Original file comments:
-// Copyright 2025 Google LLC
+// Copyright 2026 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -99,6 +99,7 @@ namespace Google.Ads.GoogleAds.V21.Services {
       ///   [MutateError]()
       ///   [QuotaError]()
       ///   [RecommendationError]()
+      ///   [RecommendationSubscriptionError]()
       ///   [RequestError]()
       ///   [UrlFieldError]()
       /// </summary>
@@ -153,6 +154,7 @@ namespace Google.Ads.GoogleAds.V21.Services {
       ///   [MutateError]()
       ///   [QuotaError]()
       ///   [RecommendationError]()
+      ///   [RecommendationSubscriptionError]()
       ///   [RequestError]()
       ///   [UrlFieldError]()
       /// </summary>
@@ -179,6 +181,7 @@ namespace Google.Ads.GoogleAds.V21.Services {
       ///   [MutateError]()
       ///   [QuotaError]()
       ///   [RecommendationError]()
+      ///   [RecommendationSubscriptionError]()
       ///   [RequestError]()
       ///   [UrlFieldError]()
       /// </summary>
@@ -203,6 +206,7 @@ namespace Google.Ads.GoogleAds.V21.Services {
       ///   [MutateError]()
       ///   [QuotaError]()
       ///   [RecommendationError]()
+      ///   [RecommendationSubscriptionError]()
       ///   [RequestError]()
       ///   [UrlFieldError]()
       /// </summary>
@@ -229,6 +233,7 @@ namespace Google.Ads.GoogleAds.V21.Services {
       ///   [MutateError]()
       ///   [QuotaError]()
       ///   [RecommendationError]()
+      ///   [RecommendationSubscriptionError]()
       ///   [RequestError]()
       ///   [UrlFieldError]()
       /// </summary>

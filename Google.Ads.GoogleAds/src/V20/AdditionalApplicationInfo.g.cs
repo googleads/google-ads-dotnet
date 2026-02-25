@@ -49,8 +49,11 @@ namespace Google.Ads.GoogleAds.V20.Common {
   #region Messages
   /// <summary>
   /// Additional information about the application/tool issuing the request. This
-  /// field is only used by [ContentCreatorInsightsService],
-  /// [AudienceInsightsService], and [ReachPlanService] APIs.
+  /// field is only used by
+  /// [ContentCreatorInsightsService][google.ads.googleads.v20.services.ContentCreatorInsightsService],
+  /// [AudienceInsightsService][google.ads.googleads.v20.services.AudienceInsightsService],
+  /// and [ReachPlanService][google.ads.googleads.v20.services.ReachPlanService]
+  /// APIs.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AdditionalApplicationInfo : pb::IMessage<AdditionalApplicationInfo>

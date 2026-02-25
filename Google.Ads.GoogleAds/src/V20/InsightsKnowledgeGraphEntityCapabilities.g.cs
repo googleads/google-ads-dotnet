@@ -221,12 +221,12 @@ namespace Google.Ads.GoogleAds.V20.Enums {
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
         /// An entity that is supported to use as a trending topic in
-        /// [ContentCreatorInsightsService.GenerateTrendingInsights].
+        /// [ContentCreatorInsightsService.GenerateTrendingInsights][google.ads.googleads.v20.services.ContentCreatorInsightsService.GenerateTrendingInsights].
         /// </summary>
         [pbr::OriginalName("CONTENT_TRENDING_INSIGHTS")] ContentTrendingInsights = 2,
         /// <summary>
         /// An entity that is supported to use as a creator attribute in
-        /// [ContentCreatorInsightsService.GenerateCreatorInsights].
+        /// [ContentCreatorInsightsService.GenerateCreatorInsights][google.ads.googleads.v20.services.ContentCreatorInsightsService.GenerateCreatorInsights].
         /// </summary>
         [pbr::OriginalName("CREATOR_ATTRIBUTE")] CreatorAttribute = 3,
       }

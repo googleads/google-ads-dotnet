@@ -246,9 +246,16 @@ namespace Google.Ads.GoogleAds.V21.Resources {
 
     private long amountMicros_;
     /// <summary>
-    /// The amount of the budget, in the local currency for the account.
-    /// Amount is specified in micros, where one million is equivalent to one
-    /// currency unit. Monthly spend is capped at 30.4 times this amount.
+    /// The average daily amount to be spent by the campaign.
+    /// This field is used when the CampaignBudget `period` is set to `DAILY`,
+    /// which is the default.
+    ///
+    /// Amount is specified in micros in the account's local currency.
+    /// One million micros is equivalent to one currency unit.
+    /// The effective monthly spend is capped at 30.4 times this daily amount.
+    ///
+    /// This field is mutually exclusive with 'total_amount_micros'. Only one
+    /// of 'amount_micros' or 'total_amount_micros' should be set.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -278,9 +285,15 @@ namespace Google.Ads.GoogleAds.V21.Resources {
 
     private long totalAmountMicros_;
     /// <summary>
-    /// The lifetime amount of the budget, in the local currency for the account.
-    /// Amount is specified in micros, where one million is equivalent to one
-    /// currency unit.
+    /// The total amount to be spent by the campaign over its entire duration.
+    /// This field is used *only* when the CampaignBudget `period` is set to
+    /// `CUSTOM_PERIOD`. It represents the budget cap for the campaign's lifetime,
+    /// rather than a daily limit. The amount is specified in micros in the
+    /// account's local currency. One million micros is equivalent to one currency
+    /// unit.
+    ///
+    /// This field is mutually exclusive with 'amount_micros'. Only one of
+    /// 'total_amount_micros' or 'amount_micros' should be set.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

@@ -288,7 +288,9 @@ namespace Google.Ads.GoogleAds.V21.Services {
     private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V21.Common.LocationInfo> subCountryLocations_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V21.Common.LocationInfo>();
     /// <summary>
     /// The sub-country geographic locations to search that apply to the criteria.
-    /// Only supported for [SearchAttributes] criteria.
+    /// Only supported for
+    /// [SearchAttributes][google.ads.googleads.v21.services.GenerateCreatorInsightsRequest.SearchAttributes]
+    /// criteria.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -301,7 +303,9 @@ namespace Google.Ads.GoogleAds.V21.Services {
     /// <summary>
     /// The attributes used to identify top creators. Data fetched is based on
     /// the list of countries or sub-country locations specified in
-    /// [country_locations] or [sub_country_locations].
+    /// [country_locations][google.ads.googleads.v21.services.GenerateCreatorInsightsRequest.country_locations]
+    /// or
+    /// [sub_country_locations][google.ads.googleads.v21.services.GenerateCreatorInsightsRequest.sub_country_locations].
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -317,7 +321,8 @@ namespace Google.Ads.GoogleAds.V21.Services {
     public const int SearchBrandFieldNumber = 5;
     /// <summary>
     /// A brand used to search for top creators. Data fetched is based on the
-    /// list of countries specified in [country_locations].
+    /// list of countries specified in
+    /// [country_locations][google.ads.googleads.v21.services.GenerateCreatorInsightsRequest.country_locations].
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -333,7 +338,8 @@ namespace Google.Ads.GoogleAds.V21.Services {
     public const int SearchChannelsFieldNumber = 4;
     /// <summary>
     /// YouTube Channel IDs for Creator Insights. Data fetched for channels is
-    /// based on the list of countries specified in [country_locations].
+    /// based on the list of countries specified in
+    /// [country_locations][google.ads.googleads.v21.services.GenerateCreatorInsightsRequest.country_locations].
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -782,8 +788,8 @@ namespace Google.Ads.GoogleAds.V21.Services {
         /// Optional. Creator attributes that describe a collection of types of
         /// content. This is used to search for creators whose content matches the
         /// input creator attributes. Only Knowledge Graph Entities tagged with
-        /// [InsightsKnowledgeGraphEntityCapabilities.CREATOR_ATTRIBUTE][] are
-        /// supported. Use
+        /// [CREATOR_ATTRIBUTE][google.ads.googleads.v21.enums.InsightsKnowledgeGraphEntityCapabilitiesEnum.InsightsKnowledgeGraphEntityCapabilities.CREATOR_ATTRIBUTE]
+        /// are supported. Use
         /// [AudienceInsightsService.ListAudienceInsightsAttributes][google.ads.googleads.v21.services.AudienceInsightsService.ListAudienceInsightsAttributes]
         /// to get the list of supported entities. Other attributes including
         /// location are not supported.
@@ -1000,8 +1006,10 @@ namespace Google.Ads.GoogleAds.V21.Services {
         private bool includeRelatedTopics_;
         /// <summary>
         /// Optional. When true, we will expand the search to beyond just the
-        /// entities specified in [brand_entities] to other related knowledge graph
-        /// entities similar to the brand. The default value is `false`.
+        /// entities specified in
+        /// [brand_entities][google.ads.googleads.v21.services.GenerateCreatorInsightsRequest.SearchBrand.brand_entities]
+        /// to other related knowledge graph entities similar to the brand. The
+        /// default value is `false`.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1537,7 +1545,8 @@ namespace Google.Ads.GoogleAds.V21.Services {
   }
 
   /// <summary>
-  /// Request message for [ContentCreatorInsightsService.GenerateTrendingInsights]
+  /// Request message for
+  /// [ContentCreatorInsightsService.GenerateTrendingInsights][google.ads.googleads.v21.services.ContentCreatorInsightsService.GenerateTrendingInsights].
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GenerateTrendingInsightsRequest : pb::IMessage<GenerateTrendingInsightsRequest>
@@ -2011,7 +2020,8 @@ namespace Google.Ads.GoogleAds.V21.Services {
   }
 
   /// <summary>
-  /// Response message for [ContentCreatorInsightsService.GenerateTrendingInsights]
+  /// Response message for
+  /// [ContentCreatorInsightsService.GenerateTrendingInsights][google.ads.googleads.v21.services.ContentCreatorInsightsService.GenerateTrendingInsights].
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GenerateTrendingInsightsResponse : pb::IMessage<GenerateTrendingInsightsResponse>
@@ -4102,7 +4112,10 @@ namespace Google.Ads.GoogleAds.V21.Services {
     /// <summary>
     /// Required. A list of knowledge graph entities to retrieve trend information
     /// for. Supported entities are tagged with
-    /// [InsightsKnowledgeGraphEntityCapabilities.CONTENT_TRENDING_INSIGHTS][].
+    /// [CONTENT_TRENDING_INSIGHTS][google.ads.googleads.v21.enums.InsightsKnowledgeGraphEntityCapabilitiesEnum.InsightsKnowledgeGraphEntityCapabilities.CONTENT_TRENDING_INSIGHTS].
+    /// Use
+    /// [AudienceInsightsService.ListAudienceInsightsAttributes][google.ads.googleads.v21.services.AudienceInsightsService.ListAudienceInsightsAttributes]
+    /// to get the list of supported entities.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4302,7 +4315,8 @@ namespace Google.Ads.GoogleAds.V21.Services {
     public const int TrendMetricsFieldNumber = 2;
     private global::Google.Ads.GoogleAds.V21.Services.TrendInsightMetrics trendMetrics_;
     /// <summary>
-    /// Metrics associated with this trend.
+    /// Metrics associated with this trend. These metrics are for the latest
+    /// available month and the comparison period is 3 months.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

@@ -26,8 +26,8 @@ namespace Google.Ads.GoogleAds.V23.Enums {
           string.Concat(
             "CkNnb29nbGUvYWRzL2dvb2dsZWFkcy92MjMvZW51bXMvY2FtcGFpZ25fcHJp",
             "bWFyeV9zdGF0dXNfcmVhc29uLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52MjMuZW51bXMikgkKH0NhbXBhaWduUHJpbWFyeVN0YXR1c1JlYXNvbkVu",
-            "dW0i7ggKG0NhbXBhaWduUHJpbWFyeVN0YXR1c1JlYXNvbhIPCgtVTlNQRUNJ",
+            "cy52MjMuZW51bXMi9wkKH0NhbXBhaWduUHJpbWFyeVN0YXR1c1JlYXNvbkVu",
+            "dW0i0wkKG0NhbXBhaWduUHJpbWFyeVN0YXR1c1JlYXNvbhIPCgtVTlNQRUNJ",
             "RklFRBAAEgsKB1VOS05PV04QARIUChBDQU1QQUlHTl9SRU1PVkVEEAISEwoP",
             "Q0FNUEFJR05fUEFVU0VEEAMSFAoQQ0FNUEFJR05fUEVORElORxAEEhIKDkNB",
             "TVBBSUdOX0VOREVEEAUSEgoOQ0FNUEFJR05fRFJBRlQQBhIiCh5CSURESU5H",
@@ -52,13 +52,15 @@ namespace Google.Ads.GoogleAds.V23.Enums {
             "QVNfQVNTRVRfR1JPVVBTX0xJTUlURURfQllfUE9MSUNZECMSIgoeTU9TVF9B",
             "U1NFVF9HUk9VUFNfVU5ERVJfUkVWSUVXECQSEwoPTk9fQVNTRVRfR1JPVVBT",
             "ECUSFwoTQVNTRVRfR1JPVVBTX1BBVVNFRBAmEh4KGk1JU1NJTkdfTE9DQVRJ",
-            "T05fVEFSR0VUSU5HECdC+gEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MjMuZW51bXNCIENhbXBhaWduUHJpbWFyeVN0YXR1c1JlYXNvblByb3RvUAFa",
-            "Q2dvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dv",
-            "b2dsZWFkcy92MjMvZW51bXM7ZW51bXOiAgNHQUGqAh5Hb29nbGUuQWRzLkdv",
-            "b2dsZUFkcy5WMjMuRW51bXPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMjNc",
-            "RW51bXPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjM6OkVudW1zYgZw",
-            "cm90bzM="));
+            "T05fVEFSR0VUSU5HECcSFwoTQ0FNUEFJR05fTk9UX0JPT0tFRBAoEhkKFUJP",
+            "T0tJTkdfSE9MRF9FWFBJUklORxApEhgKFEJPT0tJTkdfSE9MRF9FWFBJUkVE",
+            "ECoSFQoRQk9PS0lOR19DQU5DRUxMRUQQK0L6AQoiY29tLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYyMy5lbnVtc0IgQ2FtcGFpZ25QcmltYXJ5U3RhdHVzUmVh",
+            "c29uUHJvdG9QAVpDZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xl",
+            "YXBpcy9hZHMvZ29vZ2xlYWRzL3YyMy9lbnVtcztlbnVtc6ICA0dBQaoCHkdv",
+            "b2dsZS5BZHMuR29vZ2xlQWRzLlYyMy5FbnVtc8oCHkdvb2dsZVxBZHNcR29v",
+            "Z2xlQWRzXFYyM1xFbnVtc+oCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYy",
+            "Mzo6RW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -402,6 +404,30 @@ namespace Google.Ads.GoogleAds.V23.Enums {
         /// targeting.
         /// </summary>
         [pbr::OriginalName("MISSING_LOCATION_TARGETING")] MissingLocationTargeting = 39,
+        /// <summary>
+        /// The campaign is a campaign with the FIXED_CPM bidding strategy but is not
+        /// booked. Contributes to CampaignPrimaryStatus.NOT_ELIGIBLE when the
+        /// campaign is not paused, and CampaignPrimaryStatus.PAUSED when the
+        /// campaign is paused.
+        /// </summary>
+        [pbr::OriginalName("CAMPAIGN_NOT_BOOKED")] CampaignNotBooked = 40,
+        /// <summary>
+        /// The campaign is a campaign with the FIXED_CPM bidding strategy for which
+        /// inventory was held, with the hold expiring. The hold expiry time can be
+        /// read from Campaign.booking_details.hold_expiration_date_time. Contributes
+        /// to CampaignPrimaryStatus.PAUSED.
+        /// </summary>
+        [pbr::OriginalName("BOOKING_HOLD_EXPIRING")] BookingHoldExpiring = 41,
+        /// <summary>
+        /// The campaign is a campaign with the FIXED_CPM bidding strategy with the
+        /// inventory hold expired. Contributes to CampaignPrimaryStatus.PAUSED.
+        /// </summary>
+        [pbr::OriginalName("BOOKING_HOLD_EXPIRED")] BookingHoldExpired = 42,
+        /// <summary>
+        /// The campaign is a campaign with the FIXED_CPM bidding strategy that has
+        /// been auto-cancelled. Contributes to CampaignPrimaryStatus.NOT_ELIGIBLE.
+        /// </summary>
+        [pbr::OriginalName("BOOKING_CANCELLED")] BookingCancelled = 43,
       }
 
     }

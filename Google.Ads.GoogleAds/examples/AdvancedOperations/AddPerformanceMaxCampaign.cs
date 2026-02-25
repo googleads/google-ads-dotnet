@@ -32,6 +32,7 @@ using static Google.Ads.GoogleAds.V23.Enums.AssetFieldTypeEnum.Types;
 using static Google.Ads.GoogleAds.V23.Enums.AssetGroupStatusEnum.Types;
 using static Google.Ads.GoogleAds.V23.Enums.CampaignStatusEnum.Types;
 using static Google.Ads.GoogleAds.V23.Enums.EuPoliticalAdvertisingStatusEnum.Types;
+using static Google.Ads.GoogleAds.V23.Enums.MessagingRestrictionTypeEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V23
 {
@@ -315,6 +316,19 @@ namespace Google.Ads.GoogleAds.Examples.V23
             string campaignBudgetResourceName,
             bool brandGuidelinesEnabled)
         {
+            // [START add_performance_max_text_guidelines]
+            Campaign.Types.TextGuidelines textGuidelines =
+                new Campaign.Types.TextGuidelines();
+            textGuidelines.TermExclusions.AddRange(["cheap", "free"]);
+            textGuidelines.MessagingRestrictions.Add(
+                new Campaign.Types.MessagingRestriction()
+                {
+                    RestrictionText = "Don't mention competitor names",
+                    RestrictionType = MessagingRestrictionType.RestrictionBasedExclusion
+                }
+            );
+
+            // [END add_performance_max_text_guidelines]
             Campaign campaign = new Campaign()
             {
                 Name = "Performance Max campaign #" + ExampleUtilities.GetRandomString(),
@@ -358,6 +372,8 @@ namespace Google.Ads.GoogleAds.Examples.V23
 
                 // Declare whether or not this campaign contains political ads targeting the EU.
                 ContainsEuPoliticalAdvertising = EuPoliticalAdvertisingStatus.DoesNotContainEuPoliticalAdvertising,
+
+                TextGuidelines = textGuidelines,
 
                 // Optional fields
                 StartDateTime = DateTime.Now.AddDays(1).ToString("yyyyMMdd 00:00:00"),

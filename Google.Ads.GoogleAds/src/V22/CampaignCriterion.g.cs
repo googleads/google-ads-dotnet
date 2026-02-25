@@ -756,6 +756,8 @@ namespace Google.Ads.GoogleAds.V22.Resources {
     public const int IpBlockFieldNumber = 27;
     /// <summary>
     /// Immutable. IpBlock.
+    ///
+    /// You can exclude up to 500 IP addresses per campaign.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

@@ -226,11 +226,15 @@ namespace Google.Ads.GoogleAds.V20.Enums {
         /// </summary>
         [pbr::OriginalName("RUNNING")] Running = 3,
         /// <summary>
-        /// Uploaded data has been successfully processed.
+        /// Uploaded data has been successfully processed. The job might have no
+        /// operations, which can happen if the job was run without any operations
+        /// added, or if all operations failed validation individually when
+        /// attempting to add them to the job.
         /// </summary>
         [pbr::OriginalName("SUCCESS")] Success = 4,
         /// <summary>
-        /// Uploaded data has failed to be processed.
+        /// Uploaded data has failed to be processed. Some operations may have been
+        /// successfully processed.
         /// </summary>
         [pbr::OriginalName("FAILED")] Failed = 5,
       }

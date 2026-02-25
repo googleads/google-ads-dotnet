@@ -443,13 +443,16 @@ namespace Google.Ads.GoogleAds.V20.Common {
         = pb::FieldCodec.ForString(26);
     private readonly pbc::RepeatedField<string> ignorablePolicyTopics_ = new pbc::RepeatedField<string>();
     /// <summary>
-    /// The list of policy topics that should not cause a PolicyFindingError to
-    /// be reported. This field is currently only compatible with Enhanced Text Ad.
-    /// It corresponds to the PolicyTopicEntry.topic field.
+    /// The list of policy topics that should not cause a `PolicyFindingError` to
+    /// be reported. This field is used for ad policy exemptions. It corresponds
+    /// to the `PolicyTopicEntry.topic` field.
     ///
-    /// Resources violating these policies will be saved, but will not be eligible
-    /// to serve. They may begin serving at a later time due to a change in
-    /// policies, re-review of the resource, or a change in advertiser
+    /// If this field is populated, then `exempt_policy_violation_keys` must be
+    /// empty.
+    ///
+    /// Resources that violate these policies will be saved, but will not be
+    /// eligible to serve. They may begin serving at a later time due to a change
+    /// in policies, re-review of the resource, or a change in advertiser
     /// certificates.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -465,13 +468,15 @@ namespace Google.Ads.GoogleAds.V20.Common {
     private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V20.Common.PolicyViolationKey> exemptPolicyViolationKeys_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V20.Common.PolicyViolationKey>();
     /// <summary>
     /// The list of policy violation keys that should not cause a
-    /// PolicyViolationError to be reported. Not all policy violations are
-    /// exemptable, refer to the is_exemptible field in the returned
-    /// PolicyViolationError.
+    /// `PolicyViolationError` to be reported. Not all policy violations are
+    /// exemptable. Refer to the `is_exemptible` field in the returned
+    /// `PolicyViolationError`. This field is used for keyword policy exemptions.
     ///
-    /// Resources violating these polices will be saved, but will not be eligible
-    /// to serve. They may begin serving at a later time due to a change in
-    /// policies, re-review of the resource, or a change in advertiser
+    /// If this field is populated, then `ignorable_policy_topics` must be empty.
+    ///
+    /// Resources that violate these policies will be saved, but will not be
+    /// eligible to serve. They may begin serving at a later time due to a change
+    /// in policies, re-review of the resource, or a change in advertiser
     /// certificates.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

@@ -87,7 +87,7 @@ namespace Google.Ads.GoogleAds.V22.Services {
   #region Messages
   /// <summary>
   /// Request message for
-  /// [RecommendationSubscriptionService.MutateRecommendationSubscription]
+  /// [RecommendationSubscriptionService.MutateRecommendationSubscription][google.ads.googleads.v22.services.RecommendationSubscriptionService.MutateRecommendationSubscription]
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MutateRecommendationSubscriptionRequest : pb::IMessage<MutateRecommendationSubscriptionRequest>
@@ -440,7 +440,7 @@ namespace Google.Ads.GoogleAds.V22.Services {
 
   /// <summary>
   /// A single operation (create, update) on a recommendation subscription.
-  /// [RecommendationSubscriptionService.MutateRecommendationSubscription]
+  /// [RecommendationSubscriptionService.MutateRecommendationSubscription][google.ads.googleads.v22.services.RecommendationSubscriptionService.MutateRecommendationSubscription]
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RecommendationSubscriptionOperation : pb::IMessage<RecommendationSubscriptionOperation>
@@ -787,7 +787,7 @@ namespace Google.Ads.GoogleAds.V22.Services {
 
   /// <summary>
   /// Response message for
-  /// [RecommendationSubscriptionService.MutateRecommendationSubscription]
+  /// [RecommendationSubscriptionService.MutateRecommendationSubscription][google.ads.googleads.v22.services.RecommendationSubscriptionService.MutateRecommendationSubscription]
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MutateRecommendationSubscriptionResponse : pb::IMessage<MutateRecommendationSubscriptionResponse>
@@ -1025,7 +1025,7 @@ namespace Google.Ads.GoogleAds.V22.Services {
 
   /// <summary>
   /// Result message for
-  /// [RecommendationSubscriptionService.MutateRecommendationSubscription]
+  /// [RecommendationSubscriptionService.MutateRecommendationSubscription][google.ads.googleads.v22.services.RecommendationSubscriptionService.MutateRecommendationSubscription]
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MutateRecommendationSubscriptionResult : pb::IMessage<MutateRecommendationSubscriptionResult>

@@ -905,6 +905,14 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v23/YouTubeVideoUploadService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<YouTubeVideoUploadServiceClient, YouTubeVideoUploadServiceSettings, GoogleAdsConfig> YouTubeVideoUploadService =
+                new ServiceTemplate<YouTubeVideoUploadServiceClient, YouTubeVideoUploadServiceSettings, GoogleAdsConfig>(Create);
+
+
+            /// <summary>
             /// Creates the specified service.
             /// </summary>
             /// <param name="serviceName">Name of the service.</param>
@@ -1350,6 +1358,10 @@ namespace Google.Ads.GoogleAds
 
                     case "UserListServiceClient":
                         return UserListServiceClient.Create(callInvoker, (UserListServiceSettings) settings);
+
+
+                    case "YouTubeVideoUploadServiceClient":
+                        return YouTubeVideoUploadServiceClient.Create(callInvoker, (YouTubeVideoUploadServiceSettings) settings);
 
 
                     default:

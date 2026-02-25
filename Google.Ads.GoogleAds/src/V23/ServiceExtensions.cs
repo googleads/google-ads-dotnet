@@ -127,6 +127,7 @@ namespace Google.Ads.GoogleAds.V23.Services
     public abstract partial class UserDataServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class UserListCustomerTypeServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class UserListServiceClient : GoogleAdsServiceClientBase { }
+    public abstract partial class YouTubeVideoUploadServiceClient : GoogleAdsServiceClientBase { }
 }
 
 #pragma warning restore CS1591

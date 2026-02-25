@@ -39,6 +39,70 @@ namespace Google.Ads.GoogleAds.V20.Services
     {
 
         /// <summary>
+        /// Asynchronously executes a search stream request, invoking a callback for each
+        /// <see cref="SearchGoogleAdsStreamResponse"/> received.
+        /// List of thrown errors:
+        /// [AuthenticationError]()
+        /// [AuthorizationError]()
+        /// [ChangeEventError]()
+        /// [ChangeStatusError]()
+        /// [ClickViewError]()
+        /// [HeaderError]()
+        /// [InternalError]()
+        /// [QueryError]()
+        /// [QuotaError]()
+        /// [RequestError]()
+        /// </summary>
+        /// <param name="request">The request object containing all of the
+        /// parameters for the API call.</param>
+        /// <param name="responseCallback">The callback that will be asynchronously
+        /// called for each <see cref="SearchGoogleAdsStreamResponse"/> returned by
+        /// the server.</param>
+        /// <param name="callSettings">The call settings to customize this API call.</param>
+        /// <returns>
+        /// A <c>Task&lt;SearchStreamStream&gt;</c> that completes once all response rows have
+        /// been processed by the <paramref name="responseCallback"/>. The resulting
+        /// <see cref="SearchStreamStream"/> object provides access to stream metadata (e.g., <c>RequestId</c>).
+        /// </returns>
+        /// <remarks>
+        /// This method reads the response stream and invokes the callback for each
+        /// <see cref="SearchGoogleAdsStreamResponse"/> object in the response, you cannot
+        /// iterate further on the <see cref="SearchStreamStream"/> object to obtain results. You
+        /// can however perform additional tasks like retrieving the trailing metadata. If you do
+        /// not care about this additional information, it is fine to ignore the return value
+        /// of this method.
+        /// However, you must ensure that the response stream is disposed of after processing
+        /// is complete.
+        /// </remarks>
+        public virtual Task<SearchStreamStream> SearchStreamAsync(
+                SearchGoogleAdsStreamRequest request,
+                Func<SearchGoogleAdsStreamResponse,Task> responseCallback,
+                CallSettings callSettings = null)
+        {
+            // Issue a search request.
+            Task<SearchStreamStream> t = Task.Run(async () =>
+            {
+                SearchStreamStream searchStream = this.SearchStream(request, callSettings);
+                var responseStream = searchStream.GetResponseStream();
+                bool emptyResult = true;
+                await foreach (SearchGoogleAdsStreamResponse resp in responseStream)
+                {
+                    emptyResult = false;
+                    await responseCallback(resp);
+                }
+                // Invoke the callback at least once to avoid confusion when there are no results
+                // and no errors.
+                if (emptyResult)
+                {
+                    await responseCallback(new SearchGoogleAdsStreamResponse());
+                }
+                return searchStream;
+            });
+
+            return t;
+        }
+
+        /// <summary>
         /// Runs a streaming search query and returns all rows that matches the query.
         /// </summary>
         /// <param name="customerId">ID of the customer for which the query is run.</param>
@@ -53,7 +117,10 @@ namespace Google.Ads.GoogleAds.V20.Services
         /// iterate further on the <see cref="SearchStreamStream"/> object to obtain results. You
         /// can however perform additional tasks like retrieving the trailing metadata. If you do
         /// not care about this additional information, it is fine to ignore the return value
-        /// of this method.</remarks>
+        /// of this method.
+        /// However, you must ensure that the response stream is disposed of after processing
+        /// is complete.
+        /// </remarks>
         public virtual Task<SearchStreamStream> SearchStreamAsync(
             string customerId,
             string query,
@@ -83,23 +150,25 @@ namespace Google.Ads.GoogleAds.V20.Services
         /// iterate further on the <see cref="SearchStreamStream"/> object to obtain results. You
         /// can however perform additional tasks like retrieving the trailing metadata. If you do
         /// not care about this additional information, it is fine to ignore the return value
-        /// of this method.</remarks>
+        /// of this method.
+        /// However, you must ensure that the response stream is disposed of after processing is
+        /// complete.
+        /// </remarks>
         public virtual Task<SearchStreamStream> SearchStreamAsync(
             SearchGoogleAdsStreamRequest request,
             Action<SearchGoogleAdsStreamResponse> responseCallback,
             CallSettings callSettings = null)
         {
-            SearchStreamStream searchStream = this.SearchStream(request, callSettings);
 
             // Issue a search request.
             Task<SearchStreamStream> t = Task.Run(async () =>
             {
+                SearchStreamStream searchStream = this.SearchStream(request, callSettings);
                 var responseStream = searchStream.GetResponseStream();
                 bool emptyResult = true;
-                while (await responseStream.MoveNextAsync().ConfigureAwait(false))
+                await foreach (SearchGoogleAdsStreamResponse resp in responseStream)
                 {
                     emptyResult = false;
-                    SearchGoogleAdsStreamResponse resp = responseStream.Current;
                     responseCallback(resp);
                 }
                 // Invoke the callback at least once to avoid confusion when there are no results
@@ -129,7 +198,10 @@ namespace Google.Ads.GoogleAds.V20.Services
         /// iterate further on the <see cref="SearchStreamStream"/> object to obtain results. You
         /// can however perform additional tasks like retrieving the trailing metadata. If you do
         /// not care about this additional information, it is fine to ignore the return value
-        /// of this method.</remarks>
+        /// of this method.
+        /// However, you must ensure that the response stream is disposed of after processing
+        /// is complete.
+        /// </remarks>
         public virtual SearchStreamStream SearchStream(
             string customerId,
             string query,
@@ -159,7 +231,10 @@ namespace Google.Ads.GoogleAds.V20.Services
         /// iterate further on the <see cref="SearchStreamStream"/> object to obtain results. You
         /// can however perform additional tasks like retrieving the trailing metadata. If you do
         /// not care about this additional information, it is fine to ignore the return value
-        /// of this method.</remarks>
+        /// of this method.
+        /// However, you must ensure that the response stream is disposed of after processing
+        /// is complete.
+        ///</remarks>
         public virtual SearchStreamStream SearchStream(SearchGoogleAdsStreamRequest request,
             Action<SearchGoogleAdsStreamResponse> responseCallback,
             CallSettings callSettings = null)

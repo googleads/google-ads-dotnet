@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V20.Errors {
           string.Concat(
             "CjZnb29nbGUvYWRzL2dvb2dsZWFkcy92MjAvZXJyb3JzL2V4cGVyaW1lbnRf",
             "ZXJyb3IucHJvdG8SH2dvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMC5lcnJvcnMi",
-            "qAkKE0V4cGVyaW1lbnRFcnJvckVudW0ikAkKD0V4cGVyaW1lbnRFcnJvchIP",
+            "3wkKE0V4cGVyaW1lbnRFcnJvckVudW0ixwkKD0V4cGVyaW1lbnRFcnJvchIP",
             "CgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIhCh1DQU5OT1RfU0VUX1NU",
             "QVJUX0RBVEVfSU5fUEFTVBACEh4KGkVORF9EQVRFX0JFRk9SRV9TVEFSVF9E",
             "QVRFEAMSIAocU1RBUlRfREFURV9UT09fRkFSX0lOX0ZVVFVSRRAEEh0KGURV",
@@ -52,13 +52,14 @@ namespace Google.Ads.GoogleAds.V20.Errors {
             "X0VYUEVSSU1FTlQQGxIwCixDQU5OT1RfQUREX0NBTVBBSUdOX1dJVEhfREVQ",
             "UkVDQVRFRF9BRF9UWVBFUxAcEjYKMkNBTk5PVF9FTkFCTEVfU1lOQ19GT1Jf",
             "VU5TVVBQT1JURURfRVhQRVJJTUVOVF9UWVBFEB0SJgoiSU5WQUxJRF9EVVJB",
-            "VElPTl9GT1JfQU5fRVhQRVJJTUVOVBAeQvQBCiNjb20uZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjIwLmVycm9yc0IURXhwZXJpbWVudEVycm9yUHJvdG9QAVpF",
-            "Z29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29v",
-            "Z2xlYWRzL3YyMC9lcnJvcnM7ZXJyb3JzogIDR0FBqgIfR29vZ2xlLkFkcy5H",
-            "b29nbGVBZHMuVjIwLkVycm9yc8oCH0dvb2dsZVxBZHNcR29vZ2xlQWRzXFYy",
-            "MFxFcnJvcnPqAiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjA6OkVycm9y",
-            "c2IGcHJvdG8z"));
+            "VElPTl9GT1JfQU5fRVhQRVJJTUVOVBAeEjUKMU1JU1NJTkdfRVVfUE9MSVRJ",
+            "Q0FMX0FEVkVSVElTSU5HX1NFTEZfREVDTEFSQVRJT04QH0L0AQojY29tLmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYyMC5lcnJvcnNCFEV4cGVyaW1lbnRFcnJv",
+            "clByb3RvUAFaRWdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
+            "aXMvYWRzL2dvb2dsZWFkcy92MjAvZXJyb3JzO2Vycm9yc6ICA0dBQaoCH0dv",
+            "b2dsZS5BZHMuR29vZ2xlQWRzLlYyMC5FcnJvcnPKAh9Hb29nbGVcQWRzXEdv",
+            "b2dsZUFkc1xWMjBcRXJyb3Jz6gIjR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6",
+            "VjIwOjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -365,6 +366,11 @@ namespace Google.Ads.GoogleAds.V20.Errors {
         /// Experiment length cannot be longer than max length.
         /// </summary>
         [pbr::OriginalName("INVALID_DURATION_FOR_AN_EXPERIMENT")] InvalidDurationForAnExperiment = 30,
+        /// <summary>
+        /// The experiment's campaigns must self-declare whether they contain
+        /// political advertising that targets the European Union.
+        /// </summary>
+        [pbr::OriginalName("MISSING_EU_POLITICAL_ADVERTISING_SELF_DECLARATION")] MissingEuPoliticalAdvertisingSelfDeclaration = 31,
       }
 
     }

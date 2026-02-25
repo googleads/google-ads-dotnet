@@ -13824,11 +13824,29 @@ namespace Google.Ads.GoogleAds.V22.Common {
   }
 
   /// <summary>
-  /// An IpBlock criterion used for IP exclusions. We allow:
-  ///  - IPv4 and IPv6 addresses
-  ///  - individual addresses (192.168.0.1)
-  ///  - masks for individual addresses (192.168.0.1/32)
-  ///  - masks for Class C networks (192.168.0.1/24)
+  /// An IpBlock criterion used for excluding IP addresses.
+  ///
+  /// We support excluding individual IP addresses or CIDR blocks. Create one
+  /// IpBlockInfo criterion for each individual IP address or CIDR block you want
+  /// to exclude. You can exclude up to 500 IP addresses per campaign. For more
+  /// details, see
+  /// [Exclude IP addresses](//support.google.com/google-ads/answer/2456098).
+  ///
+  /// IPv4 examples:
+  ///
+  ///  * Individual address: 192.168.0.1
+  ///
+  ///  * Individual address as CIDR block: 192.168.0.1/32
+  ///
+  ///  * CIDR block: 192.168.0.0/24
+  ///
+  /// IPv6 examples:
+  ///
+  ///  * Individual address: 2001:db8:a0b:12f0::1
+  ///
+  ///  * Individual address as CIDR block: 2001:db8:a0b:12f0::1/128
+  ///
+  ///  * CIDR block: 2001:db8::/48
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class IpBlockInfo : pb::IMessage<IpBlockInfo>
@@ -13881,7 +13899,7 @@ namespace Google.Ads.GoogleAds.V22.Common {
 
     private string ipAddress_;
     /// <summary>
-    /// The IP address of this IP block.
+    /// The IP address or the CIDR block to be excluded.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

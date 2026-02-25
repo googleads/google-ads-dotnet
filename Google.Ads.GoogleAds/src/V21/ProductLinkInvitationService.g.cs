@@ -1013,7 +1013,7 @@ namespace Google.Ads.GoogleAds.V21.Services {
 
   /// <summary>
   /// Request message for
-  /// [ProductLinkinvitationService.RemoveProductLinkInvitation][].
+  /// [ProductLinkInvitationService.RemoveProductLinkInvitation][google.ads.googleads.v21.services.ProductLinkInvitationService.RemoveProductLinkInvitation].
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RemoveProductLinkInvitationRequest : pb::IMessage<RemoveProductLinkInvitationRequest>
@@ -1083,7 +1083,8 @@ namespace Google.Ads.GoogleAds.V21.Services {
     /// Required. The resource name of the product link invitation being removed.
     /// expected, in this format:
     ///
-    /// ` `
+    /// `customers/{customer_id}/productLinkInvitations/{product_link_invitation_id}
+    /// `
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

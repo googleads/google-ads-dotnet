@@ -83,8 +83,17 @@ namespace Google.Ads.GoogleAds.V23.Resources {
   }
   #region Messages
   /// <summary>
-  /// A link between an AdGroupAd and an Asset. AdGroupAdAssetView supports AppAds,
-  /// Demand Gen campaigns, and Responsive Search Ads.
+  /// Represents a link between an AdGroupAd and an Asset.
+  /// This view provides insights into the performance of assets within specific
+  ///  ads.
+  ///
+  /// AdGroupAdAssetView supports the following ad types:
+  ///
+  /// * App Ads
+  /// * Demand Gen campaigns
+  /// * Responsive Search Ads
+  ///
+  /// It does not support Responsive Display Ads.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AdGroupAdAssetView : pb::IMessage<AdGroupAdAssetView>

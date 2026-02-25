@@ -4286,7 +4286,8 @@ namespace Google.Ads.GoogleAds.V20.Common {
         = pb::FieldCodec.ForEnum(10, x => (int) x, x => (global::Google.Ads.GoogleAds.V20.Enums.InsightsKnowledgeGraphEntityCapabilitiesEnum.Types.InsightsKnowledgeGraphEntityCapabilities) x);
     private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V20.Enums.InsightsKnowledgeGraphEntityCapabilitiesEnum.Types.InsightsKnowledgeGraphEntityCapabilities> entityCapabilities_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V20.Enums.InsightsKnowledgeGraphEntityCapabilitiesEnum.Types.InsightsKnowledgeGraphEntityCapabilities>();
     /// <summary>
-    /// The capabilities of the entity used in [ContentCreatorInsightsService][].
+    /// The capabilities of the entity used in
+    /// [ContentCreatorInsightsService][google.ads.googleads.v20.services.ContentCreatorInsightsService].
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

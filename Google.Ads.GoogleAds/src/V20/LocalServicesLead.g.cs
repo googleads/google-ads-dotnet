@@ -33,7 +33,7 @@ namespace Google.Ads.GoogleAds.V20.Resources {
             "YWxfc2VydmljZXNfbGVhZF90eXBlLnByb3RvGh9nb29nbGUvYXBpL2ZpZWxk",
             "X2JlaGF2aW9yLnByb3RvGhlnb29nbGUvYXBpL3Jlc291cmNlLnByb3RvItIG",
             "ChFMb2NhbFNlcnZpY2VzTGVhZBJJCg1yZXNvdXJjZV9uYW1lGAEgASgJQjLg",
-            "QQP6QSwKKmdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9Mb2NhbFNlcnZpY2Vz",
+            "QQX6QSwKKmdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9Mb2NhbFNlcnZpY2Vz",
             "TGVhZBIPCgJpZBgCIAEoA0ID4EEDEhgKC2NhdGVnb3J5X2lkGAMgASgJQgPg",
             "QQMSFwoKc2VydmljZV9pZBgEIAEoCUID4EEDElAKD2NvbnRhY3RfZGV0YWls",
             "cxgFIAEoCzIyLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMC5yZXNvdXJjZXMu",
@@ -145,7 +145,7 @@ namespace Google.Ads.GoogleAds.V20.Resources {
     public const int ResourceNameFieldNumber = 1;
     private string resourceName_ = "";
     /// <summary>
-    /// Output only. The resource name of the local services lead data.
+    /// Immutable. The resource name of the local services lead data.
     /// Local Services Lead resource name have the form
     ///
     /// `customers/{customer_id}/localServicesLead/{local_services_lead_id}`
@@ -850,7 +850,10 @@ namespace Google.Ads.GoogleAds.V20.Resources {
     public const int PhoneNumberFieldNumber = 1;
     private string phoneNumber_ = "";
     /// <summary>
-    /// Output only. Consumer phone number in E164 format.
+    /// Output only. Phone number of the consumer for the lead. This can be a real
+    /// phone number or a tracking number. The phone number is returned in E164
+    /// format. See https://support.google.com/google-ads/answer/16355235?hl=en to
+    /// learn more. Example: +16504519489.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

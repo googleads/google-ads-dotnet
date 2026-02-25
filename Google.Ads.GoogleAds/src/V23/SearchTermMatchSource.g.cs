@@ -26,17 +26,18 @@ namespace Google.Ads.GoogleAds.V23.Enums {
           string.Concat(
             "Cj1nb29nbGUvYWRzL2dvb2dsZWFkcy92MjMvZW51bXMvc2VhcmNoX3Rlcm1f",
             "bWF0Y2hfc291cmNlLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMu",
-            "ZW51bXMi0QEKGVNlYXJjaFRlcm1NYXRjaFNvdXJjZUVudW0iswEKFVNlYXJj",
+            "ZW51bXMi7QEKGVNlYXJjaFRlcm1NYXRjaFNvdXJjZUVudW0izwEKFVNlYXJj",
             "aFRlcm1NYXRjaFNvdXJjZRIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04Q",
             "ARIfChtBRFZFUlRJU0VSX1BST1ZJREVEX0tFWVdPUkQQAhIWChJBSV9NQVhf",
             "S0VZV09SRExFU1MQAxIWChJBSV9NQVhfQlJPQURfTUFUQ0gQBBIWChJEWU5B",
-            "TUlDX1NFQVJDSF9BRFMQBRITCg9QRVJGT1JNQU5DRV9NQVgQBkL0AQoiY29t",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5lbnVtc0IaU2VhcmNoVGVybU1h",
-            "dGNoU291cmNlUHJvdG9QAVpDZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8v",
-            "Z29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YyMy9lbnVtcztlbnVtc6ICA0dB",
-            "QaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYyMy5FbnVtc8oCHkdvb2dsZVxB",
-            "ZHNcR29vZ2xlQWRzXFYyM1xFbnVtc+oCIkdvb2dsZTo6QWRzOjpHb29nbGVB",
-            "ZHM6OlYyMzo6RW51bXNiBnByb3RvMw=="));
+            "TUlDX1NFQVJDSF9BRFMQBRITCg9QRVJGT1JNQU5DRV9NQVgQBhIaChZWRVJU",
+            "SUNBTF9BRFNfREFUQV9GRUVEEAdC9AEKImNvbS5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MjMuZW51bXNCGlNlYXJjaFRlcm1NYXRjaFNvdXJjZVByb3RvUAFa",
+            "Q2dvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dv",
+            "b2dsZWFkcy92MjMvZW51bXM7ZW51bXOiAgNHQUGqAh5Hb29nbGUuQWRzLkdv",
+            "b2dsZUFkcy5WMjMuRW51bXPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMjNc",
+            "RW51bXPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjM6OkVudW1zYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -239,6 +240,11 @@ namespace Google.Ads.GoogleAds.V23.Enums {
         /// The match is from the search term matching functionality in PMax.
         /// </summary>
         [pbr::OriginalName("PERFORMANCE_MAX")] PerformanceMax = 6,
+        /// <summary>
+        /// The match is from a vertical ads data feed (e.g. Travel Ads entity
+        /// targeting).
+        /// </summary>
+        [pbr::OriginalName("VERTICAL_ADS_DATA_FEED")] VerticalAdsDataFeed = 7,
       }
 
     }
