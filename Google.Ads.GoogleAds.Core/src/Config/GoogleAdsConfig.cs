@@ -13,6 +13,7 @@
 // limitations under the License.
 
 using Google.Ads.Gax.Config;
+using System;
 using System.Collections.Generic;
 
 namespace Google.Ads.GoogleAds.Config
@@ -79,6 +80,9 @@ namespace Google.Ads.GoogleAds.Config
         /// </summary>
         private readonly ConfigSetting<bool> useCloudOrgForApiAccess =
             new ConfigSetting<bool>(ConfigSettingNames.USE_CLOUD_ORG_FOR_API_ACCESS, false);
+
+        private readonly StringConfigSetting adsApiAssistant = new StringConfigSetting(
+            ConfigSettingNames.ADS_API_ASSISTANT, "");
 
         /// <summary>
         /// Gets or sets the Google Ads API server URL.
@@ -152,6 +156,15 @@ namespace Google.Ads.GoogleAds.Config
         {
             get => useCloudOrgForApiAccess.Value;
             set => SetPropertyAndNotify(useCloudOrgForApiAccess, value);
+        }
+
+        /// <summary>
+        /// Gets or sets the Google Ads API assistant metadata.
+        /// </summary>
+        public string AdsApiAssistant
+        {
+            get => adsApiAssistant.Value;
+            set => SetPropertyAndNotify(adsApiAssistant, value);
         }
 
         /// <summary>

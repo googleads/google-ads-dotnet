@@ -154,6 +154,12 @@ namespace Google.Ads.GoogleAds.Lib
                     config.LibraryIdentifierOverride);
             }
 
+            if (!string.IsNullOrEmpty(config.AdsApiAssistant))
+            {
+                callSettings = callSettings.WithHeader(MetadataKeyNames.AdsApiAssistant,
+                    config.AdsApiAssistant);
+            }
+
             callSettings = callSettings.WithExpiration(Expiration.FromTimeout(
                 TimeSpan.FromMilliseconds(config.Timeout)));
 

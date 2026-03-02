@@ -76,5 +76,11 @@ namespace Google.Ads.Gax.Config
         /// or not to use application default credentials to authenticate.
         /// </summary>
         public const string USE_APPLICATION_DEFAULT_CREDENTIALS = "UseApplicationDefaultCredentials";
+
+        /// <summary>
+        /// The configuration setting name for the flag that sets the Google
+        /// Ads API assistant metadata.
+        /// </summary>
+        public const string ADS_API_ASSISTANT = "AdsApiAssistant";
     }
 }

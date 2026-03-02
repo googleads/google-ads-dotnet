@@ -88,5 +88,11 @@ namespace Google.Ads.GoogleAds.Lib
         /// </summary>
         internal const string LocalServicesLeadConversationMessageDetailText =
             "local_services_lead_conversation.message_details.text";
+
+        /// <summary>
+        /// The metadata key name for the Google Ads API assistant metadata.
+        /// </summary>
+        internal const string AdsApiAssistant = 
+            "google-ads-api-assistant";
     }
 }
