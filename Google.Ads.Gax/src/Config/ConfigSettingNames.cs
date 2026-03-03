@@ -81,6 +81,6 @@ namespace Google.Ads.Gax.Config
         /// The configuration setting name for the flag that sets the Google
         /// Ads API assistant metadata.
         /// </summary>
-        public const string ADS_API_ASSISTANT = "AdsApiAssistant";
+        public const string ADS_API_ASSISTANT = "gaada";
     }
 }

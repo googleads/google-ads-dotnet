@@ -197,6 +197,7 @@ namespace Google.Ads.GoogleAds.Config
             ReadSetting(settings, linkedCustomerId);
             ReadSetting(settings, clientCustomerId);
             ReadSetting(settings, useCloudOrgForApiAccess);
+            ReadSetting(settings, adsApiAssistant);
         }
 
         /// <summary>

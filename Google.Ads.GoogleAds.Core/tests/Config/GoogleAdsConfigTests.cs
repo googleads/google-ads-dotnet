@@ -124,6 +124,11 @@ namespace Google.Ads.GoogleAds.Tests.Config
         private const string PROXY_DOMAIN_VALUE = "TEST_PROXY_DOMAIN";
 
         /// <summary>
+        /// Test value for <see cref="GoogleAdsConfig.AdsApiAssistant"/> 
+        /// </summary>
+        private const string GAADA_VALUE = "2.0.0";
+
+        /// <summary>
         /// The test configuration settings.
         /// </summary>
         private readonly Dictionary<string, string> CONFIG_SETTINGS =
@@ -148,6 +153,7 @@ namespace Google.Ads.GoogleAds.Tests.Config
                 { "ProxyUser", PROXY_USER_VALUE },
                 { "ProxyPassword", PROXY_PASSWORD_VALUE },
                 { "ProxyDomain", PROXY_DOMAIN_VALUE },
+                { "gaada", GAADA_VALUE }
             };
 
         public GoogleAdsConfigTests() : base() { }
@@ -181,6 +187,8 @@ namespace Google.Ads.GoogleAds.Tests.Config
             Assert.AreEqual(PROXY_USER_VALUE, credential.UserName);
             Assert.AreEqual(PROXY_PASSWORD_VALUE, credential.Password);
             Assert.AreEqual(PROXY_DOMAIN_VALUE, credential.Domain);
+            
+            Assert.AreEqual(GAADA_VALUE, this.AdsApiAssistant);
         }
     }
 }
