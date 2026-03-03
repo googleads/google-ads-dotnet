@@ -92,7 +92,7 @@ namespace Google.Ads.GoogleAds.Lib
         /// <summary>
         /// The metadata key name for the Google Ads API assistant metadata.
         /// </summary>
-        internal const string AdsApiAssistant = 
+        internal const string AdsApiAssistantMetadata = 
             "gaada";
     }
 }

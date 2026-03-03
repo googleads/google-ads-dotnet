@@ -188,7 +188,7 @@ namespace Google.Ads.GoogleAds.Tests.Config
             Assert.AreEqual(PROXY_PASSWORD_VALUE, credential.Password);
             Assert.AreEqual(PROXY_DOMAIN_VALUE, credential.Domain);
             
-            Assert.AreEqual(GAADA_VALUE, this.AdsApiAssistant);
+            Assert.AreEqual(GAADA_VALUE, this.AdsApiAssistantMetadata);
         }
     }
 }

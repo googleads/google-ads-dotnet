@@ -81,8 +81,8 @@ namespace Google.Ads.GoogleAds.Config
         private readonly ConfigSetting<bool> useCloudOrgForApiAccess =
             new ConfigSetting<bool>(ConfigSettingNames.USE_CLOUD_ORG_FOR_API_ACCESS, false);
 
-        private readonly StringConfigSetting adsApiAssistant = new StringConfigSetting(
-            ConfigSettingNames.ADS_API_ASSISTANT, "");
+        private readonly StringConfigSetting adsApiAssistantMetadata = new StringConfigSetting(
+            ConfigSettingNames.ADS_API_ASSISTANT_METADATA, "");
 
         /// <summary>
         /// Gets or sets the Google Ads API server URL.
@@ -161,10 +161,10 @@ namespace Google.Ads.GoogleAds.Config
         /// <summary>
         /// Gets or sets the Google Ads API assistant metadata.
         /// </summary>
-        public string AdsApiAssistant
+        public string AdsApiAssistantMetadata
         {
-            get => adsApiAssistant.Value;
-            set => SetPropertyAndNotify(adsApiAssistant, value);
+            get => adsApiAssistantMetadata.Value;
+            set => SetPropertyAndNotify(adsApiAssistantMetadata, value);
         }
 
         /// <summary>
@@ -197,7 +197,7 @@ namespace Google.Ads.GoogleAds.Config
             ReadSetting(settings, linkedCustomerId);
             ReadSetting(settings, clientCustomerId);
             ReadSetting(settings, useCloudOrgForApiAccess);
-            ReadSetting(settings, adsApiAssistant);
+            ReadSetting(settings, adsApiAssistantMetadata);
         }
 
         /// <summary>
