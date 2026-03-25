@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V23.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjNnb29nbGUvYWRzL2dvb2dsZWFkcy92MjMvZXJyb3JzL3JlcXVlc3RfZXJy",
-            "b3IucHJvdG8SH2dvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5lcnJvcnMijgcK",
-            "EFJlcXVlc3RFcnJvckVudW0i+QYKDFJlcXVlc3RFcnJvchIPCgtVTlNQRUNJ",
+            "b3IucHJvdG8SH2dvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5lcnJvcnMirgcK",
+            "EFJlcXVlc3RFcnJvckVudW0imQcKDFJlcXVlc3RFcnJvchIPCgtVTlNQRUNJ",
             "RklFRBAAEgsKB1VOS05PV04QARIZChVSRVNPVVJDRV9OQU1FX01JU1NJTkcQ",
             "AxIbChdSRVNPVVJDRV9OQU1FX01BTEZPUk1FRBAEEhMKD0JBRF9SRVNPVVJD",
             "RV9JRBAREhcKE0lOVkFMSURfQ1VTVE9NRVJfSUQQEBIWChJPUEVSQVRJT05f",
@@ -34,24 +34,25 @@ namespace Google.Ads.GoogleAds.V23.Errors {
             "X1BBR0VfVE9LRU4QBxIWChJFWFBJUkVEX1BBR0VfVE9LRU4QCBIVChFJTlZB",
             "TElEX1BBR0VfU0laRRAWEhsKF1BBR0VfU0laRV9OT1RfU1VQUE9SVEVEECgS",
             "GgoWUkVRVUlSRURfRklFTERfTUlTU0lORxAJEhMKD0lNTVVUQUJMRV9GSUVM",
-            "RBALEh4KGlRPT19NQU5ZX01VVEFURV9PUEVSQVRJT05TEA0SKQolQ0FOTk9U",
-            "X0JFX0VYRUNVVEVEX0JZX01BTkFHRVJfQUNDT1VOVBAOEh8KG0NBTk5PVF9N",
-            "T0RJRllfRk9SRUlHTl9GSUVMRBAPEhYKEklOVkFMSURfRU5VTV9WQUxVRRAS",
-            "EiUKIURFVkVMT1BFUl9UT0tFTl9QQVJBTUVURVJfTUlTU0lORxATEicKI0xP",
-            "R0lOX0NVU1RPTUVSX0lEX1BBUkFNRVRFUl9NSVNTSU5HEBQSKAokVkFMSURB",
-            "VEVfT05MWV9SRVFVRVNUX0hBU19QQUdFX1RPS0VOEBUSOQo1Q0FOTk9UX1JF",
-            "VFVSTl9TVU1NQVJZX1JPV19GT1JfUkVRVUVTVF9XSVRIT1VUX01FVFJJQ1MQ",
-            "HRI4CjRDQU5OT1RfUkVUVVJOX1NVTU1BUllfUk9XX0ZPUl9WQUxJREFURV9P",
-            "TkxZX1JFUVVFU1RTEB4SKQolSU5DT05TSVNURU5UX1JFVFVSTl9TVU1NQVJZ",
-            "X1JPV19WQUxVRRAfEjAKLFRPVEFMX1JFU1VMVFNfQ09VTlRfTk9UX09SSUdJ",
-            "TkFMTFlfUkVRVUVTVEVEECASGgoWUlBDX0RFQURMSU5FX1RPT19TSE9SVBAh",
-            "EhcKE1VOU1VQUE9SVEVEX1ZFUlNJT04QJhIbChdDTE9VRF9QUk9KRUNUX05P",
-            "VF9GT1VORBAnQvEBCiNjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmVy",
-            "cm9yc0IRUmVxdWVzdEVycm9yUHJvdG9QAVpFZ29vZ2xlLmdvbGFuZy5vcmcv",
-            "Z2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YyMy9lcnJvcnM7",
-            "ZXJyb3JzogIDR0FBqgIfR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjIzLkVycm9y",
-            "c8oCH0dvb2dsZVxBZHNcR29vZ2xlQWRzXFYyM1xFcnJvcnPqAiNHb29nbGU6",
-            "OkFkczo6R29vZ2xlQWRzOjpWMjM6OkVycm9yc2IGcHJvdG8z"));
+            "RBALEh4KGlRPT19NQU5ZX01VVEFURV9PUEVSQVRJT05TEA0SHgoaVE9PX01B",
+            "TllfQUNUSU9OX09QRVJBVElPTlMQKRIpCiVDQU5OT1RfQkVfRVhFQ1VURURf",
+            "QllfTUFOQUdFUl9BQ0NPVU5UEA4SHwobQ0FOTk9UX01PRElGWV9GT1JFSUdO",
+            "X0ZJRUxEEA8SFgoSSU5WQUxJRF9FTlVNX1ZBTFVFEBISJQohREVWRUxPUEVS",
+            "X1RPS0VOX1BBUkFNRVRFUl9NSVNTSU5HEBMSJwojTE9HSU5fQ1VTVE9NRVJf",
+            "SURfUEFSQU1FVEVSX01JU1NJTkcQFBIoCiRWQUxJREFURV9PTkxZX1JFUVVF",
+            "U1RfSEFTX1BBR0VfVE9LRU4QFRI5CjVDQU5OT1RfUkVUVVJOX1NVTU1BUllf",
+            "Uk9XX0ZPUl9SRVFVRVNUX1dJVEhPVVRfTUVUUklDUxAdEjgKNENBTk5PVF9S",
+            "RVRVUk5fU1VNTUFSWV9ST1dfRk9SX1ZBTElEQVRFX09OTFlfUkVRVUVTVFMQ",
+            "HhIpCiVJTkNPTlNJU1RFTlRfUkVUVVJOX1NVTU1BUllfUk9XX1ZBTFVFEB8S",
+            "MAosVE9UQUxfUkVTVUxUU19DT1VOVF9OT1RfT1JJR0lOQUxMWV9SRVFVRVNU",
+            "RUQQIBIaChZSUENfREVBRExJTkVfVE9PX1NIT1JUECESFwoTVU5TVVBQT1JU",
+            "RURfVkVSU0lPThAmEhsKF0NMT1VEX1BST0pFQ1RfTk9UX0ZPVU5EECdC8QEK",
+            "I2NvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMuZXJyb3JzQhFSZXF1ZXN0",
+            "RXJyb3JQcm90b1ABWkVnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29n",
+            "bGVhcGlzL2Fkcy9nb29nbGVhZHMvdjIzL2Vycm9ycztlcnJvcnOiAgNHQUGq",
+            "Ah9Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMjMuRXJyb3JzygIfR29vZ2xlXEFk",
+            "c1xHb29nbGVBZHNcVjIzXEVycm9yc+oCI0dvb2dsZTo6QWRzOjpHb29nbGVB",
+            "ZHM6OlYyMzo6RXJyb3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -192,7 +193,11 @@ namespace Google.Ads.GoogleAds.V23.Errors {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -207,7 +212,11 @@ namespace Google.Ads.GoogleAds.V23.Errors {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -287,6 +296,10 @@ namespace Google.Ads.GoogleAds.V23.Errors {
         /// Received too many entries in request.
         /// </summary>
         [pbr::OriginalName("TOO_MANY_MUTATE_OPERATIONS")] TooManyMutateOperations = 13,
+        /// <summary>
+        /// Received too many action operations in request.
+        /// </summary>
+        [pbr::OriginalName("TOO_MANY_ACTION_OPERATIONS")] TooManyActionOperations = 41,
         /// <summary>
         /// Request cannot be executed by a manager account.
         /// </summary>

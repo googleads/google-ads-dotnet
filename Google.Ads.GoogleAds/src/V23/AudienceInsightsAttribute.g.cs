@@ -120,13 +120,15 @@ namespace Google.Ads.GoogleAds.V23.Common {
             "TGlzdFR5cGVFbnVtLlVzZXJMaXN0VHlwZSKAAQomQXVkaWVuY2VJbnNpZ2h0",
             "c0F0dHJpYnV0ZU1ldGFkYXRhR3JvdXASVgoKYXR0cmlidXRlcxgBIAMoCzJC",
             "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5jb21tb24uQXVkaWVuY2VJbnNp",
-            "Z2h0c0F0dHJpYnV0ZU1ldGFkYXRhQv4BCiNjb20uZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjIzLmNvbW1vbkIeQXVkaWVuY2VJbnNpZ2h0c0F0dHJpYnV0ZVBy",
-            "b3RvUAFaRWdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMv",
-            "YWRzL2dvb2dsZWFkcy92MjMvY29tbW9uO2NvbW1vbqICA0dBQaoCH0dvb2ds",
-            "ZS5BZHMuR29vZ2xlQWRzLlYyMy5Db21tb27KAh9Hb29nbGVcQWRzXEdvb2ds",
-            "ZUFkc1xWMjNcQ29tbW9u6gIjR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjIz",
-            "OjpDb21tb25iBnByb3RvMw=="));
+            "Z2h0c0F0dHJpYnV0ZU1ldGFkYXRhInUKHkluc2lnaHRzQXVkaWVuY2VBdHRy",
+            "aWJ1dGVHcm91cBJTCgphdHRyaWJ1dGVzGAEgAygLMjouZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjIzLmNvbW1vbi5BdWRpZW5jZUluc2lnaHRzQXR0cmlidXRl",
+            "QgPgQQJC/gEKI2NvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMuY29tbW9u",
+            "Qh5BdWRpZW5jZUluc2lnaHRzQXR0cmlidXRlUHJvdG9QAVpFZ29vZ2xlLmdv",
+            "bGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Yy",
+            "My9jb21tb247Y29tbW9uogIDR0FBqgIfR29vZ2xlLkFkcy5Hb29nbGVBZHMu",
+            "VjIzLkNvbW1vbsoCH0dvb2dsZVxBZHNcR29vZ2xlQWRzXFYyM1xDb21tb27q",
+            "AiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjM6OkNvbW1vbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V23.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.AudienceInsightsDimensionReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.InsightsKnowledgeGraphEntityCapabilitiesReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.UserListTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.YoutubeVideoPropertyReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -142,7 +144,8 @@ namespace Google.Ads.GoogleAds.V23.Common {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Common.UserInterestAttributeMetadata), global::Google.Ads.GoogleAds.V23.Common.UserInterestAttributeMetadata.Parser, new[]{ "UserInterestDescription" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Common.KnowledgeGraphAttributeMetadata), global::Google.Ads.GoogleAds.V23.Common.KnowledgeGraphAttributeMetadata.Parser, new[]{ "EntityCapabilities", "RelatedCategories" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Common.UserListAttributeMetadata), global::Google.Ads.GoogleAds.V23.Common.UserListAttributeMetadata.Parser, new[]{ "UserListType" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Common.AudienceInsightsAttributeMetadataGroup), global::Google.Ads.GoogleAds.V23.Common.AudienceInsightsAttributeMetadataGroup.Parser, new[]{ "Attributes" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Common.AudienceInsightsAttributeMetadataGroup), global::Google.Ads.GoogleAds.V23.Common.AudienceInsightsAttributeMetadataGroup.Parser, new[]{ "Attributes" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Common.InsightsAudienceAttributeGroup), global::Google.Ads.GoogleAds.V23.Common.InsightsAudienceAttributeGroup.Parser, new[]{ "Attributes" }, null, null, null, null)
           }));
     }
     #endregion
@@ -810,7 +813,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -919,7 +926,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1679,7 +1690,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1811,7 +1826,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -2101,7 +2120,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -2120,7 +2143,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -2297,7 +2324,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -2316,7 +2347,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -2493,7 +2528,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -2512,7 +2551,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -2689,7 +2732,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -2708,7 +2755,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -3066,7 +3117,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -3110,7 +3165,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -3479,7 +3538,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -3517,7 +3580,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -3786,7 +3853,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -3819,7 +3890,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
@@ -4019,7 +4094,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -4041,7 +4120,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -4222,7 +4305,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -4241,7 +4328,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -4429,7 +4520,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -4453,7 +4548,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -4635,7 +4734,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -4654,7 +4757,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -4821,7 +4928,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -4840,7 +4951,207 @@ namespace Google.Ads.GoogleAds.V23.Common {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            attributes_.AddEntriesFrom(ref input, _repeated_attributes_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// A list of AudienceInsightsAttributes.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class InsightsAudienceAttributeGroup : pb::IMessage<InsightsAudienceAttributeGroup>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<InsightsAudienceAttributeGroup> _parser = new pb::MessageParser<InsightsAudienceAttributeGroup>(() => new InsightsAudienceAttributeGroup());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<InsightsAudienceAttributeGroup> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V23.Common.AudienceInsightsAttributeReflection.Descriptor.MessageTypes[13]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public InsightsAudienceAttributeGroup() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public InsightsAudienceAttributeGroup(InsightsAudienceAttributeGroup other) : this() {
+      attributes_ = other.attributes_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public InsightsAudienceAttributeGroup Clone() {
+      return new InsightsAudienceAttributeGroup(this);
+    }
+
+    /// <summary>Field number for the "attributes" field.</summary>
+    public const int AttributesFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V23.Common.AudienceInsightsAttribute> _repeated_attributes_codec
+        = pb::FieldCodec.ForMessage(10, global::Google.Ads.GoogleAds.V23.Common.AudienceInsightsAttribute.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V23.Common.AudienceInsightsAttribute> attributes_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V23.Common.AudienceInsightsAttribute>();
+    /// <summary>
+    /// Required. A collection of audience attributes combined with logical OR.
+    /// Attributes need not all be the same dimension. Only Knowledge Graph
+    /// entities, Product &amp; Service Categories, and user interests are supported in
+    /// this context.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V23.Common.AudienceInsightsAttribute> Attributes {
+      get { return attributes_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as InsightsAudienceAttributeGroup);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(InsightsAudienceAttributeGroup other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!attributes_.Equals(other.attributes_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= attributes_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      attributes_.WriteTo(output, _repeated_attributes_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      attributes_.WriteTo(ref output, _repeated_attributes_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += attributes_.CalculateSize(_repeated_attributes_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(InsightsAudienceAttributeGroup other) {
+      if (other == null) {
+        return;
+      }
+      attributes_.Add(other.attributes_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            attributes_.AddEntriesFrom(input, _repeated_attributes_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

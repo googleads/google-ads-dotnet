@@ -1808,6 +1808,27 @@
         }
       }
     },
+    "ReservationService": {
+      "clients": {
+        "grpc": {
+          "libraryClient": "ReservationServiceClient",
+          "rpcs": {
+            "BookCampaigns": {
+              "methods": [
+                "BookCampaigns",
+                "BookCampaignsAsync"
+              ]
+            },
+            "QuoteCampaigns": {
+              "methods": [
+                "QuoteCampaigns",
+                "QuoteCampaignsAsync"
+              ]
+            }
+          }
+        }
+      }
+    },
     "ShareablePreviewService": {
       "clients": {
         "grpc": {

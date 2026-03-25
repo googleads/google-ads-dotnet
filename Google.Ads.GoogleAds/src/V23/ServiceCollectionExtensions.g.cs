@@ -3597,6 +3597,42 @@ namespace Microsoft.Extensions.DependencyInjection
             });
 
         /// <summary>
+        /// Adds a singleton <see cref="gagvs::ReservationServiceClient"/> to <paramref name="services"/>.
+        /// </summary>
+        /// <param name="services">
+        /// The service collection to add the client to. The services are used to configure the client when requested.
+        /// </param>
+        /// <param name="action">
+        /// An optional action to invoke on the client builder. This is invoked before services from
+        /// <paramref name="services"/> are used.
+        /// </param>
+        internal static IServiceCollection AddReservationServiceClient(this IServiceCollection services, sys::Action<gagvs::ReservationServiceClientBuilder> action = null) =>
+            services.AddSingleton(provider =>
+            {
+                gagvs::ReservationServiceClientBuilder builder = new gagvs::ReservationServiceClientBuilder();
+                action?.Invoke(builder);
+                return builder.Build(provider);
+            });
+
+        /// <summary>
+        /// Adds a singleton <see cref="gagvs::ReservationServiceClient"/> to <paramref name="services"/>.
+        /// </summary>
+        /// <param name="services">
+        /// The service collection to add the client to. The services are used to configure the client when requested.
+        /// </param>
+        /// <param name="action">
+        /// An optional action to invoke on the client builder. This is invoked before services from
+        /// <paramref name="services"/> are used.
+        /// </param>
+        internal static IServiceCollection AddReservationServiceClient(this IServiceCollection services, sys::Action<sys::IServiceProvider, gagvs::ReservationServiceClientBuilder> action) =>
+            services.AddSingleton(provider =>
+            {
+                gagvs::ReservationServiceClientBuilder builder = new gagvs::ReservationServiceClientBuilder();
+                action?.Invoke(provider, builder);
+                return builder.Build(provider);
+            });
+
+        /// <summary>
         /// Adds a singleton <see cref="gagvs::ShareablePreviewServiceClient"/> to <paramref name="services"/>.
         /// </summary>
         /// <param name="services">

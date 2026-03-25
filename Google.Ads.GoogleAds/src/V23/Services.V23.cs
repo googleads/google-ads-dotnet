@@ -825,6 +825,14 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v23/ReservationService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<ReservationServiceClient, ReservationServiceSettings, GoogleAdsConfig> ReservationService =
+                new ServiceTemplate<ReservationServiceClient, ReservationServiceSettings, GoogleAdsConfig>(Create);
+
+
+            /// <summary>
             /// See https://developers.google.com/google-ads/api/reference/rpc/v23/ShareablePreviewService
             /// for details.
             /// </summary>
@@ -1318,6 +1326,10 @@ namespace Google.Ads.GoogleAds
 
                     case "RemarketingActionServiceClient":
                         return RemarketingActionServiceClient.Create(callInvoker, (RemarketingActionServiceSettings) settings);
+
+
+                    case "ReservationServiceClient":
+                        return ReservationServiceClient.Create(callInvoker, (ReservationServiceSettings) settings);
 
 
                     case "ShareablePreviewServiceClient":

@@ -213,7 +213,11 @@ namespace Google.Ads.GoogleAds.V23.Errors {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -228,7 +232,11 @@ namespace Google.Ads.GoogleAds.V23.Errors {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -255,7 +263,7 @@ namespace Google.Ads.GoogleAds.V23.Errors {
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
-        /// The customer is not is not on the allow-list for this asset type.
+        /// The customer is not on the allow-list for this asset type.
         /// </summary>
         [pbr::OriginalName("CUSTOMER_NOT_ON_ALLOWLIST_FOR_ASSET_TYPE")] CustomerNotOnAllowlistForAssetType = 13,
         /// <summary>
@@ -268,7 +276,7 @@ namespace Google.Ads.GoogleAds.V23.Errors {
         /// </summary>
         [pbr::OriginalName("DUPLICATE_ASSET_NAME")] DuplicateAssetName = 4,
         /// <summary>
-        /// The Asset.asset_data oneof is empty.
+        /// The `Asset.asset_data` oneof is empty.
         /// </summary>
         [pbr::OriginalName("ASSET_DATA_IS_MISSING")] AssetDataIsMissing = 5,
         /// <summary>
@@ -320,13 +328,13 @@ namespace Google.Ads.GoogleAds.V23.Errors {
         /// </summary>
         [pbr::OriginalName("TOO_MANY_DECIMAL_PLACES_SPECIFIED")] TooManyDecimalPlacesSpecified = 17,
         /// <summary>
-        /// Duplicate assets across operations, which have identical Asset.asset_data
-        /// oneof, cannot have different asset level fields for asset types which are
-        /// deduped.
+        /// Duplicate assets across operations, which have identical
+        /// `Asset.asset_data` oneof, cannot have different asset level fields for
+        /// asset types which are deduped.
         /// </summary>
         [pbr::OriginalName("DUPLICATE_ASSETS_WITH_DIFFERENT_FIELD_VALUE")] DuplicateAssetsWithDifferentFieldValue = 18,
         /// <summary>
-        /// Carrier specific short number is not allowed.
+        /// Carrier-specific short number is not allowed.
         /// </summary>
         [pbr::OriginalName("CALL_CARRIER_SPECIFIC_SHORT_NUMBER_NOT_ALLOWED")] CallCarrierSpecificShortNumberNotAllowed = 19,
         /// <summary>
@@ -338,9 +346,9 @@ namespace Google.Ads.GoogleAds.V23.Errors {
         /// </summary>
         [pbr::OriginalName("CALL_DISALLOWED_NUMBER_TYPE")] CallDisallowedNumberType = 21,
         /// <summary>
-        /// If the default call_conversion_action is not used, the customer must have
-        /// a ConversionAction with the same id and the ConversionAction must be call
-        /// conversion type.
+        /// If the default `call_conversion_action` is not used, the customer must
+        /// have a `ConversionAction` with the same id and the `ConversionAction`
+        /// must be call conversion type.
         /// </summary>
         [pbr::OriginalName("CALL_INVALID_CONVERSION_ACTION")] CallInvalidConversionAction = 22,
         /// <summary>
@@ -356,7 +364,7 @@ namespace Google.Ads.GoogleAds.V23.Errors {
         /// </summary>
         [pbr::OriginalName("CALL_INVALID_PHONE_NUMBER")] CallInvalidPhoneNumber = 25,
         /// <summary>
-        /// The phone number is not supported for country.
+        /// The phone number is not supported for this country.
         /// </summary>
         [pbr::OriginalName("CALL_PHONE_NUMBER_NOT_SUPPORTED_FOR_COUNTRY")] CallPhoneNumberNotSupportedForCountry = 26,
         /// <summary>
@@ -368,11 +376,11 @@ namespace Google.Ads.GoogleAds.V23.Errors {
         /// </summary>
         [pbr::OriginalName("CALL_VANITY_PHONE_NUMBER_NOT_ALLOWED")] CallVanityPhoneNumberNotAllowed = 28,
         /// <summary>
-        /// PriceOffering cannot have the same value for header and description.
+        /// `PriceOffering` cannot have the same value for header and description.
         /// </summary>
         [pbr::OriginalName("PRICE_HEADER_SAME_AS_DESCRIPTION")] PriceHeaderSameAsDescription = 29,
         /// <summary>
-        /// AppId is invalid.
+        /// `AppId` is invalid.
         /// </summary>
         [pbr::OriginalName("MOBILE_APP_INVALID_APP_ID")] MobileAppInvalidAppId = 30,
         /// <summary>
@@ -401,7 +409,7 @@ namespace Google.Ads.GoogleAds.V23.Errors {
         /// </summary>
         [pbr::OriginalName("CANNOT_MODIFY_AUTOMATICALLY_CREATED_ASSET")] CannotModifyAutomaticallyCreatedAsset = 36,
         /// <summary>
-        /// Lead Form is disallowed to use "LOCATION" answer type.
+        /// Lead Form is disallowed to use `LOCATION` answer type.
         /// </summary>
         [pbr::OriginalName("LEAD_FORM_LOCATION_ANSWER_TYPE_DISALLOWED")] LeadFormLocationAnswerTypeDisallowed = 37,
         /// <summary>
@@ -413,7 +421,7 @@ namespace Google.Ads.GoogleAds.V23.Errors {
         /// </summary>
         [pbr::OriginalName("CUSTOMER_NOT_ON_ALLOWLIST_FOR_WHATSAPP_MESSAGE_ASSETS")] CustomerNotOnAllowlistForWhatsappMessageAssets = 39,
         /// <summary>
-        /// Only customers on the allowlist can create AppDeepLinkAsset.
+        /// Only customers on the allowlist can create `AppDeepLinkAsset`.
         /// </summary>
         [pbr::OriginalName("CUSTOMER_NOT_ON_ALLOWLIST_FOR_APP_DEEP_LINK_ASSETS")] CustomerNotOnAllowlistForAppDeepLinkAssets = 40,
         /// <summary>
