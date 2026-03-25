@@ -26,16 +26,18 @@ namespace Google.Ads.GoogleAds.V23.Errors {
           string.Concat(
             "Cj1nb29nbGUvYWRzL2dvb2dsZWFkcy92MjMvZXJyb3JzL3NoYXJlYWJsZV9w",
             "cmV2aWV3X2Vycm9yLnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMu",
-            "ZXJyb3JzIq0BChlTaGFyZWFibGVQcmV2aWV3RXJyb3JFbnVtIo8BChVTaGFy",
+            "ZXJyb3JzIukBChlTaGFyZWFibGVQcmV2aWV3RXJyb3JFbnVtIssBChVTaGFy",
             "ZWFibGVQcmV2aWV3RXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dO",
             "EAESJAogVE9PX01BTllfQVNTRVRfR1JPVVBTX0lOX1JFUVVFU1QQAhIyCi5B",
             "U1NFVF9HUk9VUF9ET0VTX05PVF9FWElTVF9VTkRFUl9USElTX0NVU1RPTUVS",
-            "EANC+gEKI2NvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMuZXJyb3JzQhpT",
-            "aGFyZWFibGVQcmV2aWV3RXJyb3JQcm90b1ABWkVnb29nbGUuZ29sYW5nLm9y",
-            "Zy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjIzL2Vycm9y",
-            "cztlcnJvcnOiAgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMjMuRXJy",
-            "b3JzygIfR29vZ2xlXEFkc1xHb29nbGVBZHNcVjIzXEVycm9yc+oCI0dvb2ds",
-            "ZTo6QWRzOjpHb29nbGVBZHM6OlYyMzo6RXJyb3JzYgZwcm90bzM="));
+            "EAMSFwoTVU5TVVBQT1JURURfQURfVFlQRRAEEiEKHVRPT19NQU5ZX1JFU09V",
+            "UkNFU19JTl9SRVFVRVNUEAZC+gEKI2NvbS5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MjMuZXJyb3JzQhpTaGFyZWFibGVQcmV2aWV3RXJyb3JQcm90b1ABWkVn",
+            "b29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29n",
+            "bGVhZHMvdjIzL2Vycm9ycztlcnJvcnOiAgNHQUGqAh9Hb29nbGUuQWRzLkdv",
+            "b2dsZUFkcy5WMjMuRXJyb3JzygIfR29vZ2xlXEFkc1xHb29nbGVBZHNcVjIz",
+            "XEVycm9yc+oCI0dvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyMzo6RXJyb3Jz",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -176,7 +178,11 @@ namespace Google.Ads.GoogleAds.V23.Errors {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -191,7 +197,11 @@ namespace Google.Ads.GoogleAds.V23.Errors {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -225,6 +235,15 @@ namespace Google.Ads.GoogleAds.V23.Errors {
         /// asset group does not exist under this customer.
         /// </summary>
         [pbr::OriginalName("ASSET_GROUP_DOES_NOT_EXIST_UNDER_THIS_CUSTOMER")] AssetGroupDoesNotExistUnderThisCustomer = 3,
+        /// <summary>
+        /// Unsupported ad type for the given preview type.
+        /// </summary>
+        [pbr::OriginalName("UNSUPPORTED_AD_TYPE")] UnsupportedAdType = 4,
+        /// <summary>
+        /// The combined number of asset groups and ad group ads exceeds the maximum
+        /// of 10.
+        /// </summary>
+        [pbr::OriginalName("TOO_MANY_RESOURCES_IN_REQUEST")] TooManyResourcesInRequest = 6,
       }
 
     }

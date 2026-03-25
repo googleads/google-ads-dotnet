@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V23.Errors {
           string.Concat(
             "Cjdnb29nbGUvYWRzL2dvb2dsZWFkcy92MjMvZXJyb3JzL2FkX2dyb3VwX2Fk",
             "X2Vycm9yLnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMuZXJyb3Jz",
-            "IscDChJBZEdyb3VwQWRFcnJvckVudW0isAMKDkFkR3JvdXBBZEVycm9yEg8K",
+            "It8DChJBZEdyb3VwQWRFcnJvckVudW0iyAMKDkFkR3JvdXBBZEVycm9yEg8K",
             "C1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEiQKIEFEX0dST1VQX0FEX0xB",
             "QkVMX0RPRVNfTk9UX0VYSVNUEAISJAogQURfR1JPVVBfQURfTEFCRUxfQUxS",
             "RUFEWV9FWElTVFMQAxIYChRBRF9OT1RfVU5ERVJfQURHUk9VUBAEEicKI0NB",
@@ -36,12 +36,13 @@ namespace Google.Ads.GoogleAds.V23.Errors {
             "RURfSU5fTVVMVElQTEVfT1BTEAkSHAoYQURfVFlQRV9DQU5OT1RfQkVfUEFV",
             "U0VEEAoSHQoZQURfVFlQRV9DQU5OT1RfQkVfUkVNT1ZFRBALEiAKHENBTk5P",
             "VF9VUERBVEVfREVQUkVDQVRFRF9BRFMQDBIaChZBRF9TSEFSSU5HX05PVF9B",
-            "TExPV0VEEA1C8wEKI2NvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMuZXJy",
-            "b3JzQhNBZEdyb3VwQWRFcnJvclByb3RvUAFaRWdvb2dsZS5nb2xhbmcub3Jn",
-            "L2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MjMvZXJyb3Jz",
-            "O2Vycm9yc6ICA0dBQaoCH0dvb2dsZS5BZHMuR29vZ2xlQWRzLlYyMy5FcnJv",
-            "cnPKAh9Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMjNcRXJyb3Jz6gIjR29vZ2xl",
-            "OjpBZHM6Okdvb2dsZUFkczo6VjIzOjpFcnJvcnNiBnByb3RvMw=="));
+            "TExPV0VEEA0SFgoSRFVSQVRJT05fVE9PX1NIT1JUEA5C8wEKI2NvbS5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MjMuZXJyb3JzQhNBZEdyb3VwQWRFcnJvclBy",
+            "b3RvUAFaRWdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMv",
+            "YWRzL2dvb2dsZWFkcy92MjMvZXJyb3JzO2Vycm9yc6ICA0dBQaoCH0dvb2ds",
+            "ZS5BZHMuR29vZ2xlQWRzLlYyMy5FcnJvcnPKAh9Hb29nbGVcQWRzXEdvb2ds",
+            "ZUFkc1xWMjNcRXJyb3Jz6gIjR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjIz",
+            "OjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -182,7 +183,11 @@ namespace Google.Ads.GoogleAds.V23.Errors {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -197,7 +202,11 @@ namespace Google.Ads.GoogleAds.V23.Errors {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -274,6 +283,10 @@ namespace Google.Ads.GoogleAds.V23.Errors {
         /// Ad sharing is not allowed.
         /// </summary>
         [pbr::OriginalName("AD_SHARING_NOT_ALLOWED")] AdSharingNotAllowed = 13,
+        /// <summary>
+        /// The duration of the AdGroupAd is too short.
+        /// </summary>
+        [pbr::OriginalName("DURATION_TOO_SHORT")] DurationTooShort = 14,
       }
 
     }

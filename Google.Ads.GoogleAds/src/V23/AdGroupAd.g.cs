@@ -40,54 +40,55 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             "L3YyMy9lbnVtcy9wb2xpY3lfcmV2aWV3X3N0YXR1cy5wcm90bxorZ29vZ2xl",
             "L2Fkcy9nb29nbGVhZHMvdjIzL3Jlc291cmNlcy9hZC5wcm90bxofZ29vZ2xl",
             "L2FwaS9maWVsZF9iZWhhdmlvci5wcm90bxoZZ29vZ2xlL2FwaS9yZXNvdXJj",
-            "ZS5wcm90byKACAoJQWRHcm91cEFkEkEKDXJlc291cmNlX25hbWUYASABKAlC",
+            "ZS5wcm90byKwCAoJQWRHcm91cEFkEkEKDXJlc291cmNlX25hbWUYASABKAlC",
             "KuBBBfpBJAoiZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0FkR3JvdXBBZBJT",
             "CgZzdGF0dXMYAyABKA4yQy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMuZW51",
             "bXMuQWRHcm91cEFkU3RhdHVzRW51bS5BZEdyb3VwQWRTdGF0dXMSPwoIYWRf",
             "Z3JvdXAYCSABKAlCKOBBBfpBIgogZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29t",
             "L0FkR3JvdXBIAIgBARI3CgJhZBgFIAEoCzImLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYyMy5yZXNvdXJjZXMuQWRCA+BBBRJXCg5wb2xpY3lfc3VtbWFyeRgG",
-            "IAEoCzI6Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5yZXNvdXJjZXMuQWRH",
-            "cm91cEFkUG9saWN5U3VtbWFyeUID4EEDElMKC2FkX3N0cmVuZ3RoGAcgASgO",
-            "MjkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmVudW1zLkFkU3RyZW5ndGhF",
-            "bnVtLkFkU3RyZW5ndGhCA+BBAxIZCgxhY3Rpb25faXRlbXMYDSADKAlCA+BB",
-            "AxI/CgZsYWJlbHMYCiADKAlCL+BBA/pBKQonZ29vZ2xlYWRzLmdvb2dsZWFw",
-            "aXMuY29tL0FkR3JvdXBBZExhYmVsEm4KDnByaW1hcnlfc3RhdHVzGBAgASgO",
-            "MlEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmVudW1zLkFkR3JvdXBBZFBy",
-            "aW1hcnlTdGF0dXNFbnVtLkFkR3JvdXBBZFByaW1hcnlTdGF0dXNCA+BBAxKC",
-            "AQoWcHJpbWFyeV9zdGF0dXNfcmVhc29ucxgRIAMoDjJdLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYyMy5lbnVtcy5BZEdyb3VwQWRQcmltYXJ5U3RhdHVzUmVh",
-            "c29uRW51bS5BZEdyb3VwQWRQcmltYXJ5U3RhdHVzUmVhc29uQgPgQQMScgol",
-            "YWRfZ3JvdXBfYWRfYXNzZXRfYXV0b21hdGlvbl9zZXR0aW5ncxgSIAMoCzJD",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5yZXNvdXJjZXMuQWRHcm91cEFk",
-            "QXNzZXRBdXRvbWF0aW9uU2V0dGluZzph6kFeCiJnb29nbGVhZHMuZ29vZ2xl",
-            "YXBpcy5jb20vQWRHcm91cEFkEjhjdXN0b21lcnMve2N1c3RvbWVyX2lkfS9h",
-            "ZEdyb3VwQWRzL3thZF9ncm91cF9pZH1+e2FkX2lkfUILCglfYWRfZ3JvdXAi",
-            "wgIKFkFkR3JvdXBBZFBvbGljeVN1bW1hcnkSVAoUcG9saWN5X3RvcGljX2Vu",
-            "dHJpZXMYASADKAsyMS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMuY29tbW9u",
-            "LlBvbGljeVRvcGljRW50cnlCA+BBAxJlCg1yZXZpZXdfc3RhdHVzGAIgASgO",
-            "MkkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmVudW1zLlBvbGljeVJldmll",
-            "d1N0YXR1c0VudW0uUG9saWN5UmV2aWV3U3RhdHVzQgPgQQMSawoPYXBwcm92",
-            "YWxfc3RhdHVzGAMgASgOMk0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmVu",
-            "dW1zLlBvbGljeUFwcHJvdmFsU3RhdHVzRW51bS5Qb2xpY3lBcHByb3ZhbFN0",
-            "YXR1c0ID4EEDIr8CCh9BZEdyb3VwQWRBc3NldEF1dG9tYXRpb25TZXR0aW5n",
-            "Em8KFWFzc2V0X2F1dG9tYXRpb25fdHlwZRgBIAEoDjJLLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYyMy5lbnVtcy5Bc3NldEF1dG9tYXRpb25UeXBlRW51bS5B",
-            "c3NldEF1dG9tYXRpb25UeXBlSACIAQESdQoXYXNzZXRfYXV0b21hdGlvbl9z",
-            "dGF0dXMYAiABKA4yTy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMuZW51bXMu",
-            "QXNzZXRBdXRvbWF0aW9uU3RhdHVzRW51bS5Bc3NldEF1dG9tYXRpb25TdGF0",
-            "dXNIAYgBAUIYChZfYXNzZXRfYXV0b21hdGlvbl90eXBlQhoKGF9hc3NldF9h",
-            "dXRvbWF0aW9uX3N0YXR1c0KAAgomY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYyMy5yZXNvdXJjZXNCDkFkR3JvdXBBZFByb3RvUAFaS2dvb2dsZS5nb2xh",
-            "bmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MjMv",
-            "cmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIkdvb2dsZS5BZHMuR29vZ2xl",
-            "QWRzLlYyMy5SZXNvdXJjZXPKAiJHb29nbGVcQWRzXEdvb2dsZUFkc1xWMjNc",
-            "UmVzb3VyY2Vz6gImR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjIzOjpSZXNv",
-            "dXJjZXNiBnByb3RvMw=="));
+            "YWRzLnYyMy5yZXNvdXJjZXMuQWRCA+BBBRIXCg9zdGFydF9kYXRlX3RpbWUY",
+            "FCABKAkSFQoNZW5kX2RhdGVfdGltZRgVIAEoCRJXCg5wb2xpY3lfc3VtbWFy",
+            "eRgGIAEoCzI6Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5yZXNvdXJjZXMu",
+            "QWRHcm91cEFkUG9saWN5U3VtbWFyeUID4EEDElMKC2FkX3N0cmVuZ3RoGAcg",
+            "ASgOMjkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmVudW1zLkFkU3RyZW5n",
+            "dGhFbnVtLkFkU3RyZW5ndGhCA+BBAxIZCgxhY3Rpb25faXRlbXMYDSADKAlC",
+            "A+BBAxI/CgZsYWJlbHMYCiADKAlCL+BBA/pBKQonZ29vZ2xlYWRzLmdvb2ds",
+            "ZWFwaXMuY29tL0FkR3JvdXBBZExhYmVsEm4KDnByaW1hcnlfc3RhdHVzGBAg",
+            "ASgOMlEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmVudW1zLkFkR3JvdXBB",
+            "ZFByaW1hcnlTdGF0dXNFbnVtLkFkR3JvdXBBZFByaW1hcnlTdGF0dXNCA+BB",
+            "AxKCAQoWcHJpbWFyeV9zdGF0dXNfcmVhc29ucxgRIAMoDjJdLmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYyMy5lbnVtcy5BZEdyb3VwQWRQcmltYXJ5U3RhdHVz",
+            "UmVhc29uRW51bS5BZEdyb3VwQWRQcmltYXJ5U3RhdHVzUmVhc29uQgPgQQMS",
+            "cgolYWRfZ3JvdXBfYWRfYXNzZXRfYXV0b21hdGlvbl9zZXR0aW5ncxgSIAMo",
+            "CzJDLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5yZXNvdXJjZXMuQWRHcm91",
+            "cEFkQXNzZXRBdXRvbWF0aW9uU2V0dGluZzph6kFeCiJnb29nbGVhZHMuZ29v",
+            "Z2xlYXBpcy5jb20vQWRHcm91cEFkEjhjdXN0b21lcnMve2N1c3RvbWVyX2lk",
+            "fS9hZEdyb3VwQWRzL3thZF9ncm91cF9pZH1+e2FkX2lkfUILCglfYWRfZ3Jv",
+            "dXAiwgIKFkFkR3JvdXBBZFBvbGljeVN1bW1hcnkSVAoUcG9saWN5X3RvcGlj",
+            "X2VudHJpZXMYASADKAsyMS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMuY29t",
+            "bW9uLlBvbGljeVRvcGljRW50cnlCA+BBAxJlCg1yZXZpZXdfc3RhdHVzGAIg",
+            "ASgOMkkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmVudW1zLlBvbGljeVJl",
+            "dmlld1N0YXR1c0VudW0uUG9saWN5UmV2aWV3U3RhdHVzQgPgQQMSawoPYXBw",
+            "cm92YWxfc3RhdHVzGAMgASgOMk0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIz",
+            "LmVudW1zLlBvbGljeUFwcHJvdmFsU3RhdHVzRW51bS5Qb2xpY3lBcHByb3Zh",
+            "bFN0YXR1c0ID4EEDIr8CCh9BZEdyb3VwQWRBc3NldEF1dG9tYXRpb25TZXR0",
+            "aW5nEm8KFWFzc2V0X2F1dG9tYXRpb25fdHlwZRgBIAEoDjJLLmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYyMy5lbnVtcy5Bc3NldEF1dG9tYXRpb25UeXBlRW51",
+            "bS5Bc3NldEF1dG9tYXRpb25UeXBlSACIAQESdQoXYXNzZXRfYXV0b21hdGlv",
+            "bl9zdGF0dXMYAiABKA4yTy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMuZW51",
+            "bXMuQXNzZXRBdXRvbWF0aW9uU3RhdHVzRW51bS5Bc3NldEF1dG9tYXRpb25T",
+            "dGF0dXNIAYgBAUIYChZfYXNzZXRfYXV0b21hdGlvbl90eXBlQhoKGF9hc3Nl",
+            "dF9hdXRvbWF0aW9uX3N0YXR1c0KAAgomY29tLmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYyMy5yZXNvdXJjZXNCDkFkR3JvdXBBZFByb3RvUAFaS2dvb2dsZS5n",
+            "b2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92",
+            "MjMvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIkdvb2dsZS5BZHMuR29v",
+            "Z2xlQWRzLlYyMy5SZXNvdXJjZXPKAiJHb29nbGVcQWRzXEdvb2dsZUFkc1xW",
+            "MjNcUmVzb3VyY2Vz6gImR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjIzOjpS",
+            "ZXNvdXJjZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V23.Common.PolicyReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.AdGroupAdPrimaryStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.AdGroupAdPrimaryStatusReasonReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.AdGroupAdStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.AdStrengthReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.AssetAutomationStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.AssetAutomationTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.PolicyApprovalStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.PolicyReviewStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Resources.AdReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Resources.AdGroupAd), global::Google.Ads.GoogleAds.V23.Resources.AdGroupAd.Parser, new[]{ "ResourceName", "Status", "AdGroup", "Ad", "PolicySummary", "AdStrength", "ActionItems", "Labels", "PrimaryStatus", "PrimaryStatusReasons", "AdGroupAdAssetAutomationSettings" }, new[]{ "AdGroup" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Resources.AdGroupAd), global::Google.Ads.GoogleAds.V23.Resources.AdGroupAd.Parser, new[]{ "ResourceName", "Status", "AdGroup", "Ad", "StartDateTime", "EndDateTime", "PolicySummary", "AdStrength", "ActionItems", "Labels", "PrimaryStatus", "PrimaryStatusReasons", "AdGroupAdAssetAutomationSettings" }, new[]{ "AdGroup" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Resources.AdGroupAdPolicySummary), global::Google.Ads.GoogleAds.V23.Resources.AdGroupAdPolicySummary.Parser, new[]{ "PolicyTopicEntries", "ReviewStatus", "ApprovalStatus" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Resources.AdGroupAdAssetAutomationSetting), global::Google.Ads.GoogleAds.V23.Resources.AdGroupAdAssetAutomationSetting.Parser, new[]{ "AssetAutomationType", "AssetAutomationStatus" }, new[]{ "AssetAutomationType", "AssetAutomationStatus" }, null, null, null)
           }));
@@ -138,6 +139,8 @@ namespace Google.Ads.GoogleAds.V23.Resources {
       status_ = other.status_;
       adGroup_ = other.adGroup_;
       ad_ = other.ad_ != null ? other.ad_.Clone() : null;
+      startDateTime_ = other.startDateTime_;
+      endDateTime_ = other.endDateTime_;
       policySummary_ = other.policySummary_ != null ? other.policySummary_.Clone() : null;
       adStrength_ = other.adStrength_;
       actionItems_ = other.actionItems_.Clone();
@@ -228,6 +231,42 @@ namespace Google.Ads.GoogleAds.V23.Resources {
       get { return ad_; }
       set {
         ad_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "start_date_time" field.</summary>
+    public const int StartDateTimeFieldNumber = 20;
+    private string startDateTime_ = "";
+    /// <summary>
+    /// The date and time when ad group ad starts serving. This is added on top of
+    /// the campaign's start date and time, if present, to further restrict the
+    /// duration of an ad group ad. The timestamp is in the customer's time zone
+    /// and in "yyyy-MM-dd HH:mm:ss" format. Only supported for some ad types.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string StartDateTime {
+      get { return startDateTime_; }
+      set {
+        startDateTime_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "end_date_time" field.</summary>
+    public const int EndDateTimeFieldNumber = 21;
+    private string endDateTime_ = "";
+    /// <summary>
+    /// The last day and time when ad group ad serves. This is added on top of
+    /// the campaign's end date and time, if present, to further restrict the
+    /// duration of an ad group ad. The timestamp is in the customer's time zone
+    /// and in "yyyy-MM-dd HH:mm:ss" format. Only supported for some ad types.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string EndDateTime {
+      get { return endDateTime_; }
+      set {
+        endDateTime_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -357,6 +396,8 @@ namespace Google.Ads.GoogleAds.V23.Resources {
       if (Status != other.Status) return false;
       if (AdGroup != other.AdGroup) return false;
       if (!object.Equals(Ad, other.Ad)) return false;
+      if (StartDateTime != other.StartDateTime) return false;
+      if (EndDateTime != other.EndDateTime) return false;
       if (!object.Equals(PolicySummary, other.PolicySummary)) return false;
       if (AdStrength != other.AdStrength) return false;
       if(!actionItems_.Equals(other.actionItems_)) return false;
@@ -375,6 +416,8 @@ namespace Google.Ads.GoogleAds.V23.Resources {
       if (Status != global::Google.Ads.GoogleAds.V23.Enums.AdGroupAdStatusEnum.Types.AdGroupAdStatus.Unspecified) hash ^= Status.GetHashCode();
       if (HasAdGroup) hash ^= AdGroup.GetHashCode();
       if (ad_ != null) hash ^= Ad.GetHashCode();
+      if (StartDateTime.Length != 0) hash ^= StartDateTime.GetHashCode();
+      if (EndDateTime.Length != 0) hash ^= EndDateTime.GetHashCode();
       if (policySummary_ != null) hash ^= PolicySummary.GetHashCode();
       if (AdStrength != global::Google.Ads.GoogleAds.V23.Enums.AdStrengthEnum.Types.AdStrength.Unspecified) hash ^= AdStrength.GetHashCode();
       hash ^= actionItems_.GetHashCode();
@@ -432,6 +475,14 @@ namespace Google.Ads.GoogleAds.V23.Resources {
       }
       primaryStatusReasons_.WriteTo(output, _repeated_primaryStatusReasons_codec);
       adGroupAdAssetAutomationSettings_.WriteTo(output, _repeated_adGroupAdAssetAutomationSettings_codec);
+      if (StartDateTime.Length != 0) {
+        output.WriteRawTag(162, 1);
+        output.WriteString(StartDateTime);
+      }
+      if (EndDateTime.Length != 0) {
+        output.WriteRawTag(170, 1);
+        output.WriteString(EndDateTime);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -474,6 +525,14 @@ namespace Google.Ads.GoogleAds.V23.Resources {
       }
       primaryStatusReasons_.WriteTo(ref output, _repeated_primaryStatusReasons_codec);
       adGroupAdAssetAutomationSettings_.WriteTo(ref output, _repeated_adGroupAdAssetAutomationSettings_codec);
+      if (StartDateTime.Length != 0) {
+        output.WriteRawTag(162, 1);
+        output.WriteString(StartDateTime);
+      }
+      if (EndDateTime.Length != 0) {
+        output.WriteRawTag(170, 1);
+        output.WriteString(EndDateTime);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -495,6 +554,12 @@ namespace Google.Ads.GoogleAds.V23.Resources {
       }
       if (ad_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Ad);
+      }
+      if (StartDateTime.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(StartDateTime);
+      }
+      if (EndDateTime.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(EndDateTime);
       }
       if (policySummary_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PolicySummary);
@@ -536,6 +601,12 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         }
         Ad.MergeFrom(other.Ad);
       }
+      if (other.StartDateTime.Length != 0) {
+        StartDateTime = other.StartDateTime;
+      }
+      if (other.EndDateTime.Length != 0) {
+        EndDateTime = other.EndDateTime;
+      }
       if (other.policySummary_ != null) {
         if (policySummary_ == null) {
           PolicySummary = new global::Google.Ads.GoogleAds.V23.Resources.AdGroupAdPolicySummary();
@@ -563,7 +634,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -618,6 +693,14 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             adGroupAdAssetAutomationSettings_.AddEntriesFrom(input, _repeated_adGroupAdAssetAutomationSettings_codec);
             break;
           }
+          case 162: {
+            StartDateTime = input.ReadString();
+            break;
+          }
+          case 170: {
+            EndDateTime = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -629,7 +712,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -682,6 +769,14 @@ namespace Google.Ads.GoogleAds.V23.Resources {
           }
           case 146: {
             adGroupAdAssetAutomationSettings_.AddEntriesFrom(ref input, _repeated_adGroupAdAssetAutomationSettings_codec);
+            break;
+          }
+          case 162: {
+            StartDateTime = input.ReadString();
+            break;
+          }
+          case 170: {
+            EndDateTime = input.ReadString();
             break;
           }
         }
@@ -907,7 +1002,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -934,7 +1033,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1183,7 +1286,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1206,7 +1313,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

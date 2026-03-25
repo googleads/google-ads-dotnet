@@ -85,7 +85,7 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             "dGlvbl90eXBlLnByb3RvGkdnb29nbGUvYWRzL2dvb2dsZWFkcy92MjMvZW51",
             "bXMvdmlkZW9fYWRfc2VxdWVuY2VfbWluaW11bV9kdXJhdGlvbi5wcm90bxof",
             "Z29vZ2xlL2FwaS9maWVsZF9iZWhhdmlvci5wcm90bxoZZ29vZ2xlL2FwaS9y",
-            "ZXNvdXJjZS5wcm90byL0agoIQ2FtcGFpZ24SQAoNcmVzb3VyY2VfbmFtZRgB",
+            "ZXNvdXJjZS5wcm90byKpawoIQ2FtcGFpZ24SQAoNcmVzb3VyY2VfbmFtZRgB",
             "IAEoCUIp4EEF+kEjCiFnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vQ2FtcGFp",
             "Z24SFAoCaWQYOyABKANCA+BBA0gBiAEBEhEKBG5hbWUYOiABKAlIAogBARJs",
             "Cg5wcmltYXJ5X3N0YXR1cxhRIAEoDjJPLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
@@ -127,281 +127,282 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             "ZV9iaWRkaW5nX3NldHRpbmcYJyABKAsyNy5nb29nbGUuYWRzLmdvb2dsZWFk",
             "cy52MjMuY29tbW9uLlJlYWxUaW1lQmlkZGluZ1NldHRpbmcSVgoQbmV0d29y",
             "a19zZXR0aW5ncxgOIAEoCzI8Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5y",
-            "ZXNvdXJjZXMuQ2FtcGFpZ24uTmV0d29ya1NldHRpbmdzElkKDWhvdGVsX3Nl",
+            "ZXNvdXJjZXMuQ2FtcGFpZ24uTmV0d29ya1NldHRpbmdzElQKDWhvdGVsX3Nl",
             "dHRpbmcYICABKAsyPS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMucmVzb3Vy",
-            "Y2VzLkNhbXBhaWduLkhvdGVsU2V0dGluZ0luZm9CA+BBBRJoChpkeW5hbWlj",
-            "X3NlYXJjaF9hZHNfc2V0dGluZxghIAEoCzJELmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYyMy5yZXNvdXJjZXMuQ2FtcGFpZ24uRHluYW1pY1NlYXJjaEFkc1Nl",
-            "dHRpbmcSVgoQc2hvcHBpbmdfc2V0dGluZxgkIAEoCzI8Lmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYyMy5yZXNvdXJjZXMuQ2FtcGFpZ24uU2hvcHBpbmdTZXR0",
-            "aW5nEkwKEXRhcmdldGluZ19zZXR0aW5nGCsgASgLMjEuZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjIzLmNvbW1vbi5UYXJnZXRpbmdTZXR0aW5nEmAKEGF1ZGll",
-            "bmNlX3NldHRpbmcYSSABKAsyPC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMu",
-            "cmVzb3VyY2VzLkNhbXBhaWduLkF1ZGllbmNlU2V0dGluZ0ID4EEFSASIAQES",
-            "YgoXZ2VvX3RhcmdldF90eXBlX3NldHRpbmcYLyABKAsyQS5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MjMucmVzb3VyY2VzLkNhbXBhaWduLkdlb1RhcmdldFR5",
-            "cGVTZXR0aW5nEmEKFmxvY2FsX2NhbXBhaWduX3NldHRpbmcYMiABKAsyQS5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MjMucmVzb3VyY2VzLkNhbXBhaWduLkxv",
-            "Y2FsQ2FtcGFpZ25TZXR0aW5nEl0KFGFwcF9jYW1wYWlnbl9zZXR0aW5nGDMg",
-            "ASgLMj8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLnJlc291cmNlcy5DYW1w",
-            "YWlnbi5BcHBDYW1wYWlnblNldHRpbmcSPgoGbGFiZWxzGD0gAygJQi7gQQP6",
-            "QSgKJmdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9DYW1wYWlnbkxhYmVsEm8K",
-            "D2V4cGVyaW1lbnRfdHlwZRgRIAEoDjJRLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYyMy5lbnVtcy5DYW1wYWlnbkV4cGVyaW1lbnRUeXBlRW51bS5DYW1wYWln",
-            "bkV4cGVyaW1lbnRUeXBlQgPgQQMSRQoNYmFzZV9jYW1wYWlnbhg4IAEoCUIp",
-            "4EED+kEjCiFnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vQ2FtcGFpZ25IBYgB",
-            "ARJKCg9jYW1wYWlnbl9idWRnZXQYPiABKAlCLPpBKQonZ29vZ2xlYWRzLmdv",
-            "b2dsZWFwaXMuY29tL0NhbXBhaWduQnVkZ2V0SAaIAQESbwoVYmlkZGluZ19z",
-            "dHJhdGVneV90eXBlGBYgASgOMksuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIz",
-            "LmVudW1zLkJpZGRpbmdTdHJhdGVneVR5cGVFbnVtLkJpZGRpbmdTdHJhdGVn",
-            "eVR5cGVCA+BBAxJfChthY2Nlc3NpYmxlX2JpZGRpbmdfc3RyYXRlZ3kYRyAB",
-            "KAlCOuBBA/pBNAoyZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0FjY2Vzc2li",
-            "bGVCaWRkaW5nU3RyYXRlZ3kSSAoOY2FtcGFpZ25fZ3JvdXAYTCABKAlCK/pB",
-            "KAomZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0NhbXBhaWduR3JvdXBIB4gB",
-            "ARIcCg9zdGFydF9kYXRlX3RpbWUYaCABKAlICIgBARIaCg1lbmRfZGF0ZV90",
-            "aW1lGGkgASgJSAmIAQESHQoQZmluYWxfdXJsX3N1ZmZpeBhBIAEoCUgKiAEB",
-            "EkoKDmZyZXF1ZW5jeV9jYXBzGCggAygLMjIuZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjIzLmNvbW1vbi5GcmVxdWVuY3lDYXBFbnRyeRJ5Ch52aWRlb19icmFu",
-            "ZF9zYWZldHlfc3VpdGFiaWxpdHkYKiABKA4yUS5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MjMuZW51bXMuQnJhbmRTYWZldHlTdWl0YWJpbGl0eUVudW0uQnJh",
-            "bmRTYWZldHlTdWl0YWJpbGl0eRJQCg12YW5pdHlfcGhhcm1hGCwgASgLMjku",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLnJlc291cmNlcy5DYW1wYWlnbi5W",
-            "YW5pdHlQaGFybWESYgoWc2VsZWN0aXZlX29wdGltaXphdGlvbhgtIAEoCzJC",
+            "Y2VzLkNhbXBhaWduLkhvdGVsU2V0dGluZ0luZm8SaAoaZHluYW1pY19zZWFy",
+            "Y2hfYWRzX3NldHRpbmcYISABKAsyRC5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MjMucmVzb3VyY2VzLkNhbXBhaWduLkR5bmFtaWNTZWFyY2hBZHNTZXR0aW5n",
+            "ElYKEHNob3BwaW5nX3NldHRpbmcYJCABKAsyPC5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MjMucmVzb3VyY2VzLkNhbXBhaWduLlNob3BwaW5nU2V0dGluZxJM",
+            "ChF0YXJnZXRpbmdfc2V0dGluZxgrIAEoCzIxLmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYyMy5jb21tb24uVGFyZ2V0aW5nU2V0dGluZxJgChBhdWRpZW5jZV9z",
+            "ZXR0aW5nGEkgASgLMjwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLnJlc291",
+            "cmNlcy5DYW1wYWlnbi5BdWRpZW5jZVNldHRpbmdCA+BBBUgEiAEBEmIKF2dl",
+            "b190YXJnZXRfdHlwZV9zZXR0aW5nGC8gASgLMkEuZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjIzLnJlc291cmNlcy5DYW1wYWlnbi5HZW9UYXJnZXRUeXBlU2V0",
+            "dGluZxJhChZsb2NhbF9jYW1wYWlnbl9zZXR0aW5nGDIgASgLMkEuZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjIzLnJlc291cmNlcy5DYW1wYWlnbi5Mb2NhbENh",
+            "bXBhaWduU2V0dGluZxJdChRhcHBfY2FtcGFpZ25fc2V0dGluZxgzIAEoCzI/",
             "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5yZXNvdXJjZXMuQ2FtcGFpZ24u",
-            "U2VsZWN0aXZlT3B0aW1pemF0aW9uEmcKGW9wdGltaXphdGlvbl9nb2FsX3Nl",
-            "dHRpbmcYNiABKAsyRC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMucmVzb3Vy",
-            "Y2VzLkNhbXBhaWduLk9wdGltaXphdGlvbkdvYWxTZXR0aW5nElsKEHRyYWNr",
-            "aW5nX3NldHRpbmcYLiABKAsyPC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMu",
-            "cmVzb3VyY2VzLkNhbXBhaWduLlRyYWNraW5nU2V0dGluZ0ID4EEDElEKDHBh",
-            "eW1lbnRfbW9kZRg0IAEoDjI7Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5l",
-            "bnVtcy5QYXltZW50TW9kZUVudW0uUGF5bWVudE1vZGUSJAoSb3B0aW1pemF0",
-            "aW9uX3Njb3JlGEIgASgBQgPgQQNIC4gBARJsCiFleGNsdWRlZF9wYXJlbnRf",
-            "YXNzZXRfZmllbGRfdHlwZXMYRSADKA4yQS5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52MjMuZW51bXMuQXNzZXRGaWVsZFR5cGVFbnVtLkFzc2V0RmllbGRUeXBl",
-            "EmYKH2V4Y2x1ZGVkX3BhcmVudF9hc3NldF9zZXRfdHlwZXMYUCADKA4yPS5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MjMuZW51bXMuQXNzZXRTZXRUeXBlRW51",
-            "bS5Bc3NldFNldFR5cGUSaAoXcGVyZm9ybWFuY2VfbWF4X3VwZ3JhZGUYTSAB",
-            "KAsyQi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMucmVzb3VyY2VzLkNhbXBh",
-            "aWduLlBlcmZvcm1hbmNlTWF4VXBncmFkZUID4EEDElAKGGhvdGVsX3Byb3Bl",
-            "cnR5X2Fzc2V0X3NldBhTIAEoCUIp4EEF+kEjCiFnb29nbGVhZHMuZ29vZ2xl",
-            "YXBpcy5jb20vQXNzZXRTZXRIDIgBARJbCgxsaXN0aW5nX3R5cGUYViABKA4y",
-            "Oy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMuZW51bXMuTGlzdGluZ1R5cGVF",
-            "bnVtLkxpc3RpbmdUeXBlQgPgQQVIDYgBARJmChlhc3NldF9hdXRvbWF0aW9u",
-            "X3NldHRpbmdzGFggAygLMkMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLnJl",
-            "c291cmNlcy5DYW1wYWlnbi5Bc3NldEF1dG9tYXRpb25TZXR0aW5nEnEKEmtl",
-            "eXdvcmRfbWF0Y2hfdHlwZRhaIAEoDjJVLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYyMy5lbnVtcy5DYW1wYWlnbktleXdvcmRNYXRjaFR5cGVFbnVtLkNhbXBh",
-            "aWduS2V5d29yZE1hdGNoVHlwZRIqChhicmFuZF9ndWlkZWxpbmVzX2VuYWJs",
-            "ZWQYYCABKAhCA+BBBUgOiAEBElYKEGJyYW5kX2d1aWRlbGluZXMYYiABKAsy",
-            "PC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMucmVzb3VyY2VzLkNhbXBhaWdu",
-            "LkJyYW5kR3VpZGVsaW5lcxJUCg90ZXh0X2d1aWRlbGluZXMYayABKAsyOy5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MjMucmVzb3VyY2VzLkNhbXBhaWduLlRl",
-            "eHRHdWlkZWxpbmVzEnAKIHRoaXJkX3BhcnR5X2ludGVncmF0aW9uX3BhcnRu",
-            "ZXJzGGQgASgLMkYuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmNvbW1vbi5D",
-            "YW1wYWlnblRoaXJkUGFydHlJbnRlZ3JhdGlvblBhcnRuZXJzElEKDmFpX21h",
-            "eF9zZXR0aW5nGGUgASgLMjkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLnJl",
-            "c291cmNlcy5DYW1wYWlnbi5BaU1heFNldHRpbmcSiAEKIWNvbnRhaW5zX2V1",
-            "X3BvbGl0aWNhbF9hZHZlcnRpc2luZxhmIAEoDjJdLmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYyMy5lbnVtcy5FdVBvbGl0aWNhbEFkdmVydGlzaW5nU3RhdHVz",
-            "RW51bS5FdVBvbGl0aWNhbEFkdmVydGlzaW5nU3RhdHVzElYKCmZlZWRfdHlw",
-            "ZXMYZyADKA4yPS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMuZW51bXMuQXNz",
-            "ZXRTZXRUeXBlRW51bS5Bc3NldFNldFR5cGVCA+BBAxI5CixtaXNzaW5nX2V1",
-            "X3BvbGl0aWNhbF9hZHZlcnRpc2luZ19kZWNsYXJhdGlvbhhsIAEoCEID4EED",
-            "EkkKEGJpZGRpbmdfc3RyYXRlZ3kYQyABKAlCLfpBKgooZ29vZ2xlYWRzLmdv",
-            "b2dsZWFwaXMuY29tL0JpZGRpbmdTdHJhdGVneUgAEkEKCmNvbW1pc3Npb24Y",
-            "MSABKAsyKy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMuY29tbW9uLkNvbW1p",
-            "c3Npb25IABJACgptYW51YWxfY3BhGEogASgLMiouZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjIzLmNvbW1vbi5NYW51YWxDcGFIABJACgptYW51YWxfY3BjGBgg",
-            "ASgLMiouZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmNvbW1vbi5NYW51YWxD",
-            "cGNIABJACgptYW51YWxfY3BtGBkgASgLMiouZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjIzLmNvbW1vbi5NYW51YWxDcG1IABJACgptYW51YWxfY3B2GCUgASgL",
-            "MiouZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmNvbW1vbi5NYW51YWxDcHZI",
-            "ABJUChRtYXhpbWl6ZV9jb252ZXJzaW9ucxgeIAEoCzI0Lmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYyMy5jb21tb24uTWF4aW1pemVDb252ZXJzaW9uc0gAEl0K",
-            "GW1heGltaXplX2NvbnZlcnNpb25fdmFsdWUYHyABKAsyOC5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MjMuY29tbW9uLk1heGltaXplQ29udmVyc2lvblZhbHVl",
-            "SAASQAoKdGFyZ2V0X2NwYRgaIAEoCzIqLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYyMy5jb21tb24uVGFyZ2V0Q3BhSAASWQoXdGFyZ2V0X2ltcHJlc3Npb25f",
-            "c2hhcmUYMCABKAsyNi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMuY29tbW9u",
-            "LlRhcmdldEltcHJlc3Npb25TaGFyZUgAEkIKC3RhcmdldF9yb2FzGB0gASgL",
-            "MisuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmNvbW1vbi5UYXJnZXRSb2Fz",
-            "SAASRAoMdGFyZ2V0X3NwZW5kGBsgASgLMiwuZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjIzLmNvbW1vbi5UYXJnZXRTcGVuZEgAEkIKC3BlcmNlbnRfY3BjGCIg",
-            "ASgLMisuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmNvbW1vbi5QZXJjZW50",
-            "Q3BjSAASQAoKdGFyZ2V0X2NwbRgpIAEoCzIqLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYyMy5jb21tb24uVGFyZ2V0Q3BtSAASPgoJZml4ZWRfY3BtGFwgASgL",
-            "MikuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmNvbW1vbi5GaXhlZENwbUgA",
-            "EkAKCnRhcmdldF9jcHYYXSABKAsyKi5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MjMuY29tbW9uLlRhcmdldENwdkgAEkAKCnRhcmdldF9jcGMYYyABKAsyKi5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MjMuY29tbW9uLlRhcmdldENwY0gAGp8C",
-            "ChVQZXJmb3JtYW5jZU1heFVwZ3JhZGUSSwoYcGVyZm9ybWFuY2VfbWF4X2Nh",
-            "bXBhaWduGAEgASgJQingQQP6QSMKIWdvb2dsZWFkcy5nb29nbGVhcGlzLmNv",
-            "bS9DYW1wYWlnbhJHChRwcmVfdXBncmFkZV9jYW1wYWlnbhgCIAEoCUIp4EED",
-            "+kEjCiFnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vQ2FtcGFpZ24ScAoGc3Rh",
-            "dHVzGAMgASgOMlsuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmVudW1zLlBl",
-            "cmZvcm1hbmNlTWF4VXBncmFkZVN0YXR1c0VudW0uUGVyZm9ybWFuY2VNYXhV",
-            "cGdyYWRlU3RhdHVzQgPgQQMajQMKD05ldHdvcmtTZXR0aW5ncxIhChR0YXJn",
-            "ZXRfZ29vZ2xlX3NlYXJjaBgFIAEoCEgAiAEBEiIKFXRhcmdldF9zZWFyY2hf",
-            "bmV0d29yaxgGIAEoCEgBiAEBEiMKFnRhcmdldF9jb250ZW50X25ldHdvcmsY",
-            "ByABKAhIAogBARIqCh10YXJnZXRfcGFydG5lcl9zZWFyY2hfbmV0d29yaxgI",
-            "IAEoCEgDiAEBEhsKDnRhcmdldF95b3V0dWJlGAkgASgISASIAQESJQoYdGFy",
-            "Z2V0X2dvb2dsZV90dl9uZXR3b3JrGAogASgISAWIAQFCFwoVX3RhcmdldF9n",
-            "b29nbGVfc2VhcmNoQhgKFl90YXJnZXRfc2VhcmNoX25ldHdvcmtCGQoXX3Rh",
-            "cmdldF9jb250ZW50X25ldHdvcmtCIAoeX3RhcmdldF9wYXJ0bmVyX3NlYXJj",
-            "aF9uZXR3b3JrQhEKD190YXJnZXRfeW91dHViZUIbChlfdGFyZ2V0X2dvb2ds",
-            "ZV90dl9uZXR3b3JrGkkKEEhvdGVsU2V0dGluZ0luZm8SIQoPaG90ZWxfY2Vu",
-            "dGVyX2lkGAIgASgDQgPgQQVIAIgBAUISChBfaG90ZWxfY2VudGVyX2lkGo8B",
-            "ChdEeW5hbWljU2VhcmNoQWRzU2V0dGluZxIYCgtkb21haW5fbmFtZRgGIAEo",
-            "CUID4EECEhoKDWxhbmd1YWdlX2NvZGUYByABKAlCA+BBAhIjChZ1c2Vfc3Vw",
-            "cGxpZWRfdXJsc19vbmx5GAggASgISACIAQFCGQoXX3VzZV9zdXBwbGllZF91",
-            "cmxzX29ubHkasgIKD1Nob3BwaW5nU2V0dGluZxIYCgttZXJjaGFudF9pZBgF",
-            "IAEoA0gAiAEBEhIKCmZlZWRfbGFiZWwYCiABKAkSHgoRY2FtcGFpZ25fcHJp",
-            "b3JpdHkYByABKAVIAYgBARIZCgxlbmFibGVfbG9jYWwYCCABKAhIAogBARIi",
-            "ChV1c2VfdmVoaWNsZV9pbnZlbnRvcnkYCSABKAhCA+BBBRIfChdhZHZlcnRp",
-            "c2luZ19wYXJ0bmVyX2lkcxgLIAMoAxIhChRkaXNhYmxlX3Byb2R1Y3RfZmVl",
-            "ZBgMIAEoCEgDiAEBQg4KDF9tZXJjaGFudF9pZEIUChJfY2FtcGFpZ25fcHJp",
-            "b3JpdHlCDwoNX2VuYWJsZV9sb2NhbEIXChVfZGlzYWJsZV9wcm9kdWN0X2Zl",
-            "ZWQaQgoPVHJhY2tpbmdTZXR0aW5nEh4KDHRyYWNraW5nX3VybBgCIAEoCUID",
-            "4EEDSACIAQFCDwoNX3RyYWNraW5nX3VybBr8AQoUR2VvVGFyZ2V0VHlwZVNl",
-            "dHRpbmcScQoYcG9zaXRpdmVfZ2VvX3RhcmdldF90eXBlGAEgASgOMk8uZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjIzLmVudW1zLlBvc2l0aXZlR2VvVGFyZ2V0",
-            "VHlwZUVudW0uUG9zaXRpdmVHZW9UYXJnZXRUeXBlEnEKGG5lZ2F0aXZlX2dl",
-            "b190YXJnZXRfdHlwZRgCIAEoDjJPLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
-            "My5lbnVtcy5OZWdhdGl2ZUdlb1RhcmdldFR5cGVFbnVtLk5lZ2F0aXZlR2Vv",
-            "VGFyZ2V0VHlwZRp/ChRMb2NhbENhbXBhaWduU2V0dGluZxJnChRsb2NhdGlv",
-            "bl9zb3VyY2VfdHlwZRgBIAEoDjJJLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
-            "My5lbnVtcy5Mb2NhdGlvblNvdXJjZVR5cGVFbnVtLkxvY2F0aW9uU291cmNl",
-            "VHlwZRquAgoSQXBwQ2FtcGFpZ25TZXR0aW5nEo0BChpiaWRkaW5nX3N0cmF0",
-            "ZWd5X2dvYWxfdHlwZRgBIAEoDjJpLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
-            "My5lbnVtcy5BcHBDYW1wYWlnbkJpZGRpbmdTdHJhdGVneUdvYWxUeXBlRW51",
-            "bS5BcHBDYW1wYWlnbkJpZGRpbmdTdHJhdGVneUdvYWxUeXBlEhgKBmFwcF9p",
-            "ZBgEIAEoCUID4EEFSACIAQESYwoJYXBwX3N0b3JlGAMgASgOMksuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjIzLmVudW1zLkFwcENhbXBhaWduQXBwU3RvcmVF",
-            "bnVtLkFwcENhbXBhaWduQXBwU3RvcmVCA+BBBUIJCgdfYXBwX2lkGvUBCgxW",
-            "YW5pdHlQaGFybWESgQEKHnZhbml0eV9waGFybWFfZGlzcGxheV91cmxfbW9k",
-            "ZRgBIAEoDjJZLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5lbnVtcy5WYW5p",
-            "dHlQaGFybWFEaXNwbGF5VXJsTW9kZUVudW0uVmFuaXR5UGhhcm1hRGlzcGxh",
-            "eVVybE1vZGUSYQoSdmFuaXR5X3BoYXJtYV90ZXh0GAIgASgOMkUuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjIzLmVudW1zLlZhbml0eVBoYXJtYVRleHRFbnVt",
-            "LlZhbml0eVBoYXJtYVRleHQaYwoVU2VsZWN0aXZlT3B0aW1pemF0aW9uEkoK",
-            "EmNvbnZlcnNpb25fYWN0aW9ucxgCIAMoCUIu+kErCilnb29nbGVhZHMuZ29v",
-            "Z2xlYXBpcy5jb20vQ29udmVyc2lvbkFjdGlvbhqJAQoXT3B0aW1pemF0aW9u",
-            "R29hbFNldHRpbmcSbgoXb3B0aW1pemF0aW9uX2dvYWxfdHlwZXMYASADKA4y",
-            "TS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMuZW51bXMuT3B0aW1pemF0aW9u",
-            "R29hbFR5cGVFbnVtLk9wdGltaXphdGlvbkdvYWxUeXBlGlIKD0F1ZGllbmNl",
-            "U2V0dGluZxImChR1c2VfYXVkaWVuY2VfZ3JvdXBlZBgBIAEoCEID4EEFSACI",
-            "AQFCFwoVX3VzZV9hdWRpZW5jZV9ncm91cGVkGnAKHUxvY2FsU2VydmljZXND",
-            "YW1wYWlnblNldHRpbmdzEk8KDWNhdGVnb3J5X2JpZHMYASADKAsyOC5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52MjMucmVzb3VyY2VzLkNhbXBhaWduLkNhdGVn",
-            "b3J5QmlkGrMBCgtDYXRlZ29yeUJpZBIYCgtjYXRlZ29yeV9pZBgBIAEoCUgA",
-            "iAEBEiIKFW1hbnVhbF9jcGFfYmlkX21pY3JvcxgCIAEoA0gBiAEBEiIKFXRh",
-            "cmdldF9jcGFfYmlkX21pY3JvcxgDIAEoA0gCiAEBQg4KDF9jYXRlZ29yeV9p",
-            "ZEIYChZfbWFudWFsX2NwYV9iaWRfbWljcm9zQhgKFl90YXJnZXRfY3BhX2Jp",
-            "ZF9taWNyb3MaUwoWVHJhdmVsQ2FtcGFpZ25TZXR0aW5ncxIjChF0cmF2ZWxf",
-            "YWNjb3VudF9pZBgBIAEoA0ID4EEFSACIAQFCFAoSX3RyYXZlbF9hY2NvdW50",
-            "X2lkGlgKGURlbWFuZEdlbkNhbXBhaWduU2V0dGluZ3MSJAoSdXBncmFkZWRf",
-            "dGFyZ2V0aW5nGAEgASgIQgPgQQVIAIgBAUIVChNfdXBncmFkZWRfdGFyZ2V0",
-            "aW5nGoYSChVWaWRlb0NhbXBhaWduU2V0dGluZ3MSbQoRdmlkZW9fYWRfc2Vx",
-            "dWVuY2UYBCABKAsyUi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMucmVzb3Vy",
-            "Y2VzLkNhbXBhaWduLlZpZGVvQ2FtcGFpZ25TZXR0aW5ncy5WaWRlb0FkU2Vx",
-            "dWVuY2USlwEKJ3Jlc2VydmF0aW9uX2FkX2NhdGVnb3J5X3NlbGZfZGlzY2xv",
-            "c3VyZRgFIAEoCzJmLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5yZXNvdXJj",
-            "ZXMuQ2FtcGFpZ24uVmlkZW9DYW1wYWlnblNldHRpbmdzLlJlc2VydmF0aW9u",
-            "QWRDYXRlZ29yeVNlbGZEaXNjbG9zdXJlEm8KD2Jvb2tpbmdfZGV0YWlscxgG",
-            "IAEoCzJRLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5yZXNvdXJjZXMuQ2Ft",
-            "cGFpZ24uVmlkZW9DYW1wYWlnblNldHRpbmdzLkJvb2tpbmdEZXRhaWxzQgPg",
-            "QQMSgAEKGnZpZGVvX2FkX2ludmVudG9yeV9jb250cm9sGAIgASgLMlouZ29v",
+            "QXBwQ2FtcGFpZ25TZXR0aW5nEj4KBmxhYmVscxg9IAMoCUIu4EED+kEoCiZn",
+            "b29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vQ2FtcGFpZ25MYWJlbBJvCg9leHBl",
+            "cmltZW50X3R5cGUYESABKA4yUS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMu",
+            "ZW51bXMuQ2FtcGFpZ25FeHBlcmltZW50VHlwZUVudW0uQ2FtcGFpZ25FeHBl",
+            "cmltZW50VHlwZUID4EEDEkUKDWJhc2VfY2FtcGFpZ24YOCABKAlCKeBBA/pB",
+            "IwohZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0NhbXBhaWduSAWIAQESSgoP",
+            "Y2FtcGFpZ25fYnVkZ2V0GD4gASgJQiz6QSkKJ2dvb2dsZWFkcy5nb29nbGVh",
+            "cGlzLmNvbS9DYW1wYWlnbkJ1ZGdldEgGiAEBEm8KFWJpZGRpbmdfc3RyYXRl",
+            "Z3lfdHlwZRgWIAEoDjJLLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5lbnVt",
+            "cy5CaWRkaW5nU3RyYXRlZ3lUeXBlRW51bS5CaWRkaW5nU3RyYXRlZ3lUeXBl",
+            "QgPgQQMSXwobYWNjZXNzaWJsZV9iaWRkaW5nX3N0cmF0ZWd5GEcgASgJQjrg",
+            "QQP6QTQKMmdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9BY2Nlc3NpYmxlQmlk",
+            "ZGluZ1N0cmF0ZWd5EkgKDmNhbXBhaWduX2dyb3VwGEwgASgJQiv6QSgKJmdv",
+            "b2dsZWFkcy5nb29nbGVhcGlzLmNvbS9DYW1wYWlnbkdyb3VwSAeIAQESHAoP",
+            "c3RhcnRfZGF0ZV90aW1lGGggASgJSAiIAQESGgoNZW5kX2RhdGVfdGltZRhp",
+            "IAEoCUgJiAEBEh0KEGZpbmFsX3VybF9zdWZmaXgYQSABKAlICogBARJKCg5m",
+            "cmVxdWVuY3lfY2FwcxgoIAMoCzIyLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
+            "My5jb21tb24uRnJlcXVlbmN5Q2FwRW50cnkSeQoedmlkZW9fYnJhbmRfc2Fm",
+            "ZXR5X3N1aXRhYmlsaXR5GCogASgOMlEuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djIzLmVudW1zLkJyYW5kU2FmZXR5U3VpdGFiaWxpdHlFbnVtLkJyYW5kU2Fm",
+            "ZXR5U3VpdGFiaWxpdHkSUAoNdmFuaXR5X3BoYXJtYRgsIAEoCzI5Lmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYyMy5yZXNvdXJjZXMuQ2FtcGFpZ24uVmFuaXR5",
+            "UGhhcm1hEmIKFnNlbGVjdGl2ZV9vcHRpbWl6YXRpb24YLSABKAsyQi5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MjMucmVzb3VyY2VzLkNhbXBhaWduLlNlbGVj",
+            "dGl2ZU9wdGltaXphdGlvbhJnChlvcHRpbWl6YXRpb25fZ29hbF9zZXR0aW5n",
+            "GDYgASgLMkQuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLnJlc291cmNlcy5D",
+            "YW1wYWlnbi5PcHRpbWl6YXRpb25Hb2FsU2V0dGluZxJbChB0cmFja2luZ19z",
+            "ZXR0aW5nGC4gASgLMjwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLnJlc291",
+            "cmNlcy5DYW1wYWlnbi5UcmFja2luZ1NldHRpbmdCA+BBAxJRCgxwYXltZW50",
+            "X21vZGUYNCABKA4yOy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMuZW51bXMu",
+            "UGF5bWVudE1vZGVFbnVtLlBheW1lbnRNb2RlEiQKEm9wdGltaXphdGlvbl9z",
+            "Y29yZRhCIAEoAUID4EEDSAuIAQESbAohZXhjbHVkZWRfcGFyZW50X2Fzc2V0",
+            "X2ZpZWxkX3R5cGVzGEUgAygOMkEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIz",
+            "LmVudW1zLkFzc2V0RmllbGRUeXBlRW51bS5Bc3NldEZpZWxkVHlwZRJmCh9l",
+            "eGNsdWRlZF9wYXJlbnRfYXNzZXRfc2V0X3R5cGVzGFAgAygOMj0uZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjIzLmVudW1zLkFzc2V0U2V0VHlwZUVudW0uQXNz",
+            "ZXRTZXRUeXBlEmgKF3BlcmZvcm1hbmNlX21heF91cGdyYWRlGE0gASgLMkIu",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLnJlc291cmNlcy5DYW1wYWlnbi5Q",
+            "ZXJmb3JtYW5jZU1heFVwZ3JhZGVCA+BBAxJQChhob3RlbF9wcm9wZXJ0eV9h",
+            "c3NldF9zZXQYUyABKAlCKeBBBfpBIwohZ29vZ2xlYWRzLmdvb2dsZWFwaXMu",
+            "Y29tL0Fzc2V0U2V0SAyIAQESWwoMbGlzdGluZ190eXBlGFYgASgOMjsuZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjIzLmVudW1zLkxpc3RpbmdUeXBlRW51bS5M",
+            "aXN0aW5nVHlwZUID4EEFSA2IAQESZgoZYXNzZXRfYXV0b21hdGlvbl9zZXR0",
+            "aW5ncxhYIAMoCzJDLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5yZXNvdXJj",
+            "ZXMuQ2FtcGFpZ24uQXNzZXRBdXRvbWF0aW9uU2V0dGluZxJxChJrZXl3b3Jk",
+            "X21hdGNoX3R5cGUYWiABKA4yVS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMu",
+            "ZW51bXMuQ2FtcGFpZ25LZXl3b3JkTWF0Y2hUeXBlRW51bS5DYW1wYWlnbktl",
+            "eXdvcmRNYXRjaFR5cGUSKgoYYnJhbmRfZ3VpZGVsaW5lc19lbmFibGVkGGAg",
+            "ASgIQgPgQQVIDogBARJWChBicmFuZF9ndWlkZWxpbmVzGGIgASgLMjwuZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjIzLnJlc291cmNlcy5DYW1wYWlnbi5CcmFu",
+            "ZEd1aWRlbGluZXMSVAoPdGV4dF9ndWlkZWxpbmVzGGsgASgLMjsuZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjIzLnJlc291cmNlcy5DYW1wYWlnbi5UZXh0R3Vp",
+            "ZGVsaW5lcxJwCiB0aGlyZF9wYXJ0eV9pbnRlZ3JhdGlvbl9wYXJ0bmVycxhk",
+            "IAEoCzJGLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5jb21tb24uQ2FtcGFp",
+            "Z25UaGlyZFBhcnR5SW50ZWdyYXRpb25QYXJ0bmVycxJRCg5haV9tYXhfc2V0",
+            "dGluZxhlIAEoCzI5Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5yZXNvdXJj",
+            "ZXMuQ2FtcGFpZ24uQWlNYXhTZXR0aW5nEogBCiFjb250YWluc19ldV9wb2xp",
+            "dGljYWxfYWR2ZXJ0aXNpbmcYZiABKA4yXS5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MjMuZW51bXMuRXVQb2xpdGljYWxBZHZlcnRpc2luZ1N0YXR1c0VudW0u",
+            "RXVQb2xpdGljYWxBZHZlcnRpc2luZ1N0YXR1cxJWCgpmZWVkX3R5cGVzGGcg",
+            "AygOMj0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmVudW1zLkFzc2V0U2V0",
+            "VHlwZUVudW0uQXNzZXRTZXRUeXBlQgPgQQMSOQosbWlzc2luZ19ldV9wb2xp",
+            "dGljYWxfYWR2ZXJ0aXNpbmdfZGVjbGFyYXRpb24YbCABKAhCA+BBAxJJChBi",
+            "aWRkaW5nX3N0cmF0ZWd5GEMgASgJQi36QSoKKGdvb2dsZWFkcy5nb29nbGVh",
+            "cGlzLmNvbS9CaWRkaW5nU3RyYXRlZ3lIABJBCgpjb21taXNzaW9uGDEgASgL",
+            "MisuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmNvbW1vbi5Db21taXNzaW9u",
+            "SAASQAoKbWFudWFsX2NwYRhKIAEoCzIqLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYyMy5jb21tb24uTWFudWFsQ3BhSAASQAoKbWFudWFsX2NwYxgYIAEoCzIq",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5jb21tb24uTWFudWFsQ3BjSAAS",
+            "QAoKbWFudWFsX2NwbRgZIAEoCzIqLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
+            "My5jb21tb24uTWFudWFsQ3BtSAASQAoKbWFudWFsX2NwdhglIAEoCzIqLmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5jb21tb24uTWFudWFsQ3B2SAASVAoU",
+            "bWF4aW1pemVfY29udmVyc2lvbnMYHiABKAsyNC5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MjMuY29tbW9uLk1heGltaXplQ29udmVyc2lvbnNIABJdChltYXhp",
+            "bWl6ZV9jb252ZXJzaW9uX3ZhbHVlGB8gASgLMjguZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjIzLmNvbW1vbi5NYXhpbWl6ZUNvbnZlcnNpb25WYWx1ZUgAEkAK",
+            "CnRhcmdldF9jcGEYGiABKAsyKi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMu",
+            "Y29tbW9uLlRhcmdldENwYUgAElkKF3RhcmdldF9pbXByZXNzaW9uX3NoYXJl",
+            "GDAgASgLMjYuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmNvbW1vbi5UYXJn",
+            "ZXRJbXByZXNzaW9uU2hhcmVIABJCCgt0YXJnZXRfcm9hcxgdIAEoCzIrLmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5jb21tb24uVGFyZ2V0Um9hc0gAEkQK",
+            "DHRhcmdldF9zcGVuZBgbIAEoCzIsLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
+            "My5jb21tb24uVGFyZ2V0U3BlbmRIABJCCgtwZXJjZW50X2NwYxgiIAEoCzIr",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5jb21tb24uUGVyY2VudENwY0gA",
+            "EkAKCnRhcmdldF9jcG0YKSABKAsyKi5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MjMuY29tbW9uLlRhcmdldENwbUgAEj4KCWZpeGVkX2NwbRhcIAEoCzIpLmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5jb21tb24uRml4ZWRDcG1IABJACgp0",
+            "YXJnZXRfY3B2GF0gASgLMiouZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmNv",
+            "bW1vbi5UYXJnZXRDcHZIABJACgp0YXJnZXRfY3BjGGMgASgLMiouZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjIzLmNvbW1vbi5UYXJnZXRDcGNIABqfAgoVUGVy",
+            "Zm9ybWFuY2VNYXhVcGdyYWRlEksKGHBlcmZvcm1hbmNlX21heF9jYW1wYWln",
+            "bhgBIAEoCUIp4EED+kEjCiFnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vQ2Ft",
+            "cGFpZ24SRwoUcHJlX3VwZ3JhZGVfY2FtcGFpZ24YAiABKAlCKeBBA/pBIwoh",
+            "Z29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0NhbXBhaWduEnAKBnN0YXR1cxgD",
+            "IAEoDjJbLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5lbnVtcy5QZXJmb3Jt",
+            "YW5jZU1heFVwZ3JhZGVTdGF0dXNFbnVtLlBlcmZvcm1hbmNlTWF4VXBncmFk",
+            "ZVN0YXR1c0ID4EEDGo0DCg9OZXR3b3JrU2V0dGluZ3MSIQoUdGFyZ2V0X2dv",
+            "b2dsZV9zZWFyY2gYBSABKAhIAIgBARIiChV0YXJnZXRfc2VhcmNoX25ldHdv",
+            "cmsYBiABKAhIAYgBARIjChZ0YXJnZXRfY29udGVudF9uZXR3b3JrGAcgASgI",
+            "SAKIAQESKgoddGFyZ2V0X3BhcnRuZXJfc2VhcmNoX25ldHdvcmsYCCABKAhI",
+            "A4gBARIbCg50YXJnZXRfeW91dHViZRgJIAEoCEgEiAEBEiUKGHRhcmdldF9n",
+            "b29nbGVfdHZfbmV0d29yaxgKIAEoCEgFiAEBQhcKFV90YXJnZXRfZ29vZ2xl",
+            "X3NlYXJjaEIYChZfdGFyZ2V0X3NlYXJjaF9uZXR3b3JrQhkKF190YXJnZXRf",
+            "Y29udGVudF9uZXR3b3JrQiAKHl90YXJnZXRfcGFydG5lcl9zZWFyY2hfbmV0",
+            "d29ya0IRCg9fdGFyZ2V0X3lvdXR1YmVCGwoZX3RhcmdldF9nb29nbGVfdHZf",
+            "bmV0d29yaxqCAQoQSG90ZWxTZXR0aW5nSW5mbxIcCg9ob3RlbF9jZW50ZXJf",
+            "aWQYAiABKANIAIgBARIiChVkaXNhYmxlX2hvdGVsX3NldHRpbmcYAyABKAhI",
+            "AYgBAUISChBfaG90ZWxfY2VudGVyX2lkQhgKFl9kaXNhYmxlX2hvdGVsX3Nl",
+            "dHRpbmcajwEKF0R5bmFtaWNTZWFyY2hBZHNTZXR0aW5nEhgKC2RvbWFpbl9u",
+            "YW1lGAYgASgJQgPgQQISGgoNbGFuZ3VhZ2VfY29kZRgHIAEoCUID4EECEiMK",
+            "FnVzZV9zdXBwbGllZF91cmxzX29ubHkYCCABKAhIAIgBAUIZChdfdXNlX3N1",
+            "cHBsaWVkX3VybHNfb25seRqyAgoPU2hvcHBpbmdTZXR0aW5nEhgKC21lcmNo",
+            "YW50X2lkGAUgASgDSACIAQESEgoKZmVlZF9sYWJlbBgKIAEoCRIeChFjYW1w",
+            "YWlnbl9wcmlvcml0eRgHIAEoBUgBiAEBEhkKDGVuYWJsZV9sb2NhbBgIIAEo",
+            "CEgCiAEBEiIKFXVzZV92ZWhpY2xlX2ludmVudG9yeRgJIAEoCEID4EEFEh8K",
+            "F2FkdmVydGlzaW5nX3BhcnRuZXJfaWRzGAsgAygDEiEKFGRpc2FibGVfcHJv",
+            "ZHVjdF9mZWVkGAwgASgISAOIAQFCDgoMX21lcmNoYW50X2lkQhQKEl9jYW1w",
+            "YWlnbl9wcmlvcml0eUIPCg1fZW5hYmxlX2xvY2FsQhcKFV9kaXNhYmxlX3By",
+            "b2R1Y3RfZmVlZBpCCg9UcmFja2luZ1NldHRpbmcSHgoMdHJhY2tpbmdfdXJs",
+            "GAIgASgJQgPgQQNIAIgBAUIPCg1fdHJhY2tpbmdfdXJsGvwBChRHZW9UYXJn",
+            "ZXRUeXBlU2V0dGluZxJxChhwb3NpdGl2ZV9nZW9fdGFyZ2V0X3R5cGUYASAB",
+            "KA4yTy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMuZW51bXMuUG9zaXRpdmVH",
+            "ZW9UYXJnZXRUeXBlRW51bS5Qb3NpdGl2ZUdlb1RhcmdldFR5cGUScQoYbmVn",
+            "YXRpdmVfZ2VvX3RhcmdldF90eXBlGAIgASgOMk8uZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjIzLmVudW1zLk5lZ2F0aXZlR2VvVGFyZ2V0VHlwZUVudW0uTmVn",
+            "YXRpdmVHZW9UYXJnZXRUeXBlGn8KFExvY2FsQ2FtcGFpZ25TZXR0aW5nEmcK",
+            "FGxvY2F0aW9uX3NvdXJjZV90eXBlGAEgASgOMkkuZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjIzLmVudW1zLkxvY2F0aW9uU291cmNlVHlwZUVudW0uTG9jYXRp",
+            "b25Tb3VyY2VUeXBlGq4CChJBcHBDYW1wYWlnblNldHRpbmcSjQEKGmJpZGRp",
+            "bmdfc3RyYXRlZ3lfZ29hbF90eXBlGAEgASgOMmkuZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjIzLmVudW1zLkFwcENhbXBhaWduQmlkZGluZ1N0cmF0ZWd5R29h",
+            "bFR5cGVFbnVtLkFwcENhbXBhaWduQmlkZGluZ1N0cmF0ZWd5R29hbFR5cGUS",
+            "GAoGYXBwX2lkGAQgASgJQgPgQQVIAIgBARJjCglhcHBfc3RvcmUYAyABKA4y",
+            "Sy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMuZW51bXMuQXBwQ2FtcGFpZ25B",
+            "cHBTdG9yZUVudW0uQXBwQ2FtcGFpZ25BcHBTdG9yZUID4EEFQgkKB19hcHBf",
+            "aWQa9QEKDFZhbml0eVBoYXJtYRKBAQoedmFuaXR5X3BoYXJtYV9kaXNwbGF5",
+            "X3VybF9tb2RlGAEgASgOMlkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmVu",
+            "dW1zLlZhbml0eVBoYXJtYURpc3BsYXlVcmxNb2RlRW51bS5WYW5pdHlQaGFy",
+            "bWFEaXNwbGF5VXJsTW9kZRJhChJ2YW5pdHlfcGhhcm1hX3RleHQYAiABKA4y",
+            "RS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMuZW51bXMuVmFuaXR5UGhhcm1h",
+            "VGV4dEVudW0uVmFuaXR5UGhhcm1hVGV4dBpjChVTZWxlY3RpdmVPcHRpbWl6",
+            "YXRpb24SSgoSY29udmVyc2lvbl9hY3Rpb25zGAIgAygJQi76QSsKKWdvb2ds",
+            "ZWFkcy5nb29nbGVhcGlzLmNvbS9Db252ZXJzaW9uQWN0aW9uGokBChdPcHRp",
+            "bWl6YXRpb25Hb2FsU2V0dGluZxJuChdvcHRpbWl6YXRpb25fZ29hbF90eXBl",
+            "cxgBIAMoDjJNLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5lbnVtcy5PcHRp",
+            "bWl6YXRpb25Hb2FsVHlwZUVudW0uT3B0aW1pemF0aW9uR29hbFR5cGUaUgoP",
+            "QXVkaWVuY2VTZXR0aW5nEiYKFHVzZV9hdWRpZW5jZV9ncm91cGVkGAEgASgI",
+            "QgPgQQVIAIgBAUIXChVfdXNlX2F1ZGllbmNlX2dyb3VwZWQacAodTG9jYWxT",
+            "ZXJ2aWNlc0NhbXBhaWduU2V0dGluZ3MSTwoNY2F0ZWdvcnlfYmlkcxgBIAMo",
+            "CzI4Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5yZXNvdXJjZXMuQ2FtcGFp",
+            "Z24uQ2F0ZWdvcnlCaWQaswEKC0NhdGVnb3J5QmlkEhgKC2NhdGVnb3J5X2lk",
+            "GAEgASgJSACIAQESIgoVbWFudWFsX2NwYV9iaWRfbWljcm9zGAIgASgDSAGI",
+            "AQESIgoVdGFyZ2V0X2NwYV9iaWRfbWljcm9zGAMgASgDSAKIAQFCDgoMX2Nh",
+            "dGVnb3J5X2lkQhgKFl9tYW51YWxfY3BhX2JpZF9taWNyb3NCGAoWX3Rhcmdl",
+            "dF9jcGFfYmlkX21pY3JvcxpTChZUcmF2ZWxDYW1wYWlnblNldHRpbmdzEiMK",
+            "EXRyYXZlbF9hY2NvdW50X2lkGAEgASgDQgPgQQVIAIgBAUIUChJfdHJhdmVs",
+            "X2FjY291bnRfaWQaWAoZRGVtYW5kR2VuQ2FtcGFpZ25TZXR0aW5ncxIkChJ1",
+            "cGdyYWRlZF90YXJnZXRpbmcYASABKAhCA+BBBUgAiAEBQhUKE191cGdyYWRl",
+            "ZF90YXJnZXRpbmcahhIKFVZpZGVvQ2FtcGFpZ25TZXR0aW5ncxJtChF2aWRl",
+            "b19hZF9zZXF1ZW5jZRgEIAEoCzJSLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
+            "My5yZXNvdXJjZXMuQ2FtcGFpZ24uVmlkZW9DYW1wYWlnblNldHRpbmdzLlZp",
+            "ZGVvQWRTZXF1ZW5jZRKXAQoncmVzZXJ2YXRpb25fYWRfY2F0ZWdvcnlfc2Vs",
+            "Zl9kaXNjbG9zdXJlGAUgASgLMmYuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIz",
+            "LnJlc291cmNlcy5DYW1wYWlnbi5WaWRlb0NhbXBhaWduU2V0dGluZ3MuUmVz",
+            "ZXJ2YXRpb25BZENhdGVnb3J5U2VsZkRpc2Nsb3N1cmUSbwoPYm9va2luZ19k",
+            "ZXRhaWxzGAYgASgLMlEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLnJlc291",
+            "cmNlcy5DYW1wYWlnbi5WaWRlb0NhbXBhaWduU2V0dGluZ3MuQm9va2luZ0Rl",
+            "dGFpbHNCA+BBAxKAAQoadmlkZW9fYWRfaW52ZW50b3J5X2NvbnRyb2wYAiAB",
+            "KAsyWi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMucmVzb3VyY2VzLkNhbXBh",
+            "aWduLlZpZGVvQ2FtcGFpZ25TZXR0aW5ncy5WaWRlb0FkSW52ZW50b3J5Q29u",
+            "dHJvbEgAEnoKF3ZpZGVvX2FkX2Zvcm1hdF9jb250cm9sGAMgASgLMlcuZ29v",
             "Z2xlLmFkcy5nb29nbGVhZHMudjIzLnJlc291cmNlcy5DYW1wYWlnbi5WaWRl",
-            "b0NhbXBhaWduU2V0dGluZ3MuVmlkZW9BZEludmVudG9yeUNvbnRyb2xIABJ6",
-            "Chd2aWRlb19hZF9mb3JtYXRfY29udHJvbBgDIAEoCzJXLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYyMy5yZXNvdXJjZXMuQ2FtcGFpZ24uVmlkZW9DYW1wYWln",
-            "blNldHRpbmdzLlZpZGVvQWRGb3JtYXRDb250cm9sSAAa8wEKF1ZpZGVvQWRJ",
-            "bnZlbnRvcnlDb250cm9sEhwKD2FsbG93X2luX3N0cmVhbRgBIAEoCEgAiAEB",
-            "EhoKDWFsbG93X2luX2ZlZWQYAiABKAhIAYgBARIZCgxhbGxvd19zaG9ydHMY",
-            "AyABKAhIAogBARIqCh1hbGxvd19ub25fc2tpcHBhYmxlX2luX3N0cmVhbRgE",
-            "IAEoCEgDiAEBQhIKEF9hbGxvd19pbl9zdHJlYW1CEAoOX2FsbG93X2luX2Zl",
-            "ZWRCDwoNX2FsbG93X3Nob3J0c0IgCh5fYWxsb3dfbm9uX3NraXBwYWJsZV9p",
-            "bl9zdHJlYW0anQIKFFZpZGVvQWRGb3JtYXRDb250cm9sEnEKEmZvcm1hdF9y",
-            "ZXN0cmljdGlvbhgBIAEoDjJVLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5l",
-            "bnVtcy5WaWRlb0FkRm9ybWF0UmVzdHJpY3Rpb25FbnVtLlZpZGVvQWRGb3Jt",
-            "YXRSZXN0cmljdGlvbhKRAQokbm9uX3NraXBwYWJsZV9pbl9zdHJlYW1fcmVz",
-            "dHJpY3Rpb25zGAIgASgLMmMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLnJl",
-            "c291cmNlcy5DYW1wYWlnbi5WaWRlb0NhbXBhaWduU2V0dGluZ3MuTm9uU2tp",
-            "cHBhYmxlSW5TdHJlYW1SZXN0cmljdGlvbnMa+AEKIE5vblNraXBwYWJsZUlu",
-            "U3RyZWFtUmVzdHJpY3Rpb25zEmkKDG1pbl9kdXJhdGlvbhgBIAEoDjJTLmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5lbnVtcy5Ob25Ta2lwcGFibGVNaW5E",
-            "dXJhdGlvbkVudW0uTm9uU2tpcHBhYmxlTWluRHVyYXRpb24SaQoMbWF4X2R1",
-            "cmF0aW9uGAIgASgOMlMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmVudW1z",
-            "Lk5vblNraXBwYWJsZU1heER1cmF0aW9uRW51bS5Ob25Ta2lwcGFibGVNYXhE",
-            "dXJhdGlvbhr1AQoPVmlkZW9BZFNlcXVlbmNlEmUKBXN0ZXBzGAEgAygLMlYu",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLnJlc291cmNlcy5DYW1wYWlnbi5W",
-            "aWRlb0NhbXBhaWduU2V0dGluZ3MuVmlkZW9BZFNlcXVlbmNlU3RlcBJ7ChBt",
-            "aW5pbXVtX2R1cmF0aW9uGAIgASgOMmEuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djIzLmVudW1zLlZpZGVvQWRTZXF1ZW5jZU1pbmltdW1EdXJhdGlvbkVudW0u",
-            "VmlkZW9BZFNlcXVlbmNlTWluaW11bUR1cmF0aW9uGsQCChNWaWRlb0FkU2Vx",
-            "dWVuY2VTdGVwEiEKGXZpZGVvX2FkX3NlcXVlbmNlX3N0ZXBfaWQYASABKAMS",
-            "EAoIYXNzZXRfaWQYAiABKAMSUgoNYWRfZ3JvdXBfdHlwZRgDIAEoDjI7Lmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5lbnVtcy5BZEdyb3VwVHlwZUVudW0u",
-            "QWRHcm91cFR5cGUSGAoQcHJldmlvdXNfc3RlcF9pZBgEIAEoAxKJAQoecHJl",
-            "dmlvdXNfc3RlcF9pbnRlcmFjdGlvbl90eXBlGAUgASgOMmEuZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjIzLmVudW1zLlZpZGVvQWRTZXF1ZW5jZUludGVyYWN0",
-            "aW9uVHlwZUVudW0uVmlkZW9BZFNlcXVlbmNlSW50ZXJhY3Rpb25UeXBlGloK",
-            "I1Jlc2VydmF0aW9uQWRDYXRlZ29yeVNlbGZEaXNjbG9zdXJlEhAKCGdhbWJs",
-            "aW5nGAEgASgIEg8KB2FsY29ob2wYAiABKAgSEAoIcG9saXRpY3MYAyABKAga",
-            "swEKDkJvb2tpbmdEZXRhaWxzElQKBnN0YXR1cxgBIAEoDjI/Lmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYyMy5lbnVtcy5Cb29raW5nU3RhdHVzRW51bS5Cb29r",
-            "aW5nU3RhdHVzQgPgQQMSJgoZaG9sZF9leHBpcmF0aW9uX2RhdGVfdGltZRgC",
-            "IAEoCUID4EEDEiMKFmNhbmNlbGxhdGlvbl9kYXRlX3RpbWUYAyABKAlCA+BB",
-            "A0ISChBmbHVpZGl0eV9jb250cm9sGocCChRQbWF4Q2FtcGFpZ25TZXR0aW5n",
-            "cxJ8ChlicmFuZF90YXJnZXRpbmdfb3ZlcnJpZGVzGAEgASgLMlkuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjIzLnJlc291cmNlcy5DYW1wYWlnbi5QbWF4Q2Ft",
-            "cGFpZ25TZXR0aW5ncy5CcmFuZFRhcmdldGluZ092ZXJyaWRlcxpxChdCcmFu",
-            "ZFRhcmdldGluZ092ZXJyaWRlcxIvCiJpZ25vcmVfZXhjbHVzaW9uc19mb3Jf",
-            "c2hvcHBpbmdfYWRzGAEgASgISACIAQFCJQojX2lnbm9yZV9leGNsdXNpb25z",
-            "X2Zvcl9zaG9wcGluZ19hZHMatgIKFkFzc2V0QXV0b21hdGlvblNldHRpbmcS",
-            "bwoVYXNzZXRfYXV0b21hdGlvbl90eXBlGAEgASgOMksuZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjIzLmVudW1zLkFzc2V0QXV0b21hdGlvblR5cGVFbnVtLkFz",
-            "c2V0QXV0b21hdGlvblR5cGVIAIgBARJ1Chdhc3NldF9hdXRvbWF0aW9uX3N0",
-            "YXR1cxgCIAEoDjJPLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5lbnVtcy5B",
-            "c3NldEF1dG9tYXRpb25TdGF0dXNFbnVtLkFzc2V0QXV0b21hdGlvblN0YXR1",
-            "c0gBiAEBQhgKFl9hc3NldF9hdXRvbWF0aW9uX3R5cGVCGgoYX2Fzc2V0X2F1",
-            "dG9tYXRpb25fc3RhdHVzGlsKD0JyYW5kR3VpZGVsaW5lcxISCgptYWluX2Nv",
-            "bG9yGAEgASgJEhQKDGFjY2VudF9jb2xvchgCIAEoCRIeChZwcmVkZWZpbmVk",
-            "X2ZvbnRfZmFtaWx5GAMgASgJGowBCg5UZXh0R3VpZGVsaW5lcxIXCg90ZXJt",
-            "X2V4Y2x1c2lvbnMYASADKAkSYQoWbWVzc2FnaW5nX3Jlc3RyaWN0aW9ucxgC",
-            "IAMoCzJBLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5yZXNvdXJjZXMuQ2Ft",
-            "cGFpZ24uTWVzc2FnaW5nUmVzdHJpY3Rpb24aoQEKFE1lc3NhZ2luZ1Jlc3Ry",
-            "aWN0aW9uEhgKEHJlc3RyaWN0aW9uX3RleHQYASABKAkSbwoQcmVzdHJpY3Rp",
-            "b25fdHlwZRgCIAEoDjJVLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5lbnVt",
-            "cy5NZXNzYWdpbmdSZXN0cmljdGlvblR5cGVFbnVtLk1lc3NhZ2luZ1Jlc3Ry",
-            "aWN0aW9uVHlwZRqfAgoMQWlNYXhTZXR0aW5nEhoKDWVuYWJsZV9haV9tYXgY",
-            "ASABKAhIAIgBARJ0ChFidW5kbGluZ19yZXF1aXJlZBgCIAEoDjJPLmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYyMy5yZXNvdXJjZXMuQ2FtcGFpZ24uQWlNYXhT",
-            "ZXR0aW5nLkFpTWF4QnVuZGxpbmdSZXF1aXJlZEID4EEDSAGIAQEiVQoVQWlN",
-            "YXhCdW5kbGluZ1JlcXVpcmVkEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9X",
-            "ThABEhAKDE5PVF9SRVFVSVJFRBACEgwKCFJFUVVJUkVEEANCEAoOX2VuYWJs",
-            "ZV9haV9tYXhCFAoSX2J1bmRsaW5nX3JlcXVpcmVkOlfqQVQKIWdvb2dsZWFk",
-            "cy5nb29nbGVhcGlzLmNvbS9DYW1wYWlnbhIvY3VzdG9tZXJzL3tjdXN0b21l",
-            "cl9pZH0vY2FtcGFpZ25zL3tjYW1wYWlnbl9pZH1CGwoZY2FtcGFpZ25fYmlk",
-            "ZGluZ19zdHJhdGVneUIFCgNfaWRCBwoFX25hbWVCGAoWX3RyYWNraW5nX3Vy",
-            "bF90ZW1wbGF0ZUITChFfYXVkaWVuY2Vfc2V0dGluZ0IQCg5fYmFzZV9jYW1w",
-            "YWlnbkISChBfY2FtcGFpZ25fYnVkZ2V0QhEKD19jYW1wYWlnbl9ncm91cEIS",
-            "ChBfc3RhcnRfZGF0ZV90aW1lQhAKDl9lbmRfZGF0ZV90aW1lQhMKEV9maW5h",
-            "bF91cmxfc3VmZml4QhUKE19vcHRpbWl6YXRpb25fc2NvcmVCGwoZX2hvdGVs",
-            "X3Byb3BlcnR5X2Fzc2V0X3NldEIPCg1fbGlzdGluZ190eXBlQhsKGV9icmFu",
-            "ZF9ndWlkZWxpbmVzX2VuYWJsZWRC/wEKJmNvbS5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MjMucmVzb3VyY2VzQg1DYW1wYWlnblByb3RvUAFaS2dvb2dsZS5n",
-            "b2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92",
-            "MjMvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIkdvb2dsZS5BZHMuR29v",
-            "Z2xlQWRzLlYyMy5SZXNvdXJjZXPKAiJHb29nbGVcQWRzXEdvb2dsZUFkc1xW",
-            "MjNcUmVzb3VyY2Vz6gImR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjIzOjpS",
-            "ZXNvdXJjZXNiBnByb3RvMw=="));
+            "b0NhbXBhaWduU2V0dGluZ3MuVmlkZW9BZEZvcm1hdENvbnRyb2xIABrzAQoX",
+            "VmlkZW9BZEludmVudG9yeUNvbnRyb2wSHAoPYWxsb3dfaW5fc3RyZWFtGAEg",
+            "ASgISACIAQESGgoNYWxsb3dfaW5fZmVlZBgCIAEoCEgBiAEBEhkKDGFsbG93",
+            "X3Nob3J0cxgDIAEoCEgCiAEBEioKHWFsbG93X25vbl9za2lwcGFibGVfaW5f",
+            "c3RyZWFtGAQgASgISAOIAQFCEgoQX2FsbG93X2luX3N0cmVhbUIQCg5fYWxs",
+            "b3dfaW5fZmVlZEIPCg1fYWxsb3dfc2hvcnRzQiAKHl9hbGxvd19ub25fc2tp",
+            "cHBhYmxlX2luX3N0cmVhbRqdAgoUVmlkZW9BZEZvcm1hdENvbnRyb2wScQoS",
+            "Zm9ybWF0X3Jlc3RyaWN0aW9uGAEgASgOMlUuZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjIzLmVudW1zLlZpZGVvQWRGb3JtYXRSZXN0cmljdGlvbkVudW0uVmlk",
+            "ZW9BZEZvcm1hdFJlc3RyaWN0aW9uEpEBCiRub25fc2tpcHBhYmxlX2luX3N0",
+            "cmVhbV9yZXN0cmljdGlvbnMYAiABKAsyYy5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MjMucmVzb3VyY2VzLkNhbXBhaWduLlZpZGVvQ2FtcGFpZ25TZXR0aW5n",
+            "cy5Ob25Ta2lwcGFibGVJblN0cmVhbVJlc3RyaWN0aW9ucxr4AQogTm9uU2tp",
+            "cHBhYmxlSW5TdHJlYW1SZXN0cmljdGlvbnMSaQoMbWluX2R1cmF0aW9uGAEg",
+            "ASgOMlMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmVudW1zLk5vblNraXBw",
+            "YWJsZU1pbkR1cmF0aW9uRW51bS5Ob25Ta2lwcGFibGVNaW5EdXJhdGlvbhJp",
+            "CgxtYXhfZHVyYXRpb24YAiABKA4yUy5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MjMuZW51bXMuTm9uU2tpcHBhYmxlTWF4RHVyYXRpb25FbnVtLk5vblNraXBw",
+            "YWJsZU1heER1cmF0aW9uGvUBCg9WaWRlb0FkU2VxdWVuY2USZQoFc3RlcHMY",
+            "ASADKAsyVi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMucmVzb3VyY2VzLkNh",
+            "bXBhaWduLlZpZGVvQ2FtcGFpZ25TZXR0aW5ncy5WaWRlb0FkU2VxdWVuY2VT",
+            "dGVwEnsKEG1pbmltdW1fZHVyYXRpb24YAiABKA4yYS5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MjMuZW51bXMuVmlkZW9BZFNlcXVlbmNlTWluaW11bUR1cmF0",
+            "aW9uRW51bS5WaWRlb0FkU2VxdWVuY2VNaW5pbXVtRHVyYXRpb24axAIKE1Zp",
+            "ZGVvQWRTZXF1ZW5jZVN0ZXASIQoZdmlkZW9fYWRfc2VxdWVuY2Vfc3RlcF9p",
+            "ZBgBIAEoAxIQCghhc3NldF9pZBgCIAEoAxJSCg1hZF9ncm91cF90eXBlGAMg",
+            "ASgOMjsuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmVudW1zLkFkR3JvdXBU",
+            "eXBlRW51bS5BZEdyb3VwVHlwZRIYChBwcmV2aW91c19zdGVwX2lkGAQgASgD",
+            "EokBCh5wcmV2aW91c19zdGVwX2ludGVyYWN0aW9uX3R5cGUYBSABKA4yYS5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MjMuZW51bXMuVmlkZW9BZFNlcXVlbmNl",
+            "SW50ZXJhY3Rpb25UeXBlRW51bS5WaWRlb0FkU2VxdWVuY2VJbnRlcmFjdGlv",
+            "blR5cGUaWgojUmVzZXJ2YXRpb25BZENhdGVnb3J5U2VsZkRpc2Nsb3N1cmUS",
+            "EAoIZ2FtYmxpbmcYASABKAgSDwoHYWxjb2hvbBgCIAEoCBIQCghwb2xpdGlj",
+            "cxgDIAEoCBqzAQoOQm9va2luZ0RldGFpbHMSVAoGc3RhdHVzGAEgASgOMj8u",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmVudW1zLkJvb2tpbmdTdGF0dXNF",
+            "bnVtLkJvb2tpbmdTdGF0dXNCA+BBAxImChlob2xkX2V4cGlyYXRpb25fZGF0",
+            "ZV90aW1lGAIgASgJQgPgQQMSIwoWY2FuY2VsbGF0aW9uX2RhdGVfdGltZRgD",
+            "IAEoCUID4EEDQhIKEGZsdWlkaXR5X2NvbnRyb2wahwIKFFBtYXhDYW1wYWln",
+            "blNldHRpbmdzEnwKGWJyYW5kX3RhcmdldGluZ19vdmVycmlkZXMYASABKAsy",
+            "WS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMucmVzb3VyY2VzLkNhbXBhaWdu",
+            "LlBtYXhDYW1wYWlnblNldHRpbmdzLkJyYW5kVGFyZ2V0aW5nT3ZlcnJpZGVz",
+            "GnEKF0JyYW5kVGFyZ2V0aW5nT3ZlcnJpZGVzEi8KImlnbm9yZV9leGNsdXNp",
+            "b25zX2Zvcl9zaG9wcGluZ19hZHMYASABKAhIAIgBAUIlCiNfaWdub3JlX2V4",
+            "Y2x1c2lvbnNfZm9yX3Nob3BwaW5nX2Fkcxq2AgoWQXNzZXRBdXRvbWF0aW9u",
+            "U2V0dGluZxJvChVhc3NldF9hdXRvbWF0aW9uX3R5cGUYASABKA4ySy5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MjMuZW51bXMuQXNzZXRBdXRvbWF0aW9uVHlw",
+            "ZUVudW0uQXNzZXRBdXRvbWF0aW9uVHlwZUgAiAEBEnUKF2Fzc2V0X2F1dG9t",
+            "YXRpb25fc3RhdHVzGAIgASgOMk8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIz",
+            "LmVudW1zLkFzc2V0QXV0b21hdGlvblN0YXR1c0VudW0uQXNzZXRBdXRvbWF0",
+            "aW9uU3RhdHVzSAGIAQFCGAoWX2Fzc2V0X2F1dG9tYXRpb25fdHlwZUIaChhf",
+            "YXNzZXRfYXV0b21hdGlvbl9zdGF0dXMaWwoPQnJhbmRHdWlkZWxpbmVzEhIK",
+            "Cm1haW5fY29sb3IYASABKAkSFAoMYWNjZW50X2NvbG9yGAIgASgJEh4KFnBy",
+            "ZWRlZmluZWRfZm9udF9mYW1pbHkYAyABKAkajAEKDlRleHRHdWlkZWxpbmVz",
+            "EhcKD3Rlcm1fZXhjbHVzaW9ucxgBIAMoCRJhChZtZXNzYWdpbmdfcmVzdHJp",
+            "Y3Rpb25zGAIgAygLMkEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLnJlc291",
+            "cmNlcy5DYW1wYWlnbi5NZXNzYWdpbmdSZXN0cmljdGlvbhqhAQoUTWVzc2Fn",
+            "aW5nUmVzdHJpY3Rpb24SGAoQcmVzdHJpY3Rpb25fdGV4dBgBIAEoCRJvChBy",
+            "ZXN0cmljdGlvbl90eXBlGAIgASgOMlUuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djIzLmVudW1zLk1lc3NhZ2luZ1Jlc3RyaWN0aW9uVHlwZUVudW0uTWVzc2Fn",
+            "aW5nUmVzdHJpY3Rpb25UeXBlGp8CCgxBaU1heFNldHRpbmcSGgoNZW5hYmxl",
+            "X2FpX21heBgBIAEoCEgAiAEBEnQKEWJ1bmRsaW5nX3JlcXVpcmVkGAIgASgO",
+            "Mk8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLnJlc291cmNlcy5DYW1wYWln",
+            "bi5BaU1heFNldHRpbmcuQWlNYXhCdW5kbGluZ1JlcXVpcmVkQgPgQQNIAYgB",
+            "ASJVChVBaU1heEJ1bmRsaW5nUmVxdWlyZWQSDwoLVU5TUEVDSUZJRUQQABIL",
+            "CgdVTktOT1dOEAESEAoMTk9UX1JFUVVJUkVEEAISDAoIUkVRVUlSRUQQA0IQ",
+            "Cg5fZW5hYmxlX2FpX21heEIUChJfYnVuZGxpbmdfcmVxdWlyZWQ6V+pBVAoh",
+            "Z29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0NhbXBhaWduEi9jdXN0b21lcnMv",
+            "e2N1c3RvbWVyX2lkfS9jYW1wYWlnbnMve2NhbXBhaWduX2lkfUIbChljYW1w",
+            "YWlnbl9iaWRkaW5nX3N0cmF0ZWd5QgUKA19pZEIHCgVfbmFtZUIYChZfdHJh",
+            "Y2tpbmdfdXJsX3RlbXBsYXRlQhMKEV9hdWRpZW5jZV9zZXR0aW5nQhAKDl9i",
+            "YXNlX2NhbXBhaWduQhIKEF9jYW1wYWlnbl9idWRnZXRCEQoPX2NhbXBhaWdu",
+            "X2dyb3VwQhIKEF9zdGFydF9kYXRlX3RpbWVCEAoOX2VuZF9kYXRlX3RpbWVC",
+            "EwoRX2ZpbmFsX3VybF9zdWZmaXhCFQoTX29wdGltaXphdGlvbl9zY29yZUIb",
+            "ChlfaG90ZWxfcHJvcGVydHlfYXNzZXRfc2V0Qg8KDV9saXN0aW5nX3R5cGVC",
+            "GwoZX2JyYW5kX2d1aWRlbGluZXNfZW5hYmxlZEL/AQomY29tLmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYyMy5yZXNvdXJjZXNCDUNhbXBhaWduUHJvdG9QAVpL",
+            "Z29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29v",
+            "Z2xlYWRzL3YyMy9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FBqgIiR29vZ2xl",
+            "LkFkcy5Hb29nbGVBZHMuVjIzLlJlc291cmNlc8oCIkdvb2dsZVxBZHNcR29v",
+            "Z2xlQWRzXFYyM1xSZXNvdXJjZXPqAiZHb29nbGU6OkFkczo6R29vZ2xlQWRz",
+            "OjpWMjM6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V23.Common.BiddingReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Common.CustomParameterReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Common.FrequencyCapReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Common.RealTimeBiddingSettingReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Common.TargetingSettingReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Common.ThirdPartyIntegrationPartnersReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.AdGroupTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.AdServingOptimizationStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.AdvertisingChannelSubTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.AdvertisingChannelTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.AppCampaignAppStoreReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.AppCampaignBiddingStrategyGoalTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.AssetAutomationStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.AssetAutomationTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.AssetFieldTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.AssetSetTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.BiddingStrategySystemStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.BiddingStrategyTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.BookingStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.BrandSafetySuitabilityReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.CampaignExperimentTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.CampaignKeywordMatchTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.CampaignPrimaryStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.CampaignPrimaryStatusReasonReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.CampaignServingStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.CampaignStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.EuPoliticalAdvertisingStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.ListingTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.LocationSourceTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.MessagingRestrictionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.NegativeGeoTargetTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.NonSkippableMaxDurationReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.NonSkippableMinDurationReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.OptimizationGoalTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.PaymentModeReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.PerformanceMaxUpgradeStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.PositiveGeoTargetTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.VanityPharmaDisplayUrlModeReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.VanityPharmaTextReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.VideoAdFormatRestrictionReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.VideoAdSequenceInteractionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.VideoAdSequenceMinimumDurationReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Resources.Campaign), global::Google.Ads.GoogleAds.V23.Resources.Campaign.Parser, new[]{ "ResourceName", "Id", "Name", "PrimaryStatus", "PrimaryStatusReasons", "Status", "ServingStatus", "BiddingStrategySystemStatus", "AdServingOptimizationStatus", "AdvertisingChannelType", "AdvertisingChannelSubType", "TrackingUrlTemplate", "UrlCustomParameters", "LocalServicesCampaignSettings", "TravelCampaignSettings", "DemandGenCampaignSettings", "VideoCampaignSettings", "PmaxCampaignSettings", "RealTimeBiddingSetting", "NetworkSettings", "HotelSetting", "DynamicSearchAdsSetting", "ShoppingSetting", "TargetingSetting", "AudienceSetting", "GeoTargetTypeSetting", "LocalCampaignSetting", "AppCampaignSetting", "Labels", "ExperimentType", "BaseCampaign", "CampaignBudget", "BiddingStrategyType", "AccessibleBiddingStrategy", "CampaignGroup", "StartDateTime", "EndDateTime", "FinalUrlSuffix", "FrequencyCaps", "VideoBrandSafetySuitability", "VanityPharma", "SelectiveOptimization", "OptimizationGoalSetting", "TrackingSetting", "PaymentMode", "OptimizationScore", "ExcludedParentAssetFieldTypes", "ExcludedParentAssetSetTypes", "PerformanceMaxUpgrade", "HotelPropertyAssetSet", "ListingType", "AssetAutomationSettings", "KeywordMatchType", "BrandGuidelinesEnabled", "BrandGuidelines", "TextGuidelines", "ThirdPartyIntegrationPartners", "AiMaxSetting", "ContainsEuPoliticalAdvertising", "FeedTypes", "MissingEuPoliticalAdvertisingDeclaration", "BiddingStrategy", "Commission", "ManualCpa", "ManualCpc", "ManualCpm", "ManualCpv", "MaximizeConversions", "MaximizeConversionValue", "TargetCpa", "TargetImpressionShare", "TargetRoas", "TargetSpend", "PercentCpc", "TargetCpm", "FixedCpm", "TargetCpv", "TargetCpc" }, new[]{ "CampaignBiddingStrategy", "Id", "Name", "TrackingUrlTemplate", "AudienceSetting", "BaseCampaign", "CampaignBudget", "CampaignGroup", "StartDateTime", "EndDateTime", "FinalUrlSuffix", "OptimizationScore", "HotelPropertyAssetSet", "ListingType", "BrandGuidelinesEnabled" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Resources.Campaign.Types.PerformanceMaxUpgrade), global::Google.Ads.GoogleAds.V23.Resources.Campaign.Types.PerformanceMaxUpgrade.Parser, new[]{ "PerformanceMaxCampaign", "PreUpgradeCampaign", "Status" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Resources.Campaign.Types.NetworkSettings), global::Google.Ads.GoogleAds.V23.Resources.Campaign.Types.NetworkSettings.Parser, new[]{ "TargetGoogleSearch", "TargetSearchNetwork", "TargetContentNetwork", "TargetPartnerSearchNetwork", "TargetYoutube", "TargetGoogleTvNetwork" }, new[]{ "TargetGoogleSearch", "TargetSearchNetwork", "TargetContentNetwork", "TargetPartnerSearchNetwork", "TargetYoutube", "TargetGoogleTvNetwork" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Resources.Campaign.Types.HotelSettingInfo), global::Google.Ads.GoogleAds.V23.Resources.Campaign.Types.HotelSettingInfo.Parser, new[]{ "HotelCenterId" }, new[]{ "HotelCenterId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Resources.Campaign.Types.HotelSettingInfo), global::Google.Ads.GoogleAds.V23.Resources.Campaign.Types.HotelSettingInfo.Parser, new[]{ "HotelCenterId", "DisableHotelSetting" }, new[]{ "HotelCenterId", "DisableHotelSetting" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Resources.Campaign.Types.DynamicSearchAdsSetting), global::Google.Ads.GoogleAds.V23.Resources.Campaign.Types.DynamicSearchAdsSetting.Parser, new[]{ "DomainName", "LanguageCode", "UseSuppliedUrlsOnly" }, new[]{ "UseSuppliedUrlsOnly" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Resources.Campaign.Types.ShoppingSetting), global::Google.Ads.GoogleAds.V23.Resources.Campaign.Types.ShoppingSetting.Parser, new[]{ "MerchantId", "FeedLabel", "CampaignPriority", "EnableLocal", "UseVehicleInventory", "AdvertisingPartnerIds", "DisableProductFeed" }, new[]{ "MerchantId", "CampaignPriority", "EnableLocal", "DisableProductFeed" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Resources.Campaign.Types.TrackingSetting), global::Google.Ads.GoogleAds.V23.Resources.Campaign.Types.TrackingSetting.Parser, new[]{ "TrackingUrl" }, new[]{ "TrackingUrl" }, null, null, null),
@@ -976,7 +977,7 @@ namespace Google.Ads.GoogleAds.V23.Resources {
     public const int HotelSettingFieldNumber = 32;
     private global::Google.Ads.GoogleAds.V23.Resources.Campaign.Types.HotelSettingInfo hotelSetting_;
     /// <summary>
-    /// Immutable. The hotel setting for the campaign.
+    /// The hotel setting for the campaign.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3507,7 +3508,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -3990,7 +3995,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -4701,7 +4710,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -4728,7 +4741,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
@@ -4842,7 +4859,7 @@ namespace Google.Ads.GoogleAds.V23.Resources {
 
         private bool targetSearchNetwork_;
         /// <summary>
-        /// Whether ads will be served on partner sites in the Google Search Network
+        /// Whether ads will be served on sites in the Google Search Partners Network
         /// (requires `target_google_search` to also be `true`).
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4904,8 +4921,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
 
         private bool targetPartnerSearchNetwork_;
         /// <summary>
-        /// Whether ads will be served on the Google Partner Network.
-        /// This is available only to some select Google partner accounts.
+        /// Whether ads will be served on the partner network. This is available
+        /// only to some select partner accounts. Unless you have been instructed to
+        /// use this field, it likely does not apply to your account. This does not
+        /// control whether ads will be served on Google Search Partners Network; use
+        /// `target_search_network` for that instead.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -5168,7 +5188,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -5207,7 +5231,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
@@ -5283,6 +5311,7 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         public HotelSettingInfo(HotelSettingInfo other) : this() {
           _hasBits0 = other._hasBits0;
           hotelCenterId_ = other.hotelCenterId_;
+          disableHotelSetting_ = other.disableHotelSetting_;
           _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
         }
 
@@ -5298,7 +5327,7 @@ namespace Google.Ads.GoogleAds.V23.Resources {
 
         private long hotelCenterId_;
         /// <summary>
-        /// Immutable. The linked Hotel Center account.
+        /// The linked Hotel Center account.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -5322,6 +5351,37 @@ namespace Google.Ads.GoogleAds.V23.Resources {
           _hasBits0 &= ~1;
         }
 
+        /// <summary>Field number for the "disable_hotel_setting" field.</summary>
+        public const int DisableHotelSettingFieldNumber = 3;
+        private readonly static bool DisableHotelSettingDefaultValue = false;
+
+        private bool disableHotelSetting_;
+        /// <summary>
+        /// Disable the optional hotel setting. This field is currently supported
+        /// only for Demand Gen campaigns.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool DisableHotelSetting {
+          get { if ((_hasBits0 & 2) != 0) { return disableHotelSetting_; } else { return DisableHotelSettingDefaultValue; } }
+          set {
+            _hasBits0 |= 2;
+            disableHotelSetting_ = value;
+          }
+        }
+        /// <summary>Gets whether the "disable_hotel_setting" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasDisableHotelSetting {
+          get { return (_hasBits0 & 2) != 0; }
+        }
+        /// <summary>Clears the value of the "disable_hotel_setting" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearDisableHotelSetting() {
+          _hasBits0 &= ~2;
+        }
+
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override bool Equals(object other) {
@@ -5338,6 +5398,7 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             return true;
           }
           if (HotelCenterId != other.HotelCenterId) return false;
+          if (DisableHotelSetting != other.DisableHotelSetting) return false;
           return Equals(_unknownFields, other._unknownFields);
         }
 
@@ -5346,6 +5407,7 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         public override int GetHashCode() {
           int hash = 1;
           if (HasHotelCenterId) hash ^= HotelCenterId.GetHashCode();
+          if (HasDisableHotelSetting) hash ^= DisableHotelSetting.GetHashCode();
           if (_unknownFields != null) {
             hash ^= _unknownFields.GetHashCode();
           }
@@ -5368,6 +5430,10 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             output.WriteRawTag(16);
             output.WriteInt64(HotelCenterId);
           }
+          if (HasDisableHotelSetting) {
+            output.WriteRawTag(24);
+            output.WriteBool(DisableHotelSetting);
+          }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
           }
@@ -5382,6 +5448,10 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             output.WriteRawTag(16);
             output.WriteInt64(HotelCenterId);
           }
+          if (HasDisableHotelSetting) {
+            output.WriteRawTag(24);
+            output.WriteBool(DisableHotelSetting);
+          }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(ref output);
           }
@@ -5394,6 +5464,9 @@ namespace Google.Ads.GoogleAds.V23.Resources {
           int size = 0;
           if (HasHotelCenterId) {
             size += 1 + pb::CodedOutputStream.ComputeInt64Size(HotelCenterId);
+          }
+          if (HasDisableHotelSetting) {
+            size += 1 + 1;
           }
           if (_unknownFields != null) {
             size += _unknownFields.CalculateSize();
@@ -5410,6 +5483,9 @@ namespace Google.Ads.GoogleAds.V23.Resources {
           if (other.HasHotelCenterId) {
             HotelCenterId = other.HotelCenterId;
           }
+          if (other.HasDisableHotelSetting) {
+            DisableHotelSetting = other.DisableHotelSetting;
+          }
           _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
         }
 
@@ -5421,12 +5497,20 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
               case 16: {
                 HotelCenterId = input.ReadInt64();
+                break;
+              }
+              case 24: {
+                DisableHotelSetting = input.ReadBool();
                 break;
               }
             }
@@ -5440,12 +5524,20 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
               case 16: {
                 HotelCenterId = input.ReadInt64();
+                break;
+              }
+              case 24: {
+                DisableHotelSetting = input.ReadBool();
                 break;
               }
             }
@@ -5700,7 +5792,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -5727,7 +5823,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
@@ -6181,7 +6281,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -6225,7 +6329,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
@@ -6441,7 +6549,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -6460,7 +6572,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
@@ -6669,7 +6785,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -6692,7 +6812,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
@@ -6873,7 +6997,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -6892,7 +7020,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
@@ -7148,7 +7280,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -7175,7 +7311,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
@@ -7393,7 +7533,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -7416,7 +7560,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
@@ -7591,7 +7739,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -7610,7 +7762,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
@@ -7777,7 +7933,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -7797,7 +7957,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
@@ -7994,7 +8158,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -8013,7 +8181,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
@@ -8179,7 +8351,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -8198,7 +8374,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
@@ -8489,7 +8669,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -8516,7 +8700,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
@@ -8718,7 +8906,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -8737,7 +8929,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
@@ -8935,7 +9131,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -8954,7 +9154,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
@@ -9310,7 +9514,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -9364,7 +9572,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
@@ -9742,7 +9954,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             #else
               uint tag;
               while ((tag = input.ReadTag()) != 0) {
-                switch(tag) {
+              if ((tag & 7) == 4) {
+                // Abort on any end group tag.
+                return;
+              }
+              switch(tag) {
                   default:
                     _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                     break;
@@ -9773,7 +9989,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
               uint tag;
               while ((tag = input.ReadTag()) != 0) {
-                switch(tag) {
+              if ((tag & 7) == 4) {
+                // Abort on any end group tag.
+                return;
+              }
+              switch(tag) {
                   default:
                     _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                     break;
@@ -9998,7 +10218,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             #else
               uint tag;
               while ((tag = input.ReadTag()) != 0) {
-                switch(tag) {
+              if ((tag & 7) == 4) {
+                // Abort on any end group tag.
+                return;
+              }
+              switch(tag) {
                   default:
                     _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                     break;
@@ -10024,7 +10248,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
               uint tag;
               while ((tag = input.ReadTag()) != 0) {
-                switch(tag) {
+              if ((tag & 7) == 4) {
+                // Abort on any end group tag.
+                return;
+              }
+              switch(tag) {
                   default:
                     _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                     break;
@@ -10240,7 +10468,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             #else
               uint tag;
               while ((tag = input.ReadTag()) != 0) {
-                switch(tag) {
+              if ((tag & 7) == 4) {
+                // Abort on any end group tag.
+                return;
+              }
+              switch(tag) {
                   default:
                     _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                     break;
@@ -10263,7 +10495,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
               uint tag;
               while ((tag = input.ReadTag()) != 0) {
-                switch(tag) {
+              if ((tag & 7) == 4) {
+                // Abort on any end group tag.
+                return;
+              }
+              switch(tag) {
                   default:
                     _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                     break;
@@ -10466,7 +10702,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             #else
               uint tag;
               while ((tag = input.ReadTag()) != 0) {
-                switch(tag) {
+              if ((tag & 7) == 4) {
+                // Abort on any end group tag.
+                return;
+              }
+              switch(tag) {
                   default:
                     _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                     break;
@@ -10489,7 +10729,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
               uint tag;
               while ((tag = input.ReadTag()) != 0) {
-                switch(tag) {
+              if ((tag & 7) == 4) {
+                // Abort on any end group tag.
+                return;
+              }
+              switch(tag) {
                   default:
                     _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                     break;
@@ -10803,7 +11047,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             #else
               uint tag;
               while ((tag = input.ReadTag()) != 0) {
-                switch(tag) {
+              if ((tag & 7) == 4) {
+                // Abort on any end group tag.
+                return;
+              }
+              switch(tag) {
                   default:
                     _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                     break;
@@ -10838,7 +11086,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
               uint tag;
               while ((tag = input.ReadTag()) != 0) {
-                switch(tag) {
+              if ((tag & 7) == 4) {
+                // Abort on any end group tag.
+                return;
+              }
+              switch(tag) {
                   default:
                     _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                     break;
@@ -11096,7 +11348,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             #else
               uint tag;
               while ((tag = input.ReadTag()) != 0) {
-                switch(tag) {
+              if ((tag & 7) == 4) {
+                // Abort on any end group tag.
+                return;
+              }
+              switch(tag) {
                   default:
                     _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                     break;
@@ -11123,7 +11379,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
               uint tag;
               while ((tag = input.ReadTag()) != 0) {
-                switch(tag) {
+              if ((tag & 7) == 4) {
+                // Abort on any end group tag.
+                return;
+              }
+              switch(tag) {
                   default:
                     _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                     break;
@@ -11379,7 +11639,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             #else
               uint tag;
               while ((tag = input.ReadTag()) != 0) {
-                switch(tag) {
+              if ((tag & 7) == 4) {
+                // Abort on any end group tag.
+                return;
+              }
+              switch(tag) {
                   default:
                     _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                     break;
@@ -11406,7 +11670,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
               uint tag;
               while ((tag = input.ReadTag()) != 0) {
-                switch(tag) {
+              if ((tag & 7) == 4) {
+                // Abort on any end group tag.
+                return;
+              }
+              switch(tag) {
                   default:
                     _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                     break;
@@ -11599,7 +11867,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -11621,7 +11893,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
@@ -11821,7 +12097,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             #else
               uint tag;
               while ((tag = input.ReadTag()) != 0) {
-                switch(tag) {
+              if ((tag & 7) == 4) {
+                // Abort on any end group tag.
+                return;
+              }
+              switch(tag) {
                   default:
                     _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                     break;
@@ -11840,7 +12120,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
               uint tag;
               while ((tag = input.ReadTag()) != 0) {
-                switch(tag) {
+              if ((tag & 7) == 4) {
+                // Abort on any end group tag.
+                return;
+              }
+              switch(tag) {
                   default:
                     _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                     break;
@@ -12087,7 +12371,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -12110,7 +12398,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
@@ -12361,7 +12653,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -12388,7 +12684,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
@@ -12586,7 +12886,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -12609,7 +12913,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
@@ -12825,7 +13133,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -12848,7 +13160,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
@@ -13103,7 +13419,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -13126,7 +13446,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;
