@@ -1,3 +1,8 @@
+25.3.0
+======
+- Added support for version 24.0 of the Google Ads API.
+- Changed the `GenerateForecastMetrics` example to align with v24.0.
+
 25.2.0
 ======
 - Added support for version 23.2 of the Google Ads API.

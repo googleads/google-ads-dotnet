@@ -15,16 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V23.Common;
-using Google.Ads.GoogleAds.V23.Errors;
-using Google.Ads.GoogleAds.V23.Resources;
-using Google.Ads.GoogleAds.V23.Services;
+using Google.Ads.GoogleAds.V24.Common;
+using Google.Ads.GoogleAds.V24.Errors;
+using Google.Ads.GoogleAds.V24.Resources;
+using Google.Ads.GoogleAds.V24.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V23.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V23.Enums.ListingGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V24.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V24.Enums.ListingGroupTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V23
+namespace Google.Ads.GoogleAds.Examples.V24
 {
     /// <summary>
     /// This example shows how to add a hotel listing group tree, which has two levels. The first
@@ -124,7 +124,7 @@ namespace Google.Ads.GoogleAds.Examples.V23
         {
             // Get the AdGroupCriterionService client.
             AdGroupCriterionServiceClient adGroupCriterionService =
-                client.GetService(Services.V23.AdGroupCriterionService);
+                client.GetService(Services.V24.AdGroupCriterionService);
 
             List<AdGroupCriterionOperation> operations = new List<AdGroupCriterionOperation>();
 
