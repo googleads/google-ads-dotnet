@@ -17,24 +17,24 @@ using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V23.Common;
-using Google.Ads.GoogleAds.V23.Errors;
-using Google.Ads.GoogleAds.V23.Resources;
-using Google.Ads.GoogleAds.V23.Services;
+using Google.Ads.GoogleAds.V24.Common;
+using Google.Ads.GoogleAds.V24.Errors;
+using Google.Ads.GoogleAds.V24.Resources;
+using Google.Ads.GoogleAds.V24.Services;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
 using System.Threading;
-using static Google.Ads.GoogleAds.V23.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V23.Enums.AssetAutomationStatusEnum.Types;
-using static Google.Ads.GoogleAds.V23.Enums.AssetAutomationTypeEnum.Types;
-using static Google.Ads.GoogleAds.V23.Enums.AssetFieldTypeEnum.Types;
-using static Google.Ads.GoogleAds.V23.Enums.AssetGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V23.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V23.Enums.EuPoliticalAdvertisingStatusEnum.Types;
-using static Google.Ads.GoogleAds.V23.Enums.MessagingRestrictionTypeEnum.Types;
+using static Google.Ads.GoogleAds.V24.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V24.Enums.AssetAutomationStatusEnum.Types;
+using static Google.Ads.GoogleAds.V24.Enums.AssetAutomationTypeEnum.Types;
+using static Google.Ads.GoogleAds.V24.Enums.AssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V24.Enums.AssetGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V24.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V24.Enums.EuPoliticalAdvertisingStatusEnum.Types;
+using static Google.Ads.GoogleAds.V24.Enums.MessagingRestrictionTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V23
+namespace Google.Ads.GoogleAds.Examples.V24
 {
     /// <summary>
     /// This example shows how to create a Performance Max campaign.
@@ -153,7 +153,7 @@ namespace Google.Ads.GoogleAds.Examples.V23
             {
                 // [START add_performance_max_campaign_1]
                 GoogleAdsServiceClient googleAdsServiceClient =
-                    client.GetService(Services.V23.GoogleAdsService);
+                    client.GetService(Services.V24.GoogleAdsService);
 
                 // Performance Max campaigns require that repeated assets such as headlines and
                 // descriptions be created before the campaign.
@@ -525,7 +525,7 @@ namespace Google.Ads.GoogleAds.Examples.V23
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V23.GoogleAdsService);
+                client.GetService(Services.V24.GoogleAdsService);
 
             MutateGoogleAdsRequest request = new MutateGoogleAdsRequest()
             {

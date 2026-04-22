@@ -15,17 +15,17 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V23.Common;
-using Google.Ads.GoogleAds.V23.Errors;
-using Google.Ads.GoogleAds.V23.Resources;
-using Google.Ads.GoogleAds.V23.Services;
+using Google.Ads.GoogleAds.V24.Common;
+using Google.Ads.GoogleAds.V24.Errors;
+using Google.Ads.GoogleAds.V24.Resources;
+using Google.Ads.GoogleAds.V24.Services;
 using Google.Api.Gax;
 using Google.Protobuf.Collections;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Google.Ads.GoogleAds.Examples.V23
+namespace Google.Ads.GoogleAds.Examples.V24
 {
     /// <summary>
     /// This code example gets non-removed responsive search ads in a specified ad group.
@@ -87,7 +87,7 @@ namespace Google.Ads.GoogleAds.Examples.V23
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V23.GoogleAdsService);
+                Services.V24.GoogleAdsService);
 
             string searchQuery =
                 $@"SELECT

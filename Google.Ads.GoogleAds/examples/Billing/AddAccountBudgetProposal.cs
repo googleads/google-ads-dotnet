@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V23.Errors;
-using Google.Ads.GoogleAds.V23.Resources;
-using Google.Ads.GoogleAds.V23.Services;
+using Google.Ads.GoogleAds.V24.Errors;
+using Google.Ads.GoogleAds.V24.Resources;
+using Google.Ads.GoogleAds.V24.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V23.Enums.AccountBudgetProposalTypeEnum.Types;
-using static Google.Ads.GoogleAds.V23.Enums.TimeTypeEnum.Types;
+using static Google.Ads.GoogleAds.V24.Enums.AccountBudgetProposalTypeEnum.Types;
+using static Google.Ads.GoogleAds.V24.Enums.TimeTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V23
+namespace Google.Ads.GoogleAds.Examples.V24
 {
     /// <summary>
     /// This code example creates an account budget proposal using the 'CREATE' operation. To get
@@ -87,7 +87,7 @@ namespace Google.Ads.GoogleAds.Examples.V23
         {
             // Get the AccountBudgetProposalServiceClient.
             AccountBudgetProposalServiceClient proposalService =
-                client.GetService(Services.V23.AccountBudgetProposalService);
+                client.GetService(Services.V24.AccountBudgetProposalService);
 
             // Create an AccountBudgetProposal. The proposal will be reviewed offline by Google Ads,
             // and if approved will become an AccountBudget.

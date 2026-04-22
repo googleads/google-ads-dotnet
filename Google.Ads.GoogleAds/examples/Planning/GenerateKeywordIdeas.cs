@@ -15,16 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V23.Common;
-using Google.Ads.GoogleAds.V23.Errors;
-using Google.Ads.GoogleAds.V23.Resources;
-using Google.Ads.GoogleAds.V23.Services;
+using Google.Ads.GoogleAds.V24.Common;
+using Google.Ads.GoogleAds.V24.Errors;
+using Google.Ads.GoogleAds.V24.Resources;
+using Google.Ads.GoogleAds.V24.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V23.Enums.KeywordPlanNetworkEnum.Types;
+using static Google.Ads.GoogleAds.V24.Enums.KeywordPlanNetworkEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V23
+namespace Google.Ads.GoogleAds.Examples.V24
 {
     /// <summary>
     /// This code example generates keyword ideas from a list of seed keywords or a seed page URL.
@@ -122,7 +122,7 @@ namespace Google.Ads.GoogleAds.Examples.V23
             long languageId, string[] keywordTexts, string pageUrl)
         {
             KeywordPlanIdeaServiceClient keywordPlanIdeaService =
-                client.GetService(Services.V23.KeywordPlanIdeaService);
+                client.GetService(Services.V24.KeywordPlanIdeaService);
 
             // Make sure that keywords and/or page URL were specified. The request must have
             // exactly one of urlSeed, keywordSeed, or keywordAndUrlSeed set.
