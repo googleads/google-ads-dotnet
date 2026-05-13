@@ -181,6 +181,15 @@ namespace Google.Ads.GoogleAds.V24.Resources {
     private bool biddable_;
     /// <summary>
     /// The biddability of the campaign conversion goal.
+    ///
+    /// If left unspecified during campaign creation or update operations, this
+    /// value will inherit the account-level default biddability for the
+    /// corresponding conversion category and origin.
+    ///
+    /// Note: The account-level default may be set to `true` for newly created
+    /// conversion goals. To explicitly prevent a campaign from bidding on this
+    /// goal, you must explicitly set `biddable` to `false` and include "biddable"
+    /// in your mutate operation's `update_mask`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

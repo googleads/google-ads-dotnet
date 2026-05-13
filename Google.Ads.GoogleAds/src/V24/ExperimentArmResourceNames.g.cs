@@ -342,5 +342,65 @@ namespace Google.Ads.GoogleAds.V24.Resources
             get => string.IsNullOrEmpty(Experiment) ? null : ExperimentName.Parse(Experiment, allowUnparsed: true);
             set => Experiment = value?.ToString() ?? "";
         }
+
+        public partial class Types
+        {
+            public partial class AssetVariationInfo
+            {
+                /// <summary>
+                /// <see cref="AdGroupName"/>-typed view over the <see cref="BaseAdGroup"/> resource name property.
+                /// </summary>
+                internal AdGroupName BaseAdGroupAsAdGroupName
+                {
+                    get => string.IsNullOrEmpty(BaseAdGroup) ? null : AdGroupName.Parse(BaseAdGroup, allowUnparsed: true);
+                    set => BaseAdGroup = value?.ToString() ?? "";
+                }
+
+                /// <summary>
+                /// <see cref="AdName"/>-typed view over the <see cref="BaseAd"/> resource name property.
+                /// </summary>
+                internal AdName BaseAdAsAdName
+                {
+                    get => string.IsNullOrEmpty(BaseAd) ? null : AdName.Parse(BaseAd, allowUnparsed: true);
+                    set => BaseAd = value?.ToString() ?? "";
+                }
+            }
+
+            public partial class AssetDetail
+            {
+                /// <summary>
+                /// <see cref="AssetName"/>-typed view over the <see cref="Asset"/> resource name property.
+                /// </summary>
+                internal AssetName AssetAsAssetName
+                {
+                    get => string.IsNullOrEmpty(Asset) ? null : AssetName.Parse(Asset, allowUnparsed: true);
+                    set => Asset = value?.ToString() ?? "";
+                }
+            }
+
+            public partial class AssetGroupInfo
+            {
+                /// <summary>
+                /// <see cref="AssetGroupName"/>-typed view over the <see cref="AssetGroup"/> resource name property.
+                /// </summary>
+                internal AssetGroupName AssetGroupAsAssetGroupName
+                {
+                    get => string.IsNullOrEmpty(AssetGroup) ? null : AssetGroupName.Parse(AssetGroup, allowUnparsed: true);
+                    set => AssetGroup = value?.ToString() ?? "";
+                }
+            }
+
+            public partial class AssetGroupAssetInfo
+            {
+                /// <summary>
+                /// <see cref="AssetName"/>-typed view over the <see cref="Asset"/> resource name property.
+                /// </summary>
+                internal AssetName AssetAsAssetName
+                {
+                    get => string.IsNullOrEmpty(Asset) ? null : AssetName.Parse(Asset, allowUnparsed: true);
+                    set => Asset = value?.ToString() ?? "";
+                }
+            }
+        }
     }
 }

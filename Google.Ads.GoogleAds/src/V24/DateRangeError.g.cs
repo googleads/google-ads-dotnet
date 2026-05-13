@@ -26,17 +26,18 @@ namespace Google.Ads.GoogleAds.V24.Errors {
           string.Concat(
             "CjZnb29nbGUvYWRzL2dvb2dsZWFkcy92MjQvZXJyb3JzL2RhdGVfcmFuZ2Vf",
             "ZXJyb3IucHJvdG8SH2dvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5lcnJvcnMi",
-            "5gEKEkRhdGVSYW5nZUVycm9yRW51bSLPAQoORGF0ZVJhbmdlRXJyb3ISDwoL",
+            "lAIKEkRhdGVSYW5nZUVycm9yRW51bSL9AQoORGF0ZVJhbmdlRXJyb3ISDwoL",
             "VU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESEAoMSU5WQUxJRF9EQVRFEAIS",
             "HQoZU1RBUlRfREFURV9BRlRFUl9FTkRfREFURRADEhsKF0NBTk5PVF9TRVRf",
             "REFURV9UT19QQVNUEAQSIAocQUZURVJfTUFYSU1VTV9BTExPV0FCTEVfREFU",
             "RRAFEi8KK0NBTk5PVF9NT0RJRllfU1RBUlRfREFURV9JRl9BTFJFQURZX1NU",
-            "QVJURUQQBkLzAQojY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5lcnJv",
-            "cnNCE0RhdGVSYW5nZUVycm9yUHJvdG9QAVpFZ29vZ2xlLmdvbGFuZy5vcmcv",
-            "Z2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YyNC9lcnJvcnM7",
-            "ZXJyb3JzogIDR0FBqgIfR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjI0LkVycm9y",
-            "c8oCH0dvb2dsZVxBZHNcR29vZ2xlQWRzXFYyNFxFcnJvcnPqAiNHb29nbGU6",
-            "OkFkczo6R29vZ2xlQWRzOjpWMjQ6OkVycm9yc2IGcHJvdG8z"));
+            "QVJURUQQBhIsCihSRVFVRVNURURfREFURV9HUkFOVUxBUklUWV9OT1RfU1VQ",
+            "UE9SVEVEEAdC8wEKI2NvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuZXJy",
+            "b3JzQhNEYXRlUmFuZ2VFcnJvclByb3RvUAFaRWdvb2dsZS5nb2xhbmcub3Jn",
+            "L2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MjQvZXJyb3Jz",
+            "O2Vycm9yc6ICA0dBQaoCH0dvb2dsZS5BZHMuR29vZ2xlQWRzLlYyNC5FcnJv",
+            "cnPKAh9Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMjRcRXJyb3Jz6gIjR29vZ2xl",
+            "OjpBZHM6Okdvb2dsZUFkczo6VjI0OjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -246,6 +247,12 @@ namespace Google.Ads.GoogleAds.V24.Errors {
         /// Trying to change start date on a resource that has started.
         /// </summary>
         [pbr::OriginalName("CANNOT_MODIFY_START_DATE_IF_ALREADY_STARTED")] CannotModifyStartDateIfAlreadyStarted = 6,
+        /// <summary>
+        /// The requested time granularity is not supported for the date range in the
+        /// query. Metrics with daily, hourly, or weekly segmentation are only
+        /// available for the last 37 months.
+        /// </summary>
+        [pbr::OriginalName("REQUESTED_DATE_GRANULARITY_NOT_SUPPORTED")] RequestedDateGranularityNotSupported = 7,
       }
 
     }

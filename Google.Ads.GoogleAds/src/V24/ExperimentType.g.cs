@@ -25,20 +25,23 @@ namespace Google.Ads.GoogleAds.V24.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjRnb29nbGUvYWRzL2dvb2dsZWFkcy92MjQvZW51bXMvZXhwZXJpbWVudF90",
-            "eXBlLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuZW51bXMiywIK",
-            "EkV4cGVyaW1lbnRUeXBlRW51bSK0AgoORXhwZXJpbWVudFR5cGUSDwoLVU5T",
+            "eXBlLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuZW51bXMisQMK",
+            "EkV4cGVyaW1lbnRUeXBlRW51bSKaAwoORXhwZXJpbWVudFR5cGUSDwoLVU5T",
             "UEVDSUZJRUQQABILCgdVTktOT1dOEAESGQoVRElTUExBWV9BTkRfVklERU9f",
             "MzYwEAISEAoMQURfVkFSSUFUSU9OEAMSEgoOWU9VVFVCRV9DVVNUT00QBRIS",
             "Cg5ESVNQTEFZX0NVU1RPTRAGEhEKDVNFQVJDSF9DVVNUT00QBxImCiJESVNQ",
             "TEFZX0FVVE9NQVRFRF9CSURESU5HX1NUUkFURUdZEAgSJQohU0VBUkNIX0FV",
             "VE9NQVRFRF9CSURESU5HX1NUUkFURUdZEAkSJwojU0hPUFBJTkdfQVVUT01B",
             "VEVEX0JJRERJTkdfU1RSQVRFR1kQChISCg5TTUFSVF9NQVRDSElORxALEhAK",
-            "DEhPVEVMX0NVU1RPTRAMQu0BCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djI0LmVudW1zQhNFeHBlcmltZW50VHlwZVByb3RvUAFaQ2dvb2dsZS5nb2xh",
-            "bmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MjQv",
-            "ZW51bXM7ZW51bXOiAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMjQu",
-            "RW51bXPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMjRcRW51bXPqAiJHb29n",
-            "bGU6OkFkczo6R29vZ2xlQWRzOjpWMjQ6OkVudW1zYgZwcm90bzM="));
+            "DEhPVEVMX0NVU1RPTRAMEhMKD09QVElNSVpFX0FTU0VUUxANEhAKDEFET1BU",
+            "X0FJX01BWBAOEh4KGkFET1BUX0JST0FEX01BVENIX0tFWVdPUkRTEA8SHQoZ",
+            "UE1BWF9SRVBMQUNFTUVOVF9TSE9QUElORxAQQu0BCiJjb20uZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjI0LmVudW1zQhNFeHBlcmltZW50VHlwZVByb3RvUAFa",
+            "Q2dvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dv",
+            "b2dsZWFkcy92MjQvZW51bXM7ZW51bXOiAgNHQUGqAh5Hb29nbGUuQWRzLkdv",
+            "b2dsZUFkcy5WMjQuRW51bXPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMjRc",
+            "RW51bXPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjQ6OkVudW1zYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -268,6 +271,25 @@ namespace Google.Ads.GoogleAds.V24.Enums {
         /// A custom experiment consisting of hotel campaigns.
         /// </summary>
         [pbr::OriginalName("HOTEL_CUSTOM")] HotelCustom = 12,
+        /// <summary>
+        /// A custom experiment for optimizing assets.
+        /// </summary>
+        [pbr::OriginalName("OPTIMIZE_ASSETS")] OptimizeAssets = 13,
+        /// <summary>
+        /// An experiment that tests how AI Max can help you engage more customers
+        /// with Google AI and broad match keywords.
+        /// </summary>
+        [pbr::OriginalName("ADOPT_AI_MAX")] AdoptAiMax = 14,
+        /// <summary>
+        /// An experiment that tests how broad match keywords can impact the number
+        /// of searches your ads appear in.
+        /// </summary>
+        [pbr::OriginalName("ADOPT_BROAD_MATCH_KEYWORDS")] AdoptBroadMatchKeywords = 15,
+        /// <summary>
+        /// An experiment that tests how your Shopping campaigns perform compared to
+        /// Performance Max.
+        /// </summary>
+        [pbr::OriginalName("PMAX_REPLACEMENT_SHOPPING")] PmaxReplacementShopping = 16,
       }
 
     }

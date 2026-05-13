@@ -205,7 +205,7 @@ namespace Google.Ads.GoogleAds.V24.Common {
             "bl92aWRlbxgCIAEoCCKaAQoTU21hcnRDYW1wYWlnbkFkSW5mbxI/CgloZWFk",
             "bGluZXMYASADKAsyLC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuY29tbW9u",
             "LkFkVGV4dEFzc2V0EkIKDGRlc2NyaXB0aW9ucxgCIAMoCzIsLmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYyNC5jb21tb24uQWRUZXh0QXNzZXQijgUKGURlbWFu",
+            "ZHMuZ29vZ2xlYWRzLnYyNC5jb21tb24uQWRUZXh0QXNzZXQi3QUKGURlbWFu",
             "ZEdlbk11bHRpQXNzZXRBZEluZm8SRwoQbWFya2V0aW5nX2ltYWdlcxgBIAMo",
             "CzItLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5jb21tb24uQWRJbWFnZUFz",
             "c2V0Ek4KF3NxdWFyZV9tYXJrZXRpbmdfaW1hZ2VzGAIgAygLMi0uZ29vZ2xl",
@@ -215,52 +215,54 @@ namespace Google.Ads.GoogleAds.V24.Common {
             "aXRfbWFya2V0aW5nX2ltYWdlcxgKIAMoCzItLmdvb2dsZS5hZHMuZ29vZ2xl",
             "YWRzLnYyNC5jb21tb24uQWRJbWFnZUFzc2V0EkIKC2xvZ29faW1hZ2VzGAQg",
             "AygLMi0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmNvbW1vbi5BZEltYWdl",
-            "QXNzZXQSPwoJaGVhZGxpbmVzGAUgAygLMiwuZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjI0LmNvbW1vbi5BZFRleHRBc3NldBJCCgxkZXNjcmlwdGlvbnMYBiAD",
-            "KAsyLC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuY29tbW9uLkFkVGV4dEFz",
-            "c2V0EhoKDWJ1c2luZXNzX25hbWUYByABKAlIAIgBARIgChNjYWxsX3RvX2Fj",
-            "dGlvbl90ZXh0GAggASgJSAGIAQFCEAoOX2J1c2luZXNzX25hbWVCFgoUX2Nh",
-            "bGxfdG9fYWN0aW9uX3RleHQigwMKF0RlbWFuZEdlbkNhcm91c2VsQWRJbmZv",
-            "EhoKDWJ1c2luZXNzX25hbWUYASABKAlCA+BBAhJGCgpsb2dvX2ltYWdlGAIg",
-            "ASgLMi0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmNvbW1vbi5BZEltYWdl",
-            "QXNzZXRCA+BBAhJDCghoZWFkbGluZRgDIAEoCzIsLmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYyNC5jb21tb24uQWRUZXh0QXNzZXRCA+BBAhJGCgtkZXNjcmlw",
-            "dGlvbhgEIAEoCzIsLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5jb21tb24u",
-            "QWRUZXh0QXNzZXRCA+BBAhIbChNjYWxsX3RvX2FjdGlvbl90ZXh0GAUgASgJ",
-            "EloKDmNhcm91c2VsX2NhcmRzGAYgAygLMj0uZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjI0LmNvbW1vbi5BZERlbWFuZEdlbkNhcm91c2VsQ2FyZEFzc2V0QgPg",
-            "QQIihQUKHkRlbWFuZEdlblZpZGVvUmVzcG9uc2l2ZUFkSW5mbxI/CgloZWFk",
-            "bGluZXMYASADKAsyLC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuY29tbW9u",
-            "LkFkVGV4dEFzc2V0EkQKDmxvbmdfaGVhZGxpbmVzGAIgAygLMiwuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjI0LmNvbW1vbi5BZFRleHRBc3NldBJCCgxkZXNj",
-            "cmlwdGlvbnMYAyADKAsyLC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuY29t",
-            "bW9uLkFkVGV4dEFzc2V0EkIKBnZpZGVvcxgEIAMoCzItLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYyNC5jb21tb24uQWRWaWRlb0Fzc2V0QgPgQQISRwoLbG9n",
-            "b19pbWFnZXMYBSADKAsyLS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuY29t",
-            "bW9uLkFkSW1hZ2VBc3NldEID4EECEkgKEWNvbXBhbmlvbl9iYW5uZXJzGAog",
+            "QXNzZXQSTQoWY2xhc3NpY19kaXNwbGF5X2ltYWdlcxgLIAMoCzItLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYyNC5jb21tb24uQWRJbWFnZUFzc2V0Ej8KCWhl",
+            "YWRsaW5lcxgFIAMoCzIsLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5jb21t",
+            "b24uQWRUZXh0QXNzZXQSQgoMZGVzY3JpcHRpb25zGAYgAygLMiwuZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjI0LmNvbW1vbi5BZFRleHRBc3NldBIaCg1idXNp",
+            "bmVzc19uYW1lGAcgASgJSACIAQESIAoTY2FsbF90b19hY3Rpb25fdGV4dBgI",
+            "IAEoCUgBiAEBQhAKDl9idXNpbmVzc19uYW1lQhYKFF9jYWxsX3RvX2FjdGlv",
+            "bl90ZXh0IoMDChdEZW1hbmRHZW5DYXJvdXNlbEFkSW5mbxIaCg1idXNpbmVz",
+            "c19uYW1lGAEgASgJQgPgQQISRgoKbG9nb19pbWFnZRgCIAEoCzItLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYyNC5jb21tb24uQWRJbWFnZUFzc2V0QgPgQQIS",
+            "QwoIaGVhZGxpbmUYAyABKAsyLC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQu",
+            "Y29tbW9uLkFkVGV4dEFzc2V0QgPgQQISRgoLZGVzY3JpcHRpb24YBCABKAsy",
+            "LC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuY29tbW9uLkFkVGV4dEFzc2V0",
+            "QgPgQQISGwoTY2FsbF90b19hY3Rpb25fdGV4dBgFIAEoCRJaCg5jYXJvdXNl",
+            "bF9jYXJkcxgGIAMoCzI9Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5jb21t",
+            "b24uQWREZW1hbmRHZW5DYXJvdXNlbENhcmRBc3NldEID4EECIoUFCh5EZW1h",
+            "bmRHZW5WaWRlb1Jlc3BvbnNpdmVBZEluZm8SPwoJaGVhZGxpbmVzGAEgAygL",
+            "MiwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmNvbW1vbi5BZFRleHRBc3Nl",
+            "dBJECg5sb25nX2hlYWRsaW5lcxgCIAMoCzIsLmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYyNC5jb21tb24uQWRUZXh0QXNzZXQSQgoMZGVzY3JpcHRpb25zGAMg",
+            "AygLMiwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmNvbW1vbi5BZFRleHRB",
+            "c3NldBJCCgZ2aWRlb3MYBCADKAsyLS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MjQuY29tbW9uLkFkVmlkZW9Bc3NldEID4EECEkcKC2xvZ29faW1hZ2VzGAUg",
             "AygLMi0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmNvbW1vbi5BZEltYWdl",
-            "QXNzZXQSEwoLYnJlYWRjcnVtYjEYBiABKAkSEwoLYnJlYWRjcnVtYjIYByAB",
-            "KAkSSAoNYnVzaW5lc3NfbmFtZRgIIAEoCzIsLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYyNC5jb21tb24uQWRUZXh0QXNzZXRCA+BBAhJNCg9jYWxsX3RvX2Fj",
-            "dGlvbnMYCSADKAsyNC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuY29tbW9u",
-            "LkFkQ2FsbFRvQWN0aW9uQXNzZXQiggQKFkRlbWFuZEdlblByb2R1Y3RBZElu",
-            "Zm8SSAoIaGVhZGxpbmUYASABKAsyLC5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MjQuY29tbW9uLkFkVGV4dEFzc2V0QgPgQQJIAIgBARJLCgtkZXNjcmlwdGlv",
-            "bhgCIAEoCzIsLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5jb21tb24uQWRU",
-            "ZXh0QXNzZXRCA+BBAkgBiAEBEksKCmxvZ29faW1hZ2UYAyABKAsyLS5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52MjQuY29tbW9uLkFkSW1hZ2VBc3NldEID4EEC",
-            "SAKIAQESEwoLYnJlYWRjcnVtYjEYBCABKAkSEwoLYnJlYWRjcnVtYjIYBSAB",
-            "KAkSSAoNYnVzaW5lc3NfbmFtZRgGIAEoCzIsLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYyNC5jb21tb24uQWRUZXh0QXNzZXRCA+BBAhJRCg5jYWxsX3RvX2Fj",
-            "dGlvbhgHIAEoCzI0Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5jb21tb24u",
-            "QWRDYWxsVG9BY3Rpb25Bc3NldEgDiAEBQgsKCV9oZWFkbGluZUIOCgxfZGVz",
-            "Y3JpcHRpb25CDQoLX2xvZ29faW1hZ2VCEQoPX2NhbGxfdG9fYWN0aW9uQvAB",
-            "CiNjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmNvbW1vbkIQQWRUeXBl",
-            "SW5mb3NQcm90b1ABWkVnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29n",
-            "bGVhcGlzL2Fkcy9nb29nbGVhZHMvdjI0L2NvbW1vbjtjb21tb26iAgNHQUGq",
-            "Ah9Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMjQuQ29tbW9uygIfR29vZ2xlXEFk",
-            "c1xHb29nbGVBZHNcVjI0XENvbW1vbuoCI0dvb2dsZTo6QWRzOjpHb29nbGVB",
-            "ZHM6OlYyNDo6Q29tbW9uYgZwcm90bzM="));
+            "QXNzZXRCA+BBAhJIChFjb21wYW5pb25fYmFubmVycxgKIAMoCzItLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYyNC5jb21tb24uQWRJbWFnZUFzc2V0EhMKC2Jy",
+            "ZWFkY3J1bWIxGAYgASgJEhMKC2JyZWFkY3J1bWIyGAcgASgJEkgKDWJ1c2lu",
+            "ZXNzX25hbWUYCCABKAsyLC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuY29t",
+            "bW9uLkFkVGV4dEFzc2V0QgPgQQISTQoPY2FsbF90b19hY3Rpb25zGAkgAygL",
+            "MjQuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmNvbW1vbi5BZENhbGxUb0Fj",
+            "dGlvbkFzc2V0IoIEChZEZW1hbmRHZW5Qcm9kdWN0QWRJbmZvEkgKCGhlYWRs",
+            "aW5lGAEgASgLMiwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmNvbW1vbi5B",
+            "ZFRleHRBc3NldEID4EECSACIAQESSwoLZGVzY3JpcHRpb24YAiABKAsyLC5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MjQuY29tbW9uLkFkVGV4dEFzc2V0QgPg",
+            "QQJIAYgBARJLCgpsb2dvX2ltYWdlGAMgASgLMi0uZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjI0LmNvbW1vbi5BZEltYWdlQXNzZXRCA+BBAkgCiAEBEhMKC2Jy",
+            "ZWFkY3J1bWIxGAQgASgJEhMKC2JyZWFkY3J1bWIyGAUgASgJEkgKDWJ1c2lu",
+            "ZXNzX25hbWUYBiABKAsyLC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuY29t",
+            "bW9uLkFkVGV4dEFzc2V0QgPgQQISUQoOY2FsbF90b19hY3Rpb24YByABKAsy",
+            "NC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuY29tbW9uLkFkQ2FsbFRvQWN0",
+            "aW9uQXNzZXRIA4gBAUILCglfaGVhZGxpbmVCDgoMX2Rlc2NyaXB0aW9uQg0K",
+            "C19sb2dvX2ltYWdlQhEKD19jYWxsX3RvX2FjdGlvbkLwAQojY29tLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYyNC5jb21tb25CEEFkVHlwZUluZm9zUHJvdG9Q",
+            "AVpFZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
+            "Z29vZ2xlYWRzL3YyNC9jb21tb247Y29tbW9uogIDR0FBqgIfR29vZ2xlLkFk",
+            "cy5Hb29nbGVBZHMuVjI0LkNvbW1vbsoCH0dvb2dsZVxBZHNcR29vZ2xlQWRz",
+            "XFYyNFxDb21tb27qAiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjQ6OkNv",
+            "bW1vbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V24.Common.AdAssetReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.DisplayAdFormatSettingReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.DisplayUploadProductTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.LegacyAppInstallAdAppStoreReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.MimeTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.VideoThumbnailReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -292,7 +294,7 @@ namespace Google.Ads.GoogleAds.V24.Common {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Common.DisplayUploadAdInfo), global::Google.Ads.GoogleAds.V24.Common.DisplayUploadAdInfo.Parser, new[]{ "DisplayUploadProductType", "MediaBundle" }, new[]{ "MediaAsset" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Common.ResponsiveDisplayAdControlSpec), global::Google.Ads.GoogleAds.V24.Common.ResponsiveDisplayAdControlSpec.Parser, new[]{ "EnableAssetEnhancements", "EnableAutogenVideo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Common.SmartCampaignAdInfo), global::Google.Ads.GoogleAds.V24.Common.SmartCampaignAdInfo.Parser, new[]{ "Headlines", "Descriptions" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Common.DemandGenMultiAssetAdInfo), global::Google.Ads.GoogleAds.V24.Common.DemandGenMultiAssetAdInfo.Parser, new[]{ "MarketingImages", "SquareMarketingImages", "PortraitMarketingImages", "TallPortraitMarketingImages", "LogoImages", "Headlines", "Descriptions", "BusinessName", "CallToActionText" }, new[]{ "BusinessName", "CallToActionText" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Common.DemandGenMultiAssetAdInfo), global::Google.Ads.GoogleAds.V24.Common.DemandGenMultiAssetAdInfo.Parser, new[]{ "MarketingImages", "SquareMarketingImages", "PortraitMarketingImages", "TallPortraitMarketingImages", "LogoImages", "ClassicDisplayImages", "Headlines", "Descriptions", "BusinessName", "CallToActionText" }, new[]{ "BusinessName", "CallToActionText" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Common.DemandGenCarouselAdInfo), global::Google.Ads.GoogleAds.V24.Common.DemandGenCarouselAdInfo.Parser, new[]{ "BusinessName", "LogoImage", "Headline", "Description", "CallToActionText", "CarouselCards" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Common.DemandGenVideoResponsiveAdInfo), global::Google.Ads.GoogleAds.V24.Common.DemandGenVideoResponsiveAdInfo.Parser, new[]{ "Headlines", "LongHeadlines", "Descriptions", "Videos", "LogoImages", "CompanionBanners", "Breadcrumb1", "Breadcrumb2", "BusinessName", "CallToActions" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Common.DemandGenProductAdInfo), global::Google.Ads.GoogleAds.V24.Common.DemandGenProductAdInfo.Parser, new[]{ "Headline", "Description", "LogoImage", "Breadcrumb1", "Breadcrumb2", "BusinessName", "CallToAction" }, new[]{ "Headline", "Description", "LogoImage", "CallToAction" }, null, null, null)
@@ -10692,6 +10694,7 @@ namespace Google.Ads.GoogleAds.V24.Common {
       portraitMarketingImages_ = other.portraitMarketingImages_.Clone();
       tallPortraitMarketingImages_ = other.tallPortraitMarketingImages_.Clone();
       logoImages_ = other.logoImages_.Clone();
+      classicDisplayImages_ = other.classicDisplayImages_.Clone();
       headlines_ = other.headlines_.Clone();
       descriptions_ = other.descriptions_.Clone();
       businessName_ = other.businessName_;
@@ -10792,6 +10795,22 @@ namespace Google.Ads.GoogleAds.V24.Common {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Google.Ads.GoogleAds.V24.Common.AdImageAsset> LogoImages {
       get { return logoImages_; }
+    }
+
+    /// <summary>Field number for the "classic_display_images" field.</summary>
+    public const int ClassicDisplayImagesFieldNumber = 11;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V24.Common.AdImageAsset> _repeated_classicDisplayImages_codec
+        = pb::FieldCodec.ForMessage(90, global::Google.Ads.GoogleAds.V24.Common.AdImageAsset.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V24.Common.AdImageAsset> classicDisplayImages_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V24.Common.AdImageAsset>();
+    /// <summary>
+    /// Classic display image assets to be used in the ad. Valid image types are
+    /// GIF, JPEG, and PNG. At most 20 classic display images can be specified per
+    /// ad.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V24.Common.AdImageAsset> ClassicDisplayImages {
+      get { return classicDisplayImages_; }
     }
 
     /// <summary>Field number for the "headlines" field.</summary>
@@ -10902,6 +10921,7 @@ namespace Google.Ads.GoogleAds.V24.Common {
       if(!portraitMarketingImages_.Equals(other.portraitMarketingImages_)) return false;
       if(!tallPortraitMarketingImages_.Equals(other.tallPortraitMarketingImages_)) return false;
       if(!logoImages_.Equals(other.logoImages_)) return false;
+      if(!classicDisplayImages_.Equals(other.classicDisplayImages_)) return false;
       if(!headlines_.Equals(other.headlines_)) return false;
       if(!descriptions_.Equals(other.descriptions_)) return false;
       if (BusinessName != other.BusinessName) return false;
@@ -10918,6 +10938,7 @@ namespace Google.Ads.GoogleAds.V24.Common {
       hash ^= portraitMarketingImages_.GetHashCode();
       hash ^= tallPortraitMarketingImages_.GetHashCode();
       hash ^= logoImages_.GetHashCode();
+      hash ^= classicDisplayImages_.GetHashCode();
       hash ^= headlines_.GetHashCode();
       hash ^= descriptions_.GetHashCode();
       if (HasBusinessName) hash ^= BusinessName.GetHashCode();
@@ -10955,6 +10976,7 @@ namespace Google.Ads.GoogleAds.V24.Common {
         output.WriteString(CallToActionText);
       }
       tallPortraitMarketingImages_.WriteTo(output, _repeated_tallPortraitMarketingImages_codec);
+      classicDisplayImages_.WriteTo(output, _repeated_classicDisplayImages_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -10980,6 +11002,7 @@ namespace Google.Ads.GoogleAds.V24.Common {
         output.WriteString(CallToActionText);
       }
       tallPortraitMarketingImages_.WriteTo(ref output, _repeated_tallPortraitMarketingImages_codec);
+      classicDisplayImages_.WriteTo(ref output, _repeated_classicDisplayImages_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -10995,6 +11018,7 @@ namespace Google.Ads.GoogleAds.V24.Common {
       size += portraitMarketingImages_.CalculateSize(_repeated_portraitMarketingImages_codec);
       size += tallPortraitMarketingImages_.CalculateSize(_repeated_tallPortraitMarketingImages_codec);
       size += logoImages_.CalculateSize(_repeated_logoImages_codec);
+      size += classicDisplayImages_.CalculateSize(_repeated_classicDisplayImages_codec);
       size += headlines_.CalculateSize(_repeated_headlines_codec);
       size += descriptions_.CalculateSize(_repeated_descriptions_codec);
       if (HasBusinessName) {
@@ -11020,6 +11044,7 @@ namespace Google.Ads.GoogleAds.V24.Common {
       portraitMarketingImages_.Add(other.portraitMarketingImages_);
       tallPortraitMarketingImages_.Add(other.tallPortraitMarketingImages_);
       logoImages_.Add(other.logoImages_);
+      classicDisplayImages_.Add(other.classicDisplayImages_);
       headlines_.Add(other.headlines_);
       descriptions_.Add(other.descriptions_);
       if (other.HasBusinessName) {
@@ -11083,6 +11108,10 @@ namespace Google.Ads.GoogleAds.V24.Common {
             tallPortraitMarketingImages_.AddEntriesFrom(input, _repeated_tallPortraitMarketingImages_codec);
             break;
           }
+          case 90: {
+            classicDisplayImages_.AddEntriesFrom(input, _repeated_classicDisplayImages_codec);
+            break;
+          }
         }
       }
     #endif
@@ -11136,6 +11165,10 @@ namespace Google.Ads.GoogleAds.V24.Common {
           }
           case 82: {
             tallPortraitMarketingImages_.AddEntriesFrom(ref input, _repeated_tallPortraitMarketingImages_codec);
+            break;
+          }
+          case 90: {
+            classicDisplayImages_.AddEntriesFrom(ref input, _repeated_classicDisplayImages_codec);
             break;
           }
         }

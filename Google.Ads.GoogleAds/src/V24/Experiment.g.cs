@@ -26,41 +26,47 @@ namespace Google.Ads.GoogleAds.V24.Resources {
           string.Concat(
             "CjNnb29nbGUvYWRzL2dvb2dsZWFkcy92MjQvcmVzb3VyY2VzL2V4cGVyaW1l",
             "bnQucHJvdG8SImdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5yZXNvdXJjZXMa",
-            "MWdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YyNC9jb21tb24vbWV0cmljX2dvYWwu",
-            "cHJvdG8aOGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YyNC9lbnVtcy9hc3luY19h",
-            "Y3Rpb25fc3RhdHVzLnByb3RvGjZnb29nbGUvYWRzL2dvb2dsZWFkcy92MjQv",
-            "ZW51bXMvZXhwZXJpbWVudF9zdGF0dXMucHJvdG8aNGdvb2dsZS9hZHMvZ29v",
-            "Z2xlYWRzL3YyNC9lbnVtcy9leHBlcmltZW50X3R5cGUucHJvdG8aH2dvb2ds",
-            "ZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8aGWdvb2dsZS9hcGkvcmVzb3Vy",
-            "Y2UucHJvdG8ipgYKCkV4cGVyaW1lbnQSQgoNcmVzb3VyY2VfbmFtZRgBIAEo",
-            "CUIr4EEF+kElCiNnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vRXhwZXJpbWVu",
-            "dBIfCg1leHBlcmltZW50X2lkGAkgASgDQgPgQQNIAIgBARIRCgRuYW1lGAog",
-            "ASgJQgPgQQISEwoLZGVzY3JpcHRpb24YCyABKAkSDgoGc3VmZml4GAwgASgJ",
-            "ElQKBHR5cGUYDSABKA4yQS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuZW51",
-            "bXMuRXhwZXJpbWVudFR5cGVFbnVtLkV4cGVyaW1lbnRUeXBlQgPgQQISVQoG",
-            "c3RhdHVzGA4gASgOMkUuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmVudW1z",
-            "LkV4cGVyaW1lbnRTdGF0dXNFbnVtLkV4cGVyaW1lbnRTdGF0dXMSFwoKc3Rh",
-            "cnRfZGF0ZRgPIAEoCUgBiAEBEhUKCGVuZF9kYXRlGBAgASgJSAKIAQESOgoF",
-            "Z29hbHMYESADKAsyKy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuY29tbW9u",
-            "Lk1ldHJpY0dvYWwSKAoWbG9uZ19ydW5uaW5nX29wZXJhdGlvbhgSIAEoCUID",
-            "4EEDSAOIAQESZAoOcHJvbW90ZV9zdGF0dXMYEyABKA4yRy5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MjQuZW51bXMuQXN5bmNBY3Rpb25TdGF0dXNFbnVtLkFz",
-            "eW5jQWN0aW9uU3RhdHVzQgPgQQMSHgoMc3luY19lbmFibGVkGBQgASgIQgPg",
-            "QQVIBIgBATpY6kFVCiNnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vRXhwZXJp",
-            "bWVudBIuY3VzdG9tZXJzL3tjdXN0b21lcl9pZH0vZXhwZXJpbWVudHMve3Ry",
-            "aWFsX2lkfUIQCg5fZXhwZXJpbWVudF9pZEINCgtfc3RhcnRfZGF0ZUILCglf",
-            "ZW5kX2RhdGVCGQoXX2xvbmdfcnVubmluZ19vcGVyYXRpb25CDwoNX3N5bmNf",
-            "ZW5hYmxlZEKBAgomY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5yZXNv",
-            "dXJjZXNCD0V4cGVyaW1lbnRQcm90b1ABWktnb29nbGUuZ29sYW5nLm9yZy9n",
-            "ZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjI0L3Jlc291cmNl",
-            "cztyZXNvdXJjZXOiAgNHQUGqAiJHb29nbGUuQWRzLkdvb2dsZUFkcy5WMjQu",
-            "UmVzb3VyY2VzygIiR29vZ2xlXEFkc1xHb29nbGVBZHNcVjI0XFJlc291cmNl",
-            "c+oCJkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyNDo6UmVzb3VyY2VzYgZw",
-            "cm90bzM="));
+            "Nmdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YyNC9jb21tb24vZXhwZXJpbWVudF90",
+            "eXBlcy5wcm90bxoxZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjI0L2NvbW1vbi9t",
+            "ZXRyaWNfZ29hbC5wcm90bxo4Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjI0L2Vu",
+            "dW1zL2FzeW5jX2FjdGlvbl9zdGF0dXMucHJvdG8aNmdvb2dsZS9hZHMvZ29v",
+            "Z2xlYWRzL3YyNC9lbnVtcy9leHBlcmltZW50X3N0YXR1cy5wcm90bxo0Z29v",
+            "Z2xlL2Fkcy9nb29nbGVhZHMvdjI0L2VudW1zL2V4cGVyaW1lbnRfdHlwZS5w",
+            "cm90bxofZ29vZ2xlL2FwaS9maWVsZF9iZWhhdmlvci5wcm90bxoZZ29vZ2xl",
+            "L2FwaS9yZXNvdXJjZS5wcm90byL6BwoKRXhwZXJpbWVudBJCCg1yZXNvdXJj",
+            "ZV9uYW1lGAEgASgJQivgQQX6QSUKI2dvb2dsZWFkcy5nb29nbGVhcGlzLmNv",
+            "bS9FeHBlcmltZW50Eh8KDWV4cGVyaW1lbnRfaWQYCSABKANCA+BBA0gBiAEB",
+            "EhEKBG5hbWUYCiABKAlCA+BBAhITCgtkZXNjcmlwdGlvbhgLIAEoCRIOCgZz",
+            "dWZmaXgYDCABKAkSVAoEdHlwZRgNIAEoDjJBLmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYyNC5lbnVtcy5FeHBlcmltZW50VHlwZUVudW0uRXhwZXJpbWVudFR5",
+            "cGVCA+BBAhJVCgZzdGF0dXMYDiABKA4yRS5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MjQuZW51bXMuRXhwZXJpbWVudFN0YXR1c0VudW0uRXhwZXJpbWVudFN0",
+            "YXR1cxIXCgpzdGFydF9kYXRlGA8gASgJSAKIAQESFQoIZW5kX2RhdGUYECAB",
+            "KAlIA4gBARI6CgVnb2FscxgRIAMoCzIrLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYyNC5jb21tb24uTWV0cmljR29hbBIoChZsb25nX3J1bm5pbmdfb3BlcmF0",
+            "aW9uGBIgASgJQgPgQQNIBIgBARJkCg5wcm9tb3RlX3N0YXR1cxgTIAEoDjJH",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5lbnVtcy5Bc3luY0FjdGlvblN0",
+            "YXR1c0VudW0uQXN5bmNBY3Rpb25TdGF0dXNCA+BBAxIeCgxzeW5jX2VuYWJs",
+            "ZWQYFCABKAhCA+BBBUgFiAEBElUKEHZpZGVvX2V4cGVyaW1lbnQYFSABKAsy",
+            "NC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuY29tbW9uLlZpZGVvRXhwZXJp",
+            "bWVudEluZm9CA+BBBUgAEmgKGm9wdGltaXplX2Fzc2V0c19leHBlcmltZW50",
+            "GBYgASgLMj0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmNvbW1vbi5PcHRp",
+            "bWl6ZUFzc2V0c0V4cGVyaW1lbnRJbmZvQgPgQQVIADpY6kFVCiNnb29nbGVh",
+            "ZHMuZ29vZ2xlYXBpcy5jb20vRXhwZXJpbWVudBIuY3VzdG9tZXJzL3tjdXN0",
+            "b21lcl9pZH0vZXhwZXJpbWVudHMve3RyaWFsX2lkfUIRCg9leHBlcmltZW50",
+            "X2luZm9CEAoOX2V4cGVyaW1lbnRfaWRCDQoLX3N0YXJ0X2RhdGVCCwoJX2Vu",
+            "ZF9kYXRlQhkKF19sb25nX3J1bm5pbmdfb3BlcmF0aW9uQg8KDV9zeW5jX2Vu",
+            "YWJsZWRCgQIKJmNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQucmVzb3Vy",
+            "Y2VzQg9FeHBlcmltZW50UHJvdG9QAVpLZ29vZ2xlLmdvbGFuZy5vcmcvZ2Vu",
+            "cHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YyNC9yZXNvdXJjZXM7",
+            "cmVzb3VyY2VzogIDR0FBqgIiR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjI0LlJl",
+            "c291cmNlc8oCIkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYyNFxSZXNvdXJjZXPq",
+            "AiZHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjQ6OlJlc291cmNlc2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V24.Common.MetricGoalReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.AsyncActionStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.ExperimentStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.ExperimentTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V24.Common.ExperimentTypesReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Common.MetricGoalReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.AsyncActionStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.ExperimentStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.ExperimentTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Resources.Experiment), global::Google.Ads.GoogleAds.V24.Resources.Experiment.Parser, new[]{ "ResourceName", "ExperimentId", "Name", "Description", "Suffix", "Type", "Status", "StartDate", "EndDate", "Goals", "LongRunningOperation", "PromoteStatus", "SyncEnabled" }, new[]{ "ExperimentId", "StartDate", "EndDate", "LongRunningOperation", "SyncEnabled" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Resources.Experiment), global::Google.Ads.GoogleAds.V24.Resources.Experiment.Parser, new[]{ "ResourceName", "ExperimentId", "Name", "Description", "Suffix", "Type", "Status", "StartDate", "EndDate", "Goals", "LongRunningOperation", "PromoteStatus", "SyncEnabled", "VideoExperiment", "OptimizeAssetsExperiment" }, new[]{ "ExperimentInfo", "ExperimentId", "StartDate", "EndDate", "LongRunningOperation", "SyncEnabled" }, null, null, null)
           }));
     }
     #endregion
@@ -121,6 +127,15 @@ namespace Google.Ads.GoogleAds.V24.Resources {
       longRunningOperation_ = other.longRunningOperation_;
       promoteStatus_ = other.promoteStatus_;
       syncEnabled_ = other.syncEnabled_;
+      switch (other.ExperimentInfoCase) {
+        case ExperimentInfoOneofCase.VideoExperiment:
+          VideoExperiment = other.VideoExperiment.Clone();
+          break;
+        case ExperimentInfoOneofCase.OptimizeAssetsExperiment:
+          OptimizeAssetsExperiment = other.OptimizeAssetsExperiment.Clone();
+          break;
+      }
+
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -419,6 +434,59 @@ namespace Google.Ads.GoogleAds.V24.Resources {
       _hasBits0 &= ~2;
     }
 
+    /// <summary>Field number for the "video_experiment" field.</summary>
+    public const int VideoExperimentFieldNumber = 21;
+    /// <summary>
+    /// Immutable. Details of the video experiment. Applies for experiment types:
+    /// YOUTUBE_CUSTOM.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V24.Common.VideoExperimentInfo VideoExperiment {
+      get { return experimentInfoCase_ == ExperimentInfoOneofCase.VideoExperiment ? (global::Google.Ads.GoogleAds.V24.Common.VideoExperimentInfo) experimentInfo_ : null; }
+      set {
+        experimentInfo_ = value;
+        experimentInfoCase_ = value == null ? ExperimentInfoOneofCase.None : ExperimentInfoOneofCase.VideoExperiment;
+      }
+    }
+
+    /// <summary>Field number for the "optimize_assets_experiment" field.</summary>
+    public const int OptimizeAssetsExperimentFieldNumber = 22;
+    /// <summary>
+    /// Immutable. Details of the optimize assets experiment. Applies for
+    /// experiment types: OPTIMIZE_ASSETS.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V24.Common.OptimizeAssetsExperimentInfo OptimizeAssetsExperiment {
+      get { return experimentInfoCase_ == ExperimentInfoOneofCase.OptimizeAssetsExperiment ? (global::Google.Ads.GoogleAds.V24.Common.OptimizeAssetsExperimentInfo) experimentInfo_ : null; }
+      set {
+        experimentInfo_ = value;
+        experimentInfoCase_ = value == null ? ExperimentInfoOneofCase.None : ExperimentInfoOneofCase.OptimizeAssetsExperiment;
+      }
+    }
+
+    private object experimentInfo_;
+    /// <summary>Enum of possible cases for the "experiment_info" oneof.</summary>
+    public enum ExperimentInfoOneofCase {
+      None = 0,
+      VideoExperiment = 21,
+      OptimizeAssetsExperiment = 22,
+    }
+    private ExperimentInfoOneofCase experimentInfoCase_ = ExperimentInfoOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ExperimentInfoOneofCase ExperimentInfoCase {
+      get { return experimentInfoCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearExperimentInfo() {
+      experimentInfoCase_ = ExperimentInfoOneofCase.None;
+      experimentInfo_ = null;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -447,6 +515,9 @@ namespace Google.Ads.GoogleAds.V24.Resources {
       if (LongRunningOperation != other.LongRunningOperation) return false;
       if (PromoteStatus != other.PromoteStatus) return false;
       if (SyncEnabled != other.SyncEnabled) return false;
+      if (!object.Equals(VideoExperiment, other.VideoExperiment)) return false;
+      if (!object.Equals(OptimizeAssetsExperiment, other.OptimizeAssetsExperiment)) return false;
+      if (ExperimentInfoCase != other.ExperimentInfoCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -467,6 +538,9 @@ namespace Google.Ads.GoogleAds.V24.Resources {
       if (HasLongRunningOperation) hash ^= LongRunningOperation.GetHashCode();
       if (PromoteStatus != global::Google.Ads.GoogleAds.V24.Enums.AsyncActionStatusEnum.Types.AsyncActionStatus.Unspecified) hash ^= PromoteStatus.GetHashCode();
       if (HasSyncEnabled) hash ^= SyncEnabled.GetHashCode();
+      if (experimentInfoCase_ == ExperimentInfoOneofCase.VideoExperiment) hash ^= VideoExperiment.GetHashCode();
+      if (experimentInfoCase_ == ExperimentInfoOneofCase.OptimizeAssetsExperiment) hash ^= OptimizeAssetsExperiment.GetHashCode();
+      hash ^= (int) experimentInfoCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -534,6 +608,14 @@ namespace Google.Ads.GoogleAds.V24.Resources {
         output.WriteRawTag(160, 1);
         output.WriteBool(SyncEnabled);
       }
+      if (experimentInfoCase_ == ExperimentInfoOneofCase.VideoExperiment) {
+        output.WriteRawTag(170, 1);
+        output.WriteMessage(VideoExperiment);
+      }
+      if (experimentInfoCase_ == ExperimentInfoOneofCase.OptimizeAssetsExperiment) {
+        output.WriteRawTag(178, 1);
+        output.WriteMessage(OptimizeAssetsExperiment);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -593,6 +675,14 @@ namespace Google.Ads.GoogleAds.V24.Resources {
         output.WriteRawTag(160, 1);
         output.WriteBool(SyncEnabled);
       }
+      if (experimentInfoCase_ == ExperimentInfoOneofCase.VideoExperiment) {
+        output.WriteRawTag(170, 1);
+        output.WriteMessage(VideoExperiment);
+      }
+      if (experimentInfoCase_ == ExperimentInfoOneofCase.OptimizeAssetsExperiment) {
+        output.WriteRawTag(178, 1);
+        output.WriteMessage(OptimizeAssetsExperiment);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -639,6 +729,12 @@ namespace Google.Ads.GoogleAds.V24.Resources {
       }
       if (HasSyncEnabled) {
         size += 2 + 1;
+      }
+      if (experimentInfoCase_ == ExperimentInfoOneofCase.VideoExperiment) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(VideoExperiment);
+      }
+      if (experimentInfoCase_ == ExperimentInfoOneofCase.OptimizeAssetsExperiment) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(OptimizeAssetsExperiment);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -689,6 +785,21 @@ namespace Google.Ads.GoogleAds.V24.Resources {
       if (other.HasSyncEnabled) {
         SyncEnabled = other.SyncEnabled;
       }
+      switch (other.ExperimentInfoCase) {
+        case ExperimentInfoOneofCase.VideoExperiment:
+          if (VideoExperiment == null) {
+            VideoExperiment = new global::Google.Ads.GoogleAds.V24.Common.VideoExperimentInfo();
+          }
+          VideoExperiment.MergeFrom(other.VideoExperiment);
+          break;
+        case ExperimentInfoOneofCase.OptimizeAssetsExperiment:
+          if (OptimizeAssetsExperiment == null) {
+            OptimizeAssetsExperiment = new global::Google.Ads.GoogleAds.V24.Common.OptimizeAssetsExperimentInfo();
+          }
+          OptimizeAssetsExperiment.MergeFrom(other.OptimizeAssetsExperiment);
+          break;
+      }
+
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -760,6 +871,24 @@ namespace Google.Ads.GoogleAds.V24.Resources {
             SyncEnabled = input.ReadBool();
             break;
           }
+          case 170: {
+            global::Google.Ads.GoogleAds.V24.Common.VideoExperimentInfo subBuilder = new global::Google.Ads.GoogleAds.V24.Common.VideoExperimentInfo();
+            if (experimentInfoCase_ == ExperimentInfoOneofCase.VideoExperiment) {
+              subBuilder.MergeFrom(VideoExperiment);
+            }
+            input.ReadMessage(subBuilder);
+            VideoExperiment = subBuilder;
+            break;
+          }
+          case 178: {
+            global::Google.Ads.GoogleAds.V24.Common.OptimizeAssetsExperimentInfo subBuilder = new global::Google.Ads.GoogleAds.V24.Common.OptimizeAssetsExperimentInfo();
+            if (experimentInfoCase_ == ExperimentInfoOneofCase.OptimizeAssetsExperiment) {
+              subBuilder.MergeFrom(OptimizeAssetsExperiment);
+            }
+            input.ReadMessage(subBuilder);
+            OptimizeAssetsExperiment = subBuilder;
+            break;
+          }
         }
       }
     #endif
@@ -829,6 +958,24 @@ namespace Google.Ads.GoogleAds.V24.Resources {
           }
           case 160: {
             SyncEnabled = input.ReadBool();
+            break;
+          }
+          case 170: {
+            global::Google.Ads.GoogleAds.V24.Common.VideoExperimentInfo subBuilder = new global::Google.Ads.GoogleAds.V24.Common.VideoExperimentInfo();
+            if (experimentInfoCase_ == ExperimentInfoOneofCase.VideoExperiment) {
+              subBuilder.MergeFrom(VideoExperiment);
+            }
+            input.ReadMessage(subBuilder);
+            VideoExperiment = subBuilder;
+            break;
+          }
+          case 178: {
+            global::Google.Ads.GoogleAds.V24.Common.OptimizeAssetsExperimentInfo subBuilder = new global::Google.Ads.GoogleAds.V24.Common.OptimizeAssetsExperimentInfo();
+            if (experimentInfoCase_ == ExperimentInfoOneofCase.OptimizeAssetsExperiment) {
+              subBuilder.MergeFrom(OptimizeAssetsExperiment);
+            }
+            input.ReadMessage(subBuilder);
+            OptimizeAssetsExperiment = subBuilder;
             break;
           }
         }

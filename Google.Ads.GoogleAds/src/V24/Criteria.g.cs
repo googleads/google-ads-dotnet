@@ -291,24 +291,26 @@ namespace Google.Ads.GoogleAds.V24.Common {
             "cF9pZCI7ChFQbGFjZW1lbnRMaXN0SW5mbxIXCgpzaGFyZWRfc2V0GAEgASgJ",
             "SACIAQFCDQoLX3NoYXJlZF9zZXQiSgogVmVydGljYWxBZHNJdGVtR3JvdXBS",
             "dWxlTGlzdEluZm8SFwoKc2hhcmVkX3NldBgBIAEoCUgAiAEBQg0KC19zaGFy",
-            "ZWRfc2V0IrMBChxWZXJ0aWNhbEFkc0l0ZW1Hcm91cFJ1bGVJbmZvEhMKCWl0",
+            "ZWRfc2V0IoUCChxWZXJ0aWNhbEFkc0l0ZW1Hcm91cFJ1bGVJbmZvEhMKCWl0",
             "ZW1fY29kZRgBIAEoCUgAEh4KFGNvdW50cnlfY3JpdGVyaW9uX2lkGAIgASgJ",
             "SAASHQoTcmVnaW9uX2NyaXRlcmlvbl9pZBgDIAEoCUgAEhsKEWNpdHlfY3Jp",
-            "dGVyaW9uX2lkGAQgASgJSAASFQoLaG90ZWxfY2xhc3MYBiABKANIAEILCglk",
-            "aW1lbnNpb24iPAoSUmV0YWlsRmlsdGVyQnVuZGxlEhcKCnNoYXJlZF9zZXQY",
-            "ASABKAlIAIgBAUINCgtfc2hhcmVkX3NldCKgAQoMUmV0YWlsRmlsdGVyEk0K",
-            "CmV4cHJlc3Npb24YASABKAsyNy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQu",
-            "Y29tbW9uLlJldGFpbEZpbHRlckV4cHJlc3Npb25IABI5CgN0YWcYAiABKAsy",
-            "Ki5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuY29tbW9uLlJldGFpbFRhZ0gA",
-            "QgYKBG5vZGUiNAoWUmV0YWlsRmlsdGVyRXhwcmVzc2lvbhIRCgRuYW1lGAEg",
-            "ASgJSACIAQFCBwoFX25hbWUiWwoJUmV0YWlsVGFnEhIKBXZhbHVlGAEgASgJ",
-            "SACIAQESHAoPZXhwcmVzc2lvbl9uYW1lGAIgASgJSAGIAQFCCAoGX3ZhbHVl",
-            "QhIKEF9leHByZXNzaW9uX25hbWVC7QEKI2NvbS5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MjQuY29tbW9uQg1Dcml0ZXJpYVByb3RvUAFaRWdvb2dsZS5nb2xh",
-            "bmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MjQv",
-            "Y29tbW9uO2NvbW1vbqICA0dBQaoCH0dvb2dsZS5BZHMuR29vZ2xlQWRzLlYy",
-            "NC5Db21tb27KAh9Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMjRcQ29tbW9u6gIj",
-            "R29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjI0OjpDb21tb25iBnByb3RvMw=="));
+            "dGVyaW9uX2lkGAQgASgJSAASFQoLaG90ZWxfY2xhc3MYBiABKANIABIVCgt1",
+            "c2VyX3JhdGluZxgHIAEoA0gAEg8KBXZlbnVlGAggASgJSAASKAoeZXZlbnRf",
+            "cGFydGljaXBhbnRfZGlzcGxheV9uYW1lGAkgASgJSABCCwoJZGltZW5zaW9u",
+            "IjwKElJldGFpbEZpbHRlckJ1bmRsZRIXCgpzaGFyZWRfc2V0GAEgASgJSACI",
+            "AQFCDQoLX3NoYXJlZF9zZXQioAEKDFJldGFpbEZpbHRlchJNCgpleHByZXNz",
+            "aW9uGAEgASgLMjcuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmNvbW1vbi5S",
+            "ZXRhaWxGaWx0ZXJFeHByZXNzaW9uSAASOQoDdGFnGAIgASgLMiouZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjI0LmNvbW1vbi5SZXRhaWxUYWdIAEIGCgRub2Rl",
+            "IjQKFlJldGFpbEZpbHRlckV4cHJlc3Npb24SEQoEbmFtZRgBIAEoCUgAiAEB",
+            "QgcKBV9uYW1lIlsKCVJldGFpbFRhZxISCgV2YWx1ZRgBIAEoCUgAiAEBEhwK",
+            "D2V4cHJlc3Npb25fbmFtZRgCIAEoCUgBiAEBQggKBl92YWx1ZUISChBfZXhw",
+            "cmVzc2lvbl9uYW1lQu0BCiNjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0",
+            "LmNvbW1vbkINQ3JpdGVyaWFQcm90b1ABWkVnb29nbGUuZ29sYW5nLm9yZy9n",
+            "ZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjI0L2NvbW1vbjtj",
+            "b21tb26iAgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMjQuQ29tbW9u",
+            "ygIfR29vZ2xlXEFkc1xHb29nbGVBZHNcVjI0XENvbW1vbuoCI0dvb2dsZTo6",
+            "QWRzOjpHb29nbGVBZHM6OlYyNDo6Q29tbW9uYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V24.Enums.AgeRangeTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.AppPaymentModelTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.BrandRequestRejectionReasonReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.BrandStateReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.ContentLabelTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.DayOfWeekReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.DeviceReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.GenderTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.HotelDateSelectionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.IncomeRangeTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.InteractionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.KeywordMatchTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.ListingGroupTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.LocationGroupRadiusUnitsReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.MinuteOfHourReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.ParentalStatusTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.ProductCategoryLevelReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.ProductChannelReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.ProductChannelExclusivityReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.ProductConditionReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.ProductCustomAttributeIndexReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.ProductTypeLevelReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.ProximityRadiusUnitsReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.WebpageConditionOperandReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.WebpageConditionOperatorReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -392,7 +394,7 @@ namespace Google.Ads.GoogleAds.V24.Common {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Common.VideoLineupInfo), global::Google.Ads.GoogleAds.V24.Common.VideoLineupInfo.Parser, new[]{ "VideoLineupId" }, new[]{ "VideoLineupId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Common.PlacementListInfo), global::Google.Ads.GoogleAds.V24.Common.PlacementListInfo.Parser, new[]{ "SharedSet" }, new[]{ "SharedSet" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Common.VerticalAdsItemGroupRuleListInfo), global::Google.Ads.GoogleAds.V24.Common.VerticalAdsItemGroupRuleListInfo.Parser, new[]{ "SharedSet" }, new[]{ "SharedSet" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Common.VerticalAdsItemGroupRuleInfo), global::Google.Ads.GoogleAds.V24.Common.VerticalAdsItemGroupRuleInfo.Parser, new[]{ "ItemCode", "CountryCriterionId", "RegionCriterionId", "CityCriterionId", "HotelClass" }, new[]{ "Dimension" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Common.VerticalAdsItemGroupRuleInfo), global::Google.Ads.GoogleAds.V24.Common.VerticalAdsItemGroupRuleInfo.Parser, new[]{ "ItemCode", "CountryCriterionId", "RegionCriterionId", "CityCriterionId", "HotelClass", "UserRating", "Venue", "EventParticipantDisplayName" }, new[]{ "Dimension" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Common.RetailFilterBundle), global::Google.Ads.GoogleAds.V24.Common.RetailFilterBundle.Parser, new[]{ "SharedSet" }, new[]{ "SharedSet" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Common.RetailFilter), global::Google.Ads.GoogleAds.V24.Common.RetailFilter.Parser, new[]{ "Expression", "Tag" }, new[]{ "Node" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Common.RetailFilterExpression), global::Google.Ads.GoogleAds.V24.Common.RetailFilterExpression.Parser, new[]{ "Name" }, new[]{ "Name" }, null, null, null),
@@ -20851,6 +20853,15 @@ namespace Google.Ads.GoogleAds.V24.Common {
         case DimensionOneofCase.HotelClass:
           HotelClass = other.HotelClass;
           break;
+        case DimensionOneofCase.UserRating:
+          UserRating = other.UserRating;
+          break;
+        case DimensionOneofCase.Venue:
+          Venue = other.Venue;
+          break;
+        case DimensionOneofCase.EventParticipantDisplayName:
+          EventParticipantDisplayName = other.EventParticipantDisplayName;
+          break;
       }
 
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -21008,6 +21019,95 @@ namespace Google.Ads.GoogleAds.V24.Common {
       }
     }
 
+    /// <summary>Field number for the "user_rating" field.</summary>
+    public const int UserRatingFieldNumber = 7;
+    /// <summary>
+    /// Integer value specifying the user rating for a Vertical Ad listing.
+    /// Ranges from 1 to 5, where 5 is the best.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long UserRating {
+      get { return HasUserRating ? (long) dimension_ : 0L; }
+      set {
+        dimension_ = value;
+        dimensionCase_ = DimensionOneofCase.UserRating;
+      }
+    }
+    /// <summary>Gets whether the "user_rating" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasUserRating {
+      get { return dimensionCase_ == DimensionOneofCase.UserRating; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "user_rating" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearUserRating() {
+      if (HasUserRating) {
+        ClearDimension();
+      }
+    }
+
+    /// <summary>Field number for the "venue" field.</summary>
+    public const int VenueFieldNumber = 8;
+    /// <summary>
+    /// A name for a specific location, like the venue for a concert event.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Venue {
+      get { return HasVenue ? (string) dimension_ : ""; }
+      set {
+        dimension_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        dimensionCase_ = DimensionOneofCase.Venue;
+      }
+    }
+    /// <summary>Gets whether the "venue" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasVenue {
+      get { return dimensionCase_ == DimensionOneofCase.Venue; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "venue" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearVenue() {
+      if (HasVenue) {
+        ClearDimension();
+      }
+    }
+
+    /// <summary>Field number for the "event_participant_display_name" field.</summary>
+    public const int EventParticipantDisplayNameFieldNumber = 9;
+    /// <summary>
+    /// The name of an associated participant for a given event. For example,
+    /// headliner for a concert event.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string EventParticipantDisplayName {
+      get { return HasEventParticipantDisplayName ? (string) dimension_ : ""; }
+      set {
+        dimension_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        dimensionCase_ = DimensionOneofCase.EventParticipantDisplayName;
+      }
+    }
+    /// <summary>Gets whether the "event_participant_display_name" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasEventParticipantDisplayName {
+      get { return dimensionCase_ == DimensionOneofCase.EventParticipantDisplayName; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "event_participant_display_name" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearEventParticipantDisplayName() {
+      if (HasEventParticipantDisplayName) {
+        ClearDimension();
+      }
+    }
+
     private object dimension_;
     /// <summary>Enum of possible cases for the "dimension" oneof.</summary>
     public enum DimensionOneofCase {
@@ -21017,6 +21117,9 @@ namespace Google.Ads.GoogleAds.V24.Common {
       RegionCriterionId = 3,
       CityCriterionId = 4,
       HotelClass = 6,
+      UserRating = 7,
+      Venue = 8,
+      EventParticipantDisplayName = 9,
     }
     private DimensionOneofCase dimensionCase_ = DimensionOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -21052,6 +21155,9 @@ namespace Google.Ads.GoogleAds.V24.Common {
       if (RegionCriterionId != other.RegionCriterionId) return false;
       if (CityCriterionId != other.CityCriterionId) return false;
       if (HotelClass != other.HotelClass) return false;
+      if (UserRating != other.UserRating) return false;
+      if (Venue != other.Venue) return false;
+      if (EventParticipantDisplayName != other.EventParticipantDisplayName) return false;
       if (DimensionCase != other.DimensionCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -21065,6 +21171,9 @@ namespace Google.Ads.GoogleAds.V24.Common {
       if (HasRegionCriterionId) hash ^= RegionCriterionId.GetHashCode();
       if (HasCityCriterionId) hash ^= CityCriterionId.GetHashCode();
       if (HasHotelClass) hash ^= HotelClass.GetHashCode();
+      if (HasUserRating) hash ^= UserRating.GetHashCode();
+      if (HasVenue) hash ^= Venue.GetHashCode();
+      if (HasEventParticipantDisplayName) hash ^= EventParticipantDisplayName.GetHashCode();
       hash ^= (int) dimensionCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -21104,6 +21213,18 @@ namespace Google.Ads.GoogleAds.V24.Common {
         output.WriteRawTag(48);
         output.WriteInt64(HotelClass);
       }
+      if (HasUserRating) {
+        output.WriteRawTag(56);
+        output.WriteInt64(UserRating);
+      }
+      if (HasVenue) {
+        output.WriteRawTag(66);
+        output.WriteString(Venue);
+      }
+      if (HasEventParticipantDisplayName) {
+        output.WriteRawTag(74);
+        output.WriteString(EventParticipantDisplayName);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -21134,6 +21255,18 @@ namespace Google.Ads.GoogleAds.V24.Common {
         output.WriteRawTag(48);
         output.WriteInt64(HotelClass);
       }
+      if (HasUserRating) {
+        output.WriteRawTag(56);
+        output.WriteInt64(UserRating);
+      }
+      if (HasVenue) {
+        output.WriteRawTag(66);
+        output.WriteString(Venue);
+      }
+      if (HasEventParticipantDisplayName) {
+        output.WriteRawTag(74);
+        output.WriteString(EventParticipantDisplayName);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -21158,6 +21291,15 @@ namespace Google.Ads.GoogleAds.V24.Common {
       }
       if (HasHotelClass) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(HotelClass);
+      }
+      if (HasUserRating) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(UserRating);
+      }
+      if (HasVenue) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Venue);
+      }
+      if (HasEventParticipantDisplayName) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(EventParticipantDisplayName);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -21186,6 +21328,15 @@ namespace Google.Ads.GoogleAds.V24.Common {
           break;
         case DimensionOneofCase.HotelClass:
           HotelClass = other.HotelClass;
+          break;
+        case DimensionOneofCase.UserRating:
+          UserRating = other.UserRating;
+          break;
+        case DimensionOneofCase.Venue:
+          Venue = other.Venue;
+          break;
+        case DimensionOneofCase.EventParticipantDisplayName:
+          EventParticipantDisplayName = other.EventParticipantDisplayName;
           break;
       }
 
@@ -21228,6 +21379,18 @@ namespace Google.Ads.GoogleAds.V24.Common {
             HotelClass = input.ReadInt64();
             break;
           }
+          case 56: {
+            UserRating = input.ReadInt64();
+            break;
+          }
+          case 66: {
+            Venue = input.ReadString();
+            break;
+          }
+          case 74: {
+            EventParticipantDisplayName = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -21265,6 +21428,18 @@ namespace Google.Ads.GoogleAds.V24.Common {
           }
           case 48: {
             HotelClass = input.ReadInt64();
+            break;
+          }
+          case 56: {
+            UserRating = input.ReadInt64();
+            break;
+          }
+          case 66: {
+            Venue = input.ReadString();
+            break;
+          }
+          case 74: {
+            EventParticipantDisplayName = input.ReadString();
             break;
           }
         }
