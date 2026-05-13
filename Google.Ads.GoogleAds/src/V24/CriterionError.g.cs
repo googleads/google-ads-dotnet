@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V24.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjVnb29nbGUvYWRzL2dvb2dsZWFkcy92MjQvZXJyb3JzL2NyaXRlcmlvbl9l",
-            "cnJvci5wcm90bxIfZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmVycm9ycyKE",
-            "OAoSQ3JpdGVyaW9uRXJyb3JFbnVtIu03Cg5Dcml0ZXJpb25FcnJvchIPCgtV",
+            "cnJvci5wcm90bxIfZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmVycm9ycyKl",
+            "OAoSQ3JpdGVyaW9uRXJyb3JFbnVtIo44Cg5Dcml0ZXJpb25FcnJvchIPCgtV",
             "TlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIaChZDT05DUkVURV9UWVBFX1JF",
             "UVVJUkVEEAISHQoZSU5WQUxJRF9FWENMVURFRF9DQVRFR09SWRADEhgKFElO",
             "VkFMSURfS0VZV09SRF9URVhUEAQSGQoVS0VZV09SRF9URVhUX1RPT19MT05H",
@@ -185,13 +185,13 @@ namespace Google.Ads.GoogleAds.V24.Errors {
             "QURTX0lURU1fR1JPVVBfUlVMRV9OT1RfU1VQUE9SVEVEX0ZPUl9USEVfVkVS",
             "VElDQUxfVFlQRRC3ARIsCidSRVRBSUxfRklMVEVSX0VYUFJFU1NJT05fRE9F",
             "U19OT1RfRVhJU1QQuAESLwoqUkVUQUlMX0ZJTFRFUl9UQUdTX1JFRkVSUklO",
-            "R19UT19FWFBSRVNTSU9OELkBQvMBCiNjb20uZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjI0LmVycm9yc0ITQ3JpdGVyaW9uRXJyb3JQcm90b1ABWkVnb29nbGUu",
-            "Z29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMv",
-            "djI0L2Vycm9ycztlcnJvcnOiAgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFk",
-            "cy5WMjQuRXJyb3JzygIfR29vZ2xlXEFkc1xHb29nbGVBZHNcVjI0XEVycm9y",
-            "c+oCI0dvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyNDo6RXJyb3JzYgZwcm90",
-            "bzM="));
+            "R19UT19FWFBSRVNTSU9OELkBEh8KGkNBTk5PVF9FWENMVURFX0FMTF9UQVJH",
+            "RVRTELoBQvMBCiNjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmVycm9y",
+            "c0ITQ3JpdGVyaW9uRXJyb3JQcm90b1ABWkVnb29nbGUuZ29sYW5nLm9yZy9n",
+            "ZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjI0L2Vycm9ycztl",
+            "cnJvcnOiAgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMjQuRXJyb3Jz",
+            "ygIfR29vZ2xlXEFkc1xHb29nbGVBZHNcVjI0XEVycm9yc+oCI0dvb2dsZTo6",
+            "QWRzOjpHb29nbGVBZHM6OlYyNDo6RXJyb3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -1104,6 +1104,10 @@ namespace Google.Ads.GoogleAds.V24.Errors {
         /// Tags.
         /// </summary>
         [pbr::OriginalName("RETAIL_FILTER_TAGS_REFERRING_TO_EXPRESSION")] RetailFilterTagsReferringToExpression = 185,
+        /// <summary>
+        /// Cannot exclude all demographic targets.
+        /// </summary>
+        [pbr::OriginalName("CANNOT_EXCLUDE_ALL_TARGETS")] CannotExcludeAllTargets = 186,
       }
 
     }

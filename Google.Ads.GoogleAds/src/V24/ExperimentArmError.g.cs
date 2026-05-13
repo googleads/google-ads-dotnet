@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V24.Errors {
           string.Concat(
             "Cjpnb29nbGUvYWRzL2dvb2dsZWFkcy92MjQvZXJyb3JzL2V4cGVyaW1lbnRf",
             "YXJtX2Vycm9yLnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuZXJy",
-            "b3JzIrEFChZFeHBlcmltZW50QXJtRXJyb3JFbnVtIpYFChJFeHBlcmltZW50",
+            "b3JzIrkIChZFeHBlcmltZW50QXJtRXJyb3JFbnVtIp4IChJFeHBlcmltZW50",
             "QXJtRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESJwojRVhQ",
             "RVJJTUVOVF9BUk1fQ09VTlRfTElNSVRfRVhDRUVERUQQAhIbChdJTlZBTElE",
             "X0NBTVBBSUdOX1NUQVRVUxADEiEKHURVUExJQ0FURV9FWFBFUklNRU5UX0FS",
@@ -41,13 +41,21 @@ namespace Google.Ads.GoogleAds.V24.Errors {
             "Ql9UWVBFEAwSLAooQ0FOTk9UX0FERF9CQVNFX0NBTVBBSUdOX1dJVEhfREFU",
             "RV9SQU5HRRANEjEKLUJJRERJTkdfU1RSQVRFR1lfTk9UX1NVUFBPUlRFRF9J",
             "Tl9FWFBFUklNRU5UUxAOEjAKLFRSQUZGSUNfU1BMSVRfTk9UX1NVUFBPUlRF",
-            "RF9GT1JfQ0hBTk5FTF9UWVBFEA9C9wEKI2NvbS5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MjQuZXJyb3JzQhdFeHBlcmltZW50QXJtRXJyb3JQcm90b1ABWkVn",
-            "b29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29n",
-            "bGVhZHMvdjI0L2Vycm9ycztlcnJvcnOiAgNHQUGqAh9Hb29nbGUuQWRzLkdv",
-            "b2dsZUFkcy5WMjQuRXJyb3JzygIfR29vZ2xlXEFkc1xHb29nbGVBZHNcVjI0",
-            "XEVycm9yc+oCI0dvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyNDo6RXJyb3Jz",
-            "YgZwcm90bzM="));
+            "RF9GT1JfQ0hBTk5FTF9UWVBFEA8SHQoZQlVER0VUX01VU1RfTk9UX0JFX1NI",
+            "QVJFRBAQEjwKOEFET1BUX0FJX01BWF9DQU1QQUlHTl9NSVNTSU5HX1BFUkZP",
+            "Uk1BTkNFX1NFQVJDSF9FTkFCTEVEEBESKAokVE9PX01BTllfQ0FNUEFJR05T",
+            "X0lOX0VYUEVSSU1FTlRfQVJNEBISQQo9Q0FOTk9UX0FERF9DQU1QQUlHTl9X",
+            "SVRIX1RBUkdFVF9ST0FTX1RPTEVSQU5DRV9QRVJDRU5UX01JTExJUxATEjoK",
+            "NkNBTk5PVF9IQVZFX1NBTUVfQ0FNUEFJR05fQ1JPU1NfQVJNU19JTl9PTkVf",
+            "RVhQRVJJTUVOVBAUEiQKIFNFQVJDSF9QTFVTX0NBTVBBSUdOX05PVF9BTExP",
+            "V0VEEBUSLQopRFVQTElDQVRFX0FTU0VUX0dST1VQX0FTU0VUU19CRVRXRUVO",
+            "X0FSTVMQFhIrCidEVVBMSUNBVEVfQVNTRVRfR1JPVVBfQVNTRVRTX0lOX09O",
+            "RV9BUk0QF0L3AQojY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5lcnJv",
+            "cnNCF0V4cGVyaW1lbnRBcm1FcnJvclByb3RvUAFaRWdvb2dsZS5nb2xhbmcu",
+            "b3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MjQvZXJy",
+            "b3JzO2Vycm9yc6ICA0dBQaoCH0dvb2dsZS5BZHMuR29vZ2xlQWRzLlYyNC5F",
+            "cnJvcnPKAh9Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMjRcRXJyb3Jz6gIjR29v",
+            "Z2xlOjpBZHM6Okdvb2dsZUFkczo6VjI0OjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -295,6 +303,45 @@ namespace Google.Ads.GoogleAds.V24.Errors {
         /// Traffic split is not supported for some channel types.
         /// </summary>
         [pbr::OriginalName("TRAFFIC_SPLIT_NOT_SUPPORTED_FOR_CHANNEL_TYPE")] TrafficSplitNotSupportedForChannelType = 15,
+        /// <summary>
+        /// Shared budgets are not allowed in experiments.
+        /// </summary>
+        [pbr::OriginalName("BUDGET_MUST_NOT_BE_SHARED")] BudgetMustNotBeShared = 16,
+        /// <summary>
+        /// Campaign must enable performance search setting for ADOPT_AI_MAX
+        /// experiments.
+        /// </summary>
+        [pbr::OriginalName("ADOPT_AI_MAX_CAMPAIGN_MISSING_PERFORMANCE_SEARCH_ENABLED")] AdoptAiMaxCampaignMissingPerformanceSearchEnabled = 17,
+        /// <summary>
+        /// Number of campaigns in the experiment arm is above limit.
+        /// </summary>
+        [pbr::OriginalName("TOO_MANY_CAMPAIGNS_IN_EXPERIMENT_ARM")] TooManyCampaignsInExperimentArm = 18,
+        /// <summary>
+        /// AI Max experiments do not support campaigns with a target ROAS tolerance
+        /// (see
+        /// campaign.maximize_conversion_value.target_roas_tolerance_percent_millis).
+        /// </summary>
+        [pbr::OriginalName("CANNOT_ADD_CAMPAIGN_WITH_TARGET_ROAS_TOLERANCE_PERCENT_MILLIS")] CannotAddCampaignWithTargetRoasTolerancePercentMillis = 19,
+        /// <summary>
+        /// A campaign cannot be added to multiple arms in one experiment. Use
+        /// different campaigns in each arm of the experiment.
+        /// </summary>
+        [pbr::OriginalName("CANNOT_HAVE_SAME_CAMPAIGN_CROSS_ARMS_IN_ONE_EXPERIMENT")] CannotHaveSameCampaignCrossArmsInOneExperiment = 20,
+        /// <summary>
+        /// Campaigns in the ADOPT_BROAD_MATCH_KEYWORD experiment cannot target the
+        /// Google Display Network.
+        /// </summary>
+        [pbr::OriginalName("SEARCH_PLUS_CAMPAIGN_NOT_ALLOWED")] SearchPlusCampaignNotAllowed = 21,
+        /// <summary>
+        /// An asset group asset cannot be added to multiple arms in one experiment.
+        /// Use different asset group assets in each arm of the experiment.
+        /// </summary>
+        [pbr::OriginalName("DUPLICATE_ASSET_GROUP_ASSETS_BETWEEN_ARMS")] DuplicateAssetGroupAssetsBetweenArms = 22,
+        /// <summary>
+        /// An asset group asset cannot be used multiple times in one arm.
+        /// Use different asset group assets in one arm of the experiment.
+        /// </summary>
+        [pbr::OriginalName("DUPLICATE_ASSET_GROUP_ASSETS_IN_ONE_ARM")] DuplicateAssetGroupAssetsInOneArm = 23,
       }
 
     }

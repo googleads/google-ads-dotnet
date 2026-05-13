@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V24.Errors {
           string.Concat(
             "CjZnb29nbGUvYWRzL2dvb2dsZWFkcy92MjQvZXJyb3JzL2V4cGVyaW1lbnRf",
             "ZXJyb3IucHJvdG8SH2dvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5lcnJvcnMi",
-            "3wkKE0V4cGVyaW1lbnRFcnJvckVudW0ixwkKD0V4cGVyaW1lbnRFcnJvchIP",
+            "ogoKE0V4cGVyaW1lbnRFcnJvckVudW0iigoKD0V4cGVyaW1lbnRFcnJvchIP",
             "CgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIhCh1DQU5OT1RfU0VUX1NU",
             "QVJUX0RBVEVfSU5fUEFTVBACEh4KGkVORF9EQVRFX0JFRk9SRV9TVEFSVF9E",
             "QVRFEAMSIAocU1RBUlRfREFURV9UT09fRkFSX0lOX0ZVVFVSRRAEEh0KGURV",
@@ -53,13 +53,14 @@ namespace Google.Ads.GoogleAds.V24.Errors {
             "UkVDQVRFRF9BRF9UWVBFUxAcEjYKMkNBTk5PVF9FTkFCTEVfU1lOQ19GT1Jf",
             "VU5TVVBQT1JURURfRVhQRVJJTUVOVF9UWVBFEB0SJgoiSU5WQUxJRF9EVVJB",
             "VElPTl9GT1JfQU5fRVhQRVJJTUVOVBAeEjUKMU1JU1NJTkdfRVVfUE9MSVRJ",
-            "Q0FMX0FEVkVSVElTSU5HX1NFTEZfREVDTEFSQVRJT04QH0L0AQojY29tLmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5lcnJvcnNCFEV4cGVyaW1lbnRFcnJv",
-            "clByb3RvUAFaRWdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
-            "aXMvYWRzL2dvb2dsZWFkcy92MjQvZXJyb3JzO2Vycm9yc6ICA0dBQaoCH0dv",
-            "b2dsZS5BZHMuR29vZ2xlQWRzLlYyNC5FcnJvcnPKAh9Hb29nbGVcQWRzXEdv",
-            "b2dsZUFkc1xWMjRcRXJyb3Jz6gIjR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6",
-            "VjI0OjpFcnJvcnNiBnByb3RvMw=="));
+            "Q0FMX0FEVkVSVElTSU5HX1NFTEZfREVDTEFSQVRJT04QHxIbChdNSVNTSU5H",
+            "X0VYUEVSSU1FTlRfQVJNUxAgEiQKIE1JU1NJTkdfVklERU9fRVhQRVJJTUVO",
+            "VF9TVUJUWVBFECJC9AEKI2NvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQu",
+            "ZXJyb3JzQhRFeHBlcmltZW50RXJyb3JQcm90b1ABWkVnb29nbGUuZ29sYW5n",
+            "Lm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjI0L2Vy",
+            "cm9ycztlcnJvcnOiAgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMjQu",
+            "RXJyb3JzygIfR29vZ2xlXEFkc1xHb29nbGVBZHNcVjI0XEVycm9yc+oCI0dv",
+            "b2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyNDo6RXJyb3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -379,6 +380,14 @@ namespace Google.Ads.GoogleAds.V24.Errors {
         /// political advertising that targets the European Union.
         /// </summary>
         [pbr::OriginalName("MISSING_EU_POLITICAL_ADVERTISING_SELF_DECLARATION")] MissingEuPoliticalAdvertisingSelfDeclaration = 31,
+        /// <summary>
+        /// Cannot create an experiment with no arms.
+        /// </summary>
+        [pbr::OriginalName("MISSING_EXPERIMENT_ARMS")] MissingExperimentArms = 32,
+        /// <summary>
+        /// The video experiment subtype is missing.
+        /// </summary>
+        [pbr::OriginalName("MISSING_VIDEO_EXPERIMENT_SUBTYPE")] MissingVideoExperimentSubtype = 34,
       }
 
     }
