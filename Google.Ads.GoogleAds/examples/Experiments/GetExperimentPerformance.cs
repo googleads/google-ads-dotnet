@@ -96,16 +96,13 @@ namespace Google.Ads.GoogleAds.Examples.V24
             GoogleAdsServiceClient googleAdsService = client.GetService(
                 Services.V24.GoogleAdsService);
 
-            // Query to retrieve both control and treatment arms under the parent experiment.
+            // Query to retrieve the experiment.
             // Notice that we request the statistical metrics (e.g., p-value, point estimate,
-            // margin of error) which are populated exclusively on the treatment arm row.
+            // margin of error) which are populated based on the treatment arm.
             string query = $@"
                 SELECT
-                  experiment_arm.resource_name,
-                  experiment_arm.name,
-                  experiment_arm.control,
-                  experiment_arm.traffic_split,
                   experiment.resource_name,
+                  experiment.name,
                   experiment.experiment_id,
                   experiment.type,
                   metrics.conversions_absolute_change_p_value,
@@ -114,7 +111,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
                   metrics.clicks_p_value,
                   metrics.clicks_point_estimate,
                   metrics.clicks_margin_of_error
-                FROM experiment_arm
+                FROM experiment
                 WHERE experiment.experiment_id = {experimentId}";
 
             try
@@ -128,26 +125,17 @@ namespace Google.Ads.GoogleAds.Examples.V24
                         foreach (GoogleAdsRow row in resp.Results)
                         {
                             hasResults = true;
-                            Console.WriteLine($"Found experiment arm: {row.ExperimentArm.Name}");
-                            Console.WriteLine($"  Resource Name: {row.ExperimentArm.ResourceName}");
-                            Console.WriteLine($"  Control: {row.ExperimentArm.Control}");
-                            Console.WriteLine($"  Traffic Split: {row.ExperimentArm.TrafficSplit}%");
+                            Console.WriteLine($"Found experiment: {row.Experiment.Name}");
+                            Console.WriteLine($"  Resource Name: {row.Experiment.ResourceName}");
 
-                            // Statistical evaluation is only valid on the treatment (non-control) arm
-                            // because significance metrics are only populated relative to the baseline.
-                            // Note: For intra-campaign/in-campaign experiments, only a single treatment row is
-                            // returned (with control = False), since there is no separate control campaign.
-                            if (!row.ExperimentArm.Control)
-                            {
-                                EvaluateExperiment(client, customerId, row);
-                            }
+                            EvaluateExperiment(client, customerId, row);
                         }
                     }
                 );
 
                 if (!hasResults)
                 {
-                    Console.WriteLine($"No experiment arms found for experiment ID: {experimentId}");
+                    Console.WriteLine($"No experiment found for experiment ID: {experimentId}");
                 }
             }
             catch (GoogleAdsException e)
