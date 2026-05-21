@@ -49,8 +49,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
   #region Messages
   /// <summary>
   /// Additional information about the application/tool issuing the request. This
-  /// field is only used by [ContentCreatorInsightsService],
-  /// [AudienceInsightsService], and [ReachPlanService] APIs.
+  /// field is only used by
+  /// [ContentCreatorInsightsService][google.ads.googleads.v23.services.ContentCreatorInsightsService],
+  /// [AudienceInsightsService][google.ads.googleads.v23.services.AudienceInsightsService],
+  /// and [ReachPlanService][google.ads.googleads.v23.services.ReachPlanService]
+  /// APIs.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AdditionalApplicationInfo : pb::IMessage<AdditionalApplicationInfo>
@@ -245,7 +248,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -268,7 +275,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

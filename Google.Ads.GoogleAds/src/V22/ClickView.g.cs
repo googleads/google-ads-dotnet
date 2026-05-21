@@ -72,6 +72,9 @@ namespace Google.Ads.GoogleAds.V22.Resources {
   /// Queries including ClickView must have a filter limiting the results to one
   /// day and can be requested for dates back to 90 days before the time of the
   /// request.
+  ///
+  /// GCLIDs are not available in this report for App Campaigns for Installs (ACi)
+  /// and App Campaigns for Pre-registration (ACpre).
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ClickView : pb::IMessage<ClickView>

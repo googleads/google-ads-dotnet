@@ -168,11 +168,6 @@ namespace Google.Ads.GoogleAds.V23.Errors
             return $"customers/{customerId}/ageRangeViews/{adGroupId}~{criterionId}";
         }
 
-        public static string AppliedIncentive(long customerId, string couponCode)
-        {
-            return $"customers/{customerId}/appliedIncentives/{couponCode}";
-        }
-
         public static string Asset(long customerId, long assetId)
         {
             return $"customers/{customerId}/assets/{assetId}";
@@ -687,11 +682,6 @@ namespace Google.Ads.GoogleAds.V23.Errors
             long criterionId)
         {
             return $"customers/{customerId}/managedPlacementViews/{adGroupId}~{criterionId}";
-        }
-
-        public static string MatchedLocationInterestView(long customerId, string countryCriterionId)
-        {
-            return $"customers/{customerId}/matchedLocationInterestViews/{countryCriterionId}";
         }
 
         public static string MediaFile(long customerId, long mediaFileId)

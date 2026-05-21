@@ -825,6 +825,14 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v23/ReservationService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<ReservationServiceClient, ReservationServiceSettings, GoogleAdsConfig> ReservationService =
+                new ServiceTemplate<ReservationServiceClient, ReservationServiceSettings, GoogleAdsConfig>(Create);
+
+
+            /// <summary>
             /// See https://developers.google.com/google-ads/api/reference/rpc/v23/ShareablePreviewService
             /// for details.
             /// </summary>
@@ -902,6 +910,14 @@ namespace Google.Ads.GoogleAds
             /// </summary>
             public static readonly ServiceTemplate<UserListServiceClient, UserListServiceSettings, GoogleAdsConfig> UserListService =
                 new ServiceTemplate<UserListServiceClient, UserListServiceSettings, GoogleAdsConfig>(Create);
+
+
+            /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v23/YouTubeVideoUploadService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<YouTubeVideoUploadServiceClient, YouTubeVideoUploadServiceSettings, GoogleAdsConfig> YouTubeVideoUploadService =
+                new ServiceTemplate<YouTubeVideoUploadServiceClient, YouTubeVideoUploadServiceSettings, GoogleAdsConfig>(Create);
 
 
             /// <summary>
@@ -1312,6 +1328,10 @@ namespace Google.Ads.GoogleAds
                         return RemarketingActionServiceClient.Create(callInvoker, (RemarketingActionServiceSettings) settings);
 
 
+                    case "ReservationServiceClient":
+                        return ReservationServiceClient.Create(callInvoker, (ReservationServiceSettings) settings);
+
+
                     case "ShareablePreviewServiceClient":
                         return ShareablePreviewServiceClient.Create(callInvoker, (ShareablePreviewServiceSettings) settings);
 
@@ -1350,6 +1370,10 @@ namespace Google.Ads.GoogleAds
 
                     case "UserListServiceClient":
                         return UserListServiceClient.Create(callInvoker, (UserListServiceSettings) settings);
+
+
+                    case "YouTubeVideoUploadServiceClient":
+                        return YouTubeVideoUploadServiceClient.Create(callInvoker, (YouTubeVideoUploadServiceSettings) settings);
 
 
                     default:

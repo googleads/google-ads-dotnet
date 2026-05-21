@@ -1,3 +1,23 @@
+26.0.0
+======
+- Added support for version 24.1 of the Google Ads API.
+- Removed support for version 20 of the Google Ads API.
+
+25.3.0
+======
+- Added support for version 24.0 of the Google Ads API.
+- Changed the `GenerateForecastMetrics` example to align with v24.0.
+
+25.2.0
+======
+- Added support for version 23.2 of the Google Ads API.
+
+25.1.0
+======
+- Added support for version 23.1 of the Google Ads API.
+- Updated the `AddPerformanceMaxCampaign` example to demonstrate usage of
+  text guidelines.
+
 25.0.0
 ======
 - Added support for version 23.0 of the Google Ads API.

@@ -77,7 +77,7 @@ namespace Google.Ads.GoogleAds.V22.Services {
   #region Messages
   /// <summary>
   /// Request message for
-  /// [CampaignLifecycleGoalService.configureCampaignLifecycleGoals][].
+  /// [CampaignLifecycleGoalService.ConfigureCampaignLifecycleGoals][google.ads.googleads.v22.services.CampaignLifecycleGoalService.ConfigureCampaignLifecycleGoals].
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ConfigureCampaignLifecycleGoalsRequest : pb::IMessage<ConfigureCampaignLifecycleGoalsRequest>
@@ -711,7 +711,7 @@ namespace Google.Ads.GoogleAds.V22.Services {
 
   /// <summary>
   /// Response message for
-  /// [CampaignLifecycleGoalService.configureCampaignLifecycleGoals][].
+  /// [CampaignLifecycleGoalService.ConfigureCampaignLifecycleGoals][google.ads.googleads.v22.services.CampaignLifecycleGoalService.ConfigureCampaignLifecycleGoals].
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ConfigureCampaignLifecycleGoalsResponse : pb::IMessage<ConfigureCampaignLifecycleGoalsResponse>

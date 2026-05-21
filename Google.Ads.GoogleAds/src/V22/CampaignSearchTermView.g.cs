@@ -54,7 +54,8 @@ namespace Google.Ads.GoogleAds.V22.Resources {
   #region Messages
   /// <summary>
   /// This report provides granular performance data, including cost metrics, for
-  /// each individual search term that triggered your ads.
+  /// each individual search term that triggered your ads. If keyword-related
+  /// segments are used, Performance Max data will be excluded from the results.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CampaignSearchTermView : pb::IMessage<CampaignSearchTermView>

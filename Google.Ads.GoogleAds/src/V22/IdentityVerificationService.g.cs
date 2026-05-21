@@ -94,7 +94,7 @@ namespace Google.Ads.GoogleAds.V22.Services {
   #region Messages
   /// <summary>
   /// Request message for
-  ///  [IdentityVerificationService.StartIdentityVerification].
+  ///  [StartIdentityVerification][google.ads.googleads.v22.services.IdentityVerificationService.StartIdentityVerification].
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class StartIdentityVerificationRequest : pb::IMessage<StartIdentityVerificationRequest>
@@ -333,7 +333,7 @@ namespace Google.Ads.GoogleAds.V22.Services {
 
   /// <summary>
   /// Request message for
-  ///  [IdentityVerificationService.GetIdentityVerification].
+  ///  [GetIdentityVerification][google.ads.googleads.v22.services.IdentityVerificationService.GetIdentityVerification].
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetIdentityVerificationRequest : pb::IMessage<GetIdentityVerificationRequest>
@@ -531,7 +531,7 @@ namespace Google.Ads.GoogleAds.V22.Services {
 
   /// <summary>
   /// Response message for
-  ///  [IdentityVerificationService.GetIdentityVerification].
+  ///  [GetIdentityVerification][google.ads.googleads.v22.services.IdentityVerificationService.GetIdentityVerification].
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GetIdentityVerificationResponse : pb::IMessage<GetIdentityVerificationResponse>

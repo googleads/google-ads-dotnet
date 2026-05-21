@@ -16,21 +16,21 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V23.Common;
-using Google.Ads.GoogleAds.V23.Errors;
-using Google.Ads.GoogleAds.V23.Resources;
-using Google.Ads.GoogleAds.V23.Services;
+using Google.Ads.GoogleAds.V24.Common;
+using Google.Ads.GoogleAds.V24.Errors;
+using Google.Ads.GoogleAds.V24.Resources;
+using Google.Ads.GoogleAds.V24.Services;
 using Google.Protobuf;
 using System;
 using System.Linq;
-using static Google.Ads.GoogleAds.V23.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V23.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V23.Enums.AssetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V23.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V23.Enums.DisplayAdFormatSettingEnum.Types;
-using static Google.Ads.GoogleAds.V23.Enums.EuPoliticalAdvertisingStatusEnum.Types;
+using static Google.Ads.GoogleAds.V24.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V24.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V24.Enums.AssetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V24.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V24.Enums.DisplayAdFormatSettingEnum.Types;
+using static Google.Ads.GoogleAds.V24.Enums.EuPoliticalAdvertisingStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V23
+namespace Google.Ads.GoogleAds.Examples.V24
 {
     /// <summary>
     /// This code example creates a shopping campaign associated with an existing Merchant Center
@@ -150,7 +150,7 @@ namespace Google.Ads.GoogleAds.Examples.V23
         {
             // Creates the Campaign Service client.
             CampaignServiceClient campaignServiceClient =
-                client.GetService(Services.V23.CampaignService);
+                client.GetService(Services.V24.CampaignService);
 
             string budgetResourceName = ResourceNames.CampaignBudget(customerId, campaignBudgetId);
 
@@ -204,7 +204,7 @@ namespace Google.Ads.GoogleAds.Examples.V23
         {
             // Creates the ad group service client.
             AdGroupServiceClient adGroupServiceClient =
-                client.GetService(Services.V23.AdGroupService);
+                client.GetService(Services.V24.AdGroupService);
 
             // Creates the ad group.
             AdGroup adGroup = new AdGroup()
@@ -241,7 +241,7 @@ namespace Google.Ads.GoogleAds.Examples.V23
         {
             // Creates the ad group ad service client.
             AdGroupAdServiceClient adGroupAdServiceClient =
-                client.GetService(Services.V23.AdGroupAdService);
+                client.GetService(Services.V24.AdGroupAdService);
 
             string marketingImageUrl = "https://gaagl.page.link/Eit5";
             string marketingImageName = "Marketing Image";
@@ -354,7 +354,7 @@ namespace Google.Ads.GoogleAds.Examples.V23
             string imageUrl, string assetName)
         {
             // Creates the asset service client.
-            AssetServiceClient assetServiceClient = client.GetService(Services.V23.AssetService);
+            AssetServiceClient assetServiceClient = client.GetService(Services.V24.AssetService);
 
             byte[] imageData = MediaUtilities.GetAssetDataFromUrl(imageUrl, client.Config);
 
@@ -396,7 +396,7 @@ namespace Google.Ads.GoogleAds.Examples.V23
         {
             // Creates the ad group criterion service client.
             AdGroupCriterionServiceClient adGroupCriterionServiceClient = client.GetService
-                (Services.V23.AdGroupCriterionService);
+                (Services.V24.AdGroupCriterionService);
 
             string userListResourceName = ResourceNames.UserList(customerId, userListId);
 

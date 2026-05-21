@@ -1027,7 +1027,7 @@ namespace Google.Ads.GoogleAds.V22.Common {
   /// <summary>
   /// An audience attribute that can be used to request insights about the
   /// audience. Valid inputs for these fields are available from
-  /// [AudienceInsightsService.ListAudienceInsightsAttributes][].
+  /// [AudienceInsightsService.ListAudienceInsightsAttributes][google.ads.googleads.v22.services.AudienceInsightsService.ListAudienceInsightsAttributes].
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AudienceInsightsAttribute : pb::IMessage<AudienceInsightsAttribute>
@@ -4311,7 +4311,8 @@ namespace Google.Ads.GoogleAds.V22.Common {
         = pb::FieldCodec.ForEnum(10, x => (int) x, x => (global::Google.Ads.GoogleAds.V22.Enums.InsightsKnowledgeGraphEntityCapabilitiesEnum.Types.InsightsKnowledgeGraphEntityCapabilities) x);
     private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V22.Enums.InsightsKnowledgeGraphEntityCapabilitiesEnum.Types.InsightsKnowledgeGraphEntityCapabilities> entityCapabilities_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V22.Enums.InsightsKnowledgeGraphEntityCapabilitiesEnum.Types.InsightsKnowledgeGraphEntityCapabilities>();
     /// <summary>
-    /// The capabilities of the entity used in [ContentCreatorInsightsService][].
+    /// The capabilities of the entity used in
+    /// [ContentCreatorInsightsService][google.ads.googleads.v22.services.ContentCreatorInsightsService].
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

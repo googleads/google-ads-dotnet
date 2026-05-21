@@ -440,10 +440,11 @@ namespace Google.Ads.GoogleAds.V23.Services
             }, callSettings);
 
         /// <summary>
-        /// Creates, updates, or removes resources. This method supports atomic
-        /// transactions with multiple types of resources. For example, you can
-        /// atomically create a campaign and a campaign budget, or perform up to
-        /// thousands of mutates atomically.
+        /// Executes mutate and actions operations. Mutate operations create, update,
+        /// or remove resources. Actions perform custom operations. This method
+        /// supports atomic transactions with multiple types of resources and
+        /// actions. For example, you can atomically create a campaign and a campaign
+        /// budget, or perform up to thousands of mutates atomically.
         /// 
         /// This method is essentially a wrapper around a series of mutate methods. The
         /// only features it offers over calling those methods directly are:
@@ -560,10 +561,11 @@ namespace Google.Ads.GoogleAds.V23.Services
             throw new sys::NotImplementedException();
 
         /// <summary>
-        /// Creates, updates, or removes resources. This method supports atomic
-        /// transactions with multiple types of resources. For example, you can
-        /// atomically create a campaign and a campaign budget, or perform up to
-        /// thousands of mutates atomically.
+        /// Executes mutate and actions operations. Mutate operations create, update,
+        /// or remove resources. Actions perform custom operations. This method
+        /// supports atomic transactions with multiple types of resources and
+        /// actions. For example, you can atomically create a campaign and a campaign
+        /// budget, or perform up to thousands of mutates atomically.
         /// 
         /// This method is essentially a wrapper around a series of mutate methods. The
         /// only features it offers over calling those methods directly are:
@@ -680,10 +682,11 @@ namespace Google.Ads.GoogleAds.V23.Services
             throw new sys::NotImplementedException();
 
         /// <summary>
-        /// Creates, updates, or removes resources. This method supports atomic
-        /// transactions with multiple types of resources. For example, you can
-        /// atomically create a campaign and a campaign budget, or perform up to
-        /// thousands of mutates atomically.
+        /// Executes mutate and actions operations. Mutate operations create, update,
+        /// or remove resources. Actions perform custom operations. This method
+        /// supports atomic transactions with multiple types of resources and
+        /// actions. For example, you can atomically create a campaign and a campaign
+        /// budget, or perform up to thousands of mutates atomically.
         /// 
         /// This method is essentially a wrapper around a series of mutate methods. The
         /// only features it offers over calling those methods directly are:
@@ -800,10 +803,11 @@ namespace Google.Ads.GoogleAds.V23.Services
             MutateAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
-        /// Creates, updates, or removes resources. This method supports atomic
-        /// transactions with multiple types of resources. For example, you can
-        /// atomically create a campaign and a campaign budget, or perform up to
-        /// thousands of mutates atomically.
+        /// Executes mutate and actions operations. Mutate operations create, update,
+        /// or remove resources. Actions perform custom operations. This method
+        /// supports atomic transactions with multiple types of resources and
+        /// actions. For example, you can atomically create a campaign and a campaign
+        /// budget, or perform up to thousands of mutates atomically.
         /// 
         /// This method is essentially a wrapper around a series of mutate methods. The
         /// only features it offers over calling those methods directly are:
@@ -932,10 +936,11 @@ namespace Google.Ads.GoogleAds.V23.Services
             }, callSettings);
 
         /// <summary>
-        /// Creates, updates, or removes resources. This method supports atomic
-        /// transactions with multiple types of resources. For example, you can
-        /// atomically create a campaign and a campaign budget, or perform up to
-        /// thousands of mutates atomically.
+        /// Executes mutate and actions operations. Mutate operations create, update,
+        /// or remove resources. Actions perform custom operations. This method
+        /// supports atomic transactions with multiple types of resources and
+        /// actions. For example, you can atomically create a campaign and a campaign
+        /// budget, or perform up to thousands of mutates atomically.
         /// 
         /// This method is essentially a wrapper around a series of mutate methods. The
         /// only features it offers over calling those methods directly are:
@@ -1064,10 +1069,11 @@ namespace Google.Ads.GoogleAds.V23.Services
             }, callSettings);
 
         /// <summary>
-        /// Creates, updates, or removes resources. This method supports atomic
-        /// transactions with multiple types of resources. For example, you can
-        /// atomically create a campaign and a campaign budget, or perform up to
-        /// thousands of mutates atomically.
+        /// Executes mutate and actions operations. Mutate operations create, update,
+        /// or remove resources. Actions perform custom operations. This method
+        /// supports atomic transactions with multiple types of resources and
+        /// actions. For example, you can atomically create a campaign and a campaign
+        /// budget, or perform up to thousands of mutates atomically.
         /// 
         /// This method is essentially a wrapper around a series of mutate methods. The
         /// only features it offers over calling those methods directly are:
@@ -1331,10 +1337,11 @@ namespace Google.Ads.GoogleAds.V23.Services
         }
 
         /// <summary>
-        /// Creates, updates, or removes resources. This method supports atomic
-        /// transactions with multiple types of resources. For example, you can
-        /// atomically create a campaign and a campaign budget, or perform up to
-        /// thousands of mutates atomically.
+        /// Executes mutate and actions operations. Mutate operations create, update,
+        /// or remove resources. Actions perform custom operations. This method
+        /// supports atomic transactions with multiple types of resources and
+        /// actions. For example, you can atomically create a campaign and a campaign
+        /// budget, or perform up to thousands of mutates atomically.
         /// 
         /// This method is essentially a wrapper around a series of mutate methods. The
         /// only features it offers over calling those methods directly are:
@@ -1454,10 +1461,11 @@ namespace Google.Ads.GoogleAds.V23.Services
         }
 
         /// <summary>
-        /// Creates, updates, or removes resources. This method supports atomic
-        /// transactions with multiple types of resources. For example, you can
-        /// atomically create a campaign and a campaign budget, or perform up to
-        /// thousands of mutates atomically.
+        /// Executes mutate and actions operations. Mutate operations create, update,
+        /// or remove resources. Actions perform custom operations. This method
+        /// supports atomic transactions with multiple types of resources and
+        /// actions. For example, you can atomically create a campaign and a campaign
+        /// budget, or perform up to thousands of mutates atomically.
         /// 
         /// This method is essentially a wrapper around a series of mutate methods. The
         /// only features it offers over calling those methods directly are:

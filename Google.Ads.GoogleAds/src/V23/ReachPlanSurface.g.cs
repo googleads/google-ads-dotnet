@@ -26,17 +26,18 @@ namespace Google.Ads.GoogleAds.V23.Enums {
           string.Concat(
             "Cjdnb29nbGUvYWRzL2dvb2dsZWFkcy92MjMvZW51bXMvcmVhY2hfcGxhbl9z",
             "dXJmYWNlLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMuZW51bXMi",
-            "zAEKFFJlYWNoUGxhblN1cmZhY2VFbnVtIrMBChBSZWFjaFBsYW5TdXJmYWNl",
+            "lAIKFFJlYWNoUGxhblN1cmZhY2VFbnVtIvsBChBSZWFjaFBsYW5TdXJmYWNl",
             "Eg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEhEKDURJU0NPVkVSX0ZF",
             "RUQQBxIJCgVHTUFJTBAIEgsKB0lOX0ZFRUQQAhIUChBJTl9TVFJFQU1fQlVN",
             "UEVSEAMSGwoXSU5fU1RSRUFNX05PTl9TS0lQUEFCTEUQBBIXChNJTl9TVFJF",
-            "QU1fU0tJUFBBQkxFEAUSCgoGU0hPUlRTEAZC7wEKImNvbS5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MjMuZW51bXNCFVJlYWNoUGxhblN1cmZhY2VQcm90b1AB",
-            "WkNnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9n",
-            "b29nbGVhZHMvdjIzL2VudW1zO2VudW1zogIDR0FBqgIeR29vZ2xlLkFkcy5H",
-            "b29nbGVBZHMuVjIzLkVudW1zygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjIz",
-            "XEVudW1z6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjIzOjpFbnVtc2IG",
-            "cHJvdG8z"));
+            "QU1fU0tJUFBBQkxFEAUSCgoGU0hPUlRTEAYSGgoWR09PR0xFX0RJU1BMQVlf",
+            "TkVUV09SSxAJEioKJklOX1NUUkVBTV9OT05fU0tJUFBBQkxFX1RISVJUWV9T",
+            "RUNPTkRTEApC7wEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMuZW51",
+            "bXNCFVJlYWNoUGxhblN1cmZhY2VQcm90b1ABWkNnb29nbGUuZ29sYW5nLm9y",
+            "Zy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjIzL2VudW1z",
+            "O2VudW1zogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjIzLkVudW1z",
+            "ygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjIzXEVudW1z6gIiR29vZ2xlOjpB",
+            "ZHM6Okdvb2dsZUFkczo6VjIzOjpFbnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -179,7 +180,11 @@ namespace Google.Ads.GoogleAds.V23.Enums {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -194,7 +199,11 @@ namespace Google.Ads.GoogleAds.V23.Enums {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -248,6 +257,14 @@ namespace Google.Ads.GoogleAds.V23.Enums {
         /// Shorts ad surface.
         /// </summary>
         [pbr::OriginalName("SHORTS")] Shorts = 6,
+        /// <summary>
+        /// Google Display Network ad surface.
+        /// </summary>
+        [pbr::OriginalName("GOOGLE_DISPLAY_NETWORK")] GoogleDisplayNetwork = 9,
+        /// <summary>
+        /// In-Stream non-skippable (30 seconds) ad surface.
+        /// </summary>
+        [pbr::OriginalName("IN_STREAM_NON_SKIPPABLE_THIRTY_SECONDS")] InStreamNonSkippableThirtySeconds = 10,
       }
 
     }

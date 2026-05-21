@@ -1390,7 +1390,7 @@ namespace Google.Ads.GoogleAds.V21.Services {
 
   /// <summary>
   /// Request message for
-  /// [AdGroupAdService.RemoveAutomaticallyCreatedAssetsRequest][].
+  /// [AdGroupAdService.RemoveAutomaticallyCreatedAssets][google.ads.googleads.v21.services.AdGroupAdService.RemoveAutomaticallyCreatedAssets].
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RemoveAutomaticallyCreatedAssetsRequest : pb::IMessage<RemoveAutomaticallyCreatedAssetsRequest>

@@ -53,6 +53,10 @@ namespace Google.Ads.GoogleAds.V23.Resources {
   #region Messages
   /// <summary>
   /// A video.
+  ///
+  /// If the video has any enhancements, the stats on all of them will be
+  /// aggregated and displayed on this video resource. To get stats for a specific
+  /// enhancement, use the VideoEnhancement resource instead.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Video : pb::IMessage<Video>
@@ -403,7 +407,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -438,7 +446,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

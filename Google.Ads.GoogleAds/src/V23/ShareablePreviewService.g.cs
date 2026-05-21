@@ -26,51 +26,61 @@ namespace Google.Ads.GoogleAds.V23.Services {
           string.Concat(
             "CkFnb29nbGUvYWRzL2dvb2dsZWFkcy92MjMvc2VydmljZXMvc2hhcmVhYmxl",
             "X3ByZXZpZXdfc2VydmljZS5wcm90bxIhZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djIzLnNlcnZpY2VzGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvGhdn",
-            "b29nbGUvYXBpL2NsaWVudC5wcm90bxofZ29vZ2xlL2FwaS9maWVsZF9iZWhh",
-            "dmlvci5wcm90bxoXZ29vZ2xlL3JwYy9zdGF0dXMucHJvdG8ikgEKIEdlbmVy",
-            "YXRlU2hhcmVhYmxlUHJldmlld3NSZXF1ZXN0EhgKC2N1c3RvbWVyX2lkGAEg",
-            "ASgJQgPgQQISVAoSc2hhcmVhYmxlX3ByZXZpZXdzGAIgAygLMjMuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjIzLnNlcnZpY2VzLlNoYXJlYWJsZVByZXZpZXdC",
-            "A+BBAiJwChBTaGFyZWFibGVQcmV2aWV3ElwKFmFzc2V0X2dyb3VwX2lkZW50",
-            "aWZpZXIYASABKAsyNy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMuc2Vydmlj",
-            "ZXMuQXNzZXRHcm91cElkZW50aWZpZXJCA+BBAiIzChRBc3NldEdyb3VwSWRl",
-            "bnRpZmllchIbCg5hc3NldF9ncm91cF9pZBgBIAEoA0ID4EECInIKIUdlbmVy",
-            "YXRlU2hhcmVhYmxlUHJldmlld3NSZXNwb25zZRJNCglyZXNwb25zZXMYASAD",
-            "KAsyOi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMuc2VydmljZXMuU2hhcmVh",
-            "YmxlUHJldmlld09yRXJyb3IirQIKF1NoYXJlYWJsZVByZXZpZXdPckVycm9y",
-            "ElcKFmFzc2V0X2dyb3VwX2lkZW50aWZpZXIYAyABKAsyNy5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MjMuc2VydmljZXMuQXNzZXRHcm91cElkZW50aWZpZXIS",
-            "XQoYc2hhcmVhYmxlX3ByZXZpZXdfcmVzdWx0GAEgASgLMjkuZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjIzLnNlcnZpY2VzLlNoYXJlYWJsZVByZXZpZXdSZXN1",
-            "bHRIABIzChVwYXJ0aWFsX2ZhaWx1cmVfZXJyb3IYAiABKAsyEi5nb29nbGUu",
-            "cnBjLlN0YXR1c0gAQiUKI2dlbmVyYXRlX3NoYXJlYWJsZV9wcmV2aWV3X3Jl",
-            "c3BvbnNlIlUKFlNoYXJlYWJsZVByZXZpZXdSZXN1bHQSHQoVc2hhcmVhYmxl",
-            "X3ByZXZpZXdfdXJsGAEgASgJEhwKFGV4cGlyYXRpb25fZGF0ZV90aW1lGAIg",
-            "ASgJMu8CChdTaGFyZWFibGVQcmV2aWV3U2VydmljZRKMAgoZR2VuZXJhdGVT",
-            "aGFyZWFibGVQcmV2aWV3cxJDLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5z",
-            "ZXJ2aWNlcy5HZW5lcmF0ZVNoYXJlYWJsZVByZXZpZXdzUmVxdWVzdBpELmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5zZXJ2aWNlcy5HZW5lcmF0ZVNoYXJl",
-            "YWJsZVByZXZpZXdzUmVzcG9uc2UiZNpBHmN1c3RvbWVyX2lkLHNoYXJlYWJs",
-            "ZV9wcmV2aWV3c4LT5JMCPSI4L3YyMy9jdXN0b21lcnMve2N1c3RvbWVyX2lk",
-            "PSp9OmdlbmVyYXRlU2hhcmVhYmxlUHJldmlld3M6ASoaRcpBGGdvb2dsZWFk",
-            "cy5nb29nbGVhcGlzLmNvbdJBJ2h0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29t",
-            "L2F1dGgvYWR3b3Jkc0KIAgolY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
-            "My5zZXJ2aWNlc0IcU2hhcmVhYmxlUHJldmlld1NlcnZpY2VQcm90b1ABWkln",
-            "b29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29n",
-            "bGVhZHMvdjIzL3NlcnZpY2VzO3NlcnZpY2VzogIDR0FBqgIhR29vZ2xlLkFk",
-            "cy5Hb29nbGVBZHMuVjIzLlNlcnZpY2VzygIhR29vZ2xlXEFkc1xHb29nbGVB",
-            "ZHNcVjIzXFNlcnZpY2Vz6gIlR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjIz",
-            "OjpTZXJ2aWNlc2IGcHJvdG8z"));
+            "djIzLnNlcnZpY2VzGjFnb29nbGUvYWRzL2dvb2dsZWFkcy92MjMvZW51bXMv",
+            "cHJldmlld190eXBlLnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnBy",
+            "b3RvGhdnb29nbGUvYXBpL2NsaWVudC5wcm90bxofZ29vZ2xlL2FwaS9maWVs",
+            "ZF9iZWhhdmlvci5wcm90bxoXZ29vZ2xlL3JwYy9zdGF0dXMucHJvdG8ikgEK",
+            "IEdlbmVyYXRlU2hhcmVhYmxlUHJldmlld3NSZXF1ZXN0EhgKC2N1c3RvbWVy",
+            "X2lkGAEgASgJQgPgQQISVAoSc2hhcmVhYmxlX3ByZXZpZXdzGAIgAygLMjMu",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLnNlcnZpY2VzLlNoYXJlYWJsZVBy",
+            "ZXZpZXdCA+BBAiLtAQoQU2hhcmVhYmxlUHJldmlldxJcChZhc3NldF9ncm91",
+            "cF9pZGVudGlmaWVyGAEgASgLMjcuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIz",
+            "LnNlcnZpY2VzLkFzc2V0R3JvdXBJZGVudGlmaWVyQgPgQQESVgoMcHJldmll",
+            "d190eXBlGAMgASgOMjsuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmVudW1z",
+            "LlByZXZpZXdUeXBlRW51bS5QcmV2aWV3VHlwZUID4EEBEhUKC2FkX2dyb3Vw",
+            "X2FkGAIgASgJSABCDAoKaWRlbnRpZmllciIzChRBc3NldEdyb3VwSWRlbnRp",
+            "ZmllchIbCg5hc3NldF9ncm91cF9pZBgBIAEoA0ID4EECInIKIUdlbmVyYXRl",
+            "U2hhcmVhYmxlUHJldmlld3NSZXNwb25zZRJNCglyZXNwb25zZXMYASADKAsy",
+            "Oi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMuc2VydmljZXMuU2hhcmVhYmxl",
+            "UHJldmlld09yRXJyb3Ii0gIKF1NoYXJlYWJsZVByZXZpZXdPckVycm9yElcK",
+            "FmFzc2V0X2dyb3VwX2lkZW50aWZpZXIYAyABKAsyNy5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MjMuc2VydmljZXMuQXNzZXRHcm91cElkZW50aWZpZXISXQoY",
+            "c2hhcmVhYmxlX3ByZXZpZXdfcmVzdWx0GAEgASgLMjkuZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjIzLnNlcnZpY2VzLlNoYXJlYWJsZVByZXZpZXdSZXN1bHRI",
+            "ABIzChVwYXJ0aWFsX2ZhaWx1cmVfZXJyb3IYAiABKAsyEi5nb29nbGUucnBj",
+            "LlN0YXR1c0gAEhUKC2FkX2dyb3VwX2FkGAQgASgJSAFCJQojZ2VuZXJhdGVf",
+            "c2hhcmVhYmxlX3ByZXZpZXdfcmVzcG9uc2VCDAoKaWRlbnRpZmllciLDAQoW",
+            "U2hhcmVhYmxlUHJldmlld1Jlc3VsdBIdChVzaGFyZWFibGVfcHJldmlld191",
+            "cmwYASABKAkSHAoUZXhwaXJhdGlvbl9kYXRlX3RpbWUYAiABKAkSYgobeW91",
+            "dHViZV9saXZlX3ByZXZpZXdfcmVzdWx0GAMgASgLMjsuZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjIzLnNlcnZpY2VzLllvdVR1YmVMaXZlUHJldmlld1Jlc3Vs",
+            "dEgAQggKBnJlc3VsdCJXChhZb3VUdWJlTGl2ZVByZXZpZXdSZXN1bHQSGwoT",
+            "eW91dHViZV9wcmV2aWV3X3VybBgBIAEoCRIeChZ5b3V0dWJlX3R2X3ByZXZp",
+            "ZXdfdXJsGAIgASgJMu8CChdTaGFyZWFibGVQcmV2aWV3U2VydmljZRKMAgoZ",
+            "R2VuZXJhdGVTaGFyZWFibGVQcmV2aWV3cxJDLmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYyMy5zZXJ2aWNlcy5HZW5lcmF0ZVNoYXJlYWJsZVByZXZpZXdzUmVx",
+            "dWVzdBpELmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5zZXJ2aWNlcy5HZW5l",
+            "cmF0ZVNoYXJlYWJsZVByZXZpZXdzUmVzcG9uc2UiZNpBHmN1c3RvbWVyX2lk",
+            "LHNoYXJlYWJsZV9wcmV2aWV3c4LT5JMCPSI4L3YyMy9jdXN0b21lcnMve2N1",
+            "c3RvbWVyX2lkPSp9OmdlbmVyYXRlU2hhcmVhYmxlUHJldmlld3M6ASoaRcpB",
+            "GGdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbdJBJ2h0dHBzOi8vd3d3Lmdvb2ds",
+            "ZWFwaXMuY29tL2F1dGgvYWR3b3Jkc0KIAgolY29tLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYyMy5zZXJ2aWNlc0IcU2hhcmVhYmxlUHJldmlld1NlcnZpY2VQ",
+            "cm90b1ABWklnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlz",
+            "L2Fkcy9nb29nbGVhZHMvdjIzL3NlcnZpY2VzO3NlcnZpY2VzogIDR0FBqgIh",
+            "R29vZ2xlLkFkcy5Hb29nbGVBZHMuVjIzLlNlcnZpY2VzygIhR29vZ2xlXEFk",
+            "c1xHb29nbGVBZHNcVjIzXFNlcnZpY2Vz6gIlR29vZ2xlOjpBZHM6Okdvb2ds",
+            "ZUFkczo6VjIzOjpTZXJ2aWNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V23.Enums.PreviewTypeReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Services.GenerateShareablePreviewsRequest), global::Google.Ads.GoogleAds.V23.Services.GenerateShareablePreviewsRequest.Parser, new[]{ "CustomerId", "ShareablePreviews" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Services.ShareablePreview), global::Google.Ads.GoogleAds.V23.Services.ShareablePreview.Parser, new[]{ "AssetGroupIdentifier" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Services.ShareablePreview), global::Google.Ads.GoogleAds.V23.Services.ShareablePreview.Parser, new[]{ "AssetGroupIdentifier", "PreviewType", "AdGroupAd" }, new[]{ "Identifier" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Services.AssetGroupIdentifier), global::Google.Ads.GoogleAds.V23.Services.AssetGroupIdentifier.Parser, new[]{ "AssetGroupId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Services.GenerateShareablePreviewsResponse), global::Google.Ads.GoogleAds.V23.Services.GenerateShareablePreviewsResponse.Parser, new[]{ "Responses" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Services.ShareablePreviewOrError), global::Google.Ads.GoogleAds.V23.Services.ShareablePreviewOrError.Parser, new[]{ "AssetGroupIdentifier", "ShareablePreviewResult", "PartialFailureError" }, new[]{ "GenerateShareablePreviewResponse" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Services.ShareablePreviewResult), global::Google.Ads.GoogleAds.V23.Services.ShareablePreviewResult.Parser, new[]{ "ShareablePreviewUrl", "ExpirationDateTime" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Services.ShareablePreviewOrError), global::Google.Ads.GoogleAds.V23.Services.ShareablePreviewOrError.Parser, new[]{ "AssetGroupIdentifier", "ShareablePreviewResult", "PartialFailureError", "AdGroupAd" }, new[]{ "GenerateShareablePreviewResponse", "Identifier" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Services.ShareablePreviewResult), global::Google.Ads.GoogleAds.V23.Services.ShareablePreviewResult.Parser, new[]{ "ShareablePreviewUrl", "ExpirationDateTime", "YoutubeLivePreviewResult" }, new[]{ "Result" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Services.YouTubeLivePreviewResult), global::Google.Ads.GoogleAds.V23.Services.YouTubeLivePreviewResult.Parser, new[]{ "YoutubePreviewUrl", "YoutubeTvPreviewUrl" }, null, null, null, null)
           }));
     }
     #endregion
@@ -261,7 +271,11 @@ namespace Google.Ads.GoogleAds.V23.Services {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -284,7 +298,11 @@ namespace Google.Ads.GoogleAds.V23.Services {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -342,6 +360,13 @@ namespace Google.Ads.GoogleAds.V23.Services {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ShareablePreview(ShareablePreview other) : this() {
       assetGroupIdentifier_ = other.assetGroupIdentifier_ != null ? other.assetGroupIdentifier_.Clone() : null;
+      previewType_ = other.previewType_;
+      switch (other.IdentifierCase) {
+        case IdentifierOneofCase.AdGroupAd:
+          AdGroupAd = other.AdGroupAd;
+          break;
+      }
+
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -355,7 +380,8 @@ namespace Google.Ads.GoogleAds.V23.Services {
     public const int AssetGroupIdentifierFieldNumber = 1;
     private global::Google.Ads.GoogleAds.V23.Services.AssetGroupIdentifier assetGroupIdentifier_;
     /// <summary>
-    /// Required. Asset group of the shareable preview.
+    /// Optional. Asset group of the shareable preview. Only supported for preview
+    /// type UI_PREVIEW or unset.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -364,6 +390,72 @@ namespace Google.Ads.GoogleAds.V23.Services {
       set {
         assetGroupIdentifier_ = value;
       }
+    }
+
+    /// <summary>Field number for the "preview_type" field.</summary>
+    public const int PreviewTypeFieldNumber = 3;
+    private global::Google.Ads.GoogleAds.V23.Enums.PreviewTypeEnum.Types.PreviewType previewType_ = global::Google.Ads.GoogleAds.V23.Enums.PreviewTypeEnum.Types.PreviewType.Unspecified;
+    /// <summary>
+    /// Optional. The type of preview to generate.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V23.Enums.PreviewTypeEnum.Types.PreviewType PreviewType {
+      get { return previewType_; }
+      set {
+        previewType_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ad_group_ad" field.</summary>
+    public const int AdGroupAdFieldNumber = 2;
+    /// <summary>
+    /// Ad group ad of the shareable preview. Only supported for preview type
+    /// YOUTUBE_LIVE_PREVIEW.
+    /// Format: customers/{customer_id}/adGroupAds/{ad_group_id}~{ad_id}
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string AdGroupAd {
+      get { return HasAdGroupAd ? (string) identifier_ : ""; }
+      set {
+        identifier_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        identifierCase_ = IdentifierOneofCase.AdGroupAd;
+      }
+    }
+    /// <summary>Gets whether the "ad_group_ad" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAdGroupAd {
+      get { return identifierCase_ == IdentifierOneofCase.AdGroupAd; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "ad_group_ad" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAdGroupAd() {
+      if (HasAdGroupAd) {
+        ClearIdentifier();
+      }
+    }
+
+    private object identifier_;
+    /// <summary>Enum of possible cases for the "identifier" oneof.</summary>
+    public enum IdentifierOneofCase {
+      None = 0,
+      AdGroupAd = 2,
+    }
+    private IdentifierOneofCase identifierCase_ = IdentifierOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public IdentifierOneofCase IdentifierCase {
+      get { return identifierCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearIdentifier() {
+      identifierCase_ = IdentifierOneofCase.None;
+      identifier_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -382,6 +474,9 @@ namespace Google.Ads.GoogleAds.V23.Services {
         return true;
       }
       if (!object.Equals(AssetGroupIdentifier, other.AssetGroupIdentifier)) return false;
+      if (PreviewType != other.PreviewType) return false;
+      if (AdGroupAd != other.AdGroupAd) return false;
+      if (IdentifierCase != other.IdentifierCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -390,6 +485,9 @@ namespace Google.Ads.GoogleAds.V23.Services {
     public override int GetHashCode() {
       int hash = 1;
       if (assetGroupIdentifier_ != null) hash ^= AssetGroupIdentifier.GetHashCode();
+      if (PreviewType != global::Google.Ads.GoogleAds.V23.Enums.PreviewTypeEnum.Types.PreviewType.Unspecified) hash ^= PreviewType.GetHashCode();
+      if (HasAdGroupAd) hash ^= AdGroupAd.GetHashCode();
+      hash ^= (int) identifierCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -412,6 +510,14 @@ namespace Google.Ads.GoogleAds.V23.Services {
         output.WriteRawTag(10);
         output.WriteMessage(AssetGroupIdentifier);
       }
+      if (HasAdGroupAd) {
+        output.WriteRawTag(18);
+        output.WriteString(AdGroupAd);
+      }
+      if (PreviewType != global::Google.Ads.GoogleAds.V23.Enums.PreviewTypeEnum.Types.PreviewType.Unspecified) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) PreviewType);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -426,6 +532,14 @@ namespace Google.Ads.GoogleAds.V23.Services {
         output.WriteRawTag(10);
         output.WriteMessage(AssetGroupIdentifier);
       }
+      if (HasAdGroupAd) {
+        output.WriteRawTag(18);
+        output.WriteString(AdGroupAd);
+      }
+      if (PreviewType != global::Google.Ads.GoogleAds.V23.Enums.PreviewTypeEnum.Types.PreviewType.Unspecified) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) PreviewType);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -438,6 +552,12 @@ namespace Google.Ads.GoogleAds.V23.Services {
       int size = 0;
       if (assetGroupIdentifier_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(AssetGroupIdentifier);
+      }
+      if (PreviewType != global::Google.Ads.GoogleAds.V23.Enums.PreviewTypeEnum.Types.PreviewType.Unspecified) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PreviewType);
+      }
+      if (HasAdGroupAd) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AdGroupAd);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -457,6 +577,15 @@ namespace Google.Ads.GoogleAds.V23.Services {
         }
         AssetGroupIdentifier.MergeFrom(other.AssetGroupIdentifier);
       }
+      if (other.PreviewType != global::Google.Ads.GoogleAds.V23.Enums.PreviewTypeEnum.Types.PreviewType.Unspecified) {
+        PreviewType = other.PreviewType;
+      }
+      switch (other.IdentifierCase) {
+        case IdentifierOneofCase.AdGroupAd:
+          AdGroupAd = other.AdGroupAd;
+          break;
+      }
+
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -468,7 +597,11 @@ namespace Google.Ads.GoogleAds.V23.Services {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -477,6 +610,14 @@ namespace Google.Ads.GoogleAds.V23.Services {
               AssetGroupIdentifier = new global::Google.Ads.GoogleAds.V23.Services.AssetGroupIdentifier();
             }
             input.ReadMessage(AssetGroupIdentifier);
+            break;
+          }
+          case 18: {
+            AdGroupAd = input.ReadString();
+            break;
+          }
+          case 24: {
+            PreviewType = (global::Google.Ads.GoogleAds.V23.Enums.PreviewTypeEnum.Types.PreviewType) input.ReadEnum();
             break;
           }
         }
@@ -490,7 +631,11 @@ namespace Google.Ads.GoogleAds.V23.Services {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -499,6 +644,14 @@ namespace Google.Ads.GoogleAds.V23.Services {
               AssetGroupIdentifier = new global::Google.Ads.GoogleAds.V23.Services.AssetGroupIdentifier();
             }
             input.ReadMessage(AssetGroupIdentifier);
+            break;
+          }
+          case 18: {
+            AdGroupAd = input.ReadString();
+            break;
+          }
+          case 24: {
+            PreviewType = (global::Google.Ads.GoogleAds.V23.Enums.PreviewTypeEnum.Types.PreviewType) input.ReadEnum();
             break;
           }
         }
@@ -670,7 +823,11 @@ namespace Google.Ads.GoogleAds.V23.Services {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -689,7 +846,11 @@ namespace Google.Ads.GoogleAds.V23.Services {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -856,7 +1017,11 @@ namespace Google.Ads.GoogleAds.V23.Services {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -875,7 +1040,11 @@ namespace Google.Ads.GoogleAds.V23.Services {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -938,6 +1107,12 @@ namespace Google.Ads.GoogleAds.V23.Services {
           break;
       }
 
+      switch (other.IdentifierCase) {
+        case IdentifierOneofCase.AdGroupAd:
+          AdGroupAd = other.AdGroupAd;
+          break;
+      }
+
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -992,6 +1167,36 @@ namespace Google.Ads.GoogleAds.V23.Services {
       }
     }
 
+    /// <summary>Field number for the "ad_group_ad" field.</summary>
+    public const int AdGroupAdFieldNumber = 4;
+    /// <summary>
+    /// The ad group ad of the shareable preview.
+    /// Format: customers/{customer_id}/adGroupAds/{ad_group_id}~{ad_id}
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string AdGroupAd {
+      get { return HasAdGroupAd ? (string) identifier_ : ""; }
+      set {
+        identifier_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        identifierCase_ = IdentifierOneofCase.AdGroupAd;
+      }
+    }
+    /// <summary>Gets whether the "ad_group_ad" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAdGroupAd {
+      get { return identifierCase_ == IdentifierOneofCase.AdGroupAd; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "ad_group_ad" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAdGroupAd() {
+      if (HasAdGroupAd) {
+        ClearIdentifier();
+      }
+    }
+
     private object generateShareablePreviewResponse_;
     /// <summary>Enum of possible cases for the "generate_shareable_preview_response" oneof.</summary>
     public enum GenerateShareablePreviewResponseOneofCase {
@@ -1013,6 +1218,26 @@ namespace Google.Ads.GoogleAds.V23.Services {
       generateShareablePreviewResponse_ = null;
     }
 
+    private object identifier_;
+    /// <summary>Enum of possible cases for the "identifier" oneof.</summary>
+    public enum IdentifierOneofCase {
+      None = 0,
+      AdGroupAd = 4,
+    }
+    private IdentifierOneofCase identifierCase_ = IdentifierOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public IdentifierOneofCase IdentifierCase {
+      get { return identifierCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearIdentifier() {
+      identifierCase_ = IdentifierOneofCase.None;
+      identifier_ = null;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1031,7 +1256,9 @@ namespace Google.Ads.GoogleAds.V23.Services {
       if (!object.Equals(AssetGroupIdentifier, other.AssetGroupIdentifier)) return false;
       if (!object.Equals(ShareablePreviewResult, other.ShareablePreviewResult)) return false;
       if (!object.Equals(PartialFailureError, other.PartialFailureError)) return false;
+      if (AdGroupAd != other.AdGroupAd) return false;
       if (GenerateShareablePreviewResponseCase != other.GenerateShareablePreviewResponseCase) return false;
+      if (IdentifierCase != other.IdentifierCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1042,7 +1269,9 @@ namespace Google.Ads.GoogleAds.V23.Services {
       if (assetGroupIdentifier_ != null) hash ^= AssetGroupIdentifier.GetHashCode();
       if (generateShareablePreviewResponseCase_ == GenerateShareablePreviewResponseOneofCase.ShareablePreviewResult) hash ^= ShareablePreviewResult.GetHashCode();
       if (generateShareablePreviewResponseCase_ == GenerateShareablePreviewResponseOneofCase.PartialFailureError) hash ^= PartialFailureError.GetHashCode();
+      if (HasAdGroupAd) hash ^= AdGroupAd.GetHashCode();
       hash ^= (int) generateShareablePreviewResponseCase_;
+      hash ^= (int) identifierCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1073,6 +1302,10 @@ namespace Google.Ads.GoogleAds.V23.Services {
         output.WriteRawTag(26);
         output.WriteMessage(AssetGroupIdentifier);
       }
+      if (HasAdGroupAd) {
+        output.WriteRawTag(34);
+        output.WriteString(AdGroupAd);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1095,6 +1328,10 @@ namespace Google.Ads.GoogleAds.V23.Services {
         output.WriteRawTag(26);
         output.WriteMessage(AssetGroupIdentifier);
       }
+      if (HasAdGroupAd) {
+        output.WriteRawTag(34);
+        output.WriteString(AdGroupAd);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1113,6 +1350,9 @@ namespace Google.Ads.GoogleAds.V23.Services {
       }
       if (generateShareablePreviewResponseCase_ == GenerateShareablePreviewResponseOneofCase.PartialFailureError) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PartialFailureError);
+      }
+      if (HasAdGroupAd) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AdGroupAd);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1147,6 +1387,12 @@ namespace Google.Ads.GoogleAds.V23.Services {
           break;
       }
 
+      switch (other.IdentifierCase) {
+        case IdentifierOneofCase.AdGroupAd:
+          AdGroupAd = other.AdGroupAd;
+          break;
+      }
+
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1158,7 +1404,11 @@ namespace Google.Ads.GoogleAds.V23.Services {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1187,6 +1437,10 @@ namespace Google.Ads.GoogleAds.V23.Services {
             input.ReadMessage(AssetGroupIdentifier);
             break;
           }
+          case 34: {
+            AdGroupAd = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -1198,7 +1452,11 @@ namespace Google.Ads.GoogleAds.V23.Services {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1225,6 +1483,10 @@ namespace Google.Ads.GoogleAds.V23.Services {
               AssetGroupIdentifier = new global::Google.Ads.GoogleAds.V23.Services.AssetGroupIdentifier();
             }
             input.ReadMessage(AssetGroupIdentifier);
+            break;
+          }
+          case 34: {
+            AdGroupAd = input.ReadString();
             break;
           }
         }
@@ -1274,6 +1536,12 @@ namespace Google.Ads.GoogleAds.V23.Services {
     public ShareablePreviewResult(ShareablePreviewResult other) : this() {
       shareablePreviewUrl_ = other.shareablePreviewUrl_;
       expirationDateTime_ = other.expirationDateTime_;
+      switch (other.ResultCase) {
+        case ResultOneofCase.YoutubeLivePreviewResult:
+          YoutubeLivePreviewResult = other.YoutubeLivePreviewResult.Clone();
+          break;
+      }
+
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1287,7 +1555,8 @@ namespace Google.Ads.GoogleAds.V23.Services {
     public const int ShareablePreviewUrlFieldNumber = 1;
     private string shareablePreviewUrl_ = "";
     /// <summary>
-    /// The shareable preview URL.
+    /// The shareable preview URL. Only populated if preview type is UI_PREVIEW
+    /// or unset.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1313,6 +1582,42 @@ namespace Google.Ads.GoogleAds.V23.Services {
       }
     }
 
+    /// <summary>Field number for the "youtube_live_preview_result" field.</summary>
+    public const int YoutubeLivePreviewResultFieldNumber = 3;
+    /// <summary>
+    /// The result of a YouTube live preview. Only populated for preview type
+    /// YOUTUBE_LIVE_PREVIEW.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V23.Services.YouTubeLivePreviewResult YoutubeLivePreviewResult {
+      get { return resultCase_ == ResultOneofCase.YoutubeLivePreviewResult ? (global::Google.Ads.GoogleAds.V23.Services.YouTubeLivePreviewResult) result_ : null; }
+      set {
+        result_ = value;
+        resultCase_ = value == null ? ResultOneofCase.None : ResultOneofCase.YoutubeLivePreviewResult;
+      }
+    }
+
+    private object result_;
+    /// <summary>Enum of possible cases for the "result" oneof.</summary>
+    public enum ResultOneofCase {
+      None = 0,
+      YoutubeLivePreviewResult = 3,
+    }
+    private ResultOneofCase resultCase_ = ResultOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ResultOneofCase ResultCase {
+      get { return resultCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearResult() {
+      resultCase_ = ResultOneofCase.None;
+      result_ = null;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1330,6 +1635,8 @@ namespace Google.Ads.GoogleAds.V23.Services {
       }
       if (ShareablePreviewUrl != other.ShareablePreviewUrl) return false;
       if (ExpirationDateTime != other.ExpirationDateTime) return false;
+      if (!object.Equals(YoutubeLivePreviewResult, other.YoutubeLivePreviewResult)) return false;
+      if (ResultCase != other.ResultCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1339,6 +1646,8 @@ namespace Google.Ads.GoogleAds.V23.Services {
       int hash = 1;
       if (ShareablePreviewUrl.Length != 0) hash ^= ShareablePreviewUrl.GetHashCode();
       if (ExpirationDateTime.Length != 0) hash ^= ExpirationDateTime.GetHashCode();
+      if (resultCase_ == ResultOneofCase.YoutubeLivePreviewResult) hash ^= YoutubeLivePreviewResult.GetHashCode();
+      hash ^= (int) resultCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1365,6 +1674,10 @@ namespace Google.Ads.GoogleAds.V23.Services {
         output.WriteRawTag(18);
         output.WriteString(ExpirationDateTime);
       }
+      if (resultCase_ == ResultOneofCase.YoutubeLivePreviewResult) {
+        output.WriteRawTag(26);
+        output.WriteMessage(YoutubeLivePreviewResult);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1383,6 +1696,10 @@ namespace Google.Ads.GoogleAds.V23.Services {
         output.WriteRawTag(18);
         output.WriteString(ExpirationDateTime);
       }
+      if (resultCase_ == ResultOneofCase.YoutubeLivePreviewResult) {
+        output.WriteRawTag(26);
+        output.WriteMessage(YoutubeLivePreviewResult);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1398,6 +1715,9 @@ namespace Google.Ads.GoogleAds.V23.Services {
       }
       if (ExpirationDateTime.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ExpirationDateTime);
+      }
+      if (resultCase_ == ResultOneofCase.YoutubeLivePreviewResult) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(YoutubeLivePreviewResult);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1417,6 +1737,15 @@ namespace Google.Ads.GoogleAds.V23.Services {
       if (other.ExpirationDateTime.Length != 0) {
         ExpirationDateTime = other.ExpirationDateTime;
       }
+      switch (other.ResultCase) {
+        case ResultOneofCase.YoutubeLivePreviewResult:
+          if (YoutubeLivePreviewResult == null) {
+            YoutubeLivePreviewResult = new global::Google.Ads.GoogleAds.V23.Services.YouTubeLivePreviewResult();
+          }
+          YoutubeLivePreviewResult.MergeFrom(other.YoutubeLivePreviewResult);
+          break;
+      }
+
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1428,7 +1757,11 @@ namespace Google.Ads.GoogleAds.V23.Services {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1438,6 +1771,15 @@ namespace Google.Ads.GoogleAds.V23.Services {
           }
           case 18: {
             ExpirationDateTime = input.ReadString();
+            break;
+          }
+          case 26: {
+            global::Google.Ads.GoogleAds.V23.Services.YouTubeLivePreviewResult subBuilder = new global::Google.Ads.GoogleAds.V23.Services.YouTubeLivePreviewResult();
+            if (resultCase_ == ResultOneofCase.YoutubeLivePreviewResult) {
+              subBuilder.MergeFrom(YoutubeLivePreviewResult);
+            }
+            input.ReadMessage(subBuilder);
+            YoutubeLivePreviewResult = subBuilder;
             break;
           }
         }
@@ -1451,7 +1793,11 @@ namespace Google.Ads.GoogleAds.V23.Services {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1461,6 +1807,259 @@ namespace Google.Ads.GoogleAds.V23.Services {
           }
           case 18: {
             ExpirationDateTime = input.ReadString();
+            break;
+          }
+          case 26: {
+            global::Google.Ads.GoogleAds.V23.Services.YouTubeLivePreviewResult subBuilder = new global::Google.Ads.GoogleAds.V23.Services.YouTubeLivePreviewResult();
+            if (resultCase_ == ResultOneofCase.YoutubeLivePreviewResult) {
+              subBuilder.MergeFrom(YoutubeLivePreviewResult);
+            }
+            input.ReadMessage(subBuilder);
+            YoutubeLivePreviewResult = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Message to hold a YouTube live preview result.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class YouTubeLivePreviewResult : pb::IMessage<YouTubeLivePreviewResult>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<YouTubeLivePreviewResult> _parser = new pb::MessageParser<YouTubeLivePreviewResult>(() => new YouTubeLivePreviewResult());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<YouTubeLivePreviewResult> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V23.Services.ShareablePreviewServiceReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public YouTubeLivePreviewResult() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public YouTubeLivePreviewResult(YouTubeLivePreviewResult other) : this() {
+      youtubePreviewUrl_ = other.youtubePreviewUrl_;
+      youtubeTvPreviewUrl_ = other.youtubeTvPreviewUrl_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public YouTubeLivePreviewResult Clone() {
+      return new YouTubeLivePreviewResult(this);
+    }
+
+    /// <summary>Field number for the "youtube_preview_url" field.</summary>
+    public const int YoutubePreviewUrlFieldNumber = 1;
+    private string youtubePreviewUrl_ = "";
+    /// <summary>
+    /// The shareable preview URL for YouTube videos.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string YoutubePreviewUrl {
+      get { return youtubePreviewUrl_; }
+      set {
+        youtubePreviewUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "youtube_tv_preview_url" field.</summary>
+    public const int YoutubeTvPreviewUrlFieldNumber = 2;
+    private string youtubeTvPreviewUrl_ = "";
+    /// <summary>
+    /// The shareable preview URL for YouTube TV.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string YoutubeTvPreviewUrl {
+      get { return youtubeTvPreviewUrl_; }
+      set {
+        youtubeTvPreviewUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as YouTubeLivePreviewResult);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(YouTubeLivePreviewResult other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (YoutubePreviewUrl != other.YoutubePreviewUrl) return false;
+      if (YoutubeTvPreviewUrl != other.YoutubeTvPreviewUrl) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (YoutubePreviewUrl.Length != 0) hash ^= YoutubePreviewUrl.GetHashCode();
+      if (YoutubeTvPreviewUrl.Length != 0) hash ^= YoutubeTvPreviewUrl.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (YoutubePreviewUrl.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(YoutubePreviewUrl);
+      }
+      if (YoutubeTvPreviewUrl.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(YoutubeTvPreviewUrl);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (YoutubePreviewUrl.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(YoutubePreviewUrl);
+      }
+      if (YoutubeTvPreviewUrl.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(YoutubeTvPreviewUrl);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (YoutubePreviewUrl.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(YoutubePreviewUrl);
+      }
+      if (YoutubeTvPreviewUrl.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(YoutubeTvPreviewUrl);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(YouTubeLivePreviewResult other) {
+      if (other == null) {
+        return;
+      }
+      if (other.YoutubePreviewUrl.Length != 0) {
+        YoutubePreviewUrl = other.YoutubePreviewUrl;
+      }
+      if (other.YoutubeTvPreviewUrl.Length != 0) {
+        YoutubeTvPreviewUrl = other.YoutubeTvPreviewUrl;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            YoutubePreviewUrl = input.ReadString();
+            break;
+          }
+          case 18: {
+            YoutubeTvPreviewUrl = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            YoutubePreviewUrl = input.ReadString();
+            break;
+          }
+          case 18: {
+            YoutubeTvPreviewUrl = input.ReadString();
             break;
           }
         }

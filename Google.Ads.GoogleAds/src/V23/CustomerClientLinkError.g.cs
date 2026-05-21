@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V23.Errors {
           string.Concat(
             "CkBnb29nbGUvYWRzL2dvb2dsZWFkcy92MjMvZXJyb3JzL2N1c3RvbWVyX2Ns",
             "aWVudF9saW5rX2Vycm9yLnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MjMuZXJyb3JzIo8DChtDdXN0b21lckNsaWVudExpbmtFcnJvckVudW0i7wIK",
+            "MjMuZXJyb3JzItYDChtDdXN0b21lckNsaWVudExpbmtFcnJvckVudW0itgMK",
             "F0N1c3RvbWVyQ2xpZW50TGlua0Vycm9yEg8KC1VOU1BFQ0lGSUVEEAASCwoH",
             "VU5LTk9XThABEioKJkNMSUVOVF9BTFJFQURZX0lOVklURURfQllfVEhJU19N",
             "QU5BR0VSEAISJwojQ0xJRU5UX0FMUkVBRFlfTUFOQUdFRF9JTl9ISUVSQVJD",
@@ -35,12 +35,14 @@ namespace Google.Ads.GoogleAds.V23.Errors {
             "TllfSU5WSVRBVElPTlMQBhIqCiZDQU5OT1RfSElERV9PUl9VTkhJREVfTUFO",
             "QUdFUl9BQ0NPVU5UUxAHEi0KKUNVU1RPTUVSX0hBU19UT09fTUFOWV9BQ0NP",
             "VU5UU19BVF9NQU5BR0VSEAgSIAocQ0xJRU5UX0hBU19UT09fTUFOWV9NQU5B",
-            "R0VSUxAJQvwBCiNjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmVycm9y",
-            "c0IcQ3VzdG9tZXJDbGllbnRMaW5rRXJyb3JQcm90b1ABWkVnb29nbGUuZ29s",
-            "YW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjIz",
-            "L2Vycm9ycztlcnJvcnOiAgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5W",
-            "MjMuRXJyb3JzygIfR29vZ2xlXEFkc1xHb29nbGVBZHNcVjIzXEVycm9yc+oC",
-            "I0dvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyMzo6RXJyb3JzYgZwcm90bzM="));
+            "R0VSUxAJEh4KGk1BWF9DVVNUT01FUl9MSU1JVF9SRUFDSEVEEAoSJQohQUND",
+            "T1VOVF9DUkVBVElPTl9QT0xJQ1lfVklPTEFUSU9OEAtC/AEKI2NvbS5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MjMuZXJyb3JzQhxDdXN0b21lckNsaWVudExp",
+            "bmtFcnJvclByb3RvUAFaRWdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dv",
+            "b2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MjMvZXJyb3JzO2Vycm9yc6ICA0dB",
+            "QaoCH0dvb2dsZS5BZHMuR29vZ2xlQWRzLlYyMy5FcnJvcnPKAh9Hb29nbGVc",
+            "QWRzXEdvb2dsZUFkc1xWMjNcRXJyb3Jz6gIjR29vZ2xlOjpBZHM6Okdvb2ds",
+            "ZUFkczo6VjIzOjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -52,7 +54,7 @@ namespace Google.Ads.GoogleAds.V23.Errors {
   }
   #region Messages
   /// <summary>
-  /// Container for enum describing possible CustomeClientLink errors.
+  /// Container for enum describing possible CustomerClientLink errors.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CustomerClientLinkErrorEnum : pb::IMessage<CustomerClientLinkErrorEnum>
@@ -181,7 +183,11 @@ namespace Google.Ads.GoogleAds.V23.Errors {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -196,7 +202,11 @@ namespace Google.Ads.GoogleAds.V23.Errors {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -254,6 +264,16 @@ namespace Google.Ads.GoogleAds.V23.Errors {
         /// Client has too many managers.
         /// </summary>
         [pbr::OriginalName("CLIENT_HAS_TOO_MANY_MANAGERS")] ClientHasTooManyManagers = 9,
+        /// <summary>
+        /// You have reached the maximum limit of accounts that can be created for
+        /// this account.
+        /// </summary>
+        [pbr::OriginalName("MAX_CUSTOMER_LIMIT_REACHED")] MaxCustomerLimitReached = 10,
+        /// <summary>
+        /// This account cannot create new client accounts due to a Google Ads policy
+        /// violation.
+        /// </summary>
+        [pbr::OriginalName("ACCOUNT_CREATION_POLICY_VIOLATION")] AccountCreationPolicyViolation = 11,
       }
 
     }

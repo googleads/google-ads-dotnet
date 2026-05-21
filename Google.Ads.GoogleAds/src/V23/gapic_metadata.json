@@ -1808,6 +1808,27 @@
         }
       }
     },
+    "ReservationService": {
+      "clients": {
+        "grpc": {
+          "libraryClient": "ReservationServiceClient",
+          "rpcs": {
+            "BookCampaigns": {
+              "methods": [
+                "BookCampaigns",
+                "BookCampaignsAsync"
+              ]
+            },
+            "QuoteCampaigns": {
+              "methods": [
+                "QuoteCampaigns",
+                "QuoteCampaignsAsync"
+              ]
+            }
+          }
+        }
+      }
+    },
     "ShareablePreviewService": {
       "clients": {
         "grpc": {
@@ -1970,6 +1991,33 @@
               "methods": [
                 "MutateUserLists",
                 "MutateUserListsAsync"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "YouTubeVideoUploadService": {
+      "clients": {
+        "grpc": {
+          "libraryClient": "YouTubeVideoUploadServiceClient",
+          "rpcs": {
+            "CreateYouTubeVideoUpload": {
+              "methods": [
+                "CreateYouTubeVideoUpload",
+                "CreateYouTubeVideoUploadAsync"
+              ]
+            },
+            "RemoveYouTubeVideoUpload": {
+              "methods": [
+                "RemoveYouTubeVideoUpload",
+                "RemoveYouTubeVideoUploadAsync"
+              ]
+            },
+            "UpdateYouTubeVideoUpload": {
+              "methods": [
+                "UpdateYouTubeVideoUpload",
+                "UpdateYouTubeVideoUploadAsync"
               ]
             }
           }

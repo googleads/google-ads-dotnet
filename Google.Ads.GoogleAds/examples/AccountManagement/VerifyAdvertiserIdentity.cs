@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V23.Errors;
-using Google.Ads.GoogleAds.V23.Services;
-using static Google.Ads.GoogleAds.V23.Enums.IdentityVerificationProgramEnum.Types;
-using static Google.Ads.GoogleAds.V23.Enums.IdentityVerificationProgramStatusEnum.Types;
+using Google.Ads.GoogleAds.V24.Errors;
+using Google.Ads.GoogleAds.V24.Services;
+using static Google.Ads.GoogleAds.V24.Enums.IdentityVerificationProgramEnum.Types;
+using static Google.Ads.GoogleAds.V24.Enums.IdentityVerificationProgramStatusEnum.Types;
 using System;
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Extensions.Config;
 
-namespace Google.Ads.GoogleAds.Examples.V23
+namespace Google.Ads.GoogleAds.Examples.V24
 {
     /// <summary>
     /// This code example illustrates how to retrieve the status of the advertiser identity
@@ -130,7 +130,7 @@ namespace Google.Ads.GoogleAds.Examples.V23
                 GoogleAdsClient client, long customerId)
         {
             IdentityVerificationServiceClient identityVerificationService =
-                client.GetService(Services.V23.IdentityVerificationService);
+                client.GetService(Services.V24.IdentityVerificationService);
 
             try {
                 GetIdentityVerificationResponse response =
@@ -179,7 +179,7 @@ namespace Google.Ads.GoogleAds.Examples.V23
         private static void StartIdentityVerification(GoogleAdsClient client, long customerId)
         {
             IdentityVerificationServiceClient identityVerificationService =
-                client.GetService(Services.V23.IdentityVerificationService);
+                client.GetService(Services.V24.IdentityVerificationService);
 
             StartIdentityVerificationRequest request = new StartIdentityVerificationRequest()
             {

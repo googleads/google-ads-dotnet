@@ -83,8 +83,17 @@ namespace Google.Ads.GoogleAds.V23.Resources {
   }
   #region Messages
   /// <summary>
-  /// A link between an AdGroupAd and an Asset. AdGroupAdAssetView supports AppAds,
-  /// Demand Gen campaigns, and Responsive Search Ads.
+  /// Represents a link between an AdGroupAd and an Asset.
+  /// This view provides insights into the performance of assets within specific
+  ///  ads.
+  ///
+  /// AdGroupAdAssetView supports the following ad types:
+  ///
+  /// * App Ads
+  /// * Demand Gen campaigns
+  /// * Responsive Search Ads
+  ///
+  /// It does not support Responsive Display Ads.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AdGroupAdAssetView : pb::IMessage<AdGroupAdAssetView>
@@ -559,7 +568,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -613,7 +626,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -879,7 +896,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -906,7 +927,11 @@ namespace Google.Ads.GoogleAds.V23.Resources {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

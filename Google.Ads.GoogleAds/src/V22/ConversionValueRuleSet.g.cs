@@ -72,7 +72,9 @@ namespace Google.Ads.GoogleAds.V22.Resources {
   }
   #region Messages
   /// <summary>
-  /// A conversion value rule set
+  /// A conversion value rule set is a collection of conversion value rules that
+  /// lets you adjust conversion values based on the dimensions specified in
+  /// the `dimensions` field.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ConversionValueRuleSet : pb::IMessage<ConversionValueRuleSet>

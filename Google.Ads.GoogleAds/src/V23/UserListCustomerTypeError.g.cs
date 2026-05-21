@@ -179,7 +179,11 @@ namespace Google.Ads.GoogleAds.V23.Errors {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -194,7 +198,11 @@ namespace Google.Ads.GoogleAds.V23.Errors {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -229,7 +237,10 @@ namespace Google.Ads.GoogleAds.V23.Errors {
         /// 4. Qualified Leads - Converted Leads
         /// 5. Disengaged customers - Converted Leads
         /// 6. Disengaged customers - Qualified Leads
-        /// 7. Disengaged customers- Cart Abandoners
+        /// 7. Disengaged customers - Cart Abandoners
+        /// 8. Converted Leads - Loyalty Tier X Members (X = 1..7)
+        /// 9. Qualified Leads - Loyalty Tier X Members (X = 1..7)
+        /// 10. Loyalty Tier X Members - Loyalty Tier Y Members (X != Y)
         /// </summary>
         [pbr::OriginalName("CONFLICTING_CUSTOMER_TYPES")] ConflictingCustomerTypes = 2,
         /// <summary>

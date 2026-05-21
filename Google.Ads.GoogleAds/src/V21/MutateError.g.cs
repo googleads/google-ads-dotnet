@@ -25,21 +25,22 @@ namespace Google.Ads.GoogleAds.V21.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjJnb29nbGUvYWRzL2dvb2dsZWFkcy92MjEvZXJyb3JzL211dGF0ZV9lcnJv",
-            "ci5wcm90bxIfZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIxLmVycm9ycyLjAgoP",
-            "TXV0YXRlRXJyb3JFbnVtIs8CCgtNdXRhdGVFcnJvchIPCgtVTlNQRUNJRklF",
+            "ci5wcm90bxIfZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIxLmVycm9ycyKWAwoP",
+            "TXV0YXRlRXJyb3JFbnVtIoIDCgtNdXRhdGVFcnJvchIPCgtVTlNQRUNJRklF",
             "RBAAEgsKB1VOS05PV04QARIWChJSRVNPVVJDRV9OT1RfRk9VTkQQAxIhCh1J",
             "RF9FWElTVFNfSU5fTVVMVElQTEVfTVVUQVRFUxAHEh0KGUlOQ09OU0lTVEVO",
             "VF9GSUVMRF9WQUxVRVMQCBIWChJNVVRBVEVfTk9UX0FMTE9XRUQQCRIeChpS",
             "RVNPVVJDRV9OT1RfSU5fR09PR0xFX0FEUxAKEhsKF1JFU09VUkNFX0FMUkVB",
             "RFlfRVhJU1RTEAsSKwonUkVTT1VSQ0VfRE9FU19OT1RfU1VQUE9SVF9WQUxJ",
             "REFURV9PTkxZEAwSLgoqT1BFUkFUSU9OX0RPRVNfTk9UX1NVUFBPUlRfUEFS",
-            "VElBTF9GQUlMVVJFEBASFgoSUkVTT1VSQ0VfUkVBRF9PTkxZEA1C8AEKI2Nv",
-            "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjEuZXJyb3JzQhBNdXRhdGVFcnJv",
-            "clByb3RvUAFaRWdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
-            "aXMvYWRzL2dvb2dsZWFkcy92MjEvZXJyb3JzO2Vycm9yc6ICA0dBQaoCH0dv",
-            "b2dsZS5BZHMuR29vZ2xlQWRzLlYyMS5FcnJvcnPKAh9Hb29nbGVcQWRzXEdv",
-            "b2dsZUFkc1xWMjFcRXJyb3Jz6gIjR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6",
-            "VjIxOjpFcnJvcnNiBnByb3RvMw=="));
+            "VElBTF9GQUlMVVJFEBASFgoSUkVTT1VSQ0VfUkVBRF9PTkxZEA0SMQotRVVf",
+            "UE9MSVRJQ0FMX0FEVkVSVElTSU5HX0RFQ0xBUkFUSU9OX1JFUVVJUkVEEBFC",
+            "8AEKI2NvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjEuZXJyb3JzQhBNdXRh",
+            "dGVFcnJvclByb3RvUAFaRWdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dv",
+            "b2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MjEvZXJyb3JzO2Vycm9yc6ICA0dB",
+            "QaoCH0dvb2dsZS5BZHMuR29vZ2xlQWRzLlYyMS5FcnJvcnPKAh9Hb29nbGVc",
+            "QWRzXEdvb2dsZUFkc1xWMjFcRXJyb3Jz6gIjR29vZ2xlOjpBZHM6Okdvb2ds",
+            "ZUFkczo6VjIxOjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -258,6 +259,11 @@ namespace Google.Ads.GoogleAds.V21.Errors {
         /// Attempt to write to read-only fields.
         /// </summary>
         [pbr::OriginalName("RESOURCE_READ_ONLY")] ResourceReadOnly = 13,
+        /// <summary>
+        /// Mutates are generally not allowed if the customer contains non-exempt
+        /// campaigns without the EU political advertising declaration.
+        /// </summary>
+        [pbr::OriginalName("EU_POLITICAL_ADVERTISING_DECLARATION_REQUIRED")] EuPoliticalAdvertisingDeclarationRequired = 17,
       }
 
     }

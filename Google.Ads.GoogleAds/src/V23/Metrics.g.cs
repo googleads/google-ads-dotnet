@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.V23.Common {
             "dG8SH2dvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5jb21tb24aO2dvb2dsZS9h",
             "ZHMvZ29vZ2xlYWRzL3YyMy9lbnVtcy9pbnRlcmFjdGlvbl9ldmVudF90eXBl",
             "LnByb3RvGjlnb29nbGUvYWRzL2dvb2dsZWFkcy92MjMvZW51bXMvcXVhbGl0",
-            "eV9zY29yZV9idWNrZXQucHJvdG8i+JMBCgdNZXRyaWNzEjAKImFic29sdXRl",
+            "eV9zY29yZV9idWNrZXQucHJvdG8ixpcBCgdNZXRyaWNzEjAKImFic29sdXRl",
             "X3RvcF9pbXByZXNzaW9uX3BlcmNlbnRhZ2UYtwEgASgBSACIAQESHQoPYWN0",
             "aXZlX3ZpZXdfY3BtGLgBIAEoAUgBiAEBEh0KD2FjdGl2ZV92aWV3X2N0chi5",
             "ASABKAFIAogBARIlChdhY3RpdmVfdmlld19pbXByZXNzaW9ucxi6ASABKANI",
@@ -248,219 +248,229 @@ namespace Google.Ads.GoogleAds.V23.Common {
             "ZV9wZXJfcGxhdGZvcm1fY29tcGFyYWJsZV9jb252ZXJzaW9uc19ieV9jb252",
             "ZXJzaW9uX2RhdGUYhwMgASgBSMIBiAEBEkkKOmNvc3RfY29udmVydGVkX2N1",
             "cnJlbmN5X3Blcl9wbGF0Zm9ybV9jb21wYXJhYmxlX2NvbnZlcnNpb24YiAMg",
-            "ASgBSMMBiAEBEh8KEHZhbHVlX2FkanVzdG1lbnQYjgMgASgBSMQBiAEBEiMK",
-            "FGFsbF92YWx1ZV9hZGp1c3RtZW50GI8DIAEoAUjFAYgBARIrChxjbGlja3Nf",
-            "dW5pcXVlX3F1ZXJ5X2NsdXN0ZXJzGJADIAEoA0jGAYgBARIwCiFjb252ZXJz",
-            "aW9uc191bmlxdWVfcXVlcnlfY2x1c3RlcnMYkQMgASgDSMcBiAEBEjAKIWlt",
-            "cHJlc3Npb25zX3VuaXF1ZV9xdWVyeV9jbHVzdGVycxiSAyABKANIyAGIAQES",
-            "LwogdmlkZW9fd2F0Y2hfdGltZV9kdXJhdGlvbl9taWxsaXMYkwMgASgDSMkB",
-            "iAEBEjcKKGF2ZXJhZ2VfdmlkZW9fd2F0Y2hfdGltZV9kdXJhdGlvbl9taWxs",
-            "aXMYlAMgASgDSMoBiAEBEhIKA3N2chibAyABKANIywGIAQESPAotYWN0aXZl",
-            "X3ZpZXdfYXVkaWJpbGl0eV9tZWFzdXJhYmxlX2ltcHJlc3Npb25zGJwDIAEo",
-            "A0jMAYgBARJBCjJhY3RpdmVfdmlld19hdWRpYmlsaXR5X21lYXN1cmFibGVf",
-            "aW1wcmVzc2lvbnNfcmF0ZRidAyABKAFIzQGIAQESSQo6YWN0aXZlX3ZpZXdf",
-            "YXVkaWJpbGl0eV9pbnZhbGlkX21lYXN1cmFibGVfaW1wcmVzc2lvbnNfcmF0",
-            "ZRieAyABKAFIzgGIAQESTgo/YWN0aXZlX3ZpZXdfYXVkaWJpbGl0eV9pbnZh",
-            "bGlkX2dpdnRfbWVhc3VyYWJsZV9pbXByZXNzaW9uc19yYXRlGJ8DIAEoAUjP",
-            "AYgBARIuCh9hY3RpdmVfdmlld19hdWRpYmxlX2ltcHJlc3Npb25zGKADIAEo",
-            "A0jQAYgBARIzCiRhY3RpdmVfdmlld19hdWRpYmxlX2ltcHJlc3Npb25zX3Jh",
-            "dGUYoQMgASgBSNEBiAEBEjoKK2FjdGl2ZV92aWV3X2F1ZGlibGVfdHdvX3Nl",
-            "Y29uZHNfaW1wcmVzc2lvbnMYogMgASgDSNIBiAEBEj8KMGFjdGl2ZV92aWV3",
-            "X2F1ZGlibGVfdHdvX3NlY29uZHNfaW1wcmVzc2lvbnNfcmF0ZRijAyABKAFI",
-            "0wGIAQESPQouYWN0aXZlX3ZpZXdfYXVkaWJsZV90aGlydHlfc2Vjb25kc19p",
-            "bXByZXNzaW9ucxikAyABKANI1AGIAQESQgozYWN0aXZlX3ZpZXdfYXVkaWJs",
-            "ZV90aGlydHlfc2Vjb25kc19pbXByZXNzaW9uc19yYXRlGKUDIAEoAUjVAYgB",
-            "ARI0CiVhY3RpdmVfdmlld19hdWRpYmxlX3F1YXJ0aWxlX3AyNV9yYXRlGKYD",
-            "IAEoAUjWAYgBARI0CiVhY3RpdmVfdmlld19hdWRpYmxlX3F1YXJ0aWxlX3A1",
-            "MF9yYXRlGKcDIAEoAUjXAYgBARI0CiVhY3RpdmVfdmlld19hdWRpYmxlX3F1",
-            "YXJ0aWxlX3A3NV9yYXRlGKgDIAEoAUjYAYgBARI1CiZhY3RpdmVfdmlld19h",
-            "dWRpYmxlX3F1YXJ0aWxlX3AxMDBfcmF0ZRipAyABKAFI2QGIAQFCJQojX2Fi",
-            "c29sdXRlX3RvcF9pbXByZXNzaW9uX3BlcmNlbnRhZ2VCEgoQX2FjdGl2ZV92",
-            "aWV3X2NwbUISChBfYWN0aXZlX3ZpZXdfY3RyQhoKGF9hY3RpdmVfdmlld19p",
-            "bXByZXNzaW9uc0IcChpfYWN0aXZlX3ZpZXdfbWVhc3VyYWJpbGl0eUIlCiNf",
-            "YWN0aXZlX3ZpZXdfbWVhc3VyYWJsZV9jb3N0X21pY3Jvc0IlCiNfYWN0aXZl",
-            "X3ZpZXdfbWVhc3VyYWJsZV9pbXByZXNzaW9uc0IaChhfYWN0aXZlX3ZpZXdf",
-            "dmlld2FiaWxpdHlCKQonX2FsbF9jb252ZXJzaW9uc19mcm9tX2ludGVyYWN0",
-            "aW9uc19yYXRlQhgKFl9hbGxfY29udmVyc2lvbnNfdmFsdWVCKwopX2FsbF9j",
-            "b252ZXJzaW9uc192YWx1ZV9ieV9jb252ZXJzaW9uX2RhdGVCIgogX2FsbF9u",
-            "ZXdfY3VzdG9tZXJfbGlmZXRpbWVfdmFsdWVCEgoQX2FsbF9jb252ZXJzaW9u",
-            "c0IlCiNfYWxsX2NvbnZlcnNpb25zX2J5X2NvbnZlcnNpb25fZGF0ZUIhCh9f",
-            "YWxsX2NvbnZlcnNpb25zX3ZhbHVlX3Blcl9jb3N0QiUKI19hbGxfY29udmVy",
-            "c2lvbnNfZnJvbV9jbGlja190b19jYWxsQiIKIF9hbGxfY29udmVyc2lvbnNf",
-            "ZnJvbV9kaXJlY3Rpb25zQjoKOF9hbGxfY29udmVyc2lvbnNfZnJvbV9pbnRl",
-            "cmFjdGlvbnNfdmFsdWVfcGVyX2ludGVyYWN0aW9uQhwKGl9hbGxfY29udmVy",
-            "c2lvbnNfZnJvbV9tZW51Qh0KG19hbGxfY29udmVyc2lvbnNfZnJvbV9vcmRl",
-            "ckIoCiZfYWxsX2NvbnZlcnNpb25zX2Zyb21fb3RoZXJfZW5nYWdlbWVudEIj",
-            "CiFfYWxsX2NvbnZlcnNpb25zX2Zyb21fc3RvcmVfdmlzaXRCJQojX2FsbF9j",
-            "b252ZXJzaW9uc19mcm9tX3N0b3JlX3dlYnNpdGVCPAo6X2F1Y3Rpb25faW5z",
-            "aWdodF9zZWFyY2hfYWJzb2x1dGVfdG9wX2ltcHJlc3Npb25fcGVyY2VudGFn",
-            "ZUIqCihfYXVjdGlvbl9pbnNpZ2h0X3NlYXJjaF9pbXByZXNzaW9uX3NoYXJl",
-            "QioKKF9hdWN0aW9uX2luc2lnaHRfc2VhcmNoX291dHJhbmtpbmdfc2hhcmVC",
-            "JgokX2F1Y3Rpb25faW5zaWdodF9zZWFyY2hfb3ZlcmxhcF9yYXRlQi0KK19h",
-            "dWN0aW9uX2luc2lnaHRfc2VhcmNoX3Bvc2l0aW9uX2Fib3ZlX3JhdGVCMwox",
-            "X2F1Y3Rpb25faW5zaWdodF9zZWFyY2hfdG9wX2ltcHJlc3Npb25fcGVyY2Vu",
-            "dGFnZUIPCg1fYXZlcmFnZV9jb3N0Qg4KDF9hdmVyYWdlX2NwY0IOCgxfYXZl",
-            "cmFnZV9jcGVCDgoMX2F2ZXJhZ2VfY3BtQhcKFV90cnVldmlld19hdmVyYWdl",
-            "X2NwdkIVChNfYXZlcmFnZV9wYWdlX3ZpZXdzQhcKFV9hdmVyYWdlX3RpbWVf",
-            "b25fc2l0ZUIcChpfYmVuY2htYXJrX2F2ZXJhZ2VfbWF4X2NwY0IjCiFfYmlk",
-            "ZGFibGVfYXBwX2luc3RhbGxfY29udmVyc2lvbnNCKAomX2JpZGRhYmxlX2Fw",
-            "cF9wb3N0X2luc3RhbGxfY29udmVyc2lvbnNCLwotX2JpZGRhYmxlX2NvaG9y",
-            "dF9hcHBfcG9zdF9pbnN0YWxsX2NvbnZlcnNpb25zQhAKDl9iZW5jaG1hcmtf",
-            "Y3RyQg4KDF9ib3VuY2VfcmF0ZUIJCgdfY2xpY2tzQhIKEF9jb21iaW5lZF9j",
-            "bGlja3NCHAoaX2NvbWJpbmVkX2NsaWNrc19wZXJfcXVlcnlCEwoRX2NvbWJp",
-            "bmVkX3F1ZXJpZXNCJwolX2NvbnRlbnRfYnVkZ2V0X2xvc3RfaW1wcmVzc2lv",
-            "bl9zaGFyZUIbChlfY29udGVudF9pbXByZXNzaW9uX3NoYXJlQi0KK19jb252",
-            "ZXJzaW9uX2xhc3RfcmVjZWl2ZWRfcmVxdWVzdF9kYXRlX3RpbWVCIgogX2Nv",
-            "bnZlcnNpb25fbGFzdF9jb252ZXJzaW9uX2RhdGVCJQojX2NvbnRlbnRfcmFu",
-            "a19sb3N0X2ltcHJlc3Npb25fc2hhcmVCJQojX2NvbnZlcnNpb25zX2Zyb21f",
-            "aW50ZXJhY3Rpb25zX3JhdGVCFAoSX2NvbnZlcnNpb25zX3ZhbHVlQicKJV9j",
-            "b252ZXJzaW9uc192YWx1ZV9ieV9jb252ZXJzaW9uX2RhdGVCHgocX25ld19j",
-            "dXN0b21lcl9saWZldGltZV92YWx1ZUIdChtfY29udmVyc2lvbnNfdmFsdWVf",
-            "cGVyX2Nvc3RCNgo0X2NvbnZlcnNpb25zX2Zyb21faW50ZXJhY3Rpb25zX3Zh",
-            "bHVlX3Blcl9pbnRlcmFjdGlvbkIOCgxfY29udmVyc2lvbnNCIQofX2NvbnZl",
-            "cnNpb25zX2J5X2NvbnZlcnNpb25fZGF0ZUIOCgxfY29zdF9taWNyb3NCGwoZ",
-            "X2Nvc3RfcGVyX2FsbF9jb252ZXJzaW9uc0IWChRfY29zdF9wZXJfY29udmVy",
-            "c2lvbkIvCi1fY29zdF9wZXJfY3VycmVudF9tb2RlbF9hdHRyaWJ1dGVkX2Nv",
-            "bnZlcnNpb25CGwoZX2Nyb3NzX2RldmljZV9jb252ZXJzaW9uc0IuCixfY3Jv",
-            "c3NfZGV2aWNlX2NvbnZlcnNpb25zX2J5X2NvbnZlcnNpb25fZGF0ZUIhCh9f",
-            "Y3Jvc3NfZGV2aWNlX2NvbnZlcnNpb25zX3ZhbHVlQigKJl9jcm9zc19kZXZp",
-            "Y2VfY29udmVyc2lvbnNfdmFsdWVfbWljcm9zQjQKMl9jcm9zc19kZXZpY2Vf",
-            "Y29udmVyc2lvbnNfdmFsdWVfYnlfY29udmVyc2lvbl9kYXRlQgYKBF9jdHJC",
-            "JwolX2N1cnJlbnRfbW9kZWxfYXR0cmlidXRlZF9jb252ZXJzaW9uc0I+Cjxf",
-            "Y3VycmVudF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNpb25zX2Zyb21faW50",
-            "ZXJhY3Rpb25zX3JhdGVCTwpNX2N1cnJlbnRfbW9kZWxfYXR0cmlidXRlZF9j",
-            "b252ZXJzaW9uc19mcm9tX2ludGVyYWN0aW9uc192YWx1ZV9wZXJfaW50ZXJh",
-            "Y3Rpb25CLQorX2N1cnJlbnRfbW9kZWxfYXR0cmlidXRlZF9jb252ZXJzaW9u",
-            "c192YWx1ZUI2CjRfY3VycmVudF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNp",
-            "b25zX3ZhbHVlX3Blcl9jb3N0QhIKEF9lbmdhZ2VtZW50X3JhdGVCDgoMX2Vu",
-            "Z2FnZW1lbnRzQiIKIF9ob3RlbF9hdmVyYWdlX2xlYWRfdmFsdWVfbWljcm9z",
-            "Qh8KHV9ob3RlbF9jb21taXNzaW9uX3JhdGVfbWljcm9zQiEKH19ob3RlbF9l",
-            "eHBlY3RlZF9jb21taXNzaW9uX2Nvc3RCJAoiX2hvdGVsX3ByaWNlX2RpZmZl",
-            "cmVuY2VfcGVyY2VudGFnZUIdChtfaG90ZWxfZWxpZ2libGVfaW1wcmVzc2lv",
-            "bnNCGwoZX2hpc3RvcmljYWxfcXVhbGl0eV9zY29yZUIRCg9fZ21haWxfZm9y",
-            "d2FyZHNCDgoMX2dtYWlsX3NhdmVzQhkKF19nbWFpbF9zZWNvbmRhcnlfY2xp",
-            "Y2tzQh8KHV9pbXByZXNzaW9uc19mcm9tX3N0b3JlX3JlYWNoQg4KDF9pbXBy",
-            "ZXNzaW9uc0ITChFfaW50ZXJhY3Rpb25fcmF0ZUIPCg1faW50ZXJhY3Rpb25z",
-            "QhUKE19pbnZhbGlkX2NsaWNrX3JhdGVCEQoPX2ludmFsaWRfY2xpY2tzQh0K",
-            "G19nZW5lcmFsX2ludmFsaWRfY2xpY2tfcmF0ZUIZChdfZ2VuZXJhbF9pbnZh",
-            "bGlkX2NsaWNrc0IQCg5fbWVzc2FnZV9jaGF0c0IWChRfbWVzc2FnZV9pbXBy",
-            "ZXNzaW9uc0IUChJfbWVzc2FnZV9jaGF0X3JhdGVCJAoiX21vYmlsZV9mcmll",
-            "bmRseV9jbGlja3NfcGVyY2VudGFnZUIcChpfb3B0aW1pemF0aW9uX3Njb3Jl",
-            "X3VwbGlmdEIZChdfb3B0aW1pemF0aW9uX3Njb3JlX3VybEIRCg9fb3JnYW5p",
-            "Y19jbGlja3NCGwoZX29yZ2FuaWNfY2xpY2tzX3Blcl9xdWVyeUIWChRfb3Jn",
-            "YW5pY19pbXByZXNzaW9uc0IgCh5fb3JnYW5pY19pbXByZXNzaW9uc19wZXJf",
-            "cXVlcnlCEgoQX29yZ2FuaWNfcXVlcmllc0IXChVfcGVyY2VudF9uZXdfdmlz",
-            "aXRvcnNCDgoMX3Bob25lX2NhbGxzQhQKEl9waG9uZV9pbXByZXNzaW9uc0IV",
-            "ChNfcGhvbmVfdGhyb3VnaF9yYXRlQg8KDV9yZWxhdGl2ZV9jdHJCJwolX3Nl",
-            "YXJjaF9hYnNvbHV0ZV90b3BfaW1wcmVzc2lvbl9zaGFyZUIzCjFfc2VhcmNo",
-            "X2J1ZGdldF9sb3N0X2Fic29sdXRlX3RvcF9pbXByZXNzaW9uX3NoYXJlQiYK",
-            "JF9zZWFyY2hfYnVkZ2V0X2xvc3RfaW1wcmVzc2lvbl9zaGFyZUIqCihfc2Vh",
-            "cmNoX2J1ZGdldF9sb3N0X3RvcF9pbXByZXNzaW9uX3NoYXJlQhUKE19zZWFy",
-            "Y2hfY2xpY2tfc2hhcmVCJgokX3NlYXJjaF9leGFjdF9tYXRjaF9pbXByZXNz",
-            "aW9uX3NoYXJlQhoKGF9zZWFyY2hfaW1wcmVzc2lvbl9zaGFyZUIxCi9fc2Vh",
-            "cmNoX3JhbmtfbG9zdF9hYnNvbHV0ZV90b3BfaW1wcmVzc2lvbl9zaGFyZUIk",
-            "CiJfc2VhcmNoX3JhbmtfbG9zdF9pbXByZXNzaW9uX3NoYXJlQigKJl9zZWFy",
-            "Y2hfcmFua19sb3N0X3RvcF9pbXByZXNzaW9uX3NoYXJlQh4KHF9zZWFyY2hf",
-            "dG9wX2ltcHJlc3Npb25fc2hhcmVCEAoOX3NlYXJjaF92b2x1bWVCDgoMX3Nw",
-            "ZWVkX3Njb3JlQhwKGl9hdmVyYWdlX3RhcmdldF9jcGFfbWljcm9zQhYKFF9h",
-            "dmVyYWdlX3RhcmdldF9yb2FzQhwKGl90b3BfaW1wcmVzc2lvbl9wZXJjZW50",
-            "YWdlQjMKMV92YWxpZF9hY2NlbGVyYXRlZF9tb2JpbGVfcGFnZXNfY2xpY2tz",
-            "X3BlcmNlbnRhZ2VCHAoaX3ZhbHVlX3Blcl9hbGxfY29udmVyc2lvbnNCLwot",
-            "X3ZhbHVlX3Blcl9hbGxfY29udmVyc2lvbnNfYnlfY29udmVyc2lvbl9kYXRl",
-            "QhcKFV92YWx1ZV9wZXJfY29udmVyc2lvbkIrCilfdmFsdWVfcGVyX2NvbnZl",
-            "cnNpb25zX2J5X2NvbnZlcnNpb25fZGF0ZUIwCi5fdmFsdWVfcGVyX2N1cnJl",
-            "bnRfbW9kZWxfYXR0cmlidXRlZF9jb252ZXJzaW9uQhsKGV92aWRlb19xdWFy",
-            "dGlsZV9wMTAwX3JhdGVCGgoYX3ZpZGVvX3F1YXJ0aWxlX3AyNV9yYXRlQhoK",
-            "GF92aWRlb19xdWFydGlsZV9wNTBfcmF0ZUIaChhfdmlkZW9fcXVhcnRpbGVf",
-            "cDc1X3JhdGVCGwoZX3ZpZGVvX3RydWV2aWV3X3ZpZXdfcmF0ZUIXChVfdmlk",
-            "ZW9fdHJ1ZXZpZXdfdmlld3NCGwoZX3ZpZXdfdGhyb3VnaF9jb252ZXJzaW9u",
-            "c0I0CjJfYWxsX2NvbnZlcnNpb25zX2Zyb21fbG9jYXRpb25fYXNzZXRfY2xp",
-            "Y2tfdG9fY2FsbEIxCi9fYWxsX2NvbnZlcnNpb25zX2Zyb21fbG9jYXRpb25f",
-            "YXNzZXRfZGlyZWN0aW9uc0IrCilfYWxsX2NvbnZlcnNpb25zX2Zyb21fbG9j",
-            "YXRpb25fYXNzZXRfbWVudUIsCipfYWxsX2NvbnZlcnNpb25zX2Zyb21fbG9j",
-            "YXRpb25fYXNzZXRfb3JkZXJCNwo1X2FsbF9jb252ZXJzaW9uc19mcm9tX2xv",
-            "Y2F0aW9uX2Fzc2V0X290aGVyX2VuZ2FnZW1lbnRCMwoxX2FsbF9jb252ZXJz",
-            "aW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0X3N0b3JlX3Zpc2l0c0IuCixfYWxs",
-            "X2NvbnZlcnNpb25zX2Zyb21fbG9jYXRpb25fYXNzZXRfd2Vic2l0ZUI3CjVf",
-            "ZWxpZ2libGVfaW1wcmVzc2lvbnNfZnJvbV9sb2NhdGlvbl9hc3NldF9zdG9y",
-            "ZV9yZWFjaEI9Cjtfdmlld190aHJvdWdoX2NvbnZlcnNpb25zX2Zyb21fbG9j",
-            "YXRpb25fYXNzZXRfY2xpY2tfdG9fY2FsbEI6Cjhfdmlld190aHJvdWdoX2Nv",
-            "bnZlcnNpb25zX2Zyb21fbG9jYXRpb25fYXNzZXRfZGlyZWN0aW9uc0I0CjJf",
-            "dmlld190aHJvdWdoX2NvbnZlcnNpb25zX2Zyb21fbG9jYXRpb25fYXNzZXRf",
-            "bWVudUI1CjNfdmlld190aHJvdWdoX2NvbnZlcnNpb25zX2Zyb21fbG9jYXRp",
-            "b25fYXNzZXRfb3JkZXJCQAo+X3ZpZXdfdGhyb3VnaF9jb252ZXJzaW9uc19m",
-            "cm9tX2xvY2F0aW9uX2Fzc2V0X290aGVyX2VuZ2FnZW1lbnRCPAo6X3ZpZXdf",
-            "dGhyb3VnaF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0X3N0b3Jl",
-            "X3Zpc2l0c0I3CjVfdmlld190aHJvdWdoX2NvbnZlcnNpb25zX2Zyb21fbG9j",
-            "YXRpb25fYXNzZXRfd2Vic2l0ZUIJCgdfb3JkZXJzQh0KG19hdmVyYWdlX29y",
-            "ZGVyX3ZhbHVlX21pY3Jvc0IUChJfYXZlcmFnZV9jYXJ0X3NpemVCHAoaX2Nv",
-            "c3Rfb2ZfZ29vZHNfc29sZF9taWNyb3NCFgoUX2dyb3NzX3Byb2ZpdF9taWNy",
-            "b3NCFgoUX2dyb3NzX3Byb2ZpdF9tYXJnaW5CEQoPX3JldmVudWVfbWljcm9z",
-            "Qg0KC191bml0c19zb2xkQicKJV9jcm9zc19zZWxsX2Nvc3Rfb2ZfZ29vZHNf",
-            "c29sZF9taWNyb3NCIQofX2Nyb3NzX3NlbGxfZ3Jvc3NfcHJvZml0X21pY3Jv",
-            "c0IcChpfY3Jvc3Nfc2VsbF9yZXZlbnVlX21pY3Jvc0IYChZfY3Jvc3Nfc2Vs",
-            "bF91bml0c19zb2xkQiEKH19sZWFkX2Nvc3Rfb2ZfZ29vZHNfc29sZF9taWNy",
-            "b3NCGwoZX2xlYWRfZ3Jvc3NfcHJvZml0X21pY3Jvc0IWChRfbGVhZF9yZXZl",
-            "bnVlX21pY3Jvc0ISChBfbGVhZF91bml0c19zb2xkQg8KDV91bmlxdWVfdXNl",
-            "cnNCKAomX2F2ZXJhZ2VfaW1wcmVzc2lvbl9mcmVxdWVuY3lfcGVyX3VzZXJC",
-            "GAoWX2xpbmtlZF9lbnRpdGllc19jb3VudEIbChlfYXNzZXRfcGlubmVkX3Rv",
-            "dGFsX2NvdW50Qi4KLF9hc3NldF9waW5uZWRfYXNfaGVhZGxpbmVfcG9zaXRp",
-            "b25fb25lX2NvdW50Qi4KLF9hc3NldF9waW5uZWRfYXNfaGVhZGxpbmVfcG9z",
-            "aXRpb25fdHdvX2NvdW50QjAKLl9hc3NldF9waW5uZWRfYXNfaGVhZGxpbmVf",
-            "cG9zaXRpb25fdGhyZWVfY291bnRCMQovX2Fzc2V0X3Bpbm5lZF9hc19kZXNj",
-            "cmlwdGlvbl9wb3NpdGlvbl9vbmVfY291bnRCMQovX2Fzc2V0X3Bpbm5lZF9h",
-            "c19kZXNjcmlwdGlvbl9wb3NpdGlvbl90d29fY291bnRCNwo1X3N0b3JlX3Zp",
-            "c2l0c19sYXN0X2NsaWNrX21vZGVsX2F0dHJpYnV0ZWRfY29udmVyc2lvbnNC",
-            "HwodX3Jlc3VsdHNfY29udmVyc2lvbnNfcHVyY2hhc2VCIwohX3ZpZGVvX3Ry",
-            "dWV2aWV3X3ZpZXdfcmF0ZV9pbl9mZWVkQiUKI192aWRlb190cnVldmlld192",
-            "aWV3X3JhdGVfaW5fc3RyZWFtQiIKIF92aWRlb190cnVldmlld192aWV3X3Jh",
-            "dGVfc2hvcnRzQhcKFV9jb3ZpZXdlZF9pbXByZXNzaW9uc0IWChRfcHJpbWFy",
-            "eV9pbXByZXNzaW9uc0I5CjdfcGxhdGZvcm1fY29tcGFyYWJsZV9jb252ZXJz",
-            "aW9uc19mcm9tX2ludGVyYWN0aW9uc19yYXRlQiIKIF9wbGF0Zm9ybV9jb21w",
-            "YXJhYmxlX2NvbnZlcnNpb25zQigKJl9wbGF0Zm9ybV9jb21wYXJhYmxlX2Nv",
-            "bnZlcnNpb25zX3ZhbHVlQjEKL19wbGF0Zm9ybV9jb21wYXJhYmxlX2NvbnZl",
-            "cnNpb25zX3ZhbHVlX3Blcl9jb3N0QjUKM19wbGF0Zm9ybV9jb21wYXJhYmxl",
-            "X2NvbnZlcnNpb25zX2J5X2NvbnZlcnNpb25fZGF0ZUI7CjlfcGxhdGZvcm1f",
-            "Y29tcGFyYWJsZV9jb252ZXJzaW9uc192YWx1ZV9ieV9jb252ZXJzaW9uX2Rh",
-            "dGVCSgpIX3BsYXRmb3JtX2NvbXBhcmFibGVfY29udmVyc2lvbnNfZnJvbV9p",
-            "bnRlcmFjdGlvbnNfdmFsdWVfcGVyX2ludGVyYWN0aW9uQioKKF9jb3N0X3Bl",
-            "cl9wbGF0Zm9ybV9jb21wYXJhYmxlX2NvbnZlcnNpb25CKwopX3ZhbHVlX3Bl",
-            "cl9wbGF0Zm9ybV9jb21wYXJhYmxlX2NvbnZlcnNpb25CPwo9X3ZhbHVlX3Bl",
-            "cl9wbGF0Zm9ybV9jb21wYXJhYmxlX2NvbnZlcnNpb25zX2J5X2NvbnZlcnNp",
-            "b25fZGF0ZUI9CjtfY29zdF9jb252ZXJ0ZWRfY3VycmVuY3lfcGVyX3BsYXRm",
-            "b3JtX2NvbXBhcmFibGVfY29udmVyc2lvbkITChFfdmFsdWVfYWRqdXN0bWVu",
-            "dEIXChVfYWxsX3ZhbHVlX2FkanVzdG1lbnRCHwodX2NsaWNrc191bmlxdWVf",
-            "cXVlcnlfY2x1c3RlcnNCJAoiX2NvbnZlcnNpb25zX3VuaXF1ZV9xdWVyeV9j",
-            "bHVzdGVyc0IkCiJfaW1wcmVzc2lvbnNfdW5pcXVlX3F1ZXJ5X2NsdXN0ZXJz",
-            "QiMKIV92aWRlb193YXRjaF90aW1lX2R1cmF0aW9uX21pbGxpc0IrCilfYXZl",
-            "cmFnZV92aWRlb193YXRjaF90aW1lX2R1cmF0aW9uX21pbGxpc0IGCgRfc3Zy",
-            "QjAKLl9hY3RpdmVfdmlld19hdWRpYmlsaXR5X21lYXN1cmFibGVfaW1wcmVz",
-            "c2lvbnNCNQozX2FjdGl2ZV92aWV3X2F1ZGliaWxpdHlfbWVhc3VyYWJsZV9p",
-            "bXByZXNzaW9uc19yYXRlQj0KO19hY3RpdmVfdmlld19hdWRpYmlsaXR5X2lu",
-            "dmFsaWRfbWVhc3VyYWJsZV9pbXByZXNzaW9uc19yYXRlQkIKQF9hY3RpdmVf",
-            "dmlld19hdWRpYmlsaXR5X2ludmFsaWRfZ2l2dF9tZWFzdXJhYmxlX2ltcHJl",
-            "c3Npb25zX3JhdGVCIgogX2FjdGl2ZV92aWV3X2F1ZGlibGVfaW1wcmVzc2lv",
-            "bnNCJwolX2FjdGl2ZV92aWV3X2F1ZGlibGVfaW1wcmVzc2lvbnNfcmF0ZUIu",
-            "CixfYWN0aXZlX3ZpZXdfYXVkaWJsZV90d29fc2Vjb25kc19pbXByZXNzaW9u",
-            "c0IzCjFfYWN0aXZlX3ZpZXdfYXVkaWJsZV90d29fc2Vjb25kc19pbXByZXNz",
-            "aW9uc19yYXRlQjEKL19hY3RpdmVfdmlld19hdWRpYmxlX3RoaXJ0eV9zZWNv",
-            "bmRzX2ltcHJlc3Npb25zQjYKNF9hY3RpdmVfdmlld19hdWRpYmxlX3RoaXJ0",
-            "eV9zZWNvbmRzX2ltcHJlc3Npb25zX3JhdGVCKAomX2FjdGl2ZV92aWV3X2F1",
-            "ZGlibGVfcXVhcnRpbGVfcDI1X3JhdGVCKAomX2FjdGl2ZV92aWV3X2F1ZGli",
-            "bGVfcXVhcnRpbGVfcDUwX3JhdGVCKAomX2FjdGl2ZV92aWV3X2F1ZGlibGVf",
-            "cXVhcnRpbGVfcDc1X3JhdGVCKQonX2FjdGl2ZV92aWV3X2F1ZGlibGVfcXVh",
-            "cnRpbGVfcDEwMF9yYXRlIkcKEVNlYXJjaFZvbHVtZVJhbmdlEhAKA21pbhgB",
-            "IAEoA0gAiAEBEhAKA21heBgCIAEoA0gBiAEBQgYKBF9taW5CBgoEX21heELs",
-            "AQojY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5jb21tb25CDE1ldHJp",
-            "Y3NQcm90b1ABWkVnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVh",
-            "cGlzL2Fkcy9nb29nbGVhZHMvdjIzL2NvbW1vbjtjb21tb26iAgNHQUGqAh9H",
-            "b29nbGUuQWRzLkdvb2dsZUFkcy5WMjMuQ29tbW9uygIfR29vZ2xlXEFkc1xH",
-            "b29nbGVBZHNcVjIzXENvbW1vbuoCI0dvb2dsZTo6QWRzOjpHb29nbGVBZHM6",
-            "OlYyMzo6Q29tbW9uYgZwcm90bzM="));
+            "ASgBSMMBiAEBEiQKFXVuaXF1ZV91c2Vyc190d29fcGx1cxiJAyABKANIxAGI",
+            "AQESJgoXdW5pcXVlX3VzZXJzX3RocmVlX3BsdXMYigMgASgDSMUBiAEBEiUK",
+            "FnVuaXF1ZV91c2Vyc19mb3VyX3BsdXMYiwMgASgDSMYBiAEBEiUKFnVuaXF1",
+            "ZV91c2Vyc19maXZlX3BsdXMYjAMgASgDSMcBiAEBEiQKFXVuaXF1ZV91c2Vy",
+            "c190ZW5fcGx1cxiNAyABKANIyAGIAQESHwoQdmFsdWVfYWRqdXN0bWVudBiO",
+            "AyABKAFIyQGIAQESIwoUYWxsX3ZhbHVlX2FkanVzdG1lbnQYjwMgASgBSMoB",
+            "iAEBEisKHGNsaWNrc191bmlxdWVfcXVlcnlfY2x1c3RlcnMYkAMgASgDSMsB",
+            "iAEBEjAKIWNvbnZlcnNpb25zX3VuaXF1ZV9xdWVyeV9jbHVzdGVycxiRAyAB",
+            "KANIzAGIAQESMAohaW1wcmVzc2lvbnNfdW5pcXVlX3F1ZXJ5X2NsdXN0ZXJz",
+            "GJIDIAEoA0jNAYgBARIvCiB2aWRlb193YXRjaF90aW1lX2R1cmF0aW9uX21p",
+            "bGxpcxiTAyABKANIzgGIAQESNwooYXZlcmFnZV92aWRlb193YXRjaF90aW1l",
+            "X2R1cmF0aW9uX21pbGxpcxiUAyABKANIzwGIAQESEgoDc3ZyGJsDIAEoA0jQ",
+            "AYgBARI8Ci1hY3RpdmVfdmlld19hdWRpYmlsaXR5X21lYXN1cmFibGVfaW1w",
+            "cmVzc2lvbnMYnAMgASgDSNEBiAEBEkEKMmFjdGl2ZV92aWV3X2F1ZGliaWxp",
+            "dHlfbWVhc3VyYWJsZV9pbXByZXNzaW9uc19yYXRlGJ0DIAEoAUjSAYgBARJJ",
+            "CjphY3RpdmVfdmlld19hdWRpYmlsaXR5X2ludmFsaWRfbWVhc3VyYWJsZV9p",
+            "bXByZXNzaW9uc19yYXRlGJ4DIAEoAUjTAYgBARJOCj9hY3RpdmVfdmlld19h",
+            "dWRpYmlsaXR5X2ludmFsaWRfZ2l2dF9tZWFzdXJhYmxlX2ltcHJlc3Npb25z",
+            "X3JhdGUYnwMgASgBSNQBiAEBEi4KH2FjdGl2ZV92aWV3X2F1ZGlibGVfaW1w",
+            "cmVzc2lvbnMYoAMgASgDSNUBiAEBEjMKJGFjdGl2ZV92aWV3X2F1ZGlibGVf",
+            "aW1wcmVzc2lvbnNfcmF0ZRihAyABKAFI1gGIAQESOgorYWN0aXZlX3ZpZXdf",
+            "YXVkaWJsZV90d29fc2Vjb25kc19pbXByZXNzaW9ucxiiAyABKANI1wGIAQES",
+            "PwowYWN0aXZlX3ZpZXdfYXVkaWJsZV90d29fc2Vjb25kc19pbXByZXNzaW9u",
+            "c19yYXRlGKMDIAEoAUjYAYgBARI9Ci5hY3RpdmVfdmlld19hdWRpYmxlX3Ro",
+            "aXJ0eV9zZWNvbmRzX2ltcHJlc3Npb25zGKQDIAEoA0jZAYgBARJCCjNhY3Rp",
+            "dmVfdmlld19hdWRpYmxlX3RoaXJ0eV9zZWNvbmRzX2ltcHJlc3Npb25zX3Jh",
+            "dGUYpQMgASgBSNoBiAEBEjQKJWFjdGl2ZV92aWV3X2F1ZGlibGVfcXVhcnRp",
+            "bGVfcDI1X3JhdGUYpgMgASgBSNsBiAEBEjQKJWFjdGl2ZV92aWV3X2F1ZGli",
+            "bGVfcXVhcnRpbGVfcDUwX3JhdGUYpwMgASgBSNwBiAEBEjQKJWFjdGl2ZV92",
+            "aWV3X2F1ZGlibGVfcXVhcnRpbGVfcDc1X3JhdGUYqAMgASgBSN0BiAEBEjUK",
+            "JmFjdGl2ZV92aWV3X2F1ZGlibGVfcXVhcnRpbGVfcDEwMF9yYXRlGKkDIAEo",
+            "AUjeAYgBARJHCjhiaWRkYWJsZV9pbmRpcmVjdF9pbnN0YWxsX2ZpcnN0X2lu",
+            "X2FwcF9jb252ZXJzaW9uX21pY3JvcxiqAyABKANI3wGIAQFCJQojX2Fic29s",
+            "dXRlX3RvcF9pbXByZXNzaW9uX3BlcmNlbnRhZ2VCEgoQX2FjdGl2ZV92aWV3",
+            "X2NwbUISChBfYWN0aXZlX3ZpZXdfY3RyQhoKGF9hY3RpdmVfdmlld19pbXBy",
+            "ZXNzaW9uc0IcChpfYWN0aXZlX3ZpZXdfbWVhc3VyYWJpbGl0eUIlCiNfYWN0",
+            "aXZlX3ZpZXdfbWVhc3VyYWJsZV9jb3N0X21pY3Jvc0IlCiNfYWN0aXZlX3Zp",
+            "ZXdfbWVhc3VyYWJsZV9pbXByZXNzaW9uc0IaChhfYWN0aXZlX3ZpZXdfdmll",
+            "d2FiaWxpdHlCKQonX2FsbF9jb252ZXJzaW9uc19mcm9tX2ludGVyYWN0aW9u",
+            "c19yYXRlQhgKFl9hbGxfY29udmVyc2lvbnNfdmFsdWVCKwopX2FsbF9jb252",
+            "ZXJzaW9uc192YWx1ZV9ieV9jb252ZXJzaW9uX2RhdGVCIgogX2FsbF9uZXdf",
+            "Y3VzdG9tZXJfbGlmZXRpbWVfdmFsdWVCEgoQX2FsbF9jb252ZXJzaW9uc0Il",
+            "CiNfYWxsX2NvbnZlcnNpb25zX2J5X2NvbnZlcnNpb25fZGF0ZUIhCh9fYWxs",
+            "X2NvbnZlcnNpb25zX3ZhbHVlX3Blcl9jb3N0QiUKI19hbGxfY29udmVyc2lv",
+            "bnNfZnJvbV9jbGlja190b19jYWxsQiIKIF9hbGxfY29udmVyc2lvbnNfZnJv",
+            "bV9kaXJlY3Rpb25zQjoKOF9hbGxfY29udmVyc2lvbnNfZnJvbV9pbnRlcmFj",
+            "dGlvbnNfdmFsdWVfcGVyX2ludGVyYWN0aW9uQhwKGl9hbGxfY29udmVyc2lv",
+            "bnNfZnJvbV9tZW51Qh0KG19hbGxfY29udmVyc2lvbnNfZnJvbV9vcmRlckIo",
+            "CiZfYWxsX2NvbnZlcnNpb25zX2Zyb21fb3RoZXJfZW5nYWdlbWVudEIjCiFf",
+            "YWxsX2NvbnZlcnNpb25zX2Zyb21fc3RvcmVfdmlzaXRCJQojX2FsbF9jb252",
+            "ZXJzaW9uc19mcm9tX3N0b3JlX3dlYnNpdGVCPAo6X2F1Y3Rpb25faW5zaWdo",
+            "dF9zZWFyY2hfYWJzb2x1dGVfdG9wX2ltcHJlc3Npb25fcGVyY2VudGFnZUIq",
+            "CihfYXVjdGlvbl9pbnNpZ2h0X3NlYXJjaF9pbXByZXNzaW9uX3NoYXJlQioK",
+            "KF9hdWN0aW9uX2luc2lnaHRfc2VhcmNoX291dHJhbmtpbmdfc2hhcmVCJgok",
+            "X2F1Y3Rpb25faW5zaWdodF9zZWFyY2hfb3ZlcmxhcF9yYXRlQi0KK19hdWN0",
+            "aW9uX2luc2lnaHRfc2VhcmNoX3Bvc2l0aW9uX2Fib3ZlX3JhdGVCMwoxX2F1",
+            "Y3Rpb25faW5zaWdodF9zZWFyY2hfdG9wX2ltcHJlc3Npb25fcGVyY2VudGFn",
+            "ZUIPCg1fYXZlcmFnZV9jb3N0Qg4KDF9hdmVyYWdlX2NwY0IOCgxfYXZlcmFn",
+            "ZV9jcGVCDgoMX2F2ZXJhZ2VfY3BtQhcKFV90cnVldmlld19hdmVyYWdlX2Nw",
+            "dkIVChNfYXZlcmFnZV9wYWdlX3ZpZXdzQhcKFV9hdmVyYWdlX3RpbWVfb25f",
+            "c2l0ZUIcChpfYmVuY2htYXJrX2F2ZXJhZ2VfbWF4X2NwY0IjCiFfYmlkZGFi",
+            "bGVfYXBwX2luc3RhbGxfY29udmVyc2lvbnNCKAomX2JpZGRhYmxlX2FwcF9w",
+            "b3N0X2luc3RhbGxfY29udmVyc2lvbnNCLwotX2JpZGRhYmxlX2NvaG9ydF9h",
+            "cHBfcG9zdF9pbnN0YWxsX2NvbnZlcnNpb25zQhAKDl9iZW5jaG1hcmtfY3Ry",
+            "Qg4KDF9ib3VuY2VfcmF0ZUIJCgdfY2xpY2tzQhIKEF9jb21iaW5lZF9jbGlj",
+            "a3NCHAoaX2NvbWJpbmVkX2NsaWNrc19wZXJfcXVlcnlCEwoRX2NvbWJpbmVk",
+            "X3F1ZXJpZXNCJwolX2NvbnRlbnRfYnVkZ2V0X2xvc3RfaW1wcmVzc2lvbl9z",
+            "aGFyZUIbChlfY29udGVudF9pbXByZXNzaW9uX3NoYXJlQi0KK19jb252ZXJz",
+            "aW9uX2xhc3RfcmVjZWl2ZWRfcmVxdWVzdF9kYXRlX3RpbWVCIgogX2NvbnZl",
+            "cnNpb25fbGFzdF9jb252ZXJzaW9uX2RhdGVCJQojX2NvbnRlbnRfcmFua19s",
+            "b3N0X2ltcHJlc3Npb25fc2hhcmVCJQojX2NvbnZlcnNpb25zX2Zyb21faW50",
+            "ZXJhY3Rpb25zX3JhdGVCFAoSX2NvbnZlcnNpb25zX3ZhbHVlQicKJV9jb252",
+            "ZXJzaW9uc192YWx1ZV9ieV9jb252ZXJzaW9uX2RhdGVCHgocX25ld19jdXN0",
+            "b21lcl9saWZldGltZV92YWx1ZUIdChtfY29udmVyc2lvbnNfdmFsdWVfcGVy",
+            "X2Nvc3RCNgo0X2NvbnZlcnNpb25zX2Zyb21faW50ZXJhY3Rpb25zX3ZhbHVl",
+            "X3Blcl9pbnRlcmFjdGlvbkIOCgxfY29udmVyc2lvbnNCIQofX2NvbnZlcnNp",
+            "b25zX2J5X2NvbnZlcnNpb25fZGF0ZUIOCgxfY29zdF9taWNyb3NCGwoZX2Nv",
+            "c3RfcGVyX2FsbF9jb252ZXJzaW9uc0IWChRfY29zdF9wZXJfY29udmVyc2lv",
+            "bkIvCi1fY29zdF9wZXJfY3VycmVudF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZl",
+            "cnNpb25CGwoZX2Nyb3NzX2RldmljZV9jb252ZXJzaW9uc0IuCixfY3Jvc3Nf",
+            "ZGV2aWNlX2NvbnZlcnNpb25zX2J5X2NvbnZlcnNpb25fZGF0ZUIhCh9fY3Jv",
+            "c3NfZGV2aWNlX2NvbnZlcnNpb25zX3ZhbHVlQigKJl9jcm9zc19kZXZpY2Vf",
+            "Y29udmVyc2lvbnNfdmFsdWVfbWljcm9zQjQKMl9jcm9zc19kZXZpY2VfY29u",
+            "dmVyc2lvbnNfdmFsdWVfYnlfY29udmVyc2lvbl9kYXRlQgYKBF9jdHJCJwol",
+            "X2N1cnJlbnRfbW9kZWxfYXR0cmlidXRlZF9jb252ZXJzaW9uc0I+CjxfY3Vy",
+            "cmVudF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNpb25zX2Zyb21faW50ZXJh",
+            "Y3Rpb25zX3JhdGVCTwpNX2N1cnJlbnRfbW9kZWxfYXR0cmlidXRlZF9jb252",
+            "ZXJzaW9uc19mcm9tX2ludGVyYWN0aW9uc192YWx1ZV9wZXJfaW50ZXJhY3Rp",
+            "b25CLQorX2N1cnJlbnRfbW9kZWxfYXR0cmlidXRlZF9jb252ZXJzaW9uc192",
+            "YWx1ZUI2CjRfY3VycmVudF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNpb25z",
+            "X3ZhbHVlX3Blcl9jb3N0QhIKEF9lbmdhZ2VtZW50X3JhdGVCDgoMX2VuZ2Fn",
+            "ZW1lbnRzQiIKIF9ob3RlbF9hdmVyYWdlX2xlYWRfdmFsdWVfbWljcm9zQh8K",
+            "HV9ob3RlbF9jb21taXNzaW9uX3JhdGVfbWljcm9zQiEKH19ob3RlbF9leHBl",
+            "Y3RlZF9jb21taXNzaW9uX2Nvc3RCJAoiX2hvdGVsX3ByaWNlX2RpZmZlcmVu",
+            "Y2VfcGVyY2VudGFnZUIdChtfaG90ZWxfZWxpZ2libGVfaW1wcmVzc2lvbnNC",
+            "GwoZX2hpc3RvcmljYWxfcXVhbGl0eV9zY29yZUIRCg9fZ21haWxfZm9yd2Fy",
+            "ZHNCDgoMX2dtYWlsX3NhdmVzQhkKF19nbWFpbF9zZWNvbmRhcnlfY2xpY2tz",
+            "Qh8KHV9pbXByZXNzaW9uc19mcm9tX3N0b3JlX3JlYWNoQg4KDF9pbXByZXNz",
+            "aW9uc0ITChFfaW50ZXJhY3Rpb25fcmF0ZUIPCg1faW50ZXJhY3Rpb25zQhUK",
+            "E19pbnZhbGlkX2NsaWNrX3JhdGVCEQoPX2ludmFsaWRfY2xpY2tzQh0KG19n",
+            "ZW5lcmFsX2ludmFsaWRfY2xpY2tfcmF0ZUIZChdfZ2VuZXJhbF9pbnZhbGlk",
+            "X2NsaWNrc0IQCg5fbWVzc2FnZV9jaGF0c0IWChRfbWVzc2FnZV9pbXByZXNz",
+            "aW9uc0IUChJfbWVzc2FnZV9jaGF0X3JhdGVCJAoiX21vYmlsZV9mcmllbmRs",
+            "eV9jbGlja3NfcGVyY2VudGFnZUIcChpfb3B0aW1pemF0aW9uX3Njb3JlX3Vw",
+            "bGlmdEIZChdfb3B0aW1pemF0aW9uX3Njb3JlX3VybEIRCg9fb3JnYW5pY19j",
+            "bGlja3NCGwoZX29yZ2FuaWNfY2xpY2tzX3Blcl9xdWVyeUIWChRfb3JnYW5p",
+            "Y19pbXByZXNzaW9uc0IgCh5fb3JnYW5pY19pbXByZXNzaW9uc19wZXJfcXVl",
+            "cnlCEgoQX29yZ2FuaWNfcXVlcmllc0IXChVfcGVyY2VudF9uZXdfdmlzaXRv",
+            "cnNCDgoMX3Bob25lX2NhbGxzQhQKEl9waG9uZV9pbXByZXNzaW9uc0IVChNf",
+            "cGhvbmVfdGhyb3VnaF9yYXRlQg8KDV9yZWxhdGl2ZV9jdHJCJwolX3NlYXJj",
+            "aF9hYnNvbHV0ZV90b3BfaW1wcmVzc2lvbl9zaGFyZUIzCjFfc2VhcmNoX2J1",
+            "ZGdldF9sb3N0X2Fic29sdXRlX3RvcF9pbXByZXNzaW9uX3NoYXJlQiYKJF9z",
+            "ZWFyY2hfYnVkZ2V0X2xvc3RfaW1wcmVzc2lvbl9zaGFyZUIqCihfc2VhcmNo",
+            "X2J1ZGdldF9sb3N0X3RvcF9pbXByZXNzaW9uX3NoYXJlQhUKE19zZWFyY2hf",
+            "Y2xpY2tfc2hhcmVCJgokX3NlYXJjaF9leGFjdF9tYXRjaF9pbXByZXNzaW9u",
+            "X3NoYXJlQhoKGF9zZWFyY2hfaW1wcmVzc2lvbl9zaGFyZUIxCi9fc2VhcmNo",
+            "X3JhbmtfbG9zdF9hYnNvbHV0ZV90b3BfaW1wcmVzc2lvbl9zaGFyZUIkCiJf",
+            "c2VhcmNoX3JhbmtfbG9zdF9pbXByZXNzaW9uX3NoYXJlQigKJl9zZWFyY2hf",
+            "cmFua19sb3N0X3RvcF9pbXByZXNzaW9uX3NoYXJlQh4KHF9zZWFyY2hfdG9w",
+            "X2ltcHJlc3Npb25fc2hhcmVCEAoOX3NlYXJjaF92b2x1bWVCDgoMX3NwZWVk",
+            "X3Njb3JlQhwKGl9hdmVyYWdlX3RhcmdldF9jcGFfbWljcm9zQhYKFF9hdmVy",
+            "YWdlX3RhcmdldF9yb2FzQhwKGl90b3BfaW1wcmVzc2lvbl9wZXJjZW50YWdl",
+            "QjMKMV92YWxpZF9hY2NlbGVyYXRlZF9tb2JpbGVfcGFnZXNfY2xpY2tzX3Bl",
+            "cmNlbnRhZ2VCHAoaX3ZhbHVlX3Blcl9hbGxfY29udmVyc2lvbnNCLwotX3Zh",
+            "bHVlX3Blcl9hbGxfY29udmVyc2lvbnNfYnlfY29udmVyc2lvbl9kYXRlQhcK",
+            "FV92YWx1ZV9wZXJfY29udmVyc2lvbkIrCilfdmFsdWVfcGVyX2NvbnZlcnNp",
+            "b25zX2J5X2NvbnZlcnNpb25fZGF0ZUIwCi5fdmFsdWVfcGVyX2N1cnJlbnRf",
+            "bW9kZWxfYXR0cmlidXRlZF9jb252ZXJzaW9uQhsKGV92aWRlb19xdWFydGls",
+            "ZV9wMTAwX3JhdGVCGgoYX3ZpZGVvX3F1YXJ0aWxlX3AyNV9yYXRlQhoKGF92",
+            "aWRlb19xdWFydGlsZV9wNTBfcmF0ZUIaChhfdmlkZW9fcXVhcnRpbGVfcDc1",
+            "X3JhdGVCGwoZX3ZpZGVvX3RydWV2aWV3X3ZpZXdfcmF0ZUIXChVfdmlkZW9f",
+            "dHJ1ZXZpZXdfdmlld3NCGwoZX3ZpZXdfdGhyb3VnaF9jb252ZXJzaW9uc0I0",
+            "CjJfYWxsX2NvbnZlcnNpb25zX2Zyb21fbG9jYXRpb25fYXNzZXRfY2xpY2tf",
+            "dG9fY2FsbEIxCi9fYWxsX2NvbnZlcnNpb25zX2Zyb21fbG9jYXRpb25fYXNz",
+            "ZXRfZGlyZWN0aW9uc0IrCilfYWxsX2NvbnZlcnNpb25zX2Zyb21fbG9jYXRp",
+            "b25fYXNzZXRfbWVudUIsCipfYWxsX2NvbnZlcnNpb25zX2Zyb21fbG9jYXRp",
+            "b25fYXNzZXRfb3JkZXJCNwo1X2FsbF9jb252ZXJzaW9uc19mcm9tX2xvY2F0",
+            "aW9uX2Fzc2V0X290aGVyX2VuZ2FnZW1lbnRCMwoxX2FsbF9jb252ZXJzaW9u",
+            "c19mcm9tX2xvY2F0aW9uX2Fzc2V0X3N0b3JlX3Zpc2l0c0IuCixfYWxsX2Nv",
+            "bnZlcnNpb25zX2Zyb21fbG9jYXRpb25fYXNzZXRfd2Vic2l0ZUI3CjVfZWxp",
+            "Z2libGVfaW1wcmVzc2lvbnNfZnJvbV9sb2NhdGlvbl9hc3NldF9zdG9yZV9y",
+            "ZWFjaEI9Cjtfdmlld190aHJvdWdoX2NvbnZlcnNpb25zX2Zyb21fbG9jYXRp",
+            "b25fYXNzZXRfY2xpY2tfdG9fY2FsbEI6Cjhfdmlld190aHJvdWdoX2NvbnZl",
+            "cnNpb25zX2Zyb21fbG9jYXRpb25fYXNzZXRfZGlyZWN0aW9uc0I0CjJfdmll",
+            "d190aHJvdWdoX2NvbnZlcnNpb25zX2Zyb21fbG9jYXRpb25fYXNzZXRfbWVu",
+            "dUI1CjNfdmlld190aHJvdWdoX2NvbnZlcnNpb25zX2Zyb21fbG9jYXRpb25f",
+            "YXNzZXRfb3JkZXJCQAo+X3ZpZXdfdGhyb3VnaF9jb252ZXJzaW9uc19mcm9t",
+            "X2xvY2F0aW9uX2Fzc2V0X290aGVyX2VuZ2FnZW1lbnRCPAo6X3ZpZXdfdGhy",
+            "b3VnaF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0X3N0b3JlX3Zp",
+            "c2l0c0I3CjVfdmlld190aHJvdWdoX2NvbnZlcnNpb25zX2Zyb21fbG9jYXRp",
+            "b25fYXNzZXRfd2Vic2l0ZUIJCgdfb3JkZXJzQh0KG19hdmVyYWdlX29yZGVy",
+            "X3ZhbHVlX21pY3Jvc0IUChJfYXZlcmFnZV9jYXJ0X3NpemVCHAoaX2Nvc3Rf",
+            "b2ZfZ29vZHNfc29sZF9taWNyb3NCFgoUX2dyb3NzX3Byb2ZpdF9taWNyb3NC",
+            "FgoUX2dyb3NzX3Byb2ZpdF9tYXJnaW5CEQoPX3JldmVudWVfbWljcm9zQg0K",
+            "C191bml0c19zb2xkQicKJV9jcm9zc19zZWxsX2Nvc3Rfb2ZfZ29vZHNfc29s",
+            "ZF9taWNyb3NCIQofX2Nyb3NzX3NlbGxfZ3Jvc3NfcHJvZml0X21pY3Jvc0Ic",
+            "ChpfY3Jvc3Nfc2VsbF9yZXZlbnVlX21pY3Jvc0IYChZfY3Jvc3Nfc2VsbF91",
+            "bml0c19zb2xkQiEKH19sZWFkX2Nvc3Rfb2ZfZ29vZHNfc29sZF9taWNyb3NC",
+            "GwoZX2xlYWRfZ3Jvc3NfcHJvZml0X21pY3Jvc0IWChRfbGVhZF9yZXZlbnVl",
+            "X21pY3Jvc0ISChBfbGVhZF91bml0c19zb2xkQg8KDV91bmlxdWVfdXNlcnNC",
+            "KAomX2F2ZXJhZ2VfaW1wcmVzc2lvbl9mcmVxdWVuY3lfcGVyX3VzZXJCGAoW",
+            "X2xpbmtlZF9lbnRpdGllc19jb3VudEIbChlfYXNzZXRfcGlubmVkX3RvdGFs",
+            "X2NvdW50Qi4KLF9hc3NldF9waW5uZWRfYXNfaGVhZGxpbmVfcG9zaXRpb25f",
+            "b25lX2NvdW50Qi4KLF9hc3NldF9waW5uZWRfYXNfaGVhZGxpbmVfcG9zaXRp",
+            "b25fdHdvX2NvdW50QjAKLl9hc3NldF9waW5uZWRfYXNfaGVhZGxpbmVfcG9z",
+            "aXRpb25fdGhyZWVfY291bnRCMQovX2Fzc2V0X3Bpbm5lZF9hc19kZXNjcmlw",
+            "dGlvbl9wb3NpdGlvbl9vbmVfY291bnRCMQovX2Fzc2V0X3Bpbm5lZF9hc19k",
+            "ZXNjcmlwdGlvbl9wb3NpdGlvbl90d29fY291bnRCNwo1X3N0b3JlX3Zpc2l0",
+            "c19sYXN0X2NsaWNrX21vZGVsX2F0dHJpYnV0ZWRfY29udmVyc2lvbnNCHwod",
+            "X3Jlc3VsdHNfY29udmVyc2lvbnNfcHVyY2hhc2VCIwohX3ZpZGVvX3RydWV2",
+            "aWV3X3ZpZXdfcmF0ZV9pbl9mZWVkQiUKI192aWRlb190cnVldmlld192aWV3",
+            "X3JhdGVfaW5fc3RyZWFtQiIKIF92aWRlb190cnVldmlld192aWV3X3JhdGVf",
+            "c2hvcnRzQhcKFV9jb3ZpZXdlZF9pbXByZXNzaW9uc0IWChRfcHJpbWFyeV9p",
+            "bXByZXNzaW9uc0I5CjdfcGxhdGZvcm1fY29tcGFyYWJsZV9jb252ZXJzaW9u",
+            "c19mcm9tX2ludGVyYWN0aW9uc19yYXRlQiIKIF9wbGF0Zm9ybV9jb21wYXJh",
+            "YmxlX2NvbnZlcnNpb25zQigKJl9wbGF0Zm9ybV9jb21wYXJhYmxlX2NvbnZl",
+            "cnNpb25zX3ZhbHVlQjEKL19wbGF0Zm9ybV9jb21wYXJhYmxlX2NvbnZlcnNp",
+            "b25zX3ZhbHVlX3Blcl9jb3N0QjUKM19wbGF0Zm9ybV9jb21wYXJhYmxlX2Nv",
+            "bnZlcnNpb25zX2J5X2NvbnZlcnNpb25fZGF0ZUI7CjlfcGxhdGZvcm1fY29t",
+            "cGFyYWJsZV9jb252ZXJzaW9uc192YWx1ZV9ieV9jb252ZXJzaW9uX2RhdGVC",
+            "SgpIX3BsYXRmb3JtX2NvbXBhcmFibGVfY29udmVyc2lvbnNfZnJvbV9pbnRl",
+            "cmFjdGlvbnNfdmFsdWVfcGVyX2ludGVyYWN0aW9uQioKKF9jb3N0X3Blcl9w",
+            "bGF0Zm9ybV9jb21wYXJhYmxlX2NvbnZlcnNpb25CKwopX3ZhbHVlX3Blcl9w",
+            "bGF0Zm9ybV9jb21wYXJhYmxlX2NvbnZlcnNpb25CPwo9X3ZhbHVlX3Blcl9w",
+            "bGF0Zm9ybV9jb21wYXJhYmxlX2NvbnZlcnNpb25zX2J5X2NvbnZlcnNpb25f",
+            "ZGF0ZUI9CjtfY29zdF9jb252ZXJ0ZWRfY3VycmVuY3lfcGVyX3BsYXRmb3Jt",
+            "X2NvbXBhcmFibGVfY29udmVyc2lvbkIYChZfdW5pcXVlX3VzZXJzX3R3b19w",
+            "bHVzQhoKGF91bmlxdWVfdXNlcnNfdGhyZWVfcGx1c0IZChdfdW5pcXVlX3Vz",
+            "ZXJzX2ZvdXJfcGx1c0IZChdfdW5pcXVlX3VzZXJzX2ZpdmVfcGx1c0IYChZf",
+            "dW5pcXVlX3VzZXJzX3Rlbl9wbHVzQhMKEV92YWx1ZV9hZGp1c3RtZW50QhcK",
+            "FV9hbGxfdmFsdWVfYWRqdXN0bWVudEIfCh1fY2xpY2tzX3VuaXF1ZV9xdWVy",
+            "eV9jbHVzdGVyc0IkCiJfY29udmVyc2lvbnNfdW5pcXVlX3F1ZXJ5X2NsdXN0",
+            "ZXJzQiQKIl9pbXByZXNzaW9uc191bmlxdWVfcXVlcnlfY2x1c3RlcnNCIwoh",
+            "X3ZpZGVvX3dhdGNoX3RpbWVfZHVyYXRpb25fbWlsbGlzQisKKV9hdmVyYWdl",
+            "X3ZpZGVvX3dhdGNoX3RpbWVfZHVyYXRpb25fbWlsbGlzQgYKBF9zdnJCMAou",
+            "X2FjdGl2ZV92aWV3X2F1ZGliaWxpdHlfbWVhc3VyYWJsZV9pbXByZXNzaW9u",
+            "c0I1CjNfYWN0aXZlX3ZpZXdfYXVkaWJpbGl0eV9tZWFzdXJhYmxlX2ltcHJl",
+            "c3Npb25zX3JhdGVCPQo7X2FjdGl2ZV92aWV3X2F1ZGliaWxpdHlfaW52YWxp",
+            "ZF9tZWFzdXJhYmxlX2ltcHJlc3Npb25zX3JhdGVCQgpAX2FjdGl2ZV92aWV3",
+            "X2F1ZGliaWxpdHlfaW52YWxpZF9naXZ0X21lYXN1cmFibGVfaW1wcmVzc2lv",
+            "bnNfcmF0ZUIiCiBfYWN0aXZlX3ZpZXdfYXVkaWJsZV9pbXByZXNzaW9uc0In",
+            "CiVfYWN0aXZlX3ZpZXdfYXVkaWJsZV9pbXByZXNzaW9uc19yYXRlQi4KLF9h",
+            "Y3RpdmVfdmlld19hdWRpYmxlX3R3b19zZWNvbmRzX2ltcHJlc3Npb25zQjMK",
+            "MV9hY3RpdmVfdmlld19hdWRpYmxlX3R3b19zZWNvbmRzX2ltcHJlc3Npb25z",
+            "X3JhdGVCMQovX2FjdGl2ZV92aWV3X2F1ZGlibGVfdGhpcnR5X3NlY29uZHNf",
+            "aW1wcmVzc2lvbnNCNgo0X2FjdGl2ZV92aWV3X2F1ZGlibGVfdGhpcnR5X3Nl",
+            "Y29uZHNfaW1wcmVzc2lvbnNfcmF0ZUIoCiZfYWN0aXZlX3ZpZXdfYXVkaWJs",
+            "ZV9xdWFydGlsZV9wMjVfcmF0ZUIoCiZfYWN0aXZlX3ZpZXdfYXVkaWJsZV9x",
+            "dWFydGlsZV9wNTBfcmF0ZUIoCiZfYWN0aXZlX3ZpZXdfYXVkaWJsZV9xdWFy",
+            "dGlsZV9wNzVfcmF0ZUIpCidfYWN0aXZlX3ZpZXdfYXVkaWJsZV9xdWFydGls",
+            "ZV9wMTAwX3JhdGVCOwo5X2JpZGRhYmxlX2luZGlyZWN0X2luc3RhbGxfZmly",
+            "c3RfaW5fYXBwX2NvbnZlcnNpb25fbWljcm9zIkcKEVNlYXJjaFZvbHVtZVJh",
+            "bmdlEhAKA21pbhgBIAEoA0gAiAEBEhAKA21heBgCIAEoA0gBiAEBQgYKBF9t",
+            "aW5CBgoEX21heELsAQojY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5j",
+            "b21tb25CDE1ldHJpY3NQcm90b1ABWkVnb29nbGUuZ29sYW5nLm9yZy9nZW5w",
+            "cm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjIzL2NvbW1vbjtjb21t",
+            "b26iAgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMjMuQ29tbW9uygIf",
+            "R29vZ2xlXEFkc1xHb29nbGVBZHNcVjIzXENvbW1vbuoCI0dvb2dsZTo6QWRz",
+            "OjpHb29nbGVBZHM6OlYyMzo6Q29tbW9uYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V23.Enums.InteractionEventTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V23.Enums.QualityScoreBucketReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Common.Metrics), global::Google.Ads.GoogleAds.V23.Common.Metrics.Parser, new[]{ "AbsoluteTopImpressionPercentage", "ActiveViewCpm", "ActiveViewCtr", "ActiveViewImpressions", "ActiveViewMeasurability", "ActiveViewMeasurableCostMicros", "ActiveViewMeasurableImpressions", "ActiveViewViewability", "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversionsValueByConversionDate", "AllNewCustomerLifetimeValue", "AllConversions", "AllConversionsByConversionDate", "AllConversionsValuePerCost", "AllConversionsFromClickToCall", "AllConversionsFromDirections", "AllConversionsFromInteractionsValuePerInteraction", "AllConversionsFromMenu", "AllConversionsFromOrder", "AllConversionsFromOtherEngagement", "AllConversionsFromStoreVisit", "AllConversionsFromStoreWebsite", "AuctionInsightSearchAbsoluteTopImpressionPercentage", "AuctionInsightSearchImpressionShare", "AuctionInsightSearchOutrankingShare", "AuctionInsightSearchOverlapRate", "AuctionInsightSearchPositionAboveRate", "AuctionInsightSearchTopImpressionPercentage", "AverageCost", "AverageCpc", "AverageCpe", "AverageCpm", "TrueviewAverageCpv", "AveragePageViews", "AverageTimeOnSite", "BenchmarkAverageMaxCpc", "BiddableAppInstallConversions", "BiddableAppPostInstallConversions", "BiddableCohortAppPostInstallConversions", "BenchmarkCtr", "BounceRate", "Clicks", "CombinedClicks", "CombinedClicksPerQuery", "CombinedQueries", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValueByConversionDate", "NewCustomerLifetimeValue", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "ConversionsByConversionDate", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CostPerCurrentModelAttributedConversion", "CrossDeviceConversions", "CrossDeviceConversionsByConversionDate", "CrossDeviceConversionsValue", "CrossDeviceConversionsValueMicros", "CrossDeviceConversionsValueByConversionDate", "Ctr", "CurrentModelAttributedConversions", "CurrentModelAttributedConversionsFromInteractionsRate", "CurrentModelAttributedConversionsFromInteractionsValuePerInteraction", "CurrentModelAttributedConversionsValue", "CurrentModelAttributedConversionsValuePerCost", "EngagementRate", "Engagements", "HotelAverageLeadValueMicros", "HotelCommissionRateMicros", "HotelExpectedCommissionCost", "HotelPriceDifferencePercentage", "HotelEligibleImpressions", "HistoricalCreativeQualityScore", "HistoricalLandingPageQualityScore", "HistoricalQualityScore", "HistoricalSearchPredictedCtr", "GmailForwards", "GmailSaves", "GmailSecondaryClicks", "ImpressionsFromStoreReach", "Impressions", "InteractionRate", "Interactions", "InteractionEventTypes", "InvalidClickRate", "InvalidClicks", "GeneralInvalidClickRate", "GeneralInvalidClicks", "MessageChats", "MessageImpressions", "MessageChatRate", "MobileFriendlyClicksPercentage", "OptimizationScoreUplift", "OptimizationScoreUrl", "OrganicClicks", "OrganicClicksPerQuery", "OrganicImpressions", "OrganicImpressionsPerQuery", "OrganicQueries", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchAbsoluteTopImpressionShare", "SearchBudgetLostAbsoluteTopImpressionShare", "SearchBudgetLostImpressionShare", "SearchBudgetLostTopImpressionShare", "SearchClickShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostAbsoluteTopImpressionShare", "SearchRankLostImpressionShare", "SearchRankLostTopImpressionShare", "SearchTopImpressionShare", "SearchVolume", "SpeedScore", "AverageTargetCpaMicros", "AverageTargetRoas", "TopImpressionPercentage", "ValidAcceleratedMobilePagesClicksPercentage", "ValuePerAllConversions", "ValuePerAllConversionsByConversionDate", "ValuePerConversion", "ValuePerConversionsByConversionDate", "ValuePerCurrentModelAttributedConversion", "VideoQuartileP100Rate", "VideoQuartileP25Rate", "VideoQuartileP50Rate", "VideoQuartileP75Rate", "VideoTrueviewViewRate", "VideoTrueviewViews", "ViewThroughConversions", "SkAdNetworkInstalls", "SkAdNetworkTotalConversions", "PublisherPurchasedClicks", "PublisherOrganicClicks", "PublisherUnknownClicks", "AllConversionsFromLocationAssetClickToCall", "AllConversionsFromLocationAssetDirections", "AllConversionsFromLocationAssetMenu", "AllConversionsFromLocationAssetOrder", "AllConversionsFromLocationAssetOtherEngagement", "AllConversionsFromLocationAssetStoreVisits", "AllConversionsFromLocationAssetWebsite", "EligibleImpressionsFromLocationAssetStoreReach", "ViewThroughConversionsFromLocationAssetClickToCall", "ViewThroughConversionsFromLocationAssetDirections", "ViewThroughConversionsFromLocationAssetMenu", "ViewThroughConversionsFromLocationAssetOrder", "ViewThroughConversionsFromLocationAssetOtherEngagement", "ViewThroughConversionsFromLocationAssetStoreVisits", "ViewThroughConversionsFromLocationAssetWebsite", "Orders", "AverageOrderValueMicros", "AverageCartSize", "CostOfGoodsSoldMicros", "GrossProfitMicros", "GrossProfitMargin", "RevenueMicros", "UnitsSold", "CrossSellCostOfGoodsSoldMicros", "CrossSellGrossProfitMicros", "CrossSellRevenueMicros", "CrossSellUnitsSold", "LeadCostOfGoodsSoldMicros", "LeadGrossProfitMicros", "LeadRevenueMicros", "LeadUnitsSold", "UniqueUsers", "AverageImpressionFrequencyPerUser", "LinkedEntitiesCount", "LinkedSampleEntities", "AssetPinnedTotalCount", "AssetPinnedAsHeadlinePositionOneCount", "AssetPinnedAsHeadlinePositionTwoCount", "AssetPinnedAsHeadlinePositionThreeCount", "AssetPinnedAsDescriptionPositionOneCount", "AssetPinnedAsDescriptionPositionTwoCount", "StoreVisitsLastClickModelAttributedConversions", "ResultsConversionsPurchase", "VideoTrueviewViewRateInFeed", "VideoTrueviewViewRateInStream", "VideoTrueviewViewRateShorts", "CoviewedImpressions", "PrimaryImpressions", "PlatformComparableConversionsFromInteractionsRate", "PlatformComparableConversions", "PlatformComparableConversionsValue", "PlatformComparableConversionsValuePerCost", "PlatformComparableConversionsByConversionDate", "PlatformComparableConversionsValueByConversionDate", "PlatformComparableConversionsFromInteractionsValuePerInteraction", "CostPerPlatformComparableConversion", "ValuePerPlatformComparableConversion", "ValuePerPlatformComparableConversionsByConversionDate", "CostConvertedCurrencyPerPlatformComparableConversion", "ValueAdjustment", "AllValueAdjustment", "ClicksUniqueQueryClusters", "ConversionsUniqueQueryClusters", "ImpressionsUniqueQueryClusters", "VideoWatchTimeDurationMillis", "AverageVideoWatchTimeDurationMillis", "Svr", "ActiveViewAudibilityMeasurableImpressions", "ActiveViewAudibilityMeasurableImpressionsRate", "ActiveViewAudibilityInvalidMeasurableImpressionsRate", "ActiveViewAudibilityInvalidGivtMeasurableImpressionsRate", "ActiveViewAudibleImpressions", "ActiveViewAudibleImpressionsRate", "ActiveViewAudibleTwoSecondsImpressions", "ActiveViewAudibleTwoSecondsImpressionsRate", "ActiveViewAudibleThirtySecondsImpressions", "ActiveViewAudibleThirtySecondsImpressionsRate", "ActiveViewAudibleQuartileP25Rate", "ActiveViewAudibleQuartileP50Rate", "ActiveViewAudibleQuartileP75Rate", "ActiveViewAudibleQuartileP100Rate" }, new[]{ "AbsoluteTopImpressionPercentage", "ActiveViewCpm", "ActiveViewCtr", "ActiveViewImpressions", "ActiveViewMeasurability", "ActiveViewMeasurableCostMicros", "ActiveViewMeasurableImpressions", "ActiveViewViewability", "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversionsValueByConversionDate", "AllNewCustomerLifetimeValue", "AllConversions", "AllConversionsByConversionDate", "AllConversionsValuePerCost", "AllConversionsFromClickToCall", "AllConversionsFromDirections", "AllConversionsFromInteractionsValuePerInteraction", "AllConversionsFromMenu", "AllConversionsFromOrder", "AllConversionsFromOtherEngagement", "AllConversionsFromStoreVisit", "AllConversionsFromStoreWebsite", "AuctionInsightSearchAbsoluteTopImpressionPercentage", "AuctionInsightSearchImpressionShare", "AuctionInsightSearchOutrankingShare", "AuctionInsightSearchOverlapRate", "AuctionInsightSearchPositionAboveRate", "AuctionInsightSearchTopImpressionPercentage", "AverageCost", "AverageCpc", "AverageCpe", "AverageCpm", "TrueviewAverageCpv", "AveragePageViews", "AverageTimeOnSite", "BenchmarkAverageMaxCpc", "BiddableAppInstallConversions", "BiddableAppPostInstallConversions", "BiddableCohortAppPostInstallConversions", "BenchmarkCtr", "BounceRate", "Clicks", "CombinedClicks", "CombinedClicksPerQuery", "CombinedQueries", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValueByConversionDate", "NewCustomerLifetimeValue", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "ConversionsByConversionDate", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CostPerCurrentModelAttributedConversion", "CrossDeviceConversions", "CrossDeviceConversionsByConversionDate", "CrossDeviceConversionsValue", "CrossDeviceConversionsValueMicros", "CrossDeviceConversionsValueByConversionDate", "Ctr", "CurrentModelAttributedConversions", "CurrentModelAttributedConversionsFromInteractionsRate", "CurrentModelAttributedConversionsFromInteractionsValuePerInteraction", "CurrentModelAttributedConversionsValue", "CurrentModelAttributedConversionsValuePerCost", "EngagementRate", "Engagements", "HotelAverageLeadValueMicros", "HotelCommissionRateMicros", "HotelExpectedCommissionCost", "HotelPriceDifferencePercentage", "HotelEligibleImpressions", "HistoricalQualityScore", "GmailForwards", "GmailSaves", "GmailSecondaryClicks", "ImpressionsFromStoreReach", "Impressions", "InteractionRate", "Interactions", "InvalidClickRate", "InvalidClicks", "GeneralInvalidClickRate", "GeneralInvalidClicks", "MessageChats", "MessageImpressions", "MessageChatRate", "MobileFriendlyClicksPercentage", "OptimizationScoreUplift", "OptimizationScoreUrl", "OrganicClicks", "OrganicClicksPerQuery", "OrganicImpressions", "OrganicImpressionsPerQuery", "OrganicQueries", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchAbsoluteTopImpressionShare", "SearchBudgetLostAbsoluteTopImpressionShare", "SearchBudgetLostImpressionShare", "SearchBudgetLostTopImpressionShare", "SearchClickShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostAbsoluteTopImpressionShare", "SearchRankLostImpressionShare", "SearchRankLostTopImpressionShare", "SearchTopImpressionShare", "SearchVolume", "SpeedScore", "AverageTargetCpaMicros", "AverageTargetRoas", "TopImpressionPercentage", "ValidAcceleratedMobilePagesClicksPercentage", "ValuePerAllConversions", "ValuePerAllConversionsByConversionDate", "ValuePerConversion", "ValuePerConversionsByConversionDate", "ValuePerCurrentModelAttributedConversion", "VideoQuartileP100Rate", "VideoQuartileP25Rate", "VideoQuartileP50Rate", "VideoQuartileP75Rate", "VideoTrueviewViewRate", "VideoTrueviewViews", "ViewThroughConversions", "AllConversionsFromLocationAssetClickToCall", "AllConversionsFromLocationAssetDirections", "AllConversionsFromLocationAssetMenu", "AllConversionsFromLocationAssetOrder", "AllConversionsFromLocationAssetOtherEngagement", "AllConversionsFromLocationAssetStoreVisits", "AllConversionsFromLocationAssetWebsite", "EligibleImpressionsFromLocationAssetStoreReach", "ViewThroughConversionsFromLocationAssetClickToCall", "ViewThroughConversionsFromLocationAssetDirections", "ViewThroughConversionsFromLocationAssetMenu", "ViewThroughConversionsFromLocationAssetOrder", "ViewThroughConversionsFromLocationAssetOtherEngagement", "ViewThroughConversionsFromLocationAssetStoreVisits", "ViewThroughConversionsFromLocationAssetWebsite", "Orders", "AverageOrderValueMicros", "AverageCartSize", "CostOfGoodsSoldMicros", "GrossProfitMicros", "GrossProfitMargin", "RevenueMicros", "UnitsSold", "CrossSellCostOfGoodsSoldMicros", "CrossSellGrossProfitMicros", "CrossSellRevenueMicros", "CrossSellUnitsSold", "LeadCostOfGoodsSoldMicros", "LeadGrossProfitMicros", "LeadRevenueMicros", "LeadUnitsSold", "UniqueUsers", "AverageImpressionFrequencyPerUser", "LinkedEntitiesCount", "AssetPinnedTotalCount", "AssetPinnedAsHeadlinePositionOneCount", "AssetPinnedAsHeadlinePositionTwoCount", "AssetPinnedAsHeadlinePositionThreeCount", "AssetPinnedAsDescriptionPositionOneCount", "AssetPinnedAsDescriptionPositionTwoCount", "StoreVisitsLastClickModelAttributedConversions", "ResultsConversionsPurchase", "VideoTrueviewViewRateInFeed", "VideoTrueviewViewRateInStream", "VideoTrueviewViewRateShorts", "CoviewedImpressions", "PrimaryImpressions", "PlatformComparableConversionsFromInteractionsRate", "PlatformComparableConversions", "PlatformComparableConversionsValue", "PlatformComparableConversionsValuePerCost", "PlatformComparableConversionsByConversionDate", "PlatformComparableConversionsValueByConversionDate", "PlatformComparableConversionsFromInteractionsValuePerInteraction", "CostPerPlatformComparableConversion", "ValuePerPlatformComparableConversion", "ValuePerPlatformComparableConversionsByConversionDate", "CostConvertedCurrencyPerPlatformComparableConversion", "ValueAdjustment", "AllValueAdjustment", "ClicksUniqueQueryClusters", "ConversionsUniqueQueryClusters", "ImpressionsUniqueQueryClusters", "VideoWatchTimeDurationMillis", "AverageVideoWatchTimeDurationMillis", "Svr", "ActiveViewAudibilityMeasurableImpressions", "ActiveViewAudibilityMeasurableImpressionsRate", "ActiveViewAudibilityInvalidMeasurableImpressionsRate", "ActiveViewAudibilityInvalidGivtMeasurableImpressionsRate", "ActiveViewAudibleImpressions", "ActiveViewAudibleImpressionsRate", "ActiveViewAudibleTwoSecondsImpressions", "ActiveViewAudibleTwoSecondsImpressionsRate", "ActiveViewAudibleThirtySecondsImpressions", "ActiveViewAudibleThirtySecondsImpressionsRate", "ActiveViewAudibleQuartileP25Rate", "ActiveViewAudibleQuartileP50Rate", "ActiveViewAudibleQuartileP75Rate", "ActiveViewAudibleQuartileP100Rate" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Common.Metrics), global::Google.Ads.GoogleAds.V23.Common.Metrics.Parser, new[]{ "AbsoluteTopImpressionPercentage", "ActiveViewCpm", "ActiveViewCtr", "ActiveViewImpressions", "ActiveViewMeasurability", "ActiveViewMeasurableCostMicros", "ActiveViewMeasurableImpressions", "ActiveViewViewability", "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversionsValueByConversionDate", "AllNewCustomerLifetimeValue", "AllConversions", "AllConversionsByConversionDate", "AllConversionsValuePerCost", "AllConversionsFromClickToCall", "AllConversionsFromDirections", "AllConversionsFromInteractionsValuePerInteraction", "AllConversionsFromMenu", "AllConversionsFromOrder", "AllConversionsFromOtherEngagement", "AllConversionsFromStoreVisit", "AllConversionsFromStoreWebsite", "AuctionInsightSearchAbsoluteTopImpressionPercentage", "AuctionInsightSearchImpressionShare", "AuctionInsightSearchOutrankingShare", "AuctionInsightSearchOverlapRate", "AuctionInsightSearchPositionAboveRate", "AuctionInsightSearchTopImpressionPercentage", "AverageCost", "AverageCpc", "AverageCpe", "AverageCpm", "TrueviewAverageCpv", "AveragePageViews", "AverageTimeOnSite", "BenchmarkAverageMaxCpc", "BiddableAppInstallConversions", "BiddableAppPostInstallConversions", "BiddableCohortAppPostInstallConversions", "BenchmarkCtr", "BounceRate", "Clicks", "CombinedClicks", "CombinedClicksPerQuery", "CombinedQueries", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValueByConversionDate", "NewCustomerLifetimeValue", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "ConversionsByConversionDate", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CostPerCurrentModelAttributedConversion", "CrossDeviceConversions", "CrossDeviceConversionsByConversionDate", "CrossDeviceConversionsValue", "CrossDeviceConversionsValueMicros", "CrossDeviceConversionsValueByConversionDate", "Ctr", "CurrentModelAttributedConversions", "CurrentModelAttributedConversionsFromInteractionsRate", "CurrentModelAttributedConversionsFromInteractionsValuePerInteraction", "CurrentModelAttributedConversionsValue", "CurrentModelAttributedConversionsValuePerCost", "EngagementRate", "Engagements", "HotelAverageLeadValueMicros", "HotelCommissionRateMicros", "HotelExpectedCommissionCost", "HotelPriceDifferencePercentage", "HotelEligibleImpressions", "HistoricalCreativeQualityScore", "HistoricalLandingPageQualityScore", "HistoricalQualityScore", "HistoricalSearchPredictedCtr", "GmailForwards", "GmailSaves", "GmailSecondaryClicks", "ImpressionsFromStoreReach", "Impressions", "InteractionRate", "Interactions", "InteractionEventTypes", "InvalidClickRate", "InvalidClicks", "GeneralInvalidClickRate", "GeneralInvalidClicks", "MessageChats", "MessageImpressions", "MessageChatRate", "MobileFriendlyClicksPercentage", "OptimizationScoreUplift", "OptimizationScoreUrl", "OrganicClicks", "OrganicClicksPerQuery", "OrganicImpressions", "OrganicImpressionsPerQuery", "OrganicQueries", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchAbsoluteTopImpressionShare", "SearchBudgetLostAbsoluteTopImpressionShare", "SearchBudgetLostImpressionShare", "SearchBudgetLostTopImpressionShare", "SearchClickShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostAbsoluteTopImpressionShare", "SearchRankLostImpressionShare", "SearchRankLostTopImpressionShare", "SearchTopImpressionShare", "SearchVolume", "SpeedScore", "AverageTargetCpaMicros", "AverageTargetRoas", "TopImpressionPercentage", "ValidAcceleratedMobilePagesClicksPercentage", "ValuePerAllConversions", "ValuePerAllConversionsByConversionDate", "ValuePerConversion", "ValuePerConversionsByConversionDate", "ValuePerCurrentModelAttributedConversion", "VideoQuartileP100Rate", "VideoQuartileP25Rate", "VideoQuartileP50Rate", "VideoQuartileP75Rate", "VideoTrueviewViewRate", "VideoTrueviewViews", "ViewThroughConversions", "SkAdNetworkInstalls", "SkAdNetworkTotalConversions", "PublisherPurchasedClicks", "PublisherOrganicClicks", "PublisherUnknownClicks", "AllConversionsFromLocationAssetClickToCall", "AllConversionsFromLocationAssetDirections", "AllConversionsFromLocationAssetMenu", "AllConversionsFromLocationAssetOrder", "AllConversionsFromLocationAssetOtherEngagement", "AllConversionsFromLocationAssetStoreVisits", "AllConversionsFromLocationAssetWebsite", "EligibleImpressionsFromLocationAssetStoreReach", "ViewThroughConversionsFromLocationAssetClickToCall", "ViewThroughConversionsFromLocationAssetDirections", "ViewThroughConversionsFromLocationAssetMenu", "ViewThroughConversionsFromLocationAssetOrder", "ViewThroughConversionsFromLocationAssetOtherEngagement", "ViewThroughConversionsFromLocationAssetStoreVisits", "ViewThroughConversionsFromLocationAssetWebsite", "Orders", "AverageOrderValueMicros", "AverageCartSize", "CostOfGoodsSoldMicros", "GrossProfitMicros", "GrossProfitMargin", "RevenueMicros", "UnitsSold", "CrossSellCostOfGoodsSoldMicros", "CrossSellGrossProfitMicros", "CrossSellRevenueMicros", "CrossSellUnitsSold", "LeadCostOfGoodsSoldMicros", "LeadGrossProfitMicros", "LeadRevenueMicros", "LeadUnitsSold", "UniqueUsers", "AverageImpressionFrequencyPerUser", "LinkedEntitiesCount", "LinkedSampleEntities", "AssetPinnedTotalCount", "AssetPinnedAsHeadlinePositionOneCount", "AssetPinnedAsHeadlinePositionTwoCount", "AssetPinnedAsHeadlinePositionThreeCount", "AssetPinnedAsDescriptionPositionOneCount", "AssetPinnedAsDescriptionPositionTwoCount", "StoreVisitsLastClickModelAttributedConversions", "ResultsConversionsPurchase", "VideoTrueviewViewRateInFeed", "VideoTrueviewViewRateInStream", "VideoTrueviewViewRateShorts", "CoviewedImpressions", "PrimaryImpressions", "PlatformComparableConversionsFromInteractionsRate", "PlatformComparableConversions", "PlatformComparableConversionsValue", "PlatformComparableConversionsValuePerCost", "PlatformComparableConversionsByConversionDate", "PlatformComparableConversionsValueByConversionDate", "PlatformComparableConversionsFromInteractionsValuePerInteraction", "CostPerPlatformComparableConversion", "ValuePerPlatformComparableConversion", "ValuePerPlatformComparableConversionsByConversionDate", "CostConvertedCurrencyPerPlatformComparableConversion", "UniqueUsersTwoPlus", "UniqueUsersThreePlus", "UniqueUsersFourPlus", "UniqueUsersFivePlus", "UniqueUsersTenPlus", "ValueAdjustment", "AllValueAdjustment", "ClicksUniqueQueryClusters", "ConversionsUniqueQueryClusters", "ImpressionsUniqueQueryClusters", "VideoWatchTimeDurationMillis", "AverageVideoWatchTimeDurationMillis", "Svr", "ActiveViewAudibilityMeasurableImpressions", "ActiveViewAudibilityMeasurableImpressionsRate", "ActiveViewAudibilityInvalidMeasurableImpressionsRate", "ActiveViewAudibilityInvalidGivtMeasurableImpressionsRate", "ActiveViewAudibleImpressions", "ActiveViewAudibleImpressionsRate", "ActiveViewAudibleTwoSecondsImpressions", "ActiveViewAudibleTwoSecondsImpressionsRate", "ActiveViewAudibleThirtySecondsImpressions", "ActiveViewAudibleThirtySecondsImpressionsRate", "ActiveViewAudibleQuartileP25Rate", "ActiveViewAudibleQuartileP50Rate", "ActiveViewAudibleQuartileP75Rate", "ActiveViewAudibleQuartileP100Rate", "BiddableIndirectInstallFirstInAppConversionMicros" }, new[]{ "AbsoluteTopImpressionPercentage", "ActiveViewCpm", "ActiveViewCtr", "ActiveViewImpressions", "ActiveViewMeasurability", "ActiveViewMeasurableCostMicros", "ActiveViewMeasurableImpressions", "ActiveViewViewability", "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversionsValueByConversionDate", "AllNewCustomerLifetimeValue", "AllConversions", "AllConversionsByConversionDate", "AllConversionsValuePerCost", "AllConversionsFromClickToCall", "AllConversionsFromDirections", "AllConversionsFromInteractionsValuePerInteraction", "AllConversionsFromMenu", "AllConversionsFromOrder", "AllConversionsFromOtherEngagement", "AllConversionsFromStoreVisit", "AllConversionsFromStoreWebsite", "AuctionInsightSearchAbsoluteTopImpressionPercentage", "AuctionInsightSearchImpressionShare", "AuctionInsightSearchOutrankingShare", "AuctionInsightSearchOverlapRate", "AuctionInsightSearchPositionAboveRate", "AuctionInsightSearchTopImpressionPercentage", "AverageCost", "AverageCpc", "AverageCpe", "AverageCpm", "TrueviewAverageCpv", "AveragePageViews", "AverageTimeOnSite", "BenchmarkAverageMaxCpc", "BiddableAppInstallConversions", "BiddableAppPostInstallConversions", "BiddableCohortAppPostInstallConversions", "BenchmarkCtr", "BounceRate", "Clicks", "CombinedClicks", "CombinedClicksPerQuery", "CombinedQueries", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValueByConversionDate", "NewCustomerLifetimeValue", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "ConversionsByConversionDate", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CostPerCurrentModelAttributedConversion", "CrossDeviceConversions", "CrossDeviceConversionsByConversionDate", "CrossDeviceConversionsValue", "CrossDeviceConversionsValueMicros", "CrossDeviceConversionsValueByConversionDate", "Ctr", "CurrentModelAttributedConversions", "CurrentModelAttributedConversionsFromInteractionsRate", "CurrentModelAttributedConversionsFromInteractionsValuePerInteraction", "CurrentModelAttributedConversionsValue", "CurrentModelAttributedConversionsValuePerCost", "EngagementRate", "Engagements", "HotelAverageLeadValueMicros", "HotelCommissionRateMicros", "HotelExpectedCommissionCost", "HotelPriceDifferencePercentage", "HotelEligibleImpressions", "HistoricalQualityScore", "GmailForwards", "GmailSaves", "GmailSecondaryClicks", "ImpressionsFromStoreReach", "Impressions", "InteractionRate", "Interactions", "InvalidClickRate", "InvalidClicks", "GeneralInvalidClickRate", "GeneralInvalidClicks", "MessageChats", "MessageImpressions", "MessageChatRate", "MobileFriendlyClicksPercentage", "OptimizationScoreUplift", "OptimizationScoreUrl", "OrganicClicks", "OrganicClicksPerQuery", "OrganicImpressions", "OrganicImpressionsPerQuery", "OrganicQueries", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchAbsoluteTopImpressionShare", "SearchBudgetLostAbsoluteTopImpressionShare", "SearchBudgetLostImpressionShare", "SearchBudgetLostTopImpressionShare", "SearchClickShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostAbsoluteTopImpressionShare", "SearchRankLostImpressionShare", "SearchRankLostTopImpressionShare", "SearchTopImpressionShare", "SearchVolume", "SpeedScore", "AverageTargetCpaMicros", "AverageTargetRoas", "TopImpressionPercentage", "ValidAcceleratedMobilePagesClicksPercentage", "ValuePerAllConversions", "ValuePerAllConversionsByConversionDate", "ValuePerConversion", "ValuePerConversionsByConversionDate", "ValuePerCurrentModelAttributedConversion", "VideoQuartileP100Rate", "VideoQuartileP25Rate", "VideoQuartileP50Rate", "VideoQuartileP75Rate", "VideoTrueviewViewRate", "VideoTrueviewViews", "ViewThroughConversions", "AllConversionsFromLocationAssetClickToCall", "AllConversionsFromLocationAssetDirections", "AllConversionsFromLocationAssetMenu", "AllConversionsFromLocationAssetOrder", "AllConversionsFromLocationAssetOtherEngagement", "AllConversionsFromLocationAssetStoreVisits", "AllConversionsFromLocationAssetWebsite", "EligibleImpressionsFromLocationAssetStoreReach", "ViewThroughConversionsFromLocationAssetClickToCall", "ViewThroughConversionsFromLocationAssetDirections", "ViewThroughConversionsFromLocationAssetMenu", "ViewThroughConversionsFromLocationAssetOrder", "ViewThroughConversionsFromLocationAssetOtherEngagement", "ViewThroughConversionsFromLocationAssetStoreVisits", "ViewThroughConversionsFromLocationAssetWebsite", "Orders", "AverageOrderValueMicros", "AverageCartSize", "CostOfGoodsSoldMicros", "GrossProfitMicros", "GrossProfitMargin", "RevenueMicros", "UnitsSold", "CrossSellCostOfGoodsSoldMicros", "CrossSellGrossProfitMicros", "CrossSellRevenueMicros", "CrossSellUnitsSold", "LeadCostOfGoodsSoldMicros", "LeadGrossProfitMicros", "LeadRevenueMicros", "LeadUnitsSold", "UniqueUsers", "AverageImpressionFrequencyPerUser", "LinkedEntitiesCount", "AssetPinnedTotalCount", "AssetPinnedAsHeadlinePositionOneCount", "AssetPinnedAsHeadlinePositionTwoCount", "AssetPinnedAsHeadlinePositionThreeCount", "AssetPinnedAsDescriptionPositionOneCount", "AssetPinnedAsDescriptionPositionTwoCount", "StoreVisitsLastClickModelAttributedConversions", "ResultsConversionsPurchase", "VideoTrueviewViewRateInFeed", "VideoTrueviewViewRateInStream", "VideoTrueviewViewRateShorts", "CoviewedImpressions", "PrimaryImpressions", "PlatformComparableConversionsFromInteractionsRate", "PlatformComparableConversions", "PlatformComparableConversionsValue", "PlatformComparableConversionsValuePerCost", "PlatformComparableConversionsByConversionDate", "PlatformComparableConversionsValueByConversionDate", "PlatformComparableConversionsFromInteractionsValuePerInteraction", "CostPerPlatformComparableConversion", "ValuePerPlatformComparableConversion", "ValuePerPlatformComparableConversionsByConversionDate", "CostConvertedCurrencyPerPlatformComparableConversion", "UniqueUsersTwoPlus", "UniqueUsersThreePlus", "UniqueUsersFourPlus", "UniqueUsersFivePlus", "UniqueUsersTenPlus", "ValueAdjustment", "AllValueAdjustment", "ClicksUniqueQueryClusters", "ConversionsUniqueQueryClusters", "ImpressionsUniqueQueryClusters", "VideoWatchTimeDurationMillis", "AverageVideoWatchTimeDurationMillis", "Svr", "ActiveViewAudibilityMeasurableImpressions", "ActiveViewAudibilityMeasurableImpressionsRate", "ActiveViewAudibilityInvalidMeasurableImpressionsRate", "ActiveViewAudibilityInvalidGivtMeasurableImpressionsRate", "ActiveViewAudibleImpressions", "ActiveViewAudibleImpressionsRate", "ActiveViewAudibleTwoSecondsImpressions", "ActiveViewAudibleTwoSecondsImpressionsRate", "ActiveViewAudibleThirtySecondsImpressions", "ActiveViewAudibleThirtySecondsImpressionsRate", "ActiveViewAudibleQuartileP25Rate", "ActiveViewAudibleQuartileP50Rate", "ActiveViewAudibleQuartileP75Rate", "ActiveViewAudibleQuartileP100Rate", "BiddableIndirectInstallFirstInAppConversionMicros" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Common.SearchVolumeRange), global::Google.Ads.GoogleAds.V23.Common.SearchVolumeRange.Parser, new[]{ "Min", "Max" }, new[]{ "Min", "Max" }, null, null, null)
           }));
     }
@@ -726,6 +736,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
       valuePerPlatformComparableConversion_ = other.valuePerPlatformComparableConversion_;
       valuePerPlatformComparableConversionsByConversionDate_ = other.valuePerPlatformComparableConversionsByConversionDate_;
       costConvertedCurrencyPerPlatformComparableConversion_ = other.costConvertedCurrencyPerPlatformComparableConversion_;
+      uniqueUsersTwoPlus_ = other.uniqueUsersTwoPlus_;
+      uniqueUsersThreePlus_ = other.uniqueUsersThreePlus_;
+      uniqueUsersFourPlus_ = other.uniqueUsersFourPlus_;
+      uniqueUsersFivePlus_ = other.uniqueUsersFivePlus_;
+      uniqueUsersTenPlus_ = other.uniqueUsersTenPlus_;
       valueAdjustment_ = other.valueAdjustment_;
       allValueAdjustment_ = other.allValueAdjustment_;
       clicksUniqueQueryClusters_ = other.clicksUniqueQueryClusters_;
@@ -748,6 +763,7 @@ namespace Google.Ads.GoogleAds.V23.Common {
       activeViewAudibleQuartileP50Rate_ = other.activeViewAudibleQuartileP50Rate_;
       activeViewAudibleQuartileP75Rate_ = other.activeViewAudibleQuartileP75Rate_;
       activeViewAudibleQuartileP100Rate_ = other.activeViewAudibleQuartileP100Rate_;
+      biddableIndirectInstallFirstInAppConversionMicros_ = other.biddableIndirectInstallFirstInAppConversionMicros_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1840,9 +1856,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double TrueviewAverageCpv {
-      get { if ((_hasBits6 & 2) != 0) { return trueviewAverageCpv_; } else { return TrueviewAverageCpvDefaultValue; } }
+      get { if ((_hasBits6 & 64) != 0) { return trueviewAverageCpv_; } else { return TrueviewAverageCpvDefaultValue; } }
       set {
-        _hasBits6 |= 2;
+        _hasBits6 |= 64;
         trueviewAverageCpv_ = value;
       }
     }
@@ -1850,13 +1866,13 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasTrueviewAverageCpv {
-      get { return (_hasBits6 & 2) != 0; }
+      get { return (_hasBits6 & 64) != 0; }
     }
     /// <summary>Clears the value of the "trueview_average_cpv" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearTrueviewAverageCpv() {
-      _hasBits6 &= ~2;
+      _hasBits6 &= ~64;
     }
 
     /// <summary>Field number for the "average_page_views" field.</summary>
@@ -5154,9 +5170,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double VideoTrueviewViewRate {
-      get { if ((_hasBits6 & 4) != 0) { return videoTrueviewViewRate_; } else { return VideoTrueviewViewRateDefaultValue; } }
+      get { if ((_hasBits6 & 128) != 0) { return videoTrueviewViewRate_; } else { return VideoTrueviewViewRateDefaultValue; } }
       set {
-        _hasBits6 |= 4;
+        _hasBits6 |= 128;
         videoTrueviewViewRate_ = value;
       }
     }
@@ -5164,13 +5180,13 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasVideoTrueviewViewRate {
-      get { return (_hasBits6 & 4) != 0; }
+      get { return (_hasBits6 & 128) != 0; }
     }
     /// <summary>Clears the value of the "video_trueview_view_rate" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearVideoTrueviewViewRate() {
-      _hasBits6 &= ~4;
+      _hasBits6 &= ~128;
     }
 
     /// <summary>Field number for the "video_trueview_views" field.</summary>
@@ -5184,9 +5200,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long VideoTrueviewViews {
-      get { if ((_hasBits6 & 8) != 0) { return videoTrueviewViews_; } else { return VideoTrueviewViewsDefaultValue; } }
+      get { if ((_hasBits6 & 256) != 0) { return videoTrueviewViews_; } else { return VideoTrueviewViewsDefaultValue; } }
       set {
-        _hasBits6 |= 8;
+        _hasBits6 |= 256;
         videoTrueviewViews_ = value;
       }
     }
@@ -5194,13 +5210,13 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasVideoTrueviewViews {
-      get { return (_hasBits6 & 8) != 0; }
+      get { return (_hasBits6 & 256) != 0; }
     }
     /// <summary>Clears the value of the "video_trueview_views" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearVideoTrueviewViews() {
-      _hasBits6 &= ~8;
+      _hasBits6 &= ~256;
     }
 
     /// <summary>Field number for the "view_through_conversions" field.</summary>
@@ -6815,9 +6831,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double VideoTrueviewViewRateInFeed {
-      get { if ((_hasBits6 & 16) != 0) { return videoTrueviewViewRateInFeed_; } else { return VideoTrueviewViewRateInFeedDefaultValue; } }
+      get { if ((_hasBits6 & 512) != 0) { return videoTrueviewViewRateInFeed_; } else { return VideoTrueviewViewRateInFeedDefaultValue; } }
       set {
-        _hasBits6 |= 16;
+        _hasBits6 |= 512;
         videoTrueviewViewRateInFeed_ = value;
       }
     }
@@ -6825,13 +6841,13 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasVideoTrueviewViewRateInFeed {
-      get { return (_hasBits6 & 16) != 0; }
+      get { return (_hasBits6 & 512) != 0; }
     }
     /// <summary>Clears the value of the "video_trueview_view_rate_in_feed" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearVideoTrueviewViewRateInFeed() {
-      _hasBits6 &= ~16;
+      _hasBits6 &= ~512;
     }
 
     /// <summary>Field number for the "video_trueview_view_rate_in_stream" field.</summary>
@@ -6846,9 +6862,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double VideoTrueviewViewRateInStream {
-      get { if ((_hasBits6 & 32) != 0) { return videoTrueviewViewRateInStream_; } else { return VideoTrueviewViewRateInStreamDefaultValue; } }
+      get { if ((_hasBits6 & 1024) != 0) { return videoTrueviewViewRateInStream_; } else { return VideoTrueviewViewRateInStreamDefaultValue; } }
       set {
-        _hasBits6 |= 32;
+        _hasBits6 |= 1024;
         videoTrueviewViewRateInStream_ = value;
       }
     }
@@ -6856,13 +6872,13 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasVideoTrueviewViewRateInStream {
-      get { return (_hasBits6 & 32) != 0; }
+      get { return (_hasBits6 & 1024) != 0; }
     }
     /// <summary>Clears the value of the "video_trueview_view_rate_in_stream" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearVideoTrueviewViewRateInStream() {
-      _hasBits6 &= ~32;
+      _hasBits6 &= ~1024;
     }
 
     /// <summary>Field number for the "video_trueview_view_rate_shorts" field.</summary>
@@ -6877,9 +6893,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double VideoTrueviewViewRateShorts {
-      get { if ((_hasBits6 & 64) != 0) { return videoTrueviewViewRateShorts_; } else { return VideoTrueviewViewRateShortsDefaultValue; } }
+      get { if ((_hasBits6 & 2048) != 0) { return videoTrueviewViewRateShorts_; } else { return VideoTrueviewViewRateShortsDefaultValue; } }
       set {
-        _hasBits6 |= 64;
+        _hasBits6 |= 2048;
         videoTrueviewViewRateShorts_ = value;
       }
     }
@@ -6887,13 +6903,13 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasVideoTrueviewViewRateShorts {
-      get { return (_hasBits6 & 64) != 0; }
+      get { return (_hasBits6 & 2048) != 0; }
     }
     /// <summary>Clears the value of the "video_trueview_view_rate_shorts" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearVideoTrueviewViewRateShorts() {
-      _hasBits6 &= ~64;
+      _hasBits6 &= ~2048;
     }
 
     /// <summary>Field number for the "coviewed_impressions" field.</summary>
@@ -7334,6 +7350,166 @@ namespace Google.Ads.GoogleAds.V23.Common {
       _hasBits5 &= ~33554432;
     }
 
+    /// <summary>Field number for the "unique_users_two_plus" field.</summary>
+    public const int UniqueUsersTwoPlusFieldNumber = 393;
+    private readonly static long UniqueUsersTwoPlusDefaultValue = 0L;
+
+    private long uniqueUsersTwoPlus_;
+    /// <summary>
+    /// This metric counts the unique individuals who were shown your video ad two
+    /// or more times within the selected date range. This metric cannot be
+    /// aggregated, and can only be requested for date ranges of 31 days or less.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long UniqueUsersTwoPlus {
+      get { if ((_hasBits5 & 67108864) != 0) { return uniqueUsersTwoPlus_; } else { return UniqueUsersTwoPlusDefaultValue; } }
+      set {
+        _hasBits5 |= 67108864;
+        uniqueUsersTwoPlus_ = value;
+      }
+    }
+    /// <summary>Gets whether the "unique_users_two_plus" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasUniqueUsersTwoPlus {
+      get { return (_hasBits5 & 67108864) != 0; }
+    }
+    /// <summary>Clears the value of the "unique_users_two_plus" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearUniqueUsersTwoPlus() {
+      _hasBits5 &= ~67108864;
+    }
+
+    /// <summary>Field number for the "unique_users_three_plus" field.</summary>
+    public const int UniqueUsersThreePlusFieldNumber = 394;
+    private readonly static long UniqueUsersThreePlusDefaultValue = 0L;
+
+    private long uniqueUsersThreePlus_;
+    /// <summary>
+    /// This metric counts the unique individuals who were shown your video ad
+    /// three or more times within the selected date range. This metric cannot be
+    /// aggregated, and can only be requested for date ranges of 31 days or less.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long UniqueUsersThreePlus {
+      get { if ((_hasBits5 & 134217728) != 0) { return uniqueUsersThreePlus_; } else { return UniqueUsersThreePlusDefaultValue; } }
+      set {
+        _hasBits5 |= 134217728;
+        uniqueUsersThreePlus_ = value;
+      }
+    }
+    /// <summary>Gets whether the "unique_users_three_plus" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasUniqueUsersThreePlus {
+      get { return (_hasBits5 & 134217728) != 0; }
+    }
+    /// <summary>Clears the value of the "unique_users_three_plus" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearUniqueUsersThreePlus() {
+      _hasBits5 &= ~134217728;
+    }
+
+    /// <summary>Field number for the "unique_users_four_plus" field.</summary>
+    public const int UniqueUsersFourPlusFieldNumber = 395;
+    private readonly static long UniqueUsersFourPlusDefaultValue = 0L;
+
+    private long uniqueUsersFourPlus_;
+    /// <summary>
+    /// This metric counts the unique individuals who were shown your video ad four
+    /// or more times within the selected date range. This metric cannot be
+    /// aggregated, and can only be requested for date ranges of 31 days or less.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long UniqueUsersFourPlus {
+      get { if ((_hasBits5 & 268435456) != 0) { return uniqueUsersFourPlus_; } else { return UniqueUsersFourPlusDefaultValue; } }
+      set {
+        _hasBits5 |= 268435456;
+        uniqueUsersFourPlus_ = value;
+      }
+    }
+    /// <summary>Gets whether the "unique_users_four_plus" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasUniqueUsersFourPlus {
+      get { return (_hasBits5 & 268435456) != 0; }
+    }
+    /// <summary>Clears the value of the "unique_users_four_plus" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearUniqueUsersFourPlus() {
+      _hasBits5 &= ~268435456;
+    }
+
+    /// <summary>Field number for the "unique_users_five_plus" field.</summary>
+    public const int UniqueUsersFivePlusFieldNumber = 396;
+    private readonly static long UniqueUsersFivePlusDefaultValue = 0L;
+
+    private long uniqueUsersFivePlus_;
+    /// <summary>
+    /// This metric counts the unique individuals who were shown your video ad five
+    /// or more times within the selected date range. This metric cannot be
+    /// aggregated, and can only be requested for date ranges of 31 days or less.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long UniqueUsersFivePlus {
+      get { if ((_hasBits5 & 536870912) != 0) { return uniqueUsersFivePlus_; } else { return UniqueUsersFivePlusDefaultValue; } }
+      set {
+        _hasBits5 |= 536870912;
+        uniqueUsersFivePlus_ = value;
+      }
+    }
+    /// <summary>Gets whether the "unique_users_five_plus" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasUniqueUsersFivePlus {
+      get { return (_hasBits5 & 536870912) != 0; }
+    }
+    /// <summary>Clears the value of the "unique_users_five_plus" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearUniqueUsersFivePlus() {
+      _hasBits5 &= ~536870912;
+    }
+
+    /// <summary>Field number for the "unique_users_ten_plus" field.</summary>
+    public const int UniqueUsersTenPlusFieldNumber = 397;
+    private readonly static long UniqueUsersTenPlusDefaultValue = 0L;
+
+    private long uniqueUsersTenPlus_;
+    /// <summary>
+    /// This metric counts the unique individuals who were shown your video ad ten
+    /// or more times within the selected date range. This metric cannot be
+    /// aggregated, and can only be requested for date ranges of 31 days or less.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long UniqueUsersTenPlus {
+      get { if ((_hasBits5 & 1073741824) != 0) { return uniqueUsersTenPlus_; } else { return UniqueUsersTenPlusDefaultValue; } }
+      set {
+        _hasBits5 |= 1073741824;
+        uniqueUsersTenPlus_ = value;
+      }
+    }
+    /// <summary>Gets whether the "unique_users_ten_plus" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasUniqueUsersTenPlus {
+      get { return (_hasBits5 & 1073741824) != 0; }
+    }
+    /// <summary>Clears the value of the "unique_users_ten_plus" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearUniqueUsersTenPlus() {
+      _hasBits5 &= ~1073741824;
+    }
+
     /// <summary>Field number for the "value_adjustment" field.</summary>
     public const int ValueAdjustmentFieldNumber = 398;
     private readonly static double ValueAdjustmentDefaultValue = 0D;
@@ -7346,9 +7522,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double ValueAdjustment {
-      get { if ((_hasBits5 & 67108864) != 0) { return valueAdjustment_; } else { return ValueAdjustmentDefaultValue; } }
+      get { if ((_hasBits5 & -2147483648) != 0) { return valueAdjustment_; } else { return ValueAdjustmentDefaultValue; } }
       set {
-        _hasBits5 |= 67108864;
+        _hasBits5 |= -2147483648;
         valueAdjustment_ = value;
       }
     }
@@ -7356,13 +7532,13 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasValueAdjustment {
-      get { return (_hasBits5 & 67108864) != 0; }
+      get { return (_hasBits5 & -2147483648) != 0; }
     }
     /// <summary>Clears the value of the "value_adjustment" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearValueAdjustment() {
-      _hasBits5 &= ~67108864;
+      _hasBits5 &= ~-2147483648;
     }
 
     /// <summary>Field number for the "all_value_adjustment" field.</summary>
@@ -7377,9 +7553,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double AllValueAdjustment {
-      get { if ((_hasBits5 & 134217728) != 0) { return allValueAdjustment_; } else { return AllValueAdjustmentDefaultValue; } }
+      get { if ((_hasBits6 & 1) != 0) { return allValueAdjustment_; } else { return AllValueAdjustmentDefaultValue; } }
       set {
-        _hasBits5 |= 134217728;
+        _hasBits6 |= 1;
         allValueAdjustment_ = value;
       }
     }
@@ -7387,13 +7563,13 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasAllValueAdjustment {
-      get { return (_hasBits5 & 134217728) != 0; }
+      get { return (_hasBits6 & 1) != 0; }
     }
     /// <summary>Clears the value of the "all_value_adjustment" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearAllValueAdjustment() {
-      _hasBits5 &= ~134217728;
+      _hasBits6 &= ~1;
     }
 
     /// <summary>Field number for the "clicks_unique_query_clusters" field.</summary>
@@ -7407,9 +7583,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long ClicksUniqueQueryClusters {
-      get { if ((_hasBits5 & 268435456) != 0) { return clicksUniqueQueryClusters_; } else { return ClicksUniqueQueryClustersDefaultValue; } }
+      get { if ((_hasBits6 & 2) != 0) { return clicksUniqueQueryClusters_; } else { return ClicksUniqueQueryClustersDefaultValue; } }
       set {
-        _hasBits5 |= 268435456;
+        _hasBits6 |= 2;
         clicksUniqueQueryClusters_ = value;
       }
     }
@@ -7417,13 +7593,13 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasClicksUniqueQueryClusters {
-      get { return (_hasBits5 & 268435456) != 0; }
+      get { return (_hasBits6 & 2) != 0; }
     }
     /// <summary>Clears the value of the "clicks_unique_query_clusters" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearClicksUniqueQueryClusters() {
-      _hasBits5 &= ~268435456;
+      _hasBits6 &= ~2;
     }
 
     /// <summary>Field number for the "conversions_unique_query_clusters" field.</summary>
@@ -7437,9 +7613,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long ConversionsUniqueQueryClusters {
-      get { if ((_hasBits5 & 536870912) != 0) { return conversionsUniqueQueryClusters_; } else { return ConversionsUniqueQueryClustersDefaultValue; } }
+      get { if ((_hasBits6 & 4) != 0) { return conversionsUniqueQueryClusters_; } else { return ConversionsUniqueQueryClustersDefaultValue; } }
       set {
-        _hasBits5 |= 536870912;
+        _hasBits6 |= 4;
         conversionsUniqueQueryClusters_ = value;
       }
     }
@@ -7447,13 +7623,13 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasConversionsUniqueQueryClusters {
-      get { return (_hasBits5 & 536870912) != 0; }
+      get { return (_hasBits6 & 4) != 0; }
     }
     /// <summary>Clears the value of the "conversions_unique_query_clusters" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearConversionsUniqueQueryClusters() {
-      _hasBits5 &= ~536870912;
+      _hasBits6 &= ~4;
     }
 
     /// <summary>Field number for the "impressions_unique_query_clusters" field.</summary>
@@ -7467,9 +7643,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long ImpressionsUniqueQueryClusters {
-      get { if ((_hasBits5 & 1073741824) != 0) { return impressionsUniqueQueryClusters_; } else { return ImpressionsUniqueQueryClustersDefaultValue; } }
+      get { if ((_hasBits6 & 8) != 0) { return impressionsUniqueQueryClusters_; } else { return ImpressionsUniqueQueryClustersDefaultValue; } }
       set {
-        _hasBits5 |= 1073741824;
+        _hasBits6 |= 8;
         impressionsUniqueQueryClusters_ = value;
       }
     }
@@ -7477,13 +7653,13 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasImpressionsUniqueQueryClusters {
-      get { return (_hasBits5 & 1073741824) != 0; }
+      get { return (_hasBits6 & 8) != 0; }
     }
     /// <summary>Clears the value of the "impressions_unique_query_clusters" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearImpressionsUniqueQueryClusters() {
-      _hasBits5 &= ~1073741824;
+      _hasBits6 &= ~8;
     }
 
     /// <summary>Field number for the "video_watch_time_duration_millis" field.</summary>
@@ -7501,9 +7677,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long VideoWatchTimeDurationMillis {
-      get { if ((_hasBits5 & -2147483648) != 0) { return videoWatchTimeDurationMillis_; } else { return VideoWatchTimeDurationMillisDefaultValue; } }
+      get { if ((_hasBits6 & 16) != 0) { return videoWatchTimeDurationMillis_; } else { return VideoWatchTimeDurationMillisDefaultValue; } }
       set {
-        _hasBits5 |= -2147483648;
+        _hasBits6 |= 16;
         videoWatchTimeDurationMillis_ = value;
       }
     }
@@ -7511,13 +7687,13 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasVideoWatchTimeDurationMillis {
-      get { return (_hasBits5 & -2147483648) != 0; }
+      get { return (_hasBits6 & 16) != 0; }
     }
     /// <summary>Clears the value of the "video_watch_time_duration_millis" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearVideoWatchTimeDurationMillis() {
-      _hasBits5 &= ~-2147483648;
+      _hasBits6 &= ~16;
     }
 
     /// <summary>Field number for the "average_video_watch_time_duration_millis" field.</summary>
@@ -7532,9 +7708,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long AverageVideoWatchTimeDurationMillis {
-      get { if ((_hasBits6 & 1) != 0) { return averageVideoWatchTimeDurationMillis_; } else { return AverageVideoWatchTimeDurationMillisDefaultValue; } }
+      get { if ((_hasBits6 & 32) != 0) { return averageVideoWatchTimeDurationMillis_; } else { return AverageVideoWatchTimeDurationMillisDefaultValue; } }
       set {
-        _hasBits6 |= 1;
+        _hasBits6 |= 32;
         averageVideoWatchTimeDurationMillis_ = value;
       }
     }
@@ -7542,13 +7718,13 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasAverageVideoWatchTimeDurationMillis {
-      get { return (_hasBits6 & 1) != 0; }
+      get { return (_hasBits6 & 32) != 0; }
     }
     /// <summary>Clears the value of the "average_video_watch_time_duration_millis" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearAverageVideoWatchTimeDurationMillis() {
-      _hasBits6 &= ~1;
+      _hasBits6 &= ~32;
     }
 
     /// <summary>Field number for the "svr" field.</summary>
@@ -7562,9 +7738,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long Svr {
-      get { if ((_hasBits6 & 128) != 0) { return svr_; } else { return SvrDefaultValue; } }
+      get { if ((_hasBits6 & 4096) != 0) { return svr_; } else { return SvrDefaultValue; } }
       set {
-        _hasBits6 |= 128;
+        _hasBits6 |= 4096;
         svr_ = value;
       }
     }
@@ -7572,13 +7748,13 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasSvr {
-      get { return (_hasBits6 & 128) != 0; }
+      get { return (_hasBits6 & 4096) != 0; }
     }
     /// <summary>Clears the value of the "svr" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearSvr() {
-      _hasBits6 &= ~128;
+      _hasBits6 &= ~4096;
     }
 
     /// <summary>Field number for the "active_view_audibility_measurable_impressions" field.</summary>
@@ -7593,9 +7769,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long ActiveViewAudibilityMeasurableImpressions {
-      get { if ((_hasBits6 & 256) != 0) { return activeViewAudibilityMeasurableImpressions_; } else { return ActiveViewAudibilityMeasurableImpressionsDefaultValue; } }
+      get { if ((_hasBits6 & 8192) != 0) { return activeViewAudibilityMeasurableImpressions_; } else { return ActiveViewAudibilityMeasurableImpressionsDefaultValue; } }
       set {
-        _hasBits6 |= 256;
+        _hasBits6 |= 8192;
         activeViewAudibilityMeasurableImpressions_ = value;
       }
     }
@@ -7603,13 +7779,13 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasActiveViewAudibilityMeasurableImpressions {
-      get { return (_hasBits6 & 256) != 0; }
+      get { return (_hasBits6 & 8192) != 0; }
     }
     /// <summary>Clears the value of the "active_view_audibility_measurable_impressions" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearActiveViewAudibilityMeasurableImpressions() {
-      _hasBits6 &= ~256;
+      _hasBits6 &= ~8192;
     }
 
     /// <summary>Field number for the "active_view_audibility_measurable_impressions_rate" field.</summary>
@@ -7625,9 +7801,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double ActiveViewAudibilityMeasurableImpressionsRate {
-      get { if ((_hasBits6 & 512) != 0) { return activeViewAudibilityMeasurableImpressionsRate_; } else { return ActiveViewAudibilityMeasurableImpressionsRateDefaultValue; } }
+      get { if ((_hasBits6 & 16384) != 0) { return activeViewAudibilityMeasurableImpressionsRate_; } else { return ActiveViewAudibilityMeasurableImpressionsRateDefaultValue; } }
       set {
-        _hasBits6 |= 512;
+        _hasBits6 |= 16384;
         activeViewAudibilityMeasurableImpressionsRate_ = value;
       }
     }
@@ -7635,13 +7811,13 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasActiveViewAudibilityMeasurableImpressionsRate {
-      get { return (_hasBits6 & 512) != 0; }
+      get { return (_hasBits6 & 16384) != 0; }
     }
     /// <summary>Clears the value of the "active_view_audibility_measurable_impressions_rate" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearActiveViewAudibilityMeasurableImpressionsRate() {
-      _hasBits6 &= ~512;
+      _hasBits6 &= ~16384;
     }
 
     /// <summary>Field number for the "active_view_audibility_invalid_measurable_impressions_rate" field.</summary>
@@ -7657,9 +7833,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double ActiveViewAudibilityInvalidMeasurableImpressionsRate {
-      get { if ((_hasBits6 & 1024) != 0) { return activeViewAudibilityInvalidMeasurableImpressionsRate_; } else { return ActiveViewAudibilityInvalidMeasurableImpressionsRateDefaultValue; } }
+      get { if ((_hasBits6 & 32768) != 0) { return activeViewAudibilityInvalidMeasurableImpressionsRate_; } else { return ActiveViewAudibilityInvalidMeasurableImpressionsRateDefaultValue; } }
       set {
-        _hasBits6 |= 1024;
+        _hasBits6 |= 32768;
         activeViewAudibilityInvalidMeasurableImpressionsRate_ = value;
       }
     }
@@ -7667,13 +7843,13 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasActiveViewAudibilityInvalidMeasurableImpressionsRate {
-      get { return (_hasBits6 & 1024) != 0; }
+      get { return (_hasBits6 & 32768) != 0; }
     }
     /// <summary>Clears the value of the "active_view_audibility_invalid_measurable_impressions_rate" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearActiveViewAudibilityInvalidMeasurableImpressionsRate() {
-      _hasBits6 &= ~1024;
+      _hasBits6 &= ~32768;
     }
 
     /// <summary>Field number for the "active_view_audibility_invalid_givt_measurable_impressions_rate" field.</summary>
@@ -7690,9 +7866,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double ActiveViewAudibilityInvalidGivtMeasurableImpressionsRate {
-      get { if ((_hasBits6 & 2048) != 0) { return activeViewAudibilityInvalidGivtMeasurableImpressionsRate_; } else { return ActiveViewAudibilityInvalidGivtMeasurableImpressionsRateDefaultValue; } }
+      get { if ((_hasBits6 & 65536) != 0) { return activeViewAudibilityInvalidGivtMeasurableImpressionsRate_; } else { return ActiveViewAudibilityInvalidGivtMeasurableImpressionsRateDefaultValue; } }
       set {
-        _hasBits6 |= 2048;
+        _hasBits6 |= 65536;
         activeViewAudibilityInvalidGivtMeasurableImpressionsRate_ = value;
       }
     }
@@ -7700,13 +7876,13 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasActiveViewAudibilityInvalidGivtMeasurableImpressionsRate {
-      get { return (_hasBits6 & 2048) != 0; }
+      get { return (_hasBits6 & 65536) != 0; }
     }
     /// <summary>Clears the value of the "active_view_audibility_invalid_givt_measurable_impressions_rate" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearActiveViewAudibilityInvalidGivtMeasurableImpressionsRate() {
-      _hasBits6 &= ~2048;
+      _hasBits6 &= ~65536;
     }
 
     /// <summary>Field number for the "active_view_audible_impressions" field.</summary>
@@ -7721,9 +7897,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long ActiveViewAudibleImpressions {
-      get { if ((_hasBits6 & 4096) != 0) { return activeViewAudibleImpressions_; } else { return ActiveViewAudibleImpressionsDefaultValue; } }
+      get { if ((_hasBits6 & 131072) != 0) { return activeViewAudibleImpressions_; } else { return ActiveViewAudibleImpressionsDefaultValue; } }
       set {
-        _hasBits6 |= 4096;
+        _hasBits6 |= 131072;
         activeViewAudibleImpressions_ = value;
       }
     }
@@ -7731,13 +7907,13 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasActiveViewAudibleImpressions {
-      get { return (_hasBits6 & 4096) != 0; }
+      get { return (_hasBits6 & 131072) != 0; }
     }
     /// <summary>Clears the value of the "active_view_audible_impressions" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearActiveViewAudibleImpressions() {
-      _hasBits6 &= ~4096;
+      _hasBits6 &= ~131072;
     }
 
     /// <summary>Field number for the "active_view_audible_impressions_rate" field.</summary>
@@ -7753,9 +7929,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double ActiveViewAudibleImpressionsRate {
-      get { if ((_hasBits6 & 8192) != 0) { return activeViewAudibleImpressionsRate_; } else { return ActiveViewAudibleImpressionsRateDefaultValue; } }
+      get { if ((_hasBits6 & 262144) != 0) { return activeViewAudibleImpressionsRate_; } else { return ActiveViewAudibleImpressionsRateDefaultValue; } }
       set {
-        _hasBits6 |= 8192;
+        _hasBits6 |= 262144;
         activeViewAudibleImpressionsRate_ = value;
       }
     }
@@ -7763,13 +7939,13 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasActiveViewAudibleImpressionsRate {
-      get { return (_hasBits6 & 8192) != 0; }
+      get { return (_hasBits6 & 262144) != 0; }
     }
     /// <summary>Clears the value of the "active_view_audible_impressions_rate" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearActiveViewAudibleImpressionsRate() {
-      _hasBits6 &= ~8192;
+      _hasBits6 &= ~262144;
     }
 
     /// <summary>Field number for the "active_view_audible_two_seconds_impressions" field.</summary>
@@ -7784,9 +7960,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long ActiveViewAudibleTwoSecondsImpressions {
-      get { if ((_hasBits6 & 16384) != 0) { return activeViewAudibleTwoSecondsImpressions_; } else { return ActiveViewAudibleTwoSecondsImpressionsDefaultValue; } }
+      get { if ((_hasBits6 & 524288) != 0) { return activeViewAudibleTwoSecondsImpressions_; } else { return ActiveViewAudibleTwoSecondsImpressionsDefaultValue; } }
       set {
-        _hasBits6 |= 16384;
+        _hasBits6 |= 524288;
         activeViewAudibleTwoSecondsImpressions_ = value;
       }
     }
@@ -7794,13 +7970,13 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasActiveViewAudibleTwoSecondsImpressions {
-      get { return (_hasBits6 & 16384) != 0; }
+      get { return (_hasBits6 & 524288) != 0; }
     }
     /// <summary>Clears the value of the "active_view_audible_two_seconds_impressions" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearActiveViewAudibleTwoSecondsImpressions() {
-      _hasBits6 &= ~16384;
+      _hasBits6 &= ~524288;
     }
 
     /// <summary>Field number for the "active_view_audible_two_seconds_impressions_rate" field.</summary>
@@ -7816,9 +7992,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double ActiveViewAudibleTwoSecondsImpressionsRate {
-      get { if ((_hasBits6 & 32768) != 0) { return activeViewAudibleTwoSecondsImpressionsRate_; } else { return ActiveViewAudibleTwoSecondsImpressionsRateDefaultValue; } }
+      get { if ((_hasBits6 & 1048576) != 0) { return activeViewAudibleTwoSecondsImpressionsRate_; } else { return ActiveViewAudibleTwoSecondsImpressionsRateDefaultValue; } }
       set {
-        _hasBits6 |= 32768;
+        _hasBits6 |= 1048576;
         activeViewAudibleTwoSecondsImpressionsRate_ = value;
       }
     }
@@ -7826,13 +8002,13 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasActiveViewAudibleTwoSecondsImpressionsRate {
-      get { return (_hasBits6 & 32768) != 0; }
+      get { return (_hasBits6 & 1048576) != 0; }
     }
     /// <summary>Clears the value of the "active_view_audible_two_seconds_impressions_rate" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearActiveViewAudibleTwoSecondsImpressionsRate() {
-      _hasBits6 &= ~32768;
+      _hasBits6 &= ~1048576;
     }
 
     /// <summary>Field number for the "active_view_audible_thirty_seconds_impressions" field.</summary>
@@ -7847,9 +8023,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long ActiveViewAudibleThirtySecondsImpressions {
-      get { if ((_hasBits6 & 65536) != 0) { return activeViewAudibleThirtySecondsImpressions_; } else { return ActiveViewAudibleThirtySecondsImpressionsDefaultValue; } }
+      get { if ((_hasBits6 & 2097152) != 0) { return activeViewAudibleThirtySecondsImpressions_; } else { return ActiveViewAudibleThirtySecondsImpressionsDefaultValue; } }
       set {
-        _hasBits6 |= 65536;
+        _hasBits6 |= 2097152;
         activeViewAudibleThirtySecondsImpressions_ = value;
       }
     }
@@ -7857,13 +8033,13 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasActiveViewAudibleThirtySecondsImpressions {
-      get { return (_hasBits6 & 65536) != 0; }
+      get { return (_hasBits6 & 2097152) != 0; }
     }
     /// <summary>Clears the value of the "active_view_audible_thirty_seconds_impressions" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearActiveViewAudibleThirtySecondsImpressions() {
-      _hasBits6 &= ~65536;
+      _hasBits6 &= ~2097152;
     }
 
     /// <summary>Field number for the "active_view_audible_thirty_seconds_impressions_rate" field.</summary>
@@ -7879,9 +8055,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double ActiveViewAudibleThirtySecondsImpressionsRate {
-      get { if ((_hasBits6 & 131072) != 0) { return activeViewAudibleThirtySecondsImpressionsRate_; } else { return ActiveViewAudibleThirtySecondsImpressionsRateDefaultValue; } }
+      get { if ((_hasBits6 & 4194304) != 0) { return activeViewAudibleThirtySecondsImpressionsRate_; } else { return ActiveViewAudibleThirtySecondsImpressionsRateDefaultValue; } }
       set {
-        _hasBits6 |= 131072;
+        _hasBits6 |= 4194304;
         activeViewAudibleThirtySecondsImpressionsRate_ = value;
       }
     }
@@ -7889,13 +8065,13 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasActiveViewAudibleThirtySecondsImpressionsRate {
-      get { return (_hasBits6 & 131072) != 0; }
+      get { return (_hasBits6 & 4194304) != 0; }
     }
     /// <summary>Clears the value of the "active_view_audible_thirty_seconds_impressions_rate" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearActiveViewAudibleThirtySecondsImpressionsRate() {
-      _hasBits6 &= ~131072;
+      _hasBits6 &= ~4194304;
     }
 
     /// <summary>Field number for the "active_view_audible_quartile_p25_rate" field.</summary>
@@ -7911,9 +8087,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double ActiveViewAudibleQuartileP25Rate {
-      get { if ((_hasBits6 & 262144) != 0) { return activeViewAudibleQuartileP25Rate_; } else { return ActiveViewAudibleQuartileP25RateDefaultValue; } }
+      get { if ((_hasBits6 & 8388608) != 0) { return activeViewAudibleQuartileP25Rate_; } else { return ActiveViewAudibleQuartileP25RateDefaultValue; } }
       set {
-        _hasBits6 |= 262144;
+        _hasBits6 |= 8388608;
         activeViewAudibleQuartileP25Rate_ = value;
       }
     }
@@ -7921,13 +8097,13 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasActiveViewAudibleQuartileP25Rate {
-      get { return (_hasBits6 & 262144) != 0; }
+      get { return (_hasBits6 & 8388608) != 0; }
     }
     /// <summary>Clears the value of the "active_view_audible_quartile_p25_rate" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearActiveViewAudibleQuartileP25Rate() {
-      _hasBits6 &= ~262144;
+      _hasBits6 &= ~8388608;
     }
 
     /// <summary>Field number for the "active_view_audible_quartile_p50_rate" field.</summary>
@@ -7943,9 +8119,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double ActiveViewAudibleQuartileP50Rate {
-      get { if ((_hasBits6 & 524288) != 0) { return activeViewAudibleQuartileP50Rate_; } else { return ActiveViewAudibleQuartileP50RateDefaultValue; } }
+      get { if ((_hasBits6 & 16777216) != 0) { return activeViewAudibleQuartileP50Rate_; } else { return ActiveViewAudibleQuartileP50RateDefaultValue; } }
       set {
-        _hasBits6 |= 524288;
+        _hasBits6 |= 16777216;
         activeViewAudibleQuartileP50Rate_ = value;
       }
     }
@@ -7953,13 +8129,13 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasActiveViewAudibleQuartileP50Rate {
-      get { return (_hasBits6 & 524288) != 0; }
+      get { return (_hasBits6 & 16777216) != 0; }
     }
     /// <summary>Clears the value of the "active_view_audible_quartile_p50_rate" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearActiveViewAudibleQuartileP50Rate() {
-      _hasBits6 &= ~524288;
+      _hasBits6 &= ~16777216;
     }
 
     /// <summary>Field number for the "active_view_audible_quartile_p75_rate" field.</summary>
@@ -7975,9 +8151,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double ActiveViewAudibleQuartileP75Rate {
-      get { if ((_hasBits6 & 1048576) != 0) { return activeViewAudibleQuartileP75Rate_; } else { return ActiveViewAudibleQuartileP75RateDefaultValue; } }
+      get { if ((_hasBits6 & 33554432) != 0) { return activeViewAudibleQuartileP75Rate_; } else { return ActiveViewAudibleQuartileP75RateDefaultValue; } }
       set {
-        _hasBits6 |= 1048576;
+        _hasBits6 |= 33554432;
         activeViewAudibleQuartileP75Rate_ = value;
       }
     }
@@ -7985,13 +8161,13 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasActiveViewAudibleQuartileP75Rate {
-      get { return (_hasBits6 & 1048576) != 0; }
+      get { return (_hasBits6 & 33554432) != 0; }
     }
     /// <summary>Clears the value of the "active_view_audible_quartile_p75_rate" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearActiveViewAudibleQuartileP75Rate() {
-      _hasBits6 &= ~1048576;
+      _hasBits6 &= ~33554432;
     }
 
     /// <summary>Field number for the "active_view_audible_quartile_p100_rate" field.</summary>
@@ -8007,9 +8183,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double ActiveViewAudibleQuartileP100Rate {
-      get { if ((_hasBits6 & 2097152) != 0) { return activeViewAudibleQuartileP100Rate_; } else { return ActiveViewAudibleQuartileP100RateDefaultValue; } }
+      get { if ((_hasBits6 & 67108864) != 0) { return activeViewAudibleQuartileP100Rate_; } else { return ActiveViewAudibleQuartileP100RateDefaultValue; } }
       set {
-        _hasBits6 |= 2097152;
+        _hasBits6 |= 67108864;
         activeViewAudibleQuartileP100Rate_ = value;
       }
     }
@@ -8017,13 +8193,44 @@ namespace Google.Ads.GoogleAds.V23.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasActiveViewAudibleQuartileP100Rate {
-      get { return (_hasBits6 & 2097152) != 0; }
+      get { return (_hasBits6 & 67108864) != 0; }
     }
     /// <summary>Clears the value of the "active_view_audible_quartile_p100_rate" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearActiveViewAudibleQuartileP100Rate() {
-      _hasBits6 &= ~2097152;
+      _hasBits6 &= ~67108864;
+    }
+
+    /// <summary>Field number for the "biddable_indirect_install_first_in_app_conversion_micros" field.</summary>
+    public const int BiddableIndirectInstallFirstInAppConversionMicrosFieldNumber = 426;
+    private readonly static long BiddableIndirectInstallFirstInAppConversionMicrosDefaultValue = 0L;
+
+    private long biddableIndirectInstallFirstInAppConversionMicros_;
+    /// <summary>
+    /// The number of biddable first in app conversions where the app install was
+    /// driven by interaction with a web campaign.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long BiddableIndirectInstallFirstInAppConversionMicros {
+      get { if ((_hasBits6 & 134217728) != 0) { return biddableIndirectInstallFirstInAppConversionMicros_; } else { return BiddableIndirectInstallFirstInAppConversionMicrosDefaultValue; } }
+      set {
+        _hasBits6 |= 134217728;
+        biddableIndirectInstallFirstInAppConversionMicros_ = value;
+      }
+    }
+    /// <summary>Gets whether the "biddable_indirect_install_first_in_app_conversion_micros" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasBiddableIndirectInstallFirstInAppConversionMicros {
+      get { return (_hasBits6 & 134217728) != 0; }
+    }
+    /// <summary>Clears the value of the "biddable_indirect_install_first_in_app_conversion_micros" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearBiddableIndirectInstallFirstInAppConversionMicros() {
+      _hasBits6 &= ~134217728;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8247,6 +8454,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ValuePerPlatformComparableConversion, other.ValuePerPlatformComparableConversion)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ValuePerPlatformComparableConversionsByConversionDate, other.ValuePerPlatformComparableConversionsByConversionDate)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(CostConvertedCurrencyPerPlatformComparableConversion, other.CostConvertedCurrencyPerPlatformComparableConversion)) return false;
+      if (UniqueUsersTwoPlus != other.UniqueUsersTwoPlus) return false;
+      if (UniqueUsersThreePlus != other.UniqueUsersThreePlus) return false;
+      if (UniqueUsersFourPlus != other.UniqueUsersFourPlus) return false;
+      if (UniqueUsersFivePlus != other.UniqueUsersFivePlus) return false;
+      if (UniqueUsersTenPlus != other.UniqueUsersTenPlus) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ValueAdjustment, other.ValueAdjustment)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(AllValueAdjustment, other.AllValueAdjustment)) return false;
       if (ClicksUniqueQueryClusters != other.ClicksUniqueQueryClusters) return false;
@@ -8269,6 +8481,7 @@ namespace Google.Ads.GoogleAds.V23.Common {
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ActiveViewAudibleQuartileP50Rate, other.ActiveViewAudibleQuartileP50Rate)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ActiveViewAudibleQuartileP75Rate, other.ActiveViewAudibleQuartileP75Rate)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ActiveViewAudibleQuartileP100Rate, other.ActiveViewAudibleQuartileP100Rate)) return false;
+      if (BiddableIndirectInstallFirstInAppConversionMicros != other.BiddableIndirectInstallFirstInAppConversionMicros) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -8482,6 +8695,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
       if (HasValuePerPlatformComparableConversion) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ValuePerPlatformComparableConversion);
       if (HasValuePerPlatformComparableConversionsByConversionDate) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ValuePerPlatformComparableConversionsByConversionDate);
       if (HasCostConvertedCurrencyPerPlatformComparableConversion) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(CostConvertedCurrencyPerPlatformComparableConversion);
+      if (HasUniqueUsersTwoPlus) hash ^= UniqueUsersTwoPlus.GetHashCode();
+      if (HasUniqueUsersThreePlus) hash ^= UniqueUsersThreePlus.GetHashCode();
+      if (HasUniqueUsersFourPlus) hash ^= UniqueUsersFourPlus.GetHashCode();
+      if (HasUniqueUsersFivePlus) hash ^= UniqueUsersFivePlus.GetHashCode();
+      if (HasUniqueUsersTenPlus) hash ^= UniqueUsersTenPlus.GetHashCode();
       if (HasValueAdjustment) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ValueAdjustment);
       if (HasAllValueAdjustment) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(AllValueAdjustment);
       if (HasClicksUniqueQueryClusters) hash ^= ClicksUniqueQueryClusters.GetHashCode();
@@ -8504,6 +8722,7 @@ namespace Google.Ads.GoogleAds.V23.Common {
       if (HasActiveViewAudibleQuartileP50Rate) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ActiveViewAudibleQuartileP50Rate);
       if (HasActiveViewAudibleQuartileP75Rate) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ActiveViewAudibleQuartileP75Rate);
       if (HasActiveViewAudibleQuartileP100Rate) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ActiveViewAudibleQuartileP100Rate);
+      if (HasBiddableIndirectInstallFirstInAppConversionMicros) hash ^= BiddableIndirectInstallFirstInAppConversionMicros.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -9316,6 +9535,26 @@ namespace Google.Ads.GoogleAds.V23.Common {
         output.WriteRawTag(193, 24);
         output.WriteDouble(CostConvertedCurrencyPerPlatformComparableConversion);
       }
+      if (HasUniqueUsersTwoPlus) {
+        output.WriteRawTag(200, 24);
+        output.WriteInt64(UniqueUsersTwoPlus);
+      }
+      if (HasUniqueUsersThreePlus) {
+        output.WriteRawTag(208, 24);
+        output.WriteInt64(UniqueUsersThreePlus);
+      }
+      if (HasUniqueUsersFourPlus) {
+        output.WriteRawTag(216, 24);
+        output.WriteInt64(UniqueUsersFourPlus);
+      }
+      if (HasUniqueUsersFivePlus) {
+        output.WriteRawTag(224, 24);
+        output.WriteInt64(UniqueUsersFivePlus);
+      }
+      if (HasUniqueUsersTenPlus) {
+        output.WriteRawTag(232, 24);
+        output.WriteInt64(UniqueUsersTenPlus);
+      }
       if (HasValueAdjustment) {
         output.WriteRawTag(241, 24);
         output.WriteDouble(ValueAdjustment);
@@ -9427,6 +9666,10 @@ namespace Google.Ads.GoogleAds.V23.Common {
       if (HasActiveViewAudibleQuartileP100Rate) {
         output.WriteRawTag(201, 26);
         output.WriteDouble(ActiveViewAudibleQuartileP100Rate);
+      }
+      if (HasBiddableIndirectInstallFirstInAppConversionMicros) {
+        output.WriteRawTag(208, 26);
+        output.WriteInt64(BiddableIndirectInstallFirstInAppConversionMicros);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -10232,6 +10475,26 @@ namespace Google.Ads.GoogleAds.V23.Common {
         output.WriteRawTag(193, 24);
         output.WriteDouble(CostConvertedCurrencyPerPlatformComparableConversion);
       }
+      if (HasUniqueUsersTwoPlus) {
+        output.WriteRawTag(200, 24);
+        output.WriteInt64(UniqueUsersTwoPlus);
+      }
+      if (HasUniqueUsersThreePlus) {
+        output.WriteRawTag(208, 24);
+        output.WriteInt64(UniqueUsersThreePlus);
+      }
+      if (HasUniqueUsersFourPlus) {
+        output.WriteRawTag(216, 24);
+        output.WriteInt64(UniqueUsersFourPlus);
+      }
+      if (HasUniqueUsersFivePlus) {
+        output.WriteRawTag(224, 24);
+        output.WriteInt64(UniqueUsersFivePlus);
+      }
+      if (HasUniqueUsersTenPlus) {
+        output.WriteRawTag(232, 24);
+        output.WriteInt64(UniqueUsersTenPlus);
+      }
       if (HasValueAdjustment) {
         output.WriteRawTag(241, 24);
         output.WriteDouble(ValueAdjustment);
@@ -10343,6 +10606,10 @@ namespace Google.Ads.GoogleAds.V23.Common {
       if (HasActiveViewAudibleQuartileP100Rate) {
         output.WriteRawTag(201, 26);
         output.WriteDouble(ActiveViewAudibleQuartileP100Rate);
+      }
+      if (HasBiddableIndirectInstallFirstInAppConversionMicros) {
+        output.WriteRawTag(208, 26);
+        output.WriteInt64(BiddableIndirectInstallFirstInAppConversionMicros);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -10968,6 +11235,21 @@ namespace Google.Ads.GoogleAds.V23.Common {
       if (HasCostConvertedCurrencyPerPlatformComparableConversion) {
         size += 2 + 8;
       }
+      if (HasUniqueUsersTwoPlus) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(UniqueUsersTwoPlus);
+      }
+      if (HasUniqueUsersThreePlus) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(UniqueUsersThreePlus);
+      }
+      if (HasUniqueUsersFourPlus) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(UniqueUsersFourPlus);
+      }
+      if (HasUniqueUsersFivePlus) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(UniqueUsersFivePlus);
+      }
+      if (HasUniqueUsersTenPlus) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(UniqueUsersTenPlus);
+      }
       if (HasValueAdjustment) {
         size += 2 + 8;
       }
@@ -11033,6 +11315,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
       }
       if (HasActiveViewAudibleQuartileP100Rate) {
         size += 2 + 8;
+      }
+      if (HasBiddableIndirectInstallFirstInAppConversionMicros) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(BiddableIndirectInstallFirstInAppConversionMicros);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -11663,6 +11948,21 @@ namespace Google.Ads.GoogleAds.V23.Common {
       if (other.HasCostConvertedCurrencyPerPlatformComparableConversion) {
         CostConvertedCurrencyPerPlatformComparableConversion = other.CostConvertedCurrencyPerPlatformComparableConversion;
       }
+      if (other.HasUniqueUsersTwoPlus) {
+        UniqueUsersTwoPlus = other.UniqueUsersTwoPlus;
+      }
+      if (other.HasUniqueUsersThreePlus) {
+        UniqueUsersThreePlus = other.UniqueUsersThreePlus;
+      }
+      if (other.HasUniqueUsersFourPlus) {
+        UniqueUsersFourPlus = other.UniqueUsersFourPlus;
+      }
+      if (other.HasUniqueUsersFivePlus) {
+        UniqueUsersFivePlus = other.UniqueUsersFivePlus;
+      }
+      if (other.HasUniqueUsersTenPlus) {
+        UniqueUsersTenPlus = other.UniqueUsersTenPlus;
+      }
       if (other.HasValueAdjustment) {
         ValueAdjustment = other.ValueAdjustment;
       }
@@ -11729,6 +12029,9 @@ namespace Google.Ads.GoogleAds.V23.Common {
       if (other.HasActiveViewAudibleQuartileP100Rate) {
         ActiveViewAudibleQuartileP100Rate = other.ActiveViewAudibleQuartileP100Rate;
       }
+      if (other.HasBiddableIndirectInstallFirstInAppConversionMicros) {
+        BiddableIndirectInstallFirstInAppConversionMicros = other.BiddableIndirectInstallFirstInAppConversionMicros;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -11740,7 +12043,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -12548,6 +12855,26 @@ namespace Google.Ads.GoogleAds.V23.Common {
             CostConvertedCurrencyPerPlatformComparableConversion = input.ReadDouble();
             break;
           }
+          case 3144: {
+            UniqueUsersTwoPlus = input.ReadInt64();
+            break;
+          }
+          case 3152: {
+            UniqueUsersThreePlus = input.ReadInt64();
+            break;
+          }
+          case 3160: {
+            UniqueUsersFourPlus = input.ReadInt64();
+            break;
+          }
+          case 3168: {
+            UniqueUsersFivePlus = input.ReadInt64();
+            break;
+          }
+          case 3176: {
+            UniqueUsersTenPlus = input.ReadInt64();
+            break;
+          }
           case 3185: {
             ValueAdjustment = input.ReadDouble();
             break;
@@ -12660,6 +12987,10 @@ namespace Google.Ads.GoogleAds.V23.Common {
             ActiveViewAudibleQuartileP100Rate = input.ReadDouble();
             break;
           }
+          case 3408: {
+            BiddableIndirectInstallFirstInAppConversionMicros = input.ReadInt64();
+            break;
+          }
         }
       }
     #endif
@@ -12671,7 +13002,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -13479,6 +13814,26 @@ namespace Google.Ads.GoogleAds.V23.Common {
             CostConvertedCurrencyPerPlatformComparableConversion = input.ReadDouble();
             break;
           }
+          case 3144: {
+            UniqueUsersTwoPlus = input.ReadInt64();
+            break;
+          }
+          case 3152: {
+            UniqueUsersThreePlus = input.ReadInt64();
+            break;
+          }
+          case 3160: {
+            UniqueUsersFourPlus = input.ReadInt64();
+            break;
+          }
+          case 3168: {
+            UniqueUsersFivePlus = input.ReadInt64();
+            break;
+          }
+          case 3176: {
+            UniqueUsersTenPlus = input.ReadInt64();
+            break;
+          }
           case 3185: {
             ValueAdjustment = input.ReadDouble();
             break;
@@ -13589,6 +13944,10 @@ namespace Google.Ads.GoogleAds.V23.Common {
           }
           case 3401: {
             ActiveViewAudibleQuartileP100Rate = input.ReadDouble();
+            break;
+          }
+          case 3408: {
+            BiddableIndirectInstallFirstInAppConversionMicros = input.ReadInt64();
             break;
           }
         }
@@ -13825,7 +14184,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -13848,7 +14211,11 @@ namespace Google.Ads.GoogleAds.V23.Common {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

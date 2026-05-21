@@ -26,27 +26,29 @@ namespace Google.Ads.GoogleAds.V23.Enums {
           string.Concat(
             "Cjlnb29nbGUvYWRzL2dvb2dsZWFkcy92MjMvZW51bXMvcmVhY2hfcGxhbl9h",
             "Z2VfcmFuZ2UucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5lbnVt",
-            "cyKLBQoVUmVhY2hQbGFuQWdlUmFuZ2VFbnVtIvEEChFSZWFjaFBsYW5BZ2VS",
+            "cyL3BQoVUmVhY2hQbGFuQWdlUmFuZ2VFbnVtIt0FChFSZWFjaFBsYW5BZ2VS",
             "YW5nZRIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIVCg9BR0VfUkFO",
             "R0VfMThfMjQQ2dkeEhMKD0FHRV9SQU5HRV8xOF8zNBACEhMKD0FHRV9SQU5H",
             "RV8xOF80NBADEhMKD0FHRV9SQU5HRV8xOF80ORAEEhMKD0FHRV9SQU5HRV8x",
             "OF81NBAFEhMKD0FHRV9SQU5HRV8xOF82NBAGEhYKEkFHRV9SQU5HRV8xOF82",
-            "NV9VUBAHEhMKD0FHRV9SQU5HRV8yMV8zNBAIEhUKD0FHRV9SQU5HRV8yNV8z",
-            "NBDa2R4SEwoPQUdFX1JBTkdFXzI1XzQ0EAkSEwoPQUdFX1JBTkdFXzI1XzQ5",
-            "EAoSEwoPQUdFX1JBTkdFXzI1XzU0EAsSEwoPQUdFX1JBTkdFXzI1XzY0EAwS",
-            "FgoSQUdFX1JBTkdFXzI1XzY1X1VQEA0SFQoPQUdFX1JBTkdFXzM1XzQ0ENvZ",
-            "HhITCg9BR0VfUkFOR0VfMzVfNDkQDhITCg9BR0VfUkFOR0VfMzVfNTQQDxIT",
-            "Cg9BR0VfUkFOR0VfMzVfNjQQEBIWChJBR0VfUkFOR0VfMzVfNjVfVVAQERIV",
-            "Cg9BR0VfUkFOR0VfNDVfNTQQ3NkeEhMKD0FHRV9SQU5HRV80NV82NBASEhYK",
-            "EkFHRV9SQU5HRV80NV82NV9VUBATEhYKEkFHRV9SQU5HRV81MF82NV9VUBAU",
-            "EhUKD0FHRV9SQU5HRV81NV82NBDd2R4SFgoSQUdFX1JBTkdFXzU1XzY1X1VQ",
-            "EBUSFQoPQUdFX1JBTkdFXzY1X1VQEN7ZHkLwAQoiY29tLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYyMy5lbnVtc0IWUmVhY2hQbGFuQWdlUmFuZ2VQcm90b1AB",
-            "WkNnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9n",
-            "b29nbGVhZHMvdjIzL2VudW1zO2VudW1zogIDR0FBqgIeR29vZ2xlLkFkcy5H",
-            "b29nbGVBZHMuVjIzLkVudW1zygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjIz",
-            "XEVudW1z6gIiR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjIzOjpFbnVtc2IG",
-            "cHJvdG8z"));
+            "NV9VUBAHEhMKD0FHRV9SQU5HRV8yMV8zNBAIEhMKD0FHRV9SQU5HRV8yMV80",
+            "NBAWEhMKD0FHRV9SQU5HRV8yMV80ORAXEhMKD0FHRV9SQU5HRV8yMV81NBAY",
+            "EhMKD0FHRV9SQU5HRV8yMV82NBAZEhYKEkFHRV9SQU5HRV8yMV82NV9VUBAa",
+            "EhUKD0FHRV9SQU5HRV8yNV8zNBDa2R4SEwoPQUdFX1JBTkdFXzI1XzQ0EAkS",
+            "EwoPQUdFX1JBTkdFXzI1XzQ5EAoSEwoPQUdFX1JBTkdFXzI1XzU0EAsSEwoP",
+            "QUdFX1JBTkdFXzI1XzY0EAwSFgoSQUdFX1JBTkdFXzI1XzY1X1VQEA0SFQoP",
+            "QUdFX1JBTkdFXzM1XzQ0ENvZHhITCg9BR0VfUkFOR0VfMzVfNDkQDhITCg9B",
+            "R0VfUkFOR0VfMzVfNTQQDxITCg9BR0VfUkFOR0VfMzVfNjQQEBIWChJBR0Vf",
+            "UkFOR0VfMzVfNjVfVVAQERIVCg9BR0VfUkFOR0VfNDVfNTQQ3NkeEhMKD0FH",
+            "RV9SQU5HRV80NV82NBASEhYKEkFHRV9SQU5HRV80NV82NV9VUBATEhYKEkFH",
+            "RV9SQU5HRV81MF82NV9VUBAUEhUKD0FHRV9SQU5HRV81NV82NBDd2R4SFgoS",
+            "QUdFX1JBTkdFXzU1XzY1X1VQEBUSFQoPQUdFX1JBTkdFXzY1X1VQEN7ZHkLw",
+            "AQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5lbnVtc0IWUmVhY2hQ",
+            "bGFuQWdlUmFuZ2VQcm90b1ABWkNnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90",
+            "by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjIzL2VudW1zO2VudW1zogID",
+            "R0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjIzLkVudW1zygIeR29vZ2xl",
+            "XEFkc1xHb29nbGVBZHNcVjIzXEVudW1z6gIiR29vZ2xlOjpBZHM6Okdvb2ds",
+            "ZUFkczo6VjIzOjpFbnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -187,7 +189,11 @@ namespace Google.Ads.GoogleAds.V23.Enums {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -202,7 +208,11 @@ namespace Google.Ads.GoogleAds.V23.Enums {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -260,6 +270,26 @@ namespace Google.Ads.GoogleAds.V23.Enums {
         /// Between 21 and 34 years old.
         /// </summary>
         [pbr::OriginalName("AGE_RANGE_21_34")] AgeRange2134 = 8,
+        /// <summary>
+        /// Between 21 and 44 years old.
+        /// </summary>
+        [pbr::OriginalName("AGE_RANGE_21_44")] AgeRange2144 = 22,
+        /// <summary>
+        /// Between 21 and 49 years old.
+        /// </summary>
+        [pbr::OriginalName("AGE_RANGE_21_49")] AgeRange2149 = 23,
+        /// <summary>
+        /// Between 21 and 54 years old.
+        /// </summary>
+        [pbr::OriginalName("AGE_RANGE_21_54")] AgeRange2154 = 24,
+        /// <summary>
+        /// Between 21 and 64 years old.
+        /// </summary>
+        [pbr::OriginalName("AGE_RANGE_21_64")] AgeRange2164 = 25,
+        /// <summary>
+        /// Between 21 and 65+ years old.
+        /// </summary>
+        [pbr::OriginalName("AGE_RANGE_21_65_UP")] AgeRange2165Up = 26,
         /// <summary>
         /// Between 25 and 34 years old.
         /// </summary>

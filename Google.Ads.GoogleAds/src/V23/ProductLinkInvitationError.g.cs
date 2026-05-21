@@ -26,17 +26,19 @@ namespace Google.Ads.GoogleAds.V23.Errors {
           string.Concat(
             "CkNnb29nbGUvYWRzL2dvb2dsZWFkcy92MjMvZXJyb3JzL3Byb2R1Y3RfbGlu",
             "a19pbnZpdGF0aW9uX2Vycm9yLnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52MjMuZXJyb3JzItUBCh5Qcm9kdWN0TGlua0ludml0YXRpb25FcnJvckVu",
-            "dW0isgEKGlByb2R1Y3RMaW5rSW52aXRhdGlvbkVycm9yEg8KC1VOU1BFQ0lG",
+            "cy52MjMuZXJyb3JzIoUCCh5Qcm9kdWN0TGlua0ludml0YXRpb25FcnJvckVu",
+            "dW0i4gEKGlByb2R1Y3RMaW5rSW52aXRhdGlvbkVycm9yEg8KC1VOU1BFQ0lG",
             "SUVEEAASCwoHVU5LTk9XThABEhIKDklOVkFMSURfU1RBVFVTEAISFQoRUEVS",
             "TUlTU0lPTl9ERU5JRUQQAxIaChZOT19JTlZJVEFUSU9OX1JFUVVJUkVEEAQS",
             "LworQ1VTVE9NRVJfTk9UX1BFUk1JVFRFRF9UT19DUkVBVEVfSU5WSVRBVElP",
-            "ThAFQv8BCiNjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmVycm9yc0If",
-            "UHJvZHVjdExpbmtJbnZpdGF0aW9uRXJyb3JQcm90b1ABWkVnb29nbGUuZ29s",
-            "YW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjIz",
-            "L2Vycm9ycztlcnJvcnOiAgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5W",
-            "MjMuRXJyb3JzygIfR29vZ2xlXEFkc1xHb29nbGVBZHNcVjIzXEVycm9yc+oC",
-            "I0dvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyMzo6RXJyb3JzYgZwcm90bzM="));
+            "ThAFEi4KKklOVkFMSURfQURWRVJUSVNJTkdfUEFSVE5FUl9BTExPV0VEX0RP",
+            "TUFJThAGQv8BCiNjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjIzLmVycm9y",
+            "c0IfUHJvZHVjdExpbmtJbnZpdGF0aW9uRXJyb3JQcm90b1ABWkVnb29nbGUu",
+            "Z29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMv",
+            "djIzL2Vycm9ycztlcnJvcnOiAgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFk",
+            "cy5WMjMuRXJyb3JzygIfR29vZ2xlXEFkc1xHb29nbGVBZHNcVjIzXEVycm9y",
+            "c+oCI0dvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyMzo6RXJyb3JzYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -177,7 +179,11 @@ namespace Google.Ads.GoogleAds.V23.Errors {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -192,7 +198,11 @@ namespace Google.Ads.GoogleAds.V23.Errors {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -236,6 +246,10 @@ namespace Google.Ads.GoogleAds.V23.Errors {
         /// The customer is not permitted to create the invitation.
         /// </summary>
         [pbr::OriginalName("CUSTOMER_NOT_PERMITTED_TO_CREATE_INVITATION")] CustomerNotPermittedToCreateInvitation = 5,
+        /// <summary>
+        /// The `allowed_domain` property for the advertising partner is invalid.
+        /// </summary>
+        [pbr::OriginalName("INVALID_ADVERTISING_PARTNER_ALLOWED_DOMAIN")] InvalidAdvertisingPartnerAllowedDomain = 6,
       }
 
     }

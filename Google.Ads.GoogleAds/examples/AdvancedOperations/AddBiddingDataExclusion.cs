@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V23.Errors;
-using Google.Ads.GoogleAds.V23.Resources;
-using Google.Ads.GoogleAds.V23.Services;
+using Google.Ads.GoogleAds.V24.Errors;
+using Google.Ads.GoogleAds.V24.Resources;
+using Google.Ads.GoogleAds.V24.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V23.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V23.Enums.SeasonalityEventScopeEnum.Types;
+using static Google.Ads.GoogleAds.V24.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V24.Enums.SeasonalityEventScopeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V23
+namespace Google.Ads.GoogleAds.Examples.V24
 {
     /// <summary>
     /// This code example adds a channel-level data exclusion that excludes conversions from
@@ -98,7 +98,7 @@ namespace Google.Ads.GoogleAds.Examples.V23
         {
             // Get the BiddingDataExclusionServiceClient.
             BiddingDataExclusionServiceClient biddingDataExclusionService =
-                client.GetService(Services.V23.BiddingDataExclusionService);
+                client.GetService(Services.V24.BiddingDataExclusionService);
 
             // [START add_bidding_data_exclusion]
             BiddingDataExclusion dataExclusion = new BiddingDataExclusion()

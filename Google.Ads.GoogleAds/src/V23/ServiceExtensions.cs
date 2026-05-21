@@ -117,6 +117,7 @@ namespace Google.Ads.GoogleAds.V23.Services
     public abstract partial class RecommendationServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class RecommendationSubscriptionServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class RemarketingActionServiceClient : GoogleAdsServiceClientBase { }
+    public abstract partial class ReservationServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class ShareablePreviewServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class SharedCriterionServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class SharedSetServiceClient : GoogleAdsServiceClientBase { }
@@ -127,6 +128,7 @@ namespace Google.Ads.GoogleAds.V23.Services
     public abstract partial class UserDataServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class UserListCustomerTypeServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class UserListServiceClient : GoogleAdsServiceClientBase { }
+    public abstract partial class YouTubeVideoUploadServiceClient : GoogleAdsServiceClientBase { }
 }
 
 #pragma warning restore CS1591
