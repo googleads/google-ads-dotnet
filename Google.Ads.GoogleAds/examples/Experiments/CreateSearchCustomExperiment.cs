@@ -1,4 +1,4 @@
-// Copyright 2022 Google LLC
+// Copyright 2026 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -28,13 +28,19 @@ using static Google.Ads.GoogleAds.V24.Enums.ResponseContentTypeEnum.Types;
 namespace Google.Ads.GoogleAds.Examples.V24
 {
     /// <summary>
-    /// This code example creates a new experiment, experiment arms, and demonstrates
-    /// how to modify the draft campaign as well as begin the experiment.
+    /// This code example creates a standard, system-managed campaign experiment.
+    /// It demonstrates how to create an experiment, configure its control and treatment
+    /// arms (where the treatment arm automatically generates a draft campaign), modify
+    /// the system-generated draft campaign, and schedule the experiment.
+    ///
+    /// Note: This standard draft-based workflow does not apply to all experiment types
+    /// (e.g., intra-campaign or asset optimization experiments) that do not use system-generated
+    /// treatment campaign copies.
     /// </summary>
-    public class CreateExperiment : ExampleBase
+    public class CreateSearchCustomExperiment : ExampleBase
     {
         /// <summary>
-        /// Command line options for running the <see cref="CreateExperiment"/> example.
+        /// Command line options for running the <see cref="CreateSearchCustomExperiment"/> example.
         /// </summary>
         public class Options : OptionsBase
         {
@@ -61,8 +67,8 @@ namespace Google.Ads.GoogleAds.Examples.V24
         {
             Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
-            CreateExperiment codeExample = new CreateExperiment();
-            Console.WriteLine(codeExample.Description);
+            CreateSearchCustomExperiment codeExample = new CreateSearchCustomExperiment();
+            Console.WriteLine(codeExample.Description);            
             codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.BaseCampaignId);
         }
 
@@ -70,8 +76,9 @@ namespace Google.Ads.GoogleAds.Examples.V24
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
-            "This code example creates a new experiment, experiment arms, and demonstrates how " +
-            "to modify the draft campaign as well as begin the experiment.";
+            "This code example creates a standard, system-managed campaign experiment. " +
+            "It demonstrates how to create an experiment, configure its control and treatment arms, " +
+            "modify the system-generated draft campaign, and schedule the experiment.";
 
         /// <summary>
         /// Runs the code example.
@@ -87,7 +94,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
 
             try
             {
-                string experimentResourceName = CreateAnExperiment(client, customerId);
+                string experimentResourceName = CreateExperimentResource(client, customerId);
                 MutateExperimentArmResult controlArm, treatmentArm;
 
                 (controlArm, treatmentArm) = CreateExperimentArms(
@@ -109,15 +116,15 @@ namespace Google.Ads.GoogleAds.Examples.V24
                 throw;
             }
         }
-
-        // [START create_experiment_1]
+        
         /// <summary>
-        /// Creates the experiment.
+        /// Creates the experiment resource.
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
         /// <returns>The resource name of the newly created experiment.</returns>
-        private static string CreateAnExperiment(GoogleAdsClient client, long customerId)
+        // [START create_experiment_1]
+        private static string CreateExperimentResource(GoogleAdsClient client, long customerId)
         {
             // Get the ExperimentService.
             ExperimentServiceClient experimentService = client.GetService(
@@ -128,6 +135,9 @@ namespace Google.Ads.GoogleAds.Examples.V24
             {
                 // Name must be unique.
                 Name = $"Example Experiment #{ExampleUtilities.GetRandomString()}",
+                // We specify SearchCustom to create a standard search campaign experiment.
+                // This type uses a standard draft-based workflow where the system automatically
+                // creates a draft/in-design campaign for the treatment arm.
                 Type = ExperimentType.SearchCustom,
                 Suffix = "[experiment]",
                 Status = ExperimentStatus.Setup
@@ -150,10 +160,8 @@ namespace Google.Ads.GoogleAds.Examples.V24
                 $"'{experimentResourceName}'.");
             return experimentResourceName;
         }
-
         // [END create_experiment_1]
-
-        // [START create_experiment_2]
+        
         /// <summary>
         /// Creates the experiment arms.
         /// </summary>
@@ -163,6 +171,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
         /// created.</param>
         /// <param name="experimentResourceName">Resource name of the experiment.</param>
         /// <returns>The control and treatment arms.</returns>
+        // [START create_experiment_2]
         private static (MutateExperimentArmResult, MutateExperimentArmResult)
             CreateExperimentArms(GoogleAdsClient client, long customerId, long baseCampaignId,
                 string experimentResourceName)
@@ -186,9 +195,9 @@ namespace Google.Ads.GoogleAds.Examples.V24
                 }
             };
 
-            // Create the non-control arm. The non-"control" arm, also called a "treatment" arm,
-            // will automatically generate draft campaigns that you can modify before starting the
-            // experiment.
+            // Create the non-control arm.
+            // In standard campaign experiments, creating the treatment arm automatically
+            // generates a draft campaign that you can modify before starting the experiment.
             ExperimentArmOperation treatmentArmOperation = new ExperimentArmOperation()
             {
                 Create = new ExperimentArm()
@@ -210,7 +219,6 @@ namespace Google.Ads.GoogleAds.Examples.V24
                 ResponseContentType = ResponseContentType.MutableResource
             };
 
-
             MutateExperimentArmsResponse response = experimentService.MutateExperimentArms(
                 request
             );
@@ -221,12 +229,11 @@ namespace Google.Ads.GoogleAds.Examples.V24
             MutateExperimentArmResult treatmentArm = response.Results.Last();
 
             Console.WriteLine($"Created control arm with resource name " +
-                $"'{controlArm.ResourceName}.");
+                $"'{controlArm.ResourceName}'.");
             Console.WriteLine($"Created treatment arm with resource name" +
               $" '{treatmentArm.ResourceName}'.");
             return (controlArm, treatmentArm);
         }
-
         // [END create_experiment_2]
 
         /// <summary>
