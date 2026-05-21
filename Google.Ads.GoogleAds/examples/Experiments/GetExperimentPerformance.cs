@@ -19,6 +19,7 @@ using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.V24.Errors;
 using Google.Ads.GoogleAds.V24.Resources;
 using Google.Ads.GoogleAds.V24.Services;
+using Google.Api.Gax;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,7 +30,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
 {
     /// <summary>
     /// This example illustrates how to retrieve performance metrics for an experiment.
-    /// It shows how to query statistical significance metrics for the experiment arms,
+    /// It shows how to query statistical significance metrics for the experiment,
     /// and how to execute actions such as promoting, ending, or graduating an experiment.
     /// </summary>
     public class GetExperimentPerformance : ExampleBase
@@ -114,24 +115,28 @@ namespace Google.Ads.GoogleAds.Examples.V24
                 FROM experiment
                 WHERE experiment.experiment_id = {experimentId}";
 
+            // Create a request that will retrieve the experiment.
+            SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()
+            {
+                CustomerId = customerId.ToString(),
+                Query = query
+            };
+
             try
             {
+                // Issue the search request.
+                PagedEnumerable<SearchGoogleAdsResponse, GoogleAdsRow> searchPagedResponse =
+                    googleAdsService.Search(request);
+
                 bool hasResults = false;
+                foreach (GoogleAdsRow row in searchPagedResponse)
+                {
+                    hasResults = true;
+                    Console.WriteLine($"Found experiment: {row.Experiment.Name}");
+                    Console.WriteLine($"  Resource Name: {row.Experiment.ResourceName}");
 
-                // Issue a search request using streaming.
-                googleAdsService.SearchStream(customerId.ToString(), query,
-                    delegate (SearchGoogleAdsStreamResponse resp)
-                    {
-                        foreach (GoogleAdsRow row in resp.Results)
-                        {
-                            hasResults = true;
-                            Console.WriteLine($"Found experiment: {row.Experiment.Name}");
-                            Console.WriteLine($"  Resource Name: {row.Experiment.ResourceName}");
-
-                            EvaluateExperiment(client, customerId, row);
-                        }
-                    }
-                );
+                    EvaluateExperiment(client, customerId, row);
+                }
 
                 if (!hasResults)
                 {
