@@ -33,7 +33,7 @@ using static Google.Ads.GoogleAds.V24.Enums.OptimizeAssetsExperimentSubtypeEnum.
 namespace Google.Ads.GoogleAds.Examples.V24
 {
     /// <summary>
-    /// This example shows how to create an OPTIMIZE_ASSETS experiment.
+    /// Creates an OPTIMIZE_ASSETS experiment.
     /// Asset optimization experiments are used to test different asset combinations
     /// within Performance Max campaigns.
     /// </summary>
@@ -76,7 +76,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
-            "This example shows how to create an OPTIMIZE_ASSETS experiment. " +
+            "Creates an OPTIMIZE_ASSETS experiment. " +
             "Asset optimization experiments are used to test different asset combinations " +
             "within Performance Max campaigns.";
 

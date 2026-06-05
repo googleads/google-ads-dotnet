@@ -29,14 +29,15 @@ using static Google.Ads.GoogleAds.V24.Enums.ExperimentTypeEnum.Types;
 namespace Google.Ads.GoogleAds.Examples.V24
 {
     /// <summary>
-    /// This example illustrates how to retrieve performance metrics for an experiment.
+    /// Retrieves performance metrics for an experiment, evaluates the performance,
+    /// and takes action on the experiment accordingly.
     /// It shows how to query statistical significance metrics for the experiment,
     /// and how to execute actions such as promoting, ending, or graduating an experiment.
     /// </summary>
-    public class GetExperimentPerformance : ExampleBase
+    public class EvaluateAndUpdateExperiment : ExampleBase
     {
         /// <summary>
-        /// Command line options for running the <see cref="GetExperimentPerformance"/> example.
+        /// Command line options for running the <see cref="EvaluateAndUpdateExperiment"/> example.
         /// </summary>
         public class Options : OptionsBase
         {
@@ -63,7 +64,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
         {
             Options options = ExampleUtilities.ParseCommandLine<Options>(args);
 
-            GetExperimentPerformance codeExample = new GetExperimentPerformance();
+            EvaluateAndUpdateExperiment codeExample = new EvaluateAndUpdateExperiment();
             Console.WriteLine(codeExample.Description);            
             codeExample.Run(new GoogleAdsClient(), options.CustomerId, options.ExperimentId);
         }
@@ -72,8 +73,9 @@ namespace Google.Ads.GoogleAds.Examples.V24
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
-            "This example illustrates how to retrieve performance metrics for an experiment. " +
-            "It shows how to query statistical significance metrics for the experiment arms, " +
+            "Retrieves performance metrics for an experiment, evaluates the performance, " +
+            "and takes action on the experiment accordingly. " +
+            "It shows how to query statistical significance metrics for the experiment, " +
             "and how to execute actions such as promoting, ending, or graduating an experiment.";
 
         // Constants for decision making
@@ -98,7 +100,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
                 Services.V24.GoogleAdsService);
 
             // Query to retrieve the experiment.
-            // Notice that we request the statistical metrics (e.g., p-value, point estimate,
+            // Notice that we request the statistical metrics (for example, p-value, point estimate,
             // margin of error) which are populated based on the treatment arm.
             string query = $@"
                 SELECT
@@ -154,93 +156,125 @@ namespace Google.Ads.GoogleAds.Examples.V24
         }
         
         /// <summary>
-        /// Evaluates the performance of the treatment experiment arm.
+        /// Evaluates the performance of the experiment and updates it accordingly
+        /// (for example, promotes, ends, or graduates).
         /// </summary>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
-        /// <param name="row">A GoogleAdsRow containing the experiment arm and metrics.</param>
-        // [START get_experiment_performance_1]
+        /// <param name="row">A GoogleAdsRow containing the experiment and metrics.</param>
+        // [START evaluate_and_update_experiment_1]
         private static void EvaluateExperiment(GoogleAdsClient client, long customerId, GoogleAdsRow row)
         {
+            // This function evaluates performance metrics and immediately takes action
+            // to update the experiment's status (promote, end, or graduate) if
+            // statistical significance thresholds are met.
             var metrics = row.Metrics;
             string experimentResourceName = row.Experiment.ResourceName;
 
-            // 1. Evaluate conversion success as a primary success signal.
+            bool hasConvMetrics = metrics.HasConversionsAbsoluteChangePValue
+                && metrics.HasConversionsAbsoluteChangePointEstimate
+                && metrics.HasConversionsAbsoluteChangeMarginOfError;
+
+            bool hasClickMetrics = metrics.HasClicksPValue
+                && metrics.HasClicksPointEstimate
+                && metrics.HasClicksMarginOfError;
+
+            // 1. Evaluate conversion success as a primary success signal if available.
             // - Point Estimate: Represents the estimated average lift or difference in conversions.
             // - Margin of Error: Outlines the confidence interval bounds. Note that the margin_of_error
             //   provided by the API is calculated for a preset confidence level which is set based on
             //   the experiment type.
             // - Lower Bound: (Point Estimate - Margin of Error). If this value is above 0,
             //   we have statistical significance that performance has improved.
-            double convPValue = metrics.ConversionsAbsoluteChangePValue;
-            double convLift = metrics.ConversionsAbsoluteChangePointEstimate;
-            double convError = metrics.ConversionsAbsoluteChangeMarginOfError;
-            double convLowerBound = convLift - convError;
-
-            if (convPValue <= P_VALUE_THRESHOLD)
+            if (hasConvMetrics)
             {
-                if (convLowerBound > 0)
+                double convPValue = metrics.ConversionsAbsoluteChangePValue;
+                double convLift = metrics.ConversionsAbsoluteChangePointEstimate;
+                double convError = metrics.ConversionsAbsoluteChangeMarginOfError;
+                double convLowerBound = convLift - convError;
+
+                if (convPValue <= P_VALUE_THRESHOLD)
                 {
-                    Console.WriteLine(
-                        $"Significant Success: Conversions increased. Even at the lower" +
-                        $" bound, the lift is {convLowerBound:F2}. Promoting changes.");
-                    PromoteExperiment(client, customerId, experimentResourceName);
-                    return;
-                }
-                else if ((convLift + convError) < 0)
-                {
-                    Console.WriteLine(
-                        $"Significant Decline: Even the upper bound ({convLift + convError:F2}) " +
-                        $"is below zero. Ending experiment.");
-                    EndExperiment(client, customerId, experimentResourceName);
-                    return;
+                    if (convLowerBound > 0)
+                    {
+                        Console.WriteLine(
+                            $"Significant Success: Conversions increased. Even at the lower" +
+                            $" bound, the lift is {convLowerBound:F2}. Promoting changes.");
+                        PromoteExperiment(client, customerId, experimentResourceName);
+                        return;
+                    }
+                    else if ((convLift + convError) < 0)
+                    {
+                        Console.WriteLine(
+                            $"Significant Decline: Even the upper bound ({convLift + convError:F2}) " +
+                            $"is below zero. Ending experiment.");
+                        EndExperiment(client, customerId, experimentResourceName);
+                        return;
+                    }
                 }
             }
 
             // 2. Evaluate click volume as a secondary signal.
             // This is helpful as an early indicator or for lower-volume accounts.
-            double clickPValue = metrics.ClicksPValue;
-            double clickLift = metrics.ClicksPointEstimate;
-            double clickError = metrics.ClicksMarginOfError;
-            double clickLowerBound = clickLift - clickError;
-
-            if (clickPValue <= P_VALUE_THRESHOLD && clickLowerBound > 0)
+            if (hasClickMetrics)
             {
-                // We have a directional winner: high confidence in more traffic,
-                // but not enough data to confirm conversion impact yet.
-                Console.WriteLine(
-                    $"Click volume is significantly up (+{clickLift * 100:F1}%). " +
-                    "Graduating treatment for further manual analysis.");
+                double clickPValue = metrics.ClicksPValue;
+                double clickLift = metrics.ClicksPointEstimate;
+                double clickError = metrics.ClicksMarginOfError;
+                double clickLowerBound = clickLift - clickError;
 
-                // Graduate if it's a separate campaign test.
-                // This keeps the high-volume treatment running independently.
-                // Intra-campaign experiments (like ADOPT_BROAD_MATCH_KEYWORDS and
-                // ADOPT_AI_MAX) run directly within the base campaign, meaning there is only
-                // a single campaign involved and no separate treatment campaign to graduate.
-                // Therefore, graduation is not supported for intra-campaign experiments.
-                if (row.Experiment.Type != ExperimentType.AdoptBroadMatchKeywords
-                    && row.Experiment.Type != ExperimentType.AdoptAiMax)
+                if (clickPValue <= P_VALUE_THRESHOLD && clickLowerBound > 0)
                 {
-                    GraduateExperiment(client, customerId, experimentResourceName);
-                }
-                else
-                {
+                    // We have a directional winner: high confidence in more traffic,
+                    // but not enough data to confirm conversion impact yet.
                     Console.WriteLine(
-                        "Intra-campaign trial detected: Graduation is not supported " +
-                        "because there is only one campaign. Continuing to run to " +
-                        "gather more conversion data.");
+                        $"Click volume is significantly up (+{clickLift * 100:F1}%).");
+
+                    // Graduation is only supported for separate campaign experiments, not
+                    // intra-campaign experiments where there is no separate treatment campaign.
+                    if (row.Experiment.Type != ExperimentType.AdoptBroadMatchKeywords
+                        && row.Experiment.Type != ExperimentType.AdoptAiMax)
+                    {
+                        Console.WriteLine("Graduating treatment campaign for further manual analysis.");
+                        GraduateExperiment(client, customerId, experimentResourceName);
+                    }
+                    else
+                    {
+                        Console.WriteLine(
+                            "Intra-campaign trial detected: graduation is not supported. " +
+                            "Continuing to run the experiment to gather more conversion data.");
+                    }
+                    return;
                 }
+            }
+
+            // 3. Print status if no action was taken.
+            if (hasConvMetrics || hasClickMetrics)
+            {
+                string convStatus = hasConvMetrics
+                    ? $"Conversions (p={metrics.ConversionsAbsoluteChangePValue:F2}, " +
+                      $"lift={metrics.ConversionsAbsoluteChangePointEstimate:F2} +/- " +
+                      $"{metrics.ConversionsAbsoluteChangeMarginOfError:F2})"
+                    : "Conversions (not populated)";
+
+                string clickStatus = hasClickMetrics
+                    ? $"Clicks (p={metrics.ClicksPValue:F2}, " +
+                      $"lift={metrics.ClicksPointEstimate:F2} +/- " +
+                      $"{metrics.ClicksMarginOfError:F2})"
+                    : "Clicks (not populated)";
+
+                Console.WriteLine(
+                    $"Inconclusive: No significant action taken. {convStatus}, {clickStatus}. " +
+                    "Allowing the experiment to continue running.");
             }
             else
             {
-                // Both conversions and clicks are noisy.
                 Console.WriteLine(
-                    $"Inconclusive: No significant lift in Conversions (p={convPValue:F2}) " +
-                    $"or Clicks (p={clickPValue:F2}). " +
-                    $"Current estimated lift: {convLift:F2} +/- {convError:F2}. Continue running.");
+                    "Conversion and click performance metrics are not yet populated. " +
+                    "Allowing the experiment to continue running.");
             }
         }
-        // [END get_experiment_performance_1]
+        // [END evaluate_and_update_experiment_1]
 
         /// <summary>
         /// Promotes the experiment trial campaign to the base campaign.
@@ -254,6 +288,12 @@ namespace Google.Ads.GoogleAds.Examples.V24
                 Services.V24.ExperimentService);
 
             // This method returns a long running operation (LRO).
+            // - To block until the operation is complete: call operation.PollUntilCompleted()
+            // - For non-blocking status checks: use operation.IsCompleted
+            // - For manual polling or persistent tracking: store operation.Name
+            //
+            // For more information on handling LROs, see:
+            // https://developers.google.com/google-ads/api/docs/concepts/long-running-operations
             var operation = experimentService.PromoteExperiment(experimentResourceName);
 
             Console.WriteLine($"Started promotion for experiment: {experimentResourceName}");
@@ -281,8 +321,11 @@ namespace Google.Ads.GoogleAds.Examples.V24
         }
 
         /// <summary>
-        /// Graduates the experiment to a full campaign.
+        /// Graduates the experiment to a full standalone campaign.
         /// </summary>
+        /// <remarks>
+        /// This process involves creating a new budget and mapping the treatment campaign to it.
+        /// </remarks>
         /// <param name="client">The Google Ads client.</param>
         /// <param name="customerId">The customer ID for which the call is made.</param>
         /// <param name="experimentResourceName">The resource name of the experiment to graduate.</param>
@@ -315,12 +358,14 @@ namespace Google.Ads.GoogleAds.Examples.V24
             GoogleAdsServiceClient googleAdsService = client.GetService(
                 Services.V24.GoogleAdsService);
 
+            // Query for the campaigns associated with the treatment arm of the experiment.
             string query = $"SELECT experiment_arm.campaigns FROM experiment_arm " +
                 $"WHERE experiment_arm.experiment = '{experimentResourceName}' " +
                 $"AND experiment_arm.control = FALSE";
 
             string treatmentCampaignResourceName = null;
 
+            // Find the resource name of the treatment campaign.
             googleAdsService.SearchStream(customerId.ToString(), query,
                 delegate (SearchGoogleAdsStreamResponse resp)
                 {
@@ -335,13 +380,14 @@ namespace Google.Ads.GoogleAds.Examples.V24
                 }
             );
 
+            // Verify that a treatment campaign was found.
             if (string.IsNullOrEmpty(treatmentCampaignResourceName))
             {
                 Console.WriteLine("Could not find the treatment campaign associated with this experiment.");
                 return;
             }
 
-            // 3. Build the Graduation Mapping and execute.
+            // 3. Build the budget mapping and execute the graduation request.
             ExperimentServiceClient experimentService = client.GetService(
                 Services.V24.ExperimentService);
 
