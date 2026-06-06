@@ -28,14 +28,14 @@ using static Google.Ads.GoogleAds.V24.Enums.ResponseContentTypeEnum.Types;
 namespace Google.Ads.GoogleAds.Examples.V24
 {
     /// <summary>
-    /// This code example creates a standard, system-managed campaign experiment.
-    /// It demonstrates how to create an experiment, configure its control and treatment
-    /// arms (where the treatment arm automatically generates a draft campaign), modify
-    /// the system-generated draft campaign, and schedule the experiment.
+    /// Creates a standard, system-managed campaign experiment of type SEARCH_CUSTOM.
+    /// Sets up the experiment, configures control and treatment arms (where the
+    /// treatment arm automatically generates a draft campaign), modifies the
+    /// system-generated draft campaign, and schedules the experiment.
     ///
-    /// Note: This standard draft-based workflow does not apply to all experiment types
-    /// (e.g., intra-campaign or asset optimization experiments) that do not use system-generated
-    /// treatment campaign copies.
+    /// Note: This standard draft-based workflow applies only to experiment types
+    /// that use system-generated treatment campaign copies, and excludes
+    /// intra-campaign or asset optimization experiments.
     /// </summary>
     public class CreateSearchCustomExperiment : ExampleBase
     {
@@ -76,9 +76,10 @@ namespace Google.Ads.GoogleAds.Examples.V24
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
-            "This code example creates a standard, system-managed campaign experiment. " +
-            "It demonstrates how to create an experiment, configure its control and treatment arms, " +
-            "modify the system-generated draft campaign, and schedule the experiment.";
+            "Creates a standard, system-managed campaign experiment of type SEARCH_CUSTOM. " +
+            "Sets up the experiment, configures control and treatment arms (where the " +
+            "treatment arm automatically generates a draft campaign), modifies the " +
+            "system-generated draft campaign, and schedules the experiment.";
 
         /// <summary>
         /// Runs the code example.
