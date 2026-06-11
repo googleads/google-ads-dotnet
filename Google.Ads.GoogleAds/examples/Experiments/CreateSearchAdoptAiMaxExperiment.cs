@@ -28,7 +28,7 @@ using static Google.Ads.GoogleAds.V24.Enums.ExperimentTypeEnum.Types;
 namespace Google.Ads.GoogleAds.Examples.V24
 {
     /// <summary>
-    /// This example shows how to create an ADOPT_AI_MAX intra-campaign experiment for a Search campaign.
+    /// Creates an ADOPT_AI_MAX intra-campaign experiment for a Search campaign.
     /// Intra-campaign experiments split traffic within the campaign, based on whether
     /// the feature (in this case, AI Max) is enabled or not.
     /// </summary>
@@ -71,7 +71,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
         /// Returns a description about the code example.
         /// </summary>
         public override string Description =>
-            "This example shows how to create an ADOPT_AI_MAX intra-campaign experiment for a Search campaign. " +
+            "Creates an ADOPT_AI_MAX intra-campaign experiment for a Search campaign. " +
             "Intra-campaign experiments split traffic within the campaign, based on whether " +
             "the feature (in this case, AI Max) is enabled or not.";
 
@@ -141,6 +141,8 @@ namespace Google.Ads.GoogleAds.Examples.V24
 
                 // Create a campaign operation with an update mask to enable AI Max and
                 // configure asset automation settings.
+                // Note: For intra-campaign experiments, these settings are applied to the
+                // base campaign but are only active for the treatment traffic split.
                 Campaign campaign = new Campaign()
                 {
                     ResourceName = ResourceNames.Campaign(customerId, campaignId),
