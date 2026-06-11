@@ -188,11 +188,11 @@ namespace Google.Ads.GoogleAds.Examples.V24
                 {
                     assetOperation1,
                     assetOperation2,
-                    experimentOperation
+                    experimentOperation,
+                    assetGroupAssetOperation1,
+                    assetGroupAssetOperation2
                 };
                 mutateOperations.AddRange(armOperations);
-                mutateOperations.Add(assetGroupAssetOperation1);
-                mutateOperations.Add(assetGroupAssetOperation2);
 
                 MutateGoogleAdsResponse response = googleAdsService.Mutate(
                     customerId.ToString(), mutateOperations);
@@ -202,10 +202,10 @@ namespace Google.Ads.GoogleAds.Examples.V24
                 Console.WriteLine($"Created headline asset: '{response.MutateOperationResponses[0].AssetResult.ResourceName}'.");
                 Console.WriteLine($"Created image asset: '{response.MutateOperationResponses[1].AssetResult.ResourceName}'.");
                 Console.WriteLine($"Created experiment: '{response.MutateOperationResponses[2].ExperimentResult.ResourceName}'.");
-                Console.WriteLine($"Created control arm: '{response.MutateOperationResponses[3].ExperimentArmResult.ResourceName}'.");
-                Console.WriteLine($"Created treatment arm: '{response.MutateOperationResponses[4].ExperimentArmResult.ResourceName}'.");
-                Console.WriteLine($"Created asset group asset for headline: '{response.MutateOperationResponses[5].AssetGroupAssetResult.ResourceName}'.");
-                Console.WriteLine($"Created asset group asset for image: '{response.MutateOperationResponses[6].AssetGroupAssetResult.ResourceName}'.");
+                Console.WriteLine($"Created asset group asset for headline: '{response.MutateOperationResponses[3].AssetGroupAssetResult.ResourceName}'.");
+                Console.WriteLine($"Created asset group asset for image: '{response.MutateOperationResponses[4].AssetGroupAssetResult.ResourceName}'.");
+                Console.WriteLine($"Created control arm: '{response.MutateOperationResponses[5].ExperimentArmResult.ResourceName}'.");
+                Console.WriteLine($"Created treatment arm: '{response.MutateOperationResponses[6].ExperimentArmResult.ResourceName}'.");
             }
             catch (GoogleAdsException e)
             {
