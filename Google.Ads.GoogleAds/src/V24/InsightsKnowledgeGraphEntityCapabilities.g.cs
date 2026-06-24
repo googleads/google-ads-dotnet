@@ -26,17 +26,18 @@ namespace Google.Ads.GoogleAds.V24.Enums {
           string.Concat(
             "ClFnb29nbGUvYWRzL2dvb2dsZWFkcy92MjQvZW51bXMvaW5zaWdodHNfa25v",
             "d2xlZGdlX2dyYXBoX2VudGl0eV9jYXBhYmlsaXRpZXMucHJvdG8SHmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYyNC5lbnVtcyKuAQosSW5zaWdodHNLbm93bGVk",
-            "Z2VHcmFwaEVudGl0eUNhcGFiaWxpdGllc0VudW0ifgooSW5zaWdodHNLbm93",
-            "bGVkZ2VHcmFwaEVudGl0eUNhcGFiaWxpdGllcxIPCgtVTlNQRUNJRklFRBAA",
-            "EgsKB1VOS05PV04QARIdChlDT05URU5UX1RSRU5ESU5HX0lOU0lHSFRTEAIS",
-            "FQoRQ1JFQVRPUl9BVFRSSUJVVEUQA0KHAgoiY29tLmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYyNC5lbnVtc0ItSW5zaWdodHNLbm93bGVkZ2VHcmFwaEVudGl0",
-            "eUNhcGFiaWxpdGllc1Byb3RvUAFaQ2dvb2dsZS5nb2xhbmcub3JnL2dlbnBy",
-            "b3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MjQvZW51bXM7ZW51bXOi",
-            "AgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMjQuRW51bXPKAh5Hb29n",
-            "bGVcQWRzXEdvb2dsZUFkc1xWMjRcRW51bXPqAiJHb29nbGU6OkFkczo6R29v",
-            "Z2xlQWRzOjpWMjQ6OkVudW1zYgZwcm90bzM="));
+            "ZS5hZHMuZ29vZ2xlYWRzLnYyNC5lbnVtcyLLAQosSW5zaWdodHNLbm93bGVk",
+            "Z2VHcmFwaEVudGl0eUNhcGFiaWxpdGllc0VudW0imgEKKEluc2lnaHRzS25v",
+            "d2xlZGdlR3JhcGhFbnRpdHlDYXBhYmlsaXRpZXMSDwoLVU5TUEVDSUZJRUQQ",
+            "ABILCgdVTktOT1dOEAESHQoZQ09OVEVOVF9UUkVORElOR19JTlNJR0hUUxAC",
+            "EhUKEUNSRUFUT1JfQVRUUklCVVRFEAMSGgoWQ1JFQVRPUl9UT1BJQ19JTlNJ",
+            "R0hUUxAFQocCCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmVudW1z",
+            "Qi1JbnNpZ2h0c0tub3dsZWRnZUdyYXBoRW50aXR5Q2FwYWJpbGl0aWVzUHJv",
+            "dG9QAVpDZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9h",
+            "ZHMvZ29vZ2xlYWRzL3YyNC9lbnVtcztlbnVtc6ICA0dBQaoCHkdvb2dsZS5B",
+            "ZHMuR29vZ2xlQWRzLlYyNC5FbnVtc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRz",
+            "XFYyNFxFbnVtc+oCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyNDo6RW51",
+            "bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -234,9 +235,18 @@ namespace Google.Ads.GoogleAds.V24.Enums {
         [pbr::OriginalName("CONTENT_TRENDING_INSIGHTS")] ContentTrendingInsights = 2,
         /// <summary>
         /// An entity that is supported to use as a creator attribute in
-        /// [ContentCreatorInsightsService.GenerateCreatorInsights][google.ads.googleads.v24.services.ContentCreatorInsightsService.GenerateCreatorInsights].
+        /// [ContentCreatorInsightsService.GenerateCreatorInsights][google.ads.googleads.v24.services.ContentCreatorInsightsService.GenerateCreatorInsights]
+        /// in field
+        /// [GenerateCreatorInsightsRequest.search_attributes.creator_attributes][].
         /// </summary>
         [pbr::OriginalName("CREATOR_ATTRIBUTE")] CreatorAttribute = 3,
+        /// <summary>
+        /// An entity that is supported to use as a topic in
+        /// [ContentCreatorInsightsService.GenerateCreatorInsights]
+        /// [google.ads.googleads.v24.services.ContentCreatorInsightsService.GenerateCreatorInsights]
+        /// in field [GenerateCreatorInsightsRequest.search_topics][].
+        /// </summary>
+        [pbr::OriginalName("CREATOR_TOPIC_INSIGHTS")] CreatorTopicInsights = 5,
       }
 
     }

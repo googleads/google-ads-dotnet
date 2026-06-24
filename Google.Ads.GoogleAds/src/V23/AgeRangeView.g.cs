@@ -50,6 +50,16 @@ namespace Google.Ads.GoogleAds.V23.Resources {
   #region Messages
   /// <summary>
   /// An age range view.
+  ///
+  /// Represents the view of a customer's performance metrics (like impressions
+  /// and clicks) aggregated by age range. All statistics are aggregated at the
+  /// ad group level.
+  ///
+  /// Note: While you can segment metrics by age range using `age_range_view` or by
+  /// gender using `gender_view`, the Google Ads API does not support segmenting
+  /// metrics by both age range and gender simultaneously in a single query.
+  /// Analyzing performance across both dimensions combined is not supported in
+  /// the Google Ads API.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AgeRangeView : pb::IMessage<AgeRangeView>

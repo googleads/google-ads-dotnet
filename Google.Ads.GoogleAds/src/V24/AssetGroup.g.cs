@@ -37,7 +37,7 @@ namespace Google.Ads.GoogleAds.V24.Resources {
             "Z3JvdXBfcHJpbWFyeV9zdGF0dXNfcmVhc29uLnByb3RvGjdnb29nbGUvYWRz",
             "L2dvb2dsZWFkcy92MjQvZW51bXMvYXNzZXRfZ3JvdXBfc3RhdHVzLnByb3Rv",
             "Gh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9yLnByb3RvGhlnb29nbGUvYXBp",
-            "L3Jlc291cmNlLnByb3RvIuwGCgpBc3NldEdyb3VwEkIKDXJlc291cmNlX25h",
+            "L3Jlc291cmNlLnByb3RvIs0HCgpBc3NldEdyb3VwEkIKDXJlc291cmNlX25h",
             "bWUYASABKAlCK+BBBfpBJQojZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0Fz",
             "c2V0R3JvdXASDwoCaWQYCSABKANCA+BBAxI7CghjYW1wYWlnbhgCIAEoCUIp",
             "4EEF+kEjCiFnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vQ2FtcGFpZ24SEQoE",
@@ -54,38 +54,47 @@ namespace Google.Ads.GoogleAds.V24.Resources {
             "OS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuZW51bXMuQWRTdHJlbmd0aEVu",
             "dW0uQWRTdHJlbmd0aEID4EEDEk4KDmFzc2V0X2NvdmVyYWdlGA0gASgLMjEu",
             "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LnJlc291cmNlcy5Bc3NldENvdmVy",
-            "YWdlQgPgQQM6d+pBdAojZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0Fzc2V0",
-            "R3JvdXASNGN1c3RvbWVycy97Y3VzdG9tZXJfaWR9L2Fzc2V0R3JvdXBzL3th",
-            "c3NldF9ncm91cF9pZH0qC2Fzc2V0R3JvdXBzMgphc3NldEdyb3VwInAKDUFz",
-            "c2V0Q292ZXJhZ2USXwoYYWRfc3RyZW5ndGhfYWN0aW9uX2l0ZW1zGAEgAygL",
-            "MjguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LnJlc291cmNlcy5BZFN0cmVu",
-            "Z3RoQWN0aW9uSXRlbUID4EEDIvwEChRBZFN0cmVuZ3RoQWN0aW9uSXRlbRJ0",
-            "ChBhY3Rpb25faXRlbV90eXBlGAEgASgOMlUuZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjI0LmVudW1zLkFkU3RyZW5ndGhBY3Rpb25JdGVtVHlwZUVudW0uQWRT",
-            "dHJlbmd0aEFjdGlvbkl0ZW1UeXBlQgPgQQMSagoRYWRkX2Fzc2V0X2RldGFp",
-            "bHMYAiABKAsySC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQucmVzb3VyY2Vz",
-            "LkFkU3RyZW5ndGhBY3Rpb25JdGVtLkFkZEFzc2V0RGV0YWlsc0ID4EEDSAAa",
-            "7wIKD0FkZEFzc2V0RGV0YWlscxJgChBhc3NldF9maWVsZF90eXBlGAEgASgO",
-            "MkEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmVudW1zLkFzc2V0RmllbGRU",
-            "eXBlRW51bS5Bc3NldEZpZWxkVHlwZUID4EEDEh0KC2Fzc2V0X2NvdW50GAIg",
-            "ASgFQgPgQQNIAIgBARKnAQoedmlkZW9fYXNwZWN0X3JhdGlvX3JlcXVpcmVt",
-            "ZW50GAMgASgOMnUuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmVudW1zLkFz",
-            "c2V0Q292ZXJhZ2VWaWRlb0FzcGVjdFJhdGlvUmVxdWlyZW1lbnRFbnVtLkFz",
-            "c2V0Q292ZXJhZ2VWaWRlb0FzcGVjdFJhdGlvUmVxdWlyZW1lbnRCA+BBA0gB",
-            "iAEBQg4KDF9hc3NldF9jb3VudEIhCh9fdmlkZW9fYXNwZWN0X3JhdGlvX3Jl",
-            "cXVpcmVtZW50QhAKDmFjdGlvbl9kZXRhaWxzQoECCiZjb20uZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjI0LnJlc291cmNlc0IPQXNzZXRHcm91cFByb3RvUAFa",
-            "S2dvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dv",
-            "b2dsZWFkcy92MjQvcmVzb3VyY2VzO3Jlc291cmNlc6ICA0dBQaoCIkdvb2ds",
-            "ZS5BZHMuR29vZ2xlQWRzLlYyNC5SZXNvdXJjZXPKAiJHb29nbGVcQWRzXEdv",
-            "b2dsZUFkc1xWMjRcUmVzb3VyY2Vz6gImR29vZ2xlOjpBZHM6Okdvb2dsZUFk",
-            "czo6VjI0OjpSZXNvdXJjZXNiBnByb3RvMw=="));
+            "YWdlQgPgQQMSXwoaZ29vZ2xlX2xvY2FsX3NlcnZpY2VzX2luZm8YDiABKAsy",
+            "Oy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQucmVzb3VyY2VzLkdvb2dsZUxv",
+            "Y2FsU2VydmljZXNJbmZvOnfqQXQKI2dvb2dsZWFkcy5nb29nbGVhcGlzLmNv",
+            "bS9Bc3NldEdyb3VwEjRjdXN0b21lcnMve2N1c3RvbWVyX2lkfS9hc3NldEdy",
+            "b3Vwcy97YXNzZXRfZ3JvdXBfaWR9Kgthc3NldEdyb3VwczIKYXNzZXRHcm91",
+            "cCJwCg1Bc3NldENvdmVyYWdlEl8KGGFkX3N0cmVuZ3RoX2FjdGlvbl9pdGVt",
+            "cxgBIAMoCzI4Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5yZXNvdXJjZXMu",
+            "QWRTdHJlbmd0aEFjdGlvbkl0ZW1CA+BBAyL8BAoUQWRTdHJlbmd0aEFjdGlv",
+            "bkl0ZW0SdAoQYWN0aW9uX2l0ZW1fdHlwZRgBIAEoDjJVLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYyNC5lbnVtcy5BZFN0cmVuZ3RoQWN0aW9uSXRlbVR5cGVF",
+            "bnVtLkFkU3RyZW5ndGhBY3Rpb25JdGVtVHlwZUID4EEDEmoKEWFkZF9hc3Nl",
+            "dF9kZXRhaWxzGAIgASgLMkguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LnJl",
+            "c291cmNlcy5BZFN0cmVuZ3RoQWN0aW9uSXRlbS5BZGRBc3NldERldGFpbHNC",
+            "A+BBA0gAGu8CCg9BZGRBc3NldERldGFpbHMSYAoQYXNzZXRfZmllbGRfdHlw",
+            "ZRgBIAEoDjJBLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5lbnVtcy5Bc3Nl",
+            "dEZpZWxkVHlwZUVudW0uQXNzZXRGaWVsZFR5cGVCA+BBAxIdCgthc3NldF9j",
+            "b3VudBgCIAEoBUID4EEDSACIAQESpwEKHnZpZGVvX2FzcGVjdF9yYXRpb19y",
+            "ZXF1aXJlbWVudBgDIAEoDjJ1Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5l",
+            "bnVtcy5Bc3NldENvdmVyYWdlVmlkZW9Bc3BlY3RSYXRpb1JlcXVpcmVtZW50",
+            "RW51bS5Bc3NldENvdmVyYWdlVmlkZW9Bc3BlY3RSYXRpb1JlcXVpcmVtZW50",
+            "QgPgQQNIAYgBAUIOCgxfYXNzZXRfY291bnRCIQofX3ZpZGVvX2FzcGVjdF9y",
+            "YXRpb19yZXF1aXJlbWVudEIQCg5hY3Rpb25fZGV0YWlscyKUAQoXR29vZ2xl",
+            "TG9jYWxTZXJ2aWNlc0luZm8SHQoLY2F0ZWdvcnlfaWQYASABKAlCA+BBBUgA",
+            "iAEBEkoKCGNhbGxvdXRzGAIgAygLMjguZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djI0LnJlc291cmNlcy5Mb2NhbFNlcnZpY2VzQ2FsbG91dEIOCgxfY2F0ZWdv",
+            "cnlfaWQiQwoUTG9jYWxTZXJ2aWNlc0NhbGxvdXQSHAoKY2FsbG91dF9pZBgB",
+            "IAEoCUID4EECSACIAQFCDQoLX2NhbGxvdXRfaWRCgQIKJmNvbS5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52MjQucmVzb3VyY2VzQg9Bc3NldEdyb3VwUHJvdG9Q",
+            "AVpLZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
+            "Z29vZ2xlYWRzL3YyNC9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FBqgIiR29v",
+            "Z2xlLkFkcy5Hb29nbGVBZHMuVjI0LlJlc291cmNlc8oCIkdvb2dsZVxBZHNc",
+            "R29vZ2xlQWRzXFYyNFxSZXNvdXJjZXPqAiZHb29nbGU6OkFkczo6R29vZ2xl",
+            "QWRzOjpWMjQ6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V24.Enums.AdStrengthReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.AdStrengthActionItemTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.AssetCoverageVideoAspectRatioRequirementReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.AssetFieldTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.AssetGroupPrimaryStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.AssetGroupPrimaryStatusReasonReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.AssetGroupStatusReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Resources.AssetGroup), global::Google.Ads.GoogleAds.V24.Resources.AssetGroup.Parser, new[]{ "ResourceName", "Id", "Campaign", "Name", "FinalUrls", "FinalMobileUrls", "Status", "PrimaryStatus", "PrimaryStatusReasons", "Path1", "Path2", "AdStrength", "AssetCoverage" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Resources.AssetGroup), global::Google.Ads.GoogleAds.V24.Resources.AssetGroup.Parser, new[]{ "ResourceName", "Id", "Campaign", "Name", "FinalUrls", "FinalMobileUrls", "Status", "PrimaryStatus", "PrimaryStatusReasons", "Path1", "Path2", "AdStrength", "AssetCoverage", "GoogleLocalServicesInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Resources.AssetCoverage), global::Google.Ads.GoogleAds.V24.Resources.AssetCoverage.Parser, new[]{ "AdStrengthActionItems" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Resources.AdStrengthActionItem), global::Google.Ads.GoogleAds.V24.Resources.AdStrengthActionItem.Parser, new[]{ "ActionItemType", "AddAssetDetails" }, new[]{ "ActionDetails" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Resources.AdStrengthActionItem.Types.AddAssetDetails), global::Google.Ads.GoogleAds.V24.Resources.AdStrengthActionItem.Types.AddAssetDetails.Parser, new[]{ "AssetFieldType", "AssetCount", "VideoAspectRatioRequirement" }, new[]{ "AssetCount", "VideoAspectRatioRequirement" }, null, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Resources.AdStrengthActionItem), global::Google.Ads.GoogleAds.V24.Resources.AdStrengthActionItem.Parser, new[]{ "ActionItemType", "AddAssetDetails" }, new[]{ "ActionDetails" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Resources.AdStrengthActionItem.Types.AddAssetDetails), global::Google.Ads.GoogleAds.V24.Resources.AdStrengthActionItem.Types.AddAssetDetails.Parser, new[]{ "AssetFieldType", "AssetCount", "VideoAspectRatioRequirement" }, new[]{ "AssetCount", "VideoAspectRatioRequirement" }, null, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Resources.GoogleLocalServicesInfo), global::Google.Ads.GoogleAds.V24.Resources.GoogleLocalServicesInfo.Parser, new[]{ "CategoryId", "Callouts" }, new[]{ "CategoryId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Resources.LocalServicesCallout), global::Google.Ads.GoogleAds.V24.Resources.LocalServicesCallout.Parser, new[]{ "CalloutId" }, new[]{ "CalloutId" }, null, null, null)
           }));
     }
     #endregion
@@ -145,6 +154,7 @@ namespace Google.Ads.GoogleAds.V24.Resources {
       path2_ = other.path2_;
       adStrength_ = other.adStrength_;
       assetCoverage_ = other.assetCoverage_ != null ? other.assetCoverage_.Clone() : null;
+      googleLocalServicesInfo_ = other.googleLocalServicesInfo_ != null ? other.googleLocalServicesInfo_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -359,6 +369,21 @@ namespace Google.Ads.GoogleAds.V24.Resources {
       }
     }
 
+    /// <summary>Field number for the "google_local_services_info" field.</summary>
+    public const int GoogleLocalServicesInfoFieldNumber = 14;
+    private global::Google.Ads.GoogleAds.V24.Resources.GoogleLocalServicesInfo googleLocalServicesInfo_;
+    /// <summary>
+    /// Local services info of the asset group.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V24.Resources.GoogleLocalServicesInfo GoogleLocalServicesInfo {
+      get { return googleLocalServicesInfo_; }
+      set {
+        googleLocalServicesInfo_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -387,6 +412,7 @@ namespace Google.Ads.GoogleAds.V24.Resources {
       if (Path2 != other.Path2) return false;
       if (AdStrength != other.AdStrength) return false;
       if (!object.Equals(AssetCoverage, other.AssetCoverage)) return false;
+      if (!object.Equals(GoogleLocalServicesInfo, other.GoogleLocalServicesInfo)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -407,6 +433,7 @@ namespace Google.Ads.GoogleAds.V24.Resources {
       if (Path2.Length != 0) hash ^= Path2.GetHashCode();
       if (AdStrength != global::Google.Ads.GoogleAds.V24.Enums.AdStrengthEnum.Types.AdStrength.Unspecified) hash ^= AdStrength.GetHashCode();
       if (assetCoverage_ != null) hash ^= AssetCoverage.GetHashCode();
+      if (googleLocalServicesInfo_ != null) hash ^= GoogleLocalServicesInfo.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -468,6 +495,10 @@ namespace Google.Ads.GoogleAds.V24.Resources {
         output.WriteRawTag(106);
         output.WriteMessage(AssetCoverage);
       }
+      if (googleLocalServicesInfo_ != null) {
+        output.WriteRawTag(114);
+        output.WriteMessage(GoogleLocalServicesInfo);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -521,6 +552,10 @@ namespace Google.Ads.GoogleAds.V24.Resources {
         output.WriteRawTag(106);
         output.WriteMessage(AssetCoverage);
       }
+      if (googleLocalServicesInfo_ != null) {
+        output.WriteRawTag(114);
+        output.WriteMessage(GoogleLocalServicesInfo);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -563,6 +598,9 @@ namespace Google.Ads.GoogleAds.V24.Resources {
       }
       if (assetCoverage_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(AssetCoverage);
+      }
+      if (googleLocalServicesInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GoogleLocalServicesInfo);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -611,6 +649,12 @@ namespace Google.Ads.GoogleAds.V24.Resources {
           AssetCoverage = new global::Google.Ads.GoogleAds.V24.Resources.AssetCoverage();
         }
         AssetCoverage.MergeFrom(other.AssetCoverage);
+      }
+      if (other.googleLocalServicesInfo_ != null) {
+        if (googleLocalServicesInfo_ == null) {
+          GoogleLocalServicesInfo = new global::Google.Ads.GoogleAds.V24.Resources.GoogleLocalServicesInfo();
+        }
+        GoogleLocalServicesInfo.MergeFrom(other.GoogleLocalServicesInfo);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -687,6 +731,13 @@ namespace Google.Ads.GoogleAds.V24.Resources {
             input.ReadMessage(AssetCoverage);
             break;
           }
+          case 114: {
+            if (googleLocalServicesInfo_ == null) {
+              GoogleLocalServicesInfo = new global::Google.Ads.GoogleAds.V24.Resources.GoogleLocalServicesInfo();
+            }
+            input.ReadMessage(GoogleLocalServicesInfo);
+            break;
+          }
         }
       }
     #endif
@@ -760,6 +811,13 @@ namespace Google.Ads.GoogleAds.V24.Resources {
               AssetCoverage = new global::Google.Ads.GoogleAds.V24.Resources.AssetCoverage();
             }
             input.ReadMessage(AssetCoverage);
+            break;
+          }
+          case 114: {
+            if (googleLocalServicesInfo_ == null) {
+              GoogleLocalServicesInfo = new global::Google.Ads.GoogleAds.V24.Resources.GoogleLocalServicesInfo();
+            }
+            input.ReadMessage(GoogleLocalServicesInfo);
             break;
           }
         }
@@ -1574,6 +1632,474 @@ namespace Google.Ads.GoogleAds.V24.Resources {
 
     }
     #endregion
+
+  }
+
+  /// <summary>
+  /// Local services info for the asset group.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class GoogleLocalServicesInfo : pb::IMessage<GoogleLocalServicesInfo>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GoogleLocalServicesInfo> _parser = new pb::MessageParser<GoogleLocalServicesInfo>(() => new GoogleLocalServicesInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GoogleLocalServicesInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V24.Resources.AssetGroupReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GoogleLocalServicesInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GoogleLocalServicesInfo(GoogleLocalServicesInfo other) : this() {
+      categoryId_ = other.categoryId_;
+      callouts_ = other.callouts_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GoogleLocalServicesInfo Clone() {
+      return new GoogleLocalServicesInfo(this);
+    }
+
+    /// <summary>Field number for the "category_id" field.</summary>
+    public const int CategoryIdFieldNumber = 1;
+    private readonly static string CategoryIdDefaultValue = "";
+
+    private string categoryId_;
+    /// <summary>
+    /// Immutable. The local services category associated with this asset group.
+    /// That is, XCAT format - xcat:service_area_business_plumber. See
+    /// https://developers.google.com/google-ads/api/data/codes-formats#local-services-category-ids
+    /// This field cannot be modified after the AssetGroup has been created.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CategoryId {
+      get { return categoryId_ ?? CategoryIdDefaultValue; }
+      set {
+        categoryId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "category_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasCategoryId {
+      get { return categoryId_ != null; }
+    }
+    /// <summary>Clears the value of the "category_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearCategoryId() {
+      categoryId_ = null;
+    }
+
+    /// <summary>Field number for the "callouts" field.</summary>
+    public const int CalloutsFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V24.Resources.LocalServicesCallout> _repeated_callouts_codec
+        = pb::FieldCodec.ForMessage(18, global::Google.Ads.GoogleAds.V24.Resources.LocalServicesCallout.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V24.Resources.LocalServicesCallout> callouts_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V24.Resources.LocalServicesCallout>();
+    /// <summary>
+    /// Callouts selected by the advertiser to show.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V24.Resources.LocalServicesCallout> Callouts {
+      get { return callouts_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GoogleLocalServicesInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GoogleLocalServicesInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (CategoryId != other.CategoryId) return false;
+      if(!callouts_.Equals(other.callouts_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasCategoryId) hash ^= CategoryId.GetHashCode();
+      hash ^= callouts_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasCategoryId) {
+        output.WriteRawTag(10);
+        output.WriteString(CategoryId);
+      }
+      callouts_.WriteTo(output, _repeated_callouts_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasCategoryId) {
+        output.WriteRawTag(10);
+        output.WriteString(CategoryId);
+      }
+      callouts_.WriteTo(ref output, _repeated_callouts_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasCategoryId) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CategoryId);
+      }
+      size += callouts_.CalculateSize(_repeated_callouts_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GoogleLocalServicesInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasCategoryId) {
+        CategoryId = other.CategoryId;
+      }
+      callouts_.Add(other.callouts_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            CategoryId = input.ReadString();
+            break;
+          }
+          case 18: {
+            callouts_.AddEntriesFrom(input, _repeated_callouts_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            CategoryId = input.ReadString();
+            break;
+          }
+          case 18: {
+            callouts_.AddEntriesFrom(ref input, _repeated_callouts_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Local services callout of the asset group.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class LocalServicesCallout : pb::IMessage<LocalServicesCallout>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<LocalServicesCallout> _parser = new pb::MessageParser<LocalServicesCallout>(() => new LocalServicesCallout());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<LocalServicesCallout> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V24.Resources.AssetGroupReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public LocalServicesCallout() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public LocalServicesCallout(LocalServicesCallout other) : this() {
+      calloutId_ = other.calloutId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public LocalServicesCallout Clone() {
+      return new LocalServicesCallout(this);
+    }
+
+    /// <summary>Field number for the "callout_id" field.</summary>
+    public const int CalloutIdFieldNumber = 1;
+    private readonly static string CalloutIdDefaultValue = "";
+
+    private string calloutId_;
+    /// <summary>
+    /// Required. The unique ID of the callout.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CalloutId {
+      get { return calloutId_ ?? CalloutIdDefaultValue; }
+      set {
+        calloutId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "callout_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasCalloutId {
+      get { return calloutId_ != null; }
+    }
+    /// <summary>Clears the value of the "callout_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearCalloutId() {
+      calloutId_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as LocalServicesCallout);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(LocalServicesCallout other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (CalloutId != other.CalloutId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasCalloutId) hash ^= CalloutId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasCalloutId) {
+        output.WriteRawTag(10);
+        output.WriteString(CalloutId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasCalloutId) {
+        output.WriteRawTag(10);
+        output.WriteString(CalloutId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasCalloutId) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CalloutId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(LocalServicesCallout other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasCalloutId) {
+        CalloutId = other.CalloutId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            CalloutId = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            CalloutId = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 

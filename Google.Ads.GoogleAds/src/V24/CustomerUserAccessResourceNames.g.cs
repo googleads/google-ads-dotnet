@@ -264,5 +264,15 @@ namespace Google.Ads.GoogleAds.V24.Resources
             get => string.IsNullOrEmpty(ResourceName) ? null : CustomerUserAccessName.Parse(ResourceName, allowUnparsed: true);
             set => ResourceName = value?.ToString() ?? "";
         }
+
+        /// <summary>
+        /// <see cref="MultiPartyAuthReviewName"/>-typed view over the <see cref="PendingMultiPartyAuthReview"/>
+        /// resource name property.
+        /// </summary>
+        internal MultiPartyAuthReviewName PendingMultiPartyAuthReviewAsMultiPartyAuthReviewName
+        {
+            get => string.IsNullOrEmpty(PendingMultiPartyAuthReview) ? null : MultiPartyAuthReviewName.Parse(PendingMultiPartyAuthReview, allowUnparsed: true);
+            set => PendingMultiPartyAuthReview = value?.ToString() ?? "";
+        }
     }
 }

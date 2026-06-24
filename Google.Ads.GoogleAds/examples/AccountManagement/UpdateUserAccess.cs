@@ -196,9 +196,24 @@ namespace Google.Ads.GoogleAds.Examples.V24
                 userAccessService.MutateCustomerUserAccess(
                     customerId.ToString(), operation);
 
-            // Displays the result.
-            Console.WriteLine($"Successfully modified customer user access with " +
-                $"resource name '{response.Result.ResourceName}'.");
+            if (response.Result.MultiPartyAuthReview == null)
+            {
+                // A multi-party auth review was not triggered.
+                Console.WriteLine($"Successfully modified customer user access with " +
+                    $"resource name '{response.Result.ResourceName}'.");
+            }
+            else
+            {
+                // A multi-party auth review was triggered. See
+                // FetchAndApprovePendingMultiPartyAuthReviews.cs for an example on how to fetch
+                // and approve an MPA auth review.
+                Console.WriteLine($"A multi-party auth review was triggered. The MPA review " +
+                    $"resource name is {response.Result.MultiPartyAuthReview}. Ask a second " +
+                    $"administrator to approve this request make the requested user access " +
+                    $"changes. See FetchAndApprovePendingMultiPartyAuthReviews.cs for an " +
+                    $"example on how to approve an MPA auth review using the API.");
+
+            }
         }
     }
 }

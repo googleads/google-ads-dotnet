@@ -119,7 +119,7 @@ namespace Google.Ads.GoogleAds.V23.Resources {
     /// <summary>
     /// Immutable. The resource name of the customer lifecycle goal of a campaign.
     ///
-    /// `customers/{customer_id}/campaignLifecycleGoal/{campaign_id}`
+    /// `customers/{customer_id}/campaignLifecycleGoals/{campaign_id}`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

@@ -57,7 +57,14 @@ namespace Google.Ads.GoogleAds.V22.Resources {
   }
   #region Messages
   /// <summary>
-  /// A group placement view.
+  /// A view showing performance data for where your ads actually served on the
+  /// Display Network and YouTube, including both targeted (managed) and automatic
+  /// placements.
+  ///
+  /// Data for low-traffic placements may be aggregated. The scope
+  /// of placements shown is influenced by the ad group's `TargetingSetting` for
+  /// the `PLACEMENT` dimension. This view corresponds to the "Where ads showed"
+  /// section in the Google Ads UI.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GroupPlacementView : pb::IMessage<GroupPlacementView>
@@ -395,7 +402,11 @@ namespace Google.Ads.GoogleAds.V22.Resources {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -430,7 +441,11 @@ namespace Google.Ads.GoogleAds.V22.Resources {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

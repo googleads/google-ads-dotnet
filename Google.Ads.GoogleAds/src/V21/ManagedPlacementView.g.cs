@@ -50,7 +50,9 @@ namespace Google.Ads.GoogleAds.V21.Resources {
   }
   #region Messages
   /// <summary>
-  /// A managed placement view.
+  /// A view providing performance data for placements explicitly targeted in your
+  /// ad groups. This view
+  /// corresponds to the "Placements" section in the Google Ads UI.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ManagedPlacementView : pb::IMessage<ManagedPlacementView>
@@ -214,7 +216,11 @@ namespace Google.Ads.GoogleAds.V21.Resources {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -233,7 +239,11 @@ namespace Google.Ads.GoogleAds.V21.Resources {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

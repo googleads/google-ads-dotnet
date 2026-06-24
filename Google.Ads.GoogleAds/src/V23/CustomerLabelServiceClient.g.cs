@@ -131,7 +131,11 @@ namespace Google.Ads.GoogleAds.V23.Services
 
     /// <summary>CustomerLabelService client wrapper, for convenient use.</summary>
     /// <remarks>
-    /// Service to manage labels on customers.
+    /// Service to manage labels on Google Ads customers.
+    /// 
+    /// This service is commonly used by manager accounts to apply their own labels
+    /// to their client accounts. The label entity must exist under the manager
+    /// account.
     /// </remarks>
     public abstract partial class CustomerLabelServiceClient
     {
@@ -378,7 +382,11 @@ namespace Google.Ads.GoogleAds.V23.Services
 
     /// <summary>CustomerLabelService client wrapper implementation, for convenient use.</summary>
     /// <remarks>
-    /// Service to manage labels on customers.
+    /// Service to manage labels on Google Ads customers.
+    /// 
+    /// This service is commonly used by manager accounts to apply their own labels
+    /// to their client accounts. The label entity must exist under the manager
+    /// account.
     /// </remarks>
     public sealed partial class CustomerLabelServiceClientImpl : CustomerLabelServiceClient
     {

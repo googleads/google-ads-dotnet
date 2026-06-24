@@ -14,6 +14,7 @@
 
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Util;
+using Google.Ads.GoogleAds.V21.Resources;
 using Google.Protobuf.Reflection;
 using System;
 using System.Linq;
@@ -331,6 +332,12 @@ namespace Google.Ads.GoogleAds.V21.Errors
             return $"customers/{customerId}/campaignExperiments/{campaignExperimentId}";
         }
 
+        public static string CampaignGoalConfig(long customerId, long campaignId,
+            long unifiedGoalId)
+        {
+            return $"customers/{customerId}/campaignGoalConfigs/{campaignId}~{unifiedGoalId}";
+        }
+
         public static string CampaignGroup(long customerId, long campaignGroupId)
         {
             return $"customers/{customerId}/campaignGroups/{campaignGroupId}";
@@ -557,6 +564,11 @@ namespace Google.Ads.GoogleAds.V21.Errors
             return $"geoTargetConstants/{geoTargetConstantId}";
         }
 
+        public static string Goal(long customerId, long unifiedGoalId)
+        {
+            return $"customers/{customerId}/goals/{unifiedGoalId}";
+        }
+
         public static string GoogleAdsField(string name)
         {
             return $"googleAdsFields/{name}";
@@ -695,6 +707,11 @@ namespace Google.Ads.GoogleAds.V21.Errors
             return $"customers/{customerId}/mutateJobs/{mutateJobId}";
         }
 
+        public static string MultiPartyAuthReview(long customerId, long multiPartyAuthReviewId)
+        {
+          return $"customers/{customerId}/multiPartyAuthReviews/{multiPartyAuthReviewId}";
+        }
+
         public static string OfflineUserDataJob(long customerId, long offlineUserDataJobId)
         {
             return $"customers/{customerId}/offlineUserDataJobs/{offlineUserDataJobId}";
@@ -779,6 +796,13 @@ namespace Google.Ads.GoogleAds.V21.Errors
         public static string SmartCampaignSetting(long customerId, long smartCampaignId)
         {
             return $"customers/{customerId}/smartCampaignSettings/{smartCampaignId}";
+        }
+
+        public static string TargetingExpansionView(long customerId, long campaignId,
+            string targetingExpansionType)
+        {
+            return $"customers/{customerId}/targetingExpansionViews/{campaignId}~" +
+                $"{targetingExpansionType}";
         }
 
         public static string ThirdPartyAppAnalyticsLinks(long customerId, long shareableLinkId)

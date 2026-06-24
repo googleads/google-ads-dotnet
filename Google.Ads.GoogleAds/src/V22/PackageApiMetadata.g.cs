@@ -148,6 +148,7 @@ namespace Google.Ads.GoogleAds.V22.Services
             yield return KeywordThemeConstantServiceReflection.Descriptor;
             yield return LabelServiceReflection.Descriptor;
             yield return LocalServicesLeadServiceReflection.Descriptor;
+            yield return MultiPartyAuthReviewServiceReflection.Descriptor;
             yield return OfflineUserDataJobServiceReflection.Descriptor;
             yield return PaymentsAccountServiceReflection.Descriptor;
             yield return ProductLinkInvitationServiceReflection.Descriptor;

@@ -74,6 +74,11 @@ namespace Google.Ads.GoogleAds.V23.Services {
   /// <summary>
   /// Request message for
   /// [CustomerLabelService.MutateCustomerLabels][google.ads.googleads.v23.services.CustomerLabelService.MutateCustomerLabels].
+  ///
+  /// A single `MutateCustomerLabelsRequest` can only modify labels for the single
+  /// customer account specified in the request. To apply a label to multiple
+  /// different accounts, separate `MutateCustomerLabelsRequest` calls must be
+  /// made.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MutateCustomerLabelsRequest : pb::IMessage<MutateCustomerLabelsRequest>

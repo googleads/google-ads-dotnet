@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V24.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjVnb29nbGUvYWRzL2dvb2dsZWFkcy92MjQvZXJyb3JzL2NyaXRlcmlvbl9l",
-            "cnJvci5wcm90bxIfZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmVycm9ycyKl",
-            "OAoSQ3JpdGVyaW9uRXJyb3JFbnVtIo44Cg5Dcml0ZXJpb25FcnJvchIPCgtV",
+            "cnJvci5wcm90bxIfZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmVycm9ycyLC",
+            "OAoSQ3JpdGVyaW9uRXJyb3JFbnVtIqs4Cg5Dcml0ZXJpb25FcnJvchIPCgtV",
             "TlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIaChZDT05DUkVURV9UWVBFX1JF",
             "UVVJUkVEEAISHQoZSU5WQUxJRF9FWENMVURFRF9DQVRFR09SWRADEhgKFElO",
             "VkFMSURfS0VZV09SRF9URVhUEAQSGQoVS0VZV09SRF9URVhUX1RPT19MT05H",
@@ -186,12 +186,13 @@ namespace Google.Ads.GoogleAds.V24.Errors {
             "VElDQUxfVFlQRRC3ARIsCidSRVRBSUxfRklMVEVSX0VYUFJFU1NJT05fRE9F",
             "U19OT1RfRVhJU1QQuAESLwoqUkVUQUlMX0ZJTFRFUl9UQUdTX1JFRkVSUklO",
             "R19UT19FWFBSRVNTSU9OELkBEh8KGkNBTk5PVF9FWENMVURFX0FMTF9UQVJH",
-            "RVRTELoBQvMBCiNjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmVycm9y",
-            "c0ITQ3JpdGVyaW9uRXJyb3JQcm90b1ABWkVnb29nbGUuZ29sYW5nLm9yZy9n",
-            "ZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjI0L2Vycm9ycztl",
-            "cnJvcnOiAgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMjQuRXJyb3Jz",
-            "ygIfR29vZ2xlXEFkc1xHb29nbGVBZHNcVjI0XEVycm9yc+oCI0dvb2dsZTo6",
-            "QWRzOjpHb29nbGVBZHM6OlYyNDo6RXJyb3JzYgZwcm90bzM="));
+            "RVRTELoBEhsKFkNBTk5PVF9UQVJHRVRfTEFOR1VBR0UQuwFC8wEKI2NvbS5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MjQuZXJyb3JzQhNDcml0ZXJpb25FcnJv",
+            "clByb3RvUAFaRWdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
+            "aXMvYWRzL2dvb2dsZWFkcy92MjQvZXJyb3JzO2Vycm9yc6ICA0dBQaoCH0dv",
+            "b2dsZS5BZHMuR29vZ2xlQWRzLlYyNC5FcnJvcnPKAh9Hb29nbGVcQWRzXEdv",
+            "b2dsZUFkc1xWMjRcRXJyb3Jz6gIjR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6",
+            "VjI0OjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -1108,6 +1109,10 @@ namespace Google.Ads.GoogleAds.V24.Errors {
         /// Cannot exclude all demographic targets.
         /// </summary>
         [pbr::OriginalName("CANNOT_EXCLUDE_ALL_TARGETS")] CannotExcludeAllTargets = 186,
+        /// <summary>
+        /// The criterion is not allowed to be targeted for the language.
+        /// </summary>
+        [pbr::OriginalName("CANNOT_TARGET_LANGUAGE")] CannotTargetLanguage = 187,
       }
 
     }

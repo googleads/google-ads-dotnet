@@ -613,7 +613,8 @@ namespace Google.Ads.GoogleAds.V21.Resources {
     /// <summary>Field number for the "expanded_text_ad" field.</summary>
     public const int ExpandedTextAdFieldNumber = 7;
     /// <summary>
-    /// Details pertaining to an expanded text ad.
+    /// Details pertaining to an expanded text ad. Expanded text ads are
+    /// deprecated. Use `ResponsiveSearchAd` instead.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1806,7 +1807,11 @@ namespace Google.Ads.GoogleAds.V21.Resources {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -2115,7 +2120,11 @@ namespace Google.Ads.GoogleAds.V21.Resources {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

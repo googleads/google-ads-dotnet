@@ -130,7 +130,7 @@ namespace Google.Ads.GoogleAds.V23.Resources {
     /// Immutable. Resource name of the product data link.
     /// DataLink resource names have the form:
     ///
-    /// `customers/{customer_id}/datalinks/{product_link_id}~{data_link_id}}
+    /// `customers/{customer_id}/datalinks/{product_link_id}~{data_link_id}
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

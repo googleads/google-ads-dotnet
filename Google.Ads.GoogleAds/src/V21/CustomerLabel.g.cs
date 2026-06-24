@@ -127,7 +127,7 @@ namespace Google.Ads.GoogleAds.V21.Resources {
     private string customer_;
     /// <summary>
     /// Output only. The resource name of the customer to which the label is
-    /// attached. Read only.
+    /// attached. This field should not be set when creating a new `CustomerLabel`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -157,9 +157,10 @@ namespace Google.Ads.GoogleAds.V21.Resources {
     private string label_;
     /// <summary>
     /// Output only. The resource name of the label assigned to the customer.
+    /// This field should not be set when creating a new `CustomerLabel`.
     ///
     /// Note: the Customer ID portion of the label resource name is not
-    /// validated when creating a new CustomerLabel.
+    /// validated when creating a new `CustomerLabel`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -313,7 +314,11 @@ namespace Google.Ads.GoogleAds.V21.Resources {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -340,7 +345,11 @@ namespace Google.Ads.GoogleAds.V21.Resources {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

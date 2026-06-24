@@ -24,7 +24,11 @@ using grpc = global::Grpc.Core;
 
 namespace Google.Ads.GoogleAds.V23.Services {
   /// <summary>
-  /// Service to manage labels on customers.
+  /// Service to manage labels on Google Ads customers.
+  ///
+  /// This service is commonly used by manager accounts to apply their own labels
+  /// to their client accounts. The label entity must exist under the manager
+  /// account.
   /// </summary>
   public static partial class CustomerLabelService
   {

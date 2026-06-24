@@ -1,3 +1,13 @@
+26.0.1
+======
+- Added support for version 24.2 of the Google Ads API.
+- Updated the experiments examples to have clearer docstrings and descriptions
+  and handle cases where metrics might not be populated.
+- Added the `FetchAndApprovePendingMultiPartyAuthReviews` example to demonstrate
+  usage of the multi party authorization reviews and updated the
+  `InviteUserWithAccessRole` and `UpdateUserAccess` examples to reflect the new
+  multi party authorization review behavior.
+
 26.0.0
 ======
 - Added support for version 24.1 of the Google Ads API.

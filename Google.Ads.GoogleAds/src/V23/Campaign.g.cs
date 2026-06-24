@@ -1749,7 +1749,7 @@ namespace Google.Ads.GoogleAds.V23.Resources {
     public const int AiMaxSettingFieldNumber = 101;
     private global::Google.Ads.GoogleAds.V23.Resources.Campaign.Types.AiMaxSetting aiMaxSetting_;
     /// <summary>
-    /// Settings for AI Max in search campaigns.
+    /// Settings for AI Max in Search and Shopping campaigns.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -13184,7 +13184,7 @@ namespace Google.Ads.GoogleAds.V23.Resources {
       }
 
       /// <summary>
-      /// Settings for AI Max in search campaigns.
+      /// Settings for AI Max in Search and Shopping campaigns.
       /// </summary>
       [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class AiMaxSetting : pb::IMessage<AiMaxSetting>
@@ -13247,8 +13247,13 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         /// Max features will serve for this campaign, regardless of the other
         /// settings.
         ///
-        /// Search Term Matching is enabled by default when AI Max is enabled, and
-        /// can be disabled at the ad group level.
+        /// Supported in Search and Shopping campaigns.
+        ///
+        /// For Search campaigns, Search Term Matching is enabled by default when
+        /// AI Max is enabled, and can be disabled at the ad group level.
+        ///
+        /// For Shopping campaigns, Text customization is always enabled when AI Max
+        /// is enabled.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -13278,9 +13283,10 @@ namespace Google.Ads.GoogleAds.V23.Resources {
 
         private global::Google.Ads.GoogleAds.V23.Resources.Campaign.Types.AiMaxSetting.Types.AiMaxBundlingRequired bundlingRequired_;
         /// <summary>
-        /// Output only. Indicates whether a search campaign has adopted AI Max
-        /// before, and is required to have AI Max enabled to adopt campaign-level
-        /// text asset automation and brand list targeting in all API versions.
+        /// Output only. Search campaigns only. Indicates whether a campaign has
+        /// adopted AI Max before, and is required to have AI Max enabled to adopt
+        /// campaign-level text asset automation and brand list targeting in all API
+        /// versions.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

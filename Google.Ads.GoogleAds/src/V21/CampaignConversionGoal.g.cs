@@ -181,6 +181,15 @@ namespace Google.Ads.GoogleAds.V21.Resources {
     private bool biddable_;
     /// <summary>
     /// The biddability of the campaign conversion goal.
+    ///
+    /// If left unspecified during campaign creation or update operations, this
+    /// value will inherit the account-level default biddability for the
+    /// corresponding conversion category and origin.
+    ///
+    /// Note: The account-level default may be set to `true` for newly created
+    /// conversion goals. To explicitly prevent a campaign from bidding on this
+    /// goal, you must explicitly set `biddable` to `false` and include "biddable"
+    /// in your mutate operation's `update_mask`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -354,7 +363,11 @@ namespace Google.Ads.GoogleAds.V21.Resources {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -389,7 +402,11 @@ namespace Google.Ads.GoogleAds.V21.Resources {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

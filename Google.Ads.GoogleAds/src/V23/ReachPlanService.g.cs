@@ -2551,8 +2551,9 @@ namespace Google.Ads.GoogleAds.V23.Services {
 
     private string plannableProductCode_;
     /// <summary>
-    /// The code associated with the ad product (for example: BUMPER,
-    /// TRUEVIEW_IN_STREAM).
+    /// The code associated with the ad product.
+    ///
+    /// For example: "VIDEO_VIEW_CAMPAIGN".
     /// To list the available plannable product codes use
     /// [ReachPlanService.ListPlannableProducts][google.ads.googleads.v23.services.ReachPlanService.ListPlannableProducts].
     /// </summary>
@@ -2582,6 +2583,8 @@ namespace Google.Ads.GoogleAds.V23.Services {
     private string plannableProductName_ = "";
     /// <summary>
     /// The name associated with the ad product.
+    ///
+    /// For example: "Video View Campaign".
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4031,7 +4034,7 @@ namespace Google.Ads.GoogleAds.V23.Services {
     /// <summary>
     /// Targetable YouTube Select Lineups for the ad product.
     ///
-    /// This field replaces the deprecated youtube_select_lineups field.
+    /// This field replaces the deprecated `youtube_select_lineups` field.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -5379,7 +5382,7 @@ namespace Google.Ads.GoogleAds.V23.Services {
     /// the same user.
     /// If not specified, no cap is applied.
     ///
-    /// This field is deprecated in v4 and will eventually be removed.
+    /// This field is deprecated and will eventually be removed.
     /// Use cookie_frequency_cap_setting instead.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5414,7 +5417,7 @@ namespace Google.Ads.GoogleAds.V23.Services {
     /// the same user during a specified time interval.
     /// If not specified, a default of 0 (no cap) is applied.
     ///
-    /// This field replaces the deprecated cookie_frequency_cap field.
+    /// This field replaces the deprecated `cookie_frequency_cap` field.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -6544,7 +6547,7 @@ namespace Google.Ads.GoogleAds.V23.Services {
     ///
     /// Requests must set either this field or `plannable_location_ids`.
     ///
-    /// This field is deprecated as of V12 and will be removed in a future release.
+    /// This field is deprecated and will be removed in a future release.
     /// Use `plannable_location_ids` instead.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

@@ -246,7 +246,7 @@ namespace Google.Ads.GoogleAds.V23.Enums {
         /// </summary>
         [pbr::OriginalName("TEXT_AD")] TextAd = 2,
         /// <summary>
-        /// The ad is an expanded text ad.
+        /// The ad is an expanded text ad. Expanded text ads are deprecated.
         /// </summary>
         [pbr::OriginalName("EXPANDED_TEXT_AD")] ExpandedTextAd = 3,
         /// <summary>

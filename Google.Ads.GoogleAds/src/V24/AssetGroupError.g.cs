@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V24.Errors {
           string.Concat(
             "Cjdnb29nbGUvYWRzL2dvb2dsZWFkcy92MjQvZXJyb3JzL2Fzc2V0X2dyb3Vw",
             "X2Vycm9yLnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuZXJyb3Jz",
-            "Ip0FChNBc3NldEdyb3VwRXJyb3JFbnVtIoUFCg9Bc3NldEdyb3VwRXJyb3IS",
+            "Is8FChNBc3NldEdyb3VwRXJyb3JFbnVtIrcFCg9Bc3NldEdyb3VwRXJyb3IS",
             "DwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESEgoORFVQTElDQVRFX05B",
             "TUUQAhIsCihDQU5OT1RfQUREX0FTU0VUX0dST1VQX0ZPUl9DQU1QQUlHTl9U",
             "WVBFEAMSHQoZTk9UX0VOT1VHSF9IRUFETElORV9BU1NFVBAEEiIKHk5PVF9F",
@@ -40,13 +40,14 @@ namespace Google.Ads.GoogleAds.V24.Errors {
             "VF9ERVNDUklQVElPTl9SRVFVSVJFRBANEhYKEkZJTkFMX1VSTF9SRVFVSVJF",
             "RBAOEioKJkZJTkFMX1VSTF9DT05UQUlOU19JTlZBTElEX0RPTUFJTl9OQU1F",
             "EA8SHwobQURfQ1VTVE9NSVpFUl9OT1RfU1VQUE9SVEVEEBASMgouQ0FOTk9U",
-            "X01VVEFURV9BU1NFVF9HUk9VUF9GT1JfUkVNT1ZFRF9DQU1QQUlHThARQvQB",
-            "CiNjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmVycm9yc0IUQXNzZXRH",
-            "cm91cEVycm9yUHJvdG9QAVpFZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8v",
-            "Z29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YyNC9lcnJvcnM7ZXJyb3JzogID",
-            "R0FBqgIfR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjI0LkVycm9yc8oCH0dvb2ds",
-            "ZVxBZHNcR29vZ2xlQWRzXFYyNFxFcnJvcnPqAiNHb29nbGU6OkFkczo6R29v",
-            "Z2xlQWRzOjpWMjQ6OkVycm9yc2IGcHJvdG8z"));
+            "X01VVEFURV9BU1NFVF9HUk9VUF9GT1JfUkVNT1ZFRF9DQU1QQUlHThAREjAK",
+            "LENBTk5PVF9SRU1PVkVfQUxMX0FTU0VUX0dST1VQU19GUk9NX0NBTVBBSUdO",
+            "EBJC9AEKI2NvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuZXJyb3JzQhRB",
+            "c3NldEdyb3VwRXJyb3JQcm90b1ABWkVnb29nbGUuZ29sYW5nLm9yZy9nZW5w",
+            "cm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjI0L2Vycm9ycztlcnJv",
+            "cnOiAgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMjQuRXJyb3JzygIf",
+            "R29vZ2xlXEFkc1xHb29nbGVBZHNcVjI0XEVycm9yc+oCI0dvb2dsZTo6QWRz",
+            "OjpHb29nbGVBZHM6OlYyNDo6RXJyb3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -300,6 +301,11 @@ namespace Google.Ads.GoogleAds.V24.Errors {
         /// Cannot mutate asset group for campaign with removed status.
         /// </summary>
         [pbr::OriginalName("CANNOT_MUTATE_ASSET_GROUP_FOR_REMOVED_CAMPAIGN")] CannotMutateAssetGroupForRemovedCampaign = 17,
+        /// <summary>
+        /// The asset group cannot be removed because it's the last one in the
+        /// campaign.
+        /// </summary>
+        [pbr::OriginalName("CANNOT_REMOVE_ALL_ASSET_GROUPS_FROM_CAMPAIGN")] CannotRemoveAllAssetGroupsFromCampaign = 18,
       }
 
     }

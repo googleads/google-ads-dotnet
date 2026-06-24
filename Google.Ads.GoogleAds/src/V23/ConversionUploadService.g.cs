@@ -247,13 +247,14 @@ namespace Google.Ads.GoogleAds.V23.Services {
     public const int PartialFailureFieldNumber = 3;
     private bool partialFailure_;
     /// <summary>
-    /// Required. If true, successful operations will be carried out and invalid
-    /// operations will return errors. If false, all operations will be carried
+    /// Required. If `true`, successful operations will be carried out and invalid
+    /// operations will return errors. If `false`, all operations will be carried
     /// out in one transaction if and only if they are all valid.
-    /// This should always be set to true.
+    /// This should always be set to `true`.
+    ///
     /// See
-    /// https://developers.google.com/google-ads/api/docs/best-practices/partial-failures
-    /// for more information about partial failure.
+    /// [Best practices for partial
+    /// failures](/google-ads/api/docs/best-practices/partial-failures).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -268,7 +269,7 @@ namespace Google.Ads.GoogleAds.V23.Services {
     public const int ValidateOnlyFieldNumber = 4;
     private bool validateOnly_;
     /// <summary>
-    /// If true, the request is validated but not executed. Only errors are
+    /// If `true`, the request is validated but not executed. Only errors are
     /// returned, not results.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -599,9 +600,11 @@ namespace Google.Ads.GoogleAds.V23.Services {
     /// Errors that pertain to conversion failures in the partial failure mode.
     /// Returned when all errors occur inside the conversions. If any errors occur
     /// outside the conversions (for example, auth errors), we return an RPC level
-    /// error. See
-    /// https://developers.google.com/google-ads/api/docs/best-practices/partial-failures
-    /// for more information about partial failure.
+    /// error.
+    ///
+    /// See
+    /// [Best practices for partial
+    /// failures](/google-ads/api/docs/best-practices/partial-failures).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -619,8 +622,8 @@ namespace Google.Ads.GoogleAds.V23.Services {
     private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V23.Services.ClickConversionResult> results_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V23.Services.ClickConversionResult>();
     /// <summary>
     /// Returned for successfully processed conversions. Proto will be empty for
-    /// rows that received an error. Results are not returned when validate_only is
-    /// true.
+    /// rows that received an error. Results are not returned when `validate_only`
+    /// is `true`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -916,13 +919,15 @@ namespace Google.Ads.GoogleAds.V23.Services {
     public const int PartialFailureFieldNumber = 3;
     private bool partialFailure_;
     /// <summary>
-    /// Required. If true, successful operations will be carried out and invalid
-    /// operations will return errors. If false, all operations will be carried
+    /// Required. If `true`, successful operations will be carried out and invalid
+    /// operations will return errors. If `false`, all operations will be carried
     /// out in one transaction if and only if they are all valid.
-    /// This should always be set to true.
+    ///
+    /// This should always be set to `true`.
+    ///
     /// See
-    /// https://developers.google.com/google-ads/api/docs/best-practices/partial-failures
-    /// for more information about partial failure.
+    /// [Best practices for partial
+    /// failures](/google-ads/api/docs/best-practices/partial-failures).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1209,9 +1214,11 @@ namespace Google.Ads.GoogleAds.V23.Services {
     /// Errors that pertain to conversion failures in the partial failure mode.
     /// Returned when all errors occur inside the conversions. If any errors occur
     /// outside the conversions (for example, auth errors), we return an RPC level
-    /// error. See
-    /// https://developers.google.com/google-ads/api/docs/best-practices/partial-failures
-    /// for more information about partial failure.
+    /// error.
+    ///
+    /// See
+    /// [Best practices for partial
+    /// failures](/google-ads/api/docs/best-practices/partial-failures).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1229,8 +1236,8 @@ namespace Google.Ads.GoogleAds.V23.Services {
     private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V23.Services.CallConversionResult> results_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V23.Services.CallConversionResult>();
     /// <summary>
     /// Returned for successfully processed conversions. Proto will be empty for
-    /// rows that received an error. Results are not returned when validate_only is
-    /// true.
+    /// rows that received an error. Results are not returned when `validate_only`
+    /// is `true`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1542,6 +1549,7 @@ namespace Google.Ads.GoogleAds.V23.Services {
     private string conversionAction_;
     /// <summary>
     /// Resource name of the conversion action associated with this conversion.
+    ///
     /// Note: Although this resource name consists of a customer id and a
     /// conversion action id, validation will ignore the customer id and use the
     /// conversion action id as the sole identifier of the conversion action.
@@ -1785,7 +1793,6 @@ namespace Google.Ads.GoogleAds.V23.Services {
     private global::Google.Ads.GoogleAds.V23.Enums.ConversionCustomerTypeEnum.Types.ConversionCustomerType customerType_ = global::Google.Ads.GoogleAds.V23.Enums.ConversionCustomerTypeEnum.Types.ConversionCustomerType.Unspecified;
     /// <summary>
     /// Type of the customer associated with the conversion (new or returning).
-    /// Accessible only to customers on the allow-list.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1810,8 +1817,11 @@ namespace Google.Ads.GoogleAds.V23.Services {
     /// exclude sharing IP addresses from users from these regions and ensure that
     /// you provide users with clear and comprehensive information about the data
     /// you collect on your sites, apps, and other properties and get consent where
-    /// required by law or any applicable Google policies. See the
-    /// https://support.google.com/google-ads/answer/2998031 page for more details.
+    /// required by law or any applicable Google policies. See
+    /// [About offline conversion
+    /// imports](//support.google.com/google-ads/answer/2998031) page for more
+    /// details.
+    ///
     /// This field is only available to allowlisted users. To include this field in
     /// conversion imports, upgrade to the Data Manager API.
     /// </summary>
@@ -2607,6 +2617,7 @@ namespace Google.Ads.GoogleAds.V23.Services {
     private string conversionAction_;
     /// <summary>
     /// Resource name of the conversion action associated with this conversion.
+    ///
     /// Note: Although this resource name consists of a customer id and a
     /// conversion action id, validation will ignore the customer id and use the
     /// conversion action id as the sole identifier of the conversion action.
@@ -3337,7 +3348,7 @@ namespace Google.Ads.GoogleAds.V23.Services {
   }
 
   /// <summary>
-  /// Identifying information for a successfully processed ClickConversion.
+  /// Identifying information for a successfully processed `ClickConversion`.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ClickConversionResult : pb::IMessage<ClickConversionResult>
@@ -4211,6 +4222,7 @@ namespace Google.Ads.GoogleAds.V23.Services {
     private string conversionCustomVariable_ = "";
     /// <summary>
     /// Resource name of the custom variable associated with this conversion.
+    ///
     /// Note: Although this resource name consists of a customer id and a
     /// conversion custom variable id, validation will ignore the customer id and
     /// use the conversion custom variable id as the sole identifier of the
@@ -4510,7 +4522,7 @@ namespace Google.Ads.GoogleAds.V23.Services {
     /// <summary>
     /// Sum of all transaction level discounts, such as free shipping and
     /// coupon discounts for the whole cart. The currency code is the same
-    /// as that in the ClickConversion message.
+    /// as that in the `ClickConversion` message.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4852,7 +4864,7 @@ namespace Google.Ads.GoogleAds.V23.Services {
         /// <summary>
         /// Unit price excluding tax, shipping, and any transaction
         /// level discounts. The currency code is the same as that in the
-        /// ClickConversion message.
+        /// `ClickConversion` message.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V24.Enums {
           string.Concat(
             "Cjtnb29nbGUvYWRzL2dvb2dsZWFkcy92MjQvZW51bXMvY29udmVyc2lvbl9h",
             "Y3Rpb25fdHlwZS5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmVu",
-            "dW1zItAMChhDb252ZXJzaW9uQWN0aW9uVHlwZUVudW0iswwKFENvbnZlcnNp",
+            "dW1zIugMChhDb252ZXJzaW9uQWN0aW9uVHlwZUVudW0iywwKFENvbnZlcnNp",
             "b25BY3Rpb25UeXBlEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgsK",
             "B0FEX0NBTEwQAhIRCg1DTElDS19UT19DQUxMEAMSGAoUR09PR0xFX1BMQVlf",
             "RE9XTkxPQUQQBBIfChtHT09HTEVfUExBWV9JTl9BUFBfUFVSQ0hBU0UQBRIQ",
@@ -62,12 +62,13 @@ namespace Google.Ads.GoogleAds.V24.Enums {
             "RklSRUJBU0VfQU5EUk9JRF9DTE9TRV9DT05WRVJUX0xFQUQQLxIeChpGSVJF",
             "QkFTRV9JT1NfR0VORVJBVEVfTEVBRBAwEh0KGUZJUkVCQVNFX0lPU19RVUFM",
             "SUZZX0xFQUQQMRIjCh9GSVJFQkFTRV9JT1NfQ0xPU0VfQ09OVkVSVF9MRUFE",
-            "EDJC8wEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuZW51bXNCGUNv",
-            "bnZlcnNpb25BY3Rpb25UeXBlUHJvdG9QAVpDZ29vZ2xlLmdvbGFuZy5vcmcv",
-            "Z2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YyNC9lbnVtcztl",
-            "bnVtc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYyNC5FbnVtc8oC",
-            "Hkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYyNFxFbnVtc+oCIkdvb2dsZTo6QWRz",
-            "OjpHb29nbGVBZHM6OlYyNDo6RW51bXNiBnByb3RvMw=="));
+            "EDISFgoSTE9DQUxfU0VSVklDRVNfQURTEDNC8wEKImNvbS5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MjQuZW51bXNCGUNvbnZlcnNpb25BY3Rpb25UeXBlUHJv",
+            "dG9QAVpDZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9h",
+            "ZHMvZ29vZ2xlYWRzL3YyNC9lbnVtcztlbnVtc6ICA0dBQaoCHkdvb2dsZS5B",
+            "ZHMuR29vZ2xlQWRzLlYyNC5FbnVtc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRz",
+            "XFYyNFxFbnVtc+oCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyNDo6RW51",
+            "bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -497,6 +498,12 @@ namespace Google.Ads.GoogleAds.V24.Enums {
         /// conversions.
         /// </summary>
         [pbr::OriginalName("FIREBASE_IOS_CLOSE_CONVERT_LEAD")] FirebaseIosCloseConvertLead = 50,
+        /// <summary>
+        /// Conversions that occur when a user clicks on local services ads unit and
+        /// reaches out to advertiser through phone call, message, or booking options
+        /// on the ad.
+        /// </summary>
+        [pbr::OriginalName("LOCAL_SERVICES_ADS")] LocalServicesAds = 51,
       }
 
     }

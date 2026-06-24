@@ -30,147 +30,163 @@ namespace Google.Ads.GoogleAds.V24.Services {
             "L2NvbW1vbi9hZGRpdGlvbmFsX2FwcGxpY2F0aW9uX2luZm8ucHJvdG8aQWdv",
             "b2dsZS9hZHMvZ29vZ2xlYWRzL3YyNC9jb21tb24vYXVkaWVuY2VfaW5zaWdo",
             "dHNfYXR0cmlidXRlLnByb3RvGi5nb29nbGUvYWRzL2dvb2dsZWFkcy92MjQv",
-            "Y29tbW9uL2NyaXRlcmlhLnByb3RvGjNnb29nbGUvYWRzL2dvb2dsZWFkcy92",
-            "MjQvZW51bXMvaW5zaWdodHNfdHJlbmQucHJvdG8aPGdvb2dsZS9hZHMvZ29v",
-            "Z2xlYWRzL3YyNC9lbnVtcy9wYXJ0bmVyc2hpcF9vcHBvcnR1bml0eS5wcm90",
-            "bxocZ29vZ2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90bxoXZ29vZ2xlL2FwaS9j",
-            "bGllbnQucHJvdG8aH2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8i",
-            "3QkKHkdlbmVyYXRlQ3JlYXRvckluc2lnaHRzUmVxdWVzdBIYCgtjdXN0b21l",
-            "cl9pZBgBIAEoCUID4EECEiQKF2N1c3RvbWVyX2luc2lnaHRzX2dyb3VwGAIg",
-            "ASgJQgPgQQISYgoZaW5zaWdodHNfYXBwbGljYXRpb25faW5mbxgIIAEoCzI6",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5jb21tb24uQWRkaXRpb25hbEFw",
-            "cGxpY2F0aW9uSW5mb0ID4EEBEk0KEWNvdW50cnlfbG9jYXRpb25zGAYgAygL",
-            "Mi0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmNvbW1vbi5Mb2NhdGlvbklu",
-            "Zm9CA+BBAhJMChVzdWJfY291bnRyeV9sb2NhdGlvbnMYByADKAsyLS5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52MjQuY29tbW9uLkxvY2F0aW9uSW5mbxJvChFz",
-            "ZWFyY2hfYXR0cmlidXRlcxgDIAEoCzJSLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYyNC5zZXJ2aWNlcy5HZW5lcmF0ZUNyZWF0b3JJbnNpZ2h0c1JlcXVlc3Qu",
-            "U2VhcmNoQXR0cmlidXRlc0gAEmUKDHNlYXJjaF9icmFuZBgFIAEoCzJNLmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5zZXJ2aWNlcy5HZW5lcmF0ZUNyZWF0",
-            "b3JJbnNpZ2h0c1JlcXVlc3QuU2VhcmNoQnJhbmRIABJsCg9zZWFyY2hfY2hh",
-            "bm5lbHMYBCABKAsyUS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuc2Vydmlj",
-            "ZXMuR2VuZXJhdGVDcmVhdG9ySW5zaWdodHNSZXF1ZXN0LllvdVR1YmVDaGFu",
-            "bmVsc0gAGrICChBTZWFyY2hBdHRyaWJ1dGVzElwKE2F1ZGllbmNlX2F0dHJp",
-            "YnV0ZXMYASADKAsyOi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuY29tbW9u",
-            "LkF1ZGllbmNlSW5zaWdodHNBdHRyaWJ1dGVCA+BBARJjChVhdWRpZW5jZV9j",
-            "b21iaW5hdGlvbnMYAyADKAsyPy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQu",
-            "Y29tbW9uLkluc2lnaHRzQXVkaWVuY2VBdHRyaWJ1dGVHcm91cEID4EEBElsK",
-            "EmNyZWF0b3JfYXR0cmlidXRlcxgCIAMoCzI6Lmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYyNC5jb21tb24uQXVkaWVuY2VJbnNpZ2h0c0F0dHJpYnV0ZUID4EEB",
-            "GosBCgtTZWFyY2hCcmFuZBJXCg5icmFuZF9lbnRpdGllcxgBIAMoCzI6Lmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5jb21tb24uQXVkaWVuY2VJbnNpZ2h0",
-            "c0F0dHJpYnV0ZUID4EEBEiMKFmluY2x1ZGVfcmVsYXRlZF90b3BpY3MYAiAB",
-            "KAhCA+BBARplCg9Zb3VUdWJlQ2hhbm5lbHMSUgoQeW91dHViZV9jaGFubmVs",
-            "cxgBIAMoCzIzLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5jb21tb24uWW91",
-            "VHViZUNoYW5uZWxJbmZvQgPgQQFCCgoIY3JpdGVyaWEidgofR2VuZXJhdGVD",
-            "cmVhdG9ySW5zaWdodHNSZXNwb25zZRJTChBjcmVhdG9yX2luc2lnaHRzGAEg",
-            "AygLMjkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LnNlcnZpY2VzLllvdVR1",
-            "YmVDcmVhdG9ySW5zaWdodHMitwMKH0dlbmVyYXRlVHJlbmRpbmdJbnNpZ2h0",
-            "c1JlcXVlc3QSGAoLY3VzdG9tZXJfaWQYASABKAlCA+BBAhIkChdjdXN0b21l",
-            "cl9pbnNpZ2h0c19ncm91cBgCIAEoCUID4EECEmIKGWluc2lnaHRzX2FwcGxp",
-            "Y2F0aW9uX2luZm8YBiABKAsyOi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQu",
-            "Y29tbW9uLkFkZGl0aW9uYWxBcHBsaWNhdGlvbkluZm9CA+BBARJMChBjb3Vu",
-            "dHJ5X2xvY2F0aW9uGAMgASgLMi0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0",
-            "LmNvbW1vbi5Mb2NhdGlvbkluZm9CA+BBAhJMCg9zZWFyY2hfYXVkaWVuY2UY",
-            "BCABKAsyMS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuc2VydmljZXMuU2Vh",
-            "cmNoQXVkaWVuY2VIABJICg1zZWFyY2hfdG9waWNzGAUgASgLMi8uZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjI0LnNlcnZpY2VzLlNlYXJjaFRvcGljc0gAQgoK",
-            "CGNyaXRlcmlhImsKIEdlbmVyYXRlVHJlbmRpbmdJbnNpZ2h0c1Jlc3BvbnNl",
-            "EkcKDnRyZW5kX2luc2lnaHRzGAEgAygLMi8uZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjI0LnNlcnZpY2VzLlRyZW5kSW5zaWdodCKDAQoWWW91VHViZUNyZWF0",
-            "b3JJbnNpZ2h0cxIUCgxjcmVhdG9yX25hbWUYASABKAkSUwoQY3JlYXRvcl9j",
-            "aGFubmVscxgCIAMoCzI5Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5zZXJ2",
-            "aWNlcy5Zb3VUdWJlQ2hhbm5lbEluc2lnaHRzIq8ECg5Zb3VUdWJlTWV0cmlj",
-            "cxIYChBzdWJzY3JpYmVyX2NvdW50GAEgASgDEhMKC3ZpZXdzX2NvdW50GAIg",
-            "ASgDEhMKC3ZpZGVvX2NvdW50GAMgASgDEhMKC2xpa2VzX2NvdW50GAUgASgD",
-            "EhQKDHNoYXJlc19jb3VudBgGIAEoAxIWCg5jb21tZW50c19jb3VudBgHIAEo",
-            "AxIXCg9lbmdhZ2VtZW50X3JhdGUYCCABKAESHwoXYXZlcmFnZV92aWV3c19w",
-            "ZXJfdmlkZW8YCSABKAESHwoXYXZlcmFnZV9saWtlc19wZXJfdmlkZW8YCiAB",
-            "KAESIAoYYXZlcmFnZV9zaGFyZXNfcGVyX3ZpZGVvGAsgASgBEiIKGmF2ZXJh",
-            "Z2VfY29tbWVudHNfcGVyX3ZpZGVvGAwgASgBEhoKEnNob3J0c192aWV3c19j",
-            "b3VudBgNIAEoAxIaChJzaG9ydHNfdmlkZW9fY291bnQYDiABKAMSIAoYaXNf",
-            "YWN0aXZlX3Nob3J0c19jcmVhdG9yGAQgASgIEiUKHWlzX2FjdGl2ZV9saXZl",
-            "X3N0cmVhbV9jcmVhdG9yGBAgASgIEnQKGXBhcnRuZXJzaGlwX29wcG9ydHVu",
-            "aXRpZXMYESADKA4yUS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuZW51bXMu",
-            "UGFydG5lcnNoaXBPcHBvcnR1bml0eUVudW0uUGFydG5lcnNoaXBPcHBvcnR1",
-            "bml0eSKpBgoWWW91VHViZUNoYW5uZWxJbnNpZ2h0cxIUCgxkaXNwbGF5X25h",
-            "bWUYASABKAkSTAoPeW91dHViZV9jaGFubmVsGAIgASgLMjMuZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjI0LmNvbW1vbi5Zb3VUdWJlQ2hhbm5lbEluZm8SEwoL",
-            "Y2hhbm5lbF91cmwYCSABKAkSGwoTY2hhbm5lbF9kZXNjcmlwdGlvbhgKIAEo",
-            "CRIOCgZoYW5kbGUYCyABKAkSFQoNdGh1bWJuYWlsX3VybBgMIAEoCRIUCgxw",
-            "dWJsaXNoX2RhdGUYDSABKAkSRwoQY291bnRyeV9sb2NhdGlvbhgOIAEoCzIt",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5jb21tb24uTG9jYXRpb25JbmZv",
-            "EkoKD2NoYW5uZWxfbWV0cmljcxgDIAEoCzIxLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYyNC5zZXJ2aWNlcy5Zb3VUdWJlTWV0cmljcxJnChtjaGFubmVsX2F1",
-            "ZGllbmNlX2F0dHJpYnV0ZXMYByADKAsyQi5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "Y29tbW9uL2NyaXRlcmlhLnByb3RvGk9nb29nbGUvYWRzL2dvb2dsZWFkcy92",
+            "MjQvZW51bXMvY29udGVudF9jcmVhdG9yX2luc2lnaHRzX3N1cHBsZW1lbnRh",
+            "bF9kYXRhLnByb3RvGjNnb29nbGUvYWRzL2dvb2dsZWFkcy92MjQvZW51bXMv",
+            "aW5zaWdodHNfdHJlbmQucHJvdG8aPGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3Yy",
+            "NC9lbnVtcy9wYXJ0bmVyc2hpcF9vcHBvcnR1bml0eS5wcm90bxocZ29vZ2xl",
+            "L2FwaS9hbm5vdGF0aW9ucy5wcm90bxoXZ29vZ2xlL2FwaS9jbGllbnQucHJv",
+            "dG8aH2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8iuwsKHkdlbmVy",
+            "YXRlQ3JlYXRvckluc2lnaHRzUmVxdWVzdBIYCgtjdXN0b21lcl9pZBgBIAEo",
+            "CUID4EECEiQKF2N1c3RvbWVyX2luc2lnaHRzX2dyb3VwGAIgASgJQgPgQQIS",
+            "YgoZaW5zaWdodHNfYXBwbGljYXRpb25faW5mbxgIIAEoCzI6Lmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYyNC5jb21tb24uQWRkaXRpb25hbEFwcGxpY2F0aW9u",
+            "SW5mb0ID4EEBEk0KEWNvdW50cnlfbG9jYXRpb25zGAYgAygLMi0uZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjI0LmNvbW1vbi5Mb2NhdGlvbkluZm9CA+BBAhJM",
+            "ChVzdWJfY291bnRyeV9sb2NhdGlvbnMYByADKAsyLS5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MjQuY29tbW9uLkxvY2F0aW9uSW5mbxKRAQoRc3VwcGxlbWVu",
+            "dGFsX2RhdGEYCiADKA4ycS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuZW51",
+            "bXMuQ29udGVudENyZWF0b3JJbnNpZ2h0c1N1cHBsZW1lbnRhbERhdGFFbnVt",
+            "LkNvbnRlbnRDcmVhdG9ySW5zaWdodHNTdXBwbGVtZW50YWxEYXRhQgPgQQES",
+            "bwoRc2VhcmNoX2F0dHJpYnV0ZXMYAyABKAsyUi5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MjQuc2VydmljZXMuR2VuZXJhdGVDcmVhdG9ySW5zaWdodHNSZXF1",
+            "ZXN0LlNlYXJjaEF0dHJpYnV0ZXNIABJlCgxzZWFyY2hfYnJhbmQYBSABKAsy",
+            "TS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuc2VydmljZXMuR2VuZXJhdGVD",
+            "cmVhdG9ySW5zaWdodHNSZXF1ZXN0LlNlYXJjaEJyYW5kSAASbAoPc2VhcmNo",
+            "X2NoYW5uZWxzGAQgASgLMlEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LnNl",
+            "cnZpY2VzLkdlbmVyYXRlQ3JlYXRvckluc2lnaHRzUmVxdWVzdC5Zb3VUdWJl",
+            "Q2hhbm5lbHNIABJICg1zZWFyY2hfdG9waWNzGAkgASgLMi8uZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjI0LnNlcnZpY2VzLlNlYXJjaFRvcGljc0gAGrICChBT",
+            "ZWFyY2hBdHRyaWJ1dGVzElwKE2F1ZGllbmNlX2F0dHJpYnV0ZXMYASADKAsy",
+            "Oi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuY29tbW9uLkF1ZGllbmNlSW5z",
+            "aWdodHNBdHRyaWJ1dGVCA+BBARJjChVhdWRpZW5jZV9jb21iaW5hdGlvbnMY",
+            "AyADKAsyPy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuY29tbW9uLkluc2ln",
+            "aHRzQXVkaWVuY2VBdHRyaWJ1dGVHcm91cEID4EEBElsKEmNyZWF0b3JfYXR0",
+            "cmlidXRlcxgCIAMoCzI6Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5jb21t",
+            "b24uQXVkaWVuY2VJbnNpZ2h0c0F0dHJpYnV0ZUID4EEBGosBCgtTZWFyY2hC",
+            "cmFuZBJXCg5icmFuZF9lbnRpdGllcxgBIAMoCzI6Lmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYyNC5jb21tb24uQXVkaWVuY2VJbnNpZ2h0c0F0dHJpYnV0ZUID",
+            "4EEBEiMKFmluY2x1ZGVfcmVsYXRlZF90b3BpY3MYAiABKAhCA+BBARplCg9Z",
+            "b3VUdWJlQ2hhbm5lbHMSUgoQeW91dHViZV9jaGFubmVscxgBIAMoCzIzLmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5jb21tb24uWW91VHViZUNoYW5uZWxJ",
+            "bmZvQgPgQQFCCgoIY3JpdGVyaWEi0QEKH0dlbmVyYXRlQ3JlYXRvckluc2ln",
+            "aHRzUmVzcG9uc2USUwoQY3JlYXRvcl9pbnNpZ2h0cxgBIAMoCzI5Lmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYyNC5zZXJ2aWNlcy5Zb3VUdWJlQ3JlYXRvcklu",
+            "c2lnaHRzElkKFmxvY2FsX2NyZWF0b3JfaW5zaWdodHMYAiADKAsyOS5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MjQuc2VydmljZXMuWW91VHViZUNyZWF0b3JJ",
+            "bnNpZ2h0cyKeBQofR2VuZXJhdGVUcmVuZGluZ0luc2lnaHRzUmVxdWVzdBIY",
+            "CgtjdXN0b21lcl9pZBgBIAEoCUID4EECEiQKF2N1c3RvbWVyX2luc2lnaHRz",
+            "X2dyb3VwGAIgASgJQgPgQQISYgoZaW5zaWdodHNfYXBwbGljYXRpb25faW5m",
+            "bxgGIAEoCzI6Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5jb21tb24uQWRk",
+            "aXRpb25hbEFwcGxpY2F0aW9uSW5mb0ID4EEBEkwKEGNvdW50cnlfbG9jYXRp",
+            "b24YAyABKAsyLS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuY29tbW9uLkxv",
+            "Y2F0aW9uSW5mb0ID4EECElEKFXN1Yl9jb3VudHJ5X2xvY2F0aW9ucxgIIAMo",
+            "CzItLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5jb21tb24uTG9jYXRpb25J",
+            "bmZvQgPgQQESkQEKEXN1cHBsZW1lbnRhbF9kYXRhGAcgAygOMnEuZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjI0LmVudW1zLkNvbnRlbnRDcmVhdG9ySW5zaWdo",
+            "dHNTdXBwbGVtZW50YWxEYXRhRW51bS5Db250ZW50Q3JlYXRvckluc2lnaHRz",
+            "U3VwcGxlbWVudGFsRGF0YUID4EEBEkwKD3NlYXJjaF9hdWRpZW5jZRgEIAEo",
+            "CzIxLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5zZXJ2aWNlcy5TZWFyY2hB",
+            "dWRpZW5jZUgAEkgKDXNlYXJjaF90b3BpY3MYBSABKAsyLy5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MjQuc2VydmljZXMuU2VhcmNoVG9waWNzSABCCgoIY3Jp",
+            "dGVyaWEiawogR2VuZXJhdGVUcmVuZGluZ0luc2lnaHRzUmVzcG9uc2USRwoO",
+            "dHJlbmRfaW5zaWdodHMYASADKAsyLy5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MjQuc2VydmljZXMuVHJlbmRJbnNpZ2h0IoMBChZZb3VUdWJlQ3JlYXRvcklu",
+            "c2lnaHRzEhQKDGNyZWF0b3JfbmFtZRgBIAEoCRJTChBjcmVhdG9yX2NoYW5u",
+            "ZWxzGAIgAygLMjkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LnNlcnZpY2Vz",
+            "LllvdVR1YmVDaGFubmVsSW5zaWdodHMirwQKDllvdVR1YmVNZXRyaWNzEhgK",
+            "EHN1YnNjcmliZXJfY291bnQYASABKAMSEwoLdmlld3NfY291bnQYAiABKAMS",
+            "EwoLdmlkZW9fY291bnQYAyABKAMSEwoLbGlrZXNfY291bnQYBSABKAMSFAoM",
+            "c2hhcmVzX2NvdW50GAYgASgDEhYKDmNvbW1lbnRzX2NvdW50GAcgASgDEhcK",
+            "D2VuZ2FnZW1lbnRfcmF0ZRgIIAEoARIfChdhdmVyYWdlX3ZpZXdzX3Blcl92",
+            "aWRlbxgJIAEoARIfChdhdmVyYWdlX2xpa2VzX3Blcl92aWRlbxgKIAEoARIg",
+            "ChhhdmVyYWdlX3NoYXJlc19wZXJfdmlkZW8YCyABKAESIgoaYXZlcmFnZV9j",
+            "b21tZW50c19wZXJfdmlkZW8YDCABKAESGgoSc2hvcnRzX3ZpZXdzX2NvdW50",
+            "GA0gASgDEhoKEnNob3J0c192aWRlb19jb3VudBgOIAEoAxIgChhpc19hY3Rp",
+            "dmVfc2hvcnRzX2NyZWF0b3IYBCABKAgSJQodaXNfYWN0aXZlX2xpdmVfc3Ry",
+            "ZWFtX2NyZWF0b3IYECABKAgSdAoZcGFydG5lcnNoaXBfb3Bwb3J0dW5pdGll",
+            "cxgRIAMoDjJRLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5lbnVtcy5QYXJ0",
+            "bmVyc2hpcE9wcG9ydHVuaXR5RW51bS5QYXJ0bmVyc2hpcE9wcG9ydHVuaXR5",
+            "IqkGChZZb3VUdWJlQ2hhbm5lbEluc2lnaHRzEhQKDGRpc3BsYXlfbmFtZRgB",
+            "IAEoCRJMCg95b3V0dWJlX2NoYW5uZWwYAiABKAsyMy5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MjQuY29tbW9uLllvdVR1YmVDaGFubmVsSW5mbxITCgtjaGFu",
+            "bmVsX3VybBgJIAEoCRIbChNjaGFubmVsX2Rlc2NyaXB0aW9uGAogASgJEg4K",
+            "BmhhbmRsZRgLIAEoCRIVCg10aHVtYm5haWxfdXJsGAwgASgJEhQKDHB1Ymxp",
+            "c2hfZGF0ZRgNIAEoCRJHChBjb3VudHJ5X2xvY2F0aW9uGA4gASgLMi0uZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjI0LmNvbW1vbi5Mb2NhdGlvbkluZm8SSgoP",
+            "Y2hhbm5lbF9tZXRyaWNzGAMgASgLMjEuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djI0LnNlcnZpY2VzLllvdVR1YmVNZXRyaWNzEmcKG2NoYW5uZWxfYXVkaWVu",
+            "Y2VfYXR0cmlidXRlcxgHIAMoCzJCLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
+            "NC5jb21tb24uQXVkaWVuY2VJbnNpZ2h0c0F0dHJpYnV0ZU1ldGFkYXRhEl4K",
+            "EmNoYW5uZWxfYXR0cmlidXRlcxgFIAMoCzJCLmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYyNC5jb21tb24uQXVkaWVuY2VJbnNpZ2h0c0F0dHJpYnV0ZU1ldGFk",
+            "YXRhElYKCnRvcF92aWRlb3MYCCADKAsyQi5nb29nbGUuYWRzLmdvb2dsZWFk",
             "cy52MjQuY29tbW9uLkF1ZGllbmNlSW5zaWdodHNBdHRyaWJ1dGVNZXRhZGF0",
-            "YRJeChJjaGFubmVsX2F0dHJpYnV0ZXMYBSADKAsyQi5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52MjQuY29tbW9uLkF1ZGllbmNlSW5zaWdodHNBdHRyaWJ1dGVN",
-            "ZXRhZGF0YRJWCgp0b3BfdmlkZW9zGAggAygLMkIuZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjI0LmNvbW1vbi5BdWRpZW5jZUluc2lnaHRzQXR0cmlidXRlTWV0",
-            "YWRhdGESVwoWbGFuZ3VhZ2VfZGlzdHJpYnV0aW9ucxgPIAMoCzI3Lmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYyNC5zZXJ2aWNlcy5MYW5ndWFnZURpc3RyaWJ1",
-            "dGlvbhIUCgxjaGFubmVsX3R5cGUYBiABKAkSFwoPcmVsZXZhbmNlX3Njb3Jl",
-            "GBAgASgBItMBCg5TZWFyY2hBdWRpZW5jZRJcChNhdWRpZW5jZV9hdHRyaWJ1",
-            "dGVzGAEgAygLMjouZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmNvbW1vbi5B",
-            "dWRpZW5jZUluc2lnaHRzQXR0cmlidXRlQgPgQQISYwoVYXVkaWVuY2VfY29t",
-            "YmluYXRpb25zGAIgAygLMj8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmNv",
-            "bW1vbi5JbnNpZ2h0c0F1ZGllbmNlQXR0cmlidXRlR3JvdXBCA+BBASJeCgxT",
-            "ZWFyY2hUb3BpY3MSTgoIZW50aXRpZXMYASADKAsyNy5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52MjQuY29tbW9uLkF1ZGllbmNlSW5zaWdodHNFbnRpdHlCA+BB",
-            "AiKQBAoMVHJlbmRJbnNpZ2h0ElsKD3RyZW5kX2F0dHJpYnV0ZRgBIAEoCzJC",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5jb21tb24uQXVkaWVuY2VJbnNp",
-            "Z2h0c0F0dHJpYnV0ZU1ldGFkYXRhEk0KDXRyZW5kX21ldHJpY3MYAiABKAsy",
+            "YRJXChZsYW5ndWFnZV9kaXN0cmlidXRpb25zGA8gAygLMjcuZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjI0LnNlcnZpY2VzLkxhbmd1YWdlRGlzdHJpYnV0aW9u",
+            "EhQKDGNoYW5uZWxfdHlwZRgGIAEoCRIXCg9yZWxldmFuY2Vfc2NvcmUYECAB",
+            "KAEi0wEKDlNlYXJjaEF1ZGllbmNlElwKE2F1ZGllbmNlX2F0dHJpYnV0ZXMY",
+            "ASADKAsyOi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuY29tbW9uLkF1ZGll",
+            "bmNlSW5zaWdodHNBdHRyaWJ1dGVCA+BBAhJjChVhdWRpZW5jZV9jb21iaW5h",
+            "dGlvbnMYAiADKAsyPy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuY29tbW9u",
+            "Lkluc2lnaHRzQXVkaWVuY2VBdHRyaWJ1dGVHcm91cEID4EEBIl4KDFNlYXJj",
+            "aFRvcGljcxJOCghlbnRpdGllcxgBIAMoCzI3Lmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYyNC5jb21tb24uQXVkaWVuY2VJbnNpZ2h0c0VudGl0eUID4EECIusE",
+            "CgxUcmVuZEluc2lnaHQSWwoPdHJlbmRfYXR0cmlidXRlGAEgASgLMkIuZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjI0LmNvbW1vbi5BdWRpZW5jZUluc2lnaHRz",
+            "QXR0cmlidXRlTWV0YWRhdGESTQoNdHJlbmRfbWV0cmljcxgCIAEoCzI2Lmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5zZXJ2aWNlcy5UcmVuZEluc2lnaHRN",
+            "ZXRyaWNzEk4KBXRyZW5kGAMgASgOMj8uZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djI0LmVudW1zLkluc2lnaHRzVHJlbmRFbnVtLkluc2lnaHRzVHJlbmQSUwoR",
+            "dHJlbmRfZGF0YV9wb2ludHMYBiADKAsyOC5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MjQuc2VydmljZXMuVHJlbmRJbnNpZ2h0RGF0YVBvaW50EloKDnJlbGF0",
+            "ZWRfdmlkZW9zGAQgAygLMkIuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmNv",
+            "bW1vbi5BdWRpZW5jZUluc2lnaHRzQXR0cmlidXRlTWV0YWRhdGESUwoQcmVs",
+            "YXRlZF9jcmVhdG9ycxgFIAMoCzI5Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
+            "NC5zZXJ2aWNlcy5Zb3VUdWJlQ3JlYXRvckluc2lnaHRzElkKFnJlbGF0ZWRf",
+            "bG9jYWxfY3JlYXRvcnMYCCADKAsyOS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MjQuc2VydmljZXMuWW91VHViZUNyZWF0b3JJbnNpZ2h0cyJ9ChNUcmVuZElu",
+            "c2lnaHRNZXRyaWNzEhMKC3ZpZXdzX2NvdW50GAEgASgDEhsKE3ZpZXdzX2lu",
+            "ZGV4ZWRfdmFsdWUYBCABKAMSFgoOYXVkaWVuY2Vfc2hhcmUYAiABKAESHAoU",
+            "dHJlbmRfY2hhbmdlX3BlcmNlbnQYAyABKAEidQoVVHJlbmRJbnNpZ2h0RGF0",
+            "YVBvaW50Eg0KBW1vbnRoGAEgASgJEk0KDXRyZW5kX21ldHJpY3MYAiABKAsy",
             "Ni5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuc2VydmljZXMuVHJlbmRJbnNp",
-            "Z2h0TWV0cmljcxJOCgV0cmVuZBgDIAEoDjI/Lmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYyNC5lbnVtcy5JbnNpZ2h0c1RyZW5kRW51bS5JbnNpZ2h0c1RyZW5k",
-            "ElMKEXRyZW5kX2RhdGFfcG9pbnRzGAYgAygLMjguZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjI0LnNlcnZpY2VzLlRyZW5kSW5zaWdodERhdGFQb2ludBJaCg5y",
-            "ZWxhdGVkX3ZpZGVvcxgEIAMoCzJCLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
-            "NC5jb21tb24uQXVkaWVuY2VJbnNpZ2h0c0F0dHJpYnV0ZU1ldGFkYXRhElMK",
-            "EHJlbGF0ZWRfY3JlYXRvcnMYBSADKAsyOS5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52MjQuc2VydmljZXMuWW91VHViZUNyZWF0b3JJbnNpZ2h0cyJ9ChNUcmVu",
-            "ZEluc2lnaHRNZXRyaWNzEhMKC3ZpZXdzX2NvdW50GAEgASgDEhsKE3ZpZXdz",
-            "X2luZGV4ZWRfdmFsdWUYBCABKAMSFgoOYXVkaWVuY2Vfc2hhcmUYAiABKAES",
-            "HAoUdHJlbmRfY2hhbmdlX3BlcmNlbnQYAyABKAEidQoVVHJlbmRJbnNpZ2h0",
-            "RGF0YVBvaW50Eg0KBW1vbnRoGAEgASgJEk0KDXRyZW5kX21ldHJpY3MYAiAB",
-            "KAsyNi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuc2VydmljZXMuVHJlbmRJ",
-            "bnNpZ2h0TWV0cmljcyJBChRMYW5ndWFnZURpc3RyaWJ1dGlvbhIVCg1sYW5n",
-            "dWFnZV9jb2RlGAEgASgJEhIKCnByb3BvcnRpb24YAiABKAEytgQKHUNvbnRl",
-            "bnRDcmVhdG9ySW5zaWdodHNTZXJ2aWNlEuMBChdHZW5lcmF0ZUNyZWF0b3JJ",
-            "bnNpZ2h0cxJBLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5zZXJ2aWNlcy5H",
-            "ZW5lcmF0ZUNyZWF0b3JJbnNpZ2h0c1JlcXVlc3QaQi5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52MjQuc2VydmljZXMuR2VuZXJhdGVDcmVhdG9ySW5zaWdodHNS",
-            "ZXNwb25zZSJBgtPkkwI7IjYvdjI0L2N1c3RvbWVycy97Y3VzdG9tZXJfaWQ9",
-            "Kn06Z2VuZXJhdGVDcmVhdG9ySW5zaWdodHM6ASoS5wEKGEdlbmVyYXRlVHJl",
-            "bmRpbmdJbnNpZ2h0cxJCLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5zZXJ2",
-            "aWNlcy5HZW5lcmF0ZVRyZW5kaW5nSW5zaWdodHNSZXF1ZXN0GkMuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjI0LnNlcnZpY2VzLkdlbmVyYXRlVHJlbmRpbmdJ",
-            "bnNpZ2h0c1Jlc3BvbnNlIkKC0+STAjwiNy92MjQvY3VzdG9tZXJzL3tjdXN0",
-            "b21lcl9pZD0qfTpnZW5lcmF0ZVRyZW5kaW5nSW5zaWdodHM6ASoaRcpBGGdv",
-            "b2dsZWFkcy5nb29nbGVhcGlzLmNvbdJBJ2h0dHBzOi8vd3d3Lmdvb2dsZWFw",
-            "aXMuY29tL2F1dGgvYWR3b3Jkc0KOAgolY29tLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYyNC5zZXJ2aWNlc0IiQ29udGVudENyZWF0b3JJbnNpZ2h0c1NlcnZp",
-            "Y2VQcm90b1ABWklnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVh",
-            "cGlzL2Fkcy9nb29nbGVhZHMvdjI0L3NlcnZpY2VzO3NlcnZpY2VzogIDR0FB",
-            "qgIhR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjI0LlNlcnZpY2VzygIhR29vZ2xl",
-            "XEFkc1xHb29nbGVBZHNcVjI0XFNlcnZpY2Vz6gIlR29vZ2xlOjpBZHM6Okdv",
-            "b2dsZUFkczo6VjI0OjpTZXJ2aWNlc2IGcHJvdG8z"));
+            "Z2h0TWV0cmljcyJBChRMYW5ndWFnZURpc3RyaWJ1dGlvbhIVCg1sYW5ndWFn",
+            "ZV9jb2RlGAEgASgJEhIKCnByb3BvcnRpb24YAiABKAEytgQKHUNvbnRlbnRD",
+            "cmVhdG9ySW5zaWdodHNTZXJ2aWNlEuMBChdHZW5lcmF0ZUNyZWF0b3JJbnNp",
+            "Z2h0cxJBLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5zZXJ2aWNlcy5HZW5l",
+            "cmF0ZUNyZWF0b3JJbnNpZ2h0c1JlcXVlc3QaQi5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MjQuc2VydmljZXMuR2VuZXJhdGVDcmVhdG9ySW5zaWdodHNSZXNw",
+            "b25zZSJBgtPkkwI7IjYvdjI0L2N1c3RvbWVycy97Y3VzdG9tZXJfaWQ9Kn06",
+            "Z2VuZXJhdGVDcmVhdG9ySW5zaWdodHM6ASoS5wEKGEdlbmVyYXRlVHJlbmRp",
+            "bmdJbnNpZ2h0cxJCLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5zZXJ2aWNl",
+            "cy5HZW5lcmF0ZVRyZW5kaW5nSW5zaWdodHNSZXF1ZXN0GkMuZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjI0LnNlcnZpY2VzLkdlbmVyYXRlVHJlbmRpbmdJbnNp",
+            "Z2h0c1Jlc3BvbnNlIkKC0+STAjwiNy92MjQvY3VzdG9tZXJzL3tjdXN0b21l",
+            "cl9pZD0qfTpnZW5lcmF0ZVRyZW5kaW5nSW5zaWdodHM6ASoaRcpBGGdvb2ds",
+            "ZWFkcy5nb29nbGVhcGlzLmNvbdJBJ2h0dHBzOi8vd3d3Lmdvb2dsZWFwaXMu",
+            "Y29tL2F1dGgvYWR3b3Jkc0KOAgolY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYyNC5zZXJ2aWNlc0IiQ29udGVudENyZWF0b3JJbnNpZ2h0c1NlcnZpY2VQ",
+            "cm90b1ABWklnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlz",
+            "L2Fkcy9nb29nbGVhZHMvdjI0L3NlcnZpY2VzO3NlcnZpY2VzogIDR0FBqgIh",
+            "R29vZ2xlLkFkcy5Hb29nbGVBZHMuVjI0LlNlcnZpY2VzygIhR29vZ2xlXEFk",
+            "c1xHb29nbGVBZHNcVjI0XFNlcnZpY2Vz6gIlR29vZ2xlOjpBZHM6Okdvb2ds",
+            "ZUFkczo6VjI0OjpTZXJ2aWNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V24.Common.AdditionalApplicationInfoReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Common.AudienceInsightsAttributeReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.InsightsTrendReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.PartnershipOpportunityReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V24.Common.AdditionalApplicationInfoReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Common.AudienceInsightsAttributeReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.ContentCreatorInsightsSupplementalDataReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.InsightsTrendReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.PartnershipOpportunityReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Services.GenerateCreatorInsightsRequest), global::Google.Ads.GoogleAds.V24.Services.GenerateCreatorInsightsRequest.Parser, new[]{ "CustomerId", "CustomerInsightsGroup", "InsightsApplicationInfo", "CountryLocations", "SubCountryLocations", "SearchAttributes", "SearchBrand", "SearchChannels" }, new[]{ "Criteria" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Services.GenerateCreatorInsightsRequest.Types.SearchAttributes), global::Google.Ads.GoogleAds.V24.Services.GenerateCreatorInsightsRequest.Types.SearchAttributes.Parser, new[]{ "AudienceAttributes", "AudienceCombinations", "CreatorAttributes" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Services.GenerateCreatorInsightsRequest), global::Google.Ads.GoogleAds.V24.Services.GenerateCreatorInsightsRequest.Parser, new[]{ "CustomerId", "CustomerInsightsGroup", "InsightsApplicationInfo", "CountryLocations", "SubCountryLocations", "SupplementalData", "SearchAttributes", "SearchBrand", "SearchChannels", "SearchTopics" }, new[]{ "Criteria" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Services.GenerateCreatorInsightsRequest.Types.SearchAttributes), global::Google.Ads.GoogleAds.V24.Services.GenerateCreatorInsightsRequest.Types.SearchAttributes.Parser, new[]{ "AudienceAttributes", "AudienceCombinations", "CreatorAttributes" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Services.GenerateCreatorInsightsRequest.Types.SearchBrand), global::Google.Ads.GoogleAds.V24.Services.GenerateCreatorInsightsRequest.Types.SearchBrand.Parser, new[]{ "BrandEntities", "IncludeRelatedTopics" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Services.GenerateCreatorInsightsRequest.Types.YouTubeChannels), global::Google.Ads.GoogleAds.V24.Services.GenerateCreatorInsightsRequest.Types.YouTubeChannels.Parser, new[]{ "YoutubeChannels" }, null, null, null, null)}),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Services.GenerateCreatorInsightsResponse), global::Google.Ads.GoogleAds.V24.Services.GenerateCreatorInsightsResponse.Parser, new[]{ "CreatorInsights" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Services.GenerateTrendingInsightsRequest), global::Google.Ads.GoogleAds.V24.Services.GenerateTrendingInsightsRequest.Parser, new[]{ "CustomerId", "CustomerInsightsGroup", "InsightsApplicationInfo", "CountryLocation", "SearchAudience", "SearchTopics" }, new[]{ "Criteria" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Services.GenerateCreatorInsightsResponse), global::Google.Ads.GoogleAds.V24.Services.GenerateCreatorInsightsResponse.Parser, new[]{ "CreatorInsights", "LocalCreatorInsights" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Services.GenerateTrendingInsightsRequest), global::Google.Ads.GoogleAds.V24.Services.GenerateTrendingInsightsRequest.Parser, new[]{ "CustomerId", "CustomerInsightsGroup", "InsightsApplicationInfo", "CountryLocation", "SubCountryLocations", "SupplementalData", "SearchAudience", "SearchTopics" }, new[]{ "Criteria" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Services.GenerateTrendingInsightsResponse), global::Google.Ads.GoogleAds.V24.Services.GenerateTrendingInsightsResponse.Parser, new[]{ "TrendInsights" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Services.YouTubeCreatorInsights), global::Google.Ads.GoogleAds.V24.Services.YouTubeCreatorInsights.Parser, new[]{ "CreatorName", "CreatorChannels" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Services.YouTubeMetrics), global::Google.Ads.GoogleAds.V24.Services.YouTubeMetrics.Parser, new[]{ "SubscriberCount", "ViewsCount", "VideoCount", "LikesCount", "SharesCount", "CommentsCount", "EngagementRate", "AverageViewsPerVideo", "AverageLikesPerVideo", "AverageSharesPerVideo", "AverageCommentsPerVideo", "ShortsViewsCount", "ShortsVideoCount", "IsActiveShortsCreator", "IsActiveLiveStreamCreator", "PartnershipOpportunities" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Services.YouTubeChannelInsights), global::Google.Ads.GoogleAds.V24.Services.YouTubeChannelInsights.Parser, new[]{ "DisplayName", "YoutubeChannel", "ChannelUrl", "ChannelDescription", "Handle", "ThumbnailUrl", "PublishDate", "CountryLocation", "ChannelMetrics", "ChannelAudienceAttributes", "ChannelAttributes", "TopVideos", "LanguageDistributions", "ChannelType", "RelevanceScore" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Services.SearchAudience), global::Google.Ads.GoogleAds.V24.Services.SearchAudience.Parser, new[]{ "AudienceAttributes", "AudienceCombinations" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Services.SearchTopics), global::Google.Ads.GoogleAds.V24.Services.SearchTopics.Parser, new[]{ "Entities" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Services.TrendInsight), global::Google.Ads.GoogleAds.V24.Services.TrendInsight.Parser, new[]{ "TrendAttribute", "TrendMetrics", "Trend", "TrendDataPoints", "RelatedVideos", "RelatedCreators" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Services.TrendInsight), global::Google.Ads.GoogleAds.V24.Services.TrendInsight.Parser, new[]{ "TrendAttribute", "TrendMetrics", "Trend", "TrendDataPoints", "RelatedVideos", "RelatedCreators", "RelatedLocalCreators" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Services.TrendInsightMetrics), global::Google.Ads.GoogleAds.V24.Services.TrendInsightMetrics.Parser, new[]{ "ViewsCount", "ViewsIndexedValue", "AudienceShare", "TrendChangePercent" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Services.TrendInsightDataPoint), global::Google.Ads.GoogleAds.V24.Services.TrendInsightDataPoint.Parser, new[]{ "Month", "TrendMetrics" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Services.LanguageDistribution), global::Google.Ads.GoogleAds.V24.Services.LanguageDistribution.Parser, new[]{ "LanguageCode", "Proportion" }, null, null, null, null)
@@ -224,6 +240,7 @@ namespace Google.Ads.GoogleAds.V24.Services {
       insightsApplicationInfo_ = other.insightsApplicationInfo_ != null ? other.insightsApplicationInfo_.Clone() : null;
       countryLocations_ = other.countryLocations_.Clone();
       subCountryLocations_ = other.subCountryLocations_.Clone();
+      supplementalData_ = other.supplementalData_.Clone();
       switch (other.CriteriaCase) {
         case CriteriaOneofCase.SearchAttributes:
           SearchAttributes = other.SearchAttributes.Clone();
@@ -233,6 +250,9 @@ namespace Google.Ads.GoogleAds.V24.Services {
           break;
         case CriteriaOneofCase.SearchChannels:
           SearchChannels = other.SearchChannels.Clone();
+          break;
+        case CriteriaOneofCase.SearchTopics:
+          SearchTopics = other.SearchTopics.Clone();
           break;
       }
 
@@ -322,6 +342,22 @@ namespace Google.Ads.GoogleAds.V24.Services {
       get { return subCountryLocations_; }
     }
 
+    /// <summary>Field number for the "supplemental_data" field.</summary>
+    public const int SupplementalDataFieldNumber = 10;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V24.Enums.ContentCreatorInsightsSupplementalDataEnum.Types.ContentCreatorInsightsSupplementalData> _repeated_supplementalData_codec
+        = pb::FieldCodec.ForEnum(82, x => (int) x, x => (global::Google.Ads.GoogleAds.V24.Enums.ContentCreatorInsightsSupplementalDataEnum.Types.ContentCreatorInsightsSupplementalData) x);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V24.Enums.ContentCreatorInsightsSupplementalDataEnum.Types.ContentCreatorInsightsSupplementalData> supplementalData_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V24.Enums.ContentCreatorInsightsSupplementalDataEnum.Types.ContentCreatorInsightsSupplementalData>();
+    /// <summary>
+    /// Optional. Optional features to include in the response. By default, only
+    /// core insight data is returned. Including supplemental data here will
+    /// populate additional fields in the response.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V24.Enums.ContentCreatorInsightsSupplementalDataEnum.Types.ContentCreatorInsightsSupplementalData> SupplementalData {
+      get { return supplementalData_; }
+    }
+
     /// <summary>Field number for the "search_attributes" field.</summary>
     public const int SearchAttributesFieldNumber = 3;
     /// <summary>
@@ -346,7 +382,9 @@ namespace Google.Ads.GoogleAds.V24.Services {
     /// <summary>
     /// A brand used to search for top creators. Data fetched is based on the
     /// list of countries specified in
-    /// [country_locations][google.ads.googleads.v24.services.GenerateCreatorInsightsRequest.country_locations].
+    /// [country_locations][google.ads.googleads.v24.services.GenerateCreatorInsightsRequest.country_locations].This
+    /// option is deprecated and will be removed in the V25 release. Use
+    /// search_topics instead.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -375,6 +413,24 @@ namespace Google.Ads.GoogleAds.V24.Services {
       }
     }
 
+    /// <summary>Field number for the "search_topics" field.</summary>
+    public const int SearchTopicsFieldNumber = 9;
+    /// <summary>
+    /// Search for relevant creators who make content about the specified topics.
+    /// Data fetched is based on the country specified in
+    /// [country_locations][google.ads.googleads.v24.services.GenerateCreatorInsightsRequest.country_locations].
+    /// Note: This option allows searching for one country only.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V24.Services.SearchTopics SearchTopics {
+      get { return criteriaCase_ == CriteriaOneofCase.SearchTopics ? (global::Google.Ads.GoogleAds.V24.Services.SearchTopics) criteria_ : null; }
+      set {
+        criteria_ = value;
+        criteriaCase_ = value == null ? CriteriaOneofCase.None : CriteriaOneofCase.SearchTopics;
+      }
+    }
+
     private object criteria_;
     /// <summary>Enum of possible cases for the "criteria" oneof.</summary>
     public enum CriteriaOneofCase {
@@ -382,6 +438,7 @@ namespace Google.Ads.GoogleAds.V24.Services {
       SearchAttributes = 3,
       SearchBrand = 5,
       SearchChannels = 4,
+      SearchTopics = 9,
     }
     private CriteriaOneofCase criteriaCase_ = CriteriaOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -417,9 +474,11 @@ namespace Google.Ads.GoogleAds.V24.Services {
       if (!object.Equals(InsightsApplicationInfo, other.InsightsApplicationInfo)) return false;
       if(!countryLocations_.Equals(other.countryLocations_)) return false;
       if(!subCountryLocations_.Equals(other.subCountryLocations_)) return false;
+      if(!supplementalData_.Equals(other.supplementalData_)) return false;
       if (!object.Equals(SearchAttributes, other.SearchAttributes)) return false;
       if (!object.Equals(SearchBrand, other.SearchBrand)) return false;
       if (!object.Equals(SearchChannels, other.SearchChannels)) return false;
+      if (!object.Equals(SearchTopics, other.SearchTopics)) return false;
       if (CriteriaCase != other.CriteriaCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -433,9 +492,11 @@ namespace Google.Ads.GoogleAds.V24.Services {
       if (insightsApplicationInfo_ != null) hash ^= InsightsApplicationInfo.GetHashCode();
       hash ^= countryLocations_.GetHashCode();
       hash ^= subCountryLocations_.GetHashCode();
+      hash ^= supplementalData_.GetHashCode();
       if (criteriaCase_ == CriteriaOneofCase.SearchAttributes) hash ^= SearchAttributes.GetHashCode();
       if (criteriaCase_ == CriteriaOneofCase.SearchBrand) hash ^= SearchBrand.GetHashCode();
       if (criteriaCase_ == CriteriaOneofCase.SearchChannels) hash ^= SearchChannels.GetHashCode();
+      if (criteriaCase_ == CriteriaOneofCase.SearchTopics) hash ^= SearchTopics.GetHashCode();
       hash ^= (int) criteriaCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -481,6 +542,11 @@ namespace Google.Ads.GoogleAds.V24.Services {
         output.WriteRawTag(66);
         output.WriteMessage(InsightsApplicationInfo);
       }
+      if (criteriaCase_ == CriteriaOneofCase.SearchTopics) {
+        output.WriteRawTag(74);
+        output.WriteMessage(SearchTopics);
+      }
+      supplementalData_.WriteTo(output, _repeated_supplementalData_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -517,6 +583,11 @@ namespace Google.Ads.GoogleAds.V24.Services {
         output.WriteRawTag(66);
         output.WriteMessage(InsightsApplicationInfo);
       }
+      if (criteriaCase_ == CriteriaOneofCase.SearchTopics) {
+        output.WriteRawTag(74);
+        output.WriteMessage(SearchTopics);
+      }
+      supplementalData_.WriteTo(ref output, _repeated_supplementalData_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -538,6 +609,7 @@ namespace Google.Ads.GoogleAds.V24.Services {
       }
       size += countryLocations_.CalculateSize(_repeated_countryLocations_codec);
       size += subCountryLocations_.CalculateSize(_repeated_subCountryLocations_codec);
+      size += supplementalData_.CalculateSize(_repeated_supplementalData_codec);
       if (criteriaCase_ == CriteriaOneofCase.SearchAttributes) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(SearchAttributes);
       }
@@ -546,6 +618,9 @@ namespace Google.Ads.GoogleAds.V24.Services {
       }
       if (criteriaCase_ == CriteriaOneofCase.SearchChannels) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(SearchChannels);
+      }
+      if (criteriaCase_ == CriteriaOneofCase.SearchTopics) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SearchTopics);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -573,6 +648,7 @@ namespace Google.Ads.GoogleAds.V24.Services {
       }
       countryLocations_.Add(other.countryLocations_);
       subCountryLocations_.Add(other.subCountryLocations_);
+      supplementalData_.Add(other.supplementalData_);
       switch (other.CriteriaCase) {
         case CriteriaOneofCase.SearchAttributes:
           if (SearchAttributes == null) {
@@ -591,6 +667,12 @@ namespace Google.Ads.GoogleAds.V24.Services {
             SearchChannels = new global::Google.Ads.GoogleAds.V24.Services.GenerateCreatorInsightsRequest.Types.YouTubeChannels();
           }
           SearchChannels.MergeFrom(other.SearchChannels);
+          break;
+        case CriteriaOneofCase.SearchTopics:
+          if (SearchTopics == null) {
+            SearchTopics = new global::Google.Ads.GoogleAds.V24.Services.SearchTopics();
+          }
+          SearchTopics.MergeFrom(other.SearchTopics);
           break;
       }
 
@@ -663,6 +745,20 @@ namespace Google.Ads.GoogleAds.V24.Services {
             input.ReadMessage(InsightsApplicationInfo);
             break;
           }
+          case 74: {
+            global::Google.Ads.GoogleAds.V24.Services.SearchTopics subBuilder = new global::Google.Ads.GoogleAds.V24.Services.SearchTopics();
+            if (criteriaCase_ == CriteriaOneofCase.SearchTopics) {
+              subBuilder.MergeFrom(SearchTopics);
+            }
+            input.ReadMessage(subBuilder);
+            SearchTopics = subBuilder;
+            break;
+          }
+          case 82:
+          case 80: {
+            supplementalData_.AddEntriesFrom(input, _repeated_supplementalData_codec);
+            break;
+          }
         }
       }
     #endif
@@ -730,6 +826,20 @@ namespace Google.Ads.GoogleAds.V24.Services {
               InsightsApplicationInfo = new global::Google.Ads.GoogleAds.V24.Common.AdditionalApplicationInfo();
             }
             input.ReadMessage(InsightsApplicationInfo);
+            break;
+          }
+          case 74: {
+            global::Google.Ads.GoogleAds.V24.Services.SearchTopics subBuilder = new global::Google.Ads.GoogleAds.V24.Services.SearchTopics();
+            if (criteriaCase_ == CriteriaOneofCase.SearchTopics) {
+              subBuilder.MergeFrom(SearchTopics);
+            }
+            input.ReadMessage(subBuilder);
+            SearchTopics = subBuilder;
+            break;
+          }
+          case 82:
+          case 80: {
+            supplementalData_.AddEntriesFrom(ref input, _repeated_supplementalData_codec);
             break;
           }
         }
@@ -1502,6 +1612,7 @@ namespace Google.Ads.GoogleAds.V24.Services {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerateCreatorInsightsResponse(GenerateCreatorInsightsResponse other) : this() {
       creatorInsights_ = other.creatorInsights_.Clone();
+      localCreatorInsights_ = other.localCreatorInsights_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1526,6 +1637,30 @@ namespace Google.Ads.GoogleAds.V24.Services {
       get { return creatorInsights_; }
     }
 
+    /// <summary>Field number for the "local_creator_insights" field.</summary>
+    public const int LocalCreatorInsightsFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V24.Services.YouTubeCreatorInsights> _repeated_localCreatorInsights_codec
+        = pb::FieldCodec.ForMessage(18, global::Google.Ads.GoogleAds.V24.Services.YouTubeCreatorInsights.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V24.Services.YouTubeCreatorInsights> localCreatorInsights_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V24.Services.YouTubeCreatorInsights>();
+    /// <summary>
+    /// Local creators for this topic who have consented to share their location
+    /// data. Local creators refers to creators that are based in or post from the
+    /// chosen country and are viewed in the chosen country.
+    /// Only populated when all of the following are true:
+    ///   - The creator request uses search_topics.
+    ///   - The Knowledge Graph entity topic has the
+    ///   [CREATOR_TOPIC_INSIGHTS][google.ads.googleads.v24.enums.InsightsKnowledgeGraphEntityCapabilitiesEnum.InsightsKnowledgeGraphEntityCapabilities.CREATOR_TOPIC_INSIGHTS]
+    ///   capability.
+    ///   - Supplemental data
+    ///   [LOCAL_CREATOR_DATA][google.ads.googleads.v24.enums.ContentCreatorInsightsSupplementalDataEnum.ContentCreatorInsightsSupplementalData.LOCAL_CREATOR_DATA]
+    ///   is requested.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V24.Services.YouTubeCreatorInsights> LocalCreatorInsights {
+      get { return localCreatorInsights_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1542,6 +1677,7 @@ namespace Google.Ads.GoogleAds.V24.Services {
         return true;
       }
       if(!creatorInsights_.Equals(other.creatorInsights_)) return false;
+      if(!localCreatorInsights_.Equals(other.localCreatorInsights_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1550,6 +1686,7 @@ namespace Google.Ads.GoogleAds.V24.Services {
     public override int GetHashCode() {
       int hash = 1;
       hash ^= creatorInsights_.GetHashCode();
+      hash ^= localCreatorInsights_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1569,6 +1706,7 @@ namespace Google.Ads.GoogleAds.V24.Services {
       output.WriteRawMessage(this);
     #else
       creatorInsights_.WriteTo(output, _repeated_creatorInsights_codec);
+      localCreatorInsights_.WriteTo(output, _repeated_localCreatorInsights_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1580,6 +1718,7 @@ namespace Google.Ads.GoogleAds.V24.Services {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       creatorInsights_.WriteTo(ref output, _repeated_creatorInsights_codec);
+      localCreatorInsights_.WriteTo(ref output, _repeated_localCreatorInsights_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1591,6 +1730,7 @@ namespace Google.Ads.GoogleAds.V24.Services {
     public int CalculateSize() {
       int size = 0;
       size += creatorInsights_.CalculateSize(_repeated_creatorInsights_codec);
+      size += localCreatorInsights_.CalculateSize(_repeated_localCreatorInsights_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1604,6 +1744,7 @@ namespace Google.Ads.GoogleAds.V24.Services {
         return;
       }
       creatorInsights_.Add(other.creatorInsights_);
+      localCreatorInsights_.Add(other.localCreatorInsights_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1627,6 +1768,10 @@ namespace Google.Ads.GoogleAds.V24.Services {
             creatorInsights_.AddEntriesFrom(input, _repeated_creatorInsights_codec);
             break;
           }
+          case 18: {
+            localCreatorInsights_.AddEntriesFrom(input, _repeated_localCreatorInsights_codec);
+            break;
+          }
         }
       }
     #endif
@@ -1648,6 +1793,10 @@ namespace Google.Ads.GoogleAds.V24.Services {
             break;
           case 10: {
             creatorInsights_.AddEntriesFrom(ref input, _repeated_creatorInsights_codec);
+            break;
+          }
+          case 18: {
+            localCreatorInsights_.AddEntriesFrom(ref input, _repeated_localCreatorInsights_codec);
             break;
           }
         }
@@ -1700,6 +1849,8 @@ namespace Google.Ads.GoogleAds.V24.Services {
       customerInsightsGroup_ = other.customerInsightsGroup_;
       insightsApplicationInfo_ = other.insightsApplicationInfo_ != null ? other.insightsApplicationInfo_.Clone() : null;
       countryLocation_ = other.countryLocation_ != null ? other.countryLocation_.Clone() : null;
+      subCountryLocations_ = other.subCountryLocations_.Clone();
+      supplementalData_ = other.supplementalData_.Clone();
       switch (other.CriteriaCase) {
         case CriteriaOneofCase.SearchAudience:
           SearchAudience = other.SearchAudience.Clone();
@@ -1779,10 +1930,45 @@ namespace Google.Ads.GoogleAds.V24.Services {
       }
     }
 
+    /// <summary>Field number for the "sub_country_locations" field.</summary>
+    public const int SubCountryLocationsFieldNumber = 8;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V24.Common.LocationInfo> _repeated_subCountryLocations_codec
+        = pb::FieldCodec.ForMessage(66, global::Google.Ads.GoogleAds.V24.Common.LocationInfo.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V24.Common.LocationInfo> subCountryLocations_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V24.Common.LocationInfo>();
+    /// <summary>
+    /// Optional. The sub-country geographic locations to search that apply to the
+    /// criteria. Only supported for `search_audience` criteria.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V24.Common.LocationInfo> SubCountryLocations {
+      get { return subCountryLocations_; }
+    }
+
+    /// <summary>Field number for the "supplemental_data" field.</summary>
+    public const int SupplementalDataFieldNumber = 7;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V24.Enums.ContentCreatorInsightsSupplementalDataEnum.Types.ContentCreatorInsightsSupplementalData> _repeated_supplementalData_codec
+        = pb::FieldCodec.ForEnum(58, x => (int) x, x => (global::Google.Ads.GoogleAds.V24.Enums.ContentCreatorInsightsSupplementalDataEnum.Types.ContentCreatorInsightsSupplementalData) x);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V24.Enums.ContentCreatorInsightsSupplementalDataEnum.Types.ContentCreatorInsightsSupplementalData> supplementalData_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V24.Enums.ContentCreatorInsightsSupplementalDataEnum.Types.ContentCreatorInsightsSupplementalData>();
+    /// <summary>
+    /// Optional. Optional features to include in the response. By default, only
+    /// core insight data is returned. Including supplemental data here will
+    /// populate additional fields in the response.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V24.Enums.ContentCreatorInsightsSupplementalDataEnum.Types.ContentCreatorInsightsSupplementalData> SupplementalData {
+      get { return supplementalData_; }
+    }
+
     /// <summary>Field number for the "search_audience" field.</summary>
     public const int SearchAudienceFieldNumber = 4;
     /// <summary>
-    /// An audience to search for trending content in.
+    /// An audience to search for trending content in. Data fetched is based on
+    /// the country or sub-country locations specified in
+    /// [country_location][google.ads.googleads.v24.services.GenerateTrendingInsightsRequest.country_location]
+    /// or
+    /// [sub_country_locations][google.ads.googleads.v24.services.GenerateTrendingInsightsRequest.sub_country_locations].
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1849,6 +2035,8 @@ namespace Google.Ads.GoogleAds.V24.Services {
       if (CustomerInsightsGroup != other.CustomerInsightsGroup) return false;
       if (!object.Equals(InsightsApplicationInfo, other.InsightsApplicationInfo)) return false;
       if (!object.Equals(CountryLocation, other.CountryLocation)) return false;
+      if(!subCountryLocations_.Equals(other.subCountryLocations_)) return false;
+      if(!supplementalData_.Equals(other.supplementalData_)) return false;
       if (!object.Equals(SearchAudience, other.SearchAudience)) return false;
       if (!object.Equals(SearchTopics, other.SearchTopics)) return false;
       if (CriteriaCase != other.CriteriaCase) return false;
@@ -1863,6 +2051,8 @@ namespace Google.Ads.GoogleAds.V24.Services {
       if (CustomerInsightsGroup.Length != 0) hash ^= CustomerInsightsGroup.GetHashCode();
       if (insightsApplicationInfo_ != null) hash ^= InsightsApplicationInfo.GetHashCode();
       if (countryLocation_ != null) hash ^= CountryLocation.GetHashCode();
+      hash ^= subCountryLocations_.GetHashCode();
+      hash ^= supplementalData_.GetHashCode();
       if (criteriaCase_ == CriteriaOneofCase.SearchAudience) hash ^= SearchAudience.GetHashCode();
       if (criteriaCase_ == CriteriaOneofCase.SearchTopics) hash ^= SearchTopics.GetHashCode();
       hash ^= (int) criteriaCase_;
@@ -1908,6 +2098,8 @@ namespace Google.Ads.GoogleAds.V24.Services {
         output.WriteRawTag(50);
         output.WriteMessage(InsightsApplicationInfo);
       }
+      supplementalData_.WriteTo(output, _repeated_supplementalData_codec);
+      subCountryLocations_.WriteTo(output, _repeated_subCountryLocations_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1942,6 +2134,8 @@ namespace Google.Ads.GoogleAds.V24.Services {
         output.WriteRawTag(50);
         output.WriteMessage(InsightsApplicationInfo);
       }
+      supplementalData_.WriteTo(ref output, _repeated_supplementalData_codec);
+      subCountryLocations_.WriteTo(ref output, _repeated_subCountryLocations_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1964,6 +2158,8 @@ namespace Google.Ads.GoogleAds.V24.Services {
       if (countryLocation_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(CountryLocation);
       }
+      size += subCountryLocations_.CalculateSize(_repeated_subCountryLocations_codec);
+      size += supplementalData_.CalculateSize(_repeated_supplementalData_codec);
       if (criteriaCase_ == CriteriaOneofCase.SearchAudience) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(SearchAudience);
       }
@@ -2000,6 +2196,8 @@ namespace Google.Ads.GoogleAds.V24.Services {
         }
         CountryLocation.MergeFrom(other.CountryLocation);
       }
+      subCountryLocations_.Add(other.subCountryLocations_);
+      supplementalData_.Add(other.supplementalData_);
       switch (other.CriteriaCase) {
         case CriteriaOneofCase.SearchAudience:
           if (SearchAudience == null) {
@@ -2074,6 +2272,15 @@ namespace Google.Ads.GoogleAds.V24.Services {
             input.ReadMessage(InsightsApplicationInfo);
             break;
           }
+          case 58:
+          case 56: {
+            supplementalData_.AddEntriesFrom(input, _repeated_supplementalData_codec);
+            break;
+          }
+          case 66: {
+            subCountryLocations_.AddEntriesFrom(input, _repeated_subCountryLocations_codec);
+            break;
+          }
         }
       }
     #endif
@@ -2131,6 +2338,15 @@ namespace Google.Ads.GoogleAds.V24.Services {
               InsightsApplicationInfo = new global::Google.Ads.GoogleAds.V24.Common.AdditionalApplicationInfo();
             }
             input.ReadMessage(InsightsApplicationInfo);
+            break;
+          }
+          case 58:
+          case 56: {
+            supplementalData_.AddEntriesFrom(ref input, _repeated_supplementalData_codec);
+            break;
+          }
+          case 66: {
+            subCountryLocations_.AddEntriesFrom(ref input, _repeated_subCountryLocations_codec);
             break;
           }
         }
@@ -4364,7 +4580,7 @@ namespace Google.Ads.GoogleAds.V24.Services {
   }
 
   /// <summary>
-  /// A collection of content topics to return trend information for.
+  /// A collection of content topics to return creator and trend information for.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SearchTopics : pb::IMessage<SearchTopics>
@@ -4417,9 +4633,11 @@ namespace Google.Ads.GoogleAds.V24.Services {
         = pb::FieldCodec.ForMessage(10, global::Google.Ads.GoogleAds.V24.Common.AudienceInsightsEntity.Parser);
     private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V24.Common.AudienceInsightsEntity> entities_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V24.Common.AudienceInsightsEntity>();
     /// <summary>
-    /// Required. A list of knowledge graph entities to retrieve trend information
-    /// for. Supported entities are tagged with
-    /// [CONTENT_TRENDING_INSIGHTS][google.ads.googleads.v24.enums.InsightsKnowledgeGraphEntityCapabilitiesEnum.InsightsKnowledgeGraphEntityCapabilities.CONTENT_TRENDING_INSIGHTS].
+    /// Required. A list of knowledge graph entities to retrieve creator and trend
+    /// information for. Supported entities are tagged with
+    /// [CONTENT_TRENDING_INSIGHTS][google.ads.googleads.v24.enums.InsightsKnowledgeGraphEntityCapabilitiesEnum.InsightsKnowledgeGraphEntityCapabilities.CONTENT_TRENDING_INSIGHTS]
+    /// or
+    /// [CREATOR_TOPIC_INSIGHTS][google.ads.googleads.v24.enums.InsightsKnowledgeGraphEntityCapabilitiesEnum.InsightsKnowledgeGraphEntityCapabilities.CREATOR_TOPIC_INSIGHTS].
     /// Use
     /// [AudienceInsightsService.ListAudienceInsightsAttributes][google.ads.googleads.v24.services.AudienceInsightsService.ListAudienceInsightsAttributes]
     /// to get the list of supported entities.
@@ -4605,6 +4823,7 @@ namespace Google.Ads.GoogleAds.V24.Services {
       trendDataPoints_ = other.trendDataPoints_.Clone();
       relatedVideos_ = other.relatedVideos_.Clone();
       relatedCreators_ = other.relatedCreators_.Clone();
+      relatedLocalCreators_ = other.relatedLocalCreators_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -4710,6 +4929,30 @@ namespace Google.Ads.GoogleAds.V24.Services {
       get { return relatedCreators_; }
     }
 
+    /// <summary>Field number for the "related_local_creators" field.</summary>
+    public const int RelatedLocalCreatorsFieldNumber = 8;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V24.Services.YouTubeCreatorInsights> _repeated_relatedLocalCreators_codec
+        = pb::FieldCodec.ForMessage(66, global::Google.Ads.GoogleAds.V24.Services.YouTubeCreatorInsights.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V24.Services.YouTubeCreatorInsights> relatedLocalCreators_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V24.Services.YouTubeCreatorInsights>();
+    /// <summary>
+    /// Related local creators for this topic who have consented to share their
+    /// location data. Related local creators refers to creators that are based in
+    /// or post from the chosen country and are viewed in the chosen country.
+    /// Only populated when all of the following are true:
+    ///   - The trend request uses search_topics.
+    ///   - The Knowledge Graph entity topic has the
+    ///   [CREATOR_TOPIC_INSIGHTS][google.ads.googleads.v24.enums.InsightsKnowledgeGraphEntityCapabilitiesEnum.InsightsKnowledgeGraphEntityCapabilities.CREATOR_TOPIC_INSIGHTS]
+    ///   capability.
+    ///   - Supplemental data
+    ///   [LOCAL_CREATOR_DATA][google.ads.googleads.v24.enums.ContentCreatorInsightsSupplementalDataEnum.ContentCreatorInsightsSupplementalData.LOCAL_CREATOR_DATA]
+    ///   is requested.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V24.Services.YouTubeCreatorInsights> RelatedLocalCreators {
+      get { return relatedLocalCreators_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -4731,6 +4974,7 @@ namespace Google.Ads.GoogleAds.V24.Services {
       if(!trendDataPoints_.Equals(other.trendDataPoints_)) return false;
       if(!relatedVideos_.Equals(other.relatedVideos_)) return false;
       if(!relatedCreators_.Equals(other.relatedCreators_)) return false;
+      if(!relatedLocalCreators_.Equals(other.relatedLocalCreators_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -4744,6 +4988,7 @@ namespace Google.Ads.GoogleAds.V24.Services {
       hash ^= trendDataPoints_.GetHashCode();
       hash ^= relatedVideos_.GetHashCode();
       hash ^= relatedCreators_.GetHashCode();
+      hash ^= relatedLocalCreators_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4777,6 +5022,7 @@ namespace Google.Ads.GoogleAds.V24.Services {
       relatedVideos_.WriteTo(output, _repeated_relatedVideos_codec);
       relatedCreators_.WriteTo(output, _repeated_relatedCreators_codec);
       trendDataPoints_.WriteTo(output, _repeated_trendDataPoints_codec);
+      relatedLocalCreators_.WriteTo(output, _repeated_relatedLocalCreators_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -4802,6 +5048,7 @@ namespace Google.Ads.GoogleAds.V24.Services {
       relatedVideos_.WriteTo(ref output, _repeated_relatedVideos_codec);
       relatedCreators_.WriteTo(ref output, _repeated_relatedCreators_codec);
       trendDataPoints_.WriteTo(ref output, _repeated_trendDataPoints_codec);
+      relatedLocalCreators_.WriteTo(ref output, _repeated_relatedLocalCreators_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -4824,6 +5071,7 @@ namespace Google.Ads.GoogleAds.V24.Services {
       size += trendDataPoints_.CalculateSize(_repeated_trendDataPoints_codec);
       size += relatedVideos_.CalculateSize(_repeated_relatedVideos_codec);
       size += relatedCreators_.CalculateSize(_repeated_relatedCreators_codec);
+      size += relatedLocalCreators_.CalculateSize(_repeated_relatedLocalCreators_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -4854,6 +5102,7 @@ namespace Google.Ads.GoogleAds.V24.Services {
       trendDataPoints_.Add(other.trendDataPoints_);
       relatedVideos_.Add(other.relatedVideos_);
       relatedCreators_.Add(other.relatedCreators_);
+      relatedLocalCreators_.Add(other.relatedLocalCreators_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -4903,6 +5152,10 @@ namespace Google.Ads.GoogleAds.V24.Services {
             trendDataPoints_.AddEntriesFrom(input, _repeated_trendDataPoints_codec);
             break;
           }
+          case 66: {
+            relatedLocalCreators_.AddEntriesFrom(input, _repeated_relatedLocalCreators_codec);
+            break;
+          }
         }
       }
     #endif
@@ -4950,6 +5203,10 @@ namespace Google.Ads.GoogleAds.V24.Services {
           }
           case 50: {
             trendDataPoints_.AddEntriesFrom(ref input, _repeated_trendDataPoints_codec);
+            break;
+          }
+          case 66: {
+            relatedLocalCreators_.AddEntriesFrom(ref input, _repeated_relatedLocalCreators_codec);
             break;
           }
         }

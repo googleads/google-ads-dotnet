@@ -746,7 +746,9 @@ namespace Google.Ads.GoogleAds.V23.Services {
       /// <summary>
       /// The audience attributes (such as Age, Gender, Affinity, and In-Market) and
       /// creator attributes (such as creator's content topics) used to search
-      /// for top creators.
+      /// for top creators. The returned creators are sorted based on likelihood that
+      /// your audience watches the creator, relative to the general population (most
+      /// likely is returned first).
       /// </summary>
       [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class SearchAttributes : pb::IMessage<SearchAttributes>
@@ -2724,9 +2726,9 @@ namespace Google.Ads.GoogleAds.V23.Services {
     public const int EngagementRateFieldNumber = 8;
     private double engagementRate_;
     /// <summary>
-    /// The lifetime engagement rate of this channel. The value is computed as the
-    /// total number of likes, shares, and comments across all videos divided by
-    /// the total number of video views.
+    /// The lifetime engagement rate of this channel. A measurement of how often
+    /// people engage with the creator's content. The value, between 0 and 1, is
+    /// calculated as total engagement divided by total views.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

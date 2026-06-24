@@ -25,19 +25,27 @@ namespace Google.Ads.GoogleAds.V24.Common {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjRnb29nbGUvYWRzL2dvb2dsZWFkcy92MjQvY29tbW9uL2xvY2FsX3NlcnZp",
-            "Y2VzLnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuY29tbW9uIksK",
-            "HUxvY2FsU2VydmljZXNEb2N1bWVudFJlYWRPbmx5EhkKDGRvY3VtZW50X3Vy",
-            "bBgBIAEoCUgAiAEBQg8KDV9kb2N1bWVudF91cmxC8gEKI2NvbS5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MjQuY29tbW9uQhJMb2NhbFNlcnZpY2VzUHJvdG9Q",
-            "AVpFZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
-            "Z29vZ2xlYWRzL3YyNC9jb21tb247Y29tbW9uogIDR0FBqgIfR29vZ2xlLkFk",
-            "cy5Hb29nbGVBZHMuVjI0LkNvbW1vbsoCH0dvb2dsZVxBZHNcR29vZ2xlQWRz",
-            "XFYyNFxDb21tb27qAiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjQ6OkNv",
-            "bW1vbmIGcHJvdG8z"));
+            "Y2VzLnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuY29tbW9uGjpn",
+            "b29nbGUvYWRzL2dvb2dsZWFkcy92MjQvZW51bXMvZ2xzX3Bob25lX251bWJl",
+            "cl90eXBlLnByb3RvIksKHUxvY2FsU2VydmljZXNEb2N1bWVudFJlYWRPbmx5",
+            "EhkKDGRvY3VtZW50X3VybBgBIAEoCUgAiAEBQg8KDV9kb2N1bWVudF91cmwi",
+            "8wEKGExvY2FsU2VydmljZXNQaG9uZU51bWJlchIZCgxwaG9uZV9udW1iZXIY",
+            "ASABKAlIAIgBARIZCgxjb3VudHJ5X2NvZGUYAiABKAlIAYgBARJpChFwaG9u",
+            "ZV9udW1iZXJfdHlwZRgDIAEoDjJJLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
+            "NC5lbnVtcy5HbHNQaG9uZU51bWJlclR5cGVFbnVtLkdsc1Bob25lTnVtYmVy",
+            "VHlwZUgCiAEBQg8KDV9waG9uZV9udW1iZXJCDwoNX2NvdW50cnlfY29kZUIU",
+            "ChJfcGhvbmVfbnVtYmVyX3R5cGVC8gEKI2NvbS5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MjQuY29tbW9uQhJMb2NhbFNlcnZpY2VzUHJvdG9QAVpFZ29vZ2xl",
+            "LmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRz",
+            "L3YyNC9jb21tb247Y29tbW9uogIDR0FBqgIfR29vZ2xlLkFkcy5Hb29nbGVB",
+            "ZHMuVjI0LkNvbW1vbsoCH0dvb2dsZVxBZHNcR29vZ2xlQWRzXFYyNFxDb21t",
+            "b27qAiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjQ6OkNvbW1vbmIGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V24.Enums.GlsPhoneNumberTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Common.LocalServicesDocumentReadOnly), global::Google.Ads.GoogleAds.V24.Common.LocalServicesDocumentReadOnly.Parser, new[]{ "DocumentUrl" }, new[]{ "DocumentUrl" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Common.LocalServicesDocumentReadOnly), global::Google.Ads.GoogleAds.V24.Common.LocalServicesDocumentReadOnly.Parser, new[]{ "DocumentUrl" }, new[]{ "DocumentUrl" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Common.LocalServicesPhoneNumber), global::Google.Ads.GoogleAds.V24.Common.LocalServicesPhoneNumber.Parser, new[]{ "PhoneNumber", "CountryCode", "PhoneNumberType" }, new[]{ "PhoneNumber", "CountryCode", "PhoneNumberType" }, null, null, null)
           }));
     }
     #endregion
@@ -253,6 +261,335 @@ namespace Google.Ads.GoogleAds.V24.Common {
             break;
           case 10: {
             DocumentUrl = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Phone number associated with the provider.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class LocalServicesPhoneNumber : pb::IMessage<LocalServicesPhoneNumber>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<LocalServicesPhoneNumber> _parser = new pb::MessageParser<LocalServicesPhoneNumber>(() => new LocalServicesPhoneNumber());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<LocalServicesPhoneNumber> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V24.Common.LocalServicesReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public LocalServicesPhoneNumber() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public LocalServicesPhoneNumber(LocalServicesPhoneNumber other) : this() {
+      _hasBits0 = other._hasBits0;
+      phoneNumber_ = other.phoneNumber_;
+      countryCode_ = other.countryCode_;
+      phoneNumberType_ = other.phoneNumberType_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public LocalServicesPhoneNumber Clone() {
+      return new LocalServicesPhoneNumber(this);
+    }
+
+    /// <summary>Field number for the "phone_number" field.</summary>
+    public const int PhoneNumberFieldNumber = 1;
+    private readonly static string PhoneNumberDefaultValue = "";
+
+    private string phoneNumber_;
+    /// <summary>
+    /// The phone number.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string PhoneNumber {
+      get { return phoneNumber_ ?? PhoneNumberDefaultValue; }
+      set {
+        phoneNumber_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "phone_number" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasPhoneNumber {
+      get { return phoneNumber_ != null; }
+    }
+    /// <summary>Clears the value of the "phone_number" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearPhoneNumber() {
+      phoneNumber_ = null;
+    }
+
+    /// <summary>Field number for the "country_code" field.</summary>
+    public const int CountryCodeFieldNumber = 2;
+    private readonly static string CountryCodeDefaultValue = "";
+
+    private string countryCode_;
+    /// <summary>
+    /// Upper-case, two-letter codes as defined by ISO-3166.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CountryCode {
+      get { return countryCode_ ?? CountryCodeDefaultValue; }
+      set {
+        countryCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "country_code" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasCountryCode {
+      get { return countryCode_ != null; }
+    }
+    /// <summary>Clears the value of the "country_code" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearCountryCode() {
+      countryCode_ = null;
+    }
+
+    /// <summary>Field number for the "phone_number_type" field.</summary>
+    public const int PhoneNumberTypeFieldNumber = 3;
+    private readonly static global::Google.Ads.GoogleAds.V24.Enums.GlsPhoneNumberTypeEnum.Types.GlsPhoneNumberType PhoneNumberTypeDefaultValue = global::Google.Ads.GoogleAds.V24.Enums.GlsPhoneNumberTypeEnum.Types.GlsPhoneNumberType.Unspecified;
+
+    private global::Google.Ads.GoogleAds.V24.Enums.GlsPhoneNumberTypeEnum.Types.GlsPhoneNumberType phoneNumberType_;
+    /// <summary>
+    /// The type of the phone number.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V24.Enums.GlsPhoneNumberTypeEnum.Types.GlsPhoneNumberType PhoneNumberType {
+      get { if ((_hasBits0 & 1) != 0) { return phoneNumberType_; } else { return PhoneNumberTypeDefaultValue; } }
+      set {
+        _hasBits0 |= 1;
+        phoneNumberType_ = value;
+      }
+    }
+    /// <summary>Gets whether the "phone_number_type" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasPhoneNumberType {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "phone_number_type" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearPhoneNumberType() {
+      _hasBits0 &= ~1;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as LocalServicesPhoneNumber);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(LocalServicesPhoneNumber other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (PhoneNumber != other.PhoneNumber) return false;
+      if (CountryCode != other.CountryCode) return false;
+      if (PhoneNumberType != other.PhoneNumberType) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasPhoneNumber) hash ^= PhoneNumber.GetHashCode();
+      if (HasCountryCode) hash ^= CountryCode.GetHashCode();
+      if (HasPhoneNumberType) hash ^= PhoneNumberType.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasPhoneNumber) {
+        output.WriteRawTag(10);
+        output.WriteString(PhoneNumber);
+      }
+      if (HasCountryCode) {
+        output.WriteRawTag(18);
+        output.WriteString(CountryCode);
+      }
+      if (HasPhoneNumberType) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) PhoneNumberType);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasPhoneNumber) {
+        output.WriteRawTag(10);
+        output.WriteString(PhoneNumber);
+      }
+      if (HasCountryCode) {
+        output.WriteRawTag(18);
+        output.WriteString(CountryCode);
+      }
+      if (HasPhoneNumberType) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) PhoneNumberType);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasPhoneNumber) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PhoneNumber);
+      }
+      if (HasCountryCode) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CountryCode);
+      }
+      if (HasPhoneNumberType) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PhoneNumberType);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(LocalServicesPhoneNumber other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasPhoneNumber) {
+        PhoneNumber = other.PhoneNumber;
+      }
+      if (other.HasCountryCode) {
+        CountryCode = other.CountryCode;
+      }
+      if (other.HasPhoneNumberType) {
+        PhoneNumberType = other.PhoneNumberType;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            PhoneNumber = input.ReadString();
+            break;
+          }
+          case 18: {
+            CountryCode = input.ReadString();
+            break;
+          }
+          case 24: {
+            PhoneNumberType = (global::Google.Ads.GoogleAds.V24.Enums.GlsPhoneNumberTypeEnum.Types.GlsPhoneNumberType) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            PhoneNumber = input.ReadString();
+            break;
+          }
+          case 18: {
+            CountryCode = input.ReadString();
+            break;
+          }
+          case 24: {
+            PhoneNumberType = (global::Google.Ads.GoogleAds.V24.Enums.GlsPhoneNumberTypeEnum.Types.GlsPhoneNumberType) input.ReadEnum();
             break;
           }
         }

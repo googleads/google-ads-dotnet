@@ -30,7 +30,7 @@ namespace Google.Ads.GoogleAds.V24.Resources {
             "ZXJpYS5wcm90bxpHZ29vZ2xlL2Fkcy9nb29nbGVhZHMvdjI0L2VudW1zL2Fz",
             "c2V0X2dyb3VwX3NpZ25hbF9hcHByb3ZhbF9zdGF0dXMucHJvdG8aH2dvb2ds",
             "ZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8aGWdvb2dsZS9hcGkvcmVzb3Vy",
-            "Y2UucHJvdG8i3QQKEEFzc2V0R3JvdXBTaWduYWwSSAoNcmVzb3VyY2VfbmFt",
+            "Y2UucHJvdG8iqQYKEEFzc2V0R3JvdXBTaWduYWwSSAoNcmVzb3VyY2VfbmFt",
             "ZRgBIAEoCUIx4EEF+kErCilnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vQXNz",
             "ZXRHcm91cFNpZ25hbBJACgthc3NldF9ncm91cBgCIAEoCUIr4EEF+kElCiNn",
             "b29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vQXNzZXRHcm91cBJ/Cg9hcHByb3Zh",
@@ -40,20 +40,25 @@ namespace Google.Ads.GoogleAds.V24.Resources {
             "ZWFzb25zGAcgAygJQgPgQQMSRgoIYXVkaWVuY2UYBCABKAsyLS5nb29nbGUu",
             "YWRzLmdvb2dsZWFkcy52MjQuY29tbW9uLkF1ZGllbmNlSW5mb0ID4EEFSAAS",
             "TQoMc2VhcmNoX3RoZW1lGAUgASgLMjAuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djI0LmNvbW1vbi5TZWFyY2hUaGVtZUluZm9CA+BBBUgAOnnqQXYKKWdvb2ds",
-            "ZWFkcy5nb29nbGVhcGlzLmNvbS9Bc3NldEdyb3VwU2lnbmFsEkljdXN0b21l",
-            "cnMve2N1c3RvbWVyX2lkfS9hc3NldEdyb3VwU2lnbmFscy97YXNzZXRfZ3Jv",
-            "dXBfaWR9fntjcml0ZXJpb25faWR9QggKBnNpZ25hbEKHAgomY29tLmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYyNC5yZXNvdXJjZXNCFUFzc2V0R3JvdXBTaWdu",
-            "YWxQcm90b1ABWktnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVh",
-            "cGlzL2Fkcy9nb29nbGVhZHMvdjI0L3Jlc291cmNlcztyZXNvdXJjZXOiAgNH",
-            "QUGqAiJHb29nbGUuQWRzLkdvb2dsZUFkcy5WMjQuUmVzb3VyY2VzygIiR29v",
-            "Z2xlXEFkc1xHb29nbGVBZHNcVjI0XFJlc291cmNlc+oCJkdvb2dsZTo6QWRz",
-            "OjpHb29nbGVBZHM6OlYyNDo6UmVzb3VyY2VzYgZwcm90bzM="));
+            "djI0LmNvbW1vbi5TZWFyY2hUaGVtZUluZm9CA+BBBUgAElUKEWxvY2FsX3Nl",
+            "cnZpY2VzX2lkGAggASgLMjMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmNv",
+            "bW1vbi5Mb2NhbFNlcnZpY2VJZEluZm9CA+BBBUgAEnMKIXZlcnRpY2FsX2Fk",
+            "c19pdGVtX2dyb3VwX3J1bGVfbGlzdBgJIAEoCzJBLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYyNC5jb21tb24uVmVydGljYWxBZHNJdGVtR3JvdXBSdWxlTGlz",
+            "dEluZm9CA+BBBUgAOnnqQXYKKWdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9B",
+            "c3NldEdyb3VwU2lnbmFsEkljdXN0b21lcnMve2N1c3RvbWVyX2lkfS9hc3Nl",
+            "dEdyb3VwU2lnbmFscy97YXNzZXRfZ3JvdXBfaWR9fntjcml0ZXJpb25faWR9",
+            "QggKBnNpZ25hbEKHAgomY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5y",
+            "ZXNvdXJjZXNCFUFzc2V0R3JvdXBTaWduYWxQcm90b1ABWktnb29nbGUuZ29s",
+            "YW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjI0",
+            "L3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGqAiJHb29nbGUuQWRzLkdvb2ds",
+            "ZUFkcy5WMjQuUmVzb3VyY2VzygIiR29vZ2xlXEFkc1xHb29nbGVBZHNcVjI0",
+            "XFJlc291cmNlc+oCJkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyNDo6UmVz",
+            "b3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V24.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.AssetGroupSignalApprovalStatusReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Resources.AssetGroupSignal), global::Google.Ads.GoogleAds.V24.Resources.AssetGroupSignal.Parser, new[]{ "ResourceName", "AssetGroup", "ApprovalStatus", "DisapprovalReasons", "Audience", "SearchTheme" }, new[]{ "Signal" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Resources.AssetGroupSignal), global::Google.Ads.GoogleAds.V24.Resources.AssetGroupSignal.Parser, new[]{ "ResourceName", "AssetGroup", "ApprovalStatus", "DisapprovalReasons", "Audience", "SearchTheme", "LocalServicesId", "VerticalAdsItemGroupRuleList" }, new[]{ "Signal" }, null, null, null)
           }));
     }
     #endregion
@@ -111,6 +116,12 @@ namespace Google.Ads.GoogleAds.V24.Resources {
           break;
         case SignalOneofCase.SearchTheme:
           SearchTheme = other.SearchTheme.Clone();
+          break;
+        case SignalOneofCase.LocalServicesId:
+          LocalServicesId = other.LocalServicesId.Clone();
+          break;
+        case SignalOneofCase.VerticalAdsItemGroupRuleList:
+          VerticalAdsItemGroupRuleList = other.VerticalAdsItemGroupRuleList.Clone();
           break;
       }
 
@@ -229,12 +240,53 @@ namespace Google.Ads.GoogleAds.V24.Resources {
       }
     }
 
+    /// <summary>Field number for the "local_services_id" field.</summary>
+    public const int LocalServicesIdFieldNumber = 8;
+    /// <summary>
+    /// Immutable. The local services signal to be used by the performance max
+    /// campaign.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V24.Common.LocalServiceIdInfo LocalServicesId {
+      get { return signalCase_ == SignalOneofCase.LocalServicesId ? (global::Google.Ads.GoogleAds.V24.Common.LocalServiceIdInfo) signal_ : null; }
+      set {
+        signal_ = value;
+        signalCase_ = value == null ? SignalOneofCase.None : SignalOneofCase.LocalServicesId;
+      }
+    }
+
+    /// <summary>Field number for the "vertical_ads_item_group_rule_list" field.</summary>
+    public const int VerticalAdsItemGroupRuleListFieldNumber = 9;
+    /// <summary>
+    /// Immutable. The list of vertical ads item group rules used to select items
+    /// from the attached vertical feed.
+    ///
+    /// This field links to a SharedSet of type
+    /// VERTICAL_ADS_ITEM_GROUP_RULE_LIST. The rules within the linked SharedSet
+    /// define which items from the TRAVEL_FEED AssetSet are eligible to be
+    /// served. Items that do not match the rules will be excluded. This behavior
+    /// is different from other signal types, which provide guidance to the
+    /// optimization engine rather than determining item eligibility.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V24.Common.VerticalAdsItemGroupRuleListInfo VerticalAdsItemGroupRuleList {
+      get { return signalCase_ == SignalOneofCase.VerticalAdsItemGroupRuleList ? (global::Google.Ads.GoogleAds.V24.Common.VerticalAdsItemGroupRuleListInfo) signal_ : null; }
+      set {
+        signal_ = value;
+        signalCase_ = value == null ? SignalOneofCase.None : SignalOneofCase.VerticalAdsItemGroupRuleList;
+      }
+    }
+
     private object signal_;
     /// <summary>Enum of possible cases for the "signal" oneof.</summary>
     public enum SignalOneofCase {
       None = 0,
       Audience = 4,
       SearchTheme = 5,
+      LocalServicesId = 8,
+      VerticalAdsItemGroupRuleList = 9,
     }
     private SignalOneofCase signalCase_ = SignalOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -271,6 +323,8 @@ namespace Google.Ads.GoogleAds.V24.Resources {
       if(!disapprovalReasons_.Equals(other.disapprovalReasons_)) return false;
       if (!object.Equals(Audience, other.Audience)) return false;
       if (!object.Equals(SearchTheme, other.SearchTheme)) return false;
+      if (!object.Equals(LocalServicesId, other.LocalServicesId)) return false;
+      if (!object.Equals(VerticalAdsItemGroupRuleList, other.VerticalAdsItemGroupRuleList)) return false;
       if (SignalCase != other.SignalCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -285,6 +339,8 @@ namespace Google.Ads.GoogleAds.V24.Resources {
       hash ^= disapprovalReasons_.GetHashCode();
       if (signalCase_ == SignalOneofCase.Audience) hash ^= Audience.GetHashCode();
       if (signalCase_ == SignalOneofCase.SearchTheme) hash ^= SearchTheme.GetHashCode();
+      if (signalCase_ == SignalOneofCase.LocalServicesId) hash ^= LocalServicesId.GetHashCode();
+      if (signalCase_ == SignalOneofCase.VerticalAdsItemGroupRuleList) hash ^= VerticalAdsItemGroupRuleList.GetHashCode();
       hash ^= (int) signalCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -325,6 +381,14 @@ namespace Google.Ads.GoogleAds.V24.Resources {
         output.WriteEnum((int) ApprovalStatus);
       }
       disapprovalReasons_.WriteTo(output, _repeated_disapprovalReasons_codec);
+      if (signalCase_ == SignalOneofCase.LocalServicesId) {
+        output.WriteRawTag(66);
+        output.WriteMessage(LocalServicesId);
+      }
+      if (signalCase_ == SignalOneofCase.VerticalAdsItemGroupRuleList) {
+        output.WriteRawTag(74);
+        output.WriteMessage(VerticalAdsItemGroupRuleList);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -356,6 +420,14 @@ namespace Google.Ads.GoogleAds.V24.Resources {
         output.WriteEnum((int) ApprovalStatus);
       }
       disapprovalReasons_.WriteTo(ref output, _repeated_disapprovalReasons_codec);
+      if (signalCase_ == SignalOneofCase.LocalServicesId) {
+        output.WriteRawTag(66);
+        output.WriteMessage(LocalServicesId);
+      }
+      if (signalCase_ == SignalOneofCase.VerticalAdsItemGroupRuleList) {
+        output.WriteRawTag(74);
+        output.WriteMessage(VerticalAdsItemGroupRuleList);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -381,6 +453,12 @@ namespace Google.Ads.GoogleAds.V24.Resources {
       }
       if (signalCase_ == SignalOneofCase.SearchTheme) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(SearchTheme);
+      }
+      if (signalCase_ == SignalOneofCase.LocalServicesId) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LocalServicesId);
+      }
+      if (signalCase_ == SignalOneofCase.VerticalAdsItemGroupRuleList) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(VerticalAdsItemGroupRuleList);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -416,6 +494,18 @@ namespace Google.Ads.GoogleAds.V24.Resources {
             SearchTheme = new global::Google.Ads.GoogleAds.V24.Common.SearchThemeInfo();
           }
           SearchTheme.MergeFrom(other.SearchTheme);
+          break;
+        case SignalOneofCase.LocalServicesId:
+          if (LocalServicesId == null) {
+            LocalServicesId = new global::Google.Ads.GoogleAds.V24.Common.LocalServiceIdInfo();
+          }
+          LocalServicesId.MergeFrom(other.LocalServicesId);
+          break;
+        case SignalOneofCase.VerticalAdsItemGroupRuleList:
+          if (VerticalAdsItemGroupRuleList == null) {
+            VerticalAdsItemGroupRuleList = new global::Google.Ads.GoogleAds.V24.Common.VerticalAdsItemGroupRuleListInfo();
+          }
+          VerticalAdsItemGroupRuleList.MergeFrom(other.VerticalAdsItemGroupRuleList);
           break;
       }
 
@@ -472,6 +562,24 @@ namespace Google.Ads.GoogleAds.V24.Resources {
             disapprovalReasons_.AddEntriesFrom(input, _repeated_disapprovalReasons_codec);
             break;
           }
+          case 66: {
+            global::Google.Ads.GoogleAds.V24.Common.LocalServiceIdInfo subBuilder = new global::Google.Ads.GoogleAds.V24.Common.LocalServiceIdInfo();
+            if (signalCase_ == SignalOneofCase.LocalServicesId) {
+              subBuilder.MergeFrom(LocalServicesId);
+            }
+            input.ReadMessage(subBuilder);
+            LocalServicesId = subBuilder;
+            break;
+          }
+          case 74: {
+            global::Google.Ads.GoogleAds.V24.Common.VerticalAdsItemGroupRuleListInfo subBuilder = new global::Google.Ads.GoogleAds.V24.Common.VerticalAdsItemGroupRuleListInfo();
+            if (signalCase_ == SignalOneofCase.VerticalAdsItemGroupRuleList) {
+              subBuilder.MergeFrom(VerticalAdsItemGroupRuleList);
+            }
+            input.ReadMessage(subBuilder);
+            VerticalAdsItemGroupRuleList = subBuilder;
+            break;
+          }
         }
       }
     #endif
@@ -523,6 +631,24 @@ namespace Google.Ads.GoogleAds.V24.Resources {
           }
           case 58: {
             disapprovalReasons_.AddEntriesFrom(ref input, _repeated_disapprovalReasons_codec);
+            break;
+          }
+          case 66: {
+            global::Google.Ads.GoogleAds.V24.Common.LocalServiceIdInfo subBuilder = new global::Google.Ads.GoogleAds.V24.Common.LocalServiceIdInfo();
+            if (signalCase_ == SignalOneofCase.LocalServicesId) {
+              subBuilder.MergeFrom(LocalServicesId);
+            }
+            input.ReadMessage(subBuilder);
+            LocalServicesId = subBuilder;
+            break;
+          }
+          case 74: {
+            global::Google.Ads.GoogleAds.V24.Common.VerticalAdsItemGroupRuleListInfo subBuilder = new global::Google.Ads.GoogleAds.V24.Common.VerticalAdsItemGroupRuleListInfo();
+            if (signalCase_ == SignalOneofCase.VerticalAdsItemGroupRuleList) {
+              subBuilder.MergeFrom(VerticalAdsItemGroupRuleList);
+            }
+            input.ReadMessage(subBuilder);
+            VerticalAdsItemGroupRuleList = subBuilder;
             break;
           }
         }

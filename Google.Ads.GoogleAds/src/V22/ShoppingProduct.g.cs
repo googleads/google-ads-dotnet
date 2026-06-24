@@ -131,28 +131,30 @@ namespace Google.Ads.GoogleAds.V22.Resources {
   /// limit the inclusion through a `campaign_criterion.listing_scope`.
   ///
   /// Queries to this resource specify a scope:
-  /// Account:
+  ///
+  /// * Account:
   ///   - Filters on campaigns or ad groups are not specified.
   ///   - All products from the linked Google Merchant Center accounts are
   ///     returned.
   ///   - Metrics and some fields (see the per-field documentation) are aggregated
   ///     across all Shopping and Performance Max campaigns that include a product.
-  /// Campaign:
+  /// * Campaign:
   ///   - An equality filter on `campaign` is specified. Supported campaign types
   ///     are Shopping, Performance Max, Demand Gen, Video.
   ///   - Only products that are included by the specified campaign are returned.
   ///   - Metrics and some fields (see the per-field documentation) are restricted
   ///     to the specified campaign.
-  ///   - Only the following metrics are supported for Demand Gen and Video
+  ///   - Only the following metrics are supported for Demand Gen, Video
   ///     campaigns: impressions, clicks, ctr.
-  /// Ad group:
-  ///   - An equality filter on `ad group` and `campaign` is specified. Supported
+  /// * Ad group:
+  ///   - An equality filter on `ad_group` and `campaign` is specified. Supported
   ///     campaign types are Shopping, Demand Gen, Video.
   ///   - Only products that are included by the specified campaign are returned.
   ///   - Metrics and some fields (see the per-field documentation) are restricted
   ///     to the specified ad group.
-  ///   - Only the following metrics are supported for Demand Gen and Video
+  ///   - Only the following metrics are supported for Demand Gen, Video
   ///     campaigns: impressions, clicks, ctr.
+  ///
   /// Note that segmentation by date segments is not permitted and will return
   /// UNSUPPORTED_DATE_SEGMENTATION error. On the other hand, filtering on date
   /// segments is allowed.
@@ -1784,7 +1786,11 @@ namespace Google.Ads.GoogleAds.V22.Resources {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1939,7 +1945,11 @@ namespace Google.Ads.GoogleAds.V22.Resources {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -2452,7 +2462,11 @@ namespace Google.Ads.GoogleAds.V22.Resources {
         #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
@@ -2495,7 +2509,11 @@ namespace Google.Ads.GoogleAds.V22.Resources {
         void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
               default:
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
                 break;

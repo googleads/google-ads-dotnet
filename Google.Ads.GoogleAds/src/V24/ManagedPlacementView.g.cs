@@ -50,7 +50,9 @@ namespace Google.Ads.GoogleAds.V24.Resources {
   }
   #region Messages
   /// <summary>
-  /// A managed placement view.
+  /// A view providing performance data for placements explicitly targeted in your
+  /// ad groups. This view
+  /// corresponds to the "Placements" section in the Google Ads UI.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ManagedPlacementView : pb::IMessage<ManagedPlacementView>

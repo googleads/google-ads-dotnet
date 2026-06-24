@@ -28,29 +28,32 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             "X3VzZXJfYWNjZXNzLnByb3RvEiJnb29nbGUuYWRzLmdvb2dsZWFkcy52MjMu",
             "cmVzb3VyY2VzGjBnb29nbGUvYWRzL2dvb2dsZWFkcy92MjMvZW51bXMvYWNj",
             "ZXNzX3JvbGUucHJvdG8aH2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJv",
-            "dG8aGWdvb2dsZS9hcGkvcmVzb3VyY2UucHJvdG8i+wMKEkN1c3RvbWVyVXNl",
+            "dG8aGWdvb2dsZS9hcGkvcmVzb3VyY2UucHJvdG8ihAUKEkN1c3RvbWVyVXNl",
             "ckFjY2VzcxJKCg1yZXNvdXJjZV9uYW1lGAEgASgJQjPgQQX6QS0KK2dvb2ds",
             "ZWFkcy5nb29nbGVhcGlzLmNvbS9DdXN0b21lclVzZXJBY2Nlc3MSFAoHdXNl",
             "cl9pZBgCIAEoA0ID4EEDEh8KDWVtYWlsX2FkZHJlc3MYAyABKAlCA+BBA0gA",
             "iAEBEk4KC2FjY2Vzc19yb2xlGAQgASgOMjkuZ29vZ2xlLmFkcy5nb29nbGVh",
             "ZHMudjIzLmVudW1zLkFjY2Vzc1JvbGVFbnVtLkFjY2Vzc1JvbGUSKwoZYWNj",
             "ZXNzX2NyZWF0aW9uX2RhdGVfdGltZRgGIAEoCUID4EEDSAGIAQESLAoaaW52",
-            "aXRlcl91c2VyX2VtYWlsX2FkZHJlc3MYByABKAlCA+BBA0gCiAEBOmjqQWUK",
-            "K2dvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9DdXN0b21lclVzZXJBY2Nlc3MS",
-            "NmN1c3RvbWVycy97Y3VzdG9tZXJfaWR9L2N1c3RvbWVyVXNlckFjY2Vzc2Vz",
-            "L3t1c2VyX2lkfUIQCg5fZW1haWxfYWRkcmVzc0IcChpfYWNjZXNzX2NyZWF0",
-            "aW9uX2RhdGVfdGltZUIdChtfaW52aXRlcl91c2VyX2VtYWlsX2FkZHJlc3NC",
-            "iQIKJmNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjMucmVzb3VyY2VzQhdD",
-            "dXN0b21lclVzZXJBY2Nlc3NQcm90b1ABWktnb29nbGUuZ29sYW5nLm9yZy9n",
-            "ZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjIzL3Jlc291cmNl",
-            "cztyZXNvdXJjZXOiAgNHQUGqAiJHb29nbGUuQWRzLkdvb2dsZUFkcy5WMjMu",
-            "UmVzb3VyY2VzygIiR29vZ2xlXEFkc1xHb29nbGVBZHNcVjIzXFJlc291cmNl",
-            "c+oCJkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyMzo6UmVzb3VyY2VzYgZw",
-            "cm90bzM="));
+            "aXRlcl91c2VyX2VtYWlsX2FkZHJlc3MYByABKAlCA+BBA0gCiAEBEmMKH3Bl",
+            "bmRpbmdfbXVsdGlfcGFydHlfYXV0aF9yZXZpZXcYCSABKAlCNeBBA/pBLwot",
+            "Z29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL011bHRpUGFydHlBdXRoUmV2aWV3",
+            "SAOIAQE6aOpBZQorZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0N1c3RvbWVy",
+            "VXNlckFjY2VzcxI2Y3VzdG9tZXJzL3tjdXN0b21lcl9pZH0vY3VzdG9tZXJV",
+            "c2VyQWNjZXNzZXMve3VzZXJfaWR9QhAKDl9lbWFpbF9hZGRyZXNzQhwKGl9h",
+            "Y2Nlc3NfY3JlYXRpb25fZGF0ZV90aW1lQh0KG19pbnZpdGVyX3VzZXJfZW1h",
+            "aWxfYWRkcmVzc0IiCiBfcGVuZGluZ19tdWx0aV9wYXJ0eV9hdXRoX3Jldmll",
+            "d0KJAgomY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMy5yZXNvdXJjZXNC",
+            "F0N1c3RvbWVyVXNlckFjY2Vzc1Byb3RvUAFaS2dvb2dsZS5nb2xhbmcub3Jn",
+            "L2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MjMvcmVzb3Vy",
+            "Y2VzO3Jlc291cmNlc6ICA0dBQaoCIkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYy",
+            "My5SZXNvdXJjZXPKAiJHb29nbGVcQWRzXEdvb2dsZUFkc1xWMjNcUmVzb3Vy",
+            "Y2Vz6gImR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjIzOjpSZXNvdXJjZXNi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V23.Enums.AccessRoleReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Resources.CustomerUserAccess), global::Google.Ads.GoogleAds.V23.Resources.CustomerUserAccess.Parser, new[]{ "ResourceName", "UserId", "EmailAddress", "AccessRole", "AccessCreationDateTime", "InviterUserEmailAddress" }, new[]{ "EmailAddress", "AccessCreationDateTime", "InviterUserEmailAddress" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V23.Resources.CustomerUserAccess), global::Google.Ads.GoogleAds.V23.Resources.CustomerUserAccess.Parser, new[]{ "ResourceName", "UserId", "EmailAddress", "AccessRole", "AccessCreationDateTime", "InviterUserEmailAddress", "PendingMultiPartyAuthReview" }, new[]{ "EmailAddress", "AccessCreationDateTime", "InviterUserEmailAddress", "PendingMultiPartyAuthReview" }, null, null, null)
           }));
     }
     #endregion
@@ -101,6 +104,7 @@ namespace Google.Ads.GoogleAds.V23.Resources {
       accessRole_ = other.accessRole_;
       accessCreationDateTime_ = other.accessCreationDateTime_;
       inviterUserEmailAddress_ = other.inviterUserEmailAddress_;
+      pendingMultiPartyAuthReview_ = other.pendingMultiPartyAuthReview_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -250,6 +254,36 @@ namespace Google.Ads.GoogleAds.V23.Resources {
       inviterUserEmailAddress_ = null;
     }
 
+    /// <summary>Field number for the "pending_multi_party_auth_review" field.</summary>
+    public const int PendingMultiPartyAuthReviewFieldNumber = 9;
+    private readonly static string PendingMultiPartyAuthReviewDefaultValue = "";
+
+    private string pendingMultiPartyAuthReview_;
+    /// <summary>
+    /// Output only. The resource name of the pending Multi-Party Authorization
+    /// review. Read only field
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string PendingMultiPartyAuthReview {
+      get { return pendingMultiPartyAuthReview_ ?? PendingMultiPartyAuthReviewDefaultValue; }
+      set {
+        pendingMultiPartyAuthReview_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "pending_multi_party_auth_review" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasPendingMultiPartyAuthReview {
+      get { return pendingMultiPartyAuthReview_ != null; }
+    }
+    /// <summary>Clears the value of the "pending_multi_party_auth_review" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearPendingMultiPartyAuthReview() {
+      pendingMultiPartyAuthReview_ = null;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -271,6 +305,7 @@ namespace Google.Ads.GoogleAds.V23.Resources {
       if (AccessRole != other.AccessRole) return false;
       if (AccessCreationDateTime != other.AccessCreationDateTime) return false;
       if (InviterUserEmailAddress != other.InviterUserEmailAddress) return false;
+      if (PendingMultiPartyAuthReview != other.PendingMultiPartyAuthReview) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -284,6 +319,7 @@ namespace Google.Ads.GoogleAds.V23.Resources {
       if (AccessRole != global::Google.Ads.GoogleAds.V23.Enums.AccessRoleEnum.Types.AccessRole.Unspecified) hash ^= AccessRole.GetHashCode();
       if (HasAccessCreationDateTime) hash ^= AccessCreationDateTime.GetHashCode();
       if (HasInviterUserEmailAddress) hash ^= InviterUserEmailAddress.GetHashCode();
+      if (HasPendingMultiPartyAuthReview) hash ^= PendingMultiPartyAuthReview.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -326,6 +362,10 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         output.WriteRawTag(58);
         output.WriteString(InviterUserEmailAddress);
       }
+      if (HasPendingMultiPartyAuthReview) {
+        output.WriteRawTag(74);
+        output.WriteString(PendingMultiPartyAuthReview);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -360,6 +400,10 @@ namespace Google.Ads.GoogleAds.V23.Resources {
         output.WriteRawTag(58);
         output.WriteString(InviterUserEmailAddress);
       }
+      if (HasPendingMultiPartyAuthReview) {
+        output.WriteRawTag(74);
+        output.WriteString(PendingMultiPartyAuthReview);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -387,6 +431,9 @@ namespace Google.Ads.GoogleAds.V23.Resources {
       }
       if (HasInviterUserEmailAddress) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(InviterUserEmailAddress);
+      }
+      if (HasPendingMultiPartyAuthReview) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PendingMultiPartyAuthReview);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -417,6 +464,9 @@ namespace Google.Ads.GoogleAds.V23.Resources {
       }
       if (other.HasInviterUserEmailAddress) {
         InviterUserEmailAddress = other.InviterUserEmailAddress;
+      }
+      if (other.HasPendingMultiPartyAuthReview) {
+        PendingMultiPartyAuthReview = other.PendingMultiPartyAuthReview;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -461,6 +511,10 @@ namespace Google.Ads.GoogleAds.V23.Resources {
             InviterUserEmailAddress = input.ReadString();
             break;
           }
+          case 74: {
+            PendingMultiPartyAuthReview = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -502,6 +556,10 @@ namespace Google.Ads.GoogleAds.V23.Resources {
           }
           case 58: {
             InviterUserEmailAddress = input.ReadString();
+            break;
+          }
+          case 74: {
+            PendingMultiPartyAuthReview = input.ReadString();
             break;
           }
         }

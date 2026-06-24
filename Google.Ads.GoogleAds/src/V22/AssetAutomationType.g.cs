@@ -182,7 +182,11 @@ namespace Google.Ads.GoogleAds.V22.Enums {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -197,7 +201,11 @@ namespace Google.Ads.GoogleAds.V22.Enums {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -224,9 +232,15 @@ namespace Google.Ads.GoogleAds.V22.Enums {
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
-        /// Text asset automation includes headlines and descriptions.
-        /// By default, advertisers are opted-in for Performance Max and
+        /// Text asset automation (text customization) includes headlines and
+        /// descriptions, allowing Google to create customized text assets using your
+        /// existing ads, landing page copy, and generative AI across your campaign's
+        /// ads. By default, advertisers are opted-in for Performance Max and
         /// opted-out for Search.
+        ///
+        /// Contrast this with `FINAL_URL_EXPANSION_TEXT_ASSET_AUTOMATION`, which
+        /// dynamically generates text assets to match the content of dynamically
+        /// selected landing pages when final URL expansion is active.
         /// </summary>
         [pbr::OriginalName("TEXT_ASSET_AUTOMATION")] TextAssetAutomation = 2,
         /// <summary>
@@ -277,6 +291,14 @@ namespace Google.Ads.GoogleAds.V22.Enums {
         /// and generating text assets from the content of those landing pages. This
         /// setting is turned OFF by default for Search campaigns, but it is turned
         /// ON by default for Performance Max campaigns.
+        ///
+        /// Enabling final URL expansion also enables text asset automation. There is
+        /// no way to opt out of text asset automation and still use final URL
+        /// expansion.
+        ///
+        /// Contrast this with standard `TEXT_ASSET_AUTOMATION` (text customization),
+        /// which customizes copy across all ads in the campaign even when final URL
+        /// expansion does not occur.
         /// </summary>
         [pbr::OriginalName("FINAL_URL_EXPANSION_TEXT_ASSET_AUTOMATION")] FinalUrlExpansionTextAssetAutomation = 11,
         /// <summary>

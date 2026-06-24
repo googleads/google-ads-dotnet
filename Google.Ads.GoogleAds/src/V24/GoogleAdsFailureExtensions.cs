@@ -14,6 +14,7 @@
 
 
 using Google.Ads.Gax.Lib;
+using Google.Protobuf.WellKnownTypes;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -45,6 +46,26 @@ namespace Google.Ads.GoogleAds.V24.Errors
                     fpElement.Index == operationIndex);
             }).ToList();
         }
+
+        /// <summary>
+        /// Parses the partial failure.
+        /// </summary>
+        /// <param name="status">The status.</param>
+        /// <returns></returns>
+        public static GoogleAdsFailure ParseStatus(Rpc.Status status)
+        {
+            if (status == null)
+            {
+                return null;
+            }
+            GoogleAdsFailure retval = new GoogleAdsFailure();
+            foreach (Any any in status.Details)
+            {
+                GoogleAdsFailure failure = any.Unpack<GoogleAdsFailure>();
+                retval.Errors.AddRange(failure.Errors);
+            }
+            return retval;
+        }
     }
 
     public partial class GoogleAdsError
@@ -71,5 +92,27 @@ namespace Google.Ads.GoogleAds.V24.Errors
                 return string.Join(".", fieldPaths);
             }
         }
+    }
+
+    /// <summary>
+    /// A message that contains a partial failure error.
+    /// </summary>
+    public interface IPartialFailureMessage
+    {
+        /// <summary>
+        /// Gets or sets the partial failure error.
+        /// </summary>
+        /// <value>
+        /// The partial failure error.
+        /// </value>
+        Rpc.Status PartialFailureError { get; set; }
+
+        /// <summary>
+        /// Gets the partial failure.
+        /// </summary>
+        /// <value>
+        /// The partial failure.
+        /// </value>
+        public GoogleAdsFailure PartialFailure { get; }
     }
 }
