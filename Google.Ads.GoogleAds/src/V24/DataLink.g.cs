@@ -29,33 +29,39 @@ namespace Google.Ads.GoogleAds.V24.Resources {
             "Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjI0L2VudW1zL2RhdGFfbGlua19zdGF0",
             "dXMucHJvdG8aM2dvb2dsZS9hZHMvZ29vZ2xlYWRzL3YyNC9lbnVtcy9kYXRh",
             "X2xpbmtfdHlwZS5wcm90bxofZ29vZ2xlL2FwaS9maWVsZF9iZWhhdmlvci5w",
-            "cm90bxoZZ29vZ2xlL2FwaS9yZXNvdXJjZS5wcm90byK4BAoIRGF0YUxpbmsS",
+            "cm90bxoZZ29vZ2xlL2FwaS9yZXNvdXJjZS5wcm90byKtBQoIRGF0YUxpbmsS",
             "QAoNcmVzb3VyY2VfbmFtZRgBIAEoCUIp4EEF+kEjCiFnb29nbGVhZHMuZ29v",
             "Z2xlYXBpcy5jb20vRGF0YUxpbmsSIQoPcHJvZHVjdF9saW5rX2lkGAIgASgD",
-            "QgPgQQNIAYgBARIeCgxkYXRhX2xpbmtfaWQYAyABKANCA+BBA0gCiAEBElAK",
+            "QgPgQQNIAogBARIeCgxkYXRhX2xpbmtfaWQYAyABKANCA+BBA0gDiAEBElAK",
             "BHR5cGUYBCABKA4yPS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuZW51bXMu",
             "RGF0YUxpbmtUeXBlRW51bS5EYXRhTGlua1R5cGVCA+BBAxJWCgZzdGF0dXMY",
             "BSABKA4yQS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuZW51bXMuRGF0YUxp",
             "bmtTdGF0dXNFbnVtLkRhdGFMaW5rU3RhdHVzQgPgQQMSWAoNeW91dHViZV92",
             "aWRlbxgGIAEoCzI6Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5yZXNvdXJj",
-            "ZXMuWW91dHViZVZpZGVvSWRlbnRpZmllckID4EEFSAA6aupBZwohZ29vZ2xl",
-            "YWRzLmdvb2dsZWFwaXMuY29tL0RhdGFMaW5rEkJjdXN0b21lcnMve2N1c3Rv",
-            "bWVyX2lkfS9kYXRhTGlua3Mve3Byb2R1Y3RfbGlua19pZH1+e2RhdGFfbGlu",
-            "a19pZH1CEgoQZGF0YV9saW5rX2VudGl0eUISChBfcHJvZHVjdF9saW5rX2lk",
-            "Qg8KDV9kYXRhX2xpbmtfaWQibgoWWW91dHViZVZpZGVvSWRlbnRpZmllchIc",
-            "CgpjaGFubmVsX2lkGAEgASgJQgPgQQVIAIgBARIaCgh2aWRlb19pZBgCIAEo",
-            "CUID4EEFSAGIAQFCDQoLX2NoYW5uZWxfaWRCCwoJX3ZpZGVvX2lkQv8BCiZj",
-            "b20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LnJlc291cmNlc0INRGF0YUxp",
-            "bmtQcm90b1ABWktnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVh",
-            "cGlzL2Fkcy9nb29nbGVhZHMvdjI0L3Jlc291cmNlcztyZXNvdXJjZXOiAgNH",
-            "QUGqAiJHb29nbGUuQWRzLkdvb2dsZUFkcy5WMjQuUmVzb3VyY2VzygIiR29v",
-            "Z2xlXEFkc1xHb29nbGVBZHNcVjI0XFJlc291cmNlc+oCJkdvb2dsZTo6QWRz",
-            "OjpHb29nbGVBZHM6OlYyNDo6UmVzb3VyY2VzYgZwcm90bzM="));
+            "ZXMuWW91dHViZVZpZGVvSWRlbnRpZmllckID4EEFSAASXQoVeW91dHViZV9s",
+            "aW5rX21ldGFkYXRhGAcgASgLMjcuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0",
+            "LnJlc291cmNlcy5Zb3V0dWJlTGlua01ldGFkYXRhQgPgQQVIATpq6kFnCiFn",
+            "b29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vRGF0YUxpbmsSQmN1c3RvbWVycy97",
+            "Y3VzdG9tZXJfaWR9L2RhdGFMaW5rcy97cHJvZHVjdF9saW5rX2lkfX57ZGF0",
+            "YV9saW5rX2lkfUISChBkYXRhX2xpbmtfZW50aXR5QhQKEmRhdGFfbGlua19t",
+            "ZXRhZGF0YUISChBfcHJvZHVjdF9saW5rX2lkQg8KDV9kYXRhX2xpbmtfaWQi",
+            "bgoWWW91dHViZVZpZGVvSWRlbnRpZmllchIcCgpjaGFubmVsX2lkGAEgASgJ",
+            "QgPgQQVIAIgBARIaCgh2aWRlb19pZBgCIAEoCUID4EEFSAGIAQFCDQoLX2No",
+            "YW5uZWxfaWRCCwoJX3ZpZGVvX2lkIk4KE1lvdXR1YmVMaW5rTWV0YWRhdGES",
+            "IgoQYnJhbmRfY2hhbm5lbF9pZBgBIAEoCUID4EEFSACIAQFCEwoRX2JyYW5k",
+            "X2NoYW5uZWxfaWRC/wEKJmNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQu",
+            "cmVzb3VyY2VzQg1EYXRhTGlua1Byb3RvUAFaS2dvb2dsZS5nb2xhbmcub3Jn",
+            "L2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MjQvcmVzb3Vy",
+            "Y2VzO3Jlc291cmNlc6ICA0dBQaoCIkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYy",
+            "NC5SZXNvdXJjZXPKAiJHb29nbGVcQWRzXEdvb2dsZUFkc1xWMjRcUmVzb3Vy",
+            "Y2Vz6gImR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjI0OjpSZXNvdXJjZXNi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V24.Enums.DataLinkStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V24.Enums.DataLinkTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Resources.DataLink), global::Google.Ads.GoogleAds.V24.Resources.DataLink.Parser, new[]{ "ResourceName", "ProductLinkId", "DataLinkId", "Type", "Status", "YoutubeVideo" }, new[]{ "DataLinkEntity", "ProductLinkId", "DataLinkId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Resources.YoutubeVideoIdentifier), global::Google.Ads.GoogleAds.V24.Resources.YoutubeVideoIdentifier.Parser, new[]{ "ChannelId", "VideoId" }, new[]{ "ChannelId", "VideoId" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Resources.DataLink), global::Google.Ads.GoogleAds.V24.Resources.DataLink.Parser, new[]{ "ResourceName", "ProductLinkId", "DataLinkId", "Type", "Status", "YoutubeVideo", "YoutubeLinkMetadata" }, new[]{ "DataLinkEntity", "DataLinkMetadata", "ProductLinkId", "DataLinkId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Resources.YoutubeVideoIdentifier), global::Google.Ads.GoogleAds.V24.Resources.YoutubeVideoIdentifier.Parser, new[]{ "ChannelId", "VideoId" }, new[]{ "ChannelId", "VideoId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Resources.YoutubeLinkMetadata), global::Google.Ads.GoogleAds.V24.Resources.YoutubeLinkMetadata.Parser, new[]{ "BrandChannelId" }, new[]{ "BrandChannelId" }, null, null, null)
           }));
     }
     #endregion
@@ -114,6 +120,12 @@ namespace Google.Ads.GoogleAds.V24.Resources {
           break;
       }
 
+      switch (other.DataLinkMetadataCase) {
+        case DataLinkMetadataOneofCase.YoutubeLinkMetadata:
+          YoutubeLinkMetadata = other.YoutubeLinkMetadata.Clone();
+          break;
+      }
+
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -130,7 +142,7 @@ namespace Google.Ads.GoogleAds.V24.Resources {
     /// Immutable. Resource name of the product data link.
     /// DataLink resource names have the form:
     ///
-    /// `customers/{customer_id}/datalinks/{product_link_id}~{data_link_id}}
+    /// `customers/{customer_id}/datalinks/{product_link_id}~{data_link_id}
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -248,6 +260,21 @@ namespace Google.Ads.GoogleAds.V24.Resources {
       }
     }
 
+    /// <summary>Field number for the "youtube_link_metadata" field.</summary>
+    public const int YoutubeLinkMetadataFieldNumber = 7;
+    /// <summary>
+    /// Immutable. Metadata for a YouTube link.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V24.Resources.YoutubeLinkMetadata YoutubeLinkMetadata {
+      get { return dataLinkMetadataCase_ == DataLinkMetadataOneofCase.YoutubeLinkMetadata ? (global::Google.Ads.GoogleAds.V24.Resources.YoutubeLinkMetadata) dataLinkMetadata_ : null; }
+      set {
+        dataLinkMetadata_ = value;
+        dataLinkMetadataCase_ = value == null ? DataLinkMetadataOneofCase.None : DataLinkMetadataOneofCase.YoutubeLinkMetadata;
+      }
+    }
+
     private object dataLinkEntity_;
     /// <summary>Enum of possible cases for the "data_link_entity" oneof.</summary>
     public enum DataLinkEntityOneofCase {
@@ -266,6 +293,26 @@ namespace Google.Ads.GoogleAds.V24.Resources {
     public void ClearDataLinkEntity() {
       dataLinkEntityCase_ = DataLinkEntityOneofCase.None;
       dataLinkEntity_ = null;
+    }
+
+    private object dataLinkMetadata_;
+    /// <summary>Enum of possible cases for the "data_link_metadata" oneof.</summary>
+    public enum DataLinkMetadataOneofCase {
+      None = 0,
+      YoutubeLinkMetadata = 7,
+    }
+    private DataLinkMetadataOneofCase dataLinkMetadataCase_ = DataLinkMetadataOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public DataLinkMetadataOneofCase DataLinkMetadataCase {
+      get { return dataLinkMetadataCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearDataLinkMetadata() {
+      dataLinkMetadataCase_ = DataLinkMetadataOneofCase.None;
+      dataLinkMetadata_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -289,7 +336,9 @@ namespace Google.Ads.GoogleAds.V24.Resources {
       if (Type != other.Type) return false;
       if (Status != other.Status) return false;
       if (!object.Equals(YoutubeVideo, other.YoutubeVideo)) return false;
+      if (!object.Equals(YoutubeLinkMetadata, other.YoutubeLinkMetadata)) return false;
       if (DataLinkEntityCase != other.DataLinkEntityCase) return false;
+      if (DataLinkMetadataCase != other.DataLinkMetadataCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -303,7 +352,9 @@ namespace Google.Ads.GoogleAds.V24.Resources {
       if (Type != global::Google.Ads.GoogleAds.V24.Enums.DataLinkTypeEnum.Types.DataLinkType.Unspecified) hash ^= Type.GetHashCode();
       if (Status != global::Google.Ads.GoogleAds.V24.Enums.DataLinkStatusEnum.Types.DataLinkStatus.Unspecified) hash ^= Status.GetHashCode();
       if (dataLinkEntityCase_ == DataLinkEntityOneofCase.YoutubeVideo) hash ^= YoutubeVideo.GetHashCode();
+      if (dataLinkMetadataCase_ == DataLinkMetadataOneofCase.YoutubeLinkMetadata) hash ^= YoutubeLinkMetadata.GetHashCode();
       hash ^= (int) dataLinkEntityCase_;
+      hash ^= (int) dataLinkMetadataCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -346,6 +397,10 @@ namespace Google.Ads.GoogleAds.V24.Resources {
         output.WriteRawTag(50);
         output.WriteMessage(YoutubeVideo);
       }
+      if (dataLinkMetadataCase_ == DataLinkMetadataOneofCase.YoutubeLinkMetadata) {
+        output.WriteRawTag(58);
+        output.WriteMessage(YoutubeLinkMetadata);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -380,6 +435,10 @@ namespace Google.Ads.GoogleAds.V24.Resources {
         output.WriteRawTag(50);
         output.WriteMessage(YoutubeVideo);
       }
+      if (dataLinkMetadataCase_ == DataLinkMetadataOneofCase.YoutubeLinkMetadata) {
+        output.WriteRawTag(58);
+        output.WriteMessage(YoutubeLinkMetadata);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -407,6 +466,9 @@ namespace Google.Ads.GoogleAds.V24.Resources {
       }
       if (dataLinkEntityCase_ == DataLinkEntityOneofCase.YoutubeVideo) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(YoutubeVideo);
+      }
+      if (dataLinkMetadataCase_ == DataLinkMetadataOneofCase.YoutubeLinkMetadata) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(YoutubeLinkMetadata);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -441,6 +503,15 @@ namespace Google.Ads.GoogleAds.V24.Resources {
             YoutubeVideo = new global::Google.Ads.GoogleAds.V24.Resources.YoutubeVideoIdentifier();
           }
           YoutubeVideo.MergeFrom(other.YoutubeVideo);
+          break;
+      }
+
+      switch (other.DataLinkMetadataCase) {
+        case DataLinkMetadataOneofCase.YoutubeLinkMetadata:
+          if (YoutubeLinkMetadata == null) {
+            YoutubeLinkMetadata = new global::Google.Ads.GoogleAds.V24.Resources.YoutubeLinkMetadata();
+          }
+          YoutubeLinkMetadata.MergeFrom(other.YoutubeLinkMetadata);
           break;
       }
 
@@ -492,6 +563,15 @@ namespace Google.Ads.GoogleAds.V24.Resources {
             YoutubeVideo = subBuilder;
             break;
           }
+          case 58: {
+            global::Google.Ads.GoogleAds.V24.Resources.YoutubeLinkMetadata subBuilder = new global::Google.Ads.GoogleAds.V24.Resources.YoutubeLinkMetadata();
+            if (dataLinkMetadataCase_ == DataLinkMetadataOneofCase.YoutubeLinkMetadata) {
+              subBuilder.MergeFrom(YoutubeLinkMetadata);
+            }
+            input.ReadMessage(subBuilder);
+            YoutubeLinkMetadata = subBuilder;
+            break;
+          }
         }
       }
     #endif
@@ -538,6 +618,15 @@ namespace Google.Ads.GoogleAds.V24.Resources {
             }
             input.ReadMessage(subBuilder);
             YoutubeVideo = subBuilder;
+            break;
+          }
+          case 58: {
+            global::Google.Ads.GoogleAds.V24.Resources.YoutubeLinkMetadata subBuilder = new global::Google.Ads.GoogleAds.V24.Resources.YoutubeLinkMetadata();
+            if (dataLinkMetadataCase_ == DataLinkMetadataOneofCase.YoutubeLinkMetadata) {
+              subBuilder.MergeFrom(YoutubeLinkMetadata);
+            }
+            input.ReadMessage(subBuilder);
+            YoutubeLinkMetadata = subBuilder;
             break;
           }
         }
@@ -814,6 +903,226 @@ namespace Google.Ads.GoogleAds.V24.Resources {
           }
           case 18: {
             VideoId = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Metadata specific to YouTube links.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class YoutubeLinkMetadata : pb::IMessage<YoutubeLinkMetadata>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<YoutubeLinkMetadata> _parser = new pb::MessageParser<YoutubeLinkMetadata>(() => new YoutubeLinkMetadata());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<YoutubeLinkMetadata> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V24.Resources.DataLinkReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public YoutubeLinkMetadata() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public YoutubeLinkMetadata(YoutubeLinkMetadata other) : this() {
+      brandChannelId_ = other.brandChannelId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public YoutubeLinkMetadata Clone() {
+      return new YoutubeLinkMetadata(this);
+    }
+
+    /// <summary>Field number for the "brand_channel_id" field.</summary>
+    public const int BrandChannelIdFieldNumber = 1;
+    private readonly static string BrandChannelIdDefaultValue = "";
+
+    private string brandChannelId_;
+    /// <summary>
+    /// Immutable. The ID of a YouTube brand channel to help creators understand
+    /// your brand. The channel must be linked to this account. This is a string
+    /// value with “UC” prefix. For example, "UCK8sQmJBp8GCxrOtXWBpyEA".
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string BrandChannelId {
+      get { return brandChannelId_ ?? BrandChannelIdDefaultValue; }
+      set {
+        brandChannelId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "brand_channel_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasBrandChannelId {
+      get { return brandChannelId_ != null; }
+    }
+    /// <summary>Clears the value of the "brand_channel_id" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearBrandChannelId() {
+      brandChannelId_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as YoutubeLinkMetadata);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(YoutubeLinkMetadata other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (BrandChannelId != other.BrandChannelId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasBrandChannelId) hash ^= BrandChannelId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasBrandChannelId) {
+        output.WriteRawTag(10);
+        output.WriteString(BrandChannelId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasBrandChannelId) {
+        output.WriteRawTag(10);
+        output.WriteString(BrandChannelId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasBrandChannelId) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(BrandChannelId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(YoutubeLinkMetadata other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasBrandChannelId) {
+        BrandChannelId = other.BrandChannelId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            BrandChannelId = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            BrandChannelId = input.ReadString();
             break;
           }
         }

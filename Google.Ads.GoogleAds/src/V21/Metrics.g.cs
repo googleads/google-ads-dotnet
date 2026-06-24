@@ -1052,8 +1052,9 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// The value of all conversions. When this column is selected with date, the
     /// values in date column means the conversion date. Details for the
-    /// by_conversion_date columns are available at
-    /// https://support.google.com/google-ads/answer/9549009.
+    /// `by_conversion_date` columns are available at [Understand conversions by
+    /// time with new
+    /// columns](https://support.google.com/google-ads/answer/9549009).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1088,8 +1089,10 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// will include the additional conversion value from new customers for both
     /// biddable and non-biddable conversions. If your campaign has adopted the
     /// customer acquisition goal and selected "bid higher for new customers",
-    /// these values will be included in "all_conversions_value". See
-    /// https://support.google.com/google-ads/answer/12080169 for more details.
+    /// these values will be included in `all_conversions_value`. See
+    /// [About customer lifecycle
+    /// goals](https://support.google.com/google-ads/answer/12080169) for more
+    /// details.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1153,8 +1156,9 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// The total number of conversions. This includes all conversions regardless
     /// of the value of include_in_conversions_metric. When this column is selected
     /// with date, the values in date column means the conversion date. Details for
-    /// the by_conversion_date columns are available at
-    /// https://support.google.com/google-ads/answer/9549009.
+    /// the `by_conversion_date` columns are available at [Understand conversions
+    /// by time with new
+    /// columns](https://support.google.com/google-ads/answer/9549009).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2118,8 +2122,9 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private long combinedClicks_;
     /// <summary>
     /// The number of times your ad or your site's listing in the unpaid
-    /// results was clicked. See the help page at
-    /// https://support.google.com/google-ads/answer/3097241 for details.
+    /// results was clicked. See
+    /// [About measuring paid and organic search
+    /// results](https://support.google.com/google-ads/answer/3097241).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2150,9 +2155,9 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private double combinedClicksPerQuery_;
     /// <summary>
     /// The number of times your ad or your site's listing in the unpaid
-    /// results was clicked (combined_clicks) divided by combined_queries. See the
-    /// help page at https://support.google.com/google-ads/answer/3097241 for
-    /// details.
+    /// results was clicked (combined_clicks) divided by combined_queries. See
+    /// [About measuring paid and organic search
+    /// results](https://support.google.com/google-ads/answer/3097241) for details.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2183,8 +2188,9 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private long combinedQueries_;
     /// <summary>
     /// The number of searches that returned pages from your site in the unpaid
-    /// results or showed one of your text ads. See the help page at
-    /// https://support.google.com/google-ads/answer/3097241 for details.
+    /// results or showed one of your text ads. See
+    /// [About measuring paid and organic search
+    /// results](https://support.google.com/google-ads/answer/3097241) for details.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2249,6 +2255,7 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// The impressions you've received on the Display Network divided
     /// by the estimated number of impressions you were eligible to receive.
+    ///
     /// Note: Content impression share is reported in the range of 0.1 to 1. Any
     /// value below 0.1 is reported as 0.0999.
     /// </summary>
@@ -2345,6 +2352,7 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// The estimated percentage of impressions on the Display Network
     /// that your ads didn't receive due to poor Ad Rank.
+    ///
     /// Note: Content rank lost impression share is reported in the range of 0
     /// to 0.9. Any value above 0.9 is reported as 0.9001.
     /// </summary>
@@ -2378,8 +2386,8 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// Conversions from interactions divided by the number of ad interactions
     /// (such as clicks for text ads or views for video ads). This only includes
-    /// conversion actions which include_in_conversions_metric attribute is set to
-    /// true. If you use conversion-based bidding, your bid strategies will
+    /// conversion actions which `include_in_conversions_metric` attribute is set
+    /// to `true`. If you use conversion-based bidding, your bid strategies will
     /// optimize for these conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2411,7 +2419,7 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private double conversionsValue_;
     /// <summary>
     /// The value of conversions. This only includes conversion actions which
-    /// include_in_conversions_metric attribute is set to true. If you use
+    /// `include_in_conversions_metric` attribute is set to `true`. If you use
     /// conversion-based bidding, your bid strategies will optimize for these
     /// conversions.
     /// </summary>
@@ -2444,12 +2452,12 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private double conversionsValueByConversionDate_;
     /// <summary>
     /// The value of conversions. This only includes conversion actions which
-    /// include_in_conversions_metric attribute is set to true. If you use
+    /// `include_in_conversions_metric` attribute is set to `true`. If you use
     /// conversion-based bidding, your bid strategies will optimize for these
     /// conversions. When this column is selected with date, the values in date
-    /// column means the conversion date. Details for the by_conversion_date
-    /// columns are available at
-    /// https://support.google.com/google-ads/answer/9549009.
+    /// column means the conversion date. Details for the `by_conversion_date`
+    /// columns are available at [Understand conversions by time with new
+    /// columns](https://support.google.com/google-ads/answer/9549009).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2485,7 +2493,9 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// biddable conversions. If your campaign has adopted the customer
     /// acquisition goal and selected "bid higher for new customers", these values
     /// will be included in "conversions_value" for optimization. See
-    /// https://support.google.com/google-ads/answer/12080169 for more details.
+    /// [About customer lifecycle
+    /// goals](https://support.google.com/google-ads/answer/12080169) for more
+    /// details.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2550,7 +2560,7 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// The value of conversions from interactions divided by the number of ad
     /// interactions. This only includes conversion actions which
-    /// include_in_conversions_metric attribute is set to true. If you use
+    /// `include_in_conversions_metric` attribute is set to `true`. If you use
     /// conversion-based bidding, your bid strategies will optimize for these
     /// conversions.
     /// </summary>
@@ -2583,7 +2593,7 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private double conversions_;
     /// <summary>
     /// The number of conversions. This only includes conversion actions which
-    /// include_in_conversions_metric attribute is set to true. If you use
+    /// `include_in_conversions_metric` attribute is set to `true`. If you use
     /// conversion-based bidding, your bid strategies will optimize for these
     /// conversions.
     /// </summary>
@@ -2619,9 +2629,9 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// include_in_conversions_metric attribute is set to true. If you use
     /// conversion-based bidding, your bid strategies will optimize for these
     /// conversions. When this column is selected with date, the values in date
-    /// column means the conversion date. Details for the by_conversion_date
-    /// columns are available at
-    /// https://support.google.com/google-ads/answer/9549009.
+    /// column means the conversion date. Details for the `by_conversion_date`
+    /// columns are available at [Understand conversions by time with new
+    /// columns](https://support.google.com/google-ads/answer/9549009).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2713,8 +2723,8 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private double costPerConversion_;
     /// <summary>
     /// The cost of ad interactions divided by conversions. This only includes
-    /// conversion actions which include_in_conversions_metric attribute is set to
-    /// true. If you use conversion-based bidding, your bid strategies will
+    /// conversion actions which `include_in_conversions_metric` attribute is set
+    /// to `true`. If you use conversion-based bidding, your bid strategies will
     /// optimize for these conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2747,7 +2757,7 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// The cost of ad interactions divided by current model attributed
     /// conversions. This only includes conversion actions which
-    /// include_in_conversions_metric attribute is set to true. If you use
+    /// `include_in_conversions_metric` attribute is set to `true`. If you use
     /// conversion-based bidding, your bid strategies will optimize for these
     /// conversions.
     /// </summary>
@@ -2781,7 +2791,7 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// Conversions from when a customer clicks on a Google Ads ad on one device,
     /// then converts on a different device or browser.
-    /// Cross-device conversions are already included in all_conversions.
+    /// Cross-device conversions are already included in `all_conversions`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3664,9 +3674,9 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// through routine means of filtration (that is, known invalid data-center
     /// traffic, bots and spiders or other crawlers, irregular patterns, etc).
     /// You're not charged for them, and they don't affect your account statistics.
-    /// See the help page at
-    /// https://support.google.com/campaignmanager/answer/6076504 for
-    /// details.
+    /// See
+    /// [Filtering invalid traffic to ensure
+    /// quality](https://support.google.com/campaignmanager/answer/6076504).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3700,9 +3710,9 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// that are detected through routine means of filtration (such as known
     /// invalid data-center traffic, bots and spiders or other crawlers, irregular
     /// patterns, etc.). You're not charged for them, and they don't affect your
-    /// account statistics. See the help page at
-    /// https://support.google.com/campaignmanager/answer/6076504 for
-    /// details.
+    /// account statistics. See
+    /// [Filtering invalid traffic to ensure
+    /// quality](https://support.google.com/campaignmanager/answer/6076504).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3889,10 +3899,11 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// URL for the optimization score page in the Google Ads web interface.
     /// This metric can be selected from `customer` or `campaign`, and can be
-    /// segmented by `segments.recommendation_type`. For example, `SELECT
-    /// metrics.optimization_score_url, segments.recommendation_type FROM
-    /// customer` will return a URL for each unique (customer, recommendation_type)
-    /// combination.
+    /// segmented by `segments.recommendation_type`.
+    ///
+    /// For example, `SELECT metrics.optimization_score_url,
+    /// segments.recommendation_type FROM customer` will return a URL for each
+    /// unique (customer, recommendation_type) combination.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3922,8 +3933,9 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private long organicClicks_;
     /// <summary>
     /// The number of times someone clicked your site's listing in the unpaid
-    /// results for a particular query. See the help page at
-    /// https://support.google.com/google-ads/answer/3097241 for details.
+    /// results for a particular query. See
+    /// [About measuring paid and organic search
+    /// results](https://support.google.com/google-ads/answer/3097241).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3955,8 +3967,9 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// The number of times someone clicked your site's listing in the unpaid
     /// results (organic_clicks) divided by the total number of searches that
-    /// returned pages from your site (organic_queries). See the help page at
-    /// https://support.google.com/google-ads/answer/3097241 for details.
+    /// returned pages from your site (organic_queries). See
+    /// [About measuring paid and organic search
+    /// results](https://support.google.com/google-ads/answer/3097241).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3986,9 +3999,9 @@ namespace Google.Ads.GoogleAds.V21.Common {
 
     private long organicImpressions_;
     /// <summary>
-    /// The number of listings for your site in the unpaid search results. See the
-    /// help page at https://support.google.com/google-ads/answer/3097241 for
-    /// details.
+    /// The number of listings for your site in the unpaid search results. See
+    /// [About measuring paid and organic search
+    /// results](https://support.google.com/google-ads/answer/3097241).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4019,9 +4032,10 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private double organicImpressionsPerQuery_;
     /// <summary>
     /// The number of times a page from your site was listed in the unpaid search
-    /// results (organic_impressions) divided by the number of searches returning
-    /// your site's listing in the unpaid results (organic_queries). See the help
-    /// page at https://support.google.com/google-ads/answer/3097241 for details.
+    /// results (`organic_impressions`) divided by the number of searches returning
+    /// your site's listing in the unpaid results (`organic_queries`). See
+    /// [About measuring paid and organic search
+    /// results](https://support.google.com/google-ads/answer/3097241).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4052,8 +4066,9 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private long organicQueries_;
     /// <summary>
     /// The total number of searches that returned your site's listing in the
-    /// unpaid results. See the help page at
-    /// https://support.google.com/google-ads/answer/3097241 for details.
+    /// unpaid results. See
+    /// [About measuring paid and organic search
+    /// results](https://support.google.com/google-ads/answer/3097241) for details.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4174,8 +4189,8 @@ namespace Google.Ads.GoogleAds.V21.Common {
 
     private double phoneThroughRate_;
     /// <summary>
-    /// Number of phone calls received (phone_calls) divided by the number of
-    /// times your phone number is shown (phone_impressions).
+    /// Number of phone calls received (`phone_calls`) divided by the number of
+    /// times your phone number is shown (`phone_impressions`).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4239,7 +4254,9 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// The percentage of the customer's Shopping or Search ad impressions that are
     /// shown in the most prominent Shopping position. See
-    /// https://support.google.com/google-ads/answer/7501826
+    /// [About top and
+    /// absolute top metrics](https://support.google.com/google-ads/answer/7501826)
+    ///
     /// for details. Any value below 0.1 is reported as 0.0999.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4271,9 +4288,10 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private double searchBudgetLostAbsoluteTopImpressionShare_;
     /// <summary>
     /// The number estimating how often your ad wasn't the very first ad among the
-    /// top ads in the search results due to a low budget. Note: Search
-    /// budget lost absolute top impression share is reported in the range of 0 to
-    /// 0.9. Any value above 0.9 is reported as 0.9001.
+    /// top ads in the search results due to a low budget.
+    ///
+    /// Note: Search budget lost absolute top impression share is reported in the
+    /// range of 0 to 0.9. Any value above 0.9 is reported as 0.9001.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4304,7 +4322,9 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private double searchBudgetLostImpressionShare_;
     /// <summary>
     /// The estimated percent of times that your ad was eligible to show on the
-    /// Search Network but didn't because your budget was too low. Note: Search
+    /// Search Network but didn't because your budget was too low.
+    ///
+    /// Note: Search
     /// budget lost impression share is reported in the range of 0 to 0.9. Any
     /// value above 0.9 is reported as 0.9001.
     /// </summary>
@@ -4336,10 +4356,11 @@ namespace Google.Ads.GoogleAds.V21.Common {
 
     private double searchBudgetLostTopImpressionShare_;
     /// <summary>
-    /// The number estimating how often your ad didn't show adjacent to the top
-    /// organic search results due to a low budget. Note: Search
-    /// budget lost top impression share is reported in the range of 0 to 0.9. Any
-    /// value above 0.9 is reported as 0.9001.
+    /// The estimated percent of times that your ad didn't show adjacent to the top
+    /// organic search results due to a low budget.
+    ///
+    /// Note: Search budget lost top impression share is reported in the range of 0
+    /// to 0.9. Any value above 0.9 is reported as 0.9001.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4371,6 +4392,7 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// The number of clicks you've received on the Search Network
     /// divided by the estimated number of clicks you were eligible to receive.
+    ///
     /// Note: Search click share is reported in the range of 0.1 to 1. Any value
     /// below 0.1 is reported as 0.0999.
     /// </summary>
@@ -4405,9 +4427,10 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// The impressions you've received divided by the estimated number of
     /// impressions you were eligible to receive on the Search Network for search
     /// terms that matched your keywords exactly (or were close variants of your
-    /// keyword), regardless of your keyword match types. Note: Search exact match
-    /// impression share is reported in the range of 0.1 to 1. Any value below 0.1
-    /// is reported as 0.0999.
+    /// keyword), regardless of your keyword match types.
+    ///
+    /// Note: Search exact match impression share is reported in the range of 0.1
+    /// to 1. Any value below 0.1 is reported as 0.0999.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4439,6 +4462,7 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// The impressions you've received on the Search Network divided
     /// by the estimated number of impressions you were eligible to receive.
+    ///
     /// Note: Search impression share is reported in the range of 0.1 to 1. Any
     /// value below 0.1 is reported as 0.0999.
     /// </summary>
@@ -4472,6 +4496,7 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// The number estimating how often your ad wasn't the very first ad among the
     /// top ads in the search results due to poor Ad Rank.
+    ///
     /// Note: Search rank lost absolute top impression share is reported in the
     /// range of 0 to 0.9. Any value above 0.9 is reported as 0.9001.
     /// </summary>
@@ -4538,6 +4563,7 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// The number estimating how often your ad didn't show adjacent to the top
     /// organic search results due to poor Ad Rank.
+    ///
     /// Note: Search rank lost top impression share is reported in the range of 0
     /// to 0.9. Any value above 0.9 is reported as 0.9001.
     /// </summary>
@@ -4807,8 +4833,9 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// The value of all conversions divided by the number of all conversions. When
     /// this column is selected with date, the values in date column means the
-    /// conversion date. Details for the by_conversion_date columns are available
-    /// at https://support.google.com/google-ads/answer/9549009.
+    /// conversion date. Details for the `by_conversion_date` columns are available
+    /// at [Understand conversions by time with new
+    /// columns](https://support.google.com/google-ads/answer/9549009).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4839,9 +4866,9 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private double valuePerConversion_;
     /// <summary>
     /// The value of conversions divided by the number of conversions. This only
-    /// includes conversion actions which include_in_conversions_metric attribute
-    /// is set to true. If you use conversion-based bidding, your bid strategies
-    /// will optimize for these conversions.
+    /// includes conversion actions for which the `include_in_conversions_metric`
+    /// attribute is set to `true`. If you use conversion-based bidding, your bid
+    /// strategies will optimize for these conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4872,12 +4899,13 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private double valuePerConversionsByConversionDate_;
     /// <summary>
     /// The value of conversions divided by the number of conversions. This only
-    /// includes conversion actions which include_in_conversions_metric attribute
-    /// is set to true. If you use conversion-based bidding, your bid strategies
-    /// will optimize for these conversions. When this column is selected with
-    /// date, the values in date column means the conversion date. Details for the
-    /// by_conversion_date columns are available at
-    /// https://support.google.com/google-ads/answer/9549009.
+    /// includes conversion actions for which the `include_in_conversions_metric`
+    /// attribute is set to `true`. If you use conversion-based bidding, your bid
+    /// strategies will optimize for these conversions. When this column is
+    /// selected with date, the values in date column means the conversion date.
+    /// Details for the `by_conversion_date` columns are available at [Understand
+    /// conversions by time with new
+    /// columns](https://support.google.com/google-ads/answer/9549009).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4908,8 +4936,8 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private double valuePerCurrentModelAttributedConversion_;
     /// <summary>
     /// The value of current model attributed conversions divided by the number of
-    /// the conversions. This only includes conversion actions which
-    /// include_in_conversions_metric attribute is set to true. If you use
+    /// the conversions. This only includes conversion actions for which the
+    /// `include_in_conversions_metric` attribute is set to `true`. If you use
     /// conversion-based bidding, your bid strategies will optimize for these
     /// conversions.
     /// </summary>
@@ -5709,13 +5737,16 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// Orders is the total number of purchase conversions you received attributed
     /// to your ads.
+    ///
     /// How it works: You report conversions with cart data for
     /// completed purchases on your website. If a conversion is attributed to
     /// previous interactions with your ads (clicks for text or Shopping ads, views
     /// for video ads etc.) it's counted as an order.
+    ///
     /// Example: Someone clicked on a Shopping ad for a hat then bought the same
     /// hat and a shirt in an order on your website. Even though they bought 2
     /// products, this would count as 1 order.
+    ///
     /// This metric is only available if you report conversions with cart data.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5748,11 +5779,14 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// Average order value is the average revenue you made per order attributed to
     /// your ads.
+    ///
     /// How it works: You report conversions with cart data for completed purchases
     /// on your website. Average order value is the total revenue from your orders
     /// divided by the total number of orders.
+    ///
     /// Example: You received 3 orders which made $10, $15 and $20 worth of
     /// revenue. The average order value is $15 = ($10 + $15 + $20)/3.
+    ///
     /// This metric is only available if you report conversions with cart data.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5785,11 +5819,14 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// Average cart size is the average number of products in each order
     /// attributed to your ads.
+    ///
     /// How it works: You report conversions with cart data for completed purchases
     /// on your website. Average cart size is the total number of products sold
     /// divided by the total number of orders you received.
+    ///
     /// Example: You received 2 orders, the first included 3 products and the
     /// second included 2. The average cart size is 2.5 products = (3+2)/2.
+    ///
     /// This metric is only available if you report conversions with cart data.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5822,14 +5859,17 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// Cost of goods sold (COGS) is the total cost of the products you sold in
     /// orders attributed to your ads.
+    ///
     /// How it works: You can add a cost of goods sold value to every product in
     /// Merchant Center. If you report conversions with cart data, the products you
     /// sold are matched with their cost of goods sold value and this can be used
     /// to calculate the gross profit you made on each order.
+    ///
     /// Example: Someone clicked on a Shopping ad for a hat then bought the same
     /// hat and a shirt. The hat has a cost of goods sold value of $3, the shirt
     /// has a cost of goods sold value of $5. The cost of goods sold for this order
     /// is $8 = $3 + $5.
+    ///
     /// This metric is only available if you report conversions with cart data.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5862,14 +5902,17 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// Gross profit is the profit you made from orders attributed to your ads
     /// minus the cost of goods sold (COGS).
+    ///
     /// How it works: Gross profit is the revenue you made from sales attributed to
     /// your ads minus cost of goods sold. Gross profit calculations only include
     /// products that have a cost of goods sold value in Merchant Center.
+    ///
     /// Example: Someone clicked on a Shopping ad for a hat then bought the same
     /// hat and a shirt in an order from your website. The hat is priced $10 and
     /// the shirt is priced $20. The hat has a cost of goods sold value of $3, but
     /// the shirt has no cost of goods sold value. Gross profit for this order will
     /// only take into account the hat, so it's $7 = $10 - $3.
+    ///
     /// This metric is only available if you report conversions with cart data.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5902,16 +5945,19 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// Gross profit margin is the percentage gross profit you made from orders
     /// attributed to your ads, after taking out the cost of goods sold (COGS).
+    ///
     /// How it works: You report conversions with cart data for completed purchases
     /// on your website. Gross profit margin is the gross profit you made divided
     /// by your total revenue and multiplied by 100%. Gross profit margin
     /// calculations only include products that have a cost of goods sold value in
     /// Merchant Center.
+    ///
     /// Example: Someone bought a hat and a shirt in an order on your website. The
     /// hat is priced $10 and has a cost of goods sold value of $3. The shirt is
     /// priced $20 but has no cost of goods sold value. Gross profit margin for
     /// this order will only take into account the hat because it has a cost of
     /// goods sold value, so it's 70% = ($10 - $3)/$10 x 100%.
+    ///
     /// This metric is only available if you report conversions with cart data.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5943,13 +5989,16 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private long revenueMicros_;
     /// <summary>
     /// Revenue is the total amount you made from orders attributed to your ads.
+    ///
     /// How it works: You report conversions with cart data for completed purchases
     /// on your website. Revenue is the total value of all the orders you received
     /// attributed to your ads, minus any discount.
+    ///
     /// Example: Someone clicked on a Shopping ad  for a hat then bought the same
     /// hat and a shirt in an order from your website. The hat is priced $10 and
     /// the shirt is priced $20. The entire order has a $5 discount. The revenue
     /// from this order is $25 = ($10 + $20) - $5.
+    ///
     /// This metric is only available if you report conversions with cart data.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5982,11 +6031,14 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// Units sold is the total number of products sold from orders attributed to
     /// your ads.
+    ///
     /// How it works: You report conversions with cart data for completed purchases
     /// on your website. Units sold is the total number of products sold from all
     /// orders attributed to your ads.
+    ///
     /// Example: Someone clicked on a Shopping ad for a hat then bought the same
     /// hat, a shirt and a jacket. The units sold in this order is 3.
+    ///
     /// This metric is only available if you report conversions with cart data.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6019,6 +6071,7 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// Cross-sell cost of goods sold (COGS) is the total cost of products sold as
     /// a result of advertising a different product.
+    ///
     /// How it works: You report conversions with cart data for completed purchases
     /// on your website. If the ad that was interacted with before the purchase has
     /// an associated product (see Shopping Ads) then this product is considered
@@ -6026,10 +6079,12 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// places is a sold product. If these products don't match then this is
     /// considered cross-sell. Cross-sell cost of goods sold is the total cost of
     /// the products sold that weren't advertised.
+    ///
     /// Example: Someone clicked on a Shopping ad for a hat then bought the same
     /// hat and a shirt. The hat has a cost of goods sold value of $3, the shirt
     /// has a cost of goods sold value of $5. The cross-sell cost of goods sold for
     /// this order is $5.
+    ///
     /// This metric is only available if you report conversions with cart data.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6062,6 +6117,7 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// Cross-sell gross profit is the profit you made from products sold as a
     /// result of advertising a different product, minus cost of goods sold (COGS).
+    ///
     /// How it works: You report conversions with cart data for completed purchases
     /// on your website. If the ad that was interacted with before the purchase has
     /// an associated product (see Shopping Ads) then this product is considered
@@ -6069,9 +6125,11 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// product. If these products don't match then this is considered cross-sell.
     /// Cross-sell gross profit is the revenue you made from cross-sell attributed
     /// to your ads minus the cost of the goods sold.
+    ///
     /// Example: Someone clicked on a Shopping ad for a hat then bought the same
     /// hat and a shirt. The shirt is priced $20 and has a cost of goods sold value
     /// of $5. The cross-sell gross profit of this order is $15 = $20 - $5.
+    ///
     /// This metric is only available if you report conversions with cart data.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6104,6 +6162,7 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// Cross-sell revenue is the total amount you made from products sold as a
     /// result of advertising a different product.
+    ///
     /// How it works: You report conversions with cart data for completed purchases
     /// on your website. If the ad that was interacted with before the purchase has
     /// an associated product (see Shopping Ads) then this product is considered
@@ -6111,9 +6170,11 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// places is a sold product. If these products don't match then this is
     /// considered cross-sell. Cross-sell revenue is the total value you made from
     /// cross-sell attributed to your ads.
+    ///
     /// Example: Someone clicked on a Shopping ad for a hat then bought the same
     /// hat and a shirt. The hat is priced $10 and the shirt is priced $20. The
     /// cross-sell revenue of this order is $20.
+    ///
     /// This metric is only available if you report conversions with cart data.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6146,6 +6207,7 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// Cross-sell units sold is the total number of products sold as a result of
     /// advertising a different product.
+    ///
     /// How it works: You report conversions with cart data for completed purchases
     /// on your website. If the ad that was interacted with before the purchase has
     /// an associated product (see Shopping Ads) then this product is considered
@@ -6153,8 +6215,10 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// places is a sold product. If these products don't match then this is
     /// considered cross-sell. Cross-sell units sold is the total number of
     /// cross-sold products from all orders attributed to your ads.
+    ///
     /// Example: Someone clicked on a Shopping ad for a hat then bought the same
     /// hat, a shirt and a jacket. The cross-sell units sold in this order is 2.
+    ///
     /// This metric is only available if you report conversions with cart data.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6187,16 +6251,19 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// Lead cost of goods sold (COGS) is the total cost of products sold as a
     /// result of advertising the same product.
+    ///
     /// How it works: You report conversions with cart data for completed purchases
     /// on your website. If the ad that was interacted with has an associated
     /// product (see Shopping Ads) then this product is considered the advertised
     /// product. Any product included in the order the customer places is a sold
     /// product. If the advertised and sold products match, then the cost of these
     /// goods is counted under lead cost of goods sold.
+    ///
     /// Example: Someone clicked on a Shopping ad for a hat then bought the same
     /// hat and a shirt. The hat has a cost of goods sold value of $3, the shirt
     /// has a cost of goods sold value of $5. The lead cost of goods sold for this
     /// order is $3.
+    ///
     /// This metric is only available if you report conversions with cart data.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6229,6 +6296,7 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// Lead gross profit is the profit you made from products sold as a result of
     /// advertising the same product, minus cost of goods sold (COGS).
+    ///
     /// How it works: You report conversions with cart data for completed purchases
     /// on your website. If the ad that was interacted with before the purchase has
     /// an associated product (see Shopping Ads) then this product is considered
@@ -6236,9 +6304,11 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// places is a sold product. If the advertised and sold products match, then
     /// the revenue you made from these sales minus the cost of goods sold is your
     /// lead gross profit.
+    ///
     /// Example: Someone clicked on a Shopping ad for a hat then bought the same
     /// hat and a shirt. The hat is priced $10 and has a cost of goods sold value
     /// of $3. The lead gross profit of this order is $7 = $10 - $3.
+    ///
     /// This metric is only available if you report conversions with cart data.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6271,6 +6341,7 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// Lead revenue is the total amount you made from products sold as a result of
     /// advertising the same product.
+    ///
     /// How it works: You report conversions with cart data for completed purchases
     /// on your website. If the ad that was interacted with before the purchase has
     /// an associated product (see Shopping Ads) then this product is considered
@@ -6278,9 +6349,11 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// places is a sold product. If the advertised and sold products match, then
     /// the total value you made from the sales of these products is shown under
     /// lead revenue.
+    ///
     /// Example: Someone clicked on a Shopping ad for a hat then bought the same
     /// hat and a shirt. The hat is priced $10 and the shirt is priced $20. The
     /// lead revenue of this order is $10.
+    ///
     /// This metric is only available if you report conversions with cart data.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6313,14 +6386,17 @@ namespace Google.Ads.GoogleAds.V21.Common {
     /// <summary>
     /// Lead units sold is the total number of products sold as a result of
     /// advertising the same product.
+    ///
     /// How it works: You report conversions with cart data for completed purchases
     /// on your website. If the ad that was interacted with before the purchase has
     /// an associated product (see Shopping Ads) then this product is considered
     /// the advertised product. Any product included in the order the customer
     /// places is a sold product. If the advertised and sold products match, then
     /// the total number of these products sold is shown under lead units sold.
+    ///
     /// Example: Someone clicked on a Shopping ad for a hat then bought the same
     /// hat, a shirt and a jacket. The lead units sold in this order is 1.
+    ///
     /// This metric is only available if you report conversions with cart data.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6418,8 +6494,8 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private long linkedEntitiesCount_;
     /// <summary>
     /// Number of linked resources in which the asset is used.
-    /// This metric can only be selected with ChannelAggregateAssetView and
-    /// CampaignAggregateAssetView.
+    /// This metric can only be selected with `ChannelAggregateAssetView` and
+    /// `CampaignAggregateAssetView`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -6450,8 +6526,8 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private readonly pbc::RepeatedField<string> linkedSampleEntities_ = new pbc::RepeatedField<string>();
     /// <summary>
     /// A list of up to 20 sample linked resources in which the asset is used.
-    /// This metric can only be selected with ChannelAggregateAssetView and
-    /// CampaignAggregateAssetView.
+    /// This metric can only be selected with `ChannelAggregateAssetView` and
+    /// `CampaignAggregateAssetView`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -6466,9 +6542,11 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private readonly pbc::RepeatedField<string> sampleBestPerformanceEntities_ = new pbc::RepeatedField<string>();
     /// <summary>
     /// A list of up to 20 sample linked resources with impressions in the last 30
-    /// days where the asset had the AssetPerformanceLabel.BEST performance label.
-    /// This metric can only be selected with ChannelAggregateAssetView and
-    /// CampaignAggregateAssetView.
+    /// days where the asset had the `AssetPerformanceLabel.BEST` performance
+    /// label.
+    ///
+    /// This metric can only be selected with `ChannelAggregateAssetView` and
+    /// `CampaignAggregateAssetView`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -6483,9 +6561,11 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private readonly pbc::RepeatedField<string> sampleGoodPerformanceEntities_ = new pbc::RepeatedField<string>();
     /// <summary>
     /// A list of up to 20 sample linked resources with impressions in the last 30
-    /// days where the asset had the AssetPerformanceLabel.GOOD performance label.
-    /// This metric can only be selected with ChannelAggregateAssetView and
-    /// CampaignAggregateAssetView.
+    /// days where the asset had the `AssetPerformanceLabel.GOOD` performance
+    /// label.
+    ///
+    /// This metric can only be selected with `ChannelAggregateAssetView` and
+    /// `CampaignAggregateAssetView`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -6500,9 +6580,10 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private readonly pbc::RepeatedField<string> sampleLowPerformanceEntities_ = new pbc::RepeatedField<string>();
     /// <summary>
     /// A list of up to 20 sample linked resources with impressions in the last 30
-    /// days where the asset had the AssetPerformanceLabel.LOW performance label.
-    /// This metric can only be selected with ChannelAggregateAssetView and
-    /// CampaignAggregateAssetView.
+    /// days where the asset had the `AssetPerformanceLabel.LOW` performance label.
+    ///
+    /// This metric can only be selected with `ChannelAggregateAssetView` and
+    /// `CampaignAggregateAssetView`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -6517,10 +6598,11 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private readonly pbc::RepeatedField<string> sampleLearningPerformanceEntities_ = new pbc::RepeatedField<string>();
     /// <summary>
     /// A list of up to 20 sample linked resources with impressions in the last 30
-    /// days where the asset had the AssetPerformanceLabel.LEARNING performance
+    /// days where the asset had the `AssetPerformanceLabel.LEARNING` performance
     /// label.
-    /// This metric can only be selected with ChannelAggregateAssetView and
-    /// CampaignAggregateAssetView.
+    ///
+    /// This metric can only be selected with `ChannelAggregateAssetView` and
+    /// `CampaignAggregateAssetView`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -6535,10 +6617,11 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private readonly pbc::RepeatedField<string> sampleUnratedPerformanceEntities_ = new pbc::RepeatedField<string>();
     /// <summary>
     /// A list of up to 20 sample linked resources with impressions in the last 30
-    /// days where the assets had AssetPerformanceLabel performance label other
-    /// than BEST, GOOD, LOW, and LEARNING.
-    /// This metric can only be selected with ChannelAggregateAssetView and
-    /// CampaignAggregateAssetView.
+    /// days where the assets had `AssetPerformanceLabel` performance label other
+    /// than `BEST`, `GOOD`, `LOW`, and `LEARNING`.
+    ///
+    /// This metric can only be selected with `ChannelAggregateAssetView` and
+    /// `CampaignAggregateAssetView`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -6553,8 +6636,8 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private long assetPinnedTotalCount_;
     /// <summary>
     /// Number of total usages in which the asset is pinned.
-    /// This metric can only be selected with ChannelAggregateAssetView and
-    /// CampaignAggregateAssetView.
+    /// This metric can only be selected with `ChannelAggregateAssetView` and
+    /// `CampaignAggregateAssetView`.
     /// This metric is only supported in Search channel.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6586,8 +6669,8 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private long assetPinnedAsHeadlinePositionOneCount_;
     /// <summary>
     /// Number of entities in which the asset is pinned to headline 1.
-    /// This metric can only be selected with ChannelAggregateAssetView and
-    /// CampaignAggregateAssetView.
+    /// This metric can only be selected with `ChannelAggregateAssetView` and
+    /// `CampaignAggregateAssetView`.
     /// This metric is only supported in Search channel.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6619,8 +6702,8 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private long assetPinnedAsHeadlinePositionTwoCount_;
     /// <summary>
     /// Number of entities in which the asset is pinned to headline 2.
-    /// This metric can only be selected with ChannelAggregateAssetView and
-    /// CampaignAggregateAssetView.
+    /// This metric can only be selected with `ChannelAggregateAssetView` and
+    /// `CampaignAggregateAssetView`.
     /// This metric is only supported in Search channel.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6652,8 +6735,8 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private long assetPinnedAsHeadlinePositionThreeCount_;
     /// <summary>
     /// Number of entities in which the asset is pinned to headline 3.
-    /// This metric can only be selected with ChannelAggregateAssetView and
-    /// CampaignAggregateAssetView.
+    /// This metric can only be selected with `ChannelAggregateAssetView` and
+    /// `CampaignAggregateAssetView`.
     /// This metric is only supported in Search channel.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6685,8 +6768,8 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private long assetPinnedAsDescriptionPositionOneCount_;
     /// <summary>
     /// Number of entities in which the asset is pinned to description 1.
-    /// This metric can only be selected with ChannelAggregateAssetView and
-    /// CampaignAggregateAssetView.
+    /// This metric can only be selected with `ChannelAggregateAssetView` and
+    /// `CampaignAggregateAssetView`.
     /// This metric is only supported in Search channel.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6718,8 +6801,8 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private long assetPinnedAsDescriptionPositionTwoCount_;
     /// <summary>
     /// Number of entities in which the asset is pinned to description 2.
-    /// This metric can only be selected with ChannelAggregateAssetView and
-    /// CampaignAggregateAssetView.
+    /// This metric can only be selected with `ChannelAggregateAssetView` and
+    /// `CampaignAggregateAssetView`.
     /// This metric is only supported in Search channel.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6751,9 +6834,10 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private double assetBestPerformanceImpressionPercentage_;
     /// <summary>
     /// Percentage of impressions the asset received in ads with
-    /// AssetPerformanceLabel.BEST.
-    /// This metric can only be selected with ChannelAggregateAssetView and
-    /// CampaignAggregateAssetView.
+    /// `AssetPerformanceLabel.BEST`.
+    ///
+    /// This metric can only be selected with `ChannelAggregateAssetView` and
+    /// `CampaignAggregateAssetView`.
     /// This metric is only supported in Search channel.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6785,9 +6869,10 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private double assetGoodPerformanceImpressionPercentage_;
     /// <summary>
     /// Percentage of impressions the asset received in ads with
-    /// AssetPerformanceLabel.GOOD.
-    /// This metric can only be selected with ChannelAggregateAssetView and
-    /// CampaignAggregateAssetView.
+    /// `AssetPerformanceLabel.GOOD`.
+    ///
+    /// This metric can only be selected with `ChannelAggregateAssetView` and
+    /// `CampaignAggregateAssetView`.
     /// This metric is only supported in Search channel.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6819,9 +6904,10 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private double assetLowPerformanceImpressionPercentage_;
     /// <summary>
     /// Percentage of impressions the asset received in ads with
-    /// AssetPerformanceLabel.LOW.
-    /// This metric can only be selected with ChannelAggregateAssetView and
-    /// CampaignAggregateAssetView.
+    /// `AssetPerformanceLabel.LOW`.
+    ///
+    /// This metric can only be selected with `ChannelAggregateAssetView` and
+    /// `CampaignAggregateAssetView`.
     /// This metric is only supported in Search channel.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6853,9 +6939,10 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private double assetLearningPerformanceImpressionPercentage_;
     /// <summary>
     /// Percentage of impressions the asset received in ads with
-    /// AssetPerformanceLabel.LEARNING.
-    /// This metric can only be selected with ChannelAggregateAssetView and
-    /// CampaignAggregateAssetView.
+    /// `AssetPerformanceLabel.LEARNING`.
+    ///
+    /// This metric can only be selected with `ChannelAggregateAssetView` and
+    /// `CampaignAggregateAssetView`.
     /// This metric is only supported in Search channel.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6887,9 +6974,10 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private double assetUnratedPerformanceImpressionPercentage_;
     /// <summary>
     /// Percentage of impressions the asset received in ads with
-    /// AssetPerformanceLabel other than BEST, GOOD, LOW, and LEARNING.
-    /// This metric can only be selected with ChannelAggregateAssetView and
-    /// CampaignAggregateAssetView.
+    /// `AssetPerformanceLabel` other than `BEST`, `GOOD`, `LOW`, and `LEARNING`.
+    ///
+    /// This metric can only be selected with `ChannelAggregateAssetView` and
+    /// `CampaignAggregateAssetView`.
     /// This metric is only supported in Search channel.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6921,9 +7009,10 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private double assetBestPerformanceCostPercentage_;
     /// <summary>
     /// Percentage of cost the asset received in ads with
-    /// AssetPerformanceLabel.BEST.
-    /// This metric can only be selected with ChannelAggregateAssetView and
-    /// CampaignAggregateAssetView.
+    /// `AssetPerformanceLabel.BEST`.
+    ///
+    /// This metric can only be selected with `ChannelAggregateAssetView` and
+    /// `CampaignAggregateAssetView`.
     /// This metric is only supported in Performance Max channel.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6955,9 +7044,10 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private double assetGoodPerformanceCostPercentage_;
     /// <summary>
     /// Percentage of cost the asset received in ads with
-    /// AssetPerformanceLabel.GOOD.
-    /// This metric can only be selected with ChannelAggregateAssetView and
-    /// CampaignAggregateAssetView.
+    /// `AssetPerformanceLabel.GOOD`.
+    ///
+    /// This metric can only be selected with `ChannelAggregateAssetView` and
+    /// `CampaignAggregateAssetView`.
     /// This metric is only supported in Performance Max channel.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6989,9 +7079,10 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private double assetLowPerformanceCostPercentage_;
     /// <summary>
     /// Percentage of cost the asset received in ads with
-    /// AssetPerformanceLabel.LOW.
-    /// This metric can only be selected with ChannelAggregateAssetView and
-    /// CampaignAggregateAssetView.
+    /// `AssetPerformanceLabel.LOW`.
+    ///
+    /// This metric can only be selected with `ChannelAggregateAssetView` and
+    /// `CampaignAggregateAssetView`.
     /// This metric is only supported in Performance Max channel.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7023,9 +7114,10 @@ namespace Google.Ads.GoogleAds.V21.Common {
     private double assetLearningPerformanceCostPercentage_;
     /// <summary>
     /// Percentage of cost the asset received in ads with
-    /// AssetPerformanceLabel.LEARNING.
-    /// This metric can only be selected with ChannelAggregateAssetView and
-    /// CampaignAggregateAssetView.
+    /// `AssetPerformanceLabel.LEARNING`.
+    ///
+    /// This metric can only be selected with `ChannelAggregateAssetView` and
+    /// `CampaignAggregateAssetView`.
     /// This metric is only supported in Performance Max channel.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7056,10 +7148,11 @@ namespace Google.Ads.GoogleAds.V21.Common {
 
     private double assetUnratedPerformanceCostPercentage_;
     /// <summary>
-    /// Percentage of cost the asset received in ads with AssetPerformanceLabel
-    /// other than BEST, GOOD, LOW, and LEARNING.
-    /// This metric can only be selected with ChannelAggregateAssetView and
-    /// CampaignAggregateAssetView.
+    /// Percentage of cost the asset received in ads with `AssetPerformanceLabel`
+    /// other than `BEST`, `GOOD`, `LOW`, and `LEARNING`.
+    ///
+    /// This metric can only be selected with `ChannelAggregateAssetView` and
+    /// `CampaignAggregateAssetView`.
     /// This metric is only supported in Performance Max channel.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11427,7 +11520,11 @@ namespace Google.Ads.GoogleAds.V21.Common {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -12342,7 +12439,11 @@ namespace Google.Ads.GoogleAds.V21.Common {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -13480,7 +13581,11 @@ namespace Google.Ads.GoogleAds.V21.Common {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -13503,7 +13608,11 @@ namespace Google.Ads.GoogleAds.V21.Common {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

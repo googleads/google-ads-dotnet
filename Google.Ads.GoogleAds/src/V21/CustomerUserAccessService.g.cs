@@ -42,30 +42,32 @@ namespace Google.Ads.GoogleAds.V21.Services {
             "bWVyVXNlckFjY2Vzc0gAQgsKCW9wZXJhdGlvbiJ1CiBNdXRhdGVDdXN0b21l",
             "clVzZXJBY2Nlc3NSZXNwb25zZRJRCgZyZXN1bHQYASABKAsyQS5nb29nbGUu",
             "YWRzLmdvb2dsZWFkcy52MjEuc2VydmljZXMuTXV0YXRlQ3VzdG9tZXJVc2Vy",
-            "QWNjZXNzUmVzdWx0ImkKHk11dGF0ZUN1c3RvbWVyVXNlckFjY2Vzc1Jlc3Vs",
-            "dBJHCg1yZXNvdXJjZV9uYW1lGAEgASgJQjD6QS0KK2dvb2dsZWFkcy5nb29n",
-            "bGVhcGlzLmNvbS9DdXN0b21lclVzZXJBY2Nlc3My5wIKGUN1c3RvbWVyVXNl",
-            "ckFjY2Vzc1NlcnZpY2USggIKGE11dGF0ZUN1c3RvbWVyVXNlckFjY2VzcxJC",
-            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyMS5zZXJ2aWNlcy5NdXRhdGVDdXN0",
-            "b21lclVzZXJBY2Nlc3NSZXF1ZXN0GkMuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djIxLnNlcnZpY2VzLk11dGF0ZUN1c3RvbWVyVXNlckFjY2Vzc1Jlc3BvbnNl",
-            "Il3aQRVjdXN0b21lcl9pZCxvcGVyYXRpb26C0+STAj8iOi92MjEvY3VzdG9t",
-            "ZXJzL3tjdXN0b21lcl9pZD0qfS9jdXN0b21lclVzZXJBY2Nlc3NlczptdXRh",
-            "dGU6ASoaRcpBGGdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbdJBJ2h0dHBzOi8v",
-            "d3d3Lmdvb2dsZWFwaXMuY29tL2F1dGgvYWR3b3Jkc0KKAgolY29tLmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYyMS5zZXJ2aWNlc0IeQ3VzdG9tZXJVc2VyQWNj",
-            "ZXNzU2VydmljZVByb3RvUAFaSWdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3Rv",
-            "L2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MjEvc2VydmljZXM7c2Vydmlj",
-            "ZXOiAgNHQUGqAiFHb29nbGUuQWRzLkdvb2dsZUFkcy5WMjEuU2VydmljZXPK",
-            "AiFHb29nbGVcQWRzXEdvb2dsZUFkc1xWMjFcU2VydmljZXPqAiVHb29nbGU6",
-            "OkFkczo6R29vZ2xlQWRzOjpWMjE6OlNlcnZpY2VzYgZwcm90bzM="));
+            "QWNjZXNzUmVzdWx0Ir4BCh5NdXRhdGVDdXN0b21lclVzZXJBY2Nlc3NSZXN1",
+            "bHQSRwoNcmVzb3VyY2VfbmFtZRgBIAEoCUIw+kEtCitnb29nbGVhZHMuZ29v",
+            "Z2xlYXBpcy5jb20vQ3VzdG9tZXJVc2VyQWNjZXNzElMKF211bHRpX3BhcnR5",
+            "X2F1dGhfcmV2aWV3GAIgASgJQjL6QS8KLWdvb2dsZWFkcy5nb29nbGVhcGlz",
+            "LmNvbS9NdWx0aVBhcnR5QXV0aFJldmlldzLnAgoZQ3VzdG9tZXJVc2VyQWNj",
+            "ZXNzU2VydmljZRKCAgoYTXV0YXRlQ3VzdG9tZXJVc2VyQWNjZXNzEkIuZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjIxLnNlcnZpY2VzLk11dGF0ZUN1c3RvbWVy",
+            "VXNlckFjY2Vzc1JlcXVlc3QaQy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjEu",
+            "c2VydmljZXMuTXV0YXRlQ3VzdG9tZXJVc2VyQWNjZXNzUmVzcG9uc2UiXdpB",
+            "FWN1c3RvbWVyX2lkLG9wZXJhdGlvboLT5JMCPyI6L3YyMS9jdXN0b21lcnMv",
+            "e2N1c3RvbWVyX2lkPSp9L2N1c3RvbWVyVXNlckFjY2Vzc2VzOm11dGF0ZToB",
+            "KhpFykEYZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29t0kEnaHR0cHM6Ly93d3cu",
+            "Z29vZ2xlYXBpcy5jb20vYXV0aC9hZHdvcmRzQooCCiVjb20uZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjIxLnNlcnZpY2VzQh5DdXN0b21lclVzZXJBY2Nlc3NT",
+            "ZXJ2aWNlUHJvdG9QAVpJZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29v",
+            "Z2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YyMS9zZXJ2aWNlcztzZXJ2aWNlc6IC",
+            "A0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYyMS5TZXJ2aWNlc8oCIUdv",
+            "b2dsZVxBZHNcR29vZ2xlQWRzXFYyMVxTZXJ2aWNlc+oCJUdvb2dsZTo6QWRz",
+            "OjpHb29nbGVBZHM6OlYyMTo6U2VydmljZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V21.Resources.CustomerUserAccessReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V21.Services.MutateCustomerUserAccessRequest), global::Google.Ads.GoogleAds.V21.Services.MutateCustomerUserAccessRequest.Parser, new[]{ "CustomerId", "Operation" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V21.Services.CustomerUserAccessOperation), global::Google.Ads.GoogleAds.V21.Services.CustomerUserAccessOperation.Parser, new[]{ "UpdateMask", "Update", "Remove" }, new[]{ "Operation" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V21.Services.MutateCustomerUserAccessResponse), global::Google.Ads.GoogleAds.V21.Services.MutateCustomerUserAccessResponse.Parser, new[]{ "Result" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V21.Services.MutateCustomerUserAccessResult), global::Google.Ads.GoogleAds.V21.Services.MutateCustomerUserAccessResult.Parser, new[]{ "ResourceName" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V21.Services.MutateCustomerUserAccessResult), global::Google.Ads.GoogleAds.V21.Services.MutateCustomerUserAccessResult.Parser, new[]{ "ResourceName", "MultiPartyAuthReview" }, null, null, null, null)
           }));
     }
     #endregion
@@ -270,7 +272,11 @@ namespace Google.Ads.GoogleAds.V21.Services {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -296,7 +302,11 @@ namespace Google.Ads.GoogleAds.V21.Services {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -601,7 +611,11 @@ namespace Google.Ads.GoogleAds.V21.Services {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -636,7 +650,11 @@ namespace Google.Ads.GoogleAds.V21.Services {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -832,7 +850,11 @@ namespace Google.Ads.GoogleAds.V21.Services {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -854,7 +876,11 @@ namespace Google.Ads.GoogleAds.V21.Services {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -911,6 +937,7 @@ namespace Google.Ads.GoogleAds.V21.Services {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public MutateCustomerUserAccessResult(MutateCustomerUserAccessResult other) : this() {
       resourceName_ = other.resourceName_;
+      multiPartyAuthReview_ = other.multiPartyAuthReview_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -935,6 +962,22 @@ namespace Google.Ads.GoogleAds.V21.Services {
       }
     }
 
+    /// <summary>Field number for the "multi_party_auth_review" field.</summary>
+    public const int MultiPartyAuthReviewFieldNumber = 2;
+    private string multiPartyAuthReview_ = "";
+    /// <summary>
+    /// The resource name of the multi-party authorization review associated with
+    /// this mutate.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string MultiPartyAuthReview {
+      get { return multiPartyAuthReview_; }
+      set {
+        multiPartyAuthReview_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -951,6 +994,7 @@ namespace Google.Ads.GoogleAds.V21.Services {
         return true;
       }
       if (ResourceName != other.ResourceName) return false;
+      if (MultiPartyAuthReview != other.MultiPartyAuthReview) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -959,6 +1003,7 @@ namespace Google.Ads.GoogleAds.V21.Services {
     public override int GetHashCode() {
       int hash = 1;
       if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
+      if (MultiPartyAuthReview.Length != 0) hash ^= MultiPartyAuthReview.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -981,6 +1026,10 @@ namespace Google.Ads.GoogleAds.V21.Services {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
       }
+      if (MultiPartyAuthReview.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(MultiPartyAuthReview);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -995,6 +1044,10 @@ namespace Google.Ads.GoogleAds.V21.Services {
         output.WriteRawTag(10);
         output.WriteString(ResourceName);
       }
+      if (MultiPartyAuthReview.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(MultiPartyAuthReview);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1007,6 +1060,9 @@ namespace Google.Ads.GoogleAds.V21.Services {
       int size = 0;
       if (ResourceName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ResourceName);
+      }
+      if (MultiPartyAuthReview.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(MultiPartyAuthReview);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1023,6 +1079,9 @@ namespace Google.Ads.GoogleAds.V21.Services {
       if (other.ResourceName.Length != 0) {
         ResourceName = other.ResourceName;
       }
+      if (other.MultiPartyAuthReview.Length != 0) {
+        MultiPartyAuthReview = other.MultiPartyAuthReview;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1034,12 +1093,20 @@ namespace Google.Ads.GoogleAds.V21.Services {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
             ResourceName = input.ReadString();
+            break;
+          }
+          case 18: {
+            MultiPartyAuthReview = input.ReadString();
             break;
           }
         }
@@ -1053,12 +1120,20 @@ namespace Google.Ads.GoogleAds.V21.Services {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
             ResourceName = input.ReadString();
+            break;
+          }
+          case 18: {
+            MultiPartyAuthReview = input.ReadString();
             break;
           }
         }

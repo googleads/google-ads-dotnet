@@ -112,10 +112,25 @@ namespace Google.Ads.GoogleAds.Examples.V24
             {
                 var response = service.MutateCustomerUserAccessInvitation(invitationRequest);
 
-                Console.WriteLine("Customer user access invitation was sent for customerId = " +
-                    "{0} to email address = {1} and access role = {2}. The invitation resource " +
-                    "name is {3}.", customerId, emailAddress, accessRole,
-                    response.Result.ResourceName);
+                if (response.Result.MultiPartyAuthReview == null)
+                {
+                    // A multi-party auth review was not triggered.
+                    Console.WriteLine("Customer user access invitation was sent for " +
+                        $"customerId = {customerId} to email address = {emailAddress} and " +
+                        $"access role = {accessRole}. The invitation resource name is " +
+                        $"{response.Result.ResourceName}.");
+                }
+                else 
+                {
+                    // A multi-party auth review was triggered. See
+                    // FetchAndApprovePendingMultiPartyAuthReviews.cs for an example on how to fetch
+                    // and approve an MPA auth review.
+                    Console.WriteLine($"A multi-party auth review was triggered. The MPA review " +
+                        $"resource name is {response.Result.MultiPartyAuthReview}. Ask a second " +
+                        $"administrator to approve this request to send user access invitation. " +
+                        $"See FetchAndApprovePendingMultiPartyAuthReviews.cs for an example on " +
+                        $"how to approve an MPA auth review using the API.");
+                }
             }
             catch (GoogleAdsException e)
             {

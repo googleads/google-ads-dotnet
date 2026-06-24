@@ -43,5 +43,15 @@ namespace Google.Ads.GoogleAds.V24.Services
             get => string.IsNullOrEmpty(ResourceName) ? null : gagvr::CustomerUserAccessInvitationName.Parse(ResourceName, allowUnparsed: true);
             set => ResourceName = value?.ToString() ?? "";
         }
+
+        /// <summary>
+        /// <see cref="gagvr::MultiPartyAuthReviewName"/>-typed view over the <see cref="MultiPartyAuthReview"/>
+        /// resource name property.
+        /// </summary>
+        internal gagvr::MultiPartyAuthReviewName MultiPartyAuthReviewAsMultiPartyAuthReviewName
+        {
+            get => string.IsNullOrEmpty(MultiPartyAuthReview) ? null : gagvr::MultiPartyAuthReviewName.Parse(MultiPartyAuthReview, allowUnparsed: true);
+            set => MultiPartyAuthReview = value?.ToString() ?? "";
+        }
     }
 }

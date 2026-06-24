@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.V24.Resources {
             "X3VzZXJfYWNjZXNzLnByb3RvEiJnb29nbGUuYWRzLmdvb2dsZWFkcy52MjQu",
             "cmVzb3VyY2VzGjBnb29nbGUvYWRzL2dvb2dsZWFkcy92MjQvZW51bXMvYWNj",
             "ZXNzX3JvbGUucHJvdG8aH2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJv",
-            "dG8aGWdvb2dsZS9hcGkvcmVzb3VyY2UucHJvdG8isgQKEkN1c3RvbWVyVXNl",
+            "dG8aGWdvb2dsZS9hcGkvcmVzb3VyY2UucHJvdG8iuwUKEkN1c3RvbWVyVXNl",
             "ckFjY2VzcxJKCg1yZXNvdXJjZV9uYW1lGAEgASgJQjPgQQX6QS0KK2dvb2ds",
             "ZWFkcy5nb29nbGVhcGlzLmNvbS9DdXN0b21lclVzZXJBY2Nlc3MSFAoHdXNl",
             "cl9pZBgCIAEoA0ID4EEDEh8KDWVtYWlsX2FkZHJlc3MYAyABKAlCA+BBA0gA",
@@ -36,22 +36,25 @@ namespace Google.Ads.GoogleAds.V24.Resources {
             "ZHMudjI0LmVudW1zLkFjY2Vzc1JvbGVFbnVtLkFjY2Vzc1JvbGUSKwoZYWNj",
             "ZXNzX2NyZWF0aW9uX2RhdGVfdGltZRgGIAEoCUID4EEDSAGIAQESLAoaaW52",
             "aXRlcl91c2VyX2VtYWlsX2FkZHJlc3MYByABKAlCA+BBA0gCiAEBEiEKD3Bh",
-            "c3NrZXlfZW5hYmxlZBgIIAEoCEID4EEDSAOIAQE6aOpBZQorZ29vZ2xlYWRz",
-            "Lmdvb2dsZWFwaXMuY29tL0N1c3RvbWVyVXNlckFjY2VzcxI2Y3VzdG9tZXJz",
-            "L3tjdXN0b21lcl9pZH0vY3VzdG9tZXJVc2VyQWNjZXNzZXMve3VzZXJfaWR9",
-            "QhAKDl9lbWFpbF9hZGRyZXNzQhwKGl9hY2Nlc3NfY3JlYXRpb25fZGF0ZV90",
-            "aW1lQh0KG19pbnZpdGVyX3VzZXJfZW1haWxfYWRkcmVzc0ISChBfcGFzc2tl",
-            "eV9lbmFibGVkQokCCiZjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LnJl",
-            "c291cmNlc0IXQ3VzdG9tZXJVc2VyQWNjZXNzUHJvdG9QAVpLZ29vZ2xlLmdv",
-            "bGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Yy",
-            "NC9yZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FBqgIiR29vZ2xlLkFkcy5Hb29n",
-            "bGVBZHMuVjI0LlJlc291cmNlc8oCIkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYy",
-            "NFxSZXNvdXJjZXPqAiZHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjQ6OlJl",
-            "c291cmNlc2IGcHJvdG8z"));
+            "c3NrZXlfZW5hYmxlZBgIIAEoCEID4EEDSAOIAQESYwofcGVuZGluZ19tdWx0",
+            "aV9wYXJ0eV9hdXRoX3JldmlldxgJIAEoCUI14EED+kEvCi1nb29nbGVhZHMu",
+            "Z29vZ2xlYXBpcy5jb20vTXVsdGlQYXJ0eUF1dGhSZXZpZXdIBIgBATpo6kFl",
+            "Citnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vQ3VzdG9tZXJVc2VyQWNjZXNz",
+            "EjZjdXN0b21lcnMve2N1c3RvbWVyX2lkfS9jdXN0b21lclVzZXJBY2Nlc3Nl",
+            "cy97dXNlcl9pZH1CEAoOX2VtYWlsX2FkZHJlc3NCHAoaX2FjY2Vzc19jcmVh",
+            "dGlvbl9kYXRlX3RpbWVCHQobX2ludml0ZXJfdXNlcl9lbWFpbF9hZGRyZXNz",
+            "QhIKEF9wYXNza2V5X2VuYWJsZWRCIgogX3BlbmRpbmdfbXVsdGlfcGFydHlf",
+            "YXV0aF9yZXZpZXdCiQIKJmNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQu",
+            "cmVzb3VyY2VzQhdDdXN0b21lclVzZXJBY2Nlc3NQcm90b1ABWktnb29nbGUu",
+            "Z29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMv",
+            "djI0L3Jlc291cmNlcztyZXNvdXJjZXOiAgNHQUGqAiJHb29nbGUuQWRzLkdv",
+            "b2dsZUFkcy5WMjQuUmVzb3VyY2VzygIiR29vZ2xlXEFkc1xHb29nbGVBZHNc",
+            "VjI0XFJlc291cmNlc+oCJkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyNDo6",
+            "UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V24.Enums.AccessRoleReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Resources.CustomerUserAccess), global::Google.Ads.GoogleAds.V24.Resources.CustomerUserAccess.Parser, new[]{ "ResourceName", "UserId", "EmailAddress", "AccessRole", "AccessCreationDateTime", "InviterUserEmailAddress", "PasskeyEnabled" }, new[]{ "EmailAddress", "AccessCreationDateTime", "InviterUserEmailAddress", "PasskeyEnabled" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V24.Resources.CustomerUserAccess), global::Google.Ads.GoogleAds.V24.Resources.CustomerUserAccess.Parser, new[]{ "ResourceName", "UserId", "EmailAddress", "AccessRole", "AccessCreationDateTime", "InviterUserEmailAddress", "PasskeyEnabled", "PendingMultiPartyAuthReview" }, new[]{ "EmailAddress", "AccessCreationDateTime", "InviterUserEmailAddress", "PasskeyEnabled", "PendingMultiPartyAuthReview" }, null, null, null)
           }));
     }
     #endregion
@@ -105,6 +108,7 @@ namespace Google.Ads.GoogleAds.V24.Resources {
       accessCreationDateTime_ = other.accessCreationDateTime_;
       inviterUserEmailAddress_ = other.inviterUserEmailAddress_;
       passkeyEnabled_ = other.passkeyEnabled_;
+      pendingMultiPartyAuthReview_ = other.pendingMultiPartyAuthReview_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -285,6 +289,36 @@ namespace Google.Ads.GoogleAds.V24.Resources {
       _hasBits0 &= ~1;
     }
 
+    /// <summary>Field number for the "pending_multi_party_auth_review" field.</summary>
+    public const int PendingMultiPartyAuthReviewFieldNumber = 9;
+    private readonly static string PendingMultiPartyAuthReviewDefaultValue = "";
+
+    private string pendingMultiPartyAuthReview_;
+    /// <summary>
+    /// Output only. The resource name of the pending Multi-Party Authorization
+    /// review. Read only field
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string PendingMultiPartyAuthReview {
+      get { return pendingMultiPartyAuthReview_ ?? PendingMultiPartyAuthReviewDefaultValue; }
+      set {
+        pendingMultiPartyAuthReview_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "pending_multi_party_auth_review" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasPendingMultiPartyAuthReview {
+      get { return pendingMultiPartyAuthReview_ != null; }
+    }
+    /// <summary>Clears the value of the "pending_multi_party_auth_review" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearPendingMultiPartyAuthReview() {
+      pendingMultiPartyAuthReview_ = null;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -307,6 +341,7 @@ namespace Google.Ads.GoogleAds.V24.Resources {
       if (AccessCreationDateTime != other.AccessCreationDateTime) return false;
       if (InviterUserEmailAddress != other.InviterUserEmailAddress) return false;
       if (PasskeyEnabled != other.PasskeyEnabled) return false;
+      if (PendingMultiPartyAuthReview != other.PendingMultiPartyAuthReview) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -321,6 +356,7 @@ namespace Google.Ads.GoogleAds.V24.Resources {
       if (HasAccessCreationDateTime) hash ^= AccessCreationDateTime.GetHashCode();
       if (HasInviterUserEmailAddress) hash ^= InviterUserEmailAddress.GetHashCode();
       if (HasPasskeyEnabled) hash ^= PasskeyEnabled.GetHashCode();
+      if (HasPendingMultiPartyAuthReview) hash ^= PendingMultiPartyAuthReview.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -367,6 +403,10 @@ namespace Google.Ads.GoogleAds.V24.Resources {
         output.WriteRawTag(64);
         output.WriteBool(PasskeyEnabled);
       }
+      if (HasPendingMultiPartyAuthReview) {
+        output.WriteRawTag(74);
+        output.WriteString(PendingMultiPartyAuthReview);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -405,6 +445,10 @@ namespace Google.Ads.GoogleAds.V24.Resources {
         output.WriteRawTag(64);
         output.WriteBool(PasskeyEnabled);
       }
+      if (HasPendingMultiPartyAuthReview) {
+        output.WriteRawTag(74);
+        output.WriteString(PendingMultiPartyAuthReview);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -435,6 +479,9 @@ namespace Google.Ads.GoogleAds.V24.Resources {
       }
       if (HasPasskeyEnabled) {
         size += 1 + 1;
+      }
+      if (HasPendingMultiPartyAuthReview) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PendingMultiPartyAuthReview);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -468,6 +515,9 @@ namespace Google.Ads.GoogleAds.V24.Resources {
       }
       if (other.HasPasskeyEnabled) {
         PasskeyEnabled = other.PasskeyEnabled;
+      }
+      if (other.HasPendingMultiPartyAuthReview) {
+        PendingMultiPartyAuthReview = other.PendingMultiPartyAuthReview;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -516,6 +566,10 @@ namespace Google.Ads.GoogleAds.V24.Resources {
             PasskeyEnabled = input.ReadBool();
             break;
           }
+          case 74: {
+            PendingMultiPartyAuthReview = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -561,6 +615,10 @@ namespace Google.Ads.GoogleAds.V24.Resources {
           }
           case 64: {
             PasskeyEnabled = input.ReadBool();
+            break;
+          }
+          case 74: {
+            PendingMultiPartyAuthReview = input.ReadString();
             break;
           }
         }

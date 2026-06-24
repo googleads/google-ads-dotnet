@@ -57,7 +57,14 @@ namespace Google.Ads.GoogleAds.V24.Resources {
   }
   #region Messages
   /// <summary>
-  /// A group placement view.
+  /// A view showing performance data for where your ads actually served on the
+  /// Display Network and YouTube, including both targeted (managed) and automatic
+  /// placements.
+  ///
+  /// Data for low-traffic placements may be aggregated. The scope
+  /// of placements shown is influenced by the ad group's `TargetingSetting` for
+  /// the `PLACEMENT` dimension. This view corresponds to the "Where ads showed"
+  /// section in the Google Ads UI.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GroupPlacementView : pb::IMessage<GroupPlacementView>

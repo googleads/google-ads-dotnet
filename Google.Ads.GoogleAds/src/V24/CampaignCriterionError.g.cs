@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V24.Errors {
           string.Concat(
             "Cj5nb29nbGUvYWRzL2dvb2dsZWFkcy92MjQvZXJyb3JzL2NhbXBhaWduX2Ny",
             "aXRlcmlvbl9lcnJvci5wcm90bxIfZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0",
-            "LmVycm9ycyKkCwoaQ2FtcGFpZ25Dcml0ZXJpb25FcnJvckVudW0ihQsKFkNh",
+            "LmVycm9ycyLnCwoaQ2FtcGFpZ25Dcml0ZXJpb25FcnJvckVudW0iyAsKFkNh",
             "bXBhaWduQ3JpdGVyaW9uRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktO",
             "T1dOEAESGgoWQ09OQ1JFVEVfVFlQRV9SRVFVSVJFRBACEhkKFUlOVkFMSURf",
             "UExBQ0VNRU5UX1VSTBADEiAKHENBTk5PVF9FWENMVURFX0NSSVRFUklBX1RZ",
@@ -58,13 +58,14 @@ namespace Google.Ads.GoogleAds.V24.Errors {
             "QVRUQUNIX0JSQU5EX0xJU1RfVE9fTk9OX1FVQUxJRklFRF9TRUFSQ0hfQ0FN",
             "UEFJR04QGhJCCj5DQU5OT1RfUkVNT1ZFX0FMTF9MT0NBVElPTlNfRFVFX1RP",
             "X1RPT19NQU5ZX0NPVU5UUllfRVhDTFVTSU9OUxAbEhsKF0lOVkFMSURfVklE",
-            "RU9fTElORVVQX0lEEBxC+wEKI2NvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MjQuZXJyb3JzQhtDYW1wYWlnbkNyaXRlcmlvbkVycm9yUHJvdG9QAVpFZ29v",
-            "Z2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xl",
-            "YWRzL3YyNC9lcnJvcnM7ZXJyb3JzogIDR0FBqgIfR29vZ2xlLkFkcy5Hb29n",
-            "bGVBZHMuVjI0LkVycm9yc8oCH0dvb2dsZVxBZHNcR29vZ2xlQWRzXFYyNFxF",
-            "cnJvcnPqAiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjQ6OkVycm9yc2IG",
-            "cHJvdG8z"));
+            "RU9fTElORVVQX0lEEBwSQQo9Q0FOTk9UX1JFTU9WRV9BTExfTE9DQVRJT05T",
+            "X0ZST01fTE9DQUxfU0VSVklDRVNfUE1BWF9DQU1QQUlHThAdQvsBCiNjb20u",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmVycm9yc0IbQ2FtcGFpZ25Dcml0",
+            "ZXJpb25FcnJvclByb3RvUAFaRWdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3Rv",
+            "L2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MjQvZXJyb3JzO2Vycm9yc6IC",
+            "A0dBQaoCH0dvb2dsZS5BZHMuR29vZ2xlQWRzLlYyNC5FcnJvcnPKAh9Hb29n",
+            "bGVcQWRzXEdvb2dsZUFkc1xWMjRcRXJyb3Jz6gIjR29vZ2xlOjpBZHM6Okdv",
+            "b2dsZUFkczo6VjI0OjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -378,6 +379,11 @@ namespace Google.Ads.GoogleAds.V24.Errors {
         /// Video lineup ID does not exist.
         /// </summary>
         [pbr::OriginalName("INVALID_VIDEO_LINEUP_ID")] InvalidVideoLineupId = 28,
+        /// <summary>
+        /// For Local Services PMax campaigns, at least one positive location
+        /// criterion must remain.
+        /// </summary>
+        [pbr::OriginalName("CANNOT_REMOVE_ALL_LOCATIONS_FROM_LOCAL_SERVICES_PMAX_CAMPAIGN")] CannotRemoveAllLocationsFromLocalServicesPmaxCampaign = 29,
       }
 
     }

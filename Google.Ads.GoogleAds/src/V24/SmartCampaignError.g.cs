@@ -26,19 +26,20 @@ namespace Google.Ads.GoogleAds.V24.Errors {
           string.Concat(
             "Cjpnb29nbGUvYWRzL2dvb2dsZWFkcy92MjQvZXJyb3JzL3NtYXJ0X2NhbXBh",
             "aWduX2Vycm9yLnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuZXJy",
-            "b3JzIr4CChZTbWFydENhbXBhaWduRXJyb3JFbnVtIqMCChJTbWFydENhbXBh",
+            "b3JzItMCChZTbWFydENhbXBhaWduRXJyb3JFbnVtIrgCChJTbWFydENhbXBh",
             "aWduRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESIAocSU5W",
             "QUxJRF9CVVNJTkVTU19MT0NBVElPTl9JRBACEhQKEElOVkFMSURfQ0FNUEFJ",
             "R04QAxIxCi1CVVNJTkVTU19OQU1FX09SX0JVU0lORVNTX0xPQ0FUSU9OX0lE",
             "X01JU1NJTkcQBBIlCiFSRVFVSVJFRF9TVUdHRVNUSU9OX0ZJRUxEX01JU1NJ",
             "TkcQBRIYChRHRU9fVEFSR0VUU19SRVFVSVJFRBAGEiYKIkNBTk5PVF9ERVRF",
             "Uk1JTkVfU1VHR0VTVElPTl9MT0NBTEUQBxIbChdGSU5BTF9VUkxfTk9UX0NS",
-            "QVdMQUJMRRAIQvcBCiNjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmVy",
-            "cm9yc0IXU21hcnRDYW1wYWlnbkVycm9yUHJvdG9QAVpFZ29vZ2xlLmdvbGFu",
-            "Zy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YyNC9l",
-            "cnJvcnM7ZXJyb3JzogIDR0FBqgIfR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjI0",
-            "LkVycm9yc8oCH0dvb2dsZVxBZHNcR29vZ2xlQWRzXFYyNFxFcnJvcnPqAiNH",
-            "b29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjQ6OkVycm9yc2IGcHJvdG8z"));
+            "QVdMQUJMRRAIEhMKD0NSRUFUSU9OX0ZBSUxFRBAJQvcBCiNjb20uZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjI0LmVycm9yc0IXU21hcnRDYW1wYWlnbkVycm9y",
+            "UHJvdG9QAVpFZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBp",
+            "cy9hZHMvZ29vZ2xlYWRzL3YyNC9lcnJvcnM7ZXJyb3JzogIDR0FBqgIfR29v",
+            "Z2xlLkFkcy5Hb29nbGVBZHMuVjI0LkVycm9yc8oCH0dvb2dsZVxBZHNcR29v",
+            "Z2xlQWRzXFYyNFxFcnJvcnPqAiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpW",
+            "MjQ6OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -257,6 +258,10 @@ namespace Google.Ads.GoogleAds.V24.Errors {
         /// The final URL could not be crawled.
         /// </summary>
         [pbr::OriginalName("FINAL_URL_NOT_CRAWLABLE")] FinalUrlNotCrawlable = 8,
+        /// <summary>
+        /// New Smart campaigns cannot be created.
+        /// </summary>
+        [pbr::OriginalName("CREATION_FAILED")] CreationFailed = 9,
       }
 
     }

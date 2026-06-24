@@ -26,22 +26,23 @@ namespace Google.Ads.GoogleAds.V24.Enums {
           string.Concat(
             "Cjpnb29nbGUvYWRzL2dvb2dsZWFkcy92MjQvZW51bXMvYXNzZXRfYXV0b21h",
             "dGlvbl90eXBlLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuZW51",
-            "bXMivAMKF0Fzc2V0QXV0b21hdGlvblR5cGVFbnVtIqADChNBc3NldEF1dG9t",
+            "bXMi3AMKF0Fzc2V0QXV0b21hdGlvblR5cGVFbnVtIsADChNBc3NldEF1dG9t",
             "YXRpb25UeXBlEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEhkKFVRF",
             "WFRfQVNTRVRfQVVUT01BVElPThACEiQKIEdFTkVSQVRFX1ZFUlRJQ0FMX1lP",
             "VVRVQkVfVklERU9TEAMSIwofR0VORVJBVEVfU0hPUlRFUl9ZT1VUVUJFX1ZJ",
-            "REVPUxAEEiEKHUdFTkVSQVRFX0xBTkRJTkdfUEFHRV9QUkVWSUVXEAUSJAog",
-            "R0VORVJBVEVfRU5IQU5DRURfWU9VVFVCRV9WSURFT1MQBhIeChpHRU5FUkFU",
-            "RV9JTUFHRV9FTkhBTkNFTUVOVBAHEh0KGUdFTkVSQVRFX0lNQUdFX0VYVFJB",
-            "Q1RJT04QCRInCiNHRU5FUkFURV9ERVNJR05fVkVSU0lPTlNfRk9SX0lNQUdF",
-            "UxAKEi0KKUZJTkFMX1VSTF9FWFBBTlNJT05fVEVYVF9BU1NFVF9BVVRPTUFU",
-            "SU9OEAsSJQohR0VORVJBVEVfVklERU9TX0ZST01fT1RIRVJfQVNTRVRTEAxC",
-            "8gEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuZW51bXNCGEFzc2V0",
-            "QXV0b21hdGlvblR5cGVQcm90b1ABWkNnb29nbGUuZ29sYW5nLm9yZy9nZW5w",
-            "cm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjI0L2VudW1zO2VudW1z",
-            "ogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjI0LkVudW1zygIeR29v",
-            "Z2xlXEFkc1xHb29nbGVBZHNcVjI0XEVudW1z6gIiR29vZ2xlOjpBZHM6Okdv",
-            "b2dsZUFkczo6VjI0OjpFbnVtc2IGcHJvdG8z"));
+            "REVPUxAEEiEKHUdFTkVSQVRFX0xBTkRJTkdfUEFHRV9QUkVWSUVXEAUSHgoa",
+            "R0VORVJBVEVfTEFORElOR19QQUdFX1RFWFQQDhIkCiBHRU5FUkFURV9FTkhB",
+            "TkNFRF9ZT1VUVUJFX1ZJREVPUxAGEh4KGkdFTkVSQVRFX0lNQUdFX0VOSEFO",
+            "Q0VNRU5UEAcSHQoZR0VORVJBVEVfSU1BR0VfRVhUUkFDVElPThAJEicKI0dF",
+            "TkVSQVRFX0RFU0lHTl9WRVJTSU9OU19GT1JfSU1BR0VTEAoSLQopRklOQUxf",
+            "VVJMX0VYUEFOU0lPTl9URVhUX0FTU0VUX0FVVE9NQVRJT04QCxIlCiFHRU5F",
+            "UkFURV9WSURFT1NfRlJPTV9PVEhFUl9BU1NFVFMQDELyAQoiY29tLmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYyNC5lbnVtc0IYQXNzZXRBdXRvbWF0aW9uVHlw",
+            "ZVByb3RvUAFaQ2dvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
+            "aXMvYWRzL2dvb2dsZWFkcy92MjQvZW51bXM7ZW51bXOiAgNHQUGqAh5Hb29n",
+            "bGUuQWRzLkdvb2dsZUFkcy5WMjQuRW51bXPKAh5Hb29nbGVcQWRzXEdvb2ds",
+            "ZUFkc1xWMjRcRW51bXPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjQ6",
+            "OkVudW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -232,9 +233,15 @@ namespace Google.Ads.GoogleAds.V24.Enums {
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
-        /// Text asset automation includes headlines and descriptions.
-        /// By default, advertisers are opted-in for Performance Max and
+        /// Text asset automation (text customization) includes headlines and
+        /// descriptions, allowing Google to create customized text assets using your
+        /// existing ads, landing page copy, and generative AI across your campaign's
+        /// ads. By default, advertisers are opted-in for Performance Max and
         /// opted-out for Search.
+        ///
+        /// Contrast this with `FINAL_URL_EXPANSION_TEXT_ASSET_AUTOMATION`, which
+        /// dynamically generates text assets to match the content of dynamically
+        /// selected landing pages when final URL expansion is active.
         /// </summary>
         [pbr::OriginalName("TEXT_ASSET_AUTOMATION")] TextAssetAutomation = 2,
         /// <summary>
@@ -258,6 +265,11 @@ namespace Google.Ads.GoogleAds.V24.Enums {
         /// these images on your behalf for advertising or other commercial purposes.
         /// </summary>
         [pbr::OriginalName("GENERATE_LANDING_PAGE_PREVIEW")] GenerateLandingPagePreview = 5,
+        /// <summary>
+        /// Generates text information from the landing page to be shown in the
+        /// engagement panel. Opted in by default for DemandGenVideoResponsiveAd.
+        /// </summary>
+        [pbr::OriginalName("GENERATE_LANDING_PAGE_TEXT")] GenerateLandingPageText = 14,
         /// <summary>
         /// Generates video enhancements (vertical and shorter videos) for PMax
         /// campaigns. Opted in by default.
@@ -285,6 +297,14 @@ namespace Google.Ads.GoogleAds.V24.Enums {
         /// and generating text assets from the content of those landing pages. This
         /// setting is turned OFF by default for Search campaigns, but it is turned
         /// ON by default for Performance Max campaigns.
+        ///
+        /// Enabling final URL expansion also enables text asset automation. There is
+        /// no way to opt out of text asset automation and still use final URL
+        /// expansion.
+        ///
+        /// Contrast this with standard `TEXT_ASSET_AUTOMATION` (text customization),
+        /// which customizes copy across all ads in the campaign even when final URL
+        /// expansion does not occur.
         /// </summary>
         [pbr::OriginalName("FINAL_URL_EXPANSION_TEXT_ASSET_AUTOMATION")] FinalUrlExpansionTextAssetAutomation = 11,
         /// <summary>

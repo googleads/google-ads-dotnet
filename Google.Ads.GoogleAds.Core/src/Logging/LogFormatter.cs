@@ -46,6 +46,8 @@ namespace Google.Ads.GoogleAds.Logging
                 MetadataKeyNames.CustomerUserAccessInvitationEmailAddress,
                 MetadataKeyNames.LocalServicesLeadContactDetails,
                 MetadataKeyNames.LocalServicesLeadConversationMessageDetailText,
+                MetadataKeyNames.MultiPartyAuthReviewEmailAddress,
+                MetadataKeyNames.MultiPartyAuthReviewCustomerUserInvitationEmailAddress,
             };
 
         private static readonly Regex GAQL_REDACTION_MATCHER =
@@ -168,6 +170,8 @@ namespace Google.Ads.GoogleAds.Logging
                 // returned to the user.
                 // Note: We use the dynamic keyword in this code. This saves us a lot of reflection
                 // code by having the compiler generate it for us.
+                // Note: We may have more than one mask match, but the fields get masked if at least
+                // one mask matches.
                 case "SearchGoogleAdsResponse":
                 case "SearchGoogleAdsStreamResponse":
                     {
@@ -187,30 +191,6 @@ namespace Google.Ads.GoogleAds.Logging
                         return body.ToString();
                     }
 
-                // Handle masking for CustomerUserAccessService::GetCustomerUserAccess.
-                case "CustomerUserAccess":
-                    {
-                        object clonedMessage = CloneMessage(body);
-                        MaskCustomerUserAccess(clonedMessage);
-                        return clonedMessage.ToString();
-                    }
-
-                // Handle masking for FeedService::GetFeed.
-                case "Feed":
-                    {
-                        object clonedMessage = CloneMessage(body);
-                        MaskFeed(clonedMessage);
-                        return clonedMessage.ToString();
-                    }
-
-                // Handle masking for FeedService::MutateFeeds.
-                case "MutateFeedsRequest":
-                    {
-                        object clonedMessage = CloneMessage(body);
-                        MaskMutateFeedsRequest(clonedMessage);
-                        return clonedMessage.ToString();
-                    }
-
                 // Handle masking for CustomerUserAccessService::MutateCustomerUserAccess.
                 case "MutateCustomerUserAccessRequest":
                     {
@@ -219,7 +199,7 @@ namespace Google.Ads.GoogleAds.Logging
                         return clonedMessage.ToString();
                     }
 
-                // Handle masking for CustomerUserAccessService::MutateCustomerUserAccess.
+                // Handle masking for CustomerService::CreateCustomerClient.
                 case "CreateCustomerClientRequest":
                     {
                         object clonedMessage = CloneMessage(body);
@@ -246,35 +226,6 @@ namespace Google.Ads.GoogleAds.Logging
             if (match.Success)
             {
                 body.Query = MASK_PATTERN;
-            }
-        }
-
-        /// <summary>
-        /// Masks the email address fields within a <code>MutateFeedsRequest</code>
-        /// object when making an <code>FeedService::MutateFeeds</code> API call.
-        /// </summary>
-        /// <param name="body">The request body.</param>
-        private static void MaskMutateFeedsRequest(dynamic body)
-        {
-            try
-            {
-                if (body.Operations != null)
-                {
-                    foreach (var operation in body.Operations)
-                    {
-                        if (operation.Create != null)
-                        {
-                            MaskFeed(operation.Create);
-                        }
-                        if (operation.Update != null)
-                        {
-                            MaskFeed(operation.Update);
-                        }
-                    }
-                }
-            }
-            catch (RuntimeBinderException)
-            {
             }
         }
 
@@ -353,26 +304,8 @@ namespace Google.Ads.GoogleAds.Logging
                         MaskCustomerUserAccess(row.CustomerUserAccess);
                         MaskCustomerUserAccessInvitation(row.CustomerUserAccessInvitation);
                         MaskChangeEvent(row.ChangeEvent);
-                        MaskFeed(row.Feed);
+                        MaskMultiPartyAuthReview(row.MultiPartyAuthReview);
                     }
-                }
-            }
-            catch (RuntimeBinderException)
-            {
-            }
-        }
-
-        /// <summary>
-        /// Masks the user email field within a <code>Feed</code> object.
-        /// </summary>
-        /// <param name="body">The <code>Feed</code> object.</param>
-        private static void MaskFeed(dynamic body)
-        {
-            try
-            {
-                if (body != null && body.PlacesLocationFeedData != null)
-                {
-                    body.PlacesLocationFeedData.EmailAddress = MASK_PATTERN;
                 }
             }
             catch (RuntimeBinderException)
@@ -410,6 +343,32 @@ namespace Google.Ads.GoogleAds.Logging
                 {
                     body.InviterUserEmailAddress = MASK_PATTERN;
                     body.EmailAddress = MASK_PATTERN;
+                }
+            }
+            catch (RuntimeBinderException)
+            {
+            }
+        }
+
+        /// <summary>
+        /// Masks the user access fields within a <code>MaskMultiPartyAuthReview</code> object.
+        /// </summary>
+        /// <param name="body">The <code>MaskMultiPartyAuthReview</code> object.</param>
+        private static void MaskMultiPartyAuthReview(dynamic body)
+        {
+            try
+            {
+                if (body != null)
+                {
+                    body.RequestUserEmail = MASK_PATTERN;
+
+                    if (body.CustomerUserAccessInvitationReview != null &&
+                        body.CustomerUserAccessInvitationReview.
+                            NewCustomerUserAccessInvitation != null)
+                    {
+                        body.CustomerUserAccessInvitationReview.
+                            NewCustomerUserAccessInvitation.EmailAddress = MASK_PATTERN;
+                    }
                 }
             }
             catch (RuntimeBinderException)

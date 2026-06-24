@@ -26,16 +26,17 @@ namespace Google.Ads.GoogleAds.V24.Errors {
           string.Concat(
             "Cj5nb29nbGUvYWRzL2dvb2dsZWFkcy92MjQvZXJyb3JzL2Fzc2V0X2dyb3Vw",
             "X3NpZ25hbF9lcnJvci5wcm90bxIfZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0",
-            "LmVycm9ycyKyAQoZQXNzZXRHcm91cFNpZ25hbEVycm9yRW51bSKUAQoVQXNz",
+            "LmVycm9ycyLRAQoZQXNzZXRHcm91cFNpZ25hbEVycm9yRW51bSKzAQoVQXNz",
             "ZXRHcm91cFNpZ25hbEVycm9yEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9X",
             "ThABEhIKDlRPT19NQU5ZX1dPUkRTEAISIQodU0VBUkNIX1RIRU1FX1BPTElD",
             "WV9WSU9MQVRJT04QAxImCiJBVURJRU5DRV9XSVRIX1dST05HX0FTU0VUX0dS",
-            "T1VQX0lEEARC+gEKI2NvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjQuZXJy",
-            "b3JzQhpBc3NldEdyb3VwU2lnbmFsRXJyb3JQcm90b1ABWkVnb29nbGUuZ29s",
-            "YW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjI0",
-            "L2Vycm9ycztlcnJvcnOiAgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5W",
-            "MjQuRXJyb3JzygIfR29vZ2xlXEFkc1xHb29nbGVBZHNcVjI0XEVycm9yc+oC",
-            "I0dvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyNDo6RXJyb3JzYgZwcm90bzM="));
+            "T1VQX0lEEAQSHQoZQ0FOTk9UX1JFTU9WRV9BTExfU0lHTkFMUxAFQvoBCiNj",
+            "b20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmVycm9yc0IaQXNzZXRHcm91",
+            "cFNpZ25hbEVycm9yUHJvdG9QAVpFZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJv",
+            "dG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YyNC9lcnJvcnM7ZXJyb3Jz",
+            "ogIDR0FBqgIfR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjI0LkVycm9yc8oCH0dv",
+            "b2dsZVxBZHNcR29vZ2xlQWRzXFYyNFxFcnJvcnPqAiNHb29nbGU6OkFkczo6",
+            "R29vZ2xlQWRzOjpWMjQ6OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -242,6 +243,11 @@ namespace Google.Ads.GoogleAds.V24.Errors {
         /// signal.
         /// </summary>
         [pbr::OriginalName("AUDIENCE_WITH_WRONG_ASSET_GROUP_ID")] AudienceWithWrongAssetGroupId = 4,
+        /// <summary>
+        /// The asset group signal cannot be removed because it is the last one in
+        /// the Local Services Ads PMax asset group.
+        /// </summary>
+        [pbr::OriginalName("CANNOT_REMOVE_ALL_SIGNALS")] CannotRemoveAllSignals = 5,
       }
 
     }

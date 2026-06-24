@@ -316,13 +316,14 @@ namespace Google.Ads.GoogleAds.V23.Services
         /// Required. The conversions that are being uploaded.
         /// </param>
         /// <param name="partialFailure">
-        /// Required. If true, successful operations will be carried out and invalid
-        /// operations will return errors. If false, all operations will be carried
+        /// Required. If `true`, successful operations will be carried out and invalid
+        /// operations will return errors. If `false`, all operations will be carried
         /// out in one transaction if and only if they are all valid.
-        /// This should always be set to true.
+        /// This should always be set to `true`.
+        /// 
         /// See
-        /// https://developers.google.com/google-ads/api/docs/best-practices/partial-failures
-        /// for more information about partial failure.
+        /// [Best practices for partial
+        /// failures](/google-ads/api/docs/best-practices/partial-failures).
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>The RPC response.</returns>
@@ -357,13 +358,14 @@ namespace Google.Ads.GoogleAds.V23.Services
         /// Required. The conversions that are being uploaded.
         /// </param>
         /// <param name="partialFailure">
-        /// Required. If true, successful operations will be carried out and invalid
-        /// operations will return errors. If false, all operations will be carried
+        /// Required. If `true`, successful operations will be carried out and invalid
+        /// operations will return errors. If `false`, all operations will be carried
         /// out in one transaction if and only if they are all valid.
-        /// This should always be set to true.
+        /// This should always be set to `true`.
+        /// 
         /// See
-        /// https://developers.google.com/google-ads/api/docs/best-practices/partial-failures
-        /// for more information about partial failure.
+        /// [Best practices for partial
+        /// failures](/google-ads/api/docs/best-practices/partial-failures).
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A Task containing the RPC response.</returns>
@@ -398,13 +400,14 @@ namespace Google.Ads.GoogleAds.V23.Services
         /// Required. The conversions that are being uploaded.
         /// </param>
         /// <param name="partialFailure">
-        /// Required. If true, successful operations will be carried out and invalid
-        /// operations will return errors. If false, all operations will be carried
+        /// Required. If `true`, successful operations will be carried out and invalid
+        /// operations will return errors. If `false`, all operations will be carried
         /// out in one transaction if and only if they are all valid.
-        /// This should always be set to true.
+        /// This should always be set to `true`.
+        /// 
         /// See
-        /// https://developers.google.com/google-ads/api/docs/best-practices/partial-failures
-        /// for more information about partial failure.
+        /// [Best practices for partial
+        /// failures](/google-ads/api/docs/best-practices/partial-failures).
         /// </param>
         /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
         /// <returns>A Task containing the RPC response.</returns>
@@ -484,13 +487,15 @@ namespace Google.Ads.GoogleAds.V23.Services
         /// Required. The conversions that are being uploaded.
         /// </param>
         /// <param name="partialFailure">
-        /// Required. If true, successful operations will be carried out and invalid
-        /// operations will return errors. If false, all operations will be carried
+        /// Required. If `true`, successful operations will be carried out and invalid
+        /// operations will return errors. If `false`, all operations will be carried
         /// out in one transaction if and only if they are all valid.
-        /// This should always be set to true.
+        /// 
+        /// This should always be set to `true`.
+        /// 
         /// See
-        /// https://developers.google.com/google-ads/api/docs/best-practices/partial-failures
-        /// for more information about partial failure.
+        /// [Best practices for partial
+        /// failures](/google-ads/api/docs/best-practices/partial-failures).
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>The RPC response.</returns>
@@ -524,13 +529,15 @@ namespace Google.Ads.GoogleAds.V23.Services
         /// Required. The conversions that are being uploaded.
         /// </param>
         /// <param name="partialFailure">
-        /// Required. If true, successful operations will be carried out and invalid
-        /// operations will return errors. If false, all operations will be carried
+        /// Required. If `true`, successful operations will be carried out and invalid
+        /// operations will return errors. If `false`, all operations will be carried
         /// out in one transaction if and only if they are all valid.
-        /// This should always be set to true.
+        /// 
+        /// This should always be set to `true`.
+        /// 
         /// See
-        /// https://developers.google.com/google-ads/api/docs/best-practices/partial-failures
-        /// for more information about partial failure.
+        /// [Best practices for partial
+        /// failures](/google-ads/api/docs/best-practices/partial-failures).
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A Task containing the RPC response.</returns>
@@ -564,13 +571,15 @@ namespace Google.Ads.GoogleAds.V23.Services
         /// Required. The conversions that are being uploaded.
         /// </param>
         /// <param name="partialFailure">
-        /// Required. If true, successful operations will be carried out and invalid
-        /// operations will return errors. If false, all operations will be carried
+        /// Required. If `true`, successful operations will be carried out and invalid
+        /// operations will return errors. If `false`, all operations will be carried
         /// out in one transaction if and only if they are all valid.
-        /// This should always be set to true.
+        /// 
+        /// This should always be set to `true`.
+        /// 
         /// See
-        /// https://developers.google.com/google-ads/api/docs/best-practices/partial-failures
-        /// for more information about partial failure.
+        /// [Best practices for partial
+        /// failures](/google-ads/api/docs/best-practices/partial-failures).
         /// </param>
         /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
         /// <returns>A Task containing the RPC response.</returns>

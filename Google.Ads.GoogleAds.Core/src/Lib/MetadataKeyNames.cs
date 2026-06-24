@@ -68,9 +68,20 @@ namespace Google.Ads.GoogleAds.Lib
             "customer_user_access_invitation.email_address";
 
         /// <summary>
-        /// The metadata key name for the email address.
+        /// The metadata key name for the customer user access email address.
         /// </summary>
         internal const string CustomerUserAccessEmailAddress = "customer_user_access.email_address";
+
+        /// <summary>
+        /// The metadata key name for MPA auth review email address.
+        /// </summary>
+        internal const string MultiPartyAuthReviewEmailAddress = "multi_party_auth_review.request_user_email";
+
+        /// <summary>
+        /// The metadata key name for the customer invitation email when MPA auth review is approved.
+        /// </summary>
+        internal const string MultiPartyAuthReviewCustomerUserInvitationEmailAddress = 
+            "multi_party_auth_review.customer_user_access_invitation_review.new_customer_user_access_invitation";
 
         /// <summary>
         /// The metadata key name for the ChangeEvent user email address.

@@ -60,11 +60,19 @@ namespace Google.Ads.GoogleAds.V21.Resources {
   /// <summary>
   /// A view with metrics aggregated by ad group and URL or YouTube video.
   ///
+  /// Provides granular performance data about specific URLs, YouTube videos,
+  /// and apps where your ads showed. This offers a more detailed breakdown
+  /// compared to the group_placement_view.
+  ///
   /// This view primarily surfaces placement data from the Google Display
   /// Network. While you can select segments like `segments.ad_network_type`,
   /// this view generally does not include placement data from other networks, such
   /// as the Search Partners network. To understand performance on Search
   /// Partners, consider other reports and segmentations.
+  ///
+  /// Data for low-traffic placements may be aggregated. This view corresponds to
+  /// drilling into details from the "Where ads showed" section in the Google Ads
+  /// UI.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class DetailPlacementView : pb::IMessage<DetailPlacementView>
@@ -449,7 +457,11 @@ namespace Google.Ads.GoogleAds.V21.Resources {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -488,7 +500,11 @@ namespace Google.Ads.GoogleAds.V21.Resources {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

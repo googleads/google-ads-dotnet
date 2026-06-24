@@ -49,10 +49,15 @@ namespace Google.Ads.GoogleAds.V22.Resources {
   }
   #region Messages
   /// <summary>
-  /// A gender view.
-  /// The gender_view resource reflects the effective serving state, rather than
-  /// what criteria were added. An ad group without gender criteria by default
-  /// shows to all genders, so all genders appear in gender_view with stats.
+  /// A gender view resource. Represents the view of a customer's performance
+  /// metrics aggregated by gender. All statistics are aggregated at the ad
+  /// group level.
+  ///
+  /// Note: While you can segment metrics by age range using `age_range_view` or by
+  /// gender using `gender_view`, the Google Ads API does not support segmenting
+  /// metrics by both age range and gender simultaneously in a single query.
+  /// Analyzing performance across both dimensions combined is not supported in
+  /// the Google Ads API.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class GenderView : pb::IMessage<GenderView>
@@ -216,7 +221,11 @@ namespace Google.Ads.GoogleAds.V22.Resources {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -235,7 +244,11 @@ namespace Google.Ads.GoogleAds.V22.Resources {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;

@@ -201,7 +201,11 @@ namespace Google.Ads.GoogleAds.V22.Enums {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -216,7 +220,11 @@ namespace Google.Ads.GoogleAds.V22.Enums {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -376,9 +384,10 @@ namespace Google.Ads.GoogleAds.V22.Enums {
         /// </summary>
         [pbr::OriginalName("LEAD_FORM_SUBMIT")] LeadFormSubmit = 29,
         /// <summary>
-        /// Deprecated: The Salesforce integration will be going away and
-        /// replaced with an improved way to import your conversions from Salesforce.
-        /// - see https://support.google.com/google-ads/answer/14728349
+        /// Deprecated: The Salesforce integration ended on May 31, 2025.
+        /// See
+        /// [Legacy Salesforce integration for conversions upgrade
+        /// FAQ](//support.google.com/google-ads/answer/14728349).
         /// </summary>
         [global::System.ObsoleteAttribute]
         [pbr::OriginalName("SALESFORCE")] Salesforce = 30,
@@ -417,20 +426,22 @@ namespace Google.Ads.GoogleAds.V22.Enums {
         /// </summary>
         [pbr::OriginalName("WEBPAGE_CODELESS")] WebpageCodeless = 37,
         /// <summary>
-        /// Conversions that come from linked Universal Analytics goals.
+        /// Conversions that come from linked Universal Analytics goals. Universal
+        /// Analytics is sunset, and has been replaced by Google Analytics.
         /// </summary>
         [pbr::OriginalName("UNIVERSAL_ANALYTICS_GOAL")] UniversalAnalyticsGoal = 38,
         /// <summary>
         /// Conversions that come from linked Universal Analytics transactions.
+        /// Universal Analytics is sunset, and has been replaced by Google Analytics.
         /// </summary>
         [pbr::OriginalName("UNIVERSAL_ANALYTICS_TRANSACTION")] UniversalAnalyticsTransaction = 39,
         /// <summary>
-        /// Conversions that come from linked Google Analytics 4 custom event
+        /// Conversions that come from linked Google Analytics custom event
         /// conversions.
         /// </summary>
         [pbr::OriginalName("GOOGLE_ANALYTICS_4_CUSTOM")] GoogleAnalytics4Custom = 40,
         /// <summary>
-        /// Conversions that come from linked Google Analytics 4 purchase
+        /// Conversions that come from linked Google Analytics purchase
         /// conversions.
         /// </summary>
         [pbr::OriginalName("GOOGLE_ANALYTICS_4_PURCHASE")] GoogleAnalytics4Purchase = 41,

@@ -190,7 +190,11 @@ namespace Google.Ads.GoogleAds.V22.Enums {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -205,7 +209,11 @@ namespace Google.Ads.GoogleAds.V22.Enums {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -238,7 +246,7 @@ namespace Google.Ads.GoogleAds.V22.Enums {
         /// </summary>
         [pbr::OriginalName("TEXT_AD")] TextAd = 2,
         /// <summary>
-        /// The ad is an expanded text ad.
+        /// The ad is an expanded text ad. Expanded text ads are deprecated.
         /// </summary>
         [pbr::OriginalName("EXPANDED_TEXT_AD")] ExpandedTextAd = 3,
         /// <summary>

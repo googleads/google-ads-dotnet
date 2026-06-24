@@ -616,14 +616,14 @@ namespace Google.Ads.GoogleAds.V24.Services
         /// dimensions are CATEGORY, KNOWLEDGE_GRAPH, DEVICE,
         /// GEO_TARGET_COUNTRY, SUB_COUNTRY_LOCATION, YOUTUBE_LINEUP,
         /// AFFINITY_USER_INTEREST, IN_MARKET_USER_INTEREST, LIFE_EVENT_USER_INTEREST,
-        /// PARENTAL_STATUS, INCOME_RANGE, AGE_RANGE, and GENDER.
+        /// PARENTAL_STATUS, INCOME_RANGE, AGE_RANGE, GENDER, and USER_LIST.
         /// </param>
         /// <param name="queryText">
         /// Required. A free text query.  If the requested dimensions include
         /// Attributes CATEGORY or KNOWLEDGE_GRAPH, then the attributes returned for
         /// those dimensions will match or be related to this string.  For other
         /// dimensions, this field is ignored and all available attributes are
-        /// returned.
+        /// returned. Example: "Millennials interested in the World Cup and soccer."
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>The RPC response.</returns>
@@ -659,14 +659,14 @@ namespace Google.Ads.GoogleAds.V24.Services
         /// dimensions are CATEGORY, KNOWLEDGE_GRAPH, DEVICE,
         /// GEO_TARGET_COUNTRY, SUB_COUNTRY_LOCATION, YOUTUBE_LINEUP,
         /// AFFINITY_USER_INTEREST, IN_MARKET_USER_INTEREST, LIFE_EVENT_USER_INTEREST,
-        /// PARENTAL_STATUS, INCOME_RANGE, AGE_RANGE, and GENDER.
+        /// PARENTAL_STATUS, INCOME_RANGE, AGE_RANGE, GENDER, and USER_LIST.
         /// </param>
         /// <param name="queryText">
         /// Required. A free text query.  If the requested dimensions include
         /// Attributes CATEGORY or KNOWLEDGE_GRAPH, then the attributes returned for
         /// those dimensions will match or be related to this string.  For other
         /// dimensions, this field is ignored and all available attributes are
-        /// returned.
+        /// returned. Example: "Millennials interested in the World Cup and soccer."
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A Task containing the RPC response.</returns>
@@ -702,14 +702,14 @@ namespace Google.Ads.GoogleAds.V24.Services
         /// dimensions are CATEGORY, KNOWLEDGE_GRAPH, DEVICE,
         /// GEO_TARGET_COUNTRY, SUB_COUNTRY_LOCATION, YOUTUBE_LINEUP,
         /// AFFINITY_USER_INTEREST, IN_MARKET_USER_INTEREST, LIFE_EVENT_USER_INTEREST,
-        /// PARENTAL_STATUS, INCOME_RANGE, AGE_RANGE, and GENDER.
+        /// PARENTAL_STATUS, INCOME_RANGE, AGE_RANGE, GENDER, and USER_LIST.
         /// </param>
         /// <param name="queryText">
         /// Required. A free text query.  If the requested dimensions include
         /// Attributes CATEGORY or KNOWLEDGE_GRAPH, then the attributes returned for
         /// those dimensions will match or be related to this string.  For other
         /// dimensions, this field is ignored and all available attributes are
-        /// returned.
+        /// returned. Example: "Millennials interested in the World Cup and soccer."
         /// </param>
         /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
         /// <returns>A Task containing the RPC response.</returns>
@@ -866,7 +866,7 @@ namespace Google.Ads.GoogleAds.V24.Services
         /// returned. Supported dimensions are KNOWLEDGE_GRAPH, GEO_TARGET_COUNTRY,
         /// SUB_COUNTRY_LOCATION, YOUTUBE_CHANNEL, YOUTUBE_LINEUP,
         /// AFFINITY_USER_INTEREST, IN_MARKET_USER_INTEREST, LIFE_EVENT_USER_INTEREST,
-        /// PARENTAL_STATUS, INCOME_RANGE, AGE_RANGE, and GENDER.
+        /// PARENTAL_STATUS, INCOME_RANGE, AGE_RANGE, GENDER, and USER_LIST.
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>The RPC response.</returns>
@@ -908,7 +908,7 @@ namespace Google.Ads.GoogleAds.V24.Services
         /// returned. Supported dimensions are KNOWLEDGE_GRAPH, GEO_TARGET_COUNTRY,
         /// SUB_COUNTRY_LOCATION, YOUTUBE_CHANNEL, YOUTUBE_LINEUP,
         /// AFFINITY_USER_INTEREST, IN_MARKET_USER_INTEREST, LIFE_EVENT_USER_INTEREST,
-        /// PARENTAL_STATUS, INCOME_RANGE, AGE_RANGE, and GENDER.
+        /// PARENTAL_STATUS, INCOME_RANGE, AGE_RANGE, GENDER, and USER_LIST.
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A Task containing the RPC response.</returns>
@@ -950,7 +950,7 @@ namespace Google.Ads.GoogleAds.V24.Services
         /// returned. Supported dimensions are KNOWLEDGE_GRAPH, GEO_TARGET_COUNTRY,
         /// SUB_COUNTRY_LOCATION, YOUTUBE_CHANNEL, YOUTUBE_LINEUP,
         /// AFFINITY_USER_INTEREST, IN_MARKET_USER_INTEREST, LIFE_EVENT_USER_INTEREST,
-        /// PARENTAL_STATUS, INCOME_RANGE, AGE_RANGE, and GENDER.
+        /// PARENTAL_STATUS, INCOME_RANGE, AGE_RANGE, GENDER, and USER_LIST.
         /// </param>
         /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
         /// <returns>A Task containing the RPC response.</returns>

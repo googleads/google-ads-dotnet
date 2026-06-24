@@ -291,7 +291,9 @@ namespace Google.Ads.GoogleAds.V24.Resources {
         = pb::FieldCodec.ForMessage(82, global::Google.Ads.GoogleAds.V24.Resources.ExperimentArm.Types.AssetGroupInfo.Parser);
     private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V24.Resources.ExperimentArm.Types.AssetGroupInfo> assetGroups_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V24.Resources.ExperimentArm.Types.AssetGroupInfo>();
     /// <summary>
-    /// List of asset groups in the experiment arm.
+    /// List of asset groups in the experiment arm. The max length is one. In the
+    /// Optimize Assets experiment construction, the control arm and treatment arm
+    /// should both contain the same asset group ID.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

@@ -263,6 +263,13 @@ namespace Google.Ads.GoogleAds.V24.Actions {
 
   /// <summary>
   /// A shareable preview with its identifier.
+  ///
+  /// Only Performance Max asset groups and certain YouTube video/audio ad formats
+  /// are supported. Other ad types, such as Responsive Search Ads or Responsive
+  /// Display Ads, are not supported and return an `UNSUPPORTED_AD_TYPE` error.
+  ///
+  /// The generated preview URLs cannot be embedded in an iframe because the
+  /// response headers include `X-Frame-Options: deny`.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ShareablePreview : pb::IMessage<ShareablePreview>

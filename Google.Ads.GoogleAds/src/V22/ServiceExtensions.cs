@@ -107,6 +107,7 @@ namespace Google.Ads.GoogleAds.V22.Services
     public abstract partial class KeywordThemeConstantServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class LabelServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class LocalServicesLeadServiceClient : GoogleAdsServiceClientBase { }
+    public abstract partial class MultiPartyAuthReviewServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class OfflineUserDataJobServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class PaymentsAccountServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class ProductLinkInvitationServiceClient : GoogleAdsServiceClientBase { }

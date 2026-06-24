@@ -628,7 +628,7 @@ namespace Google.Ads.GoogleAds.V23.Common {
   }
 
   /// <summary>
-  /// An expanded text ad.
+  /// An expanded text ad. Expanded text ads are deprecated.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ExpandedTextAdInfo : pb::IMessage<ExpandedTextAdInfo>

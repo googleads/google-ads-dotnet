@@ -127,7 +127,7 @@ namespace Google.Ads.GoogleAds.V23.Resources {
     private string customer_;
     /// <summary>
     /// Output only. The resource name of the customer to which the label is
-    /// attached. Read only.
+    /// attached. This field should not be set when creating a new `CustomerLabel`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -157,9 +157,10 @@ namespace Google.Ads.GoogleAds.V23.Resources {
     private string label_;
     /// <summary>
     /// Output only. The resource name of the label assigned to the customer.
+    /// This field should not be set when creating a new `CustomerLabel`.
     ///
     /// Note: the Customer ID portion of the label resource name is not
-    /// validated when creating a new CustomerLabel.
+    /// validated when creating a new `CustomerLabel`.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

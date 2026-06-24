@@ -25,17 +25,17 @@ namespace Google.Ads.GoogleAds.V24.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjZnb29nbGUvYWRzL2dvb2dsZWFkcy92MjQvZW51bXMvY29udmVyc2lvbl9v",
-            "cmlnaW4ucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5lbnVtcyKk",
-            "AQoUQ29udmVyc2lvbk9yaWdpbkVudW0iiwEKEENvbnZlcnNpb25PcmlnaW4S",
+            "cmlnaW4ucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNC5lbnVtcyK8",
+            "AQoUQ29udmVyc2lvbk9yaWdpbkVudW0iowEKEENvbnZlcnNpb25PcmlnaW4S",
             "DwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESCwoHV0VCU0lURRACEhEK",
             "DUdPT0dMRV9IT1NURUQQAxIHCgNBUFAQBBIRCg1DQUxMX0ZST01fQURTEAUS",
-            "CQoFU1RPUkUQBhISCg5ZT1VUVUJFX0hPU1RFRBAHQu8BCiJjb20uZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjI0LmVudW1zQhVDb252ZXJzaW9uT3JpZ2luUHJv",
-            "dG9QAVpDZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9h",
-            "ZHMvZ29vZ2xlYWRzL3YyNC9lbnVtcztlbnVtc6ICA0dBQaoCHkdvb2dsZS5B",
-            "ZHMuR29vZ2xlQWRzLlYyNC5FbnVtc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRz",
-            "XFYyNFxFbnVtc+oCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyNDo6RW51",
-            "bXNiBnByb3RvMw=="));
+            "CQoFU1RPUkUQBhISCg5ZT1VUVUJFX0hPU1RFRBAHEhYKEkxPQ0FMX1NFUlZJ",
+            "Q0VTX0FEUxAIQu8BCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI0LmVu",
+            "dW1zQhVDb252ZXJzaW9uT3JpZ2luUHJvdG9QAVpDZ29vZ2xlLmdvbGFuZy5v",
+            "cmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YyNC9lbnVt",
+            "cztlbnVtc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYyNC5FbnVt",
+            "c8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYyNFxFbnVtc+oCIkdvb2dsZTo6",
+            "QWRzOjpHb29nbGVBZHM6OlYyNDo6RW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -254,6 +254,12 @@ namespace Google.Ads.GoogleAds.V24.Enums {
         /// Conversion that occurs on YouTube.
         /// </summary>
         [pbr::OriginalName("YOUTUBE_HOSTED")] YoutubeHosted = 7,
+        /// <summary>
+        /// Conversion that occurs when a user clicks on local services ads unit and
+        /// reaches out to advertiser through phone call, message, or booking options
+        /// on the ad.
+        /// </summary>
+        [pbr::OriginalName("LOCAL_SERVICES_ADS")] LocalServicesAds = 8,
       }
 
     }

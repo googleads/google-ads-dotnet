@@ -761,6 +761,14 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v24/MultiPartyAuthReviewService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<MultiPartyAuthReviewServiceClient, MultiPartyAuthReviewServiceSettings, GoogleAdsConfig> MultiPartyAuthReviewService =
+                new ServiceTemplate<MultiPartyAuthReviewServiceClient, MultiPartyAuthReviewServiceSettings, GoogleAdsConfig>(Create);
+
+
+            /// <summary>
             /// See https://developers.google.com/google-ads/api/reference/rpc/v24/OfflineUserDataJobService
             /// for details.
             /// </summary>
@@ -1294,6 +1302,10 @@ namespace Google.Ads.GoogleAds
 
                     case "LocalServicesLeadServiceClient":
                         return LocalServicesLeadServiceClient.Create(callInvoker, (LocalServicesLeadServiceSettings) settings);
+
+
+                    case "MultiPartyAuthReviewServiceClient":
+                        return MultiPartyAuthReviewServiceClient.Create(callInvoker, (MultiPartyAuthReviewServiceSettings) settings);
 
 
                     case "OfflineUserDataJobServiceClient":

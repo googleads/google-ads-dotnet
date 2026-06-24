@@ -332,11 +332,10 @@ namespace Google.Ads.GoogleAds.V23.Errors
             return $"customers/{customerId}/campaignExperiments/{campaignExperimentId}";
         }
 
-        public static string CampaignGoalConfig(long customerId,
-            long campaignId, long unifiedGoalId)
+        public static string CampaignGoalConfig(long customerId, long campaignId,
+            long unifiedGoalId)
         {
-            return CampaignGoalConfigName.Format(customerId.ToString(),
-                campaignId.ToString(), unifiedGoalId.ToString());
+            return $"customers/{customerId}/campaignGoalConfigs/{campaignId}~{unifiedGoalId}";
         }
 
         public static string CampaignGroup(long customerId, long campaignGroupId)
@@ -567,8 +566,7 @@ namespace Google.Ads.GoogleAds.V23.Errors
 
         public static string Goal(long customerId, long unifiedGoalId)
         {
-            return GoalName.Format(customerId.ToString(),
-                unifiedGoalId.ToString());
+            return $"customers/{customerId}/goals/{unifiedGoalId}";
         }
 
         public static string GoogleAdsField(string name)
@@ -709,6 +707,11 @@ namespace Google.Ads.GoogleAds.V23.Errors
             return $"customers/{customerId}/mutateJobs/{mutateJobId}";
         }
 
+        public static string MultiPartyAuthReview(long customerId, long multiPartyAuthReviewId)
+        {
+            return $"customers/{customerId}/multiPartyAuthReviews/{multiPartyAuthReviewId}";
+        }
+
         public static string OfflineUserDataJob(long customerId, long offlineUserDataJobId)
         {
             return $"customers/{customerId}/offlineUserDataJobs/{offlineUserDataJobId}";
@@ -795,10 +798,11 @@ namespace Google.Ads.GoogleAds.V23.Errors
             return $"customers/{customerId}/smartCampaignSettings/{smartCampaignId}";
         }
 
-        public static string TargetingExpansionView(long customerId, long campaignId, string targetingExpansionType)
+        public static string TargetingExpansionView(long customerId, long campaignId,
+            string targetingExpansionType)
         {
-            return TargetingExpansionViewName.Format(customerId.ToString(),
-                campaignId.ToString(), targetingExpansionType);
+            return $"customers/{customerId}/targetingExpansionViews/{campaignId}~" +
+                $"{targetingExpansionType}";
         }
 
         public static string ThirdPartyAppAnalyticsLinks(long customerId, long shareableLinkId)
