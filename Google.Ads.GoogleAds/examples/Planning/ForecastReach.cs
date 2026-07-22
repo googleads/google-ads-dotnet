@@ -15,16 +15,16 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V24.Common;
-using Google.Ads.GoogleAds.V24.Errors;
-using Google.Ads.GoogleAds.V24.Services;
+using Google.Ads.GoogleAds.V25.Common;
+using Google.Ads.GoogleAds.V25.Errors;
+using Google.Ads.GoogleAds.V25.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V24.Enums.DeviceEnum.Types;
-using static Google.Ads.GoogleAds.V24.Enums.GenderTypeEnum.Types;
-using static Google.Ads.GoogleAds.V24.Enums.ReachPlanAgeRangeEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.DeviceEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.GenderTypeEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.ReachPlanAgeRangeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V24
+namespace Google.Ads.GoogleAds.Examples.V25
 {
     /// <summary>
     /// This example demonstrates how to interact with the ReachPlanService to find plannable
@@ -68,7 +68,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
 
         /// <summary>
         /// Runs the code example, showing a typical series of calls to the
-        /// <see cref="Services.V24.ReachPlanService"/>.
+        /// <see cref="Services.V25.ReachPlanService"/>.
         /// </summary>
         /// <param name="client">The Google Ads API client.</param>
         /// <param name="customerId">The Google Ads customer ID for which the call is made.</param>
@@ -78,7 +78,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
             string currencyCode = "USD";
             long budgetMicros = 5_000_000L;
             ReachPlanServiceClient reachPlanService =
-                client.GetService(Services.V24.ReachPlanService);
+                client.GetService(Services.V25.ReachPlanService);
 
             try
             {
@@ -193,10 +193,10 @@ namespace Google.Ads.GoogleAds.Examples.V24
             };
 
             Targeting targeting = new Targeting
-            {
-                PlannableLocationId = locationId,
+            {                
                 AgeRange = ReachPlanAgeRange.AgeRange1865Up,
             };
+            targeting.PlannableLocationIds.Add(locationId);
             targeting.Genders.AddRange(genders);
             targeting.Devices.AddRange(devices);
 

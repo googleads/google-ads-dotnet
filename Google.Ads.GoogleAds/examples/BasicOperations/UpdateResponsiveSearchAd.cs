@@ -16,14 +16,14 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V24.Common;
-using Google.Ads.GoogleAds.V24.Errors;
-using Google.Ads.GoogleAds.V24.Resources;
-using Google.Ads.GoogleAds.V24.Services;
+using Google.Ads.GoogleAds.V25.Common;
+using Google.Ads.GoogleAds.V25.Errors;
+using Google.Ads.GoogleAds.V25.Resources;
+using Google.Ads.GoogleAds.V25.Services;
 using System;
-using Google.Ads.GoogleAds.V24.Enums;
+using Google.Ads.GoogleAds.V25.Enums;
 
-namespace Google.Ads.GoogleAds.Examples.V24
+namespace Google.Ads.GoogleAds.Examples.V25
 {
     /// <summary>
     /// This code example updates a responsive search ad. To get responsive search ads,
@@ -83,7 +83,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
         public void Run(GoogleAdsClient client, long customerId, long adId)
         {
             // Get the AdService.
-            AdServiceClient adService = client.GetService(Services.V24.AdService);
+            AdServiceClient adService = client.GetService(Services.V25.AdService);
 
             Ad ad = new Ad()
             {

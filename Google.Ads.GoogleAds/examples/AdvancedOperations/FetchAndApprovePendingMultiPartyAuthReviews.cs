@@ -17,20 +17,20 @@ using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Lib;
 using Google.Ads.GoogleAds.Util;
-using Google.Ads.GoogleAds.V24.Errors;
-using Google.Ads.GoogleAds.V24.Services;
+using Google.Ads.GoogleAds.V25.Errors;
+using Google.Ads.GoogleAds.V25.Services;
 using Google.Ads.GoogleAds.Extensions.Config;
 
 using System;
-using static Google.Ads.GoogleAds.V24.Enums.MultiPartyAuthReviewTargetResourceEnum.Types;
-using static Google.Ads.GoogleAds.V24.Enums.MultiPartyAuthOperationTypeEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.MultiPartyAuthReviewTargetResourceEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.MultiPartyAuthOperationTypeEnum.Types;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V24.Enums.MultiPartyAuthReviewStatusEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.MultiPartyAuthReviewStatusEnum.Types;
 using System.Linq;
 using Google.Rpc;
 using System.IO;
 
-namespace Google.Ads.GoogleAds.Examples.V24
+namespace Google.Ads.GoogleAds.Examples.V25
 {
     /// <summary>
     /// This code example fetches pending multi-party approvals and approves the first pending
@@ -118,7 +118,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
         {
             // Get the ultiPartyAuthReviewService.
             MultiPartyAuthReviewServiceClient mpaReviewService = client.GetService(
-                Services.V24.MultiPartyAuthReviewService);
+                Services.V25.MultiPartyAuthReviewService);
 
             // Currently, you can only approve one request at a time. In addition, the approvals
             // can only be done by a second administrator.
@@ -175,7 +175,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
 
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V24.GoogleAdsService);
+                Services.V25.GoogleAdsService);
 
             // Create a query that will retrieve all the pending MPA reviews.
             string query =

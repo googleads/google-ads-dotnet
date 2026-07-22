@@ -15,14 +15,14 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V24.Common;
-using Google.Ads.GoogleAds.V24.Errors;
-using Google.Ads.GoogleAds.V24.Resources;
-using Google.Ads.GoogleAds.V24.Services;
+using Google.Ads.GoogleAds.V25.Common;
+using Google.Ads.GoogleAds.V25.Errors;
+using Google.Ads.GoogleAds.V25.Resources;
+using Google.Ads.GoogleAds.V25.Services;
 using System;
-using static Google.Ads.GoogleAds.V24.Enums.KeywordPlanNetworkEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.KeywordPlanNetworkEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V24;
+namespace Google.Ads.GoogleAds.Examples.V25;
 
 /// <summary>
 /// This code example generates historical metrics for keyword planning.
@@ -71,7 +71,7 @@ public class GenerateHistoricalMetrics : ExampleBase
     public void Run(GoogleAdsClient client, long customerId)
     {
         KeywordPlanIdeaServiceClient keywordPlanIdeaService =
-                client.GetService(Services.V24.KeywordPlanIdeaService);
+                client.GetService(Services.V25.KeywordPlanIdeaService);
 
         GenerateKeywordHistoricalMetricsRequest request =
             new GenerateKeywordHistoricalMetricsRequest()

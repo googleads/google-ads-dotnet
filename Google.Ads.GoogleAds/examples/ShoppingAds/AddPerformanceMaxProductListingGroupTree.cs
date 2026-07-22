@@ -15,19 +15,19 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V24.Errors;
-using Google.Ads.GoogleAds.V24.Resources;
-using Google.Ads.GoogleAds.V24.Services;
+using Google.Ads.GoogleAds.V25.Errors;
+using Google.Ads.GoogleAds.V25.Resources;
+using Google.Ads.GoogleAds.V25.Services;
 using Google.Api.Gax;
 using System;
 using System.Collections.Generic;
 using System.Threading;
-using static Google.Ads.GoogleAds.V24.Enums.ListingGroupFilterListingSourceEnum.Types;
-using static Google.Ads.GoogleAds.V24.Enums.ListingGroupFilterProductConditionEnum.Types;
-using static Google.Ads.GoogleAds.V24.Enums.ListingGroupFilterTypeEnum.Types;
-using static Google.Ads.GoogleAds.V24.Resources.ListingGroupFilterDimension.Types;
+using static Google.Ads.GoogleAds.V25.Enums.ListingGroupFilterListingSourceEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.ListingGroupFilterProductConditionEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.ListingGroupFilterTypeEnum.Types;
+using static Google.Ads.GoogleAds.V25.Resources.ListingGroupFilterDimension.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V24
+namespace Google.Ads.GoogleAds.Examples.V25
 {
     /// <summary>
     /// This example shows how to add product partitions to a Performance Max retail campaign.
@@ -453,7 +453,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
             bool replaceExistingTree)
         {
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V24.GoogleAdsService);
+                client.GetService(Services.V25.GoogleAdsService);
 
             string assetGroupResourceName = ResourceNames.AssetGroup(customerId, assetGroupId);
 
@@ -612,7 +612,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
 
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V24.GoogleAdsService);
+                Services.V25.GoogleAdsService);
 
             SearchGoogleAdsRequest request = new SearchGoogleAdsRequest()
             {

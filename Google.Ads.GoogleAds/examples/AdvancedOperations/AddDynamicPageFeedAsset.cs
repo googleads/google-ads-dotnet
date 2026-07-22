@@ -15,17 +15,17 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V24.Common;
-using Google.Ads.GoogleAds.V24.Errors;
-using Google.Ads.GoogleAds.V24.Resources;
-using Google.Ads.GoogleAds.V24.Services;
+using Google.Ads.GoogleAds.V25.Common;
+using Google.Ads.GoogleAds.V25.Errors;
+using Google.Ads.GoogleAds.V25.Resources;
+using Google.Ads.GoogleAds.V25.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V24.Enums.AssetSetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V24.Enums.WebpageConditionOperandEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.AssetSetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.WebpageConditionOperandEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V24
+namespace Google.Ads.GoogleAds.Examples.V25
 {
     /// <summary>
     /// This code example adds a page feed with URLs for a Dynamic Search Ads campaign.
@@ -131,7 +131,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
         private static List<string> CreateAssets(GoogleAdsClient client, long customerId,
             string dsaPageUrlLabel)
         {
-            AssetServiceClient assetService = client.GetService(Services.V24.AssetService);
+            AssetServiceClient assetService = client.GetService(Services.V25.AssetService);
 
             string[] urls = new[]
             {
@@ -189,7 +189,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
         private string CreateAssetSet(GoogleAdsClient client, long customerId)
         {
             AssetSetServiceClient assetSetService = client.GetService(
-                Services.V24.AssetSetService);
+                Services.V25.AssetSetService);
 
             // Creates an AssetSet which will be used to link the dynamic page feed assets
             // to a campaign.
@@ -228,7 +228,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
             List<string> assetResourceNames, string assetSetResourceName)
         {
             AssetSetAssetServiceClient assetSetAssetService = client.GetService(
-                Services.V24.AssetSetAssetService);
+                Services.V25.AssetSetAssetService);
 
             List<AssetSetAssetOperation> operations = new List<AssetSetAssetOperation>();
             foreach (string assetResourceName in assetResourceNames)
@@ -268,7 +268,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
             long campaignId, string assetSetResourceName)
         {
             CampaignAssetSetServiceClient campaignAssetSetService = client.GetService(
-                Services.V24.CampaignAssetSetService);
+                Services.V25.CampaignAssetSetService);
 
             // Creates a CampaignAssetSet representing the link between an AssetSet and a Campaign.
             CampaignAssetSet campaignAssetSet = new CampaignAssetSet()
@@ -303,7 +303,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
             GoogleAdsClient client, long customerId, long adGroupId, string dsaPageUrlLabel)
         {
             AdGroupCriterionServiceClient adGroupCriterionService = client.GetService(
-                Services.V24.AdGroupCriterionService);
+                Services.V25.AdGroupCriterionService);
 
             string adGroupResourceName = ResourceNames.AdGroup(customerId, adGroupId);
 

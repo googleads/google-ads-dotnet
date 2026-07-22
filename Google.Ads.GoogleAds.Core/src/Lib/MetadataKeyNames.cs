@@ -95,6 +95,30 @@ namespace Google.Ads.GoogleAds.Lib
             "local_services_lead.contact_details";
 
         /// <summary>
+        /// The metadata key name for the Local services lead contact details phone number extension.
+        /// </summary>
+        internal const string LocalServicesLeadContactDetailsPhoneNumberExtension =
+            "local_services_lead.contact_details.phone_number_extension";
+
+        /// <summary>
+        /// The metadata key name for the Local services lead contact details email.
+        /// </summary>
+        internal const string LocalServicesLeadContactDetailsEmail =
+            "local_services_lead.contact_details.email";
+
+        /// <summary>
+        /// The metadata key name for the Local services lead contact details phone number.
+        /// </summary>
+        internal const string LocalServicesLeadContactDetailsPhoneNumber =
+            "local_services_lead.contact_details.phone_number";
+
+        /// <summary>
+        /// The metadata key name for the Local services lead contact details consumer name.
+        /// </summary>
+        internal const string LocalServicesLeadContactDetailsConsumerName =
+            "local_services_lead.contact_details.consumer_name";
+
+        /// <summary>
         /// The metadata key name for the Local services lead conversation message details text.
         /// </summary>
         internal const string LocalServicesLeadConversationMessageDetailText =

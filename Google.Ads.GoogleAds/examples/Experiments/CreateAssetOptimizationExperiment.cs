@@ -17,20 +17,20 @@ using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V24.Common;
-using Google.Ads.GoogleAds.V24.Errors;
-using Google.Ads.GoogleAds.V24.Resources;
-using Google.Ads.GoogleAds.V24.Services;
+using Google.Ads.GoogleAds.V25.Common;
+using Google.Ads.GoogleAds.V25.Errors;
+using Google.Ads.GoogleAds.V25.Resources;
+using Google.Ads.GoogleAds.V25.Services;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V24.Enums.AssetFieldTypeEnum.Types;
-using static Google.Ads.GoogleAds.V24.Enums.AssetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V24.Enums.ExperimentTypeEnum.Types;
-using static Google.Ads.GoogleAds.V24.Enums.OptimizeAssetsExperimentSubtypeEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.AssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.AssetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.ExperimentTypeEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.OptimizeAssetsExperimentSubtypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V24
+namespace Google.Ads.GoogleAds.Examples.V25
 {
     /// <summary>
     /// Creates an OPTIMIZE_ASSETS experiment.
@@ -94,7 +94,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
         public void Run(GoogleAdsClient client, long customerId, long assetGroupId)
         {
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V24.GoogleAdsService);
+                Services.V25.GoogleAdsService);
 
             try
             {

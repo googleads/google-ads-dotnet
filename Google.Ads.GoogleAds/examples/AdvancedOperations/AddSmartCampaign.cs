@@ -19,20 +19,20 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V24.Common;
-using Google.Ads.GoogleAds.V24.Enums;
-using Google.Ads.GoogleAds.V24.Errors;
-using Google.Ads.GoogleAds.V24.Resources;
-using Google.Ads.GoogleAds.V24.Services;
-using static Google.Ads.GoogleAds.V24.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V24.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V24.Enums.AdvertisingChannelSubTypeEnum.Types;
-using static Google.Ads.GoogleAds.V24.Enums.BudgetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V24.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V24.Enums.EuPoliticalAdvertisingStatusEnum.Types;
-using static Google.Ads.GoogleAds.V24.Services.SmartCampaignSuggestionInfo.Types;
+using Google.Ads.GoogleAds.V25.Common;
+using Google.Ads.GoogleAds.V25.Enums;
+using Google.Ads.GoogleAds.V25.Errors;
+using Google.Ads.GoogleAds.V25.Resources;
+using Google.Ads.GoogleAds.V25.Services;
+using static Google.Ads.GoogleAds.V25.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.AdvertisingChannelSubTypeEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.BudgetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.EuPoliticalAdvertisingStatusEnum.Types;
+using static Google.Ads.GoogleAds.V25.Services.SmartCampaignSuggestionInfo.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V24
+namespace Google.Ads.GoogleAds.Examples.V25
 {
     /// <summary>
     /// This example shows how to create a Smart Campaign.
@@ -151,7 +151,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
             string freeFormKeywordText, string businessProfileLocation, string businessName)
         {
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V24.GoogleAdsService);
+                client.GetService(Services.V25.GoogleAdsService);
 
             try
             {
@@ -269,7 +269,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
             GoogleAdsClient client, long customerId, SmartCampaignSuggestionInfo suggestionInfo)
         {
             SmartCampaignSuggestServiceClient smartCampaignSuggestService =
-                client.GetService(Services.V24.SmartCampaignSuggestService);
+                client.GetService(Services.V25.SmartCampaignSuggestService);
 
             SuggestKeywordThemesRequest request = new SuggestKeywordThemesRequest()
             {
@@ -301,7 +301,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
             GoogleAdsClient client, string keywordText)
         {
             KeywordThemeConstantServiceClient keywordThemeConstantServiceClient =
-                client.GetService(Services.V24.KeywordThemeConstantService);
+                client.GetService(Services.V25.KeywordThemeConstantService);
 
             SuggestKeywordThemeConstantsRequest request = new SuggestKeywordThemeConstantsRequest
             {
@@ -430,7 +430,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
             SmartCampaignSuggestionInfo suggestionInfo)
         {
             SmartCampaignSuggestServiceClient smartCampaignSuggestServiceClient = client.GetService
-                (Services.V24.SmartCampaignSuggestService);
+                (Services.V25.SmartCampaignSuggestService);
 
             SuggestSmartCampaignBudgetOptionsRequest request =
                 new SuggestSmartCampaignBudgetOptionsRequest
@@ -487,7 +487,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
             long customerId, SmartCampaignSuggestionInfo suggestionInfo)
         {
             SmartCampaignSuggestServiceClient smartCampaignSuggestService =
-              client.GetService(Services.V24.SmartCampaignSuggestService);
+              client.GetService(Services.V25.SmartCampaignSuggestService);
 
             SuggestSmartCampaignAdRequest request = new SuggestSmartCampaignAdRequest
             {

@@ -16,15 +16,15 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V24.Errors;
-using Google.Ads.GoogleAds.V24.Resources;
-using Google.Ads.GoogleAds.V24.Services;
+using Google.Ads.GoogleAds.V25.Errors;
+using Google.Ads.GoogleAds.V25.Resources;
+using Google.Ads.GoogleAds.V25.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V24.Enums.ManagerLinkStatusEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.ManagerLinkStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V24
+namespace Google.Ads.GoogleAds.Examples.V25
 {
     /// <summary>
     ///  This code example demonstrates how to link an existing Google Ads manager customer
@@ -124,7 +124,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
         {
             // Get the CustomerClientLinkService.
             CustomerClientLinkServiceClient customerClientLinkService =
-                client.GetService(Services.V24.CustomerClientLinkService);
+                client.GetService(Services.V25.CustomerClientLinkService);
 
             // Create a client with the manager customer ID as login customer ID.
             client.Config.LoginCustomerId = managerCustomerId.ToString();
@@ -175,7 +175,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService =
-                client.GetService(Services.V24.GoogleAdsService);
+                client.GetService(Services.V25.GoogleAdsService);
 
             // Create a client with the manager customer ID as login customer ID.
             client.Config.LoginCustomerId = managerCustomerId.ToString();
@@ -211,7 +211,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
         {
             // Get the CustomerManagerLinkService.
             CustomerManagerLinkServiceClient customerManagerLinkService =
-                client.GetService(Services.V24.CustomerManagerLinkService);
+                client.GetService(Services.V25.CustomerManagerLinkService);
 
             // Create a client with the client customer ID as login customer ID.
             client.Config.LoginCustomerId = clientCustomerId.ToString();

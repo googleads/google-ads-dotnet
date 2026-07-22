@@ -19,13 +19,13 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V24.Common;
-using Google.Ads.GoogleAds.V24.Errors;
-using Google.Ads.GoogleAds.V24.Resources;
-using Google.Ads.GoogleAds.V24.Services;
-using static Google.Ads.GoogleAds.V24.Enums.BiddingStrategyTypeEnum.Types;
+using Google.Ads.GoogleAds.V25.Common;
+using Google.Ads.GoogleAds.V25.Errors;
+using Google.Ads.GoogleAds.V25.Resources;
+using Google.Ads.GoogleAds.V25.Services;
+using static Google.Ads.GoogleAds.V25.Enums.BiddingStrategyTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V24
+namespace Google.Ads.GoogleAds.Examples.V25
 {
     /// <summary>
     /// This code example adds a cross-account bidding strategy to a manager account and attaches it
@@ -133,7 +133,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
         private string CreateBiddingStrategy(GoogleAdsClient client, long managerCustomerId)
         {
             BiddingStrategyServiceClient biddingStrategyServiceClient =
-                client.GetService(Services.V24.BiddingStrategyService);
+                client.GetService(Services.V25.BiddingStrategyService);
 
             // Create a portfolio bidding strategy.
             // [START set_currency_code]
@@ -179,7 +179,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
             long managerCustomerId)
         {
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V24.GoogleAdsService);
+                client.GetService(Services.V25.GoogleAdsService);
 
             // Create a GAQL query that will retrieve all cross-account bidding strategies.
             string query = @"
@@ -225,7 +225,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
             long customerId)
         {
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V24.GoogleAdsService);
+                client.GetService(Services.V25.GoogleAdsService);
 
             // Create a GAQL query that will retrieve all accessible bidding strategies.
             string query = @"
@@ -281,7 +281,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
             long customerId, long campaignId, string biddingStrategyResourceName)
         {
             CampaignServiceClient campaignServiceClient =
-                client.GetService(Services.V24.CampaignService);
+                client.GetService(Services.V25.CampaignService);
 
             Campaign campaign = new Campaign
             {

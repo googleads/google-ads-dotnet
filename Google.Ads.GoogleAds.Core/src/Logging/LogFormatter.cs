@@ -45,6 +45,10 @@ namespace Google.Ads.GoogleAds.Logging
                 MetadataKeyNames.ChangeEventUserEmail,
                 MetadataKeyNames.CustomerUserAccessInvitationEmailAddress,
                 MetadataKeyNames.LocalServicesLeadContactDetails,
+                MetadataKeyNames.LocalServicesLeadContactDetailsPhoneNumberExtension,
+                MetadataKeyNames.LocalServicesLeadContactDetailsEmail,
+                MetadataKeyNames.LocalServicesLeadContactDetailsPhoneNumber,
+                MetadataKeyNames.LocalServicesLeadContactDetailsConsumerName,
                 MetadataKeyNames.LocalServicesLeadConversationMessageDetailText,
                 MetadataKeyNames.MultiPartyAuthReviewEmailAddress,
                 MetadataKeyNames.MultiPartyAuthReviewCustomerUserInvitationEmailAddress,
@@ -305,8 +309,71 @@ namespace Google.Ads.GoogleAds.Logging
                         MaskCustomerUserAccessInvitation(row.CustomerUserAccessInvitation);
                         MaskChangeEvent(row.ChangeEvent);
                         MaskMultiPartyAuthReview(row.MultiPartyAuthReview);
+                        MaskLocalServicesLead(row.LocalServicesLead);
                     }
                 }
+            }
+            catch (RuntimeBinderException)
+            {
+            }
+        }
+
+        /// <summary>
+        /// Masks the contact details fields within a <code>LocalServicesLead</code> object.
+        /// </summary>
+        /// <param name="body">The <code>LocalServicesLead</code> object.</param>
+        private static void MaskLocalServicesLead(dynamic body)
+        {
+            try
+            {
+                if (body != null && body.ContactDetails != null)
+                {
+                    MaskContactDetails(body.ContactDetails);
+                }
+            }
+            catch (RuntimeBinderException)
+            {
+            }
+        }
+
+        /// <summary>
+        /// Masks fields within a <code>ContactDetails</code> object.
+        /// </summary>
+        /// <param name="body">The <code>ContactDetails</code> object.</param>
+        private static void MaskContactDetails(dynamic body)
+        {
+            if (body == null)
+            {
+                return;
+            }
+
+            try
+            {
+                body.PhoneNumber = MASK_PATTERN;
+            }
+            catch (RuntimeBinderException)
+            {
+            }
+
+            try
+            {
+                body.Email = MASK_PATTERN;
+            }
+            catch (RuntimeBinderException)
+            {
+            }
+
+            try
+            {
+                body.ConsumerName = MASK_PATTERN;
+            }
+            catch (RuntimeBinderException)
+            {
+            }
+
+            try
+            {
+                body.PhoneNumberExtension = MASK_PATTERN;
             }
             catch (RuntimeBinderException)
             {
