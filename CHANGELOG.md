@@ -1,3 +1,7 @@
+26.1.0
+======
+- Added support for version 25.0 of the Google Ads API.
+
 26.0.1
 ======
 - Added support for version 24.2 of the Google Ads API.

@@ -15,23 +15,23 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V24.Common;
-using Google.Ads.GoogleAds.V24.Errors;
-using Google.Ads.GoogleAds.V24.Resources;
-using Google.Ads.GoogleAds.V24.Services;
+using Google.Ads.GoogleAds.V25.Common;
+using Google.Ads.GoogleAds.V25.Errors;
+using Google.Ads.GoogleAds.V25.Resources;
+using Google.Ads.GoogleAds.V25.Services;
 using System;
-using static Google.Ads.GoogleAds.V24.Enums.AdGroupAdStatusEnum.Types;
-using static Google.Ads.GoogleAds.V24.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V24.Enums.AdGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V24.Enums.AdGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V24.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V24.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V24.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V24.Enums.EuPoliticalAdvertisingStatusEnum.Types;
-using static Google.Ads.GoogleAds.V24.Enums.ListingGroupTypeEnum.Types;
-using static Google.Ads.GoogleAds.V24.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V25.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.AdGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.AdGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.EuPoliticalAdvertisingStatusEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.ListingGroupTypeEnum.Types;
+using static Google.Ads.GoogleAds.V25.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V24
+namespace Google.Ads.GoogleAds.Examples.V25
 {
     /// <summary>
     /// This code example creates a standard shopping campaign, a shopping product ad group and a
@@ -163,7 +163,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
         {
             // Get the CampaignBudgetService.
             CampaignBudgetServiceClient campaignBudgetService =
-                client.GetService(Services.V24.CampaignBudgetService);
+                client.GetService(Services.V25.CampaignBudgetService);
 
             CampaignBudget budget = new CampaignBudget()
             {
@@ -202,7 +202,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
         {
             // Get the CampaignService.
             CampaignServiceClient campaignService =
-                client.GetService(Services.V24.CampaignService);
+                client.GetService(Services.V25.CampaignService);
 
             // Configures the shopping settings.
             ShoppingSetting shoppingSetting = new ShoppingSetting()
@@ -279,7 +279,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
                     string campaignResourceName)
         {
             // Get the AdGroupService.
-            AdGroupServiceClient adGroupService = client.GetService(Services.V24.AdGroupService);
+            AdGroupServiceClient adGroupService = client.GetService(Services.V25.AdGroupService);
 
             // Creates an ad group.
             AdGroup adGroup = new AdGroup()
@@ -326,7 +326,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
         {
             // Get the AdGroupAdService.
             AdGroupAdServiceClient adGroupAdService = client.GetService(
-                Services.V24.AdGroupAdService);
+                Services.V25.AdGroupAdService);
 
             // Creates a new shopping product ad.
             Ad ad = new Ad()
@@ -382,7 +382,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
         {
             // Get the AdGroupCriterionService.
             AdGroupCriterionServiceClient adGroupCriterionService = client.GetService(
-                Services.V24.AdGroupCriterionService);
+                Services.V25.AdGroupCriterionService);
 
             // Creates a new ad group criterion. This will contain the "default" listing group (All
             // products).

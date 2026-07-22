@@ -16,17 +16,17 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V24.Errors;
-using Google.Ads.GoogleAds.V24.Resources;
-using Google.Ads.GoogleAds.V24.Services;
+using Google.Ads.GoogleAds.V25.Errors;
+using Google.Ads.GoogleAds.V25.Resources;
+using Google.Ads.GoogleAds.V25.Services;
 using Google.Api.Gax;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Google.Ads.GoogleAds.V24.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V24.Enums.ExperimentTypeEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V25.Enums.ExperimentTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V24
+namespace Google.Ads.GoogleAds.Examples.V25
 {
     /// <summary>
     /// Retrieves performance metrics for an experiment, evaluates the performance,
@@ -97,7 +97,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V24.GoogleAdsService);
+                Services.V25.GoogleAdsService);
 
             // Query to retrieve the experiment.
             // Notice that we request the statistical metrics (for example, p-value, point estimate,
@@ -285,7 +285,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
         private static void PromoteExperiment(GoogleAdsClient client, long customerId, string experimentResourceName)
         {
             ExperimentServiceClient experimentService = client.GetService(
-                Services.V24.ExperimentService);
+                Services.V25.ExperimentService);
 
             // This method returns a long running operation (LRO).
             // - To block until the operation is complete: call operation.PollUntilCompleted()
@@ -314,7 +314,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
         private static void EndExperiment(GoogleAdsClient client, long customerId, string experimentResourceName)
         {
             ExperimentServiceClient experimentService = client.GetService(
-                Services.V24.ExperimentService);
+                Services.V25.ExperimentService);
 
             experimentService.EndExperiment(experimentResourceName);
             Console.WriteLine($"Successfully ended experiment: {experimentResourceName}");
@@ -333,7 +333,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
         {
             // 1. Create a new campaign budget for the graduating campaign.
             CampaignBudgetServiceClient campaignBudgetService = client.GetService(
-                Services.V24.CampaignBudgetService);
+                Services.V25.CampaignBudgetService);
 
             CampaignBudget campaignBudget = new CampaignBudget()
             {
@@ -356,7 +356,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
             // 2. Query the experiment_arm to retrieve the treatment campaign's resource name.
             // The treatment arm has control set to False.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V24.GoogleAdsService);
+                Services.V25.GoogleAdsService);
 
             // Query for the campaigns associated with the treatment arm of the experiment.
             string query = $"SELECT experiment_arm.campaigns FROM experiment_arm " +
@@ -389,7 +389,7 @@ namespace Google.Ads.GoogleAds.Examples.V24
 
             // 3. Build the budget mapping and execute the graduation request.
             ExperimentServiceClient experimentService = client.GetService(
-                Services.V24.ExperimentService);
+                Services.V25.ExperimentService);
 
             CampaignBudgetMapping budgetMapping = new CampaignBudgetMapping()
             {
