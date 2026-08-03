@@ -1,4 +1,4 @@
-﻿// Copyright 2022 Google LLC
+// Copyright 2022 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -319,7 +319,11 @@ namespace Google.Ads.Gax.Config
         public bool UseApplicationDefaultCredentials
         {
             get => useApplicationDefaultCredentials.Value;
-            set => SetPropertyAndNotify(useApplicationDefaultCredentials, value);
+            set
+            {
+                SetPropertyAndNotify(useApplicationDefaultCredentials, value);
+                credential = null;
+            }
         }
 
         /// <summary>
@@ -571,7 +575,7 @@ namespace Google.Ads.Gax.Config
         private ICredential credential = null;
 
         /// <summary>
-        /// Gets the credentials.
+        /// Gets or sets the credentials.
         /// </summary>
         public ICredential Credentials
         {
@@ -583,6 +587,7 @@ namespace Google.Ads.Gax.Config
                 }
                 return credential;
             }
+            set => credential = value;
         }
 
         /// <summary>

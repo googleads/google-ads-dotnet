@@ -13,6 +13,7 @@
 // limitations under the License.
 
 using Google.Ads.Gax.Config;
+using Google.Apis.Auth.OAuth2;
 using NUnit.Framework;
 using System;
 using System.IO;
@@ -68,6 +69,33 @@ namespace Google.Ads.Gax.Tests.Config
                     new StreamReader(new MemoryStream(Encoding.UTF8.GetBytes(testCredentials)))
                 ));
         }
+        /// <summary>
+        /// Tests if custom credentials can be set and retrieved.
+        /// </summary>
+        [Test]
+        public void TestSetCredentials()
+        {
+            ICredential credential = GoogleCredential.FromAccessToken("test_token");
+            AdsConfig config = new AdsConfig();
+            config.Credentials = credential;
+            Assert.AreSame(credential, config.Credentials);
+        }
 
+        /// <summary>
+        /// Tests if setting an OAuth2 property clears manually set credentials.
+        /// </summary>
+        [Test]
+        public void TestOAuth2PropertyChangeResetsCredentials()
+        {
+            ICredential credential = GoogleCredential.FromAccessToken("test_token");
+            AdsConfig config = new AdsConfig();
+            config.Credentials = credential;
+            Assert.AreSame(credential, config.Credentials);
+
+            config.OAuth2ClientId = "new_client_id";
+            // OAuth2ClientId change should reset credential field to null,
+            // so getting Credentials will attempt CreateCredentials() instead of returning the custom credential.
+            Assert.AreNotSame(credential, config.Credentials);
+        }
     }
 }
