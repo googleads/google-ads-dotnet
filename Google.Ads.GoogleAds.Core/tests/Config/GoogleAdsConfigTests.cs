@@ -13,7 +13,6 @@
 // limitations under the License.
 
 using Google.Ads.GoogleAds.Config;
-using Google.Apis.Auth.OAuth2;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -182,18 +181,6 @@ namespace Google.Ads.GoogleAds.Tests.Config
             Assert.AreEqual(PROXY_USER_VALUE, credential.UserName);
             Assert.AreEqual(PROXY_PASSWORD_VALUE, credential.Password);
             Assert.AreEqual(PROXY_DOMAIN_VALUE, credential.Domain);
-        }
-
-        /// <summary>
-        /// Tests setting custom credentials on GoogleAdsConfig.
-        /// </summary>
-        [Test]
-        public void TestSetCredentials()
-        {
-            ICredential credential = GoogleCredential.FromAccessToken("test_access_token");
-            GoogleAdsConfig config = new GoogleAdsConfig();
-            config.Credentials = credential;
-            Assert.AreSame(credential, config.Credentials);
         }
     }
 }

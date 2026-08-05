@@ -16,10 +16,7 @@ namespace Google.Ads.GoogleAds.Extensions.DependencyInjection
         public GoogleAdsConfig(IOptions<GoogleAdsApiOptions> options)
         {
             DeveloperToken = options.Value.DeveloperToken;
-            if (!string.IsNullOrEmpty(options.Value.OAuth2Mode))
-            {
-                OAuth2Mode = (OAuth2Flow)Enum.Parse(typeof(OAuth2Flow), options.Value.OAuth2Mode);
-            }
+            OAuth2Mode = (OAuth2Flow)Enum.Parse(typeof(OAuth2Flow), options.Value.OAuth2Mode);
             OAuth2ClientId = options.Value.OAuth2ClientId;
             OAuth2ClientSecret = options.Value.OAuth2ClientSecret;
             OAuth2RefreshToken = options.Value.OAuth2RefreshToken;
