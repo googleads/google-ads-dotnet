@@ -1,8 +1,3 @@
-27.0.0
-======
-- Removed support for version 21 of the Google Ads API.
-- Added support for manually injecting a credentials object (fixes #650).
-
 26.1.0
 ======
 - Added support for version 25.0 of the Google Ads API.
