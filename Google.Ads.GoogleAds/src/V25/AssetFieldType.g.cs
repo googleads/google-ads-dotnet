@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V25.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjVnb29nbGUvYWRzL2dvb2dsZWFkcy92MjUvZW51bXMvYXNzZXRfZmllbGRf",
-            "dHlwZS5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LmVudW1zIoAG",
-            "ChJBc3NldEZpZWxkVHlwZUVudW0i6QUKDkFzc2V0RmllbGRUeXBlEg8KC1VO",
+            "dHlwZS5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LmVudW1zIpUG",
+            "ChJBc3NldEZpZWxkVHlwZUVudW0i/gUKDkFzc2V0RmllbGRUeXBlEg8KC1VO",
             "U1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgwKCEhFQURMSU5FEAISDwoLREVT",
             "Q1JJUFRJT04QAxIVChFNQU5EQVRPUllfQURfVEVYVBAEEhMKD01BUktFVElO",
             "R19JTUFHRRAFEhAKDE1FRElBX0JVTkRMRRAGEhEKDVlPVVRVQkVfVklERU8Q",
@@ -43,12 +43,13 @@ namespace Google.Ads.GoogleAds.V25.Enums {
             "UktFVElOR19JTUFHRRAgEhoKFlJFTEFURURfWU9VVFVCRV9WSURFT1MQIRIY",
             "ChRMQU5ESU5HX1BBR0VfUFJFVklFVxAmEhQKEExPTkdfREVTQ1JJUFRJT04Q",
             "JxISCg5DQUxMX1RPX0FDVElPThAoEhkKFUNMQVNTSUNfRElTUExBWV9JTUFH",
-            "RRAvQu0BCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LmVudW1zQhNB",
-            "c3NldEZpZWxkVHlwZVByb3RvUAFaQ2dvb2dsZS5nb2xhbmcub3JnL2dlbnBy",
-            "b3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MjUvZW51bXM7ZW51bXOi",
-            "AgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMjUuRW51bXPKAh5Hb29n",
-            "bGVcQWRzXEdvb2dsZUFkc1xWMjVcRW51bXPqAiJHb29nbGU6OkFkczo6R29v",
-            "Z2xlQWRzOjpWMjU6OkVudW1zYgZwcm90bzM="));
+            "RRAvEhMKD1RFWFRfRElTQ0xBSU1FUhAwQu0BCiJjb20uZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjI1LmVudW1zQhNBc3NldEZpZWxkVHlwZVByb3RvUAFaQ2dv",
+            "b2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2ds",
+            "ZWFkcy92MjUvZW51bXM7ZW51bXOiAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2ds",
+            "ZUFkcy5WMjUuRW51bXPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMjVcRW51",
+            "bXPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjU6OkVudW1zYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -380,6 +381,10 @@ namespace Google.Ads.GoogleAds.V25.Enums {
         /// The asset is linked for use as a classic display image.
         /// </summary>
         [pbr::OriginalName("CLASSIC_DISPLAY_IMAGE")] ClassicDisplayImage = 47,
+        /// <summary>
+        /// The asset is linked for use as a text disclaimer.
+        /// </summary>
+        [pbr::OriginalName("TEXT_DISCLAIMER")] TextDisclaimer = 48,
       }
 
     }

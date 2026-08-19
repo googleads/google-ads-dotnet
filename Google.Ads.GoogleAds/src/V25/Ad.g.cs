@@ -599,7 +599,14 @@ namespace Google.Ads.GoogleAds.V25.Resources {
     public const int SyntheticContentInfoFieldNumber = 65;
     private global::Google.Ads.GoogleAds.V25.Common.SyntheticContentInfo syntheticContentInfo_;
     /// <summary>
-    /// Synthetic content info for the ad.
+    /// Synthetic content info for the ad. Only ads with specific ad types are
+    /// eligible for updates using the `synthetic_content_info` field.
+    ///
+    /// Allowed `AdType` values:
+    ///
+    /// * `HTML5_UPLOAD_AD`
+    /// * `DYNAMIC_HTML5_AD`
+    /// * `IMAGE_AD`
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

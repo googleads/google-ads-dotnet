@@ -1042,6 +1042,14 @@ namespace Google.Ads.GoogleAds.V25.Services {
     /// SUB_COUNTRY_LOCATION, YOUTUBE_CHANNEL, YOUTUBE_LINEUP,
     /// AFFINITY_USER_INTEREST, IN_MARKET_USER_INTEREST, LIFE_EVENT_USER_INTEREST,
     ///  PARENTAL_STATUS, INCOME_RANGE, AGE_RANGE, GENDER, and USER_LIST.
+    ///
+    /// Note that when an
+    /// [InsightsAudience.user_list][google.ads.googleads.v25.services.InsightsAudience.user_list]
+    /// is requested:
+    ///   - Only the following dimensions are supported: AFFINITY_USER_INTEREST,
+    ///   AGE_RANGE, GENDER, IN_MARKET_USER_INTEREST
+    ///   - The score field is omitted from AudienceCompositionMetrics of the
+    ///   GenerateAudienceCompositionInsightsResponse.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1441,6 +1449,12 @@ namespace Google.Ads.GoogleAds.V25.Services {
     /// The contents of the insights report, organized into sections.
     /// Each section is associated with one of the AudienceInsightsDimension values
     /// in the request. There may be more than one section per dimension.
+    ///
+    /// Note: When an
+    /// [InsightsAudience.user_list][google.ads.googleads.v25.services.InsightsAudience.user_list]
+    /// is requested in GenerateAudienceCompositionInsightsRequest, score is
+    /// omitted from AudienceCompositionMetrics of the
+    /// GenerateAudienceCompositionInsightsResponse.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -8623,6 +8637,11 @@ namespace Google.Ads.GoogleAds.V25.Services {
     private double score_;
     /// <summary>
     /// A relevance score from 0 to 1 inclusive.
+    ///
+    /// Note: When an
+    /// [InsightsAudience.user_list][google.ads.googleads.v25.services.InsightsAudience.user_list]
+    /// is requested in GenerateAudienceCompositionInsightsRequest, score is
+    /// omitted.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

@@ -67,104 +67,119 @@ namespace Google.Ads.GoogleAds.V25.Services {
             "QWRkaXRpb25hbEFwcGxpY2F0aW9uSW5mbyJ4Ch1MaXN0QmVuY2htYXJrc1Nv",
             "dXJjZXNSZXNwb25zZRJXChJiZW5jaG1hcmtzX3NvdXJjZXMYASADKAsyOy5n",
             "b29nbGUuYWRzLmdvb2dsZWFkcy52MjUuc2VydmljZXMuQmVuY2htYXJrc1Nv",
-            "dXJjZU1ldGFkYXRhIv4BChhCZW5jaG1hcmtzU291cmNlTWV0YWRhdGESbQoW",
+            "dXJjZU1ldGFkYXRhIsgCChhCZW5jaG1hcmtzU291cmNlTWV0YWRhdGESbQoW",
             "YmVuY2htYXJrc19zb3VyY2VfdHlwZRgBIAEoDjJNLmdvb2dsZS5hZHMuZ29v",
             "Z2xlYWRzLnYyNS5lbnVtcy5CZW5jaG1hcmtzU291cmNlVHlwZUVudW0uQmVu",
             "Y2htYXJrc1NvdXJjZVR5cGUSWQoWaW5kdXN0cnlfdmVydGljYWxfaW5mbxgC",
             "IAEoCzI3Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5zZXJ2aWNlcy5JbmR1",
-            "c3RyeVZlcnRpY2FsSW5mb0gAQhgKFmJlbmNobWFya3Nfc291cmNlX2luZm8i",
-            "eQoUSW5kdXN0cnlWZXJ0aWNhbEluZm8SHgoWaW5kdXN0cnlfdmVydGljYWxf",
-            "bmFtZRgBIAEoCRIcChRpbmR1c3RyeV92ZXJ0aWNhbF9pZBgCIAEoAxIjChtw",
-            "YXJlbnRfaW5kdXN0cnlfdmVydGljYWxfaWQYAyABKAMi1gQKIEdlbmVyYXRl",
-            "QmVuY2htYXJrc01ldHJpY3NSZXF1ZXN0EhgKC2N1c3RvbWVyX2lkGAEgASgJ",
-            "QgPgQQISPgoKZGF0ZV9yYW5nZRgCIAEoCzIqLmdvb2dsZS5hZHMuZ29vZ2xl",
-            "YWRzLnYyNS5jb21tb24uRGF0ZVJhbmdlEkQKCGxvY2F0aW9uGAMgASgLMi0u",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LmNvbW1vbi5Mb2NhdGlvbkluZm9C",
-            "A+BBAhJTChFiZW5jaG1hcmtzX3NvdXJjZRgEIAEoCzIzLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYyNS5zZXJ2aWNlcy5CZW5jaG1hcmtzU291cmNlQgPgQQIS",
-            "TQoOcHJvZHVjdF9maWx0ZXIYBSABKAsyMC5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52MjUuc2VydmljZXMuUHJvZHVjdEZpbHRlckID4EECElkKFGJyZWFrZG93",
-            "bl9kZWZpbml0aW9uGAkgASgLMjYuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1",
-            "LnNlcnZpY2VzLkJyZWFrZG93bkRlZmluaXRpb25CA+BBARIaCg1jdXJyZW5j",
-            "eV9jb2RlGAYgASgJQgPgQQESIQoZY3VzdG9tZXJfYmVuY2htYXJrc19ncm91",
-            "cBgHIAEoCRJUChBhcHBsaWNhdGlvbl9pbmZvGAggASgLMjouZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjI1LmNvbW1vbi5BZGRpdGlvbmFsQXBwbGljYXRpb25J",
-            "bmZvIkoKEEJlbmNobWFya3NTb3VyY2USHgoUaW5kdXN0cnlfdmVydGljYWxf",
-            "aWQYASABKANIAEIWChRiZW5jaG1hcmtzX3NvdXJjZV9pZCKuAwoNUHJvZHVj",
-            "dEZpbHRlchJUCgxwcm9kdWN0X2xpc3QYASABKAsyPC5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52MjUuc2VydmljZXMuUHJvZHVjdEZpbHRlci5Qcm9kdWN0TGlz",
-            "dEgAEmsKGG1hcmtldGluZ19vYmplY3RpdmVfbGlzdBgCIAEoCzJHLmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYyNS5zZXJ2aWNlcy5Qcm9kdWN0RmlsdGVyLk1h",
-            "cmtldGluZ09iamVjdGl2ZUxpc3RIABopCgtQcm9kdWN0TGlzdBIaCg1wcm9k",
-            "dWN0X2NvZGVzGAEgAygJQgPgQQIamwEKFk1hcmtldGluZ09iamVjdGl2ZUxp",
-            "c3QSgAEKFG1hcmtldGluZ19vYmplY3RpdmVzGAEgAygOMl0uZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjI1LmVudW1zLkJlbmNobWFya3NNYXJrZXRpbmdPYmpl",
-            "Y3RpdmVFbnVtLkJlbmNobWFya3NNYXJrZXRpbmdPYmplY3RpdmVCA+BBAkIR",
-            "Cg9maWx0ZXJfc2V0dGluZ3MihgEKE0JyZWFrZG93bkRlZmluaXRpb24SbwoO",
-            "ZGF0ZV9icmVha2Rvd24YASABKA4yVy5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MjUuZW51bXMuQmVuY2htYXJrc1RpbWVHcmFudWxhcml0eUVudW0uQmVuY2ht",
-            "YXJrc1RpbWVHcmFudWxhcml0eSKRAgohR2VuZXJhdGVCZW5jaG1hcmtzTWV0",
-            "cmljc1Jlc3BvbnNlEkwKEGN1c3RvbWVyX21ldHJpY3MYBCABKAsyMi5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52MjUuc2VydmljZXMuQ3VzdG9tZXJNZXRyaWNz",
-            "Ek4KGmF2ZXJhZ2VfYmVuY2htYXJrc19tZXRyaWNzGAIgASgLMiouZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjI1LnNlcnZpY2VzLk1ldHJpY3MSTgoRYnJlYWtk",
-            "b3duX21ldHJpY3MYAyADKAsyMy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUu",
-            "c2VydmljZXMuQnJlYWtkb3duTWV0cmljcyL4AQoQQnJlYWtkb3duTWV0cmlj",
-            "cxJGCg1icmVha2Rvd25fa2V5GAEgASgLMi8uZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjI1LnNlcnZpY2VzLkJyZWFrZG93bktleRJMChBjdXN0b21lcl9tZXRy",
-            "aWNzGAQgASgLMjIuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnNlcnZpY2Vz",
-            "LkN1c3RvbWVyTWV0cmljcxJOChphdmVyYWdlX2JlbmNobWFya3NfbWV0cmlj",
-            "cxgDIAEoCzIqLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5zZXJ2aWNlcy5N",
-            "ZXRyaWNzIkkKDEJyZWFrZG93bktleRI5CgVkYXRlcxgBIAEoCzIqLmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYyNS5jb21tb24uRGF0ZVJhbmdlIlcKB01ldHJp",
-            "Y3MSTAoUYXZlcmFnZV9yYXRlX21ldHJpY3MYASABKAsyLi5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MjUuc2VydmljZXMuUmF0ZU1ldHJpY3MiXwoPQ3VzdG9t",
-            "ZXJNZXRyaWNzEkwKFGF2ZXJhZ2VfcmF0ZV9tZXRyaWNzGAEgASgLMi4uZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjI1LnNlcnZpY2VzLlJhdGVNZXRyaWNzIrkD",
-            "CgtSYXRlTWV0cmljcxITCgthdmVyYWdlX2NwbRgBIAEoARIfChdhdmVyYWdl",
-            "X2FjdGl2ZV92aWV3X2NwbRgCIAEoARIcChR0cnVldmlld19hdmVyYWdlX2Nw",
-            "dhgDIAEoARITCgthdmVyYWdlX2NwYxgEIAEoARITCgthdmVyYWdlX2NwaRgF",
-            "IAEoARITCgthdmVyYWdlX2NwZRgGIAEoARIYChBpbnRlcmFjdGlvbl9yYXRl",
-            "GAcgASgBEhcKD2VuZ2FnZW1lbnRfcmF0ZRgIIAEoARIfChdhY3RpdmVfdmll",
-            "d192aWV3YWJpbGl0eRgJIAEoARIaChJ0cnVldmlld192aWV3X3JhdGUYCiAB",
-            "KAESGgoSY2xpY2tfdGhyb3VnaF9yYXRlGAsgASgBEiEKGXZpZGVvX2NvbXBs",
-            "ZXRpb25fcDI1X3JhdGUYDCABKAESIQoZdmlkZW9fY29tcGxldGlvbl9wNTBf",
-            "cmF0ZRgNIAEoARIhChl2aWRlb19jb21wbGV0aW9uX3A3NV9yYXRlGA4gASgB",
-            "EiIKGnZpZGVvX2NvbXBsZXRpb25fcDEwMF9yYXRlGA8gASgBMs0JChFCZW5j",
-            "aG1hcmtzU2VydmljZRLdAQocTGlzdEJlbmNobWFya3NBdmFpbGFibGVEYXRl",
-            "cxJGLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5zZXJ2aWNlcy5MaXN0QmVu",
-            "Y2htYXJrc0F2YWlsYWJsZURhdGVzUmVxdWVzdBpHLmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYyNS5zZXJ2aWNlcy5MaXN0QmVuY2htYXJrc0F2YWlsYWJsZURh",
-            "dGVzUmVzcG9uc2UiLILT5JMCJiIhL3YyNTpsaXN0QmVuY2htYXJrc0F2YWls",
-            "YWJsZURhdGVzOgEqEskBChdMaXN0QmVuY2htYXJrc0xvY2F0aW9ucxJBLmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5zZXJ2aWNlcy5MaXN0QmVuY2htYXJr",
-            "c0xvY2F0aW9uc1JlcXVlc3QaQi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUu",
-            "c2VydmljZXMuTGlzdEJlbmNobWFya3NMb2NhdGlvbnNSZXNwb25zZSIngtPk",
-            "kwIhIhwvdjI1Omxpc3RCZW5jaG1hcmtzTG9jYXRpb25zOgEqEsUBChZMaXN0",
-            "QmVuY2htYXJrc1Byb2R1Y3RzEkAuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1",
-            "LnNlcnZpY2VzLkxpc3RCZW5jaG1hcmtzUHJvZHVjdHNSZXF1ZXN0GkEuZ29v",
+            "c3RyeVZlcnRpY2FsSW5mb0gAEkgKDWNhdGVnb3J5X2luZm8YAyABKAsyLy5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MjUuc2VydmljZXMuQ2F0ZWdvcnlJbmZv",
+            "SABCGAoWYmVuY2htYXJrc19zb3VyY2VfaW5mbyJ5ChRJbmR1c3RyeVZlcnRp",
+            "Y2FsSW5mbxIeChZpbmR1c3RyeV92ZXJ0aWNhbF9uYW1lGAEgASgJEhwKFGlu",
+            "ZHVzdHJ5X3ZlcnRpY2FsX2lkGAIgASgDEiMKG3BhcmVudF9pbmR1c3RyeV92",
+            "ZXJ0aWNhbF9pZBgDIAEoAyJRCgxDYXRlZ29yeUluZm8SFQoNY2F0ZWdvcnlf",
+            "bmFtZRgBIAEoCRITCgtjYXRlZ29yeV9pZBgCIAEoAxIVCg1jYXRlZ29yeV9w",
+            "YXRoGAMgASgJIqIFCiBHZW5lcmF0ZUJlbmNobWFya3NNZXRyaWNzUmVxdWVz",
+            "dBIYCgtjdXN0b21lcl9pZBgBIAEoCUID4EECEj4KCmRhdGVfcmFuZ2UYAiAB",
+            "KAsyKi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUuY29tbW9uLkRhdGVSYW5n",
+            "ZRJECghsb2NhdGlvbhgDIAEoCzItLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
+            "NS5jb21tb24uTG9jYXRpb25JbmZvQgPgQQISUwoRYmVuY2htYXJrc19zb3Vy",
+            "Y2UYBCABKAsyMy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUuc2VydmljZXMu",
+            "QmVuY2htYXJrc1NvdXJjZUID4EECEkoKD2NhdGVnb3J5X2ZpbHRlchgKIAEo",
+            "CzIxLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5zZXJ2aWNlcy5DYXRlZ29y",
+            "eUZpbHRlchJNCg5wcm9kdWN0X2ZpbHRlchgFIAEoCzIwLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYyNS5zZXJ2aWNlcy5Qcm9kdWN0RmlsdGVyQgPgQQISWQoU",
+            "YnJlYWtkb3duX2RlZmluaXRpb24YCSABKAsyNi5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MjUuc2VydmljZXMuQnJlYWtkb3duRGVmaW5pdGlvbkID4EEBEhoK",
+            "DWN1cnJlbmN5X2NvZGUYBiABKAlCA+BBARIhChljdXN0b21lcl9iZW5jaG1h",
+            "cmtzX2dyb3VwGAcgASgJElQKEGFwcGxpY2F0aW9uX2luZm8YCCABKAsyOi5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MjUuY29tbW9uLkFkZGl0aW9uYWxBcHBs",
+            "aWNhdGlvbkluZm8iZQoQQmVuY2htYXJrc1NvdXJjZRIeChRpbmR1c3RyeV92",
+            "ZXJ0aWNhbF9pZBgBIAEoA0gAEhkKD2FsbF9hZHZlcnRpc2VycxgCIAEoCEgA",
+            "QhYKFGJlbmNobWFya3Nfc291cmNlX2lkIisKDkNhdGVnb3J5RmlsdGVyEhkK",
+            "DGNhdGVnb3J5X2lkcxgBIAMoCUID4EECIq4DCg1Qcm9kdWN0RmlsdGVyElQK",
+            "DHByb2R1Y3RfbGlzdBgBIAEoCzI8Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
+            "NS5zZXJ2aWNlcy5Qcm9kdWN0RmlsdGVyLlByb2R1Y3RMaXN0SAASawoYbWFy",
+            "a2V0aW5nX29iamVjdGl2ZV9saXN0GAIgASgLMkcuZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjI1LnNlcnZpY2VzLlByb2R1Y3RGaWx0ZXIuTWFya2V0aW5nT2Jq",
+            "ZWN0aXZlTGlzdEgAGikKC1Byb2R1Y3RMaXN0EhoKDXByb2R1Y3RfY29kZXMY",
+            "ASADKAlCA+BBAhqbAQoWTWFya2V0aW5nT2JqZWN0aXZlTGlzdBKAAQoUbWFy",
+            "a2V0aW5nX29iamVjdGl2ZXMYASADKA4yXS5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MjUuZW51bXMuQmVuY2htYXJrc01hcmtldGluZ09iamVjdGl2ZUVudW0u",
+            "QmVuY2htYXJrc01hcmtldGluZ09iamVjdGl2ZUID4EECQhEKD2ZpbHRlcl9z",
+            "ZXR0aW5ncyKGAQoTQnJlYWtkb3duRGVmaW5pdGlvbhJvCg5kYXRlX2JyZWFr",
+            "ZG93bhgBIAEoDjJXLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5lbnVtcy5C",
+            "ZW5jaG1hcmtzVGltZUdyYW51bGFyaXR5RW51bS5CZW5jaG1hcmtzVGltZUdy",
+            "YW51bGFyaXR5IpECCiFHZW5lcmF0ZUJlbmNobWFya3NNZXRyaWNzUmVzcG9u",
+            "c2USTAoQY3VzdG9tZXJfbWV0cmljcxgEIAEoCzIyLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYyNS5zZXJ2aWNlcy5DdXN0b21lck1ldHJpY3MSTgoaYXZlcmFn",
+            "ZV9iZW5jaG1hcmtzX21ldHJpY3MYAiABKAsyKi5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MjUuc2VydmljZXMuTWV0cmljcxJOChFicmVha2Rvd25fbWV0cmlj",
+            "cxgDIAMoCzIzLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5zZXJ2aWNlcy5C",
+            "cmVha2Rvd25NZXRyaWNzIvgBChBCcmVha2Rvd25NZXRyaWNzEkYKDWJyZWFr",
+            "ZG93bl9rZXkYASABKAsyLy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUuc2Vy",
+            "dmljZXMuQnJlYWtkb3duS2V5EkwKEGN1c3RvbWVyX21ldHJpY3MYBCABKAsy",
+            "Mi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUuc2VydmljZXMuQ3VzdG9tZXJN",
+            "ZXRyaWNzEk4KGmF2ZXJhZ2VfYmVuY2htYXJrc19tZXRyaWNzGAMgASgLMiou",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnNlcnZpY2VzLk1ldHJpY3MiSQoM",
+            "QnJlYWtkb3duS2V5EjkKBWRhdGVzGAEgASgLMiouZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjI1LmNvbW1vbi5EYXRlUmFuZ2UiVwoHTWV0cmljcxJMChRhdmVy",
+            "YWdlX3JhdGVfbWV0cmljcxgBIAEoCzIuLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYyNS5zZXJ2aWNlcy5SYXRlTWV0cmljcyL3AQoPQ3VzdG9tZXJNZXRyaWNz",
+            "EkwKFGF2ZXJhZ2VfcmF0ZV9tZXRyaWNzGAEgASgLMi4uZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjI1LnNlcnZpY2VzLlJhdGVNZXRyaWNzEkYKDXNoYXJlX21l",
+            "dHJpY3MYAiABKAsyLy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUuc2Vydmlj",
+            "ZXMuU2hhcmVNZXRyaWNzEk4KEWFnZ3JlZ2F0ZV9tZXRyaWNzGAMgASgLMjMu",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnNlcnZpY2VzLkFnZ3JlZ2F0ZU1l",
+            "dHJpY3MiuQMKC1JhdGVNZXRyaWNzEhMKC2F2ZXJhZ2VfY3BtGAEgASgBEh8K",
+            "F2F2ZXJhZ2VfYWN0aXZlX3ZpZXdfY3BtGAIgASgBEhwKFHRydWV2aWV3X2F2",
+            "ZXJhZ2VfY3B2GAMgASgBEhMKC2F2ZXJhZ2VfY3BjGAQgASgBEhMKC2F2ZXJh",
+            "Z2VfY3BpGAUgASgBEhMKC2F2ZXJhZ2VfY3BlGAYgASgBEhgKEGludGVyYWN0",
+            "aW9uX3JhdGUYByABKAESFwoPZW5nYWdlbWVudF9yYXRlGAggASgBEh8KF2Fj",
+            "dGl2ZV92aWV3X3ZpZXdhYmlsaXR5GAkgASgBEhoKEnRydWV2aWV3X3ZpZXdf",
+            "cmF0ZRgKIAEoARIaChJjbGlja190aHJvdWdoX3JhdGUYCyABKAESIQoZdmlk",
+            "ZW9fY29tcGxldGlvbl9wMjVfcmF0ZRgMIAEoARIhChl2aWRlb19jb21wbGV0",
+            "aW9uX3A1MF9yYXRlGA0gASgBEiEKGXZpZGVvX2NvbXBsZXRpb25fcDc1X3Jh",
+            "dGUYDiABKAESIgoadmlkZW9fY29tcGxldGlvbl9wMTAwX3JhdGUYDyABKAEi",
+            "PgoMU2hhcmVNZXRyaWNzEhYKDnNoYXJlX29mX3ZvaWNlGAEgASgBEhYKDnNo",
+            "YXJlX29mX3NwZW5kGAIgASgBIqwBChBBZ2dyZWdhdGVNZXRyaWNzEgwKBGNv",
+            "c3QYASABKAESHAoUdmlkZW9fdHJ1ZXZpZXdfdmlld3MYAiABKAESEwoLaW1w",
+            "cmVzc2lvbnMYAyABKAESHAoUdmlld2FibGVfaW1wcmVzc2lvbnMYBCABKAES",
+            "DgoGY2xpY2tzGAUgASgBEhQKDGludGVyYWN0aW9ucxgGIAEoARITCgtlbmdh",
+            "Z2VtZW50cxgHIAEoATLNCQoRQmVuY2htYXJrc1NlcnZpY2US3QEKHExpc3RC",
+            "ZW5jaG1hcmtzQXZhaWxhYmxlRGF0ZXMSRi5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MjUuc2VydmljZXMuTGlzdEJlbmNobWFya3NBdmFpbGFibGVEYXRlc1Jl",
+            "cXVlc3QaRy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUuc2VydmljZXMuTGlz",
+            "dEJlbmNobWFya3NBdmFpbGFibGVEYXRlc1Jlc3BvbnNlIiyC0+STAiYiIS92",
+            "MjU6bGlzdEJlbmNobWFya3NBdmFpbGFibGVEYXRlczoBKhLJAQoXTGlzdEJl",
+            "bmNobWFya3NMb2NhdGlvbnMSQS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUu",
+            "c2VydmljZXMuTGlzdEJlbmNobWFya3NMb2NhdGlvbnNSZXF1ZXN0GkIuZ29v",
             "Z2xlLmFkcy5nb29nbGVhZHMudjI1LnNlcnZpY2VzLkxpc3RCZW5jaG1hcmtz",
-            "UHJvZHVjdHNSZXNwb25zZSImgtPkkwIgIhsvdjI1Omxpc3RCZW5jaG1hcmtz",
-            "UHJvZHVjdHM6ASoS1gEKFUxpc3RCZW5jaG1hcmtzU291cmNlcxI/Lmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYyNS5zZXJ2aWNlcy5MaXN0QmVuY2htYXJrc1Nv",
-            "dXJjZXNSZXF1ZXN0GkAuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnNlcnZp",
-            "Y2VzLkxpc3RCZW5jaG1hcmtzU291cmNlc1Jlc3BvbnNlIjraQRJiZW5jaG1h",
-            "cmtzX3NvdXJjZXOC0+STAh8iGi92MjU6bGlzdEJlbmNobWFya3NTb3VyY2Vz",
-            "OgEqEqMCChlHZW5lcmF0ZUJlbmNobWFya3NNZXRyaWNzEkMuZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjI1LnNlcnZpY2VzLkdlbmVyYXRlQmVuY2htYXJrc01l",
-            "dHJpY3NSZXF1ZXN0GkQuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnNlcnZp",
-            "Y2VzLkdlbmVyYXRlQmVuY2htYXJrc01ldHJpY3NSZXNwb25zZSJ72kE1Y3Vz",
-            "dG9tZXJfaWQsbG9jYXRpb24sYmVuY2htYXJrc19zb3VyY2UscHJvZHVjdF9m",
-            "aWx0ZXKC0+STAj0iOC92MjUvY3VzdG9tZXJzL3tjdXN0b21lcl9pZD0qfTpn",
-            "ZW5lcmF0ZUJlbmNobWFya3NNZXRyaWNzOgEqGkXKQRhnb29nbGVhZHMuZ29v",
-            "Z2xlYXBpcy5jb23SQSdodHRwczovL3d3dy5nb29nbGVhcGlzLmNvbS9hdXRo",
-            "L2Fkd29yZHNCggIKJWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUuc2Vy",
-            "dmljZXNCFkJlbmNobWFya3NTZXJ2aWNlUHJvdG9QAVpJZ29vZ2xlLmdvbGFu",
-            "Zy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YyNS9z",
-            "ZXJ2aWNlcztzZXJ2aWNlc6ICA0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRz",
-            "LlYyNS5TZXJ2aWNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYyNVxTZXJ2",
-            "aWNlc+oCJUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyNTo6U2VydmljZXNi",
-            "BnByb3RvMw=="));
+            "TG9jYXRpb25zUmVzcG9uc2UiJ4LT5JMCISIcL3YyNTpsaXN0QmVuY2htYXJr",
+            "c0xvY2F0aW9uczoBKhLFAQoWTGlzdEJlbmNobWFya3NQcm9kdWN0cxJALmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5zZXJ2aWNlcy5MaXN0QmVuY2htYXJr",
+            "c1Byb2R1Y3RzUmVxdWVzdBpBLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5z",
+            "ZXJ2aWNlcy5MaXN0QmVuY2htYXJrc1Byb2R1Y3RzUmVzcG9uc2UiJoLT5JMC",
+            "ICIbL3YyNTpsaXN0QmVuY2htYXJrc1Byb2R1Y3RzOgEqEtYBChVMaXN0QmVu",
+            "Y2htYXJrc1NvdXJjZXMSPy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUuc2Vy",
+            "dmljZXMuTGlzdEJlbmNobWFya3NTb3VyY2VzUmVxdWVzdBpALmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYyNS5zZXJ2aWNlcy5MaXN0QmVuY2htYXJrc1NvdXJj",
+            "ZXNSZXNwb25zZSI62kESYmVuY2htYXJrc19zb3VyY2VzgtPkkwIfIhovdjI1",
+            "Omxpc3RCZW5jaG1hcmtzU291cmNlczoBKhKjAgoZR2VuZXJhdGVCZW5jaG1h",
+            "cmtzTWV0cmljcxJDLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5zZXJ2aWNl",
+            "cy5HZW5lcmF0ZUJlbmNobWFya3NNZXRyaWNzUmVxdWVzdBpELmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYyNS5zZXJ2aWNlcy5HZW5lcmF0ZUJlbmNobWFya3NN",
+            "ZXRyaWNzUmVzcG9uc2Uie9pBNWN1c3RvbWVyX2lkLGxvY2F0aW9uLGJlbmNo",
+            "bWFya3Nfc291cmNlLHByb2R1Y3RfZmlsdGVygtPkkwI9IjgvdjI1L2N1c3Rv",
+            "bWVycy97Y3VzdG9tZXJfaWQ9Kn06Z2VuZXJhdGVCZW5jaG1hcmtzTWV0cmlj",
+            "czoBKhpFykEYZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29t0kEnaHR0cHM6Ly93",
+            "d3cuZ29vZ2xlYXBpcy5jb20vYXV0aC9hZHdvcmRzQoICCiVjb20uZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjI1LnNlcnZpY2VzQhZCZW5jaG1hcmtzU2Vydmlj",
+            "ZVByb3RvUAFaSWdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
+            "aXMvYWRzL2dvb2dsZWFkcy92MjUvc2VydmljZXM7c2VydmljZXOiAgNHQUGq",
+            "AiFHb29nbGUuQWRzLkdvb2dsZUFkcy5WMjUuU2VydmljZXPKAiFHb29nbGVc",
+            "QWRzXEdvb2dsZUFkc1xWMjVcU2VydmljZXPqAiVHb29nbGU6OkFkczo6R29v",
+            "Z2xlQWRzOjpWMjU6OlNlcnZpY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V25.Common.AdditionalApplicationInfoReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Common.DatesReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.BenchmarksMarketingObjectiveReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.BenchmarksSourceTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.BenchmarksTimeGranularityReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -178,10 +193,12 @@ namespace Google.Ads.GoogleAds.V25.Services {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.BenchmarksProductMetadata), global::Google.Ads.GoogleAds.V25.Services.BenchmarksProductMetadata.Parser, new[]{ "ProductName", "ProductCode", "MarketingObjective" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.ListBenchmarksSourcesRequest), global::Google.Ads.GoogleAds.V25.Services.ListBenchmarksSourcesRequest.Parser, new[]{ "BenchmarksSources", "ApplicationInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.ListBenchmarksSourcesResponse), global::Google.Ads.GoogleAds.V25.Services.ListBenchmarksSourcesResponse.Parser, new[]{ "BenchmarksSources" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.BenchmarksSourceMetadata), global::Google.Ads.GoogleAds.V25.Services.BenchmarksSourceMetadata.Parser, new[]{ "BenchmarksSourceType", "IndustryVerticalInfo" }, new[]{ "BenchmarksSourceInfo" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.BenchmarksSourceMetadata), global::Google.Ads.GoogleAds.V25.Services.BenchmarksSourceMetadata.Parser, new[]{ "BenchmarksSourceType", "IndustryVerticalInfo", "CategoryInfo" }, new[]{ "BenchmarksSourceInfo" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.IndustryVerticalInfo), global::Google.Ads.GoogleAds.V25.Services.IndustryVerticalInfo.Parser, new[]{ "IndustryVerticalName", "IndustryVerticalId", "ParentIndustryVerticalId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.GenerateBenchmarksMetricsRequest), global::Google.Ads.GoogleAds.V25.Services.GenerateBenchmarksMetricsRequest.Parser, new[]{ "CustomerId", "DateRange", "Location", "BenchmarksSource", "ProductFilter", "BreakdownDefinition", "CurrencyCode", "CustomerBenchmarksGroup", "ApplicationInfo" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.BenchmarksSource), global::Google.Ads.GoogleAds.V25.Services.BenchmarksSource.Parser, new[]{ "IndustryVerticalId" }, new[]{ "BenchmarksSourceId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.CategoryInfo), global::Google.Ads.GoogleAds.V25.Services.CategoryInfo.Parser, new[]{ "CategoryName", "CategoryId", "CategoryPath" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.GenerateBenchmarksMetricsRequest), global::Google.Ads.GoogleAds.V25.Services.GenerateBenchmarksMetricsRequest.Parser, new[]{ "CustomerId", "DateRange", "Location", "BenchmarksSource", "CategoryFilter", "ProductFilter", "BreakdownDefinition", "CurrencyCode", "CustomerBenchmarksGroup", "ApplicationInfo" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.BenchmarksSource), global::Google.Ads.GoogleAds.V25.Services.BenchmarksSource.Parser, new[]{ "IndustryVerticalId", "AllAdvertisers" }, new[]{ "BenchmarksSourceId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.CategoryFilter), global::Google.Ads.GoogleAds.V25.Services.CategoryFilter.Parser, new[]{ "CategoryIds" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.ProductFilter), global::Google.Ads.GoogleAds.V25.Services.ProductFilter.Parser, new[]{ "ProductList", "MarketingObjectiveList" }, new[]{ "FilterSettings" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.ProductFilter.Types.ProductList), global::Google.Ads.GoogleAds.V25.Services.ProductFilter.Types.ProductList.Parser, new[]{ "ProductCodes" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.ProductFilter.Types.MarketingObjectiveList), global::Google.Ads.GoogleAds.V25.Services.ProductFilter.Types.MarketingObjectiveList.Parser, new[]{ "MarketingObjectives" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.BreakdownDefinition), global::Google.Ads.GoogleAds.V25.Services.BreakdownDefinition.Parser, new[]{ "DateBreakdown" }, null, null, null, null),
@@ -189,8 +206,10 @@ namespace Google.Ads.GoogleAds.V25.Services {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.BreakdownMetrics), global::Google.Ads.GoogleAds.V25.Services.BreakdownMetrics.Parser, new[]{ "BreakdownKey", "CustomerMetrics", "AverageBenchmarksMetrics" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.BreakdownKey), global::Google.Ads.GoogleAds.V25.Services.BreakdownKey.Parser, new[]{ "Dates" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.Metrics), global::Google.Ads.GoogleAds.V25.Services.Metrics.Parser, new[]{ "AverageRateMetrics" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.CustomerMetrics), global::Google.Ads.GoogleAds.V25.Services.CustomerMetrics.Parser, new[]{ "AverageRateMetrics" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.RateMetrics), global::Google.Ads.GoogleAds.V25.Services.RateMetrics.Parser, new[]{ "AverageCpm", "AverageActiveViewCpm", "TrueviewAverageCpv", "AverageCpc", "AverageCpi", "AverageCpe", "InteractionRate", "EngagementRate", "ActiveViewViewability", "TrueviewViewRate", "ClickThroughRate", "VideoCompletionP25Rate", "VideoCompletionP50Rate", "VideoCompletionP75Rate", "VideoCompletionP100Rate" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.CustomerMetrics), global::Google.Ads.GoogleAds.V25.Services.CustomerMetrics.Parser, new[]{ "AverageRateMetrics", "ShareMetrics", "AggregateMetrics" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.RateMetrics), global::Google.Ads.GoogleAds.V25.Services.RateMetrics.Parser, new[]{ "AverageCpm", "AverageActiveViewCpm", "TrueviewAverageCpv", "AverageCpc", "AverageCpi", "AverageCpe", "InteractionRate", "EngagementRate", "ActiveViewViewability", "TrueviewViewRate", "ClickThroughRate", "VideoCompletionP25Rate", "VideoCompletionP50Rate", "VideoCompletionP75Rate", "VideoCompletionP100Rate" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.ShareMetrics), global::Google.Ads.GoogleAds.V25.Services.ShareMetrics.Parser, new[]{ "ShareOfVoice", "ShareOfSpend" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.AggregateMetrics), global::Google.Ads.GoogleAds.V25.Services.AggregateMetrics.Parser, new[]{ "Cost", "VideoTrueviewViews", "Impressions", "ViewableImpressions", "Clicks", "Interactions", "Engagements" }, null, null, null, null)
           }));
     }
     #endregion
@@ -2079,7 +2098,9 @@ namespace Google.Ads.GoogleAds.V25.Services {
         = pb::FieldCodec.ForEnum(10, x => (int) x, x => (global::Google.Ads.GoogleAds.V25.Enums.BenchmarksSourceTypeEnum.Types.BenchmarksSourceType) x);
     private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V25.Enums.BenchmarksSourceTypeEnum.Types.BenchmarksSourceType> benchmarksSources_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V25.Enums.BenchmarksSourceTypeEnum.Types.BenchmarksSourceType>();
     /// <summary>
-    /// Required. The types of benchmarks sources to be returned
+    /// Required. The types of benchmarks sources to be returned. Supported sources
+    /// include INDUSTRY_VERTICAL and CATEGORY. Categories are used as filters for
+    /// scoping the benchmarks analysis when benchmarking against all advertisers.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2505,6 +2526,9 @@ namespace Google.Ads.GoogleAds.V25.Services {
         case BenchmarksSourceInfoOneofCase.IndustryVerticalInfo:
           IndustryVerticalInfo = other.IndustryVerticalInfo.Clone();
           break;
+        case BenchmarksSourceInfoOneofCase.CategoryInfo:
+          CategoryInfo = other.CategoryInfo.Clone();
+          break;
       }
 
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -2546,11 +2570,27 @@ namespace Google.Ads.GoogleAds.V25.Services {
       }
     }
 
+    /// <summary>Field number for the "category_info" field.</summary>
+    public const int CategoryInfoFieldNumber = 3;
+    /// <summary>
+    /// Information on the Product &amp; Service Category.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V25.Services.CategoryInfo CategoryInfo {
+      get { return benchmarksSourceInfoCase_ == BenchmarksSourceInfoOneofCase.CategoryInfo ? (global::Google.Ads.GoogleAds.V25.Services.CategoryInfo) benchmarksSourceInfo_ : null; }
+      set {
+        benchmarksSourceInfo_ = value;
+        benchmarksSourceInfoCase_ = value == null ? BenchmarksSourceInfoOneofCase.None : BenchmarksSourceInfoOneofCase.CategoryInfo;
+      }
+    }
+
     private object benchmarksSourceInfo_;
     /// <summary>Enum of possible cases for the "benchmarks_source_info" oneof.</summary>
     public enum BenchmarksSourceInfoOneofCase {
       None = 0,
       IndustryVerticalInfo = 2,
+      CategoryInfo = 3,
     }
     private BenchmarksSourceInfoOneofCase benchmarksSourceInfoCase_ = BenchmarksSourceInfoOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2583,6 +2623,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
       }
       if (BenchmarksSourceType != other.BenchmarksSourceType) return false;
       if (!object.Equals(IndustryVerticalInfo, other.IndustryVerticalInfo)) return false;
+      if (!object.Equals(CategoryInfo, other.CategoryInfo)) return false;
       if (BenchmarksSourceInfoCase != other.BenchmarksSourceInfoCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -2593,6 +2634,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
       int hash = 1;
       if (BenchmarksSourceType != global::Google.Ads.GoogleAds.V25.Enums.BenchmarksSourceTypeEnum.Types.BenchmarksSourceType.Unspecified) hash ^= BenchmarksSourceType.GetHashCode();
       if (benchmarksSourceInfoCase_ == BenchmarksSourceInfoOneofCase.IndustryVerticalInfo) hash ^= IndustryVerticalInfo.GetHashCode();
+      if (benchmarksSourceInfoCase_ == BenchmarksSourceInfoOneofCase.CategoryInfo) hash ^= CategoryInfo.GetHashCode();
       hash ^= (int) benchmarksSourceInfoCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -2620,6 +2662,10 @@ namespace Google.Ads.GoogleAds.V25.Services {
         output.WriteRawTag(18);
         output.WriteMessage(IndustryVerticalInfo);
       }
+      if (benchmarksSourceInfoCase_ == BenchmarksSourceInfoOneofCase.CategoryInfo) {
+        output.WriteRawTag(26);
+        output.WriteMessage(CategoryInfo);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2638,6 +2684,10 @@ namespace Google.Ads.GoogleAds.V25.Services {
         output.WriteRawTag(18);
         output.WriteMessage(IndustryVerticalInfo);
       }
+      if (benchmarksSourceInfoCase_ == BenchmarksSourceInfoOneofCase.CategoryInfo) {
+        output.WriteRawTag(26);
+        output.WriteMessage(CategoryInfo);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2653,6 +2703,9 @@ namespace Google.Ads.GoogleAds.V25.Services {
       }
       if (benchmarksSourceInfoCase_ == BenchmarksSourceInfoOneofCase.IndustryVerticalInfo) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(IndustryVerticalInfo);
+      }
+      if (benchmarksSourceInfoCase_ == BenchmarksSourceInfoOneofCase.CategoryInfo) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CategoryInfo);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2675,6 +2728,12 @@ namespace Google.Ads.GoogleAds.V25.Services {
             IndustryVerticalInfo = new global::Google.Ads.GoogleAds.V25.Services.IndustryVerticalInfo();
           }
           IndustryVerticalInfo.MergeFrom(other.IndustryVerticalInfo);
+          break;
+        case BenchmarksSourceInfoOneofCase.CategoryInfo:
+          if (CategoryInfo == null) {
+            CategoryInfo = new global::Google.Ads.GoogleAds.V25.Services.CategoryInfo();
+          }
+          CategoryInfo.MergeFrom(other.CategoryInfo);
           break;
       }
 
@@ -2710,6 +2769,15 @@ namespace Google.Ads.GoogleAds.V25.Services {
             IndustryVerticalInfo = subBuilder;
             break;
           }
+          case 26: {
+            global::Google.Ads.GoogleAds.V25.Services.CategoryInfo subBuilder = new global::Google.Ads.GoogleAds.V25.Services.CategoryInfo();
+            if (benchmarksSourceInfoCase_ == BenchmarksSourceInfoOneofCase.CategoryInfo) {
+              subBuilder.MergeFrom(CategoryInfo);
+            }
+            input.ReadMessage(subBuilder);
+            CategoryInfo = subBuilder;
+            break;
+          }
         }
       }
     #endif
@@ -2740,6 +2808,15 @@ namespace Google.Ads.GoogleAds.V25.Services {
             }
             input.ReadMessage(subBuilder);
             IndustryVerticalInfo = subBuilder;
+            break;
+          }
+          case 26: {
+            global::Google.Ads.GoogleAds.V25.Services.CategoryInfo subBuilder = new global::Google.Ads.GoogleAds.V25.Services.CategoryInfo();
+            if (benchmarksSourceInfoCase_ == BenchmarksSourceInfoOneofCase.CategoryInfo) {
+              subBuilder.MergeFrom(CategoryInfo);
+            }
+            input.ReadMessage(subBuilder);
+            CategoryInfo = subBuilder;
             break;
           }
         }
@@ -3034,6 +3111,290 @@ namespace Google.Ads.GoogleAds.V25.Services {
   }
 
   /// <summary>
+  /// The information associated with a Product &amp; Service Category.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CategoryInfo : pb::IMessage<CategoryInfo>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CategoryInfo> _parser = new pb::MessageParser<CategoryInfo>(() => new CategoryInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CategoryInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V25.Services.BenchmarksServiceReflection.Descriptor.MessageTypes[12]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CategoryInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CategoryInfo(CategoryInfo other) : this() {
+      categoryName_ = other.categoryName_;
+      categoryId_ = other.categoryId_;
+      categoryPath_ = other.categoryPath_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CategoryInfo Clone() {
+      return new CategoryInfo(this);
+    }
+
+    /// <summary>Field number for the "category_name" field.</summary>
+    public const int CategoryNameFieldNumber = 1;
+    private string categoryName_ = "";
+    /// <summary>
+    /// The name of the Product &amp; Service Category.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CategoryName {
+      get { return categoryName_; }
+      set {
+        categoryName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "category_id" field.</summary>
+    public const int CategoryIdFieldNumber = 2;
+    private long categoryId_;
+    /// <summary>
+    /// The unique identifier of the Product &amp; Service Category.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long CategoryId {
+      get { return categoryId_; }
+      set {
+        categoryId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "category_path" field.</summary>
+    public const int CategoryPathFieldNumber = 3;
+    private string categoryPath_ = "";
+    /// <summary>
+    /// The full path of the Product &amp; Service Category.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CategoryPath {
+      get { return categoryPath_; }
+      set {
+        categoryPath_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CategoryInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CategoryInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (CategoryName != other.CategoryName) return false;
+      if (CategoryId != other.CategoryId) return false;
+      if (CategoryPath != other.CategoryPath) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (CategoryName.Length != 0) hash ^= CategoryName.GetHashCode();
+      if (CategoryId != 0L) hash ^= CategoryId.GetHashCode();
+      if (CategoryPath.Length != 0) hash ^= CategoryPath.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (CategoryName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(CategoryName);
+      }
+      if (CategoryId != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(CategoryId);
+      }
+      if (CategoryPath.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(CategoryPath);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (CategoryName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(CategoryName);
+      }
+      if (CategoryId != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(CategoryId);
+      }
+      if (CategoryPath.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(CategoryPath);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (CategoryName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CategoryName);
+      }
+      if (CategoryId != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(CategoryId);
+      }
+      if (CategoryPath.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CategoryPath);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CategoryInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.CategoryName.Length != 0) {
+        CategoryName = other.CategoryName;
+      }
+      if (other.CategoryId != 0L) {
+        CategoryId = other.CategoryId;
+      }
+      if (other.CategoryPath.Length != 0) {
+        CategoryPath = other.CategoryPath;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            CategoryName = input.ReadString();
+            break;
+          }
+          case 16: {
+            CategoryId = input.ReadInt64();
+            break;
+          }
+          case 26: {
+            CategoryPath = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            CategoryName = input.ReadString();
+            break;
+          }
+          case 16: {
+            CategoryId = input.ReadInt64();
+            break;
+          }
+          case 26: {
+            CategoryPath = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
   /// Request message for
   /// [BenchmarksService.GenerateBenchmarksMetrics][google.ads.googleads.v25.services.BenchmarksService.GenerateBenchmarksMetrics].
   /// </summary>
@@ -3052,7 +3413,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V25.Services.BenchmarksServiceReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Google.Ads.GoogleAds.V25.Services.BenchmarksServiceReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3076,6 +3437,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
       dateRange_ = other.dateRange_ != null ? other.dateRange_.Clone() : null;
       location_ = other.location_ != null ? other.location_.Clone() : null;
       benchmarksSource_ = other.benchmarksSource_ != null ? other.benchmarksSource_.Clone() : null;
+      categoryFilter_ = other.categoryFilter_ != null ? other.categoryFilter_.Clone() : null;
       productFilter_ = other.productFilter_ != null ? other.productFilter_.Clone() : null;
       breakdownDefinition_ = other.breakdownDefinition_ != null ? other.breakdownDefinition_.Clone() : null;
       currencyCode_ = other.currencyCode_;
@@ -3152,6 +3514,28 @@ namespace Google.Ads.GoogleAds.V25.Services {
       get { return benchmarksSource_; }
       set {
         benchmarksSource_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "category_filter" field.</summary>
+    public const int CategoryFilterFieldNumber = 10;
+    private global::Google.Ads.GoogleAds.V25.Services.CategoryFilter categoryFilter_;
+    /// <summary>
+    /// A list of Product &amp; Service Categories for scoping a YouTube benchmarks
+    /// analysis. For example, when category "/Apparel/Clothing" is selected,
+    /// customer metrics represent Ad performance for "/Apparel/Clothing" Ads only
+    /// and the customer is benchmarking against all advertisers’ Ads in the
+    /// "/Apparel/Clothing" category.
+    ///
+    /// This filter can only be used when `all_advertisers` is used as the
+    /// [benchmarks_source][google.ads.googleads.v25.services.GenerateBenchmarksMetricsRequest.benchmarks_source].
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V25.Services.CategoryFilter CategoryFilter {
+      get { return categoryFilter_; }
+      set {
+        categoryFilter_ = value;
       }
     }
 
@@ -3252,6 +3636,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
       if (!object.Equals(DateRange, other.DateRange)) return false;
       if (!object.Equals(Location, other.Location)) return false;
       if (!object.Equals(BenchmarksSource, other.BenchmarksSource)) return false;
+      if (!object.Equals(CategoryFilter, other.CategoryFilter)) return false;
       if (!object.Equals(ProductFilter, other.ProductFilter)) return false;
       if (!object.Equals(BreakdownDefinition, other.BreakdownDefinition)) return false;
       if (CurrencyCode != other.CurrencyCode) return false;
@@ -3268,6 +3653,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
       if (dateRange_ != null) hash ^= DateRange.GetHashCode();
       if (location_ != null) hash ^= Location.GetHashCode();
       if (benchmarksSource_ != null) hash ^= BenchmarksSource.GetHashCode();
+      if (categoryFilter_ != null) hash ^= CategoryFilter.GetHashCode();
       if (productFilter_ != null) hash ^= ProductFilter.GetHashCode();
       if (breakdownDefinition_ != null) hash ^= BreakdownDefinition.GetHashCode();
       if (CurrencyCode.Length != 0) hash ^= CurrencyCode.GetHashCode();
@@ -3327,6 +3713,10 @@ namespace Google.Ads.GoogleAds.V25.Services {
         output.WriteRawTag(74);
         output.WriteMessage(BreakdownDefinition);
       }
+      if (categoryFilter_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(CategoryFilter);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3373,6 +3763,10 @@ namespace Google.Ads.GoogleAds.V25.Services {
         output.WriteRawTag(74);
         output.WriteMessage(BreakdownDefinition);
       }
+      if (categoryFilter_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(CategoryFilter);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3394,6 +3788,9 @@ namespace Google.Ads.GoogleAds.V25.Services {
       }
       if (benchmarksSource_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(BenchmarksSource);
+      }
+      if (categoryFilter_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CategoryFilter);
       }
       if (productFilter_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ProductFilter);
@@ -3442,6 +3839,12 @@ namespace Google.Ads.GoogleAds.V25.Services {
           BenchmarksSource = new global::Google.Ads.GoogleAds.V25.Services.BenchmarksSource();
         }
         BenchmarksSource.MergeFrom(other.BenchmarksSource);
+      }
+      if (other.categoryFilter_ != null) {
+        if (categoryFilter_ == null) {
+          CategoryFilter = new global::Google.Ads.GoogleAds.V25.Services.CategoryFilter();
+        }
+        CategoryFilter.MergeFrom(other.CategoryFilter);
       }
       if (other.productFilter_ != null) {
         if (productFilter_ == null) {
@@ -3540,6 +3943,13 @@ namespace Google.Ads.GoogleAds.V25.Services {
             input.ReadMessage(BreakdownDefinition);
             break;
           }
+          case 82: {
+            if (categoryFilter_ == null) {
+              CategoryFilter = new global::Google.Ads.GoogleAds.V25.Services.CategoryFilter();
+            }
+            input.ReadMessage(CategoryFilter);
+            break;
+          }
         }
       }
     #endif
@@ -3613,6 +4023,13 @@ namespace Google.Ads.GoogleAds.V25.Services {
             input.ReadMessage(BreakdownDefinition);
             break;
           }
+          case 82: {
+            if (categoryFilter_ == null) {
+              CategoryFilter = new global::Google.Ads.GoogleAds.V25.Services.CategoryFilter();
+            }
+            input.ReadMessage(CategoryFilter);
+            break;
+          }
         }
       }
     }
@@ -3640,7 +4057,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V25.Services.BenchmarksServiceReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Google.Ads.GoogleAds.V25.Services.BenchmarksServiceReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3663,6 +4080,9 @@ namespace Google.Ads.GoogleAds.V25.Services {
       switch (other.BenchmarksSourceIdCase) {
         case BenchmarksSourceIdOneofCase.IndustryVerticalId:
           IndustryVerticalId = other.IndustryVerticalId;
+          break;
+        case BenchmarksSourceIdOneofCase.AllAdvertisers:
+          AllAdvertisers = other.AllAdvertisers;
           break;
       }
 
@@ -3704,11 +4124,44 @@ namespace Google.Ads.GoogleAds.V25.Services {
       }
     }
 
+    /// <summary>Field number for the "all_advertisers" field.</summary>
+    public const int AllAdvertisersFieldNumber = 2;
+    /// <summary>
+    /// Comparison against all advertisers running Ads. This benchmarking option
+    /// must utilize additional filters. Setting the `category_filter` is
+    /// required. One or more categories will scope the metrics of both the
+    /// customer and all advertisers to those selected categories.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool AllAdvertisers {
+      get { return HasAllAdvertisers ? (bool) benchmarksSourceId_ : false; }
+      set {
+        benchmarksSourceId_ = value;
+        benchmarksSourceIdCase_ = BenchmarksSourceIdOneofCase.AllAdvertisers;
+      }
+    }
+    /// <summary>Gets whether the "all_advertisers" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAllAdvertisers {
+      get { return benchmarksSourceIdCase_ == BenchmarksSourceIdOneofCase.AllAdvertisers; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "all_advertisers" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAllAdvertisers() {
+      if (HasAllAdvertisers) {
+        ClearBenchmarksSourceId();
+      }
+    }
+
     private object benchmarksSourceId_;
     /// <summary>Enum of possible cases for the "benchmarks_source_id" oneof.</summary>
     public enum BenchmarksSourceIdOneofCase {
       None = 0,
       IndustryVerticalId = 1,
+      AllAdvertisers = 2,
     }
     private BenchmarksSourceIdOneofCase benchmarksSourceIdCase_ = BenchmarksSourceIdOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3740,6 +4193,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
         return true;
       }
       if (IndustryVerticalId != other.IndustryVerticalId) return false;
+      if (AllAdvertisers != other.AllAdvertisers) return false;
       if (BenchmarksSourceIdCase != other.BenchmarksSourceIdCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -3749,6 +4203,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
     public override int GetHashCode() {
       int hash = 1;
       if (HasIndustryVerticalId) hash ^= IndustryVerticalId.GetHashCode();
+      if (HasAllAdvertisers) hash ^= AllAdvertisers.GetHashCode();
       hash ^= (int) benchmarksSourceIdCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -3772,6 +4227,10 @@ namespace Google.Ads.GoogleAds.V25.Services {
         output.WriteRawTag(8);
         output.WriteInt64(IndustryVerticalId);
       }
+      if (HasAllAdvertisers) {
+        output.WriteRawTag(16);
+        output.WriteBool(AllAdvertisers);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3786,6 +4245,10 @@ namespace Google.Ads.GoogleAds.V25.Services {
         output.WriteRawTag(8);
         output.WriteInt64(IndustryVerticalId);
       }
+      if (HasAllAdvertisers) {
+        output.WriteRawTag(16);
+        output.WriteBool(AllAdvertisers);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3798,6 +4261,9 @@ namespace Google.Ads.GoogleAds.V25.Services {
       int size = 0;
       if (HasIndustryVerticalId) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(IndustryVerticalId);
+      }
+      if (HasAllAdvertisers) {
+        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3814,6 +4280,9 @@ namespace Google.Ads.GoogleAds.V25.Services {
       switch (other.BenchmarksSourceIdCase) {
         case BenchmarksSourceIdOneofCase.IndustryVerticalId:
           IndustryVerticalId = other.IndustryVerticalId;
+          break;
+        case BenchmarksSourceIdOneofCase.AllAdvertisers:
+          AllAdvertisers = other.AllAdvertisers;
           break;
       }
 
@@ -3840,6 +4309,10 @@ namespace Google.Ads.GoogleAds.V25.Services {
             IndustryVerticalId = input.ReadInt64();
             break;
           }
+          case 16: {
+            AllAdvertisers = input.ReadBool();
+            break;
+          }
         }
       }
     #endif
@@ -3861,6 +4334,207 @@ namespace Google.Ads.GoogleAds.V25.Services {
             break;
           case 8: {
             IndustryVerticalId = input.ReadInt64();
+            break;
+          }
+          case 16: {
+            AllAdvertisers = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// A list of Product &amp; Service Categories for scoping benchmarks.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class CategoryFilter : pb::IMessage<CategoryFilter>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CategoryFilter> _parser = new pb::MessageParser<CategoryFilter>(() => new CategoryFilter());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CategoryFilter> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V25.Services.BenchmarksServiceReflection.Descriptor.MessageTypes[15]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CategoryFilter() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CategoryFilter(CategoryFilter other) : this() {
+      categoryIds_ = other.categoryIds_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CategoryFilter Clone() {
+      return new CategoryFilter(this);
+    }
+
+    /// <summary>Field number for the "category_ids" field.</summary>
+    public const int CategoryIdsFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _repeated_categoryIds_codec
+        = pb::FieldCodec.ForString(10);
+    private readonly pbc::RepeatedField<string> categoryIds_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// Required. Product &amp; Service Category IDs. The supported list of IDs can be
+    /// retrieved using
+    /// [BenchmarksService.ListBenchmarksSources][google.ads.googleads.v25.services.BenchmarksService.ListBenchmarksSources].
+    /// The scope of benchmarks analysis will be the union (ORs) of all categories
+    /// supplied.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<string> CategoryIds {
+      get { return categoryIds_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CategoryFilter);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CategoryFilter other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!categoryIds_.Equals(other.categoryIds_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= categoryIds_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      categoryIds_.WriteTo(output, _repeated_categoryIds_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      categoryIds_.WriteTo(ref output, _repeated_categoryIds_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += categoryIds_.CalculateSize(_repeated_categoryIds_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CategoryFilter other) {
+      if (other == null) {
+        return;
+      }
+      categoryIds_.Add(other.categoryIds_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            categoryIds_.AddEntriesFrom(input, _repeated_categoryIds_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            categoryIds_.AddEntriesFrom(ref input, _repeated_categoryIds_codec);
             break;
           }
         }
@@ -3888,7 +4562,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V25.Services.BenchmarksServiceReflection.Descriptor.MessageTypes[14]; }
+      get { return global::Google.Ads.GoogleAds.V25.Services.BenchmarksServiceReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4588,7 +5262,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V25.Services.BenchmarksServiceReflection.Descriptor.MessageTypes[15]; }
+      get { return global::Google.Ads.GoogleAds.V25.Services.BenchmarksServiceReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4801,7 +5475,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V25.Services.BenchmarksServiceReflection.Descriptor.MessageTypes[16]; }
+      get { return global::Google.Ads.GoogleAds.V25.Services.BenchmarksServiceReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5092,7 +5766,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V25.Services.BenchmarksServiceReflection.Descriptor.MessageTypes[17]; }
+      get { return global::Google.Ads.GoogleAds.V25.Services.BenchmarksServiceReflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5403,7 +6077,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V25.Services.BenchmarksServiceReflection.Descriptor.MessageTypes[18]; }
+      get { return global::Google.Ads.GoogleAds.V25.Services.BenchmarksServiceReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5617,7 +6291,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V25.Services.BenchmarksServiceReflection.Descriptor.MessageTypes[19]; }
+      get { return global::Google.Ads.GoogleAds.V25.Services.BenchmarksServiceReflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5830,7 +6504,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V25.Services.BenchmarksServiceReflection.Descriptor.MessageTypes[20]; }
+      get { return global::Google.Ads.GoogleAds.V25.Services.BenchmarksServiceReflection.Descriptor.MessageTypes[22]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5851,6 +6525,8 @@ namespace Google.Ads.GoogleAds.V25.Services {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CustomerMetrics(CustomerMetrics other) : this() {
       averageRateMetrics_ = other.averageRateMetrics_ != null ? other.averageRateMetrics_.Clone() : null;
+      shareMetrics_ = other.shareMetrics_ != null ? other.shareMetrics_.Clone() : null;
+      aggregateMetrics_ = other.aggregateMetrics_ != null ? other.aggregateMetrics_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -5875,6 +6551,41 @@ namespace Google.Ads.GoogleAds.V25.Services {
       }
     }
 
+    /// <summary>Field number for the "share_metrics" field.</summary>
+    public const int ShareMetricsFieldNumber = 2;
+    private global::Google.Ads.GoogleAds.V25.Services.ShareMetrics shareMetrics_;
+    /// <summary>
+    /// Metrics calculated by dividing the metric of the customer by that of the
+    /// selected benchmarks source. These metrics are only returned when:
+    ///
+    /// 1. `all_advertisers` is used as the `benchmarks_source`. Note that the
+    /// request `category_filter` must be set when using `all_advertisers`.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V25.Services.ShareMetrics ShareMetrics {
+      get { return shareMetrics_; }
+      set {
+        shareMetrics_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "aggregate_metrics" field.</summary>
+    public const int AggregateMetricsFieldNumber = 3;
+    private global::Google.Ads.GoogleAds.V25.Services.AggregateMetrics aggregateMetrics_;
+    /// <summary>
+    /// Metrics calculated by aggregating values of a single metric for the
+    /// customer.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V25.Services.AggregateMetrics AggregateMetrics {
+      get { return aggregateMetrics_; }
+      set {
+        aggregateMetrics_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -5891,6 +6602,8 @@ namespace Google.Ads.GoogleAds.V25.Services {
         return true;
       }
       if (!object.Equals(AverageRateMetrics, other.AverageRateMetrics)) return false;
+      if (!object.Equals(ShareMetrics, other.ShareMetrics)) return false;
+      if (!object.Equals(AggregateMetrics, other.AggregateMetrics)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -5899,6 +6612,8 @@ namespace Google.Ads.GoogleAds.V25.Services {
     public override int GetHashCode() {
       int hash = 1;
       if (averageRateMetrics_ != null) hash ^= AverageRateMetrics.GetHashCode();
+      if (shareMetrics_ != null) hash ^= ShareMetrics.GetHashCode();
+      if (aggregateMetrics_ != null) hash ^= AggregateMetrics.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -5921,6 +6636,14 @@ namespace Google.Ads.GoogleAds.V25.Services {
         output.WriteRawTag(10);
         output.WriteMessage(AverageRateMetrics);
       }
+      if (shareMetrics_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(ShareMetrics);
+      }
+      if (aggregateMetrics_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(AggregateMetrics);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -5935,6 +6658,14 @@ namespace Google.Ads.GoogleAds.V25.Services {
         output.WriteRawTag(10);
         output.WriteMessage(AverageRateMetrics);
       }
+      if (shareMetrics_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(ShareMetrics);
+      }
+      if (aggregateMetrics_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(AggregateMetrics);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -5947,6 +6678,12 @@ namespace Google.Ads.GoogleAds.V25.Services {
       int size = 0;
       if (averageRateMetrics_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(AverageRateMetrics);
+      }
+      if (shareMetrics_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ShareMetrics);
+      }
+      if (aggregateMetrics_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AggregateMetrics);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -5965,6 +6702,18 @@ namespace Google.Ads.GoogleAds.V25.Services {
           AverageRateMetrics = new global::Google.Ads.GoogleAds.V25.Services.RateMetrics();
         }
         AverageRateMetrics.MergeFrom(other.AverageRateMetrics);
+      }
+      if (other.shareMetrics_ != null) {
+        if (shareMetrics_ == null) {
+          ShareMetrics = new global::Google.Ads.GoogleAds.V25.Services.ShareMetrics();
+        }
+        ShareMetrics.MergeFrom(other.ShareMetrics);
+      }
+      if (other.aggregateMetrics_ != null) {
+        if (aggregateMetrics_ == null) {
+          AggregateMetrics = new global::Google.Ads.GoogleAds.V25.Services.AggregateMetrics();
+        }
+        AggregateMetrics.MergeFrom(other.AggregateMetrics);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -5990,6 +6739,20 @@ namespace Google.Ads.GoogleAds.V25.Services {
               AverageRateMetrics = new global::Google.Ads.GoogleAds.V25.Services.RateMetrics();
             }
             input.ReadMessage(AverageRateMetrics);
+            break;
+          }
+          case 18: {
+            if (shareMetrics_ == null) {
+              ShareMetrics = new global::Google.Ads.GoogleAds.V25.Services.ShareMetrics();
+            }
+            input.ReadMessage(ShareMetrics);
+            break;
+          }
+          case 26: {
+            if (aggregateMetrics_ == null) {
+              AggregateMetrics = new global::Google.Ads.GoogleAds.V25.Services.AggregateMetrics();
+            }
+            input.ReadMessage(AggregateMetrics);
             break;
           }
         }
@@ -6018,6 +6781,20 @@ namespace Google.Ads.GoogleAds.V25.Services {
             input.ReadMessage(AverageRateMetrics);
             break;
           }
+          case 18: {
+            if (shareMetrics_ == null) {
+              ShareMetrics = new global::Google.Ads.GoogleAds.V25.Services.ShareMetrics();
+            }
+            input.ReadMessage(ShareMetrics);
+            break;
+          }
+          case 26: {
+            if (aggregateMetrics_ == null) {
+              AggregateMetrics = new global::Google.Ads.GoogleAds.V25.Services.AggregateMetrics();
+            }
+            input.ReadMessage(AggregateMetrics);
+            break;
+          }
         }
       }
     }
@@ -6044,7 +6821,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V25.Services.BenchmarksServiceReflection.Descriptor.MessageTypes[21]; }
+      get { return global::Google.Ads.GoogleAds.V25.Services.BenchmarksServiceReflection.Descriptor.MessageTypes[23]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6791,6 +7568,719 @@ namespace Google.Ads.GoogleAds.V25.Services {
           }
           case 121: {
             VideoCompletionP100Rate = input.ReadDouble();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Metrics calculated by dividing the metric of the customer by that of the
+  /// selected benchmarks source.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class ShareMetrics : pb::IMessage<ShareMetrics>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ShareMetrics> _parser = new pb::MessageParser<ShareMetrics>(() => new ShareMetrics());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ShareMetrics> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V25.Services.BenchmarksServiceReflection.Descriptor.MessageTypes[24]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ShareMetrics() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ShareMetrics(ShareMetrics other) : this() {
+      shareOfVoice_ = other.shareOfVoice_;
+      shareOfSpend_ = other.shareOfSpend_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ShareMetrics Clone() {
+      return new ShareMetrics(this);
+    }
+
+    /// <summary>Field number for the "share_of_voice" field.</summary>
+    public const int ShareOfVoiceFieldNumber = 1;
+    private double shareOfVoice_;
+    /// <summary>
+    /// Relative impressions. Share of voice is defined by the customer’s total
+    /// number of impressions divided by the aggregated number of impressions of
+    /// all advertisers in the selected benchmarks source including your own. Share
+    /// of voice is represented on a scale of 0 to 1 precise to 4 decimal places.
+    /// For example, 0.0123 which corresponds to 1.23%.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double ShareOfVoice {
+      get { return shareOfVoice_; }
+      set {
+        shareOfVoice_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "share_of_spend" field.</summary>
+    public const int ShareOfSpendFieldNumber = 2;
+    private double shareOfSpend_;
+    /// <summary>
+    /// Relative spend. Share of spend is defined by the customer’s total cost
+    /// divided by the total aggregated cost of all advertisers in the selected
+    /// benchmarks source including your own. Share of spend is represented on a
+    /// scale of 0 to 1 precise to 4 decimal places. For example, 0.0123 which
+    /// corresponds to 1.23%.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double ShareOfSpend {
+      get { return shareOfSpend_; }
+      set {
+        shareOfSpend_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ShareMetrics);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ShareMetrics other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ShareOfVoice, other.ShareOfVoice)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ShareOfSpend, other.ShareOfSpend)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ShareOfVoice != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ShareOfVoice);
+      if (ShareOfSpend != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ShareOfSpend);
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (ShareOfVoice != 0D) {
+        output.WriteRawTag(9);
+        output.WriteDouble(ShareOfVoice);
+      }
+      if (ShareOfSpend != 0D) {
+        output.WriteRawTag(17);
+        output.WriteDouble(ShareOfSpend);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ShareOfVoice != 0D) {
+        output.WriteRawTag(9);
+        output.WriteDouble(ShareOfVoice);
+      }
+      if (ShareOfSpend != 0D) {
+        output.WriteRawTag(17);
+        output.WriteDouble(ShareOfSpend);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (ShareOfVoice != 0D) {
+        size += 1 + 8;
+      }
+      if (ShareOfSpend != 0D) {
+        size += 1 + 8;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ShareMetrics other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ShareOfVoice != 0D) {
+        ShareOfVoice = other.ShareOfVoice;
+      }
+      if (other.ShareOfSpend != 0D) {
+        ShareOfSpend = other.ShareOfSpend;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 9: {
+            ShareOfVoice = input.ReadDouble();
+            break;
+          }
+          case 17: {
+            ShareOfSpend = input.ReadDouble();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 9: {
+            ShareOfVoice = input.ReadDouble();
+            break;
+          }
+          case 17: {
+            ShareOfSpend = input.ReadDouble();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Metrics calculated by aggregating values of a single metric.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class AggregateMetrics : pb::IMessage<AggregateMetrics>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<AggregateMetrics> _parser = new pb::MessageParser<AggregateMetrics>(() => new AggregateMetrics());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<AggregateMetrics> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V25.Services.BenchmarksServiceReflection.Descriptor.MessageTypes[25]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AggregateMetrics() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AggregateMetrics(AggregateMetrics other) : this() {
+      cost_ = other.cost_;
+      videoTrueviewViews_ = other.videoTrueviewViews_;
+      impressions_ = other.impressions_;
+      viewableImpressions_ = other.viewableImpressions_;
+      clicks_ = other.clicks_;
+      interactions_ = other.interactions_;
+      engagements_ = other.engagements_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AggregateMetrics Clone() {
+      return new AggregateMetrics(this);
+    }
+
+    /// <summary>Field number for the "cost" field.</summary>
+    public const int CostFieldNumber = 1;
+    private double cost_;
+    /// <summary>
+    /// The total cost paid by the customer. Cost is represented in USD by default,
+    /// if unspecified in the request.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double Cost {
+      get { return cost_; }
+      set {
+        cost_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "video_trueview_views" field.</summary>
+    public const int VideoTrueviewViewsFieldNumber = 2;
+    private double videoTrueviewViews_;
+    /// <summary>
+    /// The number of video TrueView views.
+    ///
+    /// See https://support.google.com/google-ads/answer/2375431 for more
+    /// information on TrueView Views.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double VideoTrueviewViews {
+      get { return videoTrueviewViews_; }
+      set {
+        videoTrueviewViews_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "impressions" field.</summary>
+    public const int ImpressionsFieldNumber = 3;
+    private double impressions_;
+    /// <summary>
+    /// The number of times the Ad was shown to users.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double Impressions {
+      get { return impressions_; }
+      set {
+        impressions_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "viewable_impressions" field.</summary>
+    public const int ViewableImpressionsFieldNumber = 4;
+    private double viewableImpressions_;
+    /// <summary>
+    /// The number of impressions that are considered viewable according to the
+    /// Active View criteria.
+    ///
+    /// See https://support.google.com/google-ads/answer/7029393 for more
+    /// information on Active View.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double ViewableImpressions {
+      get { return viewableImpressions_; }
+      set {
+        viewableImpressions_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "clicks" field.</summary>
+    public const int ClicksFieldNumber = 5;
+    private double clicks_;
+    /// <summary>
+    /// The number of clicks received.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double Clicks {
+      get { return clicks_; }
+      set {
+        clicks_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "interactions" field.</summary>
+    public const int InteractionsFieldNumber = 6;
+    private double interactions_;
+    /// <summary>
+    /// The number of interactions. Interactions include physical clicks,
+    /// engagements, and video views that are logged as clicks.
+    ///
+    /// See https://support.google.com/google-ads/answer/2375431 for more
+    /// information on interactions.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double Interactions {
+      get { return interactions_; }
+      set {
+        interactions_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "engagements" field.</summary>
+    public const int EngagementsFieldNumber = 7;
+    private double engagements_;
+    /// <summary>
+    /// The number of engagements. Engagements are ad interactions such as
+    /// expanding a lightbox Ad or clicking on a video teaser.
+    ///
+    /// See https://support.google.com/google-ads/answer/2375431 for more
+    /// information on engagements.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double Engagements {
+      get { return engagements_; }
+      set {
+        engagements_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as AggregateMetrics);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(AggregateMetrics other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Cost, other.Cost)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(VideoTrueviewViews, other.VideoTrueviewViews)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Impressions, other.Impressions)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ViewableImpressions, other.ViewableImpressions)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Clicks, other.Clicks)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Interactions, other.Interactions)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Engagements, other.Engagements)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Cost != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Cost);
+      if (VideoTrueviewViews != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(VideoTrueviewViews);
+      if (Impressions != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Impressions);
+      if (ViewableImpressions != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ViewableImpressions);
+      if (Clicks != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Clicks);
+      if (Interactions != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Interactions);
+      if (Engagements != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Engagements);
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Cost != 0D) {
+        output.WriteRawTag(9);
+        output.WriteDouble(Cost);
+      }
+      if (VideoTrueviewViews != 0D) {
+        output.WriteRawTag(17);
+        output.WriteDouble(VideoTrueviewViews);
+      }
+      if (Impressions != 0D) {
+        output.WriteRawTag(25);
+        output.WriteDouble(Impressions);
+      }
+      if (ViewableImpressions != 0D) {
+        output.WriteRawTag(33);
+        output.WriteDouble(ViewableImpressions);
+      }
+      if (Clicks != 0D) {
+        output.WriteRawTag(41);
+        output.WriteDouble(Clicks);
+      }
+      if (Interactions != 0D) {
+        output.WriteRawTag(49);
+        output.WriteDouble(Interactions);
+      }
+      if (Engagements != 0D) {
+        output.WriteRawTag(57);
+        output.WriteDouble(Engagements);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Cost != 0D) {
+        output.WriteRawTag(9);
+        output.WriteDouble(Cost);
+      }
+      if (VideoTrueviewViews != 0D) {
+        output.WriteRawTag(17);
+        output.WriteDouble(VideoTrueviewViews);
+      }
+      if (Impressions != 0D) {
+        output.WriteRawTag(25);
+        output.WriteDouble(Impressions);
+      }
+      if (ViewableImpressions != 0D) {
+        output.WriteRawTag(33);
+        output.WriteDouble(ViewableImpressions);
+      }
+      if (Clicks != 0D) {
+        output.WriteRawTag(41);
+        output.WriteDouble(Clicks);
+      }
+      if (Interactions != 0D) {
+        output.WriteRawTag(49);
+        output.WriteDouble(Interactions);
+      }
+      if (Engagements != 0D) {
+        output.WriteRawTag(57);
+        output.WriteDouble(Engagements);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Cost != 0D) {
+        size += 1 + 8;
+      }
+      if (VideoTrueviewViews != 0D) {
+        size += 1 + 8;
+      }
+      if (Impressions != 0D) {
+        size += 1 + 8;
+      }
+      if (ViewableImpressions != 0D) {
+        size += 1 + 8;
+      }
+      if (Clicks != 0D) {
+        size += 1 + 8;
+      }
+      if (Interactions != 0D) {
+        size += 1 + 8;
+      }
+      if (Engagements != 0D) {
+        size += 1 + 8;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(AggregateMetrics other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Cost != 0D) {
+        Cost = other.Cost;
+      }
+      if (other.VideoTrueviewViews != 0D) {
+        VideoTrueviewViews = other.VideoTrueviewViews;
+      }
+      if (other.Impressions != 0D) {
+        Impressions = other.Impressions;
+      }
+      if (other.ViewableImpressions != 0D) {
+        ViewableImpressions = other.ViewableImpressions;
+      }
+      if (other.Clicks != 0D) {
+        Clicks = other.Clicks;
+      }
+      if (other.Interactions != 0D) {
+        Interactions = other.Interactions;
+      }
+      if (other.Engagements != 0D) {
+        Engagements = other.Engagements;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 9: {
+            Cost = input.ReadDouble();
+            break;
+          }
+          case 17: {
+            VideoTrueviewViews = input.ReadDouble();
+            break;
+          }
+          case 25: {
+            Impressions = input.ReadDouble();
+            break;
+          }
+          case 33: {
+            ViewableImpressions = input.ReadDouble();
+            break;
+          }
+          case 41: {
+            Clicks = input.ReadDouble();
+            break;
+          }
+          case 49: {
+            Interactions = input.ReadDouble();
+            break;
+          }
+          case 57: {
+            Engagements = input.ReadDouble();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 9: {
+            Cost = input.ReadDouble();
+            break;
+          }
+          case 17: {
+            VideoTrueviewViews = input.ReadDouble();
+            break;
+          }
+          case 25: {
+            Impressions = input.ReadDouble();
+            break;
+          }
+          case 33: {
+            ViewableImpressions = input.ReadDouble();
+            break;
+          }
+          case 41: {
+            Clicks = input.ReadDouble();
+            break;
+          }
+          case 49: {
+            Interactions = input.ReadDouble();
+            break;
+          }
+          case 57: {
+            Engagements = input.ReadDouble();
             break;
           }
         }

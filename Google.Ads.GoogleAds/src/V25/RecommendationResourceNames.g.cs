@@ -301,5 +301,32 @@ namespace Google.Ads.GoogleAds.V25.Resources
         {
             get => new gax::ResourceNameList<CampaignName>(Campaigns, s => string.IsNullOrEmpty(s) ? null : CampaignName.Parse(s, allowUnparsed: true));
         }
+
+        public partial class Types
+        {
+            public partial class CampaignSpecificAppGoalRecommendation
+            {
+                /// <summary>
+                /// <see cref="CustomConversionGoalName"/>-typed view over the <see cref="CurrentCustomGoal"/> resource
+                /// name property.
+                /// </summary>
+                [sys::ObsoleteAttribute]
+                internal CustomConversionGoalName CurrentCustomGoalAsCustomConversionGoalName
+                {
+                    get => string.IsNullOrEmpty(CurrentCustomGoal) ? null : CustomConversionGoalName.Parse(CurrentCustomGoal, allowUnparsed: true);
+                    set => CurrentCustomGoal = value?.ToString() ?? "";
+                }
+
+                /// <summary>
+                /// <see cref="CustomConversionGoalName"/>-typed view over the <see cref="CurrentCustomConversionGoal"/>
+                /// resource name property.
+                /// </summary>
+                internal CustomConversionGoalName CurrentCustomConversionGoalAsCustomConversionGoalName
+                {
+                    get => string.IsNullOrEmpty(CurrentCustomConversionGoal) ? null : CustomConversionGoalName.Parse(CurrentCustomConversionGoal, allowUnparsed: true);
+                    set => CurrentCustomConversionGoal = value?.ToString() ?? "";
+                }
+            }
+        }
     }
 }

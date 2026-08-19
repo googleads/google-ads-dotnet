@@ -538,7 +538,9 @@ namespace Google.Ads.GoogleAds.V25.Services
         /// [RequestError]()
         /// </summary>
         /// <param name="benchmarksSources">
-        /// Required. The types of benchmarks sources to be returned
+        /// Required. The types of benchmarks sources to be returned. Supported sources
+        /// include INDUSTRY_VERTICAL and CATEGORY. Categories are used as filters for
+        /// scoping the benchmarks analysis when benchmarking against all advertisers.
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>The RPC response.</returns>
@@ -564,7 +566,9 @@ namespace Google.Ads.GoogleAds.V25.Services
         /// [RequestError]()
         /// </summary>
         /// <param name="benchmarksSources">
-        /// Required. The types of benchmarks sources to be returned
+        /// Required. The types of benchmarks sources to be returned. Supported sources
+        /// include INDUSTRY_VERTICAL and CATEGORY. Categories are used as filters for
+        /// scoping the benchmarks analysis when benchmarking against all advertisers.
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A Task containing the RPC response.</returns>
@@ -590,7 +594,9 @@ namespace Google.Ads.GoogleAds.V25.Services
         /// [RequestError]()
         /// </summary>
         /// <param name="benchmarksSources">
-        /// Required. The types of benchmarks sources to be returned
+        /// Required. The types of benchmarks sources to be returned. Supported sources
+        /// include INDUSTRY_VERTICAL and CATEGORY. Categories are used as filters for
+        /// scoping the benchmarks analysis when benchmarking against all advertisers.
         /// </param>
         /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
         /// <returns>A Task containing the RPC response.</returns>
