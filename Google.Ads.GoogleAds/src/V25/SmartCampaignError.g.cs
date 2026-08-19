@@ -26,20 +26,24 @@ namespace Google.Ads.GoogleAds.V25.Errors {
           string.Concat(
             "Cjpnb29nbGUvYWRzL2dvb2dsZWFkcy92MjUvZXJyb3JzL3NtYXJ0X2NhbXBh",
             "aWduX2Vycm9yLnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUuZXJy",
-            "b3JzItMCChZTbWFydENhbXBhaWduRXJyb3JFbnVtIrgCChJTbWFydENhbXBh",
+            "b3JzIoEEChZTbWFydENhbXBhaWduRXJyb3JFbnVtIuYDChJTbWFydENhbXBh",
             "aWduRXJyb3ISDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESIAocSU5W",
             "QUxJRF9CVVNJTkVTU19MT0NBVElPTl9JRBACEhQKEElOVkFMSURfQ0FNUEFJ",
             "R04QAxIxCi1CVVNJTkVTU19OQU1FX09SX0JVU0lORVNTX0xPQ0FUSU9OX0lE",
             "X01JU1NJTkcQBBIlCiFSRVFVSVJFRF9TVUdHRVNUSU9OX0ZJRUxEX01JU1NJ",
             "TkcQBRIYChRHRU9fVEFSR0VUU19SRVFVSVJFRBAGEiYKIkNBTk5PVF9ERVRF",
             "Uk1JTkVfU1VHR0VTVElPTl9MT0NBTEUQBxIbChdGSU5BTF9VUkxfTk9UX0NS",
-            "QVdMQUJMRRAIEhMKD0NSRUFUSU9OX0ZBSUxFRBAJQvcBCiNjb20uZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjI1LmVycm9yc0IXU21hcnRDYW1wYWlnbkVycm9y",
-            "UHJvdG9QAVpFZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBp",
-            "cy9hZHMvZ29vZ2xlYWRzL3YyNS9lcnJvcnM7ZXJyb3JzogIDR0FBqgIfR29v",
-            "Z2xlLkFkcy5Hb29nbGVBZHMuVjI1LkVycm9yc8oCH0dvb2dsZVxBZHNcR29v",
-            "Z2xlQWRzXFYyNVxFcnJvcnPqAiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpW",
-            "MjU6OkVycm9yc2IGcHJvdG8z"));
+            "QVdMQUJMRRAIEhMKD0NSRUFUSU9OX0ZBSUxFRBAJEi0KKVZBTElEQVRFX09O",
+            "TFlfR0VORVJBVEVfUE1BWF9OT1RfU1VQUE9SVEVEEAoSKwonR0JQX0VOQUJM",
+            "RURfR0VORVJBVEVfUE1BWF9OT1RfU1VQUE9SVEVEEAsSLQopSU1BR0VfRU5B",
+            "QkxFRF9HRU5FUkFURV9QTUFYX05PVF9TVVBQT1JURUQQDBIhCh1HRU5FUkFU",
+            "RV9QTUFYX0NPTlZFUlRFUlNfRkFJTBANQvcBCiNjb20uZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjI1LmVycm9yc0IXU21hcnRDYW1wYWlnbkVycm9yUHJvdG9Q",
+            "AVpFZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
+            "Z29vZ2xlYWRzL3YyNS9lcnJvcnM7ZXJyb3JzogIDR0FBqgIfR29vZ2xlLkFk",
+            "cy5Hb29nbGVBZHMuVjI1LkVycm9yc8oCH0dvb2dsZVxBZHNcR29vZ2xlQWRz",
+            "XFYyNVxFcnJvcnPqAiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjU6OkVy",
+            "cm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -262,6 +266,22 @@ namespace Google.Ads.GoogleAds.V25.Errors {
         /// New Smart campaigns cannot be created.
         /// </summary>
         [pbr::OriginalName("CREATION_FAILED")] CreationFailed = 9,
+        /// <summary>
+        /// The validate_only generate PMax feature is not supported yet.
+        /// </summary>
+        [pbr::OriginalName("VALIDATE_ONLY_GENERATE_PMAX_NOT_SUPPORTED")] ValidateOnlyGeneratePmaxNotSupported = 10,
+        /// <summary>
+        /// The GBP enabled generate PMax feature is not supported yet.
+        /// </summary>
+        [pbr::OriginalName("GBP_ENABLED_GENERATE_PMAX_NOT_SUPPORTED")] GbpEnabledGeneratePmaxNotSupported = 11,
+        /// <summary>
+        /// The image enabled generate PMax feature is not supported yet.
+        /// </summary>
+        [pbr::OriginalName("IMAGE_ENABLED_GENERATE_PMAX_NOT_SUPPORTED")] ImageEnabledGeneratePmaxNotSupported = 12,
+        /// <summary>
+        /// The Smart Campaign to PMax conversion failed validation.
+        /// </summary>
+        [pbr::OriginalName("GENERATE_PMAX_CONVERTERS_FAIL")] GeneratePmaxConvertersFail = 13,
       }
 
     }

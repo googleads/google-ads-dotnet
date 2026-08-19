@@ -305,12 +305,13 @@ namespace Google.Ads.GoogleAds.V25.Common {
             "IjQKFlJldGFpbEZpbHRlckV4cHJlc3Npb24SEQoEbmFtZRgBIAEoCUgAiAEB",
             "QgcKBV9uYW1lIlsKCVJldGFpbFRhZxISCgV2YWx1ZRgBIAEoCUgAiAEBEhwK",
             "D2V4cHJlc3Npb25fbmFtZRgCIAEoCUgBiAEBQggKBl92YWx1ZUISChBfZXhw",
-            "cmVzc2lvbl9uYW1lQu0BCiNjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1",
-            "LmNvbW1vbkINQ3JpdGVyaWFQcm90b1ABWkVnb29nbGUuZ29sYW5nLm9yZy9n",
-            "ZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjI1L2NvbW1vbjtj",
-            "b21tb26iAgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMjUuQ29tbW9u",
-            "ygIfR29vZ2xlXEFkc1xHb29nbGVBZHNcVjI1XENvbW1vbuoCI0dvb2dsZTo6",
-            "QWRzOjpHb29nbGVBZHM6OlYyNTo6Q29tbW9uYgZwcm90bzM="));
+            "cmVzc2lvbl9uYW1lIjEKCUVudGl0eUJpZBIWCglpdGVtX2NvZGUYASABKAlI",
+            "AIgBAUIMCgpfaXRlbV9jb2RlQu0BCiNjb20uZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjI1LmNvbW1vbkINQ3JpdGVyaWFQcm90b1ABWkVnb29nbGUuZ29sYW5n",
+            "Lm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjI1L2Nv",
+            "bW1vbjtjb21tb26iAgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMjUu",
+            "Q29tbW9uygIfR29vZ2xlXEFkc1xHb29nbGVBZHNcVjI1XENvbW1vbuoCI0dv",
+            "b2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyNTo6Q29tbW9uYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V25.Enums.AgeRangeTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.AppPaymentModelTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.BrandRequestRejectionReasonReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.BrandStateReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.ContentLabelTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.DayOfWeekReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.DeviceReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.GenderTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.HotelDateSelectionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.IncomeRangeTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.InteractionTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.KeywordMatchTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.ListingGroupTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.LocationGroupRadiusUnitsReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.MinuteOfHourReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.ParentalStatusTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.ProductCategoryLevelReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.ProductChannelReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.ProductChannelExclusivityReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.ProductConditionReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.ProductCustomAttributeIndexReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.ProductTypeLevelReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.ProximityRadiusUnitsReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.WebpageConditionOperandReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.WebpageConditionOperatorReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -398,7 +399,8 @@ namespace Google.Ads.GoogleAds.V25.Common {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Common.RetailFilterBundle), global::Google.Ads.GoogleAds.V25.Common.RetailFilterBundle.Parser, new[]{ "SharedSet" }, new[]{ "SharedSet" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Common.RetailFilter), global::Google.Ads.GoogleAds.V25.Common.RetailFilter.Parser, new[]{ "Expression", "Tag" }, new[]{ "Node" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Common.RetailFilterExpression), global::Google.Ads.GoogleAds.V25.Common.RetailFilterExpression.Parser, new[]{ "Name" }, new[]{ "Name" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Common.RetailTag), global::Google.Ads.GoogleAds.V25.Common.RetailTag.Parser, new[]{ "Value", "ExpressionName" }, new[]{ "Value", "ExpressionName" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Common.RetailTag), global::Google.Ads.GoogleAds.V25.Common.RetailTag.Parser, new[]{ "Value", "ExpressionName" }, new[]{ "Value", "ExpressionName" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Common.EntityBid), global::Google.Ads.GoogleAds.V25.Common.EntityBid.Parser, new[]{ "ItemCode" }, new[]{ "ItemCode" }, null, null, null)
           }));
     }
     #endregion
@@ -22463,6 +22465,225 @@ namespace Google.Ads.GoogleAds.V25.Common {
           }
           case 18: {
             ExpressionName = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Represents an entity bid criterion.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class EntityBid : pb::IMessage<EntityBid>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<EntityBid> _parser = new pb::MessageParser<EntityBid>(() => new EntityBid());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<EntityBid> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V25.Common.CriteriaReflection.Descriptor.MessageTypes[85]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public EntityBid() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public EntityBid(EntityBid other) : this() {
+      itemCode_ = other.itemCode_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public EntityBid Clone() {
+      return new EntityBid(this);
+    }
+
+    /// <summary>Field number for the "item_code" field.</summary>
+    public const int ItemCodeFieldNumber = 1;
+    private readonly static string ItemCodeDefaultValue = "";
+
+    private string itemCode_;
+    /// <summary>
+    /// The ID specifying a particular travel entity, such as a hotel, a thing
+    /// to do, or an event.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ItemCode {
+      get { return itemCode_ ?? ItemCodeDefaultValue; }
+      set {
+        itemCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "item_code" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasItemCode {
+      get { return itemCode_ != null; }
+    }
+    /// <summary>Clears the value of the "item_code" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearItemCode() {
+      itemCode_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as EntityBid);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(EntityBid other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ItemCode != other.ItemCode) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasItemCode) hash ^= ItemCode.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasItemCode) {
+        output.WriteRawTag(10);
+        output.WriteString(ItemCode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasItemCode) {
+        output.WriteRawTag(10);
+        output.WriteString(ItemCode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasItemCode) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ItemCode);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(EntityBid other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasItemCode) {
+        ItemCode = other.ItemCode;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            ItemCode = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ItemCode = input.ReadString();
             break;
           }
         }

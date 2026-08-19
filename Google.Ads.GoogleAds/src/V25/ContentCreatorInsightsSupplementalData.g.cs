@@ -26,16 +26,17 @@ namespace Google.Ads.GoogleAds.V25.Enums {
           string.Concat(
             "Ck9nb29nbGUvYWRzL2dvb2dsZWFkcy92MjUvZW51bXMvY29udGVudF9jcmVh",
             "dG9yX2luc2lnaHRzX3N1cHBsZW1lbnRhbF9kYXRhLnByb3RvEh5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MjUuZW51bXMijAEKKkNvbnRlbnRDcmVhdG9ySW5z",
-            "aWdodHNTdXBwbGVtZW50YWxEYXRhRW51bSJeCiZDb250ZW50Q3JlYXRvcklu",
+            "YWRzLmdvb2dsZWFkcy52MjUuZW51bXMipgEKKkNvbnRlbnRDcmVhdG9ySW5z",
+            "aWdodHNTdXBwbGVtZW50YWxEYXRhRW51bSJ4CiZDb250ZW50Q3JlYXRvcklu",
             "c2lnaHRzU3VwcGxlbWVudGFsRGF0YRIPCgtVTlNQRUNJRklFRBAAEgsKB1VO",
-            "S05PV04QARIWChJMT0NBTF9DUkVBVE9SX0RBVEEQA0KFAgoiY29tLmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYyNS5lbnVtc0IrQ29udGVudENyZWF0b3JJbnNp",
-            "Z2h0c1N1cHBsZW1lbnRhbERhdGFQcm90b1ABWkNnb29nbGUuZ29sYW5nLm9y",
-            "Zy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjI1L2VudW1z",
-            "O2VudW1zogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjI1LkVudW1z",
-            "ygIeR29vZ2xlXEFkc1xHb29nbGVBZHNcVjI1XEVudW1z6gIiR29vZ2xlOjpB",
-            "ZHM6Okdvb2dsZUFkczo6VjI1OjpFbnVtc2IGcHJvdG8z"));
+            "S05PV04QARIYChRCUkFORF9TRU5USU1FTlRfREFUQRACEhYKEkxPQ0FMX0NS",
+            "RUFUT1JfREFUQRADQoUCCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1",
+            "LmVudW1zQitDb250ZW50Q3JlYXRvckluc2lnaHRzU3VwcGxlbWVudGFsRGF0",
+            "YVByb3RvUAFaQ2dvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFw",
+            "aXMvYWRzL2dvb2dsZWFkcy92MjUvZW51bXM7ZW51bXOiAgNHQUGqAh5Hb29n",
+            "bGUuQWRzLkdvb2dsZUFkcy5WMjUuRW51bXPKAh5Hb29nbGVcQWRzXEdvb2ds",
+            "ZUFkc1xWMjVcRW51bXPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjU6",
+            "OkVudW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -226,6 +227,16 @@ namespace Google.Ads.GoogleAds.V25.Enums {
         /// The value is unknown in this version.
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
+        /// <summary>
+        /// Populate brand sentiment data in
+        /// [ContentCreatorInsightsService.GenerateTrendingInsights][google.ads.googleads.v25.services.ContentCreatorInsightsService.GenerateTrendingInsights].
+        /// This is only available when requesting trending insights for a brand
+        /// topic. A brand topic is a Knowledge Graph entity that is tagged with
+        /// [BRAND][google.ads.googleads.v25.enums.InsightsKnowledgeGraphEntityCapabilitiesEnum.InsightsKnowledgeGraphEntityCapabilities.BRAND].
+        /// Use [AudienceInsightsService.ListAudienceInsightsAttributes][] to get the
+        /// list of supported Knowledge Graph entities.
+        /// </summary>
+        [pbr::OriginalName("BRAND_SENTIMENT_DATA")] BrandSentimentData = 2,
         /// <summary>
         /// Populate local creator data in
         /// [ContentCreatorInsightsService.GenerateTrendingInsights][google.ads.googleads.v25.services.ContentCreatorInsightsService.GenerateTrendingInsights]

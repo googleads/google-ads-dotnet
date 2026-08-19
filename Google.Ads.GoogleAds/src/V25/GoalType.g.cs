@@ -226,8 +226,8 @@ namespace Google.Ads.GoogleAds.V25.Enums {
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
         /// Retention goal, which allows advertisers to optimize campaigns to win
-        /// back lapsed customers.
-        /// (https://support.google.com/google-ads/answer/14792043?hl=en)
+        /// back lapsed customers. See
+        /// https://support.google.com/google-ads/answer/14792043 to learn more.
         /// </summary>
         [pbr::OriginalName("CUSTOMER_RETENTION")] CustomerRetention = 3,
         /// <summary>

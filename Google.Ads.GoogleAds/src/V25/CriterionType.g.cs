@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V25.Enums {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjNnb29nbGUvYWRzL2dvb2dsZWFkcy92MjUvZW51bXMvY3JpdGVyaW9uX3R5",
-            "cGUucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5lbnVtcyK/BwoR",
-            "Q3JpdGVyaW9uVHlwZUVudW0iqQcKDUNyaXRlcmlvblR5cGUSDwoLVU5TUEVD",
+            "cGUucHJvdG8SHmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5lbnVtcyLaBwoR",
+            "Q3JpdGVyaW9uVHlwZUVudW0ixAcKDUNyaXRlcmlvblR5cGUSDwoLVU5TUEVD",
             "SUZJRUQQABILCgdVTktOT1dOEAESCwoHS0VZV09SRBACEg0KCVBMQUNFTUVO",
             "VBADEhcKE01PQklMRV9BUFBfQ0FURUdPUlkQBBIWChJNT0JJTEVfQVBQTElD",
             "QVRJT04QBRIKCgZERVZJQ0UQBhIMCghMT0NBVElPThAHEhEKDUxJU1RJTkdf",
@@ -46,13 +46,14 @@ namespace Google.Ads.GoogleAds.V25.Enums {
             "Eg4KCkxJRkVfRVZFTlQQKRIQCgxXRUJQQUdFX0xJU1QQKhIQCgxWSURFT19M",
             "SU5FVVAQKxISCg5QTEFDRU1FTlRfTElTVBAsEiUKIVZFUlRJQ0FMX0FEU19J",
             "VEVNX0dST1VQX1JVTEVfTElTVBAtEiAKHFZFUlRJQ0FMX0FEU19JVEVNX0dS",
-            "T1VQX1JVTEUQLhIZChRSRVRBSUxfRklMVEVSX0JVTkRMRRC0ARISCg1SRVRB",
-            "SUxfRklMVEVSELUBQuwBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1",
-            "LmVudW1zQhJDcml0ZXJpb25UeXBlUHJvdG9QAVpDZ29vZ2xlLmdvbGFuZy5v",
-            "cmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YyNS9lbnVt",
-            "cztlbnVtc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYyNS5FbnVt",
-            "c8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYyNVxFbnVtc+oCIkdvb2dsZTo6",
-            "QWRzOjpHb29nbGVBZHM6OlYyNTo6RW51bXNiBnByb3RvMw=="));
+            "T1VQX1JVTEUQLhIZChVWRVJUSUNBTF9BRFNfSVRFTV9CSUQQLxIZChRSRVRB",
+            "SUxfRklMVEVSX0JVTkRMRRC0ARISCg1SRVRBSUxfRklMVEVSELUBQuwBCiJj",
+            "b20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LmVudW1zQhJDcml0ZXJpb25U",
+            "eXBlUHJvdG9QAVpDZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xl",
+            "YXBpcy9hZHMvZ29vZ2xlYWRzL3YyNS9lbnVtcztlbnVtc6ICA0dBQaoCHkdv",
+            "b2dsZS5BZHMuR29vZ2xlQWRzLlYyNS5FbnVtc8oCHkdvb2dsZVxBZHNcR29v",
+            "Z2xlQWRzXFYyNVxFbnVtc+oCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYy",
+            "NTo6RW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -422,6 +423,10 @@ namespace Google.Ads.GoogleAds.V25.Enums {
         /// A rule for an item group in Vertical Ads.
         /// </summary>
         [pbr::OriginalName("VERTICAL_ADS_ITEM_GROUP_RULE")] VerticalAdsItemGroupRule = 46,
+        /// <summary>
+        /// A bid for a Vertical Ads item.
+        /// </summary>
+        [pbr::OriginalName("VERTICAL_ADS_ITEM_BID")] VerticalAdsItemBid = 47,
         /// <summary>
         /// Retail Filter Bundle for linking a retail filter shared set to an ad
         /// group.

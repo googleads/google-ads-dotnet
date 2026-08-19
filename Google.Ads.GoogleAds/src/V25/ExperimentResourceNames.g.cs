@@ -270,5 +270,15 @@ namespace Google.Ads.GoogleAds.V25.Resources
             get => string.IsNullOrEmpty(Name) ? null : gagvr::ExperimentName.Parse(Name, allowUnparsed: true);
             set => Name = value?.ToString() ?? "";
         }
+
+        /// <summary>
+        /// <see cref="LiftMeasurementConfigName"/>-typed view over the <see cref="LiftMeasurementConfig"/> resource
+        /// name property.
+        /// </summary>
+        internal LiftMeasurementConfigName LiftMeasurementConfigAsLiftMeasurementConfigName
+        {
+            get => string.IsNullOrEmpty(LiftMeasurementConfig) ? null : LiftMeasurementConfigName.Parse(LiftMeasurementConfig, allowUnparsed: true);
+            set => LiftMeasurementConfig = value?.ToString() ?? "";
+        }
     }
 }

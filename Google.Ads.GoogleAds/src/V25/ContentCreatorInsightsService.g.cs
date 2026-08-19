@@ -34,141 +34,158 @@ namespace Google.Ads.GoogleAds.V25.Services {
             "MjUvZW51bXMvY29udGVudF9jcmVhdG9yX2luc2lnaHRzX3N1cHBsZW1lbnRh",
             "bF9kYXRhLnByb3RvGjNnb29nbGUvYWRzL2dvb2dsZWFkcy92MjUvZW51bXMv",
             "aW5zaWdodHNfdHJlbmQucHJvdG8aPGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3Yy",
-            "NS9lbnVtcy9wYXJ0bmVyc2hpcF9vcHBvcnR1bml0eS5wcm90bxocZ29vZ2xl",
-            "L2FwaS9hbm5vdGF0aW9ucy5wcm90bxoXZ29vZ2xlL2FwaS9jbGllbnQucHJv",
-            "dG8aH2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8ixgkKHkdlbmVy",
-            "YXRlQ3JlYXRvckluc2lnaHRzUmVxdWVzdBIYCgtjdXN0b21lcl9pZBgBIAEo",
-            "CUID4EECEiQKF2N1c3RvbWVyX2luc2lnaHRzX2dyb3VwGAIgASgJQgPgQQIS",
-            "YgoZaW5zaWdodHNfYXBwbGljYXRpb25faW5mbxgIIAEoCzI6Lmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYyNS5jb21tb24uQWRkaXRpb25hbEFwcGxpY2F0aW9u",
-            "SW5mb0ID4EEBEk0KEWNvdW50cnlfbG9jYXRpb25zGAYgAygLMi0uZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjI1LmNvbW1vbi5Mb2NhdGlvbkluZm9CA+BBAhJM",
-            "ChVzdWJfY291bnRyeV9sb2NhdGlvbnMYByADKAsyLS5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52MjUuY29tbW9uLkxvY2F0aW9uSW5mbxKRAQoRc3VwcGxlbWVu",
-            "dGFsX2RhdGEYCiADKA4ycS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUuZW51",
-            "bXMuQ29udGVudENyZWF0b3JJbnNpZ2h0c1N1cHBsZW1lbnRhbERhdGFFbnVt",
-            "LkNvbnRlbnRDcmVhdG9ySW5zaWdodHNTdXBwbGVtZW50YWxEYXRhQgPgQQES",
-            "bwoRc2VhcmNoX2F0dHJpYnV0ZXMYAyABKAsyUi5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MjUuc2VydmljZXMuR2VuZXJhdGVDcmVhdG9ySW5zaWdodHNSZXF1",
-            "ZXN0LlNlYXJjaEF0dHJpYnV0ZXNIABJsCg9zZWFyY2hfY2hhbm5lbHMYBCAB",
-            "KAsyUS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUuc2VydmljZXMuR2VuZXJh",
-            "dGVDcmVhdG9ySW5zaWdodHNSZXF1ZXN0LllvdVR1YmVDaGFubmVsc0gAEkgK",
-            "DXNlYXJjaF90b3BpY3MYCSABKAsyLy5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MjUuc2VydmljZXMuU2VhcmNoVG9waWNzSAAasgIKEFNlYXJjaEF0dHJpYnV0",
-            "ZXMSXAoTYXVkaWVuY2VfYXR0cmlidXRlcxgBIAMoCzI6Lmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYyNS5jb21tb24uQXVkaWVuY2VJbnNpZ2h0c0F0dHJpYnV0",
-            "ZUID4EEBEmMKFWF1ZGllbmNlX2NvbWJpbmF0aW9ucxgDIAMoCzI/Lmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYyNS5jb21tb24uSW5zaWdodHNBdWRpZW5jZUF0",
-            "dHJpYnV0ZUdyb3VwQgPgQQESWwoSY3JlYXRvcl9hdHRyaWJ1dGVzGAIgAygL",
-            "MjouZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LmNvbW1vbi5BdWRpZW5jZUlu",
-            "c2lnaHRzQXR0cmlidXRlQgPgQQEaZQoPWW91VHViZUNoYW5uZWxzElIKEHlv",
-            "dXR1YmVfY2hhbm5lbHMYASADKAsyMy5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MjUuY29tbW9uLllvdVR1YmVDaGFubmVsSW5mb0ID4EEBQgoKCGNyaXRlcmlh",
-            "ItEBCh9HZW5lcmF0ZUNyZWF0b3JJbnNpZ2h0c1Jlc3BvbnNlElMKEGNyZWF0",
-            "b3JfaW5zaWdodHMYASADKAsyOS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUu",
-            "c2VydmljZXMuWW91VHViZUNyZWF0b3JJbnNpZ2h0cxJZChZsb2NhbF9jcmVh",
-            "dG9yX2luc2lnaHRzGAIgAygLMjkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1",
-            "LnNlcnZpY2VzLllvdVR1YmVDcmVhdG9ySW5zaWdodHMingUKH0dlbmVyYXRl",
-            "VHJlbmRpbmdJbnNpZ2h0c1JlcXVlc3QSGAoLY3VzdG9tZXJfaWQYASABKAlC",
-            "A+BBAhIkChdjdXN0b21lcl9pbnNpZ2h0c19ncm91cBgCIAEoCUID4EECEmIK",
-            "GWluc2lnaHRzX2FwcGxpY2F0aW9uX2luZm8YBiABKAsyOi5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MjUuY29tbW9uLkFkZGl0aW9uYWxBcHBsaWNhdGlvbklu",
-            "Zm9CA+BBARJMChBjb3VudHJ5X2xvY2F0aW9uGAMgASgLMi0uZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjI1LmNvbW1vbi5Mb2NhdGlvbkluZm9CA+BBAhJRChVz",
-            "dWJfY291bnRyeV9sb2NhdGlvbnMYCCADKAsyLS5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MjUuY29tbW9uLkxvY2F0aW9uSW5mb0ID4EEBEpEBChFzdXBwbGVt",
-            "ZW50YWxfZGF0YRgHIAMoDjJxLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5l",
-            "bnVtcy5Db250ZW50Q3JlYXRvckluc2lnaHRzU3VwcGxlbWVudGFsRGF0YUVu",
-            "dW0uQ29udGVudENyZWF0b3JJbnNpZ2h0c1N1cHBsZW1lbnRhbERhdGFCA+BB",
-            "ARJMCg9zZWFyY2hfYXVkaWVuY2UYBCABKAsyMS5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MjUuc2VydmljZXMuU2VhcmNoQXVkaWVuY2VIABJICg1zZWFyY2hf",
-            "dG9waWNzGAUgASgLMi8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnNlcnZp",
-            "Y2VzLlNlYXJjaFRvcGljc0gAQgoKCGNyaXRlcmlhImsKIEdlbmVyYXRlVHJl",
-            "bmRpbmdJbnNpZ2h0c1Jlc3BvbnNlEkcKDnRyZW5kX2luc2lnaHRzGAEgAygL",
-            "Mi8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnNlcnZpY2VzLlRyZW5kSW5z",
-            "aWdodCKDAQoWWW91VHViZUNyZWF0b3JJbnNpZ2h0cxIUCgxjcmVhdG9yX25h",
-            "bWUYASABKAkSUwoQY3JlYXRvcl9jaGFubmVscxgCIAMoCzI5Lmdvb2dsZS5h",
-            "ZHMuZ29vZ2xlYWRzLnYyNS5zZXJ2aWNlcy5Zb3VUdWJlQ2hhbm5lbEluc2ln",
-            "aHRzIq8ECg5Zb3VUdWJlTWV0cmljcxIYChBzdWJzY3JpYmVyX2NvdW50GAEg",
-            "ASgDEhMKC3ZpZXdzX2NvdW50GAIgASgDEhMKC3ZpZGVvX2NvdW50GAMgASgD",
-            "EhMKC2xpa2VzX2NvdW50GAUgASgDEhQKDHNoYXJlc19jb3VudBgGIAEoAxIW",
-            "Cg5jb21tZW50c19jb3VudBgHIAEoAxIXCg9lbmdhZ2VtZW50X3JhdGUYCCAB",
-            "KAESHwoXYXZlcmFnZV92aWV3c19wZXJfdmlkZW8YCSABKAESHwoXYXZlcmFn",
-            "ZV9saWtlc19wZXJfdmlkZW8YCiABKAESIAoYYXZlcmFnZV9zaGFyZXNfcGVy",
-            "X3ZpZGVvGAsgASgBEiIKGmF2ZXJhZ2VfY29tbWVudHNfcGVyX3ZpZGVvGAwg",
-            "ASgBEhoKEnNob3J0c192aWV3c19jb3VudBgNIAEoAxIaChJzaG9ydHNfdmlk",
-            "ZW9fY291bnQYDiABKAMSIAoYaXNfYWN0aXZlX3Nob3J0c19jcmVhdG9yGAQg",
-            "ASgIEiUKHWlzX2FjdGl2ZV9saXZlX3N0cmVhbV9jcmVhdG9yGBAgASgIEnQK",
-            "GXBhcnRuZXJzaGlwX29wcG9ydHVuaXRpZXMYESADKA4yUS5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MjUuZW51bXMuUGFydG5lcnNoaXBPcHBvcnR1bml0eUVu",
-            "dW0uUGFydG5lcnNoaXBPcHBvcnR1bml0eSLNBgoWWW91VHViZUNoYW5uZWxJ",
-            "bnNpZ2h0cxIUCgxkaXNwbGF5X25hbWUYASABKAkSTAoPeW91dHViZV9jaGFu",
-            "bmVsGAIgASgLMjMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LmNvbW1vbi5Z",
-            "b3VUdWJlQ2hhbm5lbEluZm8SEwoLY2hhbm5lbF91cmwYCSABKAkSGwoTY2hh",
-            "bm5lbF9kZXNjcmlwdGlvbhgKIAEoCRIOCgZoYW5kbGUYCyABKAkSFQoNdGh1",
-            "bWJuYWlsX3VybBgMIAEoCRIUCgxwdWJsaXNoX2RhdGUYDSABKAkSRwoQY291",
-            "bnRyeV9sb2NhdGlvbhgOIAEoCzItLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
-            "NS5jb21tb24uTG9jYXRpb25JbmZvEkoKD2NoYW5uZWxfbWV0cmljcxgDIAEo",
-            "CzIxLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5zZXJ2aWNlcy5Zb3VUdWJl",
-            "TWV0cmljcxIiChpkYXRhX3NoYXJpbmdfY29uc2VudF9naXZlbhgSIAEoCBJn",
-            "ChtjaGFubmVsX2F1ZGllbmNlX2F0dHJpYnV0ZXMYByADKAsyQi5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MjUuY29tbW9uLkF1ZGllbmNlSW5zaWdodHNBdHRy",
-            "aWJ1dGVNZXRhZGF0YRJeChJjaGFubmVsX2F0dHJpYnV0ZXMYBSADKAsyQi5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MjUuY29tbW9uLkF1ZGllbmNlSW5zaWdo",
-            "dHNBdHRyaWJ1dGVNZXRhZGF0YRJWCgp0b3BfdmlkZW9zGAggAygLMkIuZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjI1LmNvbW1vbi5BdWRpZW5jZUluc2lnaHRz",
-            "QXR0cmlidXRlTWV0YWRhdGESVwoWbGFuZ3VhZ2VfZGlzdHJpYnV0aW9ucxgP",
-            "IAMoCzI3Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5zZXJ2aWNlcy5MYW5n",
-            "dWFnZURpc3RyaWJ1dGlvbhIUCgxjaGFubmVsX3R5cGUYBiABKAkSFwoPcmVs",
-            "ZXZhbmNlX3Njb3JlGBAgASgBItMBCg5TZWFyY2hBdWRpZW5jZRJcChNhdWRp",
-            "ZW5jZV9hdHRyaWJ1dGVzGAEgAygLMjouZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djI1LmNvbW1vbi5BdWRpZW5jZUluc2lnaHRzQXR0cmlidXRlQgPgQQISYwoV",
-            "YXVkaWVuY2VfY29tYmluYXRpb25zGAIgAygLMj8uZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjI1LmNvbW1vbi5JbnNpZ2h0c0F1ZGllbmNlQXR0cmlidXRlR3Jv",
-            "dXBCA+BBASJeCgxTZWFyY2hUb3BpY3MSTgoIZW50aXRpZXMYASADKAsyNy5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MjUuY29tbW9uLkF1ZGllbmNlSW5zaWdo",
-            "dHNFbnRpdHlCA+BBAiLrBAoMVHJlbmRJbnNpZ2h0ElsKD3RyZW5kX2F0dHJp",
-            "YnV0ZRgBIAEoCzJCLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5jb21tb24u",
-            "QXVkaWVuY2VJbnNpZ2h0c0F0dHJpYnV0ZU1ldGFkYXRhEk0KDXRyZW5kX21l",
-            "dHJpY3MYAiABKAsyNi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUuc2Vydmlj",
-            "ZXMuVHJlbmRJbnNpZ2h0TWV0cmljcxJOCgV0cmVuZBgDIAEoDjI/Lmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYyNS5lbnVtcy5JbnNpZ2h0c1RyZW5kRW51bS5J",
-            "bnNpZ2h0c1RyZW5kElMKEXRyZW5kX2RhdGFfcG9pbnRzGAYgAygLMjguZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjI1LnNlcnZpY2VzLlRyZW5kSW5zaWdodERh",
-            "dGFQb2ludBJaCg5yZWxhdGVkX3ZpZGVvcxgEIAMoCzJCLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYyNS5jb21tb24uQXVkaWVuY2VJbnNpZ2h0c0F0dHJpYnV0",
-            "ZU1ldGFkYXRhElMKEHJlbGF0ZWRfY3JlYXRvcnMYBSADKAsyOS5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MjUuc2VydmljZXMuWW91VHViZUNyZWF0b3JJbnNp",
-            "Z2h0cxJZChZyZWxhdGVkX2xvY2FsX2NyZWF0b3JzGAggAygLMjkuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjI1LnNlcnZpY2VzLllvdVR1YmVDcmVhdG9ySW5z",
-            "aWdodHMifQoTVHJlbmRJbnNpZ2h0TWV0cmljcxITCgt2aWV3c19jb3VudBgB",
-            "IAEoAxIbChN2aWV3c19pbmRleGVkX3ZhbHVlGAQgASgDEhYKDmF1ZGllbmNl",
-            "X3NoYXJlGAIgASgBEhwKFHRyZW5kX2NoYW5nZV9wZXJjZW50GAMgASgBInUK",
-            "FVRyZW5kSW5zaWdodERhdGFQb2ludBINCgVtb250aBgBIAEoCRJNCg10cmVu",
-            "ZF9tZXRyaWNzGAIgASgLMjYuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnNl",
-            "cnZpY2VzLlRyZW5kSW5zaWdodE1ldHJpY3MiQQoUTGFuZ3VhZ2VEaXN0cmli",
-            "dXRpb24SFQoNbGFuZ3VhZ2VfY29kZRgBIAEoCRISCgpwcm9wb3J0aW9uGAIg",
-            "ASgBMrYECh1Db250ZW50Q3JlYXRvckluc2lnaHRzU2VydmljZRLjAQoXR2Vu",
-            "ZXJhdGVDcmVhdG9ySW5zaWdodHMSQS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MjUuc2VydmljZXMuR2VuZXJhdGVDcmVhdG9ySW5zaWdodHNSZXF1ZXN0GkIu",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnNlcnZpY2VzLkdlbmVyYXRlQ3Jl",
-            "YXRvckluc2lnaHRzUmVzcG9uc2UiQYLT5JMCOyI2L3YyNS9jdXN0b21lcnMv",
-            "e2N1c3RvbWVyX2lkPSp9OmdlbmVyYXRlQ3JlYXRvckluc2lnaHRzOgEqEucB",
-            "ChhHZW5lcmF0ZVRyZW5kaW5nSW5zaWdodHMSQi5nb29nbGUuYWRzLmdvb2ds",
-            "ZWFkcy52MjUuc2VydmljZXMuR2VuZXJhdGVUcmVuZGluZ0luc2lnaHRzUmVx",
-            "dWVzdBpDLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5zZXJ2aWNlcy5HZW5l",
-            "cmF0ZVRyZW5kaW5nSW5zaWdodHNSZXNwb25zZSJCgtPkkwI8IjcvdjI1L2N1",
-            "c3RvbWVycy97Y3VzdG9tZXJfaWQ9Kn06Z2VuZXJhdGVUcmVuZGluZ0luc2ln",
-            "aHRzOgEqGkXKQRhnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb23SQSdodHRwczov",
-            "L3d3dy5nb29nbGVhcGlzLmNvbS9hdXRoL2Fkd29yZHNCjgIKJWNvbS5nb29n",
-            "bGUuYWRzLmdvb2dsZWFkcy52MjUuc2VydmljZXNCIkNvbnRlbnRDcmVhdG9y",
-            "SW5zaWdodHNTZXJ2aWNlUHJvdG9QAVpJZ29vZ2xlLmdvbGFuZy5vcmcvZ2Vu",
-            "cHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YyNS9zZXJ2aWNlcztz",
-            "ZXJ2aWNlc6ICA0dBQaoCIUdvb2dsZS5BZHMuR29vZ2xlQWRzLlYyNS5TZXJ2",
-            "aWNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYyNVxTZXJ2aWNlc+oCJUdv",
-            "b2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyNTo6U2VydmljZXNiBnByb3RvMw=="));
+            "NS9lbnVtcy9wYXJ0bmVyc2hpcF9vcHBvcnR1bml0eS5wcm90bxouZ29vZ2xl",
+            "L2Fkcy9nb29nbGVhZHMvdjI1L2VudW1zL3NlbnRpbWVudC5wcm90bxocZ29v",
+            "Z2xlL2FwaS9hbm5vdGF0aW9ucy5wcm90bxoXZ29vZ2xlL2FwaS9jbGllbnQu",
+            "cHJvdG8aH2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8ixgkKHkdl",
+            "bmVyYXRlQ3JlYXRvckluc2lnaHRzUmVxdWVzdBIYCgtjdXN0b21lcl9pZBgB",
+            "IAEoCUID4EECEiQKF2N1c3RvbWVyX2luc2lnaHRzX2dyb3VwGAIgASgJQgPg",
+            "QQISYgoZaW5zaWdodHNfYXBwbGljYXRpb25faW5mbxgIIAEoCzI6Lmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYyNS5jb21tb24uQWRkaXRpb25hbEFwcGxpY2F0",
+            "aW9uSW5mb0ID4EEBEk0KEWNvdW50cnlfbG9jYXRpb25zGAYgAygLMi0uZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjI1LmNvbW1vbi5Mb2NhdGlvbkluZm9CA+BB",
+            "AhJMChVzdWJfY291bnRyeV9sb2NhdGlvbnMYByADKAsyLS5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MjUuY29tbW9uLkxvY2F0aW9uSW5mbxKRAQoRc3VwcGxl",
+            "bWVudGFsX2RhdGEYCiADKA4ycS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUu",
+            "ZW51bXMuQ29udGVudENyZWF0b3JJbnNpZ2h0c1N1cHBsZW1lbnRhbERhdGFF",
+            "bnVtLkNvbnRlbnRDcmVhdG9ySW5zaWdodHNTdXBwbGVtZW50YWxEYXRhQgPg",
+            "QQESbwoRc2VhcmNoX2F0dHJpYnV0ZXMYAyABKAsyUi5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MjUuc2VydmljZXMuR2VuZXJhdGVDcmVhdG9ySW5zaWdodHNS",
+            "ZXF1ZXN0LlNlYXJjaEF0dHJpYnV0ZXNIABJsCg9zZWFyY2hfY2hhbm5lbHMY",
+            "BCABKAsyUS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUuc2VydmljZXMuR2Vu",
+            "ZXJhdGVDcmVhdG9ySW5zaWdodHNSZXF1ZXN0LllvdVR1YmVDaGFubmVsc0gA",
+            "EkgKDXNlYXJjaF90b3BpY3MYCSABKAsyLy5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MjUuc2VydmljZXMuU2VhcmNoVG9waWNzSAAasgIKEFNlYXJjaEF0dHJp",
+            "YnV0ZXMSXAoTYXVkaWVuY2VfYXR0cmlidXRlcxgBIAMoCzI6Lmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYyNS5jb21tb24uQXVkaWVuY2VJbnNpZ2h0c0F0dHJp",
+            "YnV0ZUID4EEBEmMKFWF1ZGllbmNlX2NvbWJpbmF0aW9ucxgDIAMoCzI/Lmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5jb21tb24uSW5zaWdodHNBdWRpZW5j",
+            "ZUF0dHJpYnV0ZUdyb3VwQgPgQQESWwoSY3JlYXRvcl9hdHRyaWJ1dGVzGAIg",
+            "AygLMjouZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LmNvbW1vbi5BdWRpZW5j",
+            "ZUluc2lnaHRzQXR0cmlidXRlQgPgQQEaZQoPWW91VHViZUNoYW5uZWxzElIK",
+            "EHlvdXR1YmVfY2hhbm5lbHMYASADKAsyMy5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MjUuY29tbW9uLllvdVR1YmVDaGFubmVsSW5mb0ID4EEBQgoKCGNyaXRl",
+            "cmlhItEBCh9HZW5lcmF0ZUNyZWF0b3JJbnNpZ2h0c1Jlc3BvbnNlElMKEGNy",
+            "ZWF0b3JfaW5zaWdodHMYASADKAsyOS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MjUuc2VydmljZXMuWW91VHViZUNyZWF0b3JJbnNpZ2h0cxJZChZsb2NhbF9j",
+            "cmVhdG9yX2luc2lnaHRzGAIgAygLMjkuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djI1LnNlcnZpY2VzLllvdVR1YmVDcmVhdG9ySW5zaWdodHMingUKH0dlbmVy",
+            "YXRlVHJlbmRpbmdJbnNpZ2h0c1JlcXVlc3QSGAoLY3VzdG9tZXJfaWQYASAB",
+            "KAlCA+BBAhIkChdjdXN0b21lcl9pbnNpZ2h0c19ncm91cBgCIAEoCUID4EEC",
+            "EmIKGWluc2lnaHRzX2FwcGxpY2F0aW9uX2luZm8YBiABKAsyOi5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52MjUuY29tbW9uLkFkZGl0aW9uYWxBcHBsaWNhdGlv",
+            "bkluZm9CA+BBARJMChBjb3VudHJ5X2xvY2F0aW9uGAMgASgLMi0uZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjI1LmNvbW1vbi5Mb2NhdGlvbkluZm9CA+BBAhJR",
+            "ChVzdWJfY291bnRyeV9sb2NhdGlvbnMYCCADKAsyLS5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MjUuY29tbW9uLkxvY2F0aW9uSW5mb0ID4EEBEpEBChFzdXBw",
+            "bGVtZW50YWxfZGF0YRgHIAMoDjJxLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
+            "NS5lbnVtcy5Db250ZW50Q3JlYXRvckluc2lnaHRzU3VwcGxlbWVudGFsRGF0",
+            "YUVudW0uQ29udGVudENyZWF0b3JJbnNpZ2h0c1N1cHBsZW1lbnRhbERhdGFC",
+            "A+BBARJMCg9zZWFyY2hfYXVkaWVuY2UYBCABKAsyMS5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MjUuc2VydmljZXMuU2VhcmNoQXVkaWVuY2VIABJICg1zZWFy",
+            "Y2hfdG9waWNzGAUgASgLMi8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnNl",
+            "cnZpY2VzLlNlYXJjaFRvcGljc0gAQgoKCGNyaXRlcmlhImsKIEdlbmVyYXRl",
+            "VHJlbmRpbmdJbnNpZ2h0c1Jlc3BvbnNlEkcKDnRyZW5kX2luc2lnaHRzGAEg",
+            "AygLMi8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnNlcnZpY2VzLlRyZW5k",
+            "SW5zaWdodCKDAQoWWW91VHViZUNyZWF0b3JJbnNpZ2h0cxIUCgxjcmVhdG9y",
+            "X25hbWUYASABKAkSUwoQY3JlYXRvcl9jaGFubmVscxgCIAMoCzI5Lmdvb2ds",
+            "ZS5hZHMuZ29vZ2xlYWRzLnYyNS5zZXJ2aWNlcy5Zb3VUdWJlQ2hhbm5lbElu",
+            "c2lnaHRzIq8ECg5Zb3VUdWJlTWV0cmljcxIYChBzdWJzY3JpYmVyX2NvdW50",
+            "GAEgASgDEhMKC3ZpZXdzX2NvdW50GAIgASgDEhMKC3ZpZGVvX2NvdW50GAMg",
+            "ASgDEhMKC2xpa2VzX2NvdW50GAUgASgDEhQKDHNoYXJlc19jb3VudBgGIAEo",
+            "AxIWCg5jb21tZW50c19jb3VudBgHIAEoAxIXCg9lbmdhZ2VtZW50X3JhdGUY",
+            "CCABKAESHwoXYXZlcmFnZV92aWV3c19wZXJfdmlkZW8YCSABKAESHwoXYXZl",
+            "cmFnZV9saWtlc19wZXJfdmlkZW8YCiABKAESIAoYYXZlcmFnZV9zaGFyZXNf",
+            "cGVyX3ZpZGVvGAsgASgBEiIKGmF2ZXJhZ2VfY29tbWVudHNfcGVyX3ZpZGVv",
+            "GAwgASgBEhoKEnNob3J0c192aWV3c19jb3VudBgNIAEoAxIaChJzaG9ydHNf",
+            "dmlkZW9fY291bnQYDiABKAMSIAoYaXNfYWN0aXZlX3Nob3J0c19jcmVhdG9y",
+            "GAQgASgIEiUKHWlzX2FjdGl2ZV9saXZlX3N0cmVhbV9jcmVhdG9yGBAgASgI",
+            "EnQKGXBhcnRuZXJzaGlwX29wcG9ydHVuaXRpZXMYESADKA4yUS5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52MjUuZW51bXMuUGFydG5lcnNoaXBPcHBvcnR1bml0",
+            "eUVudW0uUGFydG5lcnNoaXBPcHBvcnR1bml0eSLNBgoWWW91VHViZUNoYW5u",
+            "ZWxJbnNpZ2h0cxIUCgxkaXNwbGF5X25hbWUYASABKAkSTAoPeW91dHViZV9j",
+            "aGFubmVsGAIgASgLMjMuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LmNvbW1v",
+            "bi5Zb3VUdWJlQ2hhbm5lbEluZm8SEwoLY2hhbm5lbF91cmwYCSABKAkSGwoT",
+            "Y2hhbm5lbF9kZXNjcmlwdGlvbhgKIAEoCRIOCgZoYW5kbGUYCyABKAkSFQoN",
+            "dGh1bWJuYWlsX3VybBgMIAEoCRIUCgxwdWJsaXNoX2RhdGUYDSABKAkSRwoQ",
+            "Y291bnRyeV9sb2NhdGlvbhgOIAEoCzItLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYyNS5jb21tb24uTG9jYXRpb25JbmZvEkoKD2NoYW5uZWxfbWV0cmljcxgD",
+            "IAEoCzIxLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5zZXJ2aWNlcy5Zb3VU",
+            "dWJlTWV0cmljcxIiChpkYXRhX3NoYXJpbmdfY29uc2VudF9naXZlbhgSIAEo",
+            "CBJnChtjaGFubmVsX2F1ZGllbmNlX2F0dHJpYnV0ZXMYByADKAsyQi5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MjUuY29tbW9uLkF1ZGllbmNlSW5zaWdodHNB",
+            "dHRyaWJ1dGVNZXRhZGF0YRJeChJjaGFubmVsX2F0dHJpYnV0ZXMYBSADKAsy",
+            "Qi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUuY29tbW9uLkF1ZGllbmNlSW5z",
+            "aWdodHNBdHRyaWJ1dGVNZXRhZGF0YRJWCgp0b3BfdmlkZW9zGAggAygLMkIu",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LmNvbW1vbi5BdWRpZW5jZUluc2ln",
+            "aHRzQXR0cmlidXRlTWV0YWRhdGESVwoWbGFuZ3VhZ2VfZGlzdHJpYnV0aW9u",
+            "cxgPIAMoCzI3Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5zZXJ2aWNlcy5M",
+            "YW5ndWFnZURpc3RyaWJ1dGlvbhIUCgxjaGFubmVsX3R5cGUYBiABKAkSFwoP",
+            "cmVsZXZhbmNlX3Njb3JlGBAgASgBItMBCg5TZWFyY2hBdWRpZW5jZRJcChNh",
+            "dWRpZW5jZV9hdHRyaWJ1dGVzGAEgAygLMjouZ29vZ2xlLmFkcy5nb29nbGVh",
+            "ZHMudjI1LmNvbW1vbi5BdWRpZW5jZUluc2lnaHRzQXR0cmlidXRlQgPgQQIS",
+            "YwoVYXVkaWVuY2VfY29tYmluYXRpb25zGAIgAygLMj8uZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjI1LmNvbW1vbi5JbnNpZ2h0c0F1ZGllbmNlQXR0cmlidXRl",
+            "R3JvdXBCA+BBASJeCgxTZWFyY2hUb3BpY3MSTgoIZW50aXRpZXMYASADKAsy",
+            "Ny5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUuY29tbW9uLkF1ZGllbmNlSW5z",
+            "aWdodHNFbnRpdHlCA+BBAiLHBQoMVHJlbmRJbnNpZ2h0ElsKD3RyZW5kX2F0",
+            "dHJpYnV0ZRgBIAEoCzJCLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5jb21t",
+            "b24uQXVkaWVuY2VJbnNpZ2h0c0F0dHJpYnV0ZU1ldGFkYXRhEk0KDXRyZW5k",
+            "X21ldHJpY3MYAiABKAsyNi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUuc2Vy",
+            "dmljZXMuVHJlbmRJbnNpZ2h0TWV0cmljcxJOCgV0cmVuZBgDIAEoDjI/Lmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5lbnVtcy5JbnNpZ2h0c1RyZW5kRW51",
+            "bS5JbnNpZ2h0c1RyZW5kElMKEXRyZW5kX2RhdGFfcG9pbnRzGAYgAygLMjgu",
+            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnNlcnZpY2VzLlRyZW5kSW5zaWdo",
+            "dERhdGFQb2ludBJaChhicmFuZF9zZW50aW1lbnRfaW5zaWdodHMYByADKAsy",
+            "OC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUuc2VydmljZXMuQnJhbmRTZW50",
+            "aW1lbnRJbnNpZ2h0EloKDnJlbGF0ZWRfdmlkZW9zGAQgAygLMkIuZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjI1LmNvbW1vbi5BdWRpZW5jZUluc2lnaHRzQXR0",
+            "cmlidXRlTWV0YWRhdGESUwoQcmVsYXRlZF9jcmVhdG9ycxgFIAMoCzI5Lmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5zZXJ2aWNlcy5Zb3VUdWJlQ3JlYXRv",
+            "ckluc2lnaHRzElkKFnJlbGF0ZWRfbG9jYWxfY3JlYXRvcnMYCCADKAsyOS5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MjUuc2VydmljZXMuWW91VHViZUNyZWF0",
+            "b3JJbnNpZ2h0cyJ9ChNUcmVuZEluc2lnaHRNZXRyaWNzEhMKC3ZpZXdzX2Nv",
+            "dW50GAEgASgDEhsKE3ZpZXdzX2luZGV4ZWRfdmFsdWUYBCABKAMSFgoOYXVk",
+            "aWVuY2Vfc2hhcmUYAiABKAESHAoUdHJlbmRfY2hhbmdlX3BlcmNlbnQYAyAB",
+            "KAEidQoVVHJlbmRJbnNpZ2h0RGF0YVBvaW50Eg0KBW1vbnRoGAEgASgJEk0K",
+            "DXRyZW5kX21ldHJpY3MYAiABKAsyNi5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MjUuc2VydmljZXMuVHJlbmRJbnNpZ2h0TWV0cmljcyKAAgoVQnJhbmRTZW50",
+            "aW1lbnRJbnNpZ2h0Eg0KBW1vbnRoGAEgASgJEh0KFWhhc19pbnN1ZmZpY2ll",
+            "bnRfZGF0YRgCIAEoCBJgChdzZW50aW1lbnRfZGlzdHJpYnV0aW9ucxgDIAMo",
+            "CzI/Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5zZXJ2aWNlcy5TZW50aW1l",
+            "bnRJbnNpZ2h0RGlzdHJpYnV0aW9uElcKE3NlbnRpbWVudF9zdW1tYXJpZXMY",
+            "BCADKAsyOi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUuc2VydmljZXMuU2Vu",
+            "dGltZW50SW5zaWdodFN1bW1hcnkigwEKHFNlbnRpbWVudEluc2lnaHREaXN0",
+            "cmlidXRpb24SSgoJc2VudGltZW50GAEgASgOMjcuZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjI1LmVudW1zLlNlbnRpbWVudEVudW0uU2VudGltZW50EhcKD3Nl",
+            "bnRpbWVudF9zaGFyZRgCIAEoASLRAQoXU2VudGltZW50SW5zaWdodFN1bW1h",
+            "cnkSSgoJc2VudGltZW50GAEgASgOMjcuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djI1LmVudW1zLlNlbnRpbWVudEVudW0uU2VudGltZW50Eg8KB3N1bW1hcnkY",
+            "AiABKAkSWQoNc2FtcGxlX3ZpZGVvcxgDIAMoCzJCLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYyNS5jb21tb24uQXVkaWVuY2VJbnNpZ2h0c0F0dHJpYnV0ZU1l",
+            "dGFkYXRhIkEKFExhbmd1YWdlRGlzdHJpYnV0aW9uEhUKDWxhbmd1YWdlX2Nv",
+            "ZGUYASABKAkSEgoKcHJvcG9ydGlvbhgCIAEoATK2BAodQ29udGVudENyZWF0",
+            "b3JJbnNpZ2h0c1NlcnZpY2US4wEKF0dlbmVyYXRlQ3JlYXRvckluc2lnaHRz",
+            "EkEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnNlcnZpY2VzLkdlbmVyYXRl",
+            "Q3JlYXRvckluc2lnaHRzUmVxdWVzdBpCLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYyNS5zZXJ2aWNlcy5HZW5lcmF0ZUNyZWF0b3JJbnNpZ2h0c1Jlc3BvbnNl",
+            "IkGC0+STAjsiNi92MjUvY3VzdG9tZXJzL3tjdXN0b21lcl9pZD0qfTpnZW5l",
+            "cmF0ZUNyZWF0b3JJbnNpZ2h0czoBKhLnAQoYR2VuZXJhdGVUcmVuZGluZ0lu",
+            "c2lnaHRzEkIuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnNlcnZpY2VzLkdl",
+            "bmVyYXRlVHJlbmRpbmdJbnNpZ2h0c1JlcXVlc3QaQy5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MjUuc2VydmljZXMuR2VuZXJhdGVUcmVuZGluZ0luc2lnaHRz",
+            "UmVzcG9uc2UiQoLT5JMCPCI3L3YyNS9jdXN0b21lcnMve2N1c3RvbWVyX2lk",
+            "PSp9OmdlbmVyYXRlVHJlbmRpbmdJbnNpZ2h0czoBKhpFykEYZ29vZ2xlYWRz",
+            "Lmdvb2dsZWFwaXMuY29t0kEnaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20v",
+            "YXV0aC9hZHdvcmRzQo4CCiVjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1",
+            "LnNlcnZpY2VzQiJDb250ZW50Q3JlYXRvckluc2lnaHRzU2VydmljZVByb3Rv",
+            "UAFaSWdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRz",
+            "L2dvb2dsZWFkcy92MjUvc2VydmljZXM7c2VydmljZXOiAgNHQUGqAiFHb29n",
+            "bGUuQWRzLkdvb2dsZUFkcy5WMjUuU2VydmljZXPKAiFHb29nbGVcQWRzXEdv",
+            "b2dsZUFkc1xWMjVcU2VydmljZXPqAiVHb29nbGU6OkFkczo6R29vZ2xlQWRz",
+            "OjpWMjU6OlNlcnZpY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V25.Common.AdditionalApplicationInfoReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Common.AudienceInsightsAttributeReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.ContentCreatorInsightsSupplementalDataReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.InsightsTrendReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.PartnershipOpportunityReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V25.Common.AdditionalApplicationInfoReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Common.AudienceInsightsAttributeReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.ContentCreatorInsightsSupplementalDataReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.InsightsTrendReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.PartnershipOpportunityReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.SentimentReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.GenerateCreatorInsightsRequest), global::Google.Ads.GoogleAds.V25.Services.GenerateCreatorInsightsRequest.Parser, new[]{ "CustomerId", "CustomerInsightsGroup", "InsightsApplicationInfo", "CountryLocations", "SubCountryLocations", "SupplementalData", "SearchAttributes", "SearchChannels", "SearchTopics" }, new[]{ "Criteria" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.GenerateCreatorInsightsRequest.Types.SearchAttributes), global::Google.Ads.GoogleAds.V25.Services.GenerateCreatorInsightsRequest.Types.SearchAttributes.Parser, new[]{ "AudienceAttributes", "AudienceCombinations", "CreatorAttributes" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.GenerateCreatorInsightsRequest.Types.YouTubeChannels), global::Google.Ads.GoogleAds.V25.Services.GenerateCreatorInsightsRequest.Types.YouTubeChannels.Parser, new[]{ "YoutubeChannels" }, null, null, null, null)}),
@@ -180,9 +197,12 @@ namespace Google.Ads.GoogleAds.V25.Services {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.YouTubeChannelInsights), global::Google.Ads.GoogleAds.V25.Services.YouTubeChannelInsights.Parser, new[]{ "DisplayName", "YoutubeChannel", "ChannelUrl", "ChannelDescription", "Handle", "ThumbnailUrl", "PublishDate", "CountryLocation", "ChannelMetrics", "DataSharingConsentGiven", "ChannelAudienceAttributes", "ChannelAttributes", "TopVideos", "LanguageDistributions", "ChannelType", "RelevanceScore" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.SearchAudience), global::Google.Ads.GoogleAds.V25.Services.SearchAudience.Parser, new[]{ "AudienceAttributes", "AudienceCombinations" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.SearchTopics), global::Google.Ads.GoogleAds.V25.Services.SearchTopics.Parser, new[]{ "Entities" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.TrendInsight), global::Google.Ads.GoogleAds.V25.Services.TrendInsight.Parser, new[]{ "TrendAttribute", "TrendMetrics", "Trend", "TrendDataPoints", "RelatedVideos", "RelatedCreators", "RelatedLocalCreators" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.TrendInsight), global::Google.Ads.GoogleAds.V25.Services.TrendInsight.Parser, new[]{ "TrendAttribute", "TrendMetrics", "Trend", "TrendDataPoints", "BrandSentimentInsights", "RelatedVideos", "RelatedCreators", "RelatedLocalCreators" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.TrendInsightMetrics), global::Google.Ads.GoogleAds.V25.Services.TrendInsightMetrics.Parser, new[]{ "ViewsCount", "ViewsIndexedValue", "AudienceShare", "TrendChangePercent" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.TrendInsightDataPoint), global::Google.Ads.GoogleAds.V25.Services.TrendInsightDataPoint.Parser, new[]{ "Month", "TrendMetrics" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.BrandSentimentInsight), global::Google.Ads.GoogleAds.V25.Services.BrandSentimentInsight.Parser, new[]{ "Month", "HasInsufficientData", "SentimentDistributions", "SentimentSummaries" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.SentimentInsightDistribution), global::Google.Ads.GoogleAds.V25.Services.SentimentInsightDistribution.Parser, new[]{ "Sentiment", "SentimentShare" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.SentimentInsightSummary), global::Google.Ads.GoogleAds.V25.Services.SentimentInsightSummary.Parser, new[]{ "Sentiment", "Summary", "SampleVideos" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.LanguageDistribution), global::Google.Ads.GoogleAds.V25.Services.LanguageDistribution.Parser, new[]{ "LanguageCode", "Proportion" }, null, null, null, null)
           }));
     }
@@ -4563,6 +4583,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
       trendMetrics_ = other.trendMetrics_ != null ? other.trendMetrics_.Clone() : null;
       trend_ = other.trend_;
       trendDataPoints_ = other.trendDataPoints_.Clone();
+      brandSentimentInsights_ = other.brandSentimentInsights_.Clone();
       relatedVideos_ = other.relatedVideos_.Clone();
       relatedCreators_ = other.relatedCreators_.Clone();
       relatedLocalCreators_ = other.relatedLocalCreators_.Clone();
@@ -4641,6 +4662,26 @@ namespace Google.Ads.GoogleAds.V25.Services {
       get { return trendDataPoints_; }
     }
 
+    /// <summary>Field number for the "brand_sentiment_insights" field.</summary>
+    public const int BrandSentimentInsightsFieldNumber = 7;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V25.Services.BrandSentimentInsight> _repeated_brandSentimentInsights_codec
+        = pb::FieldCodec.ForMessage(58, global::Google.Ads.GoogleAds.V25.Services.BrandSentimentInsight.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V25.Services.BrandSentimentInsight> brandSentimentInsights_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V25.Services.BrandSentimentInsight>();
+    /// <summary>
+    /// The brand sentiment for this topic.
+    /// Only populated when all of the following are true:
+    ///   - The trend request uses search_topics.
+    ///   - The Knowledge graph entity topic has the Brand capability.
+    ///   - Supplemental data
+    ///   [BRAND_SENTIMENT_DATA][google.ads.googleads.v25.enums.ContentCreatorInsightsSupplementalDataEnum.ContentCreatorInsightsSupplementalData.BRAND_SENTIMENT_DATA]
+    ///   is requested.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V25.Services.BrandSentimentInsight> BrandSentimentInsights {
+      get { return brandSentimentInsights_; }
+    }
+
     /// <summary>Field number for the "related_videos" field.</summary>
     public const int RelatedVideosFieldNumber = 4;
     private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V25.Common.AudienceInsightsAttributeMetadata> _repeated_relatedVideos_codec
@@ -4714,6 +4755,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
       if (!object.Equals(TrendMetrics, other.TrendMetrics)) return false;
       if (Trend != other.Trend) return false;
       if(!trendDataPoints_.Equals(other.trendDataPoints_)) return false;
+      if(!brandSentimentInsights_.Equals(other.brandSentimentInsights_)) return false;
       if(!relatedVideos_.Equals(other.relatedVideos_)) return false;
       if(!relatedCreators_.Equals(other.relatedCreators_)) return false;
       if(!relatedLocalCreators_.Equals(other.relatedLocalCreators_)) return false;
@@ -4728,6 +4770,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
       if (trendMetrics_ != null) hash ^= TrendMetrics.GetHashCode();
       if (Trend != global::Google.Ads.GoogleAds.V25.Enums.InsightsTrendEnum.Types.InsightsTrend.Unspecified) hash ^= Trend.GetHashCode();
       hash ^= trendDataPoints_.GetHashCode();
+      hash ^= brandSentimentInsights_.GetHashCode();
       hash ^= relatedVideos_.GetHashCode();
       hash ^= relatedCreators_.GetHashCode();
       hash ^= relatedLocalCreators_.GetHashCode();
@@ -4764,6 +4807,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
       relatedVideos_.WriteTo(output, _repeated_relatedVideos_codec);
       relatedCreators_.WriteTo(output, _repeated_relatedCreators_codec);
       trendDataPoints_.WriteTo(output, _repeated_trendDataPoints_codec);
+      brandSentimentInsights_.WriteTo(output, _repeated_brandSentimentInsights_codec);
       relatedLocalCreators_.WriteTo(output, _repeated_relatedLocalCreators_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -4790,6 +4834,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
       relatedVideos_.WriteTo(ref output, _repeated_relatedVideos_codec);
       relatedCreators_.WriteTo(ref output, _repeated_relatedCreators_codec);
       trendDataPoints_.WriteTo(ref output, _repeated_trendDataPoints_codec);
+      brandSentimentInsights_.WriteTo(ref output, _repeated_brandSentimentInsights_codec);
       relatedLocalCreators_.WriteTo(ref output, _repeated_relatedLocalCreators_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -4811,6 +4856,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Trend);
       }
       size += trendDataPoints_.CalculateSize(_repeated_trendDataPoints_codec);
+      size += brandSentimentInsights_.CalculateSize(_repeated_brandSentimentInsights_codec);
       size += relatedVideos_.CalculateSize(_repeated_relatedVideos_codec);
       size += relatedCreators_.CalculateSize(_repeated_relatedCreators_codec);
       size += relatedLocalCreators_.CalculateSize(_repeated_relatedLocalCreators_codec);
@@ -4842,6 +4888,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
         Trend = other.Trend;
       }
       trendDataPoints_.Add(other.trendDataPoints_);
+      brandSentimentInsights_.Add(other.brandSentimentInsights_);
       relatedVideos_.Add(other.relatedVideos_);
       relatedCreators_.Add(other.relatedCreators_);
       relatedLocalCreators_.Add(other.relatedLocalCreators_);
@@ -4892,6 +4939,10 @@ namespace Google.Ads.GoogleAds.V25.Services {
           }
           case 50: {
             trendDataPoints_.AddEntriesFrom(input, _repeated_trendDataPoints_codec);
+            break;
+          }
+          case 58: {
+            brandSentimentInsights_.AddEntriesFrom(input, _repeated_brandSentimentInsights_codec);
             break;
           }
           case 66: {
@@ -4945,6 +4996,10 @@ namespace Google.Ads.GoogleAds.V25.Services {
           }
           case 50: {
             trendDataPoints_.AddEntriesFrom(ref input, _repeated_trendDataPoints_codec);
+            break;
+          }
+          case 58: {
+            brandSentimentInsights_.AddEntriesFrom(ref input, _repeated_brandSentimentInsights_codec);
             break;
           }
           case 66: {
@@ -5544,6 +5599,839 @@ namespace Google.Ads.GoogleAds.V25.Services {
   }
 
   /// <summary>
+  /// Brand sentiment for a specific month. Measuring brand sentiment involves
+  /// using AI models to analyze YouTube video content related to the brand,
+  /// categorizing the sentiment as positive, negative, or neutral.
+  /// Only the video content itself is analyzed; user comments are not included.
+  /// The AI models are powered by Gemini and can make mistakes.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class BrandSentimentInsight : pb::IMessage<BrandSentimentInsight>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<BrandSentimentInsight> _parser = new pb::MessageParser<BrandSentimentInsight>(() => new BrandSentimentInsight());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<BrandSentimentInsight> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V25.Services.ContentCreatorInsightsServiceReflection.Descriptor.MessageTypes[12]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public BrandSentimentInsight() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public BrandSentimentInsight(BrandSentimentInsight other) : this() {
+      month_ = other.month_;
+      hasInsufficientData_ = other.hasInsufficientData_;
+      sentimentDistributions_ = other.sentimentDistributions_.Clone();
+      sentimentSummaries_ = other.sentimentSummaries_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public BrandSentimentInsight Clone() {
+      return new BrandSentimentInsight(this);
+    }
+
+    /// <summary>Field number for the "month" field.</summary>
+    public const int MonthFieldNumber = 1;
+    private string month_ = "";
+    /// <summary>
+    /// The month that the brand sentiment represents in the string format
+    /// "YYYY-MM".
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Month {
+      get { return month_; }
+      set {
+        month_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "has_insufficient_data" field.</summary>
+    public const int HasInsufficientDataFieldNumber = 2;
+    private bool hasInsufficientData_;
+    /// <summary>
+    /// When true, there is insufficient data to calculate the brand sentiment.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasInsufficientData {
+      get { return hasInsufficientData_; }
+      set {
+        hasInsufficientData_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "sentiment_distributions" field.</summary>
+    public const int SentimentDistributionsFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V25.Services.SentimentInsightDistribution> _repeated_sentimentDistributions_codec
+        = pb::FieldCodec.ForMessage(26, global::Google.Ads.GoogleAds.V25.Services.SentimentInsightDistribution.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V25.Services.SentimentInsightDistribution> sentimentDistributions_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V25.Services.SentimentInsightDistribution>();
+    /// <summary>
+    /// Distribution of sentiment between positive, negative, and neutral.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V25.Services.SentimentInsightDistribution> SentimentDistributions {
+      get { return sentimentDistributions_; }
+    }
+
+    /// <summary>Field number for the "sentiment_summaries" field.</summary>
+    public const int SentimentSummariesFieldNumber = 4;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V25.Services.SentimentInsightSummary> _repeated_sentimentSummaries_codec
+        = pb::FieldCodec.ForMessage(34, global::Google.Ads.GoogleAds.V25.Services.SentimentInsightSummary.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V25.Services.SentimentInsightSummary> sentimentSummaries_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V25.Services.SentimentInsightSummary>();
+    /// <summary>
+    /// A summary of what was positive and negative about content related to the
+    /// brand. No summaries are generated for neutral sentiment. The summary is
+    /// generated by AI models.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V25.Services.SentimentInsightSummary> SentimentSummaries {
+      get { return sentimentSummaries_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as BrandSentimentInsight);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(BrandSentimentInsight other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Month != other.Month) return false;
+      if (HasInsufficientData != other.HasInsufficientData) return false;
+      if(!sentimentDistributions_.Equals(other.sentimentDistributions_)) return false;
+      if(!sentimentSummaries_.Equals(other.sentimentSummaries_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Month.Length != 0) hash ^= Month.GetHashCode();
+      if (HasInsufficientData != false) hash ^= HasInsufficientData.GetHashCode();
+      hash ^= sentimentDistributions_.GetHashCode();
+      hash ^= sentimentSummaries_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Month.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Month);
+      }
+      if (HasInsufficientData != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(HasInsufficientData);
+      }
+      sentimentDistributions_.WriteTo(output, _repeated_sentimentDistributions_codec);
+      sentimentSummaries_.WriteTo(output, _repeated_sentimentSummaries_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Month.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Month);
+      }
+      if (HasInsufficientData != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(HasInsufficientData);
+      }
+      sentimentDistributions_.WriteTo(ref output, _repeated_sentimentDistributions_codec);
+      sentimentSummaries_.WriteTo(ref output, _repeated_sentimentSummaries_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Month.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Month);
+      }
+      if (HasInsufficientData != false) {
+        size += 1 + 1;
+      }
+      size += sentimentDistributions_.CalculateSize(_repeated_sentimentDistributions_codec);
+      size += sentimentSummaries_.CalculateSize(_repeated_sentimentSummaries_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(BrandSentimentInsight other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Month.Length != 0) {
+        Month = other.Month;
+      }
+      if (other.HasInsufficientData != false) {
+        HasInsufficientData = other.HasInsufficientData;
+      }
+      sentimentDistributions_.Add(other.sentimentDistributions_);
+      sentimentSummaries_.Add(other.sentimentSummaries_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Month = input.ReadString();
+            break;
+          }
+          case 16: {
+            HasInsufficientData = input.ReadBool();
+            break;
+          }
+          case 26: {
+            sentimentDistributions_.AddEntriesFrom(input, _repeated_sentimentDistributions_codec);
+            break;
+          }
+          case 34: {
+            sentimentSummaries_.AddEntriesFrom(input, _repeated_sentimentSummaries_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Month = input.ReadString();
+            break;
+          }
+          case 16: {
+            HasInsufficientData = input.ReadBool();
+            break;
+          }
+          case 26: {
+            sentimentDistributions_.AddEntriesFrom(ref input, _repeated_sentimentDistributions_codec);
+            break;
+          }
+          case 34: {
+            sentimentSummaries_.AddEntriesFrom(ref input, _repeated_sentimentSummaries_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// The distribution of sentiment for a brand. The distribution is calculated as
+  /// the proportion of views for videos that correspond to the brand with each
+  /// sentiment. Example: positive sentiment share of 0.49 means that 49% of views
+  /// about this brand were on content with positive sentiment.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class SentimentInsightDistribution : pb::IMessage<SentimentInsightDistribution>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SentimentInsightDistribution> _parser = new pb::MessageParser<SentimentInsightDistribution>(() => new SentimentInsightDistribution());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SentimentInsightDistribution> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V25.Services.ContentCreatorInsightsServiceReflection.Descriptor.MessageTypes[13]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SentimentInsightDistribution() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SentimentInsightDistribution(SentimentInsightDistribution other) : this() {
+      sentiment_ = other.sentiment_;
+      sentimentShare_ = other.sentimentShare_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SentimentInsightDistribution Clone() {
+      return new SentimentInsightDistribution(this);
+    }
+
+    /// <summary>Field number for the "sentiment" field.</summary>
+    public const int SentimentFieldNumber = 1;
+    private global::Google.Ads.GoogleAds.V25.Enums.SentimentEnum.Types.Sentiment sentiment_ = global::Google.Ads.GoogleAds.V25.Enums.SentimentEnum.Types.Sentiment.Unspecified;
+    /// <summary>
+    /// The sentiment for this distribution.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V25.Enums.SentimentEnum.Types.Sentiment Sentiment {
+      get { return sentiment_; }
+      set {
+        sentiment_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "sentiment_share" field.</summary>
+    public const int SentimentShareFieldNumber = 2;
+    private double sentimentShare_;
+    /// <summary>
+    /// The proportion (between 0 and 1) of views for videos that correspond to the
+    /// brand with this sentiment.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double SentimentShare {
+      get { return sentimentShare_; }
+      set {
+        sentimentShare_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SentimentInsightDistribution);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SentimentInsightDistribution other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Sentiment != other.Sentiment) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(SentimentShare, other.SentimentShare)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Sentiment != global::Google.Ads.GoogleAds.V25.Enums.SentimentEnum.Types.Sentiment.Unspecified) hash ^= Sentiment.GetHashCode();
+      if (SentimentShare != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(SentimentShare);
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Sentiment != global::Google.Ads.GoogleAds.V25.Enums.SentimentEnum.Types.Sentiment.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Sentiment);
+      }
+      if (SentimentShare != 0D) {
+        output.WriteRawTag(17);
+        output.WriteDouble(SentimentShare);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Sentiment != global::Google.Ads.GoogleAds.V25.Enums.SentimentEnum.Types.Sentiment.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Sentiment);
+      }
+      if (SentimentShare != 0D) {
+        output.WriteRawTag(17);
+        output.WriteDouble(SentimentShare);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Sentiment != global::Google.Ads.GoogleAds.V25.Enums.SentimentEnum.Types.Sentiment.Unspecified) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Sentiment);
+      }
+      if (SentimentShare != 0D) {
+        size += 1 + 8;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SentimentInsightDistribution other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Sentiment != global::Google.Ads.GoogleAds.V25.Enums.SentimentEnum.Types.Sentiment.Unspecified) {
+        Sentiment = other.Sentiment;
+      }
+      if (other.SentimentShare != 0D) {
+        SentimentShare = other.SentimentShare;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Sentiment = (global::Google.Ads.GoogleAds.V25.Enums.SentimentEnum.Types.Sentiment) input.ReadEnum();
+            break;
+          }
+          case 17: {
+            SentimentShare = input.ReadDouble();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Sentiment = (global::Google.Ads.GoogleAds.V25.Enums.SentimentEnum.Types.Sentiment) input.ReadEnum();
+            break;
+          }
+          case 17: {
+            SentimentShare = input.ReadDouble();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// A summary of the sentiment for content related to a brand. Summaries are only
+  /// generated for positive and negative sentiment, not neutral. The summary is
+  /// generated by AI models.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class SentimentInsightSummary : pb::IMessage<SentimentInsightSummary>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SentimentInsightSummary> _parser = new pb::MessageParser<SentimentInsightSummary>(() => new SentimentInsightSummary());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SentimentInsightSummary> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V25.Services.ContentCreatorInsightsServiceReflection.Descriptor.MessageTypes[14]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SentimentInsightSummary() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SentimentInsightSummary(SentimentInsightSummary other) : this() {
+      sentiment_ = other.sentiment_;
+      summary_ = other.summary_;
+      sampleVideos_ = other.sampleVideos_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SentimentInsightSummary Clone() {
+      return new SentimentInsightSummary(this);
+    }
+
+    /// <summary>Field number for the "sentiment" field.</summary>
+    public const int SentimentFieldNumber = 1;
+    private global::Google.Ads.GoogleAds.V25.Enums.SentimentEnum.Types.Sentiment sentiment_ = global::Google.Ads.GoogleAds.V25.Enums.SentimentEnum.Types.Sentiment.Unspecified;
+    /// <summary>
+    /// The sentiment for this summary.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V25.Enums.SentimentEnum.Types.Sentiment Sentiment {
+      get { return sentiment_; }
+      set {
+        sentiment_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "summary" field.</summary>
+    public const int SummaryFieldNumber = 2;
+    private string summary_ = "";
+    /// <summary>
+    /// A summary of what was positive or negative about content related to the
+    /// brand.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Summary {
+      get { return summary_; }
+      set {
+        summary_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "sample_videos" field.</summary>
+    public const int SampleVideosFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::Google.Ads.GoogleAds.V25.Common.AudienceInsightsAttributeMetadata> _repeated_sampleVideos_codec
+        = pb::FieldCodec.ForMessage(26, global::Google.Ads.GoogleAds.V25.Common.AudienceInsightsAttributeMetadata.Parser);
+    private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V25.Common.AudienceInsightsAttributeMetadata> sampleVideos_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V25.Common.AudienceInsightsAttributeMetadata>();
+    /// <summary>
+    /// Sample videos that correspond to the sentiment.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Google.Ads.GoogleAds.V25.Common.AudienceInsightsAttributeMetadata> SampleVideos {
+      get { return sampleVideos_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SentimentInsightSummary);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SentimentInsightSummary other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Sentiment != other.Sentiment) return false;
+      if (Summary != other.Summary) return false;
+      if(!sampleVideos_.Equals(other.sampleVideos_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Sentiment != global::Google.Ads.GoogleAds.V25.Enums.SentimentEnum.Types.Sentiment.Unspecified) hash ^= Sentiment.GetHashCode();
+      if (Summary.Length != 0) hash ^= Summary.GetHashCode();
+      hash ^= sampleVideos_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Sentiment != global::Google.Ads.GoogleAds.V25.Enums.SentimentEnum.Types.Sentiment.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Sentiment);
+      }
+      if (Summary.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Summary);
+      }
+      sampleVideos_.WriteTo(output, _repeated_sampleVideos_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Sentiment != global::Google.Ads.GoogleAds.V25.Enums.SentimentEnum.Types.Sentiment.Unspecified) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Sentiment);
+      }
+      if (Summary.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Summary);
+      }
+      sampleVideos_.WriteTo(ref output, _repeated_sampleVideos_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Sentiment != global::Google.Ads.GoogleAds.V25.Enums.SentimentEnum.Types.Sentiment.Unspecified) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Sentiment);
+      }
+      if (Summary.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Summary);
+      }
+      size += sampleVideos_.CalculateSize(_repeated_sampleVideos_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SentimentInsightSummary other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Sentiment != global::Google.Ads.GoogleAds.V25.Enums.SentimentEnum.Types.Sentiment.Unspecified) {
+        Sentiment = other.Sentiment;
+      }
+      if (other.Summary.Length != 0) {
+        Summary = other.Summary;
+      }
+      sampleVideos_.Add(other.sampleVideos_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Sentiment = (global::Google.Ads.GoogleAds.V25.Enums.SentimentEnum.Types.Sentiment) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            Summary = input.ReadString();
+            break;
+          }
+          case 26: {
+            sampleVideos_.AddEntriesFrom(input, _repeated_sampleVideos_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Sentiment = (global::Google.Ads.GoogleAds.V25.Enums.SentimentEnum.Types.Sentiment) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            Summary = input.ReadString();
+            break;
+          }
+          case 26: {
+            sampleVideos_.AddEntriesFrom(ref input, _repeated_sampleVideos_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
   /// Languages that pertain to a YouTube channel based on the channel content.
   /// Only languages above a certain proportion threshold are included.
   /// </summary>
@@ -5562,7 +6450,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V25.Services.ContentCreatorInsightsServiceReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Google.Ads.GoogleAds.V25.Services.ContentCreatorInsightsServiceReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

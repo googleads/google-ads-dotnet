@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.V25.Common {
             "dG8SH2dvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5jb21tb24aO2dvb2dsZS9h",
             "ZHMvZ29vZ2xlYWRzL3YyNS9lbnVtcy9pbnRlcmFjdGlvbl9ldmVudF90eXBl",
             "LnByb3RvGjlnb29nbGUvYWRzL2dvb2dsZWFkcy92MjUvZW51bXMvcXVhbGl0",
-            "eV9zY29yZV9idWNrZXQucHJvdG8iiLMBCgdNZXRyaWNzEjAKImFic29sdXRl",
+            "eV9zY29yZV9idWNrZXQucHJvdG8isOMBCgdNZXRyaWNzEjAKImFic29sdXRl",
             "X3RvcF9pbXByZXNzaW9uX3BlcmNlbnRhZ2UYtwEgASgBSACIAQESHQoPYWN0",
             "aXZlX3ZpZXdfY3BtGLgBIAEoAUgBiAEBEh0KD2FjdGl2ZV92aWV3X2N0chi5",
             "ASABKAFIAogBARIlChdhY3RpdmVfdmlld19pbXByZXNzaW9ucxi6ASABKANI",
@@ -324,231 +324,369 @@ namespace Google.Ads.GoogleAds.V25.Common {
             "bnZlcnNpb25fdmFsdWVfbWFyZ2luX29mX2Vycm9yGNYDIAEoAUiJAogBARIn",
             "Chhjb252ZXJzaW9uX3ZhbHVlX3BfdmFsdWUY1wMgASgBSIoCiAEBEjUKJmNv",
             "bnZlcnNpb25fdmFsdWVfY2hhbmdlX3BvaW50X2VzdGltYXRlGNgDIAEoAUiL",
-            "AogBARIfChB5b3V0dWJlX2NvbW1lbnRzGJAEIAEoA0iMAogBARIcCg15b3V0",
-            "dWJlX2xpa2VzGJEEIAEoA0iNAogBARIdCg55b3V0dWJlX3NoYXJlcxiSBCAB",
-            "KANIjgKIAQFCJQojX2Fic29sdXRlX3RvcF9pbXByZXNzaW9uX3BlcmNlbnRh",
-            "Z2VCEgoQX2FjdGl2ZV92aWV3X2NwbUISChBfYWN0aXZlX3ZpZXdfY3RyQhoK",
-            "GF9hY3RpdmVfdmlld19pbXByZXNzaW9uc0IcChpfYWN0aXZlX3ZpZXdfbWVh",
-            "c3VyYWJpbGl0eUIlCiNfYWN0aXZlX3ZpZXdfbWVhc3VyYWJsZV9jb3N0X21p",
-            "Y3Jvc0IlCiNfYWN0aXZlX3ZpZXdfbWVhc3VyYWJsZV9pbXByZXNzaW9uc0Ia",
-            "ChhfYWN0aXZlX3ZpZXdfdmlld2FiaWxpdHlCKQonX2FsbF9jb252ZXJzaW9u",
-            "c19mcm9tX2ludGVyYWN0aW9uc19yYXRlQhgKFl9hbGxfY29udmVyc2lvbnNf",
-            "dmFsdWVCKwopX2FsbF9jb252ZXJzaW9uc192YWx1ZV9ieV9jb252ZXJzaW9u",
-            "X2RhdGVCIgogX2FsbF9uZXdfY3VzdG9tZXJfbGlmZXRpbWVfdmFsdWVCEgoQ",
-            "X2FsbF9jb252ZXJzaW9uc0IlCiNfYWxsX2NvbnZlcnNpb25zX2J5X2NvbnZl",
-            "cnNpb25fZGF0ZUIhCh9fYWxsX2NvbnZlcnNpb25zX3ZhbHVlX3Blcl9jb3N0",
-            "QiUKI19hbGxfY29udmVyc2lvbnNfZnJvbV9jbGlja190b19jYWxsQiIKIF9h",
-            "bGxfY29udmVyc2lvbnNfZnJvbV9kaXJlY3Rpb25zQjoKOF9hbGxfY29udmVy",
-            "c2lvbnNfZnJvbV9pbnRlcmFjdGlvbnNfdmFsdWVfcGVyX2ludGVyYWN0aW9u",
-            "QhwKGl9hbGxfY29udmVyc2lvbnNfZnJvbV9tZW51Qh0KG19hbGxfY29udmVy",
-            "c2lvbnNfZnJvbV9vcmRlckIoCiZfYWxsX2NvbnZlcnNpb25zX2Zyb21fb3Ro",
-            "ZXJfZW5nYWdlbWVudEIjCiFfYWxsX2NvbnZlcnNpb25zX2Zyb21fc3RvcmVf",
-            "dmlzaXRCJQojX2FsbF9jb252ZXJzaW9uc19mcm9tX3N0b3JlX3dlYnNpdGVC",
-            "PAo6X2F1Y3Rpb25faW5zaWdodF9zZWFyY2hfYWJzb2x1dGVfdG9wX2ltcHJl",
-            "c3Npb25fcGVyY2VudGFnZUIqCihfYXVjdGlvbl9pbnNpZ2h0X3NlYXJjaF9p",
-            "bXByZXNzaW9uX3NoYXJlQioKKF9hdWN0aW9uX2luc2lnaHRfc2VhcmNoX291",
-            "dHJhbmtpbmdfc2hhcmVCJgokX2F1Y3Rpb25faW5zaWdodF9zZWFyY2hfb3Zl",
-            "cmxhcF9yYXRlQi0KK19hdWN0aW9uX2luc2lnaHRfc2VhcmNoX3Bvc2l0aW9u",
-            "X2Fib3ZlX3JhdGVCMwoxX2F1Y3Rpb25faW5zaWdodF9zZWFyY2hfdG9wX2lt",
-            "cHJlc3Npb25fcGVyY2VudGFnZUIPCg1fYXZlcmFnZV9jb3N0Qg4KDF9hdmVy",
-            "YWdlX2NwY0IOCgxfYXZlcmFnZV9jcGVCDgoMX2F2ZXJhZ2VfY3BtQhcKFV90",
-            "cnVldmlld19hdmVyYWdlX2NwdkIVChNfYXZlcmFnZV9wYWdlX3ZpZXdzQhcK",
-            "FV9hdmVyYWdlX3RpbWVfb25fc2l0ZUIcChpfYmVuY2htYXJrX2F2ZXJhZ2Vf",
-            "bWF4X2NwY0IjCiFfYmlkZGFibGVfYXBwX2luc3RhbGxfY29udmVyc2lvbnNC",
-            "KAomX2JpZGRhYmxlX2FwcF9wb3N0X2luc3RhbGxfY29udmVyc2lvbnNCLwot",
-            "X2JpZGRhYmxlX2NvaG9ydF9hcHBfcG9zdF9pbnN0YWxsX2NvbnZlcnNpb25z",
-            "QhAKDl9iZW5jaG1hcmtfY3RyQg4KDF9ib3VuY2VfcmF0ZUIJCgdfY2xpY2tz",
-            "QhEKD19jb250cm9sX2NsaWNrc0ISChBfY29tYmluZWRfY2xpY2tzQhwKGl9j",
-            "b21iaW5lZF9jbGlja3NfcGVyX3F1ZXJ5QhMKEV9jb21iaW5lZF9xdWVyaWVz",
-            "QicKJV9jb250ZW50X2J1ZGdldF9sb3N0X2ltcHJlc3Npb25fc2hhcmVCGwoZ",
-            "X2NvbnRlbnRfaW1wcmVzc2lvbl9zaGFyZUItCitfY29udmVyc2lvbl9sYXN0",
-            "X3JlY2VpdmVkX3JlcXVlc3RfZGF0ZV90aW1lQiIKIF9jb252ZXJzaW9uX2xh",
-            "c3RfY29udmVyc2lvbl9kYXRlQiUKI19jb250ZW50X3JhbmtfbG9zdF9pbXBy",
-            "ZXNzaW9uX3NoYXJlQiUKI19jb252ZXJzaW9uc19mcm9tX2ludGVyYWN0aW9u",
-            "c19yYXRlQhQKEl9jb252ZXJzaW9uc192YWx1ZUInCiVfY29udmVyc2lvbnNf",
-            "dmFsdWVfYnlfY29udmVyc2lvbl9kYXRlQh4KHF9uZXdfY3VzdG9tZXJfbGlm",
-            "ZXRpbWVfdmFsdWVCHQobX2NvbnZlcnNpb25zX3ZhbHVlX3Blcl9jb3N0QjYK",
-            "NF9jb252ZXJzaW9uc19mcm9tX2ludGVyYWN0aW9uc192YWx1ZV9wZXJfaW50",
-            "ZXJhY3Rpb25CDgoMX2NvbnZlcnNpb25zQiEKH19jb252ZXJzaW9uc19ieV9j",
-            "b252ZXJzaW9uX2RhdGVCDgoMX2Nvc3RfbWljcm9zQhsKGV9jb3N0X3Blcl9h",
-            "bGxfY29udmVyc2lvbnNCFgoUX2Nvc3RfcGVyX2NvbnZlcnNpb25CLwotX2Nv",
-            "c3RfcGVyX2N1cnJlbnRfbW9kZWxfYXR0cmlidXRlZF9jb252ZXJzaW9uQhsK",
-            "GV9jcm9zc19kZXZpY2VfY29udmVyc2lvbnNCLgosX2Nyb3NzX2RldmljZV9j",
-            "b252ZXJzaW9uc19ieV9jb252ZXJzaW9uX2RhdGVCIQofX2Nyb3NzX2Rldmlj",
-            "ZV9jb252ZXJzaW9uc192YWx1ZUIoCiZfY3Jvc3NfZGV2aWNlX2NvbnZlcnNp",
-            "b25zX3ZhbHVlX21pY3Jvc0I0CjJfY3Jvc3NfZGV2aWNlX2NvbnZlcnNpb25z",
-            "X3ZhbHVlX2J5X2NvbnZlcnNpb25fZGF0ZUIGCgRfY3RyQicKJV9jdXJyZW50",
-            "X21vZGVsX2F0dHJpYnV0ZWRfY29udmVyc2lvbnNCPgo8X2N1cnJlbnRfbW9k",
-            "ZWxfYXR0cmlidXRlZF9jb252ZXJzaW9uc19mcm9tX2ludGVyYWN0aW9uc19y",
-            "YXRlQk8KTV9jdXJyZW50X21vZGVsX2F0dHJpYnV0ZWRfY29udmVyc2lvbnNf",
-            "ZnJvbV9pbnRlcmFjdGlvbnNfdmFsdWVfcGVyX2ludGVyYWN0aW9uQi0KK19j",
-            "dXJyZW50X21vZGVsX2F0dHJpYnV0ZWRfY29udmVyc2lvbnNfdmFsdWVCNgo0",
-            "X2N1cnJlbnRfbW9kZWxfYXR0cmlidXRlZF9jb252ZXJzaW9uc192YWx1ZV9w",
-            "ZXJfY29zdEISChBfZW5nYWdlbWVudF9yYXRlQg4KDF9lbmdhZ2VtZW50c0Ii",
-            "CiBfaG90ZWxfYXZlcmFnZV9sZWFkX3ZhbHVlX21pY3Jvc0IfCh1faG90ZWxf",
-            "Y29tbWlzc2lvbl9yYXRlX21pY3Jvc0IhCh9faG90ZWxfZXhwZWN0ZWRfY29t",
-            "bWlzc2lvbl9jb3N0QiQKIl9ob3RlbF9wcmljZV9kaWZmZXJlbmNlX3BlcmNl",
-            "bnRhZ2VCHQobX2hvdGVsX2VsaWdpYmxlX2ltcHJlc3Npb25zQhsKGV9oaXN0",
-            "b3JpY2FsX3F1YWxpdHlfc2NvcmVCEQoPX2dtYWlsX2ZvcndhcmRzQg4KDF9n",
-            "bWFpbF9zYXZlc0IZChdfZ21haWxfc2Vjb25kYXJ5X2NsaWNrc0IfCh1faW1w",
-            "cmVzc2lvbnNfZnJvbV9zdG9yZV9yZWFjaEIOCgxfaW1wcmVzc2lvbnNCEwoR",
-            "X2ludGVyYWN0aW9uX3JhdGVCDwoNX2ludGVyYWN0aW9uc0IVChNfaW52YWxp",
-            "ZF9jbGlja19yYXRlQhEKD19pbnZhbGlkX2NsaWNrc0IdChtfZ2VuZXJhbF9p",
-            "bnZhbGlkX2NsaWNrX3JhdGVCGQoXX2dlbmVyYWxfaW52YWxpZF9jbGlja3NC",
-            "EAoOX21lc3NhZ2VfY2hhdHNCFgoUX21lc3NhZ2VfaW1wcmVzc2lvbnNCFAoS",
-            "X21lc3NhZ2VfY2hhdF9yYXRlQiQKIl9tb2JpbGVfZnJpZW5kbHlfY2xpY2tz",
-            "X3BlcmNlbnRhZ2VCHAoaX29wdGltaXphdGlvbl9zY29yZV91cGxpZnRCGQoX",
-            "X29wdGltaXphdGlvbl9zY29yZV91cmxCEQoPX29yZ2FuaWNfY2xpY2tzQhsK",
-            "GV9vcmdhbmljX2NsaWNrc19wZXJfcXVlcnlCFgoUX29yZ2FuaWNfaW1wcmVz",
-            "c2lvbnNCIAoeX29yZ2FuaWNfaW1wcmVzc2lvbnNfcGVyX3F1ZXJ5QhIKEF9v",
-            "cmdhbmljX3F1ZXJpZXNCFwoVX3BlcmNlbnRfbmV3X3Zpc2l0b3JzQg4KDF9w",
-            "aG9uZV9jYWxsc0IUChJfcGhvbmVfaW1wcmVzc2lvbnNCFQoTX3Bob25lX3Ro",
-            "cm91Z2hfcmF0ZUIPCg1fcmVsYXRpdmVfY3RyQicKJV9zZWFyY2hfYWJzb2x1",
-            "dGVfdG9wX2ltcHJlc3Npb25fc2hhcmVCMwoxX3NlYXJjaF9idWRnZXRfbG9z",
-            "dF9hYnNvbHV0ZV90b3BfaW1wcmVzc2lvbl9zaGFyZUImCiRfc2VhcmNoX2J1",
-            "ZGdldF9sb3N0X2ltcHJlc3Npb25fc2hhcmVCKgooX3NlYXJjaF9idWRnZXRf",
-            "bG9zdF90b3BfaW1wcmVzc2lvbl9zaGFyZUIVChNfc2VhcmNoX2NsaWNrX3No",
-            "YXJlQiYKJF9zZWFyY2hfZXhhY3RfbWF0Y2hfaW1wcmVzc2lvbl9zaGFyZUIa",
-            "Chhfc2VhcmNoX2ltcHJlc3Npb25fc2hhcmVCMQovX3NlYXJjaF9yYW5rX2xv",
-            "c3RfYWJzb2x1dGVfdG9wX2ltcHJlc3Npb25fc2hhcmVCJAoiX3NlYXJjaF9y",
-            "YW5rX2xvc3RfaW1wcmVzc2lvbl9zaGFyZUIoCiZfc2VhcmNoX3JhbmtfbG9z",
-            "dF90b3BfaW1wcmVzc2lvbl9zaGFyZUIeChxfc2VhcmNoX3RvcF9pbXByZXNz",
-            "aW9uX3NoYXJlQhAKDl9zZWFyY2hfdm9sdW1lQg4KDF9zcGVlZF9zY29yZUIc",
-            "ChpfYXZlcmFnZV90YXJnZXRfY3BhX21pY3Jvc0IWChRfYXZlcmFnZV90YXJn",
-            "ZXRfcm9hc0IcChpfdG9wX2ltcHJlc3Npb25fcGVyY2VudGFnZUIzCjFfdmFs",
-            "aWRfYWNjZWxlcmF0ZWRfbW9iaWxlX3BhZ2VzX2NsaWNrc19wZXJjZW50YWdl",
-            "QhwKGl92YWx1ZV9wZXJfYWxsX2NvbnZlcnNpb25zQi8KLV92YWx1ZV9wZXJf",
-            "YWxsX2NvbnZlcnNpb25zX2J5X2NvbnZlcnNpb25fZGF0ZUIXChVfdmFsdWVf",
-            "cGVyX2NvbnZlcnNpb25CKwopX3ZhbHVlX3Blcl9jb252ZXJzaW9uc19ieV9j",
-            "b252ZXJzaW9uX2RhdGVCMAouX3ZhbHVlX3Blcl9jdXJyZW50X21vZGVsX2F0",
-            "dHJpYnV0ZWRfY29udmVyc2lvbkIbChlfdmlkZW9fcXVhcnRpbGVfcDEwMF9y",
-            "YXRlQhoKGF92aWRlb19xdWFydGlsZV9wMjVfcmF0ZUIaChhfdmlkZW9fcXVh",
-            "cnRpbGVfcDUwX3JhdGVCGgoYX3ZpZGVvX3F1YXJ0aWxlX3A3NV9yYXRlQhsK",
-            "GV92aWRlb190cnVldmlld192aWV3X3JhdGVCFwoVX3ZpZGVvX3RydWV2aWV3",
-            "X3ZpZXdzQhsKGV92aWV3X3Rocm91Z2hfY29udmVyc2lvbnNCNAoyX2FsbF9j",
-            "b252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0X2NsaWNrX3RvX2NhbGxC",
-            "MQovX2FsbF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0X2RpcmVj",
-            "dGlvbnNCKwopX2FsbF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0",
-            "X21lbnVCLAoqX2FsbF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0",
-            "X29yZGVyQjcKNV9hbGxfY29udmVyc2lvbnNfZnJvbV9sb2NhdGlvbl9hc3Nl",
-            "dF9vdGhlcl9lbmdhZ2VtZW50QjMKMV9hbGxfY29udmVyc2lvbnNfZnJvbV9s",
-            "b2NhdGlvbl9hc3NldF9zdG9yZV92aXNpdHNCLgosX2FsbF9jb252ZXJzaW9u",
-            "c19mcm9tX2xvY2F0aW9uX2Fzc2V0X3dlYnNpdGVCNwo1X2VsaWdpYmxlX2lt",
-            "cHJlc3Npb25zX2Zyb21fbG9jYXRpb25fYXNzZXRfc3RvcmVfcmVhY2hCPQo7",
-            "X3ZpZXdfdGhyb3VnaF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0",
-            "X2NsaWNrX3RvX2NhbGxCOgo4X3ZpZXdfdGhyb3VnaF9jb252ZXJzaW9uc19m",
-            "cm9tX2xvY2F0aW9uX2Fzc2V0X2RpcmVjdGlvbnNCNAoyX3ZpZXdfdGhyb3Vn",
-            "aF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0X21lbnVCNQozX3Zp",
-            "ZXdfdGhyb3VnaF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0X29y",
-            "ZGVyQkAKPl92aWV3X3Rocm91Z2hfY29udmVyc2lvbnNfZnJvbV9sb2NhdGlv",
-            "bl9hc3NldF9vdGhlcl9lbmdhZ2VtZW50QjwKOl92aWV3X3Rocm91Z2hfY29u",
-            "dmVyc2lvbnNfZnJvbV9sb2NhdGlvbl9hc3NldF9zdG9yZV92aXNpdHNCNwo1",
-            "X3ZpZXdfdGhyb3VnaF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0",
-            "X3dlYnNpdGVCCQoHX29yZGVyc0IdChtfYXZlcmFnZV9vcmRlcl92YWx1ZV9t",
-            "aWNyb3NCFAoSX2F2ZXJhZ2VfY2FydF9zaXplQhwKGl9jb3N0X29mX2dvb2Rz",
-            "X3NvbGRfbWljcm9zQhYKFF9ncm9zc19wcm9maXRfbWljcm9zQhYKFF9ncm9z",
-            "c19wcm9maXRfbWFyZ2luQhEKD19yZXZlbnVlX21pY3Jvc0INCgtfdW5pdHNf",
-            "c29sZEInCiVfY3Jvc3Nfc2VsbF9jb3N0X29mX2dvb2RzX3NvbGRfbWljcm9z",
-            "QiEKH19jcm9zc19zZWxsX2dyb3NzX3Byb2ZpdF9taWNyb3NCHAoaX2Nyb3Nz",
-            "X3NlbGxfcmV2ZW51ZV9taWNyb3NCGAoWX2Nyb3NzX3NlbGxfdW5pdHNfc29s",
-            "ZEIhCh9fbGVhZF9jb3N0X29mX2dvb2RzX3NvbGRfbWljcm9zQhsKGV9sZWFk",
-            "X2dyb3NzX3Byb2ZpdF9taWNyb3NCFgoUX2xlYWRfcmV2ZW51ZV9taWNyb3NC",
-            "EgoQX2xlYWRfdW5pdHNfc29sZEIPCg1fdW5pcXVlX3VzZXJzQigKJl9hdmVy",
-            "YWdlX2ltcHJlc3Npb25fZnJlcXVlbmN5X3Blcl91c2VyQhgKFl9saW5rZWRf",
-            "ZW50aXRpZXNfY291bnRCGwoZX2Fzc2V0X3Bpbm5lZF90b3RhbF9jb3VudEIu",
-            "CixfYXNzZXRfcGlubmVkX2FzX2hlYWRsaW5lX3Bvc2l0aW9uX29uZV9jb3Vu",
-            "dEIuCixfYXNzZXRfcGlubmVkX2FzX2hlYWRsaW5lX3Bvc2l0aW9uX3R3b19j",
-            "b3VudEIwCi5fYXNzZXRfcGlubmVkX2FzX2hlYWRsaW5lX3Bvc2l0aW9uX3Ro",
-            "cmVlX2NvdW50QjEKL19hc3NldF9waW5uZWRfYXNfZGVzY3JpcHRpb25fcG9z",
-            "aXRpb25fb25lX2NvdW50QjEKL19hc3NldF9waW5uZWRfYXNfZGVzY3JpcHRp",
-            "b25fcG9zaXRpb25fdHdvX2NvdW50QjcKNV9zdG9yZV92aXNpdHNfbGFzdF9j",
-            "bGlja19tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNpb25zQh8KHV9yZXN1bHRz",
-            "X2NvbnZlcnNpb25zX3B1cmNoYXNlQiMKIV92aWRlb190cnVldmlld192aWV3",
-            "X3JhdGVfaW5fZmVlZEIlCiNfdmlkZW9fdHJ1ZXZpZXdfdmlld19yYXRlX2lu",
-            "X3N0cmVhbUIiCiBfdmlkZW9fdHJ1ZXZpZXdfdmlld19yYXRlX3Nob3J0c0IX",
-            "ChVfY292aWV3ZWRfaW1wcmVzc2lvbnNCFgoUX3ByaW1hcnlfaW1wcmVzc2lv",
-            "bnNCOQo3X3BsYXRmb3JtX2NvbXBhcmFibGVfY29udmVyc2lvbnNfZnJvbV9p",
-            "bnRlcmFjdGlvbnNfcmF0ZUIiCiBfcGxhdGZvcm1fY29tcGFyYWJsZV9jb252",
-            "ZXJzaW9uc0IoCiZfcGxhdGZvcm1fY29tcGFyYWJsZV9jb252ZXJzaW9uc192",
-            "YWx1ZUIxCi9fcGxhdGZvcm1fY29tcGFyYWJsZV9jb252ZXJzaW9uc192YWx1",
-            "ZV9wZXJfY29zdEI1CjNfcGxhdGZvcm1fY29tcGFyYWJsZV9jb252ZXJzaW9u",
-            "c19ieV9jb252ZXJzaW9uX2RhdGVCOwo5X3BsYXRmb3JtX2NvbXBhcmFibGVf",
-            "Y29udmVyc2lvbnNfdmFsdWVfYnlfY29udmVyc2lvbl9kYXRlQkoKSF9wbGF0",
-            "Zm9ybV9jb21wYXJhYmxlX2NvbnZlcnNpb25zX2Zyb21faW50ZXJhY3Rpb25z",
-            "X3ZhbHVlX3Blcl9pbnRlcmFjdGlvbkIqCihfY29zdF9wZXJfcGxhdGZvcm1f",
-            "Y29tcGFyYWJsZV9jb252ZXJzaW9uQisKKV92YWx1ZV9wZXJfcGxhdGZvcm1f",
-            "Y29tcGFyYWJsZV9jb252ZXJzaW9uQj8KPV92YWx1ZV9wZXJfcGxhdGZvcm1f",
-            "Y29tcGFyYWJsZV9jb252ZXJzaW9uc19ieV9jb252ZXJzaW9uX2RhdGVCPQo7",
-            "X2Nvc3RfY29udmVydGVkX2N1cnJlbmN5X3Blcl9wbGF0Zm9ybV9jb21wYXJh",
-            "YmxlX2NvbnZlcnNpb25CGAoWX3VuaXF1ZV91c2Vyc190d29fcGx1c0IaChhf",
-            "dW5pcXVlX3VzZXJzX3RocmVlX3BsdXNCGQoXX3VuaXF1ZV91c2Vyc19mb3Vy",
-            "X3BsdXNCGQoXX3VuaXF1ZV91c2Vyc19maXZlX3BsdXNCGAoWX3VuaXF1ZV91",
-            "c2Vyc190ZW5fcGx1c0ITChFfdmFsdWVfYWRqdXN0bWVudEIXChVfYWxsX3Zh",
-            "bHVlX2FkanVzdG1lbnRCHwodX2NsaWNrc191bmlxdWVfcXVlcnlfY2x1c3Rl",
-            "cnNCJAoiX2NvbnZlcnNpb25zX3VuaXF1ZV9xdWVyeV9jbHVzdGVyc0IkCiJf",
-            "aW1wcmVzc2lvbnNfdW5pcXVlX3F1ZXJ5X2NsdXN0ZXJzQiMKIV92aWRlb193",
-            "YXRjaF90aW1lX2R1cmF0aW9uX21pbGxpc0IrCilfYXZlcmFnZV92aWRlb193",
-            "YXRjaF90aW1lX2R1cmF0aW9uX21pbGxpc0IGCgRfc3ZyQjAKLl9hY3RpdmVf",
-            "dmlld19hdWRpYmlsaXR5X21lYXN1cmFibGVfaW1wcmVzc2lvbnNCNQozX2Fj",
-            "dGl2ZV92aWV3X2F1ZGliaWxpdHlfbWVhc3VyYWJsZV9pbXByZXNzaW9uc19y",
-            "YXRlQj0KO19hY3RpdmVfdmlld19hdWRpYmlsaXR5X2ludmFsaWRfbWVhc3Vy",
-            "YWJsZV9pbXByZXNzaW9uc19yYXRlQkIKQF9hY3RpdmVfdmlld19hdWRpYmls",
-            "aXR5X2ludmFsaWRfZ2l2dF9tZWFzdXJhYmxlX2ltcHJlc3Npb25zX3JhdGVC",
-            "IgogX2FjdGl2ZV92aWV3X2F1ZGlibGVfaW1wcmVzc2lvbnNCJwolX2FjdGl2",
-            "ZV92aWV3X2F1ZGlibGVfaW1wcmVzc2lvbnNfcmF0ZUIuCixfYWN0aXZlX3Zp",
-            "ZXdfYXVkaWJsZV90d29fc2Vjb25kc19pbXByZXNzaW9uc0IzCjFfYWN0aXZl",
-            "X3ZpZXdfYXVkaWJsZV90d29fc2Vjb25kc19pbXByZXNzaW9uc19yYXRlQjEK",
-            "L19hY3RpdmVfdmlld19hdWRpYmxlX3RoaXJ0eV9zZWNvbmRzX2ltcHJlc3Np",
-            "b25zQjYKNF9hY3RpdmVfdmlld19hdWRpYmxlX3RoaXJ0eV9zZWNvbmRzX2lt",
-            "cHJlc3Npb25zX3JhdGVCKAomX2FjdGl2ZV92aWV3X2F1ZGlibGVfcXVhcnRp",
-            "bGVfcDI1X3JhdGVCKAomX2FjdGl2ZV92aWV3X2F1ZGlibGVfcXVhcnRpbGVf",
-            "cDUwX3JhdGVCKAomX2FjdGl2ZV92aWV3X2F1ZGlibGVfcXVhcnRpbGVfcDc1",
-            "X3JhdGVCKQonX2FjdGl2ZV92aWV3X2F1ZGlibGVfcXVhcnRpbGVfcDEwMF9y",
-            "YXRlQjsKOV9iaWRkYWJsZV9pbmRpcmVjdF9pbnN0YWxsX2ZpcnN0X2luX2Fw",
-            "cF9jb252ZXJzaW9uX21pY3Jvc0IYChZfYWxsX2F2ZXJhZ2VfY2FydF9zaXpl",
-            "QiEKH19hbGxfYXZlcmFnZV9vcmRlcl92YWx1ZV9taWNyb3NCIAoeX2FsbF9j",
-            "b3N0X29mX2dvb2RzX3NvbGRfbWljcm9zQisKKV9hbGxfY3Jvc3Nfc2VsbF9j",
-            "b3N0X29mX2dvb2RzX3NvbGRfbWljcm9zQiUKI19hbGxfY3Jvc3Nfc2VsbF9n",
-            "cm9zc19wcm9maXRfbWljcm9zQiAKHl9hbGxfY3Jvc3Nfc2VsbF9yZXZlbnVl",
-            "X21pY3Jvc0IcChpfYWxsX2Nyb3NzX3NlbGxfdW5pdHNfc29sZEIaChhfYWxs",
-            "X2dyb3NzX3Byb2ZpdF9tYXJnaW5CGgoYX2FsbF9ncm9zc19wcm9maXRfbWlj",
-            "cm9zQiUKI19hbGxfbGVhZF9jb3N0X29mX2dvb2RzX3NvbGRfbWljcm9zQh8K",
-            "HV9hbGxfbGVhZF9ncm9zc19wcm9maXRfbWljcm9zQhoKGF9hbGxfbGVhZF9y",
-            "ZXZlbnVlX21pY3Jvc0IWChRfYWxsX2xlYWRfdW5pdHNfc29sZEINCgtfYWxs",
-            "X29yZGVyc0IVChNfYWxsX3JldmVudWVfbWljcm9zQhEKD19hbGxfdW5pdHNf",
-            "c29sZEIeChxfY29udHJvbF9jb3N0X3Blcl9jb252ZXJzaW9uQiYKJF9jb3N0",
-            "X3Blcl9jb252ZXJzaW9uX21hcmdpbl9vZl9lcnJvckIeChxfY29zdF9wZXJf",
-            "Y29udmVyc2lvbl9wX3ZhbHVlQiwKKl9jb3N0X3Blcl9jb252ZXJzaW9uX2No",
-            "YW5nZV9wb2ludF9lc3RpbWF0ZUIWChRfY29udHJvbF9jb252ZXJzaW9uc0Iu",
-            "CixfY29udmVyc2lvbnNfYWJzb2x1dGVfY2hhbmdlX21hcmdpbl9vZl9lcnJv",
-            "ckImCiRfY29udmVyc2lvbnNfYWJzb2x1dGVfY2hhbmdlX3BfdmFsdWVCLQor",
-            "X2NvbnZlcnNpb25zX2Fic29sdXRlX2NoYW5nZV9wb2ludF9lc3RpbWF0ZUIk",
-            "CiJfY29udHJvbF9jb252ZXJzaW9uX3ZhbHVlX3Blcl9jb3N0QiwKKl9jb252",
-            "ZXJzaW9uX3ZhbHVlX3Blcl9jb3N0X21hcmdpbl9vZl9lcnJvckIkCiJfY29u",
-            "dmVyc2lvbl92YWx1ZV9wZXJfY29zdF9wX3ZhbHVlQjIKMF9jb252ZXJzaW9u",
-            "X3ZhbHVlX3Blcl9jb3N0X2NoYW5nZV9wb2ludF9lc3RpbWF0ZUIWChRfY29u",
-            "dHJvbF9jb3N0X21pY3Jvc0IeChxfY29zdF9taWNyb3NfbWFyZ2luX29mX2Vy",
-            "cm9yQhYKFF9jb3N0X21pY3Jvc19wX3ZhbHVlQiQKIl9jb3N0X21pY3Jvc19j",
-            "aGFuZ2VfcG9pbnRfZXN0aW1hdGVCFgoUX2NvbnRyb2xfaW1wcmVzc2lvbnNC",
-            "HgocX2ltcHJlc3Npb25zX21hcmdpbl9vZl9lcnJvckIWChRfaW1wcmVzc2lv",
-            "bnNfcF92YWx1ZUIdChtfaW1wcmVzc2lvbnNfcG9pbnRfZXN0aW1hdGVCGQoX",
-            "X2NsaWNrc19tYXJnaW5fb2ZfZXJyb3JCEQoPX2NsaWNrc19wX3ZhbHVlQhgK",
-            "Fl9jbGlja3NfcG9pbnRfZXN0aW1hdGVCGwoZX2NvbnRyb2xfY29udmVyc2lv",
-            "bl92YWx1ZUIjCiFfY29udmVyc2lvbl92YWx1ZV9tYXJnaW5fb2ZfZXJyb3JC",
-            "GwoZX2NvbnZlcnNpb25fdmFsdWVfcF92YWx1ZUIpCidfY29udmVyc2lvbl92",
-            "YWx1ZV9jaGFuZ2VfcG9pbnRfZXN0aW1hdGVCEwoRX3lvdXR1YmVfY29tbWVu",
-            "dHNCEAoOX3lvdXR1YmVfbGlrZXNCEQoPX3lvdXR1YmVfc2hhcmVzIkcKEVNl",
-            "YXJjaFZvbHVtZVJhbmdlEhAKA21pbhgBIAEoA0gAiAEBEhAKA21heBgCIAEo",
-            "A0gBiAEBQgYKBF9taW5CBgoEX21heELsAQojY29tLmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYyNS5jb21tb25CDE1ldHJpY3NQcm90b1ABWkVnb29nbGUuZ29s",
-            "YW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjI1",
-            "L2NvbW1vbjtjb21tb26iAgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5W",
-            "MjUuQ29tbW9uygIfR29vZ2xlXEFkc1xHb29nbGVBZHNcVjI1XENvbW1vbuoC",
-            "I0dvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyNTo6Q29tbW9uYgZwcm90bzM="));
+            "AogBARImChdpbmNyZW1lbnRhbF9jb252ZXJzaW9ucxjZAyABKAFIjAKIAQES",
+            "MwokaW5jcmVtZW50YWxfY29udmVyc2lvbnNfd2lubmVyX3Njb3JlGNkEIAEo",
+            "AUiNAogBARIrChxpbmNyZW1lbnRhbF9jb252ZXJzaW9uX3ZhbHVlGNoDIAEo",
+            "AUiOAogBARI4CilpbmNyZW1lbnRhbF9jb252ZXJzaW9uX3ZhbHVlX3dpbm5l",
+            "cl9zY29yZRjaBCABKAFIjwKIAQESMwokY29udmVyc2lvbl9saWZ0X2Jhc2Vs",
+            "aW5lX2NvbnZlcnNpb25zGNsDIAEoAUiQAogBARI4Ciljb252ZXJzaW9uX2xp",
+            "ZnRfYmFzZWxpbmVfY29udmVyc2lvbl92YWx1ZRjcAyABKAFIkQKIAQESMgoj",
+            "Y29udmVyc2lvbl9saWZ0X2V4cG9zZWRfY29udmVyc2lvbnMY3QMgASgBSJIC",
+            "iAEBEjcKKGNvbnZlcnNpb25fbGlmdF9leHBvc2VkX2NvbnZlcnNpb25fdmFs",
+            "dWUY3gMgASgBSJMCiAEBEi4KH2Nvc3RfcGVyX2luY3JlbWVudGFsX2NvbnZl",
+            "cnNpb24Y3wMgASgBSJQCiAEBEjsKLGNvc3RfcGVyX2luY3JlbWVudGFsX2Nv",
+            "bnZlcnNpb25fd2lubmVyX3Njb3JlGNsEIAEoAUiVAogBARI+Ci9jb3N0X3Bl",
+            "cl9pbmNyZW1lbnRhbF9jb252ZXJzaW9uX3A5MF9sb3dlcl9ib3VuZBjgAyAB",
+            "KAFIlgKIAQESPgovY29zdF9wZXJfaW5jcmVtZW50YWxfY29udmVyc2lvbl9w",
+            "OTBfdXBwZXJfYm91bmQY4QMgASgBSJcCiAEBEjYKJ2luY3JlbWVudGFsX2Nv",
+            "bnZlcnNpb25zX3A5MF9sb3dlcl9ib3VuZBjiAyABKAFImAKIAQESNgonaW5j",
+            "cmVtZW50YWxfY29udmVyc2lvbnNfcDkwX3VwcGVyX2JvdW5kGOMDIAEoAUiZ",
+            "AogBARIuCh9pbmNyZW1lbnRhbF9jb252ZXJzaW9uc19wX3ZhbHVlGOQDIAEo",
+            "AUiaAogBARI7CixpbmNyZW1lbnRhbF9jb252ZXJzaW9uX3ZhbHVlX3A5MF9s",
+            "b3dlcl9ib3VuZBjlAyABKAFImwKIAQESOwosaW5jcmVtZW50YWxfY29udmVy",
+            "c2lvbl92YWx1ZV9wOTBfdXBwZXJfYm91bmQY5gMgASgBSJwCiAEBEjMKJGlu",
+            "Y3JlbWVudGFsX2NvbnZlcnNpb25fdmFsdWVfcF92YWx1ZRjnAyABKAFInQKI",
+            "AQESNAolaW5jcmVtZW50YWxfY29udmVyc2lvbl92YWx1ZV9wZXJfY29zdBjo",
+            "AyABKAFIngKIAQESQQoyaW5jcmVtZW50YWxfY29udmVyc2lvbl92YWx1ZV9w",
+            "ZXJfY29zdF93aW5uZXJfc2NvcmUY3AQgASgBSJ8CiAEBEkQKNWluY3JlbWVu",
+            "dGFsX2NvbnZlcnNpb25fdmFsdWVfcGVyX2Nvc3RfcDkwX2xvd2VyX2JvdW5k",
+            "GOkDIAEoAUigAogBARJECjVpbmNyZW1lbnRhbF9jb252ZXJzaW9uX3ZhbHVl",
+            "X3Blcl9jb3N0X3A5MF91cHBlcl9ib3VuZBjqAyABKAFIoQKIAQESJwoYcmVs",
+            "YXRpdmVfY29udmVyc2lvbl9saWZ0GOsDIAEoAUiiAogBARI3CihyZWxhdGl2",
+            "ZV9jb252ZXJzaW9uX2xpZnRfcDkwX2xvd2VyX2JvdW5kGOwDIAEoAUijAogB",
+            "ARI3CihyZWxhdGl2ZV9jb252ZXJzaW9uX2xpZnRfcDkwX3VwcGVyX2JvdW5k",
+            "GO0DIAEoAUikAogBARItCh5yZWxhdGl2ZV9jb252ZXJzaW9uX3ZhbHVlX2xp",
+            "ZnQY7gMgASgBSKUCiAEBEj0KLnJlbGF0aXZlX2NvbnZlcnNpb25fdmFsdWVf",
+            "bGlmdF9wOTBfbG93ZXJfYm91bmQY7wMgASgBSKYCiAEBEj0KLnJlbGF0aXZl",
+            "X2NvbnZlcnNpb25fdmFsdWVfbGlmdF9wOTBfdXBwZXJfYm91bmQY8AMgASgB",
+            "SKcCiAEBEiIKE2Fic29sdXRlX2JyYW5kX2xpZnQY8QMgASgBSKgCiAEBEjIK",
+            "I2Fic29sdXRlX2JyYW5kX2xpZnRfcDkwX2xvd2VyX2JvdW5kGPIDIAEoAUip",
+            "AogBARIyCiNhYnNvbHV0ZV9icmFuZF9saWZ0X3A5MF91cHBlcl9ib3VuZBjz",
+            "AyABKAFIqgKIAQESKgobYWJzb2x1dGVfYnJhbmRfbGlmdF9wX3ZhbHVlGPQD",
+            "IAEoAUirAogBARI5CipicmFuZF9saWZ0X2Jhc2VsaW5lX3Bvc2l0aXZlX3Jl",
+            "c3BvbnNlX3JhdGUY9QMgASgBSKwCiAEBEkkKOmJyYW5kX2xpZnRfYmFzZWxp",
+            "bmVfcG9zaXRpdmVfcmVzcG9uc2VfcmF0ZV9wOTBfbG93ZXJfYm91bmQY9gMg",
+            "ASgBSK0CiAEBEkkKOmJyYW5kX2xpZnRfYmFzZWxpbmVfcG9zaXRpdmVfcmVz",
+            "cG9uc2VfcmF0ZV9wOTBfdXBwZXJfYm91bmQY9wMgASgBSK4CiAEBEkcKOGJy",
+            "YW5kX2xpZnRfZXhwb3NlZF9wb3NpdGl2ZV9yZXNwb25kZXJfZnJhY3Rpb25h",
+            "bF9jb29raWVzGPgDIAEoAUivAogBARJXCkhicmFuZF9saWZ0X2V4cG9zZWRf",
+            "cG9zaXRpdmVfcmVzcG9uZGVyX2ZyYWN0aW9uYWxfY29va2llc19wOTBfbG93",
+            "ZXJfYm91bmQY+QMgASgBSLACiAEBElcKSGJyYW5kX2xpZnRfZXhwb3NlZF9w",
+            "b3NpdGl2ZV9yZXNwb25kZXJfZnJhY3Rpb25hbF9jb29raWVzX3A5MF91cHBl",
+            "cl9ib3VuZBj6AyABKAFIsQKIAQESOAopYnJhbmRfbGlmdF9leHBvc2VkX3Bv",
+            "c2l0aXZlX3Jlc3BvbnNlX3JhdGUY+wMgASgBSLICiAEBEkgKOWJyYW5kX2xp",
+            "ZnRfZXhwb3NlZF9wb3NpdGl2ZV9yZXNwb25zZV9yYXRlX3A5MF9sb3dlcl9i",
+            "b3VuZBj8AyABKAFIswKIAQESSAo5YnJhbmRfbGlmdF9leHBvc2VkX3Bvc2l0",
+            "aXZlX3Jlc3BvbnNlX3JhdGVfcDkwX3VwcGVyX2JvdW5kGP0DIAEoAUi0AogB",
+            "ARIrChxicmFuZF9saWZ0X3Jlc3BvbnNlc19leHBvc2VkGP4DIAEoAUi1AogB",
+            "ARIuCh9icmFuZF9saWZ0X3Jlc3BvbnNlc19zdXBwcmVzc2VkGP8DIAEoAUi2",
+            "AogBARJKCjticmFuZF9saWZ0X3N1cHByZXNzZWRfcG9zaXRpdmVfcmVzcG9u",
+            "ZGVyX2ZyYWN0aW9uYWxfY29va2llcxiABCABKAFItwKIAQESWgpLYnJhbmRf",
+            "bGlmdF9zdXBwcmVzc2VkX3Bvc2l0aXZlX3Jlc3BvbmRlcl9mcmFjdGlvbmFs",
+            "X2Nvb2tpZXNfcDkwX2xvd2VyX2JvdW5kGIEEIAEoAUi4AogBARJaCkticmFu",
+            "ZF9saWZ0X3N1cHByZXNzZWRfcG9zaXRpdmVfcmVzcG9uZGVyX2ZyYWN0aW9u",
+            "YWxfY29va2llc19wOTBfdXBwZXJfYm91bmQYggQgASgBSLkCiAEBEikKGmJy",
+            "YW5kX2xpZnRfdG90YWxfcmVzcG9uc2VzGIMEIAEoAUi6AogBARIlChZjb3N0",
+            "X3Blcl9saWZ0ZWRfY29va2llGIQEIAEoAUi7AogBARI1CiZjb3N0X3Blcl9s",
+            "aWZ0ZWRfY29va2llX3A5MF9sb3dlcl9ib3VuZBiFBCABKAFIvAKIAQESNQom",
+            "Y29zdF9wZXJfbGlmdGVkX2Nvb2tpZV9wOTBfdXBwZXJfYm91bmQYhgQgASgB",
+            "SL0CiAEBEigKGWZyYWN0aW9uYWxfbGlmdGVkX2Nvb2tpZXMYhwQgASgBSL4C",
+            "iAEBEjgKKWZyYWN0aW9uYWxfbGlmdGVkX2Nvb2tpZXNfcDkwX2xvd2VyX2Jv",
+            "dW5kGIgEIAEoAUi/AogBARI4CilmcmFjdGlvbmFsX2xpZnRlZF9jb29raWVz",
+            "X3A5MF91cHBlcl9ib3VuZBiJBCABKAFIwAKIAQESIgoTaGVhZHJvb21fYnJh",
+            "bmRfbGlmdBiKBCABKAFIwQKIAQESMgojaGVhZHJvb21fYnJhbmRfbGlmdF9w",
+            "OTBfbG93ZXJfYm91bmQYiwQgASgBSMICiAEBEjIKI2hlYWRyb29tX2JyYW5k",
+            "X2xpZnRfcDkwX3VwcGVyX2JvdW5kGIwEIAEoAUjDAogBARIiChNyZWxhdGl2",
+            "ZV9icmFuZF9saWZ0GI0EIAEoAUjEAogBARIyCiNyZWxhdGl2ZV9icmFuZF9s",
+            "aWZ0X3A5MF9sb3dlcl9ib3VuZBiOBCABKAFIxQKIAQESMgojcmVsYXRpdmVf",
+            "YnJhbmRfbGlmdF9wOTBfdXBwZXJfYm91bmQYjwQgASgBSMYCiAEBEh8KEHlv",
+            "dXR1YmVfY29tbWVudHMYkAQgASgDSMcCiAEBEhwKDXlvdXR1YmVfbGlrZXMY",
+            "kQQgASgDSMgCiAEBEh0KDnlvdXR1YmVfc2hhcmVzGJIEIAEoA0jJAogBARIo",
+            "ChlvcmlnaW5hbF9jb252ZXJzaW9uX3ZhbHVlGJMEIAEoAUjKAogBAUIlCiNf",
+            "YWJzb2x1dGVfdG9wX2ltcHJlc3Npb25fcGVyY2VudGFnZUISChBfYWN0aXZl",
+            "X3ZpZXdfY3BtQhIKEF9hY3RpdmVfdmlld19jdHJCGgoYX2FjdGl2ZV92aWV3",
+            "X2ltcHJlc3Npb25zQhwKGl9hY3RpdmVfdmlld19tZWFzdXJhYmlsaXR5QiUK",
+            "I19hY3RpdmVfdmlld19tZWFzdXJhYmxlX2Nvc3RfbWljcm9zQiUKI19hY3Rp",
+            "dmVfdmlld19tZWFzdXJhYmxlX2ltcHJlc3Npb25zQhoKGF9hY3RpdmVfdmll",
+            "d192aWV3YWJpbGl0eUIpCidfYWxsX2NvbnZlcnNpb25zX2Zyb21faW50ZXJh",
+            "Y3Rpb25zX3JhdGVCGAoWX2FsbF9jb252ZXJzaW9uc192YWx1ZUIrCilfYWxs",
+            "X2NvbnZlcnNpb25zX3ZhbHVlX2J5X2NvbnZlcnNpb25fZGF0ZUIiCiBfYWxs",
+            "X25ld19jdXN0b21lcl9saWZldGltZV92YWx1ZUISChBfYWxsX2NvbnZlcnNp",
+            "b25zQiUKI19hbGxfY29udmVyc2lvbnNfYnlfY29udmVyc2lvbl9kYXRlQiEK",
+            "H19hbGxfY29udmVyc2lvbnNfdmFsdWVfcGVyX2Nvc3RCJQojX2FsbF9jb252",
+            "ZXJzaW9uc19mcm9tX2NsaWNrX3RvX2NhbGxCIgogX2FsbF9jb252ZXJzaW9u",
+            "c19mcm9tX2RpcmVjdGlvbnNCOgo4X2FsbF9jb252ZXJzaW9uc19mcm9tX2lu",
+            "dGVyYWN0aW9uc192YWx1ZV9wZXJfaW50ZXJhY3Rpb25CHAoaX2FsbF9jb252",
+            "ZXJzaW9uc19mcm9tX21lbnVCHQobX2FsbF9jb252ZXJzaW9uc19mcm9tX29y",
+            "ZGVyQigKJl9hbGxfY29udmVyc2lvbnNfZnJvbV9vdGhlcl9lbmdhZ2VtZW50",
+            "QiMKIV9hbGxfY29udmVyc2lvbnNfZnJvbV9zdG9yZV92aXNpdEIlCiNfYWxs",
+            "X2NvbnZlcnNpb25zX2Zyb21fc3RvcmVfd2Vic2l0ZUI8CjpfYXVjdGlvbl9p",
+            "bnNpZ2h0X3NlYXJjaF9hYnNvbHV0ZV90b3BfaW1wcmVzc2lvbl9wZXJjZW50",
+            "YWdlQioKKF9hdWN0aW9uX2luc2lnaHRfc2VhcmNoX2ltcHJlc3Npb25fc2hh",
+            "cmVCKgooX2F1Y3Rpb25faW5zaWdodF9zZWFyY2hfb3V0cmFua2luZ19zaGFy",
+            "ZUImCiRfYXVjdGlvbl9pbnNpZ2h0X3NlYXJjaF9vdmVybGFwX3JhdGVCLQor",
+            "X2F1Y3Rpb25faW5zaWdodF9zZWFyY2hfcG9zaXRpb25fYWJvdmVfcmF0ZUIz",
+            "CjFfYXVjdGlvbl9pbnNpZ2h0X3NlYXJjaF90b3BfaW1wcmVzc2lvbl9wZXJj",
+            "ZW50YWdlQg8KDV9hdmVyYWdlX2Nvc3RCDgoMX2F2ZXJhZ2VfY3BjQg4KDF9h",
+            "dmVyYWdlX2NwZUIOCgxfYXZlcmFnZV9jcG1CFwoVX3RydWV2aWV3X2F2ZXJh",
+            "Z2VfY3B2QhUKE19hdmVyYWdlX3BhZ2Vfdmlld3NCFwoVX2F2ZXJhZ2VfdGlt",
+            "ZV9vbl9zaXRlQhwKGl9iZW5jaG1hcmtfYXZlcmFnZV9tYXhfY3BjQiMKIV9i",
+            "aWRkYWJsZV9hcHBfaW5zdGFsbF9jb252ZXJzaW9uc0IoCiZfYmlkZGFibGVf",
+            "YXBwX3Bvc3RfaW5zdGFsbF9jb252ZXJzaW9uc0IvCi1fYmlkZGFibGVfY29o",
+            "b3J0X2FwcF9wb3N0X2luc3RhbGxfY29udmVyc2lvbnNCEAoOX2JlbmNobWFy",
+            "a19jdHJCDgoMX2JvdW5jZV9yYXRlQgkKB19jbGlja3NCEQoPX2NvbnRyb2xf",
+            "Y2xpY2tzQhIKEF9jb21iaW5lZF9jbGlja3NCHAoaX2NvbWJpbmVkX2NsaWNr",
+            "c19wZXJfcXVlcnlCEwoRX2NvbWJpbmVkX3F1ZXJpZXNCJwolX2NvbnRlbnRf",
+            "YnVkZ2V0X2xvc3RfaW1wcmVzc2lvbl9zaGFyZUIbChlfY29udGVudF9pbXBy",
+            "ZXNzaW9uX3NoYXJlQi0KK19jb252ZXJzaW9uX2xhc3RfcmVjZWl2ZWRfcmVx",
+            "dWVzdF9kYXRlX3RpbWVCIgogX2NvbnZlcnNpb25fbGFzdF9jb252ZXJzaW9u",
+            "X2RhdGVCJQojX2NvbnRlbnRfcmFua19sb3N0X2ltcHJlc3Npb25fc2hhcmVC",
+            "JQojX2NvbnZlcnNpb25zX2Zyb21faW50ZXJhY3Rpb25zX3JhdGVCFAoSX2Nv",
+            "bnZlcnNpb25zX3ZhbHVlQicKJV9jb252ZXJzaW9uc192YWx1ZV9ieV9jb252",
+            "ZXJzaW9uX2RhdGVCHgocX25ld19jdXN0b21lcl9saWZldGltZV92YWx1ZUId",
+            "ChtfY29udmVyc2lvbnNfdmFsdWVfcGVyX2Nvc3RCNgo0X2NvbnZlcnNpb25z",
+            "X2Zyb21faW50ZXJhY3Rpb25zX3ZhbHVlX3Blcl9pbnRlcmFjdGlvbkIOCgxf",
+            "Y29udmVyc2lvbnNCIQofX2NvbnZlcnNpb25zX2J5X2NvbnZlcnNpb25fZGF0",
+            "ZUIOCgxfY29zdF9taWNyb3NCGwoZX2Nvc3RfcGVyX2FsbF9jb252ZXJzaW9u",
+            "c0IWChRfY29zdF9wZXJfY29udmVyc2lvbkIvCi1fY29zdF9wZXJfY3VycmVu",
+            "dF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNpb25CGwoZX2Nyb3NzX2Rldmlj",
+            "ZV9jb252ZXJzaW9uc0IuCixfY3Jvc3NfZGV2aWNlX2NvbnZlcnNpb25zX2J5",
+            "X2NvbnZlcnNpb25fZGF0ZUIhCh9fY3Jvc3NfZGV2aWNlX2NvbnZlcnNpb25z",
+            "X3ZhbHVlQigKJl9jcm9zc19kZXZpY2VfY29udmVyc2lvbnNfdmFsdWVfbWlj",
+            "cm9zQjQKMl9jcm9zc19kZXZpY2VfY29udmVyc2lvbnNfdmFsdWVfYnlfY29u",
+            "dmVyc2lvbl9kYXRlQgYKBF9jdHJCJwolX2N1cnJlbnRfbW9kZWxfYXR0cmli",
+            "dXRlZF9jb252ZXJzaW9uc0I+CjxfY3VycmVudF9tb2RlbF9hdHRyaWJ1dGVk",
+            "X2NvbnZlcnNpb25zX2Zyb21faW50ZXJhY3Rpb25zX3JhdGVCTwpNX2N1cnJl",
+            "bnRfbW9kZWxfYXR0cmlidXRlZF9jb252ZXJzaW9uc19mcm9tX2ludGVyYWN0",
+            "aW9uc192YWx1ZV9wZXJfaW50ZXJhY3Rpb25CLQorX2N1cnJlbnRfbW9kZWxf",
+            "YXR0cmlidXRlZF9jb252ZXJzaW9uc192YWx1ZUI2CjRfY3VycmVudF9tb2Rl",
+            "bF9hdHRyaWJ1dGVkX2NvbnZlcnNpb25zX3ZhbHVlX3Blcl9jb3N0QhIKEF9l",
+            "bmdhZ2VtZW50X3JhdGVCDgoMX2VuZ2FnZW1lbnRzQiIKIF9ob3RlbF9hdmVy",
+            "YWdlX2xlYWRfdmFsdWVfbWljcm9zQh8KHV9ob3RlbF9jb21taXNzaW9uX3Jh",
+            "dGVfbWljcm9zQiEKH19ob3RlbF9leHBlY3RlZF9jb21taXNzaW9uX2Nvc3RC",
+            "JAoiX2hvdGVsX3ByaWNlX2RpZmZlcmVuY2VfcGVyY2VudGFnZUIdChtfaG90",
+            "ZWxfZWxpZ2libGVfaW1wcmVzc2lvbnNCGwoZX2hpc3RvcmljYWxfcXVhbGl0",
+            "eV9zY29yZUIRCg9fZ21haWxfZm9yd2FyZHNCDgoMX2dtYWlsX3NhdmVzQhkK",
+            "F19nbWFpbF9zZWNvbmRhcnlfY2xpY2tzQh8KHV9pbXByZXNzaW9uc19mcm9t",
+            "X3N0b3JlX3JlYWNoQg4KDF9pbXByZXNzaW9uc0ITChFfaW50ZXJhY3Rpb25f",
+            "cmF0ZUIPCg1faW50ZXJhY3Rpb25zQhUKE19pbnZhbGlkX2NsaWNrX3JhdGVC",
+            "EQoPX2ludmFsaWRfY2xpY2tzQh0KG19nZW5lcmFsX2ludmFsaWRfY2xpY2tf",
+            "cmF0ZUIZChdfZ2VuZXJhbF9pbnZhbGlkX2NsaWNrc0IQCg5fbWVzc2FnZV9j",
+            "aGF0c0IWChRfbWVzc2FnZV9pbXByZXNzaW9uc0IUChJfbWVzc2FnZV9jaGF0",
+            "X3JhdGVCJAoiX21vYmlsZV9mcmllbmRseV9jbGlja3NfcGVyY2VudGFnZUIc",
+            "Chpfb3B0aW1pemF0aW9uX3Njb3JlX3VwbGlmdEIZChdfb3B0aW1pemF0aW9u",
+            "X3Njb3JlX3VybEIRCg9fb3JnYW5pY19jbGlja3NCGwoZX29yZ2FuaWNfY2xp",
+            "Y2tzX3Blcl9xdWVyeUIWChRfb3JnYW5pY19pbXByZXNzaW9uc0IgCh5fb3Jn",
+            "YW5pY19pbXByZXNzaW9uc19wZXJfcXVlcnlCEgoQX29yZ2FuaWNfcXVlcmll",
+            "c0IXChVfcGVyY2VudF9uZXdfdmlzaXRvcnNCDgoMX3Bob25lX2NhbGxzQhQK",
+            "El9waG9uZV9pbXByZXNzaW9uc0IVChNfcGhvbmVfdGhyb3VnaF9yYXRlQg8K",
+            "DV9yZWxhdGl2ZV9jdHJCJwolX3NlYXJjaF9hYnNvbHV0ZV90b3BfaW1wcmVz",
+            "c2lvbl9zaGFyZUIzCjFfc2VhcmNoX2J1ZGdldF9sb3N0X2Fic29sdXRlX3Rv",
+            "cF9pbXByZXNzaW9uX3NoYXJlQiYKJF9zZWFyY2hfYnVkZ2V0X2xvc3RfaW1w",
+            "cmVzc2lvbl9zaGFyZUIqCihfc2VhcmNoX2J1ZGdldF9sb3N0X3RvcF9pbXBy",
+            "ZXNzaW9uX3NoYXJlQhUKE19zZWFyY2hfY2xpY2tfc2hhcmVCJgokX3NlYXJj",
+            "aF9leGFjdF9tYXRjaF9pbXByZXNzaW9uX3NoYXJlQhoKGF9zZWFyY2hfaW1w",
+            "cmVzc2lvbl9zaGFyZUIxCi9fc2VhcmNoX3JhbmtfbG9zdF9hYnNvbHV0ZV90",
+            "b3BfaW1wcmVzc2lvbl9zaGFyZUIkCiJfc2VhcmNoX3JhbmtfbG9zdF9pbXBy",
+            "ZXNzaW9uX3NoYXJlQigKJl9zZWFyY2hfcmFua19sb3N0X3RvcF9pbXByZXNz",
+            "aW9uX3NoYXJlQh4KHF9zZWFyY2hfdG9wX2ltcHJlc3Npb25fc2hhcmVCEAoO",
+            "X3NlYXJjaF92b2x1bWVCDgoMX3NwZWVkX3Njb3JlQhwKGl9hdmVyYWdlX3Rh",
+            "cmdldF9jcGFfbWljcm9zQhYKFF9hdmVyYWdlX3RhcmdldF9yb2FzQhwKGl90",
+            "b3BfaW1wcmVzc2lvbl9wZXJjZW50YWdlQjMKMV92YWxpZF9hY2NlbGVyYXRl",
+            "ZF9tb2JpbGVfcGFnZXNfY2xpY2tzX3BlcmNlbnRhZ2VCHAoaX3ZhbHVlX3Bl",
+            "cl9hbGxfY29udmVyc2lvbnNCLwotX3ZhbHVlX3Blcl9hbGxfY29udmVyc2lv",
+            "bnNfYnlfY29udmVyc2lvbl9kYXRlQhcKFV92YWx1ZV9wZXJfY29udmVyc2lv",
+            "bkIrCilfdmFsdWVfcGVyX2NvbnZlcnNpb25zX2J5X2NvbnZlcnNpb25fZGF0",
+            "ZUIwCi5fdmFsdWVfcGVyX2N1cnJlbnRfbW9kZWxfYXR0cmlidXRlZF9jb252",
+            "ZXJzaW9uQhsKGV92aWRlb19xdWFydGlsZV9wMTAwX3JhdGVCGgoYX3ZpZGVv",
+            "X3F1YXJ0aWxlX3AyNV9yYXRlQhoKGF92aWRlb19xdWFydGlsZV9wNTBfcmF0",
+            "ZUIaChhfdmlkZW9fcXVhcnRpbGVfcDc1X3JhdGVCGwoZX3ZpZGVvX3RydWV2",
+            "aWV3X3ZpZXdfcmF0ZUIXChVfdmlkZW9fdHJ1ZXZpZXdfdmlld3NCGwoZX3Zp",
+            "ZXdfdGhyb3VnaF9jb252ZXJzaW9uc0I0CjJfYWxsX2NvbnZlcnNpb25zX2Zy",
+            "b21fbG9jYXRpb25fYXNzZXRfY2xpY2tfdG9fY2FsbEIxCi9fYWxsX2NvbnZl",
+            "cnNpb25zX2Zyb21fbG9jYXRpb25fYXNzZXRfZGlyZWN0aW9uc0IrCilfYWxs",
+            "X2NvbnZlcnNpb25zX2Zyb21fbG9jYXRpb25fYXNzZXRfbWVudUIsCipfYWxs",
+            "X2NvbnZlcnNpb25zX2Zyb21fbG9jYXRpb25fYXNzZXRfb3JkZXJCNwo1X2Fs",
+            "bF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0X290aGVyX2VuZ2Fn",
+            "ZW1lbnRCMwoxX2FsbF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0",
+            "X3N0b3JlX3Zpc2l0c0IuCixfYWxsX2NvbnZlcnNpb25zX2Zyb21fbG9jYXRp",
+            "b25fYXNzZXRfd2Vic2l0ZUI3CjVfZWxpZ2libGVfaW1wcmVzc2lvbnNfZnJv",
+            "bV9sb2NhdGlvbl9hc3NldF9zdG9yZV9yZWFjaEI9Cjtfdmlld190aHJvdWdo",
+            "X2NvbnZlcnNpb25zX2Zyb21fbG9jYXRpb25fYXNzZXRfY2xpY2tfdG9fY2Fs",
+            "bEI6Cjhfdmlld190aHJvdWdoX2NvbnZlcnNpb25zX2Zyb21fbG9jYXRpb25f",
+            "YXNzZXRfZGlyZWN0aW9uc0I0CjJfdmlld190aHJvdWdoX2NvbnZlcnNpb25z",
+            "X2Zyb21fbG9jYXRpb25fYXNzZXRfbWVudUI1CjNfdmlld190aHJvdWdoX2Nv",
+            "bnZlcnNpb25zX2Zyb21fbG9jYXRpb25fYXNzZXRfb3JkZXJCQAo+X3ZpZXdf",
+            "dGhyb3VnaF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0X290aGVy",
+            "X2VuZ2FnZW1lbnRCPAo6X3ZpZXdfdGhyb3VnaF9jb252ZXJzaW9uc19mcm9t",
+            "X2xvY2F0aW9uX2Fzc2V0X3N0b3JlX3Zpc2l0c0I3CjVfdmlld190aHJvdWdo",
+            "X2NvbnZlcnNpb25zX2Zyb21fbG9jYXRpb25fYXNzZXRfd2Vic2l0ZUIJCgdf",
+            "b3JkZXJzQh0KG19hdmVyYWdlX29yZGVyX3ZhbHVlX21pY3Jvc0IUChJfYXZl",
+            "cmFnZV9jYXJ0X3NpemVCHAoaX2Nvc3Rfb2ZfZ29vZHNfc29sZF9taWNyb3NC",
+            "FgoUX2dyb3NzX3Byb2ZpdF9taWNyb3NCFgoUX2dyb3NzX3Byb2ZpdF9tYXJn",
+            "aW5CEQoPX3JldmVudWVfbWljcm9zQg0KC191bml0c19zb2xkQicKJV9jcm9z",
+            "c19zZWxsX2Nvc3Rfb2ZfZ29vZHNfc29sZF9taWNyb3NCIQofX2Nyb3NzX3Nl",
+            "bGxfZ3Jvc3NfcHJvZml0X21pY3Jvc0IcChpfY3Jvc3Nfc2VsbF9yZXZlbnVl",
+            "X21pY3Jvc0IYChZfY3Jvc3Nfc2VsbF91bml0c19zb2xkQiEKH19sZWFkX2Nv",
+            "c3Rfb2ZfZ29vZHNfc29sZF9taWNyb3NCGwoZX2xlYWRfZ3Jvc3NfcHJvZml0",
+            "X21pY3Jvc0IWChRfbGVhZF9yZXZlbnVlX21pY3Jvc0ISChBfbGVhZF91bml0",
+            "c19zb2xkQg8KDV91bmlxdWVfdXNlcnNCKAomX2F2ZXJhZ2VfaW1wcmVzc2lv",
+            "bl9mcmVxdWVuY3lfcGVyX3VzZXJCGAoWX2xpbmtlZF9lbnRpdGllc19jb3Vu",
+            "dEIbChlfYXNzZXRfcGlubmVkX3RvdGFsX2NvdW50Qi4KLF9hc3NldF9waW5u",
+            "ZWRfYXNfaGVhZGxpbmVfcG9zaXRpb25fb25lX2NvdW50Qi4KLF9hc3NldF9w",
+            "aW5uZWRfYXNfaGVhZGxpbmVfcG9zaXRpb25fdHdvX2NvdW50QjAKLl9hc3Nl",
+            "dF9waW5uZWRfYXNfaGVhZGxpbmVfcG9zaXRpb25fdGhyZWVfY291bnRCMQov",
+            "X2Fzc2V0X3Bpbm5lZF9hc19kZXNjcmlwdGlvbl9wb3NpdGlvbl9vbmVfY291",
+            "bnRCMQovX2Fzc2V0X3Bpbm5lZF9hc19kZXNjcmlwdGlvbl9wb3NpdGlvbl90",
+            "d29fY291bnRCNwo1X3N0b3JlX3Zpc2l0c19sYXN0X2NsaWNrX21vZGVsX2F0",
+            "dHJpYnV0ZWRfY29udmVyc2lvbnNCHwodX3Jlc3VsdHNfY29udmVyc2lvbnNf",
+            "cHVyY2hhc2VCIwohX3ZpZGVvX3RydWV2aWV3X3ZpZXdfcmF0ZV9pbl9mZWVk",
+            "QiUKI192aWRlb190cnVldmlld192aWV3X3JhdGVfaW5fc3RyZWFtQiIKIF92",
+            "aWRlb190cnVldmlld192aWV3X3JhdGVfc2hvcnRzQhcKFV9jb3ZpZXdlZF9p",
+            "bXByZXNzaW9uc0IWChRfcHJpbWFyeV9pbXByZXNzaW9uc0I5CjdfcGxhdGZv",
+            "cm1fY29tcGFyYWJsZV9jb252ZXJzaW9uc19mcm9tX2ludGVyYWN0aW9uc19y",
+            "YXRlQiIKIF9wbGF0Zm9ybV9jb21wYXJhYmxlX2NvbnZlcnNpb25zQigKJl9w",
+            "bGF0Zm9ybV9jb21wYXJhYmxlX2NvbnZlcnNpb25zX3ZhbHVlQjEKL19wbGF0",
+            "Zm9ybV9jb21wYXJhYmxlX2NvbnZlcnNpb25zX3ZhbHVlX3Blcl9jb3N0QjUK",
+            "M19wbGF0Zm9ybV9jb21wYXJhYmxlX2NvbnZlcnNpb25zX2J5X2NvbnZlcnNp",
+            "b25fZGF0ZUI7CjlfcGxhdGZvcm1fY29tcGFyYWJsZV9jb252ZXJzaW9uc192",
+            "YWx1ZV9ieV9jb252ZXJzaW9uX2RhdGVCSgpIX3BsYXRmb3JtX2NvbXBhcmFi",
+            "bGVfY29udmVyc2lvbnNfZnJvbV9pbnRlcmFjdGlvbnNfdmFsdWVfcGVyX2lu",
+            "dGVyYWN0aW9uQioKKF9jb3N0X3Blcl9wbGF0Zm9ybV9jb21wYXJhYmxlX2Nv",
+            "bnZlcnNpb25CKwopX3ZhbHVlX3Blcl9wbGF0Zm9ybV9jb21wYXJhYmxlX2Nv",
+            "bnZlcnNpb25CPwo9X3ZhbHVlX3Blcl9wbGF0Zm9ybV9jb21wYXJhYmxlX2Nv",
+            "bnZlcnNpb25zX2J5X2NvbnZlcnNpb25fZGF0ZUI9CjtfY29zdF9jb252ZXJ0",
+            "ZWRfY3VycmVuY3lfcGVyX3BsYXRmb3JtX2NvbXBhcmFibGVfY29udmVyc2lv",
+            "bkIYChZfdW5pcXVlX3VzZXJzX3R3b19wbHVzQhoKGF91bmlxdWVfdXNlcnNf",
+            "dGhyZWVfcGx1c0IZChdfdW5pcXVlX3VzZXJzX2ZvdXJfcGx1c0IZChdfdW5p",
+            "cXVlX3VzZXJzX2ZpdmVfcGx1c0IYChZfdW5pcXVlX3VzZXJzX3Rlbl9wbHVz",
+            "QhMKEV92YWx1ZV9hZGp1c3RtZW50QhcKFV9hbGxfdmFsdWVfYWRqdXN0bWVu",
+            "dEIfCh1fY2xpY2tzX3VuaXF1ZV9xdWVyeV9jbHVzdGVyc0IkCiJfY29udmVy",
+            "c2lvbnNfdW5pcXVlX3F1ZXJ5X2NsdXN0ZXJzQiQKIl9pbXByZXNzaW9uc191",
+            "bmlxdWVfcXVlcnlfY2x1c3RlcnNCIwohX3ZpZGVvX3dhdGNoX3RpbWVfZHVy",
+            "YXRpb25fbWlsbGlzQisKKV9hdmVyYWdlX3ZpZGVvX3dhdGNoX3RpbWVfZHVy",
+            "YXRpb25fbWlsbGlzQgYKBF9zdnJCMAouX2FjdGl2ZV92aWV3X2F1ZGliaWxp",
+            "dHlfbWVhc3VyYWJsZV9pbXByZXNzaW9uc0I1CjNfYWN0aXZlX3ZpZXdfYXVk",
+            "aWJpbGl0eV9tZWFzdXJhYmxlX2ltcHJlc3Npb25zX3JhdGVCPQo7X2FjdGl2",
+            "ZV92aWV3X2F1ZGliaWxpdHlfaW52YWxpZF9tZWFzdXJhYmxlX2ltcHJlc3Np",
+            "b25zX3JhdGVCQgpAX2FjdGl2ZV92aWV3X2F1ZGliaWxpdHlfaW52YWxpZF9n",
+            "aXZ0X21lYXN1cmFibGVfaW1wcmVzc2lvbnNfcmF0ZUIiCiBfYWN0aXZlX3Zp",
+            "ZXdfYXVkaWJsZV9pbXByZXNzaW9uc0InCiVfYWN0aXZlX3ZpZXdfYXVkaWJs",
+            "ZV9pbXByZXNzaW9uc19yYXRlQi4KLF9hY3RpdmVfdmlld19hdWRpYmxlX3R3",
+            "b19zZWNvbmRzX2ltcHJlc3Npb25zQjMKMV9hY3RpdmVfdmlld19hdWRpYmxl",
+            "X3R3b19zZWNvbmRzX2ltcHJlc3Npb25zX3JhdGVCMQovX2FjdGl2ZV92aWV3",
+            "X2F1ZGlibGVfdGhpcnR5X3NlY29uZHNfaW1wcmVzc2lvbnNCNgo0X2FjdGl2",
+            "ZV92aWV3X2F1ZGlibGVfdGhpcnR5X3NlY29uZHNfaW1wcmVzc2lvbnNfcmF0",
+            "ZUIoCiZfYWN0aXZlX3ZpZXdfYXVkaWJsZV9xdWFydGlsZV9wMjVfcmF0ZUIo",
+            "CiZfYWN0aXZlX3ZpZXdfYXVkaWJsZV9xdWFydGlsZV9wNTBfcmF0ZUIoCiZf",
+            "YWN0aXZlX3ZpZXdfYXVkaWJsZV9xdWFydGlsZV9wNzVfcmF0ZUIpCidfYWN0",
+            "aXZlX3ZpZXdfYXVkaWJsZV9xdWFydGlsZV9wMTAwX3JhdGVCOwo5X2JpZGRh",
+            "YmxlX2luZGlyZWN0X2luc3RhbGxfZmlyc3RfaW5fYXBwX2NvbnZlcnNpb25f",
+            "bWljcm9zQhgKFl9hbGxfYXZlcmFnZV9jYXJ0X3NpemVCIQofX2FsbF9hdmVy",
+            "YWdlX29yZGVyX3ZhbHVlX21pY3Jvc0IgCh5fYWxsX2Nvc3Rfb2ZfZ29vZHNf",
+            "c29sZF9taWNyb3NCKwopX2FsbF9jcm9zc19zZWxsX2Nvc3Rfb2ZfZ29vZHNf",
+            "c29sZF9taWNyb3NCJQojX2FsbF9jcm9zc19zZWxsX2dyb3NzX3Byb2ZpdF9t",
+            "aWNyb3NCIAoeX2FsbF9jcm9zc19zZWxsX3JldmVudWVfbWljcm9zQhwKGl9h",
+            "bGxfY3Jvc3Nfc2VsbF91bml0c19zb2xkQhoKGF9hbGxfZ3Jvc3NfcHJvZml0",
+            "X21hcmdpbkIaChhfYWxsX2dyb3NzX3Byb2ZpdF9taWNyb3NCJQojX2FsbF9s",
+            "ZWFkX2Nvc3Rfb2ZfZ29vZHNfc29sZF9taWNyb3NCHwodX2FsbF9sZWFkX2dy",
+            "b3NzX3Byb2ZpdF9taWNyb3NCGgoYX2FsbF9sZWFkX3JldmVudWVfbWljcm9z",
+            "QhYKFF9hbGxfbGVhZF91bml0c19zb2xkQg0KC19hbGxfb3JkZXJzQhUKE19h",
+            "bGxfcmV2ZW51ZV9taWNyb3NCEQoPX2FsbF91bml0c19zb2xkQh4KHF9jb250",
+            "cm9sX2Nvc3RfcGVyX2NvbnZlcnNpb25CJgokX2Nvc3RfcGVyX2NvbnZlcnNp",
+            "b25fbWFyZ2luX29mX2Vycm9yQh4KHF9jb3N0X3Blcl9jb252ZXJzaW9uX3Bf",
+            "dmFsdWVCLAoqX2Nvc3RfcGVyX2NvbnZlcnNpb25fY2hhbmdlX3BvaW50X2Vz",
+            "dGltYXRlQhYKFF9jb250cm9sX2NvbnZlcnNpb25zQi4KLF9jb252ZXJzaW9u",
+            "c19hYnNvbHV0ZV9jaGFuZ2VfbWFyZ2luX29mX2Vycm9yQiYKJF9jb252ZXJz",
+            "aW9uc19hYnNvbHV0ZV9jaGFuZ2VfcF92YWx1ZUItCitfY29udmVyc2lvbnNf",
+            "YWJzb2x1dGVfY2hhbmdlX3BvaW50X2VzdGltYXRlQiQKIl9jb250cm9sX2Nv",
+            "bnZlcnNpb25fdmFsdWVfcGVyX2Nvc3RCLAoqX2NvbnZlcnNpb25fdmFsdWVf",
+            "cGVyX2Nvc3RfbWFyZ2luX29mX2Vycm9yQiQKIl9jb252ZXJzaW9uX3ZhbHVl",
+            "X3Blcl9jb3N0X3BfdmFsdWVCMgowX2NvbnZlcnNpb25fdmFsdWVfcGVyX2Nv",
+            "c3RfY2hhbmdlX3BvaW50X2VzdGltYXRlQhYKFF9jb250cm9sX2Nvc3RfbWlj",
+            "cm9zQh4KHF9jb3N0X21pY3Jvc19tYXJnaW5fb2ZfZXJyb3JCFgoUX2Nvc3Rf",
+            "bWljcm9zX3BfdmFsdWVCJAoiX2Nvc3RfbWljcm9zX2NoYW5nZV9wb2ludF9l",
+            "c3RpbWF0ZUIWChRfY29udHJvbF9pbXByZXNzaW9uc0IeChxfaW1wcmVzc2lv",
+            "bnNfbWFyZ2luX29mX2Vycm9yQhYKFF9pbXByZXNzaW9uc19wX3ZhbHVlQh0K",
+            "G19pbXByZXNzaW9uc19wb2ludF9lc3RpbWF0ZUIZChdfY2xpY2tzX21hcmdp",
+            "bl9vZl9lcnJvckIRCg9fY2xpY2tzX3BfdmFsdWVCGAoWX2NsaWNrc19wb2lu",
+            "dF9lc3RpbWF0ZUIbChlfY29udHJvbF9jb252ZXJzaW9uX3ZhbHVlQiMKIV9j",
+            "b252ZXJzaW9uX3ZhbHVlX21hcmdpbl9vZl9lcnJvckIbChlfY29udmVyc2lv",
+            "bl92YWx1ZV9wX3ZhbHVlQikKJ19jb252ZXJzaW9uX3ZhbHVlX2NoYW5nZV9w",
+            "b2ludF9lc3RpbWF0ZUIaChhfaW5jcmVtZW50YWxfY29udmVyc2lvbnNCJwol",
+            "X2luY3JlbWVudGFsX2NvbnZlcnNpb25zX3dpbm5lcl9zY29yZUIfCh1faW5j",
+            "cmVtZW50YWxfY29udmVyc2lvbl92YWx1ZUIsCipfaW5jcmVtZW50YWxfY29u",
+            "dmVyc2lvbl92YWx1ZV93aW5uZXJfc2NvcmVCJwolX2NvbnZlcnNpb25fbGlm",
+            "dF9iYXNlbGluZV9jb252ZXJzaW9uc0IsCipfY29udmVyc2lvbl9saWZ0X2Jh",
+            "c2VsaW5lX2NvbnZlcnNpb25fdmFsdWVCJgokX2NvbnZlcnNpb25fbGlmdF9l",
+            "eHBvc2VkX2NvbnZlcnNpb25zQisKKV9jb252ZXJzaW9uX2xpZnRfZXhwb3Nl",
+            "ZF9jb252ZXJzaW9uX3ZhbHVlQiIKIF9jb3N0X3Blcl9pbmNyZW1lbnRhbF9j",
+            "b252ZXJzaW9uQi8KLV9jb3N0X3Blcl9pbmNyZW1lbnRhbF9jb252ZXJzaW9u",
+            "X3dpbm5lcl9zY29yZUIyCjBfY29zdF9wZXJfaW5jcmVtZW50YWxfY29udmVy",
+            "c2lvbl9wOTBfbG93ZXJfYm91bmRCMgowX2Nvc3RfcGVyX2luY3JlbWVudGFs",
+            "X2NvbnZlcnNpb25fcDkwX3VwcGVyX2JvdW5kQioKKF9pbmNyZW1lbnRhbF9j",
+            "b252ZXJzaW9uc19wOTBfbG93ZXJfYm91bmRCKgooX2luY3JlbWVudGFsX2Nv",
+            "bnZlcnNpb25zX3A5MF91cHBlcl9ib3VuZEIiCiBfaW5jcmVtZW50YWxfY29u",
+            "dmVyc2lvbnNfcF92YWx1ZUIvCi1faW5jcmVtZW50YWxfY29udmVyc2lvbl92",
+            "YWx1ZV9wOTBfbG93ZXJfYm91bmRCLwotX2luY3JlbWVudGFsX2NvbnZlcnNp",
+            "b25fdmFsdWVfcDkwX3VwcGVyX2JvdW5kQicKJV9pbmNyZW1lbnRhbF9jb252",
+            "ZXJzaW9uX3ZhbHVlX3BfdmFsdWVCKAomX2luY3JlbWVudGFsX2NvbnZlcnNp",
+            "b25fdmFsdWVfcGVyX2Nvc3RCNQozX2luY3JlbWVudGFsX2NvbnZlcnNpb25f",
+            "dmFsdWVfcGVyX2Nvc3Rfd2lubmVyX3Njb3JlQjgKNl9pbmNyZW1lbnRhbF9j",
+            "b252ZXJzaW9uX3ZhbHVlX3Blcl9jb3N0X3A5MF9sb3dlcl9ib3VuZEI4CjZf",
+            "aW5jcmVtZW50YWxfY29udmVyc2lvbl92YWx1ZV9wZXJfY29zdF9wOTBfdXBw",
+            "ZXJfYm91bmRCGwoZX3JlbGF0aXZlX2NvbnZlcnNpb25fbGlmdEIrCilfcmVs",
+            "YXRpdmVfY29udmVyc2lvbl9saWZ0X3A5MF9sb3dlcl9ib3VuZEIrCilfcmVs",
+            "YXRpdmVfY29udmVyc2lvbl9saWZ0X3A5MF91cHBlcl9ib3VuZEIhCh9fcmVs",
+            "YXRpdmVfY29udmVyc2lvbl92YWx1ZV9saWZ0QjEKL19yZWxhdGl2ZV9jb252",
+            "ZXJzaW9uX3ZhbHVlX2xpZnRfcDkwX2xvd2VyX2JvdW5kQjEKL19yZWxhdGl2",
+            "ZV9jb252ZXJzaW9uX3ZhbHVlX2xpZnRfcDkwX3VwcGVyX2JvdW5kQhYKFF9h",
+            "YnNvbHV0ZV9icmFuZF9saWZ0QiYKJF9hYnNvbHV0ZV9icmFuZF9saWZ0X3A5",
+            "MF9sb3dlcl9ib3VuZEImCiRfYWJzb2x1dGVfYnJhbmRfbGlmdF9wOTBfdXBw",
+            "ZXJfYm91bmRCHgocX2Fic29sdXRlX2JyYW5kX2xpZnRfcF92YWx1ZUItCitf",
+            "YnJhbmRfbGlmdF9iYXNlbGluZV9wb3NpdGl2ZV9yZXNwb25zZV9yYXRlQj0K",
+            "O19icmFuZF9saWZ0X2Jhc2VsaW5lX3Bvc2l0aXZlX3Jlc3BvbnNlX3JhdGVf",
+            "cDkwX2xvd2VyX2JvdW5kQj0KO19icmFuZF9saWZ0X2Jhc2VsaW5lX3Bvc2l0",
+            "aXZlX3Jlc3BvbnNlX3JhdGVfcDkwX3VwcGVyX2JvdW5kQjsKOV9icmFuZF9s",
+            "aWZ0X2V4cG9zZWRfcG9zaXRpdmVfcmVzcG9uZGVyX2ZyYWN0aW9uYWxfY29v",
+            "a2llc0JLCklfYnJhbmRfbGlmdF9leHBvc2VkX3Bvc2l0aXZlX3Jlc3BvbmRl",
+            "cl9mcmFjdGlvbmFsX2Nvb2tpZXNfcDkwX2xvd2VyX2JvdW5kQksKSV9icmFu",
+            "ZF9saWZ0X2V4cG9zZWRfcG9zaXRpdmVfcmVzcG9uZGVyX2ZyYWN0aW9uYWxf",
+            "Y29va2llc19wOTBfdXBwZXJfYm91bmRCLAoqX2JyYW5kX2xpZnRfZXhwb3Nl",
+            "ZF9wb3NpdGl2ZV9yZXNwb25zZV9yYXRlQjwKOl9icmFuZF9saWZ0X2V4cG9z",
+            "ZWRfcG9zaXRpdmVfcmVzcG9uc2VfcmF0ZV9wOTBfbG93ZXJfYm91bmRCPAo6",
+            "X2JyYW5kX2xpZnRfZXhwb3NlZF9wb3NpdGl2ZV9yZXNwb25zZV9yYXRlX3A5",
+            "MF91cHBlcl9ib3VuZEIfCh1fYnJhbmRfbGlmdF9yZXNwb25zZXNfZXhwb3Nl",
+            "ZEIiCiBfYnJhbmRfbGlmdF9yZXNwb25zZXNfc3VwcHJlc3NlZEI+CjxfYnJh",
+            "bmRfbGlmdF9zdXBwcmVzc2VkX3Bvc2l0aXZlX3Jlc3BvbmRlcl9mcmFjdGlv",
+            "bmFsX2Nvb2tpZXNCTgpMX2JyYW5kX2xpZnRfc3VwcHJlc3NlZF9wb3NpdGl2",
+            "ZV9yZXNwb25kZXJfZnJhY3Rpb25hbF9jb29raWVzX3A5MF9sb3dlcl9ib3Vu",
+            "ZEJOCkxfYnJhbmRfbGlmdF9zdXBwcmVzc2VkX3Bvc2l0aXZlX3Jlc3BvbmRl",
+            "cl9mcmFjdGlvbmFsX2Nvb2tpZXNfcDkwX3VwcGVyX2JvdW5kQh0KG19icmFu",
+            "ZF9saWZ0X3RvdGFsX3Jlc3BvbnNlc0IZChdfY29zdF9wZXJfbGlmdGVkX2Nv",
+            "b2tpZUIpCidfY29zdF9wZXJfbGlmdGVkX2Nvb2tpZV9wOTBfbG93ZXJfYm91",
+            "bmRCKQonX2Nvc3RfcGVyX2xpZnRlZF9jb29raWVfcDkwX3VwcGVyX2JvdW5k",
+            "QhwKGl9mcmFjdGlvbmFsX2xpZnRlZF9jb29raWVzQiwKKl9mcmFjdGlvbmFs",
+            "X2xpZnRlZF9jb29raWVzX3A5MF9sb3dlcl9ib3VuZEIsCipfZnJhY3Rpb25h",
+            "bF9saWZ0ZWRfY29va2llc19wOTBfdXBwZXJfYm91bmRCFgoUX2hlYWRyb29t",
+            "X2JyYW5kX2xpZnRCJgokX2hlYWRyb29tX2JyYW5kX2xpZnRfcDkwX2xvd2Vy",
+            "X2JvdW5kQiYKJF9oZWFkcm9vbV9icmFuZF9saWZ0X3A5MF91cHBlcl9ib3Vu",
+            "ZEIWChRfcmVsYXRpdmVfYnJhbmRfbGlmdEImCiRfcmVsYXRpdmVfYnJhbmRf",
+            "bGlmdF9wOTBfbG93ZXJfYm91bmRCJgokX3JlbGF0aXZlX2JyYW5kX2xpZnRf",
+            "cDkwX3VwcGVyX2JvdW5kQhMKEV95b3V0dWJlX2NvbW1lbnRzQhAKDl95b3V0",
+            "dWJlX2xpa2VzQhEKD195b3V0dWJlX3NoYXJlc0IcChpfb3JpZ2luYWxfY29u",
+            "dmVyc2lvbl92YWx1ZSJHChFTZWFyY2hWb2x1bWVSYW5nZRIQCgNtaW4YASAB",
+            "KANIAIgBARIQCgNtYXgYAiABKANIAYgBAUIGCgRfbWluQgYKBF9tYXhC7AEK",
+            "I2NvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUuY29tbW9uQgxNZXRyaWNz",
+            "UHJvdG9QAVpFZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBp",
+            "cy9hZHMvZ29vZ2xlYWRzL3YyNS9jb21tb247Y29tbW9uogIDR0FBqgIfR29v",
+            "Z2xlLkFkcy5Hb29nbGVBZHMuVjI1LkNvbW1vbsoCH0dvb2dsZVxBZHNcR29v",
+            "Z2xlQWRzXFYyNVxDb21tb27qAiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpW",
+            "MjU6OkNvbW1vbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V25.Enums.InteractionEventTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.QualityScoreBucketReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Common.Metrics), global::Google.Ads.GoogleAds.V25.Common.Metrics.Parser, new[]{ "AbsoluteTopImpressionPercentage", "ActiveViewCpm", "ActiveViewCtr", "ActiveViewImpressions", "ActiveViewMeasurability", "ActiveViewMeasurableCostMicros", "ActiveViewMeasurableImpressions", "ActiveViewViewability", "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversionsValueByConversionDate", "AllNewCustomerLifetimeValue", "AllConversions", "AllConversionsByConversionDate", "AllConversionsValuePerCost", "AllConversionsFromClickToCall", "AllConversionsFromDirections", "AllConversionsFromInteractionsValuePerInteraction", "AllConversionsFromMenu", "AllConversionsFromOrder", "AllConversionsFromOtherEngagement", "AllConversionsFromStoreVisit", "AllConversionsFromStoreWebsite", "AuctionInsightSearchAbsoluteTopImpressionPercentage", "AuctionInsightSearchImpressionShare", "AuctionInsightSearchOutrankingShare", "AuctionInsightSearchOverlapRate", "AuctionInsightSearchPositionAboveRate", "AuctionInsightSearchTopImpressionPercentage", "AverageCost", "AverageCpc", "AverageCpe", "AverageCpm", "TrueviewAverageCpv", "AveragePageViews", "AverageTimeOnSite", "BenchmarkAverageMaxCpc", "BiddableAppInstallConversions", "BiddableAppPostInstallConversions", "BiddableCohortAppPostInstallConversions", "BenchmarkCtr", "BounceRate", "Clicks", "ControlClicks", "CombinedClicks", "CombinedClicksPerQuery", "CombinedQueries", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValueByConversionDate", "NewCustomerLifetimeValue", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "ConversionsByConversionDate", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CostPerCurrentModelAttributedConversion", "CrossDeviceConversions", "CrossDeviceConversionsByConversionDate", "CrossDeviceConversionsValue", "CrossDeviceConversionsValueMicros", "CrossDeviceConversionsValueByConversionDate", "Ctr", "CurrentModelAttributedConversions", "CurrentModelAttributedConversionsFromInteractionsRate", "CurrentModelAttributedConversionsFromInteractionsValuePerInteraction", "CurrentModelAttributedConversionsValue", "CurrentModelAttributedConversionsValuePerCost", "EngagementRate", "Engagements", "HotelAverageLeadValueMicros", "HotelCommissionRateMicros", "HotelExpectedCommissionCost", "HotelPriceDifferencePercentage", "HotelEligibleImpressions", "HistoricalCreativeQualityScore", "HistoricalLandingPageQualityScore", "HistoricalQualityScore", "HistoricalSearchPredictedCtr", "GmailForwards", "GmailSaves", "GmailSecondaryClicks", "ImpressionsFromStoreReach", "Impressions", "InteractionRate", "Interactions", "InteractionEventTypes", "InvalidClickRate", "InvalidClicks", "GeneralInvalidClickRate", "GeneralInvalidClicks", "MessageChats", "MessageImpressions", "MessageChatRate", "MobileFriendlyClicksPercentage", "OptimizationScoreUplift", "OptimizationScoreUrl", "OrganicClicks", "OrganicClicksPerQuery", "OrganicImpressions", "OrganicImpressionsPerQuery", "OrganicQueries", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchAbsoluteTopImpressionShare", "SearchBudgetLostAbsoluteTopImpressionShare", "SearchBudgetLostImpressionShare", "SearchBudgetLostTopImpressionShare", "SearchClickShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostAbsoluteTopImpressionShare", "SearchRankLostImpressionShare", "SearchRankLostTopImpressionShare", "SearchTopImpressionShare", "SearchVolume", "SpeedScore", "AverageTargetCpaMicros", "AverageTargetRoas", "TopImpressionPercentage", "ValidAcceleratedMobilePagesClicksPercentage", "ValuePerAllConversions", "ValuePerAllConversionsByConversionDate", "ValuePerConversion", "ValuePerConversionsByConversionDate", "ValuePerCurrentModelAttributedConversion", "VideoQuartileP100Rate", "VideoQuartileP25Rate", "VideoQuartileP50Rate", "VideoQuartileP75Rate", "VideoTrueviewViewRate", "VideoTrueviewViews", "ViewThroughConversions", "SkAdNetworkInstalls", "SkAdNetworkTotalConversions", "PublisherPurchasedClicks", "PublisherOrganicClicks", "PublisherUnknownClicks", "AllConversionsFromLocationAssetClickToCall", "AllConversionsFromLocationAssetDirections", "AllConversionsFromLocationAssetMenu", "AllConversionsFromLocationAssetOrder", "AllConversionsFromLocationAssetOtherEngagement", "AllConversionsFromLocationAssetStoreVisits", "AllConversionsFromLocationAssetWebsite", "EligibleImpressionsFromLocationAssetStoreReach", "ViewThroughConversionsFromLocationAssetClickToCall", "ViewThroughConversionsFromLocationAssetDirections", "ViewThroughConversionsFromLocationAssetMenu", "ViewThroughConversionsFromLocationAssetOrder", "ViewThroughConversionsFromLocationAssetOtherEngagement", "ViewThroughConversionsFromLocationAssetStoreVisits", "ViewThroughConversionsFromLocationAssetWebsite", "Orders", "AverageOrderValueMicros", "AverageCartSize", "CostOfGoodsSoldMicros", "GrossProfitMicros", "GrossProfitMargin", "RevenueMicros", "UnitsSold", "CrossSellCostOfGoodsSoldMicros", "CrossSellGrossProfitMicros", "CrossSellRevenueMicros", "CrossSellUnitsSold", "LeadCostOfGoodsSoldMicros", "LeadGrossProfitMicros", "LeadRevenueMicros", "LeadUnitsSold", "UniqueUsers", "AverageImpressionFrequencyPerUser", "LinkedEntitiesCount", "LinkedSampleEntities", "AssetPinnedTotalCount", "AssetPinnedAsHeadlinePositionOneCount", "AssetPinnedAsHeadlinePositionTwoCount", "AssetPinnedAsHeadlinePositionThreeCount", "AssetPinnedAsDescriptionPositionOneCount", "AssetPinnedAsDescriptionPositionTwoCount", "StoreVisitsLastClickModelAttributedConversions", "ResultsConversionsPurchase", "VideoTrueviewViewRateInFeed", "VideoTrueviewViewRateInStream", "VideoTrueviewViewRateShorts", "CoviewedImpressions", "PrimaryImpressions", "PlatformComparableConversionsFromInteractionsRate", "PlatformComparableConversions", "PlatformComparableConversionsValue", "PlatformComparableConversionsValuePerCost", "PlatformComparableConversionsByConversionDate", "PlatformComparableConversionsValueByConversionDate", "PlatformComparableConversionsFromInteractionsValuePerInteraction", "CostPerPlatformComparableConversion", "ValuePerPlatformComparableConversion", "ValuePerPlatformComparableConversionsByConversionDate", "CostConvertedCurrencyPerPlatformComparableConversion", "UniqueUsersTwoPlus", "UniqueUsersThreePlus", "UniqueUsersFourPlus", "UniqueUsersFivePlus", "UniqueUsersTenPlus", "ValueAdjustment", "AllValueAdjustment", "ClicksUniqueQueryClusters", "ConversionsUniqueQueryClusters", "ImpressionsUniqueQueryClusters", "VideoWatchTimeDurationMillis", "AverageVideoWatchTimeDurationMillis", "Svr", "ActiveViewAudibilityMeasurableImpressions", "ActiveViewAudibilityMeasurableImpressionsRate", "ActiveViewAudibilityInvalidMeasurableImpressionsRate", "ActiveViewAudibilityInvalidGivtMeasurableImpressionsRate", "ActiveViewAudibleImpressions", "ActiveViewAudibleImpressionsRate", "ActiveViewAudibleTwoSecondsImpressions", "ActiveViewAudibleTwoSecondsImpressionsRate", "ActiveViewAudibleThirtySecondsImpressions", "ActiveViewAudibleThirtySecondsImpressionsRate", "ActiveViewAudibleQuartileP25Rate", "ActiveViewAudibleQuartileP50Rate", "ActiveViewAudibleQuartileP75Rate", "ActiveViewAudibleQuartileP100Rate", "BiddableIndirectInstallFirstInAppConversionMicros", "AllAverageCartSize", "AllAverageOrderValueMicros", "AllCostOfGoodsSoldMicros", "AllCrossSellCostOfGoodsSoldMicros", "AllCrossSellGrossProfitMicros", "AllCrossSellRevenueMicros", "AllCrossSellUnitsSold", "AllGrossProfitMargin", "AllGrossProfitMicros", "AllLeadCostOfGoodsSoldMicros", "AllLeadGrossProfitMicros", "AllLeadRevenueMicros", "AllLeadUnitsSold", "AllOrders", "AllRevenueMicros", "AllUnitsSold", "ControlCostPerConversion", "CostPerConversionMarginOfError", "CostPerConversionPValue", "CostPerConversionChangePointEstimate", "ControlConversions", "ConversionsAbsoluteChangeMarginOfError", "ConversionsAbsoluteChangePValue", "ConversionsAbsoluteChangePointEstimate", "ControlConversionValuePerCost", "ConversionValuePerCostMarginOfError", "ConversionValuePerCostPValue", "ConversionValuePerCostChangePointEstimate", "ControlCostMicros", "CostMicrosMarginOfError", "CostMicrosPValue", "CostMicrosChangePointEstimate", "ControlImpressions", "ImpressionsMarginOfError", "ImpressionsPValue", "ImpressionsPointEstimate", "ClicksMarginOfError", "ClicksPValue", "ClicksPointEstimate", "ControlConversionValue", "ConversionValueMarginOfError", "ConversionValuePValue", "ConversionValueChangePointEstimate", "YoutubeComments", "YoutubeLikes", "YoutubeShares" }, new[]{ "AbsoluteTopImpressionPercentage", "ActiveViewCpm", "ActiveViewCtr", "ActiveViewImpressions", "ActiveViewMeasurability", "ActiveViewMeasurableCostMicros", "ActiveViewMeasurableImpressions", "ActiveViewViewability", "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversionsValueByConversionDate", "AllNewCustomerLifetimeValue", "AllConversions", "AllConversionsByConversionDate", "AllConversionsValuePerCost", "AllConversionsFromClickToCall", "AllConversionsFromDirections", "AllConversionsFromInteractionsValuePerInteraction", "AllConversionsFromMenu", "AllConversionsFromOrder", "AllConversionsFromOtherEngagement", "AllConversionsFromStoreVisit", "AllConversionsFromStoreWebsite", "AuctionInsightSearchAbsoluteTopImpressionPercentage", "AuctionInsightSearchImpressionShare", "AuctionInsightSearchOutrankingShare", "AuctionInsightSearchOverlapRate", "AuctionInsightSearchPositionAboveRate", "AuctionInsightSearchTopImpressionPercentage", "AverageCost", "AverageCpc", "AverageCpe", "AverageCpm", "TrueviewAverageCpv", "AveragePageViews", "AverageTimeOnSite", "BenchmarkAverageMaxCpc", "BiddableAppInstallConversions", "BiddableAppPostInstallConversions", "BiddableCohortAppPostInstallConversions", "BenchmarkCtr", "BounceRate", "Clicks", "ControlClicks", "CombinedClicks", "CombinedClicksPerQuery", "CombinedQueries", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValueByConversionDate", "NewCustomerLifetimeValue", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "ConversionsByConversionDate", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CostPerCurrentModelAttributedConversion", "CrossDeviceConversions", "CrossDeviceConversionsByConversionDate", "CrossDeviceConversionsValue", "CrossDeviceConversionsValueMicros", "CrossDeviceConversionsValueByConversionDate", "Ctr", "CurrentModelAttributedConversions", "CurrentModelAttributedConversionsFromInteractionsRate", "CurrentModelAttributedConversionsFromInteractionsValuePerInteraction", "CurrentModelAttributedConversionsValue", "CurrentModelAttributedConversionsValuePerCost", "EngagementRate", "Engagements", "HotelAverageLeadValueMicros", "HotelCommissionRateMicros", "HotelExpectedCommissionCost", "HotelPriceDifferencePercentage", "HotelEligibleImpressions", "HistoricalQualityScore", "GmailForwards", "GmailSaves", "GmailSecondaryClicks", "ImpressionsFromStoreReach", "Impressions", "InteractionRate", "Interactions", "InvalidClickRate", "InvalidClicks", "GeneralInvalidClickRate", "GeneralInvalidClicks", "MessageChats", "MessageImpressions", "MessageChatRate", "MobileFriendlyClicksPercentage", "OptimizationScoreUplift", "OptimizationScoreUrl", "OrganicClicks", "OrganicClicksPerQuery", "OrganicImpressions", "OrganicImpressionsPerQuery", "OrganicQueries", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchAbsoluteTopImpressionShare", "SearchBudgetLostAbsoluteTopImpressionShare", "SearchBudgetLostImpressionShare", "SearchBudgetLostTopImpressionShare", "SearchClickShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostAbsoluteTopImpressionShare", "SearchRankLostImpressionShare", "SearchRankLostTopImpressionShare", "SearchTopImpressionShare", "SearchVolume", "SpeedScore", "AverageTargetCpaMicros", "AverageTargetRoas", "TopImpressionPercentage", "ValidAcceleratedMobilePagesClicksPercentage", "ValuePerAllConversions", "ValuePerAllConversionsByConversionDate", "ValuePerConversion", "ValuePerConversionsByConversionDate", "ValuePerCurrentModelAttributedConversion", "VideoQuartileP100Rate", "VideoQuartileP25Rate", "VideoQuartileP50Rate", "VideoQuartileP75Rate", "VideoTrueviewViewRate", "VideoTrueviewViews", "ViewThroughConversions", "AllConversionsFromLocationAssetClickToCall", "AllConversionsFromLocationAssetDirections", "AllConversionsFromLocationAssetMenu", "AllConversionsFromLocationAssetOrder", "AllConversionsFromLocationAssetOtherEngagement", "AllConversionsFromLocationAssetStoreVisits", "AllConversionsFromLocationAssetWebsite", "EligibleImpressionsFromLocationAssetStoreReach", "ViewThroughConversionsFromLocationAssetClickToCall", "ViewThroughConversionsFromLocationAssetDirections", "ViewThroughConversionsFromLocationAssetMenu", "ViewThroughConversionsFromLocationAssetOrder", "ViewThroughConversionsFromLocationAssetOtherEngagement", "ViewThroughConversionsFromLocationAssetStoreVisits", "ViewThroughConversionsFromLocationAssetWebsite", "Orders", "AverageOrderValueMicros", "AverageCartSize", "CostOfGoodsSoldMicros", "GrossProfitMicros", "GrossProfitMargin", "RevenueMicros", "UnitsSold", "CrossSellCostOfGoodsSoldMicros", "CrossSellGrossProfitMicros", "CrossSellRevenueMicros", "CrossSellUnitsSold", "LeadCostOfGoodsSoldMicros", "LeadGrossProfitMicros", "LeadRevenueMicros", "LeadUnitsSold", "UniqueUsers", "AverageImpressionFrequencyPerUser", "LinkedEntitiesCount", "AssetPinnedTotalCount", "AssetPinnedAsHeadlinePositionOneCount", "AssetPinnedAsHeadlinePositionTwoCount", "AssetPinnedAsHeadlinePositionThreeCount", "AssetPinnedAsDescriptionPositionOneCount", "AssetPinnedAsDescriptionPositionTwoCount", "StoreVisitsLastClickModelAttributedConversions", "ResultsConversionsPurchase", "VideoTrueviewViewRateInFeed", "VideoTrueviewViewRateInStream", "VideoTrueviewViewRateShorts", "CoviewedImpressions", "PrimaryImpressions", "PlatformComparableConversionsFromInteractionsRate", "PlatformComparableConversions", "PlatformComparableConversionsValue", "PlatformComparableConversionsValuePerCost", "PlatformComparableConversionsByConversionDate", "PlatformComparableConversionsValueByConversionDate", "PlatformComparableConversionsFromInteractionsValuePerInteraction", "CostPerPlatformComparableConversion", "ValuePerPlatformComparableConversion", "ValuePerPlatformComparableConversionsByConversionDate", "CostConvertedCurrencyPerPlatformComparableConversion", "UniqueUsersTwoPlus", "UniqueUsersThreePlus", "UniqueUsersFourPlus", "UniqueUsersFivePlus", "UniqueUsersTenPlus", "ValueAdjustment", "AllValueAdjustment", "ClicksUniqueQueryClusters", "ConversionsUniqueQueryClusters", "ImpressionsUniqueQueryClusters", "VideoWatchTimeDurationMillis", "AverageVideoWatchTimeDurationMillis", "Svr", "ActiveViewAudibilityMeasurableImpressions", "ActiveViewAudibilityMeasurableImpressionsRate", "ActiveViewAudibilityInvalidMeasurableImpressionsRate", "ActiveViewAudibilityInvalidGivtMeasurableImpressionsRate", "ActiveViewAudibleImpressions", "ActiveViewAudibleImpressionsRate", "ActiveViewAudibleTwoSecondsImpressions", "ActiveViewAudibleTwoSecondsImpressionsRate", "ActiveViewAudibleThirtySecondsImpressions", "ActiveViewAudibleThirtySecondsImpressionsRate", "ActiveViewAudibleQuartileP25Rate", "ActiveViewAudibleQuartileP50Rate", "ActiveViewAudibleQuartileP75Rate", "ActiveViewAudibleQuartileP100Rate", "BiddableIndirectInstallFirstInAppConversionMicros", "AllAverageCartSize", "AllAverageOrderValueMicros", "AllCostOfGoodsSoldMicros", "AllCrossSellCostOfGoodsSoldMicros", "AllCrossSellGrossProfitMicros", "AllCrossSellRevenueMicros", "AllCrossSellUnitsSold", "AllGrossProfitMargin", "AllGrossProfitMicros", "AllLeadCostOfGoodsSoldMicros", "AllLeadGrossProfitMicros", "AllLeadRevenueMicros", "AllLeadUnitsSold", "AllOrders", "AllRevenueMicros", "AllUnitsSold", "ControlCostPerConversion", "CostPerConversionMarginOfError", "CostPerConversionPValue", "CostPerConversionChangePointEstimate", "ControlConversions", "ConversionsAbsoluteChangeMarginOfError", "ConversionsAbsoluteChangePValue", "ConversionsAbsoluteChangePointEstimate", "ControlConversionValuePerCost", "ConversionValuePerCostMarginOfError", "ConversionValuePerCostPValue", "ConversionValuePerCostChangePointEstimate", "ControlCostMicros", "CostMicrosMarginOfError", "CostMicrosPValue", "CostMicrosChangePointEstimate", "ControlImpressions", "ImpressionsMarginOfError", "ImpressionsPValue", "ImpressionsPointEstimate", "ClicksMarginOfError", "ClicksPValue", "ClicksPointEstimate", "ControlConversionValue", "ConversionValueMarginOfError", "ConversionValuePValue", "ConversionValueChangePointEstimate", "YoutubeComments", "YoutubeLikes", "YoutubeShares" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Common.Metrics), global::Google.Ads.GoogleAds.V25.Common.Metrics.Parser, new[]{ "AbsoluteTopImpressionPercentage", "ActiveViewCpm", "ActiveViewCtr", "ActiveViewImpressions", "ActiveViewMeasurability", "ActiveViewMeasurableCostMicros", "ActiveViewMeasurableImpressions", "ActiveViewViewability", "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversionsValueByConversionDate", "AllNewCustomerLifetimeValue", "AllConversions", "AllConversionsByConversionDate", "AllConversionsValuePerCost", "AllConversionsFromClickToCall", "AllConversionsFromDirections", "AllConversionsFromInteractionsValuePerInteraction", "AllConversionsFromMenu", "AllConversionsFromOrder", "AllConversionsFromOtherEngagement", "AllConversionsFromStoreVisit", "AllConversionsFromStoreWebsite", "AuctionInsightSearchAbsoluteTopImpressionPercentage", "AuctionInsightSearchImpressionShare", "AuctionInsightSearchOutrankingShare", "AuctionInsightSearchOverlapRate", "AuctionInsightSearchPositionAboveRate", "AuctionInsightSearchTopImpressionPercentage", "AverageCost", "AverageCpc", "AverageCpe", "AverageCpm", "TrueviewAverageCpv", "AveragePageViews", "AverageTimeOnSite", "BenchmarkAverageMaxCpc", "BiddableAppInstallConversions", "BiddableAppPostInstallConversions", "BiddableCohortAppPostInstallConversions", "BenchmarkCtr", "BounceRate", "Clicks", "ControlClicks", "CombinedClicks", "CombinedClicksPerQuery", "CombinedQueries", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValueByConversionDate", "NewCustomerLifetimeValue", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "ConversionsByConversionDate", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CostPerCurrentModelAttributedConversion", "CrossDeviceConversions", "CrossDeviceConversionsByConversionDate", "CrossDeviceConversionsValue", "CrossDeviceConversionsValueMicros", "CrossDeviceConversionsValueByConversionDate", "Ctr", "CurrentModelAttributedConversions", "CurrentModelAttributedConversionsFromInteractionsRate", "CurrentModelAttributedConversionsFromInteractionsValuePerInteraction", "CurrentModelAttributedConversionsValue", "CurrentModelAttributedConversionsValuePerCost", "EngagementRate", "Engagements", "HotelAverageLeadValueMicros", "HotelCommissionRateMicros", "HotelExpectedCommissionCost", "HotelPriceDifferencePercentage", "HotelEligibleImpressions", "HistoricalCreativeQualityScore", "HistoricalLandingPageQualityScore", "HistoricalQualityScore", "HistoricalSearchPredictedCtr", "GmailForwards", "GmailSaves", "GmailSecondaryClicks", "ImpressionsFromStoreReach", "Impressions", "InteractionRate", "Interactions", "InteractionEventTypes", "InvalidClickRate", "InvalidClicks", "GeneralInvalidClickRate", "GeneralInvalidClicks", "MessageChats", "MessageImpressions", "MessageChatRate", "MobileFriendlyClicksPercentage", "OptimizationScoreUplift", "OptimizationScoreUrl", "OrganicClicks", "OrganicClicksPerQuery", "OrganicImpressions", "OrganicImpressionsPerQuery", "OrganicQueries", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchAbsoluteTopImpressionShare", "SearchBudgetLostAbsoluteTopImpressionShare", "SearchBudgetLostImpressionShare", "SearchBudgetLostTopImpressionShare", "SearchClickShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostAbsoluteTopImpressionShare", "SearchRankLostImpressionShare", "SearchRankLostTopImpressionShare", "SearchTopImpressionShare", "SearchVolume", "SpeedScore", "AverageTargetCpaMicros", "AverageTargetRoas", "TopImpressionPercentage", "ValidAcceleratedMobilePagesClicksPercentage", "ValuePerAllConversions", "ValuePerAllConversionsByConversionDate", "ValuePerConversion", "ValuePerConversionsByConversionDate", "ValuePerCurrentModelAttributedConversion", "VideoQuartileP100Rate", "VideoQuartileP25Rate", "VideoQuartileP50Rate", "VideoQuartileP75Rate", "VideoTrueviewViewRate", "VideoTrueviewViews", "ViewThroughConversions", "SkAdNetworkInstalls", "SkAdNetworkTotalConversions", "PublisherPurchasedClicks", "PublisherOrganicClicks", "PublisherUnknownClicks", "AllConversionsFromLocationAssetClickToCall", "AllConversionsFromLocationAssetDirections", "AllConversionsFromLocationAssetMenu", "AllConversionsFromLocationAssetOrder", "AllConversionsFromLocationAssetOtherEngagement", "AllConversionsFromLocationAssetStoreVisits", "AllConversionsFromLocationAssetWebsite", "EligibleImpressionsFromLocationAssetStoreReach", "ViewThroughConversionsFromLocationAssetClickToCall", "ViewThroughConversionsFromLocationAssetDirections", "ViewThroughConversionsFromLocationAssetMenu", "ViewThroughConversionsFromLocationAssetOrder", "ViewThroughConversionsFromLocationAssetOtherEngagement", "ViewThroughConversionsFromLocationAssetStoreVisits", "ViewThroughConversionsFromLocationAssetWebsite", "Orders", "AverageOrderValueMicros", "AverageCartSize", "CostOfGoodsSoldMicros", "GrossProfitMicros", "GrossProfitMargin", "RevenueMicros", "UnitsSold", "CrossSellCostOfGoodsSoldMicros", "CrossSellGrossProfitMicros", "CrossSellRevenueMicros", "CrossSellUnitsSold", "LeadCostOfGoodsSoldMicros", "LeadGrossProfitMicros", "LeadRevenueMicros", "LeadUnitsSold", "UniqueUsers", "AverageImpressionFrequencyPerUser", "LinkedEntitiesCount", "LinkedSampleEntities", "AssetPinnedTotalCount", "AssetPinnedAsHeadlinePositionOneCount", "AssetPinnedAsHeadlinePositionTwoCount", "AssetPinnedAsHeadlinePositionThreeCount", "AssetPinnedAsDescriptionPositionOneCount", "AssetPinnedAsDescriptionPositionTwoCount", "StoreVisitsLastClickModelAttributedConversions", "ResultsConversionsPurchase", "VideoTrueviewViewRateInFeed", "VideoTrueviewViewRateInStream", "VideoTrueviewViewRateShorts", "CoviewedImpressions", "PrimaryImpressions", "PlatformComparableConversionsFromInteractionsRate", "PlatformComparableConversions", "PlatformComparableConversionsValue", "PlatformComparableConversionsValuePerCost", "PlatformComparableConversionsByConversionDate", "PlatformComparableConversionsValueByConversionDate", "PlatformComparableConversionsFromInteractionsValuePerInteraction", "CostPerPlatformComparableConversion", "ValuePerPlatformComparableConversion", "ValuePerPlatformComparableConversionsByConversionDate", "CostConvertedCurrencyPerPlatformComparableConversion", "UniqueUsersTwoPlus", "UniqueUsersThreePlus", "UniqueUsersFourPlus", "UniqueUsersFivePlus", "UniqueUsersTenPlus", "ValueAdjustment", "AllValueAdjustment", "ClicksUniqueQueryClusters", "ConversionsUniqueQueryClusters", "ImpressionsUniqueQueryClusters", "VideoWatchTimeDurationMillis", "AverageVideoWatchTimeDurationMillis", "Svr", "ActiveViewAudibilityMeasurableImpressions", "ActiveViewAudibilityMeasurableImpressionsRate", "ActiveViewAudibilityInvalidMeasurableImpressionsRate", "ActiveViewAudibilityInvalidGivtMeasurableImpressionsRate", "ActiveViewAudibleImpressions", "ActiveViewAudibleImpressionsRate", "ActiveViewAudibleTwoSecondsImpressions", "ActiveViewAudibleTwoSecondsImpressionsRate", "ActiveViewAudibleThirtySecondsImpressions", "ActiveViewAudibleThirtySecondsImpressionsRate", "ActiveViewAudibleQuartileP25Rate", "ActiveViewAudibleQuartileP50Rate", "ActiveViewAudibleQuartileP75Rate", "ActiveViewAudibleQuartileP100Rate", "BiddableIndirectInstallFirstInAppConversionMicros", "AllAverageCartSize", "AllAverageOrderValueMicros", "AllCostOfGoodsSoldMicros", "AllCrossSellCostOfGoodsSoldMicros", "AllCrossSellGrossProfitMicros", "AllCrossSellRevenueMicros", "AllCrossSellUnitsSold", "AllGrossProfitMargin", "AllGrossProfitMicros", "AllLeadCostOfGoodsSoldMicros", "AllLeadGrossProfitMicros", "AllLeadRevenueMicros", "AllLeadUnitsSold", "AllOrders", "AllRevenueMicros", "AllUnitsSold", "ControlCostPerConversion", "CostPerConversionMarginOfError", "CostPerConversionPValue", "CostPerConversionChangePointEstimate", "ControlConversions", "ConversionsAbsoluteChangeMarginOfError", "ConversionsAbsoluteChangePValue", "ConversionsAbsoluteChangePointEstimate", "ControlConversionValuePerCost", "ConversionValuePerCostMarginOfError", "ConversionValuePerCostPValue", "ConversionValuePerCostChangePointEstimate", "ControlCostMicros", "CostMicrosMarginOfError", "CostMicrosPValue", "CostMicrosChangePointEstimate", "ControlImpressions", "ImpressionsMarginOfError", "ImpressionsPValue", "ImpressionsPointEstimate", "ClicksMarginOfError", "ClicksPValue", "ClicksPointEstimate", "ControlConversionValue", "ConversionValueMarginOfError", "ConversionValuePValue", "ConversionValueChangePointEstimate", "IncrementalConversions", "IncrementalConversionsWinnerScore", "IncrementalConversionValue", "IncrementalConversionValueWinnerScore", "ConversionLiftBaselineConversions", "ConversionLiftBaselineConversionValue", "ConversionLiftExposedConversions", "ConversionLiftExposedConversionValue", "CostPerIncrementalConversion", "CostPerIncrementalConversionWinnerScore", "CostPerIncrementalConversionP90LowerBound", "CostPerIncrementalConversionP90UpperBound", "IncrementalConversionsP90LowerBound", "IncrementalConversionsP90UpperBound", "IncrementalConversionsPValue", "IncrementalConversionValueP90LowerBound", "IncrementalConversionValueP90UpperBound", "IncrementalConversionValuePValue", "IncrementalConversionValuePerCost", "IncrementalConversionValuePerCostWinnerScore", "IncrementalConversionValuePerCostP90LowerBound", "IncrementalConversionValuePerCostP90UpperBound", "RelativeConversionLift", "RelativeConversionLiftP90LowerBound", "RelativeConversionLiftP90UpperBound", "RelativeConversionValueLift", "RelativeConversionValueLiftP90LowerBound", "RelativeConversionValueLiftP90UpperBound", "AbsoluteBrandLift", "AbsoluteBrandLiftP90LowerBound", "AbsoluteBrandLiftP90UpperBound", "AbsoluteBrandLiftPValue", "BrandLiftBaselinePositiveResponseRate", "BrandLiftBaselinePositiveResponseRateP90LowerBound", "BrandLiftBaselinePositiveResponseRateP90UpperBound", "BrandLiftExposedPositiveResponderFractionalCookies", "BrandLiftExposedPositiveResponderFractionalCookiesP90LowerBound", "BrandLiftExposedPositiveResponderFractionalCookiesP90UpperBound", "BrandLiftExposedPositiveResponseRate", "BrandLiftExposedPositiveResponseRateP90LowerBound", "BrandLiftExposedPositiveResponseRateP90UpperBound", "BrandLiftResponsesExposed", "BrandLiftResponsesSuppressed", "BrandLiftSuppressedPositiveResponderFractionalCookies", "BrandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound", "BrandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound", "BrandLiftTotalResponses", "CostPerLiftedCookie", "CostPerLiftedCookieP90LowerBound", "CostPerLiftedCookieP90UpperBound", "FractionalLiftedCookies", "FractionalLiftedCookiesP90LowerBound", "FractionalLiftedCookiesP90UpperBound", "HeadroomBrandLift", "HeadroomBrandLiftP90LowerBound", "HeadroomBrandLiftP90UpperBound", "RelativeBrandLift", "RelativeBrandLiftP90LowerBound", "RelativeBrandLiftP90UpperBound", "YoutubeComments", "YoutubeLikes", "YoutubeShares", "OriginalConversionValue" }, new[]{ "AbsoluteTopImpressionPercentage", "ActiveViewCpm", "ActiveViewCtr", "ActiveViewImpressions", "ActiveViewMeasurability", "ActiveViewMeasurableCostMicros", "ActiveViewMeasurableImpressions", "ActiveViewViewability", "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversionsValueByConversionDate", "AllNewCustomerLifetimeValue", "AllConversions", "AllConversionsByConversionDate", "AllConversionsValuePerCost", "AllConversionsFromClickToCall", "AllConversionsFromDirections", "AllConversionsFromInteractionsValuePerInteraction", "AllConversionsFromMenu", "AllConversionsFromOrder", "AllConversionsFromOtherEngagement", "AllConversionsFromStoreVisit", "AllConversionsFromStoreWebsite", "AuctionInsightSearchAbsoluteTopImpressionPercentage", "AuctionInsightSearchImpressionShare", "AuctionInsightSearchOutrankingShare", "AuctionInsightSearchOverlapRate", "AuctionInsightSearchPositionAboveRate", "AuctionInsightSearchTopImpressionPercentage", "AverageCost", "AverageCpc", "AverageCpe", "AverageCpm", "TrueviewAverageCpv", "AveragePageViews", "AverageTimeOnSite", "BenchmarkAverageMaxCpc", "BiddableAppInstallConversions", "BiddableAppPostInstallConversions", "BiddableCohortAppPostInstallConversions", "BenchmarkCtr", "BounceRate", "Clicks", "ControlClicks", "CombinedClicks", "CombinedClicksPerQuery", "CombinedQueries", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValueByConversionDate", "NewCustomerLifetimeValue", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "ConversionsByConversionDate", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CostPerCurrentModelAttributedConversion", "CrossDeviceConversions", "CrossDeviceConversionsByConversionDate", "CrossDeviceConversionsValue", "CrossDeviceConversionsValueMicros", "CrossDeviceConversionsValueByConversionDate", "Ctr", "CurrentModelAttributedConversions", "CurrentModelAttributedConversionsFromInteractionsRate", "CurrentModelAttributedConversionsFromInteractionsValuePerInteraction", "CurrentModelAttributedConversionsValue", "CurrentModelAttributedConversionsValuePerCost", "EngagementRate", "Engagements", "HotelAverageLeadValueMicros", "HotelCommissionRateMicros", "HotelExpectedCommissionCost", "HotelPriceDifferencePercentage", "HotelEligibleImpressions", "HistoricalQualityScore", "GmailForwards", "GmailSaves", "GmailSecondaryClicks", "ImpressionsFromStoreReach", "Impressions", "InteractionRate", "Interactions", "InvalidClickRate", "InvalidClicks", "GeneralInvalidClickRate", "GeneralInvalidClicks", "MessageChats", "MessageImpressions", "MessageChatRate", "MobileFriendlyClicksPercentage", "OptimizationScoreUplift", "OptimizationScoreUrl", "OrganicClicks", "OrganicClicksPerQuery", "OrganicImpressions", "OrganicImpressionsPerQuery", "OrganicQueries", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchAbsoluteTopImpressionShare", "SearchBudgetLostAbsoluteTopImpressionShare", "SearchBudgetLostImpressionShare", "SearchBudgetLostTopImpressionShare", "SearchClickShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostAbsoluteTopImpressionShare", "SearchRankLostImpressionShare", "SearchRankLostTopImpressionShare", "SearchTopImpressionShare", "SearchVolume", "SpeedScore", "AverageTargetCpaMicros", "AverageTargetRoas", "TopImpressionPercentage", "ValidAcceleratedMobilePagesClicksPercentage", "ValuePerAllConversions", "ValuePerAllConversionsByConversionDate", "ValuePerConversion", "ValuePerConversionsByConversionDate", "ValuePerCurrentModelAttributedConversion", "VideoQuartileP100Rate", "VideoQuartileP25Rate", "VideoQuartileP50Rate", "VideoQuartileP75Rate", "VideoTrueviewViewRate", "VideoTrueviewViews", "ViewThroughConversions", "AllConversionsFromLocationAssetClickToCall", "AllConversionsFromLocationAssetDirections", "AllConversionsFromLocationAssetMenu", "AllConversionsFromLocationAssetOrder", "AllConversionsFromLocationAssetOtherEngagement", "AllConversionsFromLocationAssetStoreVisits", "AllConversionsFromLocationAssetWebsite", "EligibleImpressionsFromLocationAssetStoreReach", "ViewThroughConversionsFromLocationAssetClickToCall", "ViewThroughConversionsFromLocationAssetDirections", "ViewThroughConversionsFromLocationAssetMenu", "ViewThroughConversionsFromLocationAssetOrder", "ViewThroughConversionsFromLocationAssetOtherEngagement", "ViewThroughConversionsFromLocationAssetStoreVisits", "ViewThroughConversionsFromLocationAssetWebsite", "Orders", "AverageOrderValueMicros", "AverageCartSize", "CostOfGoodsSoldMicros", "GrossProfitMicros", "GrossProfitMargin", "RevenueMicros", "UnitsSold", "CrossSellCostOfGoodsSoldMicros", "CrossSellGrossProfitMicros", "CrossSellRevenueMicros", "CrossSellUnitsSold", "LeadCostOfGoodsSoldMicros", "LeadGrossProfitMicros", "LeadRevenueMicros", "LeadUnitsSold", "UniqueUsers", "AverageImpressionFrequencyPerUser", "LinkedEntitiesCount", "AssetPinnedTotalCount", "AssetPinnedAsHeadlinePositionOneCount", "AssetPinnedAsHeadlinePositionTwoCount", "AssetPinnedAsHeadlinePositionThreeCount", "AssetPinnedAsDescriptionPositionOneCount", "AssetPinnedAsDescriptionPositionTwoCount", "StoreVisitsLastClickModelAttributedConversions", "ResultsConversionsPurchase", "VideoTrueviewViewRateInFeed", "VideoTrueviewViewRateInStream", "VideoTrueviewViewRateShorts", "CoviewedImpressions", "PrimaryImpressions", "PlatformComparableConversionsFromInteractionsRate", "PlatformComparableConversions", "PlatformComparableConversionsValue", "PlatformComparableConversionsValuePerCost", "PlatformComparableConversionsByConversionDate", "PlatformComparableConversionsValueByConversionDate", "PlatformComparableConversionsFromInteractionsValuePerInteraction", "CostPerPlatformComparableConversion", "ValuePerPlatformComparableConversion", "ValuePerPlatformComparableConversionsByConversionDate", "CostConvertedCurrencyPerPlatformComparableConversion", "UniqueUsersTwoPlus", "UniqueUsersThreePlus", "UniqueUsersFourPlus", "UniqueUsersFivePlus", "UniqueUsersTenPlus", "ValueAdjustment", "AllValueAdjustment", "ClicksUniqueQueryClusters", "ConversionsUniqueQueryClusters", "ImpressionsUniqueQueryClusters", "VideoWatchTimeDurationMillis", "AverageVideoWatchTimeDurationMillis", "Svr", "ActiveViewAudibilityMeasurableImpressions", "ActiveViewAudibilityMeasurableImpressionsRate", "ActiveViewAudibilityInvalidMeasurableImpressionsRate", "ActiveViewAudibilityInvalidGivtMeasurableImpressionsRate", "ActiveViewAudibleImpressions", "ActiveViewAudibleImpressionsRate", "ActiveViewAudibleTwoSecondsImpressions", "ActiveViewAudibleTwoSecondsImpressionsRate", "ActiveViewAudibleThirtySecondsImpressions", "ActiveViewAudibleThirtySecondsImpressionsRate", "ActiveViewAudibleQuartileP25Rate", "ActiveViewAudibleQuartileP50Rate", "ActiveViewAudibleQuartileP75Rate", "ActiveViewAudibleQuartileP100Rate", "BiddableIndirectInstallFirstInAppConversionMicros", "AllAverageCartSize", "AllAverageOrderValueMicros", "AllCostOfGoodsSoldMicros", "AllCrossSellCostOfGoodsSoldMicros", "AllCrossSellGrossProfitMicros", "AllCrossSellRevenueMicros", "AllCrossSellUnitsSold", "AllGrossProfitMargin", "AllGrossProfitMicros", "AllLeadCostOfGoodsSoldMicros", "AllLeadGrossProfitMicros", "AllLeadRevenueMicros", "AllLeadUnitsSold", "AllOrders", "AllRevenueMicros", "AllUnitsSold", "ControlCostPerConversion", "CostPerConversionMarginOfError", "CostPerConversionPValue", "CostPerConversionChangePointEstimate", "ControlConversions", "ConversionsAbsoluteChangeMarginOfError", "ConversionsAbsoluteChangePValue", "ConversionsAbsoluteChangePointEstimate", "ControlConversionValuePerCost", "ConversionValuePerCostMarginOfError", "ConversionValuePerCostPValue", "ConversionValuePerCostChangePointEstimate", "ControlCostMicros", "CostMicrosMarginOfError", "CostMicrosPValue", "CostMicrosChangePointEstimate", "ControlImpressions", "ImpressionsMarginOfError", "ImpressionsPValue", "ImpressionsPointEstimate", "ClicksMarginOfError", "ClicksPValue", "ClicksPointEstimate", "ControlConversionValue", "ConversionValueMarginOfError", "ConversionValuePValue", "ConversionValueChangePointEstimate", "IncrementalConversions", "IncrementalConversionsWinnerScore", "IncrementalConversionValue", "IncrementalConversionValueWinnerScore", "ConversionLiftBaselineConversions", "ConversionLiftBaselineConversionValue", "ConversionLiftExposedConversions", "ConversionLiftExposedConversionValue", "CostPerIncrementalConversion", "CostPerIncrementalConversionWinnerScore", "CostPerIncrementalConversionP90LowerBound", "CostPerIncrementalConversionP90UpperBound", "IncrementalConversionsP90LowerBound", "IncrementalConversionsP90UpperBound", "IncrementalConversionsPValue", "IncrementalConversionValueP90LowerBound", "IncrementalConversionValueP90UpperBound", "IncrementalConversionValuePValue", "IncrementalConversionValuePerCost", "IncrementalConversionValuePerCostWinnerScore", "IncrementalConversionValuePerCostP90LowerBound", "IncrementalConversionValuePerCostP90UpperBound", "RelativeConversionLift", "RelativeConversionLiftP90LowerBound", "RelativeConversionLiftP90UpperBound", "RelativeConversionValueLift", "RelativeConversionValueLiftP90LowerBound", "RelativeConversionValueLiftP90UpperBound", "AbsoluteBrandLift", "AbsoluteBrandLiftP90LowerBound", "AbsoluteBrandLiftP90UpperBound", "AbsoluteBrandLiftPValue", "BrandLiftBaselinePositiveResponseRate", "BrandLiftBaselinePositiveResponseRateP90LowerBound", "BrandLiftBaselinePositiveResponseRateP90UpperBound", "BrandLiftExposedPositiveResponderFractionalCookies", "BrandLiftExposedPositiveResponderFractionalCookiesP90LowerBound", "BrandLiftExposedPositiveResponderFractionalCookiesP90UpperBound", "BrandLiftExposedPositiveResponseRate", "BrandLiftExposedPositiveResponseRateP90LowerBound", "BrandLiftExposedPositiveResponseRateP90UpperBound", "BrandLiftResponsesExposed", "BrandLiftResponsesSuppressed", "BrandLiftSuppressedPositiveResponderFractionalCookies", "BrandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound", "BrandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound", "BrandLiftTotalResponses", "CostPerLiftedCookie", "CostPerLiftedCookieP90LowerBound", "CostPerLiftedCookieP90UpperBound", "FractionalLiftedCookies", "FractionalLiftedCookiesP90LowerBound", "FractionalLiftedCookiesP90UpperBound", "HeadroomBrandLift", "HeadroomBrandLiftP90LowerBound", "HeadroomBrandLiftP90UpperBound", "RelativeBrandLift", "RelativeBrandLiftP90LowerBound", "RelativeBrandLiftP90UpperBound", "YoutubeComments", "YoutubeLikes", "YoutubeShares", "OriginalConversionValue" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Common.SearchVolumeRange), global::Google.Ads.GoogleAds.V25.Common.SearchVolumeRange.Parser, new[]{ "Min", "Max" }, new[]{ "Min", "Max" }, null, null, null)
           }));
     }
@@ -576,6 +714,8 @@ namespace Google.Ads.GoogleAds.V25.Common {
     private int _hasBits6;
     private int _hasBits7;
     private int _hasBits8;
+    private int _hasBits9;
+    private int _hasBits10;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Metrics> Parser { get { return _parser; } }
@@ -612,6 +752,8 @@ namespace Google.Ads.GoogleAds.V25.Common {
       _hasBits6 = other._hasBits6;
       _hasBits7 = other._hasBits7;
       _hasBits8 = other._hasBits8;
+      _hasBits9 = other._hasBits9;
+      _hasBits10 = other._hasBits10;
       absoluteTopImpressionPercentage_ = other.absoluteTopImpressionPercentage_;
       activeViewCpm_ = other.activeViewCpm_;
       activeViewCtr_ = other.activeViewCtr_;
@@ -890,9 +1032,69 @@ namespace Google.Ads.GoogleAds.V25.Common {
       conversionValueMarginOfError_ = other.conversionValueMarginOfError_;
       conversionValuePValue_ = other.conversionValuePValue_;
       conversionValueChangePointEstimate_ = other.conversionValueChangePointEstimate_;
+      incrementalConversions_ = other.incrementalConversions_;
+      incrementalConversionsWinnerScore_ = other.incrementalConversionsWinnerScore_;
+      incrementalConversionValue_ = other.incrementalConversionValue_;
+      incrementalConversionValueWinnerScore_ = other.incrementalConversionValueWinnerScore_;
+      conversionLiftBaselineConversions_ = other.conversionLiftBaselineConversions_;
+      conversionLiftBaselineConversionValue_ = other.conversionLiftBaselineConversionValue_;
+      conversionLiftExposedConversions_ = other.conversionLiftExposedConversions_;
+      conversionLiftExposedConversionValue_ = other.conversionLiftExposedConversionValue_;
+      costPerIncrementalConversion_ = other.costPerIncrementalConversion_;
+      costPerIncrementalConversionWinnerScore_ = other.costPerIncrementalConversionWinnerScore_;
+      costPerIncrementalConversionP90LowerBound_ = other.costPerIncrementalConversionP90LowerBound_;
+      costPerIncrementalConversionP90UpperBound_ = other.costPerIncrementalConversionP90UpperBound_;
+      incrementalConversionsP90LowerBound_ = other.incrementalConversionsP90LowerBound_;
+      incrementalConversionsP90UpperBound_ = other.incrementalConversionsP90UpperBound_;
+      incrementalConversionsPValue_ = other.incrementalConversionsPValue_;
+      incrementalConversionValueP90LowerBound_ = other.incrementalConversionValueP90LowerBound_;
+      incrementalConversionValueP90UpperBound_ = other.incrementalConversionValueP90UpperBound_;
+      incrementalConversionValuePValue_ = other.incrementalConversionValuePValue_;
+      incrementalConversionValuePerCost_ = other.incrementalConversionValuePerCost_;
+      incrementalConversionValuePerCostWinnerScore_ = other.incrementalConversionValuePerCostWinnerScore_;
+      incrementalConversionValuePerCostP90LowerBound_ = other.incrementalConversionValuePerCostP90LowerBound_;
+      incrementalConversionValuePerCostP90UpperBound_ = other.incrementalConversionValuePerCostP90UpperBound_;
+      relativeConversionLift_ = other.relativeConversionLift_;
+      relativeConversionLiftP90LowerBound_ = other.relativeConversionLiftP90LowerBound_;
+      relativeConversionLiftP90UpperBound_ = other.relativeConversionLiftP90UpperBound_;
+      relativeConversionValueLift_ = other.relativeConversionValueLift_;
+      relativeConversionValueLiftP90LowerBound_ = other.relativeConversionValueLiftP90LowerBound_;
+      relativeConversionValueLiftP90UpperBound_ = other.relativeConversionValueLiftP90UpperBound_;
+      absoluteBrandLift_ = other.absoluteBrandLift_;
+      absoluteBrandLiftP90LowerBound_ = other.absoluteBrandLiftP90LowerBound_;
+      absoluteBrandLiftP90UpperBound_ = other.absoluteBrandLiftP90UpperBound_;
+      absoluteBrandLiftPValue_ = other.absoluteBrandLiftPValue_;
+      brandLiftBaselinePositiveResponseRate_ = other.brandLiftBaselinePositiveResponseRate_;
+      brandLiftBaselinePositiveResponseRateP90LowerBound_ = other.brandLiftBaselinePositiveResponseRateP90LowerBound_;
+      brandLiftBaselinePositiveResponseRateP90UpperBound_ = other.brandLiftBaselinePositiveResponseRateP90UpperBound_;
+      brandLiftExposedPositiveResponderFractionalCookies_ = other.brandLiftExposedPositiveResponderFractionalCookies_;
+      brandLiftExposedPositiveResponderFractionalCookiesP90LowerBound_ = other.brandLiftExposedPositiveResponderFractionalCookiesP90LowerBound_;
+      brandLiftExposedPositiveResponderFractionalCookiesP90UpperBound_ = other.brandLiftExposedPositiveResponderFractionalCookiesP90UpperBound_;
+      brandLiftExposedPositiveResponseRate_ = other.brandLiftExposedPositiveResponseRate_;
+      brandLiftExposedPositiveResponseRateP90LowerBound_ = other.brandLiftExposedPositiveResponseRateP90LowerBound_;
+      brandLiftExposedPositiveResponseRateP90UpperBound_ = other.brandLiftExposedPositiveResponseRateP90UpperBound_;
+      brandLiftResponsesExposed_ = other.brandLiftResponsesExposed_;
+      brandLiftResponsesSuppressed_ = other.brandLiftResponsesSuppressed_;
+      brandLiftSuppressedPositiveResponderFractionalCookies_ = other.brandLiftSuppressedPositiveResponderFractionalCookies_;
+      brandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound_ = other.brandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound_;
+      brandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound_ = other.brandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound_;
+      brandLiftTotalResponses_ = other.brandLiftTotalResponses_;
+      costPerLiftedCookie_ = other.costPerLiftedCookie_;
+      costPerLiftedCookieP90LowerBound_ = other.costPerLiftedCookieP90LowerBound_;
+      costPerLiftedCookieP90UpperBound_ = other.costPerLiftedCookieP90UpperBound_;
+      fractionalLiftedCookies_ = other.fractionalLiftedCookies_;
+      fractionalLiftedCookiesP90LowerBound_ = other.fractionalLiftedCookiesP90LowerBound_;
+      fractionalLiftedCookiesP90UpperBound_ = other.fractionalLiftedCookiesP90UpperBound_;
+      headroomBrandLift_ = other.headroomBrandLift_;
+      headroomBrandLiftP90LowerBound_ = other.headroomBrandLiftP90LowerBound_;
+      headroomBrandLiftP90UpperBound_ = other.headroomBrandLiftP90UpperBound_;
+      relativeBrandLift_ = other.relativeBrandLift_;
+      relativeBrandLiftP90LowerBound_ = other.relativeBrandLiftP90LowerBound_;
+      relativeBrandLiftP90UpperBound_ = other.relativeBrandLiftP90UpperBound_;
       youtubeComments_ = other.youtubeComments_;
       youtubeLikes_ = other.youtubeLikes_;
       youtubeShares_ = other.youtubeShares_;
+      originalConversionValue_ = other.originalConversionValue_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -10007,6 +10209,1886 @@ namespace Google.Ads.GoogleAds.V25.Common {
       _hasBits8 &= ~128;
     }
 
+    /// <summary>Field number for the "incremental_conversions" field.</summary>
+    public const int IncrementalConversionsFieldNumber = 473;
+    private readonly static double IncrementalConversionsDefaultValue = 0D;
+
+    private double incrementalConversions_;
+    /// <summary>
+    /// The estimated number of additional conversions directly attributable to the
+    /// ad campaign.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double IncrementalConversions {
+      get { if ((_hasBits8 & 256) != 0) { return incrementalConversions_; } else { return IncrementalConversionsDefaultValue; } }
+      set {
+        _hasBits8 |= 256;
+        incrementalConversions_ = value;
+      }
+    }
+    /// <summary>Gets whether the "incremental_conversions" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasIncrementalConversions {
+      get { return (_hasBits8 & 256) != 0; }
+    }
+    /// <summary>Clears the value of the "incremental_conversions" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearIncrementalConversions() {
+      _hasBits8 &= ~256;
+    }
+
+    /// <summary>Field number for the "incremental_conversions_winner_score" field.</summary>
+    public const int IncrementalConversionsWinnerScoreFieldNumber = 601;
+    private readonly static double IncrementalConversionsWinnerScoreDefaultValue = 0D;
+
+    private double incrementalConversionsWinnerScore_;
+    /// <summary>
+    /// The probability that this experiment arm is the winner for incremental
+    /// conversions. This value is between 0.0 and 1.0.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double IncrementalConversionsWinnerScore {
+      get { if ((_hasBits10 & 8) != 0) { return incrementalConversionsWinnerScore_; } else { return IncrementalConversionsWinnerScoreDefaultValue; } }
+      set {
+        _hasBits10 |= 8;
+        incrementalConversionsWinnerScore_ = value;
+      }
+    }
+    /// <summary>Gets whether the "incremental_conversions_winner_score" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasIncrementalConversionsWinnerScore {
+      get { return (_hasBits10 & 8) != 0; }
+    }
+    /// <summary>Clears the value of the "incremental_conversions_winner_score" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearIncrementalConversionsWinnerScore() {
+      _hasBits10 &= ~8;
+    }
+
+    /// <summary>Field number for the "incremental_conversion_value" field.</summary>
+    public const int IncrementalConversionValueFieldNumber = 474;
+    private readonly static double IncrementalConversionValueDefaultValue = 0D;
+
+    private double incrementalConversionValue_;
+    /// <summary>
+    /// The estimated additional conversion value the ads generated. Measures the
+    /// incremental revenue or value from your campaigns.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double IncrementalConversionValue {
+      get { if ((_hasBits8 & 512) != 0) { return incrementalConversionValue_; } else { return IncrementalConversionValueDefaultValue; } }
+      set {
+        _hasBits8 |= 512;
+        incrementalConversionValue_ = value;
+      }
+    }
+    /// <summary>Gets whether the "incremental_conversion_value" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasIncrementalConversionValue {
+      get { return (_hasBits8 & 512) != 0; }
+    }
+    /// <summary>Clears the value of the "incremental_conversion_value" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearIncrementalConversionValue() {
+      _hasBits8 &= ~512;
+    }
+
+    /// <summary>Field number for the "incremental_conversion_value_winner_score" field.</summary>
+    public const int IncrementalConversionValueWinnerScoreFieldNumber = 602;
+    private readonly static double IncrementalConversionValueWinnerScoreDefaultValue = 0D;
+
+    private double incrementalConversionValueWinnerScore_;
+    /// <summary>
+    /// The probability that this experiment arm is the winner for incremental
+    /// conversion value. This value is between 0.0 and 1.0.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double IncrementalConversionValueWinnerScore {
+      get { if ((_hasBits10 & 16) != 0) { return incrementalConversionValueWinnerScore_; } else { return IncrementalConversionValueWinnerScoreDefaultValue; } }
+      set {
+        _hasBits10 |= 16;
+        incrementalConversionValueWinnerScore_ = value;
+      }
+    }
+    /// <summary>Gets whether the "incremental_conversion_value_winner_score" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasIncrementalConversionValueWinnerScore {
+      get { return (_hasBits10 & 16) != 0; }
+    }
+    /// <summary>Clears the value of the "incremental_conversion_value_winner_score" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearIncrementalConversionValueWinnerScore() {
+      _hasBits10 &= ~16;
+    }
+
+    /// <summary>Field number for the "conversion_lift_baseline_conversions" field.</summary>
+    public const int ConversionLiftBaselineConversionsFieldNumber = 475;
+    private readonly static double ConversionLiftBaselineConversionsDefaultValue = 0D;
+
+    private double conversionLiftBaselineConversions_;
+    /// <summary>
+    /// Represents the number of conversions that would have occurred naturally
+    /// without ad exposure, based on the behavior of the control group. Often
+    /// referred to as "Control" conversions.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double ConversionLiftBaselineConversions {
+      get { if ((_hasBits8 & 1024) != 0) { return conversionLiftBaselineConversions_; } else { return ConversionLiftBaselineConversionsDefaultValue; } }
+      set {
+        _hasBits8 |= 1024;
+        conversionLiftBaselineConversions_ = value;
+      }
+    }
+    /// <summary>Gets whether the "conversion_lift_baseline_conversions" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasConversionLiftBaselineConversions {
+      get { return (_hasBits8 & 1024) != 0; }
+    }
+    /// <summary>Clears the value of the "conversion_lift_baseline_conversions" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearConversionLiftBaselineConversions() {
+      _hasBits8 &= ~1024;
+    }
+
+    /// <summary>Field number for the "conversion_lift_baseline_conversion_value" field.</summary>
+    public const int ConversionLiftBaselineConversionValueFieldNumber = 476;
+    private readonly static double ConversionLiftBaselineConversionValueDefaultValue = 0D;
+
+    private double conversionLiftBaselineConversionValue_;
+    /// <summary>
+    /// Represents the baseline conversion value from users not exposed to the ads.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double ConversionLiftBaselineConversionValue {
+      get { if ((_hasBits8 & 2048) != 0) { return conversionLiftBaselineConversionValue_; } else { return ConversionLiftBaselineConversionValueDefaultValue; } }
+      set {
+        _hasBits8 |= 2048;
+        conversionLiftBaselineConversionValue_ = value;
+      }
+    }
+    /// <summary>Gets whether the "conversion_lift_baseline_conversion_value" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasConversionLiftBaselineConversionValue {
+      get { return (_hasBits8 & 2048) != 0; }
+    }
+    /// <summary>Clears the value of the "conversion_lift_baseline_conversion_value" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearConversionLiftBaselineConversionValue() {
+      _hasBits8 &= ~2048;
+    }
+
+    /// <summary>Field number for the "conversion_lift_exposed_conversions" field.</summary>
+    public const int ConversionLiftExposedConversionsFieldNumber = 477;
+    private readonly static double ConversionLiftExposedConversionsDefaultValue = 0D;
+
+    private double conversionLiftExposedConversions_;
+    /// <summary>
+    /// Represents the total conversions from users who were exposed to the ads.
+    /// Often referred to as "Treatment" conversions.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double ConversionLiftExposedConversions {
+      get { if ((_hasBits8 & 4096) != 0) { return conversionLiftExposedConversions_; } else { return ConversionLiftExposedConversionsDefaultValue; } }
+      set {
+        _hasBits8 |= 4096;
+        conversionLiftExposedConversions_ = value;
+      }
+    }
+    /// <summary>Gets whether the "conversion_lift_exposed_conversions" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasConversionLiftExposedConversions {
+      get { return (_hasBits8 & 4096) != 0; }
+    }
+    /// <summary>Clears the value of the "conversion_lift_exposed_conversions" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearConversionLiftExposedConversions() {
+      _hasBits8 &= ~4096;
+    }
+
+    /// <summary>Field number for the "conversion_lift_exposed_conversion_value" field.</summary>
+    public const int ConversionLiftExposedConversionValueFieldNumber = 478;
+    private readonly static double ConversionLiftExposedConversionValueDefaultValue = 0D;
+
+    private double conversionLiftExposedConversionValue_;
+    /// <summary>
+    /// Represents the total conversion value from users exposed to the ads.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double ConversionLiftExposedConversionValue {
+      get { if ((_hasBits8 & 8192) != 0) { return conversionLiftExposedConversionValue_; } else { return ConversionLiftExposedConversionValueDefaultValue; } }
+      set {
+        _hasBits8 |= 8192;
+        conversionLiftExposedConversionValue_ = value;
+      }
+    }
+    /// <summary>Gets whether the "conversion_lift_exposed_conversion_value" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasConversionLiftExposedConversionValue {
+      get { return (_hasBits8 & 8192) != 0; }
+    }
+    /// <summary>Clears the value of the "conversion_lift_exposed_conversion_value" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearConversionLiftExposedConversionValue() {
+      _hasBits8 &= ~8192;
+    }
+
+    /// <summary>Field number for the "cost_per_incremental_conversion" field.</summary>
+    public const int CostPerIncrementalConversionFieldNumber = 479;
+    private readonly static double CostPerIncrementalConversionDefaultValue = 0D;
+
+    private double costPerIncrementalConversion_;
+    /// <summary>
+    /// The estimated cost incurred for each additional conversion generated by the
+    /// campaign. This is the Incremental Cost Per Acquisition (iCPA).
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double CostPerIncrementalConversion {
+      get { if ((_hasBits8 & 16384) != 0) { return costPerIncrementalConversion_; } else { return CostPerIncrementalConversionDefaultValue; } }
+      set {
+        _hasBits8 |= 16384;
+        costPerIncrementalConversion_ = value;
+      }
+    }
+    /// <summary>Gets whether the "cost_per_incremental_conversion" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasCostPerIncrementalConversion {
+      get { return (_hasBits8 & 16384) != 0; }
+    }
+    /// <summary>Clears the value of the "cost_per_incremental_conversion" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearCostPerIncrementalConversion() {
+      _hasBits8 &= ~16384;
+    }
+
+    /// <summary>Field number for the "cost_per_incremental_conversion_winner_score" field.</summary>
+    public const int CostPerIncrementalConversionWinnerScoreFieldNumber = 603;
+    private readonly static double CostPerIncrementalConversionWinnerScoreDefaultValue = 0D;
+
+    private double costPerIncrementalConversionWinnerScore_;
+    /// <summary>
+    /// The probability that this experiment arm is the winner for cost per
+    /// incremental conversion. This value is between 0.0 and 1.0.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double CostPerIncrementalConversionWinnerScore {
+      get { if ((_hasBits10 & 32) != 0) { return costPerIncrementalConversionWinnerScore_; } else { return CostPerIncrementalConversionWinnerScoreDefaultValue; } }
+      set {
+        _hasBits10 |= 32;
+        costPerIncrementalConversionWinnerScore_ = value;
+      }
+    }
+    /// <summary>Gets whether the "cost_per_incremental_conversion_winner_score" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasCostPerIncrementalConversionWinnerScore {
+      get { return (_hasBits10 & 32) != 0; }
+    }
+    /// <summary>Clears the value of the "cost_per_incremental_conversion_winner_score" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearCostPerIncrementalConversionWinnerScore() {
+      _hasBits10 &= ~32;
+    }
+
+    /// <summary>Field number for the "cost_per_incremental_conversion_p90_lower_bound" field.</summary>
+    public const int CostPerIncrementalConversionP90LowerBoundFieldNumber = 480;
+    private readonly static double CostPerIncrementalConversionP90LowerBoundDefaultValue = 0D;
+
+    private double costPerIncrementalConversionP90LowerBound_;
+    /// <summary>
+    /// The lower bound of the 90% confidence interval for
+    /// cost_per_incremental_conversion. The lowest likely cost you paid per
+    /// incremental conversion.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double CostPerIncrementalConversionP90LowerBound {
+      get { if ((_hasBits8 & 32768) != 0) { return costPerIncrementalConversionP90LowerBound_; } else { return CostPerIncrementalConversionP90LowerBoundDefaultValue; } }
+      set {
+        _hasBits8 |= 32768;
+        costPerIncrementalConversionP90LowerBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "cost_per_incremental_conversion_p90_lower_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasCostPerIncrementalConversionP90LowerBound {
+      get { return (_hasBits8 & 32768) != 0; }
+    }
+    /// <summary>Clears the value of the "cost_per_incremental_conversion_p90_lower_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearCostPerIncrementalConversionP90LowerBound() {
+      _hasBits8 &= ~32768;
+    }
+
+    /// <summary>Field number for the "cost_per_incremental_conversion_p90_upper_bound" field.</summary>
+    public const int CostPerIncrementalConversionP90UpperBoundFieldNumber = 481;
+    private readonly static double CostPerIncrementalConversionP90UpperBoundDefaultValue = 0D;
+
+    private double costPerIncrementalConversionP90UpperBound_;
+    /// <summary>
+    /// The upper bound of the 90% confidence interval for
+    /// cost_per_incremental_conversion. The highest likely cost you paid per
+    /// incremental conversion.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double CostPerIncrementalConversionP90UpperBound {
+      get { if ((_hasBits8 & 65536) != 0) { return costPerIncrementalConversionP90UpperBound_; } else { return CostPerIncrementalConversionP90UpperBoundDefaultValue; } }
+      set {
+        _hasBits8 |= 65536;
+        costPerIncrementalConversionP90UpperBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "cost_per_incremental_conversion_p90_upper_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasCostPerIncrementalConversionP90UpperBound {
+      get { return (_hasBits8 & 65536) != 0; }
+    }
+    /// <summary>Clears the value of the "cost_per_incremental_conversion_p90_upper_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearCostPerIncrementalConversionP90UpperBound() {
+      _hasBits8 &= ~65536;
+    }
+
+    /// <summary>Field number for the "incremental_conversions_p90_lower_bound" field.</summary>
+    public const int IncrementalConversionsP90LowerBoundFieldNumber = 482;
+    private readonly static double IncrementalConversionsP90LowerBoundDefaultValue = 0D;
+
+    private double incrementalConversionsP90LowerBound_;
+    /// <summary>
+    /// The lower bound of the 90% confidence interval for
+    /// incremental_conversions. The "conservative" estimate of your success. It is
+    /// the minimum number of additional sales you can be 90% sure were caused by
+    /// your ads.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double IncrementalConversionsP90LowerBound {
+      get { if ((_hasBits8 & 131072) != 0) { return incrementalConversionsP90LowerBound_; } else { return IncrementalConversionsP90LowerBoundDefaultValue; } }
+      set {
+        _hasBits8 |= 131072;
+        incrementalConversionsP90LowerBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "incremental_conversions_p90_lower_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasIncrementalConversionsP90LowerBound {
+      get { return (_hasBits8 & 131072) != 0; }
+    }
+    /// <summary>Clears the value of the "incremental_conversions_p90_lower_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearIncrementalConversionsP90LowerBound() {
+      _hasBits8 &= ~131072;
+    }
+
+    /// <summary>Field number for the "incremental_conversions_p90_upper_bound" field.</summary>
+    public const int IncrementalConversionsP90UpperBoundFieldNumber = 483;
+    private readonly static double IncrementalConversionsP90UpperBoundDefaultValue = 0D;
+
+    private double incrementalConversionsP90UpperBound_;
+    /// <summary>
+    /// The upper bound of the 90% confidence interval for
+    /// incremental_conversions. The "optimistic" estimate of your success. It is
+    /// the maximum number of additional sales likely driven by your ads.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double IncrementalConversionsP90UpperBound {
+      get { if ((_hasBits8 & 262144) != 0) { return incrementalConversionsP90UpperBound_; } else { return IncrementalConversionsP90UpperBoundDefaultValue; } }
+      set {
+        _hasBits8 |= 262144;
+        incrementalConversionsP90UpperBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "incremental_conversions_p90_upper_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasIncrementalConversionsP90UpperBound {
+      get { return (_hasBits8 & 262144) != 0; }
+    }
+    /// <summary>Clears the value of the "incremental_conversions_p90_upper_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearIncrementalConversionsP90UpperBound() {
+      _hasBits8 &= ~262144;
+    }
+
+    /// <summary>Field number for the "incremental_conversions_p_value" field.</summary>
+    public const int IncrementalConversionsPValueFieldNumber = 484;
+    private readonly static double IncrementalConversionsPValueDefaultValue = 0D;
+
+    private double incrementalConversionsPValue_;
+    /// <summary>
+    /// The conversions p-value provides a measure of the statistical significance
+    /// for the detected lift in conversions. It calculates the likelihood that
+    /// your incremental conversions were driven by ad performance rather than
+    /// being a merely random occurrence.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double IncrementalConversionsPValue {
+      get { if ((_hasBits8 & 524288) != 0) { return incrementalConversionsPValue_; } else { return IncrementalConversionsPValueDefaultValue; } }
+      set {
+        _hasBits8 |= 524288;
+        incrementalConversionsPValue_ = value;
+      }
+    }
+    /// <summary>Gets whether the "incremental_conversions_p_value" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasIncrementalConversionsPValue {
+      get { return (_hasBits8 & 524288) != 0; }
+    }
+    /// <summary>Clears the value of the "incremental_conversions_p_value" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearIncrementalConversionsPValue() {
+      _hasBits8 &= ~524288;
+    }
+
+    /// <summary>Field number for the "incremental_conversion_value_p90_lower_bound" field.</summary>
+    public const int IncrementalConversionValueP90LowerBoundFieldNumber = 485;
+    private readonly static double IncrementalConversionValueP90LowerBoundDefaultValue = 0D;
+
+    private double incrementalConversionValueP90LowerBound_;
+    /// <summary>
+    /// The lower bound of the 90% confidence interval for
+    /// incremental_conversion_value. Shows the minimum amount of extra revenue ($)
+    /// you can be 90% certain was generated by the campaign.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double IncrementalConversionValueP90LowerBound {
+      get { if ((_hasBits8 & 1048576) != 0) { return incrementalConversionValueP90LowerBound_; } else { return IncrementalConversionValueP90LowerBoundDefaultValue; } }
+      set {
+        _hasBits8 |= 1048576;
+        incrementalConversionValueP90LowerBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "incremental_conversion_value_p90_lower_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasIncrementalConversionValueP90LowerBound {
+      get { return (_hasBits8 & 1048576) != 0; }
+    }
+    /// <summary>Clears the value of the "incremental_conversion_value_p90_lower_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearIncrementalConversionValueP90LowerBound() {
+      _hasBits8 &= ~1048576;
+    }
+
+    /// <summary>Field number for the "incremental_conversion_value_p90_upper_bound" field.</summary>
+    public const int IncrementalConversionValueP90UpperBoundFieldNumber = 486;
+    private readonly static double IncrementalConversionValueP90UpperBoundDefaultValue = 0D;
+
+    private double incrementalConversionValueP90UpperBound_;
+    /// <summary>
+    /// The upper bound of the 90% confidence interval for
+    /// incremental_conversion_value. The highest amount of extra revenue ($)
+    /// likely generated by the campaign.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double IncrementalConversionValueP90UpperBound {
+      get { if ((_hasBits8 & 2097152) != 0) { return incrementalConversionValueP90UpperBound_; } else { return IncrementalConversionValueP90UpperBoundDefaultValue; } }
+      set {
+        _hasBits8 |= 2097152;
+        incrementalConversionValueP90UpperBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "incremental_conversion_value_p90_upper_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasIncrementalConversionValueP90UpperBound {
+      get { return (_hasBits8 & 2097152) != 0; }
+    }
+    /// <summary>Clears the value of the "incremental_conversion_value_p90_upper_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearIncrementalConversionValueP90UpperBound() {
+      _hasBits8 &= ~2097152;
+    }
+
+    /// <summary>Field number for the "incremental_conversion_value_p_value" field.</summary>
+    public const int IncrementalConversionValuePValueFieldNumber = 487;
+    private readonly static double IncrementalConversionValuePValueDefaultValue = 0D;
+
+    private double incrementalConversionValuePValue_;
+    /// <summary>
+    /// The conversions value p-value provides a measure of the statistical
+    /// significance for the detected lift in conversions value. It calculates the
+    /// likelihood that your incremental conversion value was driven by ad
+    /// performance rather than being a merely random occurrence.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double IncrementalConversionValuePValue {
+      get { if ((_hasBits8 & 4194304) != 0) { return incrementalConversionValuePValue_; } else { return IncrementalConversionValuePValueDefaultValue; } }
+      set {
+        _hasBits8 |= 4194304;
+        incrementalConversionValuePValue_ = value;
+      }
+    }
+    /// <summary>Gets whether the "incremental_conversion_value_p_value" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasIncrementalConversionValuePValue {
+      get { return (_hasBits8 & 4194304) != 0; }
+    }
+    /// <summary>Clears the value of the "incremental_conversion_value_p_value" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearIncrementalConversionValuePValue() {
+      _hasBits8 &= ~4194304;
+    }
+
+    /// <summary>Field number for the "incremental_conversion_value_per_cost" field.</summary>
+    public const int IncrementalConversionValuePerCostFieldNumber = 488;
+    private readonly static double IncrementalConversionValuePerCostDefaultValue = 0D;
+
+    private double incrementalConversionValuePerCost_;
+    /// <summary>
+    /// The incremental return on ad spend (iROAS), calculated as the additional
+    /// conversion value generated per unit of campaign cost. Measures the return
+    /// on your ad spend in terms of incremental value.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double IncrementalConversionValuePerCost {
+      get { if ((_hasBits8 & 8388608) != 0) { return incrementalConversionValuePerCost_; } else { return IncrementalConversionValuePerCostDefaultValue; } }
+      set {
+        _hasBits8 |= 8388608;
+        incrementalConversionValuePerCost_ = value;
+      }
+    }
+    /// <summary>Gets whether the "incremental_conversion_value_per_cost" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasIncrementalConversionValuePerCost {
+      get { return (_hasBits8 & 8388608) != 0; }
+    }
+    /// <summary>Clears the value of the "incremental_conversion_value_per_cost" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearIncrementalConversionValuePerCost() {
+      _hasBits8 &= ~8388608;
+    }
+
+    /// <summary>Field number for the "incremental_conversion_value_per_cost_winner_score" field.</summary>
+    public const int IncrementalConversionValuePerCostWinnerScoreFieldNumber = 604;
+    private readonly static double IncrementalConversionValuePerCostWinnerScoreDefaultValue = 0D;
+
+    private double incrementalConversionValuePerCostWinnerScore_;
+    /// <summary>
+    /// The probability that this experiment arm is the winner for incremental
+    /// conversion value per cost. This value is between 0.0 and 1.0.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double IncrementalConversionValuePerCostWinnerScore {
+      get { if ((_hasBits10 & 64) != 0) { return incrementalConversionValuePerCostWinnerScore_; } else { return IncrementalConversionValuePerCostWinnerScoreDefaultValue; } }
+      set {
+        _hasBits10 |= 64;
+        incrementalConversionValuePerCostWinnerScore_ = value;
+      }
+    }
+    /// <summary>Gets whether the "incremental_conversion_value_per_cost_winner_score" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasIncrementalConversionValuePerCostWinnerScore {
+      get { return (_hasBits10 & 64) != 0; }
+    }
+    /// <summary>Clears the value of the "incremental_conversion_value_per_cost_winner_score" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearIncrementalConversionValuePerCostWinnerScore() {
+      _hasBits10 &= ~64;
+    }
+
+    /// <summary>Field number for the "incremental_conversion_value_per_cost_p90_lower_bound" field.</summary>
+    public const int IncrementalConversionValuePerCostP90LowerBoundFieldNumber = 489;
+    private readonly static double IncrementalConversionValuePerCostP90LowerBoundDefaultValue = 0D;
+
+    private double incrementalConversionValuePerCostP90LowerBound_;
+    /// <summary>
+    /// The lower bound of the 90% confidence interval for incremental conversion
+    /// value per cost. The "Guaranteed" return. Even if the data is noisy, you can
+    /// be 90% sure your return was at least this high.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double IncrementalConversionValuePerCostP90LowerBound {
+      get { if ((_hasBits8 & 16777216) != 0) { return incrementalConversionValuePerCostP90LowerBound_; } else { return IncrementalConversionValuePerCostP90LowerBoundDefaultValue; } }
+      set {
+        _hasBits8 |= 16777216;
+        incrementalConversionValuePerCostP90LowerBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "incremental_conversion_value_per_cost_p90_lower_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasIncrementalConversionValuePerCostP90LowerBound {
+      get { return (_hasBits8 & 16777216) != 0; }
+    }
+    /// <summary>Clears the value of the "incremental_conversion_value_per_cost_p90_lower_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearIncrementalConversionValuePerCostP90LowerBound() {
+      _hasBits8 &= ~16777216;
+    }
+
+    /// <summary>Field number for the "incremental_conversion_value_per_cost_p90_upper_bound" field.</summary>
+    public const int IncrementalConversionValuePerCostP90UpperBoundFieldNumber = 490;
+    private readonly static double IncrementalConversionValuePerCostP90UpperBoundDefaultValue = 0D;
+
+    private double incrementalConversionValuePerCostP90UpperBound_;
+    /// <summary>
+    /// The upper bound of the 90% confidence interval for incremental conversion
+    /// value per cost. The "Potential" return. The maximum likely revenue
+    /// generated for every dollar spent.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double IncrementalConversionValuePerCostP90UpperBound {
+      get { if ((_hasBits8 & 33554432) != 0) { return incrementalConversionValuePerCostP90UpperBound_; } else { return IncrementalConversionValuePerCostP90UpperBoundDefaultValue; } }
+      set {
+        _hasBits8 |= 33554432;
+        incrementalConversionValuePerCostP90UpperBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "incremental_conversion_value_per_cost_p90_upper_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasIncrementalConversionValuePerCostP90UpperBound {
+      get { return (_hasBits8 & 33554432) != 0; }
+    }
+    /// <summary>Clears the value of the "incremental_conversion_value_per_cost_p90_upper_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearIncrementalConversionValuePerCostP90UpperBound() {
+      _hasBits8 &= ~33554432;
+    }
+
+    /// <summary>Field number for the "relative_conversion_lift" field.</summary>
+    public const int RelativeConversionLiftFieldNumber = 491;
+    private readonly static double RelativeConversionLiftDefaultValue = 0D;
+
+    private double relativeConversionLift_;
+    /// <summary>
+    /// The percentage increase in conversions in the exposed group compared to the
+    /// control group.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double RelativeConversionLift {
+      get { if ((_hasBits8 & 67108864) != 0) { return relativeConversionLift_; } else { return RelativeConversionLiftDefaultValue; } }
+      set {
+        _hasBits8 |= 67108864;
+        relativeConversionLift_ = value;
+      }
+    }
+    /// <summary>Gets whether the "relative_conversion_lift" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasRelativeConversionLift {
+      get { return (_hasBits8 & 67108864) != 0; }
+    }
+    /// <summary>Clears the value of the "relative_conversion_lift" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearRelativeConversionLift() {
+      _hasBits8 &= ~67108864;
+    }
+
+    /// <summary>Field number for the "relative_conversion_lift_p90_lower_bound" field.</summary>
+    public const int RelativeConversionLiftP90LowerBoundFieldNumber = 492;
+    private readonly static double RelativeConversionLiftP90LowerBoundDefaultValue = 0D;
+
+    private double relativeConversionLiftP90LowerBound_;
+    /// <summary>
+    /// The lower bound of the 90% confidence interval for
+    /// relative_conversion_lift. The minimum percentage increase you can be 90%
+    /// sure occurred.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double RelativeConversionLiftP90LowerBound {
+      get { if ((_hasBits8 & 134217728) != 0) { return relativeConversionLiftP90LowerBound_; } else { return RelativeConversionLiftP90LowerBoundDefaultValue; } }
+      set {
+        _hasBits8 |= 134217728;
+        relativeConversionLiftP90LowerBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "relative_conversion_lift_p90_lower_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasRelativeConversionLiftP90LowerBound {
+      get { return (_hasBits8 & 134217728) != 0; }
+    }
+    /// <summary>Clears the value of the "relative_conversion_lift_p90_lower_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearRelativeConversionLiftP90LowerBound() {
+      _hasBits8 &= ~134217728;
+    }
+
+    /// <summary>Field number for the "relative_conversion_lift_p90_upper_bound" field.</summary>
+    public const int RelativeConversionLiftP90UpperBoundFieldNumber = 493;
+    private readonly static double RelativeConversionLiftP90UpperBoundDefaultValue = 0D;
+
+    private double relativeConversionLiftP90UpperBound_;
+    /// <summary>
+    /// The upper bound of the 90% confidence interval for
+    /// relative_conversion_lift. The maximum percentage increase you can be 90%
+    /// sure occurred.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double RelativeConversionLiftP90UpperBound {
+      get { if ((_hasBits8 & 268435456) != 0) { return relativeConversionLiftP90UpperBound_; } else { return RelativeConversionLiftP90UpperBoundDefaultValue; } }
+      set {
+        _hasBits8 |= 268435456;
+        relativeConversionLiftP90UpperBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "relative_conversion_lift_p90_upper_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasRelativeConversionLiftP90UpperBound {
+      get { return (_hasBits8 & 268435456) != 0; }
+    }
+    /// <summary>Clears the value of the "relative_conversion_lift_p90_upper_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearRelativeConversionLiftP90UpperBound() {
+      _hasBits8 &= ~268435456;
+    }
+
+    /// <summary>Field number for the "relative_conversion_value_lift" field.</summary>
+    public const int RelativeConversionValueLiftFieldNumber = 494;
+    private readonly static double RelativeConversionValueLiftDefaultValue = 0D;
+
+    private double relativeConversionValueLift_;
+    /// <summary>
+    /// The percentage increase in conversion value in the exposed group compared
+    /// to the control group.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double RelativeConversionValueLift {
+      get { if ((_hasBits8 & 536870912) != 0) { return relativeConversionValueLift_; } else { return RelativeConversionValueLiftDefaultValue; } }
+      set {
+        _hasBits8 |= 536870912;
+        relativeConversionValueLift_ = value;
+      }
+    }
+    /// <summary>Gets whether the "relative_conversion_value_lift" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasRelativeConversionValueLift {
+      get { return (_hasBits8 & 536870912) != 0; }
+    }
+    /// <summary>Clears the value of the "relative_conversion_value_lift" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearRelativeConversionValueLift() {
+      _hasBits8 &= ~536870912;
+    }
+
+    /// <summary>Field number for the "relative_conversion_value_lift_p90_lower_bound" field.</summary>
+    public const int RelativeConversionValueLiftP90LowerBoundFieldNumber = 495;
+    private readonly static double RelativeConversionValueLiftP90LowerBoundDefaultValue = 0D;
+
+    private double relativeConversionValueLiftP90LowerBound_;
+    /// <summary>
+    /// The lower bound of the 90% confidence interval for
+    /// relative_conversion_value_lift. The lowest likely percentage of incremental
+    /// revenue the ads generated.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double RelativeConversionValueLiftP90LowerBound {
+      get { if ((_hasBits8 & 1073741824) != 0) { return relativeConversionValueLiftP90LowerBound_; } else { return RelativeConversionValueLiftP90LowerBoundDefaultValue; } }
+      set {
+        _hasBits8 |= 1073741824;
+        relativeConversionValueLiftP90LowerBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "relative_conversion_value_lift_p90_lower_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasRelativeConversionValueLiftP90LowerBound {
+      get { return (_hasBits8 & 1073741824) != 0; }
+    }
+    /// <summary>Clears the value of the "relative_conversion_value_lift_p90_lower_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearRelativeConversionValueLiftP90LowerBound() {
+      _hasBits8 &= ~1073741824;
+    }
+
+    /// <summary>Field number for the "relative_conversion_value_lift_p90_upper_bound" field.</summary>
+    public const int RelativeConversionValueLiftP90UpperBoundFieldNumber = 496;
+    private readonly static double RelativeConversionValueLiftP90UpperBoundDefaultValue = 0D;
+
+    private double relativeConversionValueLiftP90UpperBound_;
+    /// <summary>
+    /// The upper bound of the 90% confidence interval for
+    /// relative_conversion_value_lift. The highest likely percentage of
+    /// incremental revenue the ads generated.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double RelativeConversionValueLiftP90UpperBound {
+      get { if ((_hasBits8 & -2147483648) != 0) { return relativeConversionValueLiftP90UpperBound_; } else { return RelativeConversionValueLiftP90UpperBoundDefaultValue; } }
+      set {
+        _hasBits8 |= -2147483648;
+        relativeConversionValueLiftP90UpperBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "relative_conversion_value_lift_p90_upper_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasRelativeConversionValueLiftP90UpperBound {
+      get { return (_hasBits8 & -2147483648) != 0; }
+    }
+    /// <summary>Clears the value of the "relative_conversion_value_lift_p90_upper_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearRelativeConversionValueLiftP90UpperBound() {
+      _hasBits8 &= ~-2147483648;
+    }
+
+    /// <summary>Field number for the "absolute_brand_lift" field.</summary>
+    public const int AbsoluteBrandLiftFieldNumber = 497;
+    private readonly static double AbsoluteBrandLiftDefaultValue = 0D;
+
+    private double absoluteBrandLift_;
+    /// <summary>
+    /// These metrics estimate the additional brand lift directly attributable to
+    /// the ad campaign.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double AbsoluteBrandLift {
+      get { if ((_hasBits9 & 1) != 0) { return absoluteBrandLift_; } else { return AbsoluteBrandLiftDefaultValue; } }
+      set {
+        _hasBits9 |= 1;
+        absoluteBrandLift_ = value;
+      }
+    }
+    /// <summary>Gets whether the "absolute_brand_lift" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAbsoluteBrandLift {
+      get { return (_hasBits9 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "absolute_brand_lift" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAbsoluteBrandLift() {
+      _hasBits9 &= ~1;
+    }
+
+    /// <summary>Field number for the "absolute_brand_lift_p90_lower_bound" field.</summary>
+    public const int AbsoluteBrandLiftP90LowerBoundFieldNumber = 498;
+    private readonly static double AbsoluteBrandLiftP90LowerBoundDefaultValue = 0D;
+
+    private double absoluteBrandLiftP90LowerBound_;
+    /// <summary>
+    /// Lower bound of the 90% confidence interval for absolute brand lift.
+    /// The "conservative" estimate of your success. It is the minimum increase
+    /// you can be 90% sure was caused by your ads.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double AbsoluteBrandLiftP90LowerBound {
+      get { if ((_hasBits9 & 2) != 0) { return absoluteBrandLiftP90LowerBound_; } else { return AbsoluteBrandLiftP90LowerBoundDefaultValue; } }
+      set {
+        _hasBits9 |= 2;
+        absoluteBrandLiftP90LowerBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "absolute_brand_lift_p90_lower_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAbsoluteBrandLiftP90LowerBound {
+      get { return (_hasBits9 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "absolute_brand_lift_p90_lower_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAbsoluteBrandLiftP90LowerBound() {
+      _hasBits9 &= ~2;
+    }
+
+    /// <summary>Field number for the "absolute_brand_lift_p90_upper_bound" field.</summary>
+    public const int AbsoluteBrandLiftP90UpperBoundFieldNumber = 499;
+    private readonly static double AbsoluteBrandLiftP90UpperBoundDefaultValue = 0D;
+
+    private double absoluteBrandLiftP90UpperBound_;
+    /// <summary>
+    /// Upper bound of the 90% confidence interval for absolute brand lift.
+    /// The "optimistic" estimate of your success. It is the maximum increase
+    /// likely driven by your ads.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double AbsoluteBrandLiftP90UpperBound {
+      get { if ((_hasBits9 & 4) != 0) { return absoluteBrandLiftP90UpperBound_; } else { return AbsoluteBrandLiftP90UpperBoundDefaultValue; } }
+      set {
+        _hasBits9 |= 4;
+        absoluteBrandLiftP90UpperBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "absolute_brand_lift_p90_upper_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAbsoluteBrandLiftP90UpperBound {
+      get { return (_hasBits9 & 4) != 0; }
+    }
+    /// <summary>Clears the value of the "absolute_brand_lift_p90_upper_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAbsoluteBrandLiftP90UpperBound() {
+      _hasBits9 &= ~4;
+    }
+
+    /// <summary>Field number for the "absolute_brand_lift_p_value" field.</summary>
+    public const int AbsoluteBrandLiftPValueFieldNumber = 500;
+    private readonly static double AbsoluteBrandLiftPValueDefaultValue = 0D;
+
+    private double absoluteBrandLiftPValue_;
+    /// <summary>
+    /// The p-value provides a measure of the statistical significance for the
+    /// detected brand lift. It calculates the likelihood that your incremental
+    /// lift was driven by ad performance rather than being a merely random
+    /// occurrence. Achieving a low score of 0.10 indicates 90%
+    /// confidence that your advertising efforts directly generated the additional
+    /// lift.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double AbsoluteBrandLiftPValue {
+      get { if ((_hasBits9 & 8) != 0) { return absoluteBrandLiftPValue_; } else { return AbsoluteBrandLiftPValueDefaultValue; } }
+      set {
+        _hasBits9 |= 8;
+        absoluteBrandLiftPValue_ = value;
+      }
+    }
+    /// <summary>Gets whether the "absolute_brand_lift_p_value" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAbsoluteBrandLiftPValue {
+      get { return (_hasBits9 & 8) != 0; }
+    }
+    /// <summary>Clears the value of the "absolute_brand_lift_p_value" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAbsoluteBrandLiftPValue() {
+      _hasBits9 &= ~8;
+    }
+
+    /// <summary>Field number for the "brand_lift_baseline_positive_response_rate" field.</summary>
+    public const int BrandLiftBaselinePositiveResponseRateFieldNumber = 501;
+    private readonly static double BrandLiftBaselinePositiveResponseRateDefaultValue = 0D;
+
+    private double brandLiftBaselinePositiveResponseRate_;
+    /// <summary>
+    /// Represents the rate of positive responses that would have occurred
+    /// naturally without ad exposure, based on the behavior of the control group.
+    /// Often referred to as "Control" responses. Provides the baseline
+    /// level of brand perception that occurred naturally.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double BrandLiftBaselinePositiveResponseRate {
+      get { if ((_hasBits9 & 16) != 0) { return brandLiftBaselinePositiveResponseRate_; } else { return BrandLiftBaselinePositiveResponseRateDefaultValue; } }
+      set {
+        _hasBits9 |= 16;
+        brandLiftBaselinePositiveResponseRate_ = value;
+      }
+    }
+    /// <summary>Gets whether the "brand_lift_baseline_positive_response_rate" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasBrandLiftBaselinePositiveResponseRate {
+      get { return (_hasBits9 & 16) != 0; }
+    }
+    /// <summary>Clears the value of the "brand_lift_baseline_positive_response_rate" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearBrandLiftBaselinePositiveResponseRate() {
+      _hasBits9 &= ~16;
+    }
+
+    /// <summary>Field number for the "brand_lift_baseline_positive_response_rate_p90_lower_bound" field.</summary>
+    public const int BrandLiftBaselinePositiveResponseRateP90LowerBoundFieldNumber = 502;
+    private readonly static double BrandLiftBaselinePositiveResponseRateP90LowerBoundDefaultValue = 0D;
+
+    private double brandLiftBaselinePositiveResponseRateP90LowerBound_;
+    /// <summary>
+    /// Lower bound of the 90% confidence interval for the baseline positive
+    /// response rate. Represents the conservative baseline rate of positive brand
+    /// responses you could expect naturally without ad exposure.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double BrandLiftBaselinePositiveResponseRateP90LowerBound {
+      get { if ((_hasBits9 & 32) != 0) { return brandLiftBaselinePositiveResponseRateP90LowerBound_; } else { return BrandLiftBaselinePositiveResponseRateP90LowerBoundDefaultValue; } }
+      set {
+        _hasBits9 |= 32;
+        brandLiftBaselinePositiveResponseRateP90LowerBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "brand_lift_baseline_positive_response_rate_p90_lower_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasBrandLiftBaselinePositiveResponseRateP90LowerBound {
+      get { return (_hasBits9 & 32) != 0; }
+    }
+    /// <summary>Clears the value of the "brand_lift_baseline_positive_response_rate_p90_lower_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearBrandLiftBaselinePositiveResponseRateP90LowerBound() {
+      _hasBits9 &= ~32;
+    }
+
+    /// <summary>Field number for the "brand_lift_baseline_positive_response_rate_p90_upper_bound" field.</summary>
+    public const int BrandLiftBaselinePositiveResponseRateP90UpperBoundFieldNumber = 503;
+    private readonly static double BrandLiftBaselinePositiveResponseRateP90UpperBoundDefaultValue = 0D;
+
+    private double brandLiftBaselinePositiveResponseRateP90UpperBound_;
+    /// <summary>
+    /// Upper bound of the 90% confidence interval for the baseline positive
+    /// response rate. Represents the optimistic baseline rate of positive brand
+    /// responses expected naturally without ad exposure.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double BrandLiftBaselinePositiveResponseRateP90UpperBound {
+      get { if ((_hasBits9 & 64) != 0) { return brandLiftBaselinePositiveResponseRateP90UpperBound_; } else { return BrandLiftBaselinePositiveResponseRateP90UpperBoundDefaultValue; } }
+      set {
+        _hasBits9 |= 64;
+        brandLiftBaselinePositiveResponseRateP90UpperBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "brand_lift_baseline_positive_response_rate_p90_upper_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasBrandLiftBaselinePositiveResponseRateP90UpperBound {
+      get { return (_hasBits9 & 64) != 0; }
+    }
+    /// <summary>Clears the value of the "brand_lift_baseline_positive_response_rate_p90_upper_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearBrandLiftBaselinePositiveResponseRateP90UpperBound() {
+      _hasBits9 &= ~64;
+    }
+
+    /// <summary>Field number for the "brand_lift_exposed_positive_responder_fractional_cookies" field.</summary>
+    public const int BrandLiftExposedPositiveResponderFractionalCookiesFieldNumber = 504;
+    private readonly static double BrandLiftExposedPositiveResponderFractionalCookiesDefaultValue = 0D;
+
+    private double brandLiftExposedPositiveResponderFractionalCookies_;
+    /// <summary>
+    /// Estimated unique users showing interest in the exposed group. This value is
+    /// "fractional" because it represents a statistical estimate rather than a
+    /// raw headcount.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double BrandLiftExposedPositiveResponderFractionalCookies {
+      get { if ((_hasBits9 & 128) != 0) { return brandLiftExposedPositiveResponderFractionalCookies_; } else { return BrandLiftExposedPositiveResponderFractionalCookiesDefaultValue; } }
+      set {
+        _hasBits9 |= 128;
+        brandLiftExposedPositiveResponderFractionalCookies_ = value;
+      }
+    }
+    /// <summary>Gets whether the "brand_lift_exposed_positive_responder_fractional_cookies" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasBrandLiftExposedPositiveResponderFractionalCookies {
+      get { return (_hasBits9 & 128) != 0; }
+    }
+    /// <summary>Clears the value of the "brand_lift_exposed_positive_responder_fractional_cookies" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearBrandLiftExposedPositiveResponderFractionalCookies() {
+      _hasBits9 &= ~128;
+    }
+
+    /// <summary>Field number for the "brand_lift_exposed_positive_responder_fractional_cookies_p90_lower_bound" field.</summary>
+    public const int BrandLiftExposedPositiveResponderFractionalCookiesP90LowerBoundFieldNumber = 505;
+    private readonly static double BrandLiftExposedPositiveResponderFractionalCookiesP90LowerBoundDefaultValue = 0D;
+
+    private double brandLiftExposedPositiveResponderFractionalCookiesP90LowerBound_;
+    /// <summary>
+    /// The lower bound of the 90% confidence interval for the estimated number of
+    /// unique cookies within the ad-exposed group that are estimated to have a
+    /// positive brand attitude, as measured by the Brand Lift survey.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double BrandLiftExposedPositiveResponderFractionalCookiesP90LowerBound {
+      get { if ((_hasBits9 & 256) != 0) { return brandLiftExposedPositiveResponderFractionalCookiesP90LowerBound_; } else { return BrandLiftExposedPositiveResponderFractionalCookiesP90LowerBoundDefaultValue; } }
+      set {
+        _hasBits9 |= 256;
+        brandLiftExposedPositiveResponderFractionalCookiesP90LowerBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "brand_lift_exposed_positive_responder_fractional_cookies_p90_lower_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasBrandLiftExposedPositiveResponderFractionalCookiesP90LowerBound {
+      get { return (_hasBits9 & 256) != 0; }
+    }
+    /// <summary>Clears the value of the "brand_lift_exposed_positive_responder_fractional_cookies_p90_lower_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearBrandLiftExposedPositiveResponderFractionalCookiesP90LowerBound() {
+      _hasBits9 &= ~256;
+    }
+
+    /// <summary>Field number for the "brand_lift_exposed_positive_responder_fractional_cookies_p90_upper_bound" field.</summary>
+    public const int BrandLiftExposedPositiveResponderFractionalCookiesP90UpperBoundFieldNumber = 506;
+    private readonly static double BrandLiftExposedPositiveResponderFractionalCookiesP90UpperBoundDefaultValue = 0D;
+
+    private double brandLiftExposedPositiveResponderFractionalCookiesP90UpperBound_;
+    /// <summary>
+    /// The upper bound of the 90% confidence interval for the estimated number of
+    /// unique cookies within the ad-exposed group that are estimated to have
+    /// experienced a positive shift in brand attitude, as measured by the Brand
+    /// Lift survey.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double BrandLiftExposedPositiveResponderFractionalCookiesP90UpperBound {
+      get { if ((_hasBits9 & 512) != 0) { return brandLiftExposedPositiveResponderFractionalCookiesP90UpperBound_; } else { return BrandLiftExposedPositiveResponderFractionalCookiesP90UpperBoundDefaultValue; } }
+      set {
+        _hasBits9 |= 512;
+        brandLiftExposedPositiveResponderFractionalCookiesP90UpperBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "brand_lift_exposed_positive_responder_fractional_cookies_p90_upper_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasBrandLiftExposedPositiveResponderFractionalCookiesP90UpperBound {
+      get { return (_hasBits9 & 512) != 0; }
+    }
+    /// <summary>Clears the value of the "brand_lift_exposed_positive_responder_fractional_cookies_p90_upper_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearBrandLiftExposedPositiveResponderFractionalCookiesP90UpperBound() {
+      _hasBits9 &= ~512;
+    }
+
+    /// <summary>Field number for the "brand_lift_exposed_positive_response_rate" field.</summary>
+    public const int BrandLiftExposedPositiveResponseRateFieldNumber = 507;
+    private readonly static double BrandLiftExposedPositiveResponseRateDefaultValue = 0D;
+
+    private double brandLiftExposedPositiveResponseRate_;
+    /// <summary>
+    /// Represents the rate of positive responses from users who were exposed to
+    /// the ads. Often referred to as "Treatment" responses. Shows
+    /// total positive response rate when users were exposed to your ads.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double BrandLiftExposedPositiveResponseRate {
+      get { if ((_hasBits9 & 1024) != 0) { return brandLiftExposedPositiveResponseRate_; } else { return BrandLiftExposedPositiveResponseRateDefaultValue; } }
+      set {
+        _hasBits9 |= 1024;
+        brandLiftExposedPositiveResponseRate_ = value;
+      }
+    }
+    /// <summary>Gets whether the "brand_lift_exposed_positive_response_rate" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasBrandLiftExposedPositiveResponseRate {
+      get { return (_hasBits9 & 1024) != 0; }
+    }
+    /// <summary>Clears the value of the "brand_lift_exposed_positive_response_rate" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearBrandLiftExposedPositiveResponseRate() {
+      _hasBits9 &= ~1024;
+    }
+
+    /// <summary>Field number for the "brand_lift_exposed_positive_response_rate_p90_lower_bound" field.</summary>
+    public const int BrandLiftExposedPositiveResponseRateP90LowerBoundFieldNumber = 508;
+    private readonly static double BrandLiftExposedPositiveResponseRateP90LowerBoundDefaultValue = 0D;
+
+    private double brandLiftExposedPositiveResponseRateP90LowerBound_;
+    /// <summary>
+    /// Lower bound of the 90% confidence interval for the exposed positive
+    /// response rate. Represents the conservative estimate of positive brand
+    /// responses among users exposed to your ads.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double BrandLiftExposedPositiveResponseRateP90LowerBound {
+      get { if ((_hasBits9 & 2048) != 0) { return brandLiftExposedPositiveResponseRateP90LowerBound_; } else { return BrandLiftExposedPositiveResponseRateP90LowerBoundDefaultValue; } }
+      set {
+        _hasBits9 |= 2048;
+        brandLiftExposedPositiveResponseRateP90LowerBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "brand_lift_exposed_positive_response_rate_p90_lower_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasBrandLiftExposedPositiveResponseRateP90LowerBound {
+      get { return (_hasBits9 & 2048) != 0; }
+    }
+    /// <summary>Clears the value of the "brand_lift_exposed_positive_response_rate_p90_lower_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearBrandLiftExposedPositiveResponseRateP90LowerBound() {
+      _hasBits9 &= ~2048;
+    }
+
+    /// <summary>Field number for the "brand_lift_exposed_positive_response_rate_p90_upper_bound" field.</summary>
+    public const int BrandLiftExposedPositiveResponseRateP90UpperBoundFieldNumber = 509;
+    private readonly static double BrandLiftExposedPositiveResponseRateP90UpperBoundDefaultValue = 0D;
+
+    private double brandLiftExposedPositiveResponseRateP90UpperBound_;
+    /// <summary>
+    /// Upper bound of the 90% confidence interval for the exposed positive
+    /// response rate. Represents the maximum estimate of positive brand responses
+    /// among users exposed to your ads.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double BrandLiftExposedPositiveResponseRateP90UpperBound {
+      get { if ((_hasBits9 & 4096) != 0) { return brandLiftExposedPositiveResponseRateP90UpperBound_; } else { return BrandLiftExposedPositiveResponseRateP90UpperBoundDefaultValue; } }
+      set {
+        _hasBits9 |= 4096;
+        brandLiftExposedPositiveResponseRateP90UpperBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "brand_lift_exposed_positive_response_rate_p90_upper_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasBrandLiftExposedPositiveResponseRateP90UpperBound {
+      get { return (_hasBits9 & 4096) != 0; }
+    }
+    /// <summary>Clears the value of the "brand_lift_exposed_positive_response_rate_p90_upper_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearBrandLiftExposedPositiveResponseRateP90UpperBound() {
+      _hasBits9 &= ~4096;
+    }
+
+    /// <summary>Field number for the "brand_lift_responses_exposed" field.</summary>
+    public const int BrandLiftResponsesExposedFieldNumber = 510;
+    private readonly static double BrandLiftResponsesExposedDefaultValue = 0D;
+
+    private double brandLiftResponsesExposed_;
+    /// <summary>
+    /// The number of survey responses from users who were exposed to the ads.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double BrandLiftResponsesExposed {
+      get { if ((_hasBits9 & 8192) != 0) { return brandLiftResponsesExposed_; } else { return BrandLiftResponsesExposedDefaultValue; } }
+      set {
+        _hasBits9 |= 8192;
+        brandLiftResponsesExposed_ = value;
+      }
+    }
+    /// <summary>Gets whether the "brand_lift_responses_exposed" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasBrandLiftResponsesExposed {
+      get { return (_hasBits9 & 8192) != 0; }
+    }
+    /// <summary>Clears the value of the "brand_lift_responses_exposed" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearBrandLiftResponsesExposed() {
+      _hasBits9 &= ~8192;
+    }
+
+    /// <summary>Field number for the "brand_lift_responses_suppressed" field.</summary>
+    public const int BrandLiftResponsesSuppressedFieldNumber = 511;
+    private readonly static double BrandLiftResponsesSuppressedDefaultValue = 0D;
+
+    private double brandLiftResponsesSuppressed_;
+    /// <summary>
+    /// Brand lift responses suppressed.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double BrandLiftResponsesSuppressed {
+      get { if ((_hasBits9 & 16384) != 0) { return brandLiftResponsesSuppressed_; } else { return BrandLiftResponsesSuppressedDefaultValue; } }
+      set {
+        _hasBits9 |= 16384;
+        brandLiftResponsesSuppressed_ = value;
+      }
+    }
+    /// <summary>Gets whether the "brand_lift_responses_suppressed" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasBrandLiftResponsesSuppressed {
+      get { return (_hasBits9 & 16384) != 0; }
+    }
+    /// <summary>Clears the value of the "brand_lift_responses_suppressed" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearBrandLiftResponsesSuppressed() {
+      _hasBits9 &= ~16384;
+    }
+
+    /// <summary>Field number for the "brand_lift_suppressed_positive_responder_fractional_cookies" field.</summary>
+    public const int BrandLiftSuppressedPositiveResponderFractionalCookiesFieldNumber = 512;
+    private readonly static double BrandLiftSuppressedPositiveResponderFractionalCookiesDefaultValue = 0D;
+
+    private double brandLiftSuppressedPositiveResponderFractionalCookies_;
+    /// <summary>
+    /// Estimated unique users showing interest in the control/suppressed group.
+    /// This value is "fractional" because it represents a statistical estimate.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double BrandLiftSuppressedPositiveResponderFractionalCookies {
+      get { if ((_hasBits9 & 32768) != 0) { return brandLiftSuppressedPositiveResponderFractionalCookies_; } else { return BrandLiftSuppressedPositiveResponderFractionalCookiesDefaultValue; } }
+      set {
+        _hasBits9 |= 32768;
+        brandLiftSuppressedPositiveResponderFractionalCookies_ = value;
+      }
+    }
+    /// <summary>Gets whether the "brand_lift_suppressed_positive_responder_fractional_cookies" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasBrandLiftSuppressedPositiveResponderFractionalCookies {
+      get { return (_hasBits9 & 32768) != 0; }
+    }
+    /// <summary>Clears the value of the "brand_lift_suppressed_positive_responder_fractional_cookies" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearBrandLiftSuppressedPositiveResponderFractionalCookies() {
+      _hasBits9 &= ~32768;
+    }
+
+    /// <summary>Field number for the "brand_lift_suppressed_positive_responder_fractional_cookies_p90_lower_bound" field.</summary>
+    public const int BrandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBoundFieldNumber = 513;
+    private readonly static double BrandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBoundDefaultValue = 0D;
+
+    private double brandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound_;
+    /// <summary>
+    /// Lower bound of the 90% confidence interval for the estimated number of
+    /// fractional cookies within the control group that are categorized as
+    /// positive responders. This lower bound provides a statistically supported
+    /// minimum value for the total fractional cookies in the control group showing
+    /// a positive brand attitude.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double BrandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound {
+      get { if ((_hasBits9 & 65536) != 0) { return brandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound_; } else { return BrandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBoundDefaultValue; } }
+      set {
+        _hasBits9 |= 65536;
+        brandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "brand_lift_suppressed_positive_responder_fractional_cookies_p90_lower_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasBrandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound {
+      get { return (_hasBits9 & 65536) != 0; }
+    }
+    /// <summary>Clears the value of the "brand_lift_suppressed_positive_responder_fractional_cookies_p90_lower_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearBrandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound() {
+      _hasBits9 &= ~65536;
+    }
+
+    /// <summary>Field number for the "brand_lift_suppressed_positive_responder_fractional_cookies_p90_upper_bound" field.</summary>
+    public const int BrandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBoundFieldNumber = 514;
+    private readonly static double BrandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBoundDefaultValue = 0D;
+
+    private double brandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound_;
+    /// <summary>
+    /// Represents the upper bound of the 90% confidence interval for the
+    /// estimated number of fractional cookies within the control group that are
+    /// categorized as positive responders. This upper bound provides a
+    /// statistically supported maximum value for the total fractional cookies in
+    /// the control group showing a positive brand attitude.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double BrandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound {
+      get { if ((_hasBits9 & 131072) != 0) { return brandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound_; } else { return BrandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBoundDefaultValue; } }
+      set {
+        _hasBits9 |= 131072;
+        brandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "brand_lift_suppressed_positive_responder_fractional_cookies_p90_upper_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasBrandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound {
+      get { return (_hasBits9 & 131072) != 0; }
+    }
+    /// <summary>Clears the value of the "brand_lift_suppressed_positive_responder_fractional_cookies_p90_upper_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearBrandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound() {
+      _hasBits9 &= ~131072;
+    }
+
+    /// <summary>Field number for the "brand_lift_total_responses" field.</summary>
+    public const int BrandLiftTotalResponsesFieldNumber = 515;
+    private readonly static double BrandLiftTotalResponsesDefaultValue = 0D;
+
+    private double brandLiftTotalResponses_;
+    /// <summary>
+    /// The total number of survey responses collected across both the exposed and
+    /// control groups.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double BrandLiftTotalResponses {
+      get { if ((_hasBits9 & 262144) != 0) { return brandLiftTotalResponses_; } else { return BrandLiftTotalResponsesDefaultValue; } }
+      set {
+        _hasBits9 |= 262144;
+        brandLiftTotalResponses_ = value;
+      }
+    }
+    /// <summary>Gets whether the "brand_lift_total_responses" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasBrandLiftTotalResponses {
+      get { return (_hasBits9 & 262144) != 0; }
+    }
+    /// <summary>Clears the value of the "brand_lift_total_responses" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearBrandLiftTotalResponses() {
+      _hasBits9 &= ~262144;
+    }
+
+    /// <summary>Field number for the "cost_per_lifted_cookie" field.</summary>
+    public const int CostPerLiftedCookieFieldNumber = 516;
+    private readonly static double CostPerLiftedCookieDefaultValue = 0D;
+
+    private double costPerLiftedCookie_;
+    /// <summary>
+    /// The estimated cost incurred for each additional person moved to a positive
+    /// brand state by the campaign. Helps assess the
+    /// cost-effectiveness of your ad spend in driving brand growth.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double CostPerLiftedCookie {
+      get { if ((_hasBits9 & 524288) != 0) { return costPerLiftedCookie_; } else { return CostPerLiftedCookieDefaultValue; } }
+      set {
+        _hasBits9 |= 524288;
+        costPerLiftedCookie_ = value;
+      }
+    }
+    /// <summary>Gets whether the "cost_per_lifted_cookie" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasCostPerLiftedCookie {
+      get { return (_hasBits9 & 524288) != 0; }
+    }
+    /// <summary>Clears the value of the "cost_per_lifted_cookie" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearCostPerLiftedCookie() {
+      _hasBits9 &= ~524288;
+    }
+
+    /// <summary>Field number for the "cost_per_lifted_cookie_p90_lower_bound" field.</summary>
+    public const int CostPerLiftedCookieP90LowerBoundFieldNumber = 517;
+    private readonly static double CostPerLiftedCookieP90LowerBoundDefaultValue = 0D;
+
+    private double costPerLiftedCookieP90LowerBound_;
+    /// <summary>
+    /// Lower bound of the 90% confidence interval for the cost per lifted cookie.
+    /// Represents the most optimistic (lowest cost) estimate for moving a user to
+    /// a positive brand state.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double CostPerLiftedCookieP90LowerBound {
+      get { if ((_hasBits9 & 1048576) != 0) { return costPerLiftedCookieP90LowerBound_; } else { return CostPerLiftedCookieP90LowerBoundDefaultValue; } }
+      set {
+        _hasBits9 |= 1048576;
+        costPerLiftedCookieP90LowerBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "cost_per_lifted_cookie_p90_lower_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasCostPerLiftedCookieP90LowerBound {
+      get { return (_hasBits9 & 1048576) != 0; }
+    }
+    /// <summary>Clears the value of the "cost_per_lifted_cookie_p90_lower_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearCostPerLiftedCookieP90LowerBound() {
+      _hasBits9 &= ~1048576;
+    }
+
+    /// <summary>Field number for the "cost_per_lifted_cookie_p90_upper_bound" field.</summary>
+    public const int CostPerLiftedCookieP90UpperBoundFieldNumber = 518;
+    private readonly static double CostPerLiftedCookieP90UpperBoundDefaultValue = 0D;
+
+    private double costPerLiftedCookieP90UpperBound_;
+    /// <summary>
+    /// Upper bound of the 90% confidence interval for the cost per lifted cookie.
+    /// Represents the most conservative (highest cost) estimate for moving a user
+    /// to a positive brand state.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double CostPerLiftedCookieP90UpperBound {
+      get { if ((_hasBits9 & 2097152) != 0) { return costPerLiftedCookieP90UpperBound_; } else { return CostPerLiftedCookieP90UpperBoundDefaultValue; } }
+      set {
+        _hasBits9 |= 2097152;
+        costPerLiftedCookieP90UpperBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "cost_per_lifted_cookie_p90_upper_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasCostPerLiftedCookieP90UpperBound {
+      get { return (_hasBits9 & 2097152) != 0; }
+    }
+    /// <summary>Clears the value of the "cost_per_lifted_cookie_p90_upper_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearCostPerLiftedCookieP90UpperBound() {
+      _hasBits9 &= ~2097152;
+    }
+
+    /// <summary>Field number for the "fractional_lifted_cookies" field.</summary>
+    public const int FractionalLiftedCookiesFieldNumber = 519;
+    private readonly static double FractionalLiftedCookiesDefaultValue = 0D;
+
+    private double fractionalLiftedCookies_;
+    /// <summary>
+    /// Estimated number of unique users who were moved to a positive brand state
+    /// directly by the campaign (that is, lifted users).
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double FractionalLiftedCookies {
+      get { if ((_hasBits9 & 4194304) != 0) { return fractionalLiftedCookies_; } else { return FractionalLiftedCookiesDefaultValue; } }
+      set {
+        _hasBits9 |= 4194304;
+        fractionalLiftedCookies_ = value;
+      }
+    }
+    /// <summary>Gets whether the "fractional_lifted_cookies" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasFractionalLiftedCookies {
+      get { return (_hasBits9 & 4194304) != 0; }
+    }
+    /// <summary>Clears the value of the "fractional_lifted_cookies" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearFractionalLiftedCookies() {
+      _hasBits9 &= ~4194304;
+    }
+
+    /// <summary>Field number for the "fractional_lifted_cookies_p90_lower_bound" field.</summary>
+    public const int FractionalLiftedCookiesP90LowerBoundFieldNumber = 520;
+    private readonly static double FractionalLiftedCookiesP90LowerBoundDefaultValue = 0D;
+
+    private double fractionalLiftedCookiesP90LowerBound_;
+    /// <summary>
+    /// The lower bound of the 90% confidence interval for the
+    /// fractional_lifted_cookies metric. This value represents a statistically
+    /// conservative estimate of the minimum number of cookies for whom a positive
+    /// Brand Lift is attributed to the ad exposure.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double FractionalLiftedCookiesP90LowerBound {
+      get { if ((_hasBits9 & 8388608) != 0) { return fractionalLiftedCookiesP90LowerBound_; } else { return FractionalLiftedCookiesP90LowerBoundDefaultValue; } }
+      set {
+        _hasBits9 |= 8388608;
+        fractionalLiftedCookiesP90LowerBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "fractional_lifted_cookies_p90_lower_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasFractionalLiftedCookiesP90LowerBound {
+      get { return (_hasBits9 & 8388608) != 0; }
+    }
+    /// <summary>Clears the value of the "fractional_lifted_cookies_p90_lower_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearFractionalLiftedCookiesP90LowerBound() {
+      _hasBits9 &= ~8388608;
+    }
+
+    /// <summary>Field number for the "fractional_lifted_cookies_p90_upper_bound" field.</summary>
+    public const int FractionalLiftedCookiesP90UpperBoundFieldNumber = 521;
+    private readonly static double FractionalLiftedCookiesP90UpperBoundDefaultValue = 0D;
+
+    private double fractionalLiftedCookiesP90UpperBound_;
+    /// <summary>
+    /// The upper bound of the 90% confidence interval for the
+    /// fractional_lifted_cookies metric. This value represents a statistically
+    /// optimistic estimate of the maximum number of cookies that may have
+    /// experienced a positive Brand Lift.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double FractionalLiftedCookiesP90UpperBound {
+      get { if ((_hasBits9 & 16777216) != 0) { return fractionalLiftedCookiesP90UpperBound_; } else { return FractionalLiftedCookiesP90UpperBoundDefaultValue; } }
+      set {
+        _hasBits9 |= 16777216;
+        fractionalLiftedCookiesP90UpperBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "fractional_lifted_cookies_p90_upper_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasFractionalLiftedCookiesP90UpperBound {
+      get { return (_hasBits9 & 16777216) != 0; }
+    }
+    /// <summary>Clears the value of the "fractional_lifted_cookies_p90_upper_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearFractionalLiftedCookiesP90UpperBound() {
+      _hasBits9 &= ~16777216;
+    }
+
+    /// <summary>Field number for the "headroom_brand_lift" field.</summary>
+    public const int HeadroomBrandLiftFieldNumber = 522;
+    private readonly static double HeadroomBrandLiftDefaultValue = 0D;
+
+    private double headroomBrandLift_;
+    /// <summary>
+    /// The increase in positive brand responses relative to the total potential
+    /// growth remaining.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double HeadroomBrandLift {
+      get { if ((_hasBits9 & 33554432) != 0) { return headroomBrandLift_; } else { return HeadroomBrandLiftDefaultValue; } }
+      set {
+        _hasBits9 |= 33554432;
+        headroomBrandLift_ = value;
+      }
+    }
+    /// <summary>Gets whether the "headroom_brand_lift" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasHeadroomBrandLift {
+      get { return (_hasBits9 & 33554432) != 0; }
+    }
+    /// <summary>Clears the value of the "headroom_brand_lift" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearHeadroomBrandLift() {
+      _hasBits9 &= ~33554432;
+    }
+
+    /// <summary>Field number for the "headroom_brand_lift_p90_lower_bound" field.</summary>
+    public const int HeadroomBrandLiftP90LowerBoundFieldNumber = 523;
+    private readonly static double HeadroomBrandLiftP90LowerBoundDefaultValue = 0D;
+
+    private double headroomBrandLiftP90LowerBound_;
+    /// <summary>
+    /// Lower bound of the 90% confidence interval for headroom brand lift. The
+    /// minimum growth rate relative to remaining brand potential you can be 90%
+    /// confident was driven by your ads.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double HeadroomBrandLiftP90LowerBound {
+      get { if ((_hasBits9 & 67108864) != 0) { return headroomBrandLiftP90LowerBound_; } else { return HeadroomBrandLiftP90LowerBoundDefaultValue; } }
+      set {
+        _hasBits9 |= 67108864;
+        headroomBrandLiftP90LowerBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "headroom_brand_lift_p90_lower_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasHeadroomBrandLiftP90LowerBound {
+      get { return (_hasBits9 & 67108864) != 0; }
+    }
+    /// <summary>Clears the value of the "headroom_brand_lift_p90_lower_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearHeadroomBrandLiftP90LowerBound() {
+      _hasBits9 &= ~67108864;
+    }
+
+    /// <summary>Field number for the "headroom_brand_lift_p90_upper_bound" field.</summary>
+    public const int HeadroomBrandLiftP90UpperBoundFieldNumber = 524;
+    private readonly static double HeadroomBrandLiftP90UpperBoundDefaultValue = 0D;
+
+    private double headroomBrandLiftP90UpperBound_;
+    /// <summary>
+    /// Upper bound of the 90% confidence interval for headroom brand lift. The
+    /// maximum growth rate relative to remaining brand potential likely driven by
+    /// your ads.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double HeadroomBrandLiftP90UpperBound {
+      get { if ((_hasBits9 & 134217728) != 0) { return headroomBrandLiftP90UpperBound_; } else { return HeadroomBrandLiftP90UpperBoundDefaultValue; } }
+      set {
+        _hasBits9 |= 134217728;
+        headroomBrandLiftP90UpperBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "headroom_brand_lift_p90_upper_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasHeadroomBrandLiftP90UpperBound {
+      get { return (_hasBits9 & 134217728) != 0; }
+    }
+    /// <summary>Clears the value of the "headroom_brand_lift_p90_upper_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearHeadroomBrandLiftP90UpperBound() {
+      _hasBits9 &= ~134217728;
+    }
+
+    /// <summary>Field number for the "relative_brand_lift" field.</summary>
+    public const int RelativeBrandLiftFieldNumber = 525;
+    private readonly static double RelativeBrandLiftDefaultValue = 0D;
+
+    private double relativeBrandLift_;
+    /// <summary>
+    /// The percentage increase in positive responses in the exposed group compared
+    /// to the control group.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double RelativeBrandLift {
+      get { if ((_hasBits9 & 268435456) != 0) { return relativeBrandLift_; } else { return RelativeBrandLiftDefaultValue; } }
+      set {
+        _hasBits9 |= 268435456;
+        relativeBrandLift_ = value;
+      }
+    }
+    /// <summary>Gets whether the "relative_brand_lift" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasRelativeBrandLift {
+      get { return (_hasBits9 & 268435456) != 0; }
+    }
+    /// <summary>Clears the value of the "relative_brand_lift" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearRelativeBrandLift() {
+      _hasBits9 &= ~268435456;
+    }
+
+    /// <summary>Field number for the "relative_brand_lift_p90_lower_bound" field.</summary>
+    public const int RelativeBrandLiftP90LowerBoundFieldNumber = 526;
+    private readonly static double RelativeBrandLiftP90LowerBoundDefaultValue = 0D;
+
+    private double relativeBrandLiftP90LowerBound_;
+    /// <summary>
+    /// The lower bound of the 90% confidence interval for Relative Brand Lift.
+    /// Represents the minimum percentage increase in positive brand perception
+    /// among users who were exposed to the ads, relative to the baseline positive
+    /// response rate observed in the control group.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double RelativeBrandLiftP90LowerBound {
+      get { if ((_hasBits9 & 536870912) != 0) { return relativeBrandLiftP90LowerBound_; } else { return RelativeBrandLiftP90LowerBoundDefaultValue; } }
+      set {
+        _hasBits9 |= 536870912;
+        relativeBrandLiftP90LowerBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "relative_brand_lift_p90_lower_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasRelativeBrandLiftP90LowerBound {
+      get { return (_hasBits9 & 536870912) != 0; }
+    }
+    /// <summary>Clears the value of the "relative_brand_lift_p90_lower_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearRelativeBrandLiftP90LowerBound() {
+      _hasBits9 &= ~536870912;
+    }
+
+    /// <summary>Field number for the "relative_brand_lift_p90_upper_bound" field.</summary>
+    public const int RelativeBrandLiftP90UpperBoundFieldNumber = 527;
+    private readonly static double RelativeBrandLiftP90UpperBoundDefaultValue = 0D;
+
+    private double relativeBrandLiftP90UpperBound_;
+    /// <summary>
+    /// The upper bound of the 90% confidence interval for Relative Brand Lift.
+    /// Represents the maximum percentage increase in positive brand perception in
+    /// the ad-exposed group, relative to the control group's baseline positive
+    /// response rate, at a 90% confidence level.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double RelativeBrandLiftP90UpperBound {
+      get { if ((_hasBits9 & 1073741824) != 0) { return relativeBrandLiftP90UpperBound_; } else { return RelativeBrandLiftP90UpperBoundDefaultValue; } }
+      set {
+        _hasBits9 |= 1073741824;
+        relativeBrandLiftP90UpperBound_ = value;
+      }
+    }
+    /// <summary>Gets whether the "relative_brand_lift_p90_upper_bound" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasRelativeBrandLiftP90UpperBound {
+      get { return (_hasBits9 & 1073741824) != 0; }
+    }
+    /// <summary>Clears the value of the "relative_brand_lift_p90_upper_bound" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearRelativeBrandLiftP90UpperBound() {
+      _hasBits9 &= ~1073741824;
+    }
+
     /// <summary>Field number for the "youtube_comments" field.</summary>
     public const int YoutubeCommentsFieldNumber = 528;
     private readonly static long YoutubeCommentsDefaultValue = 0L;
@@ -10019,9 +12101,9 @@ namespace Google.Ads.GoogleAds.V25.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long YoutubeComments {
-      get { if ((_hasBits8 & 256) != 0) { return youtubeComments_; } else { return YoutubeCommentsDefaultValue; } }
+      get { if ((_hasBits9 & -2147483648) != 0) { return youtubeComments_; } else { return YoutubeCommentsDefaultValue; } }
       set {
-        _hasBits8 |= 256;
+        _hasBits9 |= -2147483648;
         youtubeComments_ = value;
       }
     }
@@ -10029,13 +12111,13 @@ namespace Google.Ads.GoogleAds.V25.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasYoutubeComments {
-      get { return (_hasBits8 & 256) != 0; }
+      get { return (_hasBits9 & -2147483648) != 0; }
     }
     /// <summary>Clears the value of the "youtube_comments" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearYoutubeComments() {
-      _hasBits8 &= ~256;
+      _hasBits9 &= ~-2147483648;
     }
 
     /// <summary>Field number for the "youtube_likes" field.</summary>
@@ -10049,9 +12131,9 @@ namespace Google.Ads.GoogleAds.V25.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long YoutubeLikes {
-      get { if ((_hasBits8 & 512) != 0) { return youtubeLikes_; } else { return YoutubeLikesDefaultValue; } }
+      get { if ((_hasBits10 & 1) != 0) { return youtubeLikes_; } else { return YoutubeLikesDefaultValue; } }
       set {
-        _hasBits8 |= 512;
+        _hasBits10 |= 1;
         youtubeLikes_ = value;
       }
     }
@@ -10059,13 +12141,13 @@ namespace Google.Ads.GoogleAds.V25.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasYoutubeLikes {
-      get { return (_hasBits8 & 512) != 0; }
+      get { return (_hasBits10 & 1) != 0; }
     }
     /// <summary>Clears the value of the "youtube_likes" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearYoutubeLikes() {
-      _hasBits8 &= ~512;
+      _hasBits10 &= ~1;
     }
 
     /// <summary>Field number for the "youtube_shares" field.</summary>
@@ -10079,9 +12161,9 @@ namespace Google.Ads.GoogleAds.V25.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long YoutubeShares {
-      get { if ((_hasBits8 & 1024) != 0) { return youtubeShares_; } else { return YoutubeSharesDefaultValue; } }
+      get { if ((_hasBits10 & 2) != 0) { return youtubeShares_; } else { return YoutubeSharesDefaultValue; } }
       set {
-        _hasBits8 |= 1024;
+        _hasBits10 |= 2;
         youtubeShares_ = value;
       }
     }
@@ -10089,13 +12171,45 @@ namespace Google.Ads.GoogleAds.V25.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasYoutubeShares {
-      get { return (_hasBits8 & 1024) != 0; }
+      get { return (_hasBits10 & 2) != 0; }
     }
     /// <summary>Clears the value of the "youtube_shares" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearYoutubeShares() {
-      _hasBits8 &= ~1024;
+      _hasBits10 &= ~2;
+    }
+
+    /// <summary>Field number for the "original_conversion_value" field.</summary>
+    public const int OriginalConversionValueFieldNumber = 531;
+    private readonly static double OriginalConversionValueDefaultValue = 0D;
+
+    private double originalConversionValue_;
+    /// <summary>
+    /// The original conversion value from biddable conversions. This is the
+    /// unadjusted value of conversions before any value rule adjustments, such as
+    /// conversion value rules or lifecycle goals adjustments are applied.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double OriginalConversionValue {
+      get { if ((_hasBits10 & 4) != 0) { return originalConversionValue_; } else { return OriginalConversionValueDefaultValue; } }
+      set {
+        _hasBits10 |= 4;
+        originalConversionValue_ = value;
+      }
+    }
+    /// <summary>Gets whether the "original_conversion_value" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasOriginalConversionValue {
+      get { return (_hasBits10 & 4) != 0; }
+    }
+    /// <summary>Clears the value of the "original_conversion_value" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearOriginalConversionValue() {
+      _hasBits10 &= ~4;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10391,9 +12505,69 @@ namespace Google.Ads.GoogleAds.V25.Common {
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ConversionValueMarginOfError, other.ConversionValueMarginOfError)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ConversionValuePValue, other.ConversionValuePValue)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ConversionValueChangePointEstimate, other.ConversionValueChangePointEstimate)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(IncrementalConversions, other.IncrementalConversions)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(IncrementalConversionsWinnerScore, other.IncrementalConversionsWinnerScore)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(IncrementalConversionValue, other.IncrementalConversionValue)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(IncrementalConversionValueWinnerScore, other.IncrementalConversionValueWinnerScore)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ConversionLiftBaselineConversions, other.ConversionLiftBaselineConversions)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ConversionLiftBaselineConversionValue, other.ConversionLiftBaselineConversionValue)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ConversionLiftExposedConversions, other.ConversionLiftExposedConversions)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(ConversionLiftExposedConversionValue, other.ConversionLiftExposedConversionValue)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(CostPerIncrementalConversion, other.CostPerIncrementalConversion)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(CostPerIncrementalConversionWinnerScore, other.CostPerIncrementalConversionWinnerScore)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(CostPerIncrementalConversionP90LowerBound, other.CostPerIncrementalConversionP90LowerBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(CostPerIncrementalConversionP90UpperBound, other.CostPerIncrementalConversionP90UpperBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(IncrementalConversionsP90LowerBound, other.IncrementalConversionsP90LowerBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(IncrementalConversionsP90UpperBound, other.IncrementalConversionsP90UpperBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(IncrementalConversionsPValue, other.IncrementalConversionsPValue)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(IncrementalConversionValueP90LowerBound, other.IncrementalConversionValueP90LowerBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(IncrementalConversionValueP90UpperBound, other.IncrementalConversionValueP90UpperBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(IncrementalConversionValuePValue, other.IncrementalConversionValuePValue)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(IncrementalConversionValuePerCost, other.IncrementalConversionValuePerCost)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(IncrementalConversionValuePerCostWinnerScore, other.IncrementalConversionValuePerCostWinnerScore)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(IncrementalConversionValuePerCostP90LowerBound, other.IncrementalConversionValuePerCostP90LowerBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(IncrementalConversionValuePerCostP90UpperBound, other.IncrementalConversionValuePerCostP90UpperBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(RelativeConversionLift, other.RelativeConversionLift)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(RelativeConversionLiftP90LowerBound, other.RelativeConversionLiftP90LowerBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(RelativeConversionLiftP90UpperBound, other.RelativeConversionLiftP90UpperBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(RelativeConversionValueLift, other.RelativeConversionValueLift)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(RelativeConversionValueLiftP90LowerBound, other.RelativeConversionValueLiftP90LowerBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(RelativeConversionValueLiftP90UpperBound, other.RelativeConversionValueLiftP90UpperBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(AbsoluteBrandLift, other.AbsoluteBrandLift)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(AbsoluteBrandLiftP90LowerBound, other.AbsoluteBrandLiftP90LowerBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(AbsoluteBrandLiftP90UpperBound, other.AbsoluteBrandLiftP90UpperBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(AbsoluteBrandLiftPValue, other.AbsoluteBrandLiftPValue)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(BrandLiftBaselinePositiveResponseRate, other.BrandLiftBaselinePositiveResponseRate)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(BrandLiftBaselinePositiveResponseRateP90LowerBound, other.BrandLiftBaselinePositiveResponseRateP90LowerBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(BrandLiftBaselinePositiveResponseRateP90UpperBound, other.BrandLiftBaselinePositiveResponseRateP90UpperBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(BrandLiftExposedPositiveResponderFractionalCookies, other.BrandLiftExposedPositiveResponderFractionalCookies)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(BrandLiftExposedPositiveResponderFractionalCookiesP90LowerBound, other.BrandLiftExposedPositiveResponderFractionalCookiesP90LowerBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(BrandLiftExposedPositiveResponderFractionalCookiesP90UpperBound, other.BrandLiftExposedPositiveResponderFractionalCookiesP90UpperBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(BrandLiftExposedPositiveResponseRate, other.BrandLiftExposedPositiveResponseRate)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(BrandLiftExposedPositiveResponseRateP90LowerBound, other.BrandLiftExposedPositiveResponseRateP90LowerBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(BrandLiftExposedPositiveResponseRateP90UpperBound, other.BrandLiftExposedPositiveResponseRateP90UpperBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(BrandLiftResponsesExposed, other.BrandLiftResponsesExposed)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(BrandLiftResponsesSuppressed, other.BrandLiftResponsesSuppressed)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(BrandLiftSuppressedPositiveResponderFractionalCookies, other.BrandLiftSuppressedPositiveResponderFractionalCookies)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(BrandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound, other.BrandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(BrandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound, other.BrandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(BrandLiftTotalResponses, other.BrandLiftTotalResponses)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(CostPerLiftedCookie, other.CostPerLiftedCookie)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(CostPerLiftedCookieP90LowerBound, other.CostPerLiftedCookieP90LowerBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(CostPerLiftedCookieP90UpperBound, other.CostPerLiftedCookieP90UpperBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(FractionalLiftedCookies, other.FractionalLiftedCookies)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(FractionalLiftedCookiesP90LowerBound, other.FractionalLiftedCookiesP90LowerBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(FractionalLiftedCookiesP90UpperBound, other.FractionalLiftedCookiesP90UpperBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(HeadroomBrandLift, other.HeadroomBrandLift)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(HeadroomBrandLiftP90LowerBound, other.HeadroomBrandLiftP90LowerBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(HeadroomBrandLiftP90UpperBound, other.HeadroomBrandLiftP90UpperBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(RelativeBrandLift, other.RelativeBrandLift)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(RelativeBrandLiftP90LowerBound, other.RelativeBrandLiftP90LowerBound)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(RelativeBrandLiftP90UpperBound, other.RelativeBrandLiftP90UpperBound)) return false;
       if (YoutubeComments != other.YoutubeComments) return false;
       if (YoutubeLikes != other.YoutubeLikes) return false;
       if (YoutubeShares != other.YoutubeShares) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(OriginalConversionValue, other.OriginalConversionValue)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -10679,9 +12853,69 @@ namespace Google.Ads.GoogleAds.V25.Common {
       if (HasConversionValueMarginOfError) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ConversionValueMarginOfError);
       if (HasConversionValuePValue) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ConversionValuePValue);
       if (HasConversionValueChangePointEstimate) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ConversionValueChangePointEstimate);
+      if (HasIncrementalConversions) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(IncrementalConversions);
+      if (HasIncrementalConversionsWinnerScore) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(IncrementalConversionsWinnerScore);
+      if (HasIncrementalConversionValue) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(IncrementalConversionValue);
+      if (HasIncrementalConversionValueWinnerScore) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(IncrementalConversionValueWinnerScore);
+      if (HasConversionLiftBaselineConversions) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ConversionLiftBaselineConversions);
+      if (HasConversionLiftBaselineConversionValue) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ConversionLiftBaselineConversionValue);
+      if (HasConversionLiftExposedConversions) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ConversionLiftExposedConversions);
+      if (HasConversionLiftExposedConversionValue) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(ConversionLiftExposedConversionValue);
+      if (HasCostPerIncrementalConversion) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(CostPerIncrementalConversion);
+      if (HasCostPerIncrementalConversionWinnerScore) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(CostPerIncrementalConversionWinnerScore);
+      if (HasCostPerIncrementalConversionP90LowerBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(CostPerIncrementalConversionP90LowerBound);
+      if (HasCostPerIncrementalConversionP90UpperBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(CostPerIncrementalConversionP90UpperBound);
+      if (HasIncrementalConversionsP90LowerBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(IncrementalConversionsP90LowerBound);
+      if (HasIncrementalConversionsP90UpperBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(IncrementalConversionsP90UpperBound);
+      if (HasIncrementalConversionsPValue) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(IncrementalConversionsPValue);
+      if (HasIncrementalConversionValueP90LowerBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(IncrementalConversionValueP90LowerBound);
+      if (HasIncrementalConversionValueP90UpperBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(IncrementalConversionValueP90UpperBound);
+      if (HasIncrementalConversionValuePValue) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(IncrementalConversionValuePValue);
+      if (HasIncrementalConversionValuePerCost) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(IncrementalConversionValuePerCost);
+      if (HasIncrementalConversionValuePerCostWinnerScore) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(IncrementalConversionValuePerCostWinnerScore);
+      if (HasIncrementalConversionValuePerCostP90LowerBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(IncrementalConversionValuePerCostP90LowerBound);
+      if (HasIncrementalConversionValuePerCostP90UpperBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(IncrementalConversionValuePerCostP90UpperBound);
+      if (HasRelativeConversionLift) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(RelativeConversionLift);
+      if (HasRelativeConversionLiftP90LowerBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(RelativeConversionLiftP90LowerBound);
+      if (HasRelativeConversionLiftP90UpperBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(RelativeConversionLiftP90UpperBound);
+      if (HasRelativeConversionValueLift) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(RelativeConversionValueLift);
+      if (HasRelativeConversionValueLiftP90LowerBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(RelativeConversionValueLiftP90LowerBound);
+      if (HasRelativeConversionValueLiftP90UpperBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(RelativeConversionValueLiftP90UpperBound);
+      if (HasAbsoluteBrandLift) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(AbsoluteBrandLift);
+      if (HasAbsoluteBrandLiftP90LowerBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(AbsoluteBrandLiftP90LowerBound);
+      if (HasAbsoluteBrandLiftP90UpperBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(AbsoluteBrandLiftP90UpperBound);
+      if (HasAbsoluteBrandLiftPValue) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(AbsoluteBrandLiftPValue);
+      if (HasBrandLiftBaselinePositiveResponseRate) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(BrandLiftBaselinePositiveResponseRate);
+      if (HasBrandLiftBaselinePositiveResponseRateP90LowerBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(BrandLiftBaselinePositiveResponseRateP90LowerBound);
+      if (HasBrandLiftBaselinePositiveResponseRateP90UpperBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(BrandLiftBaselinePositiveResponseRateP90UpperBound);
+      if (HasBrandLiftExposedPositiveResponderFractionalCookies) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(BrandLiftExposedPositiveResponderFractionalCookies);
+      if (HasBrandLiftExposedPositiveResponderFractionalCookiesP90LowerBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(BrandLiftExposedPositiveResponderFractionalCookiesP90LowerBound);
+      if (HasBrandLiftExposedPositiveResponderFractionalCookiesP90UpperBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(BrandLiftExposedPositiveResponderFractionalCookiesP90UpperBound);
+      if (HasBrandLiftExposedPositiveResponseRate) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(BrandLiftExposedPositiveResponseRate);
+      if (HasBrandLiftExposedPositiveResponseRateP90LowerBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(BrandLiftExposedPositiveResponseRateP90LowerBound);
+      if (HasBrandLiftExposedPositiveResponseRateP90UpperBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(BrandLiftExposedPositiveResponseRateP90UpperBound);
+      if (HasBrandLiftResponsesExposed) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(BrandLiftResponsesExposed);
+      if (HasBrandLiftResponsesSuppressed) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(BrandLiftResponsesSuppressed);
+      if (HasBrandLiftSuppressedPositiveResponderFractionalCookies) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(BrandLiftSuppressedPositiveResponderFractionalCookies);
+      if (HasBrandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(BrandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound);
+      if (HasBrandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(BrandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound);
+      if (HasBrandLiftTotalResponses) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(BrandLiftTotalResponses);
+      if (HasCostPerLiftedCookie) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(CostPerLiftedCookie);
+      if (HasCostPerLiftedCookieP90LowerBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(CostPerLiftedCookieP90LowerBound);
+      if (HasCostPerLiftedCookieP90UpperBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(CostPerLiftedCookieP90UpperBound);
+      if (HasFractionalLiftedCookies) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(FractionalLiftedCookies);
+      if (HasFractionalLiftedCookiesP90LowerBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(FractionalLiftedCookiesP90LowerBound);
+      if (HasFractionalLiftedCookiesP90UpperBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(FractionalLiftedCookiesP90UpperBound);
+      if (HasHeadroomBrandLift) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(HeadroomBrandLift);
+      if (HasHeadroomBrandLiftP90LowerBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(HeadroomBrandLiftP90LowerBound);
+      if (HasHeadroomBrandLiftP90UpperBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(HeadroomBrandLiftP90UpperBound);
+      if (HasRelativeBrandLift) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(RelativeBrandLift);
+      if (HasRelativeBrandLiftP90LowerBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(RelativeBrandLiftP90LowerBound);
+      if (HasRelativeBrandLiftP90UpperBound) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(RelativeBrandLiftP90UpperBound);
       if (HasYoutubeComments) hash ^= YoutubeComments.GetHashCode();
       if (HasYoutubeLikes) hash ^= YoutubeLikes.GetHashCode();
       if (HasYoutubeShares) hash ^= YoutubeShares.GetHashCode();
+      if (HasOriginalConversionValue) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(OriginalConversionValue);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -11806,6 +14040,226 @@ namespace Google.Ads.GoogleAds.V25.Common {
         output.WriteRawTag(193, 29);
         output.WriteDouble(ConversionValueChangePointEstimate);
       }
+      if (HasIncrementalConversions) {
+        output.WriteRawTag(201, 29);
+        output.WriteDouble(IncrementalConversions);
+      }
+      if (HasIncrementalConversionValue) {
+        output.WriteRawTag(209, 29);
+        output.WriteDouble(IncrementalConversionValue);
+      }
+      if (HasConversionLiftBaselineConversions) {
+        output.WriteRawTag(217, 29);
+        output.WriteDouble(ConversionLiftBaselineConversions);
+      }
+      if (HasConversionLiftBaselineConversionValue) {
+        output.WriteRawTag(225, 29);
+        output.WriteDouble(ConversionLiftBaselineConversionValue);
+      }
+      if (HasConversionLiftExposedConversions) {
+        output.WriteRawTag(233, 29);
+        output.WriteDouble(ConversionLiftExposedConversions);
+      }
+      if (HasConversionLiftExposedConversionValue) {
+        output.WriteRawTag(241, 29);
+        output.WriteDouble(ConversionLiftExposedConversionValue);
+      }
+      if (HasCostPerIncrementalConversion) {
+        output.WriteRawTag(249, 29);
+        output.WriteDouble(CostPerIncrementalConversion);
+      }
+      if (HasCostPerIncrementalConversionP90LowerBound) {
+        output.WriteRawTag(129, 30);
+        output.WriteDouble(CostPerIncrementalConversionP90LowerBound);
+      }
+      if (HasCostPerIncrementalConversionP90UpperBound) {
+        output.WriteRawTag(137, 30);
+        output.WriteDouble(CostPerIncrementalConversionP90UpperBound);
+      }
+      if (HasIncrementalConversionsP90LowerBound) {
+        output.WriteRawTag(145, 30);
+        output.WriteDouble(IncrementalConversionsP90LowerBound);
+      }
+      if (HasIncrementalConversionsP90UpperBound) {
+        output.WriteRawTag(153, 30);
+        output.WriteDouble(IncrementalConversionsP90UpperBound);
+      }
+      if (HasIncrementalConversionsPValue) {
+        output.WriteRawTag(161, 30);
+        output.WriteDouble(IncrementalConversionsPValue);
+      }
+      if (HasIncrementalConversionValueP90LowerBound) {
+        output.WriteRawTag(169, 30);
+        output.WriteDouble(IncrementalConversionValueP90LowerBound);
+      }
+      if (HasIncrementalConversionValueP90UpperBound) {
+        output.WriteRawTag(177, 30);
+        output.WriteDouble(IncrementalConversionValueP90UpperBound);
+      }
+      if (HasIncrementalConversionValuePValue) {
+        output.WriteRawTag(185, 30);
+        output.WriteDouble(IncrementalConversionValuePValue);
+      }
+      if (HasIncrementalConversionValuePerCost) {
+        output.WriteRawTag(193, 30);
+        output.WriteDouble(IncrementalConversionValuePerCost);
+      }
+      if (HasIncrementalConversionValuePerCostP90LowerBound) {
+        output.WriteRawTag(201, 30);
+        output.WriteDouble(IncrementalConversionValuePerCostP90LowerBound);
+      }
+      if (HasIncrementalConversionValuePerCostP90UpperBound) {
+        output.WriteRawTag(209, 30);
+        output.WriteDouble(IncrementalConversionValuePerCostP90UpperBound);
+      }
+      if (HasRelativeConversionLift) {
+        output.WriteRawTag(217, 30);
+        output.WriteDouble(RelativeConversionLift);
+      }
+      if (HasRelativeConversionLiftP90LowerBound) {
+        output.WriteRawTag(225, 30);
+        output.WriteDouble(RelativeConversionLiftP90LowerBound);
+      }
+      if (HasRelativeConversionLiftP90UpperBound) {
+        output.WriteRawTag(233, 30);
+        output.WriteDouble(RelativeConversionLiftP90UpperBound);
+      }
+      if (HasRelativeConversionValueLift) {
+        output.WriteRawTag(241, 30);
+        output.WriteDouble(RelativeConversionValueLift);
+      }
+      if (HasRelativeConversionValueLiftP90LowerBound) {
+        output.WriteRawTag(249, 30);
+        output.WriteDouble(RelativeConversionValueLiftP90LowerBound);
+      }
+      if (HasRelativeConversionValueLiftP90UpperBound) {
+        output.WriteRawTag(129, 31);
+        output.WriteDouble(RelativeConversionValueLiftP90UpperBound);
+      }
+      if (HasAbsoluteBrandLift) {
+        output.WriteRawTag(137, 31);
+        output.WriteDouble(AbsoluteBrandLift);
+      }
+      if (HasAbsoluteBrandLiftP90LowerBound) {
+        output.WriteRawTag(145, 31);
+        output.WriteDouble(AbsoluteBrandLiftP90LowerBound);
+      }
+      if (HasAbsoluteBrandLiftP90UpperBound) {
+        output.WriteRawTag(153, 31);
+        output.WriteDouble(AbsoluteBrandLiftP90UpperBound);
+      }
+      if (HasAbsoluteBrandLiftPValue) {
+        output.WriteRawTag(161, 31);
+        output.WriteDouble(AbsoluteBrandLiftPValue);
+      }
+      if (HasBrandLiftBaselinePositiveResponseRate) {
+        output.WriteRawTag(169, 31);
+        output.WriteDouble(BrandLiftBaselinePositiveResponseRate);
+      }
+      if (HasBrandLiftBaselinePositiveResponseRateP90LowerBound) {
+        output.WriteRawTag(177, 31);
+        output.WriteDouble(BrandLiftBaselinePositiveResponseRateP90LowerBound);
+      }
+      if (HasBrandLiftBaselinePositiveResponseRateP90UpperBound) {
+        output.WriteRawTag(185, 31);
+        output.WriteDouble(BrandLiftBaselinePositiveResponseRateP90UpperBound);
+      }
+      if (HasBrandLiftExposedPositiveResponderFractionalCookies) {
+        output.WriteRawTag(193, 31);
+        output.WriteDouble(BrandLiftExposedPositiveResponderFractionalCookies);
+      }
+      if (HasBrandLiftExposedPositiveResponderFractionalCookiesP90LowerBound) {
+        output.WriteRawTag(201, 31);
+        output.WriteDouble(BrandLiftExposedPositiveResponderFractionalCookiesP90LowerBound);
+      }
+      if (HasBrandLiftExposedPositiveResponderFractionalCookiesP90UpperBound) {
+        output.WriteRawTag(209, 31);
+        output.WriteDouble(BrandLiftExposedPositiveResponderFractionalCookiesP90UpperBound);
+      }
+      if (HasBrandLiftExposedPositiveResponseRate) {
+        output.WriteRawTag(217, 31);
+        output.WriteDouble(BrandLiftExposedPositiveResponseRate);
+      }
+      if (HasBrandLiftExposedPositiveResponseRateP90LowerBound) {
+        output.WriteRawTag(225, 31);
+        output.WriteDouble(BrandLiftExposedPositiveResponseRateP90LowerBound);
+      }
+      if (HasBrandLiftExposedPositiveResponseRateP90UpperBound) {
+        output.WriteRawTag(233, 31);
+        output.WriteDouble(BrandLiftExposedPositiveResponseRateP90UpperBound);
+      }
+      if (HasBrandLiftResponsesExposed) {
+        output.WriteRawTag(241, 31);
+        output.WriteDouble(BrandLiftResponsesExposed);
+      }
+      if (HasBrandLiftResponsesSuppressed) {
+        output.WriteRawTag(249, 31);
+        output.WriteDouble(BrandLiftResponsesSuppressed);
+      }
+      if (HasBrandLiftSuppressedPositiveResponderFractionalCookies) {
+        output.WriteRawTag(129, 32);
+        output.WriteDouble(BrandLiftSuppressedPositiveResponderFractionalCookies);
+      }
+      if (HasBrandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound) {
+        output.WriteRawTag(137, 32);
+        output.WriteDouble(BrandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound);
+      }
+      if (HasBrandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound) {
+        output.WriteRawTag(145, 32);
+        output.WriteDouble(BrandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound);
+      }
+      if (HasBrandLiftTotalResponses) {
+        output.WriteRawTag(153, 32);
+        output.WriteDouble(BrandLiftTotalResponses);
+      }
+      if (HasCostPerLiftedCookie) {
+        output.WriteRawTag(161, 32);
+        output.WriteDouble(CostPerLiftedCookie);
+      }
+      if (HasCostPerLiftedCookieP90LowerBound) {
+        output.WriteRawTag(169, 32);
+        output.WriteDouble(CostPerLiftedCookieP90LowerBound);
+      }
+      if (HasCostPerLiftedCookieP90UpperBound) {
+        output.WriteRawTag(177, 32);
+        output.WriteDouble(CostPerLiftedCookieP90UpperBound);
+      }
+      if (HasFractionalLiftedCookies) {
+        output.WriteRawTag(185, 32);
+        output.WriteDouble(FractionalLiftedCookies);
+      }
+      if (HasFractionalLiftedCookiesP90LowerBound) {
+        output.WriteRawTag(193, 32);
+        output.WriteDouble(FractionalLiftedCookiesP90LowerBound);
+      }
+      if (HasFractionalLiftedCookiesP90UpperBound) {
+        output.WriteRawTag(201, 32);
+        output.WriteDouble(FractionalLiftedCookiesP90UpperBound);
+      }
+      if (HasHeadroomBrandLift) {
+        output.WriteRawTag(209, 32);
+        output.WriteDouble(HeadroomBrandLift);
+      }
+      if (HasHeadroomBrandLiftP90LowerBound) {
+        output.WriteRawTag(217, 32);
+        output.WriteDouble(HeadroomBrandLiftP90LowerBound);
+      }
+      if (HasHeadroomBrandLiftP90UpperBound) {
+        output.WriteRawTag(225, 32);
+        output.WriteDouble(HeadroomBrandLiftP90UpperBound);
+      }
+      if (HasRelativeBrandLift) {
+        output.WriteRawTag(233, 32);
+        output.WriteDouble(RelativeBrandLift);
+      }
+      if (HasRelativeBrandLiftP90LowerBound) {
+        output.WriteRawTag(241, 32);
+        output.WriteDouble(RelativeBrandLiftP90LowerBound);
+      }
+      if (HasRelativeBrandLiftP90UpperBound) {
+        output.WriteRawTag(249, 32);
+        output.WriteDouble(RelativeBrandLiftP90UpperBound);
+      }
       if (HasYoutubeComments) {
         output.WriteRawTag(128, 33);
         output.WriteInt64(YoutubeComments);
@@ -11817,6 +14271,26 @@ namespace Google.Ads.GoogleAds.V25.Common {
       if (HasYoutubeShares) {
         output.WriteRawTag(144, 33);
         output.WriteInt64(YoutubeShares);
+      }
+      if (HasOriginalConversionValue) {
+        output.WriteRawTag(153, 33);
+        output.WriteDouble(OriginalConversionValue);
+      }
+      if (HasIncrementalConversionsWinnerScore) {
+        output.WriteRawTag(201, 37);
+        output.WriteDouble(IncrementalConversionsWinnerScore);
+      }
+      if (HasIncrementalConversionValueWinnerScore) {
+        output.WriteRawTag(209, 37);
+        output.WriteDouble(IncrementalConversionValueWinnerScore);
+      }
+      if (HasCostPerIncrementalConversionWinnerScore) {
+        output.WriteRawTag(217, 37);
+        output.WriteDouble(CostPerIncrementalConversionWinnerScore);
+      }
+      if (HasIncrementalConversionValuePerCostWinnerScore) {
+        output.WriteRawTag(225, 37);
+        output.WriteDouble(IncrementalConversionValuePerCostWinnerScore);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -12934,6 +15408,226 @@ namespace Google.Ads.GoogleAds.V25.Common {
         output.WriteRawTag(193, 29);
         output.WriteDouble(ConversionValueChangePointEstimate);
       }
+      if (HasIncrementalConversions) {
+        output.WriteRawTag(201, 29);
+        output.WriteDouble(IncrementalConversions);
+      }
+      if (HasIncrementalConversionValue) {
+        output.WriteRawTag(209, 29);
+        output.WriteDouble(IncrementalConversionValue);
+      }
+      if (HasConversionLiftBaselineConversions) {
+        output.WriteRawTag(217, 29);
+        output.WriteDouble(ConversionLiftBaselineConversions);
+      }
+      if (HasConversionLiftBaselineConversionValue) {
+        output.WriteRawTag(225, 29);
+        output.WriteDouble(ConversionLiftBaselineConversionValue);
+      }
+      if (HasConversionLiftExposedConversions) {
+        output.WriteRawTag(233, 29);
+        output.WriteDouble(ConversionLiftExposedConversions);
+      }
+      if (HasConversionLiftExposedConversionValue) {
+        output.WriteRawTag(241, 29);
+        output.WriteDouble(ConversionLiftExposedConversionValue);
+      }
+      if (HasCostPerIncrementalConversion) {
+        output.WriteRawTag(249, 29);
+        output.WriteDouble(CostPerIncrementalConversion);
+      }
+      if (HasCostPerIncrementalConversionP90LowerBound) {
+        output.WriteRawTag(129, 30);
+        output.WriteDouble(CostPerIncrementalConversionP90LowerBound);
+      }
+      if (HasCostPerIncrementalConversionP90UpperBound) {
+        output.WriteRawTag(137, 30);
+        output.WriteDouble(CostPerIncrementalConversionP90UpperBound);
+      }
+      if (HasIncrementalConversionsP90LowerBound) {
+        output.WriteRawTag(145, 30);
+        output.WriteDouble(IncrementalConversionsP90LowerBound);
+      }
+      if (HasIncrementalConversionsP90UpperBound) {
+        output.WriteRawTag(153, 30);
+        output.WriteDouble(IncrementalConversionsP90UpperBound);
+      }
+      if (HasIncrementalConversionsPValue) {
+        output.WriteRawTag(161, 30);
+        output.WriteDouble(IncrementalConversionsPValue);
+      }
+      if (HasIncrementalConversionValueP90LowerBound) {
+        output.WriteRawTag(169, 30);
+        output.WriteDouble(IncrementalConversionValueP90LowerBound);
+      }
+      if (HasIncrementalConversionValueP90UpperBound) {
+        output.WriteRawTag(177, 30);
+        output.WriteDouble(IncrementalConversionValueP90UpperBound);
+      }
+      if (HasIncrementalConversionValuePValue) {
+        output.WriteRawTag(185, 30);
+        output.WriteDouble(IncrementalConversionValuePValue);
+      }
+      if (HasIncrementalConversionValuePerCost) {
+        output.WriteRawTag(193, 30);
+        output.WriteDouble(IncrementalConversionValuePerCost);
+      }
+      if (HasIncrementalConversionValuePerCostP90LowerBound) {
+        output.WriteRawTag(201, 30);
+        output.WriteDouble(IncrementalConversionValuePerCostP90LowerBound);
+      }
+      if (HasIncrementalConversionValuePerCostP90UpperBound) {
+        output.WriteRawTag(209, 30);
+        output.WriteDouble(IncrementalConversionValuePerCostP90UpperBound);
+      }
+      if (HasRelativeConversionLift) {
+        output.WriteRawTag(217, 30);
+        output.WriteDouble(RelativeConversionLift);
+      }
+      if (HasRelativeConversionLiftP90LowerBound) {
+        output.WriteRawTag(225, 30);
+        output.WriteDouble(RelativeConversionLiftP90LowerBound);
+      }
+      if (HasRelativeConversionLiftP90UpperBound) {
+        output.WriteRawTag(233, 30);
+        output.WriteDouble(RelativeConversionLiftP90UpperBound);
+      }
+      if (HasRelativeConversionValueLift) {
+        output.WriteRawTag(241, 30);
+        output.WriteDouble(RelativeConversionValueLift);
+      }
+      if (HasRelativeConversionValueLiftP90LowerBound) {
+        output.WriteRawTag(249, 30);
+        output.WriteDouble(RelativeConversionValueLiftP90LowerBound);
+      }
+      if (HasRelativeConversionValueLiftP90UpperBound) {
+        output.WriteRawTag(129, 31);
+        output.WriteDouble(RelativeConversionValueLiftP90UpperBound);
+      }
+      if (HasAbsoluteBrandLift) {
+        output.WriteRawTag(137, 31);
+        output.WriteDouble(AbsoluteBrandLift);
+      }
+      if (HasAbsoluteBrandLiftP90LowerBound) {
+        output.WriteRawTag(145, 31);
+        output.WriteDouble(AbsoluteBrandLiftP90LowerBound);
+      }
+      if (HasAbsoluteBrandLiftP90UpperBound) {
+        output.WriteRawTag(153, 31);
+        output.WriteDouble(AbsoluteBrandLiftP90UpperBound);
+      }
+      if (HasAbsoluteBrandLiftPValue) {
+        output.WriteRawTag(161, 31);
+        output.WriteDouble(AbsoluteBrandLiftPValue);
+      }
+      if (HasBrandLiftBaselinePositiveResponseRate) {
+        output.WriteRawTag(169, 31);
+        output.WriteDouble(BrandLiftBaselinePositiveResponseRate);
+      }
+      if (HasBrandLiftBaselinePositiveResponseRateP90LowerBound) {
+        output.WriteRawTag(177, 31);
+        output.WriteDouble(BrandLiftBaselinePositiveResponseRateP90LowerBound);
+      }
+      if (HasBrandLiftBaselinePositiveResponseRateP90UpperBound) {
+        output.WriteRawTag(185, 31);
+        output.WriteDouble(BrandLiftBaselinePositiveResponseRateP90UpperBound);
+      }
+      if (HasBrandLiftExposedPositiveResponderFractionalCookies) {
+        output.WriteRawTag(193, 31);
+        output.WriteDouble(BrandLiftExposedPositiveResponderFractionalCookies);
+      }
+      if (HasBrandLiftExposedPositiveResponderFractionalCookiesP90LowerBound) {
+        output.WriteRawTag(201, 31);
+        output.WriteDouble(BrandLiftExposedPositiveResponderFractionalCookiesP90LowerBound);
+      }
+      if (HasBrandLiftExposedPositiveResponderFractionalCookiesP90UpperBound) {
+        output.WriteRawTag(209, 31);
+        output.WriteDouble(BrandLiftExposedPositiveResponderFractionalCookiesP90UpperBound);
+      }
+      if (HasBrandLiftExposedPositiveResponseRate) {
+        output.WriteRawTag(217, 31);
+        output.WriteDouble(BrandLiftExposedPositiveResponseRate);
+      }
+      if (HasBrandLiftExposedPositiveResponseRateP90LowerBound) {
+        output.WriteRawTag(225, 31);
+        output.WriteDouble(BrandLiftExposedPositiveResponseRateP90LowerBound);
+      }
+      if (HasBrandLiftExposedPositiveResponseRateP90UpperBound) {
+        output.WriteRawTag(233, 31);
+        output.WriteDouble(BrandLiftExposedPositiveResponseRateP90UpperBound);
+      }
+      if (HasBrandLiftResponsesExposed) {
+        output.WriteRawTag(241, 31);
+        output.WriteDouble(BrandLiftResponsesExposed);
+      }
+      if (HasBrandLiftResponsesSuppressed) {
+        output.WriteRawTag(249, 31);
+        output.WriteDouble(BrandLiftResponsesSuppressed);
+      }
+      if (HasBrandLiftSuppressedPositiveResponderFractionalCookies) {
+        output.WriteRawTag(129, 32);
+        output.WriteDouble(BrandLiftSuppressedPositiveResponderFractionalCookies);
+      }
+      if (HasBrandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound) {
+        output.WriteRawTag(137, 32);
+        output.WriteDouble(BrandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound);
+      }
+      if (HasBrandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound) {
+        output.WriteRawTag(145, 32);
+        output.WriteDouble(BrandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound);
+      }
+      if (HasBrandLiftTotalResponses) {
+        output.WriteRawTag(153, 32);
+        output.WriteDouble(BrandLiftTotalResponses);
+      }
+      if (HasCostPerLiftedCookie) {
+        output.WriteRawTag(161, 32);
+        output.WriteDouble(CostPerLiftedCookie);
+      }
+      if (HasCostPerLiftedCookieP90LowerBound) {
+        output.WriteRawTag(169, 32);
+        output.WriteDouble(CostPerLiftedCookieP90LowerBound);
+      }
+      if (HasCostPerLiftedCookieP90UpperBound) {
+        output.WriteRawTag(177, 32);
+        output.WriteDouble(CostPerLiftedCookieP90UpperBound);
+      }
+      if (HasFractionalLiftedCookies) {
+        output.WriteRawTag(185, 32);
+        output.WriteDouble(FractionalLiftedCookies);
+      }
+      if (HasFractionalLiftedCookiesP90LowerBound) {
+        output.WriteRawTag(193, 32);
+        output.WriteDouble(FractionalLiftedCookiesP90LowerBound);
+      }
+      if (HasFractionalLiftedCookiesP90UpperBound) {
+        output.WriteRawTag(201, 32);
+        output.WriteDouble(FractionalLiftedCookiesP90UpperBound);
+      }
+      if (HasHeadroomBrandLift) {
+        output.WriteRawTag(209, 32);
+        output.WriteDouble(HeadroomBrandLift);
+      }
+      if (HasHeadroomBrandLiftP90LowerBound) {
+        output.WriteRawTag(217, 32);
+        output.WriteDouble(HeadroomBrandLiftP90LowerBound);
+      }
+      if (HasHeadroomBrandLiftP90UpperBound) {
+        output.WriteRawTag(225, 32);
+        output.WriteDouble(HeadroomBrandLiftP90UpperBound);
+      }
+      if (HasRelativeBrandLift) {
+        output.WriteRawTag(233, 32);
+        output.WriteDouble(RelativeBrandLift);
+      }
+      if (HasRelativeBrandLiftP90LowerBound) {
+        output.WriteRawTag(241, 32);
+        output.WriteDouble(RelativeBrandLiftP90LowerBound);
+      }
+      if (HasRelativeBrandLiftP90UpperBound) {
+        output.WriteRawTag(249, 32);
+        output.WriteDouble(RelativeBrandLiftP90UpperBound);
+      }
       if (HasYoutubeComments) {
         output.WriteRawTag(128, 33);
         output.WriteInt64(YoutubeComments);
@@ -12945,6 +15639,26 @@ namespace Google.Ads.GoogleAds.V25.Common {
       if (HasYoutubeShares) {
         output.WriteRawTag(144, 33);
         output.WriteInt64(YoutubeShares);
+      }
+      if (HasOriginalConversionValue) {
+        output.WriteRawTag(153, 33);
+        output.WriteDouble(OriginalConversionValue);
+      }
+      if (HasIncrementalConversionsWinnerScore) {
+        output.WriteRawTag(201, 37);
+        output.WriteDouble(IncrementalConversionsWinnerScore);
+      }
+      if (HasIncrementalConversionValueWinnerScore) {
+        output.WriteRawTag(209, 37);
+        output.WriteDouble(IncrementalConversionValueWinnerScore);
+      }
+      if (HasCostPerIncrementalConversionWinnerScore) {
+        output.WriteRawTag(217, 37);
+        output.WriteDouble(CostPerIncrementalConversionWinnerScore);
+      }
+      if (HasIncrementalConversionValuePerCostWinnerScore) {
+        output.WriteRawTag(225, 37);
+        output.WriteDouble(IncrementalConversionValuePerCostWinnerScore);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -13786,6 +16500,183 @@ namespace Google.Ads.GoogleAds.V25.Common {
       if (HasConversionValueChangePointEstimate) {
         size += 2 + 8;
       }
+      if (HasIncrementalConversions) {
+        size += 2 + 8;
+      }
+      if (HasIncrementalConversionsWinnerScore) {
+        size += 2 + 8;
+      }
+      if (HasIncrementalConversionValue) {
+        size += 2 + 8;
+      }
+      if (HasIncrementalConversionValueWinnerScore) {
+        size += 2 + 8;
+      }
+      if (HasConversionLiftBaselineConversions) {
+        size += 2 + 8;
+      }
+      if (HasConversionLiftBaselineConversionValue) {
+        size += 2 + 8;
+      }
+      if (HasConversionLiftExposedConversions) {
+        size += 2 + 8;
+      }
+      if (HasConversionLiftExposedConversionValue) {
+        size += 2 + 8;
+      }
+      if (HasCostPerIncrementalConversion) {
+        size += 2 + 8;
+      }
+      if (HasCostPerIncrementalConversionWinnerScore) {
+        size += 2 + 8;
+      }
+      if (HasCostPerIncrementalConversionP90LowerBound) {
+        size += 2 + 8;
+      }
+      if (HasCostPerIncrementalConversionP90UpperBound) {
+        size += 2 + 8;
+      }
+      if (HasIncrementalConversionsP90LowerBound) {
+        size += 2 + 8;
+      }
+      if (HasIncrementalConversionsP90UpperBound) {
+        size += 2 + 8;
+      }
+      if (HasIncrementalConversionsPValue) {
+        size += 2 + 8;
+      }
+      if (HasIncrementalConversionValueP90LowerBound) {
+        size += 2 + 8;
+      }
+      if (HasIncrementalConversionValueP90UpperBound) {
+        size += 2 + 8;
+      }
+      if (HasIncrementalConversionValuePValue) {
+        size += 2 + 8;
+      }
+      if (HasIncrementalConversionValuePerCost) {
+        size += 2 + 8;
+      }
+      if (HasIncrementalConversionValuePerCostWinnerScore) {
+        size += 2 + 8;
+      }
+      if (HasIncrementalConversionValuePerCostP90LowerBound) {
+        size += 2 + 8;
+      }
+      if (HasIncrementalConversionValuePerCostP90UpperBound) {
+        size += 2 + 8;
+      }
+      if (HasRelativeConversionLift) {
+        size += 2 + 8;
+      }
+      if (HasRelativeConversionLiftP90LowerBound) {
+        size += 2 + 8;
+      }
+      if (HasRelativeConversionLiftP90UpperBound) {
+        size += 2 + 8;
+      }
+      if (HasRelativeConversionValueLift) {
+        size += 2 + 8;
+      }
+      if (HasRelativeConversionValueLiftP90LowerBound) {
+        size += 2 + 8;
+      }
+      if (HasRelativeConversionValueLiftP90UpperBound) {
+        size += 2 + 8;
+      }
+      if (HasAbsoluteBrandLift) {
+        size += 2 + 8;
+      }
+      if (HasAbsoluteBrandLiftP90LowerBound) {
+        size += 2 + 8;
+      }
+      if (HasAbsoluteBrandLiftP90UpperBound) {
+        size += 2 + 8;
+      }
+      if (HasAbsoluteBrandLiftPValue) {
+        size += 2 + 8;
+      }
+      if (HasBrandLiftBaselinePositiveResponseRate) {
+        size += 2 + 8;
+      }
+      if (HasBrandLiftBaselinePositiveResponseRateP90LowerBound) {
+        size += 2 + 8;
+      }
+      if (HasBrandLiftBaselinePositiveResponseRateP90UpperBound) {
+        size += 2 + 8;
+      }
+      if (HasBrandLiftExposedPositiveResponderFractionalCookies) {
+        size += 2 + 8;
+      }
+      if (HasBrandLiftExposedPositiveResponderFractionalCookiesP90LowerBound) {
+        size += 2 + 8;
+      }
+      if (HasBrandLiftExposedPositiveResponderFractionalCookiesP90UpperBound) {
+        size += 2 + 8;
+      }
+      if (HasBrandLiftExposedPositiveResponseRate) {
+        size += 2 + 8;
+      }
+      if (HasBrandLiftExposedPositiveResponseRateP90LowerBound) {
+        size += 2 + 8;
+      }
+      if (HasBrandLiftExposedPositiveResponseRateP90UpperBound) {
+        size += 2 + 8;
+      }
+      if (HasBrandLiftResponsesExposed) {
+        size += 2 + 8;
+      }
+      if (HasBrandLiftResponsesSuppressed) {
+        size += 2 + 8;
+      }
+      if (HasBrandLiftSuppressedPositiveResponderFractionalCookies) {
+        size += 2 + 8;
+      }
+      if (HasBrandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound) {
+        size += 2 + 8;
+      }
+      if (HasBrandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound) {
+        size += 2 + 8;
+      }
+      if (HasBrandLiftTotalResponses) {
+        size += 2 + 8;
+      }
+      if (HasCostPerLiftedCookie) {
+        size += 2 + 8;
+      }
+      if (HasCostPerLiftedCookieP90LowerBound) {
+        size += 2 + 8;
+      }
+      if (HasCostPerLiftedCookieP90UpperBound) {
+        size += 2 + 8;
+      }
+      if (HasFractionalLiftedCookies) {
+        size += 2 + 8;
+      }
+      if (HasFractionalLiftedCookiesP90LowerBound) {
+        size += 2 + 8;
+      }
+      if (HasFractionalLiftedCookiesP90UpperBound) {
+        size += 2 + 8;
+      }
+      if (HasHeadroomBrandLift) {
+        size += 2 + 8;
+      }
+      if (HasHeadroomBrandLiftP90LowerBound) {
+        size += 2 + 8;
+      }
+      if (HasHeadroomBrandLiftP90UpperBound) {
+        size += 2 + 8;
+      }
+      if (HasRelativeBrandLift) {
+        size += 2 + 8;
+      }
+      if (HasRelativeBrandLiftP90LowerBound) {
+        size += 2 + 8;
+      }
+      if (HasRelativeBrandLiftP90UpperBound) {
+        size += 2 + 8;
+      }
       if (HasYoutubeComments) {
         size += 2 + pb::CodedOutputStream.ComputeInt64Size(YoutubeComments);
       }
@@ -13794,6 +16685,9 @@ namespace Google.Ads.GoogleAds.V25.Common {
       }
       if (HasYoutubeShares) {
         size += 2 + pb::CodedOutputStream.ComputeInt64Size(YoutubeShares);
+      }
+      if (HasOriginalConversionValue) {
+        size += 2 + 8;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -14640,6 +17534,183 @@ namespace Google.Ads.GoogleAds.V25.Common {
       if (other.HasConversionValueChangePointEstimate) {
         ConversionValueChangePointEstimate = other.ConversionValueChangePointEstimate;
       }
+      if (other.HasIncrementalConversions) {
+        IncrementalConversions = other.IncrementalConversions;
+      }
+      if (other.HasIncrementalConversionsWinnerScore) {
+        IncrementalConversionsWinnerScore = other.IncrementalConversionsWinnerScore;
+      }
+      if (other.HasIncrementalConversionValue) {
+        IncrementalConversionValue = other.IncrementalConversionValue;
+      }
+      if (other.HasIncrementalConversionValueWinnerScore) {
+        IncrementalConversionValueWinnerScore = other.IncrementalConversionValueWinnerScore;
+      }
+      if (other.HasConversionLiftBaselineConversions) {
+        ConversionLiftBaselineConversions = other.ConversionLiftBaselineConversions;
+      }
+      if (other.HasConversionLiftBaselineConversionValue) {
+        ConversionLiftBaselineConversionValue = other.ConversionLiftBaselineConversionValue;
+      }
+      if (other.HasConversionLiftExposedConversions) {
+        ConversionLiftExposedConversions = other.ConversionLiftExposedConversions;
+      }
+      if (other.HasConversionLiftExposedConversionValue) {
+        ConversionLiftExposedConversionValue = other.ConversionLiftExposedConversionValue;
+      }
+      if (other.HasCostPerIncrementalConversion) {
+        CostPerIncrementalConversion = other.CostPerIncrementalConversion;
+      }
+      if (other.HasCostPerIncrementalConversionWinnerScore) {
+        CostPerIncrementalConversionWinnerScore = other.CostPerIncrementalConversionWinnerScore;
+      }
+      if (other.HasCostPerIncrementalConversionP90LowerBound) {
+        CostPerIncrementalConversionP90LowerBound = other.CostPerIncrementalConversionP90LowerBound;
+      }
+      if (other.HasCostPerIncrementalConversionP90UpperBound) {
+        CostPerIncrementalConversionP90UpperBound = other.CostPerIncrementalConversionP90UpperBound;
+      }
+      if (other.HasIncrementalConversionsP90LowerBound) {
+        IncrementalConversionsP90LowerBound = other.IncrementalConversionsP90LowerBound;
+      }
+      if (other.HasIncrementalConversionsP90UpperBound) {
+        IncrementalConversionsP90UpperBound = other.IncrementalConversionsP90UpperBound;
+      }
+      if (other.HasIncrementalConversionsPValue) {
+        IncrementalConversionsPValue = other.IncrementalConversionsPValue;
+      }
+      if (other.HasIncrementalConversionValueP90LowerBound) {
+        IncrementalConversionValueP90LowerBound = other.IncrementalConversionValueP90LowerBound;
+      }
+      if (other.HasIncrementalConversionValueP90UpperBound) {
+        IncrementalConversionValueP90UpperBound = other.IncrementalConversionValueP90UpperBound;
+      }
+      if (other.HasIncrementalConversionValuePValue) {
+        IncrementalConversionValuePValue = other.IncrementalConversionValuePValue;
+      }
+      if (other.HasIncrementalConversionValuePerCost) {
+        IncrementalConversionValuePerCost = other.IncrementalConversionValuePerCost;
+      }
+      if (other.HasIncrementalConversionValuePerCostWinnerScore) {
+        IncrementalConversionValuePerCostWinnerScore = other.IncrementalConversionValuePerCostWinnerScore;
+      }
+      if (other.HasIncrementalConversionValuePerCostP90LowerBound) {
+        IncrementalConversionValuePerCostP90LowerBound = other.IncrementalConversionValuePerCostP90LowerBound;
+      }
+      if (other.HasIncrementalConversionValuePerCostP90UpperBound) {
+        IncrementalConversionValuePerCostP90UpperBound = other.IncrementalConversionValuePerCostP90UpperBound;
+      }
+      if (other.HasRelativeConversionLift) {
+        RelativeConversionLift = other.RelativeConversionLift;
+      }
+      if (other.HasRelativeConversionLiftP90LowerBound) {
+        RelativeConversionLiftP90LowerBound = other.RelativeConversionLiftP90LowerBound;
+      }
+      if (other.HasRelativeConversionLiftP90UpperBound) {
+        RelativeConversionLiftP90UpperBound = other.RelativeConversionLiftP90UpperBound;
+      }
+      if (other.HasRelativeConversionValueLift) {
+        RelativeConversionValueLift = other.RelativeConversionValueLift;
+      }
+      if (other.HasRelativeConversionValueLiftP90LowerBound) {
+        RelativeConversionValueLiftP90LowerBound = other.RelativeConversionValueLiftP90LowerBound;
+      }
+      if (other.HasRelativeConversionValueLiftP90UpperBound) {
+        RelativeConversionValueLiftP90UpperBound = other.RelativeConversionValueLiftP90UpperBound;
+      }
+      if (other.HasAbsoluteBrandLift) {
+        AbsoluteBrandLift = other.AbsoluteBrandLift;
+      }
+      if (other.HasAbsoluteBrandLiftP90LowerBound) {
+        AbsoluteBrandLiftP90LowerBound = other.AbsoluteBrandLiftP90LowerBound;
+      }
+      if (other.HasAbsoluteBrandLiftP90UpperBound) {
+        AbsoluteBrandLiftP90UpperBound = other.AbsoluteBrandLiftP90UpperBound;
+      }
+      if (other.HasAbsoluteBrandLiftPValue) {
+        AbsoluteBrandLiftPValue = other.AbsoluteBrandLiftPValue;
+      }
+      if (other.HasBrandLiftBaselinePositiveResponseRate) {
+        BrandLiftBaselinePositiveResponseRate = other.BrandLiftBaselinePositiveResponseRate;
+      }
+      if (other.HasBrandLiftBaselinePositiveResponseRateP90LowerBound) {
+        BrandLiftBaselinePositiveResponseRateP90LowerBound = other.BrandLiftBaselinePositiveResponseRateP90LowerBound;
+      }
+      if (other.HasBrandLiftBaselinePositiveResponseRateP90UpperBound) {
+        BrandLiftBaselinePositiveResponseRateP90UpperBound = other.BrandLiftBaselinePositiveResponseRateP90UpperBound;
+      }
+      if (other.HasBrandLiftExposedPositiveResponderFractionalCookies) {
+        BrandLiftExposedPositiveResponderFractionalCookies = other.BrandLiftExposedPositiveResponderFractionalCookies;
+      }
+      if (other.HasBrandLiftExposedPositiveResponderFractionalCookiesP90LowerBound) {
+        BrandLiftExposedPositiveResponderFractionalCookiesP90LowerBound = other.BrandLiftExposedPositiveResponderFractionalCookiesP90LowerBound;
+      }
+      if (other.HasBrandLiftExposedPositiveResponderFractionalCookiesP90UpperBound) {
+        BrandLiftExposedPositiveResponderFractionalCookiesP90UpperBound = other.BrandLiftExposedPositiveResponderFractionalCookiesP90UpperBound;
+      }
+      if (other.HasBrandLiftExposedPositiveResponseRate) {
+        BrandLiftExposedPositiveResponseRate = other.BrandLiftExposedPositiveResponseRate;
+      }
+      if (other.HasBrandLiftExposedPositiveResponseRateP90LowerBound) {
+        BrandLiftExposedPositiveResponseRateP90LowerBound = other.BrandLiftExposedPositiveResponseRateP90LowerBound;
+      }
+      if (other.HasBrandLiftExposedPositiveResponseRateP90UpperBound) {
+        BrandLiftExposedPositiveResponseRateP90UpperBound = other.BrandLiftExposedPositiveResponseRateP90UpperBound;
+      }
+      if (other.HasBrandLiftResponsesExposed) {
+        BrandLiftResponsesExposed = other.BrandLiftResponsesExposed;
+      }
+      if (other.HasBrandLiftResponsesSuppressed) {
+        BrandLiftResponsesSuppressed = other.BrandLiftResponsesSuppressed;
+      }
+      if (other.HasBrandLiftSuppressedPositiveResponderFractionalCookies) {
+        BrandLiftSuppressedPositiveResponderFractionalCookies = other.BrandLiftSuppressedPositiveResponderFractionalCookies;
+      }
+      if (other.HasBrandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound) {
+        BrandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound = other.BrandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound;
+      }
+      if (other.HasBrandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound) {
+        BrandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound = other.BrandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound;
+      }
+      if (other.HasBrandLiftTotalResponses) {
+        BrandLiftTotalResponses = other.BrandLiftTotalResponses;
+      }
+      if (other.HasCostPerLiftedCookie) {
+        CostPerLiftedCookie = other.CostPerLiftedCookie;
+      }
+      if (other.HasCostPerLiftedCookieP90LowerBound) {
+        CostPerLiftedCookieP90LowerBound = other.CostPerLiftedCookieP90LowerBound;
+      }
+      if (other.HasCostPerLiftedCookieP90UpperBound) {
+        CostPerLiftedCookieP90UpperBound = other.CostPerLiftedCookieP90UpperBound;
+      }
+      if (other.HasFractionalLiftedCookies) {
+        FractionalLiftedCookies = other.FractionalLiftedCookies;
+      }
+      if (other.HasFractionalLiftedCookiesP90LowerBound) {
+        FractionalLiftedCookiesP90LowerBound = other.FractionalLiftedCookiesP90LowerBound;
+      }
+      if (other.HasFractionalLiftedCookiesP90UpperBound) {
+        FractionalLiftedCookiesP90UpperBound = other.FractionalLiftedCookiesP90UpperBound;
+      }
+      if (other.HasHeadroomBrandLift) {
+        HeadroomBrandLift = other.HeadroomBrandLift;
+      }
+      if (other.HasHeadroomBrandLiftP90LowerBound) {
+        HeadroomBrandLiftP90LowerBound = other.HeadroomBrandLiftP90LowerBound;
+      }
+      if (other.HasHeadroomBrandLiftP90UpperBound) {
+        HeadroomBrandLiftP90UpperBound = other.HeadroomBrandLiftP90UpperBound;
+      }
+      if (other.HasRelativeBrandLift) {
+        RelativeBrandLift = other.RelativeBrandLift;
+      }
+      if (other.HasRelativeBrandLiftP90LowerBound) {
+        RelativeBrandLiftP90LowerBound = other.RelativeBrandLiftP90LowerBound;
+      }
+      if (other.HasRelativeBrandLiftP90UpperBound) {
+        RelativeBrandLiftP90UpperBound = other.RelativeBrandLiftP90UpperBound;
+      }
       if (other.HasYoutubeComments) {
         YoutubeComments = other.YoutubeComments;
       }
@@ -14648,6 +17719,9 @@ namespace Google.Ads.GoogleAds.V25.Common {
       }
       if (other.HasYoutubeShares) {
         YoutubeShares = other.YoutubeShares;
+      }
+      if (other.HasOriginalConversionValue) {
+        OriginalConversionValue = other.OriginalConversionValue;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -15784,6 +18858,226 @@ namespace Google.Ads.GoogleAds.V25.Common {
             ConversionValueChangePointEstimate = input.ReadDouble();
             break;
           }
+          case 3785: {
+            IncrementalConversions = input.ReadDouble();
+            break;
+          }
+          case 3793: {
+            IncrementalConversionValue = input.ReadDouble();
+            break;
+          }
+          case 3801: {
+            ConversionLiftBaselineConversions = input.ReadDouble();
+            break;
+          }
+          case 3809: {
+            ConversionLiftBaselineConversionValue = input.ReadDouble();
+            break;
+          }
+          case 3817: {
+            ConversionLiftExposedConversions = input.ReadDouble();
+            break;
+          }
+          case 3825: {
+            ConversionLiftExposedConversionValue = input.ReadDouble();
+            break;
+          }
+          case 3833: {
+            CostPerIncrementalConversion = input.ReadDouble();
+            break;
+          }
+          case 3841: {
+            CostPerIncrementalConversionP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 3849: {
+            CostPerIncrementalConversionP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 3857: {
+            IncrementalConversionsP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 3865: {
+            IncrementalConversionsP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 3873: {
+            IncrementalConversionsPValue = input.ReadDouble();
+            break;
+          }
+          case 3881: {
+            IncrementalConversionValueP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 3889: {
+            IncrementalConversionValueP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 3897: {
+            IncrementalConversionValuePValue = input.ReadDouble();
+            break;
+          }
+          case 3905: {
+            IncrementalConversionValuePerCost = input.ReadDouble();
+            break;
+          }
+          case 3913: {
+            IncrementalConversionValuePerCostP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 3921: {
+            IncrementalConversionValuePerCostP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 3929: {
+            RelativeConversionLift = input.ReadDouble();
+            break;
+          }
+          case 3937: {
+            RelativeConversionLiftP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 3945: {
+            RelativeConversionLiftP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 3953: {
+            RelativeConversionValueLift = input.ReadDouble();
+            break;
+          }
+          case 3961: {
+            RelativeConversionValueLiftP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 3969: {
+            RelativeConversionValueLiftP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 3977: {
+            AbsoluteBrandLift = input.ReadDouble();
+            break;
+          }
+          case 3985: {
+            AbsoluteBrandLiftP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 3993: {
+            AbsoluteBrandLiftP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 4001: {
+            AbsoluteBrandLiftPValue = input.ReadDouble();
+            break;
+          }
+          case 4009: {
+            BrandLiftBaselinePositiveResponseRate = input.ReadDouble();
+            break;
+          }
+          case 4017: {
+            BrandLiftBaselinePositiveResponseRateP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 4025: {
+            BrandLiftBaselinePositiveResponseRateP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 4033: {
+            BrandLiftExposedPositiveResponderFractionalCookies = input.ReadDouble();
+            break;
+          }
+          case 4041: {
+            BrandLiftExposedPositiveResponderFractionalCookiesP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 4049: {
+            BrandLiftExposedPositiveResponderFractionalCookiesP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 4057: {
+            BrandLiftExposedPositiveResponseRate = input.ReadDouble();
+            break;
+          }
+          case 4065: {
+            BrandLiftExposedPositiveResponseRateP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 4073: {
+            BrandLiftExposedPositiveResponseRateP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 4081: {
+            BrandLiftResponsesExposed = input.ReadDouble();
+            break;
+          }
+          case 4089: {
+            BrandLiftResponsesSuppressed = input.ReadDouble();
+            break;
+          }
+          case 4097: {
+            BrandLiftSuppressedPositiveResponderFractionalCookies = input.ReadDouble();
+            break;
+          }
+          case 4105: {
+            BrandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 4113: {
+            BrandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 4121: {
+            BrandLiftTotalResponses = input.ReadDouble();
+            break;
+          }
+          case 4129: {
+            CostPerLiftedCookie = input.ReadDouble();
+            break;
+          }
+          case 4137: {
+            CostPerLiftedCookieP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 4145: {
+            CostPerLiftedCookieP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 4153: {
+            FractionalLiftedCookies = input.ReadDouble();
+            break;
+          }
+          case 4161: {
+            FractionalLiftedCookiesP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 4169: {
+            FractionalLiftedCookiesP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 4177: {
+            HeadroomBrandLift = input.ReadDouble();
+            break;
+          }
+          case 4185: {
+            HeadroomBrandLiftP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 4193: {
+            HeadroomBrandLiftP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 4201: {
+            RelativeBrandLift = input.ReadDouble();
+            break;
+          }
+          case 4209: {
+            RelativeBrandLiftP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 4217: {
+            RelativeBrandLiftP90UpperBound = input.ReadDouble();
+            break;
+          }
           case 4224: {
             YoutubeComments = input.ReadInt64();
             break;
@@ -15794,6 +19088,26 @@ namespace Google.Ads.GoogleAds.V25.Common {
           }
           case 4240: {
             YoutubeShares = input.ReadInt64();
+            break;
+          }
+          case 4249: {
+            OriginalConversionValue = input.ReadDouble();
+            break;
+          }
+          case 4809: {
+            IncrementalConversionsWinnerScore = input.ReadDouble();
+            break;
+          }
+          case 4817: {
+            IncrementalConversionValueWinnerScore = input.ReadDouble();
+            break;
+          }
+          case 4825: {
+            CostPerIncrementalConversionWinnerScore = input.ReadDouble();
+            break;
+          }
+          case 4833: {
+            IncrementalConversionValuePerCostWinnerScore = input.ReadDouble();
             break;
           }
         }
@@ -16931,6 +20245,226 @@ namespace Google.Ads.GoogleAds.V25.Common {
             ConversionValueChangePointEstimate = input.ReadDouble();
             break;
           }
+          case 3785: {
+            IncrementalConversions = input.ReadDouble();
+            break;
+          }
+          case 3793: {
+            IncrementalConversionValue = input.ReadDouble();
+            break;
+          }
+          case 3801: {
+            ConversionLiftBaselineConversions = input.ReadDouble();
+            break;
+          }
+          case 3809: {
+            ConversionLiftBaselineConversionValue = input.ReadDouble();
+            break;
+          }
+          case 3817: {
+            ConversionLiftExposedConversions = input.ReadDouble();
+            break;
+          }
+          case 3825: {
+            ConversionLiftExposedConversionValue = input.ReadDouble();
+            break;
+          }
+          case 3833: {
+            CostPerIncrementalConversion = input.ReadDouble();
+            break;
+          }
+          case 3841: {
+            CostPerIncrementalConversionP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 3849: {
+            CostPerIncrementalConversionP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 3857: {
+            IncrementalConversionsP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 3865: {
+            IncrementalConversionsP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 3873: {
+            IncrementalConversionsPValue = input.ReadDouble();
+            break;
+          }
+          case 3881: {
+            IncrementalConversionValueP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 3889: {
+            IncrementalConversionValueP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 3897: {
+            IncrementalConversionValuePValue = input.ReadDouble();
+            break;
+          }
+          case 3905: {
+            IncrementalConversionValuePerCost = input.ReadDouble();
+            break;
+          }
+          case 3913: {
+            IncrementalConversionValuePerCostP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 3921: {
+            IncrementalConversionValuePerCostP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 3929: {
+            RelativeConversionLift = input.ReadDouble();
+            break;
+          }
+          case 3937: {
+            RelativeConversionLiftP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 3945: {
+            RelativeConversionLiftP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 3953: {
+            RelativeConversionValueLift = input.ReadDouble();
+            break;
+          }
+          case 3961: {
+            RelativeConversionValueLiftP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 3969: {
+            RelativeConversionValueLiftP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 3977: {
+            AbsoluteBrandLift = input.ReadDouble();
+            break;
+          }
+          case 3985: {
+            AbsoluteBrandLiftP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 3993: {
+            AbsoluteBrandLiftP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 4001: {
+            AbsoluteBrandLiftPValue = input.ReadDouble();
+            break;
+          }
+          case 4009: {
+            BrandLiftBaselinePositiveResponseRate = input.ReadDouble();
+            break;
+          }
+          case 4017: {
+            BrandLiftBaselinePositiveResponseRateP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 4025: {
+            BrandLiftBaselinePositiveResponseRateP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 4033: {
+            BrandLiftExposedPositiveResponderFractionalCookies = input.ReadDouble();
+            break;
+          }
+          case 4041: {
+            BrandLiftExposedPositiveResponderFractionalCookiesP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 4049: {
+            BrandLiftExposedPositiveResponderFractionalCookiesP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 4057: {
+            BrandLiftExposedPositiveResponseRate = input.ReadDouble();
+            break;
+          }
+          case 4065: {
+            BrandLiftExposedPositiveResponseRateP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 4073: {
+            BrandLiftExposedPositiveResponseRateP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 4081: {
+            BrandLiftResponsesExposed = input.ReadDouble();
+            break;
+          }
+          case 4089: {
+            BrandLiftResponsesSuppressed = input.ReadDouble();
+            break;
+          }
+          case 4097: {
+            BrandLiftSuppressedPositiveResponderFractionalCookies = input.ReadDouble();
+            break;
+          }
+          case 4105: {
+            BrandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 4113: {
+            BrandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 4121: {
+            BrandLiftTotalResponses = input.ReadDouble();
+            break;
+          }
+          case 4129: {
+            CostPerLiftedCookie = input.ReadDouble();
+            break;
+          }
+          case 4137: {
+            CostPerLiftedCookieP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 4145: {
+            CostPerLiftedCookieP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 4153: {
+            FractionalLiftedCookies = input.ReadDouble();
+            break;
+          }
+          case 4161: {
+            FractionalLiftedCookiesP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 4169: {
+            FractionalLiftedCookiesP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 4177: {
+            HeadroomBrandLift = input.ReadDouble();
+            break;
+          }
+          case 4185: {
+            HeadroomBrandLiftP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 4193: {
+            HeadroomBrandLiftP90UpperBound = input.ReadDouble();
+            break;
+          }
+          case 4201: {
+            RelativeBrandLift = input.ReadDouble();
+            break;
+          }
+          case 4209: {
+            RelativeBrandLiftP90LowerBound = input.ReadDouble();
+            break;
+          }
+          case 4217: {
+            RelativeBrandLiftP90UpperBound = input.ReadDouble();
+            break;
+          }
           case 4224: {
             YoutubeComments = input.ReadInt64();
             break;
@@ -16941,6 +20475,26 @@ namespace Google.Ads.GoogleAds.V25.Common {
           }
           case 4240: {
             YoutubeShares = input.ReadInt64();
+            break;
+          }
+          case 4249: {
+            OriginalConversionValue = input.ReadDouble();
+            break;
+          }
+          case 4809: {
+            IncrementalConversionsWinnerScore = input.ReadDouble();
+            break;
+          }
+          case 4817: {
+            IncrementalConversionValueWinnerScore = input.ReadDouble();
+            break;
+          }
+          case 4825: {
+            CostPerIncrementalConversionWinnerScore = input.ReadDouble();
+            break;
+          }
+          case 4833: {
+            IncrementalConversionValuePerCostWinnerScore = input.ReadDouble();
             break;
           }
         }

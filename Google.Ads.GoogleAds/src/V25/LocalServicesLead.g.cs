@@ -859,9 +859,11 @@ namespace Google.Ads.GoogleAds.V25.Resources {
     private string phoneNumber_ = "";
     /// <summary>
     /// Output only. Phone number of the consumer for the lead. This can be a real
-    /// phone number or a tracking number. The phone number is returned in E164
-    /// format. See https://support.google.com/google-ads/answer/16355235?hl=en to
-    /// learn more. Example: +16504519489.
+    /// phone number or a tracking number. The phone number is returned in E.164
+    /// format. See https://support.google.com/google-ads/answer/16355235 to learn
+    /// more.
+    ///
+    /// Example: "+16504519489".
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

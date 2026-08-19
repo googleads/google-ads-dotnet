@@ -867,6 +867,14 @@ namespace Google.Ads.GoogleAds.V25.Services
         /// SUB_COUNTRY_LOCATION, YOUTUBE_CHANNEL, YOUTUBE_LINEUP,
         /// AFFINITY_USER_INTEREST, IN_MARKET_USER_INTEREST, LIFE_EVENT_USER_INTEREST,
         /// PARENTAL_STATUS, INCOME_RANGE, AGE_RANGE, GENDER, and USER_LIST.
+        /// 
+        /// Note that when an
+        /// [InsightsAudience.user_list][google.ads.googleads.v25.services.InsightsAudience.user_list]
+        /// is requested:
+        /// - Only the following dimensions are supported: AFFINITY_USER_INTEREST,
+        /// AGE_RANGE, GENDER, IN_MARKET_USER_INTEREST
+        /// - The score field is omitted from AudienceCompositionMetrics of the
+        /// GenerateAudienceCompositionInsightsResponse.
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>The RPC response.</returns>
@@ -909,6 +917,14 @@ namespace Google.Ads.GoogleAds.V25.Services
         /// SUB_COUNTRY_LOCATION, YOUTUBE_CHANNEL, YOUTUBE_LINEUP,
         /// AFFINITY_USER_INTEREST, IN_MARKET_USER_INTEREST, LIFE_EVENT_USER_INTEREST,
         /// PARENTAL_STATUS, INCOME_RANGE, AGE_RANGE, GENDER, and USER_LIST.
+        /// 
+        /// Note that when an
+        /// [InsightsAudience.user_list][google.ads.googleads.v25.services.InsightsAudience.user_list]
+        /// is requested:
+        /// - Only the following dimensions are supported: AFFINITY_USER_INTEREST,
+        /// AGE_RANGE, GENDER, IN_MARKET_USER_INTEREST
+        /// - The score field is omitted from AudienceCompositionMetrics of the
+        /// GenerateAudienceCompositionInsightsResponse.
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A Task containing the RPC response.</returns>
@@ -951,6 +967,14 @@ namespace Google.Ads.GoogleAds.V25.Services
         /// SUB_COUNTRY_LOCATION, YOUTUBE_CHANNEL, YOUTUBE_LINEUP,
         /// AFFINITY_USER_INTEREST, IN_MARKET_USER_INTEREST, LIFE_EVENT_USER_INTEREST,
         /// PARENTAL_STATUS, INCOME_RANGE, AGE_RANGE, GENDER, and USER_LIST.
+        /// 
+        /// Note that when an
+        /// [InsightsAudience.user_list][google.ads.googleads.v25.services.InsightsAudience.user_list]
+        /// is requested:
+        /// - Only the following dimensions are supported: AFFINITY_USER_INTEREST,
+        /// AGE_RANGE, GENDER, IN_MARKET_USER_INTEREST
+        /// - The score field is omitted from AudienceCompositionMetrics of the
+        /// GenerateAudienceCompositionInsightsResponse.
         /// </param>
         /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
         /// <returns>A Task containing the RPC response.</returns>

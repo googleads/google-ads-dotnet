@@ -30,5 +30,14 @@ namespace Google.Ads.GoogleAds.V25.Common
             get => string.IsNullOrEmpty(ConversionAction) ? null : gagvr::ConversionActionName.Parse(ConversionAction, allowUnparsed: true);
             set => ConversionAction = value?.ToString() ?? "";
         }
+
+        /// <summary>
+        /// <see cref="gagvr::GeoTargetConstantName"/>-typed view over the <see cref="Country"/> resource name property.
+        /// </summary>
+        internal gagvr::GeoTargetConstantName CountryAsGeoTargetConstantName
+        {
+            get => string.IsNullOrEmpty(Country) ? null : gagvr::GeoTargetConstantName.Parse(Country, allowUnparsed: true);
+            set => Country = value?.ToString() ?? "";
+        }
     }
 }

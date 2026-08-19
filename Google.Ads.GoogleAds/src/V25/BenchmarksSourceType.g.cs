@@ -26,15 +26,15 @@ namespace Google.Ads.GoogleAds.V25.Enums {
           string.Concat(
             "Cjtnb29nbGUvYWRzL2dvb2dsZWFkcy92MjUvZW51bXMvYmVuY2htYXJrc19z",
             "b3VyY2VfdHlwZS5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LmVu",
-            "dW1zImcKGEJlbmNobWFya3NTb3VyY2VUeXBlRW51bSJLChRCZW5jaG1hcmtz",
+            "dW1zInUKGEJlbmNobWFya3NTb3VyY2VUeXBlRW51bSJZChRCZW5jaG1hcmtz",
             "U291cmNlVHlwZRIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIVChFJ",
-            "TkRVU1RSWV9WRVJUSUNBTBACQvMBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjI1LmVudW1zQhlCZW5jaG1hcmtzU291cmNlVHlwZVByb3RvUAFaQ2dv",
-            "b2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2ds",
-            "ZWFkcy92MjUvZW51bXM7ZW51bXOiAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2ds",
-            "ZUFkcy5WMjUuRW51bXPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMjVcRW51",
-            "bXPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjU6OkVudW1zYgZwcm90",
-            "bzM="));
+            "TkRVU1RSWV9WRVJUSUNBTBACEgwKCENBVEVHT1JZEANC8wEKImNvbS5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MjUuZW51bXNCGUJlbmNobWFya3NTb3VyY2VU",
+            "eXBlUHJvdG9QAVpDZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xl",
+            "YXBpcy9hZHMvZ29vZ2xlYWRzL3YyNS9lbnVtcztlbnVtc6ICA0dBQaoCHkdv",
+            "b2dsZS5BZHMuR29vZ2xlQWRzLlYyNS5FbnVtc8oCHkdvb2dsZVxBZHNcR29v",
+            "Z2xlQWRzXFYyNVxFbnVtc+oCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYy",
+            "NTo6RW51bXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -229,6 +229,10 @@ namespace Google.Ads.GoogleAds.V25.Enums {
         /// "Technology" or "Finance").
         /// </summary>
         [pbr::OriginalName("INDUSTRY_VERTICAL")] IndustryVertical = 2,
+        /// <summary>
+        /// A Product &amp; Service Category.
+        /// </summary>
+        [pbr::OriginalName("CATEGORY")] Category = 3,
       }
 
     }

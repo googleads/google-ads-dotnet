@@ -33,7 +33,7 @@ namespace Google.Ads.GoogleAds.V25.Resources {
             "Z2xlYWRzL3YyNS9lbnVtcy9leHBlcmltZW50X3N0YXR1cy5wcm90bxo0Z29v",
             "Z2xlL2Fkcy9nb29nbGVhZHMvdjI1L2VudW1zL2V4cGVyaW1lbnRfdHlwZS5w",
             "cm90bxofZ29vZ2xlL2FwaS9maWVsZF9iZWhhdmlvci5wcm90bxoZZ29vZ2xl",
-            "L2FwaS9yZXNvdXJjZS5wcm90byL6BwoKRXhwZXJpbWVudBJCCg1yZXNvdXJj",
+            "L2FwaS9yZXNvdXJjZS5wcm90byL0CAoKRXhwZXJpbWVudBJCCg1yZXNvdXJj",
             "ZV9uYW1lGAEgASgJQivgQQX6QSUKI2dvb2dsZWFkcy5nb29nbGVhcGlzLmNv",
             "bS9FeHBlcmltZW50Eh8KDWV4cGVyaW1lbnRfaWQYCSABKANCA+BBA0gBiAEB",
             "EhEKBG5hbWUYCiABKAlCA+BBAhITCgtkZXNjcmlwdGlvbhgLIAEoCRIOCgZz",
@@ -47,26 +47,28 @@ namespace Google.Ads.GoogleAds.V25.Resources {
             "aW9uGBIgASgJQgPgQQNIBIgBARJkCg5wcm9tb3RlX3N0YXR1cxgTIAEoDjJH",
             "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5lbnVtcy5Bc3luY0FjdGlvblN0",
             "YXR1c0VudW0uQXN5bmNBY3Rpb25TdGF0dXNCA+BBAxIeCgxzeW5jX2VuYWJs",
-            "ZWQYFCABKAhCA+BBBUgFiAEBElUKEHZpZGVvX2V4cGVyaW1lbnQYFSABKAsy",
-            "NC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUuY29tbW9uLlZpZGVvRXhwZXJp",
-            "bWVudEluZm9CA+BBBUgAEmgKGm9wdGltaXplX2Fzc2V0c19leHBlcmltZW50",
-            "GBYgASgLMj0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LmNvbW1vbi5PcHRp",
-            "bWl6ZUFzc2V0c0V4cGVyaW1lbnRJbmZvQgPgQQVIADpY6kFVCiNnb29nbGVh",
-            "ZHMuZ29vZ2xlYXBpcy5jb20vRXhwZXJpbWVudBIuY3VzdG9tZXJzL3tjdXN0",
-            "b21lcl9pZH0vZXhwZXJpbWVudHMve3RyaWFsX2lkfUIRCg9leHBlcmltZW50",
-            "X2luZm9CEAoOX2V4cGVyaW1lbnRfaWRCDQoLX3N0YXJ0X2RhdGVCCwoJX2Vu",
-            "ZF9kYXRlQhkKF19sb25nX3J1bm5pbmdfb3BlcmF0aW9uQg8KDV9zeW5jX2Vu",
-            "YWJsZWRCgQIKJmNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUucmVzb3Vy",
-            "Y2VzQg9FeHBlcmltZW50UHJvdG9QAVpLZ29vZ2xlLmdvbGFuZy5vcmcvZ2Vu",
-            "cHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YyNS9yZXNvdXJjZXM7",
-            "cmVzb3VyY2VzogIDR0FBqgIiR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjI1LlJl",
-            "c291cmNlc8oCIkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYyNVxSZXNvdXJjZXPq",
-            "AiZHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjU6OlJlc291cmNlc2IGcHJv",
-            "dG8z"));
+            "ZWQYFCABKAhCA+BBBUgFiAEBElwKF2xpZnRfbWVhc3VyZW1lbnRfY29uZmln",
+            "GBcgASgJQjbgQQP6QTAKLmdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9MaWZ0",
+            "TWVhc3VyZW1lbnRDb25maWdIBogBARJVChB2aWRlb19leHBlcmltZW50GBUg",
+            "ASgLMjQuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LmNvbW1vbi5WaWRlb0V4",
+            "cGVyaW1lbnRJbmZvQgPgQQVIABJoChpvcHRpbWl6ZV9hc3NldHNfZXhwZXJp",
+            "bWVudBgWIAEoCzI9Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5jb21tb24u",
+            "T3B0aW1pemVBc3NldHNFeHBlcmltZW50SW5mb0ID4EEFSAA6WOpBVQojZ29v",
+            "Z2xlYWRzLmdvb2dsZWFwaXMuY29tL0V4cGVyaW1lbnQSLmN1c3RvbWVycy97",
+            "Y3VzdG9tZXJfaWR9L2V4cGVyaW1lbnRzL3t0cmlhbF9pZH1CEQoPZXhwZXJp",
+            "bWVudF9pbmZvQhAKDl9leHBlcmltZW50X2lkQg0KC19zdGFydF9kYXRlQgsK",
+            "CV9lbmRfZGF0ZUIZChdfbG9uZ19ydW5uaW5nX29wZXJhdGlvbkIPCg1fc3lu",
+            "Y19lbmFibGVkQhoKGF9saWZ0X21lYXN1cmVtZW50X2NvbmZpZ0KBAgomY29t",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5yZXNvdXJjZXNCD0V4cGVyaW1l",
+            "bnRQcm90b1ABWktnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVh",
+            "cGlzL2Fkcy9nb29nbGVhZHMvdjI1L3Jlc291cmNlcztyZXNvdXJjZXOiAgNH",
+            "QUGqAiJHb29nbGUuQWRzLkdvb2dsZUFkcy5WMjUuUmVzb3VyY2VzygIiR29v",
+            "Z2xlXEFkc1xHb29nbGVBZHNcVjI1XFJlc291cmNlc+oCJkdvb2dsZTo6QWRz",
+            "OjpHb29nbGVBZHM6OlYyNTo6UmVzb3VyY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V25.Common.ExperimentTypesReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Common.MetricGoalReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.AsyncActionStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.ExperimentStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.ExperimentTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Resources.Experiment), global::Google.Ads.GoogleAds.V25.Resources.Experiment.Parser, new[]{ "ResourceName", "ExperimentId", "Name", "Description", "Suffix", "Type", "Status", "StartDate", "EndDate", "Goals", "LongRunningOperation", "PromoteStatus", "SyncEnabled", "VideoExperiment", "OptimizeAssetsExperiment" }, new[]{ "ExperimentInfo", "ExperimentId", "StartDate", "EndDate", "LongRunningOperation", "SyncEnabled" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Resources.Experiment), global::Google.Ads.GoogleAds.V25.Resources.Experiment.Parser, new[]{ "ResourceName", "ExperimentId", "Name", "Description", "Suffix", "Type", "Status", "StartDate", "EndDate", "Goals", "LongRunningOperation", "PromoteStatus", "SyncEnabled", "LiftMeasurementConfig", "VideoExperiment", "OptimizeAssetsExperiment" }, new[]{ "ExperimentInfo", "ExperimentId", "StartDate", "EndDate", "LongRunningOperation", "SyncEnabled", "LiftMeasurementConfig" }, null, null, null)
           }));
     }
     #endregion
@@ -127,6 +129,7 @@ namespace Google.Ads.GoogleAds.V25.Resources {
       longRunningOperation_ = other.longRunningOperation_;
       promoteStatus_ = other.promoteStatus_;
       syncEnabled_ = other.syncEnabled_;
+      liftMeasurementConfig_ = other.liftMeasurementConfig_;
       switch (other.ExperimentInfoCase) {
         case ExperimentInfoOneofCase.VideoExperiment:
           VideoExperiment = other.VideoExperiment.Clone();
@@ -434,6 +437,35 @@ namespace Google.Ads.GoogleAds.V25.Resources {
       _hasBits0 &= ~2;
     }
 
+    /// <summary>Field number for the "lift_measurement_config" field.</summary>
+    public const int LiftMeasurementConfigFieldNumber = 23;
+    private readonly static string LiftMeasurementConfigDefaultValue = "";
+
+    private string liftMeasurementConfig_;
+    /// <summary>
+    /// Output only. The lift measurement configuration.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string LiftMeasurementConfig {
+      get { return liftMeasurementConfig_ ?? LiftMeasurementConfigDefaultValue; }
+      set {
+        liftMeasurementConfig_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "lift_measurement_config" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasLiftMeasurementConfig {
+      get { return liftMeasurementConfig_ != null; }
+    }
+    /// <summary>Clears the value of the "lift_measurement_config" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearLiftMeasurementConfig() {
+      liftMeasurementConfig_ = null;
+    }
+
     /// <summary>Field number for the "video_experiment" field.</summary>
     public const int VideoExperimentFieldNumber = 21;
     /// <summary>
@@ -515,6 +547,7 @@ namespace Google.Ads.GoogleAds.V25.Resources {
       if (LongRunningOperation != other.LongRunningOperation) return false;
       if (PromoteStatus != other.PromoteStatus) return false;
       if (SyncEnabled != other.SyncEnabled) return false;
+      if (LiftMeasurementConfig != other.LiftMeasurementConfig) return false;
       if (!object.Equals(VideoExperiment, other.VideoExperiment)) return false;
       if (!object.Equals(OptimizeAssetsExperiment, other.OptimizeAssetsExperiment)) return false;
       if (ExperimentInfoCase != other.ExperimentInfoCase) return false;
@@ -538,6 +571,7 @@ namespace Google.Ads.GoogleAds.V25.Resources {
       if (HasLongRunningOperation) hash ^= LongRunningOperation.GetHashCode();
       if (PromoteStatus != global::Google.Ads.GoogleAds.V25.Enums.AsyncActionStatusEnum.Types.AsyncActionStatus.Unspecified) hash ^= PromoteStatus.GetHashCode();
       if (HasSyncEnabled) hash ^= SyncEnabled.GetHashCode();
+      if (HasLiftMeasurementConfig) hash ^= LiftMeasurementConfig.GetHashCode();
       if (experimentInfoCase_ == ExperimentInfoOneofCase.VideoExperiment) hash ^= VideoExperiment.GetHashCode();
       if (experimentInfoCase_ == ExperimentInfoOneofCase.OptimizeAssetsExperiment) hash ^= OptimizeAssetsExperiment.GetHashCode();
       hash ^= (int) experimentInfoCase_;
@@ -616,6 +650,10 @@ namespace Google.Ads.GoogleAds.V25.Resources {
         output.WriteRawTag(178, 1);
         output.WriteMessage(OptimizeAssetsExperiment);
       }
+      if (HasLiftMeasurementConfig) {
+        output.WriteRawTag(186, 1);
+        output.WriteString(LiftMeasurementConfig);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -683,6 +721,10 @@ namespace Google.Ads.GoogleAds.V25.Resources {
         output.WriteRawTag(178, 1);
         output.WriteMessage(OptimizeAssetsExperiment);
       }
+      if (HasLiftMeasurementConfig) {
+        output.WriteRawTag(186, 1);
+        output.WriteString(LiftMeasurementConfig);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -729,6 +771,9 @@ namespace Google.Ads.GoogleAds.V25.Resources {
       }
       if (HasSyncEnabled) {
         size += 2 + 1;
+      }
+      if (HasLiftMeasurementConfig) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(LiftMeasurementConfig);
       }
       if (experimentInfoCase_ == ExperimentInfoOneofCase.VideoExperiment) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(VideoExperiment);
@@ -784,6 +829,9 @@ namespace Google.Ads.GoogleAds.V25.Resources {
       }
       if (other.HasSyncEnabled) {
         SyncEnabled = other.SyncEnabled;
+      }
+      if (other.HasLiftMeasurementConfig) {
+        LiftMeasurementConfig = other.LiftMeasurementConfig;
       }
       switch (other.ExperimentInfoCase) {
         case ExperimentInfoOneofCase.VideoExperiment:
@@ -889,6 +937,10 @@ namespace Google.Ads.GoogleAds.V25.Resources {
             OptimizeAssetsExperiment = subBuilder;
             break;
           }
+          case 186: {
+            LiftMeasurementConfig = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -976,6 +1028,10 @@ namespace Google.Ads.GoogleAds.V25.Resources {
             }
             input.ReadMessage(subBuilder);
             OptimizeAssetsExperiment = subBuilder;
+            break;
+          }
+          case 186: {
+            LiftMeasurementConfig = input.ReadString();
             break;
           }
         }
