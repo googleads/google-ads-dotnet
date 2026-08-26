@@ -258,7 +258,7 @@ namespace Google.Ads.GoogleAds.V25.Enums {
         /// </summary>
         [pbr::OriginalName("AVERAGE_CPC")] AverageCpc = 8,
         /// <summary>
-        /// The goal of the experiment is ctr.
+        /// The goal of the experiment is clickthrough rate (CTR).
         /// </summary>
         [pbr::OriginalName("CTR")] Ctr = 9,
         /// <summary>

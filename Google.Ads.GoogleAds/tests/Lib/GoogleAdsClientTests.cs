@@ -55,5 +55,22 @@ namespace Google.Ads.GoogleAds.Tests.Lib
                 });
             });
         }
+
+        [Test]
+        public void TestInspectRestChannelAuth()
+        {
+            var config = new Google.Ads.GoogleAds.Config.GoogleAdsConfig()
+            {
+                OAuth2ClientId = "test-client-id",
+                OAuth2ClientSecret = "test-client-secret",
+                OAuth2RefreshToken = "test-refresh-token",
+            };
+            var creds = Grpc.Auth.GoogleGrpcCredentials.ToChannelCredentials(config.Credentials);
+            var asm = typeof(Google.Api.Gax.Grpc.Rest.RestGrpcAdapter).Assembly;
+            var t = asm.GetType("Google.Api.Gax.Grpc.Rest.CredentialExtensions");
+            var m = t.GetMethod("ToAsyncAuthInterceptor", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static, null, new System.Type[] { typeof(Grpc.Core.ChannelCredentials) }, null);
+            var interceptor = m.Invoke(null, new object[] { creds });
+            TestContext.Progress.WriteLine($"Interceptor: {interceptor}");
+        }
     }
 }

@@ -14,7 +14,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
     <PackageReference Condition="!Exists('..\..\..\src\Google.Ads.GoogleAds.csproj')"
         Include="Google.Ads.GoogleAds" Version="19.0.1" />
     <PackageReference Condition="!Exists('..\..\..\..\Google.Ads.GoogleAds.Extensions\src\Google.Ads.GoogleAds.Extensions.csproj')"

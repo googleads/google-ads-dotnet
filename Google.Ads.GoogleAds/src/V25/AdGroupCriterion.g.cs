@@ -3716,7 +3716,7 @@ namespace Google.Ads.GoogleAds.V25.Resources {
         public const int SearchPredictedCtrFieldNumber = 4;
         private global::Google.Ads.GoogleAds.V25.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket searchPredictedCtr_ = global::Google.Ads.GoogleAds.V25.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified;
         /// <summary>
-        /// Output only. The click-through rate compared to that of other
+        /// Output only. The clickthrough rate (CTR) compared to that of other
         /// advertisers.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

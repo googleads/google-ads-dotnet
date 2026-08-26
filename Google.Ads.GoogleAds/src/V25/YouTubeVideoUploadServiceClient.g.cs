@@ -15,6 +15,7 @@
 // Generated code. DO NOT EDIT!
 
 #pragma warning disable CS8981
+using gaggr = Google.Api.Gax.Grpc.Rest;
 using gagvr = Google.Ads.GoogleAds.V25.Resources;
 using gax = Google.Api.Gax;
 using gaxgrpc = Google.Api.Gax.Grpc;
@@ -49,6 +50,7 @@ namespace Google.Ads.GoogleAds.V25.Services
         {
             gax::GaxPreconditions.CheckNotNull(existing, nameof(existing));
             CreateYouTubeVideoUploadSettings = existing.CreateYouTubeVideoUploadSettings;
+            CreateYouTubeVideoUploadResumableUploadSettings = existing.CreateYouTubeVideoUploadResumableUploadSettings;
             UpdateYouTubeVideoUploadSettings = existing.UpdateYouTubeVideoUploadSettings;
             RemoveYouTubeVideoUploadSettings = existing.RemoveYouTubeVideoUploadSettings;
             OnCopy(existing);
@@ -77,6 +79,12 @@ namespace Google.Ads.GoogleAds.V25.Services
         /// </list>
         /// </remarks>
         public gaxgrpc::CallSettings CreateYouTubeVideoUploadSettings { get; set; } = gaxgrpc::CallSettingsExtensions.WithRetry(gaxgrpc::CallSettings.FromExpiration(gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(14400000))), gaxgrpc::RetrySettings.FromExponentialBackoff(maxAttempts: 2147483647, initialBackoff: sys::TimeSpan.FromMilliseconds(5000), maxBackoff: sys::TimeSpan.FromMilliseconds(60000), backoffMultiplier: 1.3, retryFilter: gaxgrpc::RetrySettings.FilterForStatusCodes(grpccore::StatusCode.Unavailable, grpccore::StatusCode.DeadlineExceeded)));
+
+        /// <summary>
+        /// The settings to use for resumable upload calls to
+        /// <c>YouTubeVideoUploadServiceClient.CreateYouTubeVideoUpload</c>.
+        /// </summary>
+        public gaggr::ResumableUploadSettings CreateYouTubeVideoUploadResumableUploadSettings { get; set; } = gaggr::ResumableUploadSettings.Default;
 
         /// <summary>
         /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
@@ -165,14 +173,16 @@ namespace Google.Ads.GoogleAds.V25.Services
         {
             Validate();
             grpccore::CallInvoker callInvoker = CreateCallInvoker();
-            return YouTubeVideoUploadServiceClient.Create(callInvoker, GetEffectiveSettings(Settings?.Clone()), Logger);
+            grpccore::CallInvoker restCallInvoker = MaybeCreateRestCallInvoker(callInvoker);
+            return YouTubeVideoUploadServiceClient.Create(callInvoker, restCallInvoker, GetEffectiveSettings(Settings?.Clone()), Logger);
         }
 
         private async stt::Task<YouTubeVideoUploadServiceClient> BuildAsyncImpl(st::CancellationToken cancellationToken)
         {
             Validate();
             grpccore::CallInvoker callInvoker = await CreateCallInvokerAsync(cancellationToken).ConfigureAwait(false);
-            return YouTubeVideoUploadServiceClient.Create(callInvoker, GetEffectiveSettings(Settings?.Clone()), Logger);
+            grpccore::CallInvoker restCallInvoker = await MaybeCreateRestCallInvokerAsync(callInvoker, cancellationToken).ConfigureAwait(false);
+            return YouTubeVideoUploadServiceClient.Create(callInvoker, restCallInvoker, GetEffectiveSettings(Settings?.Clone()), Logger);
         }
 
         /// <summary>Returns the channel pool to use when no other options are specified.</summary>
@@ -233,10 +243,13 @@ namespace Google.Ads.GoogleAds.V25.Services
         /// <param name="callInvoker">
         /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
         /// </param>
+        /// <param name="restCallInvoker">
+        /// The optional REST <see cref="grpccore::CallInvoker"/> for resumable upload operations.
+        /// </param>
         /// <param name="settings">Optional <see cref="YouTubeVideoUploadServiceSettings"/>.</param>
         /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
         /// <returns>The created <see cref="YouTubeVideoUploadServiceClient"/>.</returns>
-        internal static YouTubeVideoUploadServiceClient Create(grpccore::CallInvoker callInvoker, YouTubeVideoUploadServiceSettings settings = null, mel::ILogger logger = null)
+        internal static YouTubeVideoUploadServiceClient Create(grpccore::CallInvoker callInvoker, grpccore::CallInvoker restCallInvoker, YouTubeVideoUploadServiceSettings settings = null, mel::ILogger logger = null)
         {
             gax::GaxPreconditions.CheckNotNull(callInvoker, nameof(callInvoker));
             grpcinter::Interceptor interceptor = settings?.Interceptor;
@@ -245,8 +258,21 @@ namespace Google.Ads.GoogleAds.V25.Services
                 callInvoker = grpcinter::CallInvokerExtensions.Intercept(callInvoker, interceptor);
             }
             YouTubeVideoUploadService.YouTubeVideoUploadServiceClient grpcClient = new YouTubeVideoUploadService.YouTubeVideoUploadServiceClient(callInvoker);
-            return new YouTubeVideoUploadServiceClientImpl(grpcClient, settings, logger);
+            return new YouTubeVideoUploadServiceClientImpl(grpcClient, restCallInvoker, settings, logger);
         }
+
+        /// <summary>
+        /// Creates a <see cref="YouTubeVideoUploadServiceClient"/> which uses the specified call invoker for remote
+        /// operations.
+        /// </summary>
+        /// <param name="callInvoker">
+        /// The <see cref="grpccore::CallInvoker"/> for remote operations. Must not be null.
+        /// </param>
+        /// <param name="settings">Optional <see cref="YouTubeVideoUploadServiceSettings"/>.</param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/>.</param>
+        /// <returns>The created <see cref="YouTubeVideoUploadServiceClient"/>.</returns>
+        internal static YouTubeVideoUploadServiceClient Create(grpccore::CallInvoker callInvoker, YouTubeVideoUploadServiceSettings settings = null, mel::ILogger logger = null) =>
+            Create(callInvoker, null, settings, logger);
 
         /// <summary>
         /// Shuts down any channels automatically created by <see cref="Create()"/> and
@@ -265,87 +291,17 @@ namespace Google.Ads.GoogleAds.V25.Services
         public virtual YouTubeVideoUploadService.YouTubeVideoUploadServiceClient GrpcClient => throw new sys::NotImplementedException();
 
         /// <summary>
-        /// Uploads a video to Google-managed or advertiser owned (brand) YouTube
-        /// channel.
+        /// Creates a
+        /// <see cref="gaggr::ResumableUploadSession{CreateYouTubeVideoUploadRequest,CreateYouTubeVideoUploadResponse}"/>
+        ///  for resumable upload calls to <c>CreateYouTubeVideoUpload</c>.
         /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>The RPC response.</returns>
-        public virtual CreateYouTubeVideoUploadResponse CreateYouTubeVideoUpload(CreateYouTubeVideoUploadRequest request, gaxgrpc::CallSettings callSettings = null) =>
+        /// <returns>
+        /// A new
+        /// <see cref="gaggr::ResumableUploadSession{CreateYouTubeVideoUploadRequest,CreateYouTubeVideoUploadResponse}"/>
+        ///  instance.
+        /// </returns>
+        public virtual gaggr::ResumableUploadSession<CreateYouTubeVideoUploadRequest, CreateYouTubeVideoUploadResponse> CreateYouTubeVideoUpload() =>
             throw new sys::NotImplementedException();
-
-        /// <summary>
-        /// Uploads a video to Google-managed or advertiser owned (brand) YouTube
-        /// channel.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>A Task containing the RPC response.</returns>
-        public virtual stt::Task<CreateYouTubeVideoUploadResponse> CreateYouTubeVideoUploadAsync(CreateYouTubeVideoUploadRequest request, gaxgrpc::CallSettings callSettings = null) =>
-            throw new sys::NotImplementedException();
-
-        /// <summary>
-        /// Uploads a video to Google-managed or advertiser owned (brand) YouTube
-        /// channel.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
-        /// <returns>A Task containing the RPC response.</returns>
-        public virtual stt::Task<CreateYouTubeVideoUploadResponse> CreateYouTubeVideoUploadAsync(CreateYouTubeVideoUploadRequest request, st::CancellationToken cancellationToken) =>
-            CreateYouTubeVideoUploadAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
-
-        /// <summary>
-        /// Uploads a video to Google-managed or advertiser owned (brand) YouTube
-        /// channel.
-        /// </summary>
-        /// <param name="customerId">
-        /// Required. The customer ID requesting the upload. Required.
-        /// </param>
-        /// <param name="youTubeVideoUpload">
-        /// Required. The initial details of the video to upload. Required.
-        /// </param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>The RPC response.</returns>
-        public virtual CreateYouTubeVideoUploadResponse CreateYouTubeVideoUpload(string customerId, gagvr::YouTubeVideoUpload youTubeVideoUpload, gaxgrpc::CallSettings callSettings = null) =>
-            CreateYouTubeVideoUpload(new CreateYouTubeVideoUploadRequest
-            {
-                CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
-                YouTubeVideoUpload = gax::GaxPreconditions.CheckNotNull(youTubeVideoUpload, nameof(youTubeVideoUpload)),
-            }, callSettings);
-
-        /// <summary>
-        /// Uploads a video to Google-managed or advertiser owned (brand) YouTube
-        /// channel.
-        /// </summary>
-        /// <param name="customerId">
-        /// Required. The customer ID requesting the upload. Required.
-        /// </param>
-        /// <param name="youTubeVideoUpload">
-        /// Required. The initial details of the video to upload. Required.
-        /// </param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>A Task containing the RPC response.</returns>
-        public virtual stt::Task<CreateYouTubeVideoUploadResponse> CreateYouTubeVideoUploadAsync(string customerId, gagvr::YouTubeVideoUpload youTubeVideoUpload, gaxgrpc::CallSettings callSettings = null) =>
-            CreateYouTubeVideoUploadAsync(new CreateYouTubeVideoUploadRequest
-            {
-                CustomerId = gax::GaxPreconditions.CheckNotNullOrEmpty(customerId, nameof(customerId)),
-                YouTubeVideoUpload = gax::GaxPreconditions.CheckNotNull(youTubeVideoUpload, nameof(youTubeVideoUpload)),
-            }, callSettings);
-
-        /// <summary>
-        /// Uploads a video to Google-managed or advertiser owned (brand) YouTube
-        /// channel.
-        /// </summary>
-        /// <param name="customerId">
-        /// Required. The customer ID requesting the upload. Required.
-        /// </param>
-        /// <param name="youTubeVideoUpload">
-        /// Required. The initial details of the video to upload. Required.
-        /// </param>
-        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
-        /// <returns>A Task containing the RPC response.</returns>
-        public virtual stt::Task<CreateYouTubeVideoUploadResponse> CreateYouTubeVideoUploadAsync(string customerId, gagvr::YouTubeVideoUpload youTubeVideoUpload, st::CancellationToken cancellationToken) =>
-            CreateYouTubeVideoUploadAsync(customerId, youTubeVideoUpload, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
         /// Updates YouTube video's metadata, but only for videos uploaded using this
@@ -526,7 +482,7 @@ namespace Google.Ads.GoogleAds.V25.Services
     /// </remarks>
     public sealed partial class YouTubeVideoUploadServiceClientImpl : YouTubeVideoUploadServiceClient
     {
-        private readonly gaxgrpc::ApiCall<CreateYouTubeVideoUploadRequest, CreateYouTubeVideoUploadResponse> _callCreateYouTubeVideoUpload;
+        private readonly gaggr::ApiResumableUploadCall<CreateYouTubeVideoUploadRequest, CreateYouTubeVideoUploadResponse> _callResumableCreateYouTubeVideoUpload;
 
         private readonly gaxgrpc::ApiCall<UpdateYouTubeVideoUploadRequest, UpdateYouTubeVideoUploadResponse> _callUpdateYouTubeVideoUpload;
 
@@ -537,11 +493,14 @@ namespace Google.Ads.GoogleAds.V25.Services
         /// settings.
         /// </summary>
         /// <param name="grpcClient">The underlying gRPC client.</param>
+        /// <param name="restCallInvoker">
+        /// The REST <see cref="grpccore::CallInvoker"/> to use for resumable upload operations, or null.
+        /// </param>
         /// <param name="settings">
         /// The base <see cref="YouTubeVideoUploadServiceSettings"/> used within this client.
         /// </param>
         /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
-        public YouTubeVideoUploadServiceClientImpl(YouTubeVideoUploadService.YouTubeVideoUploadServiceClient grpcClient, YouTubeVideoUploadServiceSettings settings, mel::ILogger logger)
+        public YouTubeVideoUploadServiceClientImpl(YouTubeVideoUploadService.YouTubeVideoUploadServiceClient grpcClient, grpccore::CallInvoker restCallInvoker, YouTubeVideoUploadServiceSettings settings, mel::ILogger logger)
         {
             GrpcClient = grpcClient;
             YouTubeVideoUploadServiceSettings effectiveSettings = settings ?? YouTubeVideoUploadServiceSettings.GetDefault();
@@ -550,9 +509,10 @@ namespace Google.Ads.GoogleAds.V25.Services
                 Settings = effectiveSettings,
                 Logger = logger,
             });
-            _callCreateYouTubeVideoUpload = clientHelper.BuildApiCall<CreateYouTubeVideoUploadRequest, CreateYouTubeVideoUploadResponse>("CreateYouTubeVideoUpload", grpcClient.CreateYouTubeVideoUploadAsync, grpcClient.CreateYouTubeVideoUpload, effectiveSettings.CreateYouTubeVideoUploadSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
-            Modify_ApiCall(ref _callCreateYouTubeVideoUpload);
-            Modify_CreateYouTubeVideoUploadApiCall(ref _callCreateYouTubeVideoUpload);
+            if (restCallInvoker != null)
+            {
+                _callResumableCreateYouTubeVideoUpload = clientHelper.BuildResumableUploadCall<CreateYouTubeVideoUploadRequest, CreateYouTubeVideoUploadResponse>("google.ads.googleads.v25.services.YouTubeVideoUploadService", "CreateYouTubeVideoUpload", restCallInvoker, effectiveSettings.CreateYouTubeVideoUploadSettings, effectiveSettings.CreateYouTubeVideoUploadResumableUploadSettings);
+            }
             _callUpdateYouTubeVideoUpload = clientHelper.BuildApiCall<UpdateYouTubeVideoUploadRequest, UpdateYouTubeVideoUploadResponse>("UpdateYouTubeVideoUpload", grpcClient.UpdateYouTubeVideoUploadAsync, grpcClient.UpdateYouTubeVideoUpload, effectiveSettings.UpdateYouTubeVideoUploadSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callUpdateYouTubeVideoUpload);
             Modify_UpdateYouTubeVideoUploadApiCall(ref _callUpdateYouTubeVideoUpload);
@@ -562,9 +522,22 @@ namespace Google.Ads.GoogleAds.V25.Services
             OnConstruction(grpcClient, effectiveSettings, clientHelper);
         }
 
+        /// <summary>
+        /// Constructs a client wrapper for the YouTubeVideoUploadService service, with the specified gRPC client and
+        /// settings.
+        /// </summary>
+        /// <param name="grpcClient">The underlying gRPC client.</param>
+        /// <param name="settings">
+        /// The base <see cref="YouTubeVideoUploadServiceSettings"/> used within this client.
+        /// </param>
+        /// <param name="logger">Optional <see cref="mel::ILogger"/> to use within this client.</param>
+        public YouTubeVideoUploadServiceClientImpl(YouTubeVideoUploadService.YouTubeVideoUploadServiceClient grpcClient, YouTubeVideoUploadServiceSettings settings, mel::ILogger logger) : this(grpcClient, null, settings, logger)
+        {
+        }
+
         partial void Modify_ApiCall<TRequest, TResponse>(ref gaxgrpc::ApiCall<TRequest, TResponse> call) where TRequest : class, proto::IMessage<TRequest> where TResponse : class, proto::IMessage<TResponse>;
 
-        partial void Modify_CreateYouTubeVideoUploadApiCall(ref gaxgrpc::ApiCall<CreateYouTubeVideoUploadRequest, CreateYouTubeVideoUploadResponse> call);
+        partial void Modify_CreateYouTubeVideoUploadApiCall(ref gaggr::ApiResumableUploadCall<CreateYouTubeVideoUploadRequest, CreateYouTubeVideoUploadResponse> call);
 
         partial void Modify_UpdateYouTubeVideoUploadApiCall(ref gaxgrpc::ApiCall<UpdateYouTubeVideoUploadRequest, UpdateYouTubeVideoUploadResponse> call);
 
@@ -582,29 +555,22 @@ namespace Google.Ads.GoogleAds.V25.Services
         partial void Modify_RemoveYouTubeVideoUploadRequest(ref RemoveYouTubeVideoUploadRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
-        /// Uploads a video to Google-managed or advertiser owned (brand) YouTube
-        /// channel.
+        /// Creates a
+        /// <see cref="gaggr::ResumableUploadSession{CreateYouTubeVideoUploadRequest,CreateYouTubeVideoUploadResponse}"/>
+        ///  for resumable upload calls to <c>CreateYouTubeVideoUpload</c>.
         /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>The RPC response.</returns>
-        public override CreateYouTubeVideoUploadResponse CreateYouTubeVideoUpload(CreateYouTubeVideoUploadRequest request, gaxgrpc::CallSettings callSettings = null)
+        /// <returns>
+        /// A new
+        /// <see cref="gaggr::ResumableUploadSession{CreateYouTubeVideoUploadRequest,CreateYouTubeVideoUploadResponse}"/>
+        ///  instance.
+        /// </returns>
+        public override gaggr::ResumableUploadSession<CreateYouTubeVideoUploadRequest, CreateYouTubeVideoUploadResponse> CreateYouTubeVideoUpload()
         {
-            Modify_CreateYouTubeVideoUploadRequest(ref request, ref callSettings);
-            return _callCreateYouTubeVideoUpload.Sync(request, callSettings);
-        }
-
-        /// <summary>
-        /// Uploads a video to Google-managed or advertiser owned (brand) YouTube
-        /// channel.
-        /// </summary>
-        /// <param name="request">The request object containing all of the parameters for the API call.</param>
-        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
-        /// <returns>A Task containing the RPC response.</returns>
-        public override stt::Task<CreateYouTubeVideoUploadResponse> CreateYouTubeVideoUploadAsync(CreateYouTubeVideoUploadRequest request, gaxgrpc::CallSettings callSettings = null)
-        {
-            Modify_CreateYouTubeVideoUploadRequest(ref request, ref callSettings);
-            return _callCreateYouTubeVideoUpload.Async(request, callSettings);
+            if (_callResumableCreateYouTubeVideoUpload == null)
+            {
+                throw new sys::InvalidOperationException("Resumable uploads require REST transport support / RestCallInvoker.");
+            }
+            return _callResumableCreateYouTubeVideoUpload.CreateSession();
         }
 
         /// <summary>

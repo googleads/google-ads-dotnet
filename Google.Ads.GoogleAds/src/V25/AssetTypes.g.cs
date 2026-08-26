@@ -12685,8 +12685,9 @@ namespace Google.Ads.GoogleAds.V25.Common {
     public const int MarketingImageAssetFieldNumber = 1;
     private string marketingImageAsset_ = "";
     /// <summary>
-    /// Asset resource name of the associated 1.91:1 marketing image. This and/or
-    /// square marketing image asset is required.
+    /// Asset resource name of the associated 1.91:1 marketing image. Either this
+    /// image, or the square marketing image, or both, is required. Temporary IDs
+    /// are not supported. Only existing image assets can be referenced.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -12701,8 +12702,9 @@ namespace Google.Ads.GoogleAds.V25.Common {
     public const int SquareMarketingImageAssetFieldNumber = 2;
     private string squareMarketingImageAsset_ = "";
     /// <summary>
-    /// Asset resource name of the associated square marketing image. This
-    /// and/or a marketing image asset is required.
+    /// Asset resource name of the associated square marketing image. Either this
+    /// image, or the 1.91:1 marketing image, or both, is required. Temporary IDs
+    /// are not supported. Only existing image assets can be referenced.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -12718,6 +12720,8 @@ namespace Google.Ads.GoogleAds.V25.Common {
     private string portraitMarketingImageAsset_ = "";
     /// <summary>
     /// Asset resource name of the associated 4:5 portrait marketing image.
+    /// Temporary IDs are not supported. Only existing image assets can be
+    /// referenced.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

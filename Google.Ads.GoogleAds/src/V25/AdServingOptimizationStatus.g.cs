@@ -229,13 +229,14 @@ namespace Google.Ads.GoogleAds.V25.Enums {
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
-        /// Ad serving is optimized based on CTR for the campaign.
+        /// Ad serving is optimized based on clickthrough rate (CTR) for the
+        /// campaign.
         /// </summary>
         [pbr::OriginalName("OPTIMIZE")] Optimize = 2,
         /// <summary>
-        /// Ad serving is optimized based on CTR * Conversion for the campaign. If
-        /// the campaign is not in the conversion optimizer bidding strategy, it will
-        /// default to OPTIMIZED.
+        /// Ad serving is optimized based on clickthrough rate (CTR) * Conversion for
+        /// the campaign. If the campaign is not in the conversion optimizer bidding
+        /// strategy, it will default to OPTIMIZED.
         /// </summary>
         [pbr::OriginalName("CONVERSION_OPTIMIZE")] ConversionOptimize = 3,
         /// <summary>

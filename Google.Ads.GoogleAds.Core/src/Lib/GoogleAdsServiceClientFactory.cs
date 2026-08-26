@@ -1,4 +1,4 @@
-﻿// Copyright 2018 Google LLC
+// Copyright 2018 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,17 +12,22 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+using Google.Ads.Gax.Config;
 using Google.Ads.Gax.Lib;
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Interceptors;
 using Google.Ads.Gax.Profiling;
 using Google.Api.Gax;
 using Google.Api.Gax.Grpc;
+using Google.Api.Gax.Grpc.Rest;
 using Google.Protobuf;
+using Grpc.Auth;
 using Grpc.Core;
 using Grpc.Core.Interceptors;
 using System;
 using System.Collections.Generic;
+using System.Net.Http;
+using System.Reflection;
 
 namespace Google.Ads.GoogleAds.Lib
 {
@@ -87,11 +92,101 @@ namespace Google.Ads.GoogleAds.Lib
             serviceSettings.VersionHeaderBuilder.AppendAssemblyVersion("gccl", this.GetType());
 
             // Create the service.
-            TService service = Create(serviceTemplate, callInvoker, serviceSettings);
+            TService service;
+            // Determine whether the service needs a RestCallInvoker using reflection.
+            MethodInfo createWithRestMethod = typeof(TService).GetMethod(
+                "Create",
+                BindingFlags.Static | BindingFlags.NonPublic | BindingFlags.Public,
+                null,
+                new System.Type[] { typeof(CallInvoker), typeof(CallInvoker), typeof(TServiceSetting), typeof(Microsoft.Extensions.Logging.ILogger) },
+                null
+            ) ?? typeof(TService).GetMethod(
+                "Create",
+                BindingFlags.Static | BindingFlags.NonPublic | BindingFlags.Public,
+                null,
+                new System.Type[] { typeof(CallInvoker), typeof(CallInvoker), typeof(TServiceSetting) },
+                null
+            );
+
+            if (createWithRestMethod != null)
+            {
+                CallInvoker restCallInvoker = CreateRestCallInvoker(config, typeof(TService));
+                object[] args = createWithRestMethod.GetParameters().Length == 4
+                    ? new object[] { callInvoker, restCallInvoker, serviceSettings, null }
+                    : new object[] { callInvoker, restCallInvoker, serviceSettings };
+                service = (TService) createWithRestMethod.Invoke(null, args);
+            }
+            else
+            {
+                service = Create(serviceTemplate, callInvoker, serviceSettings);
+            }
+
             serviceContext.Service = service;
             service.ServiceContext = serviceContext;
             service.ServiceContext.Channel = channel;
             return service;
+        }
+
+        /// <summary>
+        /// Creates a REST call invoker for services requiring REST transport.
+        /// </summary>
+        /// <param name="config">The configuration.</param>
+        /// <param name="serviceType">The service type.</param>
+        /// <returns>The REST call invoker.</returns>
+        private CallInvoker CreateRestCallInvoker(GoogleAdsConfig config, System.Type serviceType)
+        {
+            PropertyInfo serviceMetadataProp = serviceType.GetProperty("ServiceMetadata",
+                BindingFlags.Public | BindingFlags.Static);
+            if (serviceMetadataProp == null)
+            {
+                return null;
+            }
+
+            ServiceMetadata serviceMetadata = (ServiceMetadata) serviceMetadataProp.GetValue(null);
+            if (serviceMetadata == null)
+            {
+                return null;
+            }
+
+            ServiceMetadata restMetadata = new ServiceMetadata(
+                serviceMetadata.ServiceDescriptor,
+                serviceMetadata.DefaultEndpoint,
+                serviceMetadata.DefaultScopes,
+                true,
+                ApiTransports.Rest,
+                serviceMetadata.ApiMetadata
+            );
+
+            ChannelCredentials credentials;
+            if (config.AuthorizationMethod == AuthorizationMethod.Insecure || config.Credentials == null)
+            {
+                credentials = ChannelCredentials.Insecure;
+            }
+            else
+            {
+                credentials = GoogleGrpcCredentials.ToChannelCredentials(config.Credentials);
+            }
+
+            Uri uri = new Uri(config.ServerUrl);
+            string endpoint = $"{uri.Host}:{uri.Port}";
+
+            GrpcChannelOptions options = GrpcChannelOptions.Empty;
+            if (config.Proxy != null)
+            {
+                options = options.WithCustomOption("grpc.http_proxy", config.Proxy.Address.ToString());
+            }
+
+            MethodInfo createChannelMethod = typeof(GrpcAdapter).GetMethod(
+                "CreateChannel",
+                BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance
+            );
+
+            ChannelBase restChannel = (ChannelBase) createChannelMethod.Invoke(
+                RestGrpcAdapter.Default,
+                new object[] { restMetadata, endpoint, credentials, options }
+            );
+
+            return restChannel.CreateCallInvoker();
         }
 
         /// <summary>
