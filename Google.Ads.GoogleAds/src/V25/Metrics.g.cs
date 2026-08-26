@@ -1111,7 +1111,7 @@ namespace Google.Ads.GoogleAds.V25.Common {
     private double absoluteTopImpressionPercentage_;
     /// <summary>
     /// Search absolute top impression share is the percentage of your Search ad
-    /// impressions that are shown in the most prominent Search position.
+    /// impressions that are shown in the absolute top Search position.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1203,8 +1203,8 @@ namespace Google.Ads.GoogleAds.V25.Common {
 
     private long activeViewImpressions_;
     /// <summary>
-    /// A measurement of how often your ad has become viewable on a Display
-    /// Network site.
+    /// A measurement of the number of times your ad has become viewable on a
+    /// Display Network site.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1234,8 +1234,8 @@ namespace Google.Ads.GoogleAds.V25.Common {
 
     private double activeViewMeasurability_;
     /// <summary>
-    /// The ratio of impressions that could be measured by Active View over the
-    /// number of served impressions.
+    /// The ratio of impressions that were eligible to be measured by Active View
+    /// over the number of served impressions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1327,8 +1327,8 @@ namespace Google.Ads.GoogleAds.V25.Common {
 
     private double activeViewViewability_;
     /// <summary>
-    /// The percentage of time when your ad appeared on an Active View enabled site
-    /// (measurable impressions) and was viewable (viewable impressions).
+    /// The percentage of times when your ad appeared on an Active View enabled
+    /// site (measurable impressions) and was viewable (viewable impressions).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1817,7 +1817,7 @@ namespace Google.Ads.GoogleAds.V25.Common {
 
     private double allConversionsFromStoreWebsite_;
     /// <summary>
-    /// The number of times that people were taken to a business's URL after
+    /// The number of times people were taken to a business's URL after
     /// clicking an ad.
     ///
     /// This metric applies to feed items only.
@@ -1850,11 +1850,10 @@ namespace Google.Ads.GoogleAds.V25.Common {
 
     private double auctionInsightSearchAbsoluteTopImpressionPercentage_;
     /// <summary>
-    /// This metric is part of the Auction Insights report, and tells how often
-    /// the ads of another participant showed in the most prominent position on the
-    /// search results page.
-    /// This percentage is computed only over the auctions that you appeared in
-    /// the page.
+    /// This metric is part of the Auction Insights report, and tells the
+    /// percentage of times the ads of another participant showed in the absolute
+    /// top position (Position 1) on the search results page. This percentage is
+    /// computed only over the auctions that you appeared in the page.
     ///
     /// This metric is not publicly available.
     /// </summary>
@@ -1957,9 +1956,9 @@ namespace Google.Ads.GoogleAds.V25.Common {
 
     private double auctionInsightSearchOverlapRate_;
     /// <summary>
-    /// This metric is part of the Auction Insights report, and tells how often
-    /// another participant's ad received an impression when your ad also received
-    /// an impression.
+    /// This metric is part of the Auction Insights report, and tells the
+    /// percentage of times another participant's ad received an impression when
+    /// your ad also received an impression.
     ///
     /// This metric is not publicly available.
     /// </summary>
@@ -1991,9 +1990,9 @@ namespace Google.Ads.GoogleAds.V25.Common {
 
     private double auctionInsightSearchPositionAboveRate_;
     /// <summary>
-    /// This metric is part of the Auction Insights report, and tells how often
-    /// another participant's ad was shown in a higher position than yours, when
-    /// both of your ads were shown at the same page.
+    /// This metric is part of the Auction Insights report, and tells the
+    /// percentage of times another participant's ad was shown in a higher position
+    /// than yours, when both of your ads were shown at the same page.
     ///
     /// This metric is not publicly available.
     /// </summary>
@@ -2025,10 +2024,10 @@ namespace Google.Ads.GoogleAds.V25.Common {
 
     private double auctionInsightSearchTopImpressionPercentage_;
     /// <summary>
-    /// This metric is part of the Auction Insights report, and tells how often
-    /// the ads of another participant showed adjacent to the top organic search
-    /// results. This percentage is computed only over the auctions that you
-    /// appeared in the page.
+    /// This metric is part of the Auction Insights report, and tells the
+    /// percentage of times the ads of another participant showed adjacent to the
+    /// top organic search results. This percentage is computed only over the
+    /// auctions that you appeared in the page.
     ///
     /// This metric is not publicly available.
     /// </summary>
@@ -2399,7 +2398,8 @@ namespace Google.Ads.GoogleAds.V25.Common {
     private double benchmarkCtr_;
     /// <summary>
     /// An indication on how other advertisers' Shopping ads for similar products
-    /// are performing based on how often people who see their ad click on it.
+    /// are performing based on the frequency with which people who see their ad
+    /// click on it.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2620,7 +2620,7 @@ namespace Google.Ads.GoogleAds.V25.Common {
 
     private double contentBudgetLostImpressionShare_;
     /// <summary>
-    /// The estimated percent of times that your ad was eligible to show
+    /// The estimated percentage of times that your ad was eligible to show
     /// on the Display Network but didn't because your budget was too low.
     /// Note: Content budget lost impression share is reported in the range of 0
     /// to 0.9. Any value above 0.9 is reported as 0.9001.
@@ -3548,8 +3548,9 @@ namespace Google.Ads.GoogleAds.V25.Common {
 
     private double engagementRate_;
     /// <summary>
-    /// How often people engage with your ad after it's shown to them. This is the
-    /// number of ad expansions divided by the number of times your ad is shown.
+    /// The frequency with which people engage with your ad after it's shown to
+    /// them. This is the number of ad expansions divided by the number of times
+    /// your ad is shown.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3823,7 +3824,7 @@ namespace Google.Ads.GoogleAds.V25.Common {
     public const int HistoricalSearchPredictedCtrFieldNumber = 83;
     private global::Google.Ads.GoogleAds.V25.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket historicalSearchPredictedCtr_ = global::Google.Ads.GoogleAds.V25.Enums.QualityScoreBucketEnum.Types.QualityScoreBucket.Unspecified;
     /// <summary>
-    /// The historical search predicted click through rate (CTR).
+    /// The historical search predicted clickthrough rate (CTR).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3964,7 +3965,7 @@ namespace Google.Ads.GoogleAds.V25.Common {
 
     private long impressions_;
     /// <summary>
-    /// Count of how often your ad has appeared on a search results page or
+    /// The number of times your ad has appeared on a search results page or
     /// website on the Google Network.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3995,9 +3996,9 @@ namespace Google.Ads.GoogleAds.V25.Common {
 
     private double interactionRate_;
     /// <summary>
-    /// How often people interact with your ad after it is shown to them.
-    /// This is the number of interactions divided by the number of times your ad
-    /// is shown.
+    /// The frequency with which people interact with your ad after it is shown to
+    /// them. This is the number of interactions divided by the number of times
+    /// your ad is shown.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4686,7 +4687,7 @@ namespace Google.Ads.GoogleAds.V25.Common {
 
     private double relativeCtr_;
     /// <summary>
-    /// Your clickthrough rate (Ctr) divided by the average clickthrough rate of
+    /// Your clickthrough rate (CTR) divided by the average clickthrough rate of
     /// all advertisers on the websites that show your ads. Measures how your ads
     /// perform on Display Network sites compared to other ads on the same sites.
     /// </summary>
@@ -4719,7 +4720,7 @@ namespace Google.Ads.GoogleAds.V25.Common {
     private double searchAbsoluteTopImpressionShare_;
     /// <summary>
     /// The percentage of the customer's Shopping or Search ad impressions that are
-    /// shown in the most prominent Shopping position. See
+    /// shown in the absolute top position (Position 1). See
     /// [About top and
     /// absolute top metrics](https://support.google.com/google-ads/answer/7501826)
     ///
@@ -4753,8 +4754,8 @@ namespace Google.Ads.GoogleAds.V25.Common {
 
     private double searchBudgetLostAbsoluteTopImpressionShare_;
     /// <summary>
-    /// The number estimating how often your ad wasn't the very first ad among the
-    /// top ads in the search results due to a low budget.
+    /// The estimated percentage of times your ad wasn't the very first ad among
+    /// the top ads in the search results due to a low budget.
     ///
     /// Note: Search budget lost absolute top impression share is reported in the
     /// range of 0 to 0.9. Any value above 0.9 is reported as 0.9001.
@@ -4787,7 +4788,7 @@ namespace Google.Ads.GoogleAds.V25.Common {
 
     private double searchBudgetLostImpressionShare_;
     /// <summary>
-    /// The estimated percent of times that your ad was eligible to show on the
+    /// The estimated percentage of times that your ad was eligible to show on the
     /// Search Network but didn't because your budget was too low.
     ///
     /// Note: Search
@@ -4822,8 +4823,8 @@ namespace Google.Ads.GoogleAds.V25.Common {
 
     private double searchBudgetLostTopImpressionShare_;
     /// <summary>
-    /// The estimated percent of times that your ad didn't show adjacent to the top
-    /// organic search results due to a low budget.
+    /// The estimated percentage of times that your ad didn't show adjacent to the
+    /// top organic search results due to a low budget.
     ///
     /// Note: Search budget lost top impression share is reported in the range of 0
     /// to 0.9. Any value above 0.9 is reported as 0.9001.
@@ -4960,8 +4961,8 @@ namespace Google.Ads.GoogleAds.V25.Common {
 
     private double searchRankLostAbsoluteTopImpressionShare_;
     /// <summary>
-    /// The number estimating how often your ad wasn't the very first ad among the
-    /// top ads in the search results due to poor Ad Rank.
+    /// The estimated percentage of times your ad wasn't the very first ad among
+    /// the top ads in the search results due to poor Ad Rank.
     ///
     /// Note: Search rank lost absolute top impression share is reported in the
     /// range of 0 to 0.9. Any value above 0.9 is reported as 0.9001.
@@ -5027,7 +5028,7 @@ namespace Google.Ads.GoogleAds.V25.Common {
 
     private double searchRankLostTopImpressionShare_;
     /// <summary>
-    /// The number estimating how often your ad didn't show adjacent to the top
+    /// The estimated percentage of times your ad didn't show adjacent to the top
     /// organic search results due to poor Ad Rank.
     ///
     /// Note: Search rank lost top impression share is reported in the range of 0
@@ -5066,7 +5067,7 @@ namespace Google.Ads.GoogleAds.V25.Common {
     /// Note: Search top impression share is reported in the range of 0.1 to 1. Any
     /// value below 0.1 is reported as 0.0999.
     ///
-    /// Top ads are generally above the top organic results, although they may show
+    /// Top ads are typically above the top organic results, although they may show
     /// below the top organic results on certain queries.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5205,7 +5206,7 @@ namespace Google.Ads.GoogleAds.V25.Common {
 
     private double topImpressionPercentage_;
     /// <summary>
-    /// The percent of your ad impressions that are shown adjacent to the top
+    /// The percentage of your ad impressions that are shown adjacent to the top
     /// organic search results.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10402,7 +10403,7 @@ namespace Google.Ads.GoogleAds.V25.Common {
     private double conversionLiftExposedConversions_;
     /// <summary>
     /// Represents the total conversions from users who were exposed to the ads.
-    /// Often referred to as "Treatment" conversions.
+    /// Also referred to as "Treatment" conversions.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -11232,7 +11233,7 @@ namespace Google.Ads.GoogleAds.V25.Common {
     /// <summary>
     /// Represents the rate of positive responses that would have occurred
     /// naturally without ad exposure, based on the behavior of the control group.
-    /// Often referred to as "Control" responses. Provides the baseline
+    /// Also referred to as "Control" responses. Provides the baseline
     /// level of brand perception that occurred naturally.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11425,7 +11426,7 @@ namespace Google.Ads.GoogleAds.V25.Common {
     private double brandLiftExposedPositiveResponseRate_;
     /// <summary>
     /// Represents the rate of positive responses from users who were exposed to
-    /// the ads. Often referred to as "Treatment" responses. Shows
+    /// the ads. Also referred to as "Treatment" responses. Shows
     /// total positive response rate when users were exposed to your ads.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11743,7 +11744,7 @@ namespace Google.Ads.GoogleAds.V25.Common {
     private double costPerLiftedCookieP90LowerBound_;
     /// <summary>
     /// Lower bound of the 90% confidence interval for the cost per lifted cookie.
-    /// Represents the most optimistic (lowest cost) estimate for moving a user to
+    /// Represents the optimistic (lowest cost) estimate for moving a user to
     /// a positive brand state.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11775,7 +11776,7 @@ namespace Google.Ads.GoogleAds.V25.Common {
     private double costPerLiftedCookieP90UpperBound_;
     /// <summary>
     /// Upper bound of the 90% confidence interval for the cost per lifted cookie.
-    /// Represents the most conservative (highest cost) estimate for moving a user
+    /// Represents the conservative (highest cost) estimate for moving a user
     /// to a positive brand state.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

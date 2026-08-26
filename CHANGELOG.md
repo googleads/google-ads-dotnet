@@ -1,3 +1,8 @@
+27.2.0
+======
+- Added support for video uploads.
+- Added the `UploadVideo` example.
+
 27.1.0
 ======
 - Added support for version 25.1 of the Google Ads API.

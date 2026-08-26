@@ -1050,6 +1050,9 @@ namespace Google.Ads.GoogleAds.V25.Services {
     ///   AGE_RANGE, GENDER, IN_MARKET_USER_INTEREST
     ///   - The score field is omitted from AudienceCompositionMetrics of the
     ///   GenerateAudienceCompositionInsightsResponse.
+    ///
+    /// Note: The USER_LIST dimension does not support the score metric in
+    /// AudienceCompositionMetrics.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1452,7 +1455,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
     ///
     /// Note: When an
     /// [InsightsAudience.user_list][google.ads.googleads.v25.services.InsightsAudience.user_list]
-    /// is requested in GenerateAudienceCompositionInsightsRequest, score is
+    /// is requested or when the request contains the USER_LIST dimension, score is
     /// omitted from AudienceCompositionMetrics of the
     /// GenerateAudienceCompositionInsightsResponse.
     /// </summary>
@@ -8640,7 +8643,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
     ///
     /// Note: When an
     /// [InsightsAudience.user_list][google.ads.googleads.v25.services.InsightsAudience.user_list]
-    /// is requested in GenerateAudienceCompositionInsightsRequest, score is
+    /// is requested or when the request contains the USER_LIST dimension, score is
     /// omitted.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
