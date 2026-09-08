@@ -1,3 +1,8 @@
+27.3.0
+======
+- Relaxed the checks for DeveloperToken header.
+- Removed support for UseCloudOrgForApiAccess setting.
+
 27.2.0
 ======
 - Added support for video uploads.

@@ -47,7 +47,6 @@ namespace Google.Ads.GoogleAds.Extensions.DependencyInjection.Tests
             Assert.AreEqual("TEST_EMAIL", googleAdsService.ServiceContext.Client.Config.OAuth2ServiceAccountEmail);
             Assert.AreEqual("TEST_PRIVATE_KEY", googleAdsService.ServiceContext.Client.Config.OAuth2PrivateKey);
             Assert.AreEqual("TEST_SCOPE", googleAdsService.ServiceContext.Client.Config.OAuth2Scope);
-            Assert.IsTrue(googleAdsService.ServiceContext.Client.Config.UseCloudOrgForApiAccess);
             Assert.AreEqual(12345, googleAdsService.ServiceContext.Client.Config.MaxReceiveMessageSizeInBytes);
             Assert.AreEqual(54321, googleAdsService.ServiceContext.Client.Config.MaxMetadataSizeInBytes);
         }
