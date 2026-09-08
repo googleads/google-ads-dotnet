@@ -165,6 +165,7 @@ namespace Google.Ads.GoogleAds.Tests.Config
             Assert.AreEqual(MAX_RECEIVE_MESSAGE_SIZE_IN_BYTES_VALUE,
                 this.MaxReceiveMessageSizeInBytes);
             Assert.AreEqual(MAX_METADATA_SIZE_IN_BYTES_VALUE, this.MaxMetadataSizeInBytes);
+            Assert.AreEqual(USE_CLOUD_ORG_FOR_API_ACCESS_VALUE, this.UseCloudOrgForApiAccess);
             Assert.AreEqual(DEVELOPER_TOKEN_VALUE, this.DeveloperToken);
             Assert.AreEqual(LOGIN_CUSTOMER_ID_VALUE, this.LoginCustomerId);
             Assert.AreEqual(LINKED_CUSTOMER_ID_VALUE, this.LinkedCustomerId);

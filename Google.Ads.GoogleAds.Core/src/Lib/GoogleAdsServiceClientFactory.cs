@@ -219,7 +219,7 @@ namespace Google.Ads.GoogleAds.Lib
         private CallSettings UpdateCallSettingsWithConfigParameters(CallSettings callSettings,
                     GoogleAdsConfig config, GoogleAdsServiceContext serviceContext)
         {
-            if (!string.IsNullOrEmpty(config.DeveloperToken))
+            if (!config.UseCloudOrgForApiAccess)
             {
                 callSettings = callSettings.WithHeader(MetadataKeyNames.DeveloperToken,
                     config.DeveloperToken);

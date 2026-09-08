@@ -26,6 +26,7 @@ namespace Google.Ads.GoogleAds.Extensions.DependencyInjection
             OAuth2PrnEmail = options.Value.OAuth2PrnEmail;
             OAuth2SecretsJsonPath = options.Value.OAuth2SecretsJsonPath;
             OAuth2Scope = options.Value.OAuth2Scope + "";
+            UseCloudOrgForApiAccess = options.Value.UseCloudOrgForApiAccess;
             MaxReceiveMessageSizeInBytes = options.Value.MaxReceiveMessageSizeInBytes;
             MaxMetadataSizeInBytes = options.Value.MaxMetadataSizeInBytes;
         }

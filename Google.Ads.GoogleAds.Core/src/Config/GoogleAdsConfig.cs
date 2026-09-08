@@ -142,6 +142,19 @@ namespace Google.Ads.GoogleAds.Config
         }
 
         /// <summary>
+        /// Gets or sets whether to use the Google Cloud Organization of your Google Cloud
+        /// project instead of developer token to determine your Google Ads API access levels.
+        /// configuration.
+        /// </summary>
+        /// <remarks> Use this flag only if you are enrolled into a limited pilot that supports
+        /// this configuration.</remarks>
+        public bool UseCloudOrgForApiAccess
+        {
+            get => useCloudOrgForApiAccess.Value;
+            set => SetPropertyAndNotify(useCloudOrgForApiAccess, value);
+        }
+
+        /// <summary>
         /// Public constructor. Loads the configuration from the <code>GoogleAdsApi</code> section
         /// of the App.config / Web.config.
         /// </summary>
