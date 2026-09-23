@@ -84,27 +84,41 @@ namespace Google.Ads.GoogleAds.V25.Services {
             "ZV9uYW1lGAEgASgJQjL6QS8KLWdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9T",
             "bWFydENhbXBhaWduU2V0dGluZxJYChZzbWFydF9jYW1wYWlnbl9zZXR0aW5n",
             "GAIgASgLMjguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnJlc291cmNlcy5T",
-            "bWFydENhbXBhaWduU2V0dGluZzL9BAobU21hcnRDYW1wYWlnblNldHRpbmdT",
-            "ZXJ2aWNlEoYCChZHZXRTbWFydENhbXBhaWduU3RhdHVzEkAuZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjI1LnNlcnZpY2VzLkdldFNtYXJ0Q2FtcGFpZ25TdGF0",
-            "dXNSZXF1ZXN0GkEuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnNlcnZpY2Vz",
-            "LkdldFNtYXJ0Q2FtcGFpZ25TdGF0dXNSZXNwb25zZSJn2kENcmVzb3VyY2Vf",
-            "bmFtZYLT5JMCURJPL3YyNS97cmVzb3VyY2VfbmFtZT1jdXN0b21lcnMvKi9z",
-            "bWFydENhbXBhaWduU2V0dGluZ3MvKn06Z2V0U21hcnRDYW1wYWlnblN0YXR1",
-            "cxKNAgobTXV0YXRlU21hcnRDYW1wYWlnblNldHRpbmdzEkUuZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjI1LnNlcnZpY2VzLk11dGF0ZVNtYXJ0Q2FtcGFpZ25T",
-            "ZXR0aW5nc1JlcXVlc3QaRi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUuc2Vy",
-            "dmljZXMuTXV0YXRlU21hcnRDYW1wYWlnblNldHRpbmdzUmVzcG9uc2UiX9pB",
-            "FmN1c3RvbWVyX2lkLG9wZXJhdGlvbnOC0+STAkAiOy92MjUvY3VzdG9tZXJz",
-            "L3tjdXN0b21lcl9pZD0qfS9zbWFydENhbXBhaWduU2V0dGluZ3M6bXV0YXRl",
-            "OgEqGkXKQRhnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb23SQSdodHRwczovL3d3",
-            "dy5nb29nbGVhcGlzLmNvbS9hdXRoL2Fkd29yZHNCjAIKJWNvbS5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MjUuc2VydmljZXNCIFNtYXJ0Q2FtcGFpZ25TZXR0",
-            "aW5nU2VydmljZVByb3RvUAFaSWdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3Rv",
-            "L2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MjUvc2VydmljZXM7c2Vydmlj",
-            "ZXOiAgNHQUGqAiFHb29nbGUuQWRzLkdvb2dsZUFkcy5WMjUuU2VydmljZXPK",
-            "AiFHb29nbGVcQWRzXEdvb2dsZUFkc1xWMjVcU2VydmljZXPqAiVHb29nbGU6",
-            "OkFkczo6R29vZ2xlQWRzOjpWMjU6OlNlcnZpY2VzYgZwcm90bzM="));
+            "bWFydENhbXBhaWduU2V0dGluZyLCAQogR2VuZXJhdGVQTWF4RHJhZnRDYW1w",
+            "YWlnblJlcXVlc3QSTAoNcmVzb3VyY2VfbmFtZRgBIAEoCUI14EEC+kEvCi1n",
+            "b29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vU21hcnRDYW1wYWlnblNldHRpbmcS",
+            "GgoNdmFsaWRhdGVfb25seRgCIAEoCEID4EEBEhgKC2dicF9lbmFibGVkGAMg",
+            "ASgIQgPgQQESGgoNaW1hZ2VfZW5hYmxlZBgEIAEoCEID4EEBIpABCiFHZW5l",
+            "cmF0ZVBNYXhEcmFmdENhbXBhaWduUmVzcG9uc2USFQoNcG1heF9jYW1wYWln",
+            "bhgBIAEoCRIXCg9jYW1wYWlnbl9idWRnZXQYAiABKAkSEwoLYXNzZXRfZ3Jv",
+            "dXAYAyABKAkSDgoGYXNzZXRzGAQgAygJEhYKDnZhbGlkYXRlZF9pbmZvGAUg",
+            "ASgJMpUHChtTbWFydENhbXBhaWduU2V0dGluZ1NlcnZpY2UShgIKFkdldFNt",
+            "YXJ0Q2FtcGFpZ25TdGF0dXMSQC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUu",
+            "c2VydmljZXMuR2V0U21hcnRDYW1wYWlnblN0YXR1c1JlcXVlc3QaQS5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MjUuc2VydmljZXMuR2V0U21hcnRDYW1wYWln",
+            "blN0YXR1c1Jlc3BvbnNlImfaQQ1yZXNvdXJjZV9uYW1lgtPkkwJREk8vdjI1",
+            "L3tyZXNvdXJjZV9uYW1lPWN1c3RvbWVycy8qL3NtYXJ0Q2FtcGFpZ25TZXR0",
+            "aW5ncy8qfTpnZXRTbWFydENhbXBhaWduU3RhdHVzEo0CChtNdXRhdGVTbWFy",
+            "dENhbXBhaWduU2V0dGluZ3MSRS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUu",
+            "c2VydmljZXMuTXV0YXRlU21hcnRDYW1wYWlnblNldHRpbmdzUmVxdWVzdBpG",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5zZXJ2aWNlcy5NdXRhdGVTbWFy",
+            "dENhbXBhaWduU2V0dGluZ3NSZXNwb25zZSJf2kEWY3VzdG9tZXJfaWQsb3Bl",
+            "cmF0aW9uc4LT5JMCQCI7L3YyNS9jdXN0b21lcnMve2N1c3RvbWVyX2lkPSp9",
+            "L3NtYXJ0Q2FtcGFpZ25TZXR0aW5nczptdXRhdGU6ASoSlQIKGUdlbmVyYXRl",
+            "UE1heERyYWZ0Q2FtcGFpZ24SQy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUu",
+            "c2VydmljZXMuR2VuZXJhdGVQTWF4RHJhZnRDYW1wYWlnblJlcXVlc3QaRC5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MjUuc2VydmljZXMuR2VuZXJhdGVQTWF4",
+            "RHJhZnRDYW1wYWlnblJlc3BvbnNlIm3aQQ1yZXNvdXJjZV9uYW1lgtPkkwJX",
+            "IlIvdjI1L3tyZXNvdXJjZV9uYW1lPWN1c3RvbWVycy8qL3NtYXJ0Q2FtcGFp",
+            "Z25TZXR0aW5ncy8qfTpnZW5lcmF0ZVBNYXhEcmFmdENhbXBhaWduOgEqGkXK",
+            "QRhnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb23SQSdodHRwczovL3d3dy5nb29n",
+            "bGVhcGlzLmNvbS9hdXRoL2Fkd29yZHNCjAIKJWNvbS5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MjUuc2VydmljZXNCIFNtYXJ0Q2FtcGFpZ25TZXR0aW5nU2Vy",
+            "dmljZVByb3RvUAFaSWdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2ds",
+            "ZWFwaXMvYWRzL2dvb2dsZWFkcy92MjUvc2VydmljZXM7c2VydmljZXOiAgNH",
+            "QUGqAiFHb29nbGUuQWRzLkdvb2dsZUFkcy5WMjUuU2VydmljZXPKAiFHb29n",
+            "bGVcQWRzXEdvb2dsZUFkc1xWMjVcU2VydmljZXPqAiVHb29nbGU6OkFkczo6",
+            "R29vZ2xlQWRzOjpWMjU6OlNlcnZpY2VzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V25.Enums.ResponseContentTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.SmartCampaignNotEligibleReasonReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.SmartCampaignStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Resources.SmartCampaignSettingReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -118,7 +132,9 @@ namespace Google.Ads.GoogleAds.V25.Services {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.MutateSmartCampaignSettingsRequest), global::Google.Ads.GoogleAds.V25.Services.MutateSmartCampaignSettingsRequest.Parser, new[]{ "CustomerId", "Operations", "PartialFailure", "ValidateOnly", "ResponseContentType" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.SmartCampaignSettingOperation), global::Google.Ads.GoogleAds.V25.Services.SmartCampaignSettingOperation.Parser, new[]{ "Update", "UpdateMask" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.MutateSmartCampaignSettingsResponse), global::Google.Ads.GoogleAds.V25.Services.MutateSmartCampaignSettingsResponse.Parser, new[]{ "PartialFailureError", "Results" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.MutateSmartCampaignSettingResult), global::Google.Ads.GoogleAds.V25.Services.MutateSmartCampaignSettingResult.Parser, new[]{ "ResourceName", "SmartCampaignSetting" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.MutateSmartCampaignSettingResult), global::Google.Ads.GoogleAds.V25.Services.MutateSmartCampaignSettingResult.Parser, new[]{ "ResourceName", "SmartCampaignSetting" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.GeneratePMaxDraftCampaignRequest), global::Google.Ads.GoogleAds.V25.Services.GeneratePMaxDraftCampaignRequest.Parser, new[]{ "ResourceName", "ValidateOnly", "GbpEnabled", "ImageEnabled" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Services.GeneratePMaxDraftCampaignResponse), global::Google.Ads.GoogleAds.V25.Services.GeneratePMaxDraftCampaignResponse.Parser, new[]{ "PmaxCampaign", "CampaignBudget", "AssetGroup", "Assets", "ValidatedInfo" }, null, null, null, null)
           }));
     }
     #endregion
@@ -3116,6 +3132,689 @@ namespace Google.Ads.GoogleAds.V25.Services {
               SmartCampaignSetting = new global::Google.Ads.GoogleAds.V25.Resources.SmartCampaignSetting();
             }
             input.ReadMessage(SmartCampaignSetting);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Request message for
+  /// [SmartCampaignSettingService.GeneratePMaxDraftCampaign][google.ads.googleads.v25.services.SmartCampaignSettingService.GeneratePMaxDraftCampaign].
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class GeneratePMaxDraftCampaignRequest : pb::IMessage<GeneratePMaxDraftCampaignRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GeneratePMaxDraftCampaignRequest> _parser = new pb::MessageParser<GeneratePMaxDraftCampaignRequest>(() => new GeneratePMaxDraftCampaignRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GeneratePMaxDraftCampaignRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V25.Services.SmartCampaignSettingServiceReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GeneratePMaxDraftCampaignRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GeneratePMaxDraftCampaignRequest(GeneratePMaxDraftCampaignRequest other) : this() {
+      resourceName_ = other.resourceName_;
+      validateOnly_ = other.validateOnly_;
+      gbpEnabled_ = other.gbpEnabled_;
+      imageEnabled_ = other.imageEnabled_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GeneratePMaxDraftCampaignRequest Clone() {
+      return new GeneratePMaxDraftCampaignRequest(this);
+    }
+
+    /// <summary>Field number for the "resource_name" field.</summary>
+    public const int ResourceNameFieldNumber = 1;
+    private string resourceName_ = "";
+    /// <summary>
+    /// Required. The resource name of the Smart campaign setting to regenerate.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ResourceName {
+      get { return resourceName_; }
+      set {
+        resourceName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "validate_only" field.</summary>
+    public const int ValidateOnlyFieldNumber = 2;
+    private bool validateOnly_;
+    /// <summary>
+    /// Optional. If true, the request will be validated but not executed. Only
+    /// validation errors/warnings will be returned.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ValidateOnly {
+      get { return validateOnly_; }
+      set {
+        validateOnly_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "gbp_enabled" field.</summary>
+    public const int GbpEnabledFieldNumber = 3;
+    private bool gbpEnabled_;
+    /// <summary>
+    /// Optional. Whether to enable to convert GBP (Google Business Profile)
+    /// location linked with the PMax campaign.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool GbpEnabled {
+      get { return gbpEnabled_; }
+      set {
+        gbpEnabled_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "image_enabled" field.</summary>
+    public const int ImageEnabledFieldNumber = 4;
+    private bool imageEnabled_;
+    /// <summary>
+    /// Optional. Whether to generate PMax campaign required images, like
+    /// Horizontal, Square, logo types.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ImageEnabled {
+      get { return imageEnabled_; }
+      set {
+        imageEnabled_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GeneratePMaxDraftCampaignRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GeneratePMaxDraftCampaignRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ResourceName != other.ResourceName) return false;
+      if (ValidateOnly != other.ValidateOnly) return false;
+      if (GbpEnabled != other.GbpEnabled) return false;
+      if (ImageEnabled != other.ImageEnabled) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ResourceName.Length != 0) hash ^= ResourceName.GetHashCode();
+      if (ValidateOnly != false) hash ^= ValidateOnly.GetHashCode();
+      if (GbpEnabled != false) hash ^= GbpEnabled.GetHashCode();
+      if (ImageEnabled != false) hash ^= ImageEnabled.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (ValidateOnly != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(ValidateOnly);
+      }
+      if (GbpEnabled != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(GbpEnabled);
+      }
+      if (ImageEnabled != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(ImageEnabled);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ResourceName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ResourceName);
+      }
+      if (ValidateOnly != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(ValidateOnly);
+      }
+      if (GbpEnabled != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(GbpEnabled);
+      }
+      if (ImageEnabled != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(ImageEnabled);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (ResourceName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ResourceName);
+      }
+      if (ValidateOnly != false) {
+        size += 1 + 1;
+      }
+      if (GbpEnabled != false) {
+        size += 1 + 1;
+      }
+      if (ImageEnabled != false) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GeneratePMaxDraftCampaignRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ResourceName.Length != 0) {
+        ResourceName = other.ResourceName;
+      }
+      if (other.ValidateOnly != false) {
+        ValidateOnly = other.ValidateOnly;
+      }
+      if (other.GbpEnabled != false) {
+        GbpEnabled = other.GbpEnabled;
+      }
+      if (other.ImageEnabled != false) {
+        ImageEnabled = other.ImageEnabled;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 16: {
+            ValidateOnly = input.ReadBool();
+            break;
+          }
+          case 24: {
+            GbpEnabled = input.ReadBool();
+            break;
+          }
+          case 32: {
+            ImageEnabled = input.ReadBool();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ResourceName = input.ReadString();
+            break;
+          }
+          case 16: {
+            ValidateOnly = input.ReadBool();
+            break;
+          }
+          case 24: {
+            GbpEnabled = input.ReadBool();
+            break;
+          }
+          case 32: {
+            ImageEnabled = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Response message for
+  /// [SmartCampaignSettingService.GeneratePMaxDraftCampaign][google.ads.googleads.v25.services.SmartCampaignSettingService.GeneratePMaxDraftCampaign].
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class GeneratePMaxDraftCampaignResponse : pb::IMessage<GeneratePMaxDraftCampaignResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GeneratePMaxDraftCampaignResponse> _parser = new pb::MessageParser<GeneratePMaxDraftCampaignResponse>(() => new GeneratePMaxDraftCampaignResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GeneratePMaxDraftCampaignResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V25.Services.SmartCampaignSettingServiceReflection.Descriptor.MessageTypes[12]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GeneratePMaxDraftCampaignResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GeneratePMaxDraftCampaignResponse(GeneratePMaxDraftCampaignResponse other) : this() {
+      pmaxCampaign_ = other.pmaxCampaign_;
+      campaignBudget_ = other.campaignBudget_;
+      assetGroup_ = other.assetGroup_;
+      assets_ = other.assets_.Clone();
+      validatedInfo_ = other.validatedInfo_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GeneratePMaxDraftCampaignResponse Clone() {
+      return new GeneratePMaxDraftCampaignResponse(this);
+    }
+
+    /// <summary>Field number for the "pmax_campaign" field.</summary>
+    public const int PmaxCampaignFieldNumber = 1;
+    private string pmaxCampaign_ = "";
+    /// <summary>
+    /// The Campaign resource name of the generated draft PMax campaign.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string PmaxCampaign {
+      get { return pmaxCampaign_; }
+      set {
+        pmaxCampaign_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "campaign_budget" field.</summary>
+    public const int CampaignBudgetFieldNumber = 2;
+    private string campaignBudget_ = "";
+    /// <summary>
+    /// The CampaignBudget resource name linking with the PMax campaign.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CampaignBudget {
+      get { return campaignBudget_; }
+      set {
+        campaignBudget_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "asset_group" field.</summary>
+    public const int AssetGroupFieldNumber = 3;
+    private string assetGroup_ = "";
+    /// <summary>
+    /// The AssetGroup resource name linking with the PMax campaign.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string AssetGroup {
+      get { return assetGroup_; }
+      set {
+        assetGroup_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "assets" field.</summary>
+    public const int AssetsFieldNumber = 4;
+    private static readonly pb::FieldCodec<string> _repeated_assets_codec
+        = pb::FieldCodec.ForString(34);
+    private readonly pbc::RepeatedField<string> assets_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// The resource names of all assets linking with the PMax campaign.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<string> Assets {
+      get { return assets_; }
+    }
+
+    /// <summary>Field number for the "validated_info" field.</summary>
+    public const int ValidatedInfoFieldNumber = 5;
+    private string validatedInfo_ = "";
+    /// <summary>
+    /// Validation info or possible convert issues returned when validate_only is
+    /// true.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ValidatedInfo {
+      get { return validatedInfo_; }
+      set {
+        validatedInfo_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GeneratePMaxDraftCampaignResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GeneratePMaxDraftCampaignResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (PmaxCampaign != other.PmaxCampaign) return false;
+      if (CampaignBudget != other.CampaignBudget) return false;
+      if (AssetGroup != other.AssetGroup) return false;
+      if(!assets_.Equals(other.assets_)) return false;
+      if (ValidatedInfo != other.ValidatedInfo) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (PmaxCampaign.Length != 0) hash ^= PmaxCampaign.GetHashCode();
+      if (CampaignBudget.Length != 0) hash ^= CampaignBudget.GetHashCode();
+      if (AssetGroup.Length != 0) hash ^= AssetGroup.GetHashCode();
+      hash ^= assets_.GetHashCode();
+      if (ValidatedInfo.Length != 0) hash ^= ValidatedInfo.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (PmaxCampaign.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(PmaxCampaign);
+      }
+      if (CampaignBudget.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(CampaignBudget);
+      }
+      if (AssetGroup.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(AssetGroup);
+      }
+      assets_.WriteTo(output, _repeated_assets_codec);
+      if (ValidatedInfo.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(ValidatedInfo);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (PmaxCampaign.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(PmaxCampaign);
+      }
+      if (CampaignBudget.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(CampaignBudget);
+      }
+      if (AssetGroup.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(AssetGroup);
+      }
+      assets_.WriteTo(ref output, _repeated_assets_codec);
+      if (ValidatedInfo.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(ValidatedInfo);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (PmaxCampaign.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PmaxCampaign);
+      }
+      if (CampaignBudget.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CampaignBudget);
+      }
+      if (AssetGroup.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AssetGroup);
+      }
+      size += assets_.CalculateSize(_repeated_assets_codec);
+      if (ValidatedInfo.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ValidatedInfo);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GeneratePMaxDraftCampaignResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.PmaxCampaign.Length != 0) {
+        PmaxCampaign = other.PmaxCampaign;
+      }
+      if (other.CampaignBudget.Length != 0) {
+        CampaignBudget = other.CampaignBudget;
+      }
+      if (other.AssetGroup.Length != 0) {
+        AssetGroup = other.AssetGroup;
+      }
+      assets_.Add(other.assets_);
+      if (other.ValidatedInfo.Length != 0) {
+        ValidatedInfo = other.ValidatedInfo;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            PmaxCampaign = input.ReadString();
+            break;
+          }
+          case 18: {
+            CampaignBudget = input.ReadString();
+            break;
+          }
+          case 26: {
+            AssetGroup = input.ReadString();
+            break;
+          }
+          case 34: {
+            assets_.AddEntriesFrom(input, _repeated_assets_codec);
+            break;
+          }
+          case 42: {
+            ValidatedInfo = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            PmaxCampaign = input.ReadString();
+            break;
+          }
+          case 18: {
+            CampaignBudget = input.ReadString();
+            break;
+          }
+          case 26: {
+            AssetGroup = input.ReadString();
+            break;
+          }
+          case 34: {
+            assets_.AddEntriesFrom(ref input, _repeated_assets_codec);
+            break;
+          }
+          case 42: {
+            ValidatedInfo = input.ReadString();
             break;
           }
         }

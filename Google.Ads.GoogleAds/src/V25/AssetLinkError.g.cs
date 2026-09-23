@@ -334,7 +334,8 @@ namespace Google.Ads.GoogleAds.V25.Errors {
         /// </summary>
         [pbr::OriginalName("CANNOT_CREATE_AUTOMATICALLY_CREATED_LINKS")] CannotCreateAutomaticallyCreatedLinks = 19,
         /// <summary>
-        /// Advertiser links cannot link to automatically created asset.
+        /// Advertiser links cannot link to text customization (formerly
+        /// automatically created asset).
         /// </summary>
         [pbr::OriginalName("CANNOT_LINK_TO_AUTOMATICALLY_CREATED_ASSET")] CannotLinkToAutomaticallyCreatedAsset = 20,
         /// <summary>

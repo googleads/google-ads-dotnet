@@ -50,7 +50,7 @@ namespace Google.Ads.GoogleAds.V25.Errors {
   }
   #region Messages
   /// <summary>
-  /// Container for enum describing possible automatically created asset removal
+  /// Container for enum describing possible text customization removal
   /// errors.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
@@ -218,7 +218,7 @@ namespace Google.Ads.GoogleAds.V25.Errors {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static partial class Types {
       /// <summary>
-      /// Enum describing possible automatically created asset removal errors.
+      /// Enum describing possible text customization removal errors.
       /// </summary>
       public enum AutomaticallyCreatedAssetRemovalError {
         /// <summary>
@@ -246,7 +246,7 @@ namespace Google.Ads.GoogleAds.V25.Errors {
         /// </summary>
         [pbr::OriginalName("ASSET_FIELD_TYPE_DOES_NOT_MATCH")] AssetFieldTypeDoesNotMatch = 5,
         /// <summary>
-        /// Not an automatically created asset.
+        /// Not a text customization (formerly automatically created asset).
         /// </summary>
         [pbr::OriginalName("NOT_AN_AUTOMATICALLY_CREATED_ASSET")] NotAnAutomaticallyCreatedAsset = 6,
       }

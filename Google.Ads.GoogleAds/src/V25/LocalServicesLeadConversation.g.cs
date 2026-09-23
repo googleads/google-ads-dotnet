@@ -901,7 +901,8 @@ namespace Google.Ads.GoogleAds.V25.Resources {
     private readonly pbc::RepeatedField<string> attachmentUrls_ = new pbc::RepeatedField<string>();
     /// <summary>
     /// Output only. URL to the SMS or email attachments. These URLs can be used to
-    /// download the contents of the attachment by using the developer token.
+    /// download the contents of the attachment using authorized Google Cloud
+    /// project credentials.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

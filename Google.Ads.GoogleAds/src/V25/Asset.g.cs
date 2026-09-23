@@ -755,7 +755,7 @@ namespace Google.Ads.GoogleAds.V25.Resources {
     /// <summary>Field number for the "page_feed_asset" field.</summary>
     public const int PageFeedAssetFieldNumber = 23;
     /// <summary>
-    /// A page feed asset.
+    /// A page URL inclusion.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

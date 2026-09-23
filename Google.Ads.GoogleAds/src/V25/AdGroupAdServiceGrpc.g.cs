@@ -156,7 +156,8 @@ namespace Google.Ads.GoogleAds.V25.Services {
       }
 
       /// <summary>
-      /// Remove automatically created assets from an ad.
+      /// Remove text customization (formerly automatically created assets) from an
+      /// ad.
       ///
       /// List of thrown errors:
       ///   [AdError]()
@@ -436,7 +437,8 @@ namespace Google.Ads.GoogleAds.V25.Services {
         return CallInvoker.AsyncUnaryCall(__Method_MutateAdGroupAds, null, options, request);
       }
       /// <summary>
-      /// Remove automatically created assets from an ad.
+      /// Remove text customization (formerly automatically created assets) from an
+      /// ad.
       ///
       /// List of thrown errors:
       ///   [AdError]()
@@ -460,7 +462,8 @@ namespace Google.Ads.GoogleAds.V25.Services {
         return RemoveAutomaticallyCreatedAssets(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Remove automatically created assets from an ad.
+      /// Remove text customization (formerly automatically created assets) from an
+      /// ad.
       ///
       /// List of thrown errors:
       ///   [AdError]()
@@ -482,7 +485,8 @@ namespace Google.Ads.GoogleAds.V25.Services {
         return CallInvoker.BlockingUnaryCall(__Method_RemoveAutomaticallyCreatedAssets, null, options, request);
       }
       /// <summary>
-      /// Remove automatically created assets from an ad.
+      /// Remove text customization (formerly automatically created assets) from an
+      /// ad.
       ///
       /// List of thrown errors:
       ///   [AdError]()
@@ -506,7 +510,8 @@ namespace Google.Ads.GoogleAds.V25.Services {
         return RemoveAutomaticallyCreatedAssetsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Remove automatically created assets from an ad.
+      /// Remove text customization (formerly automatically created assets) from an
+      /// ad.
       ///
       /// List of thrown errors:
       ///   [AdError]()

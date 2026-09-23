@@ -1,3 +1,7 @@
+27.4.0
+======
+- Added support for version 25.2 of the Google Ads API.
+
 27.3.0
 ======
 - Relaxed the checks for DeveloperToken header.

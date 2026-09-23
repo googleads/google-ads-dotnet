@@ -713,7 +713,7 @@ namespace Google.Ads.GoogleAds.V25.Enums {
         /// </summary>
         [pbr::OriginalName("AD_IMAGE_AD_GROUP_ASSETS_PER_AD_GROUP")] AdImageAdGroupAssetsPerAdGroup = 176,
         /// <summary>
-        /// Number of ENABLED page feed asset sets per customer.
+        /// Number of ENABLED page URL inclusion sets per customer.
         /// </summary>
         [pbr::OriginalName("PAGE_FEED_ASSET_SETS_PER_CUSTOMER")] PageFeedAssetSetsPerCustomer = 157,
         /// <summary>
@@ -721,7 +721,8 @@ namespace Google.Ads.GoogleAds.V25.Enums {
         /// </summary>
         [pbr::OriginalName("DYNAMIC_EDUCATION_FEED_ASSET_SETS_PER_CUSTOMER")] DynamicEducationFeedAssetSetsPerCustomer = 158,
         /// <summary>
-        /// Number of ENABLED assets per page feed asset set.
+        /// Number of ENABLED assets per page URL inclusion set (formerly page feed
+        /// asset set).
         /// </summary>
         [pbr::OriginalName("ASSETS_PER_PAGE_FEED_ASSET_SET")] AssetsPerPageFeedAssetSet = 159,
         /// <summary>

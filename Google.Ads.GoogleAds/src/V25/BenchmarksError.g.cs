@@ -26,15 +26,15 @@ namespace Google.Ads.GoogleAds.V25.Errors {
           string.Concat(
             "CjZnb29nbGUvYWRzL2dvb2dsZWFkcy92MjUvZXJyb3JzL2JlbmNobWFya3Nf",
             "ZXJyb3IucHJvdG8SH2dvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5lcnJvcnMi",
-            "aQoTQmVuY2htYXJrc0Vycm9yRW51bSJSCg9CZW5jaG1hcmtzRXJyb3ISDwoL",
+            "fwoTQmVuY2htYXJrc0Vycm9yRW51bSJoCg9CZW5jaG1hcmtzRXJyb3ISDwoL",
             "VU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESIQodTUFYX1FVRVJZX0NPTVBM",
-            "RVhJVFlfRVhDRUVERUQQAkL0AQojY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYyNS5lcnJvcnNCFEJlbmNobWFya3NFcnJvclByb3RvUAFaRWdvb2dsZS5n",
-            "b2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92",
-            "MjUvZXJyb3JzO2Vycm9yc6ICA0dBQaoCH0dvb2dsZS5BZHMuR29vZ2xlQWRz",
-            "LlYyNS5FcnJvcnPKAh9Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMjVcRXJyb3Jz",
-            "6gIjR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjI1OjpFcnJvcnNiBnByb3Rv",
-            "Mw=="));
+            "RVhJVFlfRVhDRUVERUQQAhIUChBOT19NRVRSSUNTX0ZPVU5EEANC9AEKI2Nv",
+            "bS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUuZXJyb3JzQhRCZW5jaG1hcmtz",
+            "RXJyb3JQcm90b1ABWkVnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29n",
+            "bGVhcGlzL2Fkcy9nb29nbGVhZHMvdjI1L2Vycm9ycztlcnJvcnOiAgNHQUGq",
+            "Ah9Hb29nbGUuQWRzLkdvb2dsZUFkcy5WMjUuRXJyb3JzygIfR29vZ2xlXEFk",
+            "c1xHb29nbGVBZHNcVjI1XEVycm9yc+oCI0dvb2dsZTo6QWRzOjpHb29nbGVB",
+            "ZHM6OlYyNTo6RXJyb3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -231,6 +231,12 @@ namespace Google.Ads.GoogleAds.V25.Errors {
         /// smaller date range, or a smaller set of products.
         /// </summary>
         [pbr::OriginalName("MAX_QUERY_COMPLEXITY_EXCEEDED")] MaxQueryComplexityExceeded = 2,
+        /// <summary>
+        /// No metrics were found for the given combination of inputs (vertical or
+        /// categories supplied, location, date range, and products). Try selecting
+        /// a different combination of inputs.
+        /// </summary>
+        [pbr::OriginalName("NO_METRICS_FOUND")] NoMetricsFound = 3,
       }
 
     }

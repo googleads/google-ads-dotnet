@@ -5581,6 +5581,14 @@ namespace Google.Ads.GoogleAds.V25.Services {
     private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V25.Services.InsightsAudience> audiences_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V25.Services.InsightsAudience>();
     /// <summary>
     /// Required. Audiences to request metrics for.
+    /// [InsightsAudience.country_locations][google.ads.googleads.v25.services.InsightsAudience.country_locations],
+    /// [InsightsAudience.gender][google.ads.googleads.v25.services.InsightsAudience.gender],
+    /// [InsightsAudience.age_ranges][google.ads.googleads.v25.services.InsightsAudience.age_ranges]
+    /// and
+    /// [InsightsAudience.topic_audience_combinations][google.ads.googleads.v25.services.InsightsAudience.topic_audience_combinations]
+    /// are the only supported fields for these audiences. Only
+    /// [AudienceInsightsAttribute.user_interest][google.ads.googleads.v25.common.AudienceInsightsAttribute.user_interest]
+    /// attributes are supported for topic_audience_combinations.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

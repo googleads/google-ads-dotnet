@@ -1500,6 +1500,14 @@ namespace Google.Ads.GoogleAds.V25.Services
         /// </param>
         /// <param name="audiences">
         /// Required. Audiences to request metrics for.
+        /// [InsightsAudience.country_locations][google.ads.googleads.v25.services.InsightsAudience.country_locations],
+        /// [InsightsAudience.gender][google.ads.googleads.v25.services.InsightsAudience.gender],
+        /// [InsightsAudience.age_ranges][google.ads.googleads.v25.services.InsightsAudience.age_ranges]
+        /// and
+        /// [InsightsAudience.topic_audience_combinations][google.ads.googleads.v25.services.InsightsAudience.topic_audience_combinations]
+        /// are the only supported fields for these audiences. Only
+        /// [AudienceInsightsAttribute.user_interest][google.ads.googleads.v25.common.AudienceInsightsAttribute.user_interest]
+        /// attributes are supported for topic_audience_combinations.
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>The RPC response.</returns>
@@ -1535,6 +1543,14 @@ namespace Google.Ads.GoogleAds.V25.Services
         /// </param>
         /// <param name="audiences">
         /// Required. Audiences to request metrics for.
+        /// [InsightsAudience.country_locations][google.ads.googleads.v25.services.InsightsAudience.country_locations],
+        /// [InsightsAudience.gender][google.ads.googleads.v25.services.InsightsAudience.gender],
+        /// [InsightsAudience.age_ranges][google.ads.googleads.v25.services.InsightsAudience.age_ranges]
+        /// and
+        /// [InsightsAudience.topic_audience_combinations][google.ads.googleads.v25.services.InsightsAudience.topic_audience_combinations]
+        /// are the only supported fields for these audiences. Only
+        /// [AudienceInsightsAttribute.user_interest][google.ads.googleads.v25.common.AudienceInsightsAttribute.user_interest]
+        /// attributes are supported for topic_audience_combinations.
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A Task containing the RPC response.</returns>
@@ -1570,6 +1586,14 @@ namespace Google.Ads.GoogleAds.V25.Services
         /// </param>
         /// <param name="audiences">
         /// Required. Audiences to request metrics for.
+        /// [InsightsAudience.country_locations][google.ads.googleads.v25.services.InsightsAudience.country_locations],
+        /// [InsightsAudience.gender][google.ads.googleads.v25.services.InsightsAudience.gender],
+        /// [InsightsAudience.age_ranges][google.ads.googleads.v25.services.InsightsAudience.age_ranges]
+        /// and
+        /// [InsightsAudience.topic_audience_combinations][google.ads.googleads.v25.services.InsightsAudience.topic_audience_combinations]
+        /// are the only supported fields for these audiences. Only
+        /// [AudienceInsightsAttribute.user_interest][google.ads.googleads.v25.common.AudienceInsightsAttribute.user_interest]
+        /// attributes are supported for topic_audience_combinations.
         /// </param>
         /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
         /// <returns>A Task containing the RPC response.</returns>

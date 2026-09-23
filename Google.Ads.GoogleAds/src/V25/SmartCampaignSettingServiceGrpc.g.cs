@@ -71,6 +71,10 @@ namespace Google.Ads.GoogleAds.V25.Services {
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V25.Services.MutateSmartCampaignSettingsRequest> __Marshaller_google_ads_googleads_v25_services_MutateSmartCampaignSettingsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V25.Services.MutateSmartCampaignSettingsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V25.Services.MutateSmartCampaignSettingsResponse> __Marshaller_google_ads_googleads_v25_services_MutateSmartCampaignSettingsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V25.Services.MutateSmartCampaignSettingsResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V25.Services.GeneratePMaxDraftCampaignRequest> __Marshaller_google_ads_googleads_v25_services_GeneratePMaxDraftCampaignRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V25.Services.GeneratePMaxDraftCampaignRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Google.Ads.GoogleAds.V25.Services.GeneratePMaxDraftCampaignResponse> __Marshaller_google_ads_googleads_v25_services_GeneratePMaxDraftCampaignResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Ads.GoogleAds.V25.Services.GeneratePMaxDraftCampaignResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Google.Ads.GoogleAds.V25.Services.GetSmartCampaignStatusRequest, global::Google.Ads.GoogleAds.V25.Services.GetSmartCampaignStatusResponse> __Method_GetSmartCampaignStatus = new grpc::Method<global::Google.Ads.GoogleAds.V25.Services.GetSmartCampaignStatusRequest, global::Google.Ads.GoogleAds.V25.Services.GetSmartCampaignStatusResponse>(
@@ -87,6 +91,14 @@ namespace Google.Ads.GoogleAds.V25.Services {
         "MutateSmartCampaignSettings",
         __Marshaller_google_ads_googleads_v25_services_MutateSmartCampaignSettingsRequest,
         __Marshaller_google_ads_googleads_v25_services_MutateSmartCampaignSettingsResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Google.Ads.GoogleAds.V25.Services.GeneratePMaxDraftCampaignRequest, global::Google.Ads.GoogleAds.V25.Services.GeneratePMaxDraftCampaignResponse> __Method_GeneratePMaxDraftCampaign = new grpc::Method<global::Google.Ads.GoogleAds.V25.Services.GeneratePMaxDraftCampaignRequest, global::Google.Ads.GoogleAds.V25.Services.GeneratePMaxDraftCampaignResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GeneratePMaxDraftCampaign",
+        __Marshaller_google_ads_googleads_v25_services_GeneratePMaxDraftCampaignRequest,
+        __Marshaller_google_ads_googleads_v25_services_GeneratePMaxDraftCampaignResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -118,6 +130,21 @@ namespace Google.Ads.GoogleAds.V25.Services {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Google.Ads.GoogleAds.V25.Services.MutateSmartCampaignSettingsResponse> MutateSmartCampaignSettings(global::Google.Ads.GoogleAds.V25.Services.MutateSmartCampaignSettingsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Generates a Performance Max (PMax) draft campaign from an existing Smart
+      /// campaign, initialized with a status of [CampaignStatus.PAUSED] and a
+      /// creation status of [CampaignCreationStatus.INCOMPLETE]. Returns the draft
+      /// PMax campaign ID and related entity IDs.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Google.Ads.GoogleAds.V25.Services.GeneratePMaxDraftCampaignResponse> GeneratePMaxDraftCampaign(global::Google.Ads.GoogleAds.V25.Services.GeneratePMaxDraftCampaignRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -247,6 +274,66 @@ namespace Google.Ads.GoogleAds.V25.Services {
       {
         return CallInvoker.AsyncUnaryCall(__Method_MutateSmartCampaignSettings, null, options, request);
       }
+      /// <summary>
+      /// Generates a Performance Max (PMax) draft campaign from an existing Smart
+      /// campaign, initialized with a status of [CampaignStatus.PAUSED] and a
+      /// creation status of [CampaignCreationStatus.INCOMPLETE]. Returns the draft
+      /// PMax campaign ID and related entity IDs.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Ads.GoogleAds.V25.Services.GeneratePMaxDraftCampaignResponse GeneratePMaxDraftCampaign(global::Google.Ads.GoogleAds.V25.Services.GeneratePMaxDraftCampaignRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GeneratePMaxDraftCampaign(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Generates a Performance Max (PMax) draft campaign from an existing Smart
+      /// campaign, initialized with a status of [CampaignStatus.PAUSED] and a
+      /// creation status of [CampaignCreationStatus.INCOMPLETE]. Returns the draft
+      /// PMax campaign ID and related entity IDs.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Google.Ads.GoogleAds.V25.Services.GeneratePMaxDraftCampaignResponse GeneratePMaxDraftCampaign(global::Google.Ads.GoogleAds.V25.Services.GeneratePMaxDraftCampaignRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GeneratePMaxDraftCampaign, null, options, request);
+      }
+      /// <summary>
+      /// Generates a Performance Max (PMax) draft campaign from an existing Smart
+      /// campaign, initialized with a status of [CampaignStatus.PAUSED] and a
+      /// creation status of [CampaignCreationStatus.INCOMPLETE]. Returns the draft
+      /// PMax campaign ID and related entity IDs.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Ads.GoogleAds.V25.Services.GeneratePMaxDraftCampaignResponse> GeneratePMaxDraftCampaignAsync(global::Google.Ads.GoogleAds.V25.Services.GeneratePMaxDraftCampaignRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GeneratePMaxDraftCampaignAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Generates a Performance Max (PMax) draft campaign from an existing Smart
+      /// campaign, initialized with a status of [CampaignStatus.PAUSED] and a
+      /// creation status of [CampaignCreationStatus.INCOMPLETE]. Returns the draft
+      /// PMax campaign ID and related entity IDs.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Google.Ads.GoogleAds.V25.Services.GeneratePMaxDraftCampaignResponse> GeneratePMaxDraftCampaignAsync(global::Google.Ads.GoogleAds.V25.Services.GeneratePMaxDraftCampaignRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GeneratePMaxDraftCampaign, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override SmartCampaignSettingServiceClient NewInstance(ClientBaseConfiguration configuration)
@@ -262,7 +349,8 @@ namespace Google.Ads.GoogleAds.V25.Services {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_GetSmartCampaignStatus, serviceImpl.GetSmartCampaignStatus)
-          .AddMethod(__Method_MutateSmartCampaignSettings, serviceImpl.MutateSmartCampaignSettings).Build();
+          .AddMethod(__Method_MutateSmartCampaignSettings, serviceImpl.MutateSmartCampaignSettings)
+          .AddMethod(__Method_GeneratePMaxDraftCampaign, serviceImpl.GeneratePMaxDraftCampaign).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -274,6 +362,7 @@ namespace Google.Ads.GoogleAds.V25.Services {
     {
       serviceBinder.AddMethod(__Method_GetSmartCampaignStatus, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Ads.GoogleAds.V25.Services.GetSmartCampaignStatusRequest, global::Google.Ads.GoogleAds.V25.Services.GetSmartCampaignStatusResponse>(serviceImpl.GetSmartCampaignStatus));
       serviceBinder.AddMethod(__Method_MutateSmartCampaignSettings, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Ads.GoogleAds.V25.Services.MutateSmartCampaignSettingsRequest, global::Google.Ads.GoogleAds.V25.Services.MutateSmartCampaignSettingsResponse>(serviceImpl.MutateSmartCampaignSettings));
+      serviceBinder.AddMethod(__Method_GeneratePMaxDraftCampaign, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Ads.GoogleAds.V25.Services.GeneratePMaxDraftCampaignRequest, global::Google.Ads.GoogleAds.V25.Services.GeneratePMaxDraftCampaignResponse>(serviceImpl.GeneratePMaxDraftCampaign));
     }
 
   }

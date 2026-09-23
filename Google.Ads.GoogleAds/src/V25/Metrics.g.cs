@@ -28,7 +28,7 @@ namespace Google.Ads.GoogleAds.V25.Common {
             "dG8SH2dvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5jb21tb24aO2dvb2dsZS9h",
             "ZHMvZ29vZ2xlYWRzL3YyNS9lbnVtcy9pbnRlcmFjdGlvbl9ldmVudF90eXBl",
             "LnByb3RvGjlnb29nbGUvYWRzL2dvb2dsZWFkcy92MjUvZW51bXMvcXVhbGl0",
-            "eV9zY29yZV9idWNrZXQucHJvdG8isOMBCgdNZXRyaWNzEjAKImFic29sdXRl",
+            "eV9zY29yZV9idWNrZXQucHJvdG8i2OUBCgdNZXRyaWNzEjAKImFic29sdXRl",
             "X3RvcF9pbXByZXNzaW9uX3BlcmNlbnRhZ2UYtwEgASgBSACIAQESHQoPYWN0",
             "aXZlX3ZpZXdfY3BtGLgBIAEoAUgBiAEBEh0KD2FjdGl2ZV92aWV3X2N0chi5",
             "ASABKAFIAogBARIlChdhY3RpdmVfdmlld19pbXByZXNzaW9ucxi6ASABKANI",
@@ -402,291 +402,297 @@ namespace Google.Ads.GoogleAds.V25.Common {
             "YnJhbmRfbGlmdF9wOTBfdXBwZXJfYm91bmQYjwQgASgBSMYCiAEBEh8KEHlv",
             "dXR1YmVfY29tbWVudHMYkAQgASgDSMcCiAEBEhwKDXlvdXR1YmVfbGlrZXMY",
             "kQQgASgDSMgCiAEBEh0KDnlvdXR1YmVfc2hhcmVzGJIEIAEoA0jJAogBARIo",
-            "ChlvcmlnaW5hbF9jb252ZXJzaW9uX3ZhbHVlGJMEIAEoAUjKAogBAUIlCiNf",
-            "YWJzb2x1dGVfdG9wX2ltcHJlc3Npb25fcGVyY2VudGFnZUISChBfYWN0aXZl",
-            "X3ZpZXdfY3BtQhIKEF9hY3RpdmVfdmlld19jdHJCGgoYX2FjdGl2ZV92aWV3",
-            "X2ltcHJlc3Npb25zQhwKGl9hY3RpdmVfdmlld19tZWFzdXJhYmlsaXR5QiUK",
-            "I19hY3RpdmVfdmlld19tZWFzdXJhYmxlX2Nvc3RfbWljcm9zQiUKI19hY3Rp",
-            "dmVfdmlld19tZWFzdXJhYmxlX2ltcHJlc3Npb25zQhoKGF9hY3RpdmVfdmll",
-            "d192aWV3YWJpbGl0eUIpCidfYWxsX2NvbnZlcnNpb25zX2Zyb21faW50ZXJh",
-            "Y3Rpb25zX3JhdGVCGAoWX2FsbF9jb252ZXJzaW9uc192YWx1ZUIrCilfYWxs",
-            "X2NvbnZlcnNpb25zX3ZhbHVlX2J5X2NvbnZlcnNpb25fZGF0ZUIiCiBfYWxs",
-            "X25ld19jdXN0b21lcl9saWZldGltZV92YWx1ZUISChBfYWxsX2NvbnZlcnNp",
-            "b25zQiUKI19hbGxfY29udmVyc2lvbnNfYnlfY29udmVyc2lvbl9kYXRlQiEK",
-            "H19hbGxfY29udmVyc2lvbnNfdmFsdWVfcGVyX2Nvc3RCJQojX2FsbF9jb252",
-            "ZXJzaW9uc19mcm9tX2NsaWNrX3RvX2NhbGxCIgogX2FsbF9jb252ZXJzaW9u",
-            "c19mcm9tX2RpcmVjdGlvbnNCOgo4X2FsbF9jb252ZXJzaW9uc19mcm9tX2lu",
-            "dGVyYWN0aW9uc192YWx1ZV9wZXJfaW50ZXJhY3Rpb25CHAoaX2FsbF9jb252",
-            "ZXJzaW9uc19mcm9tX21lbnVCHQobX2FsbF9jb252ZXJzaW9uc19mcm9tX29y",
-            "ZGVyQigKJl9hbGxfY29udmVyc2lvbnNfZnJvbV9vdGhlcl9lbmdhZ2VtZW50",
-            "QiMKIV9hbGxfY29udmVyc2lvbnNfZnJvbV9zdG9yZV92aXNpdEIlCiNfYWxs",
-            "X2NvbnZlcnNpb25zX2Zyb21fc3RvcmVfd2Vic2l0ZUI8CjpfYXVjdGlvbl9p",
-            "bnNpZ2h0X3NlYXJjaF9hYnNvbHV0ZV90b3BfaW1wcmVzc2lvbl9wZXJjZW50",
-            "YWdlQioKKF9hdWN0aW9uX2luc2lnaHRfc2VhcmNoX2ltcHJlc3Npb25fc2hh",
-            "cmVCKgooX2F1Y3Rpb25faW5zaWdodF9zZWFyY2hfb3V0cmFua2luZ19zaGFy",
-            "ZUImCiRfYXVjdGlvbl9pbnNpZ2h0X3NlYXJjaF9vdmVybGFwX3JhdGVCLQor",
-            "X2F1Y3Rpb25faW5zaWdodF9zZWFyY2hfcG9zaXRpb25fYWJvdmVfcmF0ZUIz",
-            "CjFfYXVjdGlvbl9pbnNpZ2h0X3NlYXJjaF90b3BfaW1wcmVzc2lvbl9wZXJj",
-            "ZW50YWdlQg8KDV9hdmVyYWdlX2Nvc3RCDgoMX2F2ZXJhZ2VfY3BjQg4KDF9h",
-            "dmVyYWdlX2NwZUIOCgxfYXZlcmFnZV9jcG1CFwoVX3RydWV2aWV3X2F2ZXJh",
-            "Z2VfY3B2QhUKE19hdmVyYWdlX3BhZ2Vfdmlld3NCFwoVX2F2ZXJhZ2VfdGlt",
-            "ZV9vbl9zaXRlQhwKGl9iZW5jaG1hcmtfYXZlcmFnZV9tYXhfY3BjQiMKIV9i",
-            "aWRkYWJsZV9hcHBfaW5zdGFsbF9jb252ZXJzaW9uc0IoCiZfYmlkZGFibGVf",
-            "YXBwX3Bvc3RfaW5zdGFsbF9jb252ZXJzaW9uc0IvCi1fYmlkZGFibGVfY29o",
-            "b3J0X2FwcF9wb3N0X2luc3RhbGxfY29udmVyc2lvbnNCEAoOX2JlbmNobWFy",
-            "a19jdHJCDgoMX2JvdW5jZV9yYXRlQgkKB19jbGlja3NCEQoPX2NvbnRyb2xf",
-            "Y2xpY2tzQhIKEF9jb21iaW5lZF9jbGlja3NCHAoaX2NvbWJpbmVkX2NsaWNr",
-            "c19wZXJfcXVlcnlCEwoRX2NvbWJpbmVkX3F1ZXJpZXNCJwolX2NvbnRlbnRf",
-            "YnVkZ2V0X2xvc3RfaW1wcmVzc2lvbl9zaGFyZUIbChlfY29udGVudF9pbXBy",
-            "ZXNzaW9uX3NoYXJlQi0KK19jb252ZXJzaW9uX2xhc3RfcmVjZWl2ZWRfcmVx",
-            "dWVzdF9kYXRlX3RpbWVCIgogX2NvbnZlcnNpb25fbGFzdF9jb252ZXJzaW9u",
-            "X2RhdGVCJQojX2NvbnRlbnRfcmFua19sb3N0X2ltcHJlc3Npb25fc2hhcmVC",
-            "JQojX2NvbnZlcnNpb25zX2Zyb21faW50ZXJhY3Rpb25zX3JhdGVCFAoSX2Nv",
-            "bnZlcnNpb25zX3ZhbHVlQicKJV9jb252ZXJzaW9uc192YWx1ZV9ieV9jb252",
-            "ZXJzaW9uX2RhdGVCHgocX25ld19jdXN0b21lcl9saWZldGltZV92YWx1ZUId",
-            "ChtfY29udmVyc2lvbnNfdmFsdWVfcGVyX2Nvc3RCNgo0X2NvbnZlcnNpb25z",
-            "X2Zyb21faW50ZXJhY3Rpb25zX3ZhbHVlX3Blcl9pbnRlcmFjdGlvbkIOCgxf",
-            "Y29udmVyc2lvbnNCIQofX2NvbnZlcnNpb25zX2J5X2NvbnZlcnNpb25fZGF0",
-            "ZUIOCgxfY29zdF9taWNyb3NCGwoZX2Nvc3RfcGVyX2FsbF9jb252ZXJzaW9u",
-            "c0IWChRfY29zdF9wZXJfY29udmVyc2lvbkIvCi1fY29zdF9wZXJfY3VycmVu",
-            "dF9tb2RlbF9hdHRyaWJ1dGVkX2NvbnZlcnNpb25CGwoZX2Nyb3NzX2Rldmlj",
-            "ZV9jb252ZXJzaW9uc0IuCixfY3Jvc3NfZGV2aWNlX2NvbnZlcnNpb25zX2J5",
-            "X2NvbnZlcnNpb25fZGF0ZUIhCh9fY3Jvc3NfZGV2aWNlX2NvbnZlcnNpb25z",
-            "X3ZhbHVlQigKJl9jcm9zc19kZXZpY2VfY29udmVyc2lvbnNfdmFsdWVfbWlj",
-            "cm9zQjQKMl9jcm9zc19kZXZpY2VfY29udmVyc2lvbnNfdmFsdWVfYnlfY29u",
-            "dmVyc2lvbl9kYXRlQgYKBF9jdHJCJwolX2N1cnJlbnRfbW9kZWxfYXR0cmli",
-            "dXRlZF9jb252ZXJzaW9uc0I+CjxfY3VycmVudF9tb2RlbF9hdHRyaWJ1dGVk",
-            "X2NvbnZlcnNpb25zX2Zyb21faW50ZXJhY3Rpb25zX3JhdGVCTwpNX2N1cnJl",
-            "bnRfbW9kZWxfYXR0cmlidXRlZF9jb252ZXJzaW9uc19mcm9tX2ludGVyYWN0",
-            "aW9uc192YWx1ZV9wZXJfaW50ZXJhY3Rpb25CLQorX2N1cnJlbnRfbW9kZWxf",
-            "YXR0cmlidXRlZF9jb252ZXJzaW9uc192YWx1ZUI2CjRfY3VycmVudF9tb2Rl",
-            "bF9hdHRyaWJ1dGVkX2NvbnZlcnNpb25zX3ZhbHVlX3Blcl9jb3N0QhIKEF9l",
-            "bmdhZ2VtZW50X3JhdGVCDgoMX2VuZ2FnZW1lbnRzQiIKIF9ob3RlbF9hdmVy",
-            "YWdlX2xlYWRfdmFsdWVfbWljcm9zQh8KHV9ob3RlbF9jb21taXNzaW9uX3Jh",
-            "dGVfbWljcm9zQiEKH19ob3RlbF9leHBlY3RlZF9jb21taXNzaW9uX2Nvc3RC",
-            "JAoiX2hvdGVsX3ByaWNlX2RpZmZlcmVuY2VfcGVyY2VudGFnZUIdChtfaG90",
-            "ZWxfZWxpZ2libGVfaW1wcmVzc2lvbnNCGwoZX2hpc3RvcmljYWxfcXVhbGl0",
-            "eV9zY29yZUIRCg9fZ21haWxfZm9yd2FyZHNCDgoMX2dtYWlsX3NhdmVzQhkK",
-            "F19nbWFpbF9zZWNvbmRhcnlfY2xpY2tzQh8KHV9pbXByZXNzaW9uc19mcm9t",
-            "X3N0b3JlX3JlYWNoQg4KDF9pbXByZXNzaW9uc0ITChFfaW50ZXJhY3Rpb25f",
-            "cmF0ZUIPCg1faW50ZXJhY3Rpb25zQhUKE19pbnZhbGlkX2NsaWNrX3JhdGVC",
-            "EQoPX2ludmFsaWRfY2xpY2tzQh0KG19nZW5lcmFsX2ludmFsaWRfY2xpY2tf",
-            "cmF0ZUIZChdfZ2VuZXJhbF9pbnZhbGlkX2NsaWNrc0IQCg5fbWVzc2FnZV9j",
-            "aGF0c0IWChRfbWVzc2FnZV9pbXByZXNzaW9uc0IUChJfbWVzc2FnZV9jaGF0",
-            "X3JhdGVCJAoiX21vYmlsZV9mcmllbmRseV9jbGlja3NfcGVyY2VudGFnZUIc",
-            "Chpfb3B0aW1pemF0aW9uX3Njb3JlX3VwbGlmdEIZChdfb3B0aW1pemF0aW9u",
-            "X3Njb3JlX3VybEIRCg9fb3JnYW5pY19jbGlja3NCGwoZX29yZ2FuaWNfY2xp",
-            "Y2tzX3Blcl9xdWVyeUIWChRfb3JnYW5pY19pbXByZXNzaW9uc0IgCh5fb3Jn",
-            "YW5pY19pbXByZXNzaW9uc19wZXJfcXVlcnlCEgoQX29yZ2FuaWNfcXVlcmll",
-            "c0IXChVfcGVyY2VudF9uZXdfdmlzaXRvcnNCDgoMX3Bob25lX2NhbGxzQhQK",
-            "El9waG9uZV9pbXByZXNzaW9uc0IVChNfcGhvbmVfdGhyb3VnaF9yYXRlQg8K",
-            "DV9yZWxhdGl2ZV9jdHJCJwolX3NlYXJjaF9hYnNvbHV0ZV90b3BfaW1wcmVz",
-            "c2lvbl9zaGFyZUIzCjFfc2VhcmNoX2J1ZGdldF9sb3N0X2Fic29sdXRlX3Rv",
-            "cF9pbXByZXNzaW9uX3NoYXJlQiYKJF9zZWFyY2hfYnVkZ2V0X2xvc3RfaW1w",
-            "cmVzc2lvbl9zaGFyZUIqCihfc2VhcmNoX2J1ZGdldF9sb3N0X3RvcF9pbXBy",
-            "ZXNzaW9uX3NoYXJlQhUKE19zZWFyY2hfY2xpY2tfc2hhcmVCJgokX3NlYXJj",
-            "aF9leGFjdF9tYXRjaF9pbXByZXNzaW9uX3NoYXJlQhoKGF9zZWFyY2hfaW1w",
-            "cmVzc2lvbl9zaGFyZUIxCi9fc2VhcmNoX3JhbmtfbG9zdF9hYnNvbHV0ZV90",
-            "b3BfaW1wcmVzc2lvbl9zaGFyZUIkCiJfc2VhcmNoX3JhbmtfbG9zdF9pbXBy",
-            "ZXNzaW9uX3NoYXJlQigKJl9zZWFyY2hfcmFua19sb3N0X3RvcF9pbXByZXNz",
-            "aW9uX3NoYXJlQh4KHF9zZWFyY2hfdG9wX2ltcHJlc3Npb25fc2hhcmVCEAoO",
-            "X3NlYXJjaF92b2x1bWVCDgoMX3NwZWVkX3Njb3JlQhwKGl9hdmVyYWdlX3Rh",
-            "cmdldF9jcGFfbWljcm9zQhYKFF9hdmVyYWdlX3RhcmdldF9yb2FzQhwKGl90",
-            "b3BfaW1wcmVzc2lvbl9wZXJjZW50YWdlQjMKMV92YWxpZF9hY2NlbGVyYXRl",
-            "ZF9tb2JpbGVfcGFnZXNfY2xpY2tzX3BlcmNlbnRhZ2VCHAoaX3ZhbHVlX3Bl",
-            "cl9hbGxfY29udmVyc2lvbnNCLwotX3ZhbHVlX3Blcl9hbGxfY29udmVyc2lv",
-            "bnNfYnlfY29udmVyc2lvbl9kYXRlQhcKFV92YWx1ZV9wZXJfY29udmVyc2lv",
-            "bkIrCilfdmFsdWVfcGVyX2NvbnZlcnNpb25zX2J5X2NvbnZlcnNpb25fZGF0",
-            "ZUIwCi5fdmFsdWVfcGVyX2N1cnJlbnRfbW9kZWxfYXR0cmlidXRlZF9jb252",
-            "ZXJzaW9uQhsKGV92aWRlb19xdWFydGlsZV9wMTAwX3JhdGVCGgoYX3ZpZGVv",
-            "X3F1YXJ0aWxlX3AyNV9yYXRlQhoKGF92aWRlb19xdWFydGlsZV9wNTBfcmF0",
-            "ZUIaChhfdmlkZW9fcXVhcnRpbGVfcDc1X3JhdGVCGwoZX3ZpZGVvX3RydWV2",
-            "aWV3X3ZpZXdfcmF0ZUIXChVfdmlkZW9fdHJ1ZXZpZXdfdmlld3NCGwoZX3Zp",
-            "ZXdfdGhyb3VnaF9jb252ZXJzaW9uc0I0CjJfYWxsX2NvbnZlcnNpb25zX2Zy",
-            "b21fbG9jYXRpb25fYXNzZXRfY2xpY2tfdG9fY2FsbEIxCi9fYWxsX2NvbnZl",
-            "cnNpb25zX2Zyb21fbG9jYXRpb25fYXNzZXRfZGlyZWN0aW9uc0IrCilfYWxs",
-            "X2NvbnZlcnNpb25zX2Zyb21fbG9jYXRpb25fYXNzZXRfbWVudUIsCipfYWxs",
-            "X2NvbnZlcnNpb25zX2Zyb21fbG9jYXRpb25fYXNzZXRfb3JkZXJCNwo1X2Fs",
-            "bF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0X290aGVyX2VuZ2Fn",
-            "ZW1lbnRCMwoxX2FsbF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0",
-            "X3N0b3JlX3Zpc2l0c0IuCixfYWxsX2NvbnZlcnNpb25zX2Zyb21fbG9jYXRp",
-            "b25fYXNzZXRfd2Vic2l0ZUI3CjVfZWxpZ2libGVfaW1wcmVzc2lvbnNfZnJv",
-            "bV9sb2NhdGlvbl9hc3NldF9zdG9yZV9yZWFjaEI9Cjtfdmlld190aHJvdWdo",
-            "X2NvbnZlcnNpb25zX2Zyb21fbG9jYXRpb25fYXNzZXRfY2xpY2tfdG9fY2Fs",
-            "bEI6Cjhfdmlld190aHJvdWdoX2NvbnZlcnNpb25zX2Zyb21fbG9jYXRpb25f",
-            "YXNzZXRfZGlyZWN0aW9uc0I0CjJfdmlld190aHJvdWdoX2NvbnZlcnNpb25z",
-            "X2Zyb21fbG9jYXRpb25fYXNzZXRfbWVudUI1CjNfdmlld190aHJvdWdoX2Nv",
-            "bnZlcnNpb25zX2Zyb21fbG9jYXRpb25fYXNzZXRfb3JkZXJCQAo+X3ZpZXdf",
-            "dGhyb3VnaF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0X290aGVy",
-            "X2VuZ2FnZW1lbnRCPAo6X3ZpZXdfdGhyb3VnaF9jb252ZXJzaW9uc19mcm9t",
-            "X2xvY2F0aW9uX2Fzc2V0X3N0b3JlX3Zpc2l0c0I3CjVfdmlld190aHJvdWdo",
-            "X2NvbnZlcnNpb25zX2Zyb21fbG9jYXRpb25fYXNzZXRfd2Vic2l0ZUIJCgdf",
-            "b3JkZXJzQh0KG19hdmVyYWdlX29yZGVyX3ZhbHVlX21pY3Jvc0IUChJfYXZl",
-            "cmFnZV9jYXJ0X3NpemVCHAoaX2Nvc3Rfb2ZfZ29vZHNfc29sZF9taWNyb3NC",
-            "FgoUX2dyb3NzX3Byb2ZpdF9taWNyb3NCFgoUX2dyb3NzX3Byb2ZpdF9tYXJn",
-            "aW5CEQoPX3JldmVudWVfbWljcm9zQg0KC191bml0c19zb2xkQicKJV9jcm9z",
-            "c19zZWxsX2Nvc3Rfb2ZfZ29vZHNfc29sZF9taWNyb3NCIQofX2Nyb3NzX3Nl",
-            "bGxfZ3Jvc3NfcHJvZml0X21pY3Jvc0IcChpfY3Jvc3Nfc2VsbF9yZXZlbnVl",
-            "X21pY3Jvc0IYChZfY3Jvc3Nfc2VsbF91bml0c19zb2xkQiEKH19sZWFkX2Nv",
-            "c3Rfb2ZfZ29vZHNfc29sZF9taWNyb3NCGwoZX2xlYWRfZ3Jvc3NfcHJvZml0",
-            "X21pY3Jvc0IWChRfbGVhZF9yZXZlbnVlX21pY3Jvc0ISChBfbGVhZF91bml0",
-            "c19zb2xkQg8KDV91bmlxdWVfdXNlcnNCKAomX2F2ZXJhZ2VfaW1wcmVzc2lv",
-            "bl9mcmVxdWVuY3lfcGVyX3VzZXJCGAoWX2xpbmtlZF9lbnRpdGllc19jb3Vu",
-            "dEIbChlfYXNzZXRfcGlubmVkX3RvdGFsX2NvdW50Qi4KLF9hc3NldF9waW5u",
-            "ZWRfYXNfaGVhZGxpbmVfcG9zaXRpb25fb25lX2NvdW50Qi4KLF9hc3NldF9w",
-            "aW5uZWRfYXNfaGVhZGxpbmVfcG9zaXRpb25fdHdvX2NvdW50QjAKLl9hc3Nl",
-            "dF9waW5uZWRfYXNfaGVhZGxpbmVfcG9zaXRpb25fdGhyZWVfY291bnRCMQov",
-            "X2Fzc2V0X3Bpbm5lZF9hc19kZXNjcmlwdGlvbl9wb3NpdGlvbl9vbmVfY291",
-            "bnRCMQovX2Fzc2V0X3Bpbm5lZF9hc19kZXNjcmlwdGlvbl9wb3NpdGlvbl90",
-            "d29fY291bnRCNwo1X3N0b3JlX3Zpc2l0c19sYXN0X2NsaWNrX21vZGVsX2F0",
-            "dHJpYnV0ZWRfY29udmVyc2lvbnNCHwodX3Jlc3VsdHNfY29udmVyc2lvbnNf",
-            "cHVyY2hhc2VCIwohX3ZpZGVvX3RydWV2aWV3X3ZpZXdfcmF0ZV9pbl9mZWVk",
-            "QiUKI192aWRlb190cnVldmlld192aWV3X3JhdGVfaW5fc3RyZWFtQiIKIF92",
-            "aWRlb190cnVldmlld192aWV3X3JhdGVfc2hvcnRzQhcKFV9jb3ZpZXdlZF9p",
-            "bXByZXNzaW9uc0IWChRfcHJpbWFyeV9pbXByZXNzaW9uc0I5CjdfcGxhdGZv",
-            "cm1fY29tcGFyYWJsZV9jb252ZXJzaW9uc19mcm9tX2ludGVyYWN0aW9uc19y",
-            "YXRlQiIKIF9wbGF0Zm9ybV9jb21wYXJhYmxlX2NvbnZlcnNpb25zQigKJl9w",
-            "bGF0Zm9ybV9jb21wYXJhYmxlX2NvbnZlcnNpb25zX3ZhbHVlQjEKL19wbGF0",
-            "Zm9ybV9jb21wYXJhYmxlX2NvbnZlcnNpb25zX3ZhbHVlX3Blcl9jb3N0QjUK",
-            "M19wbGF0Zm9ybV9jb21wYXJhYmxlX2NvbnZlcnNpb25zX2J5X2NvbnZlcnNp",
-            "b25fZGF0ZUI7CjlfcGxhdGZvcm1fY29tcGFyYWJsZV9jb252ZXJzaW9uc192",
-            "YWx1ZV9ieV9jb252ZXJzaW9uX2RhdGVCSgpIX3BsYXRmb3JtX2NvbXBhcmFi",
-            "bGVfY29udmVyc2lvbnNfZnJvbV9pbnRlcmFjdGlvbnNfdmFsdWVfcGVyX2lu",
-            "dGVyYWN0aW9uQioKKF9jb3N0X3Blcl9wbGF0Zm9ybV9jb21wYXJhYmxlX2Nv",
-            "bnZlcnNpb25CKwopX3ZhbHVlX3Blcl9wbGF0Zm9ybV9jb21wYXJhYmxlX2Nv",
-            "bnZlcnNpb25CPwo9X3ZhbHVlX3Blcl9wbGF0Zm9ybV9jb21wYXJhYmxlX2Nv",
-            "bnZlcnNpb25zX2J5X2NvbnZlcnNpb25fZGF0ZUI9CjtfY29zdF9jb252ZXJ0",
-            "ZWRfY3VycmVuY3lfcGVyX3BsYXRmb3JtX2NvbXBhcmFibGVfY29udmVyc2lv",
-            "bkIYChZfdW5pcXVlX3VzZXJzX3R3b19wbHVzQhoKGF91bmlxdWVfdXNlcnNf",
-            "dGhyZWVfcGx1c0IZChdfdW5pcXVlX3VzZXJzX2ZvdXJfcGx1c0IZChdfdW5p",
-            "cXVlX3VzZXJzX2ZpdmVfcGx1c0IYChZfdW5pcXVlX3VzZXJzX3Rlbl9wbHVz",
-            "QhMKEV92YWx1ZV9hZGp1c3RtZW50QhcKFV9hbGxfdmFsdWVfYWRqdXN0bWVu",
-            "dEIfCh1fY2xpY2tzX3VuaXF1ZV9xdWVyeV9jbHVzdGVyc0IkCiJfY29udmVy",
-            "c2lvbnNfdW5pcXVlX3F1ZXJ5X2NsdXN0ZXJzQiQKIl9pbXByZXNzaW9uc191",
-            "bmlxdWVfcXVlcnlfY2x1c3RlcnNCIwohX3ZpZGVvX3dhdGNoX3RpbWVfZHVy",
-            "YXRpb25fbWlsbGlzQisKKV9hdmVyYWdlX3ZpZGVvX3dhdGNoX3RpbWVfZHVy",
-            "YXRpb25fbWlsbGlzQgYKBF9zdnJCMAouX2FjdGl2ZV92aWV3X2F1ZGliaWxp",
-            "dHlfbWVhc3VyYWJsZV9pbXByZXNzaW9uc0I1CjNfYWN0aXZlX3ZpZXdfYXVk",
-            "aWJpbGl0eV9tZWFzdXJhYmxlX2ltcHJlc3Npb25zX3JhdGVCPQo7X2FjdGl2",
-            "ZV92aWV3X2F1ZGliaWxpdHlfaW52YWxpZF9tZWFzdXJhYmxlX2ltcHJlc3Np",
-            "b25zX3JhdGVCQgpAX2FjdGl2ZV92aWV3X2F1ZGliaWxpdHlfaW52YWxpZF9n",
-            "aXZ0X21lYXN1cmFibGVfaW1wcmVzc2lvbnNfcmF0ZUIiCiBfYWN0aXZlX3Zp",
-            "ZXdfYXVkaWJsZV9pbXByZXNzaW9uc0InCiVfYWN0aXZlX3ZpZXdfYXVkaWJs",
-            "ZV9pbXByZXNzaW9uc19yYXRlQi4KLF9hY3RpdmVfdmlld19hdWRpYmxlX3R3",
-            "b19zZWNvbmRzX2ltcHJlc3Npb25zQjMKMV9hY3RpdmVfdmlld19hdWRpYmxl",
-            "X3R3b19zZWNvbmRzX2ltcHJlc3Npb25zX3JhdGVCMQovX2FjdGl2ZV92aWV3",
-            "X2F1ZGlibGVfdGhpcnR5X3NlY29uZHNfaW1wcmVzc2lvbnNCNgo0X2FjdGl2",
-            "ZV92aWV3X2F1ZGlibGVfdGhpcnR5X3NlY29uZHNfaW1wcmVzc2lvbnNfcmF0",
-            "ZUIoCiZfYWN0aXZlX3ZpZXdfYXVkaWJsZV9xdWFydGlsZV9wMjVfcmF0ZUIo",
-            "CiZfYWN0aXZlX3ZpZXdfYXVkaWJsZV9xdWFydGlsZV9wNTBfcmF0ZUIoCiZf",
-            "YWN0aXZlX3ZpZXdfYXVkaWJsZV9xdWFydGlsZV9wNzVfcmF0ZUIpCidfYWN0",
-            "aXZlX3ZpZXdfYXVkaWJsZV9xdWFydGlsZV9wMTAwX3JhdGVCOwo5X2JpZGRh",
-            "YmxlX2luZGlyZWN0X2luc3RhbGxfZmlyc3RfaW5fYXBwX2NvbnZlcnNpb25f",
-            "bWljcm9zQhgKFl9hbGxfYXZlcmFnZV9jYXJ0X3NpemVCIQofX2FsbF9hdmVy",
-            "YWdlX29yZGVyX3ZhbHVlX21pY3Jvc0IgCh5fYWxsX2Nvc3Rfb2ZfZ29vZHNf",
-            "c29sZF9taWNyb3NCKwopX2FsbF9jcm9zc19zZWxsX2Nvc3Rfb2ZfZ29vZHNf",
-            "c29sZF9taWNyb3NCJQojX2FsbF9jcm9zc19zZWxsX2dyb3NzX3Byb2ZpdF9t",
-            "aWNyb3NCIAoeX2FsbF9jcm9zc19zZWxsX3JldmVudWVfbWljcm9zQhwKGl9h",
-            "bGxfY3Jvc3Nfc2VsbF91bml0c19zb2xkQhoKGF9hbGxfZ3Jvc3NfcHJvZml0",
-            "X21hcmdpbkIaChhfYWxsX2dyb3NzX3Byb2ZpdF9taWNyb3NCJQojX2FsbF9s",
-            "ZWFkX2Nvc3Rfb2ZfZ29vZHNfc29sZF9taWNyb3NCHwodX2FsbF9sZWFkX2dy",
-            "b3NzX3Byb2ZpdF9taWNyb3NCGgoYX2FsbF9sZWFkX3JldmVudWVfbWljcm9z",
-            "QhYKFF9hbGxfbGVhZF91bml0c19zb2xkQg0KC19hbGxfb3JkZXJzQhUKE19h",
-            "bGxfcmV2ZW51ZV9taWNyb3NCEQoPX2FsbF91bml0c19zb2xkQh4KHF9jb250",
-            "cm9sX2Nvc3RfcGVyX2NvbnZlcnNpb25CJgokX2Nvc3RfcGVyX2NvbnZlcnNp",
-            "b25fbWFyZ2luX29mX2Vycm9yQh4KHF9jb3N0X3Blcl9jb252ZXJzaW9uX3Bf",
-            "dmFsdWVCLAoqX2Nvc3RfcGVyX2NvbnZlcnNpb25fY2hhbmdlX3BvaW50X2Vz",
-            "dGltYXRlQhYKFF9jb250cm9sX2NvbnZlcnNpb25zQi4KLF9jb252ZXJzaW9u",
-            "c19hYnNvbHV0ZV9jaGFuZ2VfbWFyZ2luX29mX2Vycm9yQiYKJF9jb252ZXJz",
-            "aW9uc19hYnNvbHV0ZV9jaGFuZ2VfcF92YWx1ZUItCitfY29udmVyc2lvbnNf",
-            "YWJzb2x1dGVfY2hhbmdlX3BvaW50X2VzdGltYXRlQiQKIl9jb250cm9sX2Nv",
-            "bnZlcnNpb25fdmFsdWVfcGVyX2Nvc3RCLAoqX2NvbnZlcnNpb25fdmFsdWVf",
-            "cGVyX2Nvc3RfbWFyZ2luX29mX2Vycm9yQiQKIl9jb252ZXJzaW9uX3ZhbHVl",
-            "X3Blcl9jb3N0X3BfdmFsdWVCMgowX2NvbnZlcnNpb25fdmFsdWVfcGVyX2Nv",
-            "c3RfY2hhbmdlX3BvaW50X2VzdGltYXRlQhYKFF9jb250cm9sX2Nvc3RfbWlj",
-            "cm9zQh4KHF9jb3N0X21pY3Jvc19tYXJnaW5fb2ZfZXJyb3JCFgoUX2Nvc3Rf",
-            "bWljcm9zX3BfdmFsdWVCJAoiX2Nvc3RfbWljcm9zX2NoYW5nZV9wb2ludF9l",
-            "c3RpbWF0ZUIWChRfY29udHJvbF9pbXByZXNzaW9uc0IeChxfaW1wcmVzc2lv",
-            "bnNfbWFyZ2luX29mX2Vycm9yQhYKFF9pbXByZXNzaW9uc19wX3ZhbHVlQh0K",
-            "G19pbXByZXNzaW9uc19wb2ludF9lc3RpbWF0ZUIZChdfY2xpY2tzX21hcmdp",
-            "bl9vZl9lcnJvckIRCg9fY2xpY2tzX3BfdmFsdWVCGAoWX2NsaWNrc19wb2lu",
-            "dF9lc3RpbWF0ZUIbChlfY29udHJvbF9jb252ZXJzaW9uX3ZhbHVlQiMKIV9j",
-            "b252ZXJzaW9uX3ZhbHVlX21hcmdpbl9vZl9lcnJvckIbChlfY29udmVyc2lv",
-            "bl92YWx1ZV9wX3ZhbHVlQikKJ19jb252ZXJzaW9uX3ZhbHVlX2NoYW5nZV9w",
-            "b2ludF9lc3RpbWF0ZUIaChhfaW5jcmVtZW50YWxfY29udmVyc2lvbnNCJwol",
-            "X2luY3JlbWVudGFsX2NvbnZlcnNpb25zX3dpbm5lcl9zY29yZUIfCh1faW5j",
-            "cmVtZW50YWxfY29udmVyc2lvbl92YWx1ZUIsCipfaW5jcmVtZW50YWxfY29u",
-            "dmVyc2lvbl92YWx1ZV93aW5uZXJfc2NvcmVCJwolX2NvbnZlcnNpb25fbGlm",
-            "dF9iYXNlbGluZV9jb252ZXJzaW9uc0IsCipfY29udmVyc2lvbl9saWZ0X2Jh",
-            "c2VsaW5lX2NvbnZlcnNpb25fdmFsdWVCJgokX2NvbnZlcnNpb25fbGlmdF9l",
-            "eHBvc2VkX2NvbnZlcnNpb25zQisKKV9jb252ZXJzaW9uX2xpZnRfZXhwb3Nl",
-            "ZF9jb252ZXJzaW9uX3ZhbHVlQiIKIF9jb3N0X3Blcl9pbmNyZW1lbnRhbF9j",
-            "b252ZXJzaW9uQi8KLV9jb3N0X3Blcl9pbmNyZW1lbnRhbF9jb252ZXJzaW9u",
-            "X3dpbm5lcl9zY29yZUIyCjBfY29zdF9wZXJfaW5jcmVtZW50YWxfY29udmVy",
-            "c2lvbl9wOTBfbG93ZXJfYm91bmRCMgowX2Nvc3RfcGVyX2luY3JlbWVudGFs",
-            "X2NvbnZlcnNpb25fcDkwX3VwcGVyX2JvdW5kQioKKF9pbmNyZW1lbnRhbF9j",
-            "b252ZXJzaW9uc19wOTBfbG93ZXJfYm91bmRCKgooX2luY3JlbWVudGFsX2Nv",
-            "bnZlcnNpb25zX3A5MF91cHBlcl9ib3VuZEIiCiBfaW5jcmVtZW50YWxfY29u",
-            "dmVyc2lvbnNfcF92YWx1ZUIvCi1faW5jcmVtZW50YWxfY29udmVyc2lvbl92",
-            "YWx1ZV9wOTBfbG93ZXJfYm91bmRCLwotX2luY3JlbWVudGFsX2NvbnZlcnNp",
-            "b25fdmFsdWVfcDkwX3VwcGVyX2JvdW5kQicKJV9pbmNyZW1lbnRhbF9jb252",
-            "ZXJzaW9uX3ZhbHVlX3BfdmFsdWVCKAomX2luY3JlbWVudGFsX2NvbnZlcnNp",
-            "b25fdmFsdWVfcGVyX2Nvc3RCNQozX2luY3JlbWVudGFsX2NvbnZlcnNpb25f",
-            "dmFsdWVfcGVyX2Nvc3Rfd2lubmVyX3Njb3JlQjgKNl9pbmNyZW1lbnRhbF9j",
-            "b252ZXJzaW9uX3ZhbHVlX3Blcl9jb3N0X3A5MF9sb3dlcl9ib3VuZEI4CjZf",
-            "aW5jcmVtZW50YWxfY29udmVyc2lvbl92YWx1ZV9wZXJfY29zdF9wOTBfdXBw",
-            "ZXJfYm91bmRCGwoZX3JlbGF0aXZlX2NvbnZlcnNpb25fbGlmdEIrCilfcmVs",
-            "YXRpdmVfY29udmVyc2lvbl9saWZ0X3A5MF9sb3dlcl9ib3VuZEIrCilfcmVs",
-            "YXRpdmVfY29udmVyc2lvbl9saWZ0X3A5MF91cHBlcl9ib3VuZEIhCh9fcmVs",
-            "YXRpdmVfY29udmVyc2lvbl92YWx1ZV9saWZ0QjEKL19yZWxhdGl2ZV9jb252",
-            "ZXJzaW9uX3ZhbHVlX2xpZnRfcDkwX2xvd2VyX2JvdW5kQjEKL19yZWxhdGl2",
-            "ZV9jb252ZXJzaW9uX3ZhbHVlX2xpZnRfcDkwX3VwcGVyX2JvdW5kQhYKFF9h",
-            "YnNvbHV0ZV9icmFuZF9saWZ0QiYKJF9hYnNvbHV0ZV9icmFuZF9saWZ0X3A5",
-            "MF9sb3dlcl9ib3VuZEImCiRfYWJzb2x1dGVfYnJhbmRfbGlmdF9wOTBfdXBw",
-            "ZXJfYm91bmRCHgocX2Fic29sdXRlX2JyYW5kX2xpZnRfcF92YWx1ZUItCitf",
-            "YnJhbmRfbGlmdF9iYXNlbGluZV9wb3NpdGl2ZV9yZXNwb25zZV9yYXRlQj0K",
-            "O19icmFuZF9saWZ0X2Jhc2VsaW5lX3Bvc2l0aXZlX3Jlc3BvbnNlX3JhdGVf",
-            "cDkwX2xvd2VyX2JvdW5kQj0KO19icmFuZF9saWZ0X2Jhc2VsaW5lX3Bvc2l0",
-            "aXZlX3Jlc3BvbnNlX3JhdGVfcDkwX3VwcGVyX2JvdW5kQjsKOV9icmFuZF9s",
-            "aWZ0X2V4cG9zZWRfcG9zaXRpdmVfcmVzcG9uZGVyX2ZyYWN0aW9uYWxfY29v",
-            "a2llc0JLCklfYnJhbmRfbGlmdF9leHBvc2VkX3Bvc2l0aXZlX3Jlc3BvbmRl",
-            "cl9mcmFjdGlvbmFsX2Nvb2tpZXNfcDkwX2xvd2VyX2JvdW5kQksKSV9icmFu",
-            "ZF9saWZ0X2V4cG9zZWRfcG9zaXRpdmVfcmVzcG9uZGVyX2ZyYWN0aW9uYWxf",
-            "Y29va2llc19wOTBfdXBwZXJfYm91bmRCLAoqX2JyYW5kX2xpZnRfZXhwb3Nl",
-            "ZF9wb3NpdGl2ZV9yZXNwb25zZV9yYXRlQjwKOl9icmFuZF9saWZ0X2V4cG9z",
-            "ZWRfcG9zaXRpdmVfcmVzcG9uc2VfcmF0ZV9wOTBfbG93ZXJfYm91bmRCPAo6",
-            "X2JyYW5kX2xpZnRfZXhwb3NlZF9wb3NpdGl2ZV9yZXNwb25zZV9yYXRlX3A5",
-            "MF91cHBlcl9ib3VuZEIfCh1fYnJhbmRfbGlmdF9yZXNwb25zZXNfZXhwb3Nl",
-            "ZEIiCiBfYnJhbmRfbGlmdF9yZXNwb25zZXNfc3VwcHJlc3NlZEI+CjxfYnJh",
-            "bmRfbGlmdF9zdXBwcmVzc2VkX3Bvc2l0aXZlX3Jlc3BvbmRlcl9mcmFjdGlv",
-            "bmFsX2Nvb2tpZXNCTgpMX2JyYW5kX2xpZnRfc3VwcHJlc3NlZF9wb3NpdGl2",
-            "ZV9yZXNwb25kZXJfZnJhY3Rpb25hbF9jb29raWVzX3A5MF9sb3dlcl9ib3Vu",
-            "ZEJOCkxfYnJhbmRfbGlmdF9zdXBwcmVzc2VkX3Bvc2l0aXZlX3Jlc3BvbmRl",
-            "cl9mcmFjdGlvbmFsX2Nvb2tpZXNfcDkwX3VwcGVyX2JvdW5kQh0KG19icmFu",
-            "ZF9saWZ0X3RvdGFsX3Jlc3BvbnNlc0IZChdfY29zdF9wZXJfbGlmdGVkX2Nv",
-            "b2tpZUIpCidfY29zdF9wZXJfbGlmdGVkX2Nvb2tpZV9wOTBfbG93ZXJfYm91",
-            "bmRCKQonX2Nvc3RfcGVyX2xpZnRlZF9jb29raWVfcDkwX3VwcGVyX2JvdW5k",
-            "QhwKGl9mcmFjdGlvbmFsX2xpZnRlZF9jb29raWVzQiwKKl9mcmFjdGlvbmFs",
-            "X2xpZnRlZF9jb29raWVzX3A5MF9sb3dlcl9ib3VuZEIsCipfZnJhY3Rpb25h",
-            "bF9saWZ0ZWRfY29va2llc19wOTBfdXBwZXJfYm91bmRCFgoUX2hlYWRyb29t",
-            "X2JyYW5kX2xpZnRCJgokX2hlYWRyb29tX2JyYW5kX2xpZnRfcDkwX2xvd2Vy",
-            "X2JvdW5kQiYKJF9oZWFkcm9vbV9icmFuZF9saWZ0X3A5MF91cHBlcl9ib3Vu",
-            "ZEIWChRfcmVsYXRpdmVfYnJhbmRfbGlmdEImCiRfcmVsYXRpdmVfYnJhbmRf",
-            "bGlmdF9wOTBfbG93ZXJfYm91bmRCJgokX3JlbGF0aXZlX2JyYW5kX2xpZnRf",
-            "cDkwX3VwcGVyX2JvdW5kQhMKEV95b3V0dWJlX2NvbW1lbnRzQhAKDl95b3V0",
-            "dWJlX2xpa2VzQhEKD195b3V0dWJlX3NoYXJlc0IcChpfb3JpZ2luYWxfY29u",
-            "dmVyc2lvbl92YWx1ZSJHChFTZWFyY2hWb2x1bWVSYW5nZRIQCgNtaW4YASAB",
-            "KANIAIgBARIQCgNtYXgYAiABKANIAYgBAUIGCgRfbWluQgYKBF9tYXhC7AEK",
-            "I2NvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUuY29tbW9uQgxNZXRyaWNz",
-            "UHJvdG9QAVpFZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBp",
-            "cy9hZHMvZ29vZ2xlYWRzL3YyNS9jb21tb247Y29tbW9uogIDR0FBqgIfR29v",
-            "Z2xlLkFkcy5Hb29nbGVBZHMuVjI1LkNvbW1vbsoCH0dvb2dsZVxBZHNcR29v",
-            "Z2xlQWRzXFYyNVxDb21tb27qAiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpW",
-            "MjU6OkNvbW1vbmIGcHJvdG8z"));
+            "ChlvcmlnaW5hbF9jb252ZXJzaW9uX3ZhbHVlGJMEIAEoAUjKAogBARIxCiJ2",
+            "ZXJ0aWNhbF9hZHNfcG90ZW50aWFsX2ltcHJlc3Npb25zGJQEIAEoA0jLAogB",
+            "ARI4Cil2ZXJ0aWNhbF9hZHNfYXZlcmFnZV9ib29raW5nX3ZhbHVlX21pY3Jv",
+            "cxiVBCABKANIzAKIAQESNwoodmVydGljYWxfYWRzX3ByaWNlX2RpZmZlcmVu",
+            "Y2VfcGVyY2VudGFnZRiWBCABKAFIzQKIAQFCJQojX2Fic29sdXRlX3RvcF9p",
+            "bXByZXNzaW9uX3BlcmNlbnRhZ2VCEgoQX2FjdGl2ZV92aWV3X2NwbUISChBf",
+            "YWN0aXZlX3ZpZXdfY3RyQhoKGF9hY3RpdmVfdmlld19pbXByZXNzaW9uc0Ic",
+            "ChpfYWN0aXZlX3ZpZXdfbWVhc3VyYWJpbGl0eUIlCiNfYWN0aXZlX3ZpZXdf",
+            "bWVhc3VyYWJsZV9jb3N0X21pY3Jvc0IlCiNfYWN0aXZlX3ZpZXdfbWVhc3Vy",
+            "YWJsZV9pbXByZXNzaW9uc0IaChhfYWN0aXZlX3ZpZXdfdmlld2FiaWxpdHlC",
+            "KQonX2FsbF9jb252ZXJzaW9uc19mcm9tX2ludGVyYWN0aW9uc19yYXRlQhgK",
+            "Fl9hbGxfY29udmVyc2lvbnNfdmFsdWVCKwopX2FsbF9jb252ZXJzaW9uc192",
+            "YWx1ZV9ieV9jb252ZXJzaW9uX2RhdGVCIgogX2FsbF9uZXdfY3VzdG9tZXJf",
+            "bGlmZXRpbWVfdmFsdWVCEgoQX2FsbF9jb252ZXJzaW9uc0IlCiNfYWxsX2Nv",
+            "bnZlcnNpb25zX2J5X2NvbnZlcnNpb25fZGF0ZUIhCh9fYWxsX2NvbnZlcnNp",
+            "b25zX3ZhbHVlX3Blcl9jb3N0QiUKI19hbGxfY29udmVyc2lvbnNfZnJvbV9j",
+            "bGlja190b19jYWxsQiIKIF9hbGxfY29udmVyc2lvbnNfZnJvbV9kaXJlY3Rp",
+            "b25zQjoKOF9hbGxfY29udmVyc2lvbnNfZnJvbV9pbnRlcmFjdGlvbnNfdmFs",
+            "dWVfcGVyX2ludGVyYWN0aW9uQhwKGl9hbGxfY29udmVyc2lvbnNfZnJvbV9t",
+            "ZW51Qh0KG19hbGxfY29udmVyc2lvbnNfZnJvbV9vcmRlckIoCiZfYWxsX2Nv",
+            "bnZlcnNpb25zX2Zyb21fb3RoZXJfZW5nYWdlbWVudEIjCiFfYWxsX2NvbnZl",
+            "cnNpb25zX2Zyb21fc3RvcmVfdmlzaXRCJQojX2FsbF9jb252ZXJzaW9uc19m",
+            "cm9tX3N0b3JlX3dlYnNpdGVCPAo6X2F1Y3Rpb25faW5zaWdodF9zZWFyY2hf",
+            "YWJzb2x1dGVfdG9wX2ltcHJlc3Npb25fcGVyY2VudGFnZUIqCihfYXVjdGlv",
+            "bl9pbnNpZ2h0X3NlYXJjaF9pbXByZXNzaW9uX3NoYXJlQioKKF9hdWN0aW9u",
+            "X2luc2lnaHRfc2VhcmNoX291dHJhbmtpbmdfc2hhcmVCJgokX2F1Y3Rpb25f",
+            "aW5zaWdodF9zZWFyY2hfb3ZlcmxhcF9yYXRlQi0KK19hdWN0aW9uX2luc2ln",
+            "aHRfc2VhcmNoX3Bvc2l0aW9uX2Fib3ZlX3JhdGVCMwoxX2F1Y3Rpb25faW5z",
+            "aWdodF9zZWFyY2hfdG9wX2ltcHJlc3Npb25fcGVyY2VudGFnZUIPCg1fYXZl",
+            "cmFnZV9jb3N0Qg4KDF9hdmVyYWdlX2NwY0IOCgxfYXZlcmFnZV9jcGVCDgoM",
+            "X2F2ZXJhZ2VfY3BtQhcKFV90cnVldmlld19hdmVyYWdlX2NwdkIVChNfYXZl",
+            "cmFnZV9wYWdlX3ZpZXdzQhcKFV9hdmVyYWdlX3RpbWVfb25fc2l0ZUIcChpf",
+            "YmVuY2htYXJrX2F2ZXJhZ2VfbWF4X2NwY0IjCiFfYmlkZGFibGVfYXBwX2lu",
+            "c3RhbGxfY29udmVyc2lvbnNCKAomX2JpZGRhYmxlX2FwcF9wb3N0X2luc3Rh",
+            "bGxfY29udmVyc2lvbnNCLwotX2JpZGRhYmxlX2NvaG9ydF9hcHBfcG9zdF9p",
+            "bnN0YWxsX2NvbnZlcnNpb25zQhAKDl9iZW5jaG1hcmtfY3RyQg4KDF9ib3Vu",
+            "Y2VfcmF0ZUIJCgdfY2xpY2tzQhEKD19jb250cm9sX2NsaWNrc0ISChBfY29t",
+            "YmluZWRfY2xpY2tzQhwKGl9jb21iaW5lZF9jbGlja3NfcGVyX3F1ZXJ5QhMK",
+            "EV9jb21iaW5lZF9xdWVyaWVzQicKJV9jb250ZW50X2J1ZGdldF9sb3N0X2lt",
+            "cHJlc3Npb25fc2hhcmVCGwoZX2NvbnRlbnRfaW1wcmVzc2lvbl9zaGFyZUIt",
+            "CitfY29udmVyc2lvbl9sYXN0X3JlY2VpdmVkX3JlcXVlc3RfZGF0ZV90aW1l",
+            "QiIKIF9jb252ZXJzaW9uX2xhc3RfY29udmVyc2lvbl9kYXRlQiUKI19jb250",
+            "ZW50X3JhbmtfbG9zdF9pbXByZXNzaW9uX3NoYXJlQiUKI19jb252ZXJzaW9u",
+            "c19mcm9tX2ludGVyYWN0aW9uc19yYXRlQhQKEl9jb252ZXJzaW9uc192YWx1",
+            "ZUInCiVfY29udmVyc2lvbnNfdmFsdWVfYnlfY29udmVyc2lvbl9kYXRlQh4K",
+            "HF9uZXdfY3VzdG9tZXJfbGlmZXRpbWVfdmFsdWVCHQobX2NvbnZlcnNpb25z",
+            "X3ZhbHVlX3Blcl9jb3N0QjYKNF9jb252ZXJzaW9uc19mcm9tX2ludGVyYWN0",
+            "aW9uc192YWx1ZV9wZXJfaW50ZXJhY3Rpb25CDgoMX2NvbnZlcnNpb25zQiEK",
+            "H19jb252ZXJzaW9uc19ieV9jb252ZXJzaW9uX2RhdGVCDgoMX2Nvc3RfbWlj",
+            "cm9zQhsKGV9jb3N0X3Blcl9hbGxfY29udmVyc2lvbnNCFgoUX2Nvc3RfcGVy",
+            "X2NvbnZlcnNpb25CLwotX2Nvc3RfcGVyX2N1cnJlbnRfbW9kZWxfYXR0cmli",
+            "dXRlZF9jb252ZXJzaW9uQhsKGV9jcm9zc19kZXZpY2VfY29udmVyc2lvbnNC",
+            "LgosX2Nyb3NzX2RldmljZV9jb252ZXJzaW9uc19ieV9jb252ZXJzaW9uX2Rh",
+            "dGVCIQofX2Nyb3NzX2RldmljZV9jb252ZXJzaW9uc192YWx1ZUIoCiZfY3Jv",
+            "c3NfZGV2aWNlX2NvbnZlcnNpb25zX3ZhbHVlX21pY3Jvc0I0CjJfY3Jvc3Nf",
+            "ZGV2aWNlX2NvbnZlcnNpb25zX3ZhbHVlX2J5X2NvbnZlcnNpb25fZGF0ZUIG",
+            "CgRfY3RyQicKJV9jdXJyZW50X21vZGVsX2F0dHJpYnV0ZWRfY29udmVyc2lv",
+            "bnNCPgo8X2N1cnJlbnRfbW9kZWxfYXR0cmlidXRlZF9jb252ZXJzaW9uc19m",
+            "cm9tX2ludGVyYWN0aW9uc19yYXRlQk8KTV9jdXJyZW50X21vZGVsX2F0dHJp",
+            "YnV0ZWRfY29udmVyc2lvbnNfZnJvbV9pbnRlcmFjdGlvbnNfdmFsdWVfcGVy",
+            "X2ludGVyYWN0aW9uQi0KK19jdXJyZW50X21vZGVsX2F0dHJpYnV0ZWRfY29u",
+            "dmVyc2lvbnNfdmFsdWVCNgo0X2N1cnJlbnRfbW9kZWxfYXR0cmlidXRlZF9j",
+            "b252ZXJzaW9uc192YWx1ZV9wZXJfY29zdEISChBfZW5nYWdlbWVudF9yYXRl",
+            "Qg4KDF9lbmdhZ2VtZW50c0IiCiBfaG90ZWxfYXZlcmFnZV9sZWFkX3ZhbHVl",
+            "X21pY3Jvc0IfCh1faG90ZWxfY29tbWlzc2lvbl9yYXRlX21pY3Jvc0IhCh9f",
+            "aG90ZWxfZXhwZWN0ZWRfY29tbWlzc2lvbl9jb3N0QiQKIl9ob3RlbF9wcmlj",
+            "ZV9kaWZmZXJlbmNlX3BlcmNlbnRhZ2VCHQobX2hvdGVsX2VsaWdpYmxlX2lt",
+            "cHJlc3Npb25zQhsKGV9oaXN0b3JpY2FsX3F1YWxpdHlfc2NvcmVCEQoPX2dt",
+            "YWlsX2ZvcndhcmRzQg4KDF9nbWFpbF9zYXZlc0IZChdfZ21haWxfc2Vjb25k",
+            "YXJ5X2NsaWNrc0IfCh1faW1wcmVzc2lvbnNfZnJvbV9zdG9yZV9yZWFjaEIO",
+            "CgxfaW1wcmVzc2lvbnNCEwoRX2ludGVyYWN0aW9uX3JhdGVCDwoNX2ludGVy",
+            "YWN0aW9uc0IVChNfaW52YWxpZF9jbGlja19yYXRlQhEKD19pbnZhbGlkX2Ns",
+            "aWNrc0IdChtfZ2VuZXJhbF9pbnZhbGlkX2NsaWNrX3JhdGVCGQoXX2dlbmVy",
+            "YWxfaW52YWxpZF9jbGlja3NCEAoOX21lc3NhZ2VfY2hhdHNCFgoUX21lc3Nh",
+            "Z2VfaW1wcmVzc2lvbnNCFAoSX21lc3NhZ2VfY2hhdF9yYXRlQiQKIl9tb2Jp",
+            "bGVfZnJpZW5kbHlfY2xpY2tzX3BlcmNlbnRhZ2VCHAoaX29wdGltaXphdGlv",
+            "bl9zY29yZV91cGxpZnRCGQoXX29wdGltaXphdGlvbl9zY29yZV91cmxCEQoP",
+            "X29yZ2FuaWNfY2xpY2tzQhsKGV9vcmdhbmljX2NsaWNrc19wZXJfcXVlcnlC",
+            "FgoUX29yZ2FuaWNfaW1wcmVzc2lvbnNCIAoeX29yZ2FuaWNfaW1wcmVzc2lv",
+            "bnNfcGVyX3F1ZXJ5QhIKEF9vcmdhbmljX3F1ZXJpZXNCFwoVX3BlcmNlbnRf",
+            "bmV3X3Zpc2l0b3JzQg4KDF9waG9uZV9jYWxsc0IUChJfcGhvbmVfaW1wcmVz",
+            "c2lvbnNCFQoTX3Bob25lX3Rocm91Z2hfcmF0ZUIPCg1fcmVsYXRpdmVfY3Ry",
+            "QicKJV9zZWFyY2hfYWJzb2x1dGVfdG9wX2ltcHJlc3Npb25fc2hhcmVCMwox",
+            "X3NlYXJjaF9idWRnZXRfbG9zdF9hYnNvbHV0ZV90b3BfaW1wcmVzc2lvbl9z",
+            "aGFyZUImCiRfc2VhcmNoX2J1ZGdldF9sb3N0X2ltcHJlc3Npb25fc2hhcmVC",
+            "KgooX3NlYXJjaF9idWRnZXRfbG9zdF90b3BfaW1wcmVzc2lvbl9zaGFyZUIV",
+            "ChNfc2VhcmNoX2NsaWNrX3NoYXJlQiYKJF9zZWFyY2hfZXhhY3RfbWF0Y2hf",
+            "aW1wcmVzc2lvbl9zaGFyZUIaChhfc2VhcmNoX2ltcHJlc3Npb25fc2hhcmVC",
+            "MQovX3NlYXJjaF9yYW5rX2xvc3RfYWJzb2x1dGVfdG9wX2ltcHJlc3Npb25f",
+            "c2hhcmVCJAoiX3NlYXJjaF9yYW5rX2xvc3RfaW1wcmVzc2lvbl9zaGFyZUIo",
+            "CiZfc2VhcmNoX3JhbmtfbG9zdF90b3BfaW1wcmVzc2lvbl9zaGFyZUIeChxf",
+            "c2VhcmNoX3RvcF9pbXByZXNzaW9uX3NoYXJlQhAKDl9zZWFyY2hfdm9sdW1l",
+            "Qg4KDF9zcGVlZF9zY29yZUIcChpfYXZlcmFnZV90YXJnZXRfY3BhX21pY3Jv",
+            "c0IWChRfYXZlcmFnZV90YXJnZXRfcm9hc0IcChpfdG9wX2ltcHJlc3Npb25f",
+            "cGVyY2VudGFnZUIzCjFfdmFsaWRfYWNjZWxlcmF0ZWRfbW9iaWxlX3BhZ2Vz",
+            "X2NsaWNrc19wZXJjZW50YWdlQhwKGl92YWx1ZV9wZXJfYWxsX2NvbnZlcnNp",
+            "b25zQi8KLV92YWx1ZV9wZXJfYWxsX2NvbnZlcnNpb25zX2J5X2NvbnZlcnNp",
+            "b25fZGF0ZUIXChVfdmFsdWVfcGVyX2NvbnZlcnNpb25CKwopX3ZhbHVlX3Bl",
+            "cl9jb252ZXJzaW9uc19ieV9jb252ZXJzaW9uX2RhdGVCMAouX3ZhbHVlX3Bl",
+            "cl9jdXJyZW50X21vZGVsX2F0dHJpYnV0ZWRfY29udmVyc2lvbkIbChlfdmlk",
+            "ZW9fcXVhcnRpbGVfcDEwMF9yYXRlQhoKGF92aWRlb19xdWFydGlsZV9wMjVf",
+            "cmF0ZUIaChhfdmlkZW9fcXVhcnRpbGVfcDUwX3JhdGVCGgoYX3ZpZGVvX3F1",
+            "YXJ0aWxlX3A3NV9yYXRlQhsKGV92aWRlb190cnVldmlld192aWV3X3JhdGVC",
+            "FwoVX3ZpZGVvX3RydWV2aWV3X3ZpZXdzQhsKGV92aWV3X3Rocm91Z2hfY29u",
+            "dmVyc2lvbnNCNAoyX2FsbF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fz",
+            "c2V0X2NsaWNrX3RvX2NhbGxCMQovX2FsbF9jb252ZXJzaW9uc19mcm9tX2xv",
+            "Y2F0aW9uX2Fzc2V0X2RpcmVjdGlvbnNCKwopX2FsbF9jb252ZXJzaW9uc19m",
+            "cm9tX2xvY2F0aW9uX2Fzc2V0X21lbnVCLAoqX2FsbF9jb252ZXJzaW9uc19m",
+            "cm9tX2xvY2F0aW9uX2Fzc2V0X29yZGVyQjcKNV9hbGxfY29udmVyc2lvbnNf",
+            "ZnJvbV9sb2NhdGlvbl9hc3NldF9vdGhlcl9lbmdhZ2VtZW50QjMKMV9hbGxf",
+            "Y29udmVyc2lvbnNfZnJvbV9sb2NhdGlvbl9hc3NldF9zdG9yZV92aXNpdHNC",
+            "LgosX2FsbF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0X3dlYnNp",
+            "dGVCNwo1X2VsaWdpYmxlX2ltcHJlc3Npb25zX2Zyb21fbG9jYXRpb25fYXNz",
+            "ZXRfc3RvcmVfcmVhY2hCPQo7X3ZpZXdfdGhyb3VnaF9jb252ZXJzaW9uc19m",
+            "cm9tX2xvY2F0aW9uX2Fzc2V0X2NsaWNrX3RvX2NhbGxCOgo4X3ZpZXdfdGhy",
+            "b3VnaF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9uX2Fzc2V0X2RpcmVjdGlv",
+            "bnNCNAoyX3ZpZXdfdGhyb3VnaF9jb252ZXJzaW9uc19mcm9tX2xvY2F0aW9u",
+            "X2Fzc2V0X21lbnVCNQozX3ZpZXdfdGhyb3VnaF9jb252ZXJzaW9uc19mcm9t",
+            "X2xvY2F0aW9uX2Fzc2V0X29yZGVyQkAKPl92aWV3X3Rocm91Z2hfY29udmVy",
+            "c2lvbnNfZnJvbV9sb2NhdGlvbl9hc3NldF9vdGhlcl9lbmdhZ2VtZW50QjwK",
+            "Ol92aWV3X3Rocm91Z2hfY29udmVyc2lvbnNfZnJvbV9sb2NhdGlvbl9hc3Nl",
+            "dF9zdG9yZV92aXNpdHNCNwo1X3ZpZXdfdGhyb3VnaF9jb252ZXJzaW9uc19m",
+            "cm9tX2xvY2F0aW9uX2Fzc2V0X3dlYnNpdGVCCQoHX29yZGVyc0IdChtfYXZl",
+            "cmFnZV9vcmRlcl92YWx1ZV9taWNyb3NCFAoSX2F2ZXJhZ2VfY2FydF9zaXpl",
+            "QhwKGl9jb3N0X29mX2dvb2RzX3NvbGRfbWljcm9zQhYKFF9ncm9zc19wcm9m",
+            "aXRfbWljcm9zQhYKFF9ncm9zc19wcm9maXRfbWFyZ2luQhEKD19yZXZlbnVl",
+            "X21pY3Jvc0INCgtfdW5pdHNfc29sZEInCiVfY3Jvc3Nfc2VsbF9jb3N0X29m",
+            "X2dvb2RzX3NvbGRfbWljcm9zQiEKH19jcm9zc19zZWxsX2dyb3NzX3Byb2Zp",
+            "dF9taWNyb3NCHAoaX2Nyb3NzX3NlbGxfcmV2ZW51ZV9taWNyb3NCGAoWX2Ny",
+            "b3NzX3NlbGxfdW5pdHNfc29sZEIhCh9fbGVhZF9jb3N0X29mX2dvb2RzX3Nv",
+            "bGRfbWljcm9zQhsKGV9sZWFkX2dyb3NzX3Byb2ZpdF9taWNyb3NCFgoUX2xl",
+            "YWRfcmV2ZW51ZV9taWNyb3NCEgoQX2xlYWRfdW5pdHNfc29sZEIPCg1fdW5p",
+            "cXVlX3VzZXJzQigKJl9hdmVyYWdlX2ltcHJlc3Npb25fZnJlcXVlbmN5X3Bl",
+            "cl91c2VyQhgKFl9saW5rZWRfZW50aXRpZXNfY291bnRCGwoZX2Fzc2V0X3Bp",
+            "bm5lZF90b3RhbF9jb3VudEIuCixfYXNzZXRfcGlubmVkX2FzX2hlYWRsaW5l",
+            "X3Bvc2l0aW9uX29uZV9jb3VudEIuCixfYXNzZXRfcGlubmVkX2FzX2hlYWRs",
+            "aW5lX3Bvc2l0aW9uX3R3b19jb3VudEIwCi5fYXNzZXRfcGlubmVkX2FzX2hl",
+            "YWRsaW5lX3Bvc2l0aW9uX3RocmVlX2NvdW50QjEKL19hc3NldF9waW5uZWRf",
+            "YXNfZGVzY3JpcHRpb25fcG9zaXRpb25fb25lX2NvdW50QjEKL19hc3NldF9w",
+            "aW5uZWRfYXNfZGVzY3JpcHRpb25fcG9zaXRpb25fdHdvX2NvdW50QjcKNV9z",
+            "dG9yZV92aXNpdHNfbGFzdF9jbGlja19tb2RlbF9hdHRyaWJ1dGVkX2NvbnZl",
+            "cnNpb25zQh8KHV9yZXN1bHRzX2NvbnZlcnNpb25zX3B1cmNoYXNlQiMKIV92",
+            "aWRlb190cnVldmlld192aWV3X3JhdGVfaW5fZmVlZEIlCiNfdmlkZW9fdHJ1",
+            "ZXZpZXdfdmlld19yYXRlX2luX3N0cmVhbUIiCiBfdmlkZW9fdHJ1ZXZpZXdf",
+            "dmlld19yYXRlX3Nob3J0c0IXChVfY292aWV3ZWRfaW1wcmVzc2lvbnNCFgoU",
+            "X3ByaW1hcnlfaW1wcmVzc2lvbnNCOQo3X3BsYXRmb3JtX2NvbXBhcmFibGVf",
+            "Y29udmVyc2lvbnNfZnJvbV9pbnRlcmFjdGlvbnNfcmF0ZUIiCiBfcGxhdGZv",
+            "cm1fY29tcGFyYWJsZV9jb252ZXJzaW9uc0IoCiZfcGxhdGZvcm1fY29tcGFy",
+            "YWJsZV9jb252ZXJzaW9uc192YWx1ZUIxCi9fcGxhdGZvcm1fY29tcGFyYWJs",
+            "ZV9jb252ZXJzaW9uc192YWx1ZV9wZXJfY29zdEI1CjNfcGxhdGZvcm1fY29t",
+            "cGFyYWJsZV9jb252ZXJzaW9uc19ieV9jb252ZXJzaW9uX2RhdGVCOwo5X3Bs",
+            "YXRmb3JtX2NvbXBhcmFibGVfY29udmVyc2lvbnNfdmFsdWVfYnlfY29udmVy",
+            "c2lvbl9kYXRlQkoKSF9wbGF0Zm9ybV9jb21wYXJhYmxlX2NvbnZlcnNpb25z",
+            "X2Zyb21faW50ZXJhY3Rpb25zX3ZhbHVlX3Blcl9pbnRlcmFjdGlvbkIqCihf",
+            "Y29zdF9wZXJfcGxhdGZvcm1fY29tcGFyYWJsZV9jb252ZXJzaW9uQisKKV92",
+            "YWx1ZV9wZXJfcGxhdGZvcm1fY29tcGFyYWJsZV9jb252ZXJzaW9uQj8KPV92",
+            "YWx1ZV9wZXJfcGxhdGZvcm1fY29tcGFyYWJsZV9jb252ZXJzaW9uc19ieV9j",
+            "b252ZXJzaW9uX2RhdGVCPQo7X2Nvc3RfY29udmVydGVkX2N1cnJlbmN5X3Bl",
+            "cl9wbGF0Zm9ybV9jb21wYXJhYmxlX2NvbnZlcnNpb25CGAoWX3VuaXF1ZV91",
+            "c2Vyc190d29fcGx1c0IaChhfdW5pcXVlX3VzZXJzX3RocmVlX3BsdXNCGQoX",
+            "X3VuaXF1ZV91c2Vyc19mb3VyX3BsdXNCGQoXX3VuaXF1ZV91c2Vyc19maXZl",
+            "X3BsdXNCGAoWX3VuaXF1ZV91c2Vyc190ZW5fcGx1c0ITChFfdmFsdWVfYWRq",
+            "dXN0bWVudEIXChVfYWxsX3ZhbHVlX2FkanVzdG1lbnRCHwodX2NsaWNrc191",
+            "bmlxdWVfcXVlcnlfY2x1c3RlcnNCJAoiX2NvbnZlcnNpb25zX3VuaXF1ZV9x",
+            "dWVyeV9jbHVzdGVyc0IkCiJfaW1wcmVzc2lvbnNfdW5pcXVlX3F1ZXJ5X2Ns",
+            "dXN0ZXJzQiMKIV92aWRlb193YXRjaF90aW1lX2R1cmF0aW9uX21pbGxpc0Ir",
+            "CilfYXZlcmFnZV92aWRlb193YXRjaF90aW1lX2R1cmF0aW9uX21pbGxpc0IG",
+            "CgRfc3ZyQjAKLl9hY3RpdmVfdmlld19hdWRpYmlsaXR5X21lYXN1cmFibGVf",
+            "aW1wcmVzc2lvbnNCNQozX2FjdGl2ZV92aWV3X2F1ZGliaWxpdHlfbWVhc3Vy",
+            "YWJsZV9pbXByZXNzaW9uc19yYXRlQj0KO19hY3RpdmVfdmlld19hdWRpYmls",
+            "aXR5X2ludmFsaWRfbWVhc3VyYWJsZV9pbXByZXNzaW9uc19yYXRlQkIKQF9h",
+            "Y3RpdmVfdmlld19hdWRpYmlsaXR5X2ludmFsaWRfZ2l2dF9tZWFzdXJhYmxl",
+            "X2ltcHJlc3Npb25zX3JhdGVCIgogX2FjdGl2ZV92aWV3X2F1ZGlibGVfaW1w",
+            "cmVzc2lvbnNCJwolX2FjdGl2ZV92aWV3X2F1ZGlibGVfaW1wcmVzc2lvbnNf",
+            "cmF0ZUIuCixfYWN0aXZlX3ZpZXdfYXVkaWJsZV90d29fc2Vjb25kc19pbXBy",
+            "ZXNzaW9uc0IzCjFfYWN0aXZlX3ZpZXdfYXVkaWJsZV90d29fc2Vjb25kc19p",
+            "bXByZXNzaW9uc19yYXRlQjEKL19hY3RpdmVfdmlld19hdWRpYmxlX3RoaXJ0",
+            "eV9zZWNvbmRzX2ltcHJlc3Npb25zQjYKNF9hY3RpdmVfdmlld19hdWRpYmxl",
+            "X3RoaXJ0eV9zZWNvbmRzX2ltcHJlc3Npb25zX3JhdGVCKAomX2FjdGl2ZV92",
+            "aWV3X2F1ZGlibGVfcXVhcnRpbGVfcDI1X3JhdGVCKAomX2FjdGl2ZV92aWV3",
+            "X2F1ZGlibGVfcXVhcnRpbGVfcDUwX3JhdGVCKAomX2FjdGl2ZV92aWV3X2F1",
+            "ZGlibGVfcXVhcnRpbGVfcDc1X3JhdGVCKQonX2FjdGl2ZV92aWV3X2F1ZGli",
+            "bGVfcXVhcnRpbGVfcDEwMF9yYXRlQjsKOV9iaWRkYWJsZV9pbmRpcmVjdF9p",
+            "bnN0YWxsX2ZpcnN0X2luX2FwcF9jb252ZXJzaW9uX21pY3Jvc0IYChZfYWxs",
+            "X2F2ZXJhZ2VfY2FydF9zaXplQiEKH19hbGxfYXZlcmFnZV9vcmRlcl92YWx1",
+            "ZV9taWNyb3NCIAoeX2FsbF9jb3N0X29mX2dvb2RzX3NvbGRfbWljcm9zQisK",
+            "KV9hbGxfY3Jvc3Nfc2VsbF9jb3N0X29mX2dvb2RzX3NvbGRfbWljcm9zQiUK",
+            "I19hbGxfY3Jvc3Nfc2VsbF9ncm9zc19wcm9maXRfbWljcm9zQiAKHl9hbGxf",
+            "Y3Jvc3Nfc2VsbF9yZXZlbnVlX21pY3Jvc0IcChpfYWxsX2Nyb3NzX3NlbGxf",
+            "dW5pdHNfc29sZEIaChhfYWxsX2dyb3NzX3Byb2ZpdF9tYXJnaW5CGgoYX2Fs",
+            "bF9ncm9zc19wcm9maXRfbWljcm9zQiUKI19hbGxfbGVhZF9jb3N0X29mX2dv",
+            "b2RzX3NvbGRfbWljcm9zQh8KHV9hbGxfbGVhZF9ncm9zc19wcm9maXRfbWlj",
+            "cm9zQhoKGF9hbGxfbGVhZF9yZXZlbnVlX21pY3Jvc0IWChRfYWxsX2xlYWRf",
+            "dW5pdHNfc29sZEINCgtfYWxsX29yZGVyc0IVChNfYWxsX3JldmVudWVfbWlj",
+            "cm9zQhEKD19hbGxfdW5pdHNfc29sZEIeChxfY29udHJvbF9jb3N0X3Blcl9j",
+            "b252ZXJzaW9uQiYKJF9jb3N0X3Blcl9jb252ZXJzaW9uX21hcmdpbl9vZl9l",
+            "cnJvckIeChxfY29zdF9wZXJfY29udmVyc2lvbl9wX3ZhbHVlQiwKKl9jb3N0",
+            "X3Blcl9jb252ZXJzaW9uX2NoYW5nZV9wb2ludF9lc3RpbWF0ZUIWChRfY29u",
+            "dHJvbF9jb252ZXJzaW9uc0IuCixfY29udmVyc2lvbnNfYWJzb2x1dGVfY2hh",
+            "bmdlX21hcmdpbl9vZl9lcnJvckImCiRfY29udmVyc2lvbnNfYWJzb2x1dGVf",
+            "Y2hhbmdlX3BfdmFsdWVCLQorX2NvbnZlcnNpb25zX2Fic29sdXRlX2NoYW5n",
+            "ZV9wb2ludF9lc3RpbWF0ZUIkCiJfY29udHJvbF9jb252ZXJzaW9uX3ZhbHVl",
+            "X3Blcl9jb3N0QiwKKl9jb252ZXJzaW9uX3ZhbHVlX3Blcl9jb3N0X21hcmdp",
+            "bl9vZl9lcnJvckIkCiJfY29udmVyc2lvbl92YWx1ZV9wZXJfY29zdF9wX3Zh",
+            "bHVlQjIKMF9jb252ZXJzaW9uX3ZhbHVlX3Blcl9jb3N0X2NoYW5nZV9wb2lu",
+            "dF9lc3RpbWF0ZUIWChRfY29udHJvbF9jb3N0X21pY3Jvc0IeChxfY29zdF9t",
+            "aWNyb3NfbWFyZ2luX29mX2Vycm9yQhYKFF9jb3N0X21pY3Jvc19wX3ZhbHVl",
+            "QiQKIl9jb3N0X21pY3Jvc19jaGFuZ2VfcG9pbnRfZXN0aW1hdGVCFgoUX2Nv",
+            "bnRyb2xfaW1wcmVzc2lvbnNCHgocX2ltcHJlc3Npb25zX21hcmdpbl9vZl9l",
+            "cnJvckIWChRfaW1wcmVzc2lvbnNfcF92YWx1ZUIdChtfaW1wcmVzc2lvbnNf",
+            "cG9pbnRfZXN0aW1hdGVCGQoXX2NsaWNrc19tYXJnaW5fb2ZfZXJyb3JCEQoP",
+            "X2NsaWNrc19wX3ZhbHVlQhgKFl9jbGlja3NfcG9pbnRfZXN0aW1hdGVCGwoZ",
+            "X2NvbnRyb2xfY29udmVyc2lvbl92YWx1ZUIjCiFfY29udmVyc2lvbl92YWx1",
+            "ZV9tYXJnaW5fb2ZfZXJyb3JCGwoZX2NvbnZlcnNpb25fdmFsdWVfcF92YWx1",
+            "ZUIpCidfY29udmVyc2lvbl92YWx1ZV9jaGFuZ2VfcG9pbnRfZXN0aW1hdGVC",
+            "GgoYX2luY3JlbWVudGFsX2NvbnZlcnNpb25zQicKJV9pbmNyZW1lbnRhbF9j",
+            "b252ZXJzaW9uc193aW5uZXJfc2NvcmVCHwodX2luY3JlbWVudGFsX2NvbnZl",
+            "cnNpb25fdmFsdWVCLAoqX2luY3JlbWVudGFsX2NvbnZlcnNpb25fdmFsdWVf",
+            "d2lubmVyX3Njb3JlQicKJV9jb252ZXJzaW9uX2xpZnRfYmFzZWxpbmVfY29u",
+            "dmVyc2lvbnNCLAoqX2NvbnZlcnNpb25fbGlmdF9iYXNlbGluZV9jb252ZXJz",
+            "aW9uX3ZhbHVlQiYKJF9jb252ZXJzaW9uX2xpZnRfZXhwb3NlZF9jb252ZXJz",
+            "aW9uc0IrCilfY29udmVyc2lvbl9saWZ0X2V4cG9zZWRfY29udmVyc2lvbl92",
+            "YWx1ZUIiCiBfY29zdF9wZXJfaW5jcmVtZW50YWxfY29udmVyc2lvbkIvCi1f",
+            "Y29zdF9wZXJfaW5jcmVtZW50YWxfY29udmVyc2lvbl93aW5uZXJfc2NvcmVC",
+            "MgowX2Nvc3RfcGVyX2luY3JlbWVudGFsX2NvbnZlcnNpb25fcDkwX2xvd2Vy",
+            "X2JvdW5kQjIKMF9jb3N0X3Blcl9pbmNyZW1lbnRhbF9jb252ZXJzaW9uX3A5",
+            "MF91cHBlcl9ib3VuZEIqCihfaW5jcmVtZW50YWxfY29udmVyc2lvbnNfcDkw",
+            "X2xvd2VyX2JvdW5kQioKKF9pbmNyZW1lbnRhbF9jb252ZXJzaW9uc19wOTBf",
+            "dXBwZXJfYm91bmRCIgogX2luY3JlbWVudGFsX2NvbnZlcnNpb25zX3BfdmFs",
+            "dWVCLwotX2luY3JlbWVudGFsX2NvbnZlcnNpb25fdmFsdWVfcDkwX2xvd2Vy",
+            "X2JvdW5kQi8KLV9pbmNyZW1lbnRhbF9jb252ZXJzaW9uX3ZhbHVlX3A5MF91",
+            "cHBlcl9ib3VuZEInCiVfaW5jcmVtZW50YWxfY29udmVyc2lvbl92YWx1ZV9w",
+            "X3ZhbHVlQigKJl9pbmNyZW1lbnRhbF9jb252ZXJzaW9uX3ZhbHVlX3Blcl9j",
+            "b3N0QjUKM19pbmNyZW1lbnRhbF9jb252ZXJzaW9uX3ZhbHVlX3Blcl9jb3N0",
+            "X3dpbm5lcl9zY29yZUI4CjZfaW5jcmVtZW50YWxfY29udmVyc2lvbl92YWx1",
+            "ZV9wZXJfY29zdF9wOTBfbG93ZXJfYm91bmRCOAo2X2luY3JlbWVudGFsX2Nv",
+            "bnZlcnNpb25fdmFsdWVfcGVyX2Nvc3RfcDkwX3VwcGVyX2JvdW5kQhsKGV9y",
+            "ZWxhdGl2ZV9jb252ZXJzaW9uX2xpZnRCKwopX3JlbGF0aXZlX2NvbnZlcnNp",
+            "b25fbGlmdF9wOTBfbG93ZXJfYm91bmRCKwopX3JlbGF0aXZlX2NvbnZlcnNp",
+            "b25fbGlmdF9wOTBfdXBwZXJfYm91bmRCIQofX3JlbGF0aXZlX2NvbnZlcnNp",
+            "b25fdmFsdWVfbGlmdEIxCi9fcmVsYXRpdmVfY29udmVyc2lvbl92YWx1ZV9s",
+            "aWZ0X3A5MF9sb3dlcl9ib3VuZEIxCi9fcmVsYXRpdmVfY29udmVyc2lvbl92",
+            "YWx1ZV9saWZ0X3A5MF91cHBlcl9ib3VuZEIWChRfYWJzb2x1dGVfYnJhbmRf",
+            "bGlmdEImCiRfYWJzb2x1dGVfYnJhbmRfbGlmdF9wOTBfbG93ZXJfYm91bmRC",
+            "JgokX2Fic29sdXRlX2JyYW5kX2xpZnRfcDkwX3VwcGVyX2JvdW5kQh4KHF9h",
+            "YnNvbHV0ZV9icmFuZF9saWZ0X3BfdmFsdWVCLQorX2JyYW5kX2xpZnRfYmFz",
+            "ZWxpbmVfcG9zaXRpdmVfcmVzcG9uc2VfcmF0ZUI9CjtfYnJhbmRfbGlmdF9i",
+            "YXNlbGluZV9wb3NpdGl2ZV9yZXNwb25zZV9yYXRlX3A5MF9sb3dlcl9ib3Vu",
+            "ZEI9CjtfYnJhbmRfbGlmdF9iYXNlbGluZV9wb3NpdGl2ZV9yZXNwb25zZV9y",
+            "YXRlX3A5MF91cHBlcl9ib3VuZEI7CjlfYnJhbmRfbGlmdF9leHBvc2VkX3Bv",
+            "c2l0aXZlX3Jlc3BvbmRlcl9mcmFjdGlvbmFsX2Nvb2tpZXNCSwpJX2JyYW5k",
+            "X2xpZnRfZXhwb3NlZF9wb3NpdGl2ZV9yZXNwb25kZXJfZnJhY3Rpb25hbF9j",
+            "b29raWVzX3A5MF9sb3dlcl9ib3VuZEJLCklfYnJhbmRfbGlmdF9leHBvc2Vk",
+            "X3Bvc2l0aXZlX3Jlc3BvbmRlcl9mcmFjdGlvbmFsX2Nvb2tpZXNfcDkwX3Vw",
+            "cGVyX2JvdW5kQiwKKl9icmFuZF9saWZ0X2V4cG9zZWRfcG9zaXRpdmVfcmVz",
+            "cG9uc2VfcmF0ZUI8CjpfYnJhbmRfbGlmdF9leHBvc2VkX3Bvc2l0aXZlX3Jl",
+            "c3BvbnNlX3JhdGVfcDkwX2xvd2VyX2JvdW5kQjwKOl9icmFuZF9saWZ0X2V4",
+            "cG9zZWRfcG9zaXRpdmVfcmVzcG9uc2VfcmF0ZV9wOTBfdXBwZXJfYm91bmRC",
+            "HwodX2JyYW5kX2xpZnRfcmVzcG9uc2VzX2V4cG9zZWRCIgogX2JyYW5kX2xp",
+            "ZnRfcmVzcG9uc2VzX3N1cHByZXNzZWRCPgo8X2JyYW5kX2xpZnRfc3VwcHJl",
+            "c3NlZF9wb3NpdGl2ZV9yZXNwb25kZXJfZnJhY3Rpb25hbF9jb29raWVzQk4K",
+            "TF9icmFuZF9saWZ0X3N1cHByZXNzZWRfcG9zaXRpdmVfcmVzcG9uZGVyX2Zy",
+            "YWN0aW9uYWxfY29va2llc19wOTBfbG93ZXJfYm91bmRCTgpMX2JyYW5kX2xp",
+            "ZnRfc3VwcHJlc3NlZF9wb3NpdGl2ZV9yZXNwb25kZXJfZnJhY3Rpb25hbF9j",
+            "b29raWVzX3A5MF91cHBlcl9ib3VuZEIdChtfYnJhbmRfbGlmdF90b3RhbF9y",
+            "ZXNwb25zZXNCGQoXX2Nvc3RfcGVyX2xpZnRlZF9jb29raWVCKQonX2Nvc3Rf",
+            "cGVyX2xpZnRlZF9jb29raWVfcDkwX2xvd2VyX2JvdW5kQikKJ19jb3N0X3Bl",
+            "cl9saWZ0ZWRfY29va2llX3A5MF91cHBlcl9ib3VuZEIcChpfZnJhY3Rpb25h",
+            "bF9saWZ0ZWRfY29va2llc0IsCipfZnJhY3Rpb25hbF9saWZ0ZWRfY29va2ll",
+            "c19wOTBfbG93ZXJfYm91bmRCLAoqX2ZyYWN0aW9uYWxfbGlmdGVkX2Nvb2tp",
+            "ZXNfcDkwX3VwcGVyX2JvdW5kQhYKFF9oZWFkcm9vbV9icmFuZF9saWZ0QiYK",
+            "JF9oZWFkcm9vbV9icmFuZF9saWZ0X3A5MF9sb3dlcl9ib3VuZEImCiRfaGVh",
+            "ZHJvb21fYnJhbmRfbGlmdF9wOTBfdXBwZXJfYm91bmRCFgoUX3JlbGF0aXZl",
+            "X2JyYW5kX2xpZnRCJgokX3JlbGF0aXZlX2JyYW5kX2xpZnRfcDkwX2xvd2Vy",
+            "X2JvdW5kQiYKJF9yZWxhdGl2ZV9icmFuZF9saWZ0X3A5MF91cHBlcl9ib3Vu",
+            "ZEITChFfeW91dHViZV9jb21tZW50c0IQCg5feW91dHViZV9saWtlc0IRCg9f",
+            "eW91dHViZV9zaGFyZXNCHAoaX29yaWdpbmFsX2NvbnZlcnNpb25fdmFsdWVC",
+            "JQojX3ZlcnRpY2FsX2Fkc19wb3RlbnRpYWxfaW1wcmVzc2lvbnNCLAoqX3Zl",
+            "cnRpY2FsX2Fkc19hdmVyYWdlX2Jvb2tpbmdfdmFsdWVfbWljcm9zQisKKV92",
+            "ZXJ0aWNhbF9hZHNfcHJpY2VfZGlmZmVyZW5jZV9wZXJjZW50YWdlIkcKEVNl",
+            "YXJjaFZvbHVtZVJhbmdlEhAKA21pbhgBIAEoA0gAiAEBEhAKA21heBgCIAEo",
+            "A0gBiAEBQgYKBF9taW5CBgoEX21heELsAQojY29tLmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYyNS5jb21tb25CDE1ldHJpY3NQcm90b1ABWkVnb29nbGUuZ29s",
+            "YW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjI1",
+            "L2NvbW1vbjtjb21tb26iAgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFkcy5W",
+            "MjUuQ29tbW9uygIfR29vZ2xlXEFkc1xHb29nbGVBZHNcVjI1XENvbW1vbuoC",
+            "I0dvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyNTo6Q29tbW9uYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V25.Enums.InteractionEventTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.QualityScoreBucketReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Common.Metrics), global::Google.Ads.GoogleAds.V25.Common.Metrics.Parser, new[]{ "AbsoluteTopImpressionPercentage", "ActiveViewCpm", "ActiveViewCtr", "ActiveViewImpressions", "ActiveViewMeasurability", "ActiveViewMeasurableCostMicros", "ActiveViewMeasurableImpressions", "ActiveViewViewability", "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversionsValueByConversionDate", "AllNewCustomerLifetimeValue", "AllConversions", "AllConversionsByConversionDate", "AllConversionsValuePerCost", "AllConversionsFromClickToCall", "AllConversionsFromDirections", "AllConversionsFromInteractionsValuePerInteraction", "AllConversionsFromMenu", "AllConversionsFromOrder", "AllConversionsFromOtherEngagement", "AllConversionsFromStoreVisit", "AllConversionsFromStoreWebsite", "AuctionInsightSearchAbsoluteTopImpressionPercentage", "AuctionInsightSearchImpressionShare", "AuctionInsightSearchOutrankingShare", "AuctionInsightSearchOverlapRate", "AuctionInsightSearchPositionAboveRate", "AuctionInsightSearchTopImpressionPercentage", "AverageCost", "AverageCpc", "AverageCpe", "AverageCpm", "TrueviewAverageCpv", "AveragePageViews", "AverageTimeOnSite", "BenchmarkAverageMaxCpc", "BiddableAppInstallConversions", "BiddableAppPostInstallConversions", "BiddableCohortAppPostInstallConversions", "BenchmarkCtr", "BounceRate", "Clicks", "ControlClicks", "CombinedClicks", "CombinedClicksPerQuery", "CombinedQueries", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValueByConversionDate", "NewCustomerLifetimeValue", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "ConversionsByConversionDate", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CostPerCurrentModelAttributedConversion", "CrossDeviceConversions", "CrossDeviceConversionsByConversionDate", "CrossDeviceConversionsValue", "CrossDeviceConversionsValueMicros", "CrossDeviceConversionsValueByConversionDate", "Ctr", "CurrentModelAttributedConversions", "CurrentModelAttributedConversionsFromInteractionsRate", "CurrentModelAttributedConversionsFromInteractionsValuePerInteraction", "CurrentModelAttributedConversionsValue", "CurrentModelAttributedConversionsValuePerCost", "EngagementRate", "Engagements", "HotelAverageLeadValueMicros", "HotelCommissionRateMicros", "HotelExpectedCommissionCost", "HotelPriceDifferencePercentage", "HotelEligibleImpressions", "HistoricalCreativeQualityScore", "HistoricalLandingPageQualityScore", "HistoricalQualityScore", "HistoricalSearchPredictedCtr", "GmailForwards", "GmailSaves", "GmailSecondaryClicks", "ImpressionsFromStoreReach", "Impressions", "InteractionRate", "Interactions", "InteractionEventTypes", "InvalidClickRate", "InvalidClicks", "GeneralInvalidClickRate", "GeneralInvalidClicks", "MessageChats", "MessageImpressions", "MessageChatRate", "MobileFriendlyClicksPercentage", "OptimizationScoreUplift", "OptimizationScoreUrl", "OrganicClicks", "OrganicClicksPerQuery", "OrganicImpressions", "OrganicImpressionsPerQuery", "OrganicQueries", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchAbsoluteTopImpressionShare", "SearchBudgetLostAbsoluteTopImpressionShare", "SearchBudgetLostImpressionShare", "SearchBudgetLostTopImpressionShare", "SearchClickShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostAbsoluteTopImpressionShare", "SearchRankLostImpressionShare", "SearchRankLostTopImpressionShare", "SearchTopImpressionShare", "SearchVolume", "SpeedScore", "AverageTargetCpaMicros", "AverageTargetRoas", "TopImpressionPercentage", "ValidAcceleratedMobilePagesClicksPercentage", "ValuePerAllConversions", "ValuePerAllConversionsByConversionDate", "ValuePerConversion", "ValuePerConversionsByConversionDate", "ValuePerCurrentModelAttributedConversion", "VideoQuartileP100Rate", "VideoQuartileP25Rate", "VideoQuartileP50Rate", "VideoQuartileP75Rate", "VideoTrueviewViewRate", "VideoTrueviewViews", "ViewThroughConversions", "SkAdNetworkInstalls", "SkAdNetworkTotalConversions", "PublisherPurchasedClicks", "PublisherOrganicClicks", "PublisherUnknownClicks", "AllConversionsFromLocationAssetClickToCall", "AllConversionsFromLocationAssetDirections", "AllConversionsFromLocationAssetMenu", "AllConversionsFromLocationAssetOrder", "AllConversionsFromLocationAssetOtherEngagement", "AllConversionsFromLocationAssetStoreVisits", "AllConversionsFromLocationAssetWebsite", "EligibleImpressionsFromLocationAssetStoreReach", "ViewThroughConversionsFromLocationAssetClickToCall", "ViewThroughConversionsFromLocationAssetDirections", "ViewThroughConversionsFromLocationAssetMenu", "ViewThroughConversionsFromLocationAssetOrder", "ViewThroughConversionsFromLocationAssetOtherEngagement", "ViewThroughConversionsFromLocationAssetStoreVisits", "ViewThroughConversionsFromLocationAssetWebsite", "Orders", "AverageOrderValueMicros", "AverageCartSize", "CostOfGoodsSoldMicros", "GrossProfitMicros", "GrossProfitMargin", "RevenueMicros", "UnitsSold", "CrossSellCostOfGoodsSoldMicros", "CrossSellGrossProfitMicros", "CrossSellRevenueMicros", "CrossSellUnitsSold", "LeadCostOfGoodsSoldMicros", "LeadGrossProfitMicros", "LeadRevenueMicros", "LeadUnitsSold", "UniqueUsers", "AverageImpressionFrequencyPerUser", "LinkedEntitiesCount", "LinkedSampleEntities", "AssetPinnedTotalCount", "AssetPinnedAsHeadlinePositionOneCount", "AssetPinnedAsHeadlinePositionTwoCount", "AssetPinnedAsHeadlinePositionThreeCount", "AssetPinnedAsDescriptionPositionOneCount", "AssetPinnedAsDescriptionPositionTwoCount", "StoreVisitsLastClickModelAttributedConversions", "ResultsConversionsPurchase", "VideoTrueviewViewRateInFeed", "VideoTrueviewViewRateInStream", "VideoTrueviewViewRateShorts", "CoviewedImpressions", "PrimaryImpressions", "PlatformComparableConversionsFromInteractionsRate", "PlatformComparableConversions", "PlatformComparableConversionsValue", "PlatformComparableConversionsValuePerCost", "PlatformComparableConversionsByConversionDate", "PlatformComparableConversionsValueByConversionDate", "PlatformComparableConversionsFromInteractionsValuePerInteraction", "CostPerPlatformComparableConversion", "ValuePerPlatformComparableConversion", "ValuePerPlatformComparableConversionsByConversionDate", "CostConvertedCurrencyPerPlatformComparableConversion", "UniqueUsersTwoPlus", "UniqueUsersThreePlus", "UniqueUsersFourPlus", "UniqueUsersFivePlus", "UniqueUsersTenPlus", "ValueAdjustment", "AllValueAdjustment", "ClicksUniqueQueryClusters", "ConversionsUniqueQueryClusters", "ImpressionsUniqueQueryClusters", "VideoWatchTimeDurationMillis", "AverageVideoWatchTimeDurationMillis", "Svr", "ActiveViewAudibilityMeasurableImpressions", "ActiveViewAudibilityMeasurableImpressionsRate", "ActiveViewAudibilityInvalidMeasurableImpressionsRate", "ActiveViewAudibilityInvalidGivtMeasurableImpressionsRate", "ActiveViewAudibleImpressions", "ActiveViewAudibleImpressionsRate", "ActiveViewAudibleTwoSecondsImpressions", "ActiveViewAudibleTwoSecondsImpressionsRate", "ActiveViewAudibleThirtySecondsImpressions", "ActiveViewAudibleThirtySecondsImpressionsRate", "ActiveViewAudibleQuartileP25Rate", "ActiveViewAudibleQuartileP50Rate", "ActiveViewAudibleQuartileP75Rate", "ActiveViewAudibleQuartileP100Rate", "BiddableIndirectInstallFirstInAppConversionMicros", "AllAverageCartSize", "AllAverageOrderValueMicros", "AllCostOfGoodsSoldMicros", "AllCrossSellCostOfGoodsSoldMicros", "AllCrossSellGrossProfitMicros", "AllCrossSellRevenueMicros", "AllCrossSellUnitsSold", "AllGrossProfitMargin", "AllGrossProfitMicros", "AllLeadCostOfGoodsSoldMicros", "AllLeadGrossProfitMicros", "AllLeadRevenueMicros", "AllLeadUnitsSold", "AllOrders", "AllRevenueMicros", "AllUnitsSold", "ControlCostPerConversion", "CostPerConversionMarginOfError", "CostPerConversionPValue", "CostPerConversionChangePointEstimate", "ControlConversions", "ConversionsAbsoluteChangeMarginOfError", "ConversionsAbsoluteChangePValue", "ConversionsAbsoluteChangePointEstimate", "ControlConversionValuePerCost", "ConversionValuePerCostMarginOfError", "ConversionValuePerCostPValue", "ConversionValuePerCostChangePointEstimate", "ControlCostMicros", "CostMicrosMarginOfError", "CostMicrosPValue", "CostMicrosChangePointEstimate", "ControlImpressions", "ImpressionsMarginOfError", "ImpressionsPValue", "ImpressionsPointEstimate", "ClicksMarginOfError", "ClicksPValue", "ClicksPointEstimate", "ControlConversionValue", "ConversionValueMarginOfError", "ConversionValuePValue", "ConversionValueChangePointEstimate", "IncrementalConversions", "IncrementalConversionsWinnerScore", "IncrementalConversionValue", "IncrementalConversionValueWinnerScore", "ConversionLiftBaselineConversions", "ConversionLiftBaselineConversionValue", "ConversionLiftExposedConversions", "ConversionLiftExposedConversionValue", "CostPerIncrementalConversion", "CostPerIncrementalConversionWinnerScore", "CostPerIncrementalConversionP90LowerBound", "CostPerIncrementalConversionP90UpperBound", "IncrementalConversionsP90LowerBound", "IncrementalConversionsP90UpperBound", "IncrementalConversionsPValue", "IncrementalConversionValueP90LowerBound", "IncrementalConversionValueP90UpperBound", "IncrementalConversionValuePValue", "IncrementalConversionValuePerCost", "IncrementalConversionValuePerCostWinnerScore", "IncrementalConversionValuePerCostP90LowerBound", "IncrementalConversionValuePerCostP90UpperBound", "RelativeConversionLift", "RelativeConversionLiftP90LowerBound", "RelativeConversionLiftP90UpperBound", "RelativeConversionValueLift", "RelativeConversionValueLiftP90LowerBound", "RelativeConversionValueLiftP90UpperBound", "AbsoluteBrandLift", "AbsoluteBrandLiftP90LowerBound", "AbsoluteBrandLiftP90UpperBound", "AbsoluteBrandLiftPValue", "BrandLiftBaselinePositiveResponseRate", "BrandLiftBaselinePositiveResponseRateP90LowerBound", "BrandLiftBaselinePositiveResponseRateP90UpperBound", "BrandLiftExposedPositiveResponderFractionalCookies", "BrandLiftExposedPositiveResponderFractionalCookiesP90LowerBound", "BrandLiftExposedPositiveResponderFractionalCookiesP90UpperBound", "BrandLiftExposedPositiveResponseRate", "BrandLiftExposedPositiveResponseRateP90LowerBound", "BrandLiftExposedPositiveResponseRateP90UpperBound", "BrandLiftResponsesExposed", "BrandLiftResponsesSuppressed", "BrandLiftSuppressedPositiveResponderFractionalCookies", "BrandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound", "BrandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound", "BrandLiftTotalResponses", "CostPerLiftedCookie", "CostPerLiftedCookieP90LowerBound", "CostPerLiftedCookieP90UpperBound", "FractionalLiftedCookies", "FractionalLiftedCookiesP90LowerBound", "FractionalLiftedCookiesP90UpperBound", "HeadroomBrandLift", "HeadroomBrandLiftP90LowerBound", "HeadroomBrandLiftP90UpperBound", "RelativeBrandLift", "RelativeBrandLiftP90LowerBound", "RelativeBrandLiftP90UpperBound", "YoutubeComments", "YoutubeLikes", "YoutubeShares", "OriginalConversionValue" }, new[]{ "AbsoluteTopImpressionPercentage", "ActiveViewCpm", "ActiveViewCtr", "ActiveViewImpressions", "ActiveViewMeasurability", "ActiveViewMeasurableCostMicros", "ActiveViewMeasurableImpressions", "ActiveViewViewability", "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversionsValueByConversionDate", "AllNewCustomerLifetimeValue", "AllConversions", "AllConversionsByConversionDate", "AllConversionsValuePerCost", "AllConversionsFromClickToCall", "AllConversionsFromDirections", "AllConversionsFromInteractionsValuePerInteraction", "AllConversionsFromMenu", "AllConversionsFromOrder", "AllConversionsFromOtherEngagement", "AllConversionsFromStoreVisit", "AllConversionsFromStoreWebsite", "AuctionInsightSearchAbsoluteTopImpressionPercentage", "AuctionInsightSearchImpressionShare", "AuctionInsightSearchOutrankingShare", "AuctionInsightSearchOverlapRate", "AuctionInsightSearchPositionAboveRate", "AuctionInsightSearchTopImpressionPercentage", "AverageCost", "AverageCpc", "AverageCpe", "AverageCpm", "TrueviewAverageCpv", "AveragePageViews", "AverageTimeOnSite", "BenchmarkAverageMaxCpc", "BiddableAppInstallConversions", "BiddableAppPostInstallConversions", "BiddableCohortAppPostInstallConversions", "BenchmarkCtr", "BounceRate", "Clicks", "ControlClicks", "CombinedClicks", "CombinedClicksPerQuery", "CombinedQueries", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValueByConversionDate", "NewCustomerLifetimeValue", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "ConversionsByConversionDate", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CostPerCurrentModelAttributedConversion", "CrossDeviceConversions", "CrossDeviceConversionsByConversionDate", "CrossDeviceConversionsValue", "CrossDeviceConversionsValueMicros", "CrossDeviceConversionsValueByConversionDate", "Ctr", "CurrentModelAttributedConversions", "CurrentModelAttributedConversionsFromInteractionsRate", "CurrentModelAttributedConversionsFromInteractionsValuePerInteraction", "CurrentModelAttributedConversionsValue", "CurrentModelAttributedConversionsValuePerCost", "EngagementRate", "Engagements", "HotelAverageLeadValueMicros", "HotelCommissionRateMicros", "HotelExpectedCommissionCost", "HotelPriceDifferencePercentage", "HotelEligibleImpressions", "HistoricalQualityScore", "GmailForwards", "GmailSaves", "GmailSecondaryClicks", "ImpressionsFromStoreReach", "Impressions", "InteractionRate", "Interactions", "InvalidClickRate", "InvalidClicks", "GeneralInvalidClickRate", "GeneralInvalidClicks", "MessageChats", "MessageImpressions", "MessageChatRate", "MobileFriendlyClicksPercentage", "OptimizationScoreUplift", "OptimizationScoreUrl", "OrganicClicks", "OrganicClicksPerQuery", "OrganicImpressions", "OrganicImpressionsPerQuery", "OrganicQueries", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchAbsoluteTopImpressionShare", "SearchBudgetLostAbsoluteTopImpressionShare", "SearchBudgetLostImpressionShare", "SearchBudgetLostTopImpressionShare", "SearchClickShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostAbsoluteTopImpressionShare", "SearchRankLostImpressionShare", "SearchRankLostTopImpressionShare", "SearchTopImpressionShare", "SearchVolume", "SpeedScore", "AverageTargetCpaMicros", "AverageTargetRoas", "TopImpressionPercentage", "ValidAcceleratedMobilePagesClicksPercentage", "ValuePerAllConversions", "ValuePerAllConversionsByConversionDate", "ValuePerConversion", "ValuePerConversionsByConversionDate", "ValuePerCurrentModelAttributedConversion", "VideoQuartileP100Rate", "VideoQuartileP25Rate", "VideoQuartileP50Rate", "VideoQuartileP75Rate", "VideoTrueviewViewRate", "VideoTrueviewViews", "ViewThroughConversions", "AllConversionsFromLocationAssetClickToCall", "AllConversionsFromLocationAssetDirections", "AllConversionsFromLocationAssetMenu", "AllConversionsFromLocationAssetOrder", "AllConversionsFromLocationAssetOtherEngagement", "AllConversionsFromLocationAssetStoreVisits", "AllConversionsFromLocationAssetWebsite", "EligibleImpressionsFromLocationAssetStoreReach", "ViewThroughConversionsFromLocationAssetClickToCall", "ViewThroughConversionsFromLocationAssetDirections", "ViewThroughConversionsFromLocationAssetMenu", "ViewThroughConversionsFromLocationAssetOrder", "ViewThroughConversionsFromLocationAssetOtherEngagement", "ViewThroughConversionsFromLocationAssetStoreVisits", "ViewThroughConversionsFromLocationAssetWebsite", "Orders", "AverageOrderValueMicros", "AverageCartSize", "CostOfGoodsSoldMicros", "GrossProfitMicros", "GrossProfitMargin", "RevenueMicros", "UnitsSold", "CrossSellCostOfGoodsSoldMicros", "CrossSellGrossProfitMicros", "CrossSellRevenueMicros", "CrossSellUnitsSold", "LeadCostOfGoodsSoldMicros", "LeadGrossProfitMicros", "LeadRevenueMicros", "LeadUnitsSold", "UniqueUsers", "AverageImpressionFrequencyPerUser", "LinkedEntitiesCount", "AssetPinnedTotalCount", "AssetPinnedAsHeadlinePositionOneCount", "AssetPinnedAsHeadlinePositionTwoCount", "AssetPinnedAsHeadlinePositionThreeCount", "AssetPinnedAsDescriptionPositionOneCount", "AssetPinnedAsDescriptionPositionTwoCount", "StoreVisitsLastClickModelAttributedConversions", "ResultsConversionsPurchase", "VideoTrueviewViewRateInFeed", "VideoTrueviewViewRateInStream", "VideoTrueviewViewRateShorts", "CoviewedImpressions", "PrimaryImpressions", "PlatformComparableConversionsFromInteractionsRate", "PlatformComparableConversions", "PlatformComparableConversionsValue", "PlatformComparableConversionsValuePerCost", "PlatformComparableConversionsByConversionDate", "PlatformComparableConversionsValueByConversionDate", "PlatformComparableConversionsFromInteractionsValuePerInteraction", "CostPerPlatformComparableConversion", "ValuePerPlatformComparableConversion", "ValuePerPlatformComparableConversionsByConversionDate", "CostConvertedCurrencyPerPlatformComparableConversion", "UniqueUsersTwoPlus", "UniqueUsersThreePlus", "UniqueUsersFourPlus", "UniqueUsersFivePlus", "UniqueUsersTenPlus", "ValueAdjustment", "AllValueAdjustment", "ClicksUniqueQueryClusters", "ConversionsUniqueQueryClusters", "ImpressionsUniqueQueryClusters", "VideoWatchTimeDurationMillis", "AverageVideoWatchTimeDurationMillis", "Svr", "ActiveViewAudibilityMeasurableImpressions", "ActiveViewAudibilityMeasurableImpressionsRate", "ActiveViewAudibilityInvalidMeasurableImpressionsRate", "ActiveViewAudibilityInvalidGivtMeasurableImpressionsRate", "ActiveViewAudibleImpressions", "ActiveViewAudibleImpressionsRate", "ActiveViewAudibleTwoSecondsImpressions", "ActiveViewAudibleTwoSecondsImpressionsRate", "ActiveViewAudibleThirtySecondsImpressions", "ActiveViewAudibleThirtySecondsImpressionsRate", "ActiveViewAudibleQuartileP25Rate", "ActiveViewAudibleQuartileP50Rate", "ActiveViewAudibleQuartileP75Rate", "ActiveViewAudibleQuartileP100Rate", "BiddableIndirectInstallFirstInAppConversionMicros", "AllAverageCartSize", "AllAverageOrderValueMicros", "AllCostOfGoodsSoldMicros", "AllCrossSellCostOfGoodsSoldMicros", "AllCrossSellGrossProfitMicros", "AllCrossSellRevenueMicros", "AllCrossSellUnitsSold", "AllGrossProfitMargin", "AllGrossProfitMicros", "AllLeadCostOfGoodsSoldMicros", "AllLeadGrossProfitMicros", "AllLeadRevenueMicros", "AllLeadUnitsSold", "AllOrders", "AllRevenueMicros", "AllUnitsSold", "ControlCostPerConversion", "CostPerConversionMarginOfError", "CostPerConversionPValue", "CostPerConversionChangePointEstimate", "ControlConversions", "ConversionsAbsoluteChangeMarginOfError", "ConversionsAbsoluteChangePValue", "ConversionsAbsoluteChangePointEstimate", "ControlConversionValuePerCost", "ConversionValuePerCostMarginOfError", "ConversionValuePerCostPValue", "ConversionValuePerCostChangePointEstimate", "ControlCostMicros", "CostMicrosMarginOfError", "CostMicrosPValue", "CostMicrosChangePointEstimate", "ControlImpressions", "ImpressionsMarginOfError", "ImpressionsPValue", "ImpressionsPointEstimate", "ClicksMarginOfError", "ClicksPValue", "ClicksPointEstimate", "ControlConversionValue", "ConversionValueMarginOfError", "ConversionValuePValue", "ConversionValueChangePointEstimate", "IncrementalConversions", "IncrementalConversionsWinnerScore", "IncrementalConversionValue", "IncrementalConversionValueWinnerScore", "ConversionLiftBaselineConversions", "ConversionLiftBaselineConversionValue", "ConversionLiftExposedConversions", "ConversionLiftExposedConversionValue", "CostPerIncrementalConversion", "CostPerIncrementalConversionWinnerScore", "CostPerIncrementalConversionP90LowerBound", "CostPerIncrementalConversionP90UpperBound", "IncrementalConversionsP90LowerBound", "IncrementalConversionsP90UpperBound", "IncrementalConversionsPValue", "IncrementalConversionValueP90LowerBound", "IncrementalConversionValueP90UpperBound", "IncrementalConversionValuePValue", "IncrementalConversionValuePerCost", "IncrementalConversionValuePerCostWinnerScore", "IncrementalConversionValuePerCostP90LowerBound", "IncrementalConversionValuePerCostP90UpperBound", "RelativeConversionLift", "RelativeConversionLiftP90LowerBound", "RelativeConversionLiftP90UpperBound", "RelativeConversionValueLift", "RelativeConversionValueLiftP90LowerBound", "RelativeConversionValueLiftP90UpperBound", "AbsoluteBrandLift", "AbsoluteBrandLiftP90LowerBound", "AbsoluteBrandLiftP90UpperBound", "AbsoluteBrandLiftPValue", "BrandLiftBaselinePositiveResponseRate", "BrandLiftBaselinePositiveResponseRateP90LowerBound", "BrandLiftBaselinePositiveResponseRateP90UpperBound", "BrandLiftExposedPositiveResponderFractionalCookies", "BrandLiftExposedPositiveResponderFractionalCookiesP90LowerBound", "BrandLiftExposedPositiveResponderFractionalCookiesP90UpperBound", "BrandLiftExposedPositiveResponseRate", "BrandLiftExposedPositiveResponseRateP90LowerBound", "BrandLiftExposedPositiveResponseRateP90UpperBound", "BrandLiftResponsesExposed", "BrandLiftResponsesSuppressed", "BrandLiftSuppressedPositiveResponderFractionalCookies", "BrandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound", "BrandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound", "BrandLiftTotalResponses", "CostPerLiftedCookie", "CostPerLiftedCookieP90LowerBound", "CostPerLiftedCookieP90UpperBound", "FractionalLiftedCookies", "FractionalLiftedCookiesP90LowerBound", "FractionalLiftedCookiesP90UpperBound", "HeadroomBrandLift", "HeadroomBrandLiftP90LowerBound", "HeadroomBrandLiftP90UpperBound", "RelativeBrandLift", "RelativeBrandLiftP90LowerBound", "RelativeBrandLiftP90UpperBound", "YoutubeComments", "YoutubeLikes", "YoutubeShares", "OriginalConversionValue" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Common.Metrics), global::Google.Ads.GoogleAds.V25.Common.Metrics.Parser, new[]{ "AbsoluteTopImpressionPercentage", "ActiveViewCpm", "ActiveViewCtr", "ActiveViewImpressions", "ActiveViewMeasurability", "ActiveViewMeasurableCostMicros", "ActiveViewMeasurableImpressions", "ActiveViewViewability", "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversionsValueByConversionDate", "AllNewCustomerLifetimeValue", "AllConversions", "AllConversionsByConversionDate", "AllConversionsValuePerCost", "AllConversionsFromClickToCall", "AllConversionsFromDirections", "AllConversionsFromInteractionsValuePerInteraction", "AllConversionsFromMenu", "AllConversionsFromOrder", "AllConversionsFromOtherEngagement", "AllConversionsFromStoreVisit", "AllConversionsFromStoreWebsite", "AuctionInsightSearchAbsoluteTopImpressionPercentage", "AuctionInsightSearchImpressionShare", "AuctionInsightSearchOutrankingShare", "AuctionInsightSearchOverlapRate", "AuctionInsightSearchPositionAboveRate", "AuctionInsightSearchTopImpressionPercentage", "AverageCost", "AverageCpc", "AverageCpe", "AverageCpm", "TrueviewAverageCpv", "AveragePageViews", "AverageTimeOnSite", "BenchmarkAverageMaxCpc", "BiddableAppInstallConversions", "BiddableAppPostInstallConversions", "BiddableCohortAppPostInstallConversions", "BenchmarkCtr", "BounceRate", "Clicks", "ControlClicks", "CombinedClicks", "CombinedClicksPerQuery", "CombinedQueries", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValueByConversionDate", "NewCustomerLifetimeValue", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "ConversionsByConversionDate", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CostPerCurrentModelAttributedConversion", "CrossDeviceConversions", "CrossDeviceConversionsByConversionDate", "CrossDeviceConversionsValue", "CrossDeviceConversionsValueMicros", "CrossDeviceConversionsValueByConversionDate", "Ctr", "CurrentModelAttributedConversions", "CurrentModelAttributedConversionsFromInteractionsRate", "CurrentModelAttributedConversionsFromInteractionsValuePerInteraction", "CurrentModelAttributedConversionsValue", "CurrentModelAttributedConversionsValuePerCost", "EngagementRate", "Engagements", "HotelAverageLeadValueMicros", "HotelCommissionRateMicros", "HotelExpectedCommissionCost", "HotelPriceDifferencePercentage", "HotelEligibleImpressions", "HistoricalCreativeQualityScore", "HistoricalLandingPageQualityScore", "HistoricalQualityScore", "HistoricalSearchPredictedCtr", "GmailForwards", "GmailSaves", "GmailSecondaryClicks", "ImpressionsFromStoreReach", "Impressions", "InteractionRate", "Interactions", "InteractionEventTypes", "InvalidClickRate", "InvalidClicks", "GeneralInvalidClickRate", "GeneralInvalidClicks", "MessageChats", "MessageImpressions", "MessageChatRate", "MobileFriendlyClicksPercentage", "OptimizationScoreUplift", "OptimizationScoreUrl", "OrganicClicks", "OrganicClicksPerQuery", "OrganicImpressions", "OrganicImpressionsPerQuery", "OrganicQueries", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchAbsoluteTopImpressionShare", "SearchBudgetLostAbsoluteTopImpressionShare", "SearchBudgetLostImpressionShare", "SearchBudgetLostTopImpressionShare", "SearchClickShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostAbsoluteTopImpressionShare", "SearchRankLostImpressionShare", "SearchRankLostTopImpressionShare", "SearchTopImpressionShare", "SearchVolume", "SpeedScore", "AverageTargetCpaMicros", "AverageTargetRoas", "TopImpressionPercentage", "ValidAcceleratedMobilePagesClicksPercentage", "ValuePerAllConversions", "ValuePerAllConversionsByConversionDate", "ValuePerConversion", "ValuePerConversionsByConversionDate", "ValuePerCurrentModelAttributedConversion", "VideoQuartileP100Rate", "VideoQuartileP25Rate", "VideoQuartileP50Rate", "VideoQuartileP75Rate", "VideoTrueviewViewRate", "VideoTrueviewViews", "ViewThroughConversions", "SkAdNetworkInstalls", "SkAdNetworkTotalConversions", "PublisherPurchasedClicks", "PublisherOrganicClicks", "PublisherUnknownClicks", "AllConversionsFromLocationAssetClickToCall", "AllConversionsFromLocationAssetDirections", "AllConversionsFromLocationAssetMenu", "AllConversionsFromLocationAssetOrder", "AllConversionsFromLocationAssetOtherEngagement", "AllConversionsFromLocationAssetStoreVisits", "AllConversionsFromLocationAssetWebsite", "EligibleImpressionsFromLocationAssetStoreReach", "ViewThroughConversionsFromLocationAssetClickToCall", "ViewThroughConversionsFromLocationAssetDirections", "ViewThroughConversionsFromLocationAssetMenu", "ViewThroughConversionsFromLocationAssetOrder", "ViewThroughConversionsFromLocationAssetOtherEngagement", "ViewThroughConversionsFromLocationAssetStoreVisits", "ViewThroughConversionsFromLocationAssetWebsite", "Orders", "AverageOrderValueMicros", "AverageCartSize", "CostOfGoodsSoldMicros", "GrossProfitMicros", "GrossProfitMargin", "RevenueMicros", "UnitsSold", "CrossSellCostOfGoodsSoldMicros", "CrossSellGrossProfitMicros", "CrossSellRevenueMicros", "CrossSellUnitsSold", "LeadCostOfGoodsSoldMicros", "LeadGrossProfitMicros", "LeadRevenueMicros", "LeadUnitsSold", "UniqueUsers", "AverageImpressionFrequencyPerUser", "LinkedEntitiesCount", "LinkedSampleEntities", "AssetPinnedTotalCount", "AssetPinnedAsHeadlinePositionOneCount", "AssetPinnedAsHeadlinePositionTwoCount", "AssetPinnedAsHeadlinePositionThreeCount", "AssetPinnedAsDescriptionPositionOneCount", "AssetPinnedAsDescriptionPositionTwoCount", "StoreVisitsLastClickModelAttributedConversions", "ResultsConversionsPurchase", "VideoTrueviewViewRateInFeed", "VideoTrueviewViewRateInStream", "VideoTrueviewViewRateShorts", "CoviewedImpressions", "PrimaryImpressions", "PlatformComparableConversionsFromInteractionsRate", "PlatformComparableConversions", "PlatformComparableConversionsValue", "PlatformComparableConversionsValuePerCost", "PlatformComparableConversionsByConversionDate", "PlatformComparableConversionsValueByConversionDate", "PlatformComparableConversionsFromInteractionsValuePerInteraction", "CostPerPlatformComparableConversion", "ValuePerPlatformComparableConversion", "ValuePerPlatformComparableConversionsByConversionDate", "CostConvertedCurrencyPerPlatformComparableConversion", "UniqueUsersTwoPlus", "UniqueUsersThreePlus", "UniqueUsersFourPlus", "UniqueUsersFivePlus", "UniqueUsersTenPlus", "ValueAdjustment", "AllValueAdjustment", "ClicksUniqueQueryClusters", "ConversionsUniqueQueryClusters", "ImpressionsUniqueQueryClusters", "VideoWatchTimeDurationMillis", "AverageVideoWatchTimeDurationMillis", "Svr", "ActiveViewAudibilityMeasurableImpressions", "ActiveViewAudibilityMeasurableImpressionsRate", "ActiveViewAudibilityInvalidMeasurableImpressionsRate", "ActiveViewAudibilityInvalidGivtMeasurableImpressionsRate", "ActiveViewAudibleImpressions", "ActiveViewAudibleImpressionsRate", "ActiveViewAudibleTwoSecondsImpressions", "ActiveViewAudibleTwoSecondsImpressionsRate", "ActiveViewAudibleThirtySecondsImpressions", "ActiveViewAudibleThirtySecondsImpressionsRate", "ActiveViewAudibleQuartileP25Rate", "ActiveViewAudibleQuartileP50Rate", "ActiveViewAudibleQuartileP75Rate", "ActiveViewAudibleQuartileP100Rate", "BiddableIndirectInstallFirstInAppConversionMicros", "AllAverageCartSize", "AllAverageOrderValueMicros", "AllCostOfGoodsSoldMicros", "AllCrossSellCostOfGoodsSoldMicros", "AllCrossSellGrossProfitMicros", "AllCrossSellRevenueMicros", "AllCrossSellUnitsSold", "AllGrossProfitMargin", "AllGrossProfitMicros", "AllLeadCostOfGoodsSoldMicros", "AllLeadGrossProfitMicros", "AllLeadRevenueMicros", "AllLeadUnitsSold", "AllOrders", "AllRevenueMicros", "AllUnitsSold", "ControlCostPerConversion", "CostPerConversionMarginOfError", "CostPerConversionPValue", "CostPerConversionChangePointEstimate", "ControlConversions", "ConversionsAbsoluteChangeMarginOfError", "ConversionsAbsoluteChangePValue", "ConversionsAbsoluteChangePointEstimate", "ControlConversionValuePerCost", "ConversionValuePerCostMarginOfError", "ConversionValuePerCostPValue", "ConversionValuePerCostChangePointEstimate", "ControlCostMicros", "CostMicrosMarginOfError", "CostMicrosPValue", "CostMicrosChangePointEstimate", "ControlImpressions", "ImpressionsMarginOfError", "ImpressionsPValue", "ImpressionsPointEstimate", "ClicksMarginOfError", "ClicksPValue", "ClicksPointEstimate", "ControlConversionValue", "ConversionValueMarginOfError", "ConversionValuePValue", "ConversionValueChangePointEstimate", "IncrementalConversions", "IncrementalConversionsWinnerScore", "IncrementalConversionValue", "IncrementalConversionValueWinnerScore", "ConversionLiftBaselineConversions", "ConversionLiftBaselineConversionValue", "ConversionLiftExposedConversions", "ConversionLiftExposedConversionValue", "CostPerIncrementalConversion", "CostPerIncrementalConversionWinnerScore", "CostPerIncrementalConversionP90LowerBound", "CostPerIncrementalConversionP90UpperBound", "IncrementalConversionsP90LowerBound", "IncrementalConversionsP90UpperBound", "IncrementalConversionsPValue", "IncrementalConversionValueP90LowerBound", "IncrementalConversionValueP90UpperBound", "IncrementalConversionValuePValue", "IncrementalConversionValuePerCost", "IncrementalConversionValuePerCostWinnerScore", "IncrementalConversionValuePerCostP90LowerBound", "IncrementalConversionValuePerCostP90UpperBound", "RelativeConversionLift", "RelativeConversionLiftP90LowerBound", "RelativeConversionLiftP90UpperBound", "RelativeConversionValueLift", "RelativeConversionValueLiftP90LowerBound", "RelativeConversionValueLiftP90UpperBound", "AbsoluteBrandLift", "AbsoluteBrandLiftP90LowerBound", "AbsoluteBrandLiftP90UpperBound", "AbsoluteBrandLiftPValue", "BrandLiftBaselinePositiveResponseRate", "BrandLiftBaselinePositiveResponseRateP90LowerBound", "BrandLiftBaselinePositiveResponseRateP90UpperBound", "BrandLiftExposedPositiveResponderFractionalCookies", "BrandLiftExposedPositiveResponderFractionalCookiesP90LowerBound", "BrandLiftExposedPositiveResponderFractionalCookiesP90UpperBound", "BrandLiftExposedPositiveResponseRate", "BrandLiftExposedPositiveResponseRateP90LowerBound", "BrandLiftExposedPositiveResponseRateP90UpperBound", "BrandLiftResponsesExposed", "BrandLiftResponsesSuppressed", "BrandLiftSuppressedPositiveResponderFractionalCookies", "BrandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound", "BrandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound", "BrandLiftTotalResponses", "CostPerLiftedCookie", "CostPerLiftedCookieP90LowerBound", "CostPerLiftedCookieP90UpperBound", "FractionalLiftedCookies", "FractionalLiftedCookiesP90LowerBound", "FractionalLiftedCookiesP90UpperBound", "HeadroomBrandLift", "HeadroomBrandLiftP90LowerBound", "HeadroomBrandLiftP90UpperBound", "RelativeBrandLift", "RelativeBrandLiftP90LowerBound", "RelativeBrandLiftP90UpperBound", "YoutubeComments", "YoutubeLikes", "YoutubeShares", "OriginalConversionValue", "VerticalAdsPotentialImpressions", "VerticalAdsAverageBookingValueMicros", "VerticalAdsPriceDifferencePercentage" }, new[]{ "AbsoluteTopImpressionPercentage", "ActiveViewCpm", "ActiveViewCtr", "ActiveViewImpressions", "ActiveViewMeasurability", "ActiveViewMeasurableCostMicros", "ActiveViewMeasurableImpressions", "ActiveViewViewability", "AllConversionsFromInteractionsRate", "AllConversionsValue", "AllConversionsValueByConversionDate", "AllNewCustomerLifetimeValue", "AllConversions", "AllConversionsByConversionDate", "AllConversionsValuePerCost", "AllConversionsFromClickToCall", "AllConversionsFromDirections", "AllConversionsFromInteractionsValuePerInteraction", "AllConversionsFromMenu", "AllConversionsFromOrder", "AllConversionsFromOtherEngagement", "AllConversionsFromStoreVisit", "AllConversionsFromStoreWebsite", "AuctionInsightSearchAbsoluteTopImpressionPercentage", "AuctionInsightSearchImpressionShare", "AuctionInsightSearchOutrankingShare", "AuctionInsightSearchOverlapRate", "AuctionInsightSearchPositionAboveRate", "AuctionInsightSearchTopImpressionPercentage", "AverageCost", "AverageCpc", "AverageCpe", "AverageCpm", "TrueviewAverageCpv", "AveragePageViews", "AverageTimeOnSite", "BenchmarkAverageMaxCpc", "BiddableAppInstallConversions", "BiddableAppPostInstallConversions", "BiddableCohortAppPostInstallConversions", "BenchmarkCtr", "BounceRate", "Clicks", "ControlClicks", "CombinedClicks", "CombinedClicksPerQuery", "CombinedQueries", "ContentBudgetLostImpressionShare", "ContentImpressionShare", "ConversionLastReceivedRequestDateTime", "ConversionLastConversionDate", "ContentRankLostImpressionShare", "ConversionsFromInteractionsRate", "ConversionsValue", "ConversionsValueByConversionDate", "NewCustomerLifetimeValue", "ConversionsValuePerCost", "ConversionsFromInteractionsValuePerInteraction", "Conversions", "ConversionsByConversionDate", "CostMicros", "CostPerAllConversions", "CostPerConversion", "CostPerCurrentModelAttributedConversion", "CrossDeviceConversions", "CrossDeviceConversionsByConversionDate", "CrossDeviceConversionsValue", "CrossDeviceConversionsValueMicros", "CrossDeviceConversionsValueByConversionDate", "Ctr", "CurrentModelAttributedConversions", "CurrentModelAttributedConversionsFromInteractionsRate", "CurrentModelAttributedConversionsFromInteractionsValuePerInteraction", "CurrentModelAttributedConversionsValue", "CurrentModelAttributedConversionsValuePerCost", "EngagementRate", "Engagements", "HotelAverageLeadValueMicros", "HotelCommissionRateMicros", "HotelExpectedCommissionCost", "HotelPriceDifferencePercentage", "HotelEligibleImpressions", "HistoricalQualityScore", "GmailForwards", "GmailSaves", "GmailSecondaryClicks", "ImpressionsFromStoreReach", "Impressions", "InteractionRate", "Interactions", "InvalidClickRate", "InvalidClicks", "GeneralInvalidClickRate", "GeneralInvalidClicks", "MessageChats", "MessageImpressions", "MessageChatRate", "MobileFriendlyClicksPercentage", "OptimizationScoreUplift", "OptimizationScoreUrl", "OrganicClicks", "OrganicClicksPerQuery", "OrganicImpressions", "OrganicImpressionsPerQuery", "OrganicQueries", "PercentNewVisitors", "PhoneCalls", "PhoneImpressions", "PhoneThroughRate", "RelativeCtr", "SearchAbsoluteTopImpressionShare", "SearchBudgetLostAbsoluteTopImpressionShare", "SearchBudgetLostImpressionShare", "SearchBudgetLostTopImpressionShare", "SearchClickShare", "SearchExactMatchImpressionShare", "SearchImpressionShare", "SearchRankLostAbsoluteTopImpressionShare", "SearchRankLostImpressionShare", "SearchRankLostTopImpressionShare", "SearchTopImpressionShare", "SearchVolume", "SpeedScore", "AverageTargetCpaMicros", "AverageTargetRoas", "TopImpressionPercentage", "ValidAcceleratedMobilePagesClicksPercentage", "ValuePerAllConversions", "ValuePerAllConversionsByConversionDate", "ValuePerConversion", "ValuePerConversionsByConversionDate", "ValuePerCurrentModelAttributedConversion", "VideoQuartileP100Rate", "VideoQuartileP25Rate", "VideoQuartileP50Rate", "VideoQuartileP75Rate", "VideoTrueviewViewRate", "VideoTrueviewViews", "ViewThroughConversions", "AllConversionsFromLocationAssetClickToCall", "AllConversionsFromLocationAssetDirections", "AllConversionsFromLocationAssetMenu", "AllConversionsFromLocationAssetOrder", "AllConversionsFromLocationAssetOtherEngagement", "AllConversionsFromLocationAssetStoreVisits", "AllConversionsFromLocationAssetWebsite", "EligibleImpressionsFromLocationAssetStoreReach", "ViewThroughConversionsFromLocationAssetClickToCall", "ViewThroughConversionsFromLocationAssetDirections", "ViewThroughConversionsFromLocationAssetMenu", "ViewThroughConversionsFromLocationAssetOrder", "ViewThroughConversionsFromLocationAssetOtherEngagement", "ViewThroughConversionsFromLocationAssetStoreVisits", "ViewThroughConversionsFromLocationAssetWebsite", "Orders", "AverageOrderValueMicros", "AverageCartSize", "CostOfGoodsSoldMicros", "GrossProfitMicros", "GrossProfitMargin", "RevenueMicros", "UnitsSold", "CrossSellCostOfGoodsSoldMicros", "CrossSellGrossProfitMicros", "CrossSellRevenueMicros", "CrossSellUnitsSold", "LeadCostOfGoodsSoldMicros", "LeadGrossProfitMicros", "LeadRevenueMicros", "LeadUnitsSold", "UniqueUsers", "AverageImpressionFrequencyPerUser", "LinkedEntitiesCount", "AssetPinnedTotalCount", "AssetPinnedAsHeadlinePositionOneCount", "AssetPinnedAsHeadlinePositionTwoCount", "AssetPinnedAsHeadlinePositionThreeCount", "AssetPinnedAsDescriptionPositionOneCount", "AssetPinnedAsDescriptionPositionTwoCount", "StoreVisitsLastClickModelAttributedConversions", "ResultsConversionsPurchase", "VideoTrueviewViewRateInFeed", "VideoTrueviewViewRateInStream", "VideoTrueviewViewRateShorts", "CoviewedImpressions", "PrimaryImpressions", "PlatformComparableConversionsFromInteractionsRate", "PlatformComparableConversions", "PlatformComparableConversionsValue", "PlatformComparableConversionsValuePerCost", "PlatformComparableConversionsByConversionDate", "PlatformComparableConversionsValueByConversionDate", "PlatformComparableConversionsFromInteractionsValuePerInteraction", "CostPerPlatformComparableConversion", "ValuePerPlatformComparableConversion", "ValuePerPlatformComparableConversionsByConversionDate", "CostConvertedCurrencyPerPlatformComparableConversion", "UniqueUsersTwoPlus", "UniqueUsersThreePlus", "UniqueUsersFourPlus", "UniqueUsersFivePlus", "UniqueUsersTenPlus", "ValueAdjustment", "AllValueAdjustment", "ClicksUniqueQueryClusters", "ConversionsUniqueQueryClusters", "ImpressionsUniqueQueryClusters", "VideoWatchTimeDurationMillis", "AverageVideoWatchTimeDurationMillis", "Svr", "ActiveViewAudibilityMeasurableImpressions", "ActiveViewAudibilityMeasurableImpressionsRate", "ActiveViewAudibilityInvalidMeasurableImpressionsRate", "ActiveViewAudibilityInvalidGivtMeasurableImpressionsRate", "ActiveViewAudibleImpressions", "ActiveViewAudibleImpressionsRate", "ActiveViewAudibleTwoSecondsImpressions", "ActiveViewAudibleTwoSecondsImpressionsRate", "ActiveViewAudibleThirtySecondsImpressions", "ActiveViewAudibleThirtySecondsImpressionsRate", "ActiveViewAudibleQuartileP25Rate", "ActiveViewAudibleQuartileP50Rate", "ActiveViewAudibleQuartileP75Rate", "ActiveViewAudibleQuartileP100Rate", "BiddableIndirectInstallFirstInAppConversionMicros", "AllAverageCartSize", "AllAverageOrderValueMicros", "AllCostOfGoodsSoldMicros", "AllCrossSellCostOfGoodsSoldMicros", "AllCrossSellGrossProfitMicros", "AllCrossSellRevenueMicros", "AllCrossSellUnitsSold", "AllGrossProfitMargin", "AllGrossProfitMicros", "AllLeadCostOfGoodsSoldMicros", "AllLeadGrossProfitMicros", "AllLeadRevenueMicros", "AllLeadUnitsSold", "AllOrders", "AllRevenueMicros", "AllUnitsSold", "ControlCostPerConversion", "CostPerConversionMarginOfError", "CostPerConversionPValue", "CostPerConversionChangePointEstimate", "ControlConversions", "ConversionsAbsoluteChangeMarginOfError", "ConversionsAbsoluteChangePValue", "ConversionsAbsoluteChangePointEstimate", "ControlConversionValuePerCost", "ConversionValuePerCostMarginOfError", "ConversionValuePerCostPValue", "ConversionValuePerCostChangePointEstimate", "ControlCostMicros", "CostMicrosMarginOfError", "CostMicrosPValue", "CostMicrosChangePointEstimate", "ControlImpressions", "ImpressionsMarginOfError", "ImpressionsPValue", "ImpressionsPointEstimate", "ClicksMarginOfError", "ClicksPValue", "ClicksPointEstimate", "ControlConversionValue", "ConversionValueMarginOfError", "ConversionValuePValue", "ConversionValueChangePointEstimate", "IncrementalConversions", "IncrementalConversionsWinnerScore", "IncrementalConversionValue", "IncrementalConversionValueWinnerScore", "ConversionLiftBaselineConversions", "ConversionLiftBaselineConversionValue", "ConversionLiftExposedConversions", "ConversionLiftExposedConversionValue", "CostPerIncrementalConversion", "CostPerIncrementalConversionWinnerScore", "CostPerIncrementalConversionP90LowerBound", "CostPerIncrementalConversionP90UpperBound", "IncrementalConversionsP90LowerBound", "IncrementalConversionsP90UpperBound", "IncrementalConversionsPValue", "IncrementalConversionValueP90LowerBound", "IncrementalConversionValueP90UpperBound", "IncrementalConversionValuePValue", "IncrementalConversionValuePerCost", "IncrementalConversionValuePerCostWinnerScore", "IncrementalConversionValuePerCostP90LowerBound", "IncrementalConversionValuePerCostP90UpperBound", "RelativeConversionLift", "RelativeConversionLiftP90LowerBound", "RelativeConversionLiftP90UpperBound", "RelativeConversionValueLift", "RelativeConversionValueLiftP90LowerBound", "RelativeConversionValueLiftP90UpperBound", "AbsoluteBrandLift", "AbsoluteBrandLiftP90LowerBound", "AbsoluteBrandLiftP90UpperBound", "AbsoluteBrandLiftPValue", "BrandLiftBaselinePositiveResponseRate", "BrandLiftBaselinePositiveResponseRateP90LowerBound", "BrandLiftBaselinePositiveResponseRateP90UpperBound", "BrandLiftExposedPositiveResponderFractionalCookies", "BrandLiftExposedPositiveResponderFractionalCookiesP90LowerBound", "BrandLiftExposedPositiveResponderFractionalCookiesP90UpperBound", "BrandLiftExposedPositiveResponseRate", "BrandLiftExposedPositiveResponseRateP90LowerBound", "BrandLiftExposedPositiveResponseRateP90UpperBound", "BrandLiftResponsesExposed", "BrandLiftResponsesSuppressed", "BrandLiftSuppressedPositiveResponderFractionalCookies", "BrandLiftSuppressedPositiveResponderFractionalCookiesP90LowerBound", "BrandLiftSuppressedPositiveResponderFractionalCookiesP90UpperBound", "BrandLiftTotalResponses", "CostPerLiftedCookie", "CostPerLiftedCookieP90LowerBound", "CostPerLiftedCookieP90UpperBound", "FractionalLiftedCookies", "FractionalLiftedCookiesP90LowerBound", "FractionalLiftedCookiesP90UpperBound", "HeadroomBrandLift", "HeadroomBrandLiftP90LowerBound", "HeadroomBrandLiftP90UpperBound", "RelativeBrandLift", "RelativeBrandLiftP90LowerBound", "RelativeBrandLiftP90UpperBound", "YoutubeComments", "YoutubeLikes", "YoutubeShares", "OriginalConversionValue", "VerticalAdsPotentialImpressions", "VerticalAdsAverageBookingValueMicros", "VerticalAdsPriceDifferencePercentage" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Common.SearchVolumeRange), global::Google.Ads.GoogleAds.V25.Common.SearchVolumeRange.Parser, new[]{ "Min", "Max" }, new[]{ "Min", "Max" }, null, null, null)
           }));
     }
@@ -1095,6 +1101,9 @@ namespace Google.Ads.GoogleAds.V25.Common {
       youtubeLikes_ = other.youtubeLikes_;
       youtubeShares_ = other.youtubeShares_;
       originalConversionValue_ = other.originalConversionValue_;
+      verticalAdsPotentialImpressions_ = other.verticalAdsPotentialImpressions_;
+      verticalAdsAverageBookingValueMicros_ = other.verticalAdsAverageBookingValueMicros_;
+      verticalAdsPriceDifferencePercentage_ = other.verticalAdsPriceDifferencePercentage_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -10253,9 +10262,9 @@ namespace Google.Ads.GoogleAds.V25.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double IncrementalConversionsWinnerScore {
-      get { if ((_hasBits10 & 8) != 0) { return incrementalConversionsWinnerScore_; } else { return IncrementalConversionsWinnerScoreDefaultValue; } }
+      get { if ((_hasBits10 & 64) != 0) { return incrementalConversionsWinnerScore_; } else { return IncrementalConversionsWinnerScoreDefaultValue; } }
       set {
-        _hasBits10 |= 8;
+        _hasBits10 |= 64;
         incrementalConversionsWinnerScore_ = value;
       }
     }
@@ -10263,13 +10272,13 @@ namespace Google.Ads.GoogleAds.V25.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasIncrementalConversionsWinnerScore {
-      get { return (_hasBits10 & 8) != 0; }
+      get { return (_hasBits10 & 64) != 0; }
     }
     /// <summary>Clears the value of the "incremental_conversions_winner_score" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearIncrementalConversionsWinnerScore() {
-      _hasBits10 &= ~8;
+      _hasBits10 &= ~64;
     }
 
     /// <summary>Field number for the "incremental_conversion_value" field.</summary>
@@ -10315,9 +10324,9 @@ namespace Google.Ads.GoogleAds.V25.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double IncrementalConversionValueWinnerScore {
-      get { if ((_hasBits10 & 16) != 0) { return incrementalConversionValueWinnerScore_; } else { return IncrementalConversionValueWinnerScoreDefaultValue; } }
+      get { if ((_hasBits10 & 128) != 0) { return incrementalConversionValueWinnerScore_; } else { return IncrementalConversionValueWinnerScoreDefaultValue; } }
       set {
-        _hasBits10 |= 16;
+        _hasBits10 |= 128;
         incrementalConversionValueWinnerScore_ = value;
       }
     }
@@ -10325,13 +10334,13 @@ namespace Google.Ads.GoogleAds.V25.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasIncrementalConversionValueWinnerScore {
-      get { return (_hasBits10 & 16) != 0; }
+      get { return (_hasBits10 & 128) != 0; }
     }
     /// <summary>Clears the value of the "incremental_conversion_value_winner_score" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearIncrementalConversionValueWinnerScore() {
-      _hasBits10 &= ~16;
+      _hasBits10 &= ~128;
     }
 
     /// <summary>Field number for the "conversion_lift_baseline_conversions" field.</summary>
@@ -10500,9 +10509,9 @@ namespace Google.Ads.GoogleAds.V25.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double CostPerIncrementalConversionWinnerScore {
-      get { if ((_hasBits10 & 32) != 0) { return costPerIncrementalConversionWinnerScore_; } else { return CostPerIncrementalConversionWinnerScoreDefaultValue; } }
+      get { if ((_hasBits10 & 256) != 0) { return costPerIncrementalConversionWinnerScore_; } else { return CostPerIncrementalConversionWinnerScoreDefaultValue; } }
       set {
-        _hasBits10 |= 32;
+        _hasBits10 |= 256;
         costPerIncrementalConversionWinnerScore_ = value;
       }
     }
@@ -10510,13 +10519,13 @@ namespace Google.Ads.GoogleAds.V25.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasCostPerIncrementalConversionWinnerScore {
-      get { return (_hasBits10 & 32) != 0; }
+      get { return (_hasBits10 & 256) != 0; }
     }
     /// <summary>Clears the value of the "cost_per_incremental_conversion_winner_score" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearCostPerIncrementalConversionWinnerScore() {
-      _hasBits10 &= ~32;
+      _hasBits10 &= ~256;
     }
 
     /// <summary>Field number for the "cost_per_incremental_conversion_p90_lower_bound" field.</summary>
@@ -10822,9 +10831,9 @@ namespace Google.Ads.GoogleAds.V25.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public double IncrementalConversionValuePerCostWinnerScore {
-      get { if ((_hasBits10 & 64) != 0) { return incrementalConversionValuePerCostWinnerScore_; } else { return IncrementalConversionValuePerCostWinnerScoreDefaultValue; } }
+      get { if ((_hasBits10 & 512) != 0) { return incrementalConversionValuePerCostWinnerScore_; } else { return IncrementalConversionValuePerCostWinnerScoreDefaultValue; } }
       set {
-        _hasBits10 |= 64;
+        _hasBits10 |= 512;
         incrementalConversionValuePerCostWinnerScore_ = value;
       }
     }
@@ -10832,13 +10841,13 @@ namespace Google.Ads.GoogleAds.V25.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasIncrementalConversionValuePerCostWinnerScore {
-      get { return (_hasBits10 & 64) != 0; }
+      get { return (_hasBits10 & 512) != 0; }
     }
     /// <summary>Clears the value of the "incremental_conversion_value_per_cost_winner_score" field</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearIncrementalConversionValuePerCostWinnerScore() {
-      _hasBits10 &= ~64;
+      _hasBits10 &= ~512;
     }
 
     /// <summary>Field number for the "incremental_conversion_value_per_cost_p90_lower_bound" field.</summary>
@@ -12213,6 +12222,99 @@ namespace Google.Ads.GoogleAds.V25.Common {
       _hasBits10 &= ~4;
     }
 
+    /// <summary>Field number for the "vertical_ads_potential_impressions" field.</summary>
+    public const int VerticalAdsPotentialImpressionsFieldNumber = 532;
+    private readonly static long VerticalAdsPotentialImpressionsDefaultValue = 0L;
+
+    private long verticalAdsPotentialImpressions_;
+    /// <summary>
+    /// Potential impressions representing the total view-capped eligible
+    /// impressions available across the query context.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long VerticalAdsPotentialImpressions {
+      get { if ((_hasBits10 & 8) != 0) { return verticalAdsPotentialImpressions_; } else { return VerticalAdsPotentialImpressionsDefaultValue; } }
+      set {
+        _hasBits10 |= 8;
+        verticalAdsPotentialImpressions_ = value;
+      }
+    }
+    /// <summary>Gets whether the "vertical_ads_potential_impressions" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasVerticalAdsPotentialImpressions {
+      get { return (_hasBits10 & 8) != 0; }
+    }
+    /// <summary>Clears the value of the "vertical_ads_potential_impressions" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearVerticalAdsPotentialImpressions() {
+      _hasBits10 &= ~8;
+    }
+
+    /// <summary>Field number for the "vertical_ads_average_booking_value_micros" field.</summary>
+    public const int VerticalAdsAverageBookingValueMicrosFieldNumber = 533;
+    private readonly static long VerticalAdsAverageBookingValueMicrosDefaultValue = 0L;
+
+    private long verticalAdsAverageBookingValueMicros_;
+    /// <summary>
+    /// Click-weighted average daily rate in micros, including taxes and fees, over
+    /// the total length of stay.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long VerticalAdsAverageBookingValueMicros {
+      get { if ((_hasBits10 & 16) != 0) { return verticalAdsAverageBookingValueMicros_; } else { return VerticalAdsAverageBookingValueMicrosDefaultValue; } }
+      set {
+        _hasBits10 |= 16;
+        verticalAdsAverageBookingValueMicros_ = value;
+      }
+    }
+    /// <summary>Gets whether the "vertical_ads_average_booking_value_micros" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasVerticalAdsAverageBookingValueMicros {
+      get { return (_hasBits10 & 16) != 0; }
+    }
+    /// <summary>Clears the value of the "vertical_ads_average_booking_value_micros" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearVerticalAdsAverageBookingValueMicros() {
+      _hasBits10 &= ~16;
+    }
+
+    /// <summary>Field number for the "vertical_ads_price_difference_percentage" field.</summary>
+    public const int VerticalAdsPriceDifferencePercentageFieldNumber = 534;
+    private readonly static double VerticalAdsPriceDifferencePercentageDefaultValue = 0D;
+
+    private double verticalAdsPriceDifferencePercentage_;
+    /// <summary>
+    /// Percentage delta comparing the advertiser's offered price against the
+    /// lowest competing price for the same property.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public double VerticalAdsPriceDifferencePercentage {
+      get { if ((_hasBits10 & 32) != 0) { return verticalAdsPriceDifferencePercentage_; } else { return VerticalAdsPriceDifferencePercentageDefaultValue; } }
+      set {
+        _hasBits10 |= 32;
+        verticalAdsPriceDifferencePercentage_ = value;
+      }
+    }
+    /// <summary>Gets whether the "vertical_ads_price_difference_percentage" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasVerticalAdsPriceDifferencePercentage {
+      get { return (_hasBits10 & 32) != 0; }
+    }
+    /// <summary>Clears the value of the "vertical_ads_price_difference_percentage" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearVerticalAdsPriceDifferencePercentage() {
+      _hasBits10 &= ~32;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -12569,6 +12671,9 @@ namespace Google.Ads.GoogleAds.V25.Common {
       if (YoutubeLikes != other.YoutubeLikes) return false;
       if (YoutubeShares != other.YoutubeShares) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(OriginalConversionValue, other.OriginalConversionValue)) return false;
+      if (VerticalAdsPotentialImpressions != other.VerticalAdsPotentialImpressions) return false;
+      if (VerticalAdsAverageBookingValueMicros != other.VerticalAdsAverageBookingValueMicros) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(VerticalAdsPriceDifferencePercentage, other.VerticalAdsPriceDifferencePercentage)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -12917,6 +13022,9 @@ namespace Google.Ads.GoogleAds.V25.Common {
       if (HasYoutubeLikes) hash ^= YoutubeLikes.GetHashCode();
       if (HasYoutubeShares) hash ^= YoutubeShares.GetHashCode();
       if (HasOriginalConversionValue) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(OriginalConversionValue);
+      if (HasVerticalAdsPotentialImpressions) hash ^= VerticalAdsPotentialImpressions.GetHashCode();
+      if (HasVerticalAdsAverageBookingValueMicros) hash ^= VerticalAdsAverageBookingValueMicros.GetHashCode();
+      if (HasVerticalAdsPriceDifferencePercentage) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(VerticalAdsPriceDifferencePercentage);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -14276,6 +14384,18 @@ namespace Google.Ads.GoogleAds.V25.Common {
       if (HasOriginalConversionValue) {
         output.WriteRawTag(153, 33);
         output.WriteDouble(OriginalConversionValue);
+      }
+      if (HasVerticalAdsPotentialImpressions) {
+        output.WriteRawTag(160, 33);
+        output.WriteInt64(VerticalAdsPotentialImpressions);
+      }
+      if (HasVerticalAdsAverageBookingValueMicros) {
+        output.WriteRawTag(168, 33);
+        output.WriteInt64(VerticalAdsAverageBookingValueMicros);
+      }
+      if (HasVerticalAdsPriceDifferencePercentage) {
+        output.WriteRawTag(177, 33);
+        output.WriteDouble(VerticalAdsPriceDifferencePercentage);
       }
       if (HasIncrementalConversionsWinnerScore) {
         output.WriteRawTag(201, 37);
@@ -15645,6 +15765,18 @@ namespace Google.Ads.GoogleAds.V25.Common {
         output.WriteRawTag(153, 33);
         output.WriteDouble(OriginalConversionValue);
       }
+      if (HasVerticalAdsPotentialImpressions) {
+        output.WriteRawTag(160, 33);
+        output.WriteInt64(VerticalAdsPotentialImpressions);
+      }
+      if (HasVerticalAdsAverageBookingValueMicros) {
+        output.WriteRawTag(168, 33);
+        output.WriteInt64(VerticalAdsAverageBookingValueMicros);
+      }
+      if (HasVerticalAdsPriceDifferencePercentage) {
+        output.WriteRawTag(177, 33);
+        output.WriteDouble(VerticalAdsPriceDifferencePercentage);
+      }
       if (HasIncrementalConversionsWinnerScore) {
         output.WriteRawTag(201, 37);
         output.WriteDouble(IncrementalConversionsWinnerScore);
@@ -16690,6 +16822,15 @@ namespace Google.Ads.GoogleAds.V25.Common {
       if (HasOriginalConversionValue) {
         size += 2 + 8;
       }
+      if (HasVerticalAdsPotentialImpressions) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(VerticalAdsPotentialImpressions);
+      }
+      if (HasVerticalAdsAverageBookingValueMicros) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(VerticalAdsAverageBookingValueMicros);
+      }
+      if (HasVerticalAdsPriceDifferencePercentage) {
+        size += 2 + 8;
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -17723,6 +17864,15 @@ namespace Google.Ads.GoogleAds.V25.Common {
       }
       if (other.HasOriginalConversionValue) {
         OriginalConversionValue = other.OriginalConversionValue;
+      }
+      if (other.HasVerticalAdsPotentialImpressions) {
+        VerticalAdsPotentialImpressions = other.VerticalAdsPotentialImpressions;
+      }
+      if (other.HasVerticalAdsAverageBookingValueMicros) {
+        VerticalAdsAverageBookingValueMicros = other.VerticalAdsAverageBookingValueMicros;
+      }
+      if (other.HasVerticalAdsPriceDifferencePercentage) {
+        VerticalAdsPriceDifferencePercentage = other.VerticalAdsPriceDifferencePercentage;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -19093,6 +19243,18 @@ namespace Google.Ads.GoogleAds.V25.Common {
           }
           case 4249: {
             OriginalConversionValue = input.ReadDouble();
+            break;
+          }
+          case 4256: {
+            VerticalAdsPotentialImpressions = input.ReadInt64();
+            break;
+          }
+          case 4264: {
+            VerticalAdsAverageBookingValueMicros = input.ReadInt64();
+            break;
+          }
+          case 4273: {
+            VerticalAdsPriceDifferencePercentage = input.ReadDouble();
             break;
           }
           case 4809: {
@@ -20480,6 +20642,18 @@ namespace Google.Ads.GoogleAds.V25.Common {
           }
           case 4249: {
             OriginalConversionValue = input.ReadDouble();
+            break;
+          }
+          case 4256: {
+            VerticalAdsPotentialImpressions = input.ReadInt64();
+            break;
+          }
+          case 4264: {
+            VerticalAdsAverageBookingValueMicros = input.ReadInt64();
+            break;
+          }
+          case 4273: {
+            VerticalAdsPriceDifferencePercentage = input.ReadDouble();
             break;
           }
           case 4809: {

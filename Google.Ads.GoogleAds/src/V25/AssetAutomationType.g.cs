@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V25.Enums {
           string.Concat(
             "Cjpnb29nbGUvYWRzL2dvb2dsZWFkcy92MjUvZW51bXMvYXNzZXRfYXV0b21h",
             "dGlvbl90eXBlLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUuZW51",
-            "bXMijAQKF0Fzc2V0QXV0b21hdGlvblR5cGVFbnVtIvADChNBc3NldEF1dG9t",
+            "bXMipwQKF0Fzc2V0QXV0b21hdGlvblR5cGVFbnVtIosEChNBc3NldEF1dG9t",
             "YXRpb25UeXBlEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEhkKFVRF",
             "WFRfQVNTRVRfQVVUT01BVElPThACEiQKIEdFTkVSQVRFX1ZFUlRJQ0FMX1lP",
             "VVRVQkVfVklERU9TEAMSIwofR0VORVJBVEVfU0hPUlRFUl9ZT1VUVUJFX1ZJ",
@@ -37,13 +37,13 @@ namespace Google.Ads.GoogleAds.V25.Enums {
             "TkVSQVRFX0RFU0lHTl9WRVJTSU9OU19GT1JfSU1BR0VTEAoSLQopRklOQUxf",
             "VVJMX0VYUEFOU0lPTl9URVhUX0FTU0VUX0FVVE9NQVRJT04QCxIlCiFHRU5F",
             "UkFURV9WSURFT1NfRlJPTV9PVEhFUl9BU1NFVFMQDBIuCipHRU5FUkFURV9B",
-            "TklNQVRFRF9JTUFHRVNfRlJPTV9PVEhFUl9BU1NFVFMQDULyAQoiY29tLmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5lbnVtc0IYQXNzZXRBdXRvbWF0aW9u",
-            "VHlwZVByb3RvUAFaQ2dvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2ds",
-            "ZWFwaXMvYWRzL2dvb2dsZWFkcy92MjUvZW51bXM7ZW51bXOiAgNHQUGqAh5H",
-            "b29nbGUuQWRzLkdvb2dsZUFkcy5WMjUuRW51bXPKAh5Hb29nbGVcQWRzXEdv",
-            "b2dsZUFkc1xWMjVcRW51bXPqAiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpW",
-            "MjU6OkVudW1zYgZwcm90bzM="));
+            "TklNQVRFRF9JTUFHRVNfRlJPTV9PVEhFUl9BU1NFVFMQDRIZChVBVVRPTUFU",
+            "RURfVklERU9fQ1JBV0wQD0LyAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYyNS5lbnVtc0IYQXNzZXRBdXRvbWF0aW9uVHlwZVByb3RvUAFaQ2dvb2ds",
+            "ZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFk",
+            "cy92MjUvZW51bXM7ZW51bXOiAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFk",
+            "cy5WMjUuRW51bXPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMjVcRW51bXPq",
+            "AiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjU6OkVudW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -318,6 +318,10 @@ namespace Google.Ads.GoogleAds.V25.Enums {
         /// text. By default, advertisers are opted in for DemandGenMultiAssetAd.
         /// </summary>
         [pbr::OriginalName("GENERATE_ANIMATED_IMAGES_FROM_OTHER_ASSETS")] GenerateAnimatedImagesFromOtherAssets = 13,
+        /// <summary>
+        /// Automated video crawl.
+        /// </summary>
+        [pbr::OriginalName("AUTOMATED_VIDEO_CRAWL")] AutomatedVideoCrawl = 15,
       }
 
     }
