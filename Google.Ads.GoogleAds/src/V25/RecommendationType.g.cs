@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V25.Enums {
           string.Concat(
             "Cjhnb29nbGUvYWRzL2dvb2dsZWFkcy92MjUvZW51bXMvcmVjb21tZW5kYXRp",
             "b25fdHlwZS5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LmVudW1z",
-            "IpMOChZSZWNvbW1lbmRhdGlvblR5cGVFbnVtIvgNChJSZWNvbW1lbmRhdGlv",
+            "IvAOChZSZWNvbW1lbmRhdGlvblR5cGVFbnVtItUOChJSZWNvbW1lbmRhdGlv",
             "blR5cGUSDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESEwoPQ0FNUEFJ",
             "R05fQlVER0VUEAISCwoHS0VZV09SRBADEgsKB1RFWFRfQUQQBBIVChFUQVJH",
             "RVRfQ1BBX09QVF9JThAFEh8KG01BWElNSVpFX0NPTlZFUlNJT05TX09QVF9J",
@@ -66,12 +66,14 @@ namespace Google.Ads.GoogleAds.V25.Enums {
             "HwobUkVGUkVTSF9DVVNUT01FUl9NQVRDSF9MSVNUEDcSGgoWQ1VTVE9NX0FV",
             "RElFTkNFX09QVF9JThA4EhMKD0xFQURfRk9STV9BU1NFVBA5EiIKHklNUFJP",
             "VkVfREVNQU5EX0dFTl9BRF9TVFJFTkdUSBA6Eh4KGkNBTVBBSUdOX1NQRUNJ",
-            "RklDX0FQUF9HT0FMEDtC8QEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MjUuZW51bXNCF1JlY29tbWVuZGF0aW9uVHlwZVByb3RvUAFaQ2dvb2dsZS5n",
-            "b2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92",
-            "MjUvZW51bXM7ZW51bXOiAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5W",
-            "MjUuRW51bXPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMjVcRW51bXPqAiJH",
-            "b29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjU6OkVudW1zYgZwcm90bzM="));
+            "RklDX0FQUF9HT0FMEDsSLAooUkFJU0VfVEFSR0VUX0NQQV9QRVJGT1JNQU5D",
+            "RV9CSURfVE9PX0xPVxA9Ei0KKUxPV0VSX1RBUkdFVF9ST0FTX1BFUkZPUk1B",
+            "TkNFX0JJRF9UT09fTE9XED5C8QEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MjUuZW51bXNCF1JlY29tbWVuZGF0aW9uVHlwZVByb3RvUAFaQ2dvb2ds",
+            "ZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFk",
+            "cy92MjUvZW51bXM7ZW51bXOiAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFk",
+            "cy5WMjUuRW51bXPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMjVcRW51bXPq",
+            "AiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjU6OkVudW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -523,6 +525,16 @@ namespace Google.Ads.GoogleAds.V25.Enums {
         /// Recommendation to add a campaign-specific app conversion goal.
         /// </summary>
         [pbr::OriginalName("CAMPAIGN_SPECIFIC_APP_GOAL")] CampaignSpecificAppGoal = 59,
+        /// <summary>
+        /// Recommendation to raise target CPA when it is too low for Search
+        /// campaigns.
+        /// </summary>
+        [pbr::OriginalName("RAISE_TARGET_CPA_PERFORMANCE_BID_TOO_LOW")] RaiseTargetCpaPerformanceBidTooLow = 61,
+        /// <summary>
+        /// Recommendation to lower target ROAS when it is too low for Search
+        /// campaigns.
+        /// </summary>
+        [pbr::OriginalName("LOWER_TARGET_ROAS_PERFORMANCE_BID_TOO_LOW")] LowerTargetRoasPerformanceBidTooLow = 62,
       }
 
     }

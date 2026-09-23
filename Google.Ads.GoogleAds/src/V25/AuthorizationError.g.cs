@@ -26,26 +26,27 @@ namespace Google.Ads.GoogleAds.V25.Errors {
           string.Concat(
             "Cjlnb29nbGUvYWRzL2dvb2dsZWFkcy92MjUvZXJyb3JzL2F1dGhvcml6YXRp",
             "b25fZXJyb3IucHJvdG8SH2dvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5lcnJv",
-            "cnMi/QQKFkF1dGhvcml6YXRpb25FcnJvckVudW0i4gQKEkF1dGhvcml6YXRp",
+            "cnMiiQUKFkF1dGhvcml6YXRpb25FcnJvckVudW0i7gQKEkF1dGhvcml6YXRp",
             "b25FcnJvchIPCgtVTlNQRUNJRklFRBAAEgsKB1VOS05PV04QARIaChZVU0VS",
-            "X1BFUk1JU1NJT05fREVOSUVEEAISJAogREVWRUxPUEVSX1RPS0VOX05PVF9P",
-            "Tl9BTExPV0xJU1QQDRIeChpERVZFTE9QRVJfVE9LRU5fUFJPSElCSVRFRBAE",
-            "EhQKEFBST0pFQ1RfRElTQUJMRUQQBRIXChNBVVRIT1JJWkFUSU9OX0VSUk9S",
-            "EAYSGAoUQUNUSU9OX05PVF9QRVJNSVRURUQQBxIVChFJTkNPTVBMRVRFX1NJ",
-            "R05VUBAIEhgKFENVU1RPTUVSX05PVF9FTkFCTEVEEBgSDwoLTUlTU0lOR19U",
-            "T1MQCRIgChxERVZFTE9QRVJfVE9LRU5fTk9UX0FQUFJPVkVEEAoSLQopQ0xP",
-            "VURfUFJPSkVDVF9OT1RfQVBQUk9WRURfRk9SX1BST0RVQ1RJT04QIBI9CjlJ",
-            "TlZBTElEX0xPR0lOX0NVU1RPTUVSX0lEX1NFUlZJTkdfQ1VTVE9NRVJfSURf",
-            "Q09NQklOQVRJT04QCxIZChVTRVJWSUNFX0FDQ0VTU19ERU5JRUQQDBIiCh5B",
-            "Q0NFU1NfREVOSUVEX0ZPUl9BQ0NPVU5UX1RZUEUQGRIYChRNRVRSSUNfQUND",
-            "RVNTX0RFTklFRBAaEigKJENMT1VEX1BST0pFQ1RfTk9UX1VOREVSX09SR0FO",
-            "SVpBVElPThAbEi4KKkFDVElPTl9OT1RfUEVSTUlUVEVEX0ZPUl9TVVNQRU5E",
-            "RURfQUNDT1VOVBAcQvcBCiNjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1",
-            "LmVycm9yc0IXQXV0aG9yaXphdGlvbkVycm9yUHJvdG9QAVpFZ29vZ2xlLmdv",
-            "bGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3Yy",
-            "NS9lcnJvcnM7ZXJyb3JzogIDR0FBqgIfR29vZ2xlLkFkcy5Hb29nbGVBZHMu",
-            "VjI1LkVycm9yc8oCH0dvb2dsZVxBZHNcR29vZ2xlQWRzXFYyNVxFcnJvcnPq",
-            "AiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjU6OkVycm9yc2IGcHJvdG8z"));
+            "X1BFUk1JU1NJT05fREVOSUVEEAISKAogREVWRUxPUEVSX1RPS0VOX05PVF9P",
+            "Tl9BTExPV0xJU1QQDRoCCAESIgoaREVWRUxPUEVSX1RPS0VOX1BST0hJQklU",
+            "RUQQBBoCCAESFAoQUFJPSkVDVF9ESVNBQkxFRBAFEhcKE0FVVEhPUklaQVRJ",
+            "T05fRVJST1IQBhIYChRBQ1RJT05fTk9UX1BFUk1JVFRFRBAHEhUKEUlOQ09N",
+            "UExFVEVfU0lHTlVQEAgSGAoUQ1VTVE9NRVJfTk9UX0VOQUJMRUQQGBIPCgtN",
+            "SVNTSU5HX1RPUxAJEiQKHERFVkVMT1BFUl9UT0tFTl9OT1RfQVBQUk9WRUQQ",
+            "ChoCCAESLQopQ0xPVURfUFJPSkVDVF9OT1RfQVBQUk9WRURfRk9SX1BST0RV",
+            "Q1RJT04QIBI9CjlJTlZBTElEX0xPR0lOX0NVU1RPTUVSX0lEX1NFUlZJTkdf",
+            "Q1VTVE9NRVJfSURfQ09NQklOQVRJT04QCxIZChVTRVJWSUNFX0FDQ0VTU19E",
+            "RU5JRUQQDBIiCh5BQ0NFU1NfREVOSUVEX0ZPUl9BQ0NPVU5UX1RZUEUQGRIY",
+            "ChRNRVRSSUNfQUNDRVNTX0RFTklFRBAaEigKJENMT1VEX1BST0pFQ1RfTk9U",
+            "X1VOREVSX09SR0FOSVpBVElPThAbEi4KKkFDVElPTl9OT1RfUEVSTUlUVEVE",
+            "X0ZPUl9TVVNQRU5ERURfQUNDT1VOVBAcQvcBCiNjb20uZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjI1LmVycm9yc0IXQXV0aG9yaXphdGlvbkVycm9yUHJvdG9Q",
+            "AVpFZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMv",
+            "Z29vZ2xlYWRzL3YyNS9lcnJvcnM7ZXJyb3JzogIDR0FBqgIfR29vZ2xlLkFk",
+            "cy5Hb29nbGVBZHMuVjI1LkVycm9yc8oCH0dvb2dsZVxBZHNcR29vZ2xlQWRz",
+            "XFYyNVxFcnJvcnPqAiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjU6OkVy",
+            "cm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -243,12 +244,17 @@ namespace Google.Ads.GoogleAds.V25.Errors {
         /// </summary>
         [pbr::OriginalName("USER_PERMISSION_DENIED")] UserPermissionDenied = 2,
         /// <summary>
+        /// Deprecated: Developer tokens have been sunset. Use Google Cloud project
+        /// permissions instead.
         /// The developer token is not on the allow-list.
         /// </summary>
+        [global::System.ObsoleteAttribute]
         [pbr::OriginalName("DEVELOPER_TOKEN_NOT_ON_ALLOWLIST")] DeveloperTokenNotOnAllowlist = 13,
         /// <summary>
+        /// Deprecated: Developer tokens have been sunset.
         /// The developer token is not allowed with the project sent in the request.
         /// </summary>
+        [global::System.ObsoleteAttribute]
         [pbr::OriginalName("DEVELOPER_TOKEN_PROHIBITED")] DeveloperTokenProhibited = 4,
         /// <summary>
         /// The Google Cloud project sent in the request does not have permission to
@@ -275,13 +281,16 @@ namespace Google.Ads.GoogleAds.V25.Errors {
         [pbr::OriginalName("CUSTOMER_NOT_ENABLED")] CustomerNotEnabled = 24,
         /// <summary>
         /// The developer must sign the terms of service. They can be found here:
-        /// ads.google.com/aw/apicenter
+        /// console.cloud.google.com/google/ads-apis/overview
         /// </summary>
         [pbr::OriginalName("MISSING_TOS")] MissingTos = 9,
         /// <summary>
+        /// Deprecated: Developer tokens have been sunset. Superseded by
+        /// CLOUD_PROJECT_NOT_APPROVED_FOR_PRODUCTION.
         /// The developer token is only approved for use with test accounts. To
         /// access non-test accounts, apply for Basic or Standard access.
         /// </summary>
+        [global::System.ObsoleteAttribute]
         [pbr::OriginalName("DEVELOPER_TOKEN_NOT_APPROVED")] DeveloperTokenNotApproved = 10,
         /// <summary>
         /// The Google Cloud project is only approved for use with test accounts.

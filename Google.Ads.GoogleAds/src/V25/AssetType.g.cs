@@ -275,7 +275,7 @@ namespace Google.Ads.GoogleAds.V25.Enums {
         /// </summary>
         [pbr::OriginalName("SITELINK")] Sitelink = 11,
         /// <summary>
-        /// Page Feed asset.
+        /// Page URL inclusion.
         /// </summary>
         [pbr::OriginalName("PAGE_FEED")] PageFeed = 12,
         /// <summary>

@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V25.Enums {
           string.Concat(
             "Cjtnb29nbGUvYWRzL2dvb2dsZWFkcy92MjUvZW51bXMvY29udmVyc2lvbl9h",
             "Y3Rpb25fdHlwZS5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LmVu",
-            "dW1zIugMChhDb252ZXJzaW9uQWN0aW9uVHlwZUVudW0iywwKFENvbnZlcnNp",
+            "dW1zIrQNChhDb252ZXJzaW9uQWN0aW9uVHlwZUVudW0ilw0KFENvbnZlcnNp",
             "b25BY3Rpb25UeXBlEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEgsK",
             "B0FEX0NBTEwQAhIRCg1DTElDS19UT19DQUxMEAMSGAoUR09PR0xFX1BMQVlf",
             "RE9XTkxPQUQQBBIfChtHT09HTEVfUExBWV9JTl9BUFBfUFVSQ0hBU0UQBRIQ",
@@ -62,13 +62,14 @@ namespace Google.Ads.GoogleAds.V25.Enums {
             "RklSRUJBU0VfQU5EUk9JRF9DTE9TRV9DT05WRVJUX0xFQUQQLxIeChpGSVJF",
             "QkFTRV9JT1NfR0VORVJBVEVfTEVBRBAwEh0KGUZJUkVCQVNFX0lPU19RVUFM",
             "SUZZX0xFQUQQMRIjCh9GSVJFQkFTRV9JT1NfQ0xPU0VfQ09OVkVSVF9MRUFE",
-            "EDISFgoSTE9DQUxfU0VSVklDRVNfQURTEDNC8wEKImNvbS5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MjUuZW51bXNCGUNvbnZlcnNpb25BY3Rpb25UeXBlUHJv",
-            "dG9QAVpDZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9h",
-            "ZHMvZ29vZ2xlYWRzL3YyNS9lbnVtcztlbnVtc6ICA0dBQaoCHkdvb2dsZS5B",
-            "ZHMuR29vZ2xlQWRzLlYyNS5FbnVtc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRz",
-            "XFYyNVxFbnVtc+oCIkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyNTo6RW51",
-            "bXNiBnByb3RvMw=="));
+            "EDISFgoSTE9DQUxfU0VSVklDRVNfQURTEDMSJgoiRklSRUJBU0VfQU5EUk9J",
+            "RF9BUFBfQURfSU1QUkVTU0lPThA0EiIKHkZJUkVCQVNFX0lPU19BUFBfQURf",
+            "SU1QUkVTU0lPThA1QvMBCiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1",
+            "LmVudW1zQhlDb252ZXJzaW9uQWN0aW9uVHlwZVByb3RvUAFaQ2dvb2dsZS5n",
+            "b2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92",
+            "MjUvZW51bXM7ZW51bXOiAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFkcy5W",
+            "MjUuRW51bXPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMjVcRW51bXPqAiJH",
+            "b29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjU6OkVudW1zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -504,6 +505,16 @@ namespace Google.Ads.GoogleAds.V25.Enums {
         /// on the ad.
         /// </summary>
         [pbr::OriginalName("LOCAL_SERVICES_ADS")] LocalServicesAds = 51,
+        /// <summary>
+        /// Conversions that come from linked Firebase Android app ad impression
+        /// conversions.
+        /// </summary>
+        [pbr::OriginalName("FIREBASE_ANDROID_APP_AD_IMPRESSION")] FirebaseAndroidAppAdImpression = 52,
+        /// <summary>
+        /// Conversions that come from linked Firebase iOS app ad impression
+        /// conversions.
+        /// </summary>
+        [pbr::OriginalName("FIREBASE_IOS_APP_AD_IMPRESSION")] FirebaseIosAppAdImpression = 53,
       }
 
     }

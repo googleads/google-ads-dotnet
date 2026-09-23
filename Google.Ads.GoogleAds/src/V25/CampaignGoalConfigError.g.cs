@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V25.Errors {
           string.Concat(
             "CkBnb29nbGUvYWRzL2dvb2dsZWFkcy92MjUvZXJyb3JzL2NhbXBhaWduX2dv",
             "YWxfY29uZmlnX2Vycm9yLnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MjUuZXJyb3JzIs0EChtDYW1wYWlnbkdvYWxDb25maWdFcnJvckVudW0irQQK",
+            "MjUuZXJyb3JzIrYGChtDYW1wYWlnbkdvYWxDb25maWdFcnJvckVudW0ilgYK",
             "F0NhbXBhaWduR29hbENvbmZpZ0Vycm9yEg8KC1VOU1BFQ0lGSUVEEAASCwoH",
             "VU5LTk9XThABEhIKDkdPQUxfTk9UX0ZPVU5EEAMSFgoSQ0FNUEFJR05fTk9U",
             "X0ZPVU5EEAQSMAosSElHSF9MSUZFVElNRV9WQUxVRV9QUkVTRU5UX0JVVF9W",
@@ -39,13 +39,18 @@ namespace Google.Ads.GoogleAds.V25.Errors {
             "Q0FNUEFJR05fT1ZFUlJJREVfSElHSF9MSUZFVElNRV9WQUxVRV9OT1RfU1VQ",
             "UE9SVEVEX0ZPUl9DQU1QQUlHTl9UWVBFEA4SJQohQ0FOTk9UX1VTRV9JTkNP",
             "TVBBVElCTEVfQ0xPX0dPQUxTEA8SJwojTE9ZQUxUWV9SRVRFTlRJT05fR09B",
-            "TF9JTlZBTElEX01PREUQEEL8AQojY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYyNS5lcnJvcnNCHENhbXBhaWduR29hbENvbmZpZ0Vycm9yUHJvdG9QAVpF",
-            "Z29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29v",
-            "Z2xlYWRzL3YyNS9lcnJvcnM7ZXJyb3JzogIDR0FBqgIfR29vZ2xlLkFkcy5H",
-            "b29nbGVBZHMuVjI1LkVycm9yc8oCH0dvb2dsZVxBZHNcR29vZ2xlQWRzXFYy",
-            "NVxFcnJvcnPqAiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjU6OkVycm9y",
-            "c2IGcHJvdG8z"));
+            "TF9JTlZBTElEX01PREUQEBJGCkJISUdIX0xJRkVUSU1FX1ZBTFVFX01VTFRJ",
+            "UExJRVJfUFJFU0VOVF9CVVRfVkFMVUVfTVVMVElQTElFUl9BQlNFTlQQERJJ",
+            "CkVISUdIX0xJRkVUSU1FX1ZBTFVFX01VTFRJUExJRVJfTEVTU19USEFOX09S",
+            "X0VRVUFMX1RPX1ZBTFVFX01VTFRJUExJRVIQEhJUClBDQU1QQUlHTl9PVkVS",
+            "UklERV9ISUdIX0xJRkVUSU1FX1ZBTFVFX01VTFRJUExJRVJfTk9UX1NVUFBP",
+            "UlRFRF9GT1JfQ0FNUEFJR05fVFlQRRATQvwBCiNjb20uZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjI1LmVycm9yc0IcQ2FtcGFpZ25Hb2FsQ29uZmlnRXJyb3JQ",
+            "cm90b1ABWkVnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlz",
+            "L2Fkcy9nb29nbGVhZHMvdjI1L2Vycm9ycztlcnJvcnOiAgNHQUGqAh9Hb29n",
+            "bGUuQWRzLkdvb2dsZUFkcy5WMjUuRXJyb3JzygIfR29vZ2xlXEFkc1xHb29n",
+            "bGVBZHNcVjI1XEVycm9yc+oCI0dvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYy",
+            "NTo6RXJyb3JzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -280,6 +285,22 @@ namespace Google.Ads.GoogleAds.V25.Errors {
         /// PLA) must be enabled for loyalty retention goal.
         /// </summary>
         [pbr::OriginalName("LOYALTY_RETENTION_GOAL_INVALID_MODE")] LoyaltyRetentionGoalInvalidMode = 16,
+        /// <summary>
+        /// When using the customer lifecycle optimization goal, the value multiplier
+        /// must be present if the high lifetime value multiplier is present.
+        /// </summary>
+        [pbr::OriginalName("HIGH_LIFETIME_VALUE_MULTIPLIER_PRESENT_BUT_VALUE_MULTIPLIER_ABSENT")] HighLifetimeValueMultiplierPresentButValueMultiplierAbsent = 17,
+        /// <summary>
+        /// When using the customer lifecycle optimization goal, the high lifetime
+        /// value multiplier must be strictly greater than the value multiplier.
+        /// </summary>
+        [pbr::OriginalName("HIGH_LIFETIME_VALUE_MULTIPLIER_LESS_THAN_OR_EQUAL_TO_VALUE_MULTIPLIER")] HighLifetimeValueMultiplierLessThanOrEqualToValueMultiplier = 18,
+        /// <summary>
+        /// The high lifetime value multiplier for campaign-level overrides in
+        /// customer lifecycle optimization (new customer acquisition) is only
+        /// supported for certain campaign types.
+        /// </summary>
+        [pbr::OriginalName("CAMPAIGN_OVERRIDE_HIGH_LIFETIME_VALUE_MULTIPLIER_NOT_SUPPORTED_FOR_CAMPAIGN_TYPE")] CampaignOverrideHighLifetimeValueMultiplierNotSupportedForCampaignType = 19,
       }
 
     }

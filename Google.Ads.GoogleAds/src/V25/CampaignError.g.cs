@@ -655,8 +655,8 @@ namespace Google.Ads.GoogleAds.V25.Errors {
         /// </summary>
         [pbr::OriginalName("CANNOT_TARGET_NETWORK_FOR_COMPARISON_SHOPPING_SERVICE_LINKED_ACCOUNTS")] CannotTargetNetworkForComparisonShoppingServiceLinkedAccounts = 87,
         /// <summary>
-        /// Text asset automation settings can not be modified when there is an
-        /// active Performance Max optimization automatically created assets
+        /// Text asset automation settings cannot be modified when there is an
+        /// active Performance Max optimization text customization
         /// experiment. End the experiment to modify these settings.
         /// </summary>
         [pbr::OriginalName("CANNOT_MODIFY_TEXT_ASSET_AUTOMATION_WITH_ENABLED_TRIAL")] CannotModifyTextAssetAutomationWithEnabledTrial = 88,
@@ -666,7 +666,7 @@ namespace Google.Ads.GoogleAds.V25.Errors {
         /// </summary>
         [pbr::OriginalName("DYNAMIC_TEXT_ASSET_CANNOT_OPT_OUT_WITH_FINAL_URL_EXPANSION_OPT_IN")] DynamicTextAssetCannotOptOutWithFinalUrlExpansionOptIn = 89,
         /// <summary>
-        /// Can not set a campaign level match type.
+        /// Cannot set a campaign level match type.
         /// </summary>
         [pbr::OriginalName("CANNOT_SET_CAMPAIGN_KEYWORD_MATCH_TYPE")] CannotSetCampaignKeywordMatchType = 90,
         /// <summary>

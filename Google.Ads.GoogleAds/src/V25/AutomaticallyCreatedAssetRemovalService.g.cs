@@ -348,7 +348,8 @@ namespace Google.Ads.GoogleAds.V25.Services {
   }
 
   /// <summary>
-  /// A single operation to remove an automatically created asset from a campaign.
+  /// A single operation to remove a text customization (formerly automatically
+  /// created asset) from a campaign.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class RemoveCampaignAutomaticallyCreatedAssetOperation : pb::IMessage<RemoveCampaignAutomaticallyCreatedAssetOperation>

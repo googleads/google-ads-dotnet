@@ -22,8 +22,7 @@ namespace Google.Ads.GoogleAds.Tests.Lib
 {
     /// <summary>
     /// UnitTests for extensions in GoogleAdsFailureExtensionsTests.cs.
-    /// </summary>
-    [TestFixture("22")]
+    /// </summary>    
     [TestFixture("23")]
     [TestFixture("24")]
     [TestFixture("25")]

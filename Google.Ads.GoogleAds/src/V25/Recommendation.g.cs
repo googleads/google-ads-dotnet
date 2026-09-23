@@ -42,7 +42,7 @@ namespace Google.Ads.GoogleAds.V25.Resources {
             "bGVhZHMvdjI1L3Jlc291cmNlcy9hZC5wcm90bxouZ29vZ2xlL2Fkcy9nb29n",
             "bGVhZHMvdjI1L3Jlc291cmNlcy9hc3NldC5wcm90bxofZ29vZ2xlL2FwaS9m",
             "aWVsZF9iZWhhdmlvci5wcm90bxoZZ29vZ2xlL2FwaS9yZXNvdXJjZS5wcm90",
-            "byLmjwEKDlJlY29tbWVuZGF0aW9uEkYKDXJlc291cmNlX25hbWUYASABKAlC",
+            "byL/lQEKDlJlY29tbWVuZGF0aW9uEkYKDXJlc291cmNlX25hbWUYASABKAlC",
             "L+BBBfpBKQonZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL1JlY29tbWVuZGF0",
             "aW9uElwKBHR5cGUYAiABKA4ySS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUu",
             "ZW51bXMuUmVjb21tZW5kYXRpb25UeXBlRW51bS5SZWNvbW1lbmRhdGlvblR5",
@@ -235,233 +235,250 @@ namespace Google.Ads.GoogleAds.V25.Resources {
             "cmVuZ3RoUmVjb21tZW5kYXRpb25CA+BBA0gAEpIBCiljYW1wYWlnbl9zcGVj",
             "aWZpY19hcHBfZ29hbF9yZWNvbW1lbmRhdGlvbhhGIAEoCzJYLmdvb2dsZS5h",
             "ZHMuZ29vZ2xlYWRzLnYyNS5yZXNvdXJjZXMuUmVjb21tZW5kYXRpb24uQ2Ft",
-            "cGFpZ25TcGVjaWZpY0FwcEdvYWxSZWNvbW1lbmRhdGlvbkID4EEDSAAaTQoM",
-            "TWVyY2hhbnRJbmZvEg8KAmlkGAEgASgDQgPgQQMSEQoEbmFtZRgCIAEoCUID",
-            "4EEDEhkKDG11bHRpX2NsaWVudBgDIAEoCEID4EEDGuUBChRSZWNvbW1lbmRh",
-            "dGlvbkltcGFjdBJjCgxiYXNlX21ldHJpY3MYASABKAsySC5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MjUucmVzb3VyY2VzLlJlY29tbWVuZGF0aW9uLlJlY29t",
-            "bWVuZGF0aW9uTWV0cmljc0ID4EEDEmgKEXBvdGVudGlhbF9tZXRyaWNzGAIg",
-            "ASgLMkguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnJlc291cmNlcy5SZWNv",
-            "bW1lbmRhdGlvbi5SZWNvbW1lbmRhdGlvbk1ldHJpY3NCA+BBAxqzAgoVUmVj",
-            "b21tZW5kYXRpb25NZXRyaWNzEh0KC2ltcHJlc3Npb25zGAYgASgBQgPgQQNI",
-            "AIgBARIYCgZjbGlja3MYByABKAFCA+BBA0gBiAEBEh0KC2Nvc3RfbWljcm9z",
-            "GAggASgDQgPgQQNIAogBARIdCgtjb252ZXJzaW9ucxgJIAEoAUID4EEDSAOI",
-            "AQESIwoRY29udmVyc2lvbnNfdmFsdWUYCyABKAFCA+BBA0gEiAEBEh0KC3Zp",
-            "ZGVvX3ZpZXdzGAogASgBQgPgQQNIBYgBAUIOCgxfaW1wcmVzc2lvbnNCCQoH",
-            "X2NsaWNrc0IOCgxfY29zdF9taWNyb3NCDgoMX2NvbnZlcnNpb25zQhQKEl9j",
-            "b252ZXJzaW9uc192YWx1ZUIOCgxfdmlkZW9fdmlld3MaoAQKHENhbXBhaWdu",
-            "QnVkZ2V0UmVjb21tZW5kYXRpb24SLgocY3VycmVudF9idWRnZXRfYW1vdW50",
-            "X21pY3JvcxgHIAEoA0ID4EEDSACIAQESMgogcmVjb21tZW5kZWRfYnVkZ2V0",
-            "X2Ftb3VudF9taWNyb3MYCCABKANCA+BBA0gBiAEBEo8BCg5idWRnZXRfb3B0",
-            "aW9ucxgDIAMoCzJyLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5yZXNvdXJj",
-            "ZXMuUmVjb21tZW5kYXRpb24uQ2FtcGFpZ25CdWRnZXRSZWNvbW1lbmRhdGlv",
-            "bi5DYW1wYWlnbkJ1ZGdldFJlY29tbWVuZGF0aW9uT3B0aW9uQgPgQQMawwEK",
-            "IkNhbXBhaWduQnVkZ2V0UmVjb21tZW5kYXRpb25PcHRpb24SJgoUYnVkZ2V0",
-            "X2Ftb3VudF9taWNyb3MYAyABKANCA+BBA0gAiAEBElwKBmltcGFjdBgCIAEo",
-            "CzJHLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5yZXNvdXJjZXMuUmVjb21t",
-            "ZW5kYXRpb24uUmVjb21tZW5kYXRpb25JbXBhY3RCA+BBA0IXChVfYnVkZ2V0",
-            "X2Ftb3VudF9taWNyb3NCHwodX2N1cnJlbnRfYnVkZ2V0X2Ftb3VudF9taWNy",
-            "b3NCIwohX3JlY29tbWVuZGVkX2J1ZGdldF9hbW91bnRfbWljcm9zGuUCChVL",
-            "ZXl3b3JkUmVjb21tZW5kYXRpb24SQgoHa2V5d29yZBgBIAEoCzIsLmdvb2ds",
-            "ZS5hZHMuZ29vZ2xlYWRzLnYyNS5jb21tb24uS2V5d29yZEluZm9CA+BBAxJu",
-            "CgxzZWFyY2hfdGVybXMYBCADKAsyUy5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MjUucmVzb3VyY2VzLlJlY29tbWVuZGF0aW9uLktleXdvcmRSZWNvbW1lbmRh",
-            "dGlvbi5TZWFyY2hUZXJtQgPgQQMSLAoacmVjb21tZW5kZWRfY3BjX2JpZF9t",
-            "aWNyb3MYAyABKANCA+BBA0gAiAEBGksKClNlYXJjaFRlcm0SEQoEdGV4dBgB",
-            "IAEoCUID4EEDEioKHWVzdGltYXRlZF93ZWVrbHlfc2VhcmNoX2NvdW50GAIg",
-            "ASgDQgPgQQNCHQobX3JlY29tbWVuZGVkX2NwY19iaWRfbWljcm9zGrkBChRU",
-            "ZXh0QWRSZWNvbW1lbmRhdGlvbhI3CgJhZBgBIAEoCzImLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYyNS5yZXNvdXJjZXMuQWRCA+BBAxIfCg1jcmVhdGlvbl9k",
-            "YXRlGAQgASgJQgPgQQNIAIgBARIhCg9hdXRvX2FwcGx5X2RhdGUYBSABKAlC",
-            "A+BBA0gBiAEBQhAKDl9jcmVhdGlvbl9kYXRlQhIKEF9hdXRvX2FwcGx5X2Rh",
-            "dGUamwUKHFRhcmdldENwYU9wdEluUmVjb21tZW5kYXRpb24SiAEKB29wdGlv",
-            "bnMYASADKAsyci5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUucmVzb3VyY2Vz",
-            "LlJlY29tbWVuZGF0aW9uLlRhcmdldENwYU9wdEluUmVjb21tZW5kYXRpb24u",
-            "VGFyZ2V0Q3BhT3B0SW5SZWNvbW1lbmRhdGlvbk9wdGlvbkID4EEDEi8KHXJl",
-            "Y29tbWVuZGVkX3RhcmdldF9jcGFfbWljcm9zGAMgASgDQgPgQQNIAIgBARqc",
-            "AwoiVGFyZ2V0Q3BhT3B0SW5SZWNvbW1lbmRhdGlvbk9wdGlvbhJ4CgRnb2Fs",
-            "GAEgASgOMmUuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LmVudW1zLlRhcmdl",
-            "dENwYU9wdEluUmVjb21tZW5kYXRpb25Hb2FsRW51bS5UYXJnZXRDcGFPcHRJ",
-            "blJlY29tbWVuZGF0aW9uR29hbEID4EEDEiMKEXRhcmdldF9jcGFfbWljcm9z",
-            "GAUgASgDQgPgQQNIAIgBARI4CiZyZXF1aXJlZF9jYW1wYWlnbl9idWRnZXRf",
-            "YW1vdW50X21pY3JvcxgGIAEoA0ID4EEDSAGIAQESXAoGaW1wYWN0GAQgASgL",
-            "MkcuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnJlc291cmNlcy5SZWNvbW1l",
-            "bmRhdGlvbi5SZWNvbW1lbmRhdGlvbkltcGFjdEID4EEDQhQKEl90YXJnZXRf",
-            "Y3BhX21pY3Jvc0IpCidfcmVxdWlyZWRfY2FtcGFpZ25fYnVkZ2V0X2Ftb3Vu",
-            "dF9taWNyb3NCIAoeX3JlY29tbWVuZGVkX3RhcmdldF9jcGFfbWljcm9zGoEB",
-            "CiZNYXhpbWl6ZUNvbnZlcnNpb25zT3B0SW5SZWNvbW1lbmRhdGlvbhIyCiBy",
-            "ZWNvbW1lbmRlZF9idWRnZXRfYW1vdW50X21pY3JvcxgCIAEoA0ID4EEDSACI",
-            "AQFCIwohX3JlY29tbWVuZGVkX2J1ZGdldF9hbW91bnRfbWljcm9zGiAKHkVu",
-            "aGFuY2VkQ3BjT3B0SW5SZWNvbW1lbmRhdGlvbhojCiFTZWFyY2hQYXJ0bmVy",
-            "c09wdEluUmVjb21tZW5kYXRpb24afAohTWF4aW1pemVDbGlja3NPcHRJblJl",
-            "Y29tbWVuZGF0aW9uEjIKIHJlY29tbWVuZGVkX2J1ZGdldF9hbW91bnRfbWlj",
-            "cm9zGAIgASgDQgPgQQNIAIgBAUIjCiFfcmVjb21tZW5kZWRfYnVkZ2V0X2Ft",
-            "b3VudF9taWNyb3MaIgogT3B0aW1pemVBZFJvdGF0aW9uUmVjb21tZW5kYXRp",
-            "b24a1gEKGkNhbGxvdXRBc3NldFJlY29tbWVuZGF0aW9uElsKI3JlY29tbWVu",
-            "ZGVkX2NhbXBhaWduX2NhbGxvdXRfYXNzZXRzGAEgAygLMikuZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjI1LnJlc291cmNlcy5Bc3NldEID4EEDElsKI3JlY29t",
-            "bWVuZGVkX2N1c3RvbWVyX2NhbGxvdXRfYXNzZXRzGAIgAygLMikuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjI1LnJlc291cmNlcy5Bc3NldEID4EEDGtkBChtT",
-            "aXRlbGlua0Fzc2V0UmVjb21tZW5kYXRpb24SXAokcmVjb21tZW5kZWRfY2Ft",
-            "cGFpZ25fc2l0ZWxpbmtfYXNzZXRzGAEgAygLMikuZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjI1LnJlc291cmNlcy5Bc3NldEID4EEDElwKJHJlY29tbWVuZGVk",
-            "X2N1c3RvbWVyX3NpdGVsaW5rX2Fzc2V0cxgCIAMoCzIpLmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYyNS5yZXNvdXJjZXMuQXNzZXRCA+BBAxoZChdDYWxsQXNz",
-            "ZXRSZWNvbW1lbmRhdGlvbhrQAQoeS2V5d29yZE1hdGNoVHlwZVJlY29tbWVu",
-            "ZGF0aW9uEkIKB2tleXdvcmQYASABKAsyLC5nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52MjUuY29tbW9uLktleXdvcmRJbmZvQgPgQQMSagoWcmVjb21tZW5kZWRf",
-            "bWF0Y2hfdHlwZRgCIAEoDjJFLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5l",
-            "bnVtcy5LZXl3b3JkTWF0Y2hUeXBlRW51bS5LZXl3b3JkTWF0Y2hUeXBlQgPg",
-            "QQMa2gEKHk1vdmVVbnVzZWRCdWRnZXRSZWNvbW1lbmRhdGlvbhIoChZleGNl",
-            "c3NfY2FtcGFpZ25fYnVkZ2V0GAMgASgJQgPgQQNIAIgBARJzChVidWRnZXRf",
-            "cmVjb21tZW5kYXRpb24YAiABKAsyTy5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MjUucmVzb3VyY2VzLlJlY29tbWVuZGF0aW9uLkNhbXBhaWduQnVkZ2V0UmVj",
-            "b21tZW5kYXRpb25CA+BBA0IZChdfZXhjZXNzX2NhbXBhaWduX2J1ZGdldBrL",
-            "AQodVGFyZ2V0Um9hc09wdEluUmVjb21tZW5kYXRpb24SKQoXcmVjb21tZW5k",
-            "ZWRfdGFyZ2V0X3JvYXMYASABKAFCA+BBA0gAiAEBEjgKJnJlcXVpcmVkX2Nh",
-            "bXBhaWduX2J1ZGdldF9hbW91bnRfbWljcm9zGAIgASgDQgPgQQNIAYgBAUIa",
-            "ChhfcmVjb21tZW5kZWRfdGFyZ2V0X3JvYXNCKQonX3JlcXVpcmVkX2NhbXBh",
-            "aWduX2J1ZGdldF9hbW91bnRfbWljcm9zGrEBCiVSZXNwb25zaXZlU2VhcmNo",
-            "QWRBc3NldFJlY29tbWVuZGF0aW9uEj8KCmN1cnJlbnRfYWQYAyABKAsyJi5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MjUucmVzb3VyY2VzLkFkQgPgQQMSRwoS",
-            "cmVjb21tZW5kZWRfYXNzZXRzGAIgASgLMiYuZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjI1LnJlc291cmNlcy5BZEID4EEDGrkBCjFSZXNwb25zaXZlU2VhcmNo",
-            "QWRJbXByb3ZlQWRTdHJlbmd0aFJlY29tbWVuZGF0aW9uEj8KCmN1cnJlbnRf",
-            "YWQYASABKAsyJi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUucmVzb3VyY2Vz",
-            "LkFkQgPgQQMSQwoOcmVjb21tZW5kZWRfYWQYAiABKAsyJi5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MjUucmVzb3VyY2VzLkFkQgPgQQMaWwogUmVzcG9uc2l2",
-            "ZVNlYXJjaEFkUmVjb21tZW5kYXRpb24SNwoCYWQYASABKAsyJi5nb29nbGUu",
-            "YWRzLmdvb2dsZWFkcy52MjUucmVzb3VyY2VzLkFkQgPgQQMalAIKIlVzZUJy",
-            "b2FkTWF0Y2hLZXl3b3JkUmVjb21tZW5kYXRpb24SQgoHa2V5d29yZBgBIAMo",
-            "CzIsLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5jb21tb24uS2V5d29yZElu",
-            "Zm9CA+BBAxIlChhzdWdnZXN0ZWRfa2V5d29yZHNfY291bnQYAiABKANCA+BB",
-            "AxIkChdjYW1wYWlnbl9rZXl3b3Jkc19jb3VudBgDIAEoA0ID4EEDEigKG2Nh",
-            "bXBhaWduX3VzZXNfc2hhcmVkX2J1ZGdldBgEIAEoCEID4EEDEjMKJnJlcXVp",
-            "cmVkX2NhbXBhaWduX2J1ZGdldF9hbW91bnRfbWljcm9zGAUgASgDQgPgQQMa",
-            "dwo6VXBncmFkZVNtYXJ0U2hvcHBpbmdDYW1wYWlnblRvUGVyZm9ybWFuY2VN",
-            "YXhSZWNvbW1lbmRhdGlvbhIYCgttZXJjaGFudF9pZBgBIAEoA0ID4EEDEh8K",
-            "EnNhbGVzX2NvdW50cnlfY29kZRgCIAEoCUID4EEDGsUBCiVSYWlzZVRhcmdl",
-            "dENwYUJpZFRvb0xvd1JlY29tbWVuZGF0aW9uEi8KHXJlY29tbWVuZGVkX3Rh",
-            "cmdldF9tdWx0aXBsaWVyGAEgASgBQgPgQQNIAIgBARIrChlhdmVyYWdlX3Rh",
-            "cmdldF9jcGFfbWljcm9zGAIgASgDQgPgQQNIAYgBAUIgCh5fcmVjb21tZW5k",
-            "ZWRfdGFyZ2V0X211bHRpcGxpZXJCHAoaX2F2ZXJhZ2VfdGFyZ2V0X2NwYV9t",
-            "aWNyb3MaJQojRGlzcGxheUV4cGFuc2lvbk9wdEluUmVjb21tZW5kYXRpb24a",
-            "NAoyVXBncmFkZUxvY2FsQ2FtcGFpZ25Ub1BlcmZvcm1hbmNlTWF4UmVjb21t",
-            "ZW5kYXRpb24arwEKJkZvcmVjYXN0aW5nU2V0VGFyZ2V0Um9hc1JlY29tbWVu",
-            "ZGF0aW9uEiQKF3JlY29tbWVuZGVkX3RhcmdldF9yb2FzGAEgASgBQgPgQQMS",
-            "XwoPY2FtcGFpZ25fYnVkZ2V0GAIgASgLMkEuZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjI1LnJlc291cmNlcy5SZWNvbW1lbmRhdGlvbi5DYW1wYWlnbkJ1ZGdl",
-            "dEID4EEDGtUBCiRTaG9wcGluZ09mZmVyQXR0cmlidXRlUmVjb21tZW5kYXRp",
-            "b24SVgoIbWVyY2hhbnQYASABKAsyPy5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MjUucmVzb3VyY2VzLlJlY29tbWVuZGF0aW9uLk1lcmNoYW50SW5mb0ID4EED",
-            "EhcKCmZlZWRfbGFiZWwYAiABKAlCA+BBAxIZCgxvZmZlcnNfY291bnQYAyAB",
-            "KANCA+BBAxIhChRkZW1vdGVkX29mZmVyc19jb3VudBgEIAEoA0ID4EEDGuUB",
-            "CixTaG9wcGluZ0ZpeERpc2FwcHJvdmVkUHJvZHVjdHNSZWNvbW1lbmRhdGlv",
-            "bhJWCghtZXJjaGFudBgBIAEoCzI/Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
-            "NS5yZXNvdXJjZXMuUmVjb21tZW5kYXRpb24uTWVyY2hhbnRJbmZvQgPgQQMS",
-            "FwoKZmVlZF9sYWJlbBgCIAEoCUID4EEDEhsKDnByb2R1Y3RzX2NvdW50GAMg",
-            "ASgDQgPgQQMSJwoaZGlzYXBwcm92ZWRfcHJvZHVjdHNfY291bnQYBCABKANC",
-            "A+BBAxq+AQolU2hvcHBpbmdUYXJnZXRBbGxPZmZlcnNSZWNvbW1lbmRhdGlv",
-            "bhJWCghtZXJjaGFudBgBIAEoCzI/Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
-            "NS5yZXNvdXJjZXMuUmVjb21tZW5kYXRpb24uTWVyY2hhbnRJbmZvQgPgQQMS",
-            "JAoXdW50YXJnZXRlZF9vZmZlcnNfY291bnQYAiABKANCA+BBAxIXCgpmZWVk",
-            "X2xhYmVsGAMgASgJQgPgQQMaiwIKK1Nob3BwaW5nQWRkUHJvZHVjdHNUb0Nh",
-            "bXBhaWduUmVjb21tZW5kYXRpb24SVgoIbWVyY2hhbnQYASABKAsyPy5nb29n",
+            "cGFpZ25TcGVjaWZpY0FwcEdvYWxSZWNvbW1lbmRhdGlvbkID4EEDSAASqwEK",
+            "N3JhaXNlX3RhcmdldF9jcGFfcGVyZm9ybWFuY2VfYmlkX3Rvb19sb3dfcmVj",
+            "b21tZW5kYXRpb24YSCABKAsyYy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUu",
+            "cmVzb3VyY2VzLlJlY29tbWVuZGF0aW9uLlJhaXNlVGFyZ2V0Q3BhUGVyZm9y",
+            "bWFuY2VCaWRUb29Mb3dSZWNvbW1lbmRhdGlvbkID4EEDSAASrQEKOGxvd2Vy",
+            "X3RhcmdldF9yb2FzX3BlcmZvcm1hbmNlX2JpZF90b29fbG93X3JlY29tbWVu",
+            "ZGF0aW9uGEkgASgLMmQuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnJlc291",
+            "cmNlcy5SZWNvbW1lbmRhdGlvbi5Mb3dlclRhcmdldFJvYXNQZXJmb3JtYW5j",
+            "ZUJpZFRvb0xvd1JlY29tbWVuZGF0aW9uQgPgQQNIABpNCgxNZXJjaGFudElu",
+            "Zm8SDwoCaWQYASABKANCA+BBAxIRCgRuYW1lGAIgASgJQgPgQQMSGQoMbXVs",
+            "dGlfY2xpZW50GAMgASgIQgPgQQMa5QEKFFJlY29tbWVuZGF0aW9uSW1wYWN0",
+            "EmMKDGJhc2VfbWV0cmljcxgBIAEoCzJILmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYyNS5yZXNvdXJjZXMuUmVjb21tZW5kYXRpb24uUmVjb21tZW5kYXRpb25N",
+            "ZXRyaWNzQgPgQQMSaAoRcG90ZW50aWFsX21ldHJpY3MYAiABKAsySC5nb29n",
             "bGUuYWRzLmdvb2dsZWFkcy52MjUucmVzb3VyY2VzLlJlY29tbWVuZGF0aW9u",
-            "Lk1lcmNoYW50SW5mb0ID4EEDEhcKCmZlZWRfbGFiZWwYAiABKAlCA+BBAxJr",
-            "CgZyZWFzb24YAyABKA4yVi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUuZW51",
-            "bXMuU2hvcHBpbmdBZGRQcm9kdWN0c1RvQ2FtcGFpZ25SZWNvbW1lbmRhdGlv",
-            "bkVudW0uUmVhc29uQgPgQQMaqAEKNVNob3BwaW5nTWVyY2hhbnRDZW50ZXJB",
-            "Y2NvdW50U3VzcGVuc2lvblJlY29tbWVuZGF0aW9uElYKCG1lcmNoYW50GAEg",
-            "ASgLMj8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnJlc291cmNlcy5SZWNv",
-            "bW1lbmRhdGlvbi5NZXJjaGFudEluZm9CA+BBAxIXCgpmZWVkX2xhYmVsGAIg",
-            "ASgJQgPgQQMavQEKSlNob3BwaW5nTWlncmF0ZVJlZ3VsYXJTaG9wcGluZ0Nh",
-            "bXBhaWduT2ZmZXJzVG9QZXJmb3JtYW5jZU1heFJlY29tbWVuZGF0aW9uElYK",
-            "CG1lcmNoYW50GAEgASgLMj8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnJl",
-            "c291cmNlcy5SZWNvbW1lbmRhdGlvbi5NZXJjaGFudEluZm9CA+BBAxIXCgpm",
-            "ZWVkX2xhYmVsGAIgASgJQgPgQQMamwEKFFRhcmdldEFkanVzdG1lbnRJbmZv",
-            "EhwKCnNoYXJlZF9zZXQYASABKAlCA+BBA0gAiAEBEioKHXJlY29tbWVuZGVk",
-            "X3RhcmdldF9tdWx0aXBsaWVyGAIgASgBQgPgQQMSKgodY3VycmVudF9hdmVy",
-            "YWdlX3RhcmdldF9taWNyb3MYAyABKANCA+BBA0INCgtfc2hhcmVkX3NldBqD",
-            "AgocUmFpc2VUYXJnZXRDcGFSZWNvbW1lbmRhdGlvbhJnChF0YXJnZXRfYWRq",
-            "dXN0bWVudBgBIAEoCzJHLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5yZXNv",
-            "dXJjZXMuUmVjb21tZW5kYXRpb24uVGFyZ2V0QWRqdXN0bWVudEluZm9CA+BB",
-            "AxJlChBhcHBfYmlkZGluZ19nb2FsGAIgASgOMkEuZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjI1LmVudW1zLkFwcEJpZGRpbmdHb2FsRW51bS5BcHBCaWRkaW5n",
-            "R29hbEID4EEDSACIAQFCEwoRX2FwcF9iaWRkaW5nX2dvYWwaiAEKHUxvd2Vy",
-            "VGFyZ2V0Um9hc1JlY29tbWVuZGF0aW9uEmcKEXRhcmdldF9hZGp1c3RtZW50",
-            "GAEgASgLMkcuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnJlc291cmNlcy5S",
-            "ZWNvbW1lbmRhdGlvbi5UYXJnZXRBZGp1c3RtZW50SW5mb0ID4EEDGioKKER5",
-            "bmFtaWNJbWFnZUV4dGVuc2lvbk9wdEluUmVjb21tZW5kYXRpb24afQoOQ2Ft",
-            "cGFpZ25CdWRnZXQSIgoVY3VycmVudF9hbW91bnRfbWljcm9zGAEgASgDQgPg",
-            "QQMSKgodcmVjb21tZW5kZWRfbmV3X2Ftb3VudF9taWNyb3MYAiABKANCA+BB",
-            "AxIbCg5uZXdfc3RhcnRfZGF0ZRgDIAEoCUID4EEDGiMKIVBlcmZvcm1hbmNl",
-            "TWF4T3B0SW5SZWNvbW1lbmRhdGlvbhqeAQotSW1wcm92ZVBlcmZvcm1hbmNl",
-            "TWF4QWRTdHJlbmd0aFJlY29tbWVuZGF0aW9uEhgKC2Fzc2V0X2dyb3VwGAEg",
-            "ASgJQgPgQQMSUwoLYWRfc3RyZW5ndGgYAiABKA4yOS5nb29nbGUuYWRzLmdv",
-            "b2dsZWFkcy52MjUuZW51bXMuQWRTdHJlbmd0aEVudW0uQWRTdHJlbmd0aEID",
-            "4EEDGlgKPU1pZ3JhdGVEeW5hbWljU2VhcmNoQWRzQ2FtcGFpZ25Ub1BlcmZv",
-            "cm1hbmNlTWF4UmVjb21tZW5kYXRpb24SFwoKYXBwbHlfbGluaxgBIAEoCUID",
-            "4EEDGrQBCiVGb3JlY2FzdGluZ1NldFRhcmdldENwYVJlY29tbWVuZGF0aW9u",
-            "EioKHXJlY29tbWVuZGVkX3RhcmdldF9jcGFfbWljcm9zGAEgASgDQgPgQQMS",
-            "XwoPY2FtcGFpZ25fYnVkZ2V0GAIgASgLMkEuZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjI1LnJlc291cmNlcy5SZWNvbW1lbmRhdGlvbi5DYW1wYWlnbkJ1ZGdl",
-            "dEID4EEDGiwKKk1heGltaXplQ29udmVyc2lvblZhbHVlT3B0SW5SZWNvbW1l",
-            "bmRhdGlvbhooCiZJbXByb3ZlR29vZ2xlVGFnQ292ZXJhZ2VSZWNvbW1lbmRh",
-            "dGlvbhorCilQZXJmb3JtYW5jZU1heEZpbmFsVXJsT3B0SW5SZWNvbW1lbmRh",
-            "dGlvbhrsAgomUmVmcmVzaEN1c3RvbWVyTWF0Y2hMaXN0UmVjb21tZW5kYXRp",
-            "b24SGQoMdXNlcl9saXN0X2lkGAEgASgDQgPgQQMSGwoOdXNlcl9saXN0X25h",
-            "bWUYAiABKAlCA+BBAxIkChdkYXlzX3NpbmNlX2xhc3RfcmVmcmVzaBgDIAEo",
-            "A0ID4EEDEmEKFHRvcF9zcGVuZGluZ19hY2NvdW50GAQgAygLMj4uZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjI1LnJlc291cmNlcy5SZWNvbW1lbmRhdGlvbi5B",
-            "Y2NvdW50SW5mb0ID4EEDEiUKGHRhcmdldGluZ19hY2NvdW50c19jb3VudBgF",
-            "IAEoA0ID4EEDEloKDW93bmVyX2FjY291bnQYBiABKAsyPi5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MjUucmVzb3VyY2VzLlJlY29tbWVuZGF0aW9uLkFjY291",
-            "bnRJbmZvQgPgQQMaRgoLQWNjb3VudEluZm8SGAoLY3VzdG9tZXJfaWQYASAB",
-            "KANCA+BBAxIdChBkZXNjcmlwdGl2ZV9uYW1lGAIgASgJQgPgQQMaaAohQ3Vz",
-            "dG9tQXVkaWVuY2VPcHRJblJlY29tbWVuZGF0aW9uEkMKCGtleXdvcmRzGAEg",
-            "AygLMiwuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LmNvbW1vbi5LZXl3b3Jk",
-            "SW5mb0ID4EEDGh0KG0xlYWRGb3JtQXNzZXRSZWNvbW1lbmRhdGlvbhq8AQoo",
-            "SW1wcm92ZURlbWFuZEdlbkFkU3RyZW5ndGhSZWNvbW1lbmRhdGlvbhIPCgJh",
-            "ZBgBIAEoCUID4EEDElMKC2FkX3N0cmVuZ3RoGAIgASgOMjkuZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjI1LmVudW1zLkFkU3RyZW5ndGhFbnVtLkFkU3RyZW5n",
-            "dGhCA+BBAxIqCh1kZW1hbmRfZ2VuX2Fzc2V0X2FjdGlvbl9pdGVtcxgDIAMo",
-            "CUID4EEDGqkHCiVDYW1wYWlnblNwZWNpZmljQXBwR29hbFJlY29tbWVuZGF0",
-            "aW9uEjMKJmNhbXBhaWduX2Nvc3RfbWljcm9zX2xhc3RfZmlmdGVlbl9kYXlz",
-            "GAEgASgDQgPgQQMSMwomY2FtcGFpZ25fY29udmVyc2lvbnNfbGFzdF9maWZ0",
-            "ZWVuX2RheXMYAiABKAFCA+BBAxI4CitjYW1wYWlnbl9jb252ZXJzaW9uX3Zh",
-            "bHVlX2xhc3RfZmlmdGVlbl9kYXlzGAMgASgBQgPgQQMSNAoncHJvamVjdGVk",
-            "X2NvbnZlcnNpb25zX2xhc3RfZmlmdGVlbl9kYXlzGAQgASgBQgPgQQMSOQos",
-            "cHJvamVjdGVkX2NvbnZlcnNpb25fdmFsdWVfbGFzdF9maWZ0ZWVuX2RheXMY",
-            "BSABKAFCA+BBAxJ6ChRhcHBfY29udmVyc2lvbl9nb2FscxgGIAMoDjJVLmdv",
-            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5lbnVtcy5Db252ZXJzaW9uQWN0aW9u",
-            "Q2F0ZWdvcnlFbnVtLkNvbnZlcnNpb25BY3Rpb25DYXRlZ29yeUIFGAHgQQMS",
-            "WgoSY3VycmVudF9hdXRvX2dvYWxzGAcgAygLMjcuZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjI1LmNvbW1vbi5FZmZlY3RpdmVBdXRvbWF0aWNHb2FsQgUYAeBB",
-            "AxJUChNjdXJyZW50X2N1c3RvbV9nb2FsGAggASgJQjcYAeBBA/pBLwotZ29v",
-            "Z2xlYWRzLmdvb2dsZWFwaXMuY29tL0N1c3RvbUNvbnZlcnNpb25Hb2FsEn4K",
-            "GnN1Z2dlc3RlZF9jb252ZXJzaW9uX2dvYWxzGAkgAygOMlUuZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjI1LmVudW1zLkNvbnZlcnNpb25BY3Rpb25DYXRlZ29y",
-            "eUVudW0uQ29udmVyc2lvbkFjdGlvbkNhdGVnb3J5QgPgQQMSXgoYY3VycmVu",
-            "dF9jb252ZXJzaW9uX2dvYWxzGAogAygLMjcuZ29vZ2xlLmFkcy5nb29nbGVh",
-            "ZHMudjI1LmNvbW1vbi5FZmZlY3RpdmVBdXRvbWF0aWNHb2FsQgPgQQMSXQoe",
-            "Y3VycmVudF9jdXN0b21fY29udmVyc2lvbl9nb2FsGAsgASgJQjXgQQP6QS8K",
-            "LWdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9DdXN0b21Db252ZXJzaW9uR29h",
-            "bDpp6kFmCidnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vUmVjb21tZW5kYXRp",
-            "b24SO2N1c3RvbWVycy97Y3VzdG9tZXJfaWR9L3JlY29tbWVuZGF0aW9ucy97",
-            "cmVjb21tZW5kYXRpb25faWR9QhAKDnJlY29tbWVuZGF0aW9uQhIKEF9jYW1w",
-            "YWlnbl9idWRnZXRCCwoJX2NhbXBhaWduQgsKCV9hZF9ncm91cEIMCgpfZGlz",
-            "bWlzc2VkQoUCCiZjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnJlc291",
-            "cmNlc0ITUmVjb21tZW5kYXRpb25Qcm90b1ABWktnb29nbGUuZ29sYW5nLm9y",
-            "Zy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjI1L3Jlc291",
-            "cmNlcztyZXNvdXJjZXOiAgNHQUGqAiJHb29nbGUuQWRzLkdvb2dsZUFkcy5W",
-            "MjUuUmVzb3VyY2VzygIiR29vZ2xlXEFkc1xHb29nbGVBZHNcVjI1XFJlc291",
-            "cmNlc+oCJkdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyNTo6UmVzb3VyY2Vz",
-            "YgZwcm90bzM="));
+            "LlJlY29tbWVuZGF0aW9uTWV0cmljc0ID4EEDGrMCChVSZWNvbW1lbmRhdGlv",
+            "bk1ldHJpY3MSHQoLaW1wcmVzc2lvbnMYBiABKAFCA+BBA0gAiAEBEhgKBmNs",
+            "aWNrcxgHIAEoAUID4EEDSAGIAQESHQoLY29zdF9taWNyb3MYCCABKANCA+BB",
+            "A0gCiAEBEh0KC2NvbnZlcnNpb25zGAkgASgBQgPgQQNIA4gBARIjChFjb252",
+            "ZXJzaW9uc192YWx1ZRgLIAEoAUID4EEDSASIAQESHQoLdmlkZW9fdmlld3MY",
+            "CiABKAFCA+BBA0gFiAEBQg4KDF9pbXByZXNzaW9uc0IJCgdfY2xpY2tzQg4K",
+            "DF9jb3N0X21pY3Jvc0IOCgxfY29udmVyc2lvbnNCFAoSX2NvbnZlcnNpb25z",
+            "X3ZhbHVlQg4KDF92aWRlb192aWV3cxqgBAocQ2FtcGFpZ25CdWRnZXRSZWNv",
+            "bW1lbmRhdGlvbhIuChxjdXJyZW50X2J1ZGdldF9hbW91bnRfbWljcm9zGAcg",
+            "ASgDQgPgQQNIAIgBARIyCiByZWNvbW1lbmRlZF9idWRnZXRfYW1vdW50X21p",
+            "Y3JvcxgIIAEoA0ID4EEDSAGIAQESjwEKDmJ1ZGdldF9vcHRpb25zGAMgAygL",
+            "MnIuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnJlc291cmNlcy5SZWNvbW1l",
+            "bmRhdGlvbi5DYW1wYWlnbkJ1ZGdldFJlY29tbWVuZGF0aW9uLkNhbXBhaWdu",
+            "QnVkZ2V0UmVjb21tZW5kYXRpb25PcHRpb25CA+BBAxrDAQoiQ2FtcGFpZ25C",
+            "dWRnZXRSZWNvbW1lbmRhdGlvbk9wdGlvbhImChRidWRnZXRfYW1vdW50X21p",
+            "Y3JvcxgDIAEoA0ID4EEDSACIAQESXAoGaW1wYWN0GAIgASgLMkcuZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjI1LnJlc291cmNlcy5SZWNvbW1lbmRhdGlvbi5S",
+            "ZWNvbW1lbmRhdGlvbkltcGFjdEID4EEDQhcKFV9idWRnZXRfYW1vdW50X21p",
+            "Y3Jvc0IfCh1fY3VycmVudF9idWRnZXRfYW1vdW50X21pY3Jvc0IjCiFfcmVj",
+            "b21tZW5kZWRfYnVkZ2V0X2Ftb3VudF9taWNyb3Ma5QIKFUtleXdvcmRSZWNv",
+            "bW1lbmRhdGlvbhJCCgdrZXl3b3JkGAEgASgLMiwuZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjI1LmNvbW1vbi5LZXl3b3JkSW5mb0ID4EEDEm4KDHNlYXJjaF90",
+            "ZXJtcxgEIAMoCzJTLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5yZXNvdXJj",
+            "ZXMuUmVjb21tZW5kYXRpb24uS2V5d29yZFJlY29tbWVuZGF0aW9uLlNlYXJj",
+            "aFRlcm1CA+BBAxIsChpyZWNvbW1lbmRlZF9jcGNfYmlkX21pY3JvcxgDIAEo",
+            "A0ID4EEDSACIAQEaSwoKU2VhcmNoVGVybRIRCgR0ZXh0GAEgASgJQgPgQQMS",
+            "KgodZXN0aW1hdGVkX3dlZWtseV9zZWFyY2hfY291bnQYAiABKANCA+BBA0Id",
+            "ChtfcmVjb21tZW5kZWRfY3BjX2JpZF9taWNyb3MauQEKFFRleHRBZFJlY29t",
+            "bWVuZGF0aW9uEjcKAmFkGAEgASgLMiYuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djI1LnJlc291cmNlcy5BZEID4EEDEh8KDWNyZWF0aW9uX2RhdGUYBCABKAlC",
+            "A+BBA0gAiAEBEiEKD2F1dG9fYXBwbHlfZGF0ZRgFIAEoCUID4EEDSAGIAQFC",
+            "EAoOX2NyZWF0aW9uX2RhdGVCEgoQX2F1dG9fYXBwbHlfZGF0ZRqbBQocVGFy",
+            "Z2V0Q3BhT3B0SW5SZWNvbW1lbmRhdGlvbhKIAQoHb3B0aW9ucxgBIAMoCzJy",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5yZXNvdXJjZXMuUmVjb21tZW5k",
+            "YXRpb24uVGFyZ2V0Q3BhT3B0SW5SZWNvbW1lbmRhdGlvbi5UYXJnZXRDcGFP",
+            "cHRJblJlY29tbWVuZGF0aW9uT3B0aW9uQgPgQQMSLwodcmVjb21tZW5kZWRf",
+            "dGFyZ2V0X2NwYV9taWNyb3MYAyABKANCA+BBA0gAiAEBGpwDCiJUYXJnZXRD",
+            "cGFPcHRJblJlY29tbWVuZGF0aW9uT3B0aW9uEngKBGdvYWwYASABKA4yZS5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MjUuZW51bXMuVGFyZ2V0Q3BhT3B0SW5S",
+            "ZWNvbW1lbmRhdGlvbkdvYWxFbnVtLlRhcmdldENwYU9wdEluUmVjb21tZW5k",
+            "YXRpb25Hb2FsQgPgQQMSIwoRdGFyZ2V0X2NwYV9taWNyb3MYBSABKANCA+BB",
+            "A0gAiAEBEjgKJnJlcXVpcmVkX2NhbXBhaWduX2J1ZGdldF9hbW91bnRfbWlj",
+            "cm9zGAYgASgDQgPgQQNIAYgBARJcCgZpbXBhY3QYBCABKAsyRy5nb29nbGUu",
+            "YWRzLmdvb2dsZWFkcy52MjUucmVzb3VyY2VzLlJlY29tbWVuZGF0aW9uLlJl",
+            "Y29tbWVuZGF0aW9uSW1wYWN0QgPgQQNCFAoSX3RhcmdldF9jcGFfbWljcm9z",
+            "QikKJ19yZXF1aXJlZF9jYW1wYWlnbl9idWRnZXRfYW1vdW50X21pY3Jvc0Ig",
+            "Ch5fcmVjb21tZW5kZWRfdGFyZ2V0X2NwYV9taWNyb3MagQEKJk1heGltaXpl",
+            "Q29udmVyc2lvbnNPcHRJblJlY29tbWVuZGF0aW9uEjIKIHJlY29tbWVuZGVk",
+            "X2J1ZGdldF9hbW91bnRfbWljcm9zGAIgASgDQgPgQQNIAIgBAUIjCiFfcmVj",
+            "b21tZW5kZWRfYnVkZ2V0X2Ftb3VudF9taWNyb3MaIAoeRW5oYW5jZWRDcGNP",
+            "cHRJblJlY29tbWVuZGF0aW9uGiMKIVNlYXJjaFBhcnRuZXJzT3B0SW5SZWNv",
+            "bW1lbmRhdGlvbhp8CiFNYXhpbWl6ZUNsaWNrc09wdEluUmVjb21tZW5kYXRp",
+            "b24SMgogcmVjb21tZW5kZWRfYnVkZ2V0X2Ftb3VudF9taWNyb3MYAiABKANC",
+            "A+BBA0gAiAEBQiMKIV9yZWNvbW1lbmRlZF9idWRnZXRfYW1vdW50X21pY3Jv",
+            "cxoiCiBPcHRpbWl6ZUFkUm90YXRpb25SZWNvbW1lbmRhdGlvbhrWAQoaQ2Fs",
+            "bG91dEFzc2V0UmVjb21tZW5kYXRpb24SWwojcmVjb21tZW5kZWRfY2FtcGFp",
+            "Z25fY2FsbG91dF9hc3NldHMYASADKAsyKS5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MjUucmVzb3VyY2VzLkFzc2V0QgPgQQMSWwojcmVjb21tZW5kZWRfY3Vz",
+            "dG9tZXJfY2FsbG91dF9hc3NldHMYAiADKAsyKS5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MjUucmVzb3VyY2VzLkFzc2V0QgPgQQMa2QEKG1NpdGVsaW5rQXNz",
+            "ZXRSZWNvbW1lbmRhdGlvbhJcCiRyZWNvbW1lbmRlZF9jYW1wYWlnbl9zaXRl",
+            "bGlua19hc3NldHMYASADKAsyKS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUu",
+            "cmVzb3VyY2VzLkFzc2V0QgPgQQMSXAokcmVjb21tZW5kZWRfY3VzdG9tZXJf",
+            "c2l0ZWxpbmtfYXNzZXRzGAIgAygLMikuZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
+            "djI1LnJlc291cmNlcy5Bc3NldEID4EEDGhkKF0NhbGxBc3NldFJlY29tbWVu",
+            "ZGF0aW9uGtABCh5LZXl3b3JkTWF0Y2hUeXBlUmVjb21tZW5kYXRpb24SQgoH",
+            "a2V5d29yZBgBIAEoCzIsLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5jb21t",
+            "b24uS2V5d29yZEluZm9CA+BBAxJqChZyZWNvbW1lbmRlZF9tYXRjaF90eXBl",
+            "GAIgASgOMkUuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LmVudW1zLktleXdv",
+            "cmRNYXRjaFR5cGVFbnVtLktleXdvcmRNYXRjaFR5cGVCA+BBAxraAQoeTW92",
+            "ZVVudXNlZEJ1ZGdldFJlY29tbWVuZGF0aW9uEigKFmV4Y2Vzc19jYW1wYWln",
+            "bl9idWRnZXQYAyABKAlCA+BBA0gAiAEBEnMKFWJ1ZGdldF9yZWNvbW1lbmRh",
+            "dGlvbhgCIAEoCzJPLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5yZXNvdXJj",
+            "ZXMuUmVjb21tZW5kYXRpb24uQ2FtcGFpZ25CdWRnZXRSZWNvbW1lbmRhdGlv",
+            "bkID4EEDQhkKF19leGNlc3NfY2FtcGFpZ25fYnVkZ2V0GssBCh1UYXJnZXRS",
+            "b2FzT3B0SW5SZWNvbW1lbmRhdGlvbhIpChdyZWNvbW1lbmRlZF90YXJnZXRf",
+            "cm9hcxgBIAEoAUID4EEDSACIAQESOAomcmVxdWlyZWRfY2FtcGFpZ25fYnVk",
+            "Z2V0X2Ftb3VudF9taWNyb3MYAiABKANCA+BBA0gBiAEBQhoKGF9yZWNvbW1l",
+            "bmRlZF90YXJnZXRfcm9hc0IpCidfcmVxdWlyZWRfY2FtcGFpZ25fYnVkZ2V0",
+            "X2Ftb3VudF9taWNyb3MasQEKJVJlc3BvbnNpdmVTZWFyY2hBZEFzc2V0UmVj",
+            "b21tZW5kYXRpb24SPwoKY3VycmVudF9hZBgDIAEoCzImLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYyNS5yZXNvdXJjZXMuQWRCA+BBAxJHChJyZWNvbW1lbmRl",
+            "ZF9hc3NldHMYAiABKAsyJi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUucmVz",
+            "b3VyY2VzLkFkQgPgQQMauQEKMVJlc3BvbnNpdmVTZWFyY2hBZEltcHJvdmVB",
+            "ZFN0cmVuZ3RoUmVjb21tZW5kYXRpb24SPwoKY3VycmVudF9hZBgBIAEoCzIm",
+            "Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5yZXNvdXJjZXMuQWRCA+BBAxJD",
+            "Cg5yZWNvbW1lbmRlZF9hZBgCIAEoCzImLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYyNS5yZXNvdXJjZXMuQWRCA+BBAxpbCiBSZXNwb25zaXZlU2VhcmNoQWRS",
+            "ZWNvbW1lbmRhdGlvbhI3CgJhZBgBIAEoCzImLmdvb2dsZS5hZHMuZ29vZ2xl",
+            "YWRzLnYyNS5yZXNvdXJjZXMuQWRCA+BBAxqUAgoiVXNlQnJvYWRNYXRjaEtl",
+            "eXdvcmRSZWNvbW1lbmRhdGlvbhJCCgdrZXl3b3JkGAEgAygLMiwuZ29vZ2xl",
+            "LmFkcy5nb29nbGVhZHMudjI1LmNvbW1vbi5LZXl3b3JkSW5mb0ID4EEDEiUK",
+            "GHN1Z2dlc3RlZF9rZXl3b3Jkc19jb3VudBgCIAEoA0ID4EEDEiQKF2NhbXBh",
+            "aWduX2tleXdvcmRzX2NvdW50GAMgASgDQgPgQQMSKAobY2FtcGFpZ25fdXNl",
+            "c19zaGFyZWRfYnVkZ2V0GAQgASgIQgPgQQMSMwomcmVxdWlyZWRfY2FtcGFp",
+            "Z25fYnVkZ2V0X2Ftb3VudF9taWNyb3MYBSABKANCA+BBAxp3CjpVcGdyYWRl",
+            "U21hcnRTaG9wcGluZ0NhbXBhaWduVG9QZXJmb3JtYW5jZU1heFJlY29tbWVu",
+            "ZGF0aW9uEhgKC21lcmNoYW50X2lkGAEgASgDQgPgQQMSHwoSc2FsZXNfY291",
+            "bnRyeV9jb2RlGAIgASgJQgPgQQMaxQEKJVJhaXNlVGFyZ2V0Q3BhQmlkVG9v",
+            "TG93UmVjb21tZW5kYXRpb24SLwodcmVjb21tZW5kZWRfdGFyZ2V0X211bHRp",
+            "cGxpZXIYASABKAFCA+BBA0gAiAEBEisKGWF2ZXJhZ2VfdGFyZ2V0X2NwYV9t",
+            "aWNyb3MYAiABKANCA+BBA0gBiAEBQiAKHl9yZWNvbW1lbmRlZF90YXJnZXRf",
+            "bXVsdGlwbGllckIcChpfYXZlcmFnZV90YXJnZXRfY3BhX21pY3JvcxolCiNE",
+            "aXNwbGF5RXhwYW5zaW9uT3B0SW5SZWNvbW1lbmRhdGlvbho0CjJVcGdyYWRl",
+            "TG9jYWxDYW1wYWlnblRvUGVyZm9ybWFuY2VNYXhSZWNvbW1lbmRhdGlvbhqv",
+            "AQomRm9yZWNhc3RpbmdTZXRUYXJnZXRSb2FzUmVjb21tZW5kYXRpb24SJAoX",
+            "cmVjb21tZW5kZWRfdGFyZ2V0X3JvYXMYASABKAFCA+BBAxJfCg9jYW1wYWln",
+            "bl9idWRnZXQYAiABKAsyQS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUucmVz",
+            "b3VyY2VzLlJlY29tbWVuZGF0aW9uLkNhbXBhaWduQnVkZ2V0QgPgQQMa1QEK",
+            "JFNob3BwaW5nT2ZmZXJBdHRyaWJ1dGVSZWNvbW1lbmRhdGlvbhJWCghtZXJj",
+            "aGFudBgBIAEoCzI/Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5yZXNvdXJj",
+            "ZXMuUmVjb21tZW5kYXRpb24uTWVyY2hhbnRJbmZvQgPgQQMSFwoKZmVlZF9s",
+            "YWJlbBgCIAEoCUID4EEDEhkKDG9mZmVyc19jb3VudBgDIAEoA0ID4EEDEiEK",
+            "FGRlbW90ZWRfb2ZmZXJzX2NvdW50GAQgASgDQgPgQQMa5QEKLFNob3BwaW5n",
+            "Rml4RGlzYXBwcm92ZWRQcm9kdWN0c1JlY29tbWVuZGF0aW9uElYKCG1lcmNo",
+            "YW50GAEgASgLMj8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnJlc291cmNl",
+            "cy5SZWNvbW1lbmRhdGlvbi5NZXJjaGFudEluZm9CA+BBAxIXCgpmZWVkX2xh",
+            "YmVsGAIgASgJQgPgQQMSGwoOcHJvZHVjdHNfY291bnQYAyABKANCA+BBAxIn",
+            "ChpkaXNhcHByb3ZlZF9wcm9kdWN0c19jb3VudBgEIAEoA0ID4EEDGr4BCiVT",
+            "aG9wcGluZ1RhcmdldEFsbE9mZmVyc1JlY29tbWVuZGF0aW9uElYKCG1lcmNo",
+            "YW50GAEgASgLMj8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnJlc291cmNl",
+            "cy5SZWNvbW1lbmRhdGlvbi5NZXJjaGFudEluZm9CA+BBAxIkChd1bnRhcmdl",
+            "dGVkX29mZmVyc19jb3VudBgCIAEoA0ID4EEDEhcKCmZlZWRfbGFiZWwYAyAB",
+            "KAlCA+BBAxqLAgorU2hvcHBpbmdBZGRQcm9kdWN0c1RvQ2FtcGFpZ25SZWNv",
+            "bW1lbmRhdGlvbhJWCghtZXJjaGFudBgBIAEoCzI/Lmdvb2dsZS5hZHMuZ29v",
+            "Z2xlYWRzLnYyNS5yZXNvdXJjZXMuUmVjb21tZW5kYXRpb24uTWVyY2hhbnRJ",
+            "bmZvQgPgQQMSFwoKZmVlZF9sYWJlbBgCIAEoCUID4EEDEmsKBnJlYXNvbhgD",
+            "IAEoDjJWLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5lbnVtcy5TaG9wcGlu",
+            "Z0FkZFByb2R1Y3RzVG9DYW1wYWlnblJlY29tbWVuZGF0aW9uRW51bS5SZWFz",
+            "b25CA+BBAxqoAQo1U2hvcHBpbmdNZXJjaGFudENlbnRlckFjY291bnRTdXNw",
+            "ZW5zaW9uUmVjb21tZW5kYXRpb24SVgoIbWVyY2hhbnQYASABKAsyPy5nb29n",
+            "bGUuYWRzLmdvb2dsZWFkcy52MjUucmVzb3VyY2VzLlJlY29tbWVuZGF0aW9u",
+            "Lk1lcmNoYW50SW5mb0ID4EEDEhcKCmZlZWRfbGFiZWwYAiABKAlCA+BBAxq9",
+            "AQpKU2hvcHBpbmdNaWdyYXRlUmVndWxhclNob3BwaW5nQ2FtcGFpZ25PZmZl",
+            "cnNUb1BlcmZvcm1hbmNlTWF4UmVjb21tZW5kYXRpb24SVgoIbWVyY2hhbnQY",
+            "ASABKAsyPy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUucmVzb3VyY2VzLlJl",
+            "Y29tbWVuZGF0aW9uLk1lcmNoYW50SW5mb0ID4EEDEhcKCmZlZWRfbGFiZWwY",
+            "AiABKAlCA+BBAxqbAQoUVGFyZ2V0QWRqdXN0bWVudEluZm8SHAoKc2hhcmVk",
+            "X3NldBgBIAEoCUID4EEDSACIAQESKgodcmVjb21tZW5kZWRfdGFyZ2V0X211",
+            "bHRpcGxpZXIYAiABKAFCA+BBAxIqCh1jdXJyZW50X2F2ZXJhZ2VfdGFyZ2V0",
+            "X21pY3JvcxgDIAEoA0ID4EEDQg0KC19zaGFyZWRfc2V0GoMCChxSYWlzZVRh",
+            "cmdldENwYVJlY29tbWVuZGF0aW9uEmcKEXRhcmdldF9hZGp1c3RtZW50GAEg",
+            "ASgLMkcuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnJlc291cmNlcy5SZWNv",
+            "bW1lbmRhdGlvbi5UYXJnZXRBZGp1c3RtZW50SW5mb0ID4EEDEmUKEGFwcF9i",
+            "aWRkaW5nX2dvYWwYAiABKA4yQS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjUu",
+            "ZW51bXMuQXBwQmlkZGluZ0dvYWxFbnVtLkFwcEJpZGRpbmdHb2FsQgPgQQNI",
+            "AIgBAUITChFfYXBwX2JpZGRpbmdfZ29hbBqIAQodTG93ZXJUYXJnZXRSb2Fz",
+            "UmVjb21tZW5kYXRpb24SZwoRdGFyZ2V0X2FkanVzdG1lbnQYASABKAsyRy5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MjUucmVzb3VyY2VzLlJlY29tbWVuZGF0",
+            "aW9uLlRhcmdldEFkanVzdG1lbnRJbmZvQgPgQQMa4AEKMFJhaXNlVGFyZ2V0",
+            "Q3BhUGVyZm9ybWFuY2VCaWRUb29Mb3dSZWNvbW1lbmRhdGlvbhIvCh1yZWNv",
+            "bW1lbmRlZF90YXJnZXRfbXVsdGlwbGllchgBIAEoAUID4EEDSACIAQESMwoh",
+            "Y3VycmVudF9hdmVyYWdlX3RhcmdldF9jcGFfbWljcm9zGAIgASgDQgPgQQNI",
+            "AYgBAUIgCh5fcmVjb21tZW5kZWRfdGFyZ2V0X211bHRpcGxpZXJCJAoiX2N1",
+            "cnJlbnRfYXZlcmFnZV90YXJnZXRfY3BhX21pY3JvcxrVAQoxTG93ZXJUYXJn",
+            "ZXRSb2FzUGVyZm9ybWFuY2VCaWRUb29Mb3dSZWNvbW1lbmRhdGlvbhIvCh1y",
+            "ZWNvbW1lbmRlZF90YXJnZXRfbXVsdGlwbGllchgBIAEoAUID4EEDSACIAQES",
+            "LQobY3VycmVudF9hdmVyYWdlX3RhcmdldF9yb2FzGAIgASgBQgPgQQNIAYgB",
+            "AUIgCh5fcmVjb21tZW5kZWRfdGFyZ2V0X211bHRpcGxpZXJCHgocX2N1cnJl",
+            "bnRfYXZlcmFnZV90YXJnZXRfcm9hcxoqCihEeW5hbWljSW1hZ2VFeHRlbnNp",
+            "b25PcHRJblJlY29tbWVuZGF0aW9uGn0KDkNhbXBhaWduQnVkZ2V0EiIKFWN1",
+            "cnJlbnRfYW1vdW50X21pY3JvcxgBIAEoA0ID4EEDEioKHXJlY29tbWVuZGVk",
+            "X25ld19hbW91bnRfbWljcm9zGAIgASgDQgPgQQMSGwoObmV3X3N0YXJ0X2Rh",
+            "dGUYAyABKAlCA+BBAxojCiFQZXJmb3JtYW5jZU1heE9wdEluUmVjb21tZW5k",
+            "YXRpb24angEKLUltcHJvdmVQZXJmb3JtYW5jZU1heEFkU3RyZW5ndGhSZWNv",
+            "bW1lbmRhdGlvbhIYCgthc3NldF9ncm91cBgBIAEoCUID4EEDElMKC2FkX3N0",
+            "cmVuZ3RoGAIgASgOMjkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LmVudW1z",
+            "LkFkU3RyZW5ndGhFbnVtLkFkU3RyZW5ndGhCA+BBAxpYCj1NaWdyYXRlRHlu",
+            "YW1pY1NlYXJjaEFkc0NhbXBhaWduVG9QZXJmb3JtYW5jZU1heFJlY29tbWVu",
+            "ZGF0aW9uEhcKCmFwcGx5X2xpbmsYASABKAlCA+BBAxq0AQolRm9yZWNhc3Rp",
+            "bmdTZXRUYXJnZXRDcGFSZWNvbW1lbmRhdGlvbhIqCh1yZWNvbW1lbmRlZF90",
+            "YXJnZXRfY3BhX21pY3JvcxgBIAEoA0ID4EEDEl8KD2NhbXBhaWduX2J1ZGdl",
+            "dBgCIAEoCzJBLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5yZXNvdXJjZXMu",
+            "UmVjb21tZW5kYXRpb24uQ2FtcGFpZ25CdWRnZXRCA+BBAxosCipNYXhpbWl6",
+            "ZUNvbnZlcnNpb25WYWx1ZU9wdEluUmVjb21tZW5kYXRpb24aKAomSW1wcm92",
+            "ZUdvb2dsZVRhZ0NvdmVyYWdlUmVjb21tZW5kYXRpb24aKwopUGVyZm9ybWFu",
+            "Y2VNYXhGaW5hbFVybE9wdEluUmVjb21tZW5kYXRpb24a7AIKJlJlZnJlc2hD",
+            "dXN0b21lck1hdGNoTGlzdFJlY29tbWVuZGF0aW9uEhkKDHVzZXJfbGlzdF9p",
+            "ZBgBIAEoA0ID4EEDEhsKDnVzZXJfbGlzdF9uYW1lGAIgASgJQgPgQQMSJAoX",
+            "ZGF5c19zaW5jZV9sYXN0X3JlZnJlc2gYAyABKANCA+BBAxJhChR0b3Bfc3Bl",
+            "bmRpbmdfYWNjb3VudBgEIAMoCzI+Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
+            "NS5yZXNvdXJjZXMuUmVjb21tZW5kYXRpb24uQWNjb3VudEluZm9CA+BBAxIl",
+            "Chh0YXJnZXRpbmdfYWNjb3VudHNfY291bnQYBSABKANCA+BBAxJaCg1vd25l",
+            "cl9hY2NvdW50GAYgASgLMj4uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI1LnJl",
+            "c291cmNlcy5SZWNvbW1lbmRhdGlvbi5BY2NvdW50SW5mb0ID4EEDGkYKC0Fj",
+            "Y291bnRJbmZvEhgKC2N1c3RvbWVyX2lkGAEgASgDQgPgQQMSHQoQZGVzY3Jp",
+            "cHRpdmVfbmFtZRgCIAEoCUID4EEDGmgKIUN1c3RvbUF1ZGllbmNlT3B0SW5S",
+            "ZWNvbW1lbmRhdGlvbhJDCghrZXl3b3JkcxgBIAMoCzIsLmdvb2dsZS5hZHMu",
+            "Z29vZ2xlYWRzLnYyNS5jb21tb24uS2V5d29yZEluZm9CA+BBAxodChtMZWFk",
+            "Rm9ybUFzc2V0UmVjb21tZW5kYXRpb24avAEKKEltcHJvdmVEZW1hbmRHZW5B",
+            "ZFN0cmVuZ3RoUmVjb21tZW5kYXRpb24SDwoCYWQYASABKAlCA+BBAxJTCgth",
+            "ZF9zdHJlbmd0aBgCIAEoDjI5Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5l",
+            "bnVtcy5BZFN0cmVuZ3RoRW51bS5BZFN0cmVuZ3RoQgPgQQMSKgodZGVtYW5k",
+            "X2dlbl9hc3NldF9hY3Rpb25faXRlbXMYAyADKAlCA+BBAxqpBwolQ2FtcGFp",
+            "Z25TcGVjaWZpY0FwcEdvYWxSZWNvbW1lbmRhdGlvbhIzCiZjYW1wYWlnbl9j",
+            "b3N0X21pY3Jvc19sYXN0X2ZpZnRlZW5fZGF5cxgBIAEoA0ID4EEDEjMKJmNh",
+            "bXBhaWduX2NvbnZlcnNpb25zX2xhc3RfZmlmdGVlbl9kYXlzGAIgASgBQgPg",
+            "QQMSOAorY2FtcGFpZ25fY29udmVyc2lvbl92YWx1ZV9sYXN0X2ZpZnRlZW5f",
+            "ZGF5cxgDIAEoAUID4EEDEjQKJ3Byb2plY3RlZF9jb252ZXJzaW9uc19sYXN0",
+            "X2ZpZnRlZW5fZGF5cxgEIAEoAUID4EEDEjkKLHByb2plY3RlZF9jb252ZXJz",
+            "aW9uX3ZhbHVlX2xhc3RfZmlmdGVlbl9kYXlzGAUgASgBQgPgQQMSegoUYXBw",
+            "X2NvbnZlcnNpb25fZ29hbHMYBiADKA4yVS5nb29nbGUuYWRzLmdvb2dsZWFk",
+            "cy52MjUuZW51bXMuQ29udmVyc2lvbkFjdGlvbkNhdGVnb3J5RW51bS5Db252",
+            "ZXJzaW9uQWN0aW9uQ2F0ZWdvcnlCBRgB4EEDEloKEmN1cnJlbnRfYXV0b19n",
+            "b2FscxgHIAMoCzI3Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5jb21tb24u",
+            "RWZmZWN0aXZlQXV0b21hdGljR29hbEIFGAHgQQMSVAoTY3VycmVudF9jdXN0",
+            "b21fZ29hbBgIIAEoCUI3GAHgQQP6QS8KLWdvb2dsZWFkcy5nb29nbGVhcGlz",
+            "LmNvbS9DdXN0b21Db252ZXJzaW9uR29hbBJ+ChpzdWdnZXN0ZWRfY29udmVy",
+            "c2lvbl9nb2FscxgJIAMoDjJVLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5l",
+            "bnVtcy5Db252ZXJzaW9uQWN0aW9uQ2F0ZWdvcnlFbnVtLkNvbnZlcnNpb25B",
+            "Y3Rpb25DYXRlZ29yeUID4EEDEl4KGGN1cnJlbnRfY29udmVyc2lvbl9nb2Fs",
+            "cxgKIAMoCzI3Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5jb21tb24uRWZm",
+            "ZWN0aXZlQXV0b21hdGljR29hbEID4EEDEl0KHmN1cnJlbnRfY3VzdG9tX2Nv",
+            "bnZlcnNpb25fZ29hbBgLIAEoCUI14EED+kEvCi1nb29nbGVhZHMuZ29vZ2xl",
+            "YXBpcy5jb20vQ3VzdG9tQ29udmVyc2lvbkdvYWw6aepBZgonZ29vZ2xlYWRz",
+            "Lmdvb2dsZWFwaXMuY29tL1JlY29tbWVuZGF0aW9uEjtjdXN0b21lcnMve2N1",
+            "c3RvbWVyX2lkfS9yZWNvbW1lbmRhdGlvbnMve3JlY29tbWVuZGF0aW9uX2lk",
+            "fUIQCg5yZWNvbW1lbmRhdGlvbkISChBfY2FtcGFpZ25fYnVkZ2V0QgsKCV9j",
+            "YW1wYWlnbkILCglfYWRfZ3JvdXBCDAoKX2Rpc21pc3NlZEKFAgomY29tLmdv",
+            "b2dsZS5hZHMuZ29vZ2xlYWRzLnYyNS5yZXNvdXJjZXNCE1JlY29tbWVuZGF0",
+            "aW9uUHJvdG9QAVpLZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xl",
+            "YXBpcy9hZHMvZ29vZ2xlYWRzL3YyNS9yZXNvdXJjZXM7cmVzb3VyY2VzogID",
+            "R0FBqgIiR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjI1LlJlc291cmNlc8oCIkdv",
+            "b2dsZVxBZHNcR29vZ2xlQWRzXFYyNVxSZXNvdXJjZXPqAiZHb29nbGU6OkFk",
+            "czo6R29vZ2xlQWRzOjpWMjU6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V25.Common.CriteriaReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Common.EffectiveAutomaticGoalReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.AdStrengthReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.AppBiddingGoalReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.ConversionActionCategoryReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.KeywordMatchTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.RecommendationTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.ShoppingAddProductsToCampaignRecommendationEnumReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Enums.TargetCpaOptInRecommendationGoalReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Resources.AdReflection.Descriptor, global::Google.Ads.GoogleAds.V25.Resources.AssetReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Resources.Recommendation), global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Parser, new[]{ "ResourceName", "Type", "Impact", "CampaignBudget", "Campaign", "AdGroup", "Dismissed", "Campaigns", "CampaignBudgetRecommendation", "ForecastingCampaignBudgetRecommendation", "KeywordRecommendation", "TextAdRecommendation", "TargetCpaOptInRecommendation", "MaximizeConversionsOptInRecommendation", "EnhancedCpcOptInRecommendation", "SearchPartnersOptInRecommendation", "MaximizeClicksOptInRecommendation", "OptimizeAdRotationRecommendation", "KeywordMatchTypeRecommendation", "MoveUnusedBudgetRecommendation", "TargetRoasOptInRecommendation", "ResponsiveSearchAdRecommendation", "MarginalRoiCampaignBudgetRecommendation", "UseBroadMatchKeywordRecommendation", "ResponsiveSearchAdAssetRecommendation", "UpgradeSmartShoppingCampaignToPerformanceMaxRecommendation", "ResponsiveSearchAdImproveAdStrengthRecommendation", "DisplayExpansionOptInRecommendation", "UpgradeLocalCampaignToPerformanceMaxRecommendation", "RaiseTargetCpaBidTooLowRecommendation", "ForecastingSetTargetRoasRecommendation", "CalloutAssetRecommendation", "SitelinkAssetRecommendation", "CallAssetRecommendation", "ShoppingAddAgeGroupRecommendation", "ShoppingAddColorRecommendation", "ShoppingAddGenderRecommendation", "ShoppingAddGtinRecommendation", "ShoppingAddMoreIdentifiersRecommendation", "ShoppingAddSizeRecommendation", "ShoppingAddProductsToCampaignRecommendation", "ShoppingFixDisapprovedProductsRecommendation", "ShoppingTargetAllOffersRecommendation", "ShoppingFixSuspendedMerchantCenterAccountRecommendation", "ShoppingFixMerchantCenterAccountSuspensionWarningRecommendation", "ShoppingMigrateRegularShoppingCampaignOffersToPerformanceMaxRecommendation", "DynamicImageExtensionOptInRecommendation", "RaiseTargetCpaRecommendation", "LowerTargetRoasRecommendation", "PerformanceMaxOptInRecommendation", "ImprovePerformanceMaxAdStrengthRecommendation", "MigrateDynamicSearchAdsCampaignToPerformanceMaxRecommendation", "ForecastingSetTargetCpaRecommendation", "SetTargetCpaRecommendation", "SetTargetRoasRecommendation", "MaximizeConversionValueOptInRecommendation", "ImproveGoogleTagCoverageRecommendation", "PerformanceMaxFinalUrlOptInRecommendation", "RefreshCustomerMatchListRecommendation", "CustomAudienceOptInRecommendation", "LeadFormAssetRecommendation", "ImproveDemandGenAdStrengthRecommendation", "CampaignSpecificAppGoalRecommendation" }, new[]{ "Recommendation", "CampaignBudget", "Campaign", "AdGroup", "Dismissed" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.MerchantInfo), global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.MerchantInfo.Parser, new[]{ "Id", "Name", "MultiClient" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Resources.Recommendation), global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Parser, new[]{ "ResourceName", "Type", "Impact", "CampaignBudget", "Campaign", "AdGroup", "Dismissed", "Campaigns", "CampaignBudgetRecommendation", "ForecastingCampaignBudgetRecommendation", "KeywordRecommendation", "TextAdRecommendation", "TargetCpaOptInRecommendation", "MaximizeConversionsOptInRecommendation", "EnhancedCpcOptInRecommendation", "SearchPartnersOptInRecommendation", "MaximizeClicksOptInRecommendation", "OptimizeAdRotationRecommendation", "KeywordMatchTypeRecommendation", "MoveUnusedBudgetRecommendation", "TargetRoasOptInRecommendation", "ResponsiveSearchAdRecommendation", "MarginalRoiCampaignBudgetRecommendation", "UseBroadMatchKeywordRecommendation", "ResponsiveSearchAdAssetRecommendation", "UpgradeSmartShoppingCampaignToPerformanceMaxRecommendation", "ResponsiveSearchAdImproveAdStrengthRecommendation", "DisplayExpansionOptInRecommendation", "UpgradeLocalCampaignToPerformanceMaxRecommendation", "RaiseTargetCpaBidTooLowRecommendation", "ForecastingSetTargetRoasRecommendation", "CalloutAssetRecommendation", "SitelinkAssetRecommendation", "CallAssetRecommendation", "ShoppingAddAgeGroupRecommendation", "ShoppingAddColorRecommendation", "ShoppingAddGenderRecommendation", "ShoppingAddGtinRecommendation", "ShoppingAddMoreIdentifiersRecommendation", "ShoppingAddSizeRecommendation", "ShoppingAddProductsToCampaignRecommendation", "ShoppingFixDisapprovedProductsRecommendation", "ShoppingTargetAllOffersRecommendation", "ShoppingFixSuspendedMerchantCenterAccountRecommendation", "ShoppingFixMerchantCenterAccountSuspensionWarningRecommendation", "ShoppingMigrateRegularShoppingCampaignOffersToPerformanceMaxRecommendation", "DynamicImageExtensionOptInRecommendation", "RaiseTargetCpaRecommendation", "LowerTargetRoasRecommendation", "PerformanceMaxOptInRecommendation", "ImprovePerformanceMaxAdStrengthRecommendation", "MigrateDynamicSearchAdsCampaignToPerformanceMaxRecommendation", "ForecastingSetTargetCpaRecommendation", "SetTargetCpaRecommendation", "SetTargetRoasRecommendation", "MaximizeConversionValueOptInRecommendation", "ImproveGoogleTagCoverageRecommendation", "PerformanceMaxFinalUrlOptInRecommendation", "RefreshCustomerMatchListRecommendation", "CustomAudienceOptInRecommendation", "LeadFormAssetRecommendation", "ImproveDemandGenAdStrengthRecommendation", "CampaignSpecificAppGoalRecommendation", "RaiseTargetCpaPerformanceBidTooLowRecommendation", "LowerTargetRoasPerformanceBidTooLowRecommendation" }, new[]{ "Recommendation", "CampaignBudget", "Campaign", "AdGroup", "Dismissed" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.MerchantInfo), global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.MerchantInfo.Parser, new[]{ "Id", "Name", "MultiClient" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.RecommendationImpact), global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.RecommendationImpact.Parser, new[]{ "BaseMetrics", "PotentialMetrics" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.RecommendationMetrics), global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.RecommendationMetrics.Parser, new[]{ "Impressions", "Clicks", "CostMicros", "Conversions", "ConversionsValue", "VideoViews" }, new[]{ "Impressions", "Clicks", "CostMicros", "Conversions", "ConversionsValue", "VideoViews" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.CampaignBudgetRecommendation), global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.CampaignBudgetRecommendation.Parser, new[]{ "CurrentBudgetAmountMicros", "RecommendedBudgetAmountMicros", "BudgetOptions" }, new[]{ "CurrentBudgetAmountMicros", "RecommendedBudgetAmountMicros" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.CampaignBudgetRecommendation.Types.CampaignBudgetRecommendationOption), global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.CampaignBudgetRecommendation.Types.CampaignBudgetRecommendationOption.Parser, new[]{ "BudgetAmountMicros", "Impact" }, new[]{ "BudgetAmountMicros" }, null, null, null)}),
@@ -497,6 +514,8 @@ namespace Google.Ads.GoogleAds.V25.Resources {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.TargetAdjustmentInfo), global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.TargetAdjustmentInfo.Parser, new[]{ "SharedSet", "RecommendedTargetMultiplier", "CurrentAverageTargetMicros" }, new[]{ "SharedSet" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.RaiseTargetCpaRecommendation), global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.RaiseTargetCpaRecommendation.Parser, new[]{ "TargetAdjustment", "AppBiddingGoal" }, new[]{ "AppBiddingGoal" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.LowerTargetRoasRecommendation), global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.LowerTargetRoasRecommendation.Parser, new[]{ "TargetAdjustment" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.RaiseTargetCpaPerformanceBidTooLowRecommendation), global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.RaiseTargetCpaPerformanceBidTooLowRecommendation.Parser, new[]{ "RecommendedTargetMultiplier", "CurrentAverageTargetCpaMicros" }, new[]{ "RecommendedTargetMultiplier", "CurrentAverageTargetCpaMicros" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.LowerTargetRoasPerformanceBidTooLowRecommendation), global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.LowerTargetRoasPerformanceBidTooLowRecommendation.Parser, new[]{ "RecommendedTargetMultiplier", "CurrentAverageTargetRoas" }, new[]{ "RecommendedTargetMultiplier", "CurrentAverageTargetRoas" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.DynamicImageExtensionOptInRecommendation), global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.DynamicImageExtensionOptInRecommendation.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.CampaignBudget), global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.CampaignBudget.Parser, new[]{ "CurrentAmountMicros", "RecommendedNewAmountMicros", "NewStartDate" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.PerformanceMaxOptInRecommendation), global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.PerformanceMaxOptInRecommendation.Parser, null, null, null, null, null),
@@ -731,6 +750,12 @@ namespace Google.Ads.GoogleAds.V25.Resources {
           break;
         case RecommendationOneofCase.CampaignSpecificAppGoalRecommendation:
           CampaignSpecificAppGoalRecommendation = other.CampaignSpecificAppGoalRecommendation.Clone();
+          break;
+        case RecommendationOneofCase.RaiseTargetCpaPerformanceBidTooLowRecommendation:
+          RaiseTargetCpaPerformanceBidTooLowRecommendation = other.RaiseTargetCpaPerformanceBidTooLowRecommendation.Clone();
+          break;
+        case RecommendationOneofCase.LowerTargetRoasPerformanceBidTooLowRecommendation:
+          LowerTargetRoasPerformanceBidTooLowRecommendation = other.LowerTargetRoasPerformanceBidTooLowRecommendation.Clone();
           break;
       }
 
@@ -1790,6 +1815,38 @@ namespace Google.Ads.GoogleAds.V25.Resources {
       }
     }
 
+    /// <summary>Field number for the "raise_target_cpa_performance_bid_too_low_recommendation" field.</summary>
+    public const int RaiseTargetCpaPerformanceBidTooLowRecommendationFieldNumber = 72;
+    /// <summary>
+    /// Output only. The raise Target CPA for Performance Bid Too Low
+    /// recommendation.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.RaiseTargetCpaPerformanceBidTooLowRecommendation RaiseTargetCpaPerformanceBidTooLowRecommendation {
+      get { return recommendationCase_ == RecommendationOneofCase.RaiseTargetCpaPerformanceBidTooLowRecommendation ? (global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.RaiseTargetCpaPerformanceBidTooLowRecommendation) recommendation_ : null; }
+      set {
+        recommendation_ = value;
+        recommendationCase_ = value == null ? RecommendationOneofCase.None : RecommendationOneofCase.RaiseTargetCpaPerformanceBidTooLowRecommendation;
+      }
+    }
+
+    /// <summary>Field number for the "lower_target_roas_performance_bid_too_low_recommendation" field.</summary>
+    public const int LowerTargetRoasPerformanceBidTooLowRecommendationFieldNumber = 73;
+    /// <summary>
+    /// Output only. The lower Target ROAS for Performance Bid Too Low
+    /// recommendation.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.LowerTargetRoasPerformanceBidTooLowRecommendation LowerTargetRoasPerformanceBidTooLowRecommendation {
+      get { return recommendationCase_ == RecommendationOneofCase.LowerTargetRoasPerformanceBidTooLowRecommendation ? (global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.LowerTargetRoasPerformanceBidTooLowRecommendation) recommendation_ : null; }
+      set {
+        recommendation_ = value;
+        recommendationCase_ = value == null ? RecommendationOneofCase.None : RecommendationOneofCase.LowerTargetRoasPerformanceBidTooLowRecommendation;
+      }
+    }
+
     private object recommendation_;
     /// <summary>Enum of possible cases for the "recommendation" oneof.</summary>
     public enum RecommendationOneofCase {
@@ -1849,6 +1906,8 @@ namespace Google.Ads.GoogleAds.V25.Resources {
       LeadFormAssetRecommendation = 68,
       ImproveDemandGenAdStrengthRecommendation = 69,
       CampaignSpecificAppGoalRecommendation = 70,
+      RaiseTargetCpaPerformanceBidTooLowRecommendation = 72,
+      LowerTargetRoasPerformanceBidTooLowRecommendation = 73,
     }
     private RecommendationOneofCase recommendationCase_ = RecommendationOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1942,6 +2001,8 @@ namespace Google.Ads.GoogleAds.V25.Resources {
       if (!object.Equals(LeadFormAssetRecommendation, other.LeadFormAssetRecommendation)) return false;
       if (!object.Equals(ImproveDemandGenAdStrengthRecommendation, other.ImproveDemandGenAdStrengthRecommendation)) return false;
       if (!object.Equals(CampaignSpecificAppGoalRecommendation, other.CampaignSpecificAppGoalRecommendation)) return false;
+      if (!object.Equals(RaiseTargetCpaPerformanceBidTooLowRecommendation, other.RaiseTargetCpaPerformanceBidTooLowRecommendation)) return false;
+      if (!object.Equals(LowerTargetRoasPerformanceBidTooLowRecommendation, other.LowerTargetRoasPerformanceBidTooLowRecommendation)) return false;
       if (RecommendationCase != other.RecommendationCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -2013,6 +2074,8 @@ namespace Google.Ads.GoogleAds.V25.Resources {
       if (recommendationCase_ == RecommendationOneofCase.LeadFormAssetRecommendation) hash ^= LeadFormAssetRecommendation.GetHashCode();
       if (recommendationCase_ == RecommendationOneofCase.ImproveDemandGenAdStrengthRecommendation) hash ^= ImproveDemandGenAdStrengthRecommendation.GetHashCode();
       if (recommendationCase_ == RecommendationOneofCase.CampaignSpecificAppGoalRecommendation) hash ^= CampaignSpecificAppGoalRecommendation.GetHashCode();
+      if (recommendationCase_ == RecommendationOneofCase.RaiseTargetCpaPerformanceBidTooLowRecommendation) hash ^= RaiseTargetCpaPerformanceBidTooLowRecommendation.GetHashCode();
+      if (recommendationCase_ == RecommendationOneofCase.LowerTargetRoasPerformanceBidTooLowRecommendation) hash ^= LowerTargetRoasPerformanceBidTooLowRecommendation.GetHashCode();
       hash ^= (int) recommendationCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -2281,6 +2344,14 @@ namespace Google.Ads.GoogleAds.V25.Resources {
         output.WriteRawTag(178, 4);
         output.WriteMessage(CampaignSpecificAppGoalRecommendation);
       }
+      if (recommendationCase_ == RecommendationOneofCase.RaiseTargetCpaPerformanceBidTooLowRecommendation) {
+        output.WriteRawTag(194, 4);
+        output.WriteMessage(RaiseTargetCpaPerformanceBidTooLowRecommendation);
+      }
+      if (recommendationCase_ == RecommendationOneofCase.LowerTargetRoasPerformanceBidTooLowRecommendation) {
+        output.WriteRawTag(202, 4);
+        output.WriteMessage(LowerTargetRoasPerformanceBidTooLowRecommendation);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2540,6 +2611,14 @@ namespace Google.Ads.GoogleAds.V25.Resources {
         output.WriteRawTag(178, 4);
         output.WriteMessage(CampaignSpecificAppGoalRecommendation);
       }
+      if (recommendationCase_ == RecommendationOneofCase.RaiseTargetCpaPerformanceBidTooLowRecommendation) {
+        output.WriteRawTag(194, 4);
+        output.WriteMessage(RaiseTargetCpaPerformanceBidTooLowRecommendation);
+      }
+      if (recommendationCase_ == RecommendationOneofCase.LowerTargetRoasPerformanceBidTooLowRecommendation) {
+        output.WriteRawTag(202, 4);
+        output.WriteMessage(LowerTargetRoasPerformanceBidTooLowRecommendation);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2736,6 +2815,12 @@ namespace Google.Ads.GoogleAds.V25.Resources {
       }
       if (recommendationCase_ == RecommendationOneofCase.CampaignSpecificAppGoalRecommendation) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(CampaignSpecificAppGoalRecommendation);
+      }
+      if (recommendationCase_ == RecommendationOneofCase.RaiseTargetCpaPerformanceBidTooLowRecommendation) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(RaiseTargetCpaPerformanceBidTooLowRecommendation);
+      }
+      if (recommendationCase_ == RecommendationOneofCase.LowerTargetRoasPerformanceBidTooLowRecommendation) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(LowerTargetRoasPerformanceBidTooLowRecommendation);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3104,6 +3189,18 @@ namespace Google.Ads.GoogleAds.V25.Resources {
             CampaignSpecificAppGoalRecommendation = new global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.CampaignSpecificAppGoalRecommendation();
           }
           CampaignSpecificAppGoalRecommendation.MergeFrom(other.CampaignSpecificAppGoalRecommendation);
+          break;
+        case RecommendationOneofCase.RaiseTargetCpaPerformanceBidTooLowRecommendation:
+          if (RaiseTargetCpaPerformanceBidTooLowRecommendation == null) {
+            RaiseTargetCpaPerformanceBidTooLowRecommendation = new global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.RaiseTargetCpaPerformanceBidTooLowRecommendation();
+          }
+          RaiseTargetCpaPerformanceBidTooLowRecommendation.MergeFrom(other.RaiseTargetCpaPerformanceBidTooLowRecommendation);
+          break;
+        case RecommendationOneofCase.LowerTargetRoasPerformanceBidTooLowRecommendation:
+          if (LowerTargetRoasPerformanceBidTooLowRecommendation == null) {
+            LowerTargetRoasPerformanceBidTooLowRecommendation = new global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.LowerTargetRoasPerformanceBidTooLowRecommendation();
+          }
+          LowerTargetRoasPerformanceBidTooLowRecommendation.MergeFrom(other.LowerTargetRoasPerformanceBidTooLowRecommendation);
           break;
       }
 
@@ -3656,6 +3753,24 @@ namespace Google.Ads.GoogleAds.V25.Resources {
             CampaignSpecificAppGoalRecommendation = subBuilder;
             break;
           }
+          case 578: {
+            global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.RaiseTargetCpaPerformanceBidTooLowRecommendation subBuilder = new global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.RaiseTargetCpaPerformanceBidTooLowRecommendation();
+            if (recommendationCase_ == RecommendationOneofCase.RaiseTargetCpaPerformanceBidTooLowRecommendation) {
+              subBuilder.MergeFrom(RaiseTargetCpaPerformanceBidTooLowRecommendation);
+            }
+            input.ReadMessage(subBuilder);
+            RaiseTargetCpaPerformanceBidTooLowRecommendation = subBuilder;
+            break;
+          }
+          case 586: {
+            global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.LowerTargetRoasPerformanceBidTooLowRecommendation subBuilder = new global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.LowerTargetRoasPerformanceBidTooLowRecommendation();
+            if (recommendationCase_ == RecommendationOneofCase.LowerTargetRoasPerformanceBidTooLowRecommendation) {
+              subBuilder.MergeFrom(LowerTargetRoasPerformanceBidTooLowRecommendation);
+            }
+            input.ReadMessage(subBuilder);
+            LowerTargetRoasPerformanceBidTooLowRecommendation = subBuilder;
+            break;
+          }
         }
       }
     #endif
@@ -4203,6 +4318,24 @@ namespace Google.Ads.GoogleAds.V25.Resources {
             }
             input.ReadMessage(subBuilder);
             CampaignSpecificAppGoalRecommendation = subBuilder;
+            break;
+          }
+          case 578: {
+            global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.RaiseTargetCpaPerformanceBidTooLowRecommendation subBuilder = new global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.RaiseTargetCpaPerformanceBidTooLowRecommendation();
+            if (recommendationCase_ == RecommendationOneofCase.RaiseTargetCpaPerformanceBidTooLowRecommendation) {
+              subBuilder.MergeFrom(RaiseTargetCpaPerformanceBidTooLowRecommendation);
+            }
+            input.ReadMessage(subBuilder);
+            RaiseTargetCpaPerformanceBidTooLowRecommendation = subBuilder;
+            break;
+          }
+          case 586: {
+            global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.LowerTargetRoasPerformanceBidTooLowRecommendation subBuilder = new global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Types.LowerTargetRoasPerformanceBidTooLowRecommendation();
+            if (recommendationCase_ == RecommendationOneofCase.LowerTargetRoasPerformanceBidTooLowRecommendation) {
+              subBuilder.MergeFrom(LowerTargetRoasPerformanceBidTooLowRecommendation);
+            }
+            input.ReadMessage(subBuilder);
+            LowerTargetRoasPerformanceBidTooLowRecommendation = subBuilder;
             break;
           }
         }
@@ -14450,6 +14583,563 @@ namespace Google.Ads.GoogleAds.V25.Resources {
       }
 
       /// <summary>
+      /// Recommendation to raise Target CPA when it is too low for Search
+      /// campaigns.
+      /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+      public sealed partial class RaiseTargetCpaPerformanceBidTooLowRecommendation : pb::IMessage<RaiseTargetCpaPerformanceBidTooLowRecommendation>
+      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          , pb::IBufferMessage
+      #endif
+      {
+        private static readonly pb::MessageParser<RaiseTargetCpaPerformanceBidTooLowRecommendation> _parser = new pb::MessageParser<RaiseTargetCpaPerformanceBidTooLowRecommendation>(() => new RaiseTargetCpaPerformanceBidTooLowRecommendation());
+        private pb::UnknownFieldSet _unknownFields;
+        private int _hasBits0;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public static pb::MessageParser<RaiseTargetCpaPerformanceBidTooLowRecommendation> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[36]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public RaiseTargetCpaPerformanceBidTooLowRecommendation() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public RaiseTargetCpaPerformanceBidTooLowRecommendation(RaiseTargetCpaPerformanceBidTooLowRecommendation other) : this() {
+          _hasBits0 = other._hasBits0;
+          recommendedTargetMultiplier_ = other.recommendedTargetMultiplier_;
+          currentAverageTargetCpaMicros_ = other.currentAverageTargetCpaMicros_;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public RaiseTargetCpaPerformanceBidTooLowRecommendation Clone() {
+          return new RaiseTargetCpaPerformanceBidTooLowRecommendation(this);
+        }
+
+        /// <summary>Field number for the "recommended_target_multiplier" field.</summary>
+        public const int RecommendedTargetMultiplierFieldNumber = 1;
+        private readonly static double RecommendedTargetMultiplierDefaultValue = 0D;
+
+        private double recommendedTargetMultiplier_;
+        /// <summary>
+        /// Output only. A number greater than 1.0 indicating the factor by which we
+        /// recommend the target CPA should be increased.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public double RecommendedTargetMultiplier {
+          get { if ((_hasBits0 & 1) != 0) { return recommendedTargetMultiplier_; } else { return RecommendedTargetMultiplierDefaultValue; } }
+          set {
+            _hasBits0 |= 1;
+            recommendedTargetMultiplier_ = value;
+          }
+        }
+        /// <summary>Gets whether the "recommended_target_multiplier" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasRecommendedTargetMultiplier {
+          get { return (_hasBits0 & 1) != 0; }
+        }
+        /// <summary>Clears the value of the "recommended_target_multiplier" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearRecommendedTargetMultiplier() {
+          _hasBits0 &= ~1;
+        }
+
+        /// <summary>Field number for the "current_average_target_cpa_micros" field.</summary>
+        public const int CurrentAverageTargetCpaMicrosFieldNumber = 2;
+        private readonly static long CurrentAverageTargetCpaMicrosDefaultValue = 0L;
+
+        private long currentAverageTargetCpaMicros_;
+        /// <summary>
+        /// Output only. The current average target CPA of the campaign, in micros of
+        /// customer local currency.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public long CurrentAverageTargetCpaMicros {
+          get { if ((_hasBits0 & 2) != 0) { return currentAverageTargetCpaMicros_; } else { return CurrentAverageTargetCpaMicrosDefaultValue; } }
+          set {
+            _hasBits0 |= 2;
+            currentAverageTargetCpaMicros_ = value;
+          }
+        }
+        /// <summary>Gets whether the "current_average_target_cpa_micros" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasCurrentAverageTargetCpaMicros {
+          get { return (_hasBits0 & 2) != 0; }
+        }
+        /// <summary>Clears the value of the "current_average_target_cpa_micros" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearCurrentAverageTargetCpaMicros() {
+          _hasBits0 &= ~2;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override bool Equals(object other) {
+          return Equals(other as RaiseTargetCpaPerformanceBidTooLowRecommendation);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool Equals(RaiseTargetCpaPerformanceBidTooLowRecommendation other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(RecommendedTargetMultiplier, other.RecommendedTargetMultiplier)) return false;
+          if (CurrentAverageTargetCpaMicros != other.CurrentAverageTargetCpaMicros) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (HasRecommendedTargetMultiplier) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(RecommendedTargetMultiplier);
+          if (HasCurrentAverageTargetCpaMicros) hash ^= CurrentAverageTargetCpaMicros.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void WriteTo(pb::CodedOutputStream output) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          output.WriteRawMessage(this);
+        #else
+          if (HasRecommendedTargetMultiplier) {
+            output.WriteRawTag(9);
+            output.WriteDouble(RecommendedTargetMultiplier);
+          }
+          if (HasCurrentAverageTargetCpaMicros) {
+            output.WriteRawTag(16);
+            output.WriteInt64(CurrentAverageTargetCpaMicros);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+          if (HasRecommendedTargetMultiplier) {
+            output.WriteRawTag(9);
+            output.WriteDouble(RecommendedTargetMultiplier);
+          }
+          if (HasCurrentAverageTargetCpaMicros) {
+            output.WriteRawTag(16);
+            output.WriteInt64(CurrentAverageTargetCpaMicros);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(ref output);
+          }
+        }
+        #endif
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public int CalculateSize() {
+          int size = 0;
+          if (HasRecommendedTargetMultiplier) {
+            size += 1 + 8;
+          }
+          if (HasCurrentAverageTargetCpaMicros) {
+            size += 1 + pb::CodedOutputStream.ComputeInt64Size(CurrentAverageTargetCpaMicros);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void MergeFrom(RaiseTargetCpaPerformanceBidTooLowRecommendation other) {
+          if (other == null) {
+            return;
+          }
+          if (other.HasRecommendedTargetMultiplier) {
+            RecommendedTargetMultiplier = other.RecommendedTargetMultiplier;
+          }
+          if (other.HasCurrentAverageTargetCpaMicros) {
+            CurrentAverageTargetCpaMicros = other.CurrentAverageTargetCpaMicros;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void MergeFrom(pb::CodedInputStream input) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          input.ReadRawMessage(this);
+        #else
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 9: {
+                RecommendedTargetMultiplier = input.ReadDouble();
+                break;
+              }
+              case 16: {
+                CurrentAverageTargetCpaMicros = input.ReadInt64();
+                break;
+              }
+            }
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                break;
+              case 9: {
+                RecommendedTargetMultiplier = input.ReadDouble();
+                break;
+              }
+              case 16: {
+                CurrentAverageTargetCpaMicros = input.ReadInt64();
+                break;
+              }
+            }
+          }
+        }
+        #endif
+
+      }
+
+      /// <summary>
+      /// Recommendation to lower Target ROAS when it is too low for Search
+      /// campaigns.
+      /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+      public sealed partial class LowerTargetRoasPerformanceBidTooLowRecommendation : pb::IMessage<LowerTargetRoasPerformanceBidTooLowRecommendation>
+      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          , pb::IBufferMessage
+      #endif
+      {
+        private static readonly pb::MessageParser<LowerTargetRoasPerformanceBidTooLowRecommendation> _parser = new pb::MessageParser<LowerTargetRoasPerformanceBidTooLowRecommendation>(() => new LowerTargetRoasPerformanceBidTooLowRecommendation());
+        private pb::UnknownFieldSet _unknownFields;
+        private int _hasBits0;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public static pb::MessageParser<LowerTargetRoasPerformanceBidTooLowRecommendation> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[37]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public LowerTargetRoasPerformanceBidTooLowRecommendation() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public LowerTargetRoasPerformanceBidTooLowRecommendation(LowerTargetRoasPerformanceBidTooLowRecommendation other) : this() {
+          _hasBits0 = other._hasBits0;
+          recommendedTargetMultiplier_ = other.recommendedTargetMultiplier_;
+          currentAverageTargetRoas_ = other.currentAverageTargetRoas_;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public LowerTargetRoasPerformanceBidTooLowRecommendation Clone() {
+          return new LowerTargetRoasPerformanceBidTooLowRecommendation(this);
+        }
+
+        /// <summary>Field number for the "recommended_target_multiplier" field.</summary>
+        public const int RecommendedTargetMultiplierFieldNumber = 1;
+        private readonly static double RecommendedTargetMultiplierDefaultValue = 0D;
+
+        private double recommendedTargetMultiplier_;
+        /// <summary>
+        /// Output only. A number less than 1.0 indicating the factor by which we
+        /// recommend the target ROAS should be decreased.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public double RecommendedTargetMultiplier {
+          get { if ((_hasBits0 & 1) != 0) { return recommendedTargetMultiplier_; } else { return RecommendedTargetMultiplierDefaultValue; } }
+          set {
+            _hasBits0 |= 1;
+            recommendedTargetMultiplier_ = value;
+          }
+        }
+        /// <summary>Gets whether the "recommended_target_multiplier" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasRecommendedTargetMultiplier {
+          get { return (_hasBits0 & 1) != 0; }
+        }
+        /// <summary>Clears the value of the "recommended_target_multiplier" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearRecommendedTargetMultiplier() {
+          _hasBits0 &= ~1;
+        }
+
+        /// <summary>Field number for the "current_average_target_roas" field.</summary>
+        public const int CurrentAverageTargetRoasFieldNumber = 2;
+        private readonly static double CurrentAverageTargetRoasDefaultValue = 0D;
+
+        private double currentAverageTargetRoas_;
+        /// <summary>
+        /// Output only. The current average target ROAS of the campaign.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public double CurrentAverageTargetRoas {
+          get { if ((_hasBits0 & 2) != 0) { return currentAverageTargetRoas_; } else { return CurrentAverageTargetRoasDefaultValue; } }
+          set {
+            _hasBits0 |= 2;
+            currentAverageTargetRoas_ = value;
+          }
+        }
+        /// <summary>Gets whether the "current_average_target_roas" field is set</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool HasCurrentAverageTargetRoas {
+          get { return (_hasBits0 & 2) != 0; }
+        }
+        /// <summary>Clears the value of the "current_average_target_roas" field</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearCurrentAverageTargetRoas() {
+          _hasBits0 &= ~2;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override bool Equals(object other) {
+          return Equals(other as LowerTargetRoasPerformanceBidTooLowRecommendation);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool Equals(LowerTargetRoasPerformanceBidTooLowRecommendation other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(RecommendedTargetMultiplier, other.RecommendedTargetMultiplier)) return false;
+          if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(CurrentAverageTargetRoas, other.CurrentAverageTargetRoas)) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (HasRecommendedTargetMultiplier) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(RecommendedTargetMultiplier);
+          if (HasCurrentAverageTargetRoas) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(CurrentAverageTargetRoas);
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void WriteTo(pb::CodedOutputStream output) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          output.WriteRawMessage(this);
+        #else
+          if (HasRecommendedTargetMultiplier) {
+            output.WriteRawTag(9);
+            output.WriteDouble(RecommendedTargetMultiplier);
+          }
+          if (HasCurrentAverageTargetRoas) {
+            output.WriteRawTag(17);
+            output.WriteDouble(CurrentAverageTargetRoas);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+          if (HasRecommendedTargetMultiplier) {
+            output.WriteRawTag(9);
+            output.WriteDouble(RecommendedTargetMultiplier);
+          }
+          if (HasCurrentAverageTargetRoas) {
+            output.WriteRawTag(17);
+            output.WriteDouble(CurrentAverageTargetRoas);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(ref output);
+          }
+        }
+        #endif
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public int CalculateSize() {
+          int size = 0;
+          if (HasRecommendedTargetMultiplier) {
+            size += 1 + 8;
+          }
+          if (HasCurrentAverageTargetRoas) {
+            size += 1 + 8;
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void MergeFrom(LowerTargetRoasPerformanceBidTooLowRecommendation other) {
+          if (other == null) {
+            return;
+          }
+          if (other.HasRecommendedTargetMultiplier) {
+            RecommendedTargetMultiplier = other.RecommendedTargetMultiplier;
+          }
+          if (other.HasCurrentAverageTargetRoas) {
+            CurrentAverageTargetRoas = other.CurrentAverageTargetRoas;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void MergeFrom(pb::CodedInputStream input) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          input.ReadRawMessage(this);
+        #else
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 9: {
+                RecommendedTargetMultiplier = input.ReadDouble();
+                break;
+              }
+              case 17: {
+                CurrentAverageTargetRoas = input.ReadDouble();
+                break;
+              }
+            }
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                break;
+              case 9: {
+                RecommendedTargetMultiplier = input.ReadDouble();
+                break;
+              }
+              case 17: {
+                CurrentAverageTargetRoas = input.ReadDouble();
+                break;
+              }
+            }
+          }
+        }
+        #endif
+
+      }
+
+      /// <summary>
       /// Recommendation to enable dynamic image extensions on the account,
       /// allowing Google to find the best images from ad landing pages and
       /// complement text ads.
@@ -14469,7 +15159,7 @@ namespace Google.Ads.GoogleAds.V25.Resources {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[36]; }
+          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[38]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -14633,7 +15323,7 @@ namespace Google.Ads.GoogleAds.V25.Resources {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[37]; }
+          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[39]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -14920,7 +15610,7 @@ namespace Google.Ads.GoogleAds.V25.Resources {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[38]; }
+          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[40]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15085,7 +15775,7 @@ namespace Google.Ads.GoogleAds.V25.Resources {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[39]; }
+          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[41]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15329,7 +16019,7 @@ namespace Google.Ads.GoogleAds.V25.Resources {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[40]; }
+          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[42]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15534,7 +16224,7 @@ namespace Google.Ads.GoogleAds.V25.Resources {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[41]; }
+          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[43]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15787,7 +16477,7 @@ namespace Google.Ads.GoogleAds.V25.Resources {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[42]; }
+          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[44]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15951,7 +16641,7 @@ namespace Google.Ads.GoogleAds.V25.Resources {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[43]; }
+          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[45]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -16116,7 +16806,7 @@ namespace Google.Ads.GoogleAds.V25.Resources {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[44]; }
+          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[46]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -16283,7 +16973,7 @@ namespace Google.Ads.GoogleAds.V25.Resources {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[45]; }
+          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[47]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -16688,7 +17378,7 @@ namespace Google.Ads.GoogleAds.V25.Resources {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[46]; }
+          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[48]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -16932,7 +17622,7 @@ namespace Google.Ads.GoogleAds.V25.Resources {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[47]; }
+          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[49]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -17125,7 +17815,7 @@ namespace Google.Ads.GoogleAds.V25.Resources {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[48]; }
+          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[50]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -17289,7 +17979,7 @@ namespace Google.Ads.GoogleAds.V25.Resources {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[49]; }
+          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[51]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -17564,7 +18254,7 @@ namespace Google.Ads.GoogleAds.V25.Resources {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[50]; }
+          get { return global::Google.Ads.GoogleAds.V25.Resources.Recommendation.Descriptor.NestedTypes[52]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

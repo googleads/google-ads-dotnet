@@ -315,6 +315,7 @@ namespace Google.Ads.GoogleAds.V25.Errors {
         /// </summary>
         [pbr::OriginalName("INVALID_ENUM_VALUE")] InvalidEnumValue = 18,
         /// <summary>
+        /// Deprecated: Developer tokens have been sunset.
         /// The developer-token parameter is required for all requests.
         /// </summary>
         [pbr::OriginalName("DEVELOPER_TOKEN_PARAMETER_MISSING")] DeveloperTokenParameterMissing = 19,

@@ -589,7 +589,8 @@ namespace Google.Ads.GoogleAds.V25.Services
             MutateAdGroupAdsAsync(customerId, operations, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
-        /// Remove automatically created assets from an ad.
+        /// Remove text customization (formerly automatically created assets) from an
+        /// ad.
         /// 
         /// List of thrown errors:
         /// [AdError]()
@@ -609,7 +610,8 @@ namespace Google.Ads.GoogleAds.V25.Services
             throw new sys::NotImplementedException();
 
         /// <summary>
-        /// Remove automatically created assets from an ad.
+        /// Remove text customization (formerly automatically created assets) from an
+        /// ad.
         /// 
         /// List of thrown errors:
         /// [AdError]()
@@ -629,7 +631,8 @@ namespace Google.Ads.GoogleAds.V25.Services
             throw new sys::NotImplementedException();
 
         /// <summary>
-        /// Remove automatically created assets from an ad.
+        /// Remove text customization (formerly automatically created assets) from an
+        /// ad.
         /// 
         /// List of thrown errors:
         /// [AdError]()
@@ -649,7 +652,8 @@ namespace Google.Ads.GoogleAds.V25.Services
             RemoveAutomaticallyCreatedAssetsAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
-        /// Remove automatically created assets from an ad.
+        /// Remove text customization (formerly automatically created assets) from an
+        /// ad.
         /// 
         /// List of thrown errors:
         /// [AdError]()
@@ -682,7 +686,8 @@ namespace Google.Ads.GoogleAds.V25.Services
             }, callSettings);
 
         /// <summary>
-        /// Remove automatically created assets from an ad.
+        /// Remove text customization (formerly automatically created assets) from an
+        /// ad.
         /// 
         /// List of thrown errors:
         /// [AdError]()
@@ -715,7 +720,8 @@ namespace Google.Ads.GoogleAds.V25.Services
             }, callSettings);
 
         /// <summary>
-        /// Remove automatically created assets from an ad.
+        /// Remove text customization (formerly automatically created assets) from an
+        /// ad.
         /// 
         /// List of thrown errors:
         /// [AdError]()
@@ -741,7 +747,8 @@ namespace Google.Ads.GoogleAds.V25.Services
             RemoveAutomaticallyCreatedAssetsAsync(adGroupAd, assetsWithFieldType, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
-        /// Remove automatically created assets from an ad.
+        /// Remove text customization (formerly automatically created assets) from an
+        /// ad.
         /// 
         /// List of thrown errors:
         /// [AdError]()
@@ -774,7 +781,8 @@ namespace Google.Ads.GoogleAds.V25.Services
             }, callSettings);
 
         /// <summary>
-        /// Remove automatically created assets from an ad.
+        /// Remove text customization (formerly automatically created assets) from an
+        /// ad.
         /// 
         /// List of thrown errors:
         /// [AdError]()
@@ -807,7 +815,8 @@ namespace Google.Ads.GoogleAds.V25.Services
             }, callSettings);
 
         /// <summary>
-        /// Remove automatically created assets from an ad.
+        /// Remove text customization (formerly automatically created assets) from an
+        /// ad.
         /// 
         /// List of thrown errors:
         /// [AdError]()
@@ -997,7 +1006,8 @@ namespace Google.Ads.GoogleAds.V25.Services
         }
 
         /// <summary>
-        /// Remove automatically created assets from an ad.
+        /// Remove text customization (formerly automatically created assets) from an
+        /// ad.
         /// 
         /// List of thrown errors:
         /// [AdError]()
@@ -1020,7 +1030,8 @@ namespace Google.Ads.GoogleAds.V25.Services
         }
 
         /// <summary>
-        /// Remove automatically created assets from an ad.
+        /// Remove text customization (formerly automatically created assets) from an
+        /// ad.
         /// 
         /// List of thrown errors:
         /// [AdError]()

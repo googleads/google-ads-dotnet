@@ -44,4 +44,17 @@ namespace Google.Ads.GoogleAds.V25.Services
             set => ResourceName = value?.ToString() ?? "";
         }
     }
+
+    public partial class GeneratePMaxDraftCampaignRequest
+    {
+        /// <summary>
+        /// <see cref="gagvr::SmartCampaignSettingName"/>-typed view over the <see cref="ResourceName"/> resource name
+        /// property.
+        /// </summary>
+        internal gagvr::SmartCampaignSettingName ResourceNameAsSmartCampaignSettingName
+        {
+            get => string.IsNullOrEmpty(ResourceName) ? null : gagvr::SmartCampaignSettingName.Parse(ResourceName, allowUnparsed: true);
+            set => ResourceName = value?.ToString() ?? "";
+        }
+    }
 }

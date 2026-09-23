@@ -49,6 +49,7 @@ namespace Google.Ads.GoogleAds.V25.Services
             gax::GaxPreconditions.CheckNotNull(existing, nameof(existing));
             GetSmartCampaignStatusSettings = existing.GetSmartCampaignStatusSettings;
             MutateSmartCampaignSettingsSettings = existing.MutateSmartCampaignSettingsSettings;
+            GeneratePMaxDraftCampaignSettings = existing.GeneratePMaxDraftCampaignSettings;
             OnCopy(existing);
         }
 
@@ -97,6 +98,28 @@ namespace Google.Ads.GoogleAds.V25.Services
         /// </list>
         /// </remarks>
         public gaxgrpc::CallSettings MutateSmartCampaignSettingsSettings { get; set; } = gaxgrpc::CallSettingsExtensions.WithRetry(gaxgrpc::CallSettings.FromExpiration(gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(14400000))), gaxgrpc::RetrySettings.FromExponentialBackoff(maxAttempts: 2147483647, initialBackoff: sys::TimeSpan.FromMilliseconds(5000), maxBackoff: sys::TimeSpan.FromMilliseconds(60000), backoffMultiplier: 1.3, retryFilter: gaxgrpc::RetrySettings.FilterForStatusCodes(grpccore::StatusCode.Unavailable, grpccore::StatusCode.DeadlineExceeded)));
+
+        /// <summary>
+        /// <see cref="gaxgrpc::CallSettings"/> for synchronous and asynchronous calls to
+        /// <c>SmartCampaignSettingServiceClient.GeneratePMaxDraftCampaign</c> and
+        /// <c>SmartCampaignSettingServiceClient.GeneratePMaxDraftCampaignAsync</c>.
+        /// </summary>
+        /// <remarks>
+        /// <list type="bullet">
+        /// <item><description>Initial retry delay: 5000 milliseconds.</description></item>
+        /// <item><description>Retry delay multiplier: 1.3</description></item>
+        /// <item><description>Retry maximum delay: 60000 milliseconds.</description></item>
+        /// <item><description>Maximum attempts: Unlimited</description></item>
+        /// <item>
+        /// <description>
+        /// Retriable status codes: <see cref="grpccore::StatusCode.Unavailable"/>,
+        /// <see cref="grpccore::StatusCode.DeadlineExceeded"/>.
+        /// </description>
+        /// </item>
+        /// <item><description>Timeout: 14400 seconds.</description></item>
+        /// </list>
+        /// </remarks>
+        public gaxgrpc::CallSettings GeneratePMaxDraftCampaignSettings { get; set; } = gaxgrpc::CallSettingsExtensions.WithRetry(gaxgrpc::CallSettings.FromExpiration(gax::Expiration.FromTimeout(sys::TimeSpan.FromMilliseconds(14400000))), gaxgrpc::RetrySettings.FromExponentialBackoff(maxAttempts: 2147483647, initialBackoff: sys::TimeSpan.FromMilliseconds(5000), maxBackoff: sys::TimeSpan.FromMilliseconds(60000), backoffMultiplier: 1.3, retryFilter: gaxgrpc::RetrySettings.FilterForStatusCodes(grpccore::StatusCode.Unavailable, grpccore::StatusCode.DeadlineExceeded)));
 
         /// <summary>Creates a deep clone of this object, with all the same property values.</summary>
         /// <returns>A deep clone of this <see cref="SmartCampaignSettingServiceSettings"/> object.</returns>
@@ -439,6 +462,138 @@ namespace Google.Ads.GoogleAds.V25.Services
         /// <returns>A Task containing the RPC response.</returns>
         public virtual stt::Task<MutateSmartCampaignSettingsResponse> MutateSmartCampaignSettingsAsync(string customerId, scg::IEnumerable<SmartCampaignSettingOperation> operations, st::CancellationToken cancellationToken) =>
             MutateSmartCampaignSettingsAsync(customerId, operations, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Generates a Performance Max (PMax) draft campaign from an existing Smart
+        /// campaign, initialized with a status of [CampaignStatus.PAUSED] and a
+        /// creation status of [CampaignCreationStatus.INCOMPLETE]. Returns the draft
+        /// PMax campaign ID and related entity IDs.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual GeneratePMaxDraftCampaignResponse GeneratePMaxDraftCampaign(GeneratePMaxDraftCampaignRequest request, gaxgrpc::CallSettings callSettings = null) =>
+            throw new sys::NotImplementedException();
+
+        /// <summary>
+        /// Generates a Performance Max (PMax) draft campaign from an existing Smart
+        /// campaign, initialized with a status of [CampaignStatus.PAUSED] and a
+        /// creation status of [CampaignCreationStatus.INCOMPLETE]. Returns the draft
+        /// PMax campaign ID and related entity IDs.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<GeneratePMaxDraftCampaignResponse> GeneratePMaxDraftCampaignAsync(GeneratePMaxDraftCampaignRequest request, gaxgrpc::CallSettings callSettings = null) =>
+            throw new sys::NotImplementedException();
+
+        /// <summary>
+        /// Generates a Performance Max (PMax) draft campaign from an existing Smart
+        /// campaign, initialized with a status of [CampaignStatus.PAUSED] and a
+        /// creation status of [CampaignCreationStatus.INCOMPLETE]. Returns the draft
+        /// PMax campaign ID and related entity IDs.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<GeneratePMaxDraftCampaignResponse> GeneratePMaxDraftCampaignAsync(GeneratePMaxDraftCampaignRequest request, st::CancellationToken cancellationToken) =>
+            GeneratePMaxDraftCampaignAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Generates a Performance Max (PMax) draft campaign from an existing Smart
+        /// campaign, initialized with a status of [CampaignStatus.PAUSED] and a
+        /// creation status of [CampaignCreationStatus.INCOMPLETE]. Returns the draft
+        /// PMax campaign ID and related entity IDs.
+        /// </summary>
+        /// <param name="resourceName">
+        /// Required. The resource name of the Smart campaign setting to regenerate.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual GeneratePMaxDraftCampaignResponse GeneratePMaxDraftCampaign(string resourceName, gaxgrpc::CallSettings callSettings = null) =>
+            GeneratePMaxDraftCampaign(new GeneratePMaxDraftCampaignRequest
+            {
+                ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
+            }, callSettings);
+
+        /// <summary>
+        /// Generates a Performance Max (PMax) draft campaign from an existing Smart
+        /// campaign, initialized with a status of [CampaignStatus.PAUSED] and a
+        /// creation status of [CampaignCreationStatus.INCOMPLETE]. Returns the draft
+        /// PMax campaign ID and related entity IDs.
+        /// </summary>
+        /// <param name="resourceName">
+        /// Required. The resource name of the Smart campaign setting to regenerate.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<GeneratePMaxDraftCampaignResponse> GeneratePMaxDraftCampaignAsync(string resourceName, gaxgrpc::CallSettings callSettings = null) =>
+            GeneratePMaxDraftCampaignAsync(new GeneratePMaxDraftCampaignRequest
+            {
+                ResourceName = gax::GaxPreconditions.CheckNotNullOrEmpty(resourceName, nameof(resourceName)),
+            }, callSettings);
+
+        /// <summary>
+        /// Generates a Performance Max (PMax) draft campaign from an existing Smart
+        /// campaign, initialized with a status of [CampaignStatus.PAUSED] and a
+        /// creation status of [CampaignCreationStatus.INCOMPLETE]. Returns the draft
+        /// PMax campaign ID and related entity IDs.
+        /// </summary>
+        /// <param name="resourceName">
+        /// Required. The resource name of the Smart campaign setting to regenerate.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<GeneratePMaxDraftCampaignResponse> GeneratePMaxDraftCampaignAsync(string resourceName, st::CancellationToken cancellationToken) =>
+            GeneratePMaxDraftCampaignAsync(resourceName, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
+
+        /// <summary>
+        /// Generates a Performance Max (PMax) draft campaign from an existing Smart
+        /// campaign, initialized with a status of [CampaignStatus.PAUSED] and a
+        /// creation status of [CampaignCreationStatus.INCOMPLETE]. Returns the draft
+        /// PMax campaign ID and related entity IDs.
+        /// </summary>
+        /// <param name="resourceName">
+        /// Required. The resource name of the Smart campaign setting to regenerate.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public virtual GeneratePMaxDraftCampaignResponse GeneratePMaxDraftCampaign(gagvr::SmartCampaignSettingName resourceName, gaxgrpc::CallSettings callSettings = null) =>
+            GeneratePMaxDraftCampaign(new GeneratePMaxDraftCampaignRequest
+            {
+                ResourceNameAsSmartCampaignSettingName = gax::GaxPreconditions.CheckNotNull(resourceName, nameof(resourceName)),
+            }, callSettings);
+
+        /// <summary>
+        /// Generates a Performance Max (PMax) draft campaign from an existing Smart
+        /// campaign, initialized with a status of [CampaignStatus.PAUSED] and a
+        /// creation status of [CampaignCreationStatus.INCOMPLETE]. Returns the draft
+        /// PMax campaign ID and related entity IDs.
+        /// </summary>
+        /// <param name="resourceName">
+        /// Required. The resource name of the Smart campaign setting to regenerate.
+        /// </param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<GeneratePMaxDraftCampaignResponse> GeneratePMaxDraftCampaignAsync(gagvr::SmartCampaignSettingName resourceName, gaxgrpc::CallSettings callSettings = null) =>
+            GeneratePMaxDraftCampaignAsync(new GeneratePMaxDraftCampaignRequest
+            {
+                ResourceNameAsSmartCampaignSettingName = gax::GaxPreconditions.CheckNotNull(resourceName, nameof(resourceName)),
+            }, callSettings);
+
+        /// <summary>
+        /// Generates a Performance Max (PMax) draft campaign from an existing Smart
+        /// campaign, initialized with a status of [CampaignStatus.PAUSED] and a
+        /// creation status of [CampaignCreationStatus.INCOMPLETE]. Returns the draft
+        /// PMax campaign ID and related entity IDs.
+        /// </summary>
+        /// <param name="resourceName">
+        /// Required. The resource name of the Smart campaign setting to regenerate.
+        /// </param>
+        /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public virtual stt::Task<GeneratePMaxDraftCampaignResponse> GeneratePMaxDraftCampaignAsync(gagvr::SmartCampaignSettingName resourceName, st::CancellationToken cancellationToken) =>
+            GeneratePMaxDraftCampaignAsync(resourceName, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
     }
 
     /// <summary>SmartCampaignSettingService client wrapper implementation, for convenient use.</summary>
@@ -450,6 +605,8 @@ namespace Google.Ads.GoogleAds.V25.Services
         private readonly gaxgrpc::ApiCall<GetSmartCampaignStatusRequest, GetSmartCampaignStatusResponse> _callGetSmartCampaignStatus;
 
         private readonly gaxgrpc::ApiCall<MutateSmartCampaignSettingsRequest, MutateSmartCampaignSettingsResponse> _callMutateSmartCampaignSettings;
+
+        private readonly gaxgrpc::ApiCall<GeneratePMaxDraftCampaignRequest, GeneratePMaxDraftCampaignResponse> _callGeneratePMaxDraftCampaign;
 
         /// <summary>
         /// Constructs a client wrapper for the SmartCampaignSettingService service, with the specified gRPC client and
@@ -475,6 +632,9 @@ namespace Google.Ads.GoogleAds.V25.Services
             _callMutateSmartCampaignSettings = clientHelper.BuildApiCall<MutateSmartCampaignSettingsRequest, MutateSmartCampaignSettingsResponse>("MutateSmartCampaignSettings", grpcClient.MutateSmartCampaignSettingsAsync, grpcClient.MutateSmartCampaignSettings, effectiveSettings.MutateSmartCampaignSettingsSettings).WithGoogleRequestParam("customer_id", request => request.CustomerId);
             Modify_ApiCall(ref _callMutateSmartCampaignSettings);
             Modify_MutateSmartCampaignSettingsApiCall(ref _callMutateSmartCampaignSettings);
+            _callGeneratePMaxDraftCampaign = clientHelper.BuildApiCall<GeneratePMaxDraftCampaignRequest, GeneratePMaxDraftCampaignResponse>("GeneratePMaxDraftCampaign", grpcClient.GeneratePMaxDraftCampaignAsync, grpcClient.GeneratePMaxDraftCampaign, effectiveSettings.GeneratePMaxDraftCampaignSettings).WithGoogleRequestParam("resource_name", request => request.ResourceName);
+            Modify_ApiCall(ref _callGeneratePMaxDraftCampaign);
+            Modify_GeneratePMaxDraftCampaignApiCall(ref _callGeneratePMaxDraftCampaign);
             OnConstruction(grpcClient, effectiveSettings, clientHelper);
         }
 
@@ -484,6 +644,8 @@ namespace Google.Ads.GoogleAds.V25.Services
 
         partial void Modify_MutateSmartCampaignSettingsApiCall(ref gaxgrpc::ApiCall<MutateSmartCampaignSettingsRequest, MutateSmartCampaignSettingsResponse> call);
 
+        partial void Modify_GeneratePMaxDraftCampaignApiCall(ref gaxgrpc::ApiCall<GeneratePMaxDraftCampaignRequest, GeneratePMaxDraftCampaignResponse> call);
+
         partial void OnConstruction(SmartCampaignSettingService.SmartCampaignSettingServiceClient grpcClient, SmartCampaignSettingServiceSettings effectiveSettings, gaxgrpc::ClientHelper clientHelper);
 
         /// <summary>The underlying gRPC SmartCampaignSettingService client</summary>
@@ -492,6 +654,8 @@ namespace Google.Ads.GoogleAds.V25.Services
         partial void Modify_GetSmartCampaignStatusRequest(ref GetSmartCampaignStatusRequest request, ref gaxgrpc::CallSettings settings);
 
         partial void Modify_MutateSmartCampaignSettingsRequest(ref MutateSmartCampaignSettingsRequest request, ref gaxgrpc::CallSettings settings);
+
+        partial void Modify_GeneratePMaxDraftCampaignRequest(ref GeneratePMaxDraftCampaignRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
         /// Returns the status of the requested Smart campaign.
@@ -539,6 +703,36 @@ namespace Google.Ads.GoogleAds.V25.Services
         {
             Modify_MutateSmartCampaignSettingsRequest(ref request, ref callSettings);
             return _callMutateSmartCampaignSettings.Async(request, callSettings);
+        }
+
+        /// <summary>
+        /// Generates a Performance Max (PMax) draft campaign from an existing Smart
+        /// campaign, initialized with a status of [CampaignStatus.PAUSED] and a
+        /// creation status of [CampaignCreationStatus.INCOMPLETE]. Returns the draft
+        /// PMax campaign ID and related entity IDs.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>The RPC response.</returns>
+        public override GeneratePMaxDraftCampaignResponse GeneratePMaxDraftCampaign(GeneratePMaxDraftCampaignRequest request, gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_GeneratePMaxDraftCampaignRequest(ref request, ref callSettings);
+            return _callGeneratePMaxDraftCampaign.Sync(request, callSettings);
+        }
+
+        /// <summary>
+        /// Generates a Performance Max (PMax) draft campaign from an existing Smart
+        /// campaign, initialized with a status of [CampaignStatus.PAUSED] and a
+        /// creation status of [CampaignCreationStatus.INCOMPLETE]. Returns the draft
+        /// PMax campaign ID and related entity IDs.
+        /// </summary>
+        /// <param name="request">The request object containing all of the parameters for the API call.</param>
+        /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
+        /// <returns>A Task containing the RPC response.</returns>
+        public override stt::Task<GeneratePMaxDraftCampaignResponse> GeneratePMaxDraftCampaignAsync(GeneratePMaxDraftCampaignRequest request, gaxgrpc::CallSettings callSettings = null)
+        {
+            Modify_GeneratePMaxDraftCampaignRequest(ref request, ref callSettings);
+            return _callGeneratePMaxDraftCampaign.Async(request, callSettings);
         }
     }
 }

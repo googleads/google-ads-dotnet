@@ -6582,7 +6582,7 @@ namespace Google.Ads.GoogleAds.V25.Common {
   }
 
   /// <summary>
-  /// A Page Feed asset.
+  /// A Page URL inclusion asset.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class PageFeedAsset : pb::IMessage<PageFeedAsset>

@@ -142,7 +142,7 @@ namespace Google.Ads.GoogleAds.V25.Services
 
     /// <summary>AutomaticallyCreatedAssetRemovalService client wrapper, for convenient use.</summary>
     /// <remarks>
-    /// Service to remove automatically created assets.
+    /// Service to remove text customization (formerly automatically created assets).
     /// </remarks>
     public abstract partial class AutomaticallyCreatedAssetRemovalServiceClient
     {
@@ -229,7 +229,8 @@ namespace Google.Ads.GoogleAds.V25.Services
         public virtual AutomaticallyCreatedAssetRemovalService.AutomaticallyCreatedAssetRemovalServiceClient GrpcClient => throw new sys::NotImplementedException();
 
         /// <summary>
-        /// Removes automatically created assets from a campaign.
+        /// Removes text customization (formerly automatically created assets) from a
+        /// campaign.
         /// 
         /// List of thrown errors:
         /// [AuthenticationError]()
@@ -249,7 +250,8 @@ namespace Google.Ads.GoogleAds.V25.Services
             throw new sys::NotImplementedException();
 
         /// <summary>
-        /// Removes automatically created assets from a campaign.
+        /// Removes text customization (formerly automatically created assets) from a
+        /// campaign.
         /// 
         /// List of thrown errors:
         /// [AuthenticationError]()
@@ -269,7 +271,8 @@ namespace Google.Ads.GoogleAds.V25.Services
             throw new sys::NotImplementedException();
 
         /// <summary>
-        /// Removes automatically created assets from a campaign.
+        /// Removes text customization (formerly automatically created assets) from a
+        /// campaign.
         /// 
         /// List of thrown errors:
         /// [AuthenticationError]()
@@ -289,7 +292,8 @@ namespace Google.Ads.GoogleAds.V25.Services
             RemoveCampaignAutomaticallyCreatedAssetAsync(request, gaxgrpc::CallSettings.FromCancellationToken(cancellationToken));
 
         /// <summary>
-        /// Removes automatically created assets from a campaign.
+        /// Removes text customization (formerly automatically created assets) from a
+        /// campaign.
         /// 
         /// List of thrown errors:
         /// [AuthenticationError]()
@@ -327,7 +331,8 @@ namespace Google.Ads.GoogleAds.V25.Services
             }, callSettings);
 
         /// <summary>
-        /// Removes automatically created assets from a campaign.
+        /// Removes text customization (formerly automatically created assets) from a
+        /// campaign.
         /// 
         /// List of thrown errors:
         /// [AuthenticationError]()
@@ -365,7 +370,8 @@ namespace Google.Ads.GoogleAds.V25.Services
             }, callSettings);
 
         /// <summary>
-        /// Removes automatically created assets from a campaign.
+        /// Removes text customization (formerly automatically created assets) from a
+        /// campaign.
         /// 
         /// List of thrown errors:
         /// [AuthenticationError]()
@@ -397,7 +403,7 @@ namespace Google.Ads.GoogleAds.V25.Services
 
     /// <summary>AutomaticallyCreatedAssetRemovalService client wrapper implementation, for convenient use.</summary>
     /// <remarks>
-    /// Service to remove automatically created assets.
+    /// Service to remove text customization (formerly automatically created assets).
     /// </remarks>
     public sealed partial class AutomaticallyCreatedAssetRemovalServiceClientImpl : AutomaticallyCreatedAssetRemovalServiceClient
     {
@@ -439,7 +445,8 @@ namespace Google.Ads.GoogleAds.V25.Services
         partial void Modify_RemoveCampaignAutomaticallyCreatedAssetRequest(ref RemoveCampaignAutomaticallyCreatedAssetRequest request, ref gaxgrpc::CallSettings settings);
 
         /// <summary>
-        /// Removes automatically created assets from a campaign.
+        /// Removes text customization (formerly automatically created assets) from a
+        /// campaign.
         /// 
         /// List of thrown errors:
         /// [AuthenticationError]()
@@ -462,7 +469,8 @@ namespace Google.Ads.GoogleAds.V25.Services
         }
 
         /// <summary>
-        /// Removes automatically created assets from a campaign.
+        /// Removes text customization (formerly automatically created assets) from a
+        /// campaign.
         /// 
         /// List of thrown errors:
         /// [AuthenticationError]()

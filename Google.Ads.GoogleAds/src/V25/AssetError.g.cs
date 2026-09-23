@@ -405,7 +405,8 @@ namespace Google.Ads.GoogleAds.V25.Errors {
         /// </summary>
         [pbr::OriginalName("CANNOT_MODIFY_ASSET_SOURCE")] CannotModifyAssetSource = 35,
         /// <summary>
-        /// User can not modify the automatically created asset.
+        /// User cannot modify text customization (formerly automatically created
+        /// asset).
         /// </summary>
         [pbr::OriginalName("CANNOT_MODIFY_AUTOMATICALLY_CREATED_ASSET")] CannotModifyAutomaticallyCreatedAsset = 36,
         /// <summary>
@@ -413,7 +414,7 @@ namespace Google.Ads.GoogleAds.V25.Errors {
         /// </summary>
         [pbr::OriginalName("LEAD_FORM_LOCATION_ANSWER_TYPE_DISALLOWED")] LeadFormLocationAnswerTypeDisallowed = 37,
         /// <summary>
-        /// Page Feed label text contains invalid characters.
+        /// Page URL inclusion label text contains invalid characters.
         /// </summary>
         [pbr::OriginalName("PAGE_FEED_INVALID_LABEL_TEXT")] PageFeedInvalidLabelText = 38,
         /// <summary>
