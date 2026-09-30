@@ -1,4 +1,4 @@
-﻿// Copyright 2022 Google LLC
+// Copyright 2022 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -80,33 +80,47 @@ namespace Google.Ads.GoogleAds.Extensions.Config
         /// Gets the section.
         /// </summary>
         /// <param name="sectionName">Name of the section.</param>
+        /// <param name="appConfigPath">Optional path to the App.config file. If null, the default
+        /// path is determined automatically.</param>
         /// <returns>A hashtable with key-value pairs from App.config.</returns>
-        internal static Hashtable GetSection(string sectionName)
+        internal static Hashtable GetSection(string sectionName, string appConfigPath = null)
         {
             Hashtable section = new Hashtable();
-            string appConfigFile = GetAppConfigPath();
-            XmlDocument xDoc = new XmlDocument();
+            string appConfigFile = appConfigPath ?? GetAppConfigPath();
+            XmlDocument xDoc = new XmlDocument() { XmlResolver = null };
 
             try
             {
                 xDoc.Load(appConfigFile);
+
+                XmlNode sectionNode = xDoc.SelectSingleNode($"configuration/{sectionName}");
+                string configSource = sectionNode?.Attributes?["configSource"]?.Value;
+                if (!string.IsNullOrEmpty(configSource))
+                {
+                    string directoryName = Path.GetDirectoryName(appConfigFile) ?? string.Empty;
+                    string configSourcePath = Path.Combine(directoryName, configSource);
+                    xDoc = new XmlDocument() { XmlResolver = null };
+                    xDoc.Load(configSourcePath);
+                    sectionNode = xDoc.SelectSingleNode(sectionName);
+                }
+
+                if (sectionNode != null)
+                {
+                    XmlNodeList nodes = sectionNode.SelectNodes("child::*");
+
+                    foreach (XmlElement node in nodes)
+                    {
+                        string key = node.Attributes["key"].Value;
+                        string value = node.Attributes["value"].Value;
+                        section[key] = value;
+                    }
+                }
             }
             catch
             {
                 // A catch-all is fine here; there might be situations where we cannot
                 // resolve the App.config file. ConfigurationManager.GetSection returns
                 // an empty dictionary in this case instead of throwing an error.
-            }
-            finally
-            {
-                XmlNodeList nodes = xDoc.SelectNodes($"configuration/{sectionName}/child::*");
-
-                foreach (XmlElement node in nodes)
-                {
-                    string key = node.Attributes["key"].Value;
-                    string value = node.Attributes["value"].Value;
-                    section[key] = value;
-                }
             }
             return section;
         }

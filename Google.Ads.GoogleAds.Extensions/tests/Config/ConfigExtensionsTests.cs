@@ -233,6 +233,35 @@ namespace Google.Ads.GoogleAds.Extensions.Tests.Config
             Environment.SetEnvironmentVariable(EnvironmentVariableNames.CONFIG_FILE_PATH, null);
         }
 
+        /// <summary>
+        /// Tests for <see cref="ConfigExtensions.LoadFromAppConfigSection(GoogleAdsConfig, string, string)"/>
+        /// </summary>
+        [Test]
+        public void TestLoadFromAppConfigSection()
+        {
+            string tempAppConfigFile = CreateAppConfigXml();
+            GoogleAdsConfig config = new GoogleAdsConfig();
+            bool loaded = config.LoadFromAppConfigSection(
+                ConfigExtensions.CONFIG_SECTION_NAME, tempAppConfigFile);
+            Assert.IsTrue(loaded);
+            VerifySettings(config);
+        }
+
+        /// <summary>
+        /// Tests for <see cref="ConfigExtensions.LoadFromAppConfigSection(GoogleAdsConfig, string, string)"/>
+        /// when the section uses the <code>configSource</code> attribute.
+        /// </summary>
+        [Test]
+        public void TestLoadFromAppConfigSectionWithConfigSource()
+        {
+            (string tempAppConfigFile, _) = CreateAppConfigXmlWithConfigSource();
+            GoogleAdsConfig config = new GoogleAdsConfig();
+            bool loaded = config.LoadFromAppConfigSection(
+                ConfigExtensions.CONFIG_SECTION_NAME, tempAppConfigFile);
+            Assert.IsTrue(loaded);
+            VerifySettings(config);
+        }
+
         private void VerifySettings(GoogleAdsConfig config)
         {
             Assert.AreEqual(TIMEOUT_VALUE, config.Timeout);
@@ -256,6 +285,69 @@ namespace Google.Ads.GoogleAds.Extensions.Tests.Config
             Assert.AreEqual(PROXY_DOMAIN_VALUE, credential.Domain);
 
             Assert.AreEqual(USE_APPLICATION_DEFAULT_CREDENTIALS_VALUE, config.UseApplicationDefaultCredentials);
+        }
+
+        /// <summary>
+        /// Creates an App.config XML file for testing purposes.
+        /// </summary>
+        /// <returns>The path to the temporary App.config file.</returns>
+        private string CreateAppConfigXml()
+        {
+            string xmlPath = Path.GetTempFileName();
+            using (StreamWriter writer = new StreamWriter(xmlPath))
+            {
+                writer.WriteLine("<?xml version=\"1.0\" encoding=\"utf-8\"?>");
+                writer.WriteLine("<configuration>");
+                WriteConfigSectionXml(writer);
+                writer.WriteLine("</configuration>");
+                writer.Flush();
+            }
+            return xmlPath;
+        }
+
+        /// <summary>
+        /// Creates an App.config XML file referencing a separate configSource file for testing
+        /// purposes.
+        /// </summary>
+        /// <returns>The paths to the temporary App.config and configSource files.</returns>
+        private (string appConfigPath, string configSourcePath) CreateAppConfigXmlWithConfigSource()
+        {
+            string configSourcePath = Path.GetTempFileName();
+            using (StreamWriter writer = new StreamWriter(configSourcePath))
+            {
+                writer.WriteLine("<?xml version=\"1.0\" encoding=\"utf-8\"?>");
+                WriteConfigSectionXml(writer);
+                writer.Flush();
+            }
+
+            string appConfigPath = Path.GetTempFileName();
+            string configSourceFileName = Path.GetFileName(configSourcePath);
+            using (StreamWriter writer = new StreamWriter(appConfigPath))
+            {
+                writer.WriteLine("<?xml version=\"1.0\" encoding=\"utf-8\"?>");
+                writer.WriteLine("<configuration>");
+                writer.WriteLine(
+                    $"  <{ConfigExtensions.CONFIG_SECTION_NAME} configSource=\"{configSourceFileName}\" />");
+                writer.WriteLine("</configuration>");
+                writer.Flush();
+            }
+            return (appConfigPath, configSourcePath);
+        }
+
+        /// <summary>
+        /// Writes the configuration section XML elements to the given writer.
+        /// </summary>
+        /// <param name="writer">The stream writer.</param>
+        private void WriteConfigSectionXml(StreamWriter writer)
+        {
+            writer.WriteLine($"  <{ConfigExtensions.CONFIG_SECTION_NAME}>");
+            foreach (KeyValuePair<string, string> entry in CONFIG_SETTINGS)
+            {
+                writer.WriteLine(
+                    $"    <add key=\"{System.Security.SecurityElement.Escape(entry.Key)}\" " +
+                    $"value=\"{System.Security.SecurityElement.Escape(entry.Value)}\" />");
+            }
+            writer.WriteLine($"  </{ConfigExtensions.CONFIG_SECTION_NAME}>");
         }
 
         /// <summary>

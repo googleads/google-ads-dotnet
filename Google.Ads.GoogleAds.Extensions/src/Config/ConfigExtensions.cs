@@ -131,7 +131,24 @@ namespace Google.Ads.GoogleAds.Extensions.Config
         /// </returns>
         public static bool LoadFromAppConfigSection(this GoogleAdsConfig target, string sectionName)
         {
-            Dictionary<string, string> config = ReadAppConfigSection(sectionName);
+            return target.LoadFromAppConfigSection(sectionName, null);
+        }
+
+        /// <summary>
+        /// Attempts to load the configuration section with the given name from the specified
+        /// App.config file.
+        /// </summary>
+        /// <param name="target">The <see cref="GoogleAdsConfig"/> to update.</param>
+        /// <param name="sectionName">The name of the configuration section to load.</param>
+        /// <param name="filePath">The path to the App.config file, or null to use the default
+        /// App.config path.</param>
+        /// <returns>
+        /// True if loading was successful, false otherwise.
+        /// </returns>
+        public static bool LoadFromAppConfigSection(this GoogleAdsConfig target, string sectionName,
+            string filePath)
+        {
+            Dictionary<string, string> config = ReadAppConfigSection(sectionName, filePath);
             if (config.Count == 0)
             {
                 return false;
@@ -193,11 +210,13 @@ namespace Google.Ads.GoogleAds.Extensions.Config
         /// Reads the application configuration section.
         /// </summary>
         /// <param name="sectionName">Name of the section.</param>
+        /// <param name="filePath">Optional path to the App.config file.</param>
         /// <returns>A dictionary with key as configuration keyname and value as configuration
         /// value.</returns>
-        private static Dictionary<string, string> ReadAppConfigSection(string sectionName)
+        private static Dictionary<string, string> ReadAppConfigSection(string sectionName,
+            string filePath = null)
         {
-            Hashtable config = AppConfigUtilities.GetSection(sectionName);
+            Hashtable config = AppConfigUtilities.GetSection(sectionName, filePath);
             return config != null ?
                 config.Cast<DictionaryEntry>().ToDictionary(
                     d => d.Key.ToString(), d => d.Value?.ToString()) :
