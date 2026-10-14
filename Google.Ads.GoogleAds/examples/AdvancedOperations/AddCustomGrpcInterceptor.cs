@@ -16,15 +16,15 @@ using Google.Api.Gax;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Interceptors;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V25.Errors;
-using Google.Ads.GoogleAds.V25.Services;
+using Google.Ads.GoogleAds.V26.Errors;
+using Google.Ads.GoogleAds.V26.Services;
 using Grpc.Core;
 using Grpc.Core.Interceptors;
 using System;
 
 using System.Threading.Tasks;
 
-namespace Google.Ads.GoogleAds.Examples.V25
+namespace Google.Ads.GoogleAds.Examples.V26
 {
     /// <summary>
     /// This code example shows how to add a custom gRPC interceptor.
@@ -76,7 +76,7 @@ namespace Google.Ads.GoogleAds.Examples.V25
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V25.GoogleAdsService);
+                Services.V26.GoogleAdsService);
 
             // Create a query that will retrieve all campaigns, just to demonstrate usage of the
             // custom interceptor.

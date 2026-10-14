@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V25.Common;
-using Google.Ads.GoogleAds.V25.Errors;
-using Google.Ads.GoogleAds.V25.Resources;
-using Google.Ads.GoogleAds.V25.Services;
+using Google.Ads.GoogleAds.V26.Common;
+using Google.Ads.GoogleAds.V26.Errors;
+using Google.Ads.GoogleAds.V26.Resources;
+using Google.Ads.GoogleAds.V26.Services;
 using System;
 using System.Collections.Generic;
-using DayOfWeek = Google.Ads.GoogleAds.V25.Enums.DayOfWeekEnum.Types.DayOfWeek;
+using DayOfWeek = Google.Ads.GoogleAds.V26.Enums.DayOfWeekEnum.Types.DayOfWeek;
 
-namespace Google.Ads.GoogleAds.Examples.V25
+namespace Google.Ads.GoogleAds.Examples.V26
 {
     /// <summary>
     /// This code example shows how to add ad group bid modifiers to a hotel ad group based on
@@ -82,7 +82,7 @@ namespace Google.Ads.GoogleAds.Examples.V25
         {
             // Get the AdGroupBidModifierService.
             AdGroupBidModifierServiceClient service = client.GetService(
-                Services.V25.AdGroupBidModifierService);
+                Services.V26.AdGroupBidModifierService);
 
             // Constructs the ad group resource name to use for each bid modifier.
             string adGroupResourceName = ResourceNames.AdGroup(customerId, adGroupId);
@@ -93,7 +93,7 @@ namespace Google.Ads.GoogleAds.Examples.V25
                 // Sets the resource name to the ad group resource name joined with the criterion
                 // ID whose value corresponds to the desired check-in day.
                 AdGroup = adGroupResourceName,
-                HotelCheckInDay = new HotelCheckInDayInfo()
+                StartDayOfWeek = new StartDayOfWeekInfo()
                 {
                     DayOfWeek = DayOfWeek.Monday
                 },
@@ -114,11 +114,11 @@ namespace Google.Ads.GoogleAds.Examples.V25
                 // Set the ad group.
                 AdGroup = ResourceNames.AdGroup(customerId, adGroupId),
 
-                // Set the hotel length of stay info.
-                HotelLengthOfStay = new HotelLengthOfStayInfo()
+                // Set the length of booking info.
+                LengthOfBooking = new LengthOfBookingInfo()
                 {
-                    MinNights = 3,
-                    MaxNights = 7
+                    MinDays = 3,
+                    MaxDays = 7
                 },
 
                 // Set the bid modifier value to 170%.

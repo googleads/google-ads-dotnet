@@ -15,15 +15,15 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V25.Errors;
-using Google.Ads.GoogleAds.V25.Resources;
-using Google.Ads.GoogleAds.V25.Services;
+using Google.Ads.GoogleAds.V26.Errors;
+using Google.Ads.GoogleAds.V26.Resources;
+using Google.Ads.GoogleAds.V26.Services;
 using Google.Api.Gax.Grpc.Rest;
 using System;
 using System.IO;
-using static Google.Ads.GoogleAds.V25.Enums.YouTubeVideoPrivacyEnum.Types;
+using static Google.Ads.GoogleAds.V26.Enums.YouTubeVideoPrivacyEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V25
+namespace Google.Ads.GoogleAds.Examples.V26
 {
     /// <summary>
     /// This code example illustrates how to upload videos to YouTube.
@@ -81,7 +81,7 @@ namespace Google.Ads.GoogleAds.Examples.V25
             {
                 // [START upload_video_1]
                 YouTubeVideoUploadServiceClient ytService = client.GetService(
-                    Services.V25.YouTubeVideoUploadService);
+                    Services.V26.YouTubeVideoUploadService);
 
                 CreateYouTubeVideoUploadRequest createUploadRequest =
                     new CreateYouTubeVideoUploadRequest()
@@ -119,7 +119,7 @@ namespace Google.Ads.GoogleAds.Examples.V25
                     WHERE you_tube_video_upload.resource_name = '{videoUploadResourceName}'";
 
                 GoogleAdsServiceClient gaService = client.GetService(
-                    Services.V25.GoogleAdsService);
+                    Services.V26.GoogleAdsService);
 
                 gaService.SearchStream(customerId.ToString(), query,
                     delegate (SearchGoogleAdsStreamResponse resp)

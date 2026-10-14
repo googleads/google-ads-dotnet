@@ -16,16 +16,16 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V25.Errors;
-using Google.Ads.GoogleAds.V25.Resources;
-using Google.Ads.GoogleAds.V25.Services;
+using Google.Ads.GoogleAds.V26.Errors;
+using Google.Ads.GoogleAds.V26.Resources;
+using Google.Ads.GoogleAds.V26.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V25.Enums.AssetAutomationStatusEnum.Types;
-using static Google.Ads.GoogleAds.V25.Enums.AssetAutomationTypeEnum.Types;
-using static Google.Ads.GoogleAds.V25.Enums.ExperimentTypeEnum.Types;
+using static Google.Ads.GoogleAds.V26.Enums.AssetAutomationStatusEnum.Types;
+using static Google.Ads.GoogleAds.V26.Enums.AssetAutomationTypeEnum.Types;
+using static Google.Ads.GoogleAds.V26.Enums.ExperimentTypeEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V25
+namespace Google.Ads.GoogleAds.Examples.V26
 {
     /// <summary>
     /// Creates an ADOPT_AI_MAX intra-campaign experiment for a Search campaign.
@@ -84,7 +84,7 @@ namespace Google.Ads.GoogleAds.Examples.V25
         public void Run(GoogleAdsClient client, long customerId, long campaignId)
         {
             GoogleAdsServiceClient googleAdsService = client.GetService(
-                Services.V25.GoogleAdsService);
+                Services.V26.GoogleAdsService);
 
             try
             {
