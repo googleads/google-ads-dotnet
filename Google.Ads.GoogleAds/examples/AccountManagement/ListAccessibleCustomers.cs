@@ -15,12 +15,12 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V25.Errors;
-using Google.Ads.GoogleAds.V25.Services;
+using Google.Ads.GoogleAds.V26.Errors;
+using Google.Ads.GoogleAds.V26.Services;
 using System;
 using System.Collections.Generic;
 
-namespace Google.Ads.GoogleAds.Examples.V25
+namespace Google.Ads.GoogleAds.Examples.V26
 {
     /// <summary>
     /// This code example lists the resource names for the customers that the authenticating user
@@ -70,7 +70,7 @@ namespace Google.Ads.GoogleAds.Examples.V25
         public void Run(GoogleAdsClient client)
         {
             // Get the CustomerService.
-            CustomerServiceClient customerService = client.GetService(Services.V25.CustomerService);
+            CustomerServiceClient customerService = client.GetService(Services.V26.CustomerService);
 
             try
             {

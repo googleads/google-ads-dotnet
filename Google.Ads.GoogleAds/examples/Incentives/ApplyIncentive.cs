@@ -18,11 +18,11 @@ using Google.Ads.Gax.Lib;
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Extensions.Config;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V25.Errors;
-using Google.Ads.GoogleAds.V25.Services;
+using Google.Ads.GoogleAds.V26.Errors;
+using Google.Ads.GoogleAds.V26.Services;
 using System;
 
-namespace Google.Ads.GoogleAds.Examples.V25
+namespace Google.Ads.GoogleAds.Examples.V26
 {
     /// <summary>
     /// This code example applies an incentive to a user's account.
@@ -87,7 +87,7 @@ namespace Google.Ads.GoogleAds.Examples.V25
             long incentiveId, string countryCode)
         {
             IncentiveServiceClient incentiveService = client.GetService(
-                Services.V25.IncentiveService);
+                Services.V26.IncentiveService);
 
             ApplyIncentiveRequest request = new ApplyIncentiveRequest()
             {

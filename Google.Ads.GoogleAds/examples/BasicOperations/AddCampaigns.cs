@@ -17,20 +17,20 @@ using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Extensions.Config;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V25.Common;
-using Google.Ads.GoogleAds.V25.Errors;
-using Google.Ads.GoogleAds.V25.Resources;
-using Google.Ads.GoogleAds.V25.Services;
+using Google.Ads.GoogleAds.V26.Common;
+using Google.Ads.GoogleAds.V26.Errors;
+using Google.Ads.GoogleAds.V26.Resources;
+using Google.Ads.GoogleAds.V26.Services;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
-using static Google.Ads.GoogleAds.V25.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V25.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V25.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V25.Enums.EuPoliticalAdvertisingStatusEnum.Types;
-using static Google.Ads.GoogleAds.V25.Resources.Campaign.Types;
+using static Google.Ads.GoogleAds.V26.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V26.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V26.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V26.Enums.EuPoliticalAdvertisingStatusEnum.Types;
+using static Google.Ads.GoogleAds.V26.Resources.Campaign.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V25
+namespace Google.Ads.GoogleAds.Examples.V26
 {
     /// <summary>
     /// This code example adds campaigns.
@@ -83,7 +83,7 @@ namespace Google.Ads.GoogleAds.Examples.V25
         public void Run(GoogleAdsClient client, long customerId)
         {
             // Get the CampaignService.
-            CampaignServiceClient campaignService = client.GetService(Services.V25.CampaignService);
+            CampaignServiceClient campaignService = client.GetService(Services.V26.CampaignService);
 
             // Create a budget to be used for the campaign.
             string budget = CreateBudget(client, customerId);
@@ -174,7 +174,7 @@ namespace Google.Ads.GoogleAds.Examples.V25
         {
             // Get the BudgetService.
             CampaignBudgetServiceClient budgetService = client.GetService(
-                Services.V25.CampaignBudgetService);
+                Services.V26.CampaignBudgetService);
 
             // Create the campaign budget.
             CampaignBudget budget = new CampaignBudget()

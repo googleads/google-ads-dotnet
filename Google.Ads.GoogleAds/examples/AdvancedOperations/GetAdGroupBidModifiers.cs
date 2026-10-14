@@ -15,14 +15,14 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V25.Errors;
-using Google.Ads.GoogleAds.V25.Resources;
-using Google.Ads.GoogleAds.V25.Services;
+using Google.Ads.GoogleAds.V26.Errors;
+using Google.Ads.GoogleAds.V26.Resources;
+using Google.Ads.GoogleAds.V26.Services;
 using Google.Api.Gax;
 using System;
-using static Google.Ads.GoogleAds.V25.Resources.AdGroupBidModifier;
+using static Google.Ads.GoogleAds.V26.Resources.AdGroupBidModifier;
 
-namespace Google.Ads.GoogleAds.Examples.V25
+namespace Google.Ads.GoogleAds.Examples.V26
 {
     /// <summary>
     /// This code example gets ad group bid modifiers.
@@ -78,7 +78,7 @@ namespace Google.Ads.GoogleAds.Examples.V25
         {
             // Get the GoogleAdsService.
             GoogleAdsServiceClient googleAdsService =
-                client.GetService(Services.V25.GoogleAdsService);
+                client.GetService(Services.V26.GoogleAdsService);
 
             string searchQuery = @"
                 SELECT
@@ -87,14 +87,14 @@ namespace Google.Ads.GoogleAds.Examples.V25
                     campaign.id,
                     ad_group_bid_modifier.bid_modifier,
                     ad_group_bid_modifier.device.type,
-                    ad_group_bid_modifier.hotel_date_selection_type.type,
-                    ad_group_bid_modifier.hotel_advance_booking_window.min_days,
-                    ad_group_bid_modifier.hotel_advance_booking_window.max_days,
-                    ad_group_bid_modifier.hotel_length_of_stay.min_nights,
-                    ad_group_bid_modifier.hotel_length_of_stay.max_nights,
-                    ad_group_bid_modifier.hotel_check_in_day.day_of_week,
-                    ad_group_bid_modifier.hotel_check_in_date_range.start_date,
-                    ad_group_bid_modifier.hotel_check_in_date_range.end_date
+                    ad_group_bid_modifier.user_set_dates.type,
+                    ad_group_bid_modifier.advance_booking_window.min_days,
+                    ad_group_bid_modifier.advance_booking_window.max_days,
+                    ad_group_bid_modifier.length_of_booking.min_days,
+                    ad_group_bid_modifier.length_of_booking.max_days,
+                    ad_group_bid_modifier.start_day_of_week.day_of_week,
+                    ad_group_bid_modifier.start_date_range.start_date,
+                    ad_group_bid_modifier.start_date_range.end_date
                 FROM
                     ad_group_bid_modifier";
 
@@ -155,32 +155,32 @@ namespace Google.Ads.GoogleAds.Examples.V25
                             criterionDetails += $"Type: {agBidModifier.Device.Type}";
                             break;
 
-                        case CriterionOneofCase.HotelAdvanceBookingWindow:
+                        case CriterionOneofCase.AdvanceBookingWindow:
                             criterionDetails +=
-                                $"Min Days: {agBidModifier.HotelAdvanceBookingWindow.MinDays}," +
-                                $"Max Days: {agBidModifier.HotelAdvanceBookingWindow.MaxDays}";
+                                $"Min Days: {agBidModifier.AdvanceBookingWindow.MinDays}," +
+                                $"Max Days: {agBidModifier.AdvanceBookingWindow.MaxDays}";
                             break;
 
-                        case CriterionOneofCase.HotelCheckInDay:
+                        case CriterionOneofCase.StartDayOfWeek:
                             criterionDetails += $"Day of the week: " +
-                                $"{agBidModifier.HotelCheckInDay.DayOfWeek}";
+                                $"{agBidModifier.StartDayOfWeek.DayOfWeek}";
                             break;
 
-                        case CriterionOneofCase.HotelDateSelectionType:
+                        case CriterionOneofCase.UserSetDates:
                             criterionDetails += $"Date selection type: " +
-                                $"{agBidModifier.HotelDateSelectionType.Type}";
+                                $"{agBidModifier.UserSetDates.Type}";
                             break;
 
-                        case CriterionOneofCase.HotelLengthOfStay:
+                        case CriterionOneofCase.LengthOfBooking:
                             criterionDetails +=
-                                $"Min Nights: {agBidModifier.HotelLengthOfStay.MinNights}," +
-                                $"Max Nights: {agBidModifier.HotelLengthOfStay.MaxNights}";
+                                $"Min Days: {agBidModifier.LengthOfBooking.MinDays}," +
+                                $"Max Days: {agBidModifier.LengthOfBooking.MaxDays}";
                             break;
 
-                        case CriterionOneofCase.HotelCheckInDateRange:
+                        case CriterionOneofCase.StartDateRange:
                             criterionDetails +=
-                                $"Start Date: {agBidModifier.HotelCheckInDateRange.StartDate}," +
-                                $"End Date: {agBidModifier.HotelCheckInDateRange.EndDate}";
+                                $"Start Date: {agBidModifier.StartDateRange.StartDate}," +
+                                $"End Date: {agBidModifier.StartDateRange.EndDate}";
                             break;
                     }
                     Console.WriteLine(criterionDetails);

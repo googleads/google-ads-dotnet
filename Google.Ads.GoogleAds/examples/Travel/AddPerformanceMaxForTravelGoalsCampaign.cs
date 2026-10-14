@@ -17,23 +17,23 @@ using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Config;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V25.Common;
-using Google.Ads.GoogleAds.V25.Errors;
-using Google.Ads.GoogleAds.V25.Resources;
-using Google.Ads.GoogleAds.V25.Services;
+using Google.Ads.GoogleAds.V26.Common;
+using Google.Ads.GoogleAds.V26.Errors;
+using Google.Ads.GoogleAds.V26.Resources;
+using Google.Ads.GoogleAds.V26.Services;
 using Google.Protobuf;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V25.Enums.AdvertisingChannelTypeEnum.Types;
-using static Google.Ads.GoogleAds.V25.Enums.AssetFieldTypeEnum.Types;
-using static Google.Ads.GoogleAds.V25.Enums.AssetGroupStatusEnum.Types;
-using static Google.Ads.GoogleAds.V25.Enums.AssetSetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V25.Enums.BudgetDeliveryMethodEnum.Types;
-using static Google.Ads.GoogleAds.V25.Enums.CampaignStatusEnum.Types;
-using static Google.Ads.GoogleAds.V25.Enums.EuPoliticalAdvertisingStatusEnum.Types;
-using static Google.Ads.GoogleAds.V25.Enums.HotelAssetSuggestionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V26.Enums.AdvertisingChannelTypeEnum.Types;
+using static Google.Ads.GoogleAds.V26.Enums.AssetFieldTypeEnum.Types;
+using static Google.Ads.GoogleAds.V26.Enums.AssetGroupStatusEnum.Types;
+using static Google.Ads.GoogleAds.V26.Enums.AssetSetTypeEnum.Types;
+using static Google.Ads.GoogleAds.V26.Enums.BudgetDeliveryMethodEnum.Types;
+using static Google.Ads.GoogleAds.V26.Enums.CampaignStatusEnum.Types;
+using static Google.Ads.GoogleAds.V26.Enums.EuPoliticalAdvertisingStatusEnum.Types;
+using static Google.Ads.GoogleAds.V26.Enums.HotelAssetSuggestionStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V25
+namespace Google.Ads.GoogleAds.Examples.V26
 {
     /// <summary>
     /// This example shows how to create a Performance Max for travel goals campaign. It also uses
@@ -259,7 +259,7 @@ namespace Google.Ads.GoogleAds.Examples.V25
 
             // Issues a mutate request to create everything and prints the results.
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V25.GoogleAdsService);
+                client.GetService(Services.V26.GoogleAdsService);
             MutateGoogleAdsResponse response =
                 googleAdsServiceClient.Mutate(customerId.ToString(), mutateOperations);
             Console.WriteLine("Created the following entities for a campaign budget, a campaign, " +
@@ -280,7 +280,7 @@ namespace Google.Ads.GoogleAds.Examples.V25
         {
             // Get the TravelAssetSuggestionService client.
             TravelAssetSuggestionServiceClient travelAssetSuggestionService =
-                client.GetService(Services.V25.TravelAssetSuggestionService);
+                client.GetService(Services.V26.TravelAssetSuggestionService);
 
             SuggestTravelAssetsRequest request = new SuggestTravelAssetsRequest
             {
@@ -366,7 +366,7 @@ namespace Google.Ads.GoogleAds.Examples.V25
             }
 
             GoogleAdsServiceClient googleAdsService =
-                client.GetService(Services.V25.GoogleAdsService);
+                client.GetService(Services.V26.GoogleAdsService);
 
             MutateGoogleAdsResponse response =
                 googleAdsService.Mutate(customerId.ToString(), mutateOperations);
@@ -403,7 +403,7 @@ namespace Google.Ads.GoogleAds.Examples.V25
                 }
             };
 
-            AssetSetServiceClient assetSetService = client.GetService(Services.V25.AssetSetService);
+            AssetSetServiceClient assetSetService = client.GetService(Services.V26.AssetSetService);
 
             MutateAssetSetsResponse response = assetSetService.MutateAssetSets(
                 customerId.ToString(),
@@ -471,7 +471,7 @@ namespace Google.Ads.GoogleAds.Examples.V25
 
             // Issues a mutate request to create all entities.
             GoogleAdsServiceClient googleAdsServiceClient =
-                client.GetService(Services.V25.GoogleAdsService);
+                client.GetService(Services.V26.GoogleAdsService);
 
             MutateGoogleAdsResponse response =
                 googleAdsServiceClient.Mutate(customerId.ToString(), mutateOperations);

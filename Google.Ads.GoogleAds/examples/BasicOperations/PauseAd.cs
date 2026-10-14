@@ -16,14 +16,14 @@ using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.Gax.Util;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V25.Errors;
-using Google.Ads.GoogleAds.V25.Resources;
-using Google.Ads.GoogleAds.V25.Services;
+using Google.Ads.GoogleAds.V26.Errors;
+using Google.Ads.GoogleAds.V26.Resources;
+using Google.Ads.GoogleAds.V26.Services;
 using System;
 using System.Collections.Generic;
-using static Google.Ads.GoogleAds.V25.Enums.AdGroupAdStatusEnum.Types;
+using static Google.Ads.GoogleAds.V26.Enums.AdGroupAdStatusEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V25
+namespace Google.Ads.GoogleAds.Examples.V26
 {
     /// <summary>
     /// This code example pauses a given ad. To list all ads, run GetExpandedTextAds.cs.
@@ -90,7 +90,7 @@ namespace Google.Ads.GoogleAds.Examples.V25
         {
             // Get the AdGroupAdService.
             AdGroupAdServiceClient adGroupAdService = client.GetService(
-                Services.V25.AdGroupAdService);
+                Services.V26.AdGroupAdService);
 
             // Create the ad group ad.
             AdGroupAd adGroupAd = new AdGroupAd

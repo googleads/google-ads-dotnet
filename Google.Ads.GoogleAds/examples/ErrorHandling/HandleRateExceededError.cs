@@ -15,20 +15,20 @@
 using CommandLine;
 using Google.Ads.Gax.Examples;
 using Google.Ads.GoogleAds.Lib;
-using Google.Ads.GoogleAds.V25.Common;
-using Google.Ads.GoogleAds.V25.Errors;
-using Google.Ads.GoogleAds.V25.Resources;
-using Google.Ads.GoogleAds.V25.Services;
+using Google.Ads.GoogleAds.V26.Common;
+using Google.Ads.GoogleAds.V26.Errors;
+using Google.Ads.GoogleAds.V26.Resources;
+using Google.Ads.GoogleAds.V26.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using static Google.Ads.GoogleAds.V25.Enums.AdGroupCriterionStatusEnum.Types;
-using static Google.Ads.GoogleAds.V25.Enums.KeywordMatchTypeEnum.Types;
-using static Google.Ads.GoogleAds.V25.Errors.QuotaErrorEnum.Types;
+using static Google.Ads.GoogleAds.V26.Enums.AdGroupCriterionStatusEnum.Types;
+using static Google.Ads.GoogleAds.V26.Enums.KeywordMatchTypeEnum.Types;
+using static Google.Ads.GoogleAds.V26.Errors.QuotaErrorEnum.Types;
 
-namespace Google.Ads.GoogleAds.Examples.V25
+namespace Google.Ads.GoogleAds.Examples.V26
 {
     /// <summary>
     /// This code example demonstrates how to handle RateExceededError in an application.
@@ -122,7 +122,7 @@ namespace Google.Ads.GoogleAds.Examples.V25
             {
                 // Get the AdGroupCriterionServiceClient.
                 AdGroupCriterionServiceClient adGroupCriterionService =
-                    client.GetService(Services.V25.AdGroupCriterionService);
+                    client.GetService(Services.V26.AdGroupCriterionService);
 
                 List<AdGroupCriterionOperation> operations = new List<AdGroupCriterionOperation>();
 
