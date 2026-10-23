@@ -75,7 +75,6 @@ namespace Google.Ads.GoogleAds.Examples
 
             // GoogleAdsConfig googleAdsConfig = new GoogleAdsConfig()
             // {
-            //     DeveloperToken = developerToken,
             //     LoginCustomerId = loginCustomerId.ToString(),
             //     OAuth2ClientId = oAuth2clientId,
             //     OAuth2ClientSecret = oAuth2Secret,
@@ -88,7 +87,6 @@ namespace Google.Ads.GoogleAds.Examples
             // creating a GoogleAdsConfig object and do
             // GoogleAdsClient googleAdsClient = new GoogleAdsClient();
 
-            // string developerToken = "INSERT_YOUR_DEVELOPER_TOKEN_HERE";
             // string oAuth2clientId = "INSERT_OAUTH2_CLIENT_ID_HERE";
             // string oAuth2Secret = "INSERT_OAUTH2_CLIENT_SECRET_HERE";
             // string oAuth2RefreshToken = "INSERT_OAUTH2_REFRESH_TOKEN_HERE";
