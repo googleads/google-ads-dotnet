@@ -35,18 +35,18 @@ namespace Google.Ads.GoogleAds.V26.Common {
             "dGVudEF0dGVzdGF0aW9uU3RhdHVzRW51bS5TeW50aGV0aWNDb250ZW50QXR0",
             "ZXN0YXRpb25TdGF0dXMSYQoGc291cmNlGAIgASgOMlEuZ29vZ2xlLmFkcy5n",
             "b29nbGVhZHMudjI2LmVudW1zLlN5bnRoZXRpY0NvbnRlbnRTb3VyY2VFbnVt",
-            "LlN5bnRoZXRpY0NvbnRlbnRTb3VyY2Ui0wEKFFN5bnRoZXRpY0NvbnRlbnRJ",
+            "LlN5bnRoZXRpY0NvbnRlbnRTb3VyY2Ui1AEKFFN5bnRoZXRpY0NvbnRlbnRJ",
             "bmZvElwKFmFkdmVydGlzZXJfYXR0ZXN0YXRpb24YASABKAsyPC5nb29nbGUu",
             "YWRzLmdvb2dsZWFkcy52MjYuY29tbW9uLlN5bnRoZXRpY0NvbnRlbnRBdHRl",
-            "c3RhdGlvbhJdChJzeXN0ZW1fYXR0ZXN0YXRpb24YAiABKAsyPC5nb29nbGUu",
+            "c3RhdGlvbhJeChJzeXN0ZW1fYXR0ZXN0YXRpb24YAiABKAsyPC5nb29nbGUu",
             "YWRzLmdvb2dsZWFkcy52MjYuY29tbW9uLlN5bnRoZXRpY0NvbnRlbnRBdHRl",
-            "c3RhdGlvbkID4EEDQvkBCiNjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI2",
-            "LmNvbW1vbkIZU3ludGhldGljQ29udGVudEluZm9Qcm90b1ABWkVnb29nbGUu",
-            "Z29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMv",
-            "djI2L2NvbW1vbjtjb21tb26iAgNHQUGqAh9Hb29nbGUuQWRzLkdvb2dsZUFk",
-            "cy5WMjYuQ29tbW9uygIfR29vZ2xlXEFkc1xHb29nbGVBZHNcVjI2XENvbW1v",
-            "buoCI0dvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyNjo6Q29tbW9uYgZwcm90",
-            "bzM="));
+            "c3RhdGlvbkIE4kEBA0L5AQojY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
+            "Ni5jb21tb25CGVN5bnRoZXRpY0NvbnRlbnRJbmZvUHJvdG9QAVpFZ29vZ2xl",
+            "LmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRz",
+            "L3YyNi9jb21tb247Y29tbW9uogIDR0FBqgIfR29vZ2xlLkFkcy5Hb29nbGVB",
+            "ZHMuVjI2LkNvbW1vbsoCH0dvb2dsZVxBZHNcR29vZ2xlQWRzXFYyNlxDb21t",
+            "b27qAiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjY6OkNvbW1vbmIGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V26.Enums.SyntheticContentAttestationStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V26.Enums.SyntheticContentSourceReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -111,7 +111,8 @@ namespace Google.Ads.GoogleAds.V26.Common {
     public const int StatusFieldNumber = 1;
     private global::Google.Ads.GoogleAds.V26.Enums.SyntheticContentAttestationStatusEnum.Types.SyntheticContentAttestationStatus status_ = global::Google.Ads.GoogleAds.V26.Enums.SyntheticContentAttestationStatusEnum.Types.SyntheticContentAttestationStatus.Unspecified;
     /// <summary>
-    /// Indicates whether the content is considered synthetic by this source.
+    /// Indicates the attestation status for whether the content should be labeled
+    /// as created or edited with AI by this source.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

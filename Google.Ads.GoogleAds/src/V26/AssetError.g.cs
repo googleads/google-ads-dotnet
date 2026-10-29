@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V26.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjFnb29nbGUvYWRzL2dvb2dsZWFkcy92MjYvZXJyb3JzL2Fzc2V0X2Vycm9y",
-            "LnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFkcy52MjYuZXJyb3JzIr4OCg5B",
-            "c3NldEVycm9yRW51bSKrDgoKQXNzZXRFcnJvchIPCgtVTlNQRUNJRklFRBAA",
+            "LnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFkcy52MjYuZXJyb3JzIuoOCg5B",
+            "c3NldEVycm9yRW51bSLXDgoKQXNzZXRFcnJvchIPCgtVTlNQRUNJRklFRBAA",
             "EgsKB1VOS05PV04QARIsCihDVVNUT01FUl9OT1RfT05fQUxMT1dMSVNUX0ZP",
             "Ul9BU1NFVF9UWVBFEA0SEwoPRFVQTElDQVRFX0FTU0VUEAMSGAoURFVQTElD",
             "QVRFX0FTU0VUX05BTUUQBBIZChVBU1NFVF9EQVRBX0lTX01JU1NJTkcQBRIc",
@@ -67,12 +67,13 @@ namespace Google.Ads.GoogleAds.V26.Errors {
             "REVfVFlQRRArEioKJlBST01PVElPTl9RUl9DT0RFX0NBTk5PVF9DT05UQUlO",
             "X0xJTktTECwSJAogUFJPTU9USU9OX1FSX0NPREVfSU5WQUxJRF9GT1JNQVQQ",
             "LRIwCixDVVNUT01FUl9OT1RfT05fQUxMT1dMSVNUX0ZPUl9NRVNTQUdFX0FT",
-            "U0VUUxAuQu8BCiNjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI2LmVycm9y",
-            "c0IPQXNzZXRFcnJvclByb3RvUAFaRWdvb2dsZS5nb2xhbmcub3JnL2dlbnBy",
-            "b3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MjYvZXJyb3JzO2Vycm9y",
-            "c6ICA0dBQaoCH0dvb2dsZS5BZHMuR29vZ2xlQWRzLlYyNi5FcnJvcnPKAh9H",
-            "b29nbGVcQWRzXEdvb2dsZUFkc1xWMjZcRXJyb3Jz6gIjR29vZ2xlOjpBZHM6",
-            "Okdvb2dsZUFkczo6VjI2OjpFcnJvcnNiBnByb3RvMw=="));
+            "U0VUUxAuEioKJlBBUlRORVJfUFJPTU9USU9OX0lEX1RZUEVfSU5DT01QQVRJ",
+            "QkxFEC9C7wEKI2NvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjYuZXJyb3Jz",
+            "Qg9Bc3NldEVycm9yUHJvdG9QAVpFZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJv",
+            "dG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YyNi9lcnJvcnM7ZXJyb3Jz",
+            "ogIDR0FBqgIfR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjI2LkVycm9yc8oCH0dv",
+            "b2dsZVxBZHNcR29vZ2xlQWRzXFYyNlxFcnJvcnPqAiNHb29nbGU6OkFkczo6",
+            "R29vZ2xlQWRzOjpWMjY6OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -449,6 +450,11 @@ namespace Google.Ads.GoogleAds.V26.Errors {
         /// The customer is not in the allow-list for Business message asset type.
         /// </summary>
         [pbr::OriginalName("CUSTOMER_NOT_ON_ALLOWLIST_FOR_MESSAGE_ASSETS")] CustomerNotOnAllowlistForMessageAssets = 46,
+        /// <summary>
+        /// The partner promotion ID is set as the oneof variant (int_value or
+        /// string_value) that this account's promotion integration does not accept.
+        /// </summary>
+        [pbr::OriginalName("PARTNER_PROMOTION_ID_TYPE_INCOMPATIBLE")] PartnerPromotionIdTypeIncompatible = 47,
       }
 
     }

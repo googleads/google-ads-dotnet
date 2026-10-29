@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V26.Enums {
           string.Concat(
             "Cjhnb29nbGUvYWRzL2dvb2dsZWFkcy92MjYvZW51bXMvcmVjb21tZW5kYXRp",
             "b25fdHlwZS5wcm90bxIeZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI2LmVudW1z",
-            "IpYPChZSZWNvbW1lbmRhdGlvblR5cGVFbnVtIvsOChJSZWNvbW1lbmRhdGlv",
+            "IrYPChZSZWNvbW1lbmRhdGlvblR5cGVFbnVtIpsPChJSZWNvbW1lbmRhdGlv",
             "blR5cGUSDwoLVU5TUEVDSUZJRUQQABILCgdVTktOT1dOEAESEwoPQ0FNUEFJ",
             "R05fQlVER0VUEAISCwoHS0VZV09SRBADEgsKB1RFWFRfQUQQBBIVChFUQVJH",
             "RVRfQ1BBX09QVF9JThAFEh8KG01BWElNSVpFX0NPTlZFUlNJT05TX09QVF9J",
@@ -69,12 +69,13 @@ namespace Google.Ads.GoogleAds.V26.Enums {
             "RklDX0FQUF9HT0FMEDsSLAooUkFJU0VfVEFSR0VUX0NQQV9QRVJGT1JNQU5D",
             "RV9CSURfVE9PX0xPVxA9Ei0KKUxPV0VSX1RBUkdFVF9ST0FTX1BFUkZPUk1B",
             "TkNFX0JJRF9UT09fTE9XED4SJAogUkFJU0VfQlVER0VUX1BFUkZPUk1BTkNF",
-            "X1RPT19MT1cQP0LxAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNi5l",
-            "bnVtc0IXUmVjb21tZW5kYXRpb25UeXBlUHJvdG9QAVpDZ29vZ2xlLmdvbGFu",
-            "Zy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YyNi9l",
-            "bnVtcztlbnVtc6ICA0dBQaoCHkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYyNi5F",
-            "bnVtc8oCHkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYyNlxFbnVtc+oCIkdvb2ds",
-            "ZTo6QWRzOjpHb29nbGVBZHM6OlYyNjo6RW51bXNiBnByb3RvMw=="));
+            "X1RPT19MT1cQPxIeChpPUFRJTUlaRV9GT1JfTkVXX0NVU1RPTUVSUxBAQvEB",
+            "CiJjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI2LmVudW1zQhdSZWNvbW1l",
+            "bmRhdGlvblR5cGVQcm90b1ABWkNnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90",
+            "by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjI2L2VudW1zO2VudW1zogID",
+            "R0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjI2LkVudW1zygIeR29vZ2xl",
+            "XEFkc1xHb29nbGVBZHNcVjI2XEVudW1z6gIiR29vZ2xlOjpBZHM6Okdvb2ds",
+            "ZUFkczo6VjI2OjpFbnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -540,6 +541,10 @@ namespace Google.Ads.GoogleAds.V26.Enums {
         /// Recommendation to raise budget when it is too low for Search campaigns.
         /// </summary>
         [pbr::OriginalName("RAISE_BUDGET_PERFORMANCE_TOO_LOW")] RaiseBudgetPerformanceTooLow = 63,
+        /// <summary>
+        /// Recommendation to optimize for new customers.
+        /// </summary>
+        [pbr::OriginalName("OPTIMIZE_FOR_NEW_CUSTOMERS")] OptimizeForNewCustomers = 64,
       }
 
     }

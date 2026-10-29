@@ -226,11 +226,13 @@ namespace Google.Ads.GoogleAds.V26.Enums {
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 1,
         /// <summary>
-        /// The content is attested as not synthetic.
+        /// The content is attested as not needing to be labeled as created or edited
+        /// with AI.
         /// </summary>
         [pbr::OriginalName("NOT_SYNTHETIC")] NotSynthetic = 2,
         /// <summary>
-        /// The content is attested as synthetic.
+        /// The content is attested as needing to be labeled as created or edited
+        /// with AI.
         /// </summary>
         [pbr::OriginalName("IS_SYNTHETIC")] IsSynthetic = 3,
       }

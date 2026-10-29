@@ -66,49 +66,49 @@ namespace Google.Ads.GoogleAds.V26.Common {
             "dGUSRgoOdXNlcl9hdHRyaWJ1dGUYAyABKAsyLi5nb29nbGUuYWRzLmdvb2ds",
             "ZWFkcy52MjYuY29tbW9uLlVzZXJBdHRyaWJ1dGUSPgoHY29uc2VudBgEIAEo",
             "CzIoLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNi5jb21tb24uQ29uc2VudEgA",
-            "iAEBQgoKCF9jb25zZW50IowECg1Vc2VyQXR0cmlidXRlEiIKFWxpZmV0aW1l",
+            "iAEBQgoKCF9jb25zZW50Io8ECg1Vc2VyQXR0cmlidXRlEiIKFWxpZmV0aW1l",
             "X3ZhbHVlX21pY3JvcxgBIAEoA0gAiAEBEiIKFWxpZmV0aW1lX3ZhbHVlX2J1",
             "Y2tldBgCIAEoBUgBiAEBEh8KF2xhc3RfcHVyY2hhc2VfZGF0ZV90aW1lGAMg",
             "ASgJEh4KFmF2ZXJhZ2VfcHVyY2hhc2VfY291bnQYBCABKAUSJQodYXZlcmFn",
             "ZV9wdXJjaGFzZV92YWx1ZV9taWNyb3MYBSABKAMSHQoVYWNxdWlzaXRpb25f",
             "ZGF0ZV90aW1lGAYgASgJEk8KEHNob3BwaW5nX2xveWFsdHkYByABKAsyMC5n",
             "b29nbGUuYWRzLmdvb2dsZWFkcy52MjYuY29tbW9uLlNob3BwaW5nTG95YWx0",
-            "eUgCiAEBEhwKD2xpZmVjeWNsZV9zdGFnZRgIIAEoCUID4EEBEiUKGGZpcnN0",
-            "X3B1cmNoYXNlX2RhdGVfdGltZRgJIAEoCUID4EEBEk0KD2V2ZW50X2F0dHJp",
-            "YnV0ZRgKIAMoCzIvLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNi5jb21tb24u",
-            "RXZlbnRBdHRyaWJ1dGVCA+BBAUIYChZfbGlmZXRpbWVfdmFsdWVfbWljcm9z",
-            "QhgKFl9saWZldGltZV92YWx1ZV9idWNrZXRCEwoRX3Nob3BwaW5nX2xveWFs",
-            "dHkilAEKDkV2ZW50QXR0cmlidXRlEhIKBWV2ZW50GAEgASgJQgPgQQISHAoP",
-            "ZXZlbnRfZGF0ZV90aW1lGAIgASgJQgPgQQISUAoOaXRlbV9hdHRyaWJ1dGUY",
-            "AyADKAsyMy5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjYuY29tbW9uLkV2ZW50",
-            "SXRlbUF0dHJpYnV0ZUID4EECIioKEkV2ZW50SXRlbUF0dHJpYnV0ZRIUCgdp",
-            "dGVtX2lkGAEgASgJQgPgQQEiPQoPU2hvcHBpbmdMb3lhbHR5EhkKDGxveWFs",
-            "dHlfdGllchgBIAEoCUgAiAEBQg8KDV9sb3lhbHR5X3RpZXIikQEKHUN1c3Rv",
-            "bWVyTWF0Y2hVc2VyTGlzdE1ldGFkYXRhEhYKCXVzZXJfbGlzdBgCIAEoCUgA",
-            "iAEBEj4KB2NvbnNlbnQYAyABKAsyKC5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MjYuY29tbW9uLkNvbnNlbnRIAYgBAUIMCgpfdXNlcl9saXN0QgoKCF9jb25z",
-            "ZW50IpcCChJTdG9yZVNhbGVzTWV0YWRhdGESHQoQbG95YWx0eV9mcmFjdGlv",
-            "bhgFIAEoAUgAiAEBEigKG3RyYW5zYWN0aW9uX3VwbG9hZF9mcmFjdGlvbhgG",
-            "IAEoAUgBiAEBEhcKCmN1c3RvbV9rZXkYByABKAlIAogBARJbChR0aGlyZF9w",
-            "YXJ0eV9tZXRhZGF0YRgDIAEoCzI9Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
-            "Ni5jb21tb24uU3RvcmVTYWxlc1RoaXJkUGFydHlNZXRhZGF0YUITChFfbG95",
-            "YWx0eV9mcmFjdGlvbkIeChxfdHJhbnNhY3Rpb25fdXBsb2FkX2ZyYWN0aW9u",
-            "Qg0KC19jdXN0b21fa2V5IpgDChxTdG9yZVNhbGVzVGhpcmRQYXJ0eU1ldGFk",
-            "YXRhEigKG2FkdmVydGlzZXJfdXBsb2FkX2RhdGVfdGltZRgHIAEoCUgAiAEB",
-            "EicKGnZhbGlkX3RyYW5zYWN0aW9uX2ZyYWN0aW9uGAggASgBSAGIAQESIwoW",
-            "cGFydG5lcl9tYXRjaF9mcmFjdGlvbhgJIAEoAUgCiAEBEiQKF3BhcnRuZXJf",
-            "dXBsb2FkX2ZyYWN0aW9uGAogASgBSAOIAQESIgoVYnJpZGdlX21hcF92ZXJz",
-            "aW9uX2lkGAsgASgJSASIAQESFwoKcGFydG5lcl9pZBgMIAEoA0gFiAEBQh4K",
-            "HF9hZHZlcnRpc2VyX3VwbG9hZF9kYXRlX3RpbWVCHQobX3ZhbGlkX3RyYW5z",
-            "YWN0aW9uX2ZyYWN0aW9uQhkKF19wYXJ0bmVyX21hdGNoX2ZyYWN0aW9uQhoK",
-            "GF9wYXJ0bmVyX3VwbG9hZF9mcmFjdGlvbkIYChZfYnJpZGdlX21hcF92ZXJz",
-            "aW9uX2lkQg0KC19wYXJ0bmVyX2lkQvQBCiNjb20uZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjI2LmNvbW1vbkIUT2ZmbGluZVVzZXJEYXRhUHJvdG9QAVpFZ29v",
-            "Z2xlLmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xl",
-            "YWRzL3YyNi9jb21tb247Y29tbW9uogIDR0FBqgIfR29vZ2xlLkFkcy5Hb29n",
-            "bGVBZHMuVjI2LkNvbW1vbsoCH0dvb2dsZVxBZHNcR29vZ2xlQWRzXFYyNlxD",
-            "b21tb27qAiNHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjY6OkNvbW1vbmIG",
-            "cHJvdG8z"));
+            "eUgCiAEBEh0KD2xpZmVjeWNsZV9zdGFnZRgIIAEoCUIE4kEBARImChhmaXJz",
+            "dF9wdXJjaGFzZV9kYXRlX3RpbWUYCSABKAlCBOJBAQESTgoPZXZlbnRfYXR0",
+            "cmlidXRlGAogAygLMi8uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI2LmNvbW1v",
+            "bi5FdmVudEF0dHJpYnV0ZUIE4kEBAUIYChZfbGlmZXRpbWVfdmFsdWVfbWlj",
+            "cm9zQhgKFl9saWZldGltZV92YWx1ZV9idWNrZXRCEwoRX3Nob3BwaW5nX2xv",
+            "eWFsdHkilwEKDkV2ZW50QXR0cmlidXRlEhMKBWV2ZW50GAEgASgJQgTiQQEC",
+            "Eh0KD2V2ZW50X2RhdGVfdGltZRgCIAEoCUIE4kEBAhJRCg5pdGVtX2F0dHJp",
+            "YnV0ZRgDIAMoCzIzLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNi5jb21tb24u",
+            "RXZlbnRJdGVtQXR0cmlidXRlQgTiQQECIisKEkV2ZW50SXRlbUF0dHJpYnV0",
+            "ZRIVCgdpdGVtX2lkGAEgASgJQgTiQQEBIj0KD1Nob3BwaW5nTG95YWx0eRIZ",
+            "Cgxsb3lhbHR5X3RpZXIYASABKAlIAIgBAUIPCg1fbG95YWx0eV90aWVyIpEB",
+            "Ch1DdXN0b21lck1hdGNoVXNlckxpc3RNZXRhZGF0YRIWCgl1c2VyX2xpc3QY",
+            "AiABKAlIAIgBARI+Cgdjb25zZW50GAMgASgLMiguZ29vZ2xlLmFkcy5nb29n",
+            "bGVhZHMudjI2LmNvbW1vbi5Db25zZW50SAGIAQFCDAoKX3VzZXJfbGlzdEIK",
+            "CghfY29uc2VudCKXAgoSU3RvcmVTYWxlc01ldGFkYXRhEh0KEGxveWFsdHlf",
+            "ZnJhY3Rpb24YBSABKAFIAIgBARIoCht0cmFuc2FjdGlvbl91cGxvYWRfZnJh",
+            "Y3Rpb24YBiABKAFIAYgBARIXCgpjdXN0b21fa2V5GAcgASgJSAKIAQESWwoU",
+            "dGhpcmRfcGFydHlfbWV0YWRhdGEYAyABKAsyPS5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MjYuY29tbW9uLlN0b3JlU2FsZXNUaGlyZFBhcnR5TWV0YWRhdGFC",
+            "EwoRX2xveWFsdHlfZnJhY3Rpb25CHgocX3RyYW5zYWN0aW9uX3VwbG9hZF9m",
+            "cmFjdGlvbkINCgtfY3VzdG9tX2tleSKYAwocU3RvcmVTYWxlc1RoaXJkUGFy",
+            "dHlNZXRhZGF0YRIoChthZHZlcnRpc2VyX3VwbG9hZF9kYXRlX3RpbWUYByAB",
+            "KAlIAIgBARInChp2YWxpZF90cmFuc2FjdGlvbl9mcmFjdGlvbhgIIAEoAUgB",
+            "iAEBEiMKFnBhcnRuZXJfbWF0Y2hfZnJhY3Rpb24YCSABKAFIAogBARIkChdw",
+            "YXJ0bmVyX3VwbG9hZF9mcmFjdGlvbhgKIAEoAUgDiAEBEiIKFWJyaWRnZV9t",
+            "YXBfdmVyc2lvbl9pZBgLIAEoCUgEiAEBEhcKCnBhcnRuZXJfaWQYDCABKANI",
+            "BYgBAUIeChxfYWR2ZXJ0aXNlcl91cGxvYWRfZGF0ZV90aW1lQh0KG192YWxp",
+            "ZF90cmFuc2FjdGlvbl9mcmFjdGlvbkIZChdfcGFydG5lcl9tYXRjaF9mcmFj",
+            "dGlvbkIaChhfcGFydG5lcl91cGxvYWRfZnJhY3Rpb25CGAoWX2JyaWRnZV9t",
+            "YXBfdmVyc2lvbl9pZEINCgtfcGFydG5lcl9pZEL0AQojY29tLmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYyNi5jb21tb25CFE9mZmxpbmVVc2VyRGF0YVByb3Rv",
+            "UAFaRWdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRz",
+            "L2dvb2dsZWFkcy92MjYvY29tbW9uO2NvbW1vbqICA0dBQaoCH0dvb2dsZS5B",
+            "ZHMuR29vZ2xlQWRzLlYyNi5Db21tb27KAh9Hb29nbGVcQWRzXEdvb2dsZUFk",
+            "c1xWMjZcQ29tbW9u6gIjR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjI2OjpD",
+            "b21tb25iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V26.Common.ConsentReflection.Descriptor, global::Google.Ads.GoogleAds.V26.Enums.UserIdentifierSourceReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -682,6 +682,20 @@ namespace Google.Ads.GoogleAds.V26.Common {
 
   /// <summary>
   /// User identifying information.
+  ///
+  /// Each `UserIdentifier` object represents a single identifier using a
+  /// mutually exclusive `oneof`. Only one identifier field (`hashed_email`,
+  /// `hashed_phone_number`, `mobile_id`, `third_party_user_id`, or
+  /// `address_info`) may be set per `UserIdentifier` instance. Setting multiple
+  /// fields on the same `UserIdentifier` clears the previously set field. To
+  /// provide multiple identifiers for the same user (for example, both an email
+  /// address and a phone number), add separate `UserIdentifier` objects to the
+  /// `user_identifiers` list.
+  ///
+  /// Before hashing with SHA-256, normalize the raw values. For `hashed_email`
+  /// and address fields, trim leading and trailing whitespace and convert all
+  /// characters to lowercase. Phone numbers must be formatted in E.164 format
+  /// (for example, `+16502531234`) before hashing.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class UserIdentifier : pb::IMessage<UserIdentifier>
@@ -766,6 +780,8 @@ namespace Google.Ads.GoogleAds.V26.Common {
     public const int HashedEmailFieldNumber = 7;
     /// <summary>
     /// Hashed email address using SHA-256 hash function after normalization.
+    /// Normalize the email address by trimming leading and trailing whitespace
+    /// and converting all characters to lowercase before hashing with SHA-256.
     /// Accepted for Customer Match, Store Sales, ConversionUploadService, and
     /// ConversionAdjustmentUploadService.
     /// </summary>
@@ -797,7 +813,9 @@ namespace Google.Ads.GoogleAds.V26.Common {
     public const int HashedPhoneNumberFieldNumber = 8;
     /// <summary>
     /// Hashed phone number using SHA-256 hash function after normalization
-    /// (E164 standard). Accepted for Customer Match, Store Sales,
+    /// (E164 standard). Normalize the phone number by trimming whitespace and
+    /// formatting in E.164 format (for example, `+16502531234`) before hashing
+    /// with SHA-256. Accepted for Customer Match, Store Sales,
     /// ConversionUploadService, and ConversionAdjustmentUploadService.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

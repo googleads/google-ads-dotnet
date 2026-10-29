@@ -251,7 +251,8 @@ namespace Google.Ads.GoogleAds.V26.Enums {
         /// </summary>
         [pbr::OriginalName("DISPLAY_EXPRESS")] DisplayExpress = 5,
         /// <summary>
-        /// Smart Shopping campaigns.
+        /// Smart Shopping campaigns. New Smart Shopping campaigns cannot be
+        /// created.
         /// </summary>
         [pbr::OriginalName("SHOPPING_SMART_ADS")] ShoppingSmartAds = 6,
         /// <summary>
