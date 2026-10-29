@@ -1022,6 +1022,21 @@
         }
       }
     },
+    "CustomerBudgetNetworkSettingService": {
+      "clients": {
+        "grpc": {
+          "libraryClient": "CustomerBudgetNetworkSettingServiceClient",
+          "rpcs": {
+            "MutateCustomerBudgetNetworkSetting": {
+              "methods": [
+                "MutateCustomerBudgetNetworkSetting",
+                "MutateCustomerBudgetNetworkSettingAsync"
+              ]
+            }
+          }
+        }
+      }
+    },
     "CustomerClientLinkService": {
       "clients": {
         "grpc": {
@@ -1559,6 +1574,21 @@
               "methods": [
                 "MutateLabels",
                 "MutateLabelsAsync"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "LocalServicesEligibilityService": {
+      "clients": {
+        "grpc": {
+          "libraryClient": "LocalServicesEligibilityServiceClient",
+          "rpcs": {
+            "CheckLocalServicesEligibility": {
+              "methods": [
+                "CheckLocalServicesEligibility",
+                "CheckLocalServicesEligibilityAsync"
               ]
             }
           }

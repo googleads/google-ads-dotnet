@@ -505,6 +505,14 @@ namespace Google.Ads.GoogleAds
 
 
             /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v26/CustomerBudgetNetworkSettingService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<CustomerBudgetNetworkSettingServiceClient, CustomerBudgetNetworkSettingServiceSettings, GoogleAdsConfig> CustomerBudgetNetworkSettingService =
+                new ServiceTemplate<CustomerBudgetNetworkSettingServiceClient, CustomerBudgetNetworkSettingServiceSettings, GoogleAdsConfig>(Create);
+
+
+            /// <summary>
             /// See https://developers.google.com/google-ads/api/reference/rpc/v26/CustomerClientLinkService
             /// for details.
             /// </summary>
@@ -734,6 +742,14 @@ namespace Google.Ads.GoogleAds
             /// </summary>
             public static readonly ServiceTemplate<LabelServiceClient, LabelServiceSettings, GoogleAdsConfig> LabelService =
                 new ServiceTemplate<LabelServiceClient, LabelServiceSettings, GoogleAdsConfig>(Create);
+
+
+            /// <summary>
+            /// See https://developers.google.com/google-ads/api/reference/rpc/v26/LocalServicesEligibilityService
+            /// for details.
+            /// </summary>
+            public static readonly ServiceTemplate<LocalServicesEligibilityServiceClient, LocalServicesEligibilityServiceSettings, GoogleAdsConfig> LocalServicesEligibilityService =
+                new ServiceTemplate<LocalServicesEligibilityServiceClient, LocalServicesEligibilityServiceSettings, GoogleAdsConfig>(Create);
 
 
             /// <summary>
@@ -1160,6 +1176,10 @@ namespace Google.Ads.GoogleAds
                         return CustomerAssetSetServiceClient.Create(callInvoker, (CustomerAssetSetServiceSettings) settings);
 
 
+                    case "CustomerBudgetNetworkSettingServiceClient":
+                        return CustomerBudgetNetworkSettingServiceClient.Create(callInvoker, (CustomerBudgetNetworkSettingServiceSettings) settings);
+
+
                     case "CustomerClientLinkServiceClient":
                         return CustomerClientLinkServiceClient.Create(callInvoker, (CustomerClientLinkServiceSettings) settings);
 
@@ -1274,6 +1294,10 @@ namespace Google.Ads.GoogleAds
 
                     case "LabelServiceClient":
                         return LabelServiceClient.Create(callInvoker, (LabelServiceSettings) settings);
+
+
+                    case "LocalServicesEligibilityServiceClient":
+                        return LocalServicesEligibilityServiceClient.Create(callInvoker, (LocalServicesEligibilityServiceSettings) settings);
 
 
                     case "LocalServicesLeadServiceClient":
