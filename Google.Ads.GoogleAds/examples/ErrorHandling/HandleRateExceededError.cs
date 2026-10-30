@@ -169,7 +169,7 @@ namespace Google.Ads.GoogleAds.Examples.V26
                     {
                         // Checks if any of the errors are QuotaError.RESOURCE_EXHAUSTED or
                         // QuotaError.RESOURCE_TEMPORARILY_EXHAUSTED.
-                        // Note: The code assumes that the developer token is approved for
+                        // Note: The code assumes that your Google Cloud project is approved for
                         // Standard Access.
                         if (e.Failure != null)
                         {

@@ -253,7 +253,8 @@ namespace Google.Ads.GoogleAds.V26.Enums {
         /// </summary>
         [pbr::OriginalName("HOTEL_ADS")] HotelAds = 6,
         /// <summary>
-        /// The type for ad groups in Smart Shopping campaigns.
+        /// The type for ad groups in Smart Shopping campaigns. New Smart Shopping
+        /// campaigns cannot be created.
         /// </summary>
         [pbr::OriginalName("SHOPPING_SMART_ADS")] ShoppingSmartAds = 7,
         /// <summary>

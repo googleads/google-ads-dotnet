@@ -32,42 +32,42 @@ namespace Google.Ads.GoogleAds.V26.Services {
             "ZS9hcGkvYW5ub3RhdGlvbnMucHJvdG8aF2dvb2dsZS9hcGkvY2xpZW50LnBy",
             "b3RvGh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9yLnByb3RvGhlnb29nbGUv",
             "YXBpL3Jlc291cmNlLnByb3RvGiBnb29nbGUvcHJvdG9idWYvZmllbGRfbWFz",
-            "ay5wcm90bxoXZ29vZ2xlL3JwYy9zdGF0dXMucHJvdG8iqQIKHE11dGF0ZUNh",
-            "bXBhaWduQnVkZ2V0c1JlcXVlc3QSGAoLY3VzdG9tZXJfaWQYASABKAlCA+BB",
-            "AhJTCgpvcGVyYXRpb25zGAIgAygLMjouZ29vZ2xlLmFkcy5nb29nbGVhZHMu",
-            "djI2LnNlcnZpY2VzLkNhbXBhaWduQnVkZ2V0T3BlcmF0aW9uQgPgQQISFwoP",
-            "cGFydGlhbF9mYWlsdXJlGAMgASgIEhUKDXZhbGlkYXRlX29ubHkYBCABKAgS",
-            "agoVcmVzcG9uc2VfY29udGVudF90eXBlGAUgASgOMksuZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjI2LmVudW1zLlJlc3BvbnNlQ29udGVudFR5cGVFbnVtLlJl",
-            "c3BvbnNlQ29udGVudFR5cGUiowIKF0NhbXBhaWduQnVkZ2V0T3BlcmF0aW9u",
-            "Ei8KC3VwZGF0ZV9tYXNrGAQgASgLMhouZ29vZ2xlLnByb3RvYnVmLkZpZWxk",
-            "TWFzaxJECgZjcmVhdGUYASABKAsyMi5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
-            "MjYucmVzb3VyY2VzLkNhbXBhaWduQnVkZ2V0SAASRAoGdXBkYXRlGAIgASgL",
-            "MjIuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI2LnJlc291cmNlcy5DYW1wYWln",
-            "bkJ1ZGdldEgAEj4KBnJlbW92ZRgDIAEoCUIs+kEpCidnb29nbGVhZHMuZ29v",
-            "Z2xlYXBpcy5jb20vQ2FtcGFpZ25CdWRnZXRIAEILCglvcGVyYXRpb24iogEK",
-            "HU11dGF0ZUNhbXBhaWduQnVkZ2V0c1Jlc3BvbnNlEjEKFXBhcnRpYWxfZmFp",
-            "bHVyZV9lcnJvchgDIAEoCzISLmdvb2dsZS5ycGMuU3RhdHVzEk4KB3Jlc3Vs",
-            "dHMYAiADKAsyPS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjYuc2VydmljZXMu",
-            "TXV0YXRlQ2FtcGFpZ25CdWRnZXRSZXN1bHQirgEKGk11dGF0ZUNhbXBhaWdu",
-            "QnVkZ2V0UmVzdWx0EkMKDXJlc291cmNlX25hbWUYASABKAlCLPpBKQonZ29v",
-            "Z2xlYWRzLmdvb2dsZWFwaXMuY29tL0NhbXBhaWduQnVkZ2V0EksKD2NhbXBh",
-            "aWduX2J1ZGdldBgCIAEoCzIyLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNi5y",
-            "ZXNvdXJjZXMuQ2FtcGFpZ25CdWRnZXQy1gIKFUNhbXBhaWduQnVkZ2V0U2Vy",
-            "dmljZRL1AQoVTXV0YXRlQ2FtcGFpZ25CdWRnZXRzEj8uZ29vZ2xlLmFkcy5n",
-            "b29nbGVhZHMudjI2LnNlcnZpY2VzLk11dGF0ZUNhbXBhaWduQnVkZ2V0c1Jl",
-            "cXVlc3QaQC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjYuc2VydmljZXMuTXV0",
-            "YXRlQ2FtcGFpZ25CdWRnZXRzUmVzcG9uc2UiWdpBFmN1c3RvbWVyX2lkLG9w",
-            "ZXJhdGlvbnOC0+STAjoiNS92MjYvY3VzdG9tZXJzL3tjdXN0b21lcl9pZD0q",
-            "fS9jYW1wYWlnbkJ1ZGdldHM6bXV0YXRlOgEqGkXKQRhnb29nbGVhZHMuZ29v",
-            "Z2xlYXBpcy5jb23SQSdodHRwczovL3d3dy5nb29nbGVhcGlzLmNvbS9hdXRo",
-            "L2Fkd29yZHNChgIKJWNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjYuc2Vy",
-            "dmljZXNCGkNhbXBhaWduQnVkZ2V0U2VydmljZVByb3RvUAFaSWdvb2dsZS5n",
-            "b2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92",
-            "MjYvc2VydmljZXM7c2VydmljZXOiAgNHQUGqAiFHb29nbGUuQWRzLkdvb2ds",
-            "ZUFkcy5WMjYuU2VydmljZXPKAiFHb29nbGVcQWRzXEdvb2dsZUFkc1xWMjZc",
-            "U2VydmljZXPqAiVHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjY6OlNlcnZp",
-            "Y2VzYgZwcm90bzM="));
+            "ay5wcm90bxoXZ29vZ2xlL3JwYy9zdGF0dXMucHJvdG8iqwIKHE11dGF0ZUNh",
+            "bXBhaWduQnVkZ2V0c1JlcXVlc3QSGQoLY3VzdG9tZXJfaWQYASABKAlCBOJB",
+            "AQISVAoKb3BlcmF0aW9ucxgCIAMoCzI6Lmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYyNi5zZXJ2aWNlcy5DYW1wYWlnbkJ1ZGdldE9wZXJhdGlvbkIE4kEBAhIX",
+            "Cg9wYXJ0aWFsX2ZhaWx1cmUYAyABKAgSFQoNdmFsaWRhdGVfb25seRgEIAEo",
+            "CBJqChVyZXNwb25zZV9jb250ZW50X3R5cGUYBSABKA4ySy5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MjYuZW51bXMuUmVzcG9uc2VDb250ZW50VHlwZUVudW0u",
+            "UmVzcG9uc2VDb250ZW50VHlwZSKjAgoXQ2FtcGFpZ25CdWRnZXRPcGVyYXRp",
+            "b24SLwoLdXBkYXRlX21hc2sYBCABKAsyGi5nb29nbGUucHJvdG9idWYuRmll",
+            "bGRNYXNrEkQKBmNyZWF0ZRgBIAEoCzIyLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYyNi5yZXNvdXJjZXMuQ2FtcGFpZ25CdWRnZXRIABJECgZ1cGRhdGUYAiAB",
+            "KAsyMi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjYucmVzb3VyY2VzLkNhbXBh",
+            "aWduQnVkZ2V0SAASPgoGcmVtb3ZlGAMgASgJQiz6QSkKJ2dvb2dsZWFkcy5n",
+            "b29nbGVhcGlzLmNvbS9DYW1wYWlnbkJ1ZGdldEgAQgsKCW9wZXJhdGlvbiKi",
+            "AQodTXV0YXRlQ2FtcGFpZ25CdWRnZXRzUmVzcG9uc2USMQoVcGFydGlhbF9m",
+            "YWlsdXJlX2Vycm9yGAMgASgLMhIuZ29vZ2xlLnJwYy5TdGF0dXMSTgoHcmVz",
+            "dWx0cxgCIAMoCzI9Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNi5zZXJ2aWNl",
+            "cy5NdXRhdGVDYW1wYWlnbkJ1ZGdldFJlc3VsdCKuAQoaTXV0YXRlQ2FtcGFp",
+            "Z25CdWRnZXRSZXN1bHQSQwoNcmVzb3VyY2VfbmFtZRgBIAEoCUIs+kEpCidn",
+            "b29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vQ2FtcGFpZ25CdWRnZXQSSwoPY2Ft",
+            "cGFpZ25fYnVkZ2V0GAIgASgLMjIuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI2",
+            "LnJlc291cmNlcy5DYW1wYWlnbkJ1ZGdldDLWAgoVQ2FtcGFpZ25CdWRnZXRT",
+            "ZXJ2aWNlEvUBChVNdXRhdGVDYW1wYWlnbkJ1ZGdldHMSPy5nb29nbGUuYWRz",
+            "Lmdvb2dsZWFkcy52MjYuc2VydmljZXMuTXV0YXRlQ2FtcGFpZ25CdWRnZXRz",
+            "UmVxdWVzdBpALmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNi5zZXJ2aWNlcy5N",
+            "dXRhdGVDYW1wYWlnbkJ1ZGdldHNSZXNwb25zZSJZ2kEWY3VzdG9tZXJfaWQs",
+            "b3BlcmF0aW9uc4LT5JMCOiI1L3YyNi9jdXN0b21lcnMve2N1c3RvbWVyX2lk",
+            "PSp9L2NhbXBhaWduQnVkZ2V0czptdXRhdGU6ASoaRcpBGGdvb2dsZWFkcy5n",
+            "b29nbGVhcGlzLmNvbdJBJ2h0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL2F1",
+            "dGgvYWR3b3Jkc0KGAgolY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNi5z",
+            "ZXJ2aWNlc0IaQ2FtcGFpZ25CdWRnZXRTZXJ2aWNlUHJvdG9QAVpJZ29vZ2xl",
+            "LmdvbGFuZy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRz",
+            "L3YyNi9zZXJ2aWNlcztzZXJ2aWNlc6ICA0dBQaoCIUdvb2dsZS5BZHMuR29v",
+            "Z2xlQWRzLlYyNi5TZXJ2aWNlc8oCIUdvb2dsZVxBZHNcR29vZ2xlQWRzXFYy",
+            "NlxTZXJ2aWNlc+oCJUdvb2dsZTo6QWRzOjpHb29nbGVBZHM6OlYyNjo6U2Vy",
+            "dmljZXNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V26.Enums.ResponseContentTypeReflection.Descriptor, global::Google.Ads.GoogleAds.V26.Resources.CampaignBudgetReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.ClientReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.FieldMaskReflection.Descriptor, global::Google.Rpc.StatusReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -84,6 +84,11 @@ namespace Google.Ads.GoogleAds.V26.Services {
   /// <summary>
   /// Request message for
   /// [CampaignBudgetService.MutateCampaignBudgets][google.ads.googleads.v26.services.CampaignBudgetService.MutateCampaignBudgets].
+  ///
+  /// Update operations in `operations` require an `update_mask` specifying the
+  /// fields to modify. Note that `explicitly_shared` defaults to `true` if
+  /// unspecified. A non-shared budget can be updated to explicitly shared, but an
+  /// explicitly shared budget cannot become non-shared.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MutateCampaignBudgetsRequest : pb::IMessage<MutateCampaignBudgetsRequest>
@@ -442,6 +447,11 @@ namespace Google.Ads.GoogleAds.V26.Services {
 
   /// <summary>
   /// A single operation (create, update, remove) on a campaign budget.
+  ///
+  /// Update operations require an `update_mask` specifying which fields to modify.
+  /// Note that `explicitly_shared` defaults to `true` if unspecified. A non-shared
+  /// budget can be updated to explicitly shared, but an explicitly shared budget
+  /// cannot become non-shared.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CampaignBudgetOperation : pb::IMessage<CampaignBudgetOperation>
@@ -505,6 +515,7 @@ namespace Google.Ads.GoogleAds.V26.Services {
     private global::Google.Protobuf.WellKnownTypes.FieldMask updateMask_;
     /// <summary>
     /// FieldMask that determines which resource fields are modified in an update.
+    /// Required for `update` operations.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -519,6 +530,9 @@ namespace Google.Ads.GoogleAds.V26.Services {
     public const int CreateFieldNumber = 1;
     /// <summary>
     /// Create operation: No resource name is expected for the new budget.
+    /// Note that `explicitly_shared` defaults to `true` if unspecified. A
+    /// non-shared budget can be updated to explicitly shared, but an explicitly
+    /// shared budget cannot become non-shared.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -534,7 +548,10 @@ namespace Google.Ads.GoogleAds.V26.Services {
     public const int UpdateFieldNumber = 2;
     /// <summary>
     /// Update operation: The campaign budget is expected to have a valid
-    /// resource name.
+    /// resource name, and `update_mask` must be populated with the fields to
+    /// modify. Note that `explicitly_shared` defaults to `true` if
+    /// unspecified. A non-shared budget can be updated to explicitly shared,
+    /// but an explicitly shared budget cannot become non-shared.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

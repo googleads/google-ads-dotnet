@@ -118,6 +118,7 @@ namespace Google.Ads.GoogleAds.V26.Services
             yield return CustomInterestServiceReflection.Descriptor;
             yield return CustomerAssetServiceReflection.Descriptor;
             yield return CustomerAssetSetServiceReflection.Descriptor;
+            yield return CustomerBudgetNetworkSettingServiceReflection.Descriptor;
             yield return CustomerClientLinkServiceReflection.Descriptor;
             yield return CustomerConversionGoalServiceReflection.Descriptor;
             yield return CustomerCustomizerServiceReflection.Descriptor;
@@ -147,6 +148,7 @@ namespace Google.Ads.GoogleAds.V26.Services
             yield return KeywordPlanServiceReflection.Descriptor;
             yield return KeywordThemeConstantServiceReflection.Descriptor;
             yield return LabelServiceReflection.Descriptor;
+            yield return LocalServicesEligibilityServiceReflection.Descriptor;
             yield return LocalServicesLeadServiceReflection.Descriptor;
             yield return MultiPartyAuthReviewServiceReflection.Descriptor;
             yield return OfflineUserDataJobServiceReflection.Descriptor;

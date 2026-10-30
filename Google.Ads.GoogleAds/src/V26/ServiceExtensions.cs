@@ -77,6 +77,7 @@ namespace Google.Ads.GoogleAds.V26.Services
     public abstract partial class CustomInterestServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class CustomerAssetServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class CustomerAssetSetServiceClient : GoogleAdsServiceClientBase { }
+    public abstract partial class CustomerBudgetNetworkSettingServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class CustomerClientLinkServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class CustomerConversionGoalServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class CustomerCustomizerServiceClient : GoogleAdsServiceClientBase { }
@@ -106,6 +107,7 @@ namespace Google.Ads.GoogleAds.V26.Services
     public abstract partial class KeywordPlanServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class KeywordThemeConstantServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class LabelServiceClient : GoogleAdsServiceClientBase { }
+    public abstract partial class LocalServicesEligibilityServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class LocalServicesLeadServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class MultiPartyAuthReviewServiceClient : GoogleAdsServiceClientBase { }
     public abstract partial class OfflineUserDataJobServiceClient : GoogleAdsServiceClientBase { }

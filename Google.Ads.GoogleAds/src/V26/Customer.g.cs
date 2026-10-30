@@ -39,110 +39,118 @@ namespace Google.Ads.GoogleAds.V26.Resources {
             "X3BvbGl0aWNhbF9hZHZlcnRpc2luZ19zdGF0dXMucHJvdG8aR2dvb2dsZS9h",
             "ZHMvZ29vZ2xlYWRzL3YyNi9lbnVtcy9sb2NhbF9zZXJ2aWNlc192ZXJpZmlj",
             "YXRpb25fc3RhdHVzLnByb3RvGh9nb29nbGUvYXBpL2ZpZWxkX2JlaGF2aW9y",
-            "LnByb3RvGhlnb29nbGUvYXBpL3Jlc291cmNlLnByb3RvIsgRCghDdXN0b21l",
-            "chJACg1yZXNvdXJjZV9uYW1lGAEgASgJQingQQX6QSMKIWdvb2dsZWFkcy5n",
-            "b29nbGVhcGlzLmNvbS9DdXN0b21lchIUCgJpZBgTIAEoA0ID4EEDSACIAQES",
-            "HQoQZGVzY3JpcHRpdmVfbmFtZRgUIAEoCUgBiAEBEh8KDWN1cnJlbmN5X2Nv",
-            "ZGUYFSABKAlCA+BBBUgCiAEBEhsKCXRpbWVfem9uZRgWIAEoCUID4EEFSAOI",
-            "AQESIgoVdHJhY2tpbmdfdXJsX3RlbXBsYXRlGBcgASgJSASIAQESHQoQZmlu",
-            "YWxfdXJsX3N1ZmZpeBgYIAEoCUgFiAEBEiEKFGF1dG9fdGFnZ2luZ19lbmFi",
-            "bGVkGBkgASgISAaIAQESJAoSaGFzX3BhcnRuZXJzX2JhZGdlGBogASgIQgPg",
-            "QQNIB4gBARIZCgdtYW5hZ2VyGBsgASgIQgPgQQNICIgBARIeCgx0ZXN0X2Fj",
-            "Y291bnQYHCABKAhCA+BBA0gJiAEBElgKFmNhbGxfcmVwb3J0aW5nX3NldHRp",
-            "bmcYCiABKAsyOC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjYucmVzb3VyY2Vz",
-            "LkNhbGxSZXBvcnRpbmdTZXR0aW5nEmIKG2NvbnZlcnNpb25fdHJhY2tpbmdf",
-            "c2V0dGluZxgOIAEoCzI9Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNi5yZXNv",
-            "dXJjZXMuQ29udmVyc2lvblRyYWNraW5nU2V0dGluZxJYChNyZW1hcmtldGlu",
-            "Z19zZXR0aW5nGA8gASgLMjYuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI2LnJl",
-            "c291cmNlcy5SZW1hcmtldGluZ1NldHRpbmdCA+BBAxLDAQoucGF5X3Blcl9j",
-            "b252ZXJzaW9uX2VsaWdpYmlsaXR5X2ZhaWx1cmVfcmVhc29ucxgQIAMoDjKF",
-            "AS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjYuZW51bXMuQ3VzdG9tZXJQYXlQ",
-            "ZXJDb252ZXJzaW9uRWxpZ2liaWxpdHlGYWlsdXJlUmVhc29uRW51bS5DdXN0",
-            "b21lclBheVBlckNvbnZlcnNpb25FbGlnaWJpbGl0eUZhaWx1cmVSZWFzb25C",
-            "A+BBAxIkChJvcHRpbWl6YXRpb25fc2NvcmUYHSABKAFCA+BBA0gKiAEBEiYK",
-            "GW9wdGltaXphdGlvbl9zY29yZV93ZWlnaHQYHiABKAFCA+BBAxJWCgZzdGF0",
-            "dXMYJCABKA4yQS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjYuZW51bXMuQ3Vz",
-            "dG9tZXJTdGF0dXNFbnVtLkN1c3RvbWVyU3RhdHVzQgPgQQMSNAoibG9jYXRp",
-            "b25fYXNzZXRfYXV0b19taWdyYXRpb25fZG9uZRgmIAEoCEID4EEDSAuIAQES",
-            "MQofaW1hZ2VfYXNzZXRfYXV0b19taWdyYXRpb25fZG9uZRgnIAEoCEID4EED",
-            "SAyIAQESPgosbG9jYXRpb25fYXNzZXRfYXV0b19taWdyYXRpb25fZG9uZV9k",
-            "YXRlX3RpbWUYKCABKAlCA+BBA0gNiAEBEjsKKWltYWdlX2Fzc2V0X2F1dG9f",
-            "bWlncmF0aW9uX2RvbmVfZGF0ZV90aW1lGCkgASgJQgPgQQNIDogBARJlChpj",
-            "dXN0b21lcl9hZ3JlZW1lbnRfc2V0dGluZxgsIAEoCzI8Lmdvb2dsZS5hZHMu",
-            "Z29vZ2xlYWRzLnYyNi5yZXNvdXJjZXMuQ3VzdG9tZXJBZ3JlZW1lbnRTZXR0",
-            "aW5nQgPgQQMSXwoXbG9jYWxfc2VydmljZXNfc2V0dGluZ3MYLSABKAsyOS5n",
-            "b29nbGUuYWRzLmdvb2dsZWFkcy52MjYucmVzb3VyY2VzLkxvY2FsU2Vydmlj",
-            "ZXNTZXR0aW5nc0ID4EEDEnkKHnZpZGVvX2JyYW5kX3NhZmV0eV9zdWl0YWJp",
-            "bGl0eRguIAEoDjJRLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNi5lbnVtcy5C",
-            "cmFuZFNhZmV0eVN1aXRhYmlsaXR5RW51bS5CcmFuZFNhZmV0eVN1aXRhYmls",
-            "aXR5EkkKDnZpZGVvX2N1c3RvbWVyGDYgASgLMjEuZ29vZ2xlLmFkcy5nb29n",
-            "bGVhZHMudjI2LnJlc291cmNlcy5WaWRlb0N1c3RvbWVyEo0BCiFjb250YWlu",
-            "c19ldV9wb2xpdGljYWxfYWR2ZXJ0aXNpbmcYNyABKA4yXS5nb29nbGUuYWRz",
-            "Lmdvb2dsZWFkcy52MjYuZW51bXMuRXVQb2xpdGljYWxBZHZlcnRpc2luZ1N0",
-            "YXR1c0VudW0uRXVQb2xpdGljYWxBZHZlcnRpc2luZ1N0YXR1c0ID4EEDOj/q",
-            "QTwKIWdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9DdXN0b21lchIXY3VzdG9t",
-            "ZXJzL3tjdXN0b21lcl9pZH1CBQoDX2lkQhMKEV9kZXNjcmlwdGl2ZV9uYW1l",
-            "QhAKDl9jdXJyZW5jeV9jb2RlQgwKCl90aW1lX3pvbmVCGAoWX3RyYWNraW5n",
-            "X3VybF90ZW1wbGF0ZUITChFfZmluYWxfdXJsX3N1ZmZpeEIXChVfYXV0b190",
-            "YWdnaW5nX2VuYWJsZWRCFQoTX2hhc19wYXJ0bmVyc19iYWRnZUIKCghfbWFu",
-            "YWdlckIPCg1fdGVzdF9hY2NvdW50QhUKE19vcHRpbWl6YXRpb25fc2NvcmVC",
-            "JQojX2xvY2F0aW9uX2Fzc2V0X2F1dG9fbWlncmF0aW9uX2RvbmVCIgogX2lt",
-            "YWdlX2Fzc2V0X2F1dG9fbWlncmF0aW9uX2RvbmVCLwotX2xvY2F0aW9uX2Fz",
-            "c2V0X2F1dG9fbWlncmF0aW9uX2RvbmVfZGF0ZV90aW1lQiwKKl9pbWFnZV9h",
-            "c3NldF9hdXRvX21pZ3JhdGlvbl9kb25lX2RhdGVfdGltZSKcAgoUQ2FsbFJl",
-            "cG9ydGluZ1NldHRpbmcSIwoWY2FsbF9yZXBvcnRpbmdfZW5hYmxlZBgKIAEo",
-            "CEgAiAEBEi4KIWNhbGxfY29udmVyc2lvbl9yZXBvcnRpbmdfZW5hYmxlZBgL",
-            "IAEoCEgBiAEBElMKFmNhbGxfY29udmVyc2lvbl9hY3Rpb24YDCABKAlCLvpB",
-            "KwopZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0NvbnZlcnNpb25BY3Rpb25I",
-            "AogBAUIZChdfY2FsbF9yZXBvcnRpbmdfZW5hYmxlZEIkCiJfY2FsbF9jb252",
-            "ZXJzaW9uX3JlcG9ydGluZ19lbmFibGVkQhkKF19jYWxsX2NvbnZlcnNpb25f",
-            "YWN0aW9uItUFChlDb252ZXJzaW9uVHJhY2tpbmdTZXR0aW5nEigKFmNvbnZl",
-            "cnNpb25fdHJhY2tpbmdfaWQYAyABKANCA+BBA0gAiAEBEjYKJGNyb3NzX2Fj",
-            "Y291bnRfY29udmVyc2lvbl90cmFja2luZ19pZBgEIAEoA0ID4EEDSAGIAQES",
-            "KQocYWNjZXB0ZWRfY3VzdG9tZXJfZGF0YV90ZXJtcxgFIAEoCEID4EEDEn4K",
-            "GmNvbnZlcnNpb25fdHJhY2tpbmdfc3RhdHVzGAYgASgOMlUuZ29vZ2xlLmFk",
-            "cy5nb29nbGVhZHMudjI2LmVudW1zLkNvbnZlcnNpb25UcmFja2luZ1N0YXR1",
-            "c0VudW0uQ29udmVyc2lvblRyYWNraW5nU3RhdHVzQgPgQQMSJgoeZ29vZ2xl",
-            "X2Fkc19jb252ZXJzaW9uX2N1c3RvbWVyGAggASgJEn0KEmVuYWJsZW1lbnRf",
-            "c2V0dGluZxgJIAEoDjJXLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNi5lbnVt",
-            "cy5FbmhhbmNlZENvbnZlcnNpb25zQ29uZmlnRW51bS5FbmhhbmNlZENvbnZl",
-            "cnNpb25zQ29uZmlnQgPgQQNIAogBARKHAQocZWZmZWN0aXZlX2VuYWJsZW1l",
-            "bnRfc2V0dGluZxgKIAEoDjJXLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNi5l",
-            "bnVtcy5FbmhhbmNlZENvbnZlcnNpb25zQ29uZmlnRW51bS5FbmhhbmNlZENv",
-            "bnZlcnNpb25zQ29uZmlnQgPgQQNIA4gBAUIZChdfY29udmVyc2lvbl90cmFj",
-            "a2luZ19pZEInCiVfY3Jvc3NfYWNjb3VudF9jb252ZXJzaW9uX3RyYWNraW5n",
-            "X2lkQhUKE19lbmFibGVtZW50X3NldHRpbmdCHwodX2VmZmVjdGl2ZV9lbmFi",
-            "bGVtZW50X3NldHRpbmciWQoSUmVtYXJrZXRpbmdTZXR0aW5nEigKFmdvb2ds",
-            "ZV9nbG9iYWxfc2l0ZV90YWcYAiABKAlCA+BBA0gAiAEBQhkKF19nb29nbGVf",
-            "Z2xvYmFsX3NpdGVfdGFnIkEKGEN1c3RvbWVyQWdyZWVtZW50U2V0dGluZxIl",
-            "ChhhY2NlcHRlZF9sZWFkX2Zvcm1fdGVybXMYASABKAhCA+BBAyLhAQoVTG9j",
-            "YWxTZXJ2aWNlc1NldHRpbmdzEmEKGWdyYW51bGFyX2xpY2Vuc2Vfc3RhdHVz",
-            "ZXMYASADKAsyOS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjYucmVzb3VyY2Vz",
-            "LkdyYW51bGFyTGljZW5zZVN0YXR1c0ID4EEDEmUKG2dyYW51bGFyX2luc3Vy",
-            "YW5jZV9zdGF0dXNlcxgCIAMoCzI7Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
-            "Ni5yZXNvdXJjZXMuR3JhbnVsYXJJbnN1cmFuY2VTdGF0dXNCA+BBAyKkAgoV",
-            "R3JhbnVsYXJMaWNlbnNlU3RhdHVzEiIKEGdlb19jcml0ZXJpb25faWQYASAB",
-            "KANCA+BBA0gAiAEBEh0KC2NhdGVnb3J5X2lkGAIgASgJQgPgQQNIAYgBARKK",
-            "AQoTdmVyaWZpY2F0aW9uX3N0YXR1cxgDIAEoDjJjLmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYyNi5lbnVtcy5Mb2NhbFNlcnZpY2VzVmVyaWZpY2F0aW9uU3Rh",
-            "dHVzRW51bS5Mb2NhbFNlcnZpY2VzVmVyaWZpY2F0aW9uU3RhdHVzQgPgQQNI",
-            "AogBAUITChFfZ2VvX2NyaXRlcmlvbl9pZEIOCgxfY2F0ZWdvcnlfaWRCFgoU",
-            "X3ZlcmlmaWNhdGlvbl9zdGF0dXMipgIKF0dyYW51bGFySW5zdXJhbmNlU3Rh",
-            "dHVzEiIKEGdlb19jcml0ZXJpb25faWQYASABKANCA+BBA0gAiAEBEh0KC2Nh",
-            "dGVnb3J5X2lkGAIgASgJQgPgQQNIAYgBARKKAQoTdmVyaWZpY2F0aW9uX3N0",
-            "YXR1cxgDIAEoDjJjLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNi5lbnVtcy5M",
-            "b2NhbFNlcnZpY2VzVmVyaWZpY2F0aW9uU3RhdHVzRW51bS5Mb2NhbFNlcnZp",
-            "Y2VzVmVyaWZpY2F0aW9uU3RhdHVzQgPgQQNIAogBAUITChFfZ2VvX2NyaXRl",
-            "cmlvbl9pZEIOCgxfY2F0ZWdvcnlfaWRCFgoUX3ZlcmlmaWNhdGlvbl9zdGF0",
-            "dXMigQEKDVZpZGVvQ3VzdG9tZXIScAogdGhpcmRfcGFydHlfaW50ZWdyYXRp",
-            "b25fcGFydG5lcnMYASABKAsyRi5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjYu",
-            "Y29tbW9uLkN1c3RvbWVyVGhpcmRQYXJ0eUludGVncmF0aW9uUGFydG5lcnNC",
-            "/wEKJmNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjYucmVzb3VyY2VzQg1D",
-            "dXN0b21lclByb3RvUAFaS2dvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dv",
-            "b2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MjYvcmVzb3VyY2VzO3Jlc291cmNl",
-            "c6ICA0dBQaoCIkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYyNi5SZXNvdXJjZXPK",
-            "AiJHb29nbGVcQWRzXEdvb2dsZUFkc1xWMjZcUmVzb3VyY2Vz6gImR29vZ2xl",
-            "OjpBZHM6Okdvb2dsZUFkczo6VjI2OjpSZXNvdXJjZXNiBnByb3RvMw=="));
+            "LnByb3RvGhlnb29nbGUvYXBpL3Jlc291cmNlLnByb3RvItURCghDdXN0b21l",
+            "chJBCg1yZXNvdXJjZV9uYW1lGAEgASgJQiriQQEF+kEjCiFnb29nbGVhZHMu",
+            "Z29vZ2xlYXBpcy5jb20vQ3VzdG9tZXISFQoCaWQYEyABKANCBOJBAQNIAIgB",
+            "ARIdChBkZXNjcmlwdGl2ZV9uYW1lGBQgASgJSAGIAQESIAoNY3VycmVuY3lf",
+            "Y29kZRgVIAEoCUIE4kEBBUgCiAEBEhwKCXRpbWVfem9uZRgWIAEoCUIE4kEB",
+            "BUgDiAEBEiIKFXRyYWNraW5nX3VybF90ZW1wbGF0ZRgXIAEoCUgEiAEBEh0K",
+            "EGZpbmFsX3VybF9zdWZmaXgYGCABKAlIBYgBARIhChRhdXRvX3RhZ2dpbmdf",
+            "ZW5hYmxlZBgZIAEoCEgGiAEBEiUKEmhhc19wYXJ0bmVyc19iYWRnZRgaIAEo",
+            "CEIE4kEBA0gHiAEBEhoKB21hbmFnZXIYGyABKAhCBOJBAQNICIgBARIfCgx0",
+            "ZXN0X2FjY291bnQYHCABKAhCBOJBAQNICYgBARJYChZjYWxsX3JlcG9ydGlu",
+            "Z19zZXR0aW5nGAogASgLMjguZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI2LnJl",
+            "c291cmNlcy5DYWxsUmVwb3J0aW5nU2V0dGluZxJiChtjb252ZXJzaW9uX3Ry",
+            "YWNraW5nX3NldHRpbmcYDiABKAsyPS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MjYucmVzb3VyY2VzLkNvbnZlcnNpb25UcmFja2luZ1NldHRpbmcSWQoTcmVt",
+            "YXJrZXRpbmdfc2V0dGluZxgPIAEoCzI2Lmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYyNi5yZXNvdXJjZXMuUmVtYXJrZXRpbmdTZXR0aW5nQgTiQQEDEsQBCi5w",
+            "YXlfcGVyX2NvbnZlcnNpb25fZWxpZ2liaWxpdHlfZmFpbHVyZV9yZWFzb25z",
+            "GBAgAygOMoUBLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNi5lbnVtcy5DdXN0",
+            "b21lclBheVBlckNvbnZlcnNpb25FbGlnaWJpbGl0eUZhaWx1cmVSZWFzb25F",
+            "bnVtLkN1c3RvbWVyUGF5UGVyQ29udmVyc2lvbkVsaWdpYmlsaXR5RmFpbHVy",
+            "ZVJlYXNvbkIE4kEBAxIlChJvcHRpbWl6YXRpb25fc2NvcmUYHSABKAFCBOJB",
+            "AQNICogBARInChlvcHRpbWl6YXRpb25fc2NvcmVfd2VpZ2h0GB4gASgBQgTi",
+            "QQEDElcKBnN0YXR1cxgkIAEoDjJBLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
+            "Ni5lbnVtcy5DdXN0b21lclN0YXR1c0VudW0uQ3VzdG9tZXJTdGF0dXNCBOJB",
+            "AQMSNQoibG9jYXRpb25fYXNzZXRfYXV0b19taWdyYXRpb25fZG9uZRgmIAEo",
+            "CEIE4kEBA0gLiAEBEjIKH2ltYWdlX2Fzc2V0X2F1dG9fbWlncmF0aW9uX2Rv",
+            "bmUYJyABKAhCBOJBAQNIDIgBARI/Cixsb2NhdGlvbl9hc3NldF9hdXRvX21p",
+            "Z3JhdGlvbl9kb25lX2RhdGVfdGltZRgoIAEoCUIE4kEBA0gNiAEBEjwKKWlt",
+            "YWdlX2Fzc2V0X2F1dG9fbWlncmF0aW9uX2RvbmVfZGF0ZV90aW1lGCkgASgJ",
+            "QgTiQQEDSA6IAQESZgoaY3VzdG9tZXJfYWdyZWVtZW50X3NldHRpbmcYLCAB",
+            "KAsyPC5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjYucmVzb3VyY2VzLkN1c3Rv",
+            "bWVyQWdyZWVtZW50U2V0dGluZ0IE4kEBAxJaChdsb2NhbF9zZXJ2aWNlc19z",
+            "ZXR0aW5ncxgtIAEoCzI5Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNi5yZXNv",
+            "dXJjZXMuTG9jYWxTZXJ2aWNlc1NldHRpbmdzEnkKHnZpZGVvX2JyYW5kX3Nh",
+            "ZmV0eV9zdWl0YWJpbGl0eRguIAEoDjJRLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYyNi5lbnVtcy5CcmFuZFNhZmV0eVN1aXRhYmlsaXR5RW51bS5CcmFuZFNh",
+            "ZmV0eVN1aXRhYmlsaXR5EkkKDnZpZGVvX2N1c3RvbWVyGDYgASgLMjEuZ29v",
+            "Z2xlLmFkcy5nb29nbGVhZHMudjI2LnJlc291cmNlcy5WaWRlb0N1c3RvbWVy",
+            "Eo4BCiFjb250YWluc19ldV9wb2xpdGljYWxfYWR2ZXJ0aXNpbmcYNyABKA4y",
+            "XS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjYuZW51bXMuRXVQb2xpdGljYWxB",
+            "ZHZlcnRpc2luZ1N0YXR1c0VudW0uRXVQb2xpdGljYWxBZHZlcnRpc2luZ1N0",
+            "YXR1c0IE4kEBAzo/6kE8CiFnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vQ3Vz",
+            "dG9tZXISF2N1c3RvbWVycy97Y3VzdG9tZXJfaWR9QgUKA19pZEITChFfZGVz",
+            "Y3JpcHRpdmVfbmFtZUIQCg5fY3VycmVuY3lfY29kZUIMCgpfdGltZV96b25l",
+            "QhgKFl90cmFja2luZ191cmxfdGVtcGxhdGVCEwoRX2ZpbmFsX3VybF9zdWZm",
+            "aXhCFwoVX2F1dG9fdGFnZ2luZ19lbmFibGVkQhUKE19oYXNfcGFydG5lcnNf",
+            "YmFkZ2VCCgoIX21hbmFnZXJCDwoNX3Rlc3RfYWNjb3VudEIVChNfb3B0aW1p",
+            "emF0aW9uX3Njb3JlQiUKI19sb2NhdGlvbl9hc3NldF9hdXRvX21pZ3JhdGlv",
+            "bl9kb25lQiIKIF9pbWFnZV9hc3NldF9hdXRvX21pZ3JhdGlvbl9kb25lQi8K",
+            "LV9sb2NhdGlvbl9hc3NldF9hdXRvX21pZ3JhdGlvbl9kb25lX2RhdGVfdGlt",
+            "ZUIsCipfaW1hZ2VfYXNzZXRfYXV0b19taWdyYXRpb25fZG9uZV9kYXRlX3Rp",
+            "bWUinAIKFENhbGxSZXBvcnRpbmdTZXR0aW5nEiMKFmNhbGxfcmVwb3J0aW5n",
+            "X2VuYWJsZWQYCiABKAhIAIgBARIuCiFjYWxsX2NvbnZlcnNpb25fcmVwb3J0",
+            "aW5nX2VuYWJsZWQYCyABKAhIAYgBARJTChZjYWxsX2NvbnZlcnNpb25fYWN0",
+            "aW9uGAwgASgJQi76QSsKKWdvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9Db252",
+            "ZXJzaW9uQWN0aW9uSAKIAQFCGQoXX2NhbGxfcmVwb3J0aW5nX2VuYWJsZWRC",
+            "JAoiX2NhbGxfY29udmVyc2lvbl9yZXBvcnRpbmdfZW5hYmxlZEIZChdfY2Fs",
+            "bF9jb252ZXJzaW9uX2FjdGlvbiLbBQoZQ29udmVyc2lvblRyYWNraW5nU2V0",
+            "dGluZxIpChZjb252ZXJzaW9uX3RyYWNraW5nX2lkGAMgASgDQgTiQQEDSACI",
+            "AQESNwokY3Jvc3NfYWNjb3VudF9jb252ZXJzaW9uX3RyYWNraW5nX2lkGAQg",
+            "ASgDQgTiQQEDSAGIAQESKgocYWNjZXB0ZWRfY3VzdG9tZXJfZGF0YV90ZXJt",
+            "cxgFIAEoCEIE4kEBAxJ/Chpjb252ZXJzaW9uX3RyYWNraW5nX3N0YXR1cxgG",
+            "IAEoDjJVLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNi5lbnVtcy5Db252ZXJz",
+            "aW9uVHJhY2tpbmdTdGF0dXNFbnVtLkNvbnZlcnNpb25UcmFja2luZ1N0YXR1",
+            "c0IE4kEBAxImCh5nb29nbGVfYWRzX2NvbnZlcnNpb25fY3VzdG9tZXIYCCAB",
+            "KAkSfgoSZW5hYmxlbWVudF9zZXR0aW5nGAkgASgOMlcuZ29vZ2xlLmFkcy5n",
+            "b29nbGVhZHMudjI2LmVudW1zLkVuaGFuY2VkQ29udmVyc2lvbnNDb25maWdF",
+            "bnVtLkVuaGFuY2VkQ29udmVyc2lvbnNDb25maWdCBOJBAQNIAogBARKIAQoc",
+            "ZWZmZWN0aXZlX2VuYWJsZW1lbnRfc2V0dGluZxgKIAEoDjJXLmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYyNi5lbnVtcy5FbmhhbmNlZENvbnZlcnNpb25zQ29u",
+            "ZmlnRW51bS5FbmhhbmNlZENvbnZlcnNpb25zQ29uZmlnQgTiQQEDSAOIAQFC",
+            "GQoXX2NvbnZlcnNpb25fdHJhY2tpbmdfaWRCJwolX2Nyb3NzX2FjY291bnRf",
+            "Y29udmVyc2lvbl90cmFja2luZ19pZEIVChNfZW5hYmxlbWVudF9zZXR0aW5n",
+            "Qh8KHV9lZmZlY3RpdmVfZW5hYmxlbWVudF9zZXR0aW5nIloKElJlbWFya2V0",
+            "aW5nU2V0dGluZxIpChZnb29nbGVfZ2xvYmFsX3NpdGVfdGFnGAIgASgJQgTi",
+            "QQEDSACIAQFCGQoXX2dvb2dsZV9nbG9iYWxfc2l0ZV90YWciQgoYQ3VzdG9t",
+            "ZXJBZ3JlZW1lbnRTZXR0aW5nEiYKGGFjY2VwdGVkX2xlYWRfZm9ybV90ZXJt",
+            "cxgBIAEoCEIE4kEBAyLBAgoVTG9jYWxTZXJ2aWNlc1NldHRpbmdzEmIKGWdy",
+            "YW51bGFyX2xpY2Vuc2Vfc3RhdHVzZXMYASADKAsyOS5nb29nbGUuYWRzLmdv",
+            "b2dsZWFkcy52MjYucmVzb3VyY2VzLkdyYW51bGFyTGljZW5zZVN0YXR1c0IE",
+            "4kEBAxJmChtncmFudWxhcl9pbnN1cmFuY2Vfc3RhdHVzZXMYAiADKAsyOy5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MjYucmVzb3VyY2VzLkdyYW51bGFySW5z",
+            "dXJhbmNlU3RhdHVzQgTiQQEDElwKGHJlZGVtcHRpb25fcHJvdmlkZXJfaW5m",
+            "bxgDIAEoCzI6Lmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNi5yZXNvdXJjZXMu",
+            "UmVkZW1wdGlvblByb3ZpZGVySW5mbyJ7ChZSZWRlbXB0aW9uUHJvdmlkZXJJ",
+            "bmZvEmEKFGV4dGVybmFsX21lcmNoYW50X2lkGAEgASgLMj0uZ29vZ2xlLmFk",
+            "cy5nb29nbGVhZHMudjI2LnJlc291cmNlcy5FeHRlcm5hbFBhcnRuZXJNZXJj",
+            "aGFudElkQgTiQQECIlIKGUV4dGVybmFsUGFydG5lck1lcmNoYW50SWQSFAoK",
+            "bnVtZXJpY19pZBgBIAEoA0gAEhkKD2FscGhhbnVtZXJpY19pZBgCIAEoCUgA",
+            "QgQKAmlkIqcCChVHcmFudWxhckxpY2Vuc2VTdGF0dXMSIwoQZ2VvX2NyaXRl",
+            "cmlvbl9pZBgBIAEoA0IE4kEBA0gAiAEBEh4KC2NhdGVnb3J5X2lkGAIgASgJ",
+            "QgTiQQEDSAGIAQESiwEKE3ZlcmlmaWNhdGlvbl9zdGF0dXMYAyABKA4yYy5n",
+            "b29nbGUuYWRzLmdvb2dsZWFkcy52MjYuZW51bXMuTG9jYWxTZXJ2aWNlc1Zl",
+            "cmlmaWNhdGlvblN0YXR1c0VudW0uTG9jYWxTZXJ2aWNlc1ZlcmlmaWNhdGlv",
+            "blN0YXR1c0IE4kEBA0gCiAEBQhMKEV9nZW9fY3JpdGVyaW9uX2lkQg4KDF9j",
+            "YXRlZ29yeV9pZEIWChRfdmVyaWZpY2F0aW9uX3N0YXR1cyKpAgoXR3JhbnVs",
+            "YXJJbnN1cmFuY2VTdGF0dXMSIwoQZ2VvX2NyaXRlcmlvbl9pZBgBIAEoA0IE",
+            "4kEBA0gAiAEBEh4KC2NhdGVnb3J5X2lkGAIgASgJQgTiQQEDSAGIAQESiwEK",
+            "E3ZlcmlmaWNhdGlvbl9zdGF0dXMYAyABKA4yYy5nb29nbGUuYWRzLmdvb2ds",
+            "ZWFkcy52MjYuZW51bXMuTG9jYWxTZXJ2aWNlc1ZlcmlmaWNhdGlvblN0YXR1",
+            "c0VudW0uTG9jYWxTZXJ2aWNlc1ZlcmlmaWNhdGlvblN0YXR1c0IE4kEBA0gC",
+            "iAEBQhMKEV9nZW9fY3JpdGVyaW9uX2lkQg4KDF9jYXRlZ29yeV9pZEIWChRf",
+            "dmVyaWZpY2F0aW9uX3N0YXR1cyKBAQoNVmlkZW9DdXN0b21lchJwCiB0aGly",
+            "ZF9wYXJ0eV9pbnRlZ3JhdGlvbl9wYXJ0bmVycxgBIAEoCzJGLmdvb2dsZS5h",
+            "ZHMuZ29vZ2xlYWRzLnYyNi5jb21tb24uQ3VzdG9tZXJUaGlyZFBhcnR5SW50",
+            "ZWdyYXRpb25QYXJ0bmVyc0L/AQomY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
+            "LnYyNi5yZXNvdXJjZXNCDUN1c3RvbWVyUHJvdG9QAVpLZ29vZ2xlLmdvbGFu",
+            "Zy5vcmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YyNi9y",
+            "ZXNvdXJjZXM7cmVzb3VyY2VzogIDR0FBqgIiR29vZ2xlLkFkcy5Hb29nbGVB",
+            "ZHMuVjI2LlJlc291cmNlc8oCIkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYyNlxS",
+            "ZXNvdXJjZXPqAiZHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjY6OlJlc291",
+            "cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V26.Common.ThirdPartyIntegrationPartnersReflection.Descriptor, global::Google.Ads.GoogleAds.V26.Enums.BrandSafetySuitabilityReflection.Descriptor, global::Google.Ads.GoogleAds.V26.Enums.ConversionTrackingStatusEnumReflection.Descriptor, global::Google.Ads.GoogleAds.V26.Enums.CustomerPayPerConversionEligibilityFailureReasonReflection.Descriptor, global::Google.Ads.GoogleAds.V26.Enums.CustomerStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V26.Enums.EnhancedConversionsConfigReflection.Descriptor, global::Google.Ads.GoogleAds.V26.Enums.EuPoliticalAdvertisingStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V26.Enums.LocalServicesVerificationStatusReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -151,7 +159,9 @@ namespace Google.Ads.GoogleAds.V26.Resources {
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V26.Resources.ConversionTrackingSetting), global::Google.Ads.GoogleAds.V26.Resources.ConversionTrackingSetting.Parser, new[]{ "ConversionTrackingId", "CrossAccountConversionTrackingId", "AcceptedCustomerDataTerms", "ConversionTrackingStatus", "GoogleAdsConversionCustomer", "EnablementSetting", "EffectiveEnablementSetting" }, new[]{ "ConversionTrackingId", "CrossAccountConversionTrackingId", "EnablementSetting", "EffectiveEnablementSetting" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V26.Resources.RemarketingSetting), global::Google.Ads.GoogleAds.V26.Resources.RemarketingSetting.Parser, new[]{ "GoogleGlobalSiteTag" }, new[]{ "GoogleGlobalSiteTag" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V26.Resources.CustomerAgreementSetting), global::Google.Ads.GoogleAds.V26.Resources.CustomerAgreementSetting.Parser, new[]{ "AcceptedLeadFormTerms" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V26.Resources.LocalServicesSettings), global::Google.Ads.GoogleAds.V26.Resources.LocalServicesSettings.Parser, new[]{ "GranularLicenseStatuses", "GranularInsuranceStatuses" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V26.Resources.LocalServicesSettings), global::Google.Ads.GoogleAds.V26.Resources.LocalServicesSettings.Parser, new[]{ "GranularLicenseStatuses", "GranularInsuranceStatuses", "RedemptionProviderInfo" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V26.Resources.RedemptionProviderInfo), global::Google.Ads.GoogleAds.V26.Resources.RedemptionProviderInfo.Parser, new[]{ "ExternalMerchantId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V26.Resources.ExternalPartnerMerchantId), global::Google.Ads.GoogleAds.V26.Resources.ExternalPartnerMerchantId.Parser, new[]{ "NumericId", "AlphanumericId" }, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V26.Resources.GranularLicenseStatus), global::Google.Ads.GoogleAds.V26.Resources.GranularLicenseStatus.Parser, new[]{ "GeoCriterionId", "CategoryId", "VerificationStatus" }, new[]{ "GeoCriterionId", "CategoryId", "VerificationStatus" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V26.Resources.GranularInsuranceStatus), global::Google.Ads.GoogleAds.V26.Resources.GranularInsuranceStatus.Parser, new[]{ "GeoCriterionId", "CategoryId", "VerificationStatus" }, new[]{ "GeoCriterionId", "CategoryId", "VerificationStatus" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V26.Resources.VideoCustomer), global::Google.Ads.GoogleAds.V26.Resources.VideoCustomer.Parser, new[]{ "ThirdPartyIntegrationPartners" }, null, null, null, null)
@@ -839,7 +849,7 @@ namespace Google.Ads.GoogleAds.V26.Resources {
     public const int LocalServicesSettingsFieldNumber = 45;
     private global::Google.Ads.GoogleAds.V26.Resources.LocalServicesSettings localServicesSettings_;
     /// <summary>
-    /// Output only. Settings for Local Services customer.
+    /// Settings for Local Services customer.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3030,6 +3040,7 @@ namespace Google.Ads.GoogleAds.V26.Resources {
     public LocalServicesSettings(LocalServicesSettings other) : this() {
       granularLicenseStatuses_ = other.granularLicenseStatuses_.Clone();
       granularInsuranceStatuses_ = other.granularInsuranceStatuses_.Clone();
+      redemptionProviderInfo_ = other.redemptionProviderInfo_ != null ? other.redemptionProviderInfo_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3067,6 +3078,21 @@ namespace Google.Ads.GoogleAds.V26.Resources {
       get { return granularInsuranceStatuses_; }
     }
 
+    /// <summary>Field number for the "redemption_provider_info" field.</summary>
+    public const int RedemptionProviderInfoFieldNumber = 3;
+    private global::Google.Ads.GoogleAds.V26.Resources.RedemptionProviderInfo redemptionProviderInfo_;
+    /// <summary>
+    /// Settings for external redemption provider integration.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V26.Resources.RedemptionProviderInfo RedemptionProviderInfo {
+      get { return redemptionProviderInfo_; }
+      set {
+        redemptionProviderInfo_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -3084,6 +3110,7 @@ namespace Google.Ads.GoogleAds.V26.Resources {
       }
       if(!granularLicenseStatuses_.Equals(other.granularLicenseStatuses_)) return false;
       if(!granularInsuranceStatuses_.Equals(other.granularInsuranceStatuses_)) return false;
+      if (!object.Equals(RedemptionProviderInfo, other.RedemptionProviderInfo)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3093,6 +3120,7 @@ namespace Google.Ads.GoogleAds.V26.Resources {
       int hash = 1;
       hash ^= granularLicenseStatuses_.GetHashCode();
       hash ^= granularInsuranceStatuses_.GetHashCode();
+      if (redemptionProviderInfo_ != null) hash ^= RedemptionProviderInfo.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3113,6 +3141,10 @@ namespace Google.Ads.GoogleAds.V26.Resources {
     #else
       granularLicenseStatuses_.WriteTo(output, _repeated_granularLicenseStatuses_codec);
       granularInsuranceStatuses_.WriteTo(output, _repeated_granularInsuranceStatuses_codec);
+      if (redemptionProviderInfo_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(RedemptionProviderInfo);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3125,6 +3157,10 @@ namespace Google.Ads.GoogleAds.V26.Resources {
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       granularLicenseStatuses_.WriteTo(ref output, _repeated_granularLicenseStatuses_codec);
       granularInsuranceStatuses_.WriteTo(ref output, _repeated_granularInsuranceStatuses_codec);
+      if (redemptionProviderInfo_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(RedemptionProviderInfo);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3137,6 +3173,9 @@ namespace Google.Ads.GoogleAds.V26.Resources {
       int size = 0;
       size += granularLicenseStatuses_.CalculateSize(_repeated_granularLicenseStatuses_codec);
       size += granularInsuranceStatuses_.CalculateSize(_repeated_granularInsuranceStatuses_codec);
+      if (redemptionProviderInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RedemptionProviderInfo);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -3151,6 +3190,12 @@ namespace Google.Ads.GoogleAds.V26.Resources {
       }
       granularLicenseStatuses_.Add(other.granularLicenseStatuses_);
       granularInsuranceStatuses_.Add(other.granularInsuranceStatuses_);
+      if (other.redemptionProviderInfo_ != null) {
+        if (redemptionProviderInfo_ == null) {
+          RedemptionProviderInfo = new global::Google.Ads.GoogleAds.V26.Resources.RedemptionProviderInfo();
+        }
+        RedemptionProviderInfo.MergeFrom(other.RedemptionProviderInfo);
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -3176,6 +3221,13 @@ namespace Google.Ads.GoogleAds.V26.Resources {
           }
           case 18: {
             granularInsuranceStatuses_.AddEntriesFrom(input, _repeated_granularInsuranceStatuses_codec);
+            break;
+          }
+          case 26: {
+            if (redemptionProviderInfo_ == null) {
+              RedemptionProviderInfo = new global::Google.Ads.GoogleAds.V26.Resources.RedemptionProviderInfo();
+            }
+            input.ReadMessage(RedemptionProviderInfo);
             break;
           }
         }
@@ -3205,6 +3257,534 @@ namespace Google.Ads.GoogleAds.V26.Resources {
             granularInsuranceStatuses_.AddEntriesFrom(ref input, _repeated_granularInsuranceStatuses_codec);
             break;
           }
+          case 26: {
+            if (redemptionProviderInfo_ == null) {
+              RedemptionProviderInfo = new global::Google.Ads.GoogleAds.V26.Resources.RedemptionProviderInfo();
+            }
+            input.ReadMessage(RedemptionProviderInfo);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Information about the external redemption provider for a Local Services
+  /// customer.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class RedemptionProviderInfo : pb::IMessage<RedemptionProviderInfo>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<RedemptionProviderInfo> _parser = new pb::MessageParser<RedemptionProviderInfo>(() => new RedemptionProviderInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<RedemptionProviderInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V26.Resources.CustomerReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RedemptionProviderInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RedemptionProviderInfo(RedemptionProviderInfo other) : this() {
+      externalMerchantId_ = other.externalMerchantId_ != null ? other.externalMerchantId_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RedemptionProviderInfo Clone() {
+      return new RedemptionProviderInfo(this);
+    }
+
+    /// <summary>Field number for the "external_merchant_id" field.</summary>
+    public const int ExternalMerchantIdFieldNumber = 1;
+    private global::Google.Ads.GoogleAds.V26.Resources.ExternalPartnerMerchantId externalMerchantId_;
+    /// <summary>
+    /// Required. Identifier for a merchant in an external partner's point-of-sale
+    /// system.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V26.Resources.ExternalPartnerMerchantId ExternalMerchantId {
+      get { return externalMerchantId_; }
+      set {
+        externalMerchantId_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as RedemptionProviderInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(RedemptionProviderInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(ExternalMerchantId, other.ExternalMerchantId)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (externalMerchantId_ != null) hash ^= ExternalMerchantId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (externalMerchantId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ExternalMerchantId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (externalMerchantId_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ExternalMerchantId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (externalMerchantId_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ExternalMerchantId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(RedemptionProviderInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.externalMerchantId_ != null) {
+        if (externalMerchantId_ == null) {
+          ExternalMerchantId = new global::Google.Ads.GoogleAds.V26.Resources.ExternalPartnerMerchantId();
+        }
+        ExternalMerchantId.MergeFrom(other.ExternalMerchantId);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (externalMerchantId_ == null) {
+              ExternalMerchantId = new global::Google.Ads.GoogleAds.V26.Resources.ExternalPartnerMerchantId();
+            }
+            input.ReadMessage(ExternalMerchantId);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (externalMerchantId_ == null) {
+              ExternalMerchantId = new global::Google.Ads.GoogleAds.V26.Resources.ExternalPartnerMerchantId();
+            }
+            input.ReadMessage(ExternalMerchantId);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Identifier for a merchant in an external partner's point-of-sale system.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class ExternalPartnerMerchantId : pb::IMessage<ExternalPartnerMerchantId>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ExternalPartnerMerchantId> _parser = new pb::MessageParser<ExternalPartnerMerchantId>(() => new ExternalPartnerMerchantId());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ExternalPartnerMerchantId> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Google.Ads.GoogleAds.V26.Resources.CustomerReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ExternalPartnerMerchantId() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ExternalPartnerMerchantId(ExternalPartnerMerchantId other) : this() {
+      switch (other.IdCase) {
+        case IdOneofCase.NumericId:
+          NumericId = other.NumericId;
+          break;
+        case IdOneofCase.AlphanumericId:
+          AlphanumericId = other.AlphanumericId;
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ExternalPartnerMerchantId Clone() {
+      return new ExternalPartnerMerchantId(this);
+    }
+
+    /// <summary>Field number for the "numeric_id" field.</summary>
+    public const int NumericIdFieldNumber = 1;
+    /// <summary>
+    /// Numeric merchant identifier in the external partner's system.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long NumericId {
+      get { return HasNumericId ? (long) id_ : 0L; }
+      set {
+        id_ = value;
+        idCase_ = IdOneofCase.NumericId;
+      }
+    }
+    /// <summary>Gets whether the "numeric_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasNumericId {
+      get { return idCase_ == IdOneofCase.NumericId; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "numeric_id" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearNumericId() {
+      if (HasNumericId) {
+        ClearId();
+      }
+    }
+
+    /// <summary>Field number for the "alphanumeric_id" field.</summary>
+    public const int AlphanumericIdFieldNumber = 2;
+    /// <summary>
+    /// Alphanumeric or string merchant identifier in the external partner's
+    /// system. The length of this string must be between 1 and 50, inclusive.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string AlphanumericId {
+      get { return HasAlphanumericId ? (string) id_ : ""; }
+      set {
+        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        idCase_ = IdOneofCase.AlphanumericId;
+      }
+    }
+    /// <summary>Gets whether the "alphanumeric_id" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAlphanumericId {
+      get { return idCase_ == IdOneofCase.AlphanumericId; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "alphanumeric_id" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAlphanumericId() {
+      if (HasAlphanumericId) {
+        ClearId();
+      }
+    }
+
+    private object id_;
+    /// <summary>Enum of possible cases for the "id" oneof.</summary>
+    public enum IdOneofCase {
+      None = 0,
+      NumericId = 1,
+      AlphanumericId = 2,
+    }
+    private IdOneofCase idCase_ = IdOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public IdOneofCase IdCase {
+      get { return idCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearId() {
+      idCase_ = IdOneofCase.None;
+      id_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ExternalPartnerMerchantId);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ExternalPartnerMerchantId other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (NumericId != other.NumericId) return false;
+      if (AlphanumericId != other.AlphanumericId) return false;
+      if (IdCase != other.IdCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasNumericId) hash ^= NumericId.GetHashCode();
+      if (HasAlphanumericId) hash ^= AlphanumericId.GetHashCode();
+      hash ^= (int) idCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasNumericId) {
+        output.WriteRawTag(8);
+        output.WriteInt64(NumericId);
+      }
+      if (HasAlphanumericId) {
+        output.WriteRawTag(18);
+        output.WriteString(AlphanumericId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasNumericId) {
+        output.WriteRawTag(8);
+        output.WriteInt64(NumericId);
+      }
+      if (HasAlphanumericId) {
+        output.WriteRawTag(18);
+        output.WriteString(AlphanumericId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasNumericId) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(NumericId);
+      }
+      if (HasAlphanumericId) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AlphanumericId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ExternalPartnerMerchantId other) {
+      if (other == null) {
+        return;
+      }
+      switch (other.IdCase) {
+        case IdOneofCase.NumericId:
+          NumericId = other.NumericId;
+          break;
+        case IdOneofCase.AlphanumericId:
+          AlphanumericId = other.AlphanumericId;
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            NumericId = input.ReadInt64();
+            break;
+          }
+          case 18: {
+            AlphanumericId = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            NumericId = input.ReadInt64();
+            break;
+          }
+          case 18: {
+            AlphanumericId = input.ReadString();
+            break;
+          }
         }
       }
     }
@@ -3231,7 +3811,7 @@ namespace Google.Ads.GoogleAds.V26.Resources {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V26.Resources.CustomerReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Google.Ads.GoogleAds.V26.Resources.CustomerReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3567,7 +4147,7 @@ namespace Google.Ads.GoogleAds.V26.Resources {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V26.Resources.CustomerReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Google.Ads.GoogleAds.V26.Resources.CustomerReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3902,7 +4482,7 @@ namespace Google.Ads.GoogleAds.V26.Resources {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Google.Ads.GoogleAds.V26.Resources.CustomerReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Google.Ads.GoogleAds.V26.Resources.CustomerReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

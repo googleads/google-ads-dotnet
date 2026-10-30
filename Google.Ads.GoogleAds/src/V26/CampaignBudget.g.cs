@@ -26,57 +26,62 @@ namespace Google.Ads.GoogleAds.V26.Resources {
           string.Concat(
             "Cjhnb29nbGUvYWRzL2dvb2dsZWFkcy92MjYvcmVzb3VyY2VzL2NhbXBhaWdu",
             "X2J1ZGdldC5wcm90bxIiZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI2LnJlc291",
-            "cmNlcxo7Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjI2L2VudW1zL2J1ZGdldF9k",
-            "ZWxpdmVyeV9tZXRob2QucHJvdG8aMmdvb2dsZS9hZHMvZ29vZ2xlYWRzL3Yy",
-            "Ni9lbnVtcy9idWRnZXRfcGVyaW9kLnByb3RvGjJnb29nbGUvYWRzL2dvb2ds",
-            "ZWFkcy92MjYvZW51bXMvYnVkZ2V0X3N0YXR1cy5wcm90bxowZ29vZ2xlL2Fk",
-            "cy9nb29nbGVhZHMvdjI2L2VudW1zL2J1ZGdldF90eXBlLnByb3RvGh9nb29n",
-            "bGUvYXBpL2ZpZWxkX2JlaGF2aW9yLnByb3RvGhlnb29nbGUvYXBpL3Jlc291",
-            "cmNlLnByb3RvIvMLCg5DYW1wYWlnbkJ1ZGdldBJGCg1yZXNvdXJjZV9uYW1l",
-            "GAEgASgJQi/gQQX6QSkKJ2dvb2dsZWFkcy5nb29nbGVhcGlzLmNvbS9DYW1w",
-            "YWlnbkJ1ZGdldBIUCgJpZBgTIAEoA0ID4EEDSACIAQESEQoEbmFtZRgUIAEo",
-            "CUgBiAEBEhoKDWFtb3VudF9taWNyb3MYFSABKANIAogBARIgChN0b3RhbF9h",
-            "bW91bnRfbWljcm9zGBYgASgDSAOIAQESUgoGc3RhdHVzGAYgASgOMj0uZ29v",
-            "Z2xlLmFkcy5nb29nbGVhZHMudjI2LmVudW1zLkJ1ZGdldFN0YXR1c0VudW0u",
-            "QnVkZ2V0U3RhdHVzQgPgQQMSZgoPZGVsaXZlcnlfbWV0aG9kGAcgASgOMk0u",
-            "Z29vZ2xlLmFkcy5nb29nbGVhZHMudjI2LmVudW1zLkJ1ZGdldERlbGl2ZXJ5",
-            "TWV0aG9kRW51bS5CdWRnZXREZWxpdmVyeU1ldGhvZBIeChFleHBsaWNpdGx5",
-            "X3NoYXJlZBgXIAEoCEgEiAEBEiEKD3JlZmVyZW5jZV9jb3VudBgYIAEoA0ID",
-            "4EEDSAWIAQESKAoWaGFzX3JlY29tbWVuZGVkX2J1ZGdldBgZIAEoCEID4EED",
-            "SAaIAQESMgogcmVjb21tZW5kZWRfYnVkZ2V0X2Ftb3VudF9taWNyb3MYGiAB",
-            "KANCA+BBA0gHiAEBElIKBnBlcmlvZBgNIAEoDjI9Lmdvb2dsZS5hZHMuZ29v",
-            "Z2xlYWRzLnYyNi5lbnVtcy5CdWRnZXRQZXJpb2RFbnVtLkJ1ZGdldFBlcmlv",
-            "ZEID4EEFEkMKMXJlY29tbWVuZGVkX2J1ZGdldF9lc3RpbWF0ZWRfY2hhbmdl",
-            "X3dlZWtseV9jbGlja3MYGyABKANCA+BBA0gIiAEBEkgKNnJlY29tbWVuZGVk",
-            "X2J1ZGdldF9lc3RpbWF0ZWRfY2hhbmdlX3dlZWtseV9jb3N0X21pY3Jvcxgc",
-            "IAEoA0ID4EEDSAmIAQESSQo3cmVjb21tZW5kZWRfYnVkZ2V0X2VzdGltYXRl",
-            "ZF9jaGFuZ2Vfd2Vla2x5X2ludGVyYWN0aW9ucxgdIAEoA0ID4EEDSAqIAQES",
-            "QgowcmVjb21tZW5kZWRfYnVkZ2V0X2VzdGltYXRlZF9jaGFuZ2Vfd2Vla2x5",
-            "X3ZpZXdzGB4gASgDQgPgQQNIC4gBARJMCgR0eXBlGBIgASgOMjkuZ29vZ2xl",
-            "LmFkcy5nb29nbGVhZHMudjI2LmVudW1zLkJ1ZGdldFR5cGVFbnVtLkJ1ZGdl",
-            "dFR5cGVCA+BBBRIjChthbGlnbmVkX2JpZGRpbmdfc3RyYXRlZ3lfaWQYHyAB",
-            "KAM6aupBZwonZ29vZ2xlYWRzLmdvb2dsZWFwaXMuY29tL0NhbXBhaWduQnVk",
-            "Z2V0EjxjdXN0b21lcnMve2N1c3RvbWVyX2lkfS9jYW1wYWlnbkJ1ZGdldHMv",
-            "e2NhbXBhaWduX2J1ZGdldF9pZH1CBQoDX2lkQgcKBV9uYW1lQhAKDl9hbW91",
-            "bnRfbWljcm9zQhYKFF90b3RhbF9hbW91bnRfbWljcm9zQhQKEl9leHBsaWNp",
-            "dGx5X3NoYXJlZEISChBfcmVmZXJlbmNlX2NvdW50QhkKF19oYXNfcmVjb21t",
-            "ZW5kZWRfYnVkZ2V0QiMKIV9yZWNvbW1lbmRlZF9idWRnZXRfYW1vdW50X21p",
-            "Y3Jvc0I0CjJfcmVjb21tZW5kZWRfYnVkZ2V0X2VzdGltYXRlZF9jaGFuZ2Vf",
-            "d2Vla2x5X2NsaWNrc0I5CjdfcmVjb21tZW5kZWRfYnVkZ2V0X2VzdGltYXRl",
-            "ZF9jaGFuZ2Vfd2Vla2x5X2Nvc3RfbWljcm9zQjoKOF9yZWNvbW1lbmRlZF9i",
-            "dWRnZXRfZXN0aW1hdGVkX2NoYW5nZV93ZWVrbHlfaW50ZXJhY3Rpb25zQjMK",
-            "MV9yZWNvbW1lbmRlZF9idWRnZXRfZXN0aW1hdGVkX2NoYW5nZV93ZWVrbHlf",
-            "dmlld3NChQIKJmNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjYucmVzb3Vy",
-            "Y2VzQhNDYW1wYWlnbkJ1ZGdldFByb3RvUAFaS2dvb2dsZS5nb2xhbmcub3Jn",
-            "L2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MjYvcmVzb3Vy",
-            "Y2VzO3Jlc291cmNlc6ICA0dBQaoCIkdvb2dsZS5BZHMuR29vZ2xlQWRzLlYy",
-            "Ni5SZXNvdXJjZXPKAiJHb29nbGVcQWRzXEdvb2dsZUFkc1xWMjZcUmVzb3Vy",
-            "Y2Vz6gImR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjI2OjpSZXNvdXJjZXNi",
-            "BnByb3RvMw=="));
+            "cmNlcxo7Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjI2L2NvbW1vbi9idWRnZXRf",
+            "bmV0d29ya19jb21tb24ucHJvdG8aO2dvb2dsZS9hZHMvZ29vZ2xlYWRzL3Yy",
+            "Ni9lbnVtcy9idWRnZXRfZGVsaXZlcnlfbWV0aG9kLnByb3RvGjJnb29nbGUv",
+            "YWRzL2dvb2dsZWFkcy92MjYvZW51bXMvYnVkZ2V0X3BlcmlvZC5wcm90bxoy",
+            "Z29vZ2xlL2Fkcy9nb29nbGVhZHMvdjI2L2VudW1zL2J1ZGdldF9zdGF0dXMu",
+            "cHJvdG8aMGdvb2dsZS9hZHMvZ29vZ2xlYWRzL3YyNi9lbnVtcy9idWRnZXRf",
+            "dHlwZS5wcm90bxofZ29vZ2xlL2FwaS9maWVsZF9iZWhhdmlvci5wcm90bxoZ",
+            "Z29vZ2xlL2FwaS9yZXNvdXJjZS5wcm90byK9DQoOQ2FtcGFpZ25CdWRnZXQS",
+            "RwoNcmVzb3VyY2VfbmFtZRgBIAEoCUIw4kEBBfpBKQonZ29vZ2xlYWRzLmdv",
+            "b2dsZWFwaXMuY29tL0NhbXBhaWduQnVkZ2V0EhUKAmlkGBMgASgDQgTiQQED",
+            "SACIAQESEQoEbmFtZRgUIAEoCUgBiAEBEhoKDWFtb3VudF9taWNyb3MYFSAB",
+            "KANIAogBARIgChN0b3RhbF9hbW91bnRfbWljcm9zGBYgASgDSAOIAQESUwoG",
+            "c3RhdHVzGAYgASgOMj0uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI2LmVudW1z",
+            "LkJ1ZGdldFN0YXR1c0VudW0uQnVkZ2V0U3RhdHVzQgTiQQEDEmYKD2RlbGl2",
+            "ZXJ5X21ldGhvZBgHIAEoDjJNLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNi5l",
+            "bnVtcy5CdWRnZXREZWxpdmVyeU1ldGhvZEVudW0uQnVkZ2V0RGVsaXZlcnlN",
+            "ZXRob2QSHgoRZXhwbGljaXRseV9zaGFyZWQYFyABKAhIBIgBARIiCg9yZWZl",
+            "cmVuY2VfY291bnQYGCABKANCBOJBAQNIBYgBARIpChZoYXNfcmVjb21tZW5k",
+            "ZWRfYnVkZ2V0GBkgASgIQgTiQQEDSAaIAQESMwogcmVjb21tZW5kZWRfYnVk",
+            "Z2V0X2Ftb3VudF9taWNyb3MYGiABKANCBOJBAQNIB4gBARJTCgZwZXJpb2QY",
+            "DSABKA4yPS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjYuZW51bXMuQnVkZ2V0",
+            "UGVyaW9kRW51bS5CdWRnZXRQZXJpb2RCBOJBAQUSRAoxcmVjb21tZW5kZWRf",
+            "YnVkZ2V0X2VzdGltYXRlZF9jaGFuZ2Vfd2Vla2x5X2NsaWNrcxgbIAEoA0IE",
+            "4kEBA0gIiAEBEkkKNnJlY29tbWVuZGVkX2J1ZGdldF9lc3RpbWF0ZWRfY2hh",
+            "bmdlX3dlZWtseV9jb3N0X21pY3JvcxgcIAEoA0IE4kEBA0gJiAEBEkoKN3Jl",
+            "Y29tbWVuZGVkX2J1ZGdldF9lc3RpbWF0ZWRfY2hhbmdlX3dlZWtseV9pbnRl",
+            "cmFjdGlvbnMYHSABKANCBOJBAQNICogBARJDCjByZWNvbW1lbmRlZF9idWRn",
+            "ZXRfZXN0aW1hdGVkX2NoYW5nZV93ZWVrbHlfdmlld3MYHiABKANCBOJBAQNI",
+            "C4gBARJNCgR0eXBlGBIgASgOMjkuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI2",
+            "LmVudW1zLkJ1ZGdldFR5cGVFbnVtLkJ1ZGdldFR5cGVCBOJBAQUSIwobYWxp",
+            "Z25lZF9iaWRkaW5nX3N0cmF0ZWd5X2lkGB8gASgDElcKF2J1ZGdldF9uZXR3",
+            "b3JrX3NldHRpbmdzGCAgASgLMjYuZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI2",
+            "LmNvbW1vbi5CdWRnZXROZXR3b3JrU2V0dGluZ3MSYwoaYnVkZ2V0X25ldHdv",
+            "cmtfZWxpZ2liaWxpdHkYISABKAsyOS5nb29nbGUuYWRzLmdvb2dsZWFkcy52",
+            "MjYuY29tbW9uLkJ1ZGdldE5ldHdvcmtFbGlnaWJpbGl0eUIE4kEBAzpq6kFn",
+            "Cidnb29nbGVhZHMuZ29vZ2xlYXBpcy5jb20vQ2FtcGFpZ25CdWRnZXQSPGN1",
+            "c3RvbWVycy97Y3VzdG9tZXJfaWR9L2NhbXBhaWduQnVkZ2V0cy97Y2FtcGFp",
+            "Z25fYnVkZ2V0X2lkfUIFCgNfaWRCBwoFX25hbWVCEAoOX2Ftb3VudF9taWNy",
+            "b3NCFgoUX3RvdGFsX2Ftb3VudF9taWNyb3NCFAoSX2V4cGxpY2l0bHlfc2hh",
+            "cmVkQhIKEF9yZWZlcmVuY2VfY291bnRCGQoXX2hhc19yZWNvbW1lbmRlZF9i",
+            "dWRnZXRCIwohX3JlY29tbWVuZGVkX2J1ZGdldF9hbW91bnRfbWljcm9zQjQK",
+            "Ml9yZWNvbW1lbmRlZF9idWRnZXRfZXN0aW1hdGVkX2NoYW5nZV93ZWVrbHlf",
+            "Y2xpY2tzQjkKN19yZWNvbW1lbmRlZF9idWRnZXRfZXN0aW1hdGVkX2NoYW5n",
+            "ZV93ZWVrbHlfY29zdF9taWNyb3NCOgo4X3JlY29tbWVuZGVkX2J1ZGdldF9l",
+            "c3RpbWF0ZWRfY2hhbmdlX3dlZWtseV9pbnRlcmFjdGlvbnNCMwoxX3JlY29t",
+            "bWVuZGVkX2J1ZGdldF9lc3RpbWF0ZWRfY2hhbmdlX3dlZWtseV92aWV3c0KF",
+            "AgomY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYyNi5yZXNvdXJjZXNCE0Nh",
+            "bXBhaWduQnVkZ2V0UHJvdG9QAVpLZ29vZ2xlLmdvbGFuZy5vcmcvZ2VucHJv",
+            "dG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YyNi9yZXNvdXJjZXM7cmVz",
+            "b3VyY2VzogIDR0FBqgIiR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjI2LlJlc291",
+            "cmNlc8oCIkdvb2dsZVxBZHNcR29vZ2xlQWRzXFYyNlxSZXNvdXJjZXPqAiZH",
+            "b29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjY6OlJlc291cmNlc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V26.Enums.BudgetDeliveryMethodReflection.Descriptor, global::Google.Ads.GoogleAds.V26.Enums.BudgetPeriodReflection.Descriptor, global::Google.Ads.GoogleAds.V26.Enums.BudgetStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V26.Enums.BudgetTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Ads.GoogleAds.V26.Common.BudgetNetworkCommonReflection.Descriptor, global::Google.Ads.GoogleAds.V26.Enums.BudgetDeliveryMethodReflection.Descriptor, global::Google.Ads.GoogleAds.V26.Enums.BudgetPeriodReflection.Descriptor, global::Google.Ads.GoogleAds.V26.Enums.BudgetStatusReflection.Descriptor, global::Google.Ads.GoogleAds.V26.Enums.BudgetTypeReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Api.ResourceReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V26.Resources.CampaignBudget), global::Google.Ads.GoogleAds.V26.Resources.CampaignBudget.Parser, new[]{ "ResourceName", "Id", "Name", "AmountMicros", "TotalAmountMicros", "Status", "DeliveryMethod", "ExplicitlyShared", "ReferenceCount", "HasRecommendedBudget", "RecommendedBudgetAmountMicros", "Period", "RecommendedBudgetEstimatedChangeWeeklyClicks", "RecommendedBudgetEstimatedChangeWeeklyCostMicros", "RecommendedBudgetEstimatedChangeWeeklyInteractions", "RecommendedBudgetEstimatedChangeWeeklyViews", "Type", "AlignedBiddingStrategyId" }, new[]{ "Id", "Name", "AmountMicros", "TotalAmountMicros", "ExplicitlyShared", "ReferenceCount", "HasRecommendedBudget", "RecommendedBudgetAmountMicros", "RecommendedBudgetEstimatedChangeWeeklyClicks", "RecommendedBudgetEstimatedChangeWeeklyCostMicros", "RecommendedBudgetEstimatedChangeWeeklyInteractions", "RecommendedBudgetEstimatedChangeWeeklyViews" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Google.Ads.GoogleAds.V26.Resources.CampaignBudget), global::Google.Ads.GoogleAds.V26.Resources.CampaignBudget.Parser, new[]{ "ResourceName", "Id", "Name", "AmountMicros", "TotalAmountMicros", "Status", "DeliveryMethod", "ExplicitlyShared", "ReferenceCount", "HasRecommendedBudget", "RecommendedBudgetAmountMicros", "Period", "RecommendedBudgetEstimatedChangeWeeklyClicks", "RecommendedBudgetEstimatedChangeWeeklyCostMicros", "RecommendedBudgetEstimatedChangeWeeklyInteractions", "RecommendedBudgetEstimatedChangeWeeklyViews", "Type", "AlignedBiddingStrategyId", "BudgetNetworkSettings", "BudgetNetworkEligibility" }, new[]{ "Id", "Name", "AmountMicros", "TotalAmountMicros", "ExplicitlyShared", "ReferenceCount", "HasRecommendedBudget", "RecommendedBudgetAmountMicros", "RecommendedBudgetEstimatedChangeWeeklyClicks", "RecommendedBudgetEstimatedChangeWeeklyCostMicros", "RecommendedBudgetEstimatedChangeWeeklyInteractions", "RecommendedBudgetEstimatedChangeWeeklyViews" }, null, null, null)
           }));
     }
     #endregion
@@ -141,6 +146,8 @@ namespace Google.Ads.GoogleAds.V26.Resources {
       recommendedBudgetEstimatedChangeWeeklyViews_ = other.recommendedBudgetEstimatedChangeWeeklyViews_;
       type_ = other.type_;
       alignedBiddingStrategyId_ = other.alignedBiddingStrategyId_;
+      budgetNetworkSettings_ = other.budgetNetworkSettings_ != null ? other.budgetNetworkSettings_.Clone() : null;
+      budgetNetworkEligibility_ = other.budgetNetworkEligibility_ != null ? other.budgetNetworkEligibility_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -676,6 +683,39 @@ namespace Google.Ads.GoogleAds.V26.Resources {
       }
     }
 
+    /// <summary>Field number for the "budget_network_settings" field.</summary>
+    public const int BudgetNetworkSettingsFieldNumber = 32;
+    private global::Google.Ads.GoogleAds.V26.Common.BudgetNetworkSettings budgetNetworkSettings_;
+    /// <summary>
+    /// Waterfall channel priorities and budget caps for this budget, at most one
+    /// entry per advertising channel type. When unset, the customer-level
+    /// defaults in `CustomerBudgetNetworkSetting` apply.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V26.Common.BudgetNetworkSettings BudgetNetworkSettings {
+      get { return budgetNetworkSettings_; }
+      set {
+        budgetNetworkSettings_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "budget_network_eligibility" field.</summary>
+    public const int BudgetNetworkEligibilityFieldNumber = 33;
+    private global::Google.Ads.GoogleAds.V26.Common.BudgetNetworkEligibility budgetNetworkEligibility_;
+    /// <summary>
+    /// Output only. Whether this budget is eligible for waterfall channel
+    /// prioritization and budget caps, and if not, why.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Ads.GoogleAds.V26.Common.BudgetNetworkEligibility BudgetNetworkEligibility {
+      get { return budgetNetworkEligibility_; }
+      set {
+        budgetNetworkEligibility_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -709,6 +749,8 @@ namespace Google.Ads.GoogleAds.V26.Resources {
       if (RecommendedBudgetEstimatedChangeWeeklyViews != other.RecommendedBudgetEstimatedChangeWeeklyViews) return false;
       if (Type != other.Type) return false;
       if (AlignedBiddingStrategyId != other.AlignedBiddingStrategyId) return false;
+      if (!object.Equals(BudgetNetworkSettings, other.BudgetNetworkSettings)) return false;
+      if (!object.Equals(BudgetNetworkEligibility, other.BudgetNetworkEligibility)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -734,6 +776,8 @@ namespace Google.Ads.GoogleAds.V26.Resources {
       if (HasRecommendedBudgetEstimatedChangeWeeklyViews) hash ^= RecommendedBudgetEstimatedChangeWeeklyViews.GetHashCode();
       if (Type != global::Google.Ads.GoogleAds.V26.Enums.BudgetTypeEnum.Types.BudgetType.Unspecified) hash ^= Type.GetHashCode();
       if (AlignedBiddingStrategyId != 0L) hash ^= AlignedBiddingStrategyId.GetHashCode();
+      if (budgetNetworkSettings_ != null) hash ^= BudgetNetworkSettings.GetHashCode();
+      if (budgetNetworkEligibility_ != null) hash ^= BudgetNetworkEligibility.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -824,6 +868,14 @@ namespace Google.Ads.GoogleAds.V26.Resources {
         output.WriteRawTag(248, 1);
         output.WriteInt64(AlignedBiddingStrategyId);
       }
+      if (budgetNetworkSettings_ != null) {
+        output.WriteRawTag(130, 2);
+        output.WriteMessage(BudgetNetworkSettings);
+      }
+      if (budgetNetworkEligibility_ != null) {
+        output.WriteRawTag(138, 2);
+        output.WriteMessage(BudgetNetworkEligibility);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -906,6 +958,14 @@ namespace Google.Ads.GoogleAds.V26.Resources {
         output.WriteRawTag(248, 1);
         output.WriteInt64(AlignedBiddingStrategyId);
       }
+      if (budgetNetworkSettings_ != null) {
+        output.WriteRawTag(130, 2);
+        output.WriteMessage(BudgetNetworkSettings);
+      }
+      if (budgetNetworkEligibility_ != null) {
+        output.WriteRawTag(138, 2);
+        output.WriteMessage(BudgetNetworkEligibility);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -969,6 +1029,12 @@ namespace Google.Ads.GoogleAds.V26.Resources {
       }
       if (AlignedBiddingStrategyId != 0L) {
         size += 2 + pb::CodedOutputStream.ComputeInt64Size(AlignedBiddingStrategyId);
+      }
+      if (budgetNetworkSettings_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(BudgetNetworkSettings);
+      }
+      if (budgetNetworkEligibility_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(BudgetNetworkEligibility);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1035,6 +1101,18 @@ namespace Google.Ads.GoogleAds.V26.Resources {
       }
       if (other.AlignedBiddingStrategyId != 0L) {
         AlignedBiddingStrategyId = other.AlignedBiddingStrategyId;
+      }
+      if (other.budgetNetworkSettings_ != null) {
+        if (budgetNetworkSettings_ == null) {
+          BudgetNetworkSettings = new global::Google.Ads.GoogleAds.V26.Common.BudgetNetworkSettings();
+        }
+        BudgetNetworkSettings.MergeFrom(other.BudgetNetworkSettings);
+      }
+      if (other.budgetNetworkEligibility_ != null) {
+        if (budgetNetworkEligibility_ == null) {
+          BudgetNetworkEligibility = new global::Google.Ads.GoogleAds.V26.Common.BudgetNetworkEligibility();
+        }
+        BudgetNetworkEligibility.MergeFrom(other.BudgetNetworkEligibility);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1127,6 +1205,20 @@ namespace Google.Ads.GoogleAds.V26.Resources {
             AlignedBiddingStrategyId = input.ReadInt64();
             break;
           }
+          case 258: {
+            if (budgetNetworkSettings_ == null) {
+              BudgetNetworkSettings = new global::Google.Ads.GoogleAds.V26.Common.BudgetNetworkSettings();
+            }
+            input.ReadMessage(BudgetNetworkSettings);
+            break;
+          }
+          case 266: {
+            if (budgetNetworkEligibility_ == null) {
+              BudgetNetworkEligibility = new global::Google.Ads.GoogleAds.V26.Common.BudgetNetworkEligibility();
+            }
+            input.ReadMessage(BudgetNetworkEligibility);
+            break;
+          }
         }
       }
     #endif
@@ -1216,6 +1308,20 @@ namespace Google.Ads.GoogleAds.V26.Resources {
           }
           case 248: {
             AlignedBiddingStrategyId = input.ReadInt64();
+            break;
+          }
+          case 258: {
+            if (budgetNetworkSettings_ == null) {
+              BudgetNetworkSettings = new global::Google.Ads.GoogleAds.V26.Common.BudgetNetworkSettings();
+            }
+            input.ReadMessage(BudgetNetworkSettings);
+            break;
+          }
+          case 266: {
+            if (budgetNetworkEligibility_ == null) {
+              BudgetNetworkEligibility = new global::Google.Ads.GoogleAds.V26.Common.BudgetNetworkEligibility();
+            }
+            input.ReadMessage(BudgetNetworkEligibility);
             break;
           }
         }

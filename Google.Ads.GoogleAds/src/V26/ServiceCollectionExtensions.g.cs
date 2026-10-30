@@ -2157,6 +2157,44 @@ namespace Microsoft.Extensions.DependencyInjection
             });
 
         /// <summary>
+        /// Adds a singleton <see cref="gagvs::CustomerBudgetNetworkSettingServiceClient"/> to
+        /// <paramref name="services"/>.
+        /// </summary>
+        /// <param name="services">
+        /// The service collection to add the client to. The services are used to configure the client when requested.
+        /// </param>
+        /// <param name="action">
+        /// An optional action to invoke on the client builder. This is invoked before services from
+        /// <paramref name="services"/> are used.
+        /// </param>
+        internal static IServiceCollection AddCustomerBudgetNetworkSettingServiceClient(this IServiceCollection services, sys::Action<gagvs::CustomerBudgetNetworkSettingServiceClientBuilder> action = null) =>
+            services.AddSingleton(provider =>
+            {
+                gagvs::CustomerBudgetNetworkSettingServiceClientBuilder builder = new gagvs::CustomerBudgetNetworkSettingServiceClientBuilder();
+                action?.Invoke(builder);
+                return builder.Build(provider);
+            });
+
+        /// <summary>
+        /// Adds a singleton <see cref="gagvs::CustomerBudgetNetworkSettingServiceClient"/> to
+        /// <paramref name="services"/>.
+        /// </summary>
+        /// <param name="services">
+        /// The service collection to add the client to. The services are used to configure the client when requested.
+        /// </param>
+        /// <param name="action">
+        /// An optional action to invoke on the client builder. This is invoked before services from
+        /// <paramref name="services"/> are used.
+        /// </param>
+        internal static IServiceCollection AddCustomerBudgetNetworkSettingServiceClient(this IServiceCollection services, sys::Action<sys::IServiceProvider, gagvs::CustomerBudgetNetworkSettingServiceClientBuilder> action) =>
+            services.AddSingleton(provider =>
+            {
+                gagvs::CustomerBudgetNetworkSettingServiceClientBuilder builder = new gagvs::CustomerBudgetNetworkSettingServiceClientBuilder();
+                action?.Invoke(provider, builder);
+                return builder.Build(provider);
+            });
+
+        /// <summary>
         /// Adds a singleton <see cref="gagvs::CustomerClientLinkServiceClient"/> to <paramref name="services"/>.
         /// </summary>
         /// <param name="services">
@@ -3194,6 +3232,42 @@ namespace Microsoft.Extensions.DependencyInjection
             services.AddSingleton(provider =>
             {
                 gagvs::LabelServiceClientBuilder builder = new gagvs::LabelServiceClientBuilder();
+                action?.Invoke(provider, builder);
+                return builder.Build(provider);
+            });
+
+        /// <summary>
+        /// Adds a singleton <see cref="gagvs::LocalServicesEligibilityServiceClient"/> to <paramref name="services"/>.
+        /// </summary>
+        /// <param name="services">
+        /// The service collection to add the client to. The services are used to configure the client when requested.
+        /// </param>
+        /// <param name="action">
+        /// An optional action to invoke on the client builder. This is invoked before services from
+        /// <paramref name="services"/> are used.
+        /// </param>
+        internal static IServiceCollection AddLocalServicesEligibilityServiceClient(this IServiceCollection services, sys::Action<gagvs::LocalServicesEligibilityServiceClientBuilder> action = null) =>
+            services.AddSingleton(provider =>
+            {
+                gagvs::LocalServicesEligibilityServiceClientBuilder builder = new gagvs::LocalServicesEligibilityServiceClientBuilder();
+                action?.Invoke(builder);
+                return builder.Build(provider);
+            });
+
+        /// <summary>
+        /// Adds a singleton <see cref="gagvs::LocalServicesEligibilityServiceClient"/> to <paramref name="services"/>.
+        /// </summary>
+        /// <param name="services">
+        /// The service collection to add the client to. The services are used to configure the client when requested.
+        /// </param>
+        /// <param name="action">
+        /// An optional action to invoke on the client builder. This is invoked before services from
+        /// <paramref name="services"/> are used.
+        /// </param>
+        internal static IServiceCollection AddLocalServicesEligibilityServiceClient(this IServiceCollection services, sys::Action<sys::IServiceProvider, gagvs::LocalServicesEligibilityServiceClientBuilder> action) =>
+            services.AddSingleton(provider =>
+            {
+                gagvs::LocalServicesEligibilityServiceClientBuilder builder = new gagvs::LocalServicesEligibilityServiceClientBuilder();
                 action?.Invoke(provider, builder);
                 return builder.Build(provider);
             });
