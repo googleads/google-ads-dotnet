@@ -26,7 +26,7 @@ namespace Google.Ads.GoogleAds.V26.Enums {
           string.Concat(
             "Cjpnb29nbGUvYWRzL2dvb2dsZWFkcy92MjYvZW51bXMvYXNzZXRfYXV0b21h",
             "dGlvbl90eXBlLnByb3RvEh5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjYuZW51",
-            "bXMipwQKF0Fzc2V0QXV0b21hdGlvblR5cGVFbnVtIosEChNBc3NldEF1dG9t",
+            "bXMiwwQKF0Fzc2V0QXV0b21hdGlvblR5cGVFbnVtIqcEChNBc3NldEF1dG9t",
             "YXRpb25UeXBlEg8KC1VOU1BFQ0lGSUVEEAASCwoHVU5LTk9XThABEhkKFVRF",
             "WFRfQVNTRVRfQVVUT01BVElPThACEiQKIEdFTkVSQVRFX1ZFUlRJQ0FMX1lP",
             "VVRVQkVfVklERU9TEAMSIwofR0VORVJBVEVfU0hPUlRFUl9ZT1VUVUJFX1ZJ",
@@ -38,12 +38,13 @@ namespace Google.Ads.GoogleAds.V26.Enums {
             "VVJMX0VYUEFOU0lPTl9URVhUX0FTU0VUX0FVVE9NQVRJT04QCxIlCiFHRU5F",
             "UkFURV9WSURFT1NfRlJPTV9PVEhFUl9BU1NFVFMQDBIuCipHRU5FUkFURV9B",
             "TklNQVRFRF9JTUFHRVNfRlJPTV9PVEhFUl9BU1NFVFMQDRIZChVBVVRPTUFU",
-            "RURfVklERU9fQ1JBV0wQD0LyAQoiY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRz",
-            "LnYyNi5lbnVtc0IYQXNzZXRBdXRvbWF0aW9uVHlwZVByb3RvUAFaQ2dvb2ds",
-            "ZS5nb2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFk",
-            "cy92MjYvZW51bXM7ZW51bXOiAgNHQUGqAh5Hb29nbGUuQWRzLkdvb2dsZUFk",
-            "cy5WMjYuRW51bXPKAh5Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMjZcRW51bXPq",
-            "AiJHb29nbGU6OkFkczo6R29vZ2xlQWRzOjpWMjY6OkVudW1zYgZwcm90bzM="));
+            "RURfVklERU9fQ1JBV0wQDxIaChZPVkVSTEFZX1RFWFRfT05fVklERU9TEBBC",
+            "8gEKImNvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjYuZW51bXNCGEFzc2V0",
+            "QXV0b21hdGlvblR5cGVQcm90b1ABWkNnb29nbGUuZ29sYW5nLm9yZy9nZW5w",
+            "cm90by9nb29nbGVhcGlzL2Fkcy9nb29nbGVhZHMvdjI2L2VudW1zO2VudW1z",
+            "ogIDR0FBqgIeR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjI2LkVudW1zygIeR29v",
+            "Z2xlXEFkc1xHb29nbGVBZHNcVjI2XEVudW1z6gIiR29vZ2xlOjpBZHM6Okdv",
+            "b2dsZUFkczo6VjI2OjpFbnVtc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -322,6 +323,12 @@ namespace Google.Ads.GoogleAds.V26.Enums {
         /// Automated video crawl.
         /// </summary>
         [pbr::OriginalName("AUTOMATED_VIDEO_CRAWL")] AutomatedVideoCrawl = 15,
+        /// <summary>
+        /// Overlays text taken from associated text Assets (such as headlines) on
+        /// top of video Assets. By default, advertisers are opted in for
+        /// DemandGenVideoResponsiveAd.
+        /// </summary>
+        [pbr::OriginalName("OVERLAY_TEXT_ON_VIDEOS")] OverlayTextOnVideos = 16,
       }
 
     }

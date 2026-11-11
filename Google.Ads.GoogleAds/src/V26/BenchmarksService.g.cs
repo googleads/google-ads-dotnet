@@ -3619,7 +3619,7 @@ namespace Google.Ads.GoogleAds.V26.Services {
     /// A list of Product &amp; Service Categories for scoping a YouTube benchmarks
     /// analysis. For example, when category "/Apparel/Clothing" is selected,
     /// customer metrics represent Ad performance for "/Apparel/Clothing" Ads only
-    /// and the customer is benchmarking against all advertisers’ Ads in the
+    /// and the customer is benchmarking against all advertisers' Ads in the
     /// "/Apparel/Clothing" category.
     ///
     /// This filter can only be used when `all_advertisers` is used as the
@@ -6622,7 +6622,7 @@ namespace Google.Ads.GoogleAds.V26.Services {
   }
 
   /// <summary>
-  /// Metrics representing the customer’s Ad performance.
+  /// Metrics representing the customer's Ad performance.
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CustomerMetrics : pb::IMessage<CustomerMetrics>
@@ -6729,7 +6729,7 @@ namespace Google.Ads.GoogleAds.V26.Services {
     public const int PercentileMetricsFieldNumber = 4;
     private global::Google.Ads.GoogleAds.V26.Services.PercentileMetrics percentileMetrics_;
     /// <summary>
-    /// Metrics representing the customer’s competitive standing among advertisers
+    /// Metrics representing the customer's competitive standing among advertisers
     /// scoped by the analysis. Percentile metrics are only returned when:
     ///
     /// 1. `all_advertisers` is used as the `benchmarks_source`. Note that the
@@ -7823,7 +7823,7 @@ namespace Google.Ads.GoogleAds.V26.Services {
     public const int ShareOfVoiceFieldNumber = 1;
     private double shareOfVoice_;
     /// <summary>
-    /// Relative impressions. Share of voice is defined by the customer’s total
+    /// Relative impressions. Share of voice is defined by the customer's total
     /// number of impressions divided by the aggregated number of impressions of
     /// all advertisers in the selected benchmarks source including your own. Share
     /// of voice is represented on a scale of 0 to 1 precise to 4 decimal places.
@@ -7842,7 +7842,7 @@ namespace Google.Ads.GoogleAds.V26.Services {
     public const int ShareOfSpendFieldNumber = 2;
     private double shareOfSpend_;
     /// <summary>
-    /// Relative spend. Share of spend is defined by the customer’s total cost
+    /// Relative spend. Share of spend is defined by the customer's total cost
     /// divided by the total aggregated cost of all advertisers in the selected
     /// benchmarks source including your own. Share of spend is represented on a
     /// scale of 0 to 1 precise to 4 decimal places. For example, 0.0123 which
@@ -8483,7 +8483,7 @@ namespace Google.Ads.GoogleAds.V26.Services {
   }
 
   /// <summary>
-  /// Metrics representing the customer’s competitive standing among advertisers
+  /// Metrics representing the customer's competitive standing among advertisers
   /// scoped by the analysis.
   ///
   /// Percentile tier values classify the customer's percentile rank among other

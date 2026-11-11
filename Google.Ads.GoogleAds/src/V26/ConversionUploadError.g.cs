@@ -84,10 +84,12 @@ namespace Google.Ads.GoogleAds.V26.Errors {
   /// <summary>
   /// Container for enum describing possible conversion upload errors.
   ///
-  /// For help diagnosing and resolving these errors, see the [Conversion upload
-  /// troubleshooting guide](/google-ads/api/docs/conversions/troubleshooting) (or
-  /// use the `troubleshoot-conversions` workflow in the [Google Ads API Developer
-  /// Assistant](/google-ads/api/docs/developer-toolkit/ai-assistant)).
+  /// For help diagnosing and resolving these errors, see the
+  /// [Conversion upload troubleshooting
+  /// guide](https://developers.google.com/google-ads/api/docs/conversions/troubleshooting)
+  /// (or use the `troubleshoot-conversions` workflow in the
+  /// [Google Ads API Developer
+  /// Assistant](https://developers.google.com/google-ads/api/docs/developer-toolkit/ai-assistant)).
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ConversionUploadErrorEnum : pb::IMessage<ConversionUploadErrorEnum>
@@ -256,11 +258,12 @@ namespace Google.Ads.GoogleAds.V26.Errors {
       /// <summary>
       /// Enum describing possible conversion upload errors.
       ///
-      /// For step-by-step resolution guidance, see the [Conversion upload
-      /// troubleshooting guide](/google-ads/api/docs/conversions/troubleshooting)
-      /// (or use the `troubleshoot-conversions` workflow in the [Google Ads API
-      /// Developer
-      /// Assistant](/google-ads/api/docs/developer-toolkit/ai-assistant)).
+      /// For step-by-step resolution guidance, see the
+      /// [Conversion upload troubleshooting
+      /// guide](https://developers.google.com/google-ads/api/docs/conversions/troubleshooting)
+      /// (or use the `troubleshoot-conversions` workflow in the
+      /// [Google Ads API Developer
+      /// Assistant](https://developers.google.com/google-ads/api/docs/developer-toolkit/ai-assistant)).
       /// </summary>
       public enum ConversionUploadError {
         /// <summary>

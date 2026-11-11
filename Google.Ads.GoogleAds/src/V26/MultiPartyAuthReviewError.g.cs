@@ -26,18 +26,18 @@ namespace Google.Ads.GoogleAds.V26.Errors {
           string.Concat(
             "CkNnb29nbGUvYWRzL2dvb2dsZWFkcy92MjYvZXJyb3JzL211bHRpX3BhcnR5",
             "X2F1dGhfcmV2aWV3X2Vycm9yLnByb3RvEh9nb29nbGUuYWRzLmdvb2dsZWFk",
-            "cy52MjYuZXJyb3JzItgBCh1NdWx0aVBhcnR5QXV0aFJldmlld0Vycm9yRW51",
-            "bSK2AQoZTXVsdGlQYXJ0eUF1dGhSZXZpZXdFcnJvchIPCgtVTlNQRUNJRklF",
+            "cy52MjYuZXJyb3JzIvwBCh1NdWx0aVBhcnR5QXV0aFJldmlld0Vycm9yRW51",
+            "bSLaAQoZTXVsdGlQYXJ0eUF1dGhSZXZpZXdFcnJvchIPCgtVTlNQRUNJRklF",
             "RBAAEgsKB1VOS05PV04QARIfChtBQ0NFU1NfSU5WSVRBVElPTl9OT1RfRk9V",
             "TkQQAhIkCiBBQ0NFU1NfSU5WSVRBVElPTl9JTlZBTElEX1NUQVRVUxADEh0K",
             "GUlOVkFMSURfU1RBVFVTX1RSQU5TSVRJT04QBBIVChFQRVJNSVNTSU9OX0RF",
-            "TklFRBAFQv4BCiNjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI2LmVycm9y",
-            "c0IeTXVsdGlQYXJ0eUF1dGhSZXZpZXdFcnJvclByb3RvUAFaRWdvb2dsZS5n",
-            "b2xhbmcub3JnL2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92",
-            "MjYvZXJyb3JzO2Vycm9yc6ICA0dBQaoCH0dvb2dsZS5BZHMuR29vZ2xlQWRz",
-            "LlYyNi5FcnJvcnPKAh9Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMjZcRXJyb3Jz",
-            "6gIjR29vZ2xlOjpBZHM6Okdvb2dsZUFkczo6VjI2OjpFcnJvcnNiBnByb3Rv",
-            "Mw=="));
+            "TklFRBAFEiIKHlNUQUxFX01VTFRJX1BBUlRZX0FVVEhfUkVRVUVTVBAGQv4B",
+            "CiNjb20uZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI2LmVycm9yc0IeTXVsdGlQ",
+            "YXJ0eUF1dGhSZXZpZXdFcnJvclByb3RvUAFaRWdvb2dsZS5nb2xhbmcub3Jn",
+            "L2dlbnByb3RvL2dvb2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MjYvZXJyb3Jz",
+            "O2Vycm9yc6ICA0dBQaoCH0dvb2dsZS5BZHMuR29vZ2xlQWRzLlYyNi5FcnJv",
+            "cnPKAh9Hb29nbGVcQWRzXEdvb2dsZUFkc1xWMjZcRXJyb3Jz6gIjR29vZ2xl",
+            "OjpBZHM6Okdvb2dsZUFkczo6VjI2OjpFcnJvcnNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -243,6 +243,11 @@ namespace Google.Ads.GoogleAds.V26.Errors {
         /// The user does not have permission to perform this action.
         /// </summary>
         [pbr::OriginalName("PERMISSION_DENIED")] PermissionDenied = 5,
+        /// <summary>
+        /// The Multi-Party Authorization review is stale because the target resource
+        /// was modified or deleted after the review was created.
+        /// </summary>
+        [pbr::OriginalName("STALE_MULTI_PARTY_AUTH_REQUEST")] StaleMultiPartyAuthRequest = 6,
       }
 
     }

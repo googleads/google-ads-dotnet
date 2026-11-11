@@ -25,8 +25,8 @@ namespace Google.Ads.GoogleAds.V26.Errors {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CjJnb29nbGUvYWRzL2dvb2dsZWFkcy92MjYvZXJyb3JzL211dGF0ZV9lcnJv",
-            "ci5wcm90bxIfZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI2LmVycm9ycyKWAwoP",
-            "TXV0YXRlRXJyb3JFbnVtIoIDCgtNdXRhdGVFcnJvchIPCgtVTlNQRUNJRklF",
+            "ci5wcm90bxIfZ29vZ2xlLmFkcy5nb29nbGVhZHMudjI2LmVycm9ycyLRAwoP",
+            "TXV0YXRlRXJyb3JFbnVtIr0DCgtNdXRhdGVFcnJvchIPCgtVTlNQRUNJRklF",
             "RBAAEgsKB1VOS05PV04QARIWChJSRVNPVVJDRV9OT1RfRk9VTkQQAxIhCh1J",
             "RF9FWElTVFNfSU5fTVVMVElQTEVfTVVUQVRFUxAHEh0KGUlOQ09OU0lTVEVO",
             "VF9GSUVMRF9WQUxVRVMQCBIWChJNVVRBVEVfTk9UX0FMTE9XRUQQCRIeChpS",
@@ -34,13 +34,14 @@ namespace Google.Ads.GoogleAds.V26.Errors {
             "RFlfRVhJU1RTEAsSKwonUkVTT1VSQ0VfRE9FU19OT1RfU1VQUE9SVF9WQUxJ",
             "REFURV9PTkxZEAwSLgoqT1BFUkFUSU9OX0RPRVNfTk9UX1NVUFBPUlRfUEFS",
             "VElBTF9GQUlMVVJFEBASFgoSUkVTT1VSQ0VfUkVBRF9PTkxZEA0SMQotRVVf",
-            "UE9MSVRJQ0FMX0FEVkVSVElTSU5HX0RFQ0xBUkFUSU9OX1JFUVVJUkVEEBFC",
-            "8AEKI2NvbS5nb29nbGUuYWRzLmdvb2dsZWFkcy52MjYuZXJyb3JzQhBNdXRh",
-            "dGVFcnJvclByb3RvUAFaRWdvb2dsZS5nb2xhbmcub3JnL2dlbnByb3RvL2dv",
-            "b2dsZWFwaXMvYWRzL2dvb2dsZWFkcy92MjYvZXJyb3JzO2Vycm9yc6ICA0dB",
-            "QaoCH0dvb2dsZS5BZHMuR29vZ2xlQWRzLlYyNi5FcnJvcnPKAh9Hb29nbGVc",
-            "QWRzXEdvb2dsZUFkc1xWMjZcRXJyb3Jz6gIjR29vZ2xlOjpBZHM6Okdvb2ds",
-            "ZUFkczo6VjI2OjpFcnJvcnNiBnByb3RvMw=="));
+            "UE9MSVRJQ0FMX0FEVkVSVElTSU5HX0RFQ0xBUkFUSU9OX1JFUVVJUkVEEBES",
+            "OQo1TVVMVElfUEFSVFlfQVBQUk9WQUxfVU5TVVBQT1JURURfUkVTT1VSQ0Vf",
+            "Q09NQklOQVRJT04QEkLwAQojY29tLmdvb2dsZS5hZHMuZ29vZ2xlYWRzLnYy",
+            "Ni5lcnJvcnNCEE11dGF0ZUVycm9yUHJvdG9QAVpFZ29vZ2xlLmdvbGFuZy5v",
+            "cmcvZ2VucHJvdG8vZ29vZ2xlYXBpcy9hZHMvZ29vZ2xlYWRzL3YyNi9lcnJv",
+            "cnM7ZXJyb3JzogIDR0FBqgIfR29vZ2xlLkFkcy5Hb29nbGVBZHMuVjI2LkVy",
+            "cm9yc8oCH0dvb2dsZVxBZHNcR29vZ2xlQWRzXFYyNlxFcnJvcnPqAiNHb29n",
+            "bGU6OkFkczo6R29vZ2xlQWRzOjpWMjY6OkVycm9yc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -272,6 +273,11 @@ namespace Google.Ads.GoogleAds.V26.Errors {
         /// campaigns without the EU political advertising declaration.
         /// </summary>
         [pbr::OriginalName("EU_POLITICAL_ADVERTISING_DECLARATION_REQUIRED")] EuPoliticalAdvertisingDeclarationRequired = 17,
+        /// <summary>
+        /// The combination of resources in this mutate is not supported for
+        /// multi-party approval.
+        /// </summary>
+        [pbr::OriginalName("MULTI_PARTY_APPROVAL_UNSUPPORTED_RESOURCE_COMBINATION")] MultiPartyApprovalUnsupportedResourceCombination = 18,
       }
 
     }

@@ -203,10 +203,11 @@ namespace Google.Ads.GoogleAds.V26.Services
     /// <remarks>
     /// Service to manage offline user data jobs.
     /// For help diagnosing and resolving conversion or user data upload issues, see
-    /// the conversion upload
-    /// [troubleshooting guide](/google-ads/api/docs/conversions/troubleshooting)
-    /// (or use the `troubleshoot-conversions` workflow in the [Google Ads API
-    /// Developer Assistant](/google-ads/api/docs/developer-toolkit/ai-assistant)).
+    /// the [conversion upload troubleshooting
+    /// guide](https://developers.google.com/google-ads/api/docs/conversions/troubleshooting)
+    /// (or use the `troubleshoot-conversions` workflow in the
+    /// [Google Ads API Developer
+    /// Assistant](https://developers.google.com/google-ads/api/docs/developer-toolkit/ai-assistant)).
     /// </remarks>
     public abstract partial class OfflineUserDataJobServiceClient
     {
@@ -942,10 +943,11 @@ namespace Google.Ads.GoogleAds.V26.Services
     /// <remarks>
     /// Service to manage offline user data jobs.
     /// For help diagnosing and resolving conversion or user data upload issues, see
-    /// the conversion upload
-    /// [troubleshooting guide](/google-ads/api/docs/conversions/troubleshooting)
-    /// (or use the `troubleshoot-conversions` workflow in the [Google Ads API
-    /// Developer Assistant](/google-ads/api/docs/developer-toolkit/ai-assistant)).
+    /// the [conversion upload troubleshooting
+    /// guide](https://developers.google.com/google-ads/api/docs/conversions/troubleshooting)
+    /// (or use the `troubleshoot-conversions` workflow in the
+    /// [Google Ads API Developer
+    /// Assistant](https://developers.google.com/google-ads/api/docs/developer-toolkit/ai-assistant)).
     /// </remarks>
     public sealed partial class OfflineUserDataJobServiceClientImpl : OfflineUserDataJobServiceClient
     {
