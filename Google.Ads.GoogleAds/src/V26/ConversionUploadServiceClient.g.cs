@@ -323,7 +323,7 @@ namespace Google.Ads.GoogleAds.V26.Services
         /// 
         /// See
         /// [Best practices for partial
-        /// failures](/google-ads/api/docs/best-practices/partial-failures).
+        /// failures](https://developers.google.com/google-ads/api/docs/best-practices/partial-failures).
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>The RPC response.</returns>
@@ -365,7 +365,7 @@ namespace Google.Ads.GoogleAds.V26.Services
         /// 
         /// See
         /// [Best practices for partial
-        /// failures](/google-ads/api/docs/best-practices/partial-failures).
+        /// failures](https://developers.google.com/google-ads/api/docs/best-practices/partial-failures).
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A Task containing the RPC response.</returns>
@@ -407,7 +407,7 @@ namespace Google.Ads.GoogleAds.V26.Services
         /// 
         /// See
         /// [Best practices for partial
-        /// failures](/google-ads/api/docs/best-practices/partial-failures).
+        /// failures](https://developers.google.com/google-ads/api/docs/best-practices/partial-failures).
         /// </param>
         /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
         /// <returns>A Task containing the RPC response.</returns>
@@ -494,7 +494,7 @@ namespace Google.Ads.GoogleAds.V26.Services
         /// 
         /// See
         /// [Best practices for partial
-        /// failures](/google-ads/api/docs/best-practices/partial-failures).
+        /// failures](https://developers.google.com/google-ads/api/docs/best-practices/partial-failures).
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>The RPC response.</returns>
@@ -535,7 +535,7 @@ namespace Google.Ads.GoogleAds.V26.Services
         /// 
         /// See
         /// [Best practices for partial
-        /// failures](/google-ads/api/docs/best-practices/partial-failures).
+        /// failures](https://developers.google.com/google-ads/api/docs/best-practices/partial-failures).
         /// </param>
         /// <param name="callSettings">If not null, applies overrides to this RPC call.</param>
         /// <returns>A Task containing the RPC response.</returns>
@@ -576,7 +576,7 @@ namespace Google.Ads.GoogleAds.V26.Services
         /// 
         /// See
         /// [Best practices for partial
-        /// failures](/google-ads/api/docs/best-practices/partial-failures).
+        /// failures](https://developers.google.com/google-ads/api/docs/best-practices/partial-failures).
         /// </param>
         /// <param name="cancellationToken">A <see cref="st::CancellationToken"/> to use for this RPC.</param>
         /// <returns>A Task containing the RPC response.</returns>

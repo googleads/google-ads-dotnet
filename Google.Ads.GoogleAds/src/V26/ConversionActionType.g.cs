@@ -394,9 +394,8 @@ namespace Google.Ads.GoogleAds.V26.Enums {
         [pbr::OriginalName("LEAD_FORM_SUBMIT")] LeadFormSubmit = 29,
         /// <summary>
         /// Deprecated: The Salesforce integration ended on May 31, 2025.
-        /// See
-        /// [Legacy Salesforce integration for conversions upgrade
-        /// FAQ](//support.google.com/google-ads/answer/14728349).
+        /// See [Legacy Salesforce integration for conversions upgrade
+        /// FAQ](https://support.google.com/google-ads/answer/14728349).
         /// </summary>
         [global::System.ObsoleteAttribute]
         [pbr::OriginalName("SALESFORCE")] Salesforce = 30,

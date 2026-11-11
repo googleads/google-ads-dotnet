@@ -692,7 +692,7 @@ namespace Google.Ads.GoogleAds.V26.Resources {
     private string channelId_;
     /// <summary>
     /// Immutable. The ID of the hosting channel of the video. This is a string
-    /// value with “UC” prefix. For example, "UCK8sQmJBp8GCxrOtXWBpyEA".
+    /// value with "UC" prefix. For example, "UCK8sQmJBp8GCxrOtXWBpyEA".
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -968,7 +968,7 @@ namespace Google.Ads.GoogleAds.V26.Resources {
     /// <summary>
     /// Immutable. The ID of a YouTube brand channel to help creators understand
     /// your brand. The channel must be linked to this account. This is a string
-    /// value with “UC” prefix. For example, "UCK8sQmJBp8GCxrOtXWBpyEA".
+    /// value with "UC" prefix. For example, "UCK8sQmJBp8GCxrOtXWBpyEA".
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

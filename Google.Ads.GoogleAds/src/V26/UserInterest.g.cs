@@ -245,7 +245,10 @@ namespace Google.Ads.GoogleAds.V26.Resources {
     private bool launchedToAll_;
     /// <summary>
     /// Output only. True if the user interest is launched to all channels and
-    /// locales.
+    /// locales. When true, `availabilities` is empty. When false, `availabilities`
+    /// is populated for user interests that are launched only to specific channels
+    /// or locales, and is empty if the user interest is not generally available
+    /// for targeting (for example, deprecated or restricted user interests).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -275,7 +278,12 @@ namespace Google.Ads.GoogleAds.V26.Resources {
         = pb::FieldCodec.ForMessage(58, global::Google.Ads.GoogleAds.V26.Common.CriterionCategoryAvailability.Parser);
     private readonly pbc::RepeatedField<global::Google.Ads.GoogleAds.V26.Common.CriterionCategoryAvailability> availabilities_ = new pbc::RepeatedField<global::Google.Ads.GoogleAds.V26.Common.CriterionCategoryAvailability>();
     /// <summary>
-    /// Output only. Availability information of the user interest.
+    /// Output only. Availability information of the user interest. This field is
+    /// empty when `launched_to_all` is true, or when `launched_to_all` is false
+    /// and the user interest is not generally available for targeting (for
+    /// example, deprecated or restricted user interests). When `launched_to_all`
+    /// is false and the user interest is launched only to specific channels or
+    /// locales, this field lists those availabilities.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

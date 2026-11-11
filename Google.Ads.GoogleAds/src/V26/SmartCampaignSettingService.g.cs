@@ -625,8 +625,8 @@ namespace Google.Ads.GoogleAds.V26.Services {
     /// <summary>
     /// The timestamp of the last impression observed in the last 48 hours for this
     /// campaign.
-    /// The timestamp is in the customer’s timezone and in
-    /// “yyyy-MM-dd HH:mm:ss” format.
+    /// The timestamp is in the customer's timezone and in
+    /// "yyyy-MM-dd HH:mm:ss" format.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -656,8 +656,8 @@ namespace Google.Ads.GoogleAds.V26.Services {
     private string endDateTime_;
     /// <summary>
     /// The timestamp of when the campaign will end, if applicable.
-    /// The timestamp is in the customer’s timezone and in
-    /// “yyyy-MM-dd HH:mm:ss” format.
+    /// The timestamp is in the customer's timezone and in
+    /// "yyyy-MM-dd HH:mm:ss" format.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -900,8 +900,8 @@ namespace Google.Ads.GoogleAds.V26.Services {
     private string pausedDateTime_;
     /// <summary>
     /// The timestamp of when the campaign was last paused.
-    /// The timestamp is in the customer’s timezone and in
-    /// “yyyy-MM-dd HH:mm:ss” format.
+    /// The timestamp is in the customer's timezone and in
+    /// "yyyy-MM-dd HH:mm:ss" format.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1120,8 +1120,8 @@ namespace Google.Ads.GoogleAds.V26.Services {
     private string removedDateTime_;
     /// <summary>
     /// The timestamp of when the campaign was removed.
-    /// The timestamp is in the customer’s timezone and in
-    /// “yyyy-MM-dd HH:mm:ss” format.
+    /// The timestamp is in the customer's timezone and in
+    /// "yyyy-MM-dd HH:mm:ss" format.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1340,8 +1340,8 @@ namespace Google.Ads.GoogleAds.V26.Services {
     private string endDateTime_;
     /// <summary>
     /// The timestamp of when the campaign ended.
-    /// The timestamp is in the customer’s timezone and in
-    /// “yyyy-MM-dd HH:mm:ss” format.
+    /// The timestamp is in the customer's timezone and in
+    /// "yyyy-MM-dd HH:mm:ss" format.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

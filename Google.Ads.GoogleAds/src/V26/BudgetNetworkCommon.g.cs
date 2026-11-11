@@ -272,7 +272,7 @@ namespace Google.Ads.GoogleAds.V26.Common {
 
   /// <summary>
   /// Budget allocation setting for a specific advertising channel type (e.g.,
-  /// SEARCH, SHOPPING, PERFORMANCE_MAX).
+  /// SEARCH, SHOPPING, PERFORMANCE_MAX, or DEMAND_GEN).
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BudgetNetworkSetting : pb::IMessage<BudgetNetworkSetting>
@@ -326,7 +326,7 @@ namespace Google.Ads.GoogleAds.V26.Common {
     private global::Google.Ads.GoogleAds.V26.Enums.AdvertisingChannelTypeEnum.Types.AdvertisingChannelType advertisingChannelType_ = global::Google.Ads.GoogleAds.V26.Enums.AdvertisingChannelTypeEnum.Types.AdvertisingChannelType.Unspecified;
     /// <summary>
     /// The advertising channel type this setting applies to (e.g., SEARCH,
-    /// SHOPPING, or PERFORMANCE_MAX).
+    /// SHOPPING, PERFORMANCE_MAX, or DEMAND_GEN).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

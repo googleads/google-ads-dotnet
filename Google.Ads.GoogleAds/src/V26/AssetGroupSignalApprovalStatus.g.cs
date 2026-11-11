@@ -242,7 +242,7 @@ namespace Google.Ads.GoogleAds.V26.Enums {
         /// </summary>
         [pbr::OriginalName("DISAPPROVED")] Disapproved = 4,
         /// <summary>
-        /// Search Theme is under review. It won’t be able to trigger ads until
+        /// Search Theme is under review. It won't be able to trigger ads until
         /// it's been reviewed.
         /// </summary>
         [pbr::OriginalName("UNDER_REVIEW")] UnderReview = 5,

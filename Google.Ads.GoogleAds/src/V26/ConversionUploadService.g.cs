@@ -178,7 +178,8 @@ namespace Google.Ads.GoogleAds.V26.Services {
   /// `UserIdentifier` object (`oneof identifier` is mutually exclusive).
   ///
   /// For help diagnosing conversion upload issues, see the conversion upload
-  /// [troubleshooting guide](/google-ads/api/docs/conversions/troubleshooting).
+  /// [troubleshooting
+  /// guide](https://developers.google.com/google-ads/api/docs/conversions/troubleshooting).
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class UploadClickConversionsRequest : pb::IMessage<UploadClickConversionsRequest>
@@ -271,7 +272,7 @@ namespace Google.Ads.GoogleAds.V26.Services {
     ///
     /// See
     /// [Best practices for partial
-    /// failures](/google-ads/api/docs/best-practices/partial-failures).
+    /// failures](https://developers.google.com/google-ads/api/docs/best-practices/partial-failures).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -621,7 +622,7 @@ namespace Google.Ads.GoogleAds.V26.Services {
     ///
     /// See
     /// [Best practices for partial
-    /// failures](/google-ads/api/docs/best-practices/partial-failures).
+    /// failures](https://developers.google.com/google-ads/api/docs/best-practices/partial-failures).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -943,7 +944,7 @@ namespace Google.Ads.GoogleAds.V26.Services {
     ///
     /// See
     /// [Best practices for partial
-    /// failures](/google-ads/api/docs/best-practices/partial-failures).
+    /// failures](https://developers.google.com/google-ads/api/docs/best-practices/partial-failures).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1234,7 +1235,7 @@ namespace Google.Ads.GoogleAds.V26.Services {
     ///
     /// See
     /// [Best practices for partial
-    /// failures](/google-ads/api/docs/best-practices/partial-failures).
+    /// failures](https://developers.google.com/google-ads/api/docs/best-practices/partial-failures).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1429,10 +1430,11 @@ namespace Google.Ads.GoogleAds.V26.Services {
   /// A click conversion.
   ///
   /// For help diagnosing and resolving conversion upload issues, see the
-  /// conversion upload
-  /// [troubleshooting guide](/google-ads/api/docs/conversions/troubleshooting)
-  /// (or use the `troubleshoot-conversions` workflow in the [Google Ads API
-  /// Developer Assistant](/google-ads/api/docs/developer-toolkit/ai-assistant)).
+  /// [conversion upload troubleshooting
+  /// guide](https://developers.google.com/google-ads/api/docs/conversions/troubleshooting)
+  /// (or use the `troubleshoot-conversions` workflow in the
+  /// [Google Ads API Developer
+  /// Assistant](https://developers.google.com/google-ads/api/docs/developer-toolkit/ai-assistant)).
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ClickConversion : pb::IMessage<ClickConversion>

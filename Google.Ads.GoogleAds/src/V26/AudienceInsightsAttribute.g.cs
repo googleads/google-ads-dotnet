@@ -4102,7 +4102,7 @@ namespace Google.Ads.GoogleAds.V26.Common {
     public const int CountryLocationFieldNumber = 1;
     private global::Google.Ads.GoogleAds.V26.Common.LocationInfo countryLocation_;
     /// <summary>
-    /// The country location that this attribute’s sub country location is located
+    /// The country location that this attribute's sub country location is located
     /// in.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
