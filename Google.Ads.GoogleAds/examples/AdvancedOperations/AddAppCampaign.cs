@@ -194,7 +194,7 @@ namespace Google.Ads.GoogleAds.Examples.V26
                 {
                     AppId = "com.google.android.apps.adwords",
                     AppStore = AppCampaignAppStore.GoogleAppStore,
-                    // Optional: Optimize this campaign for getting new users for your app.
+                    // Optimize this campaign for getting new users for your app.
                     BiddingStrategyGoalType =
                         AppCampaignBiddingStrategyGoalType.OptimizeInstallsTargetInstallCost
                 },
@@ -203,10 +203,10 @@ namespace Google.Ads.GoogleAds.Examples.V26
                 ContainsEuPoliticalAdvertising = EuPoliticalAdvertisingStatus.DoesNotContainEuPoliticalAdvertising,
 
                 // Optional: Set the start date.
-                StartDateTime = DateTime.Now.AddDays(1).ToString("yyyyMMdd 00:00:00"),
+                StartDateTime = DateTime.Now.AddDays(1).ToString("yyyy-MM-dd 00:00:00"),
 
                 // Optional: Set the end date.
-                EndDateTime = DateTime.Now.AddYears(1).ToString("yyyyMMdd 23:59:59"),
+                EndDateTime = DateTime.Now.AddYears(1).ToString("yyyy-MM-dd 23:59:59"),
             };
 
             // Creates a campaign operation.
@@ -335,7 +335,7 @@ namespace Google.Ads.GoogleAds.Examples.V26
             // Note that the ad group type must not be set.
             // Since the advertising_channel_sub_type is APP_CAMPAIGN,
             //   1. you cannot override bid settings at the ad group level.
-            //   2. you cannot add ad group criteria.
+            //   2. you cannot add ad group criteria other than audience signals.
             AdGroup adGroup = new AdGroup()
             {
                 Name = $"Earth to Mars Cruises #{ExampleUtilities.GetRandomString()}",
