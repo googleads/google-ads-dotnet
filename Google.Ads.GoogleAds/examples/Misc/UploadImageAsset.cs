@@ -26,7 +26,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using static Google.Ads.GoogleAds.V26.Enums.AssetTypeEnum.Types;
-using static Google.Ads.GoogleAds.V26.Enums.MimeTypeEnum.Types;
 
 namespace Google.Ads.GoogleAds.Examples.V26
 {
@@ -91,15 +90,7 @@ namespace Google.Ads.GoogleAds.Examples.V26
             // Creates an image asset.
             ImageAsset imageAsset = new ImageAsset()
             {
-                Data = ByteString.CopyFrom(imageContent),
-                FileSize = imageContent.Length,
-                MimeType = MimeType.ImageJpeg,
-                FullSize = new ImageDimension()
-                {
-                    HeightPixels = 315,
-                    WidthPixels = 600,
-                    Url = IMAGE_URL
-                }
+                Data = ByteString.CopyFrom(imageContent)
             };
 
             // Creates an asset.
