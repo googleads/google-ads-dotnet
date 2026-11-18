@@ -30,9 +30,6 @@
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Remove="examples\AdvancedOperations\UploadVideo.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="CommandLineParser" Version="2.9.1" />
   </ItemGroup>
   <ItemGroup>
