@@ -5,10 +5,10 @@
     <PackageId>Google.Ads.GoogleAds</PackageId>
     <Version>27.7.0</Version>
     <Description>This library provides you with functionality to access the Google Ads API. The Google Ads API is the modern programmatic interface to Google Ads and the next generation of the AdWords API. See https://developers.google.com/google-ads/api to learn more about Google Ads API.</Description>
-    <PackageReleaseNotes>https://github.com/googleads/google-ads-dotnet/blob/master/ChangeLog</PackageReleaseNotes>
+    <PackageReleaseNotes>https://github.com/googleads/google-ads-dotnet/blob/main/CHANGELOG.md</PackageReleaseNotes>
     <PackageTags>GoogleAds Google</PackageTags>
     <Copyright>Copyright 2018, Google LLC</Copyright>
-    <Authors>https://github.com/AnashOommen</Authors>
+    <Authors>https://github.com/Raibaz;https://github.com/AnashOommen</Authors>
     <PackageIcon>logo.png</PackageIcon>
     <PackageProjectUrl>https://github.com/googleads/google-ads-dotnet</PackageProjectUrl>
     <Company>Google</Company>

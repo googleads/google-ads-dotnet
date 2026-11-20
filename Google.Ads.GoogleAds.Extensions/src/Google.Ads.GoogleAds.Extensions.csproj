@@ -5,11 +5,10 @@
     <PackageId>Google.Ads.GoogleAds.Extensions</PackageId>
     <Version>2.0.8</Version>
     <Description>This library provides you with extensions for the Google Ads API client library. The Google Ads API is the modern programmatic interface to Google Ads. See https://developers.google.com/google-ads/api to learn more about Google Ads API.</Description>
-    <PackageReleaseNotes>https://github.com/googleads/google-ads-dotnet/blob/master/ChangeLog</PackageReleaseNotes>
+    <PackageReleaseNotes>https://github.com/googleads/google-ads-dotnet/blob/main/CHANGELOG.md</PackageReleaseNotes>
     <PackageTags>GoogleAds Google</PackageTags>
     <Copyright>Copyright 2023, Google LLC</Copyright>
-    <Authors>https://github.com/AnashOommen</Authors>
-    <Authors>https://github.com/Raibaz</Authors>
+    <Authors>https://github.com/Raibaz;https://github.com/AnashOommen</Authors>
     <PackageIcon>logo.png</PackageIcon>
     <PackageProjectUrl>https://github.com/googleads/google-ads-dotnet</PackageProjectUrl>
     <Company>Google</Company>

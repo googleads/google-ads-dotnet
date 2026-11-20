@@ -5,10 +5,10 @@
     <PackageId>Google.Ads.Gax.TestUtilities</PackageId>
     <Version>1.0.4</Version>
     <Description>This library provides testing functionality for GAPIC client libraries for Google's Ads APIs.</Description>
-    <PackageReleaseNotes>https://github.com/googleads/google-ads-dotnet/blob/main/ChangeLog</PackageReleaseNotes>
+    <PackageReleaseNotes>https://github.com/googleads/google-ads-dotnet/blob/main/CHANGELOG.md</PackageReleaseNotes>
     <PackageTags>GoogleAds Google Gax</PackageTags>
     <Copyright>Copyright 2022, Google LLC</Copyright>
-    <Authors>https://github.com/AnashOommen</Authors>
+    <Authors>https://github.com/Raibaz;https://github.com/AnashOommen</Authors>
     <PackageIcon>logo.png</PackageIcon>
     <PackageProjectUrl>https://github.com/googleads/google-ads-dotnet</PackageProjectUrl>
     <Company>Google</Company>
