@@ -22,7 +22,8 @@ The library provides explicit build targets only for .NET versions that are mark
 
 ## Documentation
 
-Our documentation is available [here](https://developers.google.com/google-ads/api/docs/client-libs/dotnet).
+See the [Google Ads API client library for .NET documentation](https://developers.google.com/google-ads/api/docs/client-libs/dotnet).
+
 ## Miscellaneous
 
 ### Wiki
@@ -33,7 +34,7 @@ Our documentation is available [here](https://developers.google.com/google-ads/a
 
 - https://github.com/googleads/google-ads-dotnet/issues
 
-### API Documentation
+### API documentation
 
 - https://developers.google.com/google-ads/api/
 
@@ -43,5 +44,5 @@ Our documentation is available [here](https://developers.google.com/google-ads/a
 
 ### Authors
 
-- https://github.com/AnashOommen
-- https://github.com/Raibaz
+- [Mattia Tommasone](https://github.com/Raibaz)
+- [Anash P. Oommen](https://github.com/AnashOommen)
