@@ -34,7 +34,7 @@ Operating system (Linux, Windows, ...) and version (if the bug is platform-speci
 To enable logging see this page: https://developers.google.com/google-ads/api/docs/client-libs/dotnet/logging
 
 NOTE: Make sure to include a Request ID when possible, and to redact personally
-identifiable information, including developer tokens, client IDs, customer IDs, etc.
+identifiable information, including client IDs, customer IDs, etc.
 -->
 
 **Anything else we should know about your project / environment**
