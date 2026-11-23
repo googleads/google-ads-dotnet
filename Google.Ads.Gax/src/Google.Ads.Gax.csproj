@@ -6,10 +6,10 @@
     <Version>4.0.8</Version>
     <Description>This library provides functionality that makes it easier to work with Generated
     API Client GAPIC client libraries for Google's Ads APIs.</Description>
-    <PackageReleaseNotes>https://github.com/googleads/google-ads-dotnet/blob/main/ChangeLog</PackageReleaseNotes>
+    <PackageReleaseNotes>https://github.com/googleads/google-ads-dotnet/blob/main/CHANGELOG.md</PackageReleaseNotes>
     <PackageTags>GoogleAds Google Gax</PackageTags>
     <Copyright>Copyright 2022, Google LLC</Copyright>
-    <Authors>https://github.com/AnashOommen</Authors>
+    <Authors>https://github.com/Raibaz;https://github.com/AnashOommen</Authors>
     <PackageIcon>logo.png</PackageIcon>
     <PackageProjectUrl>https://github.com/googleads/google-ads-dotnet</PackageProjectUrl>
     <Company>Google</Company>
